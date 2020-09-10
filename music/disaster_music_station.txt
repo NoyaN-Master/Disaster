@@ -1,0 +1,31 @@
+music_station = "disaster"
+
+music = {
+	song = "komm_susser_tod"
+
+        chance = {
+                modifier = {
+                        factor = 1
+                }
+        }
+}
+
+music = {
+	song = "californication"
+ 
+        chance = {
+                modifier = {
+                        factor = 1
+                }
+        }
+}
+
+music = {
+	song = "kletka"
+
+        chance = {
+                modifier = {
+                        factor = 1
+                }
+        }
+}
