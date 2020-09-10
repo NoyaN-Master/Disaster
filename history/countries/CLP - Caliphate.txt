@@ -8,7 +8,7 @@ set_technology = {
 set_convoys = 0
 
 set_politics = {
-	ruling_party = authoritarian_democrat
+	ruling_party = esoteric_traditionalist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -21,20 +21,20 @@ set_popularities = {
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
 	national_bolshevik = 0
-	authoritarian_democrat = 100
+	authoritarian_democrat = 0
 	reactionary = 0
 	ultranationalist = 0
 	revolutionary_nationalist = 0
-	esoteric_traditionalist = 0
+	esoteric_traditionalist = 100
 	revolutionary_anarchist = 0
 }
 
 create_country_leader = {
-	name = "Mustafa Kemal Pasha"
+	name = "Caliph Abdulmajid"
 	#desc = "SES_Zeljko_Raznatovic_desc"
-	picture = "Portrait_OTT_Mustafa_Kemal.tga"
+	picture = "Portrait_Ottoman_Abdulmecid.tga"
 	expire = "2020.1.1"
-	ideology = authoritarian_democrat_subideology
+	ideology = esoteric_traditionalist_subideology
 	traits = {
 		#
 	}
