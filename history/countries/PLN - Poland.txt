@@ -39,3 +39,47 @@ create_country_leader = {
 		#
 	}
 }
+
+create_country_leader = {
+	name = "Józef Piłsudski"
+	#desc = "PLN_Jozef_Pilsudski_desc"
+	picture = "PLN_Jozef_Pilsudski.tga"
+	expire = "2020.1.1"
+	ideology = social_democrat_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Wanda Wasilewska"
+	#desc = "PLN_Wanda_Wasilewska_desc"
+	picture = "PLN_Wanda_Wasilewska.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_socialist_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Tomasz Arciszewski"
+	#desc = "PLN_Tomasz_Arciszewski_desc"
+	picture = "PLN_Tomasz_Arciszewski.tga"
+	expire = "2020.1.1"
+	ideology = libertarian_socialist_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Biskup Łukomski"
+	#desc = "PLN_Biskup_Lukomski_desc"
+	picture = "PLN_Biskup_Lukomski.tga"
+	expire = "2020.1.1"
+	ideology = reactionary_socialist_subideology
+	traits = {
+		#
+	}
+}
