@@ -1,0 +1,25 @@
+spriteTypes = {	
+
+	###################
+	## The Crazy 90s ##
+	#### Ideas GFX ####
+	###################
+
+	spriteType = {
+		name = "GFX_idea_CIB_King_Hill"
+		texturefile = "gfx/interface/ideas/CIB/CIB_King_Hill.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CIB_Zombie"
+		texturefile = "gfx/interface/ideas/CIB/CIB_Zombie.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CIB_OrduVatan"
+		texturefile = "gfx/interface/ideas/CIB/CIB_OrduVatan.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CIB_Enver_Idea"
+		texturefile = "gfx/interface/ideas/CIB/CIB_Enver_Idea.dds"
+	}
+
+}	

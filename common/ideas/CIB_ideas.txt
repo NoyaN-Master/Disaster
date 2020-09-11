@@ -1,0 +1,34 @@
+ideas = {
+
+country = {
+
+CIB_King_Hill = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_King_Hill" }
+			picture = CIB_King_Hill
+			modifier = {
+
+			}
+		}
+CIB_Zombie = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_Zombie" }
+			picture = CIB_Zombie
+			modifier = {
+
+			}
+		}
+CIB_OrduVatan = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
+			picture = CIB_OrduVatan
+			modifier = {
+			
+			}
+		}
+CIB_Enver_Idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_Enver_Idea" }
+			picture = CIB_Enver_Idea
+			modifier = {
+			
+			}
+		}			
+	}
+}		

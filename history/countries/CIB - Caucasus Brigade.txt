@@ -14,6 +14,11 @@ set_politics = {
 	elections_allowed = no
 }
 
+add_ideas = CIB_Enver_Idea
+add_ideas = CIB_Zombie
+add_ideas = CIB_King_Hill
+add_ideas = CIB_OrduVatan
+
 set_popularities = {
 	conservative = 0
 	liberal = 0
