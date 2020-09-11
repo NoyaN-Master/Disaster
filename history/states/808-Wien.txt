@@ -1,19 +1,15 @@
 state={
-	id=802
-	name="STATE_802"
-	resources={
-		oil=1.000
-	}
-	
+	id=808
+	name="STATE_808"
 	history={
 		owner = AUT
 		victory_points = {
-			11610 5 
+			11666 30 
 		}
 		buildings = {
-			infrastructure = 6
+			infrastructure = 8
 			industrial_complex = 3
-			arms_factory = 1
+			arms_factory = 3
 			air_base = 3
 
 		}
@@ -22,9 +18,9 @@ state={
 	}
 	
 	provinces={
-		686 11627 
+		11666
 	}
-	manpower= 480000
+	manpower= 18500000
 	buildings_max_level_factor=1.000
-	state_category= city
+	state_category= large_city
 }
