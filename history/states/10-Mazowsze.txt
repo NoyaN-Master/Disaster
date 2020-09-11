@@ -1,0 +1,24 @@
+state={
+	id=10
+	name="STATE_10"
+	history={
+		owner = PLN
+		victory_points = {
+			402 1
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 3
+			industrial_complex = 1
+			air_base = 3
+		}
+		add_core_of = PLN
+	}
+
+	provinces={
+		402 467 524 3482 6511 9400 11492 12562 
+	}
+        state_category = town
+        buildings_max_level_factor=1.000
+        manpower = 1680000
+}
