@@ -1,0 +1,41 @@
+capital = 10
+oob = ""
+
+# Starting tech
+set_technology = {
+}
+
+set_convoys = 0
+
+set_politics = {
+	ruling_party = authoritarian_democrat
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	conservative = 11
+	liberal = 10
+	social_democrat = 7
+	libertarian_socialist = 6
+	authoritarian_socialist = 3
+	national_bolshevik = 0
+	authoritarian_democrat = 40
+	reactionary = 9
+	ultranationalist = 0
+	revolutionary_nationalist = 14
+	esoteric_traditionalist = 0
+	revolutionary_anarchist = 0
+}
+
+create_country_leader = {
+	name = "Roman Dmowski"
+	#desc = "PLN_Roman_Dmowski_desc"
+	picture = "PLN_Roman_Dmowski.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_democrat_subideology
+	traits = {
+		#
+	}
+}
