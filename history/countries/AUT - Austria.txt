@@ -1,0 +1,107 @@
+capital = 11666
+oob = ""
+
+# Starting tech
+set_technology = {
+}
+
+set_convoys = 0
+
+set_politics = {
+	ruling_party = ultranationalist
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	conservative = 0
+	liberal = 5
+	social_democrat = 8
+	libertarian_socialist = 5
+	authoritarian_socialist = 5
+	national_bolshevik = 0
+	authoritarian_democrat = 0
+	reactionary = 15
+	ultranationalist = 52
+	revolutionary_nationalist = 10
+	esoteric_traditionalist = 0
+	revolutionary_anarchist = 0
+}
+
+create_country_leader = {
+	name = "Wilhelm Miklas"
+	desc = "AUT_Wilhelm_Miklas_desc"
+	picture = "AUT_Wilhelm_Miklas.tga"
+	expire = "2020.1.1"
+	ideology = ultranationalist_subideology
+	traits = {
+		figurehead_president_1
+	}
+}
+
+create_country_leader = {
+	name = "Wilhelm Miklas"
+	desc = "AUT_Wilhelm_Miklas_desc"
+	picture = "AUT_Wilhelm_Miklas.tga"
+	expire = "2020.1.1"
+	ideology = reactionary_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Wilhelm Miklas"
+	desc = "AUT_Wilhelm_Miklas_desc"
+	picture = "AUT_Wilhelm_Miklas.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_democrat_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Wilhelm Miklas"
+	desc = "AUT_Wilhelm_Miklas_desc"
+	picture = "AUT_Wilhelm_Miklas.tga"
+	expire = "2020.1.1"
+	ideology = conservative_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Karl Renner"
+	desc = "AUT_Karl_Renner_desc"
+	picture = "AUT_Karl_Renner.tga"
+	expire = "2020.1.1"
+	ideology = social_democrat_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Alfred Klahr"
+	desc = "AUT_Karl_Renner_desc"
+	picture = "AUT_Karl_Renner.tga"
+	expire = "2020.1.1"
+	ideology = libertarian_socialist_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Alfred Klahr"
+	desc = "AUT_Karl_Renner_desc"
+	picture = "AUT_Karl_Renner.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_socialist_subideology
+	traits = {
+		#
+	}
+}
