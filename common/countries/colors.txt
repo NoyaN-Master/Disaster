@@ -57,16 +57,50 @@ TIT = {
 
 GRE = {
 	color = rgb { 93 181 227 }
-	color = rgb { 93 181 227 }
+	color_ui = rgb { 93 181 227 }
 }
 
 TUV = {
-	color = rgb { 161  190  102 }
-	color = rgb { 161  190  102 }
+	color = rgb { 161 190 102 }
+	color_ui = rgb { 161 190 102 }
 }
 
 AUT = {
-	color = rgb { 224  228  255 }
-	color = rgb { 224  228  255 }
+	color = rgb { 224 228 255 }
+	color_ui = rgb { 224 228 255 }
 }
 
+SLK = {
+	color = rgb { 200 199 218 }
+	color_ui = rgb { 200 199 218 }
+}
+
+HJZ = {
+	color = rgb { 69 120 45 }
+	color_ui = rgb { 69 120 45 }
+}
+
+BLG = {
+	color = rgb { 120 70 0 }
+	color_ui = rgb { 120 70 0 }
+}
+
+FIU = {
+	color = rgb { 197 92 106 }
+	color_ui = rgb { 197 92 106 }
+}
+
+HNG = {
+	color = rgb { 138 163 117 }
+	color_ui = rgb { 138 163 117 }
+}
+
+CRT = {
+	color = rgb { 255 0 255 }
+	color_ui = rgb { 255 0 255 }
+}
+
+TRN = {
+	color = rgb { 119 117 163 }
+	color_ui = rgb { 119 117 163 }
+}
