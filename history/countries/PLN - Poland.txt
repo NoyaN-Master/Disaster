@@ -83,3 +83,36 @@ create_country_leader = {
 		#
 	}
 }
+
+create_country_leader = {
+	name = "Zygmunt Kaczyński"
+	#desc = "PLN_Zygmunt_Kaczynski_desc"
+	picture = "PLN_Zygmunt_Kaczynski.tga"
+	expire = "2020.1.1"
+	ideology = conservative_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Gabriel Narutowicz"
+	#desc = "PLN_Gabriel_Narutowicz_desc"
+	picture = "PLN_Gabriel_Narutowicz.tga"
+	expire = "2020.1.1"
+	ideology = liberal_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "No Central Leadership"
+	#desc = "PLN_No_Central_Leadership_desc"
+	picture = "PLN_No_Central_Leadership.tga"
+	expire = "2020.1.1"
+	ideology = revolutionary_anarchist_subideology
+	traits = {
+		#
+	}
+}
