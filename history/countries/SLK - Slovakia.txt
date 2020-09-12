@@ -34,7 +34,7 @@ create_country_leader = {
 	#desc = "SLK_Viest_desc"
 	picture = "SLK_Viest.tga"
 	expire = "2020.1.1"
-	ideology = authoritarian_democrat
+	ideology = authoritarian_democrat_subideology
 	traits = {
 		#
 	}
