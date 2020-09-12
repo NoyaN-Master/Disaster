@@ -706,4 +706,14 @@ spriteTypes = {
 		name = "GFX_ideology_authoritarian_democrat_group"
 		texturefile = "gfx/interface/ideologies/authoritarian_democrat_group.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_ideology_esoteric_islamism_subideology"
+		texturefile = "gfx/interface/ideologies/esoteric_islamism_subideology.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_turkish_stratocracy"
+		texturefile = "gfx/interface/ideologies/turkish_stratocracy.dds"
+	}
 }	
