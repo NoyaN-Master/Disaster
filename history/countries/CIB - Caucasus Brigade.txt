@@ -8,7 +8,7 @@ set_technology = {
 set_convoys = 0
 
 set_politics = {
-	ruling_party = ultranationalist
+	ruling_party = revolutionary_nationalist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -28,10 +28,10 @@ set_popularities = {
 	national_bolshevik = 0
 	authoritarian_democrat = 0
 	reactionary = 0
-	ultranationalist = 100
-	revolutionary_nationalist = 0
+	ultranationalist = 20
+	revolutionary_nationalist = 70
 	esoteric_traditionalist = 0
-	revolutionary_anarchist = 0
+	revolutionary_anarchist = 10
 }
 
 create_country_leader = {
@@ -39,7 +39,7 @@ create_country_leader = {
 	#desc = "SES_Zeljko_Raznatovic_desc"
 	picture = "Portrait_CIB_Enver_Pasha.dds"
 	expire = "2020.1.1"
-	ideology = ultranationalism_turkish
+	ideology = enverism
 	traits = {
 		#
 	}
