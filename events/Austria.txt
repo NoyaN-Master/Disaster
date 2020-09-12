@@ -1,0 +1,18 @@
+add_namespace = aut
+
+country_event = { #Intro
+	id = aut.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event argmil.10" }
+	title = aut.1.t
+	desc = aut.1.d
+
+	picture = GFX_report_event_ARG_mil10
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = aut.1.a
+	}
+}
