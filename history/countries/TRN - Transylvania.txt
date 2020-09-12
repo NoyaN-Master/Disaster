@@ -1,0 +1,41 @@
+capital = 76
+oob = ""
+
+# Starting tech
+set_technology = {
+}
+
+set_convoys = 0
+
+set_politics = {
+	ruling_party = ultranationalist
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	conservative = 0
+	liberal = 0
+	social_democrat = 10
+	libertarian_socialist = 0
+	authoritarian_socialist = 0
+	national_bolshevik = 0
+	authoritarian_democrat = 0
+	reactionary = 0
+	ultranationalist = 90
+	revolutionary_nationalist = 10
+	esoteric_traditionalist = 0
+	revolutionary_anarchist = 0
+}
+
+create_country_leader = {
+	name = "Horia Sima"
+	#desc = "TRN_Sima_desc"
+	picture = "TRN_Sima.tga"
+	expire = "2020.1.1"
+	ideology = ultranationalist_subideology
+	traits = {
+		#
+	}
+}
