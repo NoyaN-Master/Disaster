@@ -6,7 +6,7 @@ country_event = { #Intro
 	title = aut.1.t
 	desc = aut.1.d
 
-	picture = GFX_AUT_dollfuss_speech
+	picture = GFX_report_event_aut_dollfuss_speech
 
 	fire_only_once = yes
 
@@ -42,7 +42,7 @@ country_event = { #The Flag Question
 	title = aut.3.t
 	desc = aut.3.d
 
-	picture = GFX_AUT_vf_party_flag
+	picture = GFX_report_event_aut_vf_party_flag
 
 	fire_only_once = yes
 
