@@ -2,11 +2,11 @@ add_namespace = aut
 
 country_event = { #Intro
 	id = aut.1
-	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	immediate = { log = "[GetDateText]: [Root.GetName]: event argmil.10" }
 	title = aut.1.t
 	desc = aut.1.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	picture = GFX_AUT_dollfuss_speech
 
 	fire_only_once = yes
 
@@ -14,5 +14,309 @@ country_event = { #Intro
 
 	option = {
 		name = aut.1.a
+	}
+}
+
+country_event = { #Modifying the Constitution
+	id = aut.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event argmil.10" }
+	title = aut.2.t
+	desc = aut.2.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = aut.2.a
+		add_political_power = 30
+		hidden_effect = {
+			country_event = { id = aut.3 days = 5 }
+		}
+	}
+}
+
+country_event = { #The Flag Question
+	id = aut.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event argmil.10" }
+	title = aut.3.t
+	desc = aut.3.d
+
+	picture = GFX_AUT_vf_party_flag
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = aut.3.a
+		hidden_effect = {
+			country_event = { id = aut.4 days = 10 }
+		}
+	}
+    option = {
+		name = aut.3.b
+		custom_effect_tooltip = AUT_new_flag
+		hidden_effect = {
+			set_cosmetic_tag = AUT_vf_flag
+			country_event = { id = aut.4 days = 10 }
+		}
+	}
+}
+
+country_event = { #Report on Commies
+	id = aut.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event argmil.10" }
+	title = aut.4.t
+	desc = aut.4.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = aut.4.a #go ahead
+		hidden_effect = {
+			country_event = { id = aut.5 days = 2 }
+		}
+	}
+    option = {
+		name = aut.4.b #private ceremony
+		custom_effect_tooltip = AUT_new_flag
+		hidden_effect = {
+			country_event = { id = aut.6 days = 2 }
+		}
+	}
+}
+
+country_event = { #Tightening Security
+	id = aut.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event argmil.10" }
+	title = aut.5.t
+	desc = aut.5.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = aut.5.a #good idea
+		add_manpower = -200
+		add_political_power = -50
+		set_country_flag = AUT_dollfuss_speech_safe
+	}
+    option = {
+		name = aut.5.b #there's no need
+		add_political_power = 10
+		set_country_flag = AUT_dollfuss_speech_unsafe
+	}
+}
+
+country_event = { #Demoralisation
+	id = aut.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event argmil.10" }
+	title = aut.6.t
+	desc = aut.6.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = aut.6.a #give a speech after all
+		add_political_power -40
+		hidden_effect = {
+			country_event = { id = aut.5 days = 2 }
+		}
+	}
+    option = {
+		name = aut.6.b #address the nation by radio instead
+		add_political_power = -20
+		add_war_support = -3
+		set_country_flag = dollfuss_radio_address
+	}
+	option = {
+		name = aut.6.b #these are dangerous times you know
+		add_political_power = 10
+		add_war_support = -8
+		set_country_flag = dollfuss_private_ceremony 
+	}
+}
+
+country_event = { #Succesful Rally
+	id = aut.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event argmil.10" }
+	title = aut.7.t
+	desc = aut.7.d
+
+    picture = GFX_AUT_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = aut.7.a 
+		add_political_power = 100
+		hidden_effect = {
+			retire_country_leader = yes
+			create_country_leader = {
+	        name = "Engelbert Dollfuss"
+	        desc = "AUT_Engelbert_Dollfuss_desc"
+	        picture = "AUT_Engelbert_Dollfuss.tga"
+	        expire = "2020.1.1"
+	        ideology = ultranationalist_subideology
+	        traits = {
+	        }
+	        create_country_leader = {
+	        name = "Engelbert Dollfuss"
+	        desc = "AUT_Engelbert_Dollfuss_desc"
+	        picture = "AUT_Engelbert_Dollfuss.tga"
+	        expire = "2020.1.1"
+	        ideology = reactionary_subideology
+	        traits = {
+	        }
+	        create_country_leader = {
+	        name = "Engelbert Dollfuss"
+	        desc = "AUT_Engelbert_Dollfuss_desc"
+	        picture = "AUT_Engelbert_Dollfuss.tga"
+	        expire = "2020.1.1"
+	        ideology = authoritarian_democrat_subideology
+	        traits = {
+	        }
+	        create_country_leader = {
+	        name = "Engelbert Dollfuss"
+	        desc = "AUT_Engelbert_Dollfuss_desc"
+	        picture = "AUT_Engelbert_Dollfuss.tga"
+	        expire = "2020.1.1"
+	        ideology = conservative_subideology
+	        traits = {
+	        }
+        }
+	}
+}
+
+country_event = { #Radio Address
+	id = aut.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event argmil.10" }
+	title = aut.8.t
+	desc = aut.8.d
+
+    picture = GFX_AUT_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = aut.8.a 
+		add_political_power = 50
+		hidden_effect = {
+			retire_country_leader = yes
+			create_country_leader = {
+	        name = "Engelbert Dollfuss"
+	        desc = "AUT_Engelbert_Dollfuss_desc"
+	        picture = "AUT_Engelbert_Dollfuss.tga"
+	        expire = "2020.1.1"
+	        ideology = ultranationalist_subideology
+	        traits = {
+	        }
+	        create_country_leader = {
+	        name = "Engelbert Dollfuss"
+	        desc = "AUT_Engelbert_Dollfuss_desc"
+	        picture = "AUT_Engelbert_Dollfuss.tga"
+	        expire = "2020.1.1"
+	        ideology = reactionary_subideology
+	        traits = {
+	        }
+	        create_country_leader = {
+	        name = "Engelbert Dollfuss"
+	        desc = "AUT_Engelbert_Dollfuss_desc"
+	        picture = "AUT_Engelbert_Dollfuss.tga"
+	        expire = "2020.1.1"
+	        ideology = authoritarian_democrat_subideology
+	        traits = {
+	        }
+	        create_country_leader = {
+	        name = "Engelbert Dollfuss"
+	        desc = "AUT_Engelbert_Dollfuss_desc"
+	        picture = "AUT_Engelbert_Dollfuss.tga"
+	        expire = "2020.1.1"
+	        ideology = conservative_subideology
+	        traits = {
+	        }
+        }
+	}
+}
+
+country_event = { #Private Ceremony
+	id = aut.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event argmil.10" }
+	title = aut.9.t
+	desc = aut.9.d
+
+    picture = GFX_AUT_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = aut.9.a 
+		add_political_power = -20
+		add_war_support = -5
+		hidden_effect = {
+			retire_country_leader = yes
+			create_country_leader = {
+	        name = "Engelbert Dollfuss"
+	        desc = "AUT_Engelbert_Dollfuss_desc"
+	        picture = "AUT_Engelbert_Dollfuss.tga"
+	        expire = "2020.1.1"
+	        ideology = ultranationalist_subideology
+	        traits = {
+	        }
+	        create_country_leader = {
+	        name = "Engelbert Dollfuss"
+	        desc = "AUT_Engelbert_Dollfuss_desc"
+	        picture = "AUT_Engelbert_Dollfuss.tga"
+	        expire = "2020.1.1"
+	        ideology = reactionary_subideology
+	        traits = {
+	        }
+	        create_country_leader = {
+	        name = "Engelbert Dollfuss"
+	        desc = "AUT_Engelbert_Dollfuss_desc"
+	        picture = "AUT_Engelbert_Dollfuss.tga"
+	        expire = "2020.1.1"
+	        ideology = authoritarian_democrat_subideology
+	        traits = {
+	        }
+	        create_country_leader = {
+	        name = "Engelbert Dollfuss"
+	        desc = "AUT_Engelbert_Dollfuss_desc"
+	        picture = "AUT_Engelbert_Dollfuss.tga"
+	        expire = "2020.1.1"
+	        ideology = conservative_subideology
+	        traits = {
+	        }
+        }
+	}
+}
+
+country_event = { #Dollfuss Shot
+	id = aut.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event argmil.10" }
+	title = aut.10.t
+	desc = aut.10.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = aut.10.a 
+		add_manpower = -1
+		add_political_power = -50
+		add_stability = -0.10
 	}
 }
