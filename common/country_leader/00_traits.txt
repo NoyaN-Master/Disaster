@@ -1141,6 +1141,12 @@ leader_traits = {
 		war_support_factor = 0.15
 	}
 
+        impaler_legacy = {
+		random = no
+                stability_factor = 00.05
+		army_attack_factor = 0.1
+	}
+
 	### IDEA TRAITS ###
 	
 	# drift is a percent applied weekly
