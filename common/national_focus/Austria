@@ -35,7 +35,7 @@ focus_tree = {
 				limit = { has_country_flag = AUT_dollfuss_radio_address }
 				country_event = aut.8
 			}	
-		    if = {
+		        if = {
 				limit = { has_country_flag = AUT_dollfuss_private_ceremony }
 				country_event = aut.9
 			}
