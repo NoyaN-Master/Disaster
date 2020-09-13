@@ -82,7 +82,6 @@ country_event = { #Report on Commies
 	}
     option = {
 		name = aut.4.b #private ceremony
-		custom_effect_tooltip = AUT_new_flag
 		hidden_effect = {
 			country_event = { id = aut.6 days = 2 }
 		}
