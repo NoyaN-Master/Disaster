@@ -1,0 +1,48 @@
+focus_tree = {
+	id = austrian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = AUT
+		}
+	}
+	
+    default = no
+
+	focus = {
+		id = AUT_merge_the_posts
+		icon = 
+		x = 8
+		y = 0
+		cost = 7
+		ai_will_do = {
+			factor = 100
+		}
+		select_effect = {
+			country_event = { id = aut.2 days = 5 }
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			custom_effect_tooltip = AUT_posts_merged
+			if = {
+				limit = { has_country_flag = AUT_dollfuss_speech_safe }
+				country_event = aut.7
+			}
+			if = {
+				limit = { has_country_flag = AUT_dollfuss_radio_address }
+				country_event = aut.8
+			}	
+		    if = {
+				limit = { has_country_flag = AUT_dollfuss_private_ceremony }
+				country_event = aut.9
+			}
+			if = {
+				limit = { has_country_flag = AUT_dollfuss_speech_unsafe }
+				country_event = aut.10
+			}	
+        }
+	}
+}
