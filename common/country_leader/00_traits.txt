@@ -1123,6 +1123,17 @@ leader_traits = {
 		}
 	}
 
+        poglavnik = {
+		random = no
+                political_power_gain = 0.15
+		stability_factor = -0.10
+	}
+
+        marshall_of_slovakia = {
+		random = no
+                army_defence_factor = 0.10
+		army_morale_factor = 0.05
+	}
 
 	### IDEA TRAITS ###
 	
