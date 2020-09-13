@@ -31,8 +31,8 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Armand Călinescu"
-	#desc = "MAL_Armand_desc"
-	picture = "MAL_Armand.tga"
+	#desc = "MLV_Armand_desc"
+	picture = "MLV_Armand.tga"
 	expire = "2020.1.1"
 	ideology = authoritarian_democrat_subideology
 	traits = {
