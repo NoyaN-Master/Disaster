@@ -1135,6 +1135,12 @@ leader_traits = {
 		army_morale_factor = 0.05
 	}
 
+        king_zog = {
+		random = no
+                stability_factor = 0.20
+		war_support_factor = 0.15
+	}
+
 	### IDEA TRAITS ###
 	
 	# drift is a percent applied weekly
