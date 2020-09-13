@@ -1,12 +1,18 @@
-﻿l_english:
+l_english:
 
-aut_focus:0 "Austria Focus Tree"
+austrian_focus:0 "Austria Focus Tree"
 
 ### Flags and Tooltips ###
+
+AUT_new_flag:0 "The party flag of the VF (pictured) will be adopted as the national flag"
+AUT_posts_merged:0 "The Posts of Bundesprasident and Bundeskanzler will be officially merged, giving Dollfuss absolute power."
 
 ### Decisions ###
 
 ### Focuses ###
+
+AUT_merge_the_posts:0 "Merge the Posts"
+AUT_merge_the_posts_desc:0 "To fully solidify Dollfuss’s hold on power, it is now being proposed that we merge Miklas's post of Bundesprasident, the oficial head of state with his own post of Bundeskanzler. This would clearly make him the sole, unchallenged power in Austria, but we will need to tread carefully to succeed."
 
 ### Parties ###
 AUT_national_bolshevik_party:0 "KPO"
@@ -38,6 +44,38 @@ AUT_revolutionary_anarchist_party_long:0 "Anarchist Movements"
 aut.1.t:0 "The Situation of Austria in 1936"
 aut.1.d:0 "Following a war strewn by hardships and military humiliation, the ancient Hapsburg Empire finally disintegrated in the Autumn of 1918. Initially, the Austrian public overwhelmingly hoped to overcome this monumental defeat through an Anschluss, or unification, with the young German republic. However, the victorious allies staunchly blocked all efforts to make the Pan-German dream a reality, and the later disintegration of Germany in 1919 made these hopes even more far-fetched. However, the young Austrian nation did have some luck, as the Italian civil war and chaos in the Balkans allowed Austrian troops to retake inland Carinthia and parts of Sudtirol. Nonetheless, Austria’s history through the 1920s was one of crippling diplomatic isolation, instability, and political violence, with an endless carousel of Conservative and Socialist governments unable to turn the country around.\n\nThis ended, however, in 1932, when the young economist Engelbert Dollfuss was appointed as Chancellor by President Miklas. Dollfuss wasted no time in implementing his Catholic and nationalist agenda. He hastily took advantage of a constitutional crisis to dissolve the Austrian parliament and crush the main part of the opposition to his government, before introducing a new authoritarian and corporatist constitution. Later surviving a socialist assassination attempt and crushing a leftist putsch by shelling large areas of workers’ housing, Dollfuss has proven that he is determined to stay in power to remodel Austria in his vision.\n\nAll is not well for Austria’s government, however. As socialist and extremist Pan-German nationalist underground movements continue to resist the regime, and with Dollfuss’s corporatist policies so far struggling to turn Austria’s economy around, time will only tell what Austria’s future will be."
 aut.1.a:0 "Heil Osterreich!"
+aut.2.t:0 "Modifying the Constitution"
+aut.2.d:0 "Today President Miklas and Chancellor Dollfuss have officially gained the cabinet's approval for the Constitutional amendment that will merge their two roles. The new post of Bundeskanzler will double as Head of Government and Head of State, and will of course be filled by Dollfuss himself. Dollfuss’s path to total domination now seems clear."
+aut.2.a:0 "Excellent"
+aut.3.t:0 "The Flag Question"
+aut.3.d:0 "With our preparations to revise the Austrian constitution well underway, a new proposal has arisen from some members of the cabinet. They suggest that the parrty flag of the Vaterlandische Front be elevated to the status of the national flag of Austria, replacing the current eagle flag. While many sympthise with this idea, believing it would do well to symbolise Dollfuss’s new consolidation of power, many others believe that we should maintain coontinuity, keeping the flag above party politics."
+aut.3.a:0 "This is too far"
+aut.3.b:0 "It's an effective gesture"
+aut.4.t:0 "An Alarming Report"
+aut.4.d:0 "Today a most alarming report arrived on Dr. Dollfuss’s desk, from our intelligence agenices monitoring the socialist underground. It states that the rally planned to celebrate the Constitutional Amendment may be in great danger from socialist terrorists, and the life of Dollfuss himself may be at risk. What's more, it states, security provisions are deeply inadequate, making mattersd even worse. As such sme in the cabinet are now calling for the rally to be called off entirely."
+aut.4.a:0 "It can't be that bad: go ahead"
+aut.4.b:0 "This is too risky: postpone the rally"
+aut.5.t:0 "Security Provisions"
+aut.5.d:0 "Having chosen to go ahead with the rally, we must now deal with the matter of security. Many in the police and military command are urging us to take extra precatuions in ligh of the recent report, deploying additional troops in Vienna and increasing our expenses to ensure Dollfuss’s safety. Others, however, believe we are being too anxious, and should take a calmer approach."
+aut.5.a:0 "It's necessary"
+aut.5.b:0 "This isn't worth it"
+aut.6.t:0 "Reports of Demoralisation"
+aut.6.d:0 "Our recent decisiont to cancel the scheduled rally to mark the revised constitution has clearly had a negtiave effect on the morale of our troops and of the Heimwehr paramilitaries. Many commanders are reporting their men questioning the dedication of the government, or whether the country truly is as stable as we claim. Why, they are aasking, is Dollfuss really feeling the need to hide from his own adoring people? Many are now suggesting that we go ahead with the rally to reverse these worries, but the political U-Turn could be embarrassing. Meanwhile, some are proposing that we make up for the cancellation through having Dollfuss give a major speech over the radio."
+aut.6.a:0 "We need to swallow our pride and address the people"
+aut.6.b:0 "Dollfuss should address the nation by radio instead"
+aut.6.c:0 "It's simply too dangerous"
+aut.7.t:0 "Rally in Vienna"
+aut.7.d:0 "Our perseverance in the rally question has today paid off, with Dr Dollfuss addressing a giant rally near the Schonbrunn Palace shortly after the change to the constitution was formally ratified. In his speech he promised to use his powers to guide Austria further to economic strength and to shore up its postion in central Europe, as well as to do what he could to bring the nation closer to God."
+aut.7.a:0 "Heil Dollfuss! Heil Osterreich!"
+aut.8.t:0 "Dollfuss Addresses the Nation by Radio"
+aut.8.d:0 "Today, having earlier called off a planned rally due to secuirty concerns, Dr Dollfuss spoke to the people of Austria via radio, having just ratified the amendment to the constitution. After apologising for failing to speak to them in person, and hoping that they would understand his reasoning in light of recent troubles with the radicals, he promised to use his powers to guide Austria further to economic strength and to shore up its postion in central Europe, as well as to do what he could to bring the nation closer to God."
+aut.8.a:0 "Heil Dollfuss! Heil Osterreich!"
+aut.9.t:0 "The Constitution is Amended"
+aut.9.d:0 "Today, in a private ceremony in the Schonbrunn Palace, the Constitution of the Austrian Federal State was formally revised to merge the posts of Bundesprasident and Bundeskanzler under Engerlbert Dollfuss, essentially completing his consolidation of power. However, the fact that a planned rally to mark the event was cancelled, and that nothing was done to substitute for this, has fuelled much suspicion among the public, and much undermined our efforts to present ourselves as a confident, stable force in the country. While in time we shall surely recover, Dollfuss’s hand has for now been notably weakened."
+aut.9.a:0 "Heil Dollfuss...?"
+aut.10.t:0 "Dollfuss Shot!"
+aut.10.d:0 "Having just ratified the constitution to merge the roles of Bundesprasident and Bundeskanzler under himself, Dollfuss proceeded to address a large rally near the Schonbrunn palace. However, shortly after he started speaking, a heavily armed group of men, presumably socialist militants, burst from the crows and fired indiscriminately at the platform. Dollfuss was hit three times, and passed away 2 hours later, having recieved the last rites.\n\nWith the constitutional amendment rendered, for now at least, obsolete, Miklas has appointed Ernst Rudiger Stahremberg as provisional Chancellor. Stahremberg, who was Dollfuss’s right hand man throughout his life, clearly sees himself as the natural successor, and with the support of his large Heimwehr paramilitary, and of much of the army, may well come to fill Dollfuss’s shoes./n/nHowever, Dollfuss’s Minister for the Interior, Kurt Schussnigg, also believes himself capable of succeeding the great chancellor, and has the support of the more moderate wing of the VF, allegedly among them Miklas himself: not to mention that through his ministry he controls the police and he alone can now enforce the new state of emergency that Stahremberg has proclaimed./n/nOnly time will tell who shall rise to the top..."
+aut.10.a:0 "May the Lord help us all..."
 
 ### Country Names ###
 AUT_national_bolshevik:0 "Austrian Empire"
@@ -79,7 +117,7 @@ AUT_revolutionary_anarchist_DEF:0 "the Anarchist Territories of Austria"
 
 AUT_vf_flag_national_bolshevik:0 "Austrian Empire"
 AUT_vf_flag_national_bolshevik_ADJ:0 "Austrian"
-AUS_vf_flag_national_bolshevik_DEF:0 "the Austrian Empire"
+AUT_vf_flag_national_bolshevik_DEF:0 "the Austrian Empire"
 AUT_vf_flag_authoritarian_socialist:0 "People's Republic of Austria"
 AUT_vf_flag_authoritarian_socialist_ADJ:0 "Austrian"
 AUT_vf_flag_authoritarian_socialist_DEF:0 "the People's Republic of Austria"
