@@ -109,10 +109,50 @@ create_country_leader = {
 create_country_leader = {
 	name = "No Central Leadership"
 	#desc = "PLN_No_Central_Leadership_desc"
-	picture = "PLN_No_Central_Leadership.tga"
+	#picture = "PLN_No_Central_Leadership.tga"
 	expire = "2020.1.1"
 	ideology = revolutionary_anarchist_subideology
 	traits = {
 		#
 	}
 }
+
+create_country_leader = {
+	name = "Bolesław Piasecki"
+	#desc = "PLN_Boleslaw_Piasecki_desc"
+	picture = "PLN_Boleslaw_Piasecki.tga"
+	expire = "2020.1.1"
+	ideology = revolutionary_nationalist_subideology
+	traits = {
+		#
+	}
+
+create_country_leader = {
+	name = "Henryk Rossman"
+	#desc = "PLN_Henryk_Rossman_desc"
+	picture = "PLN_Henryk_Rossman.tga"
+	expire = "2020.1.1"
+	ideology = ultranationalist_subideology
+	traits = {
+		#
+	}
+
+create_country_leader = {
+	name = "No Leadership"
+	#desc = "PLN_Leadership_desc"
+	#picture = "PLN_Leadership.tga"
+	expire = "2020.1.1"
+	ideology = esoteric_traditionalist_subideology
+	traits = {
+		#
+	}
+
+create_country_leader = {
+	name = "Kazimierz Mijal"
+	#desc = "PLN_Kazimierz Mijal_desc"
+	picture = "PLN_Kazimierz Mijal.tga"
+	expire = "2020.1.1"
+	ideology = national_bolshevik_subideology
+	traits = {
+		#
+	}
