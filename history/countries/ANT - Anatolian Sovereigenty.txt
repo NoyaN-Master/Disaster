@@ -30,9 +30,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Damat Ferit Pasha"
+	name = "Collabration Government"
 	#desc = "SES_Zeljko_Raznatovic_desc"
-	#picture = "SES_Zeljko_Raznatovic.tga"
+	picture = "Portait_ANT_Dual_State.tga"
 	expire = "2020.1.1"
 	ideology = conservative_subideology
 	traits = {
