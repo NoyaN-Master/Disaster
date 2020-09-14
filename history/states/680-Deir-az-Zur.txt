@@ -1,0 +1,25 @@
+
+state={
+	id=680
+	name="STATE_680"
+
+	history={
+		owner = FRA
+		victory_points = {
+			3942 1 
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = SYR
+
+	}
+
+	provinces={
+		2013 3942 7513 10383 12316 12442 
+	}
+	manpower=324110
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}
