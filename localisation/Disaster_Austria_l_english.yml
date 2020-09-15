@@ -1,11 +1,12 @@
-﻿l_english:
+l_english:
 
 austrian_focus:0 "Austria Focus Tree"
 
 ### Flags and Tooltips ###
 
-AUT_new_flag:0 "The party flag of the VF (pictured) will be adopted as the national flag"
-AUT_posts_merged:0 "The Posts of Bundesprasident and Bundeskanzler will be officially merged, giving Dollfuss absolute power."
+AUT_new_flag:0 "§YThe party flag of the VF (pictured) will be adopted as the national flag§"
+AUT_posts_merged:0 "§YThe Posts of Bundesprasident and Bundeskanzler will be officially merged, giving Dollfuss absolute power.§"
+AUT_economic_recovery:0 "§GThe economy will grow§"
 
 ### Decisions ###
 
@@ -39,6 +40,20 @@ AUT_esoteric_traditionalist_party:0 "GdNP"
 AUT_esoteric_traditionalist_party_long:0 "Grossdeutsche Nationale Partei"
 AUT_revolutionary_anarchist_party:0 "Anarchists"
 AUT_revolutionary_anarchist_party_long:0 "Anarchist Movements"
+
+### Ideas ###
+AUT_standestaat:0 "Standestaat Constitution"
+AUT_standestaat_desc:0 "The authoritarian Standestaat constitution, first adopted in 1932, gives us an extraordinary level of political capital, and ensures the position of our dictatorship, as well as legally enshrining our corporatist economic policy."
+AUT_sluggish_economy_1:0 "Sluggish Economy"
+AUT_sluggish_economy_1_desc:0 "So far, our economic reforms have yielded little fruit, and the economy is still struggling, as it has been for decades now. If we can't do something and do it quickly, there may be consequences."
+AUT_sluggish_economy_2:0 "Sluggish Economy"
+AUT_sluggish_economy_2_desc:0 "So far, our economic reforms have yielded little fruit, and the economy is still struggling, as it has been for decades now. If we can't do something and do it quickly, there may be consequences."
+AUT_sluggish_economy_3:0 "Improving Economy"
+AUT_sluggish_economy_3_desc:0 "Our reforms to the economy are finally making their mark, and with new jobs  and businesses starting to spring up and an increase in both exposrts and foreign investment, many now believe a boom is right around the corner."
+AUT_socialist_discotent:0 "Socialist Resistance"
+AUT_socialist_discotent_desc:0 "Ever since the brief civil war in 1934, the Austrian socialist movement, dedpite being heavily oppressed and, formally, banned, has, under the leadership of Karl Renner, been a massive source of instability for our regime. If we can't nip these Red filth in the bud, there may be consequences for our government."
+AUT_pan_germanist_discotent:0 "Pan-Germanist Resistance"
+AUT_pan_germanist_discotent_desc:0 "Dollfuss’s anti-Pan German, Catholic, and Austrian Nationalist policies have alienated a large proportion of the population, who have always desired an Anschluss, or Union, with our fellow German-speakers to the North and West. These people are increasingly represented by Arthur Seyss-Inquart and his Grossdeutsche Nationale Partei, who believe that they alone can bring order and unity to all Germans."
 
 ### Events ###
 aut.1.t:0 "The Situation of Austria in 1936"
