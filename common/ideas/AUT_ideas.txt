@@ -1,0 +1,61 @@
+ideas = {
+
+country = {
+
+AUT_standestaat = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_standestaat" }
+			picture = AUT_standestaat
+			modifier = {
+			political_power_gain = 0.1
+			stability_factor = 0.05
+			}
+		}
+		
+AUT_sluggish_economy_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea sluggish_economy_1" }
+			#picture = 
+			modifier = {
+			consumer_goods_factor = 0.10
+			production_factory_max_efficiency_factor = -0.10
+			production_speed_buildings_factor = -0.05
+			}
+		}
+		
+AUT_sluggish_economy_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea sluggish_economy_2" }
+			#picture = 
+			modifier = {
+			consumer_goods_factor = 0.05
+			production_factory_max_efficiency_factor = -0.05
+			production_speed_buildings_factor = -0.03
+			}
+		}
+		
+AUT_sluggish_economy_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea sluggish_economy_3" }
+			#picture = 
+			modifier = {
+			consumer_goods_factor = 0.03
+			production_factory_max_efficiency_factor = -0.03
+			}
+		}
+	
+AUT_socialist_discotent  = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_socialist_discotent" }
+			picture = AUT_socialist_discotent
+			modifier = {
+			political_power_gain = -0.10
+			stability_factor = -0.05
+			recruitable_population_factor = -0.10
+			}
+		}	
+
+AUT_pan_germanist_discotent  = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_pan_germanist_discotent" }
+			picture = AUT_pan_germanist_discotent
+			modifier = {
+			political_power_gain = -0.05
+			stability_factor = -0.03
+			recruitable_population_factor = -0.05
+			}
+		}	
