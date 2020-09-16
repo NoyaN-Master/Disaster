@@ -21,5 +21,20 @@ spriteTypes = {
 		name = "GFX_idea_CIB_Enver_Idea"
 		texturefile = "gfx/interface/ideas/CIB/CIB_Enver_Idea.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_AUT_Standestaat"
+		texturefile = "gfx/interface/ideas/AUT/AUT_Standestaat.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_AUT_Socialist_Unrest"
+		texturefile = "gfx/interface/ideas/AUT/AUT_Socialist_Unrest.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_AUT_Pangerman_Unrest"
+		texturefile = "gfx/interface/ideas/AUT/AUT_Pangerman_Unrest.dds"
+	}
 
 }	

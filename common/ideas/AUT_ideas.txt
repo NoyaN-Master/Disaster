@@ -4,7 +4,7 @@ country = {
 
 AUT_standestaat = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_standestaat" }
-			picture = AUT_standestaat
+			picture = AUT_Standestaat
 			modifier = {
 			political_power_gain = 0.1
 			stability_factor = 0.05
@@ -42,7 +42,7 @@ AUT_sluggish_economy_3 = {
 	
 AUT_socialist_discotent  = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_socialist_discotent" }
-			picture = AUT_socialist_discotent
+			picture = AUT_Socialist_Unrest
 			modifier = {
 			political_power_gain = -0.10
 			stability_factor = -0.05
@@ -52,7 +52,7 @@ AUT_socialist_discotent  = {
 
 AUT_pan_germanist_discotent  = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_pan_germanist_discotent" }
-			picture = AUT_pan_germanist_discotent
+			picture = AUT_Pangerman_Unrest
 			modifier = {
 			political_power_gain = -0.05
 			stability_factor = -0.03

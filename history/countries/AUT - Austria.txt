@@ -14,6 +14,11 @@ set_politics = {
 	elections_allowed = no
 }
 
+add_ideas = AUT_standestaat
+add_ideas = AUT_sluggish_economy_1
+add_ideas = AUT_socialist_discotent
+add_ideas = AUT_pan_germanist_discotent
+
 country_event = { id = aut.1 days = 1 } #Intro event
 
 set_popularities = {
@@ -74,11 +79,6 @@ set_popularities = {
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
-
-add_ideas = AUT_standestaat
-add_ideas = AUT_sluggish_economy_1
-add_ideas = AUT_socialist_discotent
-add_ideas = AUT_pan_germanist_discotent
 
 create_country_leader = {
 	name = "Wilhelm Miklas"
@@ -168,6 +168,7 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
 	name = "Wilhelm Miklas"
 	desc = "AUT_Wilhelm_Miklas_desc"
 	picture = "AUT_Wilhelm_Miklas.tga"
