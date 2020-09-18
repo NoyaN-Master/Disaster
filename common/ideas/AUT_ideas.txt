@@ -58,4 +58,90 @@ AUT_pan_germanist_discotent  = {
 			stability_factor = -0.03
 			recruitable_population_factor = -0.05
 			}
+		}
+
+AUT_agrarianism_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_agrarianism_1" }
+			#picture = 
+			modifier = {
+			consumer_goods_factor = -0.03
+			global_building_slots_factor = 0.05
+			production_factory_max_efficiency_factor = 0.03
+			political_power_factor = 0.05
+			}
 		}	
+		
+AUT_agrarianism_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_agrarianism_2" }
+			#picture = 
+			modifier = {
+			consumer_goods_factor = -0.05
+			global_building_slots_factor = 0.10
+			production_factory_max_efficiency_factor = 0.05
+			political_power_factor = 0.10
+			local_resources_factor = 0.05
+			}
+		}
+
+AUT_agrarian_nation = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_agrarian_nation" }
+			#picture = 
+			modifier = {
+			consumer_goods_factor = -0.10
+			global_building_slots_factor = 0.15
+			production_factory_max_efficiency_factor = 0.05
+			local_resources_factor = 0.10
+			political_power_factor = 0.15
+			}
+		}
+		
+AUT_tariffs = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_agrarian_nation" }
+			#picture = 
+			modifier = {
+		    stability_factor = 0.05
+			trade_opinion_factor = -0.10
+			}
+		}
+		
+AUT_industrialism_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_industrialism_1" }
+			#picture = 
+			modifier = {
+			consumer_goods_factor = -0.05
+			industrial_capacity_factory = 0.05
+			production_speed_buildings_factor = 0.05
+			}
+		}
+		
+AUT_industrialism_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_industrialism_2" }
+			#picture = 
+			modifier = {
+			consumer_goods_factor = -0.10
+			industrial_capacity_factory = 0.10
+			production_speed_buildings_factor = 0.10
+			}
+		}
+		
+AUT_industrial_nation = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_industrial_nation" }
+			#picture = 
+			modifier = {
+			consumer_goods_factor = -0.15
+			industrial_capacity_factory = 0.15
+			production_speed_buildings_factor = 0.15
+			}
+		}
+		
+AUT_austrian_miracle = {
+    on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_austrian_miracle" }
+			#picture = 
+			modifier = {
+			consumer_goods_factor = -0.10
+			industrial_capacity_factory = 0.05
+			production_speed_buildings_factor = 0.05
+			production_factory_max_efficiency_factor = 0.05
+			political_power_factor = 0.05
+			}
+		}
