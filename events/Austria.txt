@@ -2,7 +2,7 @@ add_namespace = aut
 
 country_event = { #Intro
 	id = aut.1
-	immediate = { log = "[GetDateText]: [Root.GetName]: event argmil.10" }
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
 	title = aut.1.t
 	desc = aut.1.d
 
@@ -19,7 +19,7 @@ country_event = { #Intro
 
 country_event = { #Modifying the Constitution
 	id = aut.2
-	immediate = { log = "[GetDateText]: [Root.GetName]: event argmil.10" }
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.2" }
 	title = aut.2.t
 	desc = aut.2.d
 
@@ -38,7 +38,7 @@ country_event = { #Modifying the Constitution
 
 country_event = { #The Flag Question
 	id = aut.3
-	immediate = { log = "[GetDateText]: [Root.GetName]: event argmil.10" }
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.3" }
 	title = aut.3.t
 	desc = aut.3.d
 
@@ -66,7 +66,7 @@ country_event = { #The Flag Question
 
 country_event = { #Report on Commies
 	id = aut.4
-	immediate = { log = "[GetDateText]: [Root.GetName]: event argmil.10" }
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.4" }
 	title = aut.4.t
 	desc = aut.4.d
 
@@ -90,7 +90,7 @@ country_event = { #Report on Commies
 
 country_event = { #Tightening Security
 	id = aut.5
-	immediate = { log = "[GetDateText]: [Root.GetName]: event argmil.10" }
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.5" }
 	title = aut.5.t
 	desc = aut.5.d
 
@@ -102,18 +102,22 @@ country_event = { #Tightening Security
 		name = aut.5.a #good idea
 		add_manpower = -200
 		add_political_power = -50
-		set_country_flag = AUT_dollfuss_speech_safe
+		hidden_effect = {
+		    country_event = {id = aut.7 days = 24}
+		}
 	}
     option = {
 		name = aut.5.b #there's no need
 		add_political_power = 10
-		set_country_flag = AUT_dollfuss_speech_unsafe
+		hidden_effect = {
+		    country_event = {id = aut.10 days = 24}
+        }	
 	}
 }
 
 country_event = { #Demoralisation
 	id = aut.6
-	immediate = { log = "[GetDateText]: [Root.GetName]: event argmil.10" }
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.6" }
 	title = aut.6.t
 	desc = aut.6.d
 
@@ -123,7 +127,7 @@ country_event = { #Demoralisation
 
 	option = {
 		name = aut.6.a #give a speech after all
-		add_political_power -40
+		add_political_power = -40
 		hidden_effect = {
 			country_event = { id = aut.5 days = 2 }
 		}
@@ -131,20 +135,24 @@ country_event = { #Demoralisation
     option = {
 		name = aut.6.b #address the nation by radio instead
 		add_political_power = -20
-		add_war_support = -3
-		set_country_flag = dollfuss_radio_address
+		add_war_support = -0.03
+		hidden_effect = {
+		    country_event = {id = aut.8 days = 24}
+        }
 	}
 	option = {
-		name = aut.6.b #these are dangerous times you know
+		name = aut.6.c #these are dangerous times you know
 		add_political_power = 10
-		add_war_support = -8
-		set_country_flag = dollfuss_private_ceremony 
+		add_war_support = -0.08
+		hidden_effect = {
+		    country_event = {id = aut.9 days = 24}
+        }
 	}
 }
 
 country_event = { #Succesful Rally
 	id = aut.7
-	immediate = { log = "[GetDateText]: [Root.GetName]: event argmil.10" }
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.7" }
 	title = aut.7.t
 	desc = aut.7.d
 
@@ -163,29 +171,32 @@ country_event = { #Succesful Rally
 			retire_ideology_leader = authoritarian_democrat
 			retire_ideology_leader = conservative
 			create_country_leader = {
-	        name = "Engelbert Dollfuss"
-	        desc = "AUT_Engelbert_Dollfuss_desc"
-	        picture = "AUT_Engelbert_Dollfuss.tga"
-	        expire = "2020.1.1"
-	        ideology = ultranationalist_subideology
-	        traits = {
+	            name = "Engelbert Dollfuss"
+	            desc = "AUT_Engelbert_Dollfuss_desc"
+	            picture = "AUT_Engelbert_Dollfuss.tga"
+	            expire = "2020.1.1"
+	            ideology = ultranationalist_subideology
+	            traits = {
 	        }
+			}
 	        create_country_leader = {
-	        name = "Engelbert Dollfuss"
-	        desc = "AUT_Engelbert_Dollfuss_desc"
-	        picture = "AUT_Engelbert_Dollfuss.tga"
-	        expire = "2020.1.1"
-	        ideology = reactionary_subideology
-	        traits = {
+	            name = "Engelbert Dollfuss"
+	            desc = "AUT_Engelbert_Dollfuss_desc"
+	            picture = "AUT_Engelbert_Dollfuss.tga"
+	            expire = "2020.1.1"
+	            ideology = reactionary_subideology
+	            traits = {
 	        }
+			}
 	        create_country_leader = {
-	        name = "Engelbert Dollfuss"
-	        desc = "AUT_Engelbert_Dollfuss_desc"
-	        picture = "AUT_Engelbert_Dollfuss.tga"
-	        expire = "2020.1.1"
-	        ideology = authoritarian_democrat_subideology
-	        traits = {
+	            name = "Engelbert Dollfuss"
+	            desc = "AUT_Engelbert_Dollfuss_desc"
+	            picture = "AUT_Engelbert_Dollfuss.tga"
+	            expire = "2020.1.1"
+	            ideology = authoritarian_democrat_subideology
+	            traits = {
 	        }
+			}
 	        create_country_leader = {
 	        name = "Engelbert Dollfuss"
 	        desc = "AUT_Engelbert_Dollfuss_desc"
@@ -194,13 +205,14 @@ country_event = { #Succesful Rally
 	        ideology = conservative_subideology
 	        traits = {
 	        }
+			}
         }
 	}
 }
 
 country_event = { #Radio Address
 	id = aut.8
-	immediate = { log = "[GetDateText]: [Root.GetName]: event argmil.10" }
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.8" }
 	title = aut.8.t
 	desc = aut.8.d
 
@@ -219,29 +231,32 @@ country_event = { #Radio Address
 			retire_ideology_leader = authoritarian_democrat
 			retire_ideology_leader = conservative
 			create_country_leader = {
-	        name = "Engelbert Dollfuss"
-	        desc = "AUT_Engelbert_Dollfuss_desc"
-	        picture = "AUT_Engelbert_Dollfuss.tga"
-	        expire = "2020.1.1"
-	        ideology = ultranationalist_subideology
-	        traits = {
+	            name = "Engelbert Dollfuss"
+	            desc = "AUT_Engelbert_Dollfuss_desc"
+	            picture = "AUT_Engelbert_Dollfuss.tga"
+	            expire = "2020.1.1"
+	            ideology = ultranationalist_subideology
+	            traits = {
 	        }
+			}
 	        create_country_leader = {
-	        name = "Engelbert Dollfuss"
-	        desc = "AUT_Engelbert_Dollfuss_desc"
-	        picture = "AUT_Engelbert_Dollfuss.tga"
-	        expire = "2020.1.1"
-	        ideology = reactionary_subideology
-	        traits = {
+	            name = "Engelbert Dollfuss"
+	            desc = "AUT_Engelbert_Dollfuss_desc"
+	            picture = "AUT_Engelbert_Dollfuss.tga"
+	            expire = "2020.1.1"
+	            ideology = reactionary_subideology
+	            traits = {
 	        }
+			}
 	        create_country_leader = {
-	        name = "Engelbert Dollfuss"
-	        desc = "AUT_Engelbert_Dollfuss_desc"
-	        picture = "AUT_Engelbert_Dollfuss.tga"
-	        expire = "2020.1.1"
-	        ideology = authoritarian_democrat_subideology
-	        traits = {
+	            name = "Engelbert Dollfuss"
+	            desc = "AUT_Engelbert_Dollfuss_desc"
+	            picture = "AUT_Engelbert_Dollfuss.tga"
+	            expire = "2020.1.1"
+	            ideology = authoritarian_democrat_subideology
+	            traits = {
 	        }
+			}
 	        create_country_leader = {
 	        name = "Engelbert Dollfuss"
 	        desc = "AUT_Engelbert_Dollfuss_desc"
@@ -250,13 +265,14 @@ country_event = { #Radio Address
 	        ideology = conservative_subideology
 	        traits = {
 	        }
+			}
         }
 	}
 }
 
 country_event = { #Private Ceremony
 	id = aut.9
-	immediate = { log = "[GetDateText]: [Root.GetName]: event argmil.10" }
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.9" }
 	title = aut.9.t
 	desc = aut.9.d
 
@@ -269,36 +285,39 @@ country_event = { #Private Ceremony
 	option = {
 		name = aut.9.a 
 		add_political_power = -20
-		add_war_support = -5
+		add_war_support = -0.05
 		hidden_effect = {
 			retire_country_leader = yes
 			retire_ideology_leader = reactionary
 			retire_ideology_leader = authoritarian_democrat
 			retire_ideology_leader = conservative
 			create_country_leader = {
-	        name = "Engelbert Dollfuss"
-	        desc = "AUT_Engelbert_Dollfuss_desc"
-	        picture = "AUT_Engelbert_Dollfuss.tga"
-	        expire = "2020.1.1"
-	        ideology = ultranationalist_subideology
-	        traits = {
+	            name = "Engelbert Dollfuss"
+	            desc = "AUT_Engelbert_Dollfuss_desc"
+	            picture = "AUT_Engelbert_Dollfuss.tga"
+	            expire = "2020.1.1"
+	            ideology = ultranationalist_subideology
+	            traits = {
 	        }
+			}
 	        create_country_leader = {
-	        name = "Engelbert Dollfuss"
-	        desc = "AUT_Engelbert_Dollfuss_desc"
-	        picture = "AUT_Engelbert_Dollfuss.tga"
-	        expire = "2020.1.1"
-	        ideology = reactionary_subideology
-	        traits = {
+	            name = "Engelbert Dollfuss"
+	            desc = "AUT_Engelbert_Dollfuss_desc"
+	            picture = "AUT_Engelbert_Dollfuss.tga"
+	            expire = "2020.1.1"
+	            ideology = reactionary_subideology
+	            traits = {
 	        }
+			}
 	        create_country_leader = {
-	        name = "Engelbert Dollfuss"
-	        desc = "AUT_Engelbert_Dollfuss_desc"
-	        picture = "AUT_Engelbert_Dollfuss.tga"
-	        expire = "2020.1.1"
-	        ideology = authoritarian_democrat_subideology
-	        traits = {
+	            name = "Engelbert Dollfuss"
+	            desc = "AUT_Engelbert_Dollfuss_desc"
+	            picture = "AUT_Engelbert_Dollfuss.tga"
+	            expire = "2020.1.1"
+	            ideology = authoritarian_democrat_subideology
+	            traits = {
 	        }
+			}
 	        create_country_leader = {
 	        name = "Engelbert Dollfuss"
 	        desc = "AUT_Engelbert_Dollfuss_desc"
@@ -307,13 +326,14 @@ country_event = { #Private Ceremony
 	        ideology = conservative_subideology
 	        traits = {
 	        }
+			}
         }
 	}
 }
 
 country_event = { #Dollfuss Shot
 	id = aut.10
-	immediate = { log = "[GetDateText]: [Root.GetName]: event argmil.10" }
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.10" }
 	title = aut.10.t
 	desc = aut.10.d
 
