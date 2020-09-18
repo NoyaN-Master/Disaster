@@ -14,7 +14,7 @@ focus_tree = {
 
 	focus = {
 		id = AUT_merge_the_posts
-		icon = 
+		#icon = 
 		x = 8
 		y = 0
 		cost = 7
@@ -24,25 +24,468 @@ focus_tree = {
 		select_effect = {
 			country_event = { id = aut.2 days = 5 }
 		}
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+		search_filters = { }
 		completion_reward = {
 			custom_effect_tooltip = AUT_posts_merged
-			if = {
-				limit = { has_country_flag = AUT_dollfuss_speech_safe }
-				country_event = aut.7
-			}
-			if = {
+			else_if = {
 				limit = { has_country_flag = AUT_dollfuss_radio_address }
 				country_event = aut.8
 			}	
-		        if = {
+		    else_if = {
 				limit = { has_country_flag = AUT_dollfuss_private_ceremony }
 				country_event = aut.9
-			}
-			if = {
-				limit = { has_country_flag = AUT_dollfuss_speech_unsafe }
-				country_event = aut.10
 			}	
+        }
+	}
+	
+	focus = {
+		id = AUT_economic_reforms
+		#icon = 
+		prerequisite = { focus = AUT_merge_the_posts }
+		x = 4
+		y = 1
+		cost = 6
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			has_country_leader = {
+				name = "Engelbert Dollfuss"
+				ruling_only = yes
+			}					
+		}	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			custom_effect_tooltip = AUT_economic_recovery
+			if = {
+				limit = { has_idea = AUT_sluggish_economy_1 }
+				swap_ideas = { 
+                    remove_idea = AUT_sluggish_economy_1 
+                    add_idea = AUT_sluggish_economy_2
+                }
+			}
+			else_if = {
+				limit = { has_idea = AUT_sluggish_economy_2 }
+				swap_ideas = { 
+                    remove_idea = AUT_sluggish_economy_2 
+                    add_idea = AUT_sluggish_economy_3
+                }
+			}
+		    else_if = {
+				limit = { has_idea = AUT_sluggish_economy_3 }
+				remove_ideas = AUT_sluggish_economy_3
+			}
+        }
+	}
+	
+	focus = {
+		id = AUT_maintain_agrarianism
+		#icon = 
+		prerequisite = { focus = AUT_economic_reforms }
+		x = 2
+		y = 2
+		cost = 6
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			has_country_leader = {
+				name = "Engelbert Dollfuss"
+				ruling_only = yes
+			}					
+		}	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = AUT_agrarianism_1
+        }
+	}
+	
+	focus = {
+	id = AUT_aristocratic_ties
+	#icon = 
+	prerequisite = { focus = AUT_maintain_agrarianism }
+	x = 0
+	y = 3
+	cost = 3
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		has_country_leader = {
+			name = "Engelbert Dollfuss"
+			ruling_only = yes
+		}					
+	}	
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	completion_reward = {
+		add_stability = 0.05
+		add_political_power = 25
+        }
+	}
+	
+	focus = {
+		id = AUT_land_reform
+		#icon = 
+		prerequisite = { focus = AUT_aristocratic_ties }
+		x = 0
+		y = 4
+		cost = 6
+		ai_will_do = {
+			factor = 70
+		}
+		available = {
+			has_country_leader = {
+				name = "Engelbert Dollfuss"
+				ruling_only = yes
+			}					
+		}	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			swap_ideas = { 
+                    remove_idea = AUT_agrarianism_1
+                    add_idea = AUT_agrarianism_2
+                }
+        }
+	}
+	
+	focus = {
+		id = AUT_protect_the_common_farmer
+		#icon = 
+		prerequisite = { focus = AUT_maintain_agrarianism }
+		x = 2
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+			has_country_leader = {
+				name = "Engelbert Dollfuss"
+				ruling_only = yes
+			}					
+		}
+		completion_reward = {
+		    add_ideas = AUT_tariffs
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	
+	}
+	
+	focus = {
+		id = AUT_grain_exports
+		#icon = 
+		prerequisite = { focus = AUT_protect_the_common_farmer }
+		x = 2
+		y = 4
+		cost = 6
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+			has_country_leader = {
+				name = "Engelbert Dollfuss"
+				ruling_only = yes
+			}					
+		}	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			custom_effect_tooltip = AUT_economic_recovery
+			if = {
+				limit = { has_idea = AUT_sluggish_economy_1 }
+				swap_ideas = { 
+                    remove_idea = AUT_sluggish_economy_1 
+                    add_idea = AUT_sluggish_economy_2
+                }
+			}
+			else_if = {
+				limit = { has_idea = AUT_sluggish_economy_2 }
+				swap_ideas = { 
+                    remove_idea = AUT_sluggish_economy_2 
+                    add_idea = AUT_sluggish_economy_3
+                }
+			}
+		    else_if = {
+				limit = { has_idea = AUT_sluggish_economy_3 }
+				remove_ideas = AUT_sluggish_economy_3
+			}
+        }
+	}
+	
+	focus = {
+		id = AUT_corporatist_ideals
+		#icon = 
+		prerequisite = { focus = AUT_maintain_agrarianism OR = AUT_new_industrialism } 
+		x = 4
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			has_country_leader = {
+				name = "Engelbert Dollfuss"
+				ruling_only = yes
+			}					
+		}
+		completion_reward = {
+		add_stability = 0.05
+        add_political_power = 50		
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	
+	}
+	
+	focus = {
+		id = AUT_further_state_intervention
+		#icon = 
+		prerequisite = { focus = AUT_corporatist_ideals } 
+		x = 4
+		y = 4
+		cost = 8
+		ai_will_do = {
+			factor = 70
+		}
+		available = {
+			has_country_leader = {
+				name = "Engelbert Dollfuss"
+				ruling_only = yes
+			}					
+		}
+		completion_reward = 
+			custom_effect_tooltip = AUT_economic_recovery
+			if = {
+				limit = { has_idea = AUT_sluggish_economy_1 }
+				swap_ideas = { 
+                    remove_idea = AUT_sluggish_economy_1 
+                    add_idea = AUT_sluggish_economy_2
+                }
+			}
+			else_if = {
+				limit = { has_idea = AUT_sluggish_economy_2 }
+				swap_ideas = { 
+                    remove_idea = AUT_sluggish_economy_2 
+                    add_idea = AUT_sluggish_economy_3
+                }
+			}
+		    else_if = {
+				limit = { has_idea = AUT_sluggish_economy_3 }
+				remove_ideas = AUT_sluggish_economy_3
+			}
+        }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+	
+	focus = {
+		id = AUT_nation_of_farmers
+		#icon = 
+		prerequisite = { focus = AUT_land_reform }
+		prerequisite = { focus = AUT_grain_exports }
+		prerequisite = { focus = AUT_further_state_intervention }
+		x = 2
+		y = 5
+		cost = 6
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+			has_country_leader = {
+				name = "Engelbert Dollfuss"
+				ruling_only = yes
+			}					
+		}	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			swap_ideas = { 
+                    remove_idea = AUT_agrarianism_2
+                    add_idea = AUT_agrarian_nation
+                }
+        }
+	}
+	
+	focus = {
+		id = AUT_new_industrialism
+		#icon = 
+		prerequisite = { focus = AUT_economic_reforms }
+		x = 6
+		y = 2
+		cost = 6
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			has_country_leader = {
+				name = "Engelbert Dollfuss"
+				ruling_only = yes
+			}					
+		}	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = AUT_industrialism_1
+			add_stability = -0.05
+        }
+	}
+	
+	focus = {
+		id = AUT_ties_with_business
+		#icon = 
+		prerequisite = { focus = AUT_new_industrialism }
+		x = 8
+		y = 3
+		cost = 3
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			has_country_leader = {
+				name = "Engelbert Dollfuss"
+				ruling_only = yes
+			}					
+		}	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_political_power = 50
+        }
+	}
+	
+	focus = {
+		id = AUT_new_labour_charter
+		#icon = 
+		prerequisite = { focus = AUT_ties_with_business }
+		x = 8
+		y = 4
+		cost = 6
+		ai_will_do = {
+			factor = 70
+		}
+		available = {
+			has_country_leader = {
+				name = "Engelbert Dollfuss"
+				ruling_only = yes
+			}					
+		}	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			swap_ideas = { 
+                    remove_idea = AUT_industrialism_1
+                    add_idea = AUT_industrialism_2
+                }
+        }
+	}
+	
+		focus = {
+		id = AUT_farmers_to_factorymen
+		#icon = 
+		prerequisite = { focus = AUT_new_industrialism }
+		x = 6
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			has_country_leader = {
+				name = "Engelbert Dollfuss"
+				ruling_only = yes
+			}					
+		}	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_stability = -0.05
+			808 = {
+	        add_building_construction = {
+		    type = industrial_complex
+		    level = 1
+	        }   
+            } 
+        }
+	}
+	
+	focus = {
+		id = AUT_new_export_markets
+		#icon = 
+		prerequisite = { focus = AUT_farmers_to_factorymen }
+		x = 6
+		y = 4
+		cost = 6
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+			has_country_leader = {
+				name = "Engelbert Dollfuss"
+				ruling_only = yes
+			}					
+		}	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			custom_effect_tooltip = AUT_economic_recovery
+			if = {
+				limit = { has_idea = AUT_sluggish_economy_1 }
+				swap_ideas = { 
+                    remove_idea = AUT_sluggish_economy_1 
+                    add_idea = AUT_sluggish_economy_2
+                }
+			}
+			else_if = {
+				limit = { has_idea = AUT_sluggish_economy_2 }
+				swap_ideas = { 
+                    remove_idea = AUT_sluggish_economy_2 
+                    add_idea = AUT_sluggish_economy_3
+                }
+			}
+		    else_if = {
+				limit = { has_idea = AUT_sluggish_economy_3 }
+				remove_ideas = AUT_sluggish_economy_3
+			}
+        }
+	}
+	
+	focus = {
+		id = AUT_nation_of_industry
+		#icon = 
+		prerequisite = { focus = AUT_new_labour_charter }
+		prerequisite = { focus = AUT_new_export_markets }
+		prerequisite = { focus = AUT_further_state_intervention }
+		x = 6
+		y = 5
+		cost = 6
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+			has_country_leader = {
+				name = "Engelbert Dollfuss"
+				ruling_only = yes
+			}					
+		}	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			swap_ideas = { 
+                    remove_idea = AUT_industrialism_2
+                    add_idea = AUT_industrial_nation
+                }
+        }
+	}
+	
+	focus = {
+		id = AUT_austrian_miracle
+		#icon = 
+		prerequisite = { focus = AUT_nation_of_farmers OR = AUT_nation_of_industry }
+		x = 4
+		y = 6
+		cost = 6
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_leader = {
+				name = "Engelbert Dollfuss"
+				ruling_only = yes
+			}					
+		}	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_timed_idea = { idea = AUT_austrian_miracle  days = 730 }
         }
 	}
 }
