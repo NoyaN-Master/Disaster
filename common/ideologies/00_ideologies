@@ -85,6 +85,9 @@ ideologies = {
 			
 			libertarian_socialist_subideology = {
 			}
+			
+			gangster_state = {
+			}
 		}
 		
 			dynamic_faction_names = {
@@ -158,6 +161,9 @@ ideologies = {
 			
 			liberal_subideology = {
 			}
+			
+			wall_street_state = {
+			}
 		}
 		
 			dynamic_faction_names = {
@@ -197,6 +203,10 @@ ideologies = {
 			}
 			
 			conservative_monarchy = {
+			                    can_be_randomly_selected = no
+			}
+			
+			british_collab_government = {
 			                    can_be_randomly_selected = no
 			}
 		}
