@@ -6,6 +6,11 @@ state={
 	}
 	history={
 		owner = ARM
+		
+		buildings = {
+			infrastructure = 3
+
+		}
 	}
 	manpower=300000
 	buildings_max_level_factor=1.000

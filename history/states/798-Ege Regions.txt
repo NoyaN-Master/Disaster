@@ -1,11 +1,19 @@
 state={
 	id=798
 	name="STATE_798"
+	resources={
+		chromium=19.000
+	}
+	
 	provinces={
 		928 3927 6992 9921 9929 10038 11848 11898 
 	}
 	history ={
 		owner= WRF
+		buildings = {
+			infrastructure = 5
+
+		}
 	}
 	manpower=1000000
 	buildings_max_level_factor=1.000
