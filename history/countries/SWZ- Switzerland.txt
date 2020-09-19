@@ -1,4 +1,4 @@
-capital = 41
+capital = 3
 oob = ""
 
 # Starting tech
@@ -15,24 +15,24 @@ set_politics = {
 }
 
 set_popularities = {
-	conservative = 100
-	liberal = 0
-	social_democrat = 0
+	conservative = 45
+	liberal = 25
+	social_democrat = 10
 	libertarian_socialist = 0
-	authoritarian_socialist = 0
+	authoritarian_socialist = 10
 	national_bolshevik = 0
 	authoritarian_democrat = 0
 	reactionary = 0
-	ultranationalist = 0
+	ultranationalist = 10
 	revolutionary_nationalist = 0
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
 
 create_country_leader = {
-	name = "Alfonso XIII"
-	#desc = "SPK_Alfonso_desc"
-	picture = "SPK_Alfonso.tga"
+	name = "Swiss Federal Council"
+	#desc = "SWZ_Federal_Council_desc"
+	picture = "SWZ_Federal_Council.tga"
 	expire = "2020.1.1"
 	ideology = conservative_subideology
 	traits = {

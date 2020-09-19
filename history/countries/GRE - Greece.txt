@@ -34,7 +34,7 @@ create_country_leader = {
 	#desc = "GRE_Alexander_desc"
 	picture = "GRE_Alexander.tga"
 	expire = "2020.1.1"
-	ideology = conservative_monarchy
+	ideology = conservative_subideology
 	traits = {
 		#
 	}

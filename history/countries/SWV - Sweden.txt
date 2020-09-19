@@ -1,4 +1,4 @@
-capital = 41
+capital = 141
 oob = ""
 
 # Starting tech
@@ -15,9 +15,9 @@ set_politics = {
 }
 
 set_popularities = {
-	conservative = 100
-	liberal = 0
-	social_democrat = 0
+	conservative = 50
+	liberal = 25
+	social_democrat = 25
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
 	national_bolshevik = 0
@@ -30,9 +30,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Alfonso XIII"
-	#desc = "SPK_Alfonso_desc"
-	picture = "SPK_Alfonso.tga"
+	name = "Gustav V Adolf "
+	#desc = "SWV_Gustav_Adolf_desc"
+	picture = "SWV_Gustav_Adolf.tga"
 	expire = "2020.1.1"
 	ideology = conservative_subideology
 	traits = {

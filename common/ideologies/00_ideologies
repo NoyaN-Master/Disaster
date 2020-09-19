@@ -87,6 +87,7 @@ ideologies = {
 			}
 			
 			gangster_state = {
+			             can_be_randomly_selected = no
 			}
 		}
 		
@@ -163,6 +164,7 @@ ideologies = {
 			}
 			
 			wall_street_state = {
+			                can_be_randomly_selected = no
 			}
 		}
 		

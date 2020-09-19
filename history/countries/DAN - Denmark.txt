@@ -1,4 +1,4 @@
-capital = 41
+capital = 37
 oob = ""
 
 # Starting tech
@@ -8,16 +8,16 @@ set_technology = {
 set_convoys = 0
 
 set_politics = {
-	ruling_party = conservative
+	ruling_party = social_democrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	conservative = 100
-	liberal = 0
-	social_democrat = 0
+	conservative = 20
+	liberal = 20
+	social_democrat = 60
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
 	national_bolshevik = 0
@@ -30,11 +30,11 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Alfonso XIII"
-	#desc = "SPK_Alfonso_desc"
-	picture = "SPK_Alfonso.tga"
+	name = "Christian X"
+	#desc = "DAN_Christian_desc"
+	picture = "DAN_Christian.tga"
 	expire = "2020.1.1"
-	ideology = conservative_subideology
+	ideology = social_democrat_subideology
 	traits = {
 		#
 	}

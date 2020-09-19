@@ -1,4 +1,4 @@
-capital = 41
+capital = 110
 oob = ""
 
 # Starting tech
@@ -8,33 +8,33 @@ set_technology = {
 set_convoys = 0
 
 set_politics = {
-	ruling_party = conservative
+	ruling_party = ultranationalist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	conservative = 100
+	conservative = 5
 	liberal = 0
 	social_democrat = 0
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
 	national_bolshevik = 0
 	authoritarian_democrat = 0
-	reactionary = 0
-	ultranationalist = 0
-	revolutionary_nationalist = 0
+	reactionary = 10
+	ultranationalist = 80
+	revolutionary_nationalist = 5
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
 
 create_country_leader = {
-	name = "Alfonso XIII"
-	#desc = "SPK_Alfonso_desc"
-	picture = "SPK_Alfonso.tga"
+	name = "Vidkun Quisling"
+	#desc = "NRG_Vidkun_Quisling_desc"
+	picture = "NRG_Vidkun_Quisling.tga"
 	expire = "2020.1.1"
-	ideology = conservative_subideology
+	ideology = ultranationalist_subideology
 	traits = {
 		#
 	}
