@@ -53,7 +53,10 @@ focus_tree = {
 				name = "Engelbert Dollfuss"
 				ruling_only = yes
 			}					
-		}	
+		}		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			custom_effect_tooltip = AUT_economic_recovery
@@ -82,6 +85,7 @@ focus_tree = {
 		id = AUT_maintain_agrarianism
 		#icon = 
 		prerequisite = { focus = AUT_economic_reforms }
+		mutually_exclusive = { focus = AUT_new_industrialism }
 		x = 2
 		y = 2
 		cost = 6
@@ -93,7 +97,10 @@ focus_tree = {
 				name = "Engelbert Dollfuss"
 				ruling_only = yes
 			}					
-		}	
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_ideas = AUT_agrarianism_1
@@ -116,6 +123,9 @@ focus_tree = {
 			ruling_only = yes
 		}					
 	}	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
 		add_stability = 0.05
@@ -139,6 +149,9 @@ focus_tree = {
 				ruling_only = yes
 			}					
 		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			swap_ideas = { 
@@ -164,6 +177,9 @@ focus_tree = {
 				ruling_only = yes
 			}					
 		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 		    add_ideas = AUT_tariffs
 		}
@@ -187,6 +203,9 @@ focus_tree = {
 				ruling_only = yes
 			}					
 		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			custom_effect_tooltip = AUT_economic_recovery
@@ -227,6 +246,9 @@ focus_tree = {
 				ruling_only = yes
 			}					
 		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 		add_stability = 0.05
         add_political_power = 50		
@@ -251,7 +273,10 @@ focus_tree = {
 				ruling_only = yes
 			}					
 		}
-		completion_reward = 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
 			custom_effect_tooltip = AUT_economic_recovery
 			if = {
 				limit = { has_idea = AUT_sluggish_economy_1 }
@@ -293,6 +318,9 @@ focus_tree = {
 				ruling_only = yes
 			}					
 		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			swap_ideas = { 
@@ -318,10 +346,12 @@ focus_tree = {
 				ruling_only = yes
 			}					
 		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_ideas = AUT_industrialism_1
-			add_stability = -0.05
         }
 	}
 	
@@ -341,6 +371,9 @@ focus_tree = {
 				ruling_only = yes
 			}					
 		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_political_power = 50
@@ -363,6 +396,9 @@ focus_tree = {
 				ruling_only = yes
 			}					
 		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			swap_ideas = { 
@@ -388,6 +424,9 @@ focus_tree = {
 				ruling_only = yes
 			}					
 		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_stability = -0.05
@@ -416,6 +455,9 @@ focus_tree = {
 				ruling_only = yes
 			}					
 		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			custom_effect_tooltip = AUT_economic_recovery
@@ -458,6 +500,9 @@ focus_tree = {
 				ruling_only = yes
 			}					
 		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			swap_ideas = { 
@@ -483,6 +528,9 @@ focus_tree = {
 				ruling_only = yes
 			}					
 		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_timed_idea = { idea = AUT_austrian_miracle  days = 730 }
