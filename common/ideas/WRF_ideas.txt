@@ -1,0 +1,34 @@
+ideas = {
+
+country = {
+
+WRF_Greek_Legacy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Greek_Legacy" }
+			#picture = WRF_Greek_Legacy
+			modifier = {
+
+			}
+		}
+WRF_Kemal_Army = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Kemal_Army" }
+			#picture = WRF_Kemal_Army
+			modifier = {
+
+			}
+		}
+WRF_Legitimate_Heir = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Legitimate_Heir" }
+			#picture = WRF_Legitimate_Heir
+			modifier = {
+			
+			}
+		}
+WRF_Tekalif = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif" }
+			#picture = WRF_Tekalif
+			modifier = {
+			
+			}
+		}			
+	}
+}		

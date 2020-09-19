@@ -14,6 +14,12 @@ set_politics = {
 	elections_allowed = no
 }
 
+add_ideas = THR_Constant_Raids
+add_ideas = THR_Ismet_Army
+add_ideas = THR_West_Society
+add_ideas = THR_Dreams_Rumelia
+add_ideas = TUR_Struggle_Front
+
 set_popularities = {
 	conservative = 0
 	liberal = 0

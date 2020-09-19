@@ -14,6 +14,12 @@ set_politics = {
 	elections_allowed = no
 }
 
+add_ideas = WRF_Greek_Legacy
+add_ideas = WRF_Kemal_Army
+add_ideas = WRF_Legitimate_Heir
+add_ideas = WRF_Tekalif
+add_ideas = TUR_Struggle_Front
+
 set_popularities = {
 	conservative = 0
 	liberal = 0

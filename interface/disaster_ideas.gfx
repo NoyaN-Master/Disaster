@@ -1,7 +1,7 @@
 spriteTypes = {	
 
 	###################
-	## The Crazy 90s ##
+	## Disaster ##
 	#### Ideas GFX ####
 	###################
 
@@ -33,8 +33,53 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_idea_WRF_Greek_Legacy"
+		texturefile = "gfx/interface/ideas/WRF/WRF_Greek_Legacy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_WRF_Kemal_Army"
+		texturefile = "gfx/interface/ideas/WRF/WRF_Kemal_Army.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_WRF_Legitimate_Heir"
+		texturefile = "gfx/interface/ideas/WRF/WRF_Legitimate_Heir.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_WRF_Tekalif"
+		texturefile = "gfx/interface/ideas/WRF/WRF_Tekalif.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_TUR_Struggle_Front"
+		texturefile = "gfx/interface/ideas/TURKEY/TUR_Struggle_Front.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_idea_AUT_Pangerman_Unrest"
 		texturefile = "gfx/interface/ideas/AUT/AUT_Pangerman_Unrest.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_THR_Constant_Raid"
+		texturefile = "gfx/interface/ideas/THR/THR_Constant_Raid.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_THR_Dreams_Rumelia"
+		texturefile = "gfx/interface/ideas/THR/THR_Dreams_Rumelia.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_THR_Ismet_Army"
+		texturefile = "gfx/interface/ideas/THR/THR_Ismet_Army.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_THR_Westernized_Society"
+		texturefile = "gfx/interface/ideas/THR/THR_Westernized_Society.dds"
 	}
 
 }	
