@@ -106,5 +106,30 @@ spriteTypes = {
 		name = "GFX_idea_CRW_Race_War"
 		texturefile = "gfx/interface/ideas/CRW/CRW_Race_War.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_ANT_Failed_State"
+		texturefile = "gfx/interface/ideas/ANT/ANT_Failed_State.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ANT_Doomed_Youth"
+		texturefile = "gfx/interface/ideas/ANT/ANT_Doomed_Youth.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ANT_Slave_Unrest"
+		texturefile = "gfx/interface/ideas/ANT/ANT_Slave_Unrest.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ANT_Article_Two"
+		texturefile = "gfx/interface/ideas/ANT/ANT_Article_Two.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ANT_Pashas_Scheming"
+		texturefile = "gfx/interface/ideas/ANT/ANT_Pashas_Scheming.dds"
+	}
 
 }	
