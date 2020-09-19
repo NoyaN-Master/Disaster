@@ -1,12 +1,12 @@
-﻿l_english:
+l_english:
 
 austrian_focus:0 "Austria Focus Tree"
 
 ### Flags and Tooltips ###
 
 AUT_new_flag:0 "§YThe party flag of the VF (pictured) will be adopted as the national flag§"
-AUT_posts_merged:0 "§YThe Posts of Bundesprasident and Bundeskanzler will be officially merged, giving Dollfuss absolute power.§/"
-AUT_economic_recovery:0 "§GThe economy will grow§/"
+AUT_posts_merged:0 "§WThe Posts of § §YBundesprasident § §Wand § §YBundeskanzler § §Wwill be §Gofficially merged, § §Wgiving Dollfuss §Yabsolute power.§/"
+AUT_economic_recovery:0 "§GThe economy will grow§/ §W"
 
 ### Decisions ###
 
@@ -14,6 +14,38 @@ AUT_economic_recovery:0 "§GThe economy will grow§/"
 
 AUT_merge_the_posts:0 "Merge the Posts"
 AUT_merge_the_posts_desc:0 "To fully solidify Dollfuss’s hold on power, it is now being proposed that we merge Miklas's post of Bundesprasident, the oficial head of state with his own post of Bundeskanzler. This would clearly make him the sole, unchallenged power in Austria, but we will need to tread carefully to succeed."
+AUT_economic_reforms:0 "Economic Reforms"
+AUT_economic_reforms_desc:0 "Despite all of our previous efforts at turning around the Austrian economy, it remains stagnant at best. In the long term this could greatly undermine the credibility of our government and policies, so we must act quickly to reinvigorate the economy."
+AUT_maintain_agrarianism:0 "Maintain Agrarianism"
+AUT_maintain_agrarianism_desc:0 "A man of peasant roots himself, Dollfuss has, since the start of his career, been an agrarian through and through. He has always championed the interests of the Austrian peasantry, for in them alone can be seen the true spirit of the Catholic German people. Although we need to re-energise our policies, the principles behind them need not change."
+AUT_new_industrialism:0 "New Industrialism"
+AUT_new_industrialism_desc:0 "Although we have always been an agrarian party, the party of the common farmer, we can no longer pretend to ourselves that these policies simply are not working. If Austria’s economy is stagnant, it is because she is completely bereft of the industry with which to compete with other nations. Only a new industrialisation drive will solve the problems we are faced with."
+AUT_corporatist_ideals:0 "Corporatist Ideals"
+AUT_corporatist_ideals_desc:0 "Inspired by the Quadregismo Anno and by our opposition to both socialism and liberal capitalism, corporatist ideology has always guided our economic policy. We should now look to strenghten the Corporate State in Austria, and further legally enshrine our ideals."
+AUT_further_state_intervention:0 "Further State Intervention"
+AUT_further_state_intervention_desc:0 "The failings of liberal nations to deal with the effects of the Depression, and indeed of previous Austrian governments to do so, make clear that only determined and precise state intervention can turn an economy around. Through increasing our spending and our investments, we should pull Austria out of the crisis in no time!"
+AUT_protect_the_common_farmer:0 "Protect the Common Farmer"
+AUT_protect_the_common_farmer_desc:0 "How can the honest, hardworking small farmers of this naation hope to survive ina global market, faced with unlimited competition from vast foreign businesses? If we are truly to represent the farmers of Austria, we must enact new tarriffs to ensure a market for their hard-earned produce."
+AUT_grain_exports:0 "Grain Exports"
+AUT_grain_exports_desc:0 "Having now strenghtened the hand of our own agriculutral sector and greatly increased our own production through the tarriffs, we can now look to exporting much larger amounts of our newly plentiful grain. It's no secret that in many a nation agriculuture has not recovered as it has here, and the abundance of buyers and potential trade deals will surely go some way to reinvigorating the economy."
+AUT_aristocratic_ties:0 "Aristocratic Ties"
+AUT_aristocratic_ties_desc:0 "As well as the peasantry, we have another key support base in Austria’s ancient aristocracy. Represented in our government by such figures as Prince Stahremberg, they have a great deal of influence and we would be failing ourselves if we couldn't keep them happy with our policies. As such we should meet with and reach out to key aristocrats, and seek to accomodate their demands."
+AUT_land_reform:0 "Land Reform"
+AUT_land_reform_desc:0 "Having now secured the loyalty of the gentry, we should in return expect them to collaborate with us in finally implementing our long promised land reform projects, distributing significant amounts of land to both the State and smaller farmers. Witht the co-operation of all, Austrian agriculture will flourish like never before!"
+AUT_nation_of_farmers:0 "A Nation of Farmers"
+AUT_nation_of_farmers_desc:0 "With our agrarian reforms firmly in place and the loyalty of the rural population, rich and poor alike, secured, we can truly call oursleves a nation of farmers. Agriculutree is what has lifted our economy out of stagnation, and agriculture is what shall ensure future growth. And within the honourable peasantry of this nation, the true spirit of the Catholic German is seen."
+AUT_farmers_to_factorymen:0 "Farmers to Factorymen"
+AUT_farmers_to_factorymen_desc:0 "As we imdustrialise we will need men to work in the new factories and we can only hope to do this by promoting migration from the countryside to expanind rural areas. As agriculture loses its sway on the economy, farmers will be forced to move to the cities anyway, so we might as well encourage them to do so now."
+AUT_new_export_markets:0 "New Export Markets"
+AUT_new_export_markets_desc:0 "With our industrial capacity rapidly increasing, Austrian businesses are now branching out into a number of new goods, and should soon be able to compete with foreign companies. Subsidising these efforts and negotiating trade deals on their bhealf should reinvigorate our economy, and help pull us out of the erstwhile slump."
+AUT_ties_with_business:0 "Ties With Business"
+AUT_ties_with_business_desc:0 "As we indutrialise we will need the support of the businessmen of this country, on whom we must depend to lead the economy forwards. By meeting with prominent business representatives and giving them more sway in the government, we can ssure that their needs are accomodated and their loyalty is secured."
+AUT_new_labour_charter:0 "New Labour Charter"
+AUT_new_labour_charter_desc:0 "Having now secured the allegiance of business, we should expect them to fulfill their end of the bargain, integrating their companies into the larger state corporations and agreeing to a new Charter on Workers' Rights, to be signed in accordance with the leaders of our state-controlled Trade Unions. The principle of corporatism in Austria will be strenghtened like never before."
+AUT_nation_of_industry:0 "A Nation of Industry"
+AUT_nation_of_industry_desc:0 "With our industrial reforms now in place, and new factories sprining up around the country, we can finally proclaim that Austria is now a truly industrial nation. Our vastly enhanced production, within the asupices of the Corporate State, will lead to previously impossible levels of prosperity for all Austrians."
+AUT_austrian_miracle:0 "The Austrian Miracle"
+AUT_austrian_miracle_desc:0 "We have done it. With our economic reforms firmly implemented and the country pulled clean out of the depression, an economic boom has set in. As foreign investemnt soars and the standard of living skyrockets, the press proclaims this the "Austrian Miracle". And what else is it, for it is our faith in God and dedication to Him that has brought us this far."
 
 ### Parties ###
 AUT_national_bolshevik_party:0 "KPO"
@@ -54,6 +86,18 @@ AUT_socialist_discotent:0 "Socialist Resistance"
 AUT_socialist_discotent_desc:0 "Ever since the brief civil war in 1934, the Austrian socialist movement, dedpite being heavily oppressed and, formally, banned, has, under the leadership of Karl Renner, been a massive source of instability for our regime. If we can't nip these Red filth in the bud, there may be consequences for our government."
 AUT_pan_germanist_discotent:0 "Pan-Germanist Resistance"
 AUT_pan_germanist_discotent_desc:0 "Dollfuss’s anti-Pan German, Catholic, and Austrian Nationalist policies have alienated a large proportion of the population, who have always desired an Anschluss, or Union, with our fellow German-speakers to the North and West. These people are increasingly represented by Arthur Seyss-Inquart and his Grossdeutsche Nationale Partei, who believe that they alone can bring order and unity to all Germans."
+AUT_agrarianism_1:0 "Agrarian Corporatism"
+AUT_agrarianism_1_desc:0 "We have stayed true to our long-standing agrarian policies, and are now rapidly growing the economy through extensive investemnt in the countrysdie, and support for Austria’s farmers."
+AUT_agrarianism_2:0 "Agrarian Corporatism"
+AUT_agrarianism_2_desc:0 "We have stayed true to our long-standing agrarian policies, and are now rapidly growing the economy through extensive investemnt in the countrysdie, and support for Austria’s farmers."
+AUT_agrarian_nation:0 "Agrarian Nation"
+AUT_agrarian_nation_desc:0 "Having put through extensive land reforms and invested heavily in the countryside, agriculture is now the unchallenged crux of Austria’s economy. With grain exports and subsidation of local businesses having reversed the slump, Austria truly is a Nation of Farmers."
+AUT_industrialism_1:0 "Industrial Corporatism"
+AUT_industrialism_1_desc:0 "We have, under the pressure of economic stagnation, had to abdnon our older agrarian policies, and are now heavily investing in rural areas, promoting large-scale industrialisation and migration from the countryside to factories. ALthough industrialising Ausyrua will take time, we shall surely reap the benefits."
+AUT_industrialism_2:0 "Industrial Corporatism"
+AUT_industrialism_2_desc:0 "We have, under the pressure of economic stagnation, had to abdnon our older agrarian policies, and are now heavily investing in rural areas, promoting large-scale industrialisation and migration from the countryside to factories. ALthough industrialising Ausyrua will take time, we shall surely reap the benefits."
+AUT_industrial_nation:0 "Industrial Nation"
+AUT_industrial_nation_desc:0 "With the regime heavily invested in the cities and factories, and gained the loyalty of both businesses and workers needed to expand our industry, Austria has rapidly industrialised, and the economy is growing rapidly thanks to it. At last, we can truly call ourselves a Nation of Industry."
 
 ### Events ###
 aut.1.t:0 "The Situation of Austria in 1936"
