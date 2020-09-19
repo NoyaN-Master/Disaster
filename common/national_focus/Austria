@@ -334,6 +334,7 @@ focus_tree = {
 		id = AUT_new_industrialism
 		#icon = 
 		prerequisite = { focus = AUT_economic_reforms }
+		mutually_exclusive = { focus = AUT_maintain_agrarianism }
 		x = 6
 		y = 2
 		cost = 6
