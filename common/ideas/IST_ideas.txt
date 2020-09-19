@@ -1,0 +1,41 @@
+ideas = {
+
+country = {
+
+IST_Independent_City = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IST_Independent_City" }
+			picture = IST_Independent_City
+			modifier = {
+
+			}
+		}
+IST_Gang_Unrest = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IST_Gang_Unrest" }
+			picture = IST_Gang_Unrest
+			modifier = {
+
+			}
+		}
+IST_Failing_Economy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IST_Failing_Economy" }
+			picture = IST_Failing_Economy
+			modifier = {
+			
+			}
+		}
+IST_Memories_Operation = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IST_Memories_Operation" }
+			picture = IST_Memories_Operation
+			modifier = {
+			
+			}
+		}
+IST_Race_War = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IST_Race_War" }
+			picture = IST_Race_War
+			modifier = {
+			
+			}
+		}		
+	}
+}		

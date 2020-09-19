@@ -1,0 +1,41 @@
+ideas = {
+
+country = {
+
+ANT_Failed_State = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Failed_State" }
+			picture = ANT_Failed_State
+			modifier = {
+
+			}
+		}
+ANT_Doomed_Youth = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
+			picture = ANT_Doomed_Youth
+			modifier = {
+
+			}
+		}
+ANT_Slave_Unrest = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Slave_Unrest" }
+			picture = ANT_Slave_Unrest
+			modifier = {
+			
+			}
+		}
+ANT_Article_Two = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Article_Two" }
+			picture = ANT_Article_Two
+			modifier = {
+			
+			}
+		}
+ANT_Pashas_Scheming = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Pashas_Scheming" }
+			picture = ANT_Pashas_Scheming
+			modifier = {
+			
+			}
+		}		
+	}
+}		
