@@ -14,11 +14,11 @@ set_politics = {
 	elections_allowed = no
 }
 
-add_ideas = IST_Independent_City
-add_ideas = IST_Gang_Unrest
-add_ideas = IST_Failing_Economy
-add_ideas = IST_Memories_Operation
-add_ideas = IST_Race_War
+add_ideas = CRW_Independent_City
+add_ideas = CRW_Gang_Unrest
+add_ideas = CRW_Failing_Economy
+add_ideas = CRW_Memories_Operation
+add_ideas = CRW_Race_War
 
 set_popularities = {
 	conservative = 0

@@ -81,5 +81,30 @@ spriteTypes = {
 		name = "GFX_idea_THR_Westernized_Society"
 		texturefile = "gfx/interface/ideas/THR/THR_Westernized_Society.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_CRW_Failing_Economy"
+		texturefile = "gfx/interface/ideas/CRW/CRW_Failing_Economy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_CRW_Gang_Unrest"
+		texturefile = "gfx/interface/ideas/CRW/CRW_Gang_Unrest.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_CRW_Independent_City"
+		texturefile = "gfx/interface/ideas/CRW/CRW_Independent_City.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_CRW_Memories_Operation"
+		texturefile = "gfx/interface/ideas/CRW/CRW_Memories_Operation.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_CRW_Race_War"
+		texturefile = "gfx/interface/ideas/CRW/CRW_Race_War.dds"
+	}
 
 }	
