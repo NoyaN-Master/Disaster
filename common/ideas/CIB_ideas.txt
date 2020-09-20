@@ -6,29 +6,54 @@ CIB_King_Hill = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_King_Hill" }
 			picture = CIB_King_Hill
 			modifier = {
-
+			attrition = -0.2
+			winter_attrition_factor = -0.5
+			resistance_damage_to_garrison = 0.5	
+			war_support_factor = 0.10	
+			acclimatization_cold_climate_gain_factor = 0.1
 			}
 		}
 CIB_Zombie = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_Zombie" }
 			picture = CIB_Zombie
 			modifier = {
-
+				surrender_limit = 0.5
+				stability_factor = 0.10	
 			}
+			targeted_modifier = { tag = ARM attack_bonus_against = 0.3 }
+			targeted_modifier = { tag = ARM defense_bonus_against = 0.3 }
 		}
 CIB_OrduVatan = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
 			picture = CIB_OrduVatan
 			modifier = {
-			
+			army_core_defence_factor = 0.3
+			training_time_army_factor = 3.0
+			planning_speed = 0.10
+			production_factory_max_efficiency_factor = -0.5
+			production_speed_buildings_factor = -0.9
+			consumer_goods_factor = - 0.20
+			command_power_gain = 0.5	
+			no_supply_grace = 72
+			stability_factor = -0.30
+			war_support_weekly = 0.05
+			conscription = -0.05
 			}
 		}
 CIB_Enver_Idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_Enver_Idea" }
 			picture = CIB_Enver_Idea
 			modifier = {
-			
+			MONTHLY_POPULATION = -0.8
 			}
+			add_opinion_modifier = {   target = WRF   modifier = faction_traitor }
+			add_opinion_modifier = {   target = ANT   modifier = faction_traitor }
+			add_opinion_modifier = {   target = THR   modifier = faction_traitor }
+			targeted_modifier = { tag = WRF attack_bonus_against = 0.1 }
+			targeted_modifier = { tag = ANT attack_bonus_against = 0.1 }
+			targeted_modifier = { tag = THR attack_bonus_against = 0.1 }
+			targeted_modifier = { tag = KUR attack_bonus_against = 0.3 }
+			targeted_modifier = { tag = HJZ attack_bonus_against = 0.3 }
 		}			
 	}
 }		
