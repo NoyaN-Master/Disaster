@@ -10,8 +10,8 @@ state={
 	state_category = metropolis
 
 
-	historySAX
-		owner = GER
+	history={
+		owner = SAX
 		buildings = {
 			infrastructure = 7
 			arms_factory = 2
@@ -24,13 +24,7 @@ state={
 			3535 5 
 		}
 		add_core_of = SAX
-		1939.1.1 = {
-			buildings = {
-				synthetic_refinery = 2
-				arms_factory = 5
-				industrial_complex = 10
-			}
-		}
+
 	}
 
 	provinces={
