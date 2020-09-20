@@ -154,19 +154,28 @@ SWZ = {
 	color = rgb { 170 5 49 }
 	color_ui = rgb { 170 5 49 }
 }
+
 SWV = {
 	color = rgb { 36 132 247 }
 	color_ui = rgb { 36 132 247 }
 }
+
 DAN = {
 	color = rgb { 153 116 93 }
 	color_ui = rgb { 153 116 93 }
 }
+
 IRA = {
 	color = rgb { 80 159 90 }
 	color_ui = rgb { 80 159 90 }
 }
+
 NRG = {
 	color = rgb { 111 71 71 }
 	color_ui = rgb { 111 71 71 }
+}
+
+BAY = {
+	color = rgb { 46 184 179 }
+	color_ui = rgb { 46 184 179 }
 }
