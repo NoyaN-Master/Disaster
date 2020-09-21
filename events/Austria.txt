@@ -348,3 +348,23 @@ country_event = { #Dollfuss Shot
 		add_stability = -0.10
 	}
 }
+
+### Dollfuss Events ###
+
+country_event = { #Concordat
+	id = aut.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.11" }
+	title = aut.11.t
+	desc = aut.11.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = aut.11.a 
+		add_ideas = AUT_revised_concordat 
+	}
+}
+
+
