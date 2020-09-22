@@ -23,16 +23,9 @@ state={
 			air_base = 8
 		}
 		add_core_of = HET
-		add_core_of = HET
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 3
-				industrial_complex = 3
-			}
-		}
 	}
 
 	provinces={
-		489 504 525 582 3494 3543 6497 9465 9543 9568 11557 
+		504 525 3494 3543 6497 9465 9568
 	}
 }
