@@ -196,6 +196,11 @@ SAX = {
 }
 
 HET = {
-	color = rgb { 153 61 0 }
+	color = rgb { 153 61 0 }   
 	color_ui = rgb { 153 61 0 }
+}
+
+WHR = {
+	color = rgb { 239 238 215 }   
+	color_ui = rgb { 239 238 215 }
 }
