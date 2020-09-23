@@ -14,6 +14,13 @@ set_politics = {
 	elections_allowed = no
 }
 
+add_ideas = PLN_free_at_fast
+add_ideas = PLN_minorities_and_borders
+add_ideas = PLN_leftist_organizations
+add_ideas = PLN_catholic_support
+
+country_event = { id = pln.1 days = 1 } #Intro event
+
 set_popularities = {
 	conservative = 11
 	liberal = 10

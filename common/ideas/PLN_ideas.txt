@@ -1,0 +1,44 @@
+ideas = {
+
+country = {
+
+PLN_free_at_fast = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PLN_free_at_fast" }
+			picture = PLN_free_at_fast
+			modifier = {
+			offence = 0.10
+			defence = 0.10
+			}
+		}
+		
+PLN_minorities_and_borders = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PLN_minorities_and_borders" }
+			#picture = 
+			modifier = {
+			stability_factor = -0.05
+                        war_support_factor = -0.10
+			political_power_factor = -0.05
+			}
+		}
+		
+PLN_leftist_organizations = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PLN_leftist_organizations" }
+			#picture = 
+			modifier = {
+			stability_factor = -0.02
+			production_factory_max_efficiency_factor = -0.05
+			authoritarian_socialist_drift = 0.01
+			libertarian_socialist_drift = 0.02
+			}
+		}
+		
+PLN_catholic_support = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PLN_catholic_support" }
+			#picture = 
+			modifier = {
+			consumer_goods_factor = -0.03
+			political_power_factor = 0.05
+			}
+		}
+	
+}
