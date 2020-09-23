@@ -1,0 +1,41 @@
+capital = 227
+oob = ""
+
+# Starting tech
+set_technology = {
+}
+
+set_convoys = 0
+
+set_politics = {
+	ruling_party = revolutionary_anarchist
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	conservative = 0
+	liberal = 0
+	social_democrat = 0
+	libertarian_socialist = 20
+	authoritarian_socialist = 10
+	national_bolshevik = 0
+	authoritarian_democrat = 0
+	reactionary = 0
+	ultranationalist = 0
+	revolutionary_nationalist = 0
+	esoteric_traditionalist = 0
+	revolutionary_anarchist = 70
+}
+
+create_country_leader = {
+	name = "Nestor Makhno"
+	#desc = "FRI_Nestor Makhno_desc"
+	picture = "FRI_Nestor_Makhno.tga"
+	expire = "2020.1.1"
+	ideology = revolutionary_anarchist_subideology
+	traits = {
+		#
+	}
+}
