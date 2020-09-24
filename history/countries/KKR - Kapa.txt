@@ -1,0 +1,41 @@
+capital = 817
+oob = ""
+
+# Starting tech
+set_technology = {
+}
+
+set_convoys = 0
+
+set_politics = {
+	ruling_party = authoritarian_socialist
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	conservative = 0
+	liberal = 0
+	social_democrat = 0
+	libertarian_socialist = 40
+	authoritarian_socialist = 50
+	national_bolshevik = 10
+	authoritarian_democrat = 0
+	reactionary = 0
+	ultranationalist = 0
+	revolutionary_nationalist = 0
+	esoteric_traditionalist = 0
+	revolutionary_anarchist = 0
+}
+
+create_country_leader = {
+	name = "Govan Mbeki"
+	#desc = "KKR_Govan_Mbeki_desc"
+	picture = "KKR_Govan_Mbeki.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_socialist_subideology
+	traits = {
+		#
+	}
+}
