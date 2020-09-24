@@ -1,0 +1,41 @@
+capital = 16
+oob = ""
+
+# Starting tech
+set_technology = {
+}
+
+set_convoys = 0
+
+set_politics = {
+	ruling_party = liberal
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	conservative = 13
+	liberal = 19
+	social_democrat = 21
+	libertarian_socialist = 14
+	authoritarian_socialist = 11
+	national_bolshevik = 6
+	authoritarian_democrat = 5
+	reactionary = 8
+	ultranationalist = 0
+	revolutionary_nationalist = 3
+	esoteric_traditionalist = 0
+	revolutionary_anarchist = 0
+}
+
+create_country_leader = {
+	name = "Camille Chautemps"
+	#desc = "FRE_Camille_Chautemps_desc"
+	picture = "FRE_Camille_Chautemps.tga"
+	expire = "2020.1.1"
+	ideology = liberal_subideology
+	traits = {
+		#
+	}
+}
