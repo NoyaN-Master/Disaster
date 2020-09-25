@@ -30,9 +30,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Leon Degrelle"
-	#desc = "BLI_Degrelle_desc"
-	picture = "BLI_Degrelle.tga"
+	name = "Albert I"
+	#desc = "BLI_Albert_desc"
+	picture = "BLI_Albert.tga"
 	expire = "2020.1.1"
 	ideology = ultranationalist_subideology 
 	traits = {
