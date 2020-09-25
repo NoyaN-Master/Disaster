@@ -15,7 +15,7 @@ set_politics = {
 }
 
 set_popularities = {
-	conservative = 30
+	conservative = 15
 	liberal = 0
 	social_democrat = 0
 	libertarian_socialist = 0
@@ -24,15 +24,15 @@ set_popularities = {
 	authoritarian_democrat = 0
 	reactionary = 20
 	ultranationalist = 50
-	revolutionary_nationalist = 0
+	revolutionary_nationalist = 15
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
 
 create_country_leader = {
-	name = "Joris Van Severen"
-	#desc = "FLM_Joris_desc"
-	picture = "FLM_Joris.tga"
+	name = "Leon Degrelle"
+	#desc = "BLI_Degrelle_desc"
+	picture = "BLI_Degrelle.tga"
 	expire = "2020.1.1"
 	ideology = ultranationalist_subideology 
 	traits = {
