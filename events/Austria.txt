@@ -167,7 +167,7 @@ country_event = { #Succesful Rally
 		add_political_power = 100
 		hidden_effect = {
 			retire_country_leader = yes
-			retire_ideology_leader = reactionary
+			retire_ideology_leader = autocratic
 			retire_ideology_leader = authoritarian_democrat
 			retire_ideology_leader = conservative
 			create_country_leader = {
@@ -184,7 +184,7 @@ country_event = { #Succesful Rally
 	            desc = "AUT_Engelbert_Dollfuss_desc"
 	            picture = "AUT_Engelbert_Dollfuss.tga"
 	            expire = "2020.1.1"
-	            ideology = reactionary_subideology
+	            ideology = autocratic_subideology
 	            traits = {
 	        }
 			}
@@ -227,7 +227,7 @@ country_event = { #Radio Address
 		add_political_power = 50
 		hidden_effect = {
 			retire_country_leader = yes
-			retire_ideology_leader = reactionary
+			retire_ideology_leader = autocratic
 			retire_ideology_leader = authoritarian_democrat
 			retire_ideology_leader = conservative
 			create_country_leader = {
@@ -244,7 +244,7 @@ country_event = { #Radio Address
 	            desc = "AUT_Engelbert_Dollfuss_desc"
 	            picture = "AUT_Engelbert_Dollfuss.tga"
 	            expire = "2020.1.1"
-	            ideology = reactionary_subideology
+	            ideology = autocratic_subideology
 	            traits = {
 	        }
 			}
@@ -288,7 +288,7 @@ country_event = { #Private Ceremony
 		add_war_support = -0.05
 		hidden_effect = {
 			retire_country_leader = yes
-			retire_ideology_leader = reactionary
+			retire_ideology_leader = autocratic
 			retire_ideology_leader = authoritarian_democrat
 			retire_ideology_leader = conservative
 			create_country_leader = {
@@ -305,7 +305,7 @@ country_event = { #Private Ceremony
 	            desc = "AUT_Engelbert_Dollfuss_desc"
 	            picture = "AUT_Engelbert_Dollfuss.tga"
 	            expire = "2020.1.1"
-	            ideology = reactionary_subideology
+	            ideology = autocratic_subideology
 	            traits = {
 	        }
 			}

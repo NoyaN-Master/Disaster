@@ -8,7 +8,7 @@ set_technology = {
 set_convoys = 0
 
 set_politics = {
-	ruling_party = reactionary
+	ruling_party = autocratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -22,7 +22,7 @@ set_popularities = {
 	authoritarian_socialist = 0
 	national_bolshevik = 0
 	authoritarian_democrat = 30
-	reactionary = 50
+	autocratic = 50
 	ultranationalist = 20
 	revolutionary_nationalist = 0
 	esoteric_traditionalist = 0
@@ -34,7 +34,7 @@ create_country_leader = {
 	#desc = "DNK_Denikin_desc"
 	picture = "DNK_Denikin.tga"
 	expire = "2020.1.1"
-	ideology = reactionary_subideology
+	ideology = autocratic_subideology
 	traits = {
 		#
 	}

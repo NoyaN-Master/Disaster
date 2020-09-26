@@ -8,7 +8,7 @@ set_technology = {
 set_convoys = 45
 
 set_politics = {
-	ruling_party = reactionary
+	ruling_party = autocratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -22,7 +22,7 @@ set_popularities = {
 	authoritarian_socialist = 5
 	national_bolshevik = 0
 	authoritarian_democrat = 30
-	reactionary = 45
+	autocratic = 45
 	ultranationalist = 5
 	revolutionary_nationalist = 0
 	esoteric_traditionalist = 0
@@ -34,7 +34,7 @@ create_country_leader = {
 	#desc = "SOR_Alex_desc"
 	picture = "SOR_Alex.tga"
 	expire = "2020.1.1"
-	ideology = reactionary_subideology
+	ideology = autocratic_subideology
 	traits = {
 		#
 	}

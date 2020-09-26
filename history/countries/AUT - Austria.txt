@@ -29,7 +29,7 @@ set_popularities = {
 	authoritarian_socialist = 5
 	national_bolshevik = 0
 	authoritarian_democrat = 0
-	reactionary = 15
+	autocratic = 15
 	ultranationalist = 52
 	revolutionary_nationalist = 10
 	esoteric_traditionalist = 0
@@ -73,7 +73,7 @@ set_popularities = {
 	authoritarian_socialist = 5
 	national_bolshevik = 0
 	authoritarian_democrat = 0
-	reactionary = 15
+	autocratic = 15
 	ultranationalist = 52
 	revolutionary_nationalist = 10
 	esoteric_traditionalist = 0
@@ -96,7 +96,7 @@ create_country_leader = {
 	desc = "AUT_Wilhelm_Miklas_desc"
 	picture = "AUT_Wilhelm_Miklas.tga"
 	expire = "2020.1.1"
-	ideology = reactionary_subideology
+	ideology = autocratic_subideology
 	traits = {
 		#
 	}
@@ -173,7 +173,7 @@ create_country_leader = {
 	desc = "AUT_Wilhelm_Miklas_desc"
 	picture = "AUT_Wilhelm_Miklas.tga"
 	expire = "2020.1.1"
-	ideology = reactionary_subideology
+	ideology = autocratic_subideology
 	traits = {
 		#
 	}

@@ -29,7 +29,7 @@ set_popularities = {
 	authoritarian_socialist = 3
 	national_bolshevik = 0
 	authoritarian_democrat = 40
-	reactionary = 9
+	autocratic = 9
 	ultranationalist = 8
 	revolutionary_nationalist = 6
 	esoteric_traditionalist = 0
@@ -85,7 +85,7 @@ create_country_leader = {
 	#desc = "PLN_Biskup_Lukomski_desc"
 	picture = "PLN_Biskup_Lukomski.tga"
 	expire = "2020.1.1"
-	ideology = reactionary_subideology
+	ideology = autocratic_subideology
 	traits = {
 		#
 	}

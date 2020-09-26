@@ -22,7 +22,7 @@ set_popularities = {
 	authoritarian_socialist = 0
 	national_bolshevik = 0
 	authoritarian_democrat = 35
-	reactionary = 25
+	autocratic = 25
 	ultranationalist = 4
 	revolutionary_nationalist = 20
 	esoteric_traditionalist = 0
@@ -45,7 +45,7 @@ create_country_leader = {
 	#desc = "PRU_Alfred Hugenberg_desc"
 	picture = "PRU_Alfred Hugenberg.tga"
 	expire = "2020.1.1"
-	ideology = reactionary_subideology
+	ideology = autocratic_subideology
 	traits = {
 		#
 	}
