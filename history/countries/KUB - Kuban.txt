@@ -1,0 +1,75 @@
+capital = 234
+oob = ""
+
+# Starting tech
+set_technology = {
+}
+
+set_convoys = 0
+
+set_politics = {
+	ruling_party = authoritarian_democrat
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	conservative = 12
+	liberal = 4
+	social_democrat = 0
+	libertarian_socialist = 0
+	authoritarian_socialist = 0
+	national_bolshevik = 0
+	authoritarian_democrat = 35
+	reactionary = 25
+	ultranationalist = 4
+	revolutionary_nationalist = 20
+	esoteric_traditionalist = 0
+	revolutionary_anarchist = 0
+}
+
+create_country_leader = {
+	name = "Alexander Filimonov"
+	#desc = "PRU_Kurt_von_Schleicher_desc"
+	picture = "PRU_Kurt_von_Schleicher.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_democrat_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Nickay is a faggot"
+	#desc = "PRU_Alfred Hugenberg_desc"
+	picture = "PRU_Alfred Hugenberg.tga"
+	expire = "2020.1.1"
+	ideology = reactionary_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Die"
+	#desc = "PRU_Erich_von_Ludendorff_desc"
+	picture = "PRU_Erich_von_Ludendorff.tga"
+	expire = "2020.1.1"
+	ideology = revolutionary_nationalist_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Alfred Hugenberg"
+	#desc = "PRU_Alfred Hugenberg_desc"
+	picture = "PRU_Alfred Hugenberg.tga"
+	expire = "2020.1.1"
+	ideology = ultranationalist_subideology
+	traits = {
+		#
+	}
+}
+
