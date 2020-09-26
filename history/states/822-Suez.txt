@@ -1,0 +1,35 @@
+state=
+{
+	id=822
+	name="STATE_822"
+	manpower = 80000
+	
+	state_category = rural
+
+	history=
+	{
+		owner = 
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+                        dockyard = 2
+			12049 = {
+				naval_base = 2
+			}
+		}
+		
+		victory_points = {
+			12049 5
+		}
+		victory_points = {
+			4073 3
+		}
+
+		add_core_of = 
+
+	}
+
+	provinces={
+		1155 4073 9947 12049
+	}
+}

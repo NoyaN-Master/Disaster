@@ -2,28 +2,19 @@
 state={
 	id=51
 	name="STATE_51"
-	manpower = 6144743
+	manpower = 3072372
 	resources={
-		steel=30 # was: 54
+		steel=15
 	}
 
 
 	state_category = metropolis
 	
 	history={
-		owner = GER
-		victory_points = {
-			6469 10 
-		}
+		owner = 
 		victory_points = {
 			587 5 
 		}
-		#victory_points = {
-		#	3444 5
-		#}
-		#victory_points = {
-		#	3547 1
-		#}
 		buildings = {
 			infrastructure = 8
 			arms_factory = 3
@@ -31,12 +22,12 @@ state={
 			air_base = 3
 
 		}
-		add_core_of = GER
+		add_core_of = 
 
 	}
 
 	provinces={
-		529 587 3444 3512 3547 6469 6570 9482 9522 
+		587 3444 3547 9522 11435 11470 11494
 	}
 	
 }

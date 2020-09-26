@@ -7,6 +7,21 @@ set_technology = {
 
 set_convoys = 0
 
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+		}
+	}
+	set_autonomy = {
+		target = SHL
+		autonomous_state = autonomy_puppet
+	}
+	else = {
+		puppet = SHL
+	}
+}
+
 set_politics = {
 	ruling_party = social_democrat
 	last_election = "1936.1.1"

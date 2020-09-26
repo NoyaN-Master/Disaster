@@ -1,0 +1,27 @@
+
+state={
+	id=819
+	name="STATE_819" 
+	manpower = 1030501
+	
+	state_category = town
+	
+	resources={
+		steel=2 
+		chromium=12 
+	}
+
+	history={
+		owner = BOE
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		add_core_of = BOE
+	}
+
+	provinces={
+		5231 12064 12648 
+	}
+}
