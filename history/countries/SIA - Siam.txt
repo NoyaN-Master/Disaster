@@ -1,4 +1,4 @@
-capital = 47
+capital = 289
 oob = ""
 
 # Starting tech
@@ -8,33 +8,33 @@ set_technology = {
 set_convoys = 0
 
 set_politics = {
-	ruling_party = conservative
+	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	conservative = 40
-	liberal = 20
-	social_democrat = 10
+	conservative = 20
+	liberal = 10
+	social_democrat = 0
 	libertarian_socialist = 0
-	authoritarian_socialist = 10
+	authoritarian_socialist = 0
 	national_bolshevik = 0
-	authoritarian_democrat = 10
-	autocratic = 0
-	ultranationalist = 10
+	authoritarian_democrat = 50
+	autocratic = 20
+	ultranationalist = 0
 	revolutionary_nationalist = 0
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
 
 create_country_leader = {
-	name = "Alexander I"
-	#desc = "GRE_Alexander_desc"
-	picture = "GRE_Alexander.tga"
+	name = "Rama VIII"
+	#desc = "SIA_Rama_desc"
+	picture = "SIA_Rama.tga"
 	expire = "2020.1.1"
-	ideology = conservative_subideology
+	ideology = authoritarian_democrat_subideology
 	traits = {
 		#
 	}

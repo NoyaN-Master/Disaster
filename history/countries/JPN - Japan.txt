@@ -1,4 +1,4 @@
-capital = 47
+capital = 282
 oob = ""
 
 # Starting tech
@@ -17,22 +17,22 @@ set_politics = {
 set_popularities = {
 	conservative = 40
 	liberal = 20
-	social_democrat = 10
+	social_democrat = 0
 	libertarian_socialist = 0
-	authoritarian_socialist = 10
+	authoritarian_socialist = 0
 	national_bolshevik = 0
 	authoritarian_democrat = 10
 	autocratic = 0
-	ultranationalist = 10
-	revolutionary_nationalist = 0
+	ultranationalist = 20
+	revolutionary_nationalist = 10
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
 
 create_country_leader = {
-	name = "Alexander I"
-	#desc = "GRE_Alexander_desc"
-	picture = "GRE_Alexander.tga"
+	name = "Hirohito"
+	#desc = "JPN_Hirohito_desc"
+	picture = "JPN_Hirohito.tga"
 	expire = "2020.1.1"
 	ideology = conservative_subideology
 	traits = {
