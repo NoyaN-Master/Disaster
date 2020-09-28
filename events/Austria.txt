@@ -367,4 +367,33 @@ country_event = { #Concordat
 	}
 }
 
+country_event = { #Jewish youth groups
+	id = aut.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.11" }
+	title = aut.12.t
+	desc = aut.12.d
 
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_completed_focus = AUT_unite_the_youth_movements
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = aut.12.a 
+		add_political_power = -55
+		add_stability = -0.02
+		add_manpower = 1452
+		add_war_support = 0.03
+	}
+	
+	option = {
+	    name = aut.12.b
+	}
+}
