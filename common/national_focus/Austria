@@ -643,7 +643,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_unite_the_youth_movements
-		#icon = 
+		icon = GFX_goal_AUT_merge_the_youth_movements
 		prerequisite = { focus = AUT_merge_the_posts }
 		x = 16
 		y = 1
@@ -667,7 +667,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_extol_dollfuss_faith
-		#icon = 
+		icon = GFX_goal_Dolfus_Bless_shine
 		prerequisite = { focus = AUT_deepen_church_ties }
 		prerequisite = { focus = AUT_unite_the_youth_movements }
 		x = 14
@@ -877,9 +877,8 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
+		    custom_effect_tooltip = AUT_neue_zeit
 			add_ideas = AUT_in_die_neue_zeit
         }
 	}
-}
-
 }
