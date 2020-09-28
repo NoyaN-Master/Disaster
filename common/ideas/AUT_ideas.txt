@@ -68,9 +68,9 @@ AUT_agrarianism_1 = {
 			#picture = 
 			modifier = {
 			consumer_goods_factor = -0.03
-			global_building_slots_factor = 0.05
+			global_building_slots_factor = 0.06
 			production_factory_max_efficiency_factor = 0.03
-			political_power_factor = 0.05
+			political_power_factor = 0.04
 			}
 		}	
 		
@@ -78,11 +78,11 @@ AUT_agrarianism_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_agrarianism_2" }
 			#picture = 
 			modifier = {
-			consumer_goods_factor = -0.05
-			global_building_slots_factor = 0.10
-			production_factory_max_efficiency_factor = 0.05
-			political_power_factor = 0.10
-			local_resources_factor = 0.05
+			consumer_goods_factor = -0.06
+			global_building_slots_factor = 0.09
+			production_factory_max_efficiency_factor = 0.06
+			political_power_factor = 0.08
+			local_resources_factor = 0.04
 			}
 		}
 
@@ -90,11 +90,11 @@ AUT_agrarian_nation = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_agrarian_nation" }
 			#picture = 
 			modifier = {
-			consumer_goods_factor = -0.10
-			global_building_slots_factor = 0.15
-			production_factory_max_efficiency_factor = 0.05
-			local_resources_factor = 0.10
-			political_power_factor = 0.15
+			consumer_goods_factor = -0.09
+			global_building_slots_factor = 0.12
+			production_factory_max_efficiency_factor = 0.09
+			local_resources_factor = 0.08
+			political_power_factor = 0.12
 			}
 		}
 		
@@ -102,8 +102,9 @@ AUT_tariffs = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_agrarian_nation" }
 			#picture = 
 			modifier = {
-		    stability_factor = 0.05
-			trade_opinion_factor = -0.10
+		    stability_factor = 0.04
+			local_resources_factor = 0.04
+			consumer_goods_factor = 0.02
 			political_power_factor = -0.10
 			}
 		}
@@ -115,7 +116,7 @@ AUT_industrialism_1 = {
 			consumer_goods_factor = -0.03
 			industrial_capacity_factory = 0.03
 			production_speed_buildings_factor = 0.03
-			stability_factor = -0.05
+			stability_factor = -0.04
 			}
 		}
 		
@@ -133,10 +134,10 @@ AUT_industrial_nation = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_industrial_nation" }
 			#picture = 
 			modifier = {
-			consumer_goods_factor = -0.10
-			industrial_capacity_factory = 0.10
-			production_speed_buildings_factor = 0.10
-			stability_factor = 0.05
+			consumer_goods_factor = -0.09
+			industrial_capacity_factory = 0.09
+			production_speed_buildings_factor = 0.09
+			stability_factor = 0.04
 			}
 		}
 		
@@ -167,9 +168,9 @@ AUT_revised_concordat = {
 			#picture = 
 			modifier = {
 			research_speed_factor = 0.03
-			conscription_factor = 0.10
+			conscription_factor = 0.07
 			army_core_defence_factor = 0.10    
-			party_popularity_stability_factor = 0.15
+			party_popularity_stability_factor = 0.04
 			resistance_damage_to_garrison = -0.20
 			}
 		}
@@ -188,10 +189,10 @@ AUT_catholic_social_teaching = {
             on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_catholic_social_teaching" }
 			#picture = 
 			modifier = {
-			stability_factor = 0.10
-			political_power_factor = 0.10
+			stability_factor = 0.09
+			political_power_factor = 0.09
 			opinion_gain_monthly_factor = 0.20
-			monthly_population = 0.10
+			monthly_population = 0.07
 			}
 		}
 
@@ -199,9 +200,9 @@ AUT_osterreichisches_jungvolk_1 = {
             on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_osterreichisches_jungvolk_1" }
 			#picture = 
 			modifier = {
-			war_support_factor = 0.05
+			war_support_factor = 0.06
 			conscription_factor = 0.10
-			resistance_damage_to_garrison_on_our_occupied_states = 0.05
+			resistance_damage_to_garrison_on_our_occupied_states = 0.04
 			}
 		}
 		
@@ -209,9 +210,9 @@ AUT_osterreichisches_jungvolk_2 = {
             on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_osterreichisches_jungvolk_2" }
 			#picture = 
 			modifier = {
-			war_support_factor = 0.10
+			war_support_factor = 0.12
 			conscription_factor = 0.15
-			resistance_damage_to_garrison_on_our_occupied_states = 0.05
+			resistance_damage_to_garrison_on_our_occupied_states = 0.04
 			research_speed_factor = 0.03
 			}
 		}
@@ -220,10 +221,10 @@ AUT_moral_people = {
             on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_moral_people" }
 			#picture = 
 			modifier = {
-			stability_factor = 0.15
-			political_power_factor = 0.15
+			stability_factor = 0.12
+			political_power_factor = 0.12
 			opinion_gain_monthly_factor = 0.25
-			monthly_population = 0.15
+			monthly_population = 0.14
 			army_core_defence_factor = 0.10
 			}
 		}	
@@ -232,9 +233,9 @@ AUT_austrian_identity_1 = {
             on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_austrian_identity_1" }
 			#picture = 
 			modifier = {
-			war_support_factor = 0.05
-			political_power_factor = 0.05
-			recruitable_population_factor = 0.05
+			war_support_factor = 0.04
+			political_power_factor = 0.03
+			conscription_factor = 0.07
 			}
 		}	
 
@@ -242,9 +243,9 @@ AUT_austrian_identity_2 = {
             on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_austrian_identity_2" }
 			#picture = 
 			modifier = {
-			war_support_factor = 0.10
-			political_power_factor = 0.10
-			recruitable_population_factor = 0.10
+			war_support_factor = 0.08
+			political_power_factor = 0.07
+			conscription_factor = 0.14
 			}
 		}	
 
@@ -252,10 +253,10 @@ AUT_catholic_corporate_state = {
             on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_catholic_corporate_state" }
 			#picture = 
 			modifier = {
-			stability_factor = 0.20
-			political_power_factor = 0.20
+			stability_factor = 0.15
+			political_power_factor = 0.15
 			opinion_gain_monthly_factor = 0.30
-			monthly_population = 0.20
+			monthly_population = 0.21
 			army_core_defence_factor = 0.15
 			surrender_limit = 0.10
 			}
