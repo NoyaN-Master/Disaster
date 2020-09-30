@@ -1,0 +1,143 @@
+focus_tree = {
+	id = polish_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PLN
+		}
+	}
+
+        default = no
+
+        focus = {
+		id = PLN_a_perfect_democracy
+		icon = GFX_goal_unknown
+		x = 4
+		y = 0
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+        focus = {
+		id = PLN_pragmatic_nationalism
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		cost = 4
+		prerequisite = { focus = PLN_a_perfect_democracy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+        focus = {
+		id = PLN_polonization_efforts
+		icon = GFX_goal_unknown
+		x = 1
+		y = 2
+		cost = 4
+		prerequisite = { focus = PLN_pragmatic_nationalism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+        focus = {
+		id = PLN_churchs_role
+		icon = GFX_goal_unknown
+		x = 3
+		y = 1
+		cost = 4
+		prerequisite = { focus = PLN_a_perfect_democracy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+        focus = {
+		id = PLN_boycott_hebrew_business
+		icon = GFX_goal_unknown
+		x = 3
+		y = 2
+		cost = 4
+		prerequisite = { focus = PLN_churchs_role }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+        focus = {
+		id = PLN_army_woes
+		icon = GFX_goal_unknown
+		x = 5
+		y = 1
+		cost = 4
+		prerequisite = { focus = PLN_a_perfect_democracy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+        focus = {
+		id = PLN_remove_prussian_vestiges
+		icon = GFX_goal_unknown
+		x = 5
+		y = 2
+		cost = 4
+		prerequisite = { focus = PLN_army_woes }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = PLN_deal_with_socialist_terrorists
+		icon = GFX_goal_unknown
+		x = 7
+		y = 1
+		cost = 4
+		prerequisite = { focus = PLN_a_perfect_democracy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = PLN_hunt_pilsudski
+		icon = GFX_goal_unknown
+		x = 7
+		y = 2
+		cost = 4
+		prerequisite = { focus = PLN_deal_with_socialist_terrorists }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = PLN_is_a_national_democracy
+		icon = GFX_goal_unknown
+		x = 4
+		y = 3
+		cost = 10
+		prerequisite = { 
+			focus = PLN_polonization_efforts 
+		}
+		prerequisite = { 
+			focus = PLN_boycott_hebrew_business 
+		}
+		prerequisite = { 
+			focus = PLN_remove_prussian_vestiges 
+		}
+		prerequisite = { 
+			focus = PLN_hunt_pilsudski 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+ }
