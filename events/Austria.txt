@@ -358,6 +358,7 @@ country_event = { #Dollfuss Shot
 		add_manpower = -1
 		add_political_power = -50
 		add_stability = -0.10
+		set_country_flag = AUT_dollfuss_dead
 	}
 }
 

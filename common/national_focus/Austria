@@ -856,7 +856,7 @@ focus_tree = {
         }
 	}
 	
-		focus = {
+	focus = {
 		id = AUT_mit_dollfuss_in_die_neue_zeit
 		#icon = 
 		prerequisite = { focus = AUT_a_moral_government }
@@ -879,6 +879,29 @@ focus_tree = {
 		completion_reward = {
 		    custom_effect_tooltip = AUT_neue_zeit
 			add_ideas = AUT_in_die_neue_zeit
+        }
+	}
+	
+		focus = {
+		id = AUT_mit_die_mordekrugel
+		#icon = 
+		x = 25
+		y = 0
+		cost = 0
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_leader_flag = AUT_dollfuss_dead					
+		}	
+		bypass = {
+			has_country_leader_flag = AUT_dollfuss_dead
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		    custom_effect_tooltip = AUT_mordekrugel
         }
 	}
 }
