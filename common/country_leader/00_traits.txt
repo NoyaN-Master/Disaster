@@ -20,6 +20,12 @@ leader_traits = {
         random = no
         political_power_factor = 0.1
 	}
+
+	father_of_the_republic = {
+        random = no
+        political_power_factor = 0.15
+        stability_factor = 0.05
+	}
 	
 	dictator = {
 		random = no
