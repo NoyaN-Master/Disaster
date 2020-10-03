@@ -1,0 +1,22 @@
+AUT_state_of_emergency_decisions = {
+    secure_vienna = {                          
+        allowed = { tag = AUT }                 
+        available = {                           
+            controls_state = 808
+			NOT = { army_manpower_in_state = { state = 808 amount < 15000 } }                                   
+        }
+        activation = {                          # The mission appears and starts counting down under these circumstances:
+            has_country_flag = AUT_state_of_emergency_flag                    
+        }
+        is_good = no                         
+        selectable_mission = no               
+        days_mission_timeout = 7             
+        timeout_effect = {                    
+            country_event = aut.16  
+            add_stability = -0.10           
+        }			
+        complete_effect = {                 
+            country_event = aut.17            
+        }
+    }
+}

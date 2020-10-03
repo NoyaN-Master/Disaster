@@ -1,0 +1,13 @@
+AUT_state_of_emergency_decisions = {
+	#icon = 
+	#picture = 
+	priority = 10
+	allowed = {
+		OR = {
+			tag = AUT
+		}
+	}
+	visible = {
+		has_country_flag = AUT_state_of_emergency_flag
+	}
+}

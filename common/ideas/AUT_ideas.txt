@@ -274,3 +274,14 @@ AUT_in_die_neue_zeit = {
 			production_factory_max_efficiency_factor = 0.05
 			}
 		}	
+
+AUT_state_of_emergency_idea = {
+            on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_catholic_corporate_state" }
+			#picture = 
+			modifier = {
+			political_power_factor = -0.20
+			stability_weekly = 0.01
+			resistance_damage_to_garrison = -0.20
+			recruitable_population_factor = -0.10
+			}
+		}	

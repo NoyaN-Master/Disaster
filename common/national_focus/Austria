@@ -751,7 +751,7 @@ focus_tree = {
 		id = AUT_austrian_identity
 		#icon = 
 		prerequisite = { focus = AUT_unite_the_youth_movements }
-		x = 17
+		x = 16
 		y = 3
 		cost = 6
 		ai_will_do = {
@@ -882,8 +882,8 @@ focus_tree = {
         }
 	}
 	
-		focus = {
-		id = AUT_mit_die_mordekrugel
+	focus = {
+		id = AUT_die_mordekrugel
 		#icon = 
 		x = 25
 		y = 0
@@ -892,16 +892,41 @@ focus_tree = {
 			factor = 100
 		}
 		available = {
-			has_country_leader_flag = AUT_dollfuss_dead					
+			has_country_flag = AUT_dollfuss_dead					
 		}	
 		bypass = {
-			has_country_leader_flag = AUT_dollfuss_dead
+			has_country_flag = AUT_dollfuss_dead
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
 		    custom_effect_tooltip = AUT_mordekrugel
+        }
+	}
+	
+	focus = {
+		id = AUT_state_of_emergency
+		#icon = 
+		prerequisite = { focus = AUT_die_mordekrugel }
+		x = 25
+		y = 1
+		cost = 12
+		ai_will_do = {
+			factor = 1000
+		}
+		available = {
+			has_country_leader_flag = AUT_dollfuss_dead
+            has_government = ultranationalist			
+		}	
+		select_effect = {
+			country_event = { id = aut.15 days = 1 }
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		    custom_effect_tooltip = AUT_state_of_emergency_tooltip
         }
 	}
 }
