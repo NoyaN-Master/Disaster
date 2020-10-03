@@ -13,7 +13,7 @@ PLN_free_at_fast = {
 		
 PLN_minorities_and_borders = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PLN_minorities_and_borders" }
-			#picture = 
+			picture = PLN_minorities_and_borders
 			modifier = {
 			stability_factor = -0.05
                         war_support_factor = -0.10
@@ -23,7 +23,7 @@ PLN_minorities_and_borders = {
 		
 PLN_leftist_organizations = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PLN_leftist_organizations" }
-			#picture = 
+			picture = PLN_leftist_organizations
 			modifier = {
 			stability_factor = -0.02
 			production_factory_max_efficiency_factor = -0.05
@@ -34,7 +34,7 @@ PLN_leftist_organizations = {
 		
 PLN_catholic_support = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PLN_catholic_support" }
-			#picture = 
+			picture = PLN_catholic_support
 			modifier = {
 			consumer_goods_factor = -0.03
 			political_power_factor = 0.05
