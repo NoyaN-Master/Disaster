@@ -73,8 +73,8 @@ set_popularities = {
 	authoritarian_democrat = 0
 	autocratic = 10
 	ultranationalist = 43
-	revolutionary_nationalist = 20
-	esoteric_traditionalist = 0
+	revolutionary_nationalist = 19
+	esoteric_traditionalist = 1
 	revolutionary_anarchist = 0
 }
 
@@ -123,6 +123,15 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Heinrich Luitpold Himmler"
+	desc = "Himmler_desc"
+	picture = "BAY_Himmler.tga"
+	expire = "1965.1.1"
+	ideology = esoteric_traditionalist_subideology
+	traits = {
+	}
+}
 
 
 
