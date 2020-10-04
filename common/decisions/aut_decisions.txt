@@ -1,12 +1,18 @@
 AUT_state_of_emergency_decisions = {
-    secure_vienna = {                          
+    AUT_secure_vienna = {                          
         allowed = { tag = AUT }                 
         available = {                           
             controls_state = 808
-			NOT = { army_manpower_in_state = { state = 808 amount < 15000 } }                                   
+			NOT = { army_manpower_in_state = { state = 808 amount < 15000 } } 
+            NOT = {
+                has_country_flag = AUT_vienna_secured
+            }				
         }
-        activation = {                          # The mission appears and starts counting down under these circumstances:
-            has_country_flag = AUT_state_of_emergency_flag                    
+        activation = {                       
+            has_country_flag = AUT_state_of_emergency_flag  
+            NOT = {
+                has_country_flag = AUT_vienna_secured
+            }							
         }
         is_good = no                         
         selectable_mission = no               
@@ -17,6 +23,476 @@ AUT_state_of_emergency_decisions = {
         }			
         complete_effect = {                 
             country_event = aut.17            
+        }
+    }
+	
+	AUT_heimwehr_secure_lower_austria = {
+        visible = {
+            has_country_flag = AUT_vienna_secured
+			NOT = {
+				has_country_flag = AUT_lower_austria_secured
+			}
+        }
+        cost = 0
+		fire_only_once = yes
+        available = {
+            has_country_flag = AUT_vienna_secured
+			controls_state = 4 
+			NOT = {
+				has_country_flag = AUT_police_securing_lower_austria
+				has_country_flag = AUT_heimwehr_securing_upper_austria
+				has_country_flag = AUT_police_securing_upper_austria
+				has_country_flag = AUT_heimwehr_securing_tyrol
+				has_country_flag = AUT_police_securing_tyrol
+				has_country_flag = AUT_heimwehr_securing_carinthia
+				has_country_flag = AUT_police_securing_carinthia
+			}
+        }
+		complete_effect = {
+            custom_effect_tooltip = AUT_heimwehr_securing_lower_austria_tooltip
+			set_country_flag = AUT_heimwehr_securing_lower_austria
+        }
+    }
+	
+    AUT_heimwehr_secure_lower_austria_mission = {                          
+        allowed = { tag = AUT }                 
+        available = {                           
+            NOT = {
+			controls_state = 4 
+			has_country_flag = AUT_heimwehr_securing_lower_austria
+			}
+        }
+        activation = {                       
+            has_country_flag = AUT_heimwehr_securing_lower_austria                   
+        }
+		is_good = yes                        
+        selectable_mission = no            
+        days_mission_timeout = 21           
+        timeout_effect = {                     
+            custom_effect_tooltip = AUT_heimwehr_securing_lower_austria_tooltip
+			set_country_flag = AUT_lower_austria_secured	
+            clr_country_flag = AUT_heimwehr_securing_lower_austria			
+        }			
+        complete_effect = {                 
+            add_stability = -0.05  
+        }
+    }
+	
+	AUT_police_secure_lower_austria = {
+        visible = {
+            has_country_flag = AUT_vienna_secured
+			NOT = {
+				has_country_flag = AUT_lower_austria_secured
+			}
+        }
+        cost = 0
+		fire_only_once = yes
+        available = {
+            has_country_flag = AUT_vienna_secured
+			controls_state = 4 
+			NOT = {
+				has_country_flag = AUT_heimwehr_securing_lower_austria
+				has_country_flag = AUT_heimwehr_securing_upper_austria
+				has_country_flag = AUT_police_securing_upper_austria
+				has_country_flag = AUT_heimwehr_securing_tyrol
+				has_country_flag = AUT_police_securing_tyrol
+				has_country_flag = AUT_heimwehr_securing_carinthia
+				has_country_flag = AUT_police_securing_carinthia
+			}
+        }
+		complete_effect = {
+            custom_effect_tooltip = AUT_police_securing_lower_austria_tooltip
+			set_country_flag = AUT_police_securing_lower_austria
+        }
+    }
+	
+    AUT_police_secure_lower_austria_mission = {                          
+        allowed = { tag = AUT }                 
+        available = {                           
+            NOT = {
+			controls_state = 4 
+			has_country_flag = AUT_police_securing_lower_austria
+			}
+        }
+        activation = {                       
+            has_country_flag = AUT_police_securing_lower_austria                   
+        }
+		is_good = yes                        
+        selectable_mission = no            
+        days_mission_timeout = 7          
+        timeout_effect = {                    
+            custom_effect_tooltip = AUT_police_securing_lower_austria_tooltip
+			set_country_flag = AUT_lower_austria_secured	
+            clr_country_flag = AUT_police_securing_lower_austria			
+        }			
+        complete_effect = {                 
+            add_stability = -0.05  
+        }
+    }
+	
+	AUT_heimwehr_secure_upper_austria = {
+        visible = {
+            has_country_flag = AUT_vienna_secured
+			NOT = {
+				has_country_flag = AUT_upper_austria_secured
+			}
+        }
+        cost = 0
+		fire_only_once = yes
+        available = {
+            has_country_flag = AUT_vienna_secured
+			controls_state = 152 
+			NOT = {
+				has_country_flag = AUT_police_securing_lower_austria
+				has_country_flag = AUT_heimwehr_securing_lower_austria
+				has_country_flag = AUT_police_securing_upper_austria
+				has_country_flag = AUT_heimwehr_securing_tyrol
+				has_country_flag = AUT_police_securing_tyrol
+				has_country_flag = AUT_heimwehr_securing_carinthia
+				has_country_flag = AUT_police_securing_carinthia
+			}
+        }
+		complete_effect = {
+            custom_effect_tooltip = AUT_heimwehr_securing_upper_austria_tooltip
+			set_country_flag = AUT_heimwehr_securing_upper_austria
+        }
+    }
+	
+    AUT_heimwehr_secure_upper_austria_mission = {                          
+        allowed = { tag = AUT }                 
+        available = {                           
+            NOT = {
+			controls_state = 152
+			has_country_flag = AUT_heimwehr_securing_upper_austria
+			}
+        }
+        activation = {                       
+            has_country_flag = AUT_heimwehr_securing_upper_austria                   
+        }
+		is_good = yes                        
+        selectable_mission = no            
+        days_mission_timeout = 21           
+        timeout_effect = {                                    
+			custom_effect_tooltip = AUT_heimwehr_securing_upper_austria_tooltip
+			set_country_flag = AUT_upper_austria_secured 
+			clr_country_flag = AUT_heimwehr_securing_upper_austria
+        }			
+        complete_effect = {                 
+            add_stability = -0.05
+        }
+    }
+	
+	AUT_police_secure_upper_austria = {
+        visible = {
+            has_country_flag = AUT_vienna_secured
+			NOT = {
+				has_country_flag = AUT_upper_austria_secured
+			}
+        }
+        cost = 0
+		fire_only_once = yes
+        available = {
+            has_country_flag = AUT_vienna_secured
+			controls_state = 152
+			NOT = {
+				has_country_flag = AUT_heimwehr_securing_lower_austria
+				has_country_flag = AUT_police_securing_lower_austria
+				has_country_flag = AUT_heimwehr_securing_upper_austria
+				has_country_flag = AUT_heimwehr_securing_tyrol
+				has_country_flag = AUT_police_securing_tyrol
+				has_country_flag = AUT_heimwehr_securing_carinthia
+				has_country_flag = AUT_police_securing_carinthia
+			}
+        }
+		complete_effect = {
+            custom_effect_tooltip = AUT_police_securing_upper_austria_tooltip
+			set_country_flag = AUT_police_securing_upper_austria
+        }
+    }
+	
+    AUT_police_secure_upper_austria_mission = {                          
+        allowed = { tag = AUT }                 
+        available = {                           
+            NOT = {
+			controls_state = 152
+			has_country_flag = AUT_police_securing_upper_austria
+			}
+        }
+        activation = {                       
+            has_country_flag = AUT_police_securing_upper_austria                   
+        }
+		is_good = yes                        
+        selectable_mission = no            
+        days_mission_timeout = 7          
+        timeout_effect = {                    
+            custom_effect_tooltip = AUT_police_securing_upper_austria_tooltip
+			set_country_flag = AUT_upper_austria_secured   	
+            clr_country_flag = AUT_police_securing_upper_austria			
+        }			
+        complete_effect = {                 
+            add_stability = -0.05
+        }
+    }
+	
+	AUT_heimwehr_secure_tyrol = {
+        visible = {
+            has_country_flag = AUT_vienna_secured
+			NOT = {
+				has_country_flag = AUT_tyrol_secured
+			}
+        }
+        cost = 0
+		fire_only_once = yes
+        available = {
+            has_country_flag = AUT_vienna_secured
+			controls_state = 153
+			controls_state = 39
+			controls_state = 806
+			NOT = {
+				has_country_flag = AUT_police_securing_lower_austria
+				has_country_flag = AUT_heimwehr_securing_lower_austria
+				has_country_flag = AUT_police_securing_upper_austria
+				has_country_flag = AUT_heimwehr_securing_lower_austria
+				has_country_flag = AUT_police_securing_tyrol
+				has_country_flag = AUT_heimwehr_securing_carinthia
+				has_country_flag = AUT_police_securing_carinthia
+			}
+        }
+		complete_effect = {
+            custom_effect_tooltip = AUT_heimwehr_securing_tyrol_tooltip
+			set_country_flag = AUT_heimwehr_securing_tyrol
+        }
+    }
+	
+    AUT_heimwehr_secure_tyrol_mission = {                          
+        allowed = { tag = AUT }                 
+        available = {                           
+            NOT = {
+			controls_state = 153
+			controls_state = 39
+			controls_state = 806
+			has_country_flag = AUT_heimwehr_securing_tyrol
+			}
+        }
+        activation = {                       
+            has_country_flag = AUT_heimwehr_securing_tyrol                   
+        }
+		is_good = yes                        
+        selectable_mission = no            
+        days_mission_timeout = 21           
+        timeout_effect = {                                    
+			custom_effect_tooltip = AUT_heimwehr_securing_tyrol_tooltip
+			set_country_flag = AUT_tyrol_secured 
+			clr_country_flag = AUT_heimwehr_securing_tyrol
+        }			
+        complete_effect = {                 
+            add_stability = -0.05
+        }
+    }
+	
+	AUT_police_secure_tyrol = {
+        visible = {
+            has_country_flag = AUT_vienna_secured
+			NOT = {
+				has_country_flag = AUT_tyrol_secured
+			}
+        }
+        cost = 0
+		fire_only_once = yes
+        available = {
+            has_country_flag = AUT_vienna_secured
+			controls_state = 153
+			controls_state = 39
+			controls_state = 806
+			NOT = {
+				has_country_flag = AUT_heimwehr_securing_lower_austria
+				has_country_flag = AUT_police_securing_lower_austria
+				has_country_flag = AUT_heimwehr_securing_upper_austria
+				has_country_flag = AUT_heimwehr_securing_tyrol
+				has_country_flag = AUT_heimwehr_securing_lower_austria
+				has_country_flag = AUT_heimwehr_securing_carinthia
+				has_country_flag = AUT_police_securing_carinthia
+			}
+        }
+		complete_effect = {
+            custom_effect_tooltip = AUT_police_securing_tyrol_tooltip
+			set_country_flag = AUT_police_securing_tyrol
+        }
+    }
+	
+    AUT_police_secure_tyrol_mission = {                          
+        allowed = { tag = AUT }                 
+        available = {                           
+            NOT = {
+			controls_state = 153
+			controls_state = 39
+			controls_state = 806
+			has_country_flag = AUT_police_securing_tyrol
+			}
+        }
+        activation = {                       
+            has_country_flag = AUT_police_securing_upper_austria                   
+        }
+		is_good = yes                        
+        selectable_mission = no            
+        days_mission_timeout = 7          
+        timeout_effect = {                    
+            custom_effect_tooltip = AUT_police_securing_tyrol_tooltip
+			set_country_flag = AUT_tyrol_secured   	
+            clr_country_flag = AUT_police_securing_tyrol			
+        }			
+        complete_effect = {                 
+            add_stability = -0.05
+        }
+    }
+	
+	############
+
+    AUT_heimwehr_secure_carinthia = {
+        visible = {
+            has_country_flag = AUT_vienna_secured
+			NOT = {
+				has_country_flag = AUT_carinthia_secured
+			}
+        }
+        cost = 0
+		fire_only_once = yes
+        available = {
+            has_country_flag = AUT_vienna_secured
+			controls_state = 102
+			NOT = {
+				has_country_flag = AUT_police_securing_lower_austria
+				has_country_flag = AUT_heimwehr_securing_lower_austria
+				has_country_flag = AUT_police_securing_upper_austria
+				has_country_flag = AUT_heimwehr_securing_lower_austria
+				has_country_flag = AUT_police_securing_tyrol
+				has_country_flag = AUT_heimwehr_securing_tyrol
+				has_country_flag = AUT_police_securing_carinthia
+			}
+        }
+		complete_effect = {
+            custom_effect_tooltip = AUT_heimwehr_securing_carinthia_tooltip
+			set_country_flag = AUT_heimwehr_securing_carinthia
+        }
+    }
+	
+    AUT_heimwehr_secure_carinthia_mission = {                          
+        allowed = { tag = AUT }                 
+        available = {                           
+            NOT = {
+			controls_state = 102
+			has_country_flag = AUT_heimwehr_securing_carinthia
+			}
+        }
+        activation = {                       
+            has_country_flag = AUT_heimwehr_securing_carinthia                  
+        }
+		is_good = yes                        
+        selectable_mission = no            
+        days_mission_timeout = 21           
+        timeout_effect = {                                    
+			custom_effect_tooltip = AUT_heimwehr_securing_carinthia_tooltip
+			set_country_flag = AUT_carinthia_secured 
+			clr_country_flag = AUT_heimwehr_securing_carinthia
+        }			
+        complete_effect = {                 
+            add_stability = -0.05
+        }
+    }
+	
+	AUT_police_secure_carinthia = {
+        visible = {
+            has_country_flag = AUT_vienna_secured
+			NOT = {
+				has_country_flag = AUT_carinthia_secured
+			}
+        }
+        cost = 0
+		fire_only_once = yes
+        available = {
+            has_country_flag = AUT_vienna_secured
+			controls_state = 102
+			NOT = {
+				has_country_flag = AUT_heimwehr_securing_lower_austria
+				has_country_flag = AUT_police_securing_lower_austria
+				has_country_flag = AUT_heimwehr_securing_upper_austria
+				has_country_flag = AUT_heimwehr_securing_tyrol
+				has_country_flag = AUT_heimwehr_securing_lower_austria
+				has_country_flag = AUT_heimwehr_securing_carinthia
+				has_country_flag = AUT_police_securing_carinthia
+			}
+        }
+		complete_effect = {
+            custom_effect_tooltip = AUT_police_securing_carinthia_tooltip
+			set_country_flag = AUT_police_securing_carinthia
+        }
+    }
+	
+    AUT_police_secure_carinthia_mission = {                          
+        allowed = { tag = AUT }                 
+        available = {                           
+            NOT = {
+			controls_state = 102
+			has_country_flag = AUT_police_securing_carinthia
+			}
+        }
+        activation = {                       
+            has_country_flag = AUT_police_securing_carinthia                 
+        }
+		is_good = yes                        
+        selectable_mission = no            
+        days_mission_timeout = 7          
+        timeout_effect = {                    
+            custom_effect_tooltip = AUT_police_securing_carinthia_tooltip
+			set_country_flag = AUT_carinthia_secured   	
+            clr_country_flag = AUT_police_securing_carinthia			
+        }			
+        complete_effect = {                 
+            add_stability = -0.05
+        }
+    }
+	
+	AUT_socialists_regroup = {                          
+        allowed = { tag = AUT }                 
+        available = {                           
+            has_country_flag = AUT_carinthia_secured
+			has_country_flag = AUT_upper_austria_secured
+			has_country_flag = AUT_lower_austria_secured
+			has_country_flag = AUT_tyrol_secured			
+        }
+        activation = {                       
+            has_country_flag = AUT_vienna_secured                  
+        }
+        is_good = no                         
+        selectable_mission = no               
+        days_mission_timeout = 60            
+        timeout_effect = {                    
+            country_event = aut.20           
+        }			
+        complete_effect = {                 
+            country_event = aut.21	
+        }
+		fire_only_once = yes
+    }
+	
+	AUT_lift_state_of_emergency = {
+        visible = {
+            has_country_flag = AUT_stable_again
+        }
+        cost = 50
+		fire_only_once = yes
+        available = {
+            has_country_flag = AUT_stable_again
+        }
+		complete_effect = {
+            remove_ideas = AUT_state_of_emergency_idea
+			clr_country_flag = AUT_state_of_emergency_flag
+			clr_country_flag = AUT_carinthia_secured
+			clr_country_flag = AUT_tyrol_secured
+			clr_country_flag = AUT_upper_austria_secured
+			clr_country_flag = AUT_lower_austria_secured
+			clr_country_flag = AUT_vienna_secured
+			clr_country_flag = AUT_stable_again
         }
     }
 }
