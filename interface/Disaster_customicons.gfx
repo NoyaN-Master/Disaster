@@ -44,11 +44,11 @@ spriteTypes = {
     }
 
     SpriteType = {
-        name = "GFX_goal_AUT_merge_the_youth_movements"
+        name = "GFX_goal_AUT_merge_the_youth_movements_shine"
         texturefile = "gfx/interface/goals/AUT_merge_the_youth_movements.tga"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/AUT_merge_the_youth_movements"
+            animationmaskfile = "gfx/interface/goals/AUT_merge_the_youth_movements.tga"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = -90.0
             animationlooping = no
@@ -61,7 +61,7 @@ spriteTypes = {
         }
 
         animation = {
-            animationmaskfile = "gfx/interface/goals/AUT_merge_the_youth_movements"
+            animationmaskfile = "gfx/interface/goals/AUT_merge_the_youth_movements.tga"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = 90.0
             animationlooping = no
@@ -77,16 +77,16 @@ spriteTypes = {
  }
  
   SpriteType = {
-        name = "GFX_goal_AUT_merge_the_posts"
-        texturefile = "gfx/interface/goals/AUT_merge_the_posts.tga"
+        name = "GFX_goal_AUT_Dolfus_Posts"
+        texturefile = "gfx/interface/goals/AUT_Dolfus_Posts.tga"
     }
 
     SpriteType = {
-        name = "GFX_goal_AUT_merge_the_posts"
-        texturefile = "gfx/interface/goals/AUT_merge_the_posts.tga"
+        name = "GFX_goal_AUT_Dolfus_Posts_shine"
+        texturefile = "gfx/interface/goals/AUT_Dolfus_Posts.tga"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/AUT_merge_the_posts"
+            animationmaskfile = "gfx/interface/goals/AUT_Dolfus_Posts.tga"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = -90.0
             animationlooping = no
@@ -99,7 +99,7 @@ spriteTypes = {
         }
 
         animation = {
-            animationmaskfile = "gfx/interface/goals/AUT_merge_the_posts"
+            animationmaskfile = "gfx/interface/goals/AUT_Dolfus_Posts.tga"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = 90.0
             animationlooping = no
