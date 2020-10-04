@@ -247,6 +247,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			has_war_with = GRE
+		}
 	}
 
 	#Focus for Vatan Ordusu
@@ -425,6 +428,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			owns_state = 339
+			has_war = no
+		}
+		
 	}
 
 	#Focus for Curse of Enverism
