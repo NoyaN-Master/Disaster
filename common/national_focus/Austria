@@ -751,7 +751,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_austrian_identity
-		#icon = 
+		icon = GFX_goal_AUT_Identity
 		prerequisite = { focus = AUT_unite_the_youth_movements }
 		x = 16
 		y = 3
