@@ -1,0 +1,980 @@
+focus_tree = {
+	id = Istanbul
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CRW
+		}
+	}
+
+	continuous_focus_position = { x = 100 y = 1500 }
+
+	#Focus for Istanbul Dreaming
+	focus = {
+		id = IST_istanbul_dreaming
+		icon = GFX_goal_unknown
+		x = 45
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_nyc_inspiration }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Autonomy Of Gender
+	focus = {
+		id = IST_autonomy_of_gender
+		icon = GFX_goal_unknown
+		x = 45
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = IST_individualist_society 
+		}
+		prerequisite = { 
+			focus = IST_tollywood 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Beacon Of The Middle East
+	focus = {
+		id = IST_beacon_of_the_middle_east
+		icon = GFX_goal_unknown
+		x = 47
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_tollywood }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Tollywood
+	focus = {
+		id = IST_tollywood
+		icon = GFX_goal_unknown
+		x = 47
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_istanbulification }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Freedom of Will
+	focus = {
+		id = IST_freedom_of_will
+		icon = GFX_goal_unknown
+		x = 43
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_individualist_society }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Istanbulification
+	focus = {
+		id = IST_istanbulification
+		icon = GFX_goal_unknown
+		x = 45
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_maltepe_conference }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for British Volunteers Arrive
+	focus = {
+		id = IST_british_volunteers_arrive
+		icon = GFX_goal_unknown
+		x = 0
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_a_new_day }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A New Day
+	focus = {
+		id = IST_a_new_day
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Big Game Night
+	focus = {
+		id = IST_the_big_game_night
+		icon = GFX_goal_unknown
+		x = 0
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_british_volunteers_arrive }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Bandits With Connections
+	focus = {
+		id = IST_bandits_with_connections
+		icon = GFX_goal_unknown
+		x = 26
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_welfare_for_residents }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Armenian Thieves
+	focus = {
+		id = IST_armenian_thieves
+		icon = GFX_goal_unknown
+		x = 22
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_organize_the_gangs }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Turkish Brawlers
+	focus = {
+		id = IST_turkish_brawlers
+		icon = GFX_goal_unknown
+		x = 18
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_organize_the_gangs }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Welfare For Residents
+	focus = {
+		id = IST_welfare_for_residents
+		icon = GFX_goal_unknown
+		x = 26
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_british_crooks }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Greywolf Militas
+	focus = {
+		id = IST_the_greywolf_militas
+		icon = GFX_goal_unknown
+		x = 18
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_turkish_brawlers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Support Wilsonian Armenia
+	focus = {
+		id = IST_support_wilsonian_armenia
+		icon = GFX_goal_unknown
+		x = 9
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_support_the_armenian_bourgouise }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Diversity is Our Strength
+	focus = {
+		id = IST_diversity_is_our_strength
+		icon = GFX_goal_unknown
+		x = 9
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = IST_sanction_cib 
+		}
+		prerequisite = { 
+			focus = IST_pacify_turkish_anarchists 
+		}
+		prerequisite = { 
+			focus = IST_support_wilsonian_armenia 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Penthouse Debate
+	focus = {
+		id = IST_penthouse_debate
+		icon = GFX_goal_unknown
+		x = 4
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_the_casino_act }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The House Always Wins
+	focus = {
+		id = IST_the_house_always_wins
+		icon = GFX_goal_unknown
+		x = 7
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Gangs Assemble
+	focus = {
+		id = IST_gangs_assemble
+		icon = GFX_goal_unknown
+		x = 24
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Under The Bridge
+	focus = {
+		id = IST_under_the_bridge
+		icon = GFX_goal_unknown
+		x = 39
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Casino Act
+	focus = {
+		id = IST_the_casino_act
+		icon = GFX_goal_unknown
+		x = 7
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_the_house_always_wins }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Bussines Education
+	focus = {
+		id = IST_bussines_education
+		icon = GFX_goal_unknown
+		x = 4
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_yuppie_culture }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Jewelry Inspections
+	focus = {
+		id = IST_jewelry_inspections
+		icon = GFX_goal_unknown
+		x = 9
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_the_casino_act }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Import Resources
+	focus = {
+		id = IST_import_resources
+		icon = GFX_goal_unknown
+		x = 2
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_export_entertainment }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Support The Armenian Bourgouise
+	focus = {
+		id = IST_support_the_armenian_bourgouise
+		icon = GFX_goal_unknown
+		x = 9
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_jewelry_inspections }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Cool It With The Antisemitic Remarks
+	focus = {
+		id = IST_cool_it_with_the_antisemitic_remarks
+		icon = GFX_goal_unknown
+		x = 3
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_ottomanrotschild_legacy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Who Holds The Shares?
+	focus = {
+		id = IST_who_holds_the_shares
+		icon = GFX_goal_unknown
+		x = 4
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_penthouse_debate }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Pacify Turkish Anarchists
+	focus = {
+		id = IST_pacify_turkish_anarchists
+		icon = GFX_goal_unknown
+		x = 11
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_turkish_bussineses }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ottoman-Rotschild Legacy
+	focus = {
+		id = IST_ottomanrotschild_legacy
+		icon = GFX_goal_unknown
+		x = 3
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_who_holds_the_shares }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Switzerland Job
+	focus = {
+		id = IST_the_switzerland_job
+		icon = GFX_goal_unknown
+		x = 3
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_cool_it_with_the_antisemitic_remarks }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Export Entertainment
+	focus = {
+		id = IST_export_entertainment
+		icon = GFX_goal_unknown
+		x = 2
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_the_switzerland_job }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Yuppie Culture
+	focus = {
+		id = IST_yuppie_culture
+		icon = GFX_goal_unknown
+		x = 4
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_the_switzerland_job }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Under The Lion
+	focus = {
+		id = IST_under_the_lion
+		icon = GFX_goal_unknown
+		x = 3
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = IST_yuppie_culture 
+		}
+		prerequisite = { 
+			focus = IST_export_entertainment 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Interview The Rums
+	focus = {
+		id = IST_interview_the_rums
+		icon = GFX_goal_unknown
+		x = 7
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_support_the_armenian_bourgouise }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Turkish Bussineses
+	focus = {
+		id = IST_turkish_bussineses
+		icon = GFX_goal_unknown
+		x = 11
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_support_the_armenian_bourgouise }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Sanction CIB
+	focus = {
+		id = IST_sanction_cib
+		icon = GFX_goal_unknown
+		x = 7
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_interview_the_rums }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Jewish Banker Case
+	focus = {
+		id = IST_jewish_banker_case
+		icon = GFX_goal_unknown
+		x = 9
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_support_wilsonian_armenia }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Istanbul Nations University
+	focus = {
+		id = IST_istanbul_nations_university
+		icon = GFX_goal_unknown
+		x = 9
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_diversity_is_our_strength }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Steal From Fatih
+	focus = {
+		id = IST_steal_from_fatih
+		icon = GFX_goal_unknown
+		x = 22
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_jewelry_heists }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Bread and Roses
+	focus = {
+		id = IST_bread_and_roses
+		icon = GFX_goal_unknown
+		x = 24
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_gangs_assemble }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for British Crooks
+	focus = {
+		id = IST_british_crooks
+		icon = GFX_goal_unknown
+		x = 26
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_organize_the_gangs }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Organize The Gangs
+	focus = {
+		id = IST_organize_the_gangs
+		icon = GFX_goal_unknown
+		x = 24
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_bread_and_roses }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Jewelry Heists
+	focus = {
+		id = IST_jewelry_heists
+		icon = GFX_goal_unknown
+		x = 22
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_armenian_thieves }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Seize Crown Property
+	focus = {
+		id = IST_seize_crown_property
+		icon = GFX_goal_unknown
+		x = 18
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_the_greywolf_militas }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Greek Smugglers
+	focus = {
+		id = IST_greek_smugglers
+		icon = GFX_goal_unknown
+		x = 30
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_organize_the_gangs }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Deal With The Devil
+	focus = {
+		id = IST_deal_with_the_devil
+		icon = GFX_goal_unknown
+		x = 30
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_greek_smugglers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Resource Trafficking
+	focus = {
+		id = IST_resource_trafficking
+		icon = GFX_goal_unknown
+		x = 30
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_deal_with_the_devil }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Turko-Armenian Friendship
+	focus = {
+		id = IST_turkoarmenian_friendship
+		icon = GFX_goal_unknown
+		x = 20
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = IST_seize_crown_property 
+		}
+		prerequisite = { 
+			focus = IST_steal_from_fatih 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for New Robin Hood
+	focus = {
+		id = IST_new_robin_hood
+		icon = GFX_goal_unknown
+		x = 28
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = IST_bandits_with_connections 
+		}
+		prerequisite = { 
+			focus = IST_resource_trafficking 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Enver Pasha Heist
+	focus = {
+		id = IST_enver_pasha_heist
+		icon = GFX_goal_unknown
+		x = 22
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_turkoarmenian_friendship }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Legitimate Enforcment
+	focus = {
+		id = IST_legitimate_enforcment
+		icon = GFX_goal_unknown
+		x = 26
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_new_robin_hood }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Gangster's Paradise
+	focus = {
+		id = IST_gangsters_paradise
+		icon = GFX_goal_unknown
+		x = 24
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = IST_enver_pasha_heist 
+		}
+		prerequisite = { 
+			focus = IST_legitimate_enforcment 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reboot The Economy
+	focus = {
+		id = IST_reboot_the_economy
+		icon = GFX_goal_unknown
+		x = 39
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_under_the_bridge }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Corporation Rights
+	focus = {
+		id = IST_corporation_rights
+		icon = GFX_goal_unknown
+		x = 37
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_the_ministers_son }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Americanist Economy
+	focus = {
+		id = IST_americanist_economy
+		icon = GFX_goal_unknown
+		x = 33
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_the_ministers_son }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Minister's Son
+	focus = {
+		id = IST_the_ministers_son
+		icon = GFX_goal_unknown
+		x = 35
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_maltepe_conference }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Maltepe Conference
+	focus = {
+		id = IST_maltepe_conference
+		icon = GFX_goal_unknown
+		x = 39
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_reboot_the_economy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Private Security
+	focus = {
+		id = IST_private_security
+		icon = GFX_goal_unknown
+		x = 37
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_corporation_rights }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Providing For The Commoner
+	focus = {
+		id = IST_providing_for_the_commoner
+		icon = GFX_goal_unknown
+		x = 33
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_americanist_economy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Freer The Market, Freer The People
+	focus = {
+		id = IST_freer_the_market_freer_the_people
+		icon = GFX_goal_unknown
+		x = 37
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_private_security }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Keep The Castes
+	focus = {
+		id = IST_keep_the_castes
+		icon = GFX_goal_unknown
+		x = 33
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_providing_for_the_commoner }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Buy Low Sell High
+	focus = {
+		id = IST_buy_low_sell_high
+		icon = GFX_goal_unknown
+		x = 37
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_freer_the_market_freer_the_people }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Greed and Balance
+	focus = {
+		id = IST_greed_and_balance
+		icon = GFX_goal_unknown
+		x = 33
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_keep_the_castes }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Trading War Stories
+	focus = {
+		id = IST_trading_war_stories
+		icon = GFX_goal_unknown
+		x = 35
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = IST_greed_and_balance 
+		}
+		prerequisite = { 
+			focus = IST_buy_low_sell_high 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Individualist Society
+	focus = {
+		id = IST_individualist_society
+		icon = GFX_goal_unknown
+		x = 43
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IST_istanbulification }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for NYC Inspiration
+	focus = {
+		id = IST_nyc_inspiration
+		icon = GFX_goal_unknown
+		x = 45
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = IST_freedom_of_will 
+		}
+		prerequisite = { 
+			focus = IST_autonomy_of_gender 
+		}
+		prerequisite = { 
+			focus = IST_beacon_of_the_middle_east 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }
