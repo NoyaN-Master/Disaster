@@ -31,8 +31,8 @@ set_popularities = {
 
 create_country_leader = {
 	name = "George V"
-	desc = "ENG_Austen_Chamberlain_desc"
-	picture = "ENG_Austen_Chamberlain.tga"
+	desc = "ENG_George_V_desc"
+	picture = "ENG_George_V.tga"
 	expire = "2020.1.1"
 	ideology = conservative_subideology
 	traits = {
