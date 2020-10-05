@@ -1,0 +1,168 @@
+﻿division_template = {
+	name = "Ana Piyadeler"
+	division_names_group = TUR_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   # Pioneer Bn
+	}
+}
+
+division_template = {
+	name = "Topcu Piyadeler"
+	division_names_group = TUR_GAR_01
+
+	regiments = {
+		artillery = { x = 3 y = 0 }
+		artillery = { x = 3 y = 1 }
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   # Pioneer Bn
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Tekalif Tumeni"  		# Schnelle-Division (cavalry)
+	division_names_group = TUR_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	##### Österreichisches Bundesheer #####
+	# I Korps
+	division= {	
+		name = "1.Tümen"
+		location = 9929   # Vienna
+		division_template = "Topcu Piyadeler"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "2.Tümen"
+		location = 9929   # Vienna
+		division_template = "Topcu Piyadeler"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "3.Tümen"
+		location = 9929   # Vienna
+		division_template = "Topcu Piyadeler"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "4.Tümen"
+		location = 9929   # Vienna
+		division_template = "Topcu Piyadeler"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+
+	# II Korps
+	division= {	# "4. Division"			# Used to form 45. Infanterie--division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 11898  # Linz
+		division_template = "Ana Piyadeler"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "5. Division"			# Used to form 3. Gebirgs-division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 928  # Graz
+		division_template = "Ana Piyadeler"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "6. Division"			# Used to form 2. Gebirgs-division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 928  # Innsbruck
+		division_template = "Ana Piyadeler"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "7. Division"			# Used to form 3. Gebirgs-division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 8
+		}
+		location = 928  # Salzburg
+		division_template = "Ana Piyadeler"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+
+	division= {	
+		name = "Kemal Pasha's Own"				# Used to form 2. Gebirgs-division post-Anschluss
+		location = 928  # Vienna
+		division_template = "Topcu Piyadeler"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "AUT"
+		}
+		requested_factories = 1
+		progress = 0.54
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "AUT"
+		}
+		requested_factories = 1
+		progress = 0.74
+		efficiency = 100
+	}
+}
