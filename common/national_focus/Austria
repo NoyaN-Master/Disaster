@@ -36,7 +36,8 @@ focus_tree = {
 		    else_if = {
 				limit = { has_country_flag = AUT_dollfuss_private_ceremony }
 				country_event = aut.9
-			}	
+			}
+			country_event = wrf.01
         }
 	}
 	

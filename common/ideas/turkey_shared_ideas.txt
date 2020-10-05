@@ -9,7 +9,7 @@ TUR_Struggle_Front = {
 
 			}
 		}
-	}
+	
 TUR_Struggle_Front_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
 			picture = TUR_Struggle_Front
@@ -17,7 +17,7 @@ TUR_Struggle_Front_2 = {
 
 			}
 		}
-	}	
+		
 TUR_Struggle_Front_3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
 			picture = TUR_Struggle_Front

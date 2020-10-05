@@ -121,6 +121,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		custom_effect_tooltip = WRF_Yahya
+		hidden_effect = {
+			country_event = { id = wrf.1 days = 3 }
+		}
+		}
 	}
 
 	#Focus for Thracian Livestock
@@ -143,15 +149,18 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 9
 		y = 1
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = WRF_Start
+		hidden_effect = {
+		country_event = { id = wrf.3 days = 3 }
+		}
 		add_manpower = 100000
 		army_experience = 75
-		
 		340 = {
 		add_extra_state_shared_building_slots = 5
 		add_building_construction = {
@@ -166,7 +175,7 @@ focus_tree = {
 		}	
 		}
 		
-		340 = {
+		343 = {
 		add_extra_state_shared_building_slots = 5
 		add_building_construction = {
 		type = arms_factory
@@ -204,16 +213,17 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 1
 		y = 3
-		cost = 10
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_lessons_of_the_revolt }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = WRF_Artillery
 		add_tech_bonus = {
-		bonus = 0.5
-		uses = 1
+		bonus = 0.7
+		uses = 2
 		category = land_doctrine
 		}
 		
@@ -377,6 +387,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = WRF_Revolt
 		add_stability = 0.1	
 		add_political_power = 100
 		}
@@ -394,6 +405,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		custom_effect_tooltip = WRF_Ajanlar
+		hidden_effect = {
+		add_ideas = TUR_Ajan_Ankara
+		country_event = { id = wrf.2 days = 3 }
+		}
+		}
 	}
 
 	#Focus for Bullets Are Cheap, Not Men
@@ -407,6 +425,13 @@ focus_tree = {
 		prerequisite = { focus = WRF_artillery_doctrines }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = WRF_Discipline
+		swap_ideas = {
+		remove_idea = WRF_Kemal_Army
+		add_idea = WRF_Kemal_Army_Disc
+		}
 		}
 	}
 

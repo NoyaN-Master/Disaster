@@ -1,0 +1,65 @@
+add_namespace = wrf
+
+country_event = { #Operation Yahya
+	id = wrf.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.1" }
+	title = wrf.1.t
+	desc = wrf.1.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = wrf.1.a
+		add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 5000
+		}
+		add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 3000
+		}
+		add_equipment_to_stockpile = {
+		type =  artillery_equipment_1
+		amount = 3000
+		}
+	}
+}
+
+country_event = {
+	id = wrf.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.3" }
+	title = wrf.2.t
+	desc = wrf.2.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = wrf.2.a
+		add_political_power = 50
+		}
+	}
+country_event = {
+	id = wrf.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.3" }
+	title = wrf.3.t
+	desc = wrf.3.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = wrf.3.a
+		add_political_power = 100
+		}
+	}	
