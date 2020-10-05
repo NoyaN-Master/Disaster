@@ -15,22 +15,22 @@ set_politics = {
 }
 
 set_popularities = {
-	conservative = 30
-	liberal = 15
-	social_democrat = 25
-	libertarian_socialist = 10
-	authoritarian_socialist = 5
+	conservative = 25
+	liberal = 12
+	social_democrat = 21
+	libertarian_socialist = 6
+	authoritarian_socialist = 9
 	national_bolshevik = 0
-	authoritarian_democrat = 5
-	autocratic = 5
-	ultranationalist = 0
-	revolutionary_nationalist = 5
+	authoritarian_democrat = 4
+	autocratic = 4
+	ultranationalist = 13
+	revolutionary_nationalist = 6
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
 
 create_country_leader = {
-	name = "Austen Chamberlain"
+	name = "George V"
 	desc = "ENG_Austen_Chamberlain_desc"
 	picture = "ENG_Austen_Chamberlain.tga"
 	expire = "2020.1.1"
