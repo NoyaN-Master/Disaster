@@ -1,0 +1,41 @@
+capital = 288
+oob = ""
+
+# Starting tech
+set_technology = {
+}
+
+set_convoys = 0
+
+set_politics = {
+	ruling_party = authoritarian_democrat
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	conservative = 15
+	liberal = 0
+	social_democrat = 5
+	libertarian_socialist = 25
+	authoritarian_socialist = 0
+	national_bolshevik = 0
+	authoritarian_democrat = 50
+	autocratic = 5
+	ultranationalist = 0
+	revolutionary_nationalist = 0
+	esoteric_traditionalist = 0
+	revolutionary_anarchist = 0
+}
+
+create_country_leader = {
+	name = "Orde Wingate"
+	#desc = "BUR_Wingate_desc"
+	picture = "BUR_Wingate.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_democrat_subideology
+	traits = {
+		#
+	}
+}
