@@ -1,0 +1,41 @@
+capital = 126
+oob = ""
+
+# Starting tech
+set_technology = {
+}
+
+set_convoys = 0
+
+set_politics = {
+	ruling_party = conservative
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	conservative = 25
+	liberal = 12
+	social_democrat = 21
+	libertarian_socialist = 6
+	authoritarian_socialist = 9
+	national_bolshevik = 0
+	authoritarian_democrat = 4
+	autocratic = 4
+	ultranationalist = 13
+	revolutionary_nationalist = 6
+	esoteric_traditionalist = 0
+	revolutionary_anarchist = 0
+}
+
+create_country_leader = {
+	name = "George V"
+	desc = "ENG_Austen_Chamberlain_desc"
+	picture = "ENG_Austen_Chamberlain.tga"
+	expire = "2020.1.1"
+	ideology = conservative_subideology
+	traits = {
+		#
+	}
+}
