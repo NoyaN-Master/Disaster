@@ -4,7 +4,7 @@ tags={
 }
 name="Disaster"
 supported_version="1.9.3"
-path="C:\Users\johnn\Documents\Paradox Interactive\Hearts of Iron IV\mod\disaster"
+path="C:/Users/Kaan/Documents/Paradox Interactive/Hearts of Iron IV/mod/disaster"
 
 replace_path="common/ideologies"
 replace_path="events"
