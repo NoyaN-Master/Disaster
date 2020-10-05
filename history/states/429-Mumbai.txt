@@ -1,0 +1,23 @@
+
+state={
+	id=429
+	name="STATE_429"
+	manpower = 5206680
+	state_category = rural
+	
+	resources={
+		#tungsten=19 # was: 26
+	}
+
+	history={
+		owner = 
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+                }
+	}
+
+	provinces={
+		1405 4072 4353 7060 7177 7232 10019 10210 12142 12182 
+	}
+}
