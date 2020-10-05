@@ -6,28 +6,43 @@ WRF_Greek_Legacy = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Greek_Legacy" }
 			#picture = WRF_Greek_Legacy
 			modifier = {
-
+			war_support_weekly = 0.03
+			land_reinforce_rate = 0.3
 			}
+			targeted_modifier = { tag = GRE attack_bonus_against = 0.2 }
 		}
 WRF_Kemal_Army = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Kemal_Army" }
 			#picture = WRF_Kemal_Army
 			modifier = {
-
+			offence = 0.1
+			army_artillery_defence_factor = 0.05
+			army_artillery_attack_factor = 0.05
+			army_infantry_defence_factor = 0.1
+			experience_gain_army = 0.05
+			command_power_gain = 0.5
 			}
 		}
 WRF_Legitimate_Heir = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Legitimate_Heir" }
 			#picture = WRF_Legitimate_Heir
-			modifier = {
-			
+			modifier = { non_core_manpower = 0.05 
+			conscription = 0.09
 			}
+			targeted_modifier = { tag = CIB attack_bonus_against = 0.2 }
+			targeted_modifier = { tag = ANT attack_bonus_against = 0.2 }
+			targeted_modifier = { tag = KUR attack_bonus_against = 0.2 }
+			targeted_modifier = { tag = ENG attack_bonus_against = 0.2 }
+			
 		}
 WRF_Tekalif = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif" }
 			#picture = WRF_Tekalif
 			modifier = {
-			
+			production_speed_buildings_factor = -0.5
+			production_factory_efficiency_gain_factor = -0.50
+			production_factory_start_efficiency_factor = -0.20
+			attrition = -0.1
 			}
 		}			
 	}
