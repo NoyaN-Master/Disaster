@@ -51,30 +51,11 @@ AUT_state_of_emergency_decisions = {
 		complete_effect = {
             custom_effect_tooltip = AUT_heimwehr_securing_lower_austria_tooltip
 			set_country_flag = AUT_heimwehr_securing_lower_austria
-        }
-    }
-	
-    AUT_heimwehr_secure_lower_austria_mission = {                          
-        allowed = { tag = AUT }                 
-        available = {                           
-            NOT = {
-			controls_state = 4 
-			has_country_flag = AUT_heimwehr_securing_lower_austria
-			}
-        }
-        activation = {                       
-            has_country_flag = AUT_heimwehr_securing_lower_austria                   
-        }
-		is_good = yes                        
-        selectable_mission = no            
-        days_mission_timeout = 21           
-        timeout_effect = {                     
-            custom_effect_tooltip = AUT_heimwehr_securing_lower_austria_tooltip
-			set_country_flag = AUT_lower_austria_secured	
-            clr_country_flag = AUT_heimwehr_securing_lower_austria			
-        }			
-        complete_effect = {                 
-            add_stability = -0.05  
+		}
+		days_remove = 21
+        remove_effect = {
+            set_country_flag = AUT_lower_austria_secured	
+            clr_country_flag = AUT_heimwehr_securing_lower_austria		
         }
     }
 	
@@ -103,30 +84,11 @@ AUT_state_of_emergency_decisions = {
 		complete_effect = {
             custom_effect_tooltip = AUT_police_securing_lower_austria_tooltip
 			set_country_flag = AUT_police_securing_lower_austria
-        }
-    }
-	
-    AUT_police_secure_lower_austria_mission = {                          
-        allowed = { tag = AUT }                 
-        available = {                           
-            NOT = {
-			controls_state = 4 
-			has_country_flag = AUT_police_securing_lower_austria
-			}
-        }
-        activation = {                       
-            has_country_flag = AUT_police_securing_lower_austria                   
-        }
-		is_good = yes                        
-        selectable_mission = no            
-        days_mission_timeout = 7          
-        timeout_effect = {                    
-            custom_effect_tooltip = AUT_police_securing_lower_austria_tooltip
-			set_country_flag = AUT_lower_austria_secured	
-            clr_country_flag = AUT_police_securing_lower_austria			
-        }			
-        complete_effect = {                 
-            add_stability = -0.05  
+		}
+		days_remove = 7
+        remove_effect = {
+            set_country_flag = AUT_lower_austria_secured	
+            clr_country_flag = AUT_police_securing_lower_austria		
         }
     }
 	
@@ -156,30 +118,11 @@ AUT_state_of_emergency_decisions = {
             custom_effect_tooltip = AUT_heimwehr_securing_upper_austria_tooltip
 			set_country_flag = AUT_heimwehr_securing_upper_austria
         }
-    }
-	
-    AUT_heimwehr_secure_upper_austria_mission = {                          
-        allowed = { tag = AUT }                 
-        available = {                           
-            NOT = {
-			controls_state = 152
-			has_country_flag = AUT_heimwehr_securing_upper_austria
-			}
-        }
-        activation = {                       
-            has_country_flag = AUT_heimwehr_securing_upper_austria                   
-        }
-		is_good = yes                        
-        selectable_mission = no            
-        days_mission_timeout = 21           
-        timeout_effect = {                                    
-			custom_effect_tooltip = AUT_heimwehr_securing_upper_austria_tooltip
-			set_country_flag = AUT_upper_austria_secured 
-			clr_country_flag = AUT_heimwehr_securing_upper_austria
-        }			
-        complete_effect = {                 
-            add_stability = -0.05
-        }
+		days_remove = 21
+            remove_effect = {
+                set_country_flag = AUT_upper_austria_secured	
+                clr_country_flag = AUT_heimwehr_securing_upper_austria		
+            }
     }
 	
 	AUT_police_secure_upper_austria = {
@@ -208,29 +151,10 @@ AUT_state_of_emergency_decisions = {
             custom_effect_tooltip = AUT_police_securing_upper_austria_tooltip
 			set_country_flag = AUT_police_securing_upper_austria
         }
-    }
-	
-    AUT_police_secure_upper_austria_mission = {                          
-        allowed = { tag = AUT }                 
-        available = {                           
-            NOT = {
-			controls_state = 152
-			has_country_flag = AUT_police_securing_upper_austria
-			}
-        }
-        activation = {                       
-            has_country_flag = AUT_police_securing_upper_austria                   
-        }
-		is_good = yes                        
-        selectable_mission = no            
-        days_mission_timeout = 7          
-        timeout_effect = {                    
-            custom_effect_tooltip = AUT_police_securing_upper_austria_tooltip
-			set_country_flag = AUT_upper_austria_secured   	
-            clr_country_flag = AUT_police_securing_upper_austria			
-        }			
-        complete_effect = {                 
-            add_stability = -0.05
+		days_remove = 7
+            remove_effect = {
+                set_country_flag = AUT_lower_austria_secured	
+                clr_country_flag = AUT_police_securing_upper_austria	
         }
     }
 	
@@ -262,34 +186,13 @@ AUT_state_of_emergency_decisions = {
             custom_effect_tooltip = AUT_heimwehr_securing_tyrol_tooltip
 			set_country_flag = AUT_heimwehr_securing_tyrol
         }
-    }
-	
-    AUT_heimwehr_secure_tyrol_mission = {                          
-        allowed = { tag = AUT }                 
-        available = {                           
-            NOT = {
-			controls_state = 153
-			controls_state = 39
-			controls_state = 806
-			has_country_flag = AUT_heimwehr_securing_tyrol
-			}
-        }
-        activation = {                       
-            has_country_flag = AUT_heimwehr_securing_tyrol                   
-        }
-		is_good = yes                        
-        selectable_mission = no            
-        days_mission_timeout = 21           
-        timeout_effect = {                                    
-			custom_effect_tooltip = AUT_heimwehr_securing_tyrol_tooltip
-			set_country_flag = AUT_tyrol_secured 
-			clr_country_flag = AUT_heimwehr_securing_tyrol
-        }			
-        complete_effect = {                 
-            add_stability = -0.05
+		days_remove = 21
+            remove_effect = {
+                set_country_flag = AUT_tyrol_secured	
+                clr_country_flag = AUT_heimwehr_securing_tyrol
         }
     }
-	
+
 	AUT_police_secure_tyrol = {
         visible = {
             has_country_flag = AUT_vienna_secured
@@ -318,31 +221,10 @@ AUT_state_of_emergency_decisions = {
             custom_effect_tooltip = AUT_police_securing_tyrol_tooltip
 			set_country_flag = AUT_police_securing_tyrol
         }
-    }
-	
-    AUT_police_secure_tyrol_mission = {                          
-        allowed = { tag = AUT }                 
-        available = {                           
-            NOT = {
-			controls_state = 153
-			controls_state = 39
-			controls_state = 806
-			has_country_flag = AUT_police_securing_tyrol
-			}
-        }
-        activation = {                       
-            has_country_flag = AUT_police_securing_upper_austria                   
-        }
-		is_good = yes                        
-        selectable_mission = no            
-        days_mission_timeout = 7          
-        timeout_effect = {                    
-            custom_effect_tooltip = AUT_police_securing_tyrol_tooltip
-			set_country_flag = AUT_tyrol_secured   	
-            clr_country_flag = AUT_police_securing_tyrol			
-        }			
-        complete_effect = {                 
-            add_stability = -0.05
+		days_remove = 7
+            remove_effect = {
+                set_country_flag = AUT_tyrol_secured	
+                clr_country_flag = AUT_police_securing_tyrol
         }
     }
 	
@@ -374,29 +256,10 @@ AUT_state_of_emergency_decisions = {
             custom_effect_tooltip = AUT_heimwehr_securing_carinthia_tooltip
 			set_country_flag = AUT_heimwehr_securing_carinthia
         }
-    }
-	
-    AUT_heimwehr_secure_carinthia_mission = {                          
-        allowed = { tag = AUT }                 
-        available = {                           
-            NOT = {
-			controls_state = 102
-			has_country_flag = AUT_heimwehr_securing_carinthia
-			}
-        }
-        activation = {                       
-            has_country_flag = AUT_heimwehr_securing_carinthia                  
-        }
-		is_good = yes                        
-        selectable_mission = no            
-        days_mission_timeout = 21           
-        timeout_effect = {                                    
-			custom_effect_tooltip = AUT_heimwehr_securing_carinthia_tooltip
-			set_country_flag = AUT_carinthia_secured 
-			clr_country_flag = AUT_heimwehr_securing_carinthia
-        }			
-        complete_effect = {                 
-            add_stability = -0.05
+		days_remove = 21
+        remove_effect = {
+                set_country_flag = AUT_carinthia_secured	
+                clr_country_flag = AUT_heimwehr_securing_carinthia
         }
     }
 	
@@ -426,29 +289,10 @@ AUT_state_of_emergency_decisions = {
             custom_effect_tooltip = AUT_police_securing_carinthia_tooltip
 			set_country_flag = AUT_police_securing_carinthia
         }
-    }
-	
-    AUT_police_secure_carinthia_mission = {                          
-        allowed = { tag = AUT }                 
-        available = {                           
-            NOT = {
-			controls_state = 102
-			has_country_flag = AUT_police_securing_carinthia
-			}
-        }
-        activation = {                       
-            has_country_flag = AUT_police_securing_carinthia                 
-        }
-		is_good = yes                        
-        selectable_mission = no            
-        days_mission_timeout = 7          
-        timeout_effect = {                    
-            custom_effect_tooltip = AUT_police_securing_carinthia_tooltip
-			set_country_flag = AUT_carinthia_secured   	
-            clr_country_flag = AUT_police_securing_carinthia			
-        }			
-        complete_effect = {                 
-            add_stability = -0.05
+		days_remove = 21
+        remove_effect = {
+                set_country_flag = AUT_carinthia_secured	
+                clr_country_flag = AUT_police_securing_carinthia
         }
     }
 	
