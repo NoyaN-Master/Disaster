@@ -1,0 +1,90 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "AUT"
+		default = yes
+		
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = conservative
+			available = { NOT = { has_dlc = "La Resistance" } }
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"AUT"={
+			history = "AUT_GATHERING_STORM_DESC"
+			ideology = ultranationalist
+			available = { has_dlc = "La Resistance" } 
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"PLN"={
+			history = "PLN_GATHERING_STORM_DESC"
+			ideology = authoritarian_democrat
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"WRF"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = authoritarian_democrat
+			ideas = {
+				WRF_Kemal_Army
+				WRF_Greek_Legacy
+				TUR_Struggle_Front
+			}
+			focuses = {
+				WRF_under_the_crescent
+				WRF_operation_ruina_byzantina
+				WRF_send_peker_to_rome
+			}
+		}
+		"FIU"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = ultranationist
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+
+		# minors from DLC ####
+		"CRW"={
+			minor = yes
+			history = "CRW_GATHERING_STORM_DESC"
+			ideology = authoritarian_democrat
+			ideas = {
+				
+			}
+			focuses = {
+
+			}
+		}
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

@@ -146,7 +146,7 @@ focus_tree = {
 	#Focus for Under The Crescent
 	focus = {
 		id = WRF_under_the_crescent
-		icon = GFX_goal_unknown
+		icon = GFX_goal_WRF_Crescent
 		x = 9
 		y = 1
 		cost = 4
@@ -377,7 +377,7 @@ focus_tree = {
 	#Focus for Lessons of The Revolt
 	focus = {
 		id = WRF_lessons_of_the_revolt
-		icon = GFX_goal_unknown
+		icon = GFX_goal_WRF_Revolt_Lesson
 		x = 3
 		y = 2
 		cost = 3
