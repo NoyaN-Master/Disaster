@@ -157,7 +157,7 @@ spriteTypes = {
     }
 
     SpriteType = {
-        name = "GFX_goal_GFX_goal_WRF_Crescent_shine"
+        name = "GFX_goal_WRF_Crescent_shine"
         texturefile = "gfx/interface/goals/WRF_Crescent.tga"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {

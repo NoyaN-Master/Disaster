@@ -19,6 +19,31 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		WRF = {
+		swap_ideas = {
+		remove_idea = TUR_Struggle_Front_2
+		add_idea = TUR_Struggle_Front_3
+		}
+		}
+		
+		THR = {
+		swap_ideas = {
+		remove_idea = TUR_Struggle_Front_2
+		add_idea = TUR_Struggle_Front_3
+		}
+		}
+		
+		ADN = {
+		swap_ideas = {
+		remove_idea = TUR_Struggle_Front_2
+		add_idea = TUR_Struggle_Front_3
+		}
+		}
+		hidden_effect = {
+			country_event = { id = wrf.5 days = 3 }
+		}
+		}
 	}
 
 	#Focus for Abdulmecid's Letter
@@ -107,6 +132,18 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		custom_effect_tooltip = WRF_Kacak
+		add_manpower = 10000
+		army_experience = 50
+		add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 1000
+		hidden_effect = {
+			country_event = { id = wrf.7 days = 3 }
+		}
+		}
+	}
 	}
 
 	#Focus for Operation YAHYA
@@ -138,8 +175,34 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_trk_kurtulu_ordusu }
+		available = { has_completed_focus = WRF_adanan_ammunition }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		WRF = {
+		swap_ideas = {
+		remove_idea = TUR_Struggle_Front_3
+		add_idea = TUR_Struggle_Front_4
+		}
+		}
+		
+		THR = {
+		swap_ideas = {
+		remove_idea = TUR_Struggle_Front_3
+		add_idea = TUR_Struggle_Front_4
+		}
+		}
+		
+		ADN = {
+		swap_ideas = {
+		remove_idea = TUR_Struggle_Front_3
+		add_idea = TUR_Struggle_Front_4
+		}
+		}
+		}
+		hidden_effect = {
+			country_event = { id = wrf.6 days = 3 }
 		}
 	}
 
@@ -299,6 +362,29 @@ focus_tree = {
 		prerequisite = { focus = WRF_under_the_crescent }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = WRF_Kurtulus
+		WRF = {
+		swap_ideas = {
+		remove_idea = TUR_Struggle_Front
+		add_idea = TUR_Struggle_Front_2
+		}
+		}
+		
+		THR = {
+		swap_ideas = {
+		remove_idea = TUR_Struggle_Front
+		add_idea = TUR_Struggle_Front_2
+		}
+		}
+		
+		ADN = {
+		swap_ideas = {
+		remove_idea = TUR_Struggle_Front
+		add_idea = TUR_Struggle_Front_2
+		}
+		}
 		}
 	}
 
@@ -461,6 +547,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward ={
+		custom_effect_tooltip = WRF_Tekalif2
+		swap_ideas = {
+		remove_idea = WRF_Tekalif
+		add_idea = WRF_Tekalif_Vatan
+		}
+		}
+		
 	}
 
 	#Focus for Operation Ruina Byzantina

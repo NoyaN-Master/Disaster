@@ -1,6 +1,6 @@
 add_namespace = wrf
 
-country_event = { #Operation Yahya
+country_event = { 
 	id = wrf.1
 	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.1" }
 	title = wrf.1.t
@@ -29,7 +29,7 @@ country_event = { #Operation Yahya
 	}
 }
 
-country_event = {
+country_event = { 
 	id = wrf.2
 	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.3" }
 	title = wrf.2.t
@@ -61,5 +61,95 @@ country_event = {
 	option = {
 		name = wrf.3.a
 		add_political_power = 100
+		}
+	}
+
+country_event = { 
+	id = wrf.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.4" }
+	title = wrf.4.t
+	desc = wrf.4.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = wrf.4.a
+		add_political_power = 100
+		add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 500
+		}
+		}
+	}
+country_event = { #KO Adana
+	id = wrf.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.5" }
+	title = wrf.5.t
+	desc = wrf.5.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = wrf.5.a
+		add_political_power = 100
+		add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 500
+		}
+		340 = {
+		add_building_construction = {
+		type = arms_factory
+		level = 1
+		instant_build = yes
+		}
+		}
+		}
+	}
+country_event = { #KO Adana
+	id = wrf.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.6" }
+	title = wrf.6.t
+	desc = wrf.6.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = wrf.6.a
+		add_political_power = 100
+		add_building_construction = {
+		type = civillian_factory
+		level = 1
+		instant_build = yes
+		}
+		}
+	}
+country_event = { #KO Adana
+	id = wrf.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
+	title = wrf.7.t
+	desc = wrf.7.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = wrf.7.a
+		add_political_power = 100
+		add_manpower = 1
 		}
 	}	
