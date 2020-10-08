@@ -13,7 +13,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 16
 		y = 3
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_trk_kurtulu_ordusu }
 		ai_will_do = {
@@ -102,7 +102,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 3
 		y = 5
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = WRF_bullets_are_cheap_not_men 
@@ -121,7 +121,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 14
 		y = 4
-		cost = 10
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = WRF_adanan_ammunition 
@@ -152,7 +152,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 5
 		y = 4
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_ajan_tekilat }
 		ai_will_do = {
@@ -172,7 +172,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 12
 		y = 3
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_trk_kurtulu_ordusu }
 		available = { has_completed_focus = WRF_adanan_ammunition }
@@ -200,9 +200,9 @@ focus_tree = {
 		add_idea = TUR_Struggle_Front_4
 		}
 		}
-		}
 		hidden_effect = {
 			country_event = { id = wrf.6 days = 3 }
+		}
 		}
 	}
 
@@ -335,8 +335,9 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 14
 		y = 6
-		cost = 10
+		cost = 3
 		available_if_capitulated = yes
+		available = { has_country_flag = WRF_receipt_done  } 
 		prerequisite = { 
 			focus = WRF_agents_in_antalya 
 		}
@@ -357,7 +358,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 14
 		y = 2
-		cost = 10
+		cost = 6
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_under_the_crescent }
 		ai_will_do = {
@@ -424,7 +425,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 5
 		y = 6
-		cost = 10
+		cost = 31
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_kemals_speech }
 		ai_will_do = {
@@ -438,7 +439,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 3
 		y = 6
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_kemals_speech }
 		ai_will_do = {
@@ -452,7 +453,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 1
 		y = 6
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_kemals_speech }
 		ai_will_do = {
@@ -485,7 +486,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 5
 		y = 3
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_lessons_of_the_revolt }
 		ai_will_do = {
@@ -506,7 +507,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 1
 		y = 4
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_artillery_doctrines }
 		ai_will_do = {
@@ -527,11 +528,22 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 12
 		y = 5
-		cost = 10
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_thracian_livestock }
+		available = { has_completed_focus = WRF_ajan_tekilat }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = WRF_Antalya
+		hidden_effect = {
+		country_event = { id = wrf.9 days = 2 }
+		}
+		swap_ideas = {
+		remove_idea = TUR_Ajan_Ankara
+		add_idea = WRF_Ajan_Antalya
+		}
 		}
 	}
 
@@ -541,13 +553,16 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 16
 		y = 5
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_adanan_ammunition }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward ={
+		hidden_effect = {
+		country_event = { id = wrf.8 days = 3 }
+		}
 		custom_effect_tooltip = WRF_Tekalif2
 		swap_ideas = {
 		remove_idea = WRF_Tekalif
