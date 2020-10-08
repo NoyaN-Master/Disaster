@@ -61,12 +61,12 @@ set_popularities = {
 	social_democrat = 0
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
-	national_bolshevik = 0
-	authoritarian_democrat = 100
+	national_bolshevik = 5
+	authoritarian_democrat = 85
 	autocratic = 0
-	ultranationalist = 0
+	ultranationalist = 5
 	revolutionary_nationalist = 0
-	esoteric_traditionalist = 0
+	esoteric_traditionalist = 5
 	revolutionary_anarchist = 0
 }
 
@@ -76,6 +76,17 @@ create_country_leader = {
 	picture = "Portrait_WRF_Mustafa_Kemal.tga"
 	expire = "2020.1.1"
 	ideology = turkish_stratocracy
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Mustafa Kemal Atatürk"
+	#desc = "SES_Zeljko_Raznatovic_desc"
+	picture = "Portrait_WRF_Mustafa_Kemal_Ataturk.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_democrat
 	traits = {
 		#
 	}
