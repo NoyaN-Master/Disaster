@@ -1,0 +1,41 @@
+capital = 613
+oob = ""
+
+# Starting tech
+set_technology = {
+}
+
+set_convoys = 87
+
+set_politics = {
+	ruling_party = authoritarian_socialist
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	conservative = 0
+	liberal = 0
+	social_democrat = 20
+	libertarian_socialist = 25
+	authoritarian_socialist = 50
+	national_bolshevik = 0
+	authoritarian_democrat = 5
+	autocratic = 0
+	ultranationalist = 0
+	revolutionary_nationalist = 0
+	esoteric_traditionalist = 0
+	revolutionary_anarchist = 0
+}
+
+create_country_leader = {
+	name = "Chiang Kai-shek"
+	#desc = "CHI_Chiang_Kai_desc"
+	picture = "CHI_Chiang_Kai.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_socialist_subideology
+	traits = {
+		#
+	}
+}
