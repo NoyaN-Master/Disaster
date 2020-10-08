@@ -1,0 +1,41 @@
+capital = 325
+oob = ""
+
+# Starting tech
+set_technology = {
+}
+
+set_convoys = 0
+
+set_politics = {
+	ruling_party = authoritarian_democrat
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	conservative = 20
+	liberal = 10
+	social_democrat = 0
+	libertarian_socialist = 0
+	authoritarian_socialist = 0
+	national_bolshevik = 0
+	authoritarian_democrat = 50
+	autocratic = 20
+	ultranationalist = 0
+	revolutionary_nationalist = 0
+	esoteric_traditionalist = 0
+	revolutionary_anarchist = 0
+}
+
+create_country_leader = {
+	name = "Hu Hanmin"
+	#desc = "YUN_Hu_Hanmin_desc"
+	picture = "YUN_Hu_Hanmin.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_democrat_subideology
+	traits = {
+		#
+	}
+}
