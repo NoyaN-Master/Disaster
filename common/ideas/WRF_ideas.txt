@@ -89,6 +89,14 @@ WRF_Ajan_Antalya = {
 			subversive_activites_upkeep = -0.3
 			
 			}
+		}
+WRF_For_All_Brothers = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			army_morale_factor = 0.1
+			attrition = -0.1
+			}
 		}		
 	}	
 		
