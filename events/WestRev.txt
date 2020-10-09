@@ -209,5 +209,127 @@ country_event = { #Antalya1
 		custom_effect_tooltip = WRF_Antalya_Event2
 		set_country_flag = WRF_receipt_done
 		}
-	}	
+	}
+country_event = { #PekerRomada
+	id = wrf.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
+	title = wrf.11.t
+	desc = wrf.11.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = wrf.11.a
+		add_political_power = 1
+		custom_effect_tooltip = WRF_Peker_Romada
+		hidden_effect = {
+		country_event = { id = wrf.12 days = 2 }
+		FIU = {
+		country_event = { id = wrf.12 days = 2 }
+		}
+		}
+		}
+	}
+country_event = { #PekerReceipt
+	id = wrf.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
+	title = wrf.12.t
+	desc = wrf.12.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = wrf.12.a
+		add_political_power = 1
+		custom_effect_tooltip = WRF_Peker_Proof
+		hidden_effect = {
+		country_event = { id = wrf.13 days = 2 }
+		FIU = {
+		country_event = { id = wrf.14 days = 2 }
+		}
+		}
+		}
+	}
+country_event = { #PekerEndWRF
+	id = wrf.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
+	title = wrf.13.t
+	desc = wrf.13.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = wrf.13.a
+		add_political_power = 200
+		custom_effect_tooltip = WRF_Peker_EndT
+		WRF = {
+		annex_country = {
+		target = TIT
+		transfer_troops = no
+		}
+		342 = {
+		add_core_of = WRF
+		}
+		184 = {
+		add_core_of = THR
+		}
+		731 = {
+		add_core_of = THR
+		}
+		345 = {
+		add_core_of = WRF
+		}
+		set_truce = {
+		target = FIU
+		days = 365		
+		}
+		}
+		}
+		}
+country_event = { #PekerEndITA
+	id = wrf.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
+	title = wrf.14.t
+	desc = wrf.14.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = wrf.14.a
+		add_political_power = 100
+		add_manpower = 50000
+		army_experience = 50
+		
+		custom_effect_tooltip = WRF_Peker_EndITA
+		185 = {
+		add_core_of = FIU
+		}
+		186 = {
+		add_core_of = FIU
+		}
+		47 = {
+		add_core_of = FIU
+		}
+		182 = {
+		add_core_of = FIU
+		}
+		}
+		}		
+	
 	

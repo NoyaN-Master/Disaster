@@ -352,6 +352,12 @@ focus_tree = {
 		}
 		completion_reward = {
 		custom_effect_tooltip = WRF_Peker
+		hidden_effect = {
+		FIU = {
+		country_event = { id = wrf.11 days = 1 }
+		}
+		country_event = { id = wrf.11 days = 1 }
+		}
 		}
 	}
 
