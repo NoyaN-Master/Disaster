@@ -113,6 +113,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		custom_effect_tooltip = WRF_Kemal_Speech
+		hidden_effect = {
+		country_event = { id = wrf.15 days = 3 }
+		}
+		}
 	}
 
 	#Focus for Recruit Escapists
@@ -434,7 +440,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 5
 		y = 6
-		cost = 31
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_kemals_speech }
 		ai_will_do = {
