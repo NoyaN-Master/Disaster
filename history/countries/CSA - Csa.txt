@@ -1,4 +1,4 @@
-capital = 12
+capital = 362
 oob = ""
 
 # Starting tech
@@ -8,33 +8,33 @@ set_technology = {
 set_convoys = 0
 
 set_politics = {
-	ruling_party = ultranationalist
+	ruling_party = conservative
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	conservative = 0
+	conservative = 46
 	liberal = 0
 	social_democrat = 0
-	libertarian_socialist = 13
-	authoritarian_socialist = 7
+	libertarian_socialist = 0
+	authoritarian_socialist = 0
 	national_bolshevik = 0
-	authoritarian_democrat = 5
-	autocratic = 10
-	ultranationalist = 55
-	revolutionary_nationalist = 10
+	authoritarian_democrat = 14
+	autocratic = 6
+	ultranationalist = 17
+	revolutionary_nationalist = 17
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
 
 create_country_leader = {
-	name = "Rüdiger von der Goltz"
-	#desc = "BLT_Goltz_desc"
-	picture = "BLT_Goltz.tga"
+	name = "Eugene Talmadge"
+	#desc = "BOE_Hertzog_desc"
+	picture = "BOE_Hertzog.tga"
 	expire = "2020.1.1"
-	ideology = ultranationalist_subideology
+	ideology = conservative_subideology
 	traits = {
 		#
 	}
