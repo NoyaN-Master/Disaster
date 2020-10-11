@@ -6,7 +6,31 @@ leader_traits = {
 		opinion_gain_monthly_factor = 0.15
 		army_core_defence_factor = 0.05
 		army_core_attack_factor = 0.05
-	}	
+	}
+
+	last_hope = {
+	    random = no
+		political_power_factor = 0.10
+		army_core_defence_factor = 0.05
+		army_core_attack_factor = 0.05
+		stability_factor = 0.10	
+	}
+	
+	bastion_evil = {
+	    random = no
+		political_power_factor = 0.10
+		army_core_defence_factor = 0.10
+		army_core_attack_factor = 0.10
+		stability_factor = -0.10
+		MONTHLY_POPULATION = -0.5
+		
+	}
+	
+	turkish_democrats = {
+	    random = no
+		political_power_factor = 0.05
+		stability_factor = 0.10	
+	}
 	
 	model_dictator = {
 	    random = no
