@@ -17,6 +17,190 @@ country_event = { #Intro
 	}
 }
 
+country_event = { #Pragmatic Nationalism
+	id = pln.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event pln.2" }
+	title = pln.2.t
+	desc = pln.2.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = pln.2.a 
+        set_country_flag = POL_abc_grows
+		custom_effect_tooltip = POL_abc_grows
+	}
+        
+        option = {
+		name = pln.2.b 
+        set_country_flag = POL_falanga_grows
+		custom_effect_tooltip = POL_falanga_grows
+	}
+}
+
+country_event = { #Polonization Efforts
+	id = pln.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event pln.3" }
+	title = pln.3.t
+	desc = pln.3.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = pln.3.a 
+	}
+        
+        option = {
+		name = pln.3.b 
+	}
+}
+
+country_event = { #Church's Role
+	id = pln.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event pln.4" }
+	title = pln.4.t
+	desc = pln.4.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = pln.4.a
+        set_country_flag = POL_church_grows
+		custom_effect_tooltip = POL_church_grows
+	}
+        
+        option = {
+		name = pln.4.b 
+	}
+}
 
 
+country_event = { #Support Polish Business
+	id = pln.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event pln.5" }
+	title = pln.5.t
+	desc = pln.5.d
 
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = pln.5.a
+        set_country_flag = POL_fantatics_grows
+		custom_effect_tooltip = POL_fanatics_grows
+	}
+        
+        option = {
+		name = pln.5.b 
+	}
+}
+
+country_event = { #Remove Prussian Vestiges
+	id = pln.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event pln.6" }
+	title = pln.6.t
+	desc = pln.6.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = pln.6.a
+	}
+}
+
+country_event = { #Deal with Socialist Terrorists
+	id = pln.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event pln.7" }
+	title = pln.7.t
+	desc = pol.7.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = pln.7.a
+        set_country_flag = POL_communists_grows
+		custom_effect_tooltip = POL_communists_grows
+	}
+        
+        option = {
+		name = pol.7.b
+        set_country_flag = POL_socialists_grows
+		custom_effect_tooltip = POL_socialists_grows 
+	}
+
+        option = {
+		name = pln.7.c 
+	}
+}
+
+country_event = { #Hunt Piłsudski
+	id = pln.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event pln.8" }
+	title = pln.8.t
+	desc = pln.8.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = pln.8.a
+                hidden_effect = {
+		    country_event = {id = pln.9 days = 3}
+                }
+	}
+        
+        option = {
+		name = pln.8.b
+                hidden_effect = {
+		    country_event = {id = pln.10 days = 3}
+                }
+	}
+
+        option = {
+		name = pln.8.c 
+	}
+}
+
+country_event = { #Piłsudski Dead
+	id = pln.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event pln.9" }
+	title = pln.9.t
+	desc = pln.9.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = pln.9.a
+	}
+}
+
+country_event = { #Piłsudski Escaped
+	id = pln.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event pln.10" }
+	title = pln.10.t
+	desc = pln.10.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = pln.10.a
+        set_country_flag = POL_pilsudski_mad
+		custom_effect_tooltip = POL_pilsudski_mad
+	}
+}
