@@ -1,4 +1,4 @@
-capital = 362
+capital = 375
 oob = ""
 
 # Starting tech
@@ -15,24 +15,24 @@ set_politics = {
 }
 
 set_popularities = {
-	conservative = 46
-	liberal = 0
-	social_democrat = 0
+	conservative = 50
+	liberal = 25
+	social_democrat = 25
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
 	national_bolshevik = 0
-	authoritarian_democrat = 14
-	autocratic = 6
-	ultranationalist = 17
-	revolutionary_nationalist = 17
+	authoritarian_democrat = 0
+	autocratic = 0
+	ultranationalist = 0
+	revolutionary_nationalist = 0
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
 
 create_country_leader = {
-	name = "Barry Hertzog"
-	#desc = "BOE_Hertzog_desc"
-	picture = "BOE_Hertzog.tga"
+	name = "Dan Moody"
+	#desc = "SWV_Gustav_Adolf_desc"
+	picture = "SWV_Gustav_Adolf.tga"
 	expire = "2020.1.1"
 	ideology = conservative_subideology
 	traits = {
