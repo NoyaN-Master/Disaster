@@ -263,7 +263,7 @@ AUT_catholic_corporate_state = {
 		}	
 		
 AUT_in_die_neue_zeit = {
-            on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_catholic_corporate_state" }
+            on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_in_die_neue_zeit" }
 			#picture = 
 			modifier = {
 			resistance_damage_to_garrison_on_our_occupied_states
@@ -276,7 +276,7 @@ AUT_in_die_neue_zeit = {
 		}	
 
 AUT_state_of_emergency_idea = {
-            on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_catholic_corporate_state" }
+            on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_state_of_emergency_idea" }
 			#picture = 
 			modifier = {
 			political_power_factor = -0.10
@@ -286,7 +286,7 @@ AUT_state_of_emergency_idea = {
 		}	
 		
 AUT_power_struggle_idea = {
-            on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_catholic_corporate_state" }
+            on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_power_struggle_idea" }
 			#picture = 
 			modifier = {
 			political_power_factor = -0.10
@@ -296,10 +296,134 @@ AUT_power_struggle_idea = {
 		}	
 		
 AUT_purged_beureaucracy = {
-            on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_catholic_corporate_state" }
+            on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_purged_beureaucracy" }
 			#picture = 
 			modifier = {
 			political_power_factor = -0.10
 			stability_factor = -0.04
 			}
 		}	
+		
+AUT_empowered_beureaucracy = {
+            on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_empowered_beureaucracy" }
+			#picture = 
+			modifier = {
+			political_power_factor = 0.07
+			stability_factor = 0.03
+			economy_cost_factor = -0.08
+			trade_laws_cost_factor = -0.08
+			mobilization_laws_cost_factor = -0.08
+			political_adviser_cost_factor = -0.08
+			}
+		}	
+		
+AUT_suppressed_heimwehr = {
+            on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_suppressed_heimwehr" }
+			#picture = 
+			modifier = {
+			political_power_factor = 0.10
+			stability_factor = 0.07
+			recruitable_population_factor = -0.10
+			}
+		}	
+		
+AUT_technocratic_economy_1 = {
+            on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_technocratic_economy_1" }
+			#picture = 
+			modifier = {
+			consumer_goods_factor = -0.03
+			production_factory_max_efficiency_factor = 0.04
+			production_speed_buildings_factor = 0.04
+			}
+		}	
+		
+AUT_technocratic_government_1 = {
+            on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_technocratic_government_1" }
+			#picture = 
+			modifier = {
+			political_power_factor = 0.14
+			stability_factor = 0.06
+			economy_cost_factor = -0.16
+			trade_laws_cost_factor = -0.16
+			mobilization_laws_cost_factor = -0.16
+			political_adviser_cost_factor = -0.16
+			research_speed_factor = 0.03
+			}
+		}	
+		
+AUT_technocratic_economy_2 = {
+            on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_technocratic_economy_2" }
+			#picture = 
+			modifier = {
+			consumer_goods_factor = -0.06
+			production_factory_max_efficiency_factor = 0.08
+			production_speed_buildings_factor = 0.08
+			industrial_capacity_factory = 0.07
+			}
+		}
+		
+AUT_technocratic_government_2 = {
+            on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_technocratic_government_1" }
+			#picture = 
+			modifier = {
+			political_power_factor = 0.21
+			stability_factor = 0.09
+			economy_cost_factor = -0.24
+			trade_laws_cost_factor = -0.24
+			mobilization_laws_cost_factor = -0.24
+			political_adviser_cost_factor = -0.24
+			research_speed_factor = 0.06
+			}
+		}
+		
+AUT_frontmilitz = {
+            on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_frontmilitz" }
+			#picture = 
+			modifier = {
+			political_power_factor = 0.15
+			stability_factor = 0.12
+			recruitable_population_factor = 0.05
+			army_core_defence_factor = 0.10
+			conscription_factor = 0.10
+			}
+		}
+		
+AUT_beureaucrats_boom = {
+            on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_beureaucrats_boom" }
+			#picture = 
+			modifier = {
+			consumer_goods_factor = -0.10
+			industrial_capacity_factory = 0.05
+			production_speed_buildings_factor = 0.05
+			production_factory_max_efficiency_factor = 0.05
+			political_power_factor = 0.05
+			}
+		}
+		
+AUT_defending_austria = {
+            on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_defending_austria" }
+			#picture = 
+			modifier = {
+			war_support_factor = 0.08
+			political_power_factor = 0.04
+			training_time_army_factor = -0.15
+			army_org = 0.06
+			conscription = 0.05
+			}
+		}
+		
+AUT_christlich_deutsch_gerecht_und_frei_idea = {
+            on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_technocratic_government_1" }
+			#picture = 
+			modifier = {
+			political_power_factor = 0.26
+			stability_factor = 0.14
+			economy_cost_factor = -0.30
+			trade_laws_cost_factor = -0.30
+			mobilization_laws_cost_factor = -0.30
+			political_adviser_cost_factor = -0.30
+			trade_opinion_factor = 0.10
+			opinion_gain_monthly_factor = 0.10
+			research_speed_factor = 0.09
+			}
+		}

@@ -647,7 +647,7 @@ focus_tree = {
 		id = AUT_unite_the_youth_movements
 		icon = GFX_goal_AUT_merge_the_youth_movements
 		prerequisite = { focus = AUT_merge_the_posts }
-		x = 16
+		x = 15
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -885,40 +885,17 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = AUT_die_mordekrugel
-		#icon = 
-		x = 25
-		y = 0
-		cost = 0
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			has_country_flag = AUT_dollfuss_dead					
-		}	
-		bypass = {
-			has_country_flag = AUT_dollfuss_dead
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		    custom_effect_tooltip = AUT_mordekrugel
-        }
-	}
-	
-	focus = {
 		id = AUT_react_to_the_crisis
 		#icon = 
 		prerequisite = { focus = AUT_die_mordekrugel }
 		x = 25
-		y = 1
+		y = 0
 		cost = 12
 		ai_will_do = {
 			factor = 1000
 		}
 		available = {
-			has_country_leader_flag = AUT_dollfuss_dead
+			has_country_flag = AUT_dollfuss_dead
             has_government = ultranationalist			
 		}	
 		select_effect = {
@@ -932,4 +909,488 @@ focus_tree = {
 		    custom_effect_tooltip = AUT_state_of_emergency_tooltip
         }
 	}
+	
+	focus = {
+		id = AUT_schussnigg_at_the_helm
+		#icon = 
+		prerequisite = { focus = AUT_react_to_the_crisis }
+		x = 21
+		y = 1
+		cost = 1
+		ai_will_do = {
+			factor = 1000
+		}
+		available = {
+			has_country_leader = {
+				name = "Kurt Schussnigg"
+				ruling_only = yes
+			}					
+            has_government = ultranationalist			
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		    add_political_power = 20
+			add_stability = 0.03
+        }
+	}
+	
+	focus = {
+		id = AUT_emergency_investments
+		#icon = 
+		prerequisite = { focus = AUT_schussnigg_at_the_helm }
+		x = 19
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			has_country_leader = {
+				name = "Kurt Schussnigg"
+				ruling_only = yes
+			}			
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		    custom_effect_tooltip = AUT_economic_recovery
+			if = {
+				limit = { has_idea = AUT_sluggish_economy_1 }
+				swap_ideas = { 
+                    remove_idea = AUT_sluggish_economy_1 
+                    add_idea = AUT_sluggish_economy_2
+                }
+			}
+			else_if = {
+				limit = { has_idea = AUT_sluggish_economy_2 }
+				swap_ideas = { 
+                    remove_idea = AUT_sluggish_economy_2 
+                    add_idea = AUT_sluggish_economy_3
+                }
+			}
+		    else_if = {
+				limit = { has_idea = AUT_sluggish_economy_3 }
+				remove_ideas = AUT_sluggish_economy_3
+			}
+        }
+	}
+	
+	focus = {
+		id = AUT_support_the_beureaucrats
+		#icon = 
+		prerequisite = { focus = AUT_schussnigg_at_the_helm }
+		x = 21
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			has_country_leader = {
+				name = "Kurt Schussnigg"
+				ruling_only = yes
+			}			
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		    add_ideas = AUT_empowered_beureaucracy
+			hidden_effect = {
+			    country_event = { id = aut.34 days = 21 }
+			}
+        }
+	}
+	
+	focus = {
+		id = AUT_suppress_the_heimwehr
+		#icon = 
+		prerequisite = { focus = AUT_schussnigg_at_the_helm }
+		x = 23
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+			has_country_leader = {
+				name = "Kurt Schussnigg"
+				ruling_only = yes
+			}			
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		    add_ideas = AUT_suppressed_heimwehr
+		}
+	}
+	
+	focus = {
+		id = AUT_technocratic_economy
+		#icon = 
+		prerequisite = { focus = AUT_support_the_beureaucrats }
+		prerequisite = { focus = AUT_emergency_investments }
+		x = 20
+		y = 3
+		cost = 6
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			has_country_leader = {
+				name = "Kurt Schussnigg"
+				ruling_only = yes
+			}			
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		    custom_effect_tooltip = AUT_economic_recovery
+			if = {
+				limit = { has_idea = AUT_sluggish_economy_1 }
+				swap_ideas = { 
+                    remove_idea = AUT_sluggish_economy_1 
+                    add_idea = AUT_sluggish_economy_2
+                }
+			}
+			else_if = {
+				limit = { has_idea = AUT_sluggish_economy_2 }
+				swap_ideas = { 
+                    remove_idea = AUT_sluggish_economy_2 
+                    add_idea = AUT_sluggish_economy_3
+                }
+			}
+		    else_if = {
+				limit = { has_idea = AUT_sluggish_economy_3 }
+				remove_ideas = AUT_sluggish_economy_3
+			}
+			add_ideas = AUT_technocratic_economy_1
+        }
+	}
+	
+	focus = {
+		id = AUT_technocratic_government
+		#icon = 
+		prerequisite = { focus = AUT_support_the_beureaucrats }
+		prerequisite = { focus = AUT_suppress_the_heimwehr }
+		x = 22
+		y = 3
+		cost = 4
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+			has_country_leader = {
+				name = "Kurt Schussnigg"
+				ruling_only = yes
+			}			
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		    custom_effect_tooltip = AUT_flip_to_autocratic
+			hidden_effect = {
+			    set_politics = {
+			    ruling_party = autocratic
+			    elections_allowed = no
+		        }
+				add_popularity = {
+			    ideology = autocratic
+			    popularity = 0.10
+		        }
+			}
+		    swap_ideas = { 
+                remove_idea = AUT_empowered_beureaucracy
+                add_idea = AUT_technocratic_government_1
+            }
+        }
+	}
+	
+	focus = {
+		id = AUT_guided_industrialisation
+		#icon = 
+		prerequisite = { focus = AUT_technocratic_economy }
+		x = 19
+		y = 4
+		cost = 6
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			has_country_leader = {
+				name = "Kurt Schussnigg"
+				ruling_only = yes
+			}			
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		    custom_effect_tooltip = AUT_economic_recovery
+			if = {
+				limit = { has_idea = AUT_sluggish_economy_1 }
+				swap_ideas = { 
+                    remove_idea = AUT_sluggish_economy_1 
+                    add_idea = AUT_sluggish_economy_2
+                }
+			}
+			else_if = {
+				limit = { has_idea = AUT_sluggish_economy_2 }
+				swap_ideas = { 
+                    remove_idea = AUT_sluggish_economy_2 
+                    add_idea = AUT_sluggish_economy_3
+                }
+			}
+		    else_if = {
+				limit = { has_idea = AUT_sluggish_economy_3 }
+				remove_ideas = AUT_sluggish_economy_3
+			}
+			808 = {
+	        add_building_construction = {
+		    type = industrial_complex
+		    level = 2
+	        }
+            }			
+			152 = {
+	        add_building_construction = {
+		    type = industrial_complex
+		    level = 1
+	        }   
+            }
+            4 = {
+	        add_building_construction = {
+		    type = industrial_complex
+		    level = 1
+	        }   
+            }
+        }	
+	}
+	
+	focus = {
+		id = AUT_cult_of_efficiency
+		#icon = 
+		prerequisite = { focus = AUT_technocratic_economy }
+		x = 19
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			has_country_leader = {
+				name = "Kurt Schussnigg"
+				ruling_only = yes
+			}			
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		    swap_ideas = { 
+                remove_idea = AUT_technocratic_economy_1
+                add_idea = AUT_technocratic_economy_2
+            }
+        }	
+	}
+	
+	focus = {
+		id = AUT_meritocratic_state
+		#icon = 
+		prerequisite = { focus = AUT_technocratic_economy }
+		prerequisite = { focus = AUT_technocratic_government }
+		x = 21
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+			has_country_leader = {
+				name = "Kurt Schussnigg"
+				ruling_only = yes
+			}			
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		    swap_ideas = { 
+                remove_idea = AUT_technocratic_government_1
+                add_idea = AUT_technocratic_government_2
+            }
+        }	
+	}
+	
+	focus = {
+		id = AUT_extent_of_reforms
+		#icon = 
+		prerequisite = { focus = AUT_meritocratic_state }
+		x = 21
+		y = 5
+		cost = 6
+		ai_will_do = {
+			factor = 70
+		}
+		available = {
+			has_country_leader = {
+				name = "Kurt Schussnigg"
+				ruling_only = yes
+			}			
+		}	
+		select_effect = {
+			if = {
+			    limit = { has_country_flag = AUT_young_guard_encouraged }
+				country_event = { id = aut.35 days = 7 }
+			}
+			else_if = {
+			    limit = { has_country_flag = AUT_young_guard_ambivalent }
+				country_event = { id = aut.39 days = 7 }
+			}
+			else_if = {
+			    limit = { has_country_flag = AUT_young_guard_suppressed }
+				country_event = { id = aut.44 days = 7 }
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		    custom_effect_tooltip = AUT_extent_of_reforms_tooltip
+        }	
+	}
+	
+	focus = {
+		id = AUT_establish_frontmilitz
+		#icon = 
+		prerequisite = { focus = AUT_technocratic_government }
+		x = 23
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			has_country_leader = {
+				name = "Kurt Schussnigg"
+				ruling_only = yes
+			}			
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		    swap_ideas = { 
+                remove_idea = AUT_suppressed_heimwehr
+                add_idea = AUT_frontmilitz
+            }
+        }	
+	}
+	
+	focus = {
+		id = AUT_revive_nationalism
+		#icon = 
+		prerequisite = { focus = AUT_establish_frontmilitz }
+		x = 23
+		y = 5
+		cost = 6
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			has_country_leader = {
+				name = "Kurt Schussnigg"
+				ruling_only = yes
+			}			
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		    add_ideas = AUT_austrian_identity_1
+        }	
+	}
+	
+	focus = {
+		id = AUT_beureaucratic_boom
+		#icon = 
+		prerequisite = { focus = AUT_cult_of_efficiency }
+		prerequisite = { focus = AUT_extent_of_reforms }
+		x = 20
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_leader = {
+				name = "Kurt Schussnigg"
+				ruling_only = yes
+			}			
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		    add_timed_idea = { idea = AUT_beureaucrats_boom days = 730 }
+        }	
+	}
+	
+	focus = {
+		id = AUT_the_defense_of_austria
+		#icon = 
+		prerequisite = { focus = AUT_revive_nationalism }
+		prerequisite = { focus = AUT_extent_of_reforms }
+		x = 22
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_leader = {
+				name = "Kurt Schussnigg"
+				ruling_only = yes
+			}			
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		    add_ideas = AUT_defending_austria
+        }	
+	}
+	
+	focus = {
+		id = AUT_christlich_deutsch_gerecht_und_frei
+		#icon = 
+		prerequisite = { focus = AUT_the_defense_of_austria }
+		prerequisite = { focus = AUT_beureaucratic_boom }
+		x = 21
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_leader = {
+				name = "Kurt Schussnigg"
+				ruling_only = yes
+			}			
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		    swap_ideas = { 
+                remove_idea = AUT_technocratic_government_2
+                add_idea = AUT_christlich_deutsch_gerecht_und_frei_idea
+            }
+        }	
+	}	
 }
