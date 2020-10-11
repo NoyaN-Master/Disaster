@@ -620,6 +620,7 @@ country_event = { #Vienna Massacre
 	option = {
 		name = aut.18.a 
 		set_country_flag = AUT_vienna_secured
+		set_country_flag = AUT_vienna_massacre_happened
 		add_stability = -0.05
 		add_popularity = {
 			ideology = ultranationalist
@@ -698,5 +699,421 @@ country_event = { #Stability returns
         set_country_flag = AUT_stable_again
 		add_stability = 0.05
 		custom_effect_tooltip = AUT_end_state_of_emergency_tooltip
+	}
+}
+
+country_event = { #Schussnigg's speech
+	id = aut.22
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.22" }
+	title = aut.22.t
+	desc = aut.22.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = aut.22.a 
+		add_ideas = AUT_power_struggle_idea
+		set_country_flag = AUT_power_struggle_flag
+		 hidden_effect = {
+			country_event = {id = aut.23 days = 2}
+			country_event = {id = aut.26 days = 9}
+			country_event = {id = aut.28 days = 16}
+			country_event = {id = aut.29 days = 25}
+        }
+	}
+}
+
+country_event = { #Meet the Church?
+	id = aut.23
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.23" }
+	title = aut.23.t
+	desc = aut.23.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+	    has_country_leader = {
+				name = "Wilhelm Miklas"
+				ruling_only = yes
+		}
+	}
+	
+	option = {
+		name = aut.23.a 
+		add_political_power = 10
+		hidden_effect = {
+            country_event = {id = aut.24 days = 1}	
+        }
+	}
+	
+	option = {
+		name = aut.23.b 
+		hidden_effect = {
+            country_event = {id = aut.25 days = 2}	
+        }			
+	}
+}
+
+country_event = { #Meeting the Church
+	id = aut.24
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.24" }
+	title = aut.24.t
+	desc = aut.24.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+	    has_country_leader = {
+				name = "Wilhelm Miklas"
+				ruling_only = yes
+		}
+	}
+	
+	option = {
+		name = aut.24.a 
+		add_political_power = -10
+	}
+	
+	option = {
+		name = aut.24.b 
+		hidden_effect = {
+            country_event = {id = aut.25 days = 3}	
+        }			
+	}
+}
+
+country_event = { #Schussnigg meets the Church
+	id = aut.25
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.25" }
+	title = aut.25.t
+	desc = aut.25.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+	    has_country_leader = {
+				name = "Wilhelm Miklas"
+				ruling_only = yes
+		}
+	}
+	
+	option = {
+		name = aut.25.a 
+		add_political_power = -15
+		set_country_flag = AUT_schussnigg_appealed_to_church 
+		custom_effect_tooltip = AUT_strenghten_schussnigg_hand
+	}
+}
+
+country_event = { #Purge the beureaucracy?
+	id = aut.26
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.26" }
+	title = aut.26.t
+	desc = aut.26.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+	    has_country_leader = {
+				name = "Wilhelm Miklas"
+				ruling_only = yes
+		}
+	}
+	
+	option = {
+		name = aut.26.a 
+		add_timed_idea = {idea = AUT_purged_beureaucracy days = 60}
+	}
+	
+	option = {
+		name = aut.26.b 
+		hidden_effect = {
+            country_event = {id = aut.27 days = 2}		
+	    }
+    }
+}
+
+country_event = { #Schussnigg consolidates alliance
+	id = aut.27
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.27" }
+	title = aut.27.t
+	desc = aut.27.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+	    has_country_leader = {
+				name = "Wilhelm Miklas"
+				ruling_only = yes
+		}
+	}
+	
+	option = {
+		name = aut.27.a 
+		add_political_power = -15
+		set_country_flag = AUT_schussnigg_consolidated_alliances
+		custom_effect_tooltip = AUT_strenghten_schussnigg_hand
+	}
+}
+
+country_event = { #Schussnigg appeals to the people
+	id = aut.28
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.28" }
+	title = aut.28.t
+	desc = aut.28.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+	    has_country_leader = {
+				name = "Wilhelm Miklas"
+				ruling_only = yes
+		}
+	}
+	
+	option = {
+		name = aut.28.a 
+		add_stability = -0.02
+		add_political_power = -10
+	}
+	
+	option = {
+		name = aut.28.b 
+		set_country_flag = AUT_schussnigg_appealed_to_people
+		custom_effect_tooltip = AUT_strenghten_schussnigg_hand
+    }
+}
+
+country_event = { #Meeting the generals
+	id = aut.29
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.29" }
+	title = aut.29.t
+	desc = aut.29.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+	    has_country_leader = {
+				name = "Wilhelm Miklas"
+				ruling_only = yes
+		}
+	}
+	
+	option = {
+		name = aut.29.a 
+		add_command_power = -20
+		add_political_power = -5
+	}
+	
+	option = {
+		name = aut.28.b 
+		hidden_effect = {
+            country_event = {id = aut.30 days = 2}		
+	    }
+    }
+}
+
+country_event = { #Schussnigg appeals to generals
+	id = aut.30
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.30" }
+	title = aut.30.t
+	desc = aut.30.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+	    has_country_leader = {
+				name = "Wilhelm Miklas"
+				ruling_only = yes
+		}
+	}
+	
+	option = {
+		name = aut.30.a 
+		add_political_power = -15
+		set_country_flag = AUT_schussnigg_appealed_to_generals
+		custom_effect_tooltip = AUT_strenghten_schussnigg_hand
+	}
+}
+
+country_event = { #Dumbass only used the police
+	id = aut.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.31" }
+	title = aut.31.t
+	desc = aut.31.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+	    has_country_leader = {
+				name = "Wilhelm Miklas"
+				ruling_only = yes
+		}
+	}
+	
+	trigger = {
+	    AND = {
+		    has_country_flag = AUT_police_secured_lower_austria
+			has_country_flag = AUT_police_secured_upper_austria
+			has_country_flag = AUT_police_secured_tyrol
+			has_country_flag = AUT_police_secured_carinthia
+		}
+	}
+	
+	option = {
+		name = aut.31.a 
+		add_political_power = -30
+		set_country_flag = AUT_only_police_used
+		custom_effect_tooltip = AUT_strenghten_schussnigg_hand
+	}
+}
+
+country_event = { #Stahremberg wins
+	id = aut.32
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.32" }
+	title = aut.32.t
+	desc = aut.32.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = aut.32.a 
+		add_political_power = 100
+		add_stability = 0.05
+		set_country_flag = AUT_stahremberg_won
+		remove_ideas = AUT_power_struggle_idea
+		clr_country_flag = AUT_power_struggle_flag
+		clr_country_flag = AUT_schussnigg_appealed_to_church
+		clr_country_flag = AUT_schussnigg_appealed_to_people
+		clr_country_flag = AUT_schussnigg_appealed_to_generals
+		clr_country_flag = AUT_schussnigg_consolidated_alliances
+		clr_country_flag = AUT_only_police_used
+		retire_country_leader = yes
+			retire_ideology_leader = autocratic
+			retire_ideology_leader = authoritarian_democrat
+			retire_ideology_leader = conservative
+			create_country_leader = {
+	            name = "Ernst Rudiger Stahremberg"
+	            desc = "AUT_Ernst_Rudiger_Stahremberg_desc"
+	            picture = "AUT_Ernst_Rudiger_Stahremberg.tga"
+	            expire = "2020.1.1"
+	            ideology = ultranationalist_subideology
+	            traits = {
+	        }
+			}
+	        create_country_leader = {
+	            name = "Ernst Rudiger Stahremberg"
+	            desc = "AUT_Ernst_Rudiger_Stahremberg_desc"
+	            picture = "AUT_Ernst_Rudiger_Stahremberg.tga"
+	            expire = "2020.1.1"
+	            ideology = autocratic_subideology
+	            traits = {
+	        }
+			}
+	        create_country_leader = {
+	            name = "Ernst Rudiger Stahremberg"
+	            desc = "AUT_Ernst_Rudiger_Stahremberg_desc"
+	            picture = "AUT_Ernst_Rudiger_Stahremberg.tga"
+	            expire = "2020.1.1"
+	            ideology = authoritarian_democrat_subideology
+	            traits = {
+	        }
+			}
+	        create_country_leader = {
+	        name = "Ernst Rudiger Stahremberg"
+	        desc = "AUT_Ernst_Rudiger_Stahremberg_desc"
+	        picture = "AUT_Ernst_Rudiger_Stahremberg.tga"
+	        expire = "2020.1.1"
+	        ideology = conservative_subideology
+	        traits = {
+	        }
+			}
+	}
+}
+
+country_event = { #Schussnigg wins
+	id = aut.33
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.33" }
+	title = aut.33.t
+	desc = aut.33.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = aut.33.a 
+		add_political_power = 100
+		add_stability = 0.05
+		set_country_flag = AUT_schussnigg_won
+		remove_ideas = AUT_power_struggle_idea
+		clr_country_flag = AUT_power_struggle_flag
+		clr_country_flag = AUT_schussnigg_appealed_to_church
+		clr_country_flag = AUT_schussnigg_appealed_to_people
+		clr_country_flag = AUT_schussnigg_appealed_to_generals
+		clr_country_flag = AUT_schussnigg_consolidated_alliances
+		clr_country_flag = AUT_only_police_used
+		retire_country_leader = yes
+			retire_ideology_leader = autocratic
+			retire_ideology_leader = authoritarian_democrat
+			retire_ideology_leader = conservative
+			create_country_leader = {
+	            name = "Kurt Schussnigg"
+	            desc = "AUT_Kurt_Schussnigg_desc"
+	            picture = "AUT_Kurt_Schussnigg.tga"
+	            expire = "2020.1.1"
+	            ideology = ultranationalist_subideology
+	            traits = {
+	        }
+			}
+	        create_country_leader = {
+	            name = "Kurt Schussnigg"
+	            desc = "AUT_Kurt_Schussnigg_desc"
+	            picture = "AUT_Kurt_Schussnigg.tga"
+	            expire = "2020.1.1"
+	            ideology = autocratic_subideology
+	            traits = {
+	        }
+			}
+	        create_country_leader = {
+	            name = "Kurt Schussnigg"
+	            desc = "AUT_Kurt_Schussnigg_desc"
+	            picture = "AUT_Kurt_Schussnigg.tga"
+	            expire = "2020.1.1"
+	            ideology = authoritarian_democrat_subideology
+	            traits = {
+	        }
+			}
+	        create_country_leader = {
+	        name = "Kurt Schussnigg"
+	        desc = "AUT_Kurt_Schussnigg_desc"
+	        picture = "AUT_Kurt_Schussnigg.tga"
+	        expire = "2020.1.1"
+	        ideology = conservative_subideology
+	        traits = {
+	        }
+			}
 	}
 }

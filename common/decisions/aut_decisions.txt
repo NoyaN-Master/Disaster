@@ -88,7 +88,8 @@ AUT_state_of_emergency_decisions = {
 		days_remove = 7
         remove_effect = {
             set_country_flag = AUT_lower_austria_secured	
-            clr_country_flag = AUT_police_securing_lower_austria		
+            clr_country_flag = AUT_police_securing_lower_austria
+            set_country_flag = AUT_police_secured_lower_austria	
         }
     }
 	
@@ -154,7 +155,8 @@ AUT_state_of_emergency_decisions = {
 		days_remove = 7
             remove_effect = {
                 set_country_flag = AUT_lower_austria_secured	
-                clr_country_flag = AUT_police_securing_upper_austria	
+                clr_country_flag = AUT_police_securing_upper_austria
+                set_country_flag = AUT_police_secured_upper_austria					
         }
     }
 	
@@ -215,6 +217,7 @@ AUT_state_of_emergency_decisions = {
 				has_country_flag = AUT_heimwehr_securing_lower_austria
 				has_country_flag = AUT_heimwehr_securing_carinthia
 				has_country_flag = AUT_police_securing_carinthia
+				has_country_flag = AUT_police_securing_upper_austria
 			}
         }
 		complete_effect = {
@@ -225,6 +228,7 @@ AUT_state_of_emergency_decisions = {
             remove_effect = {
                 set_country_flag = AUT_tyrol_secured	
                 clr_country_flag = AUT_police_securing_tyrol
+				set_country_flag = AUT_police_secured_tyrol	
         }
     }
 	
@@ -283,16 +287,19 @@ AUT_state_of_emergency_decisions = {
 				has_country_flag = AUT_heimwehr_securing_lower_austria
 				has_country_flag = AUT_heimwehr_securing_carinthia
 				has_country_flag = AUT_police_securing_carinthia
+				has_country_flag = AUT_police_securing_tyrol
+				has_country_flag = AUT_police_securing_upper_austria
 			}
         }
 		complete_effect = {
             custom_effect_tooltip = AUT_police_securing_carinthia_tooltip
 			set_country_flag = AUT_police_securing_carinthia
         }
-		days_remove = 21
+		days_remove = 7
         remove_effect = {
                 set_country_flag = AUT_carinthia_secured	
                 clr_country_flag = AUT_police_securing_carinthia
+				set_country_flag = AUT_police_secured_carinthia
         }
     }
 	
@@ -337,6 +344,56 @@ AUT_state_of_emergency_decisions = {
 			clr_country_flag = AUT_lower_austria_secured
 			clr_country_flag = AUT_vienna_secured
 			clr_country_flag = AUT_stable_again
+        }
+    }
+}
+
+AUT_power_struggle_decisions = {	
+	AUT_schussnigg_fails = {                          
+        allowed = { tag = AUT }                 
+        available = {                           
+            NOT = {
+                AUT_schussnigg_powerful
+            }				
+        }
+        activation = {                       
+            has_country_flag = AUT_power_stuggle_flag							
+        }
+        is_good = yes                         
+        selectable_mission = no               
+        days_mission_timeout = 70             
+        timeout_effect = {                    
+            country_event = aut.32     
+        }			
+        complete_effect = {                 
+            country_event = aut.33            
+        }
+    }
+	
+	    AUT_secure_vienna = {                          
+        allowed = { tag = AUT }                 
+        available = {                           
+            controls_state = 808
+			NOT = { army_manpower_in_state = { state = 808 amount < 15000 } } 
+            NOT = {
+                has_country_flag = AUT_vienna_secured
+            }				
+        }
+        activation = {                       
+            has_country_flag = AUT_state_of_emergency_flag  
+            NOT = {
+                has_country_flag = AUT_vienna_secured
+            }							
+        }
+        is_good = no                         
+        selectable_mission = no               
+        days_mission_timeout = 7             
+        timeout_effect = {                    
+            country_event = aut.16  
+            add_stability = -0.10           
+        }			
+        complete_effect = {                 
+            country_event = aut.17            
         }
     }
 }

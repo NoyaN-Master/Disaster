@@ -1,0 +1,44 @@
+AUT_schussnigg_powerful = {
+    OR = {
+	    AND = {
+		    has_country_flag = AUT_schussnigg_appealed_to_church   ###church ones
+			has_country_flag = AUT_schussnigg_appealed_to_generals
+		}
+		AND = {
+		    has_country_flag = AUT_schussnigg_appealed_to_church
+			has_country_flag = AUT_schussnigg_appealed_to_people
+		}
+		AND = {
+		    has_country_flag = AUT_schussnigg_appealed_to_church
+			has_country_flag = AUT_schussnigg_consolidated_alliances
+		}
+		AND = {
+		    has_country_flag = AUT_schussnigg_appealed_to_church
+			has_country_flag = AUT_only_police_used
+		}
+		AND = {
+		    has_country_flag = AUT_schussnigg_appealed_to_generals  ###army ones
+			has_country_flag = AUT_schussnigg_appealed_to_people
+		}
+		AND = {
+		    has_country_flag = AUT_schussnigg_appealed_to_generals
+			has_country_flag = AUT_schussnigg_consolidated_alliances
+		}	
+		AND = {
+		    has_country_flag = AUT_schussnigg_appealed_to_generals
+			has_country_flag = AUT_only_police_used
+		}
+		AND = {                                                    
+		    has_country_flag = AUT_schussnigg_appealed_to_people  ###people ones
+			has_country_flag = AUT_schussnigg_consolidated_alliances
+		}
+		AND = {                                                    
+		    has_country_flag = AUT_schussnigg_appealed_to_people  
+			has_country_flag = AUT_only_police_used
+		}
+		AND = {                                                    
+		    has_country_flag = AUT_schussnigg_consolidated_alliances  ###alliances ones
+			has_country_flag = AUT_only_police_used
+		}
+	}
+}

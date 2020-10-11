@@ -37,7 +37,6 @@ focus_tree = {
 				limit = { has_country_flag = AUT_dollfuss_private_ceremony }
 				country_event = aut.9
 			}
-			country_event = wrf.01
         }
 	}
 	
@@ -909,7 +908,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = AUT_state_of_emergency
+		id = AUT_react_to_the_crisis
 		#icon = 
 		prerequisite = { focus = AUT_die_mordekrugel }
 		x = 25
@@ -924,6 +923,7 @@ focus_tree = {
 		}	
 		select_effect = {
 			country_event = { id = aut.15 days = 1 }
+			country_event = { id = aut.22 days = 10 }
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
