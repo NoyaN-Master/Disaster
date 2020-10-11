@@ -31,8 +31,8 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Rüdiger von der Goltz"
-	#desc = "BLT_ Goltz_desc"
-	picture = "BLT_ Goltz.tga"
+	#desc = "BLT_Goltz_desc"
+	picture = "BLT_Goltz.tga"
 	expire = "2020.1.1"
 	ideology = ultranationalist_subideology
 	traits = {
