@@ -353,7 +353,7 @@ AUT_power_struggle_decisions = {
         allowed = { tag = AUT }                 
         available = {                           
             NOT = {
-               has_country_flag = AUT_schussnigg_powerful
+                AUT_schussnigg_powerful
             }				
         }
         activation = {                       
