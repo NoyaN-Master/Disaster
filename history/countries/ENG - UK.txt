@@ -39,3 +39,13 @@ create_country_leader = {
 		#
 	}
 }
+create_country_leader = {
+	name = "William Joyce"
+	desc = "ENG_William_Joyce_desc"
+	picture = "ENG_William_Joyce.tga"
+	expire = "2020.1.1"
+	ideology = revolutionary_nationalist_subideology
+	traits = {
+		#
+	}
+}
