@@ -463,6 +463,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		country_event = { id = wrf.16 days = 1 }
+		custom_effect_tooltip = WRF_manisa_
+		}
 	}
 
 	#Focus for For All Brothers

@@ -82,6 +82,51 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Nihal Adsız"
+	#desc = "SES_Zeljko_Raznatovic_desc"
+	#picture = "Portrait_WRF_Mustafa_Kemal.tga"
+	expire = "2020.1.1"
+	ideology = national_bolshevik_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Celal Bayar/Adnan Menderes"
+	#desc = "SES_Zeljko_Raznatovic_desc"
+	#picture = "Portrait_WRF_Mustafa_Kemal.tga"
+	expire = "2020.1.1"
+	ideology = conservative_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Celal Bayar/Adnan Menderes"
+	#desc = "SES_Zeljko_Raznatovic_desc"
+	#picture = "Portrait_WRF_Mustafa_Kemal.tga"
+	expire = "2020.1.1"
+	ideology = liberal_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Türki Konfederasyonu"
+	#desc = "SES_Zeljko_Raznatovic_desc"
+	#picture = "Portrait_WRF_Mustafa_Kemal.tga"
+	expire = "2020.1.1"
+	ideology = esoteric_traditionalist_subideology
+	traits = {
+		#
+	}
+}
+
+
+create_country_leader = {
 	name = "Mustafa Kemal Atatürk"
 	#desc = "SES_Zeljko_Raznatovic_desc"
 	picture = "Portrait_WRF_Mustafa_Kemal_Ataturk.tga"
