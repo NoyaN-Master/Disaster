@@ -1,4 +1,4 @@
-capital = 362
+capital = 604
 oob = ""
 
 # Starting tech
@@ -8,33 +8,33 @@ set_technology = {
 set_convoys = 0
 
 set_politics = {
-	ruling_party = conservative
+	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	conservative = 46
+	conservative = 0
 	liberal = 0
 	social_democrat = 0
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
 	national_bolshevik = 0
-	authoritarian_democrat = 14
-	autocratic = 6
-	ultranationalist = 17
-	revolutionary_nationalist = 17
+	authoritarian_democrat = 100
+	autocratic = 0
+	ultranationalist = 0
+	revolutionary_nationalist = 0
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
 
 create_country_leader = {
-	name = "Eugene Talmadge"
-	#desc = "CSA_Eugene_Talmadge_desc"
-	picture = "CSA_Eugene_Talmadge.tga"
+	name = "Ma Bufang"
+	#desc = "XSM_Ma_Bufang_desc"
+	picture = "XSM_Ma_Bufang.tga"
 	expire = "2020.1.1"
-	ideology = conservative_subideology
+	ideology = authoritarian_democrat_subideology
 	traits = {
 		#
 	}

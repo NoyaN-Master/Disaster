@@ -1,0 +1,12 @@
+focus_tree = {
+	id = chinese_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = CHI
+		}
+	}
+	default = no
