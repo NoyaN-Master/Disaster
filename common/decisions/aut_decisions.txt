@@ -154,7 +154,7 @@ AUT_state_of_emergency_decisions = {
         }
 		days_remove = 7
             remove_effect = {
-                set_country_flag = AUT_lower_austria_secured	
+                set_country_flag = AUT_upper_austria_secured	
                 clr_country_flag = AUT_police_securing_upper_austria
                 set_country_flag = AUT_police_secured_upper_austria					
         }
@@ -254,6 +254,7 @@ AUT_state_of_emergency_decisions = {
 				has_country_flag = AUT_police_securing_tyrol
 				has_country_flag = AUT_heimwehr_securing_tyrol
 				has_country_flag = AUT_police_securing_carinthia
+				has_country_flag = AUT_heimwehr_securing_upper_austria
 			}
         }
 		complete_effect = {
@@ -348,25 +349,3 @@ AUT_state_of_emergency_decisions = {
     }
 }
 
-AUT_power_struggle_decisions = {	
-	AUT_schussnigg_fails = {                          
-        allowed = { tag = AUT }                 
-        available = {                           
-            NOT = {
-                AUT_schussnigg_powerful
-            }				
-        }
-        activation = {                       
-            has_country_flag = AUT_power_stuggle_flag							
-        }
-        is_good = yes                         
-        selectable_mission = no               
-        days_mission_timeout = 70             
-        timeout_effect = {                    
-            country_event = aut.32     
-        }			
-        complete_effect = {                 
-            country_event = aut.33            
-        }
-    }
-}

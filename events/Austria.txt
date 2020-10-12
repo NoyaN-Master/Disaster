@@ -718,9 +718,6 @@ country_event = { #Schussnigg's speech
 		set_country_flag = AUT_power_struggle_flag
 		hidden_effect = {
 			country_event = {id = aut.23 days = 2}
-			country_event = {id = aut.26 days = 9}
-			country_event = {id = aut.28 days = 16}
-			country_event = {id = aut.29 days = 25}
         }
 		add_popularity = {
 			ideology = autocratic
@@ -743,13 +740,6 @@ country_event = { #Meet the Church?
 
 	is_triggered_only = yes
 	
-	trigger = {
-	    has_country_leader = {
-				name = "Wilhelm Miklas"
-				ruling_only = yes
-		}
-	}
-	
 	option = {
 		name = aut.23.a 
 		add_political_power = 10
@@ -762,6 +752,7 @@ country_event = { #Meet the Church?
 		name = aut.23.b 
 		hidden_effect = {
             country_event = {id = aut.25 days = 2}	
+			country_event = {id = aut.26 days = 10} 	
         }			
 	}
 }
@@ -776,23 +767,18 @@ country_event = { #Meeting the Church
 
 	is_triggered_only = yes
 	
-	trigger = {
-	    has_country_leader = {
-				name = "Wilhelm Miklas"
-				ruling_only = yes
-		}
-	}
-	
 	option = {
 		name = aut.24.a 
 		add_political_power = -10
+		hidden_effect = { country_event = {id = aut.26 days = 9} }
 	}
 	
 	option = {
 		name = aut.24.b 
 		hidden_effect = {
             country_event = {id = aut.25 days = 3}	
-        }			
+        }
+        hidden_effect = { country_event = {id = aut.26 days = 9} }		
 	}
 }
 
@@ -805,13 +791,6 @@ country_event = { #Schussnigg meets the Church
 	fire_only_once = yes
 
 	is_triggered_only = yes
-	
-	trigger = {
-	    has_country_leader = {
-				name = "Wilhelm Miklas"
-				ruling_only = yes
-		}
-	}
 	
 	option = {
 		name = aut.25.a 
@@ -831,22 +810,17 @@ country_event = { #Purge the beureaucracy?
 
 	is_triggered_only = yes
 	
-	trigger = {
-	    has_country_leader = {
-				name = "Wilhelm Miklas"
-				ruling_only = yes
-		}
-	}
-	
 	option = {
 		name = aut.26.a 
 		add_timed_idea = {idea = AUT_purged_beureaucracy days = 60}
+		hidden_effect = { country_event = {id = aut.28 days = 16} }
 	}
 	
 	option = {
 		name = aut.26.b 
 		hidden_effect = {
-            country_event = {id = aut.27 days = 2}		
+            country_event = {id = aut.27 days = 2}
+            country_event = {id = aut.28 days = 16}			
 	    }
     }
 }
@@ -860,13 +834,6 @@ country_event = { #Schussnigg consolidates alliance
 	fire_only_once = yes
 
 	is_triggered_only = yes
-	
-	trigger = {
-	    has_country_leader = {
-				name = "Wilhelm Miklas"
-				ruling_only = yes
-		}
-	}
 	
 	option = {
 		name = aut.27.a 
@@ -886,23 +853,22 @@ country_event = { #Schussnigg appeals to the people
 
 	is_triggered_only = yes
 	
-	trigger = {
-	    has_country_leader = {
-				name = "Wilhelm Miklas"
-				ruling_only = yes
-		}
-	}
-	
 	option = {
 		name = aut.28.a 
 		add_stability = -0.02
 		add_political_power = -10
+		hidden_effect = { 
+			country_event = {id = aut.29 days = 25}
+		}
 	}
 	
 	option = {
 		name = aut.28.b 
 		set_country_flag = AUT_schussnigg_appealed_to_people
 		custom_effect_tooltip = AUT_strenghten_schussnigg_hand
+		hidden_effect = { 
+			country_event = {id = aut.29 days = 25}
+		}
     }
 }
 
@@ -915,13 +881,6 @@ country_event = { #Meeting the generals
 	fire_only_once = yes
 
 	is_triggered_only = yes
-	
-	trigger = {
-	    has_country_leader = {
-				name = "Wilhelm Miklas"
-				ruling_only = yes
-		}
-	}
 	
 	option = {
 		name = aut.29.a 
@@ -947,13 +906,6 @@ country_event = { #Schussnigg appeals to generals
 
 	is_triggered_only = yes
 	
-	trigger = {
-	    has_country_leader = {
-				name = "Wilhelm Miklas"
-				ruling_only = yes
-		}
-	}
-	
 	option = {
 		name = aut.30.a 
 		add_political_power = -15
@@ -971,13 +923,6 @@ country_event = { #Dumbass only used the police
 	fire_only_once = yes
 
 	is_triggered_only = yes
-	
-	trigger = {
-	    has_country_leader = {
-				name = "Wilhelm Miklas"
-				ruling_only = yes
-		}
-	}
 	
 	trigger = {
 	    AND = {
@@ -1224,7 +1169,6 @@ country_event = { #Conservatives Concerned
 	option = { #listen to them, put the young guard in its place
 		name = aut.36.a 
 		add_political_power = 20
-		a
 		add_popularity = {
 			ideology = authoritarian_democrat
 			popularity = -0.10
@@ -1286,7 +1230,6 @@ country_event = { #Young Guard Annoyed
 	option = { #fine, have your reforms
 		name = aut.38.a 
 		add_political_power = 10
-		a
 		add_popularity = {
 			ideology = authoritarian_democrat
 			popularity = 0.04
@@ -1323,7 +1266,6 @@ country_event = { #Young Guard Grows in Influence
 	option = { #encourage them
 		name = aut.39.a 
 		add_political_power = 10
-		a
 		add_popularity = {
 			ideology = authoritarian_democrat
 			popularity = 0.04
@@ -1429,7 +1371,7 @@ country_event = { #Figl flees
 	is_triggered_only = yes
 	
 	option = { 
-		name = aut.42.a 
+		name = aut.42.b
 		add_stability = -0.05
 		hidden_effect = {
 		    country_event = { id = aut.43 days = 3 }
@@ -1448,7 +1390,7 @@ country_event = { #Deal with the hardliners
 	is_triggered_only = yes
 	
 	option = { 
-		name = aut.42.a 
+		name = aut.43.a 
 		add_political_power = -30
 		custom_effect_tooltip = AUT_flip_to_ultranat
 		hidden_effect = {
@@ -1475,7 +1417,7 @@ country_event = { #Conservatives get stronger, demand a purge of young guard
 	is_triggered_only = yes
 	
 	option = { #fine
-		name = aut.42.a 
+		name = aut.44.a 
 		add_stability = -0.02
 		add_popularity = {
 			ideology = ultranationalist
@@ -1487,7 +1429,7 @@ country_event = { #Conservatives get stronger, demand a purge of young guard
 	}
 	
 	option = { #nah
-		name = aut.42.a 
+		name = aut.44.b 
 		add_stability = 0.02
 		add_popularity = {
 			ideology = ultranationalist
@@ -1496,5 +1438,35 @@ country_event = { #Conservatives get stronger, demand a purge of young guard
 		hidden_effect = {
 		    country_event = { id = aut.39 days = 5 }
 		}
+	}
+}
+
+country_event = { #Hidden event to decide winner of power struggle
+	id = aut.45
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.45" }
+	title = aut.45.t
+	desc = aut.45.d
+	hidden = yes
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #kurt
+		name = aut.45.a
+		trigger = {
+			AUT_schussnigg_powerful = yes
+		}
+		country_event = { id = aut.33 days = 2 }
+	}
+	
+	option = { #ernst
+		name = aut.45.b
+		trigger = {
+			NOT = {
+			    AUT_schussnigg_powerful = yes
+			}
+		}
+		country_event = { id = aut.32 days = 2 }
 	}
 }

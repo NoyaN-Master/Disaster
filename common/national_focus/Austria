@@ -901,6 +901,7 @@ focus_tree = {
 		select_effect = {
 			country_event = { id = aut.15 days = 1 }
 			country_event = { id = aut.22 days = 10 }
+			country_event = { id = aut.45 days = 78 }
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1026,6 +1027,10 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 		    add_ideas = AUT_suppressed_heimwehr
+			add_popularity = {
+			    ideology = ultranationalist
+			    popularity = -0.10
+		    }
 		}
 	}
 	
@@ -1100,11 +1105,11 @@ focus_tree = {
 			    ruling_party = autocratic
 			    elections_allowed = no
 		        }
-				add_popularity = {
+			}
+			add_popularity = {
 			    ideology = autocratic
 			    popularity = 0.10
-		        }
-			}
+		    }
 		    swap_ideas = { 
                 remove_idea = AUT_empowered_beureaucracy
                 add_idea = AUT_technocratic_government_1

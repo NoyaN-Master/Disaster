@@ -13,17 +13,3 @@ AUT_state_of_emergency_decisions = {
 	}
 }
 
-AUT_power_struggle_decisions = {
-	#icon = 
-	#picture = 
-	priority = 10
-	allowed = {
-		OR = {
-			tag = AUT
-		}
-	}
-	visible = {
-		has_country_flag = AUT_power_struggle_flag
-		has_government = ultranationalist
-	}
-}
