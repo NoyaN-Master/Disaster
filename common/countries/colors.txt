@@ -408,8 +408,8 @@ CSA = {
 }
 
 XSM = {
-	color = rgb { 9  171  190 } 
-	color_ui = rgb { 9  171  190 } 
+	color = rgb { 9 171 190 } 
+	color_ui = rgb { 9 171 190 } 
 }
 
 TIB = {
@@ -420,4 +420,14 @@ TIB = {
 SIK = {
 	color = rgb { 121 146 170 }  
 	color_ui = rgb { 121 146 170 }
+}
+
+MON = {
+	color = rgb { 63 83 89 }  
+	color_ui = rgb { 63 83 89 }
+}
+
+MAN = {
+	color = rgb { 255 221 199 }  
+	color_ui = rgb { 255 221 199 }
 }
