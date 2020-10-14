@@ -70,6 +70,14 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
+create_faction = TSF
+add_to_faction = WRF
+add_to_faction = THR
+add_to_faction = ADN
+
+puppet = THR
+puppet = ADN
+		
 create_country_leader = {
 	name = "Mustafa Kemal Pasha"
 	#desc = "SES_Zeljko_Raznatovic_desc"
