@@ -2,8 +2,8 @@ AUT_state_of_emergency_decisions = {
     AUT_secure_vienna = {                          
         allowed = { tag = AUT }                 
         available = {                           
-            controls_state = 808
-			NOT = { army_manpower_in_state = { state = 808 amount < 15000 } } 
+            controls_state = 813
+			NOT = { army_manpower_in_state = { state = 813 amount < 15000 } } 
             NOT = {
                 has_country_flag = AUT_vienna_secured
             }				
