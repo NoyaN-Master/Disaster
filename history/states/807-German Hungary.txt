@@ -1,0 +1,30 @@
+state={
+	id=807
+	name="STATE_807"
+	resources={
+		oil=1.000
+	}
+	
+	history={
+		owner = AUT
+		victory_points = {
+			11610 5 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 3
+
+		}
+		add_core_of = AUT
+
+	}
+	
+	provinces={
+		686 11627 
+	}
+	manpower= 480000
+	buildings_max_level_factor=1.000
+	state_category= city
+}

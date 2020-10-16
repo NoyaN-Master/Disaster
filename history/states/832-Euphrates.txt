@@ -1,0 +1,32 @@
+
+state={
+	id=832
+	name="STATE_832"
+	manpower = 572366
+	
+	state_category = rural
+	
+	resources={
+		oil=4
+	}
+
+	history={
+		owner = IQR
+		victory_points = {
+			2089 1 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1 
+			2089 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = IQR
+	}
+
+	provinces={
+		2089 8001 10876 12413 12839 
+	}
+}

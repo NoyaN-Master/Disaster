@@ -1,0 +1,33 @@
+
+state={
+	id=825
+	name="STATE_825"
+	manpower = 3072372
+	resources={
+		steel=15
+	}
+
+
+	state_category = metropolis
+	
+	history={
+		owner = NGU
+		victory_points = {
+			6469 10 
+		}
+		buildings = {
+			infrastructure = 8
+			arms_factory = 3
+			industrial_complex = 2
+			air_base = 3
+
+		}
+		add_core_of = NGU
+
+	}
+
+	provinces={
+		529 3512 6469 6570 9482
+	}
+	
+}

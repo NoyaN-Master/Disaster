@@ -1,0 +1,31 @@
+
+state={
+	id=830
+	name="STATE_830"
+	manpower = 12148920
+	state_category = town
+	
+	resources={
+		#tungsten=19 # was: 26
+	}
+
+	history={
+		owner = 
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			air_base = 2
+			1349 = {
+				naval_base = 6
+			}
+		}
+		victory_points = {
+			1349 10 
+		}
+
+	}
+
+	provinces={
+		1349 7013 7119 10270 12269 
+	}
+}

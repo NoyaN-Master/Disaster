@@ -1,0 +1,24 @@
+state={
+	id=811
+	name="STATE_811"
+	history={
+		owner = AUT
+		victory_points = {
+			11610 5 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = FIU
+
+	}
+	
+	provinces={
+		6631 9598 
+	}
+	manpower= 180000
+	buildings_max_level_factor=1.000
+	state_category= rural
+}

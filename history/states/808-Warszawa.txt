@@ -1,0 +1,26 @@
+state={
+	id=808
+	name="STATE_808"
+	history={
+		owner = PLN
+		victory_points = {
+			3544 25 
+		}
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 6
+			arms_factory = 4
+			air_base = 6
+
+		}
+		add_core_of = PLN
+
+	}
+	
+	provinces={
+		3544
+	}
+	manpower=1400000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

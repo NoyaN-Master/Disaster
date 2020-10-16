@@ -2,7 +2,7 @@
 state={
 	id=44
 	name="STATE_44"
-	manpower = 1003000
+	manpower = 740800
 	resources={
 		aluminium=2 # was: 3
 		chromium=2 # was: 3
@@ -28,16 +28,10 @@ state={
 			}
 		}
 		add_core_of = ABL
-		add_claim_by = GRE
 
-		1939.4.12 = {
-			owner = ABL
-			controller = ABL
-			remove_claim_by = ABL
-		}
 	}
 
 	provinces={
-		914 3448 3884 3896 6900 9780 9875 9914 11762 11767 
+		3448 3884 3896 6900 9780 9875 9914 11762 11767 
 	}
 }

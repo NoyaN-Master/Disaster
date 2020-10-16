@@ -8,10 +8,10 @@ state={
 	history={
 		owner = ANT
 		victory_points = {
-			6938 1 
+			6938 10
 		}
 		victory_points = {
-			6995 1 
+			6995 3 
 		}
 		buildings = {
 			infrastructure = 3
@@ -19,7 +19,7 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = TUR
+		add_core_of = ANT
 	}
 
 	provinces={

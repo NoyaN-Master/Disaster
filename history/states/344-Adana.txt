@@ -2,35 +2,36 @@
 state={
 	id=344
 	name="STATE_344"
+	manpower = 1081781
+	
+	state_category = town
 
 	history={
 		owner = ADN
 		victory_points = {
-			9893 1 
+			9893 15
 		}
 		victory_points = {
-			11746 1 
+			7620 10
 		}
 		victory_points = {
-			886 1 
+			6813 3
+		}
+		victory_points = {
+			11746 5 
 		}
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 2
+			industrial_complex = 1
 			11746 = {
 				naval_base = 3
-
 			}
-
 		}
 		add_core_of = ADN
-
 	}
 
 	provinces={
-		806 886 3921 6956 11746 11810 
+		806 3889 6813 7620 9893 9912 11746 
 	}
-	manpower=727198
-	buildings_max_level_factor=1.000
-	state_category=town
+
 }

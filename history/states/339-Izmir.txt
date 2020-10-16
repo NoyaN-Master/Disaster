@@ -2,33 +2,28 @@
 state={
 	id=339
 	name="STATE_339"
+	manpower = 1009361
 	resources={
-		chromium=50.000
+		chromium=50 # was: 86
 	}
+	
+	state_category = town
 
 	history={
-		owner = GRE
+		owner = WRF
+		
 		victory_points = {
-			4112 5 
+			928 5
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 			industrial_complex = 1
-			air_base = 2
-			4112 = {
-				naval_base = 5
-
-			}
-
+			air_base = 1
 		}
-		add_core_of = TUR
-
+		add_core_of = WRF
 	}
 
 	provinces={
-		4112 7130 
+		928 3927 6992 7130 9921 9929 10038 11848 11898 
 	}
-	manpower=1111755
-	buildings_max_level_factor=1.000
-	state_category=town
 }

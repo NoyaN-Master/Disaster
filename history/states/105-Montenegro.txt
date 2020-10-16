@@ -1,3 +1,4 @@
+
 state={
 	id=105
 	name="STATE_105"
@@ -8,10 +9,9 @@ state={
 
 	history={
 		victory_points = {
-			9809 3
+			9809 3 
 		}
 		owner = SOR
-		add_core_of = SOR
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1

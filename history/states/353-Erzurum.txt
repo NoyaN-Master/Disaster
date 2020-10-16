@@ -5,19 +5,22 @@ state={
 
 	history={
 		owner = ARM
+                add_core_of = ARM
 		victory_points = {
-			11853 1 
+			11853 3
+		}
+		victory_points = {
+			9860 1
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 
 		}
-		add_core_of = TUR
 
 	}
 
 	provinces={
-		876 7470 9858 10399 11880 13121 
+		876 9858 9860 9868 9954 10399 11797 11853 
 	}
 	manpower=523537
 	buildings_max_level_factor=1.000
