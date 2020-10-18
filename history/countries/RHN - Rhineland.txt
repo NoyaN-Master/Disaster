@@ -1,0 +1,41 @@
+capital = 587
+oob = ""
+
+# Starting tech
+set_technology = {
+}
+
+set_convoys = 0
+
+set_politics = {
+	ruling_party = autocratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	conservative = 10
+	liberal = 15
+	social_democrat = 0
+	libertarian_socialist = 4
+	authoritarian_socialist = 6
+	national_bolshevik = 0
+	authoritarian_democrat = 5
+	autocratic = 27
+	ultranationalist = 23
+	revolutionary_nationalist = 10
+	esoteric_traditionalist = 0
+	revolutionary_anarchist = 0
+}
+
+create_country_leader = {
+	name = "Jean-Marie Degoutte"
+	#desc = "PKR_Duarte_desc"
+	picture = "PKR_Duarte.tga"
+	expire = "2020.1.1"
+	ideology = autocratic_subideology
+	traits = {
+		#
+	}
+}
