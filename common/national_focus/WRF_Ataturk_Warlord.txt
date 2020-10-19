@@ -620,6 +620,18 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		custom_effect_tooltip = WRF_Greece
+		declare_war_on = {
+		target = GRE
+		type = annex_everything
+		}
+		news_event = {
+		id = wrf.25
+		days = 2
+		}
+		complete_national_focus = WRF_the_2nd_grecoturkish_war
+		}
 	}
 
 	#Focus for Integrate Fevzi
