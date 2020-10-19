@@ -721,4 +721,9 @@ spriteTypes = {
 		name = "GFX_ideology_enverism"
 		texturefile = "gfx/interface/ideologies/enverism.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_ideology_turkic_confederacy"
+		texturefile = "gfx/interface/ideologies/turkic_confederacy.tga"
+	}
 }	
