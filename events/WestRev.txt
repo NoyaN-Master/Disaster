@@ -394,8 +394,8 @@ country_event = { #Manisa Congress Economy
 		set_country_flag = WRF_economy_nazbolsh
 		country_event = { id = wrf.18 days = 1 }
 		add_popularity = {
-		ideology = national_bolshevik
-		popularity = 0.2
+		ideology = revolutionary_nationalist
+		popularity = 0.1
 		}
 		
 		}
@@ -442,7 +442,7 @@ country_event = { #Manisa Congress Army
 		set_country_flag = WRF_army_nazbolsh
 		country_event = { id = wrf.19 days = 1 }
 		add_popularity = {
-		ideology = national_bolshevik
+		ideology = revolutionary_nationalist
 		popularity = 0.1
 		}
 		
@@ -470,7 +470,7 @@ country_event = { #Manisa Congress Army
 		set_country_flag = WRF_army_tengri
 		country_event = { id = wrf.19 days = 1 }
 		add_popularity = {
-		ideology = esoteric_traditionalist
+		ideology = revolutionary_anarchist
 		popularity = 0.1
 		}
 		}
@@ -501,7 +501,7 @@ country_event = { #Manisa Congress Religion
 		set_country_flag = WRF_religion_nazbolsh
 		country_event = { id = wrf.20 days = 1 }
 		add_popularity = {
-		ideology = national_bolshevik
+		ideology = revolutionary_nationalist
 		popularity = 0.1
 		}
 		
@@ -529,7 +529,7 @@ country_event = { #Manisa Congress Religion
 		set_country_flag = WRF_religion_tengri
 		country_event = { id = wrf.20 days = 1 }
 		add_popularity = {
-		ideology = esoteric_traditionalist
+		ideology = revolutionary_anarchist
 		popularity = 0.2
 		}
 		}
@@ -561,7 +561,7 @@ country_event = { #Manisa Congress Administration
 		set_country_flag = WRF_admin_nazbolsh
 		country_event = { id = wrf.22 days = 1 }
 		add_popularity = {
-		ideology = national_bolshevik
+		ideology = revolutionary_nationalist
 		popularity = 0.1
 		}
 		
@@ -589,8 +589,8 @@ country_event = { #Manisa Congress Administration
 		set_country_flag = WRF_admin_tengri
 		country_event = { id = wrf.23 days = 1 }
 		add_popularity = {
-		ideology = esoteric_traditionalist
-		popularity = 0.2
+		ideology = revolutionary_anarchist
+		popularity = 0.1
 		}
 		}
 
@@ -658,9 +658,9 @@ country_event = { #Manisa Congress Reshuffle Tengri
 		add_political_power = 1
 		custom_effect_tooltip = WRF_Tengri_End
 		set_party_name = { 
-		ideology = esoteric_traditionalist 
-		long_name = WRF_esoteric_traditionalist_party_manisa_long 
-		name = WRF_esoteric_traditionalist_party_manisa 
+		ideology = revolutionary_anarchist 
+		long_name = WRF_revolutionary_anarchist_party_manisa_long 
+		name = WRF_revolutionary_anarchist_party_manisa 
 		}
 		}
 		}

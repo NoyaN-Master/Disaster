@@ -61,12 +61,12 @@ set_popularities = {
 	social_democrat = 0
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
-	national_bolshevik = 5
-	authoritarian_democrat = 85
+	national_bolshevik = 0
+	authoritarian_democrat = 100
 	autocratic = 0
-	ultranationalist = 5
+	ultranationalist = 0
 	revolutionary_nationalist = 0
-	esoteric_traditionalist = 5
+	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
 
@@ -92,9 +92,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Nihal Adsız"
 	#desc = "SES_Zeljko_Raznatovic_desc"
-	#picture = "Portrait_WRF_Mustafa_Kemal.tga"
+	picture = "Portrait_WRF_Atsiz_Nazi.tga"
 	expire = "2020.1.1"
-	ideology = national_bolshevik_subideology
+	ideology = revolutionary_nationalist_subideology
 	traits = {
 	bastion_evil
 	}
@@ -127,7 +127,7 @@ create_country_leader = {
 	#desc = "SES_Zeljko_Raznatovic_desc"
 	#picture = "Portrait_WRF_Mustafa_Kemal.tga"
 	expire = "2020.1.1"
-	ideology = esoteric_traditionalist_subideology
+	ideology = turkic_confederacy
 	traits = {
 		#
 	}
