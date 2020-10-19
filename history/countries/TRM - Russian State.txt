@@ -1,0 +1,41 @@
+capital = 571
+oob = ""
+
+# Starting tech
+set_technology = {
+}
+
+set_convoys = 0
+
+set_politics = {
+	ruling_party = autocratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	conservative = 0
+	liberal = 0
+	social_democrat = 0
+	libertarian_socialist = 0
+	authoritarian_socialist = 0
+	national_bolshevik = 0
+	authoritarian_democrat = 5
+	autocratic = 75
+	ultranationalist = 20
+	revolutionary_nationalist = 0
+	esoteric_traditionalist = 0
+	revolutionary_anarchist = 0
+}
+
+create_country_leader = {
+	name = "Aleksandr V. Kolchak"
+	#desc = "TRM_Kolchak_desc"
+	picture = "TRM_Kolchak.tga"
+	expire = "2020.1.1"
+	ideology = autocratic_subideology
+	traits = {
+		#
+	}
+}
