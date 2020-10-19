@@ -389,8 +389,6 @@ country_event = { #Jewish youth groups
 	desc = aut.12.d
 
 	fire_only_once = yes
-
-	is_triggered_only = yes
 	
 	trigger = {
 		has_completed_focus = AUT_unite_the_youth_movements
@@ -424,8 +422,6 @@ country_event = { #Church youth groups
 	desc = aut.13.d
 
 	fire_only_once = yes
-
-	is_triggered_only = yes
 	
 	trigger = {
 		has_completed_focus = AUT_unite_the_youth_movements
@@ -473,48 +469,6 @@ country_event = { #Manlet moment
 	desc = aut.14.d
 
 	fire_only_once = yes
-
-	is_triggered_only = yes
-	
-	trigger = {
-		has_country_leader = {
-				name = "Engelbert Dollfuss"
-				ruling_only = yes
-		}					
-	}
-	
-	mean_time_to_happen = {
-		months = 18
-	}
-	
-	option = {
-		name = aut.14.a 
-		add_stability = -0.04
-		add_popularity = {
-			ideology = ultranationalist
-			popularity = 0.03
-		}
-	}
-	
-	option = {
-	    name = aut.14.b
-		add_political_power = 20
-		add_popularity = {
-			ideology = ultranationalist
-			popularity = -0.04
-		}
-	}
-}
-
-country_event = { #Manlet moment
-	id = aut.14
-	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.14" }
-	title = aut.14.t
-	desc = aut.14.d
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
 	
 	trigger = {
 		has_country_leader = {
@@ -933,6 +887,13 @@ country_event = { #Dumbass only used the police
 		}
 	}
 	
+	mean_time_to_happen = {
+		days = 1
+		modifier = {
+			factor = 1.0
+		}
+	}
+	
 	option = {
 		name = aut.31.a 
 		add_political_power = -30
@@ -941,7 +902,7 @@ country_event = { #Dumbass only used the police
 	}
 }
 
-country_event = { #Stahremberg wins
+country_event = { #Starhemberg wins
 	id = aut.32
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.32" }
 	title = aut.32.t
@@ -968,8 +929,8 @@ country_event = { #Stahremberg wins
 			retire_ideology_leader = authoritarian_democrat
 			retire_ideology_leader = conservative
 			create_country_leader = {
-	            name = "Ernst Rudiger Stahremberg"
-	            desc = "AUT_Ernst_Rudiger_Stahremberg_desc"
+	            name = "Ernst Rudiger Starhemberg"
+	            desc = "AUT_Ernst_Rudiger_Starhemberg_desc"
 	            picture = "AUT_Ernst_Rudiger_Stahremberg.tga"
 	            expire = "2020.1.1"
 	            ideology = ultranationalist_subideology
@@ -977,8 +938,8 @@ country_event = { #Stahremberg wins
 	        }
 			}
 	        create_country_leader = {
-	            name = "Ernst Rudiger Stahremberg"
-	            desc = "AUT_Ernst_Rudiger_Stahremberg_desc"
+	            name = "Ernst Rudiger Starhemberg"
+	            desc = "AUT_Ernst_Rudiger_Starhemberg_desc"
 	            picture = "AUT_Ernst_Rudiger_Stahremberg.tga"
 	            expire = "2020.1.1"
 	            ideology = autocratic_subideology
@@ -987,7 +948,7 @@ country_event = { #Stahremberg wins
 			}
 	        create_country_leader = {
 	            name = "Ernst Rudiger Stahremberg"
-	            desc = "AUT_Ernst_Rudiger_Stahremberg_desc"
+	            desc = "AUT_Ernst_Rudiger_Starhemberg_desc"
 	            picture = "AUT_Ernst_Rudiger_Stahremberg.tga"
 	            expire = "2020.1.1"
 	            ideology = authoritarian_democrat_subideology
@@ -995,8 +956,8 @@ country_event = { #Stahremberg wins
 	        }
 			}
 	        create_country_leader = {
-	        name = "Ernst Rudiger Stahremberg"
-	        desc = "AUT_Ernst_Rudiger_Stahremberg_desc"
+	        name = "Ernst Rudiger Starhemberg"
+	        desc = "AUT_Ernst_Rudiger_Starhemberg_desc"
 	        picture = "AUT_Ernst_Rudiger_Stahremberg.tga"
 	        expire = "2020.1.1"
 	        ideology = conservative_subideology
@@ -1117,7 +1078,7 @@ country_event = { #Young Guard
 		add_political_power = -20
 		add_popularity = {
 			ideology = authoritarian_democrat
-			popularity = 0.03
+			popularity = -0.03
 		}
 		set_country_flag = AUT_young_guard_suppressed
 	}
@@ -1133,25 +1094,25 @@ country_event = { #Young Guard wants concessions
 
 	is_triggered_only = yes
 	
-	option = { #sure
+	option = { 
 		name = aut.35.a
 		add_popularity = {
 			ideology = authoritarian_democrat
 			popularity = 0.06
 		}
 		hidden_effect = {
-		    { country_event = aut.36 days = 7 }
+		    country_event = {id  = aut.36 days = 7}
 		}
 	}
 	
-	option = { #nah
+	option = { 
 		name = aut.35.b
 		add_popularity = {
 			ideology = authoritarian_democrat
 			popularity = -0.04
 		}
 		hidden_effect = {
-		    country_event = { id = aut.38 days = 7 }
+		    country_event = {id = aut.38 days = 7}
 		}
 	}
 }
@@ -1166,7 +1127,7 @@ country_event = { #Conservatives Concerned
 
 	is_triggered_only = yes
 	
-	option = { #listen to them, put the young guard in its place
+	option = { 
 		name = aut.36.a 
 		add_political_power = 20
 		add_popularity = {
@@ -1174,18 +1135,18 @@ country_event = { #Conservatives Concerned
 			popularity = -0.10
 		}
 		hidden_effect = {
-		    country_event = { id = aut.42 days = 3 }
+		    country_event = {id = aut.42 days = 3}
 		}
 	}
 	
-	option = { #nah
+	option = { 
 		name = aut.36.b
 		add_popularity = {
 			ideology = authoritarian_democrat
 			popularity = 0.08
 		}
 		hidden_effect = {
-		        country_event = { id = aut.37 days = 7 }
+		        country_event = {id = aut.37 days = 7}
 		}
 	}
 }
@@ -1200,7 +1161,7 @@ country_event = { #A meeting with Figl
 
 	is_triggered_only = yes
 	
-	option = { #so be it
+	option = { 
 		name = aut.37.a 
 		add_political_power = 20
 		custom_effect_tooltip = AUT_flip_to_authdem
@@ -1212,7 +1173,7 @@ country_event = { #A meeting with Figl
 		set_politics = {
 			    ruling_party = authoritarian_democrat
 			    elections_allowed = no
-		}
+		    }
 		}
 	}
 }
@@ -1227,7 +1188,7 @@ country_event = { #Young Guard Annoyed
 
 	is_triggered_only = yes
 	
-	option = { #fine, have your reforms
+	option = { 
 		name = aut.38.a 
 		add_political_power = 10
 		add_popularity = {
@@ -1235,11 +1196,11 @@ country_event = { #Young Guard Annoyed
 			popularity = 0.04
 		}
 		hidden_effect = {
-		    { country_event = aut.38 days = 7 }
+		    country_event = {id = aut.38 days = 7}
 		}
 	}
 	
-	option = { #find a compromise
+	option = { 
 		name = aut.38.b
 		add_political_power = -30
 		add_popularity = {
@@ -1250,10 +1211,13 @@ country_event = { #Young Guard Annoyed
 			ideology = autocratic
 			popularity = 0.06
 		}
+		hidden_effect = {
+		    country_event = {id = aut.46 days = 7}
+		}
 	}
 }
 
-country_event = { #Young Guard Grows in Influence
+country_event = { 
 	id = aut.39
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.39" }
 	title = aut.39.t
@@ -1263,7 +1227,7 @@ country_event = { #Young Guard Grows in Influence
 
 	is_triggered_only = yes
 	
-	option = { #encourage them
+	option = { 
 		name = aut.39.a 
 		add_political_power = 10
 		add_popularity = {
@@ -1271,11 +1235,11 @@ country_event = { #Young Guard Grows in Influence
 			popularity = 0.04
 		}
 		hidden_effect = {
-		    { country_event = aut.36 days = 7 }
+		    country_event = {id = aut.36 days = 7}
 	    }
 	}
 	
-	option = { #reign them in
+	option = { 
 		name = aut.39.b
 		add_political_power = -30
 		add_popularity = {
@@ -1283,7 +1247,7 @@ country_event = { #Young Guard Grows in Influence
 			popularity = -0.02
 		}
 		hidden_effect = {
-		    { country_event = aut.40 days = 7 }
+		    country_event = {id = aut.40 days = 7}
 		}
 	}
 }
@@ -1298,14 +1262,14 @@ country_event = { #Reigning in the young guard
 
 	is_triggered_only = yes
 	
-	option = { #just demote them
+	option = { 
 		name = aut.40.a 
 		add_popularity = {
 			ideology = authoritarian_democrat
 			popularity = -0.01
 		}
 		hidden_effect = {
-		    { country_event = aut.41 days = 7 }
+		    country_event = {id = aut.41 days = 7}
 	    }
 	}
 	
@@ -1318,7 +1282,7 @@ country_event = { #Reigning in the young guard
 			popularity = -0.06
 		}
 		hidden_effect = {
-		    { country_event = aut.42 days = 3 }
+		    country_event = {id = aut.42 days = 3}
 		}
 	}
 }
@@ -1344,6 +1308,9 @@ country_event = { #Young guard angry about demotions
 			ideology = autocratic
 			popularity = 0.06
 		}
+		hidden_effect = {
+		    country_event = {id = aut.46 days = 7}
+		}
 	}
 	
 	option = { #purge them
@@ -1355,7 +1322,7 @@ country_event = { #Young guard angry about demotions
 			popularity = -0.06
 		}
 		hidden_effect = {
-		    { country_event = aut.42 days = 3 }
+		    country_event = {id = aut.42 days = 3}
 		}
 	}
 }
@@ -1371,10 +1338,10 @@ country_event = { #Figl flees
 	is_triggered_only = yes
 	
 	option = { 
-		name = aut.42.b
+		name = aut.42.a
 		add_stability = -0.05
 		hidden_effect = {
-		    country_event = { id = aut.43 days = 3 }
+		    country_event = {id = aut.43 days = 3}
 		}
 	}
 }
@@ -1424,7 +1391,7 @@ country_event = { #Conservatives get stronger, demand a purge of young guard
 			popularity = 0.04
 		}
 		hidden_effect = {
-		    country_event = { id = aut.42 days = 5 }
+		    country_event = {id = aut.42 days = 5}
 		}
 	}
 	
@@ -1436,7 +1403,7 @@ country_event = { #Conservatives get stronger, demand a purge of young guard
 			popularity = -0.03
 		}
 		hidden_effect = {
-		    country_event = { id = aut.39 days = 5 }
+		    country_event = {id = aut.39 days = 5}
 		}
 	}
 }
@@ -1457,7 +1424,7 @@ country_event = { #Hidden event to decide winner of power struggle
 		trigger = {
 			AUT_schussnigg_powerful = yes
 		}
-		country_event = { id = aut.33 days = 2 }
+		country_event = {id = aut.33 days = 2}
 	}
 	
 	option = { #ernst
@@ -1467,6 +1434,31 @@ country_event = { #Hidden event to decide winner of power struggle
 			    AUT_schussnigg_powerful = yes
 			}
 		}
-		country_event = { id = aut.32 days = 2 }
+		country_event = {id = aut.32 days = 2}
+	}
+}
+
+country_event = { #Succesful compromise with Figl
+	id = aut.46
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.46" }
+	title = aut.46.t
+	desc = aut.46.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #great
+		name = aut.46.a 
+		add_stability = 0.06
+		add_political_power = 50
+		add_popularity = {
+			ideology = autocratic
+			popularity = 0.08
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.03
+		}
 	}
 }
