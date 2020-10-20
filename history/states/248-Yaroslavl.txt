@@ -2,12 +2,12 @@
 state={
 	id=248
 	name="STATE_248"
-	manpower = 1664541
+	manpower = 1298341
 	
 	state_category = large_town
 
 	history={
-		owner = 
+		owner = TSV
 		victory_points = {
 			121 5 
 		}
@@ -16,10 +16,10 @@ state={
 			industrial_complex = 1
 			air_base = 1
 		}
-		add_core_of = 
+		add_core_of = TSV
 	}
 
 	provinces={
-		2 62 97 121 164 231 252 3116 3190 3220 6101 6143 6167 6346 6356 9122 9188 9345 11099 11166 11205 13128 
+		121 231 252 346 3116 3220 3240 6101 6247 6346 6356 9345 11205 
 	}
 }
