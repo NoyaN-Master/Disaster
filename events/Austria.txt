@@ -1135,7 +1135,7 @@ country_event = { #Conservatives Concerned
 			popularity = -0.10
 		}
 		hidden_effect = {
-		    country_event = {id = aut.42 days = 3}
+		    country_event = {id = aut.40 days = 3}
 		}
 	}
 	
@@ -1196,7 +1196,7 @@ country_event = { #Young Guard Annoyed
 			popularity = 0.04
 		}
 		hidden_effect = {
-		    country_event = {id = aut.38 days = 7}
+		    country_event = {id = aut.37 days = 7}
 		}
 	}
 	
@@ -1273,7 +1273,7 @@ country_event = { #Reigning in the young guard
 	    }
 	}
 	
-	option = { #purge them
+	option = { 
 		name = aut.40.b
 		add_political_power = -30
 		add_stability = -0.05
@@ -1297,7 +1297,7 @@ country_event = { #Young guard angry about demotions
 
 	is_triggered_only = yes
 	
-	option = { #they can keep their jobs in exchange for toeing the line
+	option = { 
 		name = aut.41.a 
 		add_stability = 0.03
 		add_popularity = {
@@ -1313,7 +1313,7 @@ country_event = { #Young guard angry about demotions
 		}
 	}
 	
-	option = { #purge them
+	option = { 
 		name = aut.41.b
 		add_political_power = -30
 		add_stability = -0.05
@@ -1327,7 +1327,7 @@ country_event = { #Young guard angry about demotions
 	}
 }
 
-country_event = { #Figl flees
+country_event = { 
 	id = aut.42
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.42" }
 	title = aut.42.t
@@ -1346,7 +1346,7 @@ country_event = { #Figl flees
 	}
 }
 
-country_event = { #Deal with the hardliners
+country_event = { 
 	id = aut.43
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.43" }
 	title = aut.43.t
@@ -1383,7 +1383,7 @@ country_event = { #Conservatives get stronger, demand a purge of young guard
 
 	is_triggered_only = yes
 	
-	option = { #fine
+	option = { 
 		name = aut.44.a 
 		add_stability = -0.02
 		add_popularity = {
@@ -1395,7 +1395,7 @@ country_event = { #Conservatives get stronger, demand a purge of young guard
 		}
 	}
 	
-	option = { #nah
+	option = { 
 		name = aut.44.b 
 		add_stability = 0.02
 		add_popularity = {
