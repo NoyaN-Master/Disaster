@@ -1180,7 +1180,7 @@ focus_tree = {
 	focus = {
 		id = AUT_cult_of_efficiency
 		#icon = 
-		prerequisite = { focus = AUT_technocratic_economy }
+		prerequisite = { focus = AUT_guided_industrialisation }
 		x = 19
 		y = 5
 		cost = 5
