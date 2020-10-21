@@ -265,4 +265,80 @@ spriteTypes = {
 
  }
  
+ SpriteType = {
+        name = "GFX_goal_WRF_Old_Discipline"
+        texturefile = "gfx/interface/goals/WRF_Old_Discipline.tga"
+    }
+
+    SpriteType = {
+        name = "GFX_goal_WRF_Old_Discipline_shine"
+        texturefile = "gfx/interface/goals/WRF_Old_Discipline.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/WRF_Old_Discipline.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/WRF_Trying_PSD.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+ }
+ 
+ SpriteType = {
+        name = "GFX_goal_WRF_Yahya"
+        texturefile = "gfx/interface/goals/WRF_Yahya.tga"
+    }
+
+    SpriteType = {
+        name = "GFX_goal_WRF_Yahya_shine"
+        texturefile = "gfx/interface/goals/WRF_Yahya.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/WRF_Yahya.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/WRF_Yahya.tga"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+
+ }
+ 
 }

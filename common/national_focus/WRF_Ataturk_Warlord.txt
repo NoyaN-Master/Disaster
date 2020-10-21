@@ -155,7 +155,7 @@ focus_tree = {
 	#Focus for Operation YAHYA
 	focus = {
 		id = WRF_operation_yahya
-		icon = GFX_goal_unknown
+		icon = GFX_goal_WRF_Yahya
 		x = 5
 		y = 4
 		cost = 4
@@ -529,7 +529,7 @@ focus_tree = {
 	#Focus for Bullets Are Cheap, Not Men
 	focus = {
 		id = WRF_bullets_are_cheap_not_men
-		icon = GFX_goal_unknown
+		icon = GFX_goal_WRF_Old_Discipline
 		x = 1
 		y = 4
 		cost = 5
