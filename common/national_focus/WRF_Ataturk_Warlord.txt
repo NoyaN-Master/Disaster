@@ -99,7 +99,7 @@ focus_tree = {
 	#Focus for Kemal's Speech
 	focus = {
 		id = WRF_kemals_speech
-		icon = GFX_goal_unknown
+		icon = GFX_goal_WRF_Kemal_Speech
 		x = 3
 		y = 5
 		cost = 4
@@ -454,7 +454,7 @@ focus_tree = {
 	#Focus for Manisa Congress
 	focus = {
 		id = WRF_manisa_congress
-		icon = GFX_goal_unknown
+		icon = GFX_goal_WRF_Congress
 		x = 3
 		y = 6
 		cost = 5
