@@ -1,11 +1,39 @@
 leader_traits = {
 	
-       model_catholic = {
+    first_soldier_of_the_nation = {
 	    random = no
-		political_power_factor = 0.10
-		opinion_gain_monthly_factor = 0.15
-		army_core_defence_factor = 0.05
-		army_core_attack_factor = 0.05
+		political_power_factor = 0.08
+		army_core_defence_factor = 0.14
+		army_core_attack_factor = 0.14
+		war_support_factor = 0.06
+	}
+	
+	technocratic_academic = {
+	    random = no
+		political_power_factor = 0.12
+		industrial_capacity_factory = 0.03
+		production_factory_max_efficiency_factor = 0.04
+		production_speed_buildings_factor = 0.03
+	}
+	
+	reformist_puppet = {
+	    random = no
+		political_power_factor = -0.07
+		authoritarian_democrat_drift = 0.05
+	}
+	
+	hardliner_puppet = {
+	    random = no
+		political_power_factor = -0.07
+		ultranationalist_drift = 0.05
+	}
+	
+	model_catholic = {
+	    random = no
+		political_power_factor = 0.07
+		opinion_gain_monthly_factor = 0.16
+		army_core_defence_factor = 0.06
+		army_core_attack_factor = 0.06
 	}
 
 	last_hope = {
@@ -34,15 +62,15 @@ leader_traits = {
 	
 	model_dictator = {
 	    random = no
-		political_power_factor = 0.20
-		opinion_gain_monthly_factor = 0.20
-		army_core_defence_factor = 0.10
-		army_core_attack_factor = 0.10
+		political_power_factor = 0.14
+		opinion_gain_monthly_factor = 0.24
+		army_core_defence_factor = 0.12
+		army_core_attack_factor = 0.12
 	}
 	
 	figurehead_president_1 = {
         random = no
-        political_power_factor = 0.1
+        political_power_factor = 0.05
 	}
 
 	father_of_the_republic = {

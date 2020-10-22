@@ -517,7 +517,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_austrian_miracle
-		#icon = 
+		icon = GFX_goal_AUT_austrian_miracle
 		prerequisite = { focus = AUT_nation_of_farmers OR = AUT_nation_of_industry }
 		x = 4
 		y = 6
@@ -775,7 +775,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_catholic_nationalism
-		#icon = 
+		icon = GFX_goal_AUT_catholic_nationalism
 		prerequisite = { focus = AUT_extol_dollfuss_faith }
 		prerequisite = { focus = AUT_austrian_identity }
 		x = 15
@@ -803,7 +803,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_lead_by_example
-		#icon = 
+		icon = GFX_goal_AUT_lead_by_example
 		prerequisite = { focus = AUT_catholic_nationalism }
 		prerequisite = { focus = AUT_catholic_education }
 		x = 14
@@ -915,6 +915,7 @@ focus_tree = {
 		id = AUT_schussnigg_at_the_helm
 		#icon = 
 		prerequisite = { focus = AUT_react_to_the_crisis }
+		mutually_exclusive = { focus = AUT_starhemberg_unbroken }
 		x = 21
 		y = 1
 		cost = 1
@@ -933,7 +934,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 		    add_political_power = 20
-			add_stability = 0.03
+			add_stability = 0.06
         }
 	}
 	
@@ -1305,7 +1306,7 @@ focus_tree = {
 		y = 5
 		cost = 6
 		ai_will_do = {
-			factor = 40
+			factor = 50
 		}
 		available = {
 			has_country_leader = {
@@ -1355,7 +1356,7 @@ focus_tree = {
 		y = 6
 		cost = 5
 		ai_will_do = {
-			factor = 100
+			factor = 60
 		}
 		available = {
 			has_country_leader = {
@@ -1380,7 +1381,7 @@ focus_tree = {
 		y = 7
 		cost = 5
 		ai_will_do = {
-			factor = 100
+			factor = 70
 		}
 		available = {
 			has_country_leader = {
@@ -1398,4 +1399,512 @@ focus_tree = {
             }
         }	
 	}	
+	
+	focus = {
+		id = AUT_starhemberg_unbroken
+		#icon = 
+		prerequisite = { focus = AUT_react_to_the_crisis }
+		mutually_exclusive = { focus = AUT_schussnigg_at_the_helm }
+		x = 29
+		y = 1
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_leader = {
+				name = "Ernst Rudiger Starhemberg"
+				ruling_only = yes
+			}			
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		    add_stability = 0.02
+			add_war_support = 0.04
+			add_political_power = 5
+        }	
+	}	
+	
+	focus = {
+		id = AUT_remove_the_moderates
+		#icon = 
+		prerequisite = { focus = AUT_starhemberg_unbroken }
+		x = 31
+		y = 2
+		cost = 4
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+			has_country_leader = {
+				name = "Ernst Rudiger Starhemberg"
+				ruling_only = yes
+			}			
+		}	
+		select_effect = {
+			country_event = { id = aut.52 days = 14 }
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		    add_popularity = {
+			    ideology = autocratic
+				popularity = -0.10
+			}
+			add_stability = -0.04
+			add_political_power = 35
+			hidden_effect = {
+			    country_event = { id = aut.52 days = 7 }
+			}
+        }	
+	}
+	
+	focus = {
+		id = AUT_form_a_heimwehr_cabinet
+		icon = GFX_goal_AUT_heimwehr_cabinet
+		prerequisite = { focus = AUT_starhemberg_unbroken }
+		x = 29
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			has_country_leader = {
+				name = "Ernst Rudiger Starhemberg"
+				ruling_only = yes
+			}			
+		}	
+		select_effect = {
+			country_event = { id = aut.49 days = 14 }
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		    add_ideas = AUT_heimwehr_cabinet_1
+        }	
+	}
+	
+	focus = {
+		id = AUT_solutions_to_the_slump
+		#icon = 
+		prerequisite = { focus = AUT_starhemberg_unbroken }
+		x = 27
+		y = 2
+		cost = 6
+		ai_will_do = {
+			factor = 70
+		}
+		available = {
+			has_country_leader = {
+				name = "Ernst Rudiger Starhemberg"
+				ruling_only = yes
+			}			
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		    custom_effect_tooltip = AUT_economic_recovery
+			if = {
+				limit = { has_idea = AUT_sluggish_economy_1 }
+				swap_ideas = { 
+                    remove_idea = AUT_sluggish_economy_1 
+                    add_idea = AUT_sluggish_economy_2
+                }
+			}
+			else_if = {
+				limit = { has_idea = AUT_sluggish_economy_2 }
+				swap_ideas = { 
+                    remove_idea = AUT_sluggish_economy_2 
+                    add_idea = AUT_sluggish_economy_3
+                }
+			}
+		    else_if = {
+				limit = { has_idea = AUT_sluggish_economy_3 }
+				remove_ideas = AUT_sluggish_economy_3
+			}
+        }	
+	}
+	
+	focus = {
+		id = AUT_rejuvenate_corpoatism
+		#icon = 
+		prerequisite = { focus = AUT_solutions_to_the_slump }
+		prerequisite = { focus = AUT_form_a_heimwehr_cabinet }
+		x = 28
+		y = 3
+		cost = 6
+		ai_will_do = {
+			factor = 70
+		}
+		available = {
+			has_country_leader = {
+				name = "Ernst Rudiger Starhemberg"
+				ruling_only = yes
+			}			
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		    custom_effect_tooltip = AUT_economic_recovery
+			if = {
+				limit = { has_idea = AUT_sluggish_economy_1 }
+				swap_ideas = { 
+                    remove_idea = AUT_sluggish_economy_1 
+                    add_idea = AUT_sluggish_economy_2
+                }
+			}
+			else_if = {
+				limit = { has_idea = AUT_sluggish_economy_2 }
+				swap_ideas = { 
+                    remove_idea = AUT_sluggish_economy_2 
+                    add_idea = AUT_sluggish_economy_3
+                }
+			}
+		    else_if = {
+				limit = { has_idea = AUT_sluggish_economy_3 }
+				remove_ideas = AUT_sluggish_economy_3
+			}
+			add_ideas = AUT_heimwehr_corporatism_1
+        }	
+	}
+	
+	focus = {
+		id = AUT_austrian_militarism
+		#icon = 
+		prerequisite = { focus = AUT_remove_the_moderates }
+		prerequisite = { focus = AUT_form_a_heimwehr_cabinet }
+		x = 30
+		y = 3
+		cost = 4
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+			has_country_leader = {
+				name = "Ernst Rudiger Starhemberg"
+				ruling_only = yes
+			}			
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		    add_ideas = AUT_revived_militarism_1
+        }	
+	}
+	
+	focus = {
+		id = AUT_back_in_black
+		#icon = 
+		prerequisite = { focus = AUT_rejuvenate_corpoatism }
+		x = 27
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 70
+		}
+		available = {
+			has_country_leader = {
+				name = "Ernst Rudiger Starhemberg"
+				ruling_only = yes
+			}			
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		    custom_effect_tooltip = AUT_economic_recovery
+			if = {
+				limit = { has_idea = AUT_sluggish_economy_1 }
+				swap_ideas = { 
+                    remove_idea = AUT_sluggish_economy_1 
+                    add_idea = AUT_sluggish_economy_2
+                }
+			}
+			else_if = {
+				limit = { has_idea = AUT_sluggish_economy_2 }
+				swap_ideas = { 
+                    remove_idea = AUT_sluggish_economy_2 
+                    add_idea = AUT_sluggish_economy_3
+                }
+			}
+		    else_if = {
+				limit = { has_idea = AUT_sluggish_economy_3 }
+				remove_ideas = AUT_sluggish_economy_3
+			}
+        }
+	}
+	
+	focus = {
+		id = AUT_militarise_the_corporate_state
+		#icon = 
+		prerequisite = { focus = AUT_back_in_black }
+		x = 27
+		y = 5
+		cost = 6
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			has_country_leader = {
+				name = "Ernst Rudiger Starhemberg"
+				ruling_only = yes
+			}			
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		    813 = {
+	        add_building_construction = {
+		    type = arms_factory 
+		    level = 2
+	        }
+            }			
+			152 = {
+	        add_building_construction = {
+		    type = arms_factory 
+		    level = 1
+	        }   
+            }
+            4 = {
+	        add_building_construction = {
+		    type = arms_factory 
+		    level = 1
+	        }   
+            }
+			swap_ideas = { 
+                remove_idea = AUT_heimwehr_corporatism_1
+                add_idea = AUT_heimwehr_corporatism_2
+            }
+        }
+	}
+	
+	focus = {
+		id = AUT_the_cult_of_starhemberg
+		icon = GFX_goal_AUT_cult_of_starhemberg
+		prerequisite = { focus = AUT_austrian_militarism }
+		x = 31
+		y = 4
+		cost = 4
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+			has_country_leader = {
+				name = "Ernst Rudiger Starhemberg"
+				ruling_only = yes
+			}			
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		    add_country_leader_trait = first_soldier_of_the_nation
+			add_popularity = {
+			ideology = ultranationalist
+			popularity = 0.08
+		    }
+        }
+	}
+		
+	focus = {
+		id = AUT_heimwehr_heroism
+		#icon = 
+		prerequisite = { focus = AUT_the_cult_of_starhemberg }
+		x = 31
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+			has_country_leader = {
+				name = "Ernst Rudiger Starhemberg"
+				ruling_only = yes
+			}			
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		    swap_ideas = { 
+                remove_idea = AUT_revived_militarism_1
+                add_idea = AUT_revived_militarism_2
+            }
+        }
+	}
+	
+	focus = {
+		id = AUT_ties_to_the_aristocracy
+		#icon = 
+		prerequisite = { focus = AUT_austrian_militarism }
+		prerequisite = { focus = AUT_rejuvenate_corpoatism }
+		x = 29
+		y = 4
+		cost = 6
+		ai_will_do = {
+			factor = 55
+		}
+		available = {
+			has_country_leader = {
+				name = "Ernst Rudiger Starhemberg"
+				ruling_only = yes
+			}			
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			country_event = { id = aut.47 days = 1 }
+			102 = {
+	        add_building_construction = {
+		    type = infrastructure 
+		    level = 1
+	        }
+            }			
+			152 = {
+	        add_building_construction = {
+		    type = infrastructure 
+		    level = 1
+	        }   
+            }
+            153 = {
+	        add_building_construction = {
+		    type = infrastructure 
+		    level = 1
+	        }   
+            }
+			102 = {
+	        add_building_construction = {
+		    type = industrial_complex
+		    level = 1
+	        }
+            }			
+			152 = {
+	        add_building_construction = {
+		    type = industrial_complex 
+		    level = 1
+	        }   
+            }
+        }
+	}
+	
+	focus = {
+		id = AUT_ensure_loyalty
+		#icon = 
+		prerequisite = { focus = AUT_ties_to_the_aristocracy }
+		x = 29
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			has_country_leader = {
+				name = "Ernst Rudiger Starhemberg"
+				ruling_only = yes
+			}			
+		}	
+		select_effect = {
+			country_event = { id = aut.47 days = 14 }
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = AUT_heimwehr_cabinet_1
+                add_idea = AUT_heimwehr_cabinet_2
+            }
+        }
+	}
+	
+	focus = {
+		id = AUT_profits_of_militarism
+		#icon = 
+		prerequisite = { focus = AUT_ensure_loyalty }
+		prerequisite = { focus = AUT_militarise_the_corporate_state }		
+		x = 28
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_leader = {
+				name = "Ernst Rudiger Starhemberg"
+				ruling_only = yes
+			}			
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_timed_idea = { idea = AUT_military_industrial_boom days = 730 }
+        }
+	}
+	
+	focus = {
+		id = AUT_the_old_austria
+		#icon = 
+		prerequisite = { focus = AUT_ensure_loyalty }
+		prerequisite = { focus = AUT_heimwehr_heroism }		
+		x = 30
+		y = 6
+		cost = 4
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			has_country_leader = {
+				name = "Ernst Rudiger Starhemberg"
+				ruling_only = yes
+			}			
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = AUT_heimwehr_cabinet_2
+                add_idea = AUT_heimwehr_cabinet_3
+            }
+        }
+	}
+	
+	focus = {
+		id = AUT_fur_freiheit_und_ehre
+		icon = GFX_goal_AUT_freiheit_und_ehre
+		prerequisite = { focus = AUT_profits_of_militarism }
+		prerequisite = { focus = AUT_the_old_austria }		
+		x = 29
+		y = 7
+		cost = 4
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			has_country_leader = {
+				name = "Ernst Rudiger Starhemberg"
+				ruling_only = yes
+			}			
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = AUT_revived_militarism_2
+                add_idea = AUT_freiheit_und_ehre
+            }
+        }
+	}
 }

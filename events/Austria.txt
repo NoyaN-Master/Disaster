@@ -1008,6 +1008,7 @@ country_event = { #Schussnigg wins
 	            expire = "2020.1.1"
 	            ideology = ultranationalist_subideology
 	            traits = {
+				technocratic_academic
 	        }
 			}
 	        create_country_leader = {
@@ -1017,6 +1018,7 @@ country_event = { #Schussnigg wins
 	            expire = "2020.1.1"
 	            ideology = autocratic_subideology
 	            traits = {
+				technocratic_academic
 	        }
 			}
 	        create_country_leader = {
@@ -1026,6 +1028,7 @@ country_event = { #Schussnigg wins
 	            expire = "2020.1.1"
 	            ideology = authoritarian_democrat_subideology
 	            traits = {
+				technocratic_academic
 	        }
 			}
 	        create_country_leader = {
@@ -1035,6 +1038,7 @@ country_event = { #Schussnigg wins
 	        expire = "2020.1.1"
 	        ideology = conservative_subideology
 	        traits = {
+			technocratic_academic
 	        }
 			}
 		add_popularity = {
@@ -1169,6 +1173,7 @@ country_event = { #A meeting with Figl
 			ideology = authoritarian_democrat
 			popularity = 0.15			
 		}
+		add_country_leader_trait = reformist_puppet
 		hidden_effect = {
 		set_politics = {
 			    ruling_party = authoritarian_democrat
@@ -1366,6 +1371,7 @@ country_event = {
 			    elections_allowed = no
 			}
 		}
+		add_country_leader_trait = hardliner_puppet
 		add_popularity = {
 			ideology = ultranationalist
 			popularity = 0.15
@@ -1460,5 +1466,216 @@ country_event = { #Succesful compromise with Figl
 			ideology = authoritarian_democrat
 			popularity = 0.03
 		}
+	}
+}
+
+country_event = { #starhemberg buddies up with aristocrats
+	id = aut.47
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.47" }
+	title = aut.47.t
+	desc = aut.47.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = aut.47.a 
+		add_stability = 0.06
+		add_political_power = 55
+	}
+}
+
+country_event = { #ensuring loyalty
+	id = aut.48
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.48" }
+	title = aut.48.t
+	desc = aut.48.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #lenient
+		name = aut.48.a 
+		add_stability = 0.04
+		add_political_power = -30
+		add_popularity = {
+			ideology = ultranationalist
+			popularity = -0.02
+		}
+	}
+	
+	option = { #balanced
+		name = aut.48.b
+		add_stability = 0.02
+		add_political_power = -10
+		add_popularity = {
+			ideology = ultranationalist
+			popularity = 0.02
+		}
+	}
+	
+	option = { #harsh
+		name = aut.48.c
+		add_stability = -0.03
+		add_political_power = 25
+		add_popularity = {
+			ideology = ultranationalist
+			popularity = 0.06
+		}
+	}
+}
+
+country_event = { #ostmarkisches sturmscharen
+	id = aut.49
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.49" }
+	title = aut.49.t
+	desc = aut.49.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #absorb into heimwehr
+		name = aut.49.a 
+		add_stability = -0.02
+		add_political_power = -10
+		add_popularity = {
+			ideology = ultranationalist
+			popularity = 0.04
+		}
+		add_command_power = 30
+		country_event = { id = aut.50 days = 2 }
+	}
+	
+	option = { #replace leadership
+		name = aut.49.b
+		add_stability = 0.02
+		add_political_power = 15
+		add_popularity = {
+			ideology = ultranationalist
+			popularity = 0.02
+		}
+		add_command_power = -10
+		country_event = { id = aut.51 days = 2 }
+	}
+}
+
+country_event = { #fate of sturmscharen officers
+	id = aut.50
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.50" }
+	title = aut.50.t
+	desc = aut.50.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #let them keep their positions in exchange for loyalty
+		name = aut.50.a 
+		add_stability = 0.03
+		add_political_power = 5
+		add_popularity = {
+			ideology = ultranationalist
+			popularity = -0.02
+		}
+		add_command_power = 35
+	}
+	
+	option = { #demote
+		name = aut.50.b
+		add_stability = -0.01
+		add_political_power = 10
+		add_popularity = {
+			ideology = ultranationalist
+			popularity = 0.02
+		}
+		add_command_power = -5
+	}
+	
+	option = { #purge
+		name = aut.50.c
+		add_stability = -0.03
+		add_political_power = 20
+		add_popularity = {
+			ideology = ultranationalist
+			popularity = 0.04
+		}
+		add_command_power = -10
+	}
+}
+
+country_event = { #new sturmscharen leader
+	id = aut.51
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.51" }
+	title = aut.51.t
+	desc = aut.51.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #Reinhart Bachofen von Echt
+		name = aut.51.a 
+		add_stability = -0.03
+		add_political_power = 5
+		add_popularity = {
+			ideology = ultranationalist
+			popularity = 0.03
+		}
+	}
+	
+	option = { #hans von pranckh
+		name = aut.51.b
+		add_stability = -0.03
+		add_political_power = -10
+		add_popularity = {
+			ideology = ultranationalist
+			popularity = -0.01
+		}
+		add_command_power = 5
+	}
+}
+
+country_event = { #fate of schussnigg
+	id = aut.52
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.52" }
+	title = aut.52.t
+	desc = aut.52.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #sack him
+		name = aut.52.a 
+		add_stability = 0.02
+		add_political_power = -10
+		add_popularity = {
+			ideology = autocratic
+			popularity = 0.02
+		}
+	}
+	
+	option = { #arrest him
+		name = aut.52.b
+		add_stability = -0.03
+		add_political_power = 5
+		add_popularity = {
+			ideology = autocratic
+			popularity = -0.02
+		}
+	}
+	
+	option = { #unfortunate accident
+		name = aut.52.b
+		add_stability = -0.06
+		add_political_power = 20
+		add_popularity = {6
+			ideology = autocratic
+			popularity = -0.06
+		}
+		add_command_power = -5
 	}
 }
