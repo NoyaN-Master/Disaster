@@ -407,11 +407,11 @@ country_event = { #Manisa Congress Economy
 		country_event = { id = wrf.18 days = 1 }
 		add_popularity = {
 		ideology = conservative
-		popularity = 0.1
+		popularity = 0.05
 		}
 		add_popularity = {
 		ideology = liberal
-		popularity = 0.1
+		popularity = 0.05
 		}
 		
 		}	

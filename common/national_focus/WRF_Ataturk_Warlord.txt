@@ -434,22 +434,6 @@ focus_tree = {
 		}
 	}
 
-	#Focus for The Rejected Brother
-	focus = {
-		id = WRF_the_rejected_brother
-		icon = GFX_goal_unknown
-		x = 5
-		y = 6
-		cost = 1
-		available_if_capitulated = yes
-		prerequisite = { focus = WRF_kemals_speech }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		custom_effect_tooltip = WRF_Exam
-		}
-	}
 
 	#Focus for Manisa Congress
 	focus = {
@@ -466,23 +450,6 @@ focus_tree = {
 		completion_reward = {
 		country_event = { id = wrf.16 days = 1 }
 		custom_effect_tooltip = WRF_manisa_
-		}
-	}
-
-	#Focus for For All Brothers
-	focus = {
-		id = WRF_for_all_brothers
-		icon = GFX_goal_unknown
-		x = 1
-		y = 6
-		cost = 4
-		available_if_capitulated = yes
-		prerequisite = { focus = WRF_kemals_speech }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		add_ideas = WRF_For_All_Brothers
 		}
 	}
 
