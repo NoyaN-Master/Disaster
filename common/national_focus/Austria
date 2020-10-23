@@ -590,7 +590,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_clergy_in_the_government
-		#icon = 
+		icon = GFX_goal_AUT_clergy_in_government
 		prerequisite = { focus = AUT_deepen_church_ties }
 		x = 12
 		y = 2
@@ -617,7 +617,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_promote_catholic_social_teaching
-		#icon = 
+		icon = GFX_goal_AUT_catholic_social_teaching
 		prerequisite = { focus = AUT_clergy_in_the_government }
 		prerequisite = { focus = AUT_revise_the_concordat }
 		x = 11
@@ -832,7 +832,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_a_moral_government
-		#icon = 
+		icon = GFX_goal_AUT_moral_government
 		prerequisite = { focus = AUT_a_moral_people }
 		prerequisite = { focus = AUT_lead_by_example }
 		x = 12
