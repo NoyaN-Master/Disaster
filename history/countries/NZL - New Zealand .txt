@@ -1,5 +1,5 @@
-capital = 305
-oob = "ECU_1936"
+capital = 284
+oob = "NZL_1936"
 
 # Starting tech
 set_technology = {
@@ -8,7 +8,7 @@ set_technology = {
 set_convoys = 0
 
 set_politics = {
-	ruling_party = authoritarian_democrat
+	ruling_party = autocratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -21,8 +21,8 @@ set_popularities = {
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
 	national_bolshevik = 0
-	authoritarian_democrat = 100
-	autocratic = 0
+	authoritarian_democrat = 0
+	autocratic = 100
 	ultranationalist = 0
 	revolutionary_nationalist = 0
 	esoteric_traditionalist = 0
@@ -30,11 +30,11 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Alberto Enríquez Gallo"
-	#desc = "ECU_Gallo_desc"
-	picture = "ECU_Gallo.tga"
+	name = "Baron Newall"
+	#desc = "NZL_Baron_Newall_desc"
+	picture = "NZL_Baron_Newall.tga"
 	expire = "2020.1.1"
-	ideology = authoritarian_democrat_subideology
+	ideology = autocratic_subideology
 	traits = {
 		#
 	}
