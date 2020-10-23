@@ -886,7 +886,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_react_to_the_crisis
-		#icon = 
+		icon = GFX_goal_AUT_react_to_the_crisis
 		prerequisite = { focus = AUT_die_mordekrugel }
 		x = 25
 		y = 0
@@ -913,7 +913,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_schussnigg_at_the_helm
-		#icon = 
+		icon = GFX_goal_AUT_schussnigg_at_the_helm
 		prerequisite = { focus = AUT_react_to_the_crisis }
 		mutually_exclusive = { focus = AUT_starhemberg_unbroken }
 		x = 21
@@ -1402,7 +1402,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_starhemberg_unbroken
-		#icon = 
+		icon = GFX_goal_AUT_starhemberg_unbroken
 		prerequisite = { focus = AUT_react_to_the_crisis }
 		mutually_exclusive = { focus = AUT_schussnigg_at_the_helm }
 		x = 29
