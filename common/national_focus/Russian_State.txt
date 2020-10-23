@@ -1,0 +1,22 @@
+﻿focus_tree = {
+	id = kolchak_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = TRM
+		}
+	}
+	default = no
+	
+	focus = {
+		id = TRM_our_situation
+		icon = 
+		x = 8
+		y = 0
+		cost = 7
+		ai_will_do = {
+			factor = 100
+		}
