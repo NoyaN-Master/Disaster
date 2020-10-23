@@ -45,3 +45,25 @@ create_country_leader = {
 		#
 	}
 }
+
+create_country_leader = {
+	name = "Patrik Baturoğlu"
+	#desc = "SES_Zeljko_Raznatovic_desc"
+	picture = "Portrait_CRW_Bateman.tga"
+	expire = "2020.1.1"
+	ideology = minarchy
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Paul Allen"
+	#desc = "SES_Zeljko_Raznatovic_desc"
+	picture = "Portrait_CRW_Allen.tga"
+	expire = "2020.1.1"
+	ideology = gangster_state
+	traits = {
+		#
+	}
+}
