@@ -1630,7 +1630,7 @@ country_event = { #new sturmscharen leader
 	
 	option = { #hans von pranckh
 		name = aut.51.b
-		add_stability = -0.03
+		add_stability = 0.03
 		add_political_power = -10
 		add_popularity = {
 			ideology = ultranationalist
