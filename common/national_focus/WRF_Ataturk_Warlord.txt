@@ -299,42 +299,6 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Holiday In Smyrna
-	focus = {
-		id = WRF_holiday_in_smyrna
-		icon = GFX_goal_unknown
-		x = 21
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = WRF_vatan_ordusu 
-		}
-		prerequisite = { 
-			focus = WRF_integrate_fevzi 
-		}
-		prerequisite = { 
-			focus = WRF_crack_the_arsenals 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Crack The Arsenals
-	focus = {
-		id = WRF_crack_the_arsenals
-		icon = GFX_goal_unknown
-		x = 23
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = WRF_the_2nd_grecoturkish_war }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	#Focus for Send Peker To Rome
 	focus = {
 		id = WRF_send_peker_to_rome
@@ -403,37 +367,6 @@ focus_tree = {
 		}
 		}
 	}
-
-	#Focus for The 2nd Greco-Turkish War
-	focus = {
-		id = WRF_the_2nd_grecoturkish_war
-		icon = GFX_goal_unknown
-		x = 21
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			has_war_with = GRE
-		}
-	}
-
-	#Focus for Vatan Ordusu
-	focus = {
-		id = WRF_vatan_ordusu
-		icon = GFX_goal_unknown
-		x = 19
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = WRF_the_2nd_grecoturkish_war }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 
 	#Focus for Manisa Congress
 	focus = {
@@ -597,21 +530,7 @@ focus_tree = {
 		id = wrf.25
 		days = 2
 		}
-		complete_national_focus = WRF_the_2nd_grecoturkish_war
-		}
-	}
-
-	#Focus for Integrate Fevzi
-	focus = {
-		id = WRF_integrate_fevzi
-		icon = GFX_goal_unknown
-		x = 21
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = WRF_the_2nd_grecoturkish_war }
-		ai_will_do = {
-			factor = 1
+		
 		}
 	}
 
