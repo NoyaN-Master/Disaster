@@ -99,47 +99,6 @@ focus_tree = {
 		}
 	}
 
-	#Focus for British Volunteers Arrive
-	focus = {
-		id = IST_british_volunteers_arrive
-		icon = GFX_goal_unknown
-		x = 0
-		y = 2
-		cost = 2
-		available_if_capitulated = yes
-		prerequisite = { focus = IST_a_new_day }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for A New Day
-	focus = {
-		id = IST_a_new_day
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		cost = 1
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for The Big Game Night
-	focus = {
-		id = IST_the_big_game_night
-		icon = GFX_goal_unknown
-		x = 0
-		y = 3
-		cost = 3
-		available_if_capitulated = yes
-		prerequisite = { focus = IST_british_volunteers_arrive }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	#Focus for Bandits With Connections
 	focus = {
 		id = IST_bandits_with_connections
@@ -277,8 +236,7 @@ focus_tree = {
 				name = "British Oligarchies"
 				ruling_only = yes
 			}
-			has_completed_focus = IST_the_big_game_night
-
+			has_country_flag = ist_brits
 		}
 	}
 
@@ -299,7 +257,7 @@ focus_tree = {
 				name = "Paulis Allenian"
 				ruling_only = yes
 			}
-			has_completed_focus = IST_the_big_game_night
+			has_country_flag = ist_gang
 		}
 	}
 
@@ -317,10 +275,10 @@ focus_tree = {
 		available = {
 			has_government = liberal
 			has_country_leader = {
-				name = "President Patrick Batur"
+				name = "Patrik Baturoğlu"
 				ruling_only = yes
 			}
-			has_completed_focus = IST_the_big_game_night
+		has_country_flag = bateman_back
 		}
 	}
 

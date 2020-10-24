@@ -1,0 +1,214 @@
+add_namespace = crw
+
+country_event = { #Intro
+	id = crw.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.1.t
+	desc = crw.1.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	trigger = {
+	CRW = {
+	exists = yes
+	tag = CRW
+	}
+	}
+
+	is_triggered_only = yes
+
+	option = { #Intro
+		name = crw.1.a
+		country_event = { id = crw.2 days = 10 }
+	}
+}
+
+country_event = { #Big Game
+	id = crw.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.2.t
+	desc = crw.2.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = crw.2.a
+		custom_effect_tooltip = ist_big_game
+		country_event = { id = crw.3 days = 2 }
+	}
+}
+
+country_event = { #Crisis In Taksim
+	id = crw.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.3.t
+	desc = crw.3.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = { #Gangsters Intervene
+		name = crw.3.a
+		custom_effect_tooltip = ist_taxim
+		country_event = { id = crw.4 days = 2 }
+	}
+}
+
+country_event = { #Gangs Move To Penthouse
+	id = crw.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.4.t
+	desc = crw.4.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = { #Gangsters Attack 
+		name = crw.4.a
+		custom_effect_tooltip = ist_gangsters_attack
+		country_event = { id = crw.7 days = 2 }
+	}
+	
+	option = { #Call The Brits
+		name = crw.4.b
+		custom_effect_tooltip = ist_brits_intervene
+		country_event = { id = crw.5 days = 2 }
+	}
+}
+
+country_event = { #The War
+	id = crw.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.5.t
+	desc = crw.5.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = { #Brits Win
+		name = crw.5.a
+		country_event = { id = crw.6 days = 2 }
+	}
+	
+	option = { #Brits Lose
+		name = crw.5.b
+		custom_effect_tooltip = ist_brits_lose
+		country_event = { id = crw.8 days = 2 }
+	}
+}
+
+country_event = { #Brit Vic
+	id = crw.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.6.t
+	desc = crw.6.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = { #Brits Win
+		name = crw.6.a
+		custom_effect_tooltip = ist_rule_britannia
+		hidden_effect = {
+		set_country_flag = ist_brits
+		}
+	}
+}
+
+
+country_event = { #No Brits-Gang Victory
+	id = crw.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.7.t
+	desc = crw.7.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = crw.7.a
+		custom_effect_tooltip = ist_gangsters_win
+		hidden_effect = {
+		set_country_flag = ist_gang
+		}
+		set_politics = {
+		ruling_party = libertarian_socialist
+		}
+		add_popularity = {
+		ideology = libertarian_socialist
+		popularity = 0.8
+		}
+	}
+}	
+
+
+country_event = { #Brits Lose-Bateman 1
+	id = crw.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.8.t
+	desc = crw.8.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = { #Bateman
+		name = crw.8.a
+		custom_effect_tooltip = ist_private_companies_come
+		country_event = { id = crw.9 days = 2 }
+	}
+}
+
+country_event = { #Brits Lose-Bateman 2
+	id = crw.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.9.t
+	desc = crw.9.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = { #Bateman
+		name = crw.9.a
+		custom_effect_tooltip = ist_bateman_coup
+		create_country_leader = {
+		name = "Patrik Baturoğlu"
+		#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+		picture = "Portrait_CRW_Bateman.tga"
+		expire = "1965.1.1"
+		ideology = minarchy
+		traits = {	
+		
+		}
+	}
+		hidden_effect = {
+		set_country_flag = bateman_back
+		}
+	}
+}
