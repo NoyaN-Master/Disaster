@@ -1182,7 +1182,7 @@ focus_tree = {
 		id = AUT_cult_of_efficiency
 		#icon = 
 		prerequisite = { focus = AUT_guided_industrialisation }
-		x = 19
+		x = 18
 		y = 5
 		cost = 5
 		ai_will_do = {
@@ -1237,6 +1237,8 @@ focus_tree = {
 		id = AUT_extent_of_reforms
 		#icon = 
 		prerequisite = { focus = AUT_meritocratic_state }
+		prerequisite = { focus = AUT_guided_industrialisation }
+		prerequisite = { focus = AUT_establish_frontmilitz }
 		x = 21
 		y = 5
 		cost = 6
@@ -1303,7 +1305,7 @@ focus_tree = {
 		#icon = 
 		prerequisite = { focus = AUT_establish_frontmilitz }
 		x = 23
-		y = 5
+		y = 6
 		cost = 6
 		ai_will_do = {
 			factor = 50

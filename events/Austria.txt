@@ -1592,6 +1592,7 @@ country_event = { #fate of sturmscharen officers
 			popularity = 0.02
 		}
 		add_command_power = -5
+		add_manpower = -342
 	}
 	
 	option = { #purge
@@ -1603,6 +1604,7 @@ country_event = { #fate of sturmscharen officers
 			popularity = 0.04
 		}
 		add_command_power = -10
+		add_manpower = -763
 	}
 }
 
@@ -1666,16 +1668,64 @@ country_event = { #fate of schussnigg
 			ideology = autocratic
 			popularity = -0.02
 		}
+		hidden_effect = {
+		    country_event = { id = aut.53 days = 4 }
+		}
 	}
 	
 	option = { #unfortunate accident
-		name = aut.52.b
+		name = aut.52.c
 		add_stability = -0.06
 		add_political_power = 20
-		add_popularity = {6
+		add_popularity = {
 			ideology = autocratic
 			popularity = -0.06
 		}
 		add_command_power = -5
+		hidden_effect = {
+		    country_event = { id = aut.54 days = 10 }
+		}
+	}
+}
+
+country_event = { #schussnigg arrested
+	id = aut.53
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.53" }
+	title = aut.53.t
+	desc = aut.53.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = aut.53.a 
+		add_stability = -0.02
+		add_political_power = 40
+		add_popularity = {
+			ideology = autocratic
+			popularity = -0.06
+		}
+	}
+}
+
+country_event = { #schussnigg's little accident
+	id = aut.54
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.54" }
+	title = aut.54.t
+	desc = aut.54.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = aut.54.a 
+		add_political_power = -35
+		add_stability = 0.06
+		add_popularity = {
+			ideology = ultranationalist
+			popularity = 0.02
+		}
 	}
 }
