@@ -134,13 +134,13 @@ country_event = { #Deal with Socialist Terrorists
         option = {
 		name = pln.7.b
         set_country_flag = PLN_socialists_grows
-		custom_effect_tooltip = POL_socialists_grows 
+		custom_effect_tooltip = PLN_socialists_grows 
 	}
 
         option = {
 		name = pln.7.c 
         set_country_flag = PLN_communists_grows
-                custom_effect_tooltip = POL_communists_grows
+                custom_effect_tooltip = PLN_communists_grows
 	}
 }
 
