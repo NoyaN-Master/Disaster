@@ -20,6 +20,8 @@ add_ideas = CRW_Failing_Economy
 add_ideas = CRW_Memories_Operation
 add_ideas = CRW_Race_War
 
+country_event = { id = crw.1 days = 1 } #Intro event
+
 set_popularities = {
 	conservative = 0
 	liberal = 100

@@ -149,6 +149,7 @@ country_event = { #No Brits-Gang Victory
 	option = { 
 		name = crw.7.a
 		custom_effect_tooltip = ist_gangsters_win
+		set_cosmetic_tag = IST_gangster
 		hidden_effect = {
 		set_country_flag = ist_gang
 		}
@@ -210,5 +211,6 @@ country_event = { #Brits Lose-Bateman 2
 		hidden_effect = {
 		set_country_flag = bateman_back
 		}
+	set_cosmetic_tag = IST_ancap	
 	}
 }
