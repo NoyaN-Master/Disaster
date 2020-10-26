@@ -29,14 +29,14 @@ country_event = { #Pragmatic Nationalism
 	
 	option = {
 		name = pln.2.a 
-        set_country_flag = POL_abc_grows
-		custom_effect_tooltip = POL_abc_grows
+        set_country_flag = PLN_abc_grows
+		custom_effect_tooltip = PLN_abc_grows
 	}
         
         option = {
 		name = pln.2.b 
-        set_country_flag = POL_falanga_grows
-		custom_effect_tooltip = POL_falanga_grows
+        set_country_flag = PLN_falanga_grows
+		custom_effect_tooltip = PLN_falanga_grows
 	}
 }
 
@@ -71,8 +71,8 @@ country_event = { #Church's Role
 	
 	option = {
 		name = pln.4.a
-        set_country_flag = POL_church_grows
-		custom_effect_tooltip = POL_church_grows
+        set_country_flag = PLN_church_grows
+		custom_effect_tooltip = PLN_church_grows
 	}
         
         option = {
@@ -93,8 +93,8 @@ country_event = { #Support Polish Business
 	
 	option = {
 		name = pln.5.a
-        set_country_flag = POL_fantatics_grows
-		custom_effect_tooltip = POL_fanatics_grows
+        set_country_flag = PLN_fantatics_grows
+		custom_effect_tooltip = PLN_fanatics_grows
 	}
         
         option = {
@@ -132,14 +132,14 @@ country_event = { #Deal with Socialist Terrorists
 	}
         
         option = {
-		name = pol.7.b
-        set_country_flag = POL_socialists_grows
+		name = pln.7.b
+        set_country_flag = PLN_socialists_grows
 		custom_effect_tooltip = POL_socialists_grows 
 	}
 
         option = {
 		name = pln.7.c 
-        set_country_flag = POL_communists_grows
+        set_country_flag = PLN_communists_grows
                 custom_effect_tooltip = POL_communists_grows
 	}
 }
@@ -200,7 +200,7 @@ country_event = { #Piłsudski Escaped
 	
 	option = {
 		name = pln.10.a
-        set_country_flag = POL_pilsudski_mad
-		custom_effect_tooltip = POL_pilsudski_mad
+        set_country_flag = PLN_pilsudski_mad
+		custom_effect_tooltip = PLN_pilsudski_mad
 	}
 }
