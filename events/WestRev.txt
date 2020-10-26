@@ -365,6 +365,24 @@ country_event = { #Manisa Congress 1
 		name = wrf.16.a
 		add_political_power = 20
 		custom_effect_tooltip = WRF_Manisa_One
+		hidden_effect = {
+			set_country_flag = {
+				flag = WRF_manisa_kemalist
+				value = 0
+			}
+			set_country_flag = {
+				flag = WRF_manisa_adsizist
+				value = 0
+			}
+			set_country_flag = {
+				flag = WRF_manisa_demokrat
+				value = 0
+			}
+			set_country_flag = {
+				flag = WRF_manisa_anarchist
+				value = 0
+			}
+		}
 		country_event = { id = wrf.17 days = 1 }
 		}
 	}
@@ -383,15 +401,24 @@ country_event = { #Manisa Congress Economy
 	option = {
 		name = wrf.17.a #Kemalist
 		add_political_power = 1
-		custom_effect_tooltip = WRF_Economy_Kemal
-		set_country_flag = WRF_economy_kemalist
+		hidden_effect = {
+			modify_country_flag = {
+				flag = WRF_manisa_kemalist
+				value = 1
+			}
+		}
 		country_event = { id = wrf.18 days = 1 }
 		}
 	option = {
 		name = wrf.17.b #Nasyonel Bolsevik
 		add_political_power = 1
 		custom_effect_tooltip = WRF_Economy_NazBol
-		set_country_flag = WRF_economy_nazbolsh
+		hidden_effect = {
+			modify_country_flag = {
+				flag = WRF_manisa_adsizist
+				value = 1
+			}
+		}
 		country_event = { id = wrf.18 days = 1 }
 		add_popularity = {
 		ideology = revolutionary_nationalist
@@ -403,7 +430,12 @@ country_event = { #Manisa Congress Economy
 		name = wrf.17.c #Nasyonel Bolsevik
 		add_political_power = 1
 		custom_effect_tooltip = WRF_Economy_Democrat
-		set_country_flag = WRF_economy_western
+		hidden_effect = {
+			modify_country_flag = {
+				flag = WRF_manisa_demokrat
+				value = 1
+			}
+		}
 		country_event = { id = wrf.18 days = 1 }
 		add_popularity = {
 		ideology = conservative
@@ -414,7 +446,23 @@ country_event = { #Manisa Congress Economy
 		popularity = 0.05
 		}
 		
-		}	
+		}
+	option = {
+		name = wrf.17.e #anarkiya
+		add_political_power = 1
+		custom_effect_tooltip = WRF_Economy_Anarchy
+		hidden_effect = {
+			modify_country_flag = {
+				flag = WRF_manisa_anarchist
+				value = 1
+			}
+		}
+		country_event = { id = wrf.18 days = 1 }
+		add_popularity = {
+		ideology = revolutionary_anarchist
+		popularity = 0.1
+		}
+		}		
 	}
 country_event = { #Manisa Congress Army
 	id = wrf.18
@@ -433,6 +481,12 @@ country_event = { #Manisa Congress Army
 		add_political_power = 1
 		custom_effect_tooltip = WRF_Army_Kemal
 		set_country_flag = WRF_army_kemalist
+		hidden_effect = {
+			modify_country_flag = {
+				flag = WRF_manisa_kemalist
+				value = 1
+			}
+		}
 		country_event = { id = wrf.19 days = 1 }
 		}
 	option = {
@@ -440,6 +494,12 @@ country_event = { #Manisa Congress Army
 		add_political_power = 1
 		custom_effect_tooltip = WRF_Army_NazBol
 		set_country_flag = WRF_army_nazbolsh
+		hidden_effect = {
+			modify_country_flag = {
+				flag = WRF_manisa_adsizist
+				value = 1
+			}
+		}
 		country_event = { id = wrf.19 days = 1 }
 		add_popularity = {
 		ideology = revolutionary_nationalist
@@ -452,6 +512,12 @@ country_event = { #Manisa Congress Army
 		add_political_power = 1
 		custom_effect_tooltip = WRF_Army_Democrat
 		set_country_flag = WRF_army_western
+		hidden_effect = {
+			modify_country_flag = {
+				flag = WRF_manisa_demokrat
+				value = 1
+			}
+		}
 		country_event = { id = wrf.19 days = 1 }
 		add_popularity = {
 		ideology = conservative
@@ -464,10 +530,16 @@ country_event = { #Manisa Congress Army
 		
 		}
 	option = {
-		name = wrf.18.d #Tengri
+		name = wrf.18.e#Tengri
 		add_political_power = 1
 		custom_effect_tooltip = WRF_Army_tengri
 		set_country_flag = WRF_army_tengri
+		hidden_effect = {
+			modify_country_flag = {
+				flag = WRF_manisa_anarchist
+				value = 1
+			}
+		}
 		country_event = { id = wrf.19 days = 1 }
 		add_popularity = {
 		ideology = revolutionary_anarchist
@@ -491,6 +563,12 @@ country_event = { #Manisa Congress Religion
 		name = wrf.19.a #Kemalist Secularism
 		add_political_power = 1
 		custom_effect_tooltip = WRF_Religion_Kemal
+		hidden_effect = {
+			modify_country_flag = {
+				flag = WRF_manisa_kemalist
+				value = 1
+			}
+		}
 		set_country_flag = WRF_religion_kemalist
 		country_event = { id = wrf.20 days = 1 }
 		}
@@ -499,6 +577,12 @@ country_event = { #Manisa Congress Religion
 		add_political_power = 1
 		custom_effect_tooltip = WRF_religion_NazBol
 		set_country_flag = WRF_religion_nazbolsh
+		hidden_effect = {
+			modify_country_flag = {
+				flag = WRF_manisa_adsizist
+				value = 1
+			}
+		}
 		country_event = { id = wrf.20 days = 1 }
 		add_popularity = {
 		ideology = revolutionary_nationalist
@@ -511,6 +595,12 @@ country_event = { #Manisa Congress Religion
 		add_political_power = 1
 		custom_effect_tooltip = WRF_religion_Democrat
 		set_country_flag = WRF_religion_western
+		hidden_effect = {
+			modify_country_flag = {
+				flag = WRF_manisa_demokrat
+				value = 1
+			}
+		}
 		country_event = { id = wrf.20 days = 1 }
 		add_popularity = {
 		ideology = conservative
@@ -523,10 +613,16 @@ country_event = { #Manisa Congress Religion
 		
 		}
 	option = {
-		name = wrf.19.d #Tengrist Brigades
+		name = wrf.19.e #Tengrist Brigades
 		add_political_power = 1
 		custom_effect_tooltip = WRF_religion_tengri
 		set_country_flag = WRF_religion_tengri
+		hidden_effect = {
+			modify_country_flag = {
+				flag = WRF_manisa_anarchist
+				value = 1
+			}
+		}
 		country_event = { id = wrf.20 days = 1 }
 		add_popularity = {
 		ideology = revolutionary_anarchist
@@ -534,7 +630,7 @@ country_event = { #Manisa Congress Religion
 		}
 		}
 	}
-country_event = { #Manisa Congress Administration
+country_event = { #Manisa Congress Policy
 	id = wrf.20
 	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
 	title = wrf.20.t
@@ -547,31 +643,47 @@ country_event = { #Manisa Congress Administration
 	is_triggered_only = yes
 
 	option = {
-		name = wrf.20.a #Kemalist System
+		name = wrf.20.a #The Great Republic Borders
 		add_political_power = 1
-		custom_effect_tooltip = WRF_Admin_Kemal
-		set_country_flag = WRF_admin_kemalist
-		country_event = { id = wrf.24 days = 1 }
+		custom_effect_tooltip = WRF_Policy_Kemal
+		set_country_flag = WRF_Policy_kemalist
+		hidden_effect = {
+			modify_country_flag = {
+				flag = WRF_manisa_kemalist
+				value = 1
+			}
+		}
+		country_event = { id = wrf.28 days = 1 }
 		}
 		
 	option = {
-		name = wrf.20.b #The Army State
+		name = wrf.20.b #SS larp
 		add_political_power = 1
-		custom_effect_tooltip = WRF_admin_NazBol
-		set_country_flag = WRF_admin_nazbolsh
-		country_event = { id = wrf.22 days = 1 }
+		custom_effect_tooltip = WRF_policy_NazBol
+		set_country_flag = WRF_policy_nazbolsh
+		hidden_effect = {
+			modify_country_flag = {
+				flag = WRF_manisa_adsizist
+				value = 1
+			}
+		}
 		add_popularity = {
 		ideology = revolutionary_nationalist
 		popularity = 0.1
 		}
-		
+		country_event = { id = wrf.28 days = 1 }
 		}
 	option = {
-		name = wrf.20.c #The Turkish Democracy
+		name = wrf.20.c #The Democracy
 		add_political_power = 1
-		custom_effect_tooltip = WRF_admin_Democrat
-		set_country_flag = WRF_admin_western
-		country_event = { id = wrf.21 days = 1 }
+		custom_effect_tooltip = WRF_policy_Democrat
+		set_country_flag = WRF_policy_western
+		hidden_effect = {
+		modify_country_flag = {
+				flag = WRF_manisa_demokrat
+				value = 1
+		}
+		}
 		add_popularity = {
 		ideology = conservative
 		popularity = 0.1
@@ -580,21 +692,28 @@ country_event = { #Manisa Congress Administration
 		ideology = liberal
 		popularity = 0.1
 		}
-		
+		country_event = { id = wrf.28 days = 1 }
 		}
 	option = {
-		name = wrf.20.d #Turkic Confederacy
+		name = wrf.20.e #Turkic Confederacy
 		add_political_power = 1
-		custom_effect_tooltip = WRF_admin_Tengri
-		set_country_flag = WRF_admin_tengri
-		country_event = { id = wrf.23 days = 1 }
+		custom_effect_tooltip = WRF_policy_Tengri
+		set_country_flag = WRF_policy_tengri
+		hidden_effect = {
+			modify_country_flag = {
+				flag = WRF_manisa_anarchist
+				value = 1
+			}
+		}
 		add_popularity = {
 		ideology = revolutionary_anarchist
 		popularity = 0.1
 		}
+		country_event = { id = wrf.28 days = 1 }
 		}
 
 	}
+	
 country_event = { #Manisa Congress Reshuffle Democrat
 	id = wrf.21
 	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
@@ -620,6 +739,75 @@ country_event = { #Manisa Congress Reshuffle Democrat
 		ideology = conservative 
 		long_name = WRF_conservative_party_manisa_long 
 		name = WRF_conservative_party_manisa 
+		}
+		}
+		}	
+	
+country_event = { #Manisa Congress Ending
+	id = wrf.28
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
+	title = wrf.28.t
+	desc = wrf.28.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = wrf.28.a 
+		add_political_power = 1
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = {
+						flag = WRF_manisa_kemalist
+						value > 1
+					}
+				}
+				country_event = {
+					id = wrf.24
+					days = 1
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = {
+						flag = WRF_manisa_adsizist
+						value > 1
+					}
+				}
+				country_event = {
+					id = wrf.22
+					days = 1
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = {
+						flag = WRF_manisa_demokrat
+						value > 1
+					}
+				}
+				country_event = {
+					id = wrf.21
+					days = 1
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = {
+						flag = WRF_manisa_anarchist
+						value > 1
+					}
+				}
+				country_event = {
+					id = wrf.23
+					days = 1
+				}
+			}
+			
 		}
 		}
 		}
