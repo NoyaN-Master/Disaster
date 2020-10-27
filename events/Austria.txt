@@ -1846,7 +1846,7 @@ country_event = { #rising monarchism
 country_event = { #habsburg laws repealed
 	id = aut.58
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.58" }
-	title = aut.58
+	title = aut.58.t
 	desc = aut.58.d
 
 	fire_only_once = yes
@@ -1865,7 +1865,7 @@ country_event = { #habsburg laws repealed
 country_event = { #habsburg laws strenghtened
 	id = aut.59
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.59" }
-	title = aut.59
+	title = aut.59.t
 	desc = aut.59.d
 
 	fire_only_once = yes
@@ -1902,7 +1902,7 @@ country_event = { #the chancellor's speech
 country_event = { #the constitution changed
 	id = aut.61
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.61" }
-	title = aut.61
+	title = aut.61.t
 	desc = aut.61.d
 
 	fire_only_once = yes
@@ -1921,7 +1921,7 @@ country_event = { #the constitution changed
 country_event = { #otto accepts the throne
 	id = aut.62
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.62" }
-	title = aut.62
+	title = aut.62.t
 	desc = aut.62.d
 
 	fire_only_once = yes
@@ -1983,7 +1983,7 @@ country_event = { #otto accepts the throne
 country_event = { #the coronation
 	id = aut.63
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.63" }
-	title = aut.63
+	title = aut.63.t
 	desc = aut.63.d
 
 	fire_only_once = yes
