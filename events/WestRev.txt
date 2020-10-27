@@ -807,7 +807,30 @@ country_event = { #Manisa Congress Ending
 					days = 1
 				}
 			}
-			
+				if = {
+				limit = {
+					has_country_flag = {
+						flag = WRF_manisa_adsizist
+						value < 2
+					}
+					has_country_flag = {
+						flag = WRF_manisa_anarchist
+						value < 2
+					}
+					has_country_flag = {
+						flag = WRF_manisa_demokrat
+						value < 2
+					}
+					has_country_flag = {
+						flag = WRF_manisa_kemalist
+						value < 2
+					}
+				}
+				country_event = {
+					id = wrf.24
+					days = 1
+				}
+			}
 		}
 		}
 		}
