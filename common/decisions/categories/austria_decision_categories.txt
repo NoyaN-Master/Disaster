@@ -1,7 +1,7 @@
 AUT_state_of_emergency_decisions = {
 	#icon = 
 	#picture = 
-	priority = 15
+	priority = 100
 	allowed = {
 		OR = {
 			tag = AUT
@@ -13,3 +13,16 @@ AUT_state_of_emergency_decisions = {
 	}
 }
 
+AUT_political_decisions = {
+    #icon = 
+	#picture = 
+	priority = 70
+	allowed = {
+		OR = {
+			tag = AUT
+		}
+	}
+	visible = {
+		always = yes
+	}
+}
