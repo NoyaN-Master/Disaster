@@ -30,9 +30,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "TBD"
+	name = "Ceaser Legion"
 	#desc = "SES_Zeljko_Raznatovic_desc"
-	#picture = "SES_Zeljko_Raznatovic.tga"
+	picture = "Portrait_TIT_Council.tga"
 	expire = "2020.1.1"
 	ideology = authoritarian_democrat_subideology
 	traits = {

@@ -30,9 +30,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Sheikh Said"
+	name = "Ashirat Council"
 	#desc = "SES_Zeljko_Raznatovic_desc"
-	#picture = "SES_Zeljko_Raznatovic.tga"
+	picture = "Portrait_KUR_Council.tga"
 	expire = "2020.1.1"
 	ideology = autocratic_subideology
 	traits = {
