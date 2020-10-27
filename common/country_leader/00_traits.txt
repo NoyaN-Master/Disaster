@@ -1,5 +1,24 @@
 leader_traits = {
 	
+	AUT_the_nation_personified = {
+	    random = no
+		political_power_factor = 0.08
+		opinion_gain_monthly_factor = 0.18
+		army_core_defence_factor = 0.14
+		army_core_attack_factor = 0.14
+		war_support_factor = 0.07
+		stability_factor = 0.07
+	}
+	
+	unchallenged_leader = {
+	    random = no
+		political_power_factor = 0.16
+		war_support_factor = 0.07
+		stability_factor = 0.07
+		party_popularity_stability_factor = 0.18
+		surrender_limit = 0.06
+	}
+	
     first_soldier_of_the_nation = {
 	    random = no
 		political_power_factor = 0.08

@@ -545,3 +545,43 @@ AUT_freiheit_und_ehre = {
 			army_org_factor = 0.16
 			}
 		}
+		
+AUT_unresolved_monarchy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_unresolved_monarchy" }
+			#picture =
+			modifier = {
+			political_power_gain = -0.04
+			stability_factor = -0.03
+			conscription_factor = -0.05
+			}
+		}
+		
+AUT_royalist_discotent_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_royalist_discotent_1" }
+			#picture =
+			modifier = {
+			political_power_gain = -0.10
+			stability_factor = -0.08
+			conscription_factor = -0.12
+			}
+		}	
+		
+AUT_royalist_discotent_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_royalist_discotent_2" }
+			#picture =
+			modifier = {
+			political_power_gain = -0.06
+			stability_factor = -0.05
+			conscription_factor = -0.05
+			}
+		}	
+		
+AUT_reconciliation_with_monarchy  = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_reconciliation_with_monarchy" }
+			#picture =
+			modifier = {
+			political_power_gain = -0.02
+			stability_factor = -0.01
+			conscription_factor = -0.02
+			}
+		}

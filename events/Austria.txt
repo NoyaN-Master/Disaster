@@ -164,6 +164,7 @@ country_event = { #Succesful Rally
 
 	option = {
 		name = aut.7.a 
+		set_country_flag = AUT_dollfuss_in_power
 		add_political_power = 100
 		add_popularity = {
 			ideology = ultranationalist
@@ -211,6 +212,9 @@ country_event = { #Succesful Rally
 	        }
 			}
         }
+		hidden_effect = {
+		    country_event = { id = aut.57 days = 21 }
+		}
 	}
 }
 
@@ -228,6 +232,7 @@ country_event = { #Radio Address
 
 	option = {
 		name = aut.8.a 
+		set_country_flag = AUT_dollfuss_in_power
 		add_political_power = 50
 		add_popularity = {
 			ideology = ultranationalist
@@ -275,6 +280,9 @@ country_event = { #Radio Address
 	        }
 			}
         }
+		hidden_effect = {
+		    country_event = { id = aut.57 days = 21 }
+		}
 	}
 }
 
@@ -292,6 +300,7 @@ country_event = { #Private Ceremony
 
 	option = {
 		name = aut.9.a 
+		set_country_flag = AUT_dollfuss_in_power
 		add_political_power = -20
 		add_war_support = -0.05
 		add_popularity = {
@@ -340,6 +349,9 @@ country_event = { #Private Ceremony
 	        }
 			}
         }
+		hidden_effect = {
+		    country_event = { id = aut.57 days = 21 }
+		}
 	}
 }
 
@@ -914,6 +926,7 @@ country_event = { #Starhemberg wins
 	
 	option = {
 		name = aut.32.a 
+		set_country_flag = AUT_starhemberg_in_power
 		add_political_power = 100
 		add_stability = 0.05
 		set_country_flag = AUT_stahremberg_won
@@ -972,6 +985,9 @@ country_event = { #Starhemberg wins
 			ideology = authoritarian_democrat
 			popularity = -0.05
 		}
+		hidden_effect = {
+		    country_event = { id = aut.57 days = 21 }
+		}
 	}
 }
 
@@ -987,6 +1003,7 @@ country_event = { #Schussnigg wins
 	
 	option = {
 		name = aut.33.a 
+		set_country_flag = AUT_schussnigg_in_power
 		add_political_power = 100
 		add_stability = 0.05
 		set_country_flag = AUT_schussnigg_won
@@ -1044,6 +1061,9 @@ country_event = { #Schussnigg wins
 		add_popularity = {
 			ideology = autocratic
 			popularity = 0.10
+		}
+		hidden_effect = {
+		    country_event = { id = aut.57 days = 21 }
 		}
 	}
 }
@@ -1167,6 +1187,7 @@ country_event = { #A meeting with Figl
 	
 	option = { 
 		name = aut.37.a 
+		clr_country_flag = AUT_schussnigg_in_power
 		add_political_power = 20
 		custom_effect_tooltip = AUT_flip_to_authdem
 		add_popularity = {
@@ -1363,6 +1384,7 @@ country_event = {
 	
 	option = { 
 		name = aut.43.a 
+		clr_country_flag = AUT_schussnigg_in_power
 		add_political_power = -30
 		custom_effect_tooltip = AUT_flip_to_ultranat
 		hidden_effect = {
@@ -1727,5 +1749,251 @@ country_event = { #schussnigg's little accident
 			ideology = ultranationalist
 			popularity = 0.02
 		}
+	}
+}
+
+country_event = { #meeting otto
+	id = aut.55
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.55" }
+	title = aut.55.t
+	desc = aut.55.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = aut.55.a
+		trigger = {
+			OR = {	
+				has_country_flag = AUT_dollfuss_in_power
+				has_country_flag = AUT_schussnigg_in_power
+			}
+		}
+		add_political_power = 40
+		add_stability = -0.02
+		add_popularity = {
+			ideology = ultranationalist
+			popularity = 0.03
+		}
+		set_country_flag = AUT_distanced_from_monarchists
+		hidden_effect = {
+		    country_event = { id = aut.56 days = 40 }
+		}
+	}
+	
+	option = { 
+		name = aut.55.b
+		trigger = {
+			OR = {	
+				has_country_flag = AUT_dollfuss_in_power
+				has_country_flag = AUT_starhemberg_in_power
+				has_country_flag = AUT_schussnigg_in_power
+			}
+		}
+		add_political_power = -100
+		add_stability = 0.06
+		add_popularity = {
+			ideology = ultranationalist
+			popularity = 0.03
+		}
+        add_popularity = {
+			ideology = autocratic
+			popularity = 0.03
+		}
+		set_country_flag = AUT_promises_monarchy
+	}
+}
+
+country_event = { #monarchists angry
+	id = aut.56
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.56" }
+	title = aut.56.t
+	desc = aut.56.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = aut.56.a
+		add_political_power = -60
+		swap_ideas = {
+		    remove_idea = AUT_unresolved_monarchy
+			add_idea = AUT_royalist_discotent_1
+		}
+		set_country_flag = AUT_distanced_from_monarchists
+	}
+}
+
+country_event = { #rising monarchism
+	id = aut.57
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.57" }
+	title = aut.57.t
+	desc = aut.57.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = aut.57.a
+		custom_effect_tooltip = AUT_has_to_meet_otto
+		set_country_flag = AUT_needs_to_meet_otto
+	}
+}
+
+country_event = { #habsburg laws repealed
+	id = aut.58
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.58" }
+	title = aut.58
+	desc = aut.58.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = aut.58.a
+		swap_ideas = {
+		    remove_idea = AUT_unresolved_monarchy
+			add_idea = AUT_reconciliation_with_monarchy
+		}
+	}
+}
+
+country_event = { #habsburg laws strenghtened
+	id = aut.59
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.59" }
+	title = aut.59
+	desc = aut.59.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = aut.59.a
+		add_political_power = 30
+		add_stability = 0.03
+	}
+}
+
+country_event = { #the chancellor's speech
+	id = aut.60
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.60" }
+	title = aut.60
+	desc = aut.60.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = aut.60.a
+		add_political_power = 10
+		remove_ideas = AUT_reconciliation_with_monarchy
+		hidden_effect = {
+		    country_event = { id = aut.61 days = 14 }
+		}
+	}
+}
+
+country_event = { #the constitution changed
+	id = aut.61
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.61" }
+	title = aut.61
+	desc = aut.61.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = aut.61.a
+		add_political_power = 15
+		hidden_effect = {
+		    country_event = { id = aut.62 days = 7 }
+		}
+	}
+}
+
+country_event = { #otto accepts the throne
+	id = aut.62
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.62" }
+	title = aut.62
+	desc = aut.62.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = aut.62.a
+		add_political_power = 30
+		add_stability = 0.06
+		add_war_support = 0.06
+		hidden_effect = {
+		    country_event = { id = aut.63 days = 56 }
+		}
+		retire_country_leader = yes
+			retire_ideology_leader = autocratic
+			retire_ideology_leader = authoritarian_democrat
+			retire_ideology_leader = conservative
+			create_country_leader = {
+	            name = "Otto"
+	            desc = "AUT_Otto_desc"
+	            picture = "AUT_Otto.tga"
+	            expire = "2020.1.1"
+	            ideology = ultranationalist_subideology
+	            traits = {
+	        }
+			}
+	        create_country_leader = {
+	            name = "Otto"
+	            desc = "AUT_Otto_desc"
+	            picture = "AUT_Otto.tga"
+	            expire = "2020.1.1"
+	            ideology = autocratic_subideology
+	            traits = {
+	        }
+			}
+	        create_country_leader = {
+	            name = "Otto"
+	            desc = "AUT_Otto_desc"
+	            picture = "AUT_Otto.tga"
+	            expire = "2020.1.1"
+	            ideology = authoritarian_democrat_subideology
+	            traits = {
+	        }
+			}
+	        create_country_leader = {
+	        name = "Otto"
+	        desc = "AUT_Otto_desc"
+	        picture = "AUT_Otto.tga"
+	        expire = "2020.1.1"
+	        ideology = conservative_subideology
+	        traits = {
+	        }
+			}
+		}
+	}
+}
+
+country_event = { #the coronation
+	id = aut.63
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.63" }
+	title = aut.63
+	desc = aut.63.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = aut.63.a
+		add_political_power = 20
+		add_stability = 0.04
+		add_war_support = 0.04
 	}
 }

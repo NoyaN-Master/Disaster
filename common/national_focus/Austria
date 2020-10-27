@@ -51,10 +51,7 @@ focus_tree = {
 			factor = 60
 		}
 		available = {
-			has_country_leader = {
-				name = "Engelbert Dollfuss"
-				ruling_only = yes
-			}					
+			has_country_flag = AUT_dollfuss_in_power				
 		}		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -95,10 +92,7 @@ focus_tree = {
 			factor = 60
 		}
 		available = {
-			has_country_leader = {
-				name = "Engelbert Dollfuss"
-				ruling_only = yes
-			}					
+			has_country_flag = AUT_dollfuss_in_power						
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -120,10 +114,7 @@ focus_tree = {
 		factor = 40
 	}
 	available = {
-		has_country_leader = {
-			name = "Engelbert Dollfuss"
-			ruling_only = yes
-		}					
+		has_country_flag = AUT_dollfuss_in_power					
 	}	
 	cancel_if_invalid = yes
 	continue_if_invalid = no
@@ -146,10 +137,7 @@ focus_tree = {
 			factor = 70
 		}
 		available = {
-			has_country_leader = {
-				name = "Engelbert Dollfuss"
-				ruling_only = yes
-			}					
+			has_country_flag = AUT_dollfuss_in_power				
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -174,10 +162,7 @@ focus_tree = {
 			factor = 50
 		}
 		available = {
-			has_country_leader = {
-				name = "Engelbert Dollfuss"
-				ruling_only = yes
-			}					
+			has_country_flag = AUT_dollfuss_in_power					
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -200,10 +185,7 @@ focus_tree = {
 			factor = 50
 		}
 		available = {
-			has_country_leader = {
-				name = "Engelbert Dollfuss"
-				ruling_only = yes
-			}					
+			has_country_flag = AUT_dollfuss_in_power					
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -243,10 +225,7 @@ focus_tree = {
 			factor = 60
 		}
 		available = {
-			has_country_leader = {
-				name = "Engelbert Dollfuss"
-				ruling_only = yes
-			}					
+			has_country_flag = AUT_dollfuss_in_power						
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -270,10 +249,7 @@ focus_tree = {
 			factor = 70
 		}
 		available = {
-			has_country_leader = {
-				name = "Engelbert Dollfuss"
-				ruling_only = yes
-			}					
+			has_country_flag = AUT_dollfuss_in_power						
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -315,10 +291,7 @@ focus_tree = {
 			factor = 80
 		}
 		available = {
-			has_country_leader = {
-				name = "Engelbert Dollfuss"
-				ruling_only = yes
-			}					
+			has_country_flag = AUT_dollfuss_in_power				
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -344,10 +317,7 @@ focus_tree = {
 			factor = 40
 		}
 		available = {
-			has_country_leader = {
-				name = "Engelbert Dollfuss"
-				ruling_only = yes
-			}					
+			has_country_flag = AUT_dollfuss_in_power					
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -369,10 +339,7 @@ focus_tree = {
 			factor = 60
 		}
 		available = {
-			has_country_leader = {
-				name = "Engelbert Dollfuss"
-				ruling_only = yes
-			}					
+			has_country_flag = AUT_dollfuss_in_power				
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -394,10 +361,7 @@ focus_tree = {
 			factor = 70
 		}
 		available = {
-			has_country_leader = {
-				name = "Engelbert Dollfuss"
-				ruling_only = yes
-			}					
+			has_country_flag = AUT_dollfuss_in_power				
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -422,10 +386,7 @@ focus_tree = {
 			factor = 60
 		}
 		available = {
-			has_country_leader = {
-				name = "Engelbert Dollfuss"
-				ruling_only = yes
-			}					
+			has_country_flag = AUT_dollfuss_in_power			
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -453,10 +414,7 @@ focus_tree = {
 			factor = 50
 		}
 		available = {
-			has_country_leader = {
-				name = "Engelbert Dollfuss"
-				ruling_only = yes
-			}					
+			has_country_flag = AUT_dollfuss_in_power					
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -498,10 +456,7 @@ focus_tree = {
 			factor = 80
 		}
 		available = {
-			has_country_leader = {
-				name = "Engelbert Dollfuss"
-				ruling_only = yes
-			}					
+			has_country_flag = AUT_dollfuss_in_power				
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -526,10 +481,7 @@ focus_tree = {
 			factor = 100
 		}
 		available = {
-			has_country_leader = {
-				name = "Engelbert Dollfuss"
-				ruling_only = yes
-			}					
+			has_country_flag = AUT_dollfuss_in_power				
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -551,10 +503,7 @@ focus_tree = {
 			factor = 40
 		}
 		available = {
-			has_country_leader = {
-				name = "Engelbert Dollfuss"
-				ruling_only = yes
-			}					
+			has_country_flag = AUT_dollfuss_in_power					
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -575,10 +524,7 @@ focus_tree = {
 			factor = 70
 		}
 		available = {
-			has_country_leader = {
-				name = "Engelbert Dollfuss"
-				ruling_only = yes
-			}					
+			has_country_flag = AUT_dollfuss_in_power					
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -599,10 +545,7 @@ focus_tree = {
 			factor = 45
 		}
 		available = {
-			has_country_leader = {
-				name = "Engelbert Dollfuss"
-				ruling_only = yes
-			}					
+			has_country_flag = AUT_dollfuss_in_power			
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -627,10 +570,7 @@ focus_tree = {
 			factor = 45
 		}
 		available = {
-			has_country_leader = {
-				name = "Engelbert Dollfuss"
-				ruling_only = yes
-			}					
+			has_country_flag = AUT_dollfuss_in_power				
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -654,10 +594,7 @@ focus_tree = {
 			factor = 40
 		}
 		available = {
-			has_country_leader = {
-				name = "Engelbert Dollfuss"
-				ruling_only = yes
-			}					
+			has_country_flag = AUT_dollfuss_in_power				
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -679,10 +616,7 @@ focus_tree = {
 			factor = 50
 		}
 		available = {
-			has_country_leader = {
-				name = "Engelbert Dollfuss"
-				ruling_only = yes
-			}					
+			has_country_flag = AUT_dollfuss_in_power				
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -704,10 +638,7 @@ focus_tree = {
 			factor = 50
 		}
 		available = {
-			has_country_leader = {
-				name = "Engelbert Dollfuss"
-				ruling_only = yes
-			}					
+			has_country_flag = AUT_dollfuss_in_power					
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -733,10 +664,7 @@ focus_tree = {
 			factor = 50
 		}
 		available = {
-			has_country_leader = {
-				name = "Engelbert Dollfuss"
-				ruling_only = yes
-			}					
+			has_country_flag = AUT_dollfuss_in_power					
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -760,10 +688,7 @@ focus_tree = {
 			factor = 70
 		}
 		available = {
-			has_country_leader = {
-				name = "Engelbert Dollfuss"
-				ruling_only = yes
-			}					
+			has_country_flag = AUT_dollfuss_in_power				
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -785,10 +710,7 @@ focus_tree = {
 			factor = 60
 		}
 		available = {
-			has_country_leader = {
-				name = "Engelbert Dollfuss"
-				ruling_only = yes
-			}					
+			has_country_flag = AUT_dollfuss_in_power				
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -813,10 +735,7 @@ focus_tree = {
 			factor = 70
 		}
 		available = {
-			has_country_leader = {
-				name = "Engelbert Dollfuss"
-				ruling_only = yes
-			}					
+			has_country_flag = AUT_dollfuss_in_power				
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -842,10 +761,7 @@ focus_tree = {
 			factor = 70
 		}
 		available = {
-			has_country_leader = {
-				name = "Engelbert Dollfuss"
-				ruling_only = yes
-			}					
+			has_country_flag = AUT_dollfuss_in_power				
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -870,10 +786,7 @@ focus_tree = {
 			factor = 100
 		}
 		available = {
-			has_country_leader = {
-				name = "Engelbert Dollfuss"
-				ruling_only = yes
-			}					
+			has_country_flag = AUT_dollfuss_in_power			
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -923,10 +836,7 @@ focus_tree = {
 			factor = 1000
 		}
 		available = {
-			has_country_leader = {
-				name = "Kurt Schussnigg"
-				ruling_only = yes
-			}					
+			has_country_flag = AUT_schussnigg_in_power					
             has_government = ultranationalist			
 		}	
 		cancel_if_invalid = yes
@@ -949,10 +859,7 @@ focus_tree = {
 			factor = 60
 		}
 		available = {
-			has_country_leader = {
-				name = "Kurt Schussnigg"
-				ruling_only = yes
-			}			
+			has_country_flag = AUT_schussnigg_in_power			
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -991,10 +898,7 @@ focus_tree = {
 			factor = 40
 		}
 		available = {
-			has_country_leader = {
-				name = "Kurt Schussnigg"
-				ruling_only = yes
-			}			
+			has_country_flag = AUT_schussnigg_in_power				
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1018,10 +922,7 @@ focus_tree = {
 			factor = 50
 		}
 		available = {
-			has_country_leader = {
-				name = "Kurt Schussnigg"
-				ruling_only = yes
-			}			
+			has_country_flag = AUT_schussnigg_in_power				
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1047,10 +948,7 @@ focus_tree = {
 			factor = 60
 		}
 		available = {
-			has_country_leader = {
-				name = "Kurt Schussnigg"
-				ruling_only = yes
-			}			
+			has_country_flag = AUT_schussnigg_in_power				
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1091,10 +989,7 @@ focus_tree = {
 			factor = 50
 		}
 		available = {
-			has_country_leader = {
-				name = "Kurt Schussnigg"
-				ruling_only = yes
-			}			
+			has_country_flag = AUT_schussnigg_in_power				
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1129,10 +1024,7 @@ focus_tree = {
 			factor = 60
 		}
 		available = {
-			has_country_leader = {
-				name = "Kurt Schussnigg"
-				ruling_only = yes
-			}			
+			has_country_flag = AUT_schussnigg_in_power				
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1189,10 +1081,7 @@ focus_tree = {
 			factor = 60
 		}
 		available = {
-			has_country_leader = {
-				name = "Kurt Schussnigg"
-				ruling_only = yes
-			}			
+			has_country_flag = AUT_schussnigg_in_power					
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1217,10 +1106,7 @@ focus_tree = {
 			factor = 50
 		}
 		available = {
-			has_country_leader = {
-				name = "Kurt Schussnigg"
-				ruling_only = yes
-			}			
+			has_country_flag = AUT_schussnigg_in_power					
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1246,10 +1132,7 @@ focus_tree = {
 			factor = 70
 		}
 		available = {
-			has_country_leader = {
-				name = "Kurt Schussnigg"
-				ruling_only = yes
-			}			
+			has_country_flag = AUT_schussnigg_in_power				
 		}	
 		select_effect = {
 			if = {
@@ -1284,10 +1167,7 @@ focus_tree = {
 			factor = 40
 		}
 		available = {
-			has_country_leader = {
-				name = "Kurt Schussnigg"
-				ruling_only = yes
-			}			
+			has_country_flag = AUT_schussnigg_in_power			
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1311,10 +1191,7 @@ focus_tree = {
 			factor = 50
 		}
 		available = {
-			has_country_leader = {
-				name = "Kurt Schussnigg"
-				ruling_only = yes
-			}			
+			has_country_flag = AUT_schussnigg_in_power				
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1336,10 +1213,7 @@ focus_tree = {
 			factor = 100
 		}
 		available = {
-			has_country_leader = {
-				name = "Kurt Schussnigg"
-				ruling_only = yes
-			}			
+			has_country_flag = AUT_schussnigg_in_power				
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1361,10 +1235,7 @@ focus_tree = {
 			factor = 60
 		}
 		available = {
-			has_country_leader = {
-				name = "Kurt Schussnigg"
-				ruling_only = yes
-			}			
+			has_country_flag = AUT_schussnigg_in_power					
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1386,10 +1257,7 @@ focus_tree = {
 			factor = 70
 		}
 		available = {
-			has_country_leader = {
-				name = "Kurt Schussnigg"
-				ruling_only = yes
-			}			
+			has_country_flag = AUT_schussnigg_in_power				
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1414,10 +1282,7 @@ focus_tree = {
 			factor = 100
 		}
 		available = {
-			has_country_leader = {
-				name = "Ernst Rudiger Starhemberg"
-				ruling_only = yes
-			}			
+			has_country_flag = AUT_starhemberg_in_power				
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1440,10 +1305,7 @@ focus_tree = {
 			factor = 50
 		}
 		available = {
-			has_country_leader = {
-				name = "Ernst Rudiger Starhemberg"
-				ruling_only = yes
-			}			
+			has_country_flag = AUT_starhemberg_in_power				
 		}	
 		select_effect = {
 			country_event = { id = aut.52 days = 14 }
@@ -1475,10 +1337,7 @@ focus_tree = {
 			factor = 60
 		}
 		available = {
-			has_country_leader = {
-				name = "Ernst Rudiger Starhemberg"
-				ruling_only = yes
-			}			
+			has_country_flag = AUT_starhemberg_in_power			
 		}	
 		select_effect = {
 			country_event = { id = aut.49 days = 14 }
@@ -1502,10 +1361,7 @@ focus_tree = {
 			factor = 70
 		}
 		available = {
-			has_country_leader = {
-				name = "Ernst Rudiger Starhemberg"
-				ruling_only = yes
-			}			
+			has_country_flag = AUT_starhemberg_in_power		
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1545,10 +1401,7 @@ focus_tree = {
 			factor = 70
 		}
 		available = {
-			has_country_leader = {
-				name = "Ernst Rudiger Starhemberg"
-				ruling_only = yes
-			}			
+			has_country_flag = AUT_starhemberg_in_power		
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1589,10 +1442,7 @@ focus_tree = {
 			factor = 50
 		}
 		available = {
-			has_country_leader = {
-				name = "Ernst Rudiger Starhemberg"
-				ruling_only = yes
-			}			
+			has_country_flag = AUT_starhemberg_in_power			
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1613,10 +1463,7 @@ focus_tree = {
 			factor = 70
 		}
 		available = {
-			has_country_leader = {
-				name = "Ernst Rudiger Starhemberg"
-				ruling_only = yes
-			}			
+			has_country_flag = AUT_starhemberg_in_power	
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1655,10 +1502,7 @@ focus_tree = {
 			factor = 60
 		}
 		available = {
-			has_country_leader = {
-				name = "Ernst Rudiger Starhemberg"
-				ruling_only = yes
-			}			
+			has_country_flag = AUT_starhemberg_in_power				
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1700,10 +1544,7 @@ focus_tree = {
 			factor = 50
 		}
 		available = {
-			has_country_leader = {
-				name = "Ernst Rudiger Starhemberg"
-				ruling_only = yes
-			}			
+			has_country_flag = AUT_starhemberg_in_power			
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1728,10 +1569,7 @@ focus_tree = {
 			factor = 50
 		}
 		available = {
-			has_country_leader = {
-				name = "Ernst Rudiger Starhemberg"
-				ruling_only = yes
-			}			
+			has_country_flag = AUT_starhemberg_in_power			
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1756,10 +1594,7 @@ focus_tree = {
 			factor = 55
 		}
 		available = {
-			has_country_leader = {
-				name = "Ernst Rudiger Starhemberg"
-				ruling_only = yes
-			}			
+			has_country_flag = AUT_starhemberg_in_power				
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1810,10 +1645,7 @@ focus_tree = {
 			factor = 60
 		}
 		available = {
-			has_country_leader = {
-				name = "Ernst Rudiger Starhemberg"
-				ruling_only = yes
-			}			
+			has_country_flag = AUT_starhemberg_in_power				
 		}	
 		select_effect = {
 			country_event = { id = aut.47 days = 14 }
@@ -1841,10 +1673,7 @@ focus_tree = {
 			factor = 100
 		}
 		available = {
-			has_country_leader = {
-				name = "Ernst Rudiger Starhemberg"
-				ruling_only = yes
-			}			
+			has_country_flag = AUT_starhemberg_in_power				
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1866,10 +1695,7 @@ focus_tree = {
 			factor = 60
 		}
 		available = {
-			has_country_leader = {
-				name = "Ernst Rudiger Starhemberg"
-				ruling_only = yes
-			}			
+			has_country_flag = AUT_starhemberg_in_power			
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1894,10 +1720,7 @@ focus_tree = {
 			factor = 60
 		}
 		available = {
-			has_country_leader = {
-				name = "Ernst Rudiger Starhemberg"
-				ruling_only = yes
-			}			
+			has_country_flag = AUT_starhemberg_in_power		
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1907,6 +1730,284 @@ focus_tree = {
 			    remove_idea = AUT_revived_militarism_2
                 add_idea = AUT_freiheit_und_ehre
             }
+        }
+	}
+	
+	focus = {
+		id = AUT_meet_with_otto
+		#icon = 
+		x = 36
+		y = 0
+		cost = 3
+		ai_will_do = {
+			factor = 55
+		}
+		available = {
+			OR = {
+			    has_country_flag = AUT_starhemberg_in_power		
+				has_country_flag = AUT_dollfuss_in_power
+				has_country_flag = AUT_schussnigg_in_power
+			}
+			has_country_flag = AUT_needs_to_meet_otto
+		}	
+		bypass = {
+		    has_country_flag = AUT_didnt_meet_otto
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			country_event = { id = aut.55 days = 1 }
+        }
+	}
+	
+	focus = {
+		id = AUT_a_hesitant_approach
+		#icon = 
+		prerequisite = { focus = AUT_meet_with_otto }
+        mutually_exclusive = { focus = AUT_promise_a_restoration }		
+		x = 35
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			has_country_flag = AUT_distanced_from_monarchists
+			OR = {
+				has_country_flag = AUT_dollfuss_in_power
+				has_country_flag = AUT_schussnigg_in_power
+				has_country_flag = AUT_didnt_meet_otto
+			}
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_stability = 0.06
+			add_political_power = 40
+        }
+	}
+	
+	focus = {
+		id = AUT_promise_a_restoration
+		#icon = 
+		prerequisite = { focus = AUT_meet_with_otto }
+        mutually_exclusive = { focus = AUT_a_hesitant_approach }		
+		x = 37
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_flag = AUT_promises_monarchy
+			OR = {
+				has_country_flag = AUT_dollfuss_in_power
+				has_country_flag = AUT_starhemberg_in_power
+				has_country_flag = AUT_schussnigg_in_power
+			}
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_stability = 0.03
+			add_war_support = 0.04
+			add_political_power = -60
+        }
+	}
+	
+	focus = {
+		id = AUT_absorb_the_eiserne_legion
+		#icon = 
+		prerequisite = { focus = AUT_promise_a_restoration }
+		x = 38
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			OR = {
+				has_country_flag = AUT_dollfuss_in_power
+				has_country_flag = AUT_starhemberg_in_power
+				has_country_flag = AUT_schussnigg_in_power
+			}
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_manpower = 3247
+			add_equipment_to_stockpile = {
+            type = infantry_equipment_1
+            amount = 1263
+			}
+			add_war_support = 0.04
+        }
+	}
+	
+	focus = {
+		id = AUT_undermine_royalists
+		#icon = 
+		prerequisite = { focus = AUT_a_hesitant_approach }	
+		x = 34
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 70
+		}
+		available = {
+			OR = {
+				has_country_flag = AUT_dollfuss_in_power
+				has_country_flag = AUT_schussnigg_in_power
+			}
+			has_idea = AUT_royalist_discotent_1
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = AUT_royalist_discotent_1
+                add_idea = AUT_royalist_discotent_2
+            }
+        }
+	}
+	
+	focus = {
+		id = AUT_remove_the_legitimists
+		#icon = 
+		prerequisite = { focus = AUT_undermine_royalists }	
+		prerequisite = { focus = AUT_clarify_the_laws }
+		x = 35
+		y = 3
+		cost = 4
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			has_country_flag = AUT_distanced_from_monarchists
+			OR = {
+				has_country_flag = AUT_dollfuss_in_power
+				has_country_flag = AUT_schussnigg_in_power
+			}
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			remove_ideas = AUT_royalist_discotent_2
+			add_political_power = 70
+        }
+	}
+	
+	focus = {
+		id = AUT_no_leader_but_one
+		#icon = 
+		prerequisite = { focus = AUT_remove_the_legitimists }	
+		x = 35
+		y = 4
+		cost = 4
+		ai_will_do = {
+			factor = 70
+		}
+		available = {
+			has_country_flag = AUT_distanced_from_monarchists
+			OR = {
+				has_country_flag = AUT_dollfuss_in_power
+				has_country_flag = AUT_schussnigg_in_power
+			}
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_country_leader_trait = unchallenged_leader
+        }
+	}
+	
+	focus = {
+		id = AUT_clarify_the_laws
+		#icon = 
+		prerequisite = { focus = AUT_a_hesitant_approach OR = AUT_promise_a_restoration }	
+		x = 36
+		y = 2
+		cost = 4
+		ai_will_do = {
+			factor = 30
+		}
+		available = {
+		    OR = {
+				has_country_flag = AUT_dollfuss_in_power
+				has_country_flag = AUT_schussnigg_in_power
+				has_country_flag = AUT_starhemberg_in_power
+			}
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			if = {
+			limit = { has_country_flag = AUT_promises_monarchy }
+			country_event = { id = aut.58 days = 1 }
+			}
+			if = {
+			limit = { has_country_flag = AUT_distanced_from_monarchists }
+			country_event = { id = aut.59 days = 1 }
+			}
+        }
+	}
+	
+	focus = {
+		id = AUT_restore_the_monarchy
+		#icon = 
+		prerequisite = { focus = AUT_absorb_the_eiserne_legion }
+        prerequisite = { focus = AUT_clarify_the_laws }
+        mutually_exclusive = { focus = AUT_clarify_the_laws }		
+		x = 37
+		y = 3
+		cost = 7
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_flag = AUT_promises_monarchy
+		}	
+		select_effect = {
+		    country_event = { id = aut.60 days = 7 }
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			custom_effect_tooltip = AUT_restoration
+        }
+	}
+	
+	focus = {
+		id = AUT_the_personification_of_austria
+		#icon = 
+		prerequisite = { focus = AUT_restore_the_monarchy }
+        mutually_exclusive = { focus = AUT_clarify_the_laws }		
+		x = 37
+		y = 4
+		cost = 7
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			has_country_leader = {
+				name = "Otto"
+				ruling_only = yes
+			}	
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_country_leader_trait = AUT_the_nation_personified
         }
 	}
 }

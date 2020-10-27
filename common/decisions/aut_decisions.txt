@@ -349,3 +349,70 @@ AUT_state_of_emergency_decisions = {
     }
 }
 
+AUT_political_decisions = {
+    AUT_crush_socialists = {
+        visible = {
+            has_idea = AUT_socialist_discontent
+        }
+        cost = 50
+		fire_only_once = yes
+        available = {
+            has_idea = AUT_socialist_discontent
+			OR = {
+			    has_country_flag = AUT_starhemberg_in_power		
+				has_country_flag = AUT_dollfuss_in_power
+				has_country_flag = AUT_schussnigg_in_power
+			}
+        }
+		days_remove = 56
+		modifier = {
+            political_power_factor = -0.15
+        }
+		complete_effect = {
+            remove_ideas = AUT_socialist_discontent
+        }
+    }
+	
+	AUT_crush_pan_germanists = {
+        visible = {
+            has_idea = AUT_pan_germanist_discontent
+        }
+        cost = 50
+		fire_only_once = yes
+        available = {
+            has_idea = AUT_pan_germanist_discontent
+			OR = {
+			    has_country_flag = AUT_starhemberg_in_power		
+				has_country_flag = AUT_dollfuss_in_power
+				has_country_flag = AUT_schussnigg_in_power
+			}
+        }
+		days_remove = 28
+		modifier = {
+            political_power_factor = -0.10
+        }
+		complete_effect = {
+            remove_ideas = AUT_pan_germanist_discontent
+        }
+    }
+	
+	AUT_meet_otto = {                          
+        allowed = { tag = AUT }                 
+        available = {      
+            NOT = {
+                NOT = { has_completed_focus = AUT_meet_with_otto }
+            }				
+        }
+        activation = {                       
+            has_country_flag = AUT_needs_to_meet_otto							
+        }
+        is_good = no                         
+        selectable_mission = no               
+        days_mission_timeout = 90             
+        timeout_effect = {                    
+            country_event = aut.56 
+            add_stability = -0.10 
+            set_country_flag = AUT_didnt_meet_otto			
+        }	
+    }
+}
