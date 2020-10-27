@@ -1965,7 +1965,6 @@ focus_tree = {
 		#icon = 
 		prerequisite = { focus = AUT_absorb_the_eiserne_legion }
         prerequisite = { focus = AUT_clarify_the_laws }
-        mutually_exclusive = { focus = AUT_clarify_the_laws }		
 		x = 37
 		y = 3
 		cost = 7
@@ -1989,8 +1988,7 @@ focus_tree = {
 	focus = {
 		id = AUT_the_personification_of_austria
 		#icon = 
-		prerequisite = { focus = AUT_restore_the_monarchy }
-        mutually_exclusive = { focus = AUT_clarify_the_laws }		
+		prerequisite = { focus = AUT_restore_the_monarchy }		
 		x = 37
 		y = 4
 		cost = 7
