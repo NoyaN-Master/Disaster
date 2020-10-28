@@ -11,27 +11,21 @@ state={
 	state_category = town
 	
 	history={
-		owner = ABL
+		owner = SOR
 		victory_points = {
 			9914 5
-		}
-		victory_points = {
-			11767 1
 		}
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
 			industrial_complex = 2 
 			air_base = 3
-			11767 = {
-				naval_base = 4
-			}
 		}
 		add_core_of = ABL
 
 	}
 
 	provinces={
-		3448 3884 3896 6900 9780 9875 9914 11762 11767 
+		3448 3884 3896 6900 9780 9875 9914 11762  
 	}
 }

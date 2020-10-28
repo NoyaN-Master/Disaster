@@ -1,0 +1,27 @@
+
+state={
+	id=838
+	name="STATE_838"
+	manpower = 60000
+	
+	state_category = rural
+
+	history={
+		owner = FIU	
+		victory_points = {
+			11767 1
+		}
+		buildings = {
+			infrastructure = 3
+			11767 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = ALB
+		
+	}
+
+	provinces={
+		11767
+	}
+}

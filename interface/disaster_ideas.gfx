@@ -132,4 +132,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ANT/ANT_Pashas_Scheming.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_AUT_unresolved_monarchy"
+		texturefile = "gfx/interface/ideas/AUT/AUT_unresolved_monarchy.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_AUT_struggling_economy"
+		texturefile = "gfx/interface/ideas/AUT/AUT_struggling_economy.tga"
+	}
+
 }	

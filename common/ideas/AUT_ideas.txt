@@ -13,7 +13,7 @@ AUT_standestaat = {
 		
 AUT_sluggish_economy_1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea sluggish_economy_1" }
-			#picture = 
+			picture = AUT_struggling_economy
 			modifier = {
 			consumer_goods_factor = 0.10
 			production_factory_max_efficiency_factor = -0.10
@@ -24,7 +24,7 @@ AUT_sluggish_economy_1 = {
 		
 AUT_sluggish_economy_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea sluggish_economy_2" }
-			#picture = 
+			picture = AUT_struggling_economy
 			modifier = {
 			consumer_goods_factor = 0.05
 			production_factory_max_efficiency_factor = -0.05
@@ -35,7 +35,7 @@ AUT_sluggish_economy_2 = {
 		
 AUT_sluggish_economy_3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea sluggish_economy_3" }
-			#picture = 
+			picture = AUT_struggling_economy
 			modifier = {
 			consumer_goods_factor = 0.03
 			production_factory_max_efficiency_factor = -0.03
@@ -548,7 +548,7 @@ AUT_freiheit_und_ehre = {
 		
 AUT_unresolved_monarchy = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_unresolved_monarchy" }
-			#picture =
+			picture = AUT_unresolved_monarchy
 			modifier = {
 			political_power_gain = -0.04
 			stability_factor = -0.03
