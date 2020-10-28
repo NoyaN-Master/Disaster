@@ -1882,7 +1882,7 @@ country_event = { #habsburg laws strenghtened
 country_event = { #the chancellor's speech
 	id = aut.60
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.60" }
-	title = aut.60
+	title = aut.60.t
 	desc = aut.60.d
 
 	fire_only_once = yes
@@ -1976,7 +1976,6 @@ country_event = { #otto accepts the throne
 	        traits = {
 	        }
 			}
-		}
 	}
 }
 
