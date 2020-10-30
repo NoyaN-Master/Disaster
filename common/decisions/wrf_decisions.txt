@@ -13,29 +13,24 @@ WRF_greek_war_decisions = {
 			country_event = { id = wrf.27 days = 1 }
           }
      }
-	wrf_peace_greece = {
-	available = { 
-          WRF = {
-		  controls_state = 834
-		  }
-     }
-	 cost = 100
-	 complete_effect = {
-	 custom_effect_tooltip = WRF_cuck_greece
-	 white_peace = GRE
-	 WRF = {
-	 add_state_core = 834
-	 set_state_owner = 834
-	 add_political_power = 100
-	 add_manpower = 1000
-	 annex_country = {
-			target = THR
-			transfer_troops = yes
-		}
-	 }
-	add_state_core = 341
-	set_state_owner = 341
-	set_state_owner = 184
-	add_state_core = 184
-	} 
+	WRF_greeks_give_up = {
+        allowed = { tag = WRF}
+        available = {
+            NOT = {
+            controls_state = 834
+            }
+        }
+        activation = {
+            controls_state = 834
+        }
+        is_good = yes
+        selectable_mission = no
+        days_mission_timeout = 60
+        timeout_effect = {
+            country_event = { id = wrf.29 days = 2}
+        }
+        complete_effect = {
+            add_war_support = -0.05
+        }
+    }
 }
