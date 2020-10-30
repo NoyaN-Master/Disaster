@@ -1,0 +1,563 @@
+focus_tree = {
+	id = austrian_revolution_focus
+	country = {
+		factor = 0
+	}
+
+	default = no
+	continuous_focus_position = { x = 800 y = 1000 }
+
+	focus = {
+		id = AUT_the_revolution
+		#icon = 
+		x = 3
+		y = 0
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_flag = AUT_revolution_flag			
+		}		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+		select_effect = {
+		    country_event = { id = aut.64  days = 3 }
+		}
+		completion_reward = {
+			custom_effect_tooltip = AUT_revolution_tooltip
+			add_popularity = {
+			ideology = social_democrat
+			popularity = 0.07
+			}
+			add_popularity = {
+			ideology = authoritarian_socialist
+			popularity = 0.03
+		    }
+			add_popularity = {
+			ideology = liberal
+			popularity = 0.03
+		    }
+        }
+	}
+	
+	focus = {
+		id = AUT_form_a_republican_cabinet
+		prerequisite = { focus = AUT_the_revolution }
+		#icon = 
+		x = 3
+		y = 1
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_flag = AUT_revolution_flag			
+		}		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+		completion_reward = {
+			country_event = { id = aut.65 days = 1 }
+        }
+	}
+	
+	focus = {
+		id = AUT_crush_the_reactionaries
+        prerequisite = { focus = AUT_form_a_republican_cabinet }
+		#icon = 
+		x = 1
+		y = 2
+		cost = 2
+		ai_will_do = {
+			factor = 70
+		}
+		available = {
+			has_country_flag = AUT_revolution_flag			
+		}		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+		completion_reward = {
+			country_event = { id = aut.66 days = 1 }
+			if = {
+				limit = { has_idea = AUT_revolutionary_chaos_1 }
+				swap_ideas = { 
+                    remove_idea = AUT_revolutionary_chaos_1 
+                    add_idea = AUT_revolutionary_chaos_2
+                }
+			}
+			else_if = {
+				limit = { has_idea = AUT_revolutionary_chaos_2 }
+				swap_ideas = { 
+                    remove_idea = AUT_revolutionary_chaos_2 
+                    add_idea = AUT_revolutionary_chaos_3
+                }
+			}
+			else_if = {
+				limit = { has_idea = AUT_revolutionary_chaos_3 }
+				swap_ideas = { 
+                    remove_idea = AUT_revolutionary_chaos_3
+                    add_idea = AUT_revolutionary_chaos_4
+                }
+			}
+		    else_if = {
+				limit = { has_idea = AUT_revolutionary_chaos_4 }
+				remove_ideas = AUT_revolutionary_chaos_4
+			}
+        }
+	}
+	
+	focus = {
+		id = AUT_dismatle_the_standestaat
+		prerequisite = { focus = AUT_form_a_republican_cabinet }
+		#icon = 
+		x = 3
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			has_country_flag = AUT_revolution_flag			
+		}		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+		completion_reward = {
+			remove_ideas = AUT_standestaat
+			if = {
+				limit = { has_idea = AUT_revolutionary_chaos_1 }
+				swap_ideas = { 
+                    remove_idea = AUT_revolutionary_chaos_1 
+                    add_idea = AUT_revolutionary_chaos_2
+                }
+			}
+			else_if = {
+				limit = { has_idea = AUT_revolutionary_chaos_2 }
+				swap_ideas = { 
+                    remove_idea = AUT_revolutionary_chaos_2 
+                    add_idea = AUT_revolutionary_chaos_3
+                }
+			}
+			else_if = {
+				limit = { has_idea = AUT_revolutionary_chaos_3 }
+				swap_ideas = { 
+                    remove_idea = AUT_revolutionary_chaos_3
+                    add_idea = AUT_revolutionary_chaos_4
+                }
+			}
+		    else_if = {
+				limit = { has_idea = AUT_revolutionary_chaos_4 }
+				remove_ideas = AUT_revolutionary_chaos_4
+			}
+			add_popularity = {
+			ideology = ultranationalist
+			popularity = -0.08
+		    }
+        } 
+	}
+	
+	focus = {
+		id = AUT_fight_the_heimwehr
+		prerequisite = { focus = AUT_crush_the_reactionaries }
+		prerequisite = { focus = AUT_dismatle_the_standestaat }
+		#icon = 
+		x = 2
+		y = 3
+		cost = 2
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			has_country_flag = AUT_revolution_flag			
+		}		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+		completion_reward = {
+			swap_ideas = { 
+                remove_idea = AUT_heimwehr_resistance_1
+                add_idea = AUT_heimwehr_resistance_2
+            }
+			country_event = { id = aut.67 days = 1 }
+        } 
+	}
+	
+	focus = {
+		id = AUT_rehabilitate_the_police
+		prerequisite = { focus = AUT_crush_the_reactionaries }
+		#icon = 
+		x = 0
+		y = 3
+		cost = 2
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			has_country_flag = AUT_revolution_flag			
+		}		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+		completion_reward = {
+			if = {
+				limit = { has_idea = AUT_revolutionary_chaos_1 }
+				swap_ideas = { 
+                    remove_idea = AUT_revolutionary_chaos_1 
+                    add_idea = AUT_revolutionary_chaos_2
+                }
+			}
+			else_if = {
+				limit = { has_idea = AUT_revolutionary_chaos_2 }
+				swap_ideas = { 
+                    remove_idea = AUT_revolutionary_chaos_2 
+                    add_idea = AUT_revolutionary_chaos_3
+                }
+			}
+			else_if = {
+				limit = { has_idea = AUT_revolutionary_chaos_3 }
+				swap_ideas = { 
+                    remove_idea = AUT_revolutionary_chaos_3
+                    add_idea = AUT_revolutionary_chaos_4
+                }
+			}
+		    else_if = {
+				limit = { has_idea = AUT_revolutionary_chaos_4 }
+				remove_ideas = AUT_revolutionary_chaos_4
+			}
+			country_event = { id = aut.68 days = 1 }
+        } 
+	}
+	
+	focus = {
+		id = AUT_use_our_paramilitaries
+		prerequisite = { focus = AUT_rehabilitate_the_police }
+		prerequisite = { focus = AUT_fight_the_heimwehr }
+		#icon = 
+		x = 1 
+		y = 4
+		cost = 2
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			has_country_flag = AUT_revolution_flag			
+		}		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+		completion_reward = {
+			add_manpower = 3267
+			add_command_power = 30
+			swap_ideas = { 
+                remove_idea = AUT_heimwehr_resistance_2
+                add_idea = AUT_heimwehr_resistance_3
+            }
+			country_event = { id = aut.69 days = 1 }
+        } 
+	}
+	
+	focus = {
+		id = AUT_secure_our_grip
+		prerequisite = { focus = AUT_use_our_paramilitaries }
+		#icon = 
+		x = 1
+		y = 5
+		cost = 2
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			has_country_flag = AUT_revolution_flag			
+		}		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+		completion_reward = {
+			remove_ideas = AUT_heimwehr_resistance_3
+			add_political_power = 65
+        } 
+	}
+	
+	focus = {
+		id = AUT_initial_reforms
+		prerequisite = { focus = AUT_form_a_republican_cabinet }
+		#icon = 
+		x = 5
+		y = 2
+		cost = 4
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+			has_country_flag = AUT_revolution_flag			
+		}		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+		completion_reward = {
+			swap_ideas = { 
+                remove_idea = AUT_sluggish_economy_1 
+                add_idea = AUT_sluggish_economy_2
+            }
+        } 
+	}
+	
+	focus = {
+		id = AUT_sieze_the_wealth
+		prerequisite = { focus = AUT_initial_reforms }
+		prerequisite = { focus = AUT_dismatle_the_standestaat }
+		mutually_exclusive = { focus = AUT_promise_property_rights }
+		#icon = 
+		x = 4
+		y = 3
+		cost = 2
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+			has_country_flag = AUT_revolution_flag			
+		}		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+		completion_reward = {
+			add_timed_idea = { idea = AUT_wealth_siezed  days = 90 }
+        } 
+	}
+	
+	focus = {
+		id = AUT_promise_property_rights
+		prerequisite = { focus = AUT_initial_reforms }
+		prerequisite = { focus = AUT_dismatle_the_standestaat }
+		mutually_exclusive = { focus = AUT_sieze_the_wealth }
+		#icon = 
+		x = 6
+		y = 3
+		cost = 2
+		ai_will_do = {
+			factor = 70
+		}
+		available = {
+			has_country_flag = AUT_revolution_flag			
+		}		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+		completion_reward = {
+			add_timed_idea = { idea = AUT_property_rights_assured  days = 90 }
+        } 
+	}
+	
+	focus = {
+		id = AUT_secure_the_workers_loyalty
+		prerequisite = { focus = AUT_promise_property_rights OR = AUT_sieze_the_wealth }
+		#icon = 
+		x = 5
+		y = 4
+		cost = 2
+		ai_will_do = {
+			factor = 70
+		}
+		available = {
+			has_country_flag = AUT_revolution_flag			
+		}		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+		completion_reward = {
+			add_stability = 0.08
+			add_popularity = {
+			ideology = social_democrat
+			popularity = 0.04
+			}
+			add_popularity = {
+			ideology = authoritarian_socialist
+			popularity = 0.04
+		    }
+        } 
+	}
+	
+	focus = {
+		id = AUT_further_investments
+		prerequisite = { focus = AUT_secure_the_workers_loyalty }
+		#icon = 
+		x = 5
+		y = 5
+		cost = 4
+		ai_will_do = {
+			factor = 70
+		}
+		available = {
+			has_country_flag = AUT_revolution_flag			
+		}		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+		completion_reward = {
+			swap_ideas = { 
+                remove_idea = AUT_sluggish_economy_2
+                add_idea = AUT_sluggish_economy_3
+            }
+			813 = {
+	        add_building_construction = {
+		    type = industrial_complex
+		    level = 2
+	        }
+			}
+        } 
+	}
+	
+	focus = {
+		id = AUT_secure_foreign_recognition
+		prerequisite = { focus = AUT_dismatle_the_standestaat }
+		#icon = 
+		x = 3
+		y = 4
+		cost = 3
+		ai_will_do = {
+			factor = 70
+		}
+		available = {
+			has_country_flag = AUT_revolution_flag			
+		}		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+		completion_reward = {
+			if = {
+				limit = { has_idea = AUT_revolutionary_chaos_1 }
+				swap_ideas = { 
+                    remove_idea = AUT_revolutionary_chaos_1 
+                    add_idea = AUT_revolutionary_chaos_2
+                }
+			}
+			else_if = {
+				limit = { has_idea = AUT_revolutionary_chaos_2 }
+				swap_ideas = { 
+                    remove_idea = AUT_revolutionary_chaos_2 
+                    add_idea = AUT_revolutionary_chaos_3
+                }
+			}
+			else_if = {
+				limit = { has_idea = AUT_revolutionary_chaos_3 }
+				swap_ideas = { 
+                    remove_idea = AUT_revolutionary_chaos_3
+                    add_idea = AUT_revolutionary_chaos_4
+                }
+			}
+		    else_if = {
+				limit = { has_idea = AUT_revolutionary_chaos_4 }
+				remove_ideas = AUT_revolutionary_chaos_4
+			}
+			country_event = { id = aut.70 days = 1 }
+        } 
+	}
+	
+	focus = {
+		id = AUT_adress_the_nation
+		prerequisite = { focus = AUT_secure_foreign_recognition }
+		#icon = 
+		x = 3
+		y = 5
+		cost = 1
+		ai_will_do = {
+			factor = 70
+		}
+		available = {
+			has_country_flag = AUT_revolution_flag			
+		}		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+		completion_reward = {
+			country_event = { id = aut.70 days = 1 }
+        } 
+	}
+	
+	focus = {
+		id = AUT_draft_a_constitution
+		prerequisite = { focus = AUT_adress_the_nation }
+		prerequisite = { focus = AUT_secure_our_grip }
+		#icon = 
+		x = 2
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 70
+		}
+		available = {
+			has_country_flag = AUT_revolution_flag			
+		}		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+		completion_reward = {
+			custom_effect_tooltip = AUT_constitution_tooltip
+        } 
+	}
+	
+	focus = {
+		id = AUT_rebirth_of_austrian_socialism
+		prerequisite = { focus = AUT_adress_the_nation }
+		prerequisite = { focus = AUT_further_investments }
+		#icon = 
+		x = 4
+		y = 6
+		cost = 4
+		ai_will_do = {
+			factor = 70
+		}
+		available = {
+			has_country_flag = AUT_revolution_flag			
+		}		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+		completion_reward = {
+			add_ideas = AUT_reborn_socialism
+        } 
+	}
+	
+	focus = {
+		id = AUT_to_the_polls
+		prerequisite = { focus = AUT_rebirth_of_austrian_socialism }
+		prerequisite = { focus = AUT_draft_a_constitution }
+		#icon = 
+		x = 3
+		y = 7
+		cost = 4
+		ai_will_do = {
+			factor = 70
+		}
+		available = {
+			has_country_flag = AUT_revolution_flag			
+		}		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+		completion_reward = {
+			custom_effect_tooltip = AUT_finally_elections
+        } 
+	}
+}

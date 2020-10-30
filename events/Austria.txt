@@ -609,8 +609,12 @@ country_event = { #Revolution
 	option = {
 		name = aut.19.a 
 		add_stability = -0.10
+		set_country_flag = AUT_revolution_flag
 		remove_ideas = AUT_state_of_emergency_idea
+		remove_ideas =  AUT_socialist_discotent
 		clr_country_flag = AUT_state_of_emergency_flag
+		clr_country_flag = AUT_power_struggle_flag
+		remove_ideas = AUT_power_struggle_idea
 		set_politics = {
 			ruling_party = social_democrat
 			elections_allowed = no
@@ -631,6 +635,8 @@ country_event = { #Revolution
 			ideology = liberal
 			popularity = 0.05
 		}
+		load_focus_tree = austrian_revolution_focus
+		add_ideas = AUT_revolutionary_chaos_1
 	}
 }
 
@@ -1994,5 +2000,22 @@ country_event = { #the coronation
 		add_political_power = 20
 		add_stability = 0.04
 		add_war_support = 0.04
+	}
+}
+
+country_event = { #heimwehr resistance
+	id = aut.64
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.64" }
+	title = aut.64.t
+	desc = aut.64.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = aut.64.a
+		add_political_power = -20
+		add_ideas = AUT_heimwehr_resistance_1
 	}
 }

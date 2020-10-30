@@ -585,3 +585,109 @@ AUT_reconciliation_with_monarchy  = {
 			conscription_factor = -0.02
 			}
 		}
+		
+AUT_heimwehr_resistance_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_heimwehr_resistance_1" }
+			#picture =
+			modifier = {
+			political_power_gain = -0.15
+			stability_factor = -0.12
+			conscription_factor = -0.18
+			}
+		}	
+		
+AUT_heimwehr_resistance_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_heimwehr_resistance_2" }
+			#picture =
+			modifier = {
+			political_power_gain = -0.10
+			stability_factor = -0.08
+			conscription_factor = -0.12
+			}
+		}	
+		
+AUT_heimwehr_resistance_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_heimwehr_resistance_3" }
+			#picture =
+			modifier = {
+			political_power_gain = -0.05
+			stability_factor = -0.04
+			conscription_factor = -0.06
+			}
+		}	
+		
+AUT_wealth_siezed = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_wealth_siezed" }
+			#picture =
+			modifier = {
+			stability_factor = -0.10
+			political_power_factor = 0.05
+			consumer_goods_factor = -0.12
+			}
+		}	
+		
+AUT_property_rights_assured = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_property_rights_assured" }
+			#picture =
+			modifier = {
+			stability_factor = 0.12
+			political_power_factor = -0.07
+			consumer_goods_factor = 0.08
+			}
+		}	
+		
+AUT_revolutionary_chaos_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_revolutionary_chaos_1" }
+			#picture =
+			modifier = {
+			stability_weekly = -0.03
+			stability_factor = -0.08
+			political_power_factor = -0.20
+			army_org_factor = -0.20
+			}
+		}
+		
+AUT_revolutionary_chaos_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_revolutionary_chaos_2" }
+			#picture =
+			modifier = {
+			stability_weekly = -0.02
+			stability_factor = -0.06
+			political_power_factor = -0.15
+			army_org_factor = -0.15
+			}
+		}
+		
+AUT_revolutionary_chaos_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_revolutionary_chaos_3" }
+			#picture =
+			modifier = {
+			stability_weekly = -0.01
+			stability_factor = -0.04
+			political_power_factor = -0.10
+			army_org_factor = -0.10
+			}
+		}
+		
+AUT_revolutionary_chaos_4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_revolutionary_chaos_4" }
+			#picture =
+			modifier = {
+			stability_factor = -0.02
+			political_power_factor = -0.05
+			army_org_factor = -0.05
+			}
+		}
+		
+AUT_reborn_socialism = {
+            on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_reborn_socialism" }
+			#picture = 
+			modifier = {
+			war_support_factor = 0.02
+			stability_factor = 0.06
+			political_power_factor = 0.06
+			conscription_factor = 0.03
+			party_popularity_stability_factor = 0.08
+			production_factory_max_efficiency_factor = 0.04
+			}
+		}
