@@ -214,3 +214,72 @@ country_event = { #Brits Lose-Bateman 2
 	set_cosmetic_tag = IST_ancap	
 	}
 }
+country_event = { #Brits Lose-Bateman 1
+	id = crw.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.10.t
+	desc = crw.10.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = { #Bateman
+		name = crw.10.a
+		custom_effect_tooltip = ist_maltepe_conferance
+		swap_ideas = {
+		remove_idea = CRW_Memories_Operation
+		add_idea = CRW_Memories_Operation_2
+		}
+		swap_ideas = {
+		remove_idea = CRW_Independent_City
+		add_idea = CRW_Minarchy
+		}
+		country_event = {id = crw.11 days = 3}
+	}
+
+}
+
+country_event = { #Brits Lose-Bateman 1
+	id = crw.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.11.t
+	desc = crw.11.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = { #Bateman
+		name = crw.11.a
+		custom_effect_tooltip = ist_maltepe_conferance_2
+		remove_idea = CRW_Gang_Unrest
+		swap_ideas = {
+		remove_idea = CRW_Race_War
+		add_idea = CRW_Race_War_Worsen
+		}
+		complete_national_focus = IST_istanbulification
+	}
+}
+country_event = { #Brits Lose-Bateman 1
+	id = crw.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.12.t
+	desc = crw.12.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = { #Bateman
+		name = crw.12.a
+		custom_effect_tooltip = ist_maltepe_conferance_2
+		add_idea = CRW_building_bateman_2
+	}
+}

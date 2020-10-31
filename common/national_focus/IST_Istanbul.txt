@@ -16,11 +16,27 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 45
 		y = 7
-		cost = 10
+		cost = 3
 		available_if_capitulated = yes
+		available = {
+		has_idea = CRW_building_bateman_2
+		}
 		prerequisite = { focus = IST_nyc_inspiration }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		797 = {
+		add_building_construction = {
+		type = infrastructure 
+		level = 1
+		instant_build = yes
+		}
+		}
+		swap_ideas = {
+			add_idea = CRW_Istanbul_Dreaming
+			remove_idea = CRW_Race_War_Worsen_4
+		}
 		}
 	}
 
@@ -30,7 +46,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 45
 		y = 5
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = IST_individualist_society 
@@ -41,6 +57,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		swap_ideas = {
+			add_idea = CRW_Race_War_Worsen_3
+			remove_idea = CRW_Race_War_Worsen_2
+		}
+		add_ideas = CRW_allowed_concerts
+		}
 	}
 
 	#Focus for Beacon Of The Middle East
@@ -49,11 +72,20 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 47
 		y = 5
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
+		available = {
+		has_completed_focus = IST_autonomy_of_gender
+		}
 		prerequisite = { focus = IST_tollywood }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+			add_idea = CRW_blues
+			remove_idea = CRW_allowed_concerts
+			}
 		}
 	}
 
@@ -63,11 +95,19 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 47
 		y = 4
-		cost = 10
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_istanbulification }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+			add_idea =  CRW_Race_War_Worsen_2
+			remove_idea = CRW_Race_War_Worsen
+			###will add some advisors
+			}
+			add_ideas = CRW_tollywood
 		}
 	}
 
@@ -77,11 +117,24 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 43
 		y = 5
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_individualist_society }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		797 = {
+		add_building_construction = {
+		type = infrastructure 
+		level = 1
+		instant_build = yes
+		}
+		}
+		swap_ideas = {
+			add_idea = CRW_individual_2
+			remove_idea = CRW_individual
+		}
 		}
 	}
 
@@ -91,11 +144,23 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 45
 		y = 3
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_maltepe_conference }
+		available = {
+		has_idea = CRW_Race_War_Worsen
+		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		797 = {
+		add_building_construction = {
+		type = infrastructure 
+		level = 1
+		instant_build = yes
+		}
+		}
 		}
 	}
 
@@ -105,7 +170,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 26
 		y = 5
-		cost = 10
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_welfare_for_residents }
 		ai_will_do = {
@@ -119,7 +184,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 22
 		y = 3
-		cost = 10
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_organize_the_gangs }
 		ai_will_do = {
@@ -133,7 +198,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 18
 		y = 3
-		cost = 10
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_organize_the_gangs }
 		ai_will_do = {
@@ -147,7 +212,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 26
 		y = 4
-		cost = 10
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_british_crooks }
 		ai_will_do = {
@@ -161,7 +226,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 18
 		y = 4
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_turkish_brawlers }
 		ai_will_do = {
@@ -175,7 +240,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 9
 		y = 4
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_support_the_armenian_bourgouise }
 		ai_will_do = {
@@ -189,7 +254,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 9
 		y = 6
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = IST_sanction_cib 
@@ -211,7 +276,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 4
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_the_casino_act }
 		ai_will_do = {
@@ -288,7 +353,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 7
 		y = 1
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_the_house_always_wins }
 		ai_will_do = {
@@ -302,7 +367,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 4
 		y = 8
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_yuppie_culture }
 		ai_will_do = {
@@ -316,7 +381,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 9
 		y = 2
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_the_casino_act }
 		ai_will_do = {
@@ -330,7 +395,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 2
 		y = 8
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_export_entertainment }
 		ai_will_do = {
@@ -344,7 +409,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 9
 		y = 3
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_jewelry_inspections }
 		ai_will_do = {
@@ -358,7 +423,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 3
 		y = 5
-		cost = 10
+		cost = 6
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_ottomanrotschild_legacy }
 		ai_will_do = {
@@ -372,7 +437,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 4
 		y = 3
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_penthouse_debate }
 		ai_will_do = {
@@ -386,7 +451,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 11
 		y = 5
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_turkish_bussineses }
 		ai_will_do = {
@@ -400,7 +465,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 3
 		y = 4
-		cost = 10
+		cost = 6
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_who_holds_the_shares }
 		ai_will_do = {
@@ -414,7 +479,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 3
 		y = 6
-		cost = 10
+		cost = 7
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_cool_it_with_the_antisemitic_remarks }
 		ai_will_do = {
@@ -428,7 +493,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 2
 		y = 7
-		cost = 10
+		cost = 5s
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_the_switzerland_job }
 		ai_will_do = {
@@ -442,7 +507,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 4
 		y = 7
-		cost = 10
+		cost = 6
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_the_switzerland_job }
 		ai_will_do = {
@@ -456,7 +521,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 3
 		y = 9
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = IST_yuppie_culture 
@@ -475,7 +540,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 7
 		y = 4
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_support_the_armenian_bourgouise }
 		ai_will_do = {
@@ -489,7 +554,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 11
 		y = 4
-		cost = 10
+		cost = 6
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_support_the_armenian_bourgouise }
 		ai_will_do = {
@@ -503,7 +568,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 7
 		y = 5
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_interview_the_rums }
 		ai_will_do = {
@@ -517,7 +582,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 9
 		y = 5
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_support_wilsonian_armenia }
 		ai_will_do = {
@@ -531,7 +596,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 9
 		y = 7
-		cost = 10
+		cost = 11
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_diversity_is_our_strength }
 		ai_will_do = {
@@ -545,7 +610,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 22
 		y = 5
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_jewelry_heists }
 		ai_will_do = {
@@ -559,7 +624,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 24
 		y = 1
-		cost = 10
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_gangs_assemble }
 		ai_will_do = {
@@ -573,7 +638,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 26
 		y = 3
-		cost = 10
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_organize_the_gangs }
 		ai_will_do = {
@@ -587,7 +652,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 24
 		y = 2
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_bread_and_roses }
 		ai_will_do = {
@@ -601,7 +666,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 22
 		y = 4
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_armenian_thieves }
 		ai_will_do = {
@@ -615,7 +680,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 18
 		y = 5
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_the_greywolf_militas }
 		ai_will_do = {
@@ -629,7 +694,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 30
 		y = 3
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_organize_the_gangs }
 		ai_will_do = {
@@ -643,7 +708,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 30
 		y = 4
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_greek_smugglers }
 		ai_will_do = {
@@ -657,7 +722,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 30
 		y = 5
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_deal_with_the_devil }
 		ai_will_do = {
@@ -671,7 +736,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 20
 		y = 6
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = IST_seize_crown_property 
@@ -690,7 +755,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 28
 		y = 6
-		cost = 10
+		cost = 6
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = IST_bandits_with_connections 
@@ -709,7 +774,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 22
 		y = 7
-		cost = 10
+		cost = 11
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_turkoarmenian_friendship }
 		ai_will_do = {
@@ -723,7 +788,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 26
 		y = 7
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_new_robin_hood }
 		ai_will_do = {
@@ -737,7 +802,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 24
 		y = 9
-		cost = 10
+		cost = 14
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = IST_enver_pasha_heist 
@@ -756,11 +821,17 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 39
 		y = 1
-		cost = 10
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_under_the_bridge }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = CRW_Failing_Economy
+		add_idea = CRW_Failing_Economy_2
+		}
 		}
 	}
 
@@ -770,11 +841,17 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 37
 		y = 4
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_the_ministers_son }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = CRW_Minarchy
+		add_idea = CRW_Minarchy_2
+		}
 		}
 	}
 
@@ -784,11 +861,18 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 33
 		y = 4
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_the_ministers_son }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = CRW_Failing_Economy_2
+		add_idea = CRW_Americanist_Economics
+		}
+		
 		}
 	}
 
@@ -798,12 +882,18 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 35
 		y = 3
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_maltepe_conference }
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		CRW = {
+		add_country_leader_trait = IST_the_minister_son
+		}
+		}
+		
 	}
 
 	#Focus for Maltepe Conference
@@ -812,11 +902,14 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 39
 		y = 2
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_reboot_the_economy }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		country_event = {id = crw.10 days = 1}
 		}
 	}
 
@@ -826,11 +919,17 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 37
 		y = 5
-		cost = 10
+		cost = 6
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_corporation_rights }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = CRW_Memories_Operation_2
+		add_idea = CRW_Private_Security
+		}
 		}
 	}
 
@@ -840,12 +939,17 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 33
 		y = 5
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_americanist_economy }
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		add_stability = 0.1
+		add_ideas = CRW_Limited_Welfare
+		}
+
 	}
 
 	#Focus for Freer The Market, Freer The People
@@ -854,11 +958,17 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 37
 		y = 6
-		cost = 10
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_private_security }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = export_focus
+		add_idea = free_trade
+		}
 		}
 	}
 
@@ -868,11 +978,14 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 33
 		y = 6
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_providing_for_the_commoner }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		add_ideas = CRW_social_division
 		}
 	}
 
@@ -882,11 +995,20 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 37
 		y = 7
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_freer_the_market_freer_the_people }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		add_resource = {
+		type = oil
+		amount = 30
+		state = 797
+		}
+		add_offsite_building = { type = industrial_complex  level = 3 }
+		add_offsite_building = { type = arms_factory  level = 3 }
 		}
 	}
 
@@ -896,11 +1018,14 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 33
 		y = 7
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_keep_the_castes }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		swap_ruler_traits = { remove = IST_the_minister_son add = IST_the_minister_son_2 }
 		}
 	}
 
@@ -910,7 +1035,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 35
 		y = 8
-		cost = 10
+		cost = 7
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = IST_greed_and_balance 
@@ -921,6 +1046,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		add_ideas = CRW_war_profeteering
+		add_offsite_building = { type = arms_factory  level = 3 } #will add divisions after finishing OBB
+		}
 	}
 
 	#Focus for Individualist Society
@@ -929,11 +1058,21 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 43
 		y = 4
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = IST_istanbulification }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		797 = {
+		add_building_construction = {
+		type = infrastructure 
+		level = 1
+		instant_build = yes
+		}
+		}
+		add_ideas = CRW_individual
 		}
 	}
 
@@ -943,7 +1082,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 45
 		y = 6
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = IST_freedom_of_will 
@@ -956,6 +1095,33 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		797 = {
+		add_building_construction = {
+		type = infrastructure 
+		level = 1
+		instant_build = yes
+		}
+		}
+		797 = {
+		add_building_construction = {
+		type = air_base 
+		level = 1
+		instant_build = yes
+		}
+		}
+		add_timed_idea = {
+		idea = CRW_building_bateman_1
+		days = 120
+		}
+		hidden_effect = {
+		country_event = {id = crw.12 days 122}
+		}
+		swap_ideas = {
+			add_idea = CRW_Race_War_Worsen_4
+			remove_idea = CRW_Race_War_Worsen_3
+		}
 		}
 	}
 
