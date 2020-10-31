@@ -909,7 +909,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		country_event = {id = crw.10 days = 1}
+		country_event = { id = crw.10 days = 1 }
 		}
 	}
 
@@ -1116,7 +1116,7 @@ focus_tree = {
 		days = 120
 		}
 		hidden_effect = {
-		country_event = {id = crw.12 days 122}
+		country_event = { id = crw.12 days 122 }
 		}
 		swap_ideas = {
 			add_idea = CRW_Race_War_Worsen_4

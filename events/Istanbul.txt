@@ -257,12 +257,14 @@ country_event = { #Brits Lose-Bateman 1
 	option = { #Bateman
 		name = crw.11.a
 		custom_effect_tooltip = ist_maltepe_conferance_2
-		remove_idea = CRW_Gang_Unrest
+		complete_national_focus = IST_istanbulification
 		swap_ideas = {
 		remove_idea = CRW_Race_War
 		add_idea = CRW_Race_War_Worsen
 		}
-		complete_national_focus = IST_istanbulification
+		remove_ideas = {
+		CRW_Gang_Unrest
+		}
 	}
 }
 country_event = { #Brits Lose-Bateman 1
