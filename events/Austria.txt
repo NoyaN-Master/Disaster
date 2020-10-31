@@ -156,7 +156,7 @@ country_event = { #Succesful Rally
 	title = aut.7.t
 	desc = aut.7.d
 
-    picture = GFX_AUT_dollfuss_speech
+    picture = GFX_report_event_aut_dollfuss_speech
 
 	fire_only_once = yes
 
@@ -224,7 +224,7 @@ country_event = { #Radio Address
 	title = aut.8.t
 	desc = aut.8.d
 
-    picture = GFX_AUT_dollfuss_speech
+    picture = GFX_report_event_aut_dollfuss_speech
 
 	fire_only_once = yes
 
@@ -292,7 +292,7 @@ country_event = { #Private Ceremony
 	title = aut.9.t
 	desc = aut.9.d
 
-    picture = GFX_AUT_dollfuss_speech
+    picture = GFX_report_event_aut_dollfuss_speech
 
 	fire_only_once = yes
 
@@ -2017,5 +2017,540 @@ country_event = { #heimwehr resistance
 		name = aut.64.a
 		add_political_power = -20
 		add_ideas = AUT_heimwehr_resistance_1
+	}
+}
+
+country_event = { #the new cabinet
+	id = aut.65
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.64" }
+	title = aut.65.t
+	desc = aut.65.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = aut.65.a
+		add_stability = 0.04
+		add_political_power = 20
+		hidden_effect = {
+			set_country_flag = {
+				flag = AUT_commie
+				value = 0
+			}
+		}
+	}
+}
+
+country_event = { #policy towards the opposition
+	id = aut.66
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.66" }
+	title = aut.66.t
+	desc = aut.66.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #ban the vf but let minor leaders have free speech
+		name = aut.66.a 
+		add_stability = 0.03
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.02
+		}
+		hidden_effect = {
+			modify_country_flag = {
+				flag = AUT_commie
+				value = -1
+			}
+			country_event = { id = aut.71 days = 14 }
+			country_event = { id = aut.72 days = 28 }
+		}
+	}
+	
+	option = { #purge rightist leaders
+		name = aut.66.b 
+		add_political_power = 15
+		add_popularity = {
+			ideology = authoritarian_socialist
+			popularity = 0.02
+		}
+		hidden_effect = {
+			modify_country_flag = {
+				flag = AUT_commie
+				value = 3
+			}
+		}
+	}
+}
+
+country_event = { #going after the resistance
+	id = aut.67
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.67" }
+	title = aut.67.t
+	desc = aut.67.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #offer an amnesty should they unconditionally lay down their arms
+		name = aut.67.a 
+		add_equipment_to_stockpile = {
+            type = infantry_equipment_1
+            amount = 1263
+		}
+		add_stability = 0.02
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.02
+		}
+		hidden_effect = {
+			modify_country_flag = {
+				flag = AUT_commie
+				value = -1
+			}
+		}
+	}
+	
+	option = { #crush them whatever it takes
+		name = aut.67.b 
+		add_stability = -0.03
+		add_manpower = -1968
+		add_political_power = 40
+		add_popularity = {
+			ideology = ultranationalist
+			popularity = -0.06
+		}
+		add_popularity = {
+			ideology = authoritarian_socialist
+			popularity = 0.02
+		}
+		hidden_effect = {
+			modify_country_flag = {
+				flag = AUT_commie
+				value = 1
+			}
+		}
+	}
+}
+
+country_event = { #fate of rightist policemen
+	id = aut.68
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.68" }
+	title = aut.68.t
+	desc = aut.68.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #keep them in their roles but depoliticise the police
+		name = aut.68.a 
+		add_manpower = 547
+		add_stability = 0.02
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.02
+		}
+		hidden_effect = {
+			modify_country_flag = {
+				flag = AUT_commie
+				value = -1
+			}
+		}
+	}
+	
+	option = { #try them for crimes against the workers
+		name = aut.68.b 
+		add_stability = -0.03
+		add_manpower = -623
+		add_political_power = 35
+		add_popularity = {
+			ideology = authoritarian_socialist
+			popularity = 0.02
+		}
+		hidden_effect = {
+			modify_country_flag = {
+				flag = AUT_commie
+				value = 1
+			}
+		}
+	}
+}
+
+country_event = { #paramilitaries
+	id = aut.69
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.69" }
+	title = aut.69.t
+	desc = aut.69.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #schutzbund
+		name = aut.69.a 
+		add_manpower = 2734
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.02
+		}
+		hidden_effect = {
+			modify_country_flag = {
+				flag = AUT_commie
+				value = -1
+			}
+		}
+	}
+	
+	option = { #commie militias
+		name = aut.69.b 
+		add_manpower = 1567
+		add_political_power = 25
+		add_command_power = 30
+		add_popularity = {
+			ideology = authoritarian_socialist
+			popularity = 0.02
+		}
+		hidden_effect = {
+			modify_country_flag = {
+				flag = AUT_commie
+				value = 1
+			}
+		}
+	}
+}
+
+country_event = { #renner's speech
+	id = aut.70
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.70" }
+	title = aut.70.t
+	desc = aut.70.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #schutzbund
+		name = aut.70.a 
+		add_stability = 0.07
+		add_political_power = 40
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.06
+		}
+		add_popularity = {
+			ideology = authoritarian_socialist
+			popularity = 0.04
+		}
+	}
+}
+
+country_event = { #figl and his allies gain traction
+	id = aut.71
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.71" }
+	title = aut.71.t
+	desc = aut.71.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #allow them to operate
+		name = aut.71.a 
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.07
+		}
+		set_party_name = {
+		    ideology = conservative
+			long_name = AUT_ovp_conservative_party_long
+			name = AUT_ovp_conservative_party
+		}
+		set_country_flag = AUT_figl_allowed
+		hidden_effect = {
+			modify_country_flag = {
+				flag = AUT_commie
+				value = -1
+			}
+		}
+	}
+	
+	option = { #arrest them
+		name = aut.71.b 
+		add_command_power = 30
+		add_popularity = {
+			ideology = authoritarian_socialist
+			popularity = 0.02
+		}
+		hidden_effect = {
+			modify_country_flag = {
+				flag = AUT_commie
+				value = 1
+			}
+		}
+	}
+}
+
+country_event = { #rise of riehl
+	id = aut.72
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.72" }
+	title = aut.72.t
+	desc = aut.72.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #allow them to operate
+		name = aut.72.a 
+		add_popularity = {
+			ideology = revolutionary_nationalist
+			popularity = 0.07
+		}
+		set_country_flag = AUT_riehl_allowed
+		hidden_effect = {
+			modify_country_flag = {
+				flag = AUT_commie
+				value = -1
+			}
+		}
+	}
+	
+	option = { #arrest them
+		name = aut.72.b 
+		add_command_power = 30
+		add_popularity = {
+			ideology = authoritarian_socialist
+			popularity = 0.02
+		}
+		hidden_effect = {
+			modify_country_flag = {
+				flag = AUT_commie
+				value = 1
+			}
+		}
+	}
+}
+
+country_event = { #new constitution starts being drafted
+	id = aut.73
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.73" }
+	title = aut.73.t
+	desc = aut.73.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = aut.73.a 
+		add_political_power = 10
+		add_stability = 0.02
+		hidden_effect = {
+		    country_event = { id = aut.74 days = 4 }
+		}
+	}
+}
+
+country_event = { #klahr wants commie constitution - dispute
+	id = aut.74
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.74" }
+	title = aut.74.t
+	desc = aut.74.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = aut.74.a 
+		add_stability = -0.03
+		hidden_effect = {
+		    if = {
+				limit = { has_country_flag = {
+				flag = AUT_commie
+				value > 5
+				} 
+			    }				
+				country_event = { id = aut.75 days = 4 }
+			}
+			else_if = {
+				limit = { has_country_flag = {
+				flag = AUT_commie
+				value < 6
+				} 
+			    }				
+				country_event = { id = aut.76 days = 4 }
+			}
+		}
+	}
+}
+
+country_event = { #klahr wins out
+	id = aut.75
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.75" }
+	title = aut.75.t
+	desc = aut.75.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = aut.75.a 
+		add_stability = -0.02
+		clr_country_flag = AUT_commie
+		add_popularity = {
+			ideology = authoritarian_socialist
+			popularity = 0.07
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = -0.04
+		}
+		set_country_flag = AUT_klahr_won
+	}
+}
+
+country_event = { #klahr loses
+	id = aut.76
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.76" }
+	title = aut.76.t
+	desc = aut.76.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = aut.76.a 
+		add_stability = 0.03
+		clr_country_flag = AUT_commie
+		add_popularity = {
+			ideology = authoritarian_socialist
+			popularity = -0.04
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.07
+		}
+		set_country_flag = AUT_klahr_lost
+	}
+}
+
+country_event = { #new constitution
+	id = aut.77
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.77" }
+	title = aut.77.t
+	desc = 
+	    if = {
+	        limit = has_country_flag = AUT_klahr_won
+			aut.77.d.commie
+		}
+		else_if = {
+		    limit = has_country_flag = AUT_klahr_lost
+			aut.77.d.socdem
+		}
+		    
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = aut.77.a 
+		if = {
+	        limit = has_country_flag = AUT_klahr_won
+			add_ideas = AUT_commie_constitution
+		}
+		else_if = {
+		    limit = has_country_flag = AUT_klahr_lost
+			add_ideas = AUT_republican_constitution
+		}
+	}
+}
+
+country_event = { #renner's elections
+	id = aut.78
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.78" }
+	title = aut.78.t
+	desc = aut.78.d	    
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #socdems win
+		name = aut.78.a 
+		trigger = {
+			has_idea = AUT_republican_constitution
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.04
+		}
+	}
+	
+	option = { #Figl wins
+		name = aut.78.b
+		trigger = {
+			has_idea = AUT_republican_constitution
+			has_country_flag = AUT_figl_allowed
+		}
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.14
+		}
+		set_politics = {
+			ruling_party = conservative
+			elections_allowed = no
+		}
+	}
+	
+	option = { #Riehl wins
+		name = aut.78.c
+		trigger = {
+			has_idea = AUT_republican_constitution
+			has_country_flag = AUT_riehl_allowed
+		}
+		add_popularity = {
+			ideology = revolutionary_nationalist
+			popularity = 0.14
+		}
+		set_politics = {
+			ruling_party = revolutionary_nationalist
+			elections_allowed = no
+		}
+	}
+	
+	option = { #Klahr wins
+		name = aut.78.e
+		trigger = {
+			has_idea = AUT_commie_constitution
+		}
+		add_popularity = {
+			ideology = authoritarian_socialist
+			popularity = 0.07
+		}
+		set_politics = {
+			ruling_party = authoritarian_socialist
+			elections_allowed = no
+		}
+		hidden_effect =  {
+		    retire_ideology_leader = authoritarian_socialist
+			create_country_leader = {
+	            name = "Karl Renner"
+	            desc = "AUT_Karl_Renner_desc"
+	            picture = "AUT_Karl_Renner.tga"
+	            expire = "2020.1.1"
+	            ideology = authoritarian_socialist_subideology
+	            traits = {
+	            }
+			}
+		}
 	}
 }

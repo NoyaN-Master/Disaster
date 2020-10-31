@@ -114,6 +114,7 @@ country_event = { #Remove Prussian Vestiges
 	
 	option = {
 		name = pln.6.a
+                add_manpower = -1
 	}
 }
 
@@ -202,5 +203,192 @@ country_event = { #Piłsudski Escaped
 		name = pln.10.a
         set_country_flag = PLN_pilsudski_mad
 		custom_effect_tooltip = PLN_pilsudski_mad
+	}
+}
+
+country_event = { #The Titan Passes
+	id = pln.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event pln.11" }
+	title = pln.11.t
+	desc = pln.11.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = pln.11.a
+                hidden_effect = {
+                    country_event = {id = pln.12 days = 4}
+                }
+                set_party_name = { 
+				ideology = authoritarian_democrat
+				long_name = "Stronnictwo Narodowe"
+				name = "SN"
+                }
+                set_party_name = {
+                                ideology = conservative
+				long_name = "Polskie Stronnictwo Chrześcijańskiej Demokracji"
+				name = "PSChD"
+                }
+                set_party_name = {
+                                ideology = autocratic
+                                long_name = "Episkopat Narodu Polskiego"
+				name = "ENP"
+                }
+                set_party_name = {
+                                ideology = ultranationalist
+				long_name = "Obóz Narodowo-Radykalny ABC"
+				name = "ONR-ABC"
+                }
+                set_party_name = {
+                                ideology = revolutionary_nationalist
+				long_name = "Ruch Narodowo-Radykalny Falanga"
+				name = "RNR-Falanga"
+		}
+		retire_ideology_leader = authoritarian_democrat
+		create_country_leader = {
+	            name = "Roman Rybarski"
+	            desc = "PLN_Roman_Rybarski_desc"
+	            picture = "PLN_Roman_Rybarski.tga"
+	            expire = "2020.1.1"
+	            ideology = authoritarian_democrat_subideology
+	            traits = {
+	            }
+               }
+	}
+}
+
+country_event = { #Liberal Demands
+	id = pln.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event pln.12" }
+	title = pln.12.t
+	desc = pln.12.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+        option = { 
+		name = pln.12.a
+		trigger = { NOT = { has_country_flag = PLN_communists_grows }}
+                hidden_effect = {
+                    country_event = {id = pln.13 days = 7}
+                    load_focus_tree = polish_focus_2
+                }
+	}
+	
+	option = { 
+		name = pln.12.b
+		trigger = { has_country_flag = PLN_communists_grows }
+                hidden_effect = {
+                    country_event = {id = pln.15 days = 2}
+                    load_focus_tree = polish_focus_2
+                }
+	}
+}
+ 
+country_event = { #Elections
+	id = pln.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event pln.13" }
+	title = pln.13.t
+	desc = pln.13.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = pln.13.a
+                country_event = {id = pln.14 days = 1}
+	}
+        
+        option = {
+		name = pln.13.b
+                set_politics = {
+			ruling_party = liberal
+			elections_allowed = no
+		}
+	}
+
+        option = {
+		name = pln.13.c
+                trigger = { has_country_flag = PLN_communists_grows }
+                hidden_effect = {
+                    clr_country_flag = PLN_socialists_grows
+                } 
+                set_politics = {
+			ruling_party = libertarian_socialist
+			elections_allowed = no
+		}
+	}
+}
+
+country_event = { #Dmowski's Diadochi
+	id = pln.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event pln.14" }
+	title = pln.14.t
+	desc = pln.14.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = pln.14.a
+	}
+     
+        option = {
+		name = pln.14.b
+                trigger = { has_country_flag = PLN_church_grows }
+                set_politics = {
+			ruling_party = autocratic
+			elections_allowed = no
+		}
+	}
+
+        option = {
+		name = pln.14.c 
+                trigger = { has_country_flag = PLN_abc_grows }
+                set_politics = {
+			ruling_party = ultranationalist
+			elections_allowed = no
+		}
+	}
+        option = {
+		name = pln.14.d 
+                trigger = { has_country_flag = PLN_falanga_grows }
+                set_politics = {
+			ruling_party = revolutionary_nationalist
+			elections_allowed = no
+		}
+	}
+}
+
+country_event = { #Socjaldemokracja Makes Their Move
+	id = pln.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event pln.15" }
+	title = pln.15.t
+	desc = pln.15.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = pln.15.a
+                set_politics = {
+			ruling_party = authoritarian_socialist
+			elections_allowed = no
+		}
+	}
+        
+        option = {
+		name = pln.15.b 
+                trigger = { has_country_flag = PLN_pilsudski_mad }
+                set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = no
+		}
 	}
 }

@@ -10,6 +10,7 @@ focus_tree = {
 	}
 
         default = no
+        continuous_focus_position = { x = 800 y = 1000 }
 
         focus = {
 		id = PLN_a_perfect_democracy
@@ -171,5 +172,20 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+                available = {
+			has_country_leader = {
+				name = "Roman Dmowski"
+				ruling_only = yes
+			}	
+		}	
+                cancel_if_invalid = yes
+                available_if_capitulated = no
+                select_effect = {
+			country_event = { id = pln.11 days = 13 }
+		}
+                completion_reward = {
+			add_country_leader_trait = father_of_the_polish_nation
+                }
+                
 	}
  }
