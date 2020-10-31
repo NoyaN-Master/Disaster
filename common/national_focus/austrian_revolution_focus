@@ -335,6 +335,16 @@ focus_tree = {
 		search_filters = { }
 		completion_reward = {
 			add_timed_idea = { idea = AUT_wealth_siezed  days = 90 }
+			add_popularity = {
+			ideology = authoritarian_socialist
+			popularity = 0.02
+		    }
+			hidden_effect = {
+			modify_country_flag = {
+				flag = AUT_commie
+				value = 1
+			}
+		    }
         } 
 	}
 	
@@ -359,6 +369,16 @@ focus_tree = {
 		search_filters = { }
 		completion_reward = {
 			add_timed_idea = { idea = AUT_property_rights_assured  days = 90 }
+			add_popularity = {
+			ideology = social_democrat
+			popularity = 0.02
+		    }
+			hidden_effect = {
+			modify_country_flag = {
+				flag = AUT_commie
+				value = -1
+			}
+		    }
         } 
 	}
 	
@@ -466,7 +486,6 @@ focus_tree = {
 				limit = { has_idea = AUT_revolutionary_chaos_4 }
 				remove_ideas = AUT_revolutionary_chaos_4
 			}
-			country_event = { id = aut.70 days = 1 }
         } 
 	}
 	
@@ -496,6 +515,7 @@ focus_tree = {
 		id = AUT_draft_a_constitution
 		prerequisite = { focus = AUT_adress_the_nation }
 		prerequisite = { focus = AUT_secure_our_grip }
+		prerequisite = { focus = AUT_further_investments }
 		#icon = 
 		x = 2
 		y = 6
@@ -505,19 +525,26 @@ focus_tree = {
 		}
 		available = {
 			has_country_flag = AUT_revolution_flag			
-		}		
+		}	
+        select_effect = {
+            country_event = { id = aut.73 days = 2 }
+        }			
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { }
 		completion_reward = {
 			custom_effect_tooltip = AUT_constitution_tooltip
+			hidden_effect = {
+			    country_event = { id = aut.77 days = 1 }
+			}
         } 
 	}
 	
 	focus = {
 		id = AUT_rebirth_of_austrian_socialism
 		prerequisite = { focus = AUT_adress_the_nation }
+		prerequisite = { focus = AUT_secure_our_grip }
 		prerequisite = { focus = AUT_further_investments }
 		#icon = 
 		x = 4
@@ -558,6 +585,9 @@ focus_tree = {
 		search_filters = { }
 		completion_reward = {
 			custom_effect_tooltip = AUT_finally_elections
+			hidden_effect = {
+			    country_event = { id = aut.78 days = 1 }
+			}
         } 
 	}
 }
