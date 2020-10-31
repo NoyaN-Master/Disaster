@@ -43,7 +43,7 @@ focus_tree = {
 	#Focus for Autonomy Of Gender
 	focus = {
 		id = IST_autonomy_of_gender
-		icon = GFX_goal_unknown
+		icon = GFX_goal_IST_Gender_Reddit
 		x = 45
 		y = 5
 		cost = 5
@@ -69,7 +69,7 @@ focus_tree = {
 	#Focus for Beacon Of The Middle East
 	focus = {
 		id = IST_beacon_of_the_middle_east
-		icon = GFX_goal_unknown
+		icon = GFX_goal_IST_Blues
 		x = 47
 		y = 5
 		cost = 4
@@ -92,7 +92,7 @@ focus_tree = {
 	#Focus for Tollywood
 	focus = {
 		id = IST_tollywood
-		icon = GFX_goal_unknown
+		icon = GFX_goal_IST_Tollywood
 		x = 47
 		y = 4
 		cost = 3
@@ -114,7 +114,7 @@ focus_tree = {
 	#Focus for Freedom of Will
 	focus = {
 		id = IST_freedom_of_will
-		icon = GFX_goal_unknown
+		icon = GFX_goal_IST_Free_Will
 		x = 43
 		y = 5
 		cost = 5
@@ -879,7 +879,7 @@ focus_tree = {
 	#Focus for The Minister's Son
 	focus = {
 		id = IST_the_ministers_son
-		icon = GFX_goal_unknown
+		icon = GFX_goal_IST_Minister_Son
 		x = 35
 		y = 3
 		cost = 5
@@ -1055,7 +1055,7 @@ focus_tree = {
 	#Focus for Individualist Society
 	focus = {
 		id = IST_individualist_society
-		icon = GFX_goal_unknown
+		icon = GFX_goal_IST_Individual
 		x = 43
 		y = 4
 		cost = 4
