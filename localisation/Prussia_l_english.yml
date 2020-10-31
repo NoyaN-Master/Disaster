@@ -1,0 +1,54 @@
+﻿l_english: 
+
+
+#focus
+PRE_start:0"Investigate The Report"
+PRE_start_desc:0""
+
+
+#events
+pre.1.t:0 "Preußen Erwache"
+pre.1.d:0 "TODO write about the intro"
+pre.1.a:0 "Sehr Gut"
+
+pre.2.t:0 "Corruption Repports"
+pre.2.d:0 "TODO write about Schleichers corruption"
+pre.2.a:0 "Investigate The Report"
+
+pre.3.t:0 "Corruption Repports"
+pre.3.d:0 "TODO write about Schleichers corruption and the junkers pushing him to step down"
+pre.3.a:0 "Resign"
+pre.3.b:0 "Screw The Junkers"
+
+pre.4.t:0 ""
+pre.4.d:0 ""
+pre.4.a:0 ""
+
+pre.5.t:0 ""
+pre.5.d:0 ""
+pre.5.a:0 ""
+
+pre.6.t:0 ""
+pre.6.d:0 ""
+pre.6.a:0 ""
+
+pre.7.t:0 ""
+pre.7.d:0 ""
+pre.7.a:0 ""
+
+pre.8.t:0 ""
+pre.8.d:0 ""
+pre.8.a:0 ""
+
+pre.9.t:0 ""
+pre.9.d:0 ""
+pre.9.a:0 ""
+
+#country flags
+PRE_investigation_started:0 "Investigate Corruption Report"
+PRE_schleicher_resigns:0 "Schleicher Resigns"
+PRE_schleicher_refuses_step_down:0 "Schleicher Refuses To Resign"
+#decisions
+#ideas
+
+

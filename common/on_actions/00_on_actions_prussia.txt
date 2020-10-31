@@ -1,0 +1,9 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            PRE = { 
+                country_event = { id = pre.1 }
+            }
+        }
+    }
+}
