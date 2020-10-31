@@ -1234,22 +1234,10 @@ leader_traits = {
 		}
 	}
 
-        poglavnik = {
-		random = no
-                political_power_gain = 0.15
-		stability_factor = -0.10
-	}
-
         marshal_of_slovakia = {
 		random = no
                 army_defence_factor = 0.10
 		army_morale_factor = 0.05
-	}
-
-        king_zog = {
-		random = no
-                stability_factor = 0.20
-		war_support_factor = 0.15
 	}
 
         impaler_legacy = {
@@ -1262,6 +1250,13 @@ leader_traits = {
 		random = no
                 research_speed_factor = 0.05
 		national_bolshevik_drift = 0.02
+	}
+
+        father_of_the_polish_nation = {
+		random = no
+                stability_factor = 0.20
+		authoritarian_democrat_drift = 0.10
+                political_power_gain = 0.15
 	}
 
 	### IDEA TRAITS ###
