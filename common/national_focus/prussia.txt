@@ -11,7 +11,7 @@ focus_tree = {
 	focus = {
 		id = PRE_start
 		icon = GFX_goal_unknown
-		x = 4
+		x = 8
 		y = 0
 		cost = 2		
 
@@ -36,7 +36,7 @@ focus_tree = {
 			has_country_flag = PRE_schleicher_resigns		
 		}			
 		completion_reward = {
-		
+		country_event = { id = pre.4 days = 1 }
 		}
 	}
 	focus = {
@@ -57,5 +57,22 @@ focus_tree = {
 		}
 	}	
 	
+	focus = { #to test country flags
+		id = PRE_flag_checker
+		icon = GFX_goal_unknown
+		x = 1
+		y = 0
+		cost = 10		
+		available = {
+			has_country_flag = PRE_schleicher_refuses_step_down		
+			has_country_flag = PRE_junker_victory	
+			has_country_flag = PRE_liberal_victory	
+			has_country_flag = PRE_dnvp_victory	
+			has_country_flag = PRE_nazi_victory	
+		}		
+		completion_reward = {
+		
+		}
+	}	
 	
 	}

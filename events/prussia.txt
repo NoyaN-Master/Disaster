@@ -49,4 +49,62 @@ country_event = { #schleicher's junker ultimatum
 		add_political_power = -100
 	}
 }
-
+country_event = { # rig the elections
+	id = pre.4
+	title = pre.4.t
+	desc = pre.4.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { # Yes do it
+		name = pre.4.a
+		ai_chance = { factor = 1}
+		add_political_power = -100
+		country_event = { id = pre.6 days = 7 }
+	}
+	option = { # No don't do it
+		name = pre.4.b
+		ai_chance = { factor = 1}
+		country_event = { id = pre.5 days = 7 }
+	}
+}
+country_event = { #Elections
+	id = pre.5
+	title = pre.5.t
+	desc = pre.5.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	option = { #Nazi
+		name = pre.5.a
+		ai_chance = { factor = 1}
+		set_country_flag = PRE_nazi_victory
+	}
+	option = { #DNVP
+		name = pre.5.b
+		ai_chance = { factor = 1}
+		set_country_flag = PRE_dnvp_victory
+	}
+	option = { #Libtard victory
+		name = pre.5.c
+		ai_chance = { factor = 1}
+		set_country_flag = PRE_liberal_victory
+	}
+	option = { #Junkers
+		name = pre.5.d
+		ai_chance = { factor = 1}
+		set_country_flag = PRE_junker_victory
+	}
+}
+country_event = { #Rigged Elections
+	id = pre.6
+	title = pre.6.t
+	desc = pre.6.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.6.a
+		ai_chance = { factor = 1}
+		set_country_flag = PRE_junker_victory
+	}
+}

@@ -4,6 +4,10 @@
 #focus
 PRE_start:0"Investigate The Report"
 PRE_start_desc:0""
+PRE_accepts:0"Start Elections"
+PRE_accepts_desc:0""
+PRE_refusal:0"Hold Onto Power"
+PRE_refusal_desc:0""
 
 
 #events
@@ -20,17 +24,21 @@ pre.3.d:0 "TODO write about Schleichers corruption and the junkers pushing him t
 pre.3.a:0 "Resign"
 pre.3.b:0 "Screw The Junkers"
 
-pre.4.t:0 ""
+pre.4.t:0 "Rigging The Elections"
 pre.4.d:0 ""
-pre.4.a:0 ""
+pre.4.a:0 "Go Ahead"
+pre.4.b:0 "No"
 
-pre.5.t:0 ""
-pre.5.d:0 ""
-pre.5.a:0 ""
+pre.5.t:0 "New Elections"
+pre.5.d:0 "TODO"
+pre.5.a:0 "NSDAP Victory"
+pre.5.b:0 "DNVP Victory"
+pre.5.c:0 "Liberal Victory"
+pre.5.d:0 "Junker Victory"
 
-pre.6.t:0 ""
-pre.6.d:0 ""
-pre.6.a:0 ""
+pre.6.t:0 "Rigged Victory"
+pre.6.d:0 "TODO Junkers Win Rigged Elections"
+pre.6.a:0 "Great"
 
 pre.7.t:0 ""
 pre.7.d:0 ""
@@ -48,6 +56,10 @@ pre.9.a:0 ""
 PRE_investigation_started:0 "Investigate Corruption Report"
 PRE_schleicher_resigns:0 "Schleicher Resigns"
 PRE_schleicher_refuses_step_down:0 "Schleicher Refuses To Resign"
+PRE_junker_victory:0"Junker Victory"
+PRE_liberal_victory:0"Liberal Victory"
+PRE_dnvp_victory:0"DNVP Victory"
+PRE_nazi_victory:0"NSDAP Victory"
 #decisions
 #ideas
 
