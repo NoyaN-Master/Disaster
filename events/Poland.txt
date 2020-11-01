@@ -356,7 +356,7 @@ country_event = { #Dmowski's Diadochi
 		}
 	}
         option = {
-		name = pln.14.d 
+		name = pln.14.e 
                 trigger = { has_country_flag = PLN_falanga_grows }
                 set_politics = {
 			ruling_party = revolutionary_nationalist
