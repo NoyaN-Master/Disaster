@@ -8,55 +8,6 @@ focus_tree = {
 			add = 10
 			tag = PRE	}
 	}
-	focus = {
-		id = PRE_start
-		icon = GFX_goal_unknown
-		x = 8
-		y = 0
-		cost = 2		
-
-		available = {
-			has_country_flag = PRE_investigation_started		
-		}			
-		completion_reward = {
-			country_event = { id = pre.3 days = 9 }
-		}
-	}
-	focus = {
-		id = PRE_accepts
-		icon = GFX_goal_unknown
-		x = -2
-		y = 1
-		cost = 2		
-		prerequisite = { 
-			focus = PRE_start 
-		}
-		relative_position_id = PRE_start
-		available = {
-			has_country_flag = PRE_schleicher_resigns		
-		}			
-		completion_reward = {
-		country_event = { id = pre.4 days = 1 }
-		}
-	}
-	focus = {
-		id = PRE_refusal
-		icon = GFX_goal_unknown
-		x = 2
-		y = 1
-		cost = 2	
-		prerequisite = { 
-			focus = PRE_start 
-		}		
-		relative_position_id = PRE_start
-		available = {
-			has_country_flag = PRE_schleicher_refuses_step_down		
-		}			
-		completion_reward = {
-		
-		}
-	}	
-	
 	focus = { #to test country flags
 		id = PRE_flag_checker
 		icon = GFX_goal_unknown
@@ -64,7 +15,7 @@ focus_tree = {
 		y = 0
 		cost = 10		
 		available = {
-			has_country_flag = PRE_schleicher_refuses_step_down		
+			has_country_flag = PRE_schleicher_victory	
 			has_country_flag = PRE_junker_victory	
 			has_country_flag = PRE_liberal_victory	
 			has_country_flag = PRE_dnvp_victory	
