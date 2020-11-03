@@ -26,7 +26,7 @@ country_event = { #corruption report
 	option = {
 		name = pre.2.a
 		ai_chance = { factor = 1}
-		set_country_flag = PRE_investigation_started
+	country_event = { id = pre.3 days = 5 }
 	}
 }
 
@@ -40,13 +40,12 @@ country_event = { #schleicher's junker ultimatum
 	option = { #resign sleicher
 		name = pre.3.a
 		ai_chance = { factor = 1}
-		set_country_flag = PRE_schleicher_resigns
+			country_event = { id = pre.4 days = 5 }
 	}
 	option = { #stay in power
 		name = pre.3.b
 		ai_chance = { factor = 1}
-		set_country_flag = PRE_schleicher_refuses_step_down
-		add_political_power = -100
+			country_event = { id = pre.7 days = 5 }
 	}
 }
 country_event = { # rig the elections
@@ -106,5 +105,167 @@ country_event = { #Rigged Elections
 		name = pre.6.a
 		ai_chance = { factor = 1}
 		set_country_flag = PRE_junker_victory
+	}
+}
+country_event = { #Schleiher Refuses has two choices
+	id = pre.7
+	title = pre.7.t
+	desc = pre.7.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.7.a
+		ai_chance = { factor = 1}
+		country_event = { id = pre.8 days = 5 }		
+	}
+	option = {
+		name = pre.7.b
+		ai_chance = { factor = 1}
+		country_event = { id = pre.9 days = 5 }		
+	}
+}
+country_event = { #Junker Coups Schleiher
+	id = pre.8
+	title = pre.8.t
+	desc = pre.8.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.8.a
+		ai_chance = { factor = 1}
+		set_country_flag = PRE_junker_victory
+	}
+}
+country_event = { # Purging the Junkers
+	id = pre.9
+	title = pre.9.t
+	desc = pre.9.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { # Assasinate goerdeler fail
+		name = pre.9.a
+		ai_chance = { factor = 1}
+		country_event = { id = pre.10 days = 5 }				
+	}
+	option = { # Declare martial law succeeds
+		name = pre.9.a
+		ai_chance = { factor = 1}
+		country_event = { id = pre.11 days = 5 }				
+	}
+}
+country_event = { # Schleicher Fails to Purge
+	id = pre.10
+	title = pre.10.t
+	desc = pre.10.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.10.a
+		ai_chance = { factor = 1}
+		country_event = { id = pre.12 days = 5 }
+	}
+}
+country_event = { # Schleicher succeeds in purge
+	id = pre.11
+	title = pre.11.t
+	desc = pre.11.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.11.a
+		ai_chance = { factor = 1}
+		country_event = { id = pre.15 days = 5 }
+	}
+}
+country_event = { # Goring Coups with junker Support
+	id = pre.12
+	title = pre.12.t
+	desc = pre.12.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { # Goring tries to work with junker
+		name = pre.12.a
+		ai_chance = { factor = 1}
+		country_event = { id = pre.13 days = 5 }
+	}
+	option = { # Goring consolidates power
+		name = pre.12.b
+		ai_chance = { factor = 1}
+		country_event = { id = pre.14 days = 5 }
+	}
+}
+country_event = { # Junker betray Goring
+	id = pre.13
+	title = pre.13.t
+	desc = pre.13.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.13.a
+		ai_chance = { factor = 1}
+		set_country_flag = PRE_junker_victory
+	}
+}
+country_event = { # Goring Consolidates power
+	id = pre.14
+	title = pre.14.t
+	desc = pre.14.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.14.a
+		ai_chance = { factor = 1}
+		set_country_flag = PRE_nazi_victory
+
+	}
+}
+country_event = { # Schleicher Tries to Form A fron
+	id = pre.15
+	title = pre.15.t
+	desc = pre.15.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.15.a
+		ai_chance = { factor = 1}
+		
+
+	}
+}
+country_event = { # Fails
+	id = pre.16
+	title = pre.16.t
+	desc = pre.16.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.16.a
+		ai_chance = { factor = 1}
+		country_event = { id = pre.14 days = 5 }		
+
+	}
+}
+country_event = { # Succeeds
+	id = pre.17
+	title = pre.17.t
+	desc = pre.17.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.17.a
+		ai_chance = { factor = 1}
+		set_country_flag = PRE_schleicher_victory
+
 	}
 }
