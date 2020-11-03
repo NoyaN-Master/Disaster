@@ -68,6 +68,10 @@ focus_tree = {
 		y = 2
 		relative_position_id = PRE_start_focus
 		cost = 3		
+		available = {
+			has_country_flag = PRE_investigation_started	
+		}		
+		
 		prerequisite = { focus = PRE_invest_in_country_side }		
 		prerequisite = { focus = PRE_undermine_goring }		
 		completion_reward = {

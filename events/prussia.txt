@@ -151,7 +151,7 @@ country_event = { # Purging the Junkers
 		country_event = { id = pre.10 days = 5 }				
 	}
 	option = { # Declare martial law succeeds
-		name = pre.9.a
+		name = pre.9.b
 		ai_chance = { factor = 1}
 		country_event = { id = pre.11 days = 5 }				
 	}
@@ -240,7 +240,7 @@ country_event = { # Schleicher Tries to Form A fron
 		country_event = { id = pre.16 days = 5 }			
 	}
 	option = {
-		name = pre.15.a
+		name = pre.15.b
 		ai_chance = { factor = 1}
 		country_event = { id = pre.17 days = 5 }			
 	}
