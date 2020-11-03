@@ -26,4 +26,239 @@ focus_tree = {
 		}
 	}	
 	
+	### political focus start
+	focus = {
+		id = PRE_start_focus
+		icon = GFX_goal_unknown
+		x = 8
+		y = 0
+		cost = 3		
+		completion_reward = {
+		add_political_power = 50		
+		}
+	}
+	focus = {
+		id = PRE_invest_in_country_side
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		relative_position_id = PRE_start_focus
+		cost = 5	
+		prerequisite = { focus = PRE_start_focus }		
+		completion_reward = {
+		
+		}
+	}	
+	focus = {
+		id = PRE_undermine_goring
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = PRE_start_focus
+		cost = 5	
+		prerequisite = { focus = PRE_start_focus }				
+		completion_reward = {
+		
+		}
+	}	
+	focus = {
+		id = PRE_react_to_investigation
+		icon = GFX_goal_unknown
+		x = 0
+		y = 2
+		relative_position_id = PRE_start_focus
+		cost = 3		
+		prerequisite = { focus = PRE_invest_in_country_side }		
+		prerequisite = { focus = PRE_undermine_goring }		
+		completion_reward = {
+		country_event = { id = pre.3 days = 5 }		
+		}
+	}
+	
+	focus = {
+		id = PRE_goerdeler_in_charge
+		icon = GFX_goal_unknown
+		x = -4
+		y = 3
+		relative_position_id = PRE_start_focus
+		cost = 10		
+		prerequisite = { focus = PRE_react_to_investigation }	
+		available = {
+			has_country_flag = PRE_schleicher_resigns	
+		}			
+		completion_reward = {
+		
+		}
+	}	
+	focus = {
+		id = PRE_calm_paramilitaries
+		icon = GFX_goal_unknown
+		x = -6
+		y = 4
+		relative_position_id = PRE_start_focus
+		prerequisite = { focus = PRE_goerdeler_in_charge }
+		cost = 10		
+
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_fight_corruption
+		icon = GFX_goal_unknown
+		x = -2
+		y = 4
+		relative_position_id = PRE_start_focus
+		prerequisite = { focus = PRE_goerdeler_in_charge }
+		cost = 10		
+
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_fresh_elections
+		icon = GFX_goal_unknown
+		x = -4
+		y = 5
+		relative_position_id = PRE_start_focus
+		prerequisite = { focus = PRE_calm_paramilitaries }
+		prerequisite = { focus = PRE_fight_corruption }
+		cost = 10		
+		completion_reward = {
+		country_event = { id = pre.4 days = 5 }		
+		}
+	}	
+############################################### Schleicher Path
+	focus = {
+		id = PRE_schleicher_holds_on
+		icon = GFX_goal_unknown
+		x = 4
+		y = 3
+		relative_position_id = PRE_start_focus
+		cost = 10		
+		prerequisite = { focus = PRE_react_to_investigation }	
+		available = {
+			has_country_flag = PRE_schleicher_refuses_step_down	
+		}		
+		completion_reward = {
+		}
+	}	
+	focus = {
+		id = PRE_negotiate_quer_front
+		icon = GFX_goal_unknown
+		x = 4
+		y = 4
+		relative_position_id = PRE_start_focus
+		prerequisite = { focus = PRE_schleicher_holds_on }	
+		cost = 10		
+		completion_reward = {
+		country_event = { id = pre.7 days = 5 }		
+		}
+	}	
+	focus = {
+		id = PRE_support_the_prussian_worker
+		icon = GFX_goal_unknown
+		x = 2
+		y = 5
+		relative_position_id = PRE_start_focus
+		cost = 10		
+		prerequisite = { focus = PRE_negotiate_quer_front }
+		available = {
+			has_country_flag = PRE_schleicher_victory	
+		}			
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_social_role_army
+		icon = GFX_goal_unknown
+		x = 4
+		y = 5
+		relative_position_id = PRE_start_focus
+		cost = 10		
+		prerequisite = { focus = PRE_negotiate_quer_front }
+		available = {
+			has_country_flag = PRE_schleicher_victory	
+		}			
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_crush_nationalist_opposition
+		icon = GFX_goal_unknown
+		x = 6
+		y = 5
+		relative_position_id = PRE_start_focus
+		cost = 10		
+		prerequisite = { focus = PRE_negotiate_quer_front }
+		available = {
+			has_country_flag = PRE_schleicher_victory	
+		}			
+		completion_reward = {
+		
+		}
+	}	
+################################# Other Paths	
+	focus = {
+		id = PRE_dnvp_victory_focus
+		icon = GFX_goal_unknown
+		x = 20
+		y = 0
+		cost = 10		
+		available = {
+			has_country_flag = PRE_dnvp_victory	
+		}	
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_nazi_victory_focus
+		icon = GFX_goal_unknown
+		x = 25
+		y = 0
+		cost = 10		
+		available = {
+			has_country_flag = PRE_nazi_victory	
+		}	
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_liberal_victory_focus
+		icon = GFX_goal_unknown
+		x = 30
+		y = 0
+		cost = 10		
+		available = {
+			has_country_flag = PRE_liberal_victory	
+		}	
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_junker_victory_focus
+		icon = GFX_goal_unknown
+		x = 35
+		y = 0
+		cost = 10		
+		available = {
+			has_country_flag = PRE_junker_victory	
+		}	
+		
+		completion_reward = {
+		
+		}
+	}
+	
 	}
