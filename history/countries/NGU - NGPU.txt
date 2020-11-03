@@ -8,7 +8,7 @@ set_technology = {
 set_convoys = 0
 
 set_politics = {
-	ruling_party = national_bolshevik
+	ruling_party = authoritarian_socialist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -17,25 +17,25 @@ set_politics = {
 set_popularities = {
 	conservative = 0
 	liberal = 0
-	social_democrat = 5
-	libertarian_socialist = 10
-	authoritarian_socialist = 15
-	national_bolshevik = 60
+	social_democrat = 10
+	libertarian_socialist = 20
+	authoritarian_socialist = 63
+	national_bolshevik = 7
 	authoritarian_democrat = 0
 	autocratic = 0
-	ultranationalist = 5
-	revolutionary_nationalist = 5
+	ultranationalist = 
+	revolutionary_nationalist = 
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
 
 create_country_leader = {
-	name = "Dr. Joseph Goebbels"
-	#desc = "NGU_Goebbels_desc"
-	picture = "NGU_Goebbels.tga"
+	name = "Max Hoelz"
+	#desc = "NGU_Max_Hoelz_desc"
+	picture = "NGU_Max_Hoelz.tga"
 	expire = "2020.1.1"
-	ideology = national_bolshevik_subideology
+	ideology = authoritarian_socialist_subideology
 	traits = {
-		doctor_of_socialism
+		
 	}
 }

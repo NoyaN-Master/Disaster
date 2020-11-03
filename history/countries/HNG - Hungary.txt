@@ -8,7 +8,7 @@ set_technology = {
 set_convoys = 0
 
 set_politics = {
-	ruling_party = autocratic
+	ruling_party = ultranationalist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -16,15 +16,15 @@ set_politics = {
 
 set_popularities = {
 	conservative = 0
-	liberal = 0
+	liberal = 4
 	social_democrat = 0
 	libertarian_socialist = 0
-	authoritarian_socialist = 0
+	authoritarian_socialist = 6
 	national_bolshevik = 0
-	authoritarian_democrat = 30
-	autocratic = 60
-	ultranationalist = 10
-	revolutionary_nationalist = 0
+	authoritarian_democrat = 15
+	autocratic = 13
+	ultranationalist = 47
+	revolutionary_nationalist = 15
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
@@ -34,7 +34,7 @@ create_country_leader = {
 	#desc = "HNG_Horthy_desc"
 	picture = "HNG_Horthy.tga"
 	expire = "2020.1.1"
-	ideology = autocratic_subideology
+	ideology = ultranationalist_subideology
 	traits = {
 		#
 	}

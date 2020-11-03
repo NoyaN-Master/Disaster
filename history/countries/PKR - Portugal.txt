@@ -16,23 +16,23 @@ set_politics = {
 
 set_popularities = {
 	conservative = 0
-	liberal = 0
+	liberal = 10
 	social_democrat = 0
 	libertarian_socialist = 0
-	authoritarian_socialist = 0
+	authoritarian_socialist = 15
 	national_bolshevik = 0
 	authoritarian_democrat = 0
-	autocratic = 100
-	ultranationalist = 0
-	revolutionary_nationalist = 0
+	autocratic = 38
+	ultranationalist = 22
+	revolutionary_nationalist = 15
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
 
 create_country_leader = {
-	name = "Duarte II"
-	#desc = "PKR_Duarte_desc"
-	picture = "PKR_Duarte.tga"
+	name = "Oscar Carmona"
+	#desc = "PKR_Oscar_Carmona_desc"
+	picture = "PKR_Oscar_Carmona.tga"
 	expire = "2020.1.1"
 	ideology = autocratic_subideology
 	traits = {

@@ -8,7 +8,7 @@ set_technology = {
 set_convoys = 0
 
 set_politics = {
-	ruling_party = autocratic
+	ruling_party = social_democrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -16,25 +16,25 @@ set_politics = {
 
 set_popularities = {
 	conservative = 0
-	liberal = 5
-	social_democrat = 0
+	liberal = 14
+	social_democrat = 56
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
 	national_bolshevik = 0
-	authoritarian_democrat = 30
-	autocratic = 50
-	ultranationalist = 15
-	revolutionary_nationalist = 0
+	authoritarian_democrat = 0
+	autocratic = 10
+	ultranationalist = 10
+	revolutionary_nationalist = 10
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
 
 create_country_leader = {
-	name = "Boris III"
-	#desc = "BLG_Boris_desc"
-	picture = "BLG_Boris.tga"
+	name = "Aleksandr Stamboliyski"
+	#desc = "BLG_Aleksandr_Stamboliyski_desc"
+	picture = "BLG_Aleksandr_Stamboliyski.tga"
 	expire = "2020.1.1"
-	ideology = autocratic_subideology
+	ideology = social_democrat_subideology
 	traits = {
 		#
 	}

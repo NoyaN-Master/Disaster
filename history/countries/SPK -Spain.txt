@@ -15,18 +15,18 @@ set_politics = {
 }
 
 set_popularities = {
-	conservative = 25
-	liberal = 0
-	social_democrat = 0
-	libertarian_socialist = 25
-	authoritarian_socialist = 0
-	national_bolshevik = 0
+	conservative = 3
+	liberal = 7
+	social_democrat = 4
+	libertarian_socialist = 17
+	authoritarian_socialist = 17
+	national_bolshevik = 6
 	authoritarian_democrat = 0
-	autocratic = 25
-	ultranationalist = 0
-	revolutionary_nationalist = 25
+	autocratic = 22
+	ultranationalist = 8
+	revolutionary_nationalist = 13
 	esoteric_traditionalist = 0
-	revolutionary_anarchist = 0
+	revolutionary_anarchist = 3
 }
 
 create_country_leader = {

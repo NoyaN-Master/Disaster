@@ -15,24 +15,24 @@ set_politics = {
 }
 
 set_popularities = {
-	conservative = 0
+	conservative = 10
 	liberal = 0
 	social_democrat = 0
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
 	national_bolshevik = 0
-	authoritarian_democrat = 0
+	authoritarian_democrat = 10
 	autocratic = 0
-	ultranationalist = 100
-	revolutionary_nationalist = 0
+	ultranationalist = 57
+	revolutionary_nationalist = 23
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
 
 create_country_leader = {
-	name = "Prince Wilhelm"
-	#desc = "SWA_Prince_Wilhelm_desc"
-	picture = "SWA_Prince_Wilhelm.tga"
+	name = "Wolfgang Schenck"
+	#desc = "SWA_Wolfgang_Schenck_desc"
+	picture = "SWA_Wolfgang_Schenck.tga"
 	expire = "2020.1.1"
 	ideology = ultranationalist_subideology
 	traits = {
