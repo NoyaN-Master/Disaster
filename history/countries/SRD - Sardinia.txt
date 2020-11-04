@@ -15,17 +15,17 @@ set_politics = {
 }
 
 set_popularities = {
-	conservative = 10
-	liberal = 5
-	social_democrat = 5
+	conservative = 5
+	liberal = 4
+	social_democrat = 4
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
 	national_bolshevik = 0
-	authoritarian_democrat = 10
+	authoritarian_democrat = 5
 	autocratic = 55
 	ultranationalist = 25
 	revolutionary_nationalist = 0
-	esoteric_traditionalist = 0
+	esoteric_traditionalist = 2
 	revolutionary_anarchist = 0
 }
 

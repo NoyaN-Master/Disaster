@@ -10,9 +10,9 @@ country_event = { #intro event
 	option = {
 		name = pre.1.a
 		ai_chance = { factor = 1}
-		}
 		hidden_effect = {
-		    country_event = { id = pre.2 days = 40 }
+		    country_event = { id = pre.2 days = 50 }
+		}
 	}
 }
 
@@ -26,7 +26,9 @@ country_event = { #corruption report
 	option = {
 		name = pre.2.a
 		ai_chance = { factor = 1}
-	set_country_flag = PRE_investigation_started
+		hidden_effect = {
+		    country_event = { id = pre.20 days = 5 }
+		}
 	}
 }
 
@@ -271,5 +273,74 @@ country_event = { # Succeeds
 		ai_chance = { factor = 1}
 		set_country_flag = PRE_schleicher_victory
 
+	}
+}
+
+country_event = { #schleicher's reichstag speech
+	id = pre.18
+	title = pre.18.t
+	desc = pre.18.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.18.a
+		ai_chance = { factor = 1}
+		add_stability = 0.03
+		add_political_power = 30
+	}
+}
+
+country_event = { #attacking goring
+	id = pre.19
+	title = pre.19.t
+	desc = pre.19.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.19.a
+		ai_chance = { factor = 1}
+		add_popularity = {
+			ideology = revolutionary_nationalist
+			popularity = -0.02
+		}
+		add_political_power = 15
+		set_country_flag = PRE_goring_crackdown_light
+	}
+	
+	option = {
+		name = pre.19.b
+		ai_chance = { factor = 1}
+		add_popularity = {
+			ideology = revolutionary_nationalist
+			popularity = -0.06
+		}
+		add_stability = -0.04
+		set_country_flag = PRE_goring_crackdown_heavy
+	}
+}
+
+country_event = { #corruption report leaked
+	id = pre.20
+	title = pre.20.t
+	desc = pre.20.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.20.a
+		ai_chance = { factor = 1}
+		add_stability = -0.06
+		add_political_power = -60
+		add_popularity = {
+			ideology = revolutionary_nationalist
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = autocratic
+			popularity = 0.03
+		}
+		set_country_flag = PRE_investigation_started
 	}
 }
