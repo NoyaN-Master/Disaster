@@ -10,6 +10,8 @@ country_event = { #intro event
 	option = {
 		name = pre.1.a
 		ai_chance = { factor = 1}
+		hidden_effect = {
+		    country_event = { id = pre.2 days = 40 }
 	}
 }
 
@@ -18,10 +20,7 @@ country_event = { #corruption report
 	title = pre.2.t
 	desc = pre.2.d
 	fire_only_once = yes
-	trigger = {
-		has_completed_focus = PRE_invest_in_country_side
-		has_completed_focus = PRE_undermine_goring
-	}
+	is_triggered_only = yes
 	
 	option = {
 		name = pre.2.a
