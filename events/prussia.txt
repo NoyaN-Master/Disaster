@@ -10,6 +10,7 @@ country_event = { #intro event
 	option = {
 		name = pre.1.a
 		ai_chance = { factor = 1}
+		}
 		hidden_effect = {
 		    country_event = { id = pre.2 days = 40 }
 	}
