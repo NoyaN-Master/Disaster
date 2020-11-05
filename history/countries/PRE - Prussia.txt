@@ -15,8 +15,8 @@ set_politics = {
 }
 
 set_popularities = {
-	conservative = 12
-	liberal = 4
+	conservative = 4
+	liberal = 12
 	social_democrat = 0
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
@@ -31,7 +31,7 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Kurt von Schleicher"
-	#desc = "PRU_Kurt_von_Schleicher_desc"
+	#desc = "PRE_Kurt_von_Schleicher_desc"
 	picture = "PRU_Kurt_von_Schleicher.tga"
 	expire = "2020.1.1"
 	ideology = authoritarian_democrat_subideology
@@ -42,7 +42,7 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Alfred Hugenberg"
-	#desc = "PRU_Alfred Hugenberg_desc"
+	#desc = "PRE_Alfred Hugenberg_desc"
 	picture = "PRU_Alfred Hugenberg.tga"
 	expire = "2020.1.1"
 	ideology = autocratic_subideology
@@ -52,9 +52,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Erich von Ludendorff"
-	#desc = "PRU_Erich_von_Ludendorff_desc"
-	picture = "PRU_Erich_von_Ludendorff.tga"
+	name = "Hermann von Goring"
+	#desc = "PRE_Hermann_von_Goring_desc"
+	picture = "PRU_Hermann_von_Goring.tga"
 	expire = "2020.1.1"
 	ideology = revolutionary_nationalist_subideology
 	traits = {
@@ -64,10 +64,21 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Alfred Hugenberg"
-	#desc = "PRU_Alfred Hugenberg_desc"
+	#desc = "PRE_Alfred Hugenberg_desc"
 	picture = "PRU_Alfred Hugenberg.tga"
 	expire = "2020.1.1"
 	ideology = ultranationalist_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Wilhelm Kulz"
+	#desc = "PRE_Wilhelm_Kulz_desc"
+	picture = "PRU_Wilhelm_Kulz.tga"
+	expire = "2020.1.1"
+	ideology = liberal_subideology
 	traits = {
 		#
 	}

@@ -48,19 +48,37 @@ focus_tree = {
 		completion_reward = {
 		    66 = {
 	        add_building_construction = {
-		    type = arms_factory 
-		    level = 2
+		    type = industrial_complex 
+		    level = 1
 	        }
             }			
 			67 = {
 	        add_building_construction = {
-		    type = arms_factory 
+		    type = industrial_complex 
 		    level = 1
 	        }   
             }
             5 = {
 	        add_building_construction = {
-		    type = arms_factory 
+		    type = industrial_complex 
+		    level = 1
+	        }   
+            }
+			66 = {
+	        add_building_construction = {
+		    type = infrastructure 
+		    level = 1
+	        }
+            }			
+			67 = {
+	        add_building_construction = {
+		    type = infrastructure 
+		    level = 1
+	        }   
+            }
+            5 = {
+	        add_building_construction = {
+		    type = infrastructure 
 		    level = 1
 	        }   
             }
@@ -102,13 +120,17 @@ focus_tree = {
 		x = -4
 		y = 3
 		relative_position_id = PRE_start_focus
-		cost = 10		
+		cost = 1		
 		prerequisite = { focus = PRE_react_to_investigation }	
 		available = {
 			has_country_flag = PRE_schleicher_resigns	
 		}			
 		completion_reward = {
-		
+		    add_political_power = 10
+		    add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.04
+		    }
 		}
 	}	
 	focus = {
@@ -118,7 +140,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = PRE_start_focus
 		prerequisite = { focus = PRE_goerdeler_in_charge }
-		cost = 10		
+		cost = 4	
 
 		
 		completion_reward = {
@@ -132,7 +154,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = PRE_start_focus
 		prerequisite = { focus = PRE_goerdeler_in_charge }
-		cost = 10		
+		cost = 3		
 
 		
 		completion_reward = {
@@ -147,9 +169,12 @@ focus_tree = {
 		relative_position_id = PRE_start_focus
 		prerequisite = { focus = PRE_calm_paramilitaries }
 		prerequisite = { focus = PRE_fight_corruption }
-		cost = 10		
+		select_effect = {
+		    country_event = { id = pre.4 days = 21 }	
+		}
+		cost = 4		
 		completion_reward = {
-		country_event = { id = pre.4 days = 5 }		
+			custom_effect_tooltip = PRE_elections
 		}
 	}	
 ############################################### Schleicher Path

@@ -43,6 +43,17 @@ country_event = { #schleicher's junker ultimatum
 		name = pre.3.a
 		ai_chance = { factor = 1}
 			set_country_flag = PRE_schleicher_resigns	
+			retire_country_leader = yes
+			create_country_leader = {
+	        name = "Carl Friedrich Goerdeler"
+	        desc = "PRE_Carl_Friedrich_Goerdeler_desc"
+	        picture = "PRE_Carl_Friedrich_Goerdeler.tga"
+	        expire = "2020.1.1"
+	        ideology = authoritarian_democrat_subideology
+	        traits = {
+		    #
+	        }
+            }
 	}
 	option = { #stay in power
 		name = pre.3.b
@@ -79,16 +90,19 @@ country_event = { #Elections
 		name = pre.5.a
 		ai_chance = { factor = 1}
 		set_country_flag = PRE_nazi_victory
+		set_ruling_party = revolutionary_nationalist
 	}
 	option = { #DNVP
 		name = pre.5.b
 		ai_chance = { factor = 1}
 		set_country_flag = PRE_dnvp_victory
+		set_ruling_party = autocratic
 	}
 	option = { #Libtard victory
 		name = pre.5.c
 		ai_chance = { factor = 1}
 		set_country_flag = PRE_liberal_victory
+		set_ruling_party = liberal
 	}
 	option = { #Junkers
 		name = pre.5.d
@@ -138,6 +152,17 @@ country_event = { #Junker Coups Schleiher
 		name = pre.8.a
 		ai_chance = { factor = 1}
 		set_country_flag = PRE_junker_victory
+		retire_country_leader = yes
+			create_country_leader = {
+	        name = "Carl Friedrich Goerdeler"
+	        desc = "PRE_Carl_Friedrich_Goerdeler_desc"
+	        picture = "PRE_Carl_Friedrich_Goerdeler.tga"
+	        expire = "2020.1.1"
+	        ideology = authoritarian_democrat_subideology
+	        traits = {
+		    #
+	        }
+            }
 	}
 }
 country_event = { # Purging the Junkers
@@ -190,6 +215,7 @@ country_event = { # Goring Coups with junker Support
 	desc = pre.12.d
 	fire_only_once = yes
 	is_triggered_only = yes
+	immediate = { set_ruling_party = revolutionary_nationalist }
 	
 	option = { # Goring tries to work with junker
 		name = pre.12.a
@@ -213,6 +239,18 @@ country_event = { # Junker betray Goring
 		name = pre.13.a
 		ai_chance = { factor = 1}
 		set_country_flag = PRE_junker_victory
+		set_ruling_party = authoritarian_democrat
+			retire_ideology_leader = authoritarian_democrat
+			create_country_leader = {
+	        name = "Carl Friedrich Goerdeler"
+	        desc = "PRE_Carl_Friedrich_Goerdeler_desc"
+	        picture = "PRE_Carl_Friedrich_Goerdeler.tga"
+	        expire = "2020.1.1"
+	        ideology = authoritarian_democrat_subideology
+	        traits = {
+		    #
+	        }
+            }
 	}
 }
 country_event = { # Goring Consolidates power
