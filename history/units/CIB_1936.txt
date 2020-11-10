@@ -1,0 +1,132 @@
+﻿division_template = {
+	name = "Kafkasya Islam Taburu"
+	division_names_group = TUR_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   # Pioneer Bn
+	}
+}
+
+division_template = {
+	name = "Rum Tümeni"  		# Schnelle-Division (cavalry)
+	division_names_group = TUR_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	##### Österreichisches Bundesheer #####
+	# I Korps
+	division= {	
+		name = "1.Tümen"
+		location = 9932   # Vienna
+		division_template = "Kafkasya Islam Taburu"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "2.Tümen"
+		location = 9932   # Vienna
+		division_template = "Kafkasya Islam Taburu"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "3.Tümen"
+		location = 9932   # Vienna
+		division_template = "Kafkasya Islam Taburu"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "4.Tümen"
+		location = 9932   # Vienna
+		division_template = "Kafkasya Islam Taburu"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+
+	# II Korps
+	division= {	# "4. Division"			# Used to form 45. Infanterie--division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 9932  # Linz
+		division_template = "Kafkasya Islam Taburu"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "5. Division"			# Used to form 3. Gebirgs-division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 9932  # Graz
+		division_template = "Kafkasya Islam Taburu"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "6. Division"			# Used to form 2. Gebirgs-division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 9932  # Innsbruck
+		division_template = "Kafkasya Islam Taburu"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "7. Division"			# Used to form 3. Gebirgs-division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 8
+		}
+		location = 9932  # Salzburg
+		division_template = "Kafkasya Islam Taburu"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+
+	division= {	
+		name = "Bozkurt Birliği"				# Used to form 2. Gebirgs-division post-Anschluss
+		location = 9932  # Vienna
+		division_template = "Kafkasya Islam Taburu"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {	
+		name = "Kızıl Birlik"				# Used to form 2. Gebirgs-division post-Anschluss
+		location = 9932  # Vienna
+		division_template = "Kafkasya Islam Taburu"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+}
