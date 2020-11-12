@@ -2272,6 +2272,20 @@ country_event = { #figl and his allies gain traction
 		}
 		set_country_flag = AUT_figl_allowed
 		hidden_effect = {
+			retire_ideology_leader = conservative
+			create_country_leader = {
+	            name = "Leopold Figl"
+	            desc = "AUT_Leopold_Figl_desc"
+	            picture = "AUT_Leopold_Figl.tga"
+	            expire = "2020.1.1"
+	            ideology = conservative_subideology
+	            traits = {
+		            #
+	            }
+            }
+
+		}
+		hidden_effect = {
 			modify_country_flag = {
 				flag = AUT_commie
 				value = -1

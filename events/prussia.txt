@@ -27,7 +27,7 @@ country_event = { #corruption report
 		name = pre.2.a
 		ai_chance = { factor = 1}
 		hidden_effect = {
-		    country_event = { id = pre.20 days = 5 }
+		    country_event = { id = pre.20 days = 4 }
 		}
 	}
 }
@@ -151,6 +151,7 @@ country_event = { #Junker Coups Schleiher
 	option = {
 		name = pre.8.a
 		ai_chance = { factor = 1}
+		clr_country_flag = PRE_schleicher_refuses_step_down
 		set_country_flag = PRE_junker_victory
 		retire_country_leader = yes
 			create_country_leader = {
@@ -206,7 +207,10 @@ country_event = { # Schleicher succeeds in purge
 	option = {
 		name = pre.11.a
 		ai_chance = { factor = 1}
-		country_event = { id = pre.15 days = 5 }
+		swap_ideas = {
+			    remove_idea = PRE_widespread_protests
+				add_idea = PRE_ongoing_protests
+			}
 	}
 }
 country_event = { # Goring Coups with junker Support
@@ -215,7 +219,7 @@ country_event = { # Goring Coups with junker Support
 	desc = pre.12.d
 	fire_only_once = yes
 	is_triggered_only = yes
-	immediate = { set_ruling_party = revolutionary_nationalist }
+	immediate = { set_ruling_party = revolutionary_nationalist clr_country_flag = PRE_schleicher_refuses_step_down } 
 	
 	option = { # Goring tries to work with junker
 		name = pre.12.a
@@ -242,9 +246,9 @@ country_event = { # Junker betray Goring
 		set_ruling_party = authoritarian_democrat
 			retire_ideology_leader = authoritarian_democrat
 			create_country_leader = {
-	        name = "Carl Friedrich Goerdeler"
-	        desc = "PRE_Carl_Friedrich_Goerdeler_desc"
-	        picture = "PRE_Carl_Friedrich_Goerdeler.tga"
+	        name = "Oskar von Hindenburg"
+	        desc = "PRE_Oskar_von_Hindenburg_desc"
+	        picture = "PRE_Oskar_von_Hindenburg.tga"
 	        expire = "2020.1.1"
 	        ideology = authoritarian_democrat_subideology
 	        traits = {
@@ -295,7 +299,7 @@ country_event = { # Fails
 	option = {
 		name = pre.16.a
 		ai_chance = { factor = 1}
-		country_event = { id = pre.14 days = 5 }		
+		country_event = { id = pre.21 days = 5 }		
 
 	}
 }
@@ -310,7 +314,17 @@ country_event = { # Succeeds
 		name = pre.17.a
 		ai_chance = { factor = 1}
 		set_country_flag = PRE_schleicher_victory
-
+        set_ruling_party = ultranationalist
+		create_country_leader = {
+	    name = "Kurt von Schleicher"
+	    desc = "PRE_Kurt_von_Schleicher_desc"
+	    picture = "PRU_Kurt_von_Schleicher.tga"
+	    expire = "2020.1.1"
+	    ideology = ultranationalist_subideology
+	    traits = {
+		#
+	    }
+        }
 	}
 }
 
@@ -380,5 +394,25 @@ country_event = { #corruption report leaked
 			popularity = 0.03
 		}
 		set_country_flag = PRE_investigation_started
+		swap_ideas = {
+		    remove_idea = PRE_simmering_discontent
+		    add_idea = PRE_widespread_protests
+		}
+	}
+}
+
+country_event = { #goring coup after querfront fails
+	id = pre.21
+	title = pre.21.t
+	desc = pre.21.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.21.a
+		ai_chance = { factor = 1}
+		clr_country_flag = PRE_schleicher_refuses_step_down
+		set_country_flag = PRE_nazi_victory
+		set_ruling_party = revolutionary_nationalist
 	}
 }

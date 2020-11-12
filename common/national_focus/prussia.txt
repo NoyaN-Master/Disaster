@@ -144,7 +144,10 @@ focus_tree = {
 
 		
 		completion_reward = {
-		
+		    swap_ideas = {
+			    remove_idea = PRE_widespread_protests
+				add_idea = PRE_ongoing_protests
+			}
 		}
 	}
 	focus = {
@@ -158,7 +161,8 @@ focus_tree = {
 
 		
 		completion_reward = {
-		
+		    add_stability = 0.04
+			add_political_power = -30
 		}
 	}
 	focus = {
@@ -184,24 +188,61 @@ focus_tree = {
 		x = 4
 		y = 3
 		relative_position_id = PRE_start_focus
-		cost = 10		
+		cost = 1
 		prerequisite = { focus = PRE_react_to_investigation }	
 		available = {
 			has_country_flag = PRE_schleicher_refuses_step_down	
 		}		
 		completion_reward = {
+		    add_popularity = {
+			ideology = ultranationalist
+			popularity = 0.14
+		    }
+			set_party_name = {
+		    ideology = ultranationalist
+			long_name = PRE_querfront_party_long
+			name = PRE_querfront_party
+		    }
 		}
 	}	
 	focus = {
-		id = PRE_negotiate_quer_front
+		id = PRE_deal_with_the_junkers
 		icon = GFX_goal_unknown
 		x = 4
 		y = 4
 		relative_position_id = PRE_start_focus
-		prerequisite = { focus = PRE_schleicher_holds_on }	
-		cost = 10		
+		prerequisite = { focus = PRE_schleicher_holds_on }
+		available = {
+			has_country_flag = PRE_schleicher_refuses_step_down		
+		}		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+        select_effect = {
+            country_event = { id = pre.7 days = 5 }		
+        }			
+		cost = 7		
 		completion_reward = {
-		country_event = { id = pre.7 days = 5 }		
+		    custom_effect_tooltip = PRE_junker_purge
+		}
+	}
+	focus = {
+		id = PRE_negotiate_quer_front
+		icon = GFX_goal_unknown
+		x = 4
+		y = 5
+		relative_position_id = PRE_start_focus
+		prerequisite = { focus = PRE_deal_with_the_junkers }
+		available = {
+			has_country_flag = PRE_schleicher_refuses_step_down		
+		}		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+        select_effect = {
+            country_event = { id = pre.15 days = 5 }		
+        }			
+		cost = 7		
+		completion_reward = {
+		    custom_effect_tooltip = PRE_querfront_negotiations	
 		}
 	}	
 	focus = {

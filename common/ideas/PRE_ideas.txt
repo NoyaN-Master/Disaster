@@ -1,0 +1,57 @@
+PRE_simmering_discontent = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
+			#picture =
+			modifier = {
+			stability_factor = -0.04
+			political_power_factor = -0.10
+			drift_defence_factor = -0.08
+			trade_laws_cost_factor = 0.07
+			economy_cost_factor	0.07
+			}
+		}
+		
+PRE_sham_democracy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_sham_democracy" }
+			#picture =
+			modifier = {
+			stability_factor = -0.02
+			party_popularity_stability_modifier = 0.14
+			production_factory_max_efficiency_factor = 0.02
+			}
+		}
+		
+PRE_political_radicalisation = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_political_radicalisation" }
+			#picture =
+			modifier = {
+			stability_factor = -0.03
+			political_power_factor = -0.05
+			revolutionary_nationalist_drift	= 0.05
+			autocratic_drift = 0.05
+			liberal_drift = 0.05
+			}
+		}
+		
+PRE_widespread_protests = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_widespread_protests" }
+			#picture =
+			modifier = {
+			stability_factor = -0.09
+			political_power_factor = -0.16
+			drift_defence_factor = -0.18
+			trade_laws_cost_factor = 0.16
+			economy_cost_factor	0.16
+			}
+		}
+		
+PRE_ongoing_protests = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_ongoing_protests" }
+			#picture =
+			modifier = {
+			stability_factor = -0.06
+			political_power_factor = -0.12
+			drift_defence_factor = -0.12
+			trade_laws_cost_factor = 0.12
+			economy_cost_factor	0.12
+			}
+		}
