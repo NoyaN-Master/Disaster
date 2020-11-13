@@ -314,7 +314,14 @@ country_event = { # Succeeds
 		name = pre.17.a
 		ai_chance = { factor = 1}
 		set_country_flag = PRE_schleicher_victory
-        set_ruling_party = ultranationalist
+		add_popularity = {
+		ideology = ultranationalist
+		popularity = 0.35
+		}
+		set_politics = {
+			ruling_party = ultranationalist
+			elections_allowed = no
+		}				
 		create_country_leader = {
 	    name = "Kurt von Schleicher"
 	    desc = "PRE_Kurt_von_Schleicher_desc"

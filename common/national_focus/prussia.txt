@@ -7,23 +7,6 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = PRE	}
-	}
-	focus = { #to test country flags
-		id = PRE_flag_checker
-		icon = GFX_goal_unknown
-		x = 1
-		y = 0
-		cost = 10		
-		available = {
-			has_country_flag = PRE_schleicher_victory	
-			has_country_flag = PRE_junker_victory	
-			has_country_flag = PRE_liberal_victory	
-			has_country_flag = PRE_dnvp_victory	
-			has_country_flag = PRE_nazi_victory	
-		}		
-		completion_reward = {
-		
-		}
 	}	
 	
 	### political focus start
@@ -237,9 +220,12 @@ focus_tree = {
 		}		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
+		bypass = {
+		has_country_flag = PRE_schleicher_victory
+		}
         select_effect = {
             country_event = { id = pre.15 days = 5 }		
-        }			
+        }			 
 		cost = 7		
 		completion_reward = {
 		    custom_effect_tooltip = PRE_querfront_negotiations	
@@ -251,7 +237,7 @@ focus_tree = {
 		x = 2
 		y = 6
 		relative_position_id = PRE_start_focus
-		cost = 10		
+		cost = 5		
 		prerequisite = { focus = PRE_negotiate_quer_front }
 		available = {
 			has_country_flag = PRE_schleicher_victory	
@@ -266,13 +252,13 @@ focus_tree = {
 		x = 4
 		y = 6
 		relative_position_id = PRE_start_focus
-		cost = 10		
+		cost = 5		
 		prerequisite = { focus = PRE_negotiate_quer_front }
 		available = {
 			has_country_flag = PRE_schleicher_victory	
 		}			
 		completion_reward = {
-		
+		remove_ideas = PRE_ongoing_protests
 		}
 	}
 	focus = {
@@ -281,13 +267,13 @@ focus_tree = {
 		x = 6
 		y = 6
 		relative_position_id = PRE_start_focus
-		cost = 10		
+		cost = 5		
 		prerequisite = { focus = PRE_negotiate_quer_front }
 		available = {
 			has_country_flag = PRE_schleicher_victory	
 		}			
 		completion_reward = {
-		
+		remove_ideas = PRE_political_radicalisation		
 		}
 	}
 	focus = {
