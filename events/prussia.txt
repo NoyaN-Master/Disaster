@@ -219,7 +219,10 @@ country_event = { # Goring Coups with junker Support
 	desc = pre.12.d
 	fire_only_once = yes
 	is_triggered_only = yes
-	immediate = { set_ruling_party = revolutionary_nationalist clr_country_flag = PRE_schleicher_refuses_step_down } 
+	immediate = { 
+	set_ruling_party = revolutionary_nationalist 
+	clr_country_flag = PRE_schleicher_refuses_step_down 
+	} 
 	
 	option = { # Goring tries to work with junker
 		name = pre.12.a

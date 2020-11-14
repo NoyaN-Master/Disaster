@@ -82,7 +82,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_maintain_agrarianism
-		#icon = 
+		icon = GFX_goal_AUT_maintain_agrarianism
 		prerequisite = { focus = AUT_economic_reforms }
 		mutually_exclusive = { focus = AUT_new_industrialism }
 		x = 2
@@ -121,7 +121,7 @@ focus_tree = {
 	available_if_capitulated = no
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
-		add_stability = 0.05
+		add_stability = 0.04
 		add_political_power = 25
         }
 	}
@@ -148,6 +148,18 @@ focus_tree = {
                     remove_idea = AUT_agrarianism_1
                     add_idea = AUT_agrarianism_2
                 }
+			152 = {
+	        add_building_construction = {
+		    type = infrastructure
+		    level = 2
+	        }   
+            }
+			153 = {
+	        add_building_construction = {
+		    type = infrastructure
+		    level = 2
+	        }   
+            }
         }
 	}
 	
@@ -216,7 +228,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_corporatist_ideals
-		#icon = 
+		icon = GFX_goal_AUT_corporatist_ideals
 		prerequisite = { focus = AUT_maintain_agrarianism OR = AUT_new_industrialism } 
 		x = 4
 		y = 3
@@ -231,8 +243,30 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-		add_stability = 0.05
-        add_political_power = 50		
+			813 = {
+	        add_building_construction = {
+		    type = industrial_complex
+		    level = 1
+	        }   
+            }
+			152 = {
+	        add_building_construction = {
+		    type = industrial_complex
+		    level = 1
+	        }   
+            }
+			813 = {
+	        add_building_construction = {
+		    type = infrastructure
+		    level = 1
+	        }   
+            }
+			152 = {
+	        add_building_construction = {
+		    type = infrastructure
+		    level = 1
+	        }   
+            }
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	
@@ -240,7 +274,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_further_state_intervention
-		#icon = 
+		icon = GFX_goal_AUT_furtherr_sstate_intervention
 		prerequisite = { focus = AUT_corporatist_ideals } 
 		x = 4
 		y = 4
@@ -307,7 +341,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_new_industrialism
-		#icon = 
+		icon = GFX_goal_AUT_new_industralism
 		prerequisite = { focus = AUT_economic_reforms }
 		mutually_exclusive = { focus = AUT_maintain_agrarianism }
 		x = 6
@@ -375,9 +409,9 @@ focus_tree = {
         }
 	}
 	
-		focus = {
+    focus = {
 		id = AUT_farmers_to_factorymen
-		#icon = 
+		icon = GFX_goal_AUT_farmers_to_factorymen
 		prerequisite = { focus = AUT_new_industrialism }
 		x = 6
 		y = 3
@@ -393,13 +427,43 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_stability = -0.05
+			add_stability = -0.07
 			813 = {
 	        add_building_construction = {
 		    type = industrial_complex
+		    level = 2
+	        }   
+            }
+			152 = {
+	        add_building_construction = {
+		    type = industrial_complex
+		    level = 2
+	        }   
+            }
+			153 = {
+	        add_building_construction = {
+		    type = industrial_complex
+		    level = 2
+	        }   
+            }
+			813 = {
+	        add_building_construction = {
+		    type = infrastructure
+		    level = 1
+	        }   
+            }
+			152 = {
+	        add_building_construction = {
+		    type = infrastructure
 		    level = 1
 	        }   
             } 
+			153 = {
+	        add_building_construction = {
+		    type = infrastructure
+		    level = 1
+	        }   
+            }
         }
 	}
 	
