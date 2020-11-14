@@ -224,11 +224,17 @@ focus_tree = {
 		has_country_flag = PRE_schleicher_victory
 		}
         select_effect = {
-            country_event = { id = pre.15 days = 5 }		
-        }			 
+            country_event = { id = pre.15 days = 5 }	
+			add_ideas = PRE_querfront_negotiations_idea			
+        }
+			
+		hidden_effect = {
+		remove_ideas = PRE_querfront_negotiations_idea
+		}		
 		cost = 7		
 		completion_reward = {
-		    custom_effect_tooltip = PRE_querfront_negotiations	
+		    	custom_effect_tooltip = PRE_querfront_negotiations
+				show_ideas_tooltip = PRE_querfront_negotiations_idea	
 		}
 	}	
 	focus = {
@@ -243,7 +249,10 @@ focus_tree = {
 			has_country_flag = PRE_schleicher_victory	
 		}			
 		completion_reward = {
-		
+		swap_ideas = {
+			add_idea = PRE_support_prussian_worker
+			remove_idea = PRE_sham_democracy
+		}				
 		}
 	}
 	focus = {
@@ -259,6 +268,7 @@ focus_tree = {
 		}			
 		completion_reward = {
 		remove_ideas = PRE_ongoing_protests
+		army_experience = 25
 		}
 	}
 	focus = {
@@ -273,7 +283,15 @@ focus_tree = {
 			has_country_flag = PRE_schleicher_victory	
 		}			
 		completion_reward = {
-		remove_ideas = PRE_political_radicalisation		
+		remove_ideas = PRE_political_radicalisation
+		add_popularity = {
+		ideology = revolutionary_nationalist
+		popularity = -0.05
+		}
+		add_popularity = {
+		ideology = esoteric_traditionalist
+		popularity = -0.05
+		}		
 		}
 	}
 	focus = {
@@ -286,21 +304,29 @@ focus_tree = {
 		prerequisite = { focus = PRE_support_the_prussian_worker }
 		prerequisite = { focus = PRE_social_role_army }		
 		completion_reward = {
-		
+		add_ideas = PRE_class_coop_idea
+		add_political_power = 50
 		}
 	}
+	
+	
 	focus = {
 		id = PRE_unity_through_service
 		icon = GFX_goal_unknown
 		x = 5
 		y = 7
 		relative_position_id = PRE_start_focus
-		cost = 10		
+		cost = 5		
 		prerequisite = { focus = PRE_crush_nationalist_opposition }
 		prerequisite = { focus = PRE_social_role_army }	
-		
+		select_effect = {
+		add_ideas = PRE_unity_through_service_idea }		
 		completion_reward = {
-		
+		custom_effect_tooltip = PRE_unity_through_service_tooltip
+		show_ideas_tooltip = PRE_unity_through_service_idea		
+		hidden_effect = {
+		remove_ideas = PRE_unity_through_service_idea
+		}
 		}
 	}
 	focus = {
@@ -313,7 +339,13 @@ focus_tree = {
 		prerequisite = { focus = PRE_class_coop }	
 		prerequisite = { focus = PRE_unity_through_service }	
 		completion_reward = {
-		
+		64 = {
+		add_extra_state_shared_building_slots = 1
+		}
+		66 = {
+		add_extra_state_shared_building_slots = 1
+		}
+		add_offsite_building = { type = industrial_complex level = 1 }
 		}
 	}
 	focus = {
@@ -327,7 +359,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_unity_through_service }	
 		
 		completion_reward = {
-		
+		add_ideas = PRE_national_solidarity_idea
 		}
 	}
 	focus = {
@@ -341,7 +373,16 @@ focus_tree = {
 		prerequisite = { focus = PRE_unity_through_service }	
 		
 		completion_reward = {
-		
+		add_manpower = 10000
+		army_experience = 50
+		navy_experience = 50
+		air_experience = 50
+		add_tech_bonus = {
+			name = PRE_doctrine
+			bonus = 0.75
+			uses = 2
+			category = land_doctrine
+		}
 		}
 	}
 	focus = {
@@ -353,7 +394,36 @@ focus_tree = {
 		cost = 10		
 		prerequisite = { focus = PRE_undermine_big_business }	
 		completion_reward = {
-		
+			random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+			random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}		
 		}
 	}
 	focus = {
@@ -366,7 +436,10 @@ focus_tree = {
 		prerequisite = { focus = PRE_national_solidarity }		
 		
 		completion_reward = {
-		
+		swap_ideas = {
+			add_idea = PRE_national_solidarity_idea2
+			remove_idea = PRE_national_solidarity_idea
+		}		
 		}
 	}
 	focus = {
@@ -379,7 +452,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_rejuvenate_militarism }		
 		
 		completion_reward = {
-		
+		add_research_slot = 1
 		}
 	}
 	focus = {
@@ -392,7 +465,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_pro_worker_indus }
 		prerequisite = { focus = PRE_support_our_countrymen }		
 		completion_reward = {
-		
+		add_ideas = PRE_integrate_querfront_parties_idea
 		}
 	}
 	focus = {
@@ -405,7 +478,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_shared_struggle }
 		prerequisite = { focus = PRE_support_our_countrymen }			
 		completion_reward = {
-		
+		add_ideas = PRE_formalise_army_power_idea
 		}
 	}
 	focus = {
@@ -418,7 +491,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_integrate_querfront_parties }	
 		prerequisite = { focus = PRE_formalise_army_power }			
 		completion_reward = {
-		
+		add_ideas = PRE_one_prussian_nation_idea
 		}
 	}	
 ################################# Other Paths	
