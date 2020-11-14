@@ -303,7 +303,9 @@ country_event = { # Fails
 		name = pre.16.a
 		ai_chance = { factor = 1}
 		country_event = { id = pre.21 days = 5 }		
-
+        remove_ideas = {
+		    PRE_querfront_negotiations_idea
+		}
 	}
 }
 country_event = { # Succeeds
