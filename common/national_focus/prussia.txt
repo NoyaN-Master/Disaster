@@ -7,13 +7,15 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = PRE	}
-	}	
+	}
+
+    continuous_focus_position = { x = 20 y = 1400 }	
 	
 	### political focus start
 	focus = {
 		id = PRE_start_focus
 		icon = GFX_goal_adress_parliament
-		x = 8
+		x = 5
 		y = 0
 		cost = 3		
 		completion_reward = {
