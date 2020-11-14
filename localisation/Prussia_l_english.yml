@@ -21,6 +21,8 @@ PRE_fresh_elections_desc:0""
 #schleicher path
 PRE_schleicher_holds_on:0"Schleicher Holds On"
 PRE_schleicher_holds_on_desc:0""
+PRE_deal_with_the_junkers:0"Deal With The Junkers"
+PRE_deal_with_the_junkers_desc:0""
 PRE_negotiate_quer_front:0"Negotiate the Querfront"
 PRE_negotiate_quer_front_desc:0""
 PRE_support_the_prussian_worker:0"Support the Prussian Worker"
@@ -129,6 +131,15 @@ pre.17.t:0 "Schleicher Victorious"
 pre.17.d:0 "Schleicher wins finally"
 pre.17.a:0 "Good"
 
+pre.18.t:0 "Schleicher addresses Reichstag"
+pre.18.d:0 ""
+pre.18.a:0 ""
+
+pre.19.t:0 "Undermine Goring"
+pre.19.d:0 ""
+pre.19.a:0 ""
+pre.19.b:0 ""
+
 #country flags
 PRE_investigation_started:0 "The corruption scandal is underway"
 PRE_schleicher_resigns:0 "Schleicher resigned"
@@ -144,6 +155,7 @@ PRE_schleicher_victory:0"Schleicher is in power"
 PRE_elections:0 "New elections will be held in Prussia."
 PRE_querfront_negotiations:0"§GThe negotiations for forming the Querfront wil begin. It wil give the following during the focus:§!"
 PRE_unity_through_service_tooltip:0"§GUnity Through Service will give the following effect during the focus:§!"
+PRE_junker_purge:0"§R If Schleicher can't deal with the Junkers properly he will get couped.§!"
 #ideas Schleicher
 PRE_simmering_discontent:0"Slimmering Discontent"
 PRE_simmering_discontent_desc:0""

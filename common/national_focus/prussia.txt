@@ -12,7 +12,7 @@ focus_tree = {
 	### political focus start
 	focus = {
 		id = PRE_start_focus
-		icon = GFX_goal_unknown
+		icon = GFX_goal_adress_parliament
 		x = 8
 		y = 0
 		cost = 3		
@@ -22,7 +22,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_invest_in_country_side
-		icon = GFX_goal_unknown
+		icon = GFX_goal_invest_countryside
 		x = -1
 		y = 1
 		relative_position_id = PRE_start_focus
@@ -69,7 +69,7 @@ focus_tree = {
 	}	
 	focus = {
 		id = PRE_undermine_goring
-		icon = GFX_goal_unknown
+		icon = GFX_goal_undermine_goring
 		x = 1
 		y = 1
 		relative_position_id = PRE_start_focus
@@ -81,7 +81,7 @@ focus_tree = {
 	}	
 	focus = {
 		id = PRE_react_to_investigation
-		icon = GFX_goal_unknown
+		icon = GFX_goal_react_to_scandal
 		x = 0
 		y = 2
 		relative_position_id = PRE_start_focus
@@ -99,7 +99,7 @@ focus_tree = {
 	
 	focus = {
 		id = PRE_goerdeler_in_charge
-		icon = GFX_goal_unknown
+		icon = GFX_goal_goerdeler_in_charge
 		x = -4
 		y = 3
 		relative_position_id = PRE_start_focus
@@ -118,7 +118,7 @@ focus_tree = {
 	}	
 	focus = {
 		id = PRE_calm_paramilitaries
-		icon = GFX_goal_unknown
+		icon = GFX_goal_calm_paramilitaries
 		x = -5
 		y = 4
 		relative_position_id = PRE_start_focus
@@ -135,7 +135,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_fight_corruption
-		icon = GFX_goal_unknown
+		icon = GFX_goal_fight_corruption
 		x = -3
 		y = 4
 		relative_position_id = PRE_start_focus
@@ -150,7 +150,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_fresh_elections
-		icon = GFX_goal_unknown
+		icon = GFX_goal_election
 		x = -4
 		y = 5
 		relative_position_id = PRE_start_focus
@@ -167,7 +167,7 @@ focus_tree = {
 ############################################### Schleicher Path
 	focus = {
 		id = PRE_schleicher_holds_on
-		icon = GFX_goal_unknown
+		icon = GFX_goal_schleicher_holds_on
 		x = 4
 		y = 3
 		relative_position_id = PRE_start_focus
@@ -190,7 +190,7 @@ focus_tree = {
 	}	
 	focus = {
 		id = PRE_deal_with_the_junkers
-		icon = GFX_goal_unknown
+		icon = GFX_goal_deal_with_junkers
 		x = 4
 		y = 4
 		relative_position_id = PRE_start_focus
@@ -210,7 +210,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_negotiate_quer_front
-		icon = GFX_goal_unknown
+		icon = GFX_goal_negotiate_querfront
 		x = 4
 		y = 5
 		relative_position_id = PRE_start_focus
@@ -373,7 +373,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_unity_through_service }	
 		
 		completion_reward = {
-		add_manpower = 10000
+		add_manpower = 50000
 		army_experience = 50
 		navy_experience = 50
 		air_experience = 50
