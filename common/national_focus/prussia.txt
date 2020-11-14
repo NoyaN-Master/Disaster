@@ -241,7 +241,7 @@ focus_tree = {
 	}	
 	focus = {
 		id = PRE_support_the_prussian_worker
-		icon = GFX_goal_unknown
+		icon = GFX_goal_prussian_worker
 		x = 2
 		y = 6
 		relative_position_id = PRE_start_focus
@@ -259,7 +259,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_social_role_army
-		icon = GFX_goal_unknown
+		icon = GFX_goal_social_role_army
 		x = 4
 		y = 6
 		relative_position_id = PRE_start_focus
@@ -275,7 +275,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_crush_nationalist_opposition
-		icon = GFX_goal_unknown
+		icon = GFX_goal_nationalist_opposition
 		x = 6
 		y = 6
 		relative_position_id = PRE_start_focus
@@ -298,7 +298,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_class_coop
-		icon = GFX_goal_unknown
+		icon = GFX_goal_class_coop
 		x = 3
 		y = 7
 		relative_position_id = PRE_start_focus
@@ -314,7 +314,7 @@ focus_tree = {
 	
 	focus = {
 		id = PRE_unity_through_service
-		icon = GFX_goal_unknown
+		icon = GFX_goal_unity_through_service
 		x = 5
 		y = 7
 		relative_position_id = PRE_start_focus
@@ -333,7 +333,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_undermine_big_business
-		icon = GFX_goal_unknown
+		icon = GFX_goal_undermine_big_business
 		x = 2
 		y = 8
 		relative_position_id = PRE_start_focus
@@ -352,7 +352,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_national_solidarity
-		icon = GFX_goal_unknown
+		icon = GFX_goal_national_solidarity
 		x = 4
 		y = 8
 		relative_position_id = PRE_start_focus
@@ -366,7 +366,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_rejuvenate_militarism
-		icon = GFX_goal_unknown
+		icon = GFX_goal_rejuvanate_militarism
 		x = 6
 		y = 8
 		relative_position_id = PRE_start_focus
@@ -389,7 +389,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_pro_worker_indus
-		icon = GFX_goal_unknown
+		icon = GFX_goal_pro_worker_indus
 		x = 2
 		y = 9
 		relative_position_id = PRE_start_focus
@@ -430,7 +430,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_support_our_countrymen
-		icon = GFX_goal_unknown
+		icon = GFX_goal_support_our_countrymen
 		x = 4
 		y = 9
 		relative_position_id = PRE_start_focus
@@ -446,7 +446,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_shared_struggle
-		icon = GFX_goal_unknown
+		icon = GFX_goal_shared_struggle
 		x = 6
 		y = 9
 		relative_position_id = PRE_start_focus
@@ -459,7 +459,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_integrate_querfront_parties
-		icon = GFX_goal_unknown
+		icon = GFX_goal_querfront
 		x = 3
 		y = 10
 		relative_position_id = PRE_start_focus
@@ -472,7 +472,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_formalise_army_power
-		icon = GFX_goal_unknown
+		icon = GFX_goal_formalise_army
 		x = 5
 		y = 10
 		relative_position_id = PRE_start_focus
@@ -485,7 +485,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_one_prussian_nation
-		icon = GFX_goal_unknown
+		icon = GFX_goal_one_prussian_nation
 		x = 4
 		y = 11
 		relative_position_id = PRE_start_focus
