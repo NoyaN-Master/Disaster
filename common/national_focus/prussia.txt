@@ -222,9 +222,6 @@ focus_tree = {
 		}		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		bypass = {
-		has_country_flag = PRE_schleicher_victory
-		}
         select_effect = {
             country_event = { id = pre.15 days = 5 }	
 			add_ideas = PRE_querfront_negotiations_idea			
