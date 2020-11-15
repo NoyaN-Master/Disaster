@@ -165,7 +165,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_protect_the_common_farmer
-		#icon = 
+		icon = GFX_goal_AUT_protect_the_common_farmer
 		prerequisite = { focus = AUT_maintain_agrarianism }
 		x = 2
 		y = 3
@@ -188,7 +188,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_grain_exports
-		#icon = 
+		icon = GFX_goal_AUT_grain_exports
 		prerequisite = { focus = AUT_protect_the_common_farmer }
 		x = 2
 		y = 4
@@ -364,7 +364,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_ties_with_business
-		#icon = 
+		icon = GFX_goal_AUT_ties_with_business
 		prerequisite = { focus = AUT_new_industrialism }
 		x = 8
 		y = 3
@@ -469,7 +469,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_new_export_markets
-		#icon = 
+		icon = GFX_goal_AUT_new_export_markets
 		prerequisite = { focus = AUT_farmers_to_factorymen }
 		x = 6
 		y = 4
@@ -840,7 +840,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_mit_dollfuss_in_die_neue_zeit
-		#icon = 
+		icon = GFX_goal_AUT_mit_dollfuss_in_die_neue_zeit
 		prerequisite = { focus = AUT_a_moral_government }
 		prerequisite = { focus = AUT_austrian_miracle }
 		x = 8
