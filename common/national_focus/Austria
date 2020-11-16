@@ -42,7 +42,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_economic_reforms
-		#icon = 
+		icon = GFX_goal_AUT_economic_reforms
 		prerequisite = { focus = AUT_merge_the_posts }
 		x = 4
 		y = 1
@@ -105,7 +105,7 @@ focus_tree = {
 	
 	focus = {
 	id = AUT_aristocratic_ties
-	#icon = 
+	icon = GFX_goal_AUT_ties_with_the_aristocracy
 	prerequisite = { focus = AUT_maintain_agrarianism }
 	x = 0
 	y = 3
@@ -128,7 +128,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_land_reform
-		#icon = 
+		icon = GFX_goal_AUT_land_reform
 		prerequisite = { focus = AUT_aristocratic_ties }
 		x = 0
 		y = 4
@@ -314,7 +314,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_nation_of_farmers
-		#icon = 
+		icon = GFX_goal_AUT_nation_of_farmers
 		prerequisite = { focus = AUT_land_reform }
 		prerequisite = { focus = AUT_grain_exports }
 		prerequisite = { focus = AUT_further_state_intervention }
@@ -386,7 +386,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_new_labour_charter
-		#icon = 
+		icon = GFX_goal_AUT_new_labour_charter
 		prerequisite = { focus = AUT_ties_with_business }
 		x = 8
 		y = 4
@@ -509,7 +509,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_nation_of_industry
-		#icon = 
+		icon = GFX_goal_AUT_nation_of_industry
 		prerequisite = { focus = AUT_new_labour_charter }
 		prerequisite = { focus = AUT_new_export_markets }
 		prerequisite = { focus = AUT_further_state_intervention }
@@ -558,7 +558,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_deepen_church_ties
-		#icon = 
+		icon = GFX_goal_AUT_deepen_church_ties
 		prerequisite = { focus = AUT_merge_the_posts }
 		x = 11
 		y = 1
@@ -579,7 +579,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_revise_the_concordat
-		#icon = 
+		icon = GFX_goal_AUT_revise_the_concordat
 		prerequisite = { focus = AUT_deepen_church_ties }
 		x = 10
 		y = 2
@@ -692,7 +692,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_catholic_education
-		#icon = 
+		icon = GFX_goal_AUT_catholic_education
 		prerequisite = { focus = AUT_clergy_in_the_government }
 		prerequisite = { focus = AUT_extol_dollfuss_faith }
 		x = 13
@@ -718,7 +718,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_a_moral_people
-		#icon = 
+		icon = GFX_goal_AUT_a_moral_people
 		prerequisite = { focus = AUT_promote_catholic_social_teaching }
 		prerequisite = { focus = AUT_catholic_education }
 		x = 11
@@ -1648,7 +1648,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_ties_to_the_aristocracy
-		#icon = 
+		icon = GFX_goal_AUT_ties_with_the_aristocracy
 		prerequisite = { focus = AUT_austrian_militarism }
 		prerequisite = { focus = AUT_rejuvenate_corpoatism }
 		x = 29
