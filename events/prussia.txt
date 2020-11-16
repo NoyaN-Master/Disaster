@@ -425,6 +425,13 @@ country_event = { #goring coup after querfront fails
 		ai_chance = { factor = 1}
 		clr_country_flag = PRE_schleicher_refuses_step_down
 		set_country_flag = PRE_nazi_victory
-		set_ruling_party = revolutionary_nationalist
+				set_politics = {
+			ruling_party = revolutionary_nationalist
+			elections_allowed = no
+		}	
+		add_popularity = {
+			ideology = revolutionary_nationalist
+			popularity = 0.1
+		}
 	}
 }

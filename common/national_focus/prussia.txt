@@ -499,13 +499,15 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 17
 		y = 0
-		cost = 10		
+		cost = 1		
 		available = {
 			has_country_flag = PRE_nazi_victory	
 		}	
-		
+		bypass = {
+			has_country_flag = PRE_nazi_victory			
+		}
 		completion_reward = {
-		
+		add_political_power = 50
 		}
 	}
 	focus = {
@@ -514,11 +516,14 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = PRE_nazi_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_nazi_victory_focus }	
 		
 		completion_reward = {
-		
+		remove_ideas = PRE_political_radicalisation		
+		remove_ideas = PRE_sham_democracy	
+		remove_ideas = PRE_ongoing_protests
+		add_stability = 0.05
 		}
 	}
 	focus = {
@@ -527,11 +532,16 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = PRE_nazi_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_enabling_act }	
-		
+		select_effect = {
+		add_ideas = PRE_absorb_dnvp_idea }			
 		completion_reward = {
-		
+		custom_effect_tooltip = PRE_absorb_dnvp_idea_tooltip
+		show_ideas_tooltip = PRE_absorb_dnvp_idea
+		hidden_effect = {
+		remove_ideas = PRE_absorb_dnvp_idea
+		}
 		}
 	}
 	focus = {
@@ -540,10 +550,11 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = PRE_nazi_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_enabling_act }	
 		
 		completion_reward = {
+		add_ideas = PRE_puppet_monarch
 		
 		}
 	}
@@ -555,9 +566,15 @@ focus_tree = {
 		relative_position_id = PRE_nazi_victory_focus
 		cost = 10		
 		prerequisite = { focus = PRE_restoring_puppet_monarchy }	
-		prerequisite = { focus = PRE_absorb_dnvp }			
+		prerequisite = { focus = PRE_absorb_dnvp }	
+		select_effect = {
+		add_ideas = PRE_nacht_der_langer_messer }			
 		completion_reward = {
-		
+		custom_effect_tooltip = PRE_nacht_der_langer_messer_tooltip
+		show_ideas_tooltip = PRE_nacht_der_langer_messer
+		hidden_effect = {
+		remove_ideas = PRE_nacht_der_langer_messer
+		}
 		}
 	}
 	focus = {

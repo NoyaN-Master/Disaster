@@ -114,7 +114,7 @@ PRE_national_solidarity_idea2 = {
 			}
 		}
 PRE_formalise_army_power_idea = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_national_solidarity_idea2" }
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_formalise_army_power_idea" }
 			#picture =
 			modifier = {
 			high_command_cost_factor = -0.2
@@ -125,7 +125,7 @@ PRE_formalise_army_power_idea = {
 		}
 
 PRE_integrate_querfront_parties_idea = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_national_solidarity_idea2" }
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_integrate_querfront_parties_idea" }
 			#picture =
 			modifier = {
 			conscription_factor = 0.1
@@ -136,7 +136,7 @@ PRE_integrate_querfront_parties_idea = {
 		}		
 		
 PRE_one_prussian_nation_idea = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_national_solidarity_idea2" }
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_one_prussian_nation_idea" }
 			#picture =
 			modifier = {
 			defensive_war_stability_factor = 0.2
@@ -145,9 +145,36 @@ PRE_one_prussian_nation_idea = {
 			minimum_training_level = -0.15
 			surrender_limit = 0.1
 			}
-		}	
-
-		
+		}
+PRE_absorb_dnvp_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_absorb_dnvp_idea" }
+			#picture =
+			modifier = {
+			revolutionary_nationalist_drift = 0.6
+			authoritarian_democrat_drift = -0.75
+			autocratic_drift = -0.75
+			ultranationalist_drift = -0.75
+			}
+		}		
+PRE_puppet_monarch = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_national_solidarity_idea2" }
+			#picture =
+			modifier = {
+			stability_factor = 0.1
+			}
+		}
+PRE_nacht_der_langer_messer	= {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_national_solidarity_idea2" }
+			#picture =
+			modifier = {
+			stability_factor = -0.4
+			stability_weekly = 0.05
+			war_support_weekly = -0.02
+			weekly_manpower = -5000
+			MONTHLY_POPULATION = -1
+			civilian_factory_use = 2
+			}
+		}
 		
 		
 		
