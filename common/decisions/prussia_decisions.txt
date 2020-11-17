@@ -1,3 +1,62 @@
-PRE_ministry_of_propaganda = {
+PRE_ministry_of_propaganda_decision = {
+     PRE_propaganda_decision_1 = {
+          cost = 100
+          fire_only_once = yes
+          modifier = {
 
+          }
+          remove_effect  = {
+		 PRE_propaganda_increase = yes
+		 custom_effect_tooltip = PRE_ministry_of_propaganda_increase_tooltip
+          }
+          days_remove = 1
+     }
+     PRE_propaganda_decision_2 = {
+          cost = 100
+          fire_only_once = yes
+          modifier = {
+
+          }
+          remove_effect  = {
+		 PRE_propaganda_increase = yes
+		 custom_effect_tooltip = PRE_ministry_of_propaganda_increase_tooltip
+          }
+          days_remove = 1
+     }
+     PRE_propaganda_decision_3 = {
+          cost = 100
+          fire_only_once = yes
+          modifier = {
+
+          }
+          remove_effect  = {
+		 PRE_propaganda_increase = yes
+		 custom_effect_tooltip = PRE_ministry_of_propaganda_increase_tooltip
+          }
+          days_remove = 1
+     }
+     PRE_propaganda_decision_4 = {
+          cost = 100
+          fire_only_once = yes
+          modifier = {
+
+          }
+          remove_effect  = {
+		 PRE_propaganda_increase = yes
+		 custom_effect_tooltip = PRE_ministry_of_propaganda_increase_tooltip
+          }
+          days_remove = 1
+     }
+     PRE_propaganda_decision_5 = {
+          cost = 100
+          fire_only_once = yes
+          modifier = {
+
+          }
+          remove_effect  = {
+		 PRE_propaganda_increase = yes
+		 custom_effect_tooltip = PRE_ministry_of_propaganda_increase_tooltip
+          }
+          days_remove = 1
+     }
 }

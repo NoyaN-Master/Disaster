@@ -1,0 +1,51 @@
+PRE_propaganda_increase = {
+            if = {
+                limit = {
+				NOT = { has_idea = PRE_propaganda_ministry1 }
+				NOT = { has_idea = PRE_propaganda_ministry2 }
+				NOT = { has_idea = PRE_propaganda_ministry3 }
+				NOT = { has_idea = PRE_propaganda_ministry4 }
+				NOT = { has_idea = PRE_propaganda_ministry5 }
+                }
+				hidden_effect = {
+                add_ideas = PRE_propaganda_ministry1
+				}
+            }
+			else_if = { 
+			limit = {
+				has_idea = PRE_propaganda_ministry1
+                }
+				hidden_effect = {
+                add_ideas = PRE_propaganda_ministry2
+				remove_ideas = PRE_propaganda_ministry1
+				}
+			}
+			else_if = { 
+			limit = {
+				has_idea = PRE_propaganda_ministry2
+                }
+				hidden_effect = {
+                add_ideas = PRE_propaganda_ministry3
+				remove_ideas = PRE_propaganda_ministry2
+				}
+			}
+			else_if = { 
+			limit = {
+				has_idea = PRE_propaganda_ministry3
+                }
+				hidden_effect = {
+                add_ideas = PRE_propaganda_ministry4
+				remove_ideas = PRE_propaganda_ministry3
+				}
+			}
+			else_if = { 
+			limit = {
+				has_idea = PRE_propaganda_ministry4
+                }
+				hidden_effect = {
+                add_ideas = PRE_propaganda_ministry5
+				remove_ideas = PRE_propaganda_ministry4
+				}
+			}
+
+}

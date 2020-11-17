@@ -211,7 +211,7 @@ PRE_propaganda_ministry1= {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_german_youth_league_idea" }
 			#picture =
 			modifier = {
-			conscription = 0.01
+			conscription_factor = 0.01
 			army_core_attack_factor = 0.03
 			army_core_defence_factor = 0.03
 			offensive_war_stability_factor = 0.05
@@ -224,7 +224,7 @@ PRE_propaganda_ministry2= {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_german_youth_league_idea" }
 			#picture =
 			modifier = {
-			conscription = 0.02
+			conscription_factor = 0.02
 			army_core_attack_factor = 0.06
 			army_core_defence_factor = 0.06
 			offensive_war_stability_factor = 0.10
@@ -237,7 +237,7 @@ PRE_propaganda_ministry3= {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_german_youth_league_idea" }
 			#picture =
 			modifier = {
-			conscription = 0.04
+			conscription_factor = 0.04
 			army_core_attack_factor = 0.09
 			army_core_defence_factor = 0.09
 			offensive_war_stability_factor = 0.15
@@ -250,7 +250,7 @@ PRE_propaganda_ministry4= {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_german_youth_league_idea" }
 			#picture =
 			modifier = {
-			conscription = 0.08
+			conscription_factor = 0.08
 			army_core_attack_factor = 0.12
 			army_core_defence_factor = 0.12
 			offensive_war_stability_factor = 0.20
@@ -263,7 +263,7 @@ PRE_propaganda_ministry5= {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_german_youth_league_idea" }
 			#picture =
 			modifier = {
-			conscription = 0.15
+			conscription_factor = 0.15
 			army_core_attack_factor = 0.15
 			army_core_defence_factor = 0.15
 			offensive_war_stability_factor = 0.25

@@ -523,6 +523,7 @@ focus_tree = {
 		remove_ideas = PRE_political_radicalisation		
 		remove_ideas = PRE_sham_democracy	
 		remove_ideas = PRE_ongoing_protests
+		remove_ideas = PRE_simmering_discontent
 		add_stability = 0.05
 		}
 	}
@@ -575,7 +576,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = PRE_nazi_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_restoring_puppet_monarchy }	
 		prerequisite = { focus = PRE_absorb_dnvp }	
 		select_effect = {
@@ -591,11 +592,13 @@ focus_tree = {
 	focus = {
 		id = PRE_volkisch_education
 		icon = GFX_goal_unknown
-		x = -3
+		x = -2
 		y = 4
 		relative_position_id = PRE_nazi_victory_focus
 		cost = 5		
 		prerequisite = { focus = PRE_nacht_der_langer_messer }
+		
+		
 		
 		completion_reward = {
 		add_ideas = PRE_volkisch_education_idea
@@ -604,7 +607,7 @@ focus_tree = {
 	focus = {
 		id = PRE_aryan_studies
 		icon = GFX_goal_unknown
-		x = -3
+		x = -2
 		y = 5
 		relative_position_id = PRE_nazi_victory_focus
 		cost = 6		
@@ -617,7 +620,7 @@ focus_tree = {
 	focus = {
 		id = PRE_german_youth_league
 		icon = GFX_goal_unknown
-		x = -3
+		x = -2
 		y = 6
 		relative_position_id = PRE_nazi_victory_focus
 		cost = 5		
@@ -630,7 +633,7 @@ focus_tree = {
 	focus = {
 		id = PRE_new_german_nationalism
 		icon = GFX_goal_unknown
-		x = -3
+		x = -2
 		y = 7
 		relative_position_id = PRE_nazi_victory_focus
 		cost = 5		
@@ -646,20 +649,21 @@ focus_tree = {
 	focus = {
 		id = PRE_ministry_of_propaganda
 		icon = GFX_goal_unknown
-		x = -1
+		x = 0
 		y = 4
 		relative_position_id = PRE_nazi_victory_focus
 		cost = 10		
 		prerequisite = { focus = PRE_nacht_der_langer_messer}
 		
 		completion_reward = {
-		
+		custom_effect_tooltip = PRE_ministry_of_propaganda_tooltip
+		add_political_power = 100
 		}
 	}
 	focus = {
 		id = PRE_establish_schutzstaffel
 		icon = GFX_goal_unknown
-		x = -1
+		x = 0
 		y = 5
 		relative_position_id = PRE_nazi_victory_focus
 		cost = 10		
@@ -672,7 +676,7 @@ focus_tree = {
 	focus = {
 		id = PRE_loyal_sons_of_germania
 		icon = GFX_goal_unknown
-		x = -1
+		x = 0
 		y = 6
 		relative_position_id = PRE_nazi_victory_focus
 		cost = 10		
@@ -685,7 +689,7 @@ focus_tree = {
 	focus = {
 		id = PRE_meine_ehre
 		icon = GFX_goal_unknown
-		x = -1
+		x = 0
 		y = 7
 		relative_position_id = PRE_nazi_victory_focus
 		cost = 10		
@@ -737,7 +741,7 @@ focus_tree = {
 	focus = {
 		id = PRE_prussian_steel
 		icon = GFX_goal_unknown
-		x = 1
+		x = 2
 		y = 7
 		relative_position_id = PRE_nazi_victory_focus
 		cost = 10		
@@ -751,10 +755,10 @@ focus_tree = {
 		id = PRE_expand_coal_mines
 		icon = GFX_goal_unknown
 		x = 3
-		y = 7
+		y = 8
 		relative_position_id = PRE_nazi_victory_focus
 		cost = 10		
-		prerequisite = { focus = PRE_forced_industrialization}
+		prerequisite = { focus = PRE_prussian_steel}
 		
 		completion_reward = {
 		
@@ -763,12 +767,12 @@ focus_tree = {
 	focus = {
 		id = PRE_arbeit_macht_frei
 		icon = GFX_goal_unknown
-		x = 2
+		x = 1
 		y = 8
 		relative_position_id = PRE_nazi_victory_focus
 		cost = 10		
 		prerequisite = { focus = PRE_prussian_steel}
-		prerequisite = { focus = PRE_expand_coal_mines}		
+		prerequisite = { focus = PRE_meine_ehre}
 		completion_reward = {
 		
 		}
@@ -776,13 +780,13 @@ focus_tree = {
 	focus = {
 		id = PRE_armaments_miracle
 		icon = GFX_goal_unknown
-		x = 0
+		x = -1
 		y = 8
 		relative_position_id = PRE_nazi_victory_focus
 		cost = 10		
 		prerequisite = { focus = PRE_meine_ehre}
 		prerequisite = { focus = PRE_prussian_steel}
-		prerequisite = { focus = PRE_expand_coal_mines}
+
 		completion_reward = {
 		
 		}
@@ -790,11 +794,10 @@ focus_tree = {
 	focus = {
 		id = PRE_rebirth_of_a_nation
 		icon = GFX_goal_unknown
-		x = -2
+		x = -3
 		y = 8
 		relative_position_id = PRE_nazi_victory_focus
 		cost = 10		
-		prerequisite = { focus = PRE_meine_ehre}
 		prerequisite = { focus = PRE_new_german_nationalism}
 		completion_reward = {
 		
@@ -810,6 +813,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_armaments_miracle}
 		prerequisite = { focus = PRE_rebirth_of_a_nation}
 		prerequisite = { focus = PRE_arbeit_macht_frei}
+		prerequisite = { focus = PRE_expand_coal_mines}
 		completion_reward = {
 		
 		}
