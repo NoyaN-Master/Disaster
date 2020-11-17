@@ -583,11 +583,11 @@ focus_tree = {
 		x = -3
 		y = 4
 		relative_position_id = PRE_nazi_victory_focus
-		cost = 10		
+		cost = 5		
 		prerequisite = { focus = PRE_nacht_der_langer_messer }
 		
 		completion_reward = {
-		
+		add_ideas = PRE_volkisch_education_idea
 		}
 	}
 	focus = {
@@ -596,11 +596,11 @@ focus_tree = {
 		x = -3
 		y = 5
 		relative_position_id = PRE_nazi_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_volkisch_education }
 		
 		completion_reward = {
-		
+		add_research_slot = 1
 		}
 	}
 	focus = {
@@ -609,11 +609,11 @@ focus_tree = {
 		x = -3
 		y = 6
 		relative_position_id = PRE_nazi_victory_focus
-		cost = 10		
+		cost = 5		
 		prerequisite = { focus = PRE_aryan_studies }
 		
 		completion_reward = {
-		
+		add_ideas = PRE_german_youth_league_idea
 		}
 	}
 	focus = {
@@ -622,11 +622,14 @@ focus_tree = {
 		x = -3
 		y = 7
 		relative_position_id = PRE_nazi_victory_focus
-		cost = 10		
+		cost = 5		
 		prerequisite = { focus = PRE_german_youth_league}
 		
 		completion_reward = {
-		
+		swap_ideas = {
+			add_idea = PRE_german_youth_league_idea2
+			remove_idea = PRE_german_youth_league_idea
+		}			
 		}
 	}
 	focus = {

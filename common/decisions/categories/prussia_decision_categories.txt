@@ -1,0 +1,13 @@
+PRE_ministry_of_propaganda = {
+	#icon = 
+	#picture = 
+	priority = 100
+	allowed = {
+		OR = {
+			tag = PRE
+		}
+	}
+	visible = {
+		has_completed_focus = PRE_ministry_of_propaganda
+	}
+}
