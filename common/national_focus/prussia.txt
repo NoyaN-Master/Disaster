@@ -554,18 +554,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_enabling_act }	
 		
 		completion_reward = {
-		retire_ideology_leader = revolutionary_nationalist
-			create_country_leader = {
-	            name = "August Wilhelm"
-	            desc = "Pre_Auwi_desc"
-	            picture = "Pre_Auwi.tga"
-	            expire = "2020.1.1"
-	            ideology = revolutionary_nationalist_subideology
-	            traits = {
-		            #
-	            }
-            }
-			add_stability = 0.07
+		add_ideas = PRE_puppet_monarch
 		
 		}
 	}
@@ -643,7 +632,7 @@ focus_tree = {
 	focus = {
 		id = PRE_ministry_of_propaganda
 		icon = GFX_goal_unknown
-		x = -1
+		x = 3
 		y = 4
 		relative_position_id = PRE_nazi_victory_focus
 		cost = 10		
@@ -656,7 +645,7 @@ focus_tree = {
 	focus = {
 		id = PRE_establish_schutzstaffel
 		icon = GFX_goal_unknown
-		x = -1
+		x = 3
 		y = 5
 		relative_position_id = PRE_nazi_victory_focus
 		cost = 10		
@@ -669,7 +658,7 @@ focus_tree = {
 	focus = {
 		id = PRE_loyal_sons_of_germania
 		icon = GFX_goal_unknown
-		x = -1
+		x = 3
 		y = 6
 		relative_position_id = PRE_nazi_victory_focus
 		cost = 10		
@@ -682,7 +671,7 @@ focus_tree = {
 	focus = {
 		id = PRE_meine_ehre
 		icon = GFX_goal_unknown
-		x = -1
+		x = 3
 		y = 7
 		relative_position_id = PRE_nazi_victory_focus
 		cost = 10		
@@ -695,7 +684,7 @@ focus_tree = {
 	focus = {
 		id = PRE_reichswerke
 		icon = GFX_goal_unknown
-		x = 2
+		x = 0
 		y = 4
 		relative_position_id = PRE_nazi_victory_focus
 		cost = 10		
@@ -708,7 +697,7 @@ focus_tree = {
 	focus = {
 		id = PRE_deutsche_arbeiters_front
 		icon = GFX_goal_unknown
-		x = 2
+		x = 0
 		y = 5
 		relative_position_id = PRE_nazi_victory_focus
 		cost = 10		
@@ -721,7 +710,7 @@ focus_tree = {
 	focus = {
 		id = PRE_forced_industrialization
 		icon = GFX_goal_unknown
-		x = 2
+		x = 0
 		y = 6
 		relative_position_id = PRE_nazi_victory_focus
 		cost = 10		
@@ -734,7 +723,7 @@ focus_tree = {
 	focus = {
 		id = PRE_prussian_steel
 		icon = GFX_goal_unknown
-		x = 1
+		x = -1
 		y = 7
 		relative_position_id = PRE_nazi_victory_focus
 		cost = 10		
@@ -747,7 +736,7 @@ focus_tree = {
 	focus = {
 		id = PRE_expand_coal_mines
 		icon = GFX_goal_unknown
-		x = 3
+		x = 1
 		y = 7
 		relative_position_id = PRE_nazi_victory_focus
 		cost = 10		
@@ -760,53 +749,12 @@ focus_tree = {
 	focus = {
 		id = PRE_arbeit_macht_frei
 		icon = GFX_goal_unknown
-		x = 2
+		x = 0
 		y = 8
 		relative_position_id = PRE_nazi_victory_focus
 		cost = 10		
 		prerequisite = { focus = PRE_prussian_steel}
 		prerequisite = { focus = PRE_expand_coal_mines}		
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = PRE_armaments_miracle
-		icon = GFX_goal_unknown
-		x = 0
-		y = 8
-		relative_position_id = PRE_nazi_victory_focus
-		cost = 10		
-		prerequisite = { focus = PRE_meine_ehre}
-		prerequisite = { focus = PRE_prussian_steel}
-		prerequisite = { focus = PRE_prussian_steel}
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = PRE_rebirth_of_a_nation
-		icon = GFX_goal_unknown
-		x = -2
-		y = 8
-		relative_position_id = PRE_nazi_victory_focus
-		cost = 10		
-		prerequisite = { focus = PRE_meine_ehre}
-		prerequisite = { focus = PRE_new_german_nationalism}
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = PRE_the_eagle_rises
-		icon = GFX_goal_unknown
-		x = 0
-		y = 9
-		relative_position_id = PRE_nazi_victory_focus
-		cost = 10		
-		prerequisite = { focus = PRE_armaments_miracle}
-		prerequisite = { focus = PRE_rebirth_of_a_nation}
-		prerequisite = { focus = PRE_arbeit_macht_frei}
 		completion_reward = {
 		
 		}
