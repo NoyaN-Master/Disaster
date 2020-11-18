@@ -652,7 +652,7 @@ focus_tree = {
 		x = 0
 		y = 4
 		relative_position_id = PRE_nazi_victory_focus
-		cost = 10		
+		cost = 5		
 		prerequisite = { focus = PRE_nacht_der_langer_messer}
 		
 		completion_reward = {
@@ -666,11 +666,22 @@ focus_tree = {
 		x = 0
 		y = 5
 		relative_position_id = PRE_nazi_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_ministry_of_propaganda}
 		
 		completion_reward = {
-		
+		add_tech_bonus = {
+			name = PRE_blueshirts
+			category = military_police_tech
+			bonus = 1
+			uses = 2
+		}		
+		add_tech_bonus = {
+			name = PRE_blueshirts_doctrine
+			bonus = 1
+			uses = 2
+			category = land_doctrine
+		}		
 		}
 	}
 	focus = {
@@ -679,11 +690,11 @@ focus_tree = {
 		x = 0
 		y = 6
 		relative_position_id = PRE_nazi_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_establish_schutzstaffel}
 		
 		completion_reward = {
-		
+		add_ideas = PRE_loyal_sons_of_germania_idea
 		}
 	}
 	focus = {
@@ -692,11 +703,14 @@ focus_tree = {
 		x = 0
 		y = 7
 		relative_position_id = PRE_nazi_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_loyal_sons_of_germania}
 		
 		completion_reward = {
-		
+		swap_ideas = {
+			add_idea = PRE_meine_ehre_idea
+			remove_idea = PRE_loyal_sons_of_germania_idea
+		}
 		}
 	}
 	focus = {
@@ -705,11 +719,55 @@ focus_tree = {
 		x = 2
 		y = 4
 		relative_position_id = PRE_nazi_victory_focus
-		cost = 10		
+		cost = 7		
 		prerequisite = { focus = PRE_nacht_der_langer_messer }
 		
 		completion_reward = {
-		
+			64 = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}	
+			63 = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+			68 = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}		
 		}
 	}
 	focus = {
@@ -718,11 +776,11 @@ focus_tree = {
 		x = 2
 		y = 5
 		relative_position_id = PRE_nazi_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_reichswerke}
 		
 		completion_reward = {
-		
+		add_ideas = PRE_deutsche_arbeiters_front_idea
 		}
 	}
 	focus = {
@@ -731,11 +789,14 @@ focus_tree = {
 		x = 2
 		y = 6
 		relative_position_id = PRE_nazi_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_deutsche_arbeiters_front}
 		
 		completion_reward = {
-		
+		swap_ideas = {
+			add_idea = PRE_deutsche_arbeiters_front_idea2
+			remove_idea = PRE_deutsche_arbeiters_front_idea
+		}		
 		}
 	}
 	focus = {
@@ -748,7 +809,26 @@ focus_tree = {
 		prerequisite = { focus = PRE_forced_industrialization}
 		
 		completion_reward = {
-		
+		add_resource = {
+			type = steel
+			amount = 50
+			state = 66
+		}
+		add_resource = {
+			type = steel
+			amount = 40
+			state = 67
+		}
+			add_tech_bonus = {
+				name = PRE_resources_tech
+				bonus = 0.5
+				uses = 2
+				technology = excavation1
+				technology = excavation2
+				technology = excavation3
+				technology = excavation4
+				technology = excavation5
+			}		
 		}
 	}
 	focus = {
@@ -761,7 +841,72 @@ focus_tree = {
 		prerequisite = { focus = PRE_prussian_steel}
 		
 		completion_reward = {
-		
+			66 = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}	
+			763 = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+			5 = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}		
+			66 = {
+			add_building_construction = {
+				type = infrastructure 
+				level = 2
+				instant_build = yes
+			}
+		}	
+			763 = {
+			add_building_construction = {
+				type = infrastructure 
+				level = 2
+				instant_build = yes
+			}
+		}
+			5 = {
+			add_building_construction = {
+				type = infrastructure 
+				level = 2
+				instant_build = yes
+			}
+		}	
 		}
 	}
 	focus = {
@@ -774,7 +919,8 @@ focus_tree = {
 		prerequisite = { focus = PRE_prussian_steel}
 		prerequisite = { focus = PRE_meine_ehre}
 		completion_reward = {
-		
+		add_ideas = PRE_arbeit_macht_frei_idea
+		add_stability = -0.05
 		}
 	}
 	focus = {
@@ -785,10 +931,33 @@ focus_tree = {
 		relative_position_id = PRE_nazi_victory_focus
 		cost = 10		
 		prerequisite = { focus = PRE_meine_ehre}
-		prerequisite = { focus = PRE_prussian_steel}
+		prerequisite = { focus = PRE_new_german_nationalism}
 
 		completion_reward = {
-		
+			66 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}	
+			763 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+			5 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}		
 		}
 	}
 	focus = {
@@ -797,10 +966,12 @@ focus_tree = {
 		x = -3
 		y = 8
 		relative_position_id = PRE_nazi_victory_focus
-		cost = 10		
+		cost = 5		
 		prerequisite = { focus = PRE_new_german_nationalism}
 		completion_reward = {
-		
+		add_political_power = 50
+		add_stability = 0.05
+		add_war_support = 0.1
 		}
 	}
 	focus = {
@@ -815,7 +986,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_arbeit_macht_frei}
 		prerequisite = { focus = PRE_expand_coal_mines}
 		completion_reward = {
-		
+		add_ideas = PRE_the_eagle_rises_idea
 		}
 		}
 ######################### other paths
