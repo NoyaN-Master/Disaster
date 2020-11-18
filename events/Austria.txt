@@ -2234,7 +2234,7 @@ country_event = { #renner's speech
 
 	is_triggered_only = yes
 	
-	option = { #schutzbund
+	option = { 
 		name = aut.70.a 
 		add_stability = 0.07
 		add_political_power = 40

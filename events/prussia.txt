@@ -11,7 +11,7 @@ country_event = { #intro event
 		name = pre.1.a
 		ai_chance = { factor = 1}
 		hidden_effect = {
-		    country_event = { id = pre.2 days = 50 }
+		    country_event = { id = pre.2 days = 60 }
 		}
 	}
 }
@@ -27,7 +27,7 @@ country_event = { #corruption report
 		name = pre.2.a
 		ai_chance = { factor = 1}
 		hidden_effect = {
-		    country_event = { id = pre.20 days = 4 }
+		    country_event = { id = pre.20 days = 10 }
 		}
 	}
 }
@@ -219,20 +219,20 @@ country_event = { # Goring Coups with junker Support
 	desc = pre.12.d
 	fire_only_once = yes
 	is_triggered_only = yes
-	immediate = { 
-	set_ruling_party = revolutionary_nationalist 
-	clr_country_flag = PRE_schleicher_refuses_step_down 
-	} 
 	
 	option = { # Goring tries to work with junker
 		name = pre.12.a
 		ai_chance = { factor = 1}
 		country_event = { id = pre.13 days = 5 }
+		set_ruling_party = revolutionary_nationalist 
+	    clr_country_flag = PRE_schleicher_refuses_step_down 
 	}
 	option = { # Goring consolidates power
 		name = pre.12.b
 		ai_chance = { factor = 1}
 		country_event = { id = pre.14 days = 5 }
+		set_ruling_party = revolutionary_nationalist 
+	    clr_country_flag = PRE_schleicher_refuses_step_down 
 	}
 }
 country_event = { # Junker betray Goring

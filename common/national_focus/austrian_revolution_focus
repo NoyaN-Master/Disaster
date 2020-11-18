@@ -62,6 +62,7 @@ focus_tree = {
 		search_filters = { }
 		completion_reward = {
 			country_event = { id = aut.65 days = 1 }
+			remove_ideas = AUT_unresolved_monarchy
         }
 	}
 	
