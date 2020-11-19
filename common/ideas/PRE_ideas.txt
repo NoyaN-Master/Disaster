@@ -208,7 +208,7 @@ PRE_german_youth_league_idea2 = {
 			}
 		}
 PRE_propaganda_ministry1= {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_german_youth_league_idea" }
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_propaganda_ministry1" }
 			#picture =
 			modifier = {
 			conscription_factor = 0.01
@@ -221,7 +221,7 @@ PRE_propaganda_ministry1= {
 			}
 		}	
 PRE_propaganda_ministry2= {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_german_youth_league_idea" }
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_propaganda_ministry2" }
 			#picture =
 			modifier = {
 			conscription_factor = 0.02
@@ -234,7 +234,7 @@ PRE_propaganda_ministry2= {
 			}
 		}	
 PRE_propaganda_ministry3= {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_german_youth_league_idea" }
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_propaganda_ministry3" }
 			#picture =
 			modifier = {
 			conscription_factor = 0.04
@@ -247,7 +247,7 @@ PRE_propaganda_ministry3= {
 			}
 		}	
 PRE_propaganda_ministry4= {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_german_youth_league_idea" }
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_propaganda_ministry4" }
 			#picture =
 			modifier = {
 			conscription_factor = 0.08
@@ -260,7 +260,7 @@ PRE_propaganda_ministry4= {
 			}
 		}	
 PRE_propaganda_ministry5= {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_german_youth_league_idea" }
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_propaganda_ministry5" }
 			#picture =
 			modifier = {
 			conscription_factor = 0.15
@@ -271,6 +271,71 @@ PRE_propaganda_ministry5= {
 			surrender_limit = 0.1
 			war_support_factor = 0.25		
 			}
-		}				
+		}
+PRE_loyal_sons_of_germania_idea	= {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_loyal_sons_of_germania_idea" }
+			#picture =
+			modifier = {
+			army_attack_factor = 0.05
+			max_dig_in = 5
+			}
+		}	
+PRE_meine_ehre_idea= {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_meine_ehre_idea" }
+			#picture =
+			modifier = {
+			army_attack_factor = 0.05
+			max_dig_in = 5
+			experience_gain_army_factor = 0.1
+			max_planning = 0.3
+			planning_speed = 0.05
+			}
+		}
+PRE_deutsche_arbeiters_front_idea= {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_deutsche_arbeiters_front_idea" }
+			#picture =
+			modifier = {
+			production_factory_max_efficiency_factor = 0.05
+			line_change_production_efficiency_factor = 0.05
+			industrial_capacity_factory = 0.05
+			}
+		}
+PRE_deutsche_arbeiters_front_idea2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_deutsche_arbeiters_front_idea2" }
+			#picture =
+			modifier = {
+			production_factory_max_efficiency_factor = 0.1
+			line_change_production_efficiency_factor = 0.1
+			industrial_capacity_factory = 0.1
+			political_power_gain = -0.2
+			}
+		}	
+PRE_arbeit_macht_frei_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_arbeit_macht_frei_idea" }
+			#picture =
+			modifier = {
+			consumer_goods_factor = -0.05
+			production_speed_buildings_factor = 0.1
+			stability_factor = -0.1
+			}
+		}
+PRE_the_eagle_rises_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_arbeit_macht_frei_idea" }
+			#picture =
+			modifier = {
+			army_morale_factor = 0.1
+			ai_focus_aggressive_factor = 0.5
+			justify_war_goal_time = -0.5
+			mobilization_speed = 0.2
+			surrender_limit = 0.2
+			}
+		}
+
+
+
+
+
+
+
 	}
 }
