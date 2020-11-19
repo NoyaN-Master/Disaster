@@ -380,6 +380,10 @@ country_event = { #attacking goring
 			ideology = revolutionary_nationalist
 			popularity = -0.06
 		}
+		add_popularity = {
+			ideology = national_bolshevik
+			popularity = 0.02
+		}
 		add_stability = -0.04
 		set_country_flag = PRE_goring_crackdown_heavy
 	}
