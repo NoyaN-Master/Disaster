@@ -46,56 +46,6 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Abdulmecid's Letter
-	focus = {
-		id = WRF_abdulmecids_letter
-		icon = GFX_goal_unknown
-		x = 45
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = WRF_abolish_the_caliphate }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for CIB's Fate
-	focus = {
-		id = WRF_cibs_fate
-		icon = GFX_goal_unknown
-		x = 29
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = WRF_holy_wars_punishmet_due }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Return To Hangar
-	focus = {
-		id = WRF_return_to_hangar
-		icon = GFX_goal_unknown
-		x = 37
-		y = 8
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = WRF_cibs_fate 
-		}
-		prerequisite = { 
-			focus = WRF_exposing_the_collabriation_government 
-		}
-		prerequisite = { 
-			focus = WRF_abdulmecids_letter 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	#Focus for Kemal's Speech
 	focus = {
 		id = WRF_kemals_speech
@@ -503,7 +453,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 8
 		y = 7
-		cost = 10
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = WRF_send_peker_to_rome 
@@ -534,6 +484,9 @@ focus_tree = {
 		}
 	}
 
+	
+	#####UNIFICATION STUFF#####
+
 	#Focus for The Enemies Within
 	focus = {
 		id = WRF_the_enemies_within
@@ -549,346 +502,155 @@ focus_tree = {
 			owns_state = 834
 			has_war = no
 		}
-		
+	 completion_reward = {
+		custom_effect_tooltip = WRF_enemies_within
+		set_capital = 340
+		add_political_power = -500
+		remove_ideas = WRF_Greek_Legacy
+		remove_ideas = TUR_Struggle_Front_4
+	 }	
 	}
-
-	#Focus for Curse of Enverism
+	
+	#Focus for CIB-1
 	focus = {
-		id = WRF_curse_of_enverism
+		id = WRF_deal_cib_1
 		icon = GFX_goal_unknown
-		x = 29
+		x = 30
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
+		mutually_exclusive = { focus = WRF_deal_cib_2 }
 		prerequisite = { focus = WRF_the_enemies_within }
 		ai_will_do = {
 			factor = 1
 		}
+		available = {	
+		OR = {	has_country_flag = WRF_Adsiz_Won has_country_flag = WRF_Anarch_Won }
+		}
+	 completion_reward = {
+	 }	
 	}
-
-	#Focus for Anatolian Nightmare
+	
+	#Focus for CIB-1
 	focus = {
-		id = WRF_anatolian_nightmare
-		icon = GFX_goal_unknown
-		x = 37
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = WRF_the_enemies_within }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for The Mad Caliph
-	focus = {
-		id = WRF_the_mad_caliph
-		icon = GFX_goal_unknown
-		x = 45
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = WRF_the_enemies_within }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Abolish The Caliphate
-	focus = {
-		id = WRF_abolish_the_caliphate
-		icon = GFX_goal_unknown
-		x = 45
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = WRF_contact_gko }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Exposing The Collabriation Government
-	focus = {
-		id = WRF_exposing_the_collabriation_government
-		icon = GFX_goal_unknown
-		x = 37
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = WRF_operation_red_fauna 
-		}
-		prerequisite = { 
-			focus = WRF_contact_the_circassians 
-		}
-		prerequisite = { 
-			focus = WRF_pBFryOYA 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Form The  Istiklal Mahkemes
-	focus = {
-		id = WRF_form_the__istiklal_mahkemes
-		icon = GFX_goal_unknown
-		x = 47
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = WRF_the_mad_caliph }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for South of Heaven
-	focus = {
-		id = WRF_south_of_heaven
-		icon = GFX_goal_unknown
-		x = 45
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = WRF_secular_brigades 
-		}
-		prerequisite = { 
-			focus = WRF_form_the__istiklal_mahkemes 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Smuggler's Oath
-	focus = {
-		id = WRF_smugglers_oath
-		icon = GFX_goal_unknown
-		x = 37
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = WRF_agents_in_ankara 
-		}
-		prerequisite = { 
-			focus = WRF_saving_the_nation 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Operation: RED FAUNA
-	focus = {
-		id = WRF_operation_red_fauna
-		icon = GFX_goal_unknown
-		x = 34
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = WRF_prepare_the_slave_revolt }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for The Greywolf Militas
-	focus = {
-		id = WRF_the_greywolf_militas
-		icon = GFX_goal_unknown
-		x = 40
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = WRF_prepare_the_slave_revolt }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Agents in Ankara
-	focus = {
-		id = WRF_agents_in_ankara
-		icon = GFX_goal_unknown
-		x = 35
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = WRF_anatolian_nightmare }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Propaganda Against Enverism
-	focus = {
-		id = WRF_propaganda_against_enverism
-		icon = GFX_goal_unknown
-		x = 31
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = WRF_curse_of_enverism }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Greenshirt Officers
-	focus = {
-		id = WRF_greenshirt_officers
-		icon = GFX_goal_unknown
-		x = 29
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = WRF_build_the_motherbase 
-		}
-		prerequisite = { 
-			focus = WRF_propaganda_against_enverism 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Build The Motherbase
-	focus = {
-		id = WRF_build_the_motherbase
-		icon = GFX_goal_unknown
-		x = 27
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = WRF_curse_of_enverism }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Factories For War
-	focus = {
-		id = WRF_factories_for_war
-		icon = GFX_goal_unknown
-		x = 26
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = WRF_build_the_motherbase }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Kemalist Education
-	focus = {
-		id = WRF_kemalist_education
+		id = WRF_deal_cib_2
 		icon = GFX_goal_unknown
 		x = 32
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		available = { focus = WRF_kemals_speech } 
+		prerequisite = { focus = WRF_the_enemies_within }
+		mutually_exclusive = { focus = WRF_deal_cib_1 }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {	
+		OR = {	has_country_flag = WRF_Kemalist_Won has_country_flag = WRF_Demokrat_End }
+		}
+	 completion_reward = {
+	 }	
+	}
+
+	#Focus for ANT-1
+	focus = {
+		id = WRF_deal_ant_1
+		icon = GFX_goal_unknown
+		x = 36
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = WRF_deal_ant_2 }
+		prerequisite = { focus = WRF_the_enemies_within }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {	
+		OR = {	has_country_flag = WRF_Adsiz_Won has_country_flag = WRF_Anarch_Won }
+		}
+	 completion_reward = {
+	 }	
+	}
+	
+	#Focus for ANT-2
+	focus = {
+		id = WRF_deal_ant_2
+		icon = GFX_goal_unknown
+		x = 38
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = WRF_the_enemies_within }
+		mutually_exclusive = { focus = WRF_deal_ant_1 }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {	
+		OR = {	has_country_flag = WRF_Kemalist_Won has_country_flag = WRF_Demokrat_End }
+		}
+	 completion_reward = {
+	 }	
+	}
+	
+	#Focus for CLP-1
+	focus = {
+		id = WRF_deal_clp_1
+		icon = GFX_goal_unknown
+		x = 42
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = WRF_deal_clp_2 }
+		prerequisite = { focus = WRF_the_enemies_within }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {	
+		OR = {	has_country_flag = WRF_Adsiz_Won has_country_flag = WRF_Anarch_Won }
+		}
+		
+	 completion_reward = {
+	 }	
+	}
+	
+	#Focus for CLP-2
+	focus = {
+		id = WRF_deal_clp_2
+		icon = GFX_goal_unknown
+		x = 44
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = WRF_deal_clp_1 }
+		prerequisite = { focus = WRF_the_enemies_within }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {	
+		OR = {	has_country_flag = WRF_Kemalist_Won has_country_flag = WRF_Demokrat_End }
+		}
+	 completion_reward = {
+	 }	
+	}
+	
+	#Focus for IST
+	focus = {
+		id = WRF_deal_ist
+		icon = GFX_goal_unknown
+		x = 37
 		y = 4
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = WRF_propaganda_against_enverism }
+		mutually_exclusive = { focus = WRF_deal_clp_1 }
+		prerequisite = { OR = {	focus = WRF_deal_clp_2 focus = WRF_deal_clp_1 focus = WRF_deal_cib_1 focus = WRF_deal_cib_2 focus = WRF_deal_ant_1 focus = WRF_deal_ant_2 } }
 		ai_will_do = {
 			factor = 1
 		}
-	}
-
-	#Focus for Holy Wars: Punishmet Due
-	focus = {
-		id = WRF_holy_wars_punishmet_due
-		icon = GFX_goal_unknown
-		x = 29
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = WRF_factories_for_war 
+		available = {	
+		OR = {	has_country_flag = WRF_Kemalist_Won has_country_flag = WRF_Demokrat_End has_country_flag = WRF_Adsiz_Won has_country_flag = WRF_Anarch_Won }
 		}
-		prerequisite = { 
-			focus = WRF_greenshirt_officers 
-		}
-		prerequisite = { 
-			focus = WRF_kemalist_education 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Saving The Nation
-	focus = {
-		id = WRF_saving_the_nation
-		icon = GFX_goal_unknown
-		x = 39
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = WRF_anatolian_nightmare }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Prepare The Slave Revolt
-	focus = {
-		id = WRF_prepare_the_slave_revolt
-		icon = GFX_goal_unknown
-		x = 37
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = WRF_smugglers_oath }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Contact The Circassians
-	focus = {
-		id = WRF_contact_the_circassians
-		icon = GFX_goal_unknown
-		x = 37
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = WRF_prepare_the_slave_revolt }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Secular Brigades
-	focus = {
-		id = WRF_secular_brigades
-		icon = GFX_goal_unknown
-		x = 43
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = WRF_the_mad_caliph }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Contact GKO
-	focus = {
-		id = WRF_contact_gko
-		icon = GFX_goal_unknown
-		x = 45
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = WRF_south_of_heaven }
-		ai_will_do = {
-			factor = 1
-		}
+	 completion_reward = {
+	 }	
 	}
 
 #End of focuses 

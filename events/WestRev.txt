@@ -740,6 +740,7 @@ country_event = { #Manisa Congress Reshuffle Democrat
 		long_name = WRF_conservative_party_manisa_long 
 		name = WRF_conservative_party_manisa 
 		}
+		set_country_flag = WRF_Demokrat_End
 		}
 		}	
 	
@@ -850,6 +851,7 @@ country_event = { #Manisa Congress Reshuffle NazBol
 		name = wrf.22.a 
 		add_political_power = 1
 		custom_effect_tooltip = WRF_NazBol_End
+		set_country_flag = WRF_Adsiz_Won
 		}
 		}	
 country_event = { #Manisa Congress Reshuffle Tengri
@@ -873,6 +875,7 @@ country_event = { #Manisa Congress Reshuffle Tengri
 		long_name = WRF_revolutionary_anarchist_party_manisa_long 
 		name = WRF_revolutionary_anarchist_party_manisa 
 		}
+		set_country_flag = WRF_Anarch_Won
 		}
 		}
 country_event = { #Manisa Congress Reshuffle NazBol
@@ -891,6 +894,7 @@ country_event = { #Manisa Congress Reshuffle NazBol
 		name = wrf.24.a 
 		add_political_power = 1
 		custom_effect_tooltip = WRF_Kemalist_End
+		set_country_flag = WRF_Kemalist_Won
 		}
 		}
 
