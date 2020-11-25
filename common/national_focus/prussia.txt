@@ -801,7 +801,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_prussian_steel
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PRE_silesian_steel
 		x = 2
 		y = 7
 		relative_position_id = PRE_nazi_victory_focus
@@ -833,7 +833,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_expand_coal_mines
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PRE_expand_the_coal_mines
 		x = 3
 		y = 8
 		relative_position_id = PRE_nazi_victory_focus
@@ -962,7 +962,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_rebirth_of_a_nation
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PRE_newbismarck
 		x = -3
 		y = 8
 		relative_position_id = PRE_nazi_victory_focus
