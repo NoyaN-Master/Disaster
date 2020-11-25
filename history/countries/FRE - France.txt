@@ -38,7 +38,7 @@ if = {
 }
 
 set_politics = {
-	ruling_party = liberal
+	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -65,6 +65,17 @@ create_country_leader = {
 	picture = "FRE_Camille_Chautemps.tga"
 	expire = "2020.1.1"
 	ideology = liberal_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Maxime Weygand"
+	#desc = "FRE_Maxime_Weygand_desc"
+	picture = "FFRE_Maxime_Weygand.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_democrat_subideology
 	traits = {
 		#
 	}

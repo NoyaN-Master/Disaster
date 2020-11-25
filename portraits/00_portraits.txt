@@ -1,0 +1,403 @@
+default = {
+	#navy = {
+		#male = {
+		#}
+		#female = {
+		#}
+	#}
+
+	#army = {
+		#male = {
+		#}
+		#female = {
+		#}
+	#}
+
+	operative = {
+		male = {
+			"gfx/leaders/operative_unknown.dds"
+		}
+		female = {
+			"gfx/leaders/operative_unknown.dds"
+		}
+	}
+
+	male = {
+		"gfx/leaders/leader_unknown.dds"
+	}
+	female = {
+		"gfx/leaders/leader_unknown_female.dds"
+	}
+}
+
+continent = {
+	name = europe
+	#army = {
+		male = {
+
+		}
+	}
+
+	#navy = {
+		male = {
+
+		}
+	}
+
+	political = {
+		national_bolshevik = {
+			male = {
+				"gfx/leaders/Europe/Generic_Europe_1.tga"
+				"gfx/leaders/Europe/Generic_Europe_2.tga"
+				"gfx/leaders/Europe/Generic_Europe_3.tga"
+				"gfx/leaders/Europe/Generic_Europe_4.tga"
+                                "gfx/leaders/Europe/Generic_Europe_5.tga"
+                                "gfx/leaders/Europe/Generic_Europe_6.tga"
+                                "gfx/leaders/Europe/Generic_Europe_7.tga"
+                                "gfx/leaders/Europe/Generic_Europe_8.tga"
+                                "gfx/leaders/Europe/Generic_Europe_9.tga"
+                                "gfx/leaders/Europe/Generic_Europe_10.tga"
+			}
+		}
+		authoritarian_socialist = {
+			male = {
+				"gfx/leaders/Europe/Generic_Europe_1.tga"
+				"gfx/leaders/Europe/Generic_Europe_2.tga"
+				"gfx/leaders/Europe/Generic_Europe_3.tga"
+				"gfx/leaders/Europe/Generic_Europe_4.tga"
+                                "gfx/leaders/Europe/Generic_Europe_5.tga"
+                                "gfx/leaders/Europe/Generic_Europe_6.tga"
+                                "gfx/leaders/Europe/Generic_Europe_7.tga"
+                                "gfx/leaders/Europe/Generic_Europe_8.tga"
+                                "gfx/leaders/Europe/Generic_Europe_9.tga"
+                                "gfx/leaders/Europe/Generic_Europe_10.tga"
+			}
+		}
+		libertarian_socialist = {
+			male = {
+				"gfx/leaders/Europe/Generic_Europe_1.tga"
+				"gfx/leaders/Europe/Generic_Europe_2.tga"
+				"gfx/leaders/Europe/Generic_Europe_3.tga"
+				"gfx/leaders/Europe/Generic_Europe_4.tga"
+                                "gfx/leaders/Europe/Generic_Europe_5.tga"
+                                "gfx/leaders/Europe/Generic_Europe_6.tga"
+                                "gfx/leaders/Europe/Generic_Europe_7.tga"
+                                "gfx/leaders/Europe/Generic_Europe_8.tga"
+                                "gfx/leaders/Europe/Generic_Europe_9.tga"
+                                "gfx/leaders/Europe/Generic_Europe_10.tga"
+			}
+		}
+		social_democrat = {
+			male = {
+				"gfx/leaders/Europe/Generic_Europe_1.tga"
+				"gfx/leaders/Europe/Generic_Europe_2.tga"
+				"gfx/leaders/Europe/Generic_Europe_3.tga"
+				"gfx/leaders/Europe/Generic_Europe_4.tga"
+                                "gfx/leaders/Europe/Generic_Europe_5.tga"
+                                "gfx/leaders/Europe/Generic_Europe_6.tga"
+                                "gfx/leaders/Europe/Generic_Europe_7.tga"
+                                "gfx/leaders/Europe/Generic_Europe_8.tga"
+                                "gfx/leaders/Europe/Generic_Europe_9.tga"
+                                "gfx/leaders/Europe/Generic_Europe_10.tga"
+			}
+		}
+		liberal = {
+			male = {
+				"gfx/leaders/Europe/Generic_Europe_1.tga"
+				"gfx/leaders/Europe/Generic_Europe_2.tga"
+				"gfx/leaders/Europe/Generic_Europe_3.tga"
+				"gfx/leaders/Europe/Generic_Europe_4.tga"
+                                "gfx/leaders/Europe/Generic_Europe_5.tga"
+                                "gfx/leaders/Europe/Generic_Europe_6.tga"
+                                "gfx/leaders/Europe/Generic_Europe_7.tga"
+                                "gfx/leaders/Europe/Generic_Europe_8.tga"
+                                "gfx/leaders/Europe/Generic_Europe_9.tga"
+                                "gfx/leaders/Europe/Generic_Europe_10.tga"
+			}
+		}
+		conservative = {
+			male = {
+				"gfx/leaders/Europe/Generic_Europe_1.tga"
+				"gfx/leaders/Europe/Generic_Europe_2.tga"
+				"gfx/leaders/Europe/Generic_Europe_3.tga"
+				"gfx/leaders/Europe/Generic_Europe_4.tga"
+                                "gfx/leaders/Europe/Generic_Europe_5.tga"
+                                "gfx/leaders/Europe/Generic_Europe_6.tga"
+                                "gfx/leaders/Europe/Generic_Europe_7.tga"
+                                "gfx/leaders/Europe/Generic_Europe_8.tga"
+                                "gfx/leaders/Europe/Generic_Europe_9.tga"
+                                "gfx/leaders/Europe/Generic_Europe_10.tga"
+			}
+		}
+		authoritarian_democrat = {
+			male = {
+				"gfx/leaders/Europe/Generic_Europe_1.tga"
+				"gfx/leaders/Europe/Generic_Europe_2.tga"
+				"gfx/leaders/Europe/Generic_Europe_3.tga"
+				"gfx/leaders/Europe/Generic_Europe_4.tga"
+                                "gfx/leaders/Europe/Generic_Europe_5.tga"
+                                "gfx/leaders/Europe/Generic_Europe_6.tga"
+                                "gfx/leaders/Europe/Generic_Europe_7.tga"
+                                "gfx/leaders/Europe/Generic_Europe_8.tga"
+                                "gfx/leaders/Europe/Generic_Europe_9.tga"
+                                "gfx/leaders/Europe/Generic_Europe_10.tga"
+			}
+		}
+		autocratic = {
+			male = {
+				"gfx/leaders/Europe/Generic_Europe_1.tga"
+				"gfx/leaders/Europe/Generic_Europe_2.tga"
+				"gfx/leaders/Europe/Generic_Europe_3.tga"
+				"gfx/leaders/Europe/Generic_Europe_4.tga"
+                                "gfx/leaders/Europe/Generic_Europe_5.tga"
+                                "gfx/leaders/Europe/Generic_Europe_6.tga"
+                                "gfx/leaders/Europe/Generic_Europe_7.tga"
+                                "gfx/leaders/Europe/Generic_Europe_8.tga"
+                                "gfx/leaders/Europe/Generic_Europe_9.tga"
+                                "gfx/leaders/Europe/Generic_Europe_10.tga"
+			}
+		}
+		ultranationalist = {
+			male = {
+				"gfx/leaders/Europe/Generic_Europe_1.tga"
+				"gfx/leaders/Europe/Generic_Europe_2.tga"
+				"gfx/leaders/Europe/Generic_Europe_3.tga"
+				"gfx/leaders/Europe/Generic_Europe_4.tga"
+                                "gfx/leaders/Europe/Generic_Europe_5.tga"
+                                "gfx/leaders/Europe/Generic_Europe_6.tga"
+                                "gfx/leaders/Europe/Generic_Europe_7.tga"
+                                "gfx/leaders/Europe/Generic_Europe_8.tga"
+                                "gfx/leaders/Europe/Generic_Europe_9.tga"
+                                "gfx/leaders/Europe/Generic_Europe_10.tga"
+			}
+		}
+		revolutionary_nationalist = {
+			male = {
+				"gfx/leaders/Europe/Generic_Europe_1.tga"
+				"gfx/leaders/Europe/Generic_Europe_2.tga"
+				"gfx/leaders/Europe/Generic_Europe_3.tga"
+				"gfx/leaders/Europe/Generic_Europe_4.tga"
+                                "gfx/leaders/Europe/Generic_Europe_5.tga"
+                                "gfx/leaders/Europe/Generic_Europe_6.tga"
+                                "gfx/leaders/Europe/Generic_Europe_7.tga"
+                                "gfx/leaders/Europe/Generic_Europe_8.tga"
+                                "gfx/leaders/Europe/Generic_Europe_9.tga"
+                                "gfx/leaders/Europe/Generic_Europe_10.tga"
+			}
+		}
+                esoteric_traditionalist = {
+			male = {
+				"gfx/leaders/Europe/Generic_Europe_1.tga"
+				"gfx/leaders/Europe/Generic_Europe_2.tga"
+				"gfx/leaders/Europe/Generic_Europe_3.tga"
+				"gfx/leaders/Europe/Generic_Europe_4.tga"
+                                "gfx/leaders/Europe/Generic_Europe_5.tga"
+                                "gfx/leaders/Europe/Generic_Europe_6.tga"
+                                "gfx/leaders/Europe/Generic_Europe_7.tga"
+                                "gfx/leaders/Europe/Generic_Europe_8.tga"
+                                "gfx/leaders/Europe/Generic_Europe_9.tga"
+                                "gfx/leaders/Europe/Generic_Europe_10.tga"
+			}
+		}
+                revolutionary_anarchist = {
+			male = {
+				"gfx/leaders/Europe/Generic_Europe_1.tga"
+				"gfx/leaders/Europe/Generic_Europe_2.tga"
+				"gfx/leaders/Europe/Generic_Europe_3.tga"
+				"gfx/leaders/Europe/Generic_Europe_4.tga"
+                                "gfx/leaders/Europe/Generic_Europe_5.tga"
+                                "gfx/leaders/Europe/Generic_Europe_6.tga"
+                                "gfx/leaders/Europe/Generic_Europe_7.tga"
+                                "gfx/leaders/Europe/Generic_Europe_8.tga"
+                                "gfx/leaders/Europe/Generic_Europe_9.tga"
+                                "gfx/leaders/Europe/Generic_Europe_10.tga"
+			}
+		}
+	}
+}
+
+continent = {
+	name = north_america
+	#army = {
+		male = {
+
+		}
+	}
+
+	#navy = {
+		male = {
+
+		}
+	}
+
+	political = {
+		national_bolshevik = {
+			male = {
+				"gfx/leaders/Europe/Generic_Europe_1.tga"
+				"gfx/leaders/Europe/Generic_Europe_2.tga"
+				"gfx/leaders/Europe/Generic_Europe_3.tga"
+				"gfx/leaders/Europe/Generic_Europe_4.tga"
+                                "gfx/leaders/Europe/Generic_Europe_5.tga"
+                                "gfx/leaders/Europe/Generic_Europe_6.tga"
+                                "gfx/leaders/Europe/Generic_Europe_7.tga"
+                                "gfx/leaders/Europe/Generic_Europe_8.tga"
+                                "gfx/leaders/Europe/Generic_Europe_9.tga"
+                                "gfx/leaders/Europe/Generic_Europe_10.tga"
+			}
+		}
+		authoritarian_socialist = {
+			male = {
+				"gfx/leaders/Europe/Generic_Europe_1.tga"
+				"gfx/leaders/Europe/Generic_Europe_2.tga"
+				"gfx/leaders/Europe/Generic_Europe_3.tga"
+				"gfx/leaders/Europe/Generic_Europe_4.tga"
+                                "gfx/leaders/Europe/Generic_Europe_5.tga"
+                                "gfx/leaders/Europe/Generic_Europe_6.tga"
+                                "gfx/leaders/Europe/Generic_Europe_7.tga"
+                                "gfx/leaders/Europe/Generic_Europe_8.tga"
+                                "gfx/leaders/Europe/Generic_Europe_9.tga"
+                                "gfx/leaders/Europe/Generic_Europe_10.tga"
+			}
+		}
+		libertarian_socialist = {
+			male = {
+				"gfx/leaders/Europe/Generic_Europe_1.tga"
+				"gfx/leaders/Europe/Generic_Europe_2.tga"
+				"gfx/leaders/Europe/Generic_Europe_3.tga"
+				"gfx/leaders/Europe/Generic_Europe_4.tga"
+                                "gfx/leaders/Europe/Generic_Europe_5.tga"
+                                "gfx/leaders/Europe/Generic_Europe_6.tga"
+                                "gfx/leaders/Europe/Generic_Europe_7.tga"
+                                "gfx/leaders/Europe/Generic_Europe_8.tga"
+                                "gfx/leaders/Europe/Generic_Europe_9.tga"
+                                "gfx/leaders/Europe/Generic_Europe_10.tga"
+			}
+		}
+		social_democrat = {
+			male = {
+				"gfx/leaders/Europe/Generic_Europe_1.tga"
+				"gfx/leaders/Europe/Generic_Europe_2.tga"
+				"gfx/leaders/Europe/Generic_Europe_3.tga"
+				"gfx/leaders/Europe/Generic_Europe_4.tga"
+                                "gfx/leaders/Europe/Generic_Europe_5.tga"
+                                "gfx/leaders/Europe/Generic_Europe_6.tga"
+                                "gfx/leaders/Europe/Generic_Europe_7.tga"
+                                "gfx/leaders/Europe/Generic_Europe_8.tga"
+                                "gfx/leaders/Europe/Generic_Europe_9.tga"
+                                "gfx/leaders/Europe/Generic_Europe_10.tga"
+			}
+		}
+		liberal = {
+			male = {
+				"gfx/leaders/Europe/Generic_Europe_1.tga"
+				"gfx/leaders/Europe/Generic_Europe_2.tga"
+				"gfx/leaders/Europe/Generic_Europe_3.tga"
+				"gfx/leaders/Europe/Generic_Europe_4.tga"
+                                "gfx/leaders/Europe/Generic_Europe_5.tga"
+                                "gfx/leaders/Europe/Generic_Europe_6.tga"
+                                "gfx/leaders/Europe/Generic_Europe_7.tga"
+                                "gfx/leaders/Europe/Generic_Europe_8.tga"
+                                "gfx/leaders/Europe/Generic_Europe_9.tga"
+                                "gfx/leaders/Europe/Generic_Europe_10.tga"
+			}
+		}
+		conservative = {
+			male = {
+				"gfx/leaders/Europe/Generic_Europe_1.tga"
+				"gfx/leaders/Europe/Generic_Europe_2.tga"
+				"gfx/leaders/Europe/Generic_Europe_3.tga"
+				"gfx/leaders/Europe/Generic_Europe_4.tga"
+                                "gfx/leaders/Europe/Generic_Europe_5.tga"
+                                "gfx/leaders/Europe/Generic_Europe_6.tga"
+                                "gfx/leaders/Europe/Generic_Europe_7.tga"
+                                "gfx/leaders/Europe/Generic_Europe_8.tga"
+                                "gfx/leaders/Europe/Generic_Europe_9.tga"
+                                "gfx/leaders/Europe/Generic_Europe_10.tga"
+			}
+		}
+		authoritarian_democrat = {
+			male = {
+				"gfx/leaders/Europe/Generic_Europe_1.tga"
+				"gfx/leaders/Europe/Generic_Europe_2.tga"
+				"gfx/leaders/Europe/Generic_Europe_3.tga"
+				"gfx/leaders/Europe/Generic_Europe_4.tga"
+                                "gfx/leaders/Europe/Generic_Europe_5.tga"
+                                "gfx/leaders/Europe/Generic_Europe_6.tga"
+                                "gfx/leaders/Europe/Generic_Europe_7.tga"
+                                "gfx/leaders/Europe/Generic_Europe_8.tga"
+                                "gfx/leaders/Europe/Generic_Europe_9.tga"
+                                "gfx/leaders/Europe/Generic_Europe_10.tga"
+			}
+		}
+		autocratic = {
+			male = {
+				"gfx/leaders/Europe/Generic_Europe_1.tga"
+				"gfx/leaders/Europe/Generic_Europe_2.tga"
+				"gfx/leaders/Europe/Generic_Europe_3.tga"
+				"gfx/leaders/Europe/Generic_Europe_4.tga"
+                                "gfx/leaders/Europe/Generic_Europe_5.tga"
+                                "gfx/leaders/Europe/Generic_Europe_6.tga"
+                                "gfx/leaders/Europe/Generic_Europe_7.tga"
+                                "gfx/leaders/Europe/Generic_Europe_8.tga"
+                                "gfx/leaders/Europe/Generic_Europe_9.tga"
+                                "gfx/leaders/Europe/Generic_Europe_10.tga"
+			}
+		}
+		ultranationalist = {
+			male = {
+				"gfx/leaders/Europe/Generic_Europe_1.tga"
+				"gfx/leaders/Europe/Generic_Europe_2.tga"
+				"gfx/leaders/Europe/Generic_Europe_3.tga"
+				"gfx/leaders/Europe/Generic_Europe_4.tga"
+                                "gfx/leaders/Europe/Generic_Europe_5.tga"
+                                "gfx/leaders/Europe/Generic_Europe_6.tga"
+                                "gfx/leaders/Europe/Generic_Europe_7.tga"
+                                "gfx/leaders/Europe/Generic_Europe_8.tga"
+                                "gfx/leaders/Europe/Generic_Europe_9.tga"
+                                "gfx/leaders/Europe/Generic_Europe_10.tga"
+			}
+		}
+		revolutionary_nationalist = {
+			male = {
+				"gfx/leaders/Europe/Generic_Europe_1.tga"
+				"gfx/leaders/Europe/Generic_Europe_2.tga"
+				"gfx/leaders/Europe/Generic_Europe_3.tga"
+				"gfx/leaders/Europe/Generic_Europe_4.tga"
+                                "gfx/leaders/Europe/Generic_Europe_5.tga"
+                                "gfx/leaders/Europe/Generic_Europe_6.tga"
+                                "gfx/leaders/Europe/Generic_Europe_7.tga"
+                                "gfx/leaders/Europe/Generic_Europe_8.tga"
+                                "gfx/leaders/Europe/Generic_Europe_9.tga"
+                                "gfx/leaders/Europe/Generic_Europe_10.tga"
+			}
+		}
+                esoteric_traditionalist = {
+			male = {
+				"gfx/leaders/Europe/Generic_Europe_1.tga"
+				"gfx/leaders/Europe/Generic_Europe_2.tga"
+				"gfx/leaders/Europe/Generic_Europe_3.tga"
+				"gfx/leaders/Europe/Generic_Europe_4.tga"
+                                "gfx/leaders/Europe/Generic_Europe_5.tga"
+                                "gfx/leaders/Europe/Generic_Europe_6.tga"
+                                "gfx/leaders/Europe/Generic_Europe_7.tga"
+                                "gfx/leaders/Europe/Generic_Europe_8.tga"
+                                "gfx/leaders/Europe/Generic_Europe_9.tga"
+                                "gfx/leaders/Europe/Generic_Europe_10.tga"
+			}
+		}
+                revolutionary_anarchist = {
+			male = {
+				"gfx/leaders/Europe/Generic_Europe_1.tga"
+				"gfx/leaders/Europe/Generic_Europe_2.tga"
+				"gfx/leaders/Europe/Generic_Europe_3.tga"
+				"gfx/leaders/Europe/Generic_Europe_4.tga"
+                                "gfx/leaders/Europe/Generic_Europe_5.tga"
+                                "gfx/leaders/Europe/Generic_Europe_6.tga"
+                                "gfx/leaders/Europe/Generic_Europe_7.tga"
+                                "gfx/leaders/Europe/Generic_Europe_8.tga"
+                                "gfx/leaders/Europe/Generic_Europe_9.tga"
+                                "gfx/leaders/Europe/Generic_Europe_10.tga"
+			}
+		}
+	}
+}
