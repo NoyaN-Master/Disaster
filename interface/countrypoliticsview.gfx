@@ -726,4 +726,19 @@ spriteTypes = {
 		name = "GFX_ideology_turkic_confederacy"
 		texturefile = "gfx/interface/ideologies/turkic_confederacy.tga"
 	}
+	
+	spriteType = {
+		name = "GFX_ideology_nazimism"
+		texturefile = "gfx/interface/ideologies/nazimism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_mercenary_state"
+		texturefile = "gfx/interface/ideologies/mercenary_state.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_babylonism"
+		texturefile = "gfx/interface/ideologies/babylonism.dds"
+	}
 }	
