@@ -9,7 +9,7 @@ ANT_Failed_State = {
 			stability_factor = -0.60
 			stability_weekly = -0.01
 			production_factory_max_efficiency_factor = -1.0
-			conversion_cost_civ_to_mil_factor = -1.0
+			conversion_cost_civ_to_mil_factor = 0.1
 			local_resources_factor = -0.10
 			consumer_goods_factor = 0.50
 			}
