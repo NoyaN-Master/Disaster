@@ -2808,7 +2808,7 @@ spriteTypes = {
     texturefile = "gfx/interface/goals/newbismarck.tga"
     
     SpriteType = {
-        name = "GFX_goal_PRE_newbismarck"
+        name = "GFX_goal_PRE_newbismarck_shine"
         texturefile = "gfx/interface/goals/newbismarck.tga"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
@@ -2839,15 +2839,15 @@ spriteTypes = {
         legacy_lazy_load = no
 }
 SpriteType = {
-    name = "GFX_goal_PRE_expand_the_coal_mines"
-    texturefile = "gfx/interface/goals/expand_the_coal_mines.tga"
+    name = "GFX_goal_WRF_enemies_within"
+    texturefile = "gfx/interface/goals/WRF_enemies_within.tga"
     
     SpriteType = {
-        name = "GFX_goal_PRE_expand_the_coal_mines"
-        texturefile = "gfx/interface/goals/expand_the_coal_mines.tga"
+        name = "GFX_goal_WRF_enemies_within_shine"
+        texturefile = "gfx/interface/goals/WRF_enemies_within.tga"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/expand_the_coal_mines.tga"
+            animationmaskfile = "gfx/interface/goals/WRF_enemies_within.tga"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = -90.0
             animationlooping = no
@@ -2860,7 +2860,7 @@ SpriteType = {
         }
 
         animation = {
-            animationmaskfile = "gfx/interface/goals/expand_the_coal_mines.tga"
+            animationmaskfile = "gfx/interface/goals/WRF_enemies_within.tga"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = 90.0
             animationlooping = no
