@@ -9,32 +9,18 @@ ANT_Failed_State = {
 
 			}
 		}
-ANT_Doomed_Youth = {
+ANT_Anarchy = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
-			picture = ANT_Doomed_Youth
+			picture = ANT_Warlords_Emerging
 			modifier = {
 
 			}
 		}
-ANT_Slave_Unrest = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Slave_Unrest" }
-			picture = ANT_Slave_Unrest
+ANT_Warlords_Emerging = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
+			picture = ANT_Warlords_Emerging
 			modifier = {
-			
-			}
-		}
-ANT_Article_Two = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Article_Two" }
-			picture = ANT_Article_Two
-			modifier = {
-			
-			}
-		}
-ANT_Pashas_Scheming = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Pashas_Scheming" }
-			picture = ANT_Pashas_Scheming
-			modifier = {
-			
+
 			}
 		}		
 	}

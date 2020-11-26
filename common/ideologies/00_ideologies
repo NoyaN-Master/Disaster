@@ -89,6 +89,10 @@ ideologies = {
 			gangster_state = {
 			             can_be_randomly_selected = no
 			}
+			
+			nazimism = {
+			             can_be_randomly_selected = no
+			}
 		}
 		
 			dynamic_faction_names = {
@@ -288,6 +292,9 @@ ideologies = {
 			
 			autocratic_subideology = {
 			}
+			
+			mercenary_state = {
+			}
 		}
 		
 			dynamic_faction_names = {
@@ -328,6 +335,7 @@ ideologies = {
 			ultranationalism_turkish = {
 			                       can_be_randomly_selected = no
 			}
+			
 		}
 		
 			dynamic_faction_names = {
@@ -410,6 +418,10 @@ ideologies = {
 			}
 			
 			folk_christianity = {
+			                can_be_randomly_selected = no
+			}
+			
+			babylonism = {
 			                can_be_randomly_selected = no
 			}
 		}
