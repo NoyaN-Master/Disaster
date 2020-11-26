@@ -487,7 +487,32 @@ AST = {
 	color_ui = rgb { 57 143 97 }
 }
 
-FIN = {
-        color = rgb { 205  212  228 }
-	color_ui = rgb { 205  212  228 }
+OTH = {
+        color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
+}
+
+KLG = {
+        color = rgb { 45 46 45 }
+	color_ui = rgb { 45 46 45 }
+}
+
+COL = {
+        color = rgb { 150 0 24 }
+	color_ui = rgb { 150 0 24 }
+}
+
+ESO = {
+        color = rgb { 254 212 75 }
+	color_ui = rgb { 254 212 75 }
+}
+
+IZM = {
+        color = rgb { 125  13  24 }
+	color_ui = rgb { 125  13  24 }
+}
+
+ANK = {
+        color = rgb { 175 13 0 }
+	color_ui = rgb { 175 13 0 }
 }

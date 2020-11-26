@@ -15,24 +15,22 @@ set_politics = {
 }
 
 add_ideas = ANT_Failed_State
-add_ideas = ANT_Doomed_Youth
-add_ideas = ANT_Slave_Unrest
-add_ideas = ANT_Article_Two
-add_ideas = ANT_Pashas_Scheming
+add_ideas = ANT_Anarchy
+add_ideas = ANT_Warlords_Emerging
 
 
 set_popularities = {
-	conservative = 50
+	conservative = 5
 	liberal = 0
 	social_democrat = 0
-	libertarian_socialist = 0
+	libertarian_socialist = 20
 	authoritarian_socialist = 0
 	national_bolshevik = 0
-	authoritarian_democrat = 0
-	autocratic = 20
+	authoritarian_democrat = 20
+	autocratic = 15
 	ultranationalist = 20
 	revolutionary_nationalist = 10
-	esoteric_traditionalist = 0
+	esoteric_traditionalist = 10
 	revolutionary_anarchist = 0
 }
 

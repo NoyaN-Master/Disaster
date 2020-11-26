@@ -30,11 +30,11 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "John Langenhoven"
+	name = "Jack 'Başbug' Churchill"
 	#desc = "OTH_John_Langenhoven_desc"
 	picture = "OTH_John_Langenhoven.tga"
 	expire = "2020.1.1"
-	ideology = autocratic_subideology
+	ideology = mercenary_state
 	traits = {
 		#
 	}

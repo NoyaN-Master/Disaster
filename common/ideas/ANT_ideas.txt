@@ -6,36 +6,40 @@ ANT_Failed_State = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Failed_State" }
 			picture = ANT_Failed_State
 			modifier = {
-
+			stability_factor = -0.60
+			stability_weekly = -0.01
+			production_factory_max_efficiency_factor = -1.0
+			conversion_cost_civ_to_mil_factor = 0.1
+			local_resources_factor = -0.10
+			consumer_goods_factor = 0.50
 			}
 		}
-ANT_Doomed_Youth = {
+ANT_Anarchy = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
-			picture = ANT_Doomed_Youth
+			picture = ANT_Warlords_Emerging
 			modifier = {
-
+			war_support_factor = -0.90
+			army_core_attack_factor = -0.5
+			army_core_defence_factor = -0.5
+			resistance_damage_to_garrison = 1.0
+			attrition = 0.5
+			weekly_manpower = -500	
 			}
 		}
-ANT_Slave_Unrest = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Slave_Unrest" }
-			picture = ANT_Slave_Unrest
+ANT_Warlords_Emerging = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
+			picture = ANT_Warlords_Emerging
 			modifier = {
-			
-			}
-		}
-ANT_Article_Two = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Article_Two" }
-			picture = ANT_Article_Two
-			modifier = {
-			
-			}
-		}
-ANT_Pashas_Scheming = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Pashas_Scheming" }
-			picture = ANT_Pashas_Scheming
-			modifier = {
-			
-			}
+			political_power_gain = -0.5	
+			political_advisor_cost_factor = 0.75	
+			training_time_army_factor = 1.0
+			local_resources_factor = -0.10
+			revolutionary_nationalist_drift = 0.01
+			autocratic_drift = 0.01
+			libertarian_socialist_drift = 0.01
+			ultranationalist_drift = 0.01
+			authoritarian_democrat_drift = 0.01
+			}	
 		}		
 	}
 }		

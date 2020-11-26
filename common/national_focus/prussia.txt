@@ -572,7 +572,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_nacht_der_langer_messer
-		icon = GFX_goal_unknown
+		icon = GFX_goal_goerings_wild_ride
 		x = 0
 		y = 3
 		relative_position_id = PRE_nazi_victory_focus
@@ -699,7 +699,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_meine_ehre
-		icon = GFX_goal_unknown
+		icon = GFX_goal_glorify_prussian_discipline
 		x = 0
 		y = 7
 		relative_position_id = PRE_nazi_victory_focus
@@ -801,7 +801,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_prussian_steel
-		icon = GFX_goal_PRE_silesian_steel
+		icon = GFX_goal_silesian_steel
 		x = 2
 		y = 7
 		relative_position_id = PRE_nazi_victory_focus
@@ -833,7 +833,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_expand_coal_mines
-		icon = GFX_goal_PRE_expand_the_coal_mines
+		icon = GFX_goal_expand_the_coal_mines
 		x = 3
 		y = 8
 		relative_position_id = PRE_nazi_victory_focus

@@ -1,27 +1,29 @@
-
 state={
-	id=356
-	name="STATE_356"
+	id=839
+	name="STATE_839"
 
 	history={
 		owner = ANT
 		victory_points = {
-			6938 10 
+			6920 10 
 		}
 		victory_points = {
-			6995 3 
+			11897 3 
 		}
 		buildings = {
-			infrastructure = 5
+			infrastructure = 3
+			6995 = {
+				naval_base = 1
+
+			}
+
 		}
 		add_core_of = ANT
-
 	}
 
 	provinces={
-		979 3967 3982 6938 6978 6995 9871 
+		6920 9844 9871 11839 11897 
 	}
-	manpower=860589
+	manpower=0
 	buildings_max_level_factor=1.000
-	state_category=rural
 }
