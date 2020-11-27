@@ -1,0 +1,80 @@
+focus_tree = {
+	id = Anatolia_1
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = WRF
+		}
+		}
+	focus = {
+		id = ANT_dreams_broken
+		icon = GFX_goal_WRF_Yahya
+		x = 5
+		y = 4
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = ANT_dreams_Broken
+		}
+	}	
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		}
+
