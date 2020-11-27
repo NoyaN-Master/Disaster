@@ -1,18 +1,18 @@
 focus_tree = {
-	id = Anatolia_1
+	id = Anatolia_Union
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = WRF
+			tag = ANT
 		}
 		}
 	focus = {
 		id = ANT_dreams_broken
 		icon = GFX_goal_WRF_Yahya
-		x = 5
-		y = 4
-		cost = 4
+		x = 13
+		y = 1
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = {
 		}
@@ -20,61 +20,61 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = ANT_dreams_Broken
-		}
-	}	
+		custom_effect_tooltip = ANT_dreams_Broken_tt
 
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		}
+	}
+	
+	focus = {
+		id = ANT_increase_presence
+		icon = GFX_goal_WRF_Yahya
+		x = 13
+		y = 2
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_dreams_broken }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = ANT_increase_presence_tt
+		add_stability = 0.1
+		}
+	}
+	
+	focus = {
+		id = ANT_fight_anarchy
+		icon = GFX_goal_WRF_Yahya
+		x = 10
+		y = 3
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_increase_presence }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = ANT_dreams_Broken
+		add_stability = 0.02
+		}
+	}
+	
+	focus = {
+		id = ANT_political_warfare
+		icon = GFX_goal_WRF_Yahya
+		x = 16
+		y = 3
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_increase_presence }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = ANT_dreams_Broken
+		add_political_power = 100
+		}
+	}
+	
+	}
 
