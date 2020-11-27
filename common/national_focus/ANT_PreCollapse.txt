@@ -1,5 +1,5 @@
 focus_tree = {
-	id = Anatolia_Union
+	id = anatolia_focus
 	country = {
 		factor = 0
 		modifier = {
@@ -7,6 +7,7 @@ focus_tree = {
 			tag = ANT
 		}
 		}
+	default = no	
 	focus = {
 		id = ANT_dreams_broken
 		icon = GFX_goal_WRF_Yahya
@@ -30,7 +31,7 @@ focus_tree = {
 		icon = GFX_goal_WRF_Yahya
 		x = 13
 		y = 2
-		cost = 3
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_dreams_broken }
 		ai_will_do = {
@@ -47,14 +48,15 @@ focus_tree = {
 		icon = GFX_goal_WRF_Yahya
 		x = 10
 		y = 3
-		cost = 3
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_increase_presence }
+		mutually_exclusive = { focus = ANT_political_warfare }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = ANT_dreams_Broken
+		custom_effect_tooltip = ANT_fight_anarchy_tt
 		add_stability = 0.02
 		}
 	}
@@ -62,11 +64,12 @@ focus_tree = {
 	focus = {
 		id = ANT_political_warfare
 		icon = GFX_goal_WRF_Yahya
-		x = 16
+		x = 18
 		y = 3
 		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_increase_presence }
+		mutually_exclusive = { focus = ANT_fight_anarchy }
 		ai_will_do = {
 			factor = 1
 		}
@@ -75,6 +78,339 @@ focus_tree = {
 		add_political_power = 100
 		}
 	}
-	
+
+	focus = {
+		id = ANT_taking_a_side
+		icon = GFX_goal_WRF_Yahya
+		x = 18
+		y = 4
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_political_warfare }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = ANT_dreams_Broken
+		add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ANT_killigil
+		icon = GFX_goal_WRF_Yahya
+		x = 22
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_taking_a_side }
+		prerequisite = { has_country_flag = cuck_killigil }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = cuck_killigil_tt
+		add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ANT_hikmet
+		icon = GFX_goal_WRF_Yahya
+		x = 14
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_taking_a_side }
+		prerequisite = { has_country_flag = cuck_hikmet }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = cuck_hikmet_tt
+		add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ANT_orbay
+		icon = GFX_goal_WRF_Yahya
+		x = 16
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_taking_a_side }
+		prerequisite = { has_country_flag = cuck_orbay }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = cuck_orbay_tt
+		add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ANT_mercenaries
+		icon = GFX_goal_WRF_Yahya
+		x = 18
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_taking_a_side }
+		prerequisite = { has_country_flag = cuck_mercenaries }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = cuck_mercenaries_tt
+		add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ANT_the_cult
+		icon = GFX_goal_WRF_Yahya
+		x = 20
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_taking_a_side }
+		prerequisite = { has_country_flag = cuck_cult}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = cuck_cult_tt
+		add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ANT_anti_anarchy
+		icon = GFX_goal_WRF_Yahya
+		x = 10
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_fight_anarchy }
+		mutually_exclusive = { focus = ANT_political_warfare }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = antianarchy_tt
+		add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ANT_improve_security
+		icon = GFX_goal_WRF_Yahya
+		x = 8
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_anti_anarchy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = improve_security_tt
+		add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ANT_ban_meeting
+		icon = GFX_goal_WRF_Yahya
+		x = 10
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_anti_anarchy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = ban_meeting_tt
+		add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ANT_expand_army
+		icon = GFX_goal_WRF_Yahya
+		x = 12
+		y = 5
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_anti_anarchy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = expand_army_tt
+		add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ANT_disband_common_army
+		icon = GFX_goal_WRF_Yahya
+		x = 12
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_expand_army }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = common_army_tt
+		add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ANT_forming_gestapo
+		icon = GFX_goal_WRF_Yahya
+		x = 10
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_ban_meeting }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = forming_gestapo_tt
+		add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ANT_death_squads
+		icon = GFX_goal_WRF_Yahya
+		x = 8
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_improve_security }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = death_squads_tt
+		add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ANT_operation_camel
+		icon = GFX_goal_WRF_Yahya
+		x = 9
+		y = 7
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_death_squads }
+		prerequisite = { focus = ANT_forming_gestapo }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = operation_camel_tt
+		add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ANT_operation_exodus
+		icon = GFX_goal_WRF_Yahya
+		x = 11
+		y = 7
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_disband_common_army }
+		prerequisite = { focus = ANT_forming_gestapo }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = operation_exodus_tt
+		add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ANT_influence_in_west
+		icon = GFX_goal_WRF_Yahya
+		x = 10
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_operation_camel }
+		prerequisite = { focus = ANT_operation_exodus }
+		prerequisite = { focus = ANT_forming_gestapo }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = influence_in_west_tt
+		add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ANT_cleanup_in_south
+		icon = GFX_goal_WRF_Yahya
+		x = 10
+		y = 9
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_influence_in_west }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = influence_in_west_tt
+		add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ANT_against_all_odds
+		icon = GFX_goal_WRF_Yahya
+		x = 10
+		y = 10
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_cleanup_in_south }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = influence_in_west_tt
+		add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ANT_the_skull_marches
+		icon = GFX_goal_WRF_Yahya
+		x = 10
+		y = 11
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_against_all_odds }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = influence_in_west_tt
+		add_political_power = 100
+		}
+	}
+
 	}
 
