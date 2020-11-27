@@ -496,7 +496,7 @@ focus_tree = {
 ################################# nazi
 	focus = {
 		id = PRE_nazi_victory_focus
-		icon = GFX_goal_unknown
+		icon = GFX_goal_goring_takes_power
 		x = 17
 		y = 0
 		cost = 1		
@@ -512,7 +512,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_enabling_act
-		icon = GFX_goal_unknown
+		icon = GFX_goal_the_enabling_act
 		x = 0
 		y = 1
 		relative_position_id = PRE_nazi_victory_focus
@@ -529,7 +529,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_absorb_dnvp
-		icon = GFX_goal_unknown
+		icon = GFX_goal_impose_the_harzburg_front
 		x = -1
 		y = 2
 		relative_position_id = PRE_nazi_victory_focus
@@ -547,7 +547,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_restoring_puppet_monarchy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_put_auwi_on_the_throne
 		x = 1
 		y = 2
 		relative_position_id = PRE_nazi_victory_focus
@@ -591,7 +591,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_volkisch_education
-		icon = GFX_goal_unknown
+		icon = GFX_goal_volkish_education
 		x = -2
 		y = 4
 		relative_position_id = PRE_nazi_victory_focus
@@ -606,7 +606,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_aryan_studies
-		icon = GFX_goal_unknown
+		icon = GFX_goal_aryan_studies
 		x = -2
 		y = 5
 		relative_position_id = PRE_nazi_victory_focus
@@ -619,7 +619,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_german_youth_league
-		icon = GFX_goal_unknown
+		icon = GFX_goal_establish_the_german_youth_leaque
 		x = -2
 		y = 6
 		relative_position_id = PRE_nazi_victory_focus
@@ -632,7 +632,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_new_german_nationalism
-		icon = GFX_goal_unknown
+		icon = GFX_goal_neue_deutsch_nationalismus
 		x = -2
 		y = 7
 		relative_position_id = PRE_nazi_victory_focus
@@ -648,7 +648,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_ministry_of_propaganda
-		icon = GFX_goal_unknown
+		icon = GFX_goal_the_magic_of_propoganda
 		x = 0
 		y = 4
 		relative_position_id = PRE_nazi_victory_focus
@@ -662,7 +662,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_establish_schutzstaffel
-		icon = GFX_goal_unknown
+		icon = GFX_goal_enpower_the_blueshirts
 		x = 0
 		y = 5
 		relative_position_id = PRE_nazi_victory_focus
@@ -686,7 +686,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_loyal_sons_of_germania
-		icon = GFX_goal_unknown
+		icon = GFX_goal_loyal_sons_of_germania
 		x = 0
 		y = 6
 		relative_position_id = PRE_nazi_victory_focus
@@ -715,7 +715,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_reichswerke
-		icon = GFX_goal_unknown
+		icon = GFX_goal_reichswerke
 		x = 2
 		y = 4
 		relative_position_id = PRE_nazi_victory_focus
@@ -772,7 +772,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_deutsche_arbeiters_front
-		icon = GFX_goal_unknown
+		icon = GFX_goal_deutsche_arbeitsfront
 		x = 2
 		y = 5
 		relative_position_id = PRE_nazi_victory_focus
@@ -785,7 +785,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_forced_industrialization
-		icon = GFX_goal_unknown
+		icon = GFX_goal_forced_industrialisation
 		x = 2
 		y = 6
 		relative_position_id = PRE_nazi_victory_focus
@@ -911,7 +911,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_arbeit_macht_frei
-		icon = GFX_goal_unknown
+		icon = GFX_goal_arbeit_macht_frei
 		x = 1
 		y = 8
 		relative_position_id = PRE_nazi_victory_focus
@@ -925,7 +925,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_armaments_miracle
-		icon = GFX_goal_unknown
+		icon = GFX_goal_armaments_miracle
 		x = -1
 		y = 8
 		relative_position_id = PRE_nazi_victory_focus
@@ -976,7 +976,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_the_eagle_rises
-		icon = GFX_goal_unknown
+		icon = GFX_goal_the_eagle_rises
 		x = 0
 		y = 9
 		relative_position_id = PRE_nazi_victory_focus
