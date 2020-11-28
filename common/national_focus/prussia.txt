@@ -223,7 +223,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
         select_effect = {
-            country_event = { id = pre.15 days = 5 }	
+            country_event = { id = pre.22 days = 5 }	
 			add_ideas = PRE_querfront_negotiations_idea			
         }
 			
@@ -522,9 +522,12 @@ focus_tree = {
 		completion_reward = {
 		remove_ideas = PRE_political_radicalisation		
 		remove_ideas = PRE_sham_democracy	
-		remove_ideas = PRE_ongoing_protests
-		remove_ideas = PRE_simmering_discontent
+		swap_ideas = {
+			add_idea = PRE_ongoing_protests
+			remove_idea = PRE_widespread_protests
+		}			
 		add_stability = 0.05
+		country_event = { id = pre.23 days = 1 }
 		}
 	}
 	focus = {
@@ -543,6 +546,7 @@ focus_tree = {
 		hidden_effect = {
 		remove_ideas = PRE_absorb_dnvp_idea
 		}
+		remove_idea = PRE_ongoing_protests
 		}
 	}
 	focus = {
@@ -553,19 +557,10 @@ focus_tree = {
 		relative_position_id = PRE_nazi_victory_focus
 		cost = 6		
 		prerequisite = { focus = PRE_enabling_act }	
+		select_effect = { country_event = { id = pre.24 days = 12 } }
 		
 		completion_reward = {
-		retire_ideology_leader = revolutionary_nationalist
-			create_country_leader = {
-	            name = "August Wilhelm"
-	            desc = "PRE_August_Wilhelm_desc"
-	            picture = "PRE_August_Wilhelm.tga"
-	            expire = "2020.1.1"
-	            ideology = revolutionary_nationalist_subideology
-	            traits = {
-		            #
-	            }
-            }
+		    country_event = { id = pre.25 days = 1 }
 			add_stability = 0.07
 		
 		}
@@ -580,6 +575,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_restoring_puppet_monarchy }	
 		prerequisite = { focus = PRE_absorb_dnvp }	
 		select_effect = {
+		country_event = { id = pre.27 days = 6 }
 		add_ideas = PRE_nacht_der_langer_messer }			
 		completion_reward = {
 		custom_effect_tooltip = PRE_nacht_der_langer_messer_tooltip

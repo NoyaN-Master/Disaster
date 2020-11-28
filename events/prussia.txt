@@ -224,14 +224,20 @@ country_event = { # Goring Coups with junker Support
 		name = pre.12.a
 		ai_chance = { factor = 1}
 		country_event = { id = pre.13 days = 5 }
-		set_ruling_party = revolutionary_nationalist 
+		set_politics = {
+			ruling_party = revolutionary_nationalist
+			elections_allowed = no
+		}	
 	    clr_country_flag = PRE_schleicher_refuses_step_down 
 	}
 	option = { # Goring consolidates power
 		name = pre.12.b
 		ai_chance = { factor = 1}
 		country_event = { id = pre.14 days = 5 }
-		set_ruling_party = revolutionary_nationalist 
+		set_politics = {
+			ruling_party = revolutionary_nationalist
+			elections_allowed = no
+		}	 
 	    clr_country_flag = PRE_schleicher_refuses_step_down 
 	}
 }
@@ -246,7 +252,10 @@ country_event = { # Junker betray Goring
 		name = pre.13.a
 		ai_chance = { factor = 1}
 		set_country_flag = PRE_junker_victory
-		set_ruling_party = authoritarian_democrat
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
+		}	
 			retire_ideology_leader = authoritarian_democrat
 			create_country_leader = {
 	        name = "Oskar von Hindenburg"
@@ -429,13 +438,186 @@ country_event = { #goring coup after querfront fails
 		ai_chance = { factor = 1}
 		clr_country_flag = PRE_schleicher_refuses_step_down
 		set_country_flag = PRE_nazi_victory
-				set_politics = {
+		set_politics = {
 			ruling_party = revolutionary_nationalist
 			elections_allowed = no
 		}	
 		add_popularity = {
 			ideology = revolutionary_nationalist
 			popularity = 0.1
+		}
+	}
+}
+
+country_event = { #start of querfront talks
+	id = pre.22
+	title = pre.22.t
+	desc = pre.22.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.22.a
+		ai_chance = { factor = 1}
+		add_political_power = 5
+		hidden_effect = {
+		    if = {
+				limit = { has_country_flag = PRE_goring_crackdown_heavy }				
+				country_event = { id = pre.15 days = 5 }
+			}
+			else_if = {
+				limit = { has_country_flag = PRE_goring_crackdown_light }				
+				country_event = { id = pre.16 days = 5 }
+			}
+		}
+	}
+}
+
+country_event = { #goring passes enabling act
+	id = pre.23
+	title = pre.23.t
+	desc = pre.23.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.23.a
+		ai_chance = { factor = 1}
+		add_political_power = 20
+		add_popularity = {
+			ideology = revolutionary_nationalist
+			popularity = 0.08
+		}
+	}
+}
+
+country_event = { #goring restores the kingdom of prussia
+	id = pre.24
+	title = pre.24.t
+	desc = pre.24.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.24.a
+		ai_chance = { factor = 1}
+		add_political_power = 10
+		add_popularity = {
+			ideology = revolutionary_nationalist
+			popularity = 0.04
+		}
+	}
+}
+
+country_event = { #auwi crowned
+	id = pre.25
+	title = pre.25.t
+	desc = pre.25.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.25.a
+		ai_chance = { factor = 1}
+		retire_ideology_leader = revolutionary_nationalist
+			create_country_leader = {
+	            name = "August Wilhelm"
+	            desc = "PRE_August_Wilhelm_desc"
+	            picture = "PRE_August_Wilhelm.tga"
+	            expire = "2020.1.1"
+	            ideology = revolutionary_nationalist_subideology
+	            traits = {
+		            #
+	            }
+            }
+		add_popularity = {
+			ideology = revolutionary_nationalist
+			popularity = 0.06
+		}
+	}
+}
+
+country_event = { #pogroms
+	id = pre.26
+	title = pre.26.t
+	desc = pre.26.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.26.a
+		ai_chance = { factor = 1}
+		add_war_support = 0.08
+		add_political_power = 30
+		add_popularity = {
+			ideology = revolutionary_nationalist
+			popularity = 0.02
+		}
+		64 = {
+		damage_building = {
+            type = infrastructure
+            damage = 1
+        }
+		}
+		763 = {
+		damage_building = {
+            type = infrastructure
+            damage = 1
+        }
+		}
+		63 = {
+		damage_building = {
+            type = infrastructure
+            damage = 1
+        }
+		}
+	}
+}
+
+country_event = { #new abwehr
+	id = pre.27
+	title = pre.27.t
+	desc = pre.27.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.27.a
+		ai_chance = { factor = 1}
+		add_political_power = 10
+		hidden_effect = {
+		country_event = { id = pre.26 days = 6 }
+		country_event = { id = pre.28 days = 36 }
+		}
+	}
+}
+
+country_event = { #gamer moment
+	id = pre.28
+	title = pre.28.t
+	desc = pre.28.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.28.a
+		ai_chance = { factor = 1}
+		add_political_power = 50
+		add_popularity = {
+			ideology = national_bolshevik
+			popularity = -0.07
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = -0.07
+		}
+		add_popularity = {
+			ideology = liberal
+			popularity = -0.07
+		}
+		add_popularity = {
+			ideology = conservative
+			popularity = -0.07
 		}
 	}
 }

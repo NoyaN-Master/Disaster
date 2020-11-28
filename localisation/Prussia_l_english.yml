@@ -192,6 +192,34 @@ pre.21.t:0 "The Goring Putsch"
 pre.21.d:0 "Today, with the Querfront talks having collapsed, and Niekisch's now humiliated left-AdNP having turned back in humiliation to Goring, Schleicher finally fell. Military units, working in close co-ordination with Goring's blueshirts, siezed vital administrative and media buldings across Berlin, while outside of the capital local garrisons and blueshirt groupings were able to assume control of the local administrations.\nAt 1PM, the Reichstag almost unanimously passed a hastily prepared bill granting "supreme and unrestrained power" to Herman Goring, as Prussia's sole and unchallenged leader. The few deputies that had voted against this bill were promptly rounded up by the soldiers who had forced their way into the chamber, and have since been charged with high treason.\nTwo hours later, with the Chancellory surrounded and all hope lost, Schleicher finally surrendered, and was led out of the building by a tightly-knit group of soldiers, while hundreds of blueshirts gathered in the street chaotically demanded his execution on the spot. Although the military men's proffesionalism won out, and the lynch mob achieved little, his days are doubtless numbered.\nNow, however, Goring alone stands at the helm of the Prussian nation, and God alone knows what lies next..."
 pre.21.a:0 "Heil Goring!"
 
+pre.22.t:0 "The Talks Begin"
+pre.22.d:0 "Today in Berlin, Kurt von Schleicher formally opened talks between a number of different political groups to form a new Querfront coalition against the Junkers and fanatic nationalists. Present at the negotiations were the national-bolshevik philosopher Ernst Niekisch, who, despite having co-founded the AdNP with Goring, has become increasinly estranged from the party's mainstream, the social democrat Otto Braun, who was able to rally the remnants of Prussia's SPD in the 1920s and rebuild its political machine after the rightist putsch of 1919, and representatives of many smaller nationalist organisations which have become increasinly estranged from both Hugenberg and Goring.\nIt can't be denied that the coalition Schleicher is trying to build is an extraordinarily big tent, but the Chancellor is nonetheles hopeful. After all, there is no other way he could hold on to power."
+pre.22.a:0 "We'll need a lot of luck to pull this off..."
+
+pre.23.t:0 "The Enabling Act is Passed"
+pre.23.d:0 "Today in the Reichstag, a body already informally stripped of much of its power through extensive arrests and intimidation, Goring's extreme amounts of power were further formalised. The prominent Reichstag deputy and leader of Goring's blueshirts, Hosrt Wessel, introduced a new motion - the Enabling Act. This law, adopted all but unanimously a short time later, gives Goring overwhelming executive power to alter the constitution and stamp out opposition groups at will. From now on, the law of Prussia is Goring's will. Nothing more, and nothing less."
+pre.23.a:0 "Heil Goring!"
+
+pre.24.t:0 "The Restoration of the Kingdom of Prussia"
+pre.24.d:0 "Today, at a vast rally in Konigsberg, Hermann Goring made a sudden and unprecedented announcement. The Kingdom of Prussia, having collapsed in 1918 with Wilhelm II's abdication, was to be restored effective-immediately, with Goring declared its Regent. Notably present at the rally was August Wilhelm von Hohenzollern, a younger son of the old Kaiser and a longstanding supporter of the AdNP. Given his increasingly close relationship with the Goring government, many are now starting to believe that "little Auwi", as he has been mockingly dubbed by the press, may in fact become King."
+pre.24.a:0 "Heil Goring!"
+
+pre.25.t:0 "The Coronation"
+pre.25.d:0 "Today, in a lavish ceremony in Berlin, August Wilhelm von Hohenzollern was crowned as King of Prussia. With the historic Hohenzollern crown placed upon his head by the Lutheran bishop in front of a vast audience, and Goring as his chancellor only a short distance away, it was clear to all that the old Kingdom had indeed been restored, but under a very different government to that which had ruled the Empire prior to 1918 - and, indeed, one that isn't going anywhere. Nonetheless, the historic coronation has generated widespread enthusiasm, and has done much to legitimise Goring's rule."
+pre.25.a:0 "A glorious day!"
+
+pre.26.t:0 "Nationwide Pogroms"
+pre.26.d:0 "Across the country, patriotic citizens, spurred on by local units of blueshirts and by the rhetoric of Goring and his propagandist Hans Fritzsche, are taking action like never before against Jewish influence. Over the past days, Jewish-owned shops and businesses have been attacked, looted, or even outright repossesed by the mobs, and many Jewish citizens have been attacked in the street. This violence is earning us musch condemnation around the world, something hardly helped by our continued endorsement of both the ideals and methods of the  mobs, but it is nonetheless needed in order to free Prussia from the shackles of Jewish influence and global finance."
+pre.26.a:0 "If only people stood up for themselves like this more often..."
+
+pre.27.t:0 "Changes at the Abwehr"
+pre.27.d:0 "Over the past days, notable changes have been underway at the national intelligence agency, the Abwehr, something that has hardly gone unnoticed by the public. The agency's old guard, dominated by such figures as Hans Oster and Hans Bernd Gisevius, which gained its influence under Junker rule and was closely aligned with the Schleicher government, has been purged almost in its entirety, with hundreds of officials unceremoniously removed from office. Their replacements, mainly old blueshirt officers, have been tirelessly combing through file after file, gathering prodigious levels of intelligence for the new government. Few are certain what exactly this turn of events signifies, but it's clear that something big is around the corner..."
+pre.27.a:0 "Just you wait and see..."
+
+pre.28.t:0 "The Night of the Long Knives"
+pre.28.d:0 "As the Prussian nation woke up this morning, they were confronted with an astonishing reality, far beyond anything that even the most pessimistic anti-nationalists could have dreamed of. Hundreds of opponents of the regime, from socialists to reactionary aristocrats, were murdered last night in one fell sweeop. Ernst Niekisch, the national-bolshevik co-founder of the AdNP, who increasingly diverged from Goring, was riddled with bullets in the middle of the street. Otto Braun, leader of the Prussian SPD, was hung in his own home. Wilhelm Kulz, the veteran centrist, was found mutilated in a ditch outside Berlin. Hundreds more met similar fates, and from now on nobody will so much as dare to speak a bad word about the Chancellor or King. Goring's rule was always absolute, but from this point onwards it will be unchallenged entirely. Only a bloodbath such as this could have liberated the nation."
+pre.28.a:0 "You get what you fucking deserve!"
+
 #country flags
 PRE_investigation_started:0 "The corruption scandal is underway"
 PRE_schleicher_resigns:0 "Schleicher resigned"
@@ -242,8 +270,6 @@ PRE_one_prussian_nation_idea_desc:0""
 #ideas goring
 PRE_absorb_dnvp_idea:0"Absorping The DNVP"
 PRE_absorb_dnvp_idea_desc:0""
-PRE_puppet_monarch:0"Friedrich Wilhelm III."
-PRE_puppet_monarch_desc:0""
 PRE_nacht_der_langer_messer:0"Nacht Der Langer Messer"
 PRE_nacht_der_langer_messer_desc:0""
 PRE_volkisch_education_idea:0"Völkisch Education"
