@@ -576,7 +576,6 @@ focus_tree = {
 		prerequisite = { focus = PRE_absorb_dnvp }	
 		select_effect = {
 		country_event = { id = pre.27 days = 6 }
-		}
 		add_ideas = PRE_nacht_der_langer_messer }			
 		completion_reward = {
 		custom_effect_tooltip = PRE_nacht_der_langer_messer_tooltip
