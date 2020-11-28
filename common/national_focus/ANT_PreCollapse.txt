@@ -22,7 +22,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		custom_effect_tooltip = ANT_dreams_Broken_tt
-
+		add_stability = 0.05
 		}
 	}
 	
@@ -40,6 +40,11 @@ focus_tree = {
 		completion_reward = {
 		custom_effect_tooltip = ANT_increase_presence_tt
 		add_stability = 0.1
+		add_manpower = 5000
+		custom_effect_tooltip = ANT_increase_presence_tt_2
+		hidden_effect = {
+		country_event = { id = ant.2 days = 3}	
+		}
 		}
 	}
 	
@@ -55,6 +60,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = { has_country_flag = chose_army }
+
 		completion_reward = {
 		custom_effect_tooltip = ANT_fight_anarchy_tt
 		add_stability = 0.02
@@ -73,9 +80,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = { has_country_flag = chose_warlord }
+
 		completion_reward = {
 		custom_effect_tooltip = ANT_dreams_Broken
 		add_political_power = 100
+
+		hidden_effect = {
+			country_event = { id = ant.3 }
+		}
 		}
 	}
 

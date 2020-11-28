@@ -1,7 +1,7 @@
 ANT_warlord_favors_category = {
 	icon = GFX_decision_category_generic_political_actions
 
-	#picture = GFX_decision_RUS_decision_political_situation
+	picture = Decision_picture_anatolia_influence
 	priority = 100
 	allowed = {
 		original_tag = ANT

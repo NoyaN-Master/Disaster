@@ -31,4 +31,7 @@
  ANT_against_all_odds:0 "§PAGAINST ALL ODDS!§!"
  ANT_the_skull_marches:0 "§PTHE 78TH ARMY MARCHES EAST!§!"
  ANT_warlord_favors_category:0 "§BThe Urban Civil War§!"
- ANT_warlord_favors_category_desc:0 "31"
+ ANT_warlord_favors_category_desc:0 "The Political Situation in Anatolian Sovereignity is a very complex one. Many local figures and factions hold power, where the supposed 'state' doesn't have any influence whatsoever.  If we want the survival of our  state, we should expand our §Yinfluence§! \n\n\n ----The Natives---- \n §RNazımists§! = [?ANT.nazim_influence|R] \n §OKemalists§! = [?ANT.kemalist_influence|O] \n §gEnverists§! = [?ANT.enver_influence|g] \n  §BMercenaries§! = [?ANT.merc_influence|B] \n \n \n  There is, homewer, threats from our kin too. The harsh §P78th Army§! is actively threatining our government.  \n  §P78th Army§! = [?ANT.army_influence|P] \n  \n  \n §RGOD SAVE TURKEY.§! "
+ ANT_increase_presence_tt_2:0 "§OThe Natives will not like this.§!"
+ army_moves_tooltip:0 "The 78th Army gains §P10§! influence."
+ chose_war:0 "The Army Re-Organizes"
