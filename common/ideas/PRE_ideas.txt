@@ -2,7 +2,7 @@ ideas = {
 country = {
 PRE_simmering_discontent = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
-			#picture =
+			picture = discontent
 			modifier = {
 			stability_factor = -0.04
 			political_power_factor = -0.10
@@ -14,7 +14,7 @@ PRE_simmering_discontent = {
 		
 PRE_sham_democracy = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_sham_democracy" }
-			#picture =
+			picture = sham_democracy
 			modifier = {
 			stability_factor = -0.02
 			party_popularity_stability_modifier = 0.14
@@ -24,7 +24,7 @@ PRE_sham_democracy = {
 		
 PRE_political_radicalisation = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_political_radicalisation" }
-			#picture =
+			picture = political_radicalisation
 			modifier = {
 			stability_factor = -0.03
 			political_power_factor = -0.05
@@ -36,7 +36,7 @@ PRE_political_radicalisation = {
 		
 PRE_widespread_protests = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_widespread_protests" }
-			#picture =
+			picture = discontent
 			modifier = {
 			stability_factor = -0.09
 			political_power_factor = -0.16
@@ -48,7 +48,7 @@ PRE_widespread_protests = {
 		
 PRE_ongoing_protests = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_ongoing_protests" }
-			#picture =
+			picture = discontent
 			modifier = {
 			stability_factor = -0.06
 			political_power_factor = -0.12
@@ -59,7 +59,7 @@ PRE_ongoing_protests = {
 		}
 PRE_support_prussian_worker = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_support_prussian_worker" }
-			#picture =
+			picture = prussian_worker
 			modifier = {
 			stability_factor = 0.1
 			production_factory_efficiency_gain_factor = 0.05
@@ -67,7 +67,7 @@ PRE_support_prussian_worker = {
 		}	
 PRE_querfront_negotiations_idea	= {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_querfront_negotiations" }
-			#picture =
+			picture = querfront_negotiations
 			modifier = {
 			stability_factor = -0.1
 			political_power_factor = -0.15
@@ -75,7 +75,7 @@ PRE_querfront_negotiations_idea	= {
 		}		
 PRE_class_coop_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_class_coop_idea" }
-			#picture =
+			picture = class_coop
 			modifier = {
 			production_speed_buildings_factor = 0.05
 			industrial_capacity_factory = 0.05
@@ -83,7 +83,7 @@ PRE_class_coop_idea = {
 		}				
 PRE_unity_through_service_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_unity_through_service_idea" }
-			#picture =
+			picture = unity_through_service
 			modifier = {
 			weekly_manpower = 5000
 			stability_weekly = 0.03
@@ -93,7 +93,7 @@ PRE_unity_through_service_idea = {
 		}		
 PRE_national_solidarity_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_national_solidarity_idea" }
-			#picture =
+			picture = national_solidarity
 			modifier = {
 			consumer_goods_factor = 0.03
 			MONTHLY_POPULATION = 0.35
@@ -103,7 +103,7 @@ PRE_national_solidarity_idea = {
 		}				
 PRE_national_solidarity_idea2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_national_solidarity_idea2" }
-			#picture =
+			picture = national_solidarity
 			modifier = {
 			consumer_goods_factor = 0.05
 			MONTHLY_POPULATION = 0.5
@@ -115,7 +115,7 @@ PRE_national_solidarity_idea2 = {
 		}
 PRE_formalise_army_power_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_formalise_army_power_idea" }
-			#picture =
+			picture = formalise_army
 			modifier = {
 			high_command_cost_factor = -0.2
 			max_command_power = 20
@@ -126,7 +126,7 @@ PRE_formalise_army_power_idea = {
 
 PRE_integrate_querfront_parties_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_integrate_querfront_parties_idea" }
-			#picture =
+			picture = integrated_querfront
 			modifier = {
 			conscription_factor = 0.1
 			army_core_attack_factor = 0.1
@@ -137,7 +137,7 @@ PRE_integrate_querfront_parties_idea = {
 		
 PRE_one_prussian_nation_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_one_prussian_nation_idea" }
-			#picture =
+			picture = prussian_nation
 			modifier = {
 			defensive_war_stability_factor = 0.2
 			offensive_war_stability_factor = 0.2
@@ -148,7 +148,7 @@ PRE_one_prussian_nation_idea = {
 		}
 PRE_absorb_dnvp_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_absorb_dnvp_idea" }
-			#picture =
+			picture = absorp
 			modifier = {
 			revolutionary_nationalist_drift = 0.6
 			authoritarian_democrat_drift = -0.75
@@ -165,7 +165,7 @@ PRE_puppet_monarch = {
 		}
 PRE_nacht_der_langer_messer	= {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_nacht_der_langer_messer" }
-			#picture =
+			picture = nacht_messer
 			modifier = {
 			stability_factor = -0.4
 			stability_weekly = 0.05
@@ -177,7 +177,7 @@ PRE_nacht_der_langer_messer	= {
 		}
 PRE_volkisch_education_idea	= {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_volkisch_education_idea" }
-			#picture =
+			picture = volkisch_education
 			modifier = {
 			research_speed_factor = 0.04
 			revolutionary_nationalist_drift = 0.01
@@ -186,7 +186,7 @@ PRE_volkisch_education_idea	= {
 		}	
 PRE_german_youth_league_idea= {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_german_youth_league_idea" }
-			#picture =
+			picture = german_youth_league
 			modifier = {
 			conscription = 0.02
 			
@@ -196,7 +196,7 @@ PRE_german_youth_league_idea= {
 		}		
 PRE_german_youth_league_idea2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_german_youth_league_idea2" }
-			#picture =
+			picture = german_youth_league
 			modifier = {
 			conscription = 0.02
 			army_morale_factor = 0.1
@@ -209,7 +209,7 @@ PRE_german_youth_league_idea2 = {
 		}
 PRE_propaganda_ministry1= {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_propaganda_ministry1" }
-			#picture =
+			picture = propaganda_ministry
 			modifier = {
 			conscription_factor = 0.01
 			army_core_attack_factor = 0.03
@@ -222,7 +222,7 @@ PRE_propaganda_ministry1= {
 		}	
 PRE_propaganda_ministry2= {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_propaganda_ministry2" }
-			#picture =
+			picture = propaganda_ministry
 			modifier = {
 			conscription_factor = 0.02
 			army_core_attack_factor = 0.06
@@ -235,7 +235,7 @@ PRE_propaganda_ministry2= {
 		}	
 PRE_propaganda_ministry3= {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_propaganda_ministry3" }
-			#picture =
+			picture = propaganda_ministry
 			modifier = {
 			conscription_factor = 0.04
 			army_core_attack_factor = 0.09
@@ -248,7 +248,7 @@ PRE_propaganda_ministry3= {
 		}	
 PRE_propaganda_ministry4= {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_propaganda_ministry4" }
-			#picture =
+			picture = propaganda_ministry
 			modifier = {
 			conscription_factor = 0.08
 			army_core_attack_factor = 0.12
@@ -261,7 +261,7 @@ PRE_propaganda_ministry4= {
 		}	
 PRE_propaganda_ministry5= {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_propaganda_ministry5" }
-			#picture =
+			picture = propaganda_ministry
 			modifier = {
 			conscription_factor = 0.15
 			army_core_attack_factor = 0.15
@@ -274,7 +274,7 @@ PRE_propaganda_ministry5= {
 		}
 PRE_loyal_sons_of_germania_idea	= {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_loyal_sons_of_germania_idea" }
-			#picture =
+			picture = sons_of_germania_idea
 			modifier = {
 			army_attack_factor = 0.05
 			max_dig_in = 5
@@ -282,7 +282,7 @@ PRE_loyal_sons_of_germania_idea	= {
 		}	
 PRE_meine_ehre_idea= {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_meine_ehre_idea" }
-			#picture =
+			picture = sons_of_germania_idea
 			modifier = {
 			army_attack_factor = 0.05
 			max_dig_in = 5
@@ -293,7 +293,7 @@ PRE_meine_ehre_idea= {
 		}
 PRE_deutsche_arbeiters_front_idea= {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_deutsche_arbeiters_front_idea" }
-			#picture =
+			picture = deutsche_arbeiters_front
 			modifier = {
 			production_factory_max_efficiency_factor = 0.05
 			line_change_production_efficiency_factor = 0.05
@@ -302,7 +302,7 @@ PRE_deutsche_arbeiters_front_idea= {
 		}
 PRE_deutsche_arbeiters_front_idea2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_deutsche_arbeiters_front_idea2" }
-			#picture =
+			picture = deutsche_arbeiters_front
 			modifier = {
 			production_factory_max_efficiency_factor = 0.1
 			line_change_production_efficiency_factor = 0.1
@@ -312,7 +312,7 @@ PRE_deutsche_arbeiters_front_idea2 = {
 		}	
 PRE_arbeit_macht_frei_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_arbeit_macht_frei_idea" }
-			#picture =
+			picture = arbeit_macht_frei
 			modifier = {
 			consumer_goods_factor = -0.05
 			production_speed_buildings_factor = 0.1
@@ -321,7 +321,7 @@ PRE_arbeit_macht_frei_idea = {
 		}
 PRE_the_eagle_rises_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_arbeit_macht_frei_idea" }
-			#picture =
+			picture = eagle_rises
 			modifier = {
 			army_morale_factor = 0.1
 			ai_focus_aggressive_factor = 0.5

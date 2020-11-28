@@ -4,7 +4,86 @@ spriteTypes = {
 	## Disaster ##
 	#### Ideas GFX ####
 	###################
-
+	spriteType = {
+		name = "GFX_idea_formalise_army"
+		texturefile = "gfx/interface/ideas/formalise_army.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_german_youth_league"
+		texturefile = "gfx/interface/ideas/german_youth_league.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_integrated_querfront"
+		texturefile = "gfx/interface/ideas/integrated_querfront.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_nacht_messer"
+		texturefile = "gfx/interface/ideas/nacht_messer.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_national_solidarity"
+		texturefile = "gfx/interface/ideas/national_solidarity.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_political_radicalisation"
+		texturefile = "gfx/interface/ideas/political_radicalisation.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_propaganda_ministry"
+		texturefile = "gfx/interface/ideas/propaganda_ministry.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_prussian_nation"
+		texturefile = "gfx/interface/ideas/prussian_nation.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_prussian_worker"
+		texturefile = "gfx/interface/ideas/prussian_worker.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_querfront_negotiations"
+		texturefile = "gfx/interface/ideas/querfront_negotiations.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_sham_democracy"
+		texturefile = "gfx/interface/ideas/sham_democracy.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_sons_of_germania_idea"
+		texturefile = "gfx/interface/ideas/sons_of_germania_idea.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_unity_through_service"
+		texturefile = "gfx/interface/ideas/unity_through_service.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_volkisch_education"
+		texturefile = "gfx/interface/ideas/volkisch_education.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_absorp"
+		texturefile = "gfx/interface/ideas/absorp.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_eagle_rises"
+		texturefile = "gfx/interface/ideas/eagle_rises.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_arbeit_macht_frei"
+		texturefile = "gfx/interface/ideas/arbeit_macht_frei.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_class_coop"
+		texturefile = "gfx/interface/ideas/class_coop.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_deutsche_arbeiters_front"
+		texturefile = "gfx/interface/ideas/deutsche_arbeiters_front.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_discontent"
+		texturefile = "gfx/interface/ideas/discontent.tga"
+	}
 	spriteType = {
 		name = "GFX_idea_CIB_King_Hill"
 		texturefile = "gfx/interface/ideas/CIB_King_Hill.dds"
