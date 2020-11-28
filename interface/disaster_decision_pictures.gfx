@@ -9,4 +9,14 @@ spriteTypes = {
 		name = "Decision_picture_anatolia_influence"
 		texturefile = "gfx/decision_pictures/anatolia_influence.dds"
 	}
+	
+	frameAnimatedSpriteType = {
+        name = "GFX_Portrait_WRF_Atsiz_Nazi_animated"
+        texturefile = "gfx/leaders/WRF/Portrait_WRF_Atsiz_Nazi_animated.tga"
+        noOfFrames = 24
+        animation_rate_fps = 10
+        looping = yes
+        play_on_show = yes
+     
+    }
 }
