@@ -237,7 +237,7 @@ focus_tree = {
 	}
     focus = {
 		id = PRE_friends_in_the_abwehr
-		icon = GFX_goal_prussian_worker
+		icon = GFX_goal_friends_in_the_abewehr
 		x = 7
 		y = 3
 		relative_position_id = PRE_start_focus
@@ -253,7 +253,7 @@ focus_tree = {
 	}
     focus = {
 		id = PRE_clarify_our_policies
-		icon = GFX_goal_prussian_worker
+		icon = GFX_goal_reichstag_address
 		x = 5
 		y = 3
 		relative_position_id = PRE_start_focus
@@ -328,7 +328,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_redistribute_land
-		icon = GFX_goal_class_coop
+		icon = GFX_goal_land_resdistrubute
 		x = 3
 		y = 5
 		relative_position_id = PRE_start_focus
@@ -393,7 +393,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_a_police_state
-		icon = GFX_goal_prussian_worker
+		icon = GFX_goal_police_state
 		x = 9
 		y = 5
 		relative_position_id = PRE_start_focus
