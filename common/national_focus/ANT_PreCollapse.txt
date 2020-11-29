@@ -207,7 +207,6 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_fight_anarchy }
-		mutually_exclusive = { focus = ANT_political_warfare }
 		ai_will_do = {
 			factor = 1
 		}
