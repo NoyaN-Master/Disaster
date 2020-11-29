@@ -53,6 +53,16 @@ PRE_formalise_army_power:0"Formalise The Army's Power"
 PRE_formalise_army_power_desc:0"Under Schleicher, the Prussian military, in which he himself built his career, has come to weild an exceptional deal of power, alongside the Querfront coalition in the Reichstag. However, the realities of the constitution, which still maintains a shaky artifice of democracy, have forced the army's power to be kept informal, represented more by backroom deals and political loopholes than open political methods. Now, however, Schleicer has accumulated enough political capital to push through blatantly authoritarian ammendemnts to the constitution, which will allow Prussia's heroic military to aid the nation unencumbered by outdated democracy."
 PRE_one_prussian_nation:0"One Prussian Nation"
 PRE_one_prussian_nation_desc:0"At last, we have done it. Schleicher and the clique of politicians and generals beneath him, from Niekisch and the national-bolsheviks, who in spite of the loss of their revolutionary zeal have been instrumental in our economic reforms and nationalist revivial, to Braun and the social democrats, who, despite having to accpet much greater authoritarianism than they would have hoped for, have greatly endeared us to many common workers and moderate citizens, and to the nationalist generals who have undertaken major reforms of the army, have finally realised a righteous and just vision of Prussia - a Prussia that is all it should be, and is free, now and forever."
+PRE_friends_in_the_abwehr:0"Friends in the Abwehr"
+PRE_friends_in_the_abwehr_desc:0"Schleicher has long been friendly with Prussia's intelligence service, the Abwehr, and as he now comes to consolidate power, he will need the backng of his old friends more than ever. It is time for Schleicher to meet with his allies in the service, most notably Hans Oster, to formulate a new strategy whereby the Abwehr's vast resources can be put to use to help him secure his regime."
+PRE_clarify_our_policies:0 "Another Reichstag Address"
+PRE_clarify_our_policies_desc:0 "It is almost astonishing to think how much has changed since Schleicher last addressed the Reichstag in January. Given how much has happened since then, many of his aides are now arguing that he should make another speech to the increasingly powerless parliament, to outline what exactly it is that the new Querfront government intends to do. However, it is hard to say what exactly that is, and much debate on what the Chancellor should say is sure to follow among the leaders of the different Querfront parties."
+PRE_redistribute_land:0 "Redistribute Land"
+PRE_redistribute_land_desc:0 "As we increase our aid for Prussia's workers, we must do the same for the farmers of the nation too. Land reform has long been supported by both Niekisch and Braun, and with the two men now extremely powerful in Prussia, both are strongly pressing for it to be implemented. Not only would such a policy strenghten our popularity among common farmers and pay off for the economy, but it would also deal the final blow to the power of the Junkers, something we can hardly turn down.
+PRE_a_police_state:0 "A Police State"
+PRE_a_police_state_desc:0 "There are few things that are as vital to our continued rule over Prussia as maintaining law and order, something that we shall have to take new special measures to do. With the aid of Oster and the Abwehr, and with the support of both Niekisch and Seldte, Schleicher now intends to pass sweeping legislation empowering the security forces and police to conduct extensive searches and operations against political dissidents, and other subversive criminals. Order alone can save Prussia!"
+
+#Goring
 PRE_nazi_victory_focus:0"Goring's Triumph"
 PRE_nazi_victory_focus_desc:0"A mere nine years after being first exiled from Bavaria, Goring now finds himself at the helm of the state of Prussia. With his blueshirted supporters celebrating in the streets and members of the opposition hastily trying to get out of the country, it is clear that the face of Prussia will be forever changed by this deeply charismatic Bavarian airman."
 PRE_enabling_act:0"The Enabling Act"
@@ -163,7 +173,7 @@ pre.14.d:0 "Over the past days, Goring has greatly moved to extend his own influ
 pre.14.a:0 "Heil Goring!"
 
 pre.15.t:0 "The Negotiations Reach an Impasse"
-pre.15.d:0 "Over the past days, we have been negotiating with numerous lefist and nationalist movements, from the remnants of the Social Democras to Oskar Niekisch's discontented leftwing of the AdNP, to try to form a new Querfront coalition in the Reichstag, able to support Schleicher against Goring and Hugenberg and allowing Schleicher to bypass the Junkers in governnance, finally breaking their grip over power.\nHowever, the negotiations have reached a clear impasse, with the disparate factions that Schleicher seeks to incroporate struglling to find much common ground, and increasingly bickering rather than bothering to try. As such, some aides are now urging Schleicher to use some few carefully-placed threats and intimidation to force the parties into co-operation, although others argue that they'll soon sort themselves out."
+pre.15.d:0 "Over the past days, we have been negotiating with numerous lefist and nationalist movements, from the remnants of the Social Democras to Oskar Niekisch's discontented leftwing of the AdNP, to try to form a new Querfront coalition in the Reichstag, able to support Schleicher against Goring and the Junkers and allowing Schleicher to bypass the Junkers in governnance, finally breaking their grip over power.\nHowever, the negotiations have reached a clear impasse, with the disparate factions that Schleicher seeks to incroporate struglling to find much common ground, and increasingly bickering rather than bothering to try. As such, some aides are now urging Schleicher to use some few carefully-placed threats and intimidation to force the parties into co-operation, although others argue that they'll soon sort themselves out."
 pre.15.a:0 "They'll get their act together, given time"
 pre.15.b:0 "We need to ensure their collaboration, whatever it takes"
 
@@ -193,7 +203,7 @@ pre.21.d:0 "Today, with the Querfront talks having collapsed, and Niekisch's now
 pre.21.a:0 "Heil Goring!"
 
 pre.22.t:0 "The Talks Begin"
-pre.22.d:0 "Today in Berlin, Kurt von Schleicher formally opened talks between a number of different political groups to form a new Querfront coalition against the Junkers and fanatic nationalists. Present at the negotiations were the national-bolshevik philosopher Ernst Niekisch, who, despite having co-founded the AdNP with Goring, has become increasinly estranged from the party's mainstream, the social democrat Otto Braun, who was able to rally the remnants of Prussia's SPD in the 1920s and rebuild its political machine after the rightist putsch of 1919, and representatives of many smaller nationalist organisations which have become increasinly estranged from both Hugenberg and Goring.\nIt can't be denied that the coalition Schleicher is trying to build is an extraordinarily big tent, but the Chancellor is nonetheles hopeful. After all, there is no other way he could hold on to power."
+pre.22.d:0 "Today in Berlin, Kurt von Schleicher formally opened talks between a number of different political groups to form a new Querfront coalition against the Junkers and fanatic nationalists. Present at the negotiations were the national-bolshevik philosopher Ernst Niekisch, who, despite having co-founded the AdNP with Goring, has become increasinly estranged from the party's mainstream, the social democrat Otto Braun, who was able to rally the remnants of Prussia's SPD in the 1920s and rebuild its political machine after the rightist putsch of 1919, and representatives of many smaller nationalist organisations which have become increasinly estranged from Goring, most notably Franz Seldte's Stalhelm veterans' group and paramilitary.\nIt can't be denied that the coalition Schleicher is trying to build is an extraordinarily big tent, but the Chancellor is nonetheles hopeful. After all, there is no other way he could hold on to power."
 pre.22.a:0 "We'll need a lot of luck to pull this off..."
 
 pre.23.t:0 "The Enabling Act is Passed"
@@ -220,6 +230,28 @@ pre.28.t:0 "The Night of the Long Knives"
 pre.28.d:0 "As the Prussian nation woke up this morning, they were confronted with an astonishing reality, far beyond anything that even the most pessimistic anti-nationalists could have dreamed of. Hundreds of opponents of the regime, from socialists to reactionary aristocrats, were murdered last night in one fell sweeop. Ernst Niekisch, the national-bolshevik co-founder of the AdNP, who increasingly diverged from Goring, was riddled with bullets in the middle of the street. Otto Braun, leader of the Prussian SPD, was hung in his own home. Wilhelm Kulz, the veteran centrist, was found mutilated in a ditch outside Berlin. Hundreds more met similar fates, and from now on nobody will so much as dare to speak a bad word about the Chancellor or King. Goring's rule was always absolute, but from this point onwards it will be unchallenged entirely. Only a bloodbath such as this could have liberated the nation."
 pre.28.a:0 "You get what you fucking deserve!"
 
+pre.29.t:0 "A Meeting with Oster"
+pre.29.d:0 "Although Schleicher has managed to consolidate his power in the short term, with the aid of Braun and Niekisch among others, much work still needs to be done for the political situation to be stabilised: a task for which we'll need a great many allies. With this in mind, Chancellor von Schleicher today met with the Abwehr administrator Hans Oster, a longstanding supporter of many of Schleicher's ideas, and opponent of Goring. Although what exactly the two discussed will likely remain unclear forever, it is clear that from here on out the Abwehr, already a vital ally of Schleicher, will play a crucial role in his government, and that it may begin to put its vast resources towards aiding him in what remains of his consolidation of power."
+pre.29.a:0 "Excellent!"
+
+pre.30.t:0 "Preparing for the Speech"
+pre.30.d:0 "Kurt von Schleicher is now preparing to address the Reichstag for the second time in recent motnhs, but so much has changed since his last speech. The Junkers have fallen from grace spectacularly, and Schleicher himself has gone from little more than their puppet to an increasingly powerful military dictator, backed by everyone from social democrats to national bolsheviks. However, the broad range of groups that support the Schleicher government is increasingly confusing to much of the public, and many of Schleicher's aides are suggesting that, in his forthcoming speech, he should seek to clarify the principles and ideological stance of the Querfront government.\nThe problem with this, however, is that it is hard to say what that is. As such, different prominent figures in the Querfront have come forward with very different proposals. The national-bolshevik Ernst Niekisch is urging Schleicher to declare the new state to be "in principle and reality both socialist, and socialist, for such is the ethos of the eternal Prussian nation". On the other hand, the veteran social democrat Otto Braun is calling on Schleicher to state that "although democracy has always been at the heart of our republic, that democracy can for the time being no longer persist, if the state can have the strength to truly help its people". More conventional nationalists under Franz Seldte, on the other hand, want Schleicher to announce that "the state of Prussia will always be a conservative one, and our reforms are vital if anything is to be conserved at all".\nThe three different suggestions give radically different impressions of the nature of Schleicher's government, but it is clear that we'll have to side with one of them, if we are to bring some clarity to the purpose of our regime."
+pre.30.a:0 "Niekisch makes the strongest point"
+pre.30.b:0 "Braun's suggestions are best"
+pre.30.c:0 "Side with Seldte on this one"
+
+pre.31.t:0 "The DNVP and the Querfront"
+pre.31.d:0 "Although Alfred Hugenberg's DNVP has not been invited to the Querfront talks, a great deal of activity has been taking place at their central offices over the last few days. It is clear that, although not everything about the coalition fills Hugenberg with enthusiasm, he may be coming to view it as preferable to the rule of Goring, or a revived Junker government. The inclusion of his paramilitary allies, the Stalhelm, in the talks has likely also gone some way to making the Querfront attractive to him. However, Hugenberg knows that Schleicher's position is still anything but secure, and is hesitant to become too committed, lest the tide turn yet again. For now, it seems, he intends to watch and wait, and see where the future leads."
+pre.31.a:0 "Interesting"
+
+pre.32.t:0 "The DNVP joins the Querfront"
+pre.32.d:0 "With Schleicher having stabilised his government, and now rapidly consolidating his power, Alfred Hugenberg, leader of the DNVP, has reached a clear conclusion. His party's future, he has decided, is much better served within the new government thn outside it, where it would likely be outlawed and crushed. As such, he has agreed with Kurt von Schleicher, with Franz Seldte mediating between the two, that the DNVP will be incorporated into the Querfront coalition, and will from now on support the Schleicher government."
+pre.32.a:0 "Excellent!"
+
+pre.33.t:0 "A Rainy Night in Konigsberg"
+pre.33.d:0 "Hermann Goring trudged along through the wet street, his soaked overcoat shielding the blue uniform beneath. The old airman was tired, and stressed: Schleicher was only getting more powerful, and by now Goring had to watch his back. But he walked on, for there was vital business to be done.\nDuring the earlier days of the crisis, countless coups against Schleicher had been discussed and planned, only to be called off later on. This time, however, would be different. Countless extremely influential businessmen, aristocrats, generals, had all been pushed over the line by the madness and radicalism of the Schleicher regime. They knew that drastic action had to be taken to liberate Prussia from this traitorous cyptosocialist, and they knew that Goring was the man for the job.\nGoring reached the building - an impressive one, surely a good sign of the power of the people who had reached out to him. He made his way in, and was greeted with obvious enthusiasm by a neatly-uniformed doorman, who relieved him of his coat and led him onwards to an impressive door, behind which, of course, would be the men who had approached him. Goring walked forwards, turned the handle, and made his way in.\nBut there was only one man in that room. One man, pointing a gleaming pistol right ahead."
+pre.33.a:0 "So long, Hermann"
+
 #country flags
 PRE_investigation_started:0 "The corruption scandal is underway"
 PRE_schleicher_resigns:0 "Schleicher resigned"
@@ -233,12 +265,12 @@ PRE_schleicher_victory:0"Schleicher is in power"
 
 #tooltips
 PRE_elections:0 "New elections will be held in Prussia."
-PRE_querfront_negotiations:0"§GThe negotiations for forming the Querfront wil begin. It wil give the following during the focus:§!"
+PRE_querfront_negotiations:0"§GWe will begin to negotiate the Querfront coalition., giving the following effects during the focus:§!"
 PRE_unity_through_service_tooltip:0"§GUnity Through Service will give the following effect during the focus:§!"
-PRE_junker_purge:0"§R If Schleicher can't deal with the Junkers properly he will get couped.§!"
-PRE_absorb_dnvp_idea_tooltip:0"§GAbsorping the DNVP will give the following effect during the focus:§!"
+PRE_junker_purge:0"§RFailure to deal properly with the Junkers could be disasterous for the government.§!"
+PRE_absorb_dnvp_idea_tooltip:0"§GAbsorbing the DNVP will give the following effect during the focus:§!"
 PRE_nacht_der_langer_messer_tooltip:0"§RThe massive purge will give the following effect during the focus:§!"
-PRE_ministry_of_propaganda_tooltip:0"§GBy doing this focus we will be able to establish the Reich Ministry of Public Enlightenment and Propaganda§!"
+PRE_ministry_of_propaganda_tooltip:0"§GThis focus will unlock decisions to establish the Reich Ministry of Propaganda.§!"
 PRE_ministry_of_propaganda_increase_tooltip:0"§GThis decision will increase our propaganda and grip on the German people!§!"
 #ideas Schleicher
 PRE_simmering_discontent:0"Slimmering Discontent"
@@ -267,8 +299,9 @@ PRE_integrate_querfront_parties_idea:0"Integrated Querfront"
 PRE_integrate_querfront_parties_idea_desc:0""
 PRE_one_prussian_nation_idea:0"One Prussian Nation"
 PRE_one_prussian_nation_idea_desc:0""
+PRE_empowered_abwehr:0 "Empowered Abwehr"
 #ideas goring
-PRE_absorb_dnvp_idea:0"Absorping The DNVP"
+PRE_absorb_dnvp_idea:0"Absorbing The DNVP"
 PRE_absorb_dnvp_idea_desc:0""
 PRE_nacht_der_langer_messer:0"Nacht Der Langer Messer"
 PRE_nacht_der_langer_messer_desc:0""

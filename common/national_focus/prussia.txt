@@ -9,13 +9,13 @@ focus_tree = {
 			tag = PRE	}
 	}
 
-    continuous_focus_position = { x = 20 y = 1400 }	
+    continuous_focus_position = { x = 20 y = 2000 }	
 	
 	### political focus start
 	focus = {
 		id = PRE_start_focus
 		icon = GFX_goal_adress_parliament
-		x = 5
+		x = 1
 		y = 0
 		cost = 3		
 		completion_reward = {
@@ -102,7 +102,7 @@ focus_tree = {
 	focus = {
 		id = PRE_goerdeler_in_charge
 		icon = GFX_goal_goerdeler_in_charge
-		x = -4
+		x = 0
 		y = 3
 		relative_position_id = PRE_start_focus
 		cost = 1		
@@ -121,7 +121,7 @@ focus_tree = {
 	focus = {
 		id = PRE_calm_paramilitaries
 		icon = GFX_goal_calm_paramilitaries
-		x = -5
+		x = -1
 		y = 4
 		relative_position_id = PRE_start_focus
 		prerequisite = { focus = PRE_goerdeler_in_charge }
@@ -138,7 +138,7 @@ focus_tree = {
 	focus = {
 		id = PRE_fight_corruption
 		icon = GFX_goal_fight_corruption
-		x = -3
+		x = 1
 		y = 4
 		relative_position_id = PRE_start_focus
 		prerequisite = { focus = PRE_goerdeler_in_charge }
@@ -153,7 +153,7 @@ focus_tree = {
 	focus = {
 		id = PRE_fresh_elections
 		icon = GFX_goal_election
-		x = -4
+		x = 0
 		y = 5
 		relative_position_id = PRE_start_focus
 		prerequisite = { focus = PRE_calm_paramilitaries }
@@ -170,11 +170,10 @@ focus_tree = {
 	focus = {
 		id = PRE_schleicher_holds_on
 		icon = GFX_goal_schleicher_holds_on
-		x = 4
-		y = 3
+		x = 6
+		y = 0
 		relative_position_id = PRE_start_focus
 		cost = 1
-		prerequisite = { focus = PRE_react_to_investigation }	
 		available = {
 			has_country_flag = PRE_schleicher_refuses_step_down	
 		}		
@@ -193,8 +192,8 @@ focus_tree = {
 	focus = {
 		id = PRE_deal_with_the_junkers
 		icon = GFX_goal_deal_with_junkers
-		x = 4
-		y = 4
+		x = 6
+		y = 1
 		relative_position_id = PRE_start_focus
 		prerequisite = { focus = PRE_schleicher_holds_on }
 		available = {
@@ -213,8 +212,8 @@ focus_tree = {
 	focus = {
 		id = PRE_negotiate_quer_front
 		icon = GFX_goal_negotiate_querfront
-		x = 4
-		y = 5
+		x = 6
+		y = 2
 		relative_position_id = PRE_start_focus
 		prerequisite = { focus = PRE_deal_with_the_junkers }
 		available = {
@@ -235,15 +234,46 @@ focus_tree = {
 		    	custom_effect_tooltip = PRE_querfront_negotiations
 				show_ideas_tooltip = PRE_querfront_negotiations_idea	
 		}
+	}
+    focus = {
+		id = PRE_friends_in_the_abwehr
+		icon = GFX_goal_prussian_worker
+		x = 7
+		y = 3
+		relative_position_id = PRE_start_focus
+		cost = 5		
+		prerequisite = { focus = PRE_negotiate_quer_front }
+		available = {
+			has_country_flag = PRE_schleicher_victory	
+		}			
+		completion_reward = {
+		country_event = { id = pre.29 days = 1 }
+        add_ideas = PRE_empowered_abwehr		
+		}
+	}
+    focus = {
+		id = PRE_clarify_our_policies
+		icon = GFX_goal_prussian_worker
+		x = 5
+		y = 3
+		relative_position_id = PRE_start_focus
+		cost = 3		
+		prerequisite = { focus = PRE_negotiate_quer_front }
+		available = {
+			has_country_flag = PRE_schleicher_victory	
+		}			
+		completion_reward = {
+		country_event = { id = pre.30 days = 1 }	
+		}
 	}	
 	focus = {
 		id = PRE_support_the_prussian_worker
 		icon = GFX_goal_prussian_worker
-		x = 2
-		y = 6
+		x = 4
+		y = 4
 		relative_position_id = PRE_start_focus
 		cost = 5		
-		prerequisite = { focus = PRE_negotiate_quer_front }
+		prerequisite = { focus = PRE_clarify_our_policies }
 		available = {
 			has_country_flag = PRE_schleicher_victory	
 		}			
@@ -257,47 +287,80 @@ focus_tree = {
 	focus = {
 		id = PRE_social_role_army
 		icon = GFX_goal_social_role_army
-		x = 4
-		y = 6
+		x = 6
+		y = 4
 		relative_position_id = PRE_start_focus
 		cost = 5		
-		prerequisite = { focus = PRE_negotiate_quer_front }
+		prerequisite = { focus = PRE_friends_in_the_abwehr }
+		prerequisite = { focus = PRE_clarify_our_policies }
 		available = {
 			has_country_flag = PRE_schleicher_victory	
 		}			
 		completion_reward = {
 		remove_ideas = PRE_ongoing_protests
 		army_experience = 25
+		add_popularity = {
+			ideology = ultranationalist
+			popularity = 0.12
+		}
 		}
 	}
 	focus = {
 		id = PRE_crush_nationalist_opposition
 		icon = GFX_goal_nationalist_opposition
-		x = 6
-		y = 6
+		x = 8
+		y = 4
 		relative_position_id = PRE_start_focus
 		cost = 4		
-		prerequisite = { focus = PRE_negotiate_quer_front }
+		prerequisite = { focus = PRE_friends_in_the_abwehr }
+		select_effect = { country_event = { id = pre.32 days = 1 } }
 		available = {
 			has_country_flag = PRE_schleicher_victory	
 		}			
 		completion_reward = {
+		country_event = { id = pre.33 days = 1 }
 		remove_ideas = PRE_political_radicalisation
 		add_popularity = {
 		ideology = revolutionary_nationalist
-		popularity = -0.07
-		}
-		add_popularity = {
-		ideology = autocratic
-		popularity = -0.07
+		popularity = -0.14
 		}		
+		}
+	}
+	focus = {
+		id = PRE_redistribute_land
+		icon = GFX_goal_class_coop
+		x = 3
+		y = 5
+		relative_position_id = PRE_start_focus
+		cost = 5		
+		prerequisite = { focus = PRE_support_the_prussian_worker }
+		prerequisite = { focus = PRE_social_role_army }		
+		completion_reward = {
+		67 = {
+		add_extra_state_shared_building_slots = 1
+		}
+		66 = {
+		add_extra_state_shared_building_slots = 1
+		}
+		68 = {
+		add_extra_state_shared_building_slots = 1
+		}
+		5 = {
+		add_extra_state_shared_building_slots = 1
+		}
+		
+		add_political_power = 30
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = -0.08
+		}
 		}
 	}
 	focus = {
 		id = PRE_class_coop
 		icon = GFX_goal_class_coop
-		x = 3
-		y = 7
+		x = 5
+		y = 5
 		relative_position_id = PRE_start_focus
 		cost = 6		
 		prerequisite = { focus = PRE_support_the_prussian_worker }
@@ -312,8 +375,8 @@ focus_tree = {
 	focus = {
 		id = PRE_unity_through_service
 		icon = GFX_goal_unity_through_service
-		x = 5
-		y = 7
+		x = 7
+		y = 5
 		relative_position_id = PRE_start_focus
 		cost = 5		
 		prerequisite = { focus = PRE_crush_nationalist_opposition }
@@ -329,14 +392,33 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = PRE_a_police_state
+		icon = GFX_goal_prussian_worker
+		x = 9
+		y = 5
+		relative_position_id = PRE_start_focus
+		cost = 5		
+		prerequisite = { focus = PRE_crush_nationalist_opposition }
+		prerequisite = { focus = PRE_social_role_army }	
+		select_effect = {
+		add_ideas = PRE_unity_through_service_idea }		
+		completion_reward = {
+		    swap_ideas = {
+			add_idea = PRE_empowered_abwehr_2
+			remove_idea = PRE_empowered_abwehr
+		    }
+		}
+	}
+	focus = {
 		id = PRE_undermine_big_business
 		icon = GFX_goal_undermine_big_business
-		x = 2
-		y = 8
+		x = 4
+		y = 6
 		relative_position_id = PRE_start_focus
 		cost = 4		
 		prerequisite = { focus = PRE_class_coop }	
-		prerequisite = { focus = PRE_unity_through_service }	
+		prerequisite = { focus = PRE_unity_through_service }
+        prerequisite = { focus = PRE_redistribute_land }			
 		completion_reward = {
 		64 = {
 		add_extra_state_shared_building_slots = 1
@@ -350,8 +432,8 @@ focus_tree = {
 	focus = {
 		id = PRE_national_solidarity
 		icon = GFX_goal_national_solidarity
-		x = 4
-		y = 8
+		x = 6
+		y = 6
 		relative_position_id = PRE_start_focus
 		cost = 6		
 		prerequisite = { focus = PRE_class_coop }	
@@ -364,13 +446,13 @@ focus_tree = {
 	focus = {
 		id = PRE_rejuvenate_militarism
 		icon = GFX_goal_rejuvanate_militarism
-		x = 6
-		y = 8
+		x = 8
+		y = 6
 		relative_position_id = PRE_start_focus
 		cost = 6		
 		prerequisite = { focus = PRE_class_coop }	
 		prerequisite = { focus = PRE_unity_through_service }	
-		
+		prerequisite = { focus = PRE_a_police_state }	
 		completion_reward = {
 		add_manpower = 50000
 		army_experience = 50
@@ -387,8 +469,8 @@ focus_tree = {
 	focus = {
 		id = PRE_pro_worker_indus
 		icon = GFX_goal_pro_worker_indus
-		x = 2
-		y = 9
+		x = 4
+		y = 7
 		relative_position_id = PRE_start_focus
 		cost = 6		
 		prerequisite = { focus = PRE_undermine_big_business }	
@@ -428,8 +510,8 @@ focus_tree = {
 	focus = {
 		id = PRE_support_our_countrymen
 		icon = GFX_goal_support_our_countrymen
-		x = 4
-		y = 9
+		x = 6
+		y = 7
 		relative_position_id = PRE_start_focus
 		cost = 5		
 		prerequisite = { focus = PRE_national_solidarity }		
@@ -444,8 +526,8 @@ focus_tree = {
 	focus = {
 		id = PRE_shared_struggle
 		icon = GFX_goal_shared_struggle
-		x = 6
-		y = 9
+		x = 8
+		y = 7
 		relative_position_id = PRE_start_focus
 		cost = 5		
 		prerequisite = { focus = PRE_rejuvenate_militarism }		
@@ -457,8 +539,8 @@ focus_tree = {
 	focus = {
 		id = PRE_integrate_querfront_parties
 		icon = GFX_goal_querfront
-		x = 3
-		y = 10
+		x = 5
+		y = 8
 		relative_position_id = PRE_start_focus
 		cost = 6		
 		prerequisite = { focus = PRE_pro_worker_indus }
@@ -470,8 +552,8 @@ focus_tree = {
 	focus = {
 		id = PRE_formalise_army_power
 		icon = GFX_goal_formalise_army
-		x = 5
-		y = 10
+		x = 7
+		y = 8
 		relative_position_id = PRE_start_focus
 		cost = 6		
 		prerequisite = { focus = PRE_shared_struggle }
@@ -483,8 +565,8 @@ focus_tree = {
 	focus = {
 		id = PRE_one_prussian_nation
 		icon = GFX_goal_one_prussian_nation
-		x = 4
-		y = 11
+		x = 6
+		y = 9
 		relative_position_id = PRE_start_focus
 		cost = 6		
 		prerequisite = { focus = PRE_integrate_querfront_parties }	
@@ -497,7 +579,7 @@ focus_tree = {
 	focus = {
 		id = PRE_nazi_victory_focus
 		icon = GFX_goal_goring_takes_power
-		x = 17
+		x = 15
 		y = 0
 		cost = 1		
 		available = {

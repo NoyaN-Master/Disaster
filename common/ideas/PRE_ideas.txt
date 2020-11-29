@@ -320,7 +320,7 @@ PRE_arbeit_macht_frei_idea = {
 			}
 		}
 PRE_the_eagle_rises_idea = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_arbeit_macht_frei_idea" }
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_the_eagle_rises_idea" }
 			picture = eagle_rises
 			modifier = {
 			army_morale_factor = 0.1
@@ -328,6 +328,31 @@ PRE_the_eagle_rises_idea = {
 			justify_war_goal_time = -0.5
 			mobilization_speed = 0.2
 			surrender_limit = 0.2
+			}
+		}
+PRE_empowered_abwehr = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_empowered_abwehr" }
+			#picture = 
+			modifier = {
+			political_power_factor = 0.06
+			ultranationalist_drift = 0.03
+			stability_factor = 0.04
+			operative_slot = 1
+		    intel_network_gain_factor = 0.14
+			resistance_growth = -0.09
+			}
+		}
+		
+PRE_empowered_abwehr_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_empowered_abwehr_2" }
+			#picture = 
+			modifier = {
+			political_power_factor = 0.09
+			ultranationalist_drift = 0.08
+			stability_factor = 0.10
+			operative_slot = 1
+		    intel_network_gain_factor = 0.22
+			resistance_growth = -0.14
 			}
 		}
 

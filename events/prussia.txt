@@ -463,12 +463,15 @@ country_event = { #start of querfront talks
 		hidden_effect = {
 		    if = {
 				limit = { has_country_flag = PRE_goring_crackdown_heavy }				
-				country_event = { id = pre.15 days = 5 }
+				country_event = { id = pre.15 days = 10 }
 			}
 			else_if = {
 				limit = { has_country_flag = PRE_goring_crackdown_light }				
-				country_event = { id = pre.16 days = 5 }
+				country_event = { id = pre.16 days = 10 }
 			}
+		}
+		hidden_effect = {
+		    country_event = { id = pre.31 days = 5 }
 		}
 	}
 }
@@ -618,6 +621,125 @@ country_event = { #gamer moment
 		add_popularity = {
 			ideology = conservative
 			popularity = -0.07
+		}
+	}
+}
+
+country_event = { #schleicher and oster
+	id = pre.29
+	title = pre.29.t
+	desc = pre.29.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.29.a
+		ai_chance = { factor = 1}
+		add_political_power = 30
+		add_popularity = {
+			ideology = ultranationalist
+			popularity = 0.03
+		}
+	}
+}
+
+country_event = { #schleicher's policies
+	id = pre.30
+	title = pre.30.t
+	desc = pre.30.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.30.a
+		ai_chance = { factor = 1}
+		add_political_power = 30
+		add_popularity = {
+			ideology = ultranationalist
+			popularity = 0.04
+		}
+		add_popularity = {
+			ideology = national_bolshevik
+			popularity = 0.04
+		}
+	}
+	option = {
+		name = pre.30.b
+		ai_chance = { factor = 1}
+		add_political_power = 30
+		add_popularity = {
+			ideology = ultranationalist
+			popularity = 0.04
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.04
+		}
+	}
+	option = {
+		name = pre.30.c
+		ai_chance = { factor = 1}
+		add_political_power = 30
+		add_popularity = {
+			ideology = ultranationalist
+			popularity = 0.04
+		}
+		add_popularity = {
+			ideology = autocratic
+			popularity = 0.04
+		}
+	}
+}
+country_event = { #dnvp and querfront
+	id = pre.31
+	title = pre.31.t
+	desc = pre.31.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.31.a
+		ai_chance = { factor = 1}
+		add_political_power = 5
+	}
+}
+
+country_event = { #dnvp joins the querfront
+	id = pre.32
+	title = pre.32.t
+	desc = pre.32.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.32.a
+		ai_chance = { factor = 1}
+		add_political_power = 20
+		add_popularity = {
+			ideology = ultranationalist
+			popularity = 0.06
+		}
+		add_popularity = {
+			ideology = autocratic
+			popularity = 0.03
+		}
+	}
+}
+
+country_event = { #goring gets what he fucking deserves
+	id = pre.33
+	title = pre.33.t
+	desc = pre.33.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.33.a
+		ai_chance = { factor = 1}
+		add_political_power = 50
+		add_popularity = {
+			ideology = revolutionary_nationalist
+			popularity = -0.06
 		}
 	}
 }
