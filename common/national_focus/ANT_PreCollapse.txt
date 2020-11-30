@@ -28,7 +28,7 @@ focus_tree = {
 	
 	focus = {
 		id = ANT_increase_presence
-		icon = GFX_goal_WRF_Yahya
+		icon = GFX_goal_ANT_increase_presence
 		x = 13
 		y = 2
 		cost = 2
@@ -111,7 +111,7 @@ focus_tree = {
 
 	focus = {
 		id = ANT_killigil
-		icon = GFX_goal_WRF_Yahya
+		icon = GFX_goal_ANT_Cowboy
 		x = 22
 		y = 5
 		cost = 2
@@ -201,7 +201,7 @@ focus_tree = {
 
 	focus = {
 		id = ANT_anti_anarchy
-		icon = GFX_goal_WRF_Yahya
+		icon = GFX_goal_ANT_fixing
 		x = 10
 		y = 4
 		cost = 2
@@ -218,7 +218,7 @@ focus_tree = {
 
 	focus = {
 		id = ANT_improve_security
-		icon = GFX_goal_WRF_Yahya
+		icon = GFX_goal_ANT_loicense_mate
 		x = 8
 		y = 5
 		cost = 2
@@ -286,7 +286,7 @@ focus_tree = {
 
 	focus = {
 		id = ANT_forming_gestapo
-		icon = GFX_goal_WRF_Yahya
+		icon = GFX_goal_ANT_Eyes_Everywhere
 		x = 10
 		y = 6
 		cost = 2
@@ -303,7 +303,7 @@ focus_tree = {
 
 	focus = {
 		id = ANT_death_squads
-		icon = GFX_goal_WRF_Yahya
+		icon = GFX_goal_ANT_young_Britain
 		x = 8
 		y = 6
 		cost = 2
@@ -409,7 +409,7 @@ focus_tree = {
 
 	focus = {
 		id = ANT_the_skull_marches
-		icon = GFX_goal_WRF_Yahya
+		icon = GFX_goal_skull_marchwest
 		x = 10
 		y = 11
 		cost = 1
