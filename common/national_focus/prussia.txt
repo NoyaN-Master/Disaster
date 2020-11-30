@@ -1085,7 +1085,20 @@ focus_tree = {
 	focus = {
 		id = PRE_establish_harzbrug_front
 		icon = GFX_goal_unknown
-		x = 0
+		x = 1
+		y = 1
+		relative_position_id = PRE_dnvp_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_dnvp_victory_focus}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_use_the_stalhelm
+		icon = GFX_goal_unknown
+		x = -1
 		y = 1
 		relative_position_id = PRE_dnvp_victory_focus
 		cost = 10		
@@ -1098,11 +1111,26 @@ focus_tree = {
 	focus = {
 		id = PRE_subdue_the_junkers
 		icon = GFX_goal_unknown
+		x = 0
+		y = 2
+		relative_position_id = PRE_dnvp_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_establish_harzbrug_front}
+		prerequisite = { focus = PRE_use_the_stalhelm }
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_entrench_the_hugenberg_press
+		icon = GFX_goal_unknown
 		x = -2
 		y = 2
 		relative_position_id = PRE_dnvp_victory_focus
 		cost = 10		
 		prerequisite = { focus = PRE_establish_harzbrug_front}
+		prerequisite = { focus = PRE_use_the_stalhelm }
 		
 		completion_reward = {
 		
@@ -1111,11 +1139,13 @@ focus_tree = {
 	focus = {
 		id = PRE_absorb_adnp
 		icon = GFX_goal_unknown
-		x = 0
-		y = 2
+		x = -1
+		y = 3
 		relative_position_id = PRE_dnvp_victory_focus
 		cost = 10		
-		prerequisite = { focus = PRE_establish_harzbrug_front}
+		prerequisite = { focus = PRE_entrench_the_hugenberg_press}
+		prerequisite = { focus = PRE_subdue_the_junkers}
+		prerequisite = { focus = PRE_purge_socialists}
 		
 		completion_reward = {
 		
@@ -1129,6 +1159,22 @@ focus_tree = {
 		relative_position_id = PRE_dnvp_victory_focus
 		cost = 10		
 		prerequisite = { focus = PRE_establish_harzbrug_front}
+		prerequisite = { focus = PRE_use_the_stalhelm }
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_new_constitution
+		icon = GFX_goal_unknown
+		x = 1
+		y = 3
+		relative_position_id = PRE_dnvp_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_entrench_the_hugenberg_press}
+		prerequisite = { focus = PRE_subdue_the_junkers}
+		prerequisite = { focus = PRE_purge_socialists}
 		
 		completion_reward = {
 		
@@ -1138,12 +1184,11 @@ focus_tree = {
 		id = PRE_restore_monarchy
 		icon = GFX_goal_unknown
 		x = 0
-		y = 3
+		y = 4
 		relative_position_id = PRE_dnvp_victory_focus
 		cost = 10		
-		prerequisite = { focus = PRE_subdue_the_junkers}
 		prerequisite = { focus = PRE_absorb_adnp}
-		prerequisite = { focus = PRE_purge_socialists}		
+		prerequisite = { focus = PRE_new_constitution}	
 		completion_reward = {
 		
 		}
@@ -1151,8 +1196,8 @@ focus_tree = {
 	focus = {
 		id = PRE_help_german_farmer
 		icon = GFX_goal_unknown
-		x = -3
-		y = 4
+		x = -2
+		y = 5
 		relative_position_id = PRE_dnvp_victory_focus
 		cost = 10		
 		prerequisite = { focus = PRE_restore_monarchy}
@@ -1164,8 +1209,8 @@ focus_tree = {
 	focus = {
 		id = PRE_fuhrerprinzip
 		icon = GFX_goal_unknown
-		x = -1
-		y = 4
+		x = 0
+		y = 5
 		relative_position_id = PRE_dnvp_victory_focus
 		cost = 10		
 		prerequisite = { focus = PRE_restore_monarchy}
@@ -1174,27 +1219,28 @@ focus_tree = {
 		
 		}
 	}
-		focus = {
+	focus = {
 		id = PRE_abolish_worker_unions
 		icon = GFX_goal_unknown
 		x = 1
-		y = 4
+		y = 6
 		relative_position_id = PRE_dnvp_victory_focus
 		cost = 10		
-		prerequisite = { focus = PRE_restore_monarchy}
+		prerequisite = { focus = PRE_work_with_industrialists}
+		prerequisite = { focus = PRE_fuhrerprinzip}
 		
 		completion_reward = {
 		
 		}
 	}
-		focus = {
+	focus = {
 		id = PRE_expand_state_industries
 		icon = GFX_goal_unknown
 		x = 3
-		y = 4
+		y = 6
 		relative_position_id = PRE_dnvp_victory_focus
 		cost = 10		
-		prerequisite = { focus = PRE_restore_monarchy}
+		prerequisite = { focus = PRE_work_with_industrialists}
 		
 		completion_reward = {
 		
@@ -1203,12 +1249,11 @@ focus_tree = {
 	focus = {
 		id = PRE_empower_german_farmers
 		icon = GFX_goal_unknown
-		x = -2
-		y = 5
+		x = -3
+		y = 6
 		relative_position_id = PRE_dnvp_victory_focus
 		cost = 10		
-		prerequisite = { focus = PRE_help_german_farmer}
-		prerequisite = { focus = PRE_fuhrerprinzip}		
+		prerequisite = { focus = PRE_help_german_farmer}	
 		completion_reward = {
 		
 		}
@@ -1216,12 +1261,12 @@ focus_tree = {
 	focus = {
 		id = PRE_traditionalist_curriculum
 		icon = GFX_goal_unknown
-		x = 0
-		y = 5
+		x = -1
+		y = 6
 		relative_position_id = PRE_dnvp_victory_focus
 		cost = 10		
 		prerequisite = { focus = PRE_fuhrerprinzip}
-		prerequisite = { focus = PRE_abolish_worker_unions}		
+		prerequisite = { focus = PRE_help_german_farmer}
 		completion_reward = {
 		
 		}
@@ -1233,8 +1278,20 @@ focus_tree = {
 		y = 5
 		relative_position_id = PRE_dnvp_victory_focus
 		cost = 10		
-		prerequisite = { focus = PRE_abolish_worker_unions}
-		prerequisite = { focus = PRE_expand_state_industries}		
+		prerequisite = { focus = PRE_restore_monarchy }		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_prussian_corporatism
+		icon = GFX_goal_unknown
+		x = 2
+		y = 7
+		relative_position_id = PRE_dnvp_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_abolish_worker_unions }	
+        prerequisite = { focus = PRE_expand_state_industries }			
 		completion_reward = {
 		
 		}
@@ -1242,8 +1299,8 @@ focus_tree = {
 	focus = {
 		id = PRE_establish_bismarck_youth
 		icon = GFX_goal_unknown
-		x = -1
-		y = 6
+		x = -2
+		y = 7
 		relative_position_id = PRE_dnvp_victory_focus
 		cost = 10		
 		prerequisite = { focus = PRE_empower_german_farmers}
@@ -1255,12 +1312,37 @@ focus_tree = {
 	focus = {
 		id = PRE_increase_military_budget
 		icon = GFX_goal_unknown
-		x = 1
-		y = 6
+		x = 0
+		y = 7
 		relative_position_id = PRE_dnvp_victory_focus
 		cost = 10		
-		prerequisite = { focus = PRE_traditionalist_curriculum}
-		prerequisite = { focus = PRE_work_with_industrialists}		
+		prerequisite = { focus = PRE_fuhrerprinzip }
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_order_and_discipline
+		icon = GFX_goal_unknown
+		x = -1
+		y = 8
+		relative_position_id = PRE_dnvp_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_increase_military_budget }
+		prerequisite = { focus = PRE_establish_bismarck_youth }
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_military_industrial_complex
+		icon = GFX_goal_unknown
+		x = 1
+		y = 8
+		relative_position_id = PRE_dnvp_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_increase_military_budget }
+		prerequisite = { focus = PRE_prussian_corporatism }
 		completion_reward = {
 		
 		}
@@ -1269,11 +1351,12 @@ focus_tree = {
 		id = PRE_heil_im_der_siegerkranz
 		icon = GFX_goal_unknown
 		x = 0
-		y = 7
+		y = 9
 		relative_position_id = PRE_dnvp_victory_focus
 		cost = 10		
-		prerequisite = { focus = PRE_establish_bismarck_youth}
-		prerequisite = { focus = PRE_increase_military_budget}		
+		prerequisite = { focus = PRE_order_and_discipline }
+		prerequisite = { focus = PRE_military_industrial_complex }
+		
 		completion_reward = {
 		
 		}
