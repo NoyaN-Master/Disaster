@@ -204,9 +204,14 @@ focus_tree = {
         select_effect = {
             country_event = { id = pre.7 days = 5 }		
         }			
-		cost = 7		
+		cost = 5		
 		completion_reward = {
 		    custom_effect_tooltip = PRE_junker_purge
+			add_stability = 0.04
+			add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = -0.06
+		    }
 		}
 	}
 	focus = {
@@ -229,7 +234,7 @@ focus_tree = {
 		hidden_effect = {
 		remove_ideas = PRE_querfront_negotiations_idea
 		}		
-		cost = 7		
+		cost = 5		
 		completion_reward = {
 		    	custom_effect_tooltip = PRE_querfront_negotiations
 				show_ideas_tooltip = PRE_querfront_negotiations_idea	
