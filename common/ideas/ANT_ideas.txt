@@ -14,6 +14,48 @@ ANT_Failed_State = {
 			consumer_goods_factor = 0.50
 			}
 		}
+ANT_Failed_State_ban_meeting = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Failed_State" }
+			picture = ANT_Failed_State
+			modifier = {
+			stability_factor = -0.65
+			production_factory_max_efficiency_factor = -0.9
+			conversion_cost_civ_to_mil_factor = 0.05
+			local_resources_factor = -0.08
+			consumer_goods_factor = 0.45
+			}
+		}
+ANT_Failed_State_forming_gestapo = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Failed_State" }
+			picture = ANT_Failed_State
+			modifier = {
+			stability_factor = -0.70
+			production_factory_max_efficiency_factor = -0.7
+			conversion_cost_civ_to_mil_factor = 0.05
+			local_resources_factor = -0.05
+			consumer_goods_factor = 0.30
+			}
+		}
+ANT_Failed_State_west = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Failed_State" }
+			picture = ANT_Failed_State
+			modifier = {
+			stability_factor = -0.75
+			production_factory_max_efficiency_factor = -0.5
+			local_resources_factor = -0.05
+			consumer_goods_factor = 0.30
+			}
+		}
+ANT_Failed_State_odds_event = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Failed_State" }
+			picture = ANT_Failed_State
+			modifier = {
+			stability_factor = -1.00
+			production_factory_max_efficiency_factor = -1.0
+			local_resources_factor = -1.0
+			consumer_goods_factor = 1.00
+			}
+		}								
 ANT_Anarchy = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
 			picture = ANT_Warlords_Emerging
@@ -26,6 +68,116 @@ ANT_Anarchy = {
 			weekly_manpower = -500	
 			}
 		}
+ANT_Anarchy_presence = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
+			picture = ANT_Warlords_Emerging
+			modifier = {
+			war_support_factor = -0.85
+			army_core_attack_factor = -0.45
+			army_core_defence_factor = -0.45
+			resistance_damage_to_garrison = 0.90
+			attrition = 0.5
+			weekly_manpower = -489	
+			}
+		}
+ANT_Anarchy_improve_sec = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
+			picture = ANT_Warlords_Emerging
+			modifier = {
+			war_support_factor = -0.70
+			army_core_attack_factor = -0.45
+			army_core_defence_factor = -0.45
+			resistance_damage_to_garrison = 0.75
+			attrition = 0.5
+			weekly_manpower = -440	
+			}
+		}
+ANT_Anarchy_death_squad = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
+			picture = ANT_Warlords_Emerging
+			modifier = {
+			war_support_factor = -0.50
+			army_core_attack_factor = -0.40
+			army_core_defence_factor = -0.40
+			resistance_damage_to_garrison = 0.60
+			attrition = 0.4
+			weekly_manpower = -440	
+			}
+		}
+ANT_Anarchy_operation_camel = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
+			picture = ANT_Warlords_Emerging
+			modifier = {
+			war_support_factor = -0.45
+			army_core_attack_factor = -0.35
+			army_core_defence_factor = -0.35
+			resistance_damage_to_garrison = 0.40
+			attrition = 0.5
+			weekly_manpower = -500	
+			}
+		}
+ANT_Anarchy_expand_army = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
+			picture = ANT_Warlords_Emerging
+			modifier = {
+			war_support_factor = -0.35
+			army_core_attack_factor = -0.24
+			army_core_defence_factor = -0.24
+			resistance_damage_to_garrison = 0.20
+			attrition = 0.3
+			weekly_manpower = -550
+			conscription_factor = 0.4
+			}
+		}
+ANT_Anarchy_end_milita = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
+			picture = ANT_Warlords_Emerging
+			modifier = {
+			war_support_factor = -0.20
+			army_core_attack_factor = -0.10
+			army_core_defence_factor = -0.10
+			resistance_damage_to_garrison = 0.10
+			attrition = 0.1
+			weekly_manpower = -600
+			conscription_factor = 0.3
+			}
+		}
+ANT_Anarchy_exodus = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
+			picture = ANT_Warlords_Emerging
+			modifier = {
+			war_support_factor = -0.15
+			army_core_attack_factor = -0.05
+			army_core_defence_factor = -0.05
+			attrition = -0.2
+			weekly_manpower = -700
+			conscription_factor = 0.2
+			}
+		}
+ANT_Anarchy_west = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
+			picture = ANT_Warlords_Emerging
+			modifier = {
+			war_support_factor = -0.20
+			army_core_attack_factor = 0.01
+			army_core_defence_factor = -0.05
+			attrition = -0.3
+			weekly_manpower = -740
+			conscription_factor = -0.2
+			}
+		}
+ANT_Anarchy_against_odds_event = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
+			picture = ANT_Warlords_Emerging
+			modifier = {
+			war_support_factor = -1.00
+			army_core_attack_factor = 0.20
+			army_core_defence_factor = 0.20
+			attrition = 10
+			weekly_manpower = -1200
+			conscription_factor = -0.34
+			}
+		}																							
 ANT_Warlords_Emerging = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
 			picture = ANT_Warlords_Emerging

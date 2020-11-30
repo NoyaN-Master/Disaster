@@ -45,6 +45,10 @@ focus_tree = {
 		hidden_effect = {
 		country_event = { id = ant.2 days = 3}	
 		}
+		swap_ideas = {
+    	remove_idea = ANT_Anarchy
+    	add_idea = ANT_Anarchy_presence
+		}
 		}
 	}
 	
@@ -211,8 +215,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = antianarchy_tt
+		custom_effect_tooltip = ANT_increase_presence_tt_2
+		custom_effect_tooltip = ant_army_influence_gain_tt
 		add_political_power = 100
+		hidden_effect = {
+		country_event = { id = ant.4 days = 1 }
+		}
 		}
 	}
 
@@ -228,8 +236,18 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = improve_security_tt
+		custom_effect_tooltip = ANT_increase_presence_tt_2
+		custom_effect_tooltip = ant_army_influence_gain_tt
+		custom_effect_tooltip = ant_kemal_influence_lose_tt
 		add_political_power = 100
+		hidden_effect = {
+		add_to_variable = { ANT.army_influence = 5 } 
+        subtract_from_variable = { ANT.kemalist_influence = 5 } 	
+		}
+		swap_ideas = {
+    	remove_idea = ANT_Anarchy_presence
+    	add_idea = ANT_Anarchy_improve_sec
+		}
 		}
 	}
 
@@ -245,8 +263,18 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = ban_meeting_tt
+		custom_effect_tooltip = ANT_increase_presence_tt_2
+		custom_effect_tooltip = ant_army_influence_gain_tt
+		custom_effect_tooltip = ant_nazim_influence_lose_tt
 		add_political_power = 100
+		hidden_effect = {
+		add_to_variable = { ANT.army_influence = 5 } 
+		subtract_from_variable = { ANT.nazim_influence = 5 } 
+		}
+		swap_ideas = {
+    	remove_idea = ANT_Failed_State
+    	add_idea = ANT_Failed_State_ban_meeting
+		}
 		}
 	}
 
@@ -257,13 +285,24 @@ focus_tree = {
 		y = 5
 		cost = 2
 		available_if_capitulated = yes
+		available = { has_completed_focus = ANT_operation_camel }
 		prerequisite = { focus = ANT_anti_anarchy }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = expand_army_tt
+		custom_effect_tooltip = ANT_increase_presence_tt_2
+		custom_effect_tooltip = ant_army_influence_gain_tt
+		custom_effect_tooltip = ant_kemal_influence_lose_tt
 		add_political_power = 100
+		hidden_effect = {
+		add_to_variable = { ANT.army_influence = 5 } 
+		subtract_from_variable = { ANT.kemalist_influence = 5 } 
+		}
+		swap_ideas = {
+    	remove_idea = ANT_Anarchy_operation_camel
+    	add_idea = ANT_Anarchy_expand_army
+		}
 		}
 	}
 
@@ -279,8 +318,18 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = common_army_tt
+		custom_effect_tooltip = ANT_increase_presence_tt_2
+		custom_effect_tooltip = ant_army_influence_gain_tt
+		custom_effect_tooltip = ant_kemal_influence_lose_tt
 		add_political_power = 100
+		hidden_effect = {
+		add_to_variable = { ANT.army_influence = 5 } 
+		subtract_from_variable = { ANT.kemalist_influence = 5 } 
+		}
+		swap_ideas = {
+    	remove_idea = ANT_Anarchy_expand_army
+    	add_idea = ANT_Anarchy_end_milita
+		}
 		}
 	}
 
@@ -297,7 +346,17 @@ focus_tree = {
 		}
 		completion_reward = {
 		custom_effect_tooltip = forming_gestapo_tt
+		custom_effect_tooltip = ant_army_influence_gain_tt
+		custom_effect_tooltip = ant_nazim_influence_lose_tt
 		add_political_power = 100
+		hidden_effect = {
+		add_to_variable = { ANT.army_influence = 5 } 
+		subtract_from_variable = { ANT.nazim_influence = 5 } 
+		}
+		swap_ideas = {
+    	remove_idea = ANT_Failed_State_ban_meeting
+    	add_idea = ANT_Failed_State_forming_gestapo
+		}
 		}
 	}
 
@@ -313,8 +372,18 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = death_squads_tt
+		custom_effect_tooltip = ANT_increase_presence_tt_2
+		custom_effect_tooltip = ant_army_influence_gain_tt
+		custom_effect_tooltip = ant_enver_influence_lose_tt
 		add_political_power = 100
+		hidden_effect = {
+		add_to_variable = { ANT.army_influence = 5 } 
+		subtract_from_variable = { ANT.enver_influence = 5 } 
+		}
+		swap_ideas = {
+    	remove_idea = ANT_Anarchy_improve_sec
+    	add_idea = ANT_Anarchy_death_squad
+		}
 		}
 	}
 
@@ -331,8 +400,18 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = operation_camel_tt
+		custom_effect_tooltip = ANT_increase_presence_tt_2
+		custom_effect_tooltip = ant_army_influence_gain_tt
+		custom_effect_tooltip = ant_enver_influence_lose_tt
 		add_political_power = 100
+		hidden_effect = {
+		add_to_variable = { ANT.army_influence = 5 } 
+		subtract_from_variable = { ANT.enver_influence = 5 } 
+		}
+		swap_ideas = {
+    	remove_idea = ANT_Anarchy_death_squad
+    	add_idea = ANT_Anarchy_operation_camel
+		}
 		}
 	}
 
@@ -349,8 +428,18 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = operation_exodus_tt
+		custom_effect_tooltip = ANT_increase_presence_tt_2
+		custom_effect_tooltip = ant_army_influence_gain_tt
+		custom_effect_tooltip = ant_kemal_influence_lose_tt
 		add_political_power = 100
+		hidden_effect = {
+		add_to_variable = { ANT.army_influence = 5 } 
+		subtract_from_variable = { ANT.kemalist_influence = 5 } 
+		}
+		swap_ideas = {
+    	remove_idea = ANT_Anarchy_operation_camel
+    	add_idea = ANT_Anarchy_exodus
+		}
 		}
 	}
 
@@ -368,8 +457,22 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = influence_in_west_tt
+		custom_effect_tooltip = ANT_increase_presence_tt_2
+		custom_effect_tooltip = ant_nazim_influence_lose_tt
+		custom_effect_tooltip = ant_army_influence_gain_tt
 		add_political_power = 100
+		hidden_effect = {
+		add_to_variable = { ANT.army_influence = 5 } 
+		subtract_from_variable = { ANT.nazim_influence = 5 } 
+		}
+		swap_ideas = {
+    	remove_idea = ANT_Anarchy_exodus
+    	add_idea = ANT_Anarchy_west
+		}
+		swap_ideas = {
+    	remove_idea = ANT_Failed_State_forming_gestapo
+    	add_idea = ANT_Failed_State_west
+		}
 		}
 	}
 
@@ -385,8 +488,13 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = influence_in_west_tt
+		custom_effect_tooltip = ant_cult_influence_lose_tt
+		custom_effect_tooltip = ant_army_influence_gain_tt
 		add_political_power = 100
+		hidden_effect = {
+		add_to_variable = { ANT.army_influence = 5 } 
+		subtract_from_variable = { ANT.cult_influence = 5 }  
+		}
 		}
 	}
 
@@ -402,8 +510,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = influence_in_west_tt
-		add_political_power = 100
+		custom_effect_tooltip = ANT_increase_presence_tt_2
+		custom_effect_tooltip = ant_army_influence_gain_tt
+		add_stability = 0.2
+		country_event = { id = ant.5 }
 		}
 	}
 
@@ -419,8 +529,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = influence_in_west_tt
-		add_political_power = 100
+		custom_effect_tooltip = this_is_endgame_tt
+		remove_idea = ANT_Warlords_Emerging
 		}
 	}
 

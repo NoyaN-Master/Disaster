@@ -4,7 +4,7 @@ ANT_warlord_favors_category = {
 	picture = Decision_picture_anatolia_influence
 	priority = 100
 	allowed = {
-		original_tag = ANT
+		has_country_flag = influence_active
 	}
 	visible = {
 		always = yes
