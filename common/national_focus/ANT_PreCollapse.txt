@@ -255,7 +255,7 @@ focus_tree = {
 		icon = GFX_goal_WRF_Yahya
 		x = 12
 		y = 5
-		cost = 3
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_anti_anarchy }
 		ai_will_do = {
@@ -378,7 +378,7 @@ focus_tree = {
 		icon = GFX_goal_WRF_Yahya
 		x = 10
 		y = 9
-		cost = 3
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_influence_in_west }
 		ai_will_do = {
@@ -395,7 +395,7 @@ focus_tree = {
 		icon = GFX_goal_WRF_Yahya
 		x = 10
 		y = 10
-		cost = 3
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_cleanup_in_south }
 		ai_will_do = {
