@@ -355,8 +355,22 @@ PRE_empowered_abwehr_2 = {
 			resistance_growth = -0.14
 			}
 		}
-
-
+PRE_harzbrug_front = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_harzbrug_front" }
+			picture = querfront_negotiations
+			modifier = {
+			stability_factor = 0.05
+			political_power_factor = 0.05			
+			}
+		}
+PRE_subdue_the_junkers_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_harzbrug_front" }
+			picture = formalise_army
+			modifier = {
+			political_power_factor = -0.25	
+			stability_weekly = 0.01			
+			}
+		}
 
 
 
