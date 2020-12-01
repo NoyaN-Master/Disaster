@@ -531,6 +531,7 @@ focus_tree = {
 		completion_reward = {
 		custom_effect_tooltip = this_is_endgame_tt
 		remove_idea = ANT_Warlords_Emerging
+		country_event = { id = ant.6 }
 		}
 	}
 
