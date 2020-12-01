@@ -90,24 +90,49 @@ country_event = { #Elections
 		name = pre.5.a
 		ai_chance = { factor = 1}
 		set_country_flag = PRE_nazi_victory
-		set_ruling_party = revolutionary_nationalist
+		set_politics = {
+			ruling_party = revolutionary_nationalist
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = revolutionary_nationalist
+			popularity = 0.1
+		}
 	}
 	option = { #DNVP
 		name = pre.5.b
 		ai_chance = { factor = 1}
 		set_country_flag = PRE_dnvp_victory
-		set_ruling_party = autocratic
+		set_politics = {
+			ruling_party = autocratic
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = autocratic
+			popularity = 0.1
+		}
 	}
 	option = { #Libtard victory
 		name = pre.5.c
 		ai_chance = { factor = 1}
 		set_country_flag = PRE_liberal_victory
-		set_ruling_party = liberal
+		set_politics = {
+			ruling_party = liberal
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.1
+		}
 	}
 	option = { #Junkers
 		name = pre.5.d
 		ai_chance = { factor = 1}
 		set_country_flag = PRE_junker_victory
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.1
+		}
 	}
 }
 country_event = { #Rigged Elections
