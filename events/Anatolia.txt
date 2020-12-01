@@ -147,3 +147,23 @@ country_event = { #gamers fuck up
     }
 }
 
+country_event = { #collapse-left side
+    id = ant.6
+    title = ant.6.t
+    desc = ant.6.d
+    fire_only_once = yes
+    picture = GFX_evt_Picture
+    is_triggered_only = yes
+
+    option = { 
+        name = ant.6.a 
+        release = ESO
+        release = OTH
+        release = KLG
+        release = SKL
+        release = ANK
+        release = IZM
+        SKL = { change_tag_from = ANT }
+    }
+}
+

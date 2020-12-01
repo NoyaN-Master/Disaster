@@ -1,4 +1,4 @@
-capital = 
+capital = 356
 oob = ""
 
 # Starting tech
@@ -32,7 +32,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Jack 'Başbug' Churchill"
 	#desc = "OTH_John_Langenhoven_desc"
-	picture = "OTH_John_Langenhoven.tga"
+	picture = "Portrait_OTH_Mad_Jack.tga"
 	expire = "2020.1.1"
 	ideology = mercenary_state
 	traits = {
