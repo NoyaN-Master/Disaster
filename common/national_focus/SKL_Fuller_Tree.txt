@@ -1,0 +1,436 @@
+focus_tree = {
+	id = Fuller_Tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SKL
+		}
+	}
+	#Focus for Fuller's Doctrines
+	focus = {
+		id = SKL_fullers_doctrines
+		icon = GFX_goal_unknown
+		x = 16
+		y = 8
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SKL_war_plan_silver }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Iron Monster
+	focus = {
+		id = SKL_the_iron_monster
+		icon = GFX_goal_unknown
+		x = 16
+		y = 2
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SKL_we_will_never_fall }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Crack The Arsenals
+	focus = {
+		id = SKL_crack_the_arsenals
+		icon = GFX_goal_unknown
+		x = 13
+		y = 2
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SKL_we_will_never_fall }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for We Will Never Fall!
+	focus = {
+		id = SKL_we_will_never_fall
+		icon = GFX_goal_unknown
+		x = 18
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		load_oob = "SKL_1936"
+		}
+
+	}
+
+	#Focus for Recruit Volunteers
+	focus = {
+		id = SKL_recruit_volunteers
+		icon = GFX_goal_unknown
+		x = 19
+		y = 2
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SKL_we_will_never_fall }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Çorum Telegram
+	focus = {
+		id = SKL_the_orum_telegram
+		icon = GFX_goal_unknown
+		x = 23
+		y = 2
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SKL_we_will_never_fall }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Break The Sun
+	focus = {
+		id = SKL_break_the_sun
+		icon = GFX_goal_unknown
+		x = 18
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SKL_the_iron_monster 
+		}
+		prerequisite = { 
+			focus = SKL_crack_the_arsenals 
+		}
+		prerequisite = { 
+			focus = SKL_recruit_volunteers 
+		}
+		prerequisite = { 
+			focus = SKL_the_orum_telegram 
+		}
+		prerequisite = { 
+			focus = SKL_we_will_never_fall 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Iron Bogatyr
+	focus = {
+		id = SKL_iron_bogatyr
+		icon = GFX_goal_unknown
+		x = 16
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SKL_break_the_sun }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Speed Of Light
+	focus = {
+		id = SKL_speed_of_light
+		icon = GFX_goal_unknown
+		x = 13
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SKL_break_the_sun }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Investigate The Cult
+	focus = {
+		id = SKL_investigate_the_cult
+		icon = GFX_goal_unknown
+		x = 19
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SKL_break_the_sun }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Food Trafficking
+	focus = {
+		id = SKL_food_trafficking
+		icon = GFX_goal_unknown
+		x = 23
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SKL_break_the_sun }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Deal With The Gallowglass
+	focus = {
+		id = SKL_deal_with_the_gallowglass
+		icon = GFX_goal_unknown
+		x = 18
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SKL_speed_of_light 
+		}
+		prerequisite = { 
+			focus = SKL_iron_bogatyr 
+		}
+		prerequisite = { 
+			focus = SKL_investigate_the_cult 
+		}
+		prerequisite = { 
+			focus = SKL_food_trafficking 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Recruit Honorary Turks
+	focus = {
+		id = SKL_recruit_honorary_turks
+		icon = GFX_goal_unknown
+		x = 13
+		y = 6
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SKL_deal_with_the_gallowglass }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Modern Jannisaries
+	focus = {
+		id = SKL_the_modern_jannisaries
+		icon = GFX_goal_unknown
+		x = 16
+		y = 6
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SKL_deal_with_the_gallowglass }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Meeting With The Pasha
+	focus = {
+		id = SKL_a_meeting_with_the_pasha
+		icon = GFX_goal_unknown
+		x = 20
+		y = 6
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SKL_deal_with_the_gallowglass }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Raid The Motherbase
+	focus = {
+		id = SKL_raid_the_motherbase
+		icon = GFX_goal_unknown
+		x = 23
+		y = 6
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SKL_deal_with_the_gallowglass }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for War Plan Silver
+	focus = {
+		id = SKL_war_plan_silver
+		icon = GFX_goal_unknown
+		x = 18
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SKL_raid_the_motherbase 
+		}
+		prerequisite = { 
+			focus = SKL_a_meeting_with_the_pasha 
+		}
+		prerequisite = { 
+			focus = SKL_the_modern_jannisaries 
+		}
+		prerequisite = { 
+			focus = SKL_recruit_honorary_turks 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Consolidate The Factories
+	focus = {
+		id = SKL_consolidate_the_factories
+		icon = GFX_goal_unknown
+		x = 13
+		y = 8
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SKL_war_plan_silver }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Deal With The Cowboy
+	focus = {
+		id = SKL_deal_with_the_cowboy
+		icon = GFX_goal_unknown
+		x = 20
+		y = 8
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SKL_war_plan_silver }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Absorb The Soldiartists
+	focus = {
+		id = SKL_absorb_the_soldiartists
+		icon = GFX_goal_unknown
+		x = 24
+		y = 8
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SKL_war_plan_silver }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for End The Utopiates
+	focus = {
+		id = SKL_end_the_utopiates
+		icon = GFX_goal_unknown
+		x = 18
+		y = 9
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SKL_absorb_the_soldiartists 
+		}
+		prerequisite = { 
+			focus = SKL_deal_with_the_cowboy 
+		}
+		prerequisite = { 
+			focus = SKL_consolidate_the_factories 
+		}
+		prerequisite = { 
+			focus = SKL_fullers_doctrines 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Rehabilate The Prole
+	focus = {
+		id = SKL_rehabilate_the_prole
+		icon = GFX_goal_unknown
+		x = 13
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SKL_end_the_utopiates }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Invest In Zonguldak
+	focus = {
+		id = SKL_invest_in_zonguldak
+		icon = GFX_goal_unknown
+		x = 16
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SKL_end_the_utopiates }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Fate Of The Intellectuals
+	focus = {
+		id = SKL_fate_of_the_intellectuals
+		icon = GFX_goal_unknown
+		x = 20
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SKL_end_the_utopiates }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Military Commisars
+	focus = {
+		id = SKL_military_commisars
+		icon = GFX_goal_unknown
+		x = 24
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SKL_end_the_utopiates }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for And Justice For All
+	focus = {
+		id = SKL_and_justice_for_all
+		icon = GFX_goal_unknown
+		x = 18
+		y = 11
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SKL_rehabilate_the_prole 
+		}
+		prerequisite = { 
+			focus = SKL_invest_in_zonguldak 
+		}
+		prerequisite = { 
+			focus = SKL_fate_of_the_intellectuals 
+		}
+		prerequisite = { 
+			focus = SKL_military_commisars 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }

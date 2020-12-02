@@ -1,0 +1,99 @@
+division_template = { #infantry
+	name = "The Skulltroops"		
+	division_names_group = ENG_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+       	artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = { #useless
+	name = "Bandit Brigades"
+	division_names_group = ENG_CAV_02
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+        cavalry = { x = 0 y = 3 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+}
+
+division_template = { #tanks
+	name = "Tank Brigades"
+	division_names_group = ENG_ARM_02
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+        light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }
+        motorized = { x = 2 y = 1 }
+	}
+	support = {
+        mot_recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division= {	
+		name = "Skull Brigade"
+		location = 11897  
+		division_template = "The Skulltroops"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+
+    division= {	
+		name = "Khan Brigade"
+		location = 11839  
+		division_template = "The Skulltroops"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}
+
+    division= {	
+		name = "Baphomet Brigade"
+		location = 11839  
+		division_template = "Topcu Piyadeler"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+
+    division= {	
+		name = "Fuller's Own"
+		location = 6920   
+		division_template = "Tank Brigades"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+
+    division= {	
+		name = "Anatolian Tigers"
+		location = 9871  
+		division_template = "Tank Brigades"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+
+	}

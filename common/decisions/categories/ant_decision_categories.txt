@@ -11,3 +11,26 @@ ANT_warlord_favors_category = {
 	}
 	visible_when_empty = yes
 }
+
+ANT_unification_category = {
+	icon = GFX_decision_category_generic_political_actions
+
+	picture = Decision_picture_anatolia_influence
+	priority = 100
+	allowed = {
+		if = {
+    	limit = {
+        original_tag = SKL
+		original_tag = IZM
+		original_tag = ANK
+		original_tag = KLG
+		original_tag = OTH
+		original_tag = ESO
+    	} 
+}
+	}
+	visible = {
+		always = yes
+	}
+	visible_when_empty = no
+}
