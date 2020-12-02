@@ -13,7 +13,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 16
 		y = 8
-		cost = 10
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = SKL_war_plan_silver }
 		ai_will_do = {
@@ -27,7 +27,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 16
 		y = 2
-		cost = 10
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = SKL_we_will_never_fall }
 		ai_will_do = {
@@ -41,7 +41,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 13
 		y = 2
-		cost = 10
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = SKL_we_will_never_fall }
 		ai_will_do = {
@@ -55,11 +55,15 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 18
 		y = 1
-		cost = 10
+		cost = 1
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		load_oob = "SKL_1936"
+		}
+
 	}
 
 	#Focus for Recruit Volunteers
@@ -68,7 +72,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 19
 		y = 2
-		cost = 10
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = SKL_we_will_never_fall }
 		ai_will_do = {
@@ -82,7 +86,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 23
 		y = 2
-		cost = 10
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = SKL_we_will_never_fall }
 		ai_will_do = {
@@ -96,7 +100,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 18
 		y = 3
-		cost = 10
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = SKL_the_iron_monster 
@@ -124,7 +128,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 16
 		y = 4
-		cost = 10
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = SKL_break_the_sun }
 		ai_will_do = {
@@ -138,7 +142,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 13
 		y = 4
-		cost = 10
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = SKL_break_the_sun }
 		ai_will_do = {
@@ -152,7 +156,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 19
 		y = 4
-		cost = 10
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = SKL_break_the_sun }
 		ai_will_do = {
@@ -166,7 +170,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 23
 		y = 4
-		cost = 10
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = SKL_break_the_sun }
 		ai_will_do = {
@@ -180,7 +184,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 18
 		y = 5
-		cost = 10
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = SKL_speed_of_light 
@@ -205,7 +209,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 13
 		y = 6
-		cost = 10
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = SKL_deal_with_the_gallowglass }
 		ai_will_do = {
@@ -219,7 +223,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 16
 		y = 6
-		cost = 10
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = SKL_deal_with_the_gallowglass }
 		ai_will_do = {
@@ -233,7 +237,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 20
 		y = 6
-		cost = 10
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = SKL_deal_with_the_gallowglass }
 		ai_will_do = {
@@ -247,7 +251,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 23
 		y = 6
-		cost = 10
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = SKL_deal_with_the_gallowglass }
 		ai_will_do = {
@@ -261,7 +265,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 18
 		y = 7
-		cost = 10
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = SKL_raid_the_motherbase 
@@ -286,7 +290,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 13
 		y = 8
-		cost = 10
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = SKL_war_plan_silver }
 		ai_will_do = {
@@ -300,7 +304,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 20
 		y = 8
-		cost = 10
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = SKL_war_plan_silver }
 		ai_will_do = {
@@ -314,7 +318,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 24
 		y = 8
-		cost = 10
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = SKL_war_plan_silver }
 		ai_will_do = {
@@ -328,7 +332,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 18
 		y = 9
-		cost = 10
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = SKL_absorb_the_soldiartists 
@@ -409,7 +413,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 18
 		y = 11
-		cost = 10
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = SKL_rehabilate_the_prole 
