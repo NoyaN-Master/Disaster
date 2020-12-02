@@ -1162,12 +1162,12 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = PRE_dnvp_victory_focus
-		cost = 10		
+		cost = 5		
 		prerequisite = { focus = PRE_establish_harzbrug_front}
 		prerequisite = { focus = PRE_use_the_stalhelm }
 		
 		completion_reward = {
-		 
+		add_ideas = PRE_socialist_purge
 		}
 	}
 	focus = {
@@ -1182,7 +1182,10 @@ focus_tree = {
 		prerequisite = { focus = PRE_purge_socialists}
 		
 		completion_reward = {
-		
+		add_timed_idea = {
+		idea = PRE_outmaneuvring_goring
+		days = 50
+		}
 		}
 	}
 
@@ -1198,7 +1201,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_purge_socialists}
 		
 		completion_reward = {
-		
+		add_ideas = PRE_solid_constitution
 		}
 	}
 	focus = {
@@ -1211,7 +1214,23 @@ focus_tree = {
 		prerequisite = { focus = PRE_absorb_adnp}
 		prerequisite = { focus = PRE_new_constitution}	
 		completion_reward = {
-		
+		add_political_power = 100
+		add_stability = 0.05
+		retire_ideology_leader = autocratic
+			create_country_leader = {
+	            name = "Friedrich Wilhelm III"
+	            desc = "PRE_Wilhelm _III_desc"
+	            picture = "PRE_Wilhelm _III.tga"
+	            expire = "2020.1.1"
+	            ideology = autocratic_subideology
+	            traits = {
+		            #
+	            }
+            }
+		add_popularity = {
+			ideology = autocratic
+			popularity = 0.1
+		}
 		}
 	}
 	focus = {

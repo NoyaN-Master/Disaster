@@ -364,16 +364,44 @@ PRE_harzbrug_front = {
 			}
 		}
 PRE_subdue_the_junkers_idea = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_harzbrug_front" }
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_subdue_the_junkers_idea" }
 			picture = formalise_army
 			modifier = {
 			political_power_factor = -0.25	
 			stability_weekly = 0.01			
 			}
 		}
-
-
-
+PRE_socialist_purge = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_socialist_purge" }
+			#picture = 
+			modifier = {
+			national_bolshevik_drift = -0.05
+			authoritarian_socialist_drift = -0.05
+			libertarian_socialist_drift = -0.05
+			social_democrat_drift = -0.05
+			liberal_drift = -0.05
+			stability_factor = 0.1
+			}
+		}
+PRE_outmaneuvring_goring = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_outmaneuvring_goring" }
+			#picture = 
+			modifier = {
+			revolutionary_nationalist_drift = -0.50
+			autocratic_drift = 0.50
+			stability_factor = 0.1
+			}
+		}
+PRE_solid_constitution = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_solid_constitution" }
+			#picture = 
+			modifier = {
+			production_factory_max_efficiency_factor = 0.03
+			line_change_production_efficiency_factor = 0.02
+			production_speed_buildings_factor = 0.05
+			stability_factor = 0.1
+			}
+		}
 
 
 	}
