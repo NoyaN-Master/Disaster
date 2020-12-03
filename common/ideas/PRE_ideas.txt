@@ -402,7 +402,56 @@ PRE_solid_constitution = {
 			stability_factor = 0.1
 			}
 		}
+PRE_help_german_farmer_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_help_german_farmer_idea" }
+			#picture = 
+			modifier = {
+			production_speed_buildings_factor = 0.05
+			supply_consumption_factor = -0.10
+			local_building_slots_factor = 0.1
+			}
+		}
 
-
+PRE_help_german_farmer_idea2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_help_german_farmer_idea2" }
+			#picture = 
+			modifier = {
+			production_speed_buildings_factor = 0.05
+			supply_consumption_factor = -0.15
+			local_building_slots_factor = 0.2
+			conscription_factor = 0.05
+			}
+		}
+PRE_industrialist_support = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_help_german_farmer_idea2" }
+			#picture = 
+			modifier = {
+			local_building_slots_factor = 0.05
+			local_resources_factor = 0.10
+			industrial_capacity_factory = 0.05
+			}
+		}
+PRE_industrialist_support2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_help_german_farmer_idea2" }
+			#picture = 
+			modifier = {
+			local_building_slots_factor = 0.05
+			local_resources_factor = 0.15
+			industrial_capacity_factory = 0.1
+			conversion_cost_civ_to_mil_factor = -0.2
+			consumer_goods_factor = -0.03
+			}
+		}
+PRE_industrialist_support3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_help_german_farmer_idea2" }
+			#picture = 
+			modifier = {
+			local_building_slots_factor = 0.1
+			local_resources_factor = 0.2
+			industrial_capacity_factory = 0.15
+			conversion_cost_civ_to_mil_factor = -0.2
+			consumer_goods_factor = -0.06
+			}
+		}
 	}
 }

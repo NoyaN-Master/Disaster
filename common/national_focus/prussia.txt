@@ -1243,7 +1243,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_restore_monarchy}
 		
 		completion_reward = {
-		
+		add_ideas = PRE_help_german_farmer_idea
 		}
 	}
 	focus = {
@@ -1256,7 +1256,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_restore_monarchy}
 		
 		completion_reward = {
-		
+		add_country_leader_trait = PRE_fuhrer_prinzip		
 		}
 	}
 	focus = {
@@ -1270,7 +1270,10 @@ focus_tree = {
 		prerequisite = { focus = PRE_fuhrerprinzip}
 		
 		completion_reward = {
-		
+		swap_ideas = {
+			add_idea = PRE_industrialist_support2
+			remove_idea = PRE_industrialist_support
+		}		
 		}
 	}
 	focus = {
@@ -1283,7 +1286,51 @@ focus_tree = {
 		prerequisite = { focus = PRE_work_with_industrialists}
 		
 		completion_reward = {
-		
+			random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+			random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}	
+			random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}			
 		}
 	}
 	focus = {
@@ -1295,7 +1342,10 @@ focus_tree = {
 		cost = 10		
 		prerequisite = { focus = PRE_help_german_farmer}	
 		completion_reward = {
-		
+		swap_ideas = {
+			add_idea = PRE_help_german_farmer_idea2
+			remove_idea = PRE_help_german_farmer_idea
+		}		
 		}
 	}	
 	focus = {
@@ -1308,7 +1358,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_fuhrerprinzip}
 		prerequisite = { focus = PRE_help_german_farmer}
 		completion_reward = {
-		
+		add_research_slot = 1
 		}
 	}	
 	focus = {
@@ -1320,7 +1370,7 @@ focus_tree = {
 		cost = 10		
 		prerequisite = { focus = PRE_restore_monarchy }		
 		completion_reward = {
-		
+		add_ideas = PRE_industrialist_support
 		}
 	}
 	focus = {
@@ -1333,7 +1383,10 @@ focus_tree = {
 		prerequisite = { focus = PRE_abolish_worker_unions }	
         prerequisite = { focus = PRE_expand_state_industries }			
 		completion_reward = {
-		
+		swap_ideas = {
+			add_idea = PRE_industrialist_support3
+			remove_idea = PRE_industrialist_support2
+		}			
 		}
 	}
 	focus = {
@@ -1346,7 +1399,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_empower_german_farmers}
 		prerequisite = { focus = PRE_traditionalist_curriculum}		
 		completion_reward = {
-		
+		add_ideas = PRE_german_youth_league_idea
 		}
 	}
 	focus = {
