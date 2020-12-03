@@ -1099,11 +1099,8 @@ focus_tree = {
 		prerequisite = { focus = PRE_dnvp_victory_focus}
 		
 		completion_reward = {
-		remove_ideas = PRE_political_radicalisation			
-		swap_ideas = {
-			add_idea = PRE_ongoing_protests
-			remove_idea = PRE_widespread_protests
-		}	
+		remove_ideas = PRE_political_radicalisation		
+		remove_ideas = PRE_ongoing_protests
 		}
 	}	
 	focus = {
@@ -1239,7 +1236,7 @@ focus_tree = {
 		x = -2
 		y = 5
 		relative_position_id = PRE_dnvp_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_restore_monarchy}
 		
 		completion_reward = {
@@ -1252,7 +1249,7 @@ focus_tree = {
 		x = 0
 		y = 5
 		relative_position_id = PRE_dnvp_victory_focus
-		cost = 10		
+		cost = 5		
 		prerequisite = { focus = PRE_restore_monarchy}
 		
 		completion_reward = {
@@ -1265,7 +1262,7 @@ focus_tree = {
 		x = 1
 		y = 6
 		relative_position_id = PRE_dnvp_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_work_with_industrialists}
 		prerequisite = { focus = PRE_fuhrerprinzip}
 		
@@ -1282,7 +1279,7 @@ focus_tree = {
 		x = 3
 		y = 6
 		relative_position_id = PRE_dnvp_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_work_with_industrialists}
 		
 		completion_reward = {
@@ -1339,7 +1336,7 @@ focus_tree = {
 		x = -3
 		y = 6
 		relative_position_id = PRE_dnvp_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_help_german_farmer}	
 		completion_reward = {
 		swap_ideas = {
@@ -1367,7 +1364,7 @@ focus_tree = {
 		x = 2
 		y = 5
 		relative_position_id = PRE_dnvp_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_restore_monarchy }		
 		completion_reward = {
 		add_ideas = PRE_industrialist_support
@@ -1379,7 +1376,7 @@ focus_tree = {
 		x = 2
 		y = 7
 		relative_position_id = PRE_dnvp_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_abolish_worker_unions }	
         prerequisite = { focus = PRE_expand_state_industries }			
 		completion_reward = {
@@ -1395,7 +1392,7 @@ focus_tree = {
 		x = -2
 		y = 7
 		relative_position_id = PRE_dnvp_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_empower_german_farmers}
 		prerequisite = { focus = PRE_traditionalist_curriculum}		
 		completion_reward = {
@@ -1411,7 +1408,7 @@ focus_tree = {
 		cost = 10		
 		prerequisite = { focus = PRE_fuhrerprinzip }
 		completion_reward = {
-		
+		add_ideas = PRE_increase_military_budget_idea
 		}
 	}
 	focus = {
@@ -1425,6 +1422,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_establish_bismarck_youth }
 		completion_reward = {
 		
+		add_ideas = PRE_order_and_discipline
 		}
 	}
 	focus = {
@@ -1437,7 +1435,10 @@ focus_tree = {
 		prerequisite = { focus = PRE_increase_military_budget }
 		prerequisite = { focus = PRE_prussian_corporatism }
 		completion_reward = {
-		
+		swap_ideas = {
+			add_idea = PRE_industrialist_support4
+			remove_idea = PRE_industrialist_support3
+		}			
 		}
 	}
 	focus = {
@@ -1451,7 +1452,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_military_industrial_complex }
 		
 		completion_reward = {
-		
+		add_country_leader_trait = PRE_heil_im_der_siegerkranz
 		}
 	}	
 ######################## liberal path

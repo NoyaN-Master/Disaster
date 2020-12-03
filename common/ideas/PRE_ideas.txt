@@ -423,7 +423,7 @@ PRE_help_german_farmer_idea2 = {
 			}
 		}
 PRE_industrialist_support = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_help_german_farmer_idea2" }
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_industrialist_support" }
 			#picture = 
 			modifier = {
 			local_building_slots_factor = 0.05
@@ -432,7 +432,7 @@ PRE_industrialist_support = {
 			}
 		}
 PRE_industrialist_support2 = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_help_german_farmer_idea2" }
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_industrialist_support2" }
 			#picture = 
 			modifier = {
 			local_building_slots_factor = 0.05
@@ -443,14 +443,49 @@ PRE_industrialist_support2 = {
 			}
 		}
 PRE_industrialist_support3 = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_help_german_farmer_idea2" }
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_industrialist_support3" }
 			#picture = 
 			modifier = {
 			local_building_slots_factor = 0.1
 			local_resources_factor = 0.2
 			industrial_capacity_factory = 0.15
 			conversion_cost_civ_to_mil_factor = -0.2
-			consumer_goods_factor = -0.06
+			consumer_goods_factor = -0.05
+			}
+		}
+PRE_industrialist_support4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_industrialist_support4" }
+			#picture = 
+			modifier = {
+			local_building_slots_factor = 0.1
+			local_resources_factor = 0.2
+			industrial_capacity_factory = 0.15
+			conversion_cost_civ_to_mil_factor = -0.2
+			consumer_goods_factor = -0.1
+			production_speed_industrial_complex_factor = 0.15
+			production_speed_arms_factory_factor = 0.05
+			}
+		}
+
+PRE_increase_military_budget_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_increase_military_budget_idea" }
+			#picture = 
+			modifier = {
+			consumer_goods_factor = 0.05
+			production_speed_arms_factory_factor = 0.15
+			local_resources_factor = 0.10
+			industry_repair_factor = 0.2
+			political_power_gain = -0.2
+			}
+		}
+PRE_order_and_discipline = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_order_and_discipline" }
+			#picture = 
+			modifier = {
+			army_org_factor = 0.05
+			army_org = 5
+			land_reinforce_rate = 0.05
+			attrition = -0.05
 			}
 		}
 	}

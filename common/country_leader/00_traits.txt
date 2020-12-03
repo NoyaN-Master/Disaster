@@ -1,5 +1,14 @@
 leader_traits = {
 
+	PRE_heil_im_der_siegerkranz = {
+	    random = no
+	surrender_limit = 0.2
+	stability_weekly = 0.001
+	war_support_weekly = 0.001
+	opinion_gain_monthly_factor = 0.2
+	}	 
+	
+	
 	PRE_fuhrer_prinzip = {
 	    random = no
 		army_core_defence_factor = 0.1
