@@ -7,6 +7,7 @@ focus_tree = {
 			tag = ANT
 		}
 		}
+		continuous_focus_position = { x = 100 y = 5000000 }
 	default = no	
 	focus = {
 		id = ANT_dreams_broken
@@ -54,7 +55,7 @@ focus_tree = {
 	
 	focus = {
 		id = ANT_fight_anarchy
-		icon = GFX_goal_WRF_Yahya
+		icon = GFX_goal_ANT_fixing
 		x = 10
 		y = 3
 		cost = 2
@@ -75,7 +76,7 @@ focus_tree = {
 	focus = {
 		id = ANT_political_warfare
 		icon = GFX_goal_WRF_Yahya
-		x = 18
+		x = 24
 		y = 3
 		cost = 4
 		available_if_capitulated = yes
@@ -99,7 +100,7 @@ focus_tree = {
 	focus = {
 		id = ANT_taking_a_side
 		icon = GFX_goal_WRF_Yahya
-		x = 18
+		x = 24
 		y = 4
 		cost = 4
 		available_if_capitulated = yes
@@ -116,7 +117,7 @@ focus_tree = {
 	focus = {
 		id = ANT_killigil
 		icon = GFX_goal_ANT_Cowboy
-		x = 22
+		x = 26
 		y = 5
 		cost = 2
 		available_if_capitulated = yes
@@ -134,7 +135,7 @@ focus_tree = {
 	focus = {
 		id = ANT_hikmet
 		icon = GFX_goal_WRF_Yahya
-		x = 14
+		x = 24
 		y = 5
 		cost = 2
 		available_if_capitulated = yes
@@ -152,7 +153,7 @@ focus_tree = {
 	focus = {
 		id = ANT_orbay
 		icon = GFX_goal_WRF_Yahya
-		x = 16
+		x = 22
 		y = 5
 		cost = 2
 		available_if_capitulated = yes
@@ -170,7 +171,7 @@ focus_tree = {
 	focus = {
 		id = ANT_mercenaries
 		icon = GFX_goal_WRF_Yahya
-		x = 18
+		x = 28
 		y = 5
 		cost = 2
 		available_if_capitulated = yes
@@ -207,7 +208,7 @@ focus_tree = {
 		id = ANT_anti_anarchy
 		icon = GFX_goal_ANT_fixing
 		x = 10
-		y = 4
+		y = 5
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_fight_anarchy }
@@ -227,8 +228,8 @@ focus_tree = {
 	focus = {
 		id = ANT_improve_security
 		icon = GFX_goal_ANT_loicense_mate
-		x = 8
-		y = 5
+		x = 6
+		y = 6
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_anti_anarchy }
@@ -253,9 +254,9 @@ focus_tree = {
 
 	focus = {
 		id = ANT_ban_meeting
-		icon = GFX_goal_WRF_Yahya
+		icon = GFX_goal_ANT_SOCDIC
 		x = 10
-		y = 5
+		y = 6
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_anti_anarchy }
@@ -280,9 +281,9 @@ focus_tree = {
 
 	focus = {
 		id = ANT_expand_army
-		icon = GFX_goal_WRF_Yahya
-		x = 12
-		y = 5
+		icon = GFX_goal_ANT_Expand_Army
+		x = 14
+		y = 6
 		cost = 2
 		available_if_capitulated = yes
 		available = { has_completed_focus = ANT_operation_camel }
@@ -308,9 +309,9 @@ focus_tree = {
 
 	focus = {
 		id = ANT_disband_common_army
-		icon = GFX_goal_WRF_Yahya
+		icon = GFX_goal_ANT_mercenaries
 		x = 12
-		y = 6
+		y = 7
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_expand_army }
@@ -337,7 +338,7 @@ focus_tree = {
 		id = ANT_forming_gestapo
 		icon = GFX_goal_ANT_Eyes_Everywhere
 		x = 10
-		y = 6
+		y = 8
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_ban_meeting }
@@ -364,7 +365,7 @@ focus_tree = {
 		id = ANT_death_squads
 		icon = GFX_goal_ANT_young_Britain
 		x = 8
-		y = 6
+		y = 7
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_improve_security }
@@ -389,9 +390,9 @@ focus_tree = {
 
 	focus = {
 		id = ANT_operation_camel
-		icon = GFX_goal_WRF_Yahya
-		x = 9
-		y = 7
+		icon = GFX_goal_ANT_Camel
+		x = 6
+		y = 9
 		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_death_squads }
@@ -417,9 +418,9 @@ focus_tree = {
 
 	focus = {
 		id = ANT_operation_exodus
-		icon = GFX_goal_WRF_Yahya
-		x = 11
-		y = 7
+		icon = GFX_goal_ANT_Exodus
+		x = 14
+		y = 9
 		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_disband_common_army }
@@ -445,9 +446,9 @@ focus_tree = {
 
 	focus = {
 		id = ANT_influence_in_west
-		icon = GFX_goal_WRF_Yahya
+		icon = GFX_goal_ANT_WEST
 		x = 10
-		y = 8
+		y = 10
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_operation_camel }
@@ -478,9 +479,9 @@ focus_tree = {
 
 	focus = {
 		id = ANT_cleanup_in_south
-		icon = GFX_goal_WRF_Yahya
-		x = 10
-		y = 9
+		icon = GFX_goal_ANT_SOUTH
+		x = 9
+		y = 11
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_influence_in_west }
@@ -500,9 +501,9 @@ focus_tree = {
 
 	focus = {
 		id = ANT_against_all_odds
-		icon = GFX_goal_WRF_Yahya
-		x = 10
-		y = 10
+		icon = GFX_goal_ANT_Against_Odds
+		x = 11
+		y = 12
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_cleanup_in_south }
@@ -521,7 +522,7 @@ focus_tree = {
 		id = ANT_the_skull_marches
 		icon = GFX_goal_skull_marchwest
 		x = 10
-		y = 11
+		y = 14
 		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_against_all_odds }
