@@ -1459,7 +1459,7 @@ focus_tree = {
 	focus = {
 		id = PRE_liberal_victory_focus
 		icon = GFX_goal_unknown
-		x = 30
+		x = 32
 		y = 0
 		cost = 10		
 		available = {
@@ -1470,11 +1470,290 @@ focus_tree = {
 		
 		}
 	}
+	focus = {
+		id = PRE_state_of_emergency
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = PRE_liberal_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_liberal_victory_focus}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_end_paramilitaries
+		icon = GFX_goal_unknown
+		x = -2
+		y = 2
+		relative_position_id = PRE_liberal_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_state_of_emergency}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_disarm_radicals
+		icon = GFX_goal_unknown
+		x = -2
+		y = 3
+		relative_position_id = PRE_liberal_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_end_paramilitaries}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_junkers_power_chip
+		icon = GFX_goal_unknown
+		x = 0
+		y = 2
+		relative_position_id = PRE_liberal_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_state_of_emergency}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_empower_reichstag
+		icon = GFX_goal_unknown
+		x = 0
+		y = 3
+		relative_position_id = PRE_liberal_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_junkers_power_chip}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_crush_goring
+		icon = GFX_goal_unknown
+		x = 2
+		y = 2
+		relative_position_id = PRE_liberal_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_state_of_emergency}
+		
+		completion_reward = {
+		
+		}
+	}
+
+
+	focus = {
+		id = PRE_an_end_to_radicalism
+		icon = GFX_goal_unknown
+		x = 2
+		y = 3
+		relative_position_id = PRE_liberal_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_crush_goring}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_legacy_of_1848
+		icon = GFX_goal_unknown
+		x = 0
+		y = 4
+		relative_position_id = PRE_liberal_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_an_end_to_radicalism}
+		prerequisite = { focus = PRE_empower_reichstag}
+		prerequisite = { focus = PRE_disarm_radicals}		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_strengthen_civil_liberties
+		icon = GFX_goal_unknown
+		x = -3
+		y = 5
+		relative_position_id = PRE_liberal_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_legacy_of_1848}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_neue_deutsche_bildung
+		icon = GFX_goal_unknown
+		x = -3
+		y = 6
+		relative_position_id = PRE_liberal_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_strengthen_civil_liberties}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_public_works
+		icon = GFX_goal_unknown
+		x = -3
+		y = 7
+		relative_position_id = PRE_liberal_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_neue_deutsche_bildung}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_aid_the_workers
+		icon = GFX_goal_unknown
+		x = -1
+		y = 5
+		relative_position_id = PRE_liberal_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_legacy_of_1848}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_encourage_entrepeneurs
+		icon = GFX_goal_unknown
+		x = -1
+		y = 6
+		relative_position_id = PRE_liberal_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_aid_the_workers}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_privatise_unprofitable_industries
+		icon = GFX_goal_unknown
+		x = -1
+		y = 7
+		relative_position_id = PRE_liberal_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_encourage_entrepeneurs}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_steel_works
+		icon = GFX_goal_unknown
+		x = 1
+		y = 5
+		relative_position_id = PRE_liberal_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_legacy_of_1848}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_embrace_free_trade
+		icon = GFX_goal_unknown
+		x = 1
+		y = 6
+		relative_position_id = PRE_liberal_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_steel_works}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_democratic_arsenal
+		icon = GFX_goal_unknown
+		x = 1
+		y = 7
+		relative_position_id = PRE_liberal_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_embrace_free_trade }
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_eastern_land_reform
+		icon = GFX_goal_unknown
+		x = 3
+		y = 5
+		relative_position_id = PRE_liberal_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_legacy_of_1848}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_liberal_nationalism
+		icon = GFX_goal_unknown
+		x = 3
+		y = 6
+		relative_position_id = PRE_liberal_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_eastern_land_reform}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_democratic_army
+		icon = GFX_goal_unknown
+		x = 3
+		y = 7
+		relative_position_id = PRE_liberal_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_liberal_nationalism}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_germany_united_and_free
+		icon = GFX_goal_unknown
+		x = 0
+		y = 8
+		relative_position_id = PRE_liberal_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_public_works}
+		prerequisite = { focus = PRE_privatise_unprofitable_industries}
+		prerequisite = { focus = PRE_democratic_arsenal}
+		prerequisite = { focus = PRE_democratic_army}
+				
+		completion_reward = {
+		
+		}
+	}
 ########################## junker path
 	focus = {
 		id = PRE_junker_victory_focus
 		icon = GFX_goal_unknown
-		x = 35
+		x = 38
 		y = 0
 		cost = 10		
 		available = {
