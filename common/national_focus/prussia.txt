@@ -1461,13 +1461,16 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 32
 		y = 0
-		cost = 10		
+		cost = 1
 		available = {
 			has_country_flag = PRE_liberal_victory	
 		}	
+		bypass = {
+		has_country_flag = PRE_liberal_victory
+		}
 		
 		completion_reward = {
-		
+		add_political_power = 50
 		}
 	}
 	focus = {
@@ -1476,12 +1479,20 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = PRE_liberal_victory_focus
-		cost = 10		
+		cost = 5		
 		prerequisite = { focus = PRE_liberal_victory_focus}
-		
-		completion_reward = {
-		
+		select_effect = {
+		add_ideas = PRE_martial_law
 		}
+		hidden_effect = {
+		remove_ideas = PRE_martial_law
+		}	
+		completion_reward = {
+		remove_ideas = PRE_political_radicalisation
+		custom_effect_tooltip = PRE_martial_law_tooltip
+		show_ideas_tooltip = PRE_martial_law
+		}
+		
 	}
 	focus = {
 		id = PRE_end_paramilitaries
@@ -1489,11 +1500,12 @@ focus_tree = {
 		x = -2
 		y = 2
 		relative_position_id = PRE_liberal_victory_focus
-		cost = 10		
+		cost = 5		
 		prerequisite = { focus = PRE_state_of_emergency}
 		
 		completion_reward = {
-		
+		remove_ideas = PRE_ongoing_protests
+		add_political_power = -100
 		}
 	}
 	focus = {
@@ -1502,11 +1514,16 @@ focus_tree = {
 		x = -2
 		y = 3
 		relative_position_id = PRE_liberal_victory_focus
-		cost = 10		
+		cost = 5		
 		prerequisite = { focus = PRE_end_paramilitaries}
 		
 		completion_reward = {
-		
+		add_stability = 0.05
+		add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 5000
+		producer = PRE
+		}
 		}
 	}
 	focus = {
@@ -1515,11 +1532,33 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = PRE_liberal_victory_focus
-		cost = 10		
+		cost = 5		
 		prerequisite = { focus = PRE_state_of_emergency}
 		
 		completion_reward = {
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = -0.15
+		}		
+		62 = {
+			add_extra_state_shared_building_slots = 2
+			}
+		63 = {
+			add_extra_state_shared_building_slots = 2
+			}
+		64 = {
+			add_extra_state_shared_building_slots = 2
+			}
+		68 = {
+			add_extra_state_shared_building_slots = 2
+			}
+		5 = {
+			add_extra_state_shared_building_slots = 2
+			}
 		
+			66 = {
+			add_extra_state_shared_building_slots = 2
+			}
 		}
 	}
 	focus = {
@@ -1528,11 +1567,18 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = PRE_liberal_victory_focus
-		cost = 10		
+		cost = 5		
 		prerequisite = { focus = PRE_junkers_power_chip}
 		
 		completion_reward = {
-		
+		swap_ideas = {
+			add_idea = PRE_empowered_reichstag
+			remove_idea = PRE_sham_democracy
+		}
+		add_popularity = {
+			ideology = liberal 
+			popularity = 0.12
+		}		
 		}
 	}
 	focus = {
@@ -1541,11 +1587,15 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = PRE_liberal_victory_focus
-		cost = 10		
+		cost = 5		
 		prerequisite = { focus = PRE_state_of_emergency}
 		
 		completion_reward = {
-		
+		add_stability = -0.05
+		add_popularity = {
+			ideology = revolutionary_nationalist
+			popularity = -0.15
+		}		
 		}
 	}
 
@@ -1556,11 +1606,23 @@ focus_tree = {
 		x = 2
 		y = 3
 		relative_position_id = PRE_liberal_victory_focus
-		cost = 10		
+		cost = 3		
 		prerequisite = { focus = PRE_crush_goring}
 		
 		completion_reward = {
-		
+		add_stability = 0.15
+		add_popularity = {
+			ideology = liberal 
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = social_democrat 
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = conservative 
+			popularity = 0.05
+		} 		
 		}
 	}
 	focus = {
@@ -1569,12 +1631,12 @@ focus_tree = {
 		x = 0
 		y = 4
 		relative_position_id = PRE_liberal_victory_focus
-		cost = 10		
+		cost = 5		
 		prerequisite = { focus = PRE_an_end_to_radicalism}
 		prerequisite = { focus = PRE_empower_reichstag}
 		prerequisite = { focus = PRE_disarm_radicals}		
 		completion_reward = {
-		
+		add_political_power = 200
 		}
 	}
 	focus = {
@@ -1583,11 +1645,11 @@ focus_tree = {
 		x = -3
 		y = 5
 		relative_position_id = PRE_liberal_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_legacy_of_1848}
 		
 		completion_reward = {
-		
+		add_ideas = PRE_strengthen_civil_liberties_idea
 		}
 	}
 	focus = {
@@ -1596,11 +1658,12 @@ focus_tree = {
 		x = -3
 		y = 6
 		relative_position_id = PRE_liberal_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_strengthen_civil_liberties}
 		
 		completion_reward = {
-		
+		add_research_slot = 1
+		add_political_power = 100
 		}
 	}
 	focus = {
@@ -1609,11 +1672,19 @@ focus_tree = {
 		x = -3
 		y = 7
 		relative_position_id = PRE_liberal_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_neue_deutsche_bildung}
 		
 		completion_reward = {
 		
+		
+		every_owned_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+			}
 		}
 	}
 	focus = {
@@ -1622,11 +1693,11 @@ focus_tree = {
 		x = -1
 		y = 5
 		relative_position_id = PRE_liberal_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_legacy_of_1848}
 		
 		completion_reward = {
-		
+		add_ideas = PRE_aid_the_workers_idea
 		}
 	}
 	focus = {
@@ -1635,11 +1706,14 @@ focus_tree = {
 		x = -1
 		y = 6
 		relative_position_id = PRE_liberal_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_aid_the_workers}
 		
 		completion_reward = {
-		
+		swap_ideas = {
+		remove_idea = PRE_aid_the_workers_idea
+		add_idea = PRE_aid_the_workers_idea2
+		}		
 		}
 	}
 	focus = {
@@ -1652,7 +1726,38 @@ focus_tree = {
 		prerequisite = { focus = PRE_encourage_entrepeneurs}
 		
 		completion_reward = {
-		
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}	
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}		
 		}
 	}
 	focus = {

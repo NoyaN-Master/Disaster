@@ -261,17 +261,8 @@ PRE_liberal_victory:0"Liberal Victory"
 PRE_dnvp_victory:0"DNVP Victory"
 PRE_nazi_victory:0"AdNP Victory"
 PRE_schleicher_victory:0"Schleicher is in power"
-#decisions
 
-#tooltips
-PRE_elections:0 "New elections will be held in Prussia."
-PRE_querfront_negotiations:0"§GWe will begin to negotiate the Querfront coalition., giving the following effects during the focus:§!"
-PRE_unity_through_service_tooltip:0"§GUnity Through Service will give the following effect during the focus:§!"
-PRE_junker_purge:0"§RFailure to deal properly with the Junkers could be disasterous for the government.§!"
-PRE_absorb_dnvp_idea_tooltip:0"§GAbsorbing the DNVP will give the following effect during the focus:§!"
-PRE_nacht_der_langer_messer_tooltip:0"§RThe massive purge will give the following effect during the focus:§!"
-PRE_ministry_of_propaganda_tooltip:0"§GThis focus will unlock decisions to establish the Reich Ministry of Propaganda.§!"
-PRE_ministry_of_propaganda_increase_tooltip:0"§GThis decision will increase our propaganda and grip on the German people!§!"
+
 #ideas Schleicher
 PRE_simmering_discontent:0"Slimmering Discontent"
 PRE_simmering_discontent_desc:0""
@@ -429,7 +420,7 @@ PRE_embrace_free_trade:0"Embrace Free Trade"
 PRE_embrace_free_trade_desc:0""
 PRE_steel_works:0"Steel Works"
 PRE_steel_works_desc:0""
-PRE_privatise_unprofitable_industries:0"Privatise Unprovitable Industries"
+PRE_privatise_unprofitable_industries:0"Encourage Privatisation"
 PRE_privatise_unprofitable_industries_desc:0""
 PRE_encourage_entrepeneurs:0"Encourage Entrepeuners"
 PRE_encourage_entrepeneurs_desc:0""
@@ -459,3 +450,39 @@ PRE_state_of_emergency:0"State of Emergency"
 PRE_state_of_emergency_desc:0""
 PRE_liberal_victory_focus:0"Victory for the NLP"
 PRE_liberal_victory_focus_desc:0""
+
+#liberal ideas
+PRE_martial_law:0"Martial Law"
+PRE_martial_law_desc:0""
+PRE_empowered_reichstag:0"Empowered Reichstag"
+PRE_empowered_reichstag_desc:0""
+PRE_strengthen_civil_liberties_idea:0"Civil Liberties"
+PRE_strengthen_civil_liberties_idea_desc:0""
+PRE_aid_the_workers_idea:0"Worker Welfare"
+PRE_aid_the_workers_idea_desc:0""
+PRE_aid_the_workers_idea2:0"Worker Welfare"
+PRE_aid_the_workers_idea2_desc:0""
+
+
+
+
+
+
+
+
+
+
+
+
+
+#tooltips
+PRE_elections:0 "New elections will be held in Prussia."
+PRE_querfront_negotiations:0"§GWe will begin to negotiate the Querfront coalition., giving the following effects during the focus:§!"
+PRE_unity_through_service_tooltip:0"§GUnity Through Service will give the following effect during the focus:§!"
+PRE_junker_purge:0"§RFailure to deal properly with the Junkers could be disasterous for the government.§!"
+PRE_absorb_dnvp_idea_tooltip:0"§GAbsorbing the DNVP will give the following effect during the focus:§!"
+PRE_nacht_der_langer_messer_tooltip:0"§RThe massive purge will give the following effect during the focus:§!"
+PRE_ministry_of_propaganda_tooltip:0"§GThis focus will unlock decisions to establish the Reich Ministry of Propaganda.§!"
+PRE_ministry_of_propaganda_increase_tooltip:0"§GThis decision will increase our propaganda and grip on the German people!§!"
+PRE_martial_law_tooltip:0"§GDeclaring nationwide martial law will give the following effect during the focus:§!"
+

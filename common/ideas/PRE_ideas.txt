@@ -488,5 +488,67 @@ PRE_order_and_discipline = {
 			attrition = -0.05
 			}
 		}
+PRE_martial_law = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_martial_law" }
+			#picture = 
+			modifier = {
+			national_bolshevik_drift = -0.05
+			authoritarian_socialist_drift = -0.05
+			libertarian_socialist_drift = -0.05
+			revolutionary_nationalist_drift = -0.05
+			autocratic_drift = -0.05
+			stability_factor = 0.1
+			stability_weekly = 0.02
+			}
+		}
+PRE_empowered_reichstag = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_empowered_reichstag" }
+			#picture = 
+			modifier = {
+			stability_factor = 0.10
+			political_power_gain = 0.1
+			liberal_drift = 0.05
+			conservative_drift = 0.03
+			social_democrat_drift = 0.03			
+			}
+		}
+PRE_strengthen_civil_liberties_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_strengthen_civil_liberties_idea" }
+			#picture = 
+			modifier = {
+			research_speed_factor = 0.05
+			local_building_slots_factor = 0.1
+			production_factory_start_efficiency_factor = 0.03
+			}
+		}
+PRE_aid_the_workers_idea= {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_aid_the_workers_idea" }
+			#picture = 
+			modifier = {
+			production_speed_industrial_complex_factor = 0.05
+			production_speed_arms_factory_factor = 0.05
+			production_speed_infrastructure_factor = 0.05
+			production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+PRE_aid_the_workers_idea2= {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_aid_the_workers_idea2" }
+			#picture = 
+			modifier = {
+			production_speed_industrial_complex_factor = 0.15
+			production_speed_arms_factory_factor = 0.1
+			production_speed_infrastructure_factor = 0.07
+			production_factory_max_efficiency_factor = 0.06
+			}
+		}
+
+
+
+
+
+
+
+
 	}
 }
