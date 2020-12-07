@@ -8,33 +8,33 @@ set_technology = {
 set_convoys = 0
 
 set_politics = {
-	ruling_party = autocratic
+	ruling_party = liberal
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	conservative = 0
-	liberal = 5
+	conservative = 30
+	liberal = 40
 	social_democrat = 0
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
 	national_bolshevik = 0
-	authoritarian_democrat = 30
-	autocratic = 50
-	ultranationalist = 15
+	authoritarian_democrat = 10
+	autocratic = 20
+	ultranationalist = 0
 	revolutionary_nationalist = 0
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
 
 create_country_leader = {
-	name = "Pyotr Wrangel"
-	#desc = "CRI_Peter_desc"
-	picture = "CRI_Peter.tga"
+	name = "Solomon Krym"
+	#desc = "CRI_Solomon_Krym_desc"
+	picture = "CRI_Solomon_Krym.tga"
 	expire = "2020.1.1"
-	ideology = autocratic_subideology
+	ideology = liberal_subideology
 	traits = {
 		#
 	}
