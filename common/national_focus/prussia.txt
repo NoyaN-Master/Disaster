@@ -1672,7 +1672,8 @@ focus_tree = {
 		x = -3
 		y = 7
 		relative_position_id = PRE_liberal_victory_focus
-		cost = 6		
+		cost = 6
+		
 		prerequisite = { focus = PRE_neue_deutsche_bildung}
 		
 		completion_reward = {
@@ -1681,7 +1682,7 @@ focus_tree = {
 		every_owned_state = {
 			add_building_construction = {
 				type = infrastructure
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 			}
@@ -1722,7 +1723,7 @@ focus_tree = {
 		x = -1
 		y = 7
 		relative_position_id = PRE_liberal_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_encourage_entrepeneurs}
 		
 		completion_reward = {
@@ -1766,11 +1767,29 @@ focus_tree = {
 		x = 1
 		y = 5
 		relative_position_id = PRE_liberal_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_legacy_of_1848}
 		
 		completion_reward = {
+		every_owned_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			}
+		add_resource = {
+		type = steel
+		amount = 30
+		state = 63
+		}
 		
+		
+		add_resource = {
+		type = steel
+		amount = 30
+		state = 66
+		}
 		}
 	}
 	focus = {
@@ -1779,11 +1798,26 @@ focus_tree = {
 		x = 1
 		y = 6
 		relative_position_id = PRE_liberal_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_steel_works}
 		
 		completion_reward = {
-		
+		if = {
+			limit = { has_idea = export_focus  }
+			add_ideas = free_trade
+			}
+		if = {
+			limit = { has_idea = free_trade  }
+			add_political_power = 100
+			}
+		if = {
+			limit = { has_idea = limited_exports  }
+			add_ideas = free_trade
+			}
+		if = {
+			limit = { has_idea = closed_economy  }
+			add_ideas = free_trade
+			}
 		}
 	}
 	focus = {
@@ -1792,11 +1826,34 @@ focus_tree = {
 		x = 1
 		y = 7
 		relative_position_id = PRE_liberal_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_embrace_free_trade }
 		
 		completion_reward = {
-		
+			66 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}	
+			763 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+			5 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}		
 		}
 	}
 	focus = {
@@ -1805,11 +1862,30 @@ focus_tree = {
 		x = 3
 		y = 5
 		relative_position_id = PRE_liberal_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_legacy_of_1848}
 		
 		completion_reward = {
-		
+			5 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}	
+			763 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}	
+		763 = {
+        add_manpower = 50000 }
+		5 = {
+        add_manpower = 50000 }
 		}
 	}
 	focus = {
@@ -1818,11 +1894,15 @@ focus_tree = {
 		x = 3
 		y = 6
 		relative_position_id = PRE_liberal_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_eastern_land_reform}
 		
 		completion_reward = {
 		
+		every_owned_state = {
+        add_manpower = 10000
+		}
+		add_manpower = 50000
 		}
 	}
 	focus = {
@@ -1831,11 +1911,16 @@ focus_tree = {
 		x = 3
 		y = 7
 		relative_position_id = PRE_liberal_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_liberal_nationalism}
 		
 		completion_reward = {
-		
+		add_tech_bonus = {
+			name = PRE_blueshirts_doctrine
+			bonus = 0.33
+			uses = 4
+			category = land_doctrine
+		}		
 		}
 	}
 	focus = {
@@ -1844,14 +1929,28 @@ focus_tree = {
 		x = 0
 		y = 8
 		relative_position_id = PRE_liberal_victory_focus
-		cost = 10		
+		cost = 5	
 		prerequisite = { focus = PRE_public_works}
 		prerequisite = { focus = PRE_privatise_unprofitable_industries}
 		prerequisite = { focus = PRE_democratic_arsenal}
 		prerequisite = { focus = PRE_democratic_army}
 				
 		completion_reward = {
-		
+		add_political_power = 100
+		add_manpower = 100000
+		add_stability = 0.2
+		add_popularity = {
+			ideology = liberal 
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = social_democrat 
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = conservative 
+			popularity = 0.05
+		} 		
 		}
 	}
 ########################## junker path
