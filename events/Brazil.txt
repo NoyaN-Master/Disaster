@@ -1,0 +1,21 @@
+add_namespace = bra
+
+country_event = { 
+	id = bra.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bra.1" }
+	title = bra.1.t
+	desc = bra.1.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = bra.1.a
+                add_political_power = -25
+                add_popularity = {
+			ideology = ultranationalist
+			popularity = 0.15
+		}
+	}
+}

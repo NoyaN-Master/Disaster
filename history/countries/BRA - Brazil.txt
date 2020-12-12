@@ -14,6 +14,8 @@ set_politics = {
 	elections_allowed = no
 }
 
+country_event = { id = bra.1 days = 1 }
+
 set_popularities = {
 	conservative = 43
 	liberal = 12
