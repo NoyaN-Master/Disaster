@@ -11,11 +11,33 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = bra.1.a
-                add_political_power = -15
-                add_popularity = {
-			ideology = ultranationalist
-			popularity = 0.15
-		}
+			name = bra.1.a
+            add_political_power = -15
+            add_popularity = {
+				ideology = ultranationalist
+				popularity = 0.15
+			
+			}
+	}
+}
+
+country_event = { 
+	id = bra.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bra.2" }
+	title = bra.2.t
+	desc = bra.2.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+			name = bra.2.a
+            add_ideas = BRA_Repress_Integralists
+	}
+
+		option = {
+			name = bra.2.b
+            add_ideas = BRA_Enpower_Integralists
 	}
 }
