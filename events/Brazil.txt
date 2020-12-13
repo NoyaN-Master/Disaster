@@ -12,8 +12,9 @@ country_event = {
 
 	option = {
 			name = bra.1.a
-            add_political_power = -15
-            add_popularity = {
+			ai_chance = { factor = 1}
+            		add_political_power = -15
+            		add_popularity = {
 				ideology = ultranationalist
 				popularity = 0.15
 			
@@ -33,11 +34,13 @@ country_event = {
 
 	option = {
 			name = bra.2.a
-            add_ideas = BRA_Repress_Integralists
+			ai_chance = { factor = 1}
+            		add_ideas = BRA_Repress_Integralists
 	}
 
-		option = {
+	option = {
 			name = bra.2.b
-            add_ideas = BRA_Enpower_Integralists
+			ai_chance = { factor = 0}
+            		add_ideas = BRA_Enpower_Integralists
 	}
 }
