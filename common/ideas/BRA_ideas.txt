@@ -1,0 +1,23 @@
+ideas = {
+
+country = {
+
+BRA_Repress_Integralists = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRA_Repress_Integralists" }
+			picture = BRA_Repress_Integralists
+			modifier = {
+			stability_weekly = 0.02
+            ultranationalist_drift = -0.05
+			}
+
+BRA_Enpower_Integralists = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRA_Enpower_Integralists" }
+			picture = BRA_Enpower_Integralists
+			modifier = {
+			stability_weekly = -0.02
+            ultranationalist_drift = 0.05
+			}
+		}
+    }
+}
+}
