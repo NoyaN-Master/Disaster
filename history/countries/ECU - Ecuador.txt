@@ -1,5 +1,5 @@
 capital = 305
-oob = "ECU_1936"
+oob = ""
 
 # Starting tech
 set_technology = {
@@ -8,7 +8,7 @@ set_technology = {
 set_convoys = 0
 
 set_politics = {
-	ruling_party = authoritarian_democrat
+	ruling_party = liberal
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -16,12 +16,12 @@ set_politics = {
 
 set_popularities = {
 	conservative = 0
-	liberal = 0
+	liberal = 100
 	social_democrat = 0
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
 	national_bolshevik = 0
-	authoritarian_democrat = 100
+	authoritarian_democrat = 0
 	autocratic = 0
 	ultranationalist = 0
 	revolutionary_nationalist = 0
@@ -30,11 +30,11 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Alberto Enríquez Gallo"
-	#desc = "ECU_Gallo_desc"
-	picture = "ECU_Gallo.tga"
+	name = "Juan de Dios Martínez"
+	#desc = "ECU_Juan_Martinez_desc"
+	picture = "ECU_Juan_Martinez.tga"
 	expire = "2020.1.1"
-	ideology = authoritarian_democrat_subideology
+	ideology = liberal_subideology
 	traits = {
 		#
 	}

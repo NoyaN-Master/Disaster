@@ -1,4 +1,4 @@
-capital = 298
+capital = 279
 oob = ""
 
 # Starting tech
@@ -8,7 +8,7 @@ set_technology = {
 set_convoys = 0
 
 set_politics = {
-	ruling_party = autocratic
+	ruling_party = authoritarian_socialist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -19,10 +19,10 @@ set_popularities = {
 	liberal = 0
 	social_democrat = 0
 	libertarian_socialist = 0
-	authoritarian_socialist = 0
+	authoritarian_socialist = 100
 	national_bolshevik = 0
 	authoritarian_democrat = 0
-	autocratic = 100
+	autocratic = 0
 	ultranationalist = 0
 	revolutionary_nationalist = 0
 	esoteric_traditionalist = 0
@@ -30,11 +30,11 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Charles D. B. King"
-	#desc = "LIB_Charles_King_desc"
-	picture = "LIB_Charles_King.tga"
+	name = "Carlos Dávila"
+	#desc = "CHL_Carlos_Davila_desc"
+	picture = "CHL_Carlos_Davila.tga"
 	expire = "2020.1.1"
-	ideology = autocratic_subideology
+	ideology = authoritarian_socialist_subideology
 	traits = {
 		#
 	}

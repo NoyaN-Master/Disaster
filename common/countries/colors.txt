@@ -452,11 +452,6 @@ TRM = {
 	color_ui = rgb { 224 228 255 }
 }
 
-ZLT = {
-    color = rgb { 255 120 71 }
-	color_ui = rgb { 255 120 71 }
-}
-
 TSV = {
     color = rgb { 125 13 24 }
 	color_ui = rgb { 125 13 24 }
@@ -532,4 +527,52 @@ BRA = {
 	color_ui = rgb { 78 133 24 }
 }
 
+URG = {
+        color = rgb { 223 228 212 }
+	color_ui = rgb { 223 228 212 }
+}
 
+ARG = {
+        color = rgb { 102 118 228 }
+	color_ui = rgb { 102 118 228 }
+}
+
+CHL = {
+        color = rgb { 204 52 56 }
+	color_ui = rgb { 204 52 56 }
+}
+
+PAR = {
+        color = rgb { 40 101 226 }
+	color_ui = rgb { 40 101 226 }
+}
+
+BOL = {
+        color = rgb { 255 168 116 }
+	color_ui = rgb { 255 168 116 }
+}
+
+PRU = {
+        color = rgb { 166 156 178 }
+	color_ui = rgb { 166 156 178 }
+}
+
+COL = {
+        color = rgb { 243 187 31 }
+	color_ui = rgb { 243 187 31 }
+}
+
+VEN = {
+        color = rgb { 161 182 140 }
+	color_ui = rgb { 161 182 140 }
+}
+
+CUB = {
+        color = rgb { 164 96 174 }
+	color_ui = rgb { 164 96 174 }
+}
+
+HAI = {
+        color = rgb { 165 97 97}
+	color_ui = rgb { 165 97 97 }
+}
