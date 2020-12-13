@@ -9,7 +9,7 @@ BRA_Repress_Integralists = {
 			stability_weekly = 0.02
             ultranationalist_drift = -0.05
 			}
-
+			}
 BRA_Enpower_Integralists = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRA_Enpower_Integralists" }
 			picture = BRA_Enpower_Integralists
@@ -20,4 +20,4 @@ BRA_Enpower_Integralists = {
 		}
     }
 }
-}
+
