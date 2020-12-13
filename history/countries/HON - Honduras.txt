@@ -1,4 +1,4 @@
-capital = 652
+capital = 312
 oob = ""
 
 # Starting tech
@@ -8,7 +8,7 @@ set_technology = {
 set_convoys = 0
 
 set_politics = {
-	ruling_party = authoritarian_socialist
+	ruling_party = autocratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -19,10 +19,10 @@ set_popularities = {
 	liberal = 0
 	social_democrat = 0
 	libertarian_socialist = 0
-	authoritarian_socialist = 60
+	authoritarian_socialist = 0
 	national_bolshevik = 0
 	authoritarian_democrat = 0
-	autocratic = 40
+	autocratic = 100
 	ultranationalist = 0
 	revolutionary_nationalist = 0
 	esoteric_traditionalist = 0
@@ -30,11 +30,11 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Mirsaid Sultangaliyev"
-	#desc = "TAT_Galiyev_desc"
-	picture = "Portrait_TAT_Galiyev.tga"
+	name = "Tiburcio Carías Andino"
+	#desc = "HON_Tiburcio_Andino_desc"
+	picture = "HON_Tiburcio_Andino.tga"
 	expire = "2020.1.1"
-	ideology = galiyevism
+	ideology = autocratic_subideology
 	traits = {
 		#
 	}

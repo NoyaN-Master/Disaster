@@ -1,4 +1,4 @@
-capital = 652
+capital = 319
 oob = ""
 
 # Starting tech
@@ -8,7 +8,7 @@ set_technology = {
 set_convoys = 0
 
 set_politics = {
-	ruling_party = authoritarian_socialist
+	ruling_party = revolutionary_nationalist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -19,22 +19,22 @@ set_popularities = {
 	liberal = 0
 	social_democrat = 0
 	libertarian_socialist = 0
-	authoritarian_socialist = 60
+	authoritarian_socialist = 0
 	national_bolshevik = 0
 	authoritarian_democrat = 0
-	autocratic = 40
+	autocratic = 0
 	ultranationalist = 0
-	revolutionary_nationalist = 0
+	revolutionary_nationalist = 100
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
 
 create_country_leader = {
-	name = "Mirsaid Sultangaliyev"
-	#desc = "TAT_Galiyev_desc"
-	picture = "Portrait_TAT_Galiyev.tga"
+	name = "Rafael Trujillo"
+	#desc = "DOM_Rafael_Trujillo_desc"
+	picture = "DOM_Rafael_Trujillo.tga"
 	expire = "2020.1.1"
-	ideology = galiyevism
+	ideology = revolutionary_nationalist_subideology
 	traits = {
 		#
 	}
