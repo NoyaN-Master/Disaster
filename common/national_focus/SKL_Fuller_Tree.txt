@@ -33,6 +33,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		create_unit = {
+    division = "name = \"The Iron Monster\" division_template = \"Tank Brigades\" start_experience_factor = 1.0 start_equipment_factor = 1.0" owner = SKL
+	}
+	country_event = { id = fuller.1 }
+	}
 	}
 
 	#Focus for Crack The Arsenals
@@ -46,6 +52,24 @@ focus_tree = {
 		prerequisite = { focus = SKL_we_will_never_fall }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		add_equipment_to_stockpile = {
+    	type = infantry_equipment
+    	amount = 3000
+    	producer = SKL
+		}
+		add_equipment_to_stockpile = {
+    	type = light_tank
+    	amount = 1200
+    	producer = SKL
+		}
+		add_equipment_to_stockpile = {
+    	type = support_equipment
+    	amount = 3000
+    	producer = SKL
+		}
+		custom_effect_tooltip = crack_Arsenal_Tt
 		}
 	}
 
@@ -62,6 +86,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		load_oob = "SKL_1936"
+		custom_effect_tooltip = we_wontfall_tt
 		}
 
 	}
@@ -78,6 +103,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		division = "name = \"Galatian Army\" division_template = \"The Skulltroops\" start_experience_factor = 1.0 start_equipment_factor = 1.0" owner = SKL
+		division = "name = \"Galatian Army 2\" division_template = \"The Skulltroops\" start_experience_factor = 1.0 start_equipment_factor = 1.0" owner = SKL
+		add_manpower = 10000
+		}
 	}
 
 	#Focus for The Çorum Telegram
@@ -91,6 +121,10 @@ focus_tree = {
 		prerequisite = { focus = SKL_we_will_never_fall }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = corum_tooltip
+		country_event = { id = fuller.2 }
 		}
 	}
 
@@ -120,6 +154,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		declare_war_on = {
+   	 	target = ESO
+    	type = annex_everything
+		}
+		798 = {
+		add_core_of = SKL
+		}
+		}
 	}
 
 	#Focus for Iron Bogatyr
@@ -133,6 +176,10 @@ focus_tree = {
 		prerequisite = { focus = SKL_break_the_sun }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		add_ideas = SKL_armor_idea_2
+		country_event = { id = fuller.4 }	
 		}
 	}
 
@@ -148,6 +195,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		add_ideas = SKL_armor_idea_1	
+		}
 	}
 
 	#Focus for Investigate The Cult
@@ -162,6 +212,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		custom_effect_tooltip = investigation_cult
+		country_event = { id = fuller.3 }	
+		}
 	}
 
 	#Focus for Food Trafficking
@@ -175,6 +229,9 @@ focus_tree = {
 		prerequisite = { focus = SKL_break_the_sun }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = food_traffic_tt
 		}
 	}
 
@@ -201,6 +258,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		declare_war_on = {
+   	 	target = OTH
+    	type = annex_everything
+		}
+		356 = {
+		add_core_of = SKL
+		}
+		}
 	}
 
 	#Focus for Recruit Honorary Turks
@@ -214,6 +280,13 @@ focus_tree = {
 		prerequisite = { focus = SKL_deal_with_the_gallowglass }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		add_manpower = 5000	
+		add_popularity = {
+   		ideology = ultranationalist
+    	popularity = 0.05
+		}
 		}
 	}
 
@@ -229,9 +302,17 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		add_popularity = {
+   		ideology = ultranationalist
+    	popularity = 0.05
+		}
+		add_ideas = SKL_jannies
+		country_event = { id = fuller.5 }
+		}
 	}
 
-	#Focus for A Meeting With The Pasha
+	#Focus for Operation:Killswitch
 	focus = {
 		id = SKL_a_meeting_with_the_pasha
 		icon = GFX_goal_unknown
@@ -242,6 +323,10 @@ focus_tree = {
 		prerequisite = { focus = SKL_deal_with_the_gallowglass }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		country_event = { id = fuller.6 }
+		custom_effect_tooltip = pasha_pact_tt_focus
 		}
 	}
 
@@ -256,6 +341,24 @@ focus_tree = {
 		prerequisite = { focus = SKL_deal_with_the_gallowglass }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		add_stability = -0.05
+		add_equipment_to_stockpile = {
+    	type = infantry_equipment
+    	amount = 1792
+    	producer = SKL
+		}
+		add_equipment_to_stockpile = {
+    	type = light_tank
+    	amount = 1200
+    	producer = SKL
+		}
+		add_equipment_to_stockpile = {
+    	type = support_equipment
+    	amount = 2300
+    	producer = SKL
+		}	
 		}
 	}
 
@@ -282,6 +385,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		declare_war_on = {
+   	 	target = KLG
+    	type = annex_everything
+		}
+		355 = {
+		add_core_of = SKL
+		}
+		}
 	}
 
 	#Focus for Consolidate The Factories
@@ -295,6 +407,15 @@ focus_tree = {
 		prerequisite = { focus = SKL_war_plan_silver }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		355 = {
+		add_building_construction = {
+    	type = arms_factory
+    	level = 3
+   		instant_build = yes
+		}	
+		}
 		}
 	}
 
@@ -310,6 +431,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		country_event = { id = fuller.9 }
+	}
 	}
 
 	#Focus for Absorb The Soldiartists
@@ -324,6 +448,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		add_popularity = {
+   		ideology = ultranationalism
+    	popularity = 0.10
+		}
+		#will add an idea
+	}
 	}
 
 	#Focus for End The Utopiates
@@ -349,8 +480,17 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		declare_war_on = {
+   	 	target = IZM
+    	type = annex_everything
+		}
+		347 = {
+		add_core_of = SKL
+		}
 	}
-
+	}
+	
 	#Focus for Rehabilate The Prole
 	focus = {
 		id = SKL_rehabilate_the_prole
@@ -377,6 +517,25 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		add_resource = {
+    	type = chromium
+    	amount = 30
+    	state = 347
+		}
+		347 = {
+		add_building_construction = {
+    	type = infrastructure
+    	level = 3
+    	instant_build = yes
+		}
+		add_building_construction = {
+    	type = industrial_complex 
+    	level = 4
+    	instant_build = yes
+		}		
+		}
+		}	
 	}
 
 	#Focus for Fate Of The Intellectuals

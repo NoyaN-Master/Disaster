@@ -488,8 +488,8 @@ FIN = {
 }
 
 OTH = {
-        color = rgb { 0 0 0 }
-	color_ui = rgb { 0 0 0 }
+        color = rgb { 36 132 247 }
+	color_ui = rgb { 36 132 247 }
 }
 
 KLG = {
@@ -576,3 +576,9 @@ HAI = {
         color = rgb { 165 97 97}
 	color_ui = rgb { 165 97 97 }
 }
+
+TAT = {
+   		color = rgb { 175 13 0 }
+	color_ui = rgb { 175 13 0 }
+}
+

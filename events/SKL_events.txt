@@ -1,0 +1,196 @@
+add_namespace = fuller
+
+country_event = { #Iron Monster
+	id = fuller.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = fuller.1.t
+	desc = fuller.1.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = fuller.1.a
+	}
+}
+
+country_event = { #Corum Telegram
+	id = fuller.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = fuller.2.t
+	desc = fuller.2.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = fuller.2.a
+	}
+}
+
+country_event = { #Investigate Cult
+	id = fuller.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = fuller.3.t
+	desc = fuller.3.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = fuller.3.a
+	}
+}
+
+country_event = { #Iron Bogatyrs
+	id = fuller.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = fuller.4.t
+	desc = fuller.4.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = fuller.4.a
+		division = "name = \"Bogatyr\" division_template = \"Tank Brigades\" start_experience_factor = 1.0 start_equipment_factor = 1.0" owner = SKL
+		add_stability = 0.1
+		add_war_support = 0.1
+	}
+}
+
+country_event = { #Janniess
+	id = fuller.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = fuller.5.t
+	desc = fuller.5.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = fuller.5.a
+		division = "name = \"Subutuay Division\" division_template = \"Subutuay Units\" start_experience_factor = 1.0 start_equipment_factor = 1.0" owner = SKL
+		division = "name = \"Subutuay Division\" division_template = \"Subutuay Units\" start_experience_factor = 1.0 start_equipment_factor = 1.0" owner = SKL
+		division = "name = \"Subutuay Division\" division_template = \"Subutuay Units\" start_experience_factor = 1.0 start_equipment_factor = 1.0" owner = SKL
+		add_stability = 0.1
+		add_war_support = 0.1
+
+		division_template = {
+    	name = "Subutuay Units"
+    	is_locked = yes
+    	division_names_group = ENG_INF_01
+    	priority = 0
+    	template_counter = 0
+    	regiments = {
+        infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+    	}
+   	 	support = { 
+        military_police = { x = 0 y = 0 }
+    	} 
+		}	
+	}
+}
+
+country_event = { #Threaten Enver With Nuri's Life: Reaching Out
+	id = fuller.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = fuller.6.t
+	desc = fuller.6.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = fuller.6.a
+		custom_effect_tooltip = save_nuri_first_tt
+		country_event = { id = fuller.7 }
+	}
+}
+
+country_event = { #Threaten Enver With Nuri's Life: Executing The Plan
+	id = fuller.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = fuller.7.t
+	desc = fuller.7.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = fuller.7.a
+	custom_effect_tooltip = save_nuri_execution_tt	
+	country_event = { id = fuller.8 }
+	}
+}
+
+country_event = { #Threaten Enver With Nuri's Life: Ze Telegram
+	id = fuller.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = fuller.8.t
+	desc = fuller.8.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+	name = fuller.8.a
+	custom_effect_tooltip = save_nuri_telegram_tt
+	diplomatic_relation = {
+   	country = CIB
+    relation = non_aggression_pact
+    active = yes
+	}
+	}
+}
+
+country_event = { #Deal With Cowboy
+	id = fuller.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = fuller.9.t
+	desc = fuller.9.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+	name = fuller.9.a
+	custom_effect_tooltip = cowboy_go_tt
+	#will add a idea soon 
+	}
+}
