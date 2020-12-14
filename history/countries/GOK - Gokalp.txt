@@ -53,8 +53,8 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Ziya Gökalp"
-	#desc = "TAT_Galiyev_desc"
-	#picture = "Portrait_GOK_Ziya_Gokalp.tga"
+	#desc = "GOK_Ziya_Gokalp_desc"
+	picture = "Portrait_GOK_Ziya_Gokalp.tga"
 	expire = "2020.1.1"
 	ideology = authoritarian_democrat_subideology
 	traits = {
