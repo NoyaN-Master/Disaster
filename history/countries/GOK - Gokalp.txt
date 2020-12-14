@@ -22,8 +22,13 @@ set_technology = {
 	naval_bomber1 = 1
 }
 
+add_manpower = 100000
 
 set_convoys = 100
+
+add_ideas = GOK_shining_city
+add_ideas = GOK_Tadjik_Problem
+add_ideas = GOK_intellectual_caste
 
 set_politics = {
 	ruling_party = authoritarian_democrat
