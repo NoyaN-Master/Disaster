@@ -3,9 +3,32 @@ oob = ""
 
 # Starting tech
 set_technology = {
+ 	infantry_weapons = 1
+	infantry_weapons1 = 1	
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	basic_heavy_tank = 1
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	strategic_bomber1 = 1
+	CAS1 = 1
+	naval_bomber1 = 1
 }
 
-set_convoys = 0
+
+set_convoys = 100
+
+add_ideas = TAT_tatar_communism
+add_ideas = TAT_tatar_army
+add_ideas = TAT_tatar_feudalism
+add_ideas = TAT_backwards_living
 
 set_politics = {
 	ruling_party = authoritarian_socialist
@@ -13,6 +36,10 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+
+set_stability = 0.4
+set_war_support = 0.5
+add_political_power = 120
 
 set_popularities = {
 	conservative = 0
@@ -39,3 +66,14 @@ create_country_leader = {
 		#
 	}
 }
+
+create_field_marshal = {
+			name = "Mirsaid Sultangaliyev"
+			picture = "Portrait_TAT_Galiyev.tga"
+			traits = { offensive_doctrine }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 3
+			}

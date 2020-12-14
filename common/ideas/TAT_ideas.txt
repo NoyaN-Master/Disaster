@@ -1,0 +1,46 @@
+ideas = {
+
+country = {
+
+TAT_tatar_communism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
+			picture = TAT_tatar_communism
+			modifier = {
+            stability_factor = 0.05	
+            war_support_factor = 0.05
+            production_factory_max_efficiency_factor = 0.1
+            political_power_gain = 0.05
+			}
+		}
+TAT_tatar_army = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
+			picture = TAT_tatar_army
+			modifier = {
+            army_core_defence_factor = 0.1
+            army_core_attack_factor = 0.1
+            cavalry_attack_factor = 0.05
+            army_speed_factor = 0.10    
+			}
+		}
+TAT_tatar_feudalism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
+			picture = TAT_tatar_feudalism
+			modifier = {
+            stability_weekly = -0.03
+            war_support_weekly = -0.03
+            research_speed_factor = -0.15
+            production_speed_buildings_factor = -0.3
+            autocracy_drift = 0.01	
+			}
+		}
+TAT_backwards_living = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
+			picture = TAT_backwards_living
+			modifier = {
+            conscription = -0.05
+            army_morale_factor = -0.1
+            attrition = 0.1
+            winter_attrition_factor = -0.5
+			}
+		}                
+}
