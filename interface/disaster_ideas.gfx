@@ -211,4 +211,38 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/AUT_struggling_economy.tga"
 	}
 
+	spriteType = {
+		name = "GFX_idea_TAT_tatar_communism"
+		texturefile = "gfx/interface/ideas/TAT_tatar_communism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_TAT_tatar_army"
+		texturefile = "gfx/interface/ideas/TAT_tatar_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_TAT_tatar_feudalism"
+		texturefile = "gfx/interface/ideas/TAT_tatar_feudalism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_TAT_backwards_living"
+		texturefile = "gfx/interface/ideas/TAT_backwards_living.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GOK_shining_city"
+		texturefile = "gfx/interface/ideas/GOK_shining_city.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GOK_intellectual_caste"
+		texturefile = "gfx/interface/ideas/GOK_intellectual_caste.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GOK_Tadjik_Problem"
+		texturefile = "gfx/interface/ideas/GOK_Tadjik_Problem.dds"
+	}
 }	
