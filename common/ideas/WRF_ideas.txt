@@ -7,7 +7,7 @@ WRF_Greek_Legacy = {
 			#picture = WRF_Greek_Legacy
 			modifier = {
 			war_support_weekly = 0.001
-			land_reinforce_rate = 0.3
+			land_reinforce_rate = 0.03
 			}
 			targeted_modifier = { tag = GRE attack_bonus_against = 0.1 }
 		}
@@ -25,7 +25,8 @@ WRF_Kemal_Army = {
 WRF_Legitimate_Heir = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Legitimate_Heir" }
 			#picture = WRF_Legitimate_Heir
-			modifier = { non_core_manpower = 0.05 
+			modifier = {
+			non_core_manpower = 0.05 
 			conscription = 0.05
 			}
 		}
@@ -43,7 +44,6 @@ TUR_Ajan_Ankara = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
 			#picture = TUR_Struggle_Front
 			modifier = {
-			political_power_gain = 0.1
 			drift_defence_factor = 0.25	
 			foreign_subversive_activites = -0.25	
 			subversive_activites_upkeep = -0.1	
@@ -53,13 +53,10 @@ WRF_Kemal_Army_Disc = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Kemal_Army" }
 			#picture = WRF_Kemal_Army
 			modifier = {
-			offence = 0.05
 			army_artillery_defence_factor = 0.05
 			army_artillery_attack_factor = 0.05
 			army_infantry_defence_factor = 0.1
 			experience_gain_army = 0.05
-			attrition = -0.2
-			land_reinforce_rate = 0.1
 			}
 		}
 WRF_Tekalif_Vatan = {
@@ -76,7 +73,6 @@ WRF_Ajan_Antalya = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
 			#picture = WRF_Tekalif
 			modifier = {
-			political_power_gain = 0.2
 			drift_defence_factor = 0.50	
 			foreign_subversive_activites = -0.30	
 			subversive_activites_upkeep = -0.3
@@ -87,7 +83,6 @@ WRF_For_All_Brothers = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
 			#picture = WRF_Tekalif
 			modifier = {
-			army_morale_factor = 0.1
 			attrition = -0.1
 			}
 		}		
