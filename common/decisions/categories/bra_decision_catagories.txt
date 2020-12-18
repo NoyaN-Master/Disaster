@@ -1,0 +1,17 @@
+BRA_civilwar_prep_category = {
+	icon = GFX_decision_category_generic_political_actions
+
+	priority = 100
+	allowed = {
+		if = {
+    	limit = {
+        original_tag = BRA
+        has_civil_war = no
+    	} 
+}
+	}
+	visible = {
+		always = yes
+	}
+	visible_when_empty = no
+}
