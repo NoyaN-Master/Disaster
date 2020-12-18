@@ -58,3 +58,14 @@ create_country_leader = {
 		#
 	}
 }
+
+create_country_leader = {
+	name = "Plínio Salgado"
+	#desc = "BRA_Plínio_Salgado_desc"
+	picture = "BRA_Plinio_Salgado.tga"
+	expire = "2020.1.1"
+	ideology = ultranationalist_subideology
+	traits = {
+		#
+	}
+}
