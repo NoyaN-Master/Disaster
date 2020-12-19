@@ -44,3 +44,27 @@ country_event = {
             		add_ideas = BRA_Enpower_Integralists
 	}
 }
+
+country_event = { 
+	id = bra.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bra.3" }
+	title = bra.3.t
+	desc = bra.3.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+			name = bra.3.a
+			ai_chance = { factor = 1}
+            		# unlock team vargas decisions
+	}
+
+	option = {
+			name = bra.3.b
+			ai_chance = { factor = 0}
+            		# unlock team integralist decisions
+	}
+}
+
