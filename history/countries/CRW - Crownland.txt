@@ -69,18 +69,7 @@ create_country_leader = {
 	#desc = "SES_Zeljko_Raznatovic_desc"
 	picture = "Portrait_CRW_Vahdettin.tga"
 	expire = "2020.1.1"
-	ideology = autocracy_subideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Vahdettin I"
-	#desc = "SES_Zeljko_Raznatovic_desc"
-	picture = "Portrait_CRW_Vahdettin.tga"
-	expire = "2020.1.1"
-	ideology = conservative_subideology
+	ideology = autocratic_subideology
 	traits = {
 		#
 	}
