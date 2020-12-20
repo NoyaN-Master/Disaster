@@ -1,0 +1,236 @@
+focus_tree = {
+	id = ottoman_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = CRW
+		}
+	}
+
+    continuous_focus_position = { x = 100 y = 1500 }
+
+    default = no
+
+    focus = {
+		id = CRW_newyear
+		icon = GFX_goal_AUT_economic_reforms
+		x = 8
+		y = 0
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+		select_effect = {
+			country_event = { id = aut.2 days = 5 }
+		}
+		completion_reward = {
+		custom_effect_tooltip = CRW_devlet_1
+        }
+	}
+
+    focus = {
+		id = CRW_party_problems
+		icon = GFX_goal_AUT_economic_reforms
+        prerequisite = { focus = CRW_newyear }
+		x = 8
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = CRW_party_problems_1
+        }
+	}
+
+    focus = {
+		id = CRW_addressing_protests
+		icon = GFX_goal_AUT_economic_reforms
+		x = 7
+		y = 2
+		cost = 3
+        prerequisite = { focus = CRW_party_problems }
+		ai_will_do = {
+			factor = 80	
+		}
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = CRW_addressing_protests_tt
+        }
+	}
+
+    focus = {
+		id = CRW_multicultural_order
+		icon = GFX_goal_AUT_economic_reforms
+		x = 9
+		y = 2
+		cost = 3
+        prerequisite = { focus = CRW_party_problems }
+		ai_will_do = {
+			factor = 80	
+		}
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = CRW_multicultural_order_tt
+        }
+	}
+
+     focus = {
+		id = CRW_economics
+		icon = GFX_goal_AUT_economic_reforms
+		x = 8
+		y = 3
+		cost = 3
+        prerequisite = { focus = CRW_multicultural_order }
+        prerequisite = { focus = CRW_addressing_protests }
+		ai_will_do = {
+			factor = 80	
+		}
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = CRW_economics_tt
+        }
+	}
+
+     focus = {
+		id = CRW_open_meclis
+		icon = GFX_goal_AUT_economic_reforms
+		x = 8
+		y = 4
+		cost = 3
+        prerequisite = { focus = CRW_economics }
+		ai_will_do = {
+			factor = 80	
+		}
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = CRW_open_meclis_tt
+        }
+	}
+
+    focus = {
+		id = CRW_conservative_win
+		icon = GFX_goal_AUT_economic_reforms
+		x = 12
+		y = 5
+		cost = 3
+        prerequisite = { focus = CRW_open_meclis }
+		ai_will_do = {
+			factor = 80	
+		}
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = conservative_victory
+        }
+	}
+
+    focus = {
+		id = CRW_socdem_win
+		icon = GFX_goal_AUT_economic_reforms
+		x = 4
+		y = 5
+		cost = 3
+        prerequisite = { focus = CRW_open_meclis }
+		ai_will_do = {
+			factor = 80	
+		}
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = socdem_victory
+        }
+	}
+
+    focus = {
+		id = CRW_liberal_win
+		icon = GFX_goal_AUT_economic_reforms
+		x = 8
+		y = 5
+		cost = 3
+        prerequisite = { focus = CRW_open_meclis }
+		ai_will_do = {
+			factor = 80	
+		}
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = libtard_victory
+        }
+	}
+
+    focus = {
+		id = CRW_suppres_democracy
+		icon = GFX_goal_AUT_economic_reforms
+		x = 16
+		y = 0
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = conservative_victory
+        }
+	}
+
+    focus = {
+		id = CRW_return_to_basics
+		icon = GFX_goal_AUT_economic_reforms
+		x = 20
+		y = 0
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = conservative_victory
+        }
+	}
+
+    focus = {
+		id = CRW_fight_protest
+		icon = GFX_goal_AUT_economic_reforms
+        prerequisite = { focus = CRW_martial_law}
+		x = 18
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = conservative_victory
+        }
+	}
+
+    focus = {
+		id = CRW_martial_law
+		icon = GFX_goal_AUT_economic_reforms
+		x = 18
+		y = 1
+		cost = 3
+        prerequisite = { focus = CRW_return_to_basics OR focus = CRW_suppres_democracy }
+		ai_will_do = {
+			factor = 80	
+		}
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = CRW_martial_law_tt
+        }
+	}
+}

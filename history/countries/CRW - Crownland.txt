@@ -16,6 +16,12 @@ set_politics = {
 
 country_event = { id = crw.1 days = 1 } #Intro event
 
+set_stability = 0.55
+set_war_support = 0.30
+add_manpower = 10000
+
+add_ideas = CRW_Autocratic_Idea
+
 set_popularities = {
 	conservative = 25
 	liberal = 25
