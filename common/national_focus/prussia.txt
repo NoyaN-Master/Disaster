@@ -1075,7 +1075,7 @@ focus_tree = {
 ######################### DNVP path
 	focus = {
 		id = PRE_dnvp_victory_focus
-		icon = GFX_goal_unknown
+		icon = GFX_goal_victory_hugenberg
 		x = 23
 		y = 0
 		cost = 1		
@@ -1091,7 +1091,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_use_the_stalhelm
-		icon = GFX_goal_unknown
+		icon = GFX_goal_use_stahlhelm
 		x = -1
 		y = 1
 		relative_position_id = PRE_dnvp_victory_focus
@@ -1105,7 +1105,7 @@ focus_tree = {
 	}	
 	focus = {
 		id = PRE_establish_harzbrug_front
-		icon = GFX_goal_unknown
+		icon = GFX_goal_harzbrug_front
 		x = 1
 		y = 1
 		relative_position_id = PRE_dnvp_victory_focus
@@ -1121,7 +1121,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_subdue_the_junkers
-		icon = GFX_goal_unknown
+		icon = GFX_goal_compromise_junkers
 		x = 0
 		y = 2
 		relative_position_id = PRE_dnvp_victory_focus
@@ -1138,7 +1138,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_entrench_the_hugenberg_press
-		icon = GFX_goal_unknown
+		icon = GFX_goal_entrench_hugenberg_press
 		x = -2
 		y = 2
 		relative_position_id = PRE_dnvp_victory_focus
@@ -1155,7 +1155,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_purge_socialists
-		icon = GFX_goal_unknown
+		icon = GFX_goal_purge_socialists
 		x = 2
 		y = 2
 		relative_position_id = PRE_dnvp_victory_focus
@@ -1169,7 +1169,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_absorb_adnp
-		icon = GFX_goal_unknown
+		icon = GFX_goal_outmaneuvre_goring
 		x = -1
 		y = 3
 		relative_position_id = PRE_dnvp_victory_focus
@@ -1188,7 +1188,7 @@ focus_tree = {
 
 	focus = {
 		id = PRE_new_constitution
-		icon = GFX_goal_unknown
+		icon = GFX_goal_new_constitution
 		x = 1
 		y = 3
 		relative_position_id = PRE_dnvp_victory_focus
@@ -1203,7 +1203,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_restore_monarchy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_restore_hohenzollen
 		x = 0
 		y = 4
 		relative_position_id = PRE_dnvp_victory_focus
