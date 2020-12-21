@@ -16,7 +16,7 @@ CRW_Autocratic_Idea = {
 			stability_weekly = 0.01		
 			}
 		}
-}
+
 
 CRW_SocDem_Idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CRW_Independent_City" }
@@ -31,7 +31,6 @@ CRW_SocDem_Idea = {
 			stability_weekly = 0.05
 			}
 		}
-}
 
 CRW_Cons_Idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CRW_Independent_City" }
@@ -58,5 +57,13 @@ CRW_Liberal_Idea = {
 			stability_weekly = 0.03
 			}
 		}
-}		
 
+CRW_dummy_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CRW_Independent_City" }
+			picture = CRW_Independent_City
+			modifier = {
+			add_manpower = var:CRW.stability_var
+			}
+		}		
+}		
+}
