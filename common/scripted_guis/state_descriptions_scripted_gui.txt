@@ -1,0 +1,12 @@
+#State descriptions scripted GUI by Gindisi ( https://discord.gg/pNwYgt6 )
+
+scripted_gui = {
+	state_desc = {
+		context_type = selected_state_context
+		parent_window_token = selected_state_view
+		window_name = "state_desc_container"
+		visible = {
+			always = yes
+		}
+	}
+}

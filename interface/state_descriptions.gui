@@ -1,0 +1,21 @@
+#State descriptions scripted GUI by Gindisi ( https://discord.gg/pNwYgt6 )
+
+guiTypes = {
+	containerWindowType = {
+		name = "state_desc_container"
+		position = { x=60 y=5 }
+
+		instantTextBoxType = {
+			name = "state_desc_textbox"
+			position = { x = 0 y = 0 }
+			textureFile = ""
+			font = "hoi_24header"
+			text = ""
+			maxWidth = 320
+			maxHeight = 30
+			format = center
+			
+			pdx_tooltip = "STATE_DESC_TOOLTIP"
+		}
+	}
+}
