@@ -1641,7 +1641,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_strengthen_civil_liberties
-		icon = GFX_goal_unknown
+		icon = GFX_goal_IST_Free_Will
 		x = -3
 		y = 5
 		relative_position_id = PRE_liberal_victory_focus
@@ -1654,7 +1654,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_neue_deutsche_bildung
-		icon = GFX_goal_unknown
+		icon = GFX_focus_research
 		x = -3
 		y = 6
 		relative_position_id = PRE_liberal_victory_focus
@@ -1668,7 +1668,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_public_works
-		icon = GFX_goal_unknown
+		icon = GFX_goal_AUT_new_labour_charter
 		x = -3
 		y = 7
 		relative_position_id = PRE_liberal_victory_focus
@@ -1690,7 +1690,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_aid_the_workers
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_treaty
 		x = -1
 		y = 5
 		relative_position_id = PRE_liberal_victory_focus
@@ -1703,7 +1703,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_encourage_entrepeneurs
-		icon = GFX_goal_unknown
+		icon = GFX_goal_AUT_farmers_to_factorymen
 		x = -1
 		y = 6
 		relative_position_id = PRE_liberal_victory_focus
@@ -1719,7 +1719,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_privatise_unprofitable_industries
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_industry_3
 		x = -1
 		y = 7
 		relative_position_id = PRE_liberal_victory_focus
@@ -1763,7 +1763,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_steel_works
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_steel
 		x = 1
 		y = 5
 		relative_position_id = PRE_liberal_victory_focus
@@ -1794,7 +1794,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_embrace_free_trade
-		icon = GFX_goal_unknown
+		icon = GFX_goal_AUT_grain_exports
 		x = 1
 		y = 6
 		relative_position_id = PRE_liberal_victory_focus
@@ -1822,7 +1822,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_democratic_arsenal
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ger_oppose_hitler
 		x = 1
 		y = 7
 		relative_position_id = PRE_liberal_victory_focus
@@ -1858,7 +1858,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_eastern_land_reform
-		icon = GFX_goal_unknown
+		icon = GFX_goal_AUT_maintain_agrarianism
 		x = 3
 		y = 5
 		relative_position_id = PRE_liberal_victory_focus
@@ -1890,7 +1890,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_liberal_nationalism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_abandon_the_gold_standard
 		x = 3
 		y = 6
 		relative_position_id = PRE_liberal_victory_focus
@@ -1907,7 +1907,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_democratic_army
-		icon = GFX_goal_unknown
+		icon = GFX_goal_democratic_army
 		x = 3
 		y = 7
 		relative_position_id = PRE_liberal_victory_focus
@@ -1925,7 +1925,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_germany_united_and_free
-		icon = GFX_goal_unknown
+		icon = GFX_goal_deutschland_vereint
 		x = 0
 		y = 8
 		relative_position_id = PRE_liberal_victory_focus
