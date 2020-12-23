@@ -1,0 +1,4727 @@
+#State descriptions scripted GUI by Gindisi ( https://discord.gg/pNwYgt6 )
+
+defined_text = {
+	name = GetStateDesc
+	text = {
+		trigger = {
+			state = 1
+		}
+		localization_key = STATE_1_DESC
+	}
+	text = {
+		trigger = {
+			state = 2
+		}
+		localization_key = STATE_2_DESC
+	}
+	text = {
+		trigger = {
+			state = 3
+		}
+		localization_key = STATE_3_DESC
+	}
+	text = {
+		trigger = {
+			state = 4
+		}
+		localization_key = STATE_4_DESC
+	}
+	text = {
+		trigger = {
+			state = 5
+		}
+		localization_key = STATE_5_DESC
+	}
+	text = {
+		trigger = {
+			state = 6
+		}
+		localization_key = STATE_6_DESC
+	}
+	text = {
+		trigger = {
+			state = 7
+		}
+		localization_key = STATE_7_DESC
+	}
+	text = {
+		trigger = {
+			state = 8
+		}
+		localization_key = STATE_8_DESC
+	}
+	text = {
+		trigger = {
+			state = 9
+		}
+		localization_key = STATE_9_DESC
+	}
+	text = {
+		trigger = {
+			state = 10
+		}
+		localization_key = STATE_10_DESC
+	}
+	text = {
+		trigger = {
+			state = 11
+		}
+		localization_key = STATE_11_DESC
+	}
+	text = {
+		trigger = {
+			state = 12
+		}
+		localization_key = STATE_12_DESC
+	}
+	text = {
+		trigger = {
+			state = 13
+		}
+		localization_key = STATE_13_DESC
+	}
+	text = {
+		trigger = {
+			state = 14
+		}
+		localization_key = STATE_14_DESC
+	}
+	text = {
+		trigger = {
+			state = 15
+		}
+		localization_key = STATE_15_DESC
+	}
+	text = {
+		trigger = {
+			state = 16
+		}
+		localization_key = STATE_16_DESC
+	}
+	text = {
+		trigger = {
+			state = 17
+		}
+		localization_key = STATE_17_DESC
+	}
+	text = {
+		trigger = {
+			state = 18
+		}
+		localization_key = STATE_18_DESC
+	}
+	text = {
+		trigger = {
+			state = 19
+		}
+		localization_key = STATE_19_DESC
+	}
+	text = {
+		trigger = {
+			state = 20
+		}
+		localization_key = STATE_20_DESC
+	}
+	text = {
+		trigger = {
+			state = 21
+		}
+		localization_key = STATE_21_DESC
+	}
+	text = {
+		trigger = {
+			state = 22
+		}
+		localization_key = STATE_22_DESC
+	}
+	text = {
+		trigger = {
+			state = 23
+		}
+		localization_key = STATE_23_DESC
+	}
+	text = {
+		trigger = {
+			state = 24
+		}
+		localization_key = STATE_24_DESC
+	}
+	text = {
+		trigger = {
+			state = 25
+		}
+		localization_key = STATE_25_DESC
+	}
+	text = {
+		trigger = {
+			state = 26
+		}
+		localization_key = STATE_26_DESC
+	}
+	text = {
+		trigger = {
+			state = 27
+		}
+		localization_key = STATE_27_DESC
+	}
+	text = {
+		trigger = {
+			state = 28
+		}
+		localization_key = STATE_28_DESC
+	}
+	text = {
+		trigger = {
+			state = 29
+		}
+		localization_key = STATE_29_DESC
+	}
+	text = {
+		trigger = {
+			state = 30
+		}
+		localization_key = STATE_30_DESC
+	}
+	text = {
+		trigger = {
+			state = 31
+		}
+		localization_key = STATE_31_DESC
+	}
+	text = {
+		trigger = {
+			state = 32
+		}
+		localization_key = STATE_32_DESC
+	}
+	text = {
+		trigger = {
+			state = 33
+		}
+		localization_key = STATE_33_DESC
+	}
+	text = {
+		trigger = {
+			state = 34
+		}
+		localization_key = STATE_34_DESC
+	}
+	text = {
+		trigger = {
+			state = 35
+		}
+		localization_key = STATE_35_DESC
+	}
+	text = {
+		trigger = {
+			state = 36
+		}
+		localization_key = STATE_36_DESC
+	}
+	text = {
+		trigger = {
+			state = 37
+		}
+		localization_key = STATE_37_DESC
+	}
+	text = {
+		trigger = {
+			state = 38
+		}
+		localization_key = STATE_38_DESC
+	}
+	text = {
+		trigger = {
+			state = 39
+		}
+		localization_key = STATE_39_DESC
+	}
+	text = {
+		trigger = {
+			state = 40
+		}
+		localization_key = STATE_40_DESC
+	}
+	text = {
+		trigger = {
+			state = 41
+		}
+		localization_key = STATE_41_DESC
+	}
+	text = {
+		trigger = {
+			state = 42
+		}
+		localization_key = STATE_42_DESC
+	}
+	text = {
+		trigger = {
+			state = 43
+		}
+		localization_key = STATE_43_DESC
+	}
+	text = {
+		trigger = {
+			state = 44
+		}
+		localization_key = STATE_44_DESC
+	}
+	text = {
+		trigger = {
+			state = 45
+		}
+		localization_key = STATE_45_DESC
+	}
+	text = {
+		trigger = {
+			state = 46
+		}
+		localization_key = STATE_46_DESC
+	}
+	text = {
+		trigger = {
+			state = 47
+		}
+		localization_key = STATE_47_DESC
+	}
+	text = {
+		trigger = {
+			state = 48
+		}
+		localization_key = STATE_48_DESC
+	}
+	text = {
+		trigger = {
+			state = 49
+		}
+		localization_key = STATE_49_DESC
+	}
+	text = {
+		trigger = {
+			state = 50
+		}
+		localization_key = STATE_50_DESC
+	}
+	text = {
+		trigger = {
+			state = 51
+		}
+		localization_key = STATE_51_DESC
+	}
+	text = {
+		trigger = {
+			state = 52
+		}
+		localization_key = STATE_52_DESC
+	}
+	text = {
+		trigger = {
+			state = 53
+		}
+		localization_key = STATE_53_DESC
+	}
+	text = {
+		trigger = {
+			state = 54
+		}
+		localization_key = STATE_54_DESC
+	}
+	text = {
+		trigger = {
+			state = 55
+		}
+		localization_key = STATE_55_DESC
+	}
+	text = {
+		trigger = {
+			state = 56
+		}
+		localization_key = STATE_56_DESC
+	}
+	text = {
+		trigger = {
+			state = 57
+		}
+		localization_key = STATE_57_DESC
+	}
+	text = {
+		trigger = {
+			state = 58
+		}
+		localization_key = STATE_58_DESC
+	}
+	text = {
+		trigger = {
+			state = 59
+		}
+		localization_key = STATE_59_DESC
+	}
+	text = {
+		trigger = {
+			state = 60
+		}
+		localization_key = STATE_60_DESC
+	}
+	text = {
+		trigger = {
+			state = 61
+		}
+		localization_key = STATE_61_DESC
+	}
+	text = {
+		trigger = {
+			state = 62
+		}
+		localization_key = STATE_62_DESC
+	}
+	text = {
+		trigger = {
+			state = 63
+		}
+		localization_key = STATE_63_DESC
+	}
+	text = {
+		trigger = {
+			state = 64
+		}
+		localization_key = STATE_64_DESC
+	}
+	text = {
+		trigger = {
+			state = 65
+		}
+		localization_key = STATE_65_DESC
+	}
+	text = {
+		trigger = {
+			state = 66
+		}
+		localization_key = STATE_66_DESC
+	}
+	text = {
+		trigger = {
+			state = 67
+		}
+		localization_key = STATE_67_DESC
+	}
+	text = {
+		trigger = {
+			state = 68
+		}
+		localization_key = STATE_68_DESC
+	}
+	text = {
+		trigger = {
+			state = 69
+		}
+		localization_key = STATE_69_DESC
+	}
+	text = {
+		trigger = {
+			state = 70
+		}
+		localization_key = STATE_70_DESC
+	}
+	text = {
+		trigger = {
+			state = 71
+		}
+		localization_key = STATE_71_DESC
+	}
+	text = {
+		trigger = {
+			state = 72
+		}
+		localization_key = STATE_72_DESC
+	}
+	text = {
+		trigger = {
+			state = 73
+		}
+		localization_key = STATE_73_DESC
+	}
+	text = {
+		trigger = {
+			state = 74
+		}
+		localization_key = STATE_74_DESC
+	}
+	text = {
+		trigger = {
+			state = 75
+		}
+		localization_key = STATE_75_DESC
+	}
+	text = {
+		trigger = {
+			state = 76
+		}
+		localization_key = STATE_76_DESC
+	}
+	text = {
+		trigger = {
+			state = 77
+		}
+		localization_key = STATE_77_DESC
+	}
+	text = {
+		trigger = {
+			state = 78
+		}
+		localization_key = STATE_78_DESC
+	}
+	text = {
+		trigger = {
+			state = 79
+		}
+		localization_key = STATE_79_DESC
+	}
+	text = {
+		trigger = {
+			state = 80
+		}
+		localization_key = STATE_80_DESC
+	}
+	text = {
+		trigger = {
+			state = 81
+		}
+		localization_key = STATE_81_DESC
+	}
+	text = {
+		trigger = {
+			state = 82
+		}
+		localization_key = STATE_82_DESC
+	}
+	text = {
+		trigger = {
+			state = 83
+		}
+		localization_key = STATE_83_DESC
+	}
+	text = {
+		trigger = {
+			state = 84
+		}
+		localization_key = STATE_84_DESC
+	}
+	text = {
+		trigger = {
+			state = 85
+		}
+		localization_key = STATE_85_DESC
+	}
+	text = {
+		trigger = {
+			state = 86
+		}
+		localization_key = STATE_86_DESC
+	}
+	text = {
+		trigger = {
+			state = 87
+		}
+		localization_key = STATE_87_DESC
+	}
+	text = {
+		trigger = {
+			state = 88
+		}
+		localization_key = STATE_88_DESC
+	}
+	text = {
+		trigger = {
+			state = 89
+		}
+		localization_key = STATE_89_DESC
+	}
+	text = {
+		trigger = {
+			state = 90
+		}
+		localization_key = STATE_90_DESC
+	}
+	text = {
+		trigger = {
+			state = 91
+		}
+		localization_key = STATE_91_DESC
+	}
+	text = {
+		trigger = {
+			state = 92
+		}
+		localization_key = STATE_92_DESC
+	}
+	text = {
+		trigger = {
+			state = 93
+		}
+		localization_key = STATE_93_DESC
+	}
+	text = {
+		trigger = {
+			state = 94
+		}
+		localization_key = STATE_94_DESC
+	}
+	text = {
+		trigger = {
+			state = 95
+		}
+		localization_key = STATE_95_DESC
+	}
+	text = {
+		trigger = {
+			state = 96
+		}
+		localization_key = STATE_96_DESC
+	}
+	text = {
+		trigger = {
+			state = 97
+		}
+		localization_key = STATE_97_DESC
+	}
+	text = {
+		trigger = {
+			state = 98
+		}
+		localization_key = STATE_98_DESC
+	}
+	text = {
+		trigger = {
+			state = 99
+		}
+		localization_key = STATE_99_DESC
+	}
+	text = {
+		trigger = {
+			state = 100
+		}
+		localization_key = STATE_100_DESC
+	}
+	text = {
+		trigger = {
+			state = 101
+		}
+		localization_key = STATE_101_DESC
+	}
+	text = {
+		trigger = {
+			state = 102
+		}
+		localization_key = STATE_102_DESC
+	}
+	text = {
+		trigger = {
+			state = 103
+		}
+		localization_key = STATE_103_DESC
+	}
+	text = {
+		trigger = {
+			state = 104
+		}
+		localization_key = STATE_104_DESC
+	}
+	text = {
+		trigger = {
+			state = 105
+		}
+		localization_key = STATE_105_DESC
+	}
+	text = {
+		trigger = {
+			state = 106
+		}
+		localization_key = STATE_106_DESC
+	}
+	text = {
+		trigger = {
+			state = 107
+		}
+		localization_key = STATE_107_DESC
+	}
+	text = {
+		trigger = {
+			state = 108
+		}
+		localization_key = STATE_108_DESC
+	}
+	text = {
+		trigger = {
+			state = 109
+		}
+		localization_key = STATE_109_DESC
+	}
+	text = {
+		trigger = {
+			state = 110
+		}
+		localization_key = STATE_110_DESC
+	}
+	text = {
+		trigger = {
+			state = 111
+		}
+		localization_key = STATE_111_DESC
+	}
+	text = {
+		trigger = {
+			state = 112
+		}
+		localization_key = STATE_112_DESC
+	}
+	text = {
+		trigger = {
+			state = 113
+		}
+		localization_key = STATE_113_DESC
+	}
+	text = {
+		trigger = {
+			state = 114
+		}
+		localization_key = STATE_114_DESC
+	}
+	text = {
+		trigger = {
+			state = 115
+		}
+		localization_key = STATE_115_DESC
+	}
+	text = {
+		trigger = {
+			state = 116
+		}
+		localization_key = STATE_116_DESC
+	}
+	text = {
+		trigger = {
+			state = 117
+		}
+		localization_key = STATE_117_DESC
+	}
+	text = {
+		trigger = {
+			state = 118
+		}
+		localization_key = STATE_118_DESC
+	}
+	text = {
+		trigger = {
+			state = 119
+		}
+		localization_key = STATE_119_DESC
+	}
+	text = {
+		trigger = {
+			state = 120
+		}
+		localization_key = STATE_120_DESC
+	}
+	text = {
+		trigger = {
+			state = 121
+		}
+		localization_key = STATE_121_DESC
+	}
+	text = {
+		trigger = {
+			state = 122
+		}
+		localization_key = STATE_122_DESC
+	}
+	text = {
+		trigger = {
+			state = 123
+		}
+		localization_key = STATE_123_DESC
+	}
+	text = {
+		trigger = {
+			state = 124
+		}
+		localization_key = STATE_124_DESC
+	}
+	text = {
+		trigger = {
+			state = 125
+		}
+		localization_key = STATE_125_DESC
+	}
+	text = {
+		trigger = {
+			state = 126
+		}
+		localization_key = STATE_126_DESC
+	}
+	text = {
+		trigger = {
+			state = 127
+		}
+		localization_key = STATE_127_DESC
+	}
+	text = {
+		trigger = {
+			state = 128
+		}
+		localization_key = STATE_128_DESC
+	}
+	text = {
+		trigger = {
+			state = 129
+		}
+		localization_key = STATE_129_DESC
+	}
+	text = {
+		trigger = {
+			state = 130
+		}
+		localization_key = STATE_130_DESC
+	}
+	text = {
+		trigger = {
+			state = 131
+		}
+		localization_key = STATE_131_DESC
+	}
+	text = {
+		trigger = {
+			state = 132
+		}
+		localization_key = STATE_132_DESC
+	}
+	text = {
+		trigger = {
+			state = 133
+		}
+		localization_key = STATE_133_DESC
+	}
+	text = {
+		trigger = {
+			state = 134
+		}
+		localization_key = STATE_134_DESC
+	}
+	text = {
+		trigger = {
+			state = 135
+		}
+		localization_key = STATE_135_DESC
+	}
+	text = {
+		trigger = {
+			state = 136
+		}
+		localization_key = STATE_136_DESC
+	}
+	text = {
+		trigger = {
+			state = 137
+		}
+		localization_key = STATE_137_DESC
+	}
+	text = {
+		trigger = {
+			state = 138
+		}
+		localization_key = STATE_138_DESC
+	}
+	text = {
+		trigger = {
+			state = 139
+		}
+		localization_key = STATE_139_DESC
+	}
+	text = {
+		trigger = {
+			state = 140
+		}
+		localization_key = STATE_140_DESC
+	}
+	text = {
+		trigger = {
+			state = 141
+		}
+		localization_key = STATE_141_DESC
+	}
+	text = {
+		trigger = {
+			state = 142
+		}
+		localization_key = STATE_142_DESC
+	}
+	text = {
+		trigger = {
+			state = 143
+		}
+		localization_key = STATE_143_DESC
+	}
+	text = {
+		trigger = {
+			state = 144
+		}
+		localization_key = STATE_144_DESC
+	}
+	text = {
+		trigger = {
+			state = 145
+		}
+		localization_key = STATE_145_DESC
+	}
+	text = {
+		trigger = {
+			state = 146
+		}
+		localization_key = STATE_146_DESC
+	}
+	text = {
+		trigger = {
+			state = 147
+		}
+		localization_key = STATE_147_DESC
+	}
+	text = {
+		trigger = {
+			state = 148
+		}
+		localization_key = STATE_148_DESC
+	}
+	text = {
+		trigger = {
+			state = 149
+		}
+		localization_key = STATE_149_DESC
+	}
+	text = {
+		trigger = {
+			state = 150
+		}
+		localization_key = STATE_150_DESC
+	}
+	text = {
+		trigger = {
+			state = 151
+		}
+		localization_key = STATE_151_DESC
+	}
+	text = {
+		trigger = {
+			state = 152
+		}
+		localization_key = STATE_152_DESC
+	}
+	text = {
+		trigger = {
+			state = 153
+		}
+		localization_key = STATE_153_DESC
+	}
+	text = {
+		trigger = {
+			state = 154
+		}
+		localization_key = STATE_154_DESC
+	}
+	text = {
+		trigger = {
+			state = 155
+		}
+		localization_key = STATE_155_DESC
+	}
+	text = {
+		trigger = {
+			state = 156
+		}
+		localization_key = STATE_156_DESC
+	}
+	text = {
+		trigger = {
+			state = 157
+		}
+		localization_key = STATE_157_DESC
+	}
+	text = {
+		trigger = {
+			state = 158
+		}
+		localization_key = STATE_158_DESC
+	}
+	text = {
+		trigger = {
+			state = 159
+		}
+		localization_key = STATE_159_DESC
+	}
+	text = {
+		trigger = {
+			state = 160
+		}
+		localization_key = STATE_160_DESC
+	}
+	text = {
+		trigger = {
+			state = 161
+		}
+		localization_key = STATE_161_DESC
+	}
+	text = {
+		trigger = {
+			state = 162
+		}
+		localization_key = STATE_162_DESC
+	}
+	text = {
+		trigger = {
+			state = 163
+		}
+		localization_key = STATE_163_DESC
+	}
+	text = {
+		trigger = {
+			state = 164
+		}
+		localization_key = STATE_164_DESC
+	}
+	text = {
+		trigger = {
+			state = 165
+		}
+		localization_key = STATE_165_DESC
+	}
+	text = {
+		trigger = {
+			state = 166
+		}
+		localization_key = STATE_166_DESC
+	}
+	text = {
+		trigger = {
+			state = 167
+		}
+		localization_key = STATE_167_DESC
+	}
+	text = {
+		trigger = {
+			state = 168
+		}
+		localization_key = STATE_168_DESC
+	}
+	text = {
+		trigger = {
+			state = 169
+		}
+		localization_key = STATE_169_DESC
+	}
+	text = {
+		trigger = {
+			state = 170
+		}
+		localization_key = STATE_170_DESC
+	}
+	text = {
+		trigger = {
+			state = 171
+		}
+		localization_key = STATE_171_DESC
+	}
+	text = {
+		trigger = {
+			state = 172
+		}
+		localization_key = STATE_172_DESC
+	}
+	text = {
+		trigger = {
+			state = 173
+		}
+		localization_key = STATE_173_DESC
+	}
+	text = {
+		trigger = {
+			state = 174
+		}
+		localization_key = STATE_174_DESC
+	}
+	text = {
+		trigger = {
+			state = 175
+		}
+		localization_key = STATE_175_DESC
+	}
+	text = {
+		trigger = {
+			state = 176
+		}
+		localization_key = STATE_176_DESC
+	}
+	text = {
+		trigger = {
+			state = 177
+		}
+		localization_key = STATE_177_DESC
+	}
+	text = {
+		trigger = {
+			state = 178
+		}
+		localization_key = STATE_178_DESC
+	}
+	text = {
+		trigger = {
+			state = 179
+		}
+		localization_key = STATE_179_DESC
+	}
+	text = {
+		trigger = {
+			state = 180
+		}
+		localization_key = STATE_180_DESC
+	}
+	text = {
+		trigger = {
+			state = 181
+		}
+		localization_key = STATE_181_DESC
+	}
+	text = {
+		trigger = {
+			state = 182
+		}
+		localization_key = STATE_182_DESC
+	}
+	text = {
+		trigger = {
+			state = 183
+		}
+		localization_key = STATE_183_DESC
+	}
+	text = {
+		trigger = {
+			state = 184
+		}
+		localization_key = STATE_184_DESC
+	}
+	text = {
+		trigger = {
+			state = 185
+		}
+		localization_key = STATE_185_DESC
+	}
+	text = {
+		trigger = {
+			state = 186
+		}
+		localization_key = STATE_186_DESC
+	}
+	text = {
+		trigger = {
+			state = 187
+		}
+		localization_key = STATE_187_DESC
+	}
+	text = {
+		trigger = {
+			state = 188
+		}
+		localization_key = STATE_188_DESC
+	}
+	text = {
+		trigger = {
+			state = 189
+		}
+		localization_key = STATE_189_DESC
+	}
+	text = {
+		trigger = {
+			state = 190
+		}
+		localization_key = STATE_190_DESC
+	}
+	text = {
+		trigger = {
+			state = 191
+		}
+		localization_key = STATE_191_DESC
+	}
+	text = {
+		trigger = {
+			state = 192
+		}
+		localization_key = STATE_192_DESC
+	}
+	text = {
+		trigger = {
+			state = 193
+		}
+		localization_key = STATE_193_DESC
+	}
+	text = {
+		trigger = {
+			state = 194
+		}
+		localization_key = STATE_194_DESC
+	}
+	text = {
+		trigger = {
+			state = 195
+		}
+		localization_key = STATE_195_DESC
+	}
+	text = {
+		trigger = {
+			state = 196
+		}
+		localization_key = STATE_196_DESC
+	}
+	text = {
+		trigger = {
+			state = 197
+		}
+		localization_key = STATE_197_DESC
+	}
+	text = {
+		trigger = {
+			state = 198
+		}
+		localization_key = STATE_198_DESC
+	}
+	text = {
+		trigger = {
+			state = 199
+		}
+		localization_key = STATE_199_DESC
+	}
+	text = {
+		trigger = {
+			state = 200
+		}
+		localization_key = STATE_200_DESC
+	}
+	text = {
+		trigger = {
+			state = 201
+		}
+		localization_key = STATE_201_DESC
+	}
+	text = {
+		trigger = {
+			state = 202
+		}
+		localization_key = STATE_202_DESC
+	}
+	text = {
+		trigger = {
+			state = 203
+		}
+		localization_key = STATE_203_DESC
+	}
+	text = {
+		trigger = {
+			state = 204
+		}
+		localization_key = STATE_204_DESC
+	}
+	text = {
+		trigger = {
+			state = 205
+		}
+		localization_key = STATE_205_DESC
+	}
+	text = {
+		trigger = {
+			state = 206
+		}
+		localization_key = STATE_206_DESC
+	}
+	text = {
+		trigger = {
+			state = 207
+		}
+		localization_key = STATE_207_DESC
+	}
+	text = {
+		trigger = {
+			state = 208
+		}
+		localization_key = STATE_208_DESC
+	}
+	text = {
+		trigger = {
+			state = 209
+		}
+		localization_key = STATE_209_DESC
+	}
+	text = {
+		trigger = {
+			state = 210
+		}
+		localization_key = STATE_210_DESC
+	}
+	text = {
+		trigger = {
+			state = 211
+		}
+		localization_key = STATE_211_DESC
+	}
+	text = {
+		trigger = {
+			state = 212
+		}
+		localization_key = STATE_212_DESC
+	}
+	text = {
+		trigger = {
+			state = 213
+		}
+		localization_key = STATE_213_DESC
+	}
+	text = {
+		trigger = {
+			state = 214
+		}
+		localization_key = STATE_214_DESC
+	}
+	text = {
+		trigger = {
+			state = 215
+		}
+		localization_key = STATE_215_DESC
+	}
+	text = {
+		trigger = {
+			state = 216
+		}
+		localization_key = STATE_216_DESC
+	}
+	text = {
+		trigger = {
+			state = 217
+		}
+		localization_key = STATE_217_DESC
+	}
+	text = {
+		trigger = {
+			state = 218
+		}
+		localization_key = STATE_218_DESC
+	}
+	text = {
+		trigger = {
+			state = 219
+		}
+		localization_key = STATE_219_DESC
+	}
+	text = {
+		trigger = {
+			state = 220
+		}
+		localization_key = STATE_220_DESC
+	}
+	text = {
+		trigger = {
+			state = 221
+		}
+		localization_key = STATE_221_DESC
+	}
+	text = {
+		trigger = {
+			state = 222
+		}
+		localization_key = STATE_222_DESC
+	}
+	text = {
+		trigger = {
+			state = 223
+		}
+		localization_key = STATE_223_DESC
+	}
+	text = {
+		trigger = {
+			state = 224
+		}
+		localization_key = STATE_224_DESC
+	}
+	text = {
+		trigger = {
+			state = 225
+		}
+		localization_key = STATE_225_DESC
+	}
+	text = {
+		trigger = {
+			state = 226
+		}
+		localization_key = STATE_226_DESC
+	}
+	text = {
+		trigger = {
+			state = 227
+		}
+		localization_key = STATE_227_DESC
+	}
+	text = {
+		trigger = {
+			state = 228
+		}
+		localization_key = STATE_228_DESC
+	}
+	text = {
+		trigger = {
+			state = 229
+		}
+		localization_key = STATE_229_DESC
+	}
+	text = {
+		trigger = {
+			state = 230
+		}
+		localization_key = STATE_230_DESC
+	}
+	text = {
+		trigger = {
+			state = 231
+		}
+		localization_key = STATE_231_DESC
+	}
+	text = {
+		trigger = {
+			state = 232
+		}
+		localization_key = STATE_232_DESC
+	}
+	text = {
+		trigger = {
+			state = 233
+		}
+		localization_key = STATE_233_DESC
+	}
+	text = {
+		trigger = {
+			state = 234
+		}
+		localization_key = STATE_234_DESC
+	}
+	text = {
+		trigger = {
+			state = 235
+		}
+		localization_key = STATE_235_DESC
+	}
+	text = {
+		trigger = {
+			state = 236
+		}
+		localization_key = STATE_236_DESC
+	}
+	text = {
+		trigger = {
+			state = 237
+		}
+		localization_key = STATE_237_DESC
+	}
+	text = {
+		trigger = {
+			state = 238
+		}
+		localization_key = STATE_238_DESC
+	}
+	text = {
+		trigger = {
+			state = 239
+		}
+		localization_key = STATE_239_DESC
+	}
+	text = {
+		trigger = {
+			state = 240
+		}
+		localization_key = STATE_240_DESC
+	}
+	text = {
+		trigger = {
+			state = 241
+		}
+		localization_key = STATE_241_DESC
+	}
+	text = {
+		trigger = {
+			state = 242
+		}
+		localization_key = STATE_242_DESC
+	}
+	text = {
+		trigger = {
+			state = 243
+		}
+		localization_key = STATE_243_DESC
+	}
+	text = {
+		trigger = {
+			state = 244
+		}
+		localization_key = STATE_244_DESC
+	}
+	text = {
+		trigger = {
+			state = 245
+		}
+		localization_key = STATE_245_DESC
+	}
+	text = {
+		trigger = {
+			state = 246
+		}
+		localization_key = STATE_246_DESC
+	}
+	text = {
+		trigger = {
+			state = 247
+		}
+		localization_key = STATE_247_DESC
+	}
+	text = {
+		trigger = {
+			state = 248
+		}
+		localization_key = STATE_248_DESC
+	}
+	text = {
+		trigger = {
+			state = 249
+		}
+		localization_key = STATE_249_DESC
+	}
+	text = {
+		trigger = {
+			state = 250
+		}
+		localization_key = STATE_250_DESC
+	}
+	text = {
+		trigger = {
+			state = 251
+		}
+		localization_key = STATE_251_DESC
+	}
+	text = {
+		trigger = {
+			state = 252
+		}
+		localization_key = STATE_252_DESC
+	}
+	text = {
+		trigger = {
+			state = 253
+		}
+		localization_key = STATE_253_DESC
+	}
+	text = {
+		trigger = {
+			state = 254
+		}
+		localization_key = STATE_254_DESC
+	}
+	text = {
+		trigger = {
+			state = 255
+		}
+		localization_key = STATE_255_DESC
+	}
+	text = {
+		trigger = {
+			state = 256
+		}
+		localization_key = STATE_256_DESC
+	}
+	text = {
+		trigger = {
+			state = 257
+		}
+		localization_key = STATE_257_DESC
+	}
+	text = {
+		trigger = {
+			state = 258
+		}
+		localization_key = STATE_258_DESC
+	}
+	text = {
+		trigger = {
+			state = 259
+		}
+		localization_key = STATE_259_DESC
+	}
+	text = {
+		trigger = {
+			state = 260
+		}
+		localization_key = STATE_260_DESC
+	}
+	text = {
+		trigger = {
+			state = 261
+		}
+		localization_key = STATE_261_DESC
+	}
+	text = {
+		trigger = {
+			state = 262
+		}
+		localization_key = STATE_262_DESC
+	}
+	text = {
+		trigger = {
+			state = 263
+		}
+		localization_key = STATE_263_DESC
+	}
+	text = {
+		trigger = {
+			state = 264
+		}
+		localization_key = STATE_264_DESC
+	}
+	text = {
+		trigger = {
+			state = 265
+		}
+		localization_key = STATE_265_DESC
+	}
+	text = {
+		trigger = {
+			state = 266
+		}
+		localization_key = STATE_266_DESC
+	}
+	text = {
+		trigger = {
+			state = 267
+		}
+		localization_key = STATE_267_DESC
+	}
+	text = {
+		trigger = {
+			state = 268
+		}
+		localization_key = STATE_268_DESC
+	}
+	text = {
+		trigger = {
+			state = 269
+		}
+		localization_key = STATE_269_DESC
+	}
+	text = {
+		trigger = {
+			state = 270
+		}
+		localization_key = STATE_270_DESC
+	}
+	text = {
+		trigger = {
+			state = 271
+		}
+		localization_key = STATE_271_DESC
+	}
+	text = {
+		trigger = {
+			state = 272
+		}
+		localization_key = STATE_272_DESC
+	}
+	text = {
+		trigger = {
+			state = 273
+		}
+		localization_key = STATE_273_DESC
+	}
+	text = {
+		trigger = {
+			state = 274
+		}
+		localization_key = STATE_274_DESC
+	}
+	text = {
+		trigger = {
+			state = 275
+		}
+		localization_key = STATE_275_DESC
+	}
+	text = {
+		trigger = {
+			state = 276
+		}
+		localization_key = STATE_276_DESC
+	}
+	text = {
+		trigger = {
+			state = 277
+		}
+		localization_key = STATE_277_DESC
+	}
+	text = {
+		trigger = {
+			state = 278
+		}
+		localization_key = STATE_278_DESC
+	}
+	text = {
+		trigger = {
+			state = 279
+		}
+		localization_key = STATE_279_DESC
+	}
+	text = {
+		trigger = {
+			state = 280
+		}
+		localization_key = STATE_280_DESC
+	}
+	text = {
+		trigger = {
+			state = 281
+		}
+		localization_key = STATE_281_DESC
+	}
+	text = {
+		trigger = {
+			state = 282
+		}
+		localization_key = STATE_282_DESC
+	}
+	text = {
+		trigger = {
+			state = 283
+		}
+		localization_key = STATE_283_DESC
+	}
+	text = {
+		trigger = {
+			state = 284
+		}
+		localization_key = STATE_284_DESC
+	}
+	text = {
+		trigger = {
+			state = 285
+		}
+		localization_key = STATE_285_DESC
+	}
+	text = {
+		trigger = {
+			state = 286
+		}
+		localization_key = STATE_286_DESC
+	}
+	text = {
+		trigger = {
+			state = 287
+		}
+		localization_key = STATE_287_DESC
+	}
+	text = {
+		trigger = {
+			state = 288
+		}
+		localization_key = STATE_288_DESC
+	}
+	text = {
+		trigger = {
+			state = 289
+		}
+		localization_key = STATE_289_DESC
+	}
+	text = {
+		trigger = {
+			state = 290
+		}
+		localization_key = STATE_290_DESC
+	}
+	text = {
+		trigger = {
+			state = 291
+		}
+		localization_key = STATE_291_DESC
+	}
+	text = {
+		trigger = {
+			state = 292
+		}
+		localization_key = STATE_292_DESC
+	}
+	text = {
+		trigger = {
+			state = 293
+		}
+		localization_key = STATE_293_DESC
+	}
+	text = {
+		trigger = {
+			state = 294
+		}
+		localization_key = STATE_294_DESC
+	}
+	text = {
+		trigger = {
+			state = 295
+		}
+		localization_key = STATE_295_DESC
+	}
+	text = {
+		trigger = {
+			state = 296
+		}
+		localization_key = STATE_296_DESC
+	}
+	text = {
+		trigger = {
+			state = 297
+		}
+		localization_key = STATE_297_DESC
+	}
+	text = {
+		trigger = {
+			state = 298
+		}
+		localization_key = STATE_298_DESC
+	}
+	text = {
+		trigger = {
+			state = 299
+		}
+		localization_key = STATE_299_DESC
+	}
+	text = {
+		trigger = {
+			state = 300
+		}
+		localization_key = STATE_300_DESC
+	}
+	text = {
+		trigger = {
+			state = 301
+		}
+		localization_key = STATE_301_DESC
+	}
+	text = {
+		trigger = {
+			state = 302
+		}
+		localization_key = STATE_302_DESC
+	}
+	text = {
+		trigger = {
+			state = 303
+		}
+		localization_key = STATE_303_DESC
+	}
+	text = {
+		trigger = {
+			state = 304
+		}
+		localization_key = STATE_304_DESC
+	}
+	text = {
+		trigger = {
+			state = 305
+		}
+		localization_key = STATE_305_DESC
+	}
+	text = {
+		trigger = {
+			state = 306
+		}
+		localization_key = STATE_306_DESC
+	}
+	text = {
+		trigger = {
+			state = 307
+		}
+		localization_key = STATE_307_DESC
+	}
+	text = {
+		trigger = {
+			state = 308
+		}
+		localization_key = STATE_308_DESC
+	}
+	text = {
+		trigger = {
+			state = 309
+		}
+		localization_key = STATE_309_DESC
+	}
+	text = {
+		trigger = {
+			state = 310
+		}
+		localization_key = STATE_310_DESC
+	}
+	text = {
+		trigger = {
+			state = 311
+		}
+		localization_key = STATE_311_DESC
+	}
+	text = {
+		trigger = {
+			state = 312
+		}
+		localization_key = STATE_312_DESC
+	}
+	text = {
+		trigger = {
+			state = 313
+		}
+		localization_key = STATE_313_DESC
+	}
+	text = {
+		trigger = {
+			state = 314
+		}
+		localization_key = STATE_314_DESC
+	}
+	text = {
+		trigger = {
+			state = 315
+		}
+		localization_key = STATE_315_DESC
+	}
+	text = {
+		trigger = {
+			state = 316
+		}
+		localization_key = STATE_316_DESC
+	}
+	text = {
+		trigger = {
+			state = 317
+		}
+		localization_key = STATE_317_DESC
+	}
+	text = {
+		trigger = {
+			state = 318
+		}
+		localization_key = STATE_318_DESC
+	}
+	text = {
+		trigger = {
+			state = 319
+		}
+		localization_key = STATE_319_DESC
+	}
+	text = {
+		trigger = {
+			state = 320
+		}
+		localization_key = STATE_320_DESC
+	}
+	text = {
+		trigger = {
+			state = 321
+		}
+		localization_key = STATE_321_DESC
+	}
+	text = {
+		trigger = {
+			state = 322
+		}
+		localization_key = STATE_322_DESC
+	}
+	text = {
+		trigger = {
+			state = 323
+		}
+		localization_key = STATE_323_DESC
+	}
+	text = {
+		trigger = {
+			state = 324
+		}
+		localization_key = STATE_324_DESC
+	}
+	text = {
+		trigger = {
+			state = 325
+		}
+		localization_key = STATE_325_DESC
+	}
+	text = {
+		trigger = {
+			state = 326
+		}
+		localization_key = STATE_326_DESC
+	}
+	text = {
+		trigger = {
+			state = 327
+		}
+		localization_key = STATE_327_DESC
+	}
+	text = {
+		trigger = {
+			state = 328
+		}
+		localization_key = STATE_328_DESC
+	}
+	text = {
+		trigger = {
+			state = 329
+		}
+		localization_key = STATE_329_DESC
+	}
+	text = {
+		trigger = {
+			state = 330
+		}
+		localization_key = STATE_330_DESC
+	}
+	text = {
+		trigger = {
+			state = 331
+		}
+		localization_key = STATE_331_DESC
+	}
+	text = {
+		trigger = {
+			state = 332
+		}
+		localization_key = STATE_332_DESC
+	}
+	text = {
+		trigger = {
+			state = 333
+		}
+		localization_key = STATE_333_DESC
+	}
+	text = {
+		trigger = {
+			state = 334
+		}
+		localization_key = STATE_334_DESC
+	}
+	text = {
+		trigger = {
+			state = 335
+		}
+		localization_key = STATE_335_DESC
+	}
+	text = {
+		trigger = {
+			state = 336
+		}
+		localization_key = STATE_336_DESC
+	}
+	text = {
+		trigger = {
+			state = 337
+		}
+		localization_key = STATE_337_DESC
+	}
+	text = {
+		trigger = {
+			state = 338
+		}
+		localization_key = STATE_338_DESC
+	}
+	text = {
+		trigger = {
+			state = 339
+		}
+		localization_key = STATE_339_DESC
+	}
+	text = {
+		trigger = {
+			state = 340
+		}
+		localization_key = STATE_340_DESC
+	}
+	text = {
+		trigger = {
+			state = 341
+		}
+		localization_key = STATE_341_DESC
+	}
+	text = {
+		trigger = {
+			state = 342
+		}
+		localization_key = STATE_342_DESC
+	}
+	text = {
+		trigger = {
+			state = 343
+		}
+		localization_key = STATE_343_DESC
+	}
+	text = {
+		trigger = {
+			state = 344
+		}
+		localization_key = STATE_344_DESC
+	}
+	text = {
+		trigger = {
+			state = 345
+		}
+		localization_key = STATE_345_DESC
+	}
+	text = {
+		trigger = {
+			state = 346
+		}
+		localization_key = STATE_346_DESC
+	}
+	text = {
+		trigger = {
+			state = 347
+		}
+		localization_key = STATE_347_DESC
+	}
+	text = {
+		trigger = {
+			state = 348
+		}
+		localization_key = STATE_348_DESC
+	}
+	text = {
+		trigger = {
+			state = 349
+		}
+		localization_key = STATE_349_DESC
+	}
+	text = {
+		trigger = {
+			state = 350
+		}
+		localization_key = STATE_350_DESC
+	}
+	text = {
+		trigger = {
+			state = 351
+		}
+		localization_key = STATE_351_DESC
+	}
+	text = {
+		trigger = {
+			state = 352
+		}
+		localization_key = STATE_352_DESC
+	}
+	text = {
+		trigger = {
+			state = 353
+		}
+		localization_key = STATE_353_DESC
+	}
+	text = {
+		trigger = {
+			state = 354
+		}
+		localization_key = STATE_354_DESC
+	}
+	text = {
+		trigger = {
+			state = 355
+		}
+		localization_key = STATE_355_DESC
+	}
+	text = {
+		trigger = {
+			state = 356
+		}
+		localization_key = STATE_356_DESC
+	}
+	text = {
+		trigger = {
+			state = 357
+		}
+		localization_key = STATE_357_DESC
+	}
+	text = {
+		trigger = {
+			state = 358
+		}
+		localization_key = STATE_358_DESC
+	}
+	text = {
+		trigger = {
+			state = 359
+		}
+		localization_key = STATE_359_DESC
+	}
+	text = {
+		trigger = {
+			state = 360
+		}
+		localization_key = STATE_360_DESC
+	}
+	text = {
+		trigger = {
+			state = 361
+		}
+		localization_key = STATE_361_DESC
+	}
+	text = {
+		trigger = {
+			state = 362
+		}
+		localization_key = STATE_362_DESC
+	}
+	text = {
+		trigger = {
+			state = 363
+		}
+		localization_key = STATE_363_DESC
+	}
+	text = {
+		trigger = {
+			state = 364
+		}
+		localization_key = STATE_364_DESC
+	}
+	text = {
+		trigger = {
+			state = 365
+		}
+		localization_key = STATE_365_DESC
+	}
+	text = {
+		trigger = {
+			state = 366
+		}
+		localization_key = STATE_366_DESC
+	}
+	text = {
+		trigger = {
+			state = 367
+		}
+		localization_key = STATE_367_DESC
+	}
+	text = {
+		trigger = {
+			state = 368
+		}
+		localization_key = STATE_368_DESC
+	}
+	text = {
+		trigger = {
+			state = 369
+		}
+		localization_key = STATE_369_DESC
+	}
+	text = {
+		trigger = {
+			state = 370
+		}
+		localization_key = STATE_370_DESC
+	}
+	text = {
+		trigger = {
+			state = 371
+		}
+		localization_key = STATE_371_DESC
+	}
+	text = {
+		trigger = {
+			state = 372
+		}
+		localization_key = STATE_372_DESC
+	}
+	text = {
+		trigger = {
+			state = 373
+		}
+		localization_key = STATE_373_DESC
+	}
+	text = {
+		trigger = {
+			state = 374
+		}
+		localization_key = STATE_374_DESC
+	}
+	text = {
+		trigger = {
+			state = 375
+		}
+		localization_key = STATE_375_DESC
+	}
+	text = {
+		trigger = {
+			state = 376
+		}
+		localization_key = STATE_376_DESC
+	}
+	text = {
+		trigger = {
+			state = 377
+		}
+		localization_key = STATE_377_DESC
+	}
+	text = {
+		trigger = {
+			state = 378
+		}
+		localization_key = STATE_378_DESC
+	}
+	text = {
+		trigger = {
+			state = 379
+		}
+		localization_key = STATE_379_DESC
+	}
+	text = {
+		trigger = {
+			state = 380
+		}
+		localization_key = STATE_380_DESC
+	}
+	text = {
+		trigger = {
+			state = 381
+		}
+		localization_key = STATE_381_DESC
+	}
+	text = {
+		trigger = {
+			state = 382
+		}
+		localization_key = STATE_382_DESC
+	}
+	text = {
+		trigger = {
+			state = 383
+		}
+		localization_key = STATE_383_DESC
+	}
+	text = {
+		trigger = {
+			state = 384
+		}
+		localization_key = STATE_384_DESC
+	}
+	text = {
+		trigger = {
+			state = 385
+		}
+		localization_key = STATE_385_DESC
+	}
+	text = {
+		trigger = {
+			state = 386
+		}
+		localization_key = STATE_386_DESC
+	}
+	text = {
+		trigger = {
+			state = 387
+		}
+		localization_key = STATE_387_DESC
+	}
+	text = {
+		trigger = {
+			state = 388
+		}
+		localization_key = STATE_388_DESC
+	}
+	text = {
+		trigger = {
+			state = 389
+		}
+		localization_key = STATE_389_DESC
+	}
+	text = {
+		trigger = {
+			state = 390
+		}
+		localization_key = STATE_390_DESC
+	}
+	text = {
+		trigger = {
+			state = 391
+		}
+		localization_key = STATE_391_DESC
+	}
+	text = {
+		trigger = {
+			state = 392
+		}
+		localization_key = STATE_392_DESC
+	}
+	text = {
+		trigger = {
+			state = 393
+		}
+		localization_key = STATE_393_DESC
+	}
+	text = {
+		trigger = {
+			state = 394
+		}
+		localization_key = STATE_394_DESC
+	}
+	text = {
+		trigger = {
+			state = 395
+		}
+		localization_key = STATE_395_DESC
+	}
+	text = {
+		trigger = {
+			state = 396
+		}
+		localization_key = STATE_396_DESC
+	}
+	text = {
+		trigger = {
+			state = 397
+		}
+		localization_key = STATE_397_DESC
+	}
+	text = {
+		trigger = {
+			state = 398
+		}
+		localization_key = STATE_398_DESC
+	}
+	text = {
+		trigger = {
+			state = 399
+		}
+		localization_key = STATE_399_DESC
+	}
+	text = {
+		trigger = {
+			state = 400
+		}
+		localization_key = STATE_400_DESC
+	}
+	text = {
+		trigger = {
+			state = 401
+		}
+		localization_key = STATE_401_DESC
+	}
+	text = {
+		trigger = {
+			state = 402
+		}
+		localization_key = STATE_402_DESC
+	}
+	text = {
+		trigger = {
+			state = 403
+		}
+		localization_key = STATE_403_DESC
+	}
+	text = {
+		trigger = {
+			state = 404
+		}
+		localization_key = STATE_404_DESC
+	}
+	text = {
+		trigger = {
+			state = 405
+		}
+		localization_key = STATE_405_DESC
+	}
+	text = {
+		trigger = {
+			state = 406
+		}
+		localization_key = STATE_406_DESC
+	}
+	text = {
+		trigger = {
+			state = 407
+		}
+		localization_key = STATE_407_DESC
+	}
+	text = {
+		trigger = {
+			state = 408
+		}
+		localization_key = STATE_408_DESC
+	}
+	text = {
+		trigger = {
+			state = 409
+		}
+		localization_key = STATE_409_DESC
+	}
+	text = {
+		trigger = {
+			state = 410
+		}
+		localization_key = STATE_410_DESC
+	}
+	text = {
+		trigger = {
+			state = 411
+		}
+		localization_key = STATE_411_DESC
+	}
+	text = {
+		trigger = {
+			state = 412
+		}
+		localization_key = STATE_412_DESC
+	}
+	text = {
+		trigger = {
+			state = 413
+		}
+		localization_key = STATE_413_DESC
+	}
+	text = {
+		trigger = {
+			state = 414
+		}
+		localization_key = STATE_414_DESC
+	}
+	text = {
+		trigger = {
+			state = 415
+		}
+		localization_key = STATE_415_DESC
+	}
+	text = {
+		trigger = {
+			state = 416
+		}
+		localization_key = STATE_416_DESC
+	}
+	text = {
+		trigger = {
+			state = 417
+		}
+		localization_key = STATE_417_DESC
+	}
+	text = {
+		trigger = {
+			state = 418
+		}
+		localization_key = STATE_418_DESC
+	}
+	text = {
+		trigger = {
+			state = 419
+		}
+		localization_key = STATE_419_DESC
+	}
+	text = {
+		trigger = {
+			state = 420
+		}
+		localization_key = STATE_420_DESC
+	}
+	text = {
+		trigger = {
+			state = 421
+		}
+		localization_key = STATE_421_DESC
+	}
+	text = {
+		trigger = {
+			state = 422
+		}
+		localization_key = STATE_422_DESC
+	}
+	text = {
+		trigger = {
+			state = 423
+		}
+		localization_key = STATE_423_DESC
+	}
+	text = {
+		trigger = {
+			state = 424
+		}
+		localization_key = STATE_424_DESC
+	}
+	text = {
+		trigger = {
+			state = 425
+		}
+		localization_key = STATE_425_DESC
+	}
+	text = {
+		trigger = {
+			state = 426
+		}
+		localization_key = STATE_426_DESC
+	}
+	text = {
+		trigger = {
+			state = 427
+		}
+		localization_key = STATE_427_DESC
+	}
+	text = {
+		trigger = {
+			state = 428
+		}
+		localization_key = STATE_428_DESC
+	}
+	text = {
+		trigger = {
+			state = 429
+		}
+		localization_key = STATE_429_DESC
+	}
+	text = {
+		trigger = {
+			state = 430
+		}
+		localization_key = STATE_430_DESC
+	}
+	text = {
+		trigger = {
+			state = 431
+		}
+		localization_key = STATE_431_DESC
+	}
+	text = {
+		trigger = {
+			state = 432
+		}
+		localization_key = STATE_432_DESC
+	}
+	text = {
+		trigger = {
+			state = 433
+		}
+		localization_key = STATE_433_DESC
+	}
+	text = {
+		trigger = {
+			state = 434
+		}
+		localization_key = STATE_434_DESC
+	}
+	text = {
+		trigger = {
+			state = 435
+		}
+		localization_key = STATE_435_DESC
+	}
+	text = {
+		trigger = {
+			state = 436
+		}
+		localization_key = STATE_436_DESC
+	}
+	text = {
+		trigger = {
+			state = 437
+		}
+		localization_key = STATE_437_DESC
+	}
+	text = {
+		trigger = {
+			state = 438
+		}
+		localization_key = STATE_438_DESC
+	}
+	text = {
+		trigger = {
+			state = 439
+		}
+		localization_key = STATE_439_DESC
+	}
+	text = {
+		trigger = {
+			state = 440
+		}
+		localization_key = STATE_440_DESC
+	}
+	text = {
+		trigger = {
+			state = 441
+		}
+		localization_key = STATE_441_DESC
+	}
+	text = {
+		trigger = {
+			state = 442
+		}
+		localization_key = STATE_442_DESC
+	}
+	text = {
+		trigger = {
+			state = 443
+		}
+		localization_key = STATE_443_DESC
+	}
+	text = {
+		trigger = {
+			state = 444
+		}
+		localization_key = STATE_444_DESC
+	}
+	text = {
+		trigger = {
+			state = 445
+		}
+		localization_key = STATE_445_DESC
+	}
+	text = {
+		trigger = {
+			state = 446
+		}
+		localization_key = STATE_446_DESC
+	}
+	text = {
+		trigger = {
+			state = 447
+		}
+		localization_key = STATE_447_DESC
+	}
+	text = {
+		trigger = {
+			state = 448
+		}
+		localization_key = STATE_448_DESC
+	}
+	text = {
+		trigger = {
+			state = 449
+		}
+		localization_key = STATE_449_DESC
+	}
+	text = {
+		trigger = {
+			state = 450
+		}
+		localization_key = STATE_450_DESC
+	}
+	text = {
+		trigger = {
+			state = 451
+		}
+		localization_key = STATE_451_DESC
+	}
+	text = {
+		trigger = {
+			state = 452
+		}
+		localization_key = STATE_452_DESC
+	}
+	text = {
+		trigger = {
+			state = 453
+		}
+		localization_key = STATE_453_DESC
+	}
+	text = {
+		trigger = {
+			state = 454
+		}
+		localization_key = STATE_454_DESC
+	}
+	text = {
+		trigger = {
+			state = 455
+		}
+		localization_key = STATE_455_DESC
+	}
+	text = {
+		trigger = {
+			state = 456
+		}
+		localization_key = STATE_456_DESC
+	}
+	text = {
+		trigger = {
+			state = 457
+		}
+		localization_key = STATE_457_DESC
+	}
+	text = {
+		trigger = {
+			state = 458
+		}
+		localization_key = STATE_458_DESC
+	}
+	text = {
+		trigger = {
+			state = 459
+		}
+		localization_key = STATE_459_DESC
+	}
+	text = {
+		trigger = {
+			state = 460
+		}
+		localization_key = STATE_460_DESC
+	}
+	text = {
+		trigger = {
+			state = 461
+		}
+		localization_key = STATE_461_DESC
+	}
+	text = {
+		trigger = {
+			state = 462
+		}
+		localization_key = STATE_462_DESC
+	}
+	text = {
+		trigger = {
+			state = 463
+		}
+		localization_key = STATE_463_DESC
+	}
+	text = {
+		trigger = {
+			state = 464
+		}
+		localization_key = STATE_464_DESC
+	}
+	text = {
+		trigger = {
+			state = 465
+		}
+		localization_key = STATE_465_DESC
+	}
+	text = {
+		trigger = {
+			state = 466
+		}
+		localization_key = STATE_466_DESC
+	}
+	text = {
+		trigger = {
+			state = 467
+		}
+		localization_key = STATE_467_DESC
+	}
+	text = {
+		trigger = {
+			state = 468
+		}
+		localization_key = STATE_468_DESC
+	}
+	text = {
+		trigger = {
+			state = 469
+		}
+		localization_key = STATE_469_DESC
+	}
+	text = {
+		trigger = {
+			state = 470
+		}
+		localization_key = STATE_470_DESC
+	}
+	text = {
+		trigger = {
+			state = 471
+		}
+		localization_key = STATE_471_DESC
+	}
+	text = {
+		trigger = {
+			state = 472
+		}
+		localization_key = STATE_472_DESC
+	}
+	text = {
+		trigger = {
+			state = 473
+		}
+		localization_key = STATE_473_DESC
+	}
+	text = {
+		trigger = {
+			state = 474
+		}
+		localization_key = STATE_474_DESC
+	}
+	text = {
+		trigger = {
+			state = 475
+		}
+		localization_key = STATE_475_DESC
+	}
+	text = {
+		trigger = {
+			state = 476
+		}
+		localization_key = STATE_476_DESC
+	}
+	text = {
+		trigger = {
+			state = 477
+		}
+		localization_key = STATE_477_DESC
+	}
+	text = {
+		trigger = {
+			state = 478
+		}
+		localization_key = STATE_478_DESC
+	}
+	text = {
+		trigger = {
+			state = 479
+		}
+		localization_key = STATE_479_DESC
+	}
+	text = {
+		trigger = {
+			state = 480
+		}
+		localization_key = STATE_480_DESC
+	}
+	text = {
+		trigger = {
+			state = 481
+		}
+		localization_key = STATE_481_DESC
+	}
+	text = {
+		trigger = {
+			state = 482
+		}
+		localization_key = STATE_482_DESC
+	}
+	text = {
+		trigger = {
+			state = 483
+		}
+		localization_key = STATE_483_DESC
+	}
+	text = {
+		trigger = {
+			state = 484
+		}
+		localization_key = STATE_484_DESC
+	}
+	text = {
+		trigger = {
+			state = 485
+		}
+		localization_key = STATE_485_DESC
+	}
+	text = {
+		trigger = {
+			state = 486
+		}
+		localization_key = STATE_486_DESC
+	}
+	text = {
+		trigger = {
+			state = 487
+		}
+		localization_key = STATE_487_DESC
+	}
+	text = {
+		trigger = {
+			state = 488
+		}
+		localization_key = STATE_488_DESC
+	}
+	text = {
+		trigger = {
+			state = 489
+		}
+		localization_key = STATE_489_DESC
+	}
+	text = {
+		trigger = {
+			state = 490
+		}
+		localization_key = STATE_490_DESC
+	}
+	text = {
+		trigger = {
+			state = 491
+		}
+		localization_key = STATE_491_DESC
+	}
+	text = {
+		trigger = {
+			state = 492
+		}
+		localization_key = STATE_492_DESC
+	}
+	text = {
+		trigger = {
+			state = 493
+		}
+		localization_key = STATE_493_DESC
+	}
+	text = {
+		trigger = {
+			state = 494
+		}
+		localization_key = STATE_494_DESC
+	}
+	text = {
+		trigger = {
+			state = 495
+		}
+		localization_key = STATE_495_DESC
+	}
+	text = {
+		trigger = {
+			state = 496
+		}
+		localization_key = STATE_496_DESC
+	}
+	text = {
+		trigger = {
+			state = 497
+		}
+		localization_key = STATE_497_DESC
+	}
+	text = {
+		trigger = {
+			state = 498
+		}
+		localization_key = STATE_498_DESC
+	}
+	text = {
+		trigger = {
+			state = 499
+		}
+		localization_key = STATE_499_DESC
+	}
+	text = {
+		trigger = {
+			state = 500
+		}
+		localization_key = STATE_500_DESC
+	}
+	text = {
+		trigger = {
+			state = 501
+		}
+		localization_key = STATE_501_DESC
+	}
+	text = {
+		trigger = {
+			state = 502
+		}
+		localization_key = STATE_502_DESC
+	}
+	text = {
+		trigger = {
+			state = 503
+		}
+		localization_key = STATE_503_DESC
+	}
+	text = {
+		trigger = {
+			state = 504
+		}
+		localization_key = STATE_504_DESC
+	}
+	text = {
+		trigger = {
+			state = 505
+		}
+		localization_key = STATE_505_DESC
+	}
+	text = {
+		trigger = {
+			state = 506
+		}
+		localization_key = STATE_506_DESC
+	}
+	text = {
+		trigger = {
+			state = 507
+		}
+		localization_key = STATE_507_DESC
+	}
+	text = {
+		trigger = {
+			state = 508
+		}
+		localization_key = STATE_508_DESC
+	}
+	text = {
+		trigger = {
+			state = 509
+		}
+		localization_key = STATE_509_DESC
+	}
+	text = {
+		trigger = {
+			state = 510
+		}
+		localization_key = STATE_510_DESC
+	}
+	text = {
+		trigger = {
+			state = 511
+		}
+		localization_key = STATE_511_DESC
+	}
+	text = {
+		trigger = {
+			state = 512
+		}
+		localization_key = STATE_512_DESC
+	}
+	text = {
+		trigger = {
+			state = 513
+		}
+		localization_key = STATE_513_DESC
+	}
+	text = {
+		trigger = {
+			state = 514
+		}
+		localization_key = STATE_514_DESC
+	}
+	text = {
+		trigger = {
+			state = 515
+		}
+		localization_key = STATE_515_DESC
+	}
+	text = {
+		trigger = {
+			state = 516
+		}
+		localization_key = STATE_516_DESC
+	}
+	text = {
+		trigger = {
+			state = 517
+		}
+		localization_key = STATE_517_DESC
+	}
+	text = {
+		trigger = {
+			state = 518
+		}
+		localization_key = STATE_518_DESC
+	}
+	text = {
+		trigger = {
+			state = 519
+		}
+		localization_key = STATE_519_DESC
+	}
+	text = {
+		trigger = {
+			state = 520
+		}
+		localization_key = STATE_520_DESC
+	}
+	text = {
+		trigger = {
+			state = 521
+		}
+		localization_key = STATE_521_DESC
+	}
+	text = {
+		trigger = {
+			state = 522
+		}
+		localization_key = STATE_522_DESC
+	}
+	text = {
+		trigger = {
+			state = 523
+		}
+		localization_key = STATE_523_DESC
+	}
+	text = {
+		trigger = {
+			state = 524
+		}
+		localization_key = STATE_524_DESC
+	}
+	text = {
+		trigger = {
+			state = 525
+		}
+		localization_key = STATE_525_DESC
+	}
+	text = {
+		trigger = {
+			state = 526
+		}
+		localization_key = STATE_526_DESC
+	}
+	text = {
+		trigger = {
+			state = 527
+		}
+		localization_key = STATE_527_DESC
+	}
+	text = {
+		trigger = {
+			state = 528
+		}
+		localization_key = STATE_528_DESC
+	}
+	text = {
+		trigger = {
+			state = 529
+		}
+		localization_key = STATE_529_DESC
+	}
+	text = {
+		trigger = {
+			state = 530
+		}
+		localization_key = STATE_530_DESC
+	}
+	text = {
+		trigger = {
+			state = 531
+		}
+		localization_key = STATE_531_DESC
+	}
+	text = {
+		trigger = {
+			state = 532
+		}
+		localization_key = STATE_532_DESC
+	}
+	text = {
+		trigger = {
+			state = 533
+		}
+		localization_key = STATE_533_DESC
+	}
+	text = {
+		trigger = {
+			state = 534
+		}
+		localization_key = STATE_534_DESC
+	}
+	text = {
+		trigger = {
+			state = 535
+		}
+		localization_key = STATE_535_DESC
+	}
+	text = {
+		trigger = {
+			state = 536
+		}
+		localization_key = STATE_536_DESC
+	}
+	text = {
+		trigger = {
+			state = 537
+		}
+		localization_key = STATE_537_DESC
+	}
+	text = {
+		trigger = {
+			state = 538
+		}
+		localization_key = STATE_538_DESC
+	}
+	text = {
+		trigger = {
+			state = 539
+		}
+		localization_key = STATE_539_DESC
+	}
+	text = {
+		trigger = {
+			state = 540
+		}
+		localization_key = STATE_540_DESC
+	}
+	text = {
+		trigger = {
+			state = 541
+		}
+		localization_key = STATE_541_DESC
+	}
+	text = {
+		trigger = {
+			state = 542
+		}
+		localization_key = STATE_542_DESC
+	}
+	text = {
+		trigger = {
+			state = 543
+		}
+		localization_key = STATE_543_DESC
+	}
+	text = {
+		trigger = {
+			state = 544
+		}
+		localization_key = STATE_544_DESC
+	}
+	text = {
+		trigger = {
+			state = 545
+		}
+		localization_key = STATE_545_DESC
+	}
+	text = {
+		trigger = {
+			state = 546
+		}
+		localization_key = STATE_546_DESC
+	}
+	text = {
+		trigger = {
+			state = 547
+		}
+		localization_key = STATE_547_DESC
+	}
+	text = {
+		trigger = {
+			state = 548
+		}
+		localization_key = STATE_548_DESC
+	}
+	text = {
+		trigger = {
+			state = 549
+		}
+		localization_key = STATE_549_DESC
+	}
+	text = {
+		trigger = {
+			state = 550
+		}
+		localization_key = STATE_550_DESC
+	}
+	text = {
+		trigger = {
+			state = 551
+		}
+		localization_key = STATE_551_DESC
+	}
+	text = {
+		trigger = {
+			state = 552
+		}
+		localization_key = STATE_552_DESC
+	}
+	text = {
+		trigger = {
+			state = 553
+		}
+		localization_key = STATE_553_DESC
+	}
+	text = {
+		trigger = {
+			state = 554
+		}
+		localization_key = STATE_554_DESC
+	}
+	text = {
+		trigger = {
+			state = 555
+		}
+		localization_key = STATE_555_DESC
+	}
+	text = {
+		trigger = {
+			state = 556
+		}
+		localization_key = STATE_556_DESC
+	}
+	text = {
+		trigger = {
+			state = 557
+		}
+		localization_key = STATE_557_DESC
+	}
+	text = {
+		trigger = {
+			state = 558
+		}
+		localization_key = STATE_558_DESC
+	}
+	text = {
+		trigger = {
+			state = 559
+		}
+		localization_key = STATE_559_DESC
+	}
+	text = {
+		trigger = {
+			state = 560
+		}
+		localization_key = STATE_560_DESC
+	}
+	text = {
+		trigger = {
+			state = 561
+		}
+		localization_key = STATE_561_DESC
+	}
+	text = {
+		trigger = {
+			state = 562
+		}
+		localization_key = STATE_562_DESC
+	}
+	text = {
+		trigger = {
+			state = 563
+		}
+		localization_key = STATE_563_DESC
+	}
+	text = {
+		trigger = {
+			state = 564
+		}
+		localization_key = STATE_564_DESC
+	}
+	text = {
+		trigger = {
+			state = 565
+		}
+		localization_key = STATE_565_DESC
+	}
+	text = {
+		trigger = {
+			state = 566
+		}
+		localization_key = STATE_566_DESC
+	}
+	text = {
+		trigger = {
+			state = 567
+		}
+		localization_key = STATE_567_DESC
+	}
+	text = {
+		trigger = {
+			state = 568
+		}
+		localization_key = STATE_568_DESC
+	}
+	text = {
+		trigger = {
+			state = 569
+		}
+		localization_key = STATE_569_DESC
+	}
+	text = {
+		trigger = {
+			state = 570
+		}
+		localization_key = STATE_570_DESC
+	}
+	text = {
+		trigger = {
+			state = 571
+		}
+		localization_key = STATE_571_DESC
+	}
+	text = {
+		trigger = {
+			state = 572
+		}
+		localization_key = STATE_572_DESC
+	}
+	text = {
+		trigger = {
+			state = 573
+		}
+		localization_key = STATE_573_DESC
+	}
+	text = {
+		trigger = {
+			state = 574
+		}
+		localization_key = STATE_574_DESC
+	}
+	text = {
+		trigger = {
+			state = 575
+		}
+		localization_key = STATE_575_DESC
+	}
+	text = {
+		trigger = {
+			state = 576
+		}
+		localization_key = STATE_576_DESC
+	}
+	text = {
+		trigger = {
+			state = 577
+		}
+		localization_key = STATE_577_DESC
+	}
+	text = {
+		trigger = {
+			state = 578
+		}
+		localization_key = STATE_578_DESC
+	}
+	text = {
+		trigger = {
+			state = 579
+		}
+		localization_key = STATE_579_DESC
+	}
+	text = {
+		trigger = {
+			state = 580
+		}
+		localization_key = STATE_580_DESC
+	}
+	text = {
+		trigger = {
+			state = 581
+		}
+		localization_key = STATE_581_DESC
+	}
+	text = {
+		trigger = {
+			state = 582
+		}
+		localization_key = STATE_582_DESC
+	}
+	text = {
+		trigger = {
+			state = 583
+		}
+		localization_key = STATE_583_DESC
+	}
+	text = {
+		trigger = {
+			state = 584
+		}
+		localization_key = STATE_584_DESC
+	}
+	text = {
+		trigger = {
+			state = 585
+		}
+		localization_key = STATE_585_DESC
+	}
+	text = {
+		trigger = {
+			state = 586
+		}
+		localization_key = STATE_586_DESC
+	}
+	text = {
+		trigger = {
+			state = 587
+		}
+		localization_key = STATE_587_DESC
+	}
+	text = {
+		trigger = {
+			state = 588
+		}
+		localization_key = STATE_588_DESC
+	}
+	text = {
+		trigger = {
+			state = 589
+		}
+		localization_key = STATE_589_DESC
+	}
+	text = {
+		trigger = {
+			state = 590
+		}
+		localization_key = STATE_590_DESC
+	}
+	text = {
+		trigger = {
+			state = 591
+		}
+		localization_key = STATE_591_DESC
+	}
+	text = {
+		trigger = {
+			state = 592
+		}
+		localization_key = STATE_592_DESC
+	}
+	text = {
+		trigger = {
+			state = 593
+		}
+		localization_key = STATE_593_DESC
+	}
+	text = {
+		trigger = {
+			state = 594
+		}
+		localization_key = STATE_594_DESC
+	}
+	text = {
+		trigger = {
+			state = 595
+		}
+		localization_key = STATE_595_DESC
+	}
+	text = {
+		trigger = {
+			state = 596
+		}
+		localization_key = STATE_596_DESC
+	}
+	text = {
+		trigger = {
+			state = 597
+		}
+		localization_key = STATE_597_DESC
+	}
+	text = {
+		trigger = {
+			state = 598
+		}
+		localization_key = STATE_598_DESC
+	}
+	text = {
+		trigger = {
+			state = 599
+		}
+		localization_key = STATE_599_DESC
+	}
+	text = {
+		trigger = {
+			state = 600
+		}
+		localization_key = STATE_600_DESC
+	}
+	text = {
+		trigger = {
+			state = 601
+		}
+		localization_key = STATE_601_DESC
+	}
+	text = {
+		trigger = {
+			state = 602
+		}
+		localization_key = STATE_602_DESC
+	}
+	text = {
+		trigger = {
+			state = 603
+		}
+		localization_key = STATE_603_DESC
+	}
+	text = {
+		trigger = {
+			state = 604
+		}
+		localization_key = STATE_604_DESC
+	}
+	text = {
+		trigger = {
+			state = 605
+		}
+		localization_key = STATE_605_DESC
+	}
+	text = {
+		trigger = {
+			state = 606
+		}
+		localization_key = STATE_606_DESC
+	}
+	text = {
+		trigger = {
+			state = 607
+		}
+		localization_key = STATE_607_DESC
+	}
+	text = {
+		trigger = {
+			state = 608
+		}
+		localization_key = STATE_608_DESC
+	}
+	text = {
+		trigger = {
+			state = 609
+		}
+		localization_key = STATE_609_DESC
+	}
+	text = {
+		trigger = {
+			state = 610
+		}
+		localization_key = STATE_610_DESC
+	}
+	text = {
+		trigger = {
+			state = 611
+		}
+		localization_key = STATE_611_DESC
+	}
+	text = {
+		trigger = {
+			state = 612
+		}
+		localization_key = STATE_612_DESC
+	}
+	text = {
+		trigger = {
+			state = 613
+		}
+		localization_key = STATE_613_DESC
+	}
+	text = {
+		trigger = {
+			state = 614
+		}
+		localization_key = STATE_614_DESC
+	}
+	text = {
+		trigger = {
+			state = 615
+		}
+		localization_key = STATE_615_DESC
+	}
+	text = {
+		trigger = {
+			state = 616
+		}
+		localization_key = STATE_616_DESC
+	}
+	text = {
+		trigger = {
+			state = 617
+		}
+		localization_key = STATE_617_DESC
+	}
+	text = {
+		trigger = {
+			state = 618
+		}
+		localization_key = STATE_618_DESC
+	}
+	text = {
+		trigger = {
+			state = 619
+		}
+		localization_key = STATE_619_DESC
+	}
+	text = {
+		trigger = {
+			state = 620
+		}
+		localization_key = STATE_620_DESC
+	}
+	text = {
+		trigger = {
+			state = 621
+		}
+		localization_key = STATE_621_DESC
+	}
+	text = {
+		trigger = {
+			state = 622
+		}
+		localization_key = STATE_622_DESC
+	}
+	text = {
+		trigger = {
+			state = 623
+		}
+		localization_key = STATE_623_DESC
+	}
+	text = {
+		trigger = {
+			state = 624
+		}
+		localization_key = STATE_624_DESC
+	}
+	text = {
+		trigger = {
+			state = 625
+		}
+		localization_key = STATE_625_DESC
+	}
+	text = {
+		trigger = {
+			state = 626
+		}
+		localization_key = STATE_626_DESC
+	}
+	text = {
+		trigger = {
+			state = 627
+		}
+		localization_key = STATE_627_DESC
+	}
+	text = {
+		trigger = {
+			state = 628
+		}
+		localization_key = STATE_628_DESC
+	}
+	text = {
+		trigger = {
+			state = 629
+		}
+		localization_key = STATE_629_DESC
+	}
+	text = {
+		trigger = {
+			state = 630
+		}
+		localization_key = STATE_630_DESC
+	}
+	text = {
+		trigger = {
+			state = 631
+		}
+		localization_key = STATE_631_DESC
+	}
+	text = {
+		trigger = {
+			state = 632
+		}
+		localization_key = STATE_632_DESC
+	}
+	text = {
+		trigger = {
+			state = 633
+		}
+		localization_key = STATE_633_DESC
+	}
+	text = {
+		trigger = {
+			state = 634
+		}
+		localization_key = STATE_634_DESC
+	}
+	text = {
+		trigger = {
+			state = 635
+		}
+		localization_key = STATE_635_DESC
+	}
+	text = {
+		trigger = {
+			state = 636
+		}
+		localization_key = STATE_636_DESC
+	}
+	text = {
+		trigger = {
+			state = 637
+		}
+		localization_key = STATE_637_DESC
+	}
+	text = {
+		trigger = {
+			state = 638
+		}
+		localization_key = STATE_638_DESC
+	}
+	text = {
+		trigger = {
+			state = 639
+		}
+		localization_key = STATE_639_DESC
+	}
+	text = {
+		trigger = {
+			state = 640
+		}
+		localization_key = STATE_640_DESC
+	}
+	text = {
+		trigger = {
+			state = 641
+		}
+		localization_key = STATE_641_DESC
+	}
+	text = {
+		trigger = {
+			state = 642
+		}
+		localization_key = STATE_642_DESC
+	}
+	text = {
+		trigger = {
+			state = 643
+		}
+		localization_key = STATE_643_DESC
+	}
+	text = {
+		trigger = {
+			state = 644
+		}
+		localization_key = STATE_644_DESC
+	}
+	text = {
+		trigger = {
+			state = 645
+		}
+		localization_key = STATE_645_DESC
+	}
+	text = {
+		trigger = {
+			state = 646
+		}
+		localization_key = STATE_646_DESC
+	}
+	text = {
+		trigger = {
+			state = 647
+		}
+		localization_key = STATE_647_DESC
+	}
+	text = {
+		trigger = {
+			state = 648
+		}
+		localization_key = STATE_648_DESC
+	}
+	text = {
+		trigger = {
+			state = 649
+		}
+		localization_key = STATE_649_DESC
+	}
+	text = {
+		trigger = {
+			state = 650
+		}
+		localization_key = STATE_650_DESC
+	}
+	text = {
+		trigger = {
+			state = 651
+		}
+		localization_key = STATE_651_DESC
+	}
+	text = {
+		trigger = {
+			state = 652
+		}
+		localization_key = STATE_652_DESC
+	}
+	text = {
+		trigger = {
+			state = 653
+		}
+		localization_key = STATE_653_DESC
+	}
+	text = {
+		trigger = {
+			state = 654
+		}
+		localization_key = STATE_654_DESC
+	}
+	text = {
+		trigger = {
+			state = 655
+		}
+		localization_key = STATE_655_DESC
+	}
+	text = {
+		trigger = {
+			state = 656
+		}
+		localization_key = STATE_656_DESC
+	}
+	text = {
+		trigger = {
+			state = 657
+		}
+		localization_key = STATE_657_DESC
+	}
+	text = {
+		trigger = {
+			state = 658
+		}
+		localization_key = STATE_658_DESC
+	}
+	text = {
+		trigger = {
+			state = 659
+		}
+		localization_key = STATE_659_DESC
+	}
+	text = {
+		trigger = {
+			state = 660
+		}
+		localization_key = STATE_660_DESC
+	}
+	text = {
+		trigger = {
+			state = 661
+		}
+		localization_key = STATE_661_DESC
+	}
+	text = {
+		trigger = {
+			state = 662
+		}
+		localization_key = STATE_662_DESC
+	}
+	text = {
+		trigger = {
+			state = 663
+		}
+		localization_key = STATE_663_DESC
+	}
+	text = {
+		trigger = {
+			state = 664
+		}
+		localization_key = STATE_664_DESC
+	}
+	text = {
+		trigger = {
+			state = 665
+		}
+		localization_key = STATE_665_DESC
+	}
+	text = {
+		trigger = {
+			state = 666
+		}
+		localization_key = STATE_666_DESC
+	}
+	text = {
+		trigger = {
+			state = 667
+		}
+		localization_key = STATE_667_DESC
+	}
+	text = {
+		trigger = {
+			state = 668
+		}
+		localization_key = STATE_668_DESC
+	}
+	text = {
+		trigger = {
+			state = 669
+		}
+		localization_key = STATE_669_DESC
+	}
+	text = {
+		trigger = {
+			state = 670
+		}
+		localization_key = STATE_670_DESC
+	}
+	text = {
+		trigger = {
+			state = 671
+		}
+		localization_key = STATE_671_DESC
+	}
+	text = {
+		trigger = {
+			state = 672
+		}
+		localization_key = STATE_672_DESC
+	}
+	text = {
+		trigger = {
+			state = 673
+		}
+		localization_key = STATE_673_DESC
+	}
+	text = {
+		trigger = {
+			state = 674
+		}
+		localization_key = STATE_674_DESC
+	}
+	text = {
+		trigger = {
+			state = 675
+		}
+		localization_key = STATE_675_DESC
+	}
+	text = {
+		trigger = {
+			state = 676
+		}
+		localization_key = STATE_676_DESC
+	}
+	text = {
+		trigger = {
+			state = 677
+		}
+		localization_key = STATE_677_DESC
+	}
+	text = {
+		trigger = {
+			state = 678
+		}
+		localization_key = STATE_678_DESC
+	}
+	text = {
+		trigger = {
+			state = 679
+		}
+		localization_key = STATE_679_DESC
+	}
+	text = {
+		trigger = {
+			state = 680
+		}
+		localization_key = STATE_680_DESC
+	}
+	text = {
+		trigger = {
+			state = 681
+		}
+		localization_key = STATE_681_DESC
+	}
+	text = {
+		trigger = {
+			state = 682
+		}
+		localization_key = STATE_682_DESC
+	}
+	text = {
+		trigger = {
+			state = 683
+		}
+		localization_key = STATE_683_DESC
+	}
+	text = {
+		trigger = {
+			state = 684
+		}
+		localization_key = STATE_684_DESC
+	}
+	text = {
+		trigger = {
+			state = 685
+		}
+		localization_key = STATE_685_DESC
+	}
+	text = {
+		trigger = {
+			state = 686
+		}
+		localization_key = STATE_686_DESC
+	}
+	text = {
+		trigger = {
+			state = 687
+		}
+		localization_key = STATE_687_DESC
+	}
+	text = {
+		trigger = {
+			state = 688
+		}
+		localization_key = STATE_688_DESC
+	}
+	text = {
+		trigger = {
+			state = 689
+		}
+		localization_key = STATE_689_DESC
+	}
+	text = {
+		trigger = {
+			state = 690
+		}
+		localization_key = STATE_690_DESC
+	}
+	text = {
+		trigger = {
+			state = 691
+		}
+		localization_key = STATE_691_DESC
+	}
+	text = {
+		trigger = {
+			state = 692
+		}
+		localization_key = STATE_692_DESC
+	}
+	text = {
+		trigger = {
+			state = 693
+		}
+		localization_key = STATE_693_DESC
+	}
+	text = {
+		trigger = {
+			state = 694
+		}
+		localization_key = STATE_694_DESC
+	}
+	text = {
+		trigger = {
+			state = 695
+		}
+		localization_key = STATE_695_DESC
+	}
+	text = {
+		trigger = {
+			state = 696
+		}
+		localization_key = STATE_696_DESC
+	}
+	text = {
+		trigger = {
+			state = 697
+		}
+		localization_key = STATE_697_DESC
+	}
+	text = {
+		trigger = {
+			state = 698
+		}
+		localization_key = STATE_698_DESC
+	}
+	text = {
+		trigger = {
+			state = 699
+		}
+		localization_key = STATE_699_DESC
+	}
+	text = {
+		trigger = {
+			state = 700
+		}
+		localization_key = STATE_700_DESC
+	}
+	text = {
+		trigger = {
+			state = 701
+		}
+		localization_key = STATE_701_DESC
+	}
+	text = {
+		trigger = {
+			state = 702
+		}
+		localization_key = STATE_702_DESC
+	}
+	text = {
+		trigger = {
+			state = 703
+		}
+		localization_key = STATE_703_DESC
+	}
+	text = {
+		trigger = {
+			state = 704
+		}
+		localization_key = STATE_704_DESC
+	}
+	text = {
+		trigger = {
+			state = 705
+		}
+		localization_key = STATE_705_DESC
+	}
+	text = {
+		trigger = {
+			state = 706
+		}
+		localization_key = STATE_706_DESC
+	}
+	text = {
+		trigger = {
+			state = 707
+		}
+		localization_key = STATE_707_DESC
+	}
+	text = {
+		trigger = {
+			state = 708
+		}
+		localization_key = STATE_708_DESC
+	}
+	text = {
+		trigger = {
+			state = 709
+		}
+		localization_key = STATE_709_DESC
+	}
+	text = {
+		trigger = {
+			state = 710
+		}
+		localization_key = STATE_710_DESC
+	}
+	text = {
+		trigger = {
+			state = 711
+		}
+		localization_key = STATE_711_DESC
+	}
+	text = {
+		trigger = {
+			state = 712
+		}
+		localization_key = STATE_712_DESC
+	}
+	text = {
+		trigger = {
+			state = 713
+		}
+		localization_key = STATE_713_DESC
+	}
+	text = {
+		trigger = {
+			state = 714
+		}
+		localization_key = STATE_714_DESC
+	}
+	text = {
+		trigger = {
+			state = 715
+		}
+		localization_key = STATE_715_DESC
+	}
+	text = {
+		trigger = {
+			state = 716
+		}
+		localization_key = STATE_716_DESC
+	}
+	text = {
+		trigger = {
+			state = 717
+		}
+		localization_key = STATE_717_DESC
+	}
+	text = {
+		trigger = {
+			state = 718
+		}
+		localization_key = STATE_718_DESC
+	}
+	text = {
+		trigger = {
+			state = 719
+		}
+		localization_key = STATE_719_DESC
+	}
+	text = {
+		trigger = {
+			state = 720
+		}
+		localization_key = STATE_720_DESC
+	}
+	text = {
+		trigger = {
+			state = 721
+		}
+		localization_key = STATE_721_DESC
+	}
+	text = {
+		trigger = {
+			state = 722
+		}
+		localization_key = STATE_722_DESC
+	}
+	text = {
+		trigger = {
+			state = 723
+		}
+		localization_key = STATE_723_DESC
+	}
+	text = {
+		trigger = {
+			state = 724
+		}
+		localization_key = STATE_724_DESC
+	}
+	text = {
+		trigger = {
+			state = 725
+		}
+		localization_key = STATE_725_DESC
+	}
+	text = {
+		trigger = {
+			state = 726
+		}
+		localization_key = STATE_726_DESC
+	}
+	text = {
+		trigger = {
+			state = 727
+		}
+		localization_key = STATE_727_DESC
+	}
+	text = {
+		trigger = {
+			state = 728
+		}
+		localization_key = STATE_728_DESC
+	}
+	text = {
+		trigger = {
+			state = 729
+		}
+		localization_key = STATE_729_DESC
+	}
+	text = {
+		trigger = {
+			state = 730
+		}
+		localization_key = STATE_730_DESC
+	}
+	text = {
+		trigger = {
+			state = 731
+		}
+		localization_key = STATE_731_DESC
+	}
+	text = {
+		trigger = {
+			state = 732
+		}
+		localization_key = STATE_732_DESC
+	}
+	text = {
+		trigger = {
+			state = 733
+		}
+		localization_key = STATE_733_DESC
+	}
+	text = {
+		trigger = {
+			state = 734
+		}
+		localization_key = STATE_734_DESC
+	}
+	text = {
+		trigger = {
+			state = 735
+		}
+		localization_key = STATE_735_DESC
+	}
+	text = {
+		trigger = {
+			state = 736
+		}
+		localization_key = STATE_736_DESC
+	}
+	text = {
+		trigger = {
+			state = 737
+		}
+		localization_key = STATE_737_DESC
+	}
+	text = {
+		trigger = {
+			state = 738
+		}
+		localization_key = STATE_738_DESC
+	}
+	text = {
+		trigger = {
+			state = 739
+		}
+		localization_key = STATE_739_DESC
+	}
+	text = {
+		trigger = {
+			state = 740
+		}
+		localization_key = STATE_740_DESC
+	}
+	text = {
+		trigger = {
+			state = 741
+		}
+		localization_key = STATE_741_DESC
+	}
+	text = {
+		trigger = {
+			state = 742
+		}
+		localization_key = STATE_742_DESC
+	}
+	text = {
+		trigger = {
+			state = 743
+		}
+		localization_key = STATE_743_DESC
+	}
+	text = {
+		trigger = {
+			state = 744
+		}
+		localization_key = STATE_744_DESC
+	}
+	text = {
+		trigger = {
+			state = 745
+		}
+		localization_key = STATE_745_DESC
+	}
+	text = {
+		trigger = {
+			state = 746
+		}
+		localization_key = STATE_746_DESC
+	}
+	text = {
+		trigger = {
+			state = 747
+		}
+		localization_key = STATE_747_DESC
+	}
+	text = {
+		trigger = {
+			state = 748
+		}
+		localization_key = STATE_748_DESC
+	}
+	text = {
+		trigger = {
+			state = 749
+		}
+		localization_key = STATE_749_DESC
+	}
+	text = {
+		trigger = {
+			state = 750
+		}
+		localization_key = STATE_750_DESC
+	}
+	text = {
+		trigger = {
+			state = 751
+		}
+		localization_key = STATE_751_DESC
+	}
+	text = {
+		trigger = {
+			state = 752
+		}
+		localization_key = STATE_752_DESC
+	}
+	text = {
+		trigger = {
+			state = 753
+		}
+		localization_key = STATE_753_DESC
+	}
+	text = {
+		trigger = {
+			state = 754
+		}
+		localization_key = STATE_754_DESC
+	}
+	text = {
+		trigger = {
+			state = 755
+		}
+		localization_key = STATE_755_DESC
+	}
+	text = {
+		trigger = {
+			state = 756
+		}
+		localization_key = STATE_756_DESC
+	}
+	text = {
+		trigger = {
+			state = 757
+		}
+		localization_key = STATE_757_DESC
+	}
+	text = {
+		trigger = {
+			state = 758
+		}
+		localization_key = STATE_758_DESC
+	}
+	text = {
+		trigger = {
+			state = 759
+		}
+		localization_key = STATE_759_DESC
+	}
+	text = {
+		trigger = {
+			state = 760
+		}
+		localization_key = STATE_760_DESC
+	}
+	text = {
+		trigger = {
+			state = 761
+		}
+		localization_key = STATE_761_DESC
+	}
+	text = {
+		trigger = {
+			state = 762
+		}
+		localization_key = STATE_762_DESC
+	}
+	text = {
+		trigger = {
+			state = 763
+		}
+		localization_key = STATE_763_DESC
+	}
+	text = {
+		trigger = {
+			state = 764
+		}
+		localization_key = STATE_764_DESC
+	}
+	text = {
+		trigger = {
+			state = 765
+		}
+		localization_key = STATE_765_DESC
+	}
+	text = {
+		trigger = {
+			state = 766
+		}
+		localization_key = STATE_766_DESC
+	}
+	text = {
+		trigger = {
+			state = 767
+		}
+		localization_key = STATE_767_DESC
+	}
+	text = {
+		trigger = {
+			state = 768
+		}
+		localization_key = STATE_768_DESC
+	}
+	text = {
+		trigger = {
+			state = 769
+		}
+		localization_key = STATE_769_DESC
+	}
+	text = {
+		trigger = {
+			state = 770
+		}
+		localization_key = STATE_770_DESC
+	}
+	text = {
+		trigger = {
+			state = 771
+		}
+		localization_key = STATE_771_DESC
+	}
+	text = {
+		trigger = {
+			state = 772
+		}
+		localization_key = STATE_772_DESC
+	}
+	text = {
+		trigger = {
+			state = 773
+		}
+		localization_key = STATE_773_DESC
+	}
+	text = {
+		trigger = {
+			state = 774
+		}
+		localization_key = STATE_774_DESC
+	}
+	text = {
+		trigger = {
+			state = 775
+		}
+		localization_key = STATE_775_DESC
+	}
+	text = {
+		trigger = {
+			state = 776
+		}
+		localization_key = STATE_776_DESC
+	}
+	text = {
+		trigger = {
+			state = 777
+		}
+		localization_key = STATE_777_DESC
+	}
+	text = {
+		trigger = {
+			state = 778
+		}
+		localization_key = STATE_778_DESC
+	}
+	text = {
+		trigger = {
+			state = 779
+		}
+		localization_key = STATE_779_DESC
+	}
+	text = {
+		trigger = {
+			state = 780
+		}
+		localization_key = STATE_780_DESC
+	}
+	text = {
+		trigger = {
+			state = 781
+		}
+		localization_key = STATE_781_DESC
+	}
+	text = {
+		trigger = {
+			state = 782
+		}
+		localization_key = STATE_782_DESC
+	}
+	text = {
+		trigger = {
+			state = 783
+		}
+		localization_key = STATE_783_DESC
+	}
+	text = {
+		trigger = {
+			state = 784
+		}
+		localization_key = STATE_784_DESC
+	}
+	text = {
+		trigger = {
+			state = 785
+		}
+		localization_key = STATE_785_DESC
+	}
+	text = {
+		trigger = {
+			state = 786
+		}
+		localization_key = STATE_786_DESC
+	}
+	text = {
+		trigger = {
+			state = 787
+		}
+		localization_key = STATE_787_DESC
+	}
+}
