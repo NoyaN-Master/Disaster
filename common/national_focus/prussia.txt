@@ -1458,7 +1458,7 @@ focus_tree = {
 ######################## liberal path
 	focus = {
 		id = PRE_liberal_victory_focus
-		icon = GFX_goal_unknown
+		icon = GFX_goal_liberal_victory
 		x = 32
 		y = 0
 		cost = 1
@@ -1475,7 +1475,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_state_of_emergency
-		icon = GFX_goal_unknown
+		icon = GFX_goal_state_of_emergency
 		x = 0
 		y = 1
 		relative_position_id = PRE_liberal_victory_focus
@@ -1496,7 +1496,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_end_paramilitaries
-		icon = GFX_goal_unknown
+		icon = GFX_goal_end_paramilitaries
 		x = -2
 		y = 2
 		relative_position_id = PRE_liberal_victory_focus
@@ -1510,7 +1510,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_disarm_radicals
-		icon = GFX_goal_unknown
+		icon = GFX_goal_disarm_radicals
 		x = -2
 		y = 3
 		relative_position_id = PRE_liberal_victory_focus
@@ -1528,7 +1528,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_junkers_power_chip
-		icon = GFX_goal_unknown
+		icon = GFX_goal_reduce_junker_influence
 		x = 0
 		y = 2
 		relative_position_id = PRE_liberal_victory_focus
@@ -1563,7 +1563,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_empower_reichstag
-		icon = GFX_goal_unknown
+		icon = GFX_goal_empower_reichstag
 		x = 0
 		y = 3
 		relative_position_id = PRE_liberal_victory_focus
@@ -1583,7 +1583,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_crush_goring
-		icon = GFX_goal_unknown
+		icon = GFX_goal_crush_goring
 		x = 2
 		y = 2
 		relative_position_id = PRE_liberal_victory_focus
@@ -1602,7 +1602,7 @@ focus_tree = {
 
 	focus = {
 		id = PRE_an_end_to_radicalism
-		icon = GFX_goal_unknown
+		icon = GFX_goal_an_end_to_radicalism
 		x = 2
 		y = 3
 		relative_position_id = PRE_liberal_victory_focus
@@ -1627,7 +1627,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_legacy_of_1848
-		icon = GFX_goal_unknown
+		icon = GFX_goal_legacy_1848
 		x = 0
 		y = 4
 		relative_position_id = PRE_liberal_victory_focus
