@@ -1,0 +1,36 @@
+
+state={
+	id=862
+	name="STATE_862"
+	manpower = 2014485
+	
+	state_category = metropolis
+
+	history={
+		owner = CAL
+		buildings = {
+			infrastructure = 8
+			arms_factory = 1
+			industrial_complex = 4
+			dockyard = 3
+			air_base = 7
+			1562 = {
+				naval_base = 10
+			}
+			9814 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = CAL
+		victory_points = {
+			9814 30
+		}
+		victory_points = {
+			1562 15 
+		}
+	}
+
+	provinces={
+		1562 7517 9814 11757
+	}
+}
