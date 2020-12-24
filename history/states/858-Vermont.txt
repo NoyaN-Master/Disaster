@@ -1,0 +1,23 @@
+state={
+	id=858
+	name="STATE_858"
+
+	state_category = town
+
+	history={
+		owner = 
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		add_core_of = 
+
+	}
+
+	provinces={
+		4445 7629 9675
+	}
+	manpower=9841195
+	buildings_max_level_factor=1.000
+}

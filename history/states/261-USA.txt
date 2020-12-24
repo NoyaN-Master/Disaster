@@ -1,0 +1,34 @@
+state={
+	id=261
+	name="STATE_261"
+	resources={
+		steel=20 # was: 48.000
+		aluminium=6 # was: 16.000
+	}
+	
+	state_category = metropolis
+
+	history={
+		owner = 
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 5
+
+		}
+		add_core_of = 
+		victory_points = {
+			6855 5 
+		}
+		victory_points = {
+			6890 10 
+		}
+
+	}
+
+	provinces={
+		827 882 971 3829 3853 4442 6855 6874 6890 7528 9760 9808 9825 13154 
+	}
+	manpower=4271166
+	buildings_max_level_factor=1.000
+}

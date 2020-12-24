@@ -1,0 +1,23 @@
+
+state={
+	id=855
+	name="STATE_855"
+	manpower = 677886
+	
+	state_category = city
+
+	history={
+		owner = 
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			dockyard = 1
+		}
+		add_core_of = 
+
+	}
+
+	provinces={
+		3917 6892 9758 9786 
+	}
+}
