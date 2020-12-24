@@ -1,0 +1,63 @@
+capital = 383
+oob = ""
+
+# Starting tech
+set_technology = {
+}
+
+set_convoys = 0
+
+set_politics = {
+	ruling_party = liberal
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	conservative = 0
+	liberal = 34
+	social_democrat = 33
+	libertarian_socialist = 0
+	authoritarian_socialist = 33
+	national_bolshevik = 0
+	authoritarian_democrat = 0
+	autocratic = 0
+	ultranationalist = 0
+	revolutionary_nationalist = 0
+	esoteric_traditionalist = 0
+	revolutionary_anarchist = 0
+}
+
+create_country_leader = {
+	name = "Alf Landon"
+	desc = "KAN_Alf_Landon_desc"
+	picture = "KAN_Alf_Landon.tga"
+	expire = "2020.1.1"
+	ideology = liberal_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Earl Browder"
+	desc = "KAN_Earl_Browder_desc"
+	picture = "KAN_Earl_Browder.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_socialist_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ernest W. Marland"
+	desc = "KAN_Ernest_Marland_desc"
+	picture = "KAN_Ernest_Marland.tga"
+	expire = "2020.1.1"
+	ideology = social_democrat_subideology
+	traits = {
+		#
+	}
+}
