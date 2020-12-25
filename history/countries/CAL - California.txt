@@ -72,3 +72,25 @@ create_country_leader = {
 		#
 	}
 }
+
+create_country_leader = {
+	name = "Pat McCarran"
+	desc = "CAL_Pat_McCarran_desc"
+	picture = "CAL_Pat_McCarran.tga"
+	expire = "2020.1.1"
+	ideology = conservative_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "L. Ron Hubbard"
+	desc = "CAL_Hubbard_desc"
+	picture = "CAL_Hubbard.tga"
+	expire = "2020.1.1"
+	ideology = esoteric_traditionalist_subideology
+	traits = {
+		#
+	}
+}
