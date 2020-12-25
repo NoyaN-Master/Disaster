@@ -11,19 +11,449 @@ country_event = { #Intro
 	fire_only_once = yes
 	
 	trigger = {
-	CRW = {
-	exists = yes
-	tag = CRW
-	}
 	}
 
 	is_triggered_only = yes
 
 	option = { #Intro
 		name = crw.1.a
-		set_variable = {
-		var = CRW.stability_var
-		value = 0.30
+		country_event = { id = crw.2 days = 5 }
+	}
+}
+
+country_event = { #fags burn store
+	id = crw.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.2.t
+	desc = crw.2.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	is_triggered_only = yes
+
+	option = { #Intro
+		name = crw.2.a
+		add_stability = -0.05
+		country_event = { id = crw.3 days = 3 }
+	}
+}
+
+country_event = { #shit gets real
+	id = crw.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.3.t
+	desc = crw.3.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	is_triggered_only = yes
+
+	option = { #Intro
+		name = crw.3.a
+		add_stability = -0.05
+		country_event = { id = crw.4 days = 2 }
+	}
+}
+
+country_event = { #The Snow Massacre
+	id = crw.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.4.t
+	desc = crw.4.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	is_triggered_only = yes
+
+	option = { #Intro
+		name = crw.4.a
+		add_stability = -0.10
+		manpower = -1000
+		country_event = { id = crw.5 days = 3 }
+	}
+}
+
+country_event = { #Getting the parliament
+	id = crw.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.5.t
+	desc = crw.5.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	is_triggered_only = yes
+
+	option = { #Intro
+		name = crw.5.a
+		custom_effect_tooltip = crw5_tt
+		complete_national_focus = CRW_party_problems
+		hidden_effect = {
+		set_country_flag = parliament_ready
+		set_country_flag = {
+   		flag = conservative_point
+		value = 0
 		}
+		set_country_flag = {
+   		flag = socdem_point
+		value = 0
+		}
+		set_country_flag = {
+   		flag = liberal_point
+		value = 0
+		}	
+		}
+		country_event = { id = crw.6 days = 1 }
+	}
+}
+
+country_event = { #Protest Debate
+	id = crw.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.6.t
+	desc = crw.6.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	is_triggered_only = yes
+
+	option = { #Intro
+		name = crw.6.a
+		hidden_effect = {
+		set_country_flag = revolt_done
+		complete_national_focus = CRW_addressing_protests
+		modify_country_flag = {
+    	flag = conservative_point
+    	value = 1
+		}	
+		}
+		custom_effect_tooltip = conserv_influence
+		country_event = { id = crw.7 days = 3 }
+	}
+
+	option = { #Intro
+		name = crw.6.b
+		hidden_effect = {
+		set_country_flag = revolt_done
+		complete_national_focus = CRW_addressing_protests
+		modify_country_flag = {
+    	flag = socdem_point
+    	value = 1
+		}	
+		}
+		custom_effect_tooltip = socdem_influence
+		country_event = { id = crw.7 days = 3 }
+	}
+
+	option = { #Intro
+		name = crw.6.c
+		hidden_effect = {
+		set_country_flag = revolt_done
+		complete_national_focus = CRW_addressing_protests
+		modify_country_flag = {
+    	flag = liberal_point
+    	value = 1
+		}	
+		}
+		custom_effect_tooltip = liberal_influence
+		country_event = { id = crw.7 days = 3 }
+	}
+}
+
+country_event = { #Minority Debate
+	id = crw.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.7.t
+	desc = crw.7.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	is_triggered_only = yes
+
+	option = { #Intro
+		name = crw.7.a
+		hidden_effect = {
+		set_country_flag = minority_done
+		complete_national_focus = CRW_multicultural_order
+		modify_country_flag = {
+    	flag = conservative_point
+    	value = 1
+		}	
+		}
+		custom_effect_tooltip = conserv_influence
+		country_event = { id = crw.8 days = 3 }
+	}
+
+	option = { #Intro
+		name = crw.7.b
+		hidden_effect = {
+		set_country_flag = minority_done
+		complete_national_focus = CRW_multicultural_order
+		modify_country_flag = {
+    	flag = socdem_point
+    	value = 1
+		}	
+		}
+		custom_effect_tooltip = socdem_influence
+		country_event = { id = crw.8 days = 3 }
+	}
+
+	option = { #Intro
+		name = crw.7.c
+		hidden_effect = {
+		set_country_flag = minority_done
+		complete_national_focus = CRW_multicultural_order
+		modify_country_flag = {
+    	flag = liberal_point
+    	value = 1
+		}	
+		}
+		custom_effect_tooltip = liberal_influence
+		country_event = { id = crw.8 days = 3 }
+	}
+}
+
+country_event = { #Economy Debate
+	id = crw.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.8.t
+	desc = crw.8.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	is_triggered_only = yes
+
+	option = { #Intro
+		name = crw.8.a
+		hidden_effect = {
+		set_country_flag = economy_done
+		complete_national_focus = CRW_economics
+		modify_country_flag = {
+    	flag = conservative_point
+    	value = 1
+		}	
+		}
+		custom_effect_tooltip = conserv_influence
+		country_event = { id = crw.9 days = 3 }
+	}
+
+	option = { #Intro
+		name = crw.8.b
+		hidden_effect = {
+		set_country_flag = economy_done
+		complete_national_focus = CRW_economics
+		modify_country_flag = {
+    	flag = socdem_point
+    	value = 1
+		}	
+		}
+		custom_effect_tooltip = socdem_influence
+		country_event = { id = crw.9 days = 3 }
+	}
+
+	option = { #Intro
+		name = crw.8.c
+		hidden_effect = {
+		set_country_flag = economy_done
+		complete_national_focus = CRW_economics
+		modify_country_flag = {
+    	flag = liberal_point
+    	value = 1
+		}	
+		}
+		custom_effect_tooltip = liberal_influence
+		country_event = { id = crw.9 days = 3 }
+	}
+}
+
+country_event = { #Manisa Congress Ending
+	id = crw.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
+	title = crw.9.t
+	desc = crw.9.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = crw.9.a 
+		add_political_power = 1
+		hidden_effect = {
+		set_country_flag = canopen_meclis
+		complete_national_focus = CRW_open_meclis	
+			if = {
+				limit = {
+					has_country_flag = {
+						flag = liberal_point
+						value > 2
+					}
+				}
+				country_event = {
+					id = crw.12
+					days = 1
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = {
+						flag = conservative_point
+						value > 2
+					}
+				}
+				country_event = {
+					id = crw.10
+					days = 1
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = {
+						flag = socdem_point
+						value > 2
+					}
+				}
+				country_event = {
+					id = crw.11
+					days = 1
+				}
+			}
+
+		}
+	}
+}
+
+country_event = { #cons.win
+	id = crw.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.10.t
+	desc = crw.10.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	is_triggered_only = yes
+
+	option = { #Intro
+		name = crw.10.a
+		add_stability = -0.05
+		add_political_power = 150
+		hidden_effect = {
+		set_country_flag = consv_win
+		}
+		set_politics = {
+		ruling_party = conservative
+		}
+		swap_ideas = {
+		remove_idea = CRW_Autocratic_Idea 
+		add_idea = 	CRW_Cons_Idea
+		}
+		complete_national_focus = CRW_conservative_win
+	}
+}
+
+country_event = { #cons.win
+	id = crw.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.12.t
+	desc = crw.12.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	is_triggered_only = yes
+
+	option = { #Intro
+		name = crw.10.a
+		add_stability = -0.05
+		add_political_power = 150
+		hidden_effect = {
+		set_country_flag = liberal_win
+		}
+		set_politics = {
+		ruling_party = liberal
+		}
+		swap_ideas = {
+		remove_idea = CRW_Autocratic_Idea 
+		add_idea = 	CRW_Liberal_Idea
+		}
+		complete_national_focus = CRW_liberal_win
+	}
+}
+
+country_event = { #soc.win
+	id = crw.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.11.t
+	desc = crw.11.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	is_triggered_only = yes
+
+	option = { #Intro
+		name = crw.11.a
+		add_stability = -0.05
+		add_political_power = 150
+		hidden_effect = {
+		set_country_flag = soc_win
+		}
+		set_politics = {
+		ruling_party = social_democrat
+		}
+		swap_ideas = {
+		remove_idea = CRW_Autocratic_Idea 
+		add_idea = 	CRW_SocDem_Idea
+		}
+		complete_national_focus = CRW_socdem_win
 	}
 }
