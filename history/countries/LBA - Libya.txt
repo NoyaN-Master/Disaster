@@ -1,4 +1,4 @@
-capital = 371
+capital = 448
 oob = ""
 
 # Starting tech
@@ -8,7 +8,7 @@ set_technology = {
 set_convoys = 0
 
 set_politics = {
-	ruling_party = social_democrat
+	ruling_party = ultranationalist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -17,24 +17,24 @@ set_politics = {
 set_popularities = {
 	conservative = 0
 	liberal = 0
-	social_democrat = 100
+	social_democrat = 0
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
 	national_bolshevik = 0
 	authoritarian_democrat = 0
 	autocratic = 0
-	ultranationalist = 0
+	ultranationalist = 100
 	revolutionary_nationalist = 0
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
 
 create_country_leader = {
-	name = "Earl K. Long"
-	desc = "LOU_Earl_Long_desc"
-	picture = "LOU_Earl_Long.tga"
+	name = "Benito Mussolini"
+	desc = "LBA_Benito_Mussolini_desc"
+	picture = "LBA_Benito_Mussolini.tga"
 	expire = "2020.1.1"
-	ideology = social_democrat_subideology
+	ideology = ultranationalist_subideology
 	traits = {
 		#
 	}

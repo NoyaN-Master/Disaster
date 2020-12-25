@@ -30,9 +30,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Eugene Talmadge"
-	#desc = "CSA_Eugene_Talmadge_desc"
-	picture = "CSA_Eugene_Talmadge.tga"
+	name = "Theodore G. Bilbo"
+	desc = "CSA_Theodore_Bilbo_desc"
+	picture = "CSA_Theodore_Bilbo.tga"
 	expire = "2020.1.1"
 	ideology = authoritarian_democrat_subideology
 	traits = {
