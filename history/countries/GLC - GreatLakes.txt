@@ -17,16 +17,16 @@ set_politics = {
 set_popularities = {
 	conservative = 0
 	liberal = 0
-	social_democrat = 0
-	libertarian_socialist = 50
+	social_democrat = 18
+	libertarian_socialist = 34
 	authoritarian_socialist = 0
 	national_bolshevik = 0
 	authoritarian_democrat = 0
-	autocratic = 0
+	autocratic = 8
 	ultranationalist = 0
-	revolutionary_nationalist = 0
+	revolutionary_nationalist = 14
 	esoteric_traditionalist = 0
-	revolutionary_anarchist = 50
+	revolutionary_anarchist = 26
 }
 
 create_country_leader = {
@@ -35,6 +35,39 @@ create_country_leader = {
 	picture = "GLC_Arnold_Petersen.tga"
 	expire = "2020.1.1"
 	ideology = libertarian_socialist_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Elizabeth Gurley Flynn"
+	desc = "GLC_Elizabeth_Flynn_desc"
+	picture = "GLC_Elizabeth_Flynn.tga"
+	expire = "2020.1.1"
+	ideology = revolutionary_anarchist_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Henry Ford"
+	desc = "GLC_Henry_Ford_desc"
+	picture = "GLC_Henry_Ford.tga"
+	expire = "2020.1.1"
+	ideology = autocratic_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "D. C. Stephenson"
+	desc = "GLC_Stephenson_desc"
+	picture = "GLC_Stephenson.tga"
+	expire = "2020.1.1"
+	ideology = revolutionary_nationalist_subideology
 	traits = {
 		#
 	}

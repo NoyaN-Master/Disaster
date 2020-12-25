@@ -39,3 +39,14 @@ create_country_leader = {
 		#
 	}
 }
+
+create_country_leader = {
+	name = "Hjalmar Petersen"
+	desc = "MDW_Hjalmar_Petersen_desc"
+	picture = "MDW_Hjalmar_Petersen.tga"
+	expire = "2020.1.1"
+	ideology = social_democrat_subideology
+	traits = {
+		#
+	}
+}

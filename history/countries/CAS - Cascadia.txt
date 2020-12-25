@@ -15,15 +15,15 @@ set_politics = {
 }
 
 set_popularities = {
-	conservative = 20
-	liberal = 40
-	social_democrat = 5
+	conservative = 30 
+	liberal = 35
+	social_democrat = 15
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
 	national_bolshevik = 0
 	authoritarian_democrat = 20
 	autocratic = 0
-	ultranationalist = 15
+	ultranationalist = 0
 	revolutionary_nationalist = 0
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
@@ -34,7 +34,18 @@ create_country_leader = {
 	desc = "CAS_CTA_desc"
 	picture = "CAS_CTA.tga"
 	expire = "2020.1.1"
-	ideology = authoritarian_democrat_subideology
+	ideology = autocratic_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Henry M. Jackson"
+	desc = "CAS_Henry_Jackson_desc"
+	picture = "CAS_Henry_Jackson.tga"
+	expire = "2020.1.1"
+	ideology = social_democrat_subideology
 	traits = {
 		#
 	}
