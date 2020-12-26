@@ -380,6 +380,7 @@ country_event = { #cons.win
 		add_political_power = 150
 		hidden_effect = {
 		set_country_flag = consv_win
+		country_event = { id = crw.13 days = 3 }
 		}
 		set_politics = {
 		ruling_party = conservative
@@ -455,5 +456,190 @@ country_event = { #soc.win
 		add_idea = 	CRW_SocDem_Idea
 		}
 		complete_national_focus = CRW_socdem_win
+	}
+}
+
+country_event = { #invitation
+	id = crw.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.13.t
+	desc = crw.13.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	is_triggered_only = yes
+
+	option = { #Intro
+		name = crw.13.a
+		hidden_effect = {
+		country_event = { id = crw.14 days = 2}
+		}
+	}
+
+	option = { #Intro
+		name = crw.13.b
+		hidden_effect = {
+		country_event = { id = crw.18 days = 7 }
+		}
+	}
+}
+
+country_event = { #cons.win
+	id = crw.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.14.t
+	desc = crw.14.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	is_triggered_only = yes
+
+	option = { #Survival
+		name = crw.14.a
+		hidden_effect = {
+		country_event = { id = crw.16 days = 3}
+		set_country_flag = vahdettin_rule
+		}
+		custom_effect_tooltip = vahdettin_rule_tt
+		complete_national_focus = CRW_return_to_basics
+	}
+
+	option = { #Death
+		name = crw.14.b
+		hidden_effect = {
+		country_event = { id = crw.17 days = 3 }
+		set_country_flag = nationalist_coup
+		}
+		create_country_leader = {
+		name = "Osman Fuad"
+		#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+		#picture = "Portrait_Afghanistan_Mohammed_Zahir_Shah.dds"
+		expire = "1965.1.1"
+		ideology = ultranationalist_subideology
+		traits = {		
+	}
+	set_party_name = { 
+    ideology = ultranationalist 
+    long_name = CRW_ultranationalist_coup_long 
+    name = CRW_ultranationalist_coup 
+}
+}
+		custom_effect_tooltip = death_vahdettin
+		kill_ideology_leader = autocratic
+		kill_ideology_leader = social_democrat
+		kill_ideology_leader = conservative
+		kill_ideology_leader = liberal
+		set_politics = {
+		ruling_party = ultranationalist
+		}
+		add_popularity = {
+    	ideology = ultranationalist
+    	popularity = 0.30
+		}
+		complete_national_focus = CRW_return_to_basics
+		unlock_national_focus = CRW_martial_law
+	}
+}
+
+country_event = { #closing 
+	id = crw.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.16.t
+	desc = crw.16.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	is_triggered_only = yes
+
+	option = { 
+		name = crw.16.a
+		hidden_effect = {
+		}
+	add_popularity = {
+    ideology = social_democrat
+    popularity = -1.0
+	}
+	add_popularity = {
+    ideology = conservative
+    popularity = -1.0
+	}
+	add_popularity = {
+    ideology = liberal
+    popularity = -1.0
+	}
+	add_popularity = {
+    ideology = autocratic
+    popularity = 1.0
+	}	
+	}
+}
+
+country_event = { #based speech 
+	id = crw.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.17.t
+	desc = crw.17.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	is_triggered_only = yes
+
+	option = { #based!
+		name = crw.17.a
+		hidden_effect = {
+		}
+	add_popularity = {
+    ideology = ultranationalist
+    popularity = 1.0
+	}
+	unlock_national_focus = CRW_fight_protest
+	swap_ideas = {
+		remove_idea = CRW_Cons_Idea 
+		add_idea = 	CRW_osman_idea
+		}	
+	}
+	remove_idea = CRW_Protests_1
+}
+
+country_event = { #invitation
+	id = crw.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.18.t
+	desc = crw.18.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	is_triggered_only = yes
+
+	option = { #Intro
+		name = crw.18.a
+		hidden_effect = {
+		set_country_flag = celal_gone
+		}
 	}
 }
