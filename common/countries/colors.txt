@@ -26,8 +26,8 @@ CIB = {
 }
 
 CLP = {
-	color = rgb { 102 255 153 }
-	color_ui = rgb { 102 255 153 }
+	color = rgb { 16 120 2 }
+	color_ui = rgb { 16 120 2 }
 }
 
 ANT = {
@@ -398,13 +398,13 @@ CHI = {
 }
 
 TEX = {
-	color = rgb { 87 129 255 }  
-	color_ui = rgb { 87 129 255 }
+	color = rgb { 0 42 168 }  
+	color_ui = rgb { 0 42 168 }
 }
 
 CSA = {
-	color = rgb { 95 95 95 }  
-	color_ui = rgb { 95 95 95 }
+	color = rgb { 133 133 133 }  
+	color_ui = rgb { 133 133 133 }
 }
 
 XSM = {
@@ -620,4 +620,64 @@ GUA = {
 GOK = {
    	color = rgb { 0 153 204 }
 	color_ui = rgb { 0 153 204 }
+}
+
+MEX = {
+   	color = rgb { 104 152 83 }
+	color_ui = rgb { 104 152 83 }
+}
+
+USF = {
+   	color = rgb { 67 123 237 }
+	color_ui = rgb { 67 123 237 }
+}
+
+GLC = {
+   	color = rgb { 96 56 43 }
+	color_ui = rgb { 96 56 43 }
+}
+
+MDW = {
+   	color = rgb { 255 143 131 }
+	color_ui = rgb { 255 143 131 }
+}
+
+RMC = {
+   	color = rgb { 8 34 86 }
+	color_ui = rgb { 8 34 86 }
+}
+
+CAL = {
+   	color = rgb { 255 197 4 }
+	color_ui = rgb { 255 197 4 }
+}
+
+CAS = {
+   	color = rgb { 0 167 94 }
+	color_ui = rgb { 0 167 94 }
+}
+
+KAN = {
+   	color = rgb { 245 245 164 }
+	color_ui = rgb { 245 245 164 }
+}
+
+LOU = {
+   	color = rgb { 218 245 255 }
+	color_ui = rgb { 218 245 255 }
+}
+
+CAN = {
+   	color = rgb { 171 19 19 }
+	color_ui = rgb { 171 19 19 }
+}
+
+ETH = {
+   	color = rgb { 152 130 191 }
+	color_ui = rgb { 152 130 191 }
+}
+
+LBA = {
+   	color = rgb { 178 194 163 }
+	color_ui = rgb { 178 194 163 }
 }

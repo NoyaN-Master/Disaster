@@ -1,0 +1,26 @@
+
+state={
+	id=842
+	name="STATE_842"
+	manpower = 52268
+	
+	state_category = rural
+	
+	resources={
+		steel=3 # was: 40
+		aluminium=2 # was: 16
+	}
+
+	history={
+		owner = MEX
+                add_core_of = MEX
+		buildings = {
+			infrastructure = 2
+		}
+
+	}
+
+	provinces={
+		3834 7920 10783
+	}
+}

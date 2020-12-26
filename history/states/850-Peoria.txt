@@ -1,0 +1,22 @@
+
+state={
+	id=850
+	name="STATE_850"
+	manpower = 2179864
+	state_category = city
+
+	history={
+		owner = MDW
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		add_core_of = MDW
+
+	}
+
+	provinces={
+		1527 4590 6737 10339 10393 11589 12312 12365 12368  
+	}
+}

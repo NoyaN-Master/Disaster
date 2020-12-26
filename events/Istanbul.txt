@@ -11,21 +11,17 @@ country_event = { #Intro
 	fire_only_once = yes
 	
 	trigger = {
-	CRW = {
-	exists = yes
-	tag = CRW
-	}
 	}
 
 	is_triggered_only = yes
 
 	option = { #Intro
 		name = crw.1.a
-		country_event = { id = crw.2 days = 10 }
+		country_event = { id = crw.2 days = 5 }
 	}
 }
 
-country_event = { #Big Game
+country_event = { #fags burn store
 	id = crw.2
 	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
 	title = crw.2.t
@@ -35,16 +31,19 @@ country_event = { #Big Game
 
 	fire_only_once = yes
 	
+	trigger = {
+	}
+
 	is_triggered_only = yes
 
-	option = { 
+	option = { #Intro
 		name = crw.2.a
-		custom_effect_tooltip = ist_big_game
-		country_event = { id = crw.3 days = 2 }
+		add_stability = -0.05
+		country_event = { id = crw.3 days = 3 }
 	}
 }
 
-country_event = { #Crisis In Taksim
+country_event = { #shit gets real
 	id = crw.3
 	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
 	title = crw.3.t
@@ -54,16 +53,19 @@ country_event = { #Crisis In Taksim
 
 	fire_only_once = yes
 	
+	trigger = {
+	}
+
 	is_triggered_only = yes
 
-	option = { #Gangsters Intervene
+	option = { #Intro
 		name = crw.3.a
-		custom_effect_tooltip = ist_taxim
+		add_stability = -0.05
 		country_event = { id = crw.4 days = 2 }
 	}
 }
 
-country_event = { #Gangs Move To Penthouse
+country_event = { #The Snow Massacre
 	id = crw.4
 	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
 	title = crw.4.t
@@ -73,22 +75,20 @@ country_event = { #Gangs Move To Penthouse
 
 	fire_only_once = yes
 	
+	trigger = {
+	}
+
 	is_triggered_only = yes
 
-	option = { #Gangsters Attack 
+	option = { #Intro
 		name = crw.4.a
-		custom_effect_tooltip = ist_gangsters_attack
-		country_event = { id = crw.7 days = 2 }
-	}
-	
-	option = { #Call The Brits
-		name = crw.4.b
-		custom_effect_tooltip = ist_brits_intervene
-		country_event = { id = crw.5 days = 2 }
+		add_stability = -0.10
+		manpower = -1000
+		country_event = { id = crw.5 days = 3 }
 	}
 }
 
-country_event = { #The War
+country_event = { #Getting the parliament
 	id = crw.5
 	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
 	title = crw.5.t
@@ -98,21 +98,35 @@ country_event = { #The War
 
 	fire_only_once = yes
 	
+	trigger = {
+	}
+
 	is_triggered_only = yes
 
-	option = { #Brits Win
+	option = { #Intro
 		name = crw.5.a
-		country_event = { id = crw.6 days = 2 }
-	}
-	
-	option = { #Brits Lose
-		name = crw.5.b
-		custom_effect_tooltip = ist_brits_lose
-		country_event = { id = crw.8 days = 2 }
+		custom_effect_tooltip = crw5_tt
+		complete_national_focus = CRW_party_problems
+		hidden_effect = {
+		set_country_flag = parliament_ready
+		set_country_flag = {
+   		flag = conservative_point
+		value = 0
+		}
+		set_country_flag = {
+   		flag = socdem_point
+		value = 0
+		}
+		set_country_flag = {
+   		flag = liberal_point
+		value = 0
+		}	
+		}
+		country_event = { id = crw.6 days = 1 }
 	}
 }
 
-country_event = { #Brit Vic
+country_event = { #Protest Debate
 	id = crw.6
 	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
 	title = crw.6.t
@@ -122,19 +136,55 @@ country_event = { #Brit Vic
 
 	fire_only_once = yes
 	
+	trigger = {
+	}
+
 	is_triggered_only = yes
 
-	option = { #Brits Win
+	option = { #Intro
 		name = crw.6.a
-		custom_effect_tooltip = ist_rule_britannia
 		hidden_effect = {
-		set_country_flag = ist_brits
+		set_country_flag = revolt_done
+		complete_national_focus = CRW_addressing_protests
+		modify_country_flag = {
+    	flag = conservative_point
+    	value = 1
+		}	
 		}
+		custom_effect_tooltip = conserv_influence
+		country_event = { id = crw.7 days = 3 }
+	}
+
+	option = { #Intro
+		name = crw.6.b
+		hidden_effect = {
+		set_country_flag = revolt_done
+		complete_national_focus = CRW_addressing_protests
+		modify_country_flag = {
+    	flag = socdem_point
+    	value = 1
+		}	
+		}
+		custom_effect_tooltip = socdem_influence
+		country_event = { id = crw.7 days = 3 }
+	}
+
+	option = { #Intro
+		name = crw.6.c
+		hidden_effect = {
+		set_country_flag = revolt_done
+		complete_national_focus = CRW_addressing_protests
+		modify_country_flag = {
+    	flag = liberal_point
+    	value = 1
+		}	
+		}
+		custom_effect_tooltip = liberal_influence
+		country_event = { id = crw.7 days = 3 }
 	}
 }
 
-
-country_event = { #No Brits-Gang Victory
+country_event = { #Minority Debate
 	id = crw.7
 	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
 	title = crw.7.t
@@ -144,27 +194,55 @@ country_event = { #No Brits-Gang Victory
 
 	fire_only_once = yes
 	
+	trigger = {
+	}
+
 	is_triggered_only = yes
 
-	option = { 
+	option = { #Intro
 		name = crw.7.a
-		custom_effect_tooltip = ist_gangsters_win
-		set_cosmetic_tag = IST_gangster
 		hidden_effect = {
-		set_country_flag = ist_gang
+		set_country_flag = minority_done
+		complete_national_focus = CRW_multicultural_order
+		modify_country_flag = {
+    	flag = conservative_point
+    	value = 1
+		}	
 		}
-		set_politics = {
-		ruling_party = libertarian_socialist
-		}
-		add_popularity = {
-		ideology = libertarian_socialist
-		popularity = 0.8
-		}
+		custom_effect_tooltip = conserv_influence
+		country_event = { id = crw.8 days = 3 }
 	}
-}	
 
+	option = { #Intro
+		name = crw.7.b
+		hidden_effect = {
+		set_country_flag = minority_done
+		complete_national_focus = CRW_multicultural_order
+		modify_country_flag = {
+    	flag = socdem_point
+    	value = 1
+		}	
+		}
+		custom_effect_tooltip = socdem_influence
+		country_event = { id = crw.8 days = 3 }
+	}
 
-country_event = { #Brits Lose-Bateman 1
+	option = { #Intro
+		name = crw.7.c
+		hidden_effect = {
+		set_country_flag = minority_done
+		complete_national_focus = CRW_multicultural_order
+		modify_country_flag = {
+    	flag = liberal_point
+    	value = 1
+		}	
+		}
+		custom_effect_tooltip = liberal_influence
+		country_event = { id = crw.8 days = 3 }
+	}
+}
+
+country_event = { #Economy Debate
 	id = crw.8
 	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
 	title = crw.8.t
@@ -174,47 +252,114 @@ country_event = { #Brits Lose-Bateman 1
 
 	fire_only_once = yes
 	
+	trigger = {
+	}
+
 	is_triggered_only = yes
 
-	option = { #Bateman
+	option = { #Intro
 		name = crw.8.a
-		custom_effect_tooltip = ist_private_companies_come
-		country_event = { id = crw.9 days = 2 }
+		hidden_effect = {
+		set_country_flag = economy_done
+		complete_national_focus = CRW_economics
+		modify_country_flag = {
+    	flag = conservative_point
+    	value = 1
+		}	
+		}
+		custom_effect_tooltip = conserv_influence
+		country_event = { id = crw.9 days = 3 }
+	}
+
+	option = { #Intro
+		name = crw.8.b
+		hidden_effect = {
+		set_country_flag = economy_done
+		complete_national_focus = CRW_economics
+		modify_country_flag = {
+    	flag = socdem_point
+    	value = 1
+		}	
+		}
+		custom_effect_tooltip = socdem_influence
+		country_event = { id = crw.9 days = 3 }
+	}
+
+	option = { #Intro
+		name = crw.8.c
+		hidden_effect = {
+		set_country_flag = economy_done
+		complete_national_focus = CRW_economics
+		modify_country_flag = {
+    	flag = liberal_point
+    	value = 1
+		}	
+		}
+		custom_effect_tooltip = liberal_influence
+		country_event = { id = crw.9 days = 3 }
 	}
 }
 
-country_event = { #Brits Lose-Bateman 2
+country_event = { #Manisa Congress Ending
 	id = crw.9
-	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
 	title = crw.9.t
 	desc = crw.9.d
 
 	picture = GFX_report_event_aut_dollfuss_speech
 
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
 
-	option = { #Bateman
-		name = crw.9.a
-		custom_effect_tooltip = ist_bateman_coup
-		create_country_leader = {
-		name = "Patrik Baturoğlu"
-		#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-		picture = "Portrait_CRW_Bateman.tga"
-		expire = "1965.1.1"
-		ideology = minarchy
-		traits = {	
-		
-		}
-	}
+	option = {
+		name = crw.9.a 
+		add_political_power = 1
 		hidden_effect = {
-		set_country_flag = bateman_back
+		set_country_flag = canopen_meclis
+		complete_national_focus = CRW_open_meclis	
+			if = {
+				limit = {
+					has_country_flag = {
+						flag = liberal_point
+						value > 2
+					}
+				}
+				country_event = {
+					id = crw.12
+					days = 1
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = {
+						flag = conservative_point
+						value > 2
+					}
+				}
+				country_event = {
+					id = crw.10
+					days = 1
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = {
+						flag = socdem_point
+						value > 2
+					}
+				}
+				country_event = {
+					id = crw.11
+					days = 1
+				}
+			}
+
 		}
-	set_cosmetic_tag = IST_ancap	
 	}
 }
-country_event = { #Brits Lose-Bateman 1
+
+country_event = { #cons.win
 	id = crw.10
 	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
 	title = crw.10.t
@@ -224,50 +369,31 @@ country_event = { #Brits Lose-Bateman 1
 
 	fire_only_once = yes
 	
+	trigger = {
+	}
+
 	is_triggered_only = yes
 
-	option = { #Bateman
+	option = { #Intro
 		name = crw.10.a
-		custom_effect_tooltip = ist_maltepe_conferance
-		swap_ideas = {
-		remove_idea = CRW_Memories_Operation
-		add_idea = CRW_Memories_Operation_2
+		add_stability = -0.05
+		add_political_power = 150
+		hidden_effect = {
+		set_country_flag = consv_win
+		country_event = { id = crw.13 days = 3 }
+		}
+		set_politics = {
+		ruling_party = conservative
 		}
 		swap_ideas = {
-		remove_idea = CRW_Independent_City
-		add_idea = CRW_Minarchy
+		remove_idea = CRW_Autocratic_Idea 
+		add_idea = 	CRW_Cons_Idea
 		}
-		country_event = {id = crw.11 days = 3}
-	}
-
-}
-
-country_event = { #Brits Lose-Bateman 1
-	id = crw.11
-	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
-	title = crw.11.t
-	desc = crw.11.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-
-	option = { #Bateman
-		name = crw.11.a
-		custom_effect_tooltip = ist_maltepe_conferance_2
-		complete_national_focus = IST_istanbulification
-		swap_ideas = {
-		remove_idea = CRW_Race_War
-		add_idea = CRW_Race_War_Worsen
-		}
-		remove_ideas = {
-		CRW_Gang_Unrest
-		}
+		complete_national_focus = CRW_conservative_win
 	}
 }
-country_event = { #Brits Lose-Bateman 1
+
+country_event = { #cons.win
 	id = crw.12
 	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
 	title = crw.12.t
@@ -277,11 +403,243 @@ country_event = { #Brits Lose-Bateman 1
 
 	fire_only_once = yes
 	
+	trigger = {
+	}
+
 	is_triggered_only = yes
 
-	option = { #Bateman
-		name = crw.12.a
-		custom_effect_tooltip = ist_maltepe_conferance_2
-		add_idea = CRW_building_bateman_2
+	option = { #Intro
+		name = crw.10.a
+		add_stability = -0.05
+		add_political_power = 150
+		hidden_effect = {
+		set_country_flag = liberal_win
+		}
+		set_politics = {
+		ruling_party = liberal
+		}
+		swap_ideas = {
+		remove_idea = CRW_Autocratic_Idea 
+		add_idea = 	CRW_Liberal_Idea
+		}
+		complete_national_focus = CRW_liberal_win
+	}
+}
+
+country_event = { #soc.win
+	id = crw.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.11.t
+	desc = crw.11.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	is_triggered_only = yes
+
+	option = { #Intro
+		name = crw.11.a
+		add_stability = -0.05
+		add_political_power = 150
+		hidden_effect = {
+		set_country_flag = soc_win
+		}
+		set_politics = {
+		ruling_party = social_democrat
+		}
+		swap_ideas = {
+		remove_idea = CRW_Autocratic_Idea 
+		add_idea = 	CRW_SocDem_Idea
+		}
+		complete_national_focus = CRW_socdem_win
+	}
+}
+
+country_event = { #invitation
+	id = crw.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.13.t
+	desc = crw.13.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	is_triggered_only = yes
+
+	option = { #Intro
+		name = crw.13.a
+		hidden_effect = {
+		country_event = { id = crw.14 days = 2}
+		}
+	}
+
+	option = { #Intro
+		name = crw.13.b
+		hidden_effect = {
+		country_event = { id = crw.18 days = 7 }
+		}
+	}
+}
+
+country_event = { #cons.win
+	id = crw.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.14.t
+	desc = crw.14.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	is_triggered_only = yes
+
+	option = { #Survival
+		name = crw.14.a
+		hidden_effect = {
+		country_event = { id = crw.16 days = 3}
+		set_country_flag = vahdettin_rule
+		}
+		custom_effect_tooltip = vahdettin_rule_tt
+		complete_national_focus = CRW_return_to_basics
+	}
+
+	option = { #Death
+		name = crw.14.b
+		hidden_effect = {
+		country_event = { id = crw.17 days = 3 }
+		set_country_flag = nationalist_coup
+		}
+		create_country_leader = {
+		name = "Osman Fuad"
+		#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+		#picture = "Portrait_Afghanistan_Mohammed_Zahir_Shah.dds"
+		expire = "1965.1.1"
+		ideology = ultranationalist_subideology
+		traits = {		
+	}
+	set_party_name = { 
+    ideology = ultranationalist 
+    long_name = CRW_ultranationalist_coup_long 
+    name = CRW_ultranationalist_coup 
+}
+}
+		custom_effect_tooltip = death_vahdettin
+		kill_ideology_leader = autocratic
+		kill_ideology_leader = social_democrat
+		kill_ideology_leader = conservative
+		kill_ideology_leader = liberal
+		set_politics = {
+		ruling_party = ultranationalist
+		}
+		add_popularity = {
+    	ideology = ultranationalist
+    	popularity = 0.30
+		}
+		complete_national_focus = CRW_return_to_basics
+		unlock_national_focus = CRW_martial_law
+	}
+}
+
+country_event = { #closing 
+	id = crw.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.16.t
+	desc = crw.16.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	is_triggered_only = yes
+
+	option = { 
+		name = crw.16.a
+		hidden_effect = {
+		}
+	add_popularity = {
+    ideology = social_democrat
+    popularity = -1.0
+	}
+	add_popularity = {
+    ideology = conservative
+    popularity = -1.0
+	}
+	add_popularity = {
+    ideology = liberal
+    popularity = -1.0
+	}
+	add_popularity = {
+    ideology = autocratic
+    popularity = 1.0
+	}	
+	}
+}
+
+country_event = { #based speech 
+	id = crw.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.17.t
+	desc = crw.17.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	is_triggered_only = yes
+
+	option = { #based!
+		name = crw.17.a
+		hidden_effect = {
+		}
+	add_popularity = {
+    ideology = ultranationalist
+    popularity = 1.0
+	}
+	unlock_national_focus = CRW_fight_protest
+	swap_ideas = {
+		remove_idea = CRW_Cons_Idea 
+		add_idea = 	CRW_osman_idea
+		}	
+	}
+	remove_idea = CRW_Protests_1
+}
+
+country_event = { #invitation
+	id = crw.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.18.t
+	desc = crw.18.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	is_triggered_only = yes
+
+	option = { #Intro
+		name = crw.18.a
+		hidden_effect = {
+		set_country_flag = celal_gone
+		}
 	}
 }

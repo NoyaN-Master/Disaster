@@ -1,0 +1,35 @@
+state={
+	id=856
+	name="STATE_856"
+	resources={
+		steel=6 # was: 24.000
+	}
+	
+	state_category = megalopolis
+
+	history={
+		owner = USF
+		buildings = {
+			infrastructure = 9
+			arms_factory = 3
+			industrial_complex = 6
+			dockyard = 3
+			air_base = 8
+			3878 = {
+				naval_base = 6
+
+			}
+
+		}
+		add_core_of = USF
+		victory_points = {
+			3878 30.0 
+		}
+	}
+
+	provinces={
+		859 3878
+	}
+	manpower=5488694
+	buildings_max_level_factor=1.000
+}

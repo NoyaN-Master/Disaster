@@ -8,29 +8,30 @@ set_technology = {
 set_convoys = 0
 
 set_politics = {
-	ruling_party = liberal
+	ruling_party = autocratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
-add_ideas = CRW_Independent_City
-add_ideas = CRW_Gang_Unrest
-add_ideas = CRW_Failing_Economy
-add_ideas = CRW_Memories_Operation
-add_ideas = CRW_Race_War
-
 country_event = { id = crw.1 days = 1 } #Intro event
 
+set_stability = 0.55
+set_war_support = 0.30
+add_manpower = 10000
+
+add_ideas = CRW_Autocratic_Idea
+add_ideas = CRW_Protests_1
+
 set_popularities = {
-	conservative = 0
-	liberal = 100
-	social_democrat = 0
+	conservative = 25
+	liberal = 25
+	social_democrat = 25
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
 	national_bolshevik = 0
 	authoritarian_democrat = 0
-	autocratic = 0
+	autocratic = 25
 	ultranationalist = 0
 	revolutionary_nationalist = 0
 	esoteric_traditionalist = 0
@@ -38,9 +39,20 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "British Oligarchies"
+	name = "Vahdettin I"
 	#desc = "SES_Zeljko_Raznatovic_desc"
-	picture = "Portrait_CRW_British_Oligarchy.tga"
+	picture = "Portrait_CRW_Vahdettin.tga"
+	expire = "2020.1.1"
+	ideology = conservative_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Vahdettin I"
+	#desc = "SES_Zeljko_Raznatovic_desc"
+	picture = "Portrait_CRW_Vahdettin.tga"
 	expire = "2020.1.1"
 	ideology = liberal_subideology
 	traits = {
@@ -49,11 +61,22 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Paulis Allenian"
+	name = "Vahdettin I"
 	#desc = "SES_Zeljko_Raznatovic_desc"
-	picture = "Portrait_CRW_Allen.tga"
+	picture = "Portrait_CRW_Vahdettin.tga"
 	expire = "2020.1.1"
-	ideology = gangster_state
+	ideology = social_democrat_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Vahdettin I"
+	#desc = "SES_Zeljko_Raznatovic_desc"
+	picture = "Portrait_CRW_Vahdettin.tga"
+	expire = "2020.1.1"
+	ideology = autocratic_subideology
 	traits = {
 		#
 	}

@@ -1,0 +1,22 @@
+
+state={
+	id=847
+	name="STATE_847"
+	manpower = 496066
+	
+	state_category = town
+
+	history={
+		owner = KAN
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = KAN
+
+	}
+
+	provinces={
+		3708 4830 10606 10676 
+	}
+}

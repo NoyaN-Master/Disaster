@@ -1,0 +1,20 @@
+
+state={
+	id=381
+	name="STATE_381"
+	manpower = 212031
+	state_category = rural
+	
+	history={
+		owner = RMC
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = RMC
+	}
+
+	provinces={
+		1815 7688 7814 7888 10640 10711 12561 12633 12651 
+	}
+	
+}

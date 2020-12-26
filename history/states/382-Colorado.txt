@@ -1,0 +1,28 @@
+
+state={
+	id=382
+	name="STATE_382"
+	manpower = 683622
+	resources={
+		oil=9 # was: 20
+	}
+	
+	state_category = town
+
+	history={
+		owner = RMC
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = RMC
+		victory_points = {
+			1827 5 
+		}
+
+	}
+
+	provinces={
+		868 1658 1827 3869 6887 7684 7999 9792 10535 10588 12627 
+	}
+}

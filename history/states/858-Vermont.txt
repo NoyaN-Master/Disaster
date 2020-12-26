@@ -1,0 +1,23 @@
+state={
+	id=858
+	name="STATE_858"
+
+	state_category = town
+
+	history={
+		owner = USF
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		add_core_of = USF
+
+	}
+
+	provinces={
+		4445 7629 9675
+	}
+	manpower=941195
+	buildings_max_level_factor=1.000
+}

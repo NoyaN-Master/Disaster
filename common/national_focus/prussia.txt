@@ -1075,7 +1075,7 @@ focus_tree = {
 ######################### DNVP path
 	focus = {
 		id = PRE_dnvp_victory_focus
-		icon = GFX_goal_unknown
+		icon = GFX_goal_victory_hugenberg
 		x = 23
 		y = 0
 		cost = 1		
@@ -1091,7 +1091,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_use_the_stalhelm
-		icon = GFX_goal_unknown
+		icon = GFX_goal_use_stahlhelm
 		x = -1
 		y = 1
 		relative_position_id = PRE_dnvp_victory_focus
@@ -1105,7 +1105,7 @@ focus_tree = {
 	}	
 	focus = {
 		id = PRE_establish_harzbrug_front
-		icon = GFX_goal_unknown
+		icon = GFX_goal_harzbrug_front
 		x = 1
 		y = 1
 		relative_position_id = PRE_dnvp_victory_focus
@@ -1121,7 +1121,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_subdue_the_junkers
-		icon = GFX_goal_unknown
+		icon = GFX_goal_compromise_junkers
 		x = 0
 		y = 2
 		relative_position_id = PRE_dnvp_victory_focus
@@ -1138,7 +1138,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_entrench_the_hugenberg_press
-		icon = GFX_goal_unknown
+		icon = GFX_goal_entrench_hugenberg_press
 		x = -2
 		y = 2
 		relative_position_id = PRE_dnvp_victory_focus
@@ -1155,7 +1155,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_purge_socialists
-		icon = GFX_goal_unknown
+		icon = GFX_goal_purge_socialists
 		x = 2
 		y = 2
 		relative_position_id = PRE_dnvp_victory_focus
@@ -1169,7 +1169,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_absorb_adnp
-		icon = GFX_goal_unknown
+		icon = GFX_goal_outmaneuvre_goring
 		x = -1
 		y = 3
 		relative_position_id = PRE_dnvp_victory_focus
@@ -1188,7 +1188,7 @@ focus_tree = {
 
 	focus = {
 		id = PRE_new_constitution
-		icon = GFX_goal_unknown
+		icon = GFX_goal_new_constitution
 		x = 1
 		y = 3
 		relative_position_id = PRE_dnvp_victory_focus
@@ -1203,7 +1203,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_restore_monarchy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_restore_hohenzollen
 		x = 0
 		y = 4
 		relative_position_id = PRE_dnvp_victory_focus
@@ -1232,7 +1232,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_help_german_farmer
-		icon = GFX_goal_unknown
+		icon = GFX_goal_aid_farmer
 		x = -2
 		y = 5
 		relative_position_id = PRE_dnvp_victory_focus
@@ -1245,7 +1245,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_fuhrerprinzip
-		icon = GFX_goal_unknown
+		icon = GFX_goal_codify_fuhrer_prinzip
 		x = 0
 		y = 5
 		relative_position_id = PRE_dnvp_victory_focus
@@ -1258,7 +1258,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_abolish_worker_unions
-		icon = GFX_goal_unknown
+		icon = GFX_goal_crush_unions
 		x = 1
 		y = 6
 		relative_position_id = PRE_dnvp_victory_focus
@@ -1275,7 +1275,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_expand_state_industries
-		icon = GFX_goal_unknown
+		icon = GFX_goal_expand_state_industries
 		x = 3
 		y = 6
 		relative_position_id = PRE_dnvp_victory_focus
@@ -1332,7 +1332,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_empower_german_farmers
-		icon = GFX_goal_unknown
+		icon = GFX_goal_rural_culture
 		x = -3
 		y = 6
 		relative_position_id = PRE_dnvp_victory_focus
@@ -1347,7 +1347,7 @@ focus_tree = {
 	}	
 	focus = {
 		id = PRE_traditionalist_curriculum
-		icon = GFX_goal_unknown
+		icon = GFX_goal_trad_education
 		x = -1
 		y = 6
 		relative_position_id = PRE_dnvp_victory_focus
@@ -1360,7 +1360,7 @@ focus_tree = {
 	}	
 	focus = {
 		id = PRE_work_with_industrialists
-		icon = GFX_goal_unknown
+		icon = GFX_goal_work_with_industrialists
 		x = 2
 		y = 5
 		relative_position_id = PRE_dnvp_victory_focus
@@ -1372,7 +1372,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_prussian_corporatism
-		icon = GFX_goal_unknown
+		icon = GFX_goal_prussian_corporatism
 		x = 2
 		y = 7
 		relative_position_id = PRE_dnvp_victory_focus
@@ -1388,7 +1388,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_establish_bismarck_youth
-		icon = GFX_goal_unknown
+		icon = GFX_goal_prussian_national_youth
 		x = -2
 		y = 7
 		relative_position_id = PRE_dnvp_victory_focus
@@ -1401,7 +1401,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_increase_military_budget
-		icon = GFX_goal_unknown
+		icon = GFX_goal_increase_budget
 		x = 0
 		y = 7
 		relative_position_id = PRE_dnvp_victory_focus
@@ -1413,7 +1413,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_order_and_discipline
-		icon = GFX_goal_unknown
+		icon = GFX_goal_order_and_discipline
 		x = -1
 		y = 8
 		relative_position_id = PRE_dnvp_victory_focus
@@ -1427,7 +1427,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_military_industrial_complex
-		icon = GFX_goal_unknown
+		icon = GFX_goal_embrace_industrial_complex
 		x = 1
 		y = 8
 		relative_position_id = PRE_dnvp_victory_focus
@@ -1443,7 +1443,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_heil_im_der_siegerkranz
-		icon = GFX_goal_unknown
+		icon = GFX_goal_heil_im_der_siegerkranz
 		x = 0
 		y = 9
 		relative_position_id = PRE_dnvp_victory_focus
@@ -1458,7 +1458,7 @@ focus_tree = {
 ######################## liberal path
 	focus = {
 		id = PRE_liberal_victory_focus
-		icon = GFX_goal_unknown
+		icon = GFX_goal_liberal_victory
 		x = 32
 		y = 0
 		cost = 1
@@ -1475,7 +1475,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_state_of_emergency
-		icon = GFX_goal_unknown
+		icon = GFX_goal_state_of_emergency
 		x = 0
 		y = 1
 		relative_position_id = PRE_liberal_victory_focus
@@ -1496,7 +1496,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_end_paramilitaries
-		icon = GFX_goal_unknown
+		icon = GFX_goal_end_paramilitaries
 		x = -2
 		y = 2
 		relative_position_id = PRE_liberal_victory_focus
@@ -1510,7 +1510,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_disarm_radicals
-		icon = GFX_goal_unknown
+		icon = GFX_goal_disarm_radicals
 		x = -2
 		y = 3
 		relative_position_id = PRE_liberal_victory_focus
@@ -1528,7 +1528,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_junkers_power_chip
-		icon = GFX_goal_unknown
+		icon = GFX_goal_reduce_junker_influence
 		x = 0
 		y = 2
 		relative_position_id = PRE_liberal_victory_focus
@@ -1563,7 +1563,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_empower_reichstag
-		icon = GFX_goal_unknown
+		icon = GFX_goal_empower_reichstag
 		x = 0
 		y = 3
 		relative_position_id = PRE_liberal_victory_focus
@@ -1583,7 +1583,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_crush_goring
-		icon = GFX_goal_unknown
+		icon = GFX_goal_crush_goring
 		x = 2
 		y = 2
 		relative_position_id = PRE_liberal_victory_focus
@@ -1602,7 +1602,7 @@ focus_tree = {
 
 	focus = {
 		id = PRE_an_end_to_radicalism
-		icon = GFX_goal_unknown
+		icon = GFX_goal_an_end_to_radicalism
 		x = 2
 		y = 3
 		relative_position_id = PRE_liberal_victory_focus
@@ -1627,7 +1627,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_legacy_of_1848
-		icon = GFX_goal_unknown
+		icon = GFX_goal_legacy_1848
 		x = 0
 		y = 4
 		relative_position_id = PRE_liberal_victory_focus
@@ -1641,7 +1641,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_strengthen_civil_liberties
-		icon = GFX_goal_unknown
+		icon = GFX_goal_IST_Free_Will
 		x = -3
 		y = 5
 		relative_position_id = PRE_liberal_victory_focus
@@ -1654,7 +1654,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_neue_deutsche_bildung
-		icon = GFX_goal_unknown
+		icon = GFX_focus_research
 		x = -3
 		y = 6
 		relative_position_id = PRE_liberal_victory_focus
@@ -1668,7 +1668,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_public_works
-		icon = GFX_goal_unknown
+		icon = GFX_goal_AUT_new_labour_charter
 		x = -3
 		y = 7
 		relative_position_id = PRE_liberal_victory_focus
@@ -1690,7 +1690,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_aid_the_workers
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_treaty
 		x = -1
 		y = 5
 		relative_position_id = PRE_liberal_victory_focus
@@ -1703,7 +1703,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_encourage_entrepeneurs
-		icon = GFX_goal_unknown
+		icon = GFX_goal_AUT_farmers_to_factorymen
 		x = -1
 		y = 6
 		relative_position_id = PRE_liberal_victory_focus
@@ -1719,7 +1719,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_privatise_unprofitable_industries
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_industry_3
 		x = -1
 		y = 7
 		relative_position_id = PRE_liberal_victory_focus
@@ -1763,7 +1763,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_steel_works
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_steel
 		x = 1
 		y = 5
 		relative_position_id = PRE_liberal_victory_focus
@@ -1794,7 +1794,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_embrace_free_trade
-		icon = GFX_goal_unknown
+		icon = GFX_goal_AUT_grain_exports
 		x = 1
 		y = 6
 		relative_position_id = PRE_liberal_victory_focus
@@ -1822,7 +1822,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_democratic_arsenal
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ger_oppose_hitler
 		x = 1
 		y = 7
 		relative_position_id = PRE_liberal_victory_focus
@@ -1858,7 +1858,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_eastern_land_reform
-		icon = GFX_goal_unknown
+		icon = GFX_goal_AUT_maintain_agrarianism
 		x = 3
 		y = 5
 		relative_position_id = PRE_liberal_victory_focus
@@ -1890,7 +1890,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_liberal_nationalism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_abandon_the_gold_standard
 		x = 3
 		y = 6
 		relative_position_id = PRE_liberal_victory_focus
@@ -1907,7 +1907,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_democratic_army
-		icon = GFX_goal_unknown
+		icon = GFX_goal_democratic_army
 		x = 3
 		y = 7
 		relative_position_id = PRE_liberal_victory_focus
@@ -1925,7 +1925,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_germany_united_and_free
-		icon = GFX_goal_unknown
+		icon = GFX_goal_deutschland_vereint
 		x = 0
 		y = 8
 		relative_position_id = PRE_liberal_victory_focus

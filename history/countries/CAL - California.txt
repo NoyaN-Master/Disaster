@@ -1,0 +1,96 @@
+capital = 378
+oob = ""
+
+# Starting tech
+set_technology = {
+}
+
+set_convoys = 0
+
+set_politics = {
+	ruling_party = liberal
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	conservative = 19
+	liberal = 31
+	social_democrat = 23
+	libertarian_socialist = 14
+	authoritarian_socialist = 8
+	national_bolshevik = 0
+	authoritarian_democrat = 0
+	autocratic = 0
+	ultranationalist = 0
+	revolutionary_nationalist = 0
+	esoteric_traditionalist = 5
+	revolutionary_anarchist = 0
+}
+
+create_country_leader = {
+	name = "Culbert Olson"
+	desc = "CAL_Culbert_Olson_desc"
+	picture = "CAL_Culbert_Olson.tga"
+	expire = "2020.1.1"
+	ideology = social_democrat_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Upton Sinclair"
+	desc = "CAL_Upton_Sinclair_desc"
+	picture = "CAL_Upton_Sinclair.tga"
+	expire = "2020.1.1"
+	ideology = libertarian_socialist_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "James Rolph Jr."
+	desc = "CAL_James_Rolph_desc"
+	picture = "CAL_James_Rolph.tga"
+	expire = "2020.1.1"
+	ideology = liberal_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Jay Lovestone"
+	desc = "CAL_Jay_Lovestone_desc"
+	picture = "CAL_Jay_Lovestone.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_socialist_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Pat McCarran"
+	desc = "CAL_Pat_McCarran_desc"
+	picture = "CAL_Pat_McCarran.tga"
+	expire = "2020.1.1"
+	ideology = conservative_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "L. Ron Hubbard"
+	desc = "CAL_Hubbard_desc"
+	picture = "CAL_Hubbard.tga"
+	expire = "2020.1.1"
+	ideology = esoteric_traditionalist_subideology
+	traits = {
+		#
+	}
+}

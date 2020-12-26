@@ -1,0 +1,63 @@
+capital = 361
+oob = ""
+
+# Starting tech
+set_technology = {
+}
+
+set_convoys = 0
+
+set_politics = {
+	ruling_party = authoritarian_democrat
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	conservative = 40
+	liberal = 40
+	social_democrat = 0
+	libertarian_socialist = 0
+	authoritarian_socialist = 0
+	national_bolshevik = 0
+	authoritarian_democrat = 20
+	autocratic = 0
+	ultranationalist = 0
+	revolutionary_nationalist = 0
+	esoteric_traditionalist = 0
+	revolutionary_anarchist = 0
+}
+
+create_country_leader = {
+	name = "John J. Pershing"
+	desc = "USF_John_Pershing_desc"
+	picture = "USF_John_Pershing.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_democrat_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Frank Orren Lowden"
+	desc = "USF_Frank_Lowden_desc"
+	picture = "USF_Frank_Lowden.tga"
+	expire = "2020.1.1"
+	ideology = liberal_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "A. Mitchell Palmer"
+	desc = "USF_Mitchell_Palmer_desc"
+	picture = "USF_Mitchell_Palmer.tga"
+	expire = "2020.1.1"
+	ideology = conservative_subideology
+	traits = {
+		#
+	}
+}
