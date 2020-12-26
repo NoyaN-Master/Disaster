@@ -40,7 +40,7 @@ country_event = {
 
 	option = {
 			name = bra.2.b
-			ai_chance = { factor = 0}
+			ai_chance = { factor = 1}
             		add_ideas = BRA_Enpower_Integralists
 	}
 }
@@ -58,13 +58,17 @@ country_event = {
 	option = {
 			name = bra.3.a
 			ai_chance = { factor = 1}
-            		# unlock team vargas decisions
+            		hidden_effect = {
+				set_country_flag = BRA_back_vargas
+			}
 	}
 
 	option = {
 			name = bra.3.b
-			ai_chance = { factor = 0}
-            		# unlock team integralist decisions
+			ai_chance = { factor = 1}
+            		hidden_effect = {
+				set_country_flag = BRA_back_vargas
+			}
 	}
 }
 
