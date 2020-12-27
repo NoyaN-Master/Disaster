@@ -138,6 +138,11 @@ leader_traits = {
 	    random = no
 		stability_factor = 0.20
 	}
+
+	benevolent_emperor = {
+	    random = no
+		stability_factor = 0.10
+	}
 	
 	bastion_evil = {
 	    random = no
