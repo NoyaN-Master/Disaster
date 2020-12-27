@@ -2,7 +2,7 @@ state={
 	id=820
 	name="STATE_820"
 	history={
-		owner = 
+		owner = SRF
 		victory_points = {
 			9663 1
 		}
@@ -12,12 +12,12 @@ state={
 			arms_factory = 1
 
 		}
-		add_core_of = 
+		add_core_of = SRF
 
 	}
 	
 	provinces={
-		3698 6721 6692 9663 9674 11647
+		3698 6721 6692 9663 9674 11647 11664 
 	}
 	manpower= 585588
 	buildings_max_level_factor=1.000

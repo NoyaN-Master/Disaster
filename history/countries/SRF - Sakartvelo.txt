@@ -1,4 +1,4 @@
-capital = 231
+capital = 820
 oob = ""
 
 # Starting tech
@@ -8,21 +8,21 @@ set_technology = {
 set_convoys = 0
 
 set_politics = {
-	ruling_party = autocratic
+	ruling_party = national_bolshevik
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	conservative = 10
+	conservative = 0
 	liberal = 0
-	social_democrat = 15
-	libertarian_socialist = 5
-	authoritarian_socialist = 0
-	national_bolshevik = 0
-	authoritarian_democrat = 20
-	autocratic = 50
+	social_democrat = 5
+	libertarian_socialist = 15
+	authoritarian_socialist = 30
+	national_bolshevik = 50
+	authoritarian_democrat = 0
+	autocratic = 0
 	ultranationalist = 0
 	revolutionary_nationalist = 0
 	esoteric_traditionalist = 0
@@ -30,11 +30,11 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Friedrich Kress von Kressenstein"
-	desc = "GEO_Kressenstein_desc"
-	picture = "GEO_Kressenstein.tga"
+	name = "Ioseb Jughashvili"
+	desc = "SRF_Stalin_desc"
+	picture = "SRF_Stalin.tga"
 	expire = "2020.1.1"
-	ideology = autocratic_subideology
+	ideology = national_bolshevik_subideology
 	traits = {
 		#
 	}
