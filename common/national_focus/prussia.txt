@@ -1957,7 +1957,7 @@ focus_tree = {
 	focus = {
 		id = PRE_junker_victory_focus
 		icon = GFX_goal_unknown
-		x = 38
+		x = 42
 		y = 0
 		cost = 10		
 		available = {
@@ -1968,5 +1968,312 @@ focus_tree = {
 		
 		}
 	}
+	focus = {
+		id = PRE_declare_martial_law
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = PRE_junker_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_junker_victory_focus}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_strike_at_the_nationalists
+		icon = GFX_goal_unknown
+		x = -1
+		y = 2
+		relative_position_id = PRE_junker_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_declare_martial_law}
+		
+		completion_reward = {
+		
+		}
+	}	
+	focus = {
+		id = PRE_provoke_split_adnp
+		icon = GFX_goal_unknown
+		x = -1
+		y = 3
+		relative_position_id = PRE_junker_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_strike_at_the_nationalists}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_crush_liberals
+		icon = GFX_goal_unknown
+		x = 1
+		y = 2
+		relative_position_id = PRE_junker_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_declare_martial_law}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_resist_reform
+		icon = GFX_goal_unknown
+		x = 1
+		y = 3
+		relative_position_id = PRE_junker_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_crush_liberals}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_republic_lives_on
+		icon = GFX_goal_unknown
+		x = 0
+		y = 4
+		relative_position_id = PRE_junker_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_resist_reform}
+		prerequisite = { focus = PRE_provoke_split_adnp}		
+		completion_reward = {
+		
+		}
+	}
+	focus = { 
+		id = PRE_empower_prussian_generals
+		icon = GFX_goal_unknown
+		x = -4
+		y = 5
+		relative_position_id = PRE_junker_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_republic_lives_on}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_frederick_great_reforms
+		icon = GFX_goal_unknown
+		x = -4
+		y = 6
+		relative_position_id = PRE_junker_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_empower_prussian_generals}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_army_with_a_state
+		icon = GFX_goal_unknown
+		x = -4
+		y = 7
+		relative_position_id = PRE_junker_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_frederick_great_reforms}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_prussian_work_ethics
+		icon = GFX_goal_unknown
+		x = 4
+		y = 5
+		relative_position_id = PRE_junker_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_republic_lives_on}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_every_prussian_a_soldier
+		icon = GFX_goal_unknown
+		x = 4
+		y = 6
+		relative_position_id = PRE_junker_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_prussian_work_ethics}
+		
+		completion_reward = {
+		
+		}
+		
+	}
+	focus = {
+		id = PRE_strict_education
+		icon = GFX_goal_unknown
+		x = 4
+		y = 7
+		relative_position_id = PRE_junker_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_every_prussian_a_soldier}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = PRE_look_to_the_countryside
+		icon = GFX_goal_unknown
+		x = -1
+		y = 5
+		relative_position_id = PRE_junker_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_republic_lives_on}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_secure_our_position
+		icon = GFX_goal_unknown
+		x = 1
+		y = 5
+		relative_position_id = PRE_junker_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_republic_lives_on}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_invest_in_the_estates
+		icon = GFX_goal_unknown
+		x = -2
+		y = 6
+		relative_position_id = PRE_junker_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_look_to_the_countryside}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_control_farmers_union
+		icon = GFX_goal_unknown
+		x = 0
+		y = 6
+		relative_position_id = PRE_junker_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_secure_our_position}
+		prerequisite = { focus = PRE_look_to_the_countryside}		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_undermine_the_opposition
+		icon = GFX_goal_unknown
+		x = 2
+		y = 6
+		relative_position_id = PRE_junker_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_secure_our_position}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_rural_boom
+		icon = GFX_goal_unknown
+		x = -1
+		y = 7
+		relative_position_id = PRE_junker_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_invest_in_the_estates}
+		prerequisite = { focus = PRE_control_farmers_union}		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_maintaining_sham_democracy
+		icon = GFX_goal_unknown
+		x = 1
+		y = 7
+		relative_position_id = PRE_junker_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_control_farmers_union}
+		prerequisite = { focus = PRE_undermine_the_opposition}		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_guiding_hand_of_the_junkers
+		icon = GFX_goal_unknown
+		x = 0
+		y = 8
+		relative_position_id = PRE_junker_victory_focus
+		cost = 10		
+		prerequisite = { focus = PRE_maintaining_sham_democracy}
+		prerequisite = { focus = PRE_rural_boom}		
+		completion_reward = {
+		
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 	}
