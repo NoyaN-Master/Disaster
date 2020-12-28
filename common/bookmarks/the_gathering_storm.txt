@@ -74,17 +74,13 @@ bookmarks = {
 		}
 		
 		"PRE"={
-			history = "PRE_GATHERING_STORM_DESC"
+			history = "AUT_GATHERING_STORM_DESC"
 			ideology = authoritarian_democrat 
 			ideas = {
-			PRE_simmering_discontent
-			PRE_sham_democracy
-			PRE_political_radicalisation
+
 			}
 			focuses = {
-			PRE_liberal_victory_focus
-			PRE_schleicher_holds_on
-			PRE_dnvp_victory_focus
+
 			}
 		}
 

@@ -478,7 +478,7 @@ PRE_increase_military_budget_idea = {
 			political_power_gain = -0.2
 			}
 		}
-PRE_order_and_discipline_idea = {
+PRE_order_and_discipline = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_order_and_discipline" }
 			#picture = 
 			modifier = {
