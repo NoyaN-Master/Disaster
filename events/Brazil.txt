@@ -15,10 +15,9 @@ country_event = {
 			ai_chance = { factor = 1}
             		add_political_power = -15
             		add_popularity = {
-				ideology = ultranationalist
-				popularity = 0.10
-			
-			}
+						ideology = ultranationalist
+						popularity = 0.10
+					}
 	}
 }
 
@@ -58,17 +57,17 @@ country_event = {
 	option = {
 			name = bra.3.a
 			ai_chance = { factor = 1}
-            		hidden_effect = {
-				set_country_flag = BRA_back_vargas
-			}
+            	hidden_effect = {
+					set_country_flag = BRA_back_vargas
+				}
 	}
 
 	option = {
 			name = bra.3.b
 			ai_chance = { factor = 1}
-            		hidden_effect = {
-				set_country_flag = BRA_back_vargas
-			}
+            	hidden_effect = {
+					set_country_flag = BRA_back_vargas
+				}
 	}
 }
 
