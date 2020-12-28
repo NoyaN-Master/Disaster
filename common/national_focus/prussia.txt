@@ -1423,7 +1423,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_establish_bismarck_youth }
 		completion_reward = {
 		
-		add_ideas = PRE_order_and_discipline
+		add_ideas = PRE_order_and_discipline_idea
 		}
 	}
 	focus = {
@@ -1453,7 +1453,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_military_industrial_complex }
 		
 		completion_reward = {
-		add_country_leader_trait = PRE_heil_im_der_siegerkranz
+		add_country_leader_trait = PRE_heil_im_der_siegerkranz_idea
 		}
 	}	
 ######################## liberal path
