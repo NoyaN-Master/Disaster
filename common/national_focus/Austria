@@ -1799,7 +1799,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_meet_with_otto
-		#icon = 
+		icon = GFX_goal_AUT_meet_with_otto
 		x = 36
 		y = 0
 		cost = 3
@@ -1827,7 +1827,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_a_hesitant_approach
-		#icon = 
+		icon = GFX_goal_AUT_hesitant_approach
 		prerequisite = { focus = AUT_meet_with_otto }
         mutually_exclusive = { focus = AUT_promise_a_restoration }		
 		x = 35
@@ -1855,7 +1855,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_promise_a_restoration
-		#icon = 
+		icon = GFX_goal_AUT_promise_a_restoration
 		prerequisite = { focus = AUT_meet_with_otto }
         mutually_exclusive = { focus = AUT_a_hesitant_approach }		
 		x = 37
@@ -1884,7 +1884,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_absorb_the_eiserne_legion
-		#icon = 
+		icon = GFX_goal_AUT_absorb_the_eiserne_legion
 		prerequisite = { focus = AUT_promise_a_restoration }
 		x = 38
 		y = 2
@@ -1914,7 +1914,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_undermine_royalists
-		#icon = 
+		icon = GFX_goal_AUT_undermine_royals
 		prerequisite = { focus = AUT_a_hesitant_approach }	
 		x = 34
 		y = 2
@@ -1942,7 +1942,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_remove_the_legitimists
-		#icon = 
+		icon = GFX_goal_AUT_remove_the_legitimists
 		prerequisite = { focus = AUT_undermine_royalists }	
 		prerequisite = { focus = AUT_clarify_the_laws }
 		x = 35
@@ -1969,7 +1969,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_no_leader_but_one
-		#icon = 
+		icon = GFX_goal_AUT_one_ruler
 		prerequisite = { focus = AUT_remove_the_legitimists }	
 		x = 35
 		y = 4
@@ -1994,7 +1994,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_clarify_the_laws
-		#icon = 
+		icon = GFX_goal_AUT_clarify_the_laws
 		prerequisite = { focus = AUT_a_hesitant_approach OR = AUT_promise_a_restoration }	
 		x = 36
 		y = 2
@@ -2026,7 +2026,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_restore_the_monarchy
-		#icon = 
+		icon = GFX_goal_AUT_restore_the_monarchy
 		prerequisite = { focus = AUT_absorb_the_eiserne_legion }
         prerequisite = { focus = AUT_clarify_the_laws }
 		x = 37
@@ -2051,7 +2051,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_the_personification_of_austria
-		#icon = 
+		icon = GFX_goal_AUT_the_personification_of_austria
 		prerequisite = { focus = AUT_restore_the_monarchy }		
 		x = 37
 		y = 4

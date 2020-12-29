@@ -5722,3 +5722,383 @@ SpriteType = {
         legacy_lazy_load = no
     
 }
+
+SpriteType = {
+            name = "GFX_goal_AUT_one_ruler"
+            texturefile = "gfx/interface/goals/AUT_one_ruler.tga"
+    }
+
+    SpriteType = {
+		name = "GFX_goal_AUT_one_ruler_shine"
+		texturefile = "gfx/interface/goals/AUT_one_ruler.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/AUT_one_ruler.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/AUT_one_ruler.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+        legacy_lazy_load = no
+    
+}
+
+SpriteType = {
+            name = "GFX_goal_AUT_undermine_royals"
+            texturefile = "gfx/interface/goals/AUT_undermine_royals.tga"
+    }
+
+    SpriteType = {
+		name = "GFX_goal_AUT_undermine_royals_shine"
+		texturefile = "gfx/interface/goals/AUT_undermine_royals.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/AUT_undermine_royals.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/AUT_undermine_royals.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+        legacy_lazy_load = no
+    
+}
+
+SpriteType = {
+            name = "GFX_goal_AUT_the_personification_of_austria"
+            texturefile = "gfx/interface/goals/AUT_the_personification_of_austria.tga"
+    }
+
+    SpriteType = {
+		name = "GFX_goal_AUT_undermine_royals_shine"
+		texturefile = "gfx/interface/goals/AUT_the_personification_of_austria.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/AUT_the_personification_of_austria.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/AUT_the_personification_of_austria.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+        legacy_lazy_load = no
+    
+}
+
+SpriteType = {
+            name = "GFX_goal_AUT_restore_the_monarchy"
+            texturefile = "gfx/interface/goals/AUT_restore_the_monarchy.tga"
+    }
+
+    SpriteType = {
+		name = "GFX_goal_AUT_restore_the_monarchy_shine"
+		texturefile = "gfx/interface/goals/AUT_restore_the_monarchy.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/AUT_restore_the_monarchy.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/AUT_restore_the_monarchy.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+        legacy_lazy_load = no
+    
+}
+
+SpriteType = {
+            name = "GFX_goal_AUT_remove_the_legitimists"
+            texturefile = "gfx/interface/goals/AUT_remove_the_legitimists.tga"
+    }
+
+    SpriteType = {
+		name = "GFX_goal_AUT_remove_the_legitimists_shine"
+		texturefile = "gfx/interface/goals/AUT_remove_the_legitimists.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/AUT_remove_the_legitimists.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/AUT_remove_the_legitimists.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+        legacy_lazy_load = no
+    
+}
+
+SpriteType = {
+            name = "GFX_goal_AUT_promise_a_restoration"
+            texturefile = "gfx/interface/goals/AUT_promise_a_restoration.tga"
+    }
+
+    SpriteType = {
+		name = "GFX_goal_AUT_promise_a_restoration_shine"
+		texturefile = "gfx/interface/goals/AUT_promise_a_restoration.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/AUT_promise_a_restoration.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/AUT_promise_a_restoration.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+        legacy_lazy_load = no
+    
+}
+
+SpriteType = {
+            name = "GFX_goal_AUT_meet_with_otto"
+            texturefile = "gfx/interface/goals/AUT_meet_with_otto.tga"
+    }
+
+    SpriteType = {
+		name = "GFX_goal_AUT_meet_with_otto_shine"
+		texturefile = "gfx/interface/goals/AUT_meet_with_otto.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/AUT_meet_with_otto.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/AUT_meet_with_otto.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+        legacy_lazy_load = no
+    
+}
+
+SpriteType = {
+            name = "GFX_goal_AUT_hesitant_approach"
+            texturefile = "gfx/interface/goals/AUT_hesitant_approach.tga"
+    }
+
+    SpriteType = {
+		name = "GFX_goal_AUT_hesitant_approach_shine"
+		texturefile = "gfx/interface/goals/AUT_hesitant_approach.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/AUT_hesitant_approach.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/AUT_hesitant_approach.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+        legacy_lazy_load = no
+    
+}
+
+SpriteType = {
+            name = "GFX_goal_AUT_clarify_the_laws"
+            texturefile = "gfx/interface/goals/AUT_clarify_the_laws.tga"
+    }
+
+    SpriteType = {
+		name = "GFX_goal_AUT_clarify_the_laws_shine"
+		texturefile = "gfx/interface/goals/AUT_clarify_the_laws.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/AUT_clarify_the_laws.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/AUT_clarify_the_laws.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+        legacy_lazy_load = no
+    
+}
+
+SpriteType = {
+            name = "GFX_goal_AUT_absorb_the_eiserne_legion"
+            texturefile = "gfx/interface/goals/AUT_absorb_the_eiserne_legion.tga"
+    }
+
+    SpriteType = {
+		name = "GFX_goal_AUT_absorb_the_eiserne_legion_shine"
+		texturefile = "gfx/interface/goals/AUT_absorb_the_eiserne_legion.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/AUT_absorb_the_eiserne_legion.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/AUT_absorb_the_eiserne_legion.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+        legacy_lazy_load = no
+    
+}
