@@ -542,8 +542,51 @@ PRE_aid_the_workers_idea2= {
 			production_factory_max_efficiency_factor = 0.06
 			}
 		}
+PRE_junker_rule_continues = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_junker_rule_continues" }
+			#picture = 
+			modifier = {
+			stability_factor = 0.2
+			production_speed_arms_factory_factor = 0.05			
+			}
+		}
+PRE_frederick_great_reforms_idea1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_frederick_great_reforms_idea1" }
+			#picture = 
+			modifier = {
+			command_power_gain = 0.2
+			max_command_power = 30
+			minimum_training_level = -0.1 
+			}
+		}
 
+PRE_frederick_great_reforms_idea2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_aid_the_workers_idea2" }
+			#picture = 
+			modifier = {
+			command_power_gain = 0.3
+			max_command_power = 50
+			minimum_training_level = -0.1 
+			land_reinforce_rate = 0.5
+			experience_loss_factor = -0.2
+			
+			}
+		}
 
+PRE_frederick_great_reforms_idea3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_frederick_great_reforms_idea3" }
+			#picture = 
+			modifier = {
+			command_power_gain = 0.3
+			max_command_power = 50
+			minimum_training_level = -0.1 
+			land_reinforce_rate = 0.5
+			experience_loss_factor = -0.2
+			experience_gain_army = 0.15
+			conscription_factor = 0.10
+			conscription = 0.02
+			}
+		}
 
 
 

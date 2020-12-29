@@ -1960,13 +1960,13 @@ focus_tree = {
 		icon = GFX_goal_junkers_hold_on
 		x = 42
 		y = 0
-		cost = 10		
+		cost = 1		
 		available = {
 			has_country_flag = PRE_junker_victory	
 		}	
 		
 		completion_reward = {
-		
+		add_political_power = 50
 		}
 	}
 	focus = {
@@ -1975,24 +1975,44 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = PRE_junker_victory_focus
-		cost = 10		
+		cost = 5		
 		prerequisite = { focus = PRE_junker_victory_focus}
-		
+		select_effect = {
+		add_ideas = PRE_martial_law
+		}
+		hidden_effect = {
+		remove_ideas = PRE_martial_law
+		}	
 		completion_reward = {
-		
+		remove_ideas = PRE_political_radicalisation
+		custom_effect_tooltip = PRE_martial_law_tooltip
+		show_ideas_tooltip = PRE_martial_law
 		}
 	}
+	
 	focus = {
 		id = PRE_strike_at_the_nationalists
 		icon = GFX_goal_junkers_strike_nationalists
 		x = -1
 		y = 2
 		relative_position_id = PRE_junker_victory_focus
-		cost = 10		
+		cost = 5		
 		prerequisite = { focus = PRE_declare_martial_law}
 		
 		completion_reward = {
-		
+		add_popularity = {
+			ideology = revolutionary_nationalist
+			popularity = -0.05
+		}	
+		add_popularity = {
+			ideology = ultranationalist
+			popularity = -0.05
+		}			
+		add_popularity = {
+			ideology = conservative
+			popularity = -0.05
+		}
+		add_war_support = -0.05
 		}
 	}	
 	focus = {
@@ -2001,12 +2021,21 @@ focus_tree = {
 		x = -1
 		y = 3
 		relative_position_id = PRE_junker_victory_focus
-		cost = 10		
+		cost = 5		
 		prerequisite = { focus = PRE_strike_at_the_nationalists}
 		
 		completion_reward = {
-		
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.15
+		}			
+		add_popularity = {
+			ideology = revolutionary_nationalist
+			popularity = -0.05
+		}		
+		remove_ideas = PRE_sham_democracy
 		}
+		
 	}
 	focus = {
 		id = PRE_crush_liberals
@@ -2014,11 +2043,15 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = PRE_junker_victory_focus
-		cost = 10		
+		cost = 5		
 		prerequisite = { focus = PRE_declare_martial_law}
 		
 		completion_reward = {
-		
+		add_popularity = {
+			ideology = liberal
+			popularity = -0.15
+		}
+		add_stability = 0.1
 		}
 	}
 	focus = {
@@ -2031,7 +2064,12 @@ focus_tree = {
 		prerequisite = { focus = PRE_crush_liberals}
 		
 		completion_reward = {
-		
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.15
+		}		
+		add_stability = 0.15
+		add_political_power = 100
 		}
 	}
 	focus = {
@@ -2044,7 +2082,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_resist_reform}
 		prerequisite = { focus = PRE_provoke_split_adnp}		
 		completion_reward = {
-		
+		add_ideas = PRE_junker_rule_continues
 		}
 	}
 	focus = { 
@@ -2057,7 +2095,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_republic_lives_on}
 		
 		completion_reward = {
-		
+		add_ideas = PRE_frederick_great_reforms_idea1	
 		}
 	}
 	focus = {
@@ -2070,7 +2108,10 @@ focus_tree = {
 		prerequisite = { focus = PRE_empower_prussian_generals}
 		
 		completion_reward = {
-		
+		swap_ideas = {
+			add_idea = PRE_frederick_great_reforms_idea2
+			remove_idea = PRE_frederick_great_reforms_idea1
+		}		
 		}
 	}
 	focus = {
@@ -2083,7 +2124,10 @@ focus_tree = {
 		prerequisite = { focus = PRE_frederick_great_reforms}
 		
 		completion_reward = {
-		
+		swap_ideas = {
+			add_idea = PRE_frederick_great_reforms_idea3
+			remove_idea = PRE_frederick_great_reforms_idea2
+		}				
 		}
 	}
 	focus = {
