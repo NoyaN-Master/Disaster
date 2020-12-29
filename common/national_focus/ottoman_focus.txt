@@ -148,6 +148,19 @@
 		select_effect = {
 		}
 		completion_reward = {
+		add_stability = 0.05
+		797 = {
+		add_building_construction = {
+    	type = industrial_complex      
+    	level = 1
+    	instant_build = yes
+		}
+		add_building_construction = {
+    	type = infrastructure      
+    	level = 2
+    	instant_build = yes
+		}
+		}	
         }
 	}
 
@@ -165,6 +178,10 @@
 		select_effect = {
 		}
 		completion_reward = {
+		swap_ideas = {
+		remove_idea = CRW_Protests_1
+		add_idea = CRW_Protests_2	
+		}	
         }
 	}
 
@@ -201,6 +218,18 @@
 		select_effect = {
 		}
 		completion_reward = {
+		797 = {
+		add_building_construction = {
+    	type = industrial_complex      
+    	level = 1
+    	instant_build = yes
+		}
+		add_building_construction = {
+    	type = infrastructure      
+    	level = 2
+    	instant_build = yes
+		}
+		}	
         }
 	}
 
@@ -219,6 +248,10 @@
 		select_effect = {
 		}
 		completion_reward = {
+		swap_ideas = {
+		remove_idea = CRW_Protests_2
+		add_idea = CRW_Protests_3
+		}		
         }
 	}
 
@@ -237,6 +270,13 @@
 		select_effect = {
 		}
 		completion_reward = {
+		797 = {
+		add_building_construction = {
+    	type = infrastructure      
+    	level = 2
+    	instant_build = yes
+		}
+		}	
         }
 	}
 
@@ -256,7 +296,8 @@
 		}
 		completion_reward = {
 		hidden_effect = {
-		set_country_flag = CRW_cons_end	
+		set_country_flag = CRW_cons_end
+		add_stability = 0.10
 		}		
         }
 	}
