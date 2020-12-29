@@ -66,7 +66,7 @@ country_event = {
 			name = bra.3.b
 			ai_chance = { factor = 1}
             	hidden_effect = {
-					set_country_flag = BRA_back_vargas
+					set_country_flag = BRA_back_salgado
 				}
 	}
 }
