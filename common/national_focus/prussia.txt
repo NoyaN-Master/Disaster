@@ -1957,7 +1957,7 @@ focus_tree = {
 ########################## junker path
 	focus = {
 		id = PRE_junker_victory_focus
-		icon = GFX_goal_unknown
+		icon = GFX_goal_junkers_hold_on
 		x = 42
 		y = 0
 		cost = 10		
@@ -1971,7 +1971,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_declare_martial_law
-		icon = GFX_goal_unknown
+		icon = GFX_goal_junker_declare_martial_law
 		x = 0
 		y = 1
 		relative_position_id = PRE_junker_victory_focus
@@ -1984,7 +1984,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_strike_at_the_nationalists
-		icon = GFX_goal_unknown
+		icon = GFX_goal_junkers_strike_nationalists
 		x = -1
 		y = 2
 		relative_position_id = PRE_junker_victory_focus
@@ -1997,7 +1997,7 @@ focus_tree = {
 	}	
 	focus = {
 		id = PRE_provoke_split_adnp
-		icon = GFX_goal_unknown
+		icon = GFX_goal_provoke_a_slip_in_ADNP
 		x = -1
 		y = 3
 		relative_position_id = PRE_junker_victory_focus
@@ -2010,7 +2010,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_crush_liberals
-		icon = GFX_goal_unknown
+		icon = GFX_goal_Crush_the_liberals
 		x = 1
 		y = 2
 		relative_position_id = PRE_junker_victory_focus
@@ -2023,7 +2023,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_resist_reform
-		icon = GFX_goal_unknown
+		icon = GFX_goal_resist_reforms
 		x = 1
 		y = 3
 		relative_position_id = PRE_junker_victory_focus
@@ -2036,7 +2036,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_republic_lives_on
-		icon = GFX_goal_unknown
+		icon = GFX_goal_The_republic_moves_on
 		x = 0
 		y = 4
 		relative_position_id = PRE_junker_victory_focus
@@ -2049,7 +2049,7 @@ focus_tree = {
 	}
 	focus = { 
 		id = PRE_empower_prussian_generals
-		icon = GFX_goal_unknown
+		icon = GFX_goal_enpower_junker_generals
 		x = -4
 		y = 5
 		relative_position_id = PRE_junker_victory_focus
@@ -2062,7 +2062,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_frederick_great_reforms
-		icon = GFX_goal_unknown
+		icon = GFX_goal_fredrickan_refroms
 		x = -4
 		y = 6
 		relative_position_id = PRE_junker_victory_focus
@@ -2075,7 +2075,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_army_with_a_state
-		icon = GFX_goal_unknown
+		icon = GFX_goal_army_with_state
 		x = -4
 		y = 7
 		relative_position_id = PRE_junker_victory_focus
