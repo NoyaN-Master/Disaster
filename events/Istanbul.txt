@@ -667,3 +667,256 @@ country_event = { #The Snow Massacre
 		remove_idea = CRW_Protests_1
 	}
 }
+
+country_event = { #invest
+	id = crw.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.20.t
+	desc = crw.20.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	is_triggered_only = yes
+
+	option = { #Intro
+		name = crw.20.a
+		custom_effect_tooltip = investigation_tt_2
+		add_stability = 0.10
+		add_political_power = -4.00
+		add_stability = -0.10
+		swap_ideas = {
+		remove_idea = CRW_Protests_1
+		add_idea = CRW_protests_vahd_1
+		}
+		hidden_effect = {
+		country_event = { id = crw.21 days = 5 }	
+		}
+	}
+	}
+
+country_event = { #invest
+	id = crw.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.21.t
+	desc = crw.21.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	is_triggered_only = yes
+
+	option = { #Intro
+		name = crw.21.a
+		custom_effect_tooltip = investigation_tt_3
+		hidden_effect = {
+		set_country_flag = telegram_london
+		country_event = { id = crw.22 days = 4 }	
+		}
+		complete_national_focus = CRW_telegram_london
+	}
+	}
+
+country_event = { #invest
+	id = crw.22
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.22.t
+	desc = crw.22.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	is_triggered_only = yes
+
+	option = { #Intro
+		name = crw.22.a
+		custom_effect_tooltip = swiss_tt_event
+		hidden_effect = {
+		set_country_flag = swiss_bank	
+		}
+		complete_national_focus = CRW_swiss_accounts
+	}
+	}
+
+country_event = { #invest
+	id = crw.23
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.23.t
+	desc = crw.23.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	is_triggered_only = yes
+
+	option = { #Intro
+		name = crw.23.a
+		custom_effect_tooltip = departure_tt
+		hidden_effect = {
+		set_country_flag = start_departure	
+		}
+		complete_national_focus = CRW_preparing_departure
+	}
+	}
+
+country_event = { #invest
+	id = crw.24
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crw.1" }
+	title = crw.24.t
+	desc = crw.24.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	is_triggered_only = yes
+
+	option = { #Intro
+		name = crw.24.a
+		custom_effect_tooltip = goodbye_tt
+		hidden_effect = {
+		set_country_flag = letter_flag
+		WRF = {
+		country_event = { id = wrf.30 }	
+		}	
+		}
+		complete_national_focus = CRW_waiting_for_attack
+	}
+	}
+
+news_event = { #Dead Sultan
+	id = crw.25
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
+	title = crw.25.t
+	desc = crw.25.d
+
+	#picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = crw.25.a 
+		}
+		}
+
+news_event = { #Survives Assasination
+	id = crw.26
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
+	title = crw.26.t
+	desc = crw.26.d
+
+	#picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = crw.26.a 
+		}
+		}
+
+news_event = { #Liberals Win
+	id = crw.27
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
+	title = crw.27.t
+	desc = crw.27.d
+
+	#picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = crw.25.a 
+		}
+		}
+
+news_event = { #Cons Win
+	id = crw.28
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
+	title = crw.28.t
+	desc = crw.28.d
+
+	#picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = crw.28.a 
+		}
+		}
+
+news_event = { #Socdem Win
+	id = crw.29
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
+	title = crw.29.t
+	desc = crw.29.d
+
+	#picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = crw.29.a 
+		}
+		}
+
+news_event = { #Kemalists Occupy Istanbul
+	id = crw.30
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
+	title = crw.30.t
+	desc = crw.30.d
+
+	#picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = crw.25.a 
+		}
+		}
+
+
+
+

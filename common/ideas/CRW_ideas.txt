@@ -85,6 +85,38 @@ CRW_Protests_1 = {
 		}				
 }
 
+CRW_Protests_vahd_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CRW_Independent_City" }
+			picture = CRW_Unrest
+			modifier = {
+			political_power_gain = -0.13
+			consumer_goods_factor = 0.20
+			war_support_factor = -0.40
+			stability_factor = -0.20
+			production_speed_buildings_factor = -0.15
+			production_factory_max_efficiency_factor = -0.2
+			weekly_manpower = -120
+			stability_weekly = -0.10		
+			}
+		}				
+}
+
+CRW_Protests_vahd_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CRW_Independent_City" }
+			picture = CRW_Unrest
+			modifier = {
+			political_power_gain = -0.20
+			consumer_goods_factor = 0.30
+			war_support_factor = -0.90
+			stability_factor = -1.00
+			production_speed_buildings_factor = -0.32
+			production_factory_max_efficiency_factor = -0.3
+			weekly_manpower = -1000
+			stability_weekly = -0.40		
+			}
+		}				
+}
+
 CRW_Protests_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CRW_Independent_City" }
 			picture = CRW_Unrest
@@ -116,6 +148,7 @@ CRW_Protests_3 = {
 			}
 		}				
 }
+
 
 CRW_social_economy = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CRW_Independent_City" }

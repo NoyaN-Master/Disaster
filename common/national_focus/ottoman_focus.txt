@@ -130,7 +130,8 @@
 		select_effect = {
 		}
 		completion_reward = {
-		add_political_power = 100	
+		add_political_power = 100
+		news_event = { id = crw.28 }	
         }
 	}
 
@@ -316,7 +317,8 @@
 		select_effect = {
 		}
 		completion_reward = {
-		add_political_power = 100	
+		add_political_power = 100
+		news_event = { id = crw.29 }	
         }
 	}
 
@@ -334,7 +336,8 @@
 		select_effect = {
 		}
 		completion_reward = {
-		add_political_power = 100	
+		add_political_power = 100
+		news_event = { id = crw.27 }		
         }
 	}
 
@@ -488,6 +491,9 @@
 		select_effect = {
 		}
 		completion_reward = {
+		hidden_effect = {
+		news_event = { id = crw.26 }		
+		}	
         }
 	}
 
@@ -504,6 +510,9 @@
 		select_effect = {
 		}
 		completion_reward = {
+		hidden_effect = {
+		news_event = { id = crw.25 }		
+		}	
         }
 	}
 
@@ -816,7 +825,10 @@
 		select_effect = {
 		}
 		completion_reward = {
-		custom_effect_tooltip = conservative_victory
+		custom_effect_tooltip = investigation_tt
+		hidden_effect = {
+		country_event = { id = crw.20 days = 2 }	
+		}
         }
 	}
 
@@ -826,6 +838,7 @@
 		x = 16
 		y = 2
 		cost = 3
+		available = { has_country_flag = telegram_london }
 		prerequisite = { focus = CRW_investigation }
 		ai_will_do = {
 			factor = 80	
@@ -833,7 +846,9 @@
 		select_effect = {
 		}
 		completion_reward = {
-		custom_effect_tooltip = conservative_victory
+		custom_effect_tooltip = telegram_london_tt
+		hidden_effect = {
+		}
         }
 	}
 
@@ -843,6 +858,7 @@
 		x = 16
 		y = 3
 		cost = 3
+		available = { has_country_flag = swiss_bank}
 		prerequisite = { focus = CRW_fight_protest }
 		prerequisite = { focus = CRW_telegram_london }
 		ai_will_do = {
@@ -851,7 +867,7 @@
 		select_effect = {
 		}
 		completion_reward = {
-		custom_effect_tooltip = conservative_victory
+		custom_effect_tooltip = swiss_tt
         }
 	}
 
@@ -861,6 +877,7 @@
 		x = 16
 		y = 4
 		cost = 3
+		available = { has_country_flag = start_departure}
 		prerequisite = { focus = CRW_swiss_accounts }
 		ai_will_do = {
 			factor = 80	
@@ -868,7 +885,7 @@
 		select_effect = {
 		}
 		completion_reward = {
-		custom_effect_tooltip = conservative_victory
+		custom_effect_tooltip = blank_tt
         }
 	}
 
@@ -878,6 +895,7 @@
 		x = 16
 		y = 5
 		cost = 3
+		available = {has_country_flag = letter_flag }
 		prerequisite = { focus = CRW_preparing_departure }
 		ai_will_do = {
 			factor = 80	
@@ -885,7 +903,7 @@
 		select_effect = {
 		}
 		completion_reward = {
-		custom_effect_tooltip = conservative_victory
+		custom_effect_tooltip = last_tt
 		hidden_effect = {
 		set_country_flag = CRW_vahdettin_cower	
 		}
