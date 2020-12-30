@@ -7,6 +7,21 @@ set_technology = {
 
 set_convoys = 16
 
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+		}
+	}
+	set_autonomy = {
+		target = LBA
+		autonomous_state = autonomy_colony
+	}
+	else = {
+		puppet = LBA
+	}
+}
+
 set_politics = {
 	ruling_party = ultranationalist
 	last_election = "1936.1.1"
