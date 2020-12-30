@@ -2132,7 +2132,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_prussian_work_ethics
-		icon = GFX_goal_unknown
+		icon = GFX_goal_prussian_work_ethics
 		x = 4
 		y = 5
 		relative_position_id = PRE_junker_victory_focus
@@ -2145,7 +2145,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_every_prussian_a_soldier
-		icon = GFX_goal_unknown
+		icon = GFX_goal_every_prussian_a_soldier
 		x = 4
 		y = 6
 		relative_position_id = PRE_junker_victory_focus
@@ -2162,7 +2162,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_strict_education
-		icon = GFX_goal_unknown
+		icon = GFX_goal_strict_education
 		x = 4
 		y = 7
 		relative_position_id = PRE_junker_victory_focus
@@ -2176,7 +2176,7 @@ focus_tree = {
 
 	focus = {
 		id = PRE_look_to_the_countryside
-		icon = GFX_goal_unknown
+		icon = GFX_goal_look_to_the_countryside
 		x = -1
 		y = 5
 		relative_position_id = PRE_junker_victory_focus
@@ -2189,7 +2189,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_secure_our_position
-		icon = GFX_goal_unknown
+		icon = GFX_goal_secure_our_position
 		x = 1
 		y = 5
 		relative_position_id = PRE_junker_victory_focus
@@ -2202,7 +2202,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_invest_in_the_estates
-		icon = GFX_goal_unknown
+		icon = GFX_goal_invest_in_estates_
 		x = -2
 		y = 6
 		relative_position_id = PRE_junker_victory_focus
@@ -2215,7 +2215,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_control_farmers_union
-		icon = GFX_goal_unknown
+		icon = GFX_goal_control_the_farmers_unions
 		x = 0
 		y = 6
 		relative_position_id = PRE_junker_victory_focus
@@ -2228,7 +2228,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_undermine_the_opposition
-		icon = GFX_goal_unknown
+		icon = GFX_goal_undermine_the_opposition
 		x = 2
 		y = 6
 		relative_position_id = PRE_junker_victory_focus
@@ -2241,7 +2241,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_rural_boom
-		icon = GFX_goal_unknown
+		icon = GFX_goal_a_rural_boom
 		x = -1
 		y = 7
 		relative_position_id = PRE_junker_victory_focus
@@ -2254,7 +2254,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_maintaining_sham_democracy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_mainting_shame_democracy
 		x = 1
 		y = 7
 		relative_position_id = PRE_junker_victory_focus
@@ -2267,7 +2267,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_guiding_hand_of_the_junkers
-		icon = GFX_goal_unknown
+		icon = GFX_goal_the_guiding_hand_of_the_junker_class
 		x = 0
 		y = 8
 		relative_position_id = PRE_junker_victory_focus
