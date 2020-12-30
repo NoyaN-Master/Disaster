@@ -22,21 +22,6 @@ if = {
 	}
 }
 
-if = {
-	limit = {
-		OR = {
-			has_dlc = "Together for Victory"
-		}
-	}
-	set_autonomy = {
-		target = TIT
-		autonomous_state = autonomy_colony
-	}
-	else = {
-		puppet = TIT
-	}
-}
-
 set_politics = {
 	ruling_party = ultranationalist
 	last_election = "1936.1.1"
