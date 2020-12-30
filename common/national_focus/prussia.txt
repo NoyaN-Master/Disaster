@@ -1484,14 +1484,12 @@ focus_tree = {
 		prerequisite = { focus = PRE_liberal_victory_focus}
 		select_effect = {
 		add_ideas = PRE_martial_law
-		}
-		hidden_effect = {
-		remove_ideas = PRE_martial_law
 		}	
 		completion_reward = {
 		remove_ideas = PRE_political_radicalisation
 		custom_effect_tooltip = PRE_martial_law_tooltip
 		show_ideas_tooltip = PRE_martial_law
+		remove_ideas = PRE_martial_law
 		}
 		
 	}
@@ -1964,7 +1962,9 @@ focus_tree = {
 		available = {
 			has_country_flag = PRE_junker_victory	
 		}	
-		
+		bypass = {
+		has_country_flag = PRE_junker_victory
+		}		
 		completion_reward = {
 		add_political_power = 50
 		}
@@ -1987,6 +1987,7 @@ focus_tree = {
 		remove_ideas = PRE_political_radicalisation
 		custom_effect_tooltip = PRE_martial_law_tooltip
 		show_ideas_tooltip = PRE_martial_law
+		remove_ideas = PRE_martial_law
 		}
 	}
 	
@@ -2033,7 +2034,7 @@ focus_tree = {
 			ideology = revolutionary_nationalist
 			popularity = -0.05
 		}		
-		remove_ideas = PRE_sham_democracy
+
 		}
 		
 	}
@@ -2083,6 +2084,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_provoke_split_adnp}		
 		completion_reward = {
 		add_ideas = PRE_junker_rule_continues
+		remove_ideas = PRE_ongoing_protests
 		}
 	}
 	focus = { 
@@ -2180,11 +2182,52 @@ focus_tree = {
 		x = -1
 		y = 5
 		relative_position_id = PRE_junker_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_republic_lives_on}
 		
 		completion_reward = {
-		
+		    66 = {
+			add_extra_state_shared_building_slots = 1
+	        add_building_construction = {
+		    type = industrial_complex 
+		    level = 1
+	        }
+            }			
+			67 = {
+			add_extra_state_shared_building_slots = 1
+	        add_building_construction = {
+		    type = industrial_complex 
+		    level = 1
+	        }   
+            }
+            5 = {
+			add_extra_state_shared_building_slots = 1
+	        add_building_construction = {
+		    type = industrial_complex 
+		    level = 1
+	        }   
+            }
+			66 = {
+			add_extra_state_shared_building_slots = 1
+	        add_building_construction = {
+		    type = infrastructure 
+		    level = 1
+	        }
+            }			
+			67 = {
+			add_extra_state_shared_building_slots = 1
+	        add_building_construction = {
+		    type = infrastructure 
+		    level = 1
+	        }   
+            }
+            5 = {
+			add_extra_state_shared_building_slots = 1
+	        add_building_construction = {
+		    type = infrastructure 
+		    level = 1
+	        }   
+            }		
 		}
 	}
 	focus = {
@@ -2193,11 +2236,19 @@ focus_tree = {
 		x = 1
 		y = 5
 		relative_position_id = PRE_junker_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_republic_lives_on}
 		
 		completion_reward = {
-		
+		add_stability = 0.15
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.05
+		}
+		swap_ideas = {
+			add_idea = PRE_junker_rule_continues1
+			remove_idea = PRE_junker_rule_continues
+		}			
 		}
 	}
 	focus = {
@@ -2206,11 +2257,56 @@ focus_tree = {
 		x = -2
 		y = 6
 		relative_position_id = PRE_junker_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_look_to_the_countryside}
 		
 		completion_reward = {
-		
+		add_political_power = 50
+			64 = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}	
+			63 = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+			68 = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}			
 		}
 	}
 	focus = {
@@ -2219,11 +2315,11 @@ focus_tree = {
 		x = 0
 		y = 6
 		relative_position_id = PRE_junker_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_secure_our_position}
 		prerequisite = { focus = PRE_look_to_the_countryside}		
 		completion_reward = {
-		
+		add_ideas = PRE_farmer_union_control
 		}
 	}
 	focus = {
@@ -2232,11 +2328,11 @@ focus_tree = {
 		x = 2
 		y = 6
 		relative_position_id = PRE_junker_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_secure_our_position}
 		
 		completion_reward = {
-		
+		add_ideas = PRE_controlled_opposition
 		}
 	}
 	focus = {
@@ -2245,11 +2341,40 @@ focus_tree = {
 		x = -1
 		y = 7
 		relative_position_id = PRE_junker_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_invest_in_the_estates}
 		prerequisite = { focus = PRE_control_farmers_union}		
 		completion_reward = {
-		
+			random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+			random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}		
 		}
 	}
 	focus = {
@@ -2258,11 +2383,14 @@ focus_tree = {
 		x = 1
 		y = 7
 		relative_position_id = PRE_junker_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_control_farmers_union}
 		prerequisite = { focus = PRE_undermine_the_opposition}		
 		completion_reward = {
-		
+		swap_ideas = {
+			add_idea = PRE_sham_democracy2
+			remove_idea = PRE_sham_democracy
+		}		
 		}
 	}
 	focus = {
@@ -2271,11 +2399,14 @@ focus_tree = {
 		x = 0
 		y = 8
 		relative_position_id = PRE_junker_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_maintaining_sham_democracy}
 		prerequisite = { focus = PRE_rural_boom}		
-		completion_reward = {
-		
+		completion_reward = {	
+		swap_ideas = {
+			add_idea = PRE_farmer_union_control1
+			remove_idea = PRE_farmer_union_control
+		}	
 		}
 	}
 

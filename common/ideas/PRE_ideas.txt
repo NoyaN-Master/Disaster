@@ -17,11 +17,17 @@ PRE_sham_democracy = {
 			picture = sham_democracy
 			modifier = {
 			stability_factor = -0.02
-			party_popularity_stability_modifier = 0.14
 			production_factory_max_efficiency_factor = 0.02
 			}
 		}
-		
+PRE_sham_democracy2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_sham_democracy" }
+			picture = sham_democracy
+			modifier = {
+			stability_factor = -0.1
+			production_factory_max_efficiency_factor = 0.1
+			}
+		}		
 PRE_political_radicalisation = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_political_radicalisation" }
 			picture = political_radicalisation
@@ -550,6 +556,15 @@ PRE_junker_rule_continues = {
 			production_speed_arms_factory_factor = 0.05			
 			}
 		}
+PRE_junker_rule_continues1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_junker_rule_continues" }
+			#picture = 
+			modifier = {
+			stability_factor = 0.2
+			production_speed_arms_factory_factor = 0.05
+			production_factory_efficiency_gain_factor = 0.05 			
+			}
+		}
 PRE_frederick_great_reforms_idea1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_frederick_great_reforms_idea1" }
 			#picture = 
@@ -610,8 +625,33 @@ PRE_prussian_work_ethics_idea2 = {
 			
 			}
 		}
-
-
+PRE_farmer_union_control = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_aid_the_workers_idea2" }
+			#picture = 
+			modifier = {
+			local_resources_factor = 0.1
+			global_building_slots_factor = 0.1
+			}
+		}
+PRE_farmer_union_control1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_aid_the_workers_idea2" }
+			#picture = 
+			modifier = {
+			local_resources_factor = 0.1
+			global_building_slots_factor = 0.1
+			production_speed_industrial_complex_factor = 0.15
+			consumer_goods_factor = -0.05
+			}
+		}
+PRE_controlled_opposition = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_aid_the_workers_idea2" }
+			#picture = 
+			modifier = {
+			political_power_factor = 0.1
+			stability_factor = 0.15
+			
+			}
+		} 
 
 
 
