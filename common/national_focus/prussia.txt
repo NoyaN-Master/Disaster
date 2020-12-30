@@ -2091,7 +2091,7 @@ focus_tree = {
 		x = -4
 		y = 5
 		relative_position_id = PRE_junker_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_republic_lives_on}
 		
 		completion_reward = {
@@ -2104,7 +2104,7 @@ focus_tree = {
 		x = -4
 		y = 6
 		relative_position_id = PRE_junker_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_empower_prussian_generals}
 		
 		completion_reward = {
@@ -2120,7 +2120,7 @@ focus_tree = {
 		x = -4
 		y = 7
 		relative_position_id = PRE_junker_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_frederick_great_reforms}
 		
 		completion_reward = {
@@ -2136,11 +2136,11 @@ focus_tree = {
 		x = 4
 		y = 5
 		relative_position_id = PRE_junker_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_republic_lives_on}
 		
 		completion_reward = {
-		
+		add_ideas = PRE_prussian_work_ethics_idea1
 		}
 	}
 	focus = {
@@ -2149,11 +2149,14 @@ focus_tree = {
 		x = 4
 		y = 6
 		relative_position_id = PRE_junker_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_prussian_work_ethics}
 		
 		completion_reward = {
-		
+		swap_ideas = {
+			add_idea = PRE_prussian_work_ethics_idea2
+			remove_idea = PRE_prussian_work_ethics_idea1
+		}			
 		}
 		
 	}
@@ -2163,11 +2166,11 @@ focus_tree = {
 		x = 4
 		y = 7
 		relative_position_id = PRE_junker_victory_focus
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_every_prussian_a_soldier}
 		
 		completion_reward = {
-		
+		add_research_slot = 1
 		}
 	}
 
