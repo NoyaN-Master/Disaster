@@ -7,6 +7,96 @@ set_technology = {
 
 set_convoys = 0
 
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+		}
+	}
+	set_autonomy = {
+		target = CAN
+		autonomous_state = autonomy_dominion
+	}
+	else = {
+		puppet = CAN
+	}
+}
+
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+		}
+	}
+	set_autonomy = {
+		target = EGY
+		autonomous_state = autonomy_colony
+	}
+	else = {
+		puppet = EGY
+	}
+}
+
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+		}
+	}
+	set_autonomy = {
+		target = LEV
+		autonomous_state = autonomy_colony
+	}
+	else = {
+		puppet = LEV
+	}
+}
+
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+		}
+	}
+	set_autonomy = {
+		target = BUR
+		autonomous_state = autonomy_colony
+	}
+	else = {
+		puppet = BUR
+	}
+}
+
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+		}
+	}
+	set_autonomy = {
+		target = NZL
+		autonomous_state = autonomy_dominion
+	}
+	else = {
+		puppet = NZL
+	}
+}
+
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+		}
+	}
+	set_autonomy = {
+		target = AST
+		autonomous_state = autonomy_dominion
+	}
+	else = {
+		puppet = AST
+	}
+}
+
 set_politics = {
 	ruling_party = conservative
 	last_election = "1936.1.1"
