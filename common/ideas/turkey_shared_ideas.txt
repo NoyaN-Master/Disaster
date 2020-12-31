@@ -37,5 +37,38 @@ TUR_Struggle_Front_4 = {
 			defence = 0.09
 			attrition = -0.1
 			}
-		}		
+		}
+CLP_realm_of_islam = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
+			picture = TUR_Struggle_Front
+			modifier = {
+			stability_factor = 0.2
+			war_support_factor = 0.2
+			defence = 0.1
+			}
+		}
+CLP_no_authority = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
+			picture = TUR_Struggle_Front
+			modifier = {
+			political_power_gain = -1.0
+			political_power_cost = 0.5
+			production_factory_max_efficiency_factor = -0.5
+			stability_factor = -0.2
+			weekly_stability = -0.05
+			war_support_factor = -0.4 
+			}
+		}
+CLP_fundementalism_high = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
+			picture = TUR_Struggle_Front
+			modifier = {
+			political_power_gain = 0.05
+			production_factory_max_efficiency_factor = 0.2
+			stability_factor = 0.1
+			weekly_stability = -0.05
+			weekly_war_support = 0.05
+			research_speed_factor = -0.5
+			}
+		}										
 	}

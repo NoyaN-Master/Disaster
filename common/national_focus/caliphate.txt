@@ -1,0 +1,595 @@
+focus_tree = {
+	id = caliph_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CLP
+		}
+		}
+		continuous_focus_position = { x = 100 y = 2000 }
+
+    focus = {
+		id = CLP_political_problems
+		icon = GFX_goal_adress_parliament
+		x = 13
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = ANT_dreams_Broken_tt
+		add_stability = 0.05
+		}
+	}
+
+    focus = {
+		id = CLP_overview_state
+		icon = GFX_goal_adress_parliament
+		x = 12
+		y = 2
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = CLP_political_problems }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = ANT_dreams_Broken_tt
+		add_stability = 0.05
+		}
+	}
+
+    focus = {
+		id = CLP_trying_reforms
+		icon = GFX_goal_adress_parliament
+		x = 14
+		y = 2
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = CLP_political_problems }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+    focus = {
+		id = CLP_expressing_authority
+		icon = GFX_goal_adress_parliament
+		x = 13
+		y = 3
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = CLP_trying_reforms }
+        prerequisite = { focus = CLP_overview_state }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+    focus = {
+		id = CLP_islamic_monarchy
+		icon = GFX_goal_adress_parliament
+		x = 19
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+    focus = {
+		id = CLP_monastries_act
+		icon = GFX_goal_adress_parliament
+		x = 18
+		y = 2
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = CLP_islamic_monarchy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+    focus = {
+		id = CLP_reorganization_of_land
+		icon = GFX_goal_adress_parliament
+		x = 20
+		y = 2
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = CLP_islamic_monarchy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CLP_fighting_cults
+		icon = GFX_goal_adress_parliament
+		x = 20
+		y = 3
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = CLP_reorganization_of_land }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CLP_start_modernization
+		icon = GFX_goal_adress_parliament
+		x = 18
+		y = 3
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = CLP_monastries_act }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CLP_challenge_the_salafists
+		icon = GFX_goal_adress_parliament
+		x = 19
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = CLP_start_modernization }
+		prerequisite = { focus = CLP_fighting_cults }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CLP_allah_wills_progress
+		icon = GFX_goal_adress_parliament
+		x = 19
+		y = 5
+		cost = 1
+		prerequisite = { focus = CLP_challenge_the_salafists }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CLP_believers_army
+		icon = GFX_goal_adress_parliament
+		x = 14
+		y = 6
+		cost = 1
+		prerequisite = { focus = CLP_allah_wills_progress }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CLP_asakiri_muhammed
+		icon = GFX_goal_adress_parliament
+		x = 16
+		y = 7
+		cost = 1
+		prerequisite = { focus = CLP_believers_army }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CLP_ottoman_doctrine
+		icon = GFX_goal_adress_parliament
+		x = 16
+		y = 8
+		cost = 1
+		prerequisite = { focus = CLP_asakiri_muhammed }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CLP_manuevar_importancy
+		icon = GFX_goal_adress_parliament
+		x = 16
+		y = 9
+		cost = 1
+		prerequisite = { focus = CLP_asakiri_muhammed }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CLP_konya_airbase
+		icon = GFX_goal_adress_parliament
+		x = 16
+		y = 10
+		cost = 1
+		prerequisite = { focus = CLP_asakiri_muhammed }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CLP_chosen_ones
+		icon = GFX_goal_adress_parliament
+		x = 17
+		y = 11
+		cost = 1
+		prerequisite = { focus = CLP_imece_army }
+		prerequisite = { focus = CLP_konya_airbase }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CLP_arms_deal
+		icon = GFX_goal_adress_parliament
+		x = 18
+		y = 9
+		cost = 1
+		prerequisite = { focus = CLP_ottoman_doctrine }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CLP_imece_army
+		icon = GFX_goal_adress_parliament
+		x = 18
+		y = 10
+		cost = 1
+		prerequisite = { focus = CLP_arms_deal }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CLP_imperial_training
+		icon = GFX_goal_adress_parliament
+		x = 12
+		y = 7
+		cost = 1
+		prerequisite = { focus = CLP_believers_army }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CLP_soldiers_of_allah
+		icon = GFX_goal_adress_parliament
+		x = 12
+		y = 8
+		cost = 1
+		prerequisite = { focus = CLP_imperial_training }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CLP_army_prayers
+		icon = GFX_goal_adress_parliament
+		x = 11
+		y = 9
+		cost = 1
+		prerequisite = { focus = CLP_soldiers_of_allah }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = CLP_just_like_saladin
+		icon = GFX_goal_adress_parliament
+		x = 10
+		y = 10
+		cost = 1
+		prerequisite = { focus = CLP_army_prayers }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CLP_military_sector
+		icon = GFX_goal_adress_parliament
+		x = 14
+		y = 10
+		cost = 1
+		prerequisite = { focus = CLP_martyrs }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CLP_takbir
+		icon = GFX_goal_adress_parliament
+		x = 12
+		y = 11
+		cost = 1
+		prerequisite = { focus = CLP_just_like_saladin }
+		prerequisite = { focus = CLP_military_sector }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CLP_martyrs
+		icon = GFX_goal_adress_parliament
+		x = 13
+		y = 9
+		cost = 1
+		prerequisite = { focus = CLP_soldiers_of_allah }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CLP_believers_economy
+		icon = GFX_goal_adress_parliament
+		x = 20
+		y = 6
+		cost = 1
+		prerequisite = { focus = CLP_allah_wills_progress }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CLP_factories_1
+		icon = GFX_goal_adress_parliament
+		x = 20
+		y = 7
+		cost = 1
+		prerequisite = { focus = CLP_believers_economy }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CLP_factories_2
+		icon = GFX_goal_adress_parliament
+		x = 20
+		y = 8
+		cost = 1
+		prerequisite = { focus = CLP_believers_economy }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CLP_factories_3
+		icon = GFX_goal_adress_parliament
+		x = 20
+		y = 9
+		cost = 1
+		prerequisite = { focus = CLP_believers_economy }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CLP_infastructure_1
+		icon = GFX_goal_adress_parliament
+		x = 22
+		y = 7
+		cost = 1
+		prerequisite = { focus = CLP_believers_economy }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CLP_infastructure_2
+		icon = GFX_goal_adress_parliament
+		x = 22
+		y = 8
+		cost = 1
+		prerequisite = { focus = CLP_believers_economy }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CLP_research_1
+		icon = GFX_goal_adress_parliament
+		x = 22
+		y = 9
+		cost = 1
+		prerequisite = { focus = CLP_believers_economy }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CLP_great_workers
+		icon = GFX_goal_adress_parliament
+		x = 21
+		y = 10
+		cost = 1
+		prerequisite = { focus = CLP_research_1 }
+		prerequisite = { focus = CLP_factories_3 }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CLP_rehost_baghdad
+		icon = GFX_goal_adress_parliament
+		x = 24
+		y = 11
+		cost = 1
+		prerequisite = { focus = CLP_great_workers }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CLP_a_moral_society
+		icon = GFX_goal_adress_parliament
+		x = 25
+		y = 6
+		cost = 1
+		prerequisite = { focus = CLP_allah_wills_progress }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+}

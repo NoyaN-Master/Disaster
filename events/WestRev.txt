@@ -378,10 +378,6 @@ country_event = { #Manisa Congress 1
 				flag = WRF_manisa_demokrat
 				value = 0
 			}
-			set_country_flag = {
-				flag = WRF_manisa_anarchist
-				value = 0
-			}
 		}
 		country_event = { id = wrf.17 days = 1 }
 		}
@@ -446,23 +442,7 @@ country_event = { #Manisa Congress Economy
 		popularity = 0.05
 		}
 		
-		}
-	option = {
-		name = wrf.17.e #anarkiya
-		add_political_power = 1
-		custom_effect_tooltip = WRF_Economy_Anarchy
-		hidden_effect = {
-			modify_country_flag = {
-				flag = WRF_manisa_anarchist
-				value = 1
-			}
-		}
-		country_event = { id = wrf.18 days = 1 }
-		add_popularity = {
-		ideology = revolutionary_anarchist
-		popularity = 0.1
-		}
-		}		
+		}	
 	}
 country_event = { #Manisa Congress Army
 	id = wrf.18
@@ -528,23 +508,6 @@ country_event = { #Manisa Congress Army
 		popularity = 0.05
 		}
 		
-		}
-	option = {
-		name = wrf.18.e#Tengri
-		add_political_power = 1
-		custom_effect_tooltip = WRF_Army_tengri
-		set_country_flag = WRF_army_tengri
-		hidden_effect = {
-			modify_country_flag = {
-				flag = WRF_manisa_anarchist
-				value = 1
-			}
-		}
-		country_event = { id = wrf.19 days = 1 }
-		add_popularity = {
-		ideology = revolutionary_anarchist
-		popularity = 0.1
-		}
 		}
 	}
 country_event = { #Manisa Congress Religion
@@ -612,23 +575,6 @@ country_event = { #Manisa Congress Religion
 		}
 		
 		}
-	option = {
-		name = wrf.19.e #Tengrist Brigades
-		add_political_power = 1
-		custom_effect_tooltip = WRF_religion_tengri
-		set_country_flag = WRF_religion_tengri
-		hidden_effect = {
-			modify_country_flag = {
-				flag = WRF_manisa_anarchist
-				value = 1
-			}
-		}
-		country_event = { id = wrf.20 days = 1 }
-		add_popularity = {
-		ideology = revolutionary_anarchist
-		popularity = 0.2
-		}
-		}
 	}
 country_event = { #Manisa Congress Policy
 	id = wrf.20
@@ -694,24 +640,6 @@ country_event = { #Manisa Congress Policy
 		}
 		country_event = { id = wrf.28 days = 1 }
 		}
-	option = {
-		name = wrf.20.e #Turkic Confederacy
-		add_political_power = 1
-		custom_effect_tooltip = WRF_policy_Tengri
-		set_country_flag = WRF_policy_tengri
-		hidden_effect = {
-			modify_country_flag = {
-				flag = WRF_manisa_anarchist
-				value = 1
-			}
-		}
-		add_popularity = {
-		ideology = revolutionary_anarchist
-		popularity = 0.1
-		}
-		country_event = { id = wrf.28 days = 1 }
-		}
-
 	}
 	
 country_event = { #Manisa Congress Reshuffle Democrat
@@ -796,26 +724,10 @@ country_event = { #Manisa Congress Ending
 					days = 1
 				}
 			}
-			if = {
-				limit = {
-					has_country_flag = {
-						flag = WRF_manisa_anarchist
-						value > 1
-					}
-				}
-				country_event = {
-					id = wrf.23
-					days = 1
-				}
-			}
 				if = {
 				limit = {
 					has_country_flag = {
 						flag = WRF_manisa_adsizist
-						value < 2
-					}
-					has_country_flag = {
-						flag = WRF_manisa_anarchist
 						value < 2
 					}
 					has_country_flag = {
@@ -914,7 +826,6 @@ news_event = { #Greecewarnews
 
 	option = {
 		name = wrf.25.a 
-		add_political_power = 1
 		}
 		}
 
@@ -935,7 +846,7 @@ country_event = {
 		name = wrf.27.a 
 		create_field_marshal = {
 			name = "Fevzi Çakmak"
-			picture = "Portrait_ADN_Fevzi_Cakmak.tga"
+			picture = "Portrait_WRF_Fevzi_Cakmak.tga"
 			traits = { offensive_doctrine }
 			skill = 3
 			attack_skill = 5
@@ -1023,6 +934,7 @@ country_event = {
 		add_core_of = WRF	
 		}
 		unlock_national_focus = WRF_deal_ist		
-		} 
+		}
+		custom_effect_tooltip = istanbul_annex_tt_vahd 
 		}
 }	

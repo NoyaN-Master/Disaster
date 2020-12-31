@@ -7,6 +7,13 @@ set_technology = {
 
 set_convoys = 0
 
+set_stability = 0.4
+set_war_support = 1.0
+
+add_ideas = CLP_realm_of_islam
+add_ideas = CLP_no_authority
+add_ideas = CLP_fundementalism_high
+
 set_politics = {
 	ruling_party = esoteric_traditionalist
 	last_election = "1936.1.1"
