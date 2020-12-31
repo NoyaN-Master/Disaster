@@ -1,0 +1,22 @@
+GER_unification_decisions = {
+	#icon = 
+	#picture = 
+	priority = 100
+	allowed = {
+			OR = {
+			tag = PRE
+			tag = RHN
+			tag = BAY
+			tag = WRT
+			tag = BDN
+			tag = NGU
+			tag = SHL
+			tag = MEK
+			}
+	}
+	visible = {
+		always = yes
+	}
+	visible_when_empty = yes
+
+}
