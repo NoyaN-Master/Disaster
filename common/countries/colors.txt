@@ -388,18 +388,18 @@ CSA = {
 }
 
 XSM = {
-	color = rgb { 9 171 190 } 
-	color_ui = rgb { 9 171 190 } 
+	color = rgb { 105 69 85 } 
+	color_ui = rgb { 105 69 85 } 
 }
 
 TIB = {
-	color = rgb { 171 190 152 }  
-	color_ui = rgb { 171 190 152 }
+	color = rgb { 168 166 167 }  
+	color_ui = rgb { 168 166 167 }
 }
 
 SIK = {
-	color = rgb { 121 146 170 }  
-	color_ui = rgb { 121 146 170 }
+	color = rgb { 214 190 74 }  
+	color_ui = rgb { 214 190 74 }
 }
 
 MON = {
@@ -665,4 +665,74 @@ LBA = {
 SRF = {
    	color = rgb { 99 11 7 }
 	color_ui = rgb { 99 11 7 }
+}
+
+RAJ = {
+   	color = rgb { 158 50 50 }
+	color_ui = rgb { 158 50 50 }
+}
+
+GUO = {
+   	color = rgb { 143 20 20 }
+	color_ui = rgb { 143 20 20 }
+}
+
+BHU = {
+   	color = rgb { 172 122 88 }
+	color_ui = rgb { 172 122 88 }
+}
+
+NEP = {
+   	color = rgb { 137 183 124 }
+	color_ui = rgb { 137 183 124 }
+}
+
+PHI = {
+   	color = rgb { 152 130 191 }
+	color_ui = rgb { 152 130 191 }
+}
+
+PRF = {
+   	color = rgb { 226 148 0 }
+	color_ui = rgb { 226 148 0 }
+}
+
+MBM = {
+   	color = rgb { 186 0 0 }
+	color_ui = rgb { 186 0 0 }
+}
+
+BHR = {
+   	color = rgb { 177 89 0 }
+	color_ui = rgb { 177 89 0 }
+}
+
+TRK = {
+   	color = rgb { 84 210 0 }
+	color_ui = rgb { 84 210 0 }
+}
+
+ARB = {
+   	color = rgb { 255 204 45 }
+	color_ui = rgb { 255 204 45 }
+}
+
+OMA = {
+	color = rgb { 98 134 153 }
+	color_ui = rgb { 98 134 153 }
+}
+
+YEM = {
+   	color = rgb { 233 155 81 }
+	color_ui = rgb { 233 155 81 }
+}
+
+KSM = {
+	color = rgb { 175 238 222 }
+	color_ui = rgb { 175 238 222 }
+}
+
+DCS = {
+	color = rgb { 1 38 51 }
+	color_ui = rgb { 1 38 51 }
 }
