@@ -1,0 +1,80 @@
+WRF_atsiz_coup = {
+	set_politics = {
+	ruling_party = revolutionary_nationalist
+	}
+	add_popularity = {
+    ideology = revolutionary_nationalist
+    popularity = 1.0
+	}
+	set_party_name = { 
+    ideology = revolutionary_nationalist 
+    long_name = WRF_revolutionary_nationalist_party_coup_long
+    name = WRF_revolutionary_nationalist_party_coup 
+}
+remove_ideas = WRF_Tekalif_Vatan
+remove_ideas = WRF_atsiz_motive
+remove_ideas = WRF_For_All_Brothers
+remove_ideas = TUR_Ajan_Ankara
+remove_ideas = WRF_Legitimate_Heir
+remove_ideas = WRF_Kemal_Army_Disc
+set_cosmetic_tag = WRF_AO_Atsiz
+annex_country = {
+    target = CIB
+    transfer_troops = yes
+}
+add_stability = -0.4
+add_political_power = 150
+dismantle_faction = yes
+create_field_marshal = {
+	name = "Enver Pasha"
+	picture = "Portrait_WRF_Enver_Pasha.dds"
+	traits = { defensive_doctrine }
+	skill = 5
+	attack_skill = 6
+	defense_skill = 5
+	planning_skill = 7
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Samet"
+	picture = "Portrait_WRF_Samet.dds"
+	traits = { defensive_doctrine }
+	skill = 3
+	attack_skill = 5
+	defense_skill = 6
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "JFC Fuller"
+	picture = "Portrait_WRF_Fuller.dds"
+	traits = { defensive_doctrine }
+	skill = 3
+	attack_skill = 5
+	defense_skill = 6
+	planning_skill = 3
+	logistics_skill = 4
+}
+add_state_core = 49
+add_state_core = 347
+add_state_core = 839
+add_state_core = 798
+add_state_core = 356
+add_state_core = 355
+add_state_core = 354
+add_state_core = 353
+add_state_core = 800
+add_state_core = 230
+add_state_core = 229
+add_state_core = 352
+add_state_core = 350
+add_state_core = 346
+add_state_core = 348
+add_state_core = 349
+add_state_core = 797
+
+country_event = { id = wrf.40 days = 3 }
+unlock_national_focus = WRF_deal_ist
+}

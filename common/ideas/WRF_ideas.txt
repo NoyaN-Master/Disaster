@@ -79,6 +79,18 @@ WRF_Ajan_Antalya = {
 			
 			}
 		}
+
+WRF_atsiz_motive = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			army_defence_factor = 0.05
+			production_factory_efficiency_gain_factor = 0.2
+			production_speed_industrial_complex_factor = 0.2
+			industrial_capacity_factory = 0.3 
+			}
+		}
+
 WRF_For_All_Brothers = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
 			#picture = WRF_Tekalif

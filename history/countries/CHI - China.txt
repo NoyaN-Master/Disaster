@@ -1,4 +1,4 @@
-capital = 613
+capital = 608
 oob = ""
 
 # Starting tech
@@ -8,7 +8,7 @@ set_technology = {
 set_convoys = 87
 
 set_politics = {
-	ruling_party = authoritarian_socialist
+	ruling_party = autocratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -17,12 +17,12 @@ set_politics = {
 set_popularities = {
 	conservative = 0
 	liberal = 0
-	social_democrat = 20
-	libertarian_socialist = 25
-	authoritarian_socialist = 50
+	social_democrat = 0
+	libertarian_socialist = 0
+	authoritarian_socialist = 0
 	national_bolshevik = 0
-	authoritarian_democrat = 5
-	autocratic = 0
+	authoritarian_democrat = 0
+	autocratic = 100
 	ultranationalist = 0
 	revolutionary_nationalist = 0
 	esoteric_traditionalist = 0
@@ -30,11 +30,11 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Chiang Kai-shek"
-	#desc = "CHI_Chiang_Kai_desc"
-	picture = "CHI_Chiang_Kai.tga"
+	name = "Yuntai Emperor"
+	desc = "CHI_Yuan_Keding_desc"
+	picture = "CHI_Yuan_Keding.tga"
 	expire = "2020.1.1"
-	ideology = authoritarian_socialist_subideology
+	ideology = autocratic_subideology
 	traits = {
 		#
 	}

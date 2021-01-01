@@ -71,36 +71,6 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Recruit Escapists
-	focus = {
-		id = WRF_recruit_escapists
-		icon = GFX_goal_unknown
-		x = 14
-		y = 4
-		cost = 2
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = WRF_adanan_ammunition 
-		}
-		prerequisite = { 
-			focus = WRF_thracian_livestock 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		custom_effect_tooltip = WRF_Kacak
-		add_manpower = 10000
-		army_experience = 50
-		add_equipment_to_stockpile = {
-		type = infantry_equipment
-		amount = 1000
-		hidden_effect = {
-			country_event = { id = wrf.7 days = 3 }
-		}
-		}
-	}
-	}
 
 	#Focus for Operation YAHYA
 	focus = {
@@ -116,9 +86,6 @@ focus_tree = {
 		}
 		completion_reward = {
 		custom_effect_tooltip = WRF_Yahya
-		hidden_effect = {
-			country_event = { id = wrf.1 days = 3 }
-		}
 		}
 	}
 
@@ -241,7 +208,7 @@ focus_tree = {
 		completion_reward = {
 		custom_effect_tooltip = WRF_Artillery
 		add_tech_bonus = {
-		bonus = 0.7
+		bonus = 1.0
 		uses = 2
 		category = land_doctrine
 		}
@@ -368,11 +335,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = WRF_Ajanlar
-		hidden_effect = {
 		add_ideas = TUR_Ajan_Ankara
-		country_event = { id = wrf.2 days = 3 }
-		}
 		}
 	}
 
@@ -502,12 +465,33 @@ focus_tree = {
 			owns_state = 834
 			has_war = no
 		}
+		select_effect = {
+		if = {
+    	limit = {
+        has_country_flag = WRF_Adsiz_Won
+    	}   
+    	country_event = { id = wrf.32 days = 3 }
+		}		
+		else_if = {
+    	limit = {
+        has_country_flag = WRF_Kemalist_Won
+    	}	
+    	country_event = { id = wrf.34 days = 3 }
+		}
+		else_if = {
+    	limit = {
+        has_country_flag = WRF_Demokrat_End
+    	}	
+    	country_event = { id = wrf.33 days = 3 }
+		}
+		}
 	 completion_reward = {
 		custom_effect_tooltip = WRF_enemies_within
 		set_capital = 340
 		add_political_power = -500
 		remove_ideas = WRF_Greek_Legacy
 		remove_ideas = TUR_Struggle_Front_4
+		country_event = { id = wrf.31 days = 3 }
 	 }	
 	}
 	
@@ -519,15 +503,18 @@ focus_tree = {
 		y = 2
 		cost = 7
 		available_if_capitulated = yes
+		available = { is_neighbor_of = CIB }
 		mutually_exclusive = { focus = WRF_deal_cib_2 }
 		prerequisite = { focus = WRF_the_enemies_within }
 		ai_will_do = {
 			factor = 1
 		}
 		available = {	
-		OR = {	has_country_flag = WRF_Adsiz_Won has_country_flag = WRF_Anarch_Won }
+		OR = {	has_country_flag = WRF_Adsiz_Won }
 		}
 	 completion_reward = {
+		 custom_effect_tooltip = tachanka_tt
+		 country_event = { id = wrf.35 days = 3  }
 	 }	
 	}
 	
@@ -539,7 +526,6 @@ focus_tree = {
 		y = 2
 		cost = 7
 		available_if_capitulated = yes
-		available = { focus = WRF_kemals_speech } 
 		prerequisite = { focus = WRF_the_enemies_within }
 		mutually_exclusive = { focus = WRF_deal_cib_1 }
 		ai_will_do = {
@@ -547,6 +533,7 @@ focus_tree = {
 		}
 		available = {	
 		OR = {	has_country_flag = WRF_Kemalist_Won has_country_flag = WRF_Demokrat_End }
+		available = { is_neighbor_of = CIB }
 		}
 	 completion_reward = {
 	 }	
@@ -566,9 +553,11 @@ focus_tree = {
 			factor = 1
 		}
 		available = {	
-		OR = {	has_country_flag = WRF_Adsiz_Won has_country_flag = WRF_Anarch_Won }
+		OR = {	has_country_flag = WRF_Adsiz_Won }
 		}
 	 completion_reward = {
+	 custom_effect_tooltip = motive_tt
+	 add_ideas = WRF_atsiz_motive
 	 }	
 	}
 	
@@ -641,8 +630,7 @@ focus_tree = {
 		y = 4
 		cost = 7
 		available_if_capitulated = yes
-		mutually_exclusive = { focus = WRF_deal_clp_1 }
-		prerequisite = { OR = {	focus = WRF_deal_clp_2 focus = WRF_deal_clp_1 focus = WRF_deal_cib_1 focus = WRF_deal_cib_2 focus = WRF_deal_ant_1 focus = WRF_deal_ant_2 } }
+		prerequisite = { OR = { focus = WRF_deal_clp_2 focus = WRF_deal_clp_1 focus = WRF_deal_cib_1 focus = WRF_deal_cib_2 focus = WRF_deal_ant_1 focus = WRF_deal_ant_2 } }
 		ai_will_do = {
 			factor = 1
 		}

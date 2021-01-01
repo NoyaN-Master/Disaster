@@ -17,24 +17,35 @@ set_politics = {
 set_popularities = {
 	conservative = 0
 	liberal = 0
-	social_democrat = 0
+	social_democrat = 50
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
 	national_bolshevik = 0
 	authoritarian_democrat = 0
 	autocratic = 0
 	ultranationalist = 0
-	revolutionary_nationalist = 100
+	revolutionary_nationalist = 50
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
 
 create_country_leader = {
 	name = "Ma Zhongyiang"
-	#desc = "SIK_Ma_Zhongyiang_desc"
+	desc = "SIK_Ma_Zhongyiang_desc"
 	picture = "SIK_Ma_Zhongyiang.tga"
 	expire = "2020.1.1"
 	ideology = revolutionary_nationalist_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Sheng Shicai"
+	desc = "SIK_Sheng_Shicai_desc"
+	picture = "SIK_Sheng_Shicai.tga"
+	expire = "2020.1.1"
+	ideology = social_democrat_subideology
 	traits = {
 		#
 	}

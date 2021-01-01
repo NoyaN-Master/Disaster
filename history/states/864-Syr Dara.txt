@@ -1,0 +1,24 @@
+state={
+	id=864
+	name="STATE_864"
+
+	history={
+		owner = TRK
+		victory_points = {
+			7597 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = TRK
+
+	}
+
+	provinces={
+		4578 4581 4636 4638 4686 7486 7777 10148 10353 10366 10601 
+	}
+	manpower=189856
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
