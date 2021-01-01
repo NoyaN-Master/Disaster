@@ -1,0 +1,28 @@
+
+state={
+	id=863
+	name="STATE_863" 
+	manpower = 3887000
+	
+	state_category = rural
+
+	history={
+		owner = AFG
+		victory_points = {
+			3456 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			3456 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = AFG
+
+	}
+
+	provinces={
+		3456 7049 10108 10735
+	}
+}

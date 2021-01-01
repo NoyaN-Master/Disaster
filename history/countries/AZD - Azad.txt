@@ -1,4 +1,4 @@
-capital = 439
+capital = 438
 oob = ""
 
 # Starting tech
@@ -16,22 +16,22 @@ set_politics = {
 
 set_popularities = {
 	conservative = 0
-	liberal = 5
-	social_democrat = 40
+	liberal = 0
+	social_democrat = 100
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
 	national_bolshevik = 0
-	authoritarian_democrat = 30
+	authoritarian_democrat = 0
 	autocratic = 0
-	ultranationalist = 15
+	ultranationalist = 0
 	revolutionary_nationalist = 0
-	esoteric_traditionalist = 10
+	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
 
 create_country_leader = {
 	name = "Subhas Chandra Bose"
-	#desc = "AZD_Bose_desc"
+	desc = "AZD_Bose_desc"
 	picture = "AZD_Bose.tga"
 	expire = "2020.1.1"
 	ideology = social_democrat_subideology
