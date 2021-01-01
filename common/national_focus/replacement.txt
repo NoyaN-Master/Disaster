@@ -1,0 +1,22 @@
+focus_tree = {
+	id = generic_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = CHI
+                        tag = YUN
+                        tag = MAN
+                        tag = XSM
+                        tag = SIK
+                        tag = RAJ
+                        tag = NZL
+                        tag = AST
+                        tag = CAN
+                        tag = ENG
+                        tag = GRE
+		}
+	}
+	default = yes
