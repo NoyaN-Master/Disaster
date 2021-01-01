@@ -1,68 +1,5 @@
 add_namespace = wrf
 
-country_event = { 
-	id = wrf.1
-	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.1" }
-	title = wrf.1.t
-	desc = wrf.1.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = wrf.1.a
-		add_equipment_to_stockpile = {
-		type = infantry_equipment
-		amount = 5000
-		}
-		add_equipment_to_stockpile = {
-		type = support_equipment
-		amount = 3000
-		}
-		add_equipment_to_stockpile = {
-		type =  artillery_equipment_1
-		amount = 3000
-		}
-	}
-}
-
-country_event = { 
-	id = wrf.2
-	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.3" }
-	title = wrf.2.t
-	desc = wrf.2.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = wrf.2.a
-		add_political_power = 50
-		}
-	}
-country_event = {
-	id = wrf.3
-	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.3" }
-	title = wrf.3.t
-	desc = wrf.3.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = wrf.3.a
-		add_political_power = 100
-		}
-	}
 
 country_event = { 
 	id = wrf.4
@@ -296,6 +233,7 @@ country_event = { #PekerEndWRF
 		days = 365		
 		}
 		}
+		country_event = { id = wrf.27 days = 3 }
 		}
 		}
 country_event = { #PekerEndITA
@@ -810,25 +748,6 @@ country_event = { #Manisa Congress Reshuffle NazBol
 		}
 		}
 
-news_event = { #Greecewarnews
-	id = wrf.25
-	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
-	title = wrf.25.t
-	desc = wrf.25.d
-
-	#picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-	
-	major = yes
-	
-	is_triggered_only = yes
-
-	option = {
-		name = wrf.25.a 
-		}
-		}
-
 	
 country_event = { 
 	id = wrf.27
@@ -854,25 +773,11 @@ country_event = {
 			planning_skill = 5
 			logistics_skill = 3
 			}
+		annex_country = {
+    	target = ADN
+    	transfer_troops = yes
 		}
-		}
-news_event = { #Greecewarnews-WRF Won
-	id = wrf.28
-	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
-	title = wrf.28.t
-	desc = wrf.28.d
-
-	#picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-	
-	major = yes
-	
-	is_triggered_only = yes
-
-	option = {
-		name = wrf.28.a 
-		add_political_power = 1
+		add_state_core = 344
 		}
 		}
 country_event = { 
@@ -890,11 +795,10 @@ country_event = {
 	option = {
 		name = wrf.29.a 
 		custom_effect_tooltip = WRF_fucking_pog
-		 white_peace = GRE
+		white_peace = GRE
 		WRF = {
 		add_state_core = 834
-		set_state_owner = 834
-		set_state_controller = 834
+		transfer_state = 834
 		add_political_power = 100
 		add_manpower = 1000
 		annex_country = {
@@ -903,11 +807,6 @@ country_event = {
 			}
 		}
 		add_state_core = 341
-		set_state_controller = 341
-		set_state_owner = 341
-		set_state_owner = 184
-		set_state_controller = 184
-		add_state_core = 184
 		}
 }
 
@@ -937,4 +836,210 @@ country_event = {
 		}
 		custom_effect_tooltip = istanbul_annex_tt_vahd 
 		}
-}	
+}
+
+####ENEMIES WITHIN STUFF
+
+country_event = { #ASSEMBLY VOTING
+	id = wrf.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
+	title = wrf.31.t
+	desc = wrf.31.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wrf.31.a
+	}
+}
+
+country_event = { #ASSEMBLY-ATSİZ
+	id = wrf.32
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
+	title = wrf.32.t
+	desc = wrf.32.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wrf.32.a
+		add_popularity = {
+    	ideology = revolutionary_nationalist
+    	popularity = 0.1
+		}
+		custom_effect_tooltip = atsiz_increase
+	}
+}
+
+country_event = { #ASSEMBLY-DEMOCRAT
+	id = wrf.33
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
+	title = wrf.33.t
+	desc = wrf.33.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wrf.33.a
+		custom_effect_tooltip = democratic_increase
+	}
+}
+
+country_event = { #ASSEMBLY-KEMALIST
+	id = wrf.34
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
+	title = wrf.34.t
+	desc = wrf.34.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wrf.34.a
+		custom_effect_tooltip = center_increase
+	}
+}
+
+####ATSİZ COUP
+
+country_event = { #TACHANKA 1 riots grow
+	id = wrf.35
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
+	title = wrf.35.t
+	desc = wrf.35.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wrf.35.a
+		add_stability = -0.1
+		hidden_effect = {
+		country_event = { id = wrf.36 }	
+		}
+	}
+}
+
+country_event = { #TACHANKA 2 secret weapons
+	id = wrf.36
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
+	title = wrf.36.t
+	desc = wrf.36.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wrf.36.a
+		 add_stability = -0.1
+		 hidden_effect = {
+		country_event = { id = wrf.37 }	
+		}
+	}
+}
+
+country_event = { #TACHANKA 2 university takeover
+	id = wrf.37
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
+	title = wrf.37.t
+	desc = wrf.37.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wrf.37.a
+		 add_stability = -0.1
+		 hidden_effect = {
+		country_event = { id = wrf.38 }	
+		}
+	}
+}
+
+country_event = { #TACHANKA 2 enver moves in
+	id = wrf.38
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
+	title = wrf.38.t
+	desc = wrf.38.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wrf.38.a
+		 add_stability = -0.1
+		 hidden_effect = {
+		country_event = { id = wrf.39 }	
+		}
+	}
+}
+
+country_event = { #TACHANKA 2 big event
+	id = wrf.39
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
+	title = wrf.39.t
+	desc = wrf.39.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wrf.39.a
+		 add_stability = -0.1
+		 WRF_atsiz_coup = yes
+	}
+}
+
+country_event = { #nationalists istanbul
+	id = wrf.40
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
+	title = wrf.40.t
+	desc = wrf.40.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wrf.38.a
+		annex_country = {
+   	 	target = CRW
+    	transfer_troops = no
+		}
+	}
+}
+
+
+
