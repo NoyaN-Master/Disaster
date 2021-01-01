@@ -8,7 +8,7 @@ set_technology = {
 set_convoys = 0
 
 set_politics = {
-	ruling_party = autocratic
+	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -21,8 +21,8 @@ set_popularities = {
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
 	national_bolshevik = 0
-	authoritarian_democrat = 0
-	autocratic = 100
+	authoritarian_democrat = 100
+	autocratic = 0
 	ultranationalist = 0
 	revolutionary_nationalist = 0
 	esoteric_traditionalist = 0
@@ -31,10 +31,10 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Jamphel Yeshe Gyaltsen"
-	desc = "TIB_Gyaltsen_desc"
+	#desc = "TIB_Gyaltsen_desc"
 	picture = "TIB_Gyaltsen.tga"
 	expire = "2020.1.1"
-	ideology = autocratic_subideology
+	ideology = authoritarian_democrat_subideology
 	traits = {
 		#
 	}

@@ -16,13 +16,13 @@ set_politics = {
 
 set_popularities = {
 	conservative = 20
-	liberal = 20
-	social_democrat = 20
+	liberal = 10
+	social_democrat = 0
 	libertarian_socialist = 0
-	authoritarian_socialist = 20
+	authoritarian_socialist = 0
 	national_bolshevik = 0
-	authoritarian_democrat = 20
-	autocratic = 0
+	authoritarian_democrat = 50
+	autocratic = 20
 	ultranationalist = 0
 	revolutionary_nationalist = 0
 	esoteric_traditionalist = 0
@@ -30,55 +30,11 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Tang Jiyao"
-	desc = "YUN_Tang_Jiyao_desc"
-	picture = "YUN_Tang_Jiyao.tga"
-	expire = "2020.1.1"
-	ideology = authoritarian_democrat_subideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Tang Jiyao"
-	desc = "YUN_Tang_Jiyao_desc"
-	picture = "YUN_Tang_Jiyao.tga"
-	expire = "2020.1.1"
-	ideology = social_democrat_subideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
 	name = "Hu Hanmin"
-	desc = "YUN_Hu_Hanmin_desc"
+	#desc = "YUN_Hu_Hanmin_desc"
 	picture = "YUN_Hu_Hanmin.tga"
 	expire = "2020.1.1"
-	ideology = conservative_subideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Sun Fo"
-	desc = "YUN_Sun_Fo_desc"
-	picture = "YUN_Sun_Fo.tga"
-	expire = "2020.1.1"
-	ideology = liberal_subideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Wang Jingwei"
-	desc = "YUN_Wang_Jingwei_desc"
-	picture = "YUN_Wang_Jingwei.tga"
-	expire = "2020.1.1"
-	ideology = authoritarian_socialist_subideology
+	ideology = authoritarian_democrat_subideology
 	traits = {
 		#
 	}

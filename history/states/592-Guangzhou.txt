@@ -10,8 +10,10 @@ state={
 	}
 
 	history={
-		owner = YUN
-		add_core_of = YUN
+		owner = CHI
+		add_core_of = GXC
+		add_core_of = CHI
+		add_core_of = PRC
 		
 		buildings = {
 			infrastructure = 3
@@ -29,6 +31,21 @@ state={
 			1047 5
 		}
 
+		1938.10.25 = {
+			if = {
+				limit = {
+					NOT = { has_dlc = "Waking the Tiger" }
+				}
+				remove_core_of = GXC
+				CHI = { transfer_state = PREV }
+			}
+			JAP = {
+				set_province_controller = 1047
+				set_province_controller = 7152
+				set_province_controller = 11938
+				set_province_controller = 11941
+			} 			
+		}
 	}
 
 	provinces={
