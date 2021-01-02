@@ -1,0 +1,23 @@
+
+state={
+	id=866 # 
+	manpower = 16114
+	name="STATE_866"
+	resources={
+		oil=13 
+	}
+	
+	state_category = wasteland
+
+	history={
+		owner = TKH
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = TKH
+	}
+
+	provinces={
+		1768 4771 4817 7685 10692 12542 12574 12639
+	}
+}

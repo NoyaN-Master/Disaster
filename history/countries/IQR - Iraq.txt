@@ -30,9 +30,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Abdullah I"
-	#desc = "IQR_Abdullah_desc"
-	picture = "IQR_Abdullah.tga"
+	name = "Ghazi I"
+	desc = "IQR_Ghazi_desc"
+	picture = "IQR_Ghazi.tga"
 	expire = "2020.1.1"
 	ideology = autocratic_subideology
 	traits = {

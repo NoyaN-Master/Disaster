@@ -8,7 +8,7 @@ set_technology = {
 set_convoys = 0
 
 set_politics = {
-	ruling_party = autocratic
+	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -21,8 +21,8 @@ set_popularities = {
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
 	national_bolshevik = 0
-	authoritarian_democrat = 20
-	autocratic = 60
+	authoritarian_democrat = 50
+	autocratic = 30
 	ultranationalist = 0
 	revolutionary_nationalist = 0
 	esoteric_traditionalist = 0
@@ -31,10 +31,10 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Reza Shah Pahlavi"
-	#desc = "INR_Reza_Shah_desc"
+	desc = "INR_Reza_Shah_desc"
 	picture = "INR_Reza_Shah.tga"
 	expire = "2020.1.1"
-	ideology = autocratic_subideology
+	ideology = authoritarian_democrat_subideology
 	traits = {
 		#
 	}

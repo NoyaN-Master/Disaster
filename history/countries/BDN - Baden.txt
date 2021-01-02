@@ -8,21 +8,21 @@ set_technology = {
 set_convoys = 0
 
 set_politics = {
-	ruling_party = autocratic
+	ruling_party = liberal
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	conservative = 20
-	liberal = 0
+	conservative = 0
+	liberal = 100
 	social_democrat = 0
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
 	national_bolshevik = 0
-	authoritarian_democrat = 20
-	autocratic = 60
+	authoritarian_democrat = 0
+	autocratic = 0
 	ultranationalist = 0
 	revolutionary_nationalist = 0
 	esoteric_traditionalist = 0
@@ -31,10 +31,10 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Berthold II"
-	#desc = "BDN_Berthold_desc"
+	desc = "BDN_Berthold_desc"
 	picture = "BDN_Berthold.tga"
 	expire = "2020.1.1"
-	ideology = autocratic_subideology
+	ideology = liberal_subideology
 	traits = {
 		#
 	}

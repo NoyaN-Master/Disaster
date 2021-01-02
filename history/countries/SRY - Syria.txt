@@ -7,6 +7,21 @@ set_technology = {
 
 set_convoys = 0
 
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+		}
+	}
+	set_autonomy = {
+		target = IQR
+		autonomous_state = autonomy_dominion
+	}
+	else = {
+		puppet = IQR
+	}
+}
+
 set_politics = {
 	ruling_party = autocratic
 	last_election = "1936.1.1"
@@ -31,7 +46,7 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Faisal I"
-	#desc = "SRY_Faisal_desc"
+	desc = "SRY_Faisal_desc"
 	picture = "SRY_Faisal.tga"
 	expire = "2020.1.1"
 	ideology = autocratic_subideology

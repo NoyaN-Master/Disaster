@@ -30,8 +30,8 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Alexander the Unifier"
-	#desc = "SOR_Alex_desc"
+	name = "Alexander I"
+	desc = "SOR_Alex_desc"
 	picture = "SOR_Alex.tga"
 	expire = "2020.1.1"
 	ideology = autocratic_subideology

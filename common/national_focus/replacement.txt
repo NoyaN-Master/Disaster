@@ -2,7 +2,7 @@ focus_tree = {
 	id = generic_focus
 	
 	country = {
-		factor = 0
+		factor = 1
 		
 		modifier = {
 			add = 10
@@ -19,4 +19,4 @@ focus_tree = {
                         tag = GRE
 		}
 	}
-	default = yes
+	default = no
