@@ -192,7 +192,18 @@ create_field_marshal = {
 	planning_skill = 3
 	logistics_skill = 2
 }
+create_field_marshal = {
+	name = "Oskar von Hindenburg"
+	portrait_path = "gfx/leaders/PRE/PRE_Oskar_von_Hindenburg.tga"
+	traits = {
 
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
 
 
 #normal Generals
@@ -209,6 +220,19 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 2
 }
+create_corps_commander = {
+	name = "Fedor von Bock"
+	portrait_path = "gfx/leaders/PRE/Fedor_von_Bock.tga"
+	traits = {
+
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
 
 
 

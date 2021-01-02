@@ -1,4 +1,33 @@
 GER_unification_decisions = {
+	 GER_for_germany = {
+		visible = { always = yes}
+	 	available = {
+			OR = {
+			tag = PRE
+			tag = RHN
+			tag = BAY
+			tag = WRT
+			tag = BDN
+			tag = NGU
+			tag = SHL
+			tag = MEK
+			}
+			if = {
+                    check_variable = {
+                        var = german_states
+                        value = 25
+                        compare = greater_than_or_equals
+                    } }
+	}
+		highlight_state_targets = {
+			state = 64
+		}	 
+          remove_effect = {
+			
+          }	 
+	 
+	 
+	 }
      GER_integrate1 = {
           visible = {
 		  	owns_state = 28
@@ -8,7 +37,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 28
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }	
 			28 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -29,7 +58,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 8
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			8 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -50,7 +79,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 51
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			51 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -71,7 +100,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 42
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			42 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -92,7 +121,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 825
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			825 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -113,7 +142,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 57
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			57 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -134,7 +163,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 56
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			56 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -155,7 +184,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 59
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			59 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -176,7 +205,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 55
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			55 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -197,7 +226,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 819
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			819 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -218,7 +247,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 50
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			50 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -239,7 +268,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 54
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			54 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -260,7 +289,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 52
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			52 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -281,7 +310,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 53
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			53 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -302,7 +331,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 60
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			60 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -323,7 +352,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 65
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			65 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -344,7 +373,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 826
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			826 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -365,7 +394,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 58
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			58 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -386,7 +415,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 61
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			61 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -407,7 +436,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 64
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			64 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -428,7 +457,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 62
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			62 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -449,7 +478,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 63
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			63 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -470,7 +499,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 68
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			68 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -491,7 +520,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 66
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			66 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -512,7 +541,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 67
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			67 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -533,7 +562,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 5
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			5 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -554,7 +583,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 763
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			763 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -575,7 +604,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 188
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			188 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -596,7 +625,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 809
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			809 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -617,7 +646,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 85
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			85 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -638,7 +667,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 86
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			86 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -659,7 +688,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 762
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			762 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -680,7 +709,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 74
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			74 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -701,7 +730,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 69
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			69 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -722,7 +751,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 152
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			152 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -743,7 +772,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 4
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			4 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -764,7 +793,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 813
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			813 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -785,7 +814,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 153
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			153 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -806,7 +835,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 39
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			39 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
@@ -827,7 +856,7 @@ GER_unification_decisions = {
           available = {
 			owns_state = 811
           }
-          remove_effect = {
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
 			811 = { add_core_of = ROOT }
           }
 		highlight_state_targets = {
