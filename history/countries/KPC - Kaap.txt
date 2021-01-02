@@ -8,33 +8,44 @@ set_technology = {
 set_convoys = 0
 
 set_politics = {
-	ruling_party = conservative
+	ruling_party = libertarian_socialist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	conservative = 60
+	conservative = 0
 	liberal = 0
 	social_democrat = 0
-	libertarian_socialist = 0
-	authoritarian_socialist = 0
+	libertarian_socialist = 50
+	authoritarian_socialist = 50
 	national_bolshevik = 0
-	authoritarian_democrat = 20
+	authoritarian_democrat = 0
 	autocratic = 0
-	ultranationalist = 20
+	ultranationalist = 0
 	revolutionary_nationalist = 0
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
 
 create_country_leader = {
-	name = "Prince Bernhard"
-	#desc = "KPC_Prince_Bernhard_desc"
-	picture = "KPC_Prince_Bernhard.tga"
+	name = "David Ivon Jones"
+	desc = "KPC_David_Ivon_Jones_desc"
+	picture = "KPC_David_Ivon_Jones.tga"
 	expire = "2020.1.1"
-	ideology = conservative_subideology
+	ideology = libertarian_socialist_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "William Henry Andrews"
+	desc = "KPC_William_Henry_Andrews_desc"
+	picture = "KPC_William_Henry_Andrews.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_socialist_subideology
 	traits = {
 		#
 	}

@@ -235,12 +235,6 @@ NTL = {
 	color_ui = rgb { 152 130 191 }
 }
 
-KKR = {
-	color = rgb { 52 28 0 }  
-	color_ui = rgb { 52 28 0 }
-}
-
-
 INE = {
 	color = rgb { 203 138 74 }  
 	color_ui = rgb { 203 138 74 }
@@ -733,6 +727,56 @@ KSM = {
 }
 
 DCS = {
-	color = rgb { 1 38 51 }
-	color_ui = rgb { 1 38 51 }
+	color = rgb { 2 75 101 }
+	color_ui = rgb { 2 75 101 }
+}
+
+RPG = {
+   	color = rgb { 65 166 0 }
+	color_ui = rgb { 65 166 0 }
+}
+
+RKV = {
+   	color = rgb { 178 19 34 }
+	color_ui = rgb { 178 19 34 }
+}
+
+TKH = {
+   	color = rgb { 89 9 17 }
+	color_ui = rgb { 89 9 17 }
+}
+
+WRG = {
+   	color = rgb { 192 192 192 }
+	color_ui = rgb { 192 192 192 }
+}
+
+KRN = {
+   	color = rgb { 94 94 94 }
+	color_ui = rgb { 94 94 94 }
+}
+
+CSL = {
+   	color = rgb { 42 128 120 }
+	color_ui = rgb { 42 128 120 }
+}
+
+DTR = {
+	color = rgb { 230 230 230 }
+	color_ui = rgb { 230 230 230 }
+}
+
+FER = {
+   	color = rgb { 186 44 56 }
+	color_ui = rgb { 186 44 56 }
+}
+
+WSL = {
+	color = rgb { 46 46 46 }
+	color_ui = rgb { 46 46 46 }
+}
+
+MAL = {
+	color = rgb { 100 96 197 }
+	color_ui = rgb { 100 96 197 }
 }

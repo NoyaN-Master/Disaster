@@ -1,0 +1,41 @@
+capital = 239
+oob = ""
+
+# Starting tech
+set_technology = {
+}
+
+set_convoys = 0
+
+set_politics = {
+	ruling_party = authoritarian_democrat
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	conservative = 22
+	liberal = 22
+	social_democrat = 22
+	libertarian_socialist = 22
+	authoritarian_socialist = 
+	national_bolshevik = 0
+	authoritarian_democrat = 12
+	autocratic = 0
+	ultranationalist = 
+	revolutionary_nationalist = 0
+	esoteric_traditionalist = 0
+	revolutionary_anarchist = 0
+}
+
+create_country_leader = {
+	name = "All-Russian Emergency Duma"
+	desc = "RPG_Duma_desc"
+	picture = "RPG_Duma.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_democrat_subideology
+	traits = {
+		#
+	}
+}
