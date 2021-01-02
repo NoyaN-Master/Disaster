@@ -19,7 +19,7 @@ set_popularities = {
 	liberal = 22
 	social_democrat = 22
 	libertarian_socialist = 22
-	authoritarian_socialist = 
+	authoritarian_socialist = 0
 	national_bolshevik = 0
 	authoritarian_democrat = 12
 	autocratic = 0
@@ -35,6 +35,50 @@ create_country_leader = {
 	picture = "RPG_Duma.tga"
 	expire = "2020.1.1"
 	ideology = authoritarian_democrat_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Aleksandr Guchkov"
+	desc = "RPG_Aleksandr_Guchkov_desc"
+	picture = "RPG_Aleksandr_Guchkov.tga"
+	expire = "2020.1.1"
+	ideology = conservative_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Pavel Milyukov"
+	desc = "RPG_Pavel_Milyukov_desc"
+	picture = "RPG_Pavel_Milyukov.tga"
+	expire = "2020.1.1"
+	ideology = liberal_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Irakli Tsereteli"
+	desc = "RPG_Irakli_Tsereteli_desc"
+	picture = "RPG_Irakli_Tsereteli.tga"
+	expire = "2020.1.1"
+	ideology = social_democrat_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Aleksandra Kollontai"
+	desc = "RPG_Aleksandra_Kollontai_desc"
+	picture = "RPG_Aleksandra_Kollontai.tga"
+	expire = "2020.1.1"
+	ideology = libertarian_socialist_subideology
 	traits = {
 		#
 	}
