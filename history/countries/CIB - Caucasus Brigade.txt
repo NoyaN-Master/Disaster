@@ -19,6 +19,11 @@ add_ideas = CIB_Zombie
 add_ideas = CIB_King_Hill
 add_ideas = CIB_OrduVatan
 
+declare_war_on = {
+		target = ARM #tag
+		type = annex_everything #cb
+}
+
 set_popularities = {
 	conservative = 0
 	liberal = 0

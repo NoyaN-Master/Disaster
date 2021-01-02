@@ -157,7 +157,7 @@ TUR_unification_category = {
         selectable_mission = no
         days_mission_timeout = 40 
         complete_effect = {
-        country_event = { id = wrf.29 } 
+        country_event = { id = wrf.29 days = 10 } 
         }
      }
 }              
