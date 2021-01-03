@@ -18,6 +18,9 @@ remove_ideas = TUR_Ajan_Ankara
 remove_ideas = WRF_Legitimate_Heir
 remove_ideas = WRF_Kemal_Army_Disc
 set_cosmetic_tag = WRF_AO_Atsiz
+}
+
+WRF_atsiz_annex = {
 annex_country = {
     target = CIB
     transfer_troops = yes
@@ -77,4 +80,34 @@ add_state_core = 797
 
 country_event = { id = wrf.40 days = 3 }
 unlock_national_focus = WRF_deal_ist
+}
+
+WRF_atsiz_annex_2 = {
+annex_country = {
+    target = CLP
+    transfer_troops = yes
+}
+add_stability = 0.1
+add_political_power = 150
+dismantle_faction = yes
+
+add_state_core = 49
+add_state_core = 347
+add_state_core = 839
+add_state_core = 798
+add_state_core = 356
+add_state_core = 355
+add_state_core = 354
+add_state_core = 353
+add_state_core = 800
+add_state_core = 230
+add_state_core = 229
+add_state_core = 352
+add_state_core = 350
+add_state_core = 346
+add_state_core = 348
+add_state_core = 349
+add_state_core = 797
+add_state_core = 342
+add_state_core = 345
 }

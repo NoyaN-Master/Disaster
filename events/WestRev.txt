@@ -954,7 +954,7 @@ country_event = { #TACHANKA 2 secret weapons
 		name = wrf.36.a
 		 add_stability = -0.1
 		 hidden_effect = {
-		country_event = { id = wrf.37 }	
+		country_event = { id = wrf.37 days = 2 }	
 		}
 	}
 }
@@ -975,7 +975,7 @@ country_event = { #TACHANKA 2 university takeover
 		name = wrf.37.a
 		 add_stability = -0.1
 		 hidden_effect = {
-		country_event = { id = wrf.38 }	
+		country_event = { id = wrf.38 days = 2 }	
 		}
 	}
 }
@@ -994,9 +994,9 @@ country_event = { #TACHANKA 2 enver moves in
 	
 	option = {
 		name = wrf.38.a
-		 add_stability = -0.1
+		 add_stability = 0.1
 		 hidden_effect = {
-		country_event = { id = wrf.39 }	
+		country_event = { id = wrf.39 days = 3 }	 
 		}
 	}
 }
@@ -1033,11 +1033,68 @@ country_event = { #nationalists istanbul
 	is_triggered_only = yes
 	
 	option = {
-		name = wrf.38.a
+		name = wrf.40.a
 		annex_country = {
    	 	target = CRW
     	transfer_troops = no
 		}
+	}
+}
+
+country_event = { #nationalists istanbul
+	id = wrf.41
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
+	title = wrf.41.t
+	desc = wrf.41.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wrf.41.a
+		WRF_atsiz_annex_2 = yes
+	}
+}
+
+country_event = { #nationalists istanbul
+	id = wrf.42
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
+	title = wrf.42.t
+	desc = wrf.42.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wrf.42.a
+		annex_country = {
+   	 	target = ANK
+    	transfer_troops = yes
+	}
+	create_corps_commander = {
+	name = "Kazım Orbay"
+	#picture = "Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+	traits = { trickster brilliant_strategist }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+	}
+	create_wargoal = {
+     type = annex_everything
+     target = IZM
+     }
+	 create_wargoal = {
+     type = annex_everything
+     target = SKL
+     }
 	}
 }
 

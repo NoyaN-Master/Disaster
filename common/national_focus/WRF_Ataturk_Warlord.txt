@@ -7,13 +7,14 @@ focus_tree = {
 			tag = WRF
 		}
 	}
+	continuous_focus_position = { x = 800 y = 10000 }
 	#Focus for Adanan Ammunition
 	focus = {
 		id = WRF_adanan_ammunition
-		icon = GFX_goal_unknown
+		icon = GFX_goal_fevzi_icon
 		x = 16
 		y = 3
-		cost = 4
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_trk_kurtulu_ordusu }
 		ai_will_do = {
@@ -52,7 +53,7 @@ focus_tree = {
 		icon = GFX_goal_WRF_Kemal_Speech
 		x = 3
 		y = 5
-		cost = 4
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = WRF_bullets_are_cheap_not_men 
@@ -75,10 +76,10 @@ focus_tree = {
 	#Focus for Operation YAHYA
 	focus = {
 		id = WRF_operation_yahya
-		icon = GFX_goal_WRF_Yahya
+		icon = GFX_goal_agent
 		x = 5
 		y = 4
-		cost = 4
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_ajan_tekilat }
 		ai_will_do = {
@@ -92,10 +93,10 @@ focus_tree = {
 	#Focus for Thracian Livestock
 	focus = {
 		id = WRF_thracian_livestock
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ismet
 		x = 12
 		y = 3
-		cost = 4
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_trk_kurtulu_ordusu }
 		available = { has_completed_focus = WRF_adanan_ammunition }
@@ -135,7 +136,7 @@ focus_tree = {
 		icon = GFX_goal_WRF_Crescent
 		x = 9
 		y = 1
-		cost = 4
+		cost = 3
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -196,10 +197,10 @@ focus_tree = {
 	#Focus for Artillery Doctrines
 	focus = {
 		id = WRF_artillery_doctrines
-		icon = GFX_goal_unknown
+		icon = GFX_goal_artillery
 		x = 1
 		y = 3
-		cost = 4
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_lessons_of_the_revolt }
 		ai_will_do = {
@@ -219,7 +220,7 @@ focus_tree = {
 	#Focus for Send Peker To Rome
 	focus = {
 		id = WRF_send_peker_to_rome
-		icon = GFX_goal_unknown
+		icon = GFX_goal_wrf_peker
 		x = 14
 		y = 6
 		cost = 4
@@ -251,10 +252,10 @@ focus_tree = {
 	#Focus for Türk Kurtuluş Ordusu
 	focus = {
 		id = WRF_trk_kurtulu_ordusu
-		icon = GFX_goal_unknown
+		icon = GFX_goal_kurtulus
 		x = 14
 		y = 2
-		cost = 4
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_under_the_crescent }
 		ai_will_do = {
@@ -328,7 +329,7 @@ focus_tree = {
 		icon = GFX_goal_WRF_Trying_PSD
 		x = 5
 		y = 3
-		cost = 4
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_lessons_of_the_revolt }
 		ai_will_do = {
@@ -345,7 +346,7 @@ focus_tree = {
 		icon = GFX_goal_WRF_Old_Discipline
 		x = 1
 		y = 4
-		cost = 4
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_artillery_doctrines }
 		ai_will_do = {
@@ -363,10 +364,10 @@ focus_tree = {
 	#Focus for Agents in Antalya
 	focus = {
 		id = WRF_agents_in_antalya
-		icon = GFX_goal_unknown
+		icon = GFX_goal_agents_2
 		x = 12
 		y = 5
-		cost = 4
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_thracian_livestock }
 		available = { has_completed_focus = WRF_ajan_tekilat }
@@ -388,10 +389,10 @@ focus_tree = {
 	#Focus for Tekalif-I Milliye
 	focus = {
 		id = WRF_tekalifi_milliye
-		icon = GFX_goal_unknown
+		icon = GFX_goal_tekalif
 		x = 16
 		y = 5
-		cost = 4
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_adanan_ammunition }
 		ai_will_do = {
@@ -413,10 +414,10 @@ focus_tree = {
 	#Focus for Operation Ruina Byzantina
 	focus = {
 		id = WRF_operation_ruina_byzantina
-		icon = GFX_goal_unknown
+		icon = GFX_goal_wrf_smyrna
 		x = 8
 		y = 7
-		cost = 4
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = WRF_send_peker_to_rome 
@@ -456,7 +457,7 @@ focus_tree = {
 		icon = GFX_goal_WRF_enemies_enver
 		x = 37
 		y = 1
-		cost = 4
+		cost = 3
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -471,6 +472,7 @@ focus_tree = {
         has_country_flag = WRF_Adsiz_Won
     	}   
     	country_event = { id = wrf.32 days = 3 }
+		country_event = { id = wrf.35 days = 7  }
 		}		
 		else_if = {
     	limit = {
@@ -498,10 +500,10 @@ focus_tree = {
 	#Focus for CIB-1
 	focus = {
 		id = WRF_deal_cib_1
-		icon = GFX_goal_WRF_Tachanka
+		icon = GFX_goal_wrf_triple
 		x = 30
 		y = 2
-		cost = 4
+		cost = 3
 		available_if_capitulated = yes
 		available = { is_neighbor_of = CIB }
 		mutually_exclusive = { focus = WRF_deal_cib_2 }
@@ -510,18 +512,20 @@ focus_tree = {
 			factor = 1
 		}
 		available = {	
-		OR = {	has_country_flag = WRF_Adsiz_Won }
+		OR = {	has_government = revolutionary_nationalist }
 		}
 	 completion_reward = {
 		 custom_effect_tooltip = tachanka_tt
-		 country_event = { id = wrf.35 days = 3  }
+		 hidden_effect = {
+			WRF_atsiz_annex = yes 
+		 }
 	 }	
 	}
 	
 	#Focus for CIB-1
 	focus = {
 		id = WRF_deal_cib_2
-		icon = GFX_goal_WRF_enemies_within
+		icon = GFX_goal_wrf_brother_war
 		x = 32
 		y = 2
 		cost = 4
@@ -536,16 +540,17 @@ focus_tree = {
 		available = { is_neighbor_of = CIB }
 		}
 	 completion_reward = {
+	 custom_effect_tooltip = enver_war_tt
 	 }	
 	}
 
 	#Focus for ANT-1
 	focus = {
 		id = WRF_deal_ant_1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_dragon_wrf
 		x = 36
 		y = 2
-		cost = 4
+		cost = 3
 		available_if_capitulated = yes
 		mutually_exclusive = { focus = WRF_deal_ant_2 }
 		prerequisite = { focus = WRF_the_enemies_within }
@@ -553,21 +558,33 @@ focus_tree = {
 			factor = 1
 		}
 		available = {	
-		OR = {	has_country_flag = WRF_Adsiz_Won }
+		OR = {	has_government = revolutionary_nationalist }
 		}
 	 completion_reward = {
 	 custom_effect_tooltip = motive_tt
 	 add_ideas = WRF_atsiz_motive
+	 create_wargoal = {
+     type = annex_everything
+     target = IZM
+     }
+	 create_wargoal = {
+     type = annex_everything
+     target = SKL
+     }
+	 create_wargoal = {
+     type = annex_everything
+     target = ANK
+     }
 	 }	
 	}
 	
 	#Focus for ANT-2
 	focus = {
 		id = WRF_deal_ant_2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_wrf_ant_attack
 		x = 38
 		y = 2
-		cost = 4
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_the_enemies_within }
 		mutually_exclusive = { focus = WRF_deal_ant_1 }
@@ -578,16 +595,20 @@ focus_tree = {
 		OR = {	has_country_flag = WRF_Kemalist_Won has_country_flag = WRF_Demokrat_End }
 		}
 	 completion_reward = {
+	 custom_effect_tooltip = intervene_tt
+	 hidden_effect = {
+	 country_event = { id = wrf.42 days = 1 } 	 
+	 }	 
 	 }	
 	}
 	
 	#Focus for CLP-1
 	focus = {
 		id = WRF_deal_clp_1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_wrf_clp_jew
 		x = 42
 		y = 2
-		cost = 4
+		cost = 3
 		available_if_capitulated = yes
 		mutually_exclusive = { focus = WRF_deal_clp_2 }
 		prerequisite = { focus = WRF_the_enemies_within }
@@ -595,20 +616,24 @@ focus_tree = {
 			factor = 1
 		}
 		available = {	
-		OR = {	has_country_flag = WRF_Adsiz_Won has_country_flag = WRF_Anarch_Won }
+		OR = {	has_government = revolutionary_nationalist }
 		}
 		
 	 completion_reward = {
+		 custom_effect_tooltip = atsiz_caliph_tt	
+		 hidden_effect = {
+		 country_event = { id = wrf.41 } 
+		 }
 	 }	
 	}
 	
 	#Focus for CLP-2
 	focus = {
 		id = WRF_deal_clp_2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_wrf_clp_attack
 		x = 44
 		y = 2
-		cost = 4
+		cost = 3
 		available_if_capitulated = yes
 		mutually_exclusive = { focus = WRF_deal_clp_1 }
 		prerequisite = { focus = WRF_the_enemies_within }
@@ -619,16 +644,22 @@ focus_tree = {
 		OR = {	has_country_flag = WRF_Kemalist_Won has_country_flag = WRF_Demokrat_End }
 		}
 	 completion_reward = {
+	 custom_effect_tooltip = intervene_tt_caliph	 
+	 declare_war_on = {
+    	target = CLP
+    	type = annex_everything
+		}	
+	 
 	 }	
 	}
 	
 	#Focus for IST
 	focus = {
 		id = WRF_deal_ist
-		icon = GFX_goal_unknown
+		icon = GFX_goal_wrf_pearl
 		x = 37
 		y = 4
-		cost = 4
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { OR = { focus = WRF_deal_clp_2 focus = WRF_deal_clp_1 focus = WRF_deal_cib_1 focus = WRF_deal_cib_2 focus = WRF_deal_ant_1 focus = WRF_deal_ant_2 } }
 		ai_will_do = {

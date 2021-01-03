@@ -5,7 +5,7 @@ oob = "CIB_1936"
 set_technology = {
 }
 
-set_convoys = 0
+set_convoys = 1000
 
 set_politics = {
 	ruling_party = revolutionary_nationalist
@@ -14,16 +14,50 @@ set_politics = {
 	elections_allowed = no
 }
 
+set_technology = {
+ 	infantry_weapons = 1
+	infantry_weapons1 = 1	
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	basic_heavy_tank = 1
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	strategic_bomber1 = 1
+	CAS1 = 1
+	naval_bomber1 = 1
+}
+
+
 add_ideas = CIB_Enver_Idea
 add_ideas = CIB_Zombie
 add_ideas = CIB_King_Hill
 add_ideas = CIB_OrduVatan
+
+add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 1400
+    producer = GER
+}
+
+add_equipment_to_stockpile = {
+    type = support_equipment
+    amount = 3000
+    producer = GER
+}
 
 declare_war_on = {
 		target = ARM #tag
 		type = annex_everything #cb
 }
 
+add_manpower = 40000
 set_popularities = {
 	conservative = 0
 	liberal = 0
@@ -33,10 +67,10 @@ set_popularities = {
 	national_bolshevik = 0
 	authoritarian_democrat = 0
 	autocratic = 0
-	ultranationalist = 20
-	revolutionary_nationalist = 70
+	ultranationalist = 0
+	revolutionary_nationalist = 100
 	esoteric_traditionalist = 0
-	revolutionary_anarchist = 10
+	revolutionary_anarchist = 0
 }
 
 create_country_leader = {

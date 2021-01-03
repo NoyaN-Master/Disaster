@@ -17,6 +17,7 @@ country_event = { #Intro
 
 	option = { #Intro
 		name = crw.1.a
+		ai_chance = { factor = 1}
 		country_event = { id = crw.2 days = 5 }
 	}
 }
@@ -38,6 +39,7 @@ country_event = { #fags burn store
 
 	option = { #Intro
 		name = crw.2.a
+		ai_chance = { factor = 1}
 		add_stability = -0.05
 		country_event = { id = crw.3 days = 3 }
 	}
@@ -60,6 +62,7 @@ country_event = { #shit gets real
 
 	option = { #Intro
 		name = crw.3.a
+		ai_chance = { factor = 1}
 		add_stability = -0.05
 		country_event = { id = crw.4 days = 2 }
 	}
@@ -82,6 +85,7 @@ country_event = { #The Snow Massacre
 
 	option = { #Intro
 		name = crw.4.a
+		ai_chance = { factor = 1}
 		add_stability = -0.10
 		manpower = -1000
 		country_event = { id = crw.5 days = 3 }
@@ -105,6 +109,7 @@ country_event = { #Getting the parliament
 
 	option = { #Intro
 		name = crw.5.a
+		ai_chance = { factor = 1}
 		custom_effect_tooltip = crw5_tt
 		complete_national_focus = CRW_party_problems
 		hidden_effect = {
@@ -143,6 +148,7 @@ country_event = { #Protest Debate
 
 	option = { #Intro
 		name = crw.6.a
+		ai_chance = { factor = 100}
 		hidden_effect = {
 		set_country_flag = revolt_done
 		complete_national_focus = CRW_addressing_protests
@@ -157,6 +163,7 @@ country_event = { #Protest Debate
 
 	option = { #Intro
 		name = crw.6.b
+		ai_chance = { factor = 20}
 		hidden_effect = {
 		set_country_flag = revolt_done
 		complete_national_focus = CRW_addressing_protests
@@ -171,6 +178,7 @@ country_event = { #Protest Debate
 
 	option = { #Intro
 		name = crw.6.c
+		ai_chance = { factor = 30}
 		hidden_effect = {
 		set_country_flag = revolt_done
 		complete_national_focus = CRW_addressing_protests
@@ -201,6 +209,7 @@ country_event = { #Minority Debate
 
 	option = { #Intro
 		name = crw.7.a
+		ai_chance = { factor = 100}
 		hidden_effect = {
 		set_country_flag = minority_done
 		complete_national_focus = CRW_multicultural_order
@@ -215,6 +224,7 @@ country_event = { #Minority Debate
 
 	option = { #Intro
 		name = crw.7.b
+		ai_chance = { factor = 50}
 		hidden_effect = {
 		set_country_flag = minority_done
 		complete_national_focus = CRW_multicultural_order
@@ -229,6 +239,7 @@ country_event = { #Minority Debate
 
 	option = { #Intro
 		name = crw.7.c
+		ai_chance = { factor = 30}
 		hidden_effect = {
 		set_country_flag = minority_done
 		complete_national_focus = CRW_multicultural_order
@@ -259,6 +270,7 @@ country_event = { #Economy Debate
 
 	option = { #Intro
 		name = crw.8.a
+		ai_chance = { factor = 100}
 		hidden_effect = {
 		set_country_flag = economy_done
 		complete_national_focus = CRW_economics
@@ -273,6 +285,7 @@ country_event = { #Economy Debate
 
 	option = { #Intro
 		name = crw.8.b
+		ai_chance = { factor = 30}
 		hidden_effect = {
 		set_country_flag = economy_done
 		complete_national_focus = CRW_economics
@@ -287,6 +300,7 @@ country_event = { #Economy Debate
 
 	option = { #Intro
 		name = crw.8.c
+		ai_chance = { factor = 30}
 		hidden_effect = {
 		set_country_flag = economy_done
 		complete_national_focus = CRW_economics

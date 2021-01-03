@@ -1,0 +1,574 @@
+focus_tree = {
+	id = enver_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CIB
+		}
+		}
+		continuous_focus_position = { x = 100 y = 2000 }
+
+    focus = {
+		id = CIB_war_for_soul_turk
+		icon = GFX_goal_adress_parliament
+		x = 7
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+    focus = {
+		id = CIB_war_focus_erzurum
+		icon = GFX_goal_adress_parliament
+		x = 9
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = CIB_war_for_soul_turk}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_war_focus_van
+		icon = GFX_goal_adress_parliament
+		x = 5
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = CIB_war_for_soul_turk}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_war_focus_kars
+		icon = GFX_goal_adress_parliament
+		x = 7
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = CIB_war_for_soul_turk}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_war_focus_sametplan
+		icon = GFX_goal_adress_parliament
+		x = 7
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = CIB_war_focus_van}
+		prerequisite = { focus = CIB_war_focus_erzurum}
+		prerequisite = { focus = CIB_war_focus_kars}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_war_focus_paying_debts
+		icon = GFX_goal_adress_parliament
+		x = 7
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = CIB_war_focus_sametplan}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_enveristan_proper
+		icon = GFX_goal_adress_parliament
+		x = 7
+		y = 6
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_fighting_bandits
+		icon = GFX_goal_adress_parliament
+		x = 5
+		y = 7
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = CIB_enveristan_proper}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_talks_old_friend
+		icon = GFX_goal_adress_parliament
+		x = 5
+		y = 8
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = CIB_enveristan_proper}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_revising_military
+		icon = GFX_goal_adress_parliament
+		x = 5
+		y = 9
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = CIB_enveristan_proper}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_rebuilding_east
+		icon = GFX_goal_adress_parliament
+		x = 7
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = CIB_enveristan_proper}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_they_will_go
+		icon = GFX_goal_adress_parliament
+		x = 7
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = CIB_enveristan_proper}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_religious_shrines
+		icon = GFX_goal_adress_parliament
+		x = 7
+		y = 9
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = CIB_enveristan_proper}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_deal_government_armenia
+		icon = GFX_goal_adress_parliament
+		x = 9
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = CIB_enveristan_proper}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_turkish_lands
+		icon = GFX_goal_adress_parliament
+		x = 9
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = CIB_enveristan_proper}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_stable_administration
+		icon = GFX_goal_adress_parliament
+		x = 9
+		y = 9
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = CIB_enveristan_proper}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_ready_for_others
+		icon = GFX_goal_adress_parliament
+		x = 7
+		y = 10
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = CIB_enveristan_proper}
+		prerequisite = { focus = CIB_revising_military}
+		prerequisite = { focus = CIB_stable_administration}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_war_plan_ANT
+		icon = GFX_goal_adress_parliament
+		x = 15
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_nuri_reach
+		icon = GFX_goal_adress_parliament
+		x = 15
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = CIB_war_plan_ANT}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_deal_mercenaries
+		icon = GFX_goal_adress_parliament
+		x = 16
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = CIB_nuri_reach}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_deal_mercenaries_2
+		icon = GFX_goal_adress_parliament
+		x = 16
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = CIB_deal_mercenaries}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_deal_mercenaries_3
+		icon = GFX_goal_adress_parliament
+		x = 16
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = CIB_deal_mercenaries_2}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_deal_communists
+		icon = GFX_goal_adress_parliament
+		x = 12
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = CIB_nuri_reach}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_deal_communists_2
+		icon = GFX_goal_adress_parliament
+		x = 12
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_deal_communists_3
+		icon = GFX_goal_adress_parliament
+		x = 12
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = CIB_deal_communists_2}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_deal_fuller_1
+		icon = GFX_goal_adress_parliament
+		x = 18
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = CIB_nuri_reach}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_deal_fuller_2
+		icon = GFX_goal_adress_parliament
+		x = 18
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_deal_fuller_3
+		icon = GFX_goal_adress_parliament
+		x = 18
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_deal_kemalists_1
+		icon = GFX_goal_adress_parliament
+		x = 14
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = CIB_nuri_reach}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_deal_kemalists_2
+		icon = GFX_goal_adress_parliament
+		x = 14
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = CIB_deal_kemalists_1 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_deal_kemalists_3
+		icon = GFX_goal_adress_parliament
+		x = 14
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_deal_kemalists_3
+		icon = GFX_goal_adress_parliament
+		x = 14
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = CIB_deal_kemalists_2}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_deal_war_kemalism
+		icon = GFX_goal_adress_parliament
+		x = 15
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = CIB_deal_communists_3}
+		prerequisite = { focus = CIB_deal_fuller_3}
+		prerequisite = { focus = CIB_deal_kemalists_3}
+		prerequisite = { focus = CIB_deal_mercenaries_3}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_deal_war_caliphate
+		icon = GFX_goal_adress_parliament
+		x = 15
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = CIB_deal_war_kemalism}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CIB_deal_istanbul
+		icon = GFX_goal_adress_parliament
+		x = 15
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = CIB_deal_war_caliphate}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+}        

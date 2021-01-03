@@ -145,9 +145,11 @@ TUR_unification_category = {
 		cost = 30
         available  = {
         controls_state = 834
+        original_tag = WRF
         }
         activation = {                          
-        controls_state = 834                       
+        controls_state = 834  
+        original_tag = WRF                     
         }
         visible = {
         original_tag = WRF

@@ -33,7 +33,7 @@ units = {
 	division= {	
 		name = "1.Inf"
 		location = 4112   # Vienna
-		division_template = "Topcu Piyadeler"
+		division_template = "Infantry"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
@@ -41,7 +41,7 @@ units = {
 	division= {	
 		name = "2.Inf"
 		location = 4112   # Vienna
-		division_template = "Topcu Piyadeler"
+		division_template = "Infantry"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
@@ -49,7 +49,7 @@ units = {
 	division= {	
 		name = "3.Inf"
 		location = 4112   # Vienna
-		division_template = "Topcu Piyadeler"
+		division_template = "Infantry"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
@@ -57,7 +57,7 @@ units = {
 	division= {	
 		name = "4.Inf"
 		location = 4112   # Vienna
-		division_template = "Topcu Piyadeler"
+		division_template = "Infantry"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
@@ -70,7 +70,7 @@ units = {
 				name_order = 5
 		}
 		location = 4112  # Linz
-		division_template = "Ana Piyadeler"
+		division_template = "Infantry"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -81,7 +81,7 @@ units = {
 				name_order = 6
 		}
 		location = 4112  # Graz
-		division_template = "Ana Piyadeler"
+		division_template = "Infantry"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -92,7 +92,7 @@ units = {
 				name_order = 7
 		}
 		location = 4112  # Innsbruck
-		division_template = "Ana Piyadeler"
+		division_template = "Infantry"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -103,7 +103,7 @@ units = {
 				name_order = 8
 		}
 		location = 4112  # Salzburg
-		division_template = "Ana Piyadeler"
+		division_template = "Infantry"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -112,7 +112,7 @@ units = {
 	division= {	
 		name = "Special Forces"				# Used to form 2. Gebirgs-division post-Anschluss
 		location = 4112  # Vienna
-		division_template = "Topcu Piyadeler"
+		division_template = "Infantry"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 
