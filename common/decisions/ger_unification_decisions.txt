@@ -1,21 +1,11 @@
 GER_unification_decisions = {
-	 GER_for_germany = {
-		visible = { always = yes}
+	 GER_for_germany_liberal = {
+		visible = { has_government = liberal}
 	 	available = {
-			OR = {
-			tag = PRE
-			tag = RHN
-			tag = BAY
-			tag = WRT
-			tag = BDN
-			tag = NGU
-			tag = SHL
-			tag = MEK
-			}
 			if = {
                     check_variable = {
                         var = german_states
-                        value = 25
+                        value = 23
                         compare = greater_than_or_equals
                     } }
 	}
@@ -23,11 +13,95 @@ GER_unification_decisions = {
 			state = 64
 		}	 
           remove_effect = {
-			
+			custom_effect_tooltip = GER_forming_germany_tooltip	
+			set_cosmetic_tag = GER_small
           }	 
 	 
+	 }
+	 GER_for_germany_authoritarian_democrat = {
+		visible = { has_government = authoritarian_democrat}
+	 	available = {
+			if = {
+                    check_variable = {
+                        var = german_states
+                        value = 23
+                        compare = greater_than_or_equals
+                    } }
+	}
+		highlight_state_targets = {
+			state = 64
+		}	 
+          remove_effect = {
+			custom_effect_tooltip = GER_forming_germany_tooltip	
+			set_cosmetic_tag = GER_small
+          }	 
+	 }
+ 	 GER_for_germany_autocratic = {
+		visible = { has_government = autocratic}
+	 	available = {
+			if = {
+                    check_variable = {
+                        var = german_states
+                        value = 23
+                        compare = greater_than_or_equals
+                    } }
+	}
+		highlight_state_targets = {
+			state = 64
+		}	 
+          remove_effect = {
+			custom_effect_tooltip = GER_forming_germany_tooltip	
+			set_cosmetic_tag = GER_small
+          }	 
 	 
 	 }
+ 	 GER_for_germany_ultranationalist= {
+		visible = { has_government = ultranationalist}
+	 	available = {
+			if = {
+                    check_variable = {
+                        var = german_states
+                        value = 23
+                        compare = greater_than_or_equals
+                    } }
+	}
+		highlight_state_targets = {
+			state = 64
+		}	 
+          remove_effect = {
+			custom_effect_tooltip = GER_forming_germany_tooltip	
+			set_cosmetic_tag = GER_small
+          }	 
+	 
+	 }
+ 	 GER_for_germany_revolutionary_nationalist= {
+		visible = { has_government = revolutionary_nationalist}
+	 	available = {
+			if = {
+                    check_variable = {
+                        var = german_states
+                        value = 23
+                        compare = greater_than_or_equals
+                    } }
+	}
+		highlight_state_targets = {
+			state = 64
+		}	 
+          remove_effect = {
+			custom_effect_tooltip = GER_forming_germany_tooltip	
+			set_cosmetic_tag = GER_small
+          }	 
+	 
+	 }
+
+
+ 
+
+
+
+
+
+
      GER_integrate1 = {
           visible = {
 		  	owns_state = 28
