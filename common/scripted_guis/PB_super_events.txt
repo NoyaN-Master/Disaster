@@ -15,8 +15,8 @@ scripted_gui = {
 		}
 
 		triggers = {
-			Super_Event_Image_Unification_Fuller = {
-				has_global_flag  = TUR_Unification_Fuller
+			Super_Event_Image_Unification_Atsiz = {
+				has_global_flag  = TUR_Unification_Atsiz
 			}
 		}
 
@@ -32,9 +32,9 @@ scripted_gui = {
 
 				if = {
 					limit = {	
-						has_global_flag = TUR_Unification_Fuller
+						has_global_flag = TUR_Unification_Atsiz
 					}
-					clr_global_flag  = TUR_Unification_Fuller
+					clr_global_flag  = TUR_Unification_Atsiz
 				}
 			}
 		}

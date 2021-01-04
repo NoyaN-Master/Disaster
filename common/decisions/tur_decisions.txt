@@ -54,6 +54,8 @@ TUR_unification_category = {
         has_government = revolutionary_nationalist
         }  
         complete_effect = {
+        hidden_effect = {  
+        }    
         }
      }
      wrf_democrat_unify_decision = {

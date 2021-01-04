@@ -1,35 +1,35 @@
 defined_text = { #SUPER EVENT TITLES
     name = get_super_event_title
-    
+
     text = { 
         trigger = {
-            has_global_flag = TUR_Unification_Fuller
+            has_global_flag = TUR_Unification_Atsiz
         }
-        localization_key = "GFX_SPEVNT_Unification_Fuller"
+        localization_key = "GFX_SPEVNT_Unification_Atsiz"
     }
 	
 }
 
 defined_text = { #SUPER EVENT QUOTES
     name = get_superevent_quote
-    
+
     text = { 
         trigger = {
-            has_global_flag = TUR_Unification_Fuller
+            has_global_flag = TUR_Unification_Atsiz
         }
-        localization_key = "GFX_SPEVNT_Unification_Fuller_TEXT"
+        localization_key = "GFX_SPEVNT_Unification_Atsiz_TEXT"
     }
 
 }
 
 defined_text = { #SUPER EVENT REMARKS
     name = get_superevent_remark
-    
+
     text = { 
         trigger = {
-            has_global_flag = TUR_Unification_Fuller
+            has_global_flag = TUR_Unification_Atsiz
         }
-        localization_key = "GFX_SPEVNT_Unification_Fuller_REMARK"
+        localization_key = "GFX_SPEVNT_Unification_Atsiz_REMARK"
     }
 	
 }

@@ -24,15 +24,15 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_SPEVNT_Unification_Fuller"
-		texturefile = "gfx/super_events/SPEVNT_Unification_Fuller.dds"
+		name = "GFX_SPEVNT_Unification_Atsiz"
+		texturefile = "gfx/super_events/SPEVNT_Unification_Atsiz.dds"
 		legacy_lazy_load = no
 	}
 
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window_thin_border"
 		size= { x=192 y=192 }
-		textureFile = "gfx//interface//tiles//tiled_window_thin_border.dds"
+		textureFile = "gfx/interface/tiles/tiled_window_thin_border.dds"
 		borderSize = { x=64 y=64 }
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
