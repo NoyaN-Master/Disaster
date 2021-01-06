@@ -8,7 +8,7 @@ set_technology = {
 set_convoys = 0
 
 set_politics = {
-	ruling_party = autocratic
+	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -21,20 +21,20 @@ set_popularities = {
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
 	national_bolshevik = 0
-	authoritarian_democrat = 5
-	autocratic = 80
+	authoritarian_democrat = 100
+	autocratic = 0
 	ultranationalist = 0
-	revolutionary_nationalist = 15
+	revolutionary_nationalist = 0
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
 
 create_country_leader = {
-	name = "Roman von Ungern-Sternberg"
-	#desc = "TUV_Roman_Ungern_desc"
-	picture = "TUV_Roman_Ungern.tga"
+	name = "Bernard Montgomery"
+	desc = "TUV_Bernard_Montgomery_desc"
+	picture = "TUV_Bernard_Montgomery.tga"
 	expire = "2020.1.1"
-	ideology = autocratic_subideology
+	ideology = authoritarian_democrat_subideology
 	traits = {
 		#
 	}
