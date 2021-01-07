@@ -23,6 +23,12 @@ focus_tree = {
 		}
 		completion_reward = {
 		add_stability = 0.05
+		add_manpower = 50000
+		add_equipment_to_stockpile = {
+    	type = support_equipment_1
+   		amount = 1000
+    	producer = CIB
+		}
 		}
 	}
 
@@ -32,13 +38,23 @@ focus_tree = {
 		x = 9
 		y = 2
 		cost = 2
+		available = { 353 = {
+    	is_controlled_by = CIB
+    	}
+		}
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_war_for_soul_turk}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		hidden_effect = {
+		country_event = { id = enver.4 }
+		}
+		transfer_state = 353
+		353 = {
+		add_core_of = CIB	
+		}
 		}
 	}
 
@@ -48,13 +64,22 @@ focus_tree = {
 		x = 5
 		y = 2
 		cost = 2
+		available = { 800 = {
+		is_controlled_by = CIB	
+		} }
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_war_for_soul_turk}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		hidden_effect = {
+		country_event = { id = enver.3 }
+		}
+		transfer_state = 800
+		800 = {
+		add_core_of = CIB	
+		}
 		}
 	}
 
@@ -64,13 +89,22 @@ focus_tree = {
 		x = 7
 		y = 2
 		cost = 2
+		available = { 835 = {
+		is_controlled_by = CIB
+		} }
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_war_for_soul_turk}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		hidden_effect = {
+		country_event = { id = enver.2 }
+		}
+		transfer_state = 835
+		835 = {
+		add_core_of = CIB	
+		}
 		}
 	}
 
@@ -81,6 +115,11 @@ focus_tree = {
 		y = 3
 		cost = 2
 		available_if_capitulated = yes
+		available = { 
+		ARM = {
+		exists = no	
+		}
+		}
 		prerequisite = { focus = CIB_war_focus_van}
 		prerequisite = { focus = CIB_war_focus_erzurum}
 		prerequisite = { focus = CIB_war_focus_kars}
@@ -88,7 +127,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		custom_effect_tooltip = sametplan_tt
+		hidden_effect = {
+		country_event = { id = enver.5 }	
+		}
 		}
 	}
 
@@ -99,12 +141,21 @@ focus_tree = {
 		y = 4
 		cost = 2
 		available_if_capitulated = yes
+		available = { 
+		ARM = {
+		exists = no	
+		}
+		KUR = {
+		exists = no	
+		}
+		}
 		prerequisite = { focus = CIB_war_focus_sametplan}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		custom_effect_tooltip = debts_tt
+		country_event = { id = enver.6 }	
 		}
 	}
 
@@ -114,6 +165,17 @@ focus_tree = {
 		x = 7
 		y = 6
 		cost = 3
+		available = { 
+		ARM = {
+		exists = no	
+		}
+		KUR = {
+		exists = no	
+		}
+		AZR = {
+		exists = no	
+		}	
+		}
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1

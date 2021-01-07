@@ -1,0 +1,160 @@
+add_namespace = enver
+
+country_event = { #Introduction
+	id = enver.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = enver.1.t
+	desc = enver.1.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = enver.1.a
+	}
+}
+
+country_event = { #Kars Taken
+	id = enver.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = enver.2.t
+	desc = enver.2.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	is_triggered_only = yes
+
+    fire_only_once = yes
+
+    is_triggered_only = yes
+
+	option = {
+        name = enver.2.a
+        add_manpower = 15000
+        add_stability = -0.09
+        add_war_support = 0.07
+    }
+}
+
+country_event = { #Van Taken
+	id = enver.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = enver.3.t
+	desc = enver.3.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+    is_triggered_only = yes
+
+	option = {
+        name = enver.3.a
+        add_manpower = 15000
+        add_stability = -0.09
+        add_war_support = 0.07
+    }
+}
+
+country_event = { #Erzurum Taken
+    id = enver.4
+    immediate = { log = "[GetDateText]: [Root.GetName]: event enver.4" }
+    title = enver.4.t
+    desc = enver.4.d
+
+    picture = GFX_report_event_aut_dollfuss_speech
+
+    fire_only_once = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = enver.4.a
+        add_manpower = 15000
+        add_stability = -0.09
+        add_war_support = 0.07
+    }
+}
+
+country_event = { #Samet goes gamer 
+	id = enver.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = enver.5.t
+	desc = enver.5.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = enver.5.a
+        declare_war_on = {
+        target = KUR
+        type = annex_everything
+        }   
+        hidden_effect = { 
+        }
+	}
+}
+
+country_event = { #Annex AZR 
+	id = enver.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = enver.6.t
+	desc = enver.6.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = enver.6.a
+        annex_country = {
+        target = AZR
+        transfer_troops = yes
+        }
+        229 = {
+        add_core_of = CIB   
+        }
+        hidden_effect = {
+        country_event = { id = enver.7 days = 5} 
+        }
+	}
+}
+
+country_event = { #terrorists form 
+	id = enver.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = enver.7.t
+	desc = enver.7.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+    trigger = {    
+    }
+
+	option = {
+		name = enver.7.a
+        custom_effect_tooltip = asala_tt
+        add_popularity = {
+        ideology = revolutionary_anarchist
+        popularity = 0.2
+        }
+        add_stability = -0.20
+        add_political_power = -150
+        hidden_effect = {
+
+        }
+	}
+}

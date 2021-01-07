@@ -35,7 +35,7 @@ units = {
 	# I Korps
 	division= {	
 		name = "1.Tümen"
-		location = 9932   # Vienna
+		location = 3979   # Vienna
 		division_template = "Kafkasya Islam Taburu"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
@@ -43,7 +43,7 @@ units = {
 	}
 	division= {	
 		name = "2.Tümen"
-		location = 9932   # Vienna
+		location = 3979   # Vienna
 		division_template = "Kafkasya Islam Taburu"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
@@ -51,7 +51,7 @@ units = {
 	}
 	division= {	
 		name = "3.Tümen"
-		location = 9932   # Vienna
+		location = 3979   # Vienna
 		division_template = "Kafkasya Islam Taburu"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
@@ -59,7 +59,7 @@ units = {
 	}
 	division= {	
 		name = "4.Tümen"
-		location = 9932   # Vienna
+		location = 9886   # Vienna
 		division_template = "Kafkasya Islam Taburu"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
@@ -72,7 +72,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 5
 		}
-		location = 9932  # Linz
+		location = 9886  # Linz
 		division_template = "Kafkasya Islam Taburu"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
@@ -83,7 +83,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 6
 		}
-		location = 9932  # Graz
+		location = 9886  # Graz
 		division_template = "Kafkasya Islam Taburu"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
@@ -94,7 +94,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 7
 		}
-		location = 9932  # Innsbruck
+		location = 3714  # Innsbruck
 		division_template = "Kafkasya Islam Taburu"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
@@ -105,7 +105,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 8
 		}
-		location = 9932  # Salzburg
+		location = 11753  # Salzburg
 		division_template = "Kafkasya Islam Taburu"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
@@ -114,7 +114,7 @@ units = {
 
 	division= {	
 		name = "Bozkurt Birliği"				# Used to form 2. Gebirgs-division post-Anschluss
-		location = 9932  # Vienna
+		location = 11753  # Vienna
 		division_template = "Kafkasya Islam Taburu"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
@@ -123,7 +123,7 @@ units = {
 	
 	division= {	
 		name = "Kızıl Birlik"				# Used to form 2. Gebirgs-division post-Anschluss
-		location = 9932  # Vienna
+		location = 11753  # Vienna
 		division_template = "Kafkasya Islam Taburu"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
