@@ -31,8 +31,8 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Grigory Semyonov"
-	#desc = "TSB_Semyonov_desc"
-	picture = "TSB_Semyonov.tga"
+	desc = "TSB_Griogry_Semyonov_desc"
+	picture = "TSB_Griogry_Semyonov.tga"
 	expire = "2020.1.1"
 	ideology = autocratic_subideology
 	traits = {
