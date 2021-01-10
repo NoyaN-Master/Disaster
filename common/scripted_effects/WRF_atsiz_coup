@@ -28,38 +28,29 @@ annex_country = {
 add_stability = -0.4
 add_political_power = 150
 dismantle_faction = yes
+
 create_field_marshal = {
 	name = "Enver Pasha"
-	picture = "Portrait_WRF_Enver_Pasha.dds"
+	picture = "Portrait_WRF_Enver_Pasha.tga"
 	traits = { defensive_doctrine }
 	skill = 5
-	attack_skill = 6
+	attack_skill = 5
 	defense_skill = 5
-	planning_skill = 7
-	logistics_skill = 4
+	planning_skill = 5
+	logistics_skill = 5
 }
 
 create_corps_commander = {
 	name = "Samet"
-	picture = "Portrait_WRF_Samet.dds"
+	picture = "Portrait_WRF_Samet_Enverist.tga"
 	traits = { defensive_doctrine }
 	skill = 3
-	attack_skill = 5
-	defense_skill = 6
-	planning_skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 5
 	logistics_skill = 4
 }
 
-create_corps_commander = {
-	name = "JFC Fuller"
-	picture = "Portrait_WRF_Fuller.dds"
-	traits = { defensive_doctrine }
-	skill = 3
-	attack_skill = 5
-	defense_skill = 6
-	planning_skill = 3
-	logistics_skill = 4
-}
 add_state_core = 49
 add_state_core = 347
 add_state_core = 839
