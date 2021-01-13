@@ -117,7 +117,7 @@ focus_tree = {
 	focus = {
 		id = ANT_killigil
 		icon = GFX_goal_ANT_Cowboy
-		x = 26
+		x = 27
 		y = 5
 		cost = 2
 		available_if_capitulated = yes
@@ -133,10 +133,118 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ANT_hikmet
+		id = ANT_killigil_authority
+		icon = GFX_goal_ANT_Cowboy
+		x = 27
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_taking_a_side }
+		prerequisite = { has_country_flag = cuck_killigil }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = cuck_killigil_tt
+		add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ANT_killigil_enver_connections
+		icon = GFX_goal_ANT_Cowboy
+		x = 27
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_taking_a_side }
+		prerequisite = { has_country_flag = cuck_killigil }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = cuck_killigil_tt
+		add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ANT_killigil_act_13
+		icon = GFX_goal_ANT_Cowboy
+		x = 27
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_taking_a_side }
+		prerequisite = { has_country_flag = cuck_killigil }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = cuck_killigil_tt
+		add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ANT_communist
 		icon = GFX_goal_WRF_Yahya
-		x = 24
+		x = 25
 		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_taking_a_side }
+		prerequisite = { has_country_flag = cuck_hikmet }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = cuck_hikmet_tt
+		add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ANT_communist_authority
+		icon = GFX_goal_WRF_Yahya
+		x = 25
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_taking_a_side }
+		prerequisite = { has_country_flag = cuck_hikmet }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = cuck_hikmet_tt
+		add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ANT_communist_party_struggle
+		icon = GFX_goal_WRF_Yahya
+		x = 25
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_taking_a_side }
+		prerequisite = { has_country_flag = cuck_hikmet }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = cuck_hikmet_tt
+		add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ANT_communist_act_32
+		icon = GFX_goal_WRF_Yahya
+		x = 25
+		y = 8
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_taking_a_side }
@@ -153,8 +261,62 @@ focus_tree = {
 	focus = {
 		id = ANT_orbay
 		icon = GFX_goal_WRF_Yahya
-		x = 22
+		x = 23
 		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_taking_a_side }
+		prerequisite = { has_country_flag = cuck_orbay }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = cuck_orbay_tt
+		add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ANT_orbay_authority
+		icon = GFX_goal_WRF_Yahya
+		x = 23
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_taking_a_side }
+		prerequisite = { has_country_flag = cuck_orbay }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = cuck_orbay_tt
+		add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ANT_orbay_bases
+		icon = GFX_goal_WRF_Yahya
+		x = 23
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_taking_a_side }
+		prerequisite = { has_country_flag = cuck_orbay }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = cuck_orbay_tt
+		add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ANT_orbay_act_43
+		icon = GFX_goal_WRF_Yahya
+		x = 23
+		y = 8
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_taking_a_side }
@@ -171,7 +333,7 @@ focus_tree = {
 	focus = {
 		id = ANT_mercenaries
 		icon = GFX_goal_WRF_Yahya
-		x = 28
+		x = 21
 		y = 5
 		cost = 2
 		available_if_capitulated = yes
@@ -187,19 +349,55 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ANT_the_cult
+		id = ANT_mercenaries_authority
 		icon = GFX_goal_WRF_Yahya
-		x = 20
-		y = 5
+		x = 21
+		y = 6
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_taking_a_side }
-		prerequisite = { has_country_flag = cuck_cult}
+		prerequisite = { has_country_flag = cuck_mercenaries }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = cuck_cult_tt
+		custom_effect_tooltip = cuck_mercenaries_tt
+		add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ANT_mercenaries_bases
+		icon = GFX_goal_WRF_Yahya
+		x = 21
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_taking_a_side }
+		prerequisite = { has_country_flag = cuck_mercenaries }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = cuck_mercenaries_tt
+		add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ANT_mercenaries_act_56
+		icon = GFX_goal_WRF_Yahya
+		x = 21
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_taking_a_side }
+		prerequisite = { has_country_flag = cuck_mercenaries }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = cuck_mercenaries_tt
 		add_political_power = 100
 		}
 	}
@@ -245,10 +443,7 @@ focus_tree = {
 		add_to_variable = { ANT.army_influence = 5 } 
         subtract_from_variable = { ANT.kemalist_influence = 5 } 	
 		}
-		swap_ideas = {
-    	remove_idea = ANT_Anarchy_presence
-    	add_idea = ANT_Anarchy_improve_sec
-		}
+		ANT_anarchy_reducement = yes
 		}
 	}
 
@@ -272,10 +467,7 @@ focus_tree = {
 		add_to_variable = { ANT.army_influence = 5 } 
 		subtract_from_variable = { ANT.nazim_influence = 5 } 
 		}
-		swap_ideas = {
-    	remove_idea = ANT_Failed_State
-    	add_idea = ANT_Failed_State_ban_meeting
-		}
+		ANT_failed_reducement = yes
 		}
 	}
 
@@ -300,10 +492,7 @@ focus_tree = {
 		add_to_variable = { ANT.army_influence = 5 } 
 		subtract_from_variable = { ANT.kemalist_influence = 5 } 
 		}
-		swap_ideas = {
-    	remove_idea = ANT_Anarchy_operation_camel
-    	add_idea = ANT_Anarchy_expand_army
-		}
+		ANT_anarchy_reducement = yes
 		}
 	}
 
@@ -327,10 +516,7 @@ focus_tree = {
 		add_to_variable = { ANT.army_influence = 5 } 
 		subtract_from_variable = { ANT.kemalist_influence = 5 } 
 		}
-		swap_ideas = {
-    	remove_idea = ANT_Anarchy_expand_army
-    	add_idea = ANT_Anarchy_end_milita
-		}
+		ANT_anarchy_reducement = yes
 		}
 	}
 
@@ -354,10 +540,7 @@ focus_tree = {
 		add_to_variable = { ANT.army_influence = 5 } 
 		subtract_from_variable = { ANT.nazim_influence = 5 } 
 		}
-		swap_ideas = {
-    	remove_idea = ANT_Failed_State_ban_meeting
-    	add_idea = ANT_Failed_State_forming_gestapo
-		}
+		ANT_failed_reducement = yes
 		}
 	}
 
@@ -381,10 +564,7 @@ focus_tree = {
 		add_to_variable = { ANT.army_influence = 5 } 
 		subtract_from_variable = { ANT.enver_influence = 5 } 
 		}
-		swap_ideas = {
-    	remove_idea = ANT_Anarchy_improve_sec
-    	add_idea = ANT_Anarchy_death_squad
-		}
+		ANT_anarchy_reducement = yes
 		}
 	}
 
@@ -409,10 +589,7 @@ focus_tree = {
 		add_to_variable = { ANT.army_influence = 5 } 
 		subtract_from_variable = { ANT.enver_influence = 5 } 
 		}
-		swap_ideas = {
-    	remove_idea = ANT_Anarchy_death_squad
-    	add_idea = ANT_Anarchy_operation_camel
-		}
+		ANT_anarchy_reducement = yes
 		}
 	}
 
@@ -437,10 +614,7 @@ focus_tree = {
 		add_to_variable = { ANT.army_influence = 5 } 
 		subtract_from_variable = { ANT.kemalist_influence = 5 } 
 		}
-		swap_ideas = {
-    	remove_idea = ANT_Anarchy_operation_camel
-    	add_idea = ANT_Anarchy_exodus
-		}
+		ANT_anarchy_reducement = yes
 		}
 	}
 
@@ -466,14 +640,8 @@ focus_tree = {
 		add_to_variable = { ANT.army_influence = 5 } 
 		subtract_from_variable = { ANT.nazim_influence = 5 } 
 		}
-		swap_ideas = {
-    	remove_idea = ANT_Anarchy_exodus
-    	add_idea = ANT_Anarchy_west
-		}
-		swap_ideas = {
-    	remove_idea = ANT_Failed_State_forming_gestapo
-    	add_idea = ANT_Failed_State_west
-		}
+		ANT_failed_reducement = yes
+		ANT_anarchy_reducement = yes
 		}
 	}
 

@@ -137,11 +137,11 @@ country_event = { #gamers fuck up
         clr_country_flag = influence_active
         }
         swap_ideas = {
-    	remove_idea = ANT_Failed_State_west
+    	remove_idea = ANT_Failed_State_3
     	add_idea = ANT_Failed_State_odds_event
 		}
         swap_ideas = {
-    	remove_idea = ANT_Anarchy_west
+    	remove_idea = ANT_Anarchy_8
     	add_idea = ANT_Anarchy_against_odds_event
 		}
     }

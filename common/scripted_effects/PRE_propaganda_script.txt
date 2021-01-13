@@ -49,3 +49,116 @@ PRE_propaganda_increase = {
 			}
 
 }
+ANT_failed_reducement = {
+            if = {
+                limit = {
+				has_idea = ANT_Failed_State
+                }
+				hidden_effect = {
+				remove_idea = ANT_Failed_State
+				add_ideas = ANT_Failed_State_1	
+				}	
+			}
+			else_if = { 
+			limit = {
+				has_idea = ANT_Failed_State_1
+                }
+				hidden_effect = {
+                add_ideas = ANT_Failed_State_2
+				remove_ideas = ANT_Failed_State_1
+				}
+			}
+			else_if = { 
+			limit = {
+				has_idea = ANT_Failed_State_2
+                }
+				hidden_effect = {
+                add_ideas = ANT_Failed_State_3
+				remove_ideas = ANT_Failed_State_2
+				}
+			}
+}
+
+ANT_anarchy_reducement = {
+            if = {
+                limit = {
+				has_idea = ANT_Anarchy
+                }
+				hidden_effect = {
+				remove_idea = ANT_Anarchy
+				add_ideas = ANT_Anarchy_1	
+				}	
+				}
+			else_if = { 
+			limit = {
+				has_idea = ANT_Anarchy_1
+                }
+				hidden_effect = {
+                add_ideas = ANT_Anarchy_2
+				remove_ideas = ANT_Anarchy_1
+				}
+			}
+			else_if = { 
+			limit = {
+				has_idea = ANT_Anarchy_2
+                }
+				hidden_effect = {
+                add_ideas = ANT_Anarchy_3
+				remove_ideas = ANT_Anarchy_2
+				}
+			}
+			else_if = { 
+			limit = {
+				has_idea = ANT_Anarchy_3
+                }
+				hidden_effect = {
+                add_ideas = ANT_Anarchy_4
+				remove_ideas = ANT_Anarchy_3
+				}
+			}
+			else_if = { 
+			limit = {
+				has_idea = ANT_Anarchy_4
+                }
+				hidden_effect = {
+                add_ideas = ANT_Anarchy_5
+				remove_ideas = ANT_Anarchy_4
+				}
+			}
+			else_if = { 
+			limit = {
+				has_idea = ANT_Anarchy_4
+                }
+				hidden_effect = {
+                add_ideas = ANT_Anarchy_5
+				remove_ideas = ANT_Anarchy_4
+				}
+			}
+			else_if = { 
+			limit = {
+				has_idea = ANT_Anarchy_5
+                }
+				hidden_effect = {
+                add_ideas = ANT_Anarchy_6
+				remove_ideas = ANT_Anarchy_5
+				}
+			}
+			else_if = { 
+			limit = {
+				has_idea = ANT_Anarchy_6
+                }
+				hidden_effect = {
+                add_ideas = ANT_Anarchy_7
+				remove_ideas = ANT_Anarchy_6
+				}
+			}
+			else_if = { 
+			limit = {
+				has_idea = ANT_Anarchy_7
+                }
+				hidden_effect = {
+                add_ideas = ANT_Anarchy_8
+				remove_ideas = ANT_Anarchy_7
+				}
+			}
+}

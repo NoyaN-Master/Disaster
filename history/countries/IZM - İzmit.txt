@@ -18,8 +18,8 @@ set_popularities = {
 	conservative = 0
 	liberal = 0
 	social_democrat = 0
-	libertarian_socialist = 100
-	authoritarian_socialist = 0
+	libertarian_socialist = 50
+	authoritarian_socialist = 50
 	national_bolshevik = 0
 	authoritarian_democrat = 0
 	autocratic = 0
@@ -37,5 +37,16 @@ create_country_leader = {
 	ideology = nazimism
 	traits = {
 	humanist_poet
+	}
+}
+
+create_country_leader = {
+	name = "Ethem Nejat"
+	#desc = "IZM_Nazim_Hikmet_desc"
+	picture = "IZM_Ethem_Nejat.tga"
+	expire = "2020.1.1"
+	ideology = nazimism
+	traits = {
+	turkish_marx
 	}
 }

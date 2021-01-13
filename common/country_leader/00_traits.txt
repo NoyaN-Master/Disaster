@@ -50,6 +50,13 @@ leader_traits = {
 		stability_weekly = 0.05
 		war_support_factor = -0.20	
 	}
+
+	turkish_marx = {
+		random = no
+		stability_factor = 0.20
+		war_support_factor = 0.20
+		production_speed_buildings_factor = 0.1	
+	}
 	
 	man_of_steel = {
 		random = no

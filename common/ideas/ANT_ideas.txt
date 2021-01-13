@@ -14,7 +14,7 @@ ANT_Failed_State = {
 			consumer_goods_factor = 0.50
 			}
 		}
-ANT_Failed_State_ban_meeting = {
+ANT_Failed_State_1= {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Failed_State" }
 			picture = ANT_Failed_State
 			modifier = {
@@ -25,7 +25,7 @@ ANT_Failed_State_ban_meeting = {
 			consumer_goods_factor = 0.45
 			}
 		}
-ANT_Failed_State_forming_gestapo = {
+ANT_Failed_State_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Failed_State" }
 			picture = ANT_Failed_State
 			modifier = {
@@ -36,7 +36,7 @@ ANT_Failed_State_forming_gestapo = {
 			consumer_goods_factor = 0.30
 			}
 		}
-ANT_Failed_State_west = {
+ANT_Failed_State_3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Failed_State" }
 			picture = ANT_Failed_State
 			modifier = {
@@ -68,7 +68,7 @@ ANT_Anarchy = {
 			weekly_manpower = -500	
 			}
 		}
-ANT_Anarchy_presence = {
+ANT_Anarchy_1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
 			picture = ANT_Warlords_Emerging
 			modifier = {
@@ -80,7 +80,7 @@ ANT_Anarchy_presence = {
 			weekly_manpower = -489	
 			}
 		}
-ANT_Anarchy_improve_sec = {
+ANT_Anarchy_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
 			picture = ANT_Warlords_Emerging
 			modifier = {
@@ -92,7 +92,7 @@ ANT_Anarchy_improve_sec = {
 			weekly_manpower = -440	
 			}
 		}
-ANT_Anarchy_death_squad = {
+ANT_Anarchy_3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
 			picture = ANT_Warlords_Emerging
 			modifier = {
@@ -104,7 +104,7 @@ ANT_Anarchy_death_squad = {
 			weekly_manpower = -440	
 			}
 		}
-ANT_Anarchy_operation_camel = {
+ANT_Anarchy_4 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
 			picture = ANT_Warlords_Emerging
 			modifier = {
@@ -116,7 +116,7 @@ ANT_Anarchy_operation_camel = {
 			weekly_manpower = -500	
 			}
 		}
-ANT_Anarchy_expand_army = {
+ANT_Anarchy_5 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
 			picture = ANT_Warlords_Emerging
 			modifier = {
@@ -129,7 +129,7 @@ ANT_Anarchy_expand_army = {
 			conscription_factor = 0.4
 			}
 		}
-ANT_Anarchy_end_milita = {
+ANT_Anarchy_6 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
 			picture = ANT_Warlords_Emerging
 			modifier = {
@@ -142,7 +142,7 @@ ANT_Anarchy_end_milita = {
 			conscription_factor = 0.3
 			}
 		}
-ANT_Anarchy_exodus = {
+ANT_Anarchy_7 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
 			picture = ANT_Warlords_Emerging
 			modifier = {
@@ -154,7 +154,7 @@ ANT_Anarchy_exodus = {
 			conscription_factor = 0.2
 			}
 		}
-ANT_Anarchy_west = {
+ANT_Anarchy_8 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
 			picture = ANT_Warlords_Emerging
 			modifier = {
