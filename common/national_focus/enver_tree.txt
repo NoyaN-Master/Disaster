@@ -198,7 +198,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		add_stability = 0.10
-		country_event  { id = enver.10 days = 2}
+		country_event =  { id = enver.10 days = 2}
 		}
 	}
 
@@ -291,7 +291,7 @@ focus_tree = {
     	instant_build = yes
 		}
 		}
-	}
+		}
 	}
 
 	focus = {
@@ -695,5 +695,4 @@ focus_tree = {
 		add_stability = 0.05
 		}
 	}
-
-}        
+	}        

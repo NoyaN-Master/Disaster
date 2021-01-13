@@ -23,17 +23,17 @@ set_war_support = -0.5
 country_event = { id = ant.1 days = 1 }	
 
 set_popularities = {
-	conservative = 5
+	conservative = 0
 	liberal = 0
 	social_democrat = 0
-	libertarian_socialist = 20
-	authoritarian_socialist = 0
+	libertarian_socialist = 15
+	authoritarian_socialist = 15
 	national_bolshevik = 0
 	authoritarian_democrat = 20
-	autocratic = 15
+	autocratic = 20
 	ultranationalist = 20
 	revolutionary_nationalist = 10
-	esoteric_traditionalist = 10
+	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
 
@@ -58,19 +58,6 @@ create_country_leader = {
 		#
 	}
 }
-
-
-create_country_leader = {
-	name = "The Babylon Association"
-	#desc = "LUX_Marie_Adelaide_desc"
-	#picture = "LUX_Marie_Adelaide.tga"
-	expire = "2020.1.1"
-	ideology = babylonism
-	traits = {
-		#
-	}
-}
-
 
 create_country_leader = {
 	name = "Jack Churchill"

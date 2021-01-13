@@ -52,7 +52,9 @@ PRE_propaganda_increase = {
 ANT_failed_reducement = {
             if = {
                 limit = {
-				has_idea = ANT_Failed_State
+				NOT = { has_idea = ANT_Failed_State_1 }
+				NOT = { has_idea = ANT_Failed_State_2 }
+				NOT = { has_idea = ANT_Failed_State_3 }
                 }
 				hidden_effect = {
 				remove_idea = ANT_Failed_State
@@ -82,7 +84,14 @@ ANT_failed_reducement = {
 ANT_anarchy_reducement = {
             if = {
                 limit = {
-				has_idea = ANT_Anarchy
+				NOT = { has_idea = ANT_Anarchy_1 }
+				NOT = { has_idea = ANT_Anarchy_2 }
+				NOT = { has_idea = ANT_Anarchy_3 }
+				NOT = { has_idea = ANT_Anarchy_4 }
+				NOT = { has_idea = ANT_Anarchy_5 }
+				NOT = { has_idea = ANT_Anarchy_6 }
+				NOT = { has_idea = ANT_Anarchy_7 }
+				NOT = { has_idea = ANT_Anarchy_8 }
                 }
 				hidden_effect = {
 				remove_idea = ANT_Anarchy

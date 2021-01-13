@@ -10,6 +10,7 @@ country_event = {
 
     option = {
         name = ant.1.a
+        ai_chance = { factor = 100}
         custom_tooltip = ant.1.tooltip
         hidden_effect = {
             set_variable = {
@@ -47,6 +48,7 @@ country_event = { #the outrage
 
     option = {
         name = ant.2.a
+        ai_chance = { factor = 100}
         custom_effect_tooltip = ant.2.tooltip
         hidden_effect = {
         add_to_variable = { ANT.enver_influence = 5 } 
@@ -67,6 +69,7 @@ country_event = { #the army moves
 
     option = { #the army does gaming
         name = ant.3.a
+        ai_chance = { factor = 10}
         custom_effect_tooltip = army_moves_tooltip
 		complete_national_focus = ANT_fight_anarchy
         hidden_effect = {
@@ -82,7 +85,8 @@ country_event = { #the army moves
     }
 
     option = {
-        name = ant.3.b 
+        name = ant.3.b
+        ai_chance = { factor = 100} 
         custom_effect_tooltip = cuck.tooltip
 		complete_national_focus = ANT_political_warfare
         hidden_effect = {
@@ -104,7 +108,8 @@ country_event = { #gamers take over
     is_triggered_only = yes
 
     option = { #time to get rich
-        name = ant.4.a 
+        name = ant.4.a
+        ai_chance = { factor = 100} 
         custom_effect_tooltip = ant.4.tooltip
         set_politics = {
 	    ruling_party = revolutionary_nationalist
@@ -131,7 +136,8 @@ country_event = { #gamers fuck up
     is_triggered_only = yes
 
     option = { #we fuck up
-        name = ant.5.a 
+        name = ant.5.a
+        ai_chance = { factor = 100} 
         custom_effect_tooltip = ant.5.tooltip
         hidden_effect = {
         clr_country_flag = influence_active
@@ -155,7 +161,8 @@ country_event = { #collapse-left side
     picture = GFX_evt_Picture
     is_triggered_only = yes
 
-    option = { 
+    option = {
+        ai_chance = { factor = 100} 
         name = ant.6.a 
         release = ESO
         release = OTH
@@ -167,6 +174,295 @@ country_event = { #collapse-left side
         news_event = { id = ant.7 }
     }
 }
+
+country_event = { #collapse-OTH
+    id = ant.8
+    title = ant.8.t
+    desc = ant.8.d
+    fire_only_once = yes
+    picture = GFX_evt_Picture
+    is_triggered_only = yes
+
+    option = {
+        ai_chance = { factor = 100} 
+        name = ant.8.a 
+        release = OTH
+        release = KLG
+        release = ANK
+        release = IZM
+        OTH = {
+        transfer_state = 356
+        }
+        356 = {
+        add_core_of = OTH    
+        }
+        OTH = { change_tag_from = ANT }
+        news_event = { id = ant.7 }
+    }
+}
+
+country_event = { #collapse-IZM
+    id = ant.9
+    title = ant.9.t
+    desc = ant.9.d
+    fire_only_once = yes
+    picture = GFX_evt_Picture
+    is_triggered_only = yes
+
+    option = {
+        ai_chance = { factor = 100} 
+        name = ant.9.a 
+        release = OTH
+        release = KLG
+        release = ANK
+        release = IZM
+        IZM = { change_tag_from = ANT }
+        news_event = { id = ant.7 }
+    }
+}
+
+country_event = { #collapse-ANK
+    id = ant.10
+    title = ant.10.t
+    desc = ant.10.d
+    fire_only_once = yes
+    picture = GFX_evt_Picture
+    is_triggered_only = yes
+
+    option = {
+        ai_chance = { factor = 100} 
+        name = ant.10.a 
+        release = OTH
+        release = KLG
+        release = ANK
+        release = IZM
+        ANK = { change_tag_from = ANT }
+        news_event = { id = ant.7 }
+    }
+}
+
+country_event = { #collapse-klg
+    id = ant.11
+    title = ant.11.t
+    desc = ant.11.d
+    fire_only_once = yes
+    picture = GFX_evt_Picture
+    is_triggered_only = yes
+
+    option = {
+        ai_chance = { factor = 100} 
+        name = ant.11.a 
+        release = OTH
+        release = KLG
+        release = ANK
+        release = IZM
+        KLG = { change_tag_from = ANT }
+        news_event = { id = ant.7 }
+    }
+}
+
+country_event = { #investigation-1
+    id = ant.12
+    title = ant.12.t
+    desc = ant.12.d
+    fire_only_once = yes
+    picture = GFX_evt_Picture
+    is_triggered_only = yes
+
+    option = {
+        ai_chance = { factor = 100} 
+        name = ant.12.a
+        add_stability = -0.10
+        country_event = { id = ant.13 days = 2 } 
+    }
+}
+
+country_event = { #investigation-2
+    id = ant.13
+    title = ant.13.t
+    desc = ant.13.d
+    fire_only_once = yes
+    picture = GFX_evt_Picture
+    is_triggered_only = yes
+
+    option = {
+        ai_chance = { factor = 100} 
+        name = ant.13.a
+        add_stability = 0.05
+        manpower = 10000
+        country_event = { id = ant.14 days = 3 } 
+    }
+}
+
+country_event = { #investigation-3
+    id = ant.14
+    title = ant.14.t
+    desc = ant.14.d
+    fire_only_once = yes
+    picture = GFX_evt_Picture
+    is_triggered_only = yes
+
+    option = {
+        ai_chance = { factor = 100} 
+        name = ant.14.a
+        custom_effect_tooltip = bye_fuller_tt
+        add_stability = 0.10
+        manpower = 10000
+        hidden_effect = {
+        country_event = { id = ant.15 days = 10 } 
+        } 
+    }
+}
+
+country_event = { #neo-fullerists form
+    id = ant.15
+    title = ant.15.t
+    desc = ant.15.d
+    fire_only_once = yes
+    picture = GFX_evt_Picture
+    is_triggered_only = yes
+
+    option = {
+        ai_chance = { factor = 100} 
+        name = ant.15.a
+        custom_effect_tooltip = bye_fuller_tt
+        add_stability = -0.10
+    }
+}
+
+country_event = { #act announced
+    id = ant.16
+    title = ant.16.t
+    desc = ant.16.d
+    fire_only_once = yes
+    picture = GFX_evt_Picture
+    is_triggered_only = yes
+
+    option = {
+        ai_chance = { factor = 100} 
+        name = ant.16.a
+        add_stability = -0.10
+        hidden_effect = {   
+        country_event = { id = ant.17 days = 2 } 
+        }
+    }
+}
+
+country_event = { #cadets protest
+    id = ant.17
+    title = ant.17.t
+    desc = ant.17.d
+    fire_only_once = yes
+    picture = GFX_evt_Picture
+    is_triggered_only = yes
+
+    option = {
+        ai_chance = { factor = 100} 
+        name = ant.17.a
+        add_stability = -0.10
+        hidden_effect = {   
+        country_event = { id = ant.18 days = 2 } 
+        }
+    }
+}
+
+country_event = { #solidarist attack
+    id = ant.18
+    title = ant.18.t
+    desc = ant.18.d
+    fire_only_once = yes
+    picture = GFX_evt_Picture
+    is_triggered_only = yes
+
+    option = {
+        ai_chance = { factor = 100} 
+        name = ant.18.a
+        add_stability = -0.10
+        hidden_effect = {   
+        country_event = { id = ant.19 days = 1 } 
+        }
+    }
+}
+
+country_event = { #other groups reel in
+    id = ant.19
+    title = ant.19.t
+    desc = ant.19.d
+    fire_only_once = yes
+    picture = GFX_evt_Picture
+    is_triggered_only = yes
+
+    option = { 
+        ai_chance = { factor = 100}
+        name = ant.19.a
+        add_stability = -0.10
+        hidden_effect = {   
+        country_event = { id = ant.20 days = 2 } 
+        }
+    }
+}
+
+country_event = { #The Capitol Land Disturbance 
+    id = ant.20
+    title = ant.20.t
+    desc = ant.20.d
+    fire_only_once = yes
+    picture = GFX_evt_Picture
+    is_triggered_only = yes
+
+    option = {
+        ai_chance = { factor = 100} 
+        name = ant.20.a
+        add_stability = -0.50
+        manpower = -1900
+        hidden_effect = {   
+        country_event = { id = ant.8 days = 1 } 
+        }
+    }
+}
+
+country_event = { #The Capitol Land Disturbance 
+    id = ant.21
+    title = ant.21.t
+    desc = ant.21.d
+    fire_only_once = yes
+    picture = GFX_evt_Picture
+    is_triggered_only = yes
+
+    option = {
+        ai_chance = { factor = 40 } 
+        name = ant.21.a
+        hidden_effect = {   
+        set_country_flag = cuck_hikmet 
+        }
+    }
+
+    option = {
+        ai_chance = { factor = 40} 
+        name = ant.b.a
+        hidden_effect = {   
+        set_country_flag = cuck_mercenaries 
+        }
+    }
+
+    option = {
+        ai_chance = { factor = 40} 
+        name = ant.c.a
+        hidden_effect = {   
+        set_country_flag = cuck_killigil 
+        }
+    }
+
+    option = {
+        ai_chance = { factor = 40} 
+        name = ant.d.a
+        hidden_effect = {   
+        set_country_flag = cuck_orbay
+        }
+    }
+}
+
+
 
 news_event = {
     id = ant.7

@@ -46,10 +46,6 @@ focus_tree = {
 		hidden_effect = {
 		country_event = { id = ant.2 days = 3}	
 		}
-		swap_ideas = {
-    	remove_idea = ANT_Anarchy
-    	add_idea = ANT_Anarchy_presence
-		}
 		}
 	}
 	
@@ -78,7 +74,7 @@ focus_tree = {
 		icon = GFX_goal_WRF_Yahya
 		x = 24
 		y = 3
-		cost = 4
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_increase_presence }
 		mutually_exclusive = { focus = ANT_fight_anarchy }
@@ -90,10 +86,7 @@ focus_tree = {
 		completion_reward = {
 		custom_effect_tooltip = ANT_dreams_Broken
 		add_political_power = 100
-
-		hidden_effect = {
-			country_event = { id = ant.3 }
-		}
+		add_stability = 0.5
 		}
 	}
 
@@ -102,7 +95,7 @@ focus_tree = {
 		icon = GFX_goal_WRF_Yahya
 		x = 24
 		y = 4
-		cost = 4
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_political_warfare }
 		ai_will_do = {
@@ -111,6 +104,7 @@ focus_tree = {
 		completion_reward = {
 		custom_effect_tooltip = ANT_dreams_Broken
 		add_political_power = 100
+		country_event = { id = ant.21 days = 3 }
 		}
 	}
 
@@ -122,7 +116,7 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_taking_a_side }
-		prerequisite = { has_country_flag = cuck_killigil }
+		available = { has_country_flag = cuck_killigil }
 		ai_will_do = {
 			factor = 1
 		}
@@ -140,7 +134,7 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_taking_a_side }
-		prerequisite = { has_country_flag = cuck_killigil }
+		available = { has_country_flag = cuck_killigil }
 		ai_will_do = {
 			factor = 1
 		}
@@ -158,7 +152,7 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_taking_a_side }
-		prerequisite = { has_country_flag = cuck_killigil }
+		available = { has_country_flag = cuck_killigil }
 		ai_will_do = {
 			factor = 1
 		}
@@ -176,7 +170,7 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_taking_a_side }
-		prerequisite = { has_country_flag = cuck_killigil }
+		available = { has_country_flag = cuck_killigil }
 		ai_will_do = {
 			factor = 1
 		}
@@ -194,7 +188,7 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_taking_a_side }
-		prerequisite = { has_country_flag = cuck_hikmet }
+		available = { has_country_flag = cuck_hikmet }
 		ai_will_do = {
 			factor = 1
 		}
@@ -212,7 +206,7 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_taking_a_side }
-		prerequisite = { has_country_flag = cuck_hikmet }
+		available = { has_country_flag = cuck_hikmet }
 		ai_will_do = {
 			factor = 1
 		}
@@ -230,7 +224,7 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_taking_a_side }
-		prerequisite = { has_country_flag = cuck_hikmet }
+		available = { has_country_flag = cuck_hikmet }
 		ai_will_do = {
 			factor = 1
 		}
@@ -248,7 +242,7 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_taking_a_side }
-		prerequisite = { has_country_flag = cuck_hikmet }
+		available = { has_country_flag = cuck_hikmet }
 		ai_will_do = {
 			factor = 1
 		}
@@ -266,7 +260,7 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_taking_a_side }
-		prerequisite = { has_country_flag = cuck_orbay }
+		available = { has_country_flag = cuck_orbay }
 		ai_will_do = {
 			factor = 1
 		}
@@ -284,7 +278,7 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_taking_a_side }
-		prerequisite = { has_country_flag = cuck_orbay }
+		available = { has_country_flag = cuck_orbay }
 		ai_will_do = {
 			factor = 1
 		}
@@ -302,7 +296,7 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_taking_a_side }
-		prerequisite = { has_country_flag = cuck_orbay }
+		available = { has_country_flag = cuck_orbay }
 		ai_will_do = {
 			factor = 1
 		}
@@ -320,7 +314,7 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_taking_a_side }
-		prerequisite = { has_country_flag = cuck_orbay }
+		available = { has_country_flag = cuck_orbay }
 		ai_will_do = {
 			factor = 1
 		}
@@ -338,13 +332,20 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_taking_a_side }
-		prerequisite = { has_country_flag = cuck_mercenaries }
+		available = { has_country_flag = cuck_mercenaries }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 		custom_effect_tooltip = cuck_mercenaries_tt
 		add_political_power = 100
+		add_stability = 0.10
+		hidden_effect = {
+		add_to_variable = { ANT.merc_influence = 15 } 
+		subtract_from_variable = { ANT.kemalist_influence = 5 }
+		subtract_from_variable = { ANT.enver_influence = 5 }
+		subtract_from_variable = { ANT.nazim_influence = 5 } 
+		}
 		}
 	}
 
@@ -356,13 +357,22 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_taking_a_side }
-		prerequisite = { has_country_flag = cuck_mercenaries }
+		available = { has_country_flag = cuck_mercenaries }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 		custom_effect_tooltip = cuck_mercenaries_tt
 		add_political_power = 100
+		add_stability = 0.20
+		manpower = -10000
+		country_event = { id = ant.12 days = 3 }
+		hidden_effect = {
+		add_to_variable = { ANT.merc_influence = 20 } 
+		subtract_from_variable = { ANT.kemalist_influence = 5 }
+		subtract_from_variable = { ANT.enver_influence = 5 }
+		subtract_from_variable = { ANT.army_influence = 10 } 
+		}
 		}
 	}
 
@@ -374,13 +384,35 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_taking_a_side }
-		prerequisite = { has_country_flag = cuck_mercenaries }
+		available = { has_country_flag = cuck_mercenaries }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 		custom_effect_tooltip = cuck_mercenaries_tt
-		add_political_power = 100
+		356 = {
+		add_building_construction = {
+    	type = industrial_complex      
+    	level = 3
+    	instant_build = yes
+		}
+		add_building_construction = {
+    	type = arms_factory             
+    	level = 2
+    	instant_build = yes
+		}
+		add_building_construction = {
+    	type = infrastructure             
+    	level = 3
+    	instant_build = yes
+		}	
+		}
+		hidden_effect = {
+		add_to_variable = { ANT.merc_influence = 20 } 
+		subtract_from_variable = { ANT.kemalist_influence = 10 }
+		subtract_from_variable = { ANT.enver_influence = 5 }
+		subtract_from_variable = { ANT.nazim_influence = 5 } 
+		}
 		}
 	}
 
@@ -389,16 +421,26 @@ focus_tree = {
 		icon = GFX_goal_WRF_Yahya
 		x = 21
 		y = 8
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_taking_a_side }
-		prerequisite = { has_country_flag = cuck_mercenaries }
+		available = { has_country_flag = cuck_mercenaries }
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-		custom_effect_tooltip = cuck_mercenaries_tt
+		select_effect = {
+		country_event = { id = ant.16 days = 2}	
+		}
+		completion_reward = {	
+		custom_effect_tooltip = act_56_tt
+		custom_effect_tooltip = angry_army_tt
 		add_political_power = 100
+		hidden_effect = {
+		add_to_variable = { ANT.merc_influence = 25 } 
+		subtract_from_variable = { ANT.army_influence = 10 }
+		subtract_from_variable = { ANT.enver_influence = 10 }
+		subtract_from_variable = { ANT.nazim_influence = 10 } 
+		}
 		}
 	}
 
