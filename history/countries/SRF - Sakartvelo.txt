@@ -8,7 +8,7 @@ set_technology = {
 set_convoys = 0
 
 set_politics = {
-	ruling_party = national_bolshevik
+	ruling_party = unisocialist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -20,7 +20,7 @@ set_popularities = {
 	social_democrat = 5
 	libertarian_socialist = 15
 	authoritarian_socialist = 30
-	national_bolshevik = 50
+	unisocialist = 50
 	authoritarian_democrat = 0
 	autocratic = 0
 	ultranationalist = 0
@@ -34,7 +34,7 @@ create_country_leader = {
 	desc = "SRF_Stalin_desc"
 	picture = "SRF_Stalin.tga"
 	expire = "2020.1.1"
-	ideology = national_bolshevik_subideology
+	ideology = unisocialist_subideology
 	traits = {
 		#
 	}

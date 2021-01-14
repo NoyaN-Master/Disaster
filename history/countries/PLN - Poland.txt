@@ -42,7 +42,7 @@ set_popularities = {
 	social_democrat = 7
 	libertarian_socialist = 6
 	authoritarian_socialist = 3
-	national_bolshevik = 0
+	unisocialist = 0
 	authoritarian_democrat = 40
 	autocratic = 9
 	ultranationalist = 8
@@ -177,7 +177,7 @@ create_country_leader = {
 	#desc = "PLN_Boleslaw_Bierut_desc"
 	picture = "PLN_Boleslaw_Bierut.tga"
 	expire = "2020.1.1"
-	ideology = national_bolshevik_subideology
+	ideology = unisocialist_subideology
 	traits = {
 		#
 	}

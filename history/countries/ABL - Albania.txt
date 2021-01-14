@@ -20,7 +20,7 @@ set_popularities = {
 	social_democrat = 0
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
-	national_bolshevik = 0
+	unisocialist = 0
 	authoritarian_democrat = 30
 	autocratic = 50
 	ultranationalist = 15
@@ -36,6 +36,5 @@ create_country_leader = {
 	expire = "2020.1.1"
 	ideology = autocratic_subideology
 	traits = {
-		king_zog
 	}
 }

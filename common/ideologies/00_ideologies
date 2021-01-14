@@ -1,10 +1,14 @@
 ideologies = {
 	
-	national_bolshevik = {
+	unisocialist = {
 	
 		types = {
 			
+			unisocialist_subideology = {
+			}
+			
 			national_bolshevik_subideology = {
+			          can_be_randomly_selected = no
 			}
 		
 			strasserism = {
