@@ -19,8 +19,8 @@ set_popularities = {
 	liberal = 0
 	social_democrat = 0
 	libertarian_socialist = 50
-	authoritarian_socialist = 50
-	unisocialist = 0
+	authoritarian_socialist = 0
+	unisocialist = 50
 	authoritarian_democrat = 0
 	autocratic = 0
 	ultranationalist = 0
@@ -45,7 +45,7 @@ create_country_leader = {
 	#desc = "IZM_Nazim_Hikmet_desc"
 	picture = "IZM_Ethem_Nejat.tga"
 	expire = "2020.1.1"
-	ideology = nazimism
+	ideology = turkish_marxism
 	traits = {
 	turkish_marx
 	}
