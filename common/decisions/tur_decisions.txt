@@ -25,6 +25,9 @@ TUR_unification_category = {
         has_government = authoritarian_democrat
         }  
         complete_effect = {
+        set_cosmetic_tag = WRF_Ataturk_Cosmetic
+        add_stability = 0.40
+        custom_effect_tooltip = ANT_unif_focus_tt    
         }
      }
 	wrf_atsiz_unify_decision = {
@@ -55,6 +58,7 @@ TUR_unification_category = {
         }  
         complete_effect = {
         hidden_effect = {  
+
         }    
         }
      }
@@ -84,13 +88,15 @@ TUR_unification_category = {
         original_tag = WRF
         has_government = conservative
         }  
-        complete_effect = {   
+        complete_effect = {
+        set_cosmetic_tag = WRF_Democrat       
         }
      }
      CIB_unify_decision = {
 	    fire_only_once = yes
 		cost = 0
         available  = {
+        has_country_flag = enver_charge     
         owns_state = 49
         owns_state = 347
         owns_state = 839
@@ -111,10 +117,46 @@ TUR_unification_category = {
         }
         visible = {
         original_tag = CIB
+        has_country_flag = enver_charge
         }  
         complete_effect = {
+        set_cosmetic_tag = CIB_Enver
+        set_country_flag = unification_enver            
         }
      }
+
+     CIB_unify_samet_decision = {
+	    fire_only_once = yes
+		cost = 0
+        available  = {
+        has_country_flag = samet_won     
+        owns_state = 49
+        owns_state = 347
+        owns_state = 839
+        owns_state = 798
+        owns_state = 356
+        owns_state = 355
+        owns_state = 354
+        owns_state = 353
+        owns_state = 800
+        owns_state = 230
+        owns_state = 229
+        owns_state = 352
+        owns_state = 350
+        owns_state = 346
+        owns_state = 348
+        owns_state = 349
+        owns_state = 797
+        }
+        visible = {
+        original_tag = CIB
+        has_country_flag = samet_won
+        }  
+        complete_effect = {
+        set_cosmetic_tag = CIB_Samet
+        }
+     }
+
      CLP_unify_decision = {
 	    fire_only_once = yes
 		cost = 0

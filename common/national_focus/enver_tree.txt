@@ -11,7 +11,7 @@ focus_tree = {
 
     focus = {
 		id = CIB_war_for_soul_turk
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_war_soul
 		x = 7
 		y = 1
 		cost = 2
@@ -34,7 +34,7 @@ focus_tree = {
 
     focus = {
 		id = CIB_war_focus_erzurum
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_erzurum
 		x = 9
 		y = 2
 		cost = 2
@@ -60,7 +60,7 @@ focus_tree = {
 
 	focus = {
 		id = CIB_war_focus_van
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_van
 		x = 5
 		y = 2
 		cost = 2
@@ -85,7 +85,7 @@ focus_tree = {
 
 	focus = {
 		id = CIB_war_focus_kars
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_kars
 		x = 7
 		y = 2
 		cost = 2
@@ -110,7 +110,7 @@ focus_tree = {
 
 	focus = {
 		id = CIB_war_focus_sametplan
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_sametplan
 		x = 7
 		y = 3
 		cost = 2
@@ -136,7 +136,7 @@ focus_tree = {
 
 	focus = {
 		id = CIB_war_focus_paying_debts
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_azer_annex
 		x = 7
 		y = 4
 		cost = 2
@@ -161,7 +161,7 @@ focus_tree = {
 
 	focus = {
 		id = CIB_enveristan_proper
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_pasha_fiefdom
 		x = 7
 		y = 6
 		cost = 3
@@ -187,7 +187,7 @@ focus_tree = {
 
 	focus = {
 		id = CIB_fighting_bandits
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_kill_bandit
 		x = 5
 		y = 7
 		cost = 3
@@ -204,12 +204,12 @@ focus_tree = {
 
 	focus = {
 		id = CIB_talks_old_friend
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_georgia_logo
 		x = 5
 		y = 8
 		cost = 3
 		available_if_capitulated = yes
-		prerequisite = { focus = CIB_enveristan_proper}
+		prerequisite = { focus = CIB_talks_old_friend}
 		ai_will_do = {
 			factor = 1
 		}
@@ -224,7 +224,7 @@ focus_tree = {
 
 	focus = {
 		id = CIB_revising_military
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_army_Reform
 		x = 5
 		y = 9
 		cost = 3
@@ -235,13 +235,12 @@ focus_tree = {
 		}
 		completion_reward = {
 		army_experience = 50
-		
 		}
 	}
 
 	focus = {
 		id = CIB_rebuilding_east
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_rebuild_east
 		x = 7
 		y = 7
 		cost = 2
@@ -296,12 +295,12 @@ focus_tree = {
 
 	focus = {
 		id = CIB_they_will_go
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_genocide_gang
 		x = 7
 		y = 8
 		cost = 2
 		available_if_capitulated = yes
-		prerequisite = { focus = CIB_enveristan_proper}
+		prerequisite = { focus = CIB_rebuilding_east}
 		ai_will_do = {
 			factor = 1
 		}
@@ -313,12 +312,12 @@ focus_tree = {
 
 	focus = {
 		id = CIB_religious_shrines
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_shrines
 		x = 7
 		y = 9
 		cost = 2
 		available_if_capitulated = yes
-		prerequisite = { focus = CIB_enveristan_proper}
+		prerequisite = { focus = CIB_they_will_go}
 		ai_will_do = {
 			factor = 1
 		}
@@ -330,7 +329,7 @@ focus_tree = {
 
 	focus = {
 		id = CIB_deal_government_armenia
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_fuck_armenia
 		x = 9
 		y = 7
 		cost = 2
@@ -347,7 +346,7 @@ focus_tree = {
 
 	focus = {
 		id = CIB_turkish_lands
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_turkish_landowners
 		x = 9
 		y = 8
 		cost = 2
@@ -355,7 +354,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		prerequisite = { focus = CIB_enveristan_proper}
+		prerequisite = { focus = CIB_deal_government_armenia}
 		completion_reward = {
 		800 = {
 		add_building_construction = {
@@ -386,7 +385,7 @@ focus_tree = {
 
 	focus = {
 		id = CIB_stable_administration
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_strong_gov
 		x = 9
 		y = 9
 		cost = 2
@@ -394,7 +393,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		prerequisite = { focus = CIB_enveristan_proper}
+		prerequisite = { focus = CIB_turkish_lands}
 		completion_reward = {
 		add_stability = 0.10
 		add_political_power = 200
@@ -403,7 +402,7 @@ focus_tree = {
 
 	focus = {
 		id = CIB_ready_for_others
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_ready_others
 		x = 7
 		y = 10
 		cost = 2
@@ -418,12 +417,33 @@ focus_tree = {
 		add_stability = 0.10
 		add_political_power = 120
 		unlock_national_focus = CIB_war_plan_ANT
+		CIB = {
+		add_state_core = 355
+		add_state_core = 356
+		add_state_core = 839
+		add_state_core = 798
+		add_state_core = 49
+		add_state_core = 347
+		add_state_core = 349
+		add_state_core = 348
+		add_state_core = 346
+		add_state_core = 344
+		add_state_core = 345
+		add_state_core = 342
+		add_state_core = 343
+		add_state_core = 339
+		add_state_core = 340
+		add_state_core = 341
+		add_state_core = 797
+		add_state_core = 834
+		add_state_core = 187
+		}
 		}
 	}
 
 	focus = {
 		id = CIB_war_plan_ANT
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_war_plan_ant
 		x = 15
 		y = 1
 		cost = 2
@@ -439,7 +459,7 @@ focus_tree = {
 
 	focus = {
 		id = CIB_nuri_reach
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_klg
 		x = 15
 		y = 2
 		cost = 2
@@ -450,12 +470,13 @@ focus_tree = {
 		}
 		completion_reward = {
 		add_stability = 0.05
+		country_event = { id = enver.13 days = 3 }
 		}
 	}
 
 	focus = {
 		id = CIB_deal_mercenaries
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_Churchill_1
 		x = 16
 		y = 3
 		cost = 2
@@ -465,13 +486,16 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		declare_war_on = {
+        target = KLG
+        type = annex_everything
+        }
 		}
 	}
 
 	focus = {
 		id = CIB_deal_mercenaries_2
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_motherbase
 		x = 16
 		y = 4
 		cost = 2
@@ -482,28 +506,25 @@ focus_tree = {
 		}
 		completion_reward = {
 		add_stability = 0.05
+		356 = {
+		add_extra_state_shared_building_slots = 5		
+		add_building_construction = {
+   		type = infrastructure 
+    	level = 3
+    	instant_build = yes
 		}
-	}
-
-	focus = {
-		id = CIB_deal_mercenaries_3
-		icon = GFX_goal_adress_parliament
-		x = 16
-		y = 5
-		cost = 2
-		available_if_capitulated = yes
-		prerequisite = { focus = CIB_deal_mercenaries_2}
-		ai_will_do = {
-			factor = 1
+		add_building_construction = {
+   		type = industrial_complex 
+    	level = 3
+    	instant_build = yes
 		}
-		completion_reward = {
-		add_stability = 0.05
+		}
 		}
 	}
 
 	focus = {
 		id = CIB_deal_communists
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_Communist_1
 		x = 12
 		y = 3
 		cost = 2
@@ -513,13 +534,16 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		declare_war_on = {
+        target = IZM
+        type = annex_everything
+        }
 		}
 	}
 
 	focus = {
 		id = CIB_deal_communists_2
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_communist_2
 		x = 12
 		y = 4
 		cost = 2
@@ -529,29 +553,25 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		347 = {
+		add_extra_state_shared_building_slots = 5	
+		add_building_construction = {
+   		type = infrastructure 
+    	level = 3
+    	instant_build = yes
 		}
-	}
-
-	focus = {
-		id = CIB_deal_communists_3
-		icon = GFX_goal_adress_parliament
-		x = 12
-		y = 5
-		cost = 2
-		available_if_capitulated = yes
-		prerequisite = { focus = CIB_deal_communists_2}
-		ai_will_do = {
-			factor = 1
+		add_building_construction = {
+   		type = industrial_complex 
+    	level = 3
+    	instant_build = yes
 		}
-		completion_reward = {
-		add_stability = 0.05
+		}
 		}
 	}
 
 	focus = {
 		id = CIB_deal_fuller_1
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_Fuller_1
 		x = 18
 		y = 3
 		cost = 2
@@ -560,14 +580,23 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		bypass = {
+		NOT = {	
+		country_exists = SKL
+		}
+		}
+
 		completion_reward = {
-		add_stability = 0.05
+		declare_war_on = {
+        target = SKL
+        type = annex_everything
+        }
 		}
 	}
 
 	focus = {
 		id = CIB_deal_fuller_2
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_fuller_2
 		x = 18
 		y = 4
 		cost = 2
@@ -576,30 +605,32 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-		add_stability = 0.05
+		bypass = {
+		NOT = {	
+		country_exists = SKL
 		}
-	}
-
-	focus = {
-		id = CIB_deal_fuller_3
-		icon = GFX_goal_adress_parliament
-		x = 18
-		y = 5
-		cost = 2
-		prerequisite = { focus = CIB_deal_fuller_2}
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
 		}
 		completion_reward = {
 		add_stability = 0.05
+		839 = {
+		add_extra_state_shared_building_slots = 5		
+		add_building_construction = {
+   		type = infrastructure 
+    	level = 3
+    	instant_build = yes
+		}
+		add_building_construction = {
+   		type = industrial_complex 
+    	level = 3
+    	instant_build = yes
+		}
+		}
 		}
 	}
 
 	focus = {
 		id = CIB_deal_kemalists_1
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_kemalist_1
 		x = 14
 		y = 3
 		cost = 2
@@ -609,13 +640,16 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		declare_war_on = {
+        target = ANK
+        type = annex_everything
+        }
 		}
 	}
 
 	focus = {
 		id = CIB_deal_kemalists_2
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_kemalist_2
 		x = 14
 		y = 4
 		cost = 2
@@ -625,50 +659,56 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		add_stability = 0.10
+		49 = {
+		add_extra_state_shared_building_slots = 5		
+		add_building_construction = {
+   		type = infrastructure 
+    	level = 3
+    	instant_build = yes
+		}
+		add_building_construction = {
+   		type = industrial_complex 
+    	level = 3
+    	instant_build = yes
+		}
+		}
 		}
 	}
 
-	focus = {
-		id = CIB_deal_kemalists_3
-		icon = GFX_goal_adress_parliament
-		x = 14
-		y = 5
-		cost = 2
-		available_if_capitulated = yes
-		prerequisite = { focus = CIB_deal_kemalists_2 }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		add_stability = 0.05
-		}
-	}
 
 	focus = {
 		id = CIB_deal_war_kemalism
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_vs_ataturk
 		x = 15
-		y = 6
+		y = 5
 		cost = 2
 		available_if_capitulated = yes
-		prerequisite = { focus = CIB_deal_communists_3}
-		prerequisite = { focus = CIB_deal_fuller_3}
-		prerequisite = { focus = CIB_deal_kemalists_3}
-		prerequisite = { focus = CIB_deal_mercenaries_3}
+		prerequisite = { focus = CIB_deal_communists_2}
+		prerequisite = { focus = CIB_deal_fuller_2}
+		prerequisite = { focus = CIB_deal_kemalists_2}
+		prerequisite = { focus = CIB_deal_mercenaries_2}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		add_war_support = 0.20
+		declare_war_on = {
+        target = WRF
+        type = annex_everything
+        }
+		add_timed_idea = {
+    	idea = CIB_vs_WRF
+    	days = 40
+		}
 		}
 	}
 
 	focus = {
 		id = CIB_deal_war_caliphate
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_caliph_war
 		x = 15
-		y = 7
+		y = 6
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_deal_war_kemalism}
@@ -676,15 +716,18 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		declare_war_on = {
+        target = CLP
+        type = annex_everything
+        }
 		}
 	}
 
 	focus = {
 		id = CIB_deal_istanbul
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_pearl
 		x = 15
-		y = 8
+		y = 7
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_deal_war_caliphate}
@@ -693,6 +736,9 @@ focus_tree = {
 		}
 		completion_reward = {
 		add_stability = 0.05
+		CRW = {
+		country_event = { id = enver.16 }
+		}
 		}
 	}
 	}        

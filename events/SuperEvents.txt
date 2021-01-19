@@ -51,10 +51,9 @@ country_event = {		#Super Event DONE
 
 	option = {
 		name = super.3.a
-
         set_global_flag = Super_Event_Visible
         set_global_flag = TUR_Unification_Enver
-		sound_effect = "atsiz1"
+		sound_effect = "enver"
 	}
 }
 

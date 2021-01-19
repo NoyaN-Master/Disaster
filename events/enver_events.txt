@@ -123,6 +123,7 @@ country_event = { #Annex AZR
         229 = {
         add_core_of = CIB   
         }
+		unlock_national_focus = CIB_enveristan_proper
         hidden_effect = {
         country_event = { id = enver.7 days = 5} 
         }
@@ -287,9 +288,6 @@ country_event = { #georgia-enver
 
 	is_triggered_only = yes
 
-    trigger = {    
-    }
-
 	option = {
 		name = enver.11.a
 		add_political_power = 100
@@ -330,9 +328,6 @@ country_event = { #georgia-georgia
 
 	is_triggered_only = yes
 
-    trigger = {    
-    }
-
 	option = {
 		name = enver.12.a
 		add_political_power = 100
@@ -360,3 +355,100 @@ country_event = { #georgia-georgia
 		}			
 	}
 }
+
+country_event = { #nuri event 
+	id = enver.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = enver.13.t
+	desc = enver.13.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = enver.13.a
+		KLG = {
+		country_event = { id = enver.14 days = 1}	
+		}
+		}			
+	}
+
+country_event = { #nuri event 
+	id = enver.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = enver.14.t
+	desc = enver.14.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Submitting to you, brother
+		ai_chance = { factor = 100}
+		name = enver.14.a
+		CIB = {
+		annex_country = {
+    	target = KLG
+   		transfer_troops = yes
+		}	
+		}
+		}
+	option = { #NOOOOO
+		ai_chance = { factor = 10}
+		name = enver.14.a
+		CIB = {
+		country_event = { id = enver.15 }
+		}
+		}				
+	}
+country_event = { #nuri event-2enver 
+	id = enver.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = enver.15.t
+	desc = enver.15.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = enver.15.a
+		declare_war_on = {
+        target = KLG
+        type = annex_everything
+        }
+		add_stability = -0.01   
+		}			
+	}
+country_event = { #istanbul annex
+	id = enver.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = enver.16.t
+	desc = enver.16.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = enver.16.a
+		ai_chance = { factor = 100}
+		CIB = {
+		annex_country = {
+    	target = CRW
+   		transfer_troops = yes
+		}	
+		}
+		}
+		add_stability = 0.20   
+		}			
+	}					

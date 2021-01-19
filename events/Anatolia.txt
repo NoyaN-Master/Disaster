@@ -191,10 +191,16 @@ country_event = { #collapse-OTH
         release = ANK
         release = IZM
         OTH = {
-        transfer_state = 356
+        transfer_state = 839
         }
-        356 = {
+        839 = {
         add_core_of = OTH    
+        }
+        KLG = {
+        transfer_state = 798
+        }
+        798  = {
+        add_core_of = KLG    
         }
         OTH = { change_tag_from = ANT }
         news_event = { id = ant.7 }
