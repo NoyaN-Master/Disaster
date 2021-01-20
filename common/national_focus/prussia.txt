@@ -2409,13 +2409,215 @@ focus_tree = {
 		}	
 		}
 	}
+######################################## Prussian Army branch
+	focus = {
+		id = PRE_prussian_army
+		icon = GFX_goal_unknown
+		x = 52
+		y = 0
 
-
-
-
-
-
-
+		cost = 10		
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_study_past
+		icon = GFX_goal_unknown
+		x = -3
+		y = 1
+		relative_position_id = PRE_prussian_army
+		cost = 10		
+		prerequisite = { focus = PRE_prussian_army}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_new_curriculum
+		icon = GFX_goal_unknown
+		x = -3
+		y = 2
+		relative_position_id = PRE_prussian_army
+		cost = 10		
+		prerequisite = { focus = PRE_study_past}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_establish_new_acadamies
+		icon = GFX_goal_unknown
+		x = -3
+		y = 3
+		relative_position_id = PRE_prussian_army
+		cost = 10		
+		prerequisite = { focus = PRE_new_curriculum}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_army_maneuvres
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = PRE_prussian_army
+		cost = 10		
+		prerequisite = { focus =  PRE_prussian_army}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_readying_war_economy
+		icon = GFX_goal_unknown
+		x = -1
+		y = 2
+		relative_position_id = PRE_prussian_army
+		cost = 10		
+		prerequisite = { focus =  PRE_army_maneuvres}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_new_rifles
+		icon = GFX_goal_unknown
+		x = -1
+		y = 3
+		relative_position_id = PRE_prussian_army
+		cost = 10		
+		prerequisite = { focus =  PRE_readying_war_economy}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_expand_reserves
+		icon = GFX_goal_unknown
+		x = 1
+		y = 2
+		relative_position_id = PRE_prussian_army
+		cost = 10		
+		prerequisite = { focus =  PRE_army_maneuvres}
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_krupp_artillery_delivery
+		icon = GFX_goal_unknown
+		x = 1
+		y = 3
+		relative_position_id = PRE_prussian_army
+		cost = 10		
+		prerequisite = { focus = PRE_expand_reserves }
+		
+		completion_reward = {
+		 
+		}
+	}
+	focus = {
+		id = PRE_new_way_of_warfare
+		icon = GFX_goal_unknown
+		x = 3
+		y = 1
+		relative_position_id = PRE_prussian_army
+		cost = 10		
+		prerequisite = { focus = PRE_prussian_army }
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_empower_guderian
+		icon = GFX_goal_unknown
+		x = 3
+		y = 2
+		relative_position_id = PRE_prussian_army
+		cost = 10		
+		prerequisite = { focus = PRE_new_way_of_warfare }
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_establish_tank_plants
+		icon = GFX_goal_unknown
+		x = 3
+		y = 3
+		relative_position_id = PRE_prussian_army
+		cost = 10		
+		prerequisite = { focus = PRE_empower_guderian }
+		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_special_forces
+		icon = GFX_goal_unknown
+		x = -2
+		y = 4
+		relative_position_id = PRE_prussian_army
+		cost = 10		
+		prerequisite = { focus = PRE_establish_new_acadamies }
+		prerequisite = { focus = PRE_new_rifles }		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_anti_armor
+		icon = GFX_goal_unknown
+		x = 0
+		y = 4
+		relative_position_id = PRE_prussian_army
+		cost = 10		
+		prerequisite = { focus = PRE_new_rifles }
+		prerequisite = { focus = PRE_krupp_artillery_delivery }		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_pride_of_the_army
+		icon = GFX_goal_unknown
+		x = 2
+		y = 4
+		relative_position_id = PRE_prussian_army
+		cost = 10		
+		prerequisite = { focus = PRE_krupp_artillery_delivery }
+		prerequisite = { focus = PRE_establish_tank_plants }		
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PRE_new_modern_prussian_army
+		icon = GFX_goal_unknown
+		x = 0
+		y = 5
+		relative_position_id = PRE_prussian_army
+		cost = 10		
+		prerequisite = { focus = PRE_pride_of_the_army }
+		prerequisite = { focus = PRE_anti_armor }
+		prerequisite = { focus = PRE_special_forces }		
+		completion_reward = {
+		
+		}
+	}
 
 
 

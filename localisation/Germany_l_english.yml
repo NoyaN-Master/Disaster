@@ -1,15 +1,30 @@
 ﻿l_english: 
-GER_for_germany_liberal:0"`Forming the German Republic"
-GER_for_germany_authoritarian_democrat:0"s"
-GER_for_germany_autocratic:0"f"
-GER_for_germany_ultranationalis:0"v"
-GER_for_germany_revolutionary_nationalist:0"b"
 
-GER_revolutionary_nationalist:0"" 
-GER_ultranationalist:0"d" 
-GER_autocratic:0"f"
-GER_authoritarian_democrat:0"d"
-GER_liberal:0"d"
+
+
+####Small Germany Decisions
+GER_for_germany_liberal:0"Forming the German Republic"
+GER_for_germany_authoritarian_democrat:0"Forming the German Republic"
+GER_for_germany_autocratic:0"Forming the Deutsches Kaiserreich"
+GER_for_germany_ultranationalis:0"Forming Germany"
+GER_for_germany_revolutionary_nationalist:0"Forming the Deutsches Kaiserreich"
+GER_for_germany_liberal_desc:0"Placeholder something about having more than 25 german states to form germany"
+GER_for_germany_authoritarian_democrat_desc:0"Placeholder something about having more than 25 german states to form germany"
+GER_for_germany_autocratic_desc:0"Placeholder something about having more than 25 german states to form germany"
+GER_for_germany_ultranationalis_desc:0"Placeholder something about having more than 25 german states to form germany"
+GER_for_germany_revolutionary_nationalist_desc:0"Placeholder something about having more than 25 german states to form germany"
+
+#### Greater Germany Decisions
+GER_for_germany_liberal_greater:0"Forming the Greater Bundesrepublik Deutschland"
+GER_for_germany_authoritarian_democrat_greater:0"Forming the Greater Bundesrepublik Deutschland"
+GER_for_germany_autocratic_greater:0"Forming the Greater Deutsches Kaiserreich"
+GER_for_germany_ultranationalis_greater:0"Forming the Greater Deutsches Kaiserreich"
+GER_for_germany_revolutionary_nationalist_greater:0"Forming the Greater Deutsches Kaiserreich"
+GER_for_germany_liberal_greater_desc:0"Placeholder something about having more than 25 german states to form greater germany"
+GER_for_germany_authoritarian_democrat_greater_desc:0"Placeholder something about having more than 25 german states to form greater germany"
+GER_for_germany_autocratic_greater_desc:0"Placeholder something about having more than 25 german states to form greater germany"
+GER_for_germany_ultranationalis_greater_desc:0"Placeholder something about having more than 25 german states to form greater germany"
+GER_for_germany_revolutionary_nationalist_greater_desc:0"Placeholder something about having more than 25 german states to form greater germany"
 
 GER_unification_decisions:0"German States Integration"
 GER_unification_decisions_desc:0"Amount of German States:[?ROOT.german_states|H0]"

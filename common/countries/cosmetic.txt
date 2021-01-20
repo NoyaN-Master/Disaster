@@ -1,7 +1,11 @@
 GER_small = {
-	color = rgb { 252 186 3 }
-	color_ui = rgb { 252 186 3 }
-		
+	color = rgb { 77 93 83 }
+	color_ui = rgb { 138 155 116 }
+}
+
+GER_big = {
+	color = rgb { 85 85 85 }
+	color_ui = rgb { 85 85 85 }
 }
 
 IST_ancap = {

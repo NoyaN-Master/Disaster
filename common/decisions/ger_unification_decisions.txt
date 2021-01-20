@@ -11,7 +11,8 @@ GER_unification_decisions = {
 	}
 		highlight_state_targets = {
 			state = 64
-		}	 
+		}
+          fire_only_once = yes	 
           remove_effect = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
 			set_cosmetic_tag = GER_small
@@ -30,7 +31,8 @@ GER_unification_decisions = {
 	}
 		highlight_state_targets = {
 			state = 64
-		}	 
+		}
+          fire_only_once = yes	 
           remove_effect = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
 			set_cosmetic_tag = GER_small
@@ -49,6 +51,7 @@ GER_unification_decisions = {
 		highlight_state_targets = {
 			state = 64
 		}	 
+          fire_only_once = yes
           remove_effect = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
 			set_cosmetic_tag = GER_small
@@ -68,6 +71,7 @@ GER_unification_decisions = {
 		highlight_state_targets = {
 			state = 64
 		}	 
+          fire_only_once = yes
           remove_effect = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
 			set_cosmetic_tag = GER_small
@@ -87,6 +91,7 @@ GER_unification_decisions = {
 		highlight_state_targets = {
 			state = 64
 		}	 
+          fire_only_once = yes
           remove_effect = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
 			set_cosmetic_tag = GER_small
@@ -98,6 +103,105 @@ GER_unification_decisions = {
  
 
 
+	 GER_for_germany_liberal_greater = {
+		visible = { has_government = liberal}
+	 	available = {
+			if = {
+                    check_variable = {
+                        var = german_states
+                        value = 37
+                        compare = greater_than_or_equals
+                    } }
+	}
+		highlight_state_targets = {
+			state = 64
+		}
+          fire_only_once = yes	 
+          remove_effect = {
+			custom_effect_tooltip = GER_forming_germany_tooltip	
+			set_cosmetic_tag = GER_big
+          }	 
+	 
+	 }
+	 GER_for_germany_authoritarian_democrat_greater = {
+		visible = { has_government = authoritarian_democrat}
+	 	available = {
+			if = {
+                    check_variable = {
+                        var = german_states
+                        value = 37
+                        compare = greater_than_or_equals
+                    } }
+	}
+		highlight_state_targets = {
+			state = 64
+		}
+          fire_only_once = yes	 
+          remove_effect = {
+			custom_effect_tooltip = GER_forming_germany_tooltip	
+			set_cosmetic_tag = GER_big
+          }	 
+	 }
+ 	 GER_for_germany_autocratic_greater = {
+		visible = { has_government = autocratic}
+	 	available = {
+			if = {
+                    check_variable = {
+                        var = german_states
+                        value = 37
+                        compare = greater_than_or_equals
+                    } }
+	}
+		highlight_state_targets = {
+			state = 64
+		}	 
+          fire_only_once = yes
+          remove_effect = {
+			custom_effect_tooltip = GER_forming_germany_tooltip	
+			set_cosmetic_tag = GER_big
+          }	 
+	 
+	 }
+ 	 GER_for_germany_ultranationalist_greater= {
+		visible = { has_government = ultranationalist}
+	 	available = {
+			if = {
+                    check_variable = {
+                        var = german_states
+                        value = 37
+                        compare = greater_than_or_equals
+                    } }
+	}
+		highlight_state_targets = {
+			state = 64
+		}	 
+          fire_only_once = yes
+          remove_effect = {
+			custom_effect_tooltip = GER_forming_germany_tooltip	
+			set_cosmetic_tag = GER_big
+          }	 
+	 
+	 }
+ 	 GER_for_germany_revolutionary_nationalist_greater= {
+		visible = { has_government = revolutionary_nationalist}
+	 	available = {
+			if = {
+                    check_variable = {
+                        var = german_states
+                        value = 37
+                        compare = greater_than_or_equals
+                    } }
+	}
+		highlight_state_targets = {
+			state = 64
+		}	 
+          fire_only_once = yes
+          remove_effect = {
+			custom_effect_tooltip = GER_forming_germany_tooltip	
+			set_cosmetic_tag = GER_big
+          }	 
+	 
+	 }
 
 
 
