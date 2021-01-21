@@ -2416,10 +2416,12 @@ focus_tree = {
 		x = 52
 		y = 0
 
-		cost = 10		
+		cost = 3		
 		
 		completion_reward = {
-		
+			army_experience = 30
+			add_war_support = 0.15
+			### an event needs to be added to explain the army situation of prussia
 		}
 	}
 	focus = {
@@ -2428,11 +2430,16 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = PRE_prussian_army
-		cost = 10		
+		cost = 5		
 		prerequisite = { focus = PRE_prussian_army}
 		
 		completion_reward = {
-		
+				add_tech_bonus = {
+			name = PRE_army_doctrine
+			bonus = 0.5
+			uses = 2
+			category = land_doctrine
+		}
 		}
 	}
 	focus = {
@@ -2441,11 +2448,11 @@ focus_tree = {
 		x = -3
 		y = 2
 		relative_position_id = PRE_prussian_army
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_study_past}
 		
 		completion_reward = {
-		
+		add_ideas = PRE_new_curriculum_idea
 		}
 	}
 	focus = {
@@ -2454,11 +2461,14 @@ focus_tree = {
 		x = -3
 		y = 3
 		relative_position_id = PRE_prussian_army
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_new_curriculum}
 		
 		completion_reward = {
-		
+					swap_ideas = {
+							remove_idea = PRE_new_curriculum_idea
+							add_idea = PRE_new_curriculum_idea2
+						}		
 		}
 	}
 	focus = {
@@ -2467,7 +2477,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = PRE_prussian_army
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus =  PRE_prussian_army}
 		
 		completion_reward = {
@@ -2480,7 +2490,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = PRE_prussian_army
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus =  PRE_army_maneuvres}
 		
 		completion_reward = {
@@ -2493,7 +2503,7 @@ focus_tree = {
 		x = -1
 		y = 3
 		relative_position_id = PRE_prussian_army
-		cost = 10		
+		cost = 5		
 		prerequisite = { focus =  PRE_readying_war_economy}
 		
 		completion_reward = {
@@ -2506,7 +2516,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = PRE_prussian_army
-		cost = 10		
+		cost = 5		
 		prerequisite = { focus =  PRE_army_maneuvres}
 		
 		completion_reward = {
@@ -2519,7 +2529,7 @@ focus_tree = {
 		x = 1
 		y = 3
 		relative_position_id = PRE_prussian_army
-		cost = 10		
+		cost = 5		
 		prerequisite = { focus = PRE_expand_reserves }
 		
 		completion_reward = {
@@ -2532,7 +2542,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = PRE_prussian_army
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_prussian_army }
 		
 		completion_reward = {
@@ -2545,7 +2555,7 @@ focus_tree = {
 		x = 3
 		y = 2
 		relative_position_id = PRE_prussian_army
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_new_way_of_warfare }
 		
 		completion_reward = {
@@ -2558,7 +2568,7 @@ focus_tree = {
 		x = 3
 		y = 3
 		relative_position_id = PRE_prussian_army
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_empower_guderian }
 		
 		completion_reward = {
@@ -2571,7 +2581,7 @@ focus_tree = {
 		x = -2
 		y = 4
 		relative_position_id = PRE_prussian_army
-		cost = 10		
+		cost = 5		
 		prerequisite = { focus = PRE_establish_new_acadamies }
 		prerequisite = { focus = PRE_new_rifles }		
 		completion_reward = {
@@ -2584,7 +2594,7 @@ focus_tree = {
 		x = 0
 		y = 4
 		relative_position_id = PRE_prussian_army
-		cost = 10		
+		cost = 5		
 		prerequisite = { focus = PRE_new_rifles }
 		prerequisite = { focus = PRE_krupp_artillery_delivery }		
 		completion_reward = {
@@ -2597,7 +2607,7 @@ focus_tree = {
 		x = 2
 		y = 4
 		relative_position_id = PRE_prussian_army
-		cost = 10		
+		cost = 5		
 		prerequisite = { focus = PRE_krupp_artillery_delivery }
 		prerequisite = { focus = PRE_establish_tank_plants }		
 		completion_reward = {
@@ -2610,7 +2620,7 @@ focus_tree = {
 		x = 0
 		y = 5
 		relative_position_id = PRE_prussian_army
-		cost = 10		
+		cost = 6		
 		prerequisite = { focus = PRE_pride_of_the_army }
 		prerequisite = { focus = PRE_anti_armor }
 		prerequisite = { focus = PRE_special_forces }		

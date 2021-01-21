@@ -603,7 +603,7 @@ PRE_frederick_great_reforms_idea3 = {
 			}
 		}
 PRE_prussian_work_ethics_idea1 = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_aid_the_workers_idea2" }
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_prussian_work_ethics_idea1" }
 			#picture = 
 			modifier = {
 			local_resources_factor = 0.1
@@ -613,7 +613,7 @@ PRE_prussian_work_ethics_idea1 = {
 		}
 
 PRE_prussian_work_ethics_idea2 = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_aid_the_workers_idea2" }
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_prussian_work_ethics_idea2" }
 			#picture = 
 			modifier = {
 			local_resources_factor = 0.1
@@ -626,7 +626,7 @@ PRE_prussian_work_ethics_idea2 = {
 			}
 		}
 PRE_farmer_union_control = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_aid_the_workers_idea2" }
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_farmer_union_control" }
 			#picture = 
 			modifier = {
 			local_resources_factor = 0.1
@@ -634,7 +634,7 @@ PRE_farmer_union_control = {
 			}
 		}
 PRE_farmer_union_control1 = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_aid_the_workers_idea2" }
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_farmer_union_control1" }
 			#picture = 
 			modifier = {
 			local_resources_factor = 0.1
@@ -644,7 +644,7 @@ PRE_farmer_union_control1 = {
 			}
 		}
 PRE_controlled_opposition = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_aid_the_workers_idea2" }
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_controlled_opposition" }
 			#picture = 
 			modifier = {
 			political_power_factor = 0.1
@@ -652,8 +652,32 @@ PRE_controlled_opposition = {
 			
 			}
 		} 
-
-
+PRE_new_curriculum_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_new_curriculum_idea" }
+			#picture = 
+			modifier = {
+			research_speed_factor = 0.02
+				max_command_power = 10
+				command_power_gain_mult = 0.1	
+				experience_gain_factor = 0.05					
+			}
+			research_bonus = {
+				land_doctrine = 0.05
+			}
+		} 
+PRE_new_curriculum_idea2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_new_curriculum_idea" }
+			#picture = 
+			modifier = {
+			research_speed_factor = 0.04
+				max_command_power = 15
+				command_power_gain_mult = 0.15	
+				experience_gain_factor = 0.1					
+			}
+			research_bonus = {
+				land_doctrine = 0.1
+			}
+		} 
 
 	}
 }
