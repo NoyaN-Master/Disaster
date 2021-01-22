@@ -2412,12 +2412,20 @@ focus_tree = {
 ######################################## Prussian Army branch
 	focus = {
 		id = PRE_prussian_army
-		icon = GFX_goal_unknown
+		icon = GFX_goal_new_prussian_army
 		x = 52
 		y = 0
 
 		cost = 3		
-		
+		available = {
+					OR = {
+			has_country_flag = PRE_junker_victory
+			has_country_flag = PRE_liberal_victory	
+			has_country_flag = PRE_dnvp_victory	
+			has_country_flag = PRE_nazi_victory	
+			has_country_flag = PRE_schleicher_victory	
+			}
+		}			
 		completion_reward = {
 			army_experience = 30
 			add_war_support = 0.15
@@ -2426,7 +2434,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_study_past
-		icon = GFX_goal_unknown
+		icon = GFX_goal_study_the_past
 		x = -3
 		y = 1
 		relative_position_id = PRE_prussian_army
@@ -2444,7 +2452,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_new_curriculum
-		icon = GFX_goal_unknown
+		icon = GFX_goal_curricilum
 		x = -3
 		y = 2
 		relative_position_id = PRE_prussian_army
@@ -2457,7 +2465,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_establish_new_acadamies
-		icon = GFX_goal_unknown
+		icon = GFX_goal_new_academy
 		x = -3
 		y = 3
 		relative_position_id = PRE_prussian_army
@@ -2473,7 +2481,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_army_maneuvres
-		icon = GFX_goal_unknown
+		icon = GFX_goal_army_exercises
 		x = 0
 		y = 1
 		relative_position_id = PRE_prussian_army
@@ -2486,7 +2494,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_readying_war_economy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_war_industry
 		x = -1
 		y = 2
 		relative_position_id = PRE_prussian_army
@@ -2525,7 +2533,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_krupp_artillery_delivery
-		icon = GFX_goal_unknown
+		icon = GFX_goal_krupp_artillery
 		x = 1
 		y = 3
 		relative_position_id = PRE_prussian_army
@@ -2538,7 +2546,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_new_way_of_warfare
-		icon = GFX_goal_unknown
+		icon = GFX_goal_new_way_of_warfare
 		x = 3
 		y = 1
 		relative_position_id = PRE_prussian_army
@@ -2577,7 +2585,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_special_forces
-		icon = GFX_goal_unknown
+		icon = GFX_goal_special_forces
 		x = -2
 		y = 4
 		relative_position_id = PRE_prussian_army
@@ -2590,7 +2598,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_anti_armor
-		icon = GFX_goal_unknown
+		icon = GFX_goal_anti_tank
 		x = 0
 		y = 4
 		relative_position_id = PRE_prussian_army
@@ -2603,7 +2611,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_pride_of_the_army
-		icon = GFX_goal_unknown
+		icon = GFX_goal_panzers
 		x = 2
 		y = 4
 		relative_position_id = PRE_prussian_army
@@ -2616,7 +2624,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_new_modern_prussian_army
-		icon = GFX_goal_unknown
+		icon = GFX_goal_new_modern_prussian_army
 		x = 0
 		y = 5
 		relative_position_id = PRE_prussian_army
