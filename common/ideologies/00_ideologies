@@ -6,11 +6,7 @@ ideologies = {
 			
 			unisocialist_subideology = {
 			}
-			
-			national_bolshevik_subideology = {
-			          can_be_randomly_selected = no
-			}
-		
+
 			strasserism = {
 			          can_be_randomly_selected = no
 			}
@@ -60,6 +56,10 @@ ideologies = {
 			}
 			
 			luxemburgism_leninism = {
+			                    can_be_randomly_selected = no
+			}
+
+			neokemalism = {
 			                    can_be_randomly_selected = no
 			}
 
@@ -349,6 +349,10 @@ ideologies = {
 			
 			ultranationalism_turkish = {
 			                       can_be_randomly_selected = no
+			}
+
+			neokemalist_militarism = {
+			                    can_be_randomly_selected = no
 			}
 			
 		}

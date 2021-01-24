@@ -1,0 +1,343 @@
+focus_tree = {
+	id = izm_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = IZM
+		}
+	}
+    default = no
+	continuous_focus_position = { x = 100 y = 10000 }
+
+    focus = {
+		id = IZM_independence_time
+		icon = GFX_goal_CRW_first_icon
+		x = 10
+		y = 0
+		cost = 1
+		ai_will_do = {
+			factor = 80	
+		}
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = CRW_devlet_1
+        }
+	}
+
+    focus = {
+		id = IZM_nazbol_win
+		icon = GFX_goal_CRW_first_icon
+		x = 14
+		y = 1
+		cost = 2
+        prerequisite = { focus = IZM_independence_time }
+        available = { has_country_flag = nazbol_congress }
+		ai_will_do = {
+			factor = 80	
+		}
+		select_effect = {
+		}
+		completion_reward = {
+        custom_effect_tooltip = party_tt_nazbol
+        }
+	}
+
+    focus = {
+		id = IZM_a_great_War
+		icon = GFX_goal_CRW_first_icon
+		x = 14
+		y = 2
+		cost = 1
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = IZM_nazbol_win }
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = a_great_war_Tt
+        army_experience = 50
+        add_ideas = IZM_great_war
+        }
+	}
+
+    focus = {
+		id = IZM_red_legionaries
+		icon = GFX_goal_CRW_first_icon
+		x = 14
+		y = 3.5
+		cost = 2
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = IZM_a_great_War }
+		select_effect = {
+		}
+		completion_reward = {
+		add_ideas = IZM_red_legion
+        }
+	}
+
+    focus = {
+		id = IZM_to_liberation
+		icon = GFX_goal_CRW_first_icon
+		x = 14
+		y = 5
+		cost = 2
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = IZM_nazbol_win }
+        prerequisite = { focus = IZM_total_war }
+        prerequisite = { focus = IZM_expand_mines }
+		select_effect = {
+		}
+		completion_reward = {
+        add_timed_idea = {
+        idea = IZM_to_liberation
+        days = 45
+        }
+        }
+	}
+
+    focus = {
+		id = IZM_act_quickly
+		icon = GFX_goal_CRW_first_icon
+		x = 14
+		y = 6
+		cost = 1
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = IZM_to_liberation }
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = act_quick_tt
+        }
+	}
+
+    focus = {
+		id = IZM_prestrike
+		icon = GFX_goal_CRW_first_icon
+		x = 16
+		y = 7
+		cost = 1
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = IZM_act_quickly }
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = CRW_devlet_1
+        completion_reward = {
+		declare_war_on = {
+        target = ANK
+        type = annex_everything
+        }  
+        declare_war_on = {
+        target = WRF
+        type = annex_everything
+        }    
+        }
+	}
+    }
+
+    focus = {
+		id = IZM_attack_east
+		icon = GFX_goal_CRW_first_icon
+		x = 12
+		y = 7
+		cost = 1
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = IZM_act_quickly }
+		select_effect = {
+		}
+		completion_reward = {
+		declare_war_on = {
+        target = CIB
+        type = annex_everything
+        }  
+        declare_war_on = {
+        target = OTH
+        type = annex_everything
+        }    
+	}
+    }
+
+    focus = {
+		id = IZM_memories_of_spartakus
+		icon = GFX_goal_CRW_first_icon
+		x = 14
+		y = 9
+		cost = 1
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = IZM_attack_east }
+        prerequisite = { focus = IZM_attack_imams }
+        prerequisite = { focus = IZM_prestrike }
+        available = {
+        NOT = {
+        country_exists = CLP
+        country_exists = WRF
+        country_exists = TIT
+        country_exists = CIB 
+        country_exists = OTH
+        country_exists = SKL
+        country_exists = ANK
+        country_exists = KLG
+        country_exists = THR
+        country_exists = ADN   
+        }    
+        }
+		select_effect = {
+		}
+		completion_reward = {
+		country_event = { id = ant.22 days = 2 }
+        }
+	}
+
+    focus = {
+		id = IZM_attack_imams
+		icon = GFX_goal_CRW_first_icon
+		x = 14
+		y = 8
+		cost = 1
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = IZM_act_quickly }
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = CRW_devlet_1
+        completion_reward = {
+		declare_war_on = {
+        target = CLP
+        type = annex_everything
+        }    
+        }
+	}
+    }
+
+    focus = {
+		id = IZM_real_workers
+		icon = GFX_goal_CRW_first_icon
+		x = 12
+		y = 2.5
+		cost = 2
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = IZM_nazbol_win }
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = workers_Tt
+        add_ideas = IZM_land_of_proletariat
+        kill_ideology_leader = libertarian_socialist
+        add_popularity = {
+        ideology = unisocialist
+        popularity = 0.3
+        }
+        add_political_power = 200
+        manpower = 15000
+        }
+	}
+
+    focus = {
+		id = IZM_total_war
+		icon = GFX_goal_CRW_first_icon
+		x = 16
+		y = 4
+		cost = 2
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = IZM_defence }
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = total_War_Tt
+        add_ideas = war_economy
+        add_war_support = 0.10
+        }
+	}
+
+    focus = {
+		id = IZM_defence
+		icon = GFX_goal_CRW_first_icon
+		x = 16
+		y = 2.5
+		cost = 2
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = IZM_nazbol_win }
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = CRW_devlet_1
+        add_building_construction = {
+        type = bunker
+        level = 3
+        instant_build = yes
+        province = {
+        all_provinces = yes
+        limit_to_border = yes
+        }
+        }
+        }
+	}
+
+    focus = {
+		id = IZM_expand_mines
+		icon = GFX_goal_CRW_first_icon
+		x = 12
+		y = 4
+		cost = 2
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = IZM_real_workers }
+		select_effect = {
+		}
+		completion_reward = {
+		add_resource = {
+        type = chromium 
+        amount = 50
+        state = 88
+        }
+        add_resource = {
+        type = steel  
+        amount = 50
+        state = 88
+        }
+        }
+	}
+
+    focus = {
+		id = IZM_nazim_win
+		icon = GFX_goal_CRW_first_icon
+		x = 6
+		y = 1
+		cost = 1
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = IZM_independence_time }
+        available = { has_country_flag = nazim_congress }
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = CRW_devlet_1
+        }
+	}
+
+}    

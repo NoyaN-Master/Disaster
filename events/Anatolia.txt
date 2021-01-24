@@ -170,6 +170,9 @@ country_event = { #collapse-left side
         release = SKL
         release = ANK
         release = IZM
+        IZM = {
+        load_oob = "IZM_Army"            
+        }
         SKL = { change_tag_from = ANT }
         news_event = { id = ant.7 }
     }
@@ -202,6 +205,9 @@ country_event = { #collapse-OTH
         798  = {
         add_core_of = KLG    
         }
+        IZM = {
+        load_oob = "IZM_Army"            
+        }
         OTH = { change_tag_from = ANT }
         news_event = { id = ant.7 }
     }
@@ -222,6 +228,9 @@ country_event = { #collapse-IZM
         release = KLG
         release = ANK
         release = IZM
+        IZM = {
+        load_oob = "IZM_Army_favour"            
+        }
         IZM = { change_tag_from = ANT }
         news_event = { id = ant.7 }
     }
@@ -242,6 +251,9 @@ country_event = { #collapse-ANK
         release = KLG
         release = ANK
         release = IZM
+        IZM = {
+        load_oob = "IZM_Army"            
+        }
         ANK = { change_tag_from = ANT }
         news_event = { id = ant.7 }
     }
@@ -262,6 +274,9 @@ country_event = { #collapse-klg
         release = KLG
         release = ANK
         release = IZM
+        IZM = {
+        load_oob = "IZM_Army"            
+        }
         KLG = { change_tag_from = ANT }
         news_event = { id = ant.7 }
     }
@@ -483,3 +498,24 @@ news_event = {
     }
 }
 
+country_event = { #Istanbul Revolts 
+    id = ant.22
+    title = ant.22.t
+    desc = ant.22.d
+    fire_only_once = yes
+    picture = GFX_evt_Picture
+    is_triggered_only = yes
+
+    option = {
+        ai_chance = { factor = 100} 
+        name = ant.22.a
+        annex_country = {
+        target = CRW
+        transfer_troops = yes
+        }
+        add_stability = 0.30
+        add_war_support = 0.20
+        hidden_effect = {   
+        }
+    }
+}

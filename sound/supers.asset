@@ -5,3 +5,19 @@ sound = {
 	always_load = yes
 }
 
+sound = {
+	name = "enver"
+	file = "menu/enver.wav"
+	volume = 1
+	always_load = yes
+}
+
+
+sound = {
+	name = "samet"
+	file = "menu/samet.wav"
+	volume = 1
+	always_load = yes
+}
+
+

@@ -451,4 +451,134 @@ country_event = { #istanbul annex
 		}
 		add_stability = 0.20   
 		}			
-	}					
+	}
+}
+country_event = { #Bursa Trials - 1
+	id = enver.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event enver.17" }
+	title = enver.17.t
+	desc = enver.17.d
+
+	fire_only_once = yes
+	
+	trigger = {
+		CIB = {
+		owns_state  = 343	
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = { #Cancel the trial until limit
+		name = enver.17.a 
+		custom_effect_tooltip = later_Tt
+		hidden_effect = {
+		country_event = { id = enver.19 days = 5 }
+		}
+	}
+
+	option = { #Act now!
+		name = enver.17.b
+		country_event = { id = enver.18 days = 2}
+	}
+}
+
+country_event = { #Bursa Trials - It's treason!
+	id = enver.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event enver.17" }
+	title = enver.18.t
+	desc = enver.18.d
+
+	fire_only_once = yes
+
+	option = { #Treason!
+		name = enver.18.a 
+		custom_effect_tooltip = treason_tt
+		add_stability = -0.20
+		add_war_support = 0.20
+		add_political_power = -300
+		add_timed_idea = {
+    	idea = kemalists_purged
+    	days = 60
+		}
+		hidden_effect = {
+		set_country_flag = enver_stable	
+		}
+	}
+}	
+
+country_event = { #Bursa Trials - Samet opposition
+	id = enver.19
+	immediate = { log = "[GetDateText]: [Root.GetName]: event enver.17" }
+	title = enver.19.t
+	desc = enver.19.d
+
+	fire_only_once = yes
+	
+	option = { #samet opposition
+		name = enver.19.a
+		set_political_party = {
+    	ideology = authoritarian_socialist
+    	popularity = 50
+		}
+		set_party_name = { 
+    	ideology = authoritarian_socialist 
+    	long_name = CIB_authoritarian_socialist_samet_long
+    	name = CIB_authoritarian_socialist_samet
+		}
+		hidden_effect = {	
+		country_event = { id = enver.20 days = 6 }
+		}
+	}
+}
+
+country_event = { #Bursa Trials - Samet veto
+	id = enver.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event enver.17" }
+	title = enver.20.t
+	desc = enver.20.d
+
+	fire_only_once = yes
+
+	option = { #samet opposition
+		name = enver.20.a
+		custom_effect_tooltip = samet_veto_tt
+		add_stability = 0.10
+		hidden_effect = {	
+		country_event = { id = enver.21 days = 8 }
+		}
+	}
+}
+
+country_event = { #Bursa Trials - Samet coup
+	id = enver.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event enver.17" }
+	title = enver.21.t
+	desc = enver.21.d
+
+	fire_only_once = yes
+
+	option = { #samet opposition
+		name = enver.21.a
+		set_stability = 0.7
+		set_war_support = 0.3
+		set_politics = {
+		ruling_party = authoritarian_socialist
+		}
+		remove_idea = CIB_King_Hill
+		remove_idea = CIB_OrduVatan_stratocracy
+		remove_idea = CIB_Zombie
+		remove_idea = CIB_vs_WRF
+		remove_idea = CIB_Enver_Idea
+		add_idea = samet_new_army
+		add_idea = samet_admin_1
+		add_idea = samet_enverist_threat
+		hidden_effect = {	
+		country_event = { id = enver.21 days = 8 }
+		clr_country_flag = enver_charge
+		set_country_flag = samet_won
+		}
+	}
+}

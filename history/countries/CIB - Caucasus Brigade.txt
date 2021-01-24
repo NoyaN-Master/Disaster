@@ -86,6 +86,17 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Samet Pasha"
+	#desc = "SES_Zeljko_Raznatovic_desc"
+	picture = "Portrait_CIB_Samet.tga"
+	expire = "2020.1.1"
+	ideology = neokemalism
+	traits = {
+		#
+	}
+}
+
 create_field_marshal = {
 			name = "Enver Pasha"
 			picture = "Portrait_CIB_Enver_Pasha.tga"
@@ -98,7 +109,7 @@ create_field_marshal = {
 			}	
 			
 create_corps_commander = {
-			name = "Samet"
+			name = "Samet Pasha"
 			picture = "Portrait_CIB_Samet_Enverist.tga"
 			traits = { offensive_doctrine }
 			skill = 3

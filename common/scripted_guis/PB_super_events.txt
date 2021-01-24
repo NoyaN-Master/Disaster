@@ -26,6 +26,12 @@ scripted_gui = {
 			}
 		}
 
+		triggers = {
+			Super_Event_Image_Unification_Samet = {
+				has_global_flag  = TUR_Unification_Samet
+			}
+		}
+
 		properties = {
 			Super_Event_Image_Default = {
 				image = "[get_my_superevent_texture]"
@@ -49,6 +55,14 @@ scripted_gui = {
 					}
 					clr_global_flag  = TUR_Unification_Enver
 				}
+
+				if = {
+					limit = {	
+						has_global_flag = TUR_Unification_Samet
+					}
+					clr_global_flag  = TUR_Unification_Samet
+				}
+				
 			}
 		}
 	}
