@@ -1,0 +1,51 @@
+PRE_readying_war_economy_idea_increase = {
+            if = {
+                limit = {
+				NOT = { has_idea = PRE_readying_war_economy_idea1 }
+				NOT = { has_idea = PRE_readying_war_economy_idea2 }
+				NOT = { has_idea = PRE_readying_war_economy_idea3 }
+				NOT = { has_idea = PRE_readying_war_economy_idea4 }
+				NOT = { has_idea = PRE_readying_war_economy_idea5 }
+                }
+				hidden_effect = {
+                add_ideas = PRE_readying_war_economy_idea1
+				}
+            }
+			else_if = { 
+			limit = {
+				has_idea = PRE_readying_war_economy_idea1
+                }
+				hidden_effect = {
+                add_ideas = PRE_readying_war_economy_idea2
+				remove_ideas = PRE_readying_war_economy_idea1
+				}
+			}
+			else_if = { 
+			limit = {
+				has_idea = PRE_readying_war_economy_idea2
+                }
+				hidden_effect = {
+                add_ideas = PRE_readying_war_economy_idea3
+				remove_ideas = PRE_readying_war_economy_idea2
+				}
+			}
+			else_if = { 
+			limit = {
+				has_idea = PRE_readying_war_economy_idea3
+                }
+				hidden_effect = {
+                add_ideas = PRE_readying_war_economy_idea4
+				remove_ideas = PRE_readying_war_economy_idea3
+				}
+			}
+			else_if = { 
+			limit = {
+				has_idea = PRE_readying_war_economy_idea4
+                }
+				hidden_effect = {
+                add_ideas = PRE_readying_war_economy_idea5
+				remove_ideas = PRE_readying_war_economy_idea4
+				}
+			}
+
+}

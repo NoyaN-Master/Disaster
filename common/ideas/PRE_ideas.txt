@@ -677,7 +677,140 @@ PRE_new_curriculum_idea2 = {
 			research_bonus = {
 				land_doctrine = 0.1
 			}
-		} 
+		}
+PRE_army_maneuvres_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_new_curriculum_idea" }
+			#picture = 
+			modifier = {
+				experience_gain_factor = 0.1	
+				experience_gain_army = 0.2
+				experience_gain_army_unit_factor = 0.2
+				mobilization_speed = 0.5				
+			}
+			research_bonus = {
+				land_doctrine = 0.15
+			}
+		}
 
+
+PRE_readying_war_economy_idea1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_readying_war_economy_idea1" }
+			#picture = 
+			modifier = {
+			production_speed_buildings_factor = 0.02
+			industrial_capacity_factory = 0.02
+			consumer_goods_factor = -0.01
+			line_change_production_efficiency_factor = 0.01
+			}
+		} 
+PRE_readying_war_economy_idea2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_readying_war_economy_idea2" }
+			#picture = 
+			modifier = {
+			production_speed_buildings_factor = 0.04
+			industrial_capacity_factory = 0.04
+			consumer_goods_factor = -0.02
+			line_change_production_efficiency_factor = 0.02
+			
+			}
+		} 
+PRE_readying_war_economy_idea3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_readying_war_economy_idea3" }
+			#picture = 
+			modifier = {
+			production_speed_buildings_factor = 0.06
+			industrial_capacity_factory = 0.06
+			consumer_goods_factor = -0.03
+			line_change_production_efficiency_factor = 0.03
+			
+			}
+		} 
+PRE_readying_war_economy_idea4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_readying_war_economy_idea4" }
+			#picture = 
+			modifier = {
+			production_speed_buildings_factor = 0.08
+			industrial_capacity_factory = 0.08
+			consumer_goods_factor = -0.04
+			line_change_production_efficiency_factor = 0.04
+			
+			}
+		} 
+PRE_readying_war_economy_idea5 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_readying_war_economy_idea5" }
+			#picture = 
+			modifier = {
+			production_speed_buildings_factor = 0.1
+			industrial_capacity_factory = 0.1
+			consumer_goods_factor = -0.05
+			line_change_production_efficiency_factor = 0.05
+			
+			}
+		} 
+PRE_guderian_doctrine = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_guderian_doctrine" }
+			#picture = 
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					reliability = 0.03
+					instant = yes
+				}
+			}
+			research_bonus = {
+				armor = 0.05
+			}
+			modifier = {
+					army_armor_attack_factor = 0.05
+					army_armor_defence_factor = 0.05			
+			}
+		} 
+PRE_guderian_doctrine2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_guderian_doctrine" }
+			#picture = 
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05					
+					maximum_speed = 0.03
+					reliability = 0.03
+					instant = yes
+				}
+			}
+			research_bonus = {
+				armor = 0.05
+			}
+			modifier = {
+					army_armor_attack_factor = 0.05
+					army_armor_defence_factor = 0.05			
+			}
+		} 
+PRE_guderian_doctrine3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_guderian_doctrine" }
+			#picture = 
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.06					
+					maximum_speed = 0.06
+					reliability = 0.06
+					instant = yes
+				}
+			}
+			research_bonus = {
+				armor = 0.1
+			}
+			modifier = {
+					army_armor_attack_factor = 0.1
+					army_armor_defence_factor = 0.1			
+			}
+		} 
+PRE_new_modern_prussian_army_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_new_modern_prussian_army_idea" }
+			#picture = 
+			modifier = {
+				army_attack_factor = 0.05
+				army_org_factor = 0.05
+				army_org_regain = 0.05
+			}
+		} 
 	}
 }

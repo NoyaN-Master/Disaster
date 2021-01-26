@@ -1,6 +1,8 @@
 GER_unification_decisions = {
 	 GER_for_germany_liberal = {
-		visible = { has_government = liberal}
+		visible = { has_government = liberal
+                    NOT = { has_country_flag = PRE_formed_greater_germany}          
+          }
 	 	available = {
 			if = {
                     check_variable = {
@@ -8,6 +10,7 @@ GER_unification_decisions = {
                         value = 23
                         compare = greater_than_or_equals
                     } }
+                    NOT = { has_country_flag = PRE_formed_greater_germany}
 	}
 		highlight_state_targets = {
 			state = 64
@@ -20,7 +23,9 @@ GER_unification_decisions = {
 	 
 	 }
 	 GER_for_germany_authoritarian_democrat = {
-		visible = { has_government = authoritarian_democrat}
+		visible = { has_government = authoritarian_democrat
+          NOT = { has_country_flag = PRE_formed_greater_germany}
+          }
 	 	available = {
 			if = {
                     check_variable = {
@@ -28,6 +33,7 @@ GER_unification_decisions = {
                         value = 23
                         compare = greater_than_or_equals
                     } }
+                    NOT = { has_country_flag = PRE_formed_greater_germany}
 	}
 		highlight_state_targets = {
 			state = 64
@@ -39,7 +45,9 @@ GER_unification_decisions = {
           }	 
 	 }
  	 GER_for_germany_autocratic = {
-		visible = { has_government = autocratic}
+		visible = { has_government = autocratic
+          NOT = { has_country_flag = PRE_formed_greater_germany}
+          }
 	 	available = {
 			if = {
                     check_variable = {
@@ -47,6 +55,7 @@ GER_unification_decisions = {
                         value = 23
                         compare = greater_than_or_equals
                     } }
+                    NOT = { has_country_flag = PRE_formed_greater_germany}
 	}
 		highlight_state_targets = {
 			state = 64
@@ -59,7 +68,9 @@ GER_unification_decisions = {
 	 
 	 }
  	 GER_for_germany_ultranationalist= {
-		visible = { has_government = ultranationalist}
+		visible = { has_government = ultranationalist
+          NOT = { has_country_flag = PRE_formed_greater_germany}
+          }
 	 	available = {
 			if = {
                     check_variable = {
@@ -67,6 +78,7 @@ GER_unification_decisions = {
                         value = 23
                         compare = greater_than_or_equals
                     } }
+                    NOT = { has_country_flag = PRE_formed_greater_germany}
 	}
 		highlight_state_targets = {
 			state = 64
@@ -79,7 +91,9 @@ GER_unification_decisions = {
 	 
 	 }
  	 GER_for_germany_revolutionary_nationalist= {
-		visible = { has_government = revolutionary_nationalist}
+		visible = { has_government = revolutionary_nationalist
+          NOT = { has_country_flag = PRE_formed_greater_germany}
+          }
 	 	available = {
 			if = {
                     check_variable = {
@@ -87,6 +101,7 @@ GER_unification_decisions = {
                         value = 23
                         compare = greater_than_or_equals
                     } }
+                    NOT = { has_country_flag = PRE_formed_greater_germany}
 	}
 		highlight_state_targets = {
 			state = 64
@@ -120,6 +135,7 @@ GER_unification_decisions = {
           remove_effect = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
 			set_cosmetic_tag = GER_big
+               set_country_flag = PRE_formed_greater_germany
           }	 
 	 
 	 }
@@ -140,6 +156,7 @@ GER_unification_decisions = {
           remove_effect = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
 			set_cosmetic_tag = GER_big
+               set_country_flag = PRE_formed_greater_germany
           }	 
 	 }
  	 GER_for_germany_autocratic_greater = {
@@ -159,6 +176,7 @@ GER_unification_decisions = {
           remove_effect = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
 			set_cosmetic_tag = GER_big
+               set_country_flag = PRE_formed_greater_germany
           }	 
 	 
 	 }
@@ -179,6 +197,7 @@ GER_unification_decisions = {
           remove_effect = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
 			set_cosmetic_tag = GER_big
+               set_country_flag = PRE_formed_greater_germany
           }	 
 	 
 	 }
@@ -199,6 +218,7 @@ GER_unification_decisions = {
           remove_effect = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
 			set_cosmetic_tag = GER_big
+               set_country_flag = PRE_formed_greater_germany
           }	 
 	 
 	 }

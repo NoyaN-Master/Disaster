@@ -177,6 +177,7 @@ create_country_leader = {
 }
 
 
+
 ######################################### Generals
 
 #field marshals
@@ -232,7 +233,30 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 2
 }
+create_corps_commander = {
+	name = "Heinz Guderian"
+	portrait_path = "gfx/leaders/PRE/Heinz_Guderian.tga"
+	traits = {
 
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Walter Model"
+	portrait_path = "gfx/leaders/PRE/Walter_Model.tga"
+	traits = {
+
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
 
 
 

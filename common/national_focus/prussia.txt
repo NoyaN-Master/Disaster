@@ -2487,9 +2487,16 @@ focus_tree = {
 		relative_position_id = PRE_prussian_army
 		cost = 6		
 		prerequisite = { focus =  PRE_prussian_army}
-		
+        select_effect = {
+			add_ideas = PRE_army_maneuvres_idea		
+        }
+
 		completion_reward = {
-		
+		    	custom_effect_tooltip = PRE_army_maneuvres_tooltip
+				show_ideas_tooltip = PRE_army_maneuvres_idea	
+		hidden_effect = {
+		remove_ideas = PRE_army_maneuvres_idea
+		}				
 		}
 	}
 	focus = {
@@ -2502,12 +2509,12 @@ focus_tree = {
 		prerequisite = { focus =  PRE_army_maneuvres}
 		
 		completion_reward = {
-		
+		custom_effect_tooltip = PRE_readying_war_economy_tooltip
 		}
 	}
 	focus = {
 		id = PRE_new_rifles
-		icon = GFX_goal_unknown
+		icon = GFX_goal_new_rifles
 		x = -1
 		y = 3
 		relative_position_id = PRE_prussian_army
@@ -2515,12 +2522,17 @@ focus_tree = {
 		prerequisite = { focus =  PRE_readying_war_economy}
 		
 		completion_reward = {
-		
+		add_tech_bonus = {
+			name = PRE_new_rifles_tech
+			bonus = 0.5
+			uses = 2
+			category = infantry_weapons
+		}		
 		}
 	}
 	focus = {
 		id = PRE_expand_reserves
-		icon = GFX_goal_unknown
+		icon = GFX_goal_prussia_army
 		x = 1
 		y = 2
 		relative_position_id = PRE_prussian_army
@@ -2528,7 +2540,8 @@ focus_tree = {
 		prerequisite = { focus =  PRE_army_maneuvres}
 		
 		completion_reward = {
-		
+		add_war_support = 0.1
+		add_manpower = 50000
 		}
 	}
 	focus = {
@@ -2541,7 +2554,17 @@ focus_tree = {
 		prerequisite = { focus = PRE_expand_reserves }
 		
 		completion_reward = {
-		 
+			add_tech_bonus = {
+				name = PRE_artillery_from_krupp
+				bonus = 0.50
+				uses = 2
+				category = artillery
+			}			
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 800
+				producer = ROOT
+			}		 
 		}
 	}
 	focus = {
@@ -2554,12 +2577,23 @@ focus_tree = {
 		prerequisite = { focus = PRE_prussian_army }
 		
 		completion_reward = {
-		
+				add_tech_bonus = {
+					name = PRE_support_equipment
+					bonus = 0.50
+					uses = 1
+					category = support_tech
+				}	
+			add_tech_bonus = {
+				name = PRE_armor_tech
+				bonus = 1
+				uses = 1
+				category = armor
+			}	
 		}
 	}
 	focus = {
 		id = PRE_empower_guderian
-		icon = GFX_goal_unknown
+		icon = GFX_goal_guderian
 		x = 3
 		y = 2
 		relative_position_id = PRE_prussian_army
@@ -2567,12 +2601,18 @@ focus_tree = {
 		prerequisite = { focus = PRE_new_way_of_warfare }
 		
 		completion_reward = {
-		
+		add_ideas = PRE_guderian_doctrine
+			add_tech_bonus = {
+				name = PRE_armor_tech
+				bonus = 0.5
+				uses = 2
+				category = armor
+			}		
 		}
 	}
 	focus = {
 		id = PRE_establish_tank_plants
-		icon = GFX_goal_unknown
+		icon = GFX_goal_tank_plant
 		x = 3
 		y = 3
 		relative_position_id = PRE_prussian_army
@@ -2580,7 +2620,27 @@ focus_tree = {
 		prerequisite = { focus = PRE_empower_guderian }
 		
 		completion_reward = {
-		
+					swap_ideas = {
+							remove_idea = PRE_guderian_doctrine
+							add_idea = PRE_guderian_doctrine2
+						}
+			random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}	
+
+
 		}
 	}
 	focus = {
@@ -2593,7 +2653,14 @@ focus_tree = {
 		prerequisite = { focus = PRE_establish_new_acadamies }
 		prerequisite = { focus = PRE_new_rifles }		
 		completion_reward = {
-		
+			add_tech_bonus = {
+				name = PRE_special_forces_tech
+				bonus = 0.5
+				uses = 3
+				category = mountaineers_tech
+				category = marine_tech
+				category = para_tech
+			}		
 		}
 	}
 	focus = {
@@ -2606,7 +2673,12 @@ focus_tree = {
 		prerequisite = { focus = PRE_new_rifles }
 		prerequisite = { focus = PRE_krupp_artillery_delivery }		
 		completion_reward = {
-		
+			add_tech_bonus = {
+				name = PRE_anti_tank_tech
+				bonus = 0.5
+				uses = 2
+				category = cat_anti_tank
+			}		
 		}
 	}
 	focus = {
@@ -2619,7 +2691,22 @@ focus_tree = {
 		prerequisite = { focus = PRE_krupp_artillery_delivery }
 		prerequisite = { focus = PRE_establish_tank_plants }		
 		completion_reward = {
-		
+					swap_ideas = {
+							remove_idea = PRE_guderian_doctrine2
+							add_idea = PRE_guderian_doctrine3
+						}		
+			add_tech_bonus = {
+				name = PRE_armor_tech
+				bonus = 1
+				uses = 1
+				category = armor
+			}
+				add_tech_bonus = {
+			name = PRE_army_doctrine
+			bonus = 1
+			uses = 1
+			category = land_doctrine
+		}	
 		}
 	}
 	focus = {
@@ -2633,7 +2720,13 @@ focus_tree = {
 		prerequisite = { focus = PRE_anti_armor }
 		prerequisite = { focus = PRE_special_forces }		
 		completion_reward = {
-		
+		add_ideas = PRE_new_modern_prussian_army_idea
+				add_tech_bonus = {
+			name = PRE_army_doctrine
+			bonus = 1
+			uses = 2
+			category = land_doctrine
+		}			
 		}
 	}
 

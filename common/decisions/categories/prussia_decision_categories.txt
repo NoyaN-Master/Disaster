@@ -11,3 +11,16 @@ PRE_ministry_of_propaganda_decision = {
 		has_completed_focus = PRE_ministry_of_propaganda
 	}
 }
+PRE_war_economy_decision = {
+
+	priority = 100
+	allowed = {
+		OR = {
+			tag = PRE
+		}
+	}
+	picture = Decision_picture_war_economy
+	visible = {
+		has_completed_focus = PRE_readying_war_economy
+	}
+}

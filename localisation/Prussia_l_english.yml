@@ -1,5 +1,7 @@
 ﻿l_english: 
 
+#PRE_GATHERING_STORM_DESC
+PRE_GATHERING_STORM_DESC:0 "In the aftermath of the Great War, Germany laid in ruins, broken apart. The Junkers have taken power in Prussia, but they’re far from unopposed. Political dissidence is rampant in Prussia, and Junker rule is dwindling in power. The stage is set for a political catastrophe, and the sociopolitical struggles of this newly reborn country have Europe waiting with baited breath for what may come next."
 
 #focus
 PRE_start_focus:0"Adress the Reichstag"
@@ -261,7 +263,7 @@ PRE_liberal_victory:0"Liberal Victory"
 PRE_dnvp_victory:0"DNVP Victory"
 PRE_nazi_victory:0"AdNP Victory"
 PRE_schleicher_victory:0"Schleicher is in power"
-
+PRE_formed_greater_germany:0"Has formed Greater Germany."
 
 #ideas Schleicher
 PRE_simmering_discontent:0"Slimmering Discontent"
@@ -543,9 +545,9 @@ PRE_nacht_der_langer_messer_tooltip:0"§RThe massive purge will give the followi
 PRE_ministry_of_propaganda_tooltip:0"§GThis focus will unlock decisions to establish the Reich Ministry of Propaganda.§!"
 PRE_ministry_of_propaganda_increase_tooltip:0"§GThis decision will increase our propaganda and grip on the German people!§!"
 PRE_martial_law_tooltip:0"§GDeclaring nationwide martial law will give the following effect during the focus:§!"
-
-#PRE_GATHERING_STORM_DESC
-PRE_GATHERING_STORM_DESC:0 "In the aftermath of the Great War, Germany laid in ruins, broken apart. The Junkers have taken power in Prussia, but they’re far from unopposed. Political dissidence is rampant in Prussia, and Junker rule is dwindling in power. The stage is set for a political catastrophe, and the sociopolitical struggles of this newly reborn country have Europe waiting with baited breath for what may come next."
+PRE_army_maneuvres_tooltip:0"§GDuring this focus we will get the following effect:§!"
+PRE_readying_war_economy_tooltip:0"§GThis focus will unlock the War Economy decisions. These decisions will ensure the readiness of the war industry for any future war.§!"
+PRE_war_economy_decision_increase_tooltip:0"§GThis Decision will increase the effectivenes of our war economy.§!"
 
 
 
@@ -590,3 +592,38 @@ PRE_new_curriculum_idea:0"New Curriculum"
 PRE_new_curriculum_idea_desc:0""
 PRE_new_curriculum_idea2:0"Expanded New Curriculum"
 PRE_new_curriculum_idea2_desc:0""
+PRE_army_maneuvres_idea:0"Army Maneuvres"
+PRE_army_maneuvres_idea_desc:0""
+PRE_readying_war_economy_idea1:0"War Economy"
+PRE_readying_war_economy_idea2:0"War Economy"
+PRE_readying_war_economy_idea3:0"War Economy"
+PRE_readying_war_economy_idea4:0"War Economy"
+PRE_readying_war_economy_idea5:0"War Economy"
+PRE_readying_war_economy_idea1_desc:0""
+PRE_readying_war_economy_idea2_desc:0""
+PRE_readying_war_economy_idea3_desc:0""
+PRE_readying_war_economy_idea4_desc:0""
+PRE_readying_war_economy_idea5_desc:0""
+PRE_guderian_doctrine:0"Guderian Doctrine"
+PRE_guderian_doctrine_desc:0""
+PRE_guderian_doctrine2:0"Guderian Doctrine"
+PRE_guderian_doctrine2_desc:0""
+PRE_guderian_doctrine3:0"Guderian Doctrine"
+PRE_guderian_doctrine3_desc:0""
+PRE_new_modern_prussian_army_idea:0"New Prussian Army"
+PRE_new_modern_prussian_army_idea_desc:0""
+
+ # war economy decisions 
+PRE_war_economy_decision:0"Readying The War Economy"
+PRE_war_economy_decision_desc:0"In order to make sure we fight a grand war as effectively and as well as we possibly can, we must make sure to take several decisions regarding production, rationing, the workforce, and anything else that could help the war economy and war production"
+PRE_war_economy_decision_1:0"Start Rationing"
+PRE_war_economy_decision_1_desc:0"In order to have an efficient war economy, we must start rationing food supply, in order to make sure our stocks do not run out and everything is carefully managed"
+PRE_war_economy_decision_2:0"Introduce War Bonds"
+PRE_war_economy_decision_2_desc:0"We need more funds to invest into the war effort, and we can easily get more by appealing to the public. They will happily aid their great state to fight any war we need to win."
+PRE_war_economy_decision_3:0"Pressure the Rich"
+PRE_war_economy_decision_3_desc:0"The rich are called rich for a reason, they have great deals of money, money that could be used in a war effort! By using political influence and threats, we can coerce them into giving us bonds we can use."
+PRE_war_economy_decision_4:0"Increase Working Days"
+PRE_war_economy_decision_4_desc:0"As unpopular this decision may be, it is needed! A few more working hours is a worthy price to pay to win a war, and thus it will be done."
+PRE_war_economy_decision_5:0"Woman Workforce"
+PRE_war_economy_decision_5_desc:0"Women in the workforce, and in the factories may be a bizarre and outright scandalous thing for many people, but with much of the original workforce off to fight in the army, it is imperative we take this act to maintain war production."
+
