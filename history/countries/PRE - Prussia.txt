@@ -257,7 +257,66 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 2
 }
+create_corps_commander = {
+	name = "Gunther von Kluge"
+	portrait_path = "gfx/leaders/PRE/Gunther_von_Kluge.tga"
+	traits = {
 
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Walter von Brauchitsch"
+	portrait_path = "gfx/leaders/PRE/Walther_von_Brauchitsch.tga"
+	traits = {
+
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Alexander von Falkenhausen"
+	portrait_path = "gfx/leaders/PRE/Alexander_von_Falkenhausen.tga"
+	traits = {
+
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Erich von Manstein"
+	portrait_path = "gfx/leaders/PRE/Erich_von_Manstein.tga"
+	traits = {
+
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Georg von Kuchler"
+	portrait_path = "gfx/leaders/PRE/Georg_von_Kuchler.tga"
+	traits = {
+
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
 
 
 

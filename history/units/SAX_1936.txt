@@ -1,6 +1,6 @@
 division_template = {
 	name = "Infantry Division"
-	division_names_group = PRE_INF_01
+	division_names_group = SAX_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -81,128 +81,88 @@ division_template = {
 }
 units = {
 	division= {	
-		name = "1. Infantry Division of Prussia"
-		location = 6521
+		name = "1. Infantry Disivion of Saxony-Thüringen"
+		location = 514
 		division_template = "Infantry Division"
 		start_experience_factor = 0.15
 		start_equipment_factor = 1
 
 	}
 	division= {	
-		name = "2. Infantry Division of Prussia"
-		location = 6521
+		name = "2. Infantry Disivion of Saxony-Thüringen"
+		location = 514
 		division_template = "Infantry Division"
 		start_experience_factor = 0.15
 		start_equipment_factor = 1
 
 	}
 	division= {	
-		name = "3. Infantry Division of Prussia"
-		location = 6521
+		name = "3. Infantry Disivion of Saxony-Thüringen"
+		location = 514
 		division_template = "Infantry Division"
 		start_experience_factor = 0.15
 		start_equipment_factor = 1
 
 	}
 	division= {	
-		name = "4. Infantry Division of Prussia"
-		location = 6521
+		name = "4. Infantry Disivion of Saxony-Thüringen"
+		location = 514
 		division_template = "Infantry Division"
 		start_experience_factor = 0.15
 		start_equipment_factor = 1
 
 	}
 	division= {	
-		name = "5. Infantry Division of Prussia"
-		location = 6521
+		name = "5. Infantry Disivion of Saxony-Thüringen"
+		location = 514
 		division_template = "Infantry Division"
 		start_experience_factor = 0.15
 		start_equipment_factor = 1
 
 	}
 	division= {	
-		name = "6. Infantry Division of Prussia"
-		location = 6521
+		name = "6. Infantry Disivion of Saxony-Thüringen"
+		location = 514
 		division_template = "Infantry Division"
 		start_experience_factor = 0.15
 		start_equipment_factor = 1
 
 	}
 	division= {	
-		name = "7. Infantry Division of Prussia"
-		location = 6521
+		name = "7. Infantry Disivion of Saxony-Thüringen"
+		location = 514
 		division_template = "Infantry Division"
 		start_experience_factor = 0.15
 		start_equipment_factor = 1
 
 	}
 	division= {	
-		name = "8. Infantry Division of Prussia"
-		location = 6521
+		name = "8. Infantry Disivion of Saxony-Thüringen"
+		location = 514
 		division_template = "Infantry Division"
 		start_experience_factor = 0.15
 		start_equipment_factor = 1
 
 	}
 	division= {	
-		name = "9. Infantry Division of Prussia"
-		location = 6521
-		division_template = "Infantry Division"
-		start_experience_factor = 0.15
-		start_equipment_factor = 1
-
-	}
-	division= {	
-		name = "2.  Cavalry Division of Prussia"
-		location = 6521
+		name = "1.  Cavalry Division of Saxony-Thüringen"
+		location = 514
 		division_template = "Cavalry Division" 
 		start_experience_factor = 0.15
 		start_equipment_factor = 1
 
 	}
 	division= {	
-		name = "3.  Cavalry Division of Prussia"
-		location = 6521
+		name = "2.  Cavalry Division of Saxony-Thüringen"
+		location = 514
 		division_template = "Cavalry Division" 
 		start_experience_factor = 0.15
 		start_equipment_factor = 1
 
 	}
 	division= {	
-		name = "4.  Cavalry Division of Prussia"
-		location = 6521
-		division_template = "Cavalry Division" 
-		start_experience_factor = 0.15
-		start_equipment_factor = 1
-
-	}
-	division= {	
-		name = "5.  Cavalry Division of Prussia"
-		location = 6521
-		division_template = "Cavalry Division" 
-		start_experience_factor = 0.15
-		start_equipment_factor = 1
-
-	}
-	division= {	
-		name = "6.  Cavalry Division of Prussia"
-		location = 6521
-		division_template = "Cavalry Division" 
-		start_experience_factor = 0.15
-		start_equipment_factor = 1
-
-	}
-	division= {	
-		name = "7.  Cavalry Division of Prussia"
-		location = 6521
-		division_template = "Cavalry Division" 
-		start_experience_factor = 0.15
-		start_equipment_factor = 1
-
-	}
-	division= {	
-		name = "8.  Cavalry Division of Prussia"
-		location = 6521
+		name = "3.  Cavalry Division of Saxony-Thüringen"
+		location = 514
 		division_template = "Cavalry Division" 
 		start_experience_factor = 0.15
 		start_equipment_factor = 1
@@ -213,16 +173,16 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
-			creator = "PRE"
+			creator = "SAX"
 		}
-		requested_factories = 2
+		requested_factories = 1
 		progress = 0.54
 		efficiency = 100
 	}
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
-			creator = "PRE"
+			creator = "SAX"
 		}
 		requested_factories = 1
 		progress = 0.74
@@ -234,14 +194,6 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.83
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_1
-		}
-		requested_factories = 1
-		progress = 0.29
 		efficiency = 100
 	}
 }
