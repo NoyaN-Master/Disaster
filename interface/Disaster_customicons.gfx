@@ -6186,7 +6186,7 @@ spriteTypes = {
     }
     
     SpriteType = {
-		name = "GFX_goal_expand_the_coal_mines"
+		name = "GFX_goal_expand_the_coal_mines_shine"
 		texturefile = "gfx/interface/goals/expand_the_coal_mines.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -6223,7 +6223,7 @@ spriteTypes = {
     }
 
     SpriteType = {
-		name = "GFX_goal_glorify_prussian_discipline"
+		name = "GFX_goal_glorify_prussian_discipline_shine"
 		texturefile = "gfx/interface/goals/glorify_prussian_discipline.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -6260,7 +6260,7 @@ spriteTypes = {
     }
 
     SpriteType = {
-		name = "GFX_goal_goerings_wild_ride"
+		name = "GFX_goal_goerings_wild_ride_shine"
 		texturefile = "gfx/interface/goals/goerings_wild_ride.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -6297,7 +6297,7 @@ spriteTypes = {
     }
 
     SpriteType = {
-		name = "GFX_goal_silesian_steel"
+		name = "GFX_goal_silesian_steel_shine"
 		texturefile = "gfx/interface/goals/silesian_steel.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
