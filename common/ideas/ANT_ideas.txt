@@ -259,7 +259,7 @@ IZM_land_of_proletariat = {
 			unisocialist_drift = 0.15
 			}
 		}
-IZM_to_liberation = {
+IZM_to_liberation_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
 			picture = IZM_land_of_proletariat
 			modifier = {
