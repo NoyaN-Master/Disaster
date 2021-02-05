@@ -193,8 +193,6 @@ ANT_Warlords_Emerging = {
 			authoritarian_democrat_drift = 0.01
 			}	
 		}		
-	}
-}
 ####fuller
 SKL_armor_idea_1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
@@ -226,46 +224,5 @@ SKL_jannies = {
 
 			}
 		}							
-######nazbol
-IZM_great_war = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
-			picture = IZM_great_war
-			modifier = {
-			army_defence_factor = 0.3
-			recruitable_population = 0.04
-			production_factory_max_efficiency_factor = 0.3
-			production_factory_start_efficiency_factor = 0.3 
-			production_speed_buildings_factor = 0.3
-			war_support_weekly = 0.05
-			defensive_war_stability_factor = 0.05
-			}
-		}
-IZM_red_legion = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
-			picture = IZM_red_legion
-			modifier = {
-			army_attack_factor = 0.10
-			army_morale_factor = 0.15
-			army_org_factor = 0.3
-			minimum_training_level = 0.5
-			war_support_factor = 0.3
-			}
-		}
-IZM_land_of_proletariat = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
-			picture = IZM_land_of_proletariat
-			modifier = {
-			production_speed_buildings_factor = 0.5 
-			unisocialist_drift = 0.15
-			}
-		}
-IZM_to_liberation_idea = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
-			picture = IZM_land_of_proletariat
-			modifier = {
-			conscription = 0.05
-			army_attack_factor = 0.10
-			attrition = -0.1
-			}
-		}					
-						
+}
+}
