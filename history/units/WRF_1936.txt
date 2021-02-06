@@ -14,7 +14,6 @@
 		infantry = { x = 2 y = 2 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }   # Pioneer Bn
 	}
 }
 
@@ -23,8 +22,6 @@ division_template = {
 	division_names_group = TUR_GAR_01
 
 	regiments = {
-		artillery = { x = 3 y = 0 }
-		artillery = { x = 3 y = 1 }
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
@@ -36,7 +33,6 @@ division_template = {
 		infantry = { x = 2 y = 2 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }   # Pioneer Bn
 		artillery = { x = 0 y = 1 }
 	}
 }

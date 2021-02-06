@@ -1,0 +1,73 @@
+ideas = {
+
+country = {
+
+OTH_racial_brotherhood_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRA_Repress_Integralists" }
+			picture = GFX_idea_unknown
+			modifier = {
+			stability_factor = 0.10
+            stability_weekly = 0.002
+            conscription = 0.02
+			}
+			}
+OTH_racial_brotherhood_idea_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRA_Repress_Integralists" }
+			picture = GFX_idea_unknown
+			modifier = {
+			stability_factor = 0.15
+            stability_weekly = 0.005
+            conscription = 0.03
+			}
+			}			
+OTH_internal_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRA_Repress_Integralists" }
+			picture = GFX_idea_unknown
+			modifier = {
+			production_factory_max_efficiency_factor = 0.5 
+			industrial_capacity_factory = 0.4
+			production_speed_buildings_factor = 0.5 
+			}
+			}			
+OTH_MSF = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRA_Repress_Integralists" }
+			picture = GFX_idea_unknown
+			modifier = {
+			war_support_factor = 0.10
+            send_volunteer_divisions_required = -0.3
+            send_volunteer_size = 3
+            experience_gain_army = 0.10
+			}
+			}
+OTH_MSF_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRA_Repress_Integralists" }
+			picture = GFX_idea_unknown
+			modifier = {
+			war_support_factor = 0.10
+            send_volunteer_divisions_required = -0.3
+            send_volunteer_size = 3
+            experience_gain_army = 0.10
+            army_attack_factor = 0.05
+            attrition = -0.3
+            special_forces_cap = 0.5
+            political_power_gain = -0.05
+			}
+			}
+OTH_MSF_last = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRA_Repress_Integralists" }
+			picture = GFX_idea_unknown
+			modifier = {
+			war_support_factor = 0.10
+            send_volunteer_divisions_required = -0.3
+            send_volunteer_size = 3
+            experience_gain_army = 0.10
+            army_attack_factor = 0.05
+            attrition = -0.3
+            special_forces_cap = 0.5
+            political_power_gain = -0.10
+			army_morale_factor = 0.3
+			training_time_factor = 0.2
+			}
+			}
+    }	       
+}

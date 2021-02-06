@@ -208,6 +208,9 @@ country_event = { #collapse-OTH
         IZM = {
         load_oob = "IZM_Army"            
         }
+		OTH=  {
+		load_oob = "OTH_Army_favour"
+		}
         OTH = { change_tag_from = ANT }
         news_event = { id = ant.7 }
     }
@@ -231,6 +234,21 @@ country_event = { #collapse-IZM
         IZM = {
         load_oob = "IZM_Army_favour"            
         }
+		OTH=  {
+		load_oob = "OTH_Army"
+		}
+		IZM = {
+        transfer_state = 839
+        }
+        839 = {
+        add_core_of = IZM    
+        }
+		KLG = {
+        transfer_state = 798
+        }
+        798  = {
+        add_core_of = KLG    
+        }
         IZM = { change_tag_from = ANT }
         news_event = { id = ant.7 }
     }
@@ -253,6 +271,15 @@ country_event = { #collapse-ANK
         release = IZM
         IZM = {
         load_oob = "IZM_Army"            
+        }
+		OTH=  {
+		load_oob = "OTH_Army"
+		}
+		ANK = {
+        transfer_state = 839
+        }
+        839 = {
+        add_core_of = ANK    
         }
         ANK = { change_tag_from = ANT }
         news_event = { id = ant.7 }
@@ -517,5 +544,51 @@ country_event = { #Istanbul Revolts
         add_war_support = 0.20
         hidden_effect = {   
         }
+    }
+}
+
+country_event = { #quick congress
+    id = ant.23
+    title = ant.23.t
+    desc = ant.23.d
+    fire_only_once = yes
+    picture = GFX_evt_Picture
+    is_triggered_only = yes
+
+    option = {
+        ai_chance = { factor = 100} 
+        name = ant.22.a
+        set_politics = {
+	    ruling_party = unisocialist
+        }
+        add_popularity = {
+        ideology = authoritarian_socialist
+        popularity = -0.2
+        } 
+        add_popularity = {
+        ideology = unisocialist
+        popularity = -0.2
+        }    
+        hidden_effect = {   
+        set_country_flag = nazbol_congress
+        }
+
+    }
+
+    option = {
+        ai_chance = { factor = 20} 
+        name = ant.22.a
+        add_popularity = {
+        ideology = libertarian_socialist
+        popularity = 0.4
+        } 
+        add_popularity = {
+        ideology = authoritarian_socialist
+        popularity = 0.2
+        }    
+        hidden_effect = {   
+        set_country_flag = nazim_congress
+        }
+
     }
 }

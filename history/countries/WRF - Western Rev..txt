@@ -148,21 +148,41 @@ create_country_leader = {
 create_field_marshal = {
 			name = "Mustafa Kemal Paşa"
 			picture = "Portrait_WRF_Mustafa_Kemal.tga"
-			traits = { offensive_doctrine }
+			traits = { war_hero brilliant_strategist war_hero infantry_officer trickster desert_fox hill_fighter }
 			skill = 5
-			attack_skill = 7
-			defense_skill = 7
-			planning_skill = 7
-			logistics_skill = 3
-			}
-			
-create_field_marshal = {
-			name = "Miralay Paşa"
-			picture = "Portrait_WRF_Miralay.tga"
-			traits = { offensive_doctrine }
-			skill = 3
 			attack_skill = 5
-			defense_skill = 3
-			planning_skill = 3
+			defense_skill = 5
+			planning_skill = 4
 			logistics_skill = 3
 			}
+create_corps_commander = {
+		name = "Fahrettin Altay"
+		gfx = "Portrait_WRF_Fahrettin_Altay"
+		traits = { war_hero brilliant_strategist cavalry_officer hill_fighter }
+		skill = 4 #13
+		attack_skill = 4
+		defense_skill = 3
+		planning_skill = 4
+		logistics_skill = 2
+	}
+
+create_corps_commander = {
+		name = "Cemil Cahit Toydemir"
+		gfx = "Portrait_WRF_Toydemir"
+		traits = { career_officer infantry_officer hill_fighter }
+		skill = 3 #10
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 3
+		logistics_skill = 2
+	}
+create_corps_commander = {
+		name = "Mehmet Salih Omurtak"
+		gfx = "Portrait_WRF_Omurtak"
+		traits = { politically_connected infantry_officer harsh_leader }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 1
+		planning_skill = 2
+		logistics_skill = 2
+	}					

@@ -1,0 +1,369 @@
+focus_tree = {
+	id = Merc_Tree_OTH
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = OTH
+		}
+	}
+    default = no
+	continuous_focus_position = { x = 100 y = 2000 }
+
+  focus = {
+		id = OTH_the_show_starts
+		icon = GFX_goal_OTH_Churchill
+		x = 8
+		y = 1
+		cost = 1
+		ai_will_do = {
+			factor = 80	
+		}
+		select_effect = {
+		}
+		completion_reward = {
+        add_stability = 0.10
+        add_political_power = 120 
+        }
+	} 
+
+    focus = {
+		id = OTH_racial_brotherhood
+		icon = GFX_goal_OTH_noracist
+		x = 8
+		y = 2
+		cost = 2
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus =OTH_the_show_starts }
+		select_effect = {
+		}
+		completion_reward = {
+        add_ideas = OTH_racial_brotherhood_idea    
+        }
+	}
+
+    focus = {
+		id = OTH_soldiers_noborder
+		icon = GFX_goal_OTH_MSF
+		x = 8
+		y = 3
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus =OTH_racial_brotherhood }
+		select_effect = {
+		}
+		completion_reward = {
+        add_ideas = OTH_MSF    
+        }
+	}
+
+    focus = {
+		id = OTH_Internal_Sector
+		icon = GFX_goal_OTH_Gears
+		x = 4
+		y = 4
+		cost = 2
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus =OTH_soldiers_noborder }
+		select_effect = {
+		}
+		completion_reward = {
+        }
+	}
+
+    focus = {
+		id = OTH_The_Motherbase
+		icon = GFX_goal_OTH_Motherbase
+		x = 3
+		y = 5
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = OTH_Internal_Sector }
+		select_effect = {
+		}
+		completion_reward = {
+        345 = {
+        add_building_construction = {
+        type = infrastructure
+        level = 4
+        instant_build = yes
+        }    
+        add_building_construction = {
+        type = industrial_complex
+        level = 2
+        instant_build = yes
+        }    
+        }
+        839 = {    
+        add_building_construction = {
+        type = infrastructure
+        level = 3
+        instant_build = yes
+        }
+        }
+	}
+    }
+
+    focus = {
+		id = OTH_Military_Industry
+		icon = GFX_goal_OTH_factory
+		x = 5
+		y = 5
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = OTH_Internal_Sector }
+		select_effect = {
+		}
+		completion_reward = {
+        345 = {
+        add_building_construction = {
+        type = arms_factory
+        level = 3
+        instant_build = yes
+        }
+        }
+        839 = {    
+        add_building_construction = {
+        type = arms_factory
+        level = 3
+        instant_build = yes
+        }    
+        }
+        }
+	}
+
+    focus = {
+		id = OTH_Officery
+		icon = GFX_goal_OTH_People
+		x = 4
+		y = 6
+		cost = 2
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = OTH_Military_Industry }
+        prerequisite = { focus = OTH_The_Motherbase }
+		select_effect = {
+		}
+		completion_reward = {
+        swap_ideas = {
+        remove_idea = OTH_racial_brotherhood_idea
+        add_idea = OTH_racial_brotherhood_idea_2    
+        }    
+        }
+	}
+
+    focus = {
+		id = OTH_Anatolia_Sector
+		icon = GFX_goal_OTH_anatolia
+		x = 8
+		y = 4
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus =OTH_soldiers_noborder }
+		select_effect = {
+		}
+		completion_reward = {
+        }
+	}
+
+    focus = {
+		id = OTH_Seize_Communists
+		icon = GFX_goal_OTH_IZM
+		x = 7
+		y = 5
+		cost = 2
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = OTH_Anatolia_Sector }
+		select_effect = {
+		}
+		completion_reward = {
+        declare_war_on = {
+        type = annex_everything
+        target = IZM
+        }    
+        }
+	}
+
+    focus = {
+		id = OTH_Against_Tyrants
+		icon = GFX_goal_OTH_Tyrant
+		x = 9
+		y = 5
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = OTH_Anatolia_Sector }
+		select_effect = {
+		}
+		completion_reward = {
+        create_wargoal = {
+        type = annex_everything
+        target = WRF
+        }
+        create_wargoal = {
+        type = annex_everything
+        target = CIB
+        }    
+        }
+	}
+
+    focus = {
+		id = OTH_Southern_Scoop
+		icon = GFX_goal_OTH_CLP
+		x = 8
+		y = 6
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = OTH_Seize_Communists }
+        prerequisite = { focus = OTH_Against_Tyrants }
+		select_effect = {
+		}
+		completion_reward = {
+        create_wargoal = {
+        type = annex_everything
+        target = CLP
+        }    
+        }
+	}
+
+    focus = {
+		id = OTH_Army_Sector
+		icon = GFX_goal_OTH_SOA
+		x = 12
+		y = 4
+		cost = 2
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus =OTH_soldiers_noborder }
+		select_effect = {
+		}
+		completion_reward = {
+        swap_ideas = {
+        remove_idea = OTH_MSF
+        add_idea = OTH_MSF_2    
+        }    
+        }
+	}
+
+    focus = {
+		id = OTH_Mercenary_Discipline
+		icon = GFX_goal_OTH_Discipline
+		x = 11
+		y = 5
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = OTH_Army_Sector }
+		select_effect = {
+		}
+		completion_reward = {
+        swap_ideas = {
+        remove_idea = OTH_MSF_2
+        add_idea = OTH_MSF_last	 
+        }        
+        }
+	}
+
+    focus = {
+		id = OTH_Buying_Weapons
+		icon = GFX_goal_OTH_Weapons
+		x = 13
+		y = 5
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = OTH_Army_Sector }
+		select_effect = {
+		}
+		completion_reward = {
+        add_political_power = -200
+        add_equipment_to_stockpile = {
+        type = infantry_equipment
+        amount = 2000
+        producer = OTH
+        }
+        add_equipment_to_stockpile = {
+        type = artillery_equipment_2
+        amount = 500
+        producer = OTH
+        }
+        add_equipment_to_stockpile = {
+        type = support_equipment_1
+        amount = 1000
+        producer = OTH
+        }    
+        }
+	}
+
+    focus = {
+		id = OTH_The_Dragon_Units
+		icon = GFX_goal_OTH_Dragon
+		x = 12
+		y = 6
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = OTH_Mercenary_Discipline }
+        prerequisite = { focus = OTH_Buying_Weapons }
+		select_effect = {
+		}
+		completion_reward = {
+        356 = {    
+        create_unit = {
+        division = "name = \"Dragon Unit\" division_template = \"Mercenary Infantry\" start_experience_factor = 0.6 start_equipment_factor = 1.0"
+        owner = OTH
+        }
+        create_unit = {
+        division = "name = \"Gargoyle Unit\" division_template = \"Mercenary Infantry\" start_experience_factor = 0.6 start_equipment_factor = 1.0"
+        owner = OTH
+        }
+        create_unit = {
+        division = "name = \"Abra Unit\" division_template = \"Mercenary Infantry\" start_experience_factor = 0.6 start_equipment_factor = 1.0"
+        owner = OTH
+        }    
+        }
+        }
+	}
+
+    focus = {
+		id = OTH_A_Free_Turkey
+		icon = GFX_goal_OTH_Free
+		x = 8
+		y = 7
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = OTH_The_Dragon_Units }
+        prerequisite = { focus = OTH_Southern_Scoop }
+        prerequisite = { focus = OTH_Officery }
+		select_effect = {
+		}
+		completion_reward = {
+        country_event = { id = ant.22 days = 2 }    
+        }
+	}
+         
+}

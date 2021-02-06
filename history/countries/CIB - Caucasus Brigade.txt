@@ -100,7 +100,7 @@ create_country_leader = {
 create_field_marshal = {
 			name = "Enver Pasha"
 			picture = "Portrait_CIB_Enver_Pasha.tga"
-			traits = { offensive_doctrine }
+			traits = { war_hero brilliant_strategist war_hero infantry_officer trickster desert_fox hill_fighter }
 			skill = 4
 			attack_skill = 5
 			defense_skill = 5
@@ -117,4 +117,16 @@ create_corps_commander = {
 			defense_skill = 3
 			planning_skill = 5
 			logistics_skill = 3
-			}			
+			}
+
+create_corps_commander = {
+		name = "Mustafa Muğlalı"
+		gfx = "Portrait_CIB_Muglali"
+		traits = { war_hero infantry_officer harsh_leader }
+		skill = 3 #7
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 1
+	}
+							

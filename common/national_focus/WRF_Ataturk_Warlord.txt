@@ -539,6 +539,7 @@ focus_tree = {
 		OR = {	has_country_flag = WRF_Kemalist_Won has_country_flag = WRF_Demokrat_End }
 		available = { is_neighbor_of = CIB }
 		}
+		available = { has_war = no }
 	 completion_reward = {
 	 custom_effect_tooltip = enver_war_tt
 	 }	
@@ -594,6 +595,7 @@ focus_tree = {
 		available = {	
 		OR = {	has_country_flag = WRF_Kemalist_Won has_country_flag = WRF_Demokrat_End }
 		}
+		available = { has_war = no }
 	 completion_reward = {
 	 custom_effect_tooltip = intervene_tt
 	 hidden_effect = {
@@ -643,6 +645,7 @@ focus_tree = {
 		available = {	
 		OR = {	has_country_flag = WRF_Kemalist_Won has_country_flag = WRF_Demokrat_End }
 		}
+		available = { has_war = no }
 	 completion_reward = {
 	 custom_effect_tooltip = intervene_tt_caliph	 
 	 declare_war_on = {
@@ -668,6 +671,20 @@ focus_tree = {
 		available = {	
 		OR = {	has_country_flag = WRF_Kemalist_Won has_country_flag = WRF_Demokrat_End has_country_flag = WRF_Adsiz_Won has_country_flag = WRF_Anarch_Won }
 		}
+		available = {
+        NOT = {
+        country_exists = CLP
+        country_exists = IZM
+        country_exists = TIT
+        country_exists = CIB 
+        country_exists = OTH
+        country_exists = SKL
+        country_exists = ANK
+        country_exists = KLG
+        country_exists = THR
+        country_exists = ADN   
+        }    
+        }
 	 completion_reward = {
 	 }	
 	}

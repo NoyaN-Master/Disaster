@@ -1,0 +1,73 @@
+division_template = {
+	name = "Mercenary Infantry"
+	division_names_group = TUR_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+	}
+}
+
+units = {
+	##### Österreichisches Bundesheer #####
+	# I Korps
+	division= {	
+		name = "Skull Unit"
+		location = 979    # Vienna
+		division_template = "Mercenary Infantry"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "Fox Unit"
+		location = 3967    # Vienna
+		division_template = "Mercenary Infantry"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "Greywolf Unit"
+		location = 6938    # Vienna
+		division_template = "Mercenary Infantry"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "Leviathan Unit"
+		location = 6995    # Vienna
+		division_template = "Mercenary Infantry"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}
+
+	division= {	
+		name = "Hound Unit"
+		location = 6995    # Vienna
+		division_template = "Mercenary Infantry"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {	
+		name = "Scot Unit"
+		location = 3967    # Vienna
+		division_template = "Mercenary Infantry"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+	}

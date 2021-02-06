@@ -101,14 +101,5 @@ units = {
 
 	}
 
-    division= {	
-		name = "6.Tümen"
-		location = 890   # Vienna
-		division_template = "Kızıl Ordu"
-		start_experience_factor = 0.5
-		start_equipment_factor = 1.0
-
-	}
-
 	}
 }

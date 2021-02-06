@@ -23,6 +23,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		custom_effect_tooltip = CRW_devlet_1
+		country_event = { id = ant.23 }
         }
 	}
 
@@ -129,10 +130,9 @@ focus_tree = {
 			factor = 80	
 		}
         prerequisite = { focus = IZM_act_quickly }
+		available = { has_war = no }
 		select_effect = {
 		}
-		completion_reward = {
-		custom_effect_tooltip = CRW_devlet_1
         completion_reward = {
 		declare_war_on = {
         target = ANK
@@ -144,7 +144,6 @@ focus_tree = {
         }    
         }
 	}
-    }
 
     focus = {
 		id = IZM_attack_east
@@ -156,6 +155,7 @@ focus_tree = {
 			factor = 80	
 		}
         prerequisite = { focus = IZM_act_quickly }
+		available = { has_war = no }
 		select_effect = {
 		}
 		completion_reward = {
@@ -213,6 +213,7 @@ focus_tree = {
 			factor = 80	
 		}
         prerequisite = { focus = IZM_act_quickly }
+		available = { has_war = no }
 		select_effect = {
 		}
 		completion_reward = {

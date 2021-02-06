@@ -410,8 +410,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		prerequisite = { focus = CIB_enveristan_proper}
-		prerequisite = { focus = CIB_revising_military}
+		prerequisite = { focus = CIB_religious_shrines }
+		prerequisite = { focus = CIB_revising_military }
 		prerequisite = { focus = CIB_stable_administration}
 		completion_reward = {
 		add_stability = 0.10
@@ -482,6 +482,7 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_nuri_reach}
+		available = { has_war = no }
 		ai_will_do = {
 			factor = 1
 		}
@@ -501,6 +502,7 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_deal_mercenaries}
+		available = { has_war = no }
 		ai_will_do = {
 			factor = 1
 		}
@@ -530,6 +532,7 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_nuri_reach}
+		available = { has_war = no }
 		ai_will_do = {
 			factor = 1
 		}
@@ -549,6 +552,8 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_deal_communists}
+		available = { has_war = no }
+		available = { has_war = no }
 		ai_will_do = {
 			factor = 1
 		}
@@ -577,6 +582,7 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_nuri_reach}
+		available = { has_war = no }
 		ai_will_do = {
 			factor = 1
 		}
@@ -602,6 +608,7 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_deal_fuller_1}
+		available = { has_war = no }
 		ai_will_do = {
 			factor = 1
 		}
@@ -636,6 +643,7 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_nuri_reach}
+		available = { has_war = no }
 		ai_will_do = {
 			factor = 1
 		}
@@ -688,6 +696,7 @@ focus_tree = {
 		prerequisite = { focus = CIB_deal_fuller_2}
 		prerequisite = { focus = CIB_deal_kemalists_2}
 		prerequisite = { focus = CIB_deal_mercenaries_2}
+		available = { has_war = no }
 		ai_will_do = {
 			factor = 1
 		}
@@ -712,6 +721,7 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_deal_war_kemalism}
+		available = { has_war = no }
 		ai_will_do = {
 			factor = 1
 		}
@@ -731,6 +741,14 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_deal_war_caliphate}
+		available = { NOT = {
+		country_exists = WRF
+		country_exists = CLP	
+		country_exists = OTH	
+		country_exists = IZM	
+		country_exists = SKL	
+		country_exists = ANK
+		} }
 		ai_will_do = {
 			factor = 1
 		}
@@ -739,6 +757,7 @@ focus_tree = {
 		CRW = {
 		country_event = { id = enver.16 }
 		}
+		country_event = { id = enver.17 days = 2}
 		}
 	}
 	}        
