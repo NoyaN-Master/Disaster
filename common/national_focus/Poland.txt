@@ -14,7 +14,7 @@ focus_tree = {
 
         focus = {
 		id = PLN_a_perfect_democracy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PLN_a_perfect_democracy
 		x = 4
 		y = 0
 		cost = 1
@@ -25,7 +25,7 @@ focus_tree = {
 
         focus = {
 		id = PLN_pragmatic_nationalism
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PLN_pragmatic_nationalism
 		x = 1
 		y = 1
 		cost = 4
@@ -41,7 +41,7 @@ focus_tree = {
 
         focus = {
 		id = PLN_polonization_efforts
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PLN_polonization_efforts
 		x = 1
 		y = 2
 		cost = 4
@@ -57,7 +57,7 @@ focus_tree = {
 
         focus = {
 		id = PLN_churchs_role
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PLN_churchs_role
 		x = 3
 		y = 1
 		cost = 4
@@ -73,7 +73,7 @@ focus_tree = {
 
         focus = {
 		id = PLN_support_polish_business
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PLN_support_polish_business
 		x = 3
 		y = 2
 		cost = 4
@@ -89,7 +89,7 @@ focus_tree = {
 
         focus = {
 		id = PLN_army_woes
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PLN_army_woes
 		x = 5
 		y = 1
 		cost = 4
@@ -105,7 +105,7 @@ focus_tree = {
 
         focus = {
 		id = PLN_remove_prussian_vestiges
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PLN_remove_prussian_vestiges
 		x = 5
 		y = 2
 		cost = 4
@@ -121,7 +121,7 @@ focus_tree = {
 
 	focus = {
 		id = PLN_deal_with_socialist_terrorists
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PLN_deal_with_socialist_terrorists
 		x = 7
 		y = 1
 		cost = 4
@@ -137,7 +137,7 @@ focus_tree = {
 
 	focus = {
 		id = PLN_hunt_pilsudski
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PLN_hunt_pilsudski
 		x = 7
 		y = 2
 		cost = 4
@@ -153,7 +153,7 @@ focus_tree = {
 
 	focus = {
 		id = PLN_is_a_national_democracy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PLN_is_a_national_democracy
 		x = 4
 		y = 3
 		cost = 10

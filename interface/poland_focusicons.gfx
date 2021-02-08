@@ -1,0 +1,383 @@
+spriteTypes = {
+			
+	SpriteType = {		
+		name = "GFX_goal_PLN_a_perfect_democracy"	
+		texturefile = "gfx/interface/goals/PLN/PLN_a_perfect_democracy.tga"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_PLN_a_perfect_democracy_shine"	
+		texturefile = "gfx/interface/goals/PLN/PLN_a_perfect_democracy.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/PLN/PLN_a_perfect_democracy.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/PLN/PLN_a_perfect_democracy.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }			
+
+ SpriteType = {		
+		name = "GFX_goal_PLN_pragmatic_nationalism"	
+		texturefile = "gfx/interface/goals/PLN/PLN_pragmatic_nationalism.tga"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_PLN_pragmatic_nationalism_shine"	
+		texturefile = "gfx/interface/goals/PLN/PLN_pragmatic_nationalism.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/PLN/PLN_pragmatic_nationalism.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/PLN/PLN_pragmatic_nationalism.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }			
+ 
+ SpriteType = {		
+		name = "GFX_goal_PLN_polonization_efforts"	
+		texturefile = "gfx/interface/goals/PLN/PLN_polonization_efforts.tga"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_PLN_polonization_efforts_shine"	
+		texturefile = "gfx/interface/goals/PLN/PLN_polonization_efforts.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/PLN/PLN_polonization_efforts.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/PLN/PLN_polonization_efforts.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }			
+ 
+ SpriteType = {		
+		name = "GFX_goal_PLN_churchs_role"	
+		texturefile = "gfx/interface/goals/PLN/PLN_churchs_role.tga"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_PLN_churchs_role_shine"	
+		texturefile = "gfx/interface/goals/PLN/PLN_churchs_role.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/PLN/PLN_churchs_role.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/PLN/PLN_churchs_role.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }			
+ 
+ SpriteType = {		
+		name = "GFX_goal_PLN_support_polish_business"	
+		texturefile = "gfx/interface/goals/PLN/PLN_support_polish_business.tga"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_PLN_support_polish_business_shine"	
+		texturefile = "gfx/interface/goals/PLN/PLN_support_polish_business.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/PLN/PLN_support_polish_business.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/PLN/PLN_support_polish_business.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }			
+ 
+ SpriteType = {		
+		name = "GFX_goal_PLN_army_woes"	
+		texturefile = "gfx/interface/goals/PLN/PLN_army_woes.tga"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_PLN_army_woes_shine"	
+		texturefile = "gfx/interface/goals/PLN/PLN_army_woes.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/PLN/PLN_army_woes.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/PLN/PLN_army_woes.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }			
+ 
+ SpriteType = {		
+		name = "GFX_goal_PLN_remove_prussian_vestiges"	
+		texturefile = "gfx/interface/goals/PLN/PLN_remove_prussian_vestiges.tga"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_PLN_remove_prussian_vestiges_shine"	
+		texturefile = "gfx/interface/goals/PLN/PLN_remove_prussian_vestiges.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/PLN/PLN_remove_prussian_vestiges.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/PLN/PLN_remove_prussian_vestiges.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }			
+ 
+ SpriteType = {		
+		name = "GFX_goal_PLN_deal_with_socialist_terrorists"	
+		texturefile = "gfx/interface/goals/PLN/PLN_deal_with_socialist_terrorists.tga"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_PLN_deal_with_socialist_terrorists_shine"	
+		texturefile = "gfx/interface/goals/PLN/PLN_deal_with_socialist_terrorists.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/PLN/PLN_deal_with_socialist_terrorists.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/PLN/PLN_deal_with_socialist_terrorists.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }			
+ 
+ SpriteType = {		
+		name = "GFX_goal_PLN_hunt_pilsudski"	
+		texturefile = "gfx/interface/goals/PLN/PLN_hunt_pilsudski.tga"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_PLN_hunt_pilsudski_shine"	
+		texturefile = "gfx/interface/goals/PLN/PLN_hunt_pilsudski.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/PLN/PLN_hunt_pilsudski.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/PLN/PLN_hunt_pilsudski.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }			
+ 
+ SpriteType = {		
+		name = "GFX_goal_PLN_is_a_national_democracy"	
+		texturefile = "gfx/interface/goals/PLN/PLN_is_a_national_democracy.tga"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_PLN_is_a_national_democracy_shine"	
+		texturefile = "gfx/interface/goals/PLN/PLN_is_a_national_democracy.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/PLN/PLN_is_a_national_democracy.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/PLN/PLN_is_a_national_democracy.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }			
+
+}
