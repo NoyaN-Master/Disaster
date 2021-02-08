@@ -1,0 +1,239 @@
+focus_tree = {
+	id = Ataturk_Phase_2
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = WRF
+		}
+	}
+	continuous_focus_position = { x = 800 y = 10000 }
+
+    focus = {
+		id = WRF_A_New_Day
+		icon = GFX_goal_WRF_Kemal_Speech
+		x = 15
+		y = 0
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = WRF_operation_yahya 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+        country_event = { id = tur.1 days = 1 }    
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = WRF_Act_Surnames
+		icon = GFX_goal_WRF_Kemal_Speech
+		x = 14
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = WRF_A_New_Day 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+            country_event = { id = tur.2 }
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = WRF_Act_Civil_Code
+		icon = GFX_goal_WRF_Kemal_Speech
+		x = 16
+		y = 1
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = WRF_A_New_Day 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = WRF_Act_Constitution
+		icon = GFX_goal_WRF_Kemal_Speech
+		x = 16
+		y = 2
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = WRF_Act_Civil_Code 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = WRF_Statism
+		icon = GFX_goal_WRF_Kemal_Speech
+		x = 14
+		y = 2
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = WRF_Act_Surnames 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+        swap_ideas = {
+        remove_idea = WRF_Tekalif_Vatan
+        add_idea = WRF_Statism_idea 
+        }    
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = WRF_Lacisim
+		icon = GFX_goal_WRF_Kemal_Speech
+		x = 15
+		y = 3
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = WRF_Statism 
+		}
+        prerequisite = { 
+			focus = WRF_Act_Constitution 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+
+    focus = {
+		id = WRF_Meeting_King
+		icon = GFX_goal_WRF_Kemal_Speech
+		x = 15
+		y = 4
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { 
+			focus = WRF_Lacisim 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = WRF_Deal_Enver
+		icon = GFX_goal_WRF_Kemal_Speech
+		x = 14
+		y = 5
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { 
+			focus = WRF_Meeting_King 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = WRF_Visit_Country
+		icon = GFX_goal_WRF_Kemal_Speech
+		x = 16
+		y = 5
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { 
+			focus = WRF_Meeting_King 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = WRF_The_Catasthrope
+		icon = GFX_goal_WRF_Kemal_Speech
+		x = 15
+		y = 6
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { 
+			focus = WRF_Deal_Enver 
+		}
+        prerequisite = { 
+			focus = WRF_Visit_Country 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
