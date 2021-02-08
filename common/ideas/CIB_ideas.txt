@@ -27,7 +27,7 @@ CIB_OrduVatan = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
 			picture = CIB_OrduVatan
 			modifier = {
-			army_core_defence_factor = 0.15
+			army_core_defence_factor = 0.05
 			training_time_army_factor = 0.4
 			planning_speed = 0.10
 			production_factory_max_efficiency_factor = 0.2
@@ -49,7 +49,6 @@ CIB_OrduVatan_stratocracy = {
 			production_speed_buildings_factor = 0.2
 			consumer_goods_factor = -0.10
 			command_power_gain = 0.01
-			no_supply_grace = 72
 			war_support_weekly = 0.005
 			conscription = 0.05
 			}
@@ -59,7 +58,7 @@ CIB_vs_WRF = {
 			picture = CIB_OrduVatan
 			modifier = {
 			army_morale_factor = 0.05
-			army_infantry_attack_factor = 0.5
+			army_infantry_attack_factor = 0.07
 			}
 		}
 kemalists_purged = {
@@ -75,8 +74,6 @@ CIB_Enver_Idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_Enver_Idea" }
 			picture = CIB_Enver_Idea
 			modifier = {
-			MONTHLY_POPULATION = -0.01
-			army_morale_factor = 0.1
 			}
 			add_opinion_modifier = {   target = WRF   modifier = faction_traitor }
 			add_opinion_modifier = {   target = ANT   modifier = faction_traitor }

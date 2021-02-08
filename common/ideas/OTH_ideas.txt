@@ -24,9 +24,9 @@ OTH_internal_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRA_Repress_Integralists" }
 			picture = GFX_idea_unknown
 			modifier = {
-			production_factory_max_efficiency_factor = 0.5 
-			industrial_capacity_factory = 0.4
-			production_speed_buildings_factor = 0.5 
+			production_factory_max_efficiency_factor = 0.52
+			industrial_capacity_factory = 0.2
+			production_speed_buildings_factor = 0.2
 			}
 			}			
 OTH_MSF = {
