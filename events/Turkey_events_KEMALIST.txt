@@ -21,7 +21,7 @@ country_event = { #New Day, talking with Ismet
 	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 	    picture = "Portrait_WRF_Mustafa_Kemal_Ataturk.tga"
 	    expire = "1965.1.1"
-	    ideology = turkish_stratocracy
+	    ideology = kemalism
 	    traits = {
 	    }
         }   
@@ -50,7 +50,7 @@ country_event = { #Surnames
 	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 	    picture = "Portrait_WRF_Mustafa_Kemal_Ataturk.tga"
 	    expire = "1965.1.1"
-	    ideology = turkish_stratocracy
+	    ideology = kemalism
 	    traits = {
 	    }
         }   

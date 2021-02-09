@@ -736,6 +736,11 @@ spriteTypes = {
 		name = "GFX_ideology_mercenary_state"
 		texturefile = "gfx/interface/ideologies/mercenary_state.dds"
 	}
+
+	spriteType = {
+		name = "GFX_ideology_kemalism"
+		texturefile = "gfx/interface/ideologies/kemalism.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_ideology_babylonism"
