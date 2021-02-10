@@ -2413,7 +2413,7 @@ focus_tree = {
 	focus = {
 		id = PRE_prussian_army
 		icon = GFX_goal_new_prussian_army
-		x = 52
+		x = 56
 		y = 0
 
 		cost = 3		
@@ -2730,6 +2730,151 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = PRE_navy
+		icon = GFX_goal_unknown
+		x = -6
+		y = 1
+		relative_position_id = PRE_prussian_army
+		cost = 5		
+		prerequisite = { focus = PRE_prussian_army }
+		
+		completion_reward = {
+		navy_experience = 25
+		add_tech_bonus = {
+			name = PRE_navy_doctrine_bonus
+			category = naval_doctrine
+			bonus = 0.5
+			uses = 2
+		}
+		}
+	}
+	focus = {
+		id = PRE_submarine
+		icon = GFX_goal_unknown
+		x = -5
+		y = 2
+		relative_position_id = PRE_prussian_army
+		cost = 5		
+		prerequisite = { focus = PRE_navy }
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = PRE_u_boat_effort
+				bonus = 0.5
+				uses = 2
+				category = ss_tech
+			}		
+		}
+	}
+	focus = {
+		id = PRE_destroyer
+		icon = GFX_goal_unknown
+		x = -7
+		y = 2
+		relative_position_id = PRE_prussian_army
+		cost = 5		
+		prerequisite = { focus = PRE_navy }
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = PRE_destroyer_tech
+				bonus = 0.5
+				uses = 2
+				category = dd_tech
+			}		
+		}
+	}
+	
+	focus = {
+		id = PRE_new_navy
+		icon = GFX_goal_unknown
+		x = -6
+		y = 3
+		relative_position_id = PRE_prussian_army
+		cost = 5		
+		prerequisite = { focus = PRE_destroyer }
+		prerequisite = { focus = PRE_submarine }		
+		completion_reward = {
+		add_ideas = PRE_navy_idea
+		}
+	}
+	focus = {
+		id = PRE_air
+		icon = GFX_goal_unknown
+		x = 6
+		y = 1
+		relative_position_id = PRE_prussian_army
+		cost = 5		
+		prerequisite = { focus = PRE_prussian_army }
+		
+		completion_reward = {
+		air_experience = 25
+		add_tech_bonus = {
+			name = PRE_air_doctrine_bonus
+			category = air_doctrine
+			bonus = 0.5
+			uses = 2
+		}		
+		}
+	}
+	focus = {
+		id = PRE_bombers
+		icon = GFX_goal_unknown
+		x = 5
+		y = 2
+		relative_position_id = PRE_prussian_army
+		cost = 5		
+		prerequisite = { focus = PRE_air }
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 1
+				category = tactical_bomber
+				category = cas_bomber			
+			}		
+		}
+	}
+	focus = {
+		id = PRE_fighter_air
+		icon = GFX_goal_unknown
+		x = 7
+		y = 2
+		relative_position_id = PRE_prussian_army
+		cost = 5		
+		prerequisite = { focus = PRE_air }
+		
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 1
+				category = light_fighter
+				category = cat_heavy_fighter			
+			}		
+		}
+	}
+		focus = {
+		id = PRE_air_reform
+		icon = GFX_goal_unknown
+		x = 6
+		y = 3
+		relative_position_id = PRE_prussian_army
+		cost = 5		
+		prerequisite = { focus = PRE_fighter_air }
+		prerequisite = { focus = PRE_bombers }		
+		completion_reward = {
+		add_tech_bonus = {
+			name = PRE_air_doctrine_bonus
+			category = air_doctrine
+			bonus = 0.33
+			uses = 2
+		}			
+		}
+	}
 
 
 
