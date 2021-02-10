@@ -26,9 +26,36 @@ TUR_unification_category = {
         }  
         complete_effect = {
         set_cosmetic_tag = WRF_Ataturk_Cosmetic
-        add_stability = 0.40
+        add_stability = -0.30
         custom_effect_tooltip = ANT_unif_focus_tt
-        load_focus_tree = Ataturk_Phase_2    
+        load_focus_tree = Ataturk_Phase_2
+        remove_ideas = WRF_For_All_Brothers
+        remove_ideas = WRF_Ajan_Antalya
+        remove_ideas = WRF_Kemal_Army_Disc
+        remove_ideas = WRF_Legitimate_Heir
+        remove_ideas = WRF_Greek_Legacy
+        add_ideas = WRF_Enverist_Problem
+        add_ideas = WRF_Minority_Problem
+        WRF = {
+        add_state_core = 49
+        add_state_core = 347
+        add_state_core = 839
+        add_state_core = 798
+        add_state_core = 356
+        add_state_core = 355
+        add_state_core = 354
+        add_state_core = 353
+        add_state_core = 800
+        add_state_core = 352
+        add_state_core = 350
+        add_state_core = 346
+        add_state_core = 348
+        add_state_core = 349
+        add_state_core = 797
+        }
+        hidden_effect = {
+        set_country_flag = unification_ataturk    
+        }   
         }
      }
 	wrf_atsiz_unify_decision = {
@@ -123,7 +150,9 @@ TUR_unification_category = {
         has_country_flag = enver_charge
         }  
         complete_effect = {
-        set_cosmetic_tag = CIB_Enver
+        hidden_effect = {
+        set_cosmetic_tag = CIB_Enver    
+        }
         set_country_flag = unification_enver            
         }
      }

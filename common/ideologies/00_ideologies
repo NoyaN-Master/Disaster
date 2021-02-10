@@ -314,6 +314,10 @@ ideologies = {
 			mercenary_state = {
 			              can_be_randomly_selected = no
 			}
+
+			kemalism_auth = {
+						can_be_randomly_selected = no
+			}
 		}
 		
 			dynamic_faction_names = {

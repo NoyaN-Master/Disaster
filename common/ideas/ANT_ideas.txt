@@ -198,7 +198,7 @@ SKL_armor_idea_1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
 			picture = ANT_Warlords_Emerging
 			modifier = {
-			army_armor_speed_factor	= 0.10
+			army_armor_speed_factor	= 0.05
 			}
 		}
 SKL_armor_idea_2 = {
@@ -206,8 +206,8 @@ SKL_armor_idea_2 = {
 			picture = ANT_Warlords_Emerging
 			modifier = {
 			army_morale_factor = 0.05		
-			army_armor_attack_factor = 0.10
-			fuel_gain_factor = 0.3
+			army_armor_attack_factor = 0.05
+			fuel_gain_factor = 0.15
 			production_factory_max_efficiency_factor = 0.2	
 			}
 		}					
@@ -216,12 +216,9 @@ SKL_jannies = {
 			picture = ANT_Warlords_Emerging
 			modifier = {
 			army_morale_factor = 0.05		
-			army_org = 1
-			max_planning = 0.25
-			conscription = 0.10
-			recon_factor = 0.05
-			army_infantry_attack_factor = 0.05
-
+			conscription = 0.02
+			recon_factor = 0.02
+			army_infantry_attack_factor = 0.03
 			}
 		}							
 }

@@ -104,6 +104,66 @@ WRF_For_All_Brothers = {
 			modifier = {
 			attrition = -0.1
 			}
-		}		
-	}	
+		}
+WRF_Ataturk_Reforms_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			stability_factor = 0.1
+			stability_weekly = 0.005
+			research_speed_factor = 0.10
+			}
+		}				
+WRF_Ataturk_Reforms_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			stability_factor = 0.15
+			stability_weekly = 0.007
+			research_speed_factor = 0.10
+			}
+		}
+WRF_Ataturk_Reforms_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			stability_factor = 0.20
+			stability_weekly = 0.009
+			research_speed_factor = 0.15
+			}
+		}						
+WRF_Enverist_Problem = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			stability_factor = -0.10
+			land_reinforce_rate = -0.03
+			conscription = -0.03
+			production_factory_max_efficiency_factor = -0.2 
+			}
+		}						
+WRF_Minority_Problem = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			stability_factor = -0.10
+			conscription = -0.01
+			production_factory_max_efficiency_factor = -0.2
+			production_speed_buildings_factor = -0.2  
+			}
+		}
+WRF_TSK_New = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			war_support_factor = 0.10
+			conscription = 0.02
+			war_support_weekly = 0.005
+			army_defence_factor = 0.05
+			army_attack_factor = 0.05
+			experience_gain_army = 0.05
+			max_planning_factor = 0.25 
+			}
+		}								
+	}				
 		

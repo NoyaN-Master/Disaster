@@ -74,6 +74,11 @@ leader_traits = {
 		army_core_defence_factor = 0.1
 		war_support_factor = 0.10
 	}
+
+	ataturk_trait = {
+		random = no
+		stability_weekly = 0.05
+	}
 	
 	mad_jack = {
 		random = no

@@ -108,7 +108,7 @@ focus_tree = {
 		icon = GFX_goal_IZM_Quick
 		x = 14
 		y = 6
-		cost = 1
+		cost = 3
 		ai_will_do = {
 			factor = 80	
 		}
@@ -125,7 +125,7 @@ focus_tree = {
 		icon = GFX_goal_IZM_Ataturk
 		x = 16
 		y = 7
-		cost = 1
+		cost = 3
 		ai_will_do = {
 			factor = 80	
 		}
@@ -150,7 +150,7 @@ focus_tree = {
 		icon = GFX_goal_IZM_Enver
 		x = 12
 		y = 7
-		cost = 1
+		cost = 3
 		ai_will_do = {
 			factor = 80	
 		}
@@ -175,7 +175,7 @@ focus_tree = {
 		icon = GFX_goal_IZM_EndFoc
 		x = 14
 		y = 9
-		cost = 1
+		cost = 3
 		ai_will_do = {
 			factor = 80	
 		}

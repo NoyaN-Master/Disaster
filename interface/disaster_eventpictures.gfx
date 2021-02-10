@@ -8,6 +8,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_aut_vf_party_flag"
 		texturefile = "gfx/event_pictures/AUTt_vf_party_flag.dds"
-	}	
+	}
+
+	
+	spriteType = {
+		name = "GFX_report_event_tur_ataturk"
+		texturefile = "gfx/event_pictures/report_event_tur_ataturk_.dds"
+	}
 	
 }

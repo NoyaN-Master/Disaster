@@ -6,7 +6,7 @@ country_event = { #New Day, talking with Ismet
 	title = tur.1.t
 	desc = tur.1.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	picture = GFX_report_event_tur_ataturk
 
 	fire_only_once = yes
 
@@ -16,6 +16,7 @@ country_event = { #New Day, talking with Ismet
 		name = tur.1.a
         custom_effect_tooltip = new_day_tt
         hidden_effect = {
+		remove_unit_leader = 1881	
         create_country_leader = {
 	    name = "Mustafa Kemal"
 	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
@@ -52,8 +53,213 @@ country_event = { #Surnames
 	    expire = "1965.1.1"
 	    ideology = kemalism
 	    traits = {
+		ataturk_trait	
 	    }
         }   
+        }
+	}
+}
+
+country_event = { #Civil Code
+	id = tur.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = tur.3.t
+	desc = tur.3.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.3.a
+        add_stability = 0.05
+		add_idea = WRF_Ataturk_Reforms_1
+        hidden_effect = {   
+        }
+	}
+}
+
+country_event = { #Constitution
+	id = tur.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = tur.4.t
+	desc = tur.4.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.4.a
+        add_stability = 0.05
+		swap_ideas = {
+		add_idea = WRF_Ataturk_Reforms_1
+		remove_idea = WRF_Ataturk_Reforms_2
+		}
+        hidden_effect = {   
+        }
+	}
+}
+
+country_event = { #Laicism
+	id = tur.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = tur.5.t
+	desc = tur.5.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.5.a
+        add_stability = -0.05
+		swap_ideas = {
+		add_idea = WRF_Ataturk_Reforms_3
+		remove_idea = WRF_Ataturk_Reforms_2
+		}
+        hidden_effect = {   
+        }
+	}
+}
+
+country_event = { #TSK
+	id = tur.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = tur.6.t
+	desc = tur.6.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.6.a
+		add_ideas = WRF_TSK_New
+        hidden_effect = {   
+        }
+	}
+}
+
+country_event = { #Enver
+	id = tur.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = tur.7.t
+	desc = tur.7.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.7.a
+		add_stability = -0.05
+		remove_ideas = WRF_Enverist_Problem
+        hidden_effect = {   
+        }
+	}
+}
+
+country_event = { #Death
+	id = tur.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = tur.8.t
+	desc = tur.8.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.8.a
+		custom_effect_tooltip = ataturk_Death_tt
+		add_manpower = -1
+		add_stability = -0.30
+		war_support_factor = -0.20
+		create_country_leader = {
+	    name = "Provisional Military Council"
+	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	    picture = "Portrait_TUR_TSK.tga"
+	    expire = "1965.1.1"
+	    ideology = kemalism
+	    traits = {	
+	    }
+        }
+		
+        hidden_effect = {   
+        }
+	}
+}
+
+country_event = { #Succesor
+	id = tur.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = tur.9.t
+	desc = tur.9.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.9.a
+		add_stability = 0.15
+		create_country_leader = {
+	    name = "İsmet Inönü"
+	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	    picture = "Portrait_WRF_Ismet.tga"
+	    expire = "1965.1.1"
+	    ideology = kemalism
+	    traits = {	
+	    }
+        }
+        hidden_effect = {   
+        }
+	}
+
+	option = {
+		name = tur.9.b
+		add_stability = 0.15
+		create_country_leader = {
+	    name = "Fevzi Çakmak"
+	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	    picture = "Portrait_WRF_Fevzi_Cakmak.tga"
+	    expire = "1965.1.1"
+	    ideology = kemalism_auth
+	    traits = {	
+	    }
+        }
+		set_politics = {
+		ruling_party = autocratic
+		}
+		add_popularity = {
+    	ideology = autocratic
+   		popularity = 0.6
+		}
+		add_popularity = {
+    	ideology = authoritarian_democrat
+   		popularity = -0.9
+		}
+		set_party_name = { 
+    		ideology = autocratic 
+    		long_name = WRF_auth_chp 
+    		name = WRF_auth_chp_long 
+			}
+        hidden_effect = {   
         }
 	}
 }

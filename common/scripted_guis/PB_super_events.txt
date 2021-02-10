@@ -32,6 +32,12 @@ scripted_gui = {
 			}
 		}
 
+		triggers = {
+			Super_Event_Image_Unification_Samet = {
+				has_global_flag  = TUR_Unification_Ataturk
+			}
+		}
+
 		properties = {
 			Super_Event_Image_Default = {
 				image = "[get_my_superevent_texture]"
@@ -61,6 +67,13 @@ scripted_gui = {
 						has_global_flag = TUR_Unification_Samet
 					}
 					clr_global_flag  = TUR_Unification_Samet
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = TUR_Unification_Ataturk
+					}
+					clr_global_flag  = TUR_Unification_Ataturk
 				}
 				
 			}
