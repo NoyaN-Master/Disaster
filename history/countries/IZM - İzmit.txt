@@ -50,3 +50,14 @@ create_country_leader = {
 	turkish_marx
 	}
 }
+
+create_corps_commander = {
+			name = "Ethem Nejat"
+			picture = "Portrait_CIB_Samet_Enverist.tga"
+			traits = { revolutionary_turk }
+			skill = 2
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+			}

@@ -39,3 +39,14 @@ create_country_leader = {
 	mad_jack
 	}
 }
+
+create_field_marshal = {
+			name = "Jack Churchill"
+			picture = "Portrait_CIB_Enver_Pasha.tga"
+			traits = { war_hero brilliant_strategist war_hero infantry_officer trickster desert_fox hill_fighter  soa_general }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			}
