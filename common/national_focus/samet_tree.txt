@@ -1,0 +1,192 @@
+focus_tree = {
+	id = samet_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+			tag = CIB
+		}
+	}
+
+	continuous_focus_position = { x = 800 y = 10000 }
+
+    focus = {
+		id = CIB_Officer_Start
+		icon = GFX_goal_CIB_Change_Course
+		x = 15
+		y = 0
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = { 
+		add_stability = 0.05
+		add_political_power = 100
+		country_event = { id = samet.1 }	  
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = CIB_Enver_Remnants
+		icon = GFX_goal_CIB_enver_remnant
+		x = 14
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = CIB_Officer_Start }
+		completion_reward = { 
+		country_event = { id = samet.2 }	  
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = CIB_Operation_Altay
+		icon = GFX_goal_CIB_Operation_Altay
+		x = 14
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = CIB_Enver_Remnants }
+		completion_reward = {
+		country_event = { id = samet.3 }	   
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = CIB_Status_Generals
+		icon = GFX_goal_CIB_General_Fate
+		x = 14
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = CIB_Operation_Altay }
+		completion_reward = {
+		country_event = { id = samet.4 }	   
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = CIB_Restore_State
+		icon = GFX_goal_CIB_Restore_State
+		x = 16
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = CIB_Officer_Start }
+		completion_reward = {
+		country_event = { id = samet.5 }	   
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = CIB_Authority_In_East
+		icon = GFX_goal_CIB_Operation_East
+		x = 16
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = CIB_Restore_State }
+		completion_reward = {
+		country_event = { id = samet.6 }		   
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = CIB_Castle_States
+		icon = GFX_goal_CIB_Kemalist_Castle
+		x = 16
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = CIB_Authority_In_East }
+		completion_reward = {
+		country_event = { id = samet.7 }		   
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = CIB_Sons_Of_Liberty
+		icon = GFX_goal_CIB_sons_liberty
+		x = 15
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = CIB_Castle_States }
+		prerequisite = { focus = CIB_Status_Generals }
+		completion_reward = {   
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = CIB_The_Izmir_Guardians
+		icon = GFX_goal_CIB_izmir
+		x = 18
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = CIB_Sons_Of_Liberty }
+		completion_reward = {   
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = CIB_The_Bursa_Vanguards
+		icon = GFX_goal_CIB_TSK
+		x = 12
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = CIB_Sons_Of_Liberty }
+		completion_reward = {   
+		hidden_effect = {
+		}
+		}
+	}
+
+}

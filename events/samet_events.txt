@@ -1,0 +1,196 @@
+add_namespace = samet
+
+country_event = { #Introduction
+	id = samet.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = samet.1.t
+	desc = samet.1.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = samet.1.a
+	}
+}
+
+country_event = { #Enver decision
+	id = samet.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = samet.2.t
+	desc = samet.2.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = samet.2.a
+        swap_ideas = {
+        remove_ideas = samet_enverist_threat
+        add_ideas = samet_enverist_threat_2
+        }
+	}
+}
+
+country_event = { #Operation Altay
+	id = samet.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = samet.3.t
+	desc = samet.3.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = samet.3.a
+        add_stability = -0.05
+        add_political_power = 200
+        354 = {
+        add_manpower = -200    
+        }
+        swap_ideas = {
+        remove_ideas = samet_enverist_threat_2
+        add_ideas = samet_enverist_threat_3
+        }
+	}
+}
+
+country_event = { #Operation Altay
+	id = samet.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = samet.4.t
+	desc = samet.4.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = samet.4.a
+        remove_ideas = samet_enverist_threat_3
+        create_corps_commander = {
+		name = "Fahrettin Altay"
+		gfx = "Portrait_WRF_Fahrettin_Altay"
+		traits = { war_hero brilliant_strategist cavalry_officer hill_fighter kemalist_general }
+		skill = 4 #13
+		attack_skill = 4
+		defense_skill = 3
+		planning_skill = 4
+		logistics_skill = 2
+	    }
+
+        create_corps_commander = {
+		name = "Cemil Cahit Toydemir"
+		gfx = "Portrait_WRF_Toydemir"
+		traits = { career_officer infantry_officer hill_fighter kemalist_general kemalist_general }
+		skill = 3 #10
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 3
+		logistics_skill = 2
+	    }
+        create_corps_commander = {
+		name = "Mehmet Salih Omurtak"
+		gfx = "Portrait_WRF_Omurtak"
+		traits = { politically_connected infantry_officer harsh_leader  kemalist_general }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 1
+		planning_skill = 2
+		logistics_skill = 2
+	    }
+
+        create_field_marshal = {
+			name = "Fevzi Çakmak"
+			picture = "Portrait_WRF_Fevzi_Cakmak.tga"
+			traits = { offensive_doctrine }
+			skill = 3
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 3
+			}	
+        }
+	}
+country_event = { #State
+	id = samet.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = samet.5.t
+	desc = samet.5.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = samet.5.a
+        swap_ideas = {
+        remove_ideas = samet_admin_1
+        add_ideas = samet_admin_2
+        }
+	}
+}
+
+country_event = { #State
+	id = samet.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = samet.6.t
+	desc = samet.6.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = samet.6.a
+        add_stability = -0.09
+        swap_ideas = {
+        remove_ideas = samet_admin_2
+        add_ideas = samet_admin_3
+        }
+        353 = {
+        add_manpower = 1000    
+        }
+        349 = {
+        add_manpower = 1000    
+        }
+        800 = {
+        add_manpower = 1000    
+        }
+        346 = {
+        add_manpower = 3000    
+        }
+	}
+
+country_event = { #State
+	id = samet.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = samet.7.t
+	desc = samet.7.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = samet.7.a
+        add_stability = 0.05
+        remove_ideas = samet_admin_3
+	}    
