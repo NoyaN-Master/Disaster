@@ -15,25 +15,25 @@ scripted_gui = {
 		}
 
 		triggers = {
-			Super_Event_Image_Unification_Atsiz = {
+			Super_Event_Image_Unification_Atsiz_visible = {
 				has_global_flag  = TUR_Unification_Atsiz
 			}
 		}
 
 		triggers = {
-			Super_Event_Image_Unification_Enver = {
+			Super_Event_Image_Unification_Enver_visible = {
 				has_global_flag  = TUR_Unification_Enver
 			}
 		}
 
 		triggers = {
-			Super_Event_Image_Unification_Samet = {
+			Super_Event_Image_Unification_Samet_visible = {
 				has_global_flag  = TUR_Unification_Samet
 			}
 		}
 
 		triggers = {
-			Super_Event_Image_Unification_Samet = {
+			Super_Event_Image_Unification_Ataturk_visible = {
 				has_global_flag  = TUR_Unification_Ataturk
 			}
 		}

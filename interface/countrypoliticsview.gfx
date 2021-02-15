@@ -806,4 +806,14 @@ spriteType = {
 		name = "GFX_ideology_babylonism"
 		texturefile = "gfx/interface/ideologies/babylonism.dds"
 	}
+
+	spriteType = {
+		name = "GFX_ideology_samet_ultnat"
+		texturefile = "gfx/interface/ideologies/samet_ultnat.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_neokemalist"
+		texturefile = "gfx/interface/ideologies/neokemalist.dds"
+	}
 }	

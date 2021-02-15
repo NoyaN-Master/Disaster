@@ -559,18 +559,18 @@ country_event = { #Bursa Trials - Samet coup
 		set_politics = {
 		ruling_party = authoritarian_socialist
 		}
-		remove_idea = CIB_King_Hill
-		remove_idea = CIB_OrduVatan_stratocracy
-		remove_idea = CIB_Zombie
-		remove_idea = CIB_vs_WRF
-		remove_idea = CIB_Enver_Idea
-		add_idea = samet_new_army
-		add_idea = samet_admin_1
-		add_idea = samet_enverist_threat
+		remove_ideas = CIB_King_Hill
+		remove_ideas = CIB_OrduVatan_stratocracy
+		remove_ideas = CIB_Zombie
+		remove_ideas = CIB_vs_WRF
+		remove_ideas = CIB_Enver_Idea
+		add_ideas = samet_new_army
+		add_ideas = samet_admin_1
+		add_ideas = samet_enverist_threat
 		hidden_effect = {	
-		country_event = { id = enver.21 days = 8 }
 		clr_country_flag = enver_charge
 		set_country_flag = samet_won
+		set_country_flag = samet_charge
 		}
 	}
 }

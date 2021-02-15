@@ -102,7 +102,7 @@ country_event = {		#Super Event DONE
 	hidden = yes
 
 	option = {
-		name = super.4.a
+		name = super.5.a
         set_global_flag = Super_Event_Visible
         set_global_flag = TUR_Unification_Ataturk
 		sound_effect = "ataturk"

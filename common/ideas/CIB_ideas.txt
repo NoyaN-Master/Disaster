@@ -86,8 +86,6 @@ CIB_Enver_Idea = {
 			targeted_modifier = { tag = KUR attack_bonus_against = 0.3 }
 			targeted_modifier = { tag = HJZ attack_bonus_against = 0.3 }
 		}			
-	}
-#######samet stuff
 samet_admin_1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
 			picture = CIB_OrduVatan
@@ -161,5 +159,5 @@ samet_enverist_threat_3 = {
 			resistance_damage_to_garrison_on_our_occupied_states = -0.3
 			political_power_gain = -0.01
 			}
-		}												
-}		
+		}
+}														
