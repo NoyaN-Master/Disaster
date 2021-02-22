@@ -1,4 +1,5 @@
 ﻿capital = 52
+oob = "BAY_1936"
 
 # Starting tech
 set_technology = {
@@ -109,6 +110,8 @@ set_popularities = {
 }
 
 add_ideas = {
+extensive_conscription
+partial_economic_mobilisation
 }
 
 
@@ -163,5 +166,40 @@ create_country_leader = {
 	}
 }
 
+###################### generals
+create_field_marshal = {
+	name = "Franz Xavier Ritter von Epp"
+	portrait_path = "gfx/leaders/BAY/Portrait_Franz_Xavier_Ritter_von_Epp.tga"
+	traits = {
 
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Heinrich Himmler"
+	portrait_path = "gfx/leaders/BAY/BAY_Himmler.tga"
+	traits = {
 
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Ernst Rohm"
+	portrait_path = "gfx/leaders/BAY/Ernst_Rohm.tga"
+	traits = {
+
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}

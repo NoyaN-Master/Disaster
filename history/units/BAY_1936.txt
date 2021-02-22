@@ -1,0 +1,247 @@
+division_template = {
+	name = "Infantry Division"
+	division_names_group = BAY_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Panzer-Division"
+	division_names_group = GER_TNK_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Motorisierte Division"
+	division_names_group = GER_MOT_02
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		light_armor = { x = 2 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Mountain Division"
+	division_names_group = PRE_MNT_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }  
+	}
+}
+division_template = {
+	name = "Cavalry Division" 
+	division_names_group = BAY_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+units = {
+	division= {	
+		name = "1. Infantry Division of Bavaria"
+		location = 692
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "2. Infantry Division of Bavaria"
+		location = 692
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "3. Infantry Division of Bavaria"
+		location = 692
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "4. Infantry Division of Bavaria"
+		location = 692
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "5. Infantry Division of Bavaria"
+		location = 692
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "6. Infantry Division of Bavaria"
+		location = 692
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "7. Infantry Division of Bavaria"
+		location = 692
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "8. Infantry Division of Bavaria"
+		location = 692
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "9. Infantry Division of Bavaria"
+		location = 692
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "2.  Cavalry Division of Bavaria"
+		location = 692
+		division_template = "Cavalry Division" 
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "3.  Cavalry Division of Bavaria"
+		location = 692
+		division_template = "Cavalry Division" 
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "4.  Cavalry Division of Bavaria"
+		location = 692
+		division_template = "Cavalry Division" 
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "5.  Cavalry Division of Bavaria"
+		location = 692
+		division_template = "Cavalry Division" 
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "6.  Cavalry Division of Bavaria"
+		location = 692
+		division_template = "Cavalry Division" 
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "7.  Cavalry Division of Bavaria"
+		location = 692
+		division_template = "Cavalry Division" 
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "8.  Cavalry Division of Bavaria"
+		location = 692
+		division_template = "Cavalry Division" 
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "BAY"
+		}
+		requested_factories = 2
+		progress = 0.54
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "BAY"
+		}
+		requested_factories = 1
+		progress = 0.74
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.83
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.29
+		efficiency = 100
+	}
+}
