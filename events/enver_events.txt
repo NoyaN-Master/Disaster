@@ -464,7 +464,8 @@ country_event = { #Bursa Trials - 1
 	is_triggered_only = yes
 	
 	option = { #Cancel the trial until limit
-		name = enver.17.a 
+		name = enver.17.a
+		ai_chance = { factor = 10} 
 		custom_effect_tooltip = later_Tt
 		hidden_effect = {
 		country_event = { id = enver.19 days = 5 }
@@ -473,6 +474,7 @@ country_event = { #Bursa Trials - 1
 
 	option = { #Act now!
 		name = enver.17.b
+		ai_chance = { factor = 50}
 		country_event = { id = enver.18 days = 2}
 	}
 }

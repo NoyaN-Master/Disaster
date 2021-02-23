@@ -69,7 +69,7 @@ country_event = { #the army moves
 
     option = { #the army does gaming
         name = ant.3.a
-        ai_chance = { factor = 10}
+        ai_chance = { factor = 20}
         custom_effect_tooltip = army_moves_tooltip
 		complete_national_focus = ANT_fight_anarchy
         hidden_effect = {
@@ -86,7 +86,7 @@ country_event = { #the army moves
 
     option = {
         name = ant.3.b
-        ai_chance = { factor = 100} 
+        ai_chance = { factor = 20} 
         custom_effect_tooltip = cuck.tooltip
 		complete_national_focus = ANT_political_warfare
         hidden_effect = {
@@ -478,7 +478,7 @@ country_event = { #The Capitol Land Disturbance
     is_triggered_only = yes
 
     option = {
-        ai_chance = { factor = 40 } 
+        ai_chance = { factor = 0 } 
         name = ant.21.a
         hidden_effect = {   
         set_country_flag = cuck_hikmet 
@@ -494,7 +494,7 @@ country_event = { #The Capitol Land Disturbance
     }
 
     option = {
-        ai_chance = { factor = 40} 
+        ai_chance = { factor = 0} 
         name = ant.c.a
         hidden_effect = {   
         set_country_flag = cuck_killigil 
@@ -502,7 +502,7 @@ country_event = { #The Capitol Land Disturbance
     }
 
     option = {
-        ai_chance = { factor = 40} 
+        ai_chance = { factor = 0} 
         name = ant.d.a
         hidden_effect = {   
         set_country_flag = cuck_orbay
