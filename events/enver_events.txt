@@ -158,7 +158,7 @@ country_event = { #terrorists form
     	remove_idea = CIB_OrduVatan
     	add_idea = CIB_OrduVatan_stratocracy
 		}
-		remove_idea = CIB_Zombie
+		remove_ideas = CIB_Zombie
         hidden_effect = {
 		
         }
@@ -448,11 +448,10 @@ country_event = { #istanbul annex
    		transfer_troops = yes
 		}	
 		}
-		}
 		add_stability = -0.10   
-		}			
-	}
-}
+		}
+		}
+		
 country_event = { #Bursa Trials - 1
 	id = enver.17
 	immediate = { log = "[GetDateText]: [Root.GetName]: event enver.17" }
@@ -465,15 +464,13 @@ country_event = { #Bursa Trials - 1
 	
 	option = { #Cancel the trial until limit
 		name = enver.17.a
-		ai_chance = { factor = 10} 
 		custom_effect_tooltip = later_Tt
 		country_event = { id = enver.19 }
 	}
 
 	option = { #Act now!
 		name = enver.17.b
-		ai_chance = { factor = 50}
-		country_event = { id = enver.18}
+		country_event = { id = enver.18 }
 	}
 }
 
