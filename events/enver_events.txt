@@ -124,6 +124,9 @@ country_event = { #Annex AZR
         add_core_of = CIB   
         }
 		unlock_national_focus = CIB_enveristan_proper
+		remove_ideas = CIB_King_Hill
+		remove_ideas = CIB_Zombie
+		remove_ideas = CIB_Enver_Idea
         hidden_effect = {
         country_event = { id = enver.7 days = 5} 
         }
@@ -295,17 +298,7 @@ country_event = { #georgia-enver
 		add_manpower = 5000
 		add_equipment_to_stockpile = {
    	 	type = infantry_equipment_1 
-    	amount = 3000
-    	producer = CIB
-		}
-		add_equipment_to_stockpile = {
-   	 	type = support_equipment_1 
-    	amount = 3000
-    	producer = CIB
-		}
-		add_equipment_to_stockpile = {
-   	 	type = artillery_equipment_1 
-    	amount = 767
+    	amount = 1000
     	producer = CIB
 		}
 		diplomatic_relation = {
@@ -335,18 +328,8 @@ country_event = { #georgia-georgia
 		add_manpower = 5000
 		add_equipment_to_stockpile = {
    	 	type = infantry_equipment_1 
-    	amount = 3000
-    	producer = GEO
-		}
-		add_equipment_to_stockpile = {
-   	 	type = support_equipment_1 
-    	amount = 3000
-    	producer = GEO
-		}
-		add_equipment_to_stockpile = {
-   	 	type = artillery_equipment_1 
-    	amount = 767
-    	producer = GEO
+    	amount = 1000
+    	producer = CIB
 		}
 		diplomatic_relation = {
     	country = CIB
@@ -462,13 +445,13 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = { #Cancel the trial until limit
+	option = { 
 		name = enver.17.a
 		custom_effect_tooltip = later_Tt
 		country_event = { id = enver.19 }
 	}
 
-	option = { #Act now!
+	option = { 
 		name = enver.17.b
 		country_event = { id = enver.18 }
 	}
@@ -565,7 +548,6 @@ country_event = {
 		remove_ideas = CIB_King_Hill
 		remove_ideas = CIB_OrduVatan_stratocracy
 		remove_ideas = CIB_Zombie
-		remove_ideas = CIB_vs_WRF
 		remove_ideas = CIB_Enver_Idea
 		add_ideas = samet_new_army
 		add_ideas = samet_admin_1

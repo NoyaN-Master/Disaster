@@ -761,10 +761,6 @@ focus_tree = {
         target = WRF
         type = annex_everything
         }
-		add_timed_idea = {
-    	idea = CIB_vs_WRF
-    	days = 40
-		}
 		}
 	}
 

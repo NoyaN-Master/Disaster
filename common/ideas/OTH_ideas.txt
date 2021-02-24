@@ -46,9 +46,6 @@ OTH_MSF_2 = {
 			war_support_factor = 0.10
             send_volunteer_divisions_required = -0.3
             send_volunteer_size = 3
-            experience_gain_army = 0.10
-            army_attack_factor = 0.05
-            attrition = -0.3
             special_forces_cap = 0.5
             political_power_gain = -0.05
 			}
@@ -57,16 +54,12 @@ OTH_MSF_last = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRA_Repress_Integralists" }
 			picture = GFX_idea_unknown
 			modifier = {
-			war_support_factor = 0.10
+			war_support_factor = 0.20
             send_volunteer_divisions_required = -0.3
             send_volunteer_size = 3
-            experience_gain_army = 0.10
-            army_attack_factor = 0.05
-            attrition = -0.3
             special_forces_cap = 0.5
-            political_power_gain = -0.10
-			army_morale_factor = 0.3
-			training_time_factor = 0.2
+            political_power_gain = 0.10
+			training_time_factor = 1.0
 			}
 			}
     }	       
