@@ -452,7 +452,7 @@ country_event = { #istanbul annex
 		}
 		}
 		
-country_event = { #Bursa Trials - 1
+country_event = { 
 	id = enver.17
 	immediate = { log = "[GetDateText]: [Root.GetName]: event enver.17" }
 	title = enver.17.t
@@ -474,13 +474,15 @@ country_event = { #Bursa Trials - 1
 	}
 }
 
-country_event = { #Bursa Trials - It's treason!
+country_event = { 
 	id = enver.18
-	immediate = { log = "[GetDateText]: [Root.GetName]: event enver.17" }
+	immediate = { log = "[GetDateText]: [Root.GetName]: event enver.18" }
 	title = enver.18.t
 	desc = enver.18.d
 
 	fire_only_once = yes
+	
+	is_triggered_only = yes
 
 	option = { #Treason!
 		name = enver.18.a 
@@ -498,13 +500,15 @@ country_event = { #Bursa Trials - It's treason!
 	}
 }	
 
-country_event = { #Bursa Trials - Samet opposition
+country_event = { 
 	id = enver.19
-	immediate = { log = "[GetDateText]: [Root.GetName]: event enver.17" }
+	immediate = { log = "[GetDateText]: [Root.GetName]: event enver.19" }
 	title = enver.19.t
 	desc = enver.19.d
 
 	fire_only_once = yes
+	
+	is_triggered_only = yes
 	
 	option = { #samet opposition
 		name = enver.19.a
@@ -523,13 +527,15 @@ country_event = { #Bursa Trials - Samet opposition
 	}
 }
 
-country_event = { #Bursa Trials - Samet veto
+country_event = {
 	id = enver.20
-	immediate = { log = "[GetDateText]: [Root.GetName]: event enver.17" }
+	immediate = { log = "[GetDateText]: [Root.GetName]: event enver.20" }
 	title = enver.20.t
 	desc = enver.20.d
 
 	fire_only_once = yes
+	
+	is_triggered_only = yes
 
 	option = { #samet opposition
 		name = enver.20.a
@@ -539,13 +545,15 @@ country_event = { #Bursa Trials - Samet veto
 	}
 }
 
-country_event = { #Bursa Trials - Samet coup
+country_event = {
 	id = enver.21
-	immediate = { log = "[GetDateText]: [Root.GetName]: event enver.17" }
+	immediate = { log = "[GetDateText]: [Root.GetName]: event enver.21" }
 	title = enver.21.t
 	desc = enver.21.d
 
 	fire_only_once = yes
+	
+	is_triggered_only = yes
 
 	option = { 
 		name = enver.21.a

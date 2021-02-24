@@ -1,0 +1,44 @@
+division_template = {
+	name = "Kurdish Guards"  		
+	division_names_group = TUR_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+division= {	
+		name = "Amediler"
+		location = 1463    
+		division_template = "Guards"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "Haqqari Guard"
+		location = 1463   
+		division_template = "Guards"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "Dersiim Guard"
+		location = 1463 
+		division_template = "Guards"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "Saitiler"
+		location = 1463   
+		division_template = "Guards"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
