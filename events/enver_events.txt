@@ -467,15 +467,13 @@ country_event = { #Bursa Trials - 1
 		name = enver.17.a
 		ai_chance = { factor = 10} 
 		custom_effect_tooltip = later_Tt
-		hidden_effect = {
-		country_event = { id = enver.19 days = 5 }
-		}
+		country_event = { id = enver.19 }
 	}
 
 	option = { #Act now!
 		name = enver.17.b
 		ai_chance = { factor = 50}
-		country_event = { id = enver.18 days = 2}
+		country_event = { id = enver.18}
 	}
 }
 
@@ -523,7 +521,7 @@ country_event = { #Bursa Trials - Samet opposition
     	name = CIB_authoritarian_socialist_samet
 		}
 		hidden_effect = {	
-		country_event = { id = enver.20 days = 6 }
+		country_event = { id = enver.20 }
 		}
 	}
 }
@@ -540,9 +538,7 @@ country_event = { #Bursa Trials - Samet veto
 		name = enver.20.a
 		custom_effect_tooltip = samet_veto_tt
 		add_stability = 0.10
-		hidden_effect = {	
-		country_event = { id = enver.21 days = 8 }
-		}
+		country_event = { id = enver.21 }
 	}
 }
 
@@ -554,7 +550,7 @@ country_event = { #Bursa Trials - Samet coup
 
 	fire_only_once = yes
 
-	option = { #samet opposition
+	option = { 
 		name = enver.21.a
 		set_stability = 0.7
 		set_war_support = 0.3

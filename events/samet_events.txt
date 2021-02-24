@@ -176,6 +176,7 @@ country_event = { #State
         add_manpower = 3000    
         }
 	}
+}	
 
 country_event = { #State
 	id = samet.7
@@ -193,4 +194,5 @@ country_event = { #State
 		name = samet.7.a
         add_stability = 0.05
         remove_ideas = samet_admin_3
-	}    
+	} 
+}	   

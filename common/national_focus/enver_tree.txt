@@ -502,7 +502,12 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_deal_mercenaries}
-		available = { has_war = no }
+		available = { 
+		has_war = no
+		356 = {
+		is_owned_by = CIB	 
+		} 
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -552,8 +557,12 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_deal_communists}
-		available = { has_war = no }
-		available = { has_war = no }
+		available = { 
+		has_war = no
+		347 = {
+		is_owned_by = CIB	 
+		} 
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -608,14 +617,14 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_deal_fuller_1}
-		available = { has_war = no }
+		available = {
+		has_war = no
+		839 = {
+		is_owned_by = CIB	 
+		}
+		}
 		ai_will_do = {
-			factor = 1
-		}
-		bypass = {
-		NOT = {	
-		country_exists = SKL
-		}
+			factor = 10
 		}
 		completion_reward = {
 		add_stability = 0.05
@@ -665,6 +674,12 @@ focus_tree = {
 		prerequisite = { focus = CIB_deal_kemalists_1 }
 		ai_will_do = {
 			factor = 1
+		}
+		available = { 
+		has_war = no
+		49 = {
+		is_owned_by = CIB	 
+		} 
 		}
 		completion_reward = {
 		add_stability = 0.10

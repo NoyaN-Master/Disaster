@@ -173,6 +173,15 @@ country_event = { #collapse-left side
         IZM = {
         load_oob = "IZM_Army"            
         }
+        OTH=  {
+		load_oob = "OTH_Army"
+		}
+        SKL = {
+        transfer_state = 798
+        }
+        798  = {
+        add_core_of = SKL    
+        }
         SKL = { change_tag_from = ANT }
         news_event = { id = ant.7 }
     }
