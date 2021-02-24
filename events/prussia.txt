@@ -130,7 +130,7 @@ country_event = { #Elections
 		}
 	}
 	option = { #Junkers
-		name = pre.5.d
+		name = pre.5.e
 		ai_chance = { factor = 1}
 		set_country_flag = PRE_junker_victory
 		add_popularity = {
@@ -419,7 +419,7 @@ country_event = { #attacking goring
 			popularity = -0.06
 		}
 		add_popularity = {
-			ideology = national_bolshevik
+			ideology = unisocialist 
 			popularity = 0.02
 		}
 		add_stability = -0.04
@@ -636,7 +636,7 @@ country_event = { #gamer moment
 		ai_chance = { factor = 1}
 		add_political_power = 50
 		add_popularity = {
-			ideology = national_bolshevik
+			ideology = unisocialist 
 			popularity = -0.07
 		}
 		add_popularity = {
@@ -688,7 +688,7 @@ country_event = { #schleicher's policies
 			popularity = 0.04
 		}
 		add_popularity = {
-			ideology = national_bolshevik
+			ideology = unisocialist 
 			popularity = 0.04
 		}
 	}

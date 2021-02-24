@@ -57,7 +57,7 @@ ANT_failed_reducement = {
 				NOT = { has_idea = ANT_Failed_State_3 }
                 }
 				hidden_effect = {
-				remove_idea = ANT_Failed_State
+				remove_ideas = ANT_Failed_State
 				add_ideas = ANT_Failed_State_1	
 				}	
 			}
@@ -94,7 +94,7 @@ ANT_anarchy_reducement = {
 				NOT = { has_idea = ANT_Anarchy_8 }
                 }
 				hidden_effect = {
-				remove_idea = ANT_Anarchy
+				remove_ideas = ANT_Anarchy
 				add_ideas = ANT_Anarchy_1	
 				}	
 				}

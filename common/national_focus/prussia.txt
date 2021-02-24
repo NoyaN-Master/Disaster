@@ -230,15 +230,14 @@ focus_tree = {
         select_effect = {
             country_event = { id = pre.22 days = 5 }	
 			add_ideas = PRE_querfront_negotiations_idea			
-        }
-			
-		hidden_effect = {
-		remove_ideas = PRE_querfront_negotiations_idea
-		}		
+        }	
 		cost = 5		
 		completion_reward = {
 		    	custom_effect_tooltip = PRE_querfront_negotiations
 				show_ideas_tooltip = PRE_querfront_negotiations_idea	
+		hidden_effect = {
+		remove_ideas = PRE_querfront_negotiations_idea
+		}	
 		}
 	}
     focus = {
@@ -581,7 +580,7 @@ focus_tree = {
 		add_ideas = PRE_one_prussian_nation_idea
 		}
 	}	
-################################# nazi
+################################# goring
 	focus = {
 		id = PRE_nazi_victory_focus
 		icon = GFX_goal_goring_takes_power
@@ -664,12 +663,12 @@ focus_tree = {
 		prerequisite = { focus = PRE_absorb_dnvp }	
 		select_effect = {
 		country_event = { id = pre.27 days = 6 }
-		add_ideas = PRE_nacht_der_langer_messer }			
+		add_ideas = PRE_nacht_der_langer_messer_idea }			
 		completion_reward = {
 		custom_effect_tooltip = PRE_nacht_der_langer_messer_tooltip
-		show_ideas_tooltip = PRE_nacht_der_langer_messer
+		show_ideas_tooltip = PRE_nacht_der_langer_messer_idea
 		hidden_effect = {
-		remove_ideas = PRE_nacht_der_langer_messer
+		remove_ideas = PRE_nacht_der_langer_messer_idea
 		}
 		}
 	}
