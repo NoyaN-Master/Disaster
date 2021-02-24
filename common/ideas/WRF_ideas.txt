@@ -34,7 +34,6 @@ WRF_Tekalif = {
 			#picture = WRF_Tekalif
 			modifier = {
 			production_speed_buildings_factor = -0.5
-			production_factory_efficiency_gain_factor = -0.50
 			production_factory_start_efficiency_factor = -0.20
 			attrition = -0.1
 			}
@@ -62,7 +61,6 @@ WRF_Tekalif_Vatan = {
 			#picture = WRF_Tekalif
 			modifier = {
 			production_speed_buildings_factor = -0.3
-			production_factory_efficiency_gain_factor = -0.25
 			production_factory_start_efficiency_factor = -0.10
 			attrition = -0.2
 			}

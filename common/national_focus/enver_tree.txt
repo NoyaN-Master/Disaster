@@ -508,6 +508,16 @@ focus_tree = {
 		is_owned_by = CIB	 
 		} 
 		}
+		bypass = {
+		347 = {
+		OR = {
+		is_owned_by = CLP
+		is_owned_by = IZM
+		is_owned_by = SKL
+		is_owned_by = WRF
+		}
+		}
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -566,6 +576,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		bypass = {
+		347 = {
+		OR = {
+		is_owned_by = CLP
+		is_owned_by = OTH
+		is_owned_by = SKL
+		is_owned_by = WRF
+		}
+		}
+		}
 		completion_reward = {
 		347 = {
 		add_extra_state_shared_building_slots = 5	
@@ -621,6 +641,16 @@ focus_tree = {
 		has_war = no
 		839 = {
 		is_owned_by = CIB	 
+		}
+		}
+		bypass = {
+		347 = {
+		OR = {
+		is_owned_by = CLP
+		is_owned_by = IZM
+		is_owned_by = OTH
+		is_owned_by = WRF
+		}
 		}
 		}
 		ai_will_do = {
@@ -680,6 +710,16 @@ focus_tree = {
 		49 = {
 		is_owned_by = CIB	 
 		} 
+		}
+		bypass = {
+		347 = {
+		OR = {
+		is_owned_by = CLP
+		is_owned_by = IZM
+		is_owned_by = OTH
+		is_owned_by = WRF
+		}
+		}
 		}
 		completion_reward = {
 		add_stability = 0.10

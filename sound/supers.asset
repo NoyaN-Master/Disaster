@@ -20,4 +20,11 @@ sound = {
 	always_load = yes
 }
 
+sound = {
+	name = "ataturk"
+	file = "menu/ataturk.wav"
+	volume = 1
+	always_load = yes
+}
+
 
