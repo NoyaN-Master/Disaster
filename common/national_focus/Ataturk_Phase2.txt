@@ -211,6 +211,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		country_event = { id = tur.8 }
 		hidden_effect = {
 		}
 		}

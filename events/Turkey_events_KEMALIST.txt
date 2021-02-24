@@ -197,9 +197,9 @@ country_event = { #Death
 	    traits = {	
 	    }
         }
-		
         hidden_effect = {   
-        }
+        country_event = { id = tur.9 days = 2 }
+		}
 	}
 }
 
