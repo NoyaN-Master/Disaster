@@ -32,8 +32,8 @@ country_event = { #Enver decision
 	option = {
 		name = samet.2.a
         swap_ideas = {
-        remove_ideas = samet_enverist_threat
-        add_ideas = samet_enverist_threat_2
+        remove_idea = samet_enverist_threat
+        add_idea = samet_enverist_threat_2
         }
 	}
 }
@@ -58,8 +58,8 @@ country_event = { #Operation Altay
         add_manpower = -200    
         }
         swap_ideas = {
-        remove_ideas = samet_enverist_threat_2
-        add_ideas = samet_enverist_threat_3
+        remove_idea = samet_enverist_threat_2
+        add_idea = samet_enverist_threat_3
         }
 	}
 }
@@ -138,8 +138,8 @@ country_event = { #State
 	option = {
 		name = samet.5.a
         swap_ideas = {
-        remove_ideas = samet_admin_1
-        add_ideas = samet_admin_2
+        remove_idea = samet_admin_1
+        add_idea = samet_admin_2
         }
 	}
 }
@@ -160,8 +160,8 @@ country_event = { #State
 		name = samet.6.a
         add_stability = -0.09
         swap_ideas = {
-        remove_ideas = samet_admin_2
-        add_ideas = samet_admin_3
+        remove_idea = samet_admin_2
+        add_idea = samet_admin_3
         }
         353 = {
         add_manpower = 1000    
