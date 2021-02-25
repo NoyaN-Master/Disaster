@@ -115,7 +115,7 @@ PRE_national_solidarity_idea2 = {
 		}
 PRE_formalise_army_power_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_formalise_army_power_idea" }
-			picture = formalise_army
+			picture = formalise_army_power
 			modifier = {
 			high_command_cost_factor = -0.2
 			max_command_power = 20
@@ -365,7 +365,7 @@ PRE_harzbrug_front = {
 		}
 PRE_subdue_the_junkers_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_subdue_the_junkers_idea" }
-			picture = formalise_army
+			picture = formalise_army_power
 			modifier = {
 			political_power_factor = -0.25	
 			stability_weekly = 0.01			
