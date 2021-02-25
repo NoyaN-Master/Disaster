@@ -57,6 +57,9 @@ TUR_unification_category = {
         set_country_flag = unification_ataturk    
         }   
         }
+        ai_will_do = {
+			factor = 1000
+		}
      }
 	wrf_atsiz_unify_decision = {
 	    fire_only_once = yes
@@ -90,6 +93,9 @@ TUR_unification_category = {
         set_country_flag = unification_atsiz
         }    
         }
+        ai_will_do = {
+			factor = 1000
+		}
      }
      wrf_democrat_unify_decision = {
 	    fire_only_once = yes
@@ -121,6 +127,9 @@ TUR_unification_category = {
         set_cosmetic_tag = WRF_Democrat
         load_focus_tree = wrf_democrat_tree       
         }
+        ai_will_do = {
+			factor = 1000
+		}
      }
      CIB_unify_decision = {
 	    fire_only_once = yes
@@ -155,6 +164,9 @@ TUR_unification_category = {
         }
         set_country_flag = unification_enver            
         }
+        ai_will_do = {
+			factor = 1000
+		}
      }
 
      CIB_unify_samet_decision = {
@@ -191,6 +203,9 @@ TUR_unification_category = {
             set_country_flag = unification_samet
         }
         }
+        ai_will_do = {
+			factor = 1000
+		}
      }
 
      CLP_unify_decision = {
@@ -218,6 +233,10 @@ TUR_unification_category = {
         }  
         complete_effect = {
         }
+        ai_will_do = {
+			factor = 1000
+		}
+
      }
 
      WRF_take_smyrna = {

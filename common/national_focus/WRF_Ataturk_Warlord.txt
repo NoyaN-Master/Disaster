@@ -544,9 +544,8 @@ focus_tree = {
 	 custom_effect_tooltip = enver_war_tt
 	 create_wargoal = {
      type = annex_everything
-     target = IZM
-     }
-	 add_ideas = CIB_vs_WRF 
+     target = CIB
+     } 
 	 }	
 	}
 
