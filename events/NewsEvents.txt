@@ -1,1 +1,256 @@
-﻿
+﻿namespace = news
+
+news_event = { #EnverVsArmenia
+	id = news.1
+	title = news.1.t
+	desc = news.1.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+    option = {
+		name = news.1.a
+		
+    }
+
+}
+
+news_event = { #AzerbaijanAnnex
+	id = news.2
+	title = news.2.t
+	desc = news.2.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+    option = {
+		name = news.2.a
+		
+    }
+
+}
+
+news_event = { #ANT-FullerCoup
+	id = news.3
+	title = news.3.t
+	desc = news.3.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+    option = {
+		name = news.3.a
+		
+    }
+
+}
+
+news_event = { #ANT-Collapse
+	id = news.4
+	title = news.4.t
+	desc = news.4.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+    option = {
+		name = news.4.a
+		
+    }
+
+}
+
+news_event = { #WRFWar
+	id = news.5
+	title = news.5.t
+	desc = news.5.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+    option = {
+		name = news.5.a
+		
+    }
+
+}
+
+news_event = { #AtsizCoup
+	id = news.6
+	title = news.6.t
+	desc = news.6.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+    option = {
+		name = news.6.a
+		
+    }
+
+}
+
+news_event = { #TachankaPact
+	id = news.7
+	title = news.7.t
+	desc = news.7.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+    option = {
+		name = news.7.a
+		
+    }
+
+}
+
+news_event = { #WarriorsOfJudea
+	id = news.8
+	title = news.8.t
+	desc = news.8.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+    option = {
+		name = news.8.a
+		
+    }
+
+}
+
+news_event = { #IstanbulAnnexed-Normal
+	id = news.9
+	title = news.9.t
+	desc = news.9.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+    option = {
+		name = news.9.a
+		
+    }
+
+}
+
+news_event = { #IstanbulAnnexed-Atsiz
+	id = news.10
+	title = news.10.t
+	desc = news.10.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+    option = {
+		name = news.10.a
+		
+    }
+
+}
+
+news_event = { #Unification-Kemalist
+	id = news.11
+	title = news.11.t
+	desc = news.11.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+    option = {
+		name = news.11.a
+		
+    }
+
+}
+
+news_event = { #Unification-Enver
+	id = news.12
+	title = news.12.t
+	desc = news.12.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+    option = {
+		name = news.12.a
+		
+    }
+
+}
+
+news_event = { #Unification-Atsiz
+	id = news.13
+	title = news.13.t
+	desc = news.13.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+    option = {
+		name = news.13.a
+		
+    }
+
+}
+
+news_event = { #The Snow Massacre
+	id = news.14
+	title = news.14.t
+	desc = news.14.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+    option = {
+		name = news.14.a
+		
+    }
+
+}
+
+news_event = { #The Snow Massacre
+	id = news.15
+	title = news.15.t
+	desc = news.15.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+    option = {
+		name = news.15.a
+		
+    }
+
+}
