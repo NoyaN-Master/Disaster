@@ -497,12 +497,25 @@ country_event = {
 		name = enver.19.a
 		set_political_party = {
     	ideology = authoritarian_socialist
+    	popularity = 25
+		}
+		set_political_party = {
+    	ideology = ultranationalist
+    	popularity = 25
+		}
+		set_political_party = {
+    	ideology = revolutionary_nationalist
     	popularity = 50
 		}
 		set_party_name = { 
     	ideology = authoritarian_socialist 
     	long_name = CIB_authoritarian_socialist_samet_long
     	name = CIB_authoritarian_socialist_samet
+		}
+		set_party_name = { 
+    	ideology = ultranationalist 
+    	long_name = CIB_ultranationalist_samet_long
+    	name = CIB_ultranationalist_samet
 		}
 		hidden_effect = {	
 		country_event = { id = enver.20 }

@@ -999,7 +999,8 @@ country_event = { #TACHANKA 2 enver moves in
 		 country_event = { id = wrf.39 days = 1 }
 		 }
 		 WRF_atsiz_coup = yes
-		 hidden_effect = {	 
+		 hidden_effect = {
+		 news_event = { id = news.6 }	 	 
 		}
 	}
 }
@@ -1053,6 +1054,7 @@ country_event = { #nationalists istanbul
    	 	target = CRW
     	transfer_troops = no
 		}
+		news_event = { id = news.10 }
 	}
 }
 
@@ -1071,6 +1073,7 @@ country_event = { #nationalists istanbul
 	option = {
 		name = wrf.43.a
 		WRF_atsiz_annex = yes
+		news_event = { id = news.7 }
 	}
 }
 

@@ -89,6 +89,7 @@ country_event = { #The Snow Massacre
 		add_stability = -0.10
 		manpower = -1000
 		country_event = { id = crw.5 days = 3 }
+		news_event = { id = news.14 }
 	}
 }
 

@@ -54,7 +54,8 @@ TUR_unification_category = {
         add_state_core = 797
         }
         hidden_effect = {
-        set_country_flag = unification_ataturk    
+        set_country_flag = unification_ataturk
+        news_event = { id = news.11 }    
         }   
         }
         ai_will_do = {
@@ -91,6 +92,7 @@ TUR_unification_category = {
         complete_effect = {
         hidden_effect = {  
         set_country_flag = unification_atsiz
+        news_event = { id = news.13 }
         }    
         }
         ai_will_do = {
@@ -160,7 +162,8 @@ TUR_unification_category = {
         }  
         complete_effect = {
         hidden_effect = {
-        set_cosmetic_tag = CIB_Enver    
+        set_cosmetic_tag = CIB_Enver
+        news_event = { id = news.12 }    
         }
         set_country_flag = unification_enver            
         }
@@ -201,6 +204,7 @@ TUR_unification_category = {
         load_focus_tree = samet_tree
         hidden_effect = {
             set_country_flag = unification_samet
+            news_event = { id = news.15 }
         }
         }
         ai_will_do = {

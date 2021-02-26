@@ -150,4 +150,24 @@ samet_enverist_threat_3 = {
 		}
 }
 
+samet_authsoc_liberty = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
+			picture = CIB_OrduVatan
+			modifier = {
+			political_power_gain = -0.10
+			stability_factor = 0.10
+			}
+		}
+}
+
+samet_ultnat_liberty = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
+			picture = CIB_OrduVatan
+			modifier = {
+			political_power_gain = 0.10
+			stability_factor = -0.10
+			}
+		}
+}
+
 }

@@ -14,6 +14,16 @@ country_event = { #Introduction
 
 	option = {
 		name = samet.1.a
+		hidden_effect = {
+		set_country_flag = {
+				flag = samet_authsoc
+				value = 0
+			}
+		set_country_flag = {
+				flag = samet_ultranat
+				value = 0
+			}	
+		}
 	}
 }
 
@@ -35,6 +45,42 @@ country_event = { #Enver decision
         remove_idea = samet_enverist_threat
         add_idea = samet_enverist_threat_2
         }
+		add_popularity = {
+    	ideology = revolutionary_nationalist
+    	popularity = -0.2
+		}
+		add_popularity = {
+    	ideology = authoritarian_socialist
+    	popularity = 0.2
+		}
+		hidden_effect = {
+		modify_country_flag = {
+				flag = samet_authsoc
+				value = 1
+			}	
+		}
+	}
+
+	option = {
+		name = samet.2.b
+        swap_ideas = {
+        remove_idea = samet_enverist_threat
+        add_idea = samet_enverist_threat_2
+        }
+		add_popularity = {
+    	ideology = revolutionary_nationalist
+    	popularity = -0.2
+		}
+		add_popularity = {
+    	ideology = ultranationalist
+    	popularity = 0.2
+		}
+		hidden_effect = {
+		modify_country_flag = {
+				flag = samet_ultranat
+				value = 1
+			}	
+		}	
 	}
 }
 
@@ -61,6 +107,47 @@ country_event = { #Operation Altay
         remove_idea = samet_enverist_threat_2
         add_idea = samet_enverist_threat_3
         }
+		add_popularity = {
+    	ideology = revolutionary_nationalist
+    	popularity = -0.3
+		}
+		add_popularity = {
+    	ideology = authoritarian_socialist
+    	popularity = 0.3
+		}
+		hidden_effect = {
+		modify_country_flag = {
+				flag = samet_authsoc
+				value = 1
+			}	
+		}
+	}
+
+	option = {
+		name = samet.3.b
+        add_stability = -0.10
+        add_political_power = 200
+        354 = {
+        add_manpower = -2000    
+        }
+        swap_ideas = {
+        remove_idea = samet_enverist_threat_2
+        add_idea = samet_enverist_threat_3
+        }
+		add_popularity = {
+    	ideology = revolutionary_nationalist
+    	popularity = -0.3
+		}
+		add_popularity = {
+    	ideology = ultranationalist
+    	popularity = 0.3
+		}
+		hidden_effect = {
+		modify_country_flag = {
+				flag = samet_ultranat
+				value = 1
+			}	
+	}
 	}
 }
 
@@ -141,6 +228,34 @@ country_event = { #State
         remove_idea = samet_admin_1
         add_idea = samet_admin_2
         }
+		add_popularity = {
+    	ideology = authoritarian_socialist
+    	popularity = 0.1
+		}
+		hidden_effect = {
+		modify_country_flag = {
+				flag = samet_authsoc
+				value = 1
+			}	
+		}
+	}
+
+	option = {
+		name = samet.5.b
+        swap_ideas = {
+        remove_idea = samet_admin_1
+        add_idea = samet_admin_2
+        }
+		add_popularity = {
+    	ideology = ultranationalist
+    	popularity = 0.1
+		}
+	}
+	hidden_effect = {
+		modify_country_flag = {
+				flag = samet_ultranat
+				value = 1
+			}	
 	}
 }
 
@@ -164,17 +279,58 @@ country_event = { #State
         add_idea = samet_admin_3
         }
         353 = {
-        add_manpower = 1000    
+        add_manpower = -1000    
         }
         349 = {
-        add_manpower = 1000    
+        add_manpower = -1000    
         }
         800 = {
-        add_manpower = 1000    
+        add_manpower = -1000    
         }
         346 = {
-        add_manpower = 3000    
+        add_manpower = -3000    
         }
+		add_popularity = {
+    	ideology = authoritarian_socialist
+    	popularity = 0.1
+		}
+		hidden_effect = {
+		modify_country_flag = {
+				flag = samet_authsoc
+				value = 1
+			}	
+		}
+	}
+
+	option = {
+		name = samet.6.b
+        add_stability = -0.15
+        swap_ideas = {
+        remove_idea = samet_admin_2
+        add_idea = samet_admin_3
+        }
+        353 = {
+        add_manpower = -1500  
+        }
+        349 = {
+        add_manpower = -1500    
+        }
+        800 = {
+        add_manpower = -1500    
+        }
+        346 = {
+        add_manpower = -5000    
+        }
+		add_popularity = {
+    	ideology = ultranationalist
+    	popularity = 0.1
+		}
+		hidden_effect = {
+		modify_country_flag = {
+				flag = samet_ultranat
+				value = 1
+			}	
+		}
 	}
 }	
 
@@ -195,4 +351,37 @@ country_event = { #State
         add_stability = 0.05
         remove_ideas = samet_admin_3
 	} 
-}	   
+}
+
+country_event = { #sons of liberty
+	id = samet.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = samet.8.t
+	desc = samet.8.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = samet.8.a
+        trigger = {
+		has_country_flag = {
+					flag = samet_authsoc
+					value > 2
+			}	
+		}
+	}
+
+	option = {
+		name = samet.8.b
+        trigger = {
+		has_country_flag = {
+					flag = samet_ultranat
+					value > 2
+			}	
+		}
+	} 
+}
