@@ -162,6 +162,48 @@ WRF_TSK_New = {
 			experience_gain_army = 0.05
 			max_planning_factor = 0.25 
 			}
-		}								
-	}				
-		
+		}												
+Atsiz_New_Regime = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			stability_factor = -0.60
+			conscription = -0.10
+			stability_weekly = -0.005
+			production_factory_max_efficiency_factor = -0.2
+			production_speed_buildings_factor = -0.2  
+			}
+		}
+Atsiz_Discontent_Army = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			war_support_factor = -0.30
+			army_defence_factor = -0.05
+			army_attack_factor = -0.05
+			experience_gain_army = -0.05
+			max_planning_factor = -0.25 
+			}
+		}
+Atsiz_Enverist_Influence = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			political_power_gain = -0.015
+			war_support_factor = -0.10
+			ultranationalist_drift = 0.10
+			}
+		}
+Atsiz_Strong_Milita = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			political_power_gain = 0.010
+			war_support_factor = 0.10
+			stability_weekly = 0.005
+			stability_factor = 0.10
+			}
+		}
+}
+
+}

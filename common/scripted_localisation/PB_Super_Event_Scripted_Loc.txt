@@ -28,6 +28,13 @@ defined_text = { #SUPER EVENT TITLES
         }
         localization_key = "GFX_SPEVNT_Unification_Ataturk"
     }
+
+    text = { 
+        trigger = {
+            has_global_flag = TUR_Unification_Ethem
+        }
+        localization_key = "GFX_SPEVNT_Unification_Ethem"
+    }
 }
 
 defined_text = { #SUPER EVENT QUOTES
@@ -58,6 +65,13 @@ defined_text = { #SUPER EVENT QUOTES
             has_global_flag = TUR_Unification_Ataturk
         }
         localization_key = "GFX_SPEVNT_Unification_Ataturk_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            has_global_flag = TUR_Unification_Ethem
+        }
+        localization_key = "GFX_SPEVNT_Unification_Ethem_TEXT"
     }
 }
 
@@ -90,6 +104,13 @@ defined_text = { #SUPER EVENT REMARKS
             has_global_flag = TUR_Unification_Ataturk
         }
         localization_key = "GFX_SPEVNT_Unification_Ataturk_REMARK"
+    }
+
+    text = { 
+        trigger = {
+            has_global_flag = TUR_Unification_Ethem
+        }
+        localization_key = "GFX_SPEVNT_Unification_Ethem_REMARK"
     }
 	
 }

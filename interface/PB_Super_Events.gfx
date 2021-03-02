@@ -47,6 +47,12 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	spriteType = {
+		name = "GFX_SPEVNT_Unification_Ethem"
+		texturefile = "gfx/super_events/SPEVNT_Unification_Ethem.dds"
+		legacy_lazy_load = no
+	}
+
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window_thin_border"
 		size= { x=192 y=192 }

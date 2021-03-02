@@ -1,0 +1,148 @@
+focus_tree = {
+	id = atsiz_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+		}
+	}
+
+    focus = {
+		id = WRF_Atsiz_Start2
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 15
+		y = 0
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		country_event = { id = atsiz.1 }
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = WRF_Atsiz_Sons_East
+		icon = GFX_goal_WRF_East
+		x = 14
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Atsiz_Start2 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = { 
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = WRF_Atsiz_What_Ottomans
+		icon = GFX_goal_WRF_Atsiz_Soldier
+		x = 14
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Atsiz_Sons_East }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = { 
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = WRF_Atsiz_Civilization_Greek
+		icon = GFX_goal_WRF_Greek
+		x = 13
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Atsiz_What_Ottomans }
+        prerequisite = { focus = WRF_Atsiz_What_Rome }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = { 
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = WRF_Atsiz_War_Turkish
+		icon = GFX_goal_WRF_Atsiz_Abra
+		x = 15
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Atsiz_Religion_Arab }
+        prerequisite = { focus = WRF_Atsiz_Law_Roman }
+        prerequisite = { focus = WRF_Atsiz_Civilization_Greek }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = { 
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = WRF_Atsiz_Sons_West
+		icon = GFX_goal_WRF_Conan
+		x = 16
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Atsiz_Start2 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = { 
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = WRF_Atsiz_What_Rome
+		icon = GFX_goal_WRF_Hunnic
+		x = 16
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Atsiz_Sons_West }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = { 
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = WRF_Atsiz_Law_Roman
+		icon = GFX_goal_WRF_Italy
+		x = 17
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Atsiz_What_Rome }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = { 
+		hidden_effect = {
+		}
+		}
+	}
+}    

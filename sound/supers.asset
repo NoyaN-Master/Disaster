@@ -27,4 +27,11 @@ sound = {
 	always_load = yes
 }
 
+sound = {
+	name = "ethem"
+	file = "menu/ethem.wav"
+	volume = 1
+	always_load = yes
+}
+
 

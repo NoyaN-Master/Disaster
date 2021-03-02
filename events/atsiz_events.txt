@@ -1,0 +1,81 @@
+add_namespace = atsiz
+
+country_event = { #Introduction
+	id = atsiz.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = atsiz.1.t
+	desc = atsiz.1.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = atsiz.1.a
+        custom_effect_tooltip = atsiz_parties_tt
+        set_party_name = { 
+        ideology = ultranationalist 
+        long_name = WRF_atsiz_ultnat_long 
+        name = WRF_atsiz_ultnat 
+        }
+        set_party_name = { 
+        ideology = revolutionary_nationalist 
+        long_name = WRF_atsiz_revnat 
+        name = WRF_atsiz_revnat 
+        }
+        set_party_name = { 
+        ideology = unisocialist 
+        long_name = WRF_atsiz_unisoc_long 
+        name = WRF_atsiz_unisoc 
+        }
+        set_party_name = { 
+        ideology = autocratic 
+        long_name = WRF_atsiz_despot_long 
+        name = WRF_atsiz_despot 
+        }
+        set_party_name = { 
+        ideology = esoteric_traditionalist
+        long_name = WRF_atsiz_esotrad_long 
+        name = WRF_atsiz_esotrad 
+        }
+        set_party_name = { 
+        ideology = authoritarian_democrat 
+        long_name = empty_party_slot_loc_atsiz
+        name = empty_party_slot_loc 
+        }
+        set_party_name = { 
+        ideology = authoritarian_socialist 
+        long_name = empty_party_slot_loc_atsiz
+        name = empty_party_slot_loc 
+        }
+        set_party_name = { 
+        ideology = libertarian_socialist 
+        long_name = empty_party_slot_loc_atsiz
+        name = empty_party_slot_loc 
+        }
+        set_party_name = { 
+        ideology = liberal 
+        long_name = empty_party_slot_loc_atsiz
+        name = empty_party_slot_loc 
+        }
+        set_party_name = { 
+        ideology = conservative 
+        long_name = empty_party_slot_loc_atsiz
+        name = empty_party_slot_loc 
+        }
+        set_party_name = { 
+        ideology = social_democrat 
+        long_name = empty_party_slot_loc_atsiz
+        name = empty_party_slot_loc 
+        }
+        set_popularities = {
+	    revolutionary_nationalist = 40
+	    ultranationalist = 15
+	    esoteric_traditionalist = 10
+	    unisocialist = 20
+        autocratic = 15
+        }
+	}
+}

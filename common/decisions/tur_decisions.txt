@@ -87,9 +87,17 @@ TUR_unification_category = {
         visible = {
         original_tag = WRF
         has_government = revolutionary_nationalist
-        load_focus_tree = wrf_atsiz_tree
         }  
         complete_effect = {
+        load_focus_tree = atsiz_tree
+        remove_ideas = WRF_For_All_Brothers
+        remove_ideas = WRF_Ajan_Antalya
+        remove_ideas = WRF_Kemal_Army_Disc
+        remove_ideas = WRF_Legitimate_Heir
+        remove_ideas = WRF_Greek_Legacy
+        add_ideas = Atsiz_New_Regime
+        add_ideas = Atsiz_Discontent_Army
+        add_ideas = Atsiz_Strong_Milita    
         hidden_effect = {  
         set_country_flag = unification_atsiz
         news_event = { id = news.13 }
