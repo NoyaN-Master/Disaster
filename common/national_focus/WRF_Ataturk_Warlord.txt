@@ -516,6 +516,9 @@ focus_tree = {
 		}
 	 completion_reward = {
 		 custom_effect_tooltip = tachanka_tt
+		 CIB = {
+		 country_event = { id = wrf.39 days = 1 }
+		 }
 		 hidden_effect = {
 			WRF_atsiz_annex = yes 
 		 }
