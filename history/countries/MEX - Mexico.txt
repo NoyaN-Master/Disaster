@@ -30,9 +30,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Plutarco Elías Calles"
-	desc = "MEX_Calles_desc"
-	picture = "MEX_Calles.tga"
+	name = "Father Shrek"
+	desc = "MEX_Shrek_desc"
+	picture = "MEX_Shrek.tga"
 	expire = "2020.1.1"
 	ideology = authoritarian_socialist_subideology
 	traits = {
