@@ -171,7 +171,7 @@ country_event = { #collapse-left side
         release = ANK
         release = IZM
         IZM = {
-        load_oob = "IZM_Army"            
+        load_oob = "IZM_Army_favour"            
         }
         OTH=  {
 		load_oob = "OTH_Army"
@@ -182,6 +182,9 @@ country_event = { #collapse-left side
         798  = {
         add_core_of = SKL    
         }
+        ANK=  {
+		load_oob = "ANK_Army"
+		}
         SKL = { change_tag_from = ANT }
         news_event = { id = ant.7 }
     }
@@ -219,6 +222,9 @@ country_event = { #collapse-OTH
         }
 		OTH=  {
 		load_oob = "OTH_Army_favour"
+		}
+        ANK=  {
+		load_oob = "ANK_Army"
 		}
         OTH = { change_tag_from = ANT }
         news_event = { id = ant.7 }
@@ -258,6 +264,9 @@ country_event = { #collapse-IZM
         798  = {
         add_core_of = KLG    
         }
+        ANK=  {
+		load_oob = "ANK_Army"
+		}
         IZM = { change_tag_from = ANT }
         news_event = { id = ant.7 }
     }
@@ -290,6 +299,9 @@ country_event = { #collapse-ANK
         839 = {
         add_core_of = ANK    
         }
+        ANK=  {
+		load_oob = "ANK_Army"
+		}
         ANK = { change_tag_from = ANT }
         news_event = { id = ant.7 }
     }
@@ -313,6 +325,9 @@ country_event = { #collapse-klg
         IZM = {
         load_oob = "IZM_Army"            
         }
+        ANK=  {
+		load_oob = "ANK_Army"
+		}
         KLG = { change_tag_from = ANT }
         news_event = { id = ant.7 }
     }

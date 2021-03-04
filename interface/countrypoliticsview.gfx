@@ -644,11 +644,6 @@ spriteType = {
 		alwaystransparent = yes
 		effectFile = "gfx/FX/buttonstate_blendframes.lua"
 	}
-
-	spriteType = {
-		name = "GFX_icon_manage_subjects"
-		texturefile = "gfx/interface/icon_manage_subjects.dds"
-	}
 	
 	spriteType = {
 		name = "GFX_ideology_conservative_group"

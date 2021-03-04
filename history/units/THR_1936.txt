@@ -1,0 +1,38 @@
+division_template = {
+	name = "Kuvayi Milliye"
+	division_names_group = TUR_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+	}
+}
+
+division= {	
+		name = "Edirneliler"
+		location = 11842    # Vienna
+		division_template = "Kuvayi Milliye"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "Kırıkkaleliler"
+		location = 3893    # Vienna
+		division_template = "Kuvayi Milliye"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "Ismet Brigade"
+		location = 849    # Vienna
+		division_template = "Kuvayi Milliye"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
