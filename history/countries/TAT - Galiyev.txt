@@ -1,5 +1,5 @@
 capital = 652
-oob = ""
+oob = "TAT_1936"
 
 # Starting tech
 set_technology = {
@@ -67,6 +67,18 @@ create_country_leader = {
 		#
 	}
 }
+
+create_country_leader = {
+	name = "Mirsaid Sultangaliyev"
+	#desc = "TAT_Galiyev_desc"
+	picture = "Portrait_TAT_Galiyev.tga"
+	expire = "2020.1.1"
+	ideology = galiyevism
+	traits = {
+		#
+	}
+}
+
 
 create_field_marshal = {
 			name = "Mirsaid Sultangaliyev"

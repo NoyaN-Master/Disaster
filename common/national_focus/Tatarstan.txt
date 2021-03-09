@@ -1,0 +1,571 @@
+focus_tree = {
+	id = galiyev_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = WRF
+		}
+	}
+	continuous_focus_position = { x = 800 y = 10000 }
+
+focus = {
+		id = TAT_Our_Problems
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 10
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+
+focus = {
+		id = TAT_Call_Party
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 10
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Our_Problems }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+    focus = {
+		id = TAT_Army
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 10
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Call_Party }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = TAT_Russian_Weapons
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 9
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Army }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = TAT_Modernizing_Army
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 11
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Army }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = TAT_Officer_Corps
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 10
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Russian_Weapons }
+        prerequisite = { focus = TAT_Modernizing_Army }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = TAT_From_Nomadic_Tradition
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 11
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Mass_Literacy }
+        prerequisite = { focus = TAT_Officer_Corps }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = TAT_Turan_Tactics
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 11
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus =  TAT_From_Nomadic_Tradition }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = TAT_Economy
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 6
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Call_Party }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = TAT_Challenge_Feudals
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 6
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Economy }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = TAT_No_More_Compromise
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 6
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Challenge_Feudals }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = TAT_Land_Collectivization
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 5
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_No_More_Compromise }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+    
+    focus = {
+		id = TAT_Legacy_Bukhara
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 7
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_No_More_Compromise }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = TAT_Turkic_Arts
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 8
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Legacy_Bukhara }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = TAT_University_Of_Tatarstan
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 8
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Legacy_Bukhara }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = TAT_Turkic_Brotherhood
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 6
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Protect_Merchants }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = TAT_Warrior_Imams
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 12
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Red_Riders_Islam }
+        prerequisite = { focus = TAT_Turan_Tactics }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = TAT_Protect_Merchants
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 6
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Land_Collectivization }
+        prerequisite = { focus = TAT_Legacy_Bukhara }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+focus = {
+		id = TAT_Tatar_Way_Socialism
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 13
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Call_Party }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+focus = {
+		id = TAT_Curtail_Reactionary
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 13
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Tatar_Way_Socialism }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+focus = {
+		id = TAT_Mass_Literacy
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 13
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Curtail_Reactionary }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+     
+focus = {
+		id = TAT_Morning_Prayers
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 15
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Tatar_Way_Socialism }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+focus = {
+		id = TAT_Land_Of_Mosques
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 15
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Morning_Prayers }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+focus = {
+		id = TAT_Legacy_Of_Khatuns
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 13
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Land_Of_Mosques }
+        prerequisite = { focus = TAT_Mass_Literacy }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+focus = {
+		id = TAT_Red_Riders_Islam
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 13
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Legacy_Of_Khatuns }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+focus = {
+		id = TAT_Real_Freedom
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 9
+		y = 9
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Warrior_Imams }
+        prerequisite = { focus = TAT_University_Of_Tatarstan }
+        prerequisite = { focus = TAT_Turkic_Brotherhood }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+#foreign            
+focus = {
+		id = TAT_Our_Goals
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 20
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+focus = {
+		id = TAT_Drive_The_Devils
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 21
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Our_Goals}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+focus = {
+		id = TAT_Drive_The_Reactionaries
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 19
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Our_Goals}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+focus = {
+		id = TAT_Deal_With_Turania
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 19
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Drive_The_Reactionaries }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+focus = {
+		id = TAT_Reclaim_North
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 21
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Drive_The_Devils }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+focus = {
+		id = TAT_Homecoming
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 20
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Reclaim_North }
+        prerequisite = { focus = TAT_Deal_With_Turania }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+    
+focus = {
+		id = TAT_Turkic_World_Revolution
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 20
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Homecoming }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}              
+}        

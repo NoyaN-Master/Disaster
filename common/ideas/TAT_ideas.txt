@@ -26,11 +26,12 @@ TAT_tatar_feudalism = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
 			picture = TAT_tatar_feudalism
 			modifier = {
-            stability_weekly = -0.03
-            war_support_weekly = -0.03
+            stability_weekly = -0.003
+            war_support_weekly = -0.003
+			stability_factor = -0.30
             research_speed_factor = -0.15
             production_speed_buildings_factor = -0.3
-            autocracy_drift = 0.01	
+            autocracy_drift = 0.05	
 			}
 		}
 TAT_backwards_living = {
@@ -42,5 +43,11 @@ TAT_backwards_living = {
             attrition = 0.1
             winter_attrition_factor = -0.5
 			}
-		}                
+		}
+##dutov 
+DCS_homecoming = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
+			picture = TAT_tatar_communism
+			targeted_modifier = { tag = TAT attack_bonus_against = 0.1 }
+		}
 }
