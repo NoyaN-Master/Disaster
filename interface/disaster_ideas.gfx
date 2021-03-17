@@ -342,4 +342,24 @@ spriteTypes = {
 		name = "GFX_idea_CRW_Unrest"
 		texturefile = "gfx/interface/ideas/CRW_Unrest.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_TIT_Legacy_Rhodes"
+		texturefile = "gfx/interface/ideas/TIT_Legacy_Rhodes.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_TIT_Forgotten_Colony"
+		texturefile = "gfx/interface/ideas/TIT_Forgotten_Colony.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_TIT_Roatta_Army"
+		texturefile = "gfx/interface/ideas/TIT_Roatta_Army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_TIT_Turkish_Discontent"
+		texturefile = "gfx/interface/ideas/TIT_Turkish_Discontent.dds"
+	}
 }	

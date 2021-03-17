@@ -1,0 +1,43 @@
+add_namespace = galiyev
+
+
+country_event = { #First event
+	id = galiyev.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = galiyev.1.t
+	desc = galiyev.1.d
+
+	picture = GFX_report_event_tur_ataturk
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+        add_stability = -0.05
+		name = galiyev.1.a
+	}
+}
+
+country_event = { #First event
+	id = galiyev.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = galiyev.2.t
+	desc = galiyev.2.d
+
+	picture = GFX_report_event_tur_ataturk
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+        add_political_power = 120
+        add_manpower = 1000
+        add_popularity = {
+        ideology = unisocialist
+        popularity = 0.05
+        }
+		name = galiyev.2.a
+	}
+}

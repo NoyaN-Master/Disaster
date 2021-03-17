@@ -1,0 +1,43 @@
+ideas = {
+
+country = {
+
+TIT_Roatta_Army = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TIT_Roatta_Army" }
+			picture = GFX_idea_TIT_Roatta_Army
+			modifier = {
+            army_org_factor = 0.05
+            attrition = -0.1
+            experience_gain_army = 0.5
+            stability_factor = -0.2
+            war_support_factor = 0.3
+			}
+			}
+TIT_Turkish_Discontent = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TIT_Turkish_Discontent" }
+			picture = GFX_idea_TIT_Turkish_Discontent
+			modifier = {
+            stability_factor = -0.2
+            stability_weekly_factor = -0.003
+            conscription = -0.02
+            war_support_factor = -0.2
+			}
+			}            
+TIT_Forgotten_Colony = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TIT_Forgotten_Colony" }
+			picture = GFX_idea_TIT_Forgotten_Colony
+			modifier = {
+            consumer_goods_factor = 0.2
+            production_speed_buildings_factor = -0.5 
+			}
+			}
+TIT_Legacy_Rhodes = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TIT_Legacy_Rhodes" }
+			picture = GFX_idea_TIT_Legacy_Rhodes
+			modifier = {
+            army_morale_factor = 0.1
+            stability_factor = 0.05 
+			}
+			}                         
+			}            
+    }	       

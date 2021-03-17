@@ -14,6 +14,11 @@ set_politics = {
 	elections_allowed = no
 }
 
+add_ideas = TIT_Turkish_Discontent
+add_ideas = TIT_Legacy_Rhodes
+add_ideas = TIT_Roatta_Army
+add_ideas = TIT_Forgotten_Colony
+
 set_popularities = {
 	conservative = 0
 	liberal = 0
@@ -23,10 +28,10 @@ set_popularities = {
 	unisocialist = 0
 	authoritarian_democrat = 0
 	autocratic = 0
-	ultranationalist = 100
-	revolutionary_nationalist = 0
+	ultranationalist = 50
+	revolutionary_nationalist = 25
 	esoteric_traditionalist = 0
-	revolutionary_anarchist = 0
+	revolutionary_anarchist = 25
 }
 
 create_country_leader = {
@@ -35,6 +40,28 @@ create_country_leader = {
 	picture = "Portrait_Mario_Roatta.tga"
 	expire = "2020.1.1"
 	ideology = ultranationalist_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Turkish Partizans"
+	desc = "TIT_Mario_Roatta_desc"
+	#picture = "Portrait_Mario_Roatta.tga"
+	expire = "2020.1.1"
+	ideology = revolutionary_anarchist_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Turkish Nationalists"
+	desc = "TIT_Mario_Roatta_desc"
+	#picture = "Portrait_Mario_Roatta.tga"
+	expire = "2020.1.1"
+	ideology = revolutionary_nationalist_subideology
 	traits = {
 		#
 	}

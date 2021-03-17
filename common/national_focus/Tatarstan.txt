@@ -14,12 +14,13 @@ focus = {
 		icon = GFX_goal_WRF_Atsiz_Start
 		x = 10
 		y = 1
-		cost = 2
+		cost = 1
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
+		country_event = { id = galiyev.1 }	
 		hidden_effect = {
 		}
 		}
@@ -38,6 +39,7 @@ focus = {
 		}
         prerequisite = { focus = TAT_Our_Problems }
 		completion_reward = {
+		country_event = { id = galiyev.2 }	
 		hidden_effect = {
 		}
 		}
