@@ -208,7 +208,7 @@ focus_tree = {
 		y = 6
 		cost = 2
 		available_if_capitulated = yes
-		prerequisite = { focus = ANT_taking_a_side }
+		prerequisite = { focus = ANT_communist }
 		available = { has_country_flag = cuck_hikmet }
 		ai_will_do = {
 			factor = 1
@@ -237,7 +237,7 @@ focus_tree = {
 		y = 7
 		cost = 2
 		available_if_capitulated = yes
-		prerequisite = { focus = ANT_taking_a_side }
+		prerequisite = { focus = ANT_communist_authority }
 		available = { has_country_flag = cuck_hikmet }
 		ai_will_do = {
 			factor = 1
@@ -255,14 +255,14 @@ focus_tree = {
 		y = 8
 		cost = 4
 		available_if_capitulated = yes
-		prerequisite = { focus = ANT_taking_a_side }
+		select_effect = {
+		country_event = { id = ant.26 days = 2}
+		country_event = { id = ant.27 days = 5}		
+		}
+		prerequisite = { focus = ANT_communist_party_struggle }
 		available = { has_country_flag = cuck_hikmet }
 		ai_will_do = {
 			factor = 1
-		}
-		select_effect = {
-		country_event = { id = ant.26 days = 2}
-		country_event = { id = ant.26 days = 5}		
 		}
 		completion_reward = {
 		custom_tooltip = act_32tt
