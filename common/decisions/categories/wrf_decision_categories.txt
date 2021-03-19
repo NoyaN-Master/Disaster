@@ -10,10 +10,24 @@ TUR_unification_category = {
 		original_tag = CIB
 		original_tag = CLP
     	} 
-}
+		}
 	}
 	visible = {
 		always = yes
 	}
 	visible_when_empty = no
+}
+
+IZM_milita_category = {
+	icon = GFX_decision_category_generic_political_actions
+
+	picture = Decision_picture_anatolia_influence
+	priority = 80
+	allowed = {
+		original_tag  = IZM
+	}
+	visible = {
+		original_tag  = IZM
+	}
+	visible_when_empty = yes
 }

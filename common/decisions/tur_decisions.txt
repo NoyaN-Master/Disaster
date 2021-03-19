@@ -220,6 +220,46 @@ TUR_unification_category = {
 		}
      }
 
+     IZM_unify_ethem_decision = {
+	    fire_only_once = yes
+		cost = 0
+        available  = {
+        original_tag = IZM  
+        owns_state = 49
+        owns_state = 347
+        owns_state = 839
+        owns_state = 798
+        owns_state = 356
+        owns_state = 355
+        owns_state = 354
+        owns_state = 353
+        owns_state = 800
+        owns_state = 230
+        owns_state = 229
+        owns_state = 352
+        owns_state = 350
+        owns_state = 346
+        owns_state = 348
+        owns_state = 349
+        owns_state = 797
+        }
+        visible = {
+        original_tag = IZM
+        }  
+        complete_effect = {
+        set_cosmetic_tag = IZM_unification
+        custom_effect_tooltip = ANT_unif_focus_tt
+        load_focus_tree = ethem_tree
+        hidden_effect = {
+            set_country_flag = unification_ethem
+            news_event = { id = news.15 }
+        }
+        }
+        ai_will_do = {
+			factor = 1000
+		}
+     }
+
      CLP_unify_decision = {
 	    fire_only_once = yes
 		cost = 0
@@ -273,4 +313,34 @@ TUR_unification_category = {
         country_event = { id = wrf.29 days = 10 } 
         }
      }
-}              
+}
+
+IZM_milita_category = {
+
+TUR_Milita_Raise = {
+        available = {
+        has_country_flag = can_recruit_milita_IZM
+        tag = TUR
+        NOT = {
+        has_country_flag = unification_ethem    
+        }
+        }
+        days_remove = 30
+        complete_effect = {
+        clr_country_flag = can_recruit_milita_IZM  
+        }
+        cost = 50
+        remove_effect = {
+        random_owned_state = {
+            create_unit = {
+            division = "name = \"Devrimci Militanlar\" division_template = \"Kızıl Militanlar\" start_experience_factor = 0.5 start_equipment_factor = 1.0" owner = IZM
+            division = "name = \"Devrimci Militanlar\" division_template = \"Kızıl Militanlar\" start_experience_factor = 0.5 start_equipment_factor = 1.0" owner = IZM
+            }
+            }
+            hidden_effect = {
+            set_country_flag = { can_recruit_milita_IZM }    
+            }    
+        }  
+      }
+
+}

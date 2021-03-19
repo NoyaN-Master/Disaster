@@ -362,4 +362,19 @@ spriteTypes = {
 		name = "GFX_idea_TIT_Turkish_Discontent"
 		texturefile = "gfx/interface/ideas/TIT_Turkish_Discontent.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_CLP_realm_of_islam"
+		texturefile = "gfx/interface/ideas/CLP_realm_of_islam.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CLP_no_authority"
+		texturefile = "gfx/interface/ideas/CLP_no_authority.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CLP_fundementalism_high"
+		texturefile = "gfx/interface/ideas/CLP_fundementalism_high.dds"
+	}
 }	

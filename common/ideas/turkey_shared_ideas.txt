@@ -54,8 +54,8 @@ CLP_no_authority = {
 			political_power_gain = -1.0
 			political_power_cost = 0.5
 			production_factory_max_efficiency_factor = -0.5
-			stability_factor = -0.2
-			weekly_stability = -0.05
+			stability_factor = -0.20
+			weekly_stability = -0.005
 			war_support_factor = -0.4 
 			}
 		}
@@ -68,7 +68,7 @@ CLP_fundementalism_high = {
 			stability_factor = 0.1
 			weekly_stability = -0.05
 			weekly_war_support = 0.05
-			research_speed_factor = -0.5
+			research_speed_factor = 0.10
 			}
 		}										
 	}
