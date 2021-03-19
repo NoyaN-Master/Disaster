@@ -78,7 +78,7 @@ focus_tree = {
 	}
 
     focus = {
-		id = CLP_islamic_monarchy
+		id = CLP_ulama_state
 		icon = GFX_goal_adress_parliament
 		x = 19
 		y = 1
@@ -93,13 +93,13 @@ focus_tree = {
 	}
 
     focus = {
-		id = CLP_monastries_act
+		id = CLP_new_orders
 		icon = GFX_goal_adress_parliament
 		x = 18
 		y = 2
 		cost = 1
 		available_if_capitulated = yes
-		prerequisite = { focus = CLP_islamic_monarchy }
+		prerequisite = { focus = CLP_ulama_state }
 		ai_will_do = {
 			factor = 1
 		}
@@ -115,7 +115,7 @@ focus_tree = {
 		y = 2
 		cost = 1
 		available_if_capitulated = yes
-		prerequisite = { focus = CLP_islamic_monarchy }
+		prerequisite = { focus = CLP_ulama_state }
 		ai_will_do = {
 			factor = 1
 		}
@@ -125,7 +125,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CLP_fighting_cults
+		id = CLP_public_works
 		icon = GFX_goal_adress_parliament
 		x = 20
 		y = 3
@@ -141,13 +141,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CLP_start_modernization
+		id = CLP_embrace_order
 		icon = GFX_goal_adress_parliament
 		x = 18
 		y = 3
 		cost = 1
 		available_if_capitulated = yes
-		prerequisite = { focus = CLP_monastries_act }
+		prerequisite = { focus = CLP_new_orders }
 		ai_will_do = {
 			factor = 1
 		}
@@ -163,8 +163,8 @@ focus_tree = {
 		y = 4
 		cost = 1
 		available_if_capitulated = yes
-		prerequisite = { focus = CLP_start_modernization }
-		prerequisite = { focus = CLP_fighting_cults }
+		prerequisite = { focus = CLP_embrace_order }
+		prerequisite = { focus = CLP_public_works }
 		ai_will_do = {
 			factor = 1
 		}
@@ -222,7 +222,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CLP_ottoman_doctrine
+		id = CLP_non-ottoman_doctrine
 		icon = GFX_goal_adress_parliament
 		x = 16
 		y = 8
@@ -292,7 +292,7 @@ focus_tree = {
 		x = 18
 		y = 9
 		cost = 1
-		prerequisite = { focus = CLP_ottoman_doctrine }
+		prerequisite = { focus = CLP_non-ottoman_doctrine }
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -367,7 +367,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CLP_just_like_saladin
+		id = CLP_just_like_muhammad_ahmad
 		icon = GFX_goal_adress_parliament
 		x = 10
 		y = 10
@@ -404,7 +404,7 @@ focus_tree = {
 		x = 12
 		y = 11
 		cost = 1
-		prerequisite = { focus = CLP_just_like_saladin }
+		prerequisite = { focus = CLP_just_like_muhammad_ahmad }
 		prerequisite = { focus = CLP_military_sector }
 		available_if_capitulated = yes
 		ai_will_do = {
