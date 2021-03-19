@@ -194,7 +194,10 @@ focus_tree = {
 		}
 		completion_reward = {
 		custom_effect_tooltip = cuck_hikmet_tt
-		add_political_power = 100
+		add_to_variable = { ANT.nazim_influence = 15 } 
+		subtract_from_variable = { ANT.kemalist_influence = 5 }
+		subtract_from_variable = { ANT.enver_influence = 5 }
+		subtract_from_variable = { ANT.merc_influence = 5 }
 		}
 	}
 
@@ -211,8 +214,19 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = cuck_hikmet_tt
-		add_political_power = 100
+		add_to_variable = { ANT.nazim_influence = 15 } 
+		subtract_from_variable = { ANT.kemalist_influence = 5 }
+		subtract_from_variable = { ANT.enver_influence = 5 }
+		subtract_from_variable = { ANT.merc_influence = 5 }
+		add_popularity = {
+    	ideology = unisocialist
+    	popularity = 0.15
+		}
+		add_popularity = {
+    	ideology = libertarian_socialist
+    	popularity = 0.15
+		}
+		country_event = { id = ant.24 }
 		}
 	}
 
@@ -229,8 +243,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = cuck_hikmet_tt
 		add_political_power = 100
+		country_event = { id = ant.25 }
 		}
 	}
 
@@ -239,16 +253,19 @@ focus_tree = {
 		icon = GFX_goal_WRF_Yahya
 		x = 25
 		y = 8
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_taking_a_side }
 		available = { has_country_flag = cuck_hikmet }
 		ai_will_do = {
 			factor = 1
 		}
+		select_effect = {
+		country_event = { id = ant.26 days = 2}
+		country_event = { id = ant.26 days = 5}		
+		}
 		completion_reward = {
-		custom_effect_tooltip = cuck_hikmet_tt
-		add_political_power = 100
+		custom_tooltip = act_32tt
 		}
 	}
 
