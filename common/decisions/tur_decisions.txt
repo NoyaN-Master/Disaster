@@ -319,26 +319,25 @@ IZM_milita_category = {
 
 TUR_Milita_Raise = {
         available = {
-        has_country_flag = can_recruit_milita_IZM
-        tag = TUR
+        tag = IZM
         NOT = {
         has_country_flag = unification_ethem    
         }
         }
         days_remove = 25
-        complete_effect = {
-        clr_country_flag = can_recruit_milita_IZM  
+        complete_effect = {  
         }
         cost = 50
         remove_effect = {
         random_owned_state = {
             create_unit = {
             division = "name = \"Devrimci Militanlar\" division_template = \"Kızıl Militanlar\" start_experience_factor = 0.5 start_equipment_factor = 1.0" owner = IZM
-            division = "name = \"Devrimci Militanlar\" division_template = \"Kızıl Militanlar\" start_experience_factor = 0.5 start_equipment_factor = 1.0" owner = IZM
+            }
+            create_unit = {
+            division = "name = \"Devrimci Militanlar Yedek\" division_template = \"Kızıl Militanlar\" start_experience_factor = 0.5 start_equipment_factor = 1.0" owner = IZM
             }
             }
             hidden_effect = {
-            set_country_flag = { can_recruit_milita_IZM }    
             }    
         }  
       }
