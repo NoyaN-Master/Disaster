@@ -502,10 +502,10 @@ country_event = { #The Capitol Land Disturbance
     is_triggered_only = yes
 
     option = {
-        ai_chance = { factor = 0 } 
+        ai_chance = { factor = 30 } 
         name = ant.21.a
         hidden_effect = {   
-        set_country_flag = cuck_hikmet
+        set_country_flag = cuck_orbay
         unlock_national_focus = ANT_orbay
  
         }
@@ -522,7 +522,7 @@ country_event = { #The Capitol Land Disturbance
     }
 
     option = {
-        ai_chance = { factor = 0} 
+        ai_chance = { factor = 10} 
         name = ant.c.a
         hidden_effect = {   
         set_country_flag = cuck_killigil
@@ -532,12 +532,11 @@ country_event = { #The Capitol Land Disturbance
     }
 
     option = {
-        ai_chance = { factor = 0} 
+        ai_chance = { factor = 50} 
         name = ant.d.a
         hidden_effect = {   
-        set_country_flag = cuck_orbay
+        set_country_flag = cuck_hikmet
         unlock_national_focus = ANT_communist
-
         }
     }
 }

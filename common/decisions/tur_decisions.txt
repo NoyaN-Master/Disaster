@@ -325,7 +325,7 @@ TUR_Milita_Raise = {
         has_country_flag = unification_ethem    
         }
         }
-        days_remove = 30
+        days_remove = 25
         complete_effect = {
         clr_country_flag = can_recruit_milita_IZM  
         }
