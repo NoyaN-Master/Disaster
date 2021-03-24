@@ -54,10 +54,10 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-			name ="Super_Event_Image_Unification_Ulema"
-			spriteType = "GFX_SPEVNT_Unification_Ulema"
-			position = { x = 35 y = 0 }
-		}
+		name = "GFX_SPEVNT_Unification_Ulema"
+		texturefile = "gfx/super_events/SPEVNT_Unification_Ulema.dds"
+		legacy_lazy_load = no
+	}
 
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window_thin_border"
