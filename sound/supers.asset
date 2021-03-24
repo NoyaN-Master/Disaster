@@ -34,4 +34,9 @@ sound = {
 	always_load = yes
 }
 
-
+sound = {
+	name = "ulema"
+	file = "menu/ulema.wav"
+	volume = 1
+	always_load = yes
+}
