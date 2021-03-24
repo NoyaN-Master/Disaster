@@ -284,6 +284,9 @@ TUR_unification_category = {
         original_tag = CLP
         }  
         complete_effect = {
+		hidden_effect = {
+            set_country_flag = unification_ulema
+            news_event = { id = news.15 }
         }
         ai_will_do = {
 			factor = 1000
