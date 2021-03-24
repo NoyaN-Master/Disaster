@@ -43,6 +43,12 @@ scripted_gui = {
 				has_global_flag  = TUR_Unification_Ethem
 			}
 		}
+		
+		triggers = {
+			Super_Event_Image_Unification_Ulema_visible = {
+				has_global_flag  = TUR_Unification_Ulema
+			}
+		}
 
 		properties = {
 			Super_Event_Image_Default = {
@@ -87,6 +93,13 @@ scripted_gui = {
 						has_global_flag = TUR_Unification_Ethem
 					}
 					clr_global_flag  = TUR_Unification_Ethem
+				}
+				
+				if = {
+					limit = {	
+						has_global_flag = TUR_Unification_Ulema
+					}
+					clr_global_flag  = TUR_Unification_Ulema
 				}
 				
 			}
