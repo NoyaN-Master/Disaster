@@ -35,6 +35,13 @@ defined_text = { #SUPER EVENT TITLES
         }
         localization_key = "GFX_SPEVNT_Unification_Ethem"
     }
+	
+	text = { 
+        trigger = {
+            has_global_flag = TUR_Unification_Ulema
+        }
+        localization_key = "GFX_SPEVNT_Unification_Ulema"
+    }
 }
 
 defined_text = { #SUPER EVENT QUOTES
@@ -72,6 +79,13 @@ defined_text = { #SUPER EVENT QUOTES
             has_global_flag = TUR_Unification_Ethem
         }
         localization_key = "GFX_SPEVNT_Unification_Ethem_TEXT"
+    }
+	
+	text = { 
+        trigger = {
+            has_global_flag = TUR_Unification_Ulema
+        }
+        localization_key = "GFX_SPEVNT_Unification_Ulema_TEXT"
     }
 }
 
@@ -111,6 +125,13 @@ defined_text = { #SUPER EVENT REMARKS
             has_global_flag = TUR_Unification_Ethem
         }
         localization_key = "GFX_SPEVNT_Unification_Ethem_REMARK"
+    }
+	
+	text = { 
+        trigger = {
+            has_global_flag = TUR_Unification_Ulema
+        }
+        localization_key = "GFX_SPEVNT_Unification_Ulema_REMARK"
     }
 	
 }
