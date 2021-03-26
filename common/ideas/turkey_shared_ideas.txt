@@ -59,6 +59,15 @@ CLP_no_authority = {
 			war_support_factor = -0.4 
 			}
 		}
+		TUR_roach_problem = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
+			picture = TUR_roach_problem
+			modifier = {
+			political_power_gain = =1
+			stability_factor = -1
+			research_speed_factor = -1
+			}
+		}										
 CLP_fundementalism_high = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
 			picture = TUR_Struggle_Front
@@ -72,3 +81,5 @@ CLP_fundementalism_high = {
 			}
 		}										
 	}
+	
+	
