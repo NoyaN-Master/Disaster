@@ -22,9 +22,9 @@ set_popularities = {
 	authoritarian_socialist = 0
 	unisocialist = 0
 	authoritarian_democrat = 0
-	autocratic = 20
-	ultranationalist = 10
-	revolutionary_nationalist = 0
+	autocratic = 0
+	ultranationalist = 0
+	revolutionary_nationalist = 30
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
@@ -35,6 +35,17 @@ create_country_leader = {
 	picture = "Portrait_ARM_Mihran_Damadian.tga"
 	expire = "2020.1.1"
 	ideology = social_democrat_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Garegin Nzhdeh"
+	#desc = "SES_Zeljko_Raznatovic_desc"
+	picture = "Portarit_Armenia_Garegin_Nzhdeh.tga"
+	expire = "2020.1.1"
+	ideology = revolutionary_anarchist_subideology
 	traits = {
 		#
 	}

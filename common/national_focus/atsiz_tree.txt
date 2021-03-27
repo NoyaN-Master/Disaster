@@ -20,6 +20,8 @@ focus_tree = {
 		completion_reward = {
 		country_event = { id = atsiz.1 }
 		hidden_effect = {
+		country_event = { id = atsiz.6 days = 9 }
+		country_event = { id = atsiz.7 days = 15 }		
 		}
 		}
 	}
@@ -35,7 +37,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = { 
+		completion_reward = {
+		country_event = { id = atsiz.2 }	 
 		hidden_effect = {
 		}
 		}
@@ -52,7 +55,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = { 
+		completion_reward = {
+		country_event = { id = atsiz.4 }	 
 		hidden_effect = {
 		}
 		}
@@ -70,7 +74,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = { 
+		completion_reward = {
+		country_event = { id = atsiz.9 }	 
 		hidden_effect = {
 		}
 		}
@@ -86,10 +91,16 @@ focus_tree = {
         prerequisite = { focus = WRF_Atsiz_Religion_Arab }
         prerequisite = { focus = WRF_Atsiz_Law_Roman }
         prerequisite = { focus = WRF_Atsiz_Civilization_Greek }
+		available = { NOT = {
+		country_exists = ARM	
+		}}
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = { 
+		completion_reward = {
+		remove_idea = Atsiz_New_Regime_4
+		add_stability = 0.10
+		add_manpower = -10000	 
 		hidden_effect = {
 		}
 		}
@@ -106,7 +117,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = { 
+		completion_reward = {
+		country_event = { id = atsiz.3 }	 
 		hidden_effect = {
 		}
 		}
@@ -123,7 +135,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = { 
+		completion_reward = {
+		country_event = { id = atsiz.5 }	 
 		hidden_effect = {
 		}
 		}
@@ -140,7 +153,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = { 
+		completion_reward = {
+			country_event = { id = atsiz.8 } 
 		hidden_effect = {
 		}
 		}

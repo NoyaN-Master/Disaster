@@ -174,6 +174,35 @@ Atsiz_New_Regime = {
 			production_speed_buildings_factor = -0.2  
 			}
 		}
+Atsiz_New_Regime_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			stability_factor = -0.50
+			conscription = -0.05
+			stability_weekly = -0.003
+			production_factory_max_efficiency_factor = -0.2
+			production_speed_buildings_factor = -0.2  
+			}
+		}
+Atsiz_New_Regime_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			stability_factor = -0.35
+			conscription = -0.03
+			production_factory_max_efficiency_factor = -0.1
+			production_speed_buildings_factor = -0.1  
+			}
+		}
+Atsiz_New_Regime_4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			stability_factor = -0.20
+			conscription = -0.01
+			}
+		}							
 Atsiz_Discontent_Army = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
 			#picture = WRF_Tekalif
@@ -185,6 +214,34 @@ Atsiz_Discontent_Army = {
 			max_planning_factor = -0.25 
 			}
 		}
+Atsiz_Discontent_Army_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			war_support_factor = -0.15
+			experience_gain_army = -0.05
+			max_planning_factor = -0.25 
+			}
+		}
+Atsiz_Discontent_Army_Subutais = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			war_support_factor = -0.05
+			conscription = 0.02
+			}
+		}
+Atsiz_Discontent_Army_Subutais_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			conscription = 0.02
+			army_leader_start_attack_level = 1 
+			army_attack_factor = 0.3
+			experience_gain_army = 0.5
+
+			}
+		}						
 Atsiz_Enverist_Influence = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
 			#picture = WRF_Tekalif
