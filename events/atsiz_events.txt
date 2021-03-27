@@ -266,7 +266,7 @@ country_event = { #Armenian Uprising
 		name = atsiz.10.a
         ARM = {
         set_cosmetic_tag = ARM_Uprising
-        set_state_owner = 230
+        transfer_state = 230
         load_oob = ARM_uprising
         set_politics = {
 	    ruling_party = revolutionary_nationalist
@@ -277,6 +277,34 @@ country_event = { #Armenian Uprising
         popularity = 1.0
         }
         set_war_support = 1.0
+        230 = {
+        create_unit = {
+        division = "name = \"Armenian Revolters\" division_template = \"Bandits\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+        division = "name = \"Armenian Revolters\" division_template = \"Bandits\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+        division = "name = \"Armenian Revolters\" division_template = \"Bandits\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+        division = "name = \"Armenian Revolters\" division_template = \"Bandits\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+        division = "name = \"Armenian Revolters\" division_template = \"Bandits\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+        division = "name = \"Armenian Revolters\" division_template = \"Bandits\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+        division = "name = \"Armenian Revolters\" division_template = \"Bandits\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+        owner = GER
+        }
+        }
+        835 = {
+        create_unit = {
+        division = "name = \"Armenian Revolters\" division_template = \"Bandits\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+        division = "name = \"Armenian Revolters\" division_template = \"Bandits\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+        division = "name = \"Armenian Revolters\" division_template = \"Bandits\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+        owner = GER
+        }
+        }
+        800 = {
+        create_unit = {
+        division = "name = \"Armenian Revolters\" division_template = \"Bandits\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+        division = "name = \"Armenian Revolters\" division_template = \"Bandits\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+        division = "name = \"Armenian Revolters\" division_template = \"Bandits\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+        owner = GER
+        }
+        }
         }
 
 	}
