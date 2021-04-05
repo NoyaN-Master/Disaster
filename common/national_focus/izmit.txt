@@ -174,7 +174,7 @@ focus_tree = {
 		id = IZM_memories_of_spartakus
 		icon = GFX_goal_IZM_EndFoc
 		x = 14
-		y = 9
+		y = 8
 		cost = 3
 		ai_will_do = {
 			factor = 80	
@@ -207,7 +207,7 @@ focus_tree = {
 		id = IZM_attack_imams
 		icon = GFX_goal_IZM_Killimam
 		x = 14
-		y = 8
+		y = 7
 		cost = 1
 		ai_will_do = {
 			factor = 80	
@@ -333,6 +333,200 @@ focus_tree = {
 			factor = 80	
 		}
         prerequisite = { focus = IZM_independence_time }
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = CRW_devlet_1
+        }
+	}
+
+	focus = {
+		id = IZM_will_of_people
+		icon = GFX_goal_CRW_first_icon
+		x = 6
+		y = 2
+		cost = 1
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = IZM_nazim_win }
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = CRW_devlet_1
+        }
+	}
+
+	focus = {
+		id = IZM_glory_to_the_ones
+		icon = GFX_goal_CRW_first_icon
+		x = 4
+		y = 3
+		cost = 1
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = IZM_will_of_people }
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = CRW_devlet_1
+        }
+	}
+
+	focus = {
+		id = IZM_turkish_red_army
+		icon = GFX_goal_CRW_first_icon
+		x = 6
+		y = 3
+		cost = 1
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = IZM_will_of_people }
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = CRW_devlet_1
+        }
+	}
+
+	focus = {
+		id = IZM_our_great_homeland
+		icon = GFX_goal_CRW_first_icon
+		x = 8
+		y = 3
+		cost = 1
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = IZM_will_of_people }
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = CRW_devlet_1
+        }
+	}
+
+	focus = {
+		id = IZM_free_the_workers
+		icon = GFX_goal_CRW_first_icon
+		x = 7
+		y = 4
+		cost = 1
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = IZM_our_great_homeland }
+		prerequisite = { focus = IZM_turkish_red_army }
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = CRW_devlet_1
+        }
+	}
+
+	focus = {
+		id = IZM_reach_out_brothers
+		icon = GFX_goal_CRW_first_icon
+		x = 6
+		y = 5
+		cost = 1
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = IZM_integrate_paramilitary }
+		prerequisite = { focus = IZM_free_the_workers }
+        
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = CRW_devlet_1
+        }
+	}
+
+	focus = {
+		id = IZM_revolution_in_ankara
+		icon = GFX_goal_CRW_first_icon
+		x = 5
+		y = 6
+		cost = 1
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = IZM_reach_out_brothers }
+        available = { has_country_flag = nazim_congress }
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = CRW_devlet_1
+        }
+	}
+
+	focus = {
+		id = IZM_revolution_in_sinop
+		icon = GFX_goal_CRW_first_icon
+		x = 7
+		y = 6
+		cost = 1
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = IZM_reach_out_brothers }
+        available = { has_country_flag = nazim_congress }
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = CRW_devlet_1
+        }
+	}
+
+	focus = {
+		id = IZM_Tear_Down_Reactionaries
+		icon = GFX_goal_CRW_first_icon
+		x = 6
+		y = 7
+		cost = 1
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = IZM_revolution_in_ankara }
+        prerequisite = { focus = IZM_revolution_in_sinop }
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = CRW_devlet_1
+        }
+	}
+
+	focus = {
+		id = IZM_The_Grand_Revolution
+		icon = GFX_goal_CRW_first_icon
+		x = 6
+		y = 8
+		cost = 1
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = IZM_Tear_Down_Reactionaries }
+		select_effect = {
+		}
+		completion_reward = {
+		custom_effect_tooltip = CRW_devlet_1
+        }
+	}
+
+	focus = {
+		id = IZM_integrate_paramilitary
+		icon = GFX_goal_CRW_first_icon
+		x = 5
+		y = 4
+		cost = 1
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = { focus = IZM_turkish_red_army }
+		prerequisite = { focus = IZM_glory_to_the_ones }
         available = { has_country_flag = nazim_congress }
 		select_effect = {
 		}
