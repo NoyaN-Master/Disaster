@@ -353,7 +353,8 @@ focus_tree = {
 		select_effect = {
 		}
 		completion_reward = {
-		custom_effect_tooltip = CRW_devlet_1
+		add_stability = 0.10
+		add_manpower = 1200
         }
 	}
 
@@ -370,7 +371,7 @@ focus_tree = {
 		select_effect = {
 		}
 		completion_reward = {
-		custom_effect_tooltip = CRW_devlet_1
+		add_ideas = IZM_honor_martyrs
         }
 	}
 
@@ -387,7 +388,7 @@ focus_tree = {
 		select_effect = {
 		}
 		completion_reward = {
-		custom_effect_tooltip = CRW_devlet_1
+		add_ideas = IZM_turkish_red_army
         }
 	}
 
@@ -404,7 +405,7 @@ focus_tree = {
 		select_effect = {
 		}
 		completion_reward = {
-		custom_effect_tooltip = CRW_devlet_1
+		add_ideas = IZM_agrarianism
         }
 	}
 
@@ -422,7 +423,19 @@ focus_tree = {
 		select_effect = {
 		}
 		completion_reward = {
-		custom_effect_tooltip = CRW_devlet_1
+		347 = {
+		add_building_construction = {
+    	type = industrial_complex
+    	level = 2
+    	instant_build = yes
+		}
+		add_building_construction = {
+    	type = arms_factory
+    	level = 2
+    	instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 4	
+		}
         }
 	}
 
@@ -441,7 +454,8 @@ focus_tree = {
 		select_effect = {
 		}
 		completion_reward = {
-		custom_effect_tooltip = CRW_devlet_1
+			add_manpower = 1500
+			add_ideas = IZM_nazimist_ideology
         }
 	}
 
@@ -459,8 +473,25 @@ focus_tree = {
 		select_effect = {
 		}
 		completion_reward = {
-		custom_effect_tooltip = CRW_devlet_1
+		declare_war_on = {
+        target = ANK
+        type = annex_everything
         }
+		random_owned_state = {	
+		create_unit = {
+    	division = "name = \"Militan\" division_template = \"Kızıl Militanlar\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+    	owner = IZM
+		}
+		create_unit = {
+    	division = "name = \"Militan\" division_template = \"Kızıl Militanlar\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+    	owner = IZM
+		}
+		create_unit = {
+    	division = "name = \"Militan\" division_template = \"Kızıl Militanlar\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+    	owner = IZM
+		}  
+        }
+		}
 	}
 
 	focus = {
@@ -477,7 +508,24 @@ focus_tree = {
 		select_effect = {
 		}
 		completion_reward = {
-		custom_effect_tooltip = CRW_devlet_1
+		declare_war_on = {
+        target = OTH
+        type = annex_everything
+        }
+		random_owned_state = {	
+		create_unit = {
+    	division = "name = \"Militan\" division_template = \"Kızıl Militanlar\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+    	owner = IZM
+		}
+		create_unit = {
+    	division = "name = \"Militan\" division_template = \"Kızıl Militanlar\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+    	owner = IZM
+		}
+		create_unit = {
+    	division = "name = \"Militan\" division_template = \"Kızıl Militanlar\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+    	owner = IZM
+		}
+        }  
         }
 	}
 
@@ -495,7 +543,32 @@ focus_tree = {
 		select_effect = {
 		}
 		completion_reward = {
-		custom_effect_tooltip = CRW_devlet_1
+		declare_war_on = {
+        target = CLP
+        type = annex_everything
+        }
+		create_wargoal = {
+   		type = annex_everything
+    	target = CIB
+		}
+		create_wargoal = {
+   		type = annex_everything
+    	target = WRF
+		}
+		random_owned_state = {	
+		create_unit = {
+    	division = "name = \"Militan\" division_template = \"Kızıl Militanlar\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+    	owner = IZM
+		}
+		create_unit = {
+    	division = "name = \"Militan\" division_template = \"Kızıl Militanlar\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+    	owner = IZM
+		}
+		create_unit = {
+    	division = "name = \"Militan\" division_template = \"Kızıl Militanlar\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+    	owner = IZM
+		}  
+        }
         }
 	}
 
@@ -509,10 +582,24 @@ focus_tree = {
 			factor = 80	
 		}
         prerequisite = { focus = IZM_Tear_Down_Reactionaries }
+		available = {
+        NOT = {
+        country_exists = CLP
+        country_exists = WRF
+        country_exists = TIT
+        country_exists = CIB 
+        country_exists = OTH
+        country_exists = SKL
+        country_exists = ANK
+        country_exists = KLG
+        country_exists = THR
+        country_exists = ADN   
+        }    
+        }
 		select_effect = {
 		}
 		completion_reward = {
-		custom_effect_tooltip = CRW_devlet_1
+		country_event = { id = ant.22 days = 2 }	
         }
 	}
 
@@ -531,8 +618,21 @@ focus_tree = {
 		select_effect = {
 		}
 		completion_reward = {
-		custom_effect_tooltip = CRW_devlet_1
+		random_owned_state = {	
+		create_unit = {
+    	division = "name = \"Revolutionary Legion\" division_template = \"Kızıl Militanlar\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+    	owner = IZM
+		}
+		create_unit = {
+    	division = "name = \"Revolutionary Legion\" division_template = \"Kızıl Militanlar\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+    	owner = IZM
+		}
+		create_unit = {
+    	division = "name = \"Revolutionary Legion\" division_template = \"Kızıl Militanlar\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+    	owner = IZM
+		}
         }
+		}
 	}
 
 }    
