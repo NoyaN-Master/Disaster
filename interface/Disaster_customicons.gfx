@@ -11026,6 +11026,158 @@ SpriteType = {
  }
  			
 	SpriteType = {		
+		name = "GFX_goal_muhammad_ahmad"	
+		texturefile = "gfx/interface/goals/muhammad_ahmad.tga"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_muhammad_ahmad"	
+		texturefile = "gfx/interface/goals/muhammad_ahmad.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/muhammad_ahmad.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/muhammad_ahmad.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }		
+ 			
+	SpriteType = {		
+		name = "GFX_goal_house_of_wisdom"	
+		texturefile = "gfx/interface/goals/house_of_wisdom.tga"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_house_of_wisdom"	
+		texturefile = "gfx/interface/goals/house_of_wisdom.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/house_of_wisdom.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/house_of_wisdom.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }		
+  			
+	SpriteType = {		
+		name = "GFX_goal_takbir"	
+		texturefile = "gfx/interface/goals/takbir.tga"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_takbir"	
+		texturefile = "gfx/interface/goals/takbir.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/takbir.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/takbir.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }		
+   			
+	SpriteType = {		
+		name = "GFX_goal_prophets_heroes"	
+		texturefile = "gfx/interface/goals/prophets_heroes.tga"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_prophets_heroes"	
+		texturefile = "gfx/interface/goals/prophets_heroes.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/prophets_heroes.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/prophets_heroes.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }		
+
+	SpriteType = {		
 		name = "GFX_goal_WRF_Enver"	
 		texturefile = "gfx/interface/goals/WRF_Enver.tga"	
 	}		

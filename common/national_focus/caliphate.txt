@@ -243,7 +243,7 @@ focus_tree = {
 		x = 16
 		y = 9
 		cost = 1
-		prerequisite = { focus = CLP_asakiri_muhammed }
+		prerequisite = { focus = CLP_non-ottoman_doctrine }
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -259,7 +259,7 @@ focus_tree = {
 		x = 16
 		y = 10
 		cost = 1
-		prerequisite = { focus = CLP_asakiri_muhammed }
+		prerequisite = { focus = CLP_manuevar_importancy }
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -271,7 +271,7 @@ focus_tree = {
 
 	focus = {
 		id = CLP_chosen_ones
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_prophets_heroes
 		x = 17
 		y = 11
 		cost = 1
@@ -368,7 +368,7 @@ focus_tree = {
 	
 	focus = {
 		id = CLP_just_like_muhammad_ahmad
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_muhammad_ahmad
 		x = 10
 		y = 10
 		cost = 1
@@ -400,7 +400,7 @@ focus_tree = {
 
 	focus = {
 		id = CLP_takbir
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_takbir
 		x = 12
 		y = 11
 		cost = 1
@@ -469,7 +469,7 @@ focus_tree = {
 		x = 20
 		y = 8
 		cost = 1
-		prerequisite = { focus = CLP_believers_economy }
+		prerequisite = { focus = CLP_factories_1 }
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -485,7 +485,7 @@ focus_tree = {
 		x = 20
 		y = 9
 		cost = 1
-		prerequisite = { focus = CLP_believers_economy }
+		prerequisite = { focus = CLP_factories_2 }
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -517,7 +517,7 @@ focus_tree = {
 		x = 22
 		y = 8
 		cost = 1
-		prerequisite = { focus = CLP_believers_economy }
+		prerequisite = { focus = CLP_infastructure_1 }
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -533,7 +533,7 @@ focus_tree = {
 		x = 22
 		y = 9
 		cost = 1
-		prerequisite = { focus = CLP_believers_economy }
+		prerequisite = { focus = CLP_infastructure_2 }
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -562,7 +562,7 @@ focus_tree = {
 
 	focus = {
 		id = CLP_rehost_baghdad
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_house_of_wisdom
 		x = 24
 		y = 11
 		cost = 1
