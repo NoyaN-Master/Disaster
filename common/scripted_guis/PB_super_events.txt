@@ -50,6 +50,12 @@ scripted_gui = {
 			}
 		}
 
+		triggers = {
+			Super_Event_Image_Unification_Nazim_visible = {
+				has_global_flag  = TUR_Unification_Nazim
+			}
+		}
+
 		properties = {
 			Super_Event_Image_Default = {
 				image = "[get_my_superevent_texture]"
@@ -100,6 +106,13 @@ scripted_gui = {
 						has_global_flag = TUR_Unification_Ulema
 					}
 					clr_global_flag  = TUR_Unification_Ulema
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = TUR_Unification_Nazim
+					}
+					clr_global_flag  = TUR_Unification_Nazim
 				}
 				
 			}
