@@ -229,7 +229,7 @@ focus_tree = {
 
     focus = {
 		id = IZM_real_workers
-		icon = GFX_goal_IZM_Workers
+		icon = GFX_goal_IZM_free_the_workers
 		x = 12
 		y = 2.5
 		cost = 2
@@ -325,7 +325,7 @@ focus_tree = {
 
     focus = {
 		id = IZM_nazim_win
-		icon = GFX_goal_CRW_first_icon
+		icon = GFX_goal_IZM_nazim_win
 		x = 6
 		y = 1
 		cost = 1
@@ -342,10 +342,10 @@ focus_tree = {
 
 	focus = {
 		id = IZM_will_of_people
-		icon = GFX_goal_CRW_first_icon
+		icon = GFX_goal_IZM_will_of_people
 		x = 6
 		y = 2
-		cost = 1
+		cost = 2
 		ai_will_do = {
 			factor = 80	
 		}
@@ -360,10 +360,10 @@ focus_tree = {
 
 	focus = {
 		id = IZM_glory_to_the_ones
-		icon = GFX_goal_CRW_first_icon
+		icon = GFX_goal_IZM_glory_to_the_ones
 		x = 4
 		y = 3
-		cost = 1
+		cost = 2
 		ai_will_do = {
 			factor = 80	
 		}
@@ -377,10 +377,10 @@ focus_tree = {
 
 	focus = {
 		id = IZM_turkish_red_army
-		icon = GFX_goal_CRW_first_icon
+		icon = GFX_goal_IZM_turkish_red_army
 		x = 6
 		y = 3
-		cost = 1
+		cost = 2
 		ai_will_do = {
 			factor = 80	
 		}
@@ -394,10 +394,10 @@ focus_tree = {
 
 	focus = {
 		id = IZM_our_great_homeland
-		icon = GFX_goal_CRW_first_icon
+		icon = GFX_goal_IZM_our_great_homeland
 		x = 8
 		y = 3
-		cost = 1
+		cost = 2
 		ai_will_do = {
 			factor = 80	
 		}
@@ -411,10 +411,10 @@ focus_tree = {
 
 	focus = {
 		id = IZM_free_the_workers
-		icon = GFX_goal_CRW_first_icon
+		icon = GFX_goal_IZM_free_the_workers
 		x = 7
 		y = 4
-		cost = 1
+		cost = 2
 		ai_will_do = {
 			factor = 80	
 		}
@@ -441,10 +441,10 @@ focus_tree = {
 
 	focus = {
 		id = IZM_reach_out_brothers
-		icon = GFX_goal_CRW_first_icon
+		icon = GFX_goal_IZM_reach_out_brothers
 		x = 6
 		y = 5
-		cost = 1
+		cost = 3
 		ai_will_do = {
 			factor = 80	
 		}
@@ -456,15 +456,20 @@ focus_tree = {
 		completion_reward = {
 			add_manpower = 1500
 			add_ideas = IZM_nazimist_ideology
+			add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 1000
+		producer = IZM
+		}
         }
 	}
 
 	focus = {
 		id = IZM_revolution_in_ankara
-		icon = GFX_goal_CRW_first_icon
+		icon = GFX_goal_IZM_revolution_in_ankara
 		x = 5
 		y = 6
-		cost = 1
+		cost = 3
 		ai_will_do = {
 			factor = 80	
 		}
@@ -489,17 +494,22 @@ focus_tree = {
 		create_unit = {
     	division = "name = \"Militan\" division_template = \"Kızıl Militanlar\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
     	owner = IZM
-		}  
+		}
+		add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 2000
+		producer = IZM
+		}		
         }
 		}
 	}
 
 	focus = {
 		id = IZM_revolution_in_sinop
-		icon = GFX_goal_CRW_first_icon
+		icon = GFX_goal_IZM_Sinop
 		x = 7
 		y = 6
-		cost = 1
+		cost = 3
 		ai_will_do = {
 			factor = 80	
 		}
@@ -525,16 +535,21 @@ focus_tree = {
     	division = "name = \"Militan\" division_template = \"Kızıl Militanlar\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
     	owner = IZM
 		}
+		add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 2000
+		producer = IZM
+		}
         }  
         }
 	}
 
 	focus = {
 		id = IZM_Tear_Down_Reactionaries
-		icon = GFX_goal_CRW_first_icon
+		icon = GFX_goal_IZM_Tear_Down_Reactionaries
 		x = 6
 		y = 7
-		cost = 1
+		cost = 4
 		ai_will_do = {
 			factor = 80	
 		}
@@ -567,17 +582,22 @@ focus_tree = {
 		create_unit = {
     	division = "name = \"Militan\" division_template = \"Kızıl Militanlar\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
     	owner = IZM
-		}  
+		}
+		add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 3000
+		producer = IZM
+		}		
         }
         }
 	}
 
 	focus = {
 		id = IZM_The_Grand_Revolution
-		icon = GFX_goal_CRW_first_icon
+		icon = GFX_goal_IZM_The_Grand_Revolution
 		x = 6
 		y = 8
-		cost = 1
+		cost = 3
 		ai_will_do = {
 			factor = 80	
 		}
@@ -605,7 +625,7 @@ focus_tree = {
 
 	focus = {
 		id = IZM_integrate_paramilitary
-		icon = GFX_goal_CRW_first_icon
+		icon = GFX_goal_IZM_integrate_paramilitary
 		x = 5
 		y = 4
 		cost = 1
@@ -630,6 +650,11 @@ focus_tree = {
 		create_unit = {
     	division = "name = \"Revolutionary Legion\" division_template = \"Kızıl Militanlar\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
     	owner = IZM
+		}
+		add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 3000
+		producer = IZM
 		}
         }
 		}
