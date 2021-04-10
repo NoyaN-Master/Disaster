@@ -288,7 +288,7 @@ focus_tree = {
 
 	focus = {
 		id = CLP_arms_deal
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_buying_rifles
 		x = 18
 		y = 9
 		cost = 1
@@ -497,7 +497,7 @@ focus_tree = {
 
 	focus = {
 		id = CLP_infastructure_1
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_konya_kayseri
 		x = 22
 		y = 7
 		cost = 1
@@ -513,7 +513,7 @@ focus_tree = {
 
 	focus = {
 		id = CLP_infastructure_2
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_kayseri_sivas
 		x = 22
 		y = 8
 		cost = 1
@@ -545,7 +545,7 @@ focus_tree = {
 
 	focus = {
 		id = CLP_great_workers
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_zealous_workers
 		x = 21
 		y = 10
 		cost = 1

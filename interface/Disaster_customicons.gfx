@@ -11176,7 +11176,158 @@ SpriteType = {
 		legacy_lazy_load = no	
 			
  }		
-
+			
+	SpriteType = {		
+		name = "GFX_goal_zealous_workers"	
+		texturefile = "gfx/interface/goals/zealous_workers.tga"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_zealous_workers"	
+		texturefile = "gfx/interface/goals/zealous_workers.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/zealous_workers.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/zealous_workers.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }	
+			
+	SpriteType = {		
+		name = "GFX_goal_buying_rifles"	
+		texturefile = "gfx/interface/goals/buying_rifles.tga"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_buying_rifles"	
+		texturefile = "gfx/interface/goals/buying_rifles.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/buying_rifles.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/buying_rifles.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }		
+ 		
+	SpriteType = {		
+		name = "GFX_goal_konya_kayseri"	
+		texturefile = "gfx/interface/goals/konya_kayseri.tga"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_konya_kayseri"	
+		texturefile = "gfx/interface/goals/konya_kayseri.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/konya_kayseri.tga"
+			animationtexturefile = "gfx/interface/goals/konya_kayseri.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/konya_kayseri.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }			 
+ 		
+	SpriteType = {		
+		name = "GFX_goal_kayseri_sivas"	
+		texturefile = "gfx/interface/goals/kayseri_sivas.tga"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_kayseri_sivas"	
+		texturefile = "gfx/interface/goals/kayseri_sivas.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/kayseri_sivas.tga"
+			animationtexturefile = "gfx/interface/goals/kayseri_sivas.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/kayseri_sivas.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }	
 	SpriteType = {		
 		name = "GFX_goal_WRF_Enver"	
 		texturefile = "gfx/interface/goals/WRF_Enver.tga"	
