@@ -175,7 +175,7 @@ focus_tree = {
 
 	focus = {
 		id = CLP_allah_wills_progress
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_progress
 		x = 19
 		y = 5
 		cost = 1
@@ -255,7 +255,7 @@ focus_tree = {
 
 	focus = {
 		id = CLP_konya_airbase
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_konya_airport
 		x = 16
 		y = 10
 		cost = 1
@@ -384,7 +384,7 @@ focus_tree = {
 
 	focus = {
 		id = CLP_military_sector
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_halal
 		x = 14
 		y = 10
 		cost = 1
