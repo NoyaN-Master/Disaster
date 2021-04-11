@@ -1,0 +1,231 @@
+focus_tree = {
+	id = ank_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ANK
+		}
+	}
+    default = no
+	continuous_focus_position = { x = 100 y = 10000 }
+
+	focus = {
+		id = ANK_sense_security
+		icon = GFX_goal_orbay_portre
+		x = 4
+		y = 0
+		cost = 1
+		ai_will_do = {
+			factor = 80	
+		}
+		select_effect = {
+		}
+		completion_reward = {
+		add_stability = 0.20
+        }
+	}
+
+	focus = {
+		id = ANK_form_kuvayimiliye
+		icon = GFX_goal_CIB_General_Fate
+		x = 4
+		y = 1
+		cost = 1
+		ai_will_do = {
+			factor = 80	
+		}
+		prerequisite = { focus = ANK_sense_security }
+		select_effect = {
+		}
+		completion_reward = {
+		add_ideas = ANK_kuvayimilliye
+		add_manpower = 90000
+        }
+	}
+
+	focus = {
+		id = ANK_supplies_from_kemal
+		icon = GFX_goal_CIB_Kemalist_Castle
+		x = 3
+		y = 2
+		cost = 1
+		ai_will_do = {
+			factor = 80	
+		}
+		prerequisite = { focus = ANK_form_kuvayimiliye }
+		select_effect = {
+		}
+		completion_reward = {
+		add_equipment_to_stockpile = {
+    	type = infantry_equipment_1
+    	amount = 2000
+    	producer = ANK
+		}
+		add_equipment_to_stockpile = {
+    	type = supply_equipment_1
+    	amount = 2000
+    	producer = ANK
+		}
+        }
+	}
+
+	focus = {
+		id = ANK_kemalist_workers_active
+		icon = GFX_goal_orbay_worker
+		x = 3
+		y = 3
+		cost = 1
+		ai_will_do = {
+			factor = 80	
+		}
+		prerequisite = { focus = ANK_supplies_from_kemal }
+		select_effect = {
+		}
+		completion_reward = {
+		random_owned_state = {	
+		add_building_construction = {
+    	type = arms_factory
+    	level = 3
+    	instant_build = yes
+		}
+		add_building_construction = {
+    	type = industrial_complex
+    	level = 4
+    	instant_build = yes
+		}
+        }
+        }
+	}
+
+	focus = {
+		id = ANK_forts_of_ankara
+		icon = GFX_goal_orbay_forts
+		x = 5
+		y = 2
+		cost = 1
+		ai_will_do = {
+			factor = 80	
+		}
+		prerequisite = { focus = ANK_form_kuvayimiliye }
+		select_effect = {
+		}
+		completion_reward = {
+		add_building_construction = {
+    	type = bunker
+    	level = 3
+    	instant_build = yes
+    	province = 6908
+		}
+		add_building_construction = {
+    	type = bunker
+    	level = 3
+    	instant_build = yes
+    	province = 9806
+		}
+		add_building_construction = {
+    	type = bunker
+    	level = 3
+    	instant_build = yes
+    	province = 3951
+		}
+		add_building_construction = {
+    	type = bunker
+    	level = 3
+    	instant_build = yes
+    	province = 6808
+		}
+        }
+	}
+
+	focus = {
+		id = ANK_orbay_greygloves
+		icon = GFX_goal_greygloves
+		x = 5
+		y = 3
+		cost = 1
+		ai_will_do = {
+			factor = 80	
+		}
+		prerequisite = { focus = ANK_forts_of_ankara }
+		select_effect = {
+		}
+		completion_reward = {
+		add_ideas = ANK_greygloves
+        }
+	}
+
+	focus = {
+		id = ANK_raise_new_warriors
+		icon = GFX_goal_orbay_warriors
+		x = 4
+		y = 4
+		cost = 1
+		ai_will_do = {
+			factor = 80	
+		}
+		prerequisite = { focus = ANK_orbay_greygloves }
+		prerequisite = { focus = ANK_kemalist_workers_active }
+		select_effect = {
+		}
+		completion_reward = {
+		random_owned_state = {	
+		create_unit = {
+    	division = "name = \"Kuva'yi Milliye\" division_template = \"Kemalist Ordu\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+    	owner = ANK
+		}
+		create_unit = {
+    	division = "name = \"Kuva'yi Milliye\" division_template = \"Kemalist Ordu\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+    	owner = ANK
+		}
+		create_unit = {
+    	division = "name = \"Kuva'yi Milliye\" division_template = \"Kemalist Ordu\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+    	owner = ANK
+		}
+        }
+        }
+	}
+
+	focus = {
+		id = ANK_end_seperatists
+		icon = GFX_goal_settle_Feud
+		x = 4
+		y = 5
+		cost = 1
+		ai_will_do = {
+			factor = 80	
+		}
+		prerequisite = { focus = ANK_orbay_greygloves }
+		prerequisite = { focus = ANK_kemalist_workers_active }
+		select_effect = {
+		}
+		completion_reward = {
+		declare_war_on = {
+        target = OTH
+        type = annex_everything
+        }
+		declare_war_on = {
+        target = IZM
+        type = annex_everything
+        }
+        }
+	}
+
+	focus = {
+		id = ANK_welcome_home
+		icon = GFX_goal_kemal_annex
+		x = 4
+		y = 6
+		cost = 1
+		ai_will_do = {
+			factor = 80	
+		}
+		prerequisite = { focus = ANK_orbay_greygloves }
+		prerequisite = { focus = ANK_kemalist_workers_active }
+		select_effect = {
+		}
+		completion_reward = {
+		
+        }
+	}
+}    

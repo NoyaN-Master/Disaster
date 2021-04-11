@@ -651,12 +651,12 @@ focus_tree = {
     	division = "name = \"Revolutionary Legion\" division_template = \"Kızıl Militanlar\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
     	owner = IZM
 		}
+        }
 		add_equipment_to_stockpile = {
 		type = infantry_equipment
 		amount = 3000
 		producer = IZM
 		}
-        }
 		}
 	}
 

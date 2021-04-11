@@ -220,6 +220,23 @@ SKL_jannies = {
 			recon_factor = 0.02
 			army_infantry_attack_factor = 0.03
 			}
-		}							
+		}
+#ankara
+ANK_kuvayimilliye = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
+			picture = ANT_Warlords_Emerging
+			modifier = {
+			army_morale_factor = 0.05		
+			conscription = 0.02
+			}
+		}
+ANK_greygloves = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
+			picture = ANT_Warlords_Emerging
+			modifier = {
+			production_factory_max_efficiency_factor = 0.2
+			army_defence_factor = 0.07
+			}
+		}												
 }
 }
