@@ -1,0 +1,36 @@
+ideas = {
+	economic_policy = {
+	planned_economy = {
+			picture = generic_communism_drift_bonus
+			available = { 
+			always = no
+			}
+			cancel_if_invalid = no
+			level = 1
+			modifier = {	
+			}
+		}
+	corporatism = {
+			picture = generic_communism_drift_bonus
+			available = { 
+			always = no
+			}
+			cancel_if_invalid = no
+			level = 2
+			modifier = {	
+			}
+		}
+
+	free_market_economy = {
+			picture = generic_communism_drift_bonus
+			available = { 
+			always = no
+			}
+			cancel_if_invalid = no
+			level = 3
+			modifier = {	
+			}
+		}
+}
+
+}

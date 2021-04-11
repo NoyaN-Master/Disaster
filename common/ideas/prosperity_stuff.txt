@@ -1,0 +1,36 @@
+ideas = {
+	prosperity = {
+	economic_goldage = {
+			picture = generic_communism_drift_bonus
+			available = { 
+			always = no
+			}
+			cancel_if_invalid = no
+			level = 1
+			modifier = {	
+			}
+		}
+	recovery_economy= {
+			picture = generic_communism_drift_bonus
+			available = { 
+			always = no
+			}
+			cancel_if_invalid = no
+			level = 2
+			modifier = {	
+			}
+		}
+
+	average_economy = {
+			picture = generic_communism_drift_bonus
+			available = { 
+			always = no
+			}
+			cancel_if_invalid = no
+			level = 3
+			modifier = {	
+			}
+		}
+}
+
+}

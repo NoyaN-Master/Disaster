@@ -1,0 +1,44 @@
+ideas = {
+	head_of_government = {
+	WRF_mustafa_kemal = {
+			picture = generic_communism_drift_bonus
+			available = { 
+			tag = WRF 
+			always = no
+			}
+			cancel_if_invalid = no
+			level = 1
+			modifier = {	
+			}
+		}
+     WRF_nihal_atsiz_hog = {
+			#picture = generic_communism_drift_bonus
+			available = { 
+			tag = WRF
+			always = no
+			}
+			visible = {
+			has_government = revolutionary_nationalist
+			}
+			cancel_if_invalid = no
+			level = 2
+			modifier = {	
+			}
+		}
+	WRF_celal_bayar_hog = {
+			#picture = generic_communism_drift_bonus
+			available = { 
+			tag = WRF 
+			always = no
+			}
+			visible = {
+			has_government = conservative
+			}
+			cancel_if_invalid = no
+			level = 3
+			modifier = {	
+			}
+		}
+}
+
+}

@@ -1,0 +1,36 @@
+ideas = {
+	government_style = {
+	military_government = {
+			picture = generic_communism_drift_bonus
+			available = { 
+			always = no
+			}
+			cancel_if_invalid = no
+			level = 1
+			modifier = {	
+			}
+		}
+	authoritarian_democracy_type= {
+			picture = generic_communism_drift_bonus
+			available = { 
+			always = no
+			}
+			cancel_if_invalid = no
+			level = 2
+			modifier = {	
+			}
+		}
+
+	democratic_government = {
+			picture = generic_communism_drift_bonus
+			available = { 
+			always = no
+			}
+			cancel_if_invalid = no
+			level = 3
+			modifier = {	
+			}
+		}
+}
+
+}
