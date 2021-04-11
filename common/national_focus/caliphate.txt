@@ -449,7 +449,7 @@ focus_tree = {
 
 	focus = {
 		id = CLP_factories_1
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_lay_groundwork
 		x = 20
 		y = 7
 		cost = 1
@@ -465,7 +465,7 @@ focus_tree = {
 
 	focus = {
 		id = CLP_factories_2
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_first_factory
 		x = 20
 		y = 8
 		cost = 1
@@ -481,7 +481,7 @@ focus_tree = {
 
 	focus = {
 		id = CLP_factories_3
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_minor_manufactory
 		x = 20
 		y = 9
 		cost = 1
@@ -529,7 +529,7 @@ focus_tree = {
 
 	focus = {
 		id = CLP_research_1
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_islamic_science
 		x = 22
 		y = 9
 		cost = 1
