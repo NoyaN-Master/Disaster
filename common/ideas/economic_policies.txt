@@ -7,7 +7,8 @@ ideas = {
 			}
 			cancel_if_invalid = no
 			level = 1
-			modifier = {	
+			modifier = {
+
 			}
 		}
 	corporatism = {
@@ -18,10 +19,11 @@ ideas = {
 			cancel_if_invalid = no
 			level = 2
 			modifier = {	
+
 			}
 		}
 
-	free_market_economy = {
+	laisez_faire = {
 			picture = generic_communism_drift_bonus
 			available = { 
 			always = no
@@ -31,6 +33,17 @@ ideas = {
 			modifier = {	
 			}
 		}
+	interventionism = {
+			picture = generic_communism_drift_bonus
+			available = { 
+			always = no
+			}
+			cancel_if_invalid = no
+			level = 3
+			modifier = {	
+			}
+		}
+
 }
 
 }

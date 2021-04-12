@@ -3,20 +3,64 @@ disaster_government:0 "State Policies"
 head_of_government:0 "Head Of Government"
 economic_policy:0 "Economic Policy"
 government_style:0 "Government Type"
-prosperity:0 "Prosperity Level"
+prosperity:0 "Industrialization Level"
 
+
+
+
+#HOG
+#WRF
 WRF_mustafa_kemal:0 "Mustafa Kemal Pasha\nLiving Legend\nKemalist\nAbsolute Ruler"
 WRF_celal_bayar_hog:0 "Celal Bayar\nEconomist\nDemocratic Kemalist\nPriminister "
 WRF_nihal_atsiz_hog:0 "Nihal Adsiz\nLinguist\nRadical Atsizist\nBasbug "
 
+
+
+
 planned_economy:0 "Planned Economy"
-free_market_economy:0 "Economic Liberalism"
+planned_economy_desc:0""
 corporatism:0 "Corporatism"
+corporatism_desc:0""
+laisez_faire:0"Laisez Faire"
+laisez_faire_desc:0""
+interventionism:0"Interventionism"
+interventionism_desc:0""
+
+
+
+
+
+
+
+agrarian_society:0"Agrarian Society"
+agrarian_society_desc:0""
+semi_industrial_society:0"Semi Industrial Society"
+semi_industrial_society_desc:0""
+industrialized_society:0"Industrialized Society"
+industrialized_society_desc:0""
+post_industrialized_society:0"Post Industrialized Society"
+post_industrialized_society_desc:0""
+
+
 
 military_government:0 "Military Government"
-authoritarian_democracy_type:0 "Paternal Democracy"
-democratic_government:0 "Democratic Government"
+military_government_desc:0""
+one_party_state:0"One Party State"
+one_party_state_desc:0""
+colonial_government:0"Colonial Government"
+colonial_government_desc:0""
+multi_party_democracy:0"Multi Party Democracy"
+multi_party_democracy_desc:0""
+oligarchy:0"Oligarchy"
+oligarchy_desc:0""
+autocracy:0"Autocracy"
+autocracy_desc:0""
+anarchy:0"Anarchy"
+anarchy_desc:0""
+warlord:0"Warlord"
+warlord_desc:0""
+authoritarian_state:0"Authoritarian State"
+authoritarian_state_desc:0""
 
-economic_goldage:0 "Golden Age"
-recovery_economy:0 "Recovery Economy"
-average_economy:0 "Average Economy"
+
+

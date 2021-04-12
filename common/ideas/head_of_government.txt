@@ -10,6 +10,9 @@ ideas = {
 			level = 1
 			modifier = {	
 			}
+			visible = {
+			tag = WRF 
+			}
 		}
      WRF_nihal_atsiz_hog = {
 			#picture = generic_communism_drift_bonus
@@ -19,6 +22,7 @@ ideas = {
 			}
 			visible = {
 			has_government = revolutionary_nationalist
+			tag = WRF 
 			}
 			cancel_if_invalid = no
 			level = 2
@@ -33,6 +37,7 @@ ideas = {
 			}
 			visible = {
 			has_government = conservative
+			tag = WRF 
 			}
 			cancel_if_invalid = no
 			level = 3

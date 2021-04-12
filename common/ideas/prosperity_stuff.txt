@@ -1,34 +1,95 @@
 ideas = {
 	prosperity = {
-	economic_goldage = {
+	agrarian_society = {
 			picture = generic_communism_drift_bonus
 			available = { 
 			always = no
 			}
 			cancel_if_invalid = no
 			level = 1
-			modifier = {	
+			modifier = {
+			production_speed_buildings_factor = -0.1
+			agency_upgrade_time = 1
+			fuel_gain_factor = -0.4
+			conversion_cost_civ_to_mil_factor= 0.4
+			conversion_cost_mil_to_civ_factor = 0.4
+			conscription_factor = 0.2
+			}
+			research_bonus = {
+			armor = -0.15
+			naval_equipment = -0.15
+			air_equipment = -0.15
+			industry = -0.15
+			electronics = -0.15
+			motorized_equipment = -0.15
 			}
 		}
-	recovery_economy= {
+	semi_industrial_society = {
 			picture = generic_communism_drift_bonus
 			available = { 
 			always = no
 			}
 			cancel_if_invalid = no
 			level = 2
-			modifier = {	
+			modifier = {
+			production_speed_buildings_factor = -0.05
+			agency_upgrade_time = 0.5
+			fuel_gain_factor = -0.2
+			conversion_cost_civ_to_mil_factor= 0.2
+			conversion_cost_mil_to_civ_factor = 0.2
+			conscription_factor = 0.1
+			}
+			research_bonus = {
+			armor = -0.1
+			naval_equipment = -0.1
+			air_equipment = -0.1
+			industry = -0.1
+			electronics = -0.1
+			motorized_equipment = -0.1
 			}
 		}
-
-	average_economy = {
+	industrialized_society = {
 			picture = generic_communism_drift_bonus
 			available = { 
 			always = no
 			}
 			cancel_if_invalid = no
 			level = 3
-			modifier = {	
+			modifier = {
+			agency_upgrade_time = 0.1
+			fuel_gain_factor = -0.1
+			conversion_cost_civ_to_mil_factor= 0.1
+			conversion_cost_mil_to_civ_factor = 0.1
+			conscription_factor = -0.05
+			}
+			research_bonus = {
+			armor = -0.05
+			naval_equipment = -0.05
+			air_equipment = -0.05
+			industry = -0.05
+			electronics = -0.05
+			motorized_equipment = -0.05
+			}
+		}
+	post_industrialized_society = {
+			picture = generic_communism_drift_bonus
+			available = { 
+			always = no
+			}
+			cancel_if_invalid = no
+			level = 4
+			modifier = {
+			production_speed_buildings_factor = 0.05			
+			fuel_gain_factor = 0.1
+			conscription_factor = -0.1
+			}
+			research_bonus = {
+			armor = 0.02
+			naval_equipment = 0.02
+			air_equipment = 0.02
+			industry = 0.02
+			electronics = 0.02
+			motorized_equipment = 0.02
 			}
 		}
 }

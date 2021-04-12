@@ -10,7 +10,7 @@ ideas = {
 			modifier = {	
 			}
 		}
-	authoritarian_democracy_type= {
+	one_party_state = {
 			picture = generic_communism_drift_bonus
 			available = { 
 			always = no
@@ -21,13 +21,73 @@ ideas = {
 			}
 		}
 
-	democratic_government = {
+	colonial_government = {
 			picture = generic_communism_drift_bonus
 			available = { 
 			always = no
 			}
 			cancel_if_invalid = no
 			level = 3
+			modifier = {	
+			}
+		}
+	multi_party_democracy = {
+			picture = generic_communism_drift_bonus
+			available = { 
+			always = no
+			}
+			cancel_if_invalid = no
+			level = 4
+			modifier = {	
+			}
+		}
+	oligarchy = {
+			picture = generic_communism_drift_bonus
+			available = { 
+			always = no
+			}
+			cancel_if_invalid = no
+			level = 5
+			modifier = {	
+			}
+		}
+	autocracy = {
+			picture = generic_communism_drift_bonus
+			available = { 
+			always = no
+			}
+			cancel_if_invalid = no
+			level = 6
+			modifier = {	
+			}
+		}
+	anarchy = {
+			picture = generic_communism_drift_bonus
+			available = { 
+			always = no
+			}
+			cancel_if_invalid = no
+			level = 7
+			modifier = {	
+			}
+		}
+	warlord = {
+			picture = generic_communism_drift_bonus
+			available = { 
+			always = no
+			}
+			cancel_if_invalid = no
+			level = 8
+			modifier = {	
+			}
+		}
+	authoritarian_state = {
+			picture = generic_communism_drift_bonus
+			available = { 
+			always = no
+			}
+			cancel_if_invalid = no
+			level = 9
 			modifier = {	
 			}
 		}
