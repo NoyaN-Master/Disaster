@@ -23,6 +23,10 @@ add_manpower = 10000
 add_ideas = CRW_Autocratic_Idea
 add_ideas = CRW_Protests_1
 
+add_ideas = 	multi_party_democracy 
+add_ideas = 	laisez_faire 
+add_ideas = 	industrialized_society
+
 set_popularities = {
 	conservative = 25
 	liberal = 25

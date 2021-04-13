@@ -14,6 +14,10 @@ set_politics = {
 	elections_allowed = no
 }
 
+add_ideas = 	military_government 
+add_ideas = 	planned_economy
+add_ideas = 	industrialized_society
+
 add_ideas = THR_Constant_Raids
 add_ideas = THR_Ismet_Army
 add_ideas = THR_West_Society

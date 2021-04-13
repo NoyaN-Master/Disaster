@@ -33,6 +33,10 @@ set_technology = {
 
 set_convoys = 0
 
+add_ideas = 	anarchy  
+add_ideas = 	laisez_faire 
+add_ideas = 	industrialized_society
+
 set_politics = {
 	ruling_party = conservative
 	last_election = "1936.1.1"
