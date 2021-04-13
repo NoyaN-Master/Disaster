@@ -20,7 +20,9 @@ GER_unification_decisions = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
 			set_cosmetic_tag = GER_small
           }	 
-	 
+        ai_will_do = {
+			factor = 1000
+		}	 
 	 }
 	 GER_for_germany_authoritarian_democrat = {
 		visible = { has_government = authoritarian_democrat
@@ -42,7 +44,10 @@ GER_unification_decisions = {
           remove_effect = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
 			set_cosmetic_tag = GER_small
-          }	 
+          }	
+        ai_will_do = {
+			factor = 1000
+		}		  
 	 }
  	 GER_for_germany_autocratic = {
 		visible = { has_government = autocratic
@@ -65,7 +70,9 @@ GER_unification_decisions = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
 			set_cosmetic_tag = GER_small
           }	 
-	 
+        ai_will_do = {
+			factor = 1000
+		}	 
 	 }
  	 GER_for_germany_ultranationalist= {
 		visible = { has_government = ultranationalist
@@ -88,7 +95,9 @@ GER_unification_decisions = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
 			set_cosmetic_tag = GER_small
           }	 
-	 
+        ai_will_do = {
+			factor = 1000
+		}	 
 	 }
  	 GER_for_germany_revolutionary_nationalist= {
 		visible = { has_government = revolutionary_nationalist
@@ -111,7 +120,9 @@ GER_unification_decisions = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
 			set_cosmetic_tag = GER_small
           }	 
-	 
+        ai_will_do = {
+			factor = 1000
+		}	 
 	 }
 
 
@@ -137,7 +148,9 @@ GER_unification_decisions = {
 			set_cosmetic_tag = GER_big
                set_country_flag = PRE_formed_greater_germany
           }	 
-	 
+        ai_will_do = {
+			factor = 1000
+		}	 
 	 }
 	 GER_for_germany_authoritarian_democrat_greater = {
 		visible = { has_government = authoritarian_democrat}
@@ -157,7 +170,10 @@ GER_unification_decisions = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
 			set_cosmetic_tag = GER_big
                set_country_flag = PRE_formed_greater_germany
-          }	 
+          }	
+        ai_will_do = {
+			factor = 1000
+		}		  
 	 }
  	 GER_for_germany_autocratic_greater = {
 		visible = { has_government = autocratic}
@@ -178,7 +194,9 @@ GER_unification_decisions = {
 			set_cosmetic_tag = GER_big
                set_country_flag = PRE_formed_greater_germany
           }	 
-	 
+        ai_will_do = {
+			factor = 1000
+		}	 
 	 }
  	 GER_for_germany_ultranationalist_greater= {
 		visible = { has_government = ultranationalist}
@@ -199,7 +217,9 @@ GER_unification_decisions = {
 			set_cosmetic_tag = GER_big
                set_country_flag = PRE_formed_greater_germany
           }	 
-	 
+        ai_will_do = {
+			factor = 1000
+		}	 
 	 }
  	 GER_for_germany_revolutionary_nationalist_greater= {
 		visible = { has_government = revolutionary_nationalist}
@@ -220,7 +240,9 @@ GER_unification_decisions = {
 			set_cosmetic_tag = GER_big
                set_country_flag = PRE_formed_greater_germany
           }	 
-	 
+        ai_will_do = {
+			factor = 1000
+		}	 
 	 }
 
 
@@ -246,6 +268,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+        ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate2 = {
           visible = {
@@ -267,6 +292,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+        ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate3 = {
           visible = {
@@ -288,6 +316,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+        ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate4 = {
           visible = {
@@ -309,6 +340,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+        ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate5 = {
           visible = {
@@ -330,6 +364,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+        ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate6 = {
           visible = {
@@ -351,6 +388,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+        ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate7 = {
           visible = {
@@ -372,6 +412,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+        ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate8 = {
           visible = {
@@ -393,6 +436,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+        ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate9 = {
           visible = {
@@ -414,6 +460,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+        ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate10 = {
           visible = {
@@ -435,6 +484,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+		          ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate11 = {
           visible = {
@@ -456,6 +508,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+		          ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate12 = {
           visible = {
@@ -477,6 +532,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+		          ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate13 = {
           visible = {
@@ -498,6 +556,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+		          ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate14 = {
           visible = {
@@ -519,6 +580,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+		          ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate15 = {
           visible = {
@@ -540,6 +604,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+		          ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate16 = {
           visible = {
@@ -561,6 +628,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+		          ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate17 = {
           visible = {
@@ -582,6 +652,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+		          ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate18 = {
           visible = {
@@ -603,6 +676,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+		          ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate19 = {
           visible = {
@@ -624,6 +700,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+		          ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate20 = {
           visible = {
@@ -645,6 +724,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+		          ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate21 = {
           visible = {
@@ -666,6 +748,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+		          ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate22 = {
           visible = {
@@ -687,6 +772,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+		          ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate23 = {
           visible = {
@@ -708,6 +796,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+		          ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate24 = {
           visible = {
@@ -729,6 +820,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+		          ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate25 = {
           visible = {
@@ -750,6 +844,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+		          ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate26 = {
           visible = {
@@ -771,6 +868,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+		          ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate27 = {
           visible = {
@@ -792,6 +892,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+		          ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate28 = {
           visible = {
@@ -813,6 +916,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+		          ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate29 = {
           visible = {
@@ -834,6 +940,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+		          ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate30 = {
           visible = {
@@ -855,6 +964,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+		          ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate31 = {
           visible = {
@@ -876,6 +988,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+		          ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate32 = {
           visible = {
@@ -897,6 +1012,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+		          ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate33 = {
           visible = {
@@ -918,6 +1036,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+		          ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate34 = {
           visible = {
@@ -939,6 +1060,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+		          ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate35 = {
           visible = {
@@ -960,6 +1084,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+		          ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate36 = {
           visible = {
@@ -981,6 +1108,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+		          ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate37 = {
           visible = {
@@ -1002,6 +1132,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+		          ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate38 = {
           visible = {
@@ -1023,6 +1156,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+		          ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate39 = {
           visible = {
@@ -1044,6 +1180,9 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
+		          ai_will_do = {
+			factor = 1000
+		}
      }
      GER_integrate40 = {
           visible = {
@@ -1066,6 +1205,9 @@ GER_unification_decisions = {
 			war_support_weekly = -0.001
           }
      }
+	         ai_will_do = {
+			factor = 1000
+		}
 
 
 }

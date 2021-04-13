@@ -10,6 +10,9 @@ PRE_ministry_of_propaganda_decision = {
 		 custom_effect_tooltip = PRE_ministry_of_propaganda_increase_tooltip
           }
           days_remove = 30
+        ai_will_do = {
+			factor = 1000
+		}
      }
      PRE_propaganda_decision_2 = {
           cost = 100
@@ -25,6 +28,9 @@ PRE_ministry_of_propaganda_decision = {
 		 custom_effect_tooltip = PRE_ministry_of_propaganda_increase_tooltip
           }
           days_remove = 50
+        ai_will_do = {
+			factor = 1000
+		}
      }
      PRE_propaganda_decision_3 = {
           cost = 20
@@ -41,6 +47,9 @@ PRE_ministry_of_propaganda_decision = {
 		 custom_effect_tooltip = PRE_ministry_of_propaganda_increase_tooltip
           }
           days_remove = 20
+        ai_will_do = {
+			factor = 1000
+		}
      }
      PRE_propaganda_decision_4 = {
           cost = 75
@@ -53,6 +62,9 @@ PRE_ministry_of_propaganda_decision = {
 		 custom_effect_tooltip = PRE_ministry_of_propaganda_increase_tooltip
           }
           days_remove = 100
+        ai_will_do = {
+			factor = 1000
+		}
      }
      PRE_propaganda_decision_5 = {
           cost = 50
@@ -65,6 +77,9 @@ PRE_ministry_of_propaganda_decision = {
 		 custom_effect_tooltip = PRE_ministry_of_propaganda_increase_tooltip
           }
           days_remove = 200
+        ai_will_do = {
+			factor = 1000
+		}
      }
 }
 
@@ -81,6 +96,9 @@ PRE_war_economy_decision = {
 		 custom_effect_tooltip = PRE_war_economy_decision_increase_tooltip
           }
           days_remove = 30
+        ai_will_do = {
+			factor = 1000
+		}
      }
      PRE_war_economy_decision_2 = {
           cost = 100
@@ -94,6 +112,9 @@ PRE_war_economy_decision = {
 		 custom_effect_tooltip = PRE_war_economy_decision_increase_tooltip
           }
           days_remove = 50
+        ai_will_do = {
+			factor = 1000
+		}
      }
      PRE_war_economy_decision_3 = {
           cost = 80
@@ -107,6 +128,9 @@ PRE_war_economy_decision = {
 		 custom_effect_tooltip = PRE_war_economy_decision_increase_tooltip
           }
           days_remove = 100
+        ai_will_do = {
+			factor = 1000
+		}
      }
      PRE_war_economy_decision_4 = {
           cost = 150
@@ -120,6 +144,9 @@ PRE_war_economy_decision = {
 		 custom_effect_tooltip = PRE_war_economy_decision_increase_tooltip
           }
           days_remove = 50
+        ai_will_do = {
+			factor = 1000
+		}
      }
      PRE_war_economy_decision_5 = {
           cost = 75
@@ -133,6 +160,9 @@ PRE_war_economy_decision = {
 		 custom_effect_tooltip = PRE_war_economy_decision_increase_tooltip
           }
           days_remove = 30
+        ai_will_do = {
+			factor = 1000
+		}
      }
 
 
