@@ -360,7 +360,7 @@ TUR_unification_category = {
 }
 
 IZM_milita_category = {
-
+	visible = { tag = IZM }
 TUR_Milita_Raise = {
         available = {
         tag = IZM

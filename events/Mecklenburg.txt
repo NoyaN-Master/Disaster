@@ -1,0 +1,135 @@
+add_namespace = mek
+
+country_event = { #intro event
+	id = mek.1
+	title = mek.1.t
+	desc = mek.1.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	option = {
+		name = mek.1.a
+		ai_chance = { factor = 1}
+		hidden_effect = {
+		    country_event = { id = mek.2 days = 140 }
+		}
+	}
+}
+
+country_event = { #protests
+	id = mek.2
+	title = mek.2.t
+	desc = mek.2.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	option = {
+		name = mek.2.a
+		ai_chance = { factor = 1}
+		hidden_effect = {
+		    country_event = { id = mek.3 days = 1 }
+		}
+	}
+}
+country_event = { #protests dispersed
+	id = mek.3
+	title = mek.3.t
+	desc = mek.3.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	option = {
+		name = mek.3.a
+		ai_chance = { factor = 1}
+		hidden_effect = {
+		    NGU = { country_event = { id = mek.4 days = 1 }}
+		}
+	}
+}
+country_event = { #NGU sends ultimatum
+	id = mek.4
+	title = mek.4.t
+	desc = mek.4.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	option = {
+		name = mek.4.a
+		ai_chance = { factor = 1}
+		hidden_effect = {
+		    country_event = { id = mek.5 days = 1 }
+		}
+	}
+}
+country_event = { # MEK refuses NGU declares war
+	id = mek.5
+	title = mek.5.t
+	desc = mek.5.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	option = {
+		name = mek.5.a
+		ai_chance = { factor = 1}
+		declare_war_on = {
+        target = MEK
+        type = annex_everything
+        }   
+		hidden_effect = {
+		    PRE = { country_event = { id = mek.6 days = 1 }}
+		}
+	}
+}
+country_event = { #Intervene in war
+	id = mek.6
+	title = mek.6.t
+	desc = mek.6.d
+	fire_only_once = yes
+	is_triggered_only = yes		
+	option = {
+		name = mek.6.a
+		ai_chance = { factor = 1}
+		declare_war_on = {
+        target = NGU
+        type = annex_everything
+        } 
+		annex_country = {
+		target = MEK
+		transfer_troops = yes
+		}
+		hidden_effect = {
+		    PLN = { country_event = { id = mek.7 days = 2 }}
+		}
+	}
+}
+country_event = { #poland sends troop to occupy prussian land
+	id = mek.7
+	title = mek.7.t
+	desc = mek.7.d
+	fire_only_once = yes
+	is_triggered_only = yes		
+	option = {
+		name = mek.7.a
+		ai_chance = { factor = 1}
+		hidden_effect = {
+		    PRE = { country_event = { id = mek.8 days = 1 }}
+		}
+	}
+}
+country_event = { #prussian response
+	id = mek.8
+	title = mek.8.t
+	desc = mek.8.d
+	fire_only_once = yes
+	is_triggered_only = yes		
+	option = { # do something about it
+		name = mek.8.a
+		ai_chance = { factor = 1}
+		declare_war_on = {
+        target = PLN
+        type = annex_everything
+        }  
+	}
+	option = { # deal with them later
+		name = mek.8.a
+		ai_chance = { factor = 1}
+	PLN  = { transfer_state = 67
+	transfer_state = 5
+	}
+	}
+}

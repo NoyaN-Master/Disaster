@@ -102,6 +102,8 @@ country_event = { #Elections
 			ideology = revolutionary_nationalist
 			popularity = 0.1
 		}
+		add_ideas = one_party_state 
+		add_ideas = 	corporatism 
 	}
 	option = { #DNVP
 		name = pre.5.b
@@ -115,6 +117,9 @@ country_event = { #Elections
 			ideology = autocratic
 			popularity = 0.1
 		}
+		add_ideas = autocracy 
+		add_ideas = corporatism 
+
 	}
 	option = { #Libtard victory
 		name = pre.5.c
@@ -128,6 +133,8 @@ country_event = { #Elections
 			ideology = liberal
 			popularity = 0.1
 		}
+		add_ideas = 	multi_party_democracy 
+		add_ideas = 	laisez_faire 
 	}
 	option = { #Junkers
 		name = pre.5.e
@@ -137,6 +144,7 @@ country_event = { #Elections
 			ideology = authoritarian_democrat
 			popularity = 0.1
 		}
+		add_ideas = corporatism 
 	}
 }
 country_event = { #Rigged Elections
@@ -150,6 +158,8 @@ country_event = { #Rigged Elections
 		name = pre.6.a
 		ai_chance = { factor = 1}
 		set_country_flag = PRE_junker_victory
+		add_ideas = corporatism
+
 	}
 }
 country_event = { #Schleiher Refuses has two choices
@@ -193,6 +203,7 @@ country_event = { #Junker Coups Schleiher
 		    #
 	        }
             }
+		add_ideas = corporatism
 	}
 }
 country_event = { # Purging the Junkers
@@ -309,6 +320,8 @@ country_event = { # Goring Consolidates power
 		name = pre.14.a
 		ai_chance = { factor = 1}
 		set_country_flag = PRE_nazi_victory
+		add_ideas = one_party_state 
+		add_ideas = corporatism 
 
 	}
 }
@@ -357,6 +370,11 @@ country_event = { # Succeeds
 		name = pre.17.a
 		ai_chance = { factor = 1}
 		set_country_flag = PRE_schleicher_victory
+		add_ideas = 	corporatism 
+		add_ideas = 	one_party_state 
+
+		
+		
 		add_popularity = {
 		ideology = ultranationalist
 		popularity = 0.35
@@ -467,6 +485,9 @@ country_event = { #goring coup after querfront fails
 		ai_chance = { factor = 1}
 		clr_country_flag = PRE_schleicher_refuses_step_down
 		set_country_flag = PRE_nazi_victory
+		add_ideas = one_party_state 
+		add_ideas = corporatism 
+		
 		set_politics = {
 			ruling_party = revolutionary_nationalist
 			elections_allowed = no
