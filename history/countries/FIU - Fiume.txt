@@ -6,6 +6,9 @@ set_technology = {
 }
 
 set_convoys = 16
+add_ideas = 	one_party_state 
+add_ideas = 	corporatism 
+add_ideas = 	post_industrialized_society
 
 if = {
 	limit = {

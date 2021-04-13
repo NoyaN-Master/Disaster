@@ -6,6 +6,9 @@ set_technology = {
 }
 
 set_convoys = 0
+add_ideas = 	authoritarian_state 
+add_ideas = 	interventionism 
+add_ideas = 	post_industrialized_society
 
 if = {
 	limit = {

@@ -28,6 +28,9 @@ set_popularities = {
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
+add_ideas = 	military_government 
+add_ideas = 	corporatism 
+add_ideas = 	semi_industrial_society
 
 create_country_leader = {
 	name = "Vinayak Damodar Savarkar"

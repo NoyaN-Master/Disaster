@@ -28,6 +28,9 @@ set_popularities = {
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
+add_ideas = 	multi_party_democracy 
+add_ideas = 	interventionism 
+add_ideas = 	industrialized_society
 
 create_country_leader = {
 	name = "Aleksandr Stamboliyski"

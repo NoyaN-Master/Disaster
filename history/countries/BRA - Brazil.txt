@@ -27,6 +27,9 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+add_ideas = 	authoritarian_state 
+add_ideas = 	corporatism 
+add_ideas = 	industrialized_society
 
 country_event = { id = bra.1 days = 31 }
 country_event = { id = bra.2 days = 45 }

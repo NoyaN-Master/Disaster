@@ -13,6 +13,10 @@ set_research_slots = 3
 
 add_ideas = {
 	limited_conscription
+	multi_party_democracy 
+laisez_faire 
+post_industrialized_society
+
 }
 
 set_technology = {
@@ -46,10 +50,6 @@ if = {
 }
 
 set_convoys = 5
-
-add_ideas = {
-	limited_conscription
-}
 
 set_politics = {
 	ruling_party = liberal

@@ -14,6 +14,7 @@ set_politics = {
 	elections_allowed = no
 }
 
+
 set_popularities = {
 	conservative = 0
 	liberal = 0
@@ -28,6 +29,9 @@ set_popularities = {
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
+add_ideas = 	autocracy 
+add_ideas = 	interventionism 
+add_ideas = 	semi_industrial_society
 
 create_country_leader = {
 	name = "Wasif Ali Mirza"

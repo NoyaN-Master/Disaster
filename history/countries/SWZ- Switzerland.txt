@@ -13,6 +13,9 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+add_ideas = 	multi_party_democracy 
+add_ideas = 	laisez_faire 
+add_ideas = 	post_industrialized_society
 
 set_popularities = {
 	conservative = 45
