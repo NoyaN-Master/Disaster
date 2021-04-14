@@ -383,4 +383,41 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/TUR_roach_problem.dds"
 	}
 	
+	####Politicsview GFX
+	spriteType = {
+		name = "GFX_idea_one_party_state"
+		texturefile = "gfx/interface/ideas/one_party_state.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_auth_state_idea"
+		texturefile = "gfx/interface/ideas/auth_state_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_colonial_idea"
+		texturefile = "gfx/interface/ideas/colonial_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_democracy_idea"
+		texturefile = "gfx/interface/ideas/democracy_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_oligarchy_idea"
+		texturefile = "gfx/interface/ideas/oligarchy_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_warlord_idea"
+		texturefile = "gfx/interface/ideas/warlord_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_autocratic_idea"
+		texturefile = "gfx/interface/ideas/autocratic_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_anarchy_idea"
+		texturefile = "gfx/interface/ideas/anarchy_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_military_government_idea"
+		texturefile = "gfx/interface/ideas/military_government_idea.dds"
+	}
 }	

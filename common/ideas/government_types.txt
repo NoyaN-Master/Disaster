@@ -1,7 +1,7 @@
 ideas = {
 	government_style = {
 	military_government = {
-			picture = generic_communism_drift_bonus
+			picture = military_government_idea
 			available = { 
 			always = no
 			}
@@ -17,7 +17,7 @@ ideas = {
 			}
 		}
 	one_party_state = {
-			picture = generic_communism_drift_bonus
+			picture = one_party_state
 			available = { 
 			always = no
 			}
@@ -32,7 +32,7 @@ ideas = {
 		}
 
 	colonial_government = {
-			picture = generic_communism_drift_bonus
+			picture = colonial_idea
 			available = { 
 			always = no
 			}
@@ -45,7 +45,7 @@ ideas = {
 			}
 		}
 	multi_party_democracy = {
-			picture = generic_communism_drift_bonus
+			picture = democracy_idea
 			available = { 
 			always = no
 			}
@@ -58,7 +58,7 @@ ideas = {
 			}
 		}
 	oligarchy = {
-			picture = generic_communism_drift_bonus
+			picture = oligarchy_idea
 			available = { 
 			always = no
 			}
@@ -73,7 +73,7 @@ ideas = {
 			}
 		}
 	autocracy = {
-			picture = generic_communism_drift_bonus
+			picture = autocratic_idea
 			available = { 
 			always = no
 			}
@@ -86,7 +86,7 @@ ideas = {
 			}
 		}
 	anarchy = {
-			picture = generic_communism_drift_bonus
+			picture = anarchy_idea
 			available = { 
 			always = no
 			}
@@ -106,7 +106,7 @@ ideas = {
 			}
 		}
 	warlord = {
-			picture = generic_communism_drift_bonus
+			picture = warlord_idea
 			available = { 
 			always = no
 			}
@@ -121,7 +121,7 @@ ideas = {
 			}
 		}
 	authoritarian_state = {
-			picture = generic_communism_drift_bonus
+			picture = auth_state_idea
 			available = { 
 			always = no
 			}
