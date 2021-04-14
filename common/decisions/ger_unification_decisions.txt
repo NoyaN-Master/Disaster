@@ -1204,10 +1204,11 @@ GER_unification_decisions = {
 			stability_weekly = -0.001
 			war_support_weekly = -0.001
           }
-     }
 	         ai_will_do = {
 			factor = 1000
-		}
+		}		  
+     }
+
 
 
 }
