@@ -156,9 +156,9 @@ create_field_marshal = {
 
 	}
 	skill = 4
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
 	logistics_skill = 1
 }
 
@@ -169,8 +169,8 @@ create_field_marshal = {
 
 	}
 	skill = 4
-	attack_skill = 5
-	defense_skill = 3
+	attack_skill = 3
+	defense_skill = 2
 	planning_skill = 2
 	logistics_skill = 3
 }
