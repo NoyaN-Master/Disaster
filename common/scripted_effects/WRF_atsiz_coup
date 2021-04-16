@@ -102,3 +102,53 @@ add_state_core = 797
 add_state_core = 342
 add_state_core = 345
 }
+
+IZM_Ethem_government_loyaly = {
+            if = {
+                limit = {
+				NOT = { has_idea = Ethem_Government_Idea_1 }
+				NOT = { has_idea = Ethem_Government_Idea_2 }
+				NOT = { has_idea = Ethem_Government_Idea_3 }
+				NOT = { has_idea = Ethem_Government_Idea_4 }
+                }
+				hidden_effect = {
+                add_ideas = Ethem_Government_Idea_1
+				}
+            }
+			else_if = { 
+			limit = {
+				has_idea = Ethem_Government_Idea_1
+                }
+				hidden_effect = {
+                add_ideas = Ethem_Government_Idea_2
+				remove_ideas = Ethem_Government_Idea_1
+				}
+			}
+			else_if = { 
+			limit = {
+				has_idea = Ethem_Government_Idea_2
+                }
+				hidden_effect = {
+                add_ideas = Ethem_Government_Idea_3
+				remove_ideas = Ethem_Government_Idea_2
+				}
+			}
+			else_if = { 
+			limit = {
+				has_idea = Ethem_Government_Idea_3
+                }
+				hidden_effect = {
+                add_ideas = Ethem_Government_Idea_4
+				remove_ideas = Ethem_Government_Idea_3
+				}
+			}
+			else_if = { 
+			limit = {
+				has_idea = Ethem_Government_Idea_4
+                }
+				hidden_effect = {
+				remove_ideas = Ethem_Government_Idea_4
+				}
+			}
+
+}

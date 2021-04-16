@@ -1,0 +1,258 @@
+focus_tree = {
+	id = ethem_unified_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+		}
+	}
+
+    focus = {
+		id = IZM_Ethem_Unified
+		icon = GFX_goal_IZM_Ethem_Initial
+		x = 15
+		y = 0
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = { 
+		add_stability = 0.05
+		country_event = { id = ethem.1 days = 2}
+        remove_ideas = IZM_great_war  
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = IZM_Our_friends
+		icon = GFX_goal_IZM_Our_Allies
+		x = 13
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_Ethem_Unified}
+		completion_reward = { 
+		add_stability = 0.05
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = IZM_Ties_To_Leauge
+		icon = GFX_goal_IZM_izmir
+		x = 12
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_Our_friends}
+		completion_reward = { 
+		country_event = { id = ethem.2 days = 2}  
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = IZM_Atsiz_Ties
+		icon = GFX_goal_IZM_atsiz
+		x = 12
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_Ties_To_Leauge}
+		completion_reward = { 
+		country_event = { id = ethem.3 days = 2}    
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = IZM_Our_State
+		icon = GFX_goal_IZM_Our_State
+		x = 15
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_Ethem_Unified}
+		completion_reward = { 
+		add_stability = 0.05
+		add_political_power = 100	  
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = IZM_Form_TKK
+		icon = GFX_goal_IZM_TKK
+		x = 14
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_Our_State}
+		completion_reward = { 
+		swap_ideas = {
+        remove_idea = IZM_tsk_vs_tkk_1
+        add_idea = IZM_tsk_vs_tkk_2 
+        }	  
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = IZM_Unisocialist_Economy
+		icon = GFX_goal_IZM_unisoc_Economy
+		x = 16
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_Our_State}
+		completion_reward = { 
+		add_ideas = IZM_unisoc_economics	  
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = IZM_Legitimize_Rule
+		icon = GFX_goal_IZM_Legitimate_Gov
+		x = 16
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_Unisocialist_Economy}
+		completion_reward = { 
+		remove_ideas = warlord
+        add_ideas = authoritarian_state
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = IZM_Integrate_Harbiye
+		icon = GFX_goal_IZM_Kemalists
+		x = 14
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_Form_TKK}
+		completion_reward = { 
+		swap_ideas = {
+        remove_idea = IZM_tsk_vs_tkk_2
+        add_idea = IZM_tsk_vs_tkk_3
+        }	  
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = IZM_Start_The_Revolution
+		icon = GFX_goal_IZM_Cult_of_Revolution
+		x = 15
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_Integrate_Harbiye}
+        prerequisite = {focus = IZM_Legitimize_Rule}
+        prerequisite = {focus = IZM_Fate_Of_The_False_Messiah}
+        prerequisite = {focus = IZM_Atsiz_Ties}
+		completion_reward = { 
+		add_stability = 0.05
+		add_political_power = 100	  
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = IZM_Our_Enemies
+		icon = GFX_goal_IZM_Fake_Messiah
+		x = 17
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_Ethem_Unified}
+		completion_reward = { 
+		add_stability = 0.05
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = IZM_Fate_Of_The_Putschists
+		icon = GFX_goal_IZM_Enemy_Enver
+		x = 18
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_Our_Enemies}
+		completion_reward = { 
+		country_event = { id = ethem.4 days = 2}    
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = IZM_Fate_Of_The_False_Messiah
+		icon = GFX_goal_IZM_Enemy_Abdul
+		x = 18
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_Fate_Of_The_Putschists}
+		completion_reward = { 
+		country_event = { id = ethem.5 days = 2}   
+		hidden_effect = {
+		}
+		}
+	}
+
+
+}
