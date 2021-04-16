@@ -1,0 +1,526 @@
+focus_tree = {
+	id = ngpu_tree
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = NGU	}
+	}
+#starting stuff    
+focus = {
+		id = NGU_policies_of_redbaron
+		icon = GFX_goal_adress_parliament
+		x = 3
+		y = 0
+		cost = 3		
+		completion_reward = {
+		
+		}
+	}
+focus = {
+		id = NGU_food_for_family
+		icon = GFX_goal_adress_parliament
+		x = 1
+		y = 1
+		cost = 3
+        prerequisite = { focus = NGU_policies_of_redbaron}				
+		completion_reward = {
+		
+		}
+	}
+focus = {
+		id = NGU_promote_class_warfare
+		icon = GFX_goal_adress_parliament
+		x = 3
+		y = 1
+		cost = 3
+        prerequisite = { focus = NGU_policies_of_redbaron}				
+		completion_reward = {
+		
+		}
+	}
+
+focus = {
+		id = NGU_legacy_of_marx
+		icon = GFX_goal_adress_parliament
+		x = 5
+		y = 1
+		cost = 3
+        prerequisite = { focus = NGU_policies_of_redbaron}		
+		completion_reward = {
+		
+		}
+	}
+
+focus = {
+		id = NGU_question_of_paramilitaries
+		icon = GFX_goal_adress_parliament
+		x = 3
+		y = 2
+		cost = 3
+        prerequisite = { focus = NGU_policies_of_redbaron}
+        prerequisite = { focus = NGU_food_for_family}
+        prerequisite = { focus = NGU_legacy_of_marx}		
+		completion_reward = {
+		
+		}
+	}
+focus = {
+		id = NGU_operation_rote
+		icon = GFX_goal_adress_parliament
+		x = 3
+		y = 3
+		cost = 3
+        prerequisite = { focus = NGU_question_of_paramilitaries}		
+		completion_reward = {
+		
+		}
+	}             
+
+####goebbels
+focus = {
+		id = NGU_rise_of_evil
+		icon = GFX_goal_adress_parliament
+		x = 12
+		y = 0
+		cost = 3		
+		completion_reward = {
+		
+		}
+	} 
+focus = {
+		id = NGU_infiltrate_unions
+		icon = GFX_goal_adress_parliament
+		x = 11
+		y = 1
+		cost = 3
+        prerequisite = { focus = NGU_rise_of_evil }		
+		completion_reward = {
+		
+		}
+	}
+focus = {
+		id = NGU_hunt_down_bandits
+		icon = GFX_goal_adress_parliament
+		x = 10
+		y = 2
+		cost = 3
+        prerequisite = { focus = NGU_infiltrate_unions }		
+		completion_reward = {
+		
+		}
+	}    
+focus = {
+		id = NGU_start_centralization
+		icon = GFX_goal_adress_parliament
+		x = 13
+		y = 1
+		cost = 3
+        prerequisite = { focus = NGU_rise_of_evil }		
+		completion_reward = {
+		
+		}
+	}
+focus = {
+		id = NGU_choose_NAD
+		icon = GFX_goal_adress_parliament
+		x = 14
+		y = 2
+		cost = 3
+        prerequisite = { focus = NGU_start_centralization }		
+		completion_reward = {
+		
+		}
+	} 
+focus = {
+		id = NGU_disband_parties
+		icon = GFX_goal_adress_parliament
+		x = 12
+		y = 2
+		cost = 3
+        prerequisite = { focus = NGU_start_centralization }
+        prerequisite = { focus = NGU_infiltrate_unions }		
+		completion_reward = {
+		
+		}
+	} 
+focus = {
+		id = NGU_national_socialism
+		icon = GFX_goal_adress_parliament
+		x = 12
+		y = 3
+		cost = 3
+        prerequisite = { focus = NGU_start_centralization }
+        prerequisite = { focus = NGU_hunt_down_bandits }
+        prerequisite = { focus = NGU_choose_NAD }			
+		completion_reward = {
+		
+		}
+	}
+focus = {
+		id = NGU_nationalist_economy
+		icon = GFX_goal_adress_parliament
+		x = 14
+		y = 4
+		cost = 3
+        prerequisite = { focus = NGU_national_socialism }			
+		completion_reward = {
+		
+		}
+	}
+focus = {
+		id = NGU_blood_and_soil
+		icon = GFX_goal_adress_parliament
+		x = 13
+		y = 5
+		cost = 3
+        prerequisite = { focus = NGU_nationalist_economy }
+        prerequisite = { focus = NGU_control_the_media }				
+		completion_reward = {
+		
+		}
+	}    
+focus = {
+		id = NGU_unser_kampf
+		icon = GFX_goal_adress_parliament
+		x = 10
+		y = 4
+		cost = 3
+        prerequisite = { focus = NGU_national_socialism }			
+		completion_reward = {
+		
+		}
+	}
+focus = {
+		id = NGU_destroy_syndies
+		icon = GFX_goal_adress_parliament
+		x = 11
+		y = 5
+		cost = 3
+        prerequisite = { focus = NGU_unser_kampf }
+        prerequisite = { focus = NGU_control_the_media }				
+		completion_reward = {
+		
+		}
+	}
+focus = {
+		id = NGU_pan_germanism
+		icon = GFX_goal_adress_parliament
+		x = 12
+		y = 6
+		cost = 3
+        prerequisite = { focus = NGU_destroy_syndies }
+        prerequisite = { focus = NGU_blood_and_soil }				
+		completion_reward = {
+		
+		}
+	}
+focus = {
+		id = NGU_choose_strasser
+		icon = GFX_goal_adress_parliament
+		x = 11
+		y = 7
+		cost = 3
+        prerequisite = { focus = NGU_pan_germanism }
+        prerequisite = { focus = NGU_militarism }
+        prerequisite = { focus = NGU_denounce_jewry }								
+		completion_reward = {
+		
+		}
+	}
+focus = {
+		id = NGU_strasser_banner
+		icon = GFX_goal_adress_parliament
+		x = 10
+		y = 8
+		cost = 3
+        prerequisite = { focus = NGU_choose_strasser }								
+		completion_reward = {
+		
+		}
+	}
+focus = {
+		id = NGU_strasser_complete_industry
+		icon = GFX_goal_adress_parliament
+		x = 10
+		y = 9
+		cost = 3
+        prerequisite = { focus = NGU_choose_strasser }								
+		completion_reward = {
+		
+		}
+	}
+focus = {
+		id = NGU_labor_camps
+		icon = GFX_goal_adress_parliament
+		x = 12
+		y = 8
+		cost = 3
+        prerequisite = { AND = {
+        focus = NGU_choose_hitler
+        focus = NGU_choose_strasser    
+        } }								
+		completion_reward = {
+		
+		}
+	}
+focus = {
+		id = NGU_autohban
+		icon = GFX_goal_adress_parliament
+		x = 12
+		y = 9
+		cost = 3
+        prerequisite = { 
+        focus = NGU_labor_camps    
+        } 								
+		completion_reward = {
+		
+		}
+	}
+focus = {
+		id = NGU_Expand_Academia
+		icon = GFX_goal_adress_parliament
+		x = 12
+		y = 10
+		cost = 3
+        prerequisite = { 
+        focus = NGU_labor_camps    
+        } 								
+		completion_reward = {
+		
+		}
+	}
+focus = {
+		id = NGU_Deutscher_Arbeiter_Staat
+		icon = GFX_goal_adress_parliament
+		x = 12
+		y = 11
+		cost = 3
+        prerequisite = { 
+        focus = NGU_labor_camps
+        AND = {
+        NGU_strasser_welfare
+        NGU_hitler_eastern_influences    
+        }    
+        } 								
+		completion_reward = {
+		
+		}
+	}                    
+focus = {
+		id = NGU_strasser_welfare
+		icon = GFX_goal_adress_parliament
+		x = 10
+		y = 10
+		cost = 3
+        prerequisite = { focus = NGU_choose_strasser }								
+		completion_reward = {
+		
+		}
+	}             
+focus = {
+		id = NGU_choose_hitler
+		icon = GFX_goal_adress_parliament
+		x = 13
+		y = 7
+		cost = 3
+        prerequisite = { focus = NGU_pan_germanism }
+        prerequisite = { focus = NGU_militarism }
+        prerequisite = { focus = NGU_denounce_jewry }								
+		completion_reward = {
+		
+		}
+	}
+focus = {
+		id = NGU_hitler_move_right
+		icon = GFX_goal_adress_parliament
+		x = 14
+		y = 8
+		cost = 3
+        prerequisite = { focus = NGU_choose_hitler }								
+		completion_reward = {
+		
+		}
+	}
+focus = {
+		id = NGU_hitler_total_war
+		icon = GFX_goal_adress_parliament
+		x = 14
+		y = 9
+		cost = 3
+        prerequisite = { focus = NGU_choose_hitler }								
+		completion_reward = {
+		
+		}
+	}
+focus = {
+		id = NGU_hitler_eastern_influences
+		icon = GFX_goal_adress_parliament
+		x = 14
+		y = 10
+		cost = 3
+        prerequisite = { focus = NGU_choose_hitler }								
+		completion_reward = {
+		
+		}
+	}                     
+ focus = {
+		id = NGU_militarism
+		icon = GFX_goal_adress_parliament
+		x = 10
+		y = 6
+		cost = 3
+        prerequisite = { focus = NGU_destroy_syndies }				
+		completion_reward = {
+		
+		}
+	}       
+focus = {
+		id = NGU_control_the_media
+		icon = GFX_goal_adress_parliament
+		x = 12
+		y = 4
+		cost = 3
+        prerequisite = { focus = NGU_national_socialism }
+		completion_reward = {
+		
+		}
+	}
+focus = {
+		id = NGU_denounce_jewry
+		icon = GFX_goal_adress_parliament
+		x = 14
+		y = 6
+		cost = 3
+        prerequisite = { focus = NGU_blood_and_soil }				
+		completion_reward = {
+		
+		}
+	}
+##FP
+
+focus = {
+		id = NGU_Die_Wacht_am_Ost
+		icon = GFX_goal_adress_parliament
+		x = 20
+		y = 9
+		cost = 3				
+		completion_reward = {
+		
+		}
+	}
+focus = {
+		id = NGU_Fortify_Border
+		icon = GFX_goal_adress_parliament
+		x = 18
+		y = 10
+		cost = 3
+        prerequisite = { focus = NGU_Die_Wacht_am_Ost}				
+		completion_reward = {
+		
+		}
+	}
+focus = {
+		id = NGU_Expand_DAB_Prussia
+		icon = GFX_goal_adress_parliament
+		x = 22
+		y = 10
+		cost = 3
+        prerequisite = { focus = NGU_Die_Wacht_am_Ost}				
+		completion_reward = {
+		
+		}
+	}
+focus = {
+		id = NGU_Mecklenburg_Crisis
+		icon = GFX_goal_adress_parliament
+		x = 20
+		y = 11
+		cost = 3
+        prerequisite = { focus = NGU_Die_Wacht_am_Ost}				
+		completion_reward = {
+		
+		}
+	}
+focus = {
+		id = NGU_Operation_Konigsmorder
+		icon = GFX_goal_adress_parliament
+		x = 18
+		y = 12
+		cost = 3
+        prerequisite = { focus = NGU_Mecklenburg_Crisis}				
+		completion_reward = {
+		
+		}
+	}
+focus = {
+		id = NGU_Operation_Teutonic_Angriff
+		icon = GFX_goal_adress_parliament
+		x = 22
+		y = 12
+		cost = 3
+        prerequisite = { focus = NGU_Mecklenburg_Crisis}				
+		completion_reward = {
+		
+		}
+	}
+focus = {
+		id = NGU_Operation_Sudflanke
+		icon = GFX_goal_adress_parliament
+		x = 20
+		y = 12
+		cost = 3
+        prerequisite = { focus = NGU_Mecklenburg_Crisis}				
+		completion_reward = {
+		
+		}
+	}
+focus = {
+		id = NGU_Cross_The_Rhine
+		icon = GFX_goal_adress_parliament
+		x = 20
+		y = 13
+		cost = 3
+        prerequisite = { focus = NGU_Operation_Sudflanke}
+        prerequisite = { focus = NGU_Operation_Teutonic_Angriff}
+        prerequisite = { focus = NGU_Operation_Konigsmorder}				
+		completion_reward = {
+		
+		}
+	}
+focus = {
+		id = NGU_Legacy_Of_Charlamenge
+		icon = GFX_goal_adress_parliament
+		x = 19
+		y = 14
+		cost = 3
+        prerequisite = { focus = NGU_Cross_The_Rhine}				
+		completion_reward = {
+		
+		}
+	}
+focus = {
+		id = NGU_Eastern_Crusade
+		icon = GFX_goal_adress_parliament
+		x = 21
+		y = 14
+		cost = 3
+        prerequisite = { focus = NGU_Cross_The_Rhine}				
+		completion_reward = {
+		
+		}
+	}            
+focus = {
+		id = NGU_Coup_In_Schleswig
+		icon = GFX_goal_adress_parliament
+		x = 20
+		y = 10
+		cost = 3
+        prerequisite = { focus = NGU_Die_Wacht_am_Ost }
+		completion_reward = {
+		
+		}
+	}                                             
+}

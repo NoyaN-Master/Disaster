@@ -115,10 +115,10 @@ add_ideas = 	post_industrialized_society
 set_popularities = {
 	conservative = 0
 	liberal = 0
-	social_democrat = 10
-	libertarian_socialist = 20
+	social_democrat = 0
+	libertarian_socialist = 14
 	authoritarian_socialist = 63
-	unisocialist = 7
+	unisocialist = 23
 	authoritarian_democrat = 0
 	autocratic = 0
 	ultranationalist = 0
@@ -138,9 +138,46 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Joseph Goebbels"
+	#desc = "NGU_Max_Hoelz_desc"
+	picture = "NGU_Goebbels.tga"
+	expire = "2020.1.1"
+	ideology = unisocialist_subideology
+	traits = {
+		
+	}
+}
+
 create_field_marshal = {
-	name = "Frederick Augustus George"
-	portrait_path = "gfx/leaders/NGU/NGU_Max_Hoelz.tga"
+	name = "Martin Bormann"
+	portrait_path = "gfx/leaders/NGU/Portrait_Germany_Martin_Bormann.tga"
+	traits = {
+
+	}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Otto Kumm"
+	portrait_path = "gfx/leaders/NGU/Portrait_Germany_Otto_Kumm.tga"
+	traits = {
+
+	}
+	skill = 4
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Richard Baer"
+	portrait_path = "gfx/leaders/NGU/Portrait_Germany_Richard_Baer.tga"
 	traits = {
 
 	}
@@ -150,3 +187,44 @@ create_field_marshal = {
 	planning_skill = 2
 	logistics_skill = 2
 }
+
+create_corps_commander = {
+	name = "Werner Ostendorff"
+	portrait_path = "gfx/leaders/NGU/Portrait_Germany_Werner_Ostendorff.tga"
+	traits = {
+
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Paul Hausser"
+	portrait_path = "gfx/leaders/NGU/Portrait_Germany_Paul_Hausser.tga"
+	traits = {
+
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Erich Honecker"
+	portrait_path = "gfx/leaders/NGU/Portrait_Germany_Erich_Honecker.tga"
+	traits = {
+
+	}
+	skill = 1
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+
