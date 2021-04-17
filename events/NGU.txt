@@ -1,0 +1,254 @@
+add_namespace = ngu
+
+country_event = { #Introduction Event
+	id = ngu.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event ngu.1" }
+	title = ngu.1.t
+	desc = ngu.1.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngu.1.a
+		hidden_effect = {
+        set_variable = {
+	    var = NGU.Goebbels_Anger
+	    value = 0
+        }
+        set_variable = {
+	    var = NGU.Red_Baron_Power
+	    value = 0
+        }	
+		}
+	}
+}
+
+country_event = { #The Red Baron - Food For Families
+	id = ngu.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event ngu.1" }
+	title = ngu.2.t
+	desc = ngu.2.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngu.2.a
+        custom_effect_tooltip = ngu_hoeltz_influence
+        random_owned_province = {
+        add_building_construction = {
+        type = industrial_complex
+        level = 2
+        instant_build = yes
+        }           
+        }
+		hidden_effect = {
+        add_to_variable = {
+	    var = NGU.Red_Baron_Power
+	    value = 1
+        }  
+		}
+	}
+    option = {
+		name = ngu.2.b
+        custom_effect_tooltip = ngu_goebbels_influence
+        random_owned_province = {
+        add_building_construction = {
+        type = arms_factory
+        level = 2
+        instant_build = yes
+        }           
+        } 
+		hidden_effect = {   
+        add_to_variable = {
+	    var = NGU.Goebbels_Anger
+	    value = 1
+        }  	
+		}
+	}
+}
+
+country_event = { #The Red Baron - Legacy Marx
+	id = ngu.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event ngu.1" }
+	title = ngu.3.t
+	desc = ngu.3.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngu.3.a
+        custom_effect_tooltip = ngu_hoeltz_influence
+        add_political_power = 120
+		hidden_effect = {
+        add_to_variable = {
+	    var = NGU.Red_Baron_Power
+	    value = 1
+        }    	
+		}
+	}
+
+    option = {
+		name = ngu.3.b
+        custom_effect_tooltip = ngu_goebbels_influence
+        add_stability = 0.05
+		hidden_effect = {
+        add_to_variable = {
+	    var = NGU.Goebbels_Anger
+	    value = 1
+        }    	
+		}
+	}
+}
+
+country_event = { #The Red Baron - Class Warfare
+	id = ngu.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event ngu.1" }
+	title = ngu.4.t
+	desc = ngu.4.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngu.4.a
+        custom_effect_tooltip = ngu_hoeltz_influence
+        add_stability = -0.08
+        random_owned_province = {
+        add_building_construction = {
+        type = industrial_complex
+        level = 1
+        instant_build = yes
+        }           
+        }
+		hidden_effect = {
+        add_to_variable = {
+	    var = NGU.Red_Baron_Power
+	    value = 1
+        }  
+		}
+	}
+    option = {
+		name = ngu.4.b
+        custom_effect_tooltip = ngu_goebbels_influence
+        add_stability = 0.05
+        random_owned_province = {
+        add_building_construction = {
+        type = arms_factory
+        level = 2
+        instant_build = yes
+        }           
+        } 
+		hidden_effect = {   
+        add_to_variable = {
+	    var = NGU.Goebbels_Anger
+	    value = 1
+        }  	
+		}
+	}
+}
+
+country_event = { #The Red Baron - Question Of Paramilitaries
+	id = ngu.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event ngu.1" }
+	title = ngu.5.t
+	desc = ngu.5.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngu.5.a
+        custom_effect_tooltip = ngu_hoeltz_influence
+
+		hidden_effect = {
+        add_to_variable = {
+	    var = NGU.Red_Baron_Power
+	    value = 1
+        }  
+		}
+	}
+    option = {
+		name = ngu.5.b
+        custom_effect_tooltip = ngu_goebbels_influence
+        swap_ideas = {
+        remove_idea = NGU_paramilitary_problem
+        add_idea = NGU_paramilitary_problem_goebbels    
+        }
+		hidden_effect = {   
+        add_to_variable = {
+	    var = NGU.Goebbels_Anger
+	    value = 1
+        }  	
+		}
+	}
+}
+
+country_event = { #The Red Baron - Operation Rote
+	id = ngu.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event ngu.1" }
+	title = ngu.6.t
+	desc = ngu.6.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ngu.6.a
+        trigger = {
+        check_variable = {
+	    var = NGU.Red_Baron_Power
+	    value = 3
+	    compare = greater_than_or_equals
+        }
+        }
+        remove_idea = NGU_problem_ideology
+		hidden_effect = {	
+		}
+	}
+
+    option = {
+		name = ngu.6.b
+        trigger = {
+        check_variable = {
+	    var = NGU.Goebbels_Anger
+	    value = 3
+	    compare = greater_than_or_equals
+        }
+        }
+        remove_idea = NGU_paramilitary_problem_goebbels
+        remove_idea = NGU_problem_ideology
+        set_politics = {
+	    ruling_party = unisocialist
+	    last_election = "1936.1.1"
+	    election_frequency = 48
+	    elections_allowed = no
+        }
+        add_ideas = {
+        NGU_libsocs_problem_1
+        NGU_bandit_army    
+        }
+		hidden_effect = {	
+		}
+	}
+}

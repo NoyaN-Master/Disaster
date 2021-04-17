@@ -104,6 +104,10 @@ set_politics = {
 	elections_allowed = no
 }
 
+add_ideas = NGU_problem_ideology
+add_ideas = NGU_paramilitary_problem
+add_ideas = NGU_economic_stagnation
+
 add_ideas = extensive_conscription
 add_ideas = partial_economic_mobilisation
 add_ideas = 	one_party_state 

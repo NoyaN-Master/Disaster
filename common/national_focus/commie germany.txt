@@ -14,9 +14,9 @@ focus = {
 		icon = GFX_goal_adress_parliament
 		x = 3
 		y = 0
-		cost = 3		
+		cost = 2		
 		completion_reward = {
-		
+		country_event = { id = ngu.2 days = 1 }
 		}
 	}
 focus = {
@@ -27,7 +27,7 @@ focus = {
 		cost = 3
         prerequisite = { focus = NGU_policies_of_redbaron}				
 		completion_reward = {
-		
+		country_event = { id = ngu.2 days = 1 }
 		}
 	}
 focus = {
@@ -38,7 +38,7 @@ focus = {
 		cost = 3
         prerequisite = { focus = NGU_policies_of_redbaron}				
 		completion_reward = {
-		
+		country_event = { id = ngu.4 days = 1 }
 		}
 	}
 
@@ -50,7 +50,7 @@ focus = {
 		cost = 3
         prerequisite = { focus = NGU_policies_of_redbaron}		
 		completion_reward = {
-		
+		country_event = { id = ngu.3 days = 1 }
 		}
 	}
 
@@ -64,7 +64,7 @@ focus = {
         prerequisite = { focus = NGU_food_for_family}
         prerequisite = { focus = NGU_legacy_of_marx}		
 		completion_reward = {
-		
+		country_event = { id = ngu.5 days = 1 }
 		}
 	}
 focus = {
@@ -75,7 +75,7 @@ focus = {
 		cost = 3
         prerequisite = { focus = NGU_question_of_paramilitaries}		
 		completion_reward = {
-		
+		country_event = { id = ngu.6 days = 1 }
 		}
 	}             
 
@@ -85,7 +85,8 @@ focus = {
 		icon = GFX_goal_adress_parliament
 		x = 12
 		y = 0
-		cost = 3		
+		cost = 1
+		available = { has_government = unisocialist }		
 		completion_reward = {
 		
 		}
@@ -98,7 +99,10 @@ focus = {
 		cost = 3
         prerequisite = { focus = NGU_rise_of_evil }		
 		completion_reward = {
-		
+		swap_ideas = {
+		remove_idea = NGU_libsocs_problem_1
+		add_ideas = NGU_libsocs_problem_2	
+		}
 		}
 	}
 focus = {
@@ -109,7 +113,10 @@ focus = {
 		cost = 3
         prerequisite = { focus = NGU_infiltrate_unions }		
 		completion_reward = {
-		
+		swap_ideas = {
+		remove_idea = NGU_bandit_army
+		add_ideas = NGU_bandit_army_2	
+		}
 		}
 	}    
 focus = {
@@ -118,9 +125,13 @@ focus = {
 		x = 13
 		y = 1
 		cost = 3
-        prerequisite = { focus = NGU_rise_of_evil }		
+        prerequisite = { focus = NGU_rise_of_evil }	
+		available = { has_completed_focus = NGU_infiltrate_unions }		
 		completion_reward = {
-		
+		swap_ideas = {
+		remove_idea = NGU_libsocs_problem_2
+		add_ideas = NGU_libsocs_problem_3
+		}
 		}
 	}
 focus = {
@@ -129,9 +140,13 @@ focus = {
 		x = 14
 		y = 2
 		cost = 3
-        prerequisite = { focus = NGU_start_centralization }		
+        prerequisite = { focus = NGU_start_centralization }
+		available = { has_completed_focus = NGU_bandit_army }		
 		completion_reward = {
-		
+		swap_ideas = {
+		remove_idea = NGU_bandit_army_2
+		add_ideas = NGU_NAD	
+		}
 		}
 	} 
 focus = {
@@ -143,7 +158,7 @@ focus = {
         prerequisite = { focus = NGU_start_centralization }
         prerequisite = { focus = NGU_infiltrate_unions }		
 		completion_reward = {
-		
+		remove_idea = NGU_libsocs_problem_3
 		}
 	} 
 focus = {
@@ -156,7 +171,21 @@ focus = {
         prerequisite = { focus = NGU_hunt_down_bandits }
         prerequisite = { focus = NGU_choose_NAD }			
 		completion_reward = {
-		
+		set_cosmetic_flag = NGU_goebbels_natsoc
+		remove_ideas = NGU_libsocs_problem_3
+		remove_ideas = NGU_economic_stagnation
+		add_ideas = NGU_NatSoc
+		hidden_effect = {
+		create_country_leader = {
+		name = "Joseph Goebbels"
+		#desc = "NGU_Max_Hoelz_desc"
+		picture = "NGU_Goebbels_2.tga"
+		expire = "2020.1.1"
+		ideology = national_socialist_subid
+		traits = {
+		}
+		}
+		}
 		}
 	}
 focus = {
