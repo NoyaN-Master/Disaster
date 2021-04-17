@@ -576,7 +576,7 @@ PRE_frederick_great_reforms_idea2 = {
 			command_power_gain = 0.3
 			max_command_power = 50
 			minimum_training_level = -0.1 
-			land_reinforce_rate = 0.5
+			land_reinforce_rate = 0.05
 			experience_loss_factor = -0.2
 			
 			}
@@ -589,7 +589,7 @@ PRE_frederick_great_reforms_idea3 = {
 			command_power_gain = 0.3
 			max_command_power = 50
 			minimum_training_level = -0.1 
-			land_reinforce_rate = 0.5
+			land_reinforce_rate = 0.05
 			experience_loss_factor = -0.2
 			experience_gain_army = 0.15
 			conscription_factor = 0.10
