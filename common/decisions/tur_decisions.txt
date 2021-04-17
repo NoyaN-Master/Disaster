@@ -250,7 +250,7 @@ TUR_unification_category = {
         complete_effect = {
         set_cosmetic_tag = IZM_unification
         custom_effect_tooltip = ANT_unif_focus_tt
-        load_focus_tree = ethem_tree
+        load_focus_tree = ethem_unified_tree
         hidden_effect = {
             set_country_flag = unification_ethem
             news_event = { id = news.15 }
