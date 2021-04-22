@@ -8,7 +8,9 @@ ideas = {
 			cancel_if_invalid = no
 			level = 1
 			modifier = {
-
+			consumer_goods_factor = -0.1
+			war_support_factor = 0.1
+			trade_opinion_factor = 0.1
 			}
 		}
 	corporatism = {
@@ -19,7 +21,9 @@ ideas = {
 			cancel_if_invalid = no
 			level = 2
 			modifier = {	
-
+			consumer_goods_factor = -0.05
+			war_support_factor = 0.05
+			trade_opinion_factor = 0.2
 			}
 		}
 
@@ -30,7 +34,10 @@ ideas = {
 			}
 			cancel_if_invalid = no
 			level = 3
-			modifier = {	
+			modifier = {
+			consumer_goods_factor = 0.05
+			war_support_factor = -0.10
+			trade_opinion_factor = 0.5		
 			}
 		}
 	interventionism = {
@@ -40,7 +47,9 @@ ideas = {
 			}
 			cancel_if_invalid = no
 			level = 3
-			modifier = {	
+			modifier = {
+			war_support_factor = -0.05
+			trade_opinion_factor = 0.3		
 			}
 		}
 

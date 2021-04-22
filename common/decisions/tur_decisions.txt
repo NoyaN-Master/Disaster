@@ -336,26 +336,25 @@ TUR_unification_category = {
      }
 
      WRF_take_smyrna = {
-	    fire_only_once = yes
-		cost = 30
-        available  = {
-        controls_state = 834
-        original_tag = WRF
-        }
-        activation = {                          
-        controls_state = 834  
-        original_tag = WRF                     
-        }
-        visible = {
-        original_tag = WRF
-        has_war_with = GRE
-        } 
-        is_good = yes
-        selectable_mission = no
-        days_mission_timeout = 40 
+	    visible = {
+               has_war_with = GRE
+               tag = WRF
+          }
+          cost = 1
+          available = {
+               controls_state = 39
+          }
         complete_effect = {
-        country_event = { id = wrf.29 days = 10 } 
+            custom_effect_tooltip = WRF_greekwar_agreement
         }
+        remove_effect = {
+               country_event = { id = wrf.29 days = 1 } 
+        }
+        ai_will_do = {
+			factor = 1000
+		}
+
+
      }
 }
 

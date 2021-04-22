@@ -158,7 +158,7 @@ focus = {
         prerequisite = { focus = NGU_start_centralization }
         prerequisite = { focus = NGU_infiltrate_unions }		
 		completion_reward = {
-		remove_idea = NGU_libsocs_problem_3
+		remove_ideas = NGU_libsocs_problem_3
 		}
 	} 
 focus = {
@@ -171,7 +171,7 @@ focus = {
         prerequisite = { focus = NGU_hunt_down_bandits }
         prerequisite = { focus = NGU_choose_NAD }			
 		completion_reward = {
-		set_cosmetic_flag = NGU_goebbels_natsoc
+		set_cosmetic_tag = NGU_goebbels_natsoc
 		remove_ideas = NGU_libsocs_problem_3
 		remove_ideas = NGU_economic_stagnation
 		add_ideas = NGU_NatSoc
@@ -324,7 +324,7 @@ focus = {
         prerequisite = { focus = NGU_denounce_jewry }
 		available = { always = no }											
 		completion_reward = {
-		add_idea = NGU_Strasser_HoG
+		add_ideas = NGU_Strasser_HoG
 		}
 	}
 focus = {
