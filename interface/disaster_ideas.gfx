@@ -176,6 +176,18 @@ spriteTypes = {
 		name = "GFX_idea_discontent"
 		texturefile = "gfx/interface/ideas/discontent.tga"
 	}
+		spriteType = {
+		name = "GFX_idea_LBA_Alqayid"
+		texturefile = "gfx/interface/ideas/LBA_Alqayid.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LBA_Pacified"
+		texturefile = "gfx/interface/ideas/LBA_Pacified.tga"
+	}
+			spriteType = {
+		name = "GFX_idea_LBA_4th_Shore"
+		texturefile = "gfx/interface/ideas/LBA_4th_Shore.tga"
+	}
 	spriteType = {
 		name = "GFX_idea_CIB_King_Hill"
 		texturefile = "gfx/interface/ideas/CIB_King_Hill.dds"

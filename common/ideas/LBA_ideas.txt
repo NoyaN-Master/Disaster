@@ -1,0 +1,27 @@
+ideas = {
+
+country = {
+
+LBA_Alqayid = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LBA_Alqayid" }
+			picture = GFX_idea_LBA_Alqayid
+			modifier = {
+            ultranationalist_drift = 0.2
+            war_support_factor = 0.3
+			}
+			}
+LBA_Pacified = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LBA_Pacified" }
+			picture = GFX_idea_LBA_Pacified
+			modifier = {
+			non_core_manpower = 0.3
+            stability_factor = 0.2
+			}
+			}
+LBA_4th_Shore = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LBA_Pacified" }
+			picture = GFX_idea_LBA_4th_Shore
+			modifier = {
+            weekly_manpower = 600
+			}
+			}
