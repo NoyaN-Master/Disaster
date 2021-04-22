@@ -11,7 +11,7 @@ focus_tree = {
 #starting stuff    
 focus = {
 		id = NGU_policies_of_redbaron
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_red_baron
 		x = 3
 		y = 0
 		cost = 2		
@@ -21,7 +21,7 @@ focus = {
 	}
 focus = {
 		id = NGU_food_for_family
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_bread_family
 		x = 1
 		y = 1
 		cost = 2
@@ -32,7 +32,7 @@ focus = {
 	}
 focus = {
 		id = NGU_promote_class_warfare
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_class_warfare_ngu
 		x = 3
 		y = 1
 		cost = 2
@@ -44,7 +44,7 @@ focus = {
 
 focus = {
 		id = NGU_legacy_of_marx
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_marx_ngu
 		x = 5
 		y = 1
 		cost = 2
@@ -56,7 +56,7 @@ focus = {
 
 focus = {
 		id = NGU_question_of_paramilitaries
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_paramilitary_ngu
 		x = 3
 		y = 2
 		cost = 2
@@ -69,7 +69,7 @@ focus = {
 	}
 focus = {
 		id = NGU_operation_rote
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_goebbels_rote
 		x = 3
 		y = 3
 		cost = 2
@@ -82,7 +82,7 @@ focus = {
 ####goebbels
 focus = {
 		id = NGU_rise_of_evil
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_rise_evil
 		x = 12
 		y = 0
 		cost = 1
@@ -93,7 +93,7 @@ focus = {
 	} 
 focus = {
 		id = NGU_infiltrate_unions
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_fed_union
 		x = 11
 		y = 1
 		cost = 3
@@ -101,13 +101,13 @@ focus = {
 		completion_reward = {
 		swap_ideas = {
 		remove_idea = NGU_libsocs_problem_1
-		add_ideas = NGU_libsocs_problem_2	
+		add_idea = NGU_libsocs_problem_2	
 		}
 		}
 	}
 focus = {
 		id = NGU_hunt_down_bandits
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_bandit_fuck
 		x = 10
 		y = 2
 		cost = 3
@@ -115,13 +115,13 @@ focus = {
 		completion_reward = {
 		swap_ideas = {
 		remove_idea = NGU_bandit_army
-		add_ideas = NGU_bandit_army_2	
+		add_idea = NGU_bandit_army_2	
 		}
 		}
 	}    
 focus = {
 		id = NGU_start_centralization
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_centralize
 		x = 13
 		y = 1
 		cost = 3
@@ -130,13 +130,13 @@ focus = {
 		completion_reward = {
 		swap_ideas = {
 		remove_idea = NGU_libsocs_problem_2
-		add_ideas = NGU_libsocs_problem_3
+		add_idea = NGU_libsocs_problem_3
 		}
 		}
 	}
 focus = {
 		id = NGU_choose_NAD
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_NAD
 		x = 14
 		y = 2
 		cost = 3
@@ -145,13 +145,13 @@ focus = {
 		completion_reward = {
 		swap_ideas = {
 		remove_idea = NGU_bandit_army_2
-		add_ideas = NGU_NAD	
+		add_idea = NGU_NAD	
 		}
 		}
 	} 
 focus = {
 		id = NGU_disband_parties
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_arbeiter
 		x = 12
 		y = 2
 		cost = 3
@@ -163,7 +163,7 @@ focus = {
 	} 
 focus = {
 		id = NGU_national_socialism
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_goebbels
 		x = 12
 		y = 3
 		cost = 3
@@ -190,7 +190,7 @@ focus = {
 	}
 focus = {
 		id = NGU_nationalist_economy
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_IZM_our_great_homeland
 		x = 14
 		y = 4
 		cost = 3
@@ -226,7 +226,7 @@ focus = {
 	}
 focus = {
 		id = NGU_blood_and_soil
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_blutboden
 		x = 13
 		y = 5
 		cost = 3
@@ -238,7 +238,7 @@ focus = {
 	}    
 focus = {
 		id = NGU_unser_kampf
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_unserkampf
 		x = 10
 		y = 4
 		cost = 3
@@ -250,7 +250,7 @@ focus = {
 	}
 focus = {
 		id = NGU_destroy_syndies
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_end_degenerates
 		x = 11
 		y = 5
 		cost = 3
@@ -265,7 +265,7 @@ focus = {
 	}
 focus = {
 		id = NGU_pan_germanism
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_pangerman
 		x = 12
 		y = 6
 		cost = 3
@@ -315,7 +315,7 @@ focus = {
 	}
 focus = {
 		id = NGU_choose_strasser
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_chancellor_strasser
 		x = 11
 		y = 7
 		cost = 3
@@ -329,7 +329,7 @@ focus = {
 	}
 focus = {
 		id = NGU_strasser_banner
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_strasser_first
 		x = 10
 		y = 8
 		cost = 3
@@ -354,7 +354,7 @@ focus = {
 	}
 focus = {
 		id = NGU_strasser_complete_industry
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_iron_towers
 		x = 10
 		y = 9
 		cost = 3
@@ -369,10 +369,7 @@ focus = {
 		x = 12
 		y = 8
 		cost = 3
-        prerequisite = { AND = {
-        focus = NGU_choose_hitler
-        focus = NGU_choose_strasser    
-        } }								
+        prerequisite = { focus = NGU_choose_strasser focus = NGU_choose_hitler }
 		completion_reward = {
 		add_stability = -0.10
 		random_owned_state = {
@@ -405,7 +402,7 @@ focus = {
 	}
 focus = {
 		id = NGU_autohban
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_goebbels_roads
 		x = 12
 		y = 9
 		cost = 5
@@ -445,12 +442,12 @@ focus = {
 	}
 focus = {
 		id = NGU_Expand_Academia
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_goebbels_academy
 		x = 12
 		y = 10
 		cost = 3
         prerequisite = { 
-        focus = NGU_labor_camps    
+        focus = NGU_autohban    
         } 								
 		completion_reward = {
 		add_ideas = NGU_Academia
@@ -458,24 +455,24 @@ focus = {
 	}
 focus = {
 		id = NGU_Deutscher_Arbeiter_Staat
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_goebbels_final
 		x = 12
 		y = 11
 		cost = 3
         prerequisite = { 
-        focus = NGU_labor_camps
-        AND = {
-        NGU_strasser_welfare
-        NGU_hitler_eastern_influences    
-        }    
-        } 								
+        focus = NGU_strasser_welfare
+        focus = NGU_hitler_eastern_influences    
+        }
+prerequisite = { 
+        focus = NGU_Expand_Academia
+        }     										
 		completion_reward = {
 		
 		}
 	}                    
 focus = {
 		id = NGU_strasser_welfare
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_strasser_labor
 		x = 10
 		y = 10
 		cost = 3
@@ -494,7 +491,7 @@ focus = {
 	}             
 focus = {
 		id = NGU_choose_hitler
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_hitler_chancellor
 		x = 13
 		y = 7
 		cost = 3
@@ -508,7 +505,7 @@ focus = {
 	}
 focus = {
 		id = NGU_hitler_move_right
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_hitler_first
 		x = 14
 		y = 8
 		cost = 3
@@ -533,7 +530,7 @@ focus = {
 	}
 focus = {
 		id = NGU_hitler_total_war
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_fund_nad
 		x = 14
 		y = 9
 		cost = 3
@@ -547,7 +544,7 @@ focus = {
 	}
 focus = {
 		id = NGU_hitler_eastern_influences
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_hitler_conan
 		x = 14
 		y = 10
 		cost = 3
@@ -558,7 +555,7 @@ focus = {
 	}                     
  focus = {
 		id = NGU_militarism
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_militarism
 		x = 10
 		y = 6
 		cost = 3
@@ -572,7 +569,7 @@ focus = {
 	}       
 focus = {
 		id = NGU_control_the_media
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_propaganad
 		x = 12
 		y = 4
 		cost = 3
@@ -583,7 +580,7 @@ focus = {
 	}
 focus = {
 		id = NGU_denounce_jewry
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_hate_jews
 		x = 14
 		y = 6
 		cost = 3
