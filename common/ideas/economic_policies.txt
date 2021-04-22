@@ -8,9 +8,9 @@ ideas = {
 			cancel_if_invalid = no
 			level = 1
 			modifier = {
-			consumer_goods_factor = -0.1
-			war_support_factor = 0.1
-			trade_opinion_factor = 0.1
+			consumer_goods_factor = 0.02
+			trade_opinion_factor = -0.2	
+			production_speed_buildings_factor = 0.05		
 			}
 		}
 	corporatism = {
@@ -21,9 +21,10 @@ ideas = {
 			cancel_if_invalid = no
 			level = 2
 			modifier = {	
-			consumer_goods_factor = -0.05
-			war_support_factor = 0.05
-			trade_opinion_factor = 0.2
+			consumer_goods_factor = 0.05
+			trade_opinion_factor = 0.1
+			industrial_capacity_factory = 0.05
+			industrial_capacity_dockyard = 0.05
 			}
 		}
 
@@ -35,9 +36,9 @@ ideas = {
 			cancel_if_invalid = no
 			level = 3
 			modifier = {
-			consumer_goods_factor = 0.05
-			war_support_factor = -0.10
-			trade_opinion_factor = 0.5		
+			consumer_goods_factor = -0.02
+			trade_opinion_factor = 0.3		
+			global_building_slots = 1
 			}
 		}
 	interventionism = {
@@ -48,8 +49,9 @@ ideas = {
 			cancel_if_invalid = no
 			level = 3
 			modifier = {
-			war_support_factor = -0.05
-			trade_opinion_factor = 0.3		
+			trade_opinion_factor = 0.1
+			consumer_goods_factor = -0.05	
+			line_change_production_efficiency_factor = 0.03
 			}
 		}
 
