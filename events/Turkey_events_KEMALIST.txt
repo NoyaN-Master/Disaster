@@ -227,6 +227,11 @@ country_event = { #Succesor
 	    traits = {	
 	    }
         }
+		unlock_national_focus = WRF_Ismet_Chosen
+		remove_ideas = {
+		WRF_Ataturk_Reforms_3
+		}
+		add_ideas ={ WRF_Ataturk_Heir_1 }
         hidden_effect = {   
         }
 	}
@@ -261,5 +266,136 @@ country_event = { #Succesor
 			}
         hidden_effect = {   
         }
+	}
+}
+
+country_event = { #Iron Democracy
+	id = tur.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = tur.10.t
+	desc = tur.10.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.10.a
+		add_stability = -0.05
+		set_party_name = { 
+    	ideology = conservative 
+    	long_name = WRF_milli_party_long 
+    	name = WRF_milli_party
+		}
+		set_party_name = { 
+    	ideology = liberal 
+    	long_name = WRF_milli_party_long
+    	name = WRF_milli_party 
+		}		
+		set_party_name = { 
+    	ideology = authoritarian_democrat 
+    	long_name = WRF_ismet_party_long 
+    	name = WRF_ismet_party 
+		}		
+		set_party_name = { 
+    	ideology = autocratic 
+    	long_name = WRF_ismet_party_long 
+    	name = WRF_ismet_party 
+		}		
+		set_party_name = { 
+    	ideology = social_democrat 
+    	long_name = WRF_ismet_party_long 
+    	name = WRF_ismet_party 
+		}				
+        hidden_effect = {   
+        }
+		set_popularities = {
+		conservative = 20
+		liberal = 15
+		authoritarian_democrat = 40
+		social_democrat = 20
+		autocratic = 5
+		}
+	}
+}
+
+country_event = { #Kemalist Authority
+	id = tur.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = tur.11.t
+	desc = tur.11.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.10.a
+		custom_effect_tooltip = WRF_reform_tooltip_kemal
+		add_ideas = WRF_Auth_Outrage
+		swap_ideas = {
+		remove_idea = multi_party_democracy
+		add_idea = one_party_state	
+		}
+		add_stability = 0.10
+		set_party_name = { 
+    	ideology = conservative 
+    	long_name = WRF_ismet_party_long 
+    	name = WRF_ismet_party 
+		}
+		set_party_name = { 
+    	ideology = liberal 
+    	long_name = WRF_ismet_party_long 
+    	name = WRF_ismet_party 
+		}		
+		set_party_name = { 
+    	ideology = authoritarian_democrat 
+    	long_name = WRF_ismet_party_long 
+    	name = WRF_ismet_party  
+		}		
+		set_party_name = { 
+    	ideology = autocratic 
+    	long_name = WRF_ismet_party_long 
+    	name = WRF_ismet_party 
+		}		
+		set_party_name = { 
+    	ideology = social_democrat 
+    	long_name = WRF_ismet_party_long 
+    	name = WRF_ismet_party 
+		}				
+        hidden_effect = {   
+        }
+	}
+}
+
+country_event = { #Iron Democracy
+	id = tur.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = tur.10.t
+	desc = tur.10.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.10.a
+		add_stability = 0.10
+		custom_effect_tooltip = WRF_reform_tooltip
+		set_politics = {
+		ruling_party = social_democrat
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+		}
+        hidden_effect = {   
+        }
+
 	}
 }

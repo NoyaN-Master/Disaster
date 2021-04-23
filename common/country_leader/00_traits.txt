@@ -61,9 +61,15 @@ leader_traits = {
 	man_of_steel = {
 		random = no
 		stability_factor = 0.20
-		stability_weekly = 0.05
+		stability_weekly = 0.005
 		production_speed_buildings_factor = 0.5
 		war_support_factor = 0.30
+	}
+	national_chief = {
+		random = no
+		stability_factor = 0.10
+		stability_weekly = 0.002
+		war_support_factor = 0.10
 	}
 	
 	kemalist_warrior = {

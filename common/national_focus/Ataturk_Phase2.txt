@@ -216,11 +216,624 @@ focus_tree = {
 		}
 		}
 	}
+### succesors
+
+	focus = {
+		id = WRF_Ismet_Chosen
+		icon = GFX_goal_WRF_disaster
+		x = 21
+		y = 7
+		cost = 3
+		available_if_capitulated = yes
+		available = { always = no}
+        prerequisite = { 
+			focus = WRF_The_Catasthrope 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Ismet_Iron_Democracy
+		icon = GFX_goal_WRF_disaster
+		x = 21
+		y = 8
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { 
+			focus = WRF_Ismet_Chosen 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = WRF_Iron_Democracy
+		country_event = { id = tur.10 days = 1 }	
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Ismet_Art_Of_Diplomacy
+		icon = GFX_goal_WRF_disaster
+		x = 27
+		y = 9
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { 
+			focus = WRF_Ismet_Iron_Democracy 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Ismet_Helleno_Turkism
+		icon = GFX_goal_WRF_disaster
+		x = 26
+		y = 10
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { 
+			focus = WRF_Ismet_Art_Of_Diplomacy 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Ismet_Straits_Agreement
+		icon = GFX_goal_WRF_disaster
+		x = 25
+		y = 11
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { 
+			focus = WRF_Ismet_Helleno_Turkism 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Ismet_Western_Thrace
+		icon = GFX_goal_WRF_disaster
+		x = 24
+		y = 12
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { 
+			focus = WRF_Ismet_Straits_Agreement 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Ismet_Cyprus_Congress
+		icon = GFX_goal_WRF_disaster
+		x = 29
+		y = 11
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { 
+			focus = WRF_Ismet_Ties_To_Allies 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Ismet_Join_Allies
+		icon = GFX_goal_WRF_disaster
+		x = 30
+		y = 12
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { 
+			focus = WRF_Ismet_Cyprus_Congress 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Beacon_of_Hope
+		icon = GFX_goal_WRF_disaster
+		x = 27
+		y = 13
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { 
+			focus = WRF_Turkey_Fulfilled 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_The_Islands_Commision
+		icon = GFX_goal_WRF_disaster
+		x = 27
+		y = 11
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { 
+			focus = WRF_Ismet_Ties_To_Allies 
+		}
+		prerequisite = { 
+			focus = WRF_Ismet_Helleno_Turkism 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Turkey_Fulfilled
+		icon = GFX_goal_WRF_disaster
+		x = 27
+		y = 12
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { 
+			focus = WRF_Ismet_Ties_To_Allies 
+		}
+		prerequisite = { 
+			focus = WRF_Ismet_Cyprus_Congress 
+		}
+		prerequisite = { 
+			focus = WRF_Ismet_Straits_Agreement 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Ismet_Ties_To_Allies
+		icon = GFX_goal_WRF_disaster
+		x = 28
+		y = 10
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { 
+			focus = WRF_Ismet_Art_Of_Diplomacy 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
 
 
+	focus = {
+		id = WRF_Ismet_Continue_Reforms
+		icon = GFX_goal_WRF_disaster
+		x = 19
+		y = 9
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { 
+			focus = WRF_Ismet_Iron_Democracy 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = military_government
+		add_idea = multi_party_democracy	
+		}
+		add_political_power = 120
+		add_stability = 0.05
+		hidden_effect = {
+		}
+		}
+	}
 
+	focus = {
+		id = WRF_Ismet_Village_School
+		icon = GFX_goal_WRF_disaster
+		x = 17
+		y = 10
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { 
+			focus = WRF_Ismet_Continue_Reforms 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = WRF_Village_Institute	
+		hidden_effect = {
+		}
+		}
+	}
 
+	focus = {
+		id = WRF_Ismet_Kemalist_Youth
+		icon = GFX_goal_WRF_disaster
+		x = 16
+		y = 11
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { 
+			focus = WRF_Ismet_Village_School 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		has_completed_focus = WRF_Cult_of_Kemal	
+		}
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = WRF_Ataturk_Heir_2
+		add_idea =	WRF_Ataturk_Heir_3
+		}	
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Ismet_Kemalist_Authority
+		icon = GFX_goal_WRF_disaster
+		x = 17
+		y = 12
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { 
+			focus = WRF_Im_Senate 
+		}
+		prerequisite = { 
+			focus = WRF_Ismet_Kemalist_Youth 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
 
+	focus = {
+		id = WRF_Cult_of_Kemal
+		icon = GFX_goal_WRF_disaster
+		x = 19
+		y = 10
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { 
+			focus = WRF_Ismet_Continue_Reforms 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = WRF_Ataturk_Heir_1
+		add_idea =	WRF_Ataturk_Heir_2
+		}
+		add_ideas = WRF_Kemalist_Cult	
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Im_Senate
+		icon = GFX_goal_WRF_disaster
+		x = 18
+		y = 11
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { 
+			focus = WRF_Cult_of_Kemal 
+		}
+		mutually_exclusive = {
+		focus = WRF_Empower_Senate
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+    		ideology = conservative
+    		popularity = -0.1
+			}
+			add_popularity = {
+    		ideology = liberal
+    		popularity = -0.1
+			}
+			add_popularity = {
+    		ideology = social_democrat
+    		popularity = -0.1
+			}
+		swap_ideas = {
+		remove_idea = WRF_Iron_Democracy
+		add_idea =	WRF_Iron_Democracy_Senate
+		}		
+		hidden_effect = {	
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Empower_Senate
+		icon = GFX_goal_WRF_disaster
+		x = 20
+		y = 11
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { 
+			focus = WRF_Cult_of_Kemal 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+    		ideology = conservative
+    		popularity = 0.2
+			}
+			add_popularity = {
+    		ideology = liberal
+    		popularity = 0.2
+			}
+			add_popularity = {
+    		ideology = social_democrat
+    		popularity = 0.2
+			}
+		swap_ideas = {
+		remove_idea = WRF_Iron_Democracy
+		add_idea =	WRF_Iron_Democracy_Empower
+		}	
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Democratic_Kemalism
+		icon = GFX_goal_WRF_disaster
+		x = 21
+		y = 12
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { 
+			focus = WRF_Solidify_Etatism 
+		}
+		prerequisite = { 
+			focus = WRF_Empower_Senate 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Work_TSK
+		icon = GFX_goal_WRF_disaster
+		x = 19
+		y = 12
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = WRF_Empower_Senate 
+			focus = WRF_Im_Senate 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = WRF_Kemalist_Cult
+		add_idea = 	WRF_Kemalist_Cult_Army
+		}
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Opress_Reactionaries
+		icon = GFX_goal_WRF_disaster
+		x = 18
+		y = 13
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_Work_TSK 
+		}
+		prerequisite = {  
+			focus = WRF_Ismet_Kemalist_Authority 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_The_National_Chief
+		icon = GFX_goal_WRF_disaster
+		x = 19
+		y = 14
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_Opress_Reactionaries
+			focus = WRF_Personal_Freedoms  
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_country_leader_trait = national_chief	
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Personal_Freedoms
+		icon = GFX_goal_WRF_disaster
+		x = 20
+		y = 13
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_Work_TSK 
+		}
+		prerequisite = {  
+			focus = WRF_Democratic_Kemalism 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_political_power = -200
+		add_stability = 0.05
+		add_popularity = {
+    	ideology = fascism
+    	popularity = 0.1
+		}
+		add_popularity = {
+    	ideology = conservative
+    	popularity = 0.1
+		}
+		add_popularity = {
+    	ideology = liberal
+    	popularity = 0.1
+		}
+		add_popularity = {
+    	ideology = revolutionary_nationalist
+    	popularity = 0.05
+		}
+		add_popularity = {
+    	ideology = libertarian_socialist
+    	popularity = 0.1
+		}
+		add_popularity = {
+    	ideology = unisocialist
+    	popularity =  0.05
+		}
+		add_popularity = {
+    	ideology = despotic
+    	popularity = 0.1
+		}
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Land_Reform
+		icon = GFX_goal_WRF_disaster
+		x = 21
+		y = 10
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { 
+			focus = WRF_Ismet_Continue_Reforms 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_political_power = 120
+		add_ideas = WRF_Land_Reform
+		hidden_effect = {
+		}
+		}
+	}
+
+	
+	focus = {
+		id = WRF_Solidify_Etatism
+		icon = GFX_goal_WRF_disaster
+		x = 22
+		y = 11
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { 
+			focus = WRF_Land_Reform 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = planned_economy
+		add_idea = 	interventionism
+		}
+		hidden_effect = {
+		}
+		}
+	}
 
 
 
