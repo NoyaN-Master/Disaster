@@ -334,28 +334,34 @@ TUR_unification_category = {
 		}
 
      }
+     }
 
-     WRF_take_smyrna = {
-	    visible = {
-               has_war_with = GRE
-               tag = WRF
-          }
-          cost = 1
-          available = {
-               controls_state = 39
-          }
+      WRF_peace_agreement = {
+	    fire_only_once = yes
+		cost = 0
+        allowed = {
+        tag = WRF
+        }
+        available  = {
+        controls_state = 834
+        }
+        visible = {
+        original_tag = WRF
+        has_war_with = GRE
+        }
+        days_remove = 10  
         complete_effect = {
-            custom_effect_tooltip = WRF_greekwar_agreement
+		hidden_effect = {
+        }
         }
         remove_effect = {
-               country_event = { id = wrf.29 days = 1 } 
+        country_event = { id = wrf.29 days = 1}    
         }
-        ai_will_do = {
+     ai_will_do = {
 			factor = 1000
 		}
 
-
-     }
+}
 }
 
 IZM_milita_category = {

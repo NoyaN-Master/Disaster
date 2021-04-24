@@ -252,7 +252,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_ideas = WRF_Iron_Democracy
+		add_ideas = WRF_Iron_Democracy_idea
 		country_event = { id = tur.10 days = 1 }	
 		hidden_effect = {
 		}
@@ -606,7 +606,7 @@ focus_tree = {
     		popularity = -0.1
 			}
 		swap_ideas = {
-		remove_idea = WRF_Iron_Democracy
+		remove_idea = WRF_Iron_Democracy_idea
 		add_idea =	WRF_Iron_Democracy_Senate
 		}		
 		hidden_effect = {	
@@ -627,6 +627,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		mutually_exclusive = {
+		focus = WRF_Im_Senate
+		}
 		completion_reward = {
 			add_popularity = {
     		ideology = conservative
@@ -641,7 +644,7 @@ focus_tree = {
     		popularity = 0.2
 			}
 		swap_ideas = {
-		remove_idea = WRF_Iron_Democracy
+		remove_idea = WRF_Iron_Democracy_idea
 		add_idea =	WRF_Iron_Democracy_Empower
 		}	
 		hidden_effect = {
