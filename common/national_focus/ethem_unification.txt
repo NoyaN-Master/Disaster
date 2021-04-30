@@ -253,6 +253,238 @@ focus_tree = {
 		}
 		}
 	}
+###real focuses
 
+	focus = {
+		id = IZM_Legacy_Yoruks
+		icon = GFX_goal_IZM_Cult_of_Revolution
+		x = 14
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_Start_The_Revolution}
+		completion_reward = { 
+		add_stability = 0.05
+		add_political_power = 100	  
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = IZM_Abolish_Greed
+		icon = GFX_goal_IZM_Cult_of_Revolution
+		x = 16
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_Start_The_Revolution}
+		completion_reward = { 
+		add_stability = 0.05
+		add_political_power = 100	  
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = IZM_All_For_Nation
+		icon = GFX_goal_IZM_Cult_of_Revolution
+		x = 15
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_Legacy_Yoruks}
+		prerequisite = {focus = IZM_Abolish_Greed}
+		completion_reward = { 
+		add_stability = 0.05
+		add_political_power = 100	  
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = IZM_Shoot_Western_Landlords
+		icon = GFX_goal_IZM_Cult_of_Revolution
+		x = 12
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_All_For_Nation}
+		completion_reward = { 
+		add_stability = 0.05
+		add_political_power = 100	  
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = IZM_The_State_Owns
+		icon = GFX_goal_IZM_Cult_of_Revolution
+		x = 11
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_Shoot_Western_Landlords}
+		completion_reward = { 
+		add_stability = 0.05
+		add_political_power = 100	  
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = IZM_Welfare_For_Turks
+		icon = GFX_goal_IZM_Cult_of_Revolution
+		x = 12
+		y = 9
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_Worker_Dictatorship}
+		prerequisite = {focus = IZM_The_State_Owns}
+		completion_reward = { 
+		add_stability = 0.05
+		add_political_power = 100	  
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = IZM_Nationalist_Sports
+		icon = GFX_goal_IZM_Cult_of_Revolution
+		x = 13
+		y = 10
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_Agriculture_Improvements}
+		prerequisite = {focus = IZM_Welfare_For_Turks}
+		completion_reward = { 
+		add_stability = 0.05
+		add_political_power = 100	  
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = IZM_New_Lira
+		icon = GFX_goal_IZM_Cult_of_Revolution
+		x = 11
+		y = 10
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_Welfare_For_Turks}
+		prerequisite = {focus = IZM_Attack_Banking_System}
+		completion_reward = { 
+		add_stability = 0.05
+		add_political_power = 100	  
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = IZM_Harsh_Industrilization
+		icon = GFX_goal_IZM_Cult_of_Revolution
+		x = 12
+		y = 11
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_New_Lira}
+		prerequisite = {focus = IZM_Nationalist_Sports}
+		completion_reward = { 
+		add_stability = 0.05
+		add_political_power = 100	  
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = IZM_Attack_Banking_System
+		icon = GFX_goal_IZM_Cult_of_Revolution
+		x = 10
+		y = 9
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_The_State_Owns}
+		completion_reward = { 
+		add_stability = 0.05
+		add_political_power = 100	  
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = IZM_Worker_Dictatorship
+		icon = GFX_goal_IZM_Cult_of_Revolution
+		x = 13
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_Shoot_Western_Landlords}
+		completion_reward = { 
+		add_stability = 0.05
+		add_political_power = 100	  
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = IZM_Agriculture_Improvements
+		icon = GFX_goal_IZM_Cult_of_Revolution
+		x = 14
+		y = 9
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_Worker_Dictatorship}
+		completion_reward = { 
+		add_stability = 0.05
+		add_political_power = 100	  
+		hidden_effect = {
+		}
+		}
+	}
 
 }

@@ -220,7 +220,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Ismet_Chosen
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_ismet_start
 		x = 21
 		y = 7
 		cost = 3
@@ -240,7 +240,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Ismet_Iron_Democracy
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_ismet_democracy
 		x = 21
 		y = 8
 		cost = 3
@@ -461,7 +461,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Ismet_Continue_Reforms
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_ismet_opposition
 		x = 19
 		y = 9
 		cost = 3
@@ -486,7 +486,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Ismet_Village_School
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_goebbels_academy
 		x = 17
 		y = 10
 		cost = 3
@@ -506,7 +506,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Ismet_Kemalist_Youth
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_ismet_youth
 		x = 16
 		y = 11
 		cost = 3
@@ -531,7 +531,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WRF_Ismet_Kemalist_Authority
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_kemalist_authority
 		x = 17
 		y = 12
 		cost = 3
@@ -553,14 +553,14 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Cult_of_Kemal
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_ismet_kemalist_youth_shine
 		x = 19
 		y = 10
 		cost = 3
 		available_if_capitulated = yes
         prerequisite = { 
 			focus = WRF_Ismet_Continue_Reforms 
-		}
+		}	
 		ai_will_do = {
 			factor = 1
 		}
@@ -577,7 +577,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Im_Senate
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_ismet_senate
 		x = 18
 		y = 11
 		cost = 3
@@ -616,7 +616,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Empower_Senate
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_ismet_senate_auth
 		x = 20
 		y = 11
 		cost = 3
@@ -654,7 +654,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Democratic_Kemalism
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_democratic_kemalism
 		x = 21
 		y = 12
 		cost = 3
@@ -676,7 +676,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Work_TSK
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_work_tsk
 		x = 19
 		y = 12
 		cost = 3
@@ -700,7 +700,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Opress_Reactionaries
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_PLN_deal_with_socialist_terrorists
 		x = 18
 		y = 13
 		cost = 3
@@ -722,7 +722,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_The_National_Chief
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_national_chief
 		x = 19
 		y = 14
 		cost = 3
@@ -743,7 +743,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Personal_Freedoms
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_freedoms
 		x = 20
 		y = 13
 		cost = 3
@@ -795,7 +795,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Land_Reform
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_AUT_maintain_agrarianism
 		x = 21
 		y = 10
 		cost = 3
@@ -817,7 +817,7 @@ focus_tree = {
 	
 	focus = {
 		id = WRF_Solidify_Etatism
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_ismet_etatism
 		x = 22
 		y = 11
 		cost = 3
