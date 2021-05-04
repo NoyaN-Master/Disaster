@@ -194,33 +194,35 @@ ANT_Warlords_Emerging = {
 			}	
 		}		
 ####fuller
-SKL_armor_idea_1 = {
+SKL_untolerative_society = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
 			picture = ANT_Warlords_Emerging
 			modifier = {
-			army_armor_speed_factor	= 0.05
+			army_morale_factor = 0.10
+			stability_factor = -0.10
+			war_support_factor = 0.1
 			}
 		}
-SKL_armor_idea_2 = {
+SKL_black_army = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
 			picture = ANT_Warlords_Emerging
 			modifier = {
-			army_morale_factor = 0.05		
-			army_armor_attack_factor = 0.05
-			fuel_gain_factor = 0.15
-			production_factory_max_efficiency_factor = 0.2	
-			}
-		}					
-SKL_jannies = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
-			picture = ANT_Warlords_Emerging
-			modifier = {
-			army_morale_factor = 0.05		
-			conscription = 0.02
-			recon_factor = 0.02
-			army_infantry_attack_factor = 0.03
+			experience_gain_army = 0.1
+			stability_factor = -0.10
+			war_support_factor = 0.1
+			army_attack_factor = 1.0
+			conscription = -0.04
 			}
 		}
+SKL_guerillas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
+			picture = ANT_Warlords_Emerging
+			modifier = {
+			stability_factor = -0.15
+			conscription = -0.02
+			production_factory_efficiency_gain_factor = -0.2
+			}
+		}				
 #ankara
 ANK_kuvayimilliye = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }

@@ -1,0 +1,326 @@
+focus_tree = {
+	id = fuller_Focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SKL
+		}
+	}
+
+	focus = {
+		id = SKL_The_General_Starts
+		icon = GFX_goal_fuller_start
+		x = 13
+		y = 0
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {			
+		}
+		}
+	}
+
+	focus = {
+		id = SKL_Call_London
+		icon = GFX_goal_fuller_london
+		x = 13
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus =  SKL_The_General_Starts 
+		}
+		completion_reward = {
+		country_event = { id = fuller.1 days = 1}
+		hidden_effect = {			
+		}
+		}
+	}
+
+	focus = {
+		id = SKL_Survival_Fittest
+		icon = GFX_goal_fuller_survival
+		x = 12
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus =  SKL_Call_London 
+		}
+		completion_reward = {
+			add_ideas = {
+			SKL_untolerative_society	
+			}
+		hidden_effect = {			
+		}
+		}
+	}
+
+	focus = {
+		id = SKL_Crush_Guerillas
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 13
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus =  SKL_Reactivate_Plant
+		focus =  SKL_Survival_Fittest 
+		}
+		available = { has_idea = SKL_guerillas }
+		completion_reward = {
+		add_manpower = -2000
+		remove_ideas = { SKL_guerillas }
+		hidden_effect = {			
+		}
+		}
+	}
+
+	focus = {
+		id = SKL_Reactivate_Plant
+		icon = GFX_goal_fuller_2
+		x = 14
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus =  SKL_Call_London 
+		}
+		completion_reward = {
+			random_owned_state = {
+			add_building_construction = {
+    		type = arms_factory
+    		level = 3
+   		 	instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+    		type = infrastructure
+    		level = 2
+   		 	instant_build = yes
+			}
+			}
+		hidden_effect = {			
+		}
+		}
+	}
+
+	focus = {
+		id = SKL_The_Iron_Antichrist
+		icon = GFX_goal_fuller_antichrist
+		x = 15
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus =  SKL_Reactivate_Plant 
+		}
+		completion_reward = {
+		create_unit = {
+    	division = "name = \"The Iron Antichrist\" division_template = \"Tank Brigades\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+    	owner = GER
+		}	
+		hidden_effect = {			
+		}
+		}
+	}
+	focus = {
+		id = SKL_Armies_Banners
+		icon = GFX_goal_fuller_blackarmy
+		x = 11
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus =  SKL_Survival_Fittest 
+		}
+		completion_reward = {
+			add_ideas = {
+			SKL_black_army	
+			}
+		hidden_effect = {			
+		}
+		}
+	}
+
+	focus = {
+		id = SKL_Turkish_Collabrators
+		icon = GFX_goal_fuller_collab
+		x = 12
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus =  SKL_Armies_Banners 
+		}
+		completion_reward = {
+			add_manpower = 30000
+		hidden_effect = {			
+		}
+		}
+	}
+
+	focus = {
+		id = SKL_A_Crusade
+		icon = GFX_goal_fuller_crusade
+		x = 13
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus =  SKL_Turkish_Collabrators 
+		}
+		prerequisite = {
+		focus =  SKL_Raze_Warfare
+		}
+		completion_reward = {
+		declare_war_on = {
+    	target = IZM
+    	type = annex_everything
+		}	
+		declare_war_on = {
+    	target = OTH
+    	type = annex_everything
+		}
+		hidden_effect = {			
+		}
+		}
+	}
+
+	focus = {
+		id = SKL_Inform_Britain
+		icon = GFX_goal_fuller_loyal
+		x = 13
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus =  SKL_A_Crusade
+		}
+		completion_reward = {
+		country_event = { id = fuller.2 days = 1}	
+		hidden_effect = {			
+		}
+		}
+	}
+
+	focus = {
+		id = SKL_Steamroll_Kemalists
+		icon = GFX_goal_fuller_kemal
+		x = 12
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus =  SKL_Inform_Britain
+		}
+		completion_reward = {
+			declare_war_on = {
+    	target = CIB
+    	type = annex_everything
+		}
+		hidden_effect = {			
+		}
+		}
+	}
+
+	focus = {
+		id = SKL_Loyalty_To_London
+		icon = GFX_goal_fuller_end
+		x = 13
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus =  SKL_Steamroll_Enverists
+		}
+		prerequisite = {
+		focus =  SKL_Steamroll_Kemalists
+		}
+		completion_reward = {
+		hidden_effect = {			
+		}
+		}
+	}
+
+	focus = {
+		id = SKL_Steamroll_Enverists
+		icon = GFX_goal_fuller_enver
+		x = 14
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus =  SKL_Inform_Britain
+		}
+		completion_reward = {
+			declare_war_on = {
+    	target = CIB
+    	type = annex_everything
+		}
+		hidden_effect = {			
+		}
+		}
+	}
+
+	focus = {
+		id = SKL_Raze_Warfare
+		icon = GFX_goal_raze_warfare
+		x = 14
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus =  SKL_The_Iron_Antichrist 
+		}
+		completion_reward = {
+		hidden_effect = {			
+		}
+		}
+	}
+}	
