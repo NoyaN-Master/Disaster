@@ -432,4 +432,33 @@ spriteTypes = {
 		name = "GFX_idea_military_government_idea"
 		texturefile = "gfx/interface/ideas/military_government_idea.dds"
 	}
+	####new
+	spriteType = {
+		name = "GFX_idea_post_industrialized_society"
+		texturefile = "gfx/interface/ideas/post_industrialized_society.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_semi_industrial_society"
+		texturefile = "gfx/interface/ideas/semi_industrial_society.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_agrarian_society_idea"
+		texturefile = "gfx/interface/ideas/agrarian_society_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_corporatism_idea"
+		texturefile = "gfx/interface/ideas/corporatism_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_interventionism_idea"
+		texturefile = "gfx/interface/ideas/interventionism_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_planned_economy_idea"
+		texturefile = "gfx/interface/ideas/planned_economy_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_laisez_faire_idea"
+		texturefile = "gfx/interface/ideas/laisez_faire_idea.dds"
+	}
 }	

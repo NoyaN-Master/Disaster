@@ -1,7 +1,7 @@
 ideas = {
 	prosperity = {
 	agrarian_society = {
-			picture = generic_communism_drift_bonus
+			picture = agrarian_society_idea
 			available = { 
 			always = no
 			}
@@ -25,7 +25,7 @@ ideas = {
 			}
 		}
 	semi_industrial_society = {
-			picture = generic_communism_drift_bonus
+			picture = semi_industrial_society
 			available = { 
 			always = no
 			}
@@ -72,7 +72,7 @@ ideas = {
 			}
 		}
 	post_industrialized_society = {
-			picture = generic_communism_drift_bonus
+			picture = post_industrialized_society
 			available = { 
 			always = no
 			}

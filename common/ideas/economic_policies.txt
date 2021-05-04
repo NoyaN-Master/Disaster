@@ -1,7 +1,7 @@
 ideas = {
 	economic_policy = {
 	planned_economy = {
-			picture = generic_communism_drift_bonus
+			picture = planned_economy_idea
 			available = { 
 			always = no
 			}
@@ -14,7 +14,7 @@ ideas = {
 			}
 		}
 	corporatism = {
-			picture = generic_communism_drift_bonus
+			picture = corporatism_idea
 			available = { 
 			always = no
 			}
@@ -29,7 +29,7 @@ ideas = {
 		}
 
 	laisez_faire = {
-			picture = generic_communism_drift_bonus
+			picture = laisez_faire_idea
 			available = { 
 			always = no
 			}
@@ -42,7 +42,7 @@ ideas = {
 			}
 		}
 	interventionism = {
-			picture = generic_communism_drift_bonus
+			picture = interventionism_idea
 			available = { 
 			always = no
 			}
