@@ -7,7 +7,7 @@ bookmarks = {
 		default_country = "AUT"
 		default = yes
 		
-		"ENG"={
+		"NGP"={
 			history = "ENG_GATHERING_STORM_DESC"
 			ideology = conservative
 			available = { NOT = { has_dlc = "La Resistance" } }
@@ -56,7 +56,18 @@ bookmarks = {
 
 			}
 		}
-		"AUT"={
+		"CLP"={
+			history = "AUT_GATHERING_STORM_DESC"
+			ideology = esoteric_traditionalist
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		
+		"LBY"={
 			history = "AUT_GATHERING_STORM_DESC"
 			ideology = ultranationalist
 			ideas = {
@@ -111,7 +122,6 @@ bookmarks = {
 			}
 		}
 		"ANT"={
-			minor = yes
 			history = "CRW_GATHERING_STORM_DESC"
 			ideology = conservative
 			ideas = {
