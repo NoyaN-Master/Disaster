@@ -11,9 +11,9 @@ focus_tree = {
     focus = {
 		id = CIB_enver_triumphant
 		icon = GFX_goal_war_soul
-		x = 7
+		x = 8
 		y = 1
-		cost = 2
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = {
 		}
@@ -22,12 +22,267 @@ focus_tree = {
 		}
 		completion_reward = {
 		add_stability = 0.05
-		add_manpower = 50000
-		add_equipment_to_stockpile = {
-    	type = support_equipment_1
-   		amount = 1000
-    	producer = CIB
-		}
+		country_event = { id = enver.22 days = 1}
 		}
 	}
+
+    focus = {
+		id = CIB_Cooperate_Atsiz
+		icon = GFX_goal_war_soul
+		x = 6
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = {
+        focus = CIB_enver_triumphant    
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		CIB_Enver_Script = yes
+		}
+	}
+
+	focus = {
+		id = CIB_Nationalist_Support
+		icon = GFX_goal_war_soul
+		x = 5
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = {
+        focus = CIB_Cooperate_Atsiz    
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		CIB_Enver_Script = yes
+		}
+	}
+
+	focus = {
+		id = CIB_Participatory_Autocracy
+		icon = GFX_goal_war_soul
+		x = 6
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = {
+        focus = CIB_Reform_Ittihat    
+		}
+		prerequisite = {
+        focus = CIB_Nationalist_Support    
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		CIB_Enver_Script = yes
+		}
+	}
+
+	focus = {
+		id = CIB_The_Popular_Pasha
+		icon = GFX_goal_war_soul
+		x = 7
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = {
+        focus = CIB_A_Public_Apology    
+		}
+		prerequisite = {
+        focus = CIB_Participatory_Autocracy    
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		CIB_Enver_Script = yes
+		}
+	}
+
+    focus = {
+		id = CIB_Shrink_Samet
+		icon = GFX_goal_war_soul
+		x = 8
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = {
+        focus = CIB_enver_triumphant    
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		CIB_Enver_Script = yes
+		}
+	}
+
+	focus = {
+		id = CIB_Destroy_Kemalists
+		icon = GFX_goal_war_soul
+		x = 9
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = {
+        focus = CIB_Question_TSK    
+		}
+		prerequisite = {
+        focus = CIB_Shrink_Samet    
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		CIB_Enver_Script = yes
+		}
+	}
+
+	focus = {
+		id = CIB_New_Turkish_Act
+		icon = GFX_goal_war_soul
+		x = 10
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = {
+        focus = CIB_Royalist_Support    
+		}
+		prerequisite = {
+        focus = CIB_Destroy_Kemalists    
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		CIB_Enver_Script = yes
+		}
+	}
+
+	focus = {
+		id = CIB_Reform_Ittihat
+		icon = GFX_goal_war_soul
+		x = 7
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = {
+        focus = CIB_Shrink_Samet    
+		}
+		prerequisite = {
+        focus = CIB_Cooperate_Atsiz    
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		CIB_Enver_Script = yes
+		}
+	}
+
+	focus = {
+		id = CIB_A_Public_Apology
+		icon = GFX_goal_war_soul
+		x = 8
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = {
+        focus = CIB_Destroy_Kemalists    
+		}
+		prerequisite = {
+        focus = CIB_Reform_Ittihat    
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		CIB_Enver_Script = yes
+		}
+	}
+
+	focus = {
+		id = CIB_Talks_With_Others
+		icon = GFX_goal_war_soul
+		x = 9
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = {
+        focus = CIB_New_Turkish_Act    
+		}
+		prerequisite = {
+        focus = CIB_A_Public_Apology    
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		CIB_Enver_Script = yes
+		}
+	}
+
+	focus = {
+		id = CIB_End_Dark_Age
+		icon = GFX_goal_war_soul
+		x = 8
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = {
+        focus = CIB_Talks_With_Others    
+		}
+		prerequisite = {
+        focus = CIB_The_Popular_Pasha    
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		remove_ideas = Enver_unification_idea_12
+		add_ideas = CIB_Back_In_Black
+		}
+	}
+
+    focus = {
+		id = CIB_Question_TSK
+		icon = GFX_goal_war_soul
+		x = 10
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = {
+        focus = CIB_enver_triumphant    
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		CIB_Enver_Script = yes
+		}
+	}
+
+	focus = {
+		id = CIB_Royalist_Support
+		icon = GFX_goal_war_soul
+		x = 11
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = {
+        focus = CIB_Question_TSK    
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		CIB_Enver_Script = yes
+		}
+	}
+    
 }        

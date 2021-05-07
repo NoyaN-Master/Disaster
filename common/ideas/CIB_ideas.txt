@@ -168,6 +168,179 @@ samet_ultnat_liberty = {
 			stability_factor = -0.10
 			}
 		}
+
+Enver_unification_idea_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
+			picture = CIB_OrduVatan
+			modifier = {
+			army_attack_factor = -0.10
+			army_defence_factor = -0.10	
+			stability_weekly = -0.005
+			political_power_gain = -0.10
+			stability_factor = -0.5
+			war_support_factor = -0.3
+			}
+		}		
 }
+
+Enver_unification_idea_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
+			picture = CIB_OrduVatan
+			modifier = {
+			army_attack_factor = -0.08
+			army_defence_factor = -0.08	
+			stability_weekly = -0.004
+			political_power_gain = -0.09
+			stability_factor = -0.42
+			war_support_factor = -0.28
+			}
+		}		
+}
+
+Enver_unification_idea_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
+			picture = CIB_OrduVatan
+			modifier = {
+			army_attack_factor = -0.07
+			army_defence_factor = -0.07	
+			stability_weekly = -0.004
+			political_power_gain = -0.09
+			stability_factor = -0.38
+			war_support_factor = -0.27
+			}
+		}		
+}
+
+Enver_unification_idea_4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
+			picture = CIB_OrduVatan
+			modifier = {
+			army_attack_factor = -0.06
+			army_defence_factor = -0.07	
+			stability_weekly = -0.003
+			political_power_gain = -0.08
+			stability_factor = -0.38
+			war_support_factor = -0.26
+			}
+		}		
+}
+
+Enver_unification_idea_5 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
+			picture = CIB_OrduVatan
+			modifier = {
+			army_attack_factor = -0.06
+			army_defence_factor = -0.05	
+			stability_weekly = -0.002
+			political_power_gain = -0.07
+			stability_factor = -0.35
+			war_support_factor = -0.24
+			}
+		}		
+}
+
+Enver_unification_idea_6 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
+			picture = CIB_OrduVatan
+			modifier = {
+			army_attack_factor = -0.04
+			army_defence_factor = -0.04	
+			stability_weekly = -0.002
+			political_power_gain = -0.05
+			stability_factor = -0.30
+			war_support_factor = -0.20
+			}
+		}		
+}
+
+Enver_unification_idea_7 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
+			picture = CIB_OrduVatan
+			modifier = {
+			army_attack_factor = -0.03
+			army_defence_factor = -0.03	
+			stability_weekly = -0.002
+			political_power_gain = -0.04
+			stability_factor = -0.27
+			war_support_factor = -0.17
+			}
+		}		
+}
+
+Enver_unification_idea_8 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
+			picture = CIB_OrduVatan
+			modifier = {
+			army_attack_factor = -0.03
+			army_defence_factor = -0.02	
+			stability_weekly = -0.002
+			political_power_gain = -0.03
+			stability_factor = -0.24
+			war_support_factor = -0.14
+			}
+		}		
+}
+
+Enver_unification_idea_9 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
+			picture = CIB_OrduVatan
+			modifier = {
+			army_attack_factor = -0.02
+			army_defence_factor = -0.02	
+			stability_weekly = -0.002
+			political_power_gain = -0.02
+			stability_factor = -0.20
+			war_support_factor = -0.10
+			}
+		}		
+}
+
+Enver_unification_idea_10 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
+			picture = CIB_OrduVatan
+			modifier = {
+			stability_weekly = -0.001
+			political_power_gain = -0.01
+			stability_factor = -0.15
+			war_support_factor = -0.07
+			}
+		}		
+}
+
+
+Enver_unification_idea_11 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
+			picture = CIB_OrduVatan
+			modifier = {
+			political_power_gain = -0.01
+			stability_factor = -0.10
+			war_support_factor = -0.07
+			}
+		}		
+}
+
+Enver_unification_idea_12 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
+			picture = CIB_OrduVatan
+			modifier = {
+			stability_factor = -0.05
+			war_support_factor = -0.05
+			}
+		}
+CIB_Back_In_Black = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
+			picture = CIB_OrduVatan
+			modifier = {
+			army_attack_factor = 0.05
+			army_defence_factor = 0.05	
+			stability_weekly = 0.005
+			political_power_gain = 0.10
+			stability_factor = 0.25
+			war_support_factor = 0.15
+			}
+		}		
+}				
+}
+
 
 }
