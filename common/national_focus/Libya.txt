@@ -23,3 +23,234 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = lba_infastructure
+		icon = GFX_goal_Mussolini_begin
+		x = 10
+		y = 2
+		cost = 3
+		prerequisite = { focus = lba_mussolini_begin }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+	
+    focus = {
+		id = lba_tripoli_benghazi
+		icon = GFX_goal_Mussolini_begin
+		x = 9
+		y = 3
+		cost = 3
+		prerequisite = { focus = lba_infastructure }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = lba_benghazi_tobruk
+		icon = GFX_goal_Mussolini_begin
+		x = 9
+		y = 4
+		cost = 3
+		prerequisite = { focus = lba_tripoli_benghazi }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = lba_build_civilian
+		icon = GFX_goal_Mussolini_begin
+		x = 11
+		y = 3
+		cost = 3
+		prerequisite = { focus = lba_infastructure }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = lba_build_trains
+		icon = GFX_goal_Mussolini_begin
+		x = 11
+		y = 4
+		cost = 3
+		prerequisite = { focus = lba_build_civilian }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = lba_arch
+		icon = GFX_goal_Mussolini_begin
+		x = 10
+		y = 5
+		cost = 3
+		prerequisite = { focus = lba_build_trains }
+		prerequisite = { focus = lba_benghazi_tobruk }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	
+	focus = {
+		id = lba_fortifications
+		icon = GFX_goal_Mussolini_begin
+		x = 7
+		y = 2
+		cost = 3
+		prerequisite = { focus = lba_mussolini_begin }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = lba_fortifications_2
+		icon = GFX_goal_Mussolini_begin
+		x = 7
+		y = 5
+		cost = 3
+		prerequisite = { focus = lba_fortifications }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = lba_cult_of_personality
+		icon = GFX_goal_Mussolini_begin
+		x = 4
+		y = 2
+		cost = 3
+		prerequisite = { focus = lba_mussolini_begin }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = lba_arab_lictor_youth
+		icon = GFX_goal_Mussolini_begin
+		x = 3
+		y = 3
+		cost = 3
+		prerequisite = { focus = lba_cult_of_personality }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = lba_propaganda
+		icon = GFX_goal_Mussolini_begin
+		x = 3
+		y = 4
+		cost = 3
+		prerequisite = { focus = lba_arab_lictor_youth }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = lba_muslim_lictor
+		icon = GFX_goal_Mussolini_begin
+		x = 5
+		y = 3
+		cost = 3
+		prerequisite = { focus = lba_cult_of_personality }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = lba_libyan_villages
+		icon = GFX_goal_Mussolini_begin
+		x = 5
+		y = 4
+		cost = 3
+		prerequisite = { focus = lba_muslim_lictor }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = lba_cult_of_personality_done
+		icon = GFX_goal_Mussolini_begin
+		x = 4
+		y = 5
+		cost = 3
+		prerequisite = { focus = lba_libyan_villages }
+		prerequisite = { focus = lba_propaganda }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = lba_visit
+		icon = GFX_goal_Mussolini_begin
+		x = 7
+		y = 6
+		cost = 3
+		prerequisite = { focus = lba_cult_of_personality_done }
+		prerequisite = { focus = lba_fortifications_2 }
+		prerequisite = { focus = lba_arch }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+}
+	
