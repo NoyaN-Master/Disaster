@@ -1,0 +1,33 @@
+focus_tree = {
+	id = enver2_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+		}
+		}
+		continuous_focus_position = { x = 100 y = 2000 }
+
+    focus = {
+		id = CIB_enver_triumphant
+		icon = GFX_goal_war_soul
+		x = 7
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		add_manpower = 50000
+		add_equipment_to_stockpile = {
+    	type = support_equipment_1
+   		amount = 1000
+    	producer = CIB
+		}
+		}
+	}
+}        
