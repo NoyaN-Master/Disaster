@@ -10,7 +10,7 @@ country_event = { #intro event
 		name = mek.1.a
 		ai_chance = { factor = 1}
 		hidden_effect = {
-		    country_event = { id = mek.2 days = 140 }
+		    country_event = { id = mek.2 days = 5 }
 		}
 	}
 }
@@ -53,7 +53,7 @@ country_event = { #NGU sends ultimatum
 		name = mek.4.a
 		ai_chance = { factor = 1}
 		hidden_effect = {
-		    country_event = { id = mek.5 days = 1 }
+		    country_event = { id = mek.5 days = 3 }
 		}
 	}
 }
@@ -94,6 +94,7 @@ country_event = { #Intervene in war
 		}
 		hidden_effect = {
 		    PLN = { country_event = { id = mek.7 days = 2 }}
+			FRE = { country_event = { id = mek.9 days = 2 }}
 		}
 	}
 }
@@ -117,19 +118,38 @@ country_event = { #prussian response
 	desc = mek.8.d
 	fire_only_once = yes
 	is_triggered_only = yes		
-	option = { # do something about it
-		name = mek.8.a
-		ai_chance = { factor = 1}
-		declare_war_on = {
-        target = PLN
-        type = annex_everything
-        }  
-	}
 	option = { # deal with them later
 		name = mek.8.a
 		ai_chance = { factor = 1}
 	PLN  = { transfer_state = 67
 	transfer_state = 5
+	}
+	}
+}
+country_event = { #france occupies east rhineland
+	id = mek.9
+	title = mek.9.t
+	desc = mek.9.d
+	fire_only_once = yes
+	is_triggered_only = yes		
+	option = {
+		name = mek.9.a
+		ai_chance = { factor = 1}
+		hidden_effect = {
+		    RHN = { country_event = { id = mek.10 days = 1 }}
+		}
+	}
+}
+country_event = { #NGU response
+	id = mek.10
+	title = mek.10.t
+	desc = mek.10.d
+	fire_only_once = yes
+	is_triggered_only = yes		
+	option = { # deal with them later
+		name = mek.10.a
+		ai_chance = { factor = 1}
+	RHN  = { transfer_state = 825
 	}
 	}
 }

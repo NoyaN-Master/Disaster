@@ -1,9 +1,0 @@
-on_actions = {
-    on_startup = {
-        effect = {
-            MEK = { 
-                country_event = { id = mek.1 }
-            }
-        }
-    }
-}

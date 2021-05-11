@@ -2418,11 +2418,11 @@ focus_tree = {
 		cost = 3		
 		available = {
 					OR = {
-			has_country_flag = PRE_junker_victory
-			has_country_flag = PRE_liberal_victory	
-			has_country_flag = PRE_dnvp_victory	
-			has_country_flag = PRE_nazi_victory	
-			has_country_flag = PRE_schleicher_victory	
+			has_completed_focus = PRE_republic_lives_on
+			has_completed_focus = PRE_legacy_of_1848
+			has_completed_focus = PRE_restore_monarchy
+			has_completed_focus = PRE_nacht_der_langer_messer
+			has_completed_focus = PRE_social_role_army
 			}
 		}			
 		completion_reward = {
@@ -2874,10 +2874,32 @@ focus_tree = {
 		}			
 		}
 	}
+############################# foreign policy
 
 
-
-
+	focus = {
+		id = PRE_stir_up_mecklenburg
+		icon = GFX_goal_unknown
+		x = 70
+		y = 0
+		cost = 5	
+		ai_will_do = { factor = 1000 }		
+		available = {
+					OR = {
+			has_completed_focus = PRE_republic_lives_on
+			has_completed_focus = PRE_legacy_of_1848
+			has_completed_focus = PRE_restore_monarchy
+			has_completed_focus = PRE_nacht_der_langer_messer
+			has_completed_focus = PRE_social_role_army
+			}
+		}
+		select_effect = {
+		country_event = { id = mek.1 days = 5 }		
+		}		
+		will_lead_to_war_with = NGU
+		completion_reward = {	
+		}
+	}
 
 
 
