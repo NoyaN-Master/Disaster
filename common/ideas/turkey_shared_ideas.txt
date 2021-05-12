@@ -59,27 +59,127 @@ CLP_no_authority = {
 			war_support_factor = -0.4 
 			}
 		}
-		TUR_roach_problem = {
+CLP_ulema_authority = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
-			picture = TUR_roach_problem
+			picture = TUR_Struggle_Front
 			modifier = {
-			political_power_gain = =1
-			stability_factor = -1
-			research_speed_factor = -1
+			stability_factor = 0.10
+			weekly_stability = -0.005
+			war_support_factor = -0.1
+			political_power_gain = 0.005
+			research_speed_factor = -0.10
 			}
-		}										
+		}												
 CLP_fundementalism_high = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
 			picture = TUR_Struggle_Front
 			modifier = {
 			political_power_gain = 0.05
 			production_factory_max_efficiency_factor = 0.2
-			stability_factor = 0.1
-			weekly_stability = -0.05
-			weekly_war_support = 0.05
+			stability_factor = 0.2
+			weekly_war_support = -0.05
 			research_speed_factor = 0.10
 			}
 		}										
 	}
+CLP_never_fail = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
+			picture = TUR_Struggle_Front
+			modifier = {
+			political_power_gain = 0.004
+			production_factory_max_efficiency_factor = 0.2
+			consumer_goods_factor = -0.15
+			}
+		}										
+CLP_Imperial_Army1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
+			picture = TUR_Struggle_Front
+			modifier = {
+			conscription = 0.01
+			attrition = -0.1
+			army_org = 1
+			}
+		}
+CLP_Imperial_Army2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
+			picture = TUR_Struggle_Front
+			modifier = {
+			conscription = 0.02
+			attrition = -0.1
+			army_org = 1
+			land_reinforce_rate = 0.1
+			}
+		}
+CLP_Fast_Hizir = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
+			picture = TUR_Struggle_Front
+			modifier = {
+			army_speed_factor = 0.15
+			}
+		}				
+CLP_Imperial_Army3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
+			picture = TUR_Struggle_Front
+			modifier = {
+			conscription = 0.02
+			attrition = -0.1
+			army_org = 1
+			land_reinforce_rate = 0.1
+			army_morale_factor = 0.1
+			}
+		}
+CLP_Imperial_Army4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
+			picture = TUR_Struggle_Front
+			modifier = {
+			conscription = 0.03
+			attrition = -0.1
+			army_org = 1
+			land_reinforce_rate = 0.1
+			army_morale_factor = 0.1
+			army_attack_factor = 1.0
+			army_defence_factor = 0.8
+			}
+		}
+CLP_Imperial_Army_Takbir = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
+			picture = TUR_Struggle_Front
+			modifier = {
+			conscription = 0.05
+			attrition = -0.2
+			army_org = 1
+			land_reinforce_rate = 0.1
+			army_morale_factor = 0.15
+			army_attack_factor = 1.0
+			army_defence_factor = 0.8
+			}
+		}																																														
+CLP_national_orders = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
+			picture = TUR_Struggle_Front
+			modifier = {
+			weekly_stability = 0.003
+		}
+		}
+CLP_To_Jannah = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
+			picture = TUR_Struggle_Front
+			modifier = {
+			army_morale_factor = 0.15
+			breakthrough_factor = 0.1
+			no_supply_grace = 24
+			supply_consumption_factor = -0.2
+			army_defence_factor = 0.7
+		}
+		}		
+CLP_challenge_retards = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
+			picture = TUR_Struggle_Front
+			modifier = {
+			conscription = -0.02
+			production_factory_max_efficiency_factor = -0.1
+			stability_factor = -0.15
+		}
+		}			
 	
 	

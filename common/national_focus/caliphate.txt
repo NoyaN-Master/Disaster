@@ -22,8 +22,17 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = ANT_dreams_Broken_tt
-		add_stability = 0.05
+		add_stability = 0.03
+		hidden_effect = {
+        set_variable = {
+	    var = CLP.Ulema_Power
+	    value = 0
+        }
+        set_variable = {
+	    var = CLP.Sultan_Power
+	    value = 0
+        }	
+		}
 		}
 	}
 
@@ -39,6 +48,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		country_event = { id = caliph.2 days = 1}	
 		custom_effect_tooltip = ANT_dreams_Broken_tt
 		add_stability = 0.05
 		}
@@ -56,6 +66,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		country_event = { id = caliph.3 days = 1}	
 		add_stability = 0.05
 		}
 	}
@@ -73,13 +84,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		country_event = { id = caliph.4 days = 1}	
 		add_stability = 0.05
 		}
 	}
 
     focus = {
 		id = CLP_ulama_state
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_CLP_ulema_start
 		x = 19
 		y = 1
 		cost = 1
@@ -88,13 +100,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
 		}
 	}
 
     focus = {
 		id = CLP_new_orders
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_CLP_CLP_new_orders
 		x = 18
 		y = 2
 		cost = 1
@@ -104,13 +115,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		add_stability = 0.07
+		add_political_power = 120
 		}
 	}
 
     focus = {
 		id = CLP_reorganization_of_land
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_CLP_Landreform
 		x = 20
 		y = 2
 		cost = 1
@@ -120,39 +132,47 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		add_political_power = 100
+		add_stability = 0.02
 		}
 	}
 
 	focus = {
 		id = CLP_public_works
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_invest_in_estates_
 		x = 20
 		y = 3
-		cost = 1
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = CLP_reorganization_of_land }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		random_owned_state = {
+		add_building_construction = {
+    	type = industrial_complex	
+    	level = 2
+    	instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 2	
+		}
 		}
 	}
 
 	focus = {
 		id = CLP_embrace_order
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_CLP_embrace_order
 		x = 18
 		y = 3
-		cost = 1
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = CLP_new_orders }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		add_ideas = CLP_national_orders
 		}
 	}
 
@@ -169,7 +189,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		add_stability = -0.10
+		add_political_power = -200
+		add_timed_idea = {
+		idea = CLP_challenge_retards
+		days = 90	
+		}
 		}
 	}
 
@@ -185,13 +210,13 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		add_ideas = CLP_never_fail
 		}
 	}
 
 	focus = {
 		id = CLP_believers_army
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_CLP_believers_army
 		x = 14
 		y = 6
 		cost = 1
@@ -201,13 +226,13 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		army_experience = 30
 		}
 	}
 
 	focus = {
 		id = CLP_asakiri_muhammed
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_CLP_asakiri_muhammed
 		x = 16
 		y = 7
 		cost = 1
@@ -217,13 +242,22 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		add_tech_bonus = {
+   	 	bonus = 1.0
+    	uses = 1
+    	category = artillery
+		}
+		add_tech_bonus = {
+   	 	bonus = 0.5
+    	uses = 1
+    	category = infantry_weapons
+		}
 		}
 	}
 
 	focus = {
 		id = CLP_non-ottoman_doctrine
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_CLP_non-ottoman_doctrine
 		x = 16
 		y = 8
 		cost = 1
@@ -233,13 +267,17 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		add_tech_bonus = {
+   	 	bonus = 1.0
+    	uses = 1
+    	category = land_doctrine
+		}
 		}
 	}
 
 	focus = {
 		id = CLP_manuevar_importancy
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_CLP_manuevar_importancy
 		x = 16
 		y = 9
 		cost = 1
@@ -249,23 +287,32 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		add_ideas = CLP_Fast_Hizir
 		}
 	}
 
 	focus = {
 		id = CLP_konya_airbase
 		icon = GFX_goal_konya_airport
-		x = 16
+		x = 17
 		y = 10
 		cost = 1
 		prerequisite = { focus = CLP_manuevar_importancy }
+		prerequisite = { focus = CLP_arms_deal }
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 		add_stability = 0.05
+		random_owned_state = {	
+		add_building_construction = {
+    	type = air_base 
+    	level = 1
+    	instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 1
+		}
 		}
 	}
 
@@ -282,7 +329,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		add_tech_bonus = {
+   	 	bonus = 1.0
+    	uses = 1
+    	category = land_doctrine
+		}
 		}
 	}
 
@@ -303,24 +354,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CLP_imece_army
-		icon = GFX_goal_adress_parliament
-		x = 18
-		y = 10
-		cost = 1
-		prerequisite = { focus = CLP_arms_deal }
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		add_stability = 0.05
-		}
-	}
-
-	focus = {
 		id = CLP_imperial_training
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_CLP_imperial_training
 		x = 12
 		y = 7
 		cost = 1
@@ -330,14 +365,15 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		add_manpower = 10000
+		add_ideas = CLP_Imperial_Army1
 		}
 	}
 
 	focus = {
-		id = CLP_soldiers_of_allah
-		icon = GFX_goal_adress_parliament
-		x = 12
+		id = CLP_army_prayers
+		icon = GFX_goal_CLP_army_prayers
+		x = 11
 		y = 8
 		cost = 1
 		prerequisite = { focus = CLP_imperial_training }
@@ -345,24 +381,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {has_completed_focus = CLP_martyrs}
 		completion_reward = {
-		add_stability = 0.05
+		swap_ideas = {
+		remove_idea = CLP_Imperial_Army2
+		add_idea =CLP_Imperial_Army3
 		}
-	}
-
-	focus = {
-		id = CLP_army_prayers
-		icon = GFX_goal_adress_parliament
-		x = 11
-		y = 9
-		cost = 1
-		prerequisite = { focus = CLP_soldiers_of_allah }
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		add_stability = 0.05
 		}
 	}
 	
@@ -370,7 +394,7 @@ focus_tree = {
 		id = CLP_just_like_muhammad_ahmad
 		icon = GFX_goal_muhammad_ahmad
 		x = 10
-		y = 10
+		y = 9
 		cost = 1
 		prerequisite = { focus = CLP_army_prayers }
 		available_if_capitulated = yes
@@ -378,7 +402,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		swap_ideas = {
+		remove_idea = CLP_Imperial_Army3
+		add_idea =CLP_Imperial_Army4
+		}
 		}
 	}
 
@@ -386,7 +413,7 @@ focus_tree = {
 		id = CLP_military_sector
 		icon = GFX_goal_halal
 		x = 14
-		y = 10
+		y = 9
 		cost = 1
 		prerequisite = { focus = CLP_martyrs }
 		available_if_capitulated = yes
@@ -394,15 +421,22 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		random_owned_state = {	
+		add_building_construction = {
+    	type = arms_factory
+    	level = 3
+    	instant_build = yes
 		}
-	}
+		add_extra_state_shared_building_slots = 3	
+		}
+		}
+		}
 
 	focus = {
 		id = CLP_takbir
 		icon = GFX_goal_takbir
 		x = 12
-		y = 11
+		y = 10
 		cost = 1
 		prerequisite = { focus = CLP_just_like_muhammad_ahmad }
 		prerequisite = { focus = CLP_military_sector }
@@ -411,30 +445,36 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		swap_ideas = {
+		remove_idea = CLP_Imperial_Army4
+		add_idea =CLP_Imperial_Army_Takbir
+		}
 		}
 	}
 
 	focus = {
 		id = CLP_martyrs
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_CLP_martyrs
 		x = 13
-		y = 9
+		y = 8
 		cost = 1
-		prerequisite = { focus = CLP_soldiers_of_allah }
+		prerequisite = { focus = CLP_imperial_training }
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		swap_ideas = {
+		remove_idea = CLP_Imperial_Army1
+		add_idea =CLP_Imperial_Army2
+		}
 		}
 	}
 
 	focus = {
 		id = CLP_believers_economy
-		icon = GFX_goal_adress_parliament
-		x = 20
+		icon = GFX_goal_CLP_believers_economy
+		x = 24
 		y = 6
 		cost = 1
 		prerequisite = { focus = CLP_allah_wills_progress }
@@ -450,7 +490,7 @@ focus_tree = {
 	focus = {
 		id = CLP_factories_1
 		icon = GFX_goal_lay_groundwork
-		x = 20
+		x = 24
 		y = 7
 		cost = 1
 		prerequisite = { focus = CLP_believers_economy }
@@ -459,14 +499,21 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		random_owned_state = {	
+		add_building_construction = {
+    	type = industrial_complex 
+    	level = 2
+    	instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 2
+		}
 		}
 	}
 
 	focus = {
 		id = CLP_factories_2
 		icon = GFX_goal_first_factory
-		x = 20
+		x = 24
 		y = 8
 		cost = 1
 		prerequisite = { focus = CLP_factories_1 }
@@ -475,14 +522,21 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		random_owned_state = {	
+		add_building_construction = {
+    	type = industrial_complex 
+    	level = 3
+    	instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 2
+		}
 		}
 	}
 
 	focus = {
 		id = CLP_factories_3
-		icon = GFX_goal_minor_manufactory
-		x = 20
+		icon = GFX_goal_embrace_industrial_complex
+		x = 24
 		y = 9
 		cost = 1
 		prerequisite = { focus = CLP_factories_2 }
@@ -491,14 +545,26 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		random_owned_state = {	
+		add_building_construction = {
+    	type = industrial_complex 
+    	level = 1
+    	instant_build = yes
+		}
+		add_building_construction = {
+    	type = arms_factory 
+    	level = 1
+    	instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 2
+		}
 		}
 	}
 
 	focus = {
 		id = CLP_infastructure_1
 		icon = GFX_goal_konya_kayseri
-		x = 22
+		x = 26
 		y = 7
 		cost = 1
 		prerequisite = { focus = CLP_believers_economy }
@@ -507,14 +573,20 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		random_owned_state = {
+		add_building_construction = {
+    	type = infrastructure 
+    	level = 2
+    	instant_build = yes
+		}
+		}
 		}
 	}
 
 	focus = {
 		id = CLP_infastructure_2
 		icon = GFX_goal_kayseri_sivas
-		x = 22
+		x = 26
 		y = 8
 		cost = 1
 		prerequisite = { focus = CLP_infastructure_1 }
@@ -523,14 +595,20 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		random_owned_state = {	
+		add_building_construction = {
+    	type = infrastructure 
+    	level = 2
+    	instant_build = yes
+		}
+		}
 		}
 	}
 
 	focus = {
 		id = CLP_research_1
 		icon = GFX_goal_islamic_science
-		x = 22
+		x = 26
 		y = 9
 		cost = 1
 		prerequisite = { focus = CLP_infastructure_2 }
@@ -539,14 +617,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		add_research_slot = 1
 		}
 	}
 
 	focus = {
 		id = CLP_great_workers
 		icon = GFX_goal_zealous_workers
-		x = 21
+		x = 25
 		y = 10
 		cost = 1
 		prerequisite = { focus = CLP_research_1 }
@@ -556,14 +634,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		add_stability = 0.15
 		}
 	}
 
 	focus = {
 		id = CLP_rehost_baghdad
 		icon = GFX_goal_house_of_wisdom
-		x = 24
+		x = 25
 		y = 11
 		cost = 1
 		prerequisite = { focus = CLP_great_workers }
@@ -572,24 +650,91 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		add_political_power = 300
+		add_stability = 0.20
 		}
 	}
-
-	focus = {
-		id = CLP_a_moral_society
-		icon = GFX_goal_adress_parliament
-		x = 25
-		y = 6
+###anatolian wars
+focus = {
+		id = CLP_to_jihad
+		icon = GFX_goal_CLP_to_jihad
+		x = 21
+		y = 7
 		cost = 1
-		prerequisite = { focus = CLP_allah_wills_progress }
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.05
+		add_stability = 0.15
 		}
 	}
-
+focus = {
+		id = CLP_the_believer_army
+		icon = GFX_goal_CLP_the_believer_army
+		x = 20
+		y = 8
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = CLP_to_jihad}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		#will do when OOB
+		}
+	}
+focus = {
+		id = CLP_United_Faith
+		icon = GFX_goal_CLP_United_Faith
+		x = 22
+		y = 8
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = CLP_to_jihad}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_manpower = 10000
+		add_equipment_to_stockpile = {
+    	type = infantry_equipment
+    	amount = 5000
+    	producer = CLP
+		}
+		}
+	}
+focus = {
+		id = CLP_To_Jannah_WeGo
+		icon = GFX_goal_CLP_To_Jannah_WeGo
+		x = 21
+		y = 9
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = CLP_United_Faith focus = CLP_the_believer_army}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_timed_idea = {
+		idea  = CLP_To_Jannah
+		days = 200
+		}
+		}
+	}
+focus = {
+		id = CLP_Nihad_The_unifier
+		icon = GFX_goal_CLP_Nihad_The_unifier
+		x = 21
+		y = 10
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = CLP_to_jihad}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_country_leader_trait = CLP_unifier
+		}
+	}					
 }

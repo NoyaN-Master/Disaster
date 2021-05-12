@@ -15,7 +15,13 @@ leader_traits = {
 		army_core_attack_factor = 0.1
 		war_support_factor = 0.15
 		stability_factor = 0.1
-	}	
+	}
+
+	CLP_unifier= {
+	    random = no
+		war_support_factor = 0.15
+		stability_factor = 0.1
+	}		
 	AUT_the_nation_personified = {
 	    random = no
 		political_power_factor = 0.08

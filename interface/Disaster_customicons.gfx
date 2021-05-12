@@ -11449,7 +11449,7 @@ SpriteType = {
 	}		
 			
 	SpriteType = {		
-		name = "GFX_goal_minor_manufactory"	
+		name = "GFX_goal_minor_manufactory_shine"	
 		texturefile = "gfx/interface/goals/minor_manufactory.tga"	
 		effectFile = "gfx/FX/buttonstate.lua"	
 		animation = {	
@@ -15726,7 +15726,653 @@ SpriteType = {
 		}	
 		legacy_lazy_load = no	
 			
- }		
+ }
+
+ SpriteType = {		
+		name = "GFX_goal_CLP_Nihad_The_unifier"	
+		texturefile = "gfx/interface/goals/CLP_Nihad_The_unifier.tga"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_CLP_Nihad_The_unifier_shine"	
+		texturefile = "gfx/interface/goals/CLP_Nihad_The_unifier.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_Nihad_The_unifier.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_Nihad_The_unifier.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }
+
+ SpriteType = {		
+		name = "GFX_goal_CLP_To_Jannah_WeGo"	
+		texturefile = "gfx/interface/goals/CLP_To_Jannah_WeGo.tga"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_CLP_To_Jannah_WeGo_shine"	
+		texturefile = "gfx/interface/goals/CLP_To_Jannah_WeGo.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_To_Jannah_WeGo.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_To_Jannah_WeGo.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }
+
+ SpriteType = {		
+		name = "GFX_goal_CLP_the_believer_army"	
+		texturefile = "gfx/interface/goals/CLP_the_believer_army.tga"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_CLP_the_believer_army_shine"	
+		texturefile = "gfx/interface/goals/CLP_the_believer_army.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_the_believer_army.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_the_believer_army.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }
+
+ SpriteType = {		
+		name = "GFX_goal_CLP_United_Faith"	
+		texturefile = "gfx/interface/goals/CLP_United_Faith.tga"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_CLP_United_Faith_shine"	
+		texturefile = "gfx/interface/goals/CLP_United_Faith.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_United_Faith.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_United_Faith.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }
+
+ SpriteType = {		
+		name = "GFX_goal_CLP_to_jihad"	
+		texturefile = "gfx/interface/goals/CLP_to_jihad.tga"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_CLP_to_jihad_shine"	
+		texturefile = "gfx/interface/goals/CLP_to_jihad.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_to_jihad.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_to_jihad.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }
+
+ SpriteType = {		
+		name = "GFX_goal_CLP_believers_economy"	
+		texturefile = "gfx/interface/goals/CLP_believers_economy.tga"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_CLP_believers_economy_shine"	
+		texturefile = "gfx/interface/goals/CLP_believers_economy.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_believers_economy.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_believers_economy.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }
+
+ SpriteType = {		
+		name = "GFX_goal_CLP_non-ottoman_doctrine"	
+		texturefile = "gfx/interface/goals/CLP_non-ottoman_doctrine.tga"	
+	}
+
+ SpriteType = {		
+		name = "GFX_goal_CLP_non-ottoman_doctrine_shine"	
+		texturefile = "gfx/interface/goals/CLP_non-ottoman_doctrine.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_non-ottoman_doctrine.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_non-ottoman_doctrine.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }
+
+	SpriteType = {		
+		name = "GFX_goal_CLP_martyrs"	
+		texturefile = "gfx/interface/goals/CLP_martyrs.tga"	
+	}
+
+ SpriteType = {		
+		name = "GFX_goal_CLP_martyrs_shine"	
+		texturefile = "gfx/interface/goals/CLP_martyrs.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_martyrs.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_martyrs.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }
+
+ SpriteType = {		
+		name = "GFX_goal_CLP_army_prayers"	
+		texturefile = "gfx/interface/goals/CLP_army_prayers.tga"	
+	}
+
+ SpriteType = {		
+		name = "GFX_goal_CLP_army_prayers_shine"	
+		texturefile = "gfx/interface/goals/CLP_army_prayers.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_army_prayers.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_army_prayers.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }
+
+ SpriteType = {		
+		name = "GFX_goal_CLP_imperial_training"	
+		texturefile = "gfx/interface/goals/CLP_imperial_training.tga"	
+	}
+
+ SpriteType = {		
+		name = "GFX_goal_CLP_imperial_training_shine"	
+		texturefile = "gfx/interface/goals/CLP_imperial_training.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_army_prayers.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_army_prayers.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }
+
+ SpriteType = {		
+		name = "GFX_goal_CLP_believers_army"	
+		texturefile = "gfx/interface/goals/CLP_believers_army.tga"	
+	}
+
+ SpriteType = {		
+		name = "GFX_goal_CLP_believers_army_shine"	
+		texturefile = "gfx/interface/goals/CLP_believers_army.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_believers_army.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_believers_army.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }
+
+ SpriteType = {		
+		name = "GFX_goal_CLP_embrace_order"	
+		texturefile = "gfx/interface/goals/CLP_embrace_order.tga"	
+	}
+
+ SpriteType = {		
+		name = "GFX_goal_CLP_embrace_order_shine"	
+		texturefile = "gfx/interface/goals/CLP_embrace_order.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_embrace_order.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_embrace_order.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }
+
+ SpriteType = {		
+		name = "GFX_goal_CLP_ulema_start"	
+		texturefile = "gfx/interface/goals/CLP_ulema_start.tga"	
+	}
+
+ SpriteType = {		
+		name = "GFX_goal_CLP_ulema_start_shine"	
+		texturefile = "gfx/interface/goals/CLP_ulema_start.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_ulema_start.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_ulema_start.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }
+
+ SpriteType = {		
+		name = "GFX_goal_CLP_Landreform"	
+		texturefile = "gfx/interface/goals/CLP_Landreform.tga"	
+	}
+
+ SpriteType = {		
+		name = "GFX_goal_CLP_Landreform_shine"	
+		texturefile = "gfx/interface/goals/CLP_Landreform.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_Landreform.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_Landreform.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }
+
+ SpriteType = {		
+		name = "GFX_goal_CLP_CLP_new_orders"	
+		texturefile = "gfx/interface/goals/CLP_new_orders.tga"	
+	}
+
+ SpriteType = {		
+		name = "GFX_goal_CLP_new_orders_shine"	
+		texturefile = "gfx/interface/goals/CLP_new_orders.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_new_orders.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_new_orders.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }
+
+ SpriteType = {		
+		name = "GFX_goal_CLP_asakiri_muhammed"	
+		texturefile = "gfx/interface/goals/CLP_asakiri_muhammed.tga"	
+	}
+
+ SpriteType = {		
+		name = "GFX_goal_CLP_asakiri_muhammed_shine"	
+		texturefile = "gfx/interface/goals/CLP_asakiri_muhammed.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_asakiri_muhammed.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_asakiri_muhammed.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }
+
+ SpriteType = {		
+		name = "GFX_goal_CLP_manuevar_importancy"	
+		texturefile = "gfx/interface/goals/CLP_manuevar_importancy.tga"	
+	}
+
+ SpriteType = {		
+		name = "GFX_goal_CLP_manuevar_importancy_shine"	
+		texturefile = "gfx/interface/goals/CLP_manuevar_importancy.tga"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_manuevar_importancy.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/CLP_manuevar_importancy.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }										 
  
  }			
  

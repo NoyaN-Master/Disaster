@@ -193,8 +193,7 @@ focus_tree = {
         prerequisite = {focus = IZM_Fate_Of_The_False_Messiah}
         prerequisite = {focus = IZM_Atsiz_Ties}
 		completion_reward = { 
-		add_stability = 0.05
-		add_political_power = 100	  
+		add_ideas = IZM_Turkish_Revolution	  
 		hidden_effect = {
 		}
 		}
@@ -268,7 +267,7 @@ focus_tree = {
         prerequisite = {focus = IZM_Start_The_Revolution}
 		completion_reward = { 
 		add_stability = 0.05
-		add_political_power = 100	  
+		add_manpower = 12000  
 		hidden_effect = {
 		}
 		}
@@ -286,8 +285,8 @@ focus_tree = {
 		}
         prerequisite = {focus = IZM_Start_The_Revolution}
 		completion_reward = { 
-		add_stability = 0.05
-		add_political_power = 100	  
+		add_stability = -0.07
+		add_political_power = -200	  
 		hidden_effect = {
 		}
 		}
@@ -306,8 +305,7 @@ focus_tree = {
         prerequisite = {focus = IZM_Legacy_Yoruks}
 		prerequisite = {focus = IZM_Abolish_Greed}
 		completion_reward = { 
-		add_stability = 0.05
-		add_political_power = 100	  
+		add_ideas = IZM_Nation_Mentality	  
 		hidden_effect = {
 		}
 		}
@@ -318,15 +316,181 @@ focus_tree = {
 		icon = GFX_goal_IZM_Cult_of_Revolution
 		x = 12
 		y = 7
-		cost = 2
+		cost = 3
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
 		}
         prerequisite = {focus = IZM_All_For_Nation}
 		completion_reward = { 
+		add_timed_idea = {
+		idea = IZM_Western_Landlords
+		days = 120	
+		}	  
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = IZM_Formation_Of_Gangs
+		icon = GFX_goal_IZM_Cult_of_Revolution
+		x = 18
+		y = 7
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_All_For_Nation}
+		available = { has_completed_focus = IZM_Harsh_Industrilization }
+		completion_reward = { 
+		add_manpower = 20000	  
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = IZM_Remove_Reactionaries
+		icon = GFX_goal_IZM_Cult_of_Revolution
+		x = 17
+		y = 8
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_Formation_Of_Gangs}
+		completion_reward = { 
+		add_timed_idea = {
+		idea = IZM_Fuck_Reaction
+		days = 90	
+		}	  
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = IZM_Annex_Mosques
+		icon = GFX_goal_IZM_Cult_of_Revolution
+		x = 17
+		y = 9
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_Remove_Reactionaries}
+		completion_reward = {
+		add_political_power = 200	
+		add_stability = -0.05 
+		random_owned_state = {
+		add_building_construction = {
+   		type = infrastructure
+    	level = 2
+    	instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 2
+		}
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = IZM_Accelerate_Progress
+		icon = GFX_goal_IZM_Cult_of_Revolution
+		x = 19
+		y = 8
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_Formation_Of_Gangs}
+		completion_reward = { 
+		swap_ideas = {
+		add_idea = IZM_Nation_Mentality
+		remove_idea = IZM_Nation_Mentality2	
+		}
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = IZM_National_Futurism
+		icon = GFX_goal_IZM_Cult_of_Revolution
+		x = 19
+		y = 9
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_Accelerate_Progress}
+		completion_reward = { 
 		add_stability = 0.05
 		add_political_power = 100	  
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = IZM_Fund_Anatolia
+		icon = GFX_goal_IZM_Cult_of_Revolution
+		x = 18
+		y = 10
+		cost = 6
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_National_Futurism}
+		prerequisite = {focus = IZM_Annex_Mosques}
+		completion_reward = { 
+		add_stability = 0.10
+		add_political_power = -300
+		random_owned_state = {
+		add_building_construction = {
+   		type = infrastructure
+    	level = 2
+    	instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 2
+		}
+		random_owned_state = {
+		add_building_construction = {
+   		type = infrastructure
+    	level = 2
+    	instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 2	
+		}	  
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = IZM_Rebirth_of_Nation
+		icon = GFX_goal_IZM_Cult_of_Revolution
+		x = 18
+		y = 11
+		cost = 4
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_Fund_Anatolia}
+		completion_reward = { 
+		swap_ideas = {
+		remove_idea = IZM_Nation_Mentality2
+		add_idea = IZM_Nation_Mentality3	
+		}	  
 		hidden_effect = {
 		}
 		}
@@ -337,15 +501,29 @@ focus_tree = {
 		icon = GFX_goal_IZM_Cult_of_Revolution
 		x = 11
 		y = 8
-		cost = 2
+		cost = 3
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
 		}
         prerequisite = {focus = IZM_Shoot_Western_Landlords}
 		completion_reward = { 
-		add_stability = 0.05
-		add_political_power = 100	  
+		random_owned_state = {
+		add_building_construction = {
+   		type = arms_factory
+    	level = 2
+    	instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 2	
+		}
+		random_owned_state = {
+		add_building_construction = {
+   		type = infrastructure
+    	level = 2
+    	instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 2	
+		}   
 		hidden_effect = {
 		}
 		}
@@ -356,7 +534,7 @@ focus_tree = {
 		icon = GFX_goal_IZM_Cult_of_Revolution
 		x = 12
 		y = 9
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -364,8 +542,24 @@ focus_tree = {
         prerequisite = {focus = IZM_Worker_Dictatorship}
 		prerequisite = {focus = IZM_The_State_Owns}
 		completion_reward = { 
-		add_stability = 0.05
-		add_political_power = 100	  
+		add_ideas = IZM_Segregation
+		random_owned_state = {
+		add_building_construction = {
+   		type = infrastructure
+    	level = 2
+    	instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 2
+		}
+		random_owned_state = {
+		add_building_construction = {
+   		type = infrastructure
+    	level = 2
+    	instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 2	
+		}   	
+		   	  
 		hidden_effect = {
 		}
 		}
@@ -376,13 +570,52 @@ focus_tree = {
 		icon = GFX_goal_IZM_Cult_of_Revolution
 		x = 13
 		y = 10
-		cost = 2
+		cost = 3
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
 		}
         prerequisite = {focus = IZM_Agriculture_Improvements}
 		prerequisite = {focus = IZM_Welfare_For_Turks}
+		completion_reward = { 
+		add_ideas = IZM_New_Youth	  
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = IZM_Create_Council
+		icon = GFX_goal_IZM_Cult_of_Revolution
+		x = 15
+		y = 12
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {focus = IZM_Harsh_Industrilization}
+		prerequisite = {focus = IZM_Rebirth_of_Nation}
+		completion_reward = { 
+		add_stability = 0.05
+		add_political_power = 100	  
+		hidden_effect = {
+		}
+		}
+	}
+
+
+	focus = {
+		id = IZM_A_Bright_Future
+		icon = GFX_goal_IZM_Cult_of_Revolution
+		x = 15
+		y = 13
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {focus = IZM_Create_Council}
 		completion_reward = { 
 		add_stability = 0.05
 		add_political_power = 100	  
@@ -396,7 +629,7 @@ focus_tree = {
 		icon = GFX_goal_IZM_Cult_of_Revolution
 		x = 11
 		y = 10
-		cost = 2
+		cost = 3
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -404,8 +637,7 @@ focus_tree = {
         prerequisite = {focus = IZM_Welfare_For_Turks}
 		prerequisite = {focus = IZM_Attack_Banking_System}
 		completion_reward = { 
-		add_stability = 0.05
-		add_political_power = 100	  
+		add_political_power = 300
 		hidden_effect = {
 		}
 		}
@@ -416,7 +648,7 @@ focus_tree = {
 		icon = GFX_goal_IZM_Cult_of_Revolution
 		x = 12
 		y = 11
-		cost = 2
+		cost = 5
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -424,8 +656,47 @@ focus_tree = {
         prerequisite = {focus = IZM_New_Lira}
 		prerequisite = {focus = IZM_Nationalist_Sports}
 		completion_reward = { 
-		add_stability = 0.05
-		add_political_power = 100	  
+		remove_idea = IZM_Turkish_Revolution_WorkerDicta	
+		random_owned_state = {
+		add_building_construction = {
+   		type = arms_factory
+    	level = 4
+    	instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 4
+		}
+		random_owned_state = {
+		add_building_construction = {
+   		type = infrastructure
+    	level = 2
+    	instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 2	
+		}
+		random_owned_state = {
+		add_building_construction = {
+   		type = infrastructure
+    	level = 2
+    	instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 2
+		}
+		random_owned_state = {
+		add_building_construction = {
+   		type = infrastructure
+    	level = 2
+    	instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 2
+		}
+		random_owned_state = {
+		add_building_construction = {
+   		type = infrastructure
+    	level = 2
+    	instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 2
+		}            
 		hidden_effect = {
 		}
 		}
@@ -436,7 +707,7 @@ focus_tree = {
 		icon = GFX_goal_IZM_Cult_of_Revolution
 		x = 10
 		y = 9
-		cost = 2
+		cost = 3
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -455,16 +726,34 @@ focus_tree = {
 		icon = GFX_goal_IZM_Cult_of_Revolution
 		x = 13
 		y = 8
-		cost = 2
+		cost = 3
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
 		}
         prerequisite = {focus = IZM_Shoot_Western_Landlords}
 		completion_reward = { 
-		add_stability = 0.05
-		add_political_power = 100	  
+		random_owned_state = {
+		add_building_construction = {
+   		type = industrial_complex
+    	level = 2
+    	instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 2	
+		}
+		random_owned_state = {
+		add_building_construction = {
+   		type = infrastructure
+    	level = 2
+    	instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 2	
+		}   
 		hidden_effect = {
+		}  
+		swap_ideas = {
+		add_idea = IZM_Turkish_Revolution_WorkerDicta
+		remove_idea = IZM_Turkish_Revolution	
 		}
 		}
 	}
@@ -473,7 +762,7 @@ focus_tree = {
 		icon = GFX_goal_IZM_Cult_of_Revolution
 		x = 14
 		y = 9
-		cost = 2
+		cost = 3
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -481,7 +770,7 @@ focus_tree = {
         prerequisite = {focus = IZM_Worker_Dictatorship}
 		completion_reward = { 
 		add_stability = 0.05
-		add_political_power = 100	  
+		add_ideas = IZM_National_Farmers  
 		hidden_effect = {
 		}
 		}
