@@ -17,6 +17,12 @@ add_ideas = 	multi_party_democracy
 add_ideas = 	laisez_faire 
 add_ideas = 	industrialized_society
 
+create_faction = Anti-Communist Russia
+add_to_faction = KRN
+add_to_faction = DCS
+add_to_faction = TRM
+add_to_faction = DTR
+
 set_popularities = {
 	conservative = 20
 	liberal = 30

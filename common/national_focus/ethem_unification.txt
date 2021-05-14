@@ -256,7 +256,7 @@ focus_tree = {
 
 	focus = {
 		id = IZM_Legacy_Yoruks
-		icon = GFX_goal_IZM_Cult_of_Revolution
+		icon = GFX_goal_IZM_legacy_herders
 		x = 14
 		y = 5
 		cost = 2
@@ -275,7 +275,7 @@ focus_tree = {
 
 	focus = {
 		id = IZM_Abolish_Greed
-		icon = GFX_goal_IZM_Cult_of_Revolution
+		icon = GFX_goal_IZM_aga
 		x = 16
 		y = 5
 		cost = 2
@@ -294,7 +294,7 @@ focus_tree = {
 
 	focus = {
 		id = IZM_All_For_Nation
-		icon = GFX_goal_IZM_Cult_of_Revolution
+		icon = GFX_goal_IZM_glory_to_the_ones
 		x = 15
 		y = 6
 		cost = 2
@@ -313,7 +313,7 @@ focus_tree = {
 
 	focus = {
 		id = IZM_Shoot_Western_Landlords
-		icon = GFX_goal_IZM_Cult_of_Revolution
+		icon = GFX_goal_IZM_shootlords
 		x = 12
 		y = 7
 		cost = 3
@@ -334,7 +334,7 @@ focus_tree = {
 
 	focus = {
 		id = IZM_Formation_Of_Gangs
-		icon = GFX_goal_IZM_Cult_of_Revolution
+		icon = GFX_goal_IZM_gangs
 		x = 18
 		y = 7
 		cost = 3
@@ -353,7 +353,7 @@ focus_tree = {
 
 	focus = {
 		id = IZM_Remove_Reactionaries
-		icon = GFX_goal_IZM_Cult_of_Revolution
+		icon = GFX_goal_IZM_opposition
 		x = 17
 		y = 8
 		cost = 3
@@ -374,7 +374,7 @@ focus_tree = {
 
 	focus = {
 		id = IZM_Annex_Mosques
-		icon = GFX_goal_IZM_Cult_of_Revolution
+		icon = GFX_goal_IZM_taxes
 		x = 17
 		y = 9
 		cost = 3
@@ -401,7 +401,7 @@ focus_tree = {
 
 	focus = {
 		id = IZM_Accelerate_Progress
-		icon = GFX_goal_IZM_Cult_of_Revolution
+		icon = GFX_goal_IZM_Accelerate
 		x = 19
 		y = 8
 		cost = 3
@@ -422,7 +422,7 @@ focus_tree = {
 
 	focus = {
 		id = IZM_National_Futurism
-		icon = GFX_goal_IZM_Cult_of_Revolution
+		icon = GFX_goal_IZM_Futurism
 		x = 19
 		y = 9
 		cost = 3
@@ -441,7 +441,7 @@ focus_tree = {
 
 	focus = {
 		id = IZM_Fund_Anatolia
-		icon = GFX_goal_IZM_Cult_of_Revolution
+		icon = GFX_goal_IZM_anatolia
 		x = 18
 		y = 10
 		cost = 6
@@ -477,7 +477,7 @@ focus_tree = {
 
 	focus = {
 		id = IZM_Rebirth_of_Nation
-		icon = GFX_goal_IZM_Cult_of_Revolution
+		icon = GFX_goal_IZM_karaman
 		x = 18
 		y = 11
 		cost = 4
@@ -498,7 +498,7 @@ focus_tree = {
 
 	focus = {
 		id = IZM_The_State_Owns
-		icon = GFX_goal_IZM_Cult_of_Revolution
+		icon = GFX_goal_IZM_our_great_homeland
 		x = 11
 		y = 8
 		cost = 3
@@ -531,7 +531,7 @@ focus_tree = {
 
 	focus = {
 		id = IZM_Welfare_For_Turks
-		icon = GFX_goal_IZM_Cult_of_Revolution
+		icon = GFX_goal_orbay_warriors
 		x = 12
 		y = 9
 		cost = 4
@@ -567,7 +567,7 @@ focus_tree = {
 
 	focus = {
 		id = IZM_Nationalist_Sports
-		icon = GFX_goal_IZM_Cult_of_Revolution
+		icon = GFX_goal_IZM_chad
 		x = 13
 		y = 10
 		cost = 3
@@ -586,7 +586,7 @@ focus_tree = {
 
 	focus = {
 		id = IZM_Create_Council
-		icon = GFX_goal_IZM_Cult_of_Revolution
+		icon = GFX_goal_IZM_survery
 		x = 15
 		y = 12
 		cost = 3
@@ -604,18 +604,18 @@ focus_tree = {
 		}
 	}
 
-
 	focus = {
-		id = IZM_A_Bright_Future
-		icon = GFX_goal_IZM_Cult_of_Revolution
-		x = 15
+		id = IZM_Revisionism_Needed
+		icon = GFX_goal_IZM_Deng
+		x = 16
 		y = 13
 		cost = 3
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
 		}
-        prerequisite = {focus = IZM_Create_Council}
+		prerequisite = {focus = IZM_Create_Council}
+		mutually_exclusive = { focus = IZM_Ethemism_Works}
 		completion_reward = { 
 		add_stability = 0.05
 		add_political_power = 100	  
@@ -623,10 +623,29 @@ focus_tree = {
 		}
 		}
 	}
+focus = {
+		id = IZM_Ethemism_Works
+		icon = GFX_goal_IZM_Ethemism
+		x = 14
+		y = 13
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {focus = IZM_Create_Council}
+		mutually_exclusive = { focus = IZM_Revisionism_Needed}
+		completion_reward = { 
+		add_stability = 0.05
+		add_political_power = 100	  
+		hidden_effect = {
+		}
+		}
+	}	
 
 	focus = {
 		id = IZM_New_Lira
-		icon = GFX_goal_IZM_Cult_of_Revolution
+		icon = GFX_goal_IZM_lira
 		x = 11
 		y = 10
 		cost = 3
@@ -645,7 +664,7 @@ focus_tree = {
 
 	focus = {
 		id = IZM_Harsh_Industrilization
-		icon = GFX_goal_IZM_Cult_of_Revolution
+		icon = GFX_goal_iron_towers
 		x = 12
 		y = 11
 		cost = 5
@@ -704,7 +723,7 @@ focus_tree = {
 
 	focus = {
 		id = IZM_Attack_Banking_System
-		icon = GFX_goal_IZM_Cult_of_Revolution
+		icon = GFX_goal_IZM_banks
 		x = 10
 		y = 9
 		cost = 3
@@ -723,7 +742,7 @@ focus_tree = {
 
 	focus = {
 		id = IZM_Worker_Dictatorship
-		icon = GFX_goal_IZM_Cult_of_Revolution
+		icon = GFX_goal_orbay_worker
 		x = 13
 		y = 8
 		cost = 3
@@ -759,7 +778,7 @@ focus_tree = {
 	}
 	focus = {
 		id = IZM_Agriculture_Improvements
-		icon = GFX_goal_IZM_Cult_of_Revolution
+		icon = GFX_goal_IZM_farmer
 		x = 14
 		y = 9
 		cost = 3

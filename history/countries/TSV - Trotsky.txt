@@ -17,6 +17,11 @@ add_ideas = 	one_party_state
 add_ideas = 	planned_economy
 add_ideas = 	industrialized_society
 
+create_faction = Soviet Union
+add_to_faction = TAT
+add_to_faction = TKH
+add_to_faction = FER
+
 set_popularities = {
 	conservative = 0
 	liberal = 0

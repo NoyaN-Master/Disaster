@@ -169,7 +169,8 @@ TUR_unification_category = {
         has_country_flag = enver_charge
         }  
         complete_effect = {
-        add_ideas = Enver_unification_idea_1    
+        add_ideas = Enver_unification_idea_1 
+        load_focus_tree = enver2_tree   
         hidden_effect = {
         set_cosmetic_tag = CIB_Enver
         news_event = { id = news.12 }    

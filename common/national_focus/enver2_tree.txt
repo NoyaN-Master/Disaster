@@ -10,7 +10,7 @@ focus_tree = {
 
     focus = {
 		id = CIB_enver_triumphant
-		icon = GFX_goal_war_soul
+		icon = GFX_goal_CIB_Enver_start
 		x = 8
 		y = 1
 		cost = 1
@@ -28,7 +28,7 @@ focus_tree = {
 
     focus = {
 		id = CIB_Cooperate_Atsiz
-		icon = GFX_goal_war_soul
+		icon = GFX_goal_CIB_atsiz_coop
 		x = 6
 		y = 2
 		cost = 2
@@ -46,7 +46,7 @@ focus_tree = {
 
 	focus = {
 		id = CIB_Nationalist_Support
-		icon = GFX_goal_war_soul
+		icon = GFX_goal_CIB_loyalty_one
 		x = 5
 		y = 3
 		cost = 2
@@ -64,7 +64,7 @@ focus_tree = {
 
 	focus = {
 		id = CIB_Participatory_Autocracy
-		icon = GFX_goal_war_soul
+		icon = GFX_goal_CIB_Autocracy
 		x = 6
 		y = 4
 		cost = 2
@@ -85,7 +85,7 @@ focus_tree = {
 
 	focus = {
 		id = CIB_The_Popular_Pasha
-		icon = GFX_goal_war_soul
+		icon = GFX_goal_CIB_pasha
 		x = 7
 		y = 5
 		cost = 2
@@ -106,7 +106,7 @@ focus_tree = {
 
     focus = {
 		id = CIB_Shrink_Samet
-		icon = GFX_goal_war_soul
+		icon = GFX_goal_CIB_samet
 		x = 8
 		y = 2
 		cost = 2
@@ -124,7 +124,7 @@ focus_tree = {
 
 	focus = {
 		id = CIB_Destroy_Kemalists
-		icon = GFX_goal_war_soul
+		icon = GFX_goal_CIB_kemal_help
 		x = 9
 		y = 3
 		cost = 2
@@ -145,7 +145,7 @@ focus_tree = {
 
 	focus = {
 		id = CIB_New_Turkish_Act
-		icon = GFX_goal_war_soul
+		icon = GFX_goal_CIB_language
 		x = 10
 		y = 4
 		cost = 2
@@ -166,7 +166,7 @@ focus_tree = {
 
 	focus = {
 		id = CIB_Reform_Ittihat
-		icon = GFX_goal_war_soul
+		icon = GFX_goal_CIB_ittihad
 		x = 7
 		y = 3
 		cost = 2
@@ -187,7 +187,7 @@ focus_tree = {
 
 	focus = {
 		id = CIB_A_Public_Apology
-		icon = GFX_goal_war_soul
+		icon = GFX_goal_CIB_apology
 		x = 8
 		y = 4
 		cost = 2
@@ -208,7 +208,7 @@ focus_tree = {
 
 	focus = {
 		id = CIB_Talks_With_Others
-		icon = GFX_goal_war_soul
+		icon = GFX_goal_CIB_others
 		x = 9
 		y = 5
 		cost = 2
@@ -229,7 +229,7 @@ focus_tree = {
 
 	focus = {
 		id = CIB_End_Dark_Age
-		icon = GFX_goal_war_soul
+		icon = GFX_goal_CIB_darkage
 		x = 8
 		y = 6
 		cost = 2
@@ -251,7 +251,7 @@ focus_tree = {
 
     focus = {
 		id = CIB_Question_TSK
-		icon = GFX_goal_war_soul
+		icon = GFX_goal_CIB_fevzi
 		x = 10
 		y = 2
 		cost = 2
@@ -269,7 +269,7 @@ focus_tree = {
 
 	focus = {
 		id = CIB_Royalist_Support
-		icon = GFX_goal_war_soul
+		icon = GFX_goal_CIB_ottoman
 		x = 11
 		y = 3
 		cost = 2

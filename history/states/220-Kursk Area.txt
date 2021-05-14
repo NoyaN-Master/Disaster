@@ -6,7 +6,7 @@ state={
 	state_category = city
 
 	history={
-		owner = RPG
+		owner = TSV
 		victory_points = {
 			3580 5
 		}
@@ -14,7 +14,7 @@ state={
 			infrastructure = 5
 			air_base = 1
 		}
-		add_core_of = RPG
+		add_core_of = TSV
 	}
 
 	provinces={
