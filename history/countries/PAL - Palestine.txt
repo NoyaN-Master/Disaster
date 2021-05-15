@@ -1,4 +1,4 @@
-capital = 219
+capital = 901
 oob = ""
 
 # Starting tech
@@ -13,14 +13,11 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
-add_ideas = 	one_party_state 
+
+add_ideas = 	military_government 
 add_ideas = 	planned_economy
 add_ideas = 	industrialized_society
 
-create_faction = Soviet_Union
-add_to_faction = TAT
-add_to_faction = TKH
-add_to_faction = FER
 
 set_popularities = {
 	conservative = 0
@@ -38,9 +35,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Leon Trotsky"
-	#desc = "TSV_Trotsky_desc"
-	picture = "TSV_Trotsky.tga"
+	name = "Michel Aflaq"
+	#desc = "SES_Zeljko_Raznatovic_desc"
+	picture = "PAL_Aflaq.tga"
 	expire = "2020.1.1"
 	ideology = authoritarian_socialist_subideology
 	traits = {

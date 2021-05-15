@@ -1,6 +1,8 @@
 capital = 454
 oob = ""
 
+country_event = { id = worldwar.1 days = 120}
+
 # Starting tech
 set_technology = {
 }
@@ -33,9 +35,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Arthur Grenfell Wauchope"
+	name = "Levantine Council"
 	#desc = "LEV_Arthur_desc"
-	picture = "LEV_Arthur.tga"
+	picture = "LEV_Council.tga"
 	expire = "2020.1.1"
 	ideology = authoritarian_democrat_subideology
 	traits = {

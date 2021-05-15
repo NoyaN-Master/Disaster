@@ -21,27 +21,162 @@ ideas = {
 			always = no
 			}
 			visible = {
-			has_government = revolutionary_nationalist
-			tag = WRF 
+			
 			}
 			cancel_if_invalid = no
 			level = 2
 			modifier = {	
 			}
 		}
-	WRF_celal_bayar_hog = {
+	WRF_ismet_inonu_hog = {
 			#picture = generic_communism_drift_bonus
 			available = { 
 			tag = WRF 
 			always = no
 			}
 			visible = {
-			has_government = conservative
-			tag = WRF 
+			
 			}
 			cancel_if_invalid = no
 			level = 3
-			modifier = {	
+			traits = {	
+			}
+		}
+		WRF_ethem_hog = {
+			#picture = generic_communism_drift_bonus
+			available = { 
+			tag = WRF 
+			always = no
+			}
+			visible = {
+			
+			}
+			cancel_if_invalid = no
+			level = 3
+			traits = {	
+			}
+		}
+		WRF_fuller_hog = {
+			#picture = generic_communism_drift_bonus
+			available = { 
+			tag = WRF 
+			always = no
+			}
+			visible = {
+			
+			}
+			cancel_if_invalid = no
+			level = 3
+			traits = {	
+			}
+		}
+		WRF_enver_hog = {
+			#picture = generic_communism_drift_bonus
+			available = { 
+			tag = WRF 
+			always = no
+			}
+			visible = {
+			
+			}
+			cancel_if_invalid = no
+			level = 3
+			traits = {	
+			}
+		}
+		WRF_nazim_hog = {
+			#picture = generic_communism_drift_bonus
+			available = { 
+			tag = WRF 
+			always = no
+			}
+			visible = {
+			
+			}
+			cancel_if_invalid = no
+			level = 3
+			traits = {	
+			}
+		}
+		WRF_ulema_hog = {
+			#picture = generic_communism_drift_bonus
+			available = { 
+			tag = WRF 
+			always = no
+			}
+			visible = {
+			 
+			}
+			cancel_if_invalid = no
+			level = 3
+			traits = {	
+			}
+		}
+		WRF_abdulmecid_hog = {
+			#picture = generic_communism_drift_bonus
+			available = { 
+			tag = WRF 
+			always = no
+			}
+			visible = {
+			 
+			}
+			cancel_if_invalid = no
+			level = 3
+			traits = {	
+			}
+		}
+		WRF_kazim_hog = {
+			#picture = generic_communism_drift_bonus
+			available = { 
+			tag = WRF 
+			always = no
+			}
+			visible = {
+			 
+			}
+			cancel_if_invalid = no
+			level = 3
+			traits = {	
+			}
+		}
+		WRF_fevzi_hog = {
+			#picture = generic_communism_drift_bonus
+			available = { 
+			tag = WRF 
+			always = no
+			}
+			visible = {
+			}
+			cancel_if_invalid = no
+			level = 3
+			traits = {	
+			}
+		}
+		WRF_jack_hog = {
+			#picture = generic_communism_drift_bonus
+			available = { 
+			tag = WRF 
+			always = no
+			}
+			visible = {
+			}
+			cancel_if_invalid = no
+			level = 3
+			traits = {	
+			}
+		}
+		WRF_klg_hog = {
+			#picture = generic_communism_drift_bonus
+			available = { 
+			tag = WRF 
+			always = no
+			}
+			visible = {
+			}
+			cancel_if_invalid = no
+			level = 3
+			traits = {	
 			}
 		}
 	NGU_Goebbels_HoG = {

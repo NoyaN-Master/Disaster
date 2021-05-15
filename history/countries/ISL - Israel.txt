@@ -1,4 +1,4 @@
-capital = 219
+capital = 901
 oob = ""
 
 # Starting tech
@@ -8,41 +8,38 @@ set_technology = {
 set_convoys = 0
 
 set_politics = {
-	ruling_party = authoritarian_socialist
+	ruling_party = revolutionary_nationalist 
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
-add_ideas = 	one_party_state 
+
+add_ideas = 	military_government 
 add_ideas = 	planned_economy
 add_ideas = 	industrialized_society
 
-create_faction = Soviet_Union
-add_to_faction = TAT
-add_to_faction = TKH
-add_to_faction = FER
 
 set_popularities = {
 	conservative = 0
 	liberal = 0
 	social_democrat = 0
 	libertarian_socialist = 0
-	authoritarian_socialist = 100
+	authoritarian_socialist = 0
 	unisocialist = 0
 	authoritarian_democrat = 0
 	autocratic = 0
 	ultranationalist = 0
-	revolutionary_nationalist = 0
+	revolutionary_nationalist = 100
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
 
 create_country_leader = {
-	name = "Leon Trotsky"
-	#desc = "TSV_Trotsky_desc"
-	picture = "TSV_Trotsky.tga"
+	name = "Avrahm Stern"
+	#desc = "SES_Zeljko_Raznatovic_desc"
+	picture = "ISL_Stern.tga"
 	expire = "2020.1.1"
-	ideology = authoritarian_socialist_subideology
+	ideology = revolutionary_nationalist_subideology
 	traits = {
 		#
 	}

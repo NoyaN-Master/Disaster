@@ -1,0 +1,29 @@
+ideas = {
+
+country = {
+ PAL_Duel_Fate = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CRW_Independent_City" }
+			picture = CRW_Independent_City
+			modifier = {
+            war_support_factor = 0.50
+            stability_factor = 0.15
+            attack_bonus_against_cores = 0.15
+            conscription = 0.05
+            army_morale_factor = 0.1
+			}
+		}
+ISL_Duel_Fate = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CRW_Independent_City" }
+			picture = CRW_Independent_City
+			modifier = {
+            war_support_factor = 0.50
+            stability_factor = 0.15
+            attack_bonus_against_cores = 0.15
+            conscription = 0.03
+            army_org_factor = 0.15
+			}
+		}           
+
+}
+
+}

@@ -1,0 +1,108 @@
+division_template = {
+	name = "Lehi Forces"
+	division_names_group = TUR_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+	}
+}
+
+division= {	
+		name = "Shia Lions"
+		location = 1065    # Vienna
+		division_template = "Lehi Forces"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "Jordanian Eagles"
+		location = 1065    # Vienna
+		division_template = "Lehi Forces"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "Jewslayers"
+		location = 1201    # Vienna
+		division_template = "Lehi Forces"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+
+division= {	
+		name = "Liberation Forces"
+		location = 1201    # Vienna
+		division_template = "Lehi Forces"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "Liberation Forces"
+		location = 1201    # Vienna
+		division_template = "Lehi Forces"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "Liberation Forces"
+		location = 4206    # Vienna
+		division_template = "Lehi Forces"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+division= {	
+		name = "Liberation Forces"
+		location = 4206    # Vienna
+		division_template = "Lehi Forces"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "Liberation Forces"
+		location = 4206    # Vienna
+		division_template = "Lehi Forces"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "Liberation Forces"
+		location = 4206    # Vienna
+		division_template = "Lehi Forces"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+division= {	
+		name = "Liberation Forces"
+		location = 1015    # Vienna
+		division_template = "Lehi Forces"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "Liberation Forces"
+		location = 1015    # Vienna
+		division_template = "Lehi Forces"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "Liberation Forces"
+		location = 1015    # Vienna
+		division_template = "Lehi Forces"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}    

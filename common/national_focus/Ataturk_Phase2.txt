@@ -261,7 +261,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Ismet_Art_Of_Diplomacy
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_WRF_diplo
 		x = 27
 		y = 9
 		cost = 3
@@ -273,6 +273,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		add_political_power = 200	
 		hidden_effect = {
 		}
 		}
@@ -280,7 +281,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Ismet_Helleno_Turkism
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_focus_generic_befriend_greece
 		x = 26
 		y = 10
 		cost = 3
@@ -292,14 +293,19 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			diplomatic_relation = {
+    	country = GRE
+    	relation = non_aggression_pact
+    	active = yes
+		}
 		hidden_effect = {
 		}
 		}
 	}
 
 	focus = {
-		id = WRF_Ismet_Straits_Agreement
-		icon = GFX_goal_WRF_disaster
+		id = WRF_Ismet_Western_Thrace
+		icon = GFX_goal_WRF_thrace
 		x = 25
 		y = 11
 		cost = 3
@@ -311,25 +317,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		hidden_effect = {
-		}
-		}
-	}
-
-	focus = {
-		id = WRF_Ismet_Western_Thrace
-		icon = GFX_goal_WRF_disaster
-		x = 24
-		y = 12
-		cost = 3
-		available_if_capitulated = yes
-        prerequisite = { 
-			focus = WRF_Ismet_Straits_Agreement 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
+		country_event = { id = tur.11 days = 1}	
 		hidden_effect = {
 		}
 		}
@@ -337,7 +325,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Ismet_Cyprus_Congress
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_WRF_cyprus
 		x = 29
 		y = 11
 		cost = 3
@@ -349,6 +337,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			country_event = { id = tur.12 days = 1}	
 		hidden_effect = {
 		}
 		}
@@ -356,7 +345,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Ismet_Join_Allies
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_WRF_allies
 		x = 30
 		y = 12
 		cost = 3
@@ -368,47 +357,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		hidden_effect = {
-		}
-		}
-	}
-
-	focus = {
-		id = WRF_Beacon_of_Hope
-		icon = GFX_goal_WRF_disaster
-		x = 27
-		y = 13
-		cost = 3
-		available_if_capitulated = yes
-        prerequisite = { 
-			focus = WRF_Turkey_Fulfilled 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		hidden_effect = {
-		}
-		}
-	}
-
-	focus = {
-		id = WRF_The_Islands_Commision
-		icon = GFX_goal_WRF_disaster
-		x = 27
-		y = 11
-		cost = 3
-		available_if_capitulated = yes
-        prerequisite = { 
-			focus = WRF_Ismet_Ties_To_Allies 
-		}
-		prerequisite = { 
-			focus = WRF_Ismet_Helleno_Turkism 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
+		ENG = { add_to_faction = WRF }
 		hidden_effect = {
 		}
 		}
@@ -416,24 +365,23 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Turkey_Fulfilled
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_WRF_beacon
 		x = 27
 		y = 12
 		cost = 3
 		available_if_capitulated = yes
-        prerequisite = { 
-			focus = WRF_Ismet_Ties_To_Allies 
-		}
 		prerequisite = { 
 			focus = WRF_Ismet_Cyprus_Congress 
 		}
 		prerequisite = { 
-			focus = WRF_Ismet_Straits_Agreement 
+			focus = WRF_Ismet_Western_Thrace 
 		}
 		ai_will_do = {
 			factor = 1
 		}
+		available = { owns_state = 183 owns_state = 184 }
 		completion_reward = {
+			add_ideas = WRF_fulfilled	
 		hidden_effect = {
 		}
 		}
@@ -441,7 +389,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Ismet_Ties_To_Allies
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_focus_focus_chi_british_cooperation
 		x = 28
 		y = 10
 		cost = 3
@@ -453,6 +401,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			diplomatic_relation = {
+    	country = ENG
+    	relation = non_aggression_pact
+    	active = yes
+		}
 		hidden_effect = {
 		}
 		}
@@ -837,22 +790,51 @@ focus_tree = {
 		}
 		}
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#####economics
+focus = {
+		id = WRF_Kemalist_Economics
+		icon = GFX_goal_ismet_etatism
+		x = 24
+		y = 2
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { 
+			focus = w 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = planned_economy
+		add_idea = 	interventionism
+		}
+		hidden_effect = {
+		}
+		}
+	}
+focus = {
+		id = WRF_Infrastructure
+		icon = GFX_goal_ismet_etatism
+		x = 23
+		y = 3
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { 
+			focus = w 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = planned_economy
+		add_idea = 	interventionism
+		}
+		hidden_effect = {
+		}
+		}
+	}
 
 
 

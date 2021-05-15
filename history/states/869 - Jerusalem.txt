@@ -1,7 +1,7 @@
 
 state={
-	id=454
-	name="STATE_454" #Palestine
+	id= 869
+	name="STATE_869" #Palestine
 	manpower = 933142
 	
 	state_category = rural
@@ -10,22 +10,20 @@ state={
 		owner = LEV
 		buildings = {
 			infrastructure = 5
-			industrial_complex = 1
-			air_base = 2
 			4206 = {
 				naval_base = 3
 			}
 		}
 		victory_points = {
-			4088 1 
+			1 25 
 		}
 		victory_points = {
-			4206 1 
+			1086 1 
 		}
 		add_core_of = LEV
 	}
 
 	provinces={
-		1015 4088 4206 11970 
+		1 7176 1086 7107 
 	}
 }
