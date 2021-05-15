@@ -5,6 +5,7 @@ ideas = {
 			available = { 
 			tag = WRF 
 			always = no
+			#done
 			}
 			cancel_if_invalid = no
 			level = 1
@@ -19,9 +20,10 @@ ideas = {
 			available = { 
 			tag = WRF
 			always = no
+			#done
 			}
 			visible = {
-			
+			always = no
 			}
 			cancel_if_invalid = no
 			level = 2
@@ -33,9 +35,10 @@ ideas = {
 			available = { 
 			tag = WRF 
 			always = no
+			#done
 			}
 			visible = {
-			
+			always = no
 			}
 			cancel_if_invalid = no
 			level = 3
@@ -47,9 +50,10 @@ ideas = {
 			available = { 
 			tag = WRF 
 			always = no
+			#done
 			}
 			visible = {
-			
+			always = no
 			}
 			cancel_if_invalid = no
 			level = 3
@@ -61,9 +65,10 @@ ideas = {
 			available = { 
 			tag = WRF 
 			always = no
+			#done
 			}
 			visible = {
-			
+			always = no
 			}
 			cancel_if_invalid = no
 			level = 3
@@ -75,9 +80,10 @@ ideas = {
 			available = { 
 			tag = WRF 
 			always = no
+			#done
 			}
 			visible = {
-			
+			always = no
 			}
 			cancel_if_invalid = no
 			level = 3
@@ -89,9 +95,10 @@ ideas = {
 			available = { 
 			tag = WRF 
 			always = no
+			#done
 			}
 			visible = {
-			
+			always = no
 			}
 			cancel_if_invalid = no
 			level = 3
@@ -105,7 +112,7 @@ ideas = {
 			always = no
 			}
 			visible = {
-			 
+			 always = no
 			}
 			cancel_if_invalid = no
 			level = 3
@@ -119,7 +126,7 @@ ideas = {
 			always = no
 			}
 			visible = {
-			 
+			 always = no
 			}
 			cancel_if_invalid = no
 			level = 3
@@ -133,7 +140,7 @@ ideas = {
 			always = no
 			}
 			visible = {
-			 
+			 always = no
 			}
 			cancel_if_invalid = no
 			level = 3
@@ -147,6 +154,7 @@ ideas = {
 			always = no
 			}
 			visible = {
+			always = no
 			}
 			cancel_if_invalid = no
 			level = 3
@@ -160,6 +168,7 @@ ideas = {
 			always = no
 			}
 			visible = {
+			always = no
 			}
 			cancel_if_invalid = no
 			level = 3
@@ -173,6 +182,7 @@ ideas = {
 			always = no
 			}
 			visible = {
+			always = no
 			}
 			cancel_if_invalid = no
 			level = 3
@@ -190,7 +200,7 @@ ideas = {
 			modifier = {	
 			}
 			visible = {
-			tag = WRF 
+			always = no 
 			}
 		}
 	NGU_Hitler_HoG = {
@@ -204,7 +214,7 @@ ideas = {
 			modifier = {	
 			}
 			visible = {
-			always = no 
+			always = no
 			}
 		}
 	NGU_Strasser_HoG = {
@@ -218,7 +228,7 @@ ideas = {
 			modifier = {	
 			}
 			visible = {
-			always = no  
+			always = no
 			}
 		}			
 }
