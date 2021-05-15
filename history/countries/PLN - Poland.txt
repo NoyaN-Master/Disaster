@@ -1,5 +1,6 @@
 capital = 803
 oob = "PLN_1936"
+set_research_slots = 3
 # Starting tech
 set_technology = {
 	### General ###
@@ -91,7 +92,7 @@ if = {
 	}
 }
 
-set_convoys = 0
+set_convoys = 50
 
 
 set_politics = {

@@ -493,10 +493,10 @@ PRE_martial_law = {
 			picture = martial_law
 			modifier = {
 			unisocialist_drift = -0.05
-			authoritarian_socialist_drift = -0.05
-			libertarian_socialist_drift = -0.05
-			revolutionary_nationalist_drift = -0.05
-			autocratic_drift = -0.05
+			authoritarian_socialist_drift = -0.15
+			libertarian_socialist_drift = -0.15
+			revolutionary_nationalist_drift = -0.15
+			autocratic_drift = -0.15
 			stability_factor = 0.1
 			stability_weekly = 0.02
 			}

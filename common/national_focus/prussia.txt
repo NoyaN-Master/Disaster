@@ -2021,7 +2021,7 @@ focus_tree = {
 		x = -1
 		y = 3
 		relative_position_id = PRE_junker_victory_focus
-		cost = 5		
+		cost = 3		
 		prerequisite = { focus = PRE_strike_at_the_nationalists}
 		
 		completion_reward = {
@@ -2043,7 +2043,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = PRE_junker_victory_focus
-		cost = 5		
+		cost = 3		
 		prerequisite = { focus = PRE_declare_martial_law}
 		
 		completion_reward = {
@@ -2060,7 +2060,7 @@ focus_tree = {
 		x = 1
 		y = 3
 		relative_position_id = PRE_junker_victory_focus
-		cost = 10		
+		cost = 5		
 		prerequisite = { focus = PRE_crush_liberals}
 		
 		completion_reward = {
@@ -2900,7 +2900,30 @@ focus_tree = {
 		completion_reward = {	
 		}
 	}
-
+	focus = {
+		id = PRE_saxony
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 21		
+		prerequisite = { focus = PRE_stir_up_mecklenburg }
+		ai_will_do = { factor = 1000 }		
+		available = {
+		59 = {is_owned_and_controlled_by = PRE }	
+		56 = {is_owned_and_controlled_by = PRE }	
+		57 = {is_owned_and_controlled_by = PRE }	
+		55 = {is_owned_and_controlled_by = PRE }	
+		has_war = no
+		}
+		will_lead_to_war_with = SAX		
+		completion_reward = {
+		declare_war_on = {
+        target = SAX
+        type = annex_everything
+        } 
+		}
+	}
 
 
 

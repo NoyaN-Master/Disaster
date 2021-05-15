@@ -15,7 +15,6 @@ country_event = { #Israel Fitnah
 	option = {
 		name = worldwar.1.a
         PAL = {
-        load_oob = "PAL_palestine_milita"    
         add_state_core = 455
         add_state_core = 816
         add_state_core = 901
@@ -27,9 +26,9 @@ country_event = { #Israel Fitnah
         transfer_state = 816
         transfer_state = 869
         add_ideas = PAL_Duel_Fate
+		load_oob = PAL_palestine_milita   
         }
         ISL = {
-        load_oob = "ISL_israel_milita"
         add_state_core = 454
         add_state_core = 455
         add_state_core = 816
@@ -45,10 +44,12 @@ country_event = { #Israel Fitnah
         type = annex_everything
         }
         add_ideas = ISL_Duel_Fate
+		load_oob = ISL_israel_milita
         }
         SRY = {
         transfer_state = 553
         add_state_core = 553    
         }
     country_event = { id = news.16 }
+}
 }
