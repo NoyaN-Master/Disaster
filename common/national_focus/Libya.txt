@@ -35,6 +35,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		add_ideas = LBA_Highway
 		}
 	}
 	
@@ -50,6 +51,27 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		448 = {
+		add_building_construction = {
+    	type = infrastructure 
+    	level = 2
+    	instant_build = yes
+		}
+		}
+		449 = {
+		add_building_construction = {
+    	type = infrastructure 
+    	level = 2
+    	instant_build = yes
+		}
+		}
+		450 = {
+		add_building_construction = {
+    	type = infrastructure 
+    	level = 2
+    	instant_build = yes
+		}
+		}
 		}
 	}
 	
@@ -65,6 +87,13 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		451 = {
+		add_building_construction = {
+    	type = infrastructure 
+    	level = 2
+    	instant_build = yes
+		}
+		}
 		}
 	}
 	
@@ -80,6 +109,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		448 = {	
+		add_building_construction = {
+    	type = industrial_complex 
+    	level = 2
+    	instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 2
+		}
 		}
 	}
 	
@@ -95,6 +132,27 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		661 = {
+		add_building_construction = {
+    	type = infrastructure 
+    	level = 2
+    	instant_build = yes
+		}
+		}
+		662 = {
+		add_building_construction = {
+    	type = infrastructure 
+    	level = 2
+    	instant_build = yes
+		}
+		}
+		663 = {
+		add_building_construction = {
+    	type = infrastructure 
+    	level = 2
+    	instant_build = yes
+		}
+		}
 		}
 	}
 	
@@ -111,6 +169,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		remove_ideas = LBA_Highway
 		}
 	}
 
@@ -127,6 +186,24 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		add_building_construction = {
+    	type = bunker
+    	level = 3
+    	instant_build = yes
+    	province = 12039
+		}
+		add_building_construction = {
+    	type = bunker
+    	level = 3
+    	instant_build = yes
+    	province = 10067
+		}
+		add_building_construction = {
+    	type = bunker
+    	level = 3
+    	instant_build = yes
+    	province = 7154
+		}
 		}
 	}
 	
@@ -142,6 +219,18 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		add_building_construction = {
+    	type = bunker
+    	level = 3
+    	instant_build = yes
+    	province = 10120
+		}
+		add_building_construction = {
+    	type = bunker
+    	level = 3
+    	instant_build = yes
+    	province = 4060
+		}
 		}
 	}
 	
@@ -172,6 +261,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		add_ideas = LBA_Lictor_Youth
 		}
 	}
 	
@@ -187,6 +277,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		add_ideas = LBA_Propaganda
 		}
 	}
 	
@@ -202,6 +293,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		add_ideas = LBA_Muslim_Lictor
 		}
 	}
 	
@@ -217,6 +309,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		add_ideas = LBA_Towns
 		}
 	}
 	
@@ -233,9 +326,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		}
+		add_ideas = LBA_Alqayid
+		remove_ideas = LBA_Towns
+		remove_ideas = LBA_Muslim_Lictor
+		remove_ideas = LBA_Propaganda
+		remove_ideas = LBA_Lictor_Youth
+		remove_ideas = LBA_Governor_General
+     	}
 	}
-	
 	focus = {
 		id = lba_visit
 		icon = GFX_goal_Mussolini_begin

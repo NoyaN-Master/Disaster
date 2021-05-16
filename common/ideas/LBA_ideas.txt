@@ -25,6 +25,43 @@ LBA_4th_Shore = {
             weekly_manpower = 600
 			}
 			}
+LBA_Governor_General = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LBA_Governor_General" }
+			picture = GFX_idea_LBA_Governor_General
+			modifier = {
+			}
+			}
+LBA_Muslim_Lictor = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LBA_Muslim_Lictor" }
+			picture = GFX_idea_LBA_Muslim_Lictor
+			modifier = {
+			conscription = 0.02
+			}
+			}
+LBA_Lictor_Youth = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LBA_Lictor_Youth" }
+			picture = GFX_idea_LBA_Lictor_Youth
+			modifier = {
+			}
+			}
+LBA_Propaganda = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LBA_Propaganda" }
+			picture = GFX_idea_LBA_Propaganda
+			modifier = {
+			}
+			}
+LBA_Towns = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LBA_Towns" }
+			picture = GFX_idea_LBA_Towns
+			modifier = {
+			}
+			}
+LBA_Highway = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LBA_Highway" }
+			picture = GFX_idea_LBA_Highway
+			modifier = {
+			consumer_goods_factor = 0.2
+			}
+			}
 }
-
 }

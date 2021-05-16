@@ -176,17 +176,41 @@ spriteTypes = {
 		name = "GFX_idea_discontent"
 		texturefile = "gfx/interface/ideas/discontent.tga"
 	}
-		spriteType = {
+	spriteType = {
 		name = "GFX_idea_LBA_Alqayid"
 		texturefile = "gfx/interface/ideas/LBA_Alqayid.tga"
 	}
-		spriteType = {
+	spriteType = {
 		name = "GFX_idea_LBA_Pacified"
 		texturefile = "gfx/interface/ideas/LBA_Pacified.tga"
 	}
-			spriteType = {
+	spriteType = {
 		name = "GFX_idea_LBA_4th_Shore"
 		texturefile = "gfx/interface/ideas/LBA_4th_Shore.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_LBA_Governor_General"
+		texturefile = "gfx/interface/ideas/LBA_Governor_General.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LBA_Muslim_Lictor"
+		texturefile = "gfx/interface/ideas/LBA_Muslim_Lictor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LBA_Lictor_Youth"
+		texturefile = "gfx/interface/ideas/LBA_Lictor_Youth.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LBA_Propaganda"
+		texturefile = "gfx/interface/ideas/LBA_Propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LBA_Towns"
+		texturefile = "gfx/interface/ideas/LBA_Towns.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LBA_Highway"
+		texturefile = "gfx/interface/ideas/LBA_Highway.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_CIB_King_Hill"
