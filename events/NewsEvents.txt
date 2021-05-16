@@ -305,3 +305,20 @@ news_event = { #LEHI V
     }
 
 }
+
+news_event = { #STALIN WAR I
+	id = news.19
+	title = news.19.t
+	desc = news.19.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+    option = {
+		name = news.19.a
+		
+    }
+
+}
