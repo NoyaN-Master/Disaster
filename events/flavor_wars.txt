@@ -50,6 +50,30 @@ country_event = { #Israel Fitnah
         transfer_state = 553
         add_state_core = 553    
         }
-    country_event = { id = news.16 }
+    news_event = { id = news.16 }
+}
+}
+
+country_event = { #Iosef First War
+	id = worldwar.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = worldwar.2.t
+	desc = worldwar.2.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = worldwar.2.a
+        SRF = {
+        declare_war_on = {
+        target = MTR
+        type = annex_everything
+        }    
+        }
+        news_event = { id = news.19 }
 }
 }
