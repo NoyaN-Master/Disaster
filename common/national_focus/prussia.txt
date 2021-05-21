@@ -2898,6 +2898,7 @@ focus_tree = {
 		}		
 		will_lead_to_war_with = NGU
 		completion_reward = {	
+		custom_effect_tooltip = PRE_stir_up_mecklenburg_tooltip
 		}
 	}
 	focus = {
@@ -2906,7 +2907,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = PRE_stir_up_mecklenburg
-		cost = 21		
+		cost = 3		
 		prerequisite = { focus = PRE_stir_up_mecklenburg }
 		ai_will_do = { factor = 1000 }		
 		available = {
