@@ -159,4 +159,170 @@ focus_tree = {
 		}
 		}
 	}
+	##post revolt
+	focus = {
+		id = WRF_Formation_Korps
+		icon = GFX_goal_WRF_Italy
+		x = 12
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Atsiz_War_Turkish }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Dehumanize_Enemy
+		icon = GFX_goal_WRF_Italy
+		x = 13
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Formation_Korps }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_TheCult
+		icon = GFX_goal_WRF_Italy
+		x = 14
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Dehumanize_Enemy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Discipline_Freedom
+		icon = GFX_goal_WRF_Italy
+		x = 13
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Iron_Hearts }
+		prerequisite = { focus = WRF_TheCult }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Iron_Hearts
+		icon = GFX_goal_WRF_Italy
+		x = 12
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Dehumanize_Enemy }
+		prerequisite = { focus = WRF_Sons_Destruction }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Sons_Destruction
+		icon = GFX_goal_WRF_Italy
+		x = 11
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Formation_Korps }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Animal_Doctrine
+		icon = GFX_goal_WRF_Italy
+		x = 10
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Sons_Destruction }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Nightmare_Fuel
+		icon = GFX_goal_WRF_Italy
+		x = 11
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Animal_Doctrine }
+		prerequisite = { focus = WRF_Iron_Hearts }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Sons_Of_Eurasia
+		icon = GFX_goal_WRF_Italy
+		x = 12
+		y = 9
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Discipline_Freedom }
+		prerequisite = { focus = WRF_Nightmare_Fuel }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
 }    
