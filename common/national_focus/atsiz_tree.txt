@@ -325,4 +325,398 @@ focus_tree = {
 		}
 		}
 	}
+
+	focus = {
+		id = WRF_Utilize_Labor
+		icon = GFX_goal_WRF_Italy
+		x = 17
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Atsiz_War_Turkish }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Lessons_Revolt
+		icon = GFX_goal_WRF_Italy
+		x = 21
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Atsiz_War_Turkish }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Caligulan_Admin
+		icon = GFX_goal_WRF_Italy
+		x = 20
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Lessons_Revolt }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Fear_Factory
+		icon = GFX_goal_WRF_Italy
+		x = 21
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Caligulan_Admin }
+		prerequisite = { focus = WRF_Wolfic_Society }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Secret_Service
+		icon = GFX_goal_WRF_Italy
+		x = 22
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Fear_Factory }
+		prerequisite = { focus = WRF_Knights_Black }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Purge_Leftists
+		icon = GFX_goal_WRF_Italy
+		x = 20
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Fear_Factory }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_End_Kemalism
+		icon = GFX_goal_WRF_Italy
+		x = 21
+		y = 9
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Secret_Service }
+		prerequisite = { focus = WRF_Purge_Leftists }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Wolfic_Society
+		icon = GFX_goal_WRF_Italy
+		x = 22
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Lessons_Revolt }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Knights_Black
+		icon = GFX_goal_WRF_Italy
+		x = 23
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Wolfic_Society }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Learn_Fuller
+		icon = GFX_goal_WRF_Italy
+		x = 24
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Knights_Black }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Terror_Raids
+		icon = GFX_goal_WRF_Italy
+		x = 23
+		y = 9
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Learn_Fuller }
+		prerequisite = { focus = WRF_Secret_Service }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Supply_Lines
+		icon = GFX_goal_WRF_Italy
+		x = 16
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Utilize_Labor }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Brutal_Cities
+		icon = GFX_goal_WRF_Italy
+		x = 16
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Supply_Lines }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Automize_Society
+		icon = GFX_goal_WRF_Italy
+		x = 16
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Brutal_Cities }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Force_Industry
+		icon = GFX_goal_WRF_Italy
+		x = 18
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Utilize_Labor }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Iron_Monsters
+		icon = GFX_goal_WRF_Italy
+		x = 18
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Force_Industry }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Buy_Tanks
+		icon = GFX_goal_WRF_Italy
+		x = 18
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Iron_Monsters }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Blueprints_Destruction
+		icon = GFX_goal_WRF_Italy
+		x = 17
+		y = 9
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Buy_Tanks }
+		prerequisite = { focus = WRF_Automize_Society }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	#teaserfocuses
+	focus = {
+		id = WRF_Nazbol_ending
+		icon = GFX_goal_WRF_Italy
+		x = 14
+		y = 10
+		cost = 2
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = WRF_Revisionist_Ending }
+		mutually_exclusive = { focus = WRF_Brown_Ending }
+		mutually_exclusive = { focus = WRF_Tengri_ending }
+        prerequisite = { focus = WRF_Blueprints_Destruction focus = WRF_End_Kemalism focus = WRF_Terror_Raids focus = WRF_Sons_Of_Eurasia }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Tengri_ending
+		icon = GFX_goal_WRF_Italy
+		x = 16
+		y = 10
+		cost = 2
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = WRF_Nazbol_ending }
+		mutually_exclusive = { focus = WRF_Brown_Ending }
+		mutually_exclusive = { focus = WRF_Revisionist_Ending }
+        prerequisite = { focus = WRF_Blueprints_Destruction focus = WRF_End_Kemalism focus = WRF_Terror_Raids focus = WRF_Sons_Of_Eurasia }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Brown_Ending
+		icon = GFX_goal_WRF_Italy
+		x = 18
+		y = 10
+		cost = 2
+		available_if_capitulated = yes
+        mutually_exclusive = { focus = WRF_Nazbol_ending }
+		mutually_exclusive = { focus = WRF_Revisionist_Ending }
+		mutually_exclusive = { focus = WRF_Tengri_ending }
+		prerequisite = { focus = WRF_Blueprints_Destruction focus = WRF_End_Kemalism focus = WRF_Terror_Raids focus = WRF_Sons_Of_Eurasia }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Revisionist_Ending
+		icon = GFX_goal_WRF_Italy
+		x = 20
+		y = 10
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Blueprints_Destruction focus = WRF_End_Kemalism focus = WRF_Terror_Raids focus = WRF_Sons_Of_Eurasia }
+		mutually_exclusive = { focus = WRF_Nazbol_ending }
+		mutually_exclusive = { focus = WRF_Brown_Ending }
+		mutually_exclusive = { focus = WRF_Tengri_ending }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
 }    
