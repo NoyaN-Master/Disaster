@@ -1,10 +1,9 @@
-focus_tree = {
+focus_tree = {# I'm sorry, little one.
 	id = galiyev_tree
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = TAT
 		}
 	}
 	continuous_focus_position = { x = 800 y = 10000 }

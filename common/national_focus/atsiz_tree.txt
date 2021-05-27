@@ -719,4 +719,229 @@ focus_tree = {
 		}
 		}
 	}
+
+	focus = {
+		id = WRF_MiddleEast_Plan
+		icon = GFX_goal_WRF_Italy
+		x = 28
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+        available = { always = no }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Conquest_Iraq
+		icon = GFX_goal_WRF_Italy
+		x = 27
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_MiddleEast_Plan}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Kommisariat_System
+		icon = GFX_goal_WRF_Italy
+		x = 28
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_Conquest_Iraq }
+		prerequisite = { focus = WRF_Conquest_Syria }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Conquest_Iran
+		icon = GFX_goal_WRF_Italy
+		x = 30
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = WRF_Kommisariat_System }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Conquer_Palestine
+		icon = GFX_goal_WRF_Italy
+		x = 26
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = WRF_Kommisariat_System }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Conquer_Aryan_Warplan
+		icon = GFX_goal_WRF_Italy
+		x = 28
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = WRF_Conquest_Iran }
+		prerequisite = { focus = WRF_Kommisariat_System focus = WRF_Conquer_Palestine focus = WRF_Conquer_Arabia}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Conquer_Arabia
+		icon = GFX_goal_WRF_Italy
+		x = 28
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = WRF_Kommisariat_System }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Enslave_Dharmics
+		icon = GFX_goal_WRF_Italy
+		x = 27
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = WRF_Conquer_Aryan_Warplan }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Conquer_CentralAsia
+		icon = GFX_goal_WRF_Italy
+		x = 29
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = WRF_Conquer_Aryan_Warplan }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Eurasian_War_Plan
+		icon = GFX_goal_WRF_Italy
+		x = 28
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = WRF_Conquer_CentralAsia }
+		prerequisite = { focus = WRF_Enslave_Dharmics }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Destroy_Nemesis_1
+		icon = GFX_goal_WRF_Italy
+		x = 27
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = WRF_Eurasian_War_Plan }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Destroy_Nemesis_2
+		icon = GFX_goal_WRF_Italy
+		x = 29
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = WRF_Eurasian_War_Plan }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Conquest_Syria
+		icon = GFX_goal_WRF_Italy
+		x = 29
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = WRF_MiddleEast_Plan}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		hidden_effect = {
+		}
+		}
+	}
 }    
