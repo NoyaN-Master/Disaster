@@ -244,11 +244,93 @@ Atsiz_Discontent_Army_Subutais_2 = {
 			modifier = {
 			conscription = 0.02
 			army_leader_start_attack_level = 1 
-			army_attack_factor = 0.3
+			army_attack_factor = 0.05
 			experience_gain_army = 0.5
-
 			}
-		}						
+		}
+Atsiz_KorpsDeath = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			conscription = 0.02
+			army_leader_start_attack_level = 1 
+			army_attack_factor = 0.10
+			experience_gain_army = 0.5
+			}
+		}
+Atsiz_KorpsDeath_Destruction = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			conscription = 0.07
+			army_leader_start_attack_level = 1 
+			army_attack_factor = 0.10
+			experience_gain_army = 0.5
+			}
+		}
+Atsiz_KorpsDeath_Doctrine = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			conscription = 0.07
+			army_leader_start_attack_level = 1 
+			army_attack_factor = 0.15
+			experience_gain_army = 0.3
+			stability_weekly = -0.0005
+			}
+		}
+Atsiz_KorpsDeath_Fuel = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			conscription = 0.07
+			army_leader_start_attack_level = 1 
+			army_attack_factor = 0.20
+			no_supply_grace = 69
+			experience_gain_army = 0.3
+			stability_weekly = -0.0005
+			}
+		}
+Atsiz_KorpsDeath_Eurasia = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			conscription = 0.07
+			army_leader_start_attack_level = 1 
+			army_attack_factor = 0.20
+			no_supply_grace = 69
+			experience_gain_army = 0.3
+			stability_weekly = -0.0010
+			acclimatization_cold_climate_gain_factor = 0.5
+			attrition = 0.1
+			max_planning_factor = 0.1
+			}
+		}									
+Atsiz_Dehumanize = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			army_morale_factor = 0.10
+			army_org_factor = -0.10
+			war_support_factor = 0.10
+			}
+		}
+Atsiz_DaCult = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			stability_factor = -0.15
+			war_support_factor = 0.20
+			}
+		}
+Atsiz_Drugs = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			army_speed_factor = 0.25
+			land_reinforce_rate = -0.1
+			}
+		}															
 Atsiz_Enverist_Influence = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
 			#picture = WRF_Tekalif
@@ -268,6 +350,27 @@ Atsiz_Strong_Milita = {
 			stability_factor = 0.10
 			}
 		}
+		
+}
+Atsiz_Minority_Labor = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			production_speed_buildings_factor = 0.3
+			production_factory_start_efficiency_factor = 0.3
+			consumer_goods_factor = -0.1
+			stability_factor = -0.10
+			}
+		}
+Atsiz_Fast_Society = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			production_speed_buildings_factor = 0.3
+			army_speed_factor = 0.10
+			stability_factor = -0.05
+			}
+		}		
 }
 }		
 			

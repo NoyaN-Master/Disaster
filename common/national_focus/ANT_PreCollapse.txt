@@ -65,7 +65,106 @@ focus_tree = {
 
 		completion_reward = {
 		custom_effect_tooltip = ANT_fight_anarchy_tt
-		add_stability = 0.02
+		}
+	}
+	###Fullernew 
+	focus = {
+		id = ANT_Assume_Full_Control
+		icon = GFX_goal_ANT_fixing
+		x = 10
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_increase_presence }
+		ai_will_do = {
+			factor = 1
+		}
+		available = { has_country_flag = chose_army }
+		completion_reward = {
+		custom_effect_tooltip = ANT_fight_anarchy_tt
+		}
+	}
+	focus = {
+		id = ANT_Operation_Engels
+		icon = GFX_goal_ANT_fixing
+		x = 9
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_Assume_Full_Control }
+		ai_will_do = {
+			factor = 1
+		}
+		available = { has_country_flag = chose_army }
+		completion_reward = {
+		country_event = { id = ant.5 days = 2}
+		}
+	}
+	focus = {
+		id = ANT_Operation_Smith
+		icon = GFX_goal_ANT_fixing
+		x = 11
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_Assume_Full_Control }
+		ai_will_do = {
+			factor = 1
+		}
+		available = { has_country_flag = chose_army }
+		completion_reward = {
+		country_event = { id = ant.35 days = 2}
+		}
+	}
+	focus = {
+		id = ANT_Siege_Capital
+		icon = GFX_goal_ANT_fixing
+		x = 10
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_Operation_Smith }
+		prerequisite = { focus = ANT_Operation_Engels }
+		ai_will_do = {
+			factor = 1
+		}
+		available = { has_country_flag = chose_army }
+		completion_reward = {
+		custom_effect_tooltip = ANT_fight_anarchy_tt
+		}
+	}
+	focus = {
+		id = ANT_Take_One_Out
+		icon = GFX_goal_ANT_fixing
+		x = 10
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_Operation_Smith }
+		prerequisite = { focus = ANT_Operation_Engels }
+		ai_will_do = {
+			factor = 1
+		}
+		available = { has_country_flag = chose_army }
+		completion_reward = {
+		custom_effect_tooltip = ANT_fight_anarchy_tt
+		}
+	}
+	focus = {
+		id = ANT_Sledgehammer
+		icon = GFX_goal_ANT_fixing
+		x = 10
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_Operation_Smith }
+		prerequisite = { focus = ANT_Operation_Engels }
+		ai_will_do = {
+			factor = 1
+		}
+		available = { has_country_flag = chose_army }
+		completion_reward = {
+		custom_effect_tooltip = ANT_fight_anarchy_tt
 		}
 	}
 	
@@ -458,308 +557,6 @@ focus_tree = {
 		subtract_from_variable = { ANT.enver_influence = 10 }
 		subtract_from_variable = { ANT.nazim_influence = 10 } 
 		}
-		}
-	}
-
-	focus = {
-		id = ANT_anti_anarchy
-		icon = GFX_goal_ANT_fixing
-		x = 10
-		y = 5
-		cost = 2
-		available_if_capitulated = yes
-		prerequisite = { focus = ANT_fight_anarchy }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		custom_effect_tooltip = ANT_increase_presence_tt_2
-		custom_effect_tooltip = ant_army_influence_gain_tt
-		add_political_power = 100
-		hidden_effect = {
-		country_event = { id = ant.4 days = 1 }
-		}
-		}
-	}
-
-	focus = {
-		id = ANT_improve_security
-		icon = GFX_goal_ANT_loicense_mate
-		x = 6
-		y = 6
-		cost = 2
-		available_if_capitulated = yes
-		prerequisite = { focus = ANT_anti_anarchy }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		custom_effect_tooltip = ANT_increase_presence_tt_2
-		custom_effect_tooltip = ant_army_influence_gain_tt
-		custom_effect_tooltip = ant_kemal_influence_lose_tt
-		add_political_power = 100
-		hidden_effect = {
-		add_to_variable = { ANT.army_influence = 5 } 
-        subtract_from_variable = { ANT.kemalist_influence = 5 } 	
-		}
-		ANT_anarchy_reducement = yes
-		}
-	}
-
-	focus = {
-		id = ANT_ban_meeting
-		icon = GFX_goal_ANT_SOCDIC
-		x = 10
-		y = 6
-		cost = 2
-		available_if_capitulated = yes
-		prerequisite = { focus = ANT_anti_anarchy }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		custom_effect_tooltip = ANT_increase_presence_tt_2
-		custom_effect_tooltip = ant_army_influence_gain_tt
-		custom_effect_tooltip = ant_nazim_influence_lose_tt
-		add_political_power = 100
-		hidden_effect = {
-		add_to_variable = { ANT.army_influence = 5 } 
-		subtract_from_variable = { ANT.nazim_influence = 5 } 
-		}
-		ANT_failed_reducement = yes
-		}
-	}
-
-	focus = {
-		id = ANT_expand_army
-		icon = GFX_goal_ANT_Expand_Army
-		x = 14
-		y = 6
-		cost = 2
-		available_if_capitulated = yes
-		available = { has_completed_focus = ANT_operation_camel }
-		prerequisite = { focus = ANT_anti_anarchy }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		custom_effect_tooltip = ANT_increase_presence_tt_2
-		custom_effect_tooltip = ant_army_influence_gain_tt
-		custom_effect_tooltip = ant_kemal_influence_lose_tt
-		add_political_power = 100
-		hidden_effect = {
-		add_to_variable = { ANT.army_influence = 5 } 
-		subtract_from_variable = { ANT.kemalist_influence = 5 } 
-		}
-		ANT_anarchy_reducement = yes
-		}
-	}
-
-	focus = {
-		id = ANT_disband_common_army
-		icon = GFX_goal_ANT_mercenaries
-		x = 12
-		y = 7
-		cost = 2
-		available_if_capitulated = yes
-		prerequisite = { focus = ANT_expand_army }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		custom_effect_tooltip = ANT_increase_presence_tt_2
-		custom_effect_tooltip = ant_army_influence_gain_tt
-		custom_effect_tooltip = ant_kemal_influence_lose_tt
-		add_political_power = 100
-		hidden_effect = {
-		add_to_variable = { ANT.army_influence = 5 } 
-		subtract_from_variable = { ANT.kemalist_influence = 5 } 
-		}
-		ANT_anarchy_reducement = yes
-		}
-	}
-
-	focus = {
-		id = ANT_forming_gestapo
-		icon = GFX_goal_ANT_Eyes_Everywhere
-		x = 10
-		y = 8
-		cost = 2
-		available_if_capitulated = yes
-		prerequisite = { focus = ANT_ban_meeting }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		custom_effect_tooltip = forming_gestapo_tt
-		custom_effect_tooltip = ant_army_influence_gain_tt
-		custom_effect_tooltip = ant_nazim_influence_lose_tt
-		add_political_power = 100
-		hidden_effect = {
-		add_to_variable = { ANT.army_influence = 5 } 
-		subtract_from_variable = { ANT.nazim_influence = 5 } 
-		}
-		ANT_failed_reducement = yes
-		}
-	}
-
-	focus = {
-		id = ANT_death_squads
-		icon = GFX_goal_ANT_young_Britain
-		x = 8
-		y = 7
-		cost = 2
-		available_if_capitulated = yes
-		prerequisite = { focus = ANT_improve_security }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		custom_effect_tooltip = ANT_increase_presence_tt_2
-		custom_effect_tooltip = ant_army_influence_gain_tt
-		custom_effect_tooltip = ant_enver_influence_lose_tt
-		add_political_power = 100
-		hidden_effect = {
-		add_to_variable = { ANT.army_influence = 5 } 
-		subtract_from_variable = { ANT.enver_influence = 5 } 
-		}
-		ANT_anarchy_reducement = yes
-		}
-	}
-
-	focus = {
-		id = ANT_operation_camel
-		icon = GFX_goal_ANT_Camel
-		x = 6
-		y = 9
-		cost = 1
-		available_if_capitulated = yes
-		prerequisite = { focus = ANT_death_squads }
-		prerequisite = { focus = ANT_forming_gestapo }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		custom_effect_tooltip = ANT_increase_presence_tt_2
-		custom_effect_tooltip = ant_army_influence_gain_tt
-		custom_effect_tooltip = ant_enver_influence_lose_tt
-		add_political_power = 100
-		hidden_effect = {
-		add_to_variable = { ANT.army_influence = 5 } 
-		subtract_from_variable = { ANT.enver_influence = 5 } 
-		}
-		ANT_anarchy_reducement = yes
-		}
-	}
-
-	focus = {
-		id = ANT_operation_exodus
-		icon = GFX_goal_ANT_Exodus
-		x = 14
-		y = 9
-		cost = 1
-		available_if_capitulated = yes
-		prerequisite = { focus = ANT_disband_common_army }
-		prerequisite = { focus = ANT_forming_gestapo }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		custom_effect_tooltip = ANT_increase_presence_tt_2
-		custom_effect_tooltip = ant_army_influence_gain_tt
-		custom_effect_tooltip = ant_kemal_influence_lose_tt
-		add_political_power = 100
-		hidden_effect = {
-		add_to_variable = { ANT.army_influence = 5 } 
-		subtract_from_variable = { ANT.kemalist_influence = 5 } 
-		}
-		ANT_anarchy_reducement = yes
-		}
-	}
-
-	focus = {
-		id = ANT_influence_in_west
-		icon = GFX_goal_ANT_WEST
-		x = 10
-		y = 10
-		cost = 2
-		available_if_capitulated = yes
-		prerequisite = { focus = ANT_operation_camel }
-		prerequisite = { focus = ANT_operation_exodus }
-		prerequisite = { focus = ANT_forming_gestapo }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		custom_effect_tooltip = ANT_increase_presence_tt_2
-		custom_effect_tooltip = ant_nazim_influence_lose_tt
-		custom_effect_tooltip = ant_army_influence_gain_tt
-		add_political_power = 100
-		hidden_effect = {
-		add_to_variable = { ANT.army_influence = 5 } 
-		subtract_from_variable = { ANT.nazim_influence = 5 } 
-		}
-		ANT_failed_reducement = yes
-		ANT_anarchy_reducement = yes
-		}
-	}
-
-	focus = {
-		id = ANT_cleanup_in_south
-		icon = GFX_goal_ANT_SOUTH
-		x = 9
-		y = 11
-		cost = 2
-		available_if_capitulated = yes
-		prerequisite = { focus = ANT_influence_in_west }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		custom_effect_tooltip = ant_cult_influence_lose_tt
-		custom_effect_tooltip = ant_army_influence_gain_tt
-		add_political_power = 100
-		hidden_effect = {
-		add_to_variable = { ANT.army_influence = 5 } 
-		subtract_from_variable = { ANT.cult_influence = 5 }  
-		}
-		}
-	}
-
-	focus = {
-		id = ANT_against_all_odds
-		icon = GFX_goal_ANT_Against_Odds
-		x = 11
-		y = 12
-		cost = 2
-		available_if_capitulated = yes
-		prerequisite = { focus = ANT_cleanup_in_south }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		custom_effect_tooltip = ANT_increase_presence_tt_2
-		custom_effect_tooltip = ant_army_influence_gain_tt
-		add_stability = 0.2
-		country_event = { id = ant.5 }
-		}
-	}
-
-	focus = {
-		id = ANT_the_skull_marches
-		icon = GFX_goal_skull_marchwest
-		x = 10
-		y = 14
-		cost = 1
-		available_if_capitulated = yes
-		prerequisite = { focus = ANT_against_all_odds }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		custom_effect_tooltip = this_is_endgame_tt
-		remove_idea = ANT_Warlords_Emerging
-		country_event = { id = ant.6 }
 		}
 	}
 

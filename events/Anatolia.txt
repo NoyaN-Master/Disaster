@@ -129,7 +129,7 @@ country_event = { #gamers take over
     }
 }
 
-country_event = { #gamers fuck up
+country_event = { #Operation Engels
     id = ant.5
     title = ant.5.t
     desc = ant.5.d
@@ -140,18 +140,29 @@ country_event = { #gamers fuck up
     option = { #we fuck up
         name = ant.5.a
         ai_chance = { factor = 100} 
-        custom_effect_tooltip = ant.5.tooltip
-        hidden_effect = {
-        clr_country_flag = influence_active
+        IZM = {
+        add_stability = -0.20
+        add_war_support = -0.20
+        add_ideas = ANT_Bombed_Warlord   
         }
-        swap_ideas = {
-    	remove_idea = ANT_Failed_State_3
-    	add_idea = ANT_Failed_State_odds_event
-		}
-        swap_ideas = {
-    	remove_idea = ANT_Anarchy_8
-    	add_idea = ANT_Anarchy_against_odds_event
-		}
+    }
+}
+country_event = { #Operation Smith
+    id = ant.35
+    title = ant.35.t
+    desc = ant.35.d
+    fire_only_once = yes
+    picture = GFX_evt_Picture
+    is_triggered_only = yes
+
+    option = { #we fuck up
+        name = ant.35.a
+        ai_chance = { factor = 100} 
+        OTH = {
+        add_stability = -0.20
+        add_war_support = -0.20
+        add_ideas = ANT_Bombed_Warlord   
+        }
     }
 }
 
