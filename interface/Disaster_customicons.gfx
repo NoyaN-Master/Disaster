@@ -6978,15 +6978,15 @@ SpriteType = {
 
 SpriteType = {
             name = "GFX_goal_ANT_fixing"
-            texturefile = "gfx/interface/goals/ANT_fixing.tga"
+            texturefile = "gfx/interface/goals/ANT_Assume_Control.dds"
     }
 
     SpriteType = {
 		name = "GFX_goal_ANT_fixing_shine"
-		texturefile = "gfx/interface/goals/ANT_fixing.tga"
+		texturefile = "gfx/interface/goals/ANT_Assume_Control.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ANT_fixing.tga"
+			animationmaskfile = "gfx/interface/goals/ANT_Assume_Control.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -6999,7 +6999,7 @@ SpriteType = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ANT_fixing.tga"
+			animationmaskfile = "gfx/interface/goals/ANT_Assume_Control.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -18252,6 +18252,154 @@ SpriteType = {
 		legacy_lazy_load = no	
 			
  }
+ SpriteType = {
+            name = "GFX_goal_ANT_Engels"
+            texturefile = "gfx/interface/goals/ANT_Engels.dds"
+    }
+
+    SpriteType = {
+		name = "GFX_goal_ANT_Engels_shine"
+		texturefile = "gfx/interface/goals/ANT_Engels.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ANT_Engels.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ANT_Engels.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+        legacy_lazy_load = no
+    
+}
+SpriteType = {
+            name = "GFX_goal_ANT_Smith"
+            texturefile = "gfx/interface/goals/ANT_Smith.dds"
+    }
+
+    SpriteType = {
+		name = "GFX_goal_ANT_Smith_shine"
+		texturefile = "gfx/interface/goals/ANT_Smith.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ANT_Smith.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ANT_Smith.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+        legacy_lazy_load = no
+    
+}
+SpriteType = {
+            name = "GFX_goal_ANT_Siege"
+            texturefile = "gfx/interface/goals/ANT_Siege.dds"
+    }
+
+    SpriteType = {
+		name = "GFX_goal_ANT_Siege_shine"
+		texturefile = "gfx/interface/goals/ANT_Siege.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ANT_Siege.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ANT_Siege.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+        legacy_lazy_load = no
+    
+}
+SpriteType = {
+            name = "GFX_goal_ANT_Sledge"
+            texturefile = "gfx/interface/goals/ANT_Sledge.dds"
+    }
+
+    SpriteType = {
+		name = "GFX_goal_ANT_Sledge_shine"
+		texturefile = "gfx/interface/goals/ANT_Sledge.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ANT_Sledge.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ANT_Sledge.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+        legacy_lazy_load = no
+    
+}
 
  }			
  

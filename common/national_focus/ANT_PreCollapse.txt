@@ -79,14 +79,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available = { has_country_flag = chose_army }
+		available = { always = no }
 		completion_reward = {
 		custom_effect_tooltip = ANT_fight_anarchy_tt
 		}
 	}
 	focus = {
 		id = ANT_Operation_Engels
-		icon = GFX_goal_ANT_fixing
+		icon = GFX_goal_ANT_Engels
 		x = 9
 		y = 5
 		cost = 2
@@ -102,7 +102,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ANT_Operation_Smith
-		icon = GFX_goal_ANT_fixing
+		icon = GFX_goal_ANT_Smith
 		x = 11
 		y = 5
 		cost = 2
@@ -118,7 +118,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ANT_Siege_Capital
-		icon = GFX_goal_ANT_fixing
+		icon = GFX_goal_ANT_Siege
 		x = 10
 		y = 6
 		cost = 2
@@ -128,14 +128,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available = { has_country_flag = chose_army }
 		completion_reward = {
-		custom_effect_tooltip = ANT_fight_anarchy_tt
+		custom_effect_tooltip = fuller_siege_tt
+		country_event = { id = ant.36 }
 		}
 	}
 	focus = {
-		id = ANT_Take_One_Out
-		icon = GFX_goal_ANT_fixing
+		id = ANT_Sledgehammer
+		icon = GFX_goal_ANT_Sledge
 		x = 10
 		y = 7
 		cost = 2
@@ -145,26 +145,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available = { has_country_flag = chose_army }
 		completion_reward = {
-		custom_effect_tooltip = ANT_fight_anarchy_tt
-		}
-	}
-	focus = {
-		id = ANT_Sledgehammer
-		icon = GFX_goal_ANT_fixing
-		x = 10
-		y = 8
-		cost = 2
-		available_if_capitulated = yes
-		prerequisite = { focus = ANT_Operation_Smith }
-		prerequisite = { focus = ANT_Operation_Engels }
-		ai_will_do = {
-			factor = 1
-		}
-		available = { has_country_flag = chose_army }
-		completion_reward = {
-		custom_effect_tooltip = ANT_fight_anarchy_tt
+		custom_effect_tooltip = fuller_sledghammer_tt
+		country_event = { id = ant.6 }
 		}
 	}
 	
@@ -172,7 +155,7 @@ focus_tree = {
 		id = ANT_political_warfare
 		icon = GFX_goal_WRF_Yahya
 		x = 24
-		y = 3
+		y = 2
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_increase_presence }

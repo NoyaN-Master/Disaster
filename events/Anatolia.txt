@@ -84,6 +84,7 @@ country_event = { #the army moves
         long_name = ANT_revolutionary_nationalist_commisar 
         name = ANT_revolutionary_nationalist_commisar 
         }
+        country_event = {id = ant.4 days = 2 }
     }
 
     option = {
@@ -126,6 +127,7 @@ country_event = { #gamers take over
         subtract_from_variable = { ANT.kemalist_influence = 5 } 
         country_event = { id = ant.3 days = 4 }
         }
+        complete_national_focus = ANT_Assume_Full_Control
     }
 }
 
@@ -191,6 +193,7 @@ country_event = { #collapse-left side
 		}
         SKL = {
         transfer_state = 798
+        load_oob = "SKL_1936"
         }
         798  = {
         add_core_of = SKL    
@@ -806,6 +809,20 @@ country_event = { #Communist Revolution
         }
         IZM = { change_tag_from = ANT }
         news_event = { id = ant.7 }
+    }
+}
+
+country_event = { #Siege Of Capital
+    id = ant.36
+    title = ant.36.t
+    desc = ant.36.d
+    fire_only_once = yes
+    picture = GFX_evt_Picture
+    is_triggered_only = yes
+
+    option = {
+        ai_chance = { factor = 100} 
+        name = ant.36.a
     }
 }
 
