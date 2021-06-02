@@ -358,7 +358,6 @@ Atsiz_Strong_Milita = {
 			}
 		}
 		
-}
 Atsiz_Minority_Labor = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
 			#picture = WRF_Tekalif
