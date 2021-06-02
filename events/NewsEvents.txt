@@ -334,16 +334,16 @@ news_event = { #SYRIANWAR I
 	is_triggered_only = yes
 
     option = {
-		name = news.19.a
+		name = news.20.a
 		
     }
 
 }
 
 news_event = { #ANARCHYWAR
-	id = news.20
-	title = news.20.t
-	desc = news.20.d
+	id = news.21
+	title = news.21.t
+	desc = news.21.d
 	picture = GFX_news_event_001
 	
 	major = yes
@@ -351,7 +351,7 @@ news_event = { #ANARCHYWAR
 	is_triggered_only = yes
 
     option = {
-		name = news.19.a
+		name = news.21.a
 		
     }
 
