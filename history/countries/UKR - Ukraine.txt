@@ -1,5 +1,9 @@
 capital = 259
-oob = ""
+oob = "UKR_1936"
+
+
+
+country_event = { id = worldwar.4 days = 30 }
 
 set_technology = {
 	infantry_weapons = 1
