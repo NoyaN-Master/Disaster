@@ -209,7 +209,14 @@ Atsiz_New_Regime_4 = {
 			stability_factor = -0.20
 			conscription = -0.01
 			}
-		}							
+		}
+Atsiz_New_Regime_5 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			stability_factor = -0.10
+			}
+		}									
 Atsiz_Discontent_Army = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
 			#picture = WRF_Tekalif
@@ -370,7 +377,36 @@ Atsiz_Fast_Society = {
 			army_speed_factor = 0.10
 			stability_factor = -0.05
 			}
-		}		
+		}
+Atsiz_Wolfic_Society = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			consumer_goods_factor = -0.1
+			stability_factor = 0.10
+			}
+		}
+Atsiz_Wolfic_Society_Fear = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			consumer_goods_factor = -0.2
+			stability_factor = 0.05
+			production_speed_buildings_factor = 0.1
+			production_factory_start_efficiency_factor = 0.1
+			war_support_factor = 0.10
+			}
+		}
+Atsiz_Gestapo = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			decryption = 1
+			encryption = 1
+			enemy_operative_detection_chance = 10
+			intel_network_gain = 1
+			}
+		}									
 }
 }		
 			

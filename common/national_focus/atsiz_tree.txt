@@ -162,7 +162,7 @@ focus_tree = {
 	##post revolt
 	focus = {
 		id = WRF_Formation_Korps
-		icon = GFX_goal_WRF_Italy
+		icon = GFX_goal_WRF_korps
 		x = 12
 		y = 5
 		cost = 2
@@ -183,7 +183,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Dehumanize_Enemy
-		icon = GFX_goal_WRF_Italy
+		icon = GFX_goal_WRF_Dehumanize
 		x = 13
 		y = 6
 		cost = 2
@@ -201,7 +201,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_TheCult
-		icon = GFX_goal_WRF_Italy
+		icon = GFX_goal_WRF_Cult
 		x = 14
 		y = 7
 		cost = 2
@@ -219,7 +219,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Discipline_Freedom
-		icon = GFX_goal_WRF_Italy
+		icon = GFX_goal_WRF_Discipline
 		x = 13
 		y = 8
 		cost = 2
@@ -238,7 +238,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Iron_Hearts
-		icon = GFX_goal_WRF_Italy
+		icon = GFX_goal_cyborg
 		x = 12
 		y = 7
 		cost = 2
@@ -257,7 +257,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Sons_Destruction
-		icon = GFX_goal_WRF_Italy
+		icon = GFX_goal_WRF_Destruction
 		x = 11
 		y = 6
 		cost = 2
@@ -278,7 +278,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Animal_Doctrine
-		icon = GFX_goal_WRF_Italy
+		icon = GFX_goal_WRF_Animal
 		x = 10
 		y = 7
 		cost = 2
@@ -304,7 +304,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Nightmare_Fuel
-		icon = GFX_goal_WRF_Italy
+		icon = GFX_goal_WRF_Nightmare
 		x = 11
 		y = 8
 		cost = 2
@@ -326,7 +326,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Sons_Of_Eurasia
-		icon = GFX_goal_WRF_Italy
+		icon = GFX_goal_eurasian_army
 		x = 12
 		y = 9
 		cost = 2
@@ -348,7 +348,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Utilize_Labor
-		icon = GFX_goal_WRF_Italy
+		icon = GFX_goal_rebuild_east
 		x = 17
 		y = 5
 		cost = 2
@@ -380,8 +380,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = WRF_Lessons_Revolt
-		icon = GFX_goal_WRF_Italy
+		id = WRF_Lessons_Revolts
+		icon = GFX_goal_fuck_armenia
 		x = 21
 		y = 5
 		cost = 2
@@ -395,30 +395,31 @@ focus_tree = {
 		230 = {
 		add_manpower = -10000	
 		}
+		add_experience = 70
 		hidden_effect = {
 		}
 		}
 	}
 	focus = {
 		id = WRF_Caligulan_Admin
-		icon = GFX_goal_WRF_Italy
+		icon = GFX_goal_caligula
 		x = 20
 		y = 6
 		cost = 2
 		available_if_capitulated = yes
-        prerequisite = { focus = WRF_Lessons_Revolt }
+        prerequisite = { focus = WRF_Lessons_Revolts }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		swap_ruler_traits = { remove = bastion_evil add = bastion_evil_2 }
 		hidden_effect = {
 		}
 		}
 	}
 	focus = {
 		id = WRF_Fear_Factory
-		icon = GFX_goal_WRF_Italy
+		icon = GFX_goal_fear
 		x = 21
 		y = 7
 		cost = 2
@@ -429,14 +430,17 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		swap_ideas = {
+		remove_idea = Atsiz_Wolfic_Society
+		add_idea = 	Atsiz_Wolfic_Society_Fear
+		}
 		hidden_effect = {
 		}
 		}
 	}
 	focus = {
 		id = WRF_Secret_Service
-		icon = GFX_goal_WRF_Italy
+		icon = GFX_goal_fuller_collab
 		x = 22
 		y = 8
 		cost = 2
@@ -447,14 +451,18 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		add_ideas = Atsiz_Gestapo
+		swap_ideas = {
+		remove_idea = Atsiz_New_Regime_4
+		add_idea = Atsiz_New_Regime_5	
+		}
 		hidden_effect = {
 		}
 		}
 	}
 	focus = {
 		id = WRF_Purge_Leftists
-		icon = GFX_goal_WRF_Italy
+		icon = GFX_goal_communist_2
 		x = 20
 		y = 8
 		cost = 2
@@ -464,14 +472,15 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		add_stability = 0.10
+		add_manpower = -40000
 		hidden_effect = {
 		}
 		}
 	}
 	focus = {
 		id = WRF_End_Kemalism
-		icon = GFX_goal_WRF_Italy
+		icon = GFX_goal_fuller_enver
 		x = 21
 		y = 9
 		cost = 2
@@ -482,83 +491,32 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		remove_idea = Atsiz_New_Regime_5
+		remove_idea = Atsiz_Enverist_Influence
 		hidden_effect = {
 		}
 		}
 	}
 	focus = {
 		id = WRF_Wolfic_Society
-		icon = GFX_goal_WRF_Italy
+		icon = GFX_goal_wolfic
 		x = 22
 		y = 6
 		cost = 2
 		available_if_capitulated = yes
-        prerequisite = { focus = WRF_Lessons_Revolt }
+        prerequisite = { focus = WRF_Lessons_Revolts }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-		
-		hidden_effect = {
-		}
-		}
-	}
-	focus = {
-		id = WRF_Knights_Black
-		icon = GFX_goal_WRF_Italy
-		x = 23
-		y = 7
-		cost = 2
-		available_if_capitulated = yes
-        prerequisite = { focus = WRF_Wolfic_Society }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		
-		hidden_effect = {
-		}
-		}
-	}
-	focus = {
-		id = WRF_Learn_Fuller
-		icon = GFX_goal_WRF_Italy
-		x = 24
-		y = 8
-		cost = 2
-		available_if_capitulated = yes
-        prerequisite = { focus = WRF_Knights_Black }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		
-		hidden_effect = {
-		}
-		}
-	}
-	focus = {
-		id = WRF_Terror_Raids
-		icon = GFX_goal_WRF_Italy
-		x = 23
-		y = 9
-		cost = 2
-		available_if_capitulated = yes
-        prerequisite = { focus = WRF_Learn_Fuller }
-		prerequisite = { focus = WRF_Secret_Service }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		
+		add_ideas = Atsiz_Wolfic_Society
 		hidden_effect = {
 		}
 		}
 	}
 	focus = {
 		id = WRF_Supply_Lines
-		icon = GFX_goal_WRF_Italy
+		icon = GFX_goal_hitler_first
 		x = 16
 		y = 6
 		cost = 2
@@ -598,7 +556,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WRF_Brutal_Cities
-		icon = GFX_goal_WRF_Italy
+		icon = GFX_goal_iron_towers
 		x = 16
 		y = 7
 		cost = 2
@@ -631,7 +589,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WRF_Automize_Society
-		icon = GFX_goal_WRF_Italy
+		icon = GFX_goal_raze_warfare
 		x = 16
 		y = 8
 		cost = 2
@@ -648,7 +606,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WRF_Force_Industry
-		icon = GFX_goal_WRF_Italy
+		icon = GFX_goal_forced_industrialisation
 		x = 18
 		y = 6
 		cost = 2
@@ -688,7 +646,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WRF_Iron_Monsters
-		icon = GFX_goal_WRF_Italy
+		icon = GFX_goal_fuller_end
 		x = 18
 		y = 7
 		cost = 2
@@ -709,7 +667,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WRF_Buy_Tanks
-		icon = GFX_goal_WRF_Italy
+		icon = GFX_goal_new_way_of_warfare
 		x = 18
 		y = 8
 		cost = 2
@@ -736,7 +694,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WRF_Blueprints_Destruction
-		icon = GFX_goal_WRF_Italy
+		icon = GFX_goal_army_exercises
 		x = 17
 		y = 9
 		cost = 2
@@ -755,10 +713,11 @@ focus_tree = {
 	#teaserfocuses
 	focus = {
 		id = WRF_Nazbol_ending
-		icon = GFX_goal_WRF_Italy
+		icon = GFX_goal_IZM_Deng
 		x = 14
 		y = 10
 		cost = 2
+		available = { always = no }
 		available_if_capitulated = yes
 		mutually_exclusive = { focus = WRF_Revisionist_Ending }
 		mutually_exclusive = { focus = WRF_Brown_Ending }
@@ -775,10 +734,11 @@ focus_tree = {
 	}
 	focus = {
 		id = WRF_Tengri_ending
-		icon = GFX_goal_WRF_Italy
+		icon = GFX_goal_national_rebirth
 		x = 16
 		y = 10
 		cost = 2
+		available = { always = no }
 		available_if_capitulated = yes
 		mutually_exclusive = { focus = WRF_Nazbol_ending }
 		mutually_exclusive = { focus = WRF_Brown_Ending }
@@ -795,10 +755,11 @@ focus_tree = {
 	}
 	focus = {
 		id = WRF_Brown_Ending
-		icon = GFX_goal_WRF_Italy
+		icon = GFX_goal_atsiz_end
 		x = 18
 		y = 10
 		cost = 2
+		available = { always = no }
 		available_if_capitulated = yes
         mutually_exclusive = { focus = WRF_Nazbol_ending }
 		mutually_exclusive = { focus = WRF_Revisionist_Ending }
@@ -815,10 +776,11 @@ focus_tree = {
 	}
 	focus = {
 		id = WRF_Revisionist_Ending
-		icon = GFX_goal_WRF_Italy
+		icon = GFX_goal_turkes
 		x = 20
 		y = 10
 		cost = 2
+		available = { always = no }
 		available_if_capitulated = yes
         prerequisite = { focus = WRF_Blueprints_Destruction focus = WRF_End_Kemalism focus = WRF_Terror_Raids focus = WRF_Sons_Of_Eurasia }
 		mutually_exclusive = { focus = WRF_Nazbol_ending }
