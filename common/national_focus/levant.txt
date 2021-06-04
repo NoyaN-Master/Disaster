@@ -144,6 +144,11 @@ focus_tree = {
 		}
 		completion_reward = {
 		custom_effect_tooltip = PLO_tt
+		hidden_effect = {
+			PAL = {
+			add_war_support = 0.25	
+			}	
+			}
 		}
 	}
 	focus = {
@@ -158,6 +163,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			custom_effect_tooltip = PLO_Manpower_tt
+			hidden_effect = {
+			PAL = {
+			add_manpower = 100000	
+			}	
+			}
 		}
 	}
 	focus = {
@@ -172,6 +183,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			custom_effect_tooltip = PLO_Leader_tt
+			hidden_effect = {
+			PAL = {
+			add_political_power = 300	
+			}	
+			}
 		}
 	}
 	focus = {
@@ -186,6 +203,23 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			custom_effect_tooltip = PLO_Industry_tt
+			PAL = {
+			add_political_power = 300
+			869 = {
+			add_building_construction = {
+    		type = arms_factory
+    		level = 5
+    		instant_build = yes
+			}
+			add_building_construction = {
+    		type = industrial_complex
+    		level = 3
+    		instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 7	
+			}	
+			}
 		}
 	}
 	focus = {
@@ -202,6 +236,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			custom_effect_tooltip = PLO_IDF_tt
 		}
 	}
 	focus = {
@@ -209,13 +244,17 @@ focus_tree = {
 		icon = GFX_goal_ANT_Smith
 		x = 8
 		y = 5
-		cost = 2
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = LEV_Arab_Reinforcements }
 		ai_will_do = {
 			factor = 1
 		}
+		select_effect = {
+		country_event = { id = worldwar.1 days = 30}	
+		}
 		completion_reward = {
+			custom_effect_tooltip = PLO_Disaster_tt
 		}
 	}
 	focus = {
@@ -230,8 +269,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			custom_effect_tooltip = PLO_Meclis_tt
+			hidden_effect = {
+			PAL = {
+			add_political_power = 300	
+			}	
+			}
 		}
-	}
+		}
 	focus = {
 		id = LEV_Anglo_Arab_Act
 		icon = GFX_goal_ANT_Smith
@@ -244,8 +289,17 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			custom_effect_tooltip = PLO_Guns_tt
+			hidden_effect = {
+			PAL = {
+			add_equipment_to_stockpile = {
+    		type = infantry_equipment
+    		amount = 4000
+    		producer = PAL
+			}
+			}	
+			}
+			}
 		}
 	}
-
-
-}        
+       

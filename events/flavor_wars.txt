@@ -1,6 +1,6 @@
 add_namespace = worldwar
 
-country_event = { #Israel Fitnah
+country_event = { #Israel Fitnah # Palestine
 	id = worldwar.1
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
 	title = worldwar.1.t
@@ -26,7 +26,7 @@ country_event = { #Israel Fitnah
         transfer_state = 816
         transfer_state = 869
         add_ideas = PAL_Duel_Fate
-		load_oob = PAL_palestine_milita   
+		load_oob = PAL_palestine_milita_favor  
         }
         ISL = {
         add_state_core = 454
@@ -50,6 +50,7 @@ country_event = { #Israel Fitnah
         transfer_state = 553
         add_state_core = 553    
         }
+        PAL = { change_tag_from = LEV }
     news_event = { id = news.16 }
 }
 }
