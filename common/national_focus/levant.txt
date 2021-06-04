@@ -1,0 +1,251 @@
+focus_tree = {
+	id = anatolia_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = LEV
+		}
+		}
+    focus = {
+		id = LEV_Status_Mandate
+		icon = GFX_goal_ANT_Smith
+		x = 5
+		y = 0
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_Assume_Full_Control }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+    focus = {
+		id = LEV_Work_Lehi
+		icon = GFX_goal_ANT_Smith
+		x = 2
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = LEV_Status_Mandate }
+        mutually_exclusive = { focus = LEV_Work_PLO }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = Lehi_tt	
+		}
+	}
+	focus = {
+		id = LEV_Jewish_Lobbying
+		icon = GFX_goal_ANT_Smith
+		x = 1
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = LEV_Work_Lehi }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = Lehi_Guns_tt		
+		}
+	}
+	focus = {
+		id = LEV_Encourage_Immigration
+		icon = GFX_goal_ANT_Smith
+		x = 3
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = LEV_Work_Lehi }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = Lehi_Manpower_tt					
+		}
+	}
+	focus = {
+		id = LEV_Jewish_Banks
+		icon = GFX_goal_ANT_Smith
+		x = 2
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = LEV_Encourage_Immigration }
+		prerequisite = { focus = LEV_Jewish_Lobbying }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = Lehi_Industry_tt
+		}
+	}
+	focus = {
+		id = LEV_Operation_Lehi
+		icon = GFX_goal_ANT_Smith
+		x = 1
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = LEV_Jewish_Banks }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = Lehi_Stern_tt
+		}
+	}
+	focus = {
+		id = LEV_The_IDF
+		icon = GFX_goal_ANT_Smith
+		x = 3
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = LEV_Jewish_Banks }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = Lehi_IDF_tt
+		}
+	}
+	focus = {
+		id = LEV_Rewire_Politics
+		icon = GFX_goal_ANT_Smith
+		x = 2
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = LEV_The_IDF }
+		prerequisite = { focus = LEV_Operation_Lehi }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = Lehi_Rewire_tt
+		}
+	}
+    focus = {
+		id = LEV_Work_PLO
+		icon = GFX_goal_ANT_Smith
+		x = 8
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = LEV_Status_Mandate }
+        mutually_exclusive = { focus = LEV_Work_Lehi }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = PLO_tt
+		}
+	}
+	focus = {
+		id = LEV_Arab_Settlements
+		icon = GFX_goal_ANT_Smith
+		x = 7
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = LEV_Work_PLO }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = LEV_Meet_With_Figures
+		icon = GFX_goal_ANT_Smith
+		x = 9
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = LEV_Work_PLO }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = LEV_A_Sketchy_Move
+		icon = GFX_goal_ANT_Smith
+		x = 10
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = LEV_Meet_With_Figures }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = LEV_Arab_Reinforcements
+		icon = GFX_goal_ANT_Smith
+		x = 8
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = LEV_Meet_With_Figures }
+		prerequisite = { focus = LEV_Arab_Parliament }
+		prerequisite = { focus = LEV_A_Sketchy_Move }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = LEV_Declare_Qudus_Muslim
+		icon = GFX_goal_ANT_Smith
+		x = 8
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = LEV_Arab_Reinforcements }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = LEV_Arab_Parliament
+		icon = GFX_goal_ANT_Smith
+		x = 6
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = LEV_Arab_Settlements }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = LEV_Anglo_Arab_Act
+		icon = GFX_goal_ANT_Smith
+		x = 8
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = LEV_Arab_Settlements }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+
+}        
