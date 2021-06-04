@@ -1051,7 +1051,8 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		add_ideas = WRF_Fevzi_SOL
+		add_stability = 0.05
 		hidden_effect = {
 		}
 		}
@@ -1225,7 +1226,10 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		swap_ideas = {
+		remove_idea = WRF_Ataturk_Heir_1
+		add_idea =	WRF_Ataturk_Heir_2
+		}
 		hidden_effect = {
 		}
 		}
@@ -1244,7 +1248,10 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		swap_ideas = {
+		remove_idea = WRF_Ataturk_Heir_2
+		add_idea =	WRF_Ataturk_Heir_3
+		}
 		hidden_effect = {
 		}
 		}
@@ -1263,7 +1270,7 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		add_ideas = WRF_Religion_Back
 		hidden_effect = {
 		}
 		}
@@ -1285,7 +1292,7 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		add_ideas = WRF_Fevzi_Schools
 		hidden_effect = {
 		}
 		}
@@ -1307,7 +1314,10 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		swap_ideas = {
+		remove_idea = WRF_Fevzi_SOL	
+		add_idea = WRF_Fevzi_SOL_2
+		}
 		hidden_effect = {
 		}
 		}
@@ -1329,7 +1339,75 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		set_party_name = { 
+        ideology = ultranationalist 
+        long_name = WRF_fevzi_ulku 
+        name = WRF_fevzi_ulku 
+        }
+        set_party_name = { 
+        ideology = revolutionary_nationalist 
+        long_name = WRF_fevzi_ulku 
+        name = WRF_fevzi_ulku 
+        }
+        set_party_name = { 
+        ideology = unisocialist 
+        long_name = empty_party_slot_loc 
+        name = empty_party_slot_loc 
+        }
+        set_party_name = { 
+        ideology = autocratic 
+        long_name = WRF_fevzi_castle 
+        name = WRF_fevzi_castle 
+        }
+        set_party_name = { 
+        ideology = esoteric_traditionalist
+        long_name = WRF_fevzi_ulku 
+        name = WRF_fevzi_ulku 
+        }
+        set_party_name = { 
+        ideology = authoritarian_democrat 
+        long_name = WRF_fevzi_castle
+        name = WRF_fevzi_castle 
+        }
+        set_party_name = { 
+        ideology = authoritarian_socialist 
+        long_name = WRF_fevzi_red
+        name = WRF_fevzi_red 
+        }
+        set_party_name = { 
+        ideology = libertarian_socialist 
+        long_name = WRF_fevzi_red
+        name = WRF_fevzi_red 
+        }
+        set_party_name = { 
+        ideology = liberal 
+        long_name = empty_party_slot_loc_atsiz
+        name = WRF_fevzi_reform 
+        }
+        set_party_name = { 
+        ideology = conservative 
+        long_name = WRF_fevzi_reform
+        name = WRF_fevzi_reform 
+        }
+        set_party_name = { 
+        ideology = social_democrat 
+        long_name = WRF_fevzi_red
+        name = WRF_fevzi_red 
+        }
+		set_party_name = { 
+        ideology = revolutionary_anarchist 
+        long_name = empty_party_slot_loc
+        name = empty_party_slot_loc 
+        }
+        set_popularities = {
+	    revolutionary_nationalist = 10
+	    ultranationalist = 10
+	    authoritarian_democrat = 10
+		liberal = 10
+		social_democrat = 5
+	    authoritarian_socialist = 5
+        autocratic = 50
+        }
 		hidden_effect = {
 		}
 		}
@@ -1351,7 +1429,7 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		add_ideas = WRF_Pashaliks
 		hidden_effect = {
 		}
 		}
@@ -1373,7 +1451,9 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		add_manpower = 10000
+		add_war_support = 0.15
+		add_ideas = WRF_Imperalist_Attack
 		hidden_effect = {
 		}
 		}
@@ -1398,7 +1478,7 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		add_country_leader_trait = reis_fevzi
 		hidden_effect = {
 		}
 		}
@@ -1417,7 +1497,7 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		add_ideas = WRF_Promised_Expansions
 		hidden_effect = {
 		}
 		}
@@ -1439,7 +1519,12 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		swap_ideas = {
+		remove_idea = WRF_Ataturk_Heir_3
+		add_idea = WRF_Anatolianism	
+		}
+		add_stability = 0.10
+		add_manpower = 10000
 		hidden_effect = {
 		}
 		}
@@ -1458,7 +1543,8 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		add_political_power = -300
+		add_stability = -0.03
 		hidden_effect = {
 		}
 		}

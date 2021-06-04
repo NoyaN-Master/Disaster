@@ -489,4 +489,33 @@ spriteTypes = {
 		name = "GFX_idea_industrial_idea"
 		texturefile = "gfx/interface/ideas/industrial_idea.dds"
 	}
+	#hogs
+	spriteType = {
+		name = "GFX_idea_CLP_abdl"
+		texturefile = "gfx/interface/ideas/CLP_abdl.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CLP_ulema"
+		texturefile = "gfx/interface/ideas/CLP_ulema.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_IZM_Nazim"
+		texturefile = "gfx/interface/ideas/IZM_Nazim.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CIB_Enver"
+		texturefile = "gfx/interface/ideas/CIB_Enver.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SKL_Fuller"
+		texturefile = "gfx/interface/ideas/SKL_Fuller.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_IZM_Ethem"
+		texturefile = "gfx/interface/ideas/IZM_Ethem.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_WRF_ismet"
+		texturefile = "gfx/interface/ideas/WRF_ismet.dds"
+	}
 }	

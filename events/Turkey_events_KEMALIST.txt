@@ -232,6 +232,10 @@ country_event = { #Succesor
 		WRF_Ataturk_Reforms_3
 		}
 		add_ideas ={ WRF_Ataturk_Heir_1 }
+		swap_ideas = {
+		remove_idea = WRF_mustafa_kemal
+		add_idea = WRF_ismet_inonu_hog	
+		}	
         hidden_effect = {   
         }
 	}
@@ -264,6 +268,15 @@ country_event = { #Succesor
     		long_name = WRF_auth_chp 
     		name = WRF_auth_chp_long 
 			}
+		swap_ideas = {
+		remove_idea = WRF_mustafa_kemal
+		add_idea = WRF_fevzi_hog	
+		}
+		remove_ideas = {
+		WRF_Ataturk_Reforms_3
+		}
+		add_ideas ={ WRF_Ataturk_Heir_1 }
+		unlock_national_focus = WRF_Fevzi_Chosen	
         hidden_effect = {   
         }
 	}

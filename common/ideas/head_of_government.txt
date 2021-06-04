@@ -9,7 +9,8 @@ ideas = {
 			}
 			cancel_if_invalid = no
 			level = 1
-			modifier = {	
+			traits = {
+				head_of_government
 			}
 			visible = {
 			tag = WRF 
@@ -22,16 +23,14 @@ ideas = {
 			always = no
 			
 			}
-			visible = {
-			always = no
+			traits = {
+				head_of_government
 			}
 			cancel_if_invalid = no
 			level = 2
-			modifier = {	
-			}
 		}
 	WRF_ismet_inonu_hog = {
-			#picture = generic_communism_drift_bonus
+			picture = WRF_ismet
 			available = { 
 			tag = WRF 
 			always = no
@@ -45,10 +44,10 @@ ideas = {
 			traits = {	
 			}
 		}
-		WRF_ethem_hog = {
-			#picture = generic_communism_drift_bonus
+		IZM_ethem_hog = {
+			picture = IZM_Ethem
 			available = { 
-			tag = WRF 
+			tag = IZM 
 			always = no
 			
 			}
@@ -60,8 +59,22 @@ ideas = {
 			traits = {	
 			}
 		}
-		WRF_fuller_hog = {
-			#picture = generic_communism_drift_bonus
+		SKL_fuller_hog = {
+			picture = SKL_Fuller
+			available = { 
+			tag = SKL 
+			always = no
+			}
+			visible = {
+			always = no
+			}
+			cancel_if_invalid = no
+			level = 3
+			traits = {	
+			}
+		}
+		CIB_enver_hog = {
+			picture = CIB_Enver
 			available = { 
 			tag = WRF 
 			always = no
@@ -74,10 +87,10 @@ ideas = {
 			traits = {	
 			}
 		}
-		WRF_enver_hog = {
-			#picture = generic_communism_drift_bonus
+		IZM_nazim_hog = {
+			picture = IZM_Nazim
 			available = { 
-			tag = WRF 
+			tag = IZM 
 			always = no
 			}
 			visible = {
@@ -88,24 +101,10 @@ ideas = {
 			traits = {	
 			}
 		}
-		WRF_nazim_hog = {
-			#picture = generic_communism_drift_bonus
+		CLP_ulema_hog = {
+			picture = CLP_ulema
 			available = { 
-			tag = WRF 
-			always = no
-			}
-			visible = {
-			always = no
-			}
-			cancel_if_invalid = no
-			level = 3
-			traits = {	
-			}
-		}
-		WRF_ulema_hog = {
-			#picture = generic_communism_drift_bonus
-			available = { 
-			tag = WRF 
+			tag = CLP 
 			always = no
 			}
 			visible = {
@@ -116,10 +115,10 @@ ideas = {
 			traits = {	
 			}
 		}
-		WRF_abdulmecid_hog = {
-			#picture = generic_communism_drift_bonus
+		CLP_abdulmecid_hog = {
+			picture = CLP_abdl
 			available = { 
-			tag = WRF 
+			tag = CLP
 			always = no
 			}
 			visible = {

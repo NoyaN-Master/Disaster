@@ -91,6 +91,14 @@ leader_traits = {
 		random = no
 		stability_weekly = 0.05
 	}
+
+	reis_fevzi = {
+		random = no
+		stability_weekly = 0.005
+		max_planning = 0.25
+		army_core_attack_factor = 0.1
+		army_core_defence_factor = 0.1
+	}
 	
 	mad_jack = {
 		random = no
