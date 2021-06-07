@@ -9,12 +9,11 @@ focus_tree = {
 		}
     focus = {
 		id = LEV_Status_Mandate
-		icon = GFX_goal_ANT_Smith
+		icon = GFX_goal_levant_dilemma
 		x = 5
 		y = 0
 		cost = 2
 		available_if_capitulated = yes
-		prerequisite = { focus = ANT_Assume_Full_Control }
 		ai_will_do = {
 			factor = 1
 		}
@@ -24,7 +23,7 @@ focus_tree = {
 
     focus = {
 		id = LEV_Work_Lehi
-		icon = GFX_goal_ANT_Smith
+		icon = GFX_goal_backjews
 		x = 2
 		y = 1
 		cost = 2
@@ -132,7 +131,7 @@ focus_tree = {
 	}
     focus = {
 		id = LEV_Work_PLO
-		icon = GFX_goal_ANT_Smith
+		icon = GFX_goal_backarabs
 		x = 8
 		y = 1
 		cost = 2
@@ -153,7 +152,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LEV_Arab_Settlements
-		icon = GFX_goal_ANT_Smith
+		icon = GFX_goal_arab_settle
 		x = 7
 		y = 2
 		cost = 2
@@ -173,7 +172,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LEV_Meet_With_Figures
-		icon = GFX_goal_ANT_Smith
+		icon = GFX_goal_aflaqmeet
 		x = 9
 		y = 2
 		cost = 2
@@ -193,7 +192,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LEV_A_Sketchy_Move
-		icon = GFX_goal_ANT_Smith
+		icon = GFX_goal_arab_risky
 		x = 10
 		y = 3
 		cost = 2
@@ -224,7 +223,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LEV_Arab_Reinforcements
-		icon = GFX_goal_ANT_Smith
+		icon = GFX_goal_arab_army
 		x = 8
 		y = 4
 		cost = 2
@@ -241,7 +240,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LEV_Declare_Qudus_Muslim
-		icon = GFX_goal_ANT_Smith
+		icon = GFX_goal_aksa_ralley
 		x = 8
 		y = 5
 		cost = 5
@@ -259,7 +258,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LEV_Arab_Parliament
-		icon = GFX_goal_ANT_Smith
+		icon = GFX_goal_arab_parlem
 		x = 6
 		y = 3
 		cost = 2
@@ -279,7 +278,7 @@ focus_tree = {
 		}
 	focus = {
 		id = LEV_Anglo_Arab_Act
-		icon = GFX_goal_ANT_Smith
+		icon = GFX_goal_arabanglo
 		x = 8
 		y = 3
 		cost = 2
