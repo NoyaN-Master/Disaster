@@ -56,6 +56,12 @@ guiTypes = {
 			position = { x = 35 y = 0 }
 		}
 
+		iconType = {
+			name ="Super_Event_Image_UAR_FORM"
+			spriteType = "GFX_SPEVNT_UAR_FORM"
+			position = { x = 35 y = 0 }
+		}
+
                 iconType = {
 			name ="Super_Event_Image_Unification_Ulema"
 			spriteType = "GFX_SPEVNT_Unification_Ulema"
