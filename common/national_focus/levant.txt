@@ -39,7 +39,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LEV_Jewish_Lobbying
-		icon = GFX_goal_ANT_Smith
+		icon = GFX_goal_lobbying
 		x = 1
 		y = 2
 		cost = 2
@@ -54,7 +54,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LEV_Encourage_Immigration
-		icon = GFX_goal_ANT_Smith
+		icon = GFX_goal_jewmigrate
 		x = 3
 		y = 2
 		cost = 2
@@ -69,7 +69,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LEV_Jewish_Banks
-		icon = GFX_goal_ANT_Smith
+		icon = GFX_goal_bankinvest
 		x = 2
 		y = 3
 		cost = 2
@@ -85,7 +85,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LEV_Operation_Lehi
-		icon = GFX_goal_ANT_Smith
+		icon = sternfree
 		x = 1
 		y = 4
 		cost = 2
@@ -100,7 +100,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LEV_The_IDF
-		icon = GFX_goal_ANT_Smith
+		icon = GFX_goal_IDF
 		x = 3
 		y = 4
 		cost = 2
@@ -115,7 +115,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LEV_Rewire_Politics
-		icon = GFX_goal_ANT_Smith
+		icon = GFX_goal_Fuckarabs
 		x = 2
 		y = 5
 		cost = 2

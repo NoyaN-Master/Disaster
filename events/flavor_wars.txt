@@ -104,10 +104,7 @@ country_event = { #Palestine Vs Syria
         add_state_core = 817
         add_state_core = 799
         add_state_core = 553
-        load_oob = PAL_syrian_oob          
-        }
-        SYR = {
-        #basically nothing kek
+        load_oob = PAL_syrianoob          
         }
     news_event = { id = news.20 }
 }
