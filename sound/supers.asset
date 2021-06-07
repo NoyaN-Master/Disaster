@@ -47,3 +47,10 @@ sound = {
 	volume = 1
 	always_load = yes
 }
+
+sound = {
+	name = "arabs"
+	file = "menu/arabs.wav"
+	volume = 1
+	always_load = yes
+}
