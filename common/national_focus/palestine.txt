@@ -1,0 +1,261 @@
+focus_tree = {
+	id = palestine_war_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = PAL
+		}
+	}
+	continuous_focus_position = { x = 100 y = 1500 }
+    focus = {
+		id = PAL_War_Liberation
+		icon = GFX_goal_levant_dilemma
+		x = 5
+		y = 0
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+    focus = {
+		id = PAL_Recruitment_Drive
+		icon = GFX_goal_levant_dilemma
+		x = 5
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = PAL_War_Liberation } 
+		completion_reward = {
+		add_manpower = 3000	
+		}
+	}
+    focus = {
+		id = PAL_Nasser
+		icon = GFX_goal_levant_dilemma
+		x = 7
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = PAL_Recruitment_Drive } 
+		completion_reward = {
+			add_equipment_to_stockpile = {
+    		type = infantry_equipment
+    		amount = 2000
+    		producer = PAL
+			}
+			add_equipment_to_stockpile = {
+    		type = support_equipment
+    		amount = 2000
+    		producer = PAL
+			}		
+		}
+	}
+    focus = {
+		id = PAL_YoungArabia
+		icon = GFX_goal_levant_dilemma
+		x = 7
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = PAL_Nasser } 
+		completion_reward = {
+		create_unit = {
+    	division = "name = \"Nasser's Own\" division_template = \"Palestinian Liberation Forces\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    	owner = PAL
+		}
+		create_unit = {
+    	division = "name = \"Egyptian Volunteers\" division_template = \"Palestinian Liberation Forces\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    	owner = PAL
+		}
+		create_unit = {
+    	division = "name = \"Iraqi Volunteers\" division_template = \"Palestinian Liberation Forces\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    	owner = PAL
+		}
+		create_unit = {
+    	division = "name = \"Shia Volunteers\" division_template = \"Palestinian Liberation Forces\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    	owner = PAL
+		}
+		}
+	}
+    focus = {
+		id = PAL_Muftu
+		icon = GFX_goal_levant_dilemma
+		x = 5
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = PAL_Recruitment_Drive } 
+		completion_reward = {
+		add_timed_idea = {
+		add_idea = PAL_Fatwa
+		days = 45	
+		}	
+		}
+	}
+    focus = {
+		id = PAL_Aflaq
+		icon = GFX_goal_levant_dilemma
+		x = 3
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = PAL_Recruitment_Drive } 
+		completion_reward = {
+			add_country_leader_trait = generallissimo_aflaq
+		}
+	}
+    focus = {
+		id = PAL_Support_Syria
+		icon = GFX_goal_levant_dilemma
+		x = 5
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = PAL_Muftu } 
+		completion_reward = {
+			random_owned_state = {
+			add_building_construction = {
+    		type = infrastructure
+    		level = 2
+    		instant_build = yes
+			}
+			}
+			random_owned_state = {
+			add_building_construction = {
+    		type = infrastructure
+    		level = 2
+    		instant_build = yes
+			}
+			}	
+			}
+		}
+    focus = {
+		id = PAL_Support_King
+		icon = GFX_goal_levant_dilemma
+		x = 3
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = PAL_Aflaq } 
+		completion_reward = {
+			random_owned_state = {
+			add_building_construction = {
+    		type = arms_factory
+    		level = 3
+    		instant_build = yes
+			}
+			add_building_construction = {
+    		type = industrial_complex
+    		level = 3
+    		instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 6	
+			}
+			add_equipment_to_stockpile = {
+    		type = infantry_equipment
+    		amount = 4000
+    		producer = PAL
+			}	
+		}
+	}
+    focus = {
+		id = PAL_Overthrow_King
+		icon = GFX_goal_levant_dilemma
+		x = 5
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        available = { has_war = no }
+        prerequisite = { focus = PAL_Support_King focus = PAL_Support_Syria focus = PAL_YoungArabia }
+         
+		completion_reward = {
+			country_event = { id = worldwar.3 }
+		}
+	}
+	focus = {
+		id = PAL_Shia_Recruitment
+		icon = GFX_goal_levant_dilemma
+		x = 4
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = PAL_Overthrow_King }
+         
+		completion_reward = {
+			add_manpower = 2000
+			add_timed_idea = {
+		add_idea = PAL_Shias
+		days = 45	
+		}	
+		}
+	}
+	focus = {
+		id = PAL_Against_Tyrants
+		icon = GFX_goal_levant_dilemma
+		x = 6
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = PAL_Overthrow_King }
+         
+		completion_reward = {
+			add_timed_idea = {
+		add_idea = PAL_Tyrants
+		days = 45	
+		}	
+		}
+	}
+	focus = {
+		id = PAL_The_Beirut
+		icon = GFX_goal_levant_dilemma
+		x = 5
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = PAL_Shia_Recruitment }
+        prerequisite = { focus = PAL_Against_Tyrants }         
+		completion_reward = {
+		set_cosmetic_tag = United_Arabs_Cosmetic
+		}
+	}
+}   

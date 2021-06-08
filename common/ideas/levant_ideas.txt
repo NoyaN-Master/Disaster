@@ -12,6 +12,34 @@ country = {
             army_morale_factor = 0.1
 			}
 		}
+  PAL_Fatwa = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CRW_Independent_City" }
+			picture = CRW_Independent_City
+			modifier = {
+            weekly_manpower = 400
+            army_morale_factor = 0.05
+            army_defence_factor = 0.1
+			}
+		}
+	PAL_Shias = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CRW_Independent_City" }
+			picture = CRW_Independent_City
+			modifier = {
+            weekly_manpower = 300
+            stability_factor = -0.05
+			}
+		}
+	PAL_Tyrants = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CRW_Independent_City" }
+			picture = CRW_Independent_City
+			modifier = {
+            targeted_modifier = {
+			SYR = {
+			breakthrough_bonus_against = 0.2
+			}	
+			}
+			}
+		}	  	      
 ISL_Duel_Fate = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CRW_Independent_City" }
 			picture = CRW_Independent_City
