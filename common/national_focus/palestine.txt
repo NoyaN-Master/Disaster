@@ -256,6 +256,9 @@ focus_tree = {
         prerequisite = { focus = PAL_Against_Tyrants }         
 		completion_reward = {
 		set_cosmetic_tag = United_Arabs_Cosmetic
+		hidden_effect = {
+		country_event = { id = super.9 days = 1}
+		}
 		}
 	}
 }   

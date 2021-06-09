@@ -54,3 +54,41 @@ create_country_leader = {
 		#
 	}
 }
+
+create_field_marshal = {
+	name = "Michel Aflaq"
+	portrait_path = "PAL_Aflaq.tga"
+	traits = {
+
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Amin Al-Husseini"
+	portrait_path = "PAL_The_Mufti.tga"
+	traits = {
+
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Gamel Abdelnasser"
+	portrait_path = "PAL_Nasser.tga"
+	traits = {
+
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
