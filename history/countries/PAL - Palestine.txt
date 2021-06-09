@@ -57,7 +57,7 @@ create_country_leader = {
 
 create_field_marshal = {
 	name = "Michel Aflaq"
-	portrait_path = "PAL_Aflaq.tga"
+	picture = "PAL_Aflaq.tga"
 	traits = {
 
 	}
@@ -70,7 +70,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "Amin Al-Husseini"
-	portrait_path = "PAL_The_Mufti.tga"
+	picture = "PAL_The_Mufti.tga"
 	traits = {
 
 	}
@@ -82,7 +82,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Gamel Abdelnasser"
-	portrait_path = "PAL_Nasser.tga"
+	picture = "PAL_Nasser.tga"
 	traits = {
 
 	}

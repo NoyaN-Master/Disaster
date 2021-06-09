@@ -106,7 +106,7 @@ focus_tree = {
         prerequisite = { focus = PAL_Recruitment_Drive } 
 		completion_reward = {
 		add_timed_idea = {
-		add_idea = PAL_Fatwa
+		idea  = PAL_Fatwa
 		days = 45	
 		}	
 		}
@@ -218,7 +218,7 @@ focus_tree = {
 		completion_reward = {
 			add_manpower = 2000
 			add_timed_idea = {
-		add_idea = PAL_Shias
+		idea = PAL_Shias
 		days = 45	
 		}	
 		}
@@ -237,7 +237,7 @@ focus_tree = {
          
 		completion_reward = {
 			add_timed_idea = {
-		add_idea = PAL_Tyrants
+		idea = PAL_Tyrants
 		days = 45	
 		}	
 		}
@@ -257,7 +257,7 @@ focus_tree = {
 		completion_reward = {
 		set_cosmetic_tag = United_Arabs_Cosmetic
 		hidden_effect = {
-		country_event = { id = super.9 days = 1}
+		set_country_flag = unified_arabia
 		}
 		}
 	}

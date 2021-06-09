@@ -26,7 +26,8 @@ country_event = { #Israel Fitnah # Palestine
         transfer_state = 816
         transfer_state = 869
         add_ideas = PAL_Duel_Fate
-		load_oob = PAL_palestine_milita_favor  
+		load_oob = PAL_palestine_milita_favor 
+        complete_national_focus = PAL_War_Liberation
         }
         ISL = {
         add_state_core = 454
@@ -93,9 +94,8 @@ country_event = { #Palestine Vs Syria
 
 	option = {
 		name = worldwar.3.a
-        PAL = {
         declare_war_on = {
-        target = SYR
+        target = SRY
         type = annex_everything
         }
         add_state_core = 554
@@ -105,9 +105,8 @@ country_event = { #Palestine Vs Syria
         add_state_core = 799
         add_state_core = 553
         load_oob = PAL_syrianoob          
-        }
-    news_event = { id = news.20 }
-}
+        news_event = { id = news.20 }
+    }
 }
 
 country_event = { #Makhno Vs Ukraine

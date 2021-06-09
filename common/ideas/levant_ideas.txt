@@ -2,7 +2,7 @@ ideas = {
 
 country = {
  PAL_Duel_Fate = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CRW_Independent_City" }
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Duel_Fate" }
 			picture = CRW_Independent_City
 			modifier = {
             war_support_factor = 0.50
@@ -12,8 +12,8 @@ country = {
             army_morale_factor = 0.1
 			}
 		}
-  PAL_Fatwa = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CRW_Independent_City" }
+ PAL_Fatwa = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Fatwa" }
 			picture = CRW_Independent_City
 			modifier = {
             weekly_manpower = 400
@@ -21,27 +21,24 @@ country = {
             army_defence_factor = 0.1
 			}
 		}
-	PAL_Shias = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CRW_Independent_City" }
+ PAL_Shias = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Shias" }
 			picture = CRW_Independent_City
 			modifier = {
             weekly_manpower = 300
             stability_factor = -0.05
 			}
 		}
-	PAL_Tyrants = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CRW_Independent_City" }
+ PAL_Tyrants = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Tyrants" }
 			picture = CRW_Independent_City
-			modifier = {
             targeted_modifier = {
-			SYR = {
+			tag = SYR
 			breakthrough_bonus_against = 0.2
 			}	
-			}
-			}
 		}	  	      
 ISL_Duel_Fate = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CRW_Independent_City" }
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISL_Duel_Fate" }
 			picture = CRW_Independent_City
 			modifier = {
             war_support_factor = 0.50
@@ -51,7 +48,6 @@ ISL_Duel_Fate = {
             army_org_factor = 0.15
 			}
 		}           
-
 }
 
 }
