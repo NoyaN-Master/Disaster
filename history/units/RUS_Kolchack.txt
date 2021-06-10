@@ -158,4 +158,14 @@ units = {
 		start_experience_factor = 0.19
 		start_equipment_factor = 0.84
 	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 4685 #Petsamo
+		division_template = "Tankovaya Diviziya"
+		start_experience_factor = 0.19
+		start_equipment_factor = 0.84
+	}
 }

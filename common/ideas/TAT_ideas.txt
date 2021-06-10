@@ -1,147 +1,40 @@
 ideas = {
 
 country = {
-
-TAT_tatar_communism = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
-			picture = TAT_tatar_communism
-			modifier = {
-            stability_factor = 0.05	
-            war_support_factor = 0.05
-            production_factory_max_efficiency_factor = 0.1
-            political_power_gain = 0.05
-			}
-		}
-TAT_Turkic_Arts_idea = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
-			picture = TAT_tatar_communism
-			modifier = {
-            research_speed_factor = 0.07
-			}
-		}		
-TAT_tatar_communism_2 = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
-			picture = TAT_tatar_communism
-			modifier = {
-            stability_factor = 0.10	
-            war_support_factor = 0.05
-            production_factory_max_efficiency_factor = 0.2
-            political_power_gain = 0.005
-			}
-		}
-TAT_tatar_communism_3 = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
-			picture = TAT_tatar_communism
-			modifier = {
-            stability_factor = 0.15
-            war_support_factor = 0.15
-            production_factory_max_efficiency_factor = 0.3
-            political_power_gain = 0.015
-			}
-		}				
-TAT_tatar_army = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
-			picture = TAT_tatar_army
-			modifier = {
-            army_core_defence_factor = 0.1
-            army_speed_factor = 0.10    
-			}
-		}
-TAT_tatar_corps = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
-			picture = TAT_tatar_army
-			modifier = {
-            army_core_defence_factor = 0.1
-            army_speed_factor = 0.10
-			army_org = 1
-			experience_gain_army = 0.3    
-			}
-		}
-TAT_tatar_corps_turan = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
-			picture = TAT_tatar_army
-			modifier = {
-            army_core_defence_factor = 0.1
-            army_speed_factor = 0.20
-			army_org = 1
-			experience_gain_army = 0.3    
-			}
-		}				
-TAT_tatar_feudalism = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
-			picture = TAT_tatar_feudalism
-			modifier = {
-            stability_weekly = -0.003
-            war_support_weekly = -0.003
-			stability_factor = -0.30
-            research_speed_factor = -0.15
-            production_speed_buildings_factor = -0.3
-            autocracy_drift = 0.05	
-			}
-		}
-TAT_tatar_feudalism_2 = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
-			picture = TAT_tatar_feudalism
-			modifier = {
-			stability_factor = -0.15
-            research_speed_factor = -0.15
-            production_speed_buildings_factor = -0.15
-            autocracy_drift = 0.05	
-			}
-		}		
-TAT_backwards_living = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
-			picture = TAT_backwards_living
-			modifier = {
-            conscription = -0.05
-            army_morale_factor = -0.1
-            attrition = 0.1
-            winter_attrition_factor = -0.5
-			}
-		}
-TAT_backwards_living_2 = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
-			picture = TAT_backwards_living
-			modifier = {
-            conscription = -0.05
-            army_morale_factor = -0.1
-            attrition = 0.1
-            winter_attrition_factor = -0.5
-			}
-		}
-TAT_islamic_army_1 = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
-			picture = TAT_backwards_living
-			modifier = {
-            conscription = 0.01
-			cavalry_attack_factor = 0.05
-			army_morale_factor = 0.02
-			}
-		}
-TAT_islamic_army_2 = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
-			picture = TAT_backwards_living
-			modifier = {
-            conscription = 0.04
-			cavalry_attack_factor = 0.05
-			army_morale_factor = 0.04
-			army_core_attack_factor = 0.04
-			}
-		}
-TAT_islamic_army_3 = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
-			picture = TAT_backwards_living
-			modifier = {
-            conscription = 0.04
-			cavalry_attack_factor = 0.05
-			army_morale_factor = 0.04
-			army_core_attack_factor = 0.04
-			}
-		}								
+					
 ##dutov 
 DCS_homecoming = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
 			picture = TAT_tatar_communism
 			targeted_modifier = { tag = TAT attack_bonus_against = 0.1 }
 		}
+RUS_Soviets_Idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
+			picture = TAT_tatar_communism
+			acclimatization_cold_climate_gain_factor = 0.1
+			army_speed_factor = 0.2
+			stability_factor = 0.20
+			army_attack_factor = 0.10
+			attrition = -0.3
+			experience_gain_army_unit_factor = 0.3
+			conscription = 0.03
+			land_night_attack = 0.1
+			no_supply_grace = 12
+			training_time_factor = -0.1
+		}
+RUS_Whites_Idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
+			picture = TAT_tatar_communism
+			acclimatization_cold_climate_gain_factor = 0.1
+			army_speed_factor = 0.2
+			war_support_factor = 0.20
+			army_defence_factor = 0.15
+			army_attack_factor = 0.10
+			army_morale_factor = 0.1
+			army_org_factor = 0.2
+			attrition = -0.3
+			experience_gain_army_unit_factor = 0.3
+			training_time_factor = 0.1
+		}				
+}
 }

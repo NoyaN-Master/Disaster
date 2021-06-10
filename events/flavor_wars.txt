@@ -132,3 +132,204 @@ country_event = { #Makhno Vs Ukraine
         news_event = { id = news.21 }
 }
 }
+country_event = { #Great Russian War
+	id = worldwar.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = worldwar.5.t
+	desc = worldwar.5.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = worldwar.3.a
+        RSR = {
+        #WHITE SIDE    
+        declare_war_on = {
+            target = TSV
+            type = annex_everything
+            }
+        }
+        KRN = {
+        add_to_war = { 
+        targeted_alliance = RSR 
+        enemy = TSV 
+        hostility_reason = asked_to_join
+        }
+        }
+        DCS = {
+        add_to_war = { 
+        targeted_alliance = RSR 
+        enemy = TSV 
+        hostility_reason = asked_to_join
+        }
+        }
+        TRM = {
+        add_to_war = { 
+        targeted_alliance = RSR 
+        enemy = TSV 
+        hostility_reason = asked_to_join
+        }
+        }
+        DTR = {
+        add_to_war = { 
+        targeted_alliance = RSR 
+        enemy = TSV 
+        hostility_reason = asked_to_join
+        }
+        }
+        DNK = {
+        add_to_war = { 
+        targeted_alliance = RSR 
+        enemy = TSV 
+        hostility_reason = asked_to_join
+        }
+        }
+        every_other_country	 = {
+            limit = {
+                is_in_faction_with = RSR
+            }
+            add_ideas = RUS_Whites_Idea
+        }
+        hidden_effect = {
+            country_event = { id = worldwar.6 days = 7 }
+        }
+        TSV = {
+        every_owned_state = {
+        add_core_of = RSR
+        }	
+        }
+        TAT = {
+        every_owned_state = {
+        add_core_of = DCS
+        }	
+        } 
+        FER = {
+        every_owned_state = {
+        add_core_of = DTR
+        }	
+        }
+        KRN = {
+        every_owned_state = {
+        add_core_of = TKH
+        }	
+        }		
+        ####SOVIET SIDE
+        TAT = {
+        add_to_war = { 
+        targeted_alliance = TSV 
+        enemy = RSR 
+        hostility_reason = asked_to_join
+        }
+        }
+        TKH = {
+        add_to_war = { 
+        targeted_alliance = TSV 
+        enemy = RSR 
+        hostility_reason = asked_to_join
+        }
+        }
+        FER = {
+        add_to_war = { 
+        targeted_alliance = TSV 
+        enemy = RSR 
+        hostility_reason = asked_to_join
+        }
+        }
+        RSR = {
+        every_owned_state = {
+        add_core_of = TSV
+        }	
+        }
+        DCS = {
+        every_owned_state = {
+        add_core_of = TAT
+        }	
+        } 
+        DTR = {
+        every_owned_state = {
+        add_core_of = FER
+        }	
+        }
+        TKH = {
+        every_owned_state = {
+        add_core_of = KRN
+        }	
+        }
+        every_other_country	 = {
+            limit = {
+                is_in_faction_with = TSV
+            }
+            add_ideas = RUS_Soviets_Idea
+        }
+        news_event = { id = news.22 }
+}
+}
+
+country_event = { #Eurasianist Revolt
+	id = worldwar.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = worldwar.6.t
+	desc = worldwar.6.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = worldwar.6.a
+        EVR = {
+        transfer_state = 575
+        transfer_state = 576
+        transfer_state = 568
+        transfer_state = 569
+        WSL = {
+        every_owned_state = {
+        add_core_of = EVR
+        }	
+        }
+        TSB = {
+        every_owned_state = {
+        add_core_of = EVR
+        }	
+        }
+            annex_country = {
+            target = WSL
+            transfer_troops = yes
+        }
+        load_oob = baron_oob
+        news_event = { id = news.23 }
+        declare_war_on = {
+            target = TSB
+            type = annex_everything
+            }
+        }
+}
+}
+
+country_event = { #code debug
+	id = worldwar.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = worldwar.31.t
+	desc = worldwar.31.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = worldwar.31.a
+        WSL = {
+        every_owned_state = {
+        add_core_of = EVR
+        }	
+        }
+        }
+}
