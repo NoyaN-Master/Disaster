@@ -154,103 +154,64 @@ IZM_Ethem_government_loyaly = {
 }
 
 CIB_Enver_Script = {
-			if = { 
-			limit = {
-				has_idea = Enver_unification_idea_1
-                }
-				hidden_effect = {
-                add_ideas = Enver_unification_idea_2
-				remove_ideas = Enver_unification_idea_1
-				}
-			}
-			if = { 
-			limit = {
-				has_idea = Enver_unification_idea_2
-                }
-				hidden_effect = {
-                add_ideas = Enver_unification_idea_3
-				remove_ideas = Enver_unification_idea_2
-				}
-			}
-			if = { 
-			limit = {
-				has_idea = Enver_unification_idea_3
-                }
-				hidden_effect = {
-                add_ideas = Enver_unification_idea_4
-				remove_ideas = Enver_unification_idea_3
-				}
-			}
-			if = { 
-			limit = {
-				has_idea = Enver_unification_idea_4
-                }
-				hidden_effect = {
-                add_ideas = Enver_unification_idea_5
-				remove_ideas = Enver_unification_idea_4
-				}
-			}
-			if = { 
-			limit = {
-				has_idea = Enver_unification_idea_5
-                }
-				hidden_effect = {
-                add_ideas = Enver_unification_idea_6
-				remove_ideas = Enver_unification_idea_5
-				}
-			}
-			if = { 
-			limit = {
-				has_idea = Enver_unification_idea_6
-                }
-				hidden_effect = {
-                add_ideas = Enver_unification_idea_7
-				remove_ideas = Enver_unification_idea_6
-				}
-			}
-			if = { 
-			limit = {
-				has_idea = Enver_unification_idea_7
-                }
-				hidden_effect = {
-                add_ideas = Enver_unification_idea_8
-				remove_ideas = Enver_unification_idea_7
-				}
-			}
-			if = { 
-			limit = {
-				has_idea = Enver_unification_idea_8
-                }
-				hidden_effect = {
-                add_ideas = Enver_unification_idea_9
-				remove_ideas = Enver_unification_idea_8
-				}
-			}
-			if = { 
-			limit = {
-				has_idea = Enver_unification_idea_9
-                }
-				hidden_effect = {
-                add_ideas = Enver_unification_idea_10
-				remove_ideas = Enver_unification_idea_9
-				}
-			}
-			if = { 
-			limit = {
-				has_idea = Enver_unification_idea_10
-                }
-				hidden_effect = {
-                add_ideas = Enver_unification_idea_11
-				remove_ideas = Enver_unification_idea_10
-				}
-			}
-			if = { 
-			limit = {
-				has_idea = Enver_unification_idea_11
-                }
-				hidden_effect = {
-                add_ideas = Enver_unification_idea_12
-				remove_ideas = Enver_unification_idea_11
-				}
-			}
-}
+			if = {
+		limit = { has_idea = Enver_unification_idea_1 }
+		swap_ideas = {
+			remove_idea = Enver_unification_idea_1
+			add_idea = Enver_unification_idea_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = Enver_unification_idea_2 }
+		swap_ideas = {
+			remove_idea = Enver_unification_idea_2
+			add_idea = Enver_unification_idea_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = Enver_unification_idea_3 }
+		swap_ideas = {
+			remove_idea = Enver_unification_idea_3
+			add_idea = Enver_unification_idea_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = Enver_unification_idea_4 }
+		swap_ideas = {
+			remove_idea = Enver_unification_idea_4
+			add_idea = Enver_unification_idea_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = Enver_unification_idea_5 }
+		swap_ideas = {
+			remove_idea = Enver_unification_idea_5
+			add_idea = Enver_unification_idea_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = Enver_unification_idea_6 }
+			remove_ideas = Enver_unification_idea_6
+			add_idea = Enver_unification_idea_7
+		}
+	else_if = {
+		limit = { has_idea = Enver_unification_idea_7 }
+			remove_ideas = Enver_unification_idea_7
+			add_idea = Enver_unification_idea_8
+		}
+	else_if = {
+		limit = { has_idea = Enver_unification_idea_8 }
+			remove_ideas = Enver_unification_idea_8
+			add_idea = Enver_unification_idea_9
+		}
+	else_if = {
+		limit = { has_idea = Enver_unification_idea_9 }
+			remove_ideas = Enver_unification_idea_9
+			add_idea = Enver_unification_idea_10
+		}
+	else_if = {
+		limit = { has_idea = Enver_unification_idea_10 }
+			remove_ideas = Enver_unification_idea_10
+			add_idea = Enver_unification_idea_11
+		}				
+	}

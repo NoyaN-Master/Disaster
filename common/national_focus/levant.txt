@@ -1,5 +1,5 @@
 focus_tree = {
-	id = anatolia_focus
+	id = levant_focus
 	country = {
 		factor = 0
 		modifier = {
@@ -124,6 +124,9 @@ focus_tree = {
 		prerequisite = { focus = LEV_Operation_Lehi }
 		ai_will_do = {
 			factor = 1
+		}
+		select_effect = {
+		country_event = { id = worldwar.7 days = 30}	
 		}
 		completion_reward = {
 			custom_effect_tooltip = Lehi_Rewire_tt
