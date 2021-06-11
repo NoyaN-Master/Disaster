@@ -160,6 +160,14 @@ Atsiz_DaCult = {
 			war_support_factor = 0.20
 			}
 		}
+atsiz_fucksarabs = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
+			#picture = WRF_Tekalif
+			modifier = {
+			targeted_modifier = { tag = ARM attack_bonus_against = 0.15 }
+			targeted_modifier = { tag = ARM defense_bonus_against = 0.1 }
+			}
+		}		
 Atsiz_Drugs = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
 			#picture = WRF_Tekalif
