@@ -808,7 +808,22 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		SYR = {
+		every_owned_state = {
+			add_core_of = WRF
+		}	
+		}
+		IQR = {
+		every_owned_state = {
+			add_core_of = WRF
+		}	
+		}
+		PAL = {
+		every_owned_state = {
+			add_core_of = WRF
+		}	
+		}
+		add_war_support = 0.20
 		hidden_effect = {
 		}
 		}
@@ -816,7 +831,7 @@ focus_tree = {
 	focus = {
 		id = WRF_Conquest_Iraq
 		icon = GFX_goal_WRF_Italy
-		x = 27
+		x = 28
 		y = 2
 		cost = 2
 		available_if_capitulated = yes
@@ -825,7 +840,18 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
+			declare_war_on = {
+    		target = IQR
+    		type = annex_everything
+			}
+			declare_war_on = {
+    		target = SYR
+    		type = annex_everything
+			} 
+			declare_war_on = {
+    		target = PAL
+    		type = annex_everything
+			}  
 		hidden_effect = {
 		}
 		}
@@ -839,6 +865,12 @@ focus_tree = {
 		available_if_capitulated = yes
         prerequisite = { focus = WRF_Conquest_Iraq }
 		prerequisite = { focus = WRF_Conquest_Syria }
+		available = { NOT = {
+		country_exists = IQR
+		country_exists = SYR
+		country_exists = PAL	
+		}
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -851,7 +883,7 @@ focus_tree = {
 	focus = {
 		id = WRF_Conquest_Iran
 		icon = GFX_goal_WRF_Italy
-		x = 30
+		x = 29
 		y = 4
 		cost = 2
 		available_if_capitulated = yes
@@ -860,24 +892,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
-		hidden_effect = {
-		}
-		}
-	}
-	focus = {
-		id = WRF_Conquer_Palestine
-		icon = GFX_goal_WRF_Italy
-		x = 26
-		y = 4
-		cost = 2
-		available_if_capitulated = yes
-		prerequisite = { focus = WRF_Kommisariat_System }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		
+		declare_war_on = {
+    		target = INR
+    		type = annex_everything
+			}
 		hidden_effect = {
 		}
 		}
@@ -891,6 +909,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_Conquest_Iran }
 		prerequisite = { focus = WRF_Kommisariat_System focus = WRF_Conquer_Palestine focus = WRF_Conquer_Arabia}
+		available = { NOT = {
+		country_exists = HJZ
+		country_exists = INR
+		country_exists = ARB	
+		}
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -903,7 +927,7 @@ focus_tree = {
 	focus = {
 		id = WRF_Conquer_Arabia
 		icon = GFX_goal_WRF_Italy
-		x = 28
+		x = 27
 		y = 4
 		cost = 2
 		available_if_capitulated = yes
@@ -912,7 +936,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		declare_war_on = {
+    		target = HJZ
+    		type = annex_everything
+			}
+		declare_war_on = {
+    		target = ARB
+    		type = annex_everything
+			}	
 		hidden_effect = {
 		}
 		}
@@ -929,7 +960,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
+			declare_war_on = {
+    		target = AFG
+    		type = annex_everything
+			}
+			declare_war_on = {
+    		target = BHR
+    		type = annex_everything
+			}
 		hidden_effect = {
 		}
 		}
@@ -1003,21 +1041,5 @@ focus_tree = {
 		}
 		}
 	}
-	focus = {
-		id = WRF_Conquest_Syria
-		icon = GFX_goal_WRF_Italy
-		x = 29
-		y = 2
-		cost = 2
-		available_if_capitulated = yes
-        prerequisite = { focus = WRF_MiddleEast_Plan}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		
-		hidden_effect = {
-		}
-		}
-	}
+	
 }    

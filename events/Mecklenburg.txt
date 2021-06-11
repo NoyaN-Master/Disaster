@@ -39,7 +39,10 @@ country_event = { #protests dispersed
 		name = mek.3.a
 		ai_chance = { factor = 1}
 		hidden_effect = {
-		    NGU = { country_event = { id = mek.4 days = 1 }}
+		    NGU = {
+			country_event = { id = mek.4 days = 1 }
+			complete_national_focus = NGU_Mecklenburg_Crisis
+			}
 		}
 	}
 }

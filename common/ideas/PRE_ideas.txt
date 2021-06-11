@@ -47,6 +47,16 @@ PRE_widespread_protests = {
 			drift_defence_factor = -0.18
 			}
 		}
+
+		PRE_DAB_effect = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_widespread_protests" }
+			picture = discontent
+			modifier = {
+			stability_factor = -0.12
+			political_power_factor = -0.15
+			army_core_defence_factor = -0.1
+			}
+		}
 		
 PRE_ongoing_protests = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_ongoing_protests" }
