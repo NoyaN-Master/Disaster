@@ -145,7 +145,10 @@ country_event = { #Operation Engels
         IZM = {
         add_stability = -0.20
         add_war_support = -0.20
-        add_ideas = ANT_Bombed_Warlord   
+        add_timed_idea = {
+        idea = ANT_Bombed_Warlord
+        days = 120   
+        }   
         }
     }
 }
@@ -163,7 +166,10 @@ country_event = { #Operation Smith
         OTH = {
         add_stability = -0.20
         add_war_support = -0.20
-        add_ideas = ANT_Bombed_Warlord   
+        add_timed_idea = {
+        idea = ANT_Bombed_Warlord
+        days = 120   
+        }    
         }
     }
 }

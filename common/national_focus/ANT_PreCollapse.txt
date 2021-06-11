@@ -71,7 +71,7 @@ focus_tree = {
 		icon = GFX_goal_ANT_fixing
 		x = 10
 		y = 4
-		cost = 2
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_fight_anarchy }
 		ai_will_do = {
@@ -87,7 +87,7 @@ focus_tree = {
 		icon = GFX_goal_ANT_Engels
 		x = 9
 		y = 5
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_Assume_Full_Control }
 		ai_will_do = {
@@ -103,7 +103,7 @@ focus_tree = {
 		icon = GFX_goal_ANT_Smith
 		x = 11
 		y = 5
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_Assume_Full_Control }
 		ai_will_do = {
@@ -119,7 +119,7 @@ focus_tree = {
 		icon = GFX_goal_ANT_Siege
 		x = 10
 		y = 6
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_Operation_Smith }
 		prerequisite = { focus = ANT_Operation_Engels }
@@ -136,7 +136,7 @@ focus_tree = {
 		icon = GFX_goal_ANT_Sledge
 		x = 10
 		y = 7
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_Siege_Capital }
 		

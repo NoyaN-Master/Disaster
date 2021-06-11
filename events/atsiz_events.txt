@@ -283,11 +283,17 @@ country_event = { #Armenian Uprising
         230 = {
         create_unit = {
         division = "name = \"Armenian Revolters\" division_template = \"Bandits\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+        owner = ARM
+        }
+        create_unit = {
         division = "name = \"Armenian Revolters\" division_template = \"Bandits\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+        owner = ARM
+        }
+        create_unit = {
         division = "name = \"Armenian Revolters\" division_template = \"Bandits\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
-        division = "name = \"Armenian Revolters\" division_template = \"Bandits\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
-        division = "name = \"Armenian Revolters\" division_template = \"Bandits\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
-        division = "name = \"Armenian Revolters\" division_template = \"Bandits\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+        owner = ARM
+        }
+        create_unit = {
         division = "name = \"Armenian Revolters\" division_template = \"Bandits\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
         owner = ARM
         }
@@ -295,7 +301,17 @@ country_event = { #Armenian Uprising
         835 = {
         create_unit = {
         division = "name = \"Armenian Revolters\" division_template = \"Bandits\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+        owner = ARM
+        }
+        create_unit = {
         division = "name = \"Armenian Revolters\" division_template = \"Bandits\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+        owner = ARM
+        }
+        create_unit = {
+        division = "name = \"Armenian Revolters\" division_template = \"Bandits\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+        owner = ARM
+        }
+        create_unit = {
         division = "name = \"Armenian Revolters\" division_template = \"Bandits\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
         owner = ARM
         }
@@ -303,11 +319,17 @@ country_event = { #Armenian Uprising
         800 = {
         create_unit = {
         division = "name = \"Armenian Revolters\" division_template = \"Bandits\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
-        division = "name = \"Armenian Revolters\" division_template = \"Bandits\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+        owner = ARM
+        }
+        create_unit = {
         division = "name = \"Armenian Revolters\" division_template = \"Bandits\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
         owner = ARM
         }
         }
+        declare_war_on = {
+    	target = WRF
+    	type = annex_everything
+		}
         }
 
 	}

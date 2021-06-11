@@ -13,7 +13,7 @@ focus_tree = {
 		id = WRF_adanan_ammunition
 		icon = GFX_goal_fevzi_icon
 		x = 12
-		y = 3
+		y = 4
 		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_trk_kurtulu_ordusu }
@@ -47,55 +47,13 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Kemal's Speech
-	focus = {
-		id = WRF_kemals_speech
-		icon = GFX_goal_WRF_Kemal_Speech
-		x = 3
-		y = 5
-		cost = 3
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = WRF_bullets_are_cheap_not_men 
-		}
-		prerequisite = { 
-			focus = WRF_operation_yahya 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		custom_effect_tooltip = WRF_Kemal_Speech
-		hidden_effect = {
-		country_event = { id = wrf.15 days = 3 }
-		}
-		}
-	}
-
-
-	#Focus for Operation YAHYA
-	focus = {
-		id = WRF_operation_yahya
-		icon = GFX_goal_agent
-		x = 5
-		y = 4
-		cost = 3
-		available_if_capitulated = yes
-		prerequisite = { focus = WRF_ajan_tekilat }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		custom_effect_tooltip = WRF_Yahya
-		}
-	}
 
 	#Focus for Thracian Livestock
 	focus = {
 		id = WRF_thracian_livestock
 		icon = GFX_goal_ismet
 		x = 8
-		y = 3
+		y = 4
 		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_trk_kurtulu_ordusu }
@@ -135,7 +93,7 @@ focus_tree = {
 		id = WRF_under_the_crescent
 		icon = GFX_goal_WRF_Crescent
 		x = 6
-		y = 1
+		y = 2
 		cost = 3
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -198,8 +156,8 @@ focus_tree = {
 	focus = {
 		id = WRF_artillery_doctrines
 		icon = GFX_goal_artillery
-		x = 1
-		y = 3
+		x = 2
+		y = 4
 		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_lessons_of_the_revolt }
@@ -223,7 +181,7 @@ focus_tree = {
 		icon = GFX_goal_wrf_peker
 		x = 10
 		y = 6
-		cost = 4
+		cost = 3
 		available_if_capitulated = yes
 		available = { has_country_flag = WRF_receipt_done  } 
 		prerequisite = { 
@@ -254,7 +212,7 @@ focus_tree = {
 		id = WRF_trk_kurtulu_ordusu
 		icon = GFX_goal_kurtulus
 		x = 10
-		y = 2
+		y = 3
 		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_under_the_crescent }
@@ -294,7 +252,7 @@ focus_tree = {
 		y = 6
 		cost = 3
 		available_if_capitulated = yes
-		prerequisite = { focus = WRF_kemals_speech }
+		prerequisite = { focus = WRF_bullets_are_cheap_not_men }
 		ai_will_do = {
 			factor = 1
 		}
@@ -309,7 +267,7 @@ focus_tree = {
 		id = WRF_lessons_of_the_revolt
 		icon = GFX_goal_WRF_Revolt_Lesson
 		x = 3
-		y = 2
+		y = 3
 		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_under_the_crescent }
@@ -327,8 +285,8 @@ focus_tree = {
 	focus = {
 		id = WRF_ajan_tekilat
 		icon = GFX_goal_WRF_Trying_PSD
-		x = 5
-		y = 3
+		x = 4
+		y = 4
 		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_lessons_of_the_revolt }
@@ -344,11 +302,12 @@ focus_tree = {
 	focus = {
 		id = WRF_bullets_are_cheap_not_men
 		icon = GFX_goal_WRF_Old_Discipline
-		x = 1
-		y = 4
+		x = 3
+		y = 5
 		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_artillery_doctrines }
+		prerequisite = { focus = WRF_ajan_tekilat }
 		ai_will_do = {
 			factor = 1
 		}
@@ -367,7 +326,7 @@ focus_tree = {
 		icon = GFX_goal_agents_2
 		x = 8
 		y = 5
-		cost = 3
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_thracian_livestock }
 		available = { has_completed_focus = WRF_ajan_tekilat }
@@ -392,7 +351,7 @@ focus_tree = {
 		icon = GFX_goal_tekalif
 		x = 12
 		y = 5
-		cost = 3
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_adanan_ammunition }
 		ai_will_do = {
@@ -417,7 +376,7 @@ focus_tree = {
 		icon = GFX_goal_wrf_smyrna
 		x = 6
 		y = 7
-		cost = 3
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = WRF_send_peker_to_rome 

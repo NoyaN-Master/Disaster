@@ -28,6 +28,9 @@ division_template = {
 	}
 }
 
+units = {
+
+
 division= {	# "4. Division"			# Used to form 45. Infanterie--division post-Anschluss
 		division_name = {
 				is_name_ordered = yes
@@ -108,3 +111,4 @@ division= {	# "4. Division"			# Used to form 45. Infanterie--division post-Ansch
 		start_equipment_factor = 1.0
 
 	}
+}	

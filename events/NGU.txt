@@ -58,6 +58,7 @@ country_event = { #The Red Baron - Food For Families
 	}
     option = {
 		name = ngu.2.b
+		ai_chance = { factor = 100}
         custom_effect_tooltip = ngu_goebbels_influence
         random_owned_province = {
         add_building_construction = {
@@ -101,6 +102,7 @@ country_event = { #The Red Baron - Legacy Marx
 
     option = {
 		name = ngu.3.b
+		ai_chance = { factor = 100}
         custom_effect_tooltip = ngu_goebbels_influence
         add_stability = 0.05
 		hidden_effect = {
@@ -144,6 +146,7 @@ country_event = { #The Red Baron - Class Warfare
 	}
     option = {
 		name = ngu.4.b
+		ai_chance = { factor = 100}
         custom_effect_tooltip = ngu_goebbels_influence
         add_stability = 0.05
         random_owned_province = {
@@ -187,6 +190,7 @@ country_event = { #The Red Baron - Question Of Paramilitaries
 	}
     option = {
 		name = ngu.5.b
+		ai_chance = { factor = 100}
         custom_effect_tooltip = ngu_goebbels_influence
         swap_ideas = {
         remove_idea = NGU_paramilitary_problem

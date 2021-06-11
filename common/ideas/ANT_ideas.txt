@@ -19,7 +19,7 @@ ANT_Bombed_Warlord = {
 			picture = ANT_Failed_State
 			modifier = {
 			army_morale_factor = -0.05			
-			army_attack_factor = -1.0
+			army_attack_factor = -0.1
 			production_factory_max_efficiency_factor = -0.2
 			}
 		}		

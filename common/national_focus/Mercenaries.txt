@@ -57,7 +57,8 @@ focus_tree = {
 		select_effect = {
 		}
 		completion_reward = {
-        add_ideas = OTH_MSF    
+        add_ideas = OTH_MSF
+		complete_national_focus = OTH_Anatolia_Sector    
         }
 	}
 
@@ -347,6 +348,20 @@ focus_tree = {
         prerequisite = { focus = OTH_Officery }
 		select_effect = {
 		}
+		available = {
+        NOT = {
+        country_exists = CLP
+        country_exists = WRF
+        country_exists = TIT
+        country_exists = CIB 
+        country_exists = OTH
+        country_exists = SKL
+        country_exists = ANK
+        country_exists = KLG
+        country_exists = THR
+        country_exists = ADN   
+        }    
+        }
 		completion_reward = {
         country_event = { id = ant.22 days = 2 }    
         }
