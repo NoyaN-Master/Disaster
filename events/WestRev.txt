@@ -1017,6 +1017,7 @@ country_event = { #TACHANKA 2 enver
 	option = { 
 		name = wrf.39.a
 		 add_stability = -0.1
+		 ai_chance = { factor = 50}
 		 WRF = {
 		 WRF_atsiz_annex = yes
 		 country_event { id = wrf.43 }
@@ -1025,7 +1026,8 @@ country_event = { #TACHANKA 2 enver
 	
 	option = { 
 		name = wrf.39.b
-		 add_stability = -0.2
+		ai_chance = { factor = 30}
+		add_stability = -0.2
 		declare_war_on = {
         target = WRF
         type = annex_everything

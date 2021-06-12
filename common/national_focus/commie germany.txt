@@ -324,7 +324,6 @@ focus = {
         prerequisite = { focus = NGU_denounce_jewry }
 		available = { always = no }											
 		completion_reward = {
-		add_ideas = NGU_Strasser_HoG
 		}
 	}
 focus = {
@@ -461,7 +460,7 @@ focus = {
 		cost = 3
         prerequisite = { 
         focus = NGU_strasser_welfare
-        focus = NGU_hitler_eastern_influences    
+        focus = NGU_german_history    
         }
 prerequisite = { 
         focus = NGU_Expand_Academia
@@ -500,11 +499,10 @@ focus = {
         prerequisite = { focus = NGU_denounce_jewry }
 		available = { always = no }								
 		completion_reward = {
-		add_ideas = NGU_Hitler_HoG
 		}
 	}
 focus = {
-		id = NGU_hitler_move_right
+		id = NGU_unite_the_nation
 		icon = GFX_goal_hitler_first
 		x = 14
 		y = 8
@@ -529,12 +527,12 @@ focus = {
 		}
 	}
 focus = {
-		id = NGU_hitler_total_war
+		id = NGU_total_war
 		icon = GFX_goal_fund_nad
 		x = 14
 		y = 9
 		cost = 3
-        prerequisite = { focus = NGU_choose_hitler }								
+        prerequisite = { focus = NGU_unite_the_nation }								
 		completion_reward = {
 		swap_ideas = {
 		remove_idea = NGU_Official_Military
@@ -543,12 +541,12 @@ focus = {
 		}
 	}
 focus = {
-		id = NGU_hitler_eastern_influences
+		id = NGU_german_history
 		icon = GFX_goal_hitler_conan
 		x = 14
 		y = 10
 		cost = 3
-        prerequisite = { focus = NGU_choose_hitler }								
+        prerequisite = { focus = NGU_total_war }								
 		completion_reward = {
 		
 		}
@@ -610,38 +608,6 @@ focus = {
 		cost = 3
         prerequisite = { focus = NGU_Die_Wacht_am_Ost}				
 		completion_reward = {
-		add_building_construction = {
-    	type = bunker
-    	level = 10
-    	instant_build = yes
-    	province = {
-        9238
-    	}
-		}
-		add_building_construction = {
-    	type = bunker
-    	level = 10
-    	instant_build = yes
-    	province = {
-        9375
-    	}
-		}
-		add_building_construction = {
-    	type = bunker
-    	level = 10
-    	instant_build = yes
-    	province = {
-        11468
-    	}
-		}
-		add_building_construction = {
-    	type = bunker
-    	level = 10
-    	instant_build = yes
-    	province = {
-        6325
-    	}
-		}
 		}
 	}
 focus = {
