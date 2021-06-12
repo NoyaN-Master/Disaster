@@ -1018,6 +1018,7 @@ country_event = { #TACHANKA 2 enver
 		name = wrf.39.a
 		 add_stability = -0.1
 		 WRF = {
+		 WRF_atsiz_annex = yes
 		 country_event { id = wrf.43 }
 		 }
 	}
