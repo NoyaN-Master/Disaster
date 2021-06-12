@@ -49,6 +49,10 @@ leader_traits = {
 		production_speed_buildings_factor = 0.3
 		trade_laws_cost_factor = 0.5	
 	}
+
+	hog_blank = {
+		random = no
+	}
 	
 	humanist_poet = {
 		random = no

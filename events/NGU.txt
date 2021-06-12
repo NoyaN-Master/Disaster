@@ -278,4 +278,63 @@ country_event = { #scleswig coup
 		add_stability = 0.05
 		political_power = -120
 	}
+
+}
+country_event = { # Berling Becomes Capital
+	id = ngu.8
+	title = ngu.8.t
+	desc = ngu.8.d
+	fire_only_once = yes
+	
+	trigger = {
+	tag = NGU
+	NOT = {
+		country_exists = PRE
+	}
+	owns_state = 64	
+	}
+
+	mean_time_to_happen = {
+		days = 4
+	}
+	
+	option = {
+		name = ngu.8.a
+		ai_chance = { factor = 100}
+		set_capital = 64
+		add_state_core = 64
+		add_stability = 0.15
+	}
+}
+
+country_event = { # Berling Becomes Capital
+	id = ngu.9
+	title = ngu.9.t
+	desc = ngu.9.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ngu.9.a
+		ai_chance = { factor = 20}
+		add_ideas = NGU_Hitler_HoG
+		complete_national_focus = NGU_choose_hitler
+		set_politics = {
+		ruling_party = revolutionary_nationalist
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+		}
+		set_popularities = {
+		revolutionary_nationalist = 50
+		unisocialist = 50
+		} 
+	}
+
+	option = {
+		name = ngu.9.a
+		ai_chance = { factor = 20}
+		add_ideas = NGU_Strasser_HoG
+		complete_national_focus = NGU_choose_strasser
+	}
 }
