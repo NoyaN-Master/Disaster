@@ -25,6 +25,9 @@ TUR_unification_category = {
         has_government = authoritarian_democrat
         }  
         complete_effect = {
+        CIB = { every_unit_leader = { set_nationality = WRF } }
+        IZM = { every_unit_leader = { set_nationality = WRF } }
+        OTH = { every_unit_leader = { set_nationality = WRF } }
         set_cosmetic_tag = WRF_Ataturk_Cosmetic
         add_stability = -0.30
         custom_effect_tooltip = ANT_unif_focus_tt
@@ -164,6 +167,9 @@ TUR_unification_category = {
         owns_state = 349
         owns_state = 797
         }
+        WRF = { every_unit_leader = { set_nationality = CIB } }
+        IZM = { every_unit_leader = { set_nationality = CIB } }
+        OTH = { every_unit_leader = { set_nationality = CIB } }
         visible = {
         original_tag = CIB
         has_country_flag = enver_charge
@@ -210,6 +216,9 @@ TUR_unification_category = {
         has_country_flag = samet_charge
         }  
         complete_effect = {
+        WRF = { every_unit_leader = { set_nationality = CIB } }
+        IZM = { every_unit_leader = { set_nationality = CIB } }
+        OTH = { every_unit_leader = { set_nationality = CIB } }
         set_cosmetic_tag = CIB_Samet
         load_focus_tree = samet_tree
         hidden_effect = {
@@ -375,7 +384,7 @@ TUR_Milita_Raise = {
         has_country_flag = unification_ethem    
         }
         }
-        days_remove = 25
+        days_remove = 50
         complete_effect = {  
         }
         cost = 50
@@ -392,7 +401,7 @@ TUR_Milita_Raise = {
             }
 		add_equipment_to_stockpile = {
 		type = infantry_equipment
-		amount = 2000
+		amount = 1000
 		producer = IZM
 		}
 	
@@ -400,5 +409,172 @@ TUR_Milita_Raise = {
             }    
         }  
       }
+
+}
+
+WRF_Border_Guard_category = {
+WRF_Syrian_Partition = {
+	    fire_only_once = yes
+		cost = 0
+        allowed = {
+        tag = WRF
+        OR = {
+        has_country_flag = debug_TR
+        has_completed_focus = WRF_Form_BorderGuard
+        }
+        }
+        available  = {
+        owns_state = 799
+        owns_state = 817
+        owns_state = 680
+        owns_state = 677
+        owns_state = 680
+        owns_state = 554
+        owns_state = 553
+        }
+        visible = {
+        original_tag = WRF
+        OR = {
+        has_country_flag = debug_TR
+        has_completed_focus = WRF_Form_BorderGuard
+        }
+        }    
+        complete_effect = {
+        release_puppet = SRY
+        transfer_state = 799
+        transfer_state = 817
+        SRY = {
+        set_cosmetic_tag = SRY_Turkish_Puppet
+        set_politics = {
+	        ruling_party = autocratic
+            elections_allowed = no
+            last_election = "1935.12.17"
+            election_frequency = 48
+            }
+            create_country_leader = {
+	        name = "Samet Türkoğlu"
+	        desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	        picture   = "disaster\gfx\leaders\CIB\Portrait_CIB_Samet.tga"
+	        expire = "1965.1.1"
+	        ideology = autocratic_subideology
+	        traits = {
+	        }
+            }
+            transfer_state = 553
+        }
+		hidden_effect = {
+        }
+        }
+     ai_will_do = {
+			factor = 1000
+		}
+}
+WRF_Iraqi_Partition = {
+	    fire_only_once = yes
+		cost = 0
+        allowed = {
+        tag = WRF
+        OR = {
+        has_country_flag = debug_TR
+        has_completed_focus = WRF_Form_BorderGuard
+        }
+        }
+        available  = {
+        owns_state = 676
+        owns_state = 818
+        owns_state = 832
+        owns_state = 291
+        }
+        visible = {
+        original_tag = WRF
+        OR = {
+        has_country_flag = debug_TR
+        has_completed_focus = WRF_Form_BorderGuard
+        }
+        }   
+        complete_effect = {
+        release_puppet = IQR
+        transfer_state = 818
+        transfer_state = 676
+        IQR = {
+        set_cosmetic_tag = IQR_Turkish_Puppet
+            set_politics = {
+	        ruling_party = autocratic
+            elections_allowed = no
+            last_election = "1935.12.17"
+            election_frequency = 48
+            }
+            create_country_leader = {
+	        name = "Fahrettin Türkkan"
+	        desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	        picture   = "disaster\gfx\leaders\WRF\Portrait_OTT_Omer_Fahrettin_Turkkan.tga"
+	        expire = "1965.1.1"
+	        ideology = autocratic_subideology
+	        traits = {
+	        }
+            }
+        }
+		hidden_effect = {
+        }
+        }
+}
+
+
+
+WRF_Palestinian_Partition = {
+	    fire_only_once = yes
+		cost = 0
+        allowed = {
+        tag = WRF
+        OR = {
+        has_country_flag = debug_TR
+        has_completed_focus = WRF_Form_BorderGuard
+        }
+        }
+        available  = {
+        owns_state = 868
+        owns_state = 869
+        owns_state = 454
+        owns_state = 453
+        }
+        visible = {
+        original_tag = WRF
+        OR = {
+        has_country_flag = debug_TR
+        has_completed_focus = WRF_Form_BorderGuard
+        }
+        }  
+        complete_effect = {
+        PAL = {
+        set_cosmetic_tag = PAL_Turkish_Puppet
+            set_politics = {
+	        ruling_party = autocratic
+            elections_allowed = no
+            last_election = "1935.12.17"
+            election_frequency = 48
+            }
+            create_country_leader = {
+	        name = "Amin Al Husseini"
+	        desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	        picture   = "PAL_The_Mufti.tga"
+	        expire = "1965.1.1"
+	        ideology = autocratic_subideology
+	        traits = {
+	        }
+            }
+        transfer_state = 868
+        transfer_state = 869
+        transfer_state = 454
+        transfer_state = 453    
+        }
+        puppet = PAL
+		hidden_effect = {
+        }
+        }
+     ai_will_do = {
+			factor = 1000
+		}
+}
+
 
 }

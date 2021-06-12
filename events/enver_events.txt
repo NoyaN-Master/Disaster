@@ -130,6 +130,7 @@ country_event = { #Annex AZR
         hidden_effect = {
         country_event = { id = enver.7 days = 5} 
         }
+		news_event = { id = news.2 days = 1 }
 	}
 }
 

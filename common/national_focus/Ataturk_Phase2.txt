@@ -1020,7 +1020,7 @@ focus = {
  ###Fevzi
  focus = {
 		id = WRF_Fevzi_Chosen
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_WRF_FevziChosen
 		x = 10
 		y = 7
 		cost = 3
@@ -1039,7 +1039,7 @@ focus = {
 	}
  focus = {
 		id = WRF_Reinforce_SOL
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_WRF_SOL
 		x = 10
 		y = 8
 		cost = 3
@@ -1071,7 +1071,7 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		add_war_support = 0.10
 		hidden_effect = {
 		}
 		}
@@ -1096,7 +1096,7 @@ focus = {
 		}
 	}
 	focus = {
-		id = WRF_Liberate_Haleb
+		id = WRF_Destroy_Arabics
 		icon = GFX_goal_WRF_disaster
 		x = 14
 		y = 11
@@ -1109,20 +1109,23 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		declare_war_on = {
+    	target = PAL
+    	type = annex_everything
+		}
 		hidden_effect = {
 		}
 		}
 	}
 	focus = {
-		id = WRF_Operation_Druze
+		id = WRF_War_Logistics
 		icon = GFX_goal_WRF_disaster
-		x = 14
+		x = 13
 		y = 12
 		cost = 3
 		available_if_capitulated = yes
         prerequisite = { 
-			focus = WRF_Liberate_Haleb 
+			focus = WRF_Destroy_Arabics 
 		}
 		ai_will_do = {
 			factor = 1
@@ -1134,61 +1137,76 @@ focus = {
 		}
 	}
 	focus = {
-		id = WRF_End_Baath
+		id = WRF_Form_BorderGuard
 		icon = GFX_goal_WRF_disaster
 		x = 15
-		y = 13
+		y = 12
 		cost = 3
 		available_if_capitulated = yes
-		mutually_exclusive = { focus = WRF_End_Zionists }
         prerequisite = { 
-			focus = WRF_Operation_Druze 
+			focus = WRF_Destroy_Arabics 
+		}
+		available = {
+		NOT = {
+			    country_exists = SRY
+			    country_exists = IQR
+				country_exists = PAL
+		}	
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		unlock_decision_category_tooltip = WRF_Border_Guard_category
 		hidden_effect = {
 		}
 		}
 	}
 	focus = {
-		id = WRF_End_Zionists
+		id = WRF_Iranian_Operation
 		icon = GFX_goal_WRF_disaster
-		x = 13
+		x = 14
 		y = 13
 		cost = 3
 		available_if_capitulated = yes
-		mutually_exclusive = { focus = WRF_End_Baath }
         prerequisite = { 
-			focus = WRF_Operation_Druze 
+			focus = WRF_Form_BorderGuard
+			focus = WRF_War_Logistics  
+		}
+		available = {	
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		INR = {
+		country_event = { id = fevzi.13 days = 1 }	
+		}
 		hidden_effect = {
 		}
 		}
 	}
 	focus = {
-		id = WRF_Operation_Safavid
+		id = WRF_Threaten_Greece
 		icon = GFX_goal_WRF_disaster
 		x = 14
 		y = 14
 		cost = 3
 		available_if_capitulated = yes
         prerequisite = { 
-			focus = WRF_End_Baath 
-			focus = WRF_End_Zionists 
+			focus = WRF_Iranian_Operation  
+		}
+		available = {	
 		}
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+		}
 		completion_reward = {
-		
+		GRE = {
+		country_event = { id = tur.14 days = 1 }	
+		}
 		hidden_effect = {
 		}
 		}
@@ -1201,7 +1219,7 @@ focus = {
 		cost = 3
 		available_if_capitulated = yes
         prerequisite = { 
-			focus = WRF_Operation_Safavid  
+			focus = WRF_Threaten_Greece  
 		}
 		ai_will_do = {
 			factor = 1
@@ -1214,7 +1232,7 @@ focus = {
 	}			
  focus = {
 		id = WRF_Status_Quo
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_CIB_Kemalist_Castle
 		x = 9
 		y = 9
 		cost = 3
@@ -1236,7 +1254,7 @@ focus = {
 	}
  focus = {
 		id = WRF_Easen_Religion
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_WRF_Religion
 		x = 8
 		y = 10
 		cost = 3
@@ -1258,7 +1276,7 @@ focus = {
 	}
 	focus = {
 		id = WRF_Reconcile_Old
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_WRF_Old
 		x = 7
 		y = 11
 		cost = 3
@@ -1277,7 +1295,7 @@ focus = {
 	}
 	focus = {
 		id = WRF_National_Schools
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_WRF_Schools
 		x = 8
 		y = 12
 		cost = 3
@@ -1299,7 +1317,7 @@ focus = {
 	}
 	focus = {
 		id = WRF_Harbiye_Control
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_WRF_Harbiye
 		x = 7
 		y = 13
 		cost = 3
@@ -1324,7 +1342,7 @@ focus = {
 	}
 	focus = {
 		id = WRF_Party_Factions
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_WRF_Faction
 		x = 11
 		y = 13
 		cost = 3
@@ -1414,7 +1432,7 @@ focus = {
 	}
 	focus = {
 		id = WRF_Pashaliks
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_WRF_Pasha
 		x = 10
 		y = 12
 		cost = 3
@@ -1436,7 +1454,7 @@ focus = {
 	}
 	focus = {
 		id = WRF_AntImperialism
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_WRF_Imperialism
 		x = 9
 		y = 13
 		cost = 3
@@ -1460,7 +1478,7 @@ focus = {
 	}
 	focus = {
 		id = WRF_Reis
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_WRF_Reis
 		x = 9
 		y = 14
 		cost = 3
@@ -1485,7 +1503,7 @@ focus = {
 	}
 	focus = {
 		id = WRF_Reconcile_Young
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_WRF_Young
 		x = 11
 		y = 11
 		cost = 3
@@ -1504,7 +1522,7 @@ focus = {
 	}
  focus = {
 		id = WRF_Anatolianism
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_WRF_Anatolianism
 		x = 9
 		y = 11
 		cost = 3
@@ -1531,7 +1549,7 @@ focus = {
 	}	
  focus = {
 		id = WRF_Clear_Reformists
-		icon = GFX_goal_WRF_disaster
+		icon = GFX_goal_WRF_Reformists
 		x = 10
 		y = 10
 		cost = 3

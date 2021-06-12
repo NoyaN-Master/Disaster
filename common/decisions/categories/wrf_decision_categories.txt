@@ -32,3 +32,31 @@ IZM_milita_category = {
 	}
 	visible_when_empty = yes
 }
+
+WRF_Border_Guard_category = {
+	icon = GFX_decision_category_generic_political_actions
+
+	picture = Decision_picture_anatolia_influence
+	priority = 80
+	allowed = {
+		original_tag  = WRF
+		visible = {
+        original_tag = WRF
+        OR = {
+        has_country_flag = debug_TR
+        has_completed_focus = WRF_Form_BorderGuard
+        }
+        }  
+	}
+	visible = {
+		original_tag  = WRF
+		visible = {
+        original_tag = WRF
+        OR = {
+        has_country_flag = debug_TR
+        has_completed_focus = WRF_Form_BorderGuard
+        }
+        }  
+	}
+	visible_when_empty = no
+}

@@ -1,0 +1,191 @@
+capital = 195
+oob = ""
+
+# Starting tech
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		mtg_transport = 1
+	}
+}
+
+set_research_slots = 4
+set_convoys = 50
+set_stability = 0.50
+set_war_support = 0.50
+
+
+set_politics = {
+	ruling_party = authoritarian_socialist
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+
+}
+set_popularities = {
+	conservative = 0
+	liberal = 0
+	social_democrat = 0
+	libertarian_socialist = 30
+	authoritarian_socialist = 50
+	unisocialist = 20
+	authoritarian_democrat = 0
+	autocratic = 0
+	ultranationalist = 0
+	revolutionary_nationalist = 0
+	esoteric_traditionalist = 0
+	revolutionary_anarchist = 0
+}
+
+add_ideas = {
+extensive_conscription
+partial_economic_mobilisation
+autocracy 
+interventionism 
+post_industrialized_society
+}
+
+
+
+create_country_leader = {
+	name = "Unorganized Nationalists"
+	#desc = "Franz_Xavier_Ritter_von_Epp_desc"
+	picture = "WRG_Pyotr_Wrangel.tga"
+	expire = "1965.1.1"
+	ideology = ultranationalist_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "No Leader"
+	#desc = "Franz_Xavier_Ritter_von_Epp_desc"
+	#picture = "Portrait_RUS_Boris_Savinkov4.tga"
+	expire = "1965.1.1"
+	ideology = revolutionary_anarchist_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Unorganized Nationalists"
+	#desc = "Franz_Xavier_Ritter_von_Epp_desc"
+	picture = "Portrait_RUS_Boris_Savinkov4.tga"
+	expire = "1965.1.1"
+	ideology = revolutionary_nationalist_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Unorganized Democrats"
+	#desc = "Ernst_Rohm_desc"
+	picture = "RSR_Kerensky.tga"
+	expire = "1965.1.1"
+	ideology = liberal_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Unorganized Monarchists"
+	#desc = "Heinrich_Held_desc"
+	picture = "Portrait_RUS_Vladimir_Romanov.tga"
+	expire = "1965.1.1"
+	ideology = conservative_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Unorganized Monarchists"
+	#desc = "Heinrich_Held_desc"
+	picture = "Portrait_RUS_Vladimir_Romanov.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Unorganized Monarchists"
+	#desc = "Heinrich_Held_desc"
+	picture = "Portrait_RUS_Vladimir_Romanov.tga"
+	expire = "1965.1.1"
+	ideology = autocratic_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Unorganized Democrats"
+	#desc = "Heinrich_Held_desc"
+	picture = "RSR_Kerensky.tga"
+	expire = "1965.1.1"
+	ideology = social_democrat_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Unorganized Democrats"
+	#desc = "Heinrich_Held_desc"
+	picture = "RSR_Kerensky.tga"
+	expire = "1965.1.1"
+	ideology = social_democrat_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Nikolai Bukharin"
+	#desc = "Heinrich_Held_desc"
+	picture = "Portrait_Soviet_Nikolai_Iwanowitsch_Bucharin.tga"
+	expire = "1965.1.1"
+	ideology = libertarian_socialist_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Leon Trotsky"
+	desc = "Ernst_Thalman_desc"
+	picture = "TSV_Trotsky.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_socialist_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Mirsaid Sultangaliyev"
+	desc = "Ernst_Thalman_desc"
+	picture = "Portrait_TAT_Galiyev.tga"
+	expire = "1965.1.1"
+	ideology = unisocialist_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Unorganized Nationalists"
+	desc = "Himmler_desc"
+	picture = "Portrait_MON_Sternberg_Khan.tga"
+	expire = "1965.1.1"
+	ideology = esoteric_traditionalist_subideology
+	traits = {
+	}
+}
+
+###################### generals
