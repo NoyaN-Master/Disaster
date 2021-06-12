@@ -1,0 +1,230 @@
+capital = 195
+oob = ""
+
+# Starting tech
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		mtg_transport = 1
+	}
+}
+
+
+
+
+set_research_slots = 4
+set_convoys = 50
+set_stability = 0.50
+set_war_support = 0.50
+
+
+set_politics = {
+	ruling_party = ultranationalist
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+
+}
+set_popularities = {
+	conservative = 10
+	liberal = 10
+	social_democrat = 0
+	libertarian_socialist = 0
+	authoritarian_socialist = 10
+	unisocialist = 10
+	authoritarian_democrat = 10
+	autocratic = 10
+	ultranationalist = 20
+	revolutionary_nationalist = 10
+	esoteric_traditionalist = 10
+	revolutionary_anarchist = 0
+}
+
+add_ideas = {
+extensive_conscription
+partial_economic_mobilisation
+autocracy 
+interventionism 
+post_industrialized_society
+}
+
+
+
+create_country_leader = {
+	name = "Pyotr Wrangel"
+	#desc = "Franz_Xavier_Ritter_von_Epp_desc"
+	picture = "WRG_Pyotr_Wrangel.tga"
+	expire = "1965.1.1"
+	ideology = ultranationalist_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "No Leader"
+	#desc = "Franz_Xavier_Ritter_von_Epp_desc"
+	#picture = "Portrait_RUS_Boris_Savinkov4.tga"
+	expire = "1965.1.1"
+	ideology = revolutionary_anarchist_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Boris Savinkov"
+	#desc = "Franz_Xavier_Ritter_von_Epp_desc"
+	picture = "Portrait_RUS_Boris_Savinkov4.tga"
+	expire = "1965.1.1"
+	ideology = revolutionary_nationalist_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Alexander Kerensky"
+	#desc = "Ernst_Rohm_desc"
+	picture = "RSR_Kerensky.tga"
+	expire = "1965.1.1"
+	ideology = liberal_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Vladimir Romanov"
+	#desc = "Heinrich_Held_desc"
+	picture = "Portrait_RUS_Vladimir_Romanov.tga"
+	expire = "1965.1.1"
+	ideology = conservative_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Vladimir Romanov"
+	#desc = "Heinrich_Held_desc"
+	picture = "Portrait_RUS_Vladimir_Romanov.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Vladimir Romanov"
+	#desc = "Heinrich_Held_desc"
+	picture = "Portrait_RUS_Vladimir_Romanov.tga"
+	expire = "1965.1.1"
+	ideology = autocratic_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Alexander Kerensky"
+	#desc = "Heinrich_Held_desc"
+	picture = "RSR_Kerensky.tga"
+	expire = "1965.1.1"
+	ideology = social_democrat_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Alexander Kerensky"
+	#desc = "Heinrich_Held_desc"
+	picture = "RSR_Kerensky.tga"
+	expire = "1965.1.1"
+	ideology = social_democrat_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Disorganized Bandits"
+	#desc = "Heinrich_Held_desc"
+	#picture = "Portrait_RUS_Vladimir_Romanov.tga"
+	expire = "1965.1.1"
+	ideology = libertarian_socialist_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Red Army Bandits"
+	desc = "Ernst_Thalman_desc"
+	#picture = "Portrait_Ernst_Thalman.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_socialist_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Boris Savinkov"
+	desc = "Ernst_Thalman_desc"
+	picture = "Portrait_RUS_Boris_Savinkov4.tga"
+	expire = "1965.1.1"
+	ideology = unisocialist_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Roman Ungern von Sternberg"
+	desc = "Himmler_desc"
+	picture = "Portrait_MON_Sternberg_Khan.tga"
+	expire = "1965.1.1"
+	ideology = esoteric_traditionalist_subideology
+	traits = {
+	}
+}
+
+###################### generals
+create_field_marshal = {
+	name = "Franz Xavier Ritter von Epp"
+	portrait_path = "gfx/leaders/BAY/Portrait_Franz_Xavier_Ritter_von_Epp.tga"
+	traits = {
+
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Heinrich Himmler"
+	portrait_path = "gfx/leaders/BAY/BAY_Himmler.tga"
+	traits = {
+
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Ernst Rohm"
+	portrait_path = "gfx/leaders/BAY/Ernst_Rohm.tga"
+	traits = {
+
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
