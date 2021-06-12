@@ -1,0 +1,19 @@
+add_namespace = lba
+
+country_event = { #New Day, talking with Ismet
+	id = lba.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = lba.1.t
+	desc = lba.1.d
+
+	picture = GFX_report_event_tur_ataturk
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.1.a
+        
+	}
+}

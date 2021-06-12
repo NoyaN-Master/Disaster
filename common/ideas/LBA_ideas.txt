@@ -42,12 +42,14 @@ LBA_Lictor_Youth = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LBA_Lictor_Youth" }
 			picture = GFX_idea_LBA_Lictor_Youth
 			modifier = {
+			ultranationalist_drift = 0.1
 			}
 			}
 LBA_Propaganda = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LBA_Propaganda" }
 			picture = GFX_idea_LBA_Propaganda
 			modifier = {
+			ultranationalist_drift = 0.1
 			}
 			}
 LBA_Towns = {
@@ -61,6 +63,7 @@ LBA_Highway = {
 			picture = GFX_idea_LBA_Highway
 			modifier = {
 			consumer_goods_factor = 0.2
+			production_speed_infrastructure_factor = 0.5
 			}
 			}
 }
