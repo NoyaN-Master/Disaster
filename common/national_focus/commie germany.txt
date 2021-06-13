@@ -601,16 +601,6 @@ focus = {
 		}
 	}
 focus = {
-		id = NGU_Fortify_Border
-		icon = GFX_goal_adress_parliament
-		x = 18
-		y = 10
-		cost = 3
-        prerequisite = { focus = NGU_Die_Wacht_am_Ost}				
-		completion_reward = {
-		}
-	}
-focus = {
 		id = NGU_Expand_DAB_Prussia
 		icon = GFX_goal_adress_parliament
 		x = 22
@@ -714,6 +704,9 @@ focus = {
 		x = 19
 		y = 15
 		cost = 3
+		available = {
+		has_government = unisocialist	
+		}
         prerequisite = { focus = NGU_Cross_The_Rhine}				
 		completion_reward = {
 		
@@ -725,6 +718,9 @@ focus = {
 		x = 21
 		y = 15
 		cost = 3
+		available = {
+		has_government = unisocialist	
+		}
         prerequisite = { focus = NGU_Cross_The_Rhine}				
 		completion_reward = {
 		

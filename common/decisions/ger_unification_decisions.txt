@@ -125,6 +125,58 @@ GER_unification_decisions = {
 		}	 
 	 }
 
+	 GER_for_germany_hitler_unification = {
+		visible = {
+			 original_tag = NGU
+			 has_government = revolutionary_nationalist
+		}
+	 	available = {
+			if = {
+                    check_variable = {
+                        var = german_states
+                        value = 23
+                        compare = greater_than_or_equals
+                    } }
+                    NOT = { has_country_flag = PRE_formed_greater_germany}
+		}
+		highlight_state_targets = {
+			state = 64
+		}	 
+          fire_only_once = yes
+          complete_effect = {
+			set_cosmetic_tag = NGU_HitlerGermany
+          }	 
+        ai_will_do = {
+			factor = 1000
+		}	 
+	 }
+
+	 GER_for_germany_strasser_unification = {
+		visible = {
+			 original_tag = NGU
+			 has_government = unisocialist
+		}
+	 	available = {
+			if = {
+                    check_variable = {
+                        var = german_states
+                        value = 23
+                        compare = greater_than_or_equals
+                    } }
+                    NOT = { has_country_flag = PRE_formed_greater_germany}
+		}
+		highlight_state_targets = {
+			state = 64
+		}	 
+          fire_only_once = yes
+          complete_effect = {
+			set_cosmetic_tag = NGU_StrasserGermany
+          }	 
+        ai_will_do = {
+			factor = 1000
+		}	 
+	 }
+
 
  
 
