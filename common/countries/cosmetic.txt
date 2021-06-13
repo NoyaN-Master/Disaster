@@ -61,3 +61,33 @@ SRY_Turkish_Puppet = {
 	color_ui = rgb { 175 13 0 }
 
 }
+
+BLT_commisariat_black = {
+	color = { 106  119  89 }
+	color_ui = rgb { 175 13 0 }
+}
+
+PLN_commisariat_black = {
+	color = { 106  119  89 }
+	color_ui = rgb { 175 13 0 }
+}
+
+CZE_commisariat_black = {
+	color = { 106  119  89 }
+	color_ui = rgb { 175 13 0 }
+}
+
+BLT_commisariat = {
+	color = rgb { 109 0 0 }
+	color_ui = rgb { 109 0 0 }
+}
+
+PLN_commisariat = {
+	color = rgb { 109 0 0 }
+	color_ui = rgb { 109 0 0 }
+}
+
+CZE_commisariat = {
+	color = rgb { 109 0 0 }
+	color_ui = rgb { 109 0 0 }
+}

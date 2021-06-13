@@ -1,0 +1,20 @@
+NGU_Komisariat_category = {
+	icon = GFX_decision_category_generic_political_actions
+
+	picture = Decision_picture_anatolia_influence
+	priority = 80
+	allowed = {
+		original_tag  = NGU
+		
+	}
+	visible = {
+		original_tag  = NGU
+		NGU = {
+        OR = {
+        has_completed_focus = NGU_choose_hitler
+        has_completed_focus = NGU_choose_strasser
+        }     
+        }
+	}
+	visible_when_empty = yes
+}

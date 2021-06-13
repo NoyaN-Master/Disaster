@@ -639,23 +639,15 @@ focus = {
 		}
 	}
 focus = {
-		id = NGU_Operation_Konigsmorder
-		icon = GFX_goal_adress_parliament
-		x = 20
-		y = 12
-		cost = 3
-        prerequisite = { focus = NGU_Mecklenburg_Crisis}				
-		completion_reward = {
-		
-		}
-	}
-focus = {
 		id = NGU_Operation_Piast
 		icon = GFX_goal_adress_parliament
 		x = 21
-		y = 13
+		y = 12
 		cost = 3
-        prerequisite = { focus = NGU_Operation_Konigsmorder}				
+        prerequisite = { focus = NGU_Mecklenburg_Crisis}
+		available = { 
+		has_war = no
+		}				
 		completion_reward = {
 		declare_war_on = {
     	target = PLN
@@ -667,10 +659,13 @@ focus = {
 		id = NGU_Operation_Teutonic_Angriff
 		icon = GFX_goal_adress_parliament
 		x = 20
-		y = 14
+		y = 13
 		cost = 3
         prerequisite = { focus = NGU_Operation_Piast}
-		prerequisite = { focus = NGU_Operation_Sudflanke}						
+		prerequisite = { focus = NGU_Operation_Sudflanke}
+		available = { 
+		has_war = no
+		}						
 		completion_reward = {
 		declare_war_on = {
     	target = BLT
@@ -682,9 +677,12 @@ focus = {
 		id = NGU_Operation_Sudflanke
 		icon = GFX_goal_adress_parliament
 		x = 19
-		y = 13
+		y = 12
 		cost = 3
-        prerequisite = { focus = NGU_Operation_Konigsmorder}				
+        prerequisite = { focus = NGU_Mecklenburg_Crisis}
+		available = { 
+		has_war = no
+		}				
 		completion_reward = {
 		declare_war_on = {
     	target = BAV
@@ -700,9 +698,12 @@ focus = {
 		id = NGU_Cross_The_Rhine
 		icon = GFX_goal_adress_parliament
 		x = 20
-		y = 15
+		y = 14
 		cost = 3
-        prerequisite = { focus = NGU_Operation_Teutonic_Angriff}				
+        prerequisite = { focus = NGU_Operation_Teutonic_Angriff}
+		available = { 
+		has_war = no
+		}				
 		completion_reward = {
 		
 		}
@@ -711,7 +712,7 @@ focus = {
 		id = NGU_Strasser_Agenda
 		icon = GFX_goal_adress_parliament
 		x = 19
-		y = 16
+		y = 15
 		cost = 3
         prerequisite = { focus = NGU_Cross_The_Rhine}				
 		completion_reward = {
@@ -722,7 +723,7 @@ focus = {
 		id = NGU_Hitler_Agenda
 		icon = GFX_goal_adress_parliament
 		x = 21
-		y = 16
+		y = 15
 		cost = 3
         prerequisite = { focus = NGU_Cross_The_Rhine}				
 		completion_reward = {
