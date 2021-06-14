@@ -51,7 +51,9 @@ NGU_Komisariat_Poland = {
             }
             else_if = {
                 limit = {
+                NGU = {
                 has_government = unisocialist
+                }
                 }
                 set_cosmetic_tag = PLN_commisariat
                 add_popularity = {
@@ -59,7 +61,6 @@ NGU_Komisariat_Poland = {
                 popularity = 1
                 }
             }
-        set_cosmetic_tag = PLN_commisariat
             create_country_leader = {
 	        name = "Martin Bormann"
 	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
@@ -78,13 +79,13 @@ NGU_Komisariat_Poland = {
 	        traits = {
 	        }
             }
-        }
 		hidden_effect = {
         }
         }
      ai_will_do = {
 			factor = 1000
 		}
+}
 }
 
 
@@ -129,7 +130,9 @@ NGU_Komisariat_Baltics = {
             }
             else_if = {
                 limit = {
-                has_government = unisocialist
+                    NGU = {
+                    has_government = unisocialist
+                    }
                 }
                 set_cosmetic_tag = BLT_commisariat
                 add_popularity = {
@@ -223,7 +226,9 @@ NGU_Puppet_Czech = {
             }
             else_if = {
                 limit = {
-                has_government = unisocialist
+                    NGU = {
+                    has_government = unisocialist
+                    }
                 }
                 set_cosmetic_tag = CZE_commisariat
                 add_popularity = {

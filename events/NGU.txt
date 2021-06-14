@@ -328,7 +328,16 @@ country_event = { # Berling Becomes Capital
 		set_popularities = {
 		revolutionary_nationalist = 50
 		unisocialist = 50
-		} 
+		}
+		create_country_leader = {
+	        name = "Joseph Goebbels"
+	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	        picture   = "NGU_Goebbels_Hitler.tga"
+	        expire = "1965.1.1"
+	        ideology = natsoc_hitler
+	        traits = {
+	        }
+            } 
 	}
 
 	option = {

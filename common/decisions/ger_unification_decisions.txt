@@ -144,6 +144,7 @@ GER_unification_decisions = {
 		}	 
           fire_only_once = yes
           complete_effect = {
+			drop_cosmetic_tag = yes
 			set_cosmetic_tag = NGU_HitlerGermany
           }	 
         ai_will_do = {

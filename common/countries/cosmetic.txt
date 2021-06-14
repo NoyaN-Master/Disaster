@@ -63,18 +63,18 @@ SRY_Turkish_Puppet = {
 }
 
 BLT_commisariat_black = {
-	color = { 106  119  89 }
-	color_ui = rgb { 175 13 0 }
+	color = rgb { 29 30 33 }
+	color_ui = rgb { 29 30 33 }
 }
 
 PLN_commisariat_black = {
-	color = { 106  119  89 }
-	color_ui = rgb { 175 13 0 }
+	color = rgb { 29 30 33 }
+	color_ui = rgb { 29 30 33 }
 }
 
 CZE_commisariat_black = {
-	color = { 106  119  89 }
-	color_ui = rgb { 175 13 0 }
+	color = rgb { 29 30 33 }
+	color_ui = rgb { 29 30 33 }
 }
 
 BLT_commisariat = {
@@ -93,6 +93,6 @@ CZE_commisariat = {
 }
 
 NGU_HitlerGermany = {
-	color = rgb { 109 0 0 }
-	color_ui = rgb { 109 0 0 }
+	color = rgb { 29 30 33 }
+	color_ui = rgb { 29 30 33 }
 }
