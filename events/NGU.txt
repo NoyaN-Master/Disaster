@@ -304,6 +304,7 @@ country_event = { # Berling Becomes Capital
 		set_capital = 64
 		add_state_core = 64
 		add_stability = 0.15
+		country_event = { id = ngu.9 days = 1 }
 	}
 }
 
