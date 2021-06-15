@@ -638,7 +638,14 @@ focus_tree = {
 		y = 4
 		cost = 3
 		available_if_capitulated = yes
-		prerequisite = { OR = { focus = WRF_deal_clp_2 focus = WRF_deal_clp_1 focus = WRF_deal_cib_1 focus = WRF_deal_cib_2 focus = WRF_deal_ant_1 focus = WRF_deal_ant_2 } }
+		prerequisite = { 
+		focus = WRF_deal_ant_1
+		focus = WRF_deal_ant_2
+		focus = WRF_deal_cib_1
+		focus = WRF_deal_cib_2
+		focus = WRF_deal_clp_2
+		focus = WRF_deal_clp_1
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -653,17 +660,14 @@ focus_tree = {
         country_exists = ANK
         country_exists = KLG
         country_exists = THR
-        country_exists = ADN
-		OR = {	has_country_flag = WRF_Kemalist_Won has_country_flag = WRF_Demokrat_End has_country_flag = WRF_Adsiz_Won has_country_flag = WRF_Anarch_Won }
-		}    
+        country_exists = ADN   
         }
-	 completion_reward = {
-	 annex_country = {
+		}
+		 completion_reward = {
+		annex_country = {
 		target = CRW
 		transfer_troops = yes
 		}
-	 }	
+		}
 	}
-
-#End of focuses 
- }
+}
