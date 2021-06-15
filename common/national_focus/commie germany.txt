@@ -16,7 +16,7 @@ focus = {
 		y = 0
 		cost = 2		
 		completion_reward = {
-		country_event = { id = ngu.2 days = 1 }
+			add_stability = 0.05
 		}
 	}
 focus = {
@@ -60,7 +60,7 @@ focus = {
 		x = 3
 		y = 2
 		cost = 2
-        prerequisite = { focus = NGU_policies_of_redbaron}
+        prerequisite = { focus = NGU_promote_class_warfare }
         prerequisite = { focus = NGU_food_for_family}
         prerequisite = { focus = NGU_legacy_of_marx}		
 		completion_reward = {
