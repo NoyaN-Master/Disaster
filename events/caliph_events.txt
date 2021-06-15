@@ -94,9 +94,6 @@ country_event = { #Overview State
 
 	is_triggered_only = yes
 
-	option = { #Sultan beats the irtica
-		name = caliph.4.a
-	}
 	option = { #Irtica beats the sultan
 		name = caliph.4.b
 		remove_ideas = {
