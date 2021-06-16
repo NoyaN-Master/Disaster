@@ -309,6 +309,48 @@ country_event = { # Berling Becomes Capital
 }
 
 country_event = { # Berling Becomes Capital
+	id = ngu.10
+	title = ngu.10.t
+	desc = ngu.10.d
+	fire_only_once = yes
+	
+	trigger = {
+	tag = NGU
+	has_war_with = RHN
+	RHN = {
+	has_capitulated = yes	
+	}
+	}
+
+	mean_time_to_happen = {
+		days = 4
+	}
+	
+	option = {
+		name = ngu.10.a
+		ai_chance = { factor = 100}
+		white_peace = FRE
+		annex_country = {
+    	target = RHN
+    	transfer_troops = yes
+		}
+		add_stability = 0.10
+		if = {
+			limit = {
+				has_government = revolutionary_nationalist
+			}
+			complete_national_focus = NGU_Hitler_Agenda
+		}
+		if_else = {
+			limit = {
+				has_government = unisocialist
+			}
+			complete_national_focus = NGU_Strasser_Agenda
+		}
+	}
+}
+
+country_event = { # Berling Becomes Capital
 	id = ngu.9
 	title = ngu.9.t
 	desc = ngu.9.d
