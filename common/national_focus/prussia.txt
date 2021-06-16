@@ -2084,6 +2084,7 @@ focus_tree = {
 		completion_reward = {
 		add_ideas = PRE_junker_rule_continues
 		remove_ideas = PRE_ongoing_protests
+		remove_ideas = PRE_widespread_protests 
 		}
 	}
 	focus = { 
