@@ -319,6 +319,7 @@ country_event = { # Berling Becomes Capital
 		name = ngu.9.a
 		ai_chance = { factor = 20}
 		add_ideas = NGU_Hitler_HoG
+		unlock_decision_category_tooltip = NGU_Komisariat_category
 		complete_national_focus = NGU_choose_hitler
 		set_politics = {
 		ruling_party = revolutionary_nationalist
@@ -346,5 +347,6 @@ country_event = { # Berling Becomes Capital
 		ai_chance = { factor = 20}
 		add_ideas = NGU_Strasser_HoG
 		complete_national_focus = NGU_choose_strasser
+		unlock_decision_category_tooltip = NGU_Komisariat_category
 	}
 }

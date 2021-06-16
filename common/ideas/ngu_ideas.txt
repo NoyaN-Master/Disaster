@@ -139,7 +139,7 @@ NGU_Unser_Kampf= {
 			picture = discontent
 			modifier = {
 			army_morale_factor = 0.10
-            war_support = 0.10
+            war_support_factor = 0.10
 			}
 		}
 NGU_Blood_Soil= {
@@ -180,18 +180,29 @@ NGU_Official_Military = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
 			picture = discontent
 			modifier = {
-            army_attack_factor = 0.5
+            army_attack_factor = 0.15
 			army_org_factor = 0.10
 			experience_gain_army = 0.10
             conscription = 0.02
 			}
 		}
+NGU_CrossTheRhine = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
+			picture = discontent
+			modifier = {
+            army_speed_factor = 0.10
+			army_org_factor = 0.10
+			}
+			targeted_modifier = {
+			tag = FRE attack_bonus_against = 0.1 	
+			}
+		}		
 NGU_Official_Military_Hitler = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
 			picture = discontent
 			modifier = {
 			army_speed_factor = 0.10	
-            army_attack_factor = 0.7
+            army_attack_factor = 0.25
 			army_org_factor = 0.10
 			experience_gain_army = 0.15
             conscription = 0.05

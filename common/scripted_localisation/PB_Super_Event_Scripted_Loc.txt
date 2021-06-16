@@ -56,6 +56,13 @@ defined_text = { #SUPER EVENT TITLES
         }
         localization_key = "GFX_SPEVNT_Unification_Arabs"
     }
+
+    text = { 
+        trigger = {
+            has_global_flag = goebbels_unification
+        }
+        localization_key = "GFX_SPEVNT_Unification_Goebbels"
+    }
 }
 
 defined_text = { #SUPER EVENT QUOTES
@@ -114,6 +121,13 @@ defined_text = { #SUPER EVENT QUOTES
             has_global_flag = UAR_Formed
         }
         localization_key = "GFX_SPEVNT_Unification_Arabs_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            has_global_flag = goebbels_unification
+        }
+        localization_key = "GFX_SPEVNT_Unification_Goebbels_TEXT"
     }
 }
 
@@ -174,6 +188,13 @@ defined_text = { #SUPER EVENT REMARKS
             has_global_flag = UAR_Formed
         }
         localization_key = "GFX_SPEVNT_Unification_Arabs_REMARK"
+    }
+
+    text = { 
+        trigger = {
+            has_global_flag = goebbels_unification
+        }
+        localization_key = "GFX_SPEVNT_Unification_Goebbels_REMARK"
     }
 	
 }

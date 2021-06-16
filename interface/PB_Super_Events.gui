@@ -67,6 +67,12 @@ guiTypes = {
 			spriteType = "GFX_SPEVNT_Unification_Ulema"
 			position = { x = 35 y = 0 }
 		}
+
+		iconType = {
+			name ="Super_Event_Image_Unification_Goebbels"
+			spriteType = "GFX_SPEVNT_Unification_Goebbels"
+			position = { x = 35 y = 0 }
+		}
 		
 		instantTextBoxType = {
 			name = "Pax_Super_Event_Title_textbox"

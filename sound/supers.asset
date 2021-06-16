@@ -54,3 +54,10 @@ sound = {
 	volume = 1
 	always_load = yes
 }
+
+sound = {
+	name = "goebbels"
+	file = "menu/goebbels.wav"
+	volume = 1
+	always_load = yes
+}

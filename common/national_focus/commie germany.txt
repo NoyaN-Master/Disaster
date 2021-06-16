@@ -591,7 +591,7 @@ focus = {
 
 focus = {
 		id = NGU_Die_Wacht_am_Ost
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_NGU_ost
 		x = 20
 		y = 9
 		cost = 3
@@ -602,7 +602,7 @@ focus = {
 	}
 focus = {
 		id = NGU_Expand_DAB_Prussia
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_IZM_unisoc_Economy
 		x = 22
 		y = 10
 		cost = 3
@@ -618,7 +618,7 @@ focus = {
 	}
 focus = {
 		id = NGU_Mecklenburg_Crisis
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_NGU_mecklenburg
 		x = 20
 		y = 11
 		cost = 3
@@ -630,7 +630,7 @@ focus = {
 	}
 focus = {
 		id = NGU_Operation_Piast
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_NGU_Piast
 		x = 21
 		y = 12
 		cost = 3
@@ -639,6 +639,7 @@ focus = {
 		has_war = no
 		}				
 		completion_reward = {
+		custom_effect_tooltip = NGU_piast_tt	
 		declare_war_on = {
     	target = PLN
     	type = annex_everything
@@ -647,7 +648,7 @@ focus = {
 	}	
 focus = {
 		id = NGU_Operation_Teutonic_Angriff
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_NGU_Teuton
 		x = 20
 		y = 13
 		cost = 3
@@ -657,6 +658,7 @@ focus = {
 		has_war = no
 		}						
 		completion_reward = {
+			custom_effect_tooltip = NGU_baltics_tt
 		declare_war_on = {
     	target = BLT
     	type = annex_everything
@@ -665,7 +667,7 @@ focus = {
 	}
 focus = {
 		id = NGU_Operation_Sudflanke
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_NGU_Bavaria
 		x = 19
 		y = 12
 		cost = 3
@@ -674,8 +676,13 @@ focus = {
 		has_war = no
 		}				
 		completion_reward = {
+		custom_effect_tooltip = NGU_sud_tt		
 		declare_war_on = {
-    	target = BAV
+    	target = BAY
+    	type = annex_everything
+		}
+		declare_war_on = {
+    	target = SAX
     	type = annex_everything
 		}
 		declare_war_on = {
@@ -686,7 +693,7 @@ focus = {
 	}
 focus = {
 		id = NGU_Cross_The_Rhine
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_NGU_rhine
 		x = 20
 		y = 14
 		cost = 3
@@ -695,40 +702,237 @@ focus = {
 		has_war = no
 		}				
 		completion_reward = {
-		
+		custom_effect_tooltip = NGU_france_tt	
+		add_timed_idea = {
+		idea = NGU_CrossTheRhine
+		days = 30	
+		}
+		declare_war_on = {
+    	target = RHN
+    	type = annex_everything
+		}
 		}
 	}
 focus = {
 		id = NGU_Strasser_Agenda
-		icon = GFX_goal_adress_parliament
-		x = 19
+		icon = GFX_goal_NGU_Strasser
+		x = 17
 		y = 15
-		cost = 3
+		cost = 1
 		available = {
 		has_government = unisocialist	
 		}
         prerequisite = { focus = NGU_Cross_The_Rhine}				
 		completion_reward = {
-		
+		add_war_support = 0.05
 		}
 	}
 focus = {
 		id = NGU_Hitler_Agenda
-		icon = GFX_goal_adress_parliament
-		x = 21
+		icon = GFX_goal_NGU_Hitler_FP
+		x = 24
 		y = 15
-		cost = 3
+		cost = 1
 		available = {
-		has_government = unisocialist	
+		has_government = revolutionary_nationalist	
 		}
         prerequisite = { focus = NGU_Cross_The_Rhine}				
 		completion_reward = {
-		
+		add_war_support = 0.05
 		}
-	}            
+	}
+
+focus = {
+		id = NGU_Heia_Safari
+		icon = GFX_goal_NGU_Hitler_FP
+		x = 21
+		y = 16
+		cost = 1
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_Hitler_Agenda}				
+		completion_reward = {
+		add_war_support = 0.05
+		}
+	}
+focus = {
+		id = NGU_Eastern_Plan
+		icon = GFX_goal_NGU_Hitler_FP
+		x = 24
+		y = 16
+		cost = 1
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_Hitler_Agenda}				
+		completion_reward = {
+		add_war_support = 0.05
+		}
+	}
+focus = {
+		id = NGU_The_Blonde_Beast
+		icon = GFX_goal_NGU_Hitler_FP
+		x = 24
+		y = 17
+		cost = 1
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_Hitler_Agenda}				
+		completion_reward = {
+		add_war_support = 0.05
+		}
+	}	
+	focus = {
+		id = NGU_Project_Belarus
+		icon = GFX_goal_NGU_Hitler_FP
+		x = 24
+		y = 18
+		cost = 1
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_The_Blonde_Beast}				
+		completion_reward = {
+		add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = NGU_Minsk_Military_Base
+		icon = GFX_goal_NGU_Hitler_FP
+		x = 24
+		y = 19
+		cost = 1
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_Project_Belarus}				
+		completion_reward = {
+		add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = NGU_Ukrainian_Annex
+		icon = GFX_goal_NGU_Hitler_FP
+		x = 26
+		y = 19
+		cost = 1
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_Project_Belarus}				
+		completion_reward = {
+		add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = NGU_Operation_Crimea
+		icon = GFX_goal_NGU_Hitler_FP
+		x = 25
+		y = 20
+		cost = 1
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_Ukrainian_Annex}
+		prerequisite = { focus = NGU_Minsk_Military_Base}				
+		completion_reward = {
+		add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = NGU_The_Great_Russian_War
+		icon = GFX_goal_NGU_Hitler_FP
+		x = 25
+		y = 21
+		cost = 1
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_Operation_Crimea}		
+		completion_reward = {
+		add_war_support = 0.05
+		}
+	}
+
+focus = {
+		id = NGU_Arm_The_Pilot
+		icon = GFX_goal_NGU_Hitler_FP
+		x = 21
+		y = 17
+		cost = 1
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_Heia_Safari}				
+		completion_reward = {
+		add_war_support = 0.05
+		}
+	}
+focus = {
+		id = NGU_Battle_Of_Cape
+		icon = GFX_goal_NGU_Hitler_FP
+		x = 22
+		y = 18
+		cost = 1
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_Arm_The_Pilot}				
+		completion_reward = {
+		add_war_support = 0.05
+		}
+	}
+focus = {
+		id = NGU_Attack_The_Boers
+		icon = GFX_goal_NGU_Hitler_FP
+		x = 20
+		y = 18
+		cost = 1
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_Arm_The_Pilot}				
+		completion_reward = {
+		add_war_support = 0.05
+		}
+	}
+focus = {
+		id = NGU_Finish_Smuts
+		icon = GFX_goal_NGU_Hitler_FP
+		x = 21
+		y = 19
+		cost = 1
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_Battle_Of_Cape}
+		prerequisite = { focus = NGU_Attack_The_Boers}						
+		completion_reward = {
+		add_war_support = 0.05
+		}
+	}
+focus = {
+		id = NGU_Deutsche_Sudafrika
+		icon = GFX_goal_NGU_Hitler_FP
+		x = 21
+		y = 20
+		cost = 1
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_Finish_Smuts}					
+		completion_reward = {
+		add_war_support = 0.05
+		}
+	}				            	            		            	            
 focus = {
 		id = NGU_Coup_In_Schleswig
-		icon = GFX_goal_adress_parliament
+		icon = GFX_goal_NGU_schles
 		x = 20
 		y = 10
 		cost = 3
