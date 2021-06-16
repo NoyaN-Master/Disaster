@@ -753,7 +753,7 @@ focus = {
 		}
         prerequisite = { focus = NGU_Hitler_Agenda}				
 		completion_reward = {
-		add_war_support = 0.05
+		custom_effect_tooltip = NGU_Safari_tt
 		}
 	}
 focus = {
@@ -767,7 +767,7 @@ focus = {
 		}
         prerequisite = { focus = NGU_Hitler_Agenda}				
 		completion_reward = {
-		add_war_support = 0.05
+		custom_effect_tooltip = NGU_Great_Conquest_tt
 		}
 	}
 focus = {
@@ -829,7 +829,7 @@ focus = {
 	}
 
 	focus = {
-		id = NGU_Operation_Crimea
+		id = NGU_The_Great_Russian_War
 		icon = GFX_goal_NGU_Hitler_FP
 		x = 25
 		y = 20
@@ -838,22 +838,7 @@ focus = {
 		has_government = revolutionary_nationalist	
 		}
         prerequisite = { focus = NGU_Ukrainian_Annex}
-		prerequisite = { focus = NGU_Minsk_Military_Base}				
-		completion_reward = {
-		add_war_support = 0.05
-		}
-	}
-
-	focus = {
-		id = NGU_The_Great_Russian_War
-		icon = GFX_goal_NGU_Hitler_FP
-		x = 25
-		y = 21
-		cost = 1
-		available = {
-		has_government = revolutionary_nationalist	
-		}
-        prerequisite = { focus = NGU_Operation_Crimea}		
+		prerequisite = { focus = NGU_Minsk_Military_Base}			
 		completion_reward = {
 		add_war_support = 0.05
 		}
@@ -871,6 +856,24 @@ focus = {
         prerequisite = { focus = NGU_Heia_Safari}				
 		completion_reward = {
 		add_war_support = 0.05
+		puppet = SWA
+		SWA = {
+		create_country_leader = {
+		name = "Wolfgang Schenck"
+		#desc = "NGU_Max_Hoelz_desc"
+		picture = "SWA_Wolfgang_Schenck.tga"
+		expire = "2020.1.1"
+		ideology = national_socialist_subid
+		traits = {
+		}
+		}
+		add_equipment_to_stockpile = {
+    	type = infantry_equipment
+    	amount = 5000
+    	producer = SWA
+		}
+		load_oob = namib_oob
+		}
 		}
 	}
 focus = {
@@ -884,7 +887,12 @@ focus = {
 		}
         prerequisite = { focus = NGU_Arm_The_Pilot}				
 		completion_reward = {
-		add_war_support = 0.05
+		SWA = {
+		declare_war_on = {
+    	target = KPC
+    	type = annex_everything
+		}	
+		}
 		}
 	}
 focus = {
@@ -898,7 +906,12 @@ focus = {
 		}
         prerequisite = { focus = NGU_Arm_The_Pilot}				
 		completion_reward = {
-		add_war_support = 0.05
+		SWA = {
+		declare_war_on = {
+    	target = BOE
+    	type = annex_everything
+		}	
+		}
 		}
 	}
 focus = {
@@ -913,7 +926,12 @@ focus = {
         prerequisite = { focus = NGU_Battle_Of_Cape}
 		prerequisite = { focus = NGU_Attack_The_Boers}						
 		completion_reward = {
-		add_war_support = 0.05
+		SWA = {
+		declare_war_on = {
+    	target = NTL
+    	type = annex_everything
+		}	
+		}
 		}
 	}
 focus = {
@@ -927,7 +945,9 @@ focus = {
 		}
         prerequisite = { focus = NGU_Finish_Smuts}					
 		completion_reward = {
-		add_war_support = 0.05
+		SWA = {
+		set_cosmetic_tag = SWA_sudafrika
+		}
 		}
 	}				            	            		            	            
 focus = {
