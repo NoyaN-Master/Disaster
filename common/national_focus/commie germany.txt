@@ -738,7 +738,7 @@ focus = {
 		}
         prerequisite = { focus = NGU_Cross_The_Rhine}				
 		completion_reward = {
-		add_war_support = 0.05
+		create_faction = HITLER_FACTION
 		}
 	}
 
