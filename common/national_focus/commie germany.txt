@@ -744,7 +744,7 @@ focus = {
 
 focus = {
 		id = NGU_Heia_Safari
-		icon = GFX_goal_NGU_Hitler_FP
+		icon = GFX_goal_NGU_Safari
 		x = 21
 		y = 16
 		cost = 1
@@ -846,7 +846,7 @@ focus = {
 
 focus = {
 		id = NGU_Arm_The_Pilot
-		icon = GFX_goal_NGU_Hitler_FP
+		icon = GFX_goal_NGU_Wolfgang
 		x = 21
 		y = 17
 		cost = 1
@@ -878,7 +878,7 @@ focus = {
 	}
 focus = {
 		id = NGU_Battle_Of_Cape
-		icon = GFX_goal_NGU_Hitler_FP
+		icon = GFX_goal_NGU_Cape
 		x = 22
 		y = 18
 		cost = 1
@@ -897,7 +897,7 @@ focus = {
 	}
 focus = {
 		id = NGU_Attack_The_Boers
-		icon = GFX_goal_NGU_Hitler_FP
+		icon = GFX_goal_NGU_Boer
 		x = 20
 		y = 18
 		cost = 1
@@ -916,7 +916,7 @@ focus = {
 	}
 focus = {
 		id = NGU_Finish_Smuts
-		icon = GFX_goal_NGU_Hitler_FP
+		icon = GFX_goal_NGU_Smuts
 		x = 21
 		y = 19
 		cost = 1
@@ -936,7 +936,7 @@ focus = {
 	}
 focus = {
 		id = NGU_Deutsche_Sudafrika
-		icon = GFX_goal_NGU_Hitler_FP
+		icon = GFX_goal_NGU_Sudafrika
 		x = 21
 		y = 20
 		cost = 1
