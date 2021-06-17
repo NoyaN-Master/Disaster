@@ -1,5 +1,5 @@
 division_template = {
-	name = "Red Tanks"			# Rifle Division
+	name = "Red Army"			# Rifle Division
 	division_names_group = RUS_INF_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -50,7 +50,7 @@ units = {
 			name_order = 1
 		}
 		location = 9353 #Petsamo
-		division_template = "Red Tanks"
+		division_template = "Red Army"
 		start_experience_factor = 0.19
 		start_equipment_factor = 0.84
 	}
@@ -61,7 +61,7 @@ units = {
 			name_order = 2
 		}
 		location = 9353 #Petsamo
-		division_template = "Red Tanks"
+		division_template = "Red Army"
 		start_experience_factor = 0.19
 		start_equipment_factor = 0.84
 	}
@@ -71,7 +71,7 @@ units = {
 			name_order = 3
 		}
 		location = 9353 #Petsamo
-		division_template = "Red Tanks"
+		division_template = "Red Army"
 		start_experience_factor = 0.19
 		start_equipment_factor = 0.84
 	}
@@ -134,7 +134,7 @@ units = {
 			name_order = 9
 		}
 		location = 9353 #Petsamo
-		division_template = "Red Tanks"
+		division_template = "Red Army"
 		start_experience_factor = 0.19
 		start_equipment_factor = 0.84
 	}
@@ -144,7 +144,7 @@ units = {
 			name_order = 10
 		}
 		location = 9353 #Petsamo
-		division_template = "Red Tanks"
+		division_template = "Red Army"
 		start_experience_factor = 0.19
 		start_equipment_factor = 0.84
 	}

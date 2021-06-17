@@ -385,10 +385,36 @@ country_event = { # Berling Becomes Capital
 	}
 
 	option = {
-		name = ngu.9.a
+		name = ngu.9.b
 		ai_chance = { factor = 20}
 		add_ideas = NGU_Strasser_HoG
 		complete_national_focus = NGU_choose_strasser
 		unlock_decision_category_tooltip = NGU_Komisariat_category
 	}
+}
+
+
+country_event = { # Wolfstaat
+	id = ngu.11
+	title = ngu.11.t
+	desc = ngu.11.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ngu.11.a
+		ai_chance = { factor = 20}
+		puppet = WLF
+		WLF = {
+		transfer_state = 94	
+		transfer_state = 95
+		transfer_state = 96
+		declare_war_on = {
+    	target = WHR
+    	type = annex_everything
+		}
+		load_oob = WLF_oob	
+		}
+	}
+
 }
