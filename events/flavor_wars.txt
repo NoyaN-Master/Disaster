@@ -403,11 +403,11 @@ country_event = { #white victory
 	is_triggered_only = yes
 
     trigger = {
-    ROOT = {
+    RSR = {
     has_war_with = TSV   
     }    
     TSV = {
-    has_capitulated = yes    
+    surrender_progress > 0.8
     }
     }
 

@@ -428,6 +428,7 @@ country_event = { # Berling Becomes Capital
 	trigger = {
 	tag = NGU
 	OR = {
+	NGU = {
 	has_war_with = UKR
 	UKR = {
 	surrender_progress > 0.7
@@ -436,6 +437,7 @@ country_event = { # Berling Becomes Capital
 	FRI = {
 	surrender_progress > 0.7
 	}	
+	}
 	}
 	}
 

@@ -216,14 +216,11 @@ focus_tree = {
 		available = { has_war = no }
 		select_effect = {
 		}
-		completion_reward = {
-		custom_effect_tooltip = CRW_devlet_1
         completion_reward = {
 		declare_war_on = {
         target = CLP
         type = annex_everything
         }    
-        }
 	}
     }
 

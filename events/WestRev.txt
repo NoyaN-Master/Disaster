@@ -1020,7 +1020,7 @@ country_event = { #TACHANKA 2 enver
 		 ai_chance = { factor = 50}
 		 WRF = {
 		 WRF_atsiz_annex = yes
-		 country_event { id = wrf.43 }
+		 country_event = { id = wrf.40 }
 		 }
 	}
 	
