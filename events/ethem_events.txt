@@ -26,7 +26,7 @@ country_event = { #Introduction
 	}
 }
 
-event = { #Leauge
+country_event = { #Leauge
 	id = ethem.2
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
 	title = ethem.2.t
@@ -44,7 +44,7 @@ event = { #Leauge
 	}
 }
 
-event = { #Atsiz
+country_event = { #Atsiz
 	id = ethem.3
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
 	title = ethem.3.t
@@ -62,7 +62,7 @@ event = { #Atsiz
 	}
 }
 
-event = { #CIB
+country_event = { #CIB
 	id = ethem.4
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
 	title = ethem.4.t
@@ -80,7 +80,7 @@ event = { #CIB
 	}
 }
 
-event = { #Caliphate
+country_event = { #Caliphate
 	id = ethem.5
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
 	title = ethem.5.t
@@ -93,7 +93,7 @@ event = { #Caliphate
 	is_triggered_only = yes
 
 	option = {
-		name = ethem.4.a
+		name = ethem.5.a
 		IZM_Ethem_government_loyaly = yes
 	}
 }

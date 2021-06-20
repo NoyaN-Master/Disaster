@@ -186,6 +186,7 @@ focus = {
 		}
 		}
 		}
+		complete_national_focus = NGU_Die_Wacht_am_Ost
 		}
 	}
 focus = {
@@ -779,7 +780,7 @@ focus = {
 		available = {
 		has_government = revolutionary_nationalist	
 		}
-        prerequisite = { focus = NGU_Hitler_Agenda}				
+        prerequisite = { focus = NGU_Eastern_Plan}				
 		completion_reward = {
 		create_corps_commander  = {
 		name = "Reinhard Heydrich"
@@ -917,7 +918,7 @@ focus = {
 		#desc = "NGU_Max_Hoelz_desc"
 		picture = "SWA_Wolfgang_Schenck.tga"
 		expire = "2020.1.1"
-		ideology = national_socialist_subid
+		ideology = natsoc_hitler
 		traits = {
 		}
 		}

@@ -333,6 +333,7 @@ focus_tree = {
 			factor = 80	
 		}
         prerequisite = { focus = IZM_independence_time }
+		available = { has_government = libertarian_socialist}
 		select_effect = {
 		}
 		completion_reward = {
