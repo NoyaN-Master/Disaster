@@ -389,3 +389,144 @@ country_event = { #code debug
         }
         }
 }
+
+country_event = { #white victory
+	id = worldwar.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = worldwar.10.t
+	desc = worldwar.10.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+    trigger = {
+    ROOT = {
+    has_war_with = TSV   
+    }    
+    TSV = {
+    has_capitulated = yes    
+    }
+    }
+
+    mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = worldwar.10.a
+        EVR = {
+        every_owned_state = {
+        add_core_of = RUS
+        }	
+        }
+        DCS = {
+        every_owned_state = {
+        add_core_of = RUS
+        }	
+        }
+        KRN = {
+        every_owned_state = {
+        add_core_of = RUS
+        }	
+        }
+        RSR = {
+        every_owned_state = {
+        add_core_of = RUS
+        }	
+        }
+        DTR = {
+        every_owned_state = {
+        add_core_of = RUS
+        }	
+        }
+        TRM = {
+        every_owned_state = {
+        add_core_of = RUS
+        }	
+        }
+        TSV = {
+        every_owned_state = {
+        add_core_of = RUS
+        }	
+        }
+        DNK = {
+        every_owned_state = {
+        add_core_of = RUS
+        }	
+        }
+        TAT = {
+        every_owned_state = {
+        add_core_of = RUS
+        }	
+        }
+        TKH = {
+        every_owned_state = {
+        add_core_of = RUS
+        }	
+        }
+        FER = {
+        every_owned_state = {
+        add_core_of = RUS
+        }	
+        }
+        RUS = {
+        annex_country = {
+        target = FER
+        transfer_troops = yes
+        }
+        annex_country = {
+        target = TKH
+        transfer_troops = no
+        }    
+        annex_country = {
+        target = TAT
+        transfer_troops = yes
+        }
+        annex_country = {
+        target = TRM
+        transfer_troops = yes
+        }    
+        annex_country = {
+        target = DNK
+        transfer_troops = yes
+        }
+        annex_country = {
+        target = DCS
+        transfer_troops = yes
+        }        
+        annex_country = {
+        target = TSV
+        transfer_troops = no
+        }    
+        annex_country = {
+        target = RSR
+        transfer_troops = yes
+        }
+        annex_country = {
+        target = DTR
+        transfer_troops = yes
+        }
+        annex_country = {
+        target = TSB
+        transfer_troops = yes
+        }
+        annex_country = {
+        target = KRN
+        transfer_troops = yes
+        }    
+        annex_country = {
+        target = EVR
+        transfer_troops = yes
+        }
+        annex_country = {
+        target = TAT
+        transfer_troops = no
+        }               
+        }
+        RUS = { change_tag_from = ROOT }
+        }
+}
+

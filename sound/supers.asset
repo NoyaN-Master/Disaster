@@ -42,6 +42,13 @@ sound = {
 }
 
 sound = {
+	name = "ruswar"
+	file = "menu/ruswar.wav"
+	volume = 1
+	always_load = yes
+}
+
+sound = {
 	name = "nazim"
 	file = "menu/nazim.wav"
 	volume = 1

@@ -196,7 +196,21 @@ NGU_CrossTheRhine = {
 			targeted_modifier = {
 			tag = FRE attack_bonus_against = 0.1 	
 			}
-		}		
+		}
+NGU_RussianWar = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
+			picture = discontent
+			modifier = {
+            army_speed_factor = 0.15
+			army_org_factor = 0.10
+			}
+			targeted_modifier = {
+			tag = RUS attack_bonus_against = 0.1 	
+			}
+			targeted_modifier = {
+			tag = SOV attack_bonus_against = 0.1 	
+			}
+		}					
 NGU_Official_Military_Hitler = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
 			picture = discontent

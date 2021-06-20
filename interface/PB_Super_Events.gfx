@@ -78,10 +78,17 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_SPEVNT_German_RusWar"
+		texturefile = "gfx/super_events/SPEVNT_German_RusWar.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
 		name = "GFX_SPEVNT_Unification_Goebbels"
 		texturefile = "gfx/super_events/SPEVNT_Germany_Goebbels.dds"
 		legacy_lazy_load = no
 	}
+
 
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window_thin_border"

@@ -418,3 +418,47 @@ country_event = { # Wolfstaat
 	}
 
 }
+
+country_event = { # Berling Becomes Capital
+	id = ngu.12
+	title = ngu.12.t
+	desc = ngu.12.d
+	fire_only_once = yes
+	
+	trigger = {
+	tag = NGU
+	OR = {
+	has_war_with = UKR
+	UKR = {
+	surrender_progress > 0.7
+	}
+	has_war_with = FRI
+	FRI = {
+	surrender_progress > 0.7
+	}	
+	}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = ngu.12.a
+		ai_chance = { factor = 100}
+		white_peace = UKR
+		white_peace = FRI
+		WLF = {
+			
+		annex_country = {
+    	target = UKR
+    	transfer_troops = yes
+		}
+		annex_country = {
+    	target = FRI
+    	transfer_troops = yes
+		}
+		add_stability = 0.10
+		}
+	}
+}

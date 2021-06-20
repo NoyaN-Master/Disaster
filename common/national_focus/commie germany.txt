@@ -854,7 +854,14 @@ focus = {
 		}
         prerequisite = { focus = NGU_Project_Belarus}				
 		completion_reward = {
-		add_war_support = 0.05
+		declare_war_on = {
+    	target = FRI
+    	type = annex_everything
+		}
+		declare_war_on = {
+    	target = UKR
+    	type = annex_everything
+		}
 		}
 	}
 
@@ -870,7 +877,24 @@ focus = {
         prerequisite = { focus = NGU_Ukrainian_Annex}
 		prerequisite = { focus = NGU_Minsk_Military_Base}			
 		completion_reward = {
-		add_war_support = 0.05
+		declare_war_on = {
+    	target = RUS
+    	type = annex_everything
+		}
+		declare_war_on = {
+    	target = SOV
+    	type = annex_everything
+		}
+		WLF = {
+		add_timed_idea = {
+		idea = NGU_RussianWar
+		days = 95	
+		}	
+		}
+		add_timed_idea = {
+		idea = NGU_RussianWar
+		days = 95	
+		}	
 		}
 	}
 
