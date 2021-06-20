@@ -1,0 +1,22 @@
+russia_unif_category = {
+skl_unify_decision = {
+	    fire_only_once = yes
+		cost = 0
+        available  = {
+        NOT = {
+        country_exists = TSV
+        }
+        }
+        visible = {
+        original_tag = RSR
+        }  
+        complete_effect = {
+        country_event = { id = worldwar.10} 
+        }
+     }
+
+
+
+
+
+}
