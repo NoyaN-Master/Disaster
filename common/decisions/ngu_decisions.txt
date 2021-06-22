@@ -339,7 +339,7 @@ NGU_Russia_Deal = {
         at_war_with = FRE
         }    
         complete_effect = {
-        country_event = { id = ngu.15 days = 2}
+        country_event = { id = ngu.13 days = 2}
         }
      ai_will_do = {
 			factor = 1000
