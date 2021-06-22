@@ -330,6 +330,9 @@ NGU_Russia_Deal = {
         surrender_progress > 0.6    
         }
         }
+        OR = {   
+        country_exists = SOV
+        country_exists = RUS
         }
         visible = {
         original_tag = NGU
