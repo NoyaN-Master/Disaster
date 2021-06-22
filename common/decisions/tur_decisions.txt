@@ -266,6 +266,23 @@ TUR_unification_category = {
             set_country_flag = unification_ethem
             news_event = { id = news.15 }
         }
+        IZM = {
+        add_state_core = 49
+        add_state_core = 347
+        add_state_core = 839
+        add_state_core = 798
+        add_state_core = 356
+        add_state_core = 355
+        add_state_core = 354
+        add_state_core = 353
+        add_state_core = 800
+        add_state_core = 352
+        add_state_core = 350
+        add_state_core = 346
+        add_state_core = 348
+        add_state_core = 349
+        add_state_core = 797
+        }
         }
         ai_will_do = {
 			factor = 1000
@@ -306,6 +323,23 @@ TUR_unification_category = {
         hidden_effect = {
             set_country_flag = unification_nazim
         }
+        IZM = {
+        add_state_core = 49
+        add_state_core = 347
+        add_state_core = 839
+        add_state_core = 798
+        add_state_core = 356
+        add_state_core = 355
+        add_state_core = 354
+        add_state_core = 353
+        add_state_core = 800
+        add_state_core = 352
+        add_state_core = 350
+        add_state_core = 346
+        add_state_core = 348
+        add_state_core = 349
+        add_state_core = 797
+        }
         }
         ai_will_do = {
 			factor = 1000
@@ -336,6 +370,23 @@ TUR_unification_category = {
         original_tag = CLP
         }  
         complete_effect = {
+        CLP = {
+        add_state_core = 49
+        add_state_core = 347
+        add_state_core = 839
+        add_state_core = 798
+        add_state_core = 356
+        add_state_core = 355
+        add_state_core = 354
+        add_state_core = 353
+        add_state_core = 800
+        add_state_core = 352
+        add_state_core = 350
+        add_state_core = 346
+        add_state_core = 348
+        add_state_core = 349
+        add_state_core = 797
+        } 
 		hidden_effect = {
             set_country_flag = unification_ulema
             news_event = { id = news.15 }

@@ -464,3 +464,36 @@ country_event = { # Berling Becomes Capital
 		}
 	}
 }
+
+country_event = { # Berling Becomes Capital
+	id = ngu.12
+	title = ngu.12.t
+	desc = ngu.12.d
+	fire_only_once = yes
+	
+	trigger = {
+	tag = NGU
+	OR = {
+	NGU = {
+	has_war_with = SOV
+	SOV = {
+	surrender_progress > 0.6
+	}
+	has_war_with = RUS
+	RUS = {
+	surrender_progress > 0.6
+	}	
+	}
+	}
+	}
+
+	mean_time_to_happen = {
+		days = 4
+	}
+	
+	option = {
+		name = ngu.12.a
+		ai_chance = { factor = 100}
+		NGU_RussianPeaceDeal = yes 
+	}
+}
