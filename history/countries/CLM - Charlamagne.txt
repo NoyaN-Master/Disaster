@@ -1,4 +1,4 @@
-capital = 206
+capital = 16
 oob = ""
 
 # Starting tech
@@ -90,9 +90,9 @@ post_industrialized_society
 
 
 create_country_leader = {
-	name = "Reinhard Heydrich"
-	desc = "Heydrich_desc"
-	picture = "WLF_Chief_Heydrich.tga"
+	name = "Ernst Junger"
+	desc = "Junger_desc"
+	picture = "Portrait_Mittelafrika_Ernst_Junger.tga"
 	expire = "1965.1.1"
 	ideology = revolutionary_nationalist_subideology
 	traits = {
@@ -101,8 +101,8 @@ create_country_leader = {
 
 ###################### generals
 create_field_marshal = {
-	name = "Reinhard Heydrich"
-	portrait_path = "WLF_Chief_Heydrich.tga"
+	name = "Ernst Junger"
+	portrait_path = "Portrait_Mittelafrika_Ernst_Junger.tga"
 	traits = {
 
 	}

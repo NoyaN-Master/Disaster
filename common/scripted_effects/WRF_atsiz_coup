@@ -311,3 +311,55 @@ NGU_RussianPeaceDeal = {
 
 }
 
+
+effect_frenchcollapse = {
+puppet = FRE
+CLM ={
+transfer_state = 29
+transfer_state = 785
+transfer_state = 16
+transfer_state = 27
+transfer_state = 20
+transfer_state = 17
+transfer_state = 18
+add_state_core = 29
+add_state_core = 785
+add_state_core = 16
+add_state_core = 27
+add_state_core = 20
+add_state_core = 17
+add_state_core = 18
+}
+FRE = {
+create_country_leader = {
+	        name = "Jacques Doriot"
+	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	        picture   = "Portrait_France_Jacques_Doriot_Political.tga"
+	        expire = "1965.1.1"
+	        ideology = ultranationalist_subideology
+	        traits = {
+	        }
+            }
+set_politics = {
+	ruling_party = ultranationalist
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+}
+set_popularities = {
+	ultranationalist = 50
+	authoritarian_socialist = 20
+	libertarian_socialist = 20
+	social_democrat = 10
+}
+}
+FIU = {
+add_state_core = 21
+add_state_core = 735
+add_state_core = 32
+transfer_state = 21
+transfer_state = 735
+transfer_state = 32
+}
+}
+

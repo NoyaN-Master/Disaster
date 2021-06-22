@@ -1,5 +1,5 @@
 russia_unif_category = {
-skl_unify_decision = {
+russia_unify_decision = {
 	    fire_only_once = yes
 		cost = 0
         available  = {
@@ -13,6 +13,9 @@ skl_unify_decision = {
         complete_effect = {
         country_event = { id = worldwar.10} 
         }
+        ai_will_do = {
+			factor = 1000
+		}
      }
 
 

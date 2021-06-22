@@ -744,6 +744,146 @@ focus = {
 	}
 
 focus = {
+		id = NGU_Western_Expansion
+		icon = GFX_goal_NGU_Hitler_FP
+		x = 28
+		y = 16
+		cost = 1
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_Hitler_Agenda}				
+		completion_reward = {
+		custom_effect_tooltip = NGU_Western_TT	
+		}
+	}
+
+focus = {
+		id = NGU_The_Charlamagne_Project
+		icon = GFX_goal_NGU_Hitler_FP
+		x = 29
+		y = 17
+		cost = 3
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_Western_Expansion}				
+		completion_reward = {
+		custom_effect_tooltip = NGU_Charlamagne_TT
+		create_corps_commander  = {
+		name = "Ernst Junger"
+		picture = "Portrait_Mittelafrika_Ernst_Junger.tga"
+		traits = {  }
+		skill = 3
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+		}	
+		}
+	}
+focus = {
+		id = NGU_Guderian_Project
+		icon = GFX_goal_NGU_Hitler_FP
+		x = 30
+		y = 18
+		cost = 4
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_The_Charlamagne_Project}				
+		completion_reward = {
+		add_ideas = PRE_guderian_doctrine
+			add_tech_bonus = {
+				name = PRE_armor_tech
+				bonus = 0.5
+				uses = 2
+				category = armor
+			}		
+		}	
+	}
+focus = {
+		id = NGU_Charlamagne_Landing
+		icon = GFX_goal_NGU_Hitler_FP
+		x = 28
+		y = 18
+		cost = 3
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_The_Charlamagne_Project}				
+		completion_reward = {
+		puppet = CLM
+		CLM = {
+		transfer_state = 7
+		transfer_state = 35
+		transfer_state = 36
+		add_state_core = 7
+		add_state_core = 35
+		add_state_core = 36
+		load_oob = Junger_oob
+		}	
+		}
+	}
+focus = {
+		id = NGU_Charlamagne_Revolt
+		icon = GFX_goal_NGU_Hitler_FP
+		x = 29
+		y = 19
+		cost = 3
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_Guderian_Project}
+		prerequisite = { focus = NGU_Charlamagne_Landing}				
+		completion_reward = {
+		CLM = {
+		transfer_state = 6
+		add_state_core = 6
+		add_state_core = 34
+		declare_war_on = {
+    	target = BLI
+    	type = annex_everything
+		}
+		}	
+		}
+	}
+focus = {
+		id = NGU_Avenge_The_Saxons
+		icon = GFX_goal_NGU_Hitler_FP
+		x = 29
+		y = 20
+		cost = 3
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_Guderian_Project}
+		prerequisite = { focus = NGU_StirUp_Belgium}				
+		completion_reward = {
+		custom_effect_tooltip = NGU_Saxons_TT	
+		add_timed_idea = {
+		idea = NGU_FrenchSaxons
+		days = 50
+		}	
+		declare_war_on = {
+    	target = FRE
+    	type = annex_everything
+		}
+		CLM = {
+		declare_war_on = {
+    	target = FRE
+    	type = annex_everything
+		}
+		add_timed_idea = {
+		idea = NGU_FrenchSaxons
+		days = 50
+		}	
+		}	
+		}
+	}	
+
+
+focus = {
 		id = NGU_Heia_Safari
 		icon = GFX_goal_NGU_Safari
 		x = 21

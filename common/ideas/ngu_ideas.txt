@@ -196,7 +196,7 @@ NGU_CrossTheRhine = {
 			targeted_modifier = {
 			tag = FRE attack_bonus_against = 0.1 	
 			}
-		}
+		}		
 NGU_RussianWar = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
 			picture = discontent
