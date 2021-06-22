@@ -191,6 +191,15 @@ NGU_FrenchSaxons = {
 			targeted_modifier = {
 			tag = FRE attack_bonus_against = 0.1 	
 			}
-		}					
+		}
+RussianWars_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
+			picture = discontent
+			modifier = {
+            army_speed_factor = 0.30
+			ai_focus_aggressive_factor = 1
+			ai_desired_divisions_factor = 0.5
+			}
+		}							
 	
 	

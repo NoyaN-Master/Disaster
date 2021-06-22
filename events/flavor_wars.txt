@@ -244,12 +244,6 @@ country_event = { #Great Russian War
         hostility_reason = asked_to_join
         }
         }
-        every_other_country	 = {
-            limit = {
-                is_in_faction_with = RSR
-            }
-            add_ideas = RUS_Whites_Idea
-        }
         hidden_effect = {
             country_event = { id = worldwar.6 days = 7 }
         }
@@ -314,12 +308,6 @@ country_event = { #Great Russian War
         every_owned_state = {
         add_core_of = KRN
         }	
-        }
-        every_other_country	 = {
-            limit = {
-                is_in_faction_with = TSV
-            }
-            add_ideas = RUS_Soviets_Idea
         }
         news_event = { id = news.22 }
 }
