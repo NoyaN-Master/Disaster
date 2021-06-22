@@ -841,10 +841,16 @@ focus = {
 		transfer_state = 6
 		add_state_core = 6
 		add_state_core = 34
+		add_state_claim = 34
 		declare_war_on = {
     	target = BLI
     	type = annex_everything
 		}
+		}
+		add_to_war = { 
+    	targeted_alliance = CLM 
+    	enemy = BLI
+    	hostility_reason = asked_to_join
 		}	
 		}
 	}

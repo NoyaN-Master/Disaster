@@ -319,27 +319,18 @@ NGU_Russia_Deal = {
         tag = NGU
         }
         available  = {   
+        NGU = {
+        controls_state = 219
+        controls_state = 195
+        controls_state = 651
+        }
         original_tag = NGU
-        OR = {   
-        at_war_with = SOV
-        SOV = {
-        surrender_progress > 0.6    
-        }
-        at_war_with = RUS
-        RUS = {
-        surrender_progress > 0.6    
-        }
-        }
-        OR = {   
-        country_exists = SOV
-        country_exists = RUS
         }
         visible = {
         original_tag = NGU
-        at_war_with = FRE
         }    
         complete_effect = {
-        country_event = { id = ngu.13 days = 2}
+        NGU_RussianPeaceDeal = yes 
         }
      ai_will_do = {
 			factor = 1000

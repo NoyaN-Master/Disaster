@@ -13,6 +13,7 @@ NGU_Komisariat_category = {
         OR = {
         has_completed_focus = NGU_choose_hitler
         has_completed_focus = NGU_choose_strasser
+		has_country_flag = debug_ngu_flag
         }     
         }
 	}
