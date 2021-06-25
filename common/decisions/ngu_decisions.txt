@@ -337,4 +337,43 @@ NGU_Russia_Deal = {
 		}
 }
 
+NGU_Hitler_Field = {
+	    fire_only_once = yes
+		cost = 0
+        allowed = {
+        tag = NGU
+        }
+        available  = {   
+        PLN = {
+        is_puppet_of = NGU    
+        }
+        BLT = {
+        is_puppet_of = NGU    
+        }
+        original_tag = NGU
+        has_government = revolutionary_nationalist
+        }
+        visible = {
+        original_tag = NGU
+        }    
+        complete_effect = {
+        create_corps_commander = {
+	    name = "Adolf Hitler"
+	    picture = "NGU_Hitler.tga"
+	    traits = { trickster brilliant_strategist }
+	    skill = 1
+	    attack_skill = 1
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 1
+        }
+        hidden_effect = {
+        country_event = { id = ngu.16 days =  70 }    
+        }
+        }
+     ai_will_do = {
+			factor = 1000
+		}
+}
+
 }

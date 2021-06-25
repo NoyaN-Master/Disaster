@@ -516,6 +516,7 @@ country_event = { # Wehrmacht Takes Over
 	        traits = {
 	        }
             }
+		country_event = { id = ngu.17 days =  70 }    	
 		add_stability = -0.20
 		add_political_power = -200	
 		}
