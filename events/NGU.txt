@@ -559,6 +559,17 @@ country_event = { # Who will lead us
 			schizo_nigger	
 	        }
             }
+		WLF = {
+		create_country_leader = {
+	        name = "Otto Kumm"
+	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	        picture   = "Portrait_Germany_Otto_Kumm.tga"
+	        expire = "1965.1.1"
+	        ideology = natsoc_hitler
+	        traits = {	
+	        }
+            }	
+		}	
 		add_stability = 0.10
 		add_political_power = 200	
 		}
@@ -574,6 +585,17 @@ country_event = { # Who will lead us
 	        traits = {	
 	        }
             }
+		BLT = {
+		create_country_leader = {
+	        name = "Heinrich Himmler"
+	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	        picture   = "BAY_Himmler.tga"
+	        expire = "1965.1.1"
+	        ideology = natsoc_hitler
+	        traits = {	
+	        }
+            }	
+		}	
 		add_stability = 0.10
 		add_political_power = 200	
 		}		
