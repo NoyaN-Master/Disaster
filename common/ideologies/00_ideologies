@@ -415,6 +415,10 @@ ideologies = {
 			natsoc_hitler = {
 			       can_be_randomly_selected = no
 			}
+
+			natsoc_heydrich = {
+			       can_be_randomly_selected = no
+			}
 		}
 		
 			dynamic_faction_names = {

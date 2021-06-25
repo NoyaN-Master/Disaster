@@ -50,3 +50,21 @@ WRF_Border_Guard_category = {
         } 
 	visible_when_empty = no
 }
+
+WRF_Atsiz_Komisar_category = {
+	icon = GFX_decision_category_generic_political_actions
+
+	picture = Decision_picture_anatolia_influence
+	priority = 80
+	allowed = {
+		original_tag  = WRF
+	}
+		visible = {
+        original_tag = WRF
+        OR = {
+        has_country_flag = debug_TR
+        has_completed_focus = WRF_Kommisariat_System
+        }
+        } 
+	visible_when_empty = no
+}
