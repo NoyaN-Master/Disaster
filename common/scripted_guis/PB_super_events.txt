@@ -74,6 +74,12 @@ scripted_gui = {
 			}
 		}
 
+		triggers = {
+			Super_Event_Image_WW2_visible = {
+				has_global_flag  = WW2
+			}
+		}
+
 		properties = {
 			Super_Event_Image_Default = {
 				image = "[get_my_superevent_texture]"
@@ -145,6 +151,13 @@ scripted_gui = {
 						has_global_flag = goebbels_unification
 					}
 					clr_global_flag  = goebbels_unification
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = WW2
+					}
+					clr_global_flag  = WW2
 				}
 				
 			}

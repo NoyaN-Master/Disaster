@@ -264,3 +264,29 @@ country_event = {		#Super Event DONE
 		sound_effect = "ruswar"
 	}
 }
+
+country_event = {		#Super Event DONE
+	id = super.12
+	title = super.12.t
+	desc = super.12.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	trigger = {
+		ROOT = {
+		has_global_flag = WW2_happened	
+		}
+	}
+
+	fire_only_once = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.11.a
+        set_global_flag = Super_Event_Visible
+        set_global_flag = WW2
+		sound_effect = "ww2"
+	}
+}

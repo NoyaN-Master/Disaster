@@ -70,6 +70,13 @@ defined_text = { #SUPER EVENT TITLES
         }
         localization_key = "GFX_SPEVNT_German_RusWar"
     }
+
+    text = { 
+        trigger = {
+            has_global_flag = WW2
+        }
+        localization_key = "GFX_SPEVNT_WW2"
+    }
 }
 
 defined_text = { #SUPER EVENT QUOTES
@@ -142,6 +149,13 @@ defined_text = { #SUPER EVENT QUOTES
             has_global_flag = German_RusWar
         }
         localization_key = "GFX_SPEVNT_German_RusWar_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            has_global_flag = WW2
+        }
+        localization_key = "GFX_SPEVNT_WW2_TEXT"
     }
 }
 
@@ -216,6 +230,13 @@ defined_text = { #SUPER EVENT REMARKS
             has_global_flag = German_RusWar
         }
         localization_key = "GFX_SPEVNT_German_RusWar_REMARK"
+    }
+
+    text = { 
+        trigger = {
+            has_global_flag = WW2
+        }
+        localization_key = "GFX_SPEVNT_WW2_REMARK"
     }
 	
 }

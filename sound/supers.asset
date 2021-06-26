@@ -68,3 +68,10 @@ sound = {
 	volume = 1
 	always_load = yes
 }
+
+sound = {
+	name = "ww2"
+	file = "menu/ww2.wav"
+	volume = 1
+	always_load = yes
+}

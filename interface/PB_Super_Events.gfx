@@ -89,6 +89,12 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	spriteType = {
+		name = "GFX_SPEVNT_WW2"
+		texturefile = "gfx/super_events/SPVENT_WW2.dds"
+		legacy_lazy_load = no
+	}
+
 
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window_thin_border"
