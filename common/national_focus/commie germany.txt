@@ -735,7 +735,7 @@ focus = {
 		y = 15
 		cost = 1
 		available = {
-		has_government = revolutionary_nationalist	
+		always = no	
 		}
         prerequisite = { focus = NGU_Cross_The_Rhine}				
 		completion_reward = {

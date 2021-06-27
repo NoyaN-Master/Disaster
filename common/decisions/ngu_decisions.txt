@@ -174,9 +174,9 @@ NGU_Attack_Czechia = {
         tag = NGU
         }
         available  = {
-        NOT = {
-        country_exists = BLT    
-        }    
+        BLT = {
+        is_puppet_of = NGU    
+        }   
         has_war = no
         }
         visible = {
@@ -348,6 +348,9 @@ NGU_Hitler_Field = {
         is_puppet_of = NGU    
         }
         BLT = {
+        is_puppet_of = NGU    
+        }
+        WLF = {
         is_puppet_of = NGU    
         }
         original_tag = NGU
