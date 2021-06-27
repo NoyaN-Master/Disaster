@@ -610,7 +610,28 @@ country_event = { # Heyderich Rus Flavor
 	is_triggered_only = yes
 	
 	option = {
-		name = ngu.16.a
+		name = ngu.18.a
 		ai_chance = { factor = 100}
 		manpower = -1
+}
+
+country_event = { # Britian Joins War
+	id = ngu.19
+	title = ngu.19.t
+	desc = ngu.19.d
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ngu.19.a
+		ai_chance = { factor = 100}
+		ENG = {
+		create_faction = Allies
+		add_to_faction = FRE 
+		}	
+		}
+		news_event = {id = news.21}
+		set_global_flag = WW2_happened
+	}	
 }

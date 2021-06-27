@@ -7,6 +7,61 @@ NGU_paramilitary_problem = {
 			stability_factor = -0.05
 			}
 		}
+NGU_Thule = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
+			picture = discontent
+			modifier = {
+			research_speed_factor = 0.20
+			consumer_goods_factor = -0.20
+			stability_factor = -0.10
+			war_support_factor = 0.30
+			army_morale_factor = 0.10
+			}
+		}
+NGU_Knightly_Military = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
+			picture = discontent
+			modifier = {
+			army_attack_factor = 0.15
+			experience_gain_army = 0.010
+			conscription = -0.03
+			}
+		}				
+NGU_pacify_right = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
+			picture = discontent
+			modifier = {
+			stability_factor = -0.15
+			political_power_gain = -0.015
+			unisocialist_drift = -0.20
+			}
+		}
+NGU_pacify_left = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
+			picture = discontent
+			modifier = {
+			stability_factor = -0.15
+			political_power_gain = -0.015
+			}
+		}
+NGU_Race = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
+			picture = discontent
+			modifier = {
+			stability_factor = 0.10
+			political_power_gain = 0.015
+			consumer_goods_factor = 0.1
+            production_factory_max_efficiency_factor = -0.2
+			}
+		}
+NGU_HitlerYouth = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
+			picture = discontent
+			modifier = {
+			conscription = 0.05
+			war_support_factor = 0.20
+			}
+		}								
 NGU_paramilitary_problem_goebbels = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
 			picture = discontent
@@ -126,7 +181,18 @@ NGU_Strasserism_2 = {
             production_factory_start_efficiency_factor = 0.2
 			conscription = 0.03
 			}
-		}				
+		}
+NGU_Revolution = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
+			picture = discontent
+			modifier = {
+            stability_factor = 0.30
+            production_factory_start_efficiency_factor = 0.2
+			conscription = 0.03
+			war_support = 0.15
+			army_morale_factor = 0.10
+			}
+		}						
 NGU_Academia = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
 			picture = discontent
@@ -176,6 +242,17 @@ NGU_Propaganda_Ministry = {
 			party_popularity_stability_factor = 0.1
 			}
 		}
+NGU_Fyurer = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
+			picture = discontent
+			modifier = {
+            stability_factor = 0.10
+            war_support = 0.05
+			offensive_war_stability_factor = 0.3
+			party_popularity_stability_factor = 0.2
+			army_attack_factor = 0.07
+			}
+		}		
 NGU_Official_Military = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
 			picture = discontent
