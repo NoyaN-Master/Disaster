@@ -186,6 +186,17 @@ NGU_Official_Military = {
             conscription = 0.02
 			}
 		}
+NGU_FrenchSaxons = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
+			picture = discontent
+			modifier = {
+            army_speed_factor = 0.10
+			army_org_factor = 0.10
+			}
+			targeted_modifier = {
+			tag = FRE attack_bonus_against = 0.15 	
+			}
+		}
 NGU_CrossTheRhine = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
 			picture = discontent
@@ -196,7 +207,7 @@ NGU_CrossTheRhine = {
 			targeted_modifier = {
 			tag = FRE attack_bonus_against = 0.1 	
 			}
-		}		
+		}					
 NGU_RussianWar = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
 			picture = discontent
