@@ -834,8 +834,8 @@ focus = {
 		available = {
 		has_government = revolutionary_nationalist	
 		}
-        prerequisite = { focus = NGU_Guderian_Project}
-		prerequisite = { focus = NGU_Charlamagne_Landing}				
+        prerequisite = { focus = NGU_Guderian_Project }
+		prerequisite = { focus = NGU_Charlamagne_Landing }				
 		completion_reward = {
 		CLM = {
 		transfer_state = 6
@@ -930,7 +930,7 @@ focus = {
 		completion_reward = {
 		create_corps_commander  = {
 		name = "Reinhard Heydrich"
-		picture = "NGU_Heyderich.tga"
+		picture = "NGU_Heydrich.tga"
 		traits = {  }
 		skill = 3
 		attack_skill = 4
