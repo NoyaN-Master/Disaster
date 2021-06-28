@@ -1,8 +1,6 @@
 capital = 820
 oob = "SRF_1936"
 
-country_event = { id = worldwar.2 days = 40 }
-
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -53,4 +51,60 @@ create_country_leader = {
 	traits = {
 		warmonger
 	}
+}
+
+create_field_marshal = {
+	name = "Giorgi Mazniashvili"
+	picture = "SRF_Stalin.tga"
+	traits = { war_hero  }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+
+create_corps_commander = {
+	name = "Kakutsa Cholokashvili"
+	portrait_path = "gfx/leaders/SRF/Portrait_GEO_Kakutsa_Cholokashvili.tga"
+	traits = { guerilla_fighter cavalry_officer trickster }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Giorgi Khimshiashvili"
+	portrait_path = "gfx/leaders/SRF/Portrait_GEO_Giorgi_Khimshiashvili.tga"
+	traits = { cavalry_officer organizer politically_connected }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Shalva Maglakelidze"
+	portrait_path = "gfx/leaders/SRF/Portrait_GEO_Shalva_Maglakelidze.tga"
+	traits = { politically_connected old_guard }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Valiko Jugheli"
+	portrait_path = "gfx/leaders/SRF/Portrait_GEO_Valiko_Jugheli.tga"
+	traits = { career_officer trait_reckless }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
 }
