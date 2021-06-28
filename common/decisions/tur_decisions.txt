@@ -916,6 +916,7 @@ WRF_China = {
         owns_state = 592
         }
         }
+        }
         visible = {
         original_tag = WRF
         OR = {
@@ -925,6 +926,12 @@ WRF_China = {
         }    
         complete_effect = {
         release_puppet = CHI
+        release = TUV
+        release = SIK
+        release = YUN
+        release = GUO
+        release = MON
+        release = XSM
         CHI = {
         set_cosmetic_tag = Turkish_China_cosmetic
         set_politics = {
@@ -936,21 +943,12 @@ WRF_China = {
             create_country_leader = {
 	        name = "Enver Paşa"
 	        desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        portrait_path   = "disaster\gfx\leaders\CIB\CIB_Enver_Blessed.tga"
+	        portrait   = "CIB_Enver_Blessed.tga"
 	        expire = "1965.1.1"
 	        ideology = ultranationalist_subideology
 	        traits = {
 	        }
             }
-        }
-		hidden_effect = {
-        release = TUV
-        release = SIK
-        release = YUN
-        release = GUO
-        release = MON
-        release = XSM
-        CHI = {
         annex_country = {
         target = TUV
         transfer_troops = no
@@ -975,12 +973,15 @@ WRF_China = {
         target = TUV
         transfer_troops = no
         }
+        annex_country = {
+        target = XSM
+        transfer_troops = no
         }
         }
         }
      ai_will_do = {
 			factor = 1000
 		}
-}
+
 
 }
