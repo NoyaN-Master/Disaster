@@ -1,5 +1,8 @@
 spriteTypes = {
-	
+	spriteType = {
+		name = "Decision_picture_german_unification"
+		texturefile = "gfx/decision_pictures/german_unification.dds"
+	}	
 	spriteType = {
 		name = "Decision_picture_propaganda_building"
 		texturefile = "gfx/decision_pictures/propaganda_building.dds"

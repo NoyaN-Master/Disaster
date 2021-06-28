@@ -19,6 +19,7 @@ GER_unification_decisions = {
           remove_effect = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
 			set_cosmetic_tag = GER_small
+			set_country_flag = GER_small_created
           }	 
         ai_will_do = {
 			factor = 1000
@@ -44,6 +45,7 @@ GER_unification_decisions = {
           remove_effect = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
 			set_cosmetic_tag = GER_small
+			set_country_flag = GER_small_created
           }	
         ai_will_do = {
 			factor = 1000
@@ -94,6 +96,7 @@ GER_unification_decisions = {
           remove_effect = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
 			set_cosmetic_tag = GER_small
+			set_country_flag = GER_small_created
           }	 
         ai_will_do = {
 			factor = 1000
@@ -120,6 +123,7 @@ GER_unification_decisions = {
           remove_effect = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
 			set_cosmetic_tag = GER_small
+			set_country_flag = GER_small_created
           }	 
         ai_will_do = {
 			factor = 1000
@@ -186,7 +190,8 @@ GER_unification_decisions = {
 
 
 	 GER_for_germany_liberal_greater = {
-		visible = { has_government = liberal}
+		visible = { has_government = liberal
+		has_country_flag = GER_small_created}
 	 	available = {
 			if = {
                     check_variable = {
@@ -209,7 +214,8 @@ GER_unification_decisions = {
 		}	 
 	 }
 	 GER_for_germany_authoritarian_democrat_greater = {
-		visible = { has_government = authoritarian_democrat}
+		visible = { has_government = authoritarian_democrat
+		has_country_flag = GER_small_created}
 	 	available = {
 			if = {
                     check_variable = {
@@ -232,7 +238,8 @@ GER_unification_decisions = {
 		}		  
 	 }
  	 GER_for_germany_autocratic_greater = {
-		visible = { has_government = autocratic}
+		visible = { has_government = autocratic
+		has_country_flag = GER_small_created}
 	 	available = {
 			if = {
                     check_variable = {
@@ -255,7 +262,8 @@ GER_unification_decisions = {
 		}	 
 	 }
  	 GER_for_germany_ultranationalist_greater= {
-		visible = { has_government = ultranationalist}
+		visible = { has_government = ultranationalist
+		has_country_flag = GER_small_created}
 	 	available = {
 			if = {
                     check_variable = {
@@ -280,6 +288,7 @@ GER_unification_decisions = {
  	 GER_for_germany_revolutionary_nationalist_greater= {
 		visible = { has_government = revolutionary_nationalist
 		NOT = { original_tag = NGU }
+		has_country_flag = GER_small_created
 		}
 	 	available = {
 			if = {

@@ -18,16 +18,14 @@ ANT_unification_category = {
 	picture = Decision_picture_anatolia_influence
 	priority = 100
 	allowed = {
-		if = {
-    	limit = {
-        original_tag = SKL
-		original_tag = IZM
-		original_tag = ANK
-		original_tag = KLG
-		original_tag = OTH
-		original_tag = ESO
-    	} 
-}
+			OR = {
+			tag = SKL
+			tag = IZM
+			tag = ANK
+			tag = KLG
+			tag = OTH
+			tag = ESO
+			}
 	}
 	visible = {
 		always = yes
