@@ -372,3 +372,20 @@ news_event = { #RUSWAR
     }
 
 }
+
+news_event = { #Italian Bomb
+	id = news.23
+	title = news.23.t
+	desc = news.23.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+    option = {
+		name = news.23.a
+		
+    }
+
+}

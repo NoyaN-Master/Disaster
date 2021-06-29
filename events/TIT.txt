@@ -1,0 +1,129 @@
+add_namespace = tit
+
+country_event = {
+	id = tit.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tit.1" }
+	title = tit.1.t
+	desc = tit.1.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+    is_triggered_only = yes
+	
+	option = {
+		name = tit.1.a
+		ai_chance = { factor = 100 }
+		add_political_power = -100
+		add_stability = -0.15
+		hidden_effect = {
+        set_country_flag = TIT_palace_bombed
+		country_event = { id = tit.2 days = 1 }
+        news_event = { id = news.23 hours = 12 }
+        }
+		}
+	}
+
+country_event = {
+	id = tit.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tit.2" }
+	title = tit.2.t
+	desc = tit.2.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+    is_triggered_only = yes
+	
+	option = {
+		name = tit.2.a
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+		country_event = { id = tit.3 days = 1 }
+        }
+		}
+	}
+
+country_event = {
+	id = tit.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tit.2" }
+	title = tit.3.t
+	desc = tit.3.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+    is_triggered_only = yes
+	
+	option = {
+		name = tit.3.a
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+		country_event = { id = tit.4 days = 1 }
+        }
+		}
+	}
+
+country_event = {
+	id = tit.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tit.2" }
+	title = tit.4.t
+	desc = tit.4.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+    is_triggered_only = yes
+	
+	option = {
+		name = tit.4.a
+		ai_chance = { factor = 80 }
+		retire_country_leader
+		create_country_leader = {
+	    name = "Alessandro_Pirzio_Biroli"
+	    desc = "TIT_Alessandro_Pirzio_Biroli_desc"
+	    picture = "TIT_Alessandro_Pirzio_Biroli.tga"
+	    expire = "1965.1.1"
+	    ideology = ultranationalist_subideology
+		load_focus_tree = Biroli_TIT
+	    traits = {
+		#
+	    }
+		}
+		hidden_effect = {
+        }
+		}
+	option = {
+		name = tit.4.b
+		ai_chance = { factor = 20 }
+		end_puppet
+		hidden_effect = {
+		country_event = { id = tit.5 days = 1 }
+        }
+		}
+	}
+country_event = {
+	id = tit.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tit.2" }
+	title = tit.5.t
+	desc = tit.5.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+    is_triggered_only = yes
+	
+	option = {
+		name = tit.5.a
+		ai_chance = { factor = 100 }
+		transfer_state FIU 164
+		load_focus_tree = Roatta_TIT
+		hidden_effect = {
+        }
+		}
+	}
