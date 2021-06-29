@@ -1,0 +1,142 @@
+add_namespace = russia
+
+country_event = { #Restored Duma
+	id = russia.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = russia.1.t
+	desc = russia.1.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.1.a
+        set_politics = {
+	    ruling_party = conservative
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+        }
+        ai_will_do = {
+        factor = 50
+        }
+        complete_national_focus = RUS_Tsar_Victory
+        hidden_effect = {
+        set_global_flag = RUS_Conservative_Ending 
+        }
+        set_cosmetic_tag = RUS_Tsardom_Soft
+    }
+    option = {
+		name = russia.1.b
+        set_politics = {
+	    ruling_party = liberal
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+        }
+        ai_will_do = {
+        factor = 60
+        }
+        complete_national_focus = RUS_Kerensky_Victory
+        hidden_effect = {
+        set_global_flag = RUS_Kerensky_Ending 
+        }
+        set_cosmetic_tag = RUS_Russian_Fed
+    }
+    option = {
+		name = russia.1.c
+        set_politics = {
+	    ruling_party = autocratic
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+        }
+        ai_will_do = {
+        factor = 30
+        }
+        complete_national_focus = RUS_Tsar_Victory
+        hidden_effect = {
+        set_global_flag = RUS_Autocratic_Ending 
+        }
+        set_cosmetic_tag = RUS_Tsardom_Flag
+    }
+}
+
+country_event = { #Wrangel Doesn't Concede
+	id = russia.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = russia.2.t
+	desc = russia.2.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.2.a
+        complete_national_focus = RUS_Wrangel_Hundred
+        hidden_effect = {
+        set_global_flag = RUS_Wrangel_Ending    
+        }
+        ai_will_do = {
+        factor = 40
+        }
+        set_cosmetic_tag = RUS_Tsardom_Flag
+    }
+    option = {
+		name = russia.2.b
+        set_politics = {
+	    ruling_party = unisocialist
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+        }
+        ai_will_do = {
+        factor = 40
+        }
+        hidden_effect = {
+        set_global_flag = RUS_RedSavinkov_Ending
+        }
+        complete_national_focus = RUS_Savinkov_Red
+        set_cosmetic_tag = RUS_Savinkov_Flag
+    }
+    option = {
+		name = russia.2.c
+        set_politics = {
+	    ruling_party = revolutionary_nationalist
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+        }
+        ai_will_do = {
+        factor = 80
+        }
+        hidden_effect = {
+        set_global_flag = RUS_GreenSavinkov_Ending
+        }
+        complete_national_focus = RUS_Savinkov_Pale
+        set_cosmetic_tag = RUS_RedSav_Flag
+    }
+    option = {
+		name = russia.2.d
+        set_politics = {
+	    ruling_party = esoteric_traditionalist
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+        }
+        ai_will_do = {
+        factor = 10
+        }
+        hidden_effect = {
+        set_global_flag = RUS_Eurasia_Ending
+        }
+        complete_national_focus = RUS_Stern_Eurasia
+        set_cosmetic_tag = RUS_Eurasia_Cosmetic
+    }
+}

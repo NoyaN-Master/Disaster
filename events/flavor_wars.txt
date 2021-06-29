@@ -449,6 +449,7 @@ country_event = { #white victory
         }	
         }
         RUS = {
+        complete_national_focus = RUS_Victory_War    
         annex_country = {
         target = FER
         transfer_troops = yes

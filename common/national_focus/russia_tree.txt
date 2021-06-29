@@ -1,0 +1,426 @@
+focus_tree = {
+	id = russia_Focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = AUT
+		}
+	}
+	focus = {
+		id = RUS_Victory_War
+		icon = GFX_goal_NGU_Thule
+		x = 10
+		y = 1
+		cost = 3
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_Restoring_Duma
+		icon = GFX_goal_NGU_Thule
+		x = 10
+		y = 2
+		cost = 3
+		prerequisite = { focus = RUS_Victory_War}
+		mutually_exclusive = { focus = RUS_No_Political_Solution}
+		select_effect = {
+		country_event = { id russia.1 }	
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_Kerensky_Victory
+		icon = GFX_goal_NGU_Thule
+		x = 9
+		y = 3
+		cost = 3
+		prerequisite = { focus = RUS_Restoring_Duma}
+		available = {
+		has_government = liberal
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Foreign_Capital
+		icon = GFX_goal_NGU_Thule
+		x = 10
+		y = 4
+		cost = 3
+		prerequisite = { focus = RUS_Kerensky_Victory}
+		available = {
+		has_government = liberal
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Agricultural_Comitee
+		icon = GFX_goal_NGU_Thule
+		x = 8
+		y = 4
+		cost = 3
+		prerequisite = { focus = RUS_Kerensky_Victory}
+		available = {
+		has_government = liberal
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Pacify_Radicals
+		icon = GFX_goal_NGU_Thule
+		x = 9
+		y = 5
+		cost = 3
+		prerequisite = { focus = RUS_Agricultural_Comitee}
+		prerequisite = { focus = RUS_Foreign_Capital}
+		available = {
+		has_government = liberal
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Federation
+		icon = GFX_goal_NGU_Thule
+		x = 9
+		y = 6
+		cost = 3
+		prerequisite = { focus = RUS_Pacify_Radicals}
+		available = {
+		has_government = liberal
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_Tsar_Victory
+		icon = GFX_goal_NGU_Thule
+		x = 5
+		y = 3
+		cost = 3
+		prerequisite = { focus = RUS_Restoring_Duma}
+		available = {
+		OR = {	
+		has_government = conservative	
+		has_government = autocratic	
+		}
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Soft_Monarchy
+		icon = GFX_goal_NGU_Thule
+		x = 4
+		y = 4
+		cost = 3
+		prerequisite = { focus = RUS_Tsar_Victory}
+		available = {	
+		has_government = conservative		
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Conservative_Russia
+		icon = GFX_goal_NGU_Thule
+		x = 5
+		y = 5
+		cost = 3
+		prerequisite = { focus = RUS_Hard_Monarchy focus = RUS_Soft_Monarchy}
+		available = {	
+		has_government = conservative		
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_The_Tsardom
+		icon = GFX_goal_NGU_Thule
+		x = 5
+		y = 6
+		cost = 3
+		prerequisite = { focus = RUS_Conservative_Russia}
+		available = {	
+		has_government = conservative		
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_Hard_Monarchy
+		icon = GFX_goal_NGU_Thule
+		x = 6
+		y = 4
+		cost = 3
+		prerequisite = { focus = RUS_Tsar_Victory}
+		available = {	
+		has_government = autocratic		
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_No_Political_Solution
+		icon = GFX_goal_NGU_Thule
+		x = 15
+		y = 2
+		cost = 3
+		prerequisite = { focus = RUS_Victory_War}
+		mutually_exclusive = { focus = RUS_Restoring_Duma}
+		completion_reward = {
+		country_event = { id russia.2 }	
+		}
+	}
+
+	focus = {
+		id = RUS_Wrangel_Hundred
+		icon = GFX_goal_NGU_Thule
+		x = 13
+		y = 3
+		cost = 3
+		available = {
+		has_government = ultranationalist
+		}
+		prerequisite = { focus = RUS_No_Political_Solution}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Emperor_Russia
+		icon = GFX_goal_NGU_Thule
+		x = 12
+		y = 4
+		cost = 3
+		available = {
+		has_government = ultranationalist
+		}
+		prerequisite = { focus = RUS_Wrangel_Hundred}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Black_Order
+		icon = GFX_goal_NGU_Thule
+		x = 14
+		y = 4
+		cost = 3
+		available = {
+		has_government = ultranationalist
+		}
+		prerequisite = { focus = RUS_Wrangel_Hundred}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Case_Trotskya
+		icon = GFX_goal_NGU_Thule
+		x = 13
+		y = 5
+		cost = 3
+		available = {
+		has_government = ultranationalist
+		}
+		prerequisite = { focus = RUS_Black_Order}
+		prerequisite = { focus = RUS_Emperor_Russia}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Orthodox_Russia
+		icon = GFX_goal_NGU_Thule
+		x = 13
+		y = 6
+		cost = 3
+		available = {
+		has_government = ultranationalist
+		}
+		prerequisite = { focus = RUS_Case_Trotskya}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Savinkov_Pale
+		icon = GFX_goal_NGU_Thule
+		x = 17
+		y = 3
+		cost = 3
+		available = {
+		has_government = revolutionary_nationalist
+		}
+		prerequisite = { focus = RUS_No_Political_Solution}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Russian_Militarism
+		icon = GFX_goal_NGU_Thule
+		x = 17
+		y = 4
+		cost = 3
+		available = {
+		has_government = revolutionary_nationalist
+		}
+		prerequisite = { focus = RUS_Savinkov_Pale}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Vozhd_Russia
+		icon = GFX_goal_NGU_Thule
+		x = 18
+		y = 5
+		cost = 3
+		available = {
+		has_government = revolutionary_nationalist
+		}
+		prerequisite = { focus = RUS_National_Revolution }
+		prerequisite = { focus = RUS_Russian_Militarism }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Great_Russia
+		icon = GFX_goal_NGU_Thule
+		x = 19
+		y = 6
+		cost = 3
+		available = {
+		has_government = revolutionary_nationalist
+		}
+		prerequisite = { focus = RUS_Vozhd_Russia focus = RUS_Faustian_Socialism}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Faustian_Socialism
+		icon = GFX_goal_NGU_Thule
+		x = 20
+		y = 5
+		cost = 3
+		available = {
+		has_government = revolutionary_nationalist
+		}
+		prerequisite = { focus = RUS_National_Revolution }
+		prerequisite = { focus = RUS_Rise_of_NationalSoc }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Rise_of_NationalSoc
+		icon = GFX_goal_NGU_Thule
+		x = 21
+		y = 4
+		cost = 3
+		available = {
+		has_government = revolutionary_nationalist
+		}
+		prerequisite = { focus = RUS_Savinkov_Red}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_National_Revolution
+		icon = GFX_goal_NGU_Thule
+		x = 19
+		y = 4
+		cost = 3
+		available = {
+		has_government = revolutionary_nationalist
+		}
+		prerequisite = { focus = RUS_Savinkov_Pale focus = RUS_Savinkov_Red}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Savinkov_Red
+		icon = GFX_goal_NGU_Thule
+		x = 21
+		y = 3
+		cost = 3
+		available = {
+		has_government = unisocialist
+		}
+		prerequisite = { focus = RUS_No_Political_Solution}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_Stern_Eurasia
+		icon = GFX_goal_NGU_Thule
+		x = 25
+		y = 3
+		cost = 3
+		available = {
+		has_government = esoteric_traditionalist
+		}
+		prerequisite = { focus = RUS_No_Political_Solution}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Call_Steppe
+		icon = GFX_goal_NGU_Thule
+		x = 24
+		y = 4
+		cost = 3
+		available = {
+		has_government = esoteric_traditionalist
+		}
+		prerequisite = { focus = RUS_Stern_Eurasia}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_National_Buddhism
+		icon = GFX_goal_NGU_Thule
+		x = 25
+		y = 5
+		cost = 3
+		available = {
+		has_government = esoteric_traditionalist
+		}
+		prerequisite = { focus = RUS_Smash_Banks}
+		prerequisite = { focus = RUS_Call_Steppe}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_A_New_Russia
+		icon = GFX_goal_NGU_Thule
+		x = 25
+		y = 6
+		cost = 3
+		available = {
+		has_government = esoteric_traditionalist
+		}
+		prerequisite = { focus = RUS_National_Buddhism}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Smash_Banks
+		icon = GFX_goal_NGU_Thule
+		x = 26
+		y = 4
+		cost = 3
+		available = {
+		has_government = esoteric_traditionalist
+		}
+		prerequisite = { focus = RUS_Stern_Eurasia}
+		completion_reward = {
+		}
+	}
+}	
