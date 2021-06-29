@@ -1028,6 +1028,12 @@ focus = {
         prerequisite = { 
 			focus = WRF_The_Catasthrope 
 		}
+		available = {
+		has_country_leader = {
+    	name = "Fevzi Çakmak"
+    	ruling_only = yes
+		}
+		}
 		ai_will_do = {
 			factor = 1
 		}

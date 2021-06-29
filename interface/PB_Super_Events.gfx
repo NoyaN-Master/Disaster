@@ -66,12 +66,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_SPEVNT_Unification_Goebbels"
-		texturefile = "gfx/super_events/SPEVNT_Unification_Goebbels.dds"
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
 		name = "GFX_SPEVNT_UAR_FORM"
 		texturefile = "gfx/super_events/SPEVNT_UAR_FORM.dds"
 		legacy_lazy_load = no
