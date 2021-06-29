@@ -166,7 +166,7 @@ focus = {
 		icon = GFX_goal_goebbels
 		x = 12
 		y = 3
-		cost = 3
+		cost = 5
         prerequisite = { focus = NGU_start_centralization }
         prerequisite = { focus = NGU_hunt_down_bandits }
         prerequisite = { focus = NGU_choose_NAD }			
@@ -194,7 +194,7 @@ focus = {
 		icon = GFX_goal_IZM_our_great_homeland
 		x = 14
 		y = 4
-		cost = 3
+		cost = 6
         prerequisite = { focus = NGU_national_socialism }			
 		completion_reward = {
 		random_owned_state = {
@@ -230,7 +230,7 @@ focus = {
 		icon = GFX_goal_blutboden
 		x = 13
 		y = 5
-		cost = 3
+		cost = 6
         prerequisite = { focus = NGU_nationalist_economy }
         prerequisite = { focus = NGU_control_the_media }				
 		completion_reward = {
@@ -242,7 +242,7 @@ focus = {
 		icon = GFX_goal_unserkampf
 		x = 10
 		y = 4
-		cost = 3
+		cost = 4
         prerequisite = { focus = NGU_national_socialism }			
 		completion_reward = {
 		add_ideas = NGU_Unser_Kampf
@@ -254,7 +254,7 @@ focus = {
 		icon = GFX_goal_end_degenerates
 		x = 11
 		y = 5
-		cost = 3
+		cost = 4
         prerequisite = { focus = NGU_unser_kampf }
         prerequisite = { focus = NGU_control_the_media }				
 		completion_reward = {
@@ -269,7 +269,7 @@ focus = {
 		icon = GFX_goal_pangerman
 		x = 12
 		y = 6
-		cost = 3
+		cost = 7
         prerequisite = { focus = NGU_destroy_syndies }
         prerequisite = { focus = NGU_blood_and_soil }				
 		completion_reward = {
@@ -332,7 +332,7 @@ focus = {
 		icon = GFX_goal_strasser_first
 		x = 10
 		y = 8
-		cost = 3
+		cost = 7
         prerequisite = { focus = NGU_choose_strasser }								
 		completion_reward = {
 		swap_ideas = {
@@ -357,7 +357,7 @@ focus = {
 		icon = GFX_goal_iron_towers
 		x = 10
 		y = 9
-		cost = 3
+		cost = 7
         prerequisite = { focus = NGU_choose_strasser }								
 		completion_reward = {
 		add_ideas = NGU_Strasserist_Artitechture
@@ -368,7 +368,7 @@ focus = {
 		icon = GFX_goal_adress_parliament
 		x = 12
 		y = 8
-		cost = 3
+		cost = 7
         prerequisite = { focus = NGU_choose_strasser focus = NGU_choose_hitler }
 		completion_reward = {
 		add_stability = -0.10
@@ -405,7 +405,7 @@ focus = {
 		icon = GFX_goal_goebbels_roads
 		x = 12
 		y = 9
-		cost = 5
+		cost = 7
         prerequisite = { 
         focus = NGU_labor_camps    
         } 								
@@ -445,7 +445,7 @@ focus = {
 		icon = GFX_goal_goebbels_academy
 		x = 12
 		y = 10
-		cost = 3
+		cost = 7
         prerequisite = { 
         focus = NGU_autohban    
         } 								
@@ -458,7 +458,7 @@ focus = {
 		icon = GFX_goal_goebbels_final
 		x = 12
 		y = 11
-		cost = 3
+		cost = 1
         prerequisite = { 
         focus = NGU_strasser_welfare
         focus = NGU_german_history    
@@ -475,7 +475,7 @@ focus = {
 		icon = GFX_goal_strasser_labor
 		x = 10
 		y = 10
-		cost = 3
+		cost = 7
         prerequisite = { focus = NGU_choose_strasser }								
 		completion_reward = {
 		add_popularity = {
@@ -508,7 +508,7 @@ focus = {
 		icon = GFX_goal_NGU_Heydrich_End
 		x = 16
 		y = 13
-		cost = 3
+		cost = 8
         prerequisite = { focus = NGU_Deutscher_Arbeiter_Staat }
 		available = { always = no }								
 		completion_reward = {
@@ -519,7 +519,7 @@ focus = {
 		icon = GFX_goal_NGU_Toten
 		x = 15
 		y = 14
-		cost = 3
+		cost = 8
         prerequisite = { focus = NGU_Heydrich_Ending }
 							
 		completion_reward = {
@@ -531,7 +531,7 @@ focus = {
 		icon = GFX_goal_NGU_Thule
 		x = 17
 		y = 14
-		cost = 3
+		cost = 8
         prerequisite = { focus = NGU_Heydrich_Ending }
 		
 		completion_reward = {
@@ -543,11 +543,12 @@ focus = {
 		icon = GFX_goal_NGU_Russland
 		x = 16
 		y = 15
-		cost = 3
+		cost = 8
         prerequisite = { focus = NGU_Knightly_Military }
 		prerequisite = { focus = NGU_Revive_Thule }
 									
 		completion_reward = {
+		country_event = { id = ngu.18}	
 		}
 	}
 focus = {
@@ -555,7 +556,7 @@ focus = {
 		icon = GFX_goal_NGU_soldaten_europa
 		x = 16
 		y = 16
-		cost = 3
+		cost = 8
         prerequisite = { focus = NGU_Knightly_Military }
 		prerequisite = { focus = NGU_Revive_Thule }
 									
@@ -568,7 +569,7 @@ focus = {
 		icon = GFX_goal_NGU_Hitler_End
 		x = 12
 		y = 13
-		cost = 3
+		cost = 8
         prerequisite = { focus = NGU_Deutscher_Arbeiter_Staat }
 				available = { always = no }
 		completion_reward = {
@@ -579,7 +580,7 @@ focus = {
 		icon = GFX_goal_NGU_Hitleryouth
 		x = 13
 		y = 14
-		cost = 3
+		cost = 8
         prerequisite = { focus = NGU_Nazi_Ending }							
 		completion_reward = {
 			add_ideas = NGU_HitlerYouth
@@ -590,7 +591,7 @@ focus = {
 		icon = GFX_goal_NGU_aryans
 		x = 11
 		y = 14
-		cost = 3
+		cost = 8
         prerequisite = { focus = NGU_Nazi_Ending }						
 		completion_reward = {
 		add_ideas = NGU_Race	
@@ -601,7 +602,7 @@ focus = {
 		icon = GFX_goal_NGU_Left
 		x = 12
 		y = 15
-		cost = 3
+		cost = 8
         prerequisite = { focus = NGU_People_Fuhrer }
 		prerequisite = { focus = NGU_Ideologe }						
 		completion_reward = {
@@ -616,7 +617,7 @@ focus = {
 		icon = GFX_goal_NGU_soldaten_germany
 		x = 12
 		y = 16
-		cost = 3
+		cost = 8
         prerequisite = { focus = NGU_People_Fuhrer focus = NGU_Ideologe }
 								
 		completion_reward = {
@@ -629,7 +630,7 @@ focus = {
 		icon = GFX_goal_NGU_Strasser_End
 		x = 8
 		y = 13
-		cost = 4
+		cost = 8
         prerequisite = { focus = NGU_Deutscher_Arbeiter_Staat }
 								
 		completion_reward = {
@@ -640,7 +641,7 @@ focus = {
 		icon = GFX_goal_NGU_Right
 		x = 7
 		y = 14
-		cost = 4
+		cost = 8
         prerequisite = { focus = NGU_Strasserist_Ending }
 										
 		completion_reward = {
@@ -655,7 +656,7 @@ focus = {
 		icon = GFX_goal_NGU_Marx
 		x = 8
 		y = 15
-		cost = 4
+		cost = 8
         prerequisite = { focus = NGU_Absorb_Right }
 		prerequisite = { focus = NGU_Reichsfuhrer_Goebbels }
 								
@@ -668,7 +669,7 @@ focus = {
 		icon = GFX_goal_NGU_rot
 		x = 8
 		y = 16
-		cost = 4
+		cost = 2
         prerequisite = { focus = NGU_Absorb_Right }
 		prerequisite = { focus = NGU_Reichsfuhrer_Goebbels }
 								
@@ -681,7 +682,7 @@ focus = {
 		icon = GFX_goal_NGU_Reichs
 		x = 9
 		y = 14
-		cost = NGU_Strasserist_Ending
+		cost = 8
         prerequisite = { focus = NGU_Strasserist_Ending }
 										
 		completion_reward = {
@@ -693,7 +694,7 @@ focus = {
 		icon = GFX_goal_hitler_first
 		x = 14
 		y = 8
-		cost = 3
+		cost = 4
         prerequisite = { focus = NGU_choose_hitler }								
 		completion_reward = {
 		swap_ideas = {
@@ -718,7 +719,7 @@ focus = {
 		icon = GFX_goal_fund_nad
 		x = 14
 		y = 9
-		cost = 3
+		cost = 7
         prerequisite = { focus = NGU_unite_the_nation }								
 		completion_reward = {
 		swap_ideas = {
@@ -743,7 +744,7 @@ focus = {
 		icon = GFX_goal_militarism
 		x = 10
 		y = 6
-		cost = 3
+		cost = 8
         prerequisite = { focus = NGU_destroy_syndies }				
 		completion_reward = {
 		swap_ideas = {
@@ -757,7 +758,7 @@ focus = {
 		icon = GFX_goal_propaganad
 		x = 12
 		y = 4
-		cost = 3
+		cost = 6
         prerequisite = { focus = NGU_national_socialism }
 		completion_reward = {
 		add_ideas = NGU_Propaganda_Ministry
@@ -820,7 +821,7 @@ focus = {
 		icon = GFX_goal_NGU_Piast
 		x = 21
 		y = 12
-		cost = 3
+		cost = 7
         prerequisite = { focus = NGU_Mecklenburg_Crisis}
 		available = { 
 		has_war = no
@@ -838,7 +839,7 @@ focus = {
 		icon = GFX_goal_NGU_Teuton
 		x = 20
 		y = 13
-		cost = 3
+		cost = 7
         prerequisite = { focus = NGU_Operation_Piast}
 		prerequisite = { focus = NGU_Operation_Sudflanke}
 		available = { 
@@ -857,7 +858,7 @@ focus = {
 		icon = GFX_goal_NGU_Bavaria
 		x = 19
 		y = 12
-		cost = 3
+		cost = 7
         prerequisite = { focus = NGU_Mecklenburg_Crisis}
 		available = { 
 		has_war = no
@@ -883,7 +884,7 @@ focus = {
 		icon = GFX_goal_NGU_rhine
 		x = 20
 		y = 14
-		cost = 3
+		cost = 10
         prerequisite = { focus = NGU_Operation_Teutonic_Angriff}
 		available = { 
 		has_war = no
@@ -919,7 +920,7 @@ focus = {
 		icon = GFX_goal_NGU_Hitler_FP
 		x = 24
 		y = 15
-		cost = 1
+		cost = 7
 		available = {
 		always = no	
 		}
@@ -936,7 +937,11 @@ focus = {
 		y = 16
 		cost = 1
 		available = {
-		has_government = revolutionary_nationalist	
+		has_government = revolutionary_nationalist
+		WLF = {
+		has_country_flag = RUS	
+		has_war = no
+		}
 		}
         prerequisite = { focus = NGU_Hitler_Agenda}				
 		completion_reward = {
@@ -949,7 +954,7 @@ focus = {
 		icon = GFX_goal_NGU_steel
 		x = 29
 		y = 17
-		cost = 3
+		cost = 7
 		available = {
 		has_government = revolutionary_nationalist	
 		}
@@ -973,7 +978,7 @@ focus = {
 		icon = GFX_goal_NGU_guderian
 		x = 30
 		y = 18
-		cost = 4
+		cost = 7
 		available = {
 		has_government = revolutionary_nationalist	
 		}
@@ -993,7 +998,7 @@ focus = {
 		icon = GFX_goal_NGU_Nether
 		x = 28
 		y = 18
-		cost = 3
+		cost = 7
 		available = {
 		has_government = revolutionary_nationalist	
 		}
@@ -1016,7 +1021,7 @@ focus = {
 		icon = GFX_goal_NGU_Belgium
 		x = 29
 		y = 19
-		cost = 3
+		cost = 7
 		available = {
 		has_government = revolutionary_nationalist	
 		}
@@ -1045,7 +1050,7 @@ focus = {
 		icon = GFX_goal_NGU_TeutonWAR
 		x = 29
 		y = 20
-		cost = 3
+		cost = 10
 		available = {
 		has_government = revolutionary_nationalist	
 		}
@@ -1069,10 +1074,13 @@ focus = {
 		add_timed_idea = {
 		idea = NGU_FrenchSaxons
 		days = 50
+		}	
 		}
 		ENG = {
-		country_event = { id = ngu.19}	
-		}	
+		country_event = { id = ngu.19 }	
+		}
+		hidden_effect = {
+		country_event = { id = ngu.16 days = 40 }	
 		}	
 		}
 	}	
@@ -1097,9 +1105,12 @@ focus = {
 		icon = GFX_goal_NGU_Easternplan
 		x = 24
 		y = 16
-		cost = 1
+		cost = 2
 		available = {
-		has_government = revolutionary_nationalist	
+		has_government = revolutionary_nationalist
+		SWA = {
+		has_country_flag = DEU_FORMED	
+		}	
 		}
         prerequisite = { focus = NGU_Hitler_Agenda}				
 		completion_reward = {
@@ -1111,7 +1122,7 @@ focus = {
 		icon = GFX_goal_NGU_Heydrich
 		x = 24
 		y = 17
-		cost = 1
+		cost = 5
 		available = {
 		has_government = revolutionary_nationalist	
 		}
@@ -1135,7 +1146,7 @@ focus = {
 		icon = GFX_goal_NGU_Belarus
 		x = 24
 		y = 18
-		cost = 1
+		cost = 8
 		available = {
 		has_government = revolutionary_nationalist	
 		}
@@ -1149,7 +1160,7 @@ focus = {
 		icon = GFX_goal_NGU_Minsk
 		x = 24
 		y = 19
-		cost = 1
+		cost = 8
 		available = {
 		has_government = revolutionary_nationalist	
 		}
@@ -1184,7 +1195,7 @@ focus = {
 		icon = GFX_goal_NGU_Ukraine
 		x = 26
 		y = 19
-		cost = 1
+		cost = 8
 		available = {
 		has_government = revolutionary_nationalist	
 		}
@@ -1206,7 +1217,7 @@ focus = {
 		icon = GFX_goal_NGU_Russian_War
 		x = 25
 		y = 20
-		cost = 1
+		cost = 10
 		available = {
 		has_government = revolutionary_nationalist	
 		}
@@ -1230,6 +1241,9 @@ focus = {
 		add_timed_idea = {
 		idea = NGU_RussianWar
 		days = 95	
+		}
+		WLF = {
+		add_country_flag = RUS_DONE	
 		}	
 		}
 	}
@@ -1239,7 +1253,7 @@ focus = {
 		icon = GFX_goal_NGU_Wolfgang
 		x = 21
 		y = 17
-		cost = 1
+		cost = 5
 		available = {
 		has_government = revolutionary_nationalist	
 		}
@@ -1271,7 +1285,7 @@ focus = {
 		icon = GFX_goal_NGU_Cape
 		x = 22
 		y = 18
-		cost = 1
+		cost = 5
 		available = {
 		has_government = revolutionary_nationalist	
 		}
@@ -1290,7 +1304,7 @@ focus = {
 		icon = GFX_goal_NGU_Boer
 		x = 20
 		y = 18
-		cost = 1
+		cost = 5
 		available = {
 		has_government = revolutionary_nationalist	
 		}
@@ -1309,7 +1323,7 @@ focus = {
 		icon = GFX_goal_NGU_Smuts
 		x = 21
 		y = 19
-		cost = 1
+		cost = 5
 		available = {
 		has_government = revolutionary_nationalist	
 		}
@@ -1337,6 +1351,7 @@ focus = {
 		completion_reward = {
 		SWA = {
 		set_cosmetic_tag = SWA_sudafrika
+		set_country_flag = DEU_FORMED
 		}
 		}
 	}				            	            		            	            

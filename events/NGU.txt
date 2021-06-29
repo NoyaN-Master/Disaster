@@ -614,6 +614,7 @@ country_event = { # Heyderich Rus Flavor
 		ai_chance = { factor = 100}
 		manpower = -1
 }
+}
 
 country_event = { # Britian Joins War
 	id = ngu.19
@@ -633,5 +634,4 @@ country_event = { # Britian Joins War
 		}
 		news_event = {id = news.21}
 		set_global_flag = WW2_happened
-	}	
-}
+	}
