@@ -82,7 +82,6 @@ country_event = {
 	option = {
 		name = tit.4.a
 		ai_chance = { factor = 80 }
-		retire_country_leader
 		create_country_leader = {
 	    name = "Alessandro_Pirzio_Biroli"
 	    desc = "TIT_Alessandro_Pirzio_Biroli_desc"
@@ -100,7 +99,9 @@ country_event = {
 	option = {
 		name = tit.4.b
 		ai_chance = { factor = 20 }
-		end_puppet
+		FIU = {
+		end_puppet = TIT	
+		}
 		hidden_effect = {
 		country_event = { id = tit.5 days = 1 }
         }
@@ -121,7 +122,9 @@ country_event = {
 	option = {
 		name = tit.5.a
 		ai_chance = { factor = 100 }
-		transfer_state FIU 164
+		FIU = { 
+		 transfer_state = 164
+		} 
 		load_focus_tree = Roatta_TIT
 		hidden_effect = {
         }
