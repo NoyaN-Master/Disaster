@@ -778,13 +778,6 @@ WRF_Aryan_Komisar_2 = {
         INR = {
         is_puppet_of = WRF    
         }
-        every_country  = {
-        limit = {
-        OR = {
-        is_puppet_of = WRF
-        tag = WRF    
-        }        
-        }
         owns_state = 863
         owns_state = 443
         }

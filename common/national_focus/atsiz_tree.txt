@@ -903,10 +903,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_Conquest_Iran }
 		prerequisite = { focus = WRF_Kommisariat_System focus = WRF_Conquer_Palestine focus = WRF_Conquer_Arabia}
-		available = { NOT = {
-		country_exists = HJZ
-		country_exists = INR
-		country_exists = ARB	
+		available = { 
+		INR = {
+        is_puppet_of = WRF    
 		}
 		}
 		ai_will_do = {
