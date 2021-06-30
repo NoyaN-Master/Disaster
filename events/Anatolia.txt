@@ -551,7 +551,7 @@ country_event = { #The Capitol Land Disturbance
     }
 }
 
-country_event = { #The Capitol Land Disturbance 
+country_event = { #Choose Ship 
     id = ant.21
     title = ant.21.t
     desc = ant.21.d
@@ -560,41 +560,26 @@ country_event = { #The Capitol Land Disturbance
     is_triggered_only = yes
 
     option = {
-        ai_chance = { factor = 30 } 
+        ai_chance = { factor = 40 } 
         name = ant.21.a
         hidden_effect = {   
-        set_country_flag = cuck_orbay
-        unlock_national_focus = ANT_orbay
- 
+        set_country_flag = kemalists_chosen
         }
     }
 
     option = {
-        ai_chance = { factor = 40} 
-        name = ant.b.a
+        ai_chance = { factor = 0} 
+        name = ant.21.b
         hidden_effect = {   
-        set_country_flag = cuck_mercenaries
-        unlock_national_focus = ANT_mercenaries
- 
+        set_country_flag = mercs_chosen
         }
     }
 
     option = {
-        ai_chance = { factor = 10} 
-        name = ant.c.a
+        ai_chance = { factor = 100} 
+        name = ant.21.c
         hidden_effect = {   
-        set_country_flag = cuck_killigil
-        unlock_national_focus = ANT_killigil
- 
-        }
-    }
-
-    option = {
-        ai_chance = { factor = 50} 
-        name = ant.d.a
-        hidden_effect = {   
-        set_country_flag = cuck_hikmet
-        unlock_national_focus = ANT_communist
+        set_country_flag = red_chosen
         }
     }
 }

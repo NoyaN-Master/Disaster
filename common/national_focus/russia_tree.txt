@@ -6,12 +6,12 @@ focus_tree = {
 		
 		modifier = {
 			add = 10
-			tag = AUT
+			tag = RUS
 		}
 	}
 	focus = {
 		id = RUS_Victory_War
-		icon = GFX_goal_NGU_Thule
+		icon = GFX_goal_RUS_Victory
 		x = 10
 		y = 1
 		cost = 3
@@ -49,7 +49,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Foreign_Capital
-		icon = GFX_goal_NGU_Thule
+		icon = GFX_goal_RUS_Invest
 		x = 10
 		y = 4
 		cost = 3
@@ -62,7 +62,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Agricultural_Comitee
-		icon = GFX_goal_NGU_Thule
+		icon = GFX_goal_RUS_farm
 		x = 8
 		y = 4
 		cost = 3
@@ -75,7 +75,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Pacify_Radicals
-		icon = GFX_goal_NGU_Thule
+		icon = GFX_goal_RUS_Radicals
 		x = 9
 		y = 5
 		cost = 3
@@ -87,20 +87,6 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	focus = {
-		id = RUS_Federation
-		icon = GFX_goal_NGU_Thule
-		x = 9
-		y = 6
-		cost = 3
-		prerequisite = { focus = RUS_Pacify_Radicals}
-		available = {
-		has_government = liberal
-		}
-		completion_reward = {
-		}
-	}
-
 	focus = {
 		id = RUS_Tsar_Victory
 		icon = GFX_goal_NGU_Thule
@@ -143,19 +129,6 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	focus = {
-		id = RUS_The_Tsardom
-		icon = GFX_goal_NGU_Thule
-		x = 5
-		y = 6
-		cost = 3
-		prerequisite = { focus = RUS_Conservative_Russia}
-		available = {	
-		has_government = conservative		
-		}
-		completion_reward = {
-		}
-	}
 
 	focus = {
 		id = RUS_Hard_Monarchy
@@ -173,20 +146,20 @@ focus_tree = {
 
 	focus = {
 		id = RUS_No_Political_Solution
-		icon = GFX_goal_NGU_Thule
+		icon = GFX_goal_RUS_Solituon
 		x = 15
 		y = 2
 		cost = 3
 		prerequisite = { focus = RUS_Victory_War}
 		mutually_exclusive = { focus = RUS_Restoring_Duma}
 		completion_reward = {
-		country_event = { id russia.2 }	
+		country_event = { id = russia.2 }	
 		}
 	}
 
 	focus = {
 		id = RUS_Wrangel_Hundred
-		icon = GFX_goal_NGU_Thule
+		icon = GFX_goal_RUS_Wrangel
 		x = 13
 		y = 3
 		cost = 3
@@ -199,7 +172,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Emperor_Russia
-		icon = GFX_goal_NGU_Thule
+		icon = GFX_goal_RUS_Reaction
 		x = 12
 		y = 4
 		cost = 3
@@ -212,7 +185,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Black_Order
-		icon = GFX_goal_NGU_Thule
+		icon = GFX_goal_RUS_BlackHundred
 		x = 14
 		y = 4
 		cost = 3
@@ -225,7 +198,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Case_Trotskya
-		icon = GFX_goal_NGU_Thule
+		icon = GFX_goal_RUS_Red_Dossier
 		x = 13
 		y = 5
 		cost = 3
@@ -238,21 +211,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RUS_Orthodox_Russia
-		icon = GFX_goal_NGU_Thule
-		x = 13
-		y = 6
-		cost = 3
-		available = {
-		has_government = ultranationalist
-		}
-		prerequisite = { focus = RUS_Case_Trotskya}
-		completion_reward = {
-		}
-	}
-	focus = {
 		id = RUS_Savinkov_Pale
-		icon = GFX_goal_NGU_Thule
+		icon = GFX_goal_RUS_SavBrown
 		x = 17
 		y = 3
 		cost = 3
@@ -265,9 +225,9 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Russian_Militarism
-		icon = GFX_goal_NGU_Thule
+		icon = GFX_goal_RUS_Militarist
 		x = 17
-		y = 4
+		y = 5
 		cost = 3
 		available = {
 		has_government = revolutionary_nationalist
@@ -278,9 +238,9 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Vozhd_Russia
-		icon = GFX_goal_NGU_Thule
+		icon = GFX_goal_RUS_Militarism
 		x = 18
-		y = 5
+		y = 6
 		cost = 3
 		available = {
 		has_government = revolutionary_nationalist
@@ -291,23 +251,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RUS_Great_Russia
-		icon = GFX_goal_NGU_Thule
-		x = 19
-		y = 6
-		cost = 3
-		available = {
-		has_government = revolutionary_nationalist
-		}
-		prerequisite = { focus = RUS_Vozhd_Russia focus = RUS_Faustian_Socialism}
-		completion_reward = {
-		}
-	}
-	focus = {
 		id = RUS_Faustian_Socialism
-		icon = GFX_goal_NGU_Thule
+		icon = GFX_goal_RUS_Faustia_shine
 		x = 20
-		y = 5
+		y = 6
 		cost = 3
 		available = {
 		has_government = revolutionary_nationalist
@@ -319,9 +266,9 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Rise_of_NationalSoc
-		icon = GFX_goal_NGU_Thule
+		icon = GFX_goal_RUS_Red_Riders
 		x = 21
-		y = 4
+		y = 5
 		cost = 3
 		available = {
 		has_government = revolutionary_nationalist
@@ -332,7 +279,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_National_Revolution
-		icon = GFX_goal_NGU_Thule
+		icon = GFX_goal_RUS_revolution
 		x = 19
 		y = 4
 		cost = 3
@@ -345,7 +292,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Savinkov_Red
-		icon = GFX_goal_NGU_Thule
+		icon = GFX_goal_RUS_SavRed
 		x = 21
 		y = 3
 		cost = 3
@@ -359,7 +306,7 @@ focus_tree = {
 
 	focus = {
 		id = RUS_Stern_Eurasia
-		icon = GFX_goal_NGU_Thule
+		icon = GFX_goal_RUS_Stern
 		x = 25
 		y = 3
 		cost = 3
@@ -372,7 +319,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Call_Steppe
-		icon = GFX_goal_NGU_Thule
+		icon = GFX_goal_RUS_Steppe
 		x = 24
 		y = 4
 		cost = 3
@@ -385,7 +332,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_National_Buddhism
-		icon = GFX_goal_NGU_Thule
+		icon = GFX_goal_RUS_Buddhism
 		x = 25
 		y = 5
 		cost = 3
@@ -398,21 +345,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RUS_A_New_Russia
-		icon = GFX_goal_NGU_Thule
-		x = 25
-		y = 6
-		cost = 3
-		available = {
-		has_government = esoteric_traditionalist
-		}
-		prerequisite = { focus = RUS_National_Buddhism}
-		completion_reward = {
-		}
-	}
-	focus = {
 		id = RUS_Smash_Banks
-		icon = GFX_goal_NGU_Thule
+		icon = GFX_goal_RUS_Russian_Man
 		x = 26
 		y = 4
 		cost = 3

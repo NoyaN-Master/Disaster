@@ -19,7 +19,7 @@ OTH_racial_brotherhood_idea_2 = {
             stability_weekly = 0.005
             conscription = 0.03
 			}
-			}			
+			}					
 OTH_internal_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRA_Repress_Integralists" }
 			picture = GFX_idea_unknown

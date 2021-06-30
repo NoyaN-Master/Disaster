@@ -129,6 +129,9 @@ focus_tree = {
 		completion_reward = {
 		custom_effect_tooltip = fuller_siege_tt
 		country_event = { id = ant.36 }
+		hidden_effect = {
+			add_state_core = 839
+		}
 		}
 	}
 	focus = {
@@ -151,7 +154,7 @@ focus_tree = {
 	
 	focus = {
 		id = ANT_political_warfare
-		icon = GFX_goal_WRF_Yahya
+		icon = GFX_goal_DDS_choose
 		x = 24
 		y = 3
 		cost = 2
@@ -172,373 +175,229 @@ focus_tree = {
 
 	focus = {
 		id = ANT_taking_a_side
-		icon = GFX_goal_WRF_Yahya
+		icon = GFX_goal_DDS_politic
 		x = 24
 		y = 4
-		cost = 2
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_political_warfare }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = ANT_dreams_Broken
-		add_political_power = 100
 		country_event = { id = ant.21 days = 3 }
 		}
 	}
 
 	focus = {
-		id = ANT_killigil
-		icon = GFX_goal_ANT_Cowboy
-		x = 27
-		y = 5
-		cost = 2
-		available_if_capitulated = yes
-		prerequisite = { focus = ANT_taking_a_side }
-		available = { has_country_flag = cuck_killigil }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		custom_effect_tooltip = cuck_killigil_tt
-		add_political_power = 100
-		}
-	}
-
-	focus = {
-		id = ANT_killigil_authority
-		icon = GFX_goal_ANT_Cowboy
-		x = 27
-		y = 6
-		cost = 2
-		available_if_capitulated = yes
-		prerequisite = { focus = ANT_killigil }
-		available = { has_country_flag = cuck_killigil }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		custom_effect_tooltip = cuck_killigil_tt
-		add_political_power = 100
-		}
-	}
-
-	focus = {
-		id = ANT_killigil_enver_connections
-		icon = GFX_goal_ANT_Cowboy
-		x = 27
-		y = 7
-		cost = 2
-		available_if_capitulated = yes
-		prerequisite = { focus = ANT_killigil_authority }
-		available = { has_country_flag = cuck_killigil }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		custom_effect_tooltip = cuck_killigil_tt
-		add_political_power = 100
-		}
-	}
-
-	focus = {
-		id = ANT_killigil_act_13
-		icon = GFX_goal_ANT_Cowboy
-		x = 27
-		y = 8
-		cost = 2
-		available_if_capitulated = yes
-		prerequisite = { focus = ANT_killigil_enver_connections }
-		available = { has_country_flag = cuck_killigil }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		custom_effect_tooltip = cuck_killigil_tt
-		add_political_power = 100
-		}
-	}
-
-	focus = {
-		id = ANT_communist
-		icon = GFX_goal_WRF_Yahya
-		x = 25
-		y = 5
-		cost = 2
-		available_if_capitulated = yes
-		prerequisite = { focus = ANT_taking_a_side }
-		available = { has_country_flag = cuck_hikmet }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		custom_effect_tooltip = cuck_hikmet_tt
-		add_to_variable = { ANT.nazim_influence = 15 } 
-		subtract_from_variable = { ANT.kemalist_influence = 5 }
-		subtract_from_variable = { ANT.enver_influence = 5 }
-		subtract_from_variable = { ANT.merc_influence = 5 }
-		}
-	}
-
-	focus = {
-		id = ANT_communist_authority
-		icon = GFX_goal_WRF_Yahya
-		x = 25
-		y = 6
-		cost = 3
-		available_if_capitulated = yes
-		prerequisite = { focus = ANT_communist }
-		available = { has_country_flag = cuck_hikmet }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		add_to_variable = { ANT.nazim_influence = 15 } 
-		subtract_from_variable = { ANT.kemalist_influence = 5 }
-		subtract_from_variable = { ANT.enver_influence = 5 }
-		subtract_from_variable = { ANT.merc_influence = 5 }
-		add_popularity = {
-    	ideology = unisocialist
-    	popularity = 0.15
-		}
-		add_popularity = {
-    	ideology = libertarian_socialist
-    	popularity = 0.15
-		}
-		country_event = { id = ant.24 }
-		}
-	}
-
-	focus = {
-		id = ANT_communist_party_struggle
-		icon = GFX_goal_WRF_Yahya
-		x = 25
-		y = 7
-		cost = 3
-		available_if_capitulated = yes
-		prerequisite = { focus = ANT_communist_authority }
-		available = { has_country_flag = cuck_hikmet }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		add_political_power = 100
-		country_event = { id = ant.25 }
-		}
-	}
-
-	focus = {
-		id = ANT_communist_act_32
-		icon = GFX_goal_WRF_Yahya
-		x = 25
-		y = 8
-		cost = 4
-		available_if_capitulated = yes
-		select_effect = {
-		country_event = { id = ant.26 days = 2}
-		country_event = { id = ant.27 days = 5}		
-		}
-		prerequisite = { focus = ANT_communist_party_struggle }
-		available = { has_country_flag = cuck_hikmet }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		custom_tooltip = act_32tt
-		}
-	}
-
-	focus = {
-		id = ANT_orbay
-		icon = GFX_goal_WRF_Yahya
+		id = ANT_Our_Heartlands
+		icon = GFX_goal_ANT_Homeland
 		x = 23
 		y = 5
-		cost = 2
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_taking_a_side }
-		available = { has_country_flag = cuck_orbay }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = cuck_orbay_tt
-		add_political_power = 100
+		if = {
+			limit = {
+			has_country_flag = red_chosen	
+			}
+			347 = {
+				add_building_construction = {
+    			type = arms_factory
+    			level = 4
+    			instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 4
+			}
+		}
+		else_if = {
+    		limit = {
+        	has_country_flag = mercs_chosen
+    		}
+    		356 = {
+			add_building_construction = {
+    			type = arms_factory
+    			level = 4
+    			instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 4
+			}
+		}
+		else_if = {
+    		limit = {
+        	has_country_flag = kemalists_chosen
+    		}
+    		49 = {
+			add_building_construction = {
+    			type = arms_factory
+    			level = 4
+    			instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 4
+			}
+		}
 		}
 	}
 
 	focus = {
-		id = ANT_orbay_authority
-		icon = GFX_goal_WRF_Yahya
-		x = 23
-		y = 6
-		cost = 2
-		available_if_capitulated = yes
-		prerequisite = { focus = ANT_orbay }
-		available = { has_country_flag = cuck_orbay }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		custom_effect_tooltip = cuck_orbay_tt
-		add_political_power = 100
-		}
-	}
-
-	focus = {
-		id = ANT_orbay_bases
-		icon = GFX_goal_WRF_Yahya
-		x = 23
-		y = 7
-		cost = 2
-		available_if_capitulated = yes
-		prerequisite = { focus = ANT_orbay_authority }
-		available = { has_country_flag = cuck_orbay }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		custom_effect_tooltip = cuck_orbay_tt
-		add_political_power = 100
-		}
-	}
-
-	focus = {
-		id = ANT_orbay_act_43
-		icon = GFX_goal_WRF_Yahya
-		x = 23
-		y = 8
-		cost = 2
-		available_if_capitulated = yes
-		prerequisite = { focus = ANT_orbay_bases }
-		available = { has_country_flag = cuck_orbay }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		custom_effect_tooltip = cuck_orbay_tt
-		add_political_power = 100
-		}
-	}
-
-	focus = {
-		id = ANT_mercenaries
-		icon = GFX_goal_WRF_Yahya
-		x = 21
+		id = ANT_Fuller_Gas
+		icon = GFX_goal_ANT_gas
+		x = 25
 		y = 5
-		cost = 2
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = ANT_taking_a_side }
-		available = { has_country_flag = cuck_mercenaries }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = cuck_mercenaries_tt
-		add_political_power = 100
-		add_stability = 0.10
-		hidden_effect = {
-		add_to_variable = { ANT.merc_influence = 15 } 
-		subtract_from_variable = { ANT.kemalist_influence = 5 }
-		subtract_from_variable = { ANT.enver_influence = 5 }
-		subtract_from_variable = { ANT.nazim_influence = 5 } 
+		if = {
+			limit = {
+			has_country_flag = red_chosen	
+			}
+			IZM = {
+			add_ideas = fuller_gas	
+			}
+		}
+		else_if = {
+    		limit = {
+        	has_country_flag = mercs_chosen
+    		}
+    		OTH = {
+			add_ideas = fuller_gas	
+			}
+		}
+		else_if = {
+    		limit = {
+        	has_country_flag = kemalists_chosen
+    		}
+    		ANK = {
+			add_ideas = fuller_gas	
+			}
 		}
 		}
 	}
-
 	focus = {
-		id = ANT_mercenaries_authority
-		icon = GFX_goal_WRF_Yahya
-		x = 21
+		id = ANT_Raiding_Corum
+		icon = GFX_goal_kill_bandit
+		x = 24
 		y = 6
-		cost = 2
+		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ANT_mercenaries }
-		available = { has_country_flag = cuck_mercenaries }
+		prerequisite = { focus = ANT_Our_Heartlands }
+		prerequisite = { focus = ANT_Fuller_Gas }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = cuck_mercenaries_tt
-		add_political_power = 100
-		add_stability = 0.20
-		manpower = -10000
-		country_event = { id = ant.12 days = 3 }
-		hidden_effect = {
-		add_to_variable = { ANT.merc_influence = 20 } 
-		subtract_from_variable = { ANT.kemalist_influence = 5 }
-		subtract_from_variable = { ANT.enver_influence = 5 }
-		subtract_from_variable = { ANT.army_influence = 10 } 
+		if = {
+			limit = {
+			has_country_flag = red_chosen	
+			}
+			IZM = {
+			add_state_core = 839
+			}
 		}
+		else_if = {
+    		limit = {
+        	has_country_flag = mercs_chosen
+    		}
+    		OTH = {
+			add_state_core = 839	
+			}
 		}
-	}
-
-	focus = {
-		id = ANT_mercenaries_bases
-		icon = GFX_goal_WRF_Yahya
-		x = 21
-		y = 7
-		cost = 2
-		available_if_capitulated = yes
-		prerequisite = { focus = ANT_mercenaries_authority }
-		available = { has_country_flag = cuck_mercenaries }
-		ai_will_do = {
-			factor = 1
+		else_if = {
+    		limit = {
+        	has_country_flag = kemalists_chosen
+    		}
+    		ANK = {
+			add_state_core = 839	
+			}
 		}
-		completion_reward = {
-		custom_effect_tooltip = cuck_mercenaries_tt
-		356 = {
-		add_building_construction = {
-    	type = industrial_complex      
-    	level = 3
-    	instant_build = yes
-		}
-		add_building_construction = {
-    	type = arms_factory             
-    	level = 2
-    	instant_build = yes
-		}
-		add_building_construction = {
-    	type = infrastructure             
-    	level = 3
-    	instant_build = yes
 		}	
-		}
-		hidden_effect = {
-		add_to_variable = { ANT.merc_influence = 20 } 
-		subtract_from_variable = { ANT.kemalist_influence = 10 }
-		subtract_from_variable = { ANT.enver_influence = 5 }
-		subtract_from_variable = { ANT.nazim_influence = 5 } 
-		}
-		}
 	}
-
 	focus = {
-		id = ANT_mercenaries_act_56
-		icon = GFX_goal_WRF_Yahya
-		x = 21
-		y = 8
-		cost = 4
+		id = ANT_Bomb_Bases
+		icon = GFX_goal_ANT_base
+		x = 24
+		y = 7
+		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ANT_mercenaries_bases }
-		available = { has_country_flag = cuck_mercenaries }
+		prerequisite = { focus = ANT_Raiding_Corum }
 		ai_will_do = {
 			factor = 1
 		}
-		select_effect = {
-		country_event = { id = ant.16 days = 2}	
+		completion_reward = {
+		if = {
+			limit = {
+			has_country_flag = red_chosen	
+			}
+			OTH = {
+			add_ideas = ANT_Bombed_Warlord
+			}
+			ANK = {
+			add_ideas = ANT_Bombed_Warlord
+			}
 		}
-		completion_reward = {	
-		custom_effect_tooltip = act_56_tt
-		custom_effect_tooltip = angry_army_tt
-		add_political_power = 100
-		hidden_effect = {
-		add_to_variable = { ANT.merc_influence = 25 } 
-		subtract_from_variable = { ANT.army_influence = 10 }
-		subtract_from_variable = { ANT.enver_influence = 10 }
-		subtract_from_variable = { ANT.nazim_influence = 10 } 
+		else_if = {
+    		limit = {
+        	has_country_flag = mercs_chosen
+    		}
+    		IZM = {
+			add_ideas = ANT_Bombed_Warlord
+			}
+			ANK = {
+			add_ideas = ANT_Bombed_Warlord
+			}
 		}
+		else_if = {
+    		limit = {
+        	has_country_flag = kemalists_chosen
+    		}
+    		OTH = {
+			add_ideas = ANT_Bombed_Warlord
+			}
+			IZM = {
+			add_ideas = ANT_Bombed_Warlord
+			}
 		}
+		}	
+	}
+	focus = {
+		id = ANT_Pull_Trigger
+		icon = GFX_goal_ANT_collapse
+		x = 24
+		y = 8
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = ANT_Bomb_Bases }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		if = {
+			limit = {
+			has_country_flag = red_chosen	
+			}
+			country_event = { id = ant.29 days = 1}
+		}
+		else_if = {
+    		limit = {
+        	has_country_flag = mercs_chosen
+    		}
+    		country_event = { id = ant.9 days = 1}
+		}
+		else_if = {
+    		limit = {
+        	has_country_flag = kemalists_chosen
+    		}
+    		country_event = { id = ant.10 days = 1}
+		}
+		}	
 	}
 
 	}
