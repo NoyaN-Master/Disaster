@@ -21,7 +21,14 @@ SRF_Unite_Georgia = {
         set_capital = 231
         set_cosmetic_tag = Stalin_GEO
         add_stability = 0.20
-        
+        create_country_leader = {
+	    name = "Ioseb St'alini"
+	    desc = "POLITICS_STALIN_DESC"
+	    picture = "SRF_Driptalin.tga"
+	    expire = "1965.1.1"
+	    ideology = stalinism
+	    traits = { }
+        }
         }
      ai_will_do = {
 			factor = 1000

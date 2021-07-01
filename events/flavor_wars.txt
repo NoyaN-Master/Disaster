@@ -507,3 +507,47 @@ country_event = { #white victory
         }
 }
 
+country_event = { #code debug
+	id = worldwar.32
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = worldwar.32.t
+	desc = worldwar.32.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = worldwar.32.a
+        news_event = { id = news.31 }
+        YUN = {
+        set_cosmetic_tag = Mao_Warlord_Cosmetic
+        set_politics = {
+	    ruling_party = authoritarian_socialist
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+        }
+        create_country_leader = {
+	    name = "Mao Zedong"
+	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	    picture = "YUN_Mao.tga"
+	    expire = "1965.1.1"
+	    ideology = authoritarian_socialist_subideology
+	    traits = {
+		
+	    }
+        } 
+        create_faction = MAO_FACTION
+        }
+        YUN = {
+        add_to_faction = GUO    
+        }
+        declare_war_on = {
+        target = CHI
+        type = annex_everything
+        }	
+        }
+        }

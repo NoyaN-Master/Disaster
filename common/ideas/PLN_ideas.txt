@@ -20,6 +20,22 @@ PLN_minorities_and_borders = {
 			political_power_factor = -0.05
 			}
 		}
+NGU_pacify_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
+			picture = discontent
+			modifier = {
+			stability_factor = -0.15
+			political_power_gain = -0.015
+			}
+		}
+NGU_pacify_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
+			picture = discontent
+			modifier = {
+			stability_factor = -0.15
+			political_power_gain = -0.015
+			}
+		}			
 		
 PLN_leftist_organizations = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PLN_leftist_organizations" }
