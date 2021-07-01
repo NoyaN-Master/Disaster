@@ -544,6 +544,7 @@ country_event = { #code debug
         every_owned_state = {
         add_core_of = YUN
         }
+        country_event = { id = worldwar.33 days = 20}
         }
         JPN = {
         transfer_state = 743    
@@ -562,3 +563,32 @@ country_event = { #code debug
         }	
         }
         }
+country_event = { #code debug
+	id = worldwar.33
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = worldwar.33.t
+	desc = worldwar.33.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = worldwar.33.a
+        CHI = {
+        create_country_leader = {
+	    name = "Chiang Kai-shek"
+	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	    picture = "CHI_Chiang.tga"
+	    expire = "1965.1.1"
+	    ideology = autocratic_subideology
+	    traits = {
+		
+	    }
+        }
+        set_cosmetic_tag = KMT_China   
+        }
+        }
+}        

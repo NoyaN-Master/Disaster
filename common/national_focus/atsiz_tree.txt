@@ -342,7 +342,7 @@ focus_tree = {
 		remove_idea = Atsiz_KorpsDeath_Fuel
 		add_idea = Atsiz_KorpsDeath_Eurasia	
 		}
-		unlock_national_focus = WRF_MiddleEast_Plan
+		unlock_national_focus = WRF_Conquest_Iraq
 		hidden_effect = {
 		}
 		}
@@ -807,6 +807,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+		always = no	
 		}
 		completion_reward = {
 			SYR = {
