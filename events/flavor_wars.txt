@@ -539,7 +539,18 @@ country_event = { #code debug
 	    traits = {
 		
 	    }
+        }
+        CHI = {    
+        every_owned_state = {
+        add_core_of = YUN
+        }
+        }
+        JPN = {
+        transfer_state = 743    
         } 
+        MAN = {
+        transfer_state = 609    
+        }
         create_faction = MAO_FACTION
         }
         YUN = {

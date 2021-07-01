@@ -4,12 +4,9 @@ Mao_War_End = {
 		cost = 0
         available  = {
         tag = YUN
-        CHI = {
         NOT = {
-        controls_state = 613        
-        controls_state = 593
+        country_exists = CHI
         }    
-        }
         }
         visible = {
         tag = YUN

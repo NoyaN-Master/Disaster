@@ -1079,7 +1079,8 @@ focus = {
 		country_event = { id = ngu.19 }	
 		}
 		hidden_effect = {
-		country_event = { id = ngu.16 days = 40 }	
+		country_event = { id = ngu.16 days = 40 }
+		set_global_flag = WW2_happened	
 		}	
 		}
 	}	

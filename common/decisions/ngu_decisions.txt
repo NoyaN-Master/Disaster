@@ -332,6 +332,9 @@ NGU_Russia_Deal = {
         }    
         complete_effect = {
         NGU_RussianPeaceDeal = yes 
+        hidden_effect = {
+            set_country_flag = wolfstaat_big
+        }
         }
      ai_will_do = {
 			factor = 1000
@@ -397,7 +400,7 @@ NGU_Hitler_Field = {
         }
         original_tag = NGU
         has_government = revolutionary_nationalist
-        complete_national_focus = NGU_The_Great_Russian_War
+        has_country_flag = wolfstaat_big
         }
         visible = {
         original_tag = NGU

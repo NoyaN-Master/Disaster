@@ -274,7 +274,7 @@ country_event = {		#Super Event DONE
 	is_triggered_only = no
 	
 	trigger = {
-		ROOT = {
+		NGU = {
 		has_global_flag = WW2_happened	
 		}
 	}
@@ -284,7 +284,7 @@ country_event = {		#Super Event DONE
 	hidden = yes
 
 	option = {
-		name = super.11.a
+		name = super.12.a
         set_global_flag = Super_Event_Visible
         set_global_flag = WW2
 		sound_effect = "ww2"
