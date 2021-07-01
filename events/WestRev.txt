@@ -406,6 +406,7 @@ country_event = { #Manisa Congress Army
 			}
 		}
 		country_event = { id = wrf.19 days = 1 }
+		ai_chance = { factor = 100 }
 		}
 	option = {
 		name = wrf.18.b #Nasyonel Bolsevik
@@ -423,7 +424,7 @@ country_event = { #Manisa Congress Army
 		ideology = revolutionary_nationalist
 		popularity = 0.1
 		}
-		
+		ai_chance = { factor = 10 }
 		}
 	option = {
 		name = wrf.18.c #Demokrat
@@ -472,6 +473,7 @@ country_event = { #Manisa Congress Religion
 		}
 		set_country_flag = WRF_religion_kemalist
 		country_event = { id = wrf.20 days = 1 }
+		ai_chance = { factor = 100 }
 		}
 	option = {
 		name = wrf.19.b #Nasyonel Bolsevik Iconoclast
@@ -489,7 +491,7 @@ country_event = { #Manisa Congress Religion
 		ideology = revolutionary_nationalist
 		popularity = 0.1
 		}
-		
+		ai_chance = { factor = 60 }
 		}
 	option = {
 		name = wrf.19.c #Demokrat Mixed
@@ -538,6 +540,7 @@ country_event = { #Manisa Congress Policy
 			}
 		}
 		country_event = { id = wrf.28 days = 1 }
+		ai_chance = { factor = 100 }
 		}
 		
 	option = {
@@ -556,6 +559,7 @@ country_event = { #Manisa Congress Policy
 		popularity = 0.1
 		}
 		country_event = { id = wrf.28 days = 1 }
+		ai_chance = { factor = 60 }
 		}
 	option = {
 		name = wrf.20.c #The Democracy
