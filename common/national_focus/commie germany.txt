@@ -607,7 +607,7 @@ focus = {
 		prerequisite = { focus = NGU_Ideologe }						
 		completion_reward = {
 		add_timed_idea = {
-		days = NGU_pacify_left
+		days = NGU_pacify_1
 		days = 100	
 		}	
 		}
@@ -632,7 +632,7 @@ focus = {
 		y = 13
 		cost = 8
         prerequisite = { focus = NGU_Deutscher_Arbeiter_Staat }
-								
+						available = { always = no }		
 		completion_reward = {
 		}
 	}
@@ -646,7 +646,7 @@ focus = {
 										
 		completion_reward = {
 		add_timed_idea = {
-		days = NGU_pacify_right
+		days = NGU_pacify_2
 		days = 100	
 		}		
 		}
@@ -939,7 +939,7 @@ focus = {
 		available = {
 		has_government = revolutionary_nationalist
 		WLF = {
-		has_country_flag = RUS	
+		has_country_flag = RUS_DONE	
 		has_war = no
 		}
 		}
@@ -1054,8 +1054,7 @@ focus = {
 		available = {
 		has_government = revolutionary_nationalist	
 		}
-        prerequisite = { focus = NGU_Guderian_Project}
-		prerequisite = { focus = NGU_StirUp_Belgium}				
+		prerequisite = { focus = NGU_Charlamagne_Revolt}				
 		completion_reward = {
 		custom_effect_tooltip = NGU_Saxons_TT	
 		add_timed_idea = {

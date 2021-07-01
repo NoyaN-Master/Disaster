@@ -781,5 +781,9 @@ spriteType = {
 spriteType = {
 		name = "GFX_ideology_turkish_marxism"
 		texturefile = "gfx/interface/ideologies/turkish_marxism.dds"
+	}
+spriteType = {
+		name = "GFX_ideology_stalinism"
+		texturefile = "gfx/interface/ideologies/stalinism.dds"
 	}	
 }

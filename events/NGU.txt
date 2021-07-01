@@ -346,6 +346,7 @@ country_event = { # Berling Becomes Capital
 				has_government = unisocialist
 			}
 			complete_national_focus = NGU_Strasser_Agenda
+			complete_national_focus = NGU_Strasserist_Ending
 		}
 	}
 }
@@ -544,7 +545,8 @@ country_event = { # Who will lead us
 	        }
             }
 		add_stability = 0.10
-		add_political_power = 200	
+		add_political_power = 200
+		complete_national_focus = NGU_Nazi_Ending	
 		}
 	option = {
 		name = ngu.17.b
@@ -559,6 +561,8 @@ country_event = { # Who will lead us
 			schizo_nigger	
 	        }
             }
+		set_cosmetic_tag = Heydrich_Evropa
+		country_event = { id = ngu.20 days = 2}
 		WLF = {
 		create_country_leader = {
 	        name = "Otto Kumm"
@@ -571,7 +575,8 @@ country_event = { # Who will lead us
             }	
 		}	
 		add_stability = 0.10
-		add_political_power = 200	
+		add_political_power = 200
+		complete_national_focus = NGU_Heydrich_Ending	
 		}
 	option = {
 		name = ngu.17.c
@@ -597,7 +602,8 @@ country_event = { # Who will lead us
             }	
 		}	
 		add_stability = 0.10
-		add_political_power = 200	
+		add_political_power = 200
+		complete_national_focus = NGU_Nazi_Ending	
 		}		
 }
 
@@ -616,6 +622,57 @@ country_event = { # Heyderich Rus Flavor
 }
 }
 
+country_event = { # EVROPA
+	id = ngu.20
+	title = ngu.20.t
+	desc = ngu.20.d
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ngu.20.a
+		ai_chance = { factor = 100}
+		BLT = {
+		every_owned_state = {
+        add_core_of = NGU
+        }	
+		}
+		PLN = {
+		every_owned_state = {
+        add_core_of = NGU
+        }	
+		}
+		WLF = {
+		every_owned_state = {
+        add_core_of = NGU
+        }	
+		}
+		CEZ = {
+		every_owned_state = {
+        add_core_of = NGU
+        }	
+		}
+		NGU = {
+		annex_country = {
+    	target = WLF
+    	transfer_troops = yes
+		}
+		annex_country = {
+    	target = CEZ
+    	transfer_troops = yes
+		}
+		annex_country = {
+    	target = PLN
+    	transfer_troops = yes
+		}
+		annex_country = {
+    	target = BLT
+    	transfer_troops = yes
+		}	
+		}		
+}
+}
 country_event = { # Britian Joins War
 	id = ngu.19
 	title = ngu.19.t

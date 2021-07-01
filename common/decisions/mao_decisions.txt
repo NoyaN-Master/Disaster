@@ -1,0 +1,45 @@
+china_category_name = {
+Mao_War_End = {
+	    fire_only_once = yes
+		cost = 0
+        available  = {
+        tag = YUN
+        CHI = {
+        NOT = {
+        controls_state = 613        
+        controls_state = 593
+        }    
+        }
+        }
+        visible = {
+        tag = YUN
+        }  
+        complete_effect = {
+        set_capital = 613    
+        set_cosmetic_tag = Mao_Name_Cosmetic    
+        CHI = {    
+        every_owned_state = {
+        add_core_of = YUN
+        }
+        }
+        GUO = {    
+        every_owned_state = {
+        add_core_of = YUN
+        }
+        }     
+        YUN = {
+        annex_country = {
+        target = GUO
+        transfer_troops = yes
+        }    
+        annex_country = {
+        target = CHI
+        transfer_troops = yes
+        }
+        }
+        }
+        ai_will_do = {
+			factor = 1000
+		}
+     }
+}

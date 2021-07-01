@@ -318,19 +318,61 @@ NGU_Russia_Deal = {
         allowed = {
         tag = NGU
         }
-        available  = {   
-        NGU = {
-        controls_state = 219
-        controls_state = 195
-        controls_state = 651
+        available  = {     
+        RUS = {
+        NOT = {
+        controls_state = 217
+            controls_state = 195
+            controls_state = 219 
         }
-        original_tag = NGU
+        }  
         }
         visible = {
         original_tag = NGU
         }    
         complete_effect = {
         NGU_RussianPeaceDeal = yes 
+        }
+     ai_will_do = {
+			factor = 1000
+		}
+}
+
+NGU_UKR_deal = {
+	    fire_only_once = yes
+		cost = 0
+        allowed = {
+        tag = NGU
+        }
+        available  = {     
+        original_tag = NGU
+        UKR = {
+        country_exists = no   
+        }
+        FRI = {
+        country_exists = no    
+        }
+        WLF = {
+        country_exists = yes    
+        }
+        has_completed_focus = NGU_Ukrainian_Annex    
+        }
+        visible = {
+        original_tag = NGU
+        }    
+        complete_effect = {
+        release = UKR
+        release = FRI
+        WLF = {
+         annex_country = {
+            target = FRI
+            transfer_troops = yes
+            }
+         annex_country = {
+            target = UKR
+            transfer_troops = yes
+            }      
+        } 
         }
      ai_will_do = {
 			factor = 1000
@@ -355,9 +397,11 @@ NGU_Hitler_Field = {
         }
         original_tag = NGU
         has_government = revolutionary_nationalist
+        complete_national_focus = NGU_The_Great_Russian_War
         }
         visible = {
         original_tag = NGU
+        has_war = no
         }    
         complete_effect = {
         create_corps_commander = {
@@ -371,7 +415,7 @@ NGU_Hitler_Field = {
 	    logistics_skill = 1
         }
         hidden_effect = {
-        country_event = { id = ngu.16 days =  70 }    
+        country_event = { id = ngu.16 days =  10 }    
         }
         }
      ai_will_do = {

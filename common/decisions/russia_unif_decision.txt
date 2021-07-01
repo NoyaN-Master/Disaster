@@ -17,6 +17,33 @@ russia_unify_decision = {
 			factor = 1000
 		}
      }
+red_army_desertion = {
+	    fire_only_once = yes
+		cost = 0
+        available  = {
+        tag = TSV
+        TAT = {
+        has_capitulated = yes
+        }
+        TKH = {
+        has_capitulated = yes
+        }
+        TSV = {
+        NOT = {
+        controls_state = 219    
+        }    
+        }
+        }
+        visible = {
+        original_tag = TSV
+        }  
+        complete_effect = {
+        add_ideas = Red_Army_Desertion_idea
+        }
+        ai_will_do = {
+			factor = 1000
+		}
+     }     
 
 
 

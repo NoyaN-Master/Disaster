@@ -222,23 +222,6 @@ news_event = { #Unification-Atsiz
 }
 
 news_event = { #The Snow Massacre
-	id = news.14
-	title = news.14.t
-	desc = news.14.d
-	picture = GFX_news_event_001
-	
-	major = yes
-	
-	is_triggered_only = yes
-
-    option = {
-		name = news.14.a
-		
-    }
-
-}
-
-news_event = { #The Snow Massacre
 	id = news.15
 	title = news.15.t
 	desc = news.15.d
@@ -377,6 +360,23 @@ news_event = { #Italian Bomb
 	id = news.23
 	title = news.23.t
 	desc = news.23.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+    option = {
+		name = news.23.a
+		
+    }
+
+}
+
+news_event = { #Mao Union
+	id = news.31
+	title = news.31.t
+	desc = news.31.d
 	picture = GFX_news_event_001
 	
 	major = yes
