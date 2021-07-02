@@ -24,17 +24,9 @@ focus_tree = {
 		completion_reward = {
 		add_stability = 0.03
 		hidden_effect = {
-        set_variable = {
-	    var = CLP.Ulema_Power
-	    value = 0
-        }
-        set_variable = {
-	    var = CLP.Sultan_Power
-	    value = 0
         }	
 		}
 		}
-	}
 
     focus = {
 		id = CLP_overview_state
@@ -108,7 +100,7 @@ focus_tree = {
 		icon = GFX_goal_CLP_CLP_new_orders
 		x = 18
 		y = 2
-		cost = 3
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = CLP_ulama_state }
 		ai_will_do = {
@@ -125,7 +117,7 @@ focus_tree = {
 		icon = GFX_goal_CLP_Landreform
 		x = 20
 		y = 2
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = CLP_ulama_state }
 		ai_will_do = {
@@ -165,7 +157,7 @@ focus_tree = {
 		icon = GFX_goal_CLP_embrace_order
 		x = 18
 		y = 3
-		cost = 3
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = CLP_new_orders }
 		ai_will_do = {
@@ -181,7 +173,7 @@ focus_tree = {
 		icon = GFX_goal_challenge_salafi
 		x = 19
 		y = 4
-		cost = 4
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = CLP_embrace_order }
 		prerequisite = { focus = CLP_public_works }
@@ -219,7 +211,7 @@ focus_tree = {
 		icon = GFX_goal_CLP_believers_army
 		x = 14
 		y = 6
-		cost = 4
+		cost = 5
 		prerequisite = { focus = CLP_allah_wills_progress }
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -235,7 +227,7 @@ focus_tree = {
 		icon = GFX_goal_CLP_asakiri_muhammed
 		x = 16
 		y = 7
-		cost = 5
+		cost = 7
 		prerequisite = { focus = CLP_believers_army }
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -260,7 +252,7 @@ focus_tree = {
 		icon = GFX_goal_CLP_non-ottoman_doctrine
 		x = 16
 		y = 8
-		cost = 5
+		cost = 7
 		prerequisite = { focus = CLP_asakiri_muhammed }
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -296,7 +288,7 @@ focus_tree = {
 		icon = GFX_goal_konya_airport
 		x = 17
 		y = 10
-		cost = 5
+		cost = 7
 		prerequisite = { focus = CLP_manuevar_importancy }
 		prerequisite = { focus = CLP_arms_deal }
 		available_if_capitulated = yes
@@ -321,7 +313,7 @@ focus_tree = {
 		icon = GFX_goal_prophets_heroes
 		x = 17
 		y = 11
-		cost = 5
+		cost = 7
 		prerequisite = { focus = CLP_imece_army }
 		prerequisite = { focus = CLP_konya_airbase }
 		available_if_capitulated = yes
@@ -358,7 +350,7 @@ focus_tree = {
 		icon = GFX_goal_CLP_imperial_training
 		x = 12
 		y = 7
-		cost = 5
+		cost = 7
 		prerequisite = { focus = CLP_believers_army }
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -375,7 +367,7 @@ focus_tree = {
 		icon = GFX_goal_CLP_army_prayers
 		x = 11
 		y = 8
-		cost = 5
+		cost = 7
 		prerequisite = { focus = CLP_imperial_training }
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -395,7 +387,7 @@ focus_tree = {
 		icon = GFX_goal_muhammad_ahmad
 		x = 10
 		y = 9
-		cost = 5
+		cost = 7
 		prerequisite = { focus = CLP_army_prayers }
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -414,7 +406,7 @@ focus_tree = {
 		icon = GFX_goal_halal
 		x = 14
 		y = 9
-		cost = 5
+		cost = 7
 		prerequisite = { focus = CLP_martyrs }
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -437,7 +429,7 @@ focus_tree = {
 		icon = GFX_goal_takbir
 		x = 12
 		y = 10
-		cost = 5
+		cost = 7
 		prerequisite = { focus = CLP_just_like_muhammad_ahmad }
 		prerequisite = { focus = CLP_military_sector }
 		available_if_capitulated = yes
@@ -457,7 +449,7 @@ focus_tree = {
 		icon = GFX_goal_CLP_martyrs
 		x = 13
 		y = 8
-		cost = 5
+		cost = 7
 		prerequisite = { focus = CLP_imperial_training }
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -538,7 +530,7 @@ focus_tree = {
 		icon = GFX_goal_embrace_industrial_complex
 		x = 24
 		y = 9
-		cost = 5
+		cost = 7
 		prerequisite = { focus = CLP_factories_2 }
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -588,7 +580,7 @@ focus_tree = {
 		icon = GFX_goal_kayseri_sivas
 		x = 26
 		y = 8
-		cost = 5
+		cost = 7
 		prerequisite = { focus = CLP_infastructure_1 }
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -610,7 +602,7 @@ focus_tree = {
 		icon = GFX_goal_islamic_science
 		x = 26
 		y = 9
-		cost = 5
+		cost = 7
 		prerequisite = { focus = CLP_infastructure_2 }
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -626,7 +618,7 @@ focus_tree = {
 		icon = GFX_goal_zealous_workers
 		x = 25
 		y = 10
-		cost = 5
+		cost = 7
 		prerequisite = { focus = CLP_research_1 }
 		prerequisite = { focus = CLP_factories_3 }
 		available_if_capitulated = yes
@@ -643,7 +635,7 @@ focus_tree = {
 		icon = GFX_goal_house_of_wisdom
 		x = 25
 		y = 11
-		cost = 5
+		cost = 7
 		prerequisite = { focus = CLP_great_workers }
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -665,6 +657,9 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+		has_war = yes	
+		}
 		completion_reward = {
 		add_stability = 0.15
 		}
@@ -681,7 +676,28 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		#will do when OOB
+		346 = {	
+		create_unit = {
+    	division = "name = \"Infantry Division\" division_template = \"Jihadis\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    	owner = CLP
+		}
+		create_unit = {
+    	division = "name = \"Infantry Division\" division_template = \"Jihadis\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    	owner = CLP
+		}
+		create_unit = {
+    	division = "name = \"Infantry Division\" division_template = \"Jihadis\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    	owner = CLP
+		}
+		create_unit = {
+    	division = "name = \"Infantry Division\" division_template = \"Jihadis\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    	owner = CLP
+		}
+		create_unit = {
+    	division = "name = \"Infantry Division\" division_template = \"Jihadis\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    	owner = CLP
+		}
+		}
 		}
 	}
 focus = {
@@ -736,5 +752,5 @@ focus = {
 		completion_reward = {
 		add_country_leader_trait = CLP_unifier
 		}
-	}					
-}
+	}
+}							
