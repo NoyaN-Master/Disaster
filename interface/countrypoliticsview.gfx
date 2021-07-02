@@ -817,9 +817,49 @@ spriteType = {
 		texturefile = "gfx/interface/ideas/NGU_Rosenberg.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_killigil_advisor"
-		texturefile = "gfx/interface/ideas/killigil_advisor.dds"
+		name = "GFX_idea_killigil_guns"
+		texturefile = "gfx/interface/ideas/killigil_guns.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_trabzon_construction_firm"
+		texturefile = "gfx/interface/ideas/trabzon_construction_firm_id.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_zonguldak_mines"
+		texturefile = "gfx/interface/ideas/zonguldak_mines_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_luftwaffe_TUR_idea"
+		texturefile = "gfx/interface/ideas/luftwaffe_TUR_idea.dds"
 	}			
+	spriteType = {
+		name = "GFX_idea_vecihi_aircraft_TUR"
+		texturefile = "gfx/interface/ideas/vecihi_aircraft_TUR.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_italian_naval_company"
+		texturefile = "gfx/interface/ideas/italian_naval_company.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_royal_shipyard_TUR"
+		texturefile = "gfx/interface/ideas/royal_shipyard_TUR.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_british_armored_corps"
+		texturefile = "gfx/interface/ideas/british_armored_corps.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sevket_sureyya_theorist"
+		texturefile = "gfx/interface/ideas/sevket_sureya_theorist.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_osman_fuad_theorist"
+		texturefile = "gfx/interface/ideas/osman_fuad_theorist.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_nuri_killigil_theorist"
+		texturefile = "gfx/interface/ideas/nuri_killigil_theorist.dds"
+	}
 
 
 spriteType = {
