@@ -246,6 +246,8 @@ focus_tree = {
 		completion_reward = {
 		remove_ideas = Enver_unification_idea_12
 		add_ideas = CIB_Back_In_Black
+		country_event = { id = enver.23 }
+		unlock_decision_category_tooltip  = enver_foreign_category
 		}
 	}
 

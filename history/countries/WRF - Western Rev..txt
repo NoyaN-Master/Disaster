@@ -161,7 +161,7 @@ create_field_marshal = {
 			}
 create_corps_commander = {
 		name = "Fahrettin Altay"
-		gfx = "Portrait_OTT_Omer_Fahrettin_Turkkan.tga"
+		picture = "Portrait_OTT_Omer_Fahrettin_Turkkan.tga"
 		traits = { war_hero brilliant_strategist cavalry_officer hill_fighter kemalist_general }
 		skill = 4 #13
 		attack_skill = 4
@@ -172,7 +172,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 		name = "Cemil Cahit Toydemir"
-		gfx = "Portrait_OTT_Cahit_Toydemir.tga"
+		picture = "Portrait_OTT_Cahit_Toydemir.tga"
 		traits = { career_officer infantry_officer hill_fighter kemalist_general kemalist_general }
 		skill = 3 #10
 		attack_skill = 3
@@ -182,7 +182,7 @@ create_corps_commander = {
 	}
 create_corps_commander = {
 		name = "Osman Fuat Bey"
-		gfx = "Portrait_OTT_OsmanFuad.tga"
+		picture = "Portrait_OTT_OsmanFuad.tga"
 		traits = { career_officer infantry_officer hill_fighter kemalist_general kemalist_general }
 		skill = 3 #10
 		attack_skill = 3

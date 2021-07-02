@@ -43,9 +43,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Douglas MacArthur"
-	desc = "PHI_MacArthur_desc"
-	picture = "PHI_MacArthur.tga"
+	name = "Manuel L. Quezon"
+	desc = "PHI_Quezon_desc"
+	picture = "PHI_Quezon.tga"
 	expire = "2020.1.1"
 	ideology = autocratic_subideology
 	traits = {

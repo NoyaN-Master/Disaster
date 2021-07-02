@@ -592,3 +592,149 @@ country_event = {
 		name = enver.22.a
 	}	
 }
+
+country_event = {
+	id = enver.24
+	immediate = { log = "[GetDateText]: [Root.GetName]: event enver.20" }
+	title = enver.24.t
+	desc = enver.24.d
+
+	fire_only_once = yes
+	
+	picture = GFX_report_enver_shooting_event
+
+	is_triggered_only = yes
+
+	option = { #
+		name = enver.24.a
+		CIB = {
+		create_faction = ENVER_JAP_FACTION
+		set_country_flag = joined_JAP_CIB
+		}
+		CIB = { add_to_faction = JPN }
+		ai_chance = { factor = 100}
+	}
+
+	option = { #
+		name = enver.24.a
+		ai_chance = { factor = 0}
+	}		
+}
+
+country_event = {
+	id = enver.25
+	immediate = { log = "[GetDateText]: [Root.GetName]: event enver.20" }
+	title = enver.25.t
+	desc = enver.25.d
+
+	fire_only_once = yes
+	
+	picture = GFX_report_enver_shooting_event
+
+	is_triggered_only = yes
+
+	option = { #
+		name = enver.25.a
+		CIB = {
+		set_country_flag = joined_GER_CIB
+		}
+		PRE = { add_to_faction = CIB }
+		ai_chance = { factor = 100}
+	}
+
+	option = { #
+		name = enver.25.a
+		ai_chance = { factor = 0}
+	}		
+}
+
+country_event = {
+	id = enver.26
+	immediate = { log = "[GetDateText]: [Root.GetName]: event enver.20" }
+	title = enver.26.t
+	desc = enver.26.d
+
+	fire_only_once = yes
+	
+	picture = GFX_report_enver_shooting_event
+
+	is_triggered_only = yes
+
+	option = { #
+		name = enver.26.a
+		CIB = {
+		transfer_state = 420
+		transfer_state = 419
+		}
+		
+		ai_chance = { factor = 100}
+	}
+
+	option = { #
+		name = enver.25.a
+		ai_chance = { factor = 0}
+	}		
+}
+
+country_event = {
+	id = enver.23
+	immediate = { log = "[GetDateText]: [Root.GetName]: event enver.20" }
+	title = enver.23.t
+	desc = enver.23.d
+
+	fire_only_once = yes
+	
+	picture = GFX_report_enver_shooting_event
+
+	is_triggered_only = yes
+
+	option = { #
+		name = enver.23.a
+		set_politics = {
+		ruling_party = ultranationalist
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+		}
+		add_popularity = {
+    	ideology = ultranationalist
+    	popularity = 0.7
+		}
+		create_country_leader = {
+		name = "Enver Paşa"
+		#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+		picture = "CIB_Enver_Blessed.tga"
+		expire = "1965.1.1"
+		ideology = ultranationalist_subideology
+		traits = {
+		
+		}
+		}
+		set_cosmetic_tag = Enver_Rehab_Cosmetic
+	}
+
+	option = { #
+		name = enver.23.b
+		set_politics = {
+		ruling_party = autocratic
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+		}
+		add_popularity = {
+    	ideology = autocratic
+    	popularity = 0.7
+		}
+		create_country_leader = {
+		name = "Enver Paşa"
+		#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+		picture = "CIB_Enver_Blessed.tga"
+		expire = "1965.1.1"
+		ideology = autocratic_subideology
+		traits = {
+		
+		}
+		}
+		set_cosmetic_tag = Enver_Rehab_Cosmetic
+	}	
+}

@@ -1,0 +1,35 @@
+enver_foreign_category = {
+	icon = GFX_decision_category_generic_political_actions
+
+	picture = Decision_picture_anatolia_influence
+	priority = 80
+	allowed = {
+		original_tag  = CIB
+	}
+		visible = {
+        original_tag = CIB
+        OR = {
+        has_country_flag = debug_TR
+        has_completed_focus = CIB_End_Dark_Age
+        }
+        } 
+	visible_when_empty = yes
+}
+
+enver_economic_category = {
+	icon = GFX_decision_category_generic_political_actions
+
+	picture = Decision_picture_anatolia_influence
+	priority = 80
+	allowed = {
+		original_tag  = CIB
+	}
+		visible = {
+        original_tag = CIB
+        OR = {
+        has_country_flag = debug_TR
+        has_completed_focus = CIB_End_Dark_Age
+        }
+        } 
+	visible_when_empty = no
+}

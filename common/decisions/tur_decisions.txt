@@ -814,7 +814,6 @@ WRF_Aryan_Komisar_2 = {
      ai_will_do = {
 			factor = 1000
 		}
-}
 
 WRF_Russ_Komisar = {
 	    fire_only_once = yes
@@ -978,4 +977,449 @@ WRF_China = {
 		}
 
 
+}
+}
+
+enver_foreign_category = {
+
+Enver_StopStalin = {
+	    fire_only_once = yes
+		cost = 0
+        available  = {
+        SRF = {
+        owns_state = 231
+        }
+        }
+        visible = {
+        original_tag = CIB
+        }  
+        complete_effect = {
+        declare_war_on = {
+        target = SRF
+        type = annex_everything
+        }
+        SRF = {
+        every_owned_state = {
+        add_claim_by = CIB
+        }	
+        }
+        }
+        ai_will_do = {
+			factor = 1000
+		}
+     }
+Enver_FuckGreeks = {
+	    fire_only_once = yes
+		cost = 0
+        available  = {
+        GRE = {
+        country_exists = yes
+        }
+        CIB = {
+        has_war = no   
+        }
+        }
+        visible = {
+        original_tag = CIB
+        }  
+        complete_effect = {
+        declare_war_on = {
+        target = GRE
+        type = annex_everything
+        }
+        GRE = {
+        every_owned_state = {
+        add_claim_by = CIB
+        }	
+        }
+        }
+        ai_will_do = {
+			factor = 1000
+		}
+     }       
+
+
+
+Enver_PactWithJapan = {
+	    fire_only_once = yes
+		cost = 0
+        available  = {
+        JAP = {
+        country_exists = yes
+        }
+        CIB = {
+        has_war = no
+        NOT = {
+        has_country_flag = joined_GER_CIB    
+        }   
+        }
+        }
+        visible = {
+        original_tag = CIB
+        }  
+        complete_effect = {
+        JPN = {
+        country_event = { id = enver.24}
+        }
+        }
+        ai_will_do = {
+			factor = 1000
+		}
+     }       
+
+
+Enver_PactWithGER = {
+	    fire_only_once = yes
+		cost = 0
+        available  = {
+        PRE = {
+        is_faction_leader = yes 
+        }
+        CIB = {
+        has_war = no
+        NOT = {
+        has_country_flag = joined_JAP_CIB    
+        }   
+        }
+        }
+        visible = {
+        original_tag = CIB
+        }  
+        complete_effect = {
+        PRE = {
+        country_event = { id = enver.25}
+        }
+        }
+        ai_will_do = {
+			factor = 1000
+		}
+     }       
+
+
+Enver_GetSeljukia = {
+	    fire_only_once = yes
+		cost = 0
+        available  = {
+        CIB = {
+        has_war = no  
+        }
+        }
+        visible = {
+        original_tag = CIB
+        }  
+        complete_effect = {
+        INR = {
+        country_event = { id = enver.26}
+        }
+        }
+        ai_will_do = {
+			factor = 1000
+		}
+     }       
+
+}
+
+}
+
+enver_economic_category = {
+
+
+Enver_TrabzonFirms = {
+	    fire_only_once = yes
+		cost = 0
+        available  = {
+        NOT = {
+        has_country_flag = doing_project    
+        }    
+        CIB = {
+        has_war = no  
+        }
+        }
+        visible = {
+        original_tag = CIB
+        }
+        days_remove = 40
+        complete_effect = {
+        hidden_effect = {
+        set_country_flag = doing_project    
+        }    
+        }  
+        remove_effect = {
+               354 = {
+               add_building_construction = {
+                type = industrial_complex
+                level = 5
+                instant_build = yes
+                }
+                add_building_construction = {
+                type = infrastructure 
+                level = 3
+                instant_build = yes
+                }
+                add_extra_state_shared_building_slots = 5    
+               }
+               hidden_effect = {
+                clr_country_flag = doing_project
+               }
+          }
+        ai_will_do = {
+			factor = 1000
+		}
+     }       
+
+Enver_Eastern_Anatolia_Project = {
+	    fire_only_once = yes
+		cost = 0
+        available  = {
+        NOT = {
+        has_country_flag = doing_project    
+        }    
+        CIB = {
+        has_war = no  
+        }
+        }
+        visible = {
+        original_tag = CIB
+        }
+        days_remove = 40
+        complete_effect = {
+        hidden_effect = {
+        set_country_flag = doing_project    
+        }    
+        }  
+        remove_effect = {
+               835 = {
+                add_building_construction = {
+                type = infrastructure 
+                level = 3
+                instant_build = yes
+                }
+                add_extra_state_shared_building_slots = 3
+               }
+               353 = {
+                add_building_construction = {
+                type = infrastructure 
+                level = 3
+                instant_build = yes
+                }
+                add_extra_state_shared_building_slots = 3
+               }
+               800 = {
+                add_building_construction = {
+                type = infrastructure 
+                level = 3
+                instant_build = yes
+                }
+                add_extra_state_shared_building_slots = 3
+               }
+               hidden_effect = {
+                clr_country_flag = doing_project
+               }
+          }
+        ai_will_do = {
+			factor = 1000
+		}
+     }       
+
+Enver_Western_Anatolia_Project = {
+	    fire_only_once = yes
+		cost = 0
+        available  = {
+        NOT = {
+        has_country_flag = doing_project    
+        }    
+        CIB = {
+        has_war = no  
+        }
+        }
+        visible = {
+        original_tag = CIB
+        }
+        days_remove = 80
+        complete_effect = {
+        hidden_effect = {
+        set_country_flag = doing_project    
+        }    
+        }  
+        remove_effect = {
+               356 = {
+                add_building_construction = {
+                type = arms_factory 
+                level = 3
+                instant_build = yes
+                }
+                add_extra_state_shared_building_slots = 3
+               }
+               347 = {
+                add_building_construction = {
+                type = infrastructure 
+                level = 3
+                instant_build = yes
+                }
+                add_building_construction = {
+                type = industrial_complex 
+                level = 3
+                instant_build = yes
+                }
+                add_extra_state_shared_building_slots = 3
+               }
+               839 = {
+                add_building_construction = {
+                type = arms_factory 
+                level = 3
+                instant_build = yes
+                }
+                add_building_construction = {
+                type = infrastructure 
+                level = 2
+                instant_build = yes
+                }
+                add_extra_state_shared_building_slots = 3
+               }
+               hidden_effect = {
+                clr_country_flag = doing_project
+               }
+          }
+        ai_will_do = {
+			factor = 1000
+		}
+     }       
+
+Enver_Southern_Anatolia_Project = {
+	    fire_only_once = yes
+		cost = 0
+        available  = {
+        NOT = {
+        has_country_flag = doing_project    
+        }    
+        CIB = {
+        has_war = no  
+        }
+        }
+        visible = {
+        original_tag = CIB
+        }
+        days_remove = 80
+        complete_effect = {
+        hidden_effect = {
+        set_country_flag = doing_project    
+        }    
+        }  
+        remove_effect = {
+               342 = {
+                add_building_construction = {
+                type = industrial_complex 
+                level = 3
+                instant_build = yes
+                }
+                add_building_construction = {
+                type = infrastructure 
+                level = 3
+                instant_build = yes
+                }
+                add_extra_state_shared_building_slots = 3
+               }
+               345 = {
+                add_building_construction = {
+                type = infrastructure 
+                level = 3
+                instant_build = yes
+                }
+                add_building_construction = {
+                type = industrial_complex 
+                level = 3
+                instant_build = yes
+                }
+                add_extra_state_shared_building_slots = 3
+               }
+               344 = {
+                add_building_construction = {
+                type = arms_factory 
+                level = 3
+                instant_build = yes
+                }
+                add_building_construction = {
+                type = infrastructure 
+                level = 2
+                instant_build = yes
+                }
+                add_extra_state_shared_building_slots = 3
+               }
+               hidden_effect = {
+                clr_country_flag = doing_project
+               }
+          }
+        ai_will_do = {
+			factor = 1000
+		}
+     }       
+
+Enver_Big_Cities_Project = {
+	    fire_only_once = yes
+		cost = 0
+        available  = {
+        NOT = {
+        has_country_flag = doing_project    
+        }    
+        CIB = {
+        has_war = no  
+        }
+        }
+        visible = {
+        original_tag = CIB
+        }
+        days_remove = 80
+        complete_effect = {
+        hidden_effect = {
+        set_country_flag = doing_project    
+        }    
+        }  
+        remove_effect = {
+               834 = {
+                add_building_construction = {
+                type = industrial_complex 
+                level = 3
+                instant_build = yes
+                }
+                add_building_construction = {
+                type = infrastructure 
+                level = 3
+                instant_build = yes
+                }
+                add_extra_state_shared_building_slots = 3
+               }
+               797 = {
+                add_building_construction = {
+                type = infrastructure 
+                level = 3
+                instant_build = yes
+                }
+                add_building_construction = {
+                type = industrial_complex 
+                level = 3
+                instant_build = yes
+                }
+                add_extra_state_shared_building_slots = 3
+               }
+               341 = {
+                add_building_construction = {
+                type = arms_factory 
+                level = 3
+                instant_build = yes
+                }
+                add_building_construction = {
+                type = infrastructure 
+                level = 2
+                instant_build = yes
+                }
+                add_extra_state_shared_building_slots = 3
+               }
+               hidden_effect = {
+                clr_country_flag = doing_project
+               }
+          }
+        ai_will_do = {
+			factor = 1000
+		}
+     }       
 }
