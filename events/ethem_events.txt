@@ -97,3 +97,58 @@ country_event = { #Caliphate
 		IZM_Ethem_government_loyaly = yes
 	}
 }
+
+country_event = { #NGU RedBrown
+	id = ethem.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = ethem.6.t
+	desc = ethem.6.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #
+		name = ethem.6.a
+		IZM = {
+		set_country_flag = joined_NGU
+		}
+		NGU = { add_to_faction = IZM }
+		ai_chance = { factor = 100}
+	}
+
+	option = { #
+		name = ethem.6.b
+		ai_chance = { factor = 0}
+	}		
+}
+
+country_event = {
+	id = ethem.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event enver.20" }
+	title = ethem.7.t
+	desc = ethem.7.d
+
+	fire_only_once = yes
+	
+	picture = GFX_report_enver_shooting_event
+
+	is_triggered_only = yes
+
+	option = { #
+		name = ethem.7.a
+		IZM = {
+		transfer_state = 420
+		transfer_state = 419
+		}
+		
+		ai_chance = { factor = 100}
+	}
+
+	option = { #
+		name = ethem.7.b
+		ai_chance = { factor = 0}
+	}		
+}

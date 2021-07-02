@@ -16,6 +16,24 @@ enver_foreign_category = {
 	visible_when_empty = yes
 }
 
+ethem_foreign_category = {
+	icon = GFX_decision_category_generic_political_actions
+
+	picture = Decision_picture_anatolia_influence
+	priority = 80
+	allowed = {
+		original_tag  = IZM
+	}
+		visible = {
+        original_tag = IZM
+        OR = {
+        has_country_flag = debug_TR
+        has_completed_focus = IZM_Start_The_Revolution
+        }
+        } 
+	visible_when_empty = yes
+}
+
 enver_economic_category = {
 	icon = GFX_decision_category_generic_political_actions
 

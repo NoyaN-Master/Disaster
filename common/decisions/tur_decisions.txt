@@ -315,6 +315,7 @@ TUR_unification_category = {
         }
         visible = {
         original_tag = IZM
+        has_government = libertarian_socialist
         }  
         complete_effect = {
         set_cosmetic_tag = IZM_unification
@@ -427,7 +428,7 @@ TUR_unification_category = {
 }
 
 IZM_milita_category = {
-	visible = { tag = IZM }
+	
 TUR_Milita_Raise = {
         available = {
         tag = IZM
@@ -438,6 +439,7 @@ TUR_Milita_Raise = {
         days_remove = 50
         complete_effect = {  
         }
+        visible = { tag = IZM }
         cost = 50
         remove_effect = {
         random_owned_state = {
@@ -1143,7 +1145,7 @@ Enver_TrabzonFirms = {
         visible = {
         is_turkish_tag = yes
         }
-        days_remove = 40
+        days_remove = 90
         complete_effect = {
         hidden_effect = {
         set_country_flag = doing_project    
@@ -1193,7 +1195,7 @@ Enver_Eastern_Anatolia_Project = {
         visible = {
         is_turkish_tag = yes
         }
-        days_remove = 40
+        days_remove = 90
         complete_effect = {
         hidden_effect = {
         set_country_flag = doing_project    
@@ -1254,7 +1256,7 @@ Enver_Western_Anatolia_Project = {
         visible = {
         is_turkish_tag = yes
         }
-        days_remove = 80
+        days_remove = 160
         complete_effect = {
         hidden_effect = {
         set_country_flag = doing_project    
@@ -1325,7 +1327,7 @@ Enver_Southern_Anatolia_Project = {
         visible = {
         is_turkish_tag = yes
         }
-        days_remove = 80
+        days_remove = 140
         complete_effect = {
         hidden_effect = {
         set_country_flag = doing_project    
@@ -1401,7 +1403,7 @@ Enver_Big_Cities_Project = {
         visible = {
         is_turkish_tag = yes
         }
-        days_remove = 80
+        days_remove = 140
         complete_effect = {
         hidden_effect = {
         set_country_flag = doing_project    
@@ -1455,4 +1457,112 @@ Enver_Big_Cities_Project = {
 			factor = 1000
 		}
      }       
+}
+
+ethem_foreign_category = {
+
+
+Ethem_StopStalin = {
+	    fire_only_once = yes
+		cost = 0
+        available  = {
+        SRF = {
+        owns_state = 231
+        }
+        }
+        visible = {
+        original_tag = IZM
+        }  
+        complete_effect = {
+        declare_war_on = {
+        target = SRF
+        type = annex_everything
+        }
+        SRF = {
+        every_owned_state = {
+        add_claim_by = IZM
+        }	
+        }
+        }
+        ai_will_do = {
+			factor = 1000
+		}
+     }
+
+Ethem_FuckGreeks = {
+	    fire_only_once = yes
+		cost = 0
+        available  = {
+        GRE = {
+        country_exists = yes
+        }
+        IZM = {
+        has_war = no   
+        }
+        }
+        visible = {
+        original_tag = IZM
+        }  
+        complete_effect = {
+        declare_war_on = {
+        target = GRE
+        type = annex_everything
+        }
+        GRE = {
+        every_owned_state = {
+        add_claim_by = IZM
+        }	
+        }
+        }
+        ai_will_do = {
+			factor = 1000
+		}
+     }     
+
+
+ Ethem_RedBrown = {
+	    fire_only_once = yes
+		cost = 0
+        available  = {
+        NGU = {
+        has_government = revolutionary_nationalist
+        is_faction_leader = yes 
+        }
+        IZM = {
+        has_war = no
+        is_in_faction =  no   
+        }
+        }
+        visible = {
+        original_tag = IZM
+        }  
+        complete_effect = {
+        NGU = {
+        country_event = { id = ethem.6}
+        }
+        }
+        ai_will_do = {
+			factor = 1000
+		}
+     }
+ Ethem_GetSeljukia = {
+	    fire_only_once = yes
+		cost = 0
+        available  = {
+        IZM = {
+        has_war = no  
+        }
+        }
+        visible = {
+        original_tag = IZM
+        }  
+        complete_effect = {
+        INR = {
+        country_event = { id = ethem.7}
+        }
+        }
+        ai_will_do = {
+			factor = 1000
+		}
+     }     
 }
