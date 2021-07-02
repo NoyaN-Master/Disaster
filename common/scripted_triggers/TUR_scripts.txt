@@ -1,0 +1,17 @@
+is_turkish_tag = {
+	OR = {
+		tag = IZM
+		tag = WRF
+		tag = CIB
+		tag = SKL
+		tag = CLP
+		tag = CRW
+		tag = TIT
+		tag = OTH
+		tag = ANK
+		tag = KLG
+		tag = ANT
+		tag = ADN
+		tag = THR
+	}
+}

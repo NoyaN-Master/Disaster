@@ -10,18 +10,20 @@ ideas = {
 			cancel_if_invalid = no
 			level = 1
 			traits = {
-				head_of_government
+				father_of_the_republic
 			}
 			visible = {
 			tag = WRF 
 			}
 		}
      WRF_nihal_atsiz_hog = {
-			#picture = generic_communism_drift_bonus
+			picture = WRF_atsiz_hog
 			available = { 
 			tag = WRF
 			always = no
-			
+			}
+			visible = {
+			always = no
 			}
 			traits = {
 				head_of_government
@@ -30,7 +32,7 @@ ideas = {
 			level = 2
 		}
 	WRF_ismet_inonu_hog = {
-			picture = WRF_ismet
+			picture = WRF_ismet_hog
 			available = { 
 			tag = WRF 
 			always = no
@@ -42,11 +44,11 @@ ideas = {
 			cancel_if_invalid = no
 			level = 3
 			traits = {
-			hog_blank		
+			man_of_people		
 			}
 		}
 		IZM_ethem_hog = {
-			picture = IZM_Ethem
+			picture = IZM_Ethem_hog
 			available = { 
 			tag = IZM 
 			always = no
@@ -58,11 +60,11 @@ ideas = {
 			cancel_if_invalid = no
 			level = 3
 			traits = {
-			hog_blank		
+			generallissimo		
 			}
 		}
 		SKL_fuller_hog = {
-			picture = SKL_Fuller
+			picture = SKL_Fuller_hog
 			available = { 
 			tag = SKL 
 			always = no
@@ -77,7 +79,7 @@ ideas = {
 			}
 		}
 		CIB_enver_hog = {
-			picture = CIB_Enver
+			picture = CIB_Enver_hog
 			available = { 
 			tag = WRF 
 			always = no
@@ -88,11 +90,11 @@ ideas = {
 			cancel_if_invalid = no
 			level = 3
 			traits = {
-			hog_blank		
+			dictator		
 			}
 		}
 		IZM_nazim_hog = {
-			picture = IZM_Nazim
+			picture = IZM_Nazim_hog
 			available = { 
 			tag = IZM 
 			always = no
@@ -103,11 +105,11 @@ ideas = {
 			cancel_if_invalid = no
 			level = 3
 			traits = {
-			hog_blank		
+			dictator		
 			}
 		}
 		CLP_ulema_hog = {
-			picture = CLP_ulema
+			picture = CLP_ulema_hog
 			available = { 
 			tag = CLP 
 			always = no
@@ -118,11 +120,11 @@ ideas = {
 			cancel_if_invalid = no
 			level = 3
 			traits = {
-			hog_blank		
+			dictator		
 			}
 		}
 		CLP_abdulmecid_hog = {
-			picture = CLP_abdl
+			picture = CLP_abdl_hog
 			available = { 
 			tag = CLP
 			always = no
@@ -133,7 +135,7 @@ ideas = {
 			cancel_if_invalid = no
 			level = 3
 			traits = {
-			hog_blank		
+			dictator		
 			}
 		}
 		WRF_kazim_hog = {
@@ -148,11 +150,11 @@ ideas = {
 			cancel_if_invalid = no
 			level = 3
 			traits = {
-			hog_blank		
+			dictator		
 			}
 		}
 		WRF_fevzi_hog = {
-			#picture = generic_communism_drift_bonus
+			picture = WRF_fevzi_hog
 			available = { 
 			tag = WRF 
 			always = no
@@ -163,11 +165,11 @@ ideas = {
 			cancel_if_invalid = no
 			level = 3
 			traits = {
-			hog_blank		
+			dictator		
 			}
 		}
 		WRF_jack_hog = {
-			#picture = generic_communism_drift_bonus
+			picture = GFX_idea_OTH_Jack_hog
 			available = { 
 			tag = OTH 
 			always = no
@@ -178,11 +180,11 @@ ideas = {
 			cancel_if_invalid = no
 			level = 3
 			traits = {
-			hog_blank		
+			british_bulldog		
 			}
 		}
 		WRF_klg_hog = {
-			#picture = generic_communism_drift_bonus
+			picture = killigil_advisor
 			available = { 
 			tag = KLG 
 			always = no
@@ -193,11 +195,11 @@ ideas = {
 			cancel_if_invalid = no
 			level = 3
 			traits = {
-			hog_blank		
+			dictator		
 			}
 		}
 	NGU_Goebbels_HoG = {
-			picture = mustafa_kemal_hog
+			picture = NGU_Goebbels_hog
 			available = { 
 			tag = WRF 
 			always = no
@@ -205,40 +207,68 @@ ideas = {
 			cancel_if_invalid = no
 			level = 1
 			traits = {
-			hog_blank		
+			dictator		
 			}
 			visible = {
 			always = no 
 			}
 		}
 	NGU_Hitler_HoG = {
-			picture = mustafa_kemal_hog
+			picture = NGU_Hitler_hog
 			available = { 
 			tag = NGU 
 			}
 			cancel_if_invalid = no
 			level = 2
 			traits = {
-			hog_blank		
+			dictator		
 			}
 			visible = {
 			always = no
 			}
 		}
 	NGU_Strasser_HoG = {
-			picture = mustafa_kemal_hog
+			picture = NGU_Strasser_hog
 			available = { 
 			tag = NGU 
 			}
 			cancel_if_invalid = no
 			level = 3
 			traits = {
-			hog_blank		
+			dictator		
 			}
 			visible = {
 			always = no
 			}
-		}			
+		}
+	NGU_Rosenberg_HoG = {
+			picture = NGU_Rosenberg_hog
+			available = { 
+			tag = NGU 
+			}
+			cancel_if_invalid = no
+			level = 3
+			traits = {
+			dictator		
+			}
+			visible = {
+			always = no
+			}
+		}
+	NGU_Heydrich_HoG = {
+			picture = NGU_Thule
+			available = { 
+			tag = NGU 
+			}
+			cancel_if_invalid = no
+			level = 3
+			traits = {
+			dictator		
+			}
+			visible = {
+			always = no
+			}
+		}					
 }
 
 }

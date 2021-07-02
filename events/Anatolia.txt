@@ -647,6 +647,10 @@ country_event = { #quick congress
         hidden_effect = {   
         set_country_flag = nazbol_congress
         }
+        swap_ideas = {
+        remove_idea = IZM_nazim_hog
+        add_idea = IZM_ethem_hog    
+        }
 
     }
 

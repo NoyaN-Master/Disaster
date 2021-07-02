@@ -252,6 +252,9 @@ country_event = { #The Red Baron - Operation Rote
         NGU_libsocs_problem_1
         NGU_bandit_army    
         }
+		add_ideas = {
+		NGU_Goebbels_HoG	
+		}
 		hidden_effect = {	
 		}
 	}
@@ -546,7 +549,10 @@ country_event = { # Who will lead us
             }
 		add_stability = 0.10
 		add_political_power = 200
-		complete_national_focus = NGU_Nazi_Ending	
+		complete_national_focus = NGU_Nazi_Ending
+		add_ideas = {
+		NGU_Rosenberg_HoG	
+		}	
 		}
 	option = {
 		name = ngu.17.b
@@ -576,7 +582,10 @@ country_event = { # Who will lead us
 		}	
 		add_stability = 0.10
 		add_political_power = 200
-		complete_national_focus = NGU_Heydrich_Ending	
+		complete_national_focus = NGU_Heydrich_Ending
+		add_ideas = {
+		NGU_Heydrich_HoG	
+		}		
 		}
 	option = {
 		name = ngu.17.c
@@ -603,7 +612,10 @@ country_event = { # Who will lead us
 		}	
 		add_stability = 0.10
 		add_political_power = 200
-		complete_national_focus = NGU_Nazi_Ending	
+		complete_national_focus = NGU_Nazi_Ending
+		add_ideas = {
+		NGU_Hitler_HoG	
+		}	
 		}		
 }
 

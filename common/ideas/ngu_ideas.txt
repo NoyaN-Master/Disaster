@@ -27,7 +27,6 @@ NGU_Knightly_Military = {
 			conscription = -0.03
 			}
 		}				
-
 NGU_Race = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
 			picture = discontent

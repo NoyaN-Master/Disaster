@@ -759,11 +759,67 @@ spriteType = {
 		name = "GFX_ideology_neokemalist"
 		texturefile = "gfx/interface/ideologies/neokemalist.dds"
 	}
-
+##HOGS
 spriteType = {
 		name = "GFX_idea_mustafa_kemal_hog"
 		texturefile = "gfx/interface/ideas/idea_ataturk.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_CLP_abdl_hog"
+		texturefile = "gfx/interface/ideas/CLP_abdl.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CLP_ulema_hog"
+		texturefile = "gfx/interface/ideas/CLP_ulema.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_IZM_Nazim_hog"
+		texturefile = "gfx/interface/ideas/IZM_Nazim.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CIB_Enver_hog"
+		texturefile = "gfx/interface/ideas/CIB_Enver.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SKL_Fuller_hog"
+		texturefile = "gfx/interface/ideas/SKL_Fuller.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_IZM_Ethem_hog"
+		texturefile = "gfx/interface/ideas/IZM_Ethem.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_WRF_ismet_hog"
+		texturefile = "gfx/interface/ideas/WRF_ismet.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_WRF_fevzi_hog"
+		texturefile = "gfx/interface/ideas/WRF_Fevzi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_OTH_Jack_hog"
+		texturefile = "gfx/interface/ideas/OTH_Jack.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NGU_Goebbels_hog"
+		texturefile = "gfx/interface/ideas/NGU_Goebbels.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NGU_Hitler_hog"
+		texturefile = "gfx/interface/ideas/NGU_Hitler.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NGU_Strasser_hog"
+		texturefile = "gfx/interface/ideas/NGU_Strasser.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NGU_Rosenberg_hog"
+		texturefile = "gfx/interface/ideas/NGU_Rosenberg.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_killigil_advisor"
+		texturefile = "gfx/interface/ideas/killigil_advisor.dds"
+	}			
 
 
 spriteType = {

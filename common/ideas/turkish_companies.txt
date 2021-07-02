@@ -1,0 +1,180 @@
+ideas = {
+
+    tank_manufacturer = { #TANKS
+        designer = yes
+
+        british_armored_corps = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea zlatoust"}
+			allowed = {
+				is_turkish_tag = yes
+			}
+			available = { owns_state = 839 } #Zlatoust
+			visible = { always = yes  }
+			research_bonus = {
+				armor = 0.15
+			}
+		}
+    }
+
+    naval_manufacturer = {
+        royal_shipyard_TUR = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea zlatoust"}
+			allowed = {
+				is_turkish_tag = yes
+			}
+			available = { owns_state = 797 } #Zlatoust
+			visible = { always = yes  }
+			research_bonus = {
+				naval = 0.15
+			}
+		}
+
+        italian_naval_company = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea zlatoust"}
+			allowed = {
+				is_turkish_tag = yes
+			}
+			available = { owns_state = 342 } #Zlatoust
+			visible = { always = yes  }
+			research_bonus = {
+				naval = 0.10
+			}
+		}
+    }
+
+    aircraft_manufacturer = {
+
+        vecihi_aircraft_TUR = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea zlatoust"}
+			allowed = {
+				is_turkish_tag = yes
+			}
+			available = { owns_state = 343 } #Zlatoust
+			visible = { always = yes  }
+			research_bonus = {
+				air_techs = 0.07
+			}
+		}
+
+        luftwaffe_TUR = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea zlatoust"}
+			allowed = {
+				is_turkish_tag = yes
+			}
+			available = { owns_state = 356 } #Zlatoust
+			visible = { always = yes  }
+			research_bonus = {
+				air_techs = 0.15
+			}
+		}
+
+        
+    }
+
+    materiel_manufacturer = {
+            
+        killigil_guns = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea zlatoust"}
+			allowed = {
+				is_turkish_tag = yes
+			}
+			available = { owns_state = 355 } #Zlatoust
+			visible = { always = yes  }
+            traits = { industrial_concern  }
+			research_bonus = {
+				infantry = 0.10
+			}
+		}
+
+    }
+
+    industrial_concern = {
+        zonguldak_mines = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea zlatoust"}
+			allowed = {
+				is_turkish_tag = yes
+			}
+			available = { owns_state = 347 } #Zlatoust
+			visible = { always = yes  }
+			research_bonus = {
+				industry = 0.07
+			}
+		}
+        trabzon_construction_firm = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea zlatoust"}
+			allowed = {
+				is_turkish_tag = yes
+			}
+			available = { owns_state = 354 } #Zlatoust
+			visible = { always = yes  }
+            traits = { materiel_manufacturer }
+			research_bonus = {
+				industry = 0.13
+			}
+		}
+    }
+
+    theorist = {
+      nuri_killigil_theorist = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea zlatoust"}
+			allowed = {
+				is_turkish_tag = yes
+			}
+			available = { 
+            NOT = {
+            country_exists = KLG    
+            } 
+            ROOT = {
+            owns_state = 355    
+            }
+            } #Zlatoust
+			visible = { always = yes  }
+			modifier = {
+               production_factory_max_efficiency_factor = 0.2 
+            }
+		}
+        sevket_sureyya_theorist = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea zlatoust"}
+			allowed = {
+				is_turkish_tag = yes
+			}
+			available = { 
+            ROOT = {
+            OR = {
+            has_government = social_democrat
+            has_government = unisocialist
+            has_government = authoritarian_socialist    
+            }    
+            }
+             } #Zlatoust
+			visible = { always = yes  }
+			modifier = {
+               production_factory_max_efficiency_factor = 0.2 
+            }
+		}
+        osman_fuad_theorist = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea zlatoust"}
+			allowed = {
+				is_turkish_tag = yes
+			}
+			available = { ROOT = {
+            OR = {
+            has_government = revolutionary_nationalist
+            has_government = ultranationalist
+            has_government = authoritarian_democrat
+            has_government = autocratic    
+            }
+            NOT = {
+            country_exists = CRW    
+            }    
+            } } #Zlatoust
+			visible = { always = yes  }
+			modifier = {
+               experience_gain_army = 0.5
+               add_stability = 0.05 
+            }
+		}      
+
+    }
+    
+        
