@@ -22,14 +22,17 @@ enver_economic_category = {
 	picture = Decision_picture_anatolia_influence
 	priority = 80
 	allowed = {
-		original_tag  = CIB
+		is_turkish_tag = yes
 	}
 		visible = {
-        original_tag = CIB
+        is_turkish_tag = yes
         OR = {
         has_country_flag = debug_TR
         has_completed_focus = CIB_End_Dark_Age
+		has_completed_focus = WRF_A_New_Day
+		has_completed_focus = IZM_Start_The_Revolution
+		has_completed_focus = WRF_Atsiz_What_Rome
         }
         } 
-	visible_when_empty = no
+	visible_when_empty = yes
 }
