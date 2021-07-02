@@ -829,12 +829,12 @@ spriteType = {
 		texturefile = "gfx/interface/ideas/zonguldak_mines_idea.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_luftwaffe_TUR_idea"
+		name = "GFX_idea_luftwaffe_TUR"
 		texturefile = "gfx/interface/ideas/luftwaffe_TUR_idea.dds"
 	}			
 	spriteType = {
 		name = "GFX_idea_vecihi_aircraft_TUR"
-		texturefile = "gfx/interface/ideas/vecihi_aircraft_TUR.dds"
+		texturefile = "gfx/interface/ideas/vecihi_aircraft_TUR_idea.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_italian_naval_company"
