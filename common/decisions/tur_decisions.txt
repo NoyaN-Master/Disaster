@@ -1014,9 +1014,6 @@ Enver_FuckGreeks = {
 	    fire_only_once = yes
 		cost = 0
         available  = {
-        GRE = {
-        country_exists = yes
-        }
         CIB = {
         has_war = no   
         }
@@ -1493,9 +1490,6 @@ Ethem_FuckGreeks = {
 	    fire_only_once = yes
 		cost = 0
         available  = {
-        GRE = {
-        country_exists = yes
-        }
         IZM = {
         has_war = no   
         }

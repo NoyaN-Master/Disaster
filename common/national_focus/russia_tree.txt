@@ -21,7 +21,7 @@ focus_tree = {
 
 	focus = {
 		id = RUS_Restoring_Duma
-		icon = GFX_goal_NGU_Thule
+		icon = GFX_goal_RUS_Dyma
 		x = 10
 		y = 2
 		cost = 3
@@ -36,7 +36,7 @@ focus_tree = {
 
 	focus = {
 		id = RUS_Kerensky_Victory
-		icon = GFX_goal_NGU_Thule
+		icon = GFX_goal_RUS_Kerensk
 		x = 9
 		y = 3
 		cost = 3
@@ -45,6 +45,7 @@ focus_tree = {
 		has_government = liberal
 		}
 		completion_reward = {
+		custom_effect_tooltip = Kerensky_Victory_TT	
 		}
 	}
 	focus = {
@@ -58,6 +59,7 @@ focus_tree = {
 		has_government = liberal
 		}
 		completion_reward = {
+			custom_effect_tooltip = RUS_Foreign_Capital_TT
 		}
 	}
 	focus = {
@@ -71,6 +73,7 @@ focus_tree = {
 		has_government = liberal
 		}
 		completion_reward = {
+			custom_effect_tooltip = RUS_Agricultural_Comitee_TT
 		}
 	}
 	focus = {
@@ -85,11 +88,12 @@ focus_tree = {
 		has_government = liberal
 		}
 		completion_reward = {
+			custom_effect_tooltip = RUS_Pacify_Radicals_TT
 		}
 	}
 	focus = {
 		id = RUS_Tsar_Victory
-		icon = GFX_goal_NGU_Thule
+		icon = GFX_goal_RUS_Romanovs
 		x = 5
 		y = 3
 		cost = 3
@@ -105,7 +109,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Soft_Monarchy
-		icon = GFX_goal_NGU_Thule
+		icon = GFX_goal_RUS_Peter
 		x = 4
 		y = 4
 		cost = 3
@@ -118,7 +122,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Conservative_Russia
-		icon = GFX_goal_NGU_Thule
+		icon = GFX_goal_RUS_Orthodox
 		x = 5
 		y = 5
 		cost = 3
@@ -132,7 +136,7 @@ focus_tree = {
 
 	focus = {
 		id = RUS_Hard_Monarchy
-		icon = GFX_goal_NGU_Thule
+		icon = GFX_goal_RUS_Cath
 		x = 6
 		y = 4
 		cost = 3
