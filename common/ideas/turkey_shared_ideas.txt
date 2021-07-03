@@ -5,6 +5,11 @@ country = {
 TUR_Struggle_Front = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
 			picture = TUR_Struggle_Front
+			cancel  = {
+			WRF = {
+			has_country_flag = Roatta_Warlord	
+			}		
+			}
 			modifier = {
 			
 			}
@@ -13,6 +18,11 @@ TUR_Struggle_Front = {
 TUR_Struggle_Front_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
 			picture = TUR_Struggle_Front
+			cancel  = {
+			WRF = {
+			has_country_flag = Roatta_Warlord	
+			}		
+			}
 			modifier = {
 			production_speed_buildings_factor = 0.2
 			production_factory_max_efficiency_factor = 0.1
@@ -22,6 +32,11 @@ TUR_Struggle_Front_2 = {
 TUR_Struggle_Front_3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
 			picture = TUR_Struggle_Front
+			cancel  = {
+			WRF = {
+			has_country_flag = Roatta_Warlord	
+			}		
+			}
 			modifier = {
 			production_speed_buildings_factor = 0.25
 			production_factory_max_efficiency_factor = 0.2
@@ -31,6 +46,11 @@ TUR_Struggle_Front_3 = {
 TUR_Struggle_Front_4 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
 			picture = TUR_Struggle_Front
+			cancel  = {
+			WRF = {
+			has_country_flag = Roatta_Warlord	
+			}		
+			}
 			modifier = {
 			production_speed_buildings_factor = 0.25
 			production_factory_max_efficiency_factor = 0.3
@@ -53,9 +73,7 @@ RussianWars_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
 			picture = discontent
 			modifier = {
-            army_speed_factor = 0.30
 			ai_focus_aggressive_factor = 1
-			ai_desired_divisions_factor = 0.5
 			}
 		}							
 	

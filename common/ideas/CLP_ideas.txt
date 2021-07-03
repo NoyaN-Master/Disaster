@@ -4,6 +4,11 @@ country = {
 CLP_realm_of_islam = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
 			picture = TUR_Struggle_Front
+			cancel  = {
+			WRF = {
+			has_country_flag = Roatta_Warlord	
+			}		
+			}
 			modifier = {
 			stability_factor = 0.2
 			war_support_factor = 0.2
@@ -13,6 +18,11 @@ CLP_realm_of_islam = {
 CLP_no_authority = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CLP_no_authority" }
 			picture = TUR_Struggle_Front
+			cancel  = {
+			WRF = {
+			has_country_flag = Roatta_Warlord	
+			}		
+			}
 			modifier = {
 			political_power_gain = -1.0
 			political_power_cost = 0.5
@@ -25,6 +35,11 @@ CLP_no_authority = {
 CLP_ulema_authority = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CLP_ulema_authority" }
 			picture = TUR_Struggle_Front
+			cancel  = {
+			WRF = {
+			has_country_flag = Roatta_Warlord	
+			}		
+			}
 			modifier = {
 			stability_factor = 0.10
 			weekly_stability = -0.005
@@ -36,6 +51,11 @@ CLP_ulema_authority = {
 CLP_fundementalism_high = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CLP_fundementalism_high" }
 			picture = TUR_Struggle_Front
+			cancel  = {
+			WRF = {
+			has_country_flag = Roatta_Warlord	
+			}		
+			}
 			modifier = {
 			political_power_gain = 0.05
 			production_factory_max_efficiency_factor = 0.2
@@ -47,6 +67,11 @@ CLP_fundementalism_high = {
 CLP_never_fail = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CLP_never_fail" }
 			picture = TUR_Struggle_Front
+			cancel  = {
+			WRF = {
+			has_country_flag = Roatta_Warlord	
+			}		
+			}
 			modifier = {
 			political_power_gain = 0.004
 			production_factory_max_efficiency_factor = 0.2
@@ -56,6 +81,11 @@ CLP_never_fail = {
 CLP_Imperial_Army1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
 			picture = TUR_Struggle_Front
+			cancel  = {
+			WRF = {
+			has_country_flag = Roatta_Warlord	
+			}		
+			}
 			modifier = {
 			conscription = 0.01
 			attrition = -0.1
@@ -65,6 +95,11 @@ CLP_Imperial_Army1 = {
 CLP_Imperial_Army2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
 			picture = TUR_Struggle_Front
+			cancel  = {
+			WRF = {
+			has_country_flag = Roatta_Warlord	
+			}		
+			}
 			modifier = {
 			conscription = 0.02
 			attrition = -0.1
@@ -82,6 +117,11 @@ CLP_Fast_Hizir = {
 CLP_Imperial_Army3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
 			picture = TUR_Struggle_Front
+			cancel  = {
+			WRF = {
+			has_country_flag = Roatta_Warlord	
+			}		
+			}
 			modifier = {
 			conscription = 0.02
 			attrition = -0.1
@@ -93,6 +133,11 @@ CLP_Imperial_Army3 = {
 CLP_Imperial_Army4 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
 			picture = TUR_Struggle_Front
+			cancel  = {
+			WRF = {
+			has_country_flag = Roatta_Warlord	
+			}		
+			}
 			modifier = {
 			conscription = 0.03
 			attrition = -0.1
@@ -106,6 +151,11 @@ CLP_Imperial_Army4 = {
 CLP_Imperial_Army_Takbir = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
 			picture = TUR_Struggle_Front
+			cancel  = {
+			WRF = {
+			has_country_flag = Roatta_Warlord	
+			}		
+			}
 			modifier = {
 			conscription = 0.05
 			attrition = -0.2
@@ -119,6 +169,11 @@ CLP_Imperial_Army_Takbir = {
 CLP_national_orders = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
 			picture = TUR_Struggle_Front
+			cancel  = {
+			WRF = {
+			has_country_flag = Roatta_Warlord	
+			}		
+			}
 			modifier = {
 			stability_factor = 0.05
 			}
@@ -126,6 +181,11 @@ CLP_national_orders = {
 CLP_To_Jannah = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
 			picture = TUR_Struggle_Front
+			cancel  = {
+			WRF = {
+			has_country_flag = Roatta_Warlord	
+			}		
+			}
 			modifier = {
 			army_morale_factor = 0.15
 			breakthrough_factor = 0.1
@@ -137,6 +197,11 @@ CLP_To_Jannah = {
 CLP_challenge_retards = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CLP_challenge_retards" }
 			picture = TUR_Struggle_Front
+			cancel  = {
+			WRF = {
+			has_country_flag = Roatta_Warlord	
+			}		
+			}
 			modifier = {
 			conscription = -0.02
 			production_factory_max_efficiency_factor = -0.1

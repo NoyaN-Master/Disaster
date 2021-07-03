@@ -236,6 +236,11 @@ SKL_guerillas = {
 ANK_kuvayimilliye = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
 			picture = ANT_Warlords_Emerging
+			cancel  = {
+			ANK = {
+			has_country_flag = Roatta_Warlord	
+			}		
+			}
 			modifier = {
 			army_morale_factor = 0.05		
 			conscription = 0.02
@@ -244,6 +249,11 @@ ANK_kuvayimilliye = {
 ANT_fuller_gas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
 			picture = ANT_Warlords_Emerging
+			cancel  = {
+			ANK = {
+			has_country_flag = Roatta_Warlord	
+			}		
+			}
 			modifier = {
 			army_morale_factor = -0.07
 			army_attack_factor = 0.5
@@ -252,6 +262,11 @@ ANT_fuller_gas = {
 ANK_greygloves = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
 			picture = ANT_Warlords_Emerging
+			cancel  = {
+			ANK = {
+			has_country_flag = Roatta_Warlord	
+			}		
+			}
 			modifier = {
 			production_factory_max_efficiency_factor = 0.2
 			army_defence_factor = 0.07

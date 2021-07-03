@@ -24,6 +24,7 @@ create_country_leader = {
 		
 	}
 }
+set_country_flag = Roatta_Warlord
 }
 WRF = {
 leave_faction = yes
@@ -51,6 +52,7 @@ add_popularity = {
     ideology = revolutionary_nationalist
     popularity = 1
 }
+set_country_flag = Roatta_Warlord
 }
 
 GRE = {
@@ -75,6 +77,7 @@ add_state_core = 347
 transfer_state = 839
 add_state_core = 839
 load_focus_tree = generic_focus
+set_country_flag = Roatta_Warlord
 }
 
 CIB = {
@@ -91,7 +94,10 @@ CIB = {
 	traits = {
 		
 	}
+ white_peace = ARM
+   
 }
+set_country_flag = Roatta_Warlord
 }
 ANK = {
     load_focus_tree = generic_focus
@@ -103,13 +109,14 @@ set_cosmetic_tag = ANK_Roatta
     create_country_leader = {
 	name = "Mehmet Esat Bozkurt"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	picture = "CIB_Atsiz.tga"
+	picture = "ANK_Bozkurt.tga"
 	expire = "1965.1.1"
 	ideology = revolutionary_nationalist_subideology
 	traits = {
 		
 	}
 }
+set_country_flag = Roatta_Warlord
 set_politics = {
 	ruling_party = revolutionary_nationalist
         elections_allowed = no
@@ -140,7 +147,7 @@ ARM = {
         ideology = revolutionary_nationalist
         popularity = 1.0
         }
-
+set_country_flag = Roatta_Warlord
 }
 
 TRA = {
@@ -149,12 +156,14 @@ transfer_state = 342
 add_state_core = 342
 transfer_state = 345
 add_state_core = 345
+set_country_flag = Roatta_Warlord
 }
 
 ADN = {
     load_focus_tree = generic_focus
 leave_faction = yes
 transfer_state = 344
+set_country_flag = Roatta_Warlord
 }
 
 CLP = {
@@ -162,6 +171,27 @@ CLP = {
 transfer_state = 346
 add_state_core = 346
 set_cosmetic_tag = CLP_Islamic
+set_country_flag = Roatta_Warlord
+set_politics = {
+	ruling_party = autocratic
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+}
+add_popularity = {
+    ideology = autocratic
+    popularity = 1
+}
+create_country_leader = {
+	name = "Abdulmecid Bey"
+	#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "Portrait_CLP_Abdulmecid_Absolute.tga"
+	expire = "1965.1.1"
+	ideology = autocratic_subideology
+	traits = {
+		
+	}
+}
 }
 
 }
