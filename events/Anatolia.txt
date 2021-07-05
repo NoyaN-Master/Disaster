@@ -234,11 +234,11 @@ country_event = { #collapse-OTH
         839 = {
         add_core_of = OTH    
         }
-        KLG = {
+        OTH = {
         transfer_state = 798
         }
         798  = {
-        add_core_of = KLG    
+        add_core_of = OTH
         }
         IZM = {
         load_oob = "IZM_Army"            
@@ -293,11 +293,11 @@ country_event = { #collapse-IZM
         839 = {
         add_core_of = IZM    
         }
-		KLG = {
+		IZM = {
         transfer_state = 798
         }
         798  = {
-        add_core_of = KLG    
+        add_core_of = IZM    
         }
         ANK=  {
 		load_oob = "ANK_Army"
@@ -330,8 +330,12 @@ country_event = { #collapse-ANK
 		}
 		ANK = {
         transfer_state = 839
+        transfer_state = 798
         }
         839 = {
+        add_core_of = ANK    
+        }
+        798 = {
         add_core_of = ANK    
         }
         ANK=  {

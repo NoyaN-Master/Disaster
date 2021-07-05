@@ -1,0 +1,218 @@
+TIT_Roatta_Collapse_effect = {
+IZM = {
+transfer_state = 348
+transfer_state = 349
+transfer_state = 353
+add_state_core = 349
+add_state_core = 348
+add_state_core = 353
+set_cosmetic_tag = IZM_Roatta
+load_focus_tree = generic_focus
+set_politics = {
+	ruling_party = libertarian_socialist
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+}
+create_country_leader = {
+	name = "Nazım Hikmet"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "IZM_Nazim_Hikmet.tga"
+	expire = "1965.1.1"
+	ideology = nazimism
+	traits = {
+		
+	}
+}
+set_country_flag = Roatta_Warlord
+}
+WRF = {
+leave_faction = yes
+transfer_state = 340
+add_state_core = 340
+set_cosmetic_tag = Fuat_Roatta
+load_focus_tree = generic_focus
+set_politics = {
+	ruling_party = revolutionary_nationalist
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+}
+create_country_leader = {
+	name = "Osman Fuad Osmanoğlu"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "Portrait_OTT_OsmanFuad.tga"
+	expire = "1965.1.1"
+	ideology = revolutionary_nationalist_subideology
+	traits = {
+		
+	}
+}
+add_popularity = {
+    ideology = revolutionary_nationalist
+    popularity = 1
+}
+set_country_flag = Roatta_Warlord
+}
+
+GRE = {
+transfer_state = 339
+add_state_core = 339
+transfer_state = 341
+add_state_core = 341
+transfer_state = 797
+add_state_core = 797
+transfer_state = 164
+add_state_core = 164
+}
+
+KLG = {
+set_cosmetic_tag = KLG_Roatta_Tag    
+transfer_state = 355
+add_state_core = 355
+transfer_state = 356
+add_state_core = 356
+transfer_state = 347
+add_state_core = 347
+transfer_state = 839
+add_state_core = 839
+load_focus_tree = generic_focus
+set_country_flag = Roatta_Warlord
+}
+
+CIB = {
+    load_focus_tree = generic_focus
+    set_cosmetic_tag = ESO_Roatta
+    transfer_state = 343
+    add_state_core = 343
+    create_country_leader = {
+	name = "Nihal Atsız"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "CIB_Atsiz.tga"
+	expire = "1965.1.1"
+	ideology = revolutionary_nationalist_subideology
+	traits = {
+		
+	}
+ white_peace = ARM
+   
+}
+set_country_flag = Roatta_Warlord
+}
+ANK = {
+    load_focus_tree = generic_focus
+set_cosmetic_tag = ANK_Roatta
+    transfer_state = 49
+    add_state_core = 49
+    transfer_state = 798
+    add_state_core = 798
+    create_country_leader = {
+	name = "Mehmet Esat Bozkurt"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "ANK_Bozkurt.tga"
+	expire = "1965.1.1"
+	ideology = revolutionary_nationalist_subideology
+	traits = {
+		
+	}
+}
+set_country_flag = Roatta_Warlord
+set_politics = {
+	ruling_party = revolutionary_nationalist
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+}
+add_popularity = {
+    ideology = revolutionary_nationalist
+    popularity = 1
+}
+
+}
+
+ARM = {
+    load_focus_tree = generic_focus
+        set_cosmetic_tag = ARM_Uprising
+        transfer_state = 230
+        transfer_state = 229
+        transfer_state = 835
+        transfer_state = 800
+        transfer_state = 354
+        load_oob = ARM_uprising
+        set_politics = {
+	    ruling_party = revolutionary_nationalist
+        elections_allowed = no
+        }
+        add_popularity = {
+        ideology = revolutionary_nationalist
+        popularity = 1.0
+        }
+set_country_flag = Roatta_Warlord
+}
+
+TRA = {
+    load_focus_tree = generic_focus
+transfer_state = 342
+add_state_core = 342
+transfer_state = 345
+add_state_core = 345
+set_country_flag = Roatta_Warlord
+}
+
+ADN = {
+    load_focus_tree = generic_focus
+leave_faction = yes
+transfer_state = 344
+set_country_flag = Roatta_Warlord
+}
+
+CLP = {
+    load_focus_tree = generic_focus
+transfer_state = 346
+add_state_core = 346
+set_cosmetic_tag = CLP_Islamic
+set_country_flag = Roatta_Warlord
+set_politics = {
+	ruling_party = autocratic
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+}
+add_popularity = {
+    ideology = autocratic
+    popularity = 1
+}
+create_country_leader = {
+	name = "Abdulmecid Bey"
+	#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "Portrait_CLP_Abdulmecid_Absolute.tga"
+	expire = "1965.1.1"
+	ideology = autocratic_subideology
+	traits = {
+		
+	}
+}
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}

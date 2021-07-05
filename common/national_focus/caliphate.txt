@@ -9,77 +9,6 @@ focus_tree = {
 		}
 		continuous_focus_position = { x = 100 y = 2000 }
 
-    focus = {
-		id = CLP_political_problems
-		icon = GFX_goal_adress_parliament
-		x = 13
-		y = 1
-		cost = 2
-		available_if_capitulated = yes
-		prerequisite = {
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		add_stability = 0.03
-		hidden_effect = {
-        }	
-		}
-		}
-
-    focus = {
-		id = CLP_overview_state
-		icon = GFX_goal_adress_parliament
-		x = 12
-		y = 2
-		cost = 1
-		available_if_capitulated = yes
-		prerequisite = { focus = CLP_political_problems }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		country_event = { id = caliph.2 days = 1}	
-		custom_effect_tooltip = ANT_dreams_Broken_tt
-		add_stability = 0.05
-		}
-	}
-
-    focus = {
-		id = CLP_trying_reforms
-		icon = GFX_goal_adress_parliament
-		x = 14
-		y = 2
-		cost = 1
-		available_if_capitulated = yes
-		prerequisite = { focus = CLP_political_problems }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		country_event = { id = caliph.3 days = 1}	
-		add_stability = 0.05
-		}
-	}
-
-    focus = {
-		id = CLP_expressing_authority
-		icon = GFX_goal_adress_parliament
-		x = 13
-		y = 3
-		cost = 1
-		available_if_capitulated = yes
-		prerequisite = { focus = CLP_trying_reforms }
-        prerequisite = { focus = CLP_overview_state }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		country_event = { id = caliph.4 days = 1}	
-		add_stability = 0.05
-		}
-	}
 
     focus = {
 		id = CLP_ulama_state
@@ -91,6 +20,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = { always = no }
 		completion_reward = {
 		}
 	}

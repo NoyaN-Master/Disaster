@@ -1,6 +1,5 @@
-capital = 348
-oob = "CLP_1936"
-country_event =  { id = caliph.4 days = 2}
+capital = 342
+oob = ""
 
 set_technology = {
 	infantry_weapons = 1
@@ -17,47 +16,38 @@ set_technology = {
 }
 
 set_convoys = 50
-set_stability = 0.4
-set_war_support = 1.0
-
-add_ideas = CLP_realm_of_islam
-add_ideas = CLP_no_authority
-add_ideas = CLP_fundementalism_high
-
-add_ideas = 	authoritarian_state 
-add_ideas = 	planned_economy
-add_ideas = 	semi_industrial_society
-add_ideas = CLP_ulema_hog
-
 
 set_politics = {
-	ruling_party = esoteric_traditionalist
+	ruling_party = authoritarian_socialist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
+add_ideas = 	one_party_state 
+add_ideas = 	planned_economy
+add_ideas = 	industrialized_society
 
 set_popularities = {
 	conservative = 0
 	liberal = 0
 	social_democrat = 0
 	libertarian_socialist = 0
-	authoritarian_socialist = 0
+	authoritarian_socialist = 60
 	unisocialist = 0
 	authoritarian_democrat = 0
 	autocratic = 0
 	ultranationalist = 0
-	revolutionary_nationalist = 0
-	esoteric_traditionalist = 100
+	revolutionary_nationalist = 40
+	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
 
 create_country_leader = {
-	name = "Caliph Abdulmecid"
-	#desc = "SES_Zeljko_Raznatovic_desc"
-	picture = "Portrait_CLP_Abdulmecid.tga"
+	name = "Şevket Süreyya Aydemir"
+	#desc = "TSV_Trotsky_desc"
+	picture = "TRA_Aydemir.tga"
 	expire = "2020.1.1"
-	ideology = esoteric_islamism_subideology
+	ideology = authoritarian_socialist_subideology
 	traits = {
 		#
 	}
