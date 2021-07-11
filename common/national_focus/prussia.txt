@@ -9,7 +9,7 @@ focus_tree = {
 			tag = PRE	}
 	}
 
-    continuous_focus_position = { x = 20 y = 2000 }	
+    continuous_focus_position = { x = 20 y = 2300 }	
 	
 	### political focus start
 	focus = {
@@ -165,14 +165,65 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = PRE_elections
 		}
-	}	
+	}
+############################# foreign policy
+
+
+	focus = {
+		id = PRE_stir_up_mecklenburg
+		icon = GFX_goal_unknown
+		x = 10
+		y = 0
+		cost = 5	
+		ai_will_do = { factor = 1000 }		
+		available = {
+					OR = {
+			has_completed_focus = PRE_republic_lives_on
+			has_completed_focus = PRE_legacy_of_1848
+			has_completed_focus = PRE_restore_monarchy
+			has_completed_focus = PRE_nacht_der_langer_messer
+			has_completed_focus = PRE_social_role_army
+			}
+		}
+		select_effect = {
+		country_event = { id = mek.1 days = 5 }		
+		}		
+		will_lead_to_war_with = NGU
+		completion_reward = {	
+		custom_effect_tooltip = PRE_stir_up_mecklenburg_tooltip
+		}
+	}
+	focus = {
+		id = PRE_saxony
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 3		
+		prerequisite = { focus = PRE_stir_up_mecklenburg }
+		ai_will_do = { factor = 1000 }		
+		available = {
+		59 = {is_owned_and_controlled_by = PRE }	
+		56 = {is_owned_and_controlled_by = PRE }	
+		57 = {is_owned_and_controlled_by = PRE }	
+		55 = {is_owned_and_controlled_by = PRE }	
+		has_war = no
+		}
+		will_lead_to_war_with = SAX		
+		completion_reward = {
+		declare_war_on = {
+        target = SAX
+        type = annex_everything
+        } 
+		}
+	}
+	
 ############################################### Schleicher Path
 	focus = {
 		id = PRE_schleicher_holds_on
 		icon = GFX_goal_schleicher_holds_on
-		x = 6
-		y = 0
-		relative_position_id = PRE_start_focus
+		x = 3
+		y = 7
 		cost = 1
 		available = {
 			has_country_flag = PRE_schleicher_refuses_step_down	
@@ -192,9 +243,9 @@ focus_tree = {
 	focus = {
 		id = PRE_deal_with_the_junkers
 		icon = GFX_goal_deal_with_junkers
-		x = 6
+		x = 0
 		y = 1
-		relative_position_id = PRE_start_focus
+		relative_position_id = PRE_schleicher_holds_on
 		prerequisite = { focus = PRE_schleicher_holds_on }
 		available = {
 			has_country_flag = PRE_schleicher_refuses_step_down		
@@ -217,9 +268,9 @@ focus_tree = {
 	focus = {
 		id = PRE_negotiate_quer_front
 		icon = GFX_goal_negotiate_querfront
-		x = 6
+		x = 0
 		y = 2
-		relative_position_id = PRE_start_focus
+		relative_position_id = PRE_schleicher_holds_on
 		prerequisite = { focus = PRE_deal_with_the_junkers }
 		available = {
 			has_country_flag = PRE_schleicher_refuses_step_down		
@@ -242,9 +293,9 @@ focus_tree = {
     focus = {
 		id = PRE_friends_in_the_abwehr
 		icon = GFX_goal_friends_in_the_abewehr
-		x = 7
+		x = 1
 		y = 3
-		relative_position_id = PRE_start_focus
+		relative_position_id = PRE_schleicher_holds_on
 		cost = 5		
 		prerequisite = { focus = PRE_negotiate_quer_front }
 		available = {
@@ -258,9 +309,9 @@ focus_tree = {
     focus = {
 		id = PRE_clarify_our_policies
 		icon = GFX_goal_reichstag_address
-		x = 5
+		x = -1
 		y = 3
-		relative_position_id = PRE_start_focus
+		relative_position_id = PRE_schleicher_holds_on
 		cost = 3		
 		prerequisite = { focus = PRE_negotiate_quer_front }
 		available = {
@@ -273,9 +324,9 @@ focus_tree = {
 	focus = {
 		id = PRE_support_the_prussian_worker
 		icon = GFX_goal_prussian_worker
-		x = 4
+		x = -2
 		y = 4
-		relative_position_id = PRE_start_focus
+		relative_position_id = PRE_schleicher_holds_on
 		cost = 5		
 		prerequisite = { focus = PRE_clarify_our_policies }
 		available = {
@@ -291,9 +342,9 @@ focus_tree = {
 	focus = {
 		id = PRE_social_role_army
 		icon = GFX_goal_social_role_army
-		x = 6
+		x = 0
 		y = 4
-		relative_position_id = PRE_start_focus
+		relative_position_id = PRE_schleicher_holds_on
 		cost = 5		
 		prerequisite = { focus = PRE_friends_in_the_abwehr }
 		prerequisite = { focus = PRE_clarify_our_policies }
@@ -312,9 +363,9 @@ focus_tree = {
 	focus = {
 		id = PRE_crush_nationalist_opposition
 		icon = GFX_goal_nationalist_opposition
-		x = 8
+		x = 2
 		y = 4
-		relative_position_id = PRE_start_focus
+		relative_position_id = PRE_schleicher_holds_on
 		cost = 4		
 		prerequisite = { focus = PRE_friends_in_the_abwehr }
 		select_effect = { country_event = { id = pre.32 days = 1 } }
@@ -333,9 +384,9 @@ focus_tree = {
 	focus = {
 		id = PRE_redistribute_land
 		icon = GFX_goal_land_resdistrubute
-		x = 3
+		x = -3
 		y = 5
-		relative_position_id = PRE_start_focus
+		relative_position_id = PRE_schleicher_holds_on
 		cost = 5		
 		prerequisite = { focus = PRE_support_the_prussian_worker }
 		prerequisite = { focus = PRE_social_role_army }		
@@ -363,9 +414,9 @@ focus_tree = {
 	focus = {
 		id = PRE_class_coop
 		icon = GFX_goal_class_coop
-		x = 5
+		x = -1
 		y = 5
-		relative_position_id = PRE_start_focus
+		relative_position_id = PRE_schleicher_holds_on
 		cost = 6		
 		prerequisite = { focus = PRE_support_the_prussian_worker }
 		prerequisite = { focus = PRE_social_role_army }		
@@ -379,9 +430,9 @@ focus_tree = {
 	focus = {
 		id = PRE_unity_through_service
 		icon = GFX_goal_unity_through_service
-		x = 7
+		x = 1
 		y = 5
-		relative_position_id = PRE_start_focus
+		relative_position_id = PRE_schleicher_holds_on
 		cost = 5		
 		prerequisite = { focus = PRE_crush_nationalist_opposition }
 		prerequisite = { focus = PRE_social_role_army }	
@@ -398,9 +449,9 @@ focus_tree = {
 	focus = {
 		id = PRE_a_police_state
 		icon = GFX_goal_police_state
-		x = 9
+		x = 3
 		y = 5
-		relative_position_id = PRE_start_focus
+		relative_position_id = PRE_schleicher_holds_on
 		cost = 5		
 		prerequisite = { focus = PRE_crush_nationalist_opposition }
 		prerequisite = { focus = PRE_social_role_army }	
@@ -416,9 +467,9 @@ focus_tree = {
 	focus = {
 		id = PRE_undermine_big_business
 		icon = GFX_goal_undermine_big_business
-		x = 4
+		x = -2
 		y = 6
-		relative_position_id = PRE_start_focus
+		relative_position_id = PRE_schleicher_holds_on
 		cost = 4		
 		prerequisite = { focus = PRE_class_coop }	
 		prerequisite = { focus = PRE_unity_through_service }
@@ -436,9 +487,9 @@ focus_tree = {
 	focus = {
 		id = PRE_national_solidarity
 		icon = GFX_goal_national_solidarity
-		x = 6
+		x = 0
 		y = 6
-		relative_position_id = PRE_start_focus
+		relative_position_id = PRE_schleicher_holds_on
 		cost = 6		
 		prerequisite = { focus = PRE_class_coop }	
 		prerequisite = { focus = PRE_unity_through_service }	
@@ -450,9 +501,9 @@ focus_tree = {
 	focus = {
 		id = PRE_rejuvenate_militarism
 		icon = GFX_goal_rejuvanate_militarism
-		x = 8
+		x = 2
 		y = 6
-		relative_position_id = PRE_start_focus
+		relative_position_id = PRE_schleicher_holds_on
 		cost = 6		
 		prerequisite = { focus = PRE_class_coop }	
 		prerequisite = { focus = PRE_unity_through_service }	
@@ -473,9 +524,9 @@ focus_tree = {
 	focus = {
 		id = PRE_pro_worker_indus
 		icon = GFX_goal_pro_worker_indus
-		x = 4
+		x = -2
 		y = 7
-		relative_position_id = PRE_start_focus
+		relative_position_id = PRE_schleicher_holds_on
 		cost = 6		
 		prerequisite = { focus = PRE_undermine_big_business }	
 		completion_reward = {
@@ -514,9 +565,9 @@ focus_tree = {
 	focus = {
 		id = PRE_support_our_countrymen
 		icon = GFX_goal_support_our_countrymen
-		x = 6
+		x = 0
 		y = 7
-		relative_position_id = PRE_start_focus
+		relative_position_id = PRE_schleicher_holds_on
 		cost = 5		
 		prerequisite = { focus = PRE_national_solidarity }		
 		
@@ -530,9 +581,9 @@ focus_tree = {
 	focus = {
 		id = PRE_shared_struggle
 		icon = GFX_goal_shared_struggle
-		x = 8
+		x = 2
 		y = 7
-		relative_position_id = PRE_start_focus
+		relative_position_id = PRE_schleicher_holds_on
 		cost = 5		
 		prerequisite = { focus = PRE_rejuvenate_militarism }		
 		
@@ -543,9 +594,9 @@ focus_tree = {
 	focus = {
 		id = PRE_integrate_querfront_parties
 		icon = GFX_goal_querfront
-		x = 5
+		x = -1
 		y = 8
-		relative_position_id = PRE_start_focus
+		relative_position_id = PRE_schleicher_holds_on
 		cost = 6		
 		prerequisite = { focus = PRE_pro_worker_indus }
 		prerequisite = { focus = PRE_support_our_countrymen }		
@@ -556,9 +607,9 @@ focus_tree = {
 	focus = {
 		id = PRE_formalise_army_power
 		icon = GFX_goal_formalise_army
-		x = 7
+		x = 1
 		y = 8
-		relative_position_id = PRE_start_focus
+		relative_position_id = PRE_schleicher_holds_on
 		cost = 6		
 		prerequisite = { focus = PRE_shared_struggle }
 		prerequisite = { focus = PRE_support_our_countrymen }			
@@ -569,9 +620,9 @@ focus_tree = {
 	focus = {
 		id = PRE_one_prussian_nation
 		icon = GFX_goal_one_prussian_nation
-		x = 6
+		x = 0
 		y = 9
-		relative_position_id = PRE_start_focus
+		relative_position_id = PRE_schleicher_holds_on
 		cost = 6		
 		prerequisite = { focus = PRE_integrate_querfront_parties }	
 		prerequisite = { focus = PRE_formalise_army_power }			
@@ -583,8 +634,8 @@ focus_tree = {
 	focus = {
 		id = PRE_nazi_victory_focus
 		icon = GFX_goal_goring_takes_power
-		x = 15
-		y = 0
+		x = 10
+		y = 7
 		cost = 1		
 		available = {
 			has_country_flag = PRE_nazi_victory	
@@ -1075,8 +1126,8 @@ focus_tree = {
 	focus = {
 		id = PRE_dnvp_victory_focus
 		icon = GFX_goal_victory_hugenberg
-		x = 23
-		y = 0
+		x = 18
+		y = 7
 		cost = 1		
 		available = {
 			has_country_flag = PRE_dnvp_victory	
@@ -1458,8 +1509,8 @@ focus_tree = {
 	focus = {
 		id = PRE_liberal_victory_focus
 		icon = GFX_goal_liberal_victory
-		x = 32
-		y = 0
+		x = 26
+		y = 7
 		cost = 1
 		available = {
 			has_country_flag = PRE_liberal_victory	
@@ -1954,8 +2005,8 @@ focus_tree = {
 	focus = {
 		id = PRE_junker_victory_focus
 		icon = GFX_goal_junkers_hold_on
-		x = 42
-		y = 0
+		x = 35
+		y = 7
 		cost = 1		
 		available = {
 			has_country_flag = PRE_junker_victory	
@@ -2412,7 +2463,7 @@ focus_tree = {
 	focus = {
 		id = PRE_prussian_army
 		icon = GFX_goal_new_prussian_army
-		x = 56
+		x = 30
 		y = 0
 
 		cost = 3		
@@ -2457,7 +2508,6 @@ focus_tree = {
 		relative_position_id = PRE_prussian_army
 		cost = 6		
 		prerequisite = { focus = PRE_study_past}
-		
 		completion_reward = {
 		add_ideas = PRE_new_curriculum_idea
 		}
@@ -2874,88 +2924,6 @@ focus_tree = {
 		}			
 		}
 	}
-############################# foreign policy
 
 
-	focus = {
-		id = PRE_stir_up_mecklenburg
-		icon = GFX_goal_unknown
-		x = 70
-		y = 0
-		cost = 5	
-		ai_will_do = { factor = 1000 }		
-		available = {
-					OR = {
-			has_completed_focus = PRE_republic_lives_on
-			has_completed_focus = PRE_legacy_of_1848
-			has_completed_focus = PRE_restore_monarchy
-			has_completed_focus = PRE_nacht_der_langer_messer
-			has_completed_focus = PRE_social_role_army
-			}
-		}
-		select_effect = {
-		country_event = { id = mek.1 days = 5 }		
-		}		
-		will_lead_to_war_with = NGU
-		completion_reward = {	
-		custom_effect_tooltip = PRE_stir_up_mecklenburg_tooltip
-		}
-	}
-	focus = {
-		id = PRE_saxony
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		relative_position_id = PRE_stir_up_mecklenburg
-		cost = 3		
-		prerequisite = { focus = PRE_stir_up_mecklenburg }
-		ai_will_do = { factor = 1000 }		
-		available = {
-		59 = {is_owned_and_controlled_by = PRE }	
-		56 = {is_owned_and_controlled_by = PRE }	
-		57 = {is_owned_and_controlled_by = PRE }	
-		55 = {is_owned_and_controlled_by = PRE }	
-		has_war = no
-		}
-		will_lead_to_war_with = SAX		
-		completion_reward = {
-		declare_war_on = {
-        target = SAX
-        type = annex_everything
-        } 
-		}
-	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
 	}
