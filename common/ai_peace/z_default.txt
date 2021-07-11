@@ -86,20 +86,20 @@ default_peace = {
 
 		# prioritize neighboring states
 		modifier = {
-			factor = 10.0
+			factor = 10
 			FROM = {
 				num_owned_neighbour_states = { count > 0 owner = ROOT }
 			}
 		}
 		modifier = {
-			factor = 8.0
+			factor = 8
 			FROM = {
 				NOT = { num_owned_neighbour_states = { count > 0 owner = ROOT } }
 				num_claimed_peace_conference_neighbour_states = { count > 0 owner = ROOT }
 			}
 		}
 		modifier = {
-			factor = 3.0
+			factor = 3
 			FROM = {
 				# has two neighboring states
 				OR = {
@@ -126,7 +126,7 @@ default_peace = {
 			}
 		}
 		modifier = {
-			factor = 5.0
+			factor = 5
 			FROM = {
 				# has three neighboring states
 				OR = {
@@ -161,7 +161,7 @@ default_peace = {
 			}
 		}
 		modifier = {
-			factor = 7.0
+			factor = 7
 			FROM = {
 				# has four neighboring states
 				OR = {
@@ -204,7 +204,7 @@ default_peace = {
 			}
 		}
 		modifier = {
-			factor = 9.0
+			factor = 9
 			FROM = {
 				# has five or more neighboring states
 				OR = {
@@ -289,10 +289,6 @@ default_peace = {
 
 		# prioritize more important states
 		modifier = {
-			factor = 0.9
-			FROM = { state_and_terrain_strategic_value < 11 }
-		}
-		modifier = {
 			factor = 1.1
 			FROM = { state_and_terrain_strategic_value > 10 }
 		}
@@ -366,15 +362,7 @@ default_peace = {
 			factor = 0
 			rule_take_bordering_first = yes
 		}
-
-		# take only acceptable states
-		modifier = {
-			factor = 0
-			set_temp_variable = { global.eval_state = FROM.id }
-			is_willing_to_take_state_ROOT = no
-		}
-		
-		### SPECIFIC COUNTRIES
+	}
 
 
 	# ROOT = Taker, FROM = Giver
