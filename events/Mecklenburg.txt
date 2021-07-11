@@ -75,6 +75,8 @@ country_event = { # MEK refuses NGU declares war
         }   
 		hidden_effect = {
 		    PRE = { country_event = { id = mek.6 days = 1 }}
+	NGU = {add_state_claim = 763}
+	NGU = {add_state_claim = 188}		
 		}
 	}
 }
