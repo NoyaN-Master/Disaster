@@ -1,0 +1,122 @@
+division_template = {
+	name = "German Expeditionary Unit" 	#Elite Unit of well equipped and expirienced troops, 12 battalions with artillery support
+	division_names_group = BLT_INF_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 3 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division= {	
+		name = "1. German-Baltic Expeditionary Force"
+		location = 9340
+		division_template = "German Expeditionary Unit"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "2. German-Baltic Expeditionary Force"
+		location = 9340
+		division_template = "German Expeditionary Unit"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "3. German-Baltic Expeditionary Force"
+		location = 9340
+		division_template = "German Expeditionary Unit"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "4. German-Baltic Expeditionary Force"
+		location = 9340
+		division_template = "German Expeditionary Unit"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "5. German-Baltic Expeditionary Force"
+		location = 9340
+		division_template = "German Expeditionary Unit"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "6. German-Baltic Expeditionary Force"
+		location = 9340
+		division_template = "German Expeditionary Unit"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "7. German-Baltic Expeditionary Force"
+		location = 9340
+		division_template = "German Expeditionary Unit"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "8.  German-Baltic Expeditionary Force"
+		location = 9340
+		division_template = "German Expeditionary Unit" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "9.  German-Baltic Expeditionary Force"
+		location = 9340
+		division_template = "German Expeditionary Unit" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "10.  German-Baltic Expeditionary Force"
+		location = 9340
+		division_template = "German Expeditionary Unit" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "11.  German-Baltic Expeditionary Force"
+		location = 9340
+		division_template = "German Expeditionary Unit" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "BLT"
+		}
+		requested_factories = 2
+		progress = 0.90
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "BLT
+		}
+		requested_factories = 1
+		progress = 0.60
+		efficiency = 100
+	}
+}
