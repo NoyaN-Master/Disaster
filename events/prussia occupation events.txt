@@ -1,0 +1,33 @@
+add_namespace = preo
+
+country_event = { # polish puppeting
+	id = preo.1
+	title = preo.1.t
+	desc = preo.1.d
+	fire_only_once = yes
+	is_triggered_only = yes	
+	option = {
+		name = preo.1.a
+		ai_chance = { factor = 1}
+		PRE = {add_state_claim = 809}
+		PRE = {add_state_claim = 85}
+		PRE = {add_state_claim = 86}
+		PRE = {add_state_claim = 762}
+		every_owned_state = {
+			limit = {
+				OR = {
+					is_core_of = PLN
+					AND = {
+						is_claimed_by = PLN
+						is_clear_other_claims = yes
+					}
+				}
+				NOT = { is_claimed_by = PRE }
+				NOT = {is_core_of = PRE }
+			}
+			PLN = { transfer_state = PREV }
+		}
+		puppet = PLN
+		PLN = {set_cosmetic_tag = PLN_occupation }
+	}
+}

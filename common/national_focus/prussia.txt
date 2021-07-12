@@ -254,7 +254,7 @@ focus_tree = {
 		x = -1
 		y = 3
 		relative_position_id = PRE_stir_up_mecklenburg
-		cost = 5	
+		cost = 2	
 		mutually_exclusive = {
 		focus =  PRE_generalplan_ost
 		}		
@@ -277,7 +277,8 @@ focus_tree = {
 		91 = {is_owned_and_controlled_by = PRE }
 		89 = {is_owned_and_controlled_by = PRE }
 		}
-        complete_effect = {
+        completion_reward = {
+		country_event = { id = preo.1 days = 1 }
 		}
 		
 	}
