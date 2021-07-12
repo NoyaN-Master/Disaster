@@ -217,7 +217,105 @@ focus_tree = {
         } 
 		}
 	}
-	
+	focus = {
+		id = PRE_strike_poland
+		icon = GFX_goal_unknown
+		x = 0
+		y = 2
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5		
+		prerequisite = { focus = PRE_saxony }
+		will_lead_to_war_with = PLN		
+		available = {
+		has_war = no	
+		has_army_manpower = { size > 350000 } 
+		}		
+		completion_reward = {
+		declare_war_on = {
+        target = PLN
+        type = annex_everything
+        } 	
+		hidden_effect = {
+		if = {
+		limit = { NOT = { is_ai = yes}}
+		PLN = {
+		add_manpower = 50000
+		add_ideas = extensive_conscription
+		add_ideas = partial_economic_mobilisation
+		load_oob = PLN_reinforcements
+			}
+		}
+		}
+		}
+	}	
+	focus = {
+		id = PRE_puppet_poland
+		icon = GFX_goal_unknown
+		x = -1
+		y = 3
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5	
+		mutually_exclusive = {
+		focus =  PRE_generalplan_ost
+		}		
+		prerequisite = { focus = PRE_strike_poland }
+		available = {
+		NOT = {PLN = {exists = yes}}
+		808 = {is_owned_and_controlled_by = PRE }
+		809 = {is_owned_and_controlled_by = PRE }
+		85 = {is_owned_and_controlled_by = PRE }
+		86 = {is_owned_and_controlled_by = PRE }
+		98 = {is_owned_and_controlled_by = PRE }
+		87 = {is_owned_and_controlled_by = PRE }
+		10 = {is_owned_and_controlled_by = PRE }
+		97 = {is_owned_and_controlled_by = PRE }
+		92 = {is_owned_and_controlled_by = PRE }
+		90 = {is_owned_and_controlled_by = PRE }
+		762 = {is_owned_and_controlled_by = PRE }
+		72 = {is_owned_and_controlled_by = PRE }
+		88 = {is_owned_and_controlled_by = PRE }
+		91 = {is_owned_and_controlled_by = PRE }
+		89 = {is_owned_and_controlled_by = PRE }
+		}
+        complete_effect = {
+		}
+		
+	}
+	focus = {
+		id = PRE_generalplan_ost
+		icon = GFX_goal_unknown
+		x = 1
+		y = 3
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5
+		mutually_exclusive = {
+		focus =  PRE_puppet_poland
+		}		
+		prerequisite = { focus = PRE_strike_poland }
+		available = {
+		NOT = {PLN = {exists = yes}}
+		808 = {is_owned_and_controlled_by = PRE }
+		809 = {is_owned_and_controlled_by = PRE }
+		85 = {is_owned_and_controlled_by = PRE }
+		86 = {is_owned_and_controlled_by = PRE }
+		98 = {is_owned_and_controlled_by = PRE }
+		87 = {is_owned_and_controlled_by = PRE }
+		10 = {is_owned_and_controlled_by = PRE }
+		97 = {is_owned_and_controlled_by = PRE }
+		92 = {is_owned_and_controlled_by = PRE }
+		90 = {is_owned_and_controlled_by = PRE }
+		762 = {is_owned_and_controlled_by = PRE }
+		72 = {is_owned_and_controlled_by = PRE }
+		88 = {is_owned_and_controlled_by = PRE }
+		91 = {is_owned_and_controlled_by = PRE }
+		89 = {is_owned_and_controlled_by = PRE }
+		has_war = no			
+		}		
+		completion_reward = {
+		
+		}
+	}
+
 ############################################### Schleicher Path
 	focus = {
 		id = PRE_schleicher_holds_on
