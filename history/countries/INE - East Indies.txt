@@ -18,7 +18,7 @@ set_technology = {
 set_convoys = 50
 
 set_politics = {
-	ruling_party = liberal
+	ruling_party = autocratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -28,14 +28,14 @@ add_ideas = 	laisez_faire
 add_ideas = 	semi_industrial_society
 
 set_popularities = {
-	conservative = 20
-	liberal = 40
-	social_democrat = 20
-	libertarian_socialist = 0
-	authoritarian_socialist = 0
+	conservative = 10
+	liberal = 5
+	social_democrat = 0
+	libertarian_socialist = 15
+	authoritarian_socialist = 10
 	unisocialist = 0
-	authoritarian_democrat = 20
-	autocratic = 0
+	authoritarian_democrat = 0
+	autocratic = 60
 	ultranationalist = 0
 	revolutionary_nationalist = 0
 	esoteric_traditionalist = 0
@@ -47,7 +47,7 @@ create_country_leader = {
 	#desc = "INE_Wilhelmina_desc"
 	picture = "INE_Wilhelmina.tga"
 	expire = "2020.1.1"
-	ideology = liberal_subideology
+	ideology = autocratic_subideology
 	traits = {
 		#
 	}
