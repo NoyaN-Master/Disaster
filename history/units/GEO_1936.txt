@@ -1,0 +1,125 @@
+division_template = {
+	name = "Georgian Infantrie Division" # Based Mostly on Wehrmacht Soldiers 
+	division_names_group = GEO_INF_01
+	regiments = { #3 infantry regiments, represented by 6 to not be horrible
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 } 
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = { #Wehmacht soldiers typically had engineer, comms, artillery, recon and antitank, no comms and AT though since it comes later on in hoi's research tree
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 } 
+		engineer = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Georgian Kavallerie Division"	#Old Cavalry units based on the old heer
+	division_names_group = GEO_CAV_01	
+	regiments = {   #5 calvary regiments and 1 motorized
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = { #had artillery and signal but no signal because hoi4 moment
+		artillery = { x = 0 y = 0 }
+	}
+}
+units = {
+	division = {
+		name = "Georgian National Infantry Division"
+		location = 1599
+		division_template = "Georgian Infantrie Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Georgian National Infantry Division"
+		location = 1599
+		division_template = "Georgian Infantrie Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Georgian National Infantry Division"
+		location = 1599
+		division_template = "Georgian Infantrie Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Georgian National Infantry Division"
+		location = 1599
+		division_template = "Georgian Infantrie Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Georgian National Infantry Division"
+		location = 1599
+		division_template = "Georgian Infantrie Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Georgian National Infantry Division"
+		location = 1599
+		division_template = "Georgian Infantrie Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Georgian National Infantry Division"
+		location = 1599
+		division_template = "Georgian Infantrie Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Georgian National Infantry Division"
+		location = 1599
+		division_template = "Georgian Infantrie Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Georgian National Mobile Division"
+		location = 1599
+		division_template = "Georgian Kavallerie Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Georgian National Mobile Division"
+		location = 1599
+		division_template = "Georgian Kavallerie Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Georgian National Mobile Division"
+		location = 1599
+		division_template = "Georgian Kavallerie Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Georgian National Mobile Division"
+		location = 1599
+		division_template = "Georgian Kavallerie Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Georgian National Mobile Division"
+		location = 1599
+		division_template = "Georgian Kavallerie Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+}

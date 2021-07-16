@@ -1,0 +1,88 @@
+division_template = { 
+	name = "Belarusian Infantry Division"
+	division_names_group = WHR_INF_01
+	
+	regiments = { 
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Belarusian Calvary Division"
+	division_names_group = WHR_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	
+	division = {
+		name = "1. Belarusian Infantry Division"
+		location = 11370
+		division_template = "Belarusian Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "2. Belarusian Infantry Division"
+		location = 11370
+		division_template = "Belarusian Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "3. Belarusian Infantry Division"
+		location = 11370
+		division_template = "Belarusian Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "4. Belarusian Infantry Division"
+		location = 11370
+		division_template = "Belarusian Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "5. Belarusian Infantry Division"
+		location = 11370
+		division_template = "Belarusian Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "1. Belarusian Light Calvary Division"
+		location = 11370
+		division_template = "Belarusian Calvary Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "2. Belarusian Light Calvary Division"
+		location = 11370
+		division_template = "Belarusian Calvary Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "3. Belarusian Light Calvary Division"
+		location = 11370
+		division_template = "Belarusian Calvary Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+}
