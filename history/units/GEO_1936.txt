@@ -81,27 +81,6 @@ units = {
 		start_equipment_factor = 1
 	}
 	division = {
-		name = "Georgian National Infantry Division"
-		location = 1599
-		division_template = "Georgian Infantrie Division"
-		start_experience_factor = 0.4
-		start_equipment_factor = 1
-	}
-	division = {
-		name = "Georgian National Mobile Division"
-		location = 1599
-		division_template = "Georgian Kavallerie Division"
-		start_experience_factor = 0.4
-		start_equipment_factor = 1
-	}
-	division = {
-		name = "Georgian National Mobile Division"
-		location = 1599
-		division_template = "Georgian Kavallerie Division"
-		start_experience_factor = 0.4
-		start_equipment_factor = 1
-	}
-	division = {
 		name = "Georgian National Mobile Division"
 		location = 1599
 		division_template = "Georgian Kavallerie Division"
