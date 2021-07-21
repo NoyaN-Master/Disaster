@@ -42,7 +42,7 @@ focus_tree = {
 		}
 		}
 		hidden_effect = {
-			country_event = { id = wrf.5 days = 3 }
+			
 		}
 		}
 	}
@@ -257,7 +257,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		country_event = { id = wrf.16 days = 1 }
+		country_event = { id = wrf.18 days = 1 }
 		custom_effect_tooltip = WRF_manisa_
 		}
 	}

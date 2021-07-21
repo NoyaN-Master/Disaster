@@ -1,112 +1,5 @@
 add_namespace = wrf
 
-
-country_event = { 
-	id = wrf.4
-	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.4" }
-	title = wrf.4.t
-	desc = wrf.4.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = wrf.4.a
-		add_political_power = 100
-		add_equipment_to_stockpile = {
-		type = infantry_equipment
-		amount = 500
-		}
-		}
-	}
-country_event = { #KO Adana
-	id = wrf.5
-	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.5" }
-	title = wrf.5.t
-	desc = wrf.5.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = wrf.5.a
-		add_political_power = 100
-		add_equipment_to_stockpile = {
-		type = infantry_equipment
-		amount = 500
-		}
-		340 = {
-		add_building_construction = {
-		type = arms_factory
-		level = 1
-		instant_build = yes
-		}
-		}
-		}
-	}
-country_event = { #KO Adana
-	id = wrf.6
-	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.6" }
-	title = wrf.6.t
-	desc = wrf.6.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = wrf.6.a
-		add_political_power = 100
-		add_building_construction = {
-		type = industrial_complex 
-		level = 1
-		instant_build = yes
-		}
-		}
-	}
-country_event = { #KO Adana
-	id = wrf.7
-	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
-	title = wrf.7.t
-	desc = wrf.7.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = wrf.7.a
-		add_political_power = 100
-		add_manpower = 1
-		}
-	}
-country_event = { #KO Adana
-	id = wrf.8
-	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
-	title = wrf.8.t
-	desc = wrf.8.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = wrf.8.a
-		add_political_power = 100
-		}
-	}
 country_event = { #Antalya1
 	id = wrf.9
 	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
@@ -124,27 +17,8 @@ country_event = { #Antalya1
 		add_political_power = 100
 		custom_effect_tooltip = WRF_Antalya_Event1
 		hidden_effect = {
-		country_event = { id = wrf.10 days = 2 }
-		}
-		}
-	}
-country_event = { #Antalya1
-	id = wrf.10
-	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
-	title = wrf.10.t
-	desc = wrf.10.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = wrf.10.a
-		add_political_power = 100
-		custom_effect_tooltip = WRF_Antalya_Event2
 		set_country_flag = WRF_receipt_done
+		}
 		}
 	}
 country_event = { #PekerRomada
@@ -163,52 +37,6 @@ country_event = { #PekerRomada
 		name = wrf.11.a
 		add_political_power = 1
 		custom_effect_tooltip = WRF_Peker_Romada
-		hidden_effect = {
-		country_event = { id = wrf.12 days = 2 }
-		FIU = {
-		country_event = { id = wrf.12 days = 2 }
-		}
-		}
-		}
-	}
-country_event = { #PekerReceipt
-	id = wrf.12
-	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
-	title = wrf.12.t
-	desc = wrf.12.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = wrf.12.a
-		add_political_power = 1
-		custom_effect_tooltip = WRF_Peker_Proof
-		hidden_effect = {
-		country_event = { id = wrf.13 days = 2 }
-		FIU = {
-		country_event = { id = wrf.14 days = 2 }
-		}
-		}
-		}
-	}
-country_event = { #PekerEndWRF
-	id = wrf.13
-	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
-	title = wrf.13.t
-	desc = wrf.13.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = wrf.13.a
 		add_political_power = 200
 		custom_effect_tooltip = WRF_Peker_EndT
 		WRF = {
@@ -234,8 +62,13 @@ country_event = { #PekerEndWRF
 		}
 		}
 		country_event = { id = wrf.27 days = 3 }
+		hidden_effect = {
+		FIU = {
+		country_event = { id = wrf.14 days = 3 }
 		}
 		}
+		}
+	}
 country_event = { #PekerEndITA
 	id = wrf.14
 	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
@@ -269,119 +102,6 @@ country_event = { #PekerEndITA
 		}
 		}
 		}		
-country_event = { #PekerReceipt
-	id = wrf.15
-	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
-	title = wrf.15.t
-	desc = wrf.15.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = wrf.15.a
-		add_political_power = 20
-		custom_effect_tooltip = WRF_Speech
-		}
-	}
-country_event = { #Manisa Congress 1
-	id = wrf.16
-	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
-	title = wrf.16.t
-	desc = wrf.16.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = wrf.16.a
-		add_political_power = 20
-		custom_effect_tooltip = WRF_Manisa_One
-		hidden_effect = {
-			set_country_flag = {
-				flag = WRF_manisa_kemalist
-				value = 0
-			}
-			set_country_flag = {
-				flag = WRF_manisa_adsizist
-				value = 0
-			}
-			set_country_flag = {
-				flag = WRF_manisa_demokrat
-				value = 0
-			}
-		}
-		country_event = { id = wrf.17 days = 1 }
-		}
-	}
-country_event = { #Manisa Congress Economy
-	id = wrf.17
-	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
-	title = wrf.17.t
-	desc = wrf.17.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = wrf.17.a #Kemalist
-		add_political_power = 1
-		hidden_effect = {
-			modify_country_flag = {
-				flag = WRF_manisa_kemalist
-				value = 1
-			}
-		}
-		country_event = { id = wrf.18 days = 1 }
-		}
-	option = {
-		name = wrf.17.b #Nasyonel Bolsevik
-		add_political_power = 1
-		custom_effect_tooltip = WRF_Economy_NazBol
-		hidden_effect = {
-			modify_country_flag = {
-				flag = WRF_manisa_adsizist
-				value = 1
-			}
-		}
-		country_event = { id = wrf.18 days = 1 }
-		add_popularity = {
-		ideology = revolutionary_nationalist
-		popularity = 0.1
-		}
-		
-		}
-	option = {
-		name = wrf.17.c #Nasyonel Bolsevik
-		add_political_power = 1
-		custom_effect_tooltip = WRF_Economy_Democrat
-		hidden_effect = {
-			modify_country_flag = {
-				flag = WRF_manisa_demokrat
-				value = 1
-			}
-		}
-		country_event = { id = wrf.18 days = 1 }
-		add_popularity = {
-		ideology = conservative
-		popularity = 0.05
-		}
-		add_popularity = {
-		ideology = liberal
-		popularity = 0.05
-		}
-		
-		}	
-	}
 country_event = { #Manisa Congress Army
 	id = wrf.18
 	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
@@ -397,360 +117,24 @@ country_event = { #Manisa Congress Army
 	option = {
 		name = wrf.18.a #Kemalist-Ittihat
 		add_political_power = 1
-		custom_effect_tooltip = WRF_Army_Kemal
-		set_country_flag = WRF_army_kemalist
+		set_country_flag = WRF_Kemalist_Won
 		hidden_effect = {
-			modify_country_flag = {
-				flag = WRF_manisa_kemalist
-				value = 1
-			}
 		}
-		country_event = { id = wrf.19 days = 1 }
 		ai_chance = { factor = 100 }
 		}
 	option = {
 		name = wrf.18.b #Nasyonel Bolsevik
 		add_political_power = 1
-		custom_effect_tooltip = WRF_Army_NazBol
-		set_country_flag = WRF_army_nazbolsh
+		set_country_flag = WRF_Adsiz_Won
 		hidden_effect = {
-			modify_country_flag = {
-				flag = WRF_manisa_adsizist
-				value = 1
-			}
 		}
-		country_event = { id = wrf.19 days = 1 }
 		add_popularity = {
 		ideology = revolutionary_nationalist
-		popularity = 0.1
+		popularity = 0.4
 		}
 		ai_chance = { factor = 10 }
 		}
-	option = {
-		name = wrf.18.c #Demokrat
-		add_political_power = 1
-		custom_effect_tooltip = WRF_Army_Democrat
-		set_country_flag = WRF_army_western
-		hidden_effect = {
-			modify_country_flag = {
-				flag = WRF_manisa_demokrat
-				value = 1
-			}
-		}
-		country_event = { id = wrf.19 days = 1 }
-		add_popularity = {
-		ideology = conservative
-		popularity = 0.05
-		}
-		add_popularity = {
-		ideology = liberal
-		popularity = 0.05
-		}
-		
-		}
 	}
-country_event = { #Manisa Congress Religion
-	id = wrf.19
-	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
-	title = wrf.19.t
-	desc = wrf.19.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = wrf.19.a #Kemalist Secularism
-		add_political_power = 1
-		custom_effect_tooltip = WRF_Religion_Kemal
-		hidden_effect = {
-			modify_country_flag = {
-				flag = WRF_manisa_kemalist
-				value = 1
-			}
-		}
-		set_country_flag = WRF_religion_kemalist
-		country_event = { id = wrf.20 days = 1 }
-		ai_chance = { factor = 100 }
-		}
-	option = {
-		name = wrf.19.b #Nasyonel Bolsevik Iconoclast
-		add_political_power = 1
-		custom_effect_tooltip = WRF_religion_NazBol
-		set_country_flag = WRF_religion_nazbolsh
-		hidden_effect = {
-			modify_country_flag = {
-				flag = WRF_manisa_adsizist
-				value = 1
-			}
-		}
-		country_event = { id = wrf.20 days = 1 }
-		add_popularity = {
-		ideology = revolutionary_nationalist
-		popularity = 0.1
-		}
-		ai_chance = { factor = 60 }
-		}
-	option = {
-		name = wrf.19.c #Demokrat Mixed
-		add_political_power = 1
-		custom_effect_tooltip = WRF_religion_Democrat
-		set_country_flag = WRF_religion_western
-		hidden_effect = {
-			modify_country_flag = {
-				flag = WRF_manisa_demokrat
-				value = 1
-			}
-		}
-		country_event = { id = wrf.20 days = 1 }
-		add_popularity = {
-		ideology = conservative
-		popularity = 0.1
-		}
-		add_popularity = {
-		ideology = liberal
-		popularity = 0.1
-		}
-		
-		}
-	}
-country_event = { #Manisa Congress Policy
-	id = wrf.20
-	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
-	title = wrf.20.t
-	desc = wrf.20.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = wrf.20.a #The Great Republic Borders
-		add_political_power = 1
-		custom_effect_tooltip = WRF_Policy_Kemal
-		set_country_flag = WRF_Policy_kemalist
-		hidden_effect = {
-			modify_country_flag = {
-				flag = WRF_manisa_kemalist
-				value = 1
-			}
-		}
-		country_event = { id = wrf.28 days = 1 }
-		ai_chance = { factor = 100 }
-		}
-		
-	option = {
-		name = wrf.20.b #SS larp
-		add_political_power = 1
-		custom_effect_tooltip = WRF_policy_NazBol
-		set_country_flag = WRF_policy_nazbolsh
-		hidden_effect = {
-			modify_country_flag = {
-				flag = WRF_manisa_adsizist
-				value = 1
-			}
-		}
-		add_popularity = {
-		ideology = revolutionary_nationalist
-		popularity = 0.1
-		}
-		country_event = { id = wrf.28 days = 1 }
-		ai_chance = { factor = 60 }
-		}
-	option = {
-		name = wrf.20.c #The Democracy
-		add_political_power = 1
-		custom_effect_tooltip = WRF_policy_Democrat
-		set_country_flag = WRF_policy_western
-		hidden_effect = {
-		modify_country_flag = {
-				flag = WRF_manisa_demokrat
-				value = 1
-		}
-		}
-		add_popularity = {
-		ideology = conservative
-		popularity = 0.1
-		}
-		add_popularity = {
-		ideology = liberal
-		popularity = 0.1
-		}
-		country_event = { id = wrf.28 days = 1 }
-		}
-	}
-	
-country_event = { #Manisa Congress Reshuffle Democrat
-	id = wrf.21
-	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
-	title = wrf.21.t
-	desc = wrf.21.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = wrf.21.a 
-		add_political_power = 1
-		custom_effect_tooltip = WRF_Democrat_End
-		set_party_name = { 
-		ideology = liberal 
-		long_name = WRF_liberal_party_manisa_long 
-		name = WRF_liberal_party_manisa 
-		}
-		set_party_name = { 
-		ideology = conservative 
-		long_name = WRF_conservative_party_manisa_long 
-		name = WRF_conservative_party_manisa 
-		}
-		set_country_flag = WRF_Demokrat_End
-		}
-		}	
-	
-country_event = { #Manisa Congress Ending
-	id = wrf.28
-	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
-	title = wrf.28.t
-	desc = wrf.28.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = wrf.28.a 
-		add_political_power = 1
-		hidden_effect = {
-			if = {
-				limit = {
-					has_country_flag = {
-						flag = WRF_manisa_kemalist
-						value > 1
-					}
-				}
-				country_event = {
-					id = wrf.24
-					days = 1
-				}
-			}
-			if = {
-				limit = {
-					has_country_flag = {
-						flag = WRF_manisa_adsizist
-						value > 1
-					}
-				}
-				country_event = {
-					id = wrf.22
-					days = 1
-				}
-			}
-			if = {
-				limit = {
-					has_country_flag = {
-						flag = WRF_manisa_demokrat
-						value > 1
-					}
-				}
-				country_event = {
-					id = wrf.21
-					days = 1
-				}
-			}
-				if = {
-				limit = {
-					has_country_flag = {
-						flag = WRF_manisa_adsizist
-						value < 2
-					}
-					has_country_flag = {
-						flag = WRF_manisa_demokrat
-						value < 2
-					}
-					has_country_flag = {
-						flag = WRF_manisa_kemalist
-						value < 2
-					}
-				}
-				country_event = {
-					id = wrf.24
-					days = 1
-				}
-			}
-		}
-		}
-		}
-country_event = { #Manisa Congress Reshuffle NazBol
-	id = wrf.22
-	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
-	title = wrf.22.t
-	desc = wrf.22.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = wrf.22.a 
-		add_political_power = 1
-		custom_effect_tooltip = WRF_NazBol_End
-		set_country_flag = WRF_Adsiz_Won
-		}
-		}	
-country_event = { #Manisa Congress Reshuffle Tengri
-	id = wrf.23
-	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
-	title = wrf.23.t
-	desc = wrf.23.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = wrf.23.a 
-		add_political_power = 1
-		custom_effect_tooltip = WRF_Tengri_End
-		set_party_name = { 
-		ideology = revolutionary_anarchist 
-		long_name = WRF_revolutionary_anarchist_party_manisa_long 
-		name = WRF_revolutionary_anarchist_party_manisa 
-		}
-		set_country_flag = WRF_Anarch_Won
-		}
-		}
-country_event = { #Manisa Congress Reshuffle NazBol
-	id = wrf.24
-	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
-	title = wrf.24.t
-	desc = wrf.24.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = wrf.24.a 
-		add_political_power = 1
-		custom_effect_tooltip = WRF_Kemalist_End
-		set_country_flag = WRF_Kemalist_Won
-		}
-		}
 
 	
 country_event = { 
@@ -783,6 +167,7 @@ country_event = {
 		}
 		add_state_core = 344
 		}
+		
 		}
 country_event = { 
 	id = wrf.29
@@ -1000,6 +385,7 @@ country_event = { #TACHANKA 2 enver moves in
 		name = wrf.38.a
 		 add_stability = 0.1
 		 WRF_atsiz_coup = yes
+		 
 		 hidden_effect = {
 		 news_event = { id = news.6 }	 	 
 		}
@@ -1059,25 +445,6 @@ country_event = { #nationalists istanbul
     	transfer_troops = no
 		}
 		news_event = { id = news.10 }
-	}
-}
-
-country_event = { #nationalists istanbul
-	id = wrf.43
-	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
-	title = wrf.43.t
-	desc = wrf.43.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-	
-	option = {
-		name = wrf.43.a
-		WRF_atsiz_annex = yes
-		news_event = { id = news.7 }
 	}
 }
 
