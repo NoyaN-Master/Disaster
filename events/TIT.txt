@@ -88,12 +88,12 @@ country_event = {
 	    picture = "TIT_Alessandro_Pirzio_Biroli.tga"
 	    expire = "1965.1.1"
 	    ideology = ultranationalist_subideology
-		load_focus_tree = Biroli_TIT
 	    traits = {
 		#
 	    }
 		}
 		hidden_effect = {
+		load_focus_tree = B_TIT_focus
         }
 		}
 	option = {
@@ -124,9 +124,9 @@ country_event = {
 		ai_chance = { factor = 100 }
 		FIU = { 
 		 transfer_state = 164
-		} 
-		load_focus_tree = Roatta_TIT
+		}
 		hidden_effect = {
+		load_focus_tree = R_TIT_focus
         }
 		}
 	}

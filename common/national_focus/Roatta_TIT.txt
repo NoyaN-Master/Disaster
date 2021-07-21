@@ -1,0 +1,27 @@
+focus_tree = {
+	id = R_TIT_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+		}
+	}
+    default = no
+	continuous_focus_position = { x = 100 y = 1600 }
+	
+    focus = {
+		id = roatta_tree_start
+		icon = GFX_goal_Mussolini_begin
+		x = 7
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		country_event = { id = tit.1 days = 2 }
+		}
+		}
+	}
