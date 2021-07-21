@@ -21,5 +21,25 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/enver_shooting_event.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_report_wrf_peker"
+		texturefile = "gfx/event_pictures/wrf_peker.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_wrf_atsizmarch"
+		texturefile = "gfx/event_pictures/wrf_atsizmarch.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_wrf_ataturkpaper"
+		texturefile = "gfx/event_pictures/wrf_ataturkpaper.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_wrf_atsiz"
+		texturefile = "gfx/event_pictures/wrf_atsiz.dds"
+	} 
+	
 	
 }

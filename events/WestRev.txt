@@ -6,7 +6,7 @@ country_event = { #Antalya1
 	title = wrf.9.t
 	desc = wrf.9.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	picture = GFX_report_wrf_peker
 
 	fire_only_once = yes
 
@@ -27,7 +27,7 @@ country_event = { #PekerRomada
 	title = wrf.11.t
 	desc = wrf.11.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	picture = GFX_report_wrf_peker
 
 	fire_only_once = yes
 
@@ -75,7 +75,7 @@ country_event = { #PekerEndITA
 	title = wrf.14.t
 	desc = wrf.14.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	picture = GFX_report_wrf_peker
 
 	fire_only_once = yes
 
@@ -108,7 +108,7 @@ country_event = { #Manisa Congress Army
 	title = wrf.18.t
 	desc = wrf.18.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	picture = GFX_report_wrf_atsiz
 
 	fire_only_once = yes
 
@@ -143,7 +143,7 @@ country_event = {
 	title = wrf.27.t
 	desc = wrf.27.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	#picture = GFX_report_event_aut_dollfuss_speech
 
 	fire_only_once = yes
 
@@ -175,7 +175,7 @@ country_event = {
 	title = wrf.29.t
 	desc = wrf.29.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	picture = GFX_report_wrf_ataturkpaper
 
 	fire_only_once = yes
 
@@ -235,7 +235,7 @@ country_event = { #ASSEMBLY VOTING
 	title = wrf.31.t
 	desc = wrf.31.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	picture = GFX_report_wrf_ataturkpaper
 
 	fire_only_once = yes
 
@@ -252,7 +252,7 @@ country_event = { #ASSEMBLY-ATSİZ
 	title = wrf.32.t
 	desc = wrf.32.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	picture = GFX_report_wrf_atsiz
 
 	fire_only_once = yes
 
@@ -292,7 +292,7 @@ country_event = { #ASSEMBLY-KEMALIST
 	title = wrf.34.t
 	desc = wrf.34.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	picture = GFX_report_wrf_ataturkpaper
 
 	fire_only_once = yes
 
@@ -312,7 +312,7 @@ country_event = { #TACHANKA 1 riots grow
 	title = wrf.35.t
 	desc = wrf.35.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	picture = GFX_report_wrf_atsizmarch
 
 	fire_only_once = yes
 
@@ -333,7 +333,7 @@ country_event = { #TACHANKA 2 secret weapons
 	title = wrf.36.t
 	desc = wrf.36.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	picture = GFX_report_wrf_atsizmarch
 
 	fire_only_once = yes
 
@@ -354,7 +354,7 @@ country_event = { #TACHANKA 2 university takeover
 	title = wrf.37.t
 	desc = wrf.37.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	picture = GFX_report_wrf_atsizmarch
 
 	fire_only_once = yes
 
@@ -375,7 +375,7 @@ country_event = { #TACHANKA 2 enver moves in
 	title = wrf.38.t
 	desc = wrf.38.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	picture = GFX_report_wrf_atsizmarch
 
 	fire_only_once = yes
 
@@ -398,7 +398,7 @@ country_event = { #TACHANKA 2 enver
 	title = wrf.39.t
 	desc = wrf.39.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	picture = GFX_report_wrf_atsizmarch
 
 	fire_only_once = yes
 
@@ -432,7 +432,7 @@ country_event = { #nationalists istanbul
 	title = wrf.40.t
 	desc = wrf.40.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	picture = GFX_report_wrf_atsizmarch
 
 	fire_only_once = yes
 
@@ -454,7 +454,7 @@ country_event = { #nationalists istanbul
 	title = wrf.41.t
 	desc = wrf.41.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	picture = GFX_report_wrf_atsizmarch
 
 	fire_only_once = yes
 
@@ -472,7 +472,7 @@ country_event = { #nationalists istanbul
 	title = wrf.42.t
 	desc = wrf.42.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	picture = GFX_report_wrf_ataturkpaper
 
 	fire_only_once = yes
 
