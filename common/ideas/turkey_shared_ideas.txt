@@ -75,6 +75,19 @@ RussianWars_idea = {
 			modifier = {
 			ai_focus_aggressive_factor = 1
 			}
-		}							
+		}
+
+turkey_brother_war_idea = {
+	on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_brother_war" }
+	picture = brother_war
+	modifier = {
+		ai_focus_aggressive_factor = 0.25
+		army_attack_factor = -0.1
+		army_defence_factor = 0.2
+		army_speed_factor = -0.2
+		local_non_core_manpower = 0.3
+	}
+}
+									
 	
 	

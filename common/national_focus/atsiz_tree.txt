@@ -101,7 +101,7 @@ focus_tree = {
 		remove_idea = Atsiz_New_Regime_4
 		add_stability = 0.10
 		add_manpower = -10000
-		unlock_national_focus = WRF_MiddleEast_Plan 
+		#unlock_national_focus = WRF_MiddleEast_Plan 
 		hidden_effect = {
 		}
 		}
@@ -342,7 +342,7 @@ focus_tree = {
 		remove_idea = Atsiz_KorpsDeath_Fuel
 		add_idea = Atsiz_KorpsDeath_Eurasia	
 		}
-		unlock_national_focus = WRF_Conquest_Iraq
+		#unlock_national_focus = WRF_Conquest_Iraq
 		hidden_effect = {
 		}
 		}
@@ -809,7 +809,8 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-		always = no	
+		#always = no
+		has_completed_focus = WRF_Sons_Of_Eurasia	
 		}
 		completion_reward = {
 			SYR = {
