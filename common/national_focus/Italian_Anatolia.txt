@@ -35,7 +35,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = tit_fake_tree_start }
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 		completion_reward = {
 		hidden_effect = {
@@ -47,7 +47,7 @@ focus_tree = {
 		icon = GFX_goal_Mussolini_begin
 		x = 8
 		y = 2
-		cost = 1
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = tit_fake_tree_start }
 		ai_will_do = {

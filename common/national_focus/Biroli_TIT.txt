@@ -21,7 +21,250 @@ focus_tree = {
 		}
 		completion_reward = {
 		hidden_effect = {
-		country_event = { id = tit.1 days = 2 }
 		}
 		}
 	}
+	
+	focus = {
+		id = biroli_oh_shit
+		icon = GFX_goal_Mussolini_begin
+		x = 7
+		y = 2
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = biroli_tree_start }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+	
+	focus = {
+		id = biroli_reform_time
+		icon = GFX_goal_Mussolini_begin
+		x = 7
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = biroli_oh_shit }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+	
+	focus = {
+		id = biroli_garrison
+		icon = GFX_goal_Mussolini_begin
+		x = 5
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = biroli_reform_time }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+	
+	focus = {
+		id = biroli_locals
+		icon = GFX_goal_Mussolini_begin
+		x = 9
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = biroli_reform_time }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+	
+	focus = {
+		id = biroli_head_for_eye
+		icon = GFX_goal_Mussolini_begin
+		x = 10
+		y = 5
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = biroli_locals }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+	
+	focus = {
+		id = biroli_collaborators
+		icon = GFX_goal_Mussolini_begin
+		x = 8
+		y = 5
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = biroli_locals }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+	
+	focus = {
+		id = biroli_purge
+		icon = GFX_goal_Mussolini_begin
+		x = 4
+		y = 5
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = biroli_garrison }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+	
+	focus = {
+		id = biroli_try_officers
+		icon = GFX_goal_Mussolini_begin
+		x = 6
+		y = 5
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = biroli_garrison }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+	
+	focus = {
+		id = biroli_garrison_done
+		icon = GFX_goal_Mussolini_begin
+		x = 5
+		y = 6
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = biroli_purge }
+		prerequisite = { focus = biroli_try_officers }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+	
+	focus = {
+		id = biroli_locals_done
+		icon = GFX_goal_Mussolini_begin
+		x = 9
+		y = 6
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = biroli_head_for_eye }
+		prerequisite = { focus = biroli_collaborators }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+	
+	focus = {
+		id = biroli_no_money
+		icon = GFX_goal_Mussolini_begin
+		x = 8
+		y = 7
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = biroli_locals_done }
+		prerequisite = { focus = biroli_garrison_done }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+	
+	focus = {
+		id = biroli_turks_door
+		icon = GFX_goal_Mussolini_begin
+		x = 6
+		y = 7
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = biroli_locals_done }
+		prerequisite = { focus = biroli_garrison_done }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = biroli_burn_evidence
+		icon = GFX_goal_Mussolini_begin
+		x = 7
+		y = 8
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = biroli_turks_door }
+		prerequisite = { focus = biroli_no_money }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = biroli_fly_back
+		icon = GFX_goal_Mussolini_begin
+		x = 7
+		y = 9
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = biroli_burn_evidence }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+}
