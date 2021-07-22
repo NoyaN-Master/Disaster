@@ -259,6 +259,9 @@ TUR_unification_category = {
         original_tag = IZM
         }  
         complete_effect = {
+        WRF = { every_unit_leader = { set_nationality = IZM } }
+        CIB = { every_unit_leader = { set_nationality = IZM } }
+        OTH = { every_unit_leader = { set_nationality = IZM } }    
         set_cosmetic_tag = IZM_unification
         custom_effect_tooltip = ANT_unif_focus_tt
         load_focus_tree = ethem_unified_tree
@@ -318,11 +321,74 @@ TUR_unification_category = {
         has_government = libertarian_socialist
         }  
         complete_effect = {
+        WRF = { every_unit_leader = { set_nationality = IZM } }
+        CIB = { every_unit_leader = { set_nationality = IZM } }
+        OTH = { every_unit_leader = { set_nationality = IZM } }      
         set_cosmetic_tag = IZM_unification
         custom_effect_tooltip = ANT_unif_focus_tt
         load_focus_tree = nazim_tree
         hidden_effect = {
             set_country_flag = unification_nazim
+        }
+        IZM = {
+        add_state_core = 49
+        add_state_core = 347
+        add_state_core = 839
+        add_state_core = 798
+        add_state_core = 356
+        add_state_core = 355
+        add_state_core = 354
+        add_state_core = 353
+        add_state_core = 800
+        add_state_core = 352
+        add_state_core = 350
+        add_state_core = 346
+        add_state_core = 348
+        add_state_core = 349
+        add_state_core = 797
+        }
+        }
+        ai_will_do = {
+			factor = 1000
+		}
+     }
+
+     IZM_unify_madanoglu_decision = {
+	    fire_only_once = yes
+		cost = 0
+        available  = {
+        original_tag = IZM
+        has_government = authoritarian_socialist  
+        owns_state = 49
+        owns_state = 347
+        owns_state = 839
+        owns_state = 798
+        owns_state = 356
+        owns_state = 355
+        owns_state = 354
+        owns_state = 353
+        owns_state = 800
+        owns_state = 230
+        owns_state = 229
+        owns_state = 352
+        owns_state = 350
+        owns_state = 346
+        owns_state = 348
+        owns_state = 349
+        owns_state = 797
+        }
+        visible = {
+        original_tag = IZM
+        has_government = authoritarian_socialist
+        }  
+        complete_effect = {
+        WRF = { every_unit_leader = { set_nationality = IZM } }
+        CIB = { every_unit_leader = { set_nationality = IZM } }
+        OTH = { every_unit_leader = { set_nationality = IZM } }   
+        set_cosmetic_tag = CIB_Samet
+        load_focus_tree = mdd_tree
+        hidden_effect = {
+            set_country_flag = unification_madan
         }
         IZM = {
         add_state_core = 49

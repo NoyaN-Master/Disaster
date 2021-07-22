@@ -599,6 +599,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80	
 		}
+		select_effect = {
+		country_event = { id = commies.1  days = 4}	
+		}
         prerequisite = { focus = IZM_Tear_Down_Reactionaries }
 		available = {
         NOT = {
@@ -614,8 +617,6 @@ focus_tree = {
         country_exists = ADN   
         }    
         }
-		select_effect = {
-		}
 		completion_reward = {
 		country_event = { id = ant.22 days = 2 }	
         }

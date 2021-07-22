@@ -1,0 +1,368 @@
+focus_tree = {
+	id = mdd_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+		}
+	}
+
+    focus = {
+		id = IZM_ihtilal
+		icon = GFX_goal_CRW_first_icon
+		x = 7
+		y = 0
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+		select_effect = {
+		}
+		completion_reward = {
+		
+        }
+	}
+
+    focus = {
+		id = IZM_1000_Years
+		icon = GFX_goal_CRW_first_icon
+		x = 7
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = {
+        focus = IZM_ihtilal    
+        }
+		select_effect = {
+		}
+		completion_reward = {
+		
+        }
+	}
+
+    focus = {
+		id = IZM_Unify_Arrows
+		icon = GFX_goal_CRW_first_icon
+		x = 5
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = {
+        focus = IZM_1000_Years    
+        }
+		select_effect = {
+		}
+		completion_reward = {
+		
+        }
+	}
+
+    focus = {
+		id = IZM_Revolution_Starts
+		icon = GFX_goal_CRW_first_icon
+		x = 10
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = {
+        focus = IZM_1000_Years    
+        }
+		select_effect = {
+		}
+		completion_reward = {
+		
+        }
+	}
+
+    focus = {
+		id = IZM_Kemalist_Realism
+		icon = GFX_goal_CRW_first_icon
+		x = 9
+		y = 3
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = {
+        focus = IZM_Revolution_Starts    
+        }
+		select_effect = {
+		}
+		completion_reward = {
+		
+        }
+	}
+
+    focus = {
+		id = IZM_Proletarian_Dictatorship
+		icon = GFX_goal_CRW_first_icon
+		x = 10
+		y = 4
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = {
+        focus = IZM_Red_Women    
+        }
+        prerequisite = {
+        focus = IZM_Kemalist_Realism    
+        }
+		select_effect = {
+		}
+		completion_reward = {
+		
+        }
+	}
+
+    focus = {
+		id = IZM_National_Labor_System
+		icon = GFX_goal_CRW_first_icon
+		x = 9
+		y = 5
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = {
+        focus = IZM_Proletarian_Dictatorship    
+        }
+		select_effect = {
+		}
+		completion_reward = {
+		
+        }
+	}
+
+    focus = {
+		id = IZM_Nationalize_Shit
+		icon = GFX_goal_CRW_first_icon
+		x = 11
+		y = 5
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = {
+        focus = IZM_Proletarian_Dictatorship    
+        }
+		select_effect = {
+		}
+		completion_reward = {
+		
+        }
+	}
+
+    focus = {
+		id = IZM_Marxist_Leninist_Kemalism
+		icon = GFX_goal_CRW_first_icon
+		x = 10
+		y = 6
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = {
+        focus = IZM_National_Labor_System    
+        }
+        prerequisite = {
+        focus = IZM_Nationalize_Shit    
+        }
+		select_effect = {
+		}
+		completion_reward = {
+		
+        }
+	}
+
+    focus = {
+		id = IZM_Red_Women
+		icon = GFX_goal_CRW_first_icon
+		x = 11
+		y = 3
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = {
+        focus = IZM_Revolution_Starts    
+        }
+		select_effect = {
+		}
+		completion_reward = {
+		
+        }
+	}
+
+    focus = {
+		id = IZM_Vanguards_Revolution
+		icon = GFX_goal_CRW_first_icon
+		x = 4
+		y = 3
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = {
+        focus = IZM_Unify_Arrows    
+        }
+		select_effect = {
+		}
+		completion_reward = {
+		
+        }
+	}
+
+    focus = {
+		id = IZM_Pacify_Minorities
+		icon = GFX_goal_CRW_first_icon
+		x = 6
+		y = 3
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = {
+        focus = IZM_Unify_Arrows    
+        }
+		select_effect = {
+		}
+		completion_reward = {
+		
+        }
+	}
+
+    focus = {
+		id = IZM_amed_camps
+		icon = GFX_goal_CRW_first_icon
+		x = 7
+		y = 4
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = {
+        focus = IZM_Pacify_Minorities    
+        }
+		select_effect = {
+		}
+		completion_reward = {
+		
+        }
+	}
+
+    focus = {
+		id = IZM_National_Security
+		icon = GFX_goal_CRW_first_icon
+		x = 3
+		y = 4
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = {
+        focus = IZM_Vanguards_Revolution    
+        }
+		select_effect = {
+		}
+		completion_reward = {
+		
+        }
+	}
+
+    focus = {
+		id = IZM_Search_Enver
+		icon = GFX_goal_CRW_first_icon
+		x = 5
+		y = 4
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = {
+        focus = IZM_Pacify_Minorities    
+        }
+        prerequisite = {
+        focus = IZM_Vanguards_Revolution    
+        }
+		select_effect = {
+		}
+		completion_reward = {
+		
+        }
+	}
+
+    focus = {
+		id = IZM_Purge_Reformists
+		icon = GFX_goal_CRW_first_icon
+		x = 6
+		y = 5
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = {
+        focus = IZM_amed_camps    
+        }
+        prerequisite = {
+        focus = IZM_Search_Enver    
+        }
+		select_effect = {
+		}
+		completion_reward = {
+		
+        }
+	}
+
+    focus = {
+		id = IZM_Ataturk_Cult
+		icon = GFX_goal_CRW_first_icon
+		x = 4
+		y = 5
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = {
+        focus = IZM_National_Security    
+        }
+        prerequisite = {
+        focus = IZM_Search_Enver    
+        }
+		select_effect = {
+		}
+		completion_reward = {
+		
+        }
+	}
+
+    focus = {
+		id = IZM_Find_Atsiz
+		icon = GFX_goal_CRW_first_icon
+		x = 5
+		y = 6
+		cost = 3
+		ai_will_do = {
+			factor = 80	
+		}
+        prerequisite = {
+        focus = IZM_Purge_Reformists    
+        }
+        prerequisite = {
+        focus = IZM_Ataturk_Cult    
+        }
+		select_effect = {
+		}
+		completion_reward = {
+		
+        }
+	}
+
+
+}
