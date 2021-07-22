@@ -73,6 +73,9 @@ ideologies = {
 			baathism = {
 			                    can_be_randomly_selected = no
 			}
+			mdd_kemalism = {
+			                    can_be_randomly_selected = no
+			}
 
 		}
 		
@@ -420,6 +423,10 @@ ideologies = {
 			}
 
 			natsoc_heydrich = {
+			       can_be_randomly_selected = no
+			}
+
+			white_supremacy = {
 			       can_be_randomly_selected = no
 			}
 		}
