@@ -58,6 +58,7 @@ TUR_unification_category = {
         }
         hidden_effect = {
         set_country_flag = unification_ataturk
+	set_global_flag = turkey_civilwar_over
         news_event = { id = news.11 }    
         }   
         }
@@ -101,7 +102,8 @@ TUR_unification_category = {
         add_ideas = Atsiz_New_Regime
         add_ideas = Atsiz_Discontent_Army
         add_ideas = Atsiz_Strong_Milita    
-        hidden_effect = {  
+        hidden_effect = {
+	set_global_flag = turkey_civilwar_over  
         set_country_flag = unification_atsiz
         news_event = { id = news.13 }
         }    
@@ -137,6 +139,7 @@ TUR_unification_category = {
         has_government = conservative
         }  
         complete_effect = {
+	set_global_flag = turkey_civilwar_over
         set_cosmetic_tag = WRF_Democrat
         load_focus_tree = wrf_democrat_tree       
         }
@@ -178,6 +181,7 @@ TUR_unification_category = {
         add_ideas = Enver_unification_idea_1 
         load_focus_tree = enver2_tree   
         hidden_effect = {
+	set_global_flag = turkey_civilwar_over
         set_cosmetic_tag = CIB_Enver
         news_event = { id = news.12 }    
         }
@@ -222,6 +226,7 @@ TUR_unification_category = {
         set_cosmetic_tag = CIB_Samet
         load_focus_tree = samet_tree
         hidden_effect = {
+	    set_global_flag = turkey_civilwar_over
             set_country_flag = unification_samet
             news_event = { id = news.15 }
         }
@@ -266,6 +271,7 @@ TUR_unification_category = {
         custom_effect_tooltip = ANT_unif_focus_tt
         load_focus_tree = ethem_unified_tree
         hidden_effect = {
+		set_global_flag = turkey_civilwar_over
             set_country_flag = unification_ethem
             news_event = { id = news.15 }
         }
@@ -328,6 +334,7 @@ TUR_unification_category = {
         custom_effect_tooltip = ANT_unif_focus_tt
         load_focus_tree = nazim_tree
         hidden_effect = {
+	    set_global_flag = turkey_civilwar_over
             set_country_flag = unification_nazim
         }
         IZM = {
@@ -454,7 +461,8 @@ TUR_unification_category = {
         add_state_core = 349
         add_state_core = 797
         } 
-		hidden_effect = {
+	hidden_effect = {
+	    set_global_flag = turkey_civilwar_over
             set_country_flag = unification_ulema
             news_event = { id = news.15 }
         }

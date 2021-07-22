@@ -80,6 +80,11 @@ RussianWars_idea = {
 turkey_brother_war_idea = {
 	on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_brother_war" }
 	picture = brother_war
+	allowed = {
+		NOT = {
+			has_global_flag = turkey_civilwar_over
+		}
+	}
 	modifier = {
 		ai_focus_aggressive_factor = 0.25
 		army_attack_factor = -0.1
