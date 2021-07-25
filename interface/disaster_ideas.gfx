@@ -583,5 +583,21 @@ spriteType = {
 spriteType = {
 		name = "GFX_idea_NGU_propaganda"
 		texturefile = "gfx/interface/ideas/NGU_propaganda.png"
+	}
+spriteType = {
+		name = "GFX_idea_IZM_ethem"
+		texturefile = "gfx/interface/ideas/IZM_ethem.png"
+	}
+spriteType = {
+		name = "GFX_idea_IZM_RedArmy"
+		texturefile = "gfx/interface/ideas/IZM_RedArmy.png"
+	}
+spriteType = {
+		name = "GFX_idea_IZM_Crook"
+		texturefile = "gfx/interface/ideas/IZM_Crook.png"
+	}
+spriteType = {
+		name = "GFX_idea_IZM_MLK"
+		texturefile = "gfx/interface/ideas/IZM_MLK.png"
 	}	
 }	
