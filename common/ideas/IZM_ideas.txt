@@ -277,6 +277,152 @@ IZM_Nation_Mentality3 = {
 			stability_factor = 0.14
 			stability_weekly = 0.0005
 			}
-		}																																		
+		}
+#ite
+IZM_Crooked_Arrows = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IZM_to_liberation_idea" }
+			picture = ANT_Warlords_Emerging
+			modifier = {
+			stability_factor = -0.30
+			war_support_factor = -0.30
+			stability_weekly = -0.0005
+			army_org_factor = -0.05
+			production_speed_buildings_factor = -0.20
+			}
+		}
+IZM_Reactionaries = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IZM_to_liberation_idea" }
+			picture = ANT_Warlords_Emerging
+			modifier = {
+			stability_factor = -0.20
+			conscription = -0.05
+			}
+		}
+IZM_Reactionaries_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IZM_to_liberation_idea" }
+			picture = ANT_Warlords_Emerging
+			modifier = {
+			stability_factor = -0.10
+			conscription = -0.03
+			}
+		}
+IZM_Reactionaries_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IZM_to_liberation_idea" }
+			picture = ANT_Warlords_Emerging
+			modifier = {
+			stability_factor = -0.05
+			conscription = -0.02
+			}
+		}
+IZM_Proletarian_State = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IZM_to_liberation_idea" }
+			picture = ANT_Warlords_Emerging
+			modifier = {
+			production_speed_buildings_factor = 0.20
+			production_factory_max_efficiency_factor = 0.20
+			consumer_goods_factor = -0.15
+			army_defence_factor = 0.05
+			recruitable_population = 0.02
+			production_factory_start_efficiency_factor = 0.15 
+			production_speed_buildings_factor = 0.15
+			war_support_weekly = 0.005
+			defensive_war_stability_factor = 0.05
+			}
+		}
+
+IZM_MLK = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IZM_to_liberation_idea" }
+			picture = ANT_Warlords_Emerging
+			modifier = {
+			production_speed_buildings_factor = 0.25
+			production_factory_max_efficiency_factor = 0.25
+			consumer_goods_factor = -0.20
+			army_defence_factor = 0.10
+			recruitable_population = 0.05
+			production_factory_start_efficiency_factor = 0.15 
+			production_speed_buildings_factor = 0.15
+			war_support_weekly = 0.010
+			defensive_war_stability_factor = 0.15
+			stability_weekly = 0.0002
+			}
+		}		
+			IZM_labors = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IZM_to_liberation_idea" }
+			picture = ANT_Warlords_Emerging
+			cancel  = {
+			IZM = {
+			has_country_flag = Roatta_Warlord	
+			}		
+			}
+			modifier = {
+			conscription = 0.02
+			army_attack_factor = 0.05
+			attrition = -0.02
+			}
+			}								
+IZM_Crooked_Arrows_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IZM_to_liberation_idea" }
+			picture = ANT_Warlords_Emerging
+			modifier = {
+			stability_factor = -0.20
+			war_support_factor = -0.25
+			army_org_factor = -0.05
+			production_speed_buildings_factor = -0.10
+			}
+		}
+IZM_Crooked_Arrows_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IZM_to_liberation_idea" }
+			picture = ANT_Warlords_Emerging
+			modifier = {
+			stability_factor = -0.15
+			war_support_factor = -0.15
+			production_speed_buildings_factor = -0.04
+			}
+		}
+IZM_Crooked_Arrows_4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IZM_to_liberation_idea" }
+			picture = ANT_Warlords_Emerging
+			modifier = {
+			stability_factor = -0.10
+			war_support_factor = -0.10
+			production_speed_buildings_factor = -0.02
+			}
+		}
+IZM_Crooked_Arrows_6 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IZM_to_liberation_idea" }
+			picture = ANT_Warlords_Emerging
+			modifier = {
+			stability_factor = 0.10
+			war_support_factor = 0.10
+			army_org_factor = 0.05
+			production_speed_buildings_factor = 0.05
+			}
+		}
+IZM_Segregation_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IZM_to_liberation_idea" }
+			picture = ANT_Warlords_Emerging
+			modifier = {
+			stability_factor = -0.15
+			political_power_gain = 0.010
+			}
+		}
+IZM_Human_Rights_None = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IZM_to_liberation_idea" }
+			picture = ANT_Warlords_Emerging
+			modifier = {
+			stability_factor = -0.10
+			monthly_population = -0.05
+			}
+		}
+IZM_tsk_vs_tkk_4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IZM_red_legion" }
+			picture = ANT_Warlords_Emerging
+			modifier = {
+			army_attack_factor = 0.05	
+			army_morale_factor = 0.05
+			army_org_factor = 0.05
+			war_support_factor = 0.15
+			}
+		}																																																					
 }
 }

@@ -611,6 +611,7 @@ country_event = { #heynig
         transfer_state = 367
         transfer_state = 370
         transfer_state = 372
+		transfer_state = 373
         transfer_state = 368
         transfer_state = 374
         transfer_state = 369
@@ -623,6 +624,7 @@ country_event = { #heynig
         target = NAF
         type = annex_everything
         }
+		load_oob = KKK_oob
         }
         NAF = {
         transfer_state = 364
@@ -634,6 +636,7 @@ country_event = { #heynig
         add_state_core = 368
         add_state_core = 365
         add_state_core = 364
+		load_oob = NAF_oob
         }
         USF = {
         transfer_state = 362
