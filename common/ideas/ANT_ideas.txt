@@ -205,7 +205,7 @@ ANT_Warlords_Emerging = {
 ####fuller
 SKL_untolerative_society = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
-			picture = ANT_Warlords_Emerging
+			picture = martial_law
 			modifier = {
 			army_morale_factor = 0.10
 			stability_factor = -0.10
@@ -214,7 +214,7 @@ SKL_untolerative_society = {
 		}
 SKL_black_army = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
-			picture = ANT_Warlords_Emerging
+			picture = CIB_OrduVatan
 			modifier = {
 			experience_gain_army = 0.1
 			stability_factor = -0.10
@@ -225,7 +225,7 @@ SKL_black_army = {
 		}
 SKL_guerillas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
-			picture = ANT_Warlords_Emerging
+			picture = TIT_Turkish_Discontent
 			modifier = {
 			stability_factor = -0.15
 			conscription = -0.02
@@ -235,7 +235,7 @@ SKL_guerillas = {
 #ankara
 ANK_kuvayimilliye = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
-			picture = ANT_Warlords_Emerging
+			picture = TIT_Turkish_Discontent
 			cancel  = {
 			ANK = {
 			has_country_flag = Roatta_Warlord	
@@ -248,7 +248,7 @@ ANK_kuvayimilliye = {
 		}
 ANT_fuller_gas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
-			picture = ANT_Warlords_Emerging
+			picture = brother_war
 			cancel  = {
 			ANK = {
 			has_country_flag = Roatta_Warlord	
@@ -261,7 +261,7 @@ ANT_fuller_gas = {
 		}			
 ANK_greygloves = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
-			picture = ANT_Warlords_Emerging
+			picture = junker_rule
 			cancel  = {
 			ANK = {
 			has_country_flag = Roatta_Warlord	
