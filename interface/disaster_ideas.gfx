@@ -522,4 +522,66 @@ spriteTypes = {
 		name = "GFX_idea_brother_war"
 		texturefile = "gfx/interface/ideas/brother_war.png"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_NGU_Thule_Idear"
+		texturefile = "gfx/interface/ideas/NGU_Thule_Idea.png"
+	}
+		spriteType = {
+		name = "GFX_idea_NGU_Knights"
+		texturefile = "gfx/interface/ideas/NGU_Knights.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_NGU_Race"
+		texturefile = "gfx/interface/ideas/NGU_Race.png"
+	}
+	spriteType = {
+		name = "GFX_idea_NGU_Hitleryouth"
+		texturefile = "gfx/interface/ideas/NGU_Hitleryouth.png"
+	}
+spriteType = {
+		name = "GFX_idea_NGU_problem_ideology"
+		texturefile = "gfx/interface/ideas/NGU_problem_ideology.png"
+	}
+spriteType = {
+		name = "GFX_idea_NGU_Economics"
+		texturefile = "gfx/interface/ideas/NGU_Economics.png"
+	}
+spriteType = {
+		name = "GFX_idea_NGU_NAD"
+		texturefile = "gfx/interface/ideas/NGU_NAD.png"
+	}
+spriteType = {
+		name = "GFX_idea_NGU_NATSOC2"
+		texturefile = "gfx/interface/ideas/NGU_NATSOC2.png"
+	}
+spriteType = {
+		name = "GFX_idea_NGU_Strasserist"
+		texturefile = "gfx/interface/ideas/NGU_Strasserist.png"
+	}
+spriteType = {
+		name = "GFX_idea_NGU_revolution"
+		texturefile = "gfx/interface/ideas/NGU_revolution.png"
+	}
+spriteType = {
+		name = "GFX_idea_NGU_Academy"
+		texturefile = "gfx/interface/ideas/NGU_Academy.png"
+	}
+spriteType = {
+		name = "GFX_idea_NGU_Unser"
+		texturefile = "gfx/interface/ideas/NGU_Unser.png"
+	}
+spriteType = {
+		name = "GFX_idea_NGU_Blood"
+		texturefile = "gfx/interface/ideas/NGU_Blood.png"
+	}
+spriteType = {
+		name = "GFX_idea_NGU_Degen"
+		texturefile = "gfx/interface/ideas/NGU_Degen.png"
+	}
+spriteType = {
+		name = "GFX_idea_NGU_propaganda"
+		texturefile = "gfx/interface/ideas/NGU_propaganda.png"
+	}	
 }	
