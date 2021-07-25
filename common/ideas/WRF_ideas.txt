@@ -114,7 +114,7 @@ WRF_Tekalif_Vatan = {
 		}
 WRF_Statism_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = WRF_Tekalif
+			#picture = industrial_support
 			cancel  = {
 			WRF = {
 			has_country_flag = Roatta_Warlord	
@@ -128,7 +128,7 @@ WRF_Statism_idea = {
 		}		
 WRF_Ajan_Antalya = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = WRF_Tekalif
+			#picture = empower_abwehr
 			cancel  = {
 			WRF = {
 			has_country_flag = Roatta_Warlord	
@@ -144,7 +144,7 @@ WRF_Ajan_Antalya = {
 
 WRF_atsiz_motive = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = WRF_Tekalif
+			#picture = martial_law
 			cancel  = {
 			WRF = {
 			has_country_flag = Roatta_Warlord	
@@ -172,7 +172,7 @@ WRF_For_All_Brothers = {
 		}
 WRF_Ataturk_Reforms_1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = WRF_Tekalif
+			#picture = NGU_Academy
 			modifier = {
 			stability_factor = 0.1
 			stability_weekly = 0.005
@@ -181,7 +181,7 @@ WRF_Ataturk_Reforms_1 = {
 		}				
 WRF_Ataturk_Reforms_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = WRF_Tekalif
+			#picture = NGU_Academy
 			modifier = {
 			stability_factor = 0.15
 			stability_weekly = 0.007
@@ -190,7 +190,7 @@ WRF_Ataturk_Reforms_2 = {
 		}
 WRF_Ataturk_Reforms_3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = WRF_Tekalif
+			#picture = NGU_Academy
 			modifier = {
 			stability_factor = 0.20
 			stability_weekly = 0.009
@@ -199,7 +199,7 @@ WRF_Ataturk_Reforms_3 = {
 		}						
 WRF_Enverist_Problem = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = WRF_Tekalif
+			#picture = CIB_Enver
 			modifier = {
 			stability_factor = -0.10
 			land_reinforce_rate = -0.03
@@ -209,7 +209,7 @@ WRF_Enverist_Problem = {
 		}						
 WRF_Minority_Problem = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = WRF_Tekalif
+			#picture = ANT_Slave_Unrest
 			modifier = {
 			stability_factor = -0.10
 			conscription = -0.01
@@ -219,7 +219,7 @@ WRF_Minority_Problem = {
 		}
 WRF_TSK_New = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = WRF_Tekalif
+			#picture = THR_Ismet_Army
 			modifier = {
 			war_support_factor = 0.10
 			conscription = 0.02

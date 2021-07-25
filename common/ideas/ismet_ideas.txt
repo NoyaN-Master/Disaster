@@ -3,7 +3,7 @@ ideas = {
 country = {
 WRF_Ataturk_Heir_1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = WRF_Tekalif
+			#picture = TUR_Struggle_Front
 			modifier = {
 			stability_factor = -0.20
 			stability_weekly = -0.009
@@ -12,7 +12,7 @@ WRF_Ataturk_Heir_1 = {
 		}
 WRF_Economyfervor = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = WRF_Tekalif
+			#picture = readying_war_economy
 			modifier = {
 			civilian_factory_use = -3
 			industrial_capacity_factory = 0.3
@@ -21,7 +21,7 @@ WRF_Economyfervor = {
 		}		
 WRF_Village_Institute = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = WRF_Tekalif
+			#picture = NGU_Academy
 			modifier = {
 			research_speed_factor = 0.10
 			stability_factor = -0.09
@@ -30,7 +30,7 @@ WRF_Village_Institute = {
 		}
 WRF_Ataturk_Heir_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = WRF_Tekalif
+			#picture = TUR_Struggle_Front
 			modifier = {
 			stability_factor = -0.15
 			stability_weekly = -0.007
@@ -39,7 +39,7 @@ WRF_Ataturk_Heir_2 = {
 		}
 WRF_Ataturk_Heir_3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = WRF_Tekalif
+			#picture = TUR_Struggle_Front
 			modifier = {
 			stability_factor = -0.07
 			stability_weekly = -0.004
@@ -50,14 +50,14 @@ WRF_Ataturk_Heir_3 = {
 		}
 WRF_Kemalist_Cult = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = WRF_Tekalif
+			#picture = WRF_Kemal_Army
 			modifier = {
 			stability_factor = 0.03
 			}
 		}
 WRF_Kemalist_Cult_Army = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = WRF_Tekalif
+			#picture = WRF_Kemal_Army
 			modifier = {
 			stability_factor = 0.05
 			land_reinforce_rate = 0.1
@@ -66,7 +66,7 @@ WRF_Kemalist_Cult_Army = {
 		}		
 WRF_Auth_Outrage = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = WRF_Tekalif
+			#picture = ANT_Anarchy
 			modifier = {
 			stability_factor = -0.10
 			political_power_gain = -0.15
@@ -75,7 +75,7 @@ WRF_Auth_Outrage = {
 		}
 WRF_Land_Reform = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = WRF_Tekalif
+			#picture = LBA_Highway
 			modifier = {
 			production_factory_start_efficiency_factor = 0.15
 			consumer_goods_factor = -0.03
@@ -84,7 +84,7 @@ WRF_Land_Reform = {
 		}
 WRF_Iron_Democracy_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = WRF_Tekalif
+			#picture = GOK_intellectual_caste
 			modifier = {
 			stability_factor = 0.05
 			conservative_drift = 0.10
@@ -94,7 +94,7 @@ WRF_Iron_Democracy_idea = {
 		}
 WRF_Iron_Democracy_Empower = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = WRF_Tekalif
+			#picture = GOK_intellectual_caste
 			modifier = {
 			stability_factor = -0.05
 			conservative_drift = 0.15
@@ -105,7 +105,7 @@ WRF_Iron_Democracy_Empower = {
 		}
 WRF_Iron_Democracy_Senate = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = WRF_Tekalif
+			#picture = GOK_intellectual_caste
 			modifier = {
 			stability_factor = 0.10
 			conservative_drift = -0.15

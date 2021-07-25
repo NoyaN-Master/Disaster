@@ -3,7 +3,7 @@ ideas = {
 country = {
  PAL_Duel_Fate = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Duel_Fate" }
-			picture = CRW_Independent_City
+			picture = modern_army
 			modifier = {
             war_support_factor = 0.50
             stability_factor = 0.15
@@ -40,7 +40,7 @@ country = {
 		}	  	      
 ISL_Duel_Fate = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISL_Duel_Fate" }
-			picture = CRW_Independent_City
+			picture = modern_army
 			modifier = {
             war_support_factor = 0.50
             stability_factor = 0.15

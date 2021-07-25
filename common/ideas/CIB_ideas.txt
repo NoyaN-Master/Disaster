@@ -106,7 +106,7 @@ CIB_Enver_Idea = {
 		}			
 samet_admin_1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
-			picture = CIB_OrduVatan
+			picture = IZM_Crook
 			modifier = {
 			army_morale_factor = -0.1
 			stability_weekly = -0.005
@@ -118,7 +118,7 @@ samet_admin_1 = {
 		}
 samet_admin_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
-			picture = CIB_OrduVatan
+			picture = IZM_Crook
 			modifier = {
 			army_morale_factor = -0.05	
 			stability_weekly = -0.002
@@ -130,7 +130,7 @@ samet_admin_2 = {
 		}
 samet_admin_3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
-			picture = CIB_OrduVatan
+			picture = IZM_Crook
 			modifier = {
 			stability_weekly = 0.002
 			political_power_gain = 0.02
@@ -141,7 +141,7 @@ samet_admin_3 = {
 		}				
 samet_new_army = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
-			picture = CIB_OrduVatan
+			picture = IZM_RedArmy
 			modifier = {
 			army_attack_factor = 0.03
 			army_defence_factor = 0.03
@@ -153,7 +153,7 @@ samet_new_army = {
 		}
 samet_enverist_threat = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
-			picture = CIB_OrduVatan
+			picture = IZM_RedArmy
 			modifier = {
 			war_support_factor = -0.3
 			resistance_damage_to_garrison_on_our_occupied_states = -0.7
@@ -162,7 +162,7 @@ samet_enverist_threat = {
 		}
 samet_enverist_threat_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
-			picture = CIB_OrduVatan
+			picture = IZM_RedArmy
 			modifier = {
 			war_support_factor = -0.15
 			resistance_damage_to_garrison_on_our_occupied_states = -0.5
@@ -171,7 +171,7 @@ samet_enverist_threat_2 = {
 		}
 samet_enverist_threat_3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
-			picture = CIB_OrduVatan
+			picture = IZM_RedArmy
 			modifier = {
 			war_support_factor = -0.05
 			resistance_damage_to_garrison_on_our_occupied_states = -0.3
@@ -181,7 +181,7 @@ samet_enverist_threat_3 = {
 
 samet_authsoc_liberty = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
-			picture = CIB_OrduVatan
+			picture = IZM_Crook
 			modifier = {
 			political_power_gain = -0.10
 			stability_factor = 0.10
@@ -190,7 +190,7 @@ samet_authsoc_liberty = {
 
 samet_ultnat_liberty = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
-			picture = CIB_OrduVatan
+			picture = IZM_Crook
 			modifier = {
 			political_power_gain = 0.10
 			stability_factor = -0.10
@@ -199,7 +199,7 @@ samet_ultnat_liberty = {
 
 CIB_Back_In_Black = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
-			picture = CIB_OrduVatan
+			picture = CIB_Enver_Idea
 			modifier = {
 			army_attack_factor = 0.05
 			army_defence_factor = 0.05	

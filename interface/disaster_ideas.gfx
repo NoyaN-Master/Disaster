@@ -529,75 +529,79 @@ spriteTypes = {
 	}
 		spriteType = {
 		name = "GFX_idea_NGU_Knights"
-		texturefile = "gfx/interface/ideas/NGU_Knights.png"
+		texturefile = "gfx/interface/ideas/NGU_Knights.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_idea_NGU_Race"
-		texturefile = "gfx/interface/ideas/NGU_Race.png"
+		texturefile = "gfx/interface/ideas/NGU_Race.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_NGU_Hitleryouth"
-		texturefile = "gfx/interface/ideas/NGU_Hitleryouth.png"
+		texturefile = "gfx/interface/ideas/NGU_Hitleryouth.dds"
 	}
 spriteType = {
 		name = "GFX_idea_NGU_problem_ideology"
-		texturefile = "gfx/interface/ideas/NGU_problem_ideology.png"
+		texturefile = "gfx/interface/ideas/NGU_problem_ideology.dds"
 	}
 spriteType = {
 		name = "GFX_idea_NGU_Economics"
-		texturefile = "gfx/interface/ideas/NGU_Economics.png"
+		texturefile = "gfx/interface/ideas/NGU_Economics.dds"
 	}
 spriteType = {
+		name = "GFX_idea_NGU_paramilitary_problem"
+		texturefile = "gfx/interface/ideas/NGU_paramilitary_problem.dds"
+	}	
+spriteType = {
 		name = "GFX_idea_NGU_NAD"
-		texturefile = "gfx/interface/ideas/NGU_NAD.png"
+		texturefile = "gfx/interface/ideas/NGU_NAD.dds"
 	}
 spriteType = {
 		name = "GFX_idea_NGU_NATSOC2"
-		texturefile = "gfx/interface/ideas/NGU_NATSOC2.png"
+		texturefile = "gfx/interface/ideas/NGU_NATSOC2.dds"
 	}
 spriteType = {
 		name = "GFX_idea_NGU_Strasserist"
-		texturefile = "gfx/interface/ideas/NGU_Strasserist.png"
+		texturefile = "gfx/interface/ideas/NGU_Strasserist.dds"
 	}
 spriteType = {
 		name = "GFX_idea_NGU_revolution"
-		texturefile = "gfx/interface/ideas/NGU_revolution.png"
+		texturefile = "gfx/interface/ideas/NGU_revolution.dds"
 	}
 spriteType = {
 		name = "GFX_idea_NGU_Academy"
-		texturefile = "gfx/interface/ideas/NGU_Academy.png"
+		texturefile = "gfx/interface/ideas/NGU_Academy.dds"
 	}
 spriteType = {
 		name = "GFX_idea_NGU_Unser"
-		texturefile = "gfx/interface/ideas/NGU_Unser.png"
+		texturefile = "gfx/interface/ideas/NGU_Unser.dds"
 	}
 spriteType = {
 		name = "GFX_idea_NGU_Blood"
-		texturefile = "gfx/interface/ideas/NGU_Blood.png"
+		texturefile = "gfx/interface/ideas/NGU_Blood.dds"
 	}
 spriteType = {
 		name = "GFX_idea_NGU_Degen"
-		texturefile = "gfx/interface/ideas/NGU_Degen.png"
+		texturefile = "gfx/interface/ideas/NGU_Degen.dds"
 	}
 spriteType = {
 		name = "GFX_idea_NGU_propaganda"
-		texturefile = "gfx/interface/ideas/NGU_propaganda.png"
+		texturefile = "gfx/interface/ideas/NGU_propaganda.dds"
 	}
 spriteType = {
 		name = "GFX_idea_IZM_ethem"
-		texturefile = "gfx/interface/ideas/IZM_ethem.png"
+		texturefile = "gfx/interface/ideas/IZM_ethem.dds"
 	}
 spriteType = {
 		name = "GFX_idea_IZM_RedArmy"
-		texturefile = "gfx/interface/ideas/IZM_RedArmy.png"
+		texturefile = "gfx/interface/ideas/IZM_RedArmy.dds"
 	}
 spriteType = {
 		name = "GFX_idea_IZM_Crook"
-		texturefile = "gfx/interface/ideas/IZM_Crook.png"
+		texturefile = "gfx/interface/ideas/IZM_Crook.dds"
 	}
 spriteType = {
 		name = "GFX_idea_IZM_MLK"
-		texturefile = "gfx/interface/ideas/IZM_MLK.png"
+		texturefile = "gfx/interface/ideas/IZM_MLK.dds"
 	}	
 }	

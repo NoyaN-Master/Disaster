@@ -4,7 +4,7 @@ country = {
 
 Enver_unification_idea_1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
-			picture = CIB_OrduVatan
+			picture = national_solidarity
 			modifier = {
 			army_attack_factor = -0.10
 			army_defence_factor = -0.10	
@@ -17,7 +17,7 @@ Enver_unification_idea_1 = {
 
 Enver_unification_idea_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
-			picture = CIB_OrduVatan
+			picture = national_solidarity
 			modifier = {
 			army_attack_factor = -0.08
 			army_defence_factor = -0.08	
@@ -30,7 +30,7 @@ Enver_unification_idea_2 = {
 
 Enver_unification_idea_3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
-			picture = CIB_OrduVatan
+			picture = national_solidarity
 			modifier = {
 			army_attack_factor = -0.07
 			army_defence_factor = -0.07	
@@ -43,7 +43,7 @@ Enver_unification_idea_3 = {
 
 Enver_unification_idea_4 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
-			picture = CIB_OrduVatan
+			picture = national_solidarity
 			modifier = {
 			army_attack_factor = -0.06
 			army_defence_factor = -0.07	
@@ -57,7 +57,7 @@ Enver_unification_idea_4 = {
 
 Enver_unification_idea_5 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
-			picture = CIB_OrduVatan
+			picture = national_solidarity
 			modifier = {
 			army_attack_factor = -0.06
 			army_defence_factor = -0.05	
@@ -71,7 +71,7 @@ Enver_unification_idea_5 = {
 
 Enver_unification_idea_6 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
-			picture = CIB_OrduVatan
+			picture = national_solidarity
 			modifier = {
 			army_attack_factor = -0.04
 			army_defence_factor = -0.04	
@@ -85,7 +85,7 @@ Enver_unification_idea_6 = {
 
 Enver_unification_idea_7 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
-			picture = CIB_OrduVatan
+			picture = national_solidarity
 			modifier = {
 			army_attack_factor = -0.03
 			army_defence_factor = -0.03	
@@ -99,7 +99,7 @@ Enver_unification_idea_7 = {
 
 Enver_unification_idea_8 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
-			picture = CIB_OrduVatan
+			picture = national_solidarity
 			modifier = {
 			army_attack_factor = -0.03
 			army_defence_factor = -0.02	
@@ -113,7 +113,7 @@ Enver_unification_idea_8 = {
 
 Enver_unification_idea_9 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
-			picture = CIB_OrduVatan
+			picture = national_solidarity
 			modifier = {
 			army_attack_factor = -0.02
 			army_defence_factor = -0.02	
@@ -127,7 +127,7 @@ Enver_unification_idea_9 = {
 
 Enver_unification_idea_10 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
-			picture = CIB_OrduVatan
+			picture = national_solidarity
 			modifier = {
 			stability_weekly = -0.001
 			political_power_gain = -0.01
@@ -140,7 +140,7 @@ Enver_unification_idea_10 = {
 
 Enver_unification_idea_11 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
-			picture = CIB_OrduVatan
+			picture = national_solidarity
 			modifier = {
 			political_power_gain = -0.01
 			stability_factor = -0.10
@@ -151,7 +151,7 @@ Enver_unification_idea_11 = {
 
 Enver_unification_idea_12 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
-			picture = CIB_OrduVatan
+			picture = national_solidarity
 			modifier = {
 			stability_factor = -0.05
 			war_support_factor = -0.05

@@ -2,7 +2,7 @@ ideas = {
 country = {
 SRF_Anti_Muslim_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
-			picture = discontent
+			picture = modern_army
             stability_factor = -0.05    
 			targeted_modifier = {
 			tag = MTR attack_bonus_against = 0.10 	
@@ -10,7 +10,7 @@ SRF_Anti_Muslim_idea = {
 		}
 SRF_National_War = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
-			picture = discontent
+			picture = NGU_revolution
             war_support_factor = 0.20
 			conscription = 0.02    
 			targeted_modifier = {
@@ -19,7 +19,7 @@ SRF_National_War = {
 		}		
  GEO_organization = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
-			picture = discontent
+			picture = modern_army
 			modifier = {
             stability_factor = -0.15
             conscription = -0.02
@@ -28,7 +28,7 @@ SRF_National_War = {
 		}
 SRF_Ortohdoxy = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
-			picture = discontent
+			picture = zonguldak_mines_idea
 			modifier = {
             stability_factor = 0.10
             army_core_defence_factor = 0.1

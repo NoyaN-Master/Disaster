@@ -4,7 +4,7 @@ country = {
 
 OTH_racial_brotherhood_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRA_Repress_Integralists" }
-			picture = GFX_idea_unknown
+			picture = warlord_idea
 			modifier = {
 			stability_factor = 0.10
             stability_weekly = 0.002
@@ -13,7 +13,7 @@ OTH_racial_brotherhood_idea = {
 			}
 OTH_racial_brotherhood_idea_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRA_Repress_Integralists" }
-			picture = GFX_idea_unknown
+			picture = warlord_idea
 			modifier = {
 			stability_factor = 0.15
             stability_weekly = 0.005
@@ -22,7 +22,7 @@ OTH_racial_brotherhood_idea_2 = {
 			}					
 OTH_internal_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRA_Repress_Integralists" }
-			picture = GFX_idea_unknown
+			picture = controlled_opposition
 			modifier = {
 			production_factory_max_efficiency_factor = 0.52
 			industrial_capacity_factory = 0.2
@@ -31,7 +31,7 @@ OTH_internal_idea = {
 			}			
 OTH_MSF = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRA_Repress_Integralists" }
-			picture = GFX_idea_unknown
+			picture = junker_rule
 			modifier = {
 			war_support_factor = 0.10
             send_volunteer_divisions_required = -0.3
@@ -41,7 +41,7 @@ OTH_MSF = {
 			}
 OTH_MSF_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRA_Repress_Integralists" }
-			picture = GFX_idea_unknown
+			picture = junker_rule
 			modifier = {
 			war_support_factor = 0.10
             send_volunteer_divisions_required = -0.3
@@ -52,7 +52,7 @@ OTH_MSF_2 = {
 			}
 OTH_MSF_last = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRA_Repress_Integralists" }
-			picture = GFX_idea_unknown
+			picture = junker_rule
 			modifier = {
 			war_support_factor = 0.20
             send_volunteer_divisions_required = -0.3

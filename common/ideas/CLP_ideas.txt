@@ -3,7 +3,7 @@ ideas = {
 country = {
 CLP_realm_of_islam = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
-			picture = TUR_Struggle_Front
+			picture = CLP_realm_of_islam
 			cancel  = {
 			WRF = {
 			has_country_flag = Roatta_Warlord	
@@ -17,7 +17,7 @@ CLP_realm_of_islam = {
 		}
 CLP_no_authority = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CLP_no_authority" }
-			picture = TUR_Struggle_Front
+			picture = CRW_Unrest
 			cancel  = {
 			WRF = {
 			has_country_flag = Roatta_Warlord	
@@ -34,7 +34,7 @@ CLP_no_authority = {
 		}
 CLP_ulema_authority = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CLP_ulema_authority" }
-			picture = TUR_Struggle_Front
+			picture = CLP_realm_of_islam
 			cancel  = {
 			WRF = {
 			has_country_flag = Roatta_Warlord	
@@ -50,7 +50,7 @@ CLP_ulema_authority = {
 		}												
 CLP_fundementalism_high = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CLP_fundementalism_high" }
-			picture = TUR_Struggle_Front
+			picture = CRW_Unrest
 			cancel  = {
 			WRF = {
 			has_country_flag = Roatta_Warlord	
@@ -66,7 +66,7 @@ CLP_fundementalism_high = {
 		}										
 CLP_never_fail = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CLP_never_fail" }
-			picture = TUR_Struggle_Front
+			picture = CIB_OrduVatan
 			cancel  = {
 			WRF = {
 			has_country_flag = Roatta_Warlord	
@@ -80,7 +80,7 @@ CLP_never_fail = {
 		}										
 CLP_Imperial_Army1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
-			picture = TUR_Struggle_Front
+			picture = junker_rule
 			cancel  = {
 			WRF = {
 			has_country_flag = Roatta_Warlord	
@@ -94,7 +94,7 @@ CLP_Imperial_Army1 = {
 		}
 CLP_Imperial_Army2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
-			picture = TUR_Struggle_Front
+			picture = junker_rule
 			cancel  = {
 			WRF = {
 			has_country_flag = Roatta_Warlord	
@@ -109,14 +109,14 @@ CLP_Imperial_Army2 = {
 		}
 CLP_Fast_Hizir = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
-			picture = TUR_Struggle_Front
+			picture = junker_rule
 			modifier = {
 			army_speed_factor = 0.15
 			}
 		}				
 CLP_Imperial_Army3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
-			picture = TUR_Struggle_Front
+			picture = junker_rule
 			cancel  = {
 			WRF = {
 			has_country_flag = Roatta_Warlord	
@@ -132,7 +132,7 @@ CLP_Imperial_Army3 = {
 		}
 CLP_Imperial_Army4 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
-			picture = TUR_Struggle_Front
+			picture = junker_rule
 			cancel  = {
 			WRF = {
 			has_country_flag = Roatta_Warlord	
@@ -150,7 +150,7 @@ CLP_Imperial_Army4 = {
 		}
 CLP_Imperial_Army_Takbir = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
-			picture = TUR_Struggle_Front
+			picture = junker_rule
 			cancel  = {
 			WRF = {
 			has_country_flag = Roatta_Warlord	
@@ -168,7 +168,7 @@ CLP_Imperial_Army_Takbir = {
 		}																																														
 CLP_national_orders = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
-			picture = TUR_Struggle_Front
+			picture = empowered_reichstag
 			cancel  = {
 			WRF = {
 			has_country_flag = Roatta_Warlord	
@@ -180,7 +180,7 @@ CLP_national_orders = {
 		}
 CLP_To_Jannah = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
-			picture = TUR_Struggle_Front
+			picture = CRW_Independent_City
 			cancel  = {
 			WRF = {
 			has_country_flag = Roatta_Warlord	
@@ -196,7 +196,7 @@ CLP_To_Jannah = {
 		}
 CLP_challenge_retards = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CLP_challenge_retards" }
-			picture = TUR_Struggle_Front
+			picture = CRW_Independent_City
 			cancel  = {
 			WRF = {
 			has_country_flag = Roatta_Warlord	
