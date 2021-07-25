@@ -41,5 +41,44 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/wrf_atsiz.dds"
 	} 
 	
+	spriteType = {
+		name = "GFX_news_event_020"
+		texturefile = "gfx/event_pictures/news_event_020.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_020"
+		texturefile = "gfx/event_pictures/news_event_020.dds"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_news_event_bakuannex"
+		texturefile = "gfx/event_pictures/news_bakuannex.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_collapse"
+		texturefile = "gfx/event_pictures/news_collapse.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_caucasuswar"
+		texturefile = "gfx/event_pictures/news_caucasuswar.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_fullercoup"
+		texturefile = "gfx/event_pictures/news_fullercoup.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_istanbul"
+		texturefile = "gfx/event_pictures/news_istanbul.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_smyrna"
+		texturefile = "gfx/event_pictures/news_smyrna.dds"
+	}
 	
 }

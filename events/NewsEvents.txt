@@ -4,7 +4,7 @@ news_event = { #EnverVsArmenia
 	id = news.1
 	title = news.1.t
 	desc = news.1.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_caucasuswar
 	
 	major = yes
 	
@@ -21,7 +21,7 @@ news_event = { #AzerbaijanAnnex
 	id = news.2
 	title = news.2.t
 	desc = news.2.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_bakuannex
 	
 	major = yes
 	
@@ -38,7 +38,7 @@ news_event = { #ANT-FullerCoup
 	id = news.3
 	title = news.3.t
 	desc = news.3.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_fullercoup
 	
 	major = yes
 	
@@ -55,7 +55,7 @@ news_event = { #ANT-Collapse
 	id = news.4
 	title = news.4.t
 	desc = news.4.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_collapse
 	
 	major = yes
 	
@@ -72,7 +72,7 @@ news_event = { #WRFWar
 	id = news.5
 	title = news.5.t
 	desc = news.5.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_smyrna
 	
 	major = yes
 	
@@ -89,7 +89,7 @@ news_event = { #AtsizCoup
 	id = news.6
 	title = news.6.t
 	desc = news.6.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_turanist_ambition
 	
 	major = yes
 	
@@ -106,7 +106,7 @@ news_event = { #TachankaPact
 	id = news.7
 	title = news.7.t
 	desc = news.7.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_turanist_ambition
 	
 	major = yes
 	
@@ -123,7 +123,7 @@ news_event = { #WarriorsOfJudea
 	id = news.8
 	title = news.8.t
 	desc = news.8.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_turanist_ambition
 	
 	major = yes
 	
@@ -140,7 +140,7 @@ news_event = { #IstanbulAnnexed-Normal
 	id = news.9
 	title = news.9.t
 	desc = news.9.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_istanbul
 	
 	major = yes
 	
@@ -157,7 +157,7 @@ news_event = { #IstanbulAnnexed-Atsiz
 	id = news.10
 	title = news.10.t
 	desc = news.10.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_turanist_ambition
 	
 	major = yes
 	
@@ -174,7 +174,7 @@ news_event = { #Unification-Kemalist
 	id = news.11
 	title = news.11.t
 	desc = news.11.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_smyrna
 	
 	major = yes
 	
@@ -191,7 +191,7 @@ news_event = { #Unification-Enver
 	id = news.12
 	title = news.12.t
 	desc = news.12.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_038
 	
 	major = yes
 	
@@ -208,7 +208,7 @@ news_event = { #Unification-Atsiz
 	id = news.13
 	title = news.13.t
 	desc = news.13.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_turanist_ambition
 	
 	major = yes
 	
@@ -221,28 +221,11 @@ news_event = { #Unification-Atsiz
 
 }
 
-news_event = { #The Snow Massacre
-	id = news.15
-	title = news.15.t
-	desc = news.15.d
-	picture = GFX_news_event_001
-	
-	major = yes
-	
-	is_triggered_only = yes
-
-    option = {
-		name = news.15.a
-		
-    }
-
-}
-
 news_event = { #The Levantine War
 	id = news.16
 	title = news.16.t
 	desc = news.16.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_battle_for_the_bosporus
 	
 	major = yes
 	
@@ -259,7 +242,7 @@ news_event = { #PLA V
 	id = news.17
 	title = news.17.t
 	desc = news.17.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_battle_for_the_bosporus
 	
 	major = yes
 	
@@ -276,7 +259,7 @@ news_event = { #LEHI V
 	id = news.18
 	title = news.18.t
 	desc = news.18.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_battle_for_the_bosporus
 	
 	major = yes
 	
@@ -293,7 +276,7 @@ news_event = { #STALIN WAR I
 	id = news.19
 	title = news.19.t
 	desc = news.19.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_soldiers_marching
 	
 	major = yes
 	
@@ -310,7 +293,7 @@ news_event = { #SYRIANWAR I
 	id = news.20
 	title = news.20.t
 	desc = news.20.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_battle_for_the_bosporus
 	
 	major = yes
 	
@@ -327,7 +310,7 @@ news_event = { #ANARCHYWAR
 	id = news.21
 	title = news.21.t
 	desc = news.21.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_polish_resistance_warsaw
 	
 	major = yes
 	
@@ -343,7 +326,7 @@ news_event = { #RUSWAR
 	id = news.22
 	title = news.22.t
 	desc = news.22.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_006
 	
 	major = yes
 	
@@ -377,7 +360,7 @@ news_event = { #Mao Union
 	id = news.31
 	title = news.31.t
 	desc = news.31.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_prc_declared
 	
 	major = yes
 	
