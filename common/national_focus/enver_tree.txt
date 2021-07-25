@@ -12,8 +12,8 @@ focus_tree = {
     focus = {
 		id = CIB_war_for_soul_turk
 		icon = GFX_goal_war_soul
-		x = 7
-		y = 1
+		x = 2
+		y = 0
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = {
@@ -35,8 +35,8 @@ focus_tree = {
     focus = {
 		id = CIB_war_focus_erzurum
 		icon = GFX_goal_erzurum
-		x = 9
-		y = 2
+		x = 4
+		y = 1
 		cost = 2
 		available = { 353 = {
     	is_controlled_by = CIB
@@ -61,8 +61,8 @@ focus_tree = {
 	focus = {
 		id = CIB_war_focus_van
 		icon = GFX_goal_van
-		x = 5
-		y = 2
+		x = 0
+		y = 1
 		cost = 2
 		available = { 800 = {
 		is_controlled_by = CIB	
@@ -86,8 +86,8 @@ focus_tree = {
 	focus = {
 		id = CIB_war_focus_kars
 		icon = GFX_goal_kars
-		x = 7
-		y = 2
+		x = 2
+		y = 1
 		cost = 2
 		available = { 835 = {
 		is_controlled_by = CIB
@@ -111,8 +111,8 @@ focus_tree = {
 	focus = {
 		id = CIB_war_focus_sametplan
 		icon = GFX_goal_sametplan
-		x = 7
-		y = 3
+		x = 2
+		y = 2
 		cost = 2
 		available_if_capitulated = yes
 		available = { 
@@ -133,12 +133,11 @@ focus_tree = {
 		}
 		}
 	}
-
 	focus = {
 		id = CIB_war_focus_paying_debts
 		icon = GFX_goal_azer_annex
-		x = 7
-		y = 4
+		x = 2
+		y = 3
 		cost = 2
 		available_if_capitulated = yes
 		available = { 
@@ -162,8 +161,8 @@ focus_tree = {
 	focus = {
 		id = CIB_enveristan_proper
 		icon = GFX_goal_pasha_fiefdom
-		x = 7
-		y = 6
+		x = 8
+		y = 0
 		cost = 3
 		available = { 
 		ARM = {
@@ -188,8 +187,8 @@ focus_tree = {
 	focus = {
 		id = CIB_fighting_bandits
 		icon = GFX_goal_kill_bandit
-		x = 5
-		y = 7
+		x = 6
+		y = 1
 		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_enveristan_proper}
@@ -205,8 +204,8 @@ focus_tree = {
 	focus = {
 		id = CIB_talks_old_friend
 		icon = GFX_goal_georgia_logo
-		x = 5
-		y = 8
+		x = 6
+		y = 2
 		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_fighting_bandits }
@@ -225,8 +224,8 @@ focus_tree = {
 	focus = {
 		id = CIB_revising_military
 		icon = GFX_goal_army_Reform
-		x = 5
-		y = 9
+		x = 6
+		y = 3
 		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_talks_old_friend}
@@ -241,8 +240,8 @@ focus_tree = {
 	focus = {
 		id = CIB_rebuilding_east
 		icon = GFX_goal_rebuild_east
-		x = 7
-		y = 7
+		x = 8
+		y = 1
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_enveristan_proper}
@@ -296,8 +295,8 @@ focus_tree = {
 	focus = {
 		id = CIB_they_will_go
 		icon = GFX_goal_genocide_gang
-		x = 7
-		y = 8
+		x = 8
+		y = 2
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_rebuilding_east}
@@ -313,8 +312,9 @@ focus_tree = {
 	focus = {
 		id = CIB_religious_shrines
 		icon = GFX_goal_shrines
-		x = 7
-		y = 9
+		x = 8
+		y = 3
+		
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_they_will_go}
@@ -330,8 +330,8 @@ focus_tree = {
 	focus = {
 		id = CIB_deal_government_armenia
 		icon = GFX_goal_fuck_armenia
-		x = 9
-		y = 7
+		x = 10
+		y = 1
 		cost = 2
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -347,8 +347,8 @@ focus_tree = {
 	focus = {
 		id = CIB_turkish_lands
 		icon = GFX_goal_turkish_landowners
-		x = 9
-		y = 8
+		x = 10
+		y = 2
 		cost = 2
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -386,8 +386,8 @@ focus_tree = {
 	focus = {
 		id = CIB_stable_administration
 		icon = GFX_goal_strong_gov
-		x = 9
-		y = 9
+		x = 10
+		y = 3
 		cost = 2
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -403,8 +403,8 @@ focus_tree = {
 	focus = {
 		id = CIB_ready_for_others
 		icon = GFX_goal_ready_others
-		x = 7
-		y = 10
+		x = 8
+		y = 4
 		cost = 2
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -440,12 +440,12 @@ focus_tree = {
 		}
 		}
 	}
-
+	
 	focus = {
 		id = CIB_war_plan_ANT
 		icon = GFX_goal_war_plan_ant
 		x = 15
-		y = 1
+		y = 0
 		cost = 2
 		available = { has_completed_focus = CIB_ready_for_others }
 		available_if_capitulated = yes
@@ -461,7 +461,7 @@ focus_tree = {
 		id = CIB_nuri_reach
 		icon = GFX_goal_klg
 		x = 15
-		y = 2
+		y = 1
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_war_plan_ANT}
@@ -478,7 +478,7 @@ focus_tree = {
 		id = CIB_deal_mercenaries
 		icon = GFX_goal_Churchill_1
 		x = 16
-		y = 3
+		y = 2
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_nuri_reach}
@@ -498,7 +498,7 @@ focus_tree = {
 		id = CIB_deal_mercenaries_2
 		icon = GFX_goal_motherbase
 		x = 16
-		y = 4
+		y = 3
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_deal_mercenaries}
@@ -543,7 +543,7 @@ focus_tree = {
 		id = CIB_deal_communists
 		icon = GFX_goal_Communist_1
 		x = 12
-		y = 3
+		y = 2
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_nuri_reach}
@@ -563,7 +563,7 @@ focus_tree = {
 		id = CIB_deal_communists_2
 		icon = GFX_goal_communist_2
 		x = 12
-		y = 4
+		y = 3
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_deal_communists}
@@ -607,7 +607,7 @@ focus_tree = {
 		id = CIB_deal_fuller_1
 		icon = GFX_goal_Fuller_1
 		x = 18
-		y = 3
+		y = 2
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_nuri_reach}
@@ -633,7 +633,7 @@ focus_tree = {
 		id = CIB_deal_fuller_2
 		icon = GFX_goal_fuller_2
 		x = 18
-		y = 4
+		y = 3
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_deal_fuller_1}
@@ -678,7 +678,7 @@ focus_tree = {
 		id = CIB_deal_kemalists_1
 		icon = GFX_goal_kemalist_1
 		x = 14
-		y = 3
+		y = 2
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_nuri_reach}
@@ -698,7 +698,7 @@ focus_tree = {
 		id = CIB_deal_kemalists_2
 		icon = GFX_goal_kemalist_2
 		x = 14
-		y = 4
+		y = 3
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_deal_kemalists_1 }
@@ -744,7 +744,7 @@ focus_tree = {
 		id = CIB_deal_war_kemalism
 		icon = GFX_goal_vs_ataturk
 		x = 15
-		y = 5
+		y = 4
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_deal_communists_2}
@@ -764,11 +764,12 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = CIB_deal_war_caliphate
 		icon = GFX_goal_caliph_war
 		x = 15
-		y = 6
+		y = 5
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_deal_war_kemalism}
@@ -788,7 +789,7 @@ focus_tree = {
 		id = CIB_deal_istanbul
 		icon = GFX_goal_pearl
 		x = 15
-		y = 7
+		y = 6
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = CIB_deal_war_caliphate}
