@@ -914,7 +914,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_emergency_investments
-		#icon = 
+		icon = GFX_goal_CLP_believers_economy
 		prerequisite = { focus = AUT_schussnigg_at_the_helm }
 		x = 19
 		y = 2
@@ -953,7 +953,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_support_the_beureaucrats
-		#icon = 
+		icon = GFX_goal_NGU_Industry
 		prerequisite = { focus = AUT_schussnigg_at_the_helm }
 		x = 21
 		y = 2
@@ -977,7 +977,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_suppress_the_heimwehr
-		#icon = 
+		icon = GFX_goal_AUT_heimwehr_cabinet
 		prerequisite = { focus = AUT_schussnigg_at_the_helm }
 		x = 23
 		y = 2
@@ -1002,7 +1002,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_technocratic_economy
-		#icon = 
+		icon = GFX_goal_forced_industrialisation
 		prerequisite = { focus = AUT_support_the_beureaucrats }
 		prerequisite = { focus = AUT_emergency_investments }
 		x = 20
@@ -1043,7 +1043,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_technocratic_government
-		#icon = 
+		icon = GFX_goal_goebbels_academy
 		prerequisite = { focus = AUT_support_the_beureaucrats }
 		prerequisite = { focus = AUT_suppress_the_heimwehr }
 		x = 22
@@ -1079,7 +1079,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_guided_industrialisation
-		#icon = 
+		icon = GFX_goal_AUT_economic_reforms
 		prerequisite = { focus = AUT_technocratic_economy }
 		x = 19
 		y = 4
@@ -1136,7 +1136,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_cult_of_efficiency
-		#icon = 
+		icon = GFX_goal_IZM_our_great_homeland
 		prerequisite = { focus = AUT_guided_industrialisation }
 		x = 19
 		y = 5
@@ -1160,7 +1160,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_meritocratic_state
-		#icon = 
+		icon = GFX_goal_TAT_Mass_Literacy
 		prerequisite = { focus = AUT_technocratic_economy }
 		prerequisite = { focus = AUT_technocratic_government }
 		x = 21
@@ -1185,7 +1185,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_extent_of_reforms
-		#icon = 
+		icon = GFX_goal_centralize
 		prerequisite = { focus = AUT_meritocratic_state }
 		prerequisite = { focus = AUT_guided_industrialisation }
 		prerequisite = { focus = AUT_establish_frontmilitz }
@@ -1222,7 +1222,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_establish_frontmilitz
-		#icon = 
+		icon = GFX_goal_AUT_heimwehr_glory
 		prerequisite = { focus = AUT_technocratic_government }
 		x = 23
 		y = 4
@@ -1246,7 +1246,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_revive_nationalism
-		#icon = 
+		icon = GFX_goal_AUT_austrian_militarism
 		prerequisite = { focus = AUT_establish_frontmilitz }
 		x = 23
 		y = 5
@@ -1267,7 +1267,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_beureaucratic_boom
-		#icon = 
+		icon = GFX_goal_IZM_taxes
 		prerequisite = { focus = AUT_cult_of_efficiency }
 		prerequisite = { focus = AUT_extent_of_reforms }
 		x = 20
@@ -1289,7 +1289,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_the_defense_of_austria
-		#icon = 
+		icon = GFX_goal_AUT_austrian_militarism
 		prerequisite = { focus = AUT_revive_nationalism }
 		prerequisite = { focus = AUT_extent_of_reforms }
 		x = 22
@@ -1311,7 +1311,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_christlich_deutsch_gerecht_und_frei
-		#icon = 
+		icon = GFX_goal_AUT_corporatist_ideals
 		prerequisite = { focus = AUT_the_defense_of_austria }
 		prerequisite = { focus = AUT_beureaucratic_boom }
 		x = 21
