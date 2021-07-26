@@ -941,7 +941,7 @@ focus = {
 		cost = 1
 		available = {
 		has_government = revolutionary_nationalist
-		WLF = {
+		NGU = {
 		has_country_flag = RUS_DONE	
 		has_war = no
 		}
@@ -1083,7 +1083,9 @@ focus = {
 		}
 		hidden_effect = {
 		country_event = { id = ngu.16 days = 40 }
-		set_global_flag = WW2_happened	
+		NGU = {
+		set_country_flag = WW2_happened	
+		}	
 		}	
 		}
 	}	
@@ -1245,7 +1247,7 @@ focus = {
 		idea = NGU_RussianWar
 		days = 95	
 		}
-		WLF = {
+		NGU = {
 		add_country_flag = RUS_DONE	
 		}	
 		}

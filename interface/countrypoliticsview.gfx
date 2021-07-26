@@ -881,5 +881,9 @@ spriteType = {
 spriteType = {
 		name = "GFX_ideology_stalinism"
 		texturefile = "gfx/interface/ideologies/stalinism.dds"
-	}	
+	}
+spriteType = {
+		name = "GFX_ideology_mdd_kemalism"
+		texturefile = "gfx/interface/ideologies/mdd_kemalism.dds"
+	}		
 }

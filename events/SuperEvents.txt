@@ -260,7 +260,7 @@ country_event = {		#Super Event DONE
 	option = {
 		name = super.11.a
         set_global_flag = Super_Event_Visible
-        set_global_flag = German_RusWar
+        set_global_flag = German_RusWar_unification
 		sound_effect = "ruswar"
 	}
 }
@@ -275,7 +275,7 @@ country_event = {		#Super Event DONE
 	
 	trigger = {
 		NGU = {
-		has_global_flag = WW2_happened	
+		has_country_flag = WW2_happened	
 		}
 	}
 
