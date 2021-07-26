@@ -306,7 +306,7 @@ country_event = { #Great Russian War
         }
         TKH = {
         every_owned_state = {
-        add_core_of = KRN
+        add_core_of = TRM
         }	
         }
         news_event = { id = news.22 }
