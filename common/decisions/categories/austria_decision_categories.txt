@@ -26,3 +26,18 @@ AUT_political_decisions = {
 		always = yes
 	}
 }
+
+AUT_foreign_deccat = {
+    #icon = 
+	#picture = 
+	priority = 70
+	allowed = {
+		OR = {
+			tag = AUT
+			has_completed_focus = AUT_Foreign_Plans
+		}
+	}
+	visible = {
+		always = yes
+	}
+}

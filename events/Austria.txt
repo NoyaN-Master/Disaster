@@ -2568,22 +2568,5 @@ country_event = { #renner's elections
 		}
 	}
 }
-##FP MY DOMAIN
-country_event = { #Austria invites Nations
-	id = aut.80
-	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.64" }
-	title = aut.80.t
-	desc = aut.80.d
 
-	fire_only_once = yes
 
-	is_triggered_only = yes
-	
-	option = { 
-		name = aut.80.a
-		AUT = {
-		add_to_faction = ROOT	
-		}
-		
-	}
-}

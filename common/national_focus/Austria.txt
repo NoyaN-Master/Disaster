@@ -2121,6 +2121,15 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			create_faction = AUT_FACTION
+			BAY = {
+			country_event = { id = scripteddeals.1 days = 1}	
+			}
+			WRT = {
+			country_event = { id = scripteddeals.1 days = 1}	
+			}
+			BDN = {
+			country_event = { id = scripteddeals.1 days = 1}	
+			}
         }
 	}
 	focus = {
@@ -2142,6 +2151,8 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
+		add_war_support = 0.10
+		add_manpower = 20000	
         }
 	}
 	focus = {
@@ -2163,6 +2174,12 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
+			declare_war_on = {
+    		target = HNG
+    		type = annex_everything
+			}
+		set_country_flag = AUT_attackedHNG	
+		custom_effect_tooltip = AUT_Custom_TT	
         }
 	}
 	focus = {
@@ -2185,6 +2202,12 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
+			declare_war_on = {
+    		target = SOR
+    		type = annex_everything
+			}
+		custom_effect_tooltip = AUT_Custom_TT
+			set_country_flag = AUT_attackedYUG
         }
 	}
 	focus = {
@@ -2206,6 +2229,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
+			declare_war_on = {
+    		target = FIU
+    		type = annex_everything
+			}	
         }
 	}
 	focus = {
@@ -2227,6 +2254,16 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
+			declare_war_on = {
+    		target = SLK
+    		type = annex_everything
+			}
+			declare_war_on = {
+    		target = CEZ
+    		type = annex_everything
+			}
+		set_country_flag = AUT_attackedBHM	
+		custom_effect_tooltip = AUT_Custom_TT	
         }
 	}
 }
