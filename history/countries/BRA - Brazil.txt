@@ -22,7 +22,7 @@ add_political_power = 3
 set_convoys = 50
 
 set_politics = {
-	ruling_party = conservative
+	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -37,13 +37,13 @@ country_event = { id = bra.3 days = 61 }
 
 
 set_popularities = {
-	conservative = 40
+	conservative = 10
 	liberal = 10
 	social_democrat = 12
-	libertarian_socialist = 15
-	authoritarian_socialist = 8
+	libertarian_socialist = 13
+	authoritarian_socialist = 0
 	unisocialist = 0
-	authoritarian_democrat = 0
+	authoritarian_democrat = 40
 	autocratic = 0
 	ultranationalist = 15
 	revolutionary_nationalist = 0
@@ -56,7 +56,7 @@ create_country_leader = {
 	#desc = "BRA_Getulio_Vargas_desc"
 	picture = "BRA_Getulio_Vargas.tga"
 	expire = "2020.1.1"
-	ideology = conservative_subideology
+	ideology = kemalism
 	traits = {
 		#
 	}

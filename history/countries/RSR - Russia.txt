@@ -19,7 +19,7 @@ set_technology = {
 set_convoys = 50
 
 set_politics = {
-	ruling_party = liberal
+	ruling_party = social_democrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -39,9 +39,9 @@ add_to_faction = DNK
 add_ideas = RussianWars_idea
 
 set_popularities = {
-	conservative = 20
+	conservative = 10
 	liberal = 30
-	social_democrat = 25
+	social_democrat = 35
 	libertarian_socialist = 15
 	authoritarian_socialist = 3
 	unisocialist = 0
@@ -58,7 +58,7 @@ create_country_leader = {
 	desc = "RSR_Kerensky_desc"
 	picture = "RSR_Kerensky.tga"
 	expire = "2020.1.1"
-	ideology = liberal_subideology
+	ideology = social_democrat_subideology
 	traits = {
 		#
 	}

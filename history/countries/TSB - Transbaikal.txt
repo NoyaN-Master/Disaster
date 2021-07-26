@@ -28,17 +28,17 @@ add_ideas = 	interventionism
 add_ideas = 	semi_industrial_society
 
 set_popularities = {
-	conservative = 20
+	conservative = 0
 	liberal = 0
 	social_democrat = 0
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
 	unisocialist = 0
-	authoritarian_democrat = 30
+	authoritarian_democrat = 0
 	autocratic = 50
 	ultranationalist = 0
-	revolutionary_nationalist = 0
-	esoteric_traditionalist = 0
+	revolutionary_nationalist = 30
+	esoteric_traditionalist = 20
 	revolutionary_anarchist = 0
 }
 

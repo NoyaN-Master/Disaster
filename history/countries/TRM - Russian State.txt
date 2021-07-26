@@ -18,7 +18,7 @@ set_technology = {
 set_convoys = 50
 
 set_politics = {
-	ruling_party = autocratic
+	ruling_party = ultranationalist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -28,16 +28,16 @@ add_ideas = 	corporatism
 add_ideas = 	semi_industrial_society
 add_ideas = RussianWars_idea
 set_popularities = {
-	conservative = 0
+	conservative = 5
 	liberal = 0
 	social_democrat = 0
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
 	unisocialist = 0
-	authoritarian_democrat = 5
-	autocratic = 75
-	ultranationalist = 20
-	revolutionary_nationalist = 0
+	authoritarian_democrat = 0
+	autocratic = 15
+	ultranationalist = 75
+	revolutionary_nationalist = 5
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
@@ -47,7 +47,7 @@ create_country_leader = {
 	#desc = "TRM_Kolchak_desc"
 	picture = "TRM_Kolchak.tga"
 	expire = "2020.1.1"
-	ideology = autocratic_subideology
+	ideology = ultranationalist_subideology
 	traits = {
 		#
 	}

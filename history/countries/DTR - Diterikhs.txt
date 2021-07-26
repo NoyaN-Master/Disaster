@@ -18,7 +18,7 @@ set_technology = {
 set_convoys = 50
 
 set_politics = {
-	ruling_party = autocratic
+	ruling_party = esoteric_traditionalist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -36,10 +36,10 @@ set_popularities = {
 	authoritarian_socialist = 0
 	unisocialist = 0
 	authoritarian_democrat = 0
-	autocratic = 100
-	ultranationalist = 0
+	autocratic = 20
+	ultranationalist = 30
 	revolutionary_nationalist = 0
-	esoteric_traditionalist = 0
+	esoteric_traditionalist = 50
 	revolutionary_anarchist = 0
 }
 
@@ -48,7 +48,7 @@ create_country_leader = {
 	desc = "DTR_Mikhail_Diterikhs_desc"
 	picture = "DTR_Mikhail_Diterikhs.tga"
 	expire = "2020.1.1"
-	ideology = autocratic_subideology
+	ideology = folk_christianity
 	traits = {
 		#
 	}

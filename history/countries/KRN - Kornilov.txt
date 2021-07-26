@@ -18,7 +18,7 @@ set_technology = {
 set_convoys = 50
 
 set_politics = {
-	ruling_party = autocratic
+	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -30,14 +30,14 @@ add_ideas = White_Russian_idea
 
 set_popularities = {
 	conservative = 0
-	liberal = 0
-	social_democrat = 0
+	liberal = 10
+	social_democrat = 10
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
 	unisocialist = 0
-	authoritarian_democrat = 0
-	autocratic = 100
-	ultranationalist = 0
+	authoritarian_democrat = 65
+	autocratic = 5
+	ultranationalist = 10
 	revolutionary_nationalist = 0
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
@@ -48,7 +48,7 @@ create_country_leader = {
 	desc = "KRN_Lavr_Kornilov_desc"
 	picture = "KRN_Lavr_Kornilov.tga"
 	expire = "2020.1.1"
-	ideology = autocratic_subideology
+	ideology = authoritarian_democrat_subideology
 	traits = {
 		#
 	}

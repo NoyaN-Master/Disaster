@@ -19,7 +19,7 @@ set_convoys = 50
 add_ideas = DCS_homecoming
 add_ideas = RussianWars_idea
 set_politics = {
-	ruling_party = ultranationalist
+	ruling_party = conservative
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -30,15 +30,15 @@ add_ideas = 	semi_industrial_society
 add_ideas = White_Russian_idea
 
 set_popularities = {
-	conservative = 0
+	conservative = 40
 	liberal = 0
 	social_democrat = 0
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
 	unisocialist = 0
-	authoritarian_democrat = 0
-	autocratic = 0
-	ultranationalist = 100
+	authoritarian_democrat = 20
+	autocratic = 20
+	ultranationalist = 20
 	revolutionary_nationalist = 0
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
@@ -49,7 +49,7 @@ create_country_leader = {
 	desc = "DCS_Aleksandr_Dutov_desc"
 	picture = "DCS_Aleksandr_Dutov.tga"
 	expire = "2020.1.1"
-	ideology = ultranationalist_subideology
+	ideology = conservative_subideology
 	traits = {
 		
 	}

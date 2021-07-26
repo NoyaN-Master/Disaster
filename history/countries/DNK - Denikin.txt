@@ -18,7 +18,7 @@ set_technology = {
 set_convoys = 50
 
 set_politics = {
-	ruling_party = autocratic
+	ruling_party = conservative
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -28,15 +28,14 @@ add_ideas = 	corporatism
 add_ideas = 	industrialized_society
 add_ideas = RussianWars_idea
 set_popularities = {
-	conservative = 0
-	liberal = 0
+	conservative = 50
+	liberal = 20
 	social_democrat = 0
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
 	unisocialist = 0
 	authoritarian_democrat = 30
-	autocratic = 50
-	ultranationalist = 20
+	autocratic = 0
 	revolutionary_nationalist = 0
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
@@ -47,7 +46,7 @@ create_country_leader = {
 	#desc = "DNK_Denikin_desc"
 	picture = "DNK_Denikin.tga"
 	expire = "2020.1.1"
-	ideology = autocratic_subideology
+	ideology = conservative_subideology
 	traits = {
 		#
 	}
