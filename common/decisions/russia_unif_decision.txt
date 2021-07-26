@@ -8,7 +8,7 @@ russia_unify_decision = {
         }
         }
         visible = {
-        original_tag = RSR
+        original_tag = TRM
         }  
         complete_effect = {
         country_event = { id = worldwar.10} 
@@ -24,7 +24,7 @@ start_RUSWAR_decision = {
         always = yes
         }
         visible = {
-        original_tag = RSR
+        original_tag = TRM
         }  
         complete_effect = {
         country_event = { id = worldwar.5}

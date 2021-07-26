@@ -202,7 +202,7 @@ country_event = { #Great Russian War
 
 	option = {
 		name = worldwar.3.a
-        RSR = {
+        TRM = {
         #WHITE SIDE    
         declare_war_on = {
             target = TSV
@@ -211,35 +211,35 @@ country_event = { #Great Russian War
         }
         KRN = {
         add_to_war = { 
-        targeted_alliance = RSR 
+        targeted_alliance = TRM 
         enemy = TSV 
         hostility_reason = asked_to_join
         }
         }
         DCS = {
         add_to_war = { 
-        targeted_alliance = RSR 
+        targeted_alliance = TRM 
         enemy = TSV 
         hostility_reason = asked_to_join
         }
         }
-        TRM = {
+        RSR = {
         add_to_war = { 
-        targeted_alliance = RSR 
+        targeted_alliance = TRM 
         enemy = TSV 
         hostility_reason = asked_to_join
         }
         }
         DTR = {
         add_to_war = { 
-        targeted_alliance = RSR 
+        targeted_alliance = TRM 
         enemy = TSV 
         hostility_reason = asked_to_join
         }
         }
         DNK = {
         add_to_war = { 
-        targeted_alliance = RSR 
+        targeted_alliance = TRM 
         enemy = TSV 
         hostility_reason = asked_to_join
         }
