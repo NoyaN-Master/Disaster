@@ -611,6 +611,11 @@ AUT_Puppet_Yugo = {
                      
         complete_effect = {
            ai_chance = { factor = 100}
+		HNG = {
+			transfer_state = 764
+			transfer_state = 45
+			transfer_state = 82
+		}   
 		white_peace = SOR
 		annex_country = {
     	target = SOR
@@ -620,11 +625,6 @@ AUT_Puppet_Yugo = {
 		release_puppet = CRT
 		release_puppet = SOR
 		release_puppet = ABL
-		HNG = {
-			transfer_state = 764
-			transfer_state = 45
-			transfer_state = 82
-		}
 		CRT = {
 		transfer_state = 815
 		add_state_core = 815
@@ -667,4 +667,28 @@ AUT_Puppet_Yugo = {
 		}
     }    
 }
+
+
+AUT_Give_Transly = {                          
+        allowed = {
+         tag = AUT
+         has_completed_focus = AUT_Restore_Sphere
+        }                 
+        available = {
+		HNG = {
+		is_puppet_of = AUT	
+		}	      
+        }					
+        is_good = no                         
+        selectable_mission = yes               
+                     
+        complete_effect = {
+		HNG = {
+			transfer_state = 76
+			transfer_state = 83
+			transfer_state = 84
+		} 
+		}
+
+}		
 }

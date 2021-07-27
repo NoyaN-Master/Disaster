@@ -1147,6 +1147,24 @@ country_event = { #Young Guard wants concessions
 	}
 }
 
+country_event = {
+	id = aut.121
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.76" }
+	title = aut.121.t
+	desc = aut.121.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = aut.121.a 
+		AUT = {
+		add_to_faction = ROOT
+		}
+	}
+}
+
 country_event = { #Conservatives Concerned
 	id = aut.36
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.36" }
@@ -2568,5 +2586,7 @@ country_event = { #renner's elections
 		}
 	}
 }
+
+
 
 

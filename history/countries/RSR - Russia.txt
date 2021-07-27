@@ -1,6 +1,10 @@
 capital = 195
 oob = "RUS_Wrangel"
+
+
+1936.1.1 = {
 country_event = { id = worldwar.5 }
+}
 
 set_technology = {
 	infantry_weapons = 1
@@ -30,6 +34,13 @@ add_ideas = 	industrialized_society
 add_ideas = White_Russian_idea
 
 add_ideas = RussianWars_idea
+
+create_faction = Anti_Communist_Russia
+add_to_faction = KRN
+add_to_faction = DCS
+add_to_faction = TRM
+add_to_faction = DTR
+add_to_faction = DNK
 
 set_popularities = {
 	conservative = 10

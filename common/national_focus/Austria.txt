@@ -1161,7 +1161,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_meritocratic_state
-		icon = GFX_goal_TAT_Mass_Literacy
+		icon = GFX_goal_AUT_corporatist_ideals
 		prerequisite = { focus = AUT_technocratic_economy }
 		prerequisite = { focus = AUT_technocratic_government }
 		x = 21
@@ -1223,7 +1223,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_establish_frontmilitz
-		icon = GFX_goal_AUT_heimwehr_glory
+		icon = GFX_goal_AUT_Identity
 		prerequisite = { focus = AUT_technocratic_government }
 		x = 23
 		y = 4
@@ -1247,7 +1247,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_revive_nationalism
-		icon = GFX_goal_AUT_austrian_militarism
+		icon = GFX_goal_AUT_new_industralism
 		prerequisite = { focus = AUT_establish_frontmilitz }
 		x = 23
 		y = 5
@@ -1290,7 +1290,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_the_defense_of_austria
-		icon = GFX_goal_AUT_austrian_militarism
+		icon = GFX_goal_focus_AUT_militarise_the_corporate_state
 		prerequisite = { focus = AUT_revive_nationalism }
 		prerequisite = { focus = AUT_extent_of_reforms }
 		x = 22
@@ -2079,7 +2079,7 @@ focus_tree = {
 	#FP
 	focus = {
 		id = AUT_Foreign_Plans
-		icon = GFX_goal_AUT_a_moral_people
+		icon = GFX_goal_AUT_FP
 		
 		x = 15
 		y = 8
@@ -2103,7 +2103,7 @@ focus_tree = {
 
 	focus = {
 		id = AUT_Southern_Thaw
-		icon = GFX_goal_AUT_a_moral_people
+		icon = GFX_goal_AUT_OSTER
 		
 		x = 15
 		y = 9
@@ -2112,9 +2112,7 @@ focus_tree = {
 			factor = 50
 		}
 		prerequisite = { focus = AUT_Foreign_Plans}
-		available = {
-			OR = {
-			}					
+		available = {					
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2122,19 +2120,19 @@ focus_tree = {
 		completion_reward = {
 			create_faction = AUT_FACTION
 			BAY = {
-			country_event = { id = scripteddeals.1 days = 1}	
+			country_event = { id = aut.121 days = 1}	
 			}
 			WRT = {
-			country_event = { id = scripteddeals.1 days = 1}	
+			country_event = { id = aut.121 days = 1}	
 			}
 			BDN = {
-			country_event = { id = scripteddeals.1 days = 1}	
+			country_event = { id = aut.121 days = 1}	
 			}
         }
 	}
 	focus = {
 		id = AUT_Restore_Sphere
-		icon = GFX_goal_AUT_a_moral_people
+		icon = GFX_goal_AUT_HEGEMON
 		
 		x = 15
 		y = 10
@@ -2144,8 +2142,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = AUT_Southern_Thaw}
 		available = {
-			OR = {
-			}					
+								
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2157,7 +2154,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUT_ReTake_Huns
-		icon = GFX_goal_AUT_a_moral_people
+		icon = GFX_goal_AUT_HUN
 		
 		x = 14
 		y = 11
@@ -2167,8 +2164,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = AUT_Restore_Sphere}
 		available = {
-			OR = {
-			}					
+								
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2184,7 +2180,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUT_ReTake_Yugo
-		icon = GFX_goal_AUT_a_moral_people
+		icon = GFX_goal_AUT_YUG
 		
 		x = 15
 		y = 12
@@ -2195,8 +2191,7 @@ focus_tree = {
 		prerequisite = { focus = AUT_Bohemians}
 		prerequisite = { focus = AUT_ReTake_Huns}
 		available = {
-			OR = {
-			}					
+								
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2212,7 +2207,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUT_Destroy_Italy
-		icon = GFX_goal_AUT_a_moral_people
+		icon = GFX_goal_AUT_ITA
 		
 		x = 15
 		y = 13
@@ -2222,8 +2217,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = AUT_ReTake_Yugo}
 		available = {
-			OR = {
-			}					
+								
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2237,7 +2231,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUT_Bohemians
-		icon = GFX_goal_AUT_a_moral_people
+		icon = GFX_goal_AUT_BOH
 		
 		x = 16
 		y = 11
@@ -2247,8 +2241,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = AUT_Restore_Sphere}
 		available = {
-			OR = {
-			}					
+								
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
