@@ -907,7 +907,7 @@ focus = {
 focus = {
 		id = NGU_Strasser_Agenda
 		icon = GFX_goal_NGU_Strasser
-		x = 19
+		x = 17
 		y = 6
 		cost = 1
 		available = {
@@ -915,7 +915,78 @@ focus = {
 		}
         prerequisite = { focus = NGU_Cross_The_Rhine}				
 		completion_reward = {
-		add_war_support = 0.05
+		create_faction = STRASSER_FACTION
+		}
+	}
+focus = {
+		id = NGU_Intervene_Belarus
+		icon = GFX_goal_NGU_Strasser
+		x = 17
+		y = 7
+		cost = 1
+		available = {
+		has_government = unisocialist	
+		}
+        prerequisite = { focus = NGU_Strasser_Agenda}				
+		completion_reward = {
+		declare_war_on = {
+    	target = WHL
+    	type = annex_everything
+		}
+		}
+	}
+	focus = {
+		id = NGU_Intervene_Ukraine
+		icon = GFX_goal_NGU_Strasser
+		x = 17
+		y = 8
+		cost = 1
+		available = {
+		has_government = unisocialist	
+		}
+        prerequisite = { focus = NGU_Intervene_Belarus}				
+		completion_reward = {
+		declare_war_on = {
+    	target = UKR
+    	type = annex_everything
+		}
+		}
+	}
+	focus = {
+		id = NGU_Reach_Stalin
+		icon = GFX_goal_NGU_Strasser
+		x = 17
+		y = 9
+		cost = 1
+		available = {
+		has_government = unisocialist	
+		}
+        prerequisite = { focus = NGU_Intervene_Ukraine}				
+		completion_reward = {
+		SRF = {
+		country_event = { id = ngu.25 days = 1 }	
+		}
+		}
+	}
+	focus = {
+		id = NGU_Revenge_For_War
+		icon = GFX_goal_NGU_Strasser
+		x = 17
+		y = 10
+		cost = 1
+		available = {
+		has_government = unisocialist	
+		}
+        prerequisite = { focus = NGU_Reach_Stalin}				
+		completion_reward = {
+		declare_war_on = {
+    	target = RUS
+    	type = annex_everything
+		}
+		add_timed_idea = {
+		idea = NGU_RussianWar
+		days = 95	
+		}	
 		}
 	}
 focus = {
@@ -1369,6 +1440,7 @@ focus = {
         prerequisite = { focus = NGU_Die_Wacht_am_Ost }
 		completion_reward = {
 		country_event = { id = ngu.7 days = 2 }
+		add_ideas
 		}
 	}                                             
 }

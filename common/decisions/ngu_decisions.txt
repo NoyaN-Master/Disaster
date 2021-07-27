@@ -287,6 +287,130 @@ NGU_Attack_Holland = {
 		}
 }
 
+NGU_Belarus_BLT = {
+	    fire_only_once = yes
+		cost = 0
+        allowed = {
+        tag = NGU
+        has_government = unisocialist
+        }
+        available  = {   
+        has_completed_focus = NGU_Intervene_Belarus
+        WHR = {
+           exists = no
+        }    
+        }
+        visible = {
+        original_tag = NGU
+        has_government = unisocialist
+        }    
+        complete_effect = {
+        BLT = {
+        transfer_state = 204
+        transfer_state = 206
+        transfer_state = 207
+        transfer_state = 194
+        transfer_state = 94
+        transfer_state = 95
+        transfer_state = 96
+        }    
+        }
+     ai_will_do = {
+			factor = 1000
+		}
+}
+
+NGU_Ukraine_Puppet = {
+	    fire_only_once = yes
+		cost = 0
+        allowed = {
+        tag = NGU
+        has_government = unisocialist
+        }
+        available  = {   
+        has_completed_focus = NGU_Intervene_Ukraine
+        UKR = {
+           exists = no
+        }    
+        }
+        visible = {
+        original_tag = NGU
+        has_government = unisocialist
+        }    
+        complete_effect = {
+        release_puppet = UKR
+        UKR = {
+        transfer_state = 197
+        transfer_state = 196
+        transfer_state = 226
+        transfer_state = 200
+        transfer_state = 200
+        transfer_state = 227
+        set_cosmetic_tag = UKR_Puppet_UNSC
+        create_country_leader = {
+	        name = "Nikita Khrushchev"
+	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	        picture   = "Portrait_UKR_Nikita_Kruschev.png"
+	        expire = "1965.1.1"
+	        ideology = national_socialist_subid
+	        traits = {
+	        }
+            }
+        }
+
+        }
+     ai_will_do = {
+			factor = 1000
+		}
+}
+
+NGU_SOV_Puppet = {
+	    fire_only_once = yes
+		cost = 0
+        allowed = {
+        tag = NGU
+        }
+        available  = {   
+        has_completed_focus = NGU_Revenge_For_War
+        RUS = {
+           exists = no
+        }    
+        }
+        visible = {
+        original_tag = NGU
+        has_government = unisocialist
+        }    
+        complete_effect = {
+        release = RUS
+        release_puppet = SOV
+        SOV = {
+        annex_country = {
+        target = RUS
+        transfer_troops = yes
+        }
+        create_country_leader = {
+	        name = "Politburo"
+	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	        picture   = "Portrait_RUS_Sovnarkom.tga"
+	        expire = "1965.1.1"
+	        ideology = national_socialist_subid
+	        traits = {
+	        }
+            }
+        }
+        SRF = {
+        transfer_state = 234
+        transfer_state = 235   
+        }
+        UKR = {
+            transfer_state = 137
+        }
+        }
+     ai_will_do = {
+			factor = 1000
+		}
+}
+
 NGU_French_Deal = {
 	    fire_only_once = yes
 		cost = 0
@@ -303,6 +427,7 @@ NGU_French_Deal = {
         visible = {
         original_tag = NGU
         at_war_with = FRE
+        has_government = revolutionary_nationalist
         }    
         complete_effect = {
         country_event = { id = ngu.15 days = 2}
@@ -335,6 +460,7 @@ NGU_Russia_Deal = {
         }
         visible = {
         original_tag = NGU
+        has_government = revolutionary_nationalist
         }    
         complete_effect = {
         NGU_RussianPeaceDeal = yes 
@@ -368,6 +494,7 @@ NGU_UKR_deal = {
         }
         visible = {
         original_tag = NGU
+        has_government = revolutionary_nationalist
         }    
         complete_effect = {
         release = UKR
@@ -410,7 +537,7 @@ NGU_Hitler_Field = {
         }
         visible = {
         original_tag = NGU
-        has_war = no
+        has_government = revolutionary_nationalist
         }    
         complete_effect = {
         create_corps_commander = {

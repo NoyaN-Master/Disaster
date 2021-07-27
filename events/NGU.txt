@@ -704,3 +704,21 @@ country_event = { # Britian Joins War
 		news_event = {id = news.21}
 		set_global_flag = WW2_happened
 	}
+
+country_event = {
+	id = ngu.25
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.76" }
+	title = aut.25.t
+	desc = aut.25.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = aut.25.a 
+		NGU = {
+		add_to_faction = ROOT
+		}
+	}
+}	

@@ -151,7 +151,8 @@ GER_unification_decisions = {
           complete_effect = {
 			drop_cosmetic_tag = yes
 			set_cosmetic_tag = NGU_HitlerGermany
-			set_global_flag = goebbels_unification
+			set_country_flag = goebbels_unification
+			country_event = { id = super.10}
           }	 
         ai_will_do = {
 			factor = 1000
@@ -178,7 +179,7 @@ GER_unification_decisions = {
           fire_only_once = yes
           complete_effect = {
 			set_cosmetic_tag = NGU_StrasserGermany
-			set_global_flag = goebbels_unification
+			set_country_flag = goebbels_unification
           }	 
         ai_will_do = {
 			factor = 1000
