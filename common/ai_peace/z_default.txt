@@ -56,7 +56,7 @@ default_peace = {
 
 	# ROOT = Taker, FROM = State
 	take_states = {
-		factor = 50
+		factor = 500
 
 		# prioritize cores, claims, and ambition areas
 		modifier = {
