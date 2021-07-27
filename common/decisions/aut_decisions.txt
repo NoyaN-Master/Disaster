@@ -415,4 +415,256 @@ AUT_political_decisions = {
             set_country_flag = AUT_didnt_meet_otto			
         }	
     }
+
+}
+
+AUT_foreign_deccat = {
+    AUT_treaty_venice = {                          
+        allowed = {
+         tag = AUT
+         has_completed_focus = AUT_Destroy_Italy
+        }                 
+        available = {      
+        tag = AUT
+	    AUT = {
+		has_war_with = FIU
+	    }
+	    FIU = {
+	    NOT ={
+		controls_state = 736
+        controls_state = 103
+        controls_state = 163
+        controls_state = 736
+        controls_state = 39
+        controls_state = 811
+	    }	
+	    }				
+        }
+        is_good = no                         
+        selectable_mission = yes               
+                     
+        complete_effect = {
+           ai_chance = { factor = 100}
+		white_peace = FIU
+        CRT = {
+        transfer_state = 103
+        transfer_state = 163
+        add_state_core = 103
+        add_state_core = 163
+        }
+        AUT = {
+        transfer_state = 736
+        transfer_state = 39
+        transfer_state = 811
+        add_state_core = 736
+        add_state_core = 39
+        add_state_core = 811
+        transfer_state = 160
+        transfer_state = 812
+        }
+        ABL = {
+         transfer_state = 838
+         add_state_core = 838
+        } 
+        }
+    }
+
+    AUT_Puppet_Hun = {                          
+        allowed = {
+         tag = AUT
+         has_completed_focus = AUT_Restore_Sphere
+        }                 
+        available = {      
+        tag = AUT
+	AUT = {
+        has_completed_focus = AUT_ReTake_Huns
+        owns_state = 43
+	}
+	HNG = {
+	NOT = {
+    country_exists = no    
+    }
+	}				
+        }
+        is_good = no                         
+        selectable_mission = yes               
+                     
+        complete_effect = {
+           ai_chance = { factor = 100}
+		white_peace = HNG
+		annex_country = {
+    	target = HNG
+    	transfer_troops = no
+		}
+		add_stability = 0.10
+		release_puppet = HNG
+		HNG = {
+		create_country_leader = {
+	            name = "Miklos Horthy"
+	            #desc = "AUT_Karl_Renner_desc"
+	            picture = "HNG_Horthy.tga"
+	            expire = "2020.1.1"
+	            ideology = ultranationalist_subideology
+	            traits = {
+	            }
+			}
+		if = {
+		limit = {
+		SLK = {
+		is_puppet_of = AUT
+		}
+		}
+		HNG = {
+		transfer_state = 70
+		transfer_state = 71	
+		}		
+		}	
+		}
+    }
+}
+
+AUT_Puppet_Bohemia = {                          
+        allowed = {
+         tag = AUT
+         has_completed_focus = AUT_Restore_Sphere
+        }                 
+        available = {      
+        tag = AUT
+	AUT = {
+		has_completed_focus = AUT_Bohemians
+        owns_state = 9
+        owns_state = 71
+	}
+	CEZ = {
+	NOT ={
+		country_exists = no
+	}	
+	}
+	SLK = {
+	NOT ={
+		country_exists = no
+        
+	}	
+	}				
+        }
+        is_good = no                         
+        selectable_mission = yes               
+                     
+        complete_effect = {
+           ai_chance = { factor = 100}
+		white_peace = CEZ
+		white_peace = SLK
+		annex_country = {
+    	target = CEZ
+    	transfer_troops = no
+		}
+		annex_country = {
+    	target = SLK
+    	transfer_troops = no
+		}
+		add_stability = 0.10
+		release_puppet = SLK
+		SLK = {
+		create_country_leader = {
+	            name = "Rudolf Viest"
+	            #desc = "AUT_Karl_Renner_desc"
+	            picture = "SLK_Viest.tga"
+	            expire = "2020.1.1"
+	            ideology = ultranationalist_subideology
+	            traits = {
+	            }
+			}	
+		}
+		if = {
+		limit = {
+		HNG = {
+		is_puppet_of = AUT
+		}
+		}
+		HNG = {
+		transfer_state = 70
+		transfer_state = 71	
+		}		
+		}
+	}
+    }
+
+AUT_Puppet_Yugo = {                          
+        allowed = {
+         tag = AUT
+         has_completed_focus = AUT_Restore_Sphere
+        }                 
+        available = {      
+        tag = AUT
+	AUT = {
+		has_completed_focus = AUT_ReTake_Yugo
+        owns_state = 107
+	}
+	SOR = {
+	NOT ={
+		country_exists = no
+	}	
+	}
+	}				
+        is_good = no                         
+        selectable_mission = yes               
+                     
+        complete_effect = {
+           ai_chance = { factor = 100}
+		white_peace = SOR
+		annex_country = {
+    	target = SOR
+    	transfer_troops = no
+		}
+		add_stability = 0.10
+		release_puppet = CRT
+		release_puppet = SOR
+		release_puppet = ABL
+		HNG = {
+			transfer_state = 764
+			transfer_state = 45
+			transfer_state = 82
+		}
+		CRT = {
+		transfer_state = 815
+		add_state_core = 815
+		create_country_leader = {
+	            name = "Ante Pavelić"
+	            #desc = "AUT_Karl_Renner_desc"
+	            picture = "CRT_Ante.tga"
+	            expire = "2020.1.1"
+	            ideology = ultranationalist_subideology
+	            traits = {
+	            }
+			}
+		}
+		SOR = {
+			create_country_leader = {
+	            name = "Alexander I"
+	            #desc = "AUT_Karl_Renner_desc"
+	            picture = "SOR_Alex.tga"
+	            expire = "2020.1.1"
+	            ideology = ultranationalist_subideology
+	            traits = {
+	            }
+			}
+		}
+		AUT = {
+		transfer_state = 102
+		add_state_core = 102
+		}
+		ABL = {
+			transfer_state = 802
+			create_country_leader = {
+	            name = "King Zog I"
+	            #desc = "AUT_Karl_Renner_desc"
+	            picture = "ABL_Zog.tga"
+	            expire = "2020.1.1"
+	            ideology = ultranationalist_subideology
+	            traits = {
+	            }
+			}
+		}
+    }    
+}
 }

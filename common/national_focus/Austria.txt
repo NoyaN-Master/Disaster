@@ -835,6 +835,7 @@ focus_tree = {
                 remove_idea = AUT_moral_people
                 add_idea = AUT_catholic_corporate_state
             }
+			unlock_national_focus = AUT_Foreign_Plans
         }
 	}
 	
@@ -1331,6 +1332,7 @@ focus_tree = {
                 remove_idea = AUT_technocratic_government_2
                 add_idea = AUT_christlich_deutsch_gerecht_und_frei_idea
             }
+			unlock_national_focus = AUT_Foreign_Plans
         }	
 	}	
 	
@@ -1794,6 +1796,7 @@ focus_tree = {
 			    remove_idea = AUT_revived_militarism_2
                 add_idea = AUT_freiheit_und_ehre
             }
+			unlock_national_focus = AUT_Foreign_Plans
         }
 	}
 	
@@ -2070,6 +2073,197 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_country_leader_trait = AUT_the_nation_personified
+        }
+	}
+
+	#FP
+	focus = {
+		id = AUT_Foreign_Plans
+		icon = GFX_goal_AUT_a_moral_people
+		
+		x = 15
+		y = 8
+		cost = 5
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+			OR = {
+			has_completed_focus = AUT_a_moral_government
+			has_completed_focus = AUT_christlich_deutsch_gerecht_und_frei
+			has_completed_focus = AUT_fur_freiheit_und_ehre
+			}					
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+        }
+	}
+
+	focus = {
+		id = AUT_Southern_Thaw
+		icon = GFX_goal_AUT_a_moral_people
+		
+		x = 15
+		y = 9
+		cost = 5
+		ai_will_do = {
+			factor = 50
+		}
+		prerequisite = { focus = AUT_Foreign_Plans}
+		available = {
+			OR = {
+			}					
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			create_faction = AUT_FACTION
+			BAY = {
+			country_event = { id = scripteddeals.1 days = 1}	
+			}
+			WRT = {
+			country_event = { id = scripteddeals.1 days = 1}	
+			}
+			BDN = {
+			country_event = { id = scripteddeals.1 days = 1}	
+			}
+        }
+	}
+	focus = {
+		id = AUT_Restore_Sphere
+		icon = GFX_goal_AUT_a_moral_people
+		
+		x = 15
+		y = 10
+		cost = 5
+		ai_will_do = {
+			factor = 50
+		}
+		prerequisite = { focus = AUT_Southern_Thaw}
+		available = {
+			OR = {
+			}					
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		add_war_support = 0.10
+		add_manpower = 20000	
+        }
+	}
+	focus = {
+		id = AUT_ReTake_Huns
+		icon = GFX_goal_AUT_a_moral_people
+		
+		x = 14
+		y = 11
+		cost = 5
+		ai_will_do = {
+			factor = 50
+		}
+		prerequisite = { focus = AUT_Restore_Sphere}
+		available = {
+			OR = {
+			}					
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			declare_war_on = {
+    		target = HNG
+    		type = annex_everything
+			}
+		set_country_flag = AUT_attackedHNG	
+		custom_effect_tooltip = AUT_Custom_TT	
+        }
+	}
+	focus = {
+		id = AUT_ReTake_Yugo
+		icon = GFX_goal_AUT_a_moral_people
+		
+		x = 15
+		y = 12
+		cost = 5
+		ai_will_do = {
+			factor = 50
+		}
+		prerequisite = { focus = AUT_Bohemians}
+		prerequisite = { focus = AUT_ReTake_Huns}
+		available = {
+			OR = {
+			}					
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			declare_war_on = {
+    		target = SOR
+    		type = annex_everything
+			}
+		custom_effect_tooltip = AUT_Custom_TT
+			set_country_flag = AUT_attackedYUG
+        }
+	}
+	focus = {
+		id = AUT_Destroy_Italy
+		icon = GFX_goal_AUT_a_moral_people
+		
+		x = 15
+		y = 13
+		cost = 5
+		ai_will_do = {
+			factor = 50
+		}
+		prerequisite = { focus = AUT_ReTake_Yugo}
+		available = {
+			OR = {
+			}					
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			declare_war_on = {
+    		target = FIU
+    		type = annex_everything
+			}	
+        }
+	}
+	focus = {
+		id = AUT_Bohemians
+		icon = GFX_goal_AUT_a_moral_people
+		
+		x = 16
+		y = 11
+		cost = 5
+		ai_will_do = {
+			factor = 50
+		}
+		prerequisite = { focus = AUT_Restore_Sphere}
+		available = {
+			OR = {
+			}					
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			declare_war_on = {
+    		target = SLK
+    		type = annex_everything
+			}
+			declare_war_on = {
+    		target = CEZ
+    		type = annex_everything
+			}
+		set_country_flag = AUT_attackedBHM	
+		custom_effect_tooltip = AUT_Custom_TT	
         }
 	}
 }
