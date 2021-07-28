@@ -93,6 +93,7 @@ country_event = {
 	    }
 		}
 		hidden_effect = {
+		set_country_flag = TIT_biroli_won
 		load_focus_tree = B_TIT_focus
         }
 		}
@@ -127,6 +128,7 @@ country_event = {
 		}
 		hidden_effect = {
 		load_focus_tree = R_TIT_focus
+		set_country_flag = TIT_roatta_won
         }
 		}
 	}
