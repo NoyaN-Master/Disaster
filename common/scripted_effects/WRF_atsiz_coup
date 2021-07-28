@@ -311,6 +311,102 @@ NGU_RussianPeaceDeal = {
 }
 
 
+PRE_RussianEffect = {
+	RUS = {
+        every_owned_state = {
+        add_core_of = WLF
+        }	
+        }
+	SOV = {
+        every_owned_state = {
+        add_core_of = WLF
+        }	
+        }
+	WLF = {
+	transfer_state = 580	
+	annex_country = {
+        target = SOV
+        transfer_troops = no
+        }	
+	annex_country = {
+        target = RUS
+        transfer_troops = no
+        }
+	set_cosmetic_tag = WLF_Prussia		
+	}
+	PRE = {
+	puppet = TAT
+	puppet = TSB	
+	}
+	TAT = {
+	set_cosmetic_tag = TAT_Turania_Commisar
+	set_politics = {
+	ruling_party = revolutionary_nationalist
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+	}
+	transfer_state = 582
+	transfer_state = 583	
+	transfer_state = 402
+	transfer_state = 404	
+	transfer_state = 589	
+	transfer_state = 590	
+	transfer_state = 588	
+	transfer_state = 654	
+	transfer_state = 249	
+	transfer_state = 651
+	transfer_state = 406	
+	transfer_state = 407	
+	transfer_state = 401
+	transfer_state = 251
+	transfer_state = 652		
+	}
+	TSB = {
+	transfer_state = 560
+	set_cosmetic_tag = TSB_Siberian_Commissar	
+	set_politics = {	
+	ruling_party = revolutionary_nationalist
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+	}
+	create_country_leader = {
+	        name = "Siberian Volkscouncil"
+	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	        picture   = "TSB_Siberian_Volkshal.tga"
+	        expire = "1965.1.1"
+	        ideology = revolutionary_nationalist_subideology
+	        traits = {
+	        }
+            }	
+	transfer_state = 516
+	transfer_state = 577	
+	transfer_state = 865
+	transfer_state = 644	
+	transfer_state = 574	
+	transfer_state = 562	
+	transfer_state = 637	
+	transfer_state = 563	
+	transfer_state = 565	
+	transfer_state = 564
+	transfer_state = 566
+	transfer_state = 567
+	transfer_state = 575
+	transfer_state = 576
+	transfer_state = 568
+	transfer_state = 569
+	transfer_state = 409
+	transfer_state = 408
+	transfer_state = 657
+	transfer_state = 561
+	transfer_state = 657
+	}	
+
+
+}
+
+
 effect_frenchcollapse = {
 white_peace = FRE
 puppet = FRE
@@ -366,4 +462,6 @@ transfer_state = 735
 transfer_state = 32
 }
 }
+
+
 

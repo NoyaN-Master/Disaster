@@ -73,6 +73,17 @@ create_country_leader = {
 	#desc = "TAT_Galiyev_desc"
 	picture = "Portrait_TAT_Galiyev.tga"
 	expire = "2020.1.1"
+	ideology = revolutionary_nationalist_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Mirsaid Sultangaliyev"
+	#desc = "TAT_Galiyev_desc"
+	picture = "Portrait_TAT_Galiyev.tga"
+	expire = "2020.1.1"
 	ideology = galiyevism
 	traits = {
 		#

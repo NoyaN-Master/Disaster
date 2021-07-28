@@ -260,6 +260,13 @@ focus_tree = {
 		}		
 		prerequisite = { focus = PRE_strike_poland }
 		available = {
+		OR = {
+		has_government = liberal
+		has_government = authoritarian_democrat
+		has_government = conservative
+		has_government = autocratic
+		has_government = social_democrat
+		}	
 		NOT = {PLN = {exists = yes}}
 		808 = {is_owned_and_controlled_by = PRE }
 		809 = {is_owned_and_controlled_by = PRE }
@@ -282,6 +289,26 @@ focus_tree = {
 		}
 		
 	}
+
+	focus = {
+		id = PRE_Rest_Germany
+		icon = GFX_goal_unknown
+		x = 0
+		y = 4
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 2		
+		prerequisite = { focus = PRE_generalplan_ost focus = PRE_puppet_poland }
+		available = {
+		}
+        completion_reward = {
+		unlock_decision_tooltip = PRE_Take_South_Germany
+		unlock_decision_tooltip = PRE_Take_Austria
+		unlock_decision_tooltip = PRE_Take_CEZ
+		unlock_decision_tooltip = PRE_Deal_CEZ
+		}
+		
+	}
+
 	focus = {
 		id = PRE_generalplan_ost
 		icon = GFX_goal_unknown
@@ -294,6 +321,9 @@ focus_tree = {
 		}		
 		prerequisite = { focus = PRE_strike_poland }
 		available = {
+		OR = {
+		has_government = revolutionary_nationalist	
+		}	
 		NOT = {PLN = {exists = yes}}
 		808 = {is_owned_and_controlled_by = PRE }
 		809 = {is_owned_and_controlled_by = PRE }
@@ -313,6 +343,144 @@ focus_tree = {
 		has_war = no			
 		}		
 		completion_reward = {
+		unlock_decision_tooltip = PRE_Diplomacy_Ostland
+		unlock_decision_tooltip = PRE_Declare_Russia
+		unlock_decision_tooltip = PRE_Declare_UKR
+		unlock_decision_tooltip = PRE_Russia_Peace
+		}
+	}
+
+	focus = {
+		id = PRE_The_RKs
+		icon = GFX_goal_unknown
+		x = 2
+		y = 4
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5
+		prerequisite = { focus = PRE_generalplan_ost }
+		available = {
+		OR = {
+		has_government = revolutionary_nationalist
+		has_government = ultranationalist	
+		}
+		has_war = no			
+		}		
+		completion_reward = {
+		create_faction = PRE_NAT_FACTION
+		FIU = {
+		country_event = { id = pre.102 days = 1}	
+		}
+		}
+	}
+
+	focus = {
+		id = PRE_Fuck_France
+		icon = GFX_goal_unknown
+		x = 3
+		y = 5
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5
+		prerequisite = { focus = PRE_The_RKs }
+		available = {
+		OR = {
+		has_government = revolutionary_nationalist
+		has_government = ultranationalist	
+		}	
+		has_country_flag = plan_complete
+		RHN = {
+			exists = no
+		}
+		has_war = no			
+		}		
+		completion_reward = {
+		declare_war_on = {
+    	target = FRE
+    	type = annex_everything
+		}
+		add_timed_idea = {
+		idea = NGU_FrenchSaxons
+		days = 50
+		}
+		unlock_decision_tooltip = PRE_France_Surrender	
+		}
+	}
+
+	focus = {
+		id = PRE_March_West
+		icon = GFX_goal_unknown
+		x = 0
+		y = 5
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5
+		prerequisite = { focus = PRE_Rest_Germany }
+		available = {
+		has_war = no			
+		}		
+		completion_reward = {
+		unlock_decision_tooltip = PRE_Attack_Rhineland
+		}
+	}
+
+	focus = {
+		id = PRE_Koalition_Evropa
+		icon = GFX_goal_unknown
+		x = -2
+		y = 4
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5
+		prerequisite = { focus = PRE_puppet_poland }
+		available = {
+		has_war = no			
+		}		
+		completion_reward = {
+		create_faction = PRE_LIB_FACTION
+		SWV = {
+		country_event = { id = pre.102 days = 1}		
+		}
+		DAN = {
+		country_event = { id = pre.102 days = 1}		
+		}
+		BLG = {
+		country_event = { id = pre.102 days = 1}		
+		}
+		GRE = {
+		country_event = { id = pre.102 days = 1}		
+		}
+		UKR = {
+		country_event = { id = pre.102 days = 1}		
+		}
+		}
+	}
+
+	focus = {
+		id = PRE_End_France
+		icon = GFX_goal_unknown
+		x = -3
+		y = 5
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5
+		prerequisite = { focus = PRE_Koalition_Evropa }
+		available = {
+		has_war = no			
+		}		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = PRE_Deutschland_Uber_Alles
+		icon = GFX_goal_unknown
+		x = 0
+		y = 6
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5
+		prerequisite = { focus = PRE_End_France focus = PRE_Fuck_France  }
+		prerequisite = { focus = PRE_March_West }
+		available = {
+		has_war = no			
+		}		
+		completion_reward = {
 		
 		}
 	}
@@ -322,7 +490,7 @@ focus_tree = {
 		id = PRE_schleicher_holds_on
 		icon = GFX_goal_schleicher_holds_on
 		x = 3
-		y = 7
+		y = 8
 		cost = 1
 		available = {
 			has_country_flag = PRE_schleicher_refuses_step_down	
@@ -734,7 +902,7 @@ focus_tree = {
 		id = PRE_nazi_victory_focus
 		icon = GFX_goal_goring_takes_power
 		x = 10
-		y = 7
+		y = 8
 		cost = 1		
 		available = {
 			has_country_flag = PRE_nazi_victory	

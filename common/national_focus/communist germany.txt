@@ -920,7 +920,7 @@ focus = {
 	}
 focus = {
 		id = NGU_Intervene_Belarus
-		icon = GFX_goal_NGU_Strasser
+		icon = GFX_goal_NGU_Belarus2
 		x = 17
 		y = 7
 		cost = 1
@@ -937,7 +937,7 @@ focus = {
 	}
 	focus = {
 		id = NGU_Intervene_Ukraine
-		icon = GFX_goal_NGU_Strasser
+		icon = GFX_goal_NGU_Ukraine2
 		x = 17
 		y = 8
 		cost = 1
@@ -954,7 +954,7 @@ focus = {
 	}
 	focus = {
 		id = NGU_Reach_Stalin
-		icon = GFX_goal_NGU_Strasser
+		icon = GFX_goal_NGU_Stalin
 		x = 17
 		y = 9
 		cost = 1
@@ -970,7 +970,7 @@ focus = {
 	}
 	focus = {
 		id = NGU_Revenge_For_War
-		icon = GFX_goal_NGU_Strasser
+		icon = GFX_goal_NGU_Russia2
 		x = 17
 		y = 10
 		cost = 1
@@ -986,6 +986,37 @@ focus = {
 		add_timed_idea = {
 		idea = NGU_RussianWar
 		days = 95	
+		}	
+		}
+	}
+	focus = {
+		id = NGU_House_Capitalism
+		icon = GFX_goal_NGU_France
+		x = 17
+		y = 11
+		cost = 1
+		available = {
+		has_government = unisocialist
+		SOV  {
+		is_puppet_of = NGU	
+		}	
+		}
+        prerequisite = { focus = NGU_Revenge_For_War}				
+		completion_reward = {
+		complete_national_focus = NGU_Strasserist_Ending	
+		declare_war_on = {
+    	target = FRE
+    	type = annex_everything
+		}
+		add_timed_idea = {
+		idea = NGU_FrenchSaxons
+		days = 95	
+		}
+		ENG = {
+		country_event = { id = ngu.19 }	
+		}
+		NGU = {
+		set_country_flag = WW2_happened	
 		}	
 		}
 	}

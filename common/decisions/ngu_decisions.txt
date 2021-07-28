@@ -437,6 +437,55 @@ NGU_French_Deal = {
 		}
 }
 
+NGU_French_Deal_Red = {
+	    fire_only_once = yes
+		cost = 0
+        allowed = {
+        tag = NGU
+        }
+        available  = {   
+        original_tag = NGU    
+        at_war_with = FRE
+        FRE = {
+        surrender_progress > 0.5    
+        }
+        }
+        visible = {
+        original_tag = NGU
+        at_war_with = FRE
+        has_government = unisocialist
+        }    
+        complete_effect = {
+        annex_country = {
+        target = FRE
+        transfer_troops = no
+        }
+        release_puppet = FRE
+        NGU = {
+        transfer_state = 28
+        add_state_core = 28
+        transfer_state = 8
+        transfer_state = 6
+        transfer_state = 34
+        }
+        FRE = {
+        create_country_leader = {
+	        name = "Gregor Strasser"
+	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	        picture   = "Portrait_Germany_Gregor_Strasser.tga"
+	        expire = "1965.1.1"
+	        ideology = national_socialist_subid
+	        traits = {
+	        }
+            }
+        set_cosmetic_tag =  FRA_strasser_puppet       
+        }
+     ai_will_do = {
+			factor = 1000
+		}
+}
+}
+
 NGU_Russia_Deal = {
 	    fire_only_once = yes
 		cost = 0
@@ -444,13 +493,13 @@ NGU_Russia_Deal = {
         tag = NGU
         }
         available  = {     
+        NGU = {
+	     has_completed_focus = NGU_The_Great_Russian_War
+	     }
+        WLF = {
+	     country_exists = yes
+	     }
         RUS = {
-	WLF = {
-	country_exists = yes
-	}
-	NGU = {
-	has_completed_focus = NGU_The_Great_Russian_War
-	}
         NOT = {
         controls_state = 217
             controls_state = 195

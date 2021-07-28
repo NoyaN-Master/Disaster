@@ -793,3 +793,84 @@ country_event = { #goring gets what he fucking deserves
 		}
 	}
 }
+
+###FP
+country_event = { #BLT gets fccd
+	id = pre.101
+	title = pre.101.t
+	desc = pre.101.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.101.a
+		ai_chance = { factor = 100}
+		PRE = {
+		puppet = BLT
+		}
+		set_politics = {
+		ruling_party = ultranationalist
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+		}
+		set_popularities = {
+		ultranationalist = 100
+		}
+		create_country_leader = {
+	        name = "Rüdiger von der Goltz"
+	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	        picture   = "BLT_Goltz.tga"
+	        expire = "1965.1.1"
+	        ideology = ultranationalist_subideology
+	        traits = {
+	        }
+            }
+	}
+}
+
+country_event = { #Prussia Join Event
+	id = pre.102
+	title = pre.102.t
+	desc = pre.102.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.102.a
+		ai_chance = { factor = 100}
+	PRE = {
+	add_to_faction = ROOT	
+	}	
+	}
+}
+
+country_event = { # Surrender
+	id = pre.103
+	title = pre.103.t
+	desc = pre.103.d
+	fire_only_once = yes
+	
+	trigger = {
+	tag = PRE
+	has_war_with = RHN
+	RHN = {
+	has_capitulated = yes	
+	}
+	}
+
+	mean_time_to_happen = {
+		days = 4
+	}
+	
+	option = {
+		name = ngu.10.a
+		ai_chance = { factor = 100}
+		white_peace = FRE
+		annex_country = {
+    	target = RHN
+    	transfer_troops = yes
+		}
+		add_stability = 0.10
+	}
+}

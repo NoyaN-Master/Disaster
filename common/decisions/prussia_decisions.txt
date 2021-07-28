@@ -168,3 +168,296 @@ PRE_war_economy_decision = {
 
 
 }
+
+
+PRE_Foreign_Policy_category = {
+
+###take germany
+PRE_Take_South_Germany = {
+	    fire_only_once = yes
+		cost = 0
+        allowed = {
+        tag = PRE
+        }
+        available  = {   
+        has_war = no
+        }
+        visible = {
+        original_tag = PRE
+        has_completed_focus = PRE_Rest_Germany
+        }    
+        complete_effect = {
+        declare_war_on = {
+        target = BDN
+        type = annex_everything
+        }
+        declare_war_on = {
+        target = BAY
+        type = annex_everything
+        }
+        declare_war_on = {
+        target = WRT
+        type = annex_everything
+        }
+        }
+     ai_will_do = {
+			factor = 1000
+		}
+}
+
+PRE_Take_Austria = {
+	    fire_only_once = yes
+		cost = 0
+        allowed = {
+        tag = PRE
+        }
+        available  = {   
+        has_war = no
+        }
+        visible = {
+        original_tag = PRE
+        has_completed_focus = PRE_Rest_Germany
+        }    
+        complete_effect = {
+        declare_war_on = {
+        target = AUT
+        type = annex_everything
+        }
+        }
+     ai_will_do = {
+			factor = 1000
+		}
+}
+PRE_Take_CEZ = {
+	    fire_only_once = yes
+		cost = 0
+        allowed = {
+        tag = PRE
+        }
+        available  = {   
+        has_war = no
+        }
+        visible = {
+        original_tag = PRE
+        has_completed_focus = PRE_Rest_Germany
+        }    
+        complete_effect = {
+        declare_war_on = {
+        target = CEZ
+        type = annex_everything
+        }
+        }
+     ai_will_do = {
+			factor = 1000
+		}
+}
+
+PRE_Deal_CEZ = {
+	    fire_only_once = yes
+		cost = 0
+        allowed = {
+        tag = PRE
+        }
+        available  = {   
+        has_war = no
+        }
+        visible = {
+        original_tag = PRE
+        has_completed_focus = PRE_Rest_Germany
+        }    
+        complete_effect = {
+        release_puppet = CEZ
+        CEZ = {
+          set_politics = {
+		ruling_party = autocratic
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+		}
+		set_popularities = {
+		autocratic = 100
+		}
+		create_country_leader = {
+	        name = "Martin Bormann"
+	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	        picture   = "Portrait_Germany_Martin_Bormann.tga"
+	        expire = "1965.1.1"
+	        ideology = autocratic_subideology
+	        traits = {
+	        }
+            }
+        }
+	}
+     ai_will_do = {
+			factor = 1000
+		}
+}
+
+PRE_Attack_Rhineland = {
+	    fire_only_once = yes
+		cost = 0
+        allowed = {
+        tag = PRE
+        }
+        available  = {   
+        has_war = no
+        }
+        visible = {
+        original_tag = PRE
+        has_completed_focus = PRE_Rest_Germany
+        }    
+        complete_effect = {
+        declare_war_on = {
+    	     target = FRE
+    	     type = annex_everything
+		}
+		add_timed_idea = {
+		idea = NGU_FrenchSaxons
+		days = 50
+		}	
+        }
+     ai_will_do = {
+			factor = 1000
+		}
+}
+
+##take east
+
+PRE_Diplomacy_Ostland = {
+	    fire_only_once = yes
+		cost = 0
+        allowed = {
+        tag = PRE
+        }
+        available  = {   
+        has_war = no
+        }
+        visible = {
+        original_tag = PRE
+        has_completed_focus = PRE_generalplan_ost
+        }    
+        complete_effect = {
+        BLT = {
+        country_event = {id = pre.101 days = 1}     
+        }
+        }
+     ai_will_do = {
+			factor = 1000
+		}
+}
+
+PRE_Declare_UKR = {
+	    fire_only_once = yes
+		cost = 0
+        allowed = {
+        tag = PRE
+        }
+        available  = {   
+        has_war = no
+        }
+        visible = {
+        original_tag = PRE
+        has_completed_focus = PRE_generalplan_ost
+        }    
+        complete_effect = {
+        declare_war_on = {
+        target = UKR
+        type = annex_everything
+        }
+        declare_war_on = {
+        target = FRI
+        type = annex_everything
+        }
+        }
+     ai_will_do = {
+			factor = 1000
+		}
+}
+
+PRE_Declare_Russia = {
+	    fire_only_once = yes
+		cost = 0
+        allowed = {
+        tag = PRE
+        }
+        available  = {   
+        has_war = no
+        BLT = {
+        is_puppet_of = PRE
+        }
+        UKR = {
+         is_puppet_of = PRE    
+        }
+        has_war = no
+        }
+        visible = {
+        original_tag = PRE
+        has_completed_focus = PRE_generalplan_ost
+        }    
+        complete_effect = {
+        declare_war_on = {
+        target = RUS
+        type = annex_everything
+        }
+        add_timed_idea = {
+		idea = NGU_RussianWar
+		days = 95	
+		}
+        }
+     ai_will_do = {
+			factor = 1000
+		}
+}
+
+PRE_Russia_Peace = {
+	    fire_only_once = yes
+		cost = 0
+        allowed = {
+        tag = PRE
+        }
+        available  = {     
+        RUS = {
+        NOT = {
+            controls_state = 217
+            controls_state = 195
+            controls_state = 219 
+        }
+        }  
+        }
+        visible = {
+        original_tag = PRE
+        has_completed_focus = PRE_generalplan_ost
+        }    
+        complete_effect = {
+        PRE_RussianEffect = yes 
+        }
+     ai_will_do = {
+			factor = 1000
+		}
+}
+
+PRE_France_Surrender = {
+	    fire_only_once = yes
+		cost = 0
+        allowed = {
+        tag = PRE
+        }
+        available  = {   
+        original_tag = PRE    
+        at_war_with = FRE
+        FRE = {
+        surrender_progress > 0.5    
+        }
+        }
+        visible = {
+        original_tag = PRE
+        has_completed_focus = PRE_Fuck_France
+        }    
+        complete_effect = {
+        effect_frenchcollapse = yes 
+        }
+     ai_will_do = {
+			factor = 1000
+		}
+}
+}

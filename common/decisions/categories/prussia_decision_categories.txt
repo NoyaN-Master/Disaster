@@ -24,3 +24,20 @@ PRE_war_economy_decision = {
 		has_completed_focus = PRE_readying_war_economy
 	}
 }
+
+PRE_Foreign_Policy_category = {
+
+	priority = 80
+	allowed = {
+		OR = {
+			tag = PRE
+		}
+	}
+	picture = Decision_picture_war_economy
+	visible = {
+		OR = {
+			has_completed_focus = PRE_generalplan_ost
+			has_completed_focus = PRE_puppet_poland
+		}
+	}
+}
