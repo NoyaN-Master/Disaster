@@ -6,58 +6,7 @@ bookmarks = {
 		picture = "GFX_select_date_1936"
 		default_country = "AUT"
 		default = yes
-		
-		"NGP"={
-			history = "ENG_GATHERING_STORM_DESC"
-			ideology = conservative
-			available = { NOT = { has_dlc = "La Resistance" } }
-			ideas = {
 
-			}
-			focuses = {
-
-			}
-		}
-		"WRF"={
-			history = "ENG_GATHERING_STORM_DESC"
-			ideology = authoritarian_democrat
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-		"FIU"={
-			history = "ENG_GATHERING_STORM_DESC"
-			ideology = ultranationist
-			ideas = {
-
-			}
-			focuses = {
-
-			}
-		}
-		"CIB"={
-			history = "ENG_GATHERING_STORM_DESC"
-			ideology = ultranationist
-			ideas = {
-
-			}
-			focuses = {
-
-			}
-		}
-		
-		"LBY"={
-			history = "AUT_GATHERING_STORM_DESC"
-			ideology = ultranationalist
-			ideas = {
-
-			}
-			focuses = {
-
-			}
-		}
-		
 		"PRE"={
 			history = "PRE_GATHERING_STORM_DESC"
 			ideology = authoritarian_democrat 
@@ -71,48 +20,81 @@ bookmarks = {
 			PRE_schleicher_holds_on
 			PRE_dnvp_victory_focus
 			}
-		}
-
-		"---"={
-			history = "OTHER_GATHERING_STORM_DESC"
-		}
-
-
-		# minors from DLC ####
-		"CRW"={
-			minor = yes
-			history = "CRW_GATHERING_STORM_DESC"
-			ideology = liberal
+		}		
+		"NGU"={
+			history = "NGU_GATHERING_STORM_DESC"
+			ideology = authoritarian_socialist
 			ideas = {
-				
+			NGU_problem_ideology
+			NGU_paramilitary_problem
+			NGU_economic_stagnation
 			}
 			focuses = {
-
+			NGU_choose_strasser
+			NGU_rise_of_evil
+			NGU_choose_hitler
 			}
 		}
-		"THR"={
-			minor = yes
-			history = "CRW_GATHERING_STORM_DESC"
+		"AUT"={
+			history = "AUT_GATHERING_STORM_DESC"
+			ideology = ultranationalist
+			ideas = {
+			AUT_standestaat 
+			AUT_pan_germanist_discotent
+			AUT_unresolved_monarchy
+			}
+			focuses = {
+			AUT_merge_the_posts
+			AUT_schussnigg_at_the_helm
+			AUT_starhemberg_unbroken
+			}
+		}
+		"WRF"={
+			history = "WRF_GATHERING_STORM_DESC"
 			ideology = authoritarian_democrat
 			ideas = {
-				
+			WRF_Kemal_Army
+			TUR_Struggle_Front
+			WRF_Legitimate_Heir
 			}
 			focuses = {
-
+			WRF_under_the_crescent
+			WRF_tekalifi_milliye
+			WRF_deal_ist
+			}
+		}
+		"CIB"={
+			history = "CIB_GATHERING_STORM_DESC"
+			ideology = ultranationist
+			ideas = {
+			CIB_Enver_Idea
+			CIB_King_Hill
+			CIB_OrduVatan
+			}
+			focuses = {
+			CIB_war_for_soul_turk
+			CIB_enveristan_proper
+			CIB_nuri_reach
 			}
 		}
 		"ANT"={
-			history = "CRW_GATHERING_STORM_DESC"
-			ideology = conservative
+			history = "CIB_GATHERING_STORM_DESC"
+			ideology = ultranationist
 			ideas = {
-				
+			ANT_Failed_State
+			ANT_Anarchy
+			ANT_Warlords_Emerging
 			}
 			focuses = {
-
+			ANT_increase_presence
+			ANT_Assume_Full_Control
+			ANT_Siege_Capital
 			}
-		}
-		
-		
+		}			
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}	
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }

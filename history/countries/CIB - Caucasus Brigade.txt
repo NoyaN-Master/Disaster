@@ -118,22 +118,22 @@ create_field_marshal = {
 			name = "Enver Pasha"
 			picture = "Portrait_CIB_Enver_Pasha.tga"
 			traits = { war_hero brilliant_strategist war_hero infantry_officer hill_fighter  enverist_general}
-			skill = 4
-			attack_skill = 5
-			defense_skill = 5
-			planning_skill = 5
-			logistics_skill = 5
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
 			}	
 			
 create_corps_commander = {
 			name = "Samet Pasha"
 			picture = "Portrait_CIB_Samet.tga"
 			traits = { offensive_doctrine enverist_general }
-			skill = 3
+			skill = 2
 			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 5
-			logistics_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
 			}
 
 create_corps_commander = {
