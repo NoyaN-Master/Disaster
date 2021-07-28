@@ -1,5 +1,23 @@
 add_namespace = wrf
 
+country_event = { #start
+	id = wrf.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.1" }
+	title = wrf.1.t
+	desc = wrf.1.d
+
+	picture = GFX_report_wrf_peker
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = wrf.1.a
+		}
+	}
+
+
 country_event = { #Antalya1
 	id = wrf.9
 	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }

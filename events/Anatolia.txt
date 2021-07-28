@@ -13,30 +13,7 @@ country_event = {
     option = {
         name = ant.1.a
         ai_chance = { factor = 100}
-        custom_tooltip = ant.1.tooltip
-        hidden_effect = {
-            set_variable = {
-	        var = ANT.nazim_influence
-	        value = 20
-                }
-            set_variable = {
-	        var = ANT.enver_influence
-	        value = 20
-                }
-            set_variable = {
-	        var = ANT.kemalist_influence
-	        value = 20
-                }
-            set_variable = {
-	        var = ANT.army_influence
-	        value = 20
-                }
-            set_variable = {
-	        var = ANT.merc_influence
-	        value = 20
-                }
-        set_country_flag = influence_active                        
-        }
+        
     }    
 }
 

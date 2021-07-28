@@ -13,4 +13,25 @@ on_actions = {
             }
         }
     }
+	on_startup = {
+        effect = {
+            CIB = { 
+                country_event = { id = enver.1 }
+            }
+        }
+    }
+	on_startup = {
+        effect = {
+            WRF = { 
+                country_event = { id = wrf.1 }
+            }
+        }
+    }
+	on_startup = {
+        effect = {
+            ANT = { 
+                country_event = { id = ant.1 }
+            }
+        }
+    }
 }
