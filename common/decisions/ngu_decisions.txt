@@ -495,10 +495,11 @@ NGU_Russia_Deal = {
         available  = {     
         NGU = {
 	     has_completed_focus = NGU_The_Great_Russian_War
+         has_war_with = RUS
 	     }
         WLF = {
 	     country_exists = yes
-	     }
+        } 
         RUS = {
         NOT = {
         controls_state = 217

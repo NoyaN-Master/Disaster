@@ -171,7 +171,7 @@ focus_tree = {
 
 	focus = {
 		id = PRE_stir_up_mecklenburg
-		icon = GFX_goal_unknown
+		icon = GFX_goal_NGU_mecklenburg
 		x = 10
 		y = 0
 		cost = 5	
@@ -195,7 +195,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_saxony
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PRE_Sax
 		x = 0
 		y = 1
 		relative_position_id = PRE_stir_up_mecklenburg
@@ -219,7 +219,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_strike_poland
-		icon = GFX_goal_unknown
+		icon = GFX_goal_NGU_Piast
 		x = 0
 		y = 2
 		relative_position_id = PRE_stir_up_mecklenburg
@@ -250,7 +250,7 @@ focus_tree = {
 	}	
 	focus = {
 		id = PRE_puppet_poland
-		icon = GFX_goal_unknown
+		icon = GFX_goal_deutschland_vereint
 		x = -1
 		y = 3
 		relative_position_id = PRE_stir_up_mecklenburg
@@ -292,7 +292,7 @@ focus_tree = {
 
 	focus = {
 		id = PRE_Rest_Germany
-		icon = GFX_goal_unknown
+		icon = GFX_goal_pangerman
 		x = 0
 		y = 4
 		relative_position_id = PRE_stir_up_mecklenburg
@@ -311,7 +311,7 @@ focus_tree = {
 
 	focus = {
 		id = PRE_generalplan_ost
-		icon = GFX_goal_unknown
+		icon = GFX_goal_WRF_korps
 		x = 1
 		y = 3
 		relative_position_id = PRE_stir_up_mecklenburg
@@ -343,6 +343,7 @@ focus_tree = {
 		has_war = no			
 		}		
 		completion_reward = {
+		country_event = { id = preo.1 days = 1 }	
 		unlock_decision_tooltip = PRE_Diplomacy_Ostland
 		unlock_decision_tooltip = PRE_Declare_Russia
 		unlock_decision_tooltip = PRE_Declare_UKR
@@ -352,7 +353,7 @@ focus_tree = {
 
 	focus = {
 		id = PRE_The_RKs
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PRE_DTS
 		x = 2
 		y = 4
 		relative_position_id = PRE_stir_up_mecklenburg
@@ -375,7 +376,7 @@ focus_tree = {
 
 	focus = {
 		id = PRE_Fuck_France
-		icon = GFX_goal_unknown
+		icon = GFX_goal_NGU_TeutonWAR
 		x = 3
 		y = 5
 		relative_position_id = PRE_stir_up_mecklenburg
@@ -407,7 +408,7 @@ focus_tree = {
 
 	focus = {
 		id = PRE_March_West
-		icon = GFX_goal_unknown
+		icon = GFX_goal_NGU_rhine
 		x = 0
 		y = 5
 		relative_position_id = PRE_stir_up_mecklenburg
@@ -423,7 +424,7 @@ focus_tree = {
 
 	focus = {
 		id = PRE_Koalition_Evropa
-		icon = GFX_goal_unknown
+		icon = GFX_goal_PRE_EVROPA
 		x = -2
 		y = 4
 		relative_position_id = PRE_stir_up_mecklenburg
@@ -454,7 +455,7 @@ focus_tree = {
 
 	focus = {
 		id = PRE_End_France
-		icon = GFX_goal_unknown
+		icon = GFX_goal_NGU_France
 		x = -3
 		y = 5
 		relative_position_id = PRE_stir_up_mecklenburg
@@ -464,13 +465,16 @@ focus_tree = {
 		has_war = no			
 		}		
 		completion_reward = {
-		
+		declare_war_on = {
+    	target = FRE
+    	type = annex_everything
+		}
 		}
 	}
 
 	focus = {
 		id = PRE_Deutschland_Uber_Alles
-		icon = GFX_goal_unknown
+		icon = GFX_goal_The_republic_moves_on
 		x = 0
 		y = 6
 		relative_position_id = PRE_stir_up_mecklenburg
@@ -481,7 +485,7 @@ focus_tree = {
 		has_war = no			
 		}		
 		completion_reward = {
-		
+		add_stability = 0.20
 		}
 	}
 

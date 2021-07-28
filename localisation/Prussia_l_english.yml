@@ -19,10 +19,16 @@ PRE_saxony_desc:0""
 PRE_stir_up_mecklenburg_tooltip:0"§RThis Focus will lead to war with the NGPU and the annexation of Mecklenburg§!"
 PRE_strike_poland:0"Strike The Poles"
 PRE_strike_poland_desc:0""
-PRE_puppet_poland:0"A Polish Puppet State"
+PRE_puppet_poland:0 "Consolidate The New State"
 PRE_puppet_poland_desc:0""
 PRE_generalplan_ost:0"Generalplan Ost"
 PRE_generalplan_ost_desc:0""
+PRE_Rest_Germany:0 "Unify Germany"
+PRE_March_West:0 "March Into The River"s
+PRE_Koalition_Evropa:0 "Europaische Koalition"
+PRE_End_France:0 "Retake Alsace"
+PRE_Deutschland_Uber_Alles:0 "Deutschland Uber Alles!"
+
 PRE_Take_South_Germany:0 "Roll Into South Germany"
 PRE_Take_Austria:0 "A Forced Anchluss"
 PRE_Diplomacy_Ostland:0 "Reach Out To Goltz"
@@ -31,10 +37,11 @@ PRE_Declare_Russia:0 "Strike Russia"
 PRE_Russia_Peace:0 "The Moscow Papers"
 PRE_France_Surrender:0 "Treaty of Carolingia"
 PRE_Attack_Rhineland:0 "March Into The Rhineland"
-
+PRE_Fuck_France:0 "End France"
 PRE_The_RKs:0 "Deutschesphäre"
-
-
+PRE_Deal_CEZ:0 "Consolidate Bohemia"
+PRE_Take_CEZ:0 "Declare on Bohemia"
+PRE_Foreign_Policy_category:0 "Foreign Policy"
 
 #begin focus tree
 PRE_start_focus:0"Address the Reichstag"
@@ -286,6 +293,21 @@ pre.32.a:0 "Excellent!"
 pre.33.t:0 "A Rainy Night in Konigsberg"
 pre.33.d:0 "Hermann Goring trudged along through the wet street, his soaked overcoat shielding the blue uniform beneath. The old airman was tired, and stressed: Schleicher was only getting more powerful, and by now Goring had to watch his back. But he walked on, for there was vital business to be done.\nDuring the earlier days of the crisis, countless coups against Schleicher had been discussed and planned, only to be called off later on. This time, however, would be different. Countless extremely influential businessmen, aristocrats, generals, had all been pushed over the line by the madness and radicalism of the Schleicher regime. They knew that drastic action had to be taken to liberate Prussia from this traitorous cyptosocialist, and they knew that Goring was the man for the job.\nGoring reached the building - an impressive one, surely a good sign of the power of the people who had reached out to him. He made his way in, and was greeted with obvious enthusiasm by a neatly-uniformed doorman, who relieved him of his coat and led him onwards to an impressive door, behind which, of course, would be the men who had approached him. Goring walked forwards, turned the handle, and made his way in.\nBut there was only one man in that room. One man, pointing a gleaming pistol right ahead."
 pre.33.a:0 "So long, Hermann"
+
+pre.101.t:0 "A Telephone to Riga"
+pre.101.a:0 "Good."
+
+pre.102.t:0 "The German Invitation"
+pre.102.a:0 "AMONGUS"
+
+
+pre.103.t:0 "The Ruhr Surrender"
+pre.103.d:0 "Upon our stunning victory in Rhineland, the French authorities have gathered to propose us a truce and an agreement that will give us our claims. The french know they can't afford casulties and we know that we can't surpass the Maginot line."
+pre.103.a:0 "Three hurrays for Germany!"
+
+preo.1.t:0 "Occupation of Poland"
+preo.1.d:0 "With the bloodshed over, we now hold the future of the Poles in our mere hands. We will occupy them and oversee their government and control their internal actions as an occupation force."
+preo.1.a:0 "Long Live Germany."
 
 #country flags
 PRE_investigation_started:0 "The corruption scandal is underway"

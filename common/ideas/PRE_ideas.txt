@@ -829,6 +829,15 @@ PRE_navy_idea = {
 			}
 		} 
 
+PRE_FrenchGibs = {
+            on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_navy_idea" }
+            targeted_modifier = {
+                tag = FRE
+                trade_cost_for_target_factor = -0.5
+                cic_to_target_factor = 0.25
+            }
+            picture = junker_rule
+        } 
 
 
 
