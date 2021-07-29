@@ -4,10 +4,6 @@
 PRE_GATHERING_STORM_DESC:0 "In the aftermath of the Great War, Germany laid in ruins, broken apart. The Junkers have taken power in Prussia, but they’re far from unopposed. Political dissidence is rampant in Prussia, and Junker rule is dwindling in power. The stage is set for a political catastrophe, and the sociopolitical struggles of this newly reborn country have Europe waiting with baited breath for what may come next."
 
 ####### prussian occupation events
-preo.1.t:0"Occupation of Poland"
-preo.1.d:0""
-preo.1.a:0""
-preo.1.b:0""
 
 
 
@@ -42,6 +38,7 @@ PRE_The_RKs:0 "Deutschesphäre"
 PRE_Deal_CEZ:0 "Consolidate Bohemia"
 PRE_Take_CEZ:0 "Declare on Bohemia"
 PRE_Foreign_Policy_category:0 "Foreign Policy"
+PRE_FrenchGibs:0 "French Reperations"
 
 #begin focus tree
 PRE_start_focus:0"Address the Reichstag"
