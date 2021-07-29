@@ -19,7 +19,8 @@ focus_tree = {
 		select_effect = {
 		}
 		completion_reward = {
-		
+		country_event =  { id = ant.38 days = 1}
+		add_ideas = IZM_Reactionaries
         }
 	}
 
@@ -38,7 +39,7 @@ focus_tree = {
 		select_effect = {
 		}
 		completion_reward = {
-		
+		add_ideas = IZM_Crooked_Arrows
         }
 	}
 
@@ -320,7 +321,8 @@ focus_tree = {
 		swap_ideas = {
 		remove_idea = IZM_Crooked_Arrows_2
 		add_idea = IZM_Crooked_Arrows_3
-		}
+		},
+		country_event =  { id = ant.37 days = 1}
         }
 	}
 

@@ -803,6 +803,76 @@ country_event = { #Siege Of Capital
     }
 }
 
+country_event = { #Siege Of Capital
+    id = ant.37
+    title = ant.37.t
+    desc = ant.37.d
+    fire_only_once = yes
+    picture = GFX_evt_Picture
+    is_triggered_only = yes
+
+    option = {
+        ai_chance = { factor = 100} 
+        name = ant.37.a
+    }
+}
+
+country_event = { #Siege Of Capital
+    id = ant.38
+    title = ant.38.t
+    desc = ant.38.d
+    fire_only_once = yes
+    picture = GFX_evt_Picture
+    is_triggered_only = yes
+
+    option = {
+        ai_chance = { factor = 100} 
+        name = ant.38.a
+    }
+}
+
+country_event = { #StartRev
+    id = ant.39
+    title = ant.39.t
+    desc = ant.39.d
+    fire_only_once = yes
+    picture = GFX_evt_Picture
+    is_triggered_only = yes
+
+    option = {
+        ai_chance = { factor = 100} 
+        name = ant.39.a
+    }
+}
+
+country_event = { #StartRev
+    id = ant.40
+    title = ant.40.t
+    desc = ant.40.d
+    fire_only_once = yes
+    picture = GFX_evt_Picture
+    is_triggered_only = yes
+
+    option = {
+        ai_chance = { factor = 100} 
+        name = ant.40.a
+    }
+}
+
+country_event = { #StartRev
+    id = ant.41
+    title = ant.41.t
+    desc = ant.41.d
+    fire_only_once = yes
+    picture = GFX_evt_Picture
+    is_triggered_only = yes
+
+    option = {
+        ai_chance = { factor = 100} 
+        name = ant.41.a
+    }
+}
+
 country_event = {
     id = fuller.1
     title = fuller.1.t

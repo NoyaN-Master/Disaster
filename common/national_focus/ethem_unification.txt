@@ -192,7 +192,8 @@ focus_tree = {
         prerequisite = {focus = IZM_Legitimize_Rule}
         prerequisite = {focus = IZM_Fate_Of_The_False_Messiah}
         prerequisite = {focus = IZM_Atsiz_Ties}
-		completion_reward = { 
+		completion_reward = {
+		country_event = { id = ant.39 days = 1}
 		add_ideas = IZM_Turkish_Revolution	  
 		hidden_effect = {
 		}
@@ -326,7 +327,8 @@ focus_tree = {
 		add_timed_idea = {
 		idea = IZM_Western_Landlords
 		days = 120	
-		}	  
+		}
+		country_event = { id = ant.40 days = 1}
 		hidden_effect = {
 		}
 		}
@@ -410,7 +412,8 @@ focus_tree = {
 			factor = 1
 		}
         prerequisite = {focus = IZM_Formation_Of_Gangs}
-		completion_reward = { 
+		completion_reward = {
+		country_event = { id = ant.41 days = 1}	
 		swap_ideas = {
 		add_idea = IZM_Nation_Mentality
 		remove_idea = IZM_Nation_Mentality2	
