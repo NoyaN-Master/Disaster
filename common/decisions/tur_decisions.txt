@@ -547,7 +547,7 @@ WRF_Syrian_Partition = {
         tag = WRF
         OR = {
         has_country_flag = debug_TR
-        has_completed_focus = WRF_Form_BorderGuard
+        has_completed_focus = WRF_Reis
         }
         }
         available  = {
@@ -563,7 +563,7 @@ WRF_Syrian_Partition = {
         original_tag = WRF
         OR = {
         has_country_flag = debug_TR
-        has_completed_focus = WRF_Form_BorderGuard
+        has_completed_focus = WRF_Reis
         }
         }    
         complete_effect = {
@@ -596,6 +596,98 @@ WRF_Syrian_Partition = {
 			factor = 1000
 		}
 }
+
+WRF_Demand_Azeri = {
+	    fire_only_once = yes
+		cost = 0
+        allowed = {
+        tag = WRF
+        OR = {
+        has_country_flag = debug_TR
+        has_completed_focus = WRF_Reis
+        }
+        }
+        available  = {
+        has_war = no
+        }
+        visible = {
+        original_tag = WRF
+        OR = {
+        has_country_flag = debug_TR
+        has_completed_focus = WRF_Reis
+        }
+        }    
+        complete_effect = {
+        INR = {
+		country_event = { id = fevzi.13 days = 1 }	
+		}
+        }
+     ai_will_do = {
+			factor = 1000
+		}
+}
+
+WRF_Demand_Greek = {
+	    fire_only_once = yes
+		cost = 0
+        allowed = {
+        tag = WRF
+        OR = {
+        has_country_flag = debug_TR
+        has_completed_focus = WRF_Reis
+        }
+        }
+        available  = {
+        has_war = no
+        }
+        visible = {
+        original_tag = WRF
+        OR = {
+        has_country_flag = debug_TR
+        has_completed_focus = WRF_Reis
+        }
+        }    
+        complete_effect = {
+        GRE = {
+		country_event = { id = tur.14 days = 1 }	
+		}
+        }
+     ai_will_do = {
+			factor = 1000
+		}
+}
+
+WRF_Kill_Arabs = {
+	    fire_only_once = yes
+		cost = 0
+        allowed = {
+        tag = WRF
+        OR = {
+        has_country_flag = debug_TR
+        has_completed_focus = WRF_Reis
+        }
+        }
+        available  = {
+        has_war = no
+        }
+        visible = {
+        original_tag = WRF
+        OR = {
+        has_country_flag = debug_TR
+        has_completed_focus = WRF_Reis
+        }
+        }    
+        complete_effect = {
+        declare_war_on = {
+    	target = PAL
+    	type = annex_everything
+		}
+        }
+     ai_will_do = {
+			factor = 1000
+		}
+}
+
 WRF_Iraqi_Partition = {
 	    fire_only_once = yes
 		cost = 0
@@ -603,7 +695,7 @@ WRF_Iraqi_Partition = {
         tag = WRF
         OR = {
         has_country_flag = debug_TR
-        has_completed_focus = WRF_Form_BorderGuard
+        has_completed_focus = WRF_Reis
         }
         }
         available  = {
@@ -616,7 +708,7 @@ WRF_Iraqi_Partition = {
         original_tag = WRF
         OR = {
         has_country_flag = debug_TR
-        has_completed_focus = WRF_Form_BorderGuard
+        has_completed_focus = WRF_Reis
         }
         }   
         complete_effect = {
@@ -655,7 +747,7 @@ WRF_Palestinian_Partition = {
         tag = WRF
         OR = {
         has_country_flag = debug_TR
-        has_completed_focus = WRF_Form_BorderGuard
+        has_completed_focus = WRF_Reis
         }
         }
         available  = {
@@ -668,7 +760,7 @@ WRF_Palestinian_Partition = {
         original_tag = WRF
         OR = {
         has_country_flag = debug_TR
-        has_completed_focus = WRF_Form_BorderGuard
+        has_completed_focus = WRF_Reis
         }
         }  
         complete_effect = {
