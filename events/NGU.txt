@@ -384,7 +384,9 @@ country_event = { # Berling Becomes Capital
 	        ideology = natsoc_hitler
 	        traits = {
 	        }
-            } 
+            }
+		add_ideas = one_party_state	 
+		add_ideas = planned_economy
 	}
 
 	option = {
@@ -566,6 +568,8 @@ country_event = { # Who will lead us
 			schizo_nigger	
 	        }
             }
+		add_ideas = military_government	 
+		add_ideas = corporatism	
 		set_cosmetic_tag = Heydrich_Evropa
 		country_event = { id = ngu.20 days = 2}
 		WLF = {

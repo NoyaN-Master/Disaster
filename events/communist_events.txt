@@ -19,9 +19,10 @@ country_event = { #madanoğlu coup
         }
         add_popularity = {
         ideology = authoritarian_socialist
-        popularity = -0.5
+        popularity = 0.5
         }
-
+        add_ideas = IZM_ethem_hog
+        add_ideas = military_government
     }
     
     option = {

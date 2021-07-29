@@ -15,6 +15,8 @@ country_event = { #New Day, talking with Ismet
 	option = {
 		name = tur.1.a
         custom_effect_tooltip = new_day_tt
+		add_ideas = one_party_state
+		add_ideas = planned_economy
         hidden_effect = {
 		remove_unit_leader = 1881	
         create_country_leader = {
@@ -275,6 +277,8 @@ country_event = { #Succesor
 		remove_ideas = {
 		WRF_Ataturk_Reforms_3
 		}
+		add_ideas = autocracy
+		add_ideas = planned_economy
 		add_ideas ={ WRF_Ataturk_Heir_1 }
 		unlock_national_focus = WRF_Fevzi_Chosen	
         hidden_effect = {   
@@ -335,10 +339,10 @@ country_event = { #Iron Democracy
 }
 
 country_event = { #Kemalist Authority
-	id = tur.11
+	id = tur.15
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
-	title = tur.11.t
-	desc = tur.11.d
+	title = tur.15.t
+	desc = tur.15.d
 
 	picture = GFX_report_event_aut_dollfuss_speech
 
@@ -347,7 +351,7 @@ country_event = { #Kemalist Authority
 	is_triggered_only = yes
 
 	option = {
-		name = tur.10.a
+		name = tur.15.a
 		custom_effect_tooltip = WRF_reform_tooltip_kemal
 		add_ideas = WRF_Auth_Outrage
 		swap_ideas = {
@@ -386,10 +390,10 @@ country_event = { #Kemalist Authority
 }
 
 country_event = { #Iron Democracy
-	id = tur.10
+	id = tur.12
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
-	title = tur.10.t
-	desc = tur.10.d
+	title = tur.12.t
+	desc = tur.12.d
 
 	picture = GFX_report_event_aut_dollfuss_speech
 
@@ -398,9 +402,11 @@ country_event = { #Iron Democracy
 	is_triggered_only = yes
 
 	option = {
-		name = tur.10.a
+		name = tur.12.a
 		add_stability = 0.10
 		custom_effect_tooltip = WRF_reform_tooltip
+		add_ideas = multi_party_democracy
+		add_ideas = interventionism
 		set_politics = {
 		ruling_party = social_democrat
         elections_allowed = no
@@ -436,28 +442,6 @@ country_event = { #Iron Democracy
 }
 
 country_event = { #Iron Democracy
-	id = tur.12
-	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
-	title = tur.12.t
-	desc = tur.12.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = tur.12.a
-		add_stability = -0.07
-		WRF = {
-		transfer_state = 183
-		add_state_core = 183	
-		}
-	}
-}
-
-country_event = { #Greece event
 	id = tur.14
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
 	title = tur.14.t
@@ -471,6 +455,28 @@ country_event = { #Greece event
 
 	option = {
 		name = tur.14.a
+		add_stability = -0.07
+		WRF = {
+		transfer_state = 183
+		add_state_core = 183	
+		}
+	}
+}
+
+country_event = { #Greece event
+	id = tur.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = tur.17.t
+	desc = tur.17.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.15.a
 		ai_chance = { factor = 50 }
 		WRF = {
 		transfer_state = 184
@@ -481,7 +487,7 @@ country_event = { #Greece event
 	}
 
 	option = {
-		name = tur.14.a
+		name = tur.15.a
 		ai_chance = { factor = 0 }
 		declare_war_on = {
     	target = WRF

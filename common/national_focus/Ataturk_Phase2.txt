@@ -337,7 +337,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			country_event = { id = tur.12 days = 1}	
+			country_event = { id = tur.14 days = 1}	
 		hidden_effect = {
 		}
 		}
@@ -499,6 +499,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		country_event = { id = tur.15 days = 1}		
 		hidden_effect = {
 		}
 		}
@@ -622,6 +623,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		country_event = { id = tur.12 days = 1}	
 		hidden_effect = {
 		}
 		}
