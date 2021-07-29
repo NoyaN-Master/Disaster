@@ -420,6 +420,120 @@ TUR_unification_category = {
 		}
      }
 
+     SKL_fuller_unif_Dec = {
+	    fire_only_once = yes
+		cost = 0
+        available  = {
+        original_tag = SKL  
+        owns_state = 49
+        owns_state = 347
+        owns_state = 839
+        owns_state = 798
+        owns_state = 356
+        owns_state = 355
+        owns_state = 354
+        owns_state = 353
+        owns_state = 800
+        owns_state = 230
+        owns_state = 229
+        owns_state = 352
+        owns_state = 350
+        owns_state = 346
+        owns_state = 348
+        owns_state = 349
+        owns_state = 797
+        }
+        visible = {
+        original_tag = SKL
+        }  
+        complete_effect = {
+        WRF = { every_unit_leader = { set_nationality = SKL } }
+        CIB = { every_unit_leader = { set_nationality = SKL } }
+        OTH = { every_unit_leader = { set_nationality = SKL } }   
+        set_cosmetic_tag = SKL_Fuller_Tag
+        hidden_effect = {
+            set_country_flag = unification_fuller
+        }
+        SKL = {
+        add_state_core = 49
+        add_state_core = 347
+        add_state_core = 839
+        add_state_core = 798
+        add_state_core = 356
+        add_state_core = 355
+        add_state_core = 354
+        add_state_core = 353
+        add_state_core = 800
+        add_state_core = 352
+        add_state_core = 350
+        add_state_core = 346
+        add_state_core = 348
+        add_state_core = 349
+        add_state_core = 797
+        }
+        }
+        ai_will_do = {
+			factor = 1000
+		}
+     }
+
+     Mercs_fuller_unif_Dec = {
+	    fire_only_once = yes
+		cost = 0
+        available  = {
+        original_tag = OTH  
+        owns_state = 49
+        owns_state = 347
+        owns_state = 839
+        owns_state = 798
+        owns_state = 356
+        owns_state = 355
+        owns_state = 354
+        owns_state = 353
+        owns_state = 800
+        owns_state = 230
+        owns_state = 229
+        owns_state = 352
+        owns_state = 350
+        owns_state = 346
+        owns_state = 348
+        owns_state = 349
+        owns_state = 797
+        }
+        visible = {
+        original_tag = OTH
+        }  
+        complete_effect = {
+        WRF = { every_unit_leader = { set_nationality = OTH } }
+        CIB = { every_unit_leader = { set_nationality = OTH } }
+        IZM = { every_unit_leader = { set_nationality = OTH } }   
+        set_cosmetic_tag = OTH_Unif_Tag
+        hidden_effect = {
+            set_country_flag = unification_fuller
+        }
+        OTH = {
+        add_state_core = 49
+        add_state_core = 347
+        add_state_core = 839
+        add_state_core = 798
+        add_state_core = 356
+        add_state_core = 355
+        add_state_core = 354
+        add_state_core = 353
+        add_state_core = 800
+        add_state_core = 352
+        add_state_core = 350
+        add_state_core = 346
+        add_state_core = 348
+        add_state_core = 349
+        add_state_core = 797
+        }
+        }
+        ai_will_do = {
+			factor = 1000
+		}
+     }
+
      CLP_unify_decision = {
 	    fire_only_once = yes
 		cost = 0
