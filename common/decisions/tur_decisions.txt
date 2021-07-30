@@ -392,7 +392,7 @@ TUR_unification_category = {
         WRF = { every_unit_leader = { set_nationality = IZM } }
         CIB = { every_unit_leader = { set_nationality = IZM } }
         OTH = { every_unit_leader = { set_nationality = IZM } }   
-        set_cosmetic_tag = CIB_Samet
+        set_cosmetic_tag = IZM_Madan_Cosmetic
         load_focus_tree = mdd_tree
         hidden_effect = {
             set_country_flag = unification_madan
