@@ -77,6 +77,20 @@ defined_text = { #SUPER EVENT TITLES
         }
         localization_key = "GFX_SPEVNT_WW2"
     }
+
+    text = { 
+        trigger = {
+            has_global_flag = Fuller_Unif
+        }
+        localization_key = "GFX_SPEVNT_Fuller_Unif"
+    }
+
+    text = { 
+        trigger = {
+            has_global_flag = Merc_Unif
+        }
+        localization_key = "GFX_SPEVNT_Merc_Unif"
+    }
 }
 
 defined_text = { #SUPER EVENT QUOTES
@@ -156,6 +170,20 @@ defined_text = { #SUPER EVENT QUOTES
             has_global_flag = WW2
         }
         localization_key = "GFX_SPEVNT_WW2_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            has_global_flag = Fuller_Unif
+        }
+        localization_key = "GFX_SPEVNT_Fuller_Unif_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            has_global_flag = Merc_Unif
+        }
+        localization_key = "GFX_SPEVNT_Merc_Unif_TEXT"
     }
 }
 
@@ -237,6 +265,20 @@ defined_text = { #SUPER EVENT REMARKS
             has_global_flag = WW2
         }
         localization_key = "GFX_SPEVNT_WW2_REMARK"
+    }
+
+    text = { 
+        trigger = {
+            has_global_flag = Fuller_Unif
+        }
+        localization_key = "GFX_SPEVNT_Fuller_Unif_REMARK"
+    }
+
+    text = { 
+        trigger = {
+            has_global_flag = Merc_Unif
+        }
+        localization_key = "GFX_SPEVNT_Merc_Unif_REMARK"
     }
 	
 }

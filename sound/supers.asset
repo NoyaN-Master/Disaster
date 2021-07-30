@@ -75,3 +75,10 @@ sound = {
 	volume = 1
 	always_load = yes
 }
+
+sound = {
+	name = "fuller"
+	file = "menu/fuller.wav"
+	volume = 1
+	always_load = yes
+}

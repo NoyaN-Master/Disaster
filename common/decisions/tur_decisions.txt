@@ -509,7 +509,7 @@ TUR_unification_category = {
         IZM = { every_unit_leader = { set_nationality = OTH } }   
         set_cosmetic_tag = OTH_Unif_Tag
         hidden_effect = {
-            set_country_flag = unification_fuller
+            set_country_flag = unification_merc
         }
         OTH = {
         add_state_core = 49
