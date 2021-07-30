@@ -59,13 +59,13 @@ bookmarks = {
 			}
 			focuses = {
 			WRF_under_the_crescent
-			WRF_tekalifi_milliye
-			WRF_deal_ist
+			WRF_Ismet_Chosen
+			WRF_Fevzi_Chosen
 			}
 		}
 		"CIB"={
 			history = "CIB_GATHERING_STORM_DESC"
-			ideology = ultranationist
+			ideology = ultranationalist
 			ideas = {
 			CIB_Enver_Idea
 			CIB_King_Hill
@@ -73,13 +73,13 @@ bookmarks = {
 			}
 			focuses = {
 			CIB_war_for_soul_turk
-			CIB_enveristan_proper
 			CIB_nuri_reach
+			CIB_A_Public_Apology
 			}
 		}
 		"ANT"={
 			history = "ANT_GATHERING_STORM_DESC"
-			ideology = ultranationist
+			ideology = conservative
 			ideas = {
 			ANT_Failed_State
 			ANT_Anarchy
