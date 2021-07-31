@@ -695,7 +695,7 @@ WRF_Syrian_Partition = {
             create_country_leader = {
 	        name = "Samet Türkoğlu"
 	        desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        picture   = "disaster\gfx\leaders\CIB\Portrait_CIB_Samet.tga"
+	        picture   = "Portrait_CIB_Samet.tga"
 	        expire = "1965.1.1"
 	        ideology = autocratic_subideology
 	        traits = {
@@ -840,12 +840,13 @@ WRF_Iraqi_Partition = {
             create_country_leader = {
 	        name = "Fahrettin Türkkan"
 	        desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        portrait_path   = "disaster\gfx\leaders\WRF\Portrait_OTT_Omer_Fahrettin_Turkkan.tga"
+	        picture   = "Portrait_OTT_Omer_Fahrettin_Turkkan.tga"
 	        expire = "1965.1.1"
 	        ideology = autocratic_subideology
 	        traits = {
 	        }
             }
+        transfer_state = 675    
         }
 		hidden_effect = {
         }
@@ -878,15 +879,10 @@ WRF_Palestinian_Partition = {
         }
         }  
         complete_effect = {
+        release_puppet = PAL    
         PAL = {
-        set_cosmetic_tag = PAL_Turkish_Puppet
-            set_politics = {
-	        ruling_party = autocratic
-            elections_allowed = no
-            last_election = "1935.12.17"
-            election_frequency = 48
-            }
-            create_country_leader = {
+            
+        create_country_leader = {
 	        name = "Amin Al Husseini"
 	        desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 	        picture   = "PAL_The_Mufti.tga"
@@ -894,14 +890,22 @@ WRF_Palestinian_Partition = {
 	        ideology = autocratic_subideology
 	        traits = {
 	        }
+            }    
+        set_cosmetic_tag = PAL_Turkish_Puppet
+            set_politics = {
+	        ruling_party = autocratic
+            elections_allowed = no
+            last_election = "1935.12.17"
+            election_frequency = 48
             }
+
         transfer_state = 868
         transfer_state = 869
         transfer_state = 454
         transfer_state = 453
         transfer_state = 816        
+        transfer_state = 455    
         }
-        puppet = PAL
 		hidden_effect = {
         }
         }
@@ -963,7 +967,7 @@ WRF_Levant_Komisar = {
             create_country_leader = {
 	        name = "Alparslan Türkeş"
 	        desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        picture   = "disaster\gfx\leaders\WRF\Portrait_WRF_Turkes.tga"
+	        picture   = "WRF_Turkes.tga"
 	        expire = "1965.1.1"
 	        ideology = ultranationalist_subideology
 	        traits = {
@@ -980,6 +984,8 @@ WRF_Levant_Komisar = {
             transfer_state = 675
             transfer_state = 291
             transfer_state = 676
+            transfer_state = 455
+            transfer_state = 675
         }
 		hidden_effect = {
         }
@@ -1032,7 +1038,7 @@ WRF_Aryan_Komisar_1 = {
             create_country_leader = {
 	        name = "Mustafa Muğlalı"
 	        desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        picture   = "disaster\gfx\leaders\WRF\Portrait_CIB_Mustafa_Muglali.tga"
+	        picture   = "Portrait_CIB_Mustafa_Muglali.tga"
 	        expire = "1965.1.1"
 	        ideology = ultranationalist_subideology
 	        traits = {
@@ -1145,7 +1151,7 @@ WRF_Russ_Komisar = {
             create_country_leader = {
 	        name = "Mirsaid Sultangaliev"
 	        desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        portrait_path   = "disaster\gfx\leaders\TAT\Portrait_TAT_Galiyev.tga"
+	        picture   = "Portrait_TAT_Galiyev.tga"
 	        expire = "1965.1.1"
 	        ideology = ultranationalist_subideology
 	        traits = {
@@ -1218,7 +1224,7 @@ WRF_China = {
             create_country_leader = {
 	        name = "Enver Paşa"
 	        desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        portrait   = "CIB_Enver_Blessed.tga"
+	        picture   = "CIB_Enver_Blessed.tga"
 	        expire = "1965.1.1"
 	        ideology = ultranationalist_subideology
 	        traits = {
