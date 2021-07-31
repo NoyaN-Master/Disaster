@@ -29,6 +29,9 @@ IZM_milita_category = {
 	}
 	visible = {
 		original_tag  = IZM
+		NOT = {
+		has_government = authoritarian_socialist	
+		}
 	}
 	visible_when_empty = yes
 }
@@ -45,7 +48,7 @@ WRF_Border_Guard_category = {
         original_tag = WRF
         OR = {
         has_country_flag = debug_TR
-        has_completed_focus = WRF_Form_BorderGuard
+        has_completed_focus = WRF_Reis
         }
         } 
 	visible_when_empty = no
