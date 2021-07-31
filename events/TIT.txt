@@ -81,7 +81,7 @@ country_event = {
 	
 	option = {
 		name = tit.4.a
-		ai_chance = { factor = 80 }
+		ai_chance = { factor = 100 }
 		create_country_leader = {
 	    name = "Alessandro_Pirzio_Biroli"
 	    desc = "TIT_Alessandro_Pirzio_Biroli_desc"
@@ -99,7 +99,7 @@ country_event = {
 		}
 	option = {
 		name = tit.4.b
-		ai_chance = { factor = 20 }
+		ai_chance = { factor = 0 }
 		FIU = {
 		end_puppet = TIT	
 		}
