@@ -14,7 +14,7 @@ focus_tree = {
 		icon = GFX_goal_Mussolini_begin
 		x = 7
 		y = 1
-		cost = 1
+		cost = 2
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -98,13 +98,27 @@ focus_tree = {
 		icon = GFX_goal_Mussolini_begin
 		x = 10
 		y = 5
-		cost = 1
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = biroli_locals }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
+		if = {
+				limit = { has_idea = TIT_Turkish_Discontent }
+				swap_ideas = { 
+                    remove_idea = TIT_Turkish_Discontent
+                    add_idea = TIT_Turkish_Discontent_2
+                }
+			}
+		else_if = {
+				limit = { has_idea = TIT_Turkish_Discontent_2 }
+				swap_ideas = { 
+                    remove_idea = TIT_Turkish_Discontent_2 
+                    add_idea = TIT_Turkish_Discontent_3
+                }
+			}
 		hidden_effect = {
 		}
 		}
@@ -115,13 +129,27 @@ focus_tree = {
 		icon = GFX_goal_Mussolini_begin
 		x = 8
 		y = 5
-		cost = 1
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = biroli_locals }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
+		if = {
+				limit = { has_idea = TIT_Turkish_Discontent }
+				swap_ideas = { 
+                    remove_idea = TIT_Turkish_Discontent
+                    add_idea = TIT_Turkish_Discontent_2
+                }
+			}
+		else_if = {
+				limit = { has_idea = TIT_Turkish_Discontent_2 }
+				swap_ideas = { 
+                    remove_idea = TIT_Turkish_Discontent_2 
+                    add_idea = TIT_Turkish_Discontent_3
+                }
+			}
 		hidden_effect = {
 		}
 		}
@@ -132,13 +160,27 @@ focus_tree = {
 		icon = GFX_goal_Mussolini_begin
 		x = 4
 		y = 5
-		cost = 1
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = biroli_garrison }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
+		if = {
+				limit = { has_idea = TIT_Roatta_Army }
+				swap_ideas = { 
+                    remove_idea = TIT_Roatta_Army
+                    add_idea = TIT_Roatta_Army_2
+                }
+			}
+		else_if = {
+				limit = { has_idea = TIT_Roatta_Army_2 }
+				swap_ideas = { 
+                    remove_idea = TIT_Roatta_Army_2 
+                    add_idea = TIT_Roatta_Army_3
+                }
+			}
 		hidden_effect = {
 		}
 		}
@@ -149,13 +191,27 @@ focus_tree = {
 		icon = GFX_goal_Mussolini_begin
 		x = 6
 		y = 5
-		cost = 1
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = biroli_garrison }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
+		if = {
+				limit = { has_idea = TIT_Roatta_Army }
+				swap_ideas = { 
+                    remove_idea = TIT_Roatta_Army
+                    add_idea = TIT_Roatta_Army_3
+                }
+			}
+		else_if = {
+				limit = { has_idea = TIT_Roatta_Army_2 }
+				swap_ideas = { 
+                    remove_idea = TIT_Roatta_Army_2 
+                    add_idea = TIT_Roatta_Army_3
+                }
+			}
 		hidden_effect = {
 		}
 		}
@@ -174,6 +230,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		swap_ideas = { 
+                    remove_idea = TIT_Roatta_Army_3 
+                    add_idea = TIT_Roatta_Army_4
+                }
 		hidden_effect = {
 		}
 		}
@@ -192,6 +252,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		swap_ideas = { 
+                    remove_idea = TIT_Turkish_Discontent_3 
+                    add_idea = TIT_Turkish_Discontent_4
+                }
 		hidden_effect = {
 		}
 		}
@@ -238,7 +302,7 @@ focus_tree = {
 		icon = GFX_goal_Mussolini_begin
 		x = 7
 		y = 8
-		cost = 1
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = biroli_turks_door }
 		prerequisite = { focus = biroli_no_money }
