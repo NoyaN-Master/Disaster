@@ -5,6 +5,7 @@ tags={
 name="Disaster"
 supported_version="1.10.*"
 path="C:/Users/Fatih/Documents/Paradox Interactive/Hearts of Iron IV/mod/disaster"
+picture="thumbnail.png"
 replace_path="common/ideologies"
 replace_path="events"
 replace_path="history/countries"
