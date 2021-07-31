@@ -92,6 +92,12 @@ scripted_gui = {
 			}
 		}
 
+		triggers = {
+			Super_Event_Image_Madan_Unif_visible = {
+				has_global_flag  = Madan_Unif
+			}
+		}
+
 		properties = {
 			Super_Event_Image_Default = {
 				image = "[get_my_superevent_texture]"
@@ -184,6 +190,13 @@ scripted_gui = {
 						has_global_flag = Merc_Unif
 					}
 					clr_global_flag  = Merc_Unif
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = Madan_Unif
+					}
+					clr_global_flag  = Madan_Unif
 				}
 				
 			}

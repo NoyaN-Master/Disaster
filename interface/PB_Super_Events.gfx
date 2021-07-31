@@ -100,6 +100,11 @@ spriteTypes = {
 		texturefile = "gfx/super_events/SPEVNT_Merc.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_SPEVNT_Madan_Unif"
+		texturefile = "gfx/super_events/SPEVNT_Madan.dds"
+		legacy_lazy_load = no
+	}
 
 
 	corneredTileSpriteType = {

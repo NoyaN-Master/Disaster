@@ -97,6 +97,12 @@ guiTypes = {
 			spriteType = "GFX_SPEVNT_Merc_Unif"
 			position = { x = 35 y = 0 }
 		}
+
+		iconType = {
+			name ="Super_Event_Image_Madan_Unif"
+			spriteType = "GFX_SPEVNT_Madan_Unif"
+			position = { x = 35 y = 0 }
+		}
 		
 		instantTextBoxType = {
 			name = "Pax_Super_Event_Title_textbox"
