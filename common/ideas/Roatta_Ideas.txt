@@ -4,7 +4,7 @@ country = {
 
 TIT_Roatta_Army = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TIT_Roatta_Army" }
-			picture = GFX_idea_TIT_Roatta_Army
+			picture = TIT_Roatta_Army
 			modifier = {
             army_org_factor = -0.05
             attrition = 0.5
@@ -15,7 +15,7 @@ TIT_Roatta_Army = {
 			}
 TIT_Roatta_Army_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TIT_Roatta_Army_2" }
-			picture = GFX_idea_TIT_Roatta_Army
+			picture = TIT_Roatta_Army
 			modifier = {
             army_org_factor = -0.03
             attrition = 0.4
@@ -26,7 +26,7 @@ TIT_Roatta_Army_2 = {
 			}
 TIT_Roatta_Army_3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TIT_Roatta_Army_3" }
-			picture = GFX_idea_TIT_Roatta_Army
+			picture = TIT_Roatta_Army
 			modifier = {
             army_org_factor = -0.02
             attrition = 0.3
@@ -37,7 +37,7 @@ TIT_Roatta_Army_3 = {
 			}
 TIT_Roatta_Army_4 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TIT_Roatta_Army_4" }
-			picture = GFX_idea_TIT_Roatta_Army
+			picture = TIT_Roatta_Army
 			modifier = {
             army_org_factor = -0.01
             attrition = 0.2
@@ -48,7 +48,7 @@ TIT_Roatta_Army_4 = {
 			}
 TIT_Turkish_Discontent = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TIT_Turkish_Discontent" }
-			picture = GFX_idea_TIT_Turkish_Discontent
+			picture = TIT_Turkish_Discontent
 			modifier = {
             stability_factor = -0.4
             stability_weekly_factor = -0.005
@@ -58,7 +58,7 @@ TIT_Turkish_Discontent = {
 			}
 TIT_Turkish_Discontent_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TIT_Turkish_Discontent_2" }
-			picture = GFX_idea_TIT_Turkish_Discontent
+			picture = TIT_Turkish_Discontent
 			modifier = {
             stability_factor = -0.3
             stability_weekly_factor = -0.003
@@ -68,7 +68,7 @@ TIT_Turkish_Discontent_2 = {
 			}
 TIT_Turkish_Discontent_3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TIT_Turkish_Discontent_3" }
-			picture = GFX_idea_TIT_Turkish_Discontent
+			picture = TIT_Turkish_Discontent
 			modifier = {
             stability_factor = -0.2
             stability_weekly_factor = -0.002
@@ -78,7 +78,7 @@ TIT_Turkish_Discontent_3 = {
 			}
 TIT_Turkish_Discontent_4 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TIT_Turkish_Discontent_4" }
-			picture = GFX_idea_TIT_Turkish_Discontent
+			picture = TIT_Turkish_Discontent
 			modifier = {
             stability_factor = -0.1
             stability_weekly_factor = -0.001
@@ -88,7 +88,7 @@ TIT_Turkish_Discontent_4 = {
 			}
 TIT_Forgotten_Colony = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TIT_Forgotten_Colony" }
-			picture = GFX_idea_TIT_Forgotten_Colony
+			picture = TIT_Forgotten_Colony
 			modifier = {
             consumer_goods_factor = 0.2
             production_speed_buildings_factor = -0.5 
@@ -96,7 +96,7 @@ TIT_Forgotten_Colony = {
 			}
 TIT_Legacy_Rhodes = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TIT_Legacy_Rhodes" }
-			picture = GFX_idea_TIT_Legacy_Rhodes
+			picture = TIT_Legacy_Rhodes
 			modifier = {
             army_morale_factor = 0.1
             stability_factor = 0.05 
