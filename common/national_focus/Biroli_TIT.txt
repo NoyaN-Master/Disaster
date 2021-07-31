@@ -202,7 +202,7 @@ focus_tree = {
 				limit = { has_idea = TIT_Roatta_Army }
 				swap_ideas = { 
                     remove_idea = TIT_Roatta_Army
-                    add_idea = TIT_Roatta_Army_3
+                    add_idea = TIT_Roatta_Army_2
                 }
 			}
 		else_if = {
@@ -222,7 +222,7 @@ focus_tree = {
 		icon = GFX_goal_Mussolini_begin
 		x = 5
 		y = 6
-		cost = 1
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = biroli_purge }
 		prerequisite = { focus = biroli_try_officers }
@@ -244,7 +244,7 @@ focus_tree = {
 		icon = GFX_goal_Mussolini_begin
 		x = 9
 		y = 6
-		cost = 1
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = biroli_head_for_eye }
 		prerequisite = { focus = biroli_collaborators }
