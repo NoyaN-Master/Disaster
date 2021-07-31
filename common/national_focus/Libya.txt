@@ -25,7 +25,7 @@ focus_tree = {
 	
 	focus = {
 		id = lba_infastructure
-		icon = GFX_goal_Mussolini_begin
+		icon = GFX_goal_LBA_Mus
 		x = 10
 		y = 2
 		cost = 3
@@ -236,7 +236,7 @@ focus_tree = {
 	
 	focus = {
 		id = lba_cult_of_personality
-		icon = GFX_goal_Mussolini_begin
+		icon = GFX_goal_lba_cult_of_personality
 		x = 4
 		y = 2
 		cost = 3
@@ -251,7 +251,7 @@ focus_tree = {
 	
 	focus = {
 		id = lba_arab_lictor_youth
-		icon = GFX_goal_Mussolini_begin
+		icon = GFX_goal_lba_arab_lictor_youth
 		x = 3
 		y = 3
 		cost = 3
@@ -267,7 +267,7 @@ focus_tree = {
 	
 	focus = {
 		id = lba_propaganda
-		icon = GFX_goal_Mussolini_begin
+		icon = GFX_goal_lba_propaganda
 		x = 3
 		y = 4
 		cost = 3
@@ -283,7 +283,7 @@ focus_tree = {
 	
 	focus = {
 		id = lba_muslim_lictor
-		icon = GFX_goal_Mussolini_begin
+		icon = GFX_goal_lba_muslim_lictor
 		x = 5
 		y = 3
 		cost = 3
@@ -299,7 +299,7 @@ focus_tree = {
 	
 	focus = {
 		id = lba_libyan_villages
-		icon = GFX_goal_Mussolini_begin
+		icon = GFX_goal_lba_libyan_villages
 		x = 5
 		y = 4
 		cost = 3

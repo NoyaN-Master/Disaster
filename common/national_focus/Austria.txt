@@ -2174,8 +2174,7 @@ focus_tree = {
     		target = HNG
     		type = annex_everything
 			}
-		set_country_flag = AUT_attackedHNG	
-		custom_effect_tooltip = AUT_Custom_TT	
+		set_country_flag = AUT_attackedHNG		
         }
 	}
 	focus = {
@@ -2201,7 +2200,7 @@ focus_tree = {
     		target = SOR
     		type = annex_everything
 			}
-		custom_effect_tooltip = AUT_Custom_TT
+
 			set_country_flag = AUT_attackedYUG
         }
 	}
@@ -2256,7 +2255,7 @@ focus_tree = {
     		type = annex_everything
 			}
 		set_country_flag = AUT_attackedBHM	
-		custom_effect_tooltip = AUT_Custom_TT	
+	
         }
 	}
 }

@@ -87,8 +87,9 @@ sound = {
 	file = "menu/mercs.wav"
 	volume = 1
 	always_load = yes
+}
 
-	sound = {
+sound = {
 	name = "madan"
 	file = "menu/madan.wav"
 	volume = 1

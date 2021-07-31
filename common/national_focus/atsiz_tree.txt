@@ -868,7 +868,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		unlock_decision_category_tooltip = WRF_Atsiz_Komisar_category
+		unlock_decision_tooltip = WRF_Levant_Komisar
+		unlock_decision_tooltip = WRF_Aryan_Komisar_2
+		unlock_decision_tooltip = WRF_Aryan_Komisar_1
+		unlock_decision_tooltip = WRF_Russ_Komisar
+		unlock_decision_tooltip = WRF_China
 		hidden_effect = {
 		}
 		}

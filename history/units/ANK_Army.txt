@@ -50,7 +50,43 @@ division= {
 
 	}
 
+	division= {	
+		name = "4.Tümen"
+		location = 11784   # Vienna
+		division_template = "Ana Piyadeler"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+
+	division= {	
+		name = "4.Tümen"
+		location = 11784   # Vienna
+		division_template = "Ana Piyadeler"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+
     division= {	
+		name = "Orbay Tümeni"
+		location = 11784   # Vienna
+		division_template = "Ana Piyadeler"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+
+	division= {	
+		name = "Orbay Tümeni"
+		location = 11784   # Vienna
+		division_template = "Ana Piyadeler"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+
+	division= {	
 		name = "Orbay Tümeni"
 		location = 11784   # Vienna
 		division_template = "Ana Piyadeler"
