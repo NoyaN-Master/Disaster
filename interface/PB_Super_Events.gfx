@@ -106,6 +106,18 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	spriteType = {
+		name = "GFX_SPEVNT_GermanLiberal_Unif"
+		texturefile = "gfx/super_events/SPEVNT_Germany_Democratics.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_GermanAuth_Unif"
+		texturefile = "gfx/super_events/SPEVNT_Germany_Militarists.dds"
+		legacy_lazy_load = no
+	}
+
 
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window_thin_border"

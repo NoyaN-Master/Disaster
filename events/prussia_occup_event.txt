@@ -9,25 +9,17 @@ country_event = { # polish puppeting
 	option = {
 		name = preo.1.a
 		ai_chance = { factor = 1}
+		release_puppet = PLN
 		PRE = {add_state_claim = 809}
 		PRE = {add_state_claim = 85}
 		PRE = {add_state_claim = 86}
 		PRE = {add_state_claim = 762}
-		every_owned_state = {
-			limit = {
-				OR = {
-					is_core_of = PLN
-					AND = {
-						is_claimed_by = PLN
-						is_clear_other_claims = yes
-					}
-				}
-				NOT = { is_claimed_by = PRE }
-				NOT = {is_core_of = PRE }
-			}
-			PLN = { transfer_state = PREV }
+		PRE = {
+		transfer_state = 85
+		transfer_state = 86
+		transfer_state = 762
+		transfer_state = 809
 		}
-		puppet = PLN
 		PLN = {set_cosmetic_tag = PLN_occupation }
 	}
 }
@@ -42,12 +34,19 @@ country_event = { # Nazi Occupation POLAND
 		name = preo.2.a
 		ai_chance = { factor = 1}
 		release_puppet = PLN
-        transfer_state = 809
+		PRE = {
+		transfer_state = 809
         transfer_state = 85
         transfer_state = 86
         transfer_state = 5
         transfer_state = 762
+		}
 		PLN = {
+		set_cosmetic_tag = PLN_occupation
+		set_politics = {
+			ruling_party = revolutionary_nationalist
+			elections_allowed = no
+		}	
 		create_country_leader = {
 	        name = "Martin Bormann"
 	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"

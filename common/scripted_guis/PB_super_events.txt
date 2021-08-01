@@ -98,6 +98,18 @@ scripted_gui = {
 			}
 		}
 
+		triggers = {
+			Super_Event_Image_GermanLiberal_Unif_visible = {
+				has_global_flag  = German_Democratic_Unify
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_GermanAuth_Unif_visible = {
+				has_global_flag  = German_Auth_Unify
+			}
+		}
+
 		properties = {
 			Super_Event_Image_Default = {
 				image = "[get_my_superevent_texture]"
@@ -197,6 +209,20 @@ scripted_gui = {
 						has_global_flag = Madan_Unif
 					}
 					clr_global_flag  = Madan_Unif
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = German_Democratic_Unify
+					}
+					clr_global_flag  = German_Democratic_Unify
+				}
+
+				if = {
+					limit = {	
+						has_global_flag = German_Auth_Unify
+					}
+					clr_global_flag  = German_Auth_Unify
 				}
 				
 			}

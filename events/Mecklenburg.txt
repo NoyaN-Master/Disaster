@@ -10,7 +10,9 @@ country_event = { #intro event
 		name = mek.1.a
 		ai_chance = { factor = 1}
 		hidden_effect = {
-		    country_event = { id = mek.2 days = 5 }
+			MEK = {
+			country_event = { id = mek.2 days = 5 }
+			}
 		}
 	}
 }
@@ -25,7 +27,9 @@ country_event = { #protests
 		name = mek.2.a
 		ai_chance = { factor = 1}
 		hidden_effect = {
-		    country_event = { id = mek.3 days = 1 }
+			NGU = {
+			country_event = { id = mek.3 days = 1 }
+			}
 		}
 	}
 }

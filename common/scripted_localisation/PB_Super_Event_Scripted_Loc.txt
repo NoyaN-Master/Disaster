@@ -98,6 +98,19 @@ defined_text = { #SUPER EVENT TITLES
         }
         localization_key = "GFX_SPEVNT_Madan_Unif"
     }
+
+    text = { 
+        trigger = {
+            has_global_flag = German_Democratic_Unify
+        }
+        localization_key = "GFX_SPEVNT_GermLib_Unif"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = German_Auth_Unify
+        }
+        localization_key = "GFX_SPEVNT_GermAuth_Unif"
+    }
 }
 
 defined_text = { #SUPER EVENT QUOTES
@@ -198,6 +211,19 @@ defined_text = { #SUPER EVENT QUOTES
             has_global_flag = Madan_Unif
         }
         localization_key = "GFX_SPEVNT_Madan_Unif_TEXT"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = German_Democratic_Unify
+        }
+        localization_key = "GFX_SPEVNT_GermLib_Unif_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            has_global_flag = German_Auth_Unify
+        }
+        localization_key = "GFX_SPEVNT_GermAuth_Unif_TEXT"
     }
 }
 
@@ -300,6 +326,20 @@ defined_text = { #SUPER EVENT REMARKS
             has_global_flag = Madan_Unif
         }
         localization_key = "GFX_SPEVNT_Madan_Unif_REMARK"
+    }
+
+    text = { 
+        trigger = {
+            has_global_flag = German_Democratic_Unify
+        }
+        localization_key = "GFX_SPEVNT_GermLib_Unif_REMARK"
+    }
+
+    text = { 
+        trigger = {
+            has_global_flag = German_Auth_Unify
+        }
+        localization_key = "GFX_SPEVNT_GermAuth_Unif_REMARK"
     }
 	
 }

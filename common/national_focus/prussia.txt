@@ -368,9 +368,7 @@ focus_tree = {
 		}		
 		completion_reward = {
 		create_faction = PRE_NAT_FACTION
-		FIU = {
-		country_event = { id = pre.102 days = 1}	
-		}
+		
 		}
 	}
 
@@ -387,7 +385,7 @@ focus_tree = {
 		has_government = revolutionary_nationalist
 		has_government = ultranationalist	
 		}	
-		has_country_flag = plan_complete
+		
 		RHN = {
 			exists = no
 		}
@@ -435,21 +433,7 @@ focus_tree = {
 		}		
 		completion_reward = {
 		create_faction = PRE_LIB_FACTION
-		SWV = {
 		country_event = { id = pre.102 days = 1}		
-		}
-		DAN = {
-		country_event = { id = pre.102 days = 1}		
-		}
-		BLG = {
-		country_event = { id = pre.102 days = 1}		
-		}
-		GRE = {
-		country_event = { id = pre.102 days = 1}		
-		}
-		UKR = {
-		country_event = { id = pre.102 days = 1}		
-		}
 		}
 	}
 
