@@ -322,6 +322,9 @@ NGU_RussianPeaceDeal = {
 
 
 PRE_RussianEffect = {
+	PRE = {
+	puppet = WLF	
+	}
 	RUS = {
         every_owned_state = {
         add_core_of = WLF
@@ -332,7 +335,7 @@ PRE_RussianEffect = {
         add_core_of = WLF
         }	
         }
-	WLF = {
+	WLF = {	
 	transfer_state = 580	
 	annex_country = {
         target = SOV
@@ -420,6 +423,12 @@ PRE_RussianEffect = {
 effect_frenchcollapse = {
 white_peace = FRE
 puppet = FRE
+if = {
+ limit = {
+ tag = PRE	  
+ }
+ puppet = CLM	
+}
 transfer_state = 28
 transfer_state = 8
 add_state_core = 28
@@ -427,6 +436,8 @@ add_state_core = 8
 CLM ={
 transfer_state = 29
 transfer_state = 785
+transfer_state = 34
+transfer_state = 6
 transfer_state = 16
 transfer_state = 27
 transfer_state = 20

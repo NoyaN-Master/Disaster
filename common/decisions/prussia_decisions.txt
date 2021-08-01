@@ -265,7 +265,7 @@ PRE_Deal_CEZ = {
         original_tag = PRE
         has_completed_focus = PRE_Rest_Germany
         }    
-        complete_effect = {
+        complete_effect = {  
         release_puppet = CEZ
         CEZ = {
           set_politics = {
@@ -287,6 +287,10 @@ PRE_Deal_CEZ = {
 	        }
             }
         }
+        PRE = {
+        transfer_state = 69
+        transfer_state = 74     
+        } 
 	}
      ai_will_do = {
 			factor = 1000
@@ -339,6 +343,104 @@ PRE_Diplomacy_Ostland = {
         complete_effect = {
         BLT = {
         country_event = {id = pre.101 days = 1}     
+        }
+        }
+     ai_will_do = {
+			factor = 1000
+		}
+}
+
+PRE_Attack_Belarus = {
+	    fire_only_once = yes
+		cost = 0
+        allowed = {
+        tag = PRE
+        }
+        available  = {   
+        has_war = no
+        }
+        visible = {
+        original_tag = PRE
+        has_completed_focus = PRE_generalplan_ost
+        }    
+        complete_effect = {
+        declare_war_on = {
+        target = WHR
+        type = annex_everything
+        }
+        }
+     ai_will_do = {
+			factor = 1000
+		}
+}
+
+PRE_Give_Goltz = {
+	    fire_only_once = yes
+		cost = 0
+        allowed = {
+        tag = PRE
+        }
+        available  = {   
+        has_war = no
+        BLT = {
+        is_puppet_of = PRE
+        }
+        WHR = {
+        exists = no    
+        }
+        }
+        visible = {
+        original_tag = PRE
+        has_completed_focus = PRE_generalplan_ost
+        }    
+        complete_effect = {
+        BLT = {
+        transfer_state = 95
+        transfer_state = 96  
+        transfer_state = 94  
+        transfer_state = 194  
+        transfer_state = 204  
+        transfer_state = 206
+        transfer_state = 207   
+        }
+        }
+     ai_will_do = {
+			factor = 1000
+		}
+}
+
+PRE_Ukraine_Goltz = {
+	    fire_only_once = yes
+		cost = 0
+        allowed = {
+        tag = PRE
+        }
+        available  = {   
+        has_war = no
+        BLT = {
+        is_puppet_of = PRE
+        }
+        WHR = {
+        exists = no    
+        }
+        }
+        visible = {
+        original_tag = PRE
+        has_completed_focus = PRE_generalplan_ost
+        }    
+        complete_effect = {
+        release = UKR
+        release = FRI    
+        BLT = {
+        annex_country = {
+        target = UKR
+        transfer_troops = yes
+        }
+        annex_country = {
+        target = FRI
+        transfer_troops = yes
+        }
+        set_cosmetic_tag = BLT_Ostland
         }
         }
      ai_will_do = {
@@ -448,6 +550,9 @@ PRE_France_Surrender = {
         available  = {   
         original_tag = PRE    
         at_war_with = FRE
+        BLI = {
+        has_capitulated = yes    
+        }
         FRE = {
         surrender_progress > 0.5    
         }

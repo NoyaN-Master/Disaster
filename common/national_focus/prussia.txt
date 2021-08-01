@@ -396,6 +396,10 @@ focus_tree = {
     	target = FRE
     	type = annex_everything
 		}
+		declare_war_on = {
+    	target = BLI
+    	type = annex_everything
+		}
 		add_timed_idea = {
 		idea = NGU_FrenchSaxons
 		days = 50
