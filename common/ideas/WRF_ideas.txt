@@ -4,7 +4,7 @@ country = {
 
 WRF_Greek_Legacy = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Greek_Legacy" }
-			#picture = WRF_Greek_Legacy
+			picture = WRF_Greek_Legacy
 			cancel  = {
 			WRF = {
 			has_country_flag = Roatta_Warlord	
@@ -18,7 +18,7 @@ WRF_Greek_Legacy = {
 		}
 WRF_Kemal_Army = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Kemal_Army" }
-			#picture = WRF_Kemal_Army
+			picture = WRF_Kemal_Army
 			cancel  = {
 			WRF = {
 			has_country_flag = Roatta_Warlord	
@@ -33,7 +33,7 @@ WRF_Kemal_Army = {
 		}
 WRF_Legitimate_Heir = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Legitimate_Heir" }
-			#picture = WRF_Legitimate_Heir
+			picture = WRF_Legitimate_Heir
 			cancel  = {
 			WRF = {
 			has_country_flag = Roatta_Warlord	
@@ -46,7 +46,7 @@ WRF_Legitimate_Heir = {
 		}
 WRF_Tekalif = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif" }
-			#picture = WRF_Tekalif
+			picture = WRF_Tekalif
 			cancel  = {
 			WRF = {
 			has_country_flag = Roatta_Warlord	
@@ -60,7 +60,7 @@ WRF_Tekalif = {
 		}
 WRF_fulfilled = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif" }
-			#picture = WRF_Tekalif
+			picture = WRF_Tekalif
 			cancel  = {
 			WRF = {
 			has_country_flag = Roatta_Warlord	
@@ -72,7 +72,7 @@ WRF_fulfilled = {
 		}		
 TUR_Ajan_Ankara = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
-			#picture = TUR_Struggle_Front
+			picture = TUR_Struggle_Front
 			cancel  = {
 			WRF = {
 			has_country_flag = Roatta_Warlord	
@@ -86,7 +86,7 @@ TUR_Ajan_Ankara = {
 		}
 WRF_Kemal_Army_Disc = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Kemal_Army" }
-			#picture = WRF_Kemal_Army
+			picture = WRF_Kemal_Army
 			cancel  = {
 			WRF = {
 			has_country_flag = Roatta_Warlord	
@@ -100,7 +100,7 @@ WRF_Kemal_Army_Disc = {
 		}
 WRF_Tekalif_Vatan = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = WRF_Tekalif
+			picture = WRF_Tekalif
 			cancel  = {
 			WRF = {
 			has_country_flag = Roatta_Warlord	
@@ -114,7 +114,7 @@ WRF_Tekalif_Vatan = {
 		}
 WRF_Statism_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = industrial_support
+			picture = industrial_support
 			cancel  = {
 			WRF = {
 			has_country_flag = Roatta_Warlord	
@@ -128,7 +128,7 @@ WRF_Statism_idea = {
 		}		
 WRF_Ajan_Antalya = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = empower_abwehr
+			picture = empower_abwehr
 			cancel  = {
 			WRF = {
 			has_country_flag = Roatta_Warlord	
@@ -144,7 +144,7 @@ WRF_Ajan_Antalya = {
 
 WRF_atsiz_motive = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = martial_law
+			picture = martial_law
 			cancel  = {
 			WRF = {
 			has_country_flag = Roatta_Warlord	
@@ -160,7 +160,7 @@ WRF_atsiz_motive = {
 
 WRF_For_All_Brothers = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = WRF_Tekalif
+			picture = WRF_Tekalif
 			cancel  = {
 			WRF = {
 			has_country_flag = Roatta_Warlord	
@@ -172,7 +172,7 @@ WRF_For_All_Brothers = {
 		}
 WRF_Ataturk_Reforms_1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = NGU_Academy
+			picture = NGU_Academy
 			modifier = {
 			stability_factor = 0.1
 			stability_weekly = 0.005
@@ -181,7 +181,7 @@ WRF_Ataturk_Reforms_1 = {
 		}				
 WRF_Ataturk_Reforms_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = NGU_Academy
+			picture = NGU_Academy
 			modifier = {
 			stability_factor = 0.15
 			stability_weekly = 0.007
@@ -190,7 +190,7 @@ WRF_Ataturk_Reforms_2 = {
 		}
 WRF_Ataturk_Reforms_3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = NGU_Academy
+			picture = NGU_Academy
 			modifier = {
 			stability_factor = 0.20
 			stability_weekly = 0.009
@@ -199,7 +199,7 @@ WRF_Ataturk_Reforms_3 = {
 		}						
 WRF_Enverist_Problem = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = CIB_Enver
+			picture = CIB_Enver
 			modifier = {
 			stability_factor = -0.10
 			land_reinforce_rate = -0.03
@@ -209,7 +209,7 @@ WRF_Enverist_Problem = {
 		}						
 WRF_Minority_Problem = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = ANT_Slave_Unrest
+			picture = ANT_Slave_Unrest
 			modifier = {
 			stability_factor = -0.10
 			conscription = -0.01
@@ -219,7 +219,7 @@ WRF_Minority_Problem = {
 		}
 WRF_TSK_New = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = THR_Ismet_Army
+			picture = THR_Ismet_Army
 			modifier = {
 			war_support_factor = 0.10
 			conscription = 0.02
