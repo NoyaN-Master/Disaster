@@ -19,8 +19,8 @@ country_event = {
 		add_stability = -0.15
 		hidden_effect = {
         set_country_flag = TIT_palace_bombed
-		country_event = { id = tit.2 days = 1 }
-        news_event = { id = news.23 hours = 12 }
+		country_event = { id = tit.2 days = 2 }
+        news_event = { id = news.23 days = 1 }
         }
 		}
 	}
