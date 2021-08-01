@@ -262,7 +262,6 @@ TUR_unification_category = {
         }
         visible = {
         original_tag = IZM
-        has_government = unisocialist
         }  
         complete_effect = {
         WRF = { every_unit_leader = { set_nationality = IZM } }
@@ -292,7 +291,6 @@ TUR_unification_category = {
         add_state_core = 348
         add_state_core = 349
         add_state_core = 797
-        set_country_flag = banmilitas
         }
         }
         ai_will_do = {
@@ -355,7 +353,6 @@ TUR_unification_category = {
         add_state_core = 348
         add_state_core = 349
         add_state_core = 797
-        set_country_flag = banmilitas
         }
         }
         ai_will_do = {
@@ -416,7 +413,6 @@ TUR_unification_category = {
         add_state_core = 348
         add_state_core = 349
         add_state_core = 797
-        set_country_flag = banmilitas
         }
         }
         ai_will_do = {
@@ -625,7 +621,7 @@ TUR_Milita_Raise = {
         available = {
         tag = IZM
         NOT = {
-        has_country_flag = banmilitas    
+        has_country_flag = unification_ethem    
         }
         }
         days_remove = 50
