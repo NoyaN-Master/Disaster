@@ -79,6 +79,9 @@ country_event = { #PekerRomada
 		days = 365		
 		}
 		}
+		FIU = {
+		transfer_state = 164
+		}
 		country_event = { id = wrf.27 days = 3 }
 		hidden_effect = {
 		FIU = {
@@ -107,16 +110,16 @@ country_event = { #PekerEndITA
 		
 		custom_effect_tooltip = WRF_Peker_EndITA
 		185 = {
-		add_core_of = FIU
+		add_claim_by = FIU
 		}
 		186 = {
-		add_core_of = FIU
+		add_claim_by = FIU
 		}
 		47 = {
-		add_core_of = FIU
+		add_claim_by = FIU
 		}
 		182 = {
-		add_core_of = FIU
+		add_claim_by = FIU
 		}
 		}
 		}		
