@@ -509,6 +509,7 @@ country_event = { #nationalists istanbul
 	name = "Kazım Orbay"
 	#picture = "Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
 	traits = { trickster brilliant_strategist }
+	portrait_path = "gfx/leaders/ANK/ANK_Kazim_Orbay.tga"
 	skill = 4
 	attack_skill = 4
 	defense_skill = 2

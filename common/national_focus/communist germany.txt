@@ -737,7 +737,7 @@ focus = {
 		cost = 3
         prerequisite = { focus = NGU_total_war }								
 		completion_reward = {
-		
+		add_stability = 0.10
 		}
 	}                     
  focus = {
@@ -773,7 +773,7 @@ focus = {
 		cost = 3
         prerequisite = { focus = NGU_blood_and_soil }				
 		completion_reward = {
-		
+		add_ideas = NGU_Antisemitism
 		}
 	}
 ##FP

@@ -26,7 +26,16 @@ NGU_Knightly_Military = {
 			experience_gain_army = 0.010
 			conscription = -0.03
 			}
-		}				
+		}
+NGU_Antisemitism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
+			picture = NGU_Race
+			modifier = {
+			stability_factor = -0.09
+			conscription_factor = -0.05
+			monthly_population = -0.01
+			}
+		}						
 NGU_Race = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
 			picture = NGU_Race
