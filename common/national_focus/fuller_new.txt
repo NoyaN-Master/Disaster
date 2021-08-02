@@ -276,7 +276,27 @@ focus_tree = {
 		prerequisite = {
 		focus =  SKL_Steamroll_Kemalists
 		}
+		available = {
+		WRF = {
+		exists = no	
+		}
+		CIB = {
+		exists = no	
+		}		
+		}
 		completion_reward = {
+			annex_country = {
+    		target = CRW
+    		transfer_troops = yes
+			}
+		declare_war_on = {
+    	target = CLP
+    	type = annex_everything
+		}
+		declare_war_on = {
+    	target = ANK
+    	type = annex_everything
+		}	
 		hidden_effect = {			
 		}
 		}

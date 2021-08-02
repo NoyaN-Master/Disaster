@@ -420,6 +420,13 @@ country_event = { # Wolfstaat
 		}
 		load_oob = WLF_oob	
 		}
+		WRF = {
+		add_to_war = { 
+    	targeted_alliance = WLF 
+    	enemy = WHR 
+    	hostility_reason = asked_to_join
+		}	
+		}
 	}
 
 }
