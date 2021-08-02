@@ -261,7 +261,7 @@ focus_tree = {
 			has_country_flag = red_chosen	
 			}
 			IZM = {
-			add_ideas = fuller_gas	
+			add_ideas = ANT_fuller_gas	
 			}
 		}
 		else_if = {
@@ -269,7 +269,7 @@ focus_tree = {
         	has_country_flag = mercs_chosen
     		}
     		OTH = {
-			add_ideas = fuller_gas	
+			add_ideas = ANT_fuller_gas	
 			}
 		}
 		else_if = {
@@ -277,7 +277,7 @@ focus_tree = {
         	has_country_flag = kemalists_chosen
     		}
     		ANK = {
-			add_ideas = fuller_gas	
+			add_ideas = ANT_fuller_gas	
 			}
 		}
 		}
@@ -390,7 +390,7 @@ focus_tree = {
     		limit = {
         	has_country_flag = mercs_chosen
     		}
-    		country_event = { id = ant.9 days = 1}
+    		country_event = { id = ant.8 days = 1}
 		}
 		else_if = {
     		limit = {

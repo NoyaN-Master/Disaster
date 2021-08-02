@@ -262,6 +262,7 @@ focus_tree = {
 		available = {
 		OR = {
 		has_government = liberal
+		has_government = ultranationalist
 		has_government = authoritarian_democrat
 		has_government = conservative
 		has_government = autocratic

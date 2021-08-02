@@ -1043,9 +1043,12 @@ focus = {
 		cost = 1
 		available = {
 		has_government = revolutionary_nationalist
-		NGU = {
-		has_country_flag = RUS_DONE	
+		NGU = {	
 		has_war = no
+		}
+		WLF = {
+		is_puppet_of = NGU
+		owns_state = 217	
 		}
 		}
         prerequisite = { focus = NGU_Hitler_Agenda}				

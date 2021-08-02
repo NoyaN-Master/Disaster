@@ -5,6 +5,7 @@ oob = "RUS_Wrangel"
 1936.1.1 = {
 country_event = { id = worldwar.5 }
 }
+country_event = { id = worldwar.10  days = 240}
 
 set_technology = {
 	infantry_weapons = 1

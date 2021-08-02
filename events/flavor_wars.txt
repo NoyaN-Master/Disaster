@@ -620,6 +620,10 @@ country_event = { #heynig
         add_state_core = 368
         add_state_core = 374
         add_state_core = 369
+        add_popularity = {
+        ideology = revolutionary_nationalist
+        popularity = 1.0
+        }
         declare_war_on = {
         target = NAF
         type = annex_everything
@@ -637,6 +641,10 @@ country_event = { #heynig
         add_state_core = 365
         add_state_core = 364
 		load_oob = NAF_oob
+        add_popularity = {
+        ideology = revolutionary_nationalist
+        popularity = 1.0
+        }
         }
         USF = {
         transfer_state = 362

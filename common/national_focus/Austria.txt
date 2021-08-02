@@ -2161,7 +2161,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = AUT_Restore_Sphere}
 		available = {
-								
+		has_war = no						
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2187,7 +2187,7 @@ focus_tree = {
 		prerequisite = { focus = AUT_Bohemians}
 		prerequisite = { focus = AUT_ReTake_Huns}
 		available = {
-								
+		has_war = no						
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2213,7 +2213,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = AUT_ReTake_Yugo}
 		available = {
-								
+		has_war = no
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2237,7 +2237,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = AUT_Restore_Sphere}
 		available = {
-								
+		has_war = no						
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no

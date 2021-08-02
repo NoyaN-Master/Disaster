@@ -498,7 +498,7 @@ NGU_Russia_Deal = {
          has_war_with = RUS
 	     }
         WLF = {
-	     country_exists = yes
+	     exists = yes
         } 
         RUS = {
         NOT = {

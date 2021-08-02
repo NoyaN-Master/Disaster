@@ -21,12 +21,10 @@ AUT_foreign_deccat = {
         controls_state = 811
 	    }	
 	    }				
-        }
-        is_good = no                         
-        selectable_mission = yes               
+        }         
                      
         complete_effect = {
-           ai_chance = { factor = 1000}
+
 		white_peace = FIU
         CRT = {
         transfer_state = 103
@@ -49,6 +47,7 @@ AUT_foreign_deccat = {
          add_state_core = 838
         } 
         }
+		ai_will_do  = { factor = 1000}
     }
 
     AUT_Puppet_Hun = {                          
@@ -103,6 +102,7 @@ AUT_foreign_deccat = {
 		}	
 		}
     }
+	ai_will_do  = { factor = 1000}
 }
 
 AUT_Puppet_Bohemia = {                          
@@ -169,6 +169,7 @@ AUT_Puppet_Bohemia = {
 		}		
 		}
 	}
+	ai_will_do  = { factor = 1000}
     }
 
 AUT_Puppet_Yugo = {                          
@@ -247,7 +248,8 @@ AUT_Puppet_Yugo = {
 	            }
 			}
 		}
-    }    
+    }
+	ai_will_do  = { factor = 1000}    
 }
 
 
@@ -259,6 +261,9 @@ AUT_Give_Transly = {
         available = {
 		HNG = {
 		is_puppet_of = AUT	
+		}
+		TRN = {
+		exists = no	
 		}	      
         }					
         is_good = no                         
@@ -271,6 +276,7 @@ AUT_Give_Transly = {
 			transfer_state = 84
 		} 
 		}
+		ai_will_do  = { factor = 1000}
 
 }		
 }
