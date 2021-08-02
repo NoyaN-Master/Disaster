@@ -1,17 +1,4 @@
-AUT_state_of_emergency_decisions = {
-	#icon = 
-	#picture = 
-	priority = 100
-	allowed = {
-		OR = {
-			tag = AUT
-		}
-	}
-	visible = {
-		has_country_flag = AUT_state_of_emergency_flag
-		has_government = ultranationalist
-	}
-}
+
 
 AUT_political_decisions = {
     #icon = 
@@ -39,5 +26,7 @@ AUT_foreign_deccat = {
 	}
 	visible = {
 		always = yes
+		tag = AUT
+		has_completed_focus = AUT_Foreign_Plans
 	}
 }

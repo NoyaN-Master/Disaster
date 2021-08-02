@@ -136,3 +136,95 @@ create_country_leader = {
 		#
 	}
 }
+
+create_field_marshal = {
+	name = "Eduard von Bohm-Ermolli"
+	portrait_path = "gfx/leaders/AUT/Portrait_AUS_Eduard_Bohm_Ermolli.png"
+	traits = {
+		war_hero
+		old_guard
+		defensive_doctrine
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Eugen von Habsburg-Lothringen"
+	portrait_path = "gfx/leaders/AUT/Portrait_AUS_Eugen_Habsburg_Lothringen.png"
+	traits = {
+		war_hero
+		old_guard
+		offensive_doctrine
+		skilled_staffer
+		expert_delegator
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Joseph von Habsburg-Lothringen"
+	portrait_path = "gfx/leaders/AUT/Portrait_AUS_Joseph_August_von_Habsburg.png"
+	traits = {
+		war_hero
+		old_guard
+		logistics_wizard
+		inspirational_leader
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Erhard Raus"
+	portrait_path = "gfx/leaders/AUT/Portrait_AUS_Erhard_Raus.png"
+	traits = {
+		armor_officer
+		panzer_leader
+		trickster
+	}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Lothar Rendulic"
+	portrait_path = "gfx/leaders/AUT/Portrait_AUS_Lothar_Rendulic.png"
+	traits = {
+		armor_officer
+		panzer_leader
+		commando
+	}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Karl Eglseer"
+	portrait_path = "gfx/leaders/AUT/Portrait_AUS_Karl_Eglseer.png"
+	traits = {
+		trait_mountaineer
+		trickster
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
