@@ -887,6 +887,9 @@ WRF_Palestinian_Partition = {
         owns_state = 869
         owns_state = 454
         owns_state = 453
+        SRY = {
+        is_puppet_of = WRF        
+        }
         }
         visible = {
         original_tag = WRF
