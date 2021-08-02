@@ -451,7 +451,10 @@ focus_tree = {
 		cost = 5
 		prerequisite = { focus = PRE_Koalition_Evropa }
 		available = {
-		has_war = no			
+		has_war = no
+		RHN = {
+		exists = no	
+		}			
 		}		
 		completion_reward = {
 		declare_war_on = {
