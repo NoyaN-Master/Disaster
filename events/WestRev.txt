@@ -406,10 +406,6 @@ country_event = { #TACHANKA 2 enver moves in
 		name = wrf.38.a
 		 add_stability = 0.1
 		 WRF_atsiz_coup = yes
-		 1881 = {
-		 retire = yes	 
-		 }
-		 
 		 hidden_effect = {
 		 news_event = { id = news.6 }	 	 
 		}
