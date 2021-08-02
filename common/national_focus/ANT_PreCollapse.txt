@@ -78,7 +78,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available = { always = no }
+		available = {  }
 		completion_reward = {
 		custom_effect_tooltip = ANT_fight_anarchy_tt
 		}

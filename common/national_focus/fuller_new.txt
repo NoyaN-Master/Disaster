@@ -139,7 +139,7 @@ focus_tree = {
 		completion_reward = {
 		create_unit = {
     	division = "name = \"The Iron Antichrist\" division_template = \"Tank Brigades\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
-    	owner = GER
+    	owner = SKL
 		}	
 		hidden_effect = {			
 		}
@@ -252,7 +252,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			declare_war_on = {
-    	target = CIB
+    	target = WRF
     	type = annex_everything
 		}
 		hidden_effect = {			
@@ -319,6 +319,7 @@ focus_tree = {
 		focus =  SKL_The_Iron_Antichrist 
 		}
 		completion_reward = {
+			add_manpower = 10000
 		hidden_effect = {			
 		}
 		}

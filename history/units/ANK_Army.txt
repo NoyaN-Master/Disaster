@@ -17,6 +17,7 @@ division_template = {
 	}
 }
 
+units = {
 division= {	
 		name = "1.Tümen"
 		location = 11784   # Vienna
@@ -94,3 +95,5 @@ division= {
 		start_equipment_factor = 1.0
 
 	}
+
+}

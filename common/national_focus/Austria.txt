@@ -868,18 +868,15 @@ focus_tree = {
 		prerequisite = { focus = AUT_die_mordekrugel }
 		x = 25
 		y = 0
-		cost = 12
+		cost = 1
 		ai_will_do = {
 			factor = 1000
 		}
 		available = {
-			has_country_flag = AUT_dollfuss_dead
-            has_government = ultranationalist			
+			has_country_flag = AUT_dollfuss_dead			
 		}	
 		select_effect = {
-			country_event = { id = aut.15 days = 1 }
-			country_event = { id = aut.22 days = 10 }
-			country_event = { id = aut.45 days = 78 }
+			
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no

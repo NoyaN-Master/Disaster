@@ -26,7 +26,7 @@ AUT_foreign_deccat = {
         selectable_mission = yes               
                      
         complete_effect = {
-           ai_chance = { factor = 100}
+           ai_chance = { factor = 1000}
 		white_peace = FIU
         CRT = {
         transfer_state = 103
@@ -72,7 +72,7 @@ AUT_foreign_deccat = {
         selectable_mission = yes               
                      
         complete_effect = {
-           ai_chance = { factor = 100}
+           ai_chance = { factor = 1000}
 		white_peace = HNG
 		annex_country = {
     	target = HNG
@@ -133,7 +133,7 @@ AUT_Puppet_Bohemia = {
         selectable_mission = yes               
                      
         complete_effect = {
-           ai_chance = { factor = 100}
+           ai_chance = { factor = 1000}
 		white_peace = CEZ
 		white_peace = SLK
 		annex_country = {
@@ -192,7 +192,7 @@ AUT_Puppet_Yugo = {
         selectable_mission = yes               
                      
         complete_effect = {
-           ai_chance = { factor = 100}
+           ai_chance = { factor = 1000}
 		HNG = {
 			transfer_state = 764
 			transfer_state = 45
