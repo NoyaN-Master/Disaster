@@ -1,0 +1,83 @@
+division_template = {
+	name = "Boer Defense Forces"					
+	division_names_group = BOE_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Boer Cavalry Division"					
+	division_names_group = BOE_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+units = {
+	division = {
+		name = "1. Boer Defense Division"
+		location = 5231  
+		division_template = "Boer Defense Forces"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "2. Boer Defense Division"
+		location = 12648  
+		division_template = "Boer Defense Forces"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "3. Boer Defense Division"
+		location = 12064  
+		division_template = "Boer Defense Forces"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "4. Boer Defense Division"
+		location = 2171  
+		division_template = "Boer Defense Forces"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "1. Boer Mobile Division"
+		location = 2213  
+		division_template = "Boer Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "BOE"
+		}
+		requested_factories = 2
+		progress = 0.80
+		efficiency = 100
+	}
+}

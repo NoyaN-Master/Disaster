@@ -1,0 +1,95 @@
+division_template = {
+	name = "British Remnants"					
+	division_names_group = NTL_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Afrikaner Division"					
+	division_names_group = NTL_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Afrikaner Mobile Division"					
+	division_names_group = NTL_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+units = {
+	division = {
+		name = "1. British Remnants"
+		location = 4696
+		division_template = "British Remnants"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "2. British Remnants"
+		location = 1468
+		division_template = "British Remnants"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "1. Emergency Afrikaner Force"
+		location = 4584
+		division_template = "Afrikaner Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2. Emergency Afrikaner Force"
+		location = 4556
+		division_template = "Afrikaner Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3. Emergency Afrikaner Force"
+		location = 1494
+		division_template = "Afrikaner Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "1. Mobile Afrikaner Division"
+		location = 4822
+		division_template = "Afrikaner Mobile Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+}
