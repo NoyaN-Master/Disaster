@@ -148,29 +148,6 @@ country_event = { #New Subutais
 	}
 }
 
-country_event = { #Hunnic Bureaucracy
-	id = atsiz.5
-	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
-	title = atsiz.5.t
-	desc = atsiz.5.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = atsiz.5.a
-        swap_ideas = {
-        remove_idea = Atsiz_New_Regime_2
-        add_idea =  Atsiz_New_Regime_3
-        }
-        add_manpower = 1000
-        add_stability = 0.10
-	}
-}
-
 country_event = { #Rumours Of Armenian Discontent
 	id = atsiz.6
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
@@ -211,47 +188,6 @@ country_event = { #Battle Of Yerevan
 	}
 }
 
-country_event = { #Their Laws
-	id = atsiz.8
-	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
-	title = atsiz.8.t
-	desc = atsiz.8.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = atsiz.8.a
-        swap_ideas = {
-        remove_idea = Atsiz_New_Regime_3
-        add_idea =  Atsiz_New_Regime_4
-        }
-	}
-}
-
-country_event = { #Fuck civilization
-	id = atsiz.9
-	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
-	title = atsiz.9.t
-	desc = atsiz.9.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = atsiz.9.a
-        swap_ideas = {
-        remove_idea = Atsiz_Discontent_Army_Subutais
-        add_idea =  Atsiz_Discontent_Army_Subutais_2
-        }
-	}
-}
 
 country_event = { #Armenian Uprising
 	id = atsiz.10

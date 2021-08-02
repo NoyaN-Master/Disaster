@@ -20,6 +20,8 @@ GER_unification_decisions = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
 			set_cosmetic_tag = GER_small
 			set_country_flag = GER_small_created
+			NGU = { every_unit_leader = { set_nationality = PRE } }
+			BAV = { every_unit_leader = { set_nationality = PRE } }
           }	 
         ai_will_do = {
 			factor = 1000
@@ -46,6 +48,8 @@ GER_unification_decisions = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
 			set_cosmetic_tag = GER_small
 			set_country_flag = GER_small_created
+			NGU = { every_unit_leader = { set_nationality = PRE } }
+			BAV = { every_unit_leader = { set_nationality = PRE } }
           }	
         ai_will_do = {
 			factor = 1000
@@ -71,6 +75,8 @@ GER_unification_decisions = {
           remove_effect = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
 			set_cosmetic_tag = GER_small
+			NGU = { every_unit_leader = { set_nationality = PRE } }
+			BAV = { every_unit_leader = { set_nationality = PRE } }
           }	 
         ai_will_do = {
 			factor = 1000
@@ -97,6 +103,8 @@ GER_unification_decisions = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
 			set_cosmetic_tag = GER_small
 			set_country_flag = GER_small_created
+			NGU = { every_unit_leader = { set_nationality = PRE } }
+			BAV = { every_unit_leader = { set_nationality = PRE } }
           }	 
         ai_will_do = {
 			factor = 1000
@@ -124,6 +132,8 @@ GER_unification_decisions = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
 			set_cosmetic_tag = GER_small
 			set_country_flag = GER_small_created
+			NGU = { every_unit_leader = { set_nationality = PRE } }
+			BAV = { every_unit_leader = { set_nationality = PRE } }
           }	 
         ai_will_do = {
 			factor = 1000
@@ -152,6 +162,8 @@ GER_unification_decisions = {
 			drop_cosmetic_tag = yes
 			set_cosmetic_tag = NGU_HitlerGermany
 			set_country_flag = goebbels_unification
+			PRE = { every_unit_leader = { set_nationality = NGU } }
+			BAV = { every_unit_leader = { set_nationality = NGU } }
 			country_event = { id = super.10}
           }	 
         ai_will_do = {
@@ -180,6 +192,8 @@ GER_unification_decisions = {
           complete_effect = {
 			set_cosmetic_tag = NGU_StrasserGermany
 			set_country_flag = goebbels_unification
+			PRE = { every_unit_leader = { set_nationality = NGU } }
+			BAV = { every_unit_leader = { set_nationality = NGU } }
           }	 
         ai_will_do = {
 			factor = 1000

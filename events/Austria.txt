@@ -1345,7 +1345,6 @@ country_event = { #A meeting with Figl
 	
 	option = { 
 		name = aut.37.a 
-		clr_country_flag = AUT_schussnigg_in_power
 		add_political_power = 20
 		custom_effect_tooltip = AUT_flip_to_authdem
 		add_popularity = {
@@ -1542,7 +1541,6 @@ country_event = {
 	
 	option = { 
 		name = aut.43.a 
-		clr_country_flag = AUT_schussnigg_in_power
 		add_political_power = -30
 		custom_effect_tooltip = AUT_flip_to_ultranat
 		hidden_effect = {

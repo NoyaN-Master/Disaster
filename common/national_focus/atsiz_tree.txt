@@ -75,7 +75,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		country_event = { id = atsiz.9 }	 
+		swap_ideas = {
+        remove_idea = Atsiz_Discontent_Army_Subutais
+        add_idea =  Atsiz_Discontent_Army_Subutais_2
+        }	 
 		hidden_effect = {
 		}
 		}
@@ -137,7 +140,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		country_event = { id = atsiz.5 }	 
+		swap_ideas = {
+        remove_idea = Atsiz_New_Regime_2
+        add_idea =  Atsiz_New_Regime_3
+        }
+        add_manpower = 1000
+        add_stability = 0.10 
 		hidden_effect = {
 		}
 		}
@@ -155,7 +163,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			country_event = { id = atsiz.8 } 
+		swap_ideas = {
+        remove_idea = Atsiz_New_Regime_3
+        add_idea =  Atsiz_New_Regime_4
+        }
 		hidden_effect = {
 		}
 		}

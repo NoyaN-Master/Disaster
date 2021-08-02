@@ -4,7 +4,7 @@ country = {
 
 Atsiz_New_Regime = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = NGU_Thule_Idea
+			picture = NGU_Thule_Idea
 			modifier = {
 			stability_factor = -0.60
 			conscription = -0.10
@@ -15,7 +15,7 @@ Atsiz_New_Regime = {
 		}
 Atsiz_New_Regime_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = NGU_Thule_Idea
+			picture = NGU_Thule_Idea
 			modifier = {
 			stability_factor = -0.50
 			conscription = -0.05
@@ -26,7 +26,7 @@ Atsiz_New_Regime_2 = {
 		}
 Atsiz_New_Regime_3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = NGU_Thule_Idea
+			picture = NGU_Thule_Idea
 			modifier = {
 			stability_factor = -0.35
 			conscription = -0.03
@@ -36,7 +36,7 @@ Atsiz_New_Regime_3 = {
 		}
 Atsiz_New_Regime_4 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = NGU_Thule_Idea
+			picture = NGU_Thule_Idea
 			modifier = {
 			stability_factor = -0.20
 			conscription = -0.01
@@ -44,14 +44,14 @@ Atsiz_New_Regime_4 = {
 		}
 Atsiz_New_Regime_5 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = NGU_Thule_Idea
+			picture = NGU_Thule_Idea
 			modifier = {
 			stability_factor = -0.10
 			}
 		}									
 Atsiz_Discontent_Army = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = CIB_OrduVatan
+			picture = CIB_OrduVatan
 			modifier = {
 			war_support_factor = -0.30
 			army_defence_factor = -0.05
@@ -62,7 +62,7 @@ Atsiz_Discontent_Army = {
 		}
 Atsiz_Discontent_Army_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = CIB_OrduVatan
+			picture = CIB_OrduVatan
 			modifier = {
 			war_support_factor = -0.15
 			experience_gain_army = -0.05
@@ -71,7 +71,7 @@ Atsiz_Discontent_Army_2 = {
 		}
 Atsiz_Discontent_Army_Subutais = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = CIB_OrduVatan
+			picture = CIB_OrduVatan
 			modifier = {
 			war_support_factor = -0.05
 			conscription = 0.02
@@ -79,7 +79,7 @@ Atsiz_Discontent_Army_Subutais = {
 		}
 Atsiz_Discontent_Army_Subutais_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = CIB_OrduVatan
+			picture = CIB_OrduVatan
 			modifier = {
 			conscription = 0.02
 			army_leader_start_attack_level = 1 
@@ -89,7 +89,7 @@ Atsiz_Discontent_Army_Subutais_2 = {
 		}
 Atsiz_KorpsDeath = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = NGU_Thule_Idea
+			picture = NGU_Thule_Idea
 			modifier = {
 			conscription = 0.02
 			army_leader_start_attack_level = 1 
@@ -99,7 +99,7 @@ Atsiz_KorpsDeath = {
 		}
 Atsiz_KorpsDeath_Destruction = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = NGU_Thule_Idea
+			picture = NGU_Thule_Idea
 			modifier = {
 			conscription = 0.07
 			army_leader_start_attack_level = 1 
@@ -109,7 +109,7 @@ Atsiz_KorpsDeath_Destruction = {
 		}
 Atsiz_KorpsDeath_Doctrine = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = NGU_Thule_Idea
+			picture = NGU_Thule_Idea
 			modifier = {
 			conscription = 0.07
 			army_leader_start_attack_level = 1 
@@ -120,7 +120,7 @@ Atsiz_KorpsDeath_Doctrine = {
 		}
 Atsiz_KorpsDeath_Fuel = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = NGU_Thule_Idea
+			picture = NGU_Thule_Idea
 			modifier = {
 			conscription = 0.07
 			army_leader_start_attack_level = 1 
@@ -132,7 +132,7 @@ Atsiz_KorpsDeath_Fuel = {
 		}
 Atsiz_KorpsDeath_Eurasia = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = NGU_Thule_Idea
+			picture = NGU_Thule_Idea
 			modifier = {
 			conscription = 0.07
 			army_leader_start_attack_level = 1 
@@ -146,7 +146,7 @@ Atsiz_KorpsDeath_Eurasia = {
 		}									
 Atsiz_Dehumanize = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = WRF_Tekalif
+			picture = WRF_Tekalif
 			modifier = {
 			army_morale_factor = 0.10
 			war_support_factor = 0.10
@@ -154,7 +154,7 @@ Atsiz_Dehumanize = {
 		}
 Atsiz_DaCult = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = NGU_paramilitary_problem
+			picture = NGU_paramilitary_problem
 			modifier = {
 			stability_factor = -0.15
 			war_support_factor = 0.20
@@ -162,7 +162,7 @@ Atsiz_DaCult = {
 		}
 atsiz_fucksarabs = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = CRW_Independent_City
+			picture = CRW_Independent_City
 			modifier = {
 			targeted_modifier = { tag = ARM attack_bonus_against = 0.15 }
 			targeted_modifier = { tag = ARM defense_bonus_against = 0.1 }
@@ -170,14 +170,14 @@ atsiz_fucksarabs = {
 		}		
 Atsiz_Drugs = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = NGU_Academy
+			picture = NGU_Academy
 			modifier = {
 			army_speed_factor = 0.25
 			}
 		}															
 Atsiz_Enverist_Influence = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = CIB_Enver_Idea
+			picture = CIB_Enver_Idea
 			modifier = {
 			political_power_gain = -0.015
 			war_support_factor = -0.10
@@ -186,7 +186,7 @@ Atsiz_Enverist_Influence = {
 		}
 Atsiz_Strong_Milita = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = NGU_Race
+			picture = NGU_Race
 			modifier = {
 			political_power_gain = 0.010
 			war_support_factor = 0.10
@@ -197,7 +197,7 @@ Atsiz_Strong_Milita = {
 		
 Atsiz_Minority_Labor = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = martial_law
+			picture = martial_law
 			modifier = {
 			production_speed_buildings_factor = 0.3
 			production_factory_start_efficiency_factor = 0.3
@@ -207,7 +207,7 @@ Atsiz_Minority_Labor = {
 		}
 Atsiz_Fast_Society = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = auth_state_idea
+			picture = auth_state_idea
 			modifier = {
 			production_speed_buildings_factor = 0.3
 			army_speed_factor = 0.10
@@ -216,7 +216,7 @@ Atsiz_Fast_Society = {
 		}
 Atsiz_Wolfic_Society = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = NGU_Blood
+			picture = NGU_Blood
 			modifier = {
 			consumer_goods_factor = -0.1
 			stability_factor = 0.10
@@ -224,7 +224,7 @@ Atsiz_Wolfic_Society = {
 		}
 Atsiz_Wolfic_Society_Fear = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = NGU_Blood
+			picture = NGU_Blood
 			modifier = {
 			consumer_goods_factor = -0.2
 			stability_factor = 0.05
@@ -235,7 +235,7 @@ Atsiz_Wolfic_Society_Fear = {
 		}
 Atsiz_Gestapo = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
-			#picture = empower_abwehr
+			picture = empower_abwehr
 			modifier = {
 			decryption = 1
 			encryption = 1
