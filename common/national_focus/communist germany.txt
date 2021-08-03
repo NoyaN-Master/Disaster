@@ -1474,7 +1474,6 @@ focus = {
         prerequisite = { focus = NGU_Die_Wacht_am_Ost }
 		completion_reward = {
 		country_event = { id = ngu.7 days = 2 }
-		add_ideas
 		}
 	}                                             
 }

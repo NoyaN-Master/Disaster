@@ -281,15 +281,6 @@ PRE_Deal_CEZ = {
 		set_popularities = {
 		autocratic = 100
 		}
-		create_country_leader = {
-	        name = "Martin Bormann"
-	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        picture = "Portrait_Germany_Martin_Bormann.tga"
-	        expire = "1965.1.1"
-	        ideology = autocratic_subideology
-	        traits = {
-	        }
-            }
         }
         PRE = {
         transfer_state = 69
@@ -667,9 +658,6 @@ PRE_France_Surrender = {
         available  = {   
         original_tag = PRE    
         at_war_with = FRE
-        BLI = {
-        has_capitulated = yes    
-        }
         FRE = {
         surrender_progress > 0.5    
         }

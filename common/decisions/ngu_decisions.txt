@@ -70,6 +70,12 @@ NGU_Komisariat_Poland = {
 	        traits = {
 	        }
             }
+            remove_ideas = {
+            PLN_free_at_fast
+            PLN_minorities_and_borders 
+            PLN_leftist_organizations   
+            PLN_catholic_support    
+            }
             create_country_leader = {
 	        name = "Martin Bormann"
 	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"

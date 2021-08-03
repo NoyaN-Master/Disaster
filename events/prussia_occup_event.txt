@@ -20,7 +20,15 @@ country_event = { # polish puppeting
 		transfer_state = 762
 		transfer_state = 809
 		}
-		PLN = {set_cosmetic_tag = PLN_occupation }
+		PLN = {
+		remove_ideas = {
+            PLN_free_at_fast
+            PLN_minorities_and_borders 
+            PLN_leftist_organizations   
+            PLN_catholic_support    
+            }
+		set_cosmetic_tag = PLN_occupation
+		}
 	}
 }
 
@@ -47,15 +55,12 @@ country_event = { # Nazi Occupation POLAND
 			ruling_party = revolutionary_nationalist
 			elections_allowed = no
 		}	
-		create_country_leader = {
-	        name = "Martin Bormann"
-	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        picture   = "Commisar_Martin_Bormann.tga"
-	        expire = "1965.1.1"
-	        ideology = revolutionary_nationalist_subideology
-	        traits = {
-	        }
-            }	
+		remove_ideas = {
+            PLN_free_at_fast
+            PLN_minorities_and_borders 
+            PLN_leftist_organizations   
+            PLN_catholic_support    
+            }
 		}
 	}
 }
