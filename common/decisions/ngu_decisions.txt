@@ -337,6 +337,10 @@ NGU_Ukraine_Puppet = {
         has_completed_focus = NGU_Intervene_Ukraine
         UKR = {
            exists = no
+        }
+        BLT = {
+        is_puppet_of = NGU
+        owns_state = 96
         }    
         }
         visible = {

@@ -925,7 +925,8 @@ focus = {
 		y = 7
 		cost = 5
 		available = {
-		has_government = unisocialist	
+		has_government = unisocialist
+		has_war = no		
 		}
         prerequisite = { focus = NGU_Strasser_Agenda}				
 		completion_reward = {
@@ -933,6 +934,11 @@ focus = {
     	target = WHR
     	type = annex_everything
 		}
+		WHR = {
+        every_owned_state = {
+        add_core_of = NGU
+        }	
+        }
 		}
 	}
 	focus = {
@@ -942,7 +948,8 @@ focus = {
 		y = 8
 		cost = 6
 		available = {
-		has_government = unisocialist	
+		has_government = unisocialist
+		has_war = no		
 		}
         prerequisite = { focus = NGU_Intervene_Belarus}				
 		completion_reward = {
@@ -950,6 +957,11 @@ focus = {
     	target = UKR
     	type = annex_everything
 		}
+		UKR = {
+        every_owned_state = {
+        add_core_of = NGU
+        }	
+        }
 		}
 	}
 	focus = {
@@ -959,7 +971,8 @@ focus = {
 		y = 9
 		cost = 5
 		available = {
-		has_government = unisocialist	
+		has_government = unisocialist
+		has_war = no	
 		}
         prerequisite = { focus = NGU_Intervene_Ukraine}				
 		completion_reward = {
@@ -976,6 +989,7 @@ focus = {
 		cost = 10
 		available = {
 		has_government = unisocialist	
+		has_war = no	
 		}
         prerequisite = { focus = NGU_Reach_Stalin}				
 		completion_reward = {
@@ -997,6 +1011,7 @@ focus = {
 		cost = 10
 		available = {
 		has_government = unisocialist
+		has_war = no	
 		SOV  {
 		is_puppet_of = NGU	
 		}	
