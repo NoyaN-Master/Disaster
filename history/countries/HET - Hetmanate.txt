@@ -41,14 +41,3 @@ set_popularities = {
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
-
-create_country_leader = {
-	name = "Pavlo Skoropadskyi"
-	#desc = "HET_Pavlo_desc"
-	picture = "HET_Pavlo.tga"
-	expire = "2020.1.1"
-	ideology = autocratic_subideology
-	traits = {
-		#
-	}
-}

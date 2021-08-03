@@ -2,7 +2,7 @@ state={
 	id=821
 	name="STATE_821"
 	history={
-		owner = MTR
+		owner = GEO
 		victory_points = {
 			11617 1
 		}
@@ -11,7 +11,7 @@ state={
 			industrial_complex = 1
 
 		}
-		add_core_of = MTR
+		add_core_of = GEO
 		add_core_of = SRF
 	}
 	
