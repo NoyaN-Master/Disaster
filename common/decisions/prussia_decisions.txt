@@ -333,6 +333,7 @@ PRE_Attack_Belgium = {
 	}
 	visible = {
 		has_completed_focus = PRE_Rest_Germany
+		has_completed_focus = PRE_puppet_poland
 	}
 	available = {
 	RHN = {
@@ -360,6 +361,7 @@ PRE_Puppet_Belgium = {
 		owns_state = 6
 	}
 	visible = {
+		has_completed_focus = PRE_puppet_poland
 		has_completed_focus = PRE_Rest_Germany
 	}
 	available = {
