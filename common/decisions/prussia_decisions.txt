@@ -606,11 +606,8 @@ PRE_Declare_Russia = {
         has_war = no
         BLT = {
         is_puppet_of = PRE
-        }
-        UKR = {
-         is_puppet_of = PRE    
-        }
-        has_war = no
+        owns_state = 202
+		}
         }
         visible = {
         original_tag = PRE
