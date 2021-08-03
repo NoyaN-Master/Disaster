@@ -333,6 +333,104 @@ PRE_Attack_Rhineland = {
 		}
 }
 
+PRE_Attack_Belgium = {
+	fire_only_once = yes
+	cost = 0
+	allowed = {
+		tag = PRE
+		has_war = no
+	}
+	visible = {
+		has_completed_focus = PRE_Rest_Germany
+	}
+	complete_effect = {
+		declare_war_on = {
+			target = BLI
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = LUX
+			type = annex_everything
+		}
+	}
+}
+PRE_Puppet_Belgium = {
+	fire_only_once = yes
+	cost = 0
+	allowed = {
+		tag = PRE
+		owns_state = 34
+		owns_state = 6
+	}
+	visible = {
+		has_completed_focus = PRE_Rest_Germany
+	}
+	complete_effect = {
+		if = {
+			limit = {
+				is_in_faction_with = BTV
+			}
+			BTV = {
+				transfer_state = 6
+				add_state_core = 6
+			}
+			puppet = BLI
+			BLI = {
+				transfer_state = 34
+				set_politics = {
+					ruling_party = autocratic
+        				elections_allowed = no
+        				last_election = "1935.12.17"
+        				election_frequency = 48
+				}
+				set_popularities = {
+					autocratic = 100
+				}
+				create_country_leader = {
+	       				name = "Heinz Guderian"
+	        			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	        			picture = "Heinz_Guderian.tga"
+	        			expire = "1965.1.1"
+	        			ideology = autocratic_subideology
+	        			traits = {
+	        			}
+				}
+				set_cosmetic_tag = BLI_german_wallonia
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					is_in_faction_with = BTV
+				}
+			}
+			puppet = BLI
+			BLI = {
+				transfer_state = 6
+				transfer_state = 34
+				set_politics = {
+					ruling_party = autocratic
+        				elections_allowed = no
+        				last_election = "1935.12.17"
+        				election_frequency = 48
+				}
+				set_popularities = {
+					autocratic = 100
+				}
+				create_country_leader = {
+	       				name = "Heinz Guderian"
+	        			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	        			picture = "Heinz_Guderian.tga"
+	        			expire = "1965.1.1"
+	        			ideology = autocratic_subideology
+	        			traits = {
+	        			}
+				}
+				set_cosmetic_tag = BLI_german_belgium
+			}
+		}
+	}
+}	
 ##take east
 
 PRE_Diplomacy_Ostland = {
