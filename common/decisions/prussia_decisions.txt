@@ -343,6 +343,12 @@ PRE_Attack_Belgium = {
 	visible = {
 		has_completed_focus = PRE_Rest_Germany
 	}
+	available = {
+	RHN = {
+	exists = no
+	}
+	at_war_with = FRE
+	}
 	complete_effect = {
 		declare_war_on = {
 			target = BLI
@@ -364,6 +370,11 @@ PRE_Puppet_Belgium = {
 	}
 	visible = {
 		has_completed_focus = PRE_Rest_Germany
+	}
+	available = {
+	BLI = {
+	exists = no
+	}
 	}
 	complete_effect = {
 		if = {
@@ -525,9 +536,12 @@ PRE_Ukraine_Goltz = {
         has_war = no
         BLT = {
         is_puppet_of = PRE
+		owns_state = 95
+		owns_state = 96
+		owns_state = 94
         }
         WHR = {
-        exists = no    
+        exists = no 
         }
         }
         visible = {

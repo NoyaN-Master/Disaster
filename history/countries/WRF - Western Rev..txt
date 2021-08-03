@@ -151,7 +151,7 @@ create_country_leader = {
 
 create_field_marshal = {
 			name = "Mustafa Kemal Paşa"
-			picture = "Portrait_WRF_Mustafa_Kemal.tga"
+			portrait_path = "gfx/leaders/WRF/Portrait_WRF_Mustafa_Kemal.tga"
 			traits = { war_hero brilliant_strategist war_hero infantry_officer trickster desert_fox hill_fighter kemalist_general }
 			skill = 5
 			attack_skill = 5
@@ -161,8 +161,8 @@ create_field_marshal = {
 			id = 1881
 			}
 create_corps_commander = {
-		name = "Fahrettin Altay"
-		picture = "Portrait_OTT_Omer_Fahrettin_Turkkan.tga"
+		name = "Ömer Fahrettin Türkkan"
+		portrait_path = "gfx/leaders/WRF/Portrait_OTT_Omer_Fahrettin_Turkkan.tga"
 		traits = { war_hero brilliant_strategist cavalry_officer hill_fighter kemalist_general }
 		skill = 4 #13
 		attack_skill = 4
@@ -173,7 +173,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 		name = "Cemil Cahit Toydemir"
-		picture = "Portrait_OTT_Cahit_Toydemir.tga"
+		portrait_path = "gfx/leaders/WRF/Portrait_OTT_Cahit_Toydemir.tga"
 		traits = { career_officer infantry_officer hill_fighter kemalist_general kemalist_general }
 		skill = 3 #10
 		attack_skill = 3
@@ -183,7 +183,7 @@ create_corps_commander = {
 	}
 create_corps_commander = {
 		name = "Osman Fuat Bey"
-		picture = "Portrait_OTT_OsmanFuad.tga"
+		portrait_path = "gfx/leaders/WRF/Portrait_OTT_OsmanFuad.tga"
 		traits = { career_officer infantry_officer hill_fighter kemalist_general kemalist_general }
 		skill = 3 #10
 		attack_skill = 3
