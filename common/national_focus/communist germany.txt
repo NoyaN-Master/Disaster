@@ -359,7 +359,7 @@ focus = {
 		x = 10
 		y = 9
 		cost = 7
-        prerequisite = { focus = NGU_choose_strasser }								
+        prerequisite = { focus = NGU_strasser_banner }								
 		completion_reward = {
 		add_ideas = NGU_Strasserist_Artitechture
 		}
@@ -477,7 +477,7 @@ focus = {
 		x = 10
 		y = 10
 		cost = 7
-        prerequisite = { focus = NGU_choose_strasser }								
+        prerequisite = { focus = NGU_strasser_complete_industry }								
 		completion_reward = {
 		add_popularity = {
     	ideology = unisocialist
@@ -923,14 +923,14 @@ focus = {
 		icon = GFX_goal_NGU_Belarus2
 		x = 17
 		y = 7
-		cost = 1
+		cost = 5
 		available = {
 		has_government = unisocialist	
 		}
         prerequisite = { focus = NGU_Strasser_Agenda}				
 		completion_reward = {
 		declare_war_on = {
-    	target = WHL
+    	target = WHR
     	type = annex_everything
 		}
 		}
@@ -940,7 +940,7 @@ focus = {
 		icon = GFX_goal_NGU_Ukraine2
 		x = 17
 		y = 8
-		cost = 1
+		cost = 6
 		available = {
 		has_government = unisocialist	
 		}
@@ -957,7 +957,7 @@ focus = {
 		icon = GFX_goal_NGU_Stalin
 		x = 17
 		y = 9
-		cost = 1
+		cost = 5
 		available = {
 		has_government = unisocialist	
 		}
@@ -973,7 +973,7 @@ focus = {
 		icon = GFX_goal_NGU_Russia2
 		x = 17
 		y = 10
-		cost = 1
+		cost = 10
 		available = {
 		has_government = unisocialist	
 		}
@@ -994,7 +994,7 @@ focus = {
 		icon = GFX_goal_NGU_France
 		x = 17
 		y = 11
-		cost = 1
+		cost = 10
 		available = {
 		has_government = unisocialist
 		SOV  {

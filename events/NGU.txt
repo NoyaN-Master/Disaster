@@ -710,7 +710,6 @@ country_event = { # Britian Joins War
 		create_faction = Allies
 		add_to_faction = FRE 
 		}	
-		news_event = {id = news.21}
 		set_global_flag = WW2_happened
 	}
 }	
