@@ -260,6 +260,10 @@ PRE_Deal_CEZ = {
         }
         available  = {   
         has_war = no
+	owns_state = 69
+	owns_state = 9
+	owns_state = 75
+	owns_state = 74
         }
         visible = {
         original_tag = PRE
@@ -280,7 +284,7 @@ PRE_Deal_CEZ = {
 		create_country_leader = {
 	        name = "Martin Bormann"
 	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        picture   = "Portrait_Germany_Martin_Bormann.tga"
+	        picture = "Portrait_Germany_Martin_Bormann.tga"
 	        expire = "1965.1.1"
 	        ideology = autocratic_subideology
 	        traits = {
@@ -311,6 +315,10 @@ PRE_Attack_Rhineland = {
         has_completed_focus = PRE_Rest_Germany
         }    
         complete_effect = {
+	declare_war_on = {
+		target = RHN
+		type = annex_everything
+	}
         declare_war_on = {
     	     target = FRE
     	     type = annex_everything
