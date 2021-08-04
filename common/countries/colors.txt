@@ -602,6 +602,11 @@ USF = {
 }
 
 GLC = {
+   	color = rgb { 25 25 128 }
+	color_ui = rgb { 25 25 128 }
+}
+
+CCC = {
    	color = rgb { 96 56 43 }
 	color_ui = rgb { 96 56 43 }
 }
