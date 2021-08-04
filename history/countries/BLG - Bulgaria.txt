@@ -18,20 +18,20 @@ set_technology = {
 set_convoys = 50
 
 set_politics = {
-	ruling_party = social_democrat
-	last_election = "1936.1.1"
+	ruling_party = authoritarian_democrat
+	last_election = "1935.6.21"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 set_popularities = {
 	conservative = 0
 	liberal = 14
-	social_democrat = 56
+	social_democrat = 10
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
 	unisocialist = 0
-	authoritarian_democrat = 0
+	authoritarian_democrat = 46
 	autocratic = 10
 	ultranationalist = 10
 	revolutionary_nationalist = 10
@@ -47,7 +47,7 @@ create_country_leader = {
 	#desc = "BLG_Aleksandr_Stamboliyski_desc"
 	picture = "BLG_Aleksandr_Stamboliyski.tga"
 	expire = "2020.1.1"
-	ideology = social_democrat_subideology
+	ideology = authoritarian_democrat_subideology
 	traits = {
 		#
 	}
