@@ -16,14 +16,15 @@ set_technology = {
 }
 
 set_convoys = 50
-
+1936.1.1 = {
 set_politics = {
 	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
-add_ideas = 	autocracy 
+}
+add_ideas = 	colonial_government 
 add_ideas = 	interventionism 
 add_ideas = 	semi_industrial_society
 
@@ -34,8 +35,8 @@ set_popularities = {
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
 	unisocialist = 0
-	authoritarian_democrat = 0
-	autocratic = 100
+	authoritarian_democrat = 100
+	autocratic = 0
 	ultranationalist = 0
 	revolutionary_nationalist = 0
 	esoteric_traditionalist = 0

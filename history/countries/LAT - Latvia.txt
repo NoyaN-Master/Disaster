@@ -15,7 +15,7 @@ set_technology = {
 set_research_slots = 3
 
 set_convoys = 10
-
+1936.1.1 = {
 set_politics = {
 	ruling_party = ultranationalist
 	last_election = "1931.10.3"
@@ -35,6 +35,7 @@ set_popularities = {
 	revolutionary_nationalist = 10
 	esoteric_traditionalist = 10
 	revolutionary_anarchist = 0
+}
 }
 
 

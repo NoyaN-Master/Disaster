@@ -19,6 +19,37 @@ if = {
 		mtg_transport = 1
 	}
 }
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = UKR
+		autonomous_state = autonomy_colony
+		freedom_level = 0.43
+	}
+	set_autonomy = {
+		target = LAT
+		autonomous_state = autonomy_colony
+		freedom_level = 0.35
+	}
+	set_autonomy = {
+		target = BLT
+		autonomous_state = autonomy_colony
+		freedom_level = 0.4
+	}
+	set_autonomy = {
+		target = QAZ
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.8
+	}
+	else = {
+		puppet = UKR
+		puppet = LAT
+		puppet = BLT
+		puppet = QAZ
+	}
+}
 
 
 

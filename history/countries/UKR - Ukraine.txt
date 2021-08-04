@@ -15,16 +15,13 @@ set_technology = {
 	basic_light_tank = 1
 }
 set_convoys = 50
+1936.1.1 = {
 set_politics = {
 	ruling_party = autocratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
-add_ideas = 	multi_party_democracy 	
-add_ideas = 	interventionism 
-add_ideas = 	industrialized_society
-
 set_popularities = {
 	conservative = 2
 	liberal = 5
@@ -39,6 +36,12 @@ set_popularities = {
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
+}
+add_ideas = 	autocracy 	
+add_ideas = 	interventionism 
+add_ideas = 	industrialized_society
+
+
 
 create_country_leader = {
 	name = "Symon Petliura"
