@@ -1,0 +1,20 @@
+state={
+	id=876
+	name="STATE_876"
+	history={
+		owner = USF
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+
+		}
+		add_core_of = USF
+		add_core_of = GLC
+	}
+
+	provinces={
+		827 971 3829 6855 7528 9760 9808 
+	}
+	manpower=1757744
+	buildings_max_level_factor=1.000
+}
