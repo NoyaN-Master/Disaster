@@ -1,11 +1,6 @@
-
 state={
-	id=391
-	name="STATE_391"
-	resources={
-		steel=110.000
-	}
-
+	id=881
+	name="STATE_881"
 	history={
 		owner = MDW
 		buildings = {
@@ -15,16 +10,11 @@ state={
 		}
 		add_core_of = MDW
 		add_core_of = GLC
-		victory_points = {
-			1866 5 
-		}
-
 	}
 
 	provinces={
-		1866 1867 4664 4807 6752 7536 9880 10719 12577 
+		10618 11667 12588 12597 12693 
 	}
-	manpower=1019650
+	manpower=689652
 	buildings_max_level_factor=1.000
-	state_category=city
 }

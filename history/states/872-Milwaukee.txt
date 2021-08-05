@@ -1,0 +1,20 @@
+state={
+	id=872
+	name="STATE_872"
+	history={
+		owner = CCC
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+
+		}
+		add_core_of = CCC
+		add_core_of = GLC
+	}
+
+	provinces={
+		12357 
+	}
+	manpower=578249	
+	buildings_max_level_factor=1.000
+}
