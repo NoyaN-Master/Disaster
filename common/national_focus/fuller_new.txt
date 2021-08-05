@@ -137,9 +137,11 @@ focus_tree = {
 		focus =  SKL_Reactivate_Plant 
 		}
 		completion_reward = {
+		839 = {
 		create_unit = {
     	division = "name = \"The Iron Antichrist\" division_template = \"Tank Brigades\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
     	owner = SKL
+		}		
 		}	
 		hidden_effect = {			
 		}

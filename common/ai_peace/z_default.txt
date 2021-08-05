@@ -56,22 +56,22 @@ default_peace = {
 
 	# ROOT = Taker, FROM = State
 	take_states = {
-		factor = 500
+		factor = 50000
 
 		# prioritize cores, claims, and ambition areas
 		modifier = {
-			factor = 100
+			factor = 1000
 			FROM = { is_core_of = ROOT }
 		}
 		modifier = {
-			factor = 100
+			factor = 1000
 			FROM = {
 				NOT = { is_core_of = ROOT }
 				is_claimed_by = ROOT
 			}
 		}
 		modifier = {
-			factor = 100
+			factor = 1000
 			FROM = {
 				is_claim_or_core_of_ROOT = no
 				is_ambition_area_of_ROOT = yes
@@ -80,26 +80,26 @@ default_peace = {
 
 		# prioritize important states
 		modifier = {
-			factor = 10
+			factor = 1000
 			FROM = { is_important_state = yes }
 		}
 
 		# prioritize neighboring states
 		modifier = {
-			factor = 10
+			factor = 1000
 			FROM = {
 				num_owned_neighbour_states = { count > 0 owner = ROOT }
 			}
 		}
 		modifier = {
-			factor = 8
+			factor = 1000
 			FROM = {
 				NOT = { num_owned_neighbour_states = { count > 0 owner = ROOT } }
 				num_claimed_peace_conference_neighbour_states = { count > 0 owner = ROOT }
 			}
 		}
 		modifier = {
-			factor = 3
+			factor = 1000
 			FROM = {
 				# has two neighboring states
 				OR = {
@@ -126,7 +126,7 @@ default_peace = {
 			}
 		}
 		modifier = {
-			factor = 5
+			factor = 1000
 			FROM = {
 				# has three neighboring states
 				OR = {
@@ -161,7 +161,7 @@ default_peace = {
 			}
 		}
 		modifier = {
-			factor = 7
+			factor = 1000
 			FROM = {
 				# has four neighboring states
 				OR = {

@@ -56,6 +56,8 @@ TUR_unification_category = {
         add_state_core = 348
         add_state_core = 349
         add_state_core = 797
+        add_state_core = 835
+        set_capital = 340
         }
         hidden_effect = {
         set_country_flag = unification_ataturk
@@ -111,6 +113,25 @@ TUR_unification_category = {
 	set_global_flag = turkey_civilwar_over  
         set_country_flag = unification_atsiz
         news_event = { id = news.13 }
+        }
+        WRF = {
+        add_state_core = 49
+        add_state_core = 347
+        add_state_core = 839
+        add_state_core = 798
+        add_state_core = 356
+        add_state_core = 355
+        add_state_core = 354
+        add_state_core = 353
+        add_state_core = 800
+        add_state_core = 352
+        add_state_core = 350
+        add_state_core = 346
+        add_state_core = 348
+        add_state_core = 349
+        add_state_core = 797
+        add_state_core = 835
+        set_capital = 340
         }    
         }
         ai_will_do = {
@@ -191,7 +212,26 @@ TUR_unification_category = {
         set_cosmetic_tag = CIB_Enver
         news_event = { id = news.12 }    
         }
-        set_country_flag = unification_enver            
+        set_country_flag = unification_enver
+        CIB = {
+        add_state_core = 49
+        add_state_core = 347
+        add_state_core = 839
+        add_state_core = 798
+        add_state_core = 356
+        add_state_core = 355
+        add_state_core = 354
+        add_state_core = 353
+        add_state_core = 800
+        add_state_core = 352
+        add_state_core = 350
+        add_state_core = 346
+        add_state_core = 348
+        add_state_core = 349
+        add_state_core = 797
+        add_state_core = 835
+        set_capital = 797
+        }            
         }
         ai_will_do = {
 			factor = 1000
@@ -236,6 +276,25 @@ TUR_unification_category = {
 	    set_global_flag = turkey_civilwar_over
             set_country_flag = unification_samet
             news_event = { id = news.15 }
+        }
+        CIB = {
+        add_state_core = 49
+        add_state_core = 347
+        add_state_core = 839
+        add_state_core = 798
+        add_state_core = 356
+        add_state_core = 355
+        add_state_core = 354
+        add_state_core = 353
+        add_state_core = 800
+        add_state_core = 352
+        add_state_core = 350
+        add_state_core = 346
+        add_state_core = 348
+        add_state_core = 349
+        add_state_core = 797
+        add_state_core = 835
+        set_capital = 340
         }
         }
         ai_will_do = {
@@ -300,6 +359,7 @@ TUR_unification_category = {
         add_state_core = 348
         add_state_core = 349
         add_state_core = 797
+        add_state_core = 835
         set_country_flag = banmilitas
         }
         }
@@ -364,6 +424,7 @@ TUR_unification_category = {
         add_state_core = 348
         add_state_core = 349
         add_state_core = 797
+        add_state_core = 835
         set_country_flag = banmilitas
         }
         }
@@ -426,7 +487,9 @@ TUR_unification_category = {
         add_state_core = 348
         add_state_core = 349
         add_state_core = 797
+        add_state_core = 835
         set_country_flag = banmilitas
+        set_capital = 797
         }
         }
         ai_will_do = {
@@ -485,6 +548,8 @@ TUR_unification_category = {
         add_state_core = 348
         add_state_core = 349
         add_state_core = 797
+        add_state_core = 835
+        set_capital = 797
         }
         }
         ai_will_do = {
@@ -543,6 +608,8 @@ TUR_unification_category = {
         add_state_core = 348
         add_state_core = 349
         add_state_core = 797
+        add_state_core = 835
+        set_capital = 797
         }
         }
         ai_will_do = {
@@ -590,6 +657,8 @@ TUR_unification_category = {
         add_state_core = 348
         add_state_core = 349
         add_state_core = 797
+        add_state_core = 835
+        set_capital = 797
         } 
 	hidden_effect = {
 	    set_global_flag = turkey_civilwar_over

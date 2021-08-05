@@ -608,6 +608,10 @@ country_event = { #heynig
 	option = {
 		name = worldwar.35.a
         KKK = {
+        declare_war_on = {
+        target = NAF
+        type = annex_everything
+        }    
         transfer_state = 367
         transfer_state = 370
         transfer_state = 372
@@ -623,10 +627,6 @@ country_event = { #heynig
         add_popularity = {
         ideology = revolutionary_nationalist
         popularity = 1.0
-        }
-        declare_war_on = {
-        target = NAF
-        type = annex_everything
         }
 		load_oob = KKK_oob
         }
