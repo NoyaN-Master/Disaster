@@ -274,7 +274,7 @@ country_event = {		#Super Event DONE
 	is_triggered_only = no
 	
 	trigger = {
-		NGU = {
+		ROOT = {
 		has_country_flag = WW2_happened	
 		}
 	}
