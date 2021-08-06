@@ -433,3 +433,29 @@ country_event = {		#Super Event DONE
 	}
 }
 
+country_event = {		#Super Event DONE
+	id = super.18
+	title = super.18.t
+	desc = super.18.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	trigger = {
+		WRF = {
+		has_completed_focus = WRF_The_Great_War	
+		}
+	}
+
+	fire_only_once = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.18.a
+        set_global_flag = Super_Event_Visible
+        set_global_flag = Atsiz_Europe
+		sound_effect = "ruswar"
+	}
+}
+

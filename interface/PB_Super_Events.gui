@@ -115,6 +115,13 @@ guiTypes = {
 			spriteType = "GFX_SPEVNT_GermanAuth_Unif"
 			position = { x = 35 y = 0 }
 		}
+
+		iconType = {
+			name ="Super_Event_Image_Atsiz_Europe"
+			spriteType = "GFX_SPEVNT_Atsiz_Europe"
+			position = { x = 35 y = 0 }
+		}
+		
 		
 		instantTextBoxType = {
 			name = "Pax_Super_Event_Title_textbox"

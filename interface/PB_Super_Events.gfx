@@ -118,6 +118,12 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	spriteType = {
+		name = "GFX_SPEVNT_Atsiz_Europe"
+		texturefile = "gfx/super_events/SPEVNT_Atsiz_Europe.dds"
+		legacy_lazy_load = no
+	}
+
 
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window_thin_border"
