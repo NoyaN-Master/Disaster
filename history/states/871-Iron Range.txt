@@ -5,7 +5,7 @@ state={
 	resources={
 		steel=110.000
 	}
-
+	state_category = city
 	history={
 		owner = CCC
 		buildings = {
@@ -15,9 +15,7 @@ state={
 		}
 		add_core_of = GLC
 		add_core_of = CCC
-		victory_points = {
-			1866 5 
-		}
+		
 
 	}
 

@@ -1,6 +1,7 @@
 state={
 	id=874
 	name="STATE_874"
+	state_category = metropolis
 	history={
 		owner = CCC
 		buildings = {
@@ -10,6 +11,10 @@ state={
 		}
 		add_core_of = CCC
 		add_core_of = GLC
+
+		victory_points = {
+			6710 20 
+		}
 	}
 
 	provinces={
