@@ -98,33 +98,7 @@ units = {
 
 	}
 
-	### Obalnim Armija ###
-	division = {
-		#name = "12. 'Jadranska' Pesadijska Div."  			# Peadijska if we get font support
-		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = yes
-			name_order = 12
-		}
-		location = 3924
-		division_template = "Pesadijska Divizija"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-
-	}
-
 	### 5. Armija ###
-	division = {
-		#name = "8. 'Krajinska' Pesadijska Div."  			# Peadijska if we get font support
-		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = yes
-			name_order = 8
-		}
-		location = 907
-		division_template = "Pesadijska Divizija"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-
-	}
 	division = {
 		#name = "9. 'Timocka' Pesadijska Div."  				# Peadijska if we get font support
 		division_name = {    # New syntax for compatibility with name lists
@@ -133,18 +107,6 @@ units = {
 		}
 		location = 11868
 		division_template = "Pesadijska Divizija"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-
-	}
-	division = {
-		#name = "2. Konjička Divizija"
-		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 11887
-		division_template = "Konjička Divizija"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
@@ -219,18 +181,7 @@ units = {
 
 	#### 2. Grupa Vojska ####
 	### 1. Armija ###
-	division = {
-		#name = "7. 'Potiska' Pesadijska Div."  				# Peadijska if we get font support
-		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = yes
-			name_order = 7
-		}
-		location = 6643
-		division_template = "Pesadijska Divizija"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-
-	}
+	
 	division = {
 		#name = "3. Konjička Divizija"
 		division_name = {    # New syntax for compatibility with name lists

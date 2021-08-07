@@ -11,12 +11,8 @@ country_event = {
 	trigger = { 
 	tag = FIU
 	    SOR = {
-        NOT = {
-        controls_state = 44
-        controls_state = 105
-        controls_state = 802 
+        surrender_progress > 0.6
         }
-        }   
     }
 	
 	mean_time_to_happen = {
@@ -34,6 +30,7 @@ country_event = {
 		transfer_state = 105
 		transfer_state = 802
 		BLG = { 
+		 white_peace = SOR
 		 transfer_state = 106
 		 transfer_state = 803
 		}
