@@ -356,6 +356,23 @@ news_event = { #Italian Bomb
 
 }
 
+news_event = { #KKK
+	id = news.24
+	title = news.24.t
+	desc = news.24.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+    option = {
+		name = news.24.a
+		
+    }
+
+}
+
 news_event = { #Mao Union
 	id = news.31
 	title = news.31.t
