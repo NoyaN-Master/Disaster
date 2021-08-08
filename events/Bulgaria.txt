@@ -10,12 +10,11 @@ country_event = {
 	
 	trigger = { 
 	tag = BLG
-	    date > 1936.1.17
-        }
+	    date > 1936.1.15
     }
 	
 	mean_time_to_happen = {
-	days = 2
+	days = 1
 	}
 	
 	fire_only_once = yes
@@ -30,3 +29,4 @@ country_event = {
 		hidden_effect = {
 		}
 	}
+}

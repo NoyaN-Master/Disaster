@@ -8,10 +8,9 @@ country_event = {
 
 	picture = GFX_report_event_aut_dollfuss_speech
 	
-	trigger = { 
+	trigger = {
 	tag = FIU
 	    date > 1936.1.17
-        }
     }
 	
 	mean_time_to_happen = {
@@ -30,7 +29,7 @@ country_event = {
 		hidden_effect = {
 		}
 	}
-
+}
 country_event = {
 	id = fiu.1
 	immediate = { log = "[GetDateText]: [Root.GetName]: event fiu.1" }
