@@ -75,6 +75,7 @@ focus_tree = {
 		}
         prerequisite = { focus = PAL_Nasser } 
 		completion_reward = {
+		455 = {
 		create_unit = {
     	division = "name = \"Nasser's Own\" division_template = \"Palestinian Liberation Forces\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
     	owner = PAL
@@ -91,6 +92,7 @@ focus_tree = {
     	division = "name = \"Shia Volunteers\" division_template = \"Palestinian Liberation Forces\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
     	owner = PAL
 		}
+		}	
 		}
 	}
     focus = {

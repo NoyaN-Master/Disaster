@@ -6,17 +6,17 @@ state={
 	state_category = city
 
 	history={
-		owner = MDW
+		owner = GLC
 		buildings = {
 			infrastructure = 5
 			arms_factory = 1
 			industrial_complex = 2
 		}
-		add_core_of = MDW
+		add_core_of = GLC
 
 	}
 
 	provinces={
-		1527 4590 6737 10339 10393 11589 12312 12365 12368  
+		6737 7611 9682 10339 10461 11589 12312 12368  
 	}
 }

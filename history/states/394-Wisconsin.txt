@@ -10,19 +10,17 @@ state={
 	}
 
 	history={
-		owner = MDW
+		owner = GLC
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 3
 		}
-		add_core_of = MDW
-		victory_points = {
-			12357 5 
-		}
+		add_core_of = GLC
+		
 
 	}
 
 	provinces={
-		703 926 1560 1760 1849 3699 4029 4166 4738 4834 7776 7829 9657 9678 10341 10526 12357 12456 
+		703 926 1560 1760 1849 3699 4029 4166 4738 4834 7776 7829 9657 9678 10341 10526 12456 
 	}
 }

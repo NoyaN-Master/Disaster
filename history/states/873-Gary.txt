@@ -1,0 +1,21 @@
+state={
+	id=873
+	name="STATE_873"
+	state_category = city
+	history={
+		owner = CCC
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+
+		}
+		add_core_of = CCC
+		add_core_of = GLC
+	}
+
+	provinces={
+		6713 
+	}
+	manpower=100666
+	buildings_max_level_factor=1.000
+}

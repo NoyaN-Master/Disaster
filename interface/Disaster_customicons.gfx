@@ -25262,6 +25262,195 @@ SpriteType = {
 		legacy_lazy_load = no	
 			
  }			
+			
+	SpriteType = {		
+		name = "GFX_goal_WRF_Buddha"	
+		texturefile = "gfx/interface/goals/WRF_Buddha.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_WRF_Buddha_shine"	
+		texturefile = "gfx/interface/goals/WRF_Buddha.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/WRF_Buddha.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/WRF_Buddha.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }			
+	SpriteType = {		
+		name = "GFX_goal_WRF_Journey"	
+		texturefile = "gfx/interface/goals/WRF_Journey.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_WRF_Journey_shine"	
+		texturefile = "gfx/interface/goals/WRF_Journey.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/WRF_Journey.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/WRF_Journey.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }			
+			
+	SpriteType = {		
+		name = "GFX_goal_WRF_Gods"	
+		texturefile = "gfx/interface/goals/WRF_Gods.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_WRF_Gods_shine"	
+		texturefile = "gfx/interface/goals/WRF_Gods.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/WRF_Gods.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/WRF_Gods.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }			
+			
+	SpriteType = {		
+		name = "GFX_goal_WRF_Civiliz"	
+		texturefile = "gfx/interface/goals/WRF_Civiliz.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_WRF_Civiliz_shine"	
+		texturefile = "gfx/interface/goals/WRF_Civiliz.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/WRF_Civiliz.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/WRF_Civiliz.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }			
+			
+	SpriteType = {		
+		name = "GFX_goal_WRF_Great_War"	
+		texturefile = "gfx/interface/goals/WRF_Great_War.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_WRF_Great_War_shine"	
+		texturefile = "gfx/interface/goals/WRF_Great_War.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/WRF_Great_War.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/WRF_Great_War.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }			
 
 
  }			

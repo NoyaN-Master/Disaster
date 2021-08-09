@@ -593,7 +593,9 @@ NGU_Hitler_Field = {
         }
         original_tag = NGU
         has_government = revolutionary_nationalist
-        has_country_flag = wolfstaat_big
+        WLF = {
+        owns_state = 219     
+        }
         }
         visible = {
         original_tag = NGU

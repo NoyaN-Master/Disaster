@@ -723,85 +723,280 @@ focus_tree = {
 	}
 	#teaserfocuses
 	focus = {
-		id = WRF_Nazbol_ending
-		icon = GFX_goal_IZM_Deng
-		x = 14
-		y = 10
-		cost = 2
-		available = { always = no }
-		available_if_capitulated = yes
-		mutually_exclusive = { focus = WRF_Revisionist_Ending }
-		mutually_exclusive = { focus = WRF_Brown_Ending }
-		mutually_exclusive = { focus = WRF_Tengri_ending }
-        prerequisite = { focus = WRF_Blueprints_Destruction focus = WRF_End_Kemalism focus = WRF_Terror_Raids focus = WRF_Sons_Of_Eurasia }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		
-		hidden_effect = {
-		}
-		}
-	}
-	focus = {
-		id = WRF_Tengri_ending
-		icon = GFX_goal_national_rebirth
-		x = 16
-		y = 10
-		cost = 2
-		available = { always = no }
-		available_if_capitulated = yes
-		mutually_exclusive = { focus = WRF_Nazbol_ending }
-		mutually_exclusive = { focus = WRF_Brown_Ending }
-		mutually_exclusive = { focus = WRF_Revisionist_Ending }
-        prerequisite = { focus = WRF_Blueprints_Destruction focus = WRF_End_Kemalism focus = WRF_Terror_Raids focus = WRF_Sons_Of_Eurasia }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		
-		hidden_effect = {
-		}
-		}
-	}
-	focus = {
 		id = WRF_Brown_Ending
 		icon = GFX_goal_atsiz_end
-		x = 18
+		x = 17
 		y = 10
-		cost = 2
-		available = { always = no }
+		cost = 1
+		available = { 
+		TAT = {
+		is_puppet_of = WRF
+		}	
+		CHI = {
+		is_puppet_of = WRF
+		}
+		INR = {
+		is_puppet_of = WRF
+		}
+		SRY = {
+		is_puppet_of = WRF
+		}
+		}
 		available_if_capitulated = yes
-        mutually_exclusive = { focus = WRF_Nazbol_ending }
-		mutually_exclusive = { focus = WRF_Revisionist_Ending }
-		mutually_exclusive = { focus = WRF_Tengri_ending }
 		prerequisite = { focus = WRF_Blueprints_Destruction focus = WRF_End_Kemalism focus = WRF_Terror_Raids focus = WRF_Sons_Of_Eurasia }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = atsiz_endingtt
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Conquer_Tibet
+		icon = GFX_goal_WRF_Buddha
+		x = 17
+		y = 11
+		cost = 5
+		available = { 
+		
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = WRF_Brown_Ending }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			custom_effect_tooltip = atsiz_endingtt2
+		declare_war_on = {
+    	target = TIB
+   		type = annex_everything
+		}
+		declare_war_on = {
+    	target = KSM
+   		type = annex_everything
+		}
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_A_Spiritual_Visit
+		icon = GFX_goal_WRF_Journey
+		x = 17
+		y = 12
+		cost = 5
+		available = { 
+		TIB = {
+		exists = no	
+		}
+		KSM = {
+		exists = no	
+		}
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = WRF_Conquer_Tibet }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		custom_effect_tooltip = atsiz_endingtt3
+		country_event = { id = atsiz.11 daqys = 1}
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Gods_Demand
+		icon = GFX_goal_WRF_Gods
+		x = 17
+		y = 13
+		cost = 5
+		available = { 
+		always = no
+		}
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = WRF_Impeach_Atsiz}
+		prerequisite = { focus = WRF_A_Spiritual_Visit }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
 		
 		hidden_effect = {
 		}
 		}
 	}
+
 	focus = {
-		id = WRF_Revisionist_Ending
-		icon = GFX_goal_turkes
-		x = 20
-		y = 10
-		cost = 2
-		available = { always = no }
+		id = WRF_Unite_Civilization
+		icon = GFX_goal_WRF_Civiliz
+		x = 17
+		y = 14
+		cost = 5
+		available = { 
+		
+		}
 		available_if_capitulated = yes
-        prerequisite = { focus = WRF_Blueprints_Destruction focus = WRF_End_Kemalism focus = WRF_Terror_Raids focus = WRF_Sons_Of_Eurasia }
-		mutually_exclusive = { focus = WRF_Nazbol_ending }
-		mutually_exclusive = { focus = WRF_Brown_Ending }
-		mutually_exclusive = { focus = WRF_Tengri_ending }
+		prerequisite = { focus = WRF_Gods_Demand }
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		completion_reward = {
+		country_event = { id = atsiz.12 days = 1}
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_The_Great_War
+		icon = GFX_goal_WRF_Great_War
+		x = 17
+		y = 15
+		cost = 5
+		available = { 
 		
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = WRF_Unite_Civilization }
+		will_lead_to_war_with = NGU
+		will_lead_to_war_with = PRE
+		will_lead_to_war_with = UKR
+		will_lead_to_war_with = FRE
+		will_lead_to_war_with = BAV
+		will_lead_to_war_with = SWV
+		will_lead_to_war_with = BLT
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		country_event = { id = atsiz.13}	
+		add_ideas = WRF_Atsiz_Crusade	
+		declare_war_on = {
+    	target = UKR
+   		type = annex_everything
+		}
+		declare_war_on = {
+    	target = FRI
+   		type = annex_everything
+		}
+		declare_war_on = {
+    	target = WHR
+   		type = annex_everything
+		}
+		declare_war_on = {
+    	target = BLT
+   		type = annex_everything
+		}
+		declare_war_on = {
+    	target = PLN
+   		type = annex_everything
+		}
+		declare_war_on = {
+    	target = PRE
+   		type = annex_everything
+		}
+		declare_war_on = {
+    	target = HNG
+   		type = annex_everything
+		}
+		declare_war_on = {
+    	target = NGU
+   		type = annex_everything
+		}
+		declare_war_on = {
+    	target = AUT
+   		type = annex_everything
+		}
+		declare_war_on = {
+    	target = HUN
+   		type = annex_everything
+		}
+		declare_war_on = {
+    	target = FIU
+   		type = annex_everything
+		}
+		declare_war_on = {
+    	target = GRE
+   		type = annex_everything
+		}
+		declare_war_on = {
+    	target = SOR
+   		type = annex_everything
+		}
+		declare_war_on = {
+    	target = BLG
+   		type = annex_everything
+		}
+		declare_war_on = {
+    	target = WAL
+   		type = annex_everything
+		}
+		declare_war_on = {
+    	target = TRN
+   		type = annex_everything
+		}
+		declare_war_on = {
+    	target = MLV
+   		type = annex_everything
+		}
+		declare_war_on = {
+    	target = FRE
+   		type = annex_everything
+		}
+		declare_war_on = {
+    	target = BLI
+   		type = annex_everything
+		}
+		declare_war_on = {
+    	target = BTV
+   		type = annex_everything
+		}
+		declare_war_on = {
+    	target = LUX
+   		type = annex_everything
+		}
+		declare_war_on = {
+    	target = SPK
+   		type = annex_everything
+		}
+		declare_war_on = {
+    	target = PKR
+   		type = annex_everything
+		}
+		declare_war_on = {
+    	target = ENG
+   		type = annex_everything
+		}
+		declare_war_on = {
+    	target = DAN
+   		type = annex_everything
+		}
+		declare_war_on = {
+    	target = NRG
+   		type = annex_everything
+		}
+		declare_war_on = {
+    	target = SWV
+   		type = annex_everything
+		}
+		declare_war_on = {
+    	target = SLK
+   		type = annex_everything
+		}
+		declare_war_on = {
+    	target = CEZ
+   		type = annex_everything
+		}
+		declare_war_on = {
+    	target = SWZ
+   		type = annex_everything
+		}
 		hidden_effect = {
 		}
 		}

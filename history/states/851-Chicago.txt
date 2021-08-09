@@ -2,11 +2,11 @@
 state={
 	id=851
 	name="STATE_851"
-	manpower = 2461527
+	manpower = 3376438
 	state_category = megalopolis
 
 	history={
-		owner = GLC
+		owner = CCC
 		buildings = {
 			infrastructure = 8
 			arms_factory = 2
@@ -14,6 +14,7 @@ state={
 			air_base = 4
 		}
 		add_core_of = GLC
+		add_core_of = CCC
 		victory_points = {
 			9450 30.0
 		}

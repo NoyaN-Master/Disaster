@@ -1,0 +1,32 @@
+add_namespace = BLG
+
+country_event = {
+	id = blg.0
+	immediate = { log = "[GetDateText]: [Root.GetName]: event blg.0" }
+	title = blg.0.t
+	desc = blg.0.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+	
+	trigger = { 
+	tag = BLG
+	    date > 1936.1.16
+    }
+	
+	mean_time_to_happen = {
+	days = 1
+	}
+	
+	fire_only_once = yes
+
+	
+	option = {
+		name = blg.0.a
+		declare_war_on = {
+		target = SOR
+		type = annex_everything
+		}
+		hidden_effect = {
+		}
+	}
+}

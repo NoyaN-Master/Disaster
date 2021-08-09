@@ -405,7 +405,10 @@ focus_tree = {
 		idea = NGU_FrenchSaxons
 		days = 50
 		}
-		unlock_decision_tooltip = PRE_France_Surrender	
+		unlock_decision_tooltip = PRE_France_Surrender
+		hidden_effect = {
+			set_country_flag = WW2_happened 
+		}
 		}
 	}
 

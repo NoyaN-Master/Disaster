@@ -59,6 +59,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		CIB_Enver_Script = yes
+		country_event = { id = enver.31 days = 1 }
 		}
 	}
 
@@ -140,6 +141,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		CIB_Enver_Script = yes
+		country_event = { id = enver.30 days = 1 }
 		}
 	}
 
@@ -203,6 +205,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		CIB_Enver_Script = yes
+		country_event = { id = enver.33 days = 1 }
 		}
 	}
 
@@ -244,7 +247,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		remove_ideas = Enver_unification_idea_12
+		remove_ideas = Enver_unification_idea_13
 		add_ideas = CIB_Back_In_Black
 		country_event = { id = enver.23 }
 		unlock_decision_category_tooltip  = enver_foreign_category
@@ -284,6 +287,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		CIB_Enver_Script = yes
+		country_event = { id = enver.32 days = 1 }
 		}
 	}
     

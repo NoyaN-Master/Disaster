@@ -1,0 +1,22 @@
+state={
+	id=880
+	name="STATE_880"
+	manpower = 144363
+	
+	state_category = town
+
+	history={
+		owner = DAN
+		#victory_points = {
+		#}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+		}
+		add_core_of = DAN
+	}
+
+	provinces={
+		332 11251
+	}
+}

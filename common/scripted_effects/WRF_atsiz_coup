@@ -202,7 +202,21 @@ CIB_Enver_Script = {
 			remove_idea = Enver_unification_idea_10
 			add_idea = Enver_unification_idea_11
 		}
-		}				
+		}
+	else_if = {
+		limit = { has_idea = Enver_unification_idea_11 }
+			swap_ideas = {
+			remove_idea = Enver_unification_idea_11
+			add_idea = Enver_unification_idea_12
+		}
+		}
+	else_if = {
+		limit = { has_idea = Enver_unification_idea_12 }
+			swap_ideas = {
+			remove_idea = Enver_unification_idea_12
+			add_idea = Enver_unification_idea_13
+		}
+		}							
 	}
 
 NGU_RussianPeaceDeal = {

@@ -1,0 +1,22 @@
+
+state={
+	id=877
+	name="STATE_877"
+	state_category = city
+	history={
+		owner = GLC
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+
+		}
+		add_core_of = GLC
+
+	}
+
+	provinces={
+		3766 6782 7420 9747 10233 10303 11714 11731 13155 
+	}
+	manpower=765940
+	buildings_max_level_factor=1.000
+}

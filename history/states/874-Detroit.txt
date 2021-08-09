@@ -1,0 +1,25 @@
+state={
+	id=874
+	name="STATE_874"
+	state_category = metropolis
+	history={
+		owner = CCC
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+
+		}
+		add_core_of = CCC
+		add_core_of = GLC
+
+		victory_points = {
+			6710 20 
+		}
+	}
+
+	provinces={
+		6710 
+	}
+	manpower=1546169
+	buildings_max_level_factor=1.000
+}

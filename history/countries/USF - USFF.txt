@@ -36,21 +36,21 @@ if = {
 }
 
 set_politics = {
-	ruling_party = authoritarian_democrat
+	ruling_party = autocratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	conservative = 40
-	liberal = 40
+	conservative = 0
+	liberal = 0
 	social_democrat = 0
-	libertarian_socialist = 0
+	libertarian_socialist = 30
 	authoritarian_socialist = 0
 	unisocialist = 0
-	authoritarian_democrat = 20
-	autocratic = 0
+	authoritarian_democrat = 40
+	autocratic = 30
 	ultranationalist = 0
 	revolutionary_nationalist = 0
 	esoteric_traditionalist = 0
@@ -62,7 +62,7 @@ create_country_leader = {
 	desc = "USF_John_Pershing_desc"
 	picture = "USF_John_Pershing.tga"
 	expire = "2020.1.1"
-	ideology = authoritarian_democrat_subideology
+	ideology = autocratic_subideology
 	traits = {
 		#
 	}

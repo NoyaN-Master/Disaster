@@ -125,6 +125,8 @@ country_event = { #Conquerers Of The West
 	}
 }
 
+
+
 country_event = { #New Subutais
 	id = atsiz.4
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
@@ -268,5 +270,95 @@ country_event = { #Armenian Uprising
 		}
         }
 
+	}
+}
+
+country_event = { #Shangrila
+	id = atsiz.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = atsiz.11.t
+	desc = atsiz.11.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = atsiz.11.a
+        complete_national_focus = WRF_Gods_Demand
+	}
+}
+
+country_event = { #Unite Puppets
+	id = atsiz.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = atsiz.12.t
+	desc = atsiz.12.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = atsiz.12.a
+        TAT = {
+        every_owned_state = {
+        add_core_of = WRF
+        }	
+        }
+        CHI = {
+        every_owned_state = {
+        add_core_of = WRF
+        }	
+        }
+        INR = {
+        every_owned_state = {
+        add_core_of = WRF
+        }	
+        }
+        LEV = {
+        every_owned_state = {
+        add_core_of = WRF
+        }	
+        }
+        annex_country = {
+        target = TAT
+        transfer_troops = yes
+        }
+        annex_country = {
+        target = LEV
+        transfer_troops = yes
+        }
+        annex_country = {
+        target = CHI
+        transfer_troops = yes
+        }
+        annex_country = {
+        target = INR
+        transfer_troops = yes
+        }
+        set_cosmetic_tag = Atsiz_United
+	}
+}
+
+country_event = { #Unite Puppets
+	id = atsiz.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = atsiz.13.t
+	desc = atsiz.13.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = atsiz.13.a
+        
 	}
 }
