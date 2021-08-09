@@ -59,6 +59,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		CIB_Enver_Script = yes
+		country_event = { id = enver.31 days = 1 }
 		}
 	}
 
@@ -140,6 +141,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		CIB_Enver_Script = yes
+		country_event = { id = enver.30 days = 1 }
 		}
 	}
 
@@ -203,6 +205,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		CIB_Enver_Script = yes
+		country_event = { id = enver.33 days = 1 }
 		}
 	}
 
@@ -284,6 +287,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		CIB_Enver_Script = yes
+		country_event = { id = enver.32 days = 1 }
 		}
 	}
     
