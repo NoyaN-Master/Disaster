@@ -1412,6 +1412,7 @@ Enver_StopStalin = {
         }
         visible = {
         original_tag = CIB
+        has_completed_focus = CIB_Palace_Declaration
         }  
         complete_effect = {
         declare_war_on = {
@@ -1428,34 +1429,6 @@ Enver_StopStalin = {
 			factor = 1000
 		}
      }
-Enver_FuckGreeks = {
-	    fire_only_once = yes
-		cost = 0
-        available  = {
-        CIB = {
-        has_war = no   
-        }
-        }
-        visible = {
-        original_tag = CIB
-        }  
-        complete_effect = {
-        declare_war_on = {
-        target = GRE
-        type = annex_everything
-        }
-        GRE = {
-        every_owned_state = {
-        add_claim_by = CIB
-        }	
-        }
-        }
-        ai_will_do = {
-			factor = 1000
-		}
-     }       
-
-
 
 Enver_PactWithJapan = {
 	    fire_only_once = yes
@@ -1468,7 +1441,8 @@ Enver_PactWithJapan = {
         has_war = no
         NOT = {
         has_country_flag = joined_GER_CIB    
-        }   
+        }
+        has_completed_focus = CIB_FP   
         }
         }
         visible = {
@@ -1496,7 +1470,8 @@ Enver_PactWithGER = {
         has_war = no
         NOT = {
         has_country_flag = joined_JAP_CIB    
-        }   
+        }
+        has_completed_focus = CIB_FP      
         }
         }
         visible = {
@@ -1512,28 +1487,7 @@ Enver_PactWithGER = {
 		}
      }       
 
-
-Enver_GetSeljukia = {
-	    fire_only_once = yes
-		cost = 0
-        available  = {
-        CIB = {
-        has_war = no  
-        }
-        }
-        visible = {
-        original_tag = CIB
-        }  
-        complete_effect = {
-        INR = {
-        country_event = { id = enver.26}
-        }
-        }
-        ai_will_do = {
-			factor = 1000
-		}
-     }       
-
+    
 }
 
 enver_economic_category = {
