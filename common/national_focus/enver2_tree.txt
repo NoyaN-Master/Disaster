@@ -31,7 +31,7 @@ focus_tree = {
 		icon = GFX_goal_CIB_atsiz_coop
 		x = 6
 		y = 2
-		cost = 2
+		cost = 7
 		available_if_capitulated = yes
 		prerequisite = {
         focus = CIB_enver_triumphant    
@@ -49,7 +49,7 @@ focus_tree = {
 		icon = GFX_goal_CIB_loyalty_one
 		x = 5
 		y = 3
-		cost = 2
+		cost = 7
 		available_if_capitulated = yes
 		prerequisite = {
         focus = CIB_Cooperate_Atsiz    
@@ -68,7 +68,7 @@ focus_tree = {
 		icon = GFX_goal_CIB_Autocracy
 		x = 6
 		y = 4
-		cost = 2
+		cost = 7
 		available_if_capitulated = yes
 		prerequisite = {
         focus = CIB_Reform_Ittihat    
@@ -89,7 +89,7 @@ focus_tree = {
 		icon = GFX_goal_CIB_pasha
 		x = 7
 		y = 5
-		cost = 2
+		cost = 7
 		available_if_capitulated = yes
 		prerequisite = {
         focus = CIB_A_Public_Apology    
@@ -110,7 +110,7 @@ focus_tree = {
 		icon = GFX_goal_CIB_samet
 		x = 8
 		y = 2
-		cost = 2
+		cost = 7
 		available_if_capitulated = yes
 		prerequisite = {
         focus = CIB_enver_triumphant    
@@ -128,7 +128,7 @@ focus_tree = {
 		icon = GFX_goal_CIB_kemal_help
 		x = 9
 		y = 3
-		cost = 2
+		cost = 7
 		available_if_capitulated = yes
 		prerequisite = {
         focus = CIB_Question_TSK    
@@ -150,7 +150,7 @@ focus_tree = {
 		icon = GFX_goal_CIB_language
 		x = 10
 		y = 4
-		cost = 2
+		cost = 7
 		available_if_capitulated = yes
 		prerequisite = {
         focus = CIB_Royalist_Support    
@@ -171,7 +171,7 @@ focus_tree = {
 		icon = GFX_goal_CIB_ittihad
 		x = 7
 		y = 3
-		cost = 2
+		cost = 7
 		available_if_capitulated = yes
 		prerequisite = {
         focus = CIB_Shrink_Samet    
@@ -192,7 +192,7 @@ focus_tree = {
 		icon = GFX_goal_CIB_apology
 		x = 8
 		y = 4
-		cost = 2
+		cost = 7
 		available_if_capitulated = yes
 		prerequisite = {
         focus = CIB_Destroy_Kemalists    
@@ -214,7 +214,7 @@ focus_tree = {
 		icon = GFX_goal_CIB_others
 		x = 9
 		y = 5
-		cost = 2
+		cost = 7
 		available_if_capitulated = yes
 		prerequisite = {
         focus = CIB_New_Turkish_Act    
@@ -235,7 +235,7 @@ focus_tree = {
 		icon = GFX_goal_CIB_darkage
 		x = 8
 		y = 6
-		cost = 2
+		cost = 7
 		available_if_capitulated = yes
 		prerequisite = {
         focus = CIB_Talks_With_Others    
@@ -259,7 +259,7 @@ focus_tree = {
 		icon = GFX_goal_CIB_fevzi
 		x = 10
 		y = 2
-		cost = 2
+		cost = 7
 		available_if_capitulated = yes
 		prerequisite = {
         focus = CIB_enver_triumphant    
@@ -277,7 +277,7 @@ focus_tree = {
 		icon = GFX_goal_CIB_ottoman
 		x = 11
 		y = 3
-		cost = 2
+		cost = 7
 		available_if_capitulated = yes
 		prerequisite = {
         focus = CIB_Question_TSK    
@@ -291,4 +291,233 @@ focus_tree = {
 		}
 	}
     
+	#fp
+
+	focus = {
+		id = CIB_FP
+		icon = GFX_goal_CIB_Enver_start
+		x = 15
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_war_support = 0.10
+		}
+	}
+
+	focus = {
+		id = CIB_Palace_Declaration
+		icon = GFX_goal_CIB_Enver_start
+		x = 15
+		y = 2
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = CIB_FP
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_war_support = 0.10
+		}
+	}
+	focus = {
+		id = CIB_Attack_UAR
+		icon = GFX_goal_CIB_Enver_start
+		x = 15
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = CIB_Palace_Declaration
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = { 
+		 has_war = no	
+		}
+		completion_reward = {
+		declare_war_on = {
+        target = PAL
+        type = annex_everything
+        }
+        PAL = {
+        every_owned_state = {
+        add_claim_by = CIB
+        }	
+        }
+		}
+	}
+
+	focus = {
+		id = CIB_Deal_Yemen
+		icon = GFX_goal_CIB_Enver_start
+		x = 15
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = CIB_Attack_UAR
+		}
+		available = { 
+		 has_war = no	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		country_event = { id = enver.36 }
+		}
+	}
+
+
+	focus = {
+		id = CIB_Attack_Iran
+		icon = GFX_goal_CIB_Enver_start
+		x = 17
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = CIB_Palace_Declaration
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = { 
+		 has_war = no	
+		}
+		completion_reward = {
+		declare_war_on = {
+        target = INR
+        type = annex_everything
+        }
+        INR = {
+        every_owned_state = {
+        add_claim_by = CIB
+        }	
+        }
+		}
+	}
+
+	focus = {
+		id = CIB_Attack_Central
+		icon = GFX_goal_CIB_Enver_start
+		x = 17
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = CIB_Attack_Iran
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = { 
+		 has_war = no	
+		}
+		completion_reward = {
+		country_event = { id = enver.35 }
+		declare_war_on = {
+        target = TRK
+        type = annex_everything
+        }
+        TRK = {
+        every_owned_state = {
+        add_core_of = CIB
+        }	
+        }
+		}
+	}
+
+	focus = {
+		id = CIB_Annex_Greece
+		icon = GFX_goal_CIB_Enver_start
+		x = 13
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = CIB_Palace_Declaration
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = { 
+		 has_war = no	
+		}
+		completion_reward = {
+		complete_effect = {
+        declare_war_on = {
+        target = GRE
+        type = annex_everything
+        }
+        GRE = {
+        every_owned_state = {
+        add_claim_by = CIB
+        }	
+        }
+        }
+		}
+	}
+
+	focus = {
+		id = CIB_Intervene_Bulgar
+		icon = GFX_goal_CIB_Enver_start
+		x = 13
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = CIB_Annex_Greece
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = { 
+		 has_war = no	
+		}
+		completion_reward = {
+		declare_war_on = {
+        target = BLG
+        type = annex_everything
+        }
+        BLG = {
+        every_owned_state = {
+        add_claim_by = CIB
+        }	
+        }
+		}
+	}
+
+	focus = {
+		id = CIB_Turkish_Empire
+		icon = GFX_goal_CIB_Enver_start
+		x = 15
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = CIB_Intervene_Bulgar
+		}
+		prerequisite = {
+			focus = CIB_Deal_Yemen
+		}
+		prerequisite = {
+			focus = CIB_Attack_Central
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.10
+		}
+	}
 }        
