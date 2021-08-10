@@ -28,17 +28,17 @@ add_ideas = 	interventionism
 add_ideas = 	semi_industrial_society
 
 set_popularities = {
-	conservative = 10
+	conservative = 5
 	liberal = 0
 	social_democrat = 0
 	libertarian_socialist = 0
 	authoritarian_socialist = 0
 	unisocialist = 0
-	authoritarian_democrat = 50
-	autocratic = 40
-	ultranationalist = 0
+	authoritarian_democrat = 40
+	autocratic = 35
+	ultranationalist = 10
 	revolutionary_nationalist = 0
-	esoteric_traditionalist = 0
+	esoteric_traditionalist = 10
 	revolutionary_anarchist = 0
 }
 
@@ -48,6 +48,24 @@ create_country_leader = {
 	picture = "MTR_Tapa_Tchermoeff.tga"
 	expire = "2020.1.1"
 	ideology = authoritarian_democrat_subideology
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Uzun-Hajji"
+	picture = "MTR_Uzun_Hajji.dds"
+	expire = "1935.1.1"
+	ideology = autocratic_subideology
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Uzun-Hajji"
+	picture = "MTR_Uzun_Hajji.dds"
+	expire = "1935.1.1"
+	ideology = esoteric_islamism_subideology
 	traits = {
 		#
 	}
