@@ -877,6 +877,10 @@ country_event = { #Yemen
         	target = ARB
         	type = annex_everything
         	}
+			declare_war_on = {
+        	target = HJZ
+        	type = annex_everything
+        	}
 		}
 		YEM = {
 		set_politics = {

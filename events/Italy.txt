@@ -64,6 +64,9 @@ country_event = {
 		 transfer_state = 106
 		 transfer_state = 803
 		}
+		SOR = {
+		country_event = { id = worldwar.36 days = 10}	
+		}
         }
 		}
 	}
