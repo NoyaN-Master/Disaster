@@ -12,12 +12,14 @@ state={
 	history={
 		owner = SEM
 		add_core_of = SEM
+		add_claim_by = TRK
+		add_claim_by = BAS
+		add_claim_by = TSV
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 3
 
 		}
-		add_core_of = GOK
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 4

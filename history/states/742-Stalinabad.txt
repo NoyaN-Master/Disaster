@@ -6,6 +6,9 @@ state={
 	history={
 		add_core_of = BUK
 		owner = BUK
+		add_claim_by = TRK
+		add_claim_by = BAS
+		add_claim_by = TSV
 		victory_points = {
 			1384 1 
 		}
@@ -13,7 +16,6 @@ state={
 			infrastructure = 2
 
 		}
-
 	}
 
 	provinces={
