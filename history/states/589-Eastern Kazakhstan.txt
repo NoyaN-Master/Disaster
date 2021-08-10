@@ -1,22 +1,29 @@
+
 state={
 	id=589
 	name="STATE_589"
 
 	history={
-		owner = QAZ
-		add_core_of = QAZ
+		owner = GOK
+		add_core_of = GOK
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 
 		}
 		victory_points = {
-			1668 1
+			1668 1 
+		}
+		victory_points = {
+			1591 3 
+		}
+		victory_points = {
+			12583 1 
 		}
 	}
 
 	provinces={
-		1239 1668 4651 4764 7332 7405 7711 7784 7795 7856 10290 10550 10619 10680 12529 12662 13148 13149 13197 
+		1591 1668 1840 4651 4764 4773 4845 7711 7784 7795 7856 10146 10547 10550 10603 10619 10680 12529 12583 12662 13148 13149 13197 
 	}
 	manpower=535191
 	buildings_max_level_factor=1.000

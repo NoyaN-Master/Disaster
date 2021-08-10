@@ -1,10 +1,11 @@
+
 state={
 	id=89
 	name="STATE_89"
 
 	history={
 		victory_points = {
-			11411 1
+			11411 1 
 		}
 		owner = PLN
 		buildings = {
@@ -14,6 +15,7 @@ state={
 		}
 		add_core_of = PLN
 		add_core_of = UKR
+
 	}
 
 	provinces={

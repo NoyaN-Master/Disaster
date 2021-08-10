@@ -1,19 +1,24 @@
+
 state={
 	id=864
 	name="STATE_864"
 
 	history={
 		owner = TRK
+		victory_points = {
+			7597 1 
+		}
 		buildings = {
 			infrastructure = 1
 
 		}
+		add_core_of = QAZ
 		add_core_of = TRK
 
 	}
 
 	provinces={
-		4578 4581 4636 4638 4686 7486 7777 10148 10353 10366 10601 
+		1721 4224 4227 4300 4374 4578 4581 4636 4638 4686 6085 7243 7486 7507 7556 7597 7600 7657 7706 7777 10148 10353 10366 10506 10660 12329 12340 12397 12640 12658 
 	}
 	manpower=189856
 	buildings_max_level_factor=1.000

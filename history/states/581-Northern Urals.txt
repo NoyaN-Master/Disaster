@@ -2,13 +2,9 @@
 state={
 	id=581
 	name="STATE_581"
-	manpower = 48831
-	
-	state_category = wasteland
-	
 	resources={
-		chromium=40 # was: 44
-		aluminium=27 # was: 30
+		chromium=40.000
+		aluminium=27.000
 	}
 
 	history={
@@ -18,9 +14,13 @@ state={
 
 		}
 		add_core_of = RUS
+
 	}
 
 	provinces={
-		4874 7824 10216 10551 10677 11098 12393 12502 12659 13076 
+		7824 10551 10677 11098 12393 12502 13076 
 	}
+	manpower=48831
+	buildings_max_level_factor=1.000
+	state_category=wasteland
 }
