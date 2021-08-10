@@ -293,43 +293,26 @@ focus_tree = {
     
 	#fp
 
-	focus = {
-		id = CIB_FP
-		icon = GFX_goal_CIB_Enver_start
-		x = 15
-		y = 1
-		cost = 1
-		available_if_capitulated = yes
-		prerequisite = {
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		add_war_support = 0.10
-		}
-	}
 
 	focus = {
 		id = CIB_Palace_Declaration
-		icon = GFX_goal_CIB_Enver_start
+		icon = GFX_goal_CIB_Palace_Declaration
 		x = 15
 		y = 2
-		cost = 1
+		cost = 3
 		available_if_capitulated = yes
-		prerequisite = {
-			focus = CIB_FP
-		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-		add_war_support = 0.10
+		unlock_decision_tooltip = Enver_PactWithGER
+		unlock_decision_tooltip = Enver_PactWithJapan
+		unlock_decision_tooltip = Enver_StopStalin
 		}
 	}
 	focus = {
 		id = CIB_Attack_UAR
-		icon = GFX_goal_CIB_Enver_start
+		icon = GFX_goal_CIB_Attack_UAR
 		x = 15
 		y = 3
 		cost = 5
@@ -344,6 +327,10 @@ focus_tree = {
 		 has_war = no	
 		}
 		completion_reward = {
+		add_state_core = 799
+		add_state_core = 817
+		add_state_core = 676
+		add_state_core = 869	
 		declare_war_on = {
         target = PAL
         type = annex_everything
@@ -358,7 +345,7 @@ focus_tree = {
 
 	focus = {
 		id = CIB_Deal_Yemen
-		icon = GFX_goal_CIB_Enver_start
+		icon = GFX_goal_CIB_Deal_Yemen
 		x = 15
 		y = 4
 		cost = 5
@@ -380,7 +367,7 @@ focus_tree = {
 
 	focus = {
 		id = CIB_Attack_Iran
-		icon = GFX_goal_CIB_Enver_start
+		icon = GFX_goal_CIB_Attack_Iran
 		x = 17
 		y = 3
 		cost = 5
@@ -395,6 +382,10 @@ focus_tree = {
 		 has_war = no	
 		}
 		completion_reward = {
+		add_state_core = 419
+		add_state_core = 420
+		add_state_core = 421
+		add_state_core = 417	
 		declare_war_on = {
         target = INR
         type = annex_everything
@@ -409,7 +400,7 @@ focus_tree = {
 
 	focus = {
 		id = CIB_Attack_Central
-		icon = GFX_goal_CIB_Enver_start
+		icon = GFX_goal_CIB_Attack_Central
 		x = 17
 		y = 4
 		cost = 5
@@ -439,7 +430,7 @@ focus_tree = {
 
 	focus = {
 		id = CIB_Annex_Greece
-		icon = GFX_goal_CIB_Enver_start
+		icon = GFX_goal_CIB_Annex_Greece
 		x = 13
 		y = 3
 		cost = 5
@@ -454,7 +445,9 @@ focus_tree = {
 		 has_war = no	
 		}
 		completion_reward = {
-		complete_effect = {
+		add_state_core = 184	
+		add_state_core = 187
+		add_state_core = 731	
         declare_war_on = {
         target = GRE
         type = annex_everything
@@ -464,13 +457,12 @@ focus_tree = {
         add_claim_by = CIB
         }	
         }
-        }
 		}
 	}
 
 	focus = {
 		id = CIB_Intervene_Bulgar
-		icon = GFX_goal_CIB_Enver_start
+		icon = GFX_goal_CIB_Intervene_Bulgar
 		x = 13
 		y = 4
 		cost = 5
@@ -485,6 +477,7 @@ focus_tree = {
 		 has_war = no	
 		}
 		completion_reward = {
+		add_state_core = 212
 		declare_war_on = {
         target = BLG
         type = annex_everything
@@ -499,7 +492,7 @@ focus_tree = {
 
 	focus = {
 		id = CIB_Turkish_Empire
-		icon = GFX_goal_CIB_Enver_start
+		icon = GFX_goal_CIB_Turkish_Empire
 		x = 15
 		y = 5
 		cost = 5
