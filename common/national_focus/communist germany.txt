@@ -100,17 +100,182 @@ focus = {
 			custom_effect_tooltip = NGU_red_baron_solidified_tt
 		}
 	}
-
+	focus = {
+		id = NGU_fascist_insurgency
+		icon = NGU
+		x = 3
+		y = 7
+		cost = 1
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = NGU_fascist_insurgency_begun_tt
+				has_country_flag = NGU_fascist_insurgency
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = NGU_deal_with_fascist_insurgency_tt
+		}
+		prerequisite = {
+			focus = NGU_red_baron_solidified
+		}
+	}
 	focus = {
 		id = NGU_secure_the_countryside
 		icon = NGU
 		cost = 2
-		relative_position_id = NGU_red_baron_solidified
-		x = -2
+		relative_position_id = NGU_fascist_insurgency
+		x = 1
 		y = 1
 		completion_reward = { }
 		prerequisite = {
-			focus = NGU_red_baron_solidified
+			focus = NGU_fascist_insurgency
+		}
+	}
+	
+	focus = {
+		id = NGU_raid_their_stashes
+		icon = NGU
+		cost = 2
+		relative_position_id = NGU_red_baron_solidified
+		x = 1
+		y = 3
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 5000
+				producer = NGU
+			}
+		}
+		prerequisite = { focus = NGU_secure_the_countryside }
+	}
+	focus = {
+		id = NGU_fight_fire_with_fire #epic anti fascist moment
+		icon = NGU
+		cost = 2
+		relative_position_id = NGU_red_baron_solidified
+		x = 1
+		y = 4
+		completion_reward = {
+			custom_effect_tooltip = NGU_fight_fire_with_fire_tt
+			every_owned_state = {
+				damage_building = {
+					type = infrastructure
+					damage = 1
+				}
+			}
+		}
+		prerequisite = {
+			focus = NGU_raid_their_stashes
+		}
+	}
+	focus = {
+		id = NGU_utilize_paramilitaries
+		icon = NGU
+		cost = 2
+		relative_position_id = NGU_red_baron_solidified
+		x = -1
+		y = 2
+		completion_reward = { }
+		prerequisite = {
+			focus = NGU_fascist_insurgency
+		}
+	}
+	focus = {
+		id = NGU_ban_their_publications #Get Debuff for a month or so and get a buff after that
+		icon = NGU
+		cost = 2
+		relative_position_id = NGU_red_baron_solidified
+		x = -1
+		y = 3
+		completion_reward = { }
+		prerequisite = {
+			focus = NGU_utilize_paramilitaries
+		}
+	}
+	focus = {
+		id = NGU_burn_nationalist_books
+		icon = NGU
+		cost = 2
+		relative_position_id = NGU_red_baron_solidified
+		x = -1
+		y = 4
+		completion_reward = { }
+		prerequisite = { focus = NGU_ban_their_publications }
+	}
+	focus = {
+		id = NGU_the_radicals_destroyed
+		icon = NGU
+		cost = 2
+		relative_position_id = NGU_red_baron_solidified			
+		x = 0
+		y = 5
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = NGU_the_radicals_destroyed_trigger_tt
+				has_country_flag = NGU_countryside_secure
+			}
+		}
+		prerequisite = { focus = NGU_burn_nationalist_books }
+		prerequisite = { focus = NGU_fight_fire_with_fire }
+		completion_reward = { }
+	}
+	focus = {
+		id = NGU_break_the_bankers
+		icon = NGU
+		cost = 3
+		relative_position_id = NGU_the_radicals_destroyed
+		x = -1
+		y = 1
+		completion_reward = { }
+		prerequisite = {
+			focus = NGU_the_radicals_destroyed
+		}
+	}
+	focus = {
+		id = NGU_expand_communes
+		icon = NGU
+		cost = 3
+		relative_position_id = NGU_the_radicals_destroyed
+		x = -2
+		y = 2
+		completion_reward = { }
+		prerequisite = {
+			focus = NGU_break_the_bankers
+		}
+	}
+	focus = {
+		id = NGU_appeal_to_students
+		icon = NGU
+		cost = 3
+		relative_position_id = NGU_the_radicals_destroyed
+		x = 1
+		y = 1
+		completion_reward = {}
+		prerequisite = {
+			focus = NGU_the_radicals_destroyed
+		}
+	}
+	focus = {
+		id = NGU_escalate_class_war
+		icon = NGU
+		cost = 4
+		relative_position_id = NGU_the_radicals_destroyed
+		x = 0
+		y = 2
+		completion_reward = {}
+		prerequisite = { focus = NGU_break_the_bankers}
+		prerequisite = { focus = NGU_appeal_to_students}
+	}
+	focus = {
+		id = NGU_workers_militias
+		icon = NGU
+		cost = 3
+		relative_position_id = NGU_the_radicals_destroyed
+		x = 2
+		y = 2
+		completion_reward = {}
+		prerequisite = {
+			focus = NGU_appeal_to_students
 		}
 	}
 ####goebbels
