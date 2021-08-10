@@ -43,11 +43,23 @@ if = {
 		autonomous_state = autonomy_integrated_puppet
 		freedom_level = 0.8
 	}
+	set_autonomy = {
+		target = SEM
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.1
+	}
+	set_autonomy = {
+		target = TRK
+		autonomous_state = autonomy_colony
+		freedom_level = 0.6
+	}
 	else = {
 		puppet = UKR
 		puppet = LAT
 		puppet = BLT
 		puppet = QAZ
+		puppet = SEM
+		puppet = TRK
 	}
 }
 

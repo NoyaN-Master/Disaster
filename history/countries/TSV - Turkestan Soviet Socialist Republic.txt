@@ -1,4 +1,4 @@
-capital = 588
+capital = 404
 oob = ""
 
 set_technology = {
@@ -8,34 +8,28 @@ set_technology = {
 	tech_recon = 1
 	tech_support = 1
 	gw_artillery = 1
-	interwar_antiair = 1
 	early_fighter = 1
-	early_bomber = 1
 	gwtank = 1
-	basic_light_tank = 1
 }
 
-set_convoys = 50
-1936.1.1 = {
 set_politics = {
-	ruling_party = authoritarian_democrat
+	ruling_party = authoritarian_socialist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
-}
-add_ideas = 	colonial_government 
-add_ideas = 	interventionism 
+add_ideas = 	military_government 
+add_ideas = 	planned_economy 
 add_ideas = 	semi_industrial_society
 
 set_popularities = {
 	conservative = 0
 	liberal = 0
 	social_democrat = 0
-	libertarian_socialist = 0
-	authoritarian_socialist = 0
-	unisocialist = 0
-	authoritarian_democrat = 100
+	libertarian_socialist = 5
+	authoritarian_socialist = 70
+	unisocialist = 20
+	authoritarian_democrat = 5
 	autocratic = 0
 	ultranationalist = 0
 	revolutionary_nationalist = 0
@@ -44,10 +38,20 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Mukhamedzhan Tynyshpaev"
-	picture = "QAZ_Mukhamedzhan_Tynyshpaev.tga"
+	name = "Mikhail Frunze"
+	picture = "TSV_Mikhail_Frunze.tga"
 	expire = "2020.1.1"
-	ideology = authoritarian_democrat_subideology
+	ideology = authoritarian_socialist_subideology
+	traits = {
+		
+	}
+}	
+
+create_country_leader = {
+	name = "Mikhail Frunze"
+	picture = "TSV_Mikhail_Frunze.tga"
+	expire = "2020.1.1"
+	ideology = unisocialist_subideology
 	traits = {
 		
 	}

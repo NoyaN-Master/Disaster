@@ -4,12 +4,12 @@ state={
 	name="STATE_404"
 
 	history={
-		owner = TRK
+		owner = TSV
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = TRK
+		add_core_of = TSV
 
 	}
 
