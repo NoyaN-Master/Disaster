@@ -222,7 +222,7 @@ focus = {
 	focus = {
 		id = NGU_break_the_bankers
 		icon = NGU
-		cost = 3
+		cost = 2
 		relative_position_id = NGU_the_radicals_destroyed
 		x = -1
 		y = 1
@@ -234,7 +234,7 @@ focus = {
 	focus = {
 		id = NGU_expand_communes
 		icon = NGU
-		cost = 3
+		cost = 2
 		relative_position_id = NGU_the_radicals_destroyed
 		x = -2
 		y = 2
@@ -246,7 +246,7 @@ focus = {
 	focus = {
 		id = NGU_appeal_to_students
 		icon = NGU
-		cost = 3
+		cost = 2
 		relative_position_id = NGU_the_radicals_destroyed
 		x = 1
 		y = 1
@@ -258,7 +258,7 @@ focus = {
 	focus = {
 		id = NGU_escalate_class_war
 		icon = NGU
-		cost = 4
+		cost = 3
 		relative_position_id = NGU_the_radicals_destroyed
 		x = 0
 		y = 2
@@ -269,7 +269,7 @@ focus = {
 	focus = {
 		id = NGU_workers_militias
 		icon = NGU
-		cost = 3
+		cost = 2
 		relative_position_id = NGU_the_radicals_destroyed
 		x = 2
 		y = 2
@@ -277,6 +277,75 @@ focus = {
 		prerequisite = {
 			focus = NGU_appeal_to_students
 		}
+	}
+	focus = {
+		id = NGU_controlled_unions
+		icon = NGU
+		cost = 2
+		relative_position_id = NGU_the_radicals_destroyed
+		x = -2
+		y = 3
+		completion_reward = {}
+		prerequisite = {
+			focus = NGU_expand_communes
+		}
+	}
+	focus = {
+		id = NGU_revolutionary_education
+		icon = NGU
+		cost = 2
+		relative_position_id = NGU_the_radicals_destroyed
+		x = 0
+		y = 3
+		completion_reward = { }
+		prerequisite = {
+			focus = NGU_escalate_class_war
+		}
+	}
+	focus = {
+		id = NGU_state_partisans
+		icon = NGU
+		cost = 2
+		relative_position_id = NGU_the_radicals_destroyed
+		x = 2
+		y = 3
+		completion_reward = { }
+		prerequisite = {
+			focus = NGU_workers_militias
+		}
+	}
+	focus = {
+		id = NGU_state_media
+		icon = NGU
+		cost = 3
+		relative_position_id = NGU_the_radicals_destroyed
+		x = 1
+		y = 4
+		completion_reward = {}
+		prerequisite = { focus = NGU_state_partisans }
+		prerequisite = { focus = NGU_revolutionary_education }
+	}
+	focus = {
+		id = NGU_forced_egalitarianism
+		icon = NGU
+		cost = 3
+		relative_position_id = NGU_the_radicals_destroyed
+		x = -1
+		y = 4
+		completion_reward = {}
+		prerequisite = { focus = NGU_revolutionary_education}
+		prerequisite = { focus = NGU_controlled_unions}
+	}
+	focus = {
+		id = NGU_endless_revolution
+		icon = NGU
+		cost = 2
+		relative_position_id = NGU_the_radicals_destroyed
+		x = 0
+		y = 5
+		completion_reward = {}
+		prerequisite = { focus = NGU_forced_egalitarianism}
+		prerequisite = { focus = NGU_state_media }
 	}
 ####goebbels
 focus = {
