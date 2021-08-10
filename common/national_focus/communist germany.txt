@@ -8,6 +8,10 @@ focus_tree = {
 			add = 10
 			tag = NGU	}
 	}
+	continuous_focus_position = {
+		x = 900
+		y = 2500
+	}
 #starting stuff    
 focus = {
 		id = NGU_policies_of_redbaron
@@ -78,7 +82,37 @@ focus = {
 		country_event = { id = ngu.6 days = 1 }
 		}
 	}             
+#RED BARON#
+	focus = {
+		id = NGU_red_baron_solidified
+		icon = NGU
+		x = 3
+		y = 6
+		cost = 0
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = red_baron_solidified_check_tt
+				has_country_flag = NGU_red_baron_victory
+			}
+		}
+		bypass = { has_country_flag = NGU_red_baron_victory}
+		completion_reward = {
+			custom_effect_tooltip = NGU_red_baron_solidified_tt
+		}
+	}
 
+	focus = {
+		id = NGU_secure_the_countryside
+		icon = NGU
+		cost = 2
+		relative_position_id = NGU_red_baron_solidified
+		x = -2
+		y = 1
+		completion_reward = { }
+		prerequisite = {
+			focus = NGU_red_baron_solidified
+		}
+	}
 ####goebbels
 focus = {
 		id = NGU_rise_of_evil

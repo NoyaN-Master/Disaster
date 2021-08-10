@@ -228,6 +228,7 @@ country_event = { #The Red Baron - Operation Rote
         }
         remove_idea = NGU_problem_ideology
 		hidden_effect = {	
+			set_country_flag = NGU_red_baron_victory
 		}
 	}
 
