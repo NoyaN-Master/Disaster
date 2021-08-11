@@ -1,4 +1,5 @@
 add_namespace = ngu
+add_namespace = ngucommie
 
 country_event = { #Introduction Event
 	id = ngu.1
@@ -731,4 +732,32 @@ country_event = {
 		add_to_faction = ROOT
 		}
 	}
-}	
+}
+
+##BOLSHEVIK EVENTS##
+
+country_event = { #insurgency
+	id = ngucommie.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event ngucommie.1" }
+	title = ngucommie.1.t
+	desc = ngucommie.1.d
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 14
+	}
+	trigger = {
+		has_country_flag = NGU_red_baron_victory
+	}
+	option = {
+		name = ngucommie.1.a
+		hidden_effect = {
+			set_country_flag = NGU_fascist_insurgency
+			every_owned_state = {
+				set_demilitarized_zone = yes
+			}
+			add_ideas = NGU_fascist_insurgency_idea
+		}
+	}
+}

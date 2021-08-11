@@ -86,16 +86,24 @@ focus = {
 	focus = {
 		id = NGU_red_baron_solidified
 		icon = NGU
-		x = 3
-		y = 6
+		x = 12
+		y = 0
 		cost = 0
+		allow_branch = {
+			has_country_flag = NGU_red_baron_victory
+		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = red_baron_solidified_check_tt
 				has_country_flag = NGU_red_baron_victory
 			}
 		}
-		bypass = { has_country_flag = NGU_red_baron_victory}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = red_baron_solidified_check_tt
+				has_country_flag = NGU_red_baron_victory
+			}
+		}
 		completion_reward = {
 			custom_effect_tooltip = NGU_red_baron_solidified_tt
 		}
@@ -103,8 +111,8 @@ focus = {
 	focus = {
 		id = NGU_fascist_insurgency
 		icon = NGU
-		x = 3
-		y = 7
+		x = 12
+		y = 1
 		cost = 1
 		available = {
 			custom_trigger_tooltip = {
@@ -163,6 +171,10 @@ focus = {
 					damage = 1
 				}
 			}
+			add_manpower = -10000
+			random_owned_state = {
+				set_demilitarized_zone = no
+			}
 		}
 		prerequisite = {
 			focus = NGU_raid_their_stashes
@@ -171,11 +183,16 @@ focus = {
 	focus = {
 		id = NGU_utilize_paramilitaries
 		icon = NGU
-		cost = 2
+		cost = 3
 		relative_position_id = NGU_red_baron_solidified
 		x = -1
 		y = 2
-		completion_reward = { }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NGU_fascist_insurgency_idea
+				add_idea = NGU_fascist_insurgency_idea_1
+			}
+		 }
 		prerequisite = {
 			focus = NGU_fascist_insurgency
 		}
@@ -183,11 +200,16 @@ focus = {
 	focus = {
 		id = NGU_ban_their_publications #Get Debuff for a month or so and get a buff after that
 		icon = NGU
-		cost = 2
+		cost = 3
 		relative_position_id = NGU_red_baron_solidified
 		x = -1
 		y = 3
-		completion_reward = { }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NGU_fascist_insurgency_idea_1
+				add_idea = NGU_fascist_insurgency_idea_2
+			}
+		 }
 		prerequisite = {
 			focus = NGU_utilize_paramilitaries
 		}
@@ -195,11 +217,16 @@ focus = {
 	focus = {
 		id = NGU_burn_nationalist_books
 		icon = NGU
-		cost = 2
+		cost = 3
 		relative_position_id = NGU_red_baron_solidified
 		x = -1
 		y = 4
-		completion_reward = { }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NGU_fascist_insurgency_idea_2
+				add_idea = NGU_fascist_insurgency_idea_3
+			}
+		 }
 		prerequisite = { focus = NGU_ban_their_publications }
 	}
 	focus = {
@@ -354,6 +381,10 @@ focus = {
 		x = 12
 		y = 0
 		cost = 1
+		allow_branch = {
+			has_government = unisocialist
+			has_completed_focus = NGU_operation_rote
+		}
 		available = { has_government = unisocialist }		
 		completion_reward = {
 		
@@ -1053,6 +1084,10 @@ focus = {
 		x = 20
 		y = 0
 		cost = 3
+		allow_branch = {
+			has_completed_focus = NGU_operation_rote
+			has_government = unisocialist
+		}
 		available = { always = no }				
 		completion_reward = {
 		add_war_support = 0.20
