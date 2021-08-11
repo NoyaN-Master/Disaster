@@ -40,3 +40,40 @@ Mao_War_End = {
 		}
      }
 }
+
+italy_decision_cat = {
+
+  yugoslav_armistice = {
+	    fire_only_once = yes
+		cost = 0
+        available  = {
+        tag = FIU
+        FIU = {
+        has_war_with = SOR    
+        }
+	    SOR = {
+        surrender_progress > 0.6
+        }
+        }       
+        visible = {
+        tag = FIU
+        }  
+        complete_effect = {
+        white_peace = SOR
+		transfer_state = 44
+		transfer_state = 105
+		transfer_state = 802
+		BLG = { 
+		 white_peace = SOR
+		 transfer_state = 106
+		 transfer_state = 803
+		}
+		SOR = {
+		country_event = { id = fiu.1 }	
+		}
+        }
+        ai_will_do = {
+			factor = 1000
+		}
+     }  
+}
