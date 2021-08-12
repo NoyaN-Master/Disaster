@@ -1,0 +1,110 @@
+division_template = {
+	name = "Partizans"	# Infantry Division	
+	# Note: infantry divisions were all at low reserve levels even just prior to Axis 
+	#	invasion of 1941
+
+	division_names_group = YUG_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 
+		artillery = { x = 0 y = 1 }  
+	}
+}
+
+units = {
+	division = {
+		name = "Partizan Soldiers"
+		location = 6647
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.5
+        start_equipment_factor = 1
+	}
+    division = {
+		name = "Partizan Soldiers"
+		location = 6647
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.5
+        start_equipment_factor = 1
+	}
+    division = {
+		name = "Partizan Soldiers"
+		location = 6647
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.5
+        start_equipment_factor = 1
+	}
+    division = {
+		name = "Partizan Soldiers"
+		location = 6647
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.5
+        start_equipment_factor = 1
+	}
+    division = {
+		name = "Partizan Soldiers"
+		location = 6647
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.5
+        start_equipment_factor = 1
+	}
+    division = {
+		name = "Partizan Soldiers"
+		location = 6647
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.5
+        start_equipment_factor = 1
+	}
+    division = {
+		name = "Partizan Soldiers"
+		location = 6647
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.5
+        start_equipment_factor = 1
+	}
+    division = {
+		name = "Partizan Soldiers"
+		location = 6647
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.5
+        start_equipment_factor = 1
+	}
+    division = {
+		name = "Partizan Soldiers"
+		location = 6647
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.5
+        start_equipment_factor = 1
+	}
+    division = {
+		name = "Partizan Soldiers"
+		location = 6647
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.5
+        start_equipment_factor = 1
+	}
+    division = {
+		name = "Partizan Soldiers"
+		location = 6647
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.5
+        start_equipment_factor = 1
+	}
+    division = {
+		name = "Partizan Soldiers"
+		location = 6647
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.5
+        start_equipment_factor = 1
+	}
+    }    

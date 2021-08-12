@@ -45,7 +45,13 @@ AUT_foreign_deccat = {
         ABL = {
          transfer_state = 838
          add_state_core = 838
-        } 
+		 add_state_core = 44
+        transfer_state = 44
+        }
+		SOR = {
+		add_state_core = 105
+        transfer_state = 105	
+		} 
         }
 		ai_will_do  = { factor = 1000}
     }
@@ -211,6 +217,13 @@ AUT_Puppet_Yugo = {
 		CRT = {
 		transfer_state = 815
 		add_state_core = 815
+		drop_cosmetic_tag = yes
+		set_politics = {
+		ruling_party = ultranationalist
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+		}	
 		create_country_leader = {
 	            name = "Ante Pavelić"
 	            #desc = "AUT_Karl_Renner_desc"

@@ -9,6 +9,13 @@ leader_traits = {
 	}	 
 	
 	
+	regent_ottoman = {
+	    random = no
+		war_support_factor = 0.05
+		stability_factor = 0.05
+	}
+
+		
 	PRE_fuhrer_prinzip = {
 	    random = no
 		army_core_defence_factor = 0.1

@@ -157,5 +157,12 @@ Enver_unification_idea_12 = {
 			war_support_factor = -0.05
 			}
 		}
+Enver_unification_idea_13 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
+			picture = national_solidarity
+			modifier = {
+			war_support_factor = -0.05
+			}
+		}			
 }
 }

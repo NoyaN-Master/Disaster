@@ -738,3 +738,157 @@ country_event = {
 		set_cosmetic_tag = Enver_Rehab_Cosmetic
 	}	
 }
+
+###Flavors
+
+country_event = { #ataturk ends
+	id = enver.30
+	immediate = { log = "[GetDateText]: [Root.GetName]: event enver.20" }
+	title = enver.30.t
+	desc = enver.30.d
+
+	fire_only_once = yes
+	
+	picture = GFX_report_enver_shooting_event
+
+	is_triggered_only = yes
+
+	option = { #
+		name = enver.30.a
+		remove_unit_leader = 1881
+	}	
+}
+
+country_event = { #ethem speech
+	id = enver.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event enver.20" }
+	title = enver.31.t
+	desc = enver.31.d
+
+	fire_only_once = yes
+	
+	picture = GFX_report_enver_shooting_event
+
+	is_triggered_only = yes
+
+	option = { #
+		name = enver.31.a
+		set_party_name = { 
+    	ideology = unisocialist 
+    	long_name = enver_socialist_party_long
+    	name = enver_socialist_party 
+		}
+		set_party_name = { 
+    	ideology = authoritarian_socialist 
+    	long_name = enver_socialist_party_long
+    	name = enver_socialist_party 
+		}
+		set_party_name = { 
+    	ideology = libertarian_socialist 
+    	long_name = enver_socialist_party_long
+    	name = enver_socialist_party 
+		}
+	}	
+}
+
+country_event = { #restoration
+	id = enver.32
+	immediate = { log = "[GetDateText]: [Root.GetName]: event enver.20" }
+	title = enver.32.t
+	desc = enver.32.d
+
+	fire_only_once = yes
+	
+	picture = GFX_report_enver_shooting_event
+
+	is_triggered_only = yes
+
+	option = { #
+		name = enver.32.a
+		add_popularity = {
+    	ideology = autocratic
+    	popularity = 0.05
+		}
+		add_country_leader_trait = regent_ottoman		
+	}	
+}
+
+country_event = { #speech
+	id = enver.33
+	immediate = { log = "[GetDateText]: [Root.GetName]: event enver.20" }
+	title = enver.33.t
+	desc = enver.33.d
+
+	fire_only_once = yes
+	
+	picture = GFX_report_enver_shooting_event
+
+	is_triggered_only = yes
+
+	option = { #
+		name = enver.33.a
+		add_political_power = 200	
+	}	
+}
+
+country_event = { #GOK
+	id = enver.35
+	immediate = { log = "[GetDateText]: [Root.GetName]: event enver.20" }
+	title = enver.35.t
+	desc = enver.35.d
+
+	fire_only_once = yes
+	
+	picture = GFX_report_enver_shooting_event
+
+	is_triggered_only = yes
+
+	option = { #
+		name = enver.35.a
+		GOK = {
+        every_owned_state = {
+        add_core_of = CIB
+        }	
+        }
+		annex_country = {
+    	target = GOK
+    	transfer_troops = yes
+		}	
+	}	
+}
+
+country_event = { #Yemen
+	id = enver.36
+	immediate = { log = "[GetDateText]: [Root.GetName]: event enver.20" }
+	title = enver.36.t
+	desc = enver.36.d
+
+	fire_only_once = yes
+	
+	picture = GFX_report_enver_shooting_event
+
+	is_triggered_only = yes
+
+	option = { #
+		name = enver.36.a
+		CIB = {
+			puppet = YEM
+			declare_war_on = {
+        	target = ARB
+        	type = annex_everything
+        	}
+			declare_war_on = {
+        	target = HJZ
+        	type = annex_everything
+        	}
+		}
+		YEM = {
+		set_politics = {
+		ruling_party = autocratic
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+		}
+		}	
+	}	
+}

@@ -2468,7 +2468,14 @@ focus_tree = {
     		target = SOR
     		type = annex_everything
 			}
-
+			declare_war_on = {
+    		target = CRT
+    		type = annex_everything
+			}
+			declare_war_on = {
+    		target = BOS
+    		type = annex_everything
+			}
 			set_country_flag = AUT_attackedYUG
         }
 	}
