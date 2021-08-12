@@ -1,0 +1,27 @@
+
+state={
+	id=881
+	name="STATE_881"
+	manpower = 1020000
+	resources={
+		oil = 2
+		steel = 8
+	}
+	state_category = large_town
+
+	history={
+		owner = AUT
+		victory_points = {
+			9648 12
+		}
+		buildings = {
+			infrastructure = 6	
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		add_core_of = AUT
+	}
+	provinces={
+		6691 9650 6687 9679 653 9648 13238 9646 3674
+	}
+}

@@ -9,13 +9,12 @@ state = {
 	history = {
 		owner = HNG
 		buildings = {
-			infrastructure = 6
-			industrial_complex = 3
-			arms_factory = 1
+			infrastructure = 5
+			industrial_complex = 1
 			air_base = 2
 		}
 		victory_points = {
-			11659 1 
+			11659 5
 		}
 		add_core_of = HNG
 	}
