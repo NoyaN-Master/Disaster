@@ -44,7 +44,7 @@ if = {
 		freedom_level = 0.8
 	}
 	set_autonomy = {
-		target = SEM
+		target = BYR
 		autonomous_state = autonomy_integrated_puppet
 		freedom_level = 0.1
 	}
@@ -58,7 +58,7 @@ if = {
 		puppet = LAT
 		puppet = BLT
 		puppet = QAZ
-		puppet = SEM
+		puppet = BYR
 		puppet = TRK
 	}
 }

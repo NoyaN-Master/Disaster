@@ -10,9 +10,8 @@ state={
 	}
 
 	history={
-		owner = SEM
-		add_core_of = SEM
-		add_claim_by = TRK
+		owner = TRK
+		add_core_of = TRK
 		add_claim_by = BAS
 		add_claim_by = TSV
 		buildings = {
