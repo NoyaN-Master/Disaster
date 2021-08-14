@@ -697,6 +697,733 @@ focus_tree = {
 	}
 
 	focus = {
+		id = WRF_Declare_Elections
+		icon = GFX_goal_national_chief
+		x = 19
+		y = 15
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_The_National_Chief
+		}
+		available = {
+			has_government = social_democrat
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_The_Blackpins
+		icon = GFX_goal_national_chief
+		x = 19
+		y = 16
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_The_National_Chief
+		}
+		available = {
+			has_government = social_democrat
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Question_Parties
+		icon = GFX_goal_national_chief
+		x = 17
+		y = 17
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_The_Blackpins
+		}
+		available = {
+			has_government = social_democrat
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Inspect_Universities
+		icon = GFX_goal_national_chief
+		x = 19
+		y = 17
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_The_Blackpins
+		}
+		available = {
+			has_government = social_democrat
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Talk_Army
+		icon = GFX_goal_national_chief
+		x = 19
+		y = 18
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_The_Blackpins
+		}
+		prerequisite = {  
+			focus = WRF_Question_Parties
+		}
+		prerequisite = {  
+			focus = WRF_Focus_Regions
+		}
+		available = {
+			has_government = social_democrat
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+	
+	focus = {
+		id = WRF_Election_Day
+		icon = GFX_goal_national_chief
+		x = 19
+		y = 19
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_Talk_Army
+		}
+		available = {
+			has_government = social_democrat
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_CHP_Victory
+		icon = GFX_goal_national_chief
+		x = 29
+		y = 20
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_Election_Day
+		}
+		available = {
+			has_government = social_democrat
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Cn
+		icon = GFX_goal_national_chief
+		x = 29
+		y = 20
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_Election_Day
+		}
+		available = {
+			has_government = social_democrat
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_BlueKemal_Vic
+		icon = GFX_goal_national_chief
+		x = 23
+		y = 20
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_Election_Day
+		}
+		available = {
+			has_government = liberal
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Western_Investment
+		icon = GFX_goal_national_chief
+		x = 24
+		y = 21
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_Adnan_vic
+			focus = WRF_BlueKemal_Vic
+		}
+		available = {
+			OR = {
+			has_government = conservative
+			has_government = liberal	
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Consumerism
+		icon = GFX_goal_national_chief
+		x = 24
+		y = 22
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_Western_Investment
+		}
+		available = {
+			OR = {
+			has_government = conservative
+			has_government = liberal	
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Adnan_vic
+		icon = GFX_goal_national_chief
+		x = 25
+		y = 20
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_Election_Day
+		}
+		available = {
+			has_government = conservative
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Attack_Kemalism
+		icon = GFX_goal_national_chief
+		x = 26
+		y = 21
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_Adnan_vic
+		}
+		available = {
+			has_government = conservative
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Little_America
+		icon = GFX_goal_national_chief
+		x = 26
+		y = 22
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_Attack_Kemalism
+		}
+		available = {
+			has_government = conservative
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Blue_Kemalism
+		icon = GFX_goal_national_chief
+		x = 22
+		y = 21
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_BlueKemal_Vic
+		}
+		available = {
+			has_government = liberal
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Opening_Up
+		icon = GFX_goal_national_chief
+		x = 22
+		y = 22
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_Blue_Kemalism
+		}
+		available = {
+			has_government = liberal
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Rich_Turkey
+		icon = GFX_goal_national_chief
+		x = 24
+		y = 23
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_Consumerism
+		}
+		prerequisite = {  
+			focus = WRF_Little_America
+			focus = WRF_Opening_Up
+		}
+		available = {
+			has_government = liberal
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Soc_Vic
+		icon = GFX_goal_national_chief
+		x = 15
+		y = 20
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_Election_Day
+		}
+		available = {
+			has_government = libertarian_socialist
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+	
+	focus = {
+		id = WRF_Wolf_Vic
+		icon = GFX_goal_national_chief
+		x = 19
+		y = 20
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_Election_Day
+		}
+		available = {
+			has_government = ultranationalist
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+	
+	focus = {
+		id = WRF_Ulku_Movement
+		icon = GFX_goal_national_chief
+		x = 18
+		y = 21
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_Wolf_Vic
+		}
+		available = {
+			has_government = ultranationalist
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Form_Ocaks
+		icon = GFX_goal_national_chief
+		x = 18
+		y = 22
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_Ulku_Movement
+		}
+		available = {
+			has_government = ultranationalist
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Infiltrate_Army
+		icon = GFX_goal_national_chief
+		x = 19
+		y = 23
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_TurkoIslamic
+		}
+		prerequisite = {  
+			focus = WRF_Form_Ocaks
+		}
+		available = {
+			has_government = ultranationalist
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Bozkurtlar
+		icon = GFX_goal_national_chief
+		x = 19
+		y = 24
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_Infiltrate_Army
+		}
+		available = {
+			has_government = ultranationalist
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_Disavow_Atsiz
+		icon = GFX_goal_national_chief
+		x = 20
+		y = 21
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_Wolf_Vic
+		}
+		available = {
+			has_government = ultranationalist
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+	focus = {
+		id = WRF_TurkoIslamic
+		icon = GFX_goal_national_chief
+		x = 20
+		y = 22
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_Wolf_Vic
+		}
+		available = {
+			has_government = ultranationalist
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Expand_Village
+		icon = GFX_goal_national_chief
+		x = 16
+		y = 21
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_Soc_Vic
+		}
+		available = {
+			has_government = libertarian_socialist
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_NeoNazimism
+		icon = GFX_goal_national_chief
+		x = 16
+		y = 22
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_Expand_Village
+		}
+		available = {
+			has_government = libertarian_socialist
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Bread
+		icon = GFX_goal_national_chief
+		x = 15
+		y = 23
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_NeoNazimism
+		}
+		prerequisite = {  
+			focus = WRF_Eradicate_Nationalism
+		}
+		available = {
+			has_government = libertarian_socialist
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Democratic_Socialism
+		icon = GFX_goal_national_chief
+		x = 14
+		y = 21
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_Soc_Vic
+		}
+		available = {
+			has_government = social_democrat
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Eradicate_Nationalism
+		icon = GFX_goal_national_chief
+		x = 14
+		y = 22
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_Soc_Vic
+		}
+		available = {
+			has_government = libertarian_socialist
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+
+
+	focus = {
+		id = WRF_Anatolia_Federation
+		icon = GFX_goal_national_chief
+		x = 15
+		y = 24
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_Bread
+		}
+		prerequisite = {  
+			focus = WRF_Peace_Anatolia
+		}
+		available = {
+			has_government = libertarian_socialist
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
+		id = WRF_Focus_Regions
+		icon = GFX_goal_national_chief
+		x = 21
+		y = 17
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = {  
+			focus = WRF_The_Blackpins
+		}
+		available = {
+			has_government = social_democrat
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		hidden_effect = {
+		}
+		}
+	}
+
+	focus = {
 		id = WRF_Personal_Freedoms
 		icon = GFX_goal_freedoms
 		x = 20
