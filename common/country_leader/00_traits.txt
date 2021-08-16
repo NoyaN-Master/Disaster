@@ -20,7 +20,7 @@ leader_traits = {
 	    random = no
 		army_core_defence_factor = 0.1
 		army_core_attack_factor = 0.1
-		war_support_factor = 0.15
+		war_support_factor = 0.05
 		stability_factor = 0.1
 	}
 
@@ -77,36 +77,32 @@ leader_traits = {
 	
 	humanist_poet = {
 		random = no
-		stability_factor = 0.20
-		stability_weekly = 0.05
+		stability_factor = 0.1
 		war_support_factor = -0.20	
 	}
 
 	turkish_marx = {
 		random = no
-		stability_factor = 0.20
-		war_support_factor = 0.20
-		production_speed_buildings_factor = 0.1	
+		stability_factor = 0.05
+		war_support_factor = 0.03
+		production_speed_buildings_factor = 0.05
 	}
 	
 	man_of_steel = {
 		random = no
-		stability_factor = 0.20
-		stability_weekly = 0.005
-		production_speed_buildings_factor = 0.5
+		stability_factor = 0.1
+		production_speed_buildings_factor = 0.05
 		war_support_factor = 0.30
 	}
 	national_chief = {
 		random = no
 		stability_factor = 0.10
-		stability_weekly = 0.002
 		war_support_factor = 0.10
 	}
 	
 	kemalist_warrior = {
 		random = no
 		stability_factor = 0.10
-		stability_weekly = 0.05
 		army_core_attack_factor = 0.1
 		army_core_defence_factor = 0.1
 		war_support_factor = 0.10
@@ -119,7 +115,6 @@ leader_traits = {
 
 	reis_fevzi = {
 		random = no
-		stability_weekly = 0.005
 		max_planning = 0.25
 		army_core_attack_factor = 0.1
 		army_core_defence_factor = 0.1
@@ -128,7 +123,6 @@ leader_traits = {
 	mad_jack = {
 		random = no
 		stability_factor = 0.10
-		stability_weekly = 0.05
 		war_support_factor = 0.10
 		max_planning = 0.25
 		army_defence_factor = -0.05
@@ -136,11 +130,10 @@ leader_traits = {
 	
 	gamer_fuller = {
 		random = no
-		stability_factor = 0.20
-		stability_weekly = 0.05
+		stability_factor = -0.20
 		war_support_factor = 0.20
-		max_planning = 0.50
-		army_org = 0.7
+		max_planning = 0.1
+		army_org = 0.07
 		army_defence_factor = -0.2
 		attrition = -0.5
 	}
@@ -240,68 +233,13 @@ leader_traits = {
 	
 	dictator = {
 		random = no
-		political_power_factor = 0.25
-		
+		political_power_factor = 0.1
+        	stability_factor = 0.15		
 		ai_will_do = {
 			factor = 1
 		}
 	}
 	
-	warrior_code = {
-		random = no
-		ai_call_ally_desire_factor = -40
-		ai_join_ally_desire_factor = -30
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	imperial_sanction = {
-		random = no
-
-		targeted_modifier = {
-			tag = CHI
-			generate_wargoal_tension_against = 0.75
-		}
-		targeted_modifier = {
-			tag = PRC
-			generate_wargoal_tension_against = 0.75
-		}
-		targeted_modifier = {
-			tag = SHX
-			generate_wargoal_tension_against = 0.75
-		}
-		targeted_modifier = {
-			tag = GXC
-			generate_wargoal_tension_against = 0.75
-		}
-		targeted_modifier = {
-			tag = YUN
-			generate_wargoal_tension_against = 0.75
-		}
-		targeted_modifier = {
-			tag = XSM
-			generate_wargoal_tension_against = 0.75
-		}
-		targeted_modifier = {
-			tag = SIK
-			generate_wargoal_tension_against = 0.75
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	emperor_showa = {
-		random = no
-		stability_factor = 0.6 #FOR THE EMPERAH
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
 	
 	ww_one_trauma = {
 		random = no

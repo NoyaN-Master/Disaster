@@ -10,8 +10,14 @@ ideas = {
 			}
 			available = { owns_state = 839 } #Zlatoust
 			visible = { always = yes  }
+			equipment_bonus = {
+			armor = {
+				breakthrough = 0.05
+				maximum_speed = 0.05
+			}
+			}
 			research_bonus = {
-				armor = 0.15
+				armor = 0.10
 			}
 		}
     }
@@ -24,8 +30,17 @@ ideas = {
 			}
 			available = { owns_state = 797 } #Zlatoust
 			visible = { always = yes  }
+		equipment_bonus = {
+			ship_hull_carrier = {
+				carrier_size = 0.1
+			}
+			ship_hull_heavy= {
+				lg_attack = 0.05
+				hg_attack = 0.05
+			}
+		}
 			research_bonus = {
-				naval = 0.15
+				naval = 0.05
 			}
 		}
 
@@ -36,8 +51,19 @@ ideas = {
 			}
 			available = { owns_state = 342 } #Zlatoust
 			visible = { always = yes  }
+		equipment_bonus = {
+			ship_hull_carrier = {
+				carrier_size = 0.15
+				naval_range = 0.1
+			}
+			ship_hull_heavy = {
+				lg_attack = 0.1
+				hg_attack = 0.1
+				naval_range = 0.1
+			}
+		}
 			research_bonus = {
-				naval = 0.10
+				naval = 0.05
 			}
 		}
     }
@@ -130,8 +156,13 @@ ideas = {
             } #Zlatoust
 			visible = { always = yes  }
 			modifier = {
-               production_factory_max_efficiency_factor = 0.2 
+               production_factory_max_efficiency_factor = 0.02
             }
+			equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}}   
 		}
         sevket_sureyya_theorist = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea zlatoust"}
@@ -149,7 +180,7 @@ ideas = {
              } #Zlatoust
 			visible = { always = yes  }
 			modifier = {
-               production_factory_max_efficiency_factor = 0.2 
+               production_factory_max_efficiency_factor = 0.07
             }
 		}
         osman_fuad_theorist = {
@@ -170,7 +201,7 @@ ideas = {
             } } #Zlatoust
 			visible = { always = yes  }
 			modifier = {
-               experience_gain_army = 0.5
+               experience_gain_army = 0.05
                add_stability = 0.05 
             }
 		}      
