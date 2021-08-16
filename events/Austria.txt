@@ -2609,7 +2609,100 @@ country_event = { #klahr loses
 		set_country_flag = AUT_klahr_lost
 	}
 }
+country_event = { #new constitution
+	id = aut.77
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.77" }
+	title = aut.77.t
+	desc = aut.77.d
+	fire_only_once = yes
 
+	is_triggered_only = yes
+	
+	option = { 
+		name = aut.77.a 
+	}
+}
+
+country_event = { #renner's elections
+	id = aut.78
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.78" }
+	title = aut.78.t
+	desc = aut.78.d	    
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { #socdems win
+		name = aut.78.a 
+		trigger = {
+			has_idea = AUT_republican_constitution
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.04
+		}
+	}
+	
+	option = { #Figl wins
+		name = aut.78.b
+		trigger = {
+			has_idea = AUT_republican_constitution
+			has_country_flag = AUT_figl_allowed
+		}
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.14
+		}
+		set_politics = {
+			ruling_party = conservative
+			elections_allowed = no
+		}
+	}
+	
+	option = { #Riehl wins
+		name = aut.78.c
+		trigger = {
+			has_idea = AUT_republican_constitution
+			has_country_flag = AUT_riehl_allowed
+		}
+		add_popularity = {
+			ideology = revolutionary_nationalist
+			popularity = 0.14
+		}
+		set_politics = {
+			ruling_party = revolutionary_nationalist
+			elections_allowed = no
+		}
+	}
+	
+	option = { #Klahr wins
+		name = aut.78.e
+		trigger = {
+			has_idea = AUT_commie_constitution
+		}
+		add_popularity = {
+			ideology = authoritarian_socialist
+			popularity = 0.07
+		}
+		set_politics = {
+			ruling_party = authoritarian_socialist
+			elections_allowed = no
+		}
+		hidden_effect =  {
+		    retire_ideology_leader = authoritarian_socialist
+			create_country_leader = {
+	            name = "Karl Renner"
+	            desc = "AUT_Karl_Renner_desc"
+	            picture = "AUT_Karl_Renner.tga"
+	            expire = "2020.1.1"
+	            ideology = authoritarian_socialist_subideology
+	            traits = {
+	            }
+			}
+		}
+	}
+}
 country_event = { #paramilitary fuss
     id = aut.79
     title = aut.79.t
@@ -2723,115 +2816,3 @@ country_event = { #paramilitary fuss
     }
 }
 
-country_event = { #new constitution
-	id = aut.77
-	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.77" }
-	title = aut.77.t
-	desc = 
-	    if = {
-	        limit = has_country_flag = AUT_klahr_won
-			aut.77.d.commie
-		}
-		else_if = {
-		    limit = has_country_flag = AUT_klahr_lost
-			aut.77.d.socdem
-		}
-		    
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-	
-	option = { 
-		name = aut.77.a 
-		if = {
-	        limit = has_country_flag = AUT_klahr_won
-			add_ideas = AUT_commie_constitution
-		}
-		else_if = {
-		    limit = has_country_flag = AUT_klahr_lost
-			add_ideas = AUT_republican_constitution
-		}
-	}
-}
-
-country_event = { #renner's elections
-	id = aut.78
-	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.78" }
-	title = aut.78.t
-	desc = aut.78.d	    
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-	
-	option = { #socdems win
-		name = aut.78.a 
-		trigger = {
-			has_idea = AUT_republican_constitution
-		}
-		add_popularity = {
-			ideology = social_democrat
-			popularity = 0.04
-		}
-	}
-	
-	option = { #Figl wins
-		name = aut.78.b
-		trigger = {
-			has_idea = AUT_republican_constitution
-			has_country_flag = AUT_figl_allowed
-		}
-		add_popularity = {
-			ideology = conservative
-			popularity = 0.14
-		}
-		set_politics = {
-			ruling_party = conservative
-			elections_allowed = no
-		}
-	}
-	
-	option = { #Riehl wins
-		name = aut.78.c
-		trigger = {
-			has_idea = AUT_republican_constitution
-			has_country_flag = AUT_riehl_allowed
-		}
-		add_popularity = {
-			ideology = revolutionary_nationalist
-			popularity = 0.14
-		}
-		set_politics = {
-			ruling_party = revolutionary_nationalist
-			elections_allowed = no
-		}
-	}
-	
-	option = { #Klahr wins
-		name = aut.78.e
-		trigger = {
-			has_idea = AUT_commie_constitution
-		}
-		add_popularity = {
-			ideology = authoritarian_socialist
-			popularity = 0.07
-		}
-		set_politics = {
-			ruling_party = authoritarian_socialist
-			elections_allowed = no
-		}
-		hidden_effect =  {
-		    retire_ideology_leader = authoritarian_socialist
-			create_country_leader = {
-	            name = "Karl Renner"
-	            desc = "AUT_Karl_Renner_desc"
-	            picture = "AUT_Karl_Renner.tga"
-	            expire = "2020.1.1"
-	            ideology = authoritarian_socialist_subideology
-	            traits = {
-	            }
-			}
-		}
-	}
-}
