@@ -23,9 +23,11 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
-add_ideas = 	warlord 
-add_ideas = 	interventionism 
-add_ideas = 	semi_industrial_society
+add_ideas = extensive_conscription
+add_ideas = warlord 
+add_ideas = interventionism 
+add_ideas = semi_industrial_society
+add_ideas = KUR_hamidiye_army
 
 set_popularities = {
 	conservative = 0

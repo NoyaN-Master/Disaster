@@ -24,7 +24,7 @@ NGU_Knightly_Military = {
 			modifier = {
 			army_attack_factor = 0.07
 			experience_gain_army = 0.010
-			conscription = -0.03
+			conscription = 0.005
 			}
 		}
 NGU_Antisemitism = {
@@ -42,8 +42,8 @@ NGU_Race = {
 			modifier = {
 			stability_factor = 0.10
 			political_power_gain = 0.01
-			consumer_goods_factor = 0.1
-            production_factory_max_efficiency_factor = -0.05
+			consumer_goods_factor = -0.02
+            production_factory_max_efficiency_factor = 0.05
 			}
 		}
 NGU_HitlerYouth = {

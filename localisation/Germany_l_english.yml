@@ -6,12 +6,12 @@
 GER_for_germany_liberal:0"Forming the German Republic"
 GER_for_germany_authoritarian_democrat:0"Forming the German Republic"
 GER_for_germany_autocratic:0"Forming the Deutsches Kaiserreich"
-GER_for_germany_ultranationalis:0"Forming Germany"
+GER_for_germany_ultranationalist:0"Forming Germany"
 GER_for_germany_revolutionary_nationalist:0"Forming the Deutsches Kaiserreich"
 GER_for_germany_liberal_desc:0"Placeholder something about having more than 25 german states to form germany"
 GER_for_germany_authoritarian_democrat_desc:0"Placeholder something about having more than 25 german states to form germany"
 GER_for_germany_autocratic_desc:0"Placeholder something about having more than 25 german states to form germany"
-GER_for_germany_ultranationalis_desc:0"Placeholder something about having more than 25 german states to form germany"
+GER_for_germany_ultranationalist_desc:0"Placeholder something about having more than 25 german states to form germany"
 GER_for_germany_revolutionary_nationalist_desc:0"Placeholder something about having more than 25 german states to form germany"
 
 #### Greater Germany Decisions
@@ -25,7 +25,6 @@ GER_for_germany_authoritarian_democrat_greater_desc:0"Placeholder something abou
 GER_for_germany_autocratic_greater_desc:0"Placeholder something about having more than 25 german states to form greater germany"
 GER_for_germany_ultranationalis_greater_desc:0"Placeholder something about having more than 25 german states to form greater germany"
 GER_for_germany_revolutionary_nationalist_greater_desc:0"Placeholder something about having more than 25 german states to form greater germany"
-
 GER_unification_decisions:0"German Unification"
 GER_unification_decisions_desc:0"Germany has collapsed after the negotiations of Versailles. This is division has brought nothing but harm to the German people. As the legitimate government of the German people it's our duty to restore the nation. \n \n The current amount of German States we control:[?ROOT.german_states|H0]"
 GER_forming_germany_tooltip:0"In order for us to form Germany we need 36 German States."
@@ -100,17 +99,20 @@ GER_integrate35_desc:0""
 GER_integrate35:0"Integrate Upper Austria"
 GER_integrate36_desc:0""
 GER_integrate36:0"Integrate Lower Austria"
-GER_integrate37_desc:0""
 GER_integrate37:0"Integrate Vienna"
+GER_integrate37_desc:0""
 GER_integrate38:0"Integrate Tyrol"
 GER_integrate38_desc:0""
 GER_integrate39:0"Integrate Sudtirol"
 GER_integrate39_desc:0""
 GER_integrate40:0"Integrate Alto Adige"
 GER_integrate40_desc:0""
-
-
-
+GER_integrate41:0"Integrate Steiermark"
+GER_integrate41_desc:0""
+GER_integrate42:0"Integrate Karnten"
+GER_integrate42_desc:0""
+GER_integrate43:0"Integrate Western Burgenland"
+GER_integrate43_desc:0""
 
 # Mecklenburg localisation since it will get annexed anyway no need to make seprate file
 mek.1.t:0"Taking Over Mecklenburg"
