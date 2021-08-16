@@ -238,6 +238,10 @@ spriteTypes = {
 		name = "GFX_idea_AUT_Socialist_Unrest"
 		texturefile = "gfx/interface/ideas/AUT_Socialist_Unrest.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_AUT_volksbier"
+		texturefile = "gfx/interface/ideas/AUT_volksbier_idea.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_idea_WRF_Greek_Legacy"
