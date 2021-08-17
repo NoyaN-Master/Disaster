@@ -504,3 +504,373 @@ country_event = { #Greece event
 		}
 	}
 }
+
+##new dem content
+country_event = { #Declaration of Election
+	id = tur.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = tur.20.t
+	desc = tur.20.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.20.a
+		ai_chance = { factor = 50 }
+		set_party_name = { 
+    	ideology = conservative 
+    	long_name = WRF_ismet_cons_long 
+    	name = WRF_ismet_cons 
+		}
+		set_party_name = { 
+    	ideology = liberal 
+    	long_name = WRF_ismet_lib_long 
+    	name = WRF_ismet_lib
+		}		
+		set_party_name = { 
+    	ideology = authoritarian_democrat 
+    	long_name = WRF_ismet_grey_long 
+    	name = WRF_ismet_grey  
+		}		
+		set_party_name = { 
+    	ideology = autocratic 
+    	long_name = WRF_ismet_grey_long 
+    	name = WRF_ismet_grey 
+		}		
+		set_party_name = { 
+    	ideology = revolutionary_nationalist 
+    	long_name = WRF_ismet_black_long 
+    	name = WRF_ismet_black 
+		}
+		set_party_name = { 
+    	ideology = authoritarian_socialist 
+    	long_name = WRF_ismet_commie_long 
+    	name = WRF_ismet_commie 
+		}	
+		set_party_name = { 
+    	ideology = libertarian_socialist 
+    	long_name = WRF_ismet_commie_long 
+    	name = WRF_ismet_commie 
+		}			
+		hidden_effect = {
+			country_event = { id = tur.21 days = 1 }
+		}
+	}
+}
+
+country_event = { #The Blackarrow Manifesto
+	id = tur.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = tur.21.t
+	desc = tur.21.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.21.a
+		ai_chance = { factor = 50 }
+		set_variable = {
+		var = WRF.retardanger
+		value = 10
+		}
+		custom_effect_tooltip = WRF_blackpin_tt
+		custom_effect_tooltip = WRF_blackpin_infott
+	}
+}
+
+country_event = { #Stopping Parties
+	id = tur.22
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = tur.22.t
+	desc = tur.22.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.22.a
+		ai_chance = { factor = 50 }
+		add_stability = 0.05
+		add_political_power = 200
+		add_popularity = {
+    	ideology = libertarian_socialist
+    	popularity = 0.1
+		}
+		add_popularity = {
+    	ideology = ultranationalist
+    	popularity = 0.1
+		}
+		add_popularity = {
+    	ideology = liberal
+    	popularity = 0.1
+		}
+		add_popularity = {
+    	ideology = conservative
+    	popularity = 0.1
+		}
+		add_popularity = {
+    	ideology = revolutionary_nationalist
+    	popularity = 0.1
+		}
+		add_to_variable  = {
+		var = WRF.retardanger
+		value = 30
+		}
+		custom_effect_tooltip = WRF_blackpin_increase
+		custom_effect_tooltip = WRF_blackpin_infott
+	}
+
+	option = {
+		name = tur.22.b
+		ai_chance = { factor = 50 }
+		add_popularity = {
+    	ideology = libertarian_socialist
+    	popularity = 0.02
+		}
+		add_popularity = {
+    	ideology = ultranationalist
+    	popularity = 0.02
+		}
+		add_popularity = {
+    	ideology = liberal
+    	popularity = 0.02
+		}
+		add_popularity = {
+    	ideology = conservative
+    	popularity = 0.02
+		}
+		add_popularity = {
+    	ideology = revolutionary_nationalist
+    	popularity = 0.02
+		}
+		custom_effect_tooltip = WRF_blackpin_infott
+	}
+}
+
+country_event = { #focus_Region
+	id = tur.23
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = tur.23.t
+	desc = tur.23.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #move the army east
+		name = tur.23.a
+		ai_chance = { factor = 50 }
+		add_to_variable = {
+		var = WRF.retardanger
+		value = 30
+		}
+		custom_effect_tooltip = WRF_blackpin_infott
+	}
+
+	option = { #move the army center
+		name = tur.23.a
+		ai_chance = { factor = 50 }
+		add_to_variable = {
+		var = WRF.retardanger
+		value = 20
+		}
+		custom_effect_tooltip = WRF_blackpin_infott
+	}
+
+	option = { #move the army west
+		name = tur.23.a
+		ai_chance = { factor = 50 }
+		add_to_variable = {
+		var = WRF.retardanger
+		value = 10
+		}
+		custom_effect_tooltip = WRF_blackpin_infott
+	}
+}
+
+country_event = { #The Blackarrow Revolt
+	id = tur.24
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = tur.24.t
+	desc = tur.24.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.24.a
+		ai_chance = { factor = 80 }
+		add_stability = -0.40
+		ANK = {
+		transfer_state = 834
+		transfer_state = 339
+		add_state_core = 339
+		add_state_core = 834
+		set_cosmetic_tag = ANK_smyrna_revolt
+		set_politics = {
+		ruling_party = revolutionary_nationalist
+		}
+		add_popularity = {
+    	ideology = revolutionary_nationalist
+   		popularity = 1
+		}
+		create_country_leader = {
+	    name = "Mahmut Esat Bozkurt"
+	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	    picture = "ANK_Esat.png"
+	    expire = "1965.1.1"
+	    ideology = blackpin_kemalism
+	    traits = {	
+	    }
+        }
+		add_ideas = ANK_Revolt
+		}
+	}
+
+	option = {
+		name = tur.24.b
+		ai_chance = { factor = 20 }
+		add_stability = -0.40
+		create_country_leader = {
+	    name = "Kemalist Military Front"
+	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	    picture = "Portrait_TUR_TSK.tga"
+	    expire = "1965.1.1"
+	    ideology = blackpin_kemalism
+	    traits = {	
+	    }
+        }
+		add_popularity = {
+    	ideology = revolutionary_nationalist
+   		popularity = 0.3
+		}
+		set_politics = {
+		ruling_party = revolutionary_nationalist
+		}
+		set_cosmetic_tag = ANK_smyrna_revolt
+		retire_ideology_leader = social_democrat
+		complete_national_focus = WRF_Election_Day
+		complete_national_focus = WRF_CHP_Victory
+	}
+}
+
+country_event = { #The Blackarrow Manifesto
+	id = tur.25
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = tur.25.t
+	desc = tur.25.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #elect WOLF
+		name = tur.25.a
+		ai_chance = { factor = 50 }
+		create_country_leader = {
+	    name = "Alparslan Türkeş"
+	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	    picture = "WRF_Turkes.tga"
+	    expire = "1965.1.1"
+	    ideology = ultranationalist_subtype
+	    traits = {	
+	    }
+        }
+		add_popularity = {
+    	ideology = ultranationalist
+   		popularity = 0.3
+		}
+		set_politics = {
+		ruling_party = ultranationalist
+		}
+		complete_national_focus = WRF_Wolf_Vic
+		add_ideas = WRF_Kemalist_Anger
+	}
+
+	option = { #elect BlueKemal
+		name = tur.25.b
+		ai_chance = { factor = 50 }
+		create_country_leader = {
+	    name = "Celal Bayar"
+	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	    picture = "Portrait_WRF_Celal.tga"
+	    expire = "1965.1.1"
+	    ideology = conservative_subtype
+	    traits = {	
+	    }
+        }
+		add_popularity = {
+    	ideology = conservative
+   		popularity = 0.3
+		}
+		set_politics = {
+		ruling_party = conservative
+		}
+		complete_national_focus = WRF_BlueKemal_Vic
+		add_ideas = WRF_Kemalist_Anger
+	}
+
+	option = { #elect Red
+		name = tur.25.c
+		ai_chance = { factor = 50 }
+		create_country_leader = {
+	    name = "Mustafa Suphi"
+	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	    picture = "Portrait_WRF_Celal.tga"
+	    expire = "1965.1.1"
+	    ideology = libertarian_socialist_subtype
+	    traits = {	
+	    }
+        }
+		add_popularity = {
+    	ideology = libertarian_socialist
+   		popularity = 0.3
+		}
+		set_politics = {
+		ruling_party = libertarian_socialist
+		}
+		complete_national_focus = WRF_Soc_Vic
+		add_ideas = WRF_Kemalist_Anger
+	}
+
+	option = { #elect Adnan
+		name = tur.25.e
+		ai_chance = { factor = 50 }
+		create_country_leader = {
+	    name = "Adnan Menderes"
+	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	    picture = "Portrait_WRF_Adnan.tga"
+	    expire = "1965.1.1"
+	    ideology = liberal_subtype
+	    traits = {	
+	    }
+        }
+		add_popularity = {
+    	ideology = liberal
+   		popularity = 0.3
+		}
+		set_politics = {
+		ruling_party = liberal
+		}
+		complete_national_focus = WRF_Adnan_vic
+		add_ideas = WRF_Kemalist_Anger
+	}
+}

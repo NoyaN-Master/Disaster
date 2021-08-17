@@ -9,36 +9,53 @@ division_template = {
 		cavalry = { x = 1 y = 1 }
 	}
 }
-
+units = {
 division= {	
-		name = "Amediler"
-		location = 1463    
+		name = "Hamidiye Guard 1"
+		location = 4512    
 		division_template = "Kurdish Guards"
-		start_experience_factor = 0.1
+		start_experience_factor = 1
 		start_equipment_factor = 1.0
 
 	}
 	division= {	
-		name = "Haqqari Guard"
-		location = 1463   
+		name = "Hamidiye Guard 2"
+		location = 4512   
 		division_template = "Kurdish Guards"
-		start_experience_factor = 0.1
+		start_experience_factor = 1
 		start_equipment_factor = 1.0
 
 	}
 	division= {	
-		name = "Dersiim Guard"
-		location = 1463 
+		name = "Hamidiye Guard 3"
+		location = 4512 
 		division_template = "Kurdish Guards"
-		start_experience_factor = 0.1
+		start_experience_factor = 1
 		start_equipment_factor = 1.0
 
 	}
 	division= {	
-		name = "Saitiler"
-		location = 1463   
+		name = "Hamidiye Guard 4"
+		location = 4512 
 		division_template = "Kurdish Guards"
-		start_experience_factor = 0.1
+		start_experience_factor = 1
 		start_equipment_factor = 1.0
 
+	}
+	division= {	
+		name = "Hamidiye Guard 5"
+		location = 4512 
+		division_template = "Kurdish Guards"
+		start_experience_factor = 1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "Hamidiye Guard 6"
+		location = 4512   
+		division_template = "Kurdish Guards"
+		start_experience_factor = 1
+		start_equipment_factor = 1.0
+
+	}
 	}

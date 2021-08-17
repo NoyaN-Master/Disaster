@@ -5,7 +5,7 @@ state={
 	manpower = 1006221
 	
 	
-	state_category = town
+	state_category = large_town
 
 	history={
 		victory_points = {
@@ -16,6 +16,8 @@ state={
 			infrastructure = 6
 			fuel_silo = 1
 			dockyard = 1
+			industrial_complex = 1
+
 		}
 		add_core_of = PRE
 

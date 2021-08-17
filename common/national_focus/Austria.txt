@@ -81,12 +81,251 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = AUT_maintain_agrarianism
-		icon = GFX_goal_AUT_maintain_agrarianism
+		id = AUT_volksautobahn
+		icon = GFX_goal_AUT_volksautobahn
 		prerequisite = { focus = AUT_economic_reforms }
-		mutually_exclusive = { focus = AUT_new_industrialism }
+		x = 4
+		y = 2
+		cost = 7
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			has_country_flag = AUT_dollfuss_in_power				
+		}		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			custom_effect_tooltip = AUS_autobahn_tt
+			hidden_effect = {
+				813 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 10
+							instant_build = yes
+						}
+					}
+				}
+				4 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+
+						add_building_construction = {
+							type = infrastructure
+							level = 10
+							instant_build = yes
+						}
+					}
+				}
+				152 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 10
+							instant_build = yes
+						}
+					}
+				}
+				881 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 10
+							instant_build = yes
+						}
+					}
+				}
+			}		
+		}
+	}
+
+	focus = {
+		id = AUT_electronics_innovation
+		icon = GFX_goal_AUT_electronics_innovation
+		prerequisite = { focus = AUT_economic_reforms }
+		x = 6
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			has_country_flag = AUT_dollfuss_in_power				
+		}		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = AUS_electronics_innovation
+				bonus = 0.75
+				uses = 2
+				category = electronics
+			}
+        }
+	}
+
+	focus = {
+		id = AUT_found_the_voestalpine
+		icon = GFX_goal_AUT_found_the_voestalpine
+		prerequisite = { focus = AUT_economic_reforms }
+		x = 6
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			has_country_flag = AUT_dollfuss_in_power				
+		}		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_resource = {
+    			type = steel
+    			amount = 8
+    			state = 881
+			}
+        }
+	}
+
+	
+	focus = {
+		id = AUT_volksbier
+		icon = GFX_goal_AUT_volksbier
+		prerequisite = { focus = AUT_further_state_intervention focus = AUT_nation_of_farmers focus = AUT_nation_of_industry}
+		x = 4
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			has_country_flag = AUT_dollfuss_in_power				
+		}		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = AUT_volksbier_idea
+        }
+	}
+
+	focus = {
+		id = AUT_expand_the_semperit
+		icon = GFX_goal_AUT_expand_the_semperit
+		prerequisite = { focus = AUT_volksautobahn }
+		x = 4
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			has_country_flag = AUT_dollfuss_in_power				
+		}		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			4 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 1
+						instant_build = yes
+					}
+				}
+			modify_building_resources = {
+        	   building = synthetic_refinery
+        	   resource = rubber
+        	   amount = 4
+        	}
+        }
+	}
+
+	focus = {
+		id = AUT_wienerwerke
+		icon = GFX_goal_AUT_wienerwerke
+		prerequisite = { focus = AUT_industrial_innovation }
+		x = 2
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			has_country_flag = AUT_dollfuss_in_power				
+		}		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			813 = {
+			add_extra_state_shared_building_slots = 2
+	        add_building_construction = {
+		    type = industrial_complex
+		    level = 2
+	        }   
+            }
+			813 = {
+			add_extra_state_shared_building_slots = 2
+	        add_building_construction = {
+		    type = arms_factory
+		    level = 2
+	        }   
+            }
+        }
+	}
+
+	focus = {
+		id = AUT_industrial_innovation
+		icon = GFX_goal_AUT_industrial_innovation
+		prerequisite = { focus = AUT_economic_reforms }
 		x = 2
 		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			has_country_flag = AUT_dollfuss_in_power				
+		}		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = AUS_industrial_innovation
+				bonus = 0.5
+				uses = 3
+				category = industry
+			}
+        }
+	}
+
+	focus = {
+		id = AUT_maintain_agrarianism
+		icon = GFX_goal_AUT_maintain_agrarianism
+		prerequisite = { focus = AUT_wienerwerke}
+		prerequisite = { focus = AUT_expand_the_semperit}
+		prerequisite = { focus = AUT_found_the_voestalpine  }
+		mutually_exclusive = { focus = AUT_new_industrialism }
+		x = 2
+		y = 4
 		cost = 6
 		ai_will_do = {
 			factor = 60
@@ -108,8 +347,8 @@ focus_tree = {
 	icon = GFX_goal_AUT_ties_with_the_aristocracy
 	prerequisite = { focus = AUT_maintain_agrarianism }
 	x = 0
-	y = 3
-	cost = 3
+	y = 5
+	cost = 4
 	ai_will_do = {
 		factor = 40
 	}
@@ -121,8 +360,8 @@ focus_tree = {
 	available_if_capitulated = no
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
-		add_stability = 0.04
-		add_political_power = 25
+		add_stability = 0.05
+		add_ideas = AUT_aristocratic_ties_idea
         }
 	}
 	
@@ -131,8 +370,8 @@ focus_tree = {
 		icon = GFX_goal_AUT_land_reform
 		prerequisite = { focus = AUT_aristocratic_ties }
 		x = 0
-		y = 4
-		cost = 6
+		y = 6
+		cost = 4
 		ai_will_do = {
 			factor = 70
 		}
@@ -168,8 +407,8 @@ focus_tree = {
 		icon = GFX_goal_AUT_protect_the_common_farmer
 		prerequisite = { focus = AUT_maintain_agrarianism }
 		x = 2
-		y = 3
-		cost = 5
+		y = 5
+		cost = 4
 		ai_will_do = {
 			factor = 50
 		}
@@ -191,8 +430,8 @@ focus_tree = {
 		icon = GFX_goal_AUT_grain_exports
 		prerequisite = { focus = AUT_protect_the_common_farmer }
 		x = 2
-		y = 4
-		cost = 6
+		y = 6
+		cost = 4
 		ai_will_do = {
 			factor = 50
 		}
@@ -231,7 +470,7 @@ focus_tree = {
 		icon = GFX_goal_AUT_corporatist_ideals
 		prerequisite = { focus = AUT_maintain_agrarianism OR = AUT_new_industrialism } 
 		x = 4
-		y = 3
+		y = 5
 		cost = 5
 		ai_will_do = {
 			factor = 60
@@ -243,27 +482,24 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			813 = {
+			883 = {
+			add_extra_state_shared_building_slots = 1
 	        add_building_construction = {
 		    type = industrial_complex
 		    level = 1
 	        }   
             }
-			152 = {
+			882 = {
+			add_extra_state_shared_building_slots = 1
 	        add_building_construction = {
 		    type = industrial_complex
 		    level = 1
 	        }   
             }
-			813 = {
+			153 = {
+			add_extra_state_shared_building_slots = 1
 	        add_building_construction = {
-		    type = infrastructure
-		    level = 1
-	        }   
-            }
-			152 = {
-	        add_building_construction = {
-		    type = infrastructure
+		    type = industrial_complex
 		    level = 1
 	        }   
             }
@@ -277,8 +513,8 @@ focus_tree = {
 		icon = GFX_goal_AUT_furtherr_sstate_intervention
 		prerequisite = { focus = AUT_corporatist_ideals } 
 		x = 4
-		y = 4
-		cost = 8
+		y = 6
+		cost = 6
 		ai_will_do = {
 			factor = 70
 		}
@@ -319,7 +555,7 @@ focus_tree = {
 		prerequisite = { focus = AUT_grain_exports }
 		prerequisite = { focus = AUT_further_state_intervention }
 		x = 2
-		y = 5
+		y = 7
 		cost = 6
 		ai_will_do = {
 			factor = 80
@@ -342,10 +578,12 @@ focus_tree = {
 	focus = {
 		id = AUT_new_industrialism
 		icon = GFX_goal_AUT_new_industralism
-		prerequisite = { focus = AUT_economic_reforms }
+		prerequisite = { focus = AUT_wienerwerke }
+		prerequisite = { focus = AUT_expand_the_semperit}
+		prerequisite = { focus = AUT_found_the_voestalpine  }
 		mutually_exclusive = { focus = AUT_maintain_agrarianism }
 		x = 6
-		y = 2
+		y = 4
 		cost = 6
 		ai_will_do = {
 			factor = 40
@@ -367,8 +605,8 @@ focus_tree = {
 		icon = GFX_goal_AUT_ties_with_business
 		prerequisite = { focus = AUT_new_industrialism }
 		x = 8
-		y = 3
-		cost = 3
+		y = 5
+		cost = 4
 		ai_will_do = {
 			factor = 60
 		}
@@ -380,7 +618,7 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_political_power = 50
+			add_ideas =  AUT_ties_with_business_idea
         }
 	}
 	
@@ -389,8 +627,8 @@ focus_tree = {
 		icon = GFX_goal_AUT_new_labour_charter
 		prerequisite = { focus = AUT_ties_with_business }
 		x = 8
-		y = 4
-		cost = 6
+		y = 6
+		cost = 5
 		ai_will_do = {
 			factor = 70
 		}
@@ -414,7 +652,7 @@ focus_tree = {
 		icon = GFX_goal_AUT_farmers_to_factorymen
 		prerequisite = { focus = AUT_new_industrialism }
 		x = 6
-		y = 3
+		y = 5
 		cost = 5
 		ai_will_do = {
 			factor = 60
@@ -428,42 +666,28 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_stability = -0.07
-			813 = {
+			4 = {
+			add_extra_state_shared_building_slots = 2
 	        add_building_construction = {
 		    type = industrial_complex
 		    level = 2
 	        }   
             }
 			152 = {
+			add_extra_state_shared_building_slots = 2
 	        add_building_construction = {
 		    type = industrial_complex
 		    level = 2
 	        }   
             }
-			153 = {
+			881 = {
+			add_extra_state_shared_building_slots = 2
 	        add_building_construction = {
 		    type = industrial_complex
 		    level = 2
 	        }   
             }
-			813 = {
-	        add_building_construction = {
-		    type = infrastructure
-		    level = 1
-	        }   
-            }
-			152 = {
-	        add_building_construction = {
-		    type = infrastructure
-		    level = 1
-	        }   
-            } 
-			153 = {
-	        add_building_construction = {
-		    type = infrastructure
-		    level = 1
-	        }   
-            }
+            
         }
 	}
 	
@@ -472,7 +696,7 @@ focus_tree = {
 		icon = GFX_goal_AUT_new_export_markets
 		prerequisite = { focus = AUT_farmers_to_factorymen }
 		x = 6
-		y = 4
+		y = 6
 		cost = 6
 		ai_will_do = {
 			factor = 50
@@ -514,7 +738,7 @@ focus_tree = {
 		prerequisite = { focus = AUT_new_export_markets }
 		prerequisite = { focus = AUT_further_state_intervention }
 		x = 6
-		y = 5
+		y = 7
 		cost = 6
 		ai_will_do = {
 			factor = 80
@@ -539,7 +763,7 @@ focus_tree = {
 		icon = GFX_goal_AUT_austrian_miracle
 		prerequisite = { focus = AUT_nation_of_farmers OR = AUT_nation_of_industry }
 		x = 4
-		y = 6
+		y = 8
 		cost = 6
 		ai_will_do = {
 			factor = 100
@@ -556,6 +780,514 @@ focus_tree = {
         }
 	}
 	
+	focus = {
+		id = AUT_rearm_bundesheer
+		icon = GFX_goal_rearm_bundesheer
+		prerequisite = { }
+		x = -7
+		y = 1
+		cost = 6
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_flag = AUT_dollfuss_in_power				
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_war_support = 0.02
+			add_tech_bonus = {
+				name = AUS_rearm_bundesheer
+				bonus = 0.75
+				uses = 1
+				category = infantry_weapons
+			}
+
+        }
+	}
+	
+	focus = {
+		id = AUT_deal_with_porsche
+		icon = GFX_goal_AUT_deal_with_porsche
+		prerequisite = { focus = AUT_rearm_bundesheer }
+		x = -8
+		y = 2
+		cost = 6
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_flag = AUT_dollfuss_in_power				
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+
+			add_tech_bonus = {
+				name = AUS_deal_with_porsche
+				bonus = 0.75
+				uses = 1
+				category = armor
+			}
+
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}		
+			}
+        }
+	}		
+
+	
+
+	
+
+	focus = {
+		id = AUT_expand_steyrwerke
+		icon = GFX_goal_AUT_expand_steyrwerke
+		prerequisite = { focus = AUT_rearm_bundesheer }
+		x = -6
+		y = 2
+		cost = 6
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_flag = AUT_dollfuss_in_power				
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+			add_tech_bonus = {
+				name = AUS_deal_with_porsche
+				bonus = 0.75
+				uses = 1
+				category = artillery
+			}
+			
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}		
+			}
+        }
+	}
+
+	focus = {
+		id = AUT_paramilitary_fuss
+		icon = GFX_goal_AUT_paramilitary_fuss
+		prerequisite = { focus = AUT_deal_with_porsche }
+		prerequisite = { focus = AUT_expand_steyrwerke }
+		x = -7
+		y = 3
+		cost = 6
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_flag = AUT_dollfuss_in_power				
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			country_event = aut.79
+        }
+	}
+
+	focus = {
+		id = AUT_side_with_heimwehr
+		icon = GFX_goal_AUT_side_with_heimwehr
+		prerequisite = { focus = AUT_paramilitary_fuss }
+		mutually_exclusive = { focus = AUT_side_with_sturmkorps }
+		mutually_exclusive = { focus = AUT_side_with_sturmscharen }
+	
+		x = -11
+		y = 4
+		cost = 0
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_flag = AUT_dollfuss_in_power		
+		}	
+		available = { 
+			has_country_flag = AUT_side_with_heimwehr_option	
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+        }
+	}
+
+	focus = {
+		id = AUT_new_OKH
+		icon = GFX_goal_AUT_new_OKH
+		prerequisite = { focus = AUT_side_with_heimwehr }
+
+		x = -11
+		y = 5
+		cost = 6
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_flag = AUT_dollfuss_in_power				
+		}	
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+        }
+	}
+
+
+
+	focus = {
+		id = AUT_superb_militarism
+		icon = GFX_goal_AUT_superb_militarism
+		prerequisite = { focus = AUT_new_OKH }
+
+		x = -10
+		y = 6
+		cost = 6
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_flag = AUT_dollfuss_in_power				
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+        }
+	}
+
+
+	focus = {
+		id = AUT_Militaeruebermacht
+		icon = GFX_goal_AUT_Militaeruebermacht
+		prerequisite = { focus = AUT_new_OKH }
+
+		x = -12
+		y = 6
+		cost = 6
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_flag = AUT_dollfuss_in_power				
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+        }
+	}
+
+	focus = {
+		id = AUT_new_austrian_army
+		icon = GFX_goal_AUT_new_austrian_army
+		prerequisite = { focus = AUT_superb_militarism }
+		prerequisite = { focus = AUT_Militaeruebermacht }
+		x = -11
+		y = 7
+		cost = 6
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_flag = AUT_dollfuss_in_power				
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+        }
+	}
+
+	focus = {
+		id = AUT_side_with_sturmscharen
+		icon = GFX_goal_AUT_side_with_sturmscharen
+		prerequisite = { focus = AUT_paramilitary_fuss }
+		mutually_exclusive = { focus = AUT_side_with_heimwehr }
+		mutually_exclusive = { focus = AUT_side_with_sturmkorps }
+		x = -3
+		y = 4
+		cost = 0
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_flag = AUT_dollfuss_in_power			
+		}	
+		available = { 
+			has_country_flag = AUT_side_with_sturmscharen_option	
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+        }
+	}
+
+	focus = {
+		id = AUT_Komtur_der_SS
+		icon = GFX_goal_AUT_Komtur_der_SS
+		prerequisite = { focus = AUT_side_with_sturmscharen }
+	
+		x = -3
+		y = 5
+		cost = 6
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_flag = AUT_dollfuss_in_power				
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+        }
+	}
+
+	focus = {
+		id = AUT_religious_fanaticism
+		icon = GFX_goal_AUT_religious_fanaticism
+		prerequisite = { focus = AUT_Komtur_der_SS }
+	
+		x = -2
+		y = 6
+		cost = 6
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_flag = AUT_dollfuss_in_power				
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+        }
+	}
+
+	focus = {
+		id = AUT_auferstehung_der_teutonen
+		icon = GFX_goal_AUT_auferstehung_der_teutonen
+		prerequisite = { focus = AUT_religious_fanaticism}
+		prerequisite = { focus = AUT_deus_vult}
+
+		x = -3
+		y = 7
+		cost = 6
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_flag = AUT_dollfuss_in_power				
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+        }
+	}
+
+	focus = {
+		id = AUT_deus_vult
+		icon = GFX_goal_AUT_Deus_vult
+		prerequisite = { focus = AUT_Komtur_der_SS}
+	
+		x = -4
+		y = 6
+		cost = 6
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_flag = AUT_dollfuss_in_power				
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+        }
+	}
+
+	focus = {
+		id = AUT_side_with_sturmkorps
+		icon = GFX_goal_AUT_side_with_sturmkorps
+		prerequisite = { focus = AUT_paramilitary_fuss }
+		mutually_exclusive = { focus = AUT_side_with_heimwehr }
+		mutually_exclusive = { focus = AUT_side_with_sturmscharen }
+		x = -7
+		y = 4
+		cost = 0
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_flag = AUT_dollfuss_in_power		
+		}	
+		available = { 
+			has_country_flag = AUT_side_with_sturmkorps_option
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+        }
+	}
+
+	focus = {
+		id = AUT_new_SK_fuehrer
+		icon = GFX_goal_AUT_new_SK_fuehrer
+		prerequisite = { focus = AUT_side_with_sturmkorps }
+		x = -7
+		y = 5
+		cost = 6
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_flag = AUT_dollfuss_in_power				
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+        }
+	}
+
+	focus = {
+		id = AUT_blut_und_boden
+		icon = GFX_goal_AUT_blut_und_boden
+		prerequisite = { focus = AUT_new_SK_fuehrer }
+		x = -8
+		y = 6
+		cost = 6
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_flag = AUT_dollfuss_in_power				
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+        }
+	}
+
+	focus = {
+		id = AUT_austrias_elite
+		icon = GFX_goal_AUT_austrias_elite
+		prerequisite = { focus = AUT_blut_und_boden}
+		prerequisite = { focus = AUT_pan_germanism }
+		x = -7
+		y = 7
+		cost = 6
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_flag = AUT_dollfuss_in_power				
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+        }
+	}
+
+	focus = {
+		id = AUT_pan_germanism
+		icon = GFX_goal_AUT_pan_germanism
+		prerequisite = { focus = AUT_new_SK_fuehrer }
+		x = -6
+		y = 6
+		cost = 6
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_flag = AUT_dollfuss_in_power				
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		
+        }
+	}
+
+
 	focus = {
 		id = AUT_deepen_church_ties
 		icon = GFX_goal_AUT_deepen_church_ties
@@ -574,6 +1306,28 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = AUT_church_ties_1
+        }
+	}
+	
+	focus = {
+		id = AUT_german_immigrants
+		icon = GFX_goal_AUT_german_immigrants
+		prerequisite = { focus = AUT_merge_the_posts }
+		
+		x = 13
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			has_country_flag = AUT_dollfuss_in_power					
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			 add_timed_idea = { idea = AUT_german_immigrants_idea days = 550 } 
         }
 	}
 	
@@ -599,10 +1353,36 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = AUT_state_and_clergy_question
+		icon = GFX_goal_AUT_state_and_clergy_question
+		prerequisite = { focus = AUT_merge_the_posts}
+		
+		x = 15
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 45
+		}
+		available = {
+			has_country_flag = AUT_dollfuss_in_power			
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			swap_ideas = { 
+                remove_idea = AUT_church_ties_1
+                add_idea = AUT_church_ties_2
+            }
+        }
+	}
+
+	focus = {
 		id = AUT_clergy_in_the_government
 		icon = GFX_goal_AUT_clergy_in_government
-		prerequisite = { focus = AUT_deepen_church_ties }
-		x = 12
+		prerequisite = { focus = AUT_state_and_clergy_question }
+		mutually_exclusive = { focus = AUT_seperate_them }
+		x = 16
 		y = 2
 		cost = 4
 		ai_will_do = {
@@ -623,10 +1403,36 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = AUT_seperate_them
+		icon = GFX_goal_AUT_seperate_them
+		prerequisite = { focus = AUT_state_and_clergy_question }
+		mutually_exclusive = { focus = AUT_clergy_in_the_government }
+		x = 14
+		y = 2
+		cost = 4
+		ai_will_do = {
+			factor = 45
+		}
+		available = {
+			has_country_flag = AUT_dollfuss_in_power			
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			swap_ideas = { 
+                remove_idea = AUT_church_ties_1
+                add_idea = AUT_church_ties_2
+            }
+        }
+	}
+
+
+	focus = {
 		id = AUT_promote_catholic_social_teaching
 		icon = GFX_goal_AUT_catholic_social_teaching
-		prerequisite = { focus = AUT_clergy_in_the_government }
 		prerequisite = { focus = AUT_revise_the_concordat }
+		prerequisite = { focus = AUT_unite_the_youth_movements }
 		x = 11
 		y = 3
 		cost = 6
@@ -648,11 +1454,33 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = AUT_oesterreichische_ehe
+		icon = GFX_goal_AUT_esterreichische_ehe
+		prerequisite = { focus = AUT_promote_catholic_social_teaching }
+		x = 11
+		y = 4
+		cost = 6
+		ai_will_do = {
+			factor = 45
+		}
+		available = {
+			has_country_flag = AUT_dollfuss_in_power				
+		}	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = AUT_oesterreichische_ehe_idea
+        }
+	}
+
+	focus = {
 		id = AUT_unite_the_youth_movements
 		icon = GFX_goal_AUT_merge_the_youth_movements
-		prerequisite = { focus = AUT_merge_the_posts }
-		x = 15
-		y = 1
+		prerequisite = { focus = AUT_deepen_church_ties }
+		prerequisite = { focus = AUT_german_immigrants }
+		x = 12
+		y = 2
 		cost = 5
 		ai_will_do = {
 			factor = 40
@@ -671,10 +1499,10 @@ focus_tree = {
 	focus = {
 		id = AUT_extol_dollfuss_faith
 		icon = GFX_goal_Dolfus_Bless_shine
-		prerequisite = { focus = AUT_deepen_church_ties }
-		prerequisite = { focus = AUT_unite_the_youth_movements }
-		x = 14
-		y = 2
+		prerequisite = { focus = AUT_clergy_in_the_government focus = AUT_seperate_them }
+	
+		x = 15
+		y = 3
 		cost = 4
 		ai_will_do = {
 			factor = 50
@@ -693,9 +1521,8 @@ focus_tree = {
 	focus = {
 		id = AUT_catholic_education
 		icon = GFX_goal_AUT_catholic_education
-		prerequisite = { focus = AUT_clergy_in_the_government }
 		prerequisite = { focus = AUT_extol_dollfuss_faith }
-		x = 13
+		x = 15
 		y = 4
 		cost = 6
 		ai_will_do = {
@@ -719,9 +1546,10 @@ focus_tree = {
 	focus = {
 		id = AUT_a_moral_people
 		icon = GFX_goal_AUT_a_moral_people
-		prerequisite = { focus = AUT_promote_catholic_social_teaching }
+		prerequisite = { focus = AUT_oesterreichische_ehe }
 		prerequisite = { focus = AUT_catholic_education }
-		x = 11
+		prerequisite = { focus = AUT_catholic_nationalism}
+		x = 12
 		y = 5
 		cost = 5
 		ai_will_do = {
@@ -745,7 +1573,9 @@ focus_tree = {
 		id = AUT_austrian_identity
 		icon = GFX_goal_AUT_Identity
 		prerequisite = { focus = AUT_unite_the_youth_movements }
-		x = 16
+		prerequisite = { focus = AUT_revise_the_concordat }
+
+		x = 13
 		y = 3
 		cost = 6
 		ai_will_do = {
@@ -765,9 +1595,9 @@ focus_tree = {
 	focus = {
 		id = AUT_catholic_nationalism
 		icon = GFX_goal_AUT_catholic_nationalism
-		prerequisite = { focus = AUT_extol_dollfuss_faith }
+		
 		prerequisite = { focus = AUT_austrian_identity }
-		x = 15
+		x = 13
 		y = 4
 		cost = 6
 		ai_will_do = {
@@ -792,6 +1622,8 @@ focus_tree = {
 		icon = GFX_goal_AUT_lead_by_example
 		prerequisite = { focus = AUT_catholic_nationalism }
 		prerequisite = { focus = AUT_catholic_education }
+		prerequisite = { focus = AUT_oesterreichische_ehe}
+
 		x = 14
 		y = 5
 		cost = 5
@@ -818,7 +1650,7 @@ focus_tree = {
 		icon = GFX_goal_AUT_moral_government
 		prerequisite = { focus = AUT_a_moral_people }
 		prerequisite = { focus = AUT_lead_by_example }
-		x = 12
+		x = 13
 		y = 6
 		cost = 6
 		ai_will_do = {
@@ -845,7 +1677,7 @@ focus_tree = {
 		prerequisite = { focus = AUT_a_moral_government }
 		prerequisite = { focus = AUT_austrian_miracle }
 		x = 8
-		y = 7
+		y = 9
 		cost = 5
 		ai_will_do = {
 			factor = 100

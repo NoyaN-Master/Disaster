@@ -547,9 +547,8 @@ country_event = { #Jewish youth groups
 	option = {
 		name = aut.12.a 
 		add_political_power = -55
-		add_stability = -0.02
+		add_stability = -0.03
 		add_manpower = 1452
-		add_war_support = 0.03
 		add_popularity = {
 			ideology = ultranationalist
 			popularity = 0.02
@@ -558,6 +557,8 @@ country_event = { #Jewish youth groups
 	
 	option = {
 	    name = aut.12.b
+		add_political_power = 50
+		add_stability = 0.03
 	}
 }
 
@@ -645,6 +646,9 @@ country_event = { #Manlet moment
 		}
 	}
 }
+
+
+
 
 country_event = { #State of Emergency
 	id = aut.15
@@ -2605,36 +2609,17 @@ country_event = { #klahr loses
 		set_country_flag = AUT_klahr_lost
 	}
 }
-
 country_event = { #new constitution
 	id = aut.77
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.77" }
 	title = aut.77.t
-	desc = 
-	    if = {
-	        limit = has_country_flag = AUT_klahr_won
-			aut.77.d.commie
-		}
-		else_if = {
-		    limit = has_country_flag = AUT_klahr_lost
-			aut.77.d.socdem
-		}
-		    
-
+	desc = aut.77.d
 	fire_only_once = yes
 
 	is_triggered_only = yes
 	
 	option = { 
 		name = aut.77.a 
-		if = {
-	        limit = has_country_flag = AUT_klahr_won
-			add_ideas = AUT_commie_constitution
-		}
-		else_if = {
-		    limit = has_country_flag = AUT_klahr_lost
-			add_ideas = AUT_republican_constitution
-		}
 	}
 }
 
@@ -2718,7 +2703,116 @@ country_event = { #renner's elections
 		}
 	}
 }
+country_event = { #paramilitary fuss
+    id = aut.79
+    title = aut.79.t
+    desc = aut.79.d
+    trigger = {
+        has_completed_focus = AUT_paramilitary_fuss
+    }
+    picture = GFX_report_event_aut_dollfuss_speech
 
+    fire_only_once = yes
 
+    is_triggered_only = yes
 
+    option = {
+        name = aut.79.a 
+        set_country_flag = AUT_side_with_heimwehr_option
+        add_popularity = {
+            ideology = ultranationalist
+            popularity = 0.03
+            }
+            hidden_effect = {
+            create_field_marshal = {
+                name = "Ernst Rudiger Starhemberg"
+                picture = "AUT_Ernst_Rudiger_Stahremberg.tga"
+                traits = 
+                {     oberkommando_der_heimwehr
+                    infantry_leader
+                    infantry_officer
+                    infantry_expert
+                    politically_connected
+                    hill_fighter
+                    ranger
+                    organizer
+                    thorough_planner
+                    fortress_buster
+                 }
+                skill = 7
+                attack_skill = 6
+                defense_skill = 4
+                planning_skill = 5
+                logistics_skill = 5
+            }    
+        }
+    }
+
+    option = {
+            name = aut.79.b 
+            set_country_flag = AUT_side_with_sturmkorps_option
+            add_popularity = {
+                ideology = revolutionary_nationalist
+                popularity = 0.05
+            }
+            hidden_effect = {
+            create_field_marshal = {
+                    name = "Arthur Seyss Inquart"
+                picture = "AUT_Arthur_Seyss_Inquart.tga"
+                traits = 
+                {     sturmkorps_reichsfuehrer 
+                    armor_officer
+                    panzer_leader
+                    panzer_expert
+                    organizer
+                    commando
+                    charismatic
+                    fast_planner
+                    offensive_doctrine
+                    guerilla_fighter
+                }
+                skill = 5
+                attack_skill = 6
+                defense_skill = 2
+                planning_skill = 5
+                logistics_skill = 3
+            }    
+        }        
+    }
+
+    option = {
+        name = aut.79.c 
+        set_country_flag = AUT_side_with_sturmscharen_option
+        add_popularity = {
+            ideology = ultranationalist
+            popularity = 0.05
+        }
+        hidden_effect = {
+        create_field_marshal = {
+                name = "Archbishop Theodor Innitzer"
+                picture = "AUT_Archbishop_Theodor_Innitzer.tga"
+                traits = 
+                {   komtur_des_deutschritterordens
+                    infantry_leader
+                    cavalry_leader
+                    panzer_leader
+                    politically_connected
+                    charismatic
+                    offensive_doctrine
+                    aggressive_assaulter
+                    combined_arms_expert
+                    trickster
+                    commando
+                    skirmisher
+                    }
+                skill = 4
+                attack_skill = 5
+                defense_skill = 3
+                planning_skill = 4
+                logistics_skill = 4
+        
+            }    
+        }    
+    }
+}
 

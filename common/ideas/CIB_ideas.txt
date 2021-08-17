@@ -29,8 +29,8 @@ CIB_Zombie = {
 			has_country_flag = Roatta_Warlord	
 			}		
 			}
-			targeted_modifier = { tag = ARM attack_bonus_against = 0.3 }
-			targeted_modifier = { tag = ARM defense_bonus_against = 0.3 }
+			targeted_modifier = { tag = ARM attack_bonus_against = 0.05 }
+			targeted_modifier = { tag = ARM defense_bonus_against = 0.05 }
 		}
 CIB_OrduVatan = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
@@ -49,7 +49,7 @@ CIB_OrduVatan = {
 			consumer_goods_factor = -0.20
 			command_power_gain = 0.01
 			no_supply_grace = 72
-			war_support_weekly = 0.05
+			war_support_weekly = 0.02
 			conscription = -0.10
 			}
 		}
@@ -101,8 +101,8 @@ CIB_Enver_Idea = {
 			targeted_modifier = { tag = WRF attack_bonus_against = 0.1 }
 			targeted_modifier = { tag = ANT attack_bonus_against = 0.1 }
 			targeted_modifier = { tag = THR attack_bonus_against = 0.1 }
-			targeted_modifier = { tag = KUR attack_bonus_against = 0.3 }
-			targeted_modifier = { tag = HJZ attack_bonus_against = 0.3 }
+			targeted_modifier = { tag = KUR attack_bonus_against = 0.1 }
+			targeted_modifier = { tag = HJZ attack_bonus_against = 0.1 }
 		}			
 samet_admin_1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
@@ -203,7 +203,6 @@ CIB_Back_In_Black = {
 			modifier = {
 			army_attack_factor = 0.05
 			army_defence_factor = 0.05	
-			stability_weekly = 0.005
 			political_power_gain = 0.10
 			stability_factor = 0.25
 			war_support_factor = 0.15

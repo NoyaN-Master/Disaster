@@ -1,0 +1,199 @@
+neworder_wrf_collapse = {
+GRE = {
+transfer_state = 341
+transfer_state = 187
+transfer_state = 183
+}
+CRW = {
+transfer_state = 797    
+set_cosmetic_tag = CRW_JFK
+load_focus_tree = generic_focus
+    set_politics = {
+	ruling_party = liberal
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+    }
+    add_popularity = {
+    ideology = liberal
+    popularity = 1
+    }
+    create_country_leader = {
+	name = "John F Kennedy"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "CRW_JFK.png"
+	expire = "1965.1.1"
+	ideology = liberal_subideology
+	traits = {
+		
+	}
+}
+set_country_flag = Roatta_Warlord    
+}
+IZM = {
+transfer_state = 347
+set_cosmetic_tag = IZM_madan2
+load_focus_tree = generic_focus
+ set_politics = {
+	ruling_party = autocratic
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+    }
+    add_popularity = {
+    ideology = autocratic
+    popularity = 1
+    }
+    create_country_leader = {
+	name = "Cemal Madanoğlu"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "IZM_Madan.tga"
+	expire = "1965.1.1"
+	ideology = kemalism_auth
+	traits = {
+		
+	}
+}
+set_country_flag = Roatta_Warlord       
+}
+ANK = {
+		transfer_state = 834
+        load_focus_tree = generic_focus
+		transfer_state = 339
+        transfer_state = 342
+        transfer_state = 340
+		add_state_core = 339
+		add_state_core = 834
+		set_cosmetic_tag = ANK_smyrna_revolt
+		set_politics = {
+		ruling_party = revolutionary_nationalist
+		}
+		add_popularity = {
+    	ideology = revolutionary_nationalist
+   		popularity = 1
+		}
+		create_country_leader = {
+	    name = "Mahmut Esat Bozkurt"
+	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	    picture = "ANK_Esat.png"
+	    expire = "1965.1.1"
+	    ideology = blackpin_kemalism
+	    traits = {	
+	    }
+        }
+        set_country_flag = Roatta_Warlord
+		}
+        
+CIB = {
+    load_focus_tree = generic_focus
+    set_cosmetic_tag = ESO_Roatta
+    transfer_state = 343
+    transfer_state = 346
+    transfer_state = 49
+    add_state_core = 343
+    add_state_core = 49
+    create_country_leader = {
+	name = "Nihal Atsız"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "CIB_Atsiz.tga"
+	expire = "1965.1.1"
+	ideology = revolutionary_nationalist_subideology
+	traits = {
+		
+	}
+ white_peace = ARM
+}
+set_country_flag = Roatta_Warlord
+}
+
+KLG = {
+set_cosmetic_tag = KLG_Roatta_Tag    
+transfer_state = 355
+add_state_core = 355
+transfer_state = 354
+add_state_core = 354
+load_focus_tree = generic_focus
+set_country_flag = Roatta_Warlord
+}
+ARM = {
+set_cosmetic_tag = ARM_Uprising
+        set_politics = {
+	    ruling_party = revolutionary_nationalist
+        elections_allowed = no
+        }
+        add_popularity = {
+        ideology = revolutionary_nationalist
+        popularity = 1.0
+        }    
+transfer_state = 230
+transfer_state = 800
+transfer_state = 835
+transfer_state = 353    
+}
+ADN = {
+set_cosmetic_tag = turkes_adana    
+transfer_state = 344
+transfer_state = 345
+transfer_state = 348
+load_focus_tree = generic_focus
+ set_politics = {
+	ruling_party = ultranationalist
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+    }
+    add_popularity = {
+    ideology = ultranationalist
+    popularity = 1
+    }
+    create_country_leader = {
+	name = "Alparslan Türkeş"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "WRF_Turkes.tga"
+	expire = "1965.1.1"
+	ideology = ultranationalist_subideology
+	traits = {
+		
+	}
+}
+set_country_flag = Roatta_Warlord          
+}
+TRA = {
+  set_cosmetic_tag = turkish_socarmy  
+ transfer_state = 356
+transfer_state = 839
+transfer_state = 798
+transfer_state = 349
+create_country_leader = {
+	name = "Mustafa Suphi"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "TRA_Suphi.png"
+	expire = "1965.1.1"
+	ideology = authoritarian_socialist_subideology
+	traits = {
+		
+	}     
+}
+}
+AZR = {
+transfer_state = 229
+add_popularity = {
+    ideology = conservative
+    popularity = 1
+    }
+    create_country_leader = {
+	name = "Enver Paşayev"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "CIB_Enver_Blessed.tga"
+	expire = "1965.1.1"
+	ideology = conservative_subideology
+	traits = {
+		
+	}   
+}
+}
+KUR = {
+transfer_state = 350
+transfer_state = 352    
+}
+}

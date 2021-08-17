@@ -148,7 +148,7 @@ Atsiz_KorpsDeath_Eurasia = {
 			conscription = 0.07
 			army_leader_start_attack_level = 1 
 			army_attack_factor = 0.20
-			no_supply_grace = 69
+			no_supply_grace = 20
 			experience_gain_army = 0.3
 			stability_weekly = -0.0010
 			acclimatization_cold_climate_gain_factor = 0.5
@@ -175,15 +175,15 @@ atsiz_fucksarabs = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
 			picture = CRW_Independent_City
 			modifier = {
-			targeted_modifier = { tag = ARM attack_bonus_against = 0.15 }
-			targeted_modifier = { tag = ARM defense_bonus_against = 0.1 }
+			targeted_modifier = { tag = ARM attack_bonus_against = 0.05 }
+			targeted_modifier = { tag = ARM defense_bonus_against = 0.05 }
 			}
 		}		
 Atsiz_Drugs = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
 			picture = NGU_Academy
 			modifier = {
-			army_speed_factor = 0.25
+			army_speed_factor = 0.05
 			}
 		}															
 Atsiz_Enverist_Influence = {
@@ -201,7 +201,7 @@ Atsiz_Strong_Milita = {
 			modifier = {
 			political_power_gain = 0.010
 			war_support_factor = 0.10
-			stability_weekly = 0.005
+			stability_weekly = 0.001
 			stability_factor = 0.10
 			}
 		}
@@ -212,16 +212,16 @@ Atsiz_Minority_Labor = {
 			modifier = {
 			production_speed_buildings_factor = 0.3
 			production_factory_start_efficiency_factor = 0.3
-			consumer_goods_factor = -0.1
-			stability_factor = -0.10
+			consumer_goods_factor = -0.05
+			stability_factor = -0.30
 			}
 		}
 Atsiz_Fast_Society = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
 			picture = auth_state_idea
 			modifier = {
-			production_speed_buildings_factor = 0.3
-			army_speed_factor = 0.10
+			production_speed_buildings_factor = 0.04
+			army_speed_factor = 0.02
 			stability_factor = -0.05
 			}
 		}
@@ -229,7 +229,6 @@ Atsiz_Wolfic_Society = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
 			picture = NGU_Blood
 			modifier = {
-			consumer_goods_factor = -0.1
 			stability_factor = 0.10
 			}
 		}
@@ -237,10 +236,10 @@ Atsiz_Wolfic_Society_Fear = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea WRF_Tekalif_Vatan" }
 			picture = NGU_Blood
 			modifier = {
-			consumer_goods_factor = -0.2
+			consumer_goods_factor = 0.03
 			stability_factor = 0.05
-			production_speed_buildings_factor = 0.1
-			production_factory_start_efficiency_factor = 0.1
+			production_speed_buildings_factor = 0.03
+			production_factory_start_efficiency_factor = 0.03
 			war_support_factor = 0.10
 			}
 		}

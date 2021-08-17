@@ -331,6 +331,7 @@ GER_unification_decisions = {
 
 
      GER_integrate1 = {
+		cost = 40
           visible = {
 		  	owns_state = 28
 			28 = { NOT = { is_core_of = ROOT } }
@@ -355,6 +356,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate2 = {
+	cost = 40
           visible = {
 		  	owns_state = 8
 			8 = { NOT = { is_core_of = ROOT } }
@@ -379,6 +381,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate3 = {
+	 cost = 40
           visible = {
 		  	owns_state = 51
 			51 = { NOT = { is_core_of = ROOT } }
@@ -403,6 +406,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate4 = {
+	 cost = 40
           visible = {
 		  	owns_state = 42
 			42 = { NOT = { is_core_of = ROOT } }
@@ -427,6 +431,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate5 = {
+	 cost = 40
           visible = {
 		  	owns_state = 825
 			825 = { NOT = { is_core_of = ROOT } }
@@ -451,6 +456,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate6 = {
+	 cost = 40
           visible = {
 		  	owns_state = 57
 			57 = { NOT = { is_core_of = ROOT } }
@@ -475,6 +481,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate7 = {
+	 cost = 40
           visible = {
 		  	owns_state = 56
 			56 = { NOT = { is_core_of = ROOT } }
@@ -499,6 +506,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate8 = {
+	 cost = 40
           visible = {
 		  	owns_state = 59
 			59 = { NOT = { is_core_of = ROOT } }
@@ -523,6 +531,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate9 = {
+	 cost = 40
           visible = {
 		  	owns_state = 55
 			55 = { NOT = { is_core_of = ROOT } }
@@ -547,6 +556,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate10 = {
+	 cost = 40
           visible = {
 		  	owns_state = 819
 			819 = { NOT = { is_core_of = ROOT } }
@@ -571,6 +581,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate11 = {
+	 cost = 40
           visible = {
 		  	owns_state = 50
 			50 = { NOT = { is_core_of = ROOT } }
@@ -595,6 +606,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate12 = {
+	 cost = 40
           visible = {
 		  	owns_state = 54
 			54 = { NOT = { is_core_of = ROOT } }
@@ -619,6 +631,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate13 = {
+	 cost = 40
           visible = {
 		  	owns_state = 52
 			52 = { NOT = { is_core_of = ROOT } }
@@ -643,6 +656,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate14 = {
+	 cost = 40
           visible = {
 		  	owns_state = 53
 			53 = { NOT = { is_core_of = ROOT } }
@@ -667,6 +681,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate15 = {
+	 cost = 40
           visible = {
 		  	owns_state = 60
 			60 = { NOT = { is_core_of = ROOT } }
@@ -691,6 +706,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate16 = {
+	 cost = 40
           visible = {
 		  	owns_state = 65
 			65 = { NOT = { is_core_of = ROOT } }
@@ -715,6 +731,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate17 = {
+	 cost = 40
           visible = {
 		  	owns_state = 826
 			826 = { NOT = { is_core_of = ROOT } }
@@ -739,6 +756,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate18 = {
+	 cost = 40
           visible = {
 		  	owns_state = 58
 			58 = { NOT = { is_core_of = ROOT } }
@@ -763,6 +781,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate19 = {
+	 cost = 40
           visible = {
 		  	owns_state = 61
 			61 = { NOT = { is_core_of = ROOT } }
@@ -787,6 +806,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate20 = {
+	 cost = 40
           visible = {
 		  	owns_state = 64
 			64 = { NOT = { is_core_of = ROOT } }
@@ -811,6 +831,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate21 = {
+	 cost = 40
           visible = {
 		  	owns_state = 62
 			62 = { NOT = { is_core_of = ROOT } }
@@ -835,6 +856,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate22 = {
+	 cost = 40
           visible = {
 		  	owns_state = 63
 			63 = { NOT = { is_core_of = ROOT } }
@@ -859,6 +881,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate23 = {
+	 cost = 40
           visible = {
 		  	owns_state = 68
 			68 = { NOT = { is_core_of = ROOT } }
@@ -883,6 +906,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate24 = {
+	 cost = 40
           visible = {
 		  	owns_state = 66
 			66 = { NOT = { is_core_of = ROOT } }
@@ -907,6 +931,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate25 = {
+	 cost = 40
           visible = {
 		  	owns_state = 67
 			67 = { NOT = { is_core_of = ROOT } }
@@ -931,6 +956,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate26 = {
+	 cost = 40
           visible = {
 		  	owns_state = 5
 			5 = { NOT = { is_core_of = ROOT } }
@@ -955,6 +981,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate27 = {
+	 cost = 40
           visible = {
 		  	owns_state = 763
 			763 = { NOT = { is_core_of = ROOT } }
@@ -979,6 +1006,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate28 = {
+	 cost = 40
           visible = {
 		  	owns_state = 188
 			188 = { NOT = { is_core_of = ROOT } }
@@ -1003,6 +1031,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate29 = {
+	 cost = 40
           visible = {
 		  	owns_state = 809
 			809 = { NOT = { is_core_of = ROOT } }
@@ -1027,6 +1056,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate30 = {
+	 cost = 40
           visible = {
 		  	owns_state = 85
 			85 = { NOT = { is_core_of = ROOT } }
@@ -1051,6 +1081,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate31 = {
+	 cost = 40
           visible = {
 		  	owns_state = 86
 			86 = { NOT = { is_core_of = ROOT } }
@@ -1075,6 +1106,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate32 = {
+	 cost = 40
           visible = {
 		  	owns_state = 762
 			762 = { NOT = { is_core_of = ROOT } }
@@ -1099,6 +1131,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate33 = {
+	 cost = 40
           visible = {
 		  	owns_state = 74
 			74 = { NOT = { is_core_of = ROOT } }
@@ -1123,6 +1156,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate34 = {
+	 cost = 40
           visible = {
 		  	owns_state = 69
 			69 = { NOT = { is_core_of = ROOT } }
@@ -1147,6 +1181,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate35 = {
+	 cost = 40
           visible = {
 		  	owns_state = 152
 			152 = { NOT = { is_core_of = ROOT } }
@@ -1171,6 +1206,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate36 = {
+	 cost = 40
           visible = {
 		  	owns_state = 4
 			4 = { NOT = { is_core_of = ROOT } }
@@ -1195,6 +1231,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate37 = {
+	 cost = 40
           visible = {
 		  	owns_state = 813
 			813 = { NOT = { is_core_of = ROOT } }
@@ -1219,6 +1256,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate38 = {
+	 cost = 40
           visible = {
 		  	owns_state = 153
 			153 = { NOT = { is_core_of = ROOT } }
@@ -1243,6 +1281,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate39 = {
+	 cost = 40
           visible = {
 		  	owns_state = 39
 			39 = { NOT = { is_core_of = ROOT } }
@@ -1267,6 +1306,7 @@ GER_unification_decisions = {
 		}
      }
      GER_integrate40 = {
+	 cost = 40
           visible = {
 		  	owns_state = 811
 			811 = { NOT = { is_core_of = ROOT } }
@@ -1280,6 +1320,81 @@ GER_unification_decisions = {
           }
 		highlight_state_targets = {
 			state = 811
+		}
+          modifier = {
+			civilian_factory_use = 2
+			stability_weekly = -0.001
+			war_support_weekly = -0.001
+          }
+	         ai_will_do = {
+			factor = 1000
+		}		  
+     }
+     GER_integrate41 = {
+	 cost = 40
+          visible = {
+		  	owns_state = 881 
+			881  = { NOT = { is_core_of = ROOT } }
+          }
+          days_remove = 40
+          available = {
+			owns_state = 881 
+          }
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
+			881  = { add_core_of = ROOT }
+          }
+		highlight_state_targets = {
+			state = 881 
+		}
+          modifier = {
+			civilian_factory_use = 2
+			stability_weekly = -0.001
+			war_support_weekly = -0.001
+          }
+	         ai_will_do = {
+			factor = 1000
+		}		  
+     }
+     GER_integrate42 = {
+	 cost = 40
+          visible = {
+		  	owns_state = 882 
+			882  = { NOT = { is_core_of = ROOT } }
+          }
+          days_remove = 40
+          available = {
+			owns_state = 882 
+          }
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
+			882  = { add_core_of = ROOT }
+          }
+		highlight_state_targets = {
+			state = 882 
+		}
+          modifier = {
+			civilian_factory_use = 2
+			stability_weekly = -0.001
+			war_support_weekly = -0.001
+          }
+	         ai_will_do = {
+			factor = 1000
+		}		  
+     }
+     GER_integrate43 = {
+	 cost = 40
+          visible = {
+		  	owns_state = 883 
+			883  = { NOT = { is_core_of = ROOT } }
+          }
+          days_remove = 40
+          available = {
+			owns_state = 883 
+          }
+          remove_effect = { add_to_variable = { var = german_states value = 1 }
+			883  = { add_core_of = ROOT }
+          }
+		highlight_state_targets = {
+			state = 883 
 		}
           modifier = {
 			civilian_factory_use = 2

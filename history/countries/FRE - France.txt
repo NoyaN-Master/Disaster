@@ -134,9 +134,10 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
-add_ideas = 	authoritarian_state 
-add_ideas = 	interventionism 
-add_ideas = 	post_industrialized_society
+add_ideas = multi_party_democracy  
+add_ideas = interventionism 
+add_ideas = post_industrialized_society
+add_ideas = limited_conscription 
 
 set_popularities = {
 	conservative = 13
