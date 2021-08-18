@@ -768,6 +768,39 @@ country_event = { #The Blackarrow Revolt
 		complete_national_focus = WRF_Election_Day
 		complete_national_focus = WRF_CHP_Victory
 	}
+
+
+	option = {
+		name = tur.24.c
+		ai_chance = { factor = 80 }
+		add_stability = -0.40
+		ANK = {
+		transfer_state = 834
+		transfer_state = 339
+		add_state_core = 339
+		add_state_core = 834
+		set_cosmetic_tag = ANK_smyrna_revolt
+		set_politics = {
+		ruling_party = revolutionary_nationalist
+		}
+		add_popularity = {
+    	ideology = revolutionary_nationalist
+   		popularity = 1
+		}
+		create_country_leader = {
+	    name = "Mahmut Esat Bozkurt"
+	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	    picture = "ANK_Esat.png"
+	    expire = "1965.1.1"
+	    ideology = blackpin_kemalism
+	    traits = {	
+	    }
+        }
+		load_oob = smyrnaoob
+		ANK = { change_tag_from = WRF }
+		add_ideas = ANK_Revolt
+		}
+	}
 }
 
 country_event = { #The Blackarrow Manifesto
@@ -803,6 +836,7 @@ country_event = { #The Blackarrow Manifesto
 		}
 		complete_national_focus = WRF_Wolf_Vic
 		add_ideas = WRF_Kemalist_Anger
+		add_ideas = WRF_klg_hog
 	}
 
 	option = { #elect BlueKemal
@@ -826,6 +860,7 @@ country_event = { #The Blackarrow Manifesto
 		}
 		complete_national_focus = WRF_BlueKemal_Vic
 		add_ideas = WRF_Kemalist_Anger
+		add_ideas = WRF_ismet_inonu_hog
 	}
 
 	option = { #elect Red
@@ -849,6 +884,7 @@ country_event = { #The Blackarrow Manifesto
 		}
 		complete_national_focus = WRF_Soc_Vic
 		add_ideas = WRF_Kemalist_Anger
+		add_ideas = IZM_nazim_hog
 	}
 
 	option = { #elect Adnan
@@ -872,5 +908,6 @@ country_event = { #The Blackarrow Manifesto
 		}
 		complete_national_focus = WRF_Adnan_vic
 		add_ideas = WRF_Kemalist_Anger
+		add_ideas = CLP_abdulmecid_hog
 	}
 }
