@@ -1,0 +1,52 @@
+##############
+# Armenia
+##############
+ideas = {
+	country = {
+
+                PAC_Uncertain_Future = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAC_Uncertain_Future"}
+			picture = PAC_Uncertain_Future
+			modifier = {
+                              political_power_gain = -0.2
+			      stability_factor = -0.05
+                              monthly_population = -0.05
+			}
+		}
+	
+                PAC_Shattering_their_Idols = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAC_Shattering_their_Idols"}
+			picture = PAC_Shattering_their_Idols
+			modifier = {
+                              political_power_gain = -0.4
+			      stability_factor = -0.3
+                              local_manpower = -0.35
+			}
+		}
+
+                PAC_Hopes_for_Utopia = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAC_Hopes_for_Utopia"}
+			picture = PAC_Hopes_for_Utopia
+			modifier = {
+                              consumer_goods_factor = -0.15
+			      stability_factor = 0.2
+                              non_core_manpower = 0.08
+                              local_resources	= 0.04
+			}
+		}
+
+                PAC_Mandate_Economy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAC_Mandate_Economy"}
+			picture = PAC_Mandate_Economy
+			modifier = {
+                              min_export = 0.6
+                              production_speed_buildings_factor = 0.15
+                              consumer_goods_factor = 0.25
+                              production_factory_efficiency_gain_factor = 0.1
+			      production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
+	}
+
+}	

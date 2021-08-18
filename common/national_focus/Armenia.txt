@@ -1,0 +1,878 @@
+focus_tree = {
+	id = DRL_Armenia
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ARM
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 420 y = 1300 }
+
+	### Libertaion Tree ###
+	focus = {
+		id = ARM_Damadians_Folly
+		icon = GFX_goal_ARM_Damadians_Folly
+		x = 4
+		y = 0
+		cost = 0.2
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ARM_Damadians_Folly"
+                        country_event = drlarm.1
+		}
+	}
+
+        focus = {
+		id = ARM_Nzhdehs_Commandos
+		icon = GFX_goal_ARM_Nzhdehs_Commandos
+                prerequisite = {
+			focus = ARM_Damadians_Folly
+		}
+                relative_position_id = ARM_Damadians_Folly
+		x = -2
+		y = 1
+		cost = 0.8
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ARM_Nzhdehs_Commandos"
+                        random_owned_state = {
+                        create_unit = {
+                        division = "name = \"Nzhdeh's Commandos\" division_template = \"Armenian Infantry\" start_experience_factor = 0.5 start_equipment_factor = 1.0" 
+			owner = ARM
+                        }
+                        create_unit = {
+                        division = "name = \"Nzhdeh's Commandos\" division_template = \"Armenian Infantry\" start_experience_factor = 0.5 start_equipment_factor = 1.0" 
+			owner = ARM
+                        }
+                        create_unit = {
+                        division = "name = \"Nzhdeh's Commandos\" division_template = \"Armenian Infantry\" start_experience_factor = 0.5 start_equipment_factor = 1.0" 
+			owner = ARM
+                        }
+                        create_unit = {
+                        division = "name = \"Nzhdeh's Commandos\" division_template = \"Armenian Infantry\" start_experience_factor = 0.5 start_equipment_factor = 1.0" 
+			owner = ARM
+                        }
+                        create_unit = {
+                        division = "name = \"Nzhdeh's Commandos\" division_template = \"Armenian Militias\" start_experience_factor = 0.5 start_equipment_factor = 1.0" 
+			owner = ARM
+                        }
+                        create_unit = {
+                        division = "name = \"Nzhdeh's Commandos\" division_template = \"Armenian Militias\" start_experience_factor = 0.5 start_equipment_factor = 1.0" 
+			owner = ARM
+                        }
+                        }
+		}
+	}
+
+         focus = {
+		id = ARM_Beat_Back_the_Maniacs
+		icon = GFX_goal_ARM_Beat_Back_the_Maniacs
+                prerequisite = {
+			focus = ARM_Damadians_Folly
+		}
+                relative_position_id = ARM_Damadians_Folly
+		x = 0
+		y = 1
+		cost = 0.8
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ARM_Beat_Back_the_Maniacs"
+                        swap_ideas = {
+			      remove_idea = ARM_Struggle_for_Existence
+			      add_idea = ARM_Struggle_for_Existence_2
+			}
+                        hidden_effect = {
+                           CIB = {
+                             disband_twenty_percent_units = yes
+			     disband_twenty_percent_units = yes
+                             disband_twenty_percent_units = yes
+                             disband_twenty_percent_units = yes
+                           }
+                        }
+		}
+	}
+
+        focus = {
+		id = ARM_Return_of_the_Exiles
+		icon = GFX_goal_ARM_Return_of_the_Exiles
+                prerequisite = {
+			focus = ARM_Damadians_Folly
+		}
+                relative_position_id = ARM_Damadians_Folly
+		x = 2
+		y = 1
+		cost = 0.8
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ARM_Return_of_the_Exiles"
+                        add_manpower = 28000
+		        add_equipment_to_stockpile = {
+    	                      type = support_equipment_1
+   		              amount = 5000
+    	                      producer = ARM
+		        }
+                        add_equipment_to_stockpile = {
+    	                      type = infantry_equipment_1
+   		              amount = 10000
+    	                      producer = ARM
+		        }
+                        add_research_slot = 1
+		}
+	}
+
+        focus = {
+		id = ARM_Hayastan_Lives
+		icon = GFX_goal_ARM_Hayastan_Lives
+                available = {
+			has_war = no
+                        NOT = { country_exists = CIB }
+		}
+                prerequisite = {
+			focus = ARM_Nzhdehs_Commandos
+		}
+                prerequisite = {
+                        focus = ARM_Beat_Back_the_Maniacs
+		}
+                prerequisite = {
+                        focus = ARM_Return_of_the_Exiles
+		}
+                relative_position_id = ARM_Damadians_Folly
+		x = 0
+		y = 2
+		cost = 1.5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ARM_Hayastan_Lives"
+                        swap_ideas = {
+                        remove_idea = ARM_Struggle_for_Existence_2
+                        add_idea = ARM_Building_our_Future
+                        }
+		}
+	}
+
+        focus = {
+		id = ARM_Avenge_Nagorno_Karabakh
+		icon = GFX_goal_ARM_Avenge_Nagorno_Karabakh
+                available = {
+			has_war = no
+		}
+                prerequisite = {
+			focus = ARM_Hayastan_Lives
+		}
+                relative_position_id = ARM_Hayastan_Lives
+		x = -3
+		y = 1
+		cost = 2.3
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ARM_Avenge_Nagorno_Karabakh"
+                        add_ideas = ARM_Artaxid_Battalion
+                        declare_war_on = {
+                            target = AZR
+                            type = annex_everything
+                        }
+		}
+	}
+
+        focus = {
+		id = ARM_Secure_the_Eastern_Flank
+		icon = GFX_goal_ARM_Secure_the_Eastern_Flank
+                available = {
+                        ROOT = { owns_state = 229 }
+		}
+                prerequisite = {
+			focus = ARM_Avenge_Nagorno_Karabakh
+		}
+                relative_position_id = ARM_Avenge_Nagorno_Karabakh
+		x = -1
+		y = 1
+		cost = 2.9
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ARM_Secure_the_Eastern_Flank"
+                        country_event = drlarm.2
+		}
+	}
+
+        focus = {
+		id = ARM_Guardians_of_the_Kurds
+		icon = GFX_goal_ARM_Guardians_of_the_Kurds
+                available = {
+			has_war = no
+		}
+                prerequisite = {
+			focus = ARM_Avenge_Nagorno_Karabakh
+		}
+                relative_position_id = ARM_Avenge_Nagorno_Karabakh
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ARM_Guardians_of_the_Kurds"
+                        ROOT = {
+				transfer_state = 350
+                                transfer_state = 352
+				add_state_core = 350
+                                add_state_core = 352
+			}
+		}
+	}
+
+        focus = {
+		id = ARM_Rebuild_with_the_Newfound_Profits
+		icon = GFX_goal_ARM_Rebuild_with_the_Newfound_Profits
+                available = {
+			ROOT = { owns_state = 229 }
+		}
+                prerequisite = {
+			focus = ARM_Secure_the_Eastern_Flank
+		}
+                prerequisite = {
+			focus = ARM_Guardians_of_the_Kurds
+		}
+                relative_position_id = ARM_Avenge_Nagorno_Karabakh
+		x = 0
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ARM_Rebuild_with_the_Newfound_Profits"
+                        229 = {
+				add_resource = {
+					type = oil
+					amount = 20
+				}
+			}
+                        229 = {
+                          add_extra_state_shared_building_slots = 2
+		          add_building_construction = {
+		          type = infrastructure
+	                  level = 2
+                          instant_build = yes
+		          }
+	                }
+                        229 = {
+		          add_building_construction = {
+		          type = industrial_complex
+	                  level = 1
+                          instant_build = yes
+		          }
+	                }
+                        add_research_slot = 1
+		}
+	}
+
+        focus = {
+		id = ARM_Lusignan_Delivers
+		icon = GFX_goal_ARM_Lusignan_Delivers
+                prerequisite = {
+			focus = ARM_Hayastan_Lives
+		}
+                relative_position_id = ARM_Hayastan_Lives
+		x = 0
+		y = 1
+		cost = 1.8
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ARM_Lusignan_Delivers"
+                        country_event = drlarm.3
+		}
+	}
+
+        focus = {
+		id = ARM_Cilician_Promise
+		icon = GFX_goal_ARM_Cilician_Promise
+                available = {
+			has_war = no
+		}
+                prerequisite = {
+			focus = ARM_Lusignan_Delivers
+		}
+                relative_position_id = ARM_Lusignan_Delivers
+		x = 0
+		y = 1
+		cost = 3.8
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ARM_Cilician_Promise"
+                        ROOT = {
+				transfer_state = 344
+				add_state_core = 344
+			}
+		}
+	}
+
+        focus = {
+		id = ARM_Neo_Crusaders_Zeal
+		icon = GFX_goal_ARM_Neo_Crusaders_Zeal
+                available = {
+			has_war = no
+		}
+                prerequisite = {
+			focus = ARM_Cilician_Promise
+		}
+                relative_position_id = ARM_Cilician_Promise
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ARM_Neo_Crusaders_Zeal"
+                        swap_ideas = {
+		          remove_idea = ARM_Armenian_Legion
+		          add_idea = ARM_Lusignan_Legion
+	                }
+                        declare_war_on = {
+                            target = CLP
+                            type = annex_everything
+                        }
+                        ROOT = {
+				add_state_core = 349
+				add_state_core = 348
+			}
+                        hidden_effect = {
+                        WRF = { transfer_state = 346 }
+                        }
+		}
+	}
+
+        focus = {
+		id = ARM_The_Darkest_Pit_of_Hell
+		icon = GFX_goal_ARM_The_Darkest_Pit_of_Hell
+                available = {
+			ROOT = { owns_state = 354 }
+		}
+                prerequisite = {
+			focus = ARM_Hayastan_Lives
+		}
+                relative_position_id = ARM_Hayastan_Lives
+		x = 3
+		y = 1
+		cost = 1.2
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ARM_The_Darkest_Pit_of_Hell"
+                        country_event = drlarm.4
+		}
+	}
+
+        focus = {
+		id = ARM_Righteous_Vengeance
+		icon = GFX_goal_ARM_Righteous_Vengeance
+                available = {
+			ROOT = { owns_state = 354 }
+		}
+                prerequisite = {
+			focus = ARM_The_Darkest_Pit_of_Hell
+		}
+                relative_position_id = ARM_The_Darkest_Pit_of_Hell
+		x = -1
+		y = 1
+		cost = 2.5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ARM_Righteous_Vengeance"
+                        country_event = drlarm.5
+		}
+	}
+
+        focus = {
+		id = ARM_Protect_the_Common_Folk
+		icon = GFX_goal_ARM_Protect_the_Common_Folk
+                available = {
+			ROOT = { owns_state = 354 }
+		}
+                prerequisite = {
+			focus = ARM_The_Darkest_Pit_of_Hell
+		}
+                relative_position_id = ARM_The_Darkest_Pit_of_Hell
+		x = 1
+		y = 1
+		cost = 3.4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ARM_Protect_the_Common_Folk"
+                        ROOT = {
+				add_state_core = 354
+			}
+                        354 = {
+                          add_extra_state_shared_building_slots = 2
+		          add_building_construction = {
+		          type = infrastructure
+	                  level = 1
+                          instant_build = yes
+		          }
+	                }
+                        354 = {
+		          add_building_construction = {
+		          type = industrial_complex
+	                  level = 2
+                          instant_build = yes
+		          }
+	                }
+                        add_stability = 0.06
+		}
+	}
+
+        focus = {
+		id = ARM_Remembering_the_Lost
+		icon = GFX_goal_ARM_Remembering_the_Lost
+                prerequisite = {
+			focus = ARM_Righteous_Vengeance
+		}
+                prerequisite = {
+			focus = ARM_Protect_the_Common_Folk
+		}
+                relative_position_id = ARM_The_Darkest_Pit_of_Hell
+		x = 0
+		y = 2
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ARM_Remembering_the_Lost"
+                        country_event = drlarm.6
+		}
+	}
+
+        focus = {
+		id = ARM_Pax_Aeternam
+		icon = GFX_goal_ARM_Pax_Aeternam
+                available = {
+			has_war = no
+                        WRF = { owns_state = 834 } 
+		}
+                prerequisite = {
+			focus = ARM_Rebuild_with_the_Newfound_Profits
+		}
+                prerequisite = {
+			focus = ARM_Neo_Crusaders_Zeal
+		}
+                prerequisite = {
+			focus = ARM_Remembering_the_Lost
+		}
+                relative_position_id = ARM_Neo_Crusaders_Zeal
+		x = 0
+		y = 1
+		cost = 7.5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ARM_Pax_Aeternam"
+                        hidden_effect = {
+                        WRF = { transfer_state = 164 }
+                        remove_ideas = ARM_Artaxid_Battalion
+                        remove_ideas = ARM_Lusignan_Legion
+                        add_ideas = ARM_Mighty_Army
+                        declare_war_on = {
+                            target = THR
+                            type = annex_everything
+                        }
+                        declare_war_on = {
+                            target = CRW
+                            type = annex_everything
+                        }
+                        declare_war_on = {
+                            target = WRF
+                            type = annex_everything
+                        }
+                        declare_war_on = {
+                            target = TIT
+                            type = annex_everything
+                        }
+                        declare_war_on = {
+                            target = ANT
+                            type = annex_everything
+                        }
+                        declare_war_on = {
+                            target = KLG
+                            type = annex_everything
+                        }
+                        declare_war_on = {
+                            target = OTH
+                            type = annex_everything
+                        }
+                        declare_war_on = {
+                            target = SKL
+                            type = annex_everything
+                        }
+                        declare_war_on = {
+                            target = ANK
+                            type = annex_everything
+                        }
+                        declare_war_on = {
+                            target = IZM
+                            type = annex_everything
+                        }
+                        }
+                        custom_effect_tooltip = ARM_pacification_campaign_toolip
+		}
+	}
+
+        ### Post-Libertaion Tree ###
+	focus = {
+		id = ARM_Unified_at_Last
+		icon = GFX_goal_ARM_Unified_at_Last
+                available = {
+			has_war = no
+                        country_exists = PAC
+		}
+                relative_position_id = ARM_Damadians_Folly
+		x = 8
+		y = 0
+		cost = 3
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ARM_Unified_at_Last"
+                        set_cosmetic_tag = ARM_Greater
+                        swap_ideas = {
+                        remove_idea = ARM_Building_our_Future
+                        add_idea = ARM_Bright_Future
+                        }
+                        add_research_slot = 1
+		}
+	}
+
+        focus = {
+		id = ARM_Organize_the_Grand_Elections
+		icon = GFX_goal_ARM_Organize_the_Grand_Elections
+                prerequisite = {
+			focus = ARM_Unified_at_Last
+		}
+                relative_position_id = ARM_Unified_at_Last
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ARM_Organize_the_Grand_Elections"
+                        country_event = drlarm.7
+		}
+	}
+
+        focus = {
+		id = ARM_Father_of_the_National_Liberation
+		icon = GFX_goal_ARM_Father_of_the_National_Liberation
+                available = {
+			has_country_flag = ARM_Dashnak_Victory_flag
+		}
+                prerequisite = {
+			focus = ARM_Organize_the_Grand_Elections
+		}
+                relative_position_id = ARM_Organize_the_Grand_Elections
+		x = -2
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ARM_Father_of_the_National_Liberation"
+                        swap_ideas = {
+		          remove_idea = ARM_Bright_Future
+		          add_idea = ARM_Dashnak_Government
+	                }
+		}
+	}
+ 
+        focus = {
+		id = ARM_The_Civilian_Backbone_of_Socialism
+		icon = GFX_goal_ARM_The_Civilian_Backbone_of_Socialism
+                available = {
+			has_country_flag = ARM_Hunchak_Victory_flag
+		}
+                prerequisite = {
+			focus = ARM_Organize_the_Grand_Elections
+		}
+                relative_position_id = ARM_Organize_the_Grand_Elections
+		x = 0
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ARM_Civilian_The_Backbone_of_Socialism"
+                        swap_ideas = {
+		          remove_idea = ARM_Bright_Future
+		          add_idea = ARM_Hunchak_Government
+	                }
+		}
+	}
+
+        focus = {
+		id = ARM_Damadians_Redemption
+		icon = GFX_goal_ARM_Damadians_Redemption
+                available = {
+			has_country_flag = ARM_Ramgavar_Victory_flag
+		}
+                prerequisite = {
+			focus = ARM_Organize_the_Grand_Elections
+		}
+                relative_position_id = ARM_Organize_the_Grand_Elections
+		x = 2
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ARM_Damadians_Redemption"
+                        swap_ideas = {
+		          remove_idea = ARM_Bright_Future
+		          add_idea = ARM_Ramgavar_Government
+	                }
+		}
+	}
+ 
+        ### Anatolia Tree ###
+
+        focus = {
+		id = ARM_Reward_our_Hellenic_Friends
+		icon = GFX_goal_ARM_Reward_our_Hellenic_Friends
+                available = {
+			has_war = no
+                        country_exists = PAC
+		}
+                relative_position_id = ARM_Unified_at_Last
+		x = 7
+		y = 0
+		cost = 4.8
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ARM_Reward_our_Hellenic_Friends"
+                        GRE = {
+				transfer_state = 341
+                                transfer_state = 797
+                                transfer_state = 164
+                                transfer_state = 834
+                                add_state_core = 341
+                                add_state_core = 797
+                                add_state_core = 164
+                                add_state_core = 834
+			}
+                        create_faction = "Anatolian Prosperity League"
+		        add_to_faction = GRE
+		}
+	}
+
+        focus = {
+		id = ARM_Status_of_Anatolia
+		icon = GFX_goal_ARM_Status_of_Anatolia
+                available = {
+			has_completed_focus = ARM_Organize_the_Grand_Elections
+		}
+                prerequisite = {
+			focus = ARM_Reward_our_Hellenic_Friends
+		}
+                relative_position_id = ARM_Reward_our_Hellenic_Friends
+		x = 0
+		y = 1
+		cost = 4.1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ARM_Status_of_Anatolia"
+                        country_event = drlarm.8
+		}
+	}
+
+        focus = {
+		id = ARM_Keep_them_Contained
+		icon = GFX_goal_ARM_Keep_them_Contained
+                available = {
+			has_completed_focus = ARM_Father_of_the_National_Liberation
+		}
+                prerequisite = {
+			focus = ARM_Status_of_Anatolia
+		}
+                relative_position_id = ARM_Status_of_Anatolia
+		x = -2
+		y = 1
+		cost = 3.2
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ARM_Keep_them_Contained"
+                        PAC = {
+                          set_politics = {
+			  ruling_party = autocratic
+			  elections_allowed = no
+		          }
+                          add_popularity = {
+                          ideology = autocratic
+                          popularity = 1
+                          }
+                        }
+		}
+	}
+
+        focus = {
+		id = ARM_Destroy_the_Personality_Cults
+		icon = GFX_goal_ARM_Destroy_the_Personality_Cults
+                prerequisite = {
+			focus = ARM_Keep_them_Contained
+		}
+                relative_position_id = ARM_Keep_them_Contained
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ARM_Destroy_the_Personality_Cults"
+                        PAC = {
+                        add_ideas = PAC_Shattering_their_Idols
+                        }
+		}
+	}
+
+        focus = {
+		id = ARM_Contact_Hikmet
+		icon = GFX_goal_ARM_Contact_Hikmet
+                available = {
+			has_completed_focus = ARM_The_Civilian_Backbone_of_Socialism
+		}
+                prerequisite = {
+			focus = ARM_Status_of_Anatolia
+		}
+                relative_position_id = ARM_Status_of_Anatolia
+		x = 0
+		y = 1
+		cost = 3.2
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ARM_Contact_Hikmet"
+                        PAC = {
+                          set_politics = {
+			  ruling_party = libertarian_socialist
+			  elections_allowed = no
+		          }
+                          add_popularity = {
+                          ideology = libertarian_socialist
+                          popularity = 1
+                          }
+                        }
+		}
+	}
+
+        focus = {
+		id = ARM_A_Republic_for_All
+		icon = GFX_goal_ARM_A_Republic_for_All
+                prerequisite = {
+			focus = ARM_Contact_Hikmet
+		}
+                relative_position_id = ARM_Contact_Hikmet
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ARM_A_Republic_for_All"
+                        PAC = {
+                        add_ideas = PAC_Hopes_for_Utopia
+                        }
+		}
+	}
+
+        focus = {
+		id = ARM_A_Promise_Kept
+		icon = GFX_goal_ARM_A_Promise_Kept
+                available = {
+			has_completed_focus = ARM_Damadians_Redemption
+		}
+                prerequisite = {
+			focus = ARM_Status_of_Anatolia
+		}
+                relative_position_id = ARM_Status_of_Anatolia
+		x = 2
+		y = 1
+		cost = 3.2
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ARM_A_Promise_Kept"
+                        PAC = {
+                          set_politics = {
+			  ruling_party = authoritarian_democrat
+			  elections_allowed = no
+		          }
+                          add_popularity = {
+                          ideology = authoritarian_democrat
+                          popularity = 1
+                          }
+                        }
+		}
+	}
+
+        focus = {
+		id = ARM_Mordacqs_Administration
+		icon = GFX_goal_ARM_Mordacqs_Administration
+                prerequisite = {
+			focus = ARM_A_Promise_Kept
+		}
+                relative_position_id = ARM_A_Promise_Kept
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ARM_Mordacqs_Administration"
+                        PAC = {
+                        add_ideas = PAC_Mandate_Economy
+                        }
+		}
+	}
+
+}

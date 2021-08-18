@@ -1,0 +1,276 @@
+add_namespace = drlarm
+
+country_event = { #The Hero Rises
+	id = drlarm.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event drlarm.1"}
+	title = drlarm.1.t
+	desc = drlarm.1.d
+	#picture = 
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = drlarm.1.a
+                set_politics = { ruling_party = libertarian_socialist elections_allowed = no }
+		add_war_support = 0.05
+		hidden_effect = {
+			CIB = {
+                        remove_ideas = CIB_Zombie
+                        remove_ideas = CIB_OrduVatan
+                        remove_ideas = CIB_OrduVatan_stratocracy
+                        }
+                        835 = {
+                          add_extra_state_shared_building_slots = 2
+		          add_building_construction = {
+		          type = industrial_complex
+	                  level = 2
+                          instant_build = yes
+		          }
+	                }
+                        353 = {
+                          add_extra_state_shared_building_slots = 1
+		          add_building_construction = {
+		          type = infrastructure
+	                  level = 3
+                          instant_build = yes
+		          }
+	                }
+                        800 = {
+                          add_extra_state_shared_building_slots = 1
+		          add_building_construction = {
+		          type = infrastructure
+	                  level = 2
+                          instant_build = yes
+		          }
+	                }
+                        835 = {
+		          add_building_construction = {
+		          type = industrial_complex
+	                  level = 1
+                          instant_build = yes
+		          }
+	                }
+                        230 = {
+                          add_extra_state_shared_building_slots = 2
+		          add_building_construction = {
+		          type = arms_factory
+	                  level = 2
+                          instant_build = yes
+		          }
+	                }
+                        835 = {
+		          add_building_construction = {
+		          type = arms_factory
+	                  level = 3
+                          instant_build = yes
+		          }
+	                }
+                        353 = {
+		          add_building_construction = {
+		          type = arms_factory
+	                  level = 3
+                          instant_build = yes
+		          }
+	                }
+                        353 = {
+                          add_extra_state_shared_building_slots = 1
+		          add_building_construction = {
+		          type = industrial_complex
+	                  level = 1
+                          instant_build = yes
+		          }
+	                }
+		}
+	}
+}
+
+country_event = { #Reorganizing Azerbaijan
+	id = drlarm.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event drlarm.2"}
+	title = drlarm.2.t
+	desc = drlarm.2.d
+	#picture = 
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = drlarm.2.a
+                ROOT = {
+                   add_state_core = 229
+	        }
+                add_manpower = -12000
+                add_stability = -0.03
+	}
+}
+
+country_event = { #French Support Arrives
+	id = drlarm.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event drlarm.3"}
+	title = drlarm.3.t
+	desc = drlarm.3.d
+	#picture = 
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = drlarm.3.a
+                remove_ideas = ARM_Lusignan_Debacle
+                add_ideas = ARM_Armenian_Legion
+                add_equipment_to_stockpile = {
+    	                      type = support_equipment_1
+   		              amount = 5000
+    	                      producer = FRA
+		}
+                create_unit = {
+                division = "name = \"Armenian Legion\" division_template = \"Armenian Infantry\" start_experience_factor = 0.5 start_equipment_factor = 1.0" 
+	        owner = ARM
+                }
+                create_unit = {
+                division = "name = \"Armenian Legion\" division_template = \"Armenian Infantry\" start_experience_factor = 0.5 start_equipment_factor = 1.0" 
+	        owner = ARM
+                }
+                create_unit = {
+                division = "name = \"Armenian Legion\" division_template = \"Armenian Infantry\" start_experience_factor = 0.5 start_equipment_factor = 1.0" 
+	        owner = ARM
+                }
+	}
+}
+
+country_event = { #Damnatio Memoriae
+	id = drlarm.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event drlarm.4"}
+	title = drlarm.4.t
+	desc = drlarm.4.d
+	#picture = 
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = drlarm.4.a
+                add_manpower = -1
+                add_stability = 0.07
+                add_political_power = 50
+	}
+}
+
+country_event = { #Against the Forces of Spiritual Evil
+	id = drlarm.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event drlarm.5"}
+	title = drlarm.5.t
+	desc = drlarm.5.d
+	#picture = 
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = drlarm.5.a
+                add_manpower = -1900
+                add_war_support = 0.17
+	}
+}
+
+country_event = { #Solemn Eulogy
+	id = drlarm.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event drlarm.6"}
+	title = drlarm.6.t
+	desc = drlarm.6.d
+	#picture = 
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = drlarm.6.a
+                custom_effect_tooltip = ARM_remembering_the_fallen_toolip
+	}
+}
+
+country_event = { #The First Elections of Unified Armenia
+	id = drlarm.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event drlarm.7"}
+	title = drlarm.7.t
+	desc = drlarm.7.d
+	#picture = 
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = drlarm.7.a
+                set_politics = {
+			ruling_party = libertarian_socialist
+			election_frequency = 48
+			elections_allowed = yes
+		}
+                add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.2
+		}
+                hidden_effect = {
+                set_country_flag = ARM_Dashnak_Victory_flag
+                }
+	}
+
+        option = { 
+		name = drlarm.7.b
+                set_politics = {
+			ruling_party = social_democrat
+			election_frequency = 48
+			elections_allowed = yes
+		}
+                add_popularity = {
+				ideology = social_democrat
+				popularity = 0.2
+		}
+                hidden_effect = {
+                set_country_flag = ARM_Hunchak_Victory_flag
+                }
+	}
+
+        option = { 
+		name = drlarm.7.c
+                set_politics = {
+			ruling_party = liberal
+			election_frequency = 48
+			elections_allowed = yes
+		}
+                add_popularity = {
+				ideology = liberal
+				popularity = 0.2
+		}
+                hidden_effect = {
+                set_country_flag = ARM_Ramgavar_Victory_flag
+                }
+	}
+}
+
+country_event = { #Anatolia Moving Forward
+	id = drlarm.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event drlarm.8"}
+	title = drlarm.8.t
+	desc = drlarm.8.d
+	#picture = 
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = drlarm.8.a
+                PAC = {
+                   add_ideas = PAC_Uncertain_Future
+                }
+	}
+}
