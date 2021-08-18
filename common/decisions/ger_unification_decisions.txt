@@ -339,6 +339,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 28
+				num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }	
 			28 = { add_core_of = ROOT }
@@ -348,8 +349,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
         ai_will_do = {
 			factor = 1000
@@ -364,6 +365,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 8
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			8 = { add_core_of = ROOT }
@@ -373,8 +375,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
         ai_will_do = {
 			factor = 1000
@@ -389,6 +391,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 51
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			51 = { add_core_of = ROOT }
@@ -398,8 +401,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
         ai_will_do = {
 			factor = 1000
@@ -414,6 +417,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 42
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			42 = { add_core_of = ROOT }
@@ -423,8 +427,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
         ai_will_do = {
 			factor = 1000
@@ -439,6 +443,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 825
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			825 = { add_core_of = ROOT }
@@ -448,8 +453,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
         ai_will_do = {
 			factor = 1000
@@ -464,6 +469,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 57
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			57 = { add_core_of = ROOT }
@@ -473,8 +479,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
         ai_will_do = {
 			factor = 1000
@@ -489,6 +495,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 56
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			56 = { add_core_of = ROOT }
@@ -498,8 +505,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
         ai_will_do = {
 			factor = 1000
@@ -514,6 +521,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 59
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			59 = { add_core_of = ROOT }
@@ -523,8 +531,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
         ai_will_do = {
 			factor = 1000
@@ -539,6 +547,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 55
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			55 = { add_core_of = ROOT }
@@ -548,8 +557,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
         ai_will_do = {
 			factor = 1000
@@ -564,6 +573,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 819
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			819 = { add_core_of = ROOT }
@@ -573,8 +583,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 		          ai_will_do = {
 			factor = 1000
@@ -589,6 +599,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 50
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			50 = { add_core_of = ROOT }
@@ -598,8 +609,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 		          ai_will_do = {
 			factor = 1000
@@ -614,6 +625,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 54
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			54 = { add_core_of = ROOT }
@@ -623,8 +635,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 		          ai_will_do = {
 			factor = 1000
@@ -639,6 +651,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 52
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			52 = { add_core_of = ROOT }
@@ -648,8 +661,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 		          ai_will_do = {
 			factor = 1000
@@ -664,6 +677,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 53
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			53 = { add_core_of = ROOT }
@@ -673,8 +687,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 		          ai_will_do = {
 			factor = 1000
@@ -689,6 +703,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 60
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			60 = { add_core_of = ROOT }
@@ -698,8 +713,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 		          ai_will_do = {
 			factor = 1000
@@ -714,6 +729,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 65
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			65 = { add_core_of = ROOT }
@@ -723,8 +739,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 		          ai_will_do = {
 			factor = 1000
@@ -739,6 +755,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 826
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			826 = { add_core_of = ROOT }
@@ -748,8 +765,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 		          ai_will_do = {
 			factor = 1000
@@ -764,6 +781,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 58
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			58 = { add_core_of = ROOT }
@@ -773,8 +791,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 		          ai_will_do = {
 			factor = 1000
@@ -789,6 +807,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 61
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			61 = { add_core_of = ROOT }
@@ -798,8 +817,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 		          ai_will_do = {
 			factor = 1000
@@ -814,6 +833,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 64
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			64 = { add_core_of = ROOT }
@@ -823,8 +843,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 		          ai_will_do = {
 			factor = 1000
@@ -839,6 +859,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 62
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			62 = { add_core_of = ROOT }
@@ -848,8 +869,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 		          ai_will_do = {
 			factor = 1000
@@ -864,6 +885,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 63
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			63 = { add_core_of = ROOT }
@@ -873,8 +895,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 		          ai_will_do = {
 			factor = 1000
@@ -889,6 +911,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 68
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			68 = { add_core_of = ROOT }
@@ -898,8 +921,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 		          ai_will_do = {
 			factor = 1000
@@ -914,6 +937,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 66
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			66 = { add_core_of = ROOT }
@@ -923,8 +947,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 		          ai_will_do = {
 			factor = 1000
@@ -939,6 +963,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 67
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			67 = { add_core_of = ROOT }
@@ -948,8 +973,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 		          ai_will_do = {
 			factor = 1000
@@ -964,6 +989,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 5
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			5 = { add_core_of = ROOT }
@@ -973,8 +999,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 		          ai_will_do = {
 			factor = 1000
@@ -989,6 +1015,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 763
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			763 = { add_core_of = ROOT }
@@ -998,8 +1025,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 		          ai_will_do = {
 			factor = 1000
@@ -1014,6 +1041,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 188
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			188 = { add_core_of = ROOT }
@@ -1023,8 +1051,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 		          ai_will_do = {
 			factor = 1000
@@ -1039,6 +1067,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 809
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			809 = { add_core_of = ROOT }
@@ -1048,8 +1077,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 		          ai_will_do = {
 			factor = 1000
@@ -1064,6 +1093,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 85
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			85 = { add_core_of = ROOT }
@@ -1073,8 +1103,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 		          ai_will_do = {
 			factor = 1000
@@ -1089,6 +1119,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 86
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			86 = { add_core_of = ROOT }
@@ -1098,8 +1129,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 		          ai_will_do = {
 			factor = 1000
@@ -1114,6 +1145,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 762
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			762 = { add_core_of = ROOT }
@@ -1123,8 +1155,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 		          ai_will_do = {
 			factor = 1000
@@ -1139,6 +1171,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 74
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			74 = { add_core_of = ROOT }
@@ -1148,8 +1181,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 		          ai_will_do = {
 			factor = 1000
@@ -1164,6 +1197,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 69
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			69 = { add_core_of = ROOT }
@@ -1173,8 +1207,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 		          ai_will_do = {
 			factor = 1000
@@ -1189,6 +1223,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 152
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			152 = { add_core_of = ROOT }
@@ -1198,8 +1233,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 		          ai_will_do = {
 			factor = 1000
@@ -1214,6 +1249,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 4
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			4 = { add_core_of = ROOT }
@@ -1223,8 +1259,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 		          ai_will_do = {
 			factor = 1000
@@ -1239,6 +1275,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 813
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			813 = { add_core_of = ROOT }
@@ -1248,8 +1285,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 		          ai_will_do = {
 			factor = 1000
@@ -1264,6 +1301,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 153
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			153 = { add_core_of = ROOT }
@@ -1273,8 +1311,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 		          ai_will_do = {
 			factor = 1000
@@ -1289,6 +1327,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 39
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			39 = { add_core_of = ROOT }
@@ -1298,8 +1337,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 		          ai_will_do = {
 			factor = 1000
@@ -1314,6 +1353,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 811
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			811 = { add_core_of = ROOT }
@@ -1323,8 +1363,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 	         ai_will_do = {
 			factor = 1000
@@ -1339,6 +1379,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 881 
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			881  = { add_core_of = ROOT }
@@ -1348,8 +1389,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 	         ai_will_do = {
 			factor = 1000
@@ -1364,6 +1405,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 882 
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			882  = { add_core_of = ROOT }
@@ -1373,8 +1415,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 	         ai_will_do = {
 			factor = 1000
@@ -1389,6 +1431,7 @@ GER_unification_decisions = {
           days_remove = 40
           available = {
 			owns_state = 883 
+			num_of_civilian_factories_available_for_projects > 1
           }
           remove_effect = { add_to_variable = { var = german_states value = 1 }
 			883  = { add_core_of = ROOT }
@@ -1398,8 +1441,8 @@ GER_unification_decisions = {
 		}
           modifier = {
 			civilian_factory_use = 2
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
           }
 	         ai_will_do = {
 			factor = 1000
