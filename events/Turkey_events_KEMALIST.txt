@@ -718,6 +718,22 @@ country_event = { #The Blackarrow Revolt
 		ai_chance = { factor = 80 }
 		add_stability = -0.40
 		ANK = {
+			add_equipment_to_stockpile = {
+				    type = infantry_equipment
+				    amount = 10000
+				    producer = ANK
+				}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 250
+				    producer = ANK
+				}
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 500
+				    producer = ANK
+				}
+			inherit_technology = WRF
 		transfer_state = 834
 		transfer_state = 339
 		add_state_core = 339
@@ -767,6 +783,7 @@ country_event = { #The Blackarrow Revolt
 		retire_ideology_leader = social_democrat
 		complete_national_focus = WRF_Election_Day
 		complete_national_focus = WRF_CHP_Victory
+		country_event = { id = tur.26 days = 2}
 	}
 
 
@@ -775,6 +792,7 @@ country_event = { #The Blackarrow Revolt
 		ai_chance = { factor = 80 }
 		add_stability = -0.40
 		ANK = {
+			inherit_technology = WRF
 		transfer_state = 834
 		transfer_state = 339
 		add_state_core = 339
@@ -909,5 +927,79 @@ country_event = { #The Blackarrow Manifesto
 		complete_national_focus = WRF_Adnan_vic
 		add_ideas = WRF_Kemalist_Anger
 		add_ideas = CLP_abdulmecid_hog
+	}
+}
+
+country_event = { #Youth
+	id = tur.26
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = tur.26.t
+	desc = tur.26.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.26.a
+		ai_chance = { factor = 50 }
+		add_manpower = -70000
+		add_stability = -0.4
+		country_event = { id = tur.27 days = 2}
+	}
+}
+
+country_event = { #KDM
+	id = tur.27
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = tur.27.t
+	desc = tur.27.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.27.a
+		ai_chance = { factor = 50 }
+		add_manpower = -9000
+		add_stability = -0.4
+		add_political_power = -1000
+		country_event = { id = tur.28 days = 2}
+	}
+}
+
+country_event = { #revolution
+	id = tur.28
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = tur.28.t
+	desc = tur.28.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #play JFK
+		name = tur.28.a
+		neworder_wrf_collapse = yes
+		CRW = { change_tag_from = WRF }	
+	}
+
+	option = { #play Greywolf
+		name = tur.28.b
+		neworder_wrf_collapse = yes
+		ADN = { change_tag_from = WRF }
+	}
+
+	option = { #play New Order
+		name = tur.28.c
+		neworder_wrf_collapse = yes
+		ANK = { change_tag_from = WRF }
 	}
 }

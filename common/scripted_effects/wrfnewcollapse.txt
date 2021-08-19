@@ -6,6 +6,22 @@ transfer_state = 183
 transfer_state = 184
 }
 CRW = {
+	add_equipment_to_stockpile = {
+				    type = infantry_equipment
+				    amount = 10000
+				    producer = CRW
+				}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 250
+				    producer = CRW
+				}
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 500
+				    producer = CRW
+				}
+	inherit_technology = WRF
 transfer_state = 797    
 set_cosmetic_tag = CRW_JFK
 load_focus_tree = generic_focus
@@ -32,6 +48,22 @@ load_focus_tree = generic_focus
 set_country_flag = Roatta_Warlord    
 }
 IZM = {
+	add_equipment_to_stockpile = {
+				    type = infantry_equipment
+				    amount = 10000
+				    producer = IZM
+				}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 250
+				    producer = IZM
+				}
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 500
+				    producer = IZM
+				}
+	inherit_technology = WRF
 transfer_state = 347
 set_cosmetic_tag = IZM_madan2
 load_focus_tree = generic_focus
@@ -58,6 +90,22 @@ load_focus_tree = generic_focus
 set_country_flag = Roatta_Warlord       
 }
 ANK = {
+	add_equipment_to_stockpile = {
+				    type = infantry_equipment
+				    amount = 10000
+				    producer = ANK
+				}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 250
+				    producer = ANK
+				}
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 500
+				    producer = ANK
+				}
+	inherit_technology = WRF
 		transfer_state = 834
         load_focus_tree = generic_focus
 		transfer_state = 339
@@ -86,6 +134,22 @@ ANK = {
 		}
         
 CIB = {
+	add_equipment_to_stockpile = {
+				    type = infantry_equipment
+				    amount = 10000
+				    producer = CIB
+				}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 250
+				    producer = CIB
+				}
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 500
+				    producer = CIB
+				}
+	inherit_technology = WRF
     load_focus_tree = generic_focus
     set_cosmetic_tag = ESO_Roatta
     transfer_state = 343
@@ -108,6 +172,22 @@ set_country_flag = Roatta_Warlord
 }
 
 KLG = {
+	add_equipment_to_stockpile = {
+				    type = infantry_equipment
+				    amount = 10000
+				    producer = KLG
+				}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 250
+				    producer = KLG
+				}
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 500
+				    producer = KLG
+				}
+	inherit_technology = WRF
 set_cosmetic_tag = KLG_Roatta_Tag    
 transfer_state = 355
 add_state_core = 355
@@ -117,6 +197,21 @@ load_focus_tree = generic_focus
 set_country_flag = Roatta_Warlord
 }
 ARM = {
+	add_equipment_to_stockpile = {
+				    type = infantry_equipment
+				    amount = 5000
+				    producer = ARM
+				}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 250
+				    producer = ARM
+				}
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 500
+				    producer = ARM
+				}
 set_cosmetic_tag = ARM_Uprising
         set_politics = {
 	    ruling_party = revolutionary_nationalist
@@ -132,6 +227,22 @@ transfer_state = 835
 transfer_state = 353    
 }
 ADN = {
+	add_equipment_to_stockpile = {
+				    type = infantry_equipment
+				    amount = 10000
+				    producer = ADN
+				}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 250
+				    producer = ADN
+				}
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 500
+				    producer = ADN
+				}
+	inherit_technology = WRF
 set_cosmetic_tag = turkes_adana    
 transfer_state = 344
 transfer_state = 345
@@ -160,6 +271,22 @@ load_focus_tree = generic_focus
 set_country_flag = Roatta_Warlord          
 }
 TRA = {
+	add_equipment_to_stockpile = {
+				    type = infantry_equipment
+				    amount = 10000
+				    producer = TRA
+				}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 250
+				    producer = TRA
+				}
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 500
+				    producer = TRA
+				}
+	inherit_technology = WRF
   set_cosmetic_tag = turkish_socarmy  
  transfer_state = 356
 transfer_state = 839
@@ -177,6 +304,22 @@ create_country_leader = {
 }
 }
 AZR = {
+	add_equipment_to_stockpile = {
+				    type = infantry_equipment
+				    amount = 10000
+				    producer = AZR
+				}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 250
+				    producer = AZR
+				}
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 500
+				    producer = AZR
+				}
+inherit_technology = WRF	
 transfer_state = 229
 add_popularity = {
     ideology = conservative
