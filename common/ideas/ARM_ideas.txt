@@ -7,8 +7,8 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARM_Struggle_for_Existence"}
 			picture = ARM_Struggle_for_Existence
 			modifier = {
-                               army_core_attack_factor = 0.3
-                               army_core_defence_factor = 0.7
+                               army_core_attack_factor = 0.1
+                               army_core_defence_factor = 0.1
                                conscription_factor = 0.04
 			}
 		}
@@ -26,14 +26,13 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARM_Struggle_for_Existence"}
 			picture = ARM_Struggle_for_Existence
 			modifier = {
-                               army_core_attack_factor = 0.6
-                               army_core_defence_factor = 0.9
-                               conscription_factor = 0.08
+                               army_core_attack_factor = 0.15
+                               army_core_defence_factor = 0.15
+                               conscription_factor = 0.05
 			}
                         targeted_modifier = {
 				     tag = CIB
-				     attack_bonus_against = 0.9
-				     defense_bonus_against = 0.9
+				     defense_bonus_against = 0.1
 		        }
 		}
 
@@ -41,8 +40,8 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARM_Building_our_Future"}
 			picture = ARM_Building_our_Future
 			modifier = {
-                              army_core_attack_factor = 0.2
-                              army_core_defence_factor = 0.4
+                              army_core_attack_factor = 0.05
+                              army_core_defence_factor =  0.05
                               conscription_factor = 0.03
                               army_morale_factor = 0.06
 			}
@@ -52,13 +51,11 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARM_Artaxid_Battalion"}
 			picture = ARM_Artaxid_Battalion
 			modifier = {
-                              conscription = 0.05
-			      army_org_factor = 0.07
+			      army_org_factor = 0.05
 			}
                         targeted_modifier = {
 				     tag = AZR
-				     attack_bonus_against = 0.9
-				     defense_bonus_against = 0.9
+				     attack_bonus_against = 0.1
 		        }
 		}
 
@@ -66,8 +63,7 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARM_Armenian_Legion"}
 			picture = ARM_Struggle_for_Existence
 			modifier = {
-                              offence = 0.1
-                              defence = 0.15
+                              offence = 0.05
 			}
 		}
 
@@ -75,14 +71,11 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARM_Lusignan_Legion"}
 			picture = ARM_Lusignan_Legion
 			modifier = {
-                              offence = 0.2
-                              defence = 0.25
-                              weekly_manpower = 2000
 			}
                         targeted_modifier = {
 				     tag = CLP
-				     attack_bonus_against = 0.9
-				     defense_bonus_against = 0.9
+				     attack_bonus_against = 0.1
+				     defense_bonus_against = 0.1
 		        }
 		}
 
@@ -90,19 +83,19 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARM_Mighty_Army"}
 			picture = ARM_Mighty_Army
 			modifier = {
-                              army_core_attack_factor = 0.7
-                              army_core_defence_factor = 0.9
-                              conscription_factor = 0.2
+                              army_core_attack_factor = 0.1
+                              army_core_defence_factor = 0.1
+                              conscription_factor = 0.1
                               local_manpower = 0.06
 			      weekly_manpower = 3000
-                              offence = 0.3
-                              defence = 0.4
+                              offence = 0.1
+                              defence = 0.1
                               army_org_factor = 0.12
 			}
                         targeted_modifier = {
 				     tag = WRF
-				     attack_bonus_against = 0.9
-				     defense_bonus_against = 0.9
+				     attack_bonus_against = 0.1
+				     defense_bonus_against = 0.1
 		        }
 		}
 

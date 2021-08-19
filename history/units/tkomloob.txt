@@ -1,0 +1,135 @@
+division_template = {
+	name = "TKOML Militants"			# Rifle Division
+	division_names_group = TUR_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co
+	}
+}
+
+units = {
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3967 #Petsamo
+		division_template = "TKOML Militants"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.84
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3967 #Petsamo
+		division_template = "TKOML Militants"
+		start_experience_factor =0.5
+		start_equipment_factor = 0.84
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 3967 #Petsamo
+		division_template = "TKOML Militants"
+		start_experience_factor =0.5
+		start_equipment_factor = 0.84
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 3967 #Petsamo
+		division_template = "TKOML Militants"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.84
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 3967 #Petsamo
+		division_template = "TKOML Militants"
+		start_experience_factor =0.5
+		start_equipment_factor = 0.84
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 3967 #Petsamo
+		division_template = "TKOML Militants"
+		start_experience_factor =0.5
+		start_equipment_factor = 0.84
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 3967 #Petsamo
+		division_template = "TKOML Militants"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 3967 #Petsamo
+		division_template = "TKOML Militants"
+		start_experience_factor = 1
+		start_equipment_factor =1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 3967 #Petsamo
+		division_template = "TKOML Militants"
+		start_experience_factor =1
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 3967 #Petsamo
+		division_template = "TKOML Militants"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 3967 #Petsamo
+		division_template = "TKOML Militants"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+}

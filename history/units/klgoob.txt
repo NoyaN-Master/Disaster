@@ -1,0 +1,116 @@
+division_template = {
+	name = "National Army"			# Rifle Division
+	division_names_group = TUR_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co
+	}
+}
+
+units = {
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9932 #Petsamo
+		division_template = "National Army"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.84
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 9932 #Petsamo
+		division_template = "National Army"
+		start_experience_factor =0.5
+		start_equipment_factor = 0.84
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 9932 #Petsamo
+		division_template = "National Army"
+		start_experience_factor =0.5
+		start_equipment_factor = 0.84
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 9932 #Petsamo
+		division_template = "National Army"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.84
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 9932 #Petsamo
+		division_template = "National Army"
+		start_experience_factor =0.5
+		start_equipment_factor = 0.84
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 9932 #Petsamo
+		division_template = "National Army"
+		start_experience_factor =0.5
+		start_equipment_factor = 0.84
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 9932 #Petsamo
+		division_template = "National Army"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 9932 #Petsamo
+		division_template = "National Army"
+		start_experience_factor = 1
+		start_equipment_factor =1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 9932 #Petsamo
+		division_template = "National Army"
+		start_experience_factor =1
+		start_equipment_factor = 1
+	}
+	
+}
