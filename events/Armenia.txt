@@ -16,61 +16,10 @@ country_event = { #The Hero Rises
                 set_politics = { ruling_party = libertarian_socialist elections_allowed = no }
 		add_war_support = 0.05
 		hidden_effect = {
-			CIB = {
-                        remove_ideas = CIB_Zombie
-                        remove_ideas = CIB_OrduVatan
-                        remove_ideas = CIB_OrduVatan_stratocracy
-                        }
-                        835 = {
-                          add_extra_state_shared_building_slots = 2
-		          add_building_construction = {
-		          type = industrial_complex
-	                  level = 2
-                          instant_build = yes
-		          }
-	                }
                         353 = {
-                          add_extra_state_shared_building_slots = 1
 		          add_building_construction = {
-		          type = infrastructure
-	                  level = 3
-                          instant_build = yes
-		          }
-	                }
-                        800 = {
-                          add_extra_state_shared_building_slots = 1
-		          add_building_construction = {
-		          type = infrastructure
-	                  level = 2
-                          instant_build = yes
-		          }
-	                }
-                        835 = {
-		          add_building_construction = {
-		          type = industrial_complex
+		          type = arms_factory
 	                  level = 1
-                          instant_build = yes
-		          }
-	                }
-                        230 = {
-                          add_extra_state_shared_building_slots = 2
-		          add_building_construction = {
-		          type = arms_factory
-	                  level = 2
-                          instant_build = yes
-		          }
-	                }
-                        835 = {
-		          add_building_construction = {
-		          type = arms_factory
-	                  level = 3
-                          instant_build = yes
-		          }
-	                }
-                        353 = {
-		          add_building_construction = {
-		          type = arms_factory
-	                  level = 3
                           instant_build = yes
 		          }
 	                }
