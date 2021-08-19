@@ -1,5 +1,5 @@
 focus_tree = {
-	id = Ataturk_Phase_2
+	id = jfktree_tree
 	country = {
 		factor = 0
 		modifier = {
@@ -11,7 +11,7 @@ focus_tree = {
 
     focus = {
 		id = CRW_A_Marine
-		icon = GFX_goal_WRF_New_Day
+		icon = GFX_goal_JFK_start
 		x = 10
 		y = 1
 		cost = 2
@@ -28,7 +28,7 @@ focus_tree = {
 
     focus = {
 		id = CRW_Our_Plan
-		icon = GFX_goal_AUT_solutions_to_the_slump
+		icon = GFX_goal_WRF_Reformists
 		x = 10
 		y = 2
 		cost = 2

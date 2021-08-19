@@ -49,6 +49,7 @@ CRW = {
 	planning_skill = 1
 	logistics_skill = 3
 	}
+	load_focus_tree = jfktree_tree
 	load_oob = jfkoob
 	add_equipment_to_stockpile = {
 				    type = infantry_equipment
@@ -68,7 +69,6 @@ CRW = {
 	inherit_technology = WRF
 transfer_state = 797    
 set_cosmetic_tag = CRW_JFK
-load_focus_tree = generic_focus
     set_politics = {
 	ruling_party = liberal
         elections_allowed = no
