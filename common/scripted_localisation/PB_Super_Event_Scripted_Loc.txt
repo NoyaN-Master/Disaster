@@ -117,6 +117,12 @@ defined_text = { #SUPER EVENT TITLES
         }
         localization_key = "GFX_SPEVNT_Atsiz_Europe"
     }
+    text = { 
+        trigger = {
+            has_global_flag = JFKflag
+        }
+        localization_key = "GFX_SPEVNT_JFK_Europe"
+    }
 }
 
 defined_text = { #SUPER EVENT QUOTES
@@ -237,6 +243,13 @@ defined_text = { #SUPER EVENT QUOTES
             has_global_flag = Atsiz_Europe
         }
         localization_key = "GFX_SPEVNT_Atsiz_Europe_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            has_global_flag = JFKflag
+        }
+        localization_key = "GFX_SPEVNT_JFK_TEXT"
     }
 }
 
@@ -361,5 +374,10 @@ defined_text = { #SUPER EVENT REMARKS
         }
         localization_key = "GFX_SPEVNT_Atsiz_Europe_REMARK"
     }
-	
+	text = { 
+        trigger = {
+            has_global_flag = JFKflag
+        }
+        localization_key = "GFX_SPEVNT_JFK_REMARK"
+    }
 }

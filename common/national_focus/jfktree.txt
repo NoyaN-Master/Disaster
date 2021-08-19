@@ -13,74 +13,14 @@ focus_tree = {
 		id = CRW_A_Marine
 		icon = GFX_goal_WRF_New_Day
 		x = 10
-		y = 0
-		cost = 2
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-        
-		hidden_effect = {
-		}
-		}
-	}
-
-    focus = {
-		id = CRW_Our_Problems
-		icon = GFX_goal_WRF_New_Day
-		x = 8
 		y = 1
 		cost = 2
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
 		}
-        prerequisite = {
-           focus = CRW_A_Marine 
-        }
 		completion_reward = {
-        
-		hidden_effect = {
-		}
-		}
-	}
-
-    focus = {
-		id = CRW_A_Foreigner
-		icon = GFX_goal_WRF_New_Day
-		x = 10
-		y = 1
-		cost = 2
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-        prerequisite = {
-           focus = CRW_A_Marine 
-        }
-		completion_reward = {
-        
-		hidden_effect = {
-		}
-		}
-	}
-
-    focus = {
-		id = CRW_Call_Washington
-		icon = GFX_goal_WRF_New_Day
-		x = 12
-		y = 1
-		cost = 2
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-        prerequisite = {
-           focus = CRW_A_Marine 
-        }
-		completion_reward = {
-        
+        country_event = { id = jfk.1 }
 		hidden_effect = {
 		}
 		}
@@ -88,7 +28,7 @@ focus_tree = {
 
     focus = {
 		id = CRW_Our_Plan
-		icon = GFX_goal_WRF_New_Day
+		icon = GFX_goal_AUT_solutions_to_the_slump
 		x = 10
 		y = 2
 		cost = 2
@@ -97,16 +37,11 @@ focus_tree = {
 			factor = 1
 		}
         prerequisite = {
-           focus = CRW_A_Foreigner 
-        }
-        prerequisite = {
-           focus = CRW_Our_Problems 
-        }
-        prerequisite = {
-           focus = CRW_Call_Washington 
+           focus = CRW_A_Marine 
         }
 		completion_reward = {
-        
+        add_stability = 0.05
+		add_political_power = 200
 		hidden_effect = {
 		}
 		}
@@ -114,7 +49,7 @@ focus_tree = {
 
     focus = {
 		id = CRW_Deal_Greece
-		icon = GFX_goal_WRF_New_Day
+		icon = GFX_goal_ARM_Reward_our_Hellenic_Friends
 		x = 10
 		y = 3
 		cost = 2
@@ -126,7 +61,7 @@ focus_tree = {
            focus = CRW_Our_Plan 
         }
 		completion_reward = {
-        
+        country_event = { id = jfk.2 }
 		hidden_effect = {
 		}
 		}
@@ -134,7 +69,7 @@ focus_tree = {
 
     focus = {
 		id = CRW_Reach_Ismet
-		icon = GFX_goal_WRF_New_Day
+		icon = GFX_goal_national_chief
 		x = 9
 		y = 4
 		cost = 2
@@ -146,7 +81,21 @@ focus_tree = {
            focus = CRW_Deal_Greece 
         }
 		completion_reward = {
-        
+        create_field_marshal = {
+		name = "Ismet İnonu"
+		portrait_path = "gfx/leaders/WRF/Portrait_WRF_Ismet.png"
+		traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+		}
+		skill = 5
+		attack_skill = 5
+		defense_skill = 5
+		planning_skill = 5
+		logistics_skill = 5
+		}
+		add_manpower = 100000
 		hidden_effect = {
 		}
 		}
@@ -154,7 +103,7 @@ focus_tree = {
 
     focus = {
 		id = CRW_Federal_Forces
-		icon = GFX_goal_WRF_New_Day
+		icon = GFX_goal_WRF_Infiltrate_Army
 		x = 10
 		y = 5
 		cost = 2
@@ -169,7 +118,25 @@ focus_tree = {
            focus = CRW_Reach_Ismet 
         }
 		completion_reward = {
-        
+		797 = {
+		create_unit = {
+    	division = "name = \"Federal Forces\" division_template = \"The Istanbul Marines\" start_experience_factor = 1 start_equipment_factor = 1"
+    	owner = CRW
+		}
+		create_unit = {
+    	division = "name = \"Federal Forces\" division_template = \"The Istanbul Marines\" start_experience_factor = 1 start_equipment_factor = 1"
+    	owner = CRW
+		}
+		create_unit = {
+    	division = "name = \"Federal Forces\" division_template = \"The Istanbul Marines\" start_experience_factor = 1 start_equipment_factor = 1"
+    	owner = CRW
+		}
+        create_unit = {
+    	division = "name = \"Federal Forces\" division_template = \"The Istanbul Marines\" start_experience_factor = 1 start_equipment_factor = 1"
+    	owner = CRW
+		}
+		}
+		add_ideas = Federal_Forces_idea
 		hidden_effect = {
 		}
 		}
@@ -177,7 +144,7 @@ focus_tree = {
 
     focus = {
 		id = CRW_Invade_TKOML
-		icon = GFX_goal_WRF_New_Day
+		icon = GFX_goal_WRF_Anatolia_Federation
 		x = 10
 		y = 6
 		cost = 2
@@ -189,7 +156,10 @@ focus_tree = {
            focus = CRW_Federal_Forces 
         }
 		completion_reward = {
-        
+        declare_war_on = {
+    	target = TRA
+    	type = annex_everything
+		}
 		hidden_effect = {
 		}
 		}
@@ -197,7 +167,7 @@ focus_tree = {
 
     focus = {
 		id = CRW_Invite_Republic
-		icon = GFX_goal_WRF_New_Day
+		icon = GFX_goal_WRF_Ulku_Movement
 		x = 10
 		y = 7
 		cost = 2
@@ -209,7 +179,7 @@ focus_tree = {
            focus = CRW_Invade_TKOML 
         }
 		completion_reward = {
-        
+        country_event = { id = jfk.3 }
 		hidden_effect = {
 		}
 		}
@@ -217,7 +187,7 @@ focus_tree = {
 
     focus = {
 		id = CRW_The_Patriots
-		icon = GFX_goal_WRF_New_Day
+		icon = GFX_goal_WRF_SOL
 		x = 9
 		y = 8
 		cost = 2
@@ -229,7 +199,15 @@ focus_tree = {
            focus = CRW_Invite_Republic 
         }
 		completion_reward = {
-        
+        declare_war_on = {
+    	target = IZM
+    	type = annex_everything
+		}
+		IZM = {
+        every_owned_state = {
+        add_core_of = CRW
+        }    
+        }
 		hidden_effect = {
 		}
 		}
@@ -238,7 +216,7 @@ focus_tree = {
 
     focus = {
 		id = CRW_Destroy_Greywolfs
-		icon = GFX_goal_WRF_New_Day
+		icon = GFX_goal_WRF_Wolf_Vic
 		x = 11
 		y = 8
 		cost = 2
@@ -250,7 +228,15 @@ focus_tree = {
            focus = CRW_Invite_Republic 
         }
 		completion_reward = {
-        
+        declare_war_on = {
+    	target = ADN
+    	type = annex_everything
+		}
+		ADN = {
+        every_owned_state = {
+        add_core_of = CRW
+        }    
+        }
 		hidden_effect = {
 		}
 		}
@@ -258,7 +244,7 @@ focus_tree = {
 
     focus = {
 		id = CRW_Prepare_Great_War
-		icon = GFX_goal_WRF_New_Day
+		icon = GFX_goal_WRF_Dehumanize
 		x = 10
 		y = 9
 		cost = 2
@@ -273,27 +259,15 @@ focus_tree = {
            focus = CRW_Destroy_Greywolfs 
         }
 		completion_reward = {
-        
-		hidden_effect = {
+        declare_war_on = {
+    	target = ANK
+    	type = annex_everything
 		}
-		}
-	}
-
-    focus = {
-		id = CRW_Destroy_Fascists
-		icon = GFX_goal_WRF_New_Day
-		x = 10
-		y = 10
-		cost = 2
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-        prerequisite = {
-           focus = CRW_Prepare_Great_War 
+		ANK = {
+        every_owned_state = {
+        add_core_of = CRW
+        }    
         }
-		completion_reward = {
-        
 		hidden_effect = {
 		}
 		}
@@ -301,7 +275,7 @@ focus_tree = {
 
     focus = {
 		id = CRW_Thracian_Arms
-		icon = GFX_goal_WRF_New_Day
+		icon = GFX_goal_WRF_Opening_Up
 		x = 11
 		y = 4
 		cost = 2
@@ -313,7 +287,11 @@ focus_tree = {
            focus = CRW_Deal_Greece 
         }
 		completion_reward = {
-        
+        add_equipment_to_stockpile = {
+				    type = infantry_equipment
+				    amount = 5000
+				    producer = CRW
+				}
 		hidden_effect = {
 		}
 		}
@@ -323,34 +301,22 @@ focus_tree = {
 
     focus = {
 		id = CRW_Western_Consolidate
-		icon = GFX_goal_WRF_New_Day
+		icon = GFX_goal_ARM_Status_of_Anatolia
 		x = 17
-		y = 0
-		cost = 2
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-        
-		hidden_effect = {
-		}
-		}
-	}
-
-    focus = {
-		id = CRW_Question_Identity
-		icon = GFX_goal_WRF_New_Day
-		x = 19
 		y = 1
-		cost = 2
+		cost = 1
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
 		}
-        prerequisite = {
-            focus = CRW_Western_Consolidate
-        }
+		available = {
+		ANK = {
+		exists = no	
+		}	
+		ADN = {
+		exists = no 	
+		}
+		}
 		completion_reward = {
         
 		hidden_effect = {
@@ -360,7 +326,7 @@ focus_tree = {
 
     focus = {
 		id = CRW_Save_Armenia
-		icon = GFX_goal_WRF_New_Day
+		icon = GFX_goal_ARM_Father_of_the_National_Liberation
 		x = 19
 		y = 2
 		cost = 2
@@ -372,7 +338,10 @@ focus_tree = {
             focus = CRW_Western_Consolidate
         }
 		completion_reward = {
-        
+			declare_war_on = {
+    	target = ARM
+    	type = annex_everything
+		}
 		hidden_effect = {
 		}
 		}
@@ -380,13 +349,18 @@ focus_tree = {
 
     focus = {
 		id = CRW_Brotherhood
-		icon = GFX_goal_WRF_New_Day
+		icon = GFX_goal_ARM_Protect_the_Common_Folk
 		x = 18
 		y = 3
 		cost = 2
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+		ARM = {
+			exists = no
+		}	
 		}
         prerequisite = {
             focus = CRW_Purge_Commies
@@ -395,47 +369,12 @@ focus_tree = {
             focus = CRW_Save_Armenia
         }
 		completion_reward = {
-        
-		hidden_effect = {
-		}
-		}
-	}
-
-    focus = {
-		id = CRW_JFK_Policies
-		icon = GFX_goal_WRF_New_Day
-		x = 15
-		y = 1
-		cost = 2
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-        prerequisite = {
-            focus = CRW_Western_Consolidate
-        }
-		completion_reward = {
-        
-		hidden_effect = {
-		}
-		}
-	}
-
-    focus = {
-		id = CRW_Rehabilate_Nationalists
-		icon = GFX_goal_WRF_New_Day
-		x = 17
-		y = 1
-		cost = 2
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-        prerequisite = {
-            focus = CRW_Western_Consolidate
-        }
-		completion_reward = {
-        
+		add_stability = -0.10
+		add_political_power = -300	
+        add_state_core = 353
+		add_state_core = 835
+		add_state_core = 800
+		add_state_core = 230
 		hidden_effect = {
 		}
 		}
@@ -443,7 +382,7 @@ focus_tree = {
 
     focus = {
 		id = CRW_Purge_Commies
-		icon = GFX_goal_WRF_New_Day
+		icon = GFX_goal_WRF_Eradicate_Nationalism
 		x = 17
 		y = 2
 		cost = 2
@@ -452,10 +391,14 @@ focus_tree = {
 			factor = 1
 		}
         prerequisite = {
-            focus = CRW_Rehabilate_Nationalists
+            focus = CRW_Western_Consolidate
         }
 		completion_reward = {
-        
+        add_stability = -0.10
+		add_manpower = -3000
+		add_state_core = 355
+		add_state_core = 356
+		add_state_core = 839
 		hidden_effect = {
 		}
 		}
@@ -463,7 +406,7 @@ focus_tree = {
 
     focus = {
 		id = CRW_Federal_System
-		icon = GFX_goal_WRF_New_Day
+		icon = GFX_goal_WRF_TurkoIslamic
 		x = 15
 		y = 2
 		cost = 2
@@ -472,10 +415,10 @@ focus_tree = {
 			factor = 1
 		}
         prerequisite = {
-            focus = CRW_JFK_Policies
+            focus = CRW_Western_Consolidate
         }
 		completion_reward = {
-        
+        add_ideas = Federal_Gov_Idea
 		hidden_effect = {
 		}
 		}
@@ -483,7 +426,7 @@ focus_tree = {
 
     focus = {
 		id = CRW_Reform_Banking
-		icon = GFX_goal_WRF_New_Day
+		icon = GFX_goal_lobbying
 		x = 16
 		y = 3
 		cost = 2
@@ -498,7 +441,30 @@ focus_tree = {
             focus = CRW_Federal_System
         }
 		completion_reward = {
-        
+        random_owned_state = {
+		add_building_construction = {
+   		type = industrial_complex
+    	level = 2
+    	instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 2
+		}
+		random_owned_state = {
+		add_building_construction = {
+   		type = industrial_complex
+    	level = 2
+    	instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 2
+		}
+		random_owned_state = {
+		add_building_construction = {
+   		type = infrastructure
+    	level = 2
+    	instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 2	
+		}	  
 		hidden_effect = {
 		}
 		}
@@ -506,7 +472,7 @@ focus_tree = {
 
     focus = {
 		id = CRW_Change_Leadership
-		icon = GFX_goal_WRF_New_Day
+		icon = GFX_goal_compromise_junkers
 		x = 17
 		y = 4
 		cost = 2
@@ -521,189 +487,10 @@ focus_tree = {
             focus = CRW_Brotherhood
         }
 		completion_reward = {
-        
+        country_event = { id = jfk.4 }
 		hidden_effect = {
 		}
 		}
 	}
 
-    focus = {
-		id = CRW_president_jfk
-		icon = GFX_goal_WRF_New_Day
-		x = 15
-		y = 5
-		cost = 2
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-        prerequisite = {
-            focus = CRW_Change_Leadership
-        }
-		completion_reward = {
-        
-		hidden_effect = {
-		}
-		}
-	}
-
-    focus = {
-		id = CRW_loved_chairman
-		icon = GFX_goal_WRF_New_Day
-		x = 15
-		y = 6
-		cost = 2
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-        prerequisite = {
-            focus = CRW_president_jfk
-        }
-		completion_reward = {
-        
-		hidden_effect = {
-		}
-		}
-	}
-
-    focus = {
-		id = CRW_Anatolian_Unity
-		icon = GFX_goal_WRF_New_Day
-		x = 15
-		y = 7
-		cost = 2
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-        prerequisite = {
-            focus = CRW_loved_chairman
-        }
-		completion_reward = {
-        
-		hidden_effect = {
-		}
-		}
-	}
-
-    focus = {
-		id = CRW_president_nixon
-		icon = GFX_goal_WRF_New_Day
-		x = 17
-		y = 5
-		cost = 2
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-        prerequisite = {
-            focus = CRW_Change_Leadership
-        }
-		completion_reward = {
-        
-		hidden_effect = {
-		}
-		}
-	}
-
-    focus = {
-		id = CRW_Snash_Nepotism
-		icon = GFX_goal_WRF_New_Day
-		x = 17
-		y = 6
-		cost = 2
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-        prerequisite = {
-            focus = CRW_president_nixon
-        }
-		completion_reward = {
-        
-		hidden_effect = {
-		}
-		}
-	}
-
-    focus = {
-		id = CRW_Turkish_supremacy
-		icon = GFX_goal_WRF_New_Day
-		x = 17
-		y = 7
-		cost = 2
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-        prerequisite = {
-            focus = CRW_Snash_Nepotism
-        }
-		completion_reward = {
-        
-		hidden_effect = {
-		}
-		}
-	}
-
-    focus = {
-		id = CRW_president_mecit
-		icon = GFX_goal_WRF_New_Day
-		x = 19
-		y = 5
-		cost = 2
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-        prerequisite = {
-            focus = CRW_Change_Leadership
-        }
-		completion_reward = {
-        
-		hidden_effect = {
-		}
-		}
-	}
-
-    focus = {
-		id = CRW_secular_monarchy
-		icon = GFX_goal_WRF_New_Day
-		x = 19
-		y = 6
-		cost = 2
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-        prerequisite = {
-            focus = CRW_president_mecit
-        }
-		completion_reward = {
-        
-		hidden_effect = {
-		}
-		}
-	}
-
-    focus = {
-		id = CRW_New_Ottomans
-		icon = GFX_goal_WRF_New_Day
-		x = 19
-		y = 7
-		cost = 2
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-        prerequisite = {
-            focus = CRW_secular_monarchy
-        }
-		completion_reward = {
-        
-		hidden_effect = {
-		}
-		}
-	}
 }
