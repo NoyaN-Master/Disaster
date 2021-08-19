@@ -609,8 +609,8 @@ focus = {
 		prerequisite = { focus = NGU_Ideologe }						
 		completion_reward = {
 		add_timed_idea = {
-		days = NGU_pacify_1
-		days = 100	
+		idea = NGU_pacify_1
+		days = 120	
 		}	
 		}
 	}
@@ -647,11 +647,8 @@ focus = {
         prerequisite = { focus = NGU_Strasserist_Ending }
 										
 		completion_reward = {
-		add_timed_idea = {
-		days = NGU_pacify_2
-		days = 100	
-		}		
-		}
+		add_timed_idea ={idea = NGU_pacify_2 days = 120}
+	}
 	}
 focus = {
 		id = NGU_Our_Revolution

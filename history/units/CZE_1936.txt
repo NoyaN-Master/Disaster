@@ -103,7 +103,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 7
 		}
-		location = 9567
+		location = 11401
 		division_template = "Pěší divize"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
@@ -117,7 +117,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 10
 		}
-		location = 11522
+		location = 6562
 		division_template = "Pěší divize"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
@@ -128,7 +128,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 11
 		}
-		location = 3581
+		location = 3583
 		division_template = "Pěší divize"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
@@ -136,7 +136,7 @@ units = {
 	}
 	division = {
 		name = "3. jezdecká brigáda"
-		location = 6604
+		location = 9569
 		division_template = "Jezdecká brigáda"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
@@ -190,7 +190,7 @@ units = {
 	# VI Sbor
 	division = {
 		name = "4. jezdecká brigáda"
-		location = 9539
+		location = 3569
 		division_template = "Jezdecká brigáda"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
