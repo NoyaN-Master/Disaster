@@ -219,7 +219,7 @@ SKL_black_army = {
 			experience_gain_army = 0.1
 			stability_factor = -0.10
 			war_support_factor = 0.1
-			army_attack_factor = 1.0
+			army_attack_factor = 0.01
 			conscription = -0.04
 			}
 		}
