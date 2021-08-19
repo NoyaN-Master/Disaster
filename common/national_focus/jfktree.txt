@@ -1,0 +1,709 @@
+focus_tree = {
+	id = Ataturk_Phase_2
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+		}
+	}
+	continuous_focus_position = { x = 800 y = 10000 }
+
+
+    focus = {
+		id = CRW_A_Marine
+		icon = GFX_goal_WRF_New_Day
+		x = 10
+		y = 0
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = CRW_Our_Problems
+		icon = GFX_goal_WRF_New_Day
+		x = 8
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+           focus = CRW_A_Marine 
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = CRW_A_Foreigner
+		icon = GFX_goal_WRF_New_Day
+		x = 10
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+           focus = CRW_A_Marine 
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = CRW_Call_Washington
+		icon = GFX_goal_WRF_New_Day
+		x = 12
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+           focus = CRW_A_Marine 
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = CRW_Our_Plan
+		icon = GFX_goal_WRF_New_Day
+		x = 10
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+           focus = CRW_A_Foreigner 
+        }
+        prerequisite = {
+           focus = CRW_Our_Problems 
+        }
+        prerequisite = {
+           focus = CRW_Call_Washington 
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = CRW_Deal_Greece
+		icon = GFX_goal_WRF_New_Day
+		x = 10
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+           focus = CRW_Our_Plan 
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = CRW_Reach_Ismet
+		icon = GFX_goal_WRF_New_Day
+		x = 9
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+           focus = CRW_Deal_Greece 
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = CRW_Federal_Forces
+		icon = GFX_goal_WRF_New_Day
+		x = 10
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+           focus = CRW_Thracian_Arms 
+        }
+        prerequisite = {
+           focus = CRW_Reach_Ismet 
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = CRW_Invade_TKOML
+		icon = GFX_goal_WRF_New_Day
+		x = 10
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+           focus = CRW_Federal_Forces 
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = CRW_Invite_Republic
+		icon = GFX_goal_WRF_New_Day
+		x = 10
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+           focus = CRW_Invade_TKOML 
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = CRW_The_Patriots
+		icon = GFX_goal_WRF_New_Day
+		x = 9
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+           focus = CRW_Invite_Republic 
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+
+    focus = {
+		id = CRW_Destroy_Greywolfs
+		icon = GFX_goal_WRF_New_Day
+		x = 11
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+           focus = CRW_Invite_Republic 
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = CRW_Prepare_Great_War
+		icon = GFX_goal_WRF_New_Day
+		x = 10
+		y = 9
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+           focus = CRW_The_Patriots 
+        }
+        prerequisite = {
+           focus = CRW_Destroy_Greywolfs 
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = CRW_Destroy_Fascists
+		icon = GFX_goal_WRF_New_Day
+		x = 10
+		y = 10
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+           focus = CRW_Prepare_Great_War 
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = CRW_Thracian_Arms
+		icon = GFX_goal_WRF_New_Day
+		x = 11
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+           focus = CRW_Deal_Greece 
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    #2nd part
+
+    focus = {
+		id = CRW_Western_Consolidate
+		icon = GFX_goal_WRF_New_Day
+		x = 17
+		y = 0
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = CRW_Question_Identity
+		icon = GFX_goal_WRF_New_Day
+		x = 19
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+            focus = CRW_Western_Consolidate
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = CRW_Save_Armenia
+		icon = GFX_goal_WRF_New_Day
+		x = 19
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+            focus = CRW_Western_Consolidate
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = CRW_Brotherhood
+		icon = GFX_goal_WRF_New_Day
+		x = 18
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+            focus = CRW_Purge_Commies
+        }
+        prerequisite = {
+            focus = CRW_Save_Armenia
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = CRW_JFK_Policies
+		icon = GFX_goal_WRF_New_Day
+		x = 15
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+            focus = CRW_Western_Consolidate
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = CRW_Rehabilate_Nationalists
+		icon = GFX_goal_WRF_New_Day
+		x = 17
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+            focus = CRW_Western_Consolidate
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = CRW_Purge_Commies
+		icon = GFX_goal_WRF_New_Day
+		x = 17
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+            focus = CRW_Rehabilate_Nationalists
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = CRW_Federal_System
+		icon = GFX_goal_WRF_New_Day
+		x = 15
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+            focus = CRW_JFK_Policies
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = CRW_Reform_Banking
+		icon = GFX_goal_WRF_New_Day
+		x = 16
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+            focus = CRW_Purge_Commies
+        }
+        prerequisite = {
+            focus = CRW_Federal_System
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = CRW_Change_Leadership
+		icon = GFX_goal_WRF_New_Day
+		x = 17
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+            focus = CRW_Reform_Banking
+        }
+        prerequisite = {
+            focus = CRW_Brotherhood
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = CRW_president_jfk
+		icon = GFX_goal_WRF_New_Day
+		x = 15
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+            focus = CRW_Change_Leadership
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = CRW_loved_chairman
+		icon = GFX_goal_WRF_New_Day
+		x = 15
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+            focus = CRW_president_jfk
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = CRW_Anatolian_Unity
+		icon = GFX_goal_WRF_New_Day
+		x = 15
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+            focus = CRW_loved_chairman
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = CRW_president_nixon
+		icon = GFX_goal_WRF_New_Day
+		x = 17
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+            focus = CRW_Change_Leadership
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = CRW_Snash_Nepotism
+		icon = GFX_goal_WRF_New_Day
+		x = 17
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+            focus = CRW_president_nixon
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = CRW_Turkish_supremacy
+		icon = GFX_goal_WRF_New_Day
+		x = 17
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+            focus = CRW_Snash_Nepotism
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = CRW_president_mecit
+		icon = GFX_goal_WRF_New_Day
+		x = 19
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+            focus = CRW_Change_Leadership
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = CRW_secular_monarchy
+		icon = GFX_goal_WRF_New_Day
+		x = 19
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+            focus = CRW_president_mecit
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = CRW_New_Ottomans
+		icon = GFX_goal_WRF_New_Day
+		x = 19
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = {
+            focus = CRW_secular_monarchy
+        }
+		completion_reward = {
+        
+		hidden_effect = {
+		}
+		}
+	}
+}

@@ -721,7 +721,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_The_Blackpins
-		icon = GFX_goal_national_chief
+		icon = GFX_goal_CIB_izmir
 		x = 19
 		y = 16
 		cost = 3
@@ -743,7 +743,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Question_Parties
-		icon = GFX_goal_national_chief
+		icon = GFX_goal_WRF_Reformists
 		x = 18
 		y = 17
 		cost = 3
@@ -766,7 +766,7 @@ focus_tree = {
 	
 	focus = {
 		id = WRF_Election_Day
-		icon = GFX_goal_national_chief
+		icon = GFX_goal_election
 		x = 19
 		y = 18
 		cost = 3
@@ -1426,7 +1426,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Focus_Regions
-		icon = GFX_goal_national_chief
+		icon = GFX_goal_WRF_Pasha
 		x = 20
 		y = 17
 		cost = 3
