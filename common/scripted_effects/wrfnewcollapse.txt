@@ -5,7 +5,13 @@ transfer_state = 187
 transfer_state = 183
 transfer_state = 184
 }
+WRF = {
+transfer_navy = {
+    target = CRW
+}	
+}
 CRW = {
+	load_oob = jfkoob
 	add_equipment_to_stockpile = {
 				    type = infantry_equipment
 				    amount = 10000
@@ -48,6 +54,7 @@ load_focus_tree = generic_focus
 set_country_flag = Roatta_Warlord    
 }
 IZM = {
+	load_oob = patriotsoob
 	add_equipment_to_stockpile = {
 				    type = infantry_equipment
 				    amount = 10000
@@ -90,6 +97,7 @@ load_focus_tree = generic_focus
 set_country_flag = Roatta_Warlord       
 }
 ANK = {
+	load_oob = smyrnaoob
 	add_equipment_to_stockpile = {
 				    type = infantry_equipment
 				    amount = 10000
@@ -134,6 +142,7 @@ ANK = {
 		}
         
 CIB = {
+	load_oob = atsizoob
 	add_equipment_to_stockpile = {
 				    type = infantry_equipment
 				    amount = 10000
@@ -172,6 +181,7 @@ set_country_flag = Roatta_Warlord
 }
 
 KLG = {
+	load_oob = klgoob
 	add_equipment_to_stockpile = {
 				    type = infantry_equipment
 				    amount = 10000
@@ -197,6 +207,7 @@ load_focus_tree = generic_focus
 set_country_flag = Roatta_Warlord
 }
 ARM = {
+	load_oob = ARM_uprising
 	add_equipment_to_stockpile = {
 				    type = infantry_equipment
 				    amount = 5000
@@ -227,6 +238,7 @@ transfer_state = 835
 transfer_state = 353    
 }
 ADN = {
+	load_oob = turkesoob
 	add_equipment_to_stockpile = {
 				    type = infantry_equipment
 				    amount = 10000
@@ -271,6 +283,7 @@ load_focus_tree = generic_focus
 set_country_flag = Roatta_Warlord          
 }
 TRA = {
+	load_oob = tkomloob
 	add_equipment_to_stockpile = {
 				    type = infantry_equipment
 				    amount = 10000
@@ -304,6 +317,7 @@ create_country_leader = {
 }
 }
 AZR = {
+	load_oob = azroob
 	add_equipment_to_stockpile = {
 				    type = infantry_equipment
 				    amount = 10000
