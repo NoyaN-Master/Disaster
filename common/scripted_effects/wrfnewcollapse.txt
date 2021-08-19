@@ -11,6 +11,44 @@ transfer_navy = {
 }	
 }
 CRW = {
+	create_field_marshal = {
+	name = "John F Kennedy"
+	portrait_path = "gfx/leaders/CRW/CRW_JFK.png"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 2
+	}
+	create_corps_commander = {
+	name = "Richard Nixon"
+	portrait_path = "gfx/leaders/CRW/CRW_Nix.png"
+	traits = {
+		politically_connected
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	}
+	create_corps_commander = {
+	name = "Necip Fazıl"
+	portrait_path = "gfx/leaders/CRW/CRW_Faz.png"
+	traits = {
+		politically_connected
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 3
+	}
 	load_oob = jfkoob
 	add_equipment_to_stockpile = {
 				    type = infantry_equipment
@@ -54,6 +92,56 @@ load_focus_tree = generic_focus
 set_country_flag = Roatta_Warlord    
 }
 IZM = {
+	create_corps_commander = {
+	name = "Cemal Madanoğlu"
+	portrait_path = "gfx/leaders/IZM/IZM_Madan.png"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	}
+	create_corps_commander = {
+	name = "Ethem Necat"
+	portrait_path = "gfx/leaders/IZM/IZM_Ethem_Nejat_Drip.png"
+	traits = {
+		politically_connected
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	}
+	create_field_marshal = {
+	name = "Fevzi Çakmak"
+	portrait_path = "gfx/leaders/WRF/Portrait_WRF_Fevzi_Cakmak.png"
+	traits = {
+		politically_connected
+	}
+	skill = 5
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 5
+	}
+	create_field_marshal = {
+	name = "Ismet Inonu"
+	portrait_path = "gfx/leaders/WRF/Portrait_WRF_Ismet.png"
+	traits = {
+		politically_connected
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+	}
 	load_oob = patriotsoob
 	add_equipment_to_stockpile = {
 				    type = infantry_equipment
@@ -97,6 +185,62 @@ load_focus_tree = generic_focus
 set_country_flag = Roatta_Warlord       
 }
 ANK = {
+	create_corps_commander = {
+	name = "Esat Bozkurt"
+	portrait_path = "gfx/leaders/ANK/ANK_Esat.png"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+	}
+	create_field_marshal = {
+	name = "Kazım Orbay"
+	portrait_path = "gfx/leaders/ANK/ANK_Kazim_Orbay.png"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 5
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 5
+	}
+	create_corps_commander = {
+	name = "Samet Türkoğlu"
+	portrait_path = "gfx/leaders/CIB/Portrait_CIB_Samet_Enverist.png"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+	}
+	create_corps_commander = {
+	name = "Tahsin Yazıcı"
+	portrait_path = "gfx/leaders/CIB/Portrait_OTT_Tahsin_Yazici.png"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+	}
 	load_oob = smyrnaoob
 	add_equipment_to_stockpile = {
 				    type = infantry_equipment
@@ -142,6 +286,34 @@ ANK = {
 		}
         
 CIB = {
+	create_field_marshal = {
+	name = "Nihal Atsız"
+	portrait_path = "gfx/leaders/CIB/CIB_Atsiz.png"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+	}
+	create_corps_commander = {
+	name = "Mustafa Muğlalı"
+	portrait_path = "gfx/leaders/CIB/Portrait_CIB_Mustafa_Muglali.png"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+	}
 	load_oob = atsizoob
 	add_equipment_to_stockpile = {
 				    type = infantry_equipment
@@ -181,6 +353,20 @@ set_country_flag = Roatta_Warlord
 }
 
 KLG = {
+	create_field_marshal = {
+	name = "Nuri Killigil"
+	portrait_path = "gfx/leaders/KLG/KLG_Nuri_Killigil.tga"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+	}
 	load_oob = klgoob
 	add_equipment_to_stockpile = {
 				    type = infantry_equipment
@@ -238,6 +424,48 @@ transfer_state = 835
 transfer_state = 353    
 }
 ADN = {
+	create_corps_commander = {
+	name = "Alparslan Türkeş"
+	portrait_path = "gfx/leaders/WRF/WRF_Turkes.png"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+	}
+	create_corps_commander = {
+	name = "Nuri Yamut"
+	portrait_path = "gfx/leaders/WRF/Portrait_OTT_Nuri_Yamut.png"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 5
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 5
+	}
+	create_field_marshal = {
+	name = "Fevzi Çakmak"
+	portrait_path = "gfx/leaders/WRF/Portrait_WRF_Fevzi_Cakmak.png"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 5
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 5
+	}
 	load_oob = turkesoob
 	add_equipment_to_stockpile = {
 				    type = infantry_equipment
@@ -283,6 +511,48 @@ load_focus_tree = generic_focus
 set_country_flag = Roatta_Warlord          
 }
 TRA = {
+	create_corps_commander = {
+	name = "Nazım Hikmet"
+	portrait_path = "gfx/leaders/IZM/IZM_Nazim_Hikmet.tga"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+	}
+	create_field_marshal = {
+	name = "Mustafa Suphi"
+	portrait_path = "gfx/leaders/TRA/TRA_Suphi.png"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 5
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 5
+	}
+	create_corps_commander = {
+	name = "Şevket Aydemir"
+	portrait_path = "gfx/leaders/TRA/TRA_Aydemir.tga"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+	}
 	load_oob = tkomloob
 	add_equipment_to_stockpile = {
 				    type = infantry_equipment
