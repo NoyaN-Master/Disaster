@@ -1,5 +1,5 @@
-capital = 608
-oob = "CHI_1936"
+capital = 44
+oob = ""
 
 set_technology = {
 	infantry_weapons = 1
@@ -15,43 +15,39 @@ set_technology = {
 	basic_light_tank = 1
 }
 
-set_convoys = 87
+set_convoys = 50
 
 set_politics = {
-	ruling_party = social_democrat
+	ruling_party = authoritarian_socialist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
-add_ideas = 	warlord 
-add_ideas = 	interventionism 
-add_ideas = 	semi_industrial_society
-add_ideas =     ROC_Colab_Govern
-add_ideas =     ROC_sucess_reforms
-add_ideas =     ROC_untrained_army
 
 set_popularities = {
 	conservative = 0
 	liberal = 0
-	social_democrat = 40
+	social_democrat = 20
 	libertarian_socialist = 0
-	authoritarian_socialist = 30
+	authoritarian_socialist = 70
 	unisocialist = 0
 	authoritarian_democrat = 0
-	autocratic = 30
+	autocratic = 10
 	ultranationalist = 0
 	revolutionary_nationalist = 0
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
+add_ideas = warlord
+add_ideas = interventionism 
+add_ideas = semi_industrial_society
 
 create_country_leader = {
-	name = "Wang Jingwei"
-	#desc = "CHI_Yuan_Keding_desc"
-	picture = "ROC_Wang.tga"
+	name = "Mao Zhedong"
+	#desc = "ABL_Zog_desc"
+	picture = "PRC_Mao.tga"
 	expire = "2020.1.1"
-	ideology = social_democrat_subideology
+	ideology = authoritarian_socialist_subideology
 	traits = {
-		#
 	}
 }

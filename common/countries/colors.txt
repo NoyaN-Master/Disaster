@@ -367,8 +367,8 @@ YUN = {
 }
 
 ROC = {
-	color = rgb { 204 170 0 }  
-	color_ui = rgb { 204 170 0 }
+	color = rgb { 0 76 153 }  
+	color_ui = rgb { 0 76 153 }
 }
 
 TEX = {
@@ -768,7 +768,7 @@ TVA = {
 EVR = {
 	color = rgb { 247 223 69 }
 	color_ui = rgb { 247 223 69 }
-
+}
 	
 SOV = {
 	color = rgb { 125 13 24 }
@@ -809,9 +809,19 @@ CCC = {
    	color = rgb { 96 56 43 }
 	color_ui = rgb { 96 56 43 }
 }
-
 BOS = {
-
 	color = rgb { 16 120 2 }
 	color_ui = rgb { 16 120 2 }
+}
+PRC = {
+	color = rgb { 255 0 0 }
+	color_ui = rgb { 255 0 0 }
+}
+CRF = {
+	color = rgb { 51 0 51 }
+	color_ui = rgb { 51 0 51 }
+}
+QID = {
+	color = rgb { 204 170 0 }
+	color_ui = rgb { 204 170 0 }
 }
