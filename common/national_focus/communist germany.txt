@@ -89,9 +89,9 @@ focus = {
 		x = 12
 		y = 0
 		cost = 0
-		allow_branch = {
-			has_country_flag = NGU_red_baron_victory
-		}
+	#	allow_branch = {
+	#		has_country_flag = NGU_red_baron_victory
+	#	}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = red_baron_solidified_check_tt
@@ -391,26 +391,12 @@ focus = {
 		}
 	}
 	focus = {
-		id = NGU_start_workers_congress
-		icon = NGU
-		cost = 1
-		relative_position_id = NGU_endless_revolution
-		x = 0
-		y = 2
-		completion_reward = {
-			custom_effect_tooltip = NGU_start_workers_congress_tt
-		}
-		prerequisite = {
-			focus = NGU_in_berlin
-		}
-	}
-	focus = {
 		id = NGU_the_congress_crisis
 		icon = NGU
 		cost = 0
 		relative_position_id = NGU_endless_revolution
 		x = 0
-		y = 3
+		y = 2
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = NGU_congress_crisis_trigger_tt
@@ -425,8 +411,40 @@ focus = {
 		}
 		completion_reward = {}
 		prerequisite = {
-			focus = NGU_start_workers_congress
+			focus = NGU_in_berlin
 		}
+	}
+	#SUCCESSORS
+	focus = {
+		id = NGU_hoelz_holds_on
+		icon = NGU
+		cost = 0
+		relative_position_id = NGU_the_congress_crisis
+		x = 0
+		y = 1
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = NGU_HOELZ_CRISIS_VICTORY_tt
+				has_country_flag = NGU_HOELZ_CRISIS_VICTORY
+			}
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = NGU_HOELTZ_CRISIS_VICTORY_tt
+				has_country_flag = NGU_HOELZ_CRISIS_VICTORY
+			}
+		}
+		prerequisite = {
+			focus = NGU_the_congress_crisis
+		}
+	}
+	focus = {
+		id = NGU_
+		icon = 
+		cost = x
+		x = x
+		y = x
+		completion_reward = { }
 	}
 #### END OF HOELTZ STARTING TREE ####
 
@@ -476,16 +494,58 @@ focus = {
 		completion_reward = { }
 		prerequisite = {
 			focus = NGU_incite_insurrections
+		}
+		prerequisite = {
 			focus = NGU_wartime_measures
 		}
 	}
 	focus = {
-		id = NGU_
-		icon = 
-		cost = x
-		x = x
-		y = x
+		id = NGU_schleswig_war
+		icon = NGU
+		cost = 3
+		relative_position_id = NGU_communist_preparing_unification
+		x = 0
+		y = 1
 		completion_reward = { }
+		prerequisite = {
+			focus = NGU_communist_preparing_unification
+		}
+	}
+	focus = {
+		id = NGU_TROLL_THE_POLES
+		icon = NGU
+		cost = 3
+		relative_position_id = NGU_communist_preparing_unification
+		x = -2
+		y = 1
+		completion_reward = { }
+		prerequisite = {
+			focus = NGU_communist_preparing_unification
+		}
+	}
+	focus = {
+		id = NGU_retake_south_germany
+		icon = NGU
+		relative_position_id = NGU_communist_preparing_unification
+		cost = 3
+		x = 2
+		y = 1
+		completion_reward = { }
+		prerequisite = {
+			focus = NGU_communist_preparing_unification
+		}
+	}
+	focus = {
+		id = NGU_BOLSHIE_ONWARDS
+		icon = NGU
+		cost = 3
+		relative_position_id = NGU_communist_preparing_unification
+		x = 0
+		y = 2
+		completion_reward = { }
+		prerequisite = { focus = NGU_schleswig_war }
+		prerequisite = { focus = NGU_TROLL_THE_POLES }
+		prerequisite = { focus = NGU_retake_south_germany }
 	}
 ####goebbels
 focus = {
