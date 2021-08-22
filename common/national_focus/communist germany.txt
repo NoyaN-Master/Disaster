@@ -288,7 +288,7 @@ focus = {
 		cost = 3
 		relative_position_id = NGU_the_radicals_destroyed
 		x = 0
-		y = 2
+		y = 2 
 		completion_reward = {}
 		prerequisite = { focus = NGU_break_the_bankers}
 		prerequisite = { focus = NGU_appeal_to_students}
@@ -373,6 +373,119 @@ focus = {
 		completion_reward = {}
 		prerequisite = { focus = NGU_forced_egalitarianism}
 		prerequisite = { focus = NGU_state_media }
+	}
+	focus = {
+		id = NGU_in_berlin
+		icon = NGU
+		cost = 1
+		relative_position_id = NGU_endless_revolution
+		x = 0
+		y = 1
+		available = {
+			owns_state = 64
+		}
+		completion_reward = {
+		}
+		prerequisite = {
+			focus = NGU_endless_revolution
+		}
+	}
+	focus = {
+		id = NGU_start_workers_congress
+		icon = NGU
+		cost = 1
+		relative_position_id = NGU_endless_revolution
+		x = 0
+		y = 2
+		completion_reward = {
+			custom_effect_tooltip = NGU_start_workers_congress_tt
+		}
+		prerequisite = {
+			focus = NGU_in_berlin
+		}
+	}
+	focus = {
+		id = NGU_the_congress_crisis
+		icon = NGU
+		cost = 0
+		relative_position_id = NGU_endless_revolution
+		x = 0
+		y = 3
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = NGU_congress_crisis_trigger_tt
+				has_country_flag = NGU_congress_crisis
+			}
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = NGU_congress_crisis_trigger_tt
+				has_country_flag = NGU_congress_crisis
+			}
+		}
+		completion_reward = {}
+		prerequisite = {
+			focus = NGU_start_workers_congress
+		}
+	}
+#### END OF HOELTZ STARTING TREE ####
+
+##BOLSHIE DIPLO##
+	focus = {
+		id = NGU_mecklenburg_trolling
+		icon = NGU
+		cost = 0
+		available = {
+			always = no
+		}
+		x = 3
+		y = 7
+		completion_reward = { }
+	}
+	focus = {
+		id = NGU_wartime_measures
+		icon = NGU
+		cost = 3
+		relative_position_id = NGU_mecklenburg_trolling
+		x = -1
+		y = 1
+		completion_reward = { }
+		prerequisite = {
+			focus = NGU_mecklenburg_trolling
+		}
+	}
+	focus = {
+		id = NGU_incite_insurrections
+		icon = NGU
+		cost = 3
+		relative_position_id = NGU_mecklenburg_trolling
+		x = 1
+		y = 1
+		completion_reward = { }
+		prerequisite = {
+			focus = NGU_mecklenburg_trolling
+		}
+	}
+	focus = {
+		id = NGU_communist_preparing_unification
+		icon = NGU
+		cost = 2
+		relative_position_id = NGU_mecklenburg_trolling
+		x = 0
+		y = 2
+		completion_reward = { }
+		prerequisite = {
+			focus = NGU_incite_insurrections
+			focus = NGU_wartime_measures
+		}
+	}
+	focus = {
+		id = NGU_
+		icon = 
+		cost = x
+		x = x
+		y = x
+		completion_reward = { }
 	}
 ####goebbels
 focus = {
