@@ -439,12 +439,52 @@ focus = {
 		}
 	}
 	focus = {
-		id = NGU_
-		icon = 
-		cost = x
-		x = x
-		y = x
+		id = NGU_thalmann_victorious
+		icon = NGU
+		cost = 0
+		relative_position_id = NGU_the_congress_crisis
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = NGU_THALMANN_CRISIS_VICTORY_tt
+				has_country_flag = NGU_THALMANN_CRISIS_VICTORY
+			}
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = NGU_THALMANN_CRISIS_VICTORY_tt
+				has_country_flag = NGU_THALMANN_CRISIS_VICTORY
+			}
+		}
+		x = -3
+		y = 1
 		completion_reward = { }
+		prerequisite = {
+			focus = NGU_the_congress_crisis
+		}
+	}
+	focus = {
+		id = NGU_honecker_triumphant
+		icon = NGU
+		cost = 0
+		relative_position_id = NGU_the_congress_crisis
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = NGU_honecker_CRISIS_VICTORY_tt
+				has_country_flag = NGU_honecker_CRISIS_VICTORY
+			}
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = NGU_honecker_CRISIS_VICTORY_tt
+				has_country_flag = NGU_honecker_CRISIS_VICTORY
+			}
+		}
+		x = -5
+		y = 1
+		completion_reward = { }
+		prerequisite = {
+			focus = NGU_the_congress_crisis
+		}
 	}
 #### END OF HOELTZ STARTING TREE ####
 
