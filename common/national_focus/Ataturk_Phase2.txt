@@ -1467,19 +1467,15 @@ focus_tree = {
 		add_political_power = -200
 		add_stability = 0.05
 		add_popularity = {
-    	ideology = fascism
-    	popularity = 0.1
-		}
-		add_popularity = {
     	ideology = conservative
-    	popularity = 0.1
+    	popularity = 0.15
 		}
 		add_popularity = {
     	ideology = liberal
     	popularity = 0.1
 		}
 		add_popularity = {
-    	ideology = revolutionary_nationalist
+    	ideology = ultranationalist
     	popularity = 0.05
 		}
 		add_popularity = {
@@ -1487,11 +1483,7 @@ focus_tree = {
     	popularity = 0.1
 		}
 		add_popularity = {
-    	ideology = unisocialist
-    	popularity =  0.05
-		}
-		add_popularity = {
-    	ideology = despotic
+    	ideology = autocratic
     	popularity = 0.1
 		}
 		hidden_effect = {

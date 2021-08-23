@@ -1,5 +1,12 @@
 spriteTypes = {	
-
+	spriteType = {
+		name = "GFX_goal_CRW_kurd_autonomy"
+		textureFile = "gfx/interface/goals/CRW_kurd_autonomy.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CRW_kill_atsiz"
+		texturefile = "gfx/interface/goals/CRW_kill_atsiz.png"
+	}
 	SpriteType = {
 		name = "GFX_goal_ARM_Damadians_Folly"
 		texturefile = "gfx/interface/goals/ARM_Damadians_Folly.png"			
