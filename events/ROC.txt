@@ -1,0 +1,384 @@
+############
+#ROC EVENTS#
+############
+
+add_namespace = roc
+
+country_event = { #Intro Event
+	id = roc.1
+	title = roc.1.t
+	desc = roc.1.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.1.a
+        ai_chance = {factor = 100}
+		
+	}
+}
+country_event = { #Islamic Muslim Seperation
+	id = roc.2
+	title = roc.2.t
+	desc = roc.2.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.2.a
+        ai_chance = {factor = 100}
+		custom_effect_tooltip = ROC_ETR_TT
+		hidden_effect = {
+		ETR = {
+  transfer_state = 619
+  transfer_state = 617
+  transfer_state = 287
+  transfer_state = 760
+  transfer_state = 759
+  transfer_state = 756
+  transfer_state = 755
+  transfer_state = 604
+  
+  619 = {
+add_core_of = ETR
+}
+  617 = {
+add_core_of = ETR
+}
+  287 = {
+add_core_of = ETR
+}
+  760 = {
+add_core_of = ETR
+}
+  759 = {
+add_core_of = ETR
+}
+  756 = {
+add_core_of = ETR
+}
+  755 = {
+add_core_of = ETR
+}
+  604 = {
+add_core_of = ETR
+     }
+    }
+   }		
+ }
+ option = {
+		name = roc.2.b
+        ai_chance = {factor = 0}
+		custom_effect_tooltip = ROC_ETR_TT_2
+		hidden_effect = {ETR= {change_tag_from = ROC}
+			ETR = {
+  transfer_state = 619
+  transfer_state = 617
+  transfer_state = 287
+  transfer_state = 760
+  transfer_state = 759
+  transfer_state = 756
+  transfer_state = 755
+  transfer_state = 604
+  
+  619 = {
+add_core_of = ETR
+}
+  617 = {
+add_core_of = ETR
+}
+  287 = {
+add_core_of = ETR
+}
+  760 = {
+add_core_of = ETR
+}
+  759 = {
+add_core_of = ETR
+}
+  756 = {
+add_core_of = ETR
+}
+  755 = {
+add_core_of = ETR
+}
+  604 = {
+add_core_of = ETR
+     }
+    }
+		}
+     }
+	}
+	 
+country_event = { #Spooky Dai Li Seperation
+	id = roc.3
+	title = roc.3.t
+	desc = roc.3.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.3.a
+        ai_chance = {factor = 100}
+		custom_effect_tooltip = ROC_CRF_TT
+		hidden_effect = {
+		CRF = {
+  transfer_state = 754
+  transfer_state = 616
+  transfer_state = 283
+  transfer_state = 746
+  transfer_state = 622
+  transfer_state = 615
+  
+  754 = {
+add_core_of = CRF
+}
+  616 = {
+add_core_of = CRF
+}
+  283 = {
+add_core_of = CRF
+}
+  746 = {
+add_core_of = CRF
+}
+  622 = {
+add_core_of = CRF
+}
+  615 = {
+add_core_of = CRF
+}
+    }
+   }		
+ }
+
+ option = {
+		name = roc.3.b
+        ai_chance = {factor = 0}
+		custom_effect_tooltip = ROC_CRF_TT_2
+		hidden_effect = {CRF= {change_tag_from = ROC}
+	CRF = {
+  transfer_state = 754
+  transfer_state = 616
+  transfer_state = 283
+  transfer_state = 746
+  transfer_state = 622
+  transfer_state = 615
+  
+  754 = {
+add_core_of = CRF
+}
+  616 = {
+add_core_of = CRF
+}
+  283 = {
+add_core_of = CRF
+}
+  746 = {
+add_core_of = CRF
+}
+  622 = {
+add_core_of = CRF
+}
+  615 = {
+add_core_of = CRF
+}
+    }
+		}
+     }
+	}
+	
+	country_event = { #Qing Dynasty Li Seperation
+	id = roc.4
+	title = roc.4.t
+	desc = roc.4.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.4.a
+        ai_chance = {factor = 100}
+		custom_effect_tooltip = ROC_QID_TT
+		hidden_effect = {
+		QID = {
+  transfer_state = 609
+  transfer_state = 608
+  transfer_state = 614
+  transfer_state = 597
+  transfer_state = 743
+  
+  609 = {
+add_core_of = QID
+}
+  608 = {
+add_core_of = QID
+}
+  614 = {
+add_core_of = QID
+}
+  597 = {
+add_core_of = QID
+}
+  743 = {
+add_core_of = QID
+}
+   }		
+ }
+}
+
+ option = {
+		name = roc.4.b
+        ai_chance = {factor = 0}
+		custom_effect_tooltip = ROC_QID_TT_2
+		hidden_effect = {QID= {change_tag_from = ROC}
+			QID = {
+  transfer_state = 609
+  transfer_state = 608
+  transfer_state = 614
+  transfer_state = 597
+  
+  609 = {
+add_core_of = QID
+}
+  608 = {
+add_core_of = QID
+}
+  614 = {
+add_core_of = QID
+}
+  597 = {
+add_core_of = QID
+}
+   }	
+    }
+		}
+     }
+
+country_event = { #Peoples Republic of China Seperation
+	id = roc.5
+	title = roc.5.t
+	desc = roc.5.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.5.a
+        ai_chance = {factor = 100}
+		custom_effect_tooltip = ROC_PRC_TT
+		hidden_effect = {
+		PRC = {
+  transfer_state = 752
+  transfer_state = 753
+  transfer_state = 605
+  transfer_state = 750
+  transfer_state = 620
+  transfer_state = 744
+  transfer_state = 607
+  transfer_state = 606
+  transfer_state = 613
+  transfer_state = 598
+  
+  752 = {
+add_core_of = PRC
+}
+  753 = {
+add_core_of = PRC
+}
+  605 = {
+add_core_of = PRC
+}
+  750 = {
+add_core_of = PRC
+}
+  620 = {
+add_core_of = PRC
+}
+744 = {
+add_core_of = PRC
+}
+607 = {
+add_core_of = PRC
+}
+606 = {
+add_core_of = PRC
+}
+613 = {
+add_core_of = PRC
+}
+598 = {
+add_core_of = PRC
+}
+   }		
+ }
+}
+
+ option = {
+		name = roc.5.b
+        ai_chance = {factor = 0}
+		custom_effect_tooltip = ROC_PRC_TT_2
+		hidden_effect = {PRC= {change_tag_from = ROC}
+			PRC = {
+  transfer_state = 752
+  transfer_state = 753
+  transfer_state = 605
+  transfer_state = 750
+  transfer_state = 620
+  transfer_state = 744
+  transfer_state = 607
+  transfer_state = 606
+  transfer_state = 613
+  transfer_state = 598
+  
+  752 = {
+add_core_of = PRC
+}
+  753 = {
+add_core_of = PRC
+}
+  605 = {
+add_core_of = PRC
+}
+  750 = {
+add_core_of = PRC
+}
+  620 = {
+add_core_of = PRC
+}
+744 = {
+add_core_of = PRC
+}
+607 = {
+add_core_of = PRC
+}
+606 = {
+add_core_of = PRC
+}
+613 = {
+add_core_of = PRC
+}
+598 = {
+add_core_of = PRC
+}
+   }
+		}
+     }

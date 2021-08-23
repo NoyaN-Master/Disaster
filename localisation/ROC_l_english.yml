@@ -1,7 +1,29 @@
 ﻿l_english:
 
 ####events
+roc.1.t:0 "Situation In China"
+roc.1.d:0 ""
+roc.1.a:0 "Onwards!"
 
+roc.2.t:0 "East Turkestan Republic Declares Independance"
+roc.2.d:0 ""
+roc.2.a:0 "Damnit"
+roc.2.b:0 "Play as East Turkestan"
+
+roc.3.t:0 "Chinese National Republic Declares Independance"
+roc.3.d:0 ""
+roc.3.a:0 "Tragic"
+roc.3.b:0 "Play as the Chinese National Republic"
+
+roc.4.t:0 "Qing Dynasty declares Independance"
+roc.4.d:0 ""
+roc.4.a:0 "Saddening"
+roc.4.b:0 "Play as the Qing Dynasty"
+
+roc.5.t:0 "Peoples Republic of China declares Independance"
+roc.5.d:0 ""
+roc.5.a:0 "Betrayal"
+roc.5.b:0 "Play as the Peoples Republic of China"
 ###Focus
 
 #####ideas
@@ -9,3 +31,15 @@ ROC_Colab_Govern:0 "Collaborative Government"
 ROC_sucess_reforms:0 "Sucessful Economical Reforms"
 ROC_untrained_army:0 "Incompetent Army"
 ###Decisions
+###Tool Tips
+ROC_ETR_TT:0 "§GEast Turkestan Declares Independance"
+ROC_ETR_TT_2:0 "§GPlay as East Turkestan"
+
+ROC_CRF_TT:0 "§RChinese National Republic Declares Independance"
+ROC_CRF_TT_2:0 "§RPlay as Chinese National Republic"
+
+ROC_QID_TT:0 "§YQing Dynasty declares independance"
+ROC_QID_TT_2:0 "§YPlay as the Qing Dynasty"
+
+ROC_PRC_TT:0 "§RPeoples Republic of China declares independance"
+ROC_PRC_TT_2:0 "§RPlay as the Peoples Republic of China"
