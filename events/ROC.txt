@@ -382,3 +382,44 @@ add_core_of = PRC
    }
 		}
      }
+	}
+	 
+	country_event = { #terror attack at new year celebarations
+	id = roc.6
+	title = roc.6.t
+	desc = roc.6.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.6.a
+        ai_chance = {factor = 100}
+		stability_factor = -0.15
+	}
+}
+country_event = { #emergency coaliton meeting
+	id = roc.7
+	title = roc.7.t
+	desc = roc.7.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.7.a
+        ai_chance = {factor = 50}
+		set_country_flag = ROC_7_a
+	}
+	option = {
+		name = roc.7.b
+        ai_chance = {factor = 50}
+		set_country_flag = ROC_7_b
+	}
+}

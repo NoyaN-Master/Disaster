@@ -25,5 +25,21 @@ country = {
 		   army_org_factor = -0.2
 			}
 		}
+		
+		ROC_fading_unity = {
+			picture = ROC_unity
+			modifier = {
+            stability_factor = -0.3 
+			war_support_factor = -0.3
+			}
+		}
+		
+		ROC_fading_unity_2 = {
+			picture = ROC_unity
+			modifier = {
+            stability_factor = -0.25 
+			war_support_factor = -0.25
+			}
+		}
 }
 }

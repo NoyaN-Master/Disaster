@@ -1,0 +1,82 @@
+focus_tree = {
+	id = roc_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ROC
+		}
+		}
+		continuous_focus_position = { x = 100 y = 5000 }
+	default = no	
+	focus = {
+		id = ROC_focus_1
+		icon = ""
+		x = 4
+		y = 1
+		cost = 4
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	 ROC = { country_event = { id = roc.6 } }
+		add_stability = 0.05
+		hidden_effect{add_ideas = ROC_fading_unity}
+		}
+	}
+	focus = {
+		id = ROC_focus_2
+		icon = ""
+		x = 4
+		y = 2
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = ROC_focus_1}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	 ROC = { country_event = { id = roc.7 } }
+		}
+	}
+	focus = {
+		id = ROC_focus_3
+		icon = ""
+		x = 5
+		y = 3
+		cost = 4
+		
+		 hidden_trigger = {has_country_flag = ROC_7_a}
+		
+		available_if_capitulated = yes
+		prerequisite = { focus = ROC_focus_2}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	
+		}
+	}
+	focus = {
+		id = ROC_focus_4
+		icon = ""
+		x = 3
+		y = 3
+		cost = 4
+		
+		available = {
+	 hidden_trigger = {has_country_flag = ROC_7_b}
+	}
+		
+		available_if_capitulated = yes
+		prerequisite = { focus = ROC_focus_2}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	
+		}
+	}
+}
+

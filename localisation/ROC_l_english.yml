@@ -1,6 +1,7 @@
 ﻿l_english:
 
 ####events
+
 roc.1.t:0 "Situation In China"
 roc.1.d:0 ""
 roc.1.a:0 "Onwards!"
@@ -20,16 +21,41 @@ roc.4.d:0 ""
 roc.4.a:0 "Saddening"
 roc.4.b:0 "Play as the Qing Dynasty"
 
-roc.5.t:0 "Peoples Republic of China declares Independance"
+roc.5.t:0 "People's Republic of China declares Independance"
 roc.5.d:0 ""
 roc.5.a:0 "Betrayal"
-roc.5.b:0 "Play as the Peoples Republic of China"
+roc.5.b:0 "Play as the People's Republic of China"
+
+roc.6.t:0 "Terrorists Attack at the New Year Celebrations"
+roc.6.d:0 ""
+roc.6.a:0 "We must find who are responsable"
+
+roc.7.t:0 "Emergency Coaliton Meeting"
+roc.7.d:0 ""
+roc.7.a:0 "Wang Jingwei is correct, we must setup 24hr telephone lines to report any suspicious activity"
+roc.7.b:0 "Chang Kai-Shek is right, we must call in the Ministry of State Security"
+
 ###Focus
 
+ROC_focus_1:0 "Chinese New Year Festival"
+ROC_focus_1_desc:0 "Chinese New Year Festival"
+
+ROC_focus_2:0 "Call an Emergency Meeting"
+ROC_focus_2_desc:0 "Call an Emergency Meeting"
+
+ROC_focus_3:0 "Call in the Ministry of State Security"
+ROC_focus_3_desc:0 "Call in the Ministry of State Security"
+
+ROC_focus_4:0 "Setup Telephone Lines"
+ROC_focus_4_desc:0 "Setup Telephone Lines"
+
 #####ideas
+
 ROC_Colab_Govern:0 "Collaborative Government"
 ROC_sucess_reforms:0 "Sucessful Economical Reforms"
 ROC_untrained_army:0 "Incompetent Army"
+ROC_fading_unity:0 "Widespread Panic"
+ROC_fading_unity_2:0 "Widespread Panic"
 ###Decisions
 ###Tool Tips
 ROC_ETR_TT:0 "§GEast Turkestan Declares Independance"
@@ -41,5 +67,7 @@ ROC_CRF_TT_2:0 "§RPlay as Chinese National Republic"
 ROC_QID_TT:0 "§YQing Dynasty declares independance"
 ROC_QID_TT_2:0 "§YPlay as the Qing Dynasty"
 
-ROC_PRC_TT:0 "§RPeoples Republic of China declares independance"
-ROC_PRC_TT_2:0 "§RPlay as the Peoples Republic of China"
+ROC_PRC_TT:0 "§RPeople's Republic of China declares independance"
+ROC_PRC_TT_2:0 "§RPlay as the People's Republic of China"
+
+ROC_TT_1:0 "The year of the rat"
