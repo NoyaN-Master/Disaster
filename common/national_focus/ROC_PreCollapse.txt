@@ -55,7 +55,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-	
+	 add_stability = 0.05
 		}
 	}
 	focus = {
@@ -75,8 +75,41 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-	
+	add_stability = 0.05
+		}
+	}
+		focus = {
+		id = ROC_focus_5
+		icon = ""
+		x = 4
+		y = 4
+		cost = 4
+		prerequisite = { focus = ROC_focus_3 or = ROC_focus_4}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	 ROC = { country_event = { id = roc.8 } }
+
+		}
+	}
+	focus = {
+		id = ROC_focus_6
+		icon = ""
+		x = 4
+		y = 5
+		cost = 4
+		prerequisite = {focus = ROC_focus_5}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	 ROC = { country_event = { id = roc.9 } }
+
 		}
 	}
 }
+
 
