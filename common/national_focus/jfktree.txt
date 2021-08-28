@@ -180,7 +180,7 @@ focus_tree = {
 			factor = 1
 		}
         prerequisite = {
-           focus = CRW_Invade_TKOML 
+           focus = CRW_The_Patriots
         }
 		completion_reward = {
         country_event = { id = jfk.3 }
@@ -282,6 +282,9 @@ focus_tree = {
         prerequisite = {
            focus = CRW_Destroy_Greywolfs 
         }
+		prerequisite = {
+			focus = CRW_Invade_TKOML
+		}
 		completion_reward = {
         declare_war_on = {
     	target = ANK
