@@ -421,6 +421,7 @@ country_event = { #emergency coaliton meeting
 		name = roc.7.b
         ai_chance = {factor = 50}
 		set_country_flag = ROC_7_b
+ 
 	}
 }
 country_event = { #a tip
@@ -440,7 +441,7 @@ country_event = { #a tip
 		
 	}
 }
-country_event = { #a tip
+country_event = { #National speach
 	id = roc.9
 	title = roc.9.t
 	desc = roc.9.d
@@ -455,6 +456,66 @@ country_event = { #a tip
 		name = roc.9.a
         ai_chance = {factor = 100}
 		remove_idea = ROC_fading_unity
+		
+	}
+}
+country_event = { #Disaster pt1
+	id = roc.10
+	title = roc.10.t
+	desc = roc.10.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+    trigger = {has_country_flag = ROC_disaster_time}
+
+	fire_only_once = yes
+
+	#is_triggered_only = yes
+
+	option = {
+		name = roc.10.a
+        ai_chance = {factor = 100}
+		remove_idea = ROC_fading_unity
+		
+	}
+}
+country_event = { #Disaster pt2
+	id = roc.11
+	title = roc.11.t
+	desc = roc.11.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+    trigger = {has_country_flag = ROC_disaster_time_2}
+
+	fire_only_once = yes
+
+	#is_triggered_only = yes
+
+	option = {
+		name = roc.11.a
+        ai_chance = {factor = 100}
+		remove_idea = ROC_fading_unity
+		
+	}
+}
+country_event = { Nationalits mad
+	id = roc.12
+	title = roc.12.t
+	desc = roc.12.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+    trigger = {has_country_flag = ROC_disaster_time}
+
+	fire_only_once = yes
+
+	#is_triggered_only = yes
+
+	option = {
+		name = roc.10.a
+        ai_chance = {factor = 100}
+		add_stability = -0.1
 		
 	}
 }

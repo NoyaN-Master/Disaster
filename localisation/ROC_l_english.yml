@@ -28,12 +28,12 @@ roc.5.b:0 "Play as the People's Republic of China"
 
 roc.6.t:0 "Terrorists Attack at the New Year Celebrations"
 roc.6.d:0 ""
-roc.6.a:0 "We must find who are responsable"
+roc.6.a:0 "§RDai Li WILL PAY!"
 
 roc.7.t:0 "Emergency Coaliton Meeting"
 roc.7.d:0 ""
-roc.7.a:0 "Wang Jingwei is correct, we must setup 24hr telephone lines to report any suspicious activity"
-roc.7.b:0 "Chang Kai-Shek is right, we must call in the Ministry of State Security"
+roc.7.a:0 "Take a more conservative approach, ban all large gatherings."
+roc.7.b:0 "We must prevent anymore attacks! Inact martial law, tanks on the roads!"
 
 roc.8.t:0 "An Anonymous Tip"
 roc.8.d:0 ""
@@ -43,6 +43,19 @@ roc.9.t:0 "A National Address"
 roc.9.d:0 ""
 roc.9.a:0 "Dai Li will be locked away FOREVER"
 
+roc.10.t:0 "Nationalists Stage Rallies in Major Chinese Cities"
+roc.10.d:0 ""
+roc.10.a:0 "Hopefully the people won't believe their lies."
+
+roc.11.t:0 "Major Nationalist Riots in Major Cities"
+roc.11.d:0 ""
+roc.11.a:0 "Send In the army"
+
+roc.12.t:0 "Nationalist Outcry After Recent Transition of Power"
+roc.12.d:0 ""
+roc.12.a:0 "This will be fine."
+
+
 ###Focus
 
 ROC_focus_1:0 "Chinese New Year Festival"
@@ -51,11 +64,11 @@ ROC_focus_1_desc:0 "Chinese New Year Festival"
 ROC_focus_2:0 "Call an Emergency Meeting"
 ROC_focus_2_desc:0 "Call an Emergency Meeting"
 
-ROC_focus_3:0 "Call in the Ministry of State Security"
-ROC_focus_3_desc:0 "Call in the Ministry of State Security"
+ROC_focus_3:0 "Inact Martial Law"
+ROC_focus_3_desc:0 "Inact Martial Law"
 
-ROC_focus_4:0 "Setup Telephone Lines"
-ROC_focus_4_desc:0 "Setup Telephone Lines"
+ROC_focus_4:0 "A More Conservative Approach"
+ROC_focus_4_desc:0 "A More Conservative Approach"
 
 ROC_focus_5:0 "An Anonymous Tip"
 ROC_focus_5_desc:0 "An Anonymous Tip"
@@ -63,6 +76,17 @@ ROC_focus_5_desc:0 "An Anonymous Tip"
 ROC_focus_6:0 "A National Address"
 ROC_focus_6_desc:0 "A National Address"
 
+ROC_focus_7:0 "Rebuild Beijing"
+ROC_focus_7_desc:0 "Rebuild Beijing"
+
+ROC_focus_8:0 "Pass the 1936 Food Stamp Act"
+ROC_focus_8_desc:0 "Pass the 1936 Food Stamp Act"
+
+ROC_focus_9:0 "National Healthcare Act"
+ROC_focus_9_desc:0 "National Healthcare Act"
+
+ROC_focus_10:0 "Income Assistance Act"
+ROC_focus_10_desc:0 "Income Assistance Act"
 #####ideas
 
 ROC_Colab_Govern:0 "Collaborative Government"
@@ -70,6 +94,13 @@ ROC_sucess_reforms:0 "Sucessful Economical Reforms"
 ROC_untrained_army:0 "Incompetent Army"
 ROC_fading_unity:0 "Widespread Panic"
 ROC_fading_unity_2:0 "Widespread Panic"
+ROC_pre_1_left:0 "Use the People as Spies"
+ROC_pre_1_right:0 "Ministry of State Security"
+ROC_food_stamp:0 "Food Stamps"
+ROC_free_healthcare:0 "Free Healthcare For All"
+ROC_income_assistance:0 "Income Assistance"
+ROC_pre_right:0 "Martial Law"
+ROC_pre_left:0 "Pause Non Essential Buisness"
 ###Decisions
 ###Tool Tips
 ROC_ETR_TT:0 "§GEast Turkestan Declares Independance"
@@ -84,4 +115,4 @@ ROC_QID_TT_2:0 "§YPlay as the Qing Dynasty"
 ROC_PRC_TT:0 "§RPeople's Republic of China declares independance"
 ROC_PRC_TT_2:0 "§RPlay as the People's Republic of China"
 
-ROC_TT_1:0 "The year of the rat"
+ROC_TT_event_7:0 "This will empower the nationalists"

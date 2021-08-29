@@ -41,5 +41,46 @@ country = {
 			war_support_factor = -0.25
 			}
 		}
+		ROC_pre_left = {
+			picture = ROC_unity
+			modifier = {
+            industrial_capacity_factory = -0.5	
+			consumer_goods_factor = 0.25
+			}
+		}
+		ROC_pre_right = {
+			picture = ROC_unity
+			modifier = {
+            industrial_capacity_factory = -0.95	
+            consumer_goods_factor = 0.5
+			
+			}
+		}
+		ROC_food_stamp = {
+			picture = ROC_unity
+			modifier = {
+			monthly_population = 0.1
+			consumer_goods_factor = 0.05
+			production_factory_efficiency_gain_factor = 0.05
+			production_factory_max_efficiency_factor = 0.05 
+			production_factory_start_efficiency_factor = 0.05 
+			}
+		}
+			ROC_free_healthcare = {
+			picture = ROC_unity
+			modifier = {
+			monthly_population = 0.2
+	        consumer_goods_factor = 0.1
+			industrial_capacity_factory = 0.1	
+			
+			}
+		}
+		ROC_income_assistance = {
+			picture = ROC_unity
+			modifier = {
+			monthly_population = 0.15
+	        consumer_goods_factor = 0.1
+			}
+		}
 }
 }

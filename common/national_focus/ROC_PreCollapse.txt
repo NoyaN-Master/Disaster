@@ -12,7 +12,7 @@ focus_tree = {
 	focus = {
 		id = ROC_focus_1
 		icon = ""
-		x = 4
+		x = 15
 		y = 1
 		cost = 4
 		available_if_capitulated = yes
@@ -22,15 +22,14 @@ focus_tree = {
 		completion_reward = {
 	 ROC = { country_event = { id = roc.6 } }
 		add_stability = 0.05
-		hidden_effect{add_ideas = ROC_fading_unity}
 		}
 	}
 	focus = {
 		id = ROC_focus_2
 		icon = ""
-		x = 4
+		x = 15
 		y = 2
-		cost = 4
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = ROC_focus_1}
 		ai_will_do = {
@@ -38,16 +37,17 @@ focus_tree = {
 		}
 		completion_reward = {
 	 ROC = { country_event = { id = roc.7 } }
+	ROC = { country_event = { id = roc.12 days = 7}}
 		}
 	}
 	focus = {
 		id = ROC_focus_3
 		icon = ""
-		x = 5
+		x = 16
 		y = 3
 		cost = 4
 		
-		 hidden_trigger = {has_country_flag = ROC_7_a}
+		available = {hidden_trigger = {has_country_flag = ROC_7_b}}
 		
 		available_if_capitulated = yes
 		prerequisite = { focus = ROC_focus_2}
@@ -56,34 +56,37 @@ focus_tree = {
 		}
 		completion_reward = {
 	 add_stability = 0.05
+	 add_ideas = ROC_pre_right
 		}
 	}
 	focus = {
 		id = ROC_focus_4
 		icon = ""
-		x = 3
+		x = 14
 		y = 3
 		cost = 4
 		
 		available = {
-	 hidden_trigger = {has_country_flag = ROC_7_b}
+	 hidden_trigger = {has_country_flag = ROC_7_a}
 	}
 		
-		available_if_capitulated = yes
-		prerequisite = { focus = ROC_focus_2}
-		ai_will_do = {
+	available_if_capitulated = yes
+	prerequisite = { focus = ROC_focus_2}
+	ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
+	completion_reward = {
 	add_stability = 0.05
+	add_political_power = 100
+	add_ideas = ROC_pre_left
 		}
 	}
 		focus = {
 		id = ROC_focus_5
 		icon = ""
-		x = 4
+		x = 15
 		y = 4
-		cost = 4
+		cost = 5
 		prerequisite = { focus = ROC_focus_3 or = ROC_focus_4}
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -97,9 +100,9 @@ focus_tree = {
 	focus = {
 		id = ROC_focus_6
 		icon = ""
-		x = 4
+		x = 15
 		y = 5
-		cost = 4
+		cost = 5
 		prerequisite = {focus = ROC_focus_5}
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -107,7 +110,74 @@ focus_tree = {
 		}
 		completion_reward = {
 	 ROC = { country_event = { id = roc.9 } }
-
+     hidden_effect = {set_country_flag = ROC_part_1}
+		}
+	}
+	focus = {
+		id = ROC_focus_7
+		icon = ""
+		x = 15
+		y = 6
+		cost = 5
+		prerequisite = {focus = ROC_focus_6}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+        608 = {  add_building_construction = {
+            type = infrastructure
+            level = 10
+            instant_build = yes
+        }
+	}
+}
+	}
+	focus = {
+		id = ROC_focus_8
+		icon = ""
+		x = 15
+		y = 7
+		cost = 5
+		prerequisite = {focus = ROC_focus_7}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	add_ideas = ROC_food_stamp
+	hidden_effect = {set_country_flag = ROC_disaster_time}
+		}
+	}
+	focus = {
+		id = ROC_focus_9
+		icon = ""
+		x = 15
+		y = 8
+		cost = 5
+		prerequisite = {focus = ROC_focus_8}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	add_ideas = ROC_free_healthcare
+	hidden_effect = {set_country_flag = ROC_disaster_time_2}
+		}
+	}
+	focus = {
+		id = ROC_focus_10
+		icon = ""
+		x = 15
+		y = 9
+		cost = 5
+		prerequisite = {focus = ROC_focus_9}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	add_ideas = ROC_income_assistance
 		}
 	}
 }
