@@ -308,6 +308,9 @@ AUT_south_tyrol_crisis_decisions = {
 		available = {
 			always = no
 		}
+        activation = {
+               has_completed_focus = AUT_preparations
+        }
 		is_good = yes
 		priority = 100
 		timeout_effect = {     

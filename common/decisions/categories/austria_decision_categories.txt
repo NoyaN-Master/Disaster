@@ -35,6 +35,11 @@ AUT_south_tyrol_crisis_decisions = {
 	tag = AUT
 	priority = 100
 	allowed = {
+		OR = {
+			tag = AUT
+		}
+	}
+	visible = {
 		has_completed_focus = AUT_preparations
 	}
 }	
