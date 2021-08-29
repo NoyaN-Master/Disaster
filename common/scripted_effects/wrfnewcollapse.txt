@@ -3,11 +3,73 @@ GRE = {
 transfer_state = 341
 transfer_state = 187
 transfer_state = 183
+transfer_state = 184
+transfer_state = 164
+}
+WRF = {
+transfer_navy = {
+    target = CRW
+}	
 }
 CRW = {
+	create_field_marshal = {
+	name = "John F Kennedy"
+	portrait_path = "gfx/leaders/CRW/CRW_JFK.png"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 2
+	}
+	create_corps_commander = {
+	name = "Richard Nixon"
+	portrait_path = "gfx/leaders/CRW/CRW_Nix.png"
+	traits = {
+		politically_connected
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	}
+	create_corps_commander = {
+	name = "Necip Fazıl"
+	portrait_path = "gfx/leaders/CRW/CRW_Faz.png"
+	traits = {
+		politically_connected
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 3
+	}
+	load_focus_tree = jfktree_tree
+	load_oob = jfkoob
+	add_equipment_to_stockpile = {
+				    type = infantry_equipment
+				    amount = 10000
+				    producer = CRW
+				}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 250
+				    producer = CRW
+				}
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 500
+				    producer = CRW
+				}
+	inherit_technology = WRF
 transfer_state = 797    
 set_cosmetic_tag = CRW_JFK
-load_focus_tree = generic_focus
     set_politics = {
 	ruling_party = liberal
         elections_allowed = no
@@ -31,6 +93,73 @@ load_focus_tree = generic_focus
 set_country_flag = Roatta_Warlord    
 }
 IZM = {
+	create_corps_commander = {
+	name = "Cemal Madanoğlu"
+	portrait_path = "gfx/leaders/IZM/IZM_Madan.png"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	}
+	create_corps_commander = {
+	name = "Ethem Necat"
+	portrait_path = "gfx/leaders/IZM/IZM_Ethem_Nejat_Drip.png"
+	traits = {
+		politically_connected
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	}
+	create_field_marshal = {
+	name = "Fevzi Çakmak"
+	portrait_path = "gfx/leaders/WRF/Portrait_WRF_Fevzi_Cakmak.png"
+	traits = {
+		politically_connected
+	}
+	skill = 5
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 5
+	}
+	create_field_marshal = {
+	name = "Ismet Inonu"
+	portrait_path = "gfx/leaders/WRF/Portrait_WRF_Ismet.png"
+	traits = {
+		politically_connected
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+	}
+	load_oob = patriotsoob
+	add_equipment_to_stockpile = {
+				    type = infantry_equipment
+				    amount = 10000
+				    producer = IZM
+				}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 250
+				    producer = IZM
+				}
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 500
+				    producer = IZM
+				}
+	inherit_technology = WRF
 transfer_state = 347
 set_cosmetic_tag = IZM_madan2
 load_focus_tree = generic_focus
@@ -57,6 +186,79 @@ load_focus_tree = generic_focus
 set_country_flag = Roatta_Warlord       
 }
 ANK = {
+	create_corps_commander = {
+	name = "Esat Bozkurt"
+	portrait_path = "gfx/leaders/ANK/ANK_Esat.png"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+	}
+	create_field_marshal = {
+	name = "Kazım Orbay"
+	portrait_path = "gfx/leaders/ANK/ANK_Kazim_Orbay.png"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 5
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 5
+	}
+	create_corps_commander = {
+	name = "Samet Türkoğlu"
+	portrait_path = "gfx/leaders/CIB/Portrait_CIB_Samet_Enverist.png"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+	}
+	create_corps_commander = {
+	name = "Tahsin Yazıcı"
+	portrait_path = "gfx/leaders/CIB/Portrait_OTT_Tahsin_Yazici.png"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+	}
+	load_oob = smyrnaoob
+	add_equipment_to_stockpile = {
+				    type = infantry_equipment
+				    amount = 10000
+				    producer = ANK
+				}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 250
+				    producer = ANK
+				}
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 500
+				    producer = ANK
+				}
+	inherit_technology = WRF
 		transfer_state = 834
         load_focus_tree = generic_focus
 		transfer_state = 339
@@ -85,6 +287,51 @@ ANK = {
 		}
         
 CIB = {
+	create_field_marshal = {
+	name = "Nihal Atsız"
+	portrait_path = "gfx/leaders/CIB/CIB_Atsiz.png"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+	}
+	create_corps_commander = {
+	name = "Mustafa Muğlalı"
+	portrait_path = "gfx/leaders/CIB/Portrait_CIB_Mustafa_Muglali.png"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+	}
+	load_oob = atsizoob
+	add_equipment_to_stockpile = {
+				    type = infantry_equipment
+				    amount = 10000
+				    producer = CIB
+				}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 250
+				    producer = CIB
+				}
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 500
+				    producer = CIB
+				}
+	inherit_technology = WRF
     load_focus_tree = generic_focus
     set_cosmetic_tag = ESO_Roatta
     transfer_state = 343
@@ -107,6 +354,37 @@ set_country_flag = Roatta_Warlord
 }
 
 KLG = {
+	create_field_marshal = {
+	name = "Nuri Killigil"
+	portrait_path = "gfx/leaders/KLG/KLG_Nuri_Killigil.tga"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+	}
+	load_oob = klgoob
+	add_equipment_to_stockpile = {
+				    type = infantry_equipment
+				    amount = 10000
+				    producer = KLG
+				}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 250
+				    producer = KLG
+				}
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 500
+				    producer = KLG
+				}
+	inherit_technology = WRF
 set_cosmetic_tag = KLG_Roatta_Tag    
 transfer_state = 355
 add_state_core = 355
@@ -116,6 +394,22 @@ load_focus_tree = generic_focus
 set_country_flag = Roatta_Warlord
 }
 ARM = {
+	load_oob = ARM_uprising
+	add_equipment_to_stockpile = {
+				    type = infantry_equipment
+				    amount = 5000
+				    producer = ARM
+				}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 250
+				    producer = ARM
+				}
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 500
+				    producer = ARM
+				}
 set_cosmetic_tag = ARM_Uprising
         set_politics = {
 	    ruling_party = revolutionary_nationalist
@@ -131,6 +425,65 @@ transfer_state = 835
 transfer_state = 353    
 }
 ADN = {
+	create_corps_commander = {
+	name = "Alparslan Türkeş"
+	portrait_path = "gfx/leaders/WRF/WRF_Turkes.png"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+	}
+	create_corps_commander = {
+	name = "Nuri Yamut"
+	portrait_path = "gfx/leaders/WRF/Portrait_OTT_Nuri_Yamut.png"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 5
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 5
+	}
+	create_field_marshal = {
+	name = "Fevzi Çakmak"
+	portrait_path = "gfx/leaders/WRF/Portrait_WRF_Fevzi_Cakmak.png"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 5
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 5
+	}
+	load_oob = turkesoob
+	add_equipment_to_stockpile = {
+				    type = infantry_equipment
+				    amount = 10000
+				    producer = ADN
+				}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 250
+				    producer = ADN
+				}
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 500
+				    producer = ADN
+				}
+	inherit_technology = WRF
 set_cosmetic_tag = turkes_adana    
 transfer_state = 344
 transfer_state = 345
@@ -159,6 +512,65 @@ load_focus_tree = generic_focus
 set_country_flag = Roatta_Warlord          
 }
 TRA = {
+	create_corps_commander = {
+	name = "Nazım Hikmet"
+	portrait_path = "gfx/leaders/IZM/IZM_Nazim_Hikmet.tga"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+	}
+	create_field_marshal = {
+	name = "Mustafa Suphi"
+	portrait_path = "gfx/leaders/TRA/TRA_Suphi.png"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 5
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 5
+	}
+	create_corps_commander = {
+	name = "Şevket Aydemir"
+	portrait_path = "gfx/leaders/TRA/TRA_Aydemir.tga"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+	}
+	load_oob = tkomloob
+	add_equipment_to_stockpile = {
+				    type = infantry_equipment
+				    amount = 10000
+				    producer = TRA
+				}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 250
+				    producer = TRA
+				}
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 500
+				    producer = TRA
+				}
+	inherit_technology = WRF
   set_cosmetic_tag = turkish_socarmy  
  transfer_state = 356
 transfer_state = 839
@@ -176,6 +588,23 @@ create_country_leader = {
 }
 }
 AZR = {
+	load_oob = azroob
+	add_equipment_to_stockpile = {
+				    type = infantry_equipment
+				    amount = 10000
+				    producer = AZR
+				}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 250
+				    producer = AZR
+				}
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 500
+				    producer = AZR
+				}
+inherit_technology = WRF	
 transfer_state = 229
 add_popularity = {
     ideology = conservative

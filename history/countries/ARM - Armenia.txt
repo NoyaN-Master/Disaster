@@ -18,34 +18,46 @@ set_technology = {
 set_convoys = 50
 
 set_politics = {
-	ruling_party = social_democrat
+	ruling_party = liberal
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
-add_ideas = 	multi_party_democracy 	
-add_ideas = 	interventionism 
-add_ideas = 	semi_industrial_society
+add_ideas = multi_party_democracy 	
+add_ideas = interventionism 
+add_ideas = semi_industrial_society
 
 set_popularities = {
-	conservative = 30
-	liberal = 0
-	social_democrat = 40
-	libertarian_socialist = 0
-	authoritarian_socialist = 0
+	conservative = 8
+	liberal = 21
+	social_democrat = 26
+	libertarian_socialist = 30
+	authoritarian_socialist = 7
 	unisocialist = 0
 	authoritarian_democrat = 0
 	autocratic = 0
-	ultranationalist = 0
-	revolutionary_nationalist = 30
+	ultranationalist = 3
+	revolutionary_nationalist = 2
 	esoteric_traditionalist = 0
-	revolutionary_anarchist = 0
+	revolutionary_anarchist = 3
 }
+
+add_ideas = ARM_Struggle_for_Existence
+add_ideas = ARM_Lusignan_Debacle
 
 create_country_leader = {
 	name = "Mihran Damadian"
-	#desc = "SES_Zeljko_Raznatovic_desc"
-	picture = "Portrait_ARM_Mihran_Damadian.tga"
+	picture = "Portarit_ARM_Mihran_Damadian.png"
+	expire = "2020.1.1"
+	ideology = liberal_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Avetis Nazarbekyan"
+	picture = "Portarit_ARM_Avetis_Nazarbekyan.png"
 	expire = "2020.1.1"
 	ideology = social_democrat_subideology
 	traits = {
@@ -55,11 +67,90 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Garegin Nzhdeh"
-	#desc = "SES_Zeljko_Raznatovic_desc"
-	picture = "Portarit_Armenia_Garegin_Nzhdeh.tga"
+	picture = "Portarit_ARM_Garegin_Nzhdeh.png"
 	expire = "2020.1.1"
-	ideology = revolutionary_nationalist_subideology
+	ideology = libertarian_socialist_subideology
 	traits = {
 		#
 	}
+}
+
+create_field_marshal = {
+	name = "Garegin Nzhdeh"
+	portrait_path = "gfx/leaders/ARM/Portarit_ARM_Garegin_Nzhdeh.png"
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Christophor Araratov"
+	portrait_path = "gfx/leaders/ARM/Portrait_ARM_Christophor_Araratov.png"
+	traits = {
+		old_guard
+		bearer_of_artillery
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Drastamat Kanayan"
+	portrait_path = "gfx/leaders/ARM/Portrait_ARM_Drastamat_Kanayan.png"
+	traits = {
+		old_guard
+		infantry_officer
+		organizer
+		politically_connected
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Hamazasp Babadzhanian"
+	portrait_path = "gfx/leaders/ARM/Portrait_ARM_Hamazasp_Babadzhanian.png"
+	traits = {
+		trait_reckless
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Hakob Melkumyan"
+	portrait_path = "gfx/leaders/ARM/Portrait_ARM_Hakob_Melkumyan.png"
+	traits = {
+		trait_reckless
+	}
+	skill = 1
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Hamazasp Srvandztyan"
+	portrait_path = "gfx/leaders/ARM/Portrait_ARM_Hamazasp_Srvandztyan.png"
+	traits = {
+		harsh_leader
+		infantry_officer
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }

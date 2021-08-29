@@ -1,0 +1,114 @@
+add_namespace = jfk
+
+country_event = { #start
+	id = jfk.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.1" }
+	title = jfk.1.t
+	desc = jfk.1.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = jfk.1.a
+        add_ideas = autocracy
+        add_ideas = laisez_faire
+		remove_ideas = CRW_protests_1
+		remove_ideas = CRW_autocratic_idea
+		}
+	}
+
+country_event = { #start
+	id = jfk.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.1" }
+	title = jfk.2.t
+	desc = jfk.2.d
+
+	picture = GFX_report_wrf_peker
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = jfk.2.a
+        transfer_state = 341
+        add_state_core = 341
+        add_stability = 0.05
+		}
+	}
+country_event = { #start
+	id = jfk.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.1" }
+	title = jfk.3.t
+	desc = jfk.3.d
+
+	picture = GFX_report_wrf_peker
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = jfk.3.a
+        KLG = {
+        every_owned_state = {
+        add_core_of = CRW
+        }    
+        }
+        annex_country = {
+        target = KLG
+        transfer_troops = yes
+        }
+		}
+	} 
+country_event = { #start
+	id = jfk.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.1" }
+	title = jfk.4.t
+	desc = jfk.4.d
+
+	picture = GFX_report_wrf_peker
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = jfk.4.a
+        add_popularity = {
+        ideology = liberal
+        popularity = 1
+        }
+        add_stability = -0.30
+        set_cosmetic_tag = jfktag
+        add_ideas = oligarchy
+        set_country_flag = jfkevent
+		}
+
+    option = {
+		name = jfk.4.b
+        set_country_flag = jfkevent
+        add_popularity = {
+        ideology = conservative
+        popularity = 0.4
+        }
+		set_politics = {
+			ruling_party = conservative
+		}
+        add_stability = 0.10
+        set_cosmetic_tag = nixontag
+        create_country_leader = {
+	    name = "Riçard Niksonoğlu"
+	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	    picture = "CRW_Nix.png"
+	    expire = "1965.1.1"
+	    ideology = conservative_subideology
+	    traits = {
+		
+	    }
+        }
+	}                   

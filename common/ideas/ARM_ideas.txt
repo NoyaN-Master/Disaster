@@ -1,0 +1,158 @@
+##############
+# Armenia
+##############
+ideas = {
+	country = {
+		ARM_Struggle_for_Existence = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARM_Struggle_for_Existence"}
+			picture = ARM_Struggle_for_Existence
+			modifier = {
+                               army_core_attack_factor = 0.1
+                               army_core_defence_factor = 0.1
+                               conscription_factor = 0.04
+			}
+		}
+
+                ARM_Lusignan_Debacle = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARM_Lusignan_Debacle"}
+			picture = ARM_Lusignan_Debacle
+			modifier = {
+                              political_power_factor = -0.3
+			      stability_factor = -0.05
+			}
+		}
+
+                ARM_Struggle_for_Existence_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARM_Struggle_for_Existence"}
+			picture = ARM_Struggle_for_Existence
+			modifier = {
+                               army_core_attack_factor = 0.15
+                               army_core_defence_factor = 0.15
+                               conscription_factor = 0.05
+			}
+                        targeted_modifier = {
+				     tag = CIB
+				     defense_bonus_against = 0.1
+		        }
+		}
+
+                ARM_Building_our_Future = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARM_Building_our_Future"}
+			picture = ARM_Building_our_Future
+			modifier = {
+                              army_core_attack_factor = 0.05
+                              army_core_defence_factor =  0.05
+                              conscription_factor = 0.03
+                              army_morale_factor = 0.06
+			}
+		}
+
+                ARM_Artaxid_Battalion = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARM_Artaxid_Battalion"}
+			picture = ARM_Artaxid_Battalion
+			modifier = {
+			      army_org_factor = 0.05
+			}
+                        targeted_modifier = {
+				     tag = AZR
+				     attack_bonus_against = 0.1
+		        }
+		}
+
+                ARM_Armenian_Legion = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARM_Armenian_Legion"}
+			picture = ARM_Struggle_for_Existence
+			modifier = {
+                              offence = 0.05
+			}
+		}
+
+                ARM_Lusignan_Legion = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARM_Lusignan_Legion"}
+			picture = ARM_Lusignan_Legion
+			modifier = {
+			}
+                        targeted_modifier = {
+				     tag = CLP
+				     attack_bonus_against = 0.1
+				     defense_bonus_against = 0.1
+		        }
+		}
+
+                ARM_Mighty_Army = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARM_Mighty_Army"}
+			picture = ARM_Mighty_Army
+			modifier = {
+                              army_core_attack_factor = 0.1
+                              army_core_defence_factor = 0.1
+                              conscription_factor = 0.1
+                              local_manpower = 0.06
+			      weekly_manpower = 3000
+                              offence = 0.1
+                              defence = 0.1
+                              army_org_factor = 0.12
+			}
+                        targeted_modifier = {
+				     tag = WRF
+				     attack_bonus_against = 0.1
+				     defense_bonus_against = 0.1
+		        }
+		}
+
+                ARM_Bright_Future = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARM_Bright_Future"}
+			picture = ARM_Bright_Future
+			modifier = {
+                              monthly_population = 0.04
+			      stability_factor = 0.1
+                              production_factory_max_efficiency_factor = 0.05
+			      industrial_capacity_factory = 0.05
+			      production_speed_buildings_factor = 0.1
+			      consumer_goods_factor = -0.1
+			}
+		}
+
+                ARM_Dashnak_Government = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARM_Dashnak_Government"}
+			picture = ARM_Dashnak_Government
+			modifier = {
+                              monthly_population = 0.06
+			      stability_factor = 0.2
+                              libertarian_socialist_drift = 0.1
+                              production_factory_max_efficiency_factor = 0.15
+			      industrial_capacity_factory = 0.15
+			      production_speed_buildings_factor = 0.2
+			      consumer_goods_factor = -0.25
+			}
+		}
+
+                ARM_Hunchak_Government = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARM_Hunchak_Government"}
+			picture = ARM_Hunchak_Government
+			modifier = {
+                              monthly_population = 0.06
+			      stability_factor = 0.2
+                              social_democrat_drift = 0.1
+                              production_factory_max_efficiency_factor = 0.15
+			      industrial_capacity_factory = 0.15
+			      production_speed_buildings_factor = 0.2
+			      consumer_goods_factor = -0.25
+			}
+		}
+
+                ARM_Ramgavar_Government = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARM_Ramgavar_Government"}
+			picture = ARM_Ramgavar_Government
+			modifier = {
+                              monthly_population = 0.06
+			      stability_factor = 0.2
+                              liberal_drift = 0.1
+                              production_factory_max_efficiency_factor = 0.15
+			      industrial_capacity_factory = 0.15
+			      production_speed_buildings_factor = 0.2
+			      consumer_goods_factor = -0.25
+			}
+		}
+	}
+
+}	

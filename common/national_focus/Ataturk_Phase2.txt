@@ -721,7 +721,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_The_Blackpins
-		icon = GFX_goal_national_chief
+		icon = GFX_goal_CIB_izmir
 		x = 19
 		y = 16
 		cost = 3
@@ -743,7 +743,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Question_Parties
-		icon = GFX_goal_national_chief
+		icon = GFX_goal_WRF_Reformists
 		x = 18
 		y = 17
 		cost = 3
@@ -766,7 +766,7 @@ focus_tree = {
 	
 	focus = {
 		id = WRF_Election_Day
-		icon = GFX_goal_national_chief
+		icon = GFX_goal_election
 		x = 19
 		y = 18
 		cost = 3
@@ -781,14 +781,7 @@ focus_tree = {
 			has_government = social_democrat
 		}
 		select_effect = {
-			if = {
-				limit = {
-				check_variable = {
-    			WRF.retardanger > 50
-				}
-				}
-				country_event = { id = tur.24 days = 5}
-			}
+			country_event = { id = tur.24 days = 5}
 		}
 		ai_will_do = {
 			factor = 1
@@ -799,97 +792,10 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = WRF_CHP_Victory
-		icon = GFX_goal_national_chief
-		x = 29
-		y = 20
-		cost = 3
-		available_if_capitulated = yes
-		prerequisite = {  
-			focus = WRF_Election_Day
-		}
-		available = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {	
-		hidden_effect = {
-		}
-		}
-	}
-
-	focus = {
-		id = WRF_iron_fist
-		icon = GFX_goal_national_chief
-		x = 29
-		y = 21
-		cost = 3
-		available_if_capitulated = yes
-		prerequisite = {  
-			focus = WRF_CHP_Victory
-		}
-		available = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {	
-		hidden_effect = {
-		}
-		}
-	}
-
-	focus = {
-		id = WRF_Ban_Hang_Leaders
-		icon = GFX_goal_national_chief
-		x = 29
-		y = 22
-		cost = 3
-		available_if_capitulated = yes
-		prerequisite = {  
-			focus = WRF_iron_fist
-		}
-		available = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {	
-		hidden_effect = {
-		}
-		}
-	}
-
-	focus = {
-		id = WRF_Kemalist_Order
-		icon = GFX_goal_national_chief
-		x = 29
-		y = 23
-		cost = 3
-		available_if_capitulated = yes
-		prerequisite = {  
-			focus = WRF_Ban_Hang_Leaders
-		}
-		available = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {	
-		hidden_effect = {
-		}
-		}
-	}
 
 	focus = {
 		id = WRF_BlueKemal_Vic
-		icon = GFX_goal_national_chief
+		icon = GFX_goal_WRF_BlueKemal_Vic
 		x = 23
 		y = 19
 		cost = 3
@@ -911,7 +817,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Western_Investment
-		icon = GFX_goal_national_chief
+		icon = GFX_goal_lba_build_civilian
 		x = 24
 		y = 20
 		cost = 3
@@ -961,7 +867,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Consumerism
-		icon = GFX_goal_national_chief
+		icon = GFX_goal_lobbying
 		x = 24
 		y = 21
 		cost = 3
@@ -987,7 +893,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Adnan_vic
-		icon = GFX_goal_national_chief
+		icon = GFX_goal_WRF_Adnan_vic
 		x = 25
 		y = 19
 		cost = 3
@@ -1009,7 +915,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Attack_Kemalism
-		icon = GFX_goal_national_chief
+		icon = GFX_goal_WRF_Attack_Kemalism
 		x = 26
 		y = 20
 		cost = 3
@@ -1038,7 +944,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Little_America
-		icon = GFX_goal_national_chief
+		icon = GFX_goal_WRF_Little_America
 		x = 26
 		y = 21
 		cost = 3
@@ -1062,7 +968,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Blue_Kemalism
-		icon = GFX_goal_national_chief
+		icon = GFX_goal_WRF_Blue_Kemalism
 		x = 22
 		y = 20
 		cost = 3
@@ -1086,7 +992,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Opening_Up
-		icon = GFX_goal_national_chief
+		icon = GFX_goal_WRF_Opening_Up
 		x = 22
 		y = 21
 		cost = 3
@@ -1108,7 +1014,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WRF_Rich_Turkey
-		icon = GFX_goal_national_chief
+		icon = GFX_goal_WRF_Rich_Turkey
 		x = 24
 		y = 22
 		cost = 3
@@ -1155,7 +1061,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WRF_Soc_Vic
-		icon = GFX_goal_national_chief
+		icon = GFX_goal_WRF_SocWin
 		x = 15
 		y = 19
 		cost = 3
@@ -1177,7 +1083,7 @@ focus_tree = {
 	
 	focus = {
 		id = WRF_Wolf_Vic
-		icon = GFX_goal_national_chief
+		icon = GFX_goal_WRF_Wolf_Vic
 		x = 19
 		y = 19
 		cost = 3
@@ -1199,7 +1105,7 @@ focus_tree = {
 	
 	focus = {
 		id = WRF_Ulku_Movement
-		icon = GFX_goal_national_chief
+		icon = GFX_goal_WRF_Ulku_Movement
 		x = 18
 		y = 20
 		cost = 3
@@ -1230,7 +1136,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Form_Ocaks
-		icon = GFX_goal_national_chief
+		icon = GFX_goal_WRF_Form_Ocaks
 		x = 18
 		y = 21
 		cost = 3
@@ -1255,7 +1161,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Infiltrate_Army
-		icon = GFX_goal_national_chief
+		icon = GFX_goal_WRF_Infiltrate_Army
 		x = 19
 		y = 22
 		cost = 3
@@ -1281,7 +1187,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Bozkurtlar
-		icon = GFX_goal_national_chief
+		icon = GFX_goal_WRF_Bozkurtlar
 		x = 19
 		y = 23
 		cost = 3
@@ -1303,7 +1209,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WRF_Disavow_Atsiz
-		icon = GFX_goal_national_chief
+		icon = GFX_goal_WRF_Disavow_Atsiz
 		x = 20
 		y = 20
 		cost = 3
@@ -1328,7 +1234,7 @@ focus_tree = {
 	}
 	focus = {
 		id = WRF_TurkoIslamic
-		icon = GFX_goal_national_chief
+		icon = GFX_goal_WRF_TurkoIslamic
 		x = 20
 		y = 21
 		cost = 3
@@ -1352,7 +1258,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Expand_Village
-		icon = GFX_goal_national_chief
+		icon = GFX_goal_WRF_Expand_Village
 		x = 16
 		y = 20
 		cost = 3
@@ -1390,7 +1296,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_NeoNazimism
-		icon = GFX_goal_national_chief
+		icon = GFX_goal_WRF_NeoNazimism
 		x = 16
 		y = 21
 		cost = 3
@@ -1413,7 +1319,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Bread
-		icon = GFX_goal_national_chief
+		icon = GFX_goal_WRF_Bread
 		x = 15
 		y = 22
 		cost = 3
@@ -1446,7 +1352,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Democratic_Socialism
-		icon = GFX_goal_national_chief
+		icon = GFX_goal_WRF_Anatolianism
 		x = 14
 		y = 20
 		cost = 3
@@ -1469,7 +1375,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Eradicate_Nationalism
-		icon = GFX_goal_national_chief
+		icon = GFX_goal_WRF_Eradicate_Nationalism
 		x = 14
 		y = 21
 		cost = 3
@@ -1494,7 +1400,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Anatolia_Federation
-		icon = GFX_goal_national_chief
+		icon = GFX_goal_WRF_Anatolia_Federation
 		x = 15
 		y = 23
 		cost = 3
@@ -1520,7 +1426,7 @@ focus_tree = {
 
 	focus = {
 		id = WRF_Focus_Regions
-		icon = GFX_goal_national_chief
+		icon = GFX_goal_WRF_Pasha
 		x = 20
 		y = 17
 		cost = 3
@@ -1561,19 +1467,15 @@ focus_tree = {
 		add_political_power = -200
 		add_stability = 0.05
 		add_popularity = {
-    	ideology = fascism
-    	popularity = 0.1
-		}
-		add_popularity = {
     	ideology = conservative
-    	popularity = 0.1
+    	popularity = 0.15
 		}
 		add_popularity = {
     	ideology = liberal
     	popularity = 0.1
 		}
 		add_popularity = {
-    	ideology = revolutionary_nationalist
+    	ideology = ultranationalist
     	popularity = 0.05
 		}
 		add_popularity = {
@@ -1581,11 +1483,7 @@ focus_tree = {
     	popularity = 0.1
 		}
 		add_popularity = {
-    	ideology = unisocialist
-    	popularity =  0.05
-		}
-		add_popularity = {
-    	ideology = despotic
+    	ideology = autocratic
     	popularity = 0.1
 		}
 		hidden_effect = {
