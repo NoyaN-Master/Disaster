@@ -1962,3 +1962,31 @@ Ethem_FuckGreeks = {
 		}
      }     
 }
+
+TUR_KILL_ARMENIANS = {
+	fire_only_once = yes
+	cost = 0
+	visible = {
+		country_exists = ARM
+		NOT = {
+			country_exists = CIB
+		}
+		owns_state = 49
+		owns_state = 797
+		owns_state = 355
+		owns_state = 356
+		owns_state = 345
+		owns_state = 346
+		owns_state = 834
+	}
+	available = {
+		has_war = no
+	}
+	complete_effect = {
+		declare_war_on = {
+			target = ARM
+			type = annex_everything
+		}
+	}
+}
+	

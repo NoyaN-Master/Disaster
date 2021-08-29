@@ -223,3 +223,30 @@ country_event = { #Anatolia Moving Forward
                 }
 	}
 }
+country_event = {
+	id = drlarm.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event drlarm.9"}
+	title = drlarm.9.t
+	desc = drlarm.9.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = { #no
+		name = drlarm.9.a
+		ARM = {
+			declare_war_on = {
+				target = ROOT
+				type = annex_everything
+			}
+		}
+	}
+	option = { #ok
+		name = drlarm.9.b
+		ARM = {
+			transfer_state = 344
+			add_state_core = 344
+		}
+	}
+}
