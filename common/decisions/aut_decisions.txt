@@ -288,8 +288,484 @@ AUT_Give_Transly = {
 			transfer_state = 83
 			transfer_state = 84
 		} 
-		}
+	}
 		ai_will_do  = { factor = 1000}
 
-}		
+	}		
+}
+#
+#░██████╗░█████╗░██╗░░░██╗████████╗██╗░░██╗████████╗██╗░░░██╗██████╗░░█████╗░██╗░░░░░  ░█████╗░░█████╗░██╗░░░██╗██████╗░
+#██╔════╝██╔══██╗██║░░░██║╚══██╔══╝██║░░██║╚══██╔══╝╚██╗░██╔╝██╔══██╗██╔══██╗██║░░░░░  ██╔══██╗██╔══██╗██║░░░██║██╔══██╗
+#╚█████╗░██║░░██║██║░░░██║░░░██║░░░███████║░░░██║░░░░╚████╔╝░██████╔╝██║░░██║██║░░░░░  ██║░░╚═╝██║░░██║██║░░░██║██████╔╝
+#░╚═══██╗██║░░██║██║░░░██║░░░██║░░░██╔══██║░░░██║░░░░░╚██╔╝░░██╔══██╗██║░░██║██║░░░░░  ██║░░██╗██║░░██║██║░░░██║██╔═══╝░
+#██████╔╝╚█████╔╝╚██████╔╝░░░██║░░░██║░░██║░░░██║░░░░░░██║░░░██║░░██║╚█████╔╝███████╗  ╚█████╔╝╚█████╔╝╚██████╔╝██║░░░░░
+#╚═════╝░░╚════╝░░╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝░░░╚═╝░░░░░░╚═╝░░░╚═╝░░╚═╝░╚════╝░╚══════╝  ░╚════╝░░╚════╝░░╚═════╝░╚═╝░░░░░
+AUT_south_tyrol_crisis_decisions = {
+
+	AUT_stcrisis_coup_mission = {
+		days_mission_timeout = 10
+		fire_only_once = yes
+		available = {
+			always = no
+		}
+		is_good = yes
+		priority = 100
+		timeout_effect = {     
+			hidden_effect = {
+				set_country_flag = completed_preperation_flag
+			}  
+		}
+	}
+####################################################
+
+
+
+	AUT_stcrisis_deliver_weapons = {			
+		visible = {
+			has_active_mission = AUT_stcrisis_coup_mission
+		}
+		available = {
+			has_equipment = {
+				infantry_equipment > 599
+			} 
+		}
+		fire_only_once = yes
+		custom_cost_trigger = {
+    	 	has_equipment = {
+				 infantry_equipment > 599
+			}
+		}
+		priority = 90
+		custom_cost_text = AUT_stcrisis_deliver_weapons_cost # localisation string
+		complete_effect = {
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = -600
+    			producer = AUT
+			}
+			activate_mission = AUT_stcrisis_deliver_weapons_mission			
+			custom_effect_tooltip = AUT_stcrisis_deliver_weapons_tt
+			hidden_effect = {
+				add_to_variable = {
+					var = stcrisis_coup_successrate
+					value = 10
+				}
+			}
+		}
+	}
+
+	AUT_stcrisis_deliver_weapons_mission = {
+		days_mission_timeout = 30
+		fire_only_once = yes
+		allowed = { 
+			always = no 
+		}
+		available = {
+			always = no
+		}
+		is_good = yes
+		priority = 90
+		timeout_effect = {                     
+			hidden_effect = {
+				set_country_flag = AUT_stcrisis_deliver_weapons_mission_flag
+			}
+		}
+	}
+
+	AUT_stcrisis_deliver_weapons2 = {			
+		visible = {
+			has_active_mission = AUT_stcrisis_coup_mission
+			has_country_flag = AUT_stcrisis_deliver_weapons_mission_flag
+		}
+		available = {
+			has_equipment = {
+				motorized_equipment > 199
+			} 
+			hidden_trigger = {
+			has_country_flag = AUT_stcrisis_deliver_weapons_mission_flag
+			}
+		}
+		fire_only_once = yes
+		custom_cost_trigger = {
+    	 	has_equipment = {
+				motorized_equipment > 199
+			 }
+		}
+		custom_cost_text = AUT_stcrisis_deliver_weapons2_cost # localisation string
+		complete_effect = {
+			add_equipment_to_stockpile = {
+    			type = motorized_equipment
+    			amount = -200
+    			producer = AUT
+			}
+			activate_mission = AUT_stcrisis_deliver_weapons_mission2
+			custom_effect_tooltip = AUT_stcrisis_deliver_weapons_tt^
+			hidden_effect = {
+				add_to_variable = {
+					var = stcrisis_coup_successrate
+					value = 10
+				}
+			}
+		}
+	}
+
+	AUT_stcrisis_deliver_weapons_mission2 = {
+		days_mission_timeout = 30
+		fire_only_once = yes
+		allowed = { 
+			always = no 
+		}
+		available = {
+			always = no
+		}
+		is_good = yes
+		priority = 90
+		timeout_effect = {                  
+			hidden_effect = {   
+				set_country_flag = AUT_stcrisis_deliver_weapons_mission2_flag
+			}
+		}
+	}
+	
+	AUT_stcrisis_deliver_weapons3 = {			
+		visible = {
+			has_active_mission = AUT_stcrisis_coup_mission
+			has_country_flag = AUT_stcrisis_deliver_weapons_mission2_flag
+		}
+		available = {
+			has_equipment = {
+				artillery_equipment > 99
+			} 
+			hidden_trigger = {
+				has_country_flag = AUT_stcrisis_deliver_weapons_mission2_flag
+			}
+		}
+		fire_only_once = yes
+		custom_cost_trigger = {
+    	 	has_equipment = {
+				artillery_equipment > 99
+			}
+		}
+		custom_cost_text = AUT_stcrisis_deliver_weapons3_cost # localisation string
+		complete_effect = {
+			add_equipment_to_stockpile = {
+    			type = artillery_equipment
+    			amount = -100
+    			producer = AUT
+			}
+			activate_mission = AUT_stcrisis_deliver_weapons3_mission
+			custom_effect_tooltip = AUT_stcrisis_deliver_weapons_tt
+				hidden_effect = {
+				add_to_variable = {
+					var = stcrisis_coup_successrate
+					value = 10
+				}
+			}
+		}
+	}
+
+	AUT_stcrisis_deliver_weapons3_mission = {
+		days_mission_timeout = 30
+		fire_only_once = yes
+		allowed = { 
+			always = no 
+		}
+		available = {
+			always = no
+		}
+		is_good = yes
+		priority = 80
+		timeout_effect = {                     
+		}
+	}
+
+
+
+
+
+	AUT_stcrisis_train_soldiers = {			
+		visible = {
+			has_active_mission = AUT_stcrisis_coup_mission
+		}
+		available = {
+			command_power > 19
+		}
+		fire_only_once = yes
+		custom_cost_trigger = {
+			command_power > 19
+		}
+		priority = 80
+		custom_cost_text = AUT_stcrisis_train_soldiers_cost # localisation string
+		complete_effect = {
+			add_command_power = -20
+			activate_mission = AUT_stcrisis_train_soldiers_mission		
+			custom_effect_tooltip = AUT_stcrisis_deliver_weapons_tt
+				hidden_effect = {
+				add_to_variable = {
+					var = stcrisis_coup_successrate
+					value = 10
+				}
+			}
+		}
+	}
+
+	AUT_stcrisis_train_soldiers_mission = {
+		days_mission_timeout = 30
+		fire_only_once = yes
+		allowed = { 
+			always = no 
+		}
+		available = {
+			always = no
+		}
+		is_good = yes
+		priority = 80
+		timeout_effect = {                     
+			hidden_effect = {
+				set_country_flag = AUT_stcrisis_train_soldiers_mission_flag
+			}
+		}
+	}
+
+	AUT_stcrisis_send_soldiers = {			
+		visible = {
+			has_active_mission = AUT_stcrisis_coup_mission
+			has_country_flag = AUT_stcrisis_train_soldiers_mission_flag
+		}
+		available = {
+			has_manpower > 799
+			hidden_trigger = {
+				has_country_flag = AUT_stcrisis_train_soldiers_mission_flag
+			}
+		}
+		fire_only_once = yes
+		custom_cost_trigger = {
+			has_manpower > 799
+		}
+		priority = 80
+		custom_cost_text = AUT_stcrisis_send_soldiers_cost # localisation string
+		complete_effect = {
+			add_manpower = -800
+			activate_mission = AUT_stcrisis_send_soldiers_mission		
+			custom_effect_tooltip = AUT_stcrisis_deliver_weapons_tt
+				hidden_effect = {
+				add_to_variable = {
+					var = stcrisis_coup_successrate
+					value = 10
+				}
+			}
+		}
+	}
+
+	AUT_stcrisis_send_soldiers_mission = {
+		days_mission_timeout = 30
+		fire_only_once = yes
+		allowed = { 
+			always = no 
+		}
+		available = {
+			always = no
+		}
+		is_good = yes
+		priority = 80
+		timeout_effect = {                     
+			hidden_effect = {
+				set_country_flag = AUT_stcrisis_send_soldiers_mission_flag
+			}
+		}
+	}
+
+	AUT_stcrisis_deliver_weapons4 = {			
+		visible = {
+			has_active_mission = AUT_stcrisis_coup_mission
+			has_country_flag = AUT_stcrisis_send_soldiers_mission_flag
+		}
+		available = {
+			has_equipment = {
+				infantry_equipment > 1199
+			 }
+			hidden_trigger = {
+				has_country_flag = AUT_stcrisis_send_soldiers_mission_flag
+			}
+		}
+		fire_only_once = yes
+		custom_cost_trigger = {
+			has_equipment = {
+				infantry_equipment > 1199
+			}
+		}
+		priority = 80
+		custom_cost_text = AUT_stcrisis_deliver_weapons4_cost # localisation string
+		complete_effect = {
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = -1200
+    			producer = AUT
+			}
+			activate_mission = AUT_stcrisis_deliver_weapons4_mission
+			custom_effect_tooltip = AUT_stcrisis_deliver_weapons_tt
+			hidden_effect = {
+				add_to_variable = {
+					var = stcrisis_coup_successrate
+					value = 10
+				}
+			}
+		}
+	}
+
+	AUT_stcrisis_deliver_weapons4_mission = {
+		days_mission_timeout = 30
+		fire_only_once = yes
+		allowed = { 
+			always = no 
+		}
+		available = {
+			always = no
+		}
+		is_good = yes
+		priority = 80
+		timeout_effect = {                     
+		}
+	}
+
+
+
+
+	AUT_stcrisis_propaganda_campaign = {			
+		visible = {
+			has_active_mission = AUT_stcrisis_coup_mission
+		}
+		available = {
+			has_political_power > 99
+		}
+		fire_only_once = yes
+		custom_cost_trigger = {
+			has_political_power > 99
+		}
+		priority = 70
+		custom_cost_text = AUT_stcrisis_propaganda_campaign_cost # localisation string
+		complete_effect = {
+			add_political_power = -100
+			activate_mission = AUT_stcrisis_propaganda_campaign_mission		
+			custom_effect_tooltip = AUT_stcrisis_deliver_weapons_tt
+			hidden_effect = {
+				add_to_variable = {
+					var = stcrisis_coup_successrate
+					value = 10
+				}
+			}
+		}
+	}
+
+	AUT_stcrisis_propaganda_campaign_mission = {
+		days_mission_timeout = 30
+		fire_only_once = yes
+		allowed = { 
+			always = no 
+		}
+		available = {
+			always = no
+		}
+		is_good = yes
+		priority = 70
+		timeout_effect = {                     
+			hidden_effect = {
+				set_country_flag = AUT_stcrisis_propaganda_campaign_mission_flag
+			}
+		}
+	}
+
+	AUT_stcrisis_send_soldiers2 = {			
+		visible = {
+			has_active_mission = AUT_stcrisis_coup_mission
+			has_country_flag = AUT_stcrisis_propaganda_campaign_mission_flag
+		}
+		available = {
+			has_manpower > 1799
+			hidden_trigger = {
+				has_country_flag = AUT_stcrisis_propaganda_campaign_mission_flag
+			}
+		}
+		fire_only_once = yes
+		custom_cost_trigger = {
+			has_manpower > 1799
+		}
+		priority = 70
+		custom_cost_text = AUT_stcrisis_send_soldiers2_cost # localisation string
+		complete_effect = {
+			add_manpower = -1800
+			activate_mission = AUT_stcrisis_send_soldiers2_mission		
+			custom_effect_tooltip = AUT_stcrisis_deliver_weapons_tt
+			hidden_effect = {
+				add_to_variable = {
+					var = stcrisis_coup_successrate
+					value = 10
+				}
+			}
+		}
+	}
+
+	AUT_stcrisis_send_soldiers2_mission = {
+		days_mission_timeout = 30
+		fire_only_once = yes
+		allowed = { 
+			always = no 
+		}
+		available = {
+			always = no
+		}
+		is_good = yes
+		priority = 70
+		timeout_effect = {                     
+			hidden_effect = {
+				set_country_flag = AUT_stcrisis_send_soldiers2_mission_flag
+			}
+		}
+	}
+
+	AUT_stcrisis_train_soldiers2 = {			
+		visible = {
+			has_country_flag = AUT_stcrisis_send_soldiers2_mission_flag
+			has_active_mission = AUT_stcrisis_coup_mission
+		}
+		available = {
+			command_power > 39
+			hidden_trigger = {
+				has_country_flag = AUT_stcrisis_send_soldiers2_mission_flag
+			}
+		}
+		fire_only_once = yes
+		custom_cost_trigger = {
+			command_power > 39
+		}
+		priority = 70
+		custom_cost_text = AUT_stcrisis_train_soldiers2_cost # localisation string
+		complete_effect = {
+			add_command_power = -40
+			activate_mission = AUT_stcrisis_train_soldiers2_mission		
+			custom_effect_tooltip = AUT_stcrisis_deliver_weapons_tt
+			hidden_effect = {
+				add_to_variable = {
+					var = stcrisis_coup_successrate
+					value = 10
+				}
+			}
+		}
+	}
+
+	AUT_stcrisis_train_soldiers2_mission = {
+		days_mission_timeout = 30
+		fire_only_once = yes
+		allowed = { 
+			always = no 
+		}
+		available = {
+			always = no
+		}
+		is_good = yes
+		priority = 70
+		timeout_effect = {                     
+
+		}
+	}
 }

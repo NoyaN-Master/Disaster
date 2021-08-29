@@ -4,21 +4,21 @@ state={
 	history={
 		owner = FIU
 		victory_points = {
-			6631 5 
+			6631 6 
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 5
 			industrial_complex = 1
-
+			arms_factory = 1
 		}
 		add_core_of = FIU
-
+		add_core_of = STL
 	}
 	
 	provinces={
-		6631 9598 
+		6631 9598 11598
 	}
-	manpower= 180000
+	manpower= 400000
 	buildings_max_level_factor=1.000
-	state_category= rural
+	state_category = town
 }

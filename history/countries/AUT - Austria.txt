@@ -17,7 +17,6 @@ set_technology = {
 }
 
 set_convoys = 0
-
 set_politics = {
 	ruling_party = ultranationalist
 	last_election = "1936.1.1"
@@ -33,7 +32,7 @@ add_ideas = AUT_sluggish_economy_1
 add_ideas = AUT_socialist_discotent
 add_ideas = AUT_pan_germanist_discotent
 add_ideas = AUT_unresolved_monarchy
-
+add_manpower = 17500
 country_event = { id = aut.1 days = 1 } #Intro event
 set_stability = 0.35
 set_popularities = {

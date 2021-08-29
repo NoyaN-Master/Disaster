@@ -1,0 +1,123 @@
+﻿division_template = {
+	name = "Infanterie Division"
+	division_names_group = STL_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+	}
+	support = {
+	}
+}
+
+division_template = {
+	name = "Alpenjäger Division"
+	division_names_group = STL_MNT_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 1 y = 3 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+	}
+	support = {
+	}
+}
+
+units = {
+
+	division= {	# "1. Division"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 11598 
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "2. Division"			
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 11598  
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "3. Division"			
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 9598 
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+
+	division= {	# "5. Division"			
+		name = "1. Alpenjäger Division"
+		location = 6631  # Graz
+		division_template = "Alpenjäger Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "6. Division"		
+		name = "2. Alpenjäger Division"
+		location = 6631  # Innsbruck
+		division_template = "Alpenjäger Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+
+air_wings = {
+	39 = {
+		fighter_equipment_0 =  {
+			owner = "STL" 
+			creator = "STL"
+			amount = 50
+		}
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "STL"
+		}
+		requested_factories = 1
+		progress = 0.94
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "STL"
+		}
+		requested_factories = 1
+		progress = 0.94
+		efficiency = 100
+	}
+}

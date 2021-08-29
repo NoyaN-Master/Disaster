@@ -14,6 +14,9 @@ country_event = { #Intro
 
 	option = {
 		name = aut.1.a
+		hidden_effect = {
+			country_event = { id = aut.84 days = 30 }
+		}
 	}
 }
 
@@ -2723,20 +2726,54 @@ country_event = { #paramilitary fuss
             ideology = ultranationalist
             popularity = 0.03
             }
+    }
+
+    option = {
+            name = aut.79.b 
+            set_country_flag = AUT_side_with_sturmkorps_option
+            add_popularity = {
+                ideology = revolutionary_nationalist
+                popularity = 0.05
+            }     
+    }
+
+    option = {
+        name = aut.79.c 
+        set_country_flag = AUT_side_with_sturmscharen_option
+        add_popularity = {
+            ideology = ultranationalist
+            popularity = 0.05
+        }
+    }
+}
+
+country_event = { #paramilitary fuss
+    id = aut.80
+    title = aut.80.t
+    desc = aut.80.d
+    trigger = {
+        has_completed_focus = AUT_new_OKH
+    }
+    picture = GFX_report_event_aut_dollfuss_speech
+
+    fire_only_once = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = aut.80.a 
             hidden_effect = {
             create_field_marshal = {
                 name = "Ernst Rudiger Starhemberg"
                 picture = "AUT_Ernst_Rudiger_Stahremberg.tga"
                 traits = 
-                {     oberkommando_der_heimwehr
+                {   oberkommando_der_heimwehr
                     infantry_leader
                     infantry_officer
                     infantry_expert
                     politically_connected
                     hill_fighter
-                    ranger
                     organizer
-                    thorough_planner
                     fortress_buster
                  }
                 skill = 7
@@ -2749,21 +2786,83 @@ country_event = { #paramilitary fuss
     }
 
     option = {
-            name = aut.79.b 
-            set_country_flag = AUT_side_with_sturmkorps_option
-            add_popularity = {
-                ideology = revolutionary_nationalist
-                popularity = 0.05
-            }
+            name = aut.80.b 
             hidden_effect = {
             create_field_marshal = {
-                    name = "Arthur Seyss Inquart"
+                name = "Kurt Schussnigg"
+	            picture = "AUT_Kurt_Schussnigg.tga"
+                traits = 
+                {   oberkommando_der_heimwehr
+                    politically_connected
+					panzer_leader
+                    infantry_leader
+                    organizer
+                    commando
+					thorough_planner
+                    offensive_doctrine
+					ranger
+                }
+                skill = 6
+                attack_skill = 7
+                defense_skill = 3
+                planning_skill = 5
+                logistics_skill = 4
+            }    
+        }        
+    }
+
+    option = {
+        name = aut.80.c 
+        hidden_effect = {
+        create_field_marshal = {
+                name = "Richard Steidle"
+                picture = "AUT_Richard_Steidle.tga"
+                traits = 
+                {   oberkommando_der_heimwehr
+                    infantry_leader
+                    cavalry_leader
+	              	infantry_expert
+					inflexible_strategist
+					unyielding_defender
+					charismatic
+					politically_connected
+             	}
+                skill = 7
+                attack_skill = 4
+                defense_skill = 7
+                planning_skill = 6
+                logistics_skill = 5
+            }    
+        }    
+    }
+}
+
+country_event = { #paramilitary fuss
+    id = aut.81
+    title = aut.81.t
+    desc = aut.81.d
+    trigger = {
+        has_completed_focus = AUT_new_SK_fuehrer
+    }
+    picture = GFX_report_event_aut_dollfuss_speech
+
+    fire_only_once = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = aut.81.a 
+            hidden_effect = {
+			create_field_marshal = {
+                name = "Arthur Seyss Inquart"
                 picture = "AUT_Arthur_Seyss_Inquart.tga"
                 traits = 
-                {     sturmkorps_reichsfuehrer 
+                {    
+					sturmkorps_reichsfuehrer 
                     armor_officer
                     panzer_leader
                     panzer_expert
+					politically_connected
                     organizer
                     commando
                     charismatic
@@ -2773,22 +2872,57 @@ country_event = { #paramilitary fuss
                 }
                 skill = 5
                 attack_skill = 6
-                defense_skill = 2
+                defense_skill = 3
                 planning_skill = 5
                 logistics_skill = 3
             }    
-        }        
+        }
     }
 
     option = {
-        name = aut.79.c 
-        set_country_flag = AUT_side_with_sturmscharen_option
-        add_popularity = {
-            ideology = ultranationalist
-            popularity = 0.05
-        }
-        hidden_effect = {
-        create_field_marshal = {
+            name = aut.81.b 
+            hidden_effect = {
+            create_field_marshal = {
+                name = "Kurt Schussnigg"
+	            picture = "AUT_Kurt_Schussnigg.tga"
+                traits = 
+                {   sturmkorps_reichsfuehrer 
+                    politically_connected
+					panzer_leader
+                    infantry_leader
+                    organizer
+                    commando
+					thorough_planner
+                    offensive_doctrine
+					ranger
+                }
+                skill = 6
+                attack_skill = 7
+                defense_skill = 3
+                planning_skill = 5
+                logistics_skill = 4
+            }    
+        }        
+    }
+}
+
+country_event = { #paramilitary fuss
+    id = aut.82
+    title = aut.82.t
+    desc = aut.82.d
+    trigger = {
+        has_completed_focus = AUT_Komtur_der_SS
+    }
+    picture = GFX_report_event_aut_dollfuss_speech
+
+    fire_only_once = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = aut.82.a 
+            hidden_effect = {
+            create_field_marshal = {
                 name = "Archbishop Theodor Innitzer"
                 picture = "AUT_Archbishop_Theodor_Innitzer.tga"
                 traits = 
@@ -2800,19 +2934,408 @@ country_event = { #paramilitary fuss
                     charismatic
                     offensive_doctrine
                     aggressive_assaulter
+					brilliant_strategist
                     combined_arms_expert
-                    trickster
                     commando
-                    skirmisher
                     }
                 skill = 4
                 attack_skill = 5
                 defense_skill = 3
                 planning_skill = 4
-                logistics_skill = 4
+                logistics_skill = 5
         
+            }    
+        }    
+    }
+
+    option = {
+            name = aut.82.b 
+            hidden_effect = {
+            create_field_marshal = {
+                name = "Kurt Schussnigg"
+	            picture = "AUT_Kurt_Schussnigg.tga"
+                traits = 
+                {   komtur_des_deutschritterordens
+                    politically_connected
+					panzer_leader
+                    infantry_leader
+                    organizer
+                    commando
+					thorough_planner
+                    offensive_doctrine
+					ranger
+                }
+                skill = 6
+                attack_skill = 7
+                defense_skill = 3
+                planning_skill = 5
+                logistics_skill = 4
+            }    
+        }        
+    }
+
+    option = {
+        name = aut.82.c 
+        hidden_effect = {
+        create_field_marshal = {
+                name = "Otto von Habsburg"
+				picture = "AUT_Otto.tga"
+                traits = 
+                {   komtur_des_deutschritterordens
+                    infantry_leader
+					defensive_doctrine
+					charismatic
+					politically_connected
+					skilled_staffer
+					expert_delegator
+					trickster
+					guerilla_fighter
+					fast_planner
+             	}
+                skill = 4
+                attack_skill = 3
+                defense_skill = 5
+                planning_skill = 4
+                logistics_skill = 5
             }    
         }    
     }
 }
 
+country_event = { 
+    id = aut.83
+    title = aut.83.t
+    desc = aut.83.d
+    trigger = {
+        has_completed_focus = AUT_military_strategy
+    }
+    picture = GFX_report_event_aut_dollfuss_speech
+
+    fire_only_once = yes
+
+    is_triggered_only = yes
+
+  	option = {
+        name = aut.83.a 
+        set_country_flag = AUT_infantry_tactics_option    
+    }
+
+    option = {
+            name = aut.83.b 
+            set_country_flag = AUT_mobile_warfare_tactics_option 
+    }
+
+    option = {
+        name = aut.83.c 
+        set_country_flag = AUT_aviation_tactics_option
+    }
+}
+
+country_event = { 
+    id = aut.84 
+    title = aut.84.t
+    desc = aut.84.d
+
+    picture = GFX_report_event_aut_dollfuss_speech
+
+    fire_only_once = yes
+
+	is_triggered_only = yes
+
+  	option = {
+        name = aut.84.a 
+        set_country_flag = AUT_south_tyrol_crisis_option    
+		complete_national_focus = AUT_south_tyrol_crisis
+		hidden_effect = {
+			country_event = { id = aut.85 days = 5 }
+		}
+    }
+}
+country_event = { 
+    id = aut.85 
+    title = aut.85.t
+    desc = aut.85.d
+
+    picture = GFX_report_event_aut_dollfuss_speech
+
+    fire_only_once = yes
+
+	is_triggered_only = yes
+
+  	option = {
+        name = aut.85.a 
+    }
+}
+country_event = { 
+    id = aut.86
+    title = aut.86.t
+    desc = aut.86.d
+
+    picture = GFX_report_event_aut_dollfuss_speech
+
+    fire_only_once = yes
+
+	is_triggered_only = yes
+
+  	option = {
+        name = aut.86.a 
+		set_country_flag = AUT_arrange_the_meeting_option
+		complete_national_focus = AUT_preparations
+    }
+}
+
+country_event = { 
+    id = aut.87
+    title = aut.87.t
+    desc = aut.87.d
+
+	trigger = {
+        if = {
+            check_variable = {
+                var = stcrisis_coup_successrate
+                value = 20
+                compare = greater_than_or_equals
+            }
+        }
+    }
+	available = {
+		has_country_flag = completed_preperation_flag
+	}
+    picture = GFX_report_event_aut_dollfuss_speech
+
+    fire_only_once = yes
+	  
+  	option = {
+        name = aut.87.a 
+		complete_national_focus = AUT_execution
+		reate_dynamic_country = {
+            original_tag = STL
+        }
+        STL = {
+            transfer_state = 39
+            transfer_state = 811
+        }
+    	puppet = STL
+        STL = {
+        load_oob = "STL_1936"
+		}
+		STL = {
+			add_opinion_modifier = {
+    			target = AUT
+   				modifier = puppet_opinion
+			}
+			add_opinion_modifier = {
+    			target = FIU
+   				modifier = pact_against_us
+			}
+		}
+		FIU = {
+			add_opinion_modifier = {
+    			target = AUT
+   				modifier = pact_against_us
+			}
+			add_opinion_modifier = {
+    			target = STL
+   				modifier = pact_against_us
+			}
+		}
+		add_opinion_modifier = {
+    			target = STL
+   				modifier = in_faction
+		}
+		add_opinion_modifier = {
+    			target = FIU
+   				modifier = pact_against_us
+		}
+		39 = {
+			add_building_construction = {
+    			type = industrial_complex
+    			level = 1
+   				instant_build = yes
+			}
+		}
+		811 = {
+			add_building_construction = {
+    			type = arms_factory
+    			level = 1
+   				instant_build = yes
+			}
+		}
+		STL = {
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = 1200
+   				producer = FIU
+			}
+			add_equipment_to_stockpile = {
+   			type = artillery_equipment
+    		amount = 400
+    		producer = FIU
+			}
+		}
+    }
+}
+
+country_event = { 
+    id = aut.88
+    title = aut.88.t
+    desc = aut.88.d
+
+	trigger = {
+         if = {
+	        check_variable = {
+                var = stcrisis_coup_successrate
+                value = 10
+                compare = less_than_or_equals
+            }
+   		}
+    }
+
+	available = [
+		has_country_flag = completed_preperation_flag
+	]
+
+    picture = GFX_report_event_aut_dollfuss_speech
+
+    fire_only_once = yes
+
+	
+  	option = {
+        name = aut.88.a 
+		complete_national_focus = AUT_execution
+    }
+}
+
+##### Scripted peace deal with Italy
+country_event = { 
+    id = aut.89
+    title = aut.89.t
+    desc = aut.89.d
+
+	trigger = {
+  		has_war_with = FIU
+		FIU = {
+			surrender_progress > 0.40
+		}
+    }
+
+    picture = GFX_report_event_aut_dollfuss_speech
+	
+  	option = {
+        name = aut.89.a 
+		white_peace = FIU
+		transfer_state = 39
+        transfer_state = 811
+		
+		create_field_marshal = {
+		name = "Sepp Kerschbaumer"
+		portrait_path = "gfx/leaders/AUT/AUT_Sepp_Kerschbaumer.tga"
+		traits = {
+			politically_connected
+			infantry_officer
+			brilliant_strategist
+			infantry_leader
+			trait_mountaineer
+			defensive_doctrine
+		}
+		skill = 5
+		attack_skill = 5
+		defense_skill = 5
+		planning_skill = 3
+		logistics_skill = 3
+		}
+		
+		add_popularity = {
+    		ideology = ultranationalist
+   			popularity = 0.04
+		}
+		add_popularity = {
+    		ideology = autocratic
+   			popularity = 0.02
+		}
+		add_timed_idea = {
+   			idea = AUT_stcrisis_victorious
+    		days = 120
+		}
+		FIU = {
+			add_timed_idea = {
+   				idea = AUT_stcrisis_war_reparations
+    			days = 120
+			}
+			add_ideas = {
+				idea = AUT_stcrisis_sour_loser
+			}
+		}
+    }
+}
+
+############ Starts war 
+country_event = { 
+    id = aut.90
+    title = aut.90.t
+    desc = aut.90.d
+
+	trigger = {
+  		has_war_with = FIU
+    }
+
+    picture = GFX_report_event_aut_dollfuss_speech
+
+    fire_only_once = yes
+
+	
+  	option = {
+        name = aut.90.a 
+		STL = {
+			add_ideas = {
+				AUT_stcrisis_for_our_fatherland
+			}
+		}
+    }
+}
+
+########### Loses war
+country_event = { 
+    id = aut.91
+    title = aut.91.t
+    desc = aut.91.d
+
+	trigger = {
+  		has_war_with = FIU
+		surrender_progress > 0.75	
+		STL = {
+		has_capitulated = yes	
+		}
+    }
+
+    picture = GFX_report_event_aut_dollfuss_speech
+
+
+	
+  	option = {
+        name = aut.91.a 
+		white_peace = FIU
+		FIU = {
+			annex_country = {
+    			target = STL
+    			transfer_troops = no
+			}
+		}
+		FIU = {
+			transfer_state = 153
+		}
+		add_ideas = {
+			idea = AUT_stcrisis_sour_loser
+		}
+		add_timed_idea = {
+   			idea = AUT_stcrisis_war_reparations
+			days = 120			
+		}
+		FIU = {
+			add_timed_idea = {
+   				idea = AUT_stcrisis_victorious
+    			days = 120
+			}
+		}
+    }
+}

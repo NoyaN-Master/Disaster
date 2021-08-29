@@ -6,7 +6,7 @@ state={
 		aluminium=11 # was: 18.000
 	}
 	
-	state_category = large_city
+	state_category = city
 
 	history={
 		owner = FIU
@@ -16,7 +16,7 @@ state={
 		buildings = {
 			infrastructure = 6
 			arms_factory = 2
-			industrial_complex = 4
+			industrial_complex = 2
 			dockyard = 1
 			air_base = 3
 			11584 = {
@@ -38,8 +38,8 @@ state={
 	}
 
 	provinces={
-		603 628 3604 3657 6656 9582 9613 11584 
+		603 3604 9582 11584 
 	}
-	manpower=3963151
+	manpower=2223151
 	buildings_max_level_factor=1.000
 }

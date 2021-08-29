@@ -1,0 +1,29 @@
+
+state={
+	id=884
+	name="STATE_884"
+	manpower=1420000
+	resources={
+		steel=20.000
+		aluminium=11.000
+	}
+	
+	state_category = large_town
+	
+	history={
+		owner = FIU
+		victory_points = {
+			628 1 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = FIU
+	}
+
+	provinces={
+		6656 628 9613 3657 656
+	}
+}

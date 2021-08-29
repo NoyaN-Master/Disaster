@@ -2,29 +2,32 @@
 state={
 	id=39
 	name="STATE_39" # South Tyrol
-	manpower = 461650
+	manpower = 450000
 	
 	state_category = town
 	
 	resources={
-		aluminium=14 # was: 22
+		aluminium=14 
+		steel = 12
 	}
 
 	history={
 		victory_points = {
-			11598 1
+			11598 12
 		}
 		owner = FIU
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 1
+			arms_factory = 3
+			industrial_complex = 3
+			air_base = 3
 		}
 		add_core_of = AUT
-		add_core_of = FIU
+		add_core_of = STL
 
 	}
 
 	provinces={
-		656 6675 9630 11598 11615 
+		6675 9630 11615 
 	}
 }

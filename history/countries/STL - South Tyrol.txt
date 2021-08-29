@@ -1,0 +1,75 @@
+capital = 811
+oob = "STL_1936"
+
+set_technology = {
+	gw_artillery = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_engineers = 1
+	tech_support = 1		
+	tech_mountaineers = 1
+	early_fighter = 1
+	motorised_infantry = 1
+}
+
+set_convoys = 50
+
+set_politics = {
+	ruling_party = ultranationalist
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+add_ideas = 	military_government 
+add_ideas = 	corporatism 
+add_ideas = 	industrialized_society
+
+add_ideas = 	war_economy 
+add_ideas = 	extensive_conscription 
+
+set_stability = 0.35
+set_war_support = 0.90
+
+set_popularities = {
+	conservative = 0
+	liberal = 0
+	social_democrat = 0
+	libertarian_socialist = 0
+	authoritarian_socialist = 0
+	unisocialist = 0
+	authoritarian_democrat = 0
+	autocratic = 30
+	ultranationalist = 60
+	revolutionary_nationalist = 10
+	esoteric_traditionalist = 0
+	revolutionary_anarchist = 0
+}
+
+create_country_leader = {
+	name = "Sepp Kerschbaumer"
+	#desc = "STL_Sepp_Kerschbaumer_desc"
+	picture = "STL_Sepp_Kerschbaumer.tga"
+	expire = "2020.1.1"
+	ideology = ultranationalist_subideology
+	traits = {
+	}
+}
+
+create_field_marshal = {
+	name = "Sepp Kerschbaumer"
+	portrait_path = "gfx/leaders/STL/STL_Sepp_Kerschbaumer.tga"
+	traits = {
+		politically_connected
+		infantry_officer
+		brilliant_strategist
+		infantry_leader
+		trait_mountaineer
+		defensive_doctrine
+	}
+	skill = 5
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 3
+}
