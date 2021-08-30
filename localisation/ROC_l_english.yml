@@ -28,12 +28,11 @@ roc.5.b:0 "Play as the People's Republic of China"
 
 roc.6.t:0 "Terrorists Attack at the New Year Celebrations"
 roc.6.d:0 ""
-roc.6.a:0 "§RDai Li WILL PAY!"
+roc.6.a:0 "§RDAI LI WILL PAY!"
 
 roc.7.t:0 "Emergency Coaliton Meeting"
 roc.7.d:0 ""
-roc.7.a:0 "Take a more conservative approach, ban all large gatherings."
-roc.7.b:0 "We must prevent anymore attacks! Inact martial law, tanks on the roads!"
+roc.7.a:0 "Can Chiang Kai-Shek hold onto power?"
 
 roc.8.t:0 "An Anonymous Tip"
 roc.8.d:0 ""
@@ -51,11 +50,23 @@ roc.11.t:0 "Major Nationalist Riots in Major Cities"
 roc.11.d:0 ""
 roc.11.a:0 "Send In the army"
 
-roc.12.t:0 "Nationalist Outcry After Recent Transition of Power"
+roc.12.t:0 "Socialist Outcry After Recent Transition of Power"
 roc.12.d:0 ""
-roc.12.a:0 "This will be fine."
+roc.12.a:0 "They will be fine"
+
+roc.13.t:0 "A New Stance On Socialism"
+roc.13.d:0 ""
+roc.13.a:0 "Our citizens will not be poisened by socialist propaganda"
+
+roc.14.t:0 "Socialist Protests at Tiananmen Square"
+roc.14.d:0 ""
+roc.14.a:0 "Send in the police, make sure we keep the peace."
+roc.14.b:0 "Send in the army! Tanks on the streets."
 
 
+roc.15.t:0 "Desertions in the army"
+roc.15.d:0 ""
+roc.15.a:0 "Track down every single one, they will all be hung!"
 ###Focus
 
 ROC_focus_1:0 "Chinese New Year Festival"
@@ -79,14 +90,14 @@ ROC_focus_6_desc:0 "A National Address"
 ROC_focus_7:0 "Rebuild Beijing"
 ROC_focus_7_desc:0 "Rebuild Beijing"
 
-ROC_focus_8:0 "Pass the 1936 Food Stamp Act"
-ROC_focus_8_desc:0 "Pass the 1936 Food Stamp Act"
+ROC_focus_8:0 "Burn Symbols of Socialism"
+ROC_focus_8_desc:0 "Burn Symbols of Socialism"
 
-ROC_focus_9:0 "National Healthcare Act"
-ROC_focus_9_desc:0 "National Healthcare Act"
+ROC_focus_9:0 "Purge Socialist Officials"
+ROC_focus_9_desc:0 "Purge Socialist Officials"
 
-ROC_focus_10:0 "Income Assistance Act"
-ROC_focus_10_desc:0 "Income Assistance Act"
+ROC_focus_10:0 "Pass the Anti-Socialism Act"
+ROC_focus_10_desc:0 ""Pass the Anti-Socialism Act"
 #####ideas
 
 ROC_Colab_Govern:0 "Collaborative Government"
@@ -101,6 +112,10 @@ ROC_free_healthcare:0 "Free Healthcare For All"
 ROC_income_assistance:0 "Income Assistance"
 ROC_pre_right:0 "Martial Law"
 ROC_pre_left:0 "Pause Non Essential Buisness"
+ROC_purge:0 "Socialist Purge"
+ROC_desertion:0 "Broken Chain Of Command"
+ROC_anti_commie:0 "Anti Socialist Act"
+ROC_maohunt:0 "National Manhunt"
 ###Decisions
 ###Tool Tips
 ROC_ETR_TT:0 "§GEast Turkestan Declares Independance"

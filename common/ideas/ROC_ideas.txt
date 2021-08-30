@@ -82,5 +82,44 @@ country = {
 	        consumer_goods_factor = 0.1
 			}
 		}
+		ROC_purge = {
+			picture = ROC_unity
+			modifier = {
+			command_power_gain_mult = -0.25
+			experience_gain_army_unit = -0.25	
+            army_org_factor = -0.25
+            army_org_regain = -0.25
+			
+			}
+		}
+		ROC_desertion = {
+			picture = ROC_unity
+			modifier = {
+			command_power_gain_mult = -0.25
+			experience_gain_army_unit = -0.25	
+            army_attack_factor = -0.2
+			army_defence_factor = -0.2
+			
+			}
+		}
+		ROC_anti_commie = {
+			picture = ROC_unity
+			modifier = {
+		social_democrat_acceptance = -25
+	    libertarian_socialist_acceptance = -75
+		authoritarian_socialist_acceptance = -75
+		libertarian_socialist_acceptance = -75
+	    unisocialist_acceptance = -75
+			
+			}
+		}
+		ROC_maohunt = {
+			picture = ROC_unity
+			modifier = {
+            stability_weekly = -0.02
+			war_support_weekly = -0.02
+			
+			}
+		}
 }
 }

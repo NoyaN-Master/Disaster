@@ -398,10 +398,10 @@ add_core_of = PRC
 	option = {
 		name = roc.6.a
         ai_chance = {factor = 100}
-		stability_factor = -0.15
+		add_stability = -0.5
 	}
 }
-country_event = { #emergency coaliton meeting
+country_event = { #emergency coaliton meeting chiang-kai-shek
 	id = roc.7
 	title = roc.7.t
 	desc = roc.7.d
@@ -414,14 +414,8 @@ country_event = { #emergency coaliton meeting
 
 	option = {
 		name = roc.7.a
-        ai_chance = {factor = 50}
-		set_country_flag = ROC_7_a
-	}
-	option = {
-		name = roc.7.b
-        ai_chance = {factor = 50}
-		set_country_flag = ROC_7_b
- 
+        ai_chance = {factor = 100}
+        add_stability = 0.05
 	}
 }
 country_event = { #a tip
@@ -438,7 +432,7 @@ country_event = { #a tip
 	option = {
 		name = roc.8.a
         ai_chance = {factor = 100}
-		
+		add_stability = 0.05
 	}
 }
 country_event = { #National speach
@@ -455,8 +449,8 @@ country_event = { #National speach
 	option = {
 		name = roc.9.a
         ai_chance = {factor = 100}
-		remove_idea = ROC_fading_unity
-		
+		add_stability = 0.1
+		remove_idea = ROC_pre_right
 	}
 }
 country_event = { #Disaster pt1
@@ -466,8 +460,6 @@ country_event = { #Disaster pt1
 
 	picture = GFX_report_event_aut_dollfuss_speech
 
-    trigger = {has_country_flag = ROC_disaster_time}
-
 	fire_only_once = yes
 
 	#is_triggered_only = yes
@@ -475,7 +467,7 @@ country_event = { #Disaster pt1
 	option = {
 		name = roc.10.a
         ai_chance = {factor = 100}
-		remove_idea = ROC_fading_unity
+	
 		
 	}
 }
@@ -486,8 +478,6 @@ country_event = { #Disaster pt2
 
 	picture = GFX_report_event_aut_dollfuss_speech
 
-    trigger = {has_country_flag = ROC_disaster_time_2}
-
 	fire_only_once = yes
 
 	#is_triggered_only = yes
@@ -495,27 +485,100 @@ country_event = { #Disaster pt2
 	option = {
 		name = roc.11.a
         ai_chance = {factor = 100}
-		remove_idea = ROC_fading_unity
+
 		
 	}
 }
-country_event = { Nationalits mad
+country_event = { #Commies crying
 	id = roc.12
 	title = roc.12.t
 	desc = roc.12.d
 
 	picture = GFX_report_event_aut_dollfuss_speech
 
-    trigger = {has_country_flag = ROC_disaster_time}
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.12.a
+        ai_chance = {factor = 100}
+		add_stability = -0.1
+	}
+}
+country_event = { #Commies symbols burn
+	id = roc.13
+	title = roc.13.t
+	desc = roc.13.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
 
 	fire_only_once = yes
 
 	#is_triggered_only = yes
 
 	option = {
-		name = roc.10.a
+		name = roc.13.a
         ai_chance = {factor = 100}
 		add_stability = -0.1
+	}
+}
+country_event = { #Commies square
+	id = roc.14
+	title = roc.14.t
+	desc = roc.14.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	#is_triggered_only = yes
+
+	option = {
+		name = roc.14.a
+        ai_chance = {factor = 80}
+		add_stability = -0.05
+	}
+		option = {
+		name = roc.14.b
+        ai_chance = {factor = 20}
+		add_stability = -0.15
+	}
+}
+country_event = { #Commies leave
+	id = roc.15
+	title = roc.15.t
+	desc = roc.15.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	#is_triggered_only = yes
+
+	option = {
+		name = roc.15.a
+        ai_chance = {factor = 100}
+		add_stability = -0.25
+		add_manpower = -50000
+		add_ideas = ROC_desertion
+		war_support_factor = -0.35
+	}
+}
+country_event = { #Hunt mao
+	id = roc.16
+	title = roc.16.t
+	desc = roc.16.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	#is_triggered_only = yes
+
+	option = {
+		name = roc.16.a
+        ai_chance = {factor = 100}
 		
 	}
 }
