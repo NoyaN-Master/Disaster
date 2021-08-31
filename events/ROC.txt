@@ -135,6 +135,8 @@ country_event = { #Spooky Dai Li Seperation
 		custom_effect_tooltip = ROC_CRF_TT
 		hidden_effect = {
 		CRF = {
+  transfer_state = 752	
+  transfer_state = 753	
   transfer_state = 754
   transfer_state = 616
   transfer_state = 283
@@ -142,6 +144,12 @@ country_event = { #Spooky Dai Li Seperation
   transfer_state = 622
   transfer_state = 615
   
+    752 = {
+add_core_of = CRF
+}
+  753 = {
+add_core_of = CRF
+}
   754 = {
 add_core_of = CRF
 }
@@ -170,13 +178,20 @@ add_core_of = CRF
 		custom_effect_tooltip = ROC_CRF_TT_2
 		hidden_effect = {CRF= {change_tag_from = ROC}
 	CRF = {
+  transfer_state = 752	
+  transfer_state = 753	
   transfer_state = 754
   transfer_state = 616
   transfer_state = 283
   transfer_state = 746
   transfer_state = 622
   transfer_state = 615
-  
+   752 = {
+add_core_of = CRF
+}
+  753 = {
+add_core_of = CRF
+}
   754 = {
 add_core_of = CRF
 }
@@ -287,8 +302,7 @@ country_event = { #Peoples Republic of China Seperation
 		custom_effect_tooltip = ROC_PRC_TT
 		hidden_effect = {
 		PRC = {
-  transfer_state = 752
-  transfer_state = 753
+  transfer_state = 749
   transfer_state = 605
   transfer_state = 750
   transfer_state = 620
@@ -298,10 +312,7 @@ country_event = { #Peoples Republic of China Seperation
   transfer_state = 613
   transfer_state = 598
   
-  752 = {
-add_core_of = PRC
-}
-  753 = {
+    749 = {
 add_core_of = PRC
 }
   605 = {
@@ -338,8 +349,7 @@ add_core_of = PRC
 		custom_effect_tooltip = ROC_PRC_TT_2
 		hidden_effect = {PRC= {change_tag_from = ROC}
 			PRC = {
-  transfer_state = 752
-  transfer_state = 753
+  transfer_state = 749
   transfer_state = 605
   transfer_state = 750
   transfer_state = 620
@@ -349,12 +359,9 @@ add_core_of = PRC
   transfer_state = 613
   transfer_state = 598
   
-  752 = {
+   749 = {
 add_core_of = PRC
-}
-  753 = {
-add_core_of = PRC
-}
+} 
   605 = {
 add_core_of = PRC
 }
@@ -450,7 +457,7 @@ country_event = { #National speach
 		name = roc.9.a
         ai_chance = {factor = 100}
 		add_stability = 0.1
-		remove_idea = ROC_pre_right
+		remove_ideas = ROC_pre_right
 	}
 }
 country_event = { #Disaster pt1
@@ -462,13 +469,15 @@ country_event = { #Disaster pt1
 
 	fire_only_once = yes
 
-	#is_triggered_only = yes
+	is_triggered_only = yes
 
 	option = {
 		name = roc.10.a
         ai_chance = {factor = 100}
+	add_stability = -0.25
+	 hidden_effect = {PRC = {transfer_state = 613}}
+	 hidden_effect = {ROC = { country_event = { id = roc.11 days = 2}}}
 	
-		
 	}
 }
 country_event = { #Disaster pt2
@@ -480,12 +489,15 @@ country_event = { #Disaster pt2
 
 	fire_only_once = yes
 
-	#is_triggered_only = yes
+	is_triggered_only = yes
 
 	option = {
 		name = roc.11.a
+		add_stability = -0.20
         ai_chance = {factor = 100}
-
+       hidden_effect = {PRC = {transfer_state = 605}} 
+	   hidden_effect = {ROC = { country_event = { id = roc.5 days = 15}}}
+	   hidden_effect = {ROC = { country_event = { id = roc.17 days = 17}}}
 		
 	}
 }
@@ -515,7 +527,7 @@ country_event = { #Commies symbols burn
 
 	fire_only_once = yes
 
-	#is_triggered_only = yes
+	is_triggered_only = yes
 
 	option = {
 		name = roc.13.a
@@ -532,17 +544,19 @@ country_event = { #Commies square
 
 	fire_only_once = yes
 
-	#is_triggered_only = yes
+	is_triggered_only = yes
 
 	option = {
 		name = roc.14.a
         ai_chance = {factor = 80}
 		add_stability = -0.05
+			 hidden_effect = {ROC = { country_event = { id = roc.15 days = 50}}}
 	}
 		option = {
 		name = roc.14.b
         ai_chance = {factor = 20}
 		add_stability = -0.15
+			 hidden_effect = {ROC = { country_event = { id = roc.15 days = 35}}}
 	}
 }
 country_event = { #Commies leave
@@ -554,7 +568,7 @@ country_event = { #Commies leave
 
 	fire_only_once = yes
 
-	#is_triggered_only = yes
+	is_triggered_only = yes
 
 	option = {
 		name = roc.15.a
@@ -563,6 +577,7 @@ country_event = { #Commies leave
 		add_manpower = -50000
 		add_ideas = ROC_desertion
 		war_support_factor = -0.35
+		hidden_effect = {ROC = { country_event = { id = roc.10 days = 14}}}
 	}
 }
 country_event = { #Hunt mao
@@ -574,11 +589,68 @@ country_event = { #Hunt mao
 
 	fire_only_once = yes
 
-	#is_triggered_only = yes
+	is_triggered_only = yes
 
 	option = {
 		name = roc.16.a
         ai_chance = {factor = 100}
 		
+	}
+}
+country_event = { #Qing and beijing
+	id = roc.17
+	title = roc.17.t
+	desc = roc.17.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.17.a
+        ai_chance = {factor = 100}
+		add_stability = -0.1
+		hidden_effect = {ROC = { country_event = { id = roc.4 days = 7}}}
+		hidden_effect = {QID = {transfer_state = 608}}
+		hidden_effect = {ROC = { country_event = { id = roc.18 days = 5}}}
+		hidden_effect = {ROC = { country_event = { id = roc.19 days = 2}}}
+	}
+}
+country_event = { #dai li murders ppl
+	id = roc.18
+	title = roc.18.t
+	desc = roc.18.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.18.a
+        ai_chance = {factor = 100}
+		add_stability = -0.1
+		hidden_effect = {ROC = { country_event = { id = roc.3 days = 7}}}
+	}
+}
+country_event = { #dai li breaks out of prison
+	id = roc.19
+	title = roc.19.t
+	desc = roc.19.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.19.a
+        ai_chance = {factor = 100}
+		add_stability = -0.1
+		hidden_effect = {ROC = { country_event = { id = roc.2 days = 7}}}
 	}
 }

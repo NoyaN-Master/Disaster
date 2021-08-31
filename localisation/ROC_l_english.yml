@@ -27,7 +27,7 @@ roc.5.a:0 "Betrayal"
 roc.5.b:0 "Play as the People's Republic of China"
 
 roc.6.t:0 "Terrorists Attack at the New Year Celebrations"
-roc.6.d:0 ""
+roc.6.d:0 "Wang Jingwei had been celebrating the Chinese new year at his home in Beijing with many of his cabinet ministers and members of his party. He and several others went to the balcony to greet the citizens who were also celebrating the new year of the Rat. Wang and his friends, all very drunk, greeted the citizens with great kindness and joy. But what was about to unfold, was quite the contrast. As Wang and his posse went to head back into the home, they heard several gunshots, and then the sound of a gargantuan explosion, followed by many bloodcurdling screams. Wang quickly turned around and looked back, only to see that the streets in front of his home were now painted red with blood and gore. The carnage was simply astounding. He tried his best not to throw up, but the sickening scenes he had just seen convulsed in his mind and forced him to vomit.  The gunshots and explosions could still be heard, but they were now coming from afar. The air had a stench of guts and smoke from the guns and explosion. These attacks could only be traced back to one group: Dai Li, and his supporters. This was clear to Wang almost instantly. Wang ran up to his home's second floor patio to get a better view of the carnage, but that's when the second explosion occurred. The blast from it levelled Wang's home. Search teams spent all night looking for his body in the rubble, but to no success. It seems as though the year of the Rat has gone off to a terrible start..."
 roc.6.a:0 "§RDAI LI WILL PAY!"
 
 roc.7.t:0 "Emergency Coaliton Meeting"
@@ -42,11 +42,11 @@ roc.9.t:0 "A National Address"
 roc.9.d:0 ""
 roc.9.a:0 "Dai Li will be locked away FOREVER"
 
-roc.10.t:0 "Nationalists Stage Rallies in Major Chinese Cities"
+roc.10.t:0 "Socialist Partisans Attack Shanghai"
 roc.10.d:0 ""
-roc.10.a:0 "Hopefully the people won't believe their lies."
+roc.10.a:0 "Start mobilizing the army!"
 
-roc.11.t:0 "Major Nationalist Riots in Major Cities"
+roc.11.t:0 "Socialist Partisans Attack Sichuan" 
 roc.11.d:0 ""
 roc.11.a:0 "Send In the army"
 
@@ -63,10 +63,26 @@ roc.14.d:0 ""
 roc.14.a:0 "Send in the police, make sure we keep the peace."
 roc.14.b:0 "Send in the army! Tanks on the streets."
 
-
 roc.15.t:0 "Desertions in the army"
 roc.15.d:0 ""
 roc.15.a:0 "Track down every single one, they will all be hung!"
+
+roc.16.t:0 "Hunt For Mao"
+roc.16.d:0 ""
+roc.16.a:0 "He is the number one enemy of the state"
+
+roc.17.t:0 "Qing Imperialists March On Beijing"
+roc.17.d:0 ""
+roc.17.a:0 "Our capital must not fall"
+
+roc.18.t:0 "A Cry For Help"
+roc.18.d:0 ""
+roc.18.a:0 "Dai Li will pay!"
+
+roc.19.t:0 "Jail Break at Beijing Maximum Penitentiary"
+roc.19.d:0 ""
+roc.19.a:0 "Dai Li on the loose again..."
+
 ###Focus
 
 ROC_focus_1:0 "Chinese New Year Festival"
@@ -97,7 +113,13 @@ ROC_focus_9:0 "Purge Socialist Officials"
 ROC_focus_9_desc:0 "Purge Socialist Officials"
 
 ROC_focus_10:0 "Pass the Anti-Socialism Act"
-ROC_focus_10_desc:0 ""Pass the Anti-Socialism Act"
+ROC_focus_10_desc:0 "Pass the Anti-Socialism Act"
+
+ROC_focus_11:0 "Hunt For Mao"
+ROC_focus_11_desc:0 "Hunt For Mao"
+
+ROC_focus_12:0 "§RDISASTER"
+ROC_focus_12_desc:0 "§RDISASTER"
 #####ideas
 
 ROC_Colab_Govern:0 "Collaborative Government"

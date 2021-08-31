@@ -121,7 +121,7 @@ focus_tree = {
 focus = {
 		id = ROC_focus_8
 		icon = ""
-		x = 15
+		x = 14
 		y = 7
 		cost = 5
 		prerequisite = {focus = ROC_focus_7}
@@ -136,7 +136,7 @@ focus = {
 	focus = {
 		id = ROC_focus_9
 		icon = ""
-		x = 15
+		x = 14
 		y = 8
 		cost = 5
 		prerequisite = {focus = ROC_focus_8}
@@ -152,24 +152,23 @@ focus = {
 		focus = {
 		id = ROC_focus_10
 		icon = ""
-		x = 15
-		y = 9
+		x = 16
+		y = 7
 		cost = 5
-		prerequisite = {focus = ROC_focus_9}
+		prerequisite = {focus = ROC_focus_7}
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-	 hidden_effect = {ROC = { country_event = { id = roc.15 days = 15}}}
 	 add_ideas = ROC_anti_commie
 		}
 	}
 			focus = {
 		id = ROC_focus_11
 		icon = ""
-		x = 15
-		y = 10
+		x = 16
+		y = 8
 		cost = 5
 		prerequisite = {focus = ROC_focus_10}
 		available_if_capitulated = yes
@@ -178,6 +177,23 @@ focus = {
 		}
 		completion_reward = {
         add_ideas = ROC_maohunt
+		ROC = { country_event = { id = roc.16}}
+		}
+	}
+		focus = {
+		id = ROC_focus_12
+		icon = ""
+		x = 15
+		y = 9
+		available = {has_country_flag = DISASTER}
+		cost = 5
+		prerequisite = {focus = ROC_focus_11 focus = ROC_focus_9}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+        hidden_effect = {set_capital = 592}
 		}
 	}
 

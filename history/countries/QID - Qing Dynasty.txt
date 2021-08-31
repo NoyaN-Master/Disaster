@@ -1,4 +1,4 @@
-capital = 44
+capital = 608
 oob = ""
 
 set_technology = {
@@ -45,7 +45,7 @@ add_ideas = semi_industrial_society
 create_country_leader = {
 	name = "Aisin Puyi"
 	#desc = "ABL_Zog_desc"
-	picture = "ABL_Zog.tga"
+	picture = "QID_puyi.tga"
 	expire = "2020.1.1"
 	ideology = autocratic_subideology
 	traits = {
