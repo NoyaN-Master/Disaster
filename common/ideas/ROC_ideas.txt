@@ -25,31 +25,8 @@ country = {
 		   army_org_factor = -0.2
 			}
 		}
-		
-		ROC_fading_unity = {
-			picture = ROC_unity
-			modifier = {
-            stability_factor = -0.3 
-			war_support_factor = -0.3
-			}
-		}
-		
-		ROC_fading_unity_2 = {
-			picture = ROC_unity
-			modifier = {
-            stability_factor = -0.25 
-			war_support_factor = -0.25
-			}
-		}
-		ROC_pre_left = {
-			picture = ROC_unity
-			modifier = {
-            industrial_capacity_factory = -0.5	
-			consumer_goods_factor = 0.25
-			}
-		}
 		ROC_pre_right = {
-			picture = ROC_unity
+			picture = ROC_martial
 			modifier = {
             industrial_capacity_factory = -0.95	
             consumer_goods_factor = 0.5
@@ -83,7 +60,7 @@ country = {
 			}
 		}
 		ROC_purge = {
-			picture = ROC_unity
+			picture = ROC_purge
 			modifier = {
 			command_power_gain_mult = -0.25
 			experience_gain_army_unit = -0.25	
@@ -93,7 +70,7 @@ country = {
 			}
 		}
 		ROC_desertion = {
-			picture = ROC_unity
+			picture = ROC_dessertion
 			modifier = {
 			command_power_gain_mult = -0.25
 			experience_gain_army_unit = -0.25	

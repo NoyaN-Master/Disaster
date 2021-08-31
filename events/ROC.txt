@@ -405,6 +405,21 @@ add_core_of = PRC
 	option = {
 		name = roc.6.a
         ai_chance = {factor = 100}
+		create_country_leader = {
+	name = "Chiang Kai Shek"
+	desc = ""
+	picture = "ROC_Chiang.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_democrat_subideology
+	traits = {
+		
+	}
+set_popularities = {
+	authoritarian_democrat = 40
+    authoritarian_socialist = 30
+	social_democrat = 30
+}
+}
 		add_stability = -0.5
 	}
 }

@@ -620,4 +620,16 @@ spriteType = {
 		name = "GFX_idea_ROC_unity"
 		texturefile = "gfx/interface/ideas/ROC_unity.dds"
 	}	
+	spriteType = {
+		name = "GFX_idea_ROC_martial"
+		texturefile = "gfx/interface/ideas/ROC_martial.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_ROC_dessertion"
+		texturefile = "gfx/interface/ideas/ROC_dessertion.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_ROC_purge"
+		texturefile = "gfx/interface/ideas/ROC_purge.png"
+	}	
 }	
