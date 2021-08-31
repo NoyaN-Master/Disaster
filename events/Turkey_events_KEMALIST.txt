@@ -717,7 +717,12 @@ country_event = { #The Blackarrow Revolt
 		name = tur.24.a
 		ai_chance = { factor = 80 }
 		add_stability = -0.40
+		country_event = { id = tur.25 days = 60 }
 		ANK = {
+		declare_war_on = {
+    	target = WRF
+    	type = annex_everything
+		}	
 			add_equipment_to_stockpile = {
 				    type = infantry_equipment
 				    amount = 10000
@@ -792,6 +797,10 @@ country_event = { #The Blackarrow Revolt
 		ai_chance = { factor = 80 }
 		add_stability = -0.40
 		ANK = {
+		declare_war_on = {
+    	target = WRF
+    	type = annex_everything
+		}	
 			inherit_technology = WRF
 		transfer_state = 834
 		transfer_state = 339
