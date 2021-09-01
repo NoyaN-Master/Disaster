@@ -250,3 +250,30 @@ country_event = {
 		}
 	}
 }
+
+country_event = { #I HATE ARMENIA I HATE ARMENIA
+	id = drlarm.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event drlarm.10"}
+	title = drlarm.10.t
+	desc = drlarm.10.d
+	
+	fire_only_once = yes
+
+	trigger = {
+		is_ai = no
+		date = 1936.1.1
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = { #sure
+		name = drlarm.10.a
+	}
+	option = { #ok
+		name = drlarm.10.b
+		ARM = {
+			load_focus_tree = default
+			remove_ideas = ARM_Struggle_for_Existence
+			remove_ideas = ARM_Lusignan_Debacle
+	}
+}	
