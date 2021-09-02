@@ -80,7 +80,7 @@ country = {
 			}
 		}
 		ROC_anti_commie = {
-			picture = ROC_unity
+			picture = socialist_purge
 			modifier = {
 		social_democrat_acceptance = -25
 	    libertarian_socialist_acceptance = -75
@@ -98,5 +98,51 @@ country = {
 			
 			}
 		}
+		
+		###################################################################################################################
+		ROC_cwar_effort = {
+			picture = ROC_unity
+			modifier = {
+			weekly_manpower = -2086 
+      consumer_goods_factor = -0.1
+	  industrial_capacity_factory = 0.1
+	  production_speed_buildings_factor = 0.1
+	  stability_weekly = -0.01
+			
+			}
+		}
+		
+	ROC_cwar_child_labour = {
+		picture = ROC_unity
+		modifier = {
+	  production_speed_buildings_factor = 0.3
+	  weekly_manpower = -4071
+	  stability_weekly = -0.01
+			}
+		}
+		ROC_cwar_work_death = {
+		picture = ROC_unity
+		modifier = {
+	  production_speed_buildings_factor = 0.3
+	  weekly_manpower = -901
+	  stability_weekly = -0.01
+	  industrial_capacity_factory = 0.25
+	  production_speed_buildings_factor = 0.25
+	  production_factory_efficiency_gain_factor = 0.25 
+	  industry_repair_factor = 0.25
+			}
+		}
+		ROC_cwar_work_semi_death = {
+		picture = ROC_unity
+		modifier = {
+	  production_speed_buildings_factor = 0.1
+	  industrial_capacity_factory = 0.1
+	  production_speed_buildings_factor = 0.15
+	  production_factory_efficiency_gain_factor = 0.05
+	  industry_repair_factor = 0.15
+			}
+		}
+		
+		
 }
 }

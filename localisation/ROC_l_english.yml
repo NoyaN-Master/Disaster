@@ -83,6 +83,19 @@ roc.19.t:0 "Jail Break at Beijing Maximum Penitentiary"
 roc.19.d:0 ""
 roc.19.a:0 "Dai Li on the loose again..."
 
+########################################################################
+#civil war#############################################################
+
+roc.20.t:0 "Chinese Liberation War"
+roc.20.d:0 ""
+roc.20.a:0 "For our founding father Dr. San Yat-Sen we shall win this war!"
+
+roc.21.t:0 "Workers Riot Over 14 Mandated Work days"
+roc.21.d:0 ""
+roc.21.a:0 "It's all for the greater good of china. Get back to work!"
+roc.21.b:0 "Lower the work days to 10 hours."
+roc.21.c:0 "Return work days to normal 8 hours."
+
 ###Focus
 
 ROC_focus_1:0 "Chinese New Year Festival"
@@ -120,6 +133,31 @@ ROC_focus_11_desc:0 "Hunt For Mao"
 
 ROC_focus_12:0 "§RDISASTER"
 ROC_focus_12_desc:0 "§RDISASTER"
+
+#################################################
+#civil war
+#################################################
+
+ROC_focus_13:0 "Chinese Liberation War"
+ROC_focus_13_desc:0 "Chinese Liberation War"
+
+ROC_focus_14:0 "Authorize the Emergency War Act"
+ROC_focus_14_desc:0 "Authorize the Emergency War Act"
+
+ROC_focus_15:0 "Authorize the Emergency Child Labour Act"
+ROC_focus_15_desc:0 "Authorize the Emergency Child Labour Act"
+
+ROC_focus_16:0 "Mandate Fourteen Hour Work Days"
+ROC_focus_16_desc:0 "Mandate Fourteen Hour Work Days"
+
+ROC_focus_17:0 "Confiscate Civilian Arms" 
+ROC_focus_17_desc:0 "Confiscate Civilian Arms"
+
+ROC_focus_18:0 "Convert Civilian Vehicles" 
+ROC_focus_18_desc:0 "Convert Civilian Vehicles"
+
+ROC_focus_19:0 "Convert Civilian Aircraft" 
+ROC_focus_19_desc:0 "Convert Civilian Aircraft"
 #####ideas
 
 ROC_Colab_Govern:0 "Collaborative Government"
@@ -138,6 +176,13 @@ ROC_purge:0 "Socialist Purge"
 ROC_desertion:0 "Broken Chain Of Command"
 ROC_anti_commie:0 "Anti Socialist Act"
 ROC_maohunt:0 "National Manhunt"
+
+########################################################################
+ROC_cwar_effort:0 "Emergency War Act"
+ROC_cwar_child_labour:0 "Child Labour Act"
+ROC_cwar_work_death:0 "14 Hour Work Days"
+ROC_cwar_work_semi_death "10 Hour Work Days"
+
 ###Decisions
 ###Tool Tips
 ROC_ETR_TT:0 "§GEast Turkestan Declares Independance"
@@ -153,3 +198,4 @@ ROC_PRC_TT:0 "§RPeople's Republic of China declares independance"
 ROC_PRC_TT_2:0 "§RPlay as the People's Republic of China"
 
 ROC_TT_event_7:0 "This will empower the nationalists"
+ROC_TT_DISASTER:0 "§R Patriotism demands of us sustained sacrifice. -Chiang Kai-Shek"

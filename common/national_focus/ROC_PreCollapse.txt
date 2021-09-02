@@ -186,14 +186,18 @@ focus = {
 		x = 15
 		y = 9
 		available = {has_country_flag = DISASTER}
-		cost = 5
+		cost = 1
 		prerequisite = {focus = ROC_focus_11 focus = ROC_focus_9}
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = ROC_TT_DISASTER
         hidden_effect = {set_capital = 592}
+	    hidden_effect = {load_focus_tree = roc_focus_2}
+		hidden_effect = {remove_ideas = ROC_colab_govern
+		remove_ideas = ROC_sucess_reforms remove_ideas = ROC_maohunt remove_ideas = ROC_desertion}
 		}
 	}
 

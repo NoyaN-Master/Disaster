@@ -1,0 +1,155 @@
+focus_tree = {
+	id = roc_focus_2
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+			tag = ROC
+		}
+		}
+		continuous_focus_position = { x = 100 y = 5000 }
+	default = no	
+	
+	
+	
+	
+	
+	focus = {
+		id = ROC_focus_13
+		icon = ""
+		x = 10
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		ROC = { country_event = { id = roc.20}}
+		}
+	}
+		
+	focus = {
+		id = ROC_focus_14
+		icon = ""
+		x = 14
+		y = 2
+		cost = 8
+		prerequisite = {focus = ROC_focus_13}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = ROC_cwar_effort
+		}
+	}
+		focus = {
+		id = ROC_focus_15
+		icon = ""
+		x = 14
+		y = 3
+		cost = 8
+		prerequisite = {focus = ROC_focus_14}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = ROC_cwar_child_labour
+		}
+	}
+	focus = {
+		id = ROC_focus_16
+		icon = ""
+		x = 14
+		y = 4
+		cost = 8
+		prerequisite = {focus = ROC_focus_15}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = ROC_cwar_work_death
+		hidden_effect = {ROC = { country_event = { id = roc.21 days = 45}}}
+		}
+	}
+	focus = {
+		id = ROC_focus_17
+		icon = ""
+		x = 8
+		y = 2
+		cost = 8
+		prerequisite = {focus = ROC_focus_13}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 4000
+    producer = ROC
+}
+		}
+	}
+		focus = {
+		id = ROC_focus_18
+		icon = ""
+		x = 8
+		y = 3
+		cost = 8
+		prerequisite = {focus = ROC_focus_17}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = -0.05
+	add_equipment_to_stockpile = {
+    type = 	motorized_equipment
+    amount = 1000
+    producer = ROC
+}
+		}
+	}
+	
+		focus = {
+		id = ROC_focus_19
+		icon = ""
+		x = 8
+		y = 4
+		cost = 8
+		prerequisite = {focus = ROC_focus_18}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = -0.05
+	add_equipment_to_stockpile = {
+    type = early_fighter
+    amount = 120
+    producer = ROC
+}
+		}
+	}
+		focus = {
+		id = ROC_focus_20
+		icon = ""
+		x = 10
+		y = 2
+		cost = 8
+		prerequisite = {focus = ROC_focus_13}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+}
+
+
