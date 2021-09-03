@@ -14,6 +14,12 @@ scripted_gui = {
 			}
 		}
 
+       	triggers = {
+			Super_Event_Image_China_Civil_visible = {
+				has_global_flag  =  ROC_Civil_War
+			}
+		}
+		
 		triggers = {
 			Super_Event_Image_Unification_Atsiz_visible = {
 				has_global_flag  = TUR_Unification_Atsiz
@@ -250,6 +256,12 @@ scripted_gui = {
 						has_global_flag = JFKflag
 					}
 					clr_global_flag  = JFKflag
+				}
+				if = {
+					limit = {	
+						has_global_flag =  ROC_Civil_War
+					}
+					clr_global_flag  =  ROC_Civil_War
 				}
 				
 			}

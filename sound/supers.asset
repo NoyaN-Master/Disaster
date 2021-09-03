@@ -108,3 +108,9 @@ sound = {
 	volume = 1
 	always_load = yes
 }
+sound = {
+	name = "chinaCwar"
+	file = "menu/chinaCwar.wav"
+	volume = 1
+	always_load = yes
+}
