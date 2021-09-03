@@ -167,6 +167,15 @@ ROC_focus_21_desc:0 "Hold the Line"
 
 ROC_focus_22:0 "Nationalist Sabotage"
 ROC_focus_22_desc:0 "Nationalist Sabotage"
+
+ROC_focus_23:0 "Modernise our War department"
+ROC_focus_23_desc:0 "Modernise our War department"
+
+ROC_focus_24:0 "Doctrin of Defence"
+ROC_focus_24_desc:0 "Doctrin of Defence"
+
+ROC_focus_25:0 "Doctrin of Offence"
+ROC_focus_25_desc:0 "Doctrin of Offence"
 #####ideas
 
 ROC_Colab_Govern:0 "Collaborative Government"
@@ -186,15 +195,14 @@ ROC_desertion:0 "Broken Chain Of Command"
 ROC_anti_commie:0 "Anti Socialist Act"
 ROC_maohunt:0 "National Manhunt"
 
-
 ########################################################################
 ROC_cwar_effort:0 "Emergency War Act"
 ROC_cwar_child_labour:0 "Child Labour Act"
 ROC_cwar_work_death:0 "14 Hour Work Days"
 ROC_cwar_work_semi_death:0 "10 Hour Work Days"
 ROC_cwar_hold_line:0 "Every Man On the Front"
+ROC_cwar_nationalist_terror:0 "Nationalist Terror Attacks"
  
-
 ###Decisions
 ###Tool Tips
 ROC_ETR_TT:0 "§GEast Turkestan Declares Independance"

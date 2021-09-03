@@ -148,7 +148,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-         add_timed_ideas = {ROC_cwar_overclocked_factories days = 90}
+         add_timed_idea = {idea = ROC_cwar_overclocked_factories days = 90}
 		}
 	}
 	focus = {
@@ -183,6 +183,57 @@ focus_tree = {
          PRC = {
 		 add_ideas = ROC_cwar_nationalist_terror
 		 }
+		}
+	}
+		focus = {
+		id = ROC_focus_23
+		icon = ""
+		#available = {}
+		x = 15
+		y = 1
+		cost = 8
+		#prerequisite = {focus = ROC_focus_21}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		      add_war_support = 0.2
+		}
+	}
+	
+		focus = {
+		id = ROC_focus_24
+		icon = ""
+		#available = {}
+		mutually_exclusive = {focus = ROC_focus_25 focus = ROC_focus_24}
+		x = 13
+		y = 2
+		cost = 8
+		prerequisite = {focus = ROC_focus_23}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+		focus = {
+		id = ROC_focus_25
+		icon = ""
+		#available = {}
+		mutually_exclusive = {focus = ROC_focus_25 focus = ROC_focus_24}
+		x = 17
+		y = 2
+		cost = 8
+		prerequisite = {focus = ROC_focus_23}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
 		}
 	}
 }
