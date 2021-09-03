@@ -158,6 +158,15 @@ ROC_focus_18_desc:0 "Convert Civilian Vehicles"
 
 ROC_focus_19:0 "Convert Civilian Aircraft" 
 ROC_focus_19_desc:0 "Convert Civilian Aircraft"
+
+ROC_focus_20:0 "Even More Equipment" 
+ROC_focus_20_desc:0 "Even More Equipment
+
+ROC_focus_21:0 "Hold the Line"
+ROC_focus_21_desc:0 "Hold the Line"
+
+ROC_focus_22:0 "Nationalist Sabotage"
+ROC_focus_22_desc:0 "Nationalist Sabotage"
 #####ideas
 
 ROC_Colab_Govern:0 "Collaborative Government"
@@ -177,11 +186,14 @@ ROC_desertion:0 "Broken Chain Of Command"
 ROC_anti_commie:0 "Anti Socialist Act"
 ROC_maohunt:0 "National Manhunt"
 
+
 ########################################################################
 ROC_cwar_effort:0 "Emergency War Act"
 ROC_cwar_child_labour:0 "Child Labour Act"
 ROC_cwar_work_death:0 "14 Hour Work Days"
-ROC_cwar_work_semi_death "10 Hour Work Days"
+ROC_cwar_work_semi_death:0 "10 Hour Work Days"
+ROC_cwar_hold_line:0 "Every Man On the Front"
+ 
 
 ###Decisions
 ###Tool Tips

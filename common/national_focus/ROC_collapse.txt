@@ -138,6 +138,7 @@ focus_tree = {
 		focus = {
 		id = ROC_focus_20
 		icon = ""
+		available = {surrender_progress > 0.25}
 		x = 10
 		y = 2
 		cost = 8
@@ -147,7 +148,41 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+         add_timed_ideas = {ROC_cwar_overclocked_factories days = 90}
+		}
+	}
+	focus = {
+		id = ROC_focus_21
+		icon = ""
+		available = {surrender_progress > 0.5}
+		x = 10
+		y = 3
+		cost = 8
+		prerequisite = {focus = ROC_focus_20}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+         add_ideas = ROC_cwar_hold_line
+		}
+	}
+	focus = {
+		id = ROC_focus_22
+		icon = ""
+		available = {surrender_progress > 0.75}
+		x = 10
+		y = 4
+		cost = 8
+		prerequisite = {focus = ROC_focus_21}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+         PRC = {
+		 add_ideas = ROC_cwar_nationalist_terror
+		 }
 		}
 	}
 }

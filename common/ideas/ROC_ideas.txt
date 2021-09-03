@@ -143,6 +143,31 @@ country = {
 			}
 		}
 		
-		
+	ROC_cwar_overclocked_factories = {
+		picture = ROC_unity
+		modifier = {
+     industrial_capacity_factory = 0.5
+	 
+			}
+		}
+	ROC_cwar_hold_line = {
+		picture = ROC_unity
+		modifier = {
+     army_defence_factor = 0.25
+	  industrial_capacity_factory = -0.1
+	  production_speed_buildings_factor = -0.1
+	 
+			}
+		}
+
+	ROC_cwar_nationalist_terror	 = {
+		picture = ROC_unity
+		modifier = {
+		war_support_weekly = -0.02
+		stability_weekly = -0.02
+		army_morale_factor = -0.2
+		consumer_goods_factor = 0.1
+			}
+		}
 }
 }
