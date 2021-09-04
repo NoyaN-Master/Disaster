@@ -15,7 +15,7 @@ country_event = { #Intro
 	option = {
 		name = aut.1.a
 		hidden_effect = {
-			country_event = { id = aut.84 days = 30 }
+			country_event = { id = aut.84 days = 465 }
 		}
 	}
 }
@@ -3064,6 +3064,11 @@ country_event = {
 
   	option = {
         name = aut.85.a 
+		hidden_effect = {
+			set_country_flag = AUT_sus_mail_option
+			country_event = { id =  aut.86 days = 60 }
+			complete_national_focus = AUT_arrange_the_meeting
+		}
     }
 }
 country_event = { 
@@ -3083,22 +3088,26 @@ country_event = {
 		complete_national_focus = AUT_preparations
     }
 }
-
+################ successful coup
 country_event = { 
     id = aut.87
     title = aut.87.t
     desc = aut.87.d
 
 	trigger = {
+		has_country_flag = completed_preperation_flag
         if = {
             check_variable = {
                 var = stcrisis_coup_successrate
-                value = 20
+                value = 60
                 compare = greater_than_or_equals
             }
         }
     }
 	available = {
+		has_country_flag = completed_preperation_flag
+	}
+	allowed = {
 		has_country_flag = completed_preperation_flag
 	}
     picture = GFX_report_event_aut_dollfuss_speech
@@ -3165,27 +3174,29 @@ country_event = {
 			add_equipment_to_stockpile = {
     			type = infantry_equipment
     			amount = 1200
-   				producer = FIU
+   				producer = STL
 			}
 			add_equipment_to_stockpile = {
    			type = artillery_equipment
     		amount = 400
-    		producer = FIU
+    		producer = STL
 			}
 		}
+		complete_national_focus = AUT_success
     }
 }
-
+#################### failed coup
 country_event = { 
     id = aut.88
     title = aut.88.t
     desc = aut.88.d
 
 	trigger = {
+		has_country_flag = completed_preperation_flag
          if = {
 	        check_variable = {
                 var = stcrisis_coup_successrate
-                value = 10
+                value = 50
                 compare = less_than_or_equals
             }
    		}
@@ -3194,6 +3205,11 @@ country_event = {
 	available = [
 		has_country_flag = completed_preperation_flag
 	]
+
+	allowed = {
+		has_country_flag = completed_preperation_flag
+	}
+
 
     picture = GFX_report_event_aut_dollfuss_speech
 
@@ -3215,7 +3231,7 @@ country_event = {
 	trigger = {
   		has_war_with = FIU
 		FIU = {
-			surrender_progress > 0.40
+			surrender_progress > 0.30
 		}
     }
 
@@ -3226,6 +3242,7 @@ country_event = {
 		white_peace = FIU
 		transfer_state = 39
         transfer_state = 811
+		transfer_state = 884
 		
 		create_field_marshal = {
 		name = "Sepp Kerschbaumer"
@@ -3266,6 +3283,9 @@ country_event = {
 				idea = AUT_stcrisis_sour_loser
 			}
 		}
+		hidden_effect = {
+			complete_national_focus = AUT_victory
+		}
     }
 }
 
@@ -3275,20 +3295,26 @@ country_event = {
     title = aut.90.t
     desc = aut.90.d
 
-	trigger = {
-  		has_war_with = FIU
-    }
-
     picture = GFX_report_event_aut_dollfuss_speech
 
     fire_only_once = yes
 
+	is_triggered_only = yes
 	
   	option = {
         name = aut.90.a 
-		STL = {
-			add_ideas = {
-				AUT_stcrisis_for_our_fatherland
+		hidden_effect = {
+			complete_national_focus = AUT_south_tyrolean_war
+		}
+
+		FIU = {
+			declare_war_on = {
+				target = AUT
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = STL
+				type = annex_everything
 			}
 		}
     }
@@ -3302,7 +3328,7 @@ country_event = {
 
 	trigger = {
   		has_war_with = FIU
-		surrender_progress > 0.75	
+		surrender_progress > 0.50
 		STL = {
 		has_capitulated = yes	
 		}
@@ -3315,6 +3341,9 @@ country_event = {
   	option = {
         name = aut.91.a 
 		white_peace = FIU
+		FIU = {
+			white_peace = AUT
+		}
 		FIU = {
 			annex_country = {
     			target = STL
@@ -3337,5 +3366,87 @@ country_event = {
     			days = 120
 			}
 		}
+		hidden_effect = {
+			complete_national_focus = AUT_defeat
+		}
     }
+}
+
+############State and Clergy question
+country_event = { 
+    id = aut.92
+    title = aut.92.t
+    desc = aut.92.d
+
+	trigger = {
+  		has_completed_focus = AUT_state_and_clergy_question
+    }
+
+    picture = GFX_report_event_aut_dollfuss_speech
+
+
+	
+  	option = {
+        name = aut.92.a 
+		complete_national_focus = AUT_seperate_them
+	}	
+	option = {
+		name = aut.92.b 
+		complete_national_focus = AUT_clergy_in_the_government
+	}	
+}
+
+################### Full Success
+country_event = { 
+    id = aut.93
+    title = aut.93.t
+    desc = aut.93.d
+	is_triggered_only = yes
+    picture = GFX_report_event_aut_dollfuss_speech
+
+  	option = {
+        name = aut.93.a 
+	}	
+}
+
+################### Moderate Success
+country_event = { 
+    id = aut.94
+    title = aut.94.t
+    desc = aut.94.d
+	is_triggered_only = yes
+    picture = GFX_report_event_aut_dollfuss_speech
+
+  	option = {
+        name = aut.94.a 
+
+	}	
+}
+
+################### Failure
+country_event = { 
+    id = aut.95
+    title = aut.95.t
+    desc = aut.95.d
+	is_triggered_only = yes
+    picture = GFX_report_event_aut_dollfuss_speech
+
+  	option = {
+        name = aut.95.a 
+	}
+}
+
+country_event = { 
+    id = aut.96
+    title = aut.96.t
+    desc = aut.96.d
+	is_triggered_only = yes
+    picture = GFX_report_event_aut_dollfuss_speech
+
+  	option = {
+        name = aut.96.a 
+		hidden_effect = {
+			set_country_flag = AUT_wwt_start_decision
+		}
+	}
 }

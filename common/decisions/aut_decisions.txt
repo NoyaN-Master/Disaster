@@ -293,17 +293,30 @@ AUT_Give_Transly = {
 
 	}		
 }
-#
-#░██████╗░█████╗░██╗░░░██╗████████╗██╗░░██╗████████╗██╗░░░██╗██████╗░░█████╗░██╗░░░░░  ░█████╗░░█████╗░██╗░░░██╗██████╗░
-#██╔════╝██╔══██╗██║░░░██║╚══██╔══╝██║░░██║╚══██╔══╝╚██╗░██╔╝██╔══██╗██╔══██╗██║░░░░░  ██╔══██╗██╔══██╗██║░░░██║██╔══██╗
-#╚█████╗░██║░░██║██║░░░██║░░░██║░░░███████║░░░██║░░░░╚████╔╝░██████╔╝██║░░██║██║░░░░░  ██║░░╚═╝██║░░██║██║░░░██║██████╔╝
-#░╚═══██╗██║░░██║██║░░░██║░░░██║░░░██╔══██║░░░██║░░░░░╚██╔╝░░██╔══██╗██║░░██║██║░░░░░  ██║░░██╗██║░░██║██║░░░██║██╔═══╝░
-#██████╔╝╚█████╔╝╚██████╔╝░░░██║░░░██║░░██║░░░██║░░░░░░██║░░░██║░░██║╚█████╔╝███████╗  ╚█████╔╝╚█████╔╝╚██████╔╝██║░░░░░
-#╚═════╝░░╚════╝░░╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝░░░╚═╝░░░░░░╚═╝░░░╚═╝░░╚═╝░╚════╝░╚══════╝  ░╚════╝░░╚════╝░░╚═════╝░╚═╝░░░░░
+################################################################ SOUTH TYROL stuff
+
 AUT_south_tyrol_crisis_decisions = {
 
+	AUT_stcrisis_war_with_italy_mission = {
+		days_mission_timeout = 90
+		fire_only_once = yes
+		available = {
+			always = no
+		}
+        activation = {
+               has_completed_focus = AUT_execution
+        }
+		is_good = no
+		priority = 100
+		timeout_effect = {     
+			hidden_effect = {
+				country_event = aut.90
+			}  
+		} 
+	}
+
 	AUT_stcrisis_coup_mission = {
-		days_mission_timeout = 10
+		days_mission_timeout = 90
 		fire_only_once = yes
 		available = {
 			always = no
@@ -317,7 +330,7 @@ AUT_south_tyrol_crisis_decisions = {
 			hidden_effect = {
 				set_country_flag = completed_preperation_flag
 			}  
-		}
+		} 
 	}
 ####################################################
 
@@ -771,4 +784,995 @@ AUT_south_tyrol_crisis_decisions = {
 
 		}
 	}
+}
+
+AUT_war_with_italy_terrorism_decisions = {
+	AUT_wwt_terrorism_istria = {
+
+		icon = GFX_decision_icon_default
+
+		available = {
+			FIU = {
+				has_full_control_of_state = 736
+			}
+			has_equipment = {
+				infantry_equipment > 999
+			}
+		}
+
+		highlight_state_targets = { state = 736 }
+
+		on_map_mode = map_only
+
+		custom_cost_trigger = {
+			has_equipment = {
+				infantry_equipment > 999
+			}
+		}
+		custom_cost_text = AUT_wwt_terrorism_infantry_equipment_cost # localisation string
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = {
+			has_war_with = FIU
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			random_list = {
+				30 = {
+					country_event = { id = aut.93 days = 1 }	
+					FIU = {
+						add_war_support = -0.04
+						add_stability = -0.02
+					}
+					736 = {
+						damage_building = {
+							type = arms_factory
+							damage = 1
+						}
+						damage_building = {
+							type = industrial_complex
+							damage = 1
+						}
+					}
+				}
+				50 = {
+					country_event = { id = aut.94 days = 1 }
+					FIU = {
+						add_war_support = -0.02
+						add_stability = -0.01
+					}
+					736 = {
+						damage_building = {
+							type = arms_factory
+							damage = 1
+						}
+					}				
+				}
+				20 = {
+					country_event = { id = aut.95 days = 1 }
+					add_war_support = -0.02
+				}
+			}
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = -1000
+    			producer = AUT
+			}
+		}
+	}
+	
+	AUT_wwt_terrorism_veneto = {
+
+		icon = GFX_decision_icon_default
+
+		available = {
+			FIU = {
+				has_full_control_of_state = 160
+			}
+			has_equipment = {
+				infantry_equipment > 999
+			}
+		}
+
+		highlight_state_targets = { state = 160 }
+
+		on_map_mode = map_only
+
+		
+		custom_cost_trigger = {
+			has_equipment = {
+				infantry_equipment > 999
+			}
+		}
+		custom_cost_text = AUT_wwt_terrorism_infantry_equipment_cost # localisation string
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = {
+			has_war_with = FIU
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			random_list = {
+				30 = {
+					country_event = { id = aut.93 days = 1 }	
+					FIU = {
+						add_war_support = -0.04
+						add_stability = -0.02
+					}
+					160 = {
+						damage_building = {
+							type = arms_factory
+							damage = 1
+						}
+						damage_building = {
+							type = industrial_complex
+							damage = 1
+						}
+					}
+				}
+				50 = {
+					country_event = { id = aut.94 days = 1 }
+					FIU = {
+						add_war_support = -0.02
+						add_stability = -0.01
+					}
+					160 = {
+						damage_building = {
+							type = arms_factory
+							damage = 1
+						}
+					}				
+				}
+				20 = {
+					country_event = { id = aut.95 days = 1 }
+					add_war_support = -0.02
+				}
+			}
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = -1000
+    			producer = AUT
+			}
+		}
+	}		
+	AUT_wwt_terrorism_lombardy = {
+
+		icon = GFX_decision_icon_default
+
+		available = {
+			FIU = {
+				has_full_control_of_state = 159
+			}
+			has_equipment = {
+				infantry_equipment > 1999
+			}
+		}
+
+		highlight_state_targets = { state = 159 }
+
+		on_map_mode = map_only
+
+		cost = 26
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = {
+			has_war_with = FIU
+			}
+		}
+
+		custom_cost_trigger = {
+			has_equipment = {
+				infantry_equipment > 1999
+			}
+		}
+		custom_cost_text = AUT_wwt_terrorism_infantry_equipment2_cost # localisation string
+
+		complete_effect = {
+			random_list = {
+				30 = {
+					country_event = { id = aut.93 days = 1 }	
+					FIU = {
+						add_war_support = -0.04
+						add_stability = -0.02
+					}
+					159 = {
+						damage_building = {
+							type = arms_factory
+							damage = 1
+						}
+						damage_building = {
+							type = industrial_complex
+							damage = 1
+						}
+						damage_building = {
+							type = arms_factory
+							damage = 1
+						}
+						damage_building = {
+							type = industrial_complex
+							damage = 1
+						}
+					}
+				}
+				50 = {
+					country_event = { id = aut.94 days = 1 }
+					FIU = {
+						add_war_support = -0.02
+						add_stability = -0.01
+					}
+					159 = {
+						damage_building = {
+							type = arms_factory
+							damage = 1
+						}
+						damage_building = {
+							type = industrial_complex
+							damage = 1
+						}
+					}				
+				}
+				20 = {
+					country_event = { id = aut.95 days = 1 }
+					add_war_support = -0.02
+				}
+			}
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = -2000
+    			producer = AUT
+			}
+		}
+	}	
+	AUT_wwt_terrorism_piedmond = {
+
+		icon = GFX_decision_icon_default
+
+		available = {
+			FIU = {
+				has_full_control_of_state = 158
+			}
+			has_equipment = {
+				infantry_equipment > 1999
+			}
+		}
+
+		highlight_state_targets = { state = 158 }
+
+		on_map_mode = map_only
+
+		custom_cost_trigger = {
+			has_equipment = {
+				infantry_equipment > 1999
+			}
+		}
+		custom_cost_text = AUT_wwt_terrorism_infantry_equipment2_cost # localisation string
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = {
+			has_war_with = FIU
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			random_list = {
+				30 = {
+					country_event = { id = aut.93 days = 1 }	
+					FIU = {
+						add_war_support = -0.04
+						add_stability = -0.02
+					}
+					158 = {
+						damage_building = {
+							type = arms_factory
+							damage = 1
+						}
+						damage_building = {
+							type = industrial_complex
+							damage = 1
+						}
+						damage_building = {
+							type = arms_factory
+							damage = 1
+						}
+						damage_building = {
+							type = industrial_complex
+							damage = 1
+						}
+					}
+				}
+				50 = {
+					country_event = { id = aut.94 days = 1 }
+					FIU = {
+						add_war_support = -0.02
+						add_stability = -0.01
+					}
+					158 = {
+						damage_building = {
+							type = arms_factory
+							damage = 1
+						}
+						damage_building = {
+							type = industrial_complex
+							damage = 1
+						}
+					}				
+				}
+				20 = {
+					country_event = { id = aut.95 days = 1 }
+					add_war_support = -0.02
+				}
+			}
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = -2000
+    			producer = AUT
+			}
+		}
+	}	
+	
+	AUT_wwt_terrorism_fiume = {
+
+		icon = GFX_decision_icon_default
+
+		available = {
+			FIU = {
+				has_full_control_of_state = 812
+			}
+			has_equipment = {
+				infantry_equipment > 999
+			}
+		}
+
+		highlight_state_targets = { state = 812 }
+
+		on_map_mode = map_only
+
+		custom_cost_trigger = {
+			has_equipment = {
+				infantry_equipment > 999
+			}
+		}
+		custom_cost_text = AUT_wwt_terrorism_infantry_equipment_cost # localisation string
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = {
+			has_war_with = FIU
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			random_list = {
+				30 = {
+					country_event = { id = aut.93 days = 1 }	
+					FIU = {
+						add_war_support = -0.04
+						add_stability = -0.02
+					}
+					812 = {
+						damage_building = {
+							type = arms_factory
+							damage = 1
+						}
+						damage_building = {
+							type = industrial_complex
+							damage = 1
+						}
+
+					}
+				}
+				50 = {
+					country_event = { id = aut.94 days = 1 }
+					FIU = {
+						add_war_support = -0.02
+						add_stability = -0.01
+					}
+					812 = {
+						damage_building = {
+							type = arms_factory
+							damage = 1
+						}
+					}				
+				}
+				20 = {
+					country_event = { id = aut.95 days = 1 }
+					add_war_support = -0.02
+				}
+			}
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = -1000
+    			producer = AUT
+			}
+		}
+	}	
+	
+	AUT_wwt_terrorism_emilia_romagna = {
+
+		icon = GFX_decision_icon_default
+
+		available = {
+			FIU = {
+				has_full_control_of_state = 161
+			}
+			has_equipment = {
+				infantry_equipment > 999
+			}
+		}
+
+		highlight_state_targets = { state = 161 }
+
+		on_map_mode = map_only
+
+		custom_cost_trigger = {
+			has_equipment = {
+				infantry_equipment > 999
+			}
+		}
+		custom_cost_text = AUT_wwt_terrorism_infantry_equipment_cost # localisation string
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = {
+			has_war_with = FIU
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			random_list = {
+				30 = {
+					country_event = { id = aut.93 days = 1 }	
+					FIU = {
+						add_war_support = -0.04
+						add_stability = -0.02
+					}
+					161 = {
+						damage_building = {
+							type = arms_factory
+							damage = 1
+						}
+						damage_building = {
+							type = industrial_complex
+							damage = 1
+						}
+
+					}
+				}
+				50 = {
+					country_event = { id = aut.94 days = 1 }
+					FIU = {
+						add_war_support = -0.02
+						add_stability = -0.01
+					}
+					161 = {
+						damage_building = {
+							type = arms_factory
+							damage = 1
+						}
+					}				
+				}
+				20 = {
+					country_event = { id = aut.95 days = 1 }
+					add_war_support = -0.02
+				}
+			}
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = -1000
+    			producer = AUT
+			}
+		}
+	}	
+	AUT_wwt_terrorism_tuscany = {
+
+		icon = GFX_decision_icon_default
+
+		available = {
+			FIU = {
+				has_full_control_of_state = 162
+			}
+			has_equipment = {
+				infantry_equipment > 999
+			}
+		}
+
+		highlight_state_targets = { state = 162 }
+
+		on_map_mode = map_only
+
+		custom_cost_trigger = {
+			has_equipment = {
+				infantry_equipment > 999
+			}
+		}
+		custom_cost_text = AUT_wwt_terrorism_infantry_equipment_cost # localisation string
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = {
+			has_war_with = FIU
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			random_list = {
+				30 = {
+					country_event = { id = aut.93 days = 1 }	
+					FIU = {
+						add_war_support = -0.04
+						add_stability = -0.02
+					}
+					162 = {
+						damage_building = {
+							type = arms_factory
+							damage = 1
+						}
+						damage_building = {
+							type = industrial_complex
+							damage = 1
+						}
+
+					}
+				}
+				50 = {
+					country_event = { id = aut.94 days = 1 }
+					FIU = {
+						add_war_support = -0.02
+						add_stability = -0.01
+					}
+					162 = {
+						damage_building = {
+							type = arms_factory
+							damage = 1
+						}
+					}				
+				}
+				20 = {
+					country_event = { id = aut.95 days = 1 }
+					add_war_support = -0.02
+				}
+			}
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = -1000
+    			producer = AUT
+			}
+		}
+	}	
+	AUT_wwt_terrorism_latium = {
+
+		icon = GFX_decision_icon_default
+
+		available = {
+			FIU = {
+				has_full_control_of_state = 2
+			}
+			has_equipment = {
+				infantry_equipment > 1999
+			}
+		}
+
+		highlight_state_targets = { state = 2 }
+
+		on_map_mode = map_only
+
+		custom_cost_trigger = {
+			has_equipment = {
+				infantry_equipment > 1999
+			}
+		}
+		custom_cost_text = AUT_wwt_terrorism_infantry_equipment2_cost # localisation string
+
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = {
+			has_war_with = FIU
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			random_list = {
+				30 = {
+					country_event = { id = aut.93 days = 1 }	
+					FIU = {
+						add_war_support = -0.04
+						add_stability = -0.02
+					}
+					2 = {
+						damage_building = {
+							type = arms_factory
+							damage = 1
+						}
+						damage_building = {
+							type = industrial_complex
+							damage = 1
+						}
+						damage_building = {
+							type = arms_factory
+							damage = 1
+						}
+						damage_building = {
+							type = industrial_complex
+							damage = 1
+						}
+					}
+				}
+				50 = {
+					country_event = { id = aut.94 days = 1 }
+					FIU = {
+						add_war_support = -0.02
+						add_stability = -0.01
+					}
+					2 = {
+						damage_building = {
+							type = arms_factory
+							damage = 1
+						}
+						damage_building = {
+							type = industrial_complex
+							damage = 1
+						}
+					}				
+				}
+				20 = {
+					country_event = { id = aut.95 days = 1 }
+					add_war_support = -0.02
+				}
+			}
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = -2000
+    			producer = AUT
+			}
+		}
+	}	
+	AUT_wwt_terrorism_campania = {
+
+		icon = GFX_decision_icon_default
+
+		available = {
+			FIU = {
+				has_full_control_of_state = 117
+			}
+			has_equipment = {
+				infantry_equipment > 999
+			}
+		}
+
+		highlight_state_targets = { state = 117 }
+
+		on_map_mode = map_only
+
+		custom_cost_trigger = {
+			has_equipment = {
+				infantry_equipment > 999
+			}
+		}
+		custom_cost_text = AUT_wwt_terrorism_infantry_equipment_cost # localisation string
+
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = {
+			has_war_with = FIU
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			random_list = {
+				30 = {
+					country_event = { id = aut.93 days = 1 }	
+					FIU = {
+						add_war_support = -0.04
+						add_stability = -0.02
+					}
+					117 = {
+						damage_building = {
+							type = arms_factory
+							damage = 1
+						}
+						damage_building = {
+							type = industrial_complex
+							damage = 1
+						}
+
+					}
+				}
+				50 = {
+					country_event = { id = aut.94 days = 1 }
+					FIU = {
+						add_war_support = -0.02
+						add_stability = -0.01
+					}
+					117 = {
+						damage_building = {
+							type = arms_factory
+							damage = 1
+						}
+					}				
+				}
+				20 = {
+					country_event = { id = aut.95 days = 1 }
+					add_war_support = -0.02
+				}
+			}
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = -1000
+    			producer = AUT
+			}
+		}
+	}
+	AUT_wwt_terrorism_calabria = {
+
+		icon = GFX_decision_icon_default
+
+		available = {
+			FIU = {
+				has_full_control_of_state = 156
+			}
+			has_equipment = {
+				infantry_equipment > 999
+			}
+		}
+
+		highlight_state_targets = { state = 156 }
+
+		on_map_mode = map_only
+
+		custom_cost_trigger = {
+			has_equipment = {
+				infantry_equipment > 999
+			}
+		}
+		custom_cost_text = AUT_wwt_terrorism_infantry_equipment_cost # localisation string
+
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = {
+			has_war_with = FIU
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			random_list = {
+				30 = {
+					country_event = { id = aut.93 days = 1 }	
+					FIU = {
+						add_war_support = -0.04
+						add_stability = -0.02
+					}
+					156 = {
+						damage_building = {
+							type = arms_factory
+							damage = 1
+						}
+						damage_building = {
+							type = industrial_complex
+							damage = 1
+						}
+
+					}
+				}
+				50 = {
+					country_event = { id = aut.94 days = 1 }
+					FIU = {
+						add_war_support = -0.02
+						add_stability = -0.01
+					}
+					156 = {
+						damage_building = {
+							type = arms_factory
+							damage = 1
+						}
+					}				
+				}
+				20 = {
+					country_event = { id = aut.95 days = 1 }
+					add_war_support = -0.02
+				}
+			}
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = -1000
+    			producer = AUT
+			}
+		}
+	}	
+	AUT_wwt_terrorism_sicily = {
+
+		icon = GFX_decision_icon_default
+
+		available = {
+			FIU = {
+				has_full_control_of_state = 115
+			}
+			has_equipment = {
+				infantry_equipment > 999
+			}
+		}
+
+		highlight_state_targets = { state = 115 }
+
+		on_map_mode = map_only
+
+		custom_cost_trigger = {
+			has_equipment = {
+				infantry_equipment > 999
+			}
+		}
+		custom_cost_text = AUT_wwt_terrorism_infantry_equipment_cost # localisation string
+
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = {
+			has_war_with = FIU
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			random_list = {
+				30 = {
+					country_event = { id = aut.93 days = 1 }	
+					FIU = {
+						add_war_support = -0.04
+						add_stability = -0.02
+					}
+					115 = {
+						damage_building = {
+							type = arms_factory
+							damage = 1
+						}
+						damage_building = {
+							type = industrial_complex
+							damage = 1
+						}
+
+					}
+				}
+				50 = {
+					country_event = { id = aut.94 days = 1 }
+					FIU = {
+						add_war_support = -0.02
+						add_stability = -0.01
+					}
+					115 = {
+						damage_building = {
+							type = arms_factory
+							damage = 1
+						}
+					}				
+				}
+				20 = {
+					country_event = { id = aut.95 days = 1 }
+					add_war_support = -0.02
+				}
+			}
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = -1000
+    			producer = AUT
+			}
+		}
+	}	
+	AUT_wwt_terrorism_abruzzof = {
+
+		icon = GFX_decision_icon_default
+
+		available = {
+			FIU = {
+				has_full_control_of_state = 157
+			}
+			has_equipment = {
+				infantry_equipment > 999
+			}
+		}
+
+		highlight_state_targets = { state = 157 }
+
+		on_map_mode = map_only
+
+		custom_cost_trigger = {
+			has_equipment = {
+				infantry_equipment > 999
+			}
+		}
+		custom_cost_text = AUT_wwt_terrorism_infantry_equipment_cost # localisation string
+
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = {
+			has_war_with = FIU
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			random_list = {
+				30 = {
+					country_event = { id = aut.93 days = 1 }	
+					FIU = {
+						add_war_support = -0.04
+						add_stability = -0.02
+					}
+					157 = {
+						damage_building = {
+							type = arms_factory
+							damage = 1
+						}
+						damage_building = {
+							type = industrial_complex
+							damage = 1
+						}
+
+					}
+				}
+				50 = {
+					country_event = { id = aut.94 days = 1 }
+					FIU = {
+						add_war_support = -0.02
+						add_stability = -0.01
+					}
+					157 = {
+						damage_building = {
+							type = arms_factory
+							damage = 1
+						}
+					}				
+				}
+				20 = {
+					country_event = { id = aut.95 days = 1 }
+					add_war_support = -0.02
+				}
+			}
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = -1000
+    			producer = AUT
+			}
+		}
+	}			
 }

@@ -37,6 +37,7 @@ focus_tree = {
 				limit = { has_country_flag = AUT_dollfuss_private_ceremony }
 				country_event = aut.9
 			}
+			
         }
 	}
 	
@@ -175,7 +176,7 @@ focus_tree = {
 	focus = {
 		id = AUT_found_the_voestalpine
 		icon = GFX_goal_AUT_found_the_voestalpine
-		prerequisite = { focus = AUT_economic_reforms }
+		prerequisite = { focus = AUT_electronics_innovation }
 		x = 6
 		y = 3
 		cost = 5
@@ -192,7 +193,7 @@ focus_tree = {
 		completion_reward = {
 			add_resource = {
     			type = steel
-    			amount = 8
+    			amount = 16
     			state = 881
 			}
         }
@@ -798,6 +799,8 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			army_experience = 10
+			air_experience = 10
 			add_war_support = 0.02
         }
 	}
@@ -905,6 +908,9 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			hidden_effect = {
+				country_event = { id = aut.83 }
+			}
 		}
 	}
 
@@ -1001,6 +1007,7 @@ focus_tree = {
 				uses = 1
 				category = infantry_weapons
 			}
+			add_ideas = AUT_rifle_replacements_idea
 		}
 	}
 
@@ -1065,11 +1072,11 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = AUS_modernised_artillery
-				bonus = 0.75
+				bonus = 0.50
 				uses = 2
 				category = artillery
 			}
-		
+			add_ideas = AUT_modernised_artillery_idea
 		}
 	}
 
@@ -1098,6 +1105,7 @@ focus_tree = {
 				uses = 2
 				category = 	support_tech
 			}
+			add_ideas = AUT_support_equipment_improvements_idea
 		}
 	}
 
@@ -1127,6 +1135,7 @@ focus_tree = {
 				uses = 3
 				category = cat_superior_firepower
 			}
+			army_experience = 10
 		}
 	}
 
@@ -1219,6 +1228,7 @@ focus_tree = {
 				uses = 2
 				category = cat_light_armor
 			}
+			add_ideas = AUT_achtung_panzer_idea
 		}
 	}	
 
@@ -1251,6 +1261,7 @@ focus_tree = {
 				amount = 500
 				producer = AUS
 			}
+			add_ideas = AUT_modernised_artillery_idea
 		}
 	}	
 
@@ -1280,6 +1291,7 @@ focus_tree = {
 				uses = 1
 				category = cat_heavy_armor
 			}
+			add_ideas = AUT_heavy_tank_focus_idea
 		}
 	}	
 
@@ -1309,6 +1321,7 @@ focus_tree = {
 				uses = 2
 				category = cat_medium_armor
 			}
+			add_ideas = AUT_medium_tank_focus_idea
 		}
 	}	
 
@@ -1337,6 +1350,7 @@ focus_tree = {
 				uses = 3
 				category = cat_mobile_warfare
 			}
+			army_experience = 10
 		}
 	}
 
@@ -1384,6 +1398,7 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			
 			random_owned_controlled_state = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -1429,6 +1444,7 @@ focus_tree = {
 				uses = 2
 				category = light_fighter
 			}
+			add_ideas = AUT_fighter_focus_idea
 		}
 	}	
 
@@ -1457,6 +1473,7 @@ focus_tree = {
 				uses = 2
 				category = cas_bomber
 			}
+			add_ideas = AUT_cas_focus_idea
 		}
 	}	
 
@@ -1485,6 +1502,7 @@ focus = {
 				uses = 2
 				category = tactical_bomber
 			}
+			add_ideas = AUT_tacbomber_focus_idea
 		}
 	}	
 
@@ -1513,6 +1531,7 @@ focus = {
 				uses = 2
 				category = cat_strategic_bomber
 			}
+			add_ideas = AUT_stratbomber_focus_idea
 		}
 	}	
 
@@ -1556,6 +1575,7 @@ focus = {
 				category = cat_operational_integrity
 	
 			}
+			air_experience = 10
 		}
 	}
 
@@ -1982,7 +2002,7 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			 add_timed_idea = { idea = AUT_german_immigrants_idea days = 550 } 
+			 add_timed_idea = { idea = AUT_german_immigrants_idea days = 1095 } 
         }
 	}
 	
@@ -2014,21 +2034,19 @@ focus = {
 		
 		x = 15
 		y = 1
-		cost = 4
+		cost = 5
 		ai_will_do = {
 			factor = 45
 		}
 		available = {
 			has_country_flag = AUT_dollfuss_in_power			
 		}	
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			swap_ideas = { 
-                remove_idea = AUT_church_ties_1
-                add_idea = AUT_church_ties_2
-            }
+			country_event = { id = aut.11 days = 1 }
         }
 	}
 
@@ -2039,13 +2057,18 @@ focus = {
 		mutually_exclusive = { focus = AUT_seperate_them }
 		x = 16
 		y = 2
-		cost = 4
+		cost = 0
 		ai_will_do = {
 			factor = 45
 		}
 		available = {
 			has_country_flag = AUT_dollfuss_in_power			
 		}	
+		available = {
+			hidden_trigger = {
+				has_country_flag = AUT_state_and_clergy_question_flag
+			}
+		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2064,21 +2087,31 @@ focus = {
 		mutually_exclusive = { focus = AUT_clergy_in_the_government }
 		x = 14
 		y = 2
-		cost = 4
+		cost = 0
 		ai_will_do = {
 			factor = 45
 		}
 		available = {
 			has_country_flag = AUT_dollfuss_in_power			
 		}	
+		available = {
+			hidden_trigger = {
+				has_country_flag = AUT_state_and_clergy_question_flag
+			}
+		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			swap_ideas = { 
-                remove_idea = AUT_church_ties_1
-                add_idea = AUT_church_ties_2
-            }
+			add_ideas = AUT_seperate_them_idea
+			add_popularity = {
+    			ideology = revolutionary_nationalist
+    			popularity = 0.03
+			}
+			add_popularity = {
+    			ideology = ultranationalist
+    			popularity = -0.03
+			}
         }
 	}
 
@@ -3565,8 +3598,8 @@ focus = {
 		id = AUT_south_tyrol_crisis
 		icon = GFX_goal_AUT_south_tyrol_crisis
 		
-		x = -2
-		y = 0
+		x = 0
+		y = 9
 		cost = 5
 		ai_will_do = {
 			factor = 50
@@ -3578,7 +3611,7 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-		
+			
         }
 	}
 
@@ -3586,8 +3619,8 @@ focus = {
 		id = AUT_arrange_the_meeting
 		icon = GFX_goal_AUT_arrange_the_meeting
 		prerequisite = { focus = AUT_south_tyrol_crisis }		
-		x = -2
-		y = 1
+		x = 0
+		y = 10
 		cost = 4
 		ai_will_do = {
 			factor = 50
@@ -3595,6 +3628,12 @@ focus = {
 		available = { 
 			has_country_flag = AUT_south_tyrol_crisis_option
 		}
+		available = {
+			hidden_trigger = {
+				has_country_flag = AUT_sus_mail_option
+			}
+		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3608,8 +3647,8 @@ focus = {
 		id = AUT_preparations
 		icon = GFX_goal_AUT_preparations
 		prerequisite = { focus = AUT_arrange_the_meeting }		
-		x = -2
-		y = 2
+		x = 0
+		y = 11
 		cost = 0
 		ai_will_do = {
 			factor = 50
@@ -3639,8 +3678,8 @@ focus = {
 		id = AUT_execution
 		icon = GFX_goal_AUT_execution
 		prerequisite = { focus = AUT_preparations }		
-		x = -2
-		y = 3
+		x = 0
+		y = 12
 		cost = 0
 		ai_will_do = {
 			factor = 50
@@ -3657,10 +3696,258 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-		
-			
+	
         }
 	}
+
+	focus = {
+		id = AUT_success
+		icon = GFX_goal_AUT_sucess
+		prerequisite = { focus = AUT_execution }		
+		x = 0
+		y = 13
+		cost = 0
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+			has_country_flag = AUT_south_tyrol_crisis_option
+		}
+		available = {
+			hidden_trigger = {			
+				always = no
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+        }
+	}
+
+	focus = {
+		id = AUT_send_the_general
+		icon = GFX_goal_AUT_send_the_general
+		prerequisite = { focus = AUT_success}		
+		x = -2
+		y = 14
+		cost = 4.3
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+			has_country_flag = AUT_south_tyrol_crisis_option
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			custom_effect_tooltip = AUT_send_the_general_tt
+			hidden_effect = {
+				STL = {
+					create_corps_commander = {
+					name = "Karl Eglseer"
+					portrait_path = "gfx/leaders/STL/Portrait_STL_Karl_Eglseer.png"
+					traits = {
+						inflexible_strategist
+						trait_mountaineer
+						trickster
+						infantry_officer
+						winter_specialist
+					}
+					skill = 4
+					attack_skill = 2
+					defense_skill = 4
+					planning_skill = 3
+					logistics_skill = 3
+					}
+				}
+				remove_unit_leader = 1000
+			}
+		}
+	}
+
+	focus = {
+		id = AUT_fund_propaganda_campaign
+		icon = GFX_goal_AUT_fund_propaganda_campaign
+		prerequisite = { focus = AUT_success}		
+		x = 0
+		y = 14
+		cost = 4.3
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+			has_country_flag = AUT_south_tyrol_crisis_option
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			custom_effect_tooltip = AUT_fund_propaganda_campaign_tt
+			hidden_effect = {
+				STL = {
+					add_ideas = {
+					AUT_stcrisis_for_our_fatherland
+					}
+				}	
+				add_ideas = AUT_stcrisis_for_our_fatherland
+			}
+		}
+	}
+
+	focus = {
+		id = AUT_fortify_south_tyrol
+		icon = GFX_goal_AUT_fortify_south_tyrol
+		prerequisite = { focus = AUT_success}		
+		x = 2
+		y = 14
+		cost = 4.3
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+			has_country_flag = AUT_south_tyrol_crisis_option
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			custom_effect_tooltip = AUT_fortify_south_tyrol_tt
+			hidden_effect = {
+				811 = {
+					
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6631
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9598
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11598
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 656
+							instant_build = yes
+						}
+					
+				}
+				39 = {
+					add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6675
+							instant_build = yes
+						}
+
+				}
+			}		
+		}
+	}
+
+
+	focus = {
+		id = AUT_south_tyrolean_war
+		icon = GFX_goal_AUT_south_tyrolean_war
+		prerequisite = { focus = AUT_send_the_general }		
+		prerequisite = { focus = AUT_fund_propaganda_campaign }		
+		prerequisite = { focus = AUT_fortify_south_tyrol }		
+		x = 0
+		y = 15
+		cost = 0
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+			has_country_flag = AUT_south_tyrol_crisis_option
+		}
+		available = {
+			hidden_trigger = {			
+				always = no
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			hidden_effect = {	
+				defensive_war_stability_factor = 100
+				offensive_war_stability_factor = 100
+				add_stability = 0.30
+			}
+			country_event = { id = aut.96 days = 1}	
+		}
+	}
+
+	focus = {
+		id = AUT_victory
+		icon = GFX_goal_AUT_victory
+		prerequisite = { focus = AUT_south_tyrolean_war }		
+	
+		x = 2
+		y = 16
+		cost = 0
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+			has_country_flag = AUT_south_tyrol_crisis_option
+		}
+		available = {
+			hidden_trigger = {			
+				always = no
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			remove_ideas = AUT_stcrisis_for_our_fatherland
+		}
+	}
+
+	focus = {
+		id = AUT_defeat
+		icon = GFX_goal_AUT_defeat
+		prerequisite = { focus = AUT_south_tyrolean_war }		
+	
+		x = -2
+		y = 16
+		cost = 0
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+			has_country_flag = AUT_south_tyrol_crisis_option
+		}
+		available = {
+			hidden_trigger = {			
+				always = no
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			remove_ideas = AUT_stcrisis_for_our_fatherland
+		}
+	}
+
+
 
 	#FP
 	focus = {

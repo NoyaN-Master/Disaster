@@ -162,8 +162,9 @@ create_field_marshal = {
 		offensive_doctrine
 		skilled_staffer
 		expert_delegator
+		brilliant_strategist
 	}
-	skill = 3
+	skill = 4
 	attack_skill = 3
 	defense_skill = 2
 	planning_skill = 3
@@ -218,14 +219,18 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Karl Eglseer"
+	id = 1000
 	portrait_path = "gfx/leaders/AUT/Portrait_AUS_Karl_Eglseer.png"
 	traits = {
+		inflexible_strategist
 		trait_mountaineer
 		trickster
+		infantry_officer
+		winter_specialist
 	}
-	skill = 3
+	skill = 4
 	attack_skill = 2
-	defense_skill = 3
+	defense_skill = 4
 	planning_skill = 3
-	logistics_skill = 2
+	logistics_skill = 3
 }

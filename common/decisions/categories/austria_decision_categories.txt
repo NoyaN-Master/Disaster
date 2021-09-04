@@ -43,3 +43,17 @@ AUT_south_tyrol_crisis_decisions = {
 		has_completed_focus = AUT_preparations
 	}
 }	
+
+
+AUT_war_with_italy_terrorism_decisions = {
+	tag = AUT
+	priority = 100
+	allowed = {
+		OR = {
+			tag = AUT
+		}
+	}
+	visible = {
+		has_country_flag = AUT_wwt_start_decision
+	}
+}	
