@@ -749,7 +749,77 @@ country_event = { #War Department
 	option = {
 		name = roc.22.a
         ai_chance = {factor = 100}
+		set_country_flag =  ROC_wei_lihuang
 	}
+		option = {
+		name = roc.22.b
+        ai_chance = {factor = 100}
+		set_country_flag = ROC_xue_yue
+	}
+}
+
+country_event = { #Wei's plan
+	id = roc.23
+	title = roc.23.t
+	desc = roc.23.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.23.a
+        ai_chance = {factor = 100}
+		hidden_effect = {add_building_construction = {
+    type = bunker
+    level = 5
+    instant_build = yes
+    province = 7097
+}
+		add_building_construction = {
+    type = bunker
+    level = 3
+    instant_build = yes
+    province = 3992
+}
+		add_building_construction = {
+    type = bunker
+    level = 7
+    instant_build = yes
+    province = 7191
+}
+
+		add_building_construction = {
+    type = bunker
+    level = 3
+    instant_build = yes
+    province = 4196
+}
+
+		add_building_construction = {
+    type = bunker
+    level = 4
+    instant_build = yes
+    province = 7071
+}
+
+		add_building_construction = {
+    type = bunker
+    level = 10
+    instant_build = yes
+    province = 1047
+}
+
+		add_building_construction = {
+    type = bunker
+    level = 8
+    instant_build = yes
+    province = 7137
+   }
+  }
+ }
 }
 country_event = { #Test Event
 	id = roc.100
@@ -766,5 +836,22 @@ country_event = { #Test Event
 		name = roc.100.a
         ai_chance = {factor = 100}
 		load_focus_tree = roc_focus_2
+	}
+}
+country_event = { #Xue Yue's plan
+	id = roc.24
+	title = roc.24.t
+	desc = roc.24.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.24.a
+        ai_chance = {factor = 100}
+	
 	}
 }
