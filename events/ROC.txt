@@ -772,7 +772,43 @@ country_event = { #Wei's plan
 	option = {
 		name = roc.23.a
         ai_chance = {factor = 100}
-		hidden_effect = {add_building_construction = {
+		ROC = { country_event = { id = roc.25}}
+ }
+}
+
+country_event = { #Xue Yue's plan
+	id = roc.24
+	title = roc.24.t
+	desc = roc.24.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.24.a
+        ai_chance = {factor = 100}
+	
+	}
+}
+country_event = { #Wei's plan pt2
+	id = roc.25
+	title = roc.25.t
+	desc = roc.25.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.25.a
+        ai_chance = {factor = 100}
+		ROC = { country_event = { id = roc.26}}
+	hidden_effect = {add_building_construction = {
     type = bunker
     level = 5
     instant_build = yes
@@ -819,6 +855,41 @@ country_event = { #Wei's plan
     province = 7137
    }
   }
+	}
+}
+
+country_event = { #Wei's plan pt3
+	id = roc.26
+	title = roc.26.t
+	desc = roc.26.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.26.a
+        ai_chance = {factor = 100}
+		ROC = { country_event = { id = roc.27}}
+ }
+}
+country_event = { #Wei's plan pt4
+	id = roc.27
+	title = roc.27.t
+	desc = roc.27.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.27.a
+        ai_chance = {factor = 100}
+		
  }
 }
 country_event = { #Test Event
@@ -836,22 +907,14 @@ country_event = { #Test Event
 		name = roc.100.a
         ai_chance = {factor = 100}
 		load_focus_tree = roc_focus_2
-	}
+		load_oob = "ROC_cwar"
+		delete_unit_template_and_units = {
+    division_template = "Juntuán"
+    disband = no
 }
-country_event = { #Xue Yue's plan
-	id = roc.24
-	title = roc.24.t
-	desc = roc.24.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = roc.24.a
-        ai_chance = {factor = 100}
-	
+delete_unit_template_and_units = {
+    division_template = "Renmin Jundui"
+    disband = no
+}
 	}
 }

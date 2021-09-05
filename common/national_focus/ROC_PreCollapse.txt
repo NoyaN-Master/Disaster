@@ -196,8 +196,19 @@ focus = {
 		custom_effect_tooltip = ROC_TT_DISASTER
         hidden_effect = {set_capital = 592}
 	    hidden_effect = {load_focus_tree = roc_focus_2}
-		hidden_effect = {remove_ideas = ROC_colab_govern
-		remove_ideas = ROC_sucess_reforms remove_ideas = ROC_maohunt remove_ideas = ROC_desertion}
+		hidden_effect = {remove_ideas = ROC_colab_govern remove_ideas = ROC_sucess_reforms remove_ideas = ROC_maohunt remove_ideas = ROC_desertion}
+		hidden_effect = {	load_oob = "ROC_cwar"
+		delete_unit_template_and_units = {
+    division_template = "Juntuán"
+    disband = no
+}
+delete_unit_template_and_units = {
+    division_template = "Renmin Jundui"
+    disband = no
+}
+}
+
+
 		}
 	}
 

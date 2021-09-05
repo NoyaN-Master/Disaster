@@ -18,8 +18,9 @@ focus_tree = {
 		id = ROC_focus_13
 		icon = ""
 		x = 10
-		y = 1
+		y = 5
 		cost = 1
+		prerequisite = {focus = ROC_focus_23}
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -32,8 +33,8 @@ focus_tree = {
 	focus = {
 		id = ROC_focus_14
 		icon = ""
-		x = 12
-		y = 2
+		x = 14
+		y = 6
 		cost = 8
 		prerequisite = {focus = ROC_focus_13}
 		available_if_capitulated = yes
@@ -47,8 +48,8 @@ focus_tree = {
 		focus = {
 		id = ROC_focus_15
 		icon = ""
-		x = 12
-		y = 3
+		x = 14
+		y = 7
 		cost = 8
 		prerequisite = {focus = ROC_focus_14}
 		available_if_capitulated = yes
@@ -62,8 +63,8 @@ focus_tree = {
 	focus = {
 		id = ROC_focus_16
 		icon = ""
-		x = 12
-		y = 4
+		x = 14
+		y = 8
 		cost = 8
 		prerequisite = {focus = ROC_focus_15}
 		available_if_capitulated = yes
@@ -78,8 +79,8 @@ focus_tree = {
 	focus = {
 		id = ROC_focus_17
 		icon = ""
-		x = 8
-		y = 2
+		x = 6
+		y = 6
 		cost = 8
 		prerequisite = {focus = ROC_focus_13}
 		available_if_capitulated = yes
@@ -97,8 +98,8 @@ focus_tree = {
 		focus = {
 		id = ROC_focus_18
 		icon = ""
-		x = 8
-		y = 3
+		x = 6
+		y = 7
 		cost = 8
 		prerequisite = {focus = ROC_focus_17}
 		available_if_capitulated = yes
@@ -118,8 +119,8 @@ focus_tree = {
 		focus = {
 		id = ROC_focus_19
 		icon = ""
-		x = 8
-		y = 4
+		x = 6
+		y = 8
 		cost = 8
 		prerequisite = {focus = ROC_focus_18}
 		available_if_capitulated = yes
@@ -140,7 +141,7 @@ focus_tree = {
 		icon = ""
 		available = {surrender_progress > 0.25}
 		x = 10
-		y = 2
+		y = 6
 		cost = 8
 		prerequisite = {focus = ROC_focus_13}
 		available_if_capitulated = yes
@@ -156,7 +157,7 @@ focus_tree = {
 		icon = ""
 		available = {surrender_progress > 0.5}
 		x = 10
-		y = 3
+		y = 7
 		cost = 8
 		prerequisite = {focus = ROC_focus_20}
 		available_if_capitulated = yes
@@ -172,7 +173,7 @@ focus_tree = {
 		icon = ""
 		available = {surrender_progress > 0.75}
 		x = 10
-		y = 4
+		y = 8
 		cost = 8
 		prerequisite = {focus = ROC_focus_21}
 		available_if_capitulated = yes
@@ -189,7 +190,7 @@ focus_tree = {
 		id = ROC_focus_23
 		icon = ""
 		#available = {}
-		x = 25
+		x = 10
 		y = 1
 		cost = 8
 		#prerequisite = {focus = ROC_focus_21}
@@ -208,7 +209,7 @@ focus_tree = {
 		icon = ""
 		available = {has_country_flag = ROC_xue_yue}
 		mutually_exclusive = {focus = ROC_focus_25 focus = ROC_focus_24}
-		x = 23
+		x = 8
 		y = 2
 		cost = 8
 		prerequisite = {focus = ROC_focus_23}
@@ -236,7 +237,7 @@ focus_tree = {
 		icon = ""
 		available = {has_country_flag = ROC_wei_lihuang}
 		mutually_exclusive = {focus = ROC_focus_25 focus = ROC_focus_24}
-		x = 27
+		x = 12
 		y = 2
 		cost = 8
 		prerequisite = {focus = ROC_focus_23}
@@ -263,7 +264,7 @@ focus_tree = {
 		id = ROC_focus_26
 		icon = ""
 		#available = {has_country_flag = ROC_wei_lihuang}
-		x = 27
+		x = 12
 		y = 3
 		cost = 8
 		prerequisite = {focus = ROC_focus_25}
@@ -279,7 +280,7 @@ focus_tree = {
 		id = ROC_focus_27
 		icon = ""
 		#available = {}
-		x = 27
+		x = 12
 		y = 4
 		cost = 8
 		prerequisite = {focus = ROC_focus_26}
@@ -288,14 +289,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		     
+		remove_ideas = ROC_desertion
 		}
 	}
 		focus = {
 		id = ROC_focus_28
 		icon = ""
 		#available = {has_country_flag = ROC_wei_lihuang}
-		x = 23
+		x = 8
 		y = 3
 		cost = 8
 		prerequisite = {focus = ROC_focus_24}
@@ -311,7 +312,7 @@ focus_tree = {
 		id = ROC_focus_29
 		icon = ""
 		#available = {has_country_flag = ROC_wei_lihuang}
-		x = 23
+		x = 8
 		y = 4
 		cost = 8
 		prerequisite = {focus = ROC_focus_28}
@@ -320,7 +321,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		remove_ideas = ROC_desertion
 		}
 	}
 }
