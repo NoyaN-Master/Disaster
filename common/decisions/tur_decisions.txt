@@ -7,6 +7,7 @@ TUR_unification_category = {
 			country_exists = ARM
 			NOT = {
 				country_exists = CIB
+				original_tag = ARM
 			}
 			owns_state = 340
 			owns_state = 797

@@ -557,6 +557,10 @@ spriteType = {
 		texturefile = "gfx/interface/ideas/NGU_Economics.dds"
 	}
 spriteType = {
+		name = "GFX_idea_CIB_homecoming"
+		texturefile = "gfx/interface/ideas/CIB_homecoming.png"
+	}
+spriteType = {
 		name = "GFX_idea_NGU_paramilitary_problem"
 		texturefile = "gfx/interface/ideas/NGU_paramilitary_problem.dds"
 	}	
