@@ -149,5 +149,13 @@ spriteTypes = {
 		name = "GFX_goal_ARM_Mordacqs_Administration"
 		texturefile = "gfx/interface/goals/ARM_Mordacqs_Administration.png"			
 	}
+	SpriteType = {
+		name = "GFX_goal_ROC_modern_war_dept"
+		texturefile = "gfx/interface/goals/ROC_Modernise_War_department.png"			
+	}
+		SpriteType = {
+		name = "GFX_goal_ROC_patton_asia"
+		texturefile = "gfx/interface/goals/ROC_Patton_Of_Asia.png"			
+	}
 	
 }

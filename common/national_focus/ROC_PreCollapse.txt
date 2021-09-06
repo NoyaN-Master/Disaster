@@ -104,6 +104,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		hidden_effect={ROC = { country_event = { id = roc.19 days = 2}}}
         608 = {  add_building_construction = {
             type = infrastructure
             level = 7
@@ -207,7 +208,7 @@ delete_unit_template_and_units = {
     disband = no
 }
 }
-
+hidden_effect = {set_country_flag = ROC_SPVENT_Flag}
 
 		}
 	}

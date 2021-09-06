@@ -188,7 +188,7 @@ focus_tree = {
 	}
 		focus = {
 		id = ROC_focus_23
-		icon = ""
+		icon = GFX_goal_ROC_modern_war_dept
 		#available = {}
 		x = 10
 		y = 1
@@ -206,7 +206,7 @@ focus_tree = {
 	
 		focus = {
 		id = ROC_focus_24
-		icon = ""
+		icon = GFX_goal_ROC_patton_asia
 		available = {has_country_flag = ROC_xue_yue}
 		mutually_exclusive = {focus = ROC_focus_25 focus = ROC_focus_24}
 		x = 8

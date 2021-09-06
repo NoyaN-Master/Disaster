@@ -169,5 +169,24 @@ country = {
 		consumer_goods_factor = 0.1
 			}
 		}
+		
+	ROC_cwar_stream_gun = {
+		picture = ROC_unity
+		modifier = {
+	equipment_bonus = {
+
+  infantry_equipment = {
+    build_cost_ic = -0.1 instant = yes
+  }
+
+}
+			}
+		}
+	ROC_cwar_conscript_ppl = {
+		picture = ROC_unity
+		modifier = {
+	recruitable_population = 0.05
+			}
+		}
 }
 }

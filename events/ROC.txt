@@ -528,7 +528,7 @@ country_event = { #Disaster pt2
         ai_chance = {factor = 100}
        hidden_effect = {PRC = {transfer_state = 605}} 
 	   hidden_effect = {ROC = { country_event = { id = roc.5 days = 15}}}
-	   hidden_effect = {ROC = { country_event = { id = roc.17 days = 17}}}
+	   hidden_effect = {ROC = { country_event = { id = roc.17 days = 7}}}
 		
 	}
 }
@@ -645,8 +645,7 @@ country_event = { #Qing and beijing
 		add_stability = -0.1
 		hidden_effect = {ROC = { country_event = { id = roc.4 days = 7}}}
 		hidden_effect = {QID = {transfer_state = 608}}
-		hidden_effect = {ROC = { country_event = { id = roc.18 days = 5}}}
-		hidden_effect = {ROC = { country_event = { id = roc.19 days = 2}}}
+		hidden_effect = {ROC = { country_event = { id = roc.32 days = 2}}}
 	}
 }
 country_event = { #dai li murders ppl
@@ -664,10 +663,10 @@ country_event = { #dai li murders ppl
 		name = roc.18.a
         ai_chance = {factor = 100}
 		add_stability = -0.1
-		hidden_effect = {ROC = { country_event = { id = roc.3 days = 7}} set_country_flag = DISASTER}
+		hidden_effect = {ROC = { country_event = { id = roc.3 days = 2}} set_country_flag = DISASTER}
 	}
 }
-country_event = { #dai li breaks out of prison
+country_event = { #dai li pardoned
 	id = roc.19
 	title = roc.19.t
 	desc = roc.19.d
@@ -682,7 +681,6 @@ country_event = { #dai li breaks out of prison
 		name = roc.19.a
         ai_chance = {factor = 100}
 		add_stability = -0.1
-		hidden_effect = {ROC = { country_event = { id = roc.2 days = 7}}}
 	}
 }
 
@@ -720,6 +718,7 @@ country_event = { #14hr work days crying
 		name = roc.21.a
         ai_chance = {factor = 33}
 		add_stability = -0.15
+		hidden_effect = {ROC = { country_event = { id = roc.28 days = 60}}}
 	}
 	option = {
 		name = roc.21.b
@@ -790,7 +789,7 @@ country_event = { #Xue Yue's plan
 	option = {
 		name = roc.24.a
         ai_chance = {factor = 100}
-	
+	   ROC = { country_event = { id = roc.29}}
 	}
 }
 country_event = { #Wei's plan pt2
@@ -892,6 +891,119 @@ country_event = { #Wei's plan pt4
 		
  }
 }
+country_event = { #14hr work days crying pt 2
+	id = roc.28
+	title = roc.28.t
+	desc = roc.28.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.28.a
+        ai_chance = {factor = 33}
+		add_stability = -0.15
+	}
+	option = {
+		name = roc.28.b
+        ai_chance = {factor = 34}
+		add_stability = -0.10
+		add_ideas = ROC_cwar_work_semi_death
+		remove_ideas = ROC_cwar_work_death
+	}
+	option = {
+		name = roc.28.c
+        ai_chance = {factor = 33}
+		add_stability = 0.05
+		remove_ideas = ROC_cwar_work_death
+	}
+}
+country_event = { #Xue Yue's plan pt 2
+	id = roc.29
+	title = roc.29.t
+	desc = roc.29.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.29.a
+        ai_chance = {factor = 100}
+	   ROC = { country_event = { id = roc.30}}
+	}
+}
+country_event = { #Xue Yue's plan pt 3
+	id = roc.30
+	title = roc.30.t
+	desc = roc.30.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.30.a
+        ai_chance = {factor = 100}
+	   ROC = { country_event = { id = roc.31}}
+	   add_ideas = ROC_cwar_stream_gun
+	}
+		option = {
+		name = roc.30.b
+        ai_chance = {factor = 100}
+	   ROC = { country_event = { id = roc.31}}
+	   add_tech_bonus = {
+    bonus = 2.0
+    uses = 1
+    category = infantry_weapons
+}
+	}
+}
+country_event = { #Xue Yue's plan pt 4
+	id = roc.31
+	title = roc.31.t
+	desc = roc.31.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.31.a
+        ai_chance = {factor = 100}
+			   add_tech_bonus = {
+    bonus = 1
+    uses = 3
+    category =  cat_mass_assault
+}
+	}
+}
+country_event = { Dai Li disappears
+	id = roc.32
+	title = roc.32.t
+	desc = roc.32.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.32.a
+        ai_chance = {factor = 100}
+hidden_effect = {ROC = { country_event = { id = roc.18 days = 7}}}
+	}
+}
 country_event = { #Test Event
 	id = roc.100
 	title = roc.100.t
@@ -916,5 +1028,6 @@ delete_unit_template_and_units = {
     division_template = "Renmin Jundui"
     disband = no
 }
+set_country_flag = ROC_SPVENT_Flag	
 	}
 }

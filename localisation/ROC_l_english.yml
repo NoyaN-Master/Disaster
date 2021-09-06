@@ -120,6 +120,25 @@ roc.26.a:0 "And?"
 roc.27.t:0 "Dig in and Wait For the Opertune Time"
 roc.27.d:0 ""
 roc.27.a:0 "Excellent!"
+
+roc.28.t:0 "Continued Riots Over 14 Mandated Work days"
+roc.28.d:0 ""
+roc.28.a:0 "Not again... Call in the police"
+roc.28.b:0 "Lower the work days to 10 hours."
+roc.28.c:0 "Return work days to normal 8 hours."
+
+roc.29.t:0 "Utilise China's Population"
+roc.29.d:0 ""
+roc.29.a:0 "Smart!"
+
+roc.30.t:0 "Guns?!"
+roc.30.d:0 ""
+roc.30.a:0 "Streamline factories for our current arms."
+roc.30.b:0 "Reserach the most cutting edge arms!"
+
+roc.31.t:0 "Overwhelm the Enemy Lines"
+roc.31.d:0 ""
+roc.31.a:0 "Yes sir!"
 ###Focus
 
 ROC_focus_1:0 "Chinese New Year Festival"
@@ -239,6 +258,8 @@ ROC_cwar_work_semi_death:0 "10 Hour Work Days"
 ROC_cwar_hold_line:0 "Every Man On the Front"
 ROC_cwar_nationalist_terror:0 "Nationalist Terror Attacks"
 ROC_cwar_overclocked_factories:0 "Satisfy our Needs for Equipment"
+ROC_cwar_conscript_ppl:0 "Nationalist Propaganda"
+ROC_cwar_stream_gun:0 "Mass producing Arms"
 ###Decisions
 ###Tool Tips
 ROC_ETR_TT:0 "§GEast Turkestan Declares Independance"
