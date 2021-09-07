@@ -197,4 +197,8 @@ spriteTypes = {
 		name = "GFX_goal_ROC_purge_socialist_officials"
 		texturefile = "gfx/interface/goals/ROC_purge_socialist_officials.png"			
 	}
+		SpriteType = {
+		name = "GFX_goal_ROC_Disaster_troll"
+		texturefile = "gfx/interface/goals/ROC_Disaster_troll.png"			
+	}
 }

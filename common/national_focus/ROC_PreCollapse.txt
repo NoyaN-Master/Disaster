@@ -17,7 +17,7 @@ focus_tree = {
 	focus = {
 		id = ROC_focus_1
 		icon = GFX_goal_ROC_chinese_new_yr
-		x = 15
+		x = 10
 		y = 1
 		cost = 4
 		available_if_capitulated = yes
@@ -31,7 +31,7 @@ focus_tree = {
 	focus = {
 		id = ROC_focus_2
 		icon = GFX_goal_ROC_state_of_emergency
-		x = 15
+		x = 10
 		y = 2
 		cost = 1
 		available_if_capitulated = yes
@@ -47,7 +47,7 @@ focus_tree = {
 	focus = {
 		id = ROC_focus_3
 		icon = GFX_goal_ROC_Enact_Martial_Law
-		x = 16
+		x = 11
 		y = 3
 		cost = 4
 		
@@ -64,7 +64,7 @@ focus_tree = {
 		focus = {
 		id = ROC_focus_5
 		icon = GFX_goal_ROC_Anonymous_tips
-		x = 14
+		x = 9
 		y = 3
 		cost = 5
 		prerequisite = { focus = ROC_focus_2}
@@ -80,7 +80,7 @@ focus_tree = {
 	focus = {
 		id = ROC_focus_6
 		icon = GFX_goal_ROC_Public_Address
-		x = 15
+		x = 10
 		y = 4
 		cost = 5
 		prerequisite = {focus = ROC_focus_5}
@@ -96,7 +96,7 @@ focus_tree = {
 	focus = {
 		id = ROC_focus_7
 		icon = GFX_goal_ROC_rebuild_beijing
-		x = 15
+		x = 10
 		y = 5
 		cost = 5
 		prerequisite = {focus = ROC_focus_6}
@@ -123,7 +123,7 @@ focus_tree = {
 focus = {
 		id = ROC_focus_8
 		icon = GFX_goal_ROC_Burn_Commie_Stuff
-		x = 14
+		x = 9
 		y = 6
 		cost = 5
 		prerequisite = {focus = ROC_focus_7}
@@ -138,7 +138,7 @@ focus = {
 	focus = {
 		id = ROC_focus_9
 		icon = GFX_goal_ROC_purge_socialist_officials
-		x = 14
+		x = 9
 		y = 7
 		cost = 5
 		prerequisite = {focus = ROC_focus_8}
@@ -154,7 +154,7 @@ focus = {
 		focus = {
 		id = ROC_focus_10
 		icon = GFX_goal_ROC_anti_commie_act
-		x = 16
+		x = 11
 		y = 6
 		cost = 5
 		prerequisite = {focus = ROC_focus_7}
@@ -169,7 +169,7 @@ focus = {
 			focus = {
 		id = ROC_focus_11
 		icon = GFX_goal_ROC_hunt_for_mao
-		x = 16
+		x = 11
 		y = 7
 		cost = 5
 		prerequisite = {focus = ROC_focus_10}
@@ -184,8 +184,8 @@ focus = {
 	}
 		focus = {
 		id = ROC_focus_12
-		icon = ""
-		x = 15
+		icon = GFX_goal_ROC_Disaster_troll
+		x = 10
 		y = 8
 		available = {has_country_flag = DISASTER}
 		cost = 1
