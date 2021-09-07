@@ -157,5 +157,36 @@ spriteTypes = {
 		name = "GFX_goal_ROC_patton_asia"
 		texturefile = "gfx/interface/goals/ROC_Patton_Of_Asia.png"			
 	}
-	
+			SpriteType = {
+		name = "GFX_goal_ROC_chinese_new_yr"
+		texturefile = "gfx/interface/goals/ROC_chinese_new_yr.png"			
+	}
+		SpriteType = {
+		name = "GFX_goal_ROC_state_of_emergency"
+		texturefile = "gfx/interface/goals/ROC_state_of_emergency.png"			
+	}
+		SpriteType = {
+		name = "GFX_goal_ROC_Enact_Martial_Law"
+		texturefile = "gfx/interface/goals/ROC_Enact_Martial_Law.png"			
+	}
+		SpriteType = {
+		name = "GFX_goal_ROC_Anonymous_tips"
+		texturefile = "gfx/interface/goals/ROC_Anonymous_tips.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_ROC_Public_Address"
+		texturefile = "gfx/interface/goals/ROC_Public_Address.png"			
+	}
+		SpriteType = {
+		name = "GFX_goal_ROC_rebuild_beijing"
+		texturefile = "gfx/interface/goals/ROC_rebuild_beijing.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_ROC_Burn_Commie_Stuff"
+		texturefile = "gfx/interface/goals/ROC_Burn_Commie_Stuff.png"			
+	}
+		SpriteType = {
+		name = "GFX_goal_ROC_anti_commie_act"
+		texturefile = "gfx/interface/goals/ROC_anti_commie_act.png"			
+	}
 }

@@ -201,6 +201,8 @@ focus_tree = {
 		completion_reward = {
 		      add_war_support = 0.2
 			  ROC = { country_event = { id = roc.22}}
+	 hidden_effect = {set_country_flag = ROC_decisions_cwar}
+	 	custom_effect_tooltip = ROC_TT_CWAR_DECISIONS
 		}
 	}
 	

@@ -261,6 +261,12 @@ ROC_cwar_overclocked_factories:0 "Satisfy our Needs for Equipment"
 ROC_cwar_conscript_ppl:0 "Nationalist Propaganda"
 ROC_cwar_stream_gun:0 "Mass producing Arms"
 ###Decisions
+roc_cwar_cat:0 "Civil War Decisions"
+roc_cwar_1:0 "More Military Factories"
+roc_cwar_2:0 "Boost Our Industry"
+roc_cwar_3:0 "Purchase Black Market Arms"
+roc_cwar_4:0 "Purchase Black Market Support Equipment"
+roc_cwar_5:0 "Capture"
 ###Tool Tips
 ROC_ETR_TT:0 "§GEast Turkestan Declares Independance"
 ROC_ETR_TT_2:0 "§GPlay as East Turkestan"
@@ -276,3 +282,5 @@ ROC_PRC_TT_2:0 "§RPlay as the People's Republic of China"
 
 ROC_TT_event_7:0 "This will empower the nationalists"
 ROC_TT_DISASTER:0 "§R Patriotism demands of us sustained sacrifice. -Chiang Kai-Shek"
+
+ROC_TT_CWAR_DECISIONS:0 "§gThis focus will unlock civil war decisions"
