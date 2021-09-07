@@ -123,10 +123,10 @@ focus_tree = {
 focus = {
 		id = ROC_focus_8
 		icon = GFX_goal_ROC_Burn_Commie_Stuff
-		x = 9
-		y = 6
+		x = 8
+		y = 5
 		cost = 5
-		prerequisite = {focus = ROC_focus_7}
+		prerequisite = {focus = ROC_focus_6}
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -139,7 +139,7 @@ focus = {
 		id = ROC_focus_9
 		icon = GFX_goal_ROC_purge_socialist_officials
 		x = 9
-		y = 7
+		y = 6
 		cost = 5
 		prerequisite = {focus = ROC_focus_8}
 		available_if_capitulated = yes
@@ -154,10 +154,10 @@ focus = {
 		focus = {
 		id = ROC_focus_10
 		icon = GFX_goal_ROC_anti_commie_act
-		x = 11
-		y = 6
+		x = 12
+		y = 5
 		cost = 5
-		prerequisite = {focus = ROC_focus_7}
+		prerequisite = {focus = ROC_focus_6}
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -170,7 +170,7 @@ focus = {
 		id = ROC_focus_11
 		icon = GFX_goal_ROC_hunt_for_mao
 		x = 11
-		y = 7
+		y = 6
 		cost = 5
 		prerequisite = {focus = ROC_focus_10}
 		available_if_capitulated = yes
@@ -186,10 +186,11 @@ focus = {
 		id = ROC_focus_12
 		icon = GFX_goal_ROC_Disaster_troll
 		x = 10
-		y = 8
+		y = 7
 		available = {has_country_flag = DISASTER}
 		cost = 1
 		prerequisite = {focus = ROC_focus_11 focus = ROC_focus_9}
+		prerequisite = { focus = ROC_focus_7 }
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
