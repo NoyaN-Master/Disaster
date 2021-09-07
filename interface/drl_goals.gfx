@@ -189,4 +189,12 @@ spriteTypes = {
 		name = "GFX_goal_ROC_anti_commie_act"
 		texturefile = "gfx/interface/goals/ROC_anti_commie_act.png"			
 	}
+	SpriteType = {
+		name = "GFX_goal_ROC_hunt_for_mao"
+		texturefile = "gfx/interface/goals/ROC_hunt_for_mao.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_ROC_purge_socialist_officials"
+		texturefile = "gfx/interface/goals/ROC_purge_socialist_officials.png"			
+	}
 }
