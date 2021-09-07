@@ -14,6 +14,9 @@ country_event = { #Introduction
 
 	option = {
 		name = enver.1.a
+		hidden_effect = {
+			add_timed_idea ={idea = CIB_homecoming days = 60}
+		}
 	}
 }
 
