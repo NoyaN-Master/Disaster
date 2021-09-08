@@ -83,8 +83,6 @@ roc_cwar_cat = {		#Name of category that decisions will appear under, decisions 
     producer = ROC
 }
 		}
-		
-		
 
 		ai_will_do = {
 			factor = 1			
@@ -113,13 +111,18 @@ roc_cwar_cat = {		#Name of category that decisions will appear under, decisions 
     producer = ROC
 }
 		}
-		
-		
-
 		ai_will_do = {
 			factor = 1			
 		}
 	}
+}
+
+
+##########################################################################
+#NEW CATAGORY
+
+roc_cwar_cat_2 = {
+
 		roc_cwar_5 = {		
 
 		icon = GFX_decision_icon_default	
@@ -128,19 +131,263 @@ roc_cwar_cat = {		#Name of category that decisions will appear under, decisions 
 		}
 		
 		fire_only_once = no		
-		days_re_enable = 12	
+		days_re_enable = 75
 
 		visible = {		
 	
 		}		
 
-		cost = 0	
+		cost = 50	
 
-		complete_effect = {		
+		complete_effect = {	
+		hidden_effect = {set_country_flag = mission_go_1}
 		}
 
 		ai_will_do = {
 			factor = 1			
 		}
 	}
+		roc_cwar_6 = {		
+
+		icon = GFX_decision_icon_default	
+		
+		available = {		
+		}
+		
+		fire_only_once = no		
+		days_re_enable = 75
+
+		visible = {		
+	
+		}		
+
+		cost = 50	
+
+		complete_effect = {	
+		hidden_effect = {set_country_flag = mission_go_2}
+		}
+
+		ai_will_do = {
+			factor = 1			
+		}
+	}
+	roc_cwar_7 = {		
+
+		icon = GFX_decision_icon_default	
+		
+		available = {		
+		}
+		
+		fire_only_once = no		
+		days_re_enable = 75
+
+		visible = {		
+	
+		}		
+
+		cost = 50	
+
+		complete_effect = {	
+		hidden_effect = {set_country_flag = mission_go_3}
+		}
+
+		ai_will_do = {
+			factor = 1			
+		}
+	}
+		roc_cwar_8 = {		
+
+		icon = GFX_decision_icon_default	
+		
+		available = {		
+		}
+		
+		fire_only_once = no		
+		days_re_enable = 75
+
+		visible = {		
+	
+		}		
+
+		cost = 50	
+
+		complete_effect = {	
+		hidden_effect = {set_country_flag = mission_go_4}
+		}
+
+		ai_will_do = {
+			factor = 1			
+		}
+	}
+roc_cwar_9 = {		
+
+		icon = GFX_decision_icon_default	
+		
+		available = {		
+		}
+		
+		fire_only_once = no		
+		days_re_enable = 75
+
+		visible = {		
+	
+		}		
+
+		cost = 50	
+
+		complete_effect = {	
+		hidden_effect = {set_country_flag = mission_go_5}
+		}
+
+		ai_will_do = {
+			factor = 1			
+		}
+}
+roc_cwar_10 = {		
+
+		icon = GFX_decision_icon_default	
+		
+		available = {		
+		}
+		
+		fire_only_once = no		
+		days_re_enable = 75
+
+		visible = {		
+	
+		}		
+
+		cost = 50	
+
+		complete_effect = {	
+		hidden_effect = {set_country_flag = mission_go_6}
+		}
+
+		ai_will_do = {
+			factor = 1			
+		}
+}
+
+###################################MISSIONS######################
+
+	roc_cwar_mission_1 = {
+        days_mission_timeout = 60
+        fire_only_once = no
+        available = {                             # makes the decision unable to complete therefore the only option to get the buff is once it does the timeout through a condition
+           ROC = { controls_province = 11913 }
+		
+        }
+        activation = {
+          has_country_flag = mission_go_1                                                 #condition in which it will activate
+        }
+        is_good = no                             #if yes then the color is green / if no then the color is red
+        priority = 100                     
+        timeout_effect = {     
+			add_timed_idea ={idea = ROC_cwar_failed_offensive days = 60}         
+         }
+        complete_effect = {                    # the effect when you take the state
+        add_stability = 0.1
+		add_war_support = 0.1              
+        }
+    }
+	roc_cwar_mission_2 = {
+        days_mission_timeout = 60
+        fire_only_once = no
+        available = {                             # makes the decision unable to complete therefore the only option to get the buff is once it does the timeout through a condition
+           ROC = { controls_province = 6999 }
+		
+        }
+        activation = {
+          has_country_flag = mission_go_2                                                 #condition in which it will activate
+        }
+        is_good = no                             #if yes then the color is green / if no then the color is red
+        priority = 100                     
+        timeout_effect = {     
+			add_timed_idea ={idea = ROC_cwar_failed_offensive days = 60}         
+         }
+        complete_effect = {                    # the effect when you take the state
+        add_stability = 0.1
+		add_war_support = 0.1              
+        }
+    }
+	roc_cwar_mission_3 = {
+        days_mission_timeout = 60
+        fire_only_once = no
+        available = {                             # makes the decision unable to complete therefore the only option to get the buff is once it does the timeout through a condition
+           ROC = { controls_province = 10000 }
+		
+        }
+        activation = {
+          has_country_flag = mission_go_3                                                #condition in which it will activate
+        }
+        is_good = no                             #if yes then the color is green / if no then the color is red
+        priority = 100                     
+        timeout_effect = {     
+			add_timed_idea ={idea = ROC_cwar_failed_offensive days = 60}         
+         }
+        complete_effect = {                    # the effect when you take the state
+        add_stability = 0.1
+		add_war_support = 0.1              
+        }
+    }
+		roc_cwar_mission_4 = {
+        days_mission_timeout = 60
+        fire_only_once = no
+        available = {                             # makes the decision unable to complete therefore the only option to get the buff is once it does the timeout through a condition
+           ROC = { controls_province = 9843 }
+		
+        }
+        activation = {
+          has_country_flag = mission_go_4                                            #condition in which it will activate
+        }
+        is_good = no                             #if yes then the color is green / if no then the color is red
+        priority = 100                     
+        timeout_effect = {     
+			add_timed_idea ={idea = ROC_cwar_failed_offensive days = 60}         
+         }
+        complete_effect = {                    # the effect when you take the state
+        add_stability = 0.1
+		add_war_support = 0.1              
+        }
+    }
+		roc_cwar_mission_5 = {
+        days_mission_timeout = 60
+        fire_only_once = no
+        available = {                             # makes the decision unable to complete therefore the only option to get the buff is once it does the timeout through a condition
+           ROC = { controls_province = 1519 }
+		
+        }
+        activation = {
+          has_country_flag = mission_go_5                                         #condition in which it will activate
+        }
+        is_good = no                             #if yes then the color is green / if no then the color is red
+        priority = 100                     
+        timeout_effect = {     
+			add_timed_idea ={idea = ROC_cwar_failed_offensive days = 60}         
+         }
+        complete_effect = {                    # the effect when you take the state
+        add_stability = 0.1
+		add_war_support = 0.1              
+        }
+    }
+		roc_cwar_mission_6 = {
+        days_mission_timeout = 60
+        fire_only_once = no
+        available = {                             # makes the decision unable to complete therefore the only option to get the buff is once it does the timeout through a condition
+           ROC = { controls_province = 7940 }
+		
+        }
+        activation = {
+          has_country_flag = mission_go_6                                         #condition in which it will activate
+        }
+        is_good = no                             #if yes then the color is green / if no then the color is red
+        priority = 100                     
+        timeout_effect = {     
+			add_timed_idea ={idea = ROC_cwar_failed_offensive days = 60}         
+         }
+        complete_effect = {                    # the effect when you take the state
+        add_stability = 0.1
+		add_war_support = 0.1              
+        }
+    }
 }

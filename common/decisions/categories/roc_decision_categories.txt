@@ -10,3 +10,15 @@ roc_cwar_cat = {
      has_country_flag = ROC_decisions_cwar
 	}
 }
+roc_cwar_cat_2 = {		
+	priority = 8	
+	icon = GFX_category_icon	
+	
+	allowed = {
+	
+	}
+	visible = {		
+     tag = ROC
+     has_country_flag = ROC_decisions_cwar
+	}
+}
