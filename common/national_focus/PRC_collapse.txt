@@ -1,0 +1,32 @@
+focus_tree = {
+	id = roc_focus_2
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PRC
+		}
+		}
+		continuous_focus_position = { x = 100 y = 5000 }
+	default = no	
+	
+	
+	
+	
+	
+	focus = {
+		id = PRC_focus_1
+		icon = ""
+		x = 8
+		y = 1
+		cost = 1
+		prerequisite = {focus = ROC_focus_23}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		ROC = { country_event = { id = prc.1}}
+		}
+	}
+}		

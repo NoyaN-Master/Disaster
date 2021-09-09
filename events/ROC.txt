@@ -870,6 +870,7 @@ country_event = { #Wei's plan pt3
 
 	option = {
 		name = roc.26.a
+		set_country_flag = ROC_cwar_wei
         ai_chance = {factor = 100}
 		ROC = { country_event = { id = roc.27}}
  }

@@ -391,3 +391,91 @@ roc_cwar_10 = {
         }
     }
 }
+roc_cwar_cat_3 = {
+roc_cwar_11 = {		
+
+		icon = GFX_decision_icon_default	
+		
+		available = {		
+		}
+		
+		fire_only_once = no		
+		days_re_enable = 75
+
+		visible = {		
+	
+		}		
+
+		cost = 125
+
+		complete_effect = {	
+	PRC = {
+add_timed_idea = {idea = ROC_cwar_destable_commie days = 60}
+
+	}
+		}
+
+		ai_will_do = {
+			factor = 1			
+		}
+}
+	
+
+roc_cwar_12 = {		
+
+		icon = GFX_decision_icon_default	
+		
+		available = {		
+		}
+		
+		fire_only_once = no		
+		days_re_enable = 75
+
+		visible = {		
+	
+		}		
+
+		cost = 125
+
+		complete_effect = {	
+	PRC = {
+add_timed_idea = {idea = ROC_cwar_sabotoge_commie days = 45}
+
+	}
+		}
+
+		ai_will_do = {
+			factor = 1			
+		}
+}	
+roc_cwar_13 = {		
+
+		icon = GFX_decision_icon_default	
+		
+		available = {		
+		}
+		
+		fire_only_once = no		
+		days_re_enable = 75
+
+		visible = {		
+	
+		}		
+
+		cost = 125
+
+		complete_effect = {	
+	PRC = {
+add_timed_idea = {idea = ROC_cwar_sabotoge_factory_commie days = 60}
+
+	}
+		}
+
+		ai_will_do = {
+			factor = 1			
+		}
+}	
+
+
+} 
+
