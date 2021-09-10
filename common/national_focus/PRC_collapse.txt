@@ -1,5 +1,5 @@
 focus_tree = {
-	id = roc_focus_2
+	id = PRC_cwar
 	country = {
 		factor = 0
 		modifier = {
@@ -10,23 +10,176 @@ focus_tree = {
 		continuous_focus_position = { x = 100 y = 5000 }
 	default = no	
 	
-	
-	
-	
-	
-	focus = {
-		id = PRC_focus_1
+		focus = {
+		id = PRC_focus_13
 		icon = ""
-		x = 8
-		y = 1
+		x = 10
+		y = 3
 		cost = 1
-		prerequisite = {focus = ROC_focus_23}
+		prerequisite = {focus = PRC_focus_23}
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-		ROC = { country_event = { id = prc.1}}
+		ROC = { country_event = { id = roc.20}}
 		}
 	}
+		
+	focus = {
+		id = PRC_focus_14
+		icon = ""
+		x = 14
+		y = 6
+		cost = 8
+		prerequisite = {focus = PRC_focus_13}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = ROC_cwar_effort
+		}
+	}
+		focus = {
+		id = PRC_focus_15
+		icon = ""
+		x = 14
+		y = 7
+		cost = 8
+		prerequisite = {focus = PRC_focus_14}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = ROC_cwar_child_labour
+		}
+	}
+	focus = {
+		id = PRC_focus_16
+		icon = ""
+		x = 14
+		y = 8
+		cost = 8
+		prerequisite = {focus = PRC_focus_15}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = ROC_cwar_work_death
+		hidden_effect = {ROC = { country_event = { id = roc.21 days = 45}}}
+		}
+	}
+	focus = {
+		id = PRC_focus_17
+		icon = ""
+		x = 6
+		y = 6
+		cost = 8
+		prerequisite = {focus = PRC_focus_13}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 4000
+    producer = ROC
+}
+		}
+	}
+		focus = {
+		id = PRC_focus_18
+		icon = ""
+		x = 6
+		y = 7
+		cost = 8
+		prerequisite = {focus = PRC_focus_17}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = -0.05
+	add_equipment_to_stockpile = {
+    type = 	motorized_equipment
+    amount = 1000
+    producer = ROC
+}
+		}
+	}
+	
+		focus = {
+		id = PRC_focus_19
+		icon = ""
+		x = 6
+		y = 8
+		cost = 8
+		prerequisite = {focus = PRC_focus_18}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = -0.05
+	add_equipment_to_stockpile = {
+    type = early_fighter
+    amount = 120
+    producer = ROC
+}
+		}
+	}
+		focus = {
+		id = PRC_focus_20
+		icon = ""
+		available = {surrender_progress > 0.25}
+		x = 10
+		y = 6
+		cost = 8
+		prerequisite = {focus = PRC_focus_13}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+         add_timed_idea = {idea = ROC_cwar_overclocked_factories days = 90}
+		}
+	}
+	focus = {
+		id = PRC_focus_21
+		icon = ""
+		available = {surrender_progress > 0.5}
+		x = 10
+		y = 7
+		cost = 8
+		prerequisite = {focus = PRC_focus_20}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+         add_ideas = ROC_cwar_hold_line
+		}
+	}
+	focus = {
+		id = PRC_focus_22
+		icon = ""
+		available = {surrender_progress > 0.75}
+		x = 10
+		y = 8
+		cost = 8
+		prerequisite = {focus = PRC_focus_21}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+         PRC = {
+		 add_ideas = ROC_cwar_nationalist_terror
+		 }
+		}
+	}	
 }		
