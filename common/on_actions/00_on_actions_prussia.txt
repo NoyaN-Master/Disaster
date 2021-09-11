@@ -41,4 +41,11 @@ on_actions = {
             }
         }
     }
+    on_war = {
+    effect = { 
+        PRC = {
+             country_event = { id = prc.1}
+        }
+    }
+}
 }

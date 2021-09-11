@@ -4,7 +4,7 @@
 
 add_namespace = prc
 
-country_event = { #MAO!!!!!
+country_event = { #start event
 	id = prc.1
 	title = prc.1.t
 	desc = prc.1.d
@@ -18,6 +18,202 @@ country_event = { #MAO!!!!!
 	option = {
 		name = prc.1.a
         ai_chance = {factor = 100}
+		hidden_effect = {	PRC = { country_event = { id = prc.2 days = 12}}}
+	}
+}
+country_event = { #Leadership?
+	id = prc.2
+	title = prc.2.t
+	desc = prc.2.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = prc.2.a
+        ai_chance = {factor = 50}
+		hidden_effect = {	PRC = { country_event = { id = prc.3}}}
+		hidden_effect = { set_variable = { var_name = prc_mao_var}}
+			add_to_variable = {
+	var = prc_mao_var
+	value = 1
+}
+	}
+	option = {
+		name = prc.2.b
+        ai_chance = {factor = 50}
+		hidden_effect = {	PRC = { country_event = { id = prc.3}}}
+		hidden_effect = { set_variable = { var_name = prc_deng_var}}
+	add_to_variable = {
+	var = prc_deng_var
+	value = 1
+}
 		
+	}
+}
+country_event = { #Leadership pt 2
+	id = prc.3
+	title = prc.3.t
+	desc = prc.3.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = prc.3.a
+        ai_chance = {factor = 50}
+		hidden_effect = {	PRC = { country_event = { id = prc.4}}}
+		add_to_variable = {
+	var = prc_mao_var
+	value = 1
+}
+	}
+	option = {
+		name = prc.3.b
+        ai_chance = {factor = 50}
+		hidden_effect = {	PRC = { country_event = { id = prc.4}}}
+	add_to_variable = {
+	var = prc_deng_var
+	value = 1
+}
+	}
+}
+country_event = { #Leadership pt 3
+	id = prc.4
+	title = prc.4.t
+	desc = prc.4.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = prc.4.a
+        ai_chance = {factor = 50}
+		hidden_effect = {	PRC = { country_event = { id = prc.5}}}
+	add_to_variable = {
+	var = prc_mao_var
+	value = 1
+}
+	}
+	option = {
+		name = prc.4.b
+        ai_chance = {factor = 50}
+		hidden_effect = {	PRC = { country_event = { id = prc.5}}}
+	add_to_variable = {
+	var = prc_deng_var
+	value = 1
+}
+	}
+}
+country_event = { #Leadership pt 4
+	id = prc.5
+	title = prc.5.t
+	desc = prc.5.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = prc.5.a
+        ai_chance = {factor = 50}
+		hidden_effect = {	PRC = { country_event = { id = prc.6}}}
+	add_to_variable = {
+	var = prc_mao_var
+	value = 1
+}
+	}
+	option = {
+		name = prc.5.b
+        ai_chance = {factor = 50}
+		hidden_effect = {	PRC = { country_event = { id = prc.6}}}
+	add_to_variable = {
+	var = prc_deng_var
+	value = 1
+}
+	}
+}
+country_event = { #Leadership pt 5 final
+	id = prc.6
+	title = prc.6.t
+	desc = prc.6.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = prc.6.a
+        ai_chance = {factor = 50}
+		
+	add_to_variable = {
+	var = prc_mao_var
+	value = 1
+}
+hidden_effect = { set_country_flag = prc_mao_deng}
+	}
+	option = {
+		name = prc.6.b
+        ai_chance = {factor = 50}
+	add_to_variable = {
+	var = prc_deng_var
+	value = 1
+}
+hidden_effect = { set_country_flag = prc_mao_deng}
+	}
+}
+country_event = { #Mao wins!!
+	id = prc.7
+	title = prc.7.t
+	desc = prc.7.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+     
+     trigger = {check_variable = { prc_mao_var > prc_deng_var }
+	 	has_country_flag = prc_mao_deng
+	 }
+
+	#is_triggered_only = no
+
+	option = {
+		name = prc.7.a
+        ai_chance = {factor = 100}
+	
+	}
+}
+country_event = { #Deng wins!!
+	id = prc.8
+	title = prc.8.t
+	desc = prc.8.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+    trigger = {check_variable = { prc_mao_var < prc_deng_var}
+	has_country_flag = prc_mao_deng
+	}
+
+	#is_triggered_only = no
+
+	option = {
+		name = prc.8.a
+        ai_chance = {factor = 100}
+	
 	}
 }
