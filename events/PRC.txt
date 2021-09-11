@@ -37,21 +37,12 @@ country_event = { #Leadership?
         ai_chance = {factor = 50}
 		hidden_effect = {	PRC = { country_event = { id = prc.3}}}
 		hidden_effect = { set_variable = { var_name = prc_mao_var}}
-			add_to_variable = {
-	var = prc_mao_var
-	value = 1
-}
 	}
 	option = {
 		name = prc.2.b
         ai_chance = {factor = 50}
 		hidden_effect = {	PRC = { country_event = { id = prc.3}}}
 		hidden_effect = { set_variable = { var_name = prc_deng_var}}
-	add_to_variable = {
-	var = prc_deng_var
-	value = 1
-}
-		
 	}
 }
 country_event = { #Leadership pt 2
@@ -71,7 +62,7 @@ country_event = { #Leadership pt 2
 		hidden_effect = {	PRC = { country_event = { id = prc.4}}}
 		add_to_variable = {
 	var = prc_mao_var
-	value = 1
+	value = 2
 }
 	}
 	option = {
@@ -80,7 +71,7 @@ country_event = { #Leadership pt 2
 		hidden_effect = {	PRC = { country_event = { id = prc.4}}}
 	add_to_variable = {
 	var = prc_deng_var
-	value = 1
+	value = 2
 }
 	}
 }
@@ -158,21 +149,34 @@ country_event = { #Leadership pt 5 final
 	option = {
 		name = prc.6.a
         ai_chance = {factor = 50}
-		
+  set_country_flag = prc_mao_deng
 	add_to_variable = {
 	var = prc_mao_var
 	value = 1
 }
-hidden_effect = { set_country_flag = prc_mao_deng}
+if = {
+    limit = {
+        has_country_flag = prc_mao_deng
+		check_variable = {prc_mao_var > prc_deng_var}
+    }
+    country_event = prc.7
+}
 	}
 	option = {
 		name = prc.6.b
         ai_chance = {factor = 50}
+	 set_country_flag = prc_mao_deng
 	add_to_variable = {
 	var = prc_deng_var
 	value = 1
 }
-hidden_effect = { set_country_flag = prc_mao_deng}
+if = {
+    limit = {
+        has_country_flag = prc_mao_deng
+		check_variable = {prc_mao_var < prc_deng_var}
+    }
+    country_event = prc.8
+}
 	}
 }
 country_event = { #Mao wins!!
@@ -183,12 +187,8 @@ country_event = { #Mao wins!!
 	picture = GFX_report_event_aut_dollfuss_speech
 
 	fire_only_once = yes
-     
-     trigger = {check_variable = { prc_mao_var > prc_deng_var }
-	 	has_country_flag = prc_mao_deng
-	 }
 
-	#is_triggered_only = no
+	is_triggered_only = yes
 
 	option = {
 		name = prc.7.a
@@ -205,11 +205,7 @@ country_event = { #Deng wins!!
 
 	fire_only_once = yes
 
-    trigger = {check_variable = { prc_mao_var < prc_deng_var}
-	has_country_flag = prc_mao_deng
-	}
-
-	#is_triggered_only = no
+	is_triggered_only = yes
 
 	option = {
 		name = prc.8.a
