@@ -406,9 +406,9 @@ add_core_of = PRC
 		name = roc.6.a
         ai_chance = {factor = 100}
 		create_country_leader = {
-	name = "Chiang Kai Shek"
+	name = "Emergency Coaliton Council"
 	desc = ""
-	picture = "ROC_Chiang.tga"
+	picture = ""
 	expire = "2020.1.1"
 	ideology = authoritarian_democrat_subideology
 	traits = {
@@ -418,11 +418,11 @@ add_core_of = PRC
 set_popularities = {
 	conservative = 0
 	liberal = 0
-	social_democrat = 45
+	social_democrat = 55
 	libertarian_socialist = 0
 	authoritarian_socialist = 10
 	unisocialist = 0
-	authoritarian_democrat = 45
+	authoritarian_democrat = 35
 	autocratic = 0
 	ultranationalist = 0
 	revolutionary_nationalist = 0
@@ -439,7 +439,7 @@ set_politics = {
 		add_stability = -0.5
 	}
 }
-country_event = { #emergency coaliton meeting chiang-kai-shek
+country_event = { #emergency coaliton meeting 
 	id = roc.7
 	title = roc.7.t
 	desc = roc.7.d
@@ -489,6 +489,7 @@ country_event = { #National speach
         ai_chance = {factor = 100}
 		add_stability = 0.1
 		remove_ideas = ROC_pre_right
+	 hidden_effect = {ROC = { country_event = { id = roc.33 days = 5}}}
 	}
 }
 country_event = { #Disaster pt1
@@ -1005,6 +1006,56 @@ country_event = { Dai Li disappears
 hidden_effect = {ROC = { country_event = { id = roc.18 days = 7}}}
 	}
 }
+country_event = { Chiang in power
+	id = roc.33
+	title = roc.33.t
+	desc = roc.33.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.33.a
+        ai_chance = {factor = 100}
+hidden_effect = {ROC = { country_event = { id = roc.12 days = 7}}}
+
+	name = "Chiang Kai Shek"
+	desc = ""
+	picture = "ROC_Chiang.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_democrat_subideology
+	traits = {
+		
+	}
+
+set_popularities = {
+	conservative = 0
+	liberal = 0
+	social_democrat = 45
+	libertarian_socialist = 0
+	authoritarian_socialist = 10
+	unisocialist = 0
+	authoritarian_democrat = 45
+	autocratic = 0
+	ultranationalist = 0
+	revolutionary_nationalist = 0
+	esoteric_traditionalist = 0
+	revolutionary_anarchist = 0
+}
+
+set_politics = {
+	ruling_party =  authoritarian_democrat
+        elections_allowed = no
+        last_election = "1936.1.28"
+        election_frequency = 48
+}
+	}	
+}
+	
+
 country_event = { #Test Event
 	id = roc.100
 	title = roc.100.t
