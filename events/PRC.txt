@@ -193,7 +193,7 @@ country_event = { #Mao wins!!
 	option = {
 		name = prc.7.a
         ai_chance = {factor = 100}
-	
+	hidden_effect = {set_country_flag = mao_vic}
 	}
 }
 country_event = { #Deng wins!!
@@ -210,6 +210,6 @@ country_event = { #Deng wins!!
 	option = {
 		name = prc.8.a
         ai_chance = {factor = 100}
-	
+	hidden_effect = {set_country_flag = deng_vic}
 	}
 }
