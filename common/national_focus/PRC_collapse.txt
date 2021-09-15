@@ -41,7 +41,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		add_stability = 0.1
+	    add_war_support = 0.1
 		}
 	}
 
@@ -58,7 +59,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		add_stability = 0.1
+	    add_war_support = 0.1
 		}
 	}
 
@@ -165,7 +167,7 @@ focus = {
 		x = 8
 		y = 10
 		cost = 1
-		prerequisite = {focus = PRC_focus_8}
+		prerequisite = {focus = PRC_focus_8 focus = PRC_focus_16}
 		available = {}
 		available_if_capitulated = yes
 		ai_will_do = {
