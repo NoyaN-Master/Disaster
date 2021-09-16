@@ -114,3 +114,9 @@ sound = {
 	volume = 1
 	always_load = yes
 }
+sound = {
+	name = "rocVic"
+	file = "menu/rocVic.wav"
+	volume = 1
+	always_load = yes
+}

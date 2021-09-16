@@ -24,6 +24,13 @@ defined_text = { #SUPER EVENT TITLES
 
     text = { 
         trigger = {
+            has_global_flag = ROC_Vic_SE
+        }
+        localization_key = "GFX_SPEVNT_ROC_vic"
+    }
+
+    text = { 
+        trigger = {
             has_global_flag = TUR_Unification_Ataturk
         }
         localization_key = "GFX_SPEVNT_Unification_Ataturk"
@@ -147,6 +154,13 @@ defined_text = { #SUPER EVENT QUOTES
             has_global_flag = ROC_Civil_War
         }
         localization_key = "GFX_SPEVNT_China_Civil_TEXT"
+    }
+    
+     text = { 
+        trigger = {
+            has_global_flag = ROC_Vic_SE
+        }
+        localization_key = "GFX_SPEVNT_ROC_vic_Text"
     }
 
     text = { 
@@ -281,6 +295,12 @@ defined_text = { #SUPER EVENT REMARKS
             has_global_flag = ROC_Civil_War
         }
         localization_key = "GFX_SPEVNT_China_Civil_REMARK"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = ROC_Vic_SE
+        }
+        localization_key = "GFX_SPEVNT_ROC_vic_Text_REMARK"
     }
     text = { 
         trigger = {

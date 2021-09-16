@@ -134,7 +134,11 @@ spriteTypes = {
 		texturefile = "gfx/super_events/SPEVNT_China_Civil.dds"
 		legacy_lazy_load = no
 	}
-
+	spriteType = {
+		name = "GFX_SPEVNT_ROC_vic"
+		texturefile = "gfx/super_events/SPVENT_ROC_vic.dds"
+		legacy_lazy_load = no
+	}
 
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window_thin_border"
