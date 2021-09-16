@@ -161,6 +161,13 @@ if = {
     }
     country_event = prc.7
 }
+if = {
+    limit = {
+        has_country_flag = prc_mao_deng
+		check_variable = {prc_deng_var > prc_mao_var}
+    }
+    country_event = prc.8
+}
 	}
 	option = {
 		name = prc.6.b
@@ -176,6 +183,13 @@ if = {
 		check_variable = {prc_mao_var < prc_deng_var}
     }
     country_event = prc.8
+}
+if = {
+    limit = {
+        has_country_flag = prc_mao_deng
+		check_variable = {prc_mao_var > prc_deng_var}
+    }
+    country_event = prc.7
 }
 	}
 }
