@@ -132,6 +132,26 @@ scripted_gui = {
 				has_global_flag  = ROC_Vic_SE
 			}
 		}
+		triggers = {
+			Super_Event_Image_PRC_Cwar_visible = {
+				has_global_flag  = PRC_Vic_SE
+			}
+		}
+		triggers = {
+			Super_Event_Image_QID_Cwar_visible = {
+				has_global_flag  = QID_Vic_SE
+			}
+		}
+		triggers = {
+			Super_Event_Image_CRF_Cwar_visible = {
+				has_global_flag  = CRF_Vic_SE
+			}
+		}
+		triggers = {
+			Super_Event_Image_CRF_Cwar_visible = {
+				has_global_flag  = ETR_Vic_SE
+			}
+		}
 
 
 		properties = {
@@ -273,6 +293,30 @@ scripted_gui = {
 						has_global_flag =  ROC_Vic_SE
 					}
 					clr_global_flag  =  ROC_Vic_SE
+				}
+						if = {
+					limit = {	
+						has_global_flag =  PRC_Vic_SE
+					}
+					clr_global_flag  =  PRC_Vic_SE
+				}
+						if = {
+					limit = {	
+						has_global_flag =  QID_Vic_SE
+					}
+					clr_global_flag  =  QID_Vic_SE
+				}
+						if = {
+					limit = {	
+						has_global_flag =  CRF_Vic_SE
+					}
+					clr_global_flag  =  CRF_Vic_SE
+				}
+						if = {
+					limit = {	
+						has_global_flag =  ETR_Vic_SE
+					}
+					clr_global_flag  =  ETR_Vic_SE
 				}
 			}
 		}

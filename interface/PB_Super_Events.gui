@@ -137,6 +137,26 @@ guiTypes = {
 			spriteType = "GFX_SPEVNT_ROC_vic"
 			position = { x = 35 y = 0 }
 		}
+				iconType = {
+			name ="Super_Event_Image_PRC_vic"
+			spriteType = "GFX_SPEVNT_PRC_vic"
+			position = { x = 35 y = 0 }
+		}
+			iconType = {
+			name ="Super_Event_Image_QID_vic"
+			spriteType = "GFX_SPEVNT_QID_vic"
+			position = { x = 35 y = 0 }
+		}
+			iconType = {
+			name ="Super_Event_Image_CRF_vic"
+			spriteType = "GFX_SPEVNT_CRF_vic"
+			position = { x = 35 y = 0 }
+		}
+			iconType = {
+			name ="Super_Event_Image_ETR_vic"
+			spriteType = "GFX_SPEVNT_ETR_vic"
+			position = { x = 35 y = 0 }
+		}
 
 		instantTextBoxType = {
 			name = "Pax_Super_Event_Title_textbox"
