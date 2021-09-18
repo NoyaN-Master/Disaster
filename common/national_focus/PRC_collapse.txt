@@ -93,7 +93,7 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		PRC = { country_event = { id = prc.2}}
+		PRC = { country_event = { id = prc.9}}
 		}
 	}
 	focus = {
@@ -166,7 +166,7 @@ focus = {
 		id = PRC_focus_10
 		icon = ""
 		x = 8
-		y = 10
+		y = 7
 		cost = 1
 		prerequisite = {focus = PRC_focus_8 focus = PRC_focus_16}
 		available = {}
@@ -175,7 +175,7 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		
+	PRC = { country_event = { id = prc.11}}
 		}
 	}
 			focus = {
@@ -191,7 +191,7 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		PRC = { country_event = { id = prc.2}}
+		PRC = { country_event = { id = prc.10}}
 		}
 	}
 		focus = {

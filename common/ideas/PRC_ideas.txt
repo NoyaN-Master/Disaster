@@ -47,5 +47,14 @@ PRC_cwar_monkey_warfare = {
     army_core_defence_factor = 0.35
 			}
         }
+	prc_cwar_failed_offensive= {
+	picture = ROC_unity
+	modifier = {
+    army_attack_factor = -0.1
+	army_defence_factor = -0.1
+	supply_consumption_factor = 0.5
+			}
+        }
+		
 }
 }
