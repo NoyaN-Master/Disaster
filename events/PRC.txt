@@ -34,16 +34,20 @@ country_event = { #Leadership?
 	is_triggered_only = yes
 
 	option = {
+		custom_effect_tooltip = PRC_TT_MAO
 		name = prc.2.a
         ai_chance = {factor = 50}
 		hidden_effect = {	PRC = { country_event = { id = prc.3}}}
 		hidden_effect = { set_variable = { var_name = prc_mao_var}}
+		hidden_effect = { set_variable = { var_name = prc_deng_var}}
 	}
 	option = {
+		custom_effect_tooltip = PRC_TT_DENG
 		name = prc.2.b
         ai_chance = {factor = 50}
 		hidden_effect = {	PRC = { country_event = { id = prc.3}}}
 		hidden_effect = { set_variable = { var_name = prc_deng_var}}
+		hidden_effect = { set_variable = { var_name = prc_mao_var}}
 	}
 }
 country_event = { #Leadership pt 2
@@ -60,6 +64,7 @@ country_event = { #Leadership pt 2
 	option = {
 		name = prc.3.a
         ai_chance = {factor = 50}
+			custom_effect_tooltip = PRC_TT_MAO
 		hidden_effect = {	PRC = { country_event = { id = prc.4}}}
 		add_to_variable = {
 	var = prc_mao_var
@@ -69,6 +74,7 @@ country_event = { #Leadership pt 2
 	option = {
 		name = prc.3.b
         ai_chance = {factor = 50}
+			custom_effect_tooltip = PRC_TT_DENG
 		hidden_effect = {	PRC = { country_event = { id = prc.4}}}
 	add_to_variable = {
 	var = prc_deng_var
@@ -91,6 +97,7 @@ country_event = { #Leadership pt 3
 		name = prc.4.a
         ai_chance = {factor = 50}
 		hidden_effect = {	PRC = { country_event = { id = prc.5}}}
+				custom_effect_tooltip = PRC_TT_MAO
 	add_to_variable = {
 	var = prc_mao_var
 	value = 1
@@ -100,6 +107,7 @@ country_event = { #Leadership pt 3
 		name = prc.4.b
         ai_chance = {factor = 50}
 		hidden_effect = {	PRC = { country_event = { id = prc.5}}}
+		custom_effect_tooltip = PRC_TT_DENG
 	add_to_variable = {
 	var = prc_deng_var
 	value = 1
@@ -121,6 +129,7 @@ country_event = { #Leadership pt 4
 		name = prc.5.a
         ai_chance = {factor = 50}
 		hidden_effect = {	PRC = { country_event = { id = prc.6}}}
+			custom_effect_tooltip = PRC_TT_MAO
 	add_to_variable = {
 	var = prc_mao_var
 	value = 1
@@ -129,6 +138,7 @@ country_event = { #Leadership pt 4
 	option = {
 		name = prc.5.b
         ai_chance = {factor = 50}
+				custom_effect_tooltip = PRC_TT_DENG
 		hidden_effect = {	PRC = { country_event = { id = prc.6}}}
 	add_to_variable = {
 	var = prc_deng_var
@@ -151,6 +161,7 @@ country_event = { #Leadership pt 5 final
 		name = prc.6.a
         ai_chance = {factor = 50}
   set_country_flag = prc_mao_deng
+  	custom_effect_tooltip = PRC_TT_MAO
 	add_to_variable = {
 	var = prc_mao_var
 	value = 1
@@ -173,6 +184,7 @@ if = {
 	option = {
 		name = prc.6.b
         ai_chance = {factor = 50}
+			custom_effect_tooltip = PRC_TT_DENG
 	 set_country_flag = prc_mao_deng
 	add_to_variable = {
 	var = prc_deng_var
@@ -280,7 +292,7 @@ country_event = { #Contact Puyi
     1 = {
 		PRC = { country_event = { id = prc.12 days = 7}}
     }
-    1 = {
+    4 = {
 		PRC = { country_event = { id = prc.13 days = 7}}
      }
     }
@@ -306,7 +318,7 @@ country_event = { #Qing worked
 		 mark_focus_tree_layout_dirty = yes
 	}
 }
-country_event = { #Qing worked
+country_event = { #Qing failed
 	id = prc.13
 	title = prc.13.t
 	desc = prc.13.d
