@@ -277,19 +277,18 @@ country_event = { #Contact Puyi
 
 	option = {
 		name = prc.11.a
-        ai_chance = {factor = 100}
-	hidden_effect = { random_list = {
-    1 = {
-		PRC = { country_event = { id = prc.12 days = 7}}
-    }
-    4 = {
-		PRC = { country_event = { id = prc.13 days = 7}}
-     }
-    }
-   }	
+        ai_chance = {factor = 50}	
+		custom_effect_tooltip = PRC_TT_QING_PROP
+		set_country_flag = PRC_qing_prop_flag
+			add_stability = -0.15
+  }
+  	option = {
+		name = prc.11.b
+        ai_chance = {factor = 50}	
+		add_stability = 0.1
   }
  }
-country_event = { #Qing worked
+country_event = { #The Strangest Proposal in History
 	id = prc.12
 	title = prc.12.t
 	desc = prc.12.d
@@ -302,13 +301,11 @@ country_event = { #Qing worked
 
 	option = {
 		name = prc.12.a
-        ai_chance = {factor = 100}
-	     add_stability = 0.05
-		 set_country_flag = prc_cwar_qing_tree
-		 	PRC = { country_event = { id = prc.14 days = 2}}
-	}
-}
-country_event = { #Qing failed
+        ai_chance = {factor = 100}	
+		   add_political_power = -75
+  }
+ }
+ country_event = { #The Fox and the Swan
 	id = prc.13
 	title = prc.13.t
 	desc = prc.13.d
@@ -321,18 +318,17 @@ country_event = { #Qing failed
 
 	option = {
 		name = prc.13.a
-        ai_chance = {factor = 100}
-	       add_stability = -0.05
-	}
-}
-country_event = { #Debug focus tree refresh
+        ai_chance = {factor = 100}	
+		 add_political_power = -125
+
+  }
+ }
+ country_event = { #An Unholy Agreement 
 	id = prc.14
 	title = prc.14.t
 	desc = prc.14.d
 
 	picture = GFX_report_event_aut_dollfuss_speech
-
-    hidden = yes
 
 	fire_only_once = yes
 
@@ -340,9 +336,9 @@ country_event = { #Debug focus tree refresh
 
 	option = {
 		name = prc.14.a
-        ai_chance = {factor = 100}
-		mark_focus_tree_layout_dirty = yes
-	}
-}
+        ai_chance = {factor = 100}	
+        add_ideas = prc_cwar_unholy_agreement
+  }
+ }
 
 

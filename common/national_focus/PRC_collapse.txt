@@ -282,13 +282,13 @@ focus = {
 		y = 8
 		cost = 1
 		prerequisite = {focus = PRC_focus_10}
-		available = {}
+		available = {has_country_flag = PRC_qing_prop_flag}
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-		
+			PRC = { country_event = { id = prc.12}}
 		}
 	}
 			focus = {
@@ -304,7 +304,7 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		PRC = { country_event = { id = prc.13}}
 		}
 	}
 			focus = {
@@ -321,7 +321,7 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		PRC = { country_event = { id = prc.14}}
 		}
 	}
 }		

@@ -55,6 +55,14 @@ PRC_cwar_monkey_warfare = {
 	supply_consumption_factor = 0.5
 			}
         }
+	prc_cwar_unholy_agreement = {
+	picture = ROC_unity
+	modifier = {
+    political_power_gain = -1
+	stability_weekly = -0.03
+    autocratic_drift = 0.02
+			}
+        }
 		
 }
 }
