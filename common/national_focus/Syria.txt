@@ -1,0 +1,324 @@
+focus_tree = {
+	id = syria
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SRY
+		}
+		}
+		continuous_focus_position = { x = 100 y = 5000 }
+	default = no	
+	
+
+
+		focus = {
+		id = SRY_focus_1
+		icon = ""
+		x = 8
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		SRY = { country_event = { id = sry.1}}
+		}
+	}
+		focus = {
+		id = SRY_focus_2
+		icon = ""
+		x = 8
+		y = 2
+		cost = 5
+		prerequisite = { focus = SRY_focus_1 }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	
+ }	
+ 		focus = {
+		id = SRY_focus_3
+		icon = ""
+		x = 8
+		y = 3
+		cost = 5
+		prerequisite = { focus = SRY_focus_2}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	
+ }	
+ 	focus = {
+		id = SRY_focus_4
+		icon = ""
+		x = 8
+		y = 4
+		cost = 5
+		prerequisite = { focus = SRY_focus_3}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	
+ }	
+ focus = {
+		id = SRY_focus_5
+		icon = ""
+		x = 8
+		y = 5
+		cost = 5
+		prerequisite = { focus = SRY_focus_4}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	
+ }	
+ focus = {
+		id = SRY_focus_6
+		icon = ""
+		x = 6
+		y = 6
+		cost = 5
+		prerequisite = { focus = SRY_focus_5}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+				mutually_exclusive = {
+		focus = SRY_focus_7
+	}
+		completion_reward = {
+
+		}
+	
+ }	
+  focus = {
+		id = SRY_focus_7
+		icon = ""
+		x = 10
+		y = 6
+		cost = 5
+		prerequisite = { focus = SRY_focus_5}
+		mutually_exclusive = {
+		focus = SRY_focus_6
+	}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	
+ }	
+  focus = {
+		id = SRY_focus_8
+		icon = ""
+		x = 4
+		y = 7
+		cost = 5
+		prerequisite = { focus = SRY_focus_6}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	
+ }
+ focus = {
+		id = SRY_focus_9
+		icon = ""
+		x = 12
+		y = 7
+		cost = 5
+		prerequisite = { focus = SRY_focus_7}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	
+ }
+  focus = {
+		id = SRY_focus_10
+		icon = ""
+		x = 8
+		y = 7
+		cost = 5
+		prerequisite = { focus = SRY_focus_7 focus = SRY_focus_6}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	
+ }
+   focus = {
+		id = SRY_focus_11
+		icon = ""
+		x = 4
+		y = 8
+		cost = 5
+		prerequisite = { focus = SRY_focus_8}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	
+ }
+   focus = {
+		id = SRY_focus_12
+		icon = ""
+		x = 4
+		y = 9
+		cost = 5
+		prerequisite = { focus = SRY_focus_11}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	
+ }
+   focus = {
+		id = SRY_focus_13
+		icon = ""
+		x = 4
+		y = 10
+		cost = 5
+		prerequisite = { focus = SRY_focus_12}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	
+ }
+  focus = {
+		id = SRY_focus_14
+		icon = ""
+		x = 8
+		y = 8
+		cost = 5
+		prerequisite = { focus = SRY_focus_10}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	
+ 
+  }
+  focus = {
+		id = SRY_focus_15
+		icon = ""
+		x = 8
+		y = 9
+		cost = 5
+		prerequisite = { focus = SRY_focus_14}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	
+ }
+   focus = {
+		id = SRY_focus_16
+		icon = ""
+		x = 8
+		y = 10
+		cost = 5
+		prerequisite = { focus = SRY_focus_15}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	
+ }
+ focus = {
+		id = SRY_focus_17
+		icon = ""
+		x = 12
+		y = 8
+		cost = 5
+		prerequisite = { focus = SRY_focus_9}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	
+ }
+ focus = {
+		id = SRY_focus_18
+		icon = ""
+		x = 12
+		y = 9
+		cost = 5
+		prerequisite = { focus = SRY_focus_17}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	
+ }
+  focus = {
+		id = SRY_focus_19
+		icon = ""
+		x = 12
+		y = 10
+		cost = 5
+		prerequisite = { focus = SRY_focus_18}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	
+ }
+}	
