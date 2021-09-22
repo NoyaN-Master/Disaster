@@ -278,10 +278,43 @@ focus = {
 			focus = {
 		id = PRC_focus_17
 		icon = ""
-		x = 8
+		x = 7
 		y = 8
 		cost = 1
 		prerequisite = {focus = PRC_focus_10}
+		available = {}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+			focus = {
+		id = PRC_focus_18
+		icon = ""
+		x = 9
+		y = 8
+		cost = 1
+		prerequisite = {focus = PRC_focus_10}
+		available = {has_country_flag = PRC_focus_17_completed}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+			focus = {
+		id = PRC_focus_19
+		icon = ""
+		x = 8
+		y = 9
+		cost = 1
+		prerequisite = {focus = PRC_focus_17}
+		prerequisite = {focus = PRC_focus_18}
 		available = {}
 		available_if_capitulated = yes
 		ai_will_do = {

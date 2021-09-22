@@ -201,4 +201,12 @@ spriteTypes = {
 		name = "GFX_goal_ROC_Disaster_troll"
 		texturefile = "gfx/interface/goals/ROC_Disaster_troll.png"			
 	}
+			SpriteType = {
+		name = "GFX_goal_PRC_MaoWinsSI"
+		texturefile = "gfx/interface/goals/PRC_MaoWinsSI.png"			
+	}
+		SpriteType = {
+		name = "GFX_goal_PRC_mao_deng"
+		texturefile = "gfx/interface/goals/PRC_mao_deng.png"			
+	}
 }
