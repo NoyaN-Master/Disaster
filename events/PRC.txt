@@ -338,6 +338,86 @@ country_event = { #The Strangest Proposal in History
 		name = prc.14.a
         ai_chance = {factor = 100}	
         add_ideas = prc_cwar_unholy_agreement
+		annex_country = {
+    target = QID
+    transfer_troops = no
+}
+set_cosmetic_tag = prcqingtag
+add_popularity = {
+    ideology = autocratic
+    popularity = 0.35
+}
+  }
+ }
+  country_event = { #The People's Emperor
+	id = prc.15
+	title = prc.15.t
+	desc = prc.15.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = prc.15.a
+        ai_chance = {factor = 100}	
+		add_stability = 0.15
+
+  }
+ }
+   country_event = { #Declaration of the Rights of the Banners
+	id = prc.16
+	title = prc.16.t
+	desc = prc.16.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = prc.16.a
+        ai_chance = {factor = 100}	
+		add_ideas = prc_cwar_banners
+		###Make it give units or smth
+  }
+ }
+    country_event = { #Claiming the Mandate
+	id = prc.17
+	title = prc.17.t
+	desc = prc.17.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = prc.17.a
+        ai_chance = {factor = 100}	
+        add_stability = -0.1
+  }
+ }
+     country_event = { #Of Heroes and Tigers
+	id = prc.18
+	title = prc.18.t
+	desc = prc.18.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = prc.18.a
+        ai_chance = {factor = 100}	
+        add_ideas = prc_cwar_mandate
+		remove_ideas = prc_cwar_unholy_agreement
   }
  }
 

@@ -324,4 +324,70 @@ focus = {
 		PRC = { country_event = { id = prc.14}}
 		}
 	}
+		focus = {
+		id = PRC_focus_20
+		icon = ""
+		x = 6
+		y = 10
+		cost = 1
+		prerequisite = {focus = PRC_focus_19}
+		available = {}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		PRC = { country_event = { id = prc.15}}
+		}
+	}
+		focus = {
+		id = PRC_focus_21
+		icon = ""
+		x = 8
+		y = 10
+		cost = 1
+		prerequisite = {focus = PRC_focus_19}
+		available = {}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		PRC = { country_event = { id = prc.16}}
+		}
+	}
+		focus = {
+		id = PRC_focus_22
+		icon = ""
+		x = 10
+		y = 10
+		cost = 1
+		prerequisite = {focus = PRC_focus_19}
+		available = {}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		PRC = { country_event = { id = prc.17}}
+		}
+	}
+		focus = {
+		id = PRC_focus_23
+		icon = ""
+		x = 8
+		y = 11
+		cost = 1
+		prerequisite = {focus = PRC_focus_20}
+			prerequisite = {focus = PRC_focus_21}
+				prerequisite = {focus = PRC_focus_22}
+		available = {}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		PRC = { country_event = { id = prc.18}}
+		}
+	}
 }		
