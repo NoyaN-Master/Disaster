@@ -583,13 +583,13 @@ country_event = { #Commies square
 		name = roc.14.a
         ai_chance = {factor = 80}
 		add_stability = -0.05
-			 hidden_effect = {ROC = { country_event = { id = roc.15 days = 50}}}
+			 hidden_effect = {ROC = { country_event = { id = roc.15 days = 35}}}
 	}
 		option = {
 		name = roc.14.b
         ai_chance = {factor = 20}
 		add_stability = -0.15
-			 hidden_effect = {ROC = { country_event = { id = roc.15 days = 35}}}
+			 hidden_effect = {ROC = { country_event = { id = roc.15 days = 15}}}
 	}
 }
 country_event = { #Commies leave
@@ -641,14 +641,17 @@ country_event = { #Qing and beijing
 
 	is_triggered_only = yes
 
-	option = {
-		name = roc.17.a
-        ai_chance = {factor = 100}
-		add_stability = -0.1
-		hidden_effect = {ROC = { country_event = { id = roc.4 days = 7}}}
-		hidden_effect = {QID = {transfer_state = 608}}
-		hidden_effect = {ROC = { country_event = { id = roc.32 days = 2}}}
-	}
+	    option = {
+        name = roc.17.a
+        ai_chance = { factor = 100 }
+        hidden_effect = {
+            ROC = {
+                country_event = { id = roc.4 days = 7}
+                country_event = { id = roc.32 days = 2}
+            }
+            QID = {transfer_state = 608}
+        }
+    }
 }
 country_event = { #dai li murders ppl
 	id = roc.18
@@ -666,6 +669,7 @@ country_event = { #dai li murders ppl
         ai_chance = {factor = 100}
 		add_stability = -0.1
 		hidden_effect = {ROC = { country_event = { id = roc.3 days = 2}} set_country_flag = DISASTER}
+		hidden_effect = {ROC = { country_event = { id = roc.2 days = 2}}}
 	}
 }
 country_event = { #dai li pardoned
@@ -990,7 +994,7 @@ country_event = { #Xue Yue's plan pt 4
 }
 	}
 }
-country_event = { Dai Li disappears
+country_event = { #Dai Li disappears
 	id = roc.32
 	title = roc.32.t
 	desc = roc.32.d
@@ -1004,10 +1008,10 @@ country_event = { Dai Li disappears
 	option = {
 		name = roc.32.a
         ai_chance = {factor = 100}
-hidden_effect = {ROC = { country_event = { id = roc.18 days = 7}}}
+ROC = { country_event = { id = roc.18}}
 	}
 }
-country_event = { Chiang in power
+country_event = { #Chiang in power
 	id = roc.33
 	title = roc.33.t
 	desc = roc.33.d
@@ -1019,10 +1023,10 @@ country_event = { Chiang in power
 	is_triggered_only = yes
 
 	option = {
-		name = roc.33.a
+	name = roc.33.a
         ai_chance = {factor = 100}
 hidden_effect = {ROC = { country_event = { id = roc.12 days = 7}}}
-
+create_country_leader = {
 	name = "Chiang Kai Shek"
 	desc = ""
 	picture = "ROC_Chiang.tga"
@@ -1031,6 +1035,7 @@ hidden_effect = {ROC = { country_event = { id = roc.12 days = 7}}}
 	traits = {
 		
 	}
+}
 
 set_popularities = {
 	conservative = 0

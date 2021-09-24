@@ -1,0 +1,31 @@
+focus_tree = {
+	id = CRF_cwar
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CRF
+		}
+		}
+		continuous_focus_position = { x = 100 y = 5000 }
+	default = no	
+	
+
+
+
+		focus = {
+		id = CRF_focus_1
+		icon = ""
+		x = 8
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		CRF = { country_event = { id = crf.1}}
+		custom_effect_tooltip = CRF_TT_DEMON_KING_INTRO
+		}
+	}
+}		
