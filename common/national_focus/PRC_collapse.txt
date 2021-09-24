@@ -207,7 +207,7 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		add_ideas = prc_cwar_hard
 		}
 	}
 		focus = {
@@ -223,7 +223,7 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		add_ideas = prc_cwar_fast
 		}
 	}
 		focus = {
@@ -239,7 +239,7 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		add_ideas = prc_cwar_sacrafices
 		}
 	}
 		focus = {
@@ -255,7 +255,9 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		add_offsite_building = { type = arms_factory level = 3 }
+		add_offsite_building = { type = industrial_complex level = 4 }
+		add_ideas = prc_cwar_industry
 		}
 	}
 		focus = {
@@ -272,7 +274,11 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		add_tech_bonus = {
+    bonus = 2.0
+    uses = 3
+    category = cat_mobile_warfare
+}
 		}
 	}
 			focus = {

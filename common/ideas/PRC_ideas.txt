@@ -81,5 +81,38 @@ PRC_cwar_monkey_warfare = {
 	recruitable_population = 0.05
 			}
         }
+	prc_cwar_hard = {
+	picture = ROC_unity
+	modifier = {
+   breakthrough_factor = 0.05
+   army_attack_factor = 0.05
+   supply_consumption_factor = 0.05
+			}
+        }
+	prc_cwar_fast = {
+	picture = ROC_unity
+	modifier = {
+   army_speed_factor = 0.05
+   supply_consumption_factor = 0.05	
+   planning_speed = 0.25
+			}
+        }
+		prc_cwar_industry = {
+	picture = ROC_unity
+	modifier = {
+   	production_factory_efficiency_gain_factor = 0.05
+ production_factory_max_efficiency_factor = 0.15
+	industrial_capacity_factory = 0.1
+			}
+        }
+
+	prc_cwar_sacrafices = {
+	picture = ROC_unity
+	modifier = {
+   consumer_goods_factor = -0.15
+stability_weekly = -0.02
+war_support_weekly = -0.02
+			}
+        }
 }
 }
