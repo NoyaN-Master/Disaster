@@ -207,10 +207,14 @@ spriteTypes = {
 	}
 		SpriteType = {
 		name = "GFX_goal_PRC_mao_deng"
-		texturefile = "gfx/interface/goals/PRC_mao_deng.png"			
+		texturefile = "gfx/interface/goals/PRC_mao_deng.png"
 	}
 	SpriteType = {
 		name = "GFX_goal_PRC_puyi_letter"
 		texturefile = "gfx/interface/goals/PRC_puyi_letter.png"			
+	}
+		SpriteType = {
+		name = "GFX_goal_PRC_Strangest_proposal_in_history"
+		texturefile = "gfx/interface/goals/PRC_Strangest_proposal_in_history.png"			
 	}
 }
