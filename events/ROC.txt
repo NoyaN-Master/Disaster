@@ -168,6 +168,7 @@ add_core_of = CRF
   615 = {
 add_core_of = CRF
 }
+	load_oob = "CRF_1936"
     }
    }		
  }
@@ -210,10 +211,11 @@ add_core_of = CRF
   615 = {
 add_core_of = CRF
 }
-    }
+	load_oob = "CRF_1936"
+   			 }
+			}
+    	 }
 		}
-     }
-	}
 	
 	country_event = { #Qing Dynasty Li Seperation
 	id = roc.4
@@ -914,9 +916,20 @@ country_event = { #14hr work days crying pt 2
         ai_chance = {factor = 33}
 		add_stability = -0.55
 		every_owned_state = {
-      
-    }
+      damage_building = {
+    type = infrastructure
+    damage = 2
 	}
+	damage_building = {
+    type = arms_factory
+    damage = 1
+}
+	damage_building = {
+    type = industrial_complex
+    damage = 1
+}
+  }
+ }
 }
 country_event = { #Xue Yue's plan pt 2
 	id = roc.29

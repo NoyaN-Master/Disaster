@@ -54,7 +54,7 @@ country_event = { #choiceCRF_3
 	}
 	
 	option = {
-		name = crf.3.B
+		name = crf.3.b
         ai_chance = {factor = 50}
 		set_country_flag = crf_cwar_doctor_flag
 		add_popularity = {

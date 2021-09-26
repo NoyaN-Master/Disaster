@@ -99,4 +99,81 @@ focus_tree = {
 	
 		}
 	}
-}		
+			focus = {
+		id = CRF_focus_6
+		icon = ""
+		x = 8
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+			prerequisite = {
+		focus = CRF_focus_4 focus = CRF_focus_5
+	}
+	
+	available = {}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+    add_war_support = 0.1
+		}
+	}
+	focus = {
+	id = CRF_focus_7
+	icon = ""
+	x = 4
+	y = 6
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = {focus = CRF_focus_6}
+	
+	available = {}
+	ai_will_do = {factor = 1}
+
+	completion_reward = {
+	custom_effect_tooltip = CRF_CWAR_TT_SCOUTS
+	division_template = {
+	name = "Demon Scouts"				# Represents: two-division infantry corps (generally poorly-equipped, but decent experience),
+	division_names_group = CRF_INF_01
+									#	PRC divisions were well-trained in guerilla mountain tactics.
+regiments = {
+		infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 4 }
+	}
+	 support = {
+	   artillery = { x = 0 y = 0 }
+ 	 }
+	priority = 1
+}	
+
+hidden_effect = { 615 = {create_unit = {
+	division = "name = \"Demon Scouts\" division_template = \"Demon Scouts\" start_experience_factor = 0.7 start_equipment_factor = 1.0"
+    owner = CRF
+					}
+ 				}
+			}
+hidden_effect = { 615 = {create_unit = {
+	division = "name = \"Demon Scouts\" division_template = \"Demon Scouts\" start_experience_factor = 0.7 start_equipment_factor = 1.0"
+    owner = CRF
+					}
+ 				}
+			}
+hidden_effect = { 615 = {create_unit = {
+	division = "name = \"Demon Scouts\" division_template = \"Demon Scouts\" start_experience_factor = 0.7 start_equipment_factor = 1.0"
+    owner = CRF
+					}
+ 				}
+			}
+			
+ 		}		
+	}
+}
+		

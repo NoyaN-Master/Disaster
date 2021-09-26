@@ -17,8 +17,8 @@ crf.3.b:0 "The Demon Doctor shall heal, whatever the cost"
 CRF_focus_1:0 "Hell on Earth"
 CRF_focus_1_desc:0 "Hell on Earth"
 
-CRF_focus_2:0 "Fire my Sweet"
-CRF_focus_2_desc:0 "Fire my Sweet"
+CRF_focus_2:0  "Sweet Fire my Demons"
+CRF_focus_2_desc:0 "Sweet Fire my Demons"
 
 CRF_focus_3:0 "Second In command"
 CRF_focus_3_desc:0 "Second In command"
@@ -28,6 +28,12 @@ CRF_focus_4_desc:0 "General In Command"
 
 CRF_focus_5:0 "Doctor In Command"
 CRF_focus_5_desc:0 "Doctor In Command"
+
+CRF_focus_6:0 "Demon Command"
+CRF_focus_6_desc:0 "Demon Command"
+
+CRF_focus_7:0 "The Demon Scouts"
+CRF_focus_7_desc:0 "The Demon Scouts"
 #####ideas
 CRF_cwar_scorched_earth:0 "Scorched Earth Tactics"
 ###Decisions
@@ -38,3 +44,4 @@ CRF_cwar_scorched_earth:0 "Scorched Earth Tactics"
 CRF_TT_DEMON_KING_INTRO:0 "§RHell is empty and all the devils are here.§!"
 crf_cwar_general_flag:0 "The general is second in command"
 crf_cwar_doctor_flag:0 "The doctor is second in command"
+CRF_CWAR_TT_SCOUTS:0 "The most promising conscripts will be picked to form new Demon Scout Corps!"
