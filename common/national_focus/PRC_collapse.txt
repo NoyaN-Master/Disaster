@@ -15,7 +15,7 @@ focus_tree = {
 
 		focus = {
 		id = PRC_focus_1
-		icon = ""
+		icon = GFX_goal_PRC_mao_deng
 		x = 8
 		y = 1
 		cost = 1
@@ -30,7 +30,7 @@ focus_tree = {
 
 		focus = {
 		id = PRC_focus_2
-		icon = ""
+		icon = GFX_goal_PRC_MaoWinsSI
 		x = 4
 		y = 2
 		cost = 1
@@ -164,7 +164,7 @@ focus = {
 	}
 		focus = {
 		id = PRC_focus_10
-		icon = ""
+		icon = GFX_goal_PRC_puyi_letter
 		x = 8
 		y = 7
 		cost = 1

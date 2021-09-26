@@ -912,20 +912,10 @@ country_event = { #14hr work days crying pt 2
 	option = {
 		name = roc.28.a
         ai_chance = {factor = 33}
-		add_stability = -0.15
-	}
-	option = {
-		name = roc.28.b
-        ai_chance = {factor = 34}
-		add_stability = -0.10
-		add_ideas = ROC_cwar_work_semi_death
-		remove_ideas = ROC_cwar_work_death
-	}
-	option = {
-		name = roc.28.c
-        ai_chance = {factor = 33}
-		add_stability = 0.05
-		remove_ideas = ROC_cwar_work_death
+		add_stability = -0.55
+		every_owned_state = {
+      
+    }
 	}
 }
 country_event = { #Xue Yue's plan pt 2

@@ -18,7 +18,7 @@ focus_tree = {
 		icon = ""
 		x = 8
 		y = 1
-		cost = 1
+		cost = 5
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -26,6 +26,77 @@ focus_tree = {
 		completion_reward = {
 		CRF = { country_event = { id = crf.1}}
 		custom_effect_tooltip = CRF_TT_DEMON_KING_INTRO
+		}
+	}
+			focus = {
+		id = CRF_focus_2
+		icon = ""
+		x = 8
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+			prerequisite = {
+		focus = CRF_focus_1
+	}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		CRF = { country_event = { id = crf.2}}
+		add_ideas = CRF_cwar_scorched_earth
+		}
+	}
+		focus = {
+		id = CRF_focus_3
+		icon = ""
+		x = 8
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+			prerequisite = {
+		focus = CRF_focus_2
+	}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		CRF = { country_event = { id = crf.3}}
+		}
+	}
+			focus = {
+		id = CRF_focus_4
+		icon = ""
+		x = 6
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		available = {has_country_flag =  crf_cwar_general_flag}
+			prerequisite = {
+		focus = CRF_focus_3
+	}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	
+		}
+	}
+			focus = {
+		id = CRF_focus_5
+		icon = ""
+		x = 10
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+			prerequisite = {
+		focus = CRF_focus_3
+	}
+	available = {has_country_flag = crf_cwar_doctor_flag}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	
 		}
 	}
 }		

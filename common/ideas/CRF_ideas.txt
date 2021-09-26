@@ -1,0 +1,13 @@
+ideas = {
+
+country = {
+
+CRF_cwar_scorched_earth = {
+	picture = ROC_unity
+	modifier = {
+	army_core_defence_factor = 0.15
+	org_loss_when_moving = 0.1
+			}
+        }
+}
+}
