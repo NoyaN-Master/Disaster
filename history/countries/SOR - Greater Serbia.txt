@@ -12,7 +12,6 @@ set_technology = {
 	early_fighter = 1
 	early_bomber = 1
 	gwtank = 1
-	basic_light_tank = 1
 }
 
 set_convoys = 45
@@ -24,22 +23,22 @@ set_politics = {
 	elections_allowed = no
 }
 add_ideas = 	autocracy 
-add_ideas = 	corporatism 
+add_ideas = 	interventionism
 add_ideas = 	industrialized_society
 
 set_popularities = {
 	conservative = 0
-	liberal = 5
-	social_democrat = 5
-	libertarian_socialist = 5
-	authoritarian_socialist = 5
+	liberal = 0
+	social_democrat = 3
+	libertarian_socialist = 3
+	authoritarian_socialist = 30
 	unisocialist = 0
-	authoritarian_democrat = 30
-	autocratic = 45
-	ultranationalist = 5
-	revolutionary_nationalist = 0
+	authoritarian_democrat = 8
+	autocratic = 20
+	ultranationalist = 25
+	revolutionary_nationalist = 9
 	esoteric_traditionalist = 0
-	revolutionary_anarchist = 0
+	revolutionary_anarchist = 2
 }
 
 create_country_leader = {
@@ -56,7 +55,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Josip Broz Tito"
 	desc = "SOR_Alex_desc"
-	picture = "SOR_Tito.tga"
+	picture = "SOR_Tito.png"
 	expire = "2020.1.1"
 	ideology = authoritarian_socialist_subideology
 	traits = {

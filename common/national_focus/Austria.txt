@@ -3888,6 +3888,9 @@ focus = {
 				defensive_war_stability_factor = 100
 				offensive_war_stability_factor = 100
 				add_stability = 0.30
+				FIU = {
+					add_ideas = AUT_severe_anti_war_protests
+				}
 			}
 			country_event = { id = aut.96 days = 1}	
 		}
@@ -3897,7 +3900,7 @@ focus = {
 		id = AUT_victory
 		icon = GFX_goal_AUT_victory
 		prerequisite = { focus = AUT_south_tyrolean_war }		
-	
+
 		x = 2
 		y = 16
 		cost = 0
@@ -3917,6 +3920,118 @@ focus = {
 		available_if_capitulated = no
 		completion_reward = {
 			remove_ideas = AUT_stcrisis_for_our_fatherland
+			hidden_effect = {
+				add_stability = -0.30
+			}
+		}
+		add_ideas = AUT_italian_nationalism		
+	}
+
+	focus = {
+		id = AUT_time_to_rebuild
+		icon = GFX_goal_AUT_time_to_rebuild
+		prerequisite = { focus = AUT_victory focus = AUT_defeat }		
+	
+		x = 0
+		y = 16
+		cost = 0
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+			has_country_flag = AUT_south_tyrol_crisis_option
+		}
+		available = {
+			hidden_trigger = {			
+				always = no
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_timed_idea = {
+				idea = AUT_rebuild_the_nation
+				days = 120
+			}
+			add_timed_idea = {
+				idea = low_economic_mobilisation
+				days = 120
+			}	
+		}
+	}
+
+	focus = {
+		id = AUT_integrate_them
+		icon = GFX_goal_AUT_integrate_them
+		prerequisite = { focus = AUT_victory }		
+	
+		x = 1
+		y = 17
+		cost = 10
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+			has_country_flag = AUT_south_tyrol_crisis_option
+		}
+		available = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			consumer_goods_factor = 0.03
+			stability_factor = -0.05
+			153 = {
+				add_manpower = -75000
+			}
+			813 = {
+				add_manpower = -75000
+			}
+			4 = {
+				add_manpower = -50000
+			}
+			881 = {
+				add_manpower = -50000
+			}
+			811 = {
+				add_core_of = AUT
+				add_manpower = 50000
+			}
+			884 = {
+				add_core_of = AUT
+				add_manpower = 200000
+			}
+		}
+	}
+
+	focus = {
+		id = AUT_suppress_italian_nationalism
+		icon = GFX_goal_AUT_suppress_italian_nationalism
+		prerequisite = { focus = AUT_victory }		
+	
+		x = 3
+		y = 17
+		cost = 10
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+			has_country_flag = AUT_south_tyrol_crisis_option
+		}
+		available = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			swap_ideas = { 
+                remove_idea = AUT_italian_nationalism
+        	    add_idea = AUT_italian_nationalism_two
+        	}
 		}
 	}
 
@@ -3944,6 +4059,9 @@ focus = {
 		available_if_capitulated = no
 		completion_reward = {
 			remove_ideas = AUT_stcrisis_for_our_fatherland
+			hidden_effect = {
+				add_stability = -0.30
+			}
 		}
 	}
 
@@ -3965,7 +4083,7 @@ focus = {
 			has_completed_focus = AUT_a_moral_government
 			has_completed_focus = AUT_christlich_deutsch_gerecht_und_frei
 			has_completed_focus = AUT_fur_freiheit_und_ehre
-			}					
+			}				
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no

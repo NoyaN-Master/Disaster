@@ -47,18 +47,19 @@ country_event = {
 	option = {
 		name = fiu.1.a
 		hidden_effect = {
-		white_peace = SOR
-		transfer_state = 44
-		transfer_state = 105
-		transfer_state = 802
-		BLG = { 
-		 white_peace = SOR
-		 transfer_state = 106
-		 transfer_state = 803
-		}
-		SOR = {
-		country_event = { id = worldwar.36 days = 10}	
-		}
-        }
+			white_peace = SOR
+			transfer_state = 44
+			transfer_state = 105
+			transfer_state = 802
+			transfer_state = 44
+			BLG = { 
+			white_peace = SOR
+				transfer_state = 106
+				transfer_state = 803
+			}
+			SOR = {
+				country_event = { id = worldwar.36 days = 10}	
+			}
 		}
 	}
+}

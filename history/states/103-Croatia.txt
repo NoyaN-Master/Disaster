@@ -8,7 +8,7 @@ state={
 
 
 	history={
-		owner = FIU
+		owner = SOR
 		victory_points = {
 			3924 3
 		}
@@ -27,6 +27,7 @@ state={
 			}
 		}
 		add_core_of = CRT
+		add_core_of = SOR
 
 	}
 

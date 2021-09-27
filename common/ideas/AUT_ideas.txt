@@ -90,7 +90,7 @@ AUT_agrarian_nation = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_agrarian_nation" }
 			#picture = 
 			modifier = {
-			consumer_goods_factor = -0.09
+			consumer_goods_factor = -0.1
 			global_building_slots_factor = 0.12
 			production_factory_max_efficiency_factor = 0.09
 			local_resources_factor = 0.08
@@ -145,7 +145,7 @@ AUT_industrial_nation = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_industrial_nation" }
 			#picture = 
 			modifier = {
-			consumer_goods_factor = -0.06
+			consumer_goods_factor = -0.09
 			industrial_capacity_factory = 0.09
 			production_speed_buildings_factor = 0.09
 			stability_factor = 0.04
@@ -762,8 +762,69 @@ AUT_stcrisis_for_our_fatherland = {
 				army_morale_factor = 0.10
 			}
 		}
+
+AUT_stagnant_economy_italy = {
+			name = AUT_stagnant_economy_italy
+			removal_cost = -1
+			picture = eng_tackle_capitalism
+			modifier = {
+				consumer_goods_factor = 0.10
+				production_factory_max_efficiency_factor = -0.10
+				production_speed_buildings_factor = -0.10
+				political_power_factor = -0.15
+			}
+		}
+	
+AUT_severe_anti_war_protests = {
+			name = AUT_severe_anti_war_protests
+			removal_cost = -1
+			picture = eng_tackle_capitalism
+			modifier = {
+				war_support_weekly = -0.003
+				army_org_factor = -0.15
+				army_morale_factor = -0.10
+				army_defence_factor = -0.2
+				army_attack_factor = -0.2
+				army_speed_factor = -0.2
+				surrender_limit = -0.25
+			}
+		}
+AUT_rebuild_the_nation = {
+			name = AUT_rebuild_the_nation 
+			removal_cost = -1
+			picture = eng_tackle_capitalism
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_industrial_complex_factor = 0.25
+				production_speed_infrastructure_factor = 0.25
+				stability_weekly = 0.02
+			}
+		}
+AUT_italian_nationalism = {
+			name = AUT_italian_nationalism 
+			removal_cost = -1
+			picture = eng_tackle_capitalism
+			modifier = {
+				consumer_goods_factor = 0.01
+				political_power_gain = -0.10
+				stability_factor = -0.08
+				conscription_factor = -0.05
+			}
+		}
+AUT_italian_nationalism_two = {
+			name = AUT_italian_nationalism_two 
+			removal_cost = -1
+			picture = eng_tackle_capitalism
+			modifier = {
+				political_power_gain = -0.05
+				stability_factor = -0.04
+				conscription_factor = -0.02
+			}
+		}
 	}
 
+
+	
 
 
 

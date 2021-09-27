@@ -15,7 +15,8 @@ country_event = { #Intro
 	option = {
 		name = aut.1.a
 		hidden_effect = {
-			country_event = { id = aut.84 days = 465 }
+			country_event = { id = aut.84 days = 520 }
+			country_event = { id = aut.97 days = 912 }
 		}
 	}
 }
@@ -3066,7 +3067,7 @@ country_event = {
         name = aut.85.a 
 		hidden_effect = {
 			set_country_flag = AUT_sus_mail_option
-			country_event = { id =  aut.86 days = 60 }
+			country_event = { id = aut.86 days = 30 }
 			complete_national_focus = AUT_arrange_the_meeting
 		}
     }
@@ -3384,7 +3385,7 @@ country_event = {
 
     picture = GFX_report_event_aut_dollfuss_speech
 
-
+	is_triggered_only = yes
 	
   	option = {
         name = aut.92.a 
@@ -3447,6 +3448,21 @@ country_event = {
         name = aut.96.a 
 		hidden_effect = {
 			set_country_flag = AUT_wwt_start_decision
+		}
+	}
+}
+
+country_event = { 
+    id = aut.97
+    title = aut.97.t
+    desc = aut.97.d
+	is_triggered_only = yes
+    picture = GFX_report_event_aut_dollfuss_speech
+
+  	option = {
+        name = aut.97.a 
+		hidden_effect = {
+			complete_national_focus = AUT_Foreign_Plans
 		}
 	}
 }

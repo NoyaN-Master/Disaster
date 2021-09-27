@@ -1,5 +1,10 @@
 #reload countrycolors
 
+SRB = {
+	color = rgb { 125 45 90 } 
+	color_ui = rgb { 125 45 90 }
+}
+
 CRW = {
 	color = rgb { 142 142 128 }
 	color_ui = rgb { 142 142 128 }
@@ -101,8 +106,8 @@ HNG = {
 }
 
 CRT = {
-	color = rgb { 255 0 255 }
-	color_ui = rgb { 255 0 255 }
+	color = rgb { 70 0 165 }
+	color_ui = rgb { 70 0 165 }
 }
 
 TRN = {

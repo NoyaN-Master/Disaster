@@ -53,7 +53,7 @@ AUT_foreign_deccat = {
         transfer_state = 105	
 		} 
         }
-		ai_will_do  = { factor = 1000}
+		ai_will_do  = { factor = 600}
     }
 
     AUT_Puppet_Hun = {                          
@@ -796,7 +796,7 @@ AUT_war_with_italy_terrorism_decisions = {
 				has_full_control_of_state = 736
 			}
 			has_equipment = {
-				infantry_equipment > 999
+				infantry_equipment > 599
 			}
 		}
 
@@ -806,7 +806,7 @@ AUT_war_with_italy_terrorism_decisions = {
 
 		custom_cost_trigger = {
 			has_equipment = {
-				infantry_equipment > 999
+				infantry_equipment > 599
 			}
 		}
 		custom_cost_text = AUT_wwt_terrorism_infantry_equipment_cost # localisation string
@@ -814,9 +814,9 @@ AUT_war_with_italy_terrorism_decisions = {
 		fire_only_once = yes
 
 		visible = {
-			NOT = {
+		
 			has_war_with = FIU
-			}
+			
 		}
 
 		cancel_if_not_visible = yes
@@ -860,7 +860,7 @@ AUT_war_with_italy_terrorism_decisions = {
 			}
 			add_equipment_to_stockpile = {
     			type = infantry_equipment
-    			amount = -1000
+    			amount = -600
     			producer = AUT
 			}
 		}
@@ -875,7 +875,7 @@ AUT_war_with_italy_terrorism_decisions = {
 				has_full_control_of_state = 160
 			}
 			has_equipment = {
-				infantry_equipment > 999
+				infantry_equipment > 599
 			}
 		}
 
@@ -886,7 +886,7 @@ AUT_war_with_italy_terrorism_decisions = {
 		
 		custom_cost_trigger = {
 			has_equipment = {
-				infantry_equipment > 999
+				infantry_equipment > 599
 			}
 		}
 		custom_cost_text = AUT_wwt_terrorism_infantry_equipment_cost # localisation string
@@ -894,9 +894,9 @@ AUT_war_with_italy_terrorism_decisions = {
 		fire_only_once = yes
 
 		visible = {
-			NOT = {
+		
 			has_war_with = FIU
-			}
+			
 		}
 
 		cancel_if_not_visible = yes
@@ -940,7 +940,7 @@ AUT_war_with_italy_terrorism_decisions = {
 			}
 			add_equipment_to_stockpile = {
     			type = infantry_equipment
-    			amount = -1000
+    			amount = -600
     			producer = AUT
 			}
 		}
@@ -954,7 +954,7 @@ AUT_war_with_italy_terrorism_decisions = {
 				has_full_control_of_state = 159
 			}
 			has_equipment = {
-				infantry_equipment > 1999
+				infantry_equipment > 1199
 			}
 		}
 
@@ -967,14 +967,14 @@ AUT_war_with_italy_terrorism_decisions = {
 		fire_only_once = yes
 
 		visible = {
-			NOT = {
+		
 			has_war_with = FIU
-			}
+			
 		}
 
 		custom_cost_trigger = {
 			has_equipment = {
-				infantry_equipment > 1999
+				infantry_equipment > 1199
 			}
 		}
 		custom_cost_text = AUT_wwt_terrorism_infantry_equipment2_cost # localisation string
@@ -1030,7 +1030,7 @@ AUT_war_with_italy_terrorism_decisions = {
 			}
 			add_equipment_to_stockpile = {
     			type = infantry_equipment
-    			amount = -2000
+    			amount = -1200
     			producer = AUT
 			}
 		}
@@ -1044,7 +1044,7 @@ AUT_war_with_italy_terrorism_decisions = {
 				has_full_control_of_state = 158
 			}
 			has_equipment = {
-				infantry_equipment > 1999
+				infantry_equipment > 1199
 			}
 		}
 
@@ -1054,7 +1054,7 @@ AUT_war_with_italy_terrorism_decisions = {
 
 		custom_cost_trigger = {
 			has_equipment = {
-				infantry_equipment > 1999
+				infantry_equipment > 1199
 			}
 		}
 		custom_cost_text = AUT_wwt_terrorism_infantry_equipment2_cost # localisation string
@@ -1062,9 +1062,9 @@ AUT_war_with_italy_terrorism_decisions = {
 		fire_only_once = yes
 
 		visible = {
-			NOT = {
+		
 			has_war_with = FIU
-			}
+			
 		}
 
 		cancel_if_not_visible = yes
@@ -1120,7 +1120,7 @@ AUT_war_with_italy_terrorism_decisions = {
 			}
 			add_equipment_to_stockpile = {
     			type = infantry_equipment
-    			amount = -2000
+    			amount = -1200
     			producer = AUT
 			}
 		}
@@ -1135,7 +1135,7 @@ AUT_war_with_italy_terrorism_decisions = {
 				has_full_control_of_state = 812
 			}
 			has_equipment = {
-				infantry_equipment > 999
+				infantry_equipment > 599
 			}
 		}
 
@@ -1145,7 +1145,7 @@ AUT_war_with_italy_terrorism_decisions = {
 
 		custom_cost_trigger = {
 			has_equipment = {
-				infantry_equipment > 999
+				infantry_equipment > 599
 			}
 		}
 		custom_cost_text = AUT_wwt_terrorism_infantry_equipment_cost # localisation string
@@ -1153,9 +1153,9 @@ AUT_war_with_italy_terrorism_decisions = {
 		fire_only_once = yes
 
 		visible = {
-			NOT = {
+		
 			has_war_with = FIU
-			}
+			
 		}
 
 		cancel_if_not_visible = yes
@@ -1200,7 +1200,7 @@ AUT_war_with_italy_terrorism_decisions = {
 			}
 			add_equipment_to_stockpile = {
     			type = infantry_equipment
-    			amount = -1000
+    			amount = -600
     			producer = AUT
 			}
 		}
@@ -1215,7 +1215,7 @@ AUT_war_with_italy_terrorism_decisions = {
 				has_full_control_of_state = 161
 			}
 			has_equipment = {
-				infantry_equipment > 999
+				infantry_equipment > 599
 			}
 		}
 
@@ -1225,7 +1225,7 @@ AUT_war_with_italy_terrorism_decisions = {
 
 		custom_cost_trigger = {
 			has_equipment = {
-				infantry_equipment > 999
+				infantry_equipment > 599
 			}
 		}
 		custom_cost_text = AUT_wwt_terrorism_infantry_equipment_cost # localisation string
@@ -1233,9 +1233,9 @@ AUT_war_with_italy_terrorism_decisions = {
 		fire_only_once = yes
 
 		visible = {
-			NOT = {
+		
 			has_war_with = FIU
-			}
+			
 		}
 
 		cancel_if_not_visible = yes
@@ -1280,7 +1280,7 @@ AUT_war_with_italy_terrorism_decisions = {
 			}
 			add_equipment_to_stockpile = {
     			type = infantry_equipment
-    			amount = -1000
+    			amount = -600
     			producer = AUT
 			}
 		}
@@ -1294,7 +1294,7 @@ AUT_war_with_italy_terrorism_decisions = {
 				has_full_control_of_state = 162
 			}
 			has_equipment = {
-				infantry_equipment > 999
+				infantry_equipment > 599
 			}
 		}
 
@@ -1304,7 +1304,7 @@ AUT_war_with_italy_terrorism_decisions = {
 
 		custom_cost_trigger = {
 			has_equipment = {
-				infantry_equipment > 999
+				infantry_equipment > 599
 			}
 		}
 		custom_cost_text = AUT_wwt_terrorism_infantry_equipment_cost # localisation string
@@ -1312,9 +1312,9 @@ AUT_war_with_italy_terrorism_decisions = {
 		fire_only_once = yes
 
 		visible = {
-			NOT = {
+		
 			has_war_with = FIU
-			}
+			
 		}
 
 		cancel_if_not_visible = yes
@@ -1359,7 +1359,7 @@ AUT_war_with_italy_terrorism_decisions = {
 			}
 			add_equipment_to_stockpile = {
     			type = infantry_equipment
-    			amount = -1000
+    			amount = -600
     			producer = AUT
 			}
 		}
@@ -1373,7 +1373,7 @@ AUT_war_with_italy_terrorism_decisions = {
 				has_full_control_of_state = 2
 			}
 			has_equipment = {
-				infantry_equipment > 1999
+				infantry_equipment > 1199
 			}
 		}
 
@@ -1383,7 +1383,7 @@ AUT_war_with_italy_terrorism_decisions = {
 
 		custom_cost_trigger = {
 			has_equipment = {
-				infantry_equipment > 1999
+				infantry_equipment > 1199
 			}
 		}
 		custom_cost_text = AUT_wwt_terrorism_infantry_equipment2_cost # localisation string
@@ -1392,9 +1392,9 @@ AUT_war_with_italy_terrorism_decisions = {
 		fire_only_once = yes
 
 		visible = {
-			NOT = {
+		
 			has_war_with = FIU
-			}
+			
 		}
 
 		cancel_if_not_visible = yes
@@ -1450,7 +1450,7 @@ AUT_war_with_italy_terrorism_decisions = {
 			}
 			add_equipment_to_stockpile = {
     			type = infantry_equipment
-    			amount = -2000
+    			amount = -1200
     			producer = AUT
 			}
 		}
@@ -1464,7 +1464,7 @@ AUT_war_with_italy_terrorism_decisions = {
 				has_full_control_of_state = 117
 			}
 			has_equipment = {
-				infantry_equipment > 999
+				infantry_equipment > 599
 			}
 		}
 
@@ -1474,7 +1474,7 @@ AUT_war_with_italy_terrorism_decisions = {
 
 		custom_cost_trigger = {
 			has_equipment = {
-				infantry_equipment > 999
+				infantry_equipment > 599
 			}
 		}
 		custom_cost_text = AUT_wwt_terrorism_infantry_equipment_cost # localisation string
@@ -1483,9 +1483,9 @@ AUT_war_with_italy_terrorism_decisions = {
 		fire_only_once = yes
 
 		visible = {
-			NOT = {
+		
 			has_war_with = FIU
-			}
+			
 		}
 
 		cancel_if_not_visible = yes
@@ -1530,7 +1530,7 @@ AUT_war_with_italy_terrorism_decisions = {
 			}
 			add_equipment_to_stockpile = {
     			type = infantry_equipment
-    			amount = -1000
+    			amount = -600
     			producer = AUT
 			}
 		}
@@ -1544,7 +1544,7 @@ AUT_war_with_italy_terrorism_decisions = {
 				has_full_control_of_state = 156
 			}
 			has_equipment = {
-				infantry_equipment > 999
+				infantry_equipment > 599
 			}
 		}
 
@@ -1554,7 +1554,7 @@ AUT_war_with_italy_terrorism_decisions = {
 
 		custom_cost_trigger = {
 			has_equipment = {
-				infantry_equipment > 999
+				infantry_equipment > 599
 			}
 		}
 		custom_cost_text = AUT_wwt_terrorism_infantry_equipment_cost # localisation string
@@ -1563,9 +1563,9 @@ AUT_war_with_italy_terrorism_decisions = {
 		fire_only_once = yes
 
 		visible = {
-			NOT = {
+		
 			has_war_with = FIU
-			}
+			
 		}
 
 		cancel_if_not_visible = yes
@@ -1610,7 +1610,7 @@ AUT_war_with_italy_terrorism_decisions = {
 			}
 			add_equipment_to_stockpile = {
     			type = infantry_equipment
-    			amount = -1000
+    			amount = -600
     			producer = AUT
 			}
 		}
@@ -1624,7 +1624,7 @@ AUT_war_with_italy_terrorism_decisions = {
 				has_full_control_of_state = 115
 			}
 			has_equipment = {
-				infantry_equipment > 999
+				infantry_equipment > 599
 			}
 		}
 
@@ -1634,7 +1634,7 @@ AUT_war_with_italy_terrorism_decisions = {
 
 		custom_cost_trigger = {
 			has_equipment = {
-				infantry_equipment > 999
+				infantry_equipment > 599
 			}
 		}
 		custom_cost_text = AUT_wwt_terrorism_infantry_equipment_cost # localisation string
@@ -1643,9 +1643,9 @@ AUT_war_with_italy_terrorism_decisions = {
 		fire_only_once = yes
 
 		visible = {
-			NOT = {
+		
 			has_war_with = FIU
-			}
+			
 		}
 
 		cancel_if_not_visible = yes
@@ -1690,7 +1690,7 @@ AUT_war_with_italy_terrorism_decisions = {
 			}
 			add_equipment_to_stockpile = {
     			type = infantry_equipment
-    			amount = -1000
+    			amount = -600
     			producer = AUT
 			}
 		}
@@ -1704,7 +1704,7 @@ AUT_war_with_italy_terrorism_decisions = {
 				has_full_control_of_state = 157
 			}
 			has_equipment = {
-				infantry_equipment > 999
+				infantry_equipment > 599
 			}
 		}
 
@@ -1714,7 +1714,7 @@ AUT_war_with_italy_terrorism_decisions = {
 
 		custom_cost_trigger = {
 			has_equipment = {
-				infantry_equipment > 999
+				infantry_equipment > 599
 			}
 		}
 		custom_cost_text = AUT_wwt_terrorism_infantry_equipment_cost # localisation string
@@ -1723,9 +1723,9 @@ AUT_war_with_italy_terrorism_decisions = {
 		fire_only_once = yes
 
 		visible = {
-			NOT = {
+		
 			has_war_with = FIU
-			}
+			
 		}
 
 		cancel_if_not_visible = yes
@@ -1770,7 +1770,7 @@ AUT_war_with_italy_terrorism_decisions = {
 			}
 			add_equipment_to_stockpile = {
     			type = infantry_equipment
-    			amount = -1000
+    			amount = -600
     			producer = AUT
 			}
 		}
