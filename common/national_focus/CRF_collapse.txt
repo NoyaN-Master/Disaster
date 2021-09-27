@@ -231,5 +231,151 @@ hidden_effect = { 615 = {create_unit = {
 			
  		}		
 	}
+	focus = {
+	id = CRF_focus_9
+	icon = ""
+	x = 4
+	y = 8
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = {focus = CRF_focus_8}
+	
+	available = {}
+	ai_will_do = {factor = 1}
+
+	completion_reward = {
+	custom_effect_tooltip = CRF_CWAR_TT_SUPER_ELITE
+	division_template = {
+	name = "Yaoguai"				# Represents: two-division infantry corps (generally poorly-equipped, but decent experience),
+	division_names_group = CRF_INF_01
+									#	PRC divisions were well-trained in guerilla mountain tactics.
+regiments = {
+		infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		artillery = { x = 2 y = 0 }
+	   	artillery = { x = 2 y = 1 }
+	}
+	 support = {
+	   artillery = { x = 0 y = 0 }
+	   tech_recon = { x = 0 y = 1 }
+ 	 }
+	priority = 1
+}	
+
+hidden_effect = { 615 = {create_unit = {
+	division = "name = \"Yaoguai\" division_template = \"Yaoguai\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+    owner = CRF
+					}
+ 				}
+			}
+hidden_effect = { 615 = {create_unit = {
+	division = "name = \"Yaoguai\" division_template = \"Yaoguai\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+    owner = CRF
+					}
+ 				}
+			}
+hidden_effect = { 615 = {create_unit = {
+	division = "name = \"Yaoguai\" division_template = \"Yaoguai\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+    owner = CRF
+					}
+ 				}
+			}
+			
+ 		}		
+	}
+	focus = {
+	id = CRF_focus_10
+	icon = ""
+	x = 8
+	y = 6
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = {focus = CRF_focus_6}
+	available = {}
+	ai_will_do = {factor = 1}
+	completion_reward = {
+	add_manpower = 10000
+    add_ideas = CRF_cwar_waves
+		}
+	}
+	focus = {
+	id = CRF_focus_11
+	icon = ""
+	x = 8
+	y = 7
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = {focus = CRF_focus_10}
+	available = {}
+	ai_will_do = {factor = 1}
+	completion_reward = {
+	swap_ideas = {
+    remove_idea = CRF_cwar_waves
+    add_idea = CRF_cwar_waves_2
+	}
+		}
+	}
+	focus = {
+	id = CRF_focus_12
+	icon = ""
+	x = 8
+	y = 8
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = {focus = CRF_focus_11}
+	available = {}
+	ai_will_do = {factor = 1}
+	completion_reward = {
+	custom_effect_tooltip = CRF_cwar_TT_DARE_TWO_DIE
+		}
+	}
+	focus = {
+	id = CRF_focus_13
+	icon = ""
+	x = 12
+	y = 6
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = {focus = CRF_focus_6}
+	available = {}
+	ai_will_do = {factor = 1}
+	completion_reward = {
+	add_ideas = CRF_cwar_child_labour
+		}
+	}
+	focus = {
+	id = CRF_focus_14
+	icon = ""
+	x = 12
+	y = 7
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = {focus = CRF_focus_13}
+	available = {}
+	ai_will_do = {factor = 1}
+	completion_reward = {
+		add_ideas = CRF_cwar_bad_guns
+		}
+	}
+	focus = {
+	id = CRF_focus_15
+	icon = ""
+	x = 12
+	y = 8
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = {focus = CRF_focus_14}
+	available = {}
+	ai_will_do = {factor = 1}
+	completion_reward = {
+    add_research_slot = -1
+	add_ideas = CRF_cwar_old_ways
+		}
+	}
 }
 		

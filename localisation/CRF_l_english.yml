@@ -34,8 +34,37 @@ CRF_focus_6_desc:0 "Demon Command"
 
 CRF_focus_7:0 "The Demon Scouts"
 CRF_focus_7_desc:0 "The Demon Scouts"
+
+CRF_focus_8:0 "The Demon Elite"
+CRF_focus_8_desc:0 "The Demon Elite"
+
+CRF_focus_9:0 "Yaoguai Corps"
+CRF_focus_9_desc:0 "Yaoguai Corps"
+
+CRF_focus_10:0 "Demon Waves"
+CRF_focus_10_desc:0 "Demon Waves"
+
+CRF_focus_11:0 "Civilian Collateral"
+CRF_focus_11_desc:0 "Civilian Collateral"
+
+CRF_focus_12:0 "The Dare to Die Corps"
+CRF_focus_12_desc:0 "The Dare to Die Corps"
+
+CRF_focus_13:0 "All Ages Work"
+CRF_focus_13_desc:0 "All Ages Work"
+
+CRF_focus_14:0 "Quantity Over Quality"
+CRF_focus_14_desc:0 "Quantity Over Quality"
+
+CRF_focus_15:0 "The Beginnings of the Old Way"
+CRF_focus_15_desc:0 "The Beginnings of the Old Way"
 #####ideas
 CRF_cwar_scorched_earth:0 "Scorched Earth Tactics"
+CRF_cwar_waves:0 "Demon Waves"
+CRF_cwar_waves_2:0 "Demon Waves"
+CRF_cwar_child_labour:0 "Child Labour"
+CRF_cwar_bad_guns:0 "Any Quality Will Do"
+CRF_cwar_old_ways:0 "The Beginnings of the Old Way"
 ###Decisions
 
 ##########missions###########
@@ -45,3 +74,7 @@ CRF_TT_DEMON_KING_INTRO:0 "§RHell is empty and all the devils are here.§!"
 crf_cwar_general_flag:0 "The general is second in command"
 crf_cwar_doctor_flag:0 "The doctor is second in command"
 CRF_CWAR_TT_SCOUTS:0 "The most promising conscripts will be picked to form new Demon Scout Corps!"
+CRF_CWAR_TT_ELITE:0 "Promising demon scouts will be turned into elite demon forces!"
+CRF_CWAR_TT_SUPER_ELITE:0 "The top soldiers will form the Yaoguai Corps, the right hand men of the demon king himself Dai Li!"
+CRF_cwar_TT_DARE_TWO_DIE:0 "Secret dare to die corps will be formed, command them from the decisions tab."
+
