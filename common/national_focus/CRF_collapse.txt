@@ -96,10 +96,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-	
+		hidden_effect = {	CRF = { country_event = { id = crf.5 days = 45}}}
 		}
 	}
-			focus = {
+		focus = {
 		id = CRF_focus_6
 		icon = ""
 		x = 8
@@ -116,6 +116,7 @@ focus_tree = {
 		}
 		completion_reward = {
     add_war_support = 0.1
+	hidden_effect = {	CRF = { country_event = { id = crf.4 days = 43}}}
 		}
 	}
 	focus = {

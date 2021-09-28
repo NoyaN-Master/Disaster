@@ -63,3 +63,80 @@ country_event = { #choiceCRF_3
   }
  }
 }
+country_event = {#education syke!
+	id = crf.4
+	title = crf.4.t
+	desc = crf.4.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = crf.4.a
+        ai_chance = {factor = 100}
+		add_ideas = CRF_cwar_peasents_cant_read_kek
+	}
+}
+country_event = { #dr Cult pt 1
+	id = crf.5
+	title = crf.5.t
+	desc = crf.5.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = crf.5.a
+        ai_chance = {factor = 100}
+		add_stability = 0.05
+	}
+	option = {
+		name = crf.5.b
+        ai_chance = {factor = 100}
+		custom_effect_tooltip = CRF_CWAR_DOCTOR_CULT_TT
+		hidden_effect = {	CRF = { country_event = { id = crf.6 days = 90}}}
+	}
+}
+country_event = { #dr Cult pt 2
+	id = crf.6
+	title = crf.6.t
+	desc = crf.6.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = crf.6.a
+        ai_chance = {factor = 100}
+		custom_effect_tooltip = CRF_CWAR_DOCTOR_CULT_TT
+		hidden_effect = {	CRF = { country_event = { id = crf.7 days = 90}}}
+	}
+}
+country_event = { #dr Cult pt 3
+	id = crf.7
+	title = crf.7.t
+	desc = crf.7.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = crf.7.a
+        ai_chance = {factor = 100}
+		custom_effect_tooltip = CRF_CWAR_DOCTOR_CULT_TT
+		hidden_effect = {	set_country_flag = CRF_cwar_dr_cult_flag}
+	}
+}
+

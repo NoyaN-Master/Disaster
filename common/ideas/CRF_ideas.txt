@@ -53,6 +53,14 @@ CRF_cwar_scorched_earth = {
 		industrial_capacity_factory = -0.15
 			}
         }
+	CRF_cwar_peasents_cant_read_kek = {
+	picture = ROC_unity
+	modifier = {
+		recruitable_population = 0.03
+		research_speed_factor = -0.15
+		industrial_capacity_factory = 0.05
+			}
+        }
 
 	}
 }
