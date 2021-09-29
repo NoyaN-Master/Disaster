@@ -61,6 +61,14 @@ CRF_cwar_scorched_earth = {
 		industrial_capacity_factory = 0.05
 			}
         }
+	CRF_cwar_failed_offensive  = {
+	picture = ROC_unity
+	modifier = {
+	army_attack_factor = -0.1
+	army_defence_factor = -0.1
+	supply_consumption_factor = 0.5
+			}
+		}
 
 	}
 }

@@ -299,7 +299,7 @@ focus = {
 	}
 			focus = {
 		id = PRC_focus_18
-		icon = ""
+		icon = GFX_goal_PRC_the_Fox_and_the_Swan
 		x = 9
 		y = 8
 		cost = 1
@@ -315,7 +315,7 @@ focus = {
 	}
 			focus = {
 		id = PRC_focus_19
-		icon = ""
+		icon = GFX_goal_PRC_unholy_alliance
 		x = 8
 		y = 9
 		cost = 1
@@ -332,7 +332,7 @@ focus = {
 	}
 		focus = {
 		id = PRC_focus_20
-		icon = ""
+		icon = GFX_goal_PRC_peoples_emperor
 		x = 6
 		y = 10
 		cost = 1
@@ -348,7 +348,7 @@ focus = {
 	}
 		focus = {
 		id = PRC_focus_21
-		icon = ""
+		icon = GFX_goal_PRC_rights_of_banners
 		x = 8
 		y = 10
 		cost = 1
@@ -364,7 +364,7 @@ focus = {
 	}
 		focus = {
 		id = PRC_focus_22
-		icon = ""
+		icon = GFX_goal_PRC_claim_mandate
 		x = 10
 		y = 10
 		cost = 1
@@ -380,13 +380,13 @@ focus = {
 	}
 		focus = {
 		id = PRC_focus_23
-		icon = ""
+		icon = GFX_goal_PRC_of_hero_tigers
 		x = 8
 		y = 11
 		cost = 1
 		prerequisite = {focus = PRC_focus_20}
-			prerequisite = {focus = PRC_focus_21}
-				prerequisite = {focus = PRC_focus_22}
+		prerequisite = {focus = PRC_focus_21}
+		prerequisite = {focus = PRC_focus_22}
 		available = {}
 		available_if_capitulated = yes
 		ai_will_do = {

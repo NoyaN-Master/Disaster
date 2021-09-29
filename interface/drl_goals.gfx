@@ -211,10 +211,34 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_PRC_puyi_letter"
-		texturefile = "gfx/interface/goals/PRC_puyi_letter.png"			
+		texturefile = "gfx/interface/goals/PRC_puyi_letter.png"		
 	}
 		SpriteType = {
 		name = "GFX_goal_PRC_Strangest_proposal_in_history"
 		texturefile = "gfx/interface/goals/PRC_Strangest_proposal_in_history.png"			
+	}
+		SpriteType = {
+		name = "GFX_goal_PRC_unholy_alliance"
+		texturefile = "gfx/interface/goals/PRC_unholy_alliance.png"			
+	}
+		SpriteType = {
+		name = "GFX_goal_PRC_peoples_emperor"
+		texturefile = "gfx/interface/goals/PRC_peoples_emperor.png"			
+	}
+		SpriteType = {
+		name = "GFX_goal_PRC_rights_of_banners"
+		texturefile = "gfx/interface/goals/PRC_rights_of_banners.png"			
+	}
+		SpriteType = {
+		name = "GFX_goal_PRC_claim_mandate"
+		texturefile = "gfx/interface/goals/PRC_claim_mandate.png"			
+	}
+		SpriteType = {
+		name = "GFX_goal_PRC_of_hero_tigers"
+		texturefile = "gfx/interface/goals/PRC_of_hero_tigers.png"			
+	}
+		SpriteType = {
+		name = "GFX_goal_PRC_the_Fox_and_the_Swan"
+		texturefile = "gfx/interface/goals/PRC_the_Fox_and_the_Swan.png"			
 	}
 }
