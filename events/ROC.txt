@@ -255,7 +255,8 @@ add_core_of = QID
   743 = {
 add_core_of = QID
 }
-   }		
+   	load_oob = "QID_1936"	
+   }	
  }
 }
 
@@ -269,6 +270,7 @@ add_core_of = QID
   transfer_state = 608
   transfer_state = 614
   transfer_state = 597
+  transfer_state = 743
   
   609 = {
 add_core_of = QID
@@ -282,6 +284,10 @@ add_core_of = QID
   597 = {
 add_core_of = QID
 }
+  743 = {
+add_core_of = QID
+}
+	load_oob = "QID_1936"
    }	
     }
 		}

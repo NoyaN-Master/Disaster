@@ -1,0 +1,44 @@
+focus_tree = {
+	id = QID_cwar
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = QID
+		}
+		}
+		continuous_focus_position = { x = 100 y = 5000 }
+	default = no	
+	
+		focus = {
+		id = QID_focus_1
+		icon = ""
+		x = 8
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		QID = { country_event = { id = qid.1}}
+		}
+	}
+	
+		focus = {
+		id = QID_focus_2
+		icon = ""
+		x = 8
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {	QID_focus_1}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		QID = { country_event = { id = qid.1}}
+		}
+	}
+}
+		
