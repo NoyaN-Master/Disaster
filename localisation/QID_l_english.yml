@@ -5,10 +5,100 @@ qid.1.t:0 "Puppet and Master"
 qid.1.d:0 "When Puyi had taken the offer to once again become Emperor of China, he had readily taken it swifter then a cheetah. He had been in exile from China since 1927, living in Japan and England, and had been desperate to reclaim his throne and his title. Of course as Puyi now understood, that desperation had largely been a childlike obsession with power and influence that was not befitting of the Emperor's actual abilities. Puyi, when it came down to it, was a weak man in many respects. He was intelligent sure, but he was physically weak, unable to put on any muscle whatsoever, and emotionally and socially stunted in many many ways. He had been unable to develop proper friendships until his exile of a few years, and in that time he had only found friends in people who were forced to serve him. He had been used by his teacher as a marketing tool, making things "approved by the Emperor of China" and being used like a puppet once again as like how it had been with the Dowager Empress. So he broke away, and he was given an interesting offer by a group of Japanese and Manchurians in Manchuria. They were forming a expedition of Imperialists to reform the Qing Empire within China, and they wanted Puyi as their Emperor once again. After taking the offer and being imported to the region, it had not taken long for China to shatter once again as it had many, many times in history. With his forced Puyi siezed the capital region of Beijing from the murderous warlord Dai Li, who had split away from the horrible Chiang. It was here, in Beijing, that Puyi sat in his favorite Tea Room and drank his tea, tea he had proudly made all by himself for the second time in his life. He thought he was becoming rather good at it all things considered, even if he had spilled the tea cakes and part of the boiling water on the floor. Although the tea calmed him, Puyi still had a nagging thought in the back of his mind that no pleasantry would ever fix. He was becoming concerned with the reliance on Japanese officers within the army, and how the Japanese had consistantly treated the Manchu soldiers who fought alongside them. They did not respect him or his soldiers, and they again would try to make Puyi a puppet within his own Empire. Will the Emperor break free of his strings and forge his own path forwards, or will he again be nothing more then a wooden beast on strings, being moved with no will of his own?"
 qid.1.a:0 "The Cup of Solid Gold "
 
+qid.2.t:0 "Japan!!"
+qid.2.d:0 "Kor do work pls"
+qid.2.a:0 "TBD"
 
+qid.3.t:0 "CHOICE?"
+qid.3.d:0 "Kor do work pls"
+qid.3.a:0 "This is puyi option"
+qid.3.b:0 "This is jap option"
+
+qid.4.t:0 "Japan!! wins"
+qid.4.d:0 "Kor do work pls"
+qid.4.a:0 "TBD"
+
+qid.5.t:0 "Puyi wins Based"
+qid.5.d:0 "Kor do work pls"
+qid.5.a:0 "TBD"
+
+qid.6.t:0 "3 WAY"
+qid.6.d:0 "Kor do work pls"
+qid.6.a:0 "TBD"
+qid.6.b:0 "TBD"
+qid.6.c:0 "TBD"
 ###Focus
-QID_focus_1:0 "Qing Dynasty Returns"
-QID_focus_1_desc:0 "Qing Dynasty Returns"
+QID_focus_1:0 "The Boy on the Jade Throne"
+QID_focus_1_desc:0 "The Boy on the Jade Throne"
+
+QID_focus_2:0 "The Japanese Exiles"
+QID_focus_2_desc:0 "The Japanese Exiles"
+
+QID_focus_3:0 "The Emperor’s Choice"
+QID_focus_3_desc:0 "The Emperor’s Choice"
+
+QID_focus_4:0 "Cherry Blossoms"
+QID_focus_4_desc:0 "Cherry Blossoms"
+
+QID_focus_5:0 "The Emperor’s Will"
+QID_focus_5_desc:0 "The Emperor’s Will"
+
+QID_focus_6:0 "To Protect the People"
+QID_focus_6_desc:0 "To Protect the People"
+
+QID_focus_7:0 "The People shall have Tea"
+QID_focus_7_desc:0 "The People shall have Tea"
+
+QID_focus_8:0 "Import Western Doctors"
+QID_focus_8_desc:0 "Import Western Doctors"
+
+QID_focus_9:0 "Banner Primacy"
+QID_focus_9_desc:0 "Banner Primacy"
+
+QID_focus_10:0 "Rise my People"
+QID_focus_10_desc:0 "Rise my People"
+
+QID_focus_11:0 "Qing Partisans"
+QID_focus_11_desc:0 "Qing Partisans"
+
+QID_focus_12:0 "Import Japanese Experts"
+QID_focus_12_desc:0 "Import Japanese Experts"
+
+QID_focus_13:0 "Sideline Qing Officers"
+QID_focus_13_desc:0 "Sideline Qing Officers"
+
+QID_focus_14:0 "Promote Bilingualism Among the Officers"
+QID_focus_14_desc:0 "Promote Bilingualism Among the Officers"
+
+QID_focus_15:0 "Death before Dishonor"
+QID_focus_15_desc:0 "Death before Dishonor"
+
+QID_focus_16:0 "Refugees Welcome"
+QID_focus_16_desc:0 "Refugees Welcome"
+
+QID_focus_17:0 "Smuggling of Japanese Arms"
+QID_focus_17_desc:0 "Smuggling of Japanese Arms"
+
+QID_focus_18:0 "Emperor or Minister"
+QID_focus_18_desc:0 "Emperor or Minister"
+
+QID_focus_19:0 "Silence Japenese Ministers"
+QID_focus_19_desc:0 "Silence Japenese Ministers"
+
+QID_focus_20:0 "Declaration of the Rights of Man"
+QID_focus_20_desc:0 "Declaration of the Rights of Man"
+
+QID_focus_21:0 "Tie the Strings"
+QID_focus_21_desc:0 "Tie the Strings"
+
+QID_focus_22:0 "Encourage the Japanese language"
+QID_focus_22_desc:0 "Encourage the Japanese language"
+
+QID_focus_23:0 "Let it Flow"
+QID_focus_23_desc:0 "Let it Flow"
+
+QID_focus_24:0 "Announce the first Parliament"
+QID_focus_24_desc:0 "Announce the first Parliament"
 #####ideas
 
 ###Decisions
@@ -17,4 +107,8 @@ QID_focus_1_desc:0 "Qing Dynasty Returns"
 ##########missions###########
 
 ###Tool Tips
-
+Puyibased_flag:0 "Puyi has made his choice..."
+JapCringe_flag:0 "Puyi has made his choice..."
+PUYI_WINS_BASED_FLAG:0 "§BPuyi has cut the marionettes strings§!"
+JAP_WINS_OK_FLAG:0 "§RPuyi is destined to serve Japan§!"
+LIB_CRINGE_FLAG:0 "§GA careful balance must be achieved§!"
