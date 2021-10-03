@@ -7,9 +7,9 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARM_Struggle_for_Existence"}
 			picture = ARM_Struggle_for_Existence
 			modifier = {
-                               army_core_attack_factor = 0.1
-                               army_core_defence_factor = 0.1
-                               conscription_factor = 0.04
+                               army_core_attack_factor = 0.05
+                               army_core_defence_factor = 0.05
+                               conscription_factor = 0.02
 			}
 		}
 
@@ -26,13 +26,13 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARM_Struggle_for_Existence"}
 			picture = ARM_Struggle_for_Existence
 			modifier = {
-                               army_core_attack_factor = 0.15
-                               army_core_defence_factor = 0.15
-                               conscription_factor = 0.05
+                               army_core_attack_factor = 0.1
+                               army_core_defence_factor = 0.1
+                               conscription_factor = 0.03
 			}
                         targeted_modifier = {
 				     tag = CIB
-				     defense_bonus_against = 0.1
+				     defense_bonus_against = 0.05
 		        }
 		}
 
@@ -86,17 +86,12 @@ ideas = {
                               army_core_attack_factor = 0.1
                               army_core_defence_factor = 0.1
                               conscription_factor = 0.1
-                              local_manpower = 0.06
+                              local_manpower = 0.05
 			      weekly_manpower = 3000
-                              offence = 0.1
-                              defence = 0.1
-                              army_org_factor = 0.12
+                              offence = 0.05
+                              defence = 0.05
+                              army_org_factor = 0.1
 			}
-                        targeted_modifier = {
-				     tag = WRF
-				     attack_bonus_against = 0.1
-				     defense_bonus_against = 0.1
-		        }
 		}
 
                 ARM_Bright_Future = {

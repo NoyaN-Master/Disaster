@@ -1,5 +1,30 @@
 
 TUR_unification_category = {
+	TUR_KILL_ARMENIANS = {
+		fire_only_once = yes
+		cost = 0
+		visible = {
+			country_exists = ARM
+			NOT = {
+				country_exists = CIB
+				original_tag = ARM
+			}
+			owns_state = 340
+			owns_state = 797
+			owns_state = 346
+			owns_state = 356
+			owns_state = 347
+		}
+		available = {
+			has_war = no
+		}
+		complete_effect = {
+			declare_war_on = {
+				target = ARM
+				type = annex_everything
+			}
+		}
+	}	
 	wrf_ataturk_unify_decision = {
 	    fire_only_once = yes
 		cost = 0
@@ -1962,3 +1987,6 @@ Ethem_FuckGreeks = {
 		}
      }     
 }
+
+
+	

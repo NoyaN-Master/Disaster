@@ -557,6 +557,10 @@ spriteType = {
 		texturefile = "gfx/interface/ideas/NGU_Economics.dds"
 	}
 spriteType = {
+		name = "GFX_idea_CIB_homecoming"
+		texturefile = "gfx/interface/ideas/CIB_homecoming.png"
+	}
+spriteType = {
 		name = "GFX_idea_NGU_paramilitary_problem"
 		texturefile = "gfx/interface/ideas/NGU_paramilitary_problem.dds"
 	}	
@@ -611,5 +615,21 @@ spriteType = {
 spriteType = {
 		name = "GFX_idea_IZM_MLK"
 		texturefile = "gfx/interface/ideas/IZM_MLK.dds"
+	}
+
+
+
+
+	spriteType = {
+		name = "GFX_trait_komtur_des_deutschritterordens"
+		texturefile = "gfx/interface/traits/trait_komtur_des_deutschritterordens.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_oberkommando_der_heimwehr"
+		texturefile = "gfx/interface/traits/trait_oberkommando_der_heimwehr.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_sturmkorps_reichsfuehrer"
+		texturefile = "gfx/interface/traits/trait_sturmkorps_reichsfuehrer.dds"
 	}	
 }	

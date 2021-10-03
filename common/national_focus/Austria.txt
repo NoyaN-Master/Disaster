@@ -82,7 +82,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUT_volksautobahn
-		icon = GFX_goal_AUT_volksautobahn
+		icon = GFX_goal_LBA_tobruk
 		prerequisite = { focus = AUT_economic_reforms }
 		x = 4
 		y = 2
@@ -147,7 +147,7 @@ focus_tree = {
 
 	focus = {
 		id = AUT_electronics_innovation
-		icon = GFX_goal_AUT_electronics_innovation
+		icon = GFX_goal_invest_in_estates_
 		prerequisite = { focus = AUT_economic_reforms }
 		x = 6
 		y = 2
@@ -174,7 +174,7 @@ focus_tree = {
 
 	focus = {
 		id = AUT_found_the_voestalpine
-		icon = GFX_goal_AUT_found_the_voestalpine
+		icon = GFX_goal_silesian_steel
 		prerequisite = { focus = AUT_economic_reforms }
 		x = 6
 		y = 3
@@ -223,7 +223,7 @@ focus_tree = {
 
 	focus = {
 		id = AUT_expand_the_semperit
-		icon = GFX_goal_AUT_expand_the_semperit
+		icon = GFX_goal_IZM_our_great_homeland
 		prerequisite = { focus = AUT_volksautobahn }
 		x = 4
 		y = 3
@@ -257,7 +257,7 @@ focus_tree = {
 
 	focus = {
 		id = AUT_wienerwerke
-		icon = GFX_goal_AUT_wienerwerke
+		icon = GFX_goal_pro_worker_indus
 		prerequisite = { focus = AUT_industrial_innovation }
 		x = 2
 		y = 3
@@ -292,7 +292,7 @@ focus_tree = {
 
 	focus = {
 		id = AUT_industrial_innovation
-		icon = GFX_goal_AUT_industrial_innovation
+		icon = GFX_goal_ismet_etatism
 		prerequisite = { focus = AUT_economic_reforms }
 		x = 2
 		y = 2
@@ -780,513 +780,513 @@ focus_tree = {
         }
 	}
 	
-	focus = {
-		id = AUT_rearm_bundesheer
-		icon = GFX_goal_rearm_bundesheer
-		prerequisite = { }
-		x = -7
-		y = 1
-		cost = 6
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			has_country_flag = AUT_dollfuss_in_power				
-		}	
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			add_war_support = 0.02
-			add_tech_bonus = {
-				name = AUS_rearm_bundesheer
-				bonus = 0.75
-				uses = 1
-				category = infantry_weapons
-			}
+	# focus = {
+	# 	id = AUT_rearm_bundesheer
+	# 	icon = GFX_goal_rearm_bundesheer
+	# 	prerequisite = { }
+	# 	x = -7
+	# 	y = 1
+	# 	cost = 6
+	# 	ai_will_do = {
+	# 		factor = 100
+	# 	}
+	# 	available = {
+	# 		has_country_flag = AUT_dollfuss_in_power				
+	# 	}	
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
+	# 	search_filters = { FOCUS_FILTER_INDUSTRY }
+	# 	completion_reward = {
+	# 		add_war_support = 0.02
+	# 		add_tech_bonus = {
+	# 			name = AUS_rearm_bundesheer
+	# 			bonus = 0.75
+	# 			uses = 1
+	# 			category = infantry_weapons
+	# 		}
 
-        }
-	}
+    #     }
+	# }
 	
-	focus = {
-		id = AUT_deal_with_porsche
-		icon = GFX_goal_AUT_deal_with_porsche
-		prerequisite = { focus = AUT_rearm_bundesheer }
-		x = -8
-		y = 2
-		cost = 6
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			has_country_flag = AUT_dollfuss_in_power				
-		}	
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
+	# focus = {
+	# 	id = AUT_deal_with_porsche
+	# 	icon = GFX_goal_AUT_deal_with_porsche
+	# 	prerequisite = { focus = AUT_rearm_bundesheer }
+	# 	x = -8
+	# 	y = 2
+	# 	cost = 6
+	# 	ai_will_do = {
+	# 		factor = 100
+	# 	}
+	# 	available = {
+	# 		has_country_flag = AUT_dollfuss_in_power				
+	# 	}	
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
+	# 	search_filters = { FOCUS_FILTER_INDUSTRY }
+	# 	completion_reward = {
 		
 
-			add_tech_bonus = {
-				name = AUS_deal_with_porsche
-				bonus = 0.75
-				uses = 1
-				category = armor
-			}
+	# 		add_tech_bonus = {
+	# 			name = AUS_deal_with_porsche
+	# 			bonus = 0.75
+	# 			uses = 1
+	# 			category = armor
+	# 		}
 
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}		
-			}
-        }
-	}		
-
-	
+	# 		random_owned_controlled_state = {
+	# 			add_extra_state_shared_building_slots = 2
+	# 			add_building_construction = {
+	# 				type = arms_factory
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 		random_owned_controlled_state = {
+	# 			add_extra_state_shared_building_slots = 2
+	# 			add_building_construction = {
+	# 				type = arms_factory
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}		
+	# 		}
+    #     }
+	# }		
 
 	
 
-	focus = {
-		id = AUT_expand_steyrwerke
-		icon = GFX_goal_AUT_expand_steyrwerke
-		prerequisite = { focus = AUT_rearm_bundesheer }
-		x = -6
-		y = 2
-		cost = 6
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			has_country_flag = AUT_dollfuss_in_power				
-		}	
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
+	
+
+	# focus = {
+	# 	id = AUT_expand_steyrwerke
+	# 	icon = GFX_goal_AUT_expand_steyrwerke
+	# 	prerequisite = { focus = AUT_rearm_bundesheer }
+	# 	x = -6
+	# 	y = 2
+	# 	cost = 6
+	# 	ai_will_do = {
+	# 		factor = 100
+	# 	}
+	# 	available = {
+	# 		has_country_flag = AUT_dollfuss_in_power				
+	# 	}	
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
+	# 	search_filters = { FOCUS_FILTER_INDUSTRY }
+	# 	completion_reward = {
 			
-			add_tech_bonus = {
-				name = AUS_deal_with_porsche
-				bonus = 0.75
-				uses = 1
-				category = artillery
-			}
+	# 		add_tech_bonus = {
+	# 			name = AUS_deal_with_porsche
+	# 			bonus = 0.75
+	# 			uses = 1
+	# 			category = artillery
+	# 		}
 			
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}		
-			}
-        }
-	}
+	# 		random_owned_controlled_state = {
+	# 			add_extra_state_shared_building_slots = 2
+	# 			add_building_construction = {
+	# 				type = arms_factory
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 		random_owned_controlled_state = {
+	# 			add_extra_state_shared_building_slots = 2
+	# 			add_building_construction = {
+	# 				type = arms_factory
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}		
+	# 		}
+    #     }
+	# }
 
-	focus = {
-		id = AUT_paramilitary_fuss
-		icon = GFX_goal_AUT_paramilitary_fuss
-		prerequisite = { focus = AUT_deal_with_porsche }
-		prerequisite = { focus = AUT_expand_steyrwerke }
-		x = -7
-		y = 3
-		cost = 6
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			has_country_flag = AUT_dollfuss_in_power				
-		}	
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			country_event = aut.79
-        }
-	}
+	# focus = {
+	# 	id = AUT_paramilitary_fuss
+	# 	icon = GFX_goal_AUT_paramilitary_fuss
+	# 	prerequisite = { focus = AUT_deal_with_porsche }
+	# 	prerequisite = { focus = AUT_expand_steyrwerke }
+	# 	x = -7
+	# 	y = 3
+	# 	cost = 6
+	# 	ai_will_do = {
+	# 		factor = 100
+	# 	}
+	# 	available = {
+	# 		has_country_flag = AUT_dollfuss_in_power				
+	# 	}	
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
+	# 	search_filters = { FOCUS_FILTER_INDUSTRY }
+	# 	completion_reward = {
+	# 		country_event = aut.79
+    #     }
+	# }
 
-	focus = {
-		id = AUT_side_with_heimwehr
-		icon = GFX_goal_AUT_side_with_heimwehr
-		prerequisite = { focus = AUT_paramilitary_fuss }
-		mutually_exclusive = { focus = AUT_side_with_sturmkorps }
-		mutually_exclusive = { focus = AUT_side_with_sturmscharen }
+	# focus = {
+	# 	id = AUT_side_with_heimwehr
+	# 	icon = GFX_goal_AUT_side_with_heimwehr
+	# 	prerequisite = { focus = AUT_paramilitary_fuss }
+	# 	mutually_exclusive = { focus = AUT_side_with_sturmkorps }
+	# 	mutually_exclusive = { focus = AUT_side_with_sturmscharen }
 	
-		x = -11
-		y = 4
-		cost = 0
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			has_country_flag = AUT_dollfuss_in_power		
-		}	
-		available = { 
-			has_country_flag = AUT_side_with_heimwehr_option	
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
+	# 	x = -11
+	# 	y = 4
+	# 	cost = 0
+	# 	ai_will_do = {
+	# 		factor = 100
+	# 	}
+	# 	available = {
+	# 		has_country_flag = AUT_dollfuss_in_power		
+	# 	}	
+	# 	available = { 
+	# 		has_country_flag = AUT_side_with_heimwehr_option	
+	# 	}
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
+	# 	search_filters = { FOCUS_FILTER_INDUSTRY }
+	# 	completion_reward = {
 			
-        }
-	}
+    #     }
+	# }
 
-	focus = {
-		id = AUT_new_OKH
-		icon = GFX_goal_AUT_new_OKH
-		prerequisite = { focus = AUT_side_with_heimwehr }
+	# focus = {
+	# 	id = AUT_new_OKH
+	# 	icon = GFX_goal_AUT_new_OKH
+	# 	prerequisite = { focus = AUT_side_with_heimwehr }
 
-		x = -11
-		y = 5
-		cost = 6
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			has_country_flag = AUT_dollfuss_in_power				
-		}	
+	# 	x = -11
+	# 	y = 5
+	# 	cost = 6
+	# 	ai_will_do = {
+	# 		factor = 100
+	# 	}
+	# 	available = {
+	# 		has_country_flag = AUT_dollfuss_in_power				
+	# 	}	
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
+	# 	search_filters = { FOCUS_FILTER_INDUSTRY }
+	# 	completion_reward = {
 		
-        }
-	}
+    #     }
+	# }
 
 
 
-	focus = {
-		id = AUT_superb_militarism
-		icon = GFX_goal_AUT_superb_militarism
-		prerequisite = { focus = AUT_new_OKH }
+	# focus = {
+	# 	id = AUT_superb_militarism
+	# 	icon = GFX_goal_AUT_superb_militarism
+	# 	prerequisite = { focus = AUT_new_OKH }
 
-		x = -10
-		y = 6
-		cost = 6
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			has_country_flag = AUT_dollfuss_in_power				
-		}	
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
+	# 	x = -10
+	# 	y = 6
+	# 	cost = 6
+	# 	ai_will_do = {
+	# 		factor = 100
+	# 	}
+	# 	available = {
+	# 		has_country_flag = AUT_dollfuss_in_power				
+	# 	}	
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
+	# 	search_filters = { FOCUS_FILTER_INDUSTRY }
+	# 	completion_reward = {
 		
-        }
-	}
+    #     }
+	# }
 
 
-	focus = {
-		id = AUT_Militaeruebermacht
-		icon = GFX_goal_AUT_Militaeruebermacht
-		prerequisite = { focus = AUT_new_OKH }
+	# focus = {
+	# 	id = AUT_Militaeruebermacht
+	# 	icon = GFX_goal_AUT_Militaeruebermacht
+	# 	prerequisite = { focus = AUT_new_OKH }
 
-		x = -12
-		y = 6
-		cost = 6
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			has_country_flag = AUT_dollfuss_in_power				
-		}	
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
+	# 	x = -12
+	# 	y = 6
+	# 	cost = 6
+	# 	ai_will_do = {
+	# 		factor = 100
+	# 	}
+	# 	available = {
+	# 		has_country_flag = AUT_dollfuss_in_power				
+	# 	}	
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
+	# 	search_filters = { FOCUS_FILTER_INDUSTRY }
+	# 	completion_reward = {
 		
-        }
-	}
+    #     }
+	# }
 
-	focus = {
-		id = AUT_new_austrian_army
-		icon = GFX_goal_AUT_new_austrian_army
-		prerequisite = { focus = AUT_superb_militarism }
-		prerequisite = { focus = AUT_Militaeruebermacht }
-		x = -11
-		y = 7
-		cost = 6
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			has_country_flag = AUT_dollfuss_in_power				
-		}	
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
+	# focus = {
+	# 	id = AUT_new_austrian_army
+	# 	icon = GFX_goal_AUT_new_austrian_army
+	# 	prerequisite = { focus = AUT_superb_militarism }
+	# 	prerequisite = { focus = AUT_Militaeruebermacht }
+	# 	x = -11
+	# 	y = 7
+	# 	cost = 6
+	# 	ai_will_do = {
+	# 		factor = 100
+	# 	}
+	# 	available = {
+	# 		has_country_flag = AUT_dollfuss_in_power				
+	# 	}	
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
+	# 	search_filters = { FOCUS_FILTER_INDUSTRY }
+	# 	completion_reward = {
 		
-        }
-	}
+    #     }
+	# }
 
-	focus = {
-		id = AUT_side_with_sturmscharen
-		icon = GFX_goal_AUT_side_with_sturmscharen
-		prerequisite = { focus = AUT_paramilitary_fuss }
-		mutually_exclusive = { focus = AUT_side_with_heimwehr }
-		mutually_exclusive = { focus = AUT_side_with_sturmkorps }
-		x = -3
-		y = 4
-		cost = 0
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			has_country_flag = AUT_dollfuss_in_power			
-		}	
-		available = { 
-			has_country_flag = AUT_side_with_sturmscharen_option	
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
+	# focus = {
+	# 	id = AUT_side_with_sturmscharen
+	# 	icon = GFX_goal_AUT_side_with_sturmscharen
+	# 	prerequisite = { focus = AUT_paramilitary_fuss }
+	# 	mutually_exclusive = { focus = AUT_side_with_heimwehr }
+	# 	mutually_exclusive = { focus = AUT_side_with_sturmkorps }
+	# 	x = -3
+	# 	y = 4
+	# 	cost = 0
+	# 	ai_will_do = {
+	# 		factor = 100
+	# 	}
+	# 	available = {
+	# 		has_country_flag = AUT_dollfuss_in_power			
+	# 	}	
+	# 	available = { 
+	# 		has_country_flag = AUT_side_with_sturmscharen_option	
+	# 	}
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
+	# 	search_filters = { FOCUS_FILTER_INDUSTRY }
+	# 	completion_reward = {
 		
-        }
-	}
+    #     }
+	# }
 
-	focus = {
-		id = AUT_Komtur_der_SS
-		icon = GFX_goal_AUT_Komtur_der_SS
-		prerequisite = { focus = AUT_side_with_sturmscharen }
+	# focus = {
+	# 	id = AUT_Komtur_der_SS
+	# 	icon = GFX_goal_AUT_Komtur_der_SS
+	# 	prerequisite = { focus = AUT_side_with_sturmscharen }
 	
-		x = -3
-		y = 5
-		cost = 6
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			has_country_flag = AUT_dollfuss_in_power				
-		}	
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
+	# 	x = -3
+	# 	y = 5
+	# 	cost = 6
+	# 	ai_will_do = {
+	# 		factor = 100
+	# 	}
+	# 	available = {
+	# 		has_country_flag = AUT_dollfuss_in_power				
+	# 	}	
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
+	# 	search_filters = { FOCUS_FILTER_INDUSTRY }
+	# 	completion_reward = {
 		
-        }
-	}
+    #     }
+	# }
 
-	focus = {
-		id = AUT_religious_fanaticism
-		icon = GFX_goal_AUT_religious_fanaticism
-		prerequisite = { focus = AUT_Komtur_der_SS }
+	# focus = {
+	# 	id = AUT_religious_fanaticism
+	# 	icon = GFX_goal_AUT_religious_fanaticism
+	# 	prerequisite = { focus = AUT_Komtur_der_SS }
 	
-		x = -2
-		y = 6
-		cost = 6
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			has_country_flag = AUT_dollfuss_in_power				
-		}	
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
+	# 	x = -2
+	# 	y = 6
+	# 	cost = 6
+	# 	ai_will_do = {
+	# 		factor = 100
+	# 	}
+	# 	available = {
+	# 		has_country_flag = AUT_dollfuss_in_power				
+	# 	}	
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
+	# 	search_filters = { FOCUS_FILTER_INDUSTRY }
+	# 	completion_reward = {
 		
-        }
-	}
+    #     }
+	# }
 
-	focus = {
-		id = AUT_auferstehung_der_teutonen
-		icon = GFX_goal_AUT_auferstehung_der_teutonen
-		prerequisite = { focus = AUT_religious_fanaticism}
-		prerequisite = { focus = AUT_deus_vult}
+	# focus = {
+	# 	id = AUT_auferstehung_der_teutonen
+	# 	icon = GFX_goal_AUT_auferstehung_der_teutonen
+	# 	prerequisite = { focus = AUT_religious_fanaticism}
+	# 	prerequisite = { focus = AUT_deus_vult}
 
-		x = -3
-		y = 7
-		cost = 6
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			has_country_flag = AUT_dollfuss_in_power				
-		}	
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
+	# 	x = -3
+	# 	y = 7
+	# 	cost = 6
+	# 	ai_will_do = {
+	# 		factor = 100
+	# 	}
+	# 	available = {
+	# 		has_country_flag = AUT_dollfuss_in_power				
+	# 	}	
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
+	# 	search_filters = { FOCUS_FILTER_INDUSTRY }
+	# 	completion_reward = {
 		
-        }
-	}
+    #     }
+	# }
 
-	focus = {
-		id = AUT_deus_vult
-		icon = GFX_goal_AUT_Deus_vult
-		prerequisite = { focus = AUT_Komtur_der_SS}
+	# focus = {
+	# 	id = AUT_deus_vult
+	# 	icon = GFX_goal_AUT_Deus_vult
+	# 	prerequisite = { focus = AUT_Komtur_der_SS}
 	
-		x = -4
-		y = 6
-		cost = 6
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			has_country_flag = AUT_dollfuss_in_power				
-		}	
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
+	# 	x = -4
+	# 	y = 6
+	# 	cost = 6
+	# 	ai_will_do = {
+	# 		factor = 100
+	# 	}
+	# 	available = {
+	# 		has_country_flag = AUT_dollfuss_in_power				
+	# 	}	
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
+	# 	search_filters = { FOCUS_FILTER_INDUSTRY }
+	# 	completion_reward = {
 		
-        }
-	}
+    #     }
+	# }
 
-	focus = {
-		id = AUT_side_with_sturmkorps
-		icon = GFX_goal_AUT_side_with_sturmkorps
-		prerequisite = { focus = AUT_paramilitary_fuss }
-		mutually_exclusive = { focus = AUT_side_with_heimwehr }
-		mutually_exclusive = { focus = AUT_side_with_sturmscharen }
-		x = -7
-		y = 4
-		cost = 0
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			has_country_flag = AUT_dollfuss_in_power		
-		}	
-		available = { 
-			has_country_flag = AUT_side_with_sturmkorps_option
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
+	# focus = {
+	# 	id = AUT_side_with_sturmkorps
+	# 	icon = GFX_goal_AUT_side_with_sturmkorps
+	# 	prerequisite = { focus = AUT_paramilitary_fuss }
+	# 	mutually_exclusive = { focus = AUT_side_with_heimwehr }
+	# 	mutually_exclusive = { focus = AUT_side_with_sturmscharen }
+	# 	x = -7
+	# 	y = 4
+	# 	cost = 0
+	# 	ai_will_do = {
+	# 		factor = 100
+	# 	}
+	# 	available = {
+	# 		has_country_flag = AUT_dollfuss_in_power		
+	# 	}	
+	# 	available = { 
+	# 		has_country_flag = AUT_side_with_sturmkorps_option
+	# 	}
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
+	# 	search_filters = { FOCUS_FILTER_INDUSTRY }
+	# 	completion_reward = {
 		
-        }
-	}
+    #     }
+	# }
 
-	focus = {
-		id = AUT_new_SK_fuehrer
-		icon = GFX_goal_AUT_new_SK_fuehrer
-		prerequisite = { focus = AUT_side_with_sturmkorps }
-		x = -7
-		y = 5
-		cost = 6
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			has_country_flag = AUT_dollfuss_in_power				
-		}	
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
+	# focus = {
+	# 	id = AUT_new_SK_fuehrer
+	# 	icon = GFX_goal_AUT_new_SK_fuehrer
+	# 	prerequisite = { focus = AUT_side_with_sturmkorps }
+	# 	x = -7
+	# 	y = 5
+	# 	cost = 6
+	# 	ai_will_do = {
+	# 		factor = 100
+	# 	}
+	# 	available = {
+	# 		has_country_flag = AUT_dollfuss_in_power				
+	# 	}	
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
+	# 	search_filters = { FOCUS_FILTER_INDUSTRY }
+	# 	completion_reward = {
 		
-        }
-	}
+    #     }
+	# }
 
-	focus = {
-		id = AUT_blut_und_boden
-		icon = GFX_goal_AUT_blut_und_boden
-		prerequisite = { focus = AUT_new_SK_fuehrer }
-		x = -8
-		y = 6
-		cost = 6
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			has_country_flag = AUT_dollfuss_in_power				
-		}	
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
+	# focus = {
+	# 	id = AUT_blut_und_boden
+	# 	icon = GFX_goal_AUT_blut_und_boden
+	# 	prerequisite = { focus = AUT_new_SK_fuehrer }
+	# 	x = -8
+	# 	y = 6
+	# 	cost = 6
+	# 	ai_will_do = {
+	# 		factor = 100
+	# 	}
+	# 	available = {
+	# 		has_country_flag = AUT_dollfuss_in_power				
+	# 	}	
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
+	# 	search_filters = { FOCUS_FILTER_INDUSTRY }
+	# 	completion_reward = {
 		
-        }
-	}
+    #     }
+	# }
 
-	focus = {
-		id = AUT_austrias_elite
-		icon = GFX_goal_AUT_austrias_elite
-		prerequisite = { focus = AUT_blut_und_boden}
-		prerequisite = { focus = AUT_pan_germanism }
-		x = -7
-		y = 7
-		cost = 6
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			has_country_flag = AUT_dollfuss_in_power				
-		}	
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
+	# focus = {
+	# 	id = AUT_austrias_elite
+	# 	icon = GFX_goal_AUT_austrias_elite
+	# 	prerequisite = { focus = AUT_blut_und_boden}
+	# 	prerequisite = { focus = AUT_pan_germanism }
+	# 	x = -7
+	# 	y = 7
+	# 	cost = 6
+	# 	ai_will_do = {
+	# 		factor = 100
+	# 	}
+	# 	available = {
+	# 		has_country_flag = AUT_dollfuss_in_power				
+	# 	}	
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
+	# 	search_filters = { FOCUS_FILTER_INDUSTRY }
+	# 	completion_reward = {
 		
-        }
-	}
+    #     }
+	# }
 
-	focus = {
-		id = AUT_pan_germanism
-		icon = GFX_goal_AUT_pan_germanism
-		prerequisite = { focus = AUT_new_SK_fuehrer }
-		x = -6
-		y = 6
-		cost = 6
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			has_country_flag = AUT_dollfuss_in_power				
-		}	
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
+	# focus = {
+	# 	id = AUT_pan_germanism
+	# 	icon = GFX_goal_AUT_pan_germanism
+	# 	prerequisite = { focus = AUT_new_SK_fuehrer }
+	# 	x = -6
+	# 	y = 6
+	# 	cost = 6
+	# 	ai_will_do = {
+	# 		factor = 100
+	# 	}
+	# 	available = {
+	# 		has_country_flag = AUT_dollfuss_in_power				
+	# 	}	
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
+	# 	search_filters = { FOCUS_FILTER_INDUSTRY }
+	# 	completion_reward = {
 		
-        }
-	}
-
+    #     }
+	# }
+	### commented out because of perkels fucking autism ###
 
 	focus = {
 		id = AUT_deepen_church_ties
