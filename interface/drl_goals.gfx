@@ -241,4 +241,65 @@ spriteTypes = {
 		name = "GFX_goal_PRC_the_Fox_and_the_Swan"
 		texturefile = "gfx/interface/goals/PRC_the_Fox_and_the_Swan.png"			
 	}
+	#####################SHINE THEM###################
+		SpriteType = {
+		name = "GFX_goal_ROC_liberation_war"
+		texturefile = "gfx/interface/goals/ROC_liberation_war.png"			
+	}
+		SpriteType = {
+		name = "GFX_goal_ROC_recruite_wei_lihuang"
+		texturefile = "gfx/interface/goals/ROC_recruite_wei_lihuang.png"			
+	}
+		SpriteType = {
+		name = "GFX_goal_ROC_wei_lhuangs_plan"
+		texturefile = "gfx/interface/goals/ROC_wei_lhuangs_plan.png"			
+	}
+		SpriteType = {
+		name = "GFX_goal_ROC_wei_lihuangs_elite"
+		texturefile = "gfx/interface/goals/ROC_wei_lihuangs_elite.png"			
+	}
+		SpriteType = {
+		name = "GFX_goal_ROC_xue_yues_plan"
+		texturefile = "gfx/interface/goals/ROC_xue_yues_plan.png"			
+	}
+		SpriteType = {
+		name = "GFX_goal_ROC_xue_yues_handpicked"
+		texturefile = "gfx/interface/goals/ROC_xue_yues_handpicked.png"			
+	}
+		SpriteType = {
+		name = "GFX_goal_ROC_emergency_weapons_act"
+		texturefile = "gfx/interface/goals/ROC_emergency_weapons_act.png"			
+	}
+		SpriteType = {
+		name = "GFX_goal_ROC_labour_emergency"
+		texturefile = "gfx/interface/goals/ROC_labour_emergency.png"			
+	}
+		SpriteType = {
+		name = "GFX_goal_ROC_14_hour_work_act"
+		texturefile = "gfx/interface/goals/ROC_14_hour_work_act.png"			
+	}
+		SpriteType = {
+		name = "GFX_goal_ROC_even_more_guns"
+		texturefile = "gfx/interface/goals/ROC_even_more_guns.png"			
+	}
+		SpriteType = {
+		name = "GFX_goal_ROC_hold_the_line"
+		texturefile = "gfx/interface/goals/ROC_hold_the_line.png"			
+	}
+		SpriteType = {
+		name = "GFX_goal_ROC_nationalist_sabotage"
+		texturefile = "gfx/interface/goals/ROC_nationalist_sabotage.png"			
+	}
+		SpriteType = {
+		name = "GFX_goal_ROC_convert_civillian_aircraft"
+		texturefile = "gfx/interface/goals/ROC_convert_civillian_aircraft.png"			
+	}
+		SpriteType = {
+		name = "GFX_goal_ROC_convert_civillian_vehicles"
+		texturefile = "gfx/interface/goals/ROC_convert_civillian_vehicles.png"			
+	}
+		SpriteType = {
+		name = "GFX_goal_ROC_seize_civillian_arms"
+		texturefile = "gfx/interface/goals/ROC_seize_civillian_arms.png"			
+	}
 }
