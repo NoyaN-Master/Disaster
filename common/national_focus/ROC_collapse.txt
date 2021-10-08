@@ -16,7 +16,7 @@ focus_tree = {
 	
 	focus = {
 		id = ROC_focus_13
-		icon = ""
+		icon = "GFX_goal_ROC_liberation_war"
 		x = 10
 		y = 5
 		cost = 1
@@ -32,7 +32,7 @@ focus_tree = {
 		
 	focus = {
 		id = ROC_focus_14
-		icon = ""
+		icon = "GFX_goal_ROC_emergency_weapons_act"
 		x = 14
 		y = 6
 		cost = 8
@@ -47,7 +47,7 @@ focus_tree = {
 	}
 		focus = {
 		id = ROC_focus_15
-		icon = ""
+		icon = "GFX_goal_ROC_labour_emergency"
 		x = 14
 		y = 7
 		cost = 8
@@ -62,7 +62,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROC_focus_16
-		icon = ""
+		icon = "GFX_goal_ROC_14_hour_work_act"
 		x = 14
 		y = 8
 		cost = 8
@@ -78,7 +78,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROC_focus_17
-		icon = ""
+		icon = "GFX_goal_ROC_convert_civillian_aircraft"
 		x = 6
 		y = 6
 		cost = 8
@@ -97,7 +97,7 @@ focus_tree = {
 	}
 		focus = {
 		id = ROC_focus_18
-		icon = ""
+		icon = "GFX_goal_ROC_convert_civillian_vehicles"
 		x = 6
 		y = 7
 		cost = 8
@@ -118,7 +118,7 @@ focus_tree = {
 	
 		focus = {
 		id = ROC_focus_19
-		icon = ""
+		icon = "GFX_goal_ROC_seize_civillian_arms"
 		x = 6
 		y = 8
 		cost = 8
@@ -138,7 +138,7 @@ focus_tree = {
 	}
 		focus = {
 		id = ROC_focus_20
-		icon = ""
+		icon = "GFX_goal_ROC_even_more_guns"
 		available = {surrender_progress > 0.25}
 		x = 10
 		y = 6
@@ -154,7 +154,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROC_focus_21
-		icon = ""
+		icon = "GFX_goal_ROC_hold_the_line"
 		available = {surrender_progress > 0.5}
 		x = 10
 		y = 7
@@ -170,7 +170,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROC_focus_22
-		icon = ""
+		icon = "GFX_goal_ROC_nationalist_sabotage"
 		available = {surrender_progress > 0.75}
 		x = 10
 		y = 8
@@ -236,7 +236,7 @@ focus_tree = {
 	}
 		focus = {
 		id = ROC_focus_25
-		icon = ""
+		icon = "GFX_goal_ROC_recruite_wei_lihuang"
 		available = {has_country_flag = ROC_wei_lihuang}
 		mutually_exclusive = {focus = ROC_focus_25 focus = ROC_focus_24}
 		x = 12
@@ -264,7 +264,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROC_focus_26
-		icon = ""
+		icon = "GFX_goal_ROC_wei_lhuangs_plan"
 		#available = {has_country_flag = ROC_wei_lihuang}
 		x = 12
 		y = 3
@@ -280,7 +280,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROC_focus_27
-		icon = ""
+		icon = "GFX_goal_ROC_wei_lihuangs_elite"
 		#available = {}
 		x = 12
 		y = 4
@@ -296,7 +296,7 @@ focus_tree = {
 	}
 		focus = {
 		id = ROC_focus_28
-		icon = ""
+		icon = GFX_goal_ROC_xue_yues_plan
 		#available = {has_country_flag = ROC_wei_lihuang}
 		x = 8
 		y = 3
@@ -312,7 +312,7 @@ focus_tree = {
 	}
 		focus = {
 		id = ROC_focus_29
-		icon = ""
+		icon = GFX_goal_ROC_xue_yues_handpicked
 		#available = {has_country_flag = ROC_wei_lihuang}
 		x = 8
 		y = 4
