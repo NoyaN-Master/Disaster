@@ -192,7 +192,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-	 
+	 add_ideas = QID_cwar_jap_oversight
+	 hidden_effect = {add_ideas = QID_cwar_qing_jap_who}
 		}
 	}
 		focus = {
@@ -207,7 +208,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-	 
+	remove_idea = QID_cwar_qing_jap_who
 		}
 	}
 		focus = {
@@ -222,9 +223,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-	 
+	 swap_ideas = {
+    remove_idea = QID_cwar_jap_oversight
+    add_idea = QID_cwar_jap_oversight_2
 		}
 	}
+}
 		focus = {
 		id = QID_focus_15
 		icon = ""
@@ -237,7 +241,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-	 
+	add_idea = QID_cwar_bushido_tactics
 		}
 	}
 		focus = {
