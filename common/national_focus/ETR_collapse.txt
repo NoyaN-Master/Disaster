@@ -1,0 +1,173 @@
+focus_tree = {
+	id = ETR_cwar
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ETR
+		}
+		}
+		continuous_focus_position = { x = 100 y = 5000 }
+	default = no	
+	
+	focus = {
+		id = ETR_focus_1
+		icon = ""
+		x = 8
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ETR_focus_2
+		icon = ""
+		x = 9
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {focus = ETR_focus_1}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ETR_focus_3
+		icon = ""
+		x = 7
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {focus = ETR_focus_1}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ETR_focus_4
+		icon = ""
+		x = 8
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {focus = ETR_focus_2}
+		prerequisite = {focus = ETR_focus_3}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ETR_focus_5
+		icon = ""
+		x = 2
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {focus = ETR_focus_4}
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = ETR_focus_6
+		icon = ""
+		x = 2
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {focus = ETR_focus_5}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ETR_focus_7
+		icon = ""
+		x = 4
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {focus = ETR_focus_5}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ETR_focus_8
+		icon = ""
+		x = 0
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {focus = ETR_focus_5}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ETR_focus_9
+		icon = ""
+		x = 1
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {focus = ETR_focus_6}
+		prerequisite = {focus = ETR_focus_7}
+		prerequisite = {focus = ETR_focus_8}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ETR_focus_10
+		icon = ""
+		x = 3
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {focus = ETR_focus_6}
+		prerequisite = {focus = ETR_focus_7}
+		prerequisite = {focus = ETR_focus_8}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ETR_focus_11
+		icon = ""
+		x = 2
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {focus = ETR_focus_9}
+		prerequisite = {focus = ETR_focus_10}
+		completion_reward = {
+		}
+	}
+}
+		
