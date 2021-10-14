@@ -82,7 +82,7 @@ focus_tree = {
 	}
 focus = {
 		id = PRC_focus_5
-		icon = GFX_goal_PRC_Protracted_Peoples_War
+		icon = GFX_goal_PRC_orthodox_warfare
 		x = 4
 		y = 3
 		cost = 1
@@ -148,7 +148,7 @@ focus = {
 	}
 	focus = {
 		id = PRC_focus_9
-		icon = ""
+		icon = GFX_goal_PRC_Protracted_Peoples_War
 		x = 2
 		y = 4
 		cost = 1

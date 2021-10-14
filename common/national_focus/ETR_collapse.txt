@@ -21,6 +21,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			ETR = { country_event = { id = etr.1}}
+			add_stability = 0.05
 		}
 	}
 	focus = {
@@ -64,6 +66,7 @@ focus_tree = {
 		prerequisite = {focus = ETR_focus_2}
 		prerequisite = {focus = ETR_focus_3}
 		completion_reward = {
+		ETR = { country_event = { id = etr.2}}
 		}
 	}
 	focus = {
@@ -76,7 +79,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		prerequisite = {focus = ETR_focus_4}
+		available = {has_country_flag = ETR_Khoja_flag}
 		completion_reward = {
 		}
 	}
@@ -167,7 +170,113 @@ focus_tree = {
 		prerequisite = {focus = ETR_focus_9}
 		prerequisite = {focus = ETR_focus_10}
 		completion_reward = {
+		ETR = { country_event = { id = etr.3}}
+		}
+	}
+	focus = {
+		id = ETR_focus_12
+		icon = ""
+		x = 14
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		available = {has_country_flag = ETR_Amin_flag}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ETR_focus_13
+		icon = ""
+		x = 14
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {focus = ETR_focus_12}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ETR_focus_14
+		icon = ""
+		x = 12
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {focus = ETR_focus_12}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ETR_focus_15
+		icon = ""
+		x = 16
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {focus = ETR_focus_12}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ETR_focus_16
+		icon = ""
+		x = 15
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {focus = ETR_focus_13}
+		prerequisite = {focus = ETR_focus_14}
+		prerequisite = {focus = ETR_focus_15}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ETR_focus_17
+		icon = ""
+		x = 13
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {focus = ETR_focus_13}
+		prerequisite = {focus = ETR_focus_14}
+		prerequisite = {focus = ETR_focus_15}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ETR_focus_18
+		icon = ""
+		x = 14
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {focus = ETR_focus_17}
+		prerequisite = {focus = ETR_focus_16}
+		completion_reward = {
+		ETR = { country_event = { id = etr.4}}
 		}
 	}
 }
+
 		

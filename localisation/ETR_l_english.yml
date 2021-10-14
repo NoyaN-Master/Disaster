@@ -1,6 +1,22 @@
 ﻿l_english:
 
 ####events
+etr.1.t:0 "Pans!"
+etr.1.d:0 "KOR"
+etr.1.a:0 "TBD"
+
+etr.2.t:0 "CHOICE!"
+etr.2.d:0 "KOR"
+etr.2.a:0 "KHOJA"
+etr.2.B:0 "AMMIN"
+
+etr.3.t:0 "KHOJA TREE END"
+etr.3.d:0 "KOR"
+etr.3.a:0 "TBD"
+
+etr.4.t:0 "AMIN TREE END"
+etr.4.d:0 "KOR"
+etr.4.a:0 "TBD"
 
 ###Focus
 ETR_focus_1:0 "Pan But Not All"
@@ -35,6 +51,27 @@ ETR_focus_10_desc:0 "Get all the Horsemen you Can"
 
 ETR_focus_11:0 "For our Faith and our People"
 ETR_focus_11_desc:0 "For our Faith and our People"
+
+ETR_focus_12:0 "Arrest the Islamists and Localists"
+ETR_focus_12_desc:0 "Arrest the Islamists and Localists"
+
+ETR_focus_13:0 "With Bullet and Bayonet"
+ETR_focus_13_desc:0 "With Bullet and Bayonet"
+
+ETR_focus_14:0 "Imitate their Economics, not their Faith"
+ETR_focus_14_desc:0 "Imitate their Economics, not their Faith"
+
+ETR_focus_15:0 "Field Hospitals and Doctors"
+ETR_focus_15_desc:0 "Field Hospitals and Doctors"
+
+ETR_focus_16:0 "Makeshift Guns"
+ETR_focus_16_desc:0 "Makeshift Guns"
+
+ETR_focus_17:0 "If he can Walk, he can Shoot"
+ETR_focus_17_desc:0 "If he can Walk, he can Shoot"
+
+ETR_focus_18:0 "For the Dream of a United Turan"
+ETR_focus_18_desc:0 "For the Dream of a United Turan"
 #####ideas
 
 ###Decisions
@@ -42,3 +79,5 @@ ETR_focus_11_desc:0 "For our Faith and our People"
 ##########missions###########
 
 ###Tool Tips
+ETR_Khoja_flag:0 "Khoja has taken power"
+ETR_Amin_flag:0 "Amin has held onto power"
