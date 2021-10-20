@@ -1,0 +1,203 @@
+ideas = {
+
+country = {
+
+HUN_great_war_legacy = {
+			picture = GFX_idea_ENG_the_war_to_end_all_wars
+			modifier = {
+				political_power_factor = -0.10
+				stability_factor = -0.1
+				war_support_factor = -0.12
+				conscription_factor = -0.08
+			}
+		}
+
+
+HUN_great_war_legacy2 = {
+			picture = GFX_idea_ENG_the_war_to_end_all_wars
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.05
+				war_support_factor = -0.06
+				conscription_factor = -0.04
+			}
+		}
+
+HUN_eternal_regency = {
+			picture = GFX_idea_generic_fascism_drift_2
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.05
+			}
+		}
+
+
+HUN_horthy_govment = {
+			picture = GFX_idea_generic_fascism_drift_2
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+
+HUN_political_opposition1 = {
+			picture = GFX_idea_generic_disjointed_gov
+			modifier = {
+				stability_factor = -0.04
+				political_power_gain = -0.04
+				liberal_drift = 0.01
+				revolutionary_nationalist_drift = 0.01
+			}
+		}	
+
+HUN_political_opposition2 = {
+			picture = GFX_idea_generic_disjointed_gov
+			modifier = {
+				stability_factor = -0.16
+				political_power_gain = -0.18
+				liberal_drift = 0.04
+				revolutionary_nationalist_drift = 0.04
+			}
+		}		
+
+HUN_militarist_society = {
+			picture = GFX_idea_ENG_the_war_to_end_all_wars
+			modifier = {
+				army_attack_factor = 0.02
+				army_defence_factor = 0.02
+				war_support_factor = 0.05
+			}
+		}
+
+HUN_militarist_society2 = {
+			picture = GFX_idea_ENG_the_war_to_end_all_wars
+			modifier = {
+				army_attack_factor = 0.07
+				army_defence_factor = 0.07
+				war_support_factor = 0.1
+				conscription = 0.015
+				production_speed_arms_factory_factor = 0.2
+			}
+		}
+	
+HUN_militarist_society3 = {
+			picture = GFX_idea_ENG_the_war_to_end_all_wars
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				war_support_factor = 0.1
+				conscription = 0.02
+				land_reinforce_rate = 0.05
+				army_speed_factor = 0.05
+				production_speed_arms_factory_factor = 0.2
+			}
+		}
+
+HUN_szalasi_loyalty = {
+			picture = GFX_idea_ENG_the_war_to_end_all_wars
+			modifier = {
+				stability_factor = 0.04
+				war_support_factor = 0.04
+				revolutionary_nationalist_drift = 0.02
+			}
+		}
+		
+		
+HUN_party_state = {
+			picture = GFX_idea_ENG_the_war_to_end_all_wars
+			modifier = {
+				stability_factor = 0.08
+				war_support_factor = 0.08
+				revolutionary_nationalist_drift = 0.02
+				max_surrender_limit_offset = 0.3
+				defensive_war_stability_factor = 0.2
+				offensive_war_stability_factor = 0.2
+			}
+		}
+
+		
+HUN_expanded_corporatism = {
+			picture = GFX_idea_ENG_the_war_to_end_all_wars
+			modifier = {
+				consumer_goods_factor = 0.02
+				global_building_slots_factor = 0.1
+			}
+		}
+		
+HUN_expanded_corporatism2 = {
+			picture = GFX_idea_ENG_the_war_to_end_all_wars
+			modifier = {
+				consumer_goods_factor = 0.05
+				global_building_slots_factor = 0.15
+				industrial_capacity_factory = 0.1
+				supply_consumption_factor = -0.05
+			}
+		}
+		
+HUN_mandatory_labor = {
+			picture = GFX_idea_ENG_the_war_to_end_all_wars
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.10
+				stability_factor = -0.08
+			}
+		}
+		
+HUN_pure_nation = {
+			picture = GFX_idea_ENG_the_war_to_end_all_wars
+			modifier = {
+				monthly_population = -0.15
+				political_power_factor = -0.1
+				stability_factor = -0.05
+			}
+		}
+		
+HUN_pure_nation2 = {
+			picture = GFX_idea_ENG_the_war_to_end_all_wars
+			modifier = {
+				research_speed_factor = 0.05
+				conscription_factor = 0.05
+			}
+		}
+		
+HUN_red_terror_again = {
+			picture = GFX_idea_ENG_the_war_to_end_all_wars
+			modifier = {
+				authoritarian_socialist_drift = 0.02
+				political_power_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
+		
+HUN_political_commisars = {
+			picture = GFX_idea_ENG_the_war_to_end_all_wars
+			modifier = {
+				conscription_factor = 0.05
+				land_reinforce_rate = 0.05
+			}
+		}
+	
+HUN_nationalized_econo1 = {
+			picture = GFX_idea_ENG_the_war_to_end_all_wars
+			modifier = {
+				industrial_capacity_factory = 0.07
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.07
+			}
+		}
+	
+HUN_nationalized_econo2 = {
+			picture = GFX_idea_ENG_the_war_to_end_all_wars
+			modifier = {
+				industrial_capacity_factory = 0.12
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.12
+				supply_consumption_factor = -0.05
+			}
+		}
+
+
+	}
+}
+ 
+

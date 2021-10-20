@@ -10,6 +10,9 @@
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
 	}
 }
 division_template = {
@@ -281,6 +284,15 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
+			creator = "HUN"
+		}
+		requested_factories = 1
+		progress = 0.60
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
 			creator = "HUN"
 		}
 		requested_factories = 1

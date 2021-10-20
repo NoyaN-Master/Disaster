@@ -1,1 +1,1481 @@
-﻿
+﻿focus_tree = {
+	id = hungary_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = HNG	}
+	}
+
+    continuous_focus_position = { x = 20 y = 2500 }	
+	
+
+	focus = {
+		id = HNG_reinforce_govt
+		icon = GFX_goal_generic_demand_territory
+		x = 6
+		y = 0
+		cost = 2.9		
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = HNG_stregthen_regent_rule
+		icon = GFX_focus_generic_treaty
+		relative_position_id = HNG_reinforce_govt
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_reinforce_govt }
+		cost = 2.9		
+		completion_reward = {
+			country_event = { id = hungary.1 days = 1 }
+		}
+	}
+
+	focus = {
+		id = HNG_talk_with_opposition
+		icon = GFX_goal_generic_dangerous_deal
+		relative_position_id = HNG_stregthen_regent_rule
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_stregthen_regent_rule }
+		cost = 2.9		
+		completion_reward = {
+			country_event = { id = hungary.2 days = 1 }
+		}
+	}
+	
+	focus = {
+		id = HNG_appease_karolyi
+		icon = GFX_goal_support_democracy
+		relative_position_id = HNG_talk_with_opposition
+		x = -2
+		y = 1
+		prerequisite = { focus = HNG_talk_with_opposition }
+		mutually_exclusive = { focus = HNG_appease_noone }
+		mutually_exclusive = { focus = HNG_appease_szalasi }
+		cost = 2.9		
+		completion_reward = {
+			add_popularity = {
+				ideology = liberal
+				popularity = 0.07
+			}
+			add_political_power = 10
+			hidden_effect = {
+				set_country_flag = appeased_karolyi
+			}
+			custom_effect_tooltip = szalasi_angry
+		}
+	}
+	
+	focus = {
+		id = HNG_appease_noone
+		icon = GFX_goal_generic_neutrality_focus
+		relative_position_id = HNG_talk_with_opposition
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_talk_with_opposition }
+		mutually_exclusive = { focus = HNG_appease_karolyi }
+		mutually_exclusive = { focus = HNG_appease_szalasi }
+		cost = 2.9		
+		completion_reward = {
+			swap_ideas = { 
+			remove_idea = HUN_political_opposition1
+			add_idea = HUN_political_opposition2
+			}
+			add_political_power = -30
+			hidden_effect = {
+				set_country_flag = appeased_noone
+			}
+		}
+	}
+	
+	focus = {
+		id = HNG_appease_szalasi
+		icon = GFX_goal_support_fascism
+		relative_position_id = HNG_talk_with_opposition
+		x = 2
+		y = 1
+		prerequisite = { focus = HNG_talk_with_opposition }
+		mutually_exclusive = { focus = HNG_appease_noone }
+		mutually_exclusive = { focus = HNG_appease_karolyi }
+		cost = 2.9		
+		completion_reward = {
+			add_popularity = {
+				ideology = revolutionary_nationalist
+				popularity = 0.07
+			}
+			add_political_power = 10
+			hidden_effect = {
+				set_country_flag = appeased_szalasi
+			}
+			custom_effect_tooltip = karolyi_angry
+		}
+	}
+	
+	focus = {
+		id = HNG_day_in_budapest
+		icon = GFX_focus_generic_the_giant_wakes
+		relative_position_id = HNG_appease_noone
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_appease_szalasi focus = HNG_appease_noone focus = HNG_appease_karolyi }
+		cost = 2.9		
+		completion_reward = {
+			country_event = { id = hungary.3 days = 1 }
+		}
+	}
+	
+	focus = {
+		id = HNG_arrow_cross_in_power
+		icon = GFX_goal_generic_political_pressure
+		x = 16
+		y = 0
+		cost = 1
+		available = {
+		has_country_flag = szalasi_focustree
+		}
+		bypass = {
+		has_country_flag = szalasi_focustree
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_destroy_all_opposition
+		icon = GFX_goal_generic_CAS
+		relative_position_id = HNG_arrow_cross_in_power
+		x = 2
+		y = 1
+		prerequisite = { focus = HNG_arrow_cross_in_power }
+		cost = 5	
+		completion_reward = {
+			add_popularity = {
+			ideology = liberal
+			popularity = -0.1
+			}
+			add_popularity = {
+			ideology = authoritarian_socialist
+			popularity = -0.1
+			}
+			add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = -0.1
+			}
+			add_popularity = {
+			ideology = autocratic
+			popularity = -0.1
+			}
+			add_popularity = {
+			ideology = ultranationalist
+			popularity = -0.1
+			}
+			add_stability = -0.2
+			add_manpower = -10000
+		}
+	}
+	
+	focus = {
+		id = HNG_the_militarized_state
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		relative_position_id = HNG_arrow_cross_in_power
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_arrow_cross_in_power }
+		cost = 5	
+		completion_reward = {
+			add_ideas = HUN_militarist_society
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = HNG_party_primacy
+		icon = GFX_focus_generic_support_the_left_right
+		relative_position_id = HNG_arrow_cross_in_power
+		x = -2
+		y = 1
+		prerequisite = { focus = HNG_arrow_cross_in_power }
+		cost = 5	
+		completion_reward = {
+			swap_ideas = {
+			remove_idea = HUN_great_war_legacy
+			add_idea = HUN_great_war_legacy2
+			}
+		}
+	}
+	
+	focus = {
+		id = HNG_loyalty_to_szalasi
+		icon = GFX_focus_generic_diplomatic_treaty
+		relative_position_id = HNG_destroy_all_opposition
+		x = -1
+		y = 1
+		prerequisite = { focus = HNG_destroy_all_opposition }
+		prerequisite = { focus = HNG_the_militarized_state }
+		cost = 7	
+		completion_reward = {
+			add_ideas = HUN_szalasi_loyalty
+			add_political_power = 100
+			add_popularity = {
+				ideology = revolutionary_nationalist
+				popularity = 0.10
+			}
+		}
+	}
+	
+	focus = {
+		id = HNG_a_new_economy
+		icon = GFX_focus_generic_industry_3
+		relative_position_id = HNG_party_primacy
+		x = 1
+		y = 1
+		prerequisite = { focus = HNG_party_primacy }
+		prerequisite = { focus = HNG_the_militarized_state }
+		cost = 7	
+		completion_reward = {
+			add_ideas = HUN_expanded_corporatism
+			43 = {
+	        add_building_construction = {
+		    type = industrial_complex 
+		    level = 1
+	        }
+            }
+		}
+	}
+	
+	focus = {
+		id = HNG_help_the_peasants
+		icon = GFX_goal_generic_positive_trade_relations
+		relative_position_id = HNG_a_new_economy
+		x = -2
+		y = 1
+		prerequisite = { focus = HNG_a_new_economy }
+		cost = 6	
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = HUN_expanded_corporatism
+				add_idea = HUN_expanded_corporatism2
+			}
+			every_owned_state = {
+				add_building_construction = {
+					type = infrastructure 
+					level = 2
+				}
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = HNG_expand_the_corporations
+		icon = GFX_goal_generic_construct_civ_factory
+		relative_position_id = HNG_help_the_peasants
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_help_the_peasants }
+		cost = 6	
+		completion_reward = {
+			814 = {
+	        add_building_construction = {
+		    type = industrial_complex 
+		    level = 1
+	        }
+            }			
+			154 = {
+	        add_building_construction = {
+		    type = industrial_complex 
+		    level = 1
+	        }			
+            }
+			155 = {
+	        add_building_construction = {
+		    type = industrial_complex 
+		    level = 1
+	        }
+            }
+			add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = industry
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = HNG_all_must_work
+		icon = GFX_goal_generic_construction2
+		relative_position_id = HNG_expand_the_corporations
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_expand_the_corporations }
+		cost = 6
+		completion_reward = {
+			add_ideas = HUN_mandatory_labor
+			add_manpower = -5000
+		}
+	}
+	
+	focus = {
+		id = HNG_role_of_the_army
+		icon = GFX_focus_generic_little_entente
+		relative_position_id = HNG_a_new_economy
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_a_new_economy }
+		prerequisite = { focus = HNG_loyalty_to_szalasi }
+		cost = 6
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = HUN_militarist_society
+				add_idea = HUN_militarist_society2
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = HNG
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = HNG_major_military_investments
+		icon = GFX_goal_generic_construct_mil_factory
+		relative_position_id = HNG_role_of_the_army
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_role_of_the_army }
+		cost = 6	
+		completion_reward = {
+			807 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			154 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = HNG_hunnic_warriors
+		icon = GFX_goal_generic_cavalry
+		relative_position_id = HNG_major_military_investments
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_major_military_investments }
+		cost = 6	
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = HUN_militarist_society2
+				add_idea = HUN_militarist_society3
+			}
+		}
+	}
+	
+	focus = {
+		id = HNG_national_purity
+		icon = GFX_focus_generic_air_defense
+		relative_position_id = HNG_a_new_economy
+		x = 2
+		y = 1
+		prerequisite = { focus = HNG_a_new_economy }
+		prerequisite = { focus = HNG_loyalty_to_szalasi }
+		cost = 6	
+		completion_reward = {
+			add_ideas = HUN_pure_nation
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = HNG_mobilise_the_youth
+		icon = GFX_focus_generic_military_academy
+		relative_position_id = HNG_national_purity
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_national_purity }
+		cost = 6	
+		completion_reward = {
+			add_ideas = HUN_pure_nation2
+			army_experience = 40
+		}
+	}
+	
+	
+	focus = {
+		id = HNG_new_education_methods
+		icon = GFX_goal_tfv_generic_tech_sharing
+		relative_position_id = HNG_mobilise_the_youth
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_mobilise_the_youth }
+		cost = 6	
+		completion_reward = {
+			add_research_slot = 1
+			add_tech_bonus = {
+			bonus = 1.5
+			uses = 2
+			category = electronics
+			}
+		}
+	}
+	
+	focus = {
+		id = HNG_full_obedience
+		icon = GFX_focus_generic_strike_at_democracy2
+		relative_position_id = HNG_a_new_economy
+		x = 4
+		y = 1
+		prerequisite = { focus = HNG_loyalty_to_szalasi }
+		cost = 6	
+		completion_reward = {
+			add_popularity = {
+				ideology = revolutionary_nationalist
+				popularity = 0.10
+			}
+			add_stability = 0.1
+			remove_ideas = HUN_great_war_legacy2
+		}
+	}
+	
+	focus = {
+		id = HNG_the_party_state
+		icon = GFX_focus_generic_self_management
+		relative_position_id = HNG_full_obedience
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_full_obedience }
+		cost = 6	
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = HUN_szalasi_loyalty
+				add_idea = HUN_party_state
+			}
+		}
+	}
+		
+	focus = {
+		id = HNG_new_magyar_society
+		icon = GFX_goal_demand_sudetenland
+		relative_position_id = HNG_the_party_state
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_the_party_state }
+		cost = 6	
+		completion_reward = {
+			add_stability = 0.20
+			add_political_power = 150
+		}
+	}
+		
+	focus = {
+		id = HNG_felebredek_magyar
+		icon = GFX_goal_generic_national_unity
+		relative_position_id = HNG_new_magyar_society
+		x = -3
+		y = 1
+		prerequisite = { focus = HNG_new_magyar_society }
+		prerequisite = { focus = HNG_hunnic_warriors }
+		prerequisite = { focus = HNG_new_education_methods }
+		prerequisite = { focus = HNG_all_must_work }
+		cost = 6	
+		completion_reward = {
+			add_war_support = 0.1
+			add_stability = 0.10
+			add_political_power = 100
+			country_event = { 
+				id = hungary.14
+				days = 1 
+			}
+		}
+	}
+	
+	focus = {
+		id = HNG_democratic_elections
+		icon = GFX_goal_generic_national_unity
+		x = 27
+		y = 0
+		cost = 1	
+		available = {
+		has_country_flag = democracy_focustree
+		}
+		bypass = {
+		has_country_flag = democracy_focustree
+		}
+		completion_reward = {
+			
+		}
+	}
+		
+	focus = {
+		id = HNG_the_monarchy_question
+		icon = GFX_focus_hun_elect_a_king
+		relative_position_id = HNG_democratic_elections
+		x = -1
+		y = 1
+		prerequisite = { focus = HNG_democratic_elections }
+		cost = 3
+		completion_reward = {
+			country_event = { id = hungary.12 days = 1 }
+		}
+	}
+		
+	focus = {
+		id = HNG_cancel_horthys_means
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_democratic_elections
+		x = 1
+		y = 1
+		prerequisite = { focus = HNG_democratic_elections }
+		cost = 3	
+		completion_reward = {
+			
+		}
+	}
+		
+	focus = {
+		id = HNG_election_day
+		icon = GFX_goal_support_democracy
+		relative_position_id = HNG_cancel_horthys_means
+		x = -1
+		y = 1
+		prerequisite = { focus = HNG_the_monarchy_question }
+		prerequisite = { focus = HNG_cancel_horthys_means }
+		cost = 1.5	
+		completion_reward = {
+			
+		}
+	}
+		
+	focus = {
+		id = HNG_f48p_victory
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_election_day
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_election_day }
+		cost = 1	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_free_up_the_market
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_f48p_victory
+		x = 1
+		y = 1
+		prerequisite = { focus = HNG_f48p_victory }
+		cost = 1	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_strive_for_equality
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_f48p_victory
+		x = -1
+		y = 1
+		prerequisite = { focus = HNG_f48p_victory }
+		cost = 1	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_subsidies_for_small_bussines
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_free_up_the_market
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_free_up_the_market }
+		cost = 1	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_the_eastern_switzerland
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_strive_for_equality
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_strive_for_equality }
+		cost = 1	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_land_reform
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_subsidies_for_small_bussines
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_subsidies_for_small_bussines }
+		cost = 1	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_liberal_democracy
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_the_eastern_switzerland
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_the_eastern_switzerland }
+		cost = 1	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_knp_victory
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_election_day
+		x = 4
+		y = 1
+		prerequisite = { focus = HNG_election_day }
+		cost = 1	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_christian_labor
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_knp_victory
+		x = 1
+		y = 1
+		prerequisite = { focus = HNG_knp_victory }
+		cost = 1	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_national_culture
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_knp_victory
+		x = -1
+		y = 1
+		prerequisite = { focus = HNG_knp_victory }
+		cost = 1	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_protect_the_workers
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_christian_labor
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_christian_labor }
+		cost = 1	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_hungarians_first
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_national_culture
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_national_culture }
+		cost = 1	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_encourage_entrepreneureship
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_protect_the_workers
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_protect_the_workers }
+		cost = 1	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_catholic_society
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_hungarians_first
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_hungarians_first }
+		cost = 1	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_mszdp_victory
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_election_day
+		x = -4
+		y = 1
+		prerequisite = { focus = HNG_election_day }
+		cost = 1	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_workers_rights
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_mszdp_victory
+		x = 1
+		y = 1
+		prerequisite = { focus = HNG_mszdp_victory }
+		cost = 1	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_freedom_of_expression
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_mszdp_victory
+		x = -1
+		y = 1
+		prerequisite = { focus = HNG_mszdp_victory }
+		cost = 1	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_economic_regulations
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_workers_rights
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_workers_rights }
+		cost = 1	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_egalitarian_society
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_freedom_of_expression
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_freedom_of_expression }
+		cost = 1	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_welfare_state
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_economic_regulations
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_economic_regulations }
+		cost = 1	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_in_service_of_the_people
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_egalitarian_society
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_egalitarian_society }
+		cost = 1	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_return_of_the_reds
+		icon = GFX_goal_generic_war_with_comintern
+		x = 8
+		y = 6
+		cost = 1
+		available = {
+		has_country_flag = commie_focustree
+		}
+		bypass = {
+		has_country_flag = commie_focustree
+		}		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_workers_congress
+		icon = GFX_focus_generic_soviet_politics
+		relative_position_id = HNG_return_of_the_reds
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_return_of_the_reds }
+		cost = 3	
+		completion_reward = {
+			country_event = { id = hungary.11 days = 1 }
+		}
+	}
+	
+	focus = {
+		id = HNG_czermanik_victory
+		icon = GFX_focus_por_workers_of_iberia
+		relative_position_id = HNG_workers_congress
+		x = -6
+		y = 1
+		prerequisite = { focus = HNG_workers_congress }
+		cost = 1
+		available = {
+		has_country_flag = kadar_victory
+		}
+		bypass = {
+		has_country_flag = kadar_victory
+		}		
+		completion_reward = {
+			add_popularity = {
+			ideology = libertarian_socialist
+			popularity = 0.05
+			}
+		}
+	}
+	
+	focus = {
+		id = HNG_broadening_of_democracy
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_czermanik_victory
+		x = -2
+		y = 1
+		prerequisite = { focus = HNG_czermanik_victory }
+		cost = 6	
+		completion_reward = {
+			remove_ideas = HUN_great_war_legacy
+		}
+	}
+	
+	focus = {
+		id = HNG_keep_tabs_on_them
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_broadening_of_democracy
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_broadening_of_democracy }
+		cost = 6	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_controlled_opposition
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_keep_tabs_on_them
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_keep_tabs_on_them }
+		cost = 6	
+		completion_reward = {
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = liberal
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.01
+			}
+		}
+	}
+	
+	focus = {
+		id = HNG_the_guiding_hand
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_controlled_opposition
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_controlled_opposition }
+		cost = 6	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_liberalize_the_communist_doctrine
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_czermanik_victory
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_czermanik_victory }
+		cost = 6	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_worker_cooperatives
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_liberalize_the_communist_doctrine
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_liberalize_the_communist_doctrine }
+		cost = 6	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_international_trade
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_worker_cooperatives
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_worker_cooperatives }
+		cost = 6	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_communism_with_hungarian_characteristics
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_international_trade
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_international_trade }
+		cost = 6	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_who_is_not_against_us
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_czermanik_victory
+		x = 2
+		y = 1
+		prerequisite = { focus = HNG_czermanik_victory }
+		cost = 6
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_supervised_freedom_of_speech
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_who_is_not_against_us
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_who_is_not_against_us }
+		cost = 6
+		completion_reward = {
+			add_research_slot = 1
+			add_stability = 0.05
+		}
+	}
+	
+	
+	focus = {
+		id = HNG_condemn_their_authoritarianism
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_supervised_freedom_of_speech
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_supervised_freedom_of_speech }
+		cost = 6
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_is_with_us
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_condemn_their_authoritarianism
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_condemn_their_authoritarianism }
+		cost = 6
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_kun_victory
+		icon = GFX_goal_support_fourth_int
+		relative_position_id = HNG_workers_congress
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_workers_congress }
+		cost = 1
+		available = {
+		has_country_flag = kun_victory
+		}
+		bypass = {
+		has_country_flag = kun_victory
+		}
+		completion_reward = {
+			add_popularity = {
+			ideology = authoritarian_socialist
+			popularity = 0.05
+			}
+		}
+	}
+	
+	focus = {
+		id = HNG_working_class_government
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_kun_victory
+		x = -2
+		y = 1
+		prerequisite = { focus = HNG_kun_victory }
+		cost = 6	
+		completion_reward = {
+			remove_ideas = HUN_great_war_legacy
+		}
+	}
+	
+	focus = {
+		id = HNG_organise_marches
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_working_class_government
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_working_class_government }
+		cost = 6	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_class_warfare
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_organise_marches
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_organise_marches }
+		cost = 6	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_vanguard_of_the_global_revolution
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_class_warfare
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_class_warfare }
+		cost = 6	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_nationalize_all_industries
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_kun_victory
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_kun_victory }
+		cost = 6	
+		completion_reward = {
+			add_ideas = HUN_nationalized_econo1
+		}
+	}
+	
+	focus = {
+		id = HNG_work_with_the_farmers
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_nationalize_all_industries
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_nationalize_all_industries }
+		cost = 6	
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = HUN_nationalized_econo1
+				add_idea = HUN_nationalized_econo2
+			}
+			random_owned_state = {
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = HNG_industrial_centres
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_work_with_the_farmers
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_work_with_the_farmers }
+		cost = 6	
+		completion_reward = {
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+	        add_building_construction = {
+		    type = industrial_complex 
+		    level = 1
+	        }
+			}
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+	        add_building_construction = {
+		    type = industrial_complex 
+		    level = 1
+	        }
+			}
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+	        add_building_construction = {
+		    type = industrial_complex 
+		    level = 1
+	        }
+			}
+		}
+	}
+	
+	focus = {
+		id = HNG_a_truly_communist_economy
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_industrial_centres
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_industrial_centres }
+		cost = 6	
+		completion_reward = {
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+	        add_building_construction = {
+		    type = arms_factory
+		    level = 1
+	        }
+			}
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+	        add_building_construction = {
+		    type = arms_factory
+		    level = 1
+	        }
+			}
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = HNG_red_terror_again
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_kun_victory
+		x = 2
+		y = 1
+		prerequisite = { focus = HNG_kun_victory }
+		cost = 6	
+		completion_reward = {
+			add_ideas = HUN_red_terror_again
+			add_manpower = -20000
+		}
+	}
+	
+	focus = {
+		id = HNG_revolutionary_culture
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_red_terror_again
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_red_terror_again }
+		cost = 6	
+		completion_reward = {
+			add_research_slot = 1
+			add_stability = 0.025
+			add_war_support = 0.025
+		}
+	}
+	
+	focus = {
+		id = HNG_political_commisars
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_revolutionary_culture
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_revolutionary_culture }
+		cost = 6	
+		completion_reward = {
+			add_ideas = HUN_political_commisars
+		}
+	}
+	
+	focus = {
+		id = HNG_dictatorship_of_the_proletariat
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_political_commisars
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_political_commisars }
+		cost = 6	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_rakosi_victory
+		icon = GFX_focus_generic_join_comintern
+		relative_position_id = HNG_workers_congress
+		x = 6
+		y = 1
+		prerequisite = { focus = HNG_workers_congress }
+		cost = 1	
+		available = {
+		has_country_flag = rakosi_victory
+		}
+		bypass = {
+		has_country_flag = rakosi_victory
+		}
+		completion_reward = {
+			add_popularity = {
+			ideology = unisocialist
+			popularity = 0.05
+			}
+		}
+	}
+	
+	focus = {
+		id = HNG_consolidate_communist_rule
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_rakosi_victory
+		x = -2
+		y = 1
+		prerequisite = { focus = HNG_rakosi_victory }
+		cost = 6	
+		completion_reward = {
+			remove_ideas = HUN_great_war_legacy
+		}
+	}
+	
+	focus = {
+		id = HNG_avh_expansion
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_consolidate_communist_rule
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_consolidate_communist_rule }
+		cost = 6	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_reeducation_camps
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_avh_expansion
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_avh_expansion }
+		cost = 6	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_rule_of_the_people
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_reeducation_camps
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_reeducation_camps }
+		cost = 6	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_collectivised_agriculture
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_rakosi_victory
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_rakosi_victory }
+		cost = 6	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_heavy_industry_expansion
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_collectivised_agriculture
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_collectivised_agriculture }
+		cost = 6	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_military_sector_investment
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_heavy_industry_expansion
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_heavy_industry_expansion }
+		cost = 6	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_working_peoples_economy
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_military_sector_investment
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_military_sector_investment }
+		cost = 6	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_purge_all_reactionary_elements
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_rakosi_victory
+		x = 2
+		y = 1
+		prerequisite = { focus = HNG_rakosi_victory }
+		cost = 6	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_working_intelligentsia
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_purge_all_reactionary_elements
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_purge_all_reactionary_elements }
+		cost = 6	
+		completion_reward = {
+			add_research_slot = 1
+			add_war_support = 0.05
+		}
+	}
+	
+	focus = {
+		id = HNG_art_of_propaganda
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_working_intelligentsia
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_working_intelligentsia }
+		cost = 6	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_total_cult_of_personality
+		icon = GFX_goal_generic_war_with_comintern
+		relative_position_id = HNG_art_of_propaganda
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_art_of_propaganda }
+		cost = 6	
+		completion_reward = {
+			
+		}
+	}
+	
+	
+}

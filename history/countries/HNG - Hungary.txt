@@ -18,14 +18,17 @@ set_technology = {
 set_convoys = 50
 
 set_politics = {
-	ruling_party = ultranationalist
+	ruling_party = autocratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
-add_ideas = 	one_party_state 	
+add_ideas = 	authoritarian_state	
 add_ideas = 	corporatism 
 add_ideas = 	industrialized_society
+add_ideas = HUN_great_war_legacy
+add_ideas = HUN_horthy_govment
+add_ideas = HUN_political_opposition1
 
 set_popularities = {
 	conservative = 0
@@ -35,19 +38,125 @@ set_popularities = {
 	authoritarian_socialist = 6
 	unisocialist = 0
 	authoritarian_democrat = 15
-	autocratic = 13
-	ultranationalist = 47
+	autocratic = 40
+	ultranationalist = 20
 	revolutionary_nationalist = 15
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
 
+country_event = { id = hungary.1000 days = 1 }
+country_event = { id = hungary.10 days = 31 }
+
 create_country_leader = {
-	name = "Miklos Horthy"
+	name = "Miklós Horthy"
+	#desc = "HNG_Horthy_desc"
+	picture = "HNG_Horthy.tga"
+	expire = "2020.1.1"
+	ideology = autocratic_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Miklós Horthy"
 	#desc = "HNG_Horthy_desc"
 	picture = "HNG_Horthy.tga"
 	expire = "2020.1.1"
 	ideology = ultranationalist_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Miklós Horthy"
+	#desc = "HNG_Horthy_desc"
+	picture = "HNG_Horthy.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_democrat_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Mihály Károlyi"
+	#desc = "HNG_Karolyi_desc"
+	picture = "HNG_Karolyi.tga"
+	expire = "2020.1.1"
+	ideology = liberal_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "István Friedrich"
+	#desc = "HNG_Friedrich_desc"
+	picture = "HNG_Friedrich.tga"
+	expire = "2020.1.1"
+	ideology = conservative_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Árpád Szakasits"
+	#desc = "HNG_Szakasits_desc"
+	picture = "HNG_Szakasits.tga"
+	expire = "2020.1.1"
+	ideology = social_democrat_subideology
+	traits = {
+		#
+	}
+}
+
+
+create_country_leader = {
+	name = "Mátyás Rákosi"
+	#desc = "HNG_Rakosi_desc"
+	picture = "HNG_Rakosi.tga"
+	expire = "2020.1.1"
+	ideology = unisocialist_subideology
+	traits = {
+		#
+	}
+}
+
+
+create_country_leader = {
+	name = "Béla Kun"
+	#desc = "HNG_Kun_desc"
+	picture = "HNG_Kun.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_socialist_subideology
+	traits = {
+		#
+	}
+}
+
+
+create_country_leader = {
+	name = "János Czermanik"
+	#desc = "HNG_Kadar_desc"
+	picture = "HNG_Kadar.tga"
+	expire = "2020.1.1"
+	ideology = libertarian_socialist_subideology
+	traits = {
+		#
+	}
+}
+
+
+create_country_leader = {
+	name = "Ferenc Szálasi"
+	#desc = "HNG_Szalasi_desc"
+	picture = "HNG_Szalasi.tga"
+	expire = "2020.1.1"
+	ideology = revolutionary_nationalist_subideology
 	traits = {
 		#
 	}

@@ -1,0 +1,429 @@
+add_namespace = hungary
+
+
+country_event = { #Intro event
+	id = hungary.1000
+	title = hungary.1000.t
+	desc = hungary.1000.d
+	#picture = 
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = hungary.1000.a
+		
+	}
+}
+
+country_event = { #Strengthen regents rule
+	id = hungary.1
+	title = hungary.1.t
+	desc = hungary.1.d
+	#picture = 
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = hungary.1.a
+		
+	}
+}
+
+country_event = { #Talk with opposition
+	id = hungary.2
+	title = hungary.2.t
+	desc = hungary.2.d
+	#picture = 
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = hungary.2.a
+		
+	}
+}
+
+country_event = { #Day in Budapest
+	id = hungary.3
+	title = hungary.3.t
+	desc = hungary.3.d
+	#picture = 
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	
+	option = {
+		trigger = {
+			has_country_flag = appeased_szalasi 
+		}
+		name = hungary.3.a
+		add_stability = 0.01
+		hidden_effect = {
+		country_event = { id = hungary.4 days = 14 }
+		}
+	}
+	
+	option = {
+		trigger = {
+			has_country_flag = appeased_karolyi
+		}
+		name = hungary.3.b
+		add_stability = 0.02
+		hidden_effect = {
+		country_event = { id = hungary.5 days = 14 }
+		}
+	}
+	
+	option = {
+		trigger = {
+			has_country_flag = appeased_noone
+		}
+		name = hungary.3.c
+		add_stability = 0.03
+		hidden_effect = {
+		country_event = { id = hungary.6 days = 14 }
+		}
+	}
+}
+
+
+country_event = { #Arrow cross coup
+	id = hungary.4
+	title = hungary.4.t
+	desc = hungary.4.d
+	#picture = 
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		remove_ideas = HUN_horthy_govment
+		remove_ideas = HUN_political_opposition1
+	}
+	
+	option = {
+		name = hungary.4.a
+		add_stability = -0.1
+		add_political_power = -80
+		set_politics = {
+			ruling_party = revolutionary_nationalist
+			last_election = "1936.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = revolutionary_nationalist
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = autocratic
+			popularity = -0.1
+		}
+		hidden_effect = { set_country_flag = szalasi_focustree }
+	}
+}
+
+country_event = { #F48P coup
+	id = hungary.5
+	title = hungary.5.t
+	desc = hungary.5.d
+	#picture = 
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		remove_ideas = HUN_horthy_govment
+		remove_ideas = HUN_political_opposition1
+	}
+	
+	option = {
+		name = hungary.5.a
+		add_stability = -0.1
+		add_political_power = -80
+		set_politics = {
+			ruling_party = liberal
+			last_election = "1936.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = autocratic
+			popularity = -0.1
+		}
+		hidden_effect = { set_country_flag = democracy_focustree }
+	}
+}
+
+country_event = { #Cracking down on opposition
+	id = hungary.6
+	title = hungary.6.t
+	desc = hungary.6.d
+	#picture = 
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary.6.a
+		add_stability = 0.05
+		add_popularity = {
+			ideology = autocratic
+			popularity = 0.1
+		}
+		hidden_effect = {
+		country_event = { id = hungary.7 days = 14 }
+		set_country_flag = regency_focustree 
+		}
+	}
+}
+
+
+country_event = { #Socialist agitation
+	id = hungary.7
+	title = hungary.7.t
+	desc = hungary.7.d
+	#picture = 
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary.7.a
+		add_stability = 0.05
+	}
+	
+	option = {
+		name = hungary.7.b
+		add_stability = -0.05
+		hidden_effect = {
+			country_event = { id = hungary.8 days = 7 }
+		}
+	}
+}
+
+
+country_event = { #Socialist coup
+	id = hungary.8
+	title = hungary.8.t
+	desc = hungary.8.d
+	#picture = 
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		remove_ideas = HUN_horthy_govment
+		remove_ideas = HUN_political_opposition1
+	}
+	
+	option = {
+		name = hungary.8.a
+		add_stability = -0.15
+		add_political_power = -100
+		set_politics = {
+			ruling_party = authoritarian_socialist
+			last_election = "1936.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = authoritarian_socialist
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = unisocialist
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = libertarian_socialist
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = autocratic
+			popularity = -0.1
+		}
+		hidden_effect = { set_country_flag = commie_focustree }
+	}
+
+}
+
+
+country_event = { #Big Avar stuff
+	id = hungary.14
+	title = hungary.14.t
+	desc = hungary.14.d
+	#picture = 
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary.14.a
+		add_stability = 0.05
+	}
+	
+	option = {
+		name = hungary.14.b
+		trigger = {
+			has_country_flag = avar_stuffs
+		}
+		add_stability = -0.05
+		set_cosmetic_tag = HNG_avarkhaganate
+		hidden_effect = {
+			set_country_flag = avar_khaganate
+		}
+	}
+}
+
+country_event = { #Small Avar stuff
+	id = hungary.10
+	title = hungary.10.t
+	desc = hungary.10.d
+	#picture = 
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary.10.a
+		add_stability = -0.04
+		add_political_power = -5
+	}
+	
+	option = {
+		name = hungary.10.b
+		set_country_flag = avar_stuffs
+		add_political_power = -25
+		add_stability = 0.02
+	}
+}
+
+country_event = { #Workers congress
+	id = hungary.11
+	title = hungary.11.t
+	desc = hungary.11.d
+	#picture = 
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary.11.a
+		set_country_flag = kadar_victory
+		add_popularity = {
+			ideology = libertarian_socialist
+			popularity = 0.1
+		}
+	}
+	
+	option = {
+		name = hungary.11.b
+		set_country_flag = kun_victory
+		add_popularity = {
+			ideology = authoritarian_socialist
+			popularity = 0.1
+		}
+	}
+	
+	option = {
+		name = hungary.11.c
+		set_country_flag = rakosi_victory
+		add_popularity = {
+			ideology = unisocialist
+			popularity = 0.1
+		}
+	}
+}
+
+country_event = { #Question of the monarchy
+	id = hungary.12
+	title = hungary.12.t
+	desc = hungary.12.d
+	#picture = 
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary.12.a #Keeping the monarchy
+		unlock_decision_category_tooltip = HNG_choosing_king
+		hidden_effect = {
+			set_country_flag = hun_democratic_monarchy
+		}
+	}
+	
+	option = {
+		name = hungary.12.b #Abolishing the monarchy
+		set_cosmetic_tag = HNG_republic
+		add_stability = -0.15
+		add_political_power = -40
+	}
+	
+	option = {
+		name = hungary.12.c #eternal regency
+		add_ideas = HUN_eternal_regency
+		add_political_power = -10
+	}
+}
+
+country_event = { #First elections
+	id = hungary.13
+	title = hungary.13.t
+	desc = hungary.13.d
+	#picture = 
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary.13.a
+		set_country_flag = social_democrat_victory
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.1
+		}
+	}
+	
+	option = {
+		name = hungary.13.b
+		set_country_flag = liberal_victory
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.1
+		}
+	}
+	
+	option = {
+		name = hungary.13.c
+		set_country_flag = conservative_victory
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.1
+		}
+	}
+}
+
+

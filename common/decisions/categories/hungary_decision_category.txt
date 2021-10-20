@@ -1,0 +1,15 @@
+HNG_choosing_king = {
+	icon = GFX_decision_category_generic_political_actions
+
+	picture = Decision_picture_anatolia_influence
+	priority = 100
+	allowed = {
+		original_tag = HNG
+		has_country_flag = hun_democratic_monarchy
+	}
+	visible = {
+		original_tag = HNG
+		has_country_flag = hun_democratic_monarchy
+	}
+	visible_when_empty = yes
+}
