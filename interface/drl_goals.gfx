@@ -318,4 +318,32 @@ spriteTypes = {
 		name = "GFX_goal_PRC_orthodox_warfare"
 		texturefile = "gfx/interface/goals/PRC_orthodox_warfare.png"			
 	}
+	SpriteType = {
+		name = "GFX_goal_PRC_crush_nationalists"
+		texturefile = "gfx/interface/goals/PRC_crush_nationalists.png"		
+	}
+	SpriteType = {
+		name = "GFX_goal_PRC_hit_them_hard"
+		texturefile = "gfx/interface/goals/PRC_hit_them_hard.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_PRC_hit_em_fast"
+		texturefile = "gfx/interface/goals/PRC_hit_em_fast.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_PRC_industry_to_support_us"
+		texturefile = "gfx/interface/goals/PRC_industry_to_support_us.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_PRC_sacrifices_must_be_made"
+		texturefile = "gfx/interface/goals/PRC_sacrifices_must_be_made.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_PRC_chinese_blitzkrieg"
+		texturefile = "gfx/interface/goals/PRC_chinese_blitzkrieg.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_PRC_perfect_combination"
+		texturefile = "gfx/interface/goals/PRC_perfect_combination.png"			
+	}
 }

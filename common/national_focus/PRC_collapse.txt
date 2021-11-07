@@ -130,7 +130,7 @@ focus = {
 	}
 	focus = {
 		id = PRC_focus_8
-		icon = ""
+		icon = GFX_goal_PRC_perfect_combination	
 		x = 4
 		y = 6
 		cost = 1
@@ -178,9 +178,9 @@ focus = {
 	PRC = { country_event = { id = prc.11}}
 		}
 	}
-			focus = {
+		focus = {
 		id = PRC_focus_11
-		icon = ""
+		icon = GFX_goal_PRC_crush_nationalists
 		x = 12
 		y = 3
 		cost = 1
@@ -196,7 +196,7 @@ focus = {
 	}
 		focus = {
 		id = PRC_focus_12
-		icon = ""
+		icon = GFX_goal_PRC_hit_them_hard
 		x = 10
 		y = 4
 		cost = 1
@@ -212,7 +212,7 @@ focus = {
 	}
 		focus = {
 		id = PRC_focus_13
-		icon = ""
+		icon = GFX_goal_PRC_hit_em_fast
 		x = 14
 		y = 4
 		cost = 1
@@ -228,7 +228,7 @@ focus = {
 	}
 		focus = {
 		id = PRC_focus_14
-		icon = ""
+		icon = GFX_goal_PRC_sacrifices_must_be_made
 		x = 13
 		y = 5
 		cost = 1
@@ -244,7 +244,7 @@ focus = {
 	}
 		focus = {
 		id = PRC_focus_15
-		icon = ""
+		icon = GFX_goal_PRC_industry_to_support_us
 		x = 11
 		y = 5
 		cost = 1
@@ -262,7 +262,7 @@ focus = {
 	}
 		focus = {
 		id = PRC_focus_16
-		icon = ""
+		icon = GFX_goal_PRC_chinese_blitzkrieg
 		x = 12
 		y = 6
 		cost = 1
