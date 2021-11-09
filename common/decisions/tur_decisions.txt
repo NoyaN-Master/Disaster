@@ -24,7 +24,31 @@ TUR_unification_category = {
 				type = annex_everything
 			}
 		}
-	}	
+	}
+	TUR_kill_samsun = {
+		fire_only_once = yes
+		cost = 0
+		visible = {
+			country_exists = KLG
+			NOT = {
+				country_exists = CIB
+				country_exists = ANT
+				country_exists = TIT
+				country_exists = CLP
+			}
+			owns_state = 49
+			owns_state = 346
+			is_turkish_tag = yes
+		}
+		available = {
+			has_war = no
+		}
+		complete_effect = {
+			KLG = {
+				country_event = { id = turkeyevents.1 }
+			}
+		}
+	}		
 	wrf_ataturk_unify_decision = {
 	    fire_only_once = yes
 		cost = 0
@@ -558,22 +582,23 @@ TUR_unification_category = {
             set_country_flag = unification_fuller
         }
         SKL = {
-        add_state_core = 49
-        add_state_core = 347
-        add_state_core = 839
-        add_state_core = 798
-        add_state_core = 356
-        add_state_core = 355
-        add_state_core = 354
-        add_state_core = 353
-        add_state_core = 800
-        add_state_core = 352
-        add_state_core = 350
-        add_state_core = 346
-        add_state_core = 348
-        add_state_core = 349
-        add_state_core = 797
-        add_state_core = 835
+        #add_state_core = 49
+        #add_state_core = 347 
+        #add_state_core = 839
+        #add_state_core = 798
+        #add_state_core = 356
+        #add_state_core = 355
+        #add_state_core = 354
+        #add_state_core = 353
+        #add_state_core = 800
+        #add_state_core = 352
+        #add_state_core = 350
+        #add_state_core = 346
+        #add_state_core = 348
+        #add_state_core = 349
+        #add_state_core = 797
+        #add_state_core = 835
+	load_focus_tree = fuller_unification_Focus
         set_capital = 797
         }
         }

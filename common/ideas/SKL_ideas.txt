@@ -1,0 +1,301 @@
+ideas = {
+	country = {
+		SKL_turkish_united_front_1 = {
+			modifier = {
+				resistance_growth_on_our_occupied_states = 0.75
+				resistance_target_on_our_occupied_states = 0.50
+				consumer_goods_factor = 0.2
+				stability_weekly = -0.02
+				no_compliance_gain = 1
+			}
+		}
+		SKL_turkish_united_front_2 = {
+			modifier = {
+				resistance_growth_on_our_occupied_states = 0.6
+				resistance_target_on_our_occupied_states = 0.35
+				consumer_goods_factor = 0.2
+				stability_weekly = -0.01
+				no_compliance_gain = 1
+			}
+		}
+		SKL_turkish_united_front_3 = {
+			modifier = {
+				resistance_growth_on_our_occupied_states = 0.5
+				resistance_target_on_our_occupied_states = 0.3
+				consumer_goods_factor = 0.15
+				stability_weekly = -0.01
+				no_compliance_gain = 1
+			}
+		}
+		SKL_turkish_united_front_4 = {
+			modifier = {
+				resistance_growth_on_our_occupied_states = 0.35
+				resistance_target_on_our_occupied_states = 0.2
+				consumer_goods_factor = 0.1
+				no_compliance_gain = 1
+			}
+		}
+		SKL_hellas_plan_1 = {
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		SKL_hellas_plan_2 = {
+			modifier = {
+				stability_factor = 0.05
+				army_org_factor = 0.05
+				
+			}
+		}
+		SKL_hellas_plan_3 = {
+			modifier = {
+				stability_factor = 0.05
+				army_org_factor = 0.05
+				war_support_weekly = 0.0025
+				
+			}
+		}
+		SKL_hellas_plan_4 = {
+			modifier = {
+				stability_factor = 0.05
+				army_org_factor = 0.05
+				war_support_weekly = 0.0025
+				conscription_factor = 0.005
+				
+			}
+		}
+		SKL_celtic_plan_1 = {
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		SKL_celtic_plan_2 = {
+			modifier = {
+				stability_factor = 0.05
+				mobilization_speed = 0.2
+				
+			}
+		}
+		SKL_celtic_plan_3 = {
+			modifier = {
+				stability_factor = 0.05
+				mobilization_speed= 0.2
+				war_support_factor = 0.05
+			}
+		}
+		SKL_celtic_plan_4 = {
+			modifier = {
+				stability_factor = 0.05
+				mobilization_speed = 0.2
+				war_support_factor = 0.05
+				conscription_factor = 0.005
+				
+			}
+		}
+		SKL_turkoman_plan_1 = {
+			modifier = {
+				stability_factor = 0.05	
+			}
+		}
+		SKL_turkoman_plan_2 = {
+			modifier = {
+				stability_factor = 0.05
+				equipment_capture_factor = 0.1
+					
+			}
+		}
+		SKL_turkoman_plan_3 = {
+			modifier = {
+				stability_factor = 0.05
+				equipment_capture_factor = 0.1
+				war_support_factor = 0.1
+					
+			}
+		}
+		SKL_turkoman_plan_4 = {
+			modifier = {
+				stability_factor = 0.05	
+				equipment_capture_factor = 0.1
+				war_support_factor = 0.1
+				conscription_factor = 0.005
+			}
+		}
+		SKL_armenian_plan_1 = {
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		SKL_armenian_plan_2 = {
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.1
+			}
+		}
+		SKL_armenian_plan_3 = {
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.1
+				army_org_factor = 0.05
+				
+			}
+		}
+		SKL_armenian_plan_4 = {
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.1
+				army_org_factor = 0.05
+				conscription_factor = 0.005
+			}
+		}
+		SKL_the_new_order = {
+			modifier = {
+				stability_factor = 0.2
+				war_support_factor = 0.4
+				army_org_factor = 0.1
+				conscription_factor = 0.02
+				equipment_capture_factor = 0.1
+			}
+		}
+		SKL_expelling_buisnesses = {
+			modifier = {
+				stability_weekly = -0.025
+				consumer_goods_factor = 0.3
+			}
+		}
+		SKL_nationalized_buisness = {
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_factory_efficiency_gain_factor = 0.25
+			}
+		}
+		SKL_race_heirarchy = {
+			modifier = {
+				production_factory_max_efficiency_factor = 0.15
+			}
+		}
+		SKL_mass_quotas = {
+			modifier = {
+				production_speed_arms_factory_factor = 0.2
+			}
+		}
+		SKL_brutality = {
+			modifier = {
+				monthly_population = -0.1
+				war_support_weekly = 0.005
+			}
+		}
+		SKL_population_control = {
+			modifier = {
+				monthly_population = -0.2
+				stability_weekly = 0.005
+			}
+		}
+		SKL_total_control = {
+			modifier = {
+				monthly_population = -0.3
+				stability_weekly = 0.05
+				war_support_weekly = 0.05
+				decryption_factor = 0.25
+				weekly_manpower = 100
+			}
+		}
+		SKL_eyes_everywhere = {
+			modifier = {
+				monthly_population = -0.2
+				stability_weekly = 0.01
+				war_support_weekly = 0.01
+				decryption_factor = 0.5
+				weekly_manpower = 200
+			}
+		}
+		SKL_state_hellenism = {
+			modifier = {
+				recruitable_population_factor = 0.15
+			}
+		}
+		SKL_helleno_occultism = {
+			modifier = {
+				recruitable_population_factor = 0.2
+				consumer_goods_factor = -0.05
+			}
+		}
+		SKL_deadlines = {
+			modifier = {
+				monthly_population = -0.5
+				consumer_goods_factor = 0.1
+			}
+		}
+		SKL_nuclear_focus = {
+			modifier = {
+				consumer_goods_factor = 0.05
+				nuclear_production_factor = 0.25
+			}
+		}
+		SKL_black_brigades = {
+			modifier = {
+				occupation_cost = -0.5
+			}
+		}
+		SKL_spartan_spirit = {
+			modifier = {
+				army_morale_factor = 0.25
+				army_org_factor = 0.1
+			}
+		}
+		SKL_victory_first = {
+			modifier = {
+				army_morale_factor = 0.3
+				army_org_factor = 0.1
+				occupation_cost = -0.5
+			}
+		}
+		SKL_gas_warfare = {
+			modifier = {
+				army_attack_factor = 0.2
+				supply_consumption_factor = 0.5
+			}
+		}
+		SKL_meth = {
+			modifier = {
+				army_speed_factor = 0.25
+				army_org_factor = -0.1
+			}
+		}
+		SKL_armored_monsters = {
+			modifier = {
+				army_armor_attack_factor = 0.25
+				army_armor_speed_factor = 0.2
+			}
+		}
+		SKL_mobility_focus = {
+			modifier = {
+				army_motorized_speed_factor = 0.25
+				equipment_bonus = {
+					motorized_equipment = {
+						build_cost_id = -0.2
+						instant = yes
+					}
+				}
+			}
+		}
+		SKL_breakthrough_cult = {
+			modifier = {
+				army_armor_attack_factor = 0.3
+				army_armor_speed_factor = 0.2
+				breakthrough_factor = 0.2
+				army_motorized_speed_factor = 0.25
+				equipment_bonus = {
+					motorized_equipment = {
+						build_cost_id = -0.2
+						instant = yes
+					}
+				}
+			}
+		}
+		SKL_heirs_to_macedon = {
+			modifier = {
+				
+			}
+	}
+}
+

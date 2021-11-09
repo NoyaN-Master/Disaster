@@ -1,0 +1,56 @@
+add_namespace = turkeyevents
+
+country_event = { #turkish nation demands surrender from killgilli
+	id = turkeyevents.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event turkeyevents.1" }
+	title = turkeyevents.1.t
+	desc = turkeyevents.1.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = { #sure bro
+		ai_chance = { factor = 100}
+		name = turkeyevents.1.a
+		ROOT = {
+			annex_country = {
+    				target = KLG
+   				transfer_troops = yes
+			}	
+		}
+	}
+	option = { #soy
+		ai_chance = {
+			factor = 10
+		}			
+		name = turkeyevents.1.b
+		ROOT = {
+			country_event = { id = turkeyevents.2 }
+		}
+	}
+}
+country_event = { #killgilli is a bitch
+	id = turkeyevents.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event turkeyevents.2" }
+	title = turkeyevents.2.t
+	desc = turkeyevents.2.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = turkeyevents.2.a
+		declare_war_on = {
+        target = KLG
+        type = annex_everything
+        }
+		add_stability = -0.01   
+		}			
+	}
+		
