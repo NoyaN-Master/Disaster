@@ -5,10 +5,20 @@ TUR_unification_category = {
 		cost = 0
 		visible = {
 			country_exists = ARM
-			NOT = {
-				country_exists = CIB
-				original_tag = ARM
+			OR = {
+				NOT = {
+					country_exists = CIB
+					original_tag = ARM
+				}
 			}
+			OR = {
+				CIB = {
+					has_war_with = ARM
+				}
+				ARM = {
+					has_war_with = CIB
+				}
+			}	
 			owns_state = 340
 			owns_state = 797
 			owns_state = 346
@@ -29,6 +39,25 @@ TUR_unification_category = {
 		fire_only_once = yes
 		cost = 0
 		visible = {
+			OR = {
+				has_government = authoritarian_socialist
+			}
+			OR = {
+				has_government = unisocialist
+			}
+			OR = {
+				has_government = libertarian_socialist
+			}
+			OR = {
+				original_tag = WRF
+				has_government = revolutionary_nationalist
+			}
+			OR = {
+				original_tag = TIT
+			}
+			OR = {
+				original_tag = SKL
+			}
 			country_exists = KLG
 			NOT = {
 				country_exists = CIB
@@ -44,11 +73,41 @@ TUR_unification_category = {
 			has_war = no
 		}
 		complete_effect = {
-			KLG = {
-				country_event = { id = turkeyevents.1 }
+			declare_war_on = {
+				target = KLG
+				type = annex_everything
 			}
 		}
-	}		
+	}
+	TUR_integrate_samsun = {
+		fire_only_once = yes
+		cost = 0
+		visible = {
+			country_exists = KLG
+			NOT = {
+				country_exists = CIB
+				country_exists = ANT
+				country_exists = TIT
+				country_exists = CLP
+				original_tag = SKL
+				original_tag = TIT
+				original_tag = WRF
+				has_government = revolutionary_nationalist
+				has_government = libertarian_socialist
+				has_government = unisocialist
+				has_government = authoritarian_socialist
+			}
+		}
+		available = {
+			has_war = no
+		}
+		complete_effect = {
+			annex_country = {
+        			target = KLG
+        			transfer_troops = yes
+        		}		
+		}
+	}
 	wrf_ataturk_unify_decision = {
 	    fire_only_once = yes
 		cost = 0
@@ -509,6 +568,9 @@ TUR_unification_category = {
         visible = {
         original_tag = IZM
         has_government = authoritarian_socialist
+        NOT = {
+            has_completed_focus = IZM_Ethem_Unified
+        }
         }  
         complete_effect = {
         WRF = { every_unit_leader = { set_nationality = IZM } }
@@ -577,9 +639,10 @@ TUR_unification_category = {
         CIB = { every_unit_leader = { set_nationality = SKL } }
         OTH = { every_unit_leader = { set_nationality = SKL } }   
         set_cosmetic_tag = SKL_Fuller_Tag
-        remove_ideas = turkey_brother_war_idea
+        #remove_ideas = turkey_brother_war_idea
         hidden_effect = {
             set_country_flag = unification_fuller
+			add_ideas = SKL_turkish_united_front_1
         }
         SKL = {
         #add_state_core = 49
@@ -1909,108 +1972,207 @@ Enver_Big_Cities_Project = {
 }
 
 ethem_foreign_category = {
-
-
-Ethem_StopStalin = {
-	    fire_only_once = yes
-		cost = 0
-        available  = {
-        SRF = {
-        owns_state = 231
-        }
+    Ethem_iran_puppet = {
+        fire_only_once = yes
+        cost = 0
+        available = {
+            owns_state = 266
+            owns_state = 417
         }
         visible = {
-        original_tag = IZM
-        }  
+            original_tag = IZM
+        }
         complete_effect = {
-        declare_war_on = {
-        target = SRF
-        type = annex_everything
+            release = INR
+            transfer_state = 420
+            transfer_state = 419
+            transfer_state = 421
+            puppet = INR
+            INR = {
+                set_cosmetic_tag = INR_ethem_puppet
+                create_country_leader = {
+                    name = "Cemal Mandanoglu"
+                    desc = "POLITICS_Cemal_Madanoglu"
+                    picture = "IZM_Madan.tga"
+                    expire = "1965.1.1"
+                    ideology = unisocialist_subideology
+                    traits = {}
+                }
+                set_politics = {
+                    ruling_party = unisocialist
+                }
+            }
         }
-        SRF = {
-        every_owned_state = {
-        add_claim_by = IZM
-        }	
-        }
-        }
-        ai_will_do = {
-			factor = 1000
-		}
-     }
-
-Ethem_FuckGreeks = {
-	    fire_only_once = yes
-		cost = 0
-        available  = {
-        IZM = {
-        has_war = no   
-        }
+    }
+    Ethem_uar_puppet = {
+        fire_only_once = yes
+        cost = 0
+        available = {
+            owns_state = 455
         }
         visible = {
-        original_tag = IZM
-        }  
+            original_tag = IZM
+        }
         complete_effect = {
-        declare_war_on = {
-        target = GRE
-        type = annex_everything
+            release = SYR
+            release = PAL
+            release = IQR
+            transfer_state = 799
+            transfer_state = 817
+            transfer_state = 818
+            transfer_state = 676
+            transfer_state = 291
+            puppet = PAL
+            PAL = {
+                set_cosmetic_tag = PAL_ethem_puppet
+                create_country_leader = {
+                    name = "Samet Pasha"
+                    desc = "POLITICS_Samet_Pasha"
+                    picture = "Portrait_CIB_Samet.tga"
+                    expire = "1965.1.1"
+                    ideology = unisocialist_subideology
+                    traits = {}
+                }
+                set_politics = {
+                    ruling_party = unisocialist
+                }
+                annex_country = {
+                    target = IQR
+                    transfer_troops = no
+                }
+                annex_country = {
+                    target = SRY
+                    transfer_troops = no
+                }
+            }
         }
-        GRE = {
-        every_owned_state = {
-        add_claim_by = IZM
-        }	
-        }
-        }
-        ai_will_do = {
-			factor = 1000
-		}
-     }     
-
-
- Ethem_RedBrown = {
-	    fire_only_once = yes
-		cost = 0
-        available  = {
-        NGU = {
-        has_government = revolutionary_nationalist
-        is_faction_leader = yes 
-        }
-        IZM = {
-        has_war = no
-        is_in_faction =  no   
-        }
+    }
+    Ethem_give_arabia_to_uar = {
+        fire_only_once = yes
+        cost = 0
+        available = {
+            owns_state = 292
+            owns_state = 679
         }
         visible = {
-        original_tag = IZM
-        }  
+            original_tag = IZM
+        }
         complete_effect = {
-        NGU = {
-        country_event = { id = ethem.6}
+           release = ARB
+           release = HJZ
+            PAL = {
+                annex_country = {
+                    target = ARB
+                    transfer_troops = no
+                }
+                annex_country = {
+                    target = HJZ
+                    transfer_troops = no
+                }
+            }
         }
-        }
-        ai_will_do = {
-			factor = 1000
-		}
-     }
- Ethem_GetSeljukia = {
-	    fire_only_once = yes
-		cost = 0
-        available  = {
-        IZM = {
-        has_war = no  
-        }
-        }
-        visible = {
-        original_tag = IZM
-        }  
-        complete_effect = {
-        INR = {
-        country_event = { id = ethem.7}
-        }
-        }
-        ai_will_do = {
-			factor = 1000
-		}
-     }     
+    }
+
+# Ethem_StopStalin = {
+# 	    fire_only_once = yes
+# 		cost = 0
+#         available  = {
+#         SRF = {
+#         owns_state = 231
+#         }
+#         }
+#         visible = {
+#         original_tag = IZM
+#         }  
+#         complete_effect = {
+#         declare_war_on = {
+#         target = SRF
+#         type = annex_everything
+#         }
+#         SRF = {
+#         every_owned_state = {
+#         add_claim_by = IZM
+#         }	
+#         }
+#         }
+#         ai_will_do = {
+# 			factor = 1000
+# 		}
+#      }
+
+# Ethem_FuckGreeks = {
+# 	    fire_only_once = yes
+# 		cost = 0
+#         available  = {
+#         IZM = {
+#         has_war = no   
+#         }
+#         }
+#         visible = {
+#         original_tag = IZM
+#         }  
+#         complete_effect = {
+#         declare_war_on = {
+#         target = GRE
+#         type = annex_everything
+#         }
+#         GRE = {
+#         every_owned_state = {
+#         add_claim_by = IZM
+#         }	
+#         }
+#         }
+#         ai_will_do = {
+# 			factor = 1000
+# 		}
+#      }     
+
+
+#  Ethem_RedBrown = {
+# 	    fire_only_once = yes
+# 		cost = 0
+#         available  = {
+#         NGU = {
+#         has_government = revolutionary_nationalist
+#         is_faction_leader = yes 
+#         }
+#         IZM = {
+#         has_war = no
+#         is_in_faction =  no   
+#         }
+#         }
+#         visible = {
+#         original_tag = IZM
+#         }  
+#         complete_effect = {
+#         NGU = {
+#         country_event = { id = ethem.6}
+#         }
+#         }
+#         ai_will_do = {
+# 			factor = 1000
+# 		}
+#      }
+#  Ethem_GetSeljukia = {
+# 	    fire_only_once = yes
+# 		cost = 0
+#         available  = {
+#         IZM = {
+#         has_war = no  
+#         }
+#         }
+#         visible = {
+#         original_tag = IZM
+#         }  
+#         complete_effect = {
+#         INR = {
+#         country_event = { id = ethem.7}
+#         }
+#         }
+#         ai_will_do = {
+# 			factor = 1000
+# 		}
+#      }     
 }
 
 
