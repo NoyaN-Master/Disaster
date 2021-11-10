@@ -16,7 +16,7 @@ focus_tree = {
 		cost = 0
 		available_if_capitulated = no
 		completion_reward = {
-			
+			country_event = fullerunification.2
         }
 	}
 	focus = {
@@ -89,6 +89,7 @@ focus_tree = {
 			focus = SKL_Unification_Complete
 		}
 		completion_reward = {
+			country_event = fullerunification.1
 			if = {
 				limit = {
 					NOT = {
@@ -195,7 +196,6 @@ focus_tree = {
 					add_idea = SKL_turkish_united_front_4
 				}
 			}
-        }
         }
 	}
 	focus = {
@@ -471,6 +471,7 @@ focus_tree = {
 			focus = SKL_the_old_gods
 		}
 		completion_reward = {
+			country_event = fullerunification.4
 			replace_ideas = {
 				remove_idea = SKL_armenian_plan_2
 				add_idea = SKL_armenian_plan_3
@@ -601,6 +602,7 @@ focus_tree = {
 			focus = SKL_normalize_occultism
 		}
 		completion_reward = {
+			country_event = fullerunification.6
 			add_timed_idea ={idea = SKL_deadlines days = 90}
         }
 	}
@@ -616,6 +618,7 @@ focus_tree = {
 		}
 		available_if_capitulated = no
 		completion_reward = {
+			country_event = fullerunification.5
 			swap_ideas = {
 				add_idea = SKL_helleno_occultism
 				remove_idea = SKL_state_hellenism
@@ -664,7 +667,7 @@ focus_tree = {
 			focus = SKL_the_domestic_situation
 		}
 		completion_reward = {
-			#event
+			country_event = fullerunification.8
         }
 	}
 	focus = {
@@ -728,6 +731,7 @@ focus_tree = {
 			focus = SKL_crush_the_left
 		}
 		completion_reward = {
+			country_event = fullerunification.9
 			if = {
 				limit = {
 					has_completed_focus = SKL_utmost_brutality
@@ -759,7 +763,7 @@ focus_tree = {
 		}
 		available_if_capitulated = no
 		completion_reward = {
-			
+			country_event = fullerunification.10
         }
 	}
 	focus = {
