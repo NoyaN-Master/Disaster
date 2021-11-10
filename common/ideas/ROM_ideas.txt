@@ -1,0 +1,32 @@
+ideas = {
+
+country = {
+
+ROM_agrarian_crisis = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ROM_agrarian_crisis" }
+			modifier = {
+				conscription_factor = -0.15
+				stability_factor = -0.05
+			}
+			picture = brother_war
+		}
+		ROM_revanchist_romania = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ROM_legionary_romania" }
+			modifier = {
+				consumer_goods_factor = -0.12
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				resistance_target = -0.1
+			}
+			picture = brother_war
+		}
+		ROM_calls_for_democracy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ROM_calls_for_democracy" }
+			modifier = {
+				political_power_gain = -0.04
+				stability_factor = -0.1
+			}
+			picture = brother_war
+		}	
+	}
+	}
