@@ -843,7 +843,7 @@ focus_tree = {
 		}
 		available_if_capitulated = no
 		completion_reward = {
-		
+			add_ideas = SKL_armored_monsters
         }
 	}
 	focus = {
@@ -858,7 +858,7 @@ focus_tree = {
 		}
 		available_if_capitulated = no
 		completion_reward = {
-		
+			add_ideas = SKL_gas_warfare 
         }
 	}
 	focus = {
@@ -873,7 +873,7 @@ focus_tree = {
 		}
 		available_if_capitulated = no
 		completion_reward = {
-		
+			add_ideas = SKL_black_brigades 
         }
 	}
 	focus = {
@@ -888,7 +888,7 @@ focus_tree = {
 		}
 		available_if_capitulated = no
 		completion_reward = {
-		
+			add_ideas = SKL_mobility_focus 
         }
 	}
 	focus = {
@@ -903,7 +903,7 @@ focus_tree = {
 		}
 		available_if_capitulated = no
 		completion_reward = {
-		
+			add_ideas = SKL_spartan_spirit 
         }
 	}
 	focus = {
@@ -918,7 +918,7 @@ focus_tree = {
 		}
 		available_if_capitulated = no
 		completion_reward = {
-		
+			add_ideas = SKL_meth 
         }
 	}
 	focus = {
@@ -934,13 +934,15 @@ focus_tree = {
 		prerequisite = {
 			focus = SKL_stimulate_our_soldiers
 		}
-		prerequisite = {
-			focus = SKL_spartan_spirit
-		}
 		available_if_capitulated = no
 		completion_reward = {
-		
-        }
+			custom_effect_tooltip = SKL_merge_two_ideas_tt
+			hidden_effect = {
+				add_idea = SKL_breakthrough_cult
+				remove_idea = SKL_mobility_focus
+				remove_idea = SKL_armored_monsters
+			}
+		}
 	}
 	focus = {
 		id = SKL_victory_above_all
@@ -955,12 +957,14 @@ focus_tree = {
 		prerequisite = {
 			focus = SKL_stimulate_our_soldiers
 		}
-		prerequisite = {
-			focus = SKL_doctrine_of_mobility
-		}
 		available_if_capitulated = no
 		completion_reward = {
-		
+			custom_effect_tooltip = SKL_merge_two_ideas_tt
+			hidden_effect = {
+				add_idea = SKL_victory_first
+				remove_idea = SKL_black_brigades
+				remove_idea = SKL_spartan_spirit
+			}
         }
 	}
 	focus = {
