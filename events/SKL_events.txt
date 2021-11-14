@@ -399,3 +399,19 @@ country_event = { #No Mercy in War
 		name = fullerunification.13.a
 	}
 }
+
+country_event = { #New Macedon Army
+	id = fullerunification.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event fullerunification.14" }
+	title = fullerunification.14.t
+	desc = fullerunification.14.d
+	
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fullerunification.14.a
+	}
+}	
