@@ -1,0 +1,781 @@
+focus_tree = {
+	id = ottomans_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+		}
+		}
+		continuous_focus_position = { x = 100 y = 2000 }
+
+
+        focus = {
+		id = CLP_Sorting_Things
+		icon = GFX_goal_CLP_abdul
+		x = 6
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+        prerequisite = { focus = CLP_Rise_Royalty}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		add_stability = 0.10
+		}
+	}
+    focus = {
+		id = CLP_Destroy_Reactionars
+		icon = GFX_goal_WRF_Reformists
+		x = 4
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = CLP_Sorting_Things}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		swap_ideas = {
+			remove_idea = CLP_no_authority
+			add_idea = CLP_no_authority_osman1
+		}
+		}
+	}
+
+    focus = {
+		id = CLP_Our_Men
+		icon = GFX_goal_WRF_Old
+		x = 6
+		y = 2
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { focus = CLP_Sorting_Things}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_manpower = 10000
+			add_political_power = 100
+		division_template = {
+    	name = "Ottoman Infantry"
+    	is_locked = yes
+    	division_names_group = TUR_INF_01
+    	priority = 0
+    	template_counter = 0
+    	regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+        infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+   		}	
+		}
+			346 = {
+			create_unit = {
+    		division = "name = \"Royal Guards\" division_template = \"Ottoman Infantry\" start_experience_factor = 1 start_equipment_factor = 1"
+    		owner = CLP
+			}
+			create_unit = {
+    		division = "name = \"Royal Guards\" division_template = \"Ottoman Infantry\" start_experience_factor = 1 start_equipment_factor = 1"
+    		owner = CLP
+			}
+			create_unit = {
+    		division = "name = \"Royal Guards\" division_template = \"Ottoman Infantry\" start_experience_factor = 1 start_equipment_factor = 1"
+    		owner = CLP
+			}
+			create_unit = {
+    		division = "name = \"Royal Guards\" division_template = \"Ottoman Infantry\" start_experience_factor = 1 start_equipment_factor = 1"
+    		owner = CLP
+			}
+			create_unit = {
+    		division = "name = \"Royal Guards\" division_template = \"Ottoman Infantry\" start_experience_factor = 1 start_equipment_factor = 1"
+    		owner = CLP
+			}
+			create_unit = {
+    		division = "name = \"Royal Guards\" division_template = \"Ottoman Infantry\" start_experience_factor = 1 start_equipment_factor = 1"
+    		owner = CLP
+			}	
+			}
+		}
+	}
+
+    focus = {
+		id = CLP_A_Fatwa
+		icon = GFX_goal_WRF_Religion
+		x = 8
+		y = 2
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { focus = CLP_Sorting_Things}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = CLP_fundementalism_high
+				add_idea = CLP_fundementalism_new
+				}
+			
+		}
+	}
+
+    focus = {
+		id = CLP_Friday_Purge
+		icon = GFX_goal_RUS_Radicals
+		x = 6
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = CLP_Our_Men}
+        prerequisite = { focus = CLP_Destroy_Reactionars}
+        prerequisite = { focus = CLP_A_Fatwa}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+			remove_idea = CLP_no_authority_osman1
+			add_idea = CLP_no_authority_osman2
+		}
+		}
+	}
+
+    focus = {
+		id = CLP_A_New_Army
+		icon = GFX_goal_clp_soldiers
+		x = 2
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = CLP_Friday_Purge}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
+    focus = {
+		id = CLP_Legacy_Prut
+		icon = GFX_goal_clp_theorize
+		x = 2
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = CLP_A_New_Army}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			army_experience = 30
+			add_tech_bonus = {
+   	 	bonus = 1.0
+    	uses = 1
+    	category = land_doctrine
+		}
+		}
+	}
+
+    focus = {
+		id = CLP_Innovation_Fatih
+		icon = GFX_goal_clp_fatih
+		x = 1
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = CLP_Legacy_Prut}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		add_tech_bonus = {
+   	 	bonus = 1.0
+    	uses = 1
+    	category = artillery
+		}
+		add_tech_bonus = {
+   	 	bonus = 0.8
+    	uses = 2
+    	category = infantry_weapons
+		}
+		}
+	}
+
+    focus = {
+		id = CLP_Raise_Elites
+		icon = GFX_goal_clp_elites
+		x = 2
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = CLP_Innovation_Fatih}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			346 = {
+			create_unit = {
+    		division = "name = \"Royal Guards\" division_template = \"Royal Guard\" start_experience_factor = 1 start_equipment_factor = 1"
+    		owner = CLP
+			}
+			create_unit = {
+    		division = "name = \"Royal Guards\" division_template = \"Royal Guard\" start_experience_factor = 1 start_equipment_factor = 1"
+    		owner = CLP
+			}
+			create_unit = {
+    		division = "name = \"Royal Guards\" division_template = \"Royal Guard\" start_experience_factor = 1 start_equipment_factor = 1"
+    		owner = CLP
+			}
+			}
+		}
+	}
+
+    focus = {
+		id = CLP_Asakiri_Osmaniye
+		icon = GFX_goal_RUS_Militarist
+		x = 4
+		y = 8
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { focus = CLP_Raise_Elites}
+        prerequisite = { focus = CLP_Restart_Factories}
+        prerequisite = { focus = CLP_German_Systems}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = CLP_Imperial_Army4
+				add_idea = CLP_Imperial_Army5
+			}
+		}
+	}
+
+    focus = {
+		id = CLP_Mehter_Plays_On
+		icon = GFX_goal_yelkenclp
+		x = 7
+		y = 9
+		cost = 1
+		available_if_capitulated = yes
+        prerequisite = { focus = CLP_A_Basis}
+        prerequisite = { focus = CLP_Asakiri_Osmaniye}
+        
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = CLP_yelken_Tt
+		}
+	}
+
+    focus = {
+		id = CLP_MadrasahToAcademy
+		icon = GFX_goal_WRF_Harbiye
+		x = 4
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = CLP_Economic_Problems}
+        prerequisite = { focus = CLP_A_New_Army}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_ideas = CLP_Imperial_Army1
+		}
+	}
+
+    focus = {
+		id = CLP_Military_Barracks
+		icon = GFX_goal_WRF_Old_Discipline
+		x = 4
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = CLP_MadrasahToAcademy}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = CLP_Imperial_Army1
+				add_idea = CLP_Imperial_Army2
+			}
+		}
+	}
+
+    focus = {
+		id = CLP_German_Systems
+		icon = GFX_goal_work_tsk
+		x = 4
+		y = 7
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { focus = CLP_Military_Barracks}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		swap_ideas = {
+				remove_idea = CLP_Imperial_Army2
+				add_idea = CLP_Imperial_Army4
+			}
+		}
+	}
+
+    focus = {
+		id = CLP_Economic_Problems
+		icon = GFX_goal_TAT_economy
+		x = 6
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+        prerequisite = { focus = CLP_Friday_Purge}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_state = {	
+		add_building_construction = {
+    	type = industrial_complex 
+    	level = 3
+    	instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 2
+		}
+		}
+	}
+
+    focus = {
+		id = CLP_Supply_Routes
+		icon = GFX_goal_bread_family
+		x = 6
+		y = 5
+		cost = 1
+		available_if_capitulated = yes
+        prerequisite = { focus = CLP_Economic_Problems}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_ideas = CLP_Fast_Hizir
+			random_owned_state = {
+		add_building_construction = {
+    	type = infrastructure 
+    	level = 2
+    	instant_build = yes
+		}
+		}
+		}
+	}
+
+    focus = {
+		id = CLP_Encourage_Farmers
+		icon = GFX_goal_RUS_farm
+		x = 7
+		y = 6
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { focus = CLP_Supply_Routes}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_manpower = 4300
+		}
+	}
+
+    focus = {
+		id = CLP_Restart_Factories
+		icon = GFX_goal_OTH_factory
+		x = 6
+		y = 7
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { focus = CLP_Encourage_Farmers}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_state = {	
+		add_building_construction = {
+    	type = industrial_complex 
+    	level = 1
+    	instant_build = yes
+		}
+		add_building_construction = {
+    	type = arms_factory 
+    	level = 1
+    	instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 2
+		}
+		}
+	}
+
+    focus = {
+		id = CLP_Convene_First_Congress
+		icon = GFX_goal_clp_congr
+		x = 9
+		y = 4
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { focus = CLP_Friday_Purge}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = CLP_no_authority_osman2
+				add_idea = CLP_no_authority_osman3
+			}
+		}
+	}
+
+    focus = {
+		id = CLP_Mistakes_of_Old
+		icon = GFX_goal_clp_hakan
+		x = 9
+		y = 5
+		cost = 1
+		available_if_capitulated = yes
+        prerequisite = { focus = CLP_Convene_First_Congress}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_war_support = 0.10
+			add_political_power = 50
+			custom_effect_tooltip = CLP_mistakes_tt
+		}
+	}
+
+    focus = {
+		id = CLP_Legacy_Abdulmecid
+		icon = GFX_goal_clp_mecid
+		x = 9
+		y = 6
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { focus = CLP_Mistakes_of_Old}
+        prerequisite = { focus = CLP_Define_Our_Goal}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = CLP_no_authority_osman3
+				add_idea = CLP_no_authority_osman4
+			}
+		}
+	}
+
+    focus = {
+		id = CLP_A_Basis
+		icon = GFX_goal_wrf_pearl
+		x = 9
+		y = 7
+		cost = 3
+		available_if_capitulated = yes
+        prerequisite = { focus = CLP_Question_Title}
+        prerequisite = { focus = CLP_Legacy_Abdulmecid}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			remove_idea = CLP_no_authority_osman4
+			add_political_power = 120
+		}
+	}
+
+	#diplo
+
+	focus = {
+		id = CLP_Anatolian_Front
+		icon = GFX_goal_WRF_enemies_within
+		x = 15
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		available = { has_completed_focus = CLP_Mehter_Plays_On}
+		completion_reward = {
+			add_manpower = 30000
+			add_state_claim = 49
+        add_state_claim = 347
+        add_state_claim = 839
+        add_state_claim = 798
+        add_state_claim = 356
+        add_state_claim = 355
+        add_state_claim = 354
+        add_state_claim = 353
+        add_state_claim = 800
+        add_state_claim = 352
+        add_state_claim = 350
+        add_state_claim = 346
+        add_state_claim = 348
+        add_state_claim = 349
+        add_state_claim = 797
+        add_state_claim = 835
+		division_template = {
+    	name = "Ottomanist Militants"
+    	is_locked = no
+    	division_names_group = TUR_INF_01
+    	priority = 0
+    	template_counter = 0
+    	regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+        infantry = { x = 0 y = 3 }
+		
+   		}	
+		}
+		}
+	}
+
+	focus = {
+		id = CLP_East
+		icon = GFX_goal_WRF_Enver
+		x = 17
+		y = 2
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = CLP_Anatolian_Front}
+		available = { 
+			CIB = {
+			owns_state = 230
+			}
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CLP_Deal_Hamidiye
+		icon = GFX_goal_ARM_Guardians_of_the_Kurds
+		x = 16
+		y = 3
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = CLP_East}
+		completion_reward = {
+			custom_effect_tooltip = CLP_Hamidiye_tt
+		}
+	}
+
+	focus = {
+		id = CLP_Cemal_Pasa_Firman
+		icon = GFX_goal_WRF_Pasha
+		x = 17
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = CLP_Deal_Hamidiye}
+		prerequisite = { focus = CLP_Deal_Armenians}
+		completion_reward = {
+			custom_effect_tooltip = CLP_Cemal_Firmantt
+			add_manpower = 30000
+			CIB = {
+				add_stability = -0.10
+				add_manpower = -30000
+			}
+		}
+	}
+
+	focus = {
+		id = CLP_War_Enver
+		icon = GFX_goal_fuller_enver
+		x = 17
+		y = 5
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = CLP_Cemal_Pasa_Firman}
+		completion_reward = {
+			country_event = { id =  caliph.6 days = 1}
+
+		}
+	}
+
+	focus = {
+		id = CLP_Deal_Armenians
+		icon = GFX_goal_ARM_Neo_Crusaders_Zeal
+		x = 18
+		y = 3
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = CLP_East}
+		completion_reward = {
+			custom_effect_tooltip = CLP_Armenians_tt
+		}
+	}
+
+	focus = {
+		id = CLP_West
+		icon = GFX_goal_WRF_disaster
+		x = 13
+		y = 2
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = CLP_Anatolian_Front}
+		available = { 
+			WRF = {
+			owns_state = 342
+			}
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = CLP_Deal_Greek
+		icon = GFX_goal_ARM_Reward_our_Hellenic_Friends
+		x = 12
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = CLP_West}
+		completion_reward = {
+			custom_effect_tooltip = CLP_Greeks_tt
+		}
+	}
+	focus = {
+		id = CLP_Istanbul_Merger
+		icon = GFX_goal_CRW_first_icon
+		x = 13
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = CLP_Deal_Greek}
+		prerequisite = { focus = CLP_Deal_Osman}
+		completion_reward = {
+			custom_effect_tooltip = CLP_Istanbul_Merger_tt
+		}
+	}
+	focus = {
+		id = CLP_War_Kemal
+		icon = GFX_goal_WRF_Attack_Kemalism
+		x = 13
+		y = 5
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = CLP_Istanbul_Merger}
+		completion_reward = {
+			country_event = { id =  caliph.5 days = 1}
+		}
+	}
+
+	focus = {
+		id = CLP_Decimate_Warlords
+		icon = GFX_goal_wrf_ant_attack
+		x = 15
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = CLP_War_Enver}
+		prerequisite = { focus = CLP_War_Kemal}
+		available = {
+			WRF = {
+				exists = no
+			}
+			CIB = {
+				exists = no
+			}
+		}
+		completion_reward = {
+		declare_war_on = {
+   	 	target = IZM
+    	type = annex_everything
+		}
+		declare_war_on = {
+   	 	target = SKL
+    	type = annex_everything
+		}
+		declare_war_on = {
+   	 	target = ANK
+    	type = annex_everything
+		}
+		declare_war_on = {
+   	 	target = OTH
+    	type = annex_everything
+		}
+		declare_war_on = {
+   	 	target = KLG
+    	type = annex_everything
+		}
+		}
+	}
+	focus = {
+		id = CLP_Deal_Osman
+		icon = GFX_goal_CIB_ottoman
+		x = 14
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = CLP_West}
+		completion_reward = {
+			custom_effect_tooltip = CLP_osmanfuad_tt
+		}
+	}
+
+}

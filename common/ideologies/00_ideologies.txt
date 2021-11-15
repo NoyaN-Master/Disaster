@@ -325,6 +325,10 @@ ideologies = {
 			autocratic_subideology = {
 			}
 			
+			ottomanism = {
+					can_be_randomly_selected = no
+			}
+
 			mercenary_state = {
 			              can_be_randomly_selected = no
 			}

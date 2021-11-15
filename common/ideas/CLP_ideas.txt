@@ -32,6 +32,70 @@ CLP_no_authority = {
 			war_support_factor = -0.4 
 			}
 		}
+
+CLP_no_authority_osman1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CLP_no_authority" }
+			picture = CRW_Unrest
+			cancel  = {
+			WRF = {
+			has_country_flag = Roatta_Warlord	
+			}		
+			}
+			modifier = {
+			political_power_gain = -0.5
+			political_power_cost = 0.3
+			production_factory_max_efficiency_factor = -0.3
+			stability_factor = -0.15
+			weekly_stability = -0.003
+			war_support_factor = -0.3 
+			}
+		}
+CLP_no_authority_osman2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CLP_no_authority" }
+			picture = CRW_Unrest
+			cancel  = {
+			WRF = {
+			has_country_flag = Roatta_Warlord	
+			}		
+			}
+			modifier = {
+			political_power_gain = -0.1
+			political_power_cost = 0.1
+			production_factory_max_efficiency_factor = -0.1
+			stability_factor = -0.10
+			war_support_factor = -0.2 
+			}
+		}
+CLP_no_authority_osman3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CLP_no_authority" }
+			picture = CRW_Unrest
+			cancel  = {
+			WRF = {
+			has_country_flag = Roatta_Warlord	
+			}		
+			}
+			modifier = {
+			political_power_gain = -0.05
+			political_power_cost = 0.05
+			stability_factor = -0.10
+			war_support_factor = -0.1
+			}
+		}
+CLP_no_authority_osman4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CLP_no_authority" }
+			picture = CRW_Unrest
+			cancel  = {
+			WRF = {
+			has_country_flag = Roatta_Warlord	
+			}		
+			}
+			modifier = {
+			political_power_gain = 0.05
+			political_power_cost = 0.05
+			stability_factor = -0.05
+			}
+		}
+													
 CLP_ulema_authority = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CLP_ulema_authority" }
 			picture = CLP_realm_of_islam
@@ -63,7 +127,22 @@ CLP_fundementalism_high = {
 			weekly_war_support = -0.05
 			research_speed_factor = 0.10
 			}
-		}										
+		}
+CLP_fundementalism_new = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CLP_fundementalism_high" }
+			picture = CRW_Unrest
+			cancel  = {
+			WRF = {
+			has_country_flag = Roatta_Warlord	
+			}		
+			}
+			modifier = {
+			political_power_gain = 0.03
+			production_factory_max_efficiency_factor = 0.2
+			stability_factor = -0.1
+			research_speed_factor = 0.15
+			}
+		}												
 CLP_never_fail = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CLP_never_fail" }
 			picture = CIB_OrduVatan
@@ -148,6 +227,25 @@ CLP_Imperial_Army4 = {
 			army_defence_factor = 0.08
 			}
 		}
+CLP_Imperial_Army5 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
+			picture = junker_rule
+			cancel  = {
+			WRF = {
+			has_country_flag = Roatta_Warlord	
+			}		
+			}
+			modifier = {
+			conscription = 0.05
+			attrition = -0.1
+			army_org = 1
+			land_reinforce_rate = 0.1
+			army_morale_factor = 0.15
+			army_attack_factor = 0.10
+			army_defence_factor = 0.1
+			}
+		}
+
 CLP_Imperial_Army_Takbir = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
 			picture = junker_rule

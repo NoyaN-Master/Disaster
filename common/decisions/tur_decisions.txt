@@ -198,6 +198,57 @@ TUR_unification_category = {
 			factor = 1000
 		}
      }
+     ottoman_unify_decision = {
+	    fire_only_once = yes
+		cost = 0
+        available  = {
+        owns_state = 49
+        owns_state = 347
+        owns_state = 839
+        owns_state = 798
+        owns_state = 356
+        owns_state = 355
+        owns_state = 354
+        owns_state = 353
+        owns_state = 800
+        owns_state = 230
+        owns_state = 229
+        owns_state = 352
+        owns_state = 350
+        owns_state = 346
+        owns_state = 348
+        owns_state = 349
+        owns_state = 797
+        }
+        visible = {
+        original_tag = CLP
+        has_government = autocratic
+        }  
+        complete_effect = {
+	set_global_flag = turkey_civilwar_over
+        set_cosmetic_tag = Ottoman_Cosmetic
+        add_state_core = 49
+        add_state_core = 347
+        add_state_core = 839
+        add_state_core = 798
+        add_state_core = 356
+        add_state_core = 355
+        add_state_core = 354
+        add_state_core = 353
+        add_state_core = 800
+        add_state_core = 352
+        add_state_core = 350
+        add_state_core = 346
+        add_state_core = 348
+        add_state_core = 349
+        add_state_core = 797
+        add_state_core = 835
+        set_capital = 797       
+        }
+        ai_will_do = {
+			factor = 1000
+		}
+     }
      CIB_unify_decision = {
 	    fire_only_once = yes
 		cost = 0
@@ -665,7 +716,8 @@ TUR_unification_category = {
         visible = {
         NOT = {
         has_country_flag = unification_ulema     
-        }    
+        }
+        has_government = esoteric_traditionalist    
         original_tag = CLP
         }  
         complete_effect = {
@@ -768,6 +820,7 @@ CLP_Annex_Ist = {
         }
         visible = { 
         tag = CLP 
+        has_government = esoteric_traditionalist
         NOT = {
         owns_state = 797    
         }
