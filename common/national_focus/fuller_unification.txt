@@ -989,6 +989,7 @@ focus_tree = {
 		id = SKL_HEIR_TO_MACEDON
 		icon = GFX_goal_SKL_HEIR_MACEDON
 		relative_position_id = SKL_the_weapon
+		cost = 2
 		x = 0
 		y = 1
 		prerequisite = { focus = SKL_EYES_EVERYWHERE }
@@ -998,4 +999,158 @@ focus_tree = {
 			
 		}
 	}
+
+
+	### DIPLO TREE ###
+
+	focus = {
+		id = SKL_diplo
+		icon = SKL_diplo_start
+		x = 29
+		y = 1
+		cost = 0
+		available = {
+			always = no
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SKL_kill_arabs
+		icon = SKL_kill_arab
+		x = 0
+		y = 1
+		cost = 2
+		relative_position_id = SKL_diplo
+		prerequisite = { focus = SKL_diplo }
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SKL_invade_bulgaria
+		icon = SKL_into_bulgaria
+		x = -2
+		y = 2
+		cost = 2
+		relative_position_id = SKL_diplo
+		prerequisite = { focus = SKL_kill_arabs }
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SKL_request_egypt
+		icon = SKL_get_egypt
+		x = 0
+		y = 2
+		cost = 2
+		relative_position_id = SKL_diplo
+		prerequisite = { focus = SKL_kill_arabs }
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SKL_crush_persians
+		icon = SKL_crush_persia
+		x = 2
+		y = 2
+		cost = 2
+		relative_position_id = SKL_diplo
+		prerequisite = { focus = SKL_kill_arabs }
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SKL_ban_christians
+		icon = SKL_explode_churches
+		x = -1
+		y = 3
+		cost = 2
+		relative_position_id = SKL_diplo
+		prerequisite = { focus = SKL_invade_bulgaria }
+		prerequisite = { focus = SKL_request_egypt }
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SKL_ban_muslims
+		icon = SKL_anti_islam
+		x = 1
+		y = 3
+		cost = 2
+		relative_position_id = SKL_diplo
+		prerequisite = { focus = SKL_crush_persians }
+		prerequisite = { focus = SKL_request_egypt }
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SKL_PHASE_TWO
+		icon = SKL_phase_two
+		x = 0
+		y = 4
+		cost = 2
+		relative_position_id = SKL_diplo
+		prerequisite = { focus = SKL_ban_muslims }
+		prerequisite = { focus = SKL_ban_christians }
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SKL_end_afghan
+		icon = SKL_end_afghans
+		x = 1
+		y = 5
+		cost = 2
+		relative_position_id = SKL_diplo
+		prerequisite = { focus = SKL_PHASE_TWO }
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SKL_march_to_turkmen
+		icon = SKL_march_to_turkestan
+		x = -1
+		y = 5
+		cost = 2
+		relative_position_id = SKL_diplo
+		prerequisite = { focus = SKL_PHASE_TWO }
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SKL_retvrn_home
+		icon = SKL_return_home
+		x = 0
+		y = 6
+		cost = 2
+		relative_position_id = SKL_diplo
+		prerequisite = { focus = SKL_end_afghan }
+		prerequisite = { focus = SKL_march_to_turkmen }
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SKL_HAIL_MACEDON
+		icon = SKL_PAX_MACEDONICUM
+		x = 0
+		y = 7
+		cost = 2
+		relative_position_id = SKL_diplo
+		prerequisite = { focus = SKL_retvrn_home }
+		completion_reward = {
+			
+		}
+	}
+
 }
