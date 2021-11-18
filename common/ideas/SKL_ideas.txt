@@ -236,7 +236,7 @@ ideas = {
 				war_support_weekly = 0.005
 			}
 		}
-		SKL_population_control = {
+		SKL_control_population = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_population_control" }
 			picture = SKL_population_control
 			modifier = {
@@ -249,9 +249,19 @@ ideas = {
 			picture = SKL_total_control
 			modifier = {
 				monthly_population = -0.3
-				stability_weekly = 0.05
+				stability_weekly = 0.005
 				war_support_weekly = 0.05
 				decryption_factor = 0.25
+			}
+		}
+		SKL_rule_fear = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_rule_fear" }
+			picture = CIB_homecoming
+			modifier = {
+				monthly_population = -0.2
+				stability_weekly = 0.0075
+				war_support_weekly = 0.075
+				decryption_factor = 0.3
 				weekly_manpower = 100
 			}
 		}
@@ -259,7 +269,7 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_eyes_everywhere" }
 			picture = SKL_eyes_everywhere
 			modifier = {
-				monthly_population = -0.2
+				monthly_population = -0.1
 				stability_weekly = 0.01
 				war_support_weekly = 0.01
 				decryption_factor = 0.5
@@ -391,4 +401,3 @@ ideas = {
 			}
 	}
 }
-
