@@ -195,7 +195,128 @@ HUN_nationalized_econo2 = {
 				supply_consumption_factor = -0.05
 			}
 		}
+		
+HUN_national_culture = {
+			picture = GFX_idea_ENG_the_war_to_end_all_wars
+			modifier = {
+				political_power_factor = 0.1
+				army_attack_factor = 0.06
+			}
+		}
+			
+HUN_national_culture2 = {
+			picture = GFX_idea_ENG_the_war_to_end_all_wars
+			modifier = {
+				political_power_factor = 0.15
+				army_attack_factor = 0.1
+				army_defence_factor = 0.05
+				conscription = 0.01
+			}
+		}
+	
+HUN_hungarians_first = {
+			picture = GFX_idea_ENG_the_war_to_end_all_wars
+			modifier = {
+				stability_factor = -0.04
+				conscription_factor = -0.04
+				war_support_factor = 0.07
+			}
+		}
+	
+HUN_christian_labour = {
+			picture = GFX_idea_ENG_the_war_to_end_all_wars
+			modifier = {
+				industrial_capacity_factory = 0.07
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+	
+HUN_christian_labour2 = {
+			picture = GFX_idea_ENG_the_war_to_end_all_wars
+			modifier = {
+				industrial_capacity_factory = 0.14
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+	
+HUN_christian_labour3 = {
+			picture = GFX_idea_ENG_the_war_to_end_all_wars
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.12
+				consumer_goods_factor = -0.07
+				production_factory_max_efficiency_factor = 0.05		
+			}
+		}
+	
+HUN_freedom_of_expression = {
+			picture = GFX_idea_ENG_the_war_to_end_all_wars
+			modifier = {
+				political_power_factor = 0.1
+				research_speed_factor = 0.06
+				production_factory_efficiency_gain_factor = 0.03
+			}
+		}
+	
+HUN_autonomy_for_minorities = {
+			picture = GFX_idea_ENG_the_war_to_end_all_wars
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = -0.05
+				monthly_population = 0.35
+			}
+		}
+	
+HUN_freedom_of_expression2 = {
+			picture = GFX_idea_ENG_the_war_to_end_all_wars
+			modifier = {
+				political_power_factor = 0.1
+				research_speed_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+	
+HUN_free_market = {
+			picture = GFX_idea_ENG_the_war_to_end_all_wars
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		
+HUN_free_market2 = {
+			picture = GFX_idea_ENG_the_war_to_end_all_wars
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.15
+			}
+		}
 
+	
+HUN_otto = {
+			picture = GFX_idea_HNG_otto
+			modifier = {
+				political_power_factor = 0.01
+			}
+		}
+	
+HUN_robert = {
+			picture = GFX_idea_HNG_robert
+			modifier = {
+				political_power_factor = 0.01
+			}
+		}
+	
+HUN_amadeo = {
+			picture = GFX_idea_HNG_amadeo
+			modifier = {
+				political_power_factor = 0.01
+			}
+		}
 
 	}
 }

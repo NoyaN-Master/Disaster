@@ -3,10 +3,6 @@ HNG_choosing_king = {
 HNG_otto = {
 	    fire_only_once = yes
 		cost = 10
-        allowed = {
-			tag = HNG
-			has_country_flag = hun_democratic_monarchy
-        }
         available  = {
 			tag = HNG
 			has_country_flag = hun_democratic_monarchy
@@ -16,8 +12,7 @@ HNG_otto = {
 			}
         }
         visible = {
-			original_tag = HNG
-			has_country_flag = hun_democratic_monarchy
+				has_completed_focus = HNG_day_in_budapest
         }  
 		complete_effect = {
 			set_country_flag = hun_chosen_otto
@@ -31,10 +26,6 @@ HNG_otto = {
 HNG_amadeo_aosta = {
 	    fire_only_once = yes
 		cost = 10
-        allowed = {
-			tag = HNG
-			has_country_flag = hun_democratic_monarchy
-        }
         available  = {
 			tag = HNG
 			has_country_flag = hun_democratic_monarchy
@@ -43,9 +34,8 @@ HNG_amadeo_aosta = {
 				has_country_flag = hun_chosen_otto
 			}
         }
-        visible = {
-			original_tag = HNG
-			has_country_flag = hun_democratic_monarchy
+        visible = {			
+			has_completed_focus = HNG_day_in_budapest
         }  
 		complete_effect = {
 			set_country_flag = hun_chosen_amadeo
@@ -59,10 +49,6 @@ HNG_amadeo_aosta = {
 HNG_robert_habsburg_este = {
 	    fire_only_once = yes
 		cost = 10
-        allowed = {
-			tag = HNG
-			has_country_flag = hun_democratic_monarchy
-        }
         available  = {
 			tag = HNG
 			has_country_flag = hun_democratic_monarchy
@@ -72,8 +58,7 @@ HNG_robert_habsburg_este = {
 			}
         }
         visible = {
-			original_tag = HNG
-			has_country_flag = hun_democratic_monarchy
+			has_completed_focus = HNG_day_in_budapest
         }  
 		complete_effect = {
 			set_country_flag = hun_chosen_robert

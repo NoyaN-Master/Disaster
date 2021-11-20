@@ -12,12 +12,16 @@ regency_focustree:0"Regency upheld"
 kadar_victory:0"§YCzermanik§! won the workers' congress"
 kun_victory:0"§YKun§! won the workers' congress"
 rakosi_victory:0"§YRákosi§! won the workers' congress"
+HUN_social_democrat_victory:0"MSZDP won elections"
+HUN_conservative_victory:0"KNP won elections"
+HUN_liberal_victory:0"F48P won elections"
+HUN_elections_held:0 "Held elections"
 ### Decisions ###
 
 
 ### Focuses ###
 HNG_reinforce_govt:0 "Reinforce the Government"
-HNG_reinforce_govt_desc:0 ""
+HNG_reinforce_govt_desc:0 "The Hungarian government recently has been somewhat unstable, mostly due to political opposition in the country being now more aggressive than ever. We should take major steps to reinforce the government's position."
 HNG_stregthen_regent_rule:0 "Strengthen Regent's Rule"
 HNG_stregthen_regent_rule_desc:0 "Regent Horthy has been ruling Hungary with an iron fist for almost 20 years now. Despite of that, there are many factors that contribute to the current instability of the country. We shall implement even more centralized measures, to ensure loyalty and cooperation with our government on all levels."
 HNG_talk_with_opposition:0 "Talk With The Opposition"
@@ -29,7 +33,7 @@ HNG_appease_noone_desc:0 "We are constantly bombarded left and right with opposi
 HNG_appease_szalasi:0 "Appease Szálasi"
 HNG_appease_szalasi_desc:0 "In these trying times, we really can't afford any political sacrifices. The authoritarian nature of our regime is apparent to everyone, why shall we keep the illusions then? Ferenc Szálasi and his Arrow Cross makes some good points, there is no reason for which we should not work with these people."
 HNG_day_in_budapest:0 "A Day In Budapest"
-HNG_day_in_budapest_desc:0 ""
+HNG_day_in_budapest_desc:0 "It's morning again in Budapest. Today more men and women will go to work than ever before in our country's history. Under the leadership of Regent Horthy, our country is prouder and stronger and better. Why would we ever want to return to where we were a few short years ago?"
 
 
 HNG_arrow_cross_in_power:0 "Arrow Cross In Power"
@@ -87,64 +91,76 @@ HNG_f48p_victory:0"F48P Victory"
 HNG_f48p_victory_desc:0"F48P Victory"
 
 HNG_free_up_the_market:0"Free Up The Market"
-HNG_free_up_the_market_desc:0"Free Up The Market"
+HNG_free_up_the_market_desc:0"The people can't be free if the market isn't! Privatisation of the economy will give power to the people. Through their wallets, they will finally be able to control the nations economy."
 
 HNG_strive_for_equality:0"Strive For Equality"
-HNG_strive_for_equality_desc:0"Strive For Equality"
+HNG_strive_for_equality_desc:0"Humans are not to be judged on the basis of their race, religion and other things. We must take concrete measures to ensure that everyone in Hungary can feel safe and welcome."
 
 HNG_subsidies_for_small_bussines:0"Subsidies For Small Bussinesses"
-HNG_subsidies_for_small_bussines_desc:0"Subsidies For Small Bussinesses"
+HNG_subsidies_for_small_bussines_desc:0"Small entrepreneurs are what really drives this country's economy forward. Without them, many families would not have access to basic human needs. Therefore, state regulated subsidies must be put into motion."
 
 HNG_the_eastern_switzerland:0"The Eastern Switzerland"
-HNG_the_eastern_switzerland_desc:0"The Eastern Switzerland"
+HNG_the_eastern_switzerland_desc:0"Just like Switzerland in the Alpes, Hungary must become a new, multiethnic nation that will not discriminate minorities. We shall turn Hungary into a true paradise on Earth!"
 
 HNG_land_reform:0"Land Reform"
-HNG_land_reform_desc:0"Land Reform"
+HNG_land_reform_desc:0"With the most urgent economic reforms underway, we may now start looking towards a land reform. The peasantry in our country has been suffering greatly for ages now, so this reform will surely bring it up to its best."
 
 HNG_liberal_democracy:0"Liberal Democracy"
-HNG_liberal_democracy_desc:0"Liberal Democracy"
+HNG_liberal_democracy_desc:0"The efforts of our party have not gone to waste, and we have successfully transformed Hungary into a fully functioning democratic state. Let's hope that this new age of peace and prosperity lasts forever."
 
 HNG_knp_victory:0"KNP Victory"
 HNG_knp_victory_desc:0"KNP Victory"
 
 HNG_christian_labor:0"Christian Labour"
-HNG_christian_labor_desc:0"Christian Labour"
+HNG_christian_labor_desc:0"In accord with our Christian values, we must also make sure that labour in Hungary is being done with a good work ethic. Work should bring happiness and fulfillment to the people."
 
 HNG_national_culture:0"National Culture"
-HNG_national_culture_desc:0"National Culture"
+HNG_national_culture_desc:0"Hungarian culture is the most beautiful culture in Europe. With centuries of legacy, spanning from Saint Stephen's great empire, we must promote and embrace cultural efforts."
 
-HNG_protect_the_workers:0"Protect The Workers"
-HNG_protect_the_workers_desc:0"Protect The Workers"
+HNG_protect_the_workers:0"Protect The Worker"
+HNG_protect_the_workers_desc:0"We owe much to the skilled Hungarian labourers. The least we can do for them is to make sure that their wages are more than satisfactory, and that their work conditions are the best in this part of the world."
 
-HNG_hungarians_first:0"Hungarians First"
-HNG_hungarians_first_desc:0"Hungarians First"
+HNG_hungarians_first:0"Hungarians First!"
+HNG_hungarians_first_desc:0"There are many minorities living in our country, and while we can't of course deport them or persecute them in any way, we must ensure that our Hungarian nation's interests are always placed first."
 
 HNG_encourage_entrepreneureship:0"Encourage Entrepreneurship"
-HNG_encourage_entrepreneureship_desc:0"Encourage Entrepreneurship"
+HNG_encourage_entrepreneureship_desc:0"The greatest minds couldn't have been born in a state that constantly suppresses them. We must give the people the liberty to start new businesses and therefore pursue their biggest ambitions. Only then will they truly show their potential."
 
 HNG_catholic_society:0"Catholic Society"
-HNG_catholic_society_desc:0"Catholic Society"
+HNG_catholic_society_desc:0"Catholicism has always been the biggest religion in Hungary, and the backbone of Hungarian society. We must promote Catholicism in everyday life, and ensure that our nation continues to prosper under Christian values."
 
 HNG_mszdp_victory:0 "MSZDP Victory"
 HNG_mszdp_victory_desc:0 "MSZDP Victory"
 
 HNG_workers_rights:0"Workers' Rights"
-HNG_workers_rights_desc:0"Workers' Rights"
+HNG_workers_rights_desc:0"People in Hungarian factories have long been ripped off of what belongs to them. Not anymore. With a set of new labour protection laws, we will make sure that workers will earn a respectable pay, no matter their job. Independent trade unions must also be brought back; killed off by the Horthyist regime, we'll make sure that they strive like never before."
 
 HNG_freedom_of_expression:0"Freedom Of Expression"
 HNG_freedom_of_expression_desc:0"Freedom Of Expression"
 
 HNG_economic_regulations:0"Regulate The Economy"
-HNG_economic_regulations_desc:0"Regulate The Economy"
+HNG_economic_regulations_desc:0"Many liberal politicians will argue that the state shouldn't interfere with what happens on the market. This is of course untrue. The government must hold responsibility for the nation and it's interests. We will not hesitate to intervene in the market if the situation grows dire."
 
 HNG_egalitarian_society:0"Egalitarian Society"
 HNG_egalitarian_society_desc:0"Egalitarian Society"
 
 HNG_welfare_state:0"Welfare State"
-HNG_welfare_state_desc:0"Welfare State"
+HNG_welfare_state_desc:0"A caring government must ensure that not one person in a country lives in any sort of horrible conditions. Through state-funded social programs, we will make sure to eradicate poverty, illiteracy and more problems that Hungarians face."
 
 HNG_in_service_of_the_people:0"In Service Of The People"
 HNG_in_service_of_the_people_desc:0"In Service Of The People"
+
+HNG_destroy_radicals:0"Destroy Radicals"
+HNG_destroy_radicals_desc:0"Radical political factions in our country are still dividing the populace, and therefore destorying it. We need to put an end to this, and ensure that political discourse is free of any fanatic elements."
+
+HNG_entrench_democracy:0"Entrench Democracy"
+HNG_entrench_democracy_desc:0"Democratic values are somewhat new to the Hungarian society. Having been ruled by a dictatorship for the past two decades, and a somewhat authoritarian monarchy before, Hungarians don't know the beauty of true democratic principles such as freedom and equality. These wonderful values should be entrenched in the minds of Hungarians."
+
+HNG_patch_up_railways:0"Patch Up Railways"
+HNG_patch_up_railways_desc:0"The railway network in Hungary is a big mess, most of which is still a remnant of the Austro-Hungarian monarchy. We can't allow this coming into the modern age! New railways should be built all throughout the country, and old ones should be renovated."
+
+HNG_the_countrys_riches:0"The Country's Riches"
+HNG_the_countrys_riches_desc:0"Our country has a big potential when it comes to natural resources. Unfortunately, they are not being exploited well. We should tap fully into the natural resources of Hungary."
 
 
 HNG_return_of_the_reds:0"Return Of The Reds"
@@ -269,7 +285,14 @@ HUN_political_opposition2:0 "Major Political Opposition"
 HUN_political_opposition2_desc:0 ""
 
 ### Events ###
+hungary.7.t:0"The Socialist Offensive"
+hungary.7.d:0"As if we didn't have enough problems already, it seems that the recent political instability caused by our decision not to work with any of the major opposition groups has only grown worse. Various socialist and communist groups still somehow prevalent in Hungary, most still pledging loyalty to Kun's government, have organised in large groups in major cities, and have begun initiating protests and rallies. Though socialist agitation is not a new problem for us, this particular situation may prove to be much more dangerous. This presents us with essentially two choices: either we try to cut the head of the beast for good, and direct all required resources to destroying all socialists in Hungary, or we wait it out and hope that the protesters go away, just like they have in the past."
+hungary.7.a:0"We can't take any risks. This ends now!"
+hungary.7.b:0"Baah, we'll be fine..."
 
+hungary.8.t:0"The Day Everything Became Nothing"
+hungary.8.d:0"Just as it seemed that Horthy's regime will be governing Hungary for many more years, something unthinkable has happened. The socialist protests from the past weeks were only the beggining of a new future. A few days ago, seeing the right opportunity, communist veteran Bela Kun has returned from his exile in Austria, and immediately began preparing a coup. This was not a big problem for the mastermind organizer and revolutionary, and just a few hours before [GetDateText], pro-communist militias have seized the most vital points in Budapest on both banks of the river Danube.  A few moments later, Kun himself appeared in the Hungarian Parliament Building, and in a radio adress to the entire nation, declared the formal abolition of the monarchy and proclaimed the Second Hungarian Soviet Republic.\n\nIt looks like this time, it's here to stay."
+hungary.8.a:0"Világ proletárjai, egyesüljetek!"
 ### Country Names ###
 HNG_unisocialist:0 "Hungarian People's Republic"
 HNG_unisocialist_ADJ:0 "Hungarian"

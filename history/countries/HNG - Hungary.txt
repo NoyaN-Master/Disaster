@@ -84,7 +84,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Mihály Károlyi"
 	#desc = "HNG_Karolyi_desc"
-	picture = "HNG_Karolyi.tga"
+	picture = "HNG_Karolyi.png"
 	expire = "2020.1.1"
 	ideology = liberal_subideology
 	traits = {
@@ -95,7 +95,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "István Friedrich"
 	#desc = "HNG_Friedrich_desc"
-	picture = "HNG_Friedrich.tga"
+	picture = "HNG_Friedrich.png"
 	expire = "2020.1.1"
 	ideology = conservative_subideology
 	traits = {
@@ -106,7 +106,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Árpád Szakasits"
 	#desc = "HNG_Szakasits_desc"
-	picture = "HNG_Szakasits.tga"
+	picture = "HNG_Szakasits.dds"
 	expire = "2020.1.1"
 	ideology = social_democrat_subideology
 	traits = {
@@ -130,7 +130,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Béla Kun"
 	#desc = "HNG_Kun_desc"
-	picture = "HNG_Kun.tga"
+	picture = "HNG_Kun.png"
 	expire = "2020.1.1"
 	ideology = authoritarian_socialist_subideology
 	traits = {
@@ -142,7 +142,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "János Czermanik"
 	#desc = "HNG_Kadar_desc"
-	picture = "HNG_Kadar.tga"
+	picture = "HNG_Kadar.png"
 	expire = "2020.1.1"
 	ideology = libertarian_socialist_subideology
 	traits = {
@@ -154,10 +154,66 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ferenc Szálasi"
 	#desc = "HNG_Szalasi_desc"
-	picture = "HNG_Szalasi.tga"
+	picture = "HNG_Szalasi.dds"
 	expire = "2020.1.1"
 	ideology = revolutionary_nationalist_subideology
 	traits = {
 		#
 	}
+}
+
+
+create_corps_commander = {
+	name = "Géza Lakatos"
+	gfx = GFX_Portrait_hungary_geza_lakatos
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Iván Hindy"
+	gfx = GFX_Portrait_hungary_ivan_hindy
+	traits = {  trickster }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Károly Beregfy"
+	gfx = GFX_Portrait_hungary_karoly_beregfy
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Lajos Veress"
+	gfx = GFX_Portrait_hungary_lajos_veress
+	traits = { armor_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Ferenc Feketehalmy-Czeydner"
+	gfx = GFX_Portrait_hungary_ferenc_feketehalmy_czeydner
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
 }

@@ -11,6 +11,10 @@
 
     continuous_focus_position = { x = 20 y = 2500 }	
 	
+	initial_show_position = {
+	focus = HNG_reinforce_govt
+	}
+	
 
 	focus = {
 		id = HNG_reinforce_govt
@@ -155,7 +159,7 @@
 		x = 2
 		y = 1
 		prerequisite = { focus = HNG_arrow_cross_in_power }
-		cost = 5	
+		cost = 4
 		completion_reward = {
 			add_popularity = {
 			ideology = liberal
@@ -189,7 +193,7 @@
 		x = 0
 		y = 1
 		prerequisite = { focus = HNG_arrow_cross_in_power }
-		cost = 5	
+		cost = 4	
 		completion_reward = {
 			add_ideas = HUN_militarist_society
 			random_owned_state = {
@@ -210,7 +214,7 @@
 		x = -2
 		y = 1
 		prerequisite = { focus = HNG_arrow_cross_in_power }
-		cost = 5	
+		cost = 4
 		completion_reward = {
 			swap_ideas = {
 			remove_idea = HUN_great_war_legacy
@@ -227,7 +231,7 @@
 		y = 1
 		prerequisite = { focus = HNG_destroy_all_opposition }
 		prerequisite = { focus = HNG_the_militarized_state }
-		cost = 7	
+		cost = 4	
 		completion_reward = {
 			add_ideas = HUN_szalasi_loyalty
 			add_political_power = 100
@@ -246,7 +250,7 @@
 		y = 1
 		prerequisite = { focus = HNG_party_primacy }
 		prerequisite = { focus = HNG_the_militarized_state }
-		cost = 7	
+		cost = 4
 		completion_reward = {
 			add_ideas = HUN_expanded_corporatism
 			43 = {
@@ -265,7 +269,7 @@
 		x = -2
 		y = 1
 		prerequisite = { focus = HNG_a_new_economy }
-		cost = 6	
+		cost = 5
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = HUN_expanded_corporatism
@@ -288,7 +292,7 @@
 		x = 0
 		y = 1
 		prerequisite = { focus = HNG_help_the_peasants }
-		cost = 6	
+		cost = 5	
 		completion_reward = {
 			814 = {
 	        add_building_construction = {
@@ -324,7 +328,7 @@
 		x = 0
 		y = 1
 		prerequisite = { focus = HNG_expand_the_corporations }
-		cost = 6
+		cost = 5
 		completion_reward = {
 			add_ideas = HUN_mandatory_labor
 			add_manpower = -5000
@@ -339,7 +343,7 @@
 		y = 1
 		prerequisite = { focus = HNG_a_new_economy }
 		prerequisite = { focus = HNG_loyalty_to_szalasi }
-		cost = 6
+		cost = 5
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = HUN_militarist_society
@@ -361,7 +365,7 @@
 		x = 0
 		y = 1
 		prerequisite = { focus = HNG_role_of_the_army }
-		cost = 6	
+		cost = 5	
 		completion_reward = {
 			807 = {
 				add_extra_state_shared_building_slots = 2
@@ -380,6 +384,11 @@
 					instant_build = yes
 				}
 			}
+			add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = land_doctrine
+			}
 		}
 	}
 	
@@ -390,7 +399,7 @@
 		x = 0
 		y = 1
 		prerequisite = { focus = HNG_major_military_investments }
-		cost = 6	
+		cost = 5	
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = HUN_militarist_society2
@@ -407,7 +416,7 @@
 		y = 1
 		prerequisite = { focus = HNG_a_new_economy }
 		prerequisite = { focus = HNG_loyalty_to_szalasi }
-		cost = 6	
+		cost = 5	
 		completion_reward = {
 			add_ideas = HUN_pure_nation
 			add_political_power = 50
@@ -421,7 +430,7 @@
 		x = 0
 		y = 1
 		prerequisite = { focus = HNG_national_purity }
-		cost = 6	
+		cost = 5	
 		completion_reward = {
 			add_ideas = HUN_pure_nation2
 			army_experience = 40
@@ -436,7 +445,7 @@
 		x = 0
 		y = 1
 		prerequisite = { focus = HNG_mobilise_the_youth }
-		cost = 6	
+		cost = 5	
 		completion_reward = {
 			add_research_slot = 1
 			add_tech_bonus = {
@@ -454,7 +463,7 @@
 		x = 4
 		y = 1
 		prerequisite = { focus = HNG_loyalty_to_szalasi }
-		cost = 6	
+		cost = 5	
 		completion_reward = {
 			add_popularity = {
 				ideology = revolutionary_nationalist
@@ -472,7 +481,7 @@
 		x = 0
 		y = 1
 		prerequisite = { focus = HNG_full_obedience }
-		cost = 6	
+		cost = 5	
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = HUN_szalasi_loyalty
@@ -488,7 +497,7 @@
 		x = 0
 		y = 1
 		prerequisite = { focus = HNG_the_party_state }
-		cost = 6	
+		cost = 5	
 		completion_reward = {
 			add_stability = 0.20
 			add_political_power = 150
@@ -505,7 +514,7 @@
 		prerequisite = { focus = HNG_hunnic_warriors }
 		prerequisite = { focus = HNG_new_education_methods }
 		prerequisite = { focus = HNG_all_must_work }
-		cost = 6	
+		cost = 4	
 		completion_reward = {
 			add_war_support = 0.1
 			add_stability = 0.10
@@ -520,7 +529,7 @@
 	focus = {
 		id = HNG_democratic_elections
 		icon = GFX_goal_generic_national_unity
-		x = 27
+		x = 30
 		y = 0
 		cost = 1	
 		available = {
@@ -556,7 +565,10 @@
 		prerequisite = { focus = HNG_democratic_elections }
 		cost = 3	
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = HUN_great_war_legacy 
+				add_idea = HUN_great_war_legacy2
+			}
 		}
 	}
 		
@@ -570,7 +582,8 @@
 		prerequisite = { focus = HNG_cancel_horthys_means }
 		cost = 1.5	
 		completion_reward = {
-			
+			country_event = { id = hungary.13 days = 1 }
+			add_stability = 0.02
 		}
 	}
 		
@@ -582,8 +595,17 @@
 		y = 1
 		prerequisite = { focus = HNG_election_day }
 		cost = 1	
+		available = {
+		has_country_flag = HUN_liberal_victory
+		}
+		bypass = {
+		has_country_flag = HUN_liberal_victory
+		}
 		completion_reward = {
-			
+			add_popularity = {
+					ideology = liberal
+					popularity = 0.01
+				}
 		}
 	}
 	
@@ -594,9 +616,16 @@
 		x = 1
 		y = 1
 		prerequisite = { focus = HNG_f48p_victory }
-		cost = 1	
+		cost = 6	
 		completion_reward = {
-			
+			add_ideas =  HUN_free_market
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+	        add_building_construction = {
+		    type = industrial_complex 
+		    level = 2
+	        }
+			}
 		}
 	}
 	
@@ -607,7 +636,7 @@
 		x = -1
 		y = 1
 		prerequisite = { focus = HNG_f48p_victory }
-		cost = 1	
+		cost = 6	
 		completion_reward = {
 			
 		}
@@ -620,9 +649,30 @@
 		x = 0
 		y = 1
 		prerequisite = { focus = HNG_free_up_the_market }
-		cost = 1	
+		cost = 6	
 		completion_reward = {
-			
+			random_owned_state = {
+			add_building_construction = {
+					type = infrastructure 
+					level = 1
+				}
+			add_extra_state_shared_building_slots = 1
+	        add_building_construction = {
+		    type = industrial_complex 
+		    level = 1
+	        }
+			}
+			random_owned_state = {
+			add_building_construction = {
+					type = infrastructure 
+					level = 1
+				}
+			add_extra_state_shared_building_slots = 1
+	        add_building_construction = {
+		    type = arms_factory 
+		    level = 1
+	        }
+			}
 		}
 	}
 	
@@ -633,7 +683,7 @@
 		x = 0
 		y = 1
 		prerequisite = { focus = HNG_strive_for_equality }
-		cost = 1	
+		cost = 6	
 		completion_reward = {
 			
 		}
@@ -646,9 +696,27 @@
 		x = 0
 		y = 1
 		prerequisite = { focus = HNG_subsidies_for_small_bussines }
-		cost = 1	
+		cost = 6	
 		completion_reward = {
-			
+			swap_ideas = {
+			remove_idea = HUN_free_market
+			add_idea = HUN_free_market2
+			}
+			43 = {
+			add_extra_state_shared_building_slots = 1
+			}
+			154 = {
+			add_extra_state_shared_building_slots = 1
+			}
+			814 = {
+			add_extra_state_shared_building_slots = 1
+			}
+			155 = {
+			add_extra_state_shared_building_slots = 1
+			}
+			807 = {
+			add_extra_state_shared_building_slots = 1
+			}
 		}
 	}
 	
@@ -659,7 +727,7 @@
 		x = 0
 		y = 1
 		prerequisite = { focus = HNG_the_eastern_switzerland }
-		cost = 1	
+		cost = 6
 		completion_reward = {
 			
 		}
@@ -669,12 +737,21 @@
 		id = HNG_knp_victory
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		relative_position_id = HNG_election_day
-		x = 4
+		x = 6
 		y = 1
 		prerequisite = { focus = HNG_election_day }
 		cost = 1	
+		available = {
+		has_country_flag = HUN_conservative_victory
+		}
+		bypass = {
+		has_country_flag = HUN_conservative_victory
+		}
 		completion_reward = {
-			
+			add_popularity = {
+					ideology = conservative
+					popularity = 0.01
+				}
 		}
 	}
 	
@@ -685,9 +762,16 @@
 		x = 1
 		y = 1
 		prerequisite = { focus = HNG_knp_victory }
-		cost = 1	
+		cost = 6	
 		completion_reward = {
-			
+			add_ideas = HUN_christian_labour
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+	        add_building_construction = {
+		    type = industrial_complex 
+		    level = 1
+	        }
+			}
 		}
 	}
 	
@@ -698,9 +782,10 @@
 		x = -1
 		y = 1
 		prerequisite = { focus = HNG_knp_victory }
-		cost = 1	
+		cost = 6
 		completion_reward = {
-			
+			add_ideas = HUN_national_culture
+			add_research_slot = 1
 		}
 	}
 	
@@ -711,9 +796,26 @@
 		x = 0
 		y = 1
 		prerequisite = { focus = HNG_christian_labor }
-		cost = 1	
+		cost = 6	
 		completion_reward = {
-			
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+	        add_building_construction = {
+		    type = industrial_complex 
+		    level = 2
+	        }
+			}
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+	        add_building_construction = {
+		    type = arms_factory
+		    level = 2
+	        }
+			}
+			swap_ideas = {
+			remove_idea = HUN_christian_labour
+			add_idea = HUN_christian_labour3
+			}
 		}
 	}
 	
@@ -724,9 +826,11 @@
 		x = 0
 		y = 1
 		prerequisite = { focus = HNG_national_culture }
-		cost = 1	
+		cost = 6	
 		completion_reward = {
-			
+			add_ideas = HUN_hungarians_first
+			add_political_power = 100
+			remove_ideas = HUN_great_war_legacy2
 		}
 	}
 	
@@ -737,9 +841,19 @@
 		x = 0
 		y = 1
 		prerequisite = { focus = HNG_protect_the_workers }
-		cost = 1	
+		cost = 6	
 		completion_reward = {
-			
+			swap_ideas = {
+			remove_idea = HUN_christian_labour3
+			add_idea = HUN_christian_labour2
+			}
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+	        add_building_construction = {
+		    type = arms_factory 
+		    level = 1
+	        }
+			}
 		}
 	}
 	
@@ -750,9 +864,12 @@
 		x = 0
 		y = 1
 		prerequisite = { focus = HNG_hungarians_first }
-		cost = 1	
+		cost = 6	
 		completion_reward = {
-			
+			swap_ideas = {
+			remove_idea = HUN_national_culture
+			add_idea = HUN_national_culture2
+			}
 		}
 	}
 	
@@ -760,12 +877,21 @@
 		id = HNG_mszdp_victory
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		relative_position_id = HNG_election_day
-		x = -4
+		x = -6
 		y = 1
 		prerequisite = { focus = HNG_election_day }
-		cost = 1	
+		cost = 1
+		available = {
+		has_country_flag = HUN_social_democrat_victory
+		}
+		bypass = {
+		has_country_flag = HUN_social_democrat_victory
+		}
 		completion_reward = {
-			
+			add_popularity = {
+					ideology = social_democrat
+					popularity = 0.01
+				}
 		}
 	}
 	
@@ -776,7 +902,7 @@
 		x = 1
 		y = 1
 		prerequisite = { focus = HNG_mszdp_victory }
-		cost = 1	
+		cost = 6	
 		completion_reward = {
 			
 		}
@@ -789,9 +915,10 @@
 		x = -1
 		y = 1
 		prerequisite = { focus = HNG_mszdp_victory }
-		cost = 1	
+		cost = 6	
 		completion_reward = {
-			
+			add_ideas = HUN_freedom_of_expression
+			add_research_slot = 1
 		}
 	}
 	
@@ -802,7 +929,7 @@
 		x = 0
 		y = 1
 		prerequisite = { focus = HNG_workers_rights }
-		cost = 1	
+		cost = 6	
 		completion_reward = {
 			
 		}
@@ -815,9 +942,11 @@
 		x = 0
 		y = 1
 		prerequisite = { focus = HNG_freedom_of_expression }
-		cost = 1	
+		cost = 6	
 		completion_reward = {
-			
+			add_political_power = -70
+			add_ideas = HUN_autonomy_for_minorities
+			remove_ideas = HUN_great_war_legacy2
 		}
 	}
 	
@@ -828,7 +957,7 @@
 		x = 0
 		y = 1
 		prerequisite = { focus = HNG_economic_regulations }
-		cost = 1	
+		cost = 6
 		completion_reward = {
 			
 		}
@@ -841,10 +970,156 @@
 		x = 0
 		y = 1
 		prerequisite = { focus = HNG_egalitarian_society }
-		cost = 1	
+		cost = 6	
 		completion_reward = {
-			
+			add_political_power = 150
+			swap_ideas = {
+			remove_idea = HUN_freedom_of_expression
+			add_idea = HUN_freedom_of_expression2
+			}
 		}
+	}
+	
+	focus = {
+		id = HNG_destroy_radicals
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_election_day
+		x = -3
+		y = 1
+		prerequisite = { focus = HNG_election_day }
+		available = { has_country_flag = HUN_elections_held }
+		cost = 5	
+		completion_reward = {
+			add_popularity = {
+					ideology = libertarian_socialist
+					popularity = -0.10
+				}
+			add_popularity = {
+					ideology = authoritarian_socialist
+					popularity = -0.10
+				}
+			add_popularity = {
+					ideology = unisocialist
+					popularity = -0.10
+				}
+			add_popularity = {
+					ideology = revolutionary_nationalist
+					popularity = -0.10
+				}
+			add_popularity = {
+					ideology = autocratic
+					popularity = -0.10
+				}
+			add_popularity = {
+					ideology = ultranationalist
+					popularity = -0.10
+				}
+			add_popularity = {
+					ideology = authoritarian_democrat
+					popularity = -0.10
+				}
+			add_manpower = -1000
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = HNG_entrench_democracy
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_destroy_radicals
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_destroy_radicals }
+		cost = 5	
+		completion_reward = {
+			if = {
+				limit = {
+					HNG = {
+						has_government = social_democrat
+					}
+				}
+				add_popularity = {
+					ideology = social_democrat
+					popularity = 0.10
+				}
+			}
+			if = {
+				limit = {
+					HNG = {
+						has_government = liberal
+					}
+				}
+				add_popularity = {
+					ideology = liberal
+					popularity = 0.10
+				}
+			}
+			if = {
+				limit = {
+					HNG = {
+						has_government = conservative
+					}
+				}
+				add_popularity = {
+					ideology = conservative
+					popularity = 0.10
+				}
+			}
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = HNG_patch_up_railways
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_election_day
+		x = 3
+		y = 1
+		prerequisite = { focus = HNG_election_day }
+		available = { has_country_flag = HUN_elections_held }
+		cost = 5	
+		completion_reward = {
+			every_owned_state = {
+				add_building_construction = {
+					type = infrastructure 
+					level = 1
+				}
+			}
+			add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = industry
+			}
+		}
+	}
+	
+	focus = {
+		id = HNG_the_countrys_riches
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_patch_up_railways
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_patch_up_railways }
+		cost = 5
+		completion_reward = {
+			add_resource = {
+			type = steel
+			amount = 12
+			state = 43
+			}
+			add_resource = {
+			type = tungsten
+			amount = 10
+			state = 155
+			}
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+	        add_building_construction = {
+		    type = industrial_complex 
+		    level = 1
+	        }
+		}
+	}
 	}
 	
 	focus = {
@@ -1476,6 +1751,18 @@
 			
 		}
 	}
+	
+	focus = {
+		id = HNG_regency_endures
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 28
+		y = 8
+		cost = 1	
+		completion_reward = {
+			
+		}
+	}
+
 	
 	
 }

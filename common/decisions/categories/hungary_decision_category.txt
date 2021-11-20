@@ -3,13 +3,8 @@ HNG_choosing_king = {
 
 	picture = Decision_picture_anatolia_influence
 	priority = 100
-	allowed = {
-		original_tag = HNG
-		has_country_flag = hun_democratic_monarchy
+	available = {
+		has_country_flag = HUN_democratic_monarchy
 	}
-	visible = {
-		original_tag = HNG
-		has_country_flag = hun_democratic_monarchy
-	}
-	visible_when_empty = yes
+	visible_when_empty = no
 }

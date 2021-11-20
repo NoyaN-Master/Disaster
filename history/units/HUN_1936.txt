@@ -15,6 +15,28 @@
 		infantry = { x = 2 y = 2 }
 	}
 }
+
+division_template = {
+	name = "Gyalogdandár II"				# Infantry Brigade II
+
+	division_names_group = HUN_INF_02
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
 division_template = {
 	name = "Huszár Dandár" 					# Cavalry Brigade
 	# Note: has 2x bicycle inf bns added during 1938-40 mobilization
@@ -26,6 +48,7 @@ division_template = {
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 0 y = 2 }
 		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 0 y = 4 }
 	}
 	support = {
 		recon = { x = 0 y = 0 }   # recon bn of tankettes, ACs, mot inf
@@ -210,7 +233,7 @@ units = {
 			name_order = 12
 		}
 		location = 11659
-		division_template = "Gyalogdandár"
+		division_template = "Gyalogdandár II"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -224,7 +247,7 @@ units = {
 			name_order = 13
 		}		
 		location = 6751
-		division_template = "Gyalogdandár"
+		division_template = "Gyalogdandár II"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -249,22 +272,22 @@ air_wings = {
 		# 1. Légi Ezred -- Fiat CR.32 fighters
 		# 2. Légi Ezred -- Fiat CR.32 fighters
 		fighter_equipment_0 = {
-			owner = "HUN" 
+			owner = "HNG" 
 			creator = "ITA"
-				amount = 72
+				amount = 50
 		}
 
 	}
 	154 = {
 		# 3. Légi Ezred -- Caproni Ca.101, WM-16 Budapest light bombers
 		CAS_equipment_1 = {
-			owner = "HUN" 
-			amount = 12
+			owner = "HNG" 
+			amount = 10
 		}
 		tac_bomber_equipment_0 = {
-			owner = "HUN" 
+			owner = "HNG" 
 			creator = "ITA"
-			amount = 12
+			amount = 10
 		}
 	}
 }
