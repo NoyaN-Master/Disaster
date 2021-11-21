@@ -596,7 +596,14 @@ focus_tree = {
 		}
 		available_if_capitulated = no
 		completion_reward = {
-			#event
+			add_extra_state_shared_building_slots = 2
+			random_state = {
+				add_building_construction = {
+					type = industrial_complex 
+					level = 2
+					instant_build = yes
+				}
+			}
         }
 	}
 	focus = {
@@ -646,7 +653,11 @@ focus_tree = {
 		}
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 3
+				uses = 1
+				category = nuclear
+			}
         }
 	}
 	focus = {
@@ -661,7 +672,7 @@ focus_tree = {
 			focus = SKL_alexanderism
 		}
 		completion_reward = {
-		
+			custom_effect_tooltip = SKL_time_to_fix_tt
         }
 	}
 	focus = {
@@ -792,6 +803,22 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = SKL_race_heirarchy
+			add_extra_state_shared_building_slots = 2
+			random_state = {
+				add_building_construction = {
+					type = arms_factory 
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			random_state = {
+				add_building_construction = {
+					type = industrial_complex 
+					level = 2
+					instant_build = yes
+				}
+			}
         }
 	}
 	focus = {
@@ -888,6 +915,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = SKL_black_brigades 
+			country_event = { id = fullerunification.12 }
         }
 	}
 	focus = {
@@ -933,6 +961,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = SKL_meth 
+			country_event = { id = fullerunification.11 }
         }
 	}
 	focus = {
@@ -997,6 +1026,7 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = SKL_alexanders_sons
+			country_event = { id = fullerunification.14 }
         }
 	}
 	focus = {
@@ -1134,12 +1164,12 @@ focus_tree = {
 		icon = SKL_phase_two
 		x = 0
 		y = 4
-		cost = 2
+		cost = 1
 		relative_position_id = SKL_diplo
 		prerequisite = { focus = SKL_ban_muslims }
 		prerequisite = { focus = SKL_ban_christians }
 		completion_reward = {
-			
+			custom_effect_tooltip = SKL_fuller_phase_two_tt
 		}
 	}
 	focus = {
@@ -1201,11 +1231,24 @@ focus_tree = {
 		icon = SKL_PAX_MACEDONICUM
 		x = 0
 		y = 7
-		cost = 2
+		cost = 1
+		available = {
+			NOT = {
+				country_exists = BLG
+				country_exists = GRE
+				country_exists = INR
+				country_exists = IQR
+				country_exists = SYR
+				country_exists = PAL
+				country_exists = GOK
+				country_exists = TRK
+				country_exists = AFG
+			}
+		}
 		relative_position_id = SKL_diplo
 		prerequisite = { focus = SKL_retvrn_home }
 		completion_reward = {
-			
+			custom_effect_tooltip = SKL_HAIL_MACEDON_tt
 		}
 	}
 

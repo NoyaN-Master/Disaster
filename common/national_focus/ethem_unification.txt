@@ -1009,9 +1009,6 @@ focus = {
 			factor = 10
 		}
 		mutually_exclusive = { focus = IZM_masters_of_europe }
-		available = {
-			country_exists = NGU
-		}
 		prerequisite = { focus = IZM_invade_iran }
 		prerequisite = { focus = IZM_steal_cyprus}
 		completion_reward = {
