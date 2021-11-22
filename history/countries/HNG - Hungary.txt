@@ -18,7 +18,7 @@ set_technology = {
 set_convoys = 50
 
 set_politics = {
-	ruling_party = autocratic
+	ruling_party = ultranationalist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -38,8 +38,8 @@ set_popularities = {
 	authoritarian_socialist = 6
 	unisocialist = 0
 	authoritarian_democrat = 15
-	autocratic = 40
-	ultranationalist = 20
+	autocratic = 9
+	ultranationalist = 51
 	revolutionary_nationalist = 15
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
@@ -60,9 +60,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Miklós Horthy"
-	#desc = "HNG_Horthy_desc"
-	picture = "HNG_Horthy.tga"
+	name = "Gyula Gömbös"
+	#desc = "HNG_Gombos_desc"
+	picture = "HNG_Gombos.png" #THANKS u/wendy1871 !!!
 	expire = "2020.1.1"
 	ideology = ultranationalist_subideology
 	traits = {
