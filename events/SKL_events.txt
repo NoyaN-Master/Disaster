@@ -504,7 +504,7 @@ country_event = { #VGH
 			desc = "POLITICS_Fuller"
 			picture = "SKL_Fuller.png"
 			expire = "1965.1.1"
-			ideology = esoteric_traditionalist_subtype
+			ideology = eso_alexanderism
 			traits = { }
 		}
 		set_politics = {
@@ -512,5 +512,21 @@ country_event = { #VGH
 			elections_allowed = no
 		}
 		set_cosmetic_tag = SKL_eso
+		hidden_effect = {
+			set_popularities = {
+				conservative = 0
+				liberal = 0
+				social_democrat = 0
+				libertarian_socialist = 0
+				authoritarian_socialist = 0
+				unisocialist = 0
+				authoritarian_democrat = 0
+				autocratic = 0
+				ultranationalist = 0
+				revolutionary_nationalist = 0
+				esoteric_traditionalist = 100
+				revolutionary_anarchist = 0
+			}
+		}
 	}
 }
