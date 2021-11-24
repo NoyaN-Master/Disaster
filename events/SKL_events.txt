@@ -482,3 +482,35 @@ country_event = { #britain accepted lol
 		}
 	}
 }
+
+country_event = { #VGH
+	id = fullerunification.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event fullerunification.17" }
+	title = fullerunification.17.t
+	desc = fullerunification.17.d
+	
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fullerunification.17.a
+	}
+	option = {
+		name = fullerunification.17.b
+		create_country_leader = {
+			name = "Fuller I"
+			desc = "POLITICS_Fuller"
+			picture = "SKL_Fuller.png"
+			expire = "1965.1.1"
+			ideology = esoteric_traditionalist_subtype
+			traits = { }
+		}
+		set_politics = {
+			ruling_party = esoteric_traditionalist 
+			elections_allowed = no
+		}
+		set_cosmetic_tag = SKL_eso
+	}
+}
