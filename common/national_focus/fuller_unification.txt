@@ -25,54 +25,15 @@ focus_tree = {
 		relative_position_id = SKL_Unification_Complete
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2.5
 		available_if_capitulated = no
+		available = {
+			has_completed_focus = SKL_bomb_resisting_villages
+		}
 		completion_reward = {
-			if = {
-				limit = {
-					NOT = {
-						AND = {
-							has_completed_focus = SKL_bomb_resisting_villages
-						}
-						AND = {
-							has_completed_focus = SKL_hunt_kemalists
-						}
-					}
-				}
-				swap_ideas = {
-					remove_idea = SKL_turkish_united_front_1
-					add_idea = SKL_turkish_united_front_2
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						OR = {
-							has_completed_focus = SKL_bomb_resisting_villages
-						}
-						OR = {
-							has_completed_focus = SKL_hunt_kemalists
-						}
-					}
-				}
-				swap_ideas = {
-					remove_idea = SKL_turkish_united_front_2
-					add_idea = SKL_turkish_united_front_3
-				}
-			}
-			if = {
-				limit = {
-					AND = {
-						has_completed_focus = SKL_bomb_resisting_villages
-					}
-					AND = {
-						has_completed_focus = SKL_hunt_kemalists
-					}
-				}
-				swap_ideas = {
-					remove_idea = SKL_turkish_united_front_3
-					add_idea = SKL_turkish_united_front_4
-				}
+			swap_ideas = {
+				remove_idea = SKL_turkish_united_front_2
+				add_idea = SKL_turkish_united_front_3
 			}
         }
 		prerequisite = { focus = SKL_Unification_Complete }
@@ -83,60 +44,18 @@ focus_tree = {
 		relative_position_id = SKL_Unification_Complete
 		x = -2
 		y = 1
-		cost = 5
+		cost = 2.5
 		available_if_capitulated = no
 		prerequisite = {
 			focus = SKL_Unification_Complete
 		}
 		completion_reward = {
 			country_event = fullerunification.1
-			if = {
-				limit = {
-					NOT = {
-						AND = {
-							has_completed_focus = SKL_racial_plans
-						}
-						AND = {
-							has_completed_focus = SKL_hunt_kemalists
-						}
-					}
-				}
-				swap_ideas = {
-					remove_idea = SKL_turkish_united_front_1
-					add_idea = SKL_turkish_united_front_2
-				}
+			swap_ideas = {
+				remove_idea = SKL_turkish_united_front_1
+				add_idea = SKL_turkish_united_front_2
 			}
-			if = {
-				limit = {
-					NOT = {
-						OR = {
-							has_completed_focus = SKL_racial_plans
-						}
-						OR = {
-							has_completed_focus = SKL_hunt_kemalists
-						}
-					}
-				}
-				swap_ideas = {
-					remove_idea = SKL_turkish_united_front_2
-					add_idea = SKL_turkish_united_front_3
-				}
-			}
-			if = {
-				limit = {
-					AND = {
-						has_completed_focus = SKL_racial_plans
-					}
-					AND = {
-						has_completed_focus = SKL_hunt_kemalists
-					}
-				}
-				swap_ideas = {
-					remove_idea = SKL_turkish_united_front_3
-					add_idea = SKL_turkish_united_front_4
-				}
-			}
-        }
+		}
 	}
 	focus = {
 		id = SKL_hunt_kemalists
@@ -144,57 +63,18 @@ focus_tree = {
 		relative_position_id = SKL_Unification_Complete
 		x = 2
 		y = 1
-		cost = 5
+		cost = 2.5
 		available_if_capitulated = no
 		prerequisite = {
 			focus = SKL_Unification_Complete
 		}
+		available = {
+			has_completed_focus = SKL_racial_plans
+		}
 		completion_reward = {
-			if = {
-				limit = {
-					NOT = {
-						AND = {
-							has_completed_focus = SKL_racial_plans
-						}
-						AND = {
-							has_completed_focus = SKL_bomb_resisting_villages
-						}
-					}
-				}
-				swap_ideas = {
-					remove_idea = SKL_turkish_united_front_1
-					add_idea = SKL_turkish_united_front_2
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						OR = {
-							has_completed_focus = SKL_racial_plans
-						}
-						OR = {
-							has_completed_focus = SKL_bomb_resisting_villages
-						}
-					}
-				}
-				swap_ideas = {
-					remove_idea = SKL_turkish_united_front_2
-					add_idea = SKL_turkish_united_front_3
-				}
-			}
-			if = {
-				limit = {
-					AND = {
-						has_completed_focus = SKL_racial_plans
-					}
-					AND = {
-						has_completed_focus = SKL_bomb_resisting_villages
-					}
-				}
-				swap_ideas = {
-					remove_idea = SKL_turkish_united_front_3
-					add_idea = SKL_turkish_united_front_4
-				}
+			swap_ideas = {
+				remove_idea = SKL_turkish_united_front_3
+				add_idea = SKL_turkish_united_front_4
 			}
         }
 	}
