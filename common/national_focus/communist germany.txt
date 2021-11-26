@@ -669,8 +669,7 @@ focus = {
 		x = 8
 		y = 16
 		cost = 2
-        prerequisite = { focus = NGU_Absorb_Right }
-		prerequisite = { focus = NGU_Reichsfuhrer_Goebbels }
+        prerequisite = { focus = NGU_Our_Revolution }
 								
 		completion_reward = {
 		custom_effect_tooltip = SoldatenRot_tt	
