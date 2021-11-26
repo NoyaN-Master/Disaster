@@ -447,6 +447,14 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = SKL_alexanderism
+			create_country_leader = {
+				name = "Fuller"
+				desc = "POLITICS_Fuller"
+				picture = "SKL_Gamer_Fuller.tga"
+				expire = "1965.1.1"
+				ideology = alexanderism
+				traits = { }
+			}
         }
 	}
 	focus = {
@@ -923,7 +931,21 @@ focus_tree = {
 		prerequisite = { focus = SKL_the_weapon }
 		prerequisite = { focus = SKL_alexanders_warriors}
 		completion_reward = {
-			
+			custom_effect_tooltip = SKL_macedon_scare_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						ruling_party = revolutionary_nationalist
+					}
+					set_cosmetic_tag = SKL_macedon
+				}
+				if = {
+					limit = {
+						ruling_party = esoteric_traditionalist
+					}
+					set_cosmetic_tag = SKL_eso_macedon
+				}
+			}
 		}
 	}
 
