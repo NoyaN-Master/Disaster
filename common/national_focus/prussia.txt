@@ -2200,6 +2200,7 @@ focus_tree = {
         add_manpower = 50000 }
 		5 = {
         add_manpower = 50000 }
+		country_event = { id = pre.38 days = 2 } 
 		}
 	}
 	focus = {
@@ -2349,7 +2350,7 @@ focus_tree = {
 			ideology = revolutionary_nationalist
 			popularity = -0.05
 		}		
-
+		country_event = { id = pre.35 days = 2 } 
 		}
 		
 	}
@@ -2489,6 +2490,7 @@ focus_tree = {
 		
 		completion_reward = {
 		add_research_slot = 1
+		country_event = { id = pre.34 days = 2 } 
 		}
 	}
 
@@ -2544,6 +2546,7 @@ focus_tree = {
 		    level = 1
 	        }   
             }		
+		country_event = { id = pre.36 days = 2 } 
 		}
 	}
 	focus = {
@@ -2622,7 +2625,8 @@ focus_tree = {
 				level = 1
 				instant_build = yes
 			}
-		}			
+		}	
+		
 		}
 	}
 	focus = {
@@ -2811,7 +2815,8 @@ focus_tree = {
 				show_ideas_tooltip = PRE_army_maneuvres_idea	
 		hidden_effect = {
 		remove_ideas = PRE_army_maneuvres_idea
-		}				
+		}
+		country_event = { id = pre.37 days = 2 } 		
 		}
 	}
 	focus = {
