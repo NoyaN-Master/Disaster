@@ -83,7 +83,7 @@ CRW_Protests_1 = {
 			stability_weekly = -0.05		
 			}
 		}				
-}
+
 
 CRW_Protests_vahd_1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CRW_Independent_City" }
@@ -99,7 +99,7 @@ CRW_Protests_vahd_1 = {
 			stability_weekly = -0.10		
 			}
 		}				
-}
+
 
 CRW_Protests_vahd_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CRW_Independent_City" }
@@ -115,7 +115,7 @@ CRW_Protests_vahd_2 = {
 			stability_weekly = -0.40		
 			}
 		}				
-}
+
 
 CRW_Protests_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CRW_Independent_City" }
@@ -131,7 +131,7 @@ CRW_Protests_2 = {
 			stability_weekly = -0.04		
 			}
 		}				
-}
+
 
 CRW_Protests_3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CRW_Independent_City" }
@@ -147,7 +147,7 @@ CRW_Protests_3 = {
 			stability_weekly = -0.03		
 			}
 		}				
-}
+
 
 
 CRW_social_economy = {
@@ -159,7 +159,7 @@ CRW_social_economy = {
 			stability_factor = 0.05	
 			}
 		}				
-}
+
 
 CRW_liberal_economy = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CRW_Independent_City" }
@@ -170,7 +170,7 @@ CRW_liberal_economy = {
 			stability_factor = 0.05	
 			}
 		}				
-}
+
 
 CRW_conservative_economy = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CRW_Independent_City" }
