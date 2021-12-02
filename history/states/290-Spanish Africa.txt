@@ -13,11 +13,12 @@ state={
 
 	history={
 		owner = SPK
+		add_core_of = 
 		victory_points = {
 			9945 3
 		}
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			air_base = 3
 			12100 = {
 				naval_base = 3

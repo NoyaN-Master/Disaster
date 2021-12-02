@@ -1,24 +1,26 @@
 
 state={
 	id=260
-	name="STATE_260" # Voronezh
-	manpower = 2567983
-	
-	state_category = town
+	name="STATE_260"
 
 	history={
-		owner = TSV
+		owner = RUS
 		buildings = {
-			infrastructure = 2
+			infrastructure = 5
 			arms_factory = 1
+
 		}
 		victory_points = {
-			413 5
+			413 5 
 		}
-		add_core_of = TSV
+		add_core_of = RUS
+
 	}
 
 	provinces={
-		413 437 510 3469 3504 3527 3566 3567 6428 6477 6494 6553 6587 6591 9448 9529 9552 11396 11412 11475 11540 
+		413 437 510 534 3504 3527 3566 6428 6477 6494 6553 6587 6591 9448 9529 9552 9579 11396 11540 
 	}
+	manpower=2567983
+	buildings_max_level_factor=1.000
+	state_category=town
 }

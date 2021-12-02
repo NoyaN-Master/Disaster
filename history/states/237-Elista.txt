@@ -2,22 +2,23 @@
 state={
 	id=237
 	name="STATE_237"
-	manpower = 169620
-	
-	state_category = rural
 
 	history={
-		owner = DNK
+		owner = RUS
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 		}
-		add_core_of = DNK
 		victory_points = {
-			11724 1
+			775 1 
 		}
+		add_core_of = RUS
+
 	}
 
 	provinces={
-		481 745 759 3413 3439 3475 3597 3746 3774 6463 6791 6794 9426 9594 9720 9739 11566 11724 
+		712 731 748 775 3748 3779 6750 6753 6781 6796 9688 9707 9722 9742 11661 11678 11690 11693 11694 11727 
 	}
+	manpower=169620
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

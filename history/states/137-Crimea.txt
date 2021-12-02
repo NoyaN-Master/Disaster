@@ -7,7 +7,7 @@ state={
 	state_category = city
 
 	history={
-		owner = CRI
+		owner = UKR
 		victory_points = {
 			3686 20
 		}
@@ -18,7 +18,7 @@ state={
 			6704 1
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 5
 			dockyard = 1
 			air_base = 3
 			3686 ={
@@ -30,6 +30,8 @@ state={
 				coastal_bunker = 1
 			}
 		}
+		add_core_of = UKR
+		add_core_of = RUS
 		add_core_of = CRI
 		1939.1.1 = {
 			buildings = {

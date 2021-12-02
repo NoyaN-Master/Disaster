@@ -1,5 +1,4 @@
 capital = 16
-set_research_slots = 4
 oob = "FRE_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -107,7 +106,7 @@ if = {
 	}
 	set_autonomy = {
 		target = IDH
-		autonomous_state = autonomy_integrated_puppet
+		autonomous_state = autonomy_colony
 	}
 	else = {
 		puppet = IDH
@@ -122,7 +121,7 @@ if = {
 	}
 	set_autonomy = {
 		target = RHN
-		autonomous_state = autonomy_reichsprotectorate
+		autonomous_state = autonomy_colony
 	}
 	else = {
 		puppet = RHN

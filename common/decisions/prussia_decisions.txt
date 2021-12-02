@@ -339,7 +339,7 @@ PRE_Attack_Belgium = {
 	RHN = {
 	exists = no
 	}
-	has_war_with  = FRE
+	at_war_with = FRE
 	}
 	complete_effect = {
 		declare_war_on = {
@@ -659,7 +659,7 @@ PRE_France_Surrender = {
         }
         available  = {   
         original_tag = PRE    
-        has_war_with = FRE
+        at_war_with = FRE
         FRE = {
         surrender_progress > 0.5    
         }
@@ -683,7 +683,7 @@ PRE_France_Surrender_Democratic = {
         }
         available  = {   
         original_tag = PRE    
-        has_war_with  = FRE
+        at_war_with = FRE
         FRE = {
         surrender_progress > 0.5    
         }

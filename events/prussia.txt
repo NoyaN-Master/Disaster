@@ -793,66 +793,6 @@ country_event = { #goring gets what he fucking deserves
 		}
 	}
 }
-country_event = { 
-	id = pre.34
-	title = pre.34.t
-	desc = pre.34.d
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	option = {
-		name = pre.34.a
-		ai_chance = { factor = 1}
-	}
-}
-country_event = { 
-	id = pre.35
-	title = pre.35.t
-	desc = pre.35.d
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	option = {
-		name = pre.35.a
-		ai_chance = { factor = 1}
-	}
-}
-country_event = { 
-	id = pre.36
-	title = pre.36.t
-	desc = pre.36.d
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	option = {
-		name = pre.36.a
-		ai_chance = { factor = 1}
-	}
-}
-country_event = { 
-	id = pre.37
-	title = pre.37.t
-	desc = pre.37.d
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	option = {
-		name = pre.37.a
-		ai_chance = { factor = 1}
-	}
-}
-country_event = { 
-	id = pre.38
-	title = pre.38.t
-	desc = pre.38.d
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	option = {
-		name = pre.38.a
-		ai_chance = { factor = 1}
-	}
-}
 
 ###FP
 country_event = { #BLT gets fccd

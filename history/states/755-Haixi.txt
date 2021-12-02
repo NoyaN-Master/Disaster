@@ -11,7 +11,7 @@ state={
 		owner = XSM
 		add_core_of = XSM
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 			industrial_complex = 1
 
 		}

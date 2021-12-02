@@ -6,9 +6,10 @@ state={
 	}
 
 	history={
-		owner = FIN
+		owner = RUS
+		add_core_of = RUS
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 
 		}
 		#add_core_of = 

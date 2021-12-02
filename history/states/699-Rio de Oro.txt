@@ -7,8 +7,9 @@ state={
 
 	history={
 		owner = SPK
+		add_core_of = 
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 			8038 = {
 				naval_base = 1
 			}

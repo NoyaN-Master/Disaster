@@ -1,24 +1,28 @@
 
 state={
 	id=563
-	name="STATE_563" # Chita
-	manpower = 1044310
-	state_category = rural
+	name="STATE_563"
 	resources={
-		steel=9 # was: 12
-		chromium=8 # was: 10
+		steel=9.000
+		chromium=8.000
 	}
 
 	history={
-		owner = TSB
+		owner = BYR
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			air_base = 2
+
 		}
-		add_core_of = TSB
+		add_core_of = BYR
+		add_core_of = RUS
+
 	}
 
 	provinces={
-		1672 1826 4677 4719 4832 7725 7786 10559 10565 10574 10643 10681 10683 12556 12622 12641 
+		1672 1761 1826 4677 4719 4835 7725 7736 7751 7786 7854 10559 10574 10583 10643 10683 12556 12622 12641 
 	}
+	manpower=1044310
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

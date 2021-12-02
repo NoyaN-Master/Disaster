@@ -1,23 +1,29 @@
 
 state={
 	id=200
-	name="STATE_200" # Zaporozhe
-	manpower = 1294082
-	state_category = town
+	name="STATE_200"
 
 	history={
-		owner = FRI
+		owner = UKR
 		victory_points = {
-			11405 1
+			11405 1 
+		}
+		victory_points = {
+			11437 10 
 		}
 		buildings = {
-			infrastructure = 2
-			air_base = 3
+			infrastructure = 5
+			air_base = 3 
+
 		}
-		add_core_of = FRI
+		add_core_of = UKR
+
 	}
 
 	provinces={
-		429 453 472 588 3399 3767 6596 9571 9729 11405 11700 
+		429 453 472 486 3399 3449 6423 9433 9463 9479 11405 11422 11437 11452 11461 
 	}
+	manpower=1294082
+	buildings_max_level_factor=1.000
+	state_category=town
 }

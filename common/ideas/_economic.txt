@@ -240,7 +240,30 @@ ideas = {
 					}
 				}
 
+				# Germany needs to be careful
+				modifier = {
+					factor = 0
 
+					tag = GER
+					NOT = { has_tech = volkssturm }
+					has_war = yes
+					date < 1944.01.01
+				}
+				modifier = {
+					factor = 0
+
+					tag = SOV
+					has_war = yes
+					OR = {
+						has_manpower < 2000000
+						NOT = {
+							OR = {
+								has_idea = all_adults_serve
+								has_idea = service_by_requirement
+							}
+						}
+					}									
+				}
    			}
 			
 			cost = 150

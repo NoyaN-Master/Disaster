@@ -1,24 +1,27 @@
+
 state={
 	id=821
 	name="STATE_821"
+
 	history={
-		owner = MTR
+		owner = GEO
 		victory_points = {
-			11617 1
+			11617 1 
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			industrial_complex = 1
 
 		}
-		add_core_of = MTR
+		add_core_of = GEO
 		add_core_of = SRF
+
 	}
-	
+
 	provinces={
-		672 11599 11617
+		672 11617 11647 
 	}
-	manpower= 340000
+	manpower=340000
 	buildings_max_level_factor=1.000
-	state_category= rural
+	state_category=rural
 }

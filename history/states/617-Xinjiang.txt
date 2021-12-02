@@ -1,3 +1,4 @@
+
 state={
 	id=617
 	name="STATE_617"
@@ -6,7 +7,7 @@ state={
 		owner = SIK
 		add_core_of = SIK
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			industrial_complex = 2
 
 		}

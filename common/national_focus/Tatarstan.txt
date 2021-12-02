@@ -1,0 +1,714 @@
+focus_tree = {# I'm sorry, little one.
+	id = galiyev_tree
+	country = {
+		factor = 0
+		modifier = {
+		}
+	}
+	continuous_focus_position = { x = 800 y = 10000 }
+
+focus = {
+		id = TAT_Our_Problems
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 10
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		country_event = { id = galiyev.1 }	
+		hidden_effect = {
+		}
+		}
+	}
+
+
+focus = {
+		id = TAT_Call_Party
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 10
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Our_Problems }
+		completion_reward = {
+		country_event = { id = galiyev.2 }	
+		hidden_effect = {
+		}
+		}
+	}
+    focus = {
+		id = TAT_Army
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 10
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Call_Party }
+		completion_reward = {
+		army_experience = 50
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = TAT_Russian_Weapons
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 9
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Army }
+		completion_reward = {
+		add_equipment_to_stockpile = {
+    	type = infantry_equipment_1
+    	amount = 2000
+    	producer = TAT
+		}
+		add_equipment_to_stockpile = {
+    	type = support_equipment_1
+    	amount = 2000
+    	producer = TAT
+		}		
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = TAT_Modernizing_Army
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 11
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Army }
+		completion_reward = {
+		add_tech_bonus = {
+   	 	bonus = 0.7
+    	uses = 2
+    	category = infantry_tech
+		}
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = TAT_Officer_Corps
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 10
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Russian_Weapons }
+        prerequisite = { focus = TAT_Modernizing_Army }
+		completion_reward = {
+		add_tech_bonus = {
+   	 	bonus = 0.7
+    	uses = 2
+    	category = land_doctrine
+		}
+		swap_ideas = {
+		remove_idea = TAT_tatar_army
+		add_idea = TAT_tatar_corps	
+		}	
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = TAT_From_Nomadic_Tradition
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 11
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Mass_Literacy }
+        prerequisite = { focus = TAT_Officer_Corps }
+		completion_reward = {
+		add_political_power = 120
+		add_stability = 0.07	
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = TAT_Turan_Tactics
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 11
+		y = 7
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus =  TAT_From_Nomadic_Tradition }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = TAT_tatar_corps
+		add_idea = TAT_tatar_corps_turan	
+		}	
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = TAT_Economy
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 6
+		y = 3
+		cost = 4
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Call_Party }
+		completion_reward = {
+		every_owned_state = {
+		add_building_construction = {
+    	type = infrastructure
+    	level = 1
+    	instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 2	
+		}	
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = TAT_Challenge_Feudals
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 6
+		y = 4
+		cost = 4
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Economy }
+		completion_reward = {
+		country_event = { id = galiyev.3 days = 3}	
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = TAT_No_More_Compromise
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 6
+		y = 5
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Challenge_Feudals }
+		completion_reward = {
+		country_event = { id = galiyev.4 days = 1}			
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = TAT_Land_Collectivization
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 5
+		y = 6
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_No_More_Compromise }
+		completion_reward = {
+		add_stability = -0.05	
+		random_owned_state = {
+		add_building_construction = {
+    	type = arms_factory
+    	level = 2
+    	instant_build = yes
+		}
+		add_building_construction = {
+    	type = industrial_complex
+    	level = 2
+    	instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 4	
+		}	
+		hidden_effect = {
+		}
+		}
+	}
+    
+    focus = {
+		id = TAT_Legacy_Bukhara
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 7
+		y = 6
+		cost = 4
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_No_More_Compromise }
+		completion_reward = {
+		add_stability = 0.10
+		random_owned_state = {
+		add_building_construction = {
+    	type = infrastructure
+    	level = 1
+    	instant_build = yes
+		}
+		}
+		}	
+		hidden_effect = {
+		}
+	}
+
+    focus = {
+		id = TAT_Turkic_Arts
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 8
+		y = 7
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Legacy_Bukhara }
+		completion_reward = {
+		add_ideas = TAT_Turkic_Arts_idea	
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = TAT_University_Of_Tatarstan
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 8
+		y = 8
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Legacy_Bukhara }
+		completion_reward = {
+		add_research_slot = 1	
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = TAT_Turkic_Brotherhood
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 6
+		y = 8
+		cost = 4
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Protect_Merchants }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = TAT_tatar_communism
+		add_idea = 	TAT_tatar_communism_2
+		}	
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = TAT_Warrior_Imams
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 12
+		y = 8
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Red_Riders_Islam }
+        prerequisite = { focus = TAT_Turan_Tactics }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = TAT_islamic_army_2
+		add_idea = TAT_islamic_army_3
+		}		
+		hidden_effect = {
+		}
+		}
+	}
+
+    focus = {
+		id = TAT_Protect_Merchants
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 6
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Land_Collectivization }
+        prerequisite = { focus = TAT_Legacy_Bukhara }
+		completion_reward = {
+		random_owned_state = {
+		add_building_construction = {
+    	type = infrastructure
+    	level = 1
+    	instant_build = yes
+		}
+		}
+		random_owned_state = {
+		add_building_construction = {
+    	type = infrastructure
+    	level = 1
+    	instant_build = yes
+		}
+		}
+		add_extra_state_shared_building_slots = 2		
+		hidden_effect = {
+		}
+		}
+	}
+
+focus = {
+		id = TAT_Tatar_Way_Socialism
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 13
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Call_Party }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+focus = {
+		id = TAT_Curtail_Reactionary
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 13
+		y = 4
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Tatar_Way_Socialism }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = TAT_backwards_living
+		add_idea = 	TAT_backwards_living_2
+		}		
+		hidden_effect = {
+		}
+		}
+	}
+focus = {
+		id = TAT_Mass_Literacy
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 13
+		y = 5
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Curtail_Reactionary }
+		completion_reward = {
+		remove_idea = TAT_backwards_living_2	
+		hidden_effect = {
+		}
+		}
+	}
+     
+focus = {
+		id = TAT_Morning_Prayers
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 15
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Tatar_Way_Socialism }
+		completion_reward = {
+		add_manpower = 60000
+		add_ideas = TAT_islamic_army_1
+		hidden_effect = {
+		}
+		}
+	}
+focus = {
+		id = TAT_Land_Of_Mosques
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 15
+		y = 5
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Morning_Prayers }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = TAT_islamic_army_1
+		add_idea = TAT_islamic_army_2
+		}	
+		hidden_effect = {
+		}
+		}
+	}
+focus = {
+		id = TAT_Legacy_Of_Khatuns
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 13
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Land_Of_Mosques }
+        prerequisite = { focus = TAT_Mass_Literacy }
+		completion_reward = {
+		add_stability = 0.10	
+		hidden_effect = {
+		}
+		}
+	}
+focus = {
+		id = TAT_Red_Riders_Islam
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 13
+		y = 7
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Legacy_Of_Khatuns }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}
+
+focus = {
+		id = TAT_Real_Freedom
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 9
+		y = 9
+		cost = 4
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Warrior_Imams }
+        prerequisite = { focus = TAT_University_Of_Tatarstan }
+        prerequisite = { focus = TAT_Turkic_Brotherhood }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = TAT_tatar_communism_2
+		add_idea = TAT_tatar_communism_3	
+		}		
+		hidden_effect = {
+		}
+		}
+	}
+
+#foreign            
+focus = {
+		id = TAT_Our_Goals
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 20
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		TAT = {	 
+		add_state_core = 582
+		add_state_core = 402
+		add_state_core = 583
+		add_state_core = 404
+		add_state_core = 589
+		add_state_core = 586
+		add_state_core = 732
+		add_state_core = 742
+		add_state_core = 584
+		add_state_core = 585
+		add_state_core = 864
+		add_state_core = 587
+		add_state_core = 590
+		add_state_core = 571
+		add_state_core = 570
+		add_state_core = 40
+		add_state_core = 654
+		}	
+		hidden_effect = {
+		}
+		}
+	}
+
+focus = {
+		id = TAT_Drive_The_Devils
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 21
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Our_Goals}
+		completion_reward = {
+		declare_war_on = {
+    	target = DCS
+    	type = annex_everything
+		}	
+		hidden_effect = {
+		}
+		}
+	}
+focus = {
+		id = TAT_Drive_The_Reactionaries
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 19
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Our_Goals}
+		completion_reward = {
+		declare_war_on = {
+    	target = TRK
+    	type = annex_everything
+		}	
+		hidden_effect = {
+		}
+		}
+	}
+focus = {
+		id = TAT_Deal_With_Turania
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 19
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Drive_The_Reactionaries }
+		completion_reward = {
+		declare_war_on = {
+    	target = GOK
+    	type = annex_everything
+		}	
+		hidden_effect = {
+		}
+		}
+	}
+focus = {
+		id = TAT_Reclaim_North
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 21
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Drive_The_Devils }
+		completion_reward = {
+		declare_war_on = {
+    	target = TRM
+    	type = annex_everything
+		}	
+		hidden_effect = {
+		}
+		}
+	}
+focus = {
+		id = TAT_Homecoming
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 20
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Reclaim_North }
+        prerequisite = { focus = TAT_Deal_With_Turania }
+		completion_reward = {
+		declare_war_on = {
+    	target = KRN
+    	type = annex_everything
+		}	
+		hidden_effect = {
+		}
+		}
+	}
+    
+focus = {
+		id = TAT_Turkic_World_Revolution
+		icon = GFX_goal_WRF_Atsiz_Start
+		x = 20
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+        prerequisite = { focus = TAT_Homecoming }
+		completion_reward = {
+		hidden_effect = {
+		}
+		}
+	}              
+}        

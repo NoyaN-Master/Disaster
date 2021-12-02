@@ -1,23 +1,21 @@
+
 state={
 	id=732
 	name="STATE_732"
 
 	history={
-		add_core_of = GOK
-		owner = GOK
-		victory_points = {
-			12583 1
-		}
+		owner = BAS
 		buildings = {
-			infrastructure = 3
+			infrastructure = 5
 
 		}
-		add_core_of = GOK
-
+		add_core_of = BAS
+		add_claim_by = TRK
+		add_claim_by = TSV
 	}
 
 	provinces={
-		1483 1675 1825 2058 4224 4316 4391 4467 4768 4923 5062 10408 10530 10660 12370 12511 12581 12583 13147 
+		1483 2058 4455 4467 4923 10187 10408 10488 10530 12581 12805 
 	}
 	manpower=230000
 	buildings_max_level_factor=1.000

@@ -7,11 +7,13 @@ state={
 	
 	history={
 		owner = PKR
+		add_core_of = 
+		add_core_of = 
 		victory_points = {
 			4189 1 
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4
 			4189 = {
 				naval_base = 1
 			}

@@ -277,6 +277,7 @@ AUT_in_die_neue_zeit = {
             on_add = { log = "[GetDateText]: [Root.GetName]: add idea AUT_in_die_neue_zeit" }
 			#picture = 
 			modifier = {
+			resistance_damage_to_garrison_on_our_occupied_states
 			army_core_defence_factor = 0.05
 			surrender_limit = 0.05
 			party_popularity_stability_factor = 0.10
@@ -322,8 +323,8 @@ AUT_empowered_beureaucracy = {
 			stability_factor = 0.03
 			economy_cost_factor = -0.08
 			trade_laws_cost_factor = -0.08
-			mobilization_laws_cost_factor  = -0.08
-			political_advisor_cost_factor  = -0.08
+			mobilization_laws_cost_factor = -0.08
+			political_adviser_cost_factor = -0.08
 			}
 		}	
 		
@@ -356,7 +357,7 @@ AUT_technocratic_government_1 = {
 			economy_cost_factor = -0.16
 			trade_laws_cost_factor = -0.16
 			mobilization_laws_cost_factor = -0.16
-			political_advisor_cost_factor  = -0.16
+			political_adviser_cost_factor = -0.16
 			research_speed_factor = 0.03
 			}
 		}	
@@ -381,7 +382,7 @@ AUT_technocratic_government_2 = {
 			economy_cost_factor = -0.24
 			trade_laws_cost_factor = -0.24
 			mobilization_laws_cost_factor = -0.24
-			political_advisor_cost_factor  = -0.24
+			political_adviser_cost_factor = -0.24
 			research_speed_factor = 0.06
 			}
 		}
@@ -430,7 +431,7 @@ AUT_christlich_deutsch_gerecht_und_frei_idea = {
 			economy_cost_factor = -0.30
 			trade_laws_cost_factor = -0.30
 			mobilization_laws_cost_factor = -0.30
-			political_advisor_cost_factor  = -0.30
+			political_adviser_cost_factor = -0.30
 			trade_opinion_factor = 0.10
 			opinion_gain_monthly_factor = 0.10
 			research_speed_factor = 0.09
