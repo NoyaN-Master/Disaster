@@ -7,10 +7,10 @@ state={
 
 	history={
 		owner = SPK
+		add_core_of = SPK
 		victory_points = {
 			740 10
 		}
-		add_core_of = 
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -20,7 +20,6 @@ state={
 			}
 			air_base = 1
 		}
-		add_core_of = SPK
 
 	}
 

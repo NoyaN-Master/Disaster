@@ -1,4 +1,3 @@
-
 state={
 	id=165
 	name="STATE_165"
@@ -6,9 +5,9 @@ state={
 	
 	state_category = large_city
 
-	history={
+	history = {
 		owner = SPK
-		add_core_of = 
+		add_core_of = SPK
 		victory_points = {
 			9764 30
 		}
@@ -27,7 +26,6 @@ state={
 				naval_base = 4
 			}
 		}
-		add_core_of = SPK
 	}
 
 	provinces={
