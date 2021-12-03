@@ -293,7 +293,7 @@ country_event = { #Big Avar stuff
 	}
 }
 
-country_event = { #Small Avar stuff
+country_event = { #Gyula dies
 	id = hungary.10
 	title = hungary.10.t
 	desc = hungary.10.d
@@ -311,7 +311,6 @@ country_event = { #Small Avar stuff
 	
 	option = {
 		name = hungary.10.b
-		set_country_flag = avar_stuffs
 		add_political_power = -25
 		add_stability = 0.02
 	}
@@ -429,6 +428,12 @@ country_event = { #First elections
 		name = hungary.13.b
 		set_country_flag = HUN_liberal_victory
 		set_country_flag = HUN_elections_held
+		set_politics = {
+			ruling_party = liberal
+			last_election = "1936.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
 		add_popularity = {
 			ideology = liberal
 			popularity = 0.1

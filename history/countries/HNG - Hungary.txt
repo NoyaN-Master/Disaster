@@ -45,8 +45,8 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-country_event = { id = hungary.1000 days = 1 }
-country_event = { id = hungary.10 days = 31 }
+country_event = { id = hungary.1000 days = 1 } #intro
+country_event = { id = hungary.10 days = 340 } #death of gyula
 
 create_country_leader = {
 	name = "Miklós Horthy"
