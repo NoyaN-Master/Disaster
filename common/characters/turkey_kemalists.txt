@@ -1,0 +1,108 @@
+characters={
+
+WRF_Mustafa_Kemal_1={
+		name= "Mustafa Kemal"
+		portraits={
+			civilian={
+				large="gfx/leaders/WRF/Portrait_WRF_Mustafa_Kemal_Ataturk.tga"
+			}
+            army={
+				large="gfx/leaders/WRF/Portrait_WRF_Mustafa_Kemal_Ataturk.tga"
+				
+			}
+		}
+		country_leader={
+			ideology= turkish_stratocracy
+			traits={ last_hope }
+			expire="1965.1.1.1"
+			
+		}
+
+        field_marshal={
+			traits={ war_hero brilliant_strategist war_hero infantry_officer trickster desert_fox hill_fighter kemalist_general }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 3
+            legacy_id=1881
+		}
+
+	}
+
+WRF_Fahrettin_char ={
+		name= "Ömer Fahrettin Türkkan"
+		portraits={
+            army={
+				large="gfx/leaders/WRF/Portrait_OTT_Omer_Fahrettin_Turkkan.tga"
+				
+			}
+		}
+        corps_commander={
+		traits = { war_hero brilliant_strategist cavalry_officer hill_fighter kemalist_general }
+		skill = 4 #13
+		attack_skill = 4
+		defense_skill = 3
+		planning_skill = 4
+		logistics_skill = 2
+		}
+
+	}
+
+WRF_Cemil_char ={
+		name= "Cemil Cahit Toydemir"
+		portraits={
+            army={
+				large="gfx/leaders/WRF/Portrait_OTT_Cahit_Toydemir.tga"
+				
+			}
+		}
+        corps_commander={
+		traits = { career_officer infantry_officer hill_fighter kemalist_general kemalist_general }
+		skill = 3 #10
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 3
+		logistics_skill = 2
+		}
+
+	}    
+
+WRF_Fuad_char ={
+		name= "Osman Fuad Bey"
+		portraits={
+            army={
+				large="gfx/leaders/WRF/Portrait_OTT_OsmanFuad.tga"
+				
+			}
+		}
+        corps_commander={
+		traits = { career_officer infantry_officer hill_fighter kemalist_general kemalist_general }
+		skill = 3 #10
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 3
+		logistics_skill = 2
+		}
+
+	}    
+WRF_Atsiz_Char ={
+		name= "Nihal Adsız"
+		portraits={
+            civilian={
+				large="GFX_Portrait_WRF_Atsiz_Nazi_animated"
+			}
+		}
+        country_leader={
+			ideology= revolutionary_nationalist_subideology
+			traits={ bastion_evil }
+			expire="1965.1.1.1"
+			
+		}
+
+	}  
+
+
+
+
+}

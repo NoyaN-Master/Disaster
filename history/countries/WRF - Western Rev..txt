@@ -83,28 +83,6 @@ puppet = THR
 puppet = ADN
 		
 create_country_leader = {
-	name = "Mustafa Kemal Pasha"
-	#desc = "SES_Zeljko_Raznatovic_desc"
-	picture = "Portrait_WRF_Mustafa_Kemal.tga"
-	expire = "2020.1.1"
-	ideology = turkish_stratocracy
-	traits = {
-	last_hope
-	}
-}
-
-create_country_leader = {
-	name = "Nihal Adsız"
-	#desc = "SES_Zeljko_Raznatovic_desc"
-	picture = "GFX_Portrait_WRF_Atsiz_Nazi_animated"
-	expire = "2020.1.1"
-	ideology = revolutionary_nationalist_subideology
-	traits = {
-	bastion_evil
-	}
-}
-
-create_country_leader = {
 	name = "Celal Bayar/Adnan Menderes"
 	#desc = "SES_Zeljko_Raznatovic_desc"
 	picture = "Portrait_WRF_Coalition.tga"
@@ -126,68 +104,9 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Türki Konfederasyonu"
-	#desc = "SES_Zeljko_Raznatovic_desc"
-	picture = "Portrait_WRF_Confederacy.tga"
-	expire = "2020.1.1"
-	ideology = turkic_confederacy
-	traits = {
-		#
-	}
-}
 
-
-create_country_leader = {
-	name = "Mustafa Kemal Atatürk"
-	#desc = "SES_Zeljko_Raznatovic_desc"
-	picture = "Portrait_WRF_Mustafa_Kemal_Ataturk.tga"
-	expire = "2020.1.1"
-	ideology = authoritarian_democrat
-	traits = {
-		#
-	}
-	}
-
-create_field_marshal = {
-			name = "Mustafa Kemal Paşa"
-			portrait_path = "gfx/leaders/WRF/Portrait_WRF_Mustafa_Kemal.tga"
-			traits = { war_hero brilliant_strategist war_hero infantry_officer trickster desert_fox hill_fighter kemalist_general }
-			skill = 5
-			attack_skill = 5
-			defense_skill = 5
-			planning_skill = 4
-			logistics_skill = 3
-			id = 1881
-			}
-create_corps_commander = {
-		name = "Ömer Fahrettin Türkkan"
-		portrait_path = "gfx/leaders/WRF/Portrait_OTT_Omer_Fahrettin_Turkkan.tga"
-		traits = { war_hero brilliant_strategist cavalry_officer hill_fighter kemalist_general }
-		skill = 4 #13
-		attack_skill = 4
-		defense_skill = 3
-		planning_skill = 4
-		logistics_skill = 2
-	}
-
-create_corps_commander = {
-		name = "Cemil Cahit Toydemir"
-		portrait_path = "gfx/leaders/WRF/Portrait_OTT_Cahit_Toydemir.tga"
-		traits = { career_officer infantry_officer hill_fighter kemalist_general kemalist_general }
-		skill = 3 #10
-		attack_skill = 3
-		defense_skill = 2
-		planning_skill = 3
-		logistics_skill = 2
-	}
-create_corps_commander = {
-		name = "Osman Fuat Bey"
-		portrait_path = "gfx/leaders/WRF/Portrait_OTT_OsmanFuad.tga"
-		traits = { career_officer infantry_officer hill_fighter kemalist_general kemalist_general }
-		skill = 3 #10
-		attack_skill = 3
-		defense_skill = 2
-		planning_skill = 3
-		logistics_skill = 2
-	}				
+recruit_character = WRF_Mustafa_Kemal_1
+recruit_character = WRF_Fahrettin_char
+recruit_character = WRF_Cemil_char
+recruit_character = WRF_Fuad_char
+recruit_character = WRF_Atsiz_Char

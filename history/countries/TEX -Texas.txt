@@ -45,7 +45,11 @@ set_popularities = {
 create_country_leader = {
 	name = "Dan Moody"
 	desc = "TEX_Dan_Moody_desc"
-	picture = "TEX_Dan_Moody.tga"
+	portraits = {
+			civilian = {
+				large = "gfx/leaders/TEX/TEX_Dan_Moody.tga"
+			}
+		}
 	expire = "2020.1.1"
 	ideology = conservative_subideology
 	traits = {
