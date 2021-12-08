@@ -499,14 +499,15 @@ country_event = { #VGH
 	}
 	option = {
 		name = fullerunification.17.b
-		create_country_leader = {
-			name = "Fuller I"
-			desc = "POLITICS_Fuller"
-			picture = "SKL_Fuller.png"
-			expire = "1965.1.1"
-			ideology = eso_alexanderism
-			traits = { }
-		}
+		# create_country_leader = {
+		# 	name = "Fuller I"
+		# 	desc = "POLITICS_Fuller"
+		# 	picture = "SKL_Fuller.png"
+		# 	expire = "1965.1.1"
+		# 	ideology = eso_alexanderism
+		# 	traits = { }
+		# }
+		recruit_character = SKL_fuller_3
 		set_politics = {
 			ruling_party = esoteric_traditionalist 
 			elections_allowed = no

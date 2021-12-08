@@ -447,14 +447,15 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = SKL_alexanderism
-			create_country_leader = {
-				name = "Fuller"
-				desc = "POLITICS_Fuller"
-				picture = "SKL_Gamer_Fuller.tga"
-				expire = "1965.1.1"
-				ideology = alexanderism
-				traits = { }
-			}
+			# create_country_leader = {
+			# 	name = "Fuller"
+			# 	desc = "POLITICS_Fuller"
+			# 	picture = "SKL_Gamer_Fuller.tga"
+			# 	expire = "1965.1.1"
+			# 	ideology = alexanderism
+			# 	traits = { }
+			# }
+			recruit_character = SKL_fuller_2
         }
 	}
 	focus = {
@@ -918,6 +919,9 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = SKL_alexanders_sons
 			country_event = { id = fullerunification.14 }
+			hidden_effect = {
+				country_event = { id = fullerunification.17 days = 30}
+			}
         }
 	}
 	focus = {

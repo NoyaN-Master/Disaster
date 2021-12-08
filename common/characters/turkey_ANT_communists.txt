@@ -1,0 +1,145 @@
+characters = {
+	
+	IZM_ethem_1 = {
+		name = "Ethem Nejat"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/IZM/IZM_Ethem_Nejat.tga"
+			}
+			army = {
+				large = "gfx/leaders/IZM/IZM_ethem_nejat_deng.tga"
+			}
+		}
+		country_leader = {
+			ideology = turkish_marxism
+			traits = { turkish_marx }
+			expire = "1965.1.1.1"
+		}
+		field_marshal = {
+			traits = { revolutionary_turk }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+			
+	}
+	IZM_ethem_2 = {
+		name = "Ethem Nejat"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/IZM/IZM_Ethem_Nejat_Drip.tga"
+			}
+			army = {
+				large = "gfx/leaders/IZM/IZM_ethem_nejat_deng.tga"
+			}
+		}
+		country_leader = {
+			ideology = turkish_marxism
+			traits = { turkish_marx }
+			expire = "1965.1.1.1"
+		}
+		field_marshal = {
+			traits = { revolutionary_turk }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	IZM_ethem_3 = {
+		name = "Ethem Nejat"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/IZM/IZM_ethem_nejat_deng.tga"
+			}
+			army = {
+				large = "gfx/leaders/IZM/IZM_ethem_nejat_deng.tga"
+			}
+		}
+		country_leader = {
+			ideology = turkish_dengism
+			traits = { turkish_marx }
+			expire = "1965.1.1.1"
+		}
+		field_marshal = {
+			traits = { revolutionary_turk }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	IZM_nazim = {
+		name = "Nazim Hikmet"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/IZM/IZM_Nazim_Hikmet.tga"
+			}
+		}
+		country_leader = {
+			ideology = nazimism
+			traits = { humanist_poet }
+			expire = "1965.1.1.1"
+		}
+	}
+	IZM_cemal = {
+		name = "Cemal Madanoğlu"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/IZM/IZM_Madan.tga"
+			}
+			army = {
+				large = "gfx/leaders/IZM/IZM_Madan.tga"
+			}
+		}
+		country_leader = {
+			ideology = mdd_kemalism
+			traits = {  }
+			expire = "1965.1.1.1"
+		}
+		field_marshal = {
+			traits = { revolutionary_turk brilliant_strategist infantry_officer trickster desert_fox hill_fighter }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	IZM_cemal_puppet = {
+		name = "Cemal Madanoğlu"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/IZM/IZM_Madan.tga"
+			}
+			army = {
+				large = "gfx/leaders/IZM/IZM_Madan.tga"
+			}
+		}
+		country_leader = {
+			ideology = turkish_marxism
+			traits = {  }
+			expire = "1965.1.1.1"
+		}
+	}
+	IZM_samet_puppet = {
+		name = "Samet Pasha"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CIB/Portrait_CIB_Samet.tga"
+			}
+			army = {
+				large = "gfx/leaders/CIB/Portrait_CIB_Samet.tga"
+			}
+		}
+		country_leader = {
+			ideology = turkish_marxism
+			traits = {  }
+			expire = "1965.1.1.1"
+		}
+	}
+}
