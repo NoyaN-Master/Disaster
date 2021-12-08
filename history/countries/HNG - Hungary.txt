@@ -27,8 +27,6 @@ add_ideas = 	authoritarian_state
 add_ideas = 	corporatism 
 add_ideas = 	industrialized_society
 add_ideas = HUN_great_war_legacy
-add_ideas = HUN_horthy_govment
-add_ideas = HUN_political_opposition1
 
 set_popularities = {
 	conservative = 0
@@ -64,7 +62,7 @@ create_country_leader = {
 	#desc = "HNG_Gombos_desc"
 	picture = "HNG_Gombos.png" #THANKS u/wendy1871 !!!
 	expire = "2020.1.1"
-	ideology = ultranationalist_subideology
+	ideology = szeged_idea
 	traits = {
 		#
 	}

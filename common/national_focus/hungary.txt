@@ -529,7 +529,7 @@
 	focus = {
 		id = HNG_democratic_elections
 		icon = GFX_goal_generic_national_unity
-		x = 30
+		x = 36
 		y = 0
 		cost = 1	
 		available = {
@@ -591,7 +591,7 @@
 		id = HNG_f48p_victory
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		relative_position_id = HNG_election_day
-		x = 0
+		x = -4
 		y = 1
 		prerequisite = { focus = HNG_election_day }
 		cost = 1	
@@ -613,7 +613,7 @@
 		id = HNG_free_up_the_market
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		relative_position_id = HNG_f48p_victory
-		x = 1
+		x = 2
 		y = 1
 		prerequisite = { focus = HNG_f48p_victory }
 		cost = 6	
@@ -633,7 +633,7 @@
 		id = HNG_strive_for_equality
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		relative_position_id = HNG_f48p_victory
-		x = -1
+		x = -2
 		y = 1
 		prerequisite = { focus = HNG_f48p_victory }
 		cost = 6	
@@ -645,10 +645,10 @@
 	focus = {
 		id = HNG_subsidies_for_small_bussines
 		icon = GFX_focus_generic_anti_fascist_diplomacy
-		relative_position_id = HNG_free_up_the_market
+		relative_position_id = HNG_f48p_victory
 		x = 0
 		y = 1
-		prerequisite = { focus = HNG_free_up_the_market }
+		prerequisite = { focus = HNG_f48p_victory }
 		cost = 6	
 		completion_reward = {
 			random_owned_state = {
@@ -679,10 +679,12 @@
 	focus = {
 		id = HNG_the_eastern_switzerland
 		icon = GFX_focus_generic_anti_fascist_diplomacy
-		relative_position_id = HNG_strive_for_equality
-		x = 0
+		relative_position_id = HNG_subsidies_for_small_bussines
+		x = -1
 		y = 1
+		prerequisite = { focus = HNG_subsidies_for_small_bussines }
 		prerequisite = { focus = HNG_strive_for_equality }
+		prerequisite = { focus = HNG_free_up_the_market }
 		cost = 6	
 		completion_reward = {
 			
@@ -693,9 +695,11 @@
 		id = HNG_land_reform
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		relative_position_id = HNG_subsidies_for_small_bussines
-		x = 0
+		x = 1
 		y = 1
 		prerequisite = { focus = HNG_subsidies_for_small_bussines }
+		prerequisite = { focus = HNG_strive_for_equality }
+		prerequisite = { focus = HNG_free_up_the_market }
 		cost = 6	
 		completion_reward = {
 			swap_ideas = {
@@ -724,9 +728,10 @@
 		id = HNG_liberal_democracy
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		relative_position_id = HNG_the_eastern_switzerland
-		x = 0
+		x = 1
 		y = 1
 		prerequisite = { focus = HNG_the_eastern_switzerland }
+		prerequisite = { focus = HNG_land_reform }
 		cost = 6
 		completion_reward = {
 			
@@ -737,7 +742,7 @@
 		id = HNG_knp_victory
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		relative_position_id = HNG_election_day
-		x = 6
+		x = 4
 		y = 1
 		prerequisite = { focus = HNG_election_day }
 		cost = 1	
@@ -759,7 +764,7 @@
 		id = HNG_christian_labor
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		relative_position_id = HNG_knp_victory
-		x = 1
+		x = 2
 		y = 1
 		prerequisite = { focus = HNG_knp_victory }
 		cost = 6	
@@ -779,7 +784,7 @@
 		id = HNG_national_culture
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		relative_position_id = HNG_knp_victory
-		x = -1
+		x = -2
 		y = 1
 		prerequisite = { focus = HNG_knp_victory }
 		cost = 6
@@ -792,10 +797,10 @@
 	focus = {
 		id = HNG_protect_the_workers
 		icon = GFX_focus_generic_anti_fascist_diplomacy
-		relative_position_id = HNG_christian_labor
+		relative_position_id = HNG_knp_victory
 		x = 0
 		y = 1
-		prerequisite = { focus = HNG_christian_labor }
+		prerequisite = { focus = HNG_knp_victory }
 		cost = 6	
 		completion_reward = {
 			random_owned_state = {
@@ -822,10 +827,12 @@
 	focus = {
 		id = HNG_hungarians_first
 		icon = GFX_focus_generic_anti_fascist_diplomacy
-		relative_position_id = HNG_national_culture
-		x = 0
+		relative_position_id = HNG_protect_the_workers
+		x = 1
 		y = 1
 		prerequisite = { focus = HNG_national_culture }
+		prerequisite = { focus = HNG_protect_the_workers }
+		prerequisite = { focus = HNG_christian_labor }
 		cost = 6	
 		completion_reward = {
 			add_ideas = HUN_hungarians_first
@@ -838,9 +845,11 @@
 		id = HNG_encourage_entrepreneureship
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		relative_position_id = HNG_protect_the_workers
-		x = 0
+		x = -1
 		y = 1
+		prerequisite = { focus = HNG_national_culture }
 		prerequisite = { focus = HNG_protect_the_workers }
+		prerequisite = { focus = HNG_christian_labor }
 		cost = 6	
 		completion_reward = {
 			swap_ideas = {
@@ -861,9 +870,10 @@
 		id = HNG_catholic_society
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		relative_position_id = HNG_hungarians_first
-		x = 0
+		x = -1
 		y = 1
 		prerequisite = { focus = HNG_hungarians_first }
+		prerequisite = { focus = HNG_encourage_entrepreneureship }
 		cost = 6	
 		completion_reward = {
 			swap_ideas = {
@@ -877,7 +887,7 @@
 		id = HNG_mszdp_victory
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		relative_position_id = HNG_election_day
-		x = -6
+		x = -12
 		y = 1
 		prerequisite = { focus = HNG_election_day }
 		cost = 1
@@ -899,7 +909,7 @@
 		id = HNG_workers_rights
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		relative_position_id = HNG_mszdp_victory
-		x = 1
+		x = 2
 		y = 1
 		prerequisite = { focus = HNG_mszdp_victory }
 		cost = 6	
@@ -912,7 +922,7 @@
 		id = HNG_freedom_of_expression
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		relative_position_id = HNG_mszdp_victory
-		x = -1
+		x = -2
 		y = 1
 		prerequisite = { focus = HNG_mszdp_victory }
 		cost = 6	
@@ -925,10 +935,10 @@
 	focus = {
 		id = HNG_economic_regulations
 		icon = GFX_focus_generic_anti_fascist_diplomacy
-		relative_position_id = HNG_workers_rights
+		relative_position_id = HNG_mszdp_victory
 		x = 0
 		y = 1
-		prerequisite = { focus = HNG_workers_rights }
+		prerequisite = { focus = HNG_mszdp_victory }
 		cost = 6	
 		completion_reward = {
 			
@@ -938,10 +948,12 @@
 	focus = {
 		id = HNG_egalitarian_society
 		icon = GFX_focus_generic_anti_fascist_diplomacy
-		relative_position_id = HNG_freedom_of_expression
-		x = 0
+		relative_position_id = HNG_economic_regulations
+		x = -1
 		y = 1
+		prerequisite = { focus = HNG_economic_regulations }
 		prerequisite = { focus = HNG_freedom_of_expression }
+		prerequisite = { focus = HNG_workers_rights }
 		cost = 6	
 		completion_reward = {
 			add_political_power = -70
@@ -954,9 +966,11 @@
 		id = HNG_welfare_state
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		relative_position_id = HNG_economic_regulations
-		x = 0
+		x = 1
 		y = 1
 		prerequisite = { focus = HNG_economic_regulations }
+		prerequisite = { focus = HNG_freedom_of_expression }
+		prerequisite = { focus = HNG_workers_rights }
 		cost = 6
 		completion_reward = {
 			
@@ -967,9 +981,10 @@
 		id = HNG_in_service_of_the_people
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		relative_position_id = HNG_egalitarian_society
-		x = 0
+		x = 1
 		y = 1
 		prerequisite = { focus = HNG_egalitarian_society }
+		prerequisite = { focus = HNG_welfare_state }
 		cost = 6	
 		completion_reward = {
 			add_political_power = 150
@@ -984,7 +999,7 @@
 		id = HNG_destroy_radicals
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		relative_position_id = HNG_election_day
-		x = -3
+		x = -8
 		y = 1
 		prerequisite = { focus = HNG_election_day }
 		available = { has_country_flag = HUN_elections_held }
@@ -1073,7 +1088,7 @@
 		id = HNG_patch_up_railways
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		relative_position_id = HNG_election_day
-		x = 3
+		x = 0
 		y = 1
 		prerequisite = { focus = HNG_election_day }
 		available = { has_country_flag = HUN_elections_held }
@@ -1120,6 +1135,185 @@
 	        }
 		}
 	}
+	}
+	
+	focus = {
+		id = HNG_constitutional_decrees
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_election_day
+		x = 8
+		y = 1
+		prerequisite = { focus = HNG_election_day }
+		available = { has_country_flag = HUN_elections_held }
+		cost = 5	
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = HNG_youth_organizations
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_constitutional_decrees
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_constitutional_decrees }
+		cost = 5	
+		completion_reward = {
+		
+		}
+	}
+		
+	focus = {
+		id = HNG_ep_victory
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_election_day
+		x = 12
+		y = 1
+		prerequisite = { focus = HNG_election_day }
+		cost = 1	
+		available = {
+		has_country_flag = HUN_aristocratic_victory
+		}
+		bypass = {
+		has_country_flag = HUN_aristocratic_victory
+		}
+		completion_reward = {
+			add_popularity = {
+					ideology = authoritarian_democrat
+					popularity = 0.01
+				}
+		}
+	}
+	
+	
+	focus = {
+		id = HNG_reach_out_to_labourers
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_ep_victory
+		x = 2
+		y = 1
+		prerequisite = { focus = HNG_ep_victory }
+		cost = 6	
+		completion_reward = {
+			add_ideas =  HUN_free_market
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+	        add_building_construction = {
+		    type = industrial_complex 
+		    level = 2
+	        }
+			}
+		}
+	}
+	
+	focus = {
+		id = HNG_support_the_gentry
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_ep_victory
+		x = -2
+		y = 1
+		prerequisite = { focus = HNG_ep_victory }
+		cost = 6	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_hungarian_patriotism
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_ep_victory
+		x = 0
+		y = 1
+		prerequisite = { focus = HNG_ep_victory }
+		cost = 6	
+		completion_reward = {
+			random_owned_state = {
+			add_building_construction = {
+					type = infrastructure 
+					level = 1
+				}
+			add_extra_state_shared_building_slots = 1
+	        add_building_construction = {
+		    type = industrial_complex 
+		    level = 1
+	        }
+			}
+			random_owned_state = {
+			add_building_construction = {
+					type = infrastructure 
+					level = 1
+				}
+			add_extra_state_shared_building_slots = 1
+	        add_building_construction = {
+		    type = arms_factory 
+		    level = 1
+	        }
+			}
+		}
+	}
+	
+	focus = {
+		id = HNG_societal_unity
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_hungarian_patriotism
+		x = -1
+		y = 1
+		prerequisite = { focus = HNG_hungarian_patriotism }
+		prerequisite = { focus = HNG_support_the_gentry }
+		prerequisite = { focus = HNG_reach_out_to_labourers }
+		cost = 6	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = HNG_agrarian_investment
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_hungarian_patriotism
+		x = 1
+		y = 1
+		prerequisite = { focus = HNG_hungarian_patriotism }
+		prerequisite = { focus = HNG_support_the_gentry }
+		prerequisite = { focus = HNG_reach_out_to_labourers }
+		cost = 6	
+		completion_reward = {
+			swap_ideas = {
+			remove_idea = HUN_free_market
+			add_idea = HUN_free_market2
+			}
+			43 = {
+			add_extra_state_shared_building_slots = 1
+			}
+			154 = {
+			add_extra_state_shared_building_slots = 1
+			}
+			814 = {
+			add_extra_state_shared_building_slots = 1
+			}
+			155 = {
+			add_extra_state_shared_building_slots = 1
+			}
+			807 = {
+			add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	
+	focus = {
+		id = HNG_the_aristocratic_republic
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = HNG_societal_unity
+		x = 1
+		y = 1
+		prerequisite = { focus = HNG_societal_unity }
+		prerequisite = { focus = HNG_agrarian_investment }
+		cost = 6
+		completion_reward = {
+			
+		}
 	}
 	
 	focus = {

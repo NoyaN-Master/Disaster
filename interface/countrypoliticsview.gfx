@@ -759,6 +759,12 @@ spriteType = {
 		name = "GFX_ideology_neokemalist"
 		texturefile = "gfx/interface/ideologies/neokemalist.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_ideology_szeged_idea"
+		texturefile = "gfx/interface/ideologies/szeged_idea.dds"
+	}
+	
 ##HOGS
 spriteType = {
 		name = "GFX_idea_mustafa_kemal_hog"
