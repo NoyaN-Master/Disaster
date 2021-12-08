@@ -1,29 +1,23 @@
 
 state={
 	id=565
-	name="STATE_565"
+	name="STATE_565" # Bodaybo
+	manpower = 195325
+	state_category = rural
 	resources={
-		steel=10.000
-		chromium=5.000
+		steel=10 # was: 32
+		chromium=5 # was: 12
 	}
 
 	history={
-		owner = RUS
-		victory_points = {
-			310 1 
-		}
+		owner = TSB
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 0
 		}
-		add_core_of = RUS
-
+		add_core_of = TSB
 	}
 
 	provinces={
-		222 310 319 341 6459 7482 9275 
+		1761 4716 4835 7736 7759 7854 10583 10654 12506 12575 
 	}
-	manpower=195325
-	buildings_max_level_factor=1.000
-	state_category=rural
 }

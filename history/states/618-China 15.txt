@@ -1,15 +1,17 @@
 
 state={
 	id=618
-	name="STATE_618"
+	name="STATE_618" # Dzungaria
+	manpower = 670800
+
+	state_category = pastoral
 
 	history={
 		owner = TUV
 		add_core_of = TUV
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 1
-
 		}
 
 	}
@@ -17,7 +19,4 @@ state={
 	provinces={
 		1708 1783 1844 4714 4788 4823 4849 7693 7737 7866 10674 10691 12590 12737 
 	}
-	manpower=670800
-	buildings_max_level_factor=1.000
-	state_category=pastoral
 }

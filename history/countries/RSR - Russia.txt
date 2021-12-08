@@ -1,0 +1,70 @@
+capital = 195
+oob = "RUS_Wrangel"
+
+
+1936.1.1 = {
+country_event = { id = worldwar.5 }
+}
+country_event = { id = worldwar.10  days = 240}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	tech_recon = 1
+	tech_support = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	early_bomber = 1
+	gwtank = 1
+	basic_light_tank = 1
+}
+
+set_convoys = 50
+
+set_politics = {
+	ruling_party = social_democrat
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+add_ideas = 	multi_party_democracy 
+add_ideas = 	laisez_faire 
+add_ideas = 	industrialized_society
+add_ideas = White_Russian_idea
+
+add_ideas = RussianWars_idea
+
+create_faction = Anti_Communist_Russia
+add_to_faction = KRN
+add_to_faction = DCS
+add_to_faction = TRM
+add_to_faction = DTR
+add_to_faction = DNK
+
+set_popularities = {
+	conservative = 10
+	liberal = 30
+	social_democrat = 35
+	libertarian_socialist = 15
+	authoritarian_socialist = 3
+	unisocialist = 0
+	authoritarian_democrat = 5
+	autocratic = 0
+	ultranationalist = 2
+	revolutionary_nationalist = 0
+	esoteric_traditionalist = 0
+	revolutionary_anarchist = 0
+}
+
+create_country_leader = {
+	name = "Aleksandr Kerensky"
+	desc = "RSR_Kerensky_desc"
+	picture = "RSR_Kerensky.tga"
+	expire = "2020.1.1"
+	ideology = social_democrat_subideology
+	traits = {
+		#
+	}
+}

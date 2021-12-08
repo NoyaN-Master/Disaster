@@ -118,7 +118,7 @@ NGU_bandit_army = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
 			picture = NGU_paramilitary_problem
 			modifier = {
-			war_support = -0.20
+			war_support_factor = -0.20
             army_speed_factor = -0.10
             army_morale_factor = -0.2
             experience_gain_army = -0.25
@@ -128,7 +128,7 @@ NGU_bandit_army_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
 			picture = NGU_paramilitary_problem
 			modifier = {
-			war_support = -0.10
+			war_support_factor = -0.10
             army_speed_factor = -0.05
             army_morale_factor = -0.09
             experience_gain_army = -0.10
@@ -147,7 +147,7 @@ NGU_NatSoc = {
 			picture = NGU_NATSOC
 			modifier = {
             stability_factor = 0.05
-            war_support = 0.10
+            war_support_factor = 0.10
 			}
 		}
 NGU_NatSoc_Hitler = {
@@ -155,7 +155,7 @@ NGU_NatSoc_Hitler = {
 			picture = NGU_NATSOC2
 			modifier = {
             stability_factor = 0.10
-            war_support = 0.15
+            war_support_factor = 0.15
 			}
 		}		
 NGU_Strasserism = {
@@ -189,7 +189,7 @@ NGU_Revolution = {
             stability_factor = 0.10
             production_factory_start_efficiency_factor = 0.1
 			conscription = 0.02
-			war_support = 0.15
+			war_support_factor = 0.15
 			}
 		}						
 NGU_Academia = {
@@ -234,7 +234,7 @@ NGU_Propaganda_Ministry = {
 			picture = NGU_propaganda
 			modifier = {
             stability_factor = 0.05
-            war_support = 0.05
+            war_support_factor = 0.05
 			offensive_war_stability_factor = 0.3
 			party_popularity_stability_factor = 0.1
 			}
@@ -244,7 +244,7 @@ NGU_Fyurer = {
 			picture = sons_of_germania_idea
 			modifier = {
             stability_factor = 0.10
-            war_support = 0.05
+            war_support_factor = 0.05
 			offensive_war_stability_factor = 0.15
 			party_popularity_stability_factor = 0.2
 			army_attack_factor = 0.03

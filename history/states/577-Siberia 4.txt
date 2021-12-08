@@ -1,22 +1,20 @@
 
 state={
-	id=577
+	id=577 # Surgut
+	manpower = 13185
 	name="STATE_577"
+	
+	state_category = wasteland
 
 	history={
-		owner = RUS
+		owner = WSL
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 0
 		}
-		add_core_of = RUS
-
+		add_core_of = WSL
 	}
 
 	provinces={
-		1679 1726 1784 1828 1856 4730 7750 7781 7837 7882 10533 10561 10663 12514 12672 
+		1726 1784 1856 4730 7781 7837 7882 10533 10561 10663 12514 12672 
 	}
-	manpower=13185
-	buildings_max_level_factor=1.000
-	state_category=wasteland
 }

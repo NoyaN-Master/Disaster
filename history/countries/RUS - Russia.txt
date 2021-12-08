@@ -19,49 +19,6 @@ if = {
 		mtg_transport = 1
 	}
 }
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = UKR
-		autonomous_state = autonomy_colony
-		freedom_level = 0.43
-	}
-	set_autonomy = {
-		target = LAT
-		autonomous_state = autonomy_colony
-		freedom_level = 0.35
-	}
-	set_autonomy = {
-		target = BLT
-		autonomous_state = autonomy_colony
-		freedom_level = 0.4
-	}
-	set_autonomy = {
-		target = QAZ
-		autonomous_state = autonomy_integrated_puppet
-		freedom_level = 0.8
-	}
-	set_autonomy = {
-		target = BYR
-		autonomous_state = autonomy_integrated_puppet
-		freedom_level = 0.1
-	}
-	set_autonomy = {
-		target = TRK
-		autonomous_state = autonomy_colony
-		freedom_level = 0.6
-	}
-	else = {
-		puppet = UKR
-		puppet = LAT
-		puppet = BLT
-		puppet = QAZ
-		puppet = BYR
-		puppet = TRK
-	}
-}
 
 
 
@@ -105,10 +62,131 @@ post_industrialized_society
 
 
 create_country_leader = {
-	name = "Pavel Bermondt-Avalov"
-	#picture = "WRG_Pyotr_Wrangel.tga"
+	name = "Pyotr Wrangel"
+	#desc = "Franz_Xavier_Ritter_von_Epp_desc"
+	picture = "WRG_Pyotr_Wrangel.tga"
 	expire = "1965.1.1"
 	ideology = ultranationalist_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "No Leader"
+	#desc = "Franz_Xavier_Ritter_von_Epp_desc"
+	#picture = "Portrait_RUS_Boris_Savinkov4.tga"
+	expire = "1965.1.1"
+	ideology = revolutionary_anarchist_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Boris Savinkov"
+	#desc = "Franz_Xavier_Ritter_von_Epp_desc"
+	picture = "Portrait_RUS_Boris_Savinkov_Nat.tga"
+	expire = "1965.1.1"
+	ideology = revolutionary_nationalist_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Alexander Kerensky"
+	#desc = "Ernst_Rohm_desc"
+	picture = "RSR_Kerensky.tga"
+	expire = "1965.1.1"
+	ideology = liberal_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Vladimir Romanov"
+	#desc = "Heinrich_Held_desc"
+	picture = "Portrait_RUS_Vladimir_Romanov.tga"
+	expire = "1965.1.1"
+	ideology = conservative_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Vladimir Romanov"
+	#desc = "Heinrich_Held_desc"
+	picture = "Portrait_RUS_Vladimir_Romanov.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Vladimir Romanov"
+	#desc = "Heinrich_Held_desc"
+	picture = "Portrait_RUS_Vladimir_Romanov.tga"
+	expire = "1965.1.1"
+	ideology = autocratic_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Alexander Kerensky"
+	#desc = "Heinrich_Held_desc"
+	picture = "RSR_Kerensky.tga"
+	expire = "1965.1.1"
+	ideology = social_democrat_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Alexander Kerensky"
+	#desc = "Heinrich_Held_desc"
+	picture = "RSR_Kerensky.tga"
+	expire = "1965.1.1"
+	ideology = social_democrat_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Disorganized Bandits"
+	#desc = "Heinrich_Held_desc"
+	#picture = "Portrait_RUS_Vladimir_Romanov.tga"
+	expire = "1965.1.1"
+	ideology = libertarian_socialist_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Red Army Bandits"
+	desc = "Ernst_Thalman_desc"
+	#picture = "Portrait_Ernst_Thalman.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_socialist_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Boris Savinkov"
+	desc = "Ernst_Thalman_desc"
+	picture = "Portrait_RUS_Boris_Savinkov_Soc.tga"
+	expire = "1965.1.1"
+	ideology = unisocialist_subideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Roman Ungern von Sternberg"
+	desc = "Himmler_desc"
+	picture = "Portrait_MON_Sternberg_Khan.tga"
+	expire = "1965.1.1"
+	ideology = esoteric_traditionalist_subideology
 	traits = {
 	}
 }

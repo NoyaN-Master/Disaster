@@ -192,7 +192,6 @@ ANT_Warlords_Emerging = {
 			picture = ANT_Warlords_Emerging
 			modifier = {
 			political_power_gain = -0.5	
-			political_advisor_cost_factor = 0.75	
 			training_time_army_factor = 1.0
 			local_resources_factor = -0.10
 			revolutionary_nationalist_drift = 0.01

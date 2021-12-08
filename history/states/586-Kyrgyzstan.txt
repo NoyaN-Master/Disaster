@@ -1,4 +1,3 @@
-
 state={
 	id=586
 	name="STATE_586"
@@ -10,15 +9,17 @@ state={
 	}
 
 	history={
-		owner = TRK
-		add_core_of = TRK
-		add_claim_by = BAS
-		add_claim_by = TSV
+		owner = GOK
+		add_core_of = GOK
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 3
 
 		}
+		victory_points = {
+			1591 3 
+		}
+		add_core_of = GOK
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 4
@@ -30,7 +31,7 @@ state={
 	}
 
 	provinces={
-		1675 1825 4316 4391 4768 5062 12370 12511 12583 13147 
+		1591 1840 4773 4845 7706 10146 10547 10603 12640 12658 
 	}
 	manpower=2563404
 	buildings_max_level_factor=1.000

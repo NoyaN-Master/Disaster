@@ -1,0 +1,98 @@
+capital = 260
+oob = ""
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	tech_recon = 1
+	tech_support = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	early_bomber = 1
+	gwtank = 1
+	basic_light_tank = 1
+}
+
+set_convoys = 50
+
+set_politics = {
+	ruling_party = authoritarian_democrat
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+add_ideas = 	authoritarian_state 
+add_ideas = 	interventionism 
+add_ideas = 	industrialized_society
+
+set_popularities = {
+	conservative = 22
+	liberal = 22
+	social_democrat = 22
+	libertarian_socialist = 22
+	authoritarian_socialist = 0
+	unisocialist = 0
+	authoritarian_democrat = 12
+	autocratic = 0
+	ultranationalist = 0
+	revolutionary_nationalist = 0
+	esoteric_traditionalist = 0
+	revolutionary_anarchist = 0
+}
+
+create_country_leader = {
+	name = "All-Russian Emergency Duma"
+	desc = "RPG_Duma_desc"
+	picture = "RPG_Duma.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_democrat_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Aleksandr Guchkov"
+	desc = "RPG_Aleksandr_Guchkov_desc"
+	picture = "RPG_Aleksandr_Guchkov.tga"
+	expire = "2020.1.1"
+	ideology = conservative_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Pavel Milyukov"
+	desc = "RPG_Pavel_Milyukov_desc"
+	picture = "RPG_Pavel_Milyukov.tga"
+	expire = "2020.1.1"
+	ideology = liberal_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Irakli Tsereteli"
+	desc = "RPG_Irakli_Tsereteli_desc"
+	picture = "RPG_Irakli_Tsereteli.tga"
+	expire = "2020.1.1"
+	ideology = social_democrat_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Aleksandra Kollontai"
+	desc = "RPG_Aleksandra_Kollontai_desc"
+	picture = "RPG_Aleksandra_Kollontai.tga"
+	expire = "2020.1.1"
+	ideology = libertarian_socialist_subideology
+	traits = {
+		#
+	}
+}

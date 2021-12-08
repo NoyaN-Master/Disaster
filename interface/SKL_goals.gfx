@@ -1,0 +1,2268 @@
+spriteTypes = {	
+	SpriteType = {		
+		name = "SKL_crush_persia"	
+		texturefile = "gfx/interface/goals/SKL/SKL_crush_persia.png"	
+	}		
+			
+	SpriteType = {		
+		name = "SKL_crush_persia"	
+		texturefile = "gfx/interface/goals/SKL/SKL_crush_persia.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_crush_persia.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_crush_persia.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}
+	SpriteType = {		
+		name = "SKL_diplo_start"	
+		texturefile = "gfx/interface/goals/SKL/SKL_diplo_start.png"	
+	}		
+			
+	SpriteType = {		
+		name = "SKL_diplo_start"	
+		texturefile = "gfx/interface/goals/SKL/SKL_diplo_start.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_diplo_start.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_diplo_start.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}
+	SpriteType = {		
+		name = "SKL_end_afghans"	
+		texturefile = "gfx/interface/goals/SKL/SKL_end_afghans.png"	
+	}		
+			
+	SpriteType = {		
+		name = "SKL_end_afghans"	
+		texturefile = "gfx/interface/goals/SKL/SKL_end_afghans.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_end_afghans.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_end_afghans.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}
+	SpriteType = {		
+		name = "SKL_explode_churches"	
+		texturefile = "gfx/interface/goals/SKL/SKL_explode_churches.png"	
+	}		
+			
+	SpriteType = {		
+		name = "SKL_explode_churches"	
+		texturefile = "gfx/interface/goals/SKL/SKL_explode_churches.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_explode_churches.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_explode_churches.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}
+	SpriteType = {		
+		name = "SKL_get_egypt"	
+		texturefile = "gfx/interface/goals/SKL/SKL_get_egypt.png"	
+	}		
+			
+	SpriteType = {		
+		name = "SKL_get_egypt"	
+		texturefile = "gfx/interface/goals/SKL/SKL_get_egypt.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_get_egypt.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_get_egypt.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}
+	SpriteType = {		
+		name = "SKL_into_bulgaria"	
+		texturefile = "gfx/interface/goals/SKL/SKL_into_bulgaria.png"	
+	}		
+			
+	SpriteType = {		
+		name = "SKL_into_bulgaria"	
+		texturefile = "gfx/interface/goals/SKL/SKL_into_bulgaria.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_into_bulgaria.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_into_bulgaria.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}
+	SpriteType = {		
+		name = "SKL_kill_arab"	
+		texturefile = "gfx/interface/goals/SKL/SKL_kill_arab.png"	
+	}		
+			
+	SpriteType = {		
+		name = "SKL_kill_arab"	
+		texturefile = "gfx/interface/goals/SKL/SKL_kill_arab.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_kill_arab.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_kill_arab.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}
+	SpriteType = {		
+		name = "SKL_march_to_turkestan"	
+		texturefile = "gfx/interface/goals/SKL/SKL_march_to_turkestan.png"	
+	}		
+			
+	SpriteType = {		
+		name = "SKL_march_to_turkestan"	
+		texturefile = "gfx/interface/goals/SKL/SKL_march_to_turkestan.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_march_to_turkestan.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_march_to_turkestan.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}
+	SpriteType = {		
+		name = "SKL_PAX_MACEDONICUM"	
+		texturefile = "gfx/interface/goals/SKL/SKL_PAX_MACEDONICUM.png"	
+	}		
+			
+	SpriteType = {		
+		name = "SKL_PAX_MACEDONICUM"	
+		texturefile = "gfx/interface/goals/SKL/SKL_PAX_MACEDONICUM.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_PAX_MACEDONICUM.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_PAX_MACEDONICUM.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}
+	SpriteType = {		
+		name = "SKL_phase_two"	
+		texturefile = "gfx/interface/goals/SKL/SKL_phase_two.png"	
+	}		
+			
+	SpriteType = {		
+		name = "SKL_phase_two"	
+		texturefile = "gfx/interface/goals/SKL/SKL_phase_two.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_phase_two.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_phase_two.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}
+	SpriteType = {		
+		name = "SKL_return_home"	
+		texturefile = "gfx/interface/goals/SKL/SKL_return_home.png"	
+	}		
+			
+	SpriteType = {		
+		name = "SKL_return_home"	
+		texturefile = "gfx/interface/goals/SKL/SKL_return_home.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_return_home.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_return_home.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}
+	SpriteType = {		
+		name = "SKL_anti_islam"	
+		texturefile = "gfx/interface/goals/SKL/SKL_anti_islam.png"	
+	}		
+			
+	SpriteType = {		
+		name = "SKL_anti_islam"	
+		texturefile = "gfx/interface/goals/SKL/SKL_anti_islam.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_anti_islam.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_anti_islam.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}
+	SpriteType = {		
+		name = "GFX_goal_SKL_UNIFIED"	
+		texturefile = "gfx/interface/goals/SKL/SKL_UNIFIED.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_UNIFIED"	
+		texturefile = "gfx/interface/goals/SKL/SKL_UNIFIED.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_UNIFIED.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_UNIFIED.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}	
+	SpriteType = {		
+		name = "GFX_goal_SKL_RACIAL_PLANS"	
+		texturefile = "gfx/interface/goals/SKL/SKL_RACIAL_PLANS.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_RACIAL_PLANS"	
+		texturefile = "gfx/interface/goals/SKL/SKL_RACIAL_PLANS.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_RACIAL_PLANS.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_RACIAL_PLANS.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_BOMB_VILLAGES"	
+		texturefile = "gfx/interface/goals/SKL/SKL_BOMB_VILLAGES.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_BOMB_VILLAGES"	
+		texturefile = "gfx/interface/goals/SKL/SKL_BOMB_VILLAGES.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_BOMB_VILLAGES.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_BOMB_VILLAGES.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_KEMALISTS"	
+		texturefile = "gfx/interface/goals/SKL/SKL_KEMALISTS.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_KEMALISTS"	
+		texturefile = "gfx/interface/goals/SKL/SKL_KEMALISTS.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_KEMALISTS.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_KEMALISTS.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_OCCUPATIONPLANS"	
+		texturefile = "gfx/interface/goals/SKL/SKL_OCCUPATIONPLANS.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_OCCUPATIONPLANS"	
+		texturefile = "gfx/interface/goals/SKL/SKL_OCCUPATIONPLANS.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_OCCUPATIONPLANS.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_OCCUPATIONPLANS.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_HELLAS"	
+		texturefile = "gfx/interface/goals/SKL/SKL_HELLAS.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_HELLAS"	
+		texturefile = "gfx/interface/goals/SKL/SKL_HELLAS.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_HELLAS.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_HELLAS.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_ROMAN_LEGACY"	
+		texturefile = "gfx/interface/goals/SKL/SKL_ROMAN_LEGACY.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_ROMAN_LEGACY"	
+		texturefile = "gfx/interface/goals/SKL/SKL_ROMAN_LEGACY.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_ROMAN_LEGACY.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_ROMAN_LEGACY.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_HELLENISM"	
+		texturefile = "gfx/interface/goals/SKL/SKL_HELLENISM.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_HELLENISM"	
+		texturefile = "gfx/interface/goals/SKL/SKL_HELLENISM.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_HELLENISM.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_HELLENISM.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_SONS_OF_ZEUS"	
+		texturefile = "gfx/interface/goals/SKL/SKL_SONS_OF_ZEUS.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_SONS_OF_ZEUS"	
+		texturefile = "gfx/interface/goals/SKL/SKL_SONS_OF_ZEUS.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_SONS_OF_ZEUS.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_SONS_OF_ZEUS.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_SONS_OF_ZEUS"	
+		texturefile = "gfx/interface/goals/SKL/SKL_SONS_OF_ZEUS.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_SONS_OF_ZEUS"	
+		texturefile = "gfx/interface/goals/SKL/SKL_SONS_OF_ZEUS.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_SONS_OF_ZEUS.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_SONS_OF_ZEUS.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_"	
+		texturefile = "gfx/interface/goals/SKL/SKL_GALATIA.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_GALATIA"	
+		texturefile = "gfx/interface/goals/SKL/SKL_GALATIA.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_GALATIA.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_GALATIA.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_WARBAND"	
+		texturefile = "gfx/interface/goals/SKL/SKL_WARBAND.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_WARBAND"	
+		texturefile = "gfx/interface/goals/SKL/SKL_WARBAND.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_WARBAND.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_WARBAND.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_CELTIC_CULTURE"	
+		texturefile = "gfx/interface/goals/SKL/SKL_CELTIC_CULTURE.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_CELTIC_CULTURE"	
+		texturefile = "gfx/interface/goals/SKL/SKL_CELTIC_CULTURE.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_CELTIC_CULTURE.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_CELTIC_CULTURE.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_SONS_OF_DAGDA"	
+		texturefile = "gfx/interface/goals/SKL/SKL_SONS_OF_DAGDA.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_SONS_OF_DAGDA"	
+		texturefile = "gfx/interface/goals/SKL/SKL_SONS_OF_DAGDA.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_SONS_OF_DAGDA.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_SONS_OF_DAGDA.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_TURKOMAN"	
+		texturefile = "gfx/interface/goals/SKL/SKL_TURKOMAN.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_TURKOMAN"	
+		texturefile = "gfx/interface/goals/SKL/SKL_TURKOMAN.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_TURKOMAN.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_TURKOMAN.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_TRIBAL_LIFE"	
+		texturefile = "gfx/interface/goals/SKL/SKL_TRIBAL_LIFE.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_TRIBAL_LIFE"	
+		texturefile = "gfx/interface/goals/SKL/SKL_TRIBAL_LIFE.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_TRIBAL_LIFE.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_TRIBAL_LIFE.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_SEPRATISTS"	
+		texturefile = "gfx/interface/goals/SKL/SKL_SEPRATISTS.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_SEPRATISTS"	
+		texturefile = "gfx/interface/goals/SKL/SKL_SEPRATISTS.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_SEPRATISTS.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_SEPRATISTS.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_SONS_OF_TENGRI"	
+		texturefile = "gfx/interface/goals/SKL/SKL_SONS_OF_TENGRI.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_SONS_OF_TENGRI"	
+		texturefile = "gfx/interface/goals/SKL/SKL_SONS_OF_TENGRI.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_SONS_OF_TENGRI.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_SONS_OF_TENGRI.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_URARTU"	
+		texturefile = "gfx/interface/goals/SKL/SKL_URARTU.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_URARTU"	
+		texturefile = "gfx/interface/goals/SKL/SKL_URARTU.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_URARTU.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_URARTU.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_OLD_GODS"	
+		texturefile = "gfx/interface/goals/SKL/SKL_OLD_GODS.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_OLD_GODS"	
+		texturefile = "gfx/interface/goals/SKL/SKL_OLD_GODS.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_OLD_GODS.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_OLD_GODS.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_ENCOURAGE_ARMENIANS"	
+		texturefile = "gfx/interface/goals/SKL/SKL_ENCOURAGE_ARMENIANS.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_ENCOURAGE_ARMENIANS"	
+		texturefile = "gfx/interface/goals/SKL/SKL_ENCOURAGE_ARMENIANS.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_ENCOURAGE_ARMENIANS.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_ENCOURAGE_ARMENIANS.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_SONS_OF_AREV"	
+		texturefile = "gfx/interface/goals/SKL/SKL_SONS_OF_AREV.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_SONS_OF_AREV"	
+		texturefile = "gfx/interface/goals/SKL/SKL_SONS_OF_AREV.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_SONS_OF_AREV.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_SONS_OF_AREV.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_ALEXANDERISM"	
+		texturefile = "gfx/interface/goals/SKL/SKL_ALEXANDERISM.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_ALEXANDERISM"	
+		texturefile = "gfx/interface/goals/SKL/SKL_ALEXANDERISM.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_ALEXANDERISM.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_ALEXANDERISM.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_STATE_HELLENISM"	
+		texturefile = "gfx/interface/goals/SKL/SKL_STATE_HELLENISM.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_STATE_HELLENISM"	
+		texturefile = "gfx/interface/goals/SKL/SKL_STATE_HELLENISM.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_STATE_HELLENISM.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_STATE_HELLENISM.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_TRUE_HISTORY"	
+		texturefile = "gfx/interface/goals/SKL/SKL_TRUE_HISTORY.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_TRUE_HISTORY"	
+		texturefile = "gfx/interface/goals/SKL/SKL_TRUE_HISTORY.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_TRUE_HISTORY.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_TRUE_HISTORY.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_HADRIAN"	
+		texturefile = "gfx/interface/goals/SKL/SKL_HADRIAN.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_HADRIAN"	
+		texturefile = "gfx/interface/goals/SKL/SKL_HADRIAN.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_HADRIAN.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_HADRIAN.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}
+
+	SpriteType = {		
+		name = "GFX_goal_SKL_OCCULTISM"	
+		texturefile = "gfx/interface/goals/SKL/SKL_OCCULTISM.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_OCCULTISM"	
+		texturefile = "gfx/interface/goals/SKL/SKL_OCCULTISM.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_OCCULTISM.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_OCCULTISM.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_WRATH_GODS"	
+		texturefile = "gfx/interface/goals/SKL/SKL_WRATH_GODS.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_WRATH_GODS"	
+		texturefile = "gfx/interface/goals/SKL/SKL_WRATH_GODS.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_WRATH_GODS.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_WRATH_GODS.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_DOMESTIC_SITUATION"	
+		texturefile = "gfx/interface/goals/SKL/SKL_DOMESTIC_SITUATION.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_DOMESTIC_SITUATION"	
+		texturefile = "gfx/interface/goals/SKL/SKL_DOMESTIC_SITUATION.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_DOMESTIC_SITUATION.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_DOMESTIC_SITUATION.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_KILL_LEFT"	
+		texturefile = "gfx/interface/goals/SKL/SKL_KILL_LEFT.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_KILL_LEFT"	
+		texturefile = "gfx/interface/goals/SKL/SKL_KILL_LEFT.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_KILL_LEFT.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_KILL_LEFT.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_BRUTALITY"	
+		texturefile = "gfx/interface/goals/SKL/SKL_BRUTALITY.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_BRUTALITY"	
+		texturefile = "gfx/interface/goals/SKL/SKL_BRUTALITY.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_BRUTALITY.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_BRUTALITY.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_TOTAL_CONTROL"	
+		texturefile = "gfx/interface/goals/SKL/SKL_TOTAL_CONTROL.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_TOTAL_CONTROL"	
+		texturefile = "gfx/interface/goals/SKL/SKL_TOTAL_CONTROL.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_TOTAL_CONTROL.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_TOTAL_CONTROL.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_POPULATION_CONTROL"	
+		texturefile = "gfx/interface/goals/SKL/SKL_POPULATION_CONTROL.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_POPULATION_CONTROL"	
+		texturefile = "gfx/interface/goals/SKL/SKL_POPULATION_CONTROL.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_POPULATION_CONTROL.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_POPULATION_CONTROL.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_EXPAND_FORIEGN"	
+		texturefile = "gfx/interface/goals/SKL/SKL_EXPAND_FORIEGN.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_EXPAND_FORIEGN"	
+		texturefile = "gfx/interface/goals/SKL/SKL_EXPAND_FORIEGN.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_EXPAND_FORIEGN.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_EXPAND_FORIEGN.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_TWO_TYPES"	
+		texturefile = "gfx/interface/goals/SKL/SKL_TWO_TYPES.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_TWO_TYPES"	
+		texturefile = "gfx/interface/goals/SKL/SKL_TWO_TYPES.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_TWO_TYPES.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_TWO_TYPES.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_MASS_QUOTAS"	
+		texturefile = "gfx/interface/goals/SKL/SKL_MASS_QUOTAS.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_MASS_QUOTAS"	
+		texturefile = "gfx/interface/goals/SKL/SKL_MASS_QUOTAS.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_MASS_QUOTAS.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_MASS_QUOTAS.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_RULE_FEAR"	
+		texturefile = "gfx/interface/goals/SKL/SKL_RULE_FEAR.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_RULE_FEAR"	
+		texturefile = "gfx/interface/goals/SKL/SKL_RULE_FEAR.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_RULE_FEAR.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_RULE_FEAR.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_REFORM_WAR"	
+		texturefile = "gfx/interface/goals/SKL/SKL_REFORM_WAR.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_REFORM_WAR"	
+		texturefile = "gfx/interface/goals/SKL/SKL_REFORM_WAR.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_REFORM_WAR.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_REFORM_WAR.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_MONSTER_TANK"	
+		texturefile = "gfx/interface/goals/SKL/SKL_MONSTER_TANK.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_MONSTER_TANK"	
+		texturefile = "gfx/interface/goals/SKL/SKL_MONSTER_TANK.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_MONSTER_TANK.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_MONSTER_TANK.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_GAS_WAR"	
+		texturefile = "gfx/interface/goals/SKL/SKL_GAS_WAR.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_GAS_WAR"	
+		texturefile = "gfx/interface/goals/SKL/SKL_GAS_WAR.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_GAS_WAR.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_GAS_WAR.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_EXPAND_BLACK"	
+		texturefile = "gfx/interface/goals/SKL/SKL_EXPAND_BLACK.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_EXPAND_BLACK"	
+		texturefile = "gfx/interface/goals/SKL/SKL_EXPAND_BLACK.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_EXPAND_BLACK.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_EXPAND_BLACK.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_MOBILITY_DOCTRINE"	
+		texturefile = "gfx/interface/goals/SKL/SKL_MOBILITY_DOCTRINE.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_MOBILITY_DOCTRINE"	
+		texturefile = "gfx/interface/goals/SKL/SKL_MOBILITY_DOCTRINE.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_MOBILITY_DOCTRINE.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_MOBILITY_DOCTRINE.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_SPARTAN_SPIRIT"	
+		texturefile = "gfx/interface/goals/SKL/SKL_SPARTAN_SPIRIT.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_SPARTAN_SPIRIT"	
+		texturefile = "gfx/interface/goals/SKL/SKL_SPARTAN_SPIRIT.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_SPARTAN_SPIRIT.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_SPARTAN_SPIRIT.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_METH"	
+		texturefile = "gfx/interface/goals/SKL/SKL_METH.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_METH"	
+		texturefile = "gfx/interface/goals/SKL/SKL_METH.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_METH.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_METH.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}			
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_BREAKTHROUGH_CULT"	
+		texturefile = "gfx/interface/goals/SKL/SKL_BREAKTHROUGH_CULT.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_BREAKTHROUGH_CULT"	
+		texturefile = "gfx/interface/goals/SKL/SKL_BREAKTHROUGH_CULT.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_BREAKTHROUGH_CULT.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_BREAKTHROUGH_CULT.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}
+
+	SpriteType = {		
+		name = "GFX_goal_SKL_VICTORY"	
+		texturefile = "gfx/interface/goals/SKL/SKL_VICTORY.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_VICTORY"	
+		texturefile = "gfx/interface/goals/SKL/SKL_VICTORY.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_VICTORY.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_VICTORY.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}
+
+	SpriteType = {		
+		name = "GFX_goal_SKL_ALEXANDER_SON"	
+		texturefile = "gfx/interface/goals/SKL/SKL_ALEXANDER_SON.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_ALEXANDER_SON"	
+		texturefile = "gfx/interface/goals/SKL/SKL_ALEXANDER_SON.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_ALEXANDER_SON.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_ALEXANDER_SON.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}
+
+	SpriteType = {		
+		name = "GFX_goal_SKL_HEIR_MACEDON"	
+		texturefile = "gfx/interface/goals/SKL/SKL_HEIR_MACEDON.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_SKL_HEIR_MACEDON"	
+		texturefile = "gfx/interface/goals/SKL/SKL_HEIR_MACEDON.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_HEIR_MACEDON.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/SKL/SKL_HEIR_MACEDON.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+	}
+}

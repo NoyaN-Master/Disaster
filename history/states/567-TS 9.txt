@@ -1,25 +1,23 @@
 
 state={
 	id=567
-	name="STATE_567"
+	name="STATE_567" # Bratsk
+	manpower = 410183
+	state_category = rural
+	
 	resources={
-		aluminium=26.000
+		aluminium=26 # was: 34
 	}
 
 	history={
-		owner = RUS
+		owner = TSB
 		buildings = {
-			infrastructure = 3
-
+			infrastructure = 1
 		}
-		add_core_of = RUS
-
+		add_core_of = TSB
 	}
 
 	provinces={
-		1803 1813 1876 7713 7802 7841 7876 10570 12523 
+		1735 1803 1813 1876 4750 4808 7713 7769 7802 7841 7876 7902 10549 10562 10570 10664 10699 12523 
 	}
-	manpower=410183
-	buildings_max_level_factor=1.000
-	state_category=rural
 }

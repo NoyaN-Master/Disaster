@@ -28,7 +28,7 @@ CLP_no_authority = {
 			political_power_cost = 0.5
 			production_factory_max_efficiency_factor = -0.5
 			stability_factor = -0.20
-			weekly_stability = -0.005
+			stability_weekly = -0.005
 			war_support_factor = -0.4 
 			}
 		}
@@ -42,7 +42,7 @@ CLP_ulema_authority = {
 			}
 			modifier = {
 			stability_factor = 0.10
-			weekly_stability = -0.005
+			stability_weekly = -0.005
 			war_support_factor = -0.1
 			political_power_gain = 0.005
 			research_speed_factor = -0.10
@@ -60,7 +60,7 @@ CLP_fundementalism_high = {
 			political_power_gain = 0.05
 			production_factory_max_efficiency_factor = 0.2
 			stability_factor = 0.2
-			weekly_war_support = -0.05
+			war_support_weekly_factor = -0.05
 			research_speed_factor = 0.10
 			}
 		}										

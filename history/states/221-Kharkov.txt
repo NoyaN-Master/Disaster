@@ -2,26 +2,28 @@
 state={
 	id=221
 	name="STATE_221"
+	manpower = 2227520
+	
+	state_category = city
+	
 	resources={
-		steel=33.000
+		steel=33 # was: 56
 	}
 
 	history={
 		owner = UKR
+		victory_points = {
+			418 10
+		}
 		buildings = {
-			infrastructure = 7
+			infrastructure = 3
 			arms_factory = 1
 			air_base = 5
-
 		}
 		add_core_of = UKR
-
 	}
 
 	provinces={
-		473 3469 3540 3567 6432 9424 9489 11412 11439 11475 
+		418 486 3409 3508 3531 6530 6554 9531 9556 11397 11452 11461 11541 
 	}
-	manpower=2227520
-	buildings_max_level_factor=1.000
-	state_category=city
 }

@@ -1,0 +1,55 @@
+capital = 571
+oob = "RUS_Kolchack"
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	tech_recon = 1
+	tech_support = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	early_bomber = 1
+	gwtank = 1
+	basic_light_tank = 1
+}
+
+set_convoys = 50
+
+set_politics = {
+	ruling_party = ultranationalist
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+add_ideas = 	warlord 
+add_ideas = 	corporatism 
+add_ideas = 	semi_industrial_society
+add_ideas = RussianWars_idea
+set_popularities = {
+	conservative = 5
+	liberal = 0
+	social_democrat = 0
+	libertarian_socialist = 0
+	authoritarian_socialist = 0
+	unisocialist = 0
+	authoritarian_democrat = 0
+	autocratic = 15
+	ultranationalist = 75
+	revolutionary_nationalist = 5
+	esoteric_traditionalist = 0
+	revolutionary_anarchist = 0
+}
+
+create_country_leader = {
+	name = "Aleksandr Kolchak"
+	#desc = "TRM_Kolchak_desc"
+	picture = "TRM_Kolchak.tga"
+	expire = "2020.1.1"
+	ideology = ultranationalist_subideology
+	traits = {
+		#
+	}
+}

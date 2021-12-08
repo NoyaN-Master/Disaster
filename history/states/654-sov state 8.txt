@@ -1,22 +1,20 @@
 
 state={
 	id=654
-	name="STATE_654"
+	name="STATE_654" # Gorno-Altaysk
+	manpower = 153510
+	
+	state_category = wasteland
 
 	history={
-		owner = RUS
+		owner = TRM
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 0
 		}
-		add_core_of = RUS
-
+		add_core_of = TRM
 	}
 
 	provinces={
-		4781 4800 10531 10713 12427 12509 
+		4781 4800 10531 10713 12509 
 	}
-	manpower=153510
-	buildings_max_level_factor=1.000
-	state_category=wasteland
 }

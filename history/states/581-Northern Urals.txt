@@ -2,25 +2,25 @@
 state={
 	id=581
 	name="STATE_581"
+	manpower = 48831
+	
+	state_category = wasteland
+	
 	resources={
-		chromium=40.000
-		aluminium=27.000
+		chromium=40 # was: 44
+		aluminium=27 # was: 30
 	}
 
 	history={
-		owner = RUS
+		owner = TKH
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = RUS
-
+		add_core_of = TKH
 	}
 
 	provinces={
-		7824 10551 10677 11098 12393 12502 13076 
+		4874 7824 10216 10551 10677 11098 12393 12502 12659 13076 
 	}
-	manpower=48831
-	buildings_max_level_factor=1.000
-	state_category=wasteland
 }
