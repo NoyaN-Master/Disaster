@@ -3,7 +3,7 @@ ideas = {
 country = {
 
 HUN_great_war_legacy = {
-			picture = GFX_idea_ENG_the_war_to_end_all_wars
+			picture = discontent
 			modifier = {
 				political_power_factor = -0.10
 				stability_factor = -0.1
@@ -14,7 +14,7 @@ HUN_great_war_legacy = {
 
 
 HUN_great_war_legacy2 = {
-			picture = GFX_idea_ENG_the_war_to_end_all_wars
+			picture = discontent
 			modifier = {
 				political_power_factor = -0.05
 				stability_factor = -0.05
@@ -24,7 +24,7 @@ HUN_great_war_legacy2 = {
 		}
 
 HUN_eternal_regency = {
-			picture = GFX_idea_generic_fascism_drift_2
+			picture = idea_generic_fascism_drift_2
 			modifier = {
 				stability_factor = -0.05
 				political_power_factor = -0.05

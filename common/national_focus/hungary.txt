@@ -18,10 +18,10 @@
 
 	focus = {
 		id = HNG_reinforce_govt
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_HNG_reinforce_govt
 		x = 6
 		y = 0
-		cost = 2.9		
+		cost = 5.8
 		completion_reward = {
 			add_stability = 0.1
 			add_political_power = 75
@@ -30,108 +30,108 @@
 
 	focus = {
 		id = HNG_stregthen_regent_rule
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_HNG_strengthen_regents_rule
 		relative_position_id = HNG_reinforce_govt
-		x = 0
+		x = 3
 		y = 1
 		prerequisite = { focus = HNG_reinforce_govt }
-		cost = 2.9		
+		cost = 5.8		
 		completion_reward = {
 			country_event = { id = hungary.1 days = 1 }
 		}
 	}
 
 	focus = {
-		id = HNG_talk_with_opposition
-		icon = GFX_goal_generic_dangerous_deal
-		relative_position_id = HNG_stregthen_regent_rule
+		id = HNG_advance_gyor_programme
+		icon = GFX_goal_HNG_advance_gyor_program
+		relative_position_id = HNG_reinforce_govt
 		x = 0
 		y = 1
-		prerequisite = { focus = HNG_stregthen_regent_rule }
-		cost = 2.9		
+		prerequisite = { focus = HNG_reinforce_govt }
+		cost = 5.8
 		completion_reward = {
 			country_event = { id = hungary.2 days = 1 }
 		}
 	}
 	
 	focus = {
-		id = HNG_appease_karolyi
-		icon = GFX_goal_support_democracy
-		relative_position_id = HNG_talk_with_opposition
-		x = -2
+		id = HNG_stir_the_hearts
+		icon = GFX_goal_HNG_stir_the_hearts
+		relative_position_id = HNG_reinforce_govt
+		x = -3
 		y = 1
-		prerequisite = { focus = HNG_talk_with_opposition }
-		mutually_exclusive = { focus = HNG_appease_noone }
-		mutually_exclusive = { focus = HNG_appease_szalasi }
-		cost = 2.9		
+		prerequisite = { focus = HNG_reinforce_govt }
+		cost = 5.8		
 		completion_reward = {
-			add_popularity = {
-				ideology = liberal
-				popularity = 0.07
-			}
-			add_political_power = 10
-			hidden_effect = {
-				set_country_flag = appeased_karolyi
-			}
-			custom_effect_tooltip = szalasi_angry
+			country_event = { id = hungary.2 days = 1 }
 		}
 	}
 	
 	focus = {
-		id = HNG_appease_noone
-		icon = GFX_goal_generic_neutrality_focus
-		relative_position_id = HNG_talk_with_opposition
-		x = 0
+		id = HNG_army_upgrades
+		icon = GFX_goal_HNG_army_upgrades
+		relative_position_id = HNG_advance_gyor_programme
+		x = -1
 		y = 1
-		prerequisite = { focus = HNG_talk_with_opposition }
-		mutually_exclusive = { focus = HNG_appease_karolyi }
-		mutually_exclusive = { focus = HNG_appease_szalasi }
-		cost = 2.9		
+		prerequisite = { focus = HNG_advance_gyor_programme }
+		cost = 5.8	
 		completion_reward = {
-			swap_ideas = { 
-			remove_idea = HUN_political_opposition1
-			add_idea = HUN_political_opposition2
-			}
-			add_political_power = -30
-			hidden_effect = {
-				set_country_flag = appeased_noone
-			}
+			country_event = { id = hungary.2 days = 1 }
 		}
 	}
 	
 	focus = {
-		id = HNG_appease_szalasi
-		icon = GFX_goal_support_fascism
-		relative_position_id = HNG_talk_with_opposition
-		x = 2
+		id = HNG_infrastructure_overhaul
+		icon = GFX_goal_HNG_infrastructure_overhaul
+		relative_position_id = HNG_advance_gyor_programme
+		x = 1
 		y = 1
-		prerequisite = { focus = HNG_talk_with_opposition }
-		mutually_exclusive = { focus = HNG_appease_noone }
-		mutually_exclusive = { focus = HNG_appease_karolyi }
-		cost = 2.9		
+		prerequisite = { focus = HNG_advance_gyor_programme }
+		cost = 5.8		
 		completion_reward = {
-			add_popularity = {
-				ideology = revolutionary_nationalist
-				popularity = 0.07
-			}
-			add_political_power = 10
-			hidden_effect = {
-				set_country_flag = appeased_szalasi
-			}
-			custom_effect_tooltip = karolyi_angry
+			country_event = { id = hungary.2 days = 1 }
 		}
 	}
 	
 	focus = {
 		id = HNG_day_in_budapest
-		icon = GFX_focus_generic_the_giant_wakes
-		relative_position_id = HNG_appease_noone
-		x = 0
+		icon = GFX_goal_HNG_day_in_budapest
+		relative_position_id = HNG_army_upgrades
+		x = 3
 		y = 1
-		prerequisite = { focus = HNG_appease_szalasi focus = HNG_appease_noone focus = HNG_appease_karolyi }
-		cost = 2.9		
+		prerequisite = { focus = HNG_army_upgrades }
+		prerequisite = { focus = HNG_stregthen_regent_rule }
+		cost = 5.8		
 		completion_reward = {
-			country_event = { id = hungary.3 days = 1 }
+			country_event = { id = hungary.2 days = 1 }
+		}
+	}
+	
+	focus = {
+		id = HNG_officialize_the_move
+		icon = GFX_goal_HNG_officialize_the_move
+		relative_position_id = HNG_army_upgrades
+		x = -1
+		y = 1
+		prerequisite = { focus = HNG_infrastructure_overhaul }
+		prerequisite = { focus = HNG_stir_the_hearts }
+		cost = 5.8		
+		completion_reward = {
+			country_event = { id = hungary.2 days = 1 }
+		}
+	}
+	
+	focus = {
+		id = HNG_dishonor_or_death
+		icon = GFX_goal_HNG_dishonor_or_death
+		relative_position_id = HNG_reinforce_govt
+		x = 0
+		y = 4
+		prerequisite = { focus = HNG_day_in_budapest }
+		prerequisite = { focus = HNG_officialize_the_move }
+		cost = 2.4
+		completion_reward = {
+			country_event = { id = hungary.2 days = 1 }
 		}
 	}
 	
