@@ -46,60 +46,56 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = IZM_ethem_1
-recruit_character = IZM_nazim
-recruit_character = IZM_cemal
+create_country_leader = {
+	name = "Nazim Hikmet"
+	#desc = "IZM_Nazim_Hikmet_desc"
+	picture = "IZM_Nazim_Hikmet.tga"
+	expire = "2020.1.1"
+	ideology = nazimism
+	traits = {
+	humanist_poet
+	}
+}
 
-# create_country_leader = {
-# 	name = "Nazim Hikmet"
-# 	#desc = "IZM_Nazim_Hikmet_desc"
-# 	picture = "IZM_Nazim_Hikmet.tga"
-# 	expire = "2020.1.1"
-# 	ideology = nazimism
-# 	traits = {
-# 	humanist_poet
-# 	}
-# }
+create_country_leader = {
+	name = "Ethem Nejat"
+	#desc = "IZM_Nazim_Hikmet_desc"
+	picture = "IZM_Ethem_Nejat.tga"
+	expire = "2020.1.1"
+	ideology = turkish_marxism
+	traits = {
+	turkish_marx
+	}
+}
 
-# create_country_leader = {
-# 	name = "Ethem Nejat"
-# 	#desc = "IZM_Nazim_Hikmet_desc"
-# 	picture = "IZM_Ethem_Nejat.tga"
-# 	expire = "2020.1.1"
-# 	ideology = turkish_marxism
-# 	traits = {
-# 	turkish_marx
-# 	}
-# }
-
-# create_country_leader = {
-# 	name = "Cemal Madanoğlu"
-# 	#desc = "IZM_Nazim_Hikmet_desc"
-# 	picture = "IZM_Madan.tga"
-# 	expire = "2020.1.1"
-# 	ideology = mdd_kemalism
-# 	traits = {
+create_country_leader = {
+	name = "Cemal Madanoğlu"
+	#desc = "IZM_Nazim_Hikmet_desc"
+	picture = "IZM_Madan.tga"
+	expire = "2020.1.1"
+	ideology = mdd_kemalism
+	traits = {
 	
-# 	}
-# }
+	}
+}
 
-# create_corps_commander = {
-# 			name = "Ethem Nejat"
-# 			picture = "IZM_ethem_nejat_deng.tga"
-# 			traits = { revolutionary_turk }
-# 			skill = 2
-# 			attack_skill = 2
-# 			defense_skill = 2
-# 			planning_skill = 1
-# 			logistics_skill = 1
-# 			}
-# create_corps_commander = {
-# 			name = "Cemal Madanoğlu"
-# 			picture = "IZM_Madan.tga"
-# 			traits = { revolutionary_turk brilliant_strategist infantry_officer trickster desert_fox hill_fighter }
-# 			skill = 3
-# 			attack_skill = 4
-# 			defense_skill = 3
-# 			planning_skill = 3
-# 			logistics_skill = 3
-# 			}			
+create_corps_commander = {
+			name = "Ethem Nejat"
+			picture = "IZM_ethem_nejat_deng.tga"
+			traits = { revolutionary_turk }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			}
+create_corps_commander = {
+			name = "Cemal Madanoğlu"
+			picture = "IZM_Madan.tga"
+			traits = { revolutionary_turk brilliant_strategist infantry_officer trickster desert_fox hill_fighter }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			}			
