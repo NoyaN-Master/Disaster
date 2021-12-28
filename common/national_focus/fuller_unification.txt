@@ -918,9 +918,6 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = SKL_alexanders_sons
 			country_event = { id = fullerunification.14 }
-			hidden_effect = {
-				country_event = { id = fullerunification.17 days = 30}
-			}
         }
 	}
 	focus = {
