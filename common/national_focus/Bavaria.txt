@@ -1,5 +1,5 @@
 focus_tree = {
-	id = caliph_focus
+	id = bay_start_focus
 	country = {
 		factor = 0
 		modifier = {
@@ -13,7 +13,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_freikorps_divided
-		icon = GFX_goal
+		icon = GFX_goal_BAY_freikorps_divide
 		x = 8
 		y = 0
 		cost = 2
@@ -25,7 +25,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAY_stand_with_epp
-		icon = GFX_goal
+		icon = GFX_goal_BAY_stand_epp
 		relative_position_id = BAY_freikorps_divided
 		mutually_exclusive = { focus = BAY_side_with_himmler }
 		mutually_exclusive = { focus = BAY_side_with_rohm }
@@ -43,7 +43,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_side_with_rohm
-		icon = GFX_goal
+		icon = GFX_goal_BAY_side_rohm
 		relative_position_id = BAY_freikorps_divided
 		mutually_exclusive = { focus = BAY_side_with_himmler }
 		mutually_exclusive = { focus = BAY_stand_with_epp }
@@ -60,7 +60,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAY_side_with_himmler
-		icon = GFX_goal
+		icon = GFX_goal_BAY_side_himmler
 		mutually_exclusive = { focus = BAY_stand_with_epp }
 		mutually_exclusive = { focus = BAY_side_with_rohm }
 		relative_position_id = BAY_freikorps_divided
@@ -78,7 +78,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_hunt_himmler
-		icon = GFX_goal
+		icon = GFX_goal_BAY_hunt_himmler
 		relative_position_id = BAY_stand_with_epp
 		x = 1
 		y = 1
@@ -93,7 +93,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_hunt_epp
-		icon = GFX_goal
+		icon = GFX_goal_BAY_hunt_epp
 		relative_position_id = BAY_side_with_himmler
 		x = -1
 		y = 1
@@ -108,7 +108,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_expose_gay_rohm
-		icon = GFX_goal
+		icon = GFX_goal_BAY_expose_Rohm
 		relative_position_id = BAY_side_with_himmler
 		x = 1
 		y = 1
@@ -123,7 +123,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_compromise_with_rohm
-		icon = GFX_goal
+		icon = GFX_goal_BAY_compromise_rohm
 		relative_position_id = BAY_stand_with_epp
 		x = -1
 		y = 1
@@ -137,7 +137,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAY_appeal_to_catholics
-		icon = GFX_goal
+		icon = GFX_goal_BAY_appeal_to_christians
 		relative_position_id = BAY_stand_with_epp
 		x = 0
 		y = 2
@@ -152,7 +152,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAY_strengthen_paramilitary_ties
-		icon = GFX_goal
+		icon = GFX_goal_BAY_paramilitary_ties
 		relative_position_id = BAY_side_with_rohm
 		x = 0
 		y = 2
@@ -166,8 +166,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BAY_ally_with_traditionalists
-		icon = GFX_goal
+		id = BAY_root_out_christians
+		icon = GFX_goal_BAY_root_out_christians
 		relative_position_id = BAY_side_with_himmler
 		x = 0
 		y = 2
@@ -182,7 +182,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAY_epps_bavaria
-		icon = GFX_goal
+		icon = GFX_goal_BAY_epps_bavaria
 		relative_position_id = BAY_stand_with_epp
 		x = 0
 		y = 3
@@ -190,14 +190,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		prerequisite = { focus = BAY_hunt_epp }
-		prerequisite = { focus = BAY_expose_gay_rohm }
+		prerequisite = { focus = BAY_appeal_to_catholics	 }
 		completion_reward = {
 		}
 	}
 	focus = {
 		id = BAY_rohms_bavaria
-		icon = GFX_goal
+		icon = GFX_goal_BAY_rohms_bavaria
 		relative_position_id = BAY_side_with_rohm
 		x = 0
 		y = 3
@@ -205,14 +204,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		prerequisite = { focus = BAY_hunt_epp }
-		prerequisite = { focus = BAY_expose_gay_rohm }
+		prerequisite = { focus = BAY_strengthen_paramilitary_ties }
 		completion_reward = {
 		}
 	}
 	focus = {
 		id = BAY_himmlers_bavaria
-		icon = GFX_goal
+		icon = GFX_goal_BAY_himmlers_bavaria
 		relative_position_id = BAY_side_with_himmler
 		x = 0
 		y = 3
@@ -220,8 +218,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		prerequisite = { focus = BAY_hunt_epp }
-		prerequisite = { focus = BAY_expose_gay_rohm }
+		prerequisite = { focus = BAY_root_out_christians }
 		completion_reward = {
 		}
 	}
