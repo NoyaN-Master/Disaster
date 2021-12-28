@@ -1,0 +1,239 @@
+focus_tree = {
+	id = caliph_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BAY
+		}
+	}
+	continuous_focus_position = { x = 100 y = 2000 }
+
+	### STARTING TREE ###
+
+	focus = {
+		id = BAY_freikorps_divided
+		icon = GFX_goal
+		x = 8
+		y = 0
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = BAY_stand_with_epp
+		icon = GFX_goal
+		relative_position_id = BAY_freikorps_divided
+		mutually_exclusive = { focus = BAY_side_with_himmler }
+		mutually_exclusive = { focus = BAY_side_with_rohm }
+		x = -2
+		y = 1
+		cost = 0
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = BAY_freikorps_divided }
+		available = { always = no }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = BAY_side_with_rohm
+		icon = GFX_goal
+		relative_position_id = BAY_freikorps_divided
+		mutually_exclusive = { focus = BAY_side_with_himmler }
+		mutually_exclusive = { focus = BAY_stand_with_epp }
+		x = 0
+		y = 1
+		cost = 0
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = BAY_freikorps_divided }
+		available = { always = no }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = BAY_side_with_himmler
+		icon = GFX_goal
+		mutually_exclusive = { focus = BAY_stand_with_epp }
+		mutually_exclusive = { focus = BAY_side_with_rohm }
+		relative_position_id = BAY_freikorps_divided
+		x = 2
+		y = 1
+		cost = 0
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = BAY_freikorps_divided }
+		available = { always = no }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = BAY_hunt_himmler
+		icon = GFX_goal
+		relative_position_id = BAY_stand_with_epp
+		x = 1
+		y = 1
+		cost = 2.5
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = BAY_stand_with_epp focus = BAY_side_with_rohm} 
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = BAY_hunt_epp
+		icon = GFX_goal
+		relative_position_id = BAY_side_with_himmler
+		x = -1
+		y = 1
+		cost = 2.5
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = BAY_side_with_rohm focus = BAY_side_with_himmler }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = BAY_expose_gay_rohm
+		icon = GFX_goal
+		relative_position_id = BAY_side_with_himmler
+		x = 1
+		y = 1
+		cost = 2.5
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = BAY_side_with_himmler }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = BAY_compromise_with_rohm
+		icon = GFX_goal
+		relative_position_id = BAY_stand_with_epp
+		x = -1
+		y = 1
+		cost = 2.5
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = BAY_stand_with_epp } 
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = BAY_appeal_to_catholics
+		icon = GFX_goal
+		relative_position_id = BAY_stand_with_epp
+		x = 0
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = BAY_compromise_with_rohm }
+		prerequisite = { focus = BAY_hunt_himmler}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = BAY_strengthen_paramilitary_ties
+		icon = GFX_goal
+		relative_position_id = BAY_side_with_rohm
+		x = 0
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = BAY_hunt_himmler }
+		prerequisite = { focus = BAY_hunt_epp }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = BAY_ally_with_traditionalists
+		icon = GFX_goal
+		relative_position_id = BAY_side_with_himmler
+		x = 0
+		y = 2
+		cost = 2.5
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = BAY_hunt_epp }
+		prerequisite = { focus = BAY_expose_gay_rohm }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = BAY_epps_bavaria
+		icon = GFX_goal
+		relative_position_id = BAY_stand_with_epp
+		x = 0
+		y = 3
+		cost = 2.5
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = BAY_hunt_epp }
+		prerequisite = { focus = BAY_expose_gay_rohm }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = BAY_rohms_bavaria
+		icon = GFX_goal
+		relative_position_id = BAY_side_with_rohm
+		x = 0
+		y = 3
+		cost = 2.5
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = BAY_hunt_epp }
+		prerequisite = { focus = BAY_expose_gay_rohm }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = BAY_himmlers_bavaria
+		icon = GFX_goal
+		relative_position_id = BAY_side_with_himmler
+		x = 0
+		y = 3
+		cost = 2.5
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = BAY_hunt_epp }
+		prerequisite = { focus = BAY_expose_gay_rohm }
+		completion_reward = {
+		}
+	}
+
+	### EPP ###
+
+	focus = {
+		id = BAY_epp_triumphant
+		icon = GFX_goal
+		x = 8
+		y = 6
+		cost = 0
+		#allow_branch = { has_completed_focus = BAY_epps_bavaria }
+	}
+}
