@@ -8,3 +8,13 @@ HNG_choosing_king = {
 	}
 	visible_when_empty = no
 }
+HNG_gyor_program_decisions = {
+	icon = GFX_decision_category_generic_industry
+
+	#picture = Decision_picture_anatolia_influence
+	priority = 99
+	available = {
+		has_country_flag = HNG_gyor_dec_unlock
+	}
+	visible_when_empty = no
+}

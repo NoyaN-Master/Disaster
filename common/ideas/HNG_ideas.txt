@@ -23,20 +23,27 @@ HUN_great_war_legacy2 = {
 			}
 		}
 
-HUN_eternal_regency = {
-			picture = idea_generic_fascism_drift_2
+HUN_gyor_program = {
+			picture = _fascism_drift_2
 			modifier = {
-				stability_factor = -0.05
-				political_power_factor = -0.05
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
 			}
 		}
 
-
-HUN_horthy_govment = {
+HUN_szeged_govment = {
 			picture = GFX_idea_generic_fascism_drift_2
 			modifier = {
 				stability_factor = 0.05
-				political_power_gain = 0.05
+				political_power_factor = 0.1
+			}
+		}
+
+HUN_szeged_govment2 = {
+			picture = GFX_idea_generic_fascism_drift_2
+			modifier = {
+				stability_factor = 0.03
+				political_power_factor = 0.05
 			}
 		}
 

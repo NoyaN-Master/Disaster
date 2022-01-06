@@ -81,4 +81,9 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/news_smyrna.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_report_event_hungarian_turan_society"
+		texturefile = "gfx/event_pictures/Hungary/report_event_hungarian_turan_society.dds"
+	}
+	
 }

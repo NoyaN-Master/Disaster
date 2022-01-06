@@ -1,3 +1,4 @@
+### HUNGARY EVENTS BY leoJ ###
 add_namespace = hungary
 
 
@@ -13,7 +14,6 @@ country_event = { #Intro event
 	
 	option = { 
 		name = hungary.1000.a
-		
 	}
 }
 
@@ -33,7 +33,7 @@ country_event = { #Strengthen regents rule
 	}
 }
 
-country_event = { #Talk with opposition
+country_event = { #Making moves
 	id = hungary.2
 	title = hungary.2.t
 	desc = hungary.2.d
@@ -61,36 +61,8 @@ country_event = { #Day in Budapest
 	
 	
 	option = {
-		trigger = {
-			has_country_flag = appeased_karolyi
-		}
 		name = hungary.3.a
-		add_stability = 0.01
-		hidden_effect = {
-		country_event = { id = hungary.4 days = 14 }
-		}
-	}
-	
-	option = {
-		trigger = {
-			has_country_flag = appeased_szalasi
-		}
-		name = hungary.3.b
-		add_stability = 0.02
-		hidden_effect = {
-		country_event = { id = hungary.5 days = 14 }
-		}
-	}
-	
-	option = {
-		trigger = {
-			has_country_flag = appeased_noone
-		}
-		name = hungary.3.c
-		add_stability = 0.03
-		hidden_effect = {
-		country_event = { id = hungary.6 days = 14 }
-		}
+		add_stability = 0.05
 	}
 }
 
@@ -106,12 +78,32 @@ country_event = { #Arrow cross coup
 	is_triggered_only = yes
 	
 	immediate = {
-		remove_ideas = HUN_horthy_govment
-		remove_ideas = HUN_political_opposition1
+		#
 	}
 	
 	option = {
-		name = hungary.4.a
+		name = hungary.4.a #Szalasi option
+		add_stability = -0.1
+		add_political_power = -40
+		set_politics = {
+			ruling_party = revolutionary_nationalist
+			last_election = "1936.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = revolutionary_nationalist
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = ultranationalist
+			popularity = -0.1
+		}
+		hidden_effect = { set_country_flag = szalasi_focustree }
+	}
+	
+	option = {
+		name = hungary.4.b #Meskó option
 		add_stability = -0.1
 		add_political_power = -80
 		set_politics = {
@@ -125,47 +117,60 @@ country_event = { #Arrow cross coup
 			popularity = 0.1
 		}
 		add_popularity = {
-			ideology = autocratic
+			ideology = ultranationalist
 			popularity = -0.1
 		}
-		hidden_effect = { set_country_flag = szalasi_focustree }
+		hidden_effect = { 
+		set_country_flag = HNG_agronaziflag 
+		retire_ideology_leader = revolutionary_nationalist
+		set_party_name = { 
+			ideology = revolutionary_nationalist 
+			long_name = HNG_revolutionary_nationalist_party_agrarian_long 
+			name = HNG_revolutionary_nationalist_party_agrarian 
+		}
+		create_country_leader = {
+			name = "Zoltán Meskó"
+			#desc = "POLITICS_ZOLTAN_MESKO_DESC"
+			picture = "Portrait_Afghanistan_Mohammed_Zahir_Shah.dds"
+			expire = "1965.1.1"
+			ideology = revolutionary_nationalist_subideology
+			traits = {
+		
+			}
+		}
+		set_cosmetic_tag = HNG_agronazi1
+		}
 	}
 }
 
-country_event = { #F48P coup
+country_event = { #Democratic army coup
 	id = hungary.5
 	title = hungary.5.t
 	desc = hungary.5.d
 	#picture = 
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-	
 	immediate = {
-		remove_ideas = HUN_horthy_govment
-		remove_ideas = HUN_political_opposition1
+		#
 	}
-	
 	option = {
 		name = hungary.5.a
-		add_stability = -0.1
-		add_political_power = -80
+		add_stability = -0.15
+		add_political_power = -70
 		set_politics = {
-			ruling_party = liberal
+			ruling_party = autocratic
 			last_election = "1936.1.1"
 			election_frequency = 48
 			elections_allowed = no
 		}
 		add_popularity = {
-			ideology = liberal
-			popularity = 0.1
+			ideology = ultranationalist
+			popularity = -0.2
 		}
-		add_popularity = {
-			ideology = autocratic
-			popularity = -0.1
+		hidden_effect = { 
+			set_country_flag = democracy_focustree 
+			country_event = { id = hungary.7 days = 1 }
 		}
-		hidden_effect = { set_country_flag = democracy_focustree }
 	}
 }
 
@@ -174,11 +179,8 @@ country_event = { #Cracking down on opposition
 	title = hungary.6.t
 	desc = hungary.6.d
 	#picture = 
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-	
 	option = {
 		name = hungary.6.a
 		add_stability = 0.05
@@ -205,16 +207,15 @@ country_event = { #Socialist agitation
 	is_triggered_only = yes
 	
 	option = {
-		name = hungary.7.a
-		add_stability = 0.05
-	}
-	
-	option = {
-		name = hungary.7.b
-		add_stability = -0.05
+		name = hungary.7.a #oops the commies are comin back
+		add_political_power = -10
 		hidden_effect = {
-			country_event = { id = hungary.8 days = 7 }
+			country_event = { id = hungary.8 days = 5 }
 		}
+	}
+	option = { 
+		name = hungary.7.b #fuck em
+		add_political_power = -20
 	}
 }
 
@@ -252,24 +253,22 @@ country_event = { #Socialist coup
 			popularity = 0.05
 		}
 		add_popularity = {
-			ideology = autocratic
+			ideology = ultranationalist
 			popularity = -0.1
 		}
 		hidden_effect = { 
 		set_country_flag = commie_focustree
-		remove_ideas = HUN_horthy_govment
-		remove_ideas = HUN_political_opposition1
 		}
 	}
 
 }
 
 
-country_event = { #Big Avar stuff
+country_event = { #small Avar stuff
 	id = hungary.14
 	title = hungary.14.t
 	desc = hungary.14.d
-	#picture = 
+	picture = GFX_report_event_hungarian_turan_society
 
 	fire_only_once = yes
 
@@ -277,19 +276,76 @@ country_event = { #Big Avar stuff
 	
 	option = {
 		name = hungary.14.a
-		add_stability = 0.05
+		add_political_power = -40
 	}
 	
 	option = {
 		name = hungary.14.b
-		trigger = {
-			has_country_flag = avar_stuffs
+		custom_effect_tooltip = avarstuffhappens
+		hidden_effect = {
+			set_country_flag = avar_stuffs
+			country_event = { id = hungary.15 days = 14 }
 		}
+	}
+}
+
+country_event = { #Arrow Cross buys the Society
+	id = hungary.15
+	title = hungary.15.t
+	desc = hungary.15.d
+	#picture = 
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary.15.a
+	}
+}
+
+country_event = { #Big Avar stuff
+	id = hungary.16
+	title = hungary.16.t
+	desc = hungary.16.d
+	#picture = 
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = hungary.16.a
 		add_stability = -0.05
 		set_cosmetic_tag = HNG_avarkhaganate
 		hidden_effect = {
 			set_country_flag = avar_khaganate
+			remove_country_flag = szalasi_focustree
+			set_party_name = { 
+				ideology = esoteric_traditionalist
+				long_name = HNG_revolutionary_nationalist_party_long 
+				name = HNG_revolutionary_nationalist_party 
+			}
+			create_country_leader = {
+				name = "Atilla II"
+				#desc = "POLITICS_ATILLA_II_DESC"
+				picture = "HNG_Szalasi_Schizo.png"
+				expire = "1965.1.1"
+				ideology = esoteric_traditionalist_subideology
+				traits = {
+					#
+				}
+			}
+			set_politics = {
+				ruling_party = esoteric_traditionalist
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = no
+			}
 		}
+	}
+	option = {
+		name = hungary.16.b #WIP TURANO-ROMAN STUFF !!!!!
 	}
 }
 
@@ -305,14 +361,22 @@ country_event = { #Gyula dies
 	
 	option = {
 		name = hungary.10.a
-		add_stability = -0.04
-		add_political_power = -5
-	}
-	
-	option = {
-		name = hungary.10.b
-		add_political_power = -25
-		add_stability = 0.02
+		add_stability = -0.05
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Tibor Eckhardt"
+			#desc = "POLITICS_TIBOR_ECKHARDT_DESC"
+			picture = "Portrait_Afghanistan_Mohammed_Zahir_Shah.dds"
+			expire = "1965.1.1"
+			ideology = szeged_idea
+			traits = {
+				#
+			}
+		}
+		hidden_effect = {
+			set_country_flag = HNG_tibor_time
+			country_event = { id = hungary.20 days = 3 }
+		}
 	}
 }
 
@@ -383,18 +447,11 @@ country_event = { #Question of the monarchy
 			set_country_flag = hun_democratic_monarchy
 		}
 	}
-	
 	option = {
 		name = hungary.12.b #Abolishing the monarchy
 		set_cosmetic_tag = HNG_republic
 		add_stability = -0.15
 		add_political_power = -40
-	}
-	
-	option = {
-		name = hungary.12.c #eternal regency
-		add_ideas = HUN_eternal_regency
-		add_political_power = -10
 	}
 }
 
@@ -455,6 +512,70 @@ country_event = { #First elections
 			popularity = 0.1
 		}
 	}
+	
+	option = {
+		name = hungary.13.d
+		set_country_flag = HUN_aristocratic_victory
+		set_country_flag = HUN_elections_held
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			last_election = "1936.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.1
+		}
+	}
 }
+
+
+country_event = { #Szalasi is pissed
+	id = hungary.20
+	title = hungary.20.t
+	desc = hungary.20.d
+	#picture = 
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary.20.a #Make concessions
+		add_political_power = -70
+		swap_ideas = {
+			remove_idea = HUN_szeged_govment
+			add_idea = HUN_szeged_govment2
+		}
+	}
+	option = {
+		name = hungary.20.b #Fuck off
+		trigger = {
+			NOT = {
+				has_country_flag = avar_stuffs
+			}
+		}
+		hidden_effect = {
+			country_event = { id = hungary.4 days = 5 }
+		}
+	}
+	option = {
+		name = hungary.20.c #Fuck off but Avarian
+		trigger = {
+			has_country_flag = avar_stuffs
+		}
+		hidden_effect = {
+			country_event = { id = hungary.16 days = 5 }
+		}
+	}
+	option = {
+		name = hungary.20.d #Army help plz
+		hidden_effect = {
+			country_event = { id = hungary.5 days = 5 }
+		}
+	}
+}
+
 
 

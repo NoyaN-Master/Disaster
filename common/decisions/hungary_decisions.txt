@@ -69,5 +69,35 @@ HNG_robert_habsburg_este = {
 		}
 }
 
+} 
 
-}    
+HNG_gyor_program_decisions = {
+
+HNG_industrial_investment = {
+	    fire_only_once = no
+		cost = 100
+        available  = {
+			tag = HNG
+			has_country_flag = HNG_gyor_dec_unlock
+        }
+        visible = {
+				has_completed_focus = HNG_advance_gyor_programme
+        }  
+		complete_effect = {
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+	        add_building_construction = {
+		    type = industrial_complex 
+		    level = 1
+	        }
+			}
+		}
+		days_remove = 80		
+        remove_effect = {
+			
+		}
+}
+
+
+
+}   

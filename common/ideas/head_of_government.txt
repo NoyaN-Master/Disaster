@@ -268,7 +268,22 @@ ideas = {
 			visible = {
 			always = no
 			}
-		}					
+		}	
+
+	HNG_Imredy_HoG = {
+			picture = HNG_Imredy_hog
+			available = { 
+			tag = HNG 
+			}
+			cancel_if_invalid = no
+			level = 3
+			traits = {
+			socialite_connections 		
+			}
+			visible = {
+			always = no
+			}
+		}		
 }
 
 }
