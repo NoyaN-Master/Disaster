@@ -3,8 +3,8 @@
 # ID's must not include spaces!
 # Decisions MUST be visible for the AI to execute them, if in doubt, switch tag to the AI country and check if they can see/execute the mission.
 #####################################################################################################################
-qid_cwar_cat = {		#Name of category that decisions will appear under, decisions MUST have a category to work properly.
-	qid_cwar_1 = {		#ID of the decision, must not contain spaces!
+etr_cwar_cat = {		#Name of category that decisions will appear under, decisions MUST have a category to work properly.
+	etr_cwar_1 = {		#ID of the decision, must not contain spaces!
 
 		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
 		
@@ -34,7 +34,7 @@ qid_cwar_cat = {		#Name of category that decisions will appear under, decisions 
 			factor = 1			
 		}
 	}
-	qid_cwar_2 = {		
+	etr_cwar_2 = {		
 
 		icon = GFX_decision_icon_default	
 		
@@ -60,7 +60,7 @@ qid_cwar_cat = {		#Name of category that decisions will appear under, decisions 
 			factor = 1			
 		}
 	}
-	qid_cwar_3 = {		
+	etr_cwar_3 = {		
 
 		icon = GFX_decision_icon_default	
 		
@@ -80,7 +80,7 @@ qid_cwar_cat = {		#Name of category that decisions will appear under, decisions 
          add_equipment_to_stockpile = {
     type = infantry_equipment
     amount = 1200
-    producer = qid
+    producer = etr
 }
 		}
 
@@ -88,7 +88,7 @@ qid_cwar_cat = {		#Name of category that decisions will appear under, decisions 
 			factor = 1			
 		}
 	}
-	qid_cwar_4 = {		
+	etr_cwar_4 = {		
 
 		icon = GFX_decision_icon_default	
 		
@@ -108,7 +108,7 @@ qid_cwar_cat = {		#Name of category that decisions will appear under, decisions 
          add_equipment_to_stockpile = {
     type = support_equipment
     amount = 120
-    producer = qid
+    producer = etr
 }
 		}
 		ai_will_do = {
@@ -121,9 +121,9 @@ qid_cwar_cat = {		#Name of category that decisions will appear under, decisions 
 ##########################################################################
 #NEW CATAGORY
 
-qid_cwar_cat_2 = {
+etr_cwar_cat_2 = {
 
-		qid_cwar_5 = {		
+		etr_cwar_5 = {		
 
 		icon = GFX_decision_icon_default	
 		
@@ -147,7 +147,7 @@ qid_cwar_cat_2 = {
 			factor = 1			
 		}
 	}
-		qid_cwar_6 = {		
+		etr_cwar_6 = {		
 
 		icon = GFX_decision_icon_default	
 		
@@ -171,7 +171,7 @@ qid_cwar_cat_2 = {
 			factor = 1			
 		}
 	}
-	qid_cwar_7 = {		
+	etr_cwar_7 = {		
 
 		icon = GFX_decision_icon_default	
 		
@@ -195,7 +195,7 @@ qid_cwar_cat_2 = {
 			factor = 1			
 		}
 	}
-		qid_cwar_8 = {		
+		etr_cwar_8 = {		
 
 		icon = GFX_decision_icon_default	
 		
@@ -219,7 +219,7 @@ qid_cwar_cat_2 = {
 			factor = 1			
 		}
 	}
-qid_cwar_9 = {		
+etr_cwar_9 = {		
 
 		icon = GFX_decision_icon_default	
 		
@@ -243,7 +243,7 @@ qid_cwar_9 = {
 			factor = 1			
 		}
 }
-qid_cwar_10 = {		
+etr_cwar_10 = {		
 
 		icon = GFX_decision_icon_default	
 		
@@ -270,11 +270,11 @@ qid_cwar_10 = {
 
 ###################################MISSIONS######################
 
-	qid_cwar_mission_1 = {
+	etr_cwar_mission_1 = {
         days_mission_timeout = 60
         fire_only_once = no
         available = {                             # makes the decision unable to complete therefore the only option to get the buff is once it does the timeout through a condition
-           qid = { controls_province = 1047 }
+           etr = { controls_province = 1047 }
 		
         }
         activation = {
@@ -283,18 +283,18 @@ qid_cwar_10 = {
         is_good = no                             #if yes then the color is green / if no then the color is red
         priority = 100                     
         timeout_effect = {     
-			add_timed_idea = {idea = qid_cwar_failed_offensive days = 60}         
+			add_timed_idea = {idea = etr_cwar_failed_offensive days = 60}         
          }
         complete_effect = {                    # the effect when you take the state
         add_stability = 0.1
 		add_war_support = 0.1              
         }
     }
-	qid_cwar_mission_2 = {
+	etr_cwar_mission_2 = {
         days_mission_timeout = 60
         fire_only_once = no
         available = {                             # makes the decision unable to complete therefore the only option to get the buff is once it does the timeout through a condition
-           	qid = { controls_province = 7137 }
+           	etr = { controls_province = 7137 }
 		
         }
         activation = {
@@ -303,18 +303,18 @@ qid_cwar_10 = {
         is_good = no                             #if yes then the color is green / if no then the color is red
         priority = 100                     
         timeout_effect = {     
-			add_timed_idea ={idea = qid_cwar_failed_offensive days = 60}         
+			add_timed_idea ={idea = etr_cwar_failed_offensive days = 60}         
          }
         complete_effect = {                    # the effect when you take the state
         add_stability = 0.1
 		add_war_support = 0.1              
         }
     }
-	qid_cwar_mission_3 = {
+	etr_cwar_mission_3 = {
         days_mission_timeout = 60
         fire_only_once = no
         available = {                             # makes the decision unable to complete therefore the only option to get the buff is once it does the timeout through a condition
-           qid = { controls_province = 11913 }
+           etr = { controls_province = 11913 }
 		
         }
         activation = {
@@ -323,18 +323,18 @@ qid_cwar_10 = {
         is_good = no                             #if yes then the color is green / if no then the color is red
         priority = 100                     
         timeout_effect = {     
-			add_timed_idea ={idea = qid_cwar_failed_offensive days = 60}         
+			add_timed_idea ={idea = etr_cwar_failed_offensive days = 60}         
          }
         complete_effect = {                    # the effect when you take the state
         add_stability = 0.1
 		add_war_support = 0.1              
         }
     }
-		qid_cwar_mission_4 = {
+		etr_cwar_mission_4 = {
         days_mission_timeout = 60
         fire_only_once = no
         available = {                             # makes the decision unable to complete therefore the only option to get the buff is once it does the timeout through a condition
-           qid = { controls_province = 6999 }
+           etr = { controls_province = 6999 }
 		
         }
         activation = {
@@ -343,18 +343,18 @@ qid_cwar_10 = {
         is_good = no                             #if yes then the color is green / if no then the color is red
         priority = 100                     
         timeout_effect = {     
-			add_timed_idea ={idea = qid_cwar_failed_offensive days = 60}         
+			add_timed_idea ={idea = etr_cwar_failed_offensive days = 60}         
          }
         complete_effect = {                    # the effect when you take the state
         add_stability = 0.1
 		add_war_support = 0.1              
         }
     }
-		qid_cwar_mission_5 = {
+		etr_cwar_mission_5 = {
         days_mission_timeout = 60
         fire_only_once = no
         available = {                             # makes the decision unable to complete therefore the only option to get the buff is once it does the timeout through a condition
-           qid = { controls_province = 6999}
+           etr = { controls_province = 6999}
 		
         }
         activation = {
@@ -363,18 +363,18 @@ qid_cwar_10 = {
         is_good = no                             #if yes then the color is green / if no then the color is red
         priority = 100                     
         timeout_effect = {     
-			add_timed_idea ={idea = qid_cwar_failed_offensive days = 60}         
+			add_timed_idea ={idea = etr_cwar_failed_offensive days = 60}         
          }
         complete_effect = {                    # the effect when you take the state
         add_stability = 0.1
 		add_war_support = 0.1              
         }
     }
-		qid_cwar_mission_6 = {
+		etr_cwar_mission_6 = {
         days_mission_timeout = 60
         fire_only_once = no
         available = {                             # makes the decision unable to complete therefore the only option to get the buff is once it does the timeout through a condition
-           qid = { controls_province = 7940 }
+           etr = { controls_province = 7940 }
 		
         }
         activation = {
@@ -383,7 +383,7 @@ qid_cwar_10 = {
         is_good = no                             #if yes then the color is green / if no then the color is red
         priority = 100                     
         timeout_effect = {     
-			add_timed_idea ={idea = qid_cwar_failed_offensive days = 60}         
+			add_timed_idea ={idea = etr_cwar_failed_offensive days = 60}         
          }
         complete_effect = {                    # the effect when you take the state
         add_stability = 0.1

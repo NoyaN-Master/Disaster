@@ -1,4 +1,4 @@
-qid_cwar_cat = {		
+etr = {		
 	priority = 9	
 	icon = GFX_category_icon	
 	
@@ -6,11 +6,11 @@ qid_cwar_cat = {
 	
 	}
 	visible = {		
-     tag = QID
-     has_country_flag = qid_decisions_cwar
+     tag = etr
+     has_country_flag = etr_decisions_cwar
 	}
 }
-qid_cwar_cat_2 = {		
+etr_cwar_cat_2 = {		
 	priority = 8	
 	icon = GFX_category_icon	
 	
@@ -18,7 +18,7 @@ qid_cwar_cat_2 = {
 	
 	}
 	visible = {		
-     tag = qid
-     has_country_flag = qid_decisions_cwar
+     tag = etr
+     has_country_flag = etr_decisions_cwar
 	}
 }
