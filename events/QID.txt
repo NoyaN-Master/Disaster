@@ -18,6 +18,7 @@ country_event = { #start event
 	option = {
 		name = qid.1.a
         ai_chance = {factor = 100}
+		hidden_effect = {set_country_flag = qid_decisions_cwar}
 	}
 }
 country_event = { #Japan intro TBW
