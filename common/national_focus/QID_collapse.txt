@@ -210,9 +210,48 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-	 
+			custom_effect_tooltip = QID_TT_PUYI_MILITIA
+			hidden_effect = {
+				division_template = {
+					name = "Qing Militia"				# Represents: two-division infantry corps (generally poorly-equipped, but decent experience),
+					division_names_group = CRF_INF_01
+										#	PRC divisions were well-trained in guerilla mountain tactics.
+					regiments = {
+						infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 1 y = 0 }
+					}
+					support = {
+						reccon = { x = 0 y = 0 }
+					}
+						priority = 1
+				}	
+
+				608 = {create_unit = {
+				division = "name = \"Qing Militia\" division_template = \"Qing Militia\" start_experience_factor = 1.0 start_equipment_factor = 0.5"
+				owner = QID
+				}
+			}
+				608 = {create_unit = {
+				division = "name = \"Qing Militia\" division_template = \"Qing Militia\" start_experience_factor = 1.0 start_equipment_factor = 0.5"
+				owner = QID
+				}
+			}
+				608 = {create_unit = {
+				division = "name = \"Qing Militia\" division_template = \"Qing Militia\" start_experience_factor = 1.0 start_equipment_factor = 0.5"
+				owner = QID
+				}
+			}
+				608 = {create_unit = {
+				division = "name = \"Qing Militia\" division_template = \"Qing Militia\" start_experience_factor = 1.0 start_equipment_factor = 0.5"
+				owner = QID
+				}
+			}
+
+			}
 		}
 	}
+
 		focus = {
 		id = QID_focus_11
 		icon = ""

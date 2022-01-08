@@ -106,17 +106,17 @@ country_event = { #3 way puyi x jap x libtard (GAY AF LOL)
 
 	option = { # this is puyi
 		name = qid.6.a
-        ai_chance = {factor = 100}
+        ai_chance = {factor = 33}
 		set_country_flag = PUYI_WINS_BASED_FLAG
 	}
 	option = { #this is jap
 		name = qid.6.b
-        ai_chance = {factor = 100}
+        ai_chance = {factor = 33}
 		set_country_flag = JAP_WINS_OK_FLAG
 	}
 	option = { #libtard retard 
 		name = qid.6.c
-        ai_chance = {factor = 100}
+        ai_chance = {factor = 34}
 		set_country_flag = LIB_CRINGE_FLAG
 	}
 }
