@@ -29,11 +29,23 @@ QID_cwar_jap_oversight_2 = {
 QID_cwar_bushido_tactics = {
 	picture = ROC_unity
 	modifier = {
-	army_attack_factor = 0.1
-	army_defence_factor = -0.05
-	army_org_factor = 0.05
-		}
-    }
-
+		army_attack_factor = 0.1
+		army_defence_factor = -0.05
+		army_org_factor = 0.05
+	}
+}
+QID_cwar_puyi_good_ppl = {
+	picture = ROC_unity
+	modifier = {
+		compliance_growth_on_our_occupied_states = -0.3 
+		occupation_cost = -0.5
+	}
+}
+QID_cwar_quality_hard = {
+	picture = ROC_unity
+	modifier = {
+		army_morale_factor = 0.25
+	}
+}
 	}
 }

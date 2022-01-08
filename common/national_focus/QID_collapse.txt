@@ -71,7 +71,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
+			QID = { country_event = { id = qid.4}}
 		}
 	}
 	focus = {
@@ -87,7 +87,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-	 
+			QID = { country_event = { id = qid.5}}
 		}
 	}
 		focus = {
@@ -102,7 +102,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-	 
+			add_war_support = 0.10
+			add_stability = 0.05
+			add_ideas = QID_cwar_puyi_good_ppl
 		}
 	}
 		focus = {
@@ -117,7 +119,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-	 
+	 		add_ideas = QID_cwar_quality_hard
+			add_stability = 0.05
 		}
 	}
 		focus = {
@@ -132,7 +135,15 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-	 
+			set_technology = {
+   				tech_field_hospital = 1
+			}
+
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 1000
+				producer = ROC
+			}
 		}
 	}
 		focus = {
@@ -147,9 +158,46 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-	 
+			custom_effect_tooltip = QID_TT_PUYI_SIDELINE
+			hidden_effect = {
+	 		delete_unit_template_and_units = {
+    			division_template = "Japan Garrison"
+   				disband = yes
+			}
+				608 = {create_unit = {
+					division = "name = \"Qing Loyalist\" division_template = \"Qing Loyalist\" start_experience_factor = 1.0 start_equipment_factor = 0.5"
+					owner = QID
+				}	
+			}
+				608 = {create_unit = {
+				division = "name = \"Qing Loyalist\" division_template = \"Qing Loyalist\" start_experience_factor = 1.0 start_equipment_factor = 0.5"
+    			owner = QID
+			}
+		}
+				608 = {create_unit = {
+				division = "name = \"Qing Loyalist\" division_template = \"Qing Loyalist\" start_experience_factor = 1.0 start_equipment_factor = 0.5"
+    			owner = QID
+			}
+		}		608 = {create_unit = {
+				division = "name = \"Qing Loyalist\" division_template = \"Qing Loyalist\" start_experience_factor = 1.0 start_equipment_factor = 0.5"
+    			owner = QID
+			}
+		}		608 = {create_unit = {
+				division = "name = \"Qing Loyalist\" division_template = \"Qing Loyalist\" start_experience_factor = 1.0 start_equipment_factor = 0.5"
+    			owner = QID
+			}
+		}		608 = {create_unit = {
+				division = "name = \"Qing Loyalist\" division_template = \"Qing Loyalist\" start_experience_factor = 1.0 start_equipment_factor = 0.5"
+    			owner = QID
+			}
+		}		608 = {create_unit = {
+				division = "name = \"Qing Loyalist\" division_template = \"Qing Loyalist\" start_experience_factor = 1.0 start_equipment_factor = 0.5"
+    			owner = QID
+			}
 		}
 	}
+	}
+}
 		focus = {
 		id = QID_focus_10
 		icon = ""
