@@ -47,5 +47,12 @@ QID_cwar_quality_hard = {
 		army_morale_factor = 0.25
 	}
 }
+QID_cwar_Partisians = {
+	picture = ROC_unity
+	modifier = {
+		army_core_attack_factor = 0.1
+		army_core_defence_factor = 0.15
+	}
+}
 	}
 }
