@@ -18,7 +18,7 @@ country_event = { #start event
 	option = {
 		name = etr.1.a
         ai_chance = {factor = 100}
-		hidden_effect = {set_country_flag = {etr_decisions_cwar}}
+		set_country_flag = etr_decisions_cwar
 	}
 }
 country_event = { #Choice!!

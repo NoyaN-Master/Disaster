@@ -374,7 +374,7 @@ etr_cwar_10 = {
         days_mission_timeout = 60
         fire_only_once = no
         available = {                             # makes the decision unable to complete therefore the only option to get the buff is once it does the timeout through a condition
-           etr = { controls_province = 7940 }
+           etr = { controls_province = 4619 }
 		
         }
         activation = {
