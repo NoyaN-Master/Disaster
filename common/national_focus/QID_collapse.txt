@@ -210,6 +210,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			QID = { country_event = { id = qid.10}}
 			custom_effect_tooltip = QID_TT_PUYI_MILITIA
 			hidden_effect = {
 				division_template = {
@@ -431,6 +432,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			QID = { country_event = { id = qid.9}}
 			add_stability = 0.05
 		}
 	}
@@ -447,6 +449,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			QID = { country_event = { id = qid.8}}
 			add_stability = -0.05
 			add_war_support = 0.1
 		}
@@ -466,6 +469,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			QID = { country_event = { id = qid.7}}
 			add_stability = 0.05
 		}
 	}
