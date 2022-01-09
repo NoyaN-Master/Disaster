@@ -123,3 +123,67 @@ country_event = { #3 way puyi x jap x libtard (GAY AF LOL)
 		custom_effect_tooltip = QID_TT_PUYI_3_WAY
 	}
 }
+country_event = { #Announce the first Parliament
+	id = qid.7
+	title = qid.7.t
+	desc = qid.7.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = qid.7.a
+        ai_chance = {factor = 100}
+	}
+}
+country_event = { #Tie the Strings
+	id = qid.8
+	title = qid.8.t
+	desc = qid.8.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = qid.8.a
+        ai_chance = {factor = 100}
+	}
+}
+country_event = { #Declaration of the Rights of Man
+	id = qid.9
+	title = qid.9.t
+	desc = qid.9.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = qid.9.a
+        ai_chance = {factor = 100}
+	}
+}
+country_event = { #Rise my People
+	id = qid.10
+	title = qid.10.t
+	desc = qid.10.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = qid.10.a
+        ai_chance = {factor = 100}
+	}
+}
