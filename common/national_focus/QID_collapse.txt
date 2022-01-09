@@ -431,22 +431,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-	 
-		}
-	}
-		focus = {
-		id = QID_focus_20
-		icon = ""
-		x = 4
-		y = 13
-		cost = 5
-		available_if_capitulated = yes
-		prerequisite = {focus = QID_focus_19}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-	 
+			add_stability = 0.05
 		}
 	}
 		focus = {
@@ -462,24 +447,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-	 
+			add_stability = -0.05
+			add_war_support = 0.1
 		}
 	}
-		focus = {
-		id = QID_focus_22
-		icon = ""
-		x = 8
-		y = 13
-		cost = 5
-		available_if_capitulated = yes
-		prerequisite = {focus = QID_focus_21}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-	 
-		}
-	}
+
 
 		focus = {
 		id = QID_focus_23
@@ -494,22 +466,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-	 
-		}
-	}
-	focus = {
-		id = QID_focus_24
-		icon = ""
-		x = 12
-		y = 13
-		cost = 5
-		available_if_capitulated = yes
-		prerequisite = {focus = QID_focus_23}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-	 
+			add_stability = 0.05
 		}
 	}
 }
