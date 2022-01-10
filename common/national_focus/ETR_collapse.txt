@@ -37,7 +37,7 @@ focus_tree = {
 		}
 		prerequisite = {focus = ETR_focus_1}
 		completion_reward = {
-			etr = { country_event = { id = etr.5}}
+			ETR = { country_event = { id = etr.5}}
 		}
 	}
 	focus = {
@@ -88,7 +88,7 @@ focus_tree = {
 		}
 		available = {has_country_flag = ETR_Khoja_flag}
 		completion_reward = {
-			etr = { country_event = { id = etr.6}}
+			ETR = { country_event = { id = etr.6}}
 		}
 	}
 		focus = {
