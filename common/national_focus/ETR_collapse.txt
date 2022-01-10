@@ -37,6 +37,7 @@ focus_tree = {
 		}
 		prerequisite = {focus = ETR_focus_1}
 		completion_reward = {
+			etr = { country_event = { id = etr.5}}
 		}
 	}
 	focus = {
@@ -51,6 +52,11 @@ focus_tree = {
 		}
 		prerequisite = {focus = ETR_focus_1}
 		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 3000
+				producer = ETR
+			}
 		}
 	}
 	focus = {
@@ -67,6 +73,7 @@ focus_tree = {
 		prerequisite = {focus = ETR_focus_3}
 		completion_reward = {
 		ETR = { country_event = { id = etr.2}}
+		add_stability = -0.2
 		}
 	}
 	focus = {
@@ -81,6 +88,7 @@ focus_tree = {
 		}
 		available = {has_country_flag = ETR_Khoja_flag}
 		completion_reward = {
+			etr = { country_event = { id = etr.6}}
 		}
 	}
 		focus = {
@@ -95,6 +103,7 @@ focus_tree = {
 		}
 		prerequisite = {focus = ETR_focus_5}
 		completion_reward = {
+			add_ideas = etr_cwar_reject_modern
 		}
 	}
 	focus = {
@@ -109,6 +118,8 @@ focus_tree = {
 		}
 		prerequisite = {focus = ETR_focus_5}
 		completion_reward = {
+			add_stability = 0.05
+			custom_effect_tooltip = ETR_CWAR_TT_ISLAM_COMMUNISM
 		}
 	}
 	focus = {
@@ -123,6 +134,7 @@ focus_tree = {
 		}
 		prerequisite = {focus = ETR_focus_5}
 		completion_reward = {
+			add_ideas = etr_cwar_battle_mosques
 		}
 	}
 	focus = {
@@ -139,6 +151,7 @@ focus_tree = {
 		prerequisite = {focus = ETR_focus_7}
 		prerequisite = {focus = ETR_focus_8}
 		completion_reward = {
+			add_manpower = 45000
 		}
 	}
 	focus = {
@@ -155,6 +168,12 @@ focus_tree = {
 		prerequisite = {focus = ETR_focus_7}
 		prerequisite = {focus = ETR_focus_8}
 		completion_reward = {
+			add_manpower = 45000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+				producer = ETR
+			}
 		}
 	}
 	focus = {

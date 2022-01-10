@@ -1,0 +1,45 @@
+ideas = {
+
+	country = {
+
+		ETR_cwar_modern = {
+			picture = ROC_unity
+			modifier = {
+				army_attack_factor = 0.01
+				army_defence_factor = 0.01
+				army_org_factor = 0.1
+			}
+		}
+		ETR_cwar_cav = {
+			picture = ROC_unity
+			modifier = {
+				cavalry_attack_factor = 0.25
+				cavalry_defence_factor = 0.25
+				cavalry_speed_factor = 0.25
+			}
+		}
+		ETR_cwar_cav2 = {
+			picture = ROC_unity
+			modifier = {
+				cavalry_attack_factor = 0.45
+				cavalry_defence_factor = 0.45
+				cavalry_speed_factor = 0.45
+			}
+		}
+		etr_cwar_reject_modern = {
+			picture = ROC_unity
+			modifier = {
+				cavalry_attack_factor = 0.15
+				cavalry_defence_factor = 0.15
+				cavalry_speed_factor = 0.15
+			}
+		}
+		etr_cwar_battle_mosques = {
+			picture = ROC_unity
+			modifier = {
+				army_morale_factor = 0.25
+				army_org_factor = 0.1
+			}
+		}
+	}
+}

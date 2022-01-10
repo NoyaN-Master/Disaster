@@ -1,5 +1,5 @@
 ############
-#crf EVENTS#
+#QID EVENTS#
 ############
 
 add_namespace = qid
@@ -21,7 +21,7 @@ country_event = { #start event
 		hidden_effect = {set_country_flag = qid_decisions_cwar}
 	}
 }
-country_event = { #Japan intro TBW
+country_event = { #Japan intro 
 	id = qid.2
 	title = qid.2.t
 	desc = qid.2.d
@@ -37,7 +37,7 @@ country_event = { #Japan intro TBW
         ai_chance = {factor = 100}
 	}
 }
-country_event = { #Choice? TBW
+country_event = { #Choice? 
 	id = qid.3
 	title = qid.3.t
 	desc = qid.3.d
@@ -61,7 +61,7 @@ country_event = { #Choice? TBW
 		hidden_effect = {QID = { country_event = { id = qid.4 days = 12}}}
 	}
 }
-country_event = { #Choice? pt 2 Jap wins cringe btw TBW
+country_event = { #Choice? pt 2 Jap wins cringe btw 
 	id = qid.4
 	title = qid.4.t
 	desc = qid.4.d
