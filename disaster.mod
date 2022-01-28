@@ -28,10 +28,7 @@ replace_path="common/scripted_localisation"
 replace_path="common/scripted_triggers"
 replace_path="common/autonomous_states"
 replace_path="common/ai_equipment"
+replace_path="map/strategicregions"
 supported_version="1.10.*"
-<<<<<<< HEAD
-path="C:/Users/Kaan/Documents/Paradox Interactive/Hearts of Iron IV/mod/disaster"
-=======
-path="C:/Users/Fatih/Documents/Paradox Interactive/Hearts of Iron IV/mod/disaster"
->>>>>>> parent of bd34df3b (fuck up)
+path="C:/Users/Fatih/Documents/Paradox Interactive/Hearts of Iron IV/mod/Disaster"
 remote_file_id="2564150534"
