@@ -8,7 +8,7 @@ ROM_agrarian_crisis = {
 				conscription_factor = -0.15
 				stability_factor = -0.05
 			}
-			picture = ROM_agrarian_crisis
+			picture = brother_war
 		}
 		ROM_revanchist_romania = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ROM_legionary_romania" }
@@ -18,7 +18,7 @@ ROM_agrarian_crisis = {
 				army_core_defence_factor = 0.05
 				resistance_target = -0.1
 			}
-			picture = ROM_revanchist_romania
+			picture = brother_war
 		}
 		ROM_calls_for_democracy = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ROM_calls_for_democracy" }
@@ -26,7 +26,7 @@ ROM_agrarian_crisis = {
 				political_power_gain = -0.04
 				stability_factor = -0.1
 			}
-			picture = ROM_calls_for_democracy
+			picture = brother_war
 		}	
 	}
 	}
