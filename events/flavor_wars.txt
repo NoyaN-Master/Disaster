@@ -1,61 +1,4 @@
 add_namespace = worldwar
-
-country_event = { #Israel Fitnah # Palestine
-	id = worldwar.7
-	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
-	title = worldwar.7.t
-	desc = worldwar.7.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = worldwar.7.a
-        PAL = {
-        add_state_core = 455
-        add_state_core = 816
-        add_state_core = 901
-        add_state_core = 454
-        add_state_core = 900
-        add_state_core = 869
-        transfer_state = 901
-        transfer_state = 455
-        transfer_state = 816
-        transfer_state = 869
-        add_ideas = PAL_Duel_Fate
-		load_oob = PAL_palestine_milita 
-        complete_national_focus = PAL_War_Liberation
-        }
-        ISL = {
-        add_state_core = 454
-        add_state_core = 455
-        add_state_core = 816
-        add_state_core = 901
-        add_state_core = 454
-        add_state_core = 900
-        transfer_state = 454
-        transfer_state = 900
-        transfer_state = 453
-        transfer_state = 868
-        declare_war_on = {
-        target = PAL
-        type = annex_everything
-        }
-        add_ideas = ISL_Duel_Fate
-		load_oob = ISL_israel_favor
-        }
-        SRY = {
-        transfer_state = 553
-        add_state_core = 553    
-        }
-        ISL = { change_tag_from = LEV }
-    news_event = { id = news.16 }
-}
-}
-
 country_event = { #Israel Fitnah # Palestine
 	id = worldwar.1
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
@@ -111,7 +54,6 @@ country_event = { #Israel Fitnah # Palestine
     news_event = { id = news.16 }
 }
 }
-
 country_event = { #Iosef First War
 	id = worldwar.2
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
@@ -356,11 +298,11 @@ country_event = { #Eurasianist Revolt
 }
 }
 
-country_event = { #code debug
-	id = worldwar.31
+country_event = { #Israel Fitnah # Palestine
+	id = worldwar.7
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
-	title = worldwar.31.t
-	desc = worldwar.31.d
+	title = worldwar.7.t
+	desc = worldwar.7.d
 
 	picture = GFX_report_event_aut_dollfuss_speech
 
@@ -369,13 +311,47 @@ country_event = { #code debug
 	is_triggered_only = yes
 
 	option = {
-		name = worldwar.31.a
-        WSL = {
-        every_owned_state = {
-        add_core_of = EVR
-        }	
+		name = worldwar.7.a
+        PAL = {
+        add_state_core = 455
+        add_state_core = 816
+        add_state_core = 901
+        add_state_core = 454
+        add_state_core = 900
+        add_state_core = 869
+        transfer_state = 901
+        transfer_state = 455
+        transfer_state = 816
+        transfer_state = 869
+        add_ideas = PAL_Duel_Fate
+		load_oob = PAL_palestine_milita 
+        complete_national_focus = PAL_War_Liberation
         }
+        ISL = {
+        add_state_core = 454
+        add_state_core = 455
+        add_state_core = 816
+        add_state_core = 901
+        add_state_core = 454
+        add_state_core = 900
+        transfer_state = 454
+        transfer_state = 900
+        transfer_state = 453
+        transfer_state = 868
+        declare_war_on = {
+        target = PAL
+        type = annex_everything
         }
+        add_ideas = ISL_Duel_Fate
+		load_oob = ISL_israel_favor
+        }
+        SRY = {
+        transfer_state = 553
+        add_state_core = 553    
+        }
+        ISL = { change_tag_from = LEV }
+    news_event = { id = news.16 }
+}
 }
 
 country_event = { #white victory
@@ -507,6 +483,31 @@ country_event = { #white victory
         }
 }
 
+
+
+country_event = { #code debug
+	id = worldwar.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = worldwar.31.t
+	desc = worldwar.31.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = worldwar.31.a
+        WSL = {
+        every_owned_state = {
+        add_core_of = EVR
+        }	
+        }
+        }
+}
+
+
 country_event = { #code debug
 	id = worldwar.32
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
@@ -592,56 +593,6 @@ country_event = { #code debug
         }
         }
 }
-
-country_event = { #code debug
-	id = worldwar.36
-	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
-	title = worldwar.36.t
-	desc = worldwar.36.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = worldwar.36.a
-        CRT = {     
-        transfer_state = 109
-        transfer_state = 815    
-        transfer_state = 45    
-        transfer_state = 804    
-        transfer_state = 109
-        add_state_core = 109
-        add_state_core = 815    
-        add_state_core = 45    
-        add_state_core = 804    
-        add_state_core = 109
-        set_cosmetic_tag = Tito_Warlord
-        add_popularity = {
-        ideology = authoritarian_socialist
-        popularity = 1.0
-        }
-        load_oob = tito_oob
-        declare_war_on = {
-        target = SOR
-        type = annex_everything
-        }
-        set_politics = {
-	    ruling_party = authoritarian_socialist
-        elections_allowed = no
-        last_election = "1935.12.17"
-        election_frequency = 48
-        }            
-        }
-        BOS = {
-        transfer_state = 104
-        add_state_core = 104   
-        }
-        }
-}
-
 country_event = { #heynig
 	id = worldwar.35
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
@@ -700,4 +651,54 @@ country_event = { #heynig
         transfer_state = 369    
         }
         }
-}        
+}  
+country_event = { #code debug
+	id = worldwar.36
+	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
+	title = worldwar.36.t
+	desc = worldwar.36.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = worldwar.36.a
+        CRT = {     
+        transfer_state = 109
+        transfer_state = 815    
+        transfer_state = 45    
+        transfer_state = 804    
+        transfer_state = 109
+        add_state_core = 109
+        add_state_core = 815    
+        add_state_core = 45    
+        add_state_core = 804    
+        add_state_core = 109
+        set_cosmetic_tag = Tito_Warlord
+        add_popularity = {
+        ideology = authoritarian_socialist
+        popularity = 1.0
+        }
+        load_oob = tito_oob
+        declare_war_on = {
+        target = SOR
+        type = annex_everything
+        }
+        set_politics = {
+	    ruling_party = authoritarian_socialist
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+        }            
+        }
+        BOS = {
+        transfer_state = 104
+        add_state_core = 104   
+        }
+        }
+}
+
+      
