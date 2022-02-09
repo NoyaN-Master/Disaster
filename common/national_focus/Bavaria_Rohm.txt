@@ -292,7 +292,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BAY_embrace_eugenics
+		id = BAY_union_of_germanic_races
 		icon = GFX_goal
 		relative_position_id = BAY_the_bavarian_eagle_soars
 		x = -3
@@ -397,13 +397,14 @@ focus_tree = {
 		prerequisite = { focus = BAY_the_magic_of_propaganda }
 		prerequisite = { focus = BAY_the_hierarchy }
 		prerequisite = { focus = BAY_germanic_family_model }
+		prerequisite = { focus = BAY_union_of_germanic_races }
 		completion_reward = {
 
 		}
 	}
 
 	focus = {
-		id = BAY_germanic_union
+		id = BAY_deutsche_sciences
 		icon = GFX_goal
 		relative_position_id = BAY_the_bavarian_eagle_soars
 		x = 2
@@ -439,7 +440,7 @@ focus_tree = {
 		x = 1
 		y = 6
 		cost = 4
-		prerequisite = { focus = BAY_germanic_union }
+		prerequisite = { focus = BAY_deutsche_sciences }
 		prerequisite = { focus = BAY_empower_high_command }
 		completion_reward = {
 
