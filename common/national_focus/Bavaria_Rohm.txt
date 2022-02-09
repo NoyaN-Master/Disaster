@@ -1,0 +1,470 @@
+focus_tree = {
+	id = BAY_rohm
+	country = {
+		factor = 0
+	}
+	continuous_focus_position = { x = 50 y = 2000 }
+
+
+	focus = {
+		id = BAY_rohm_solidifying_rule
+		icon = GFX_goal
+		x = 5
+		y = 0
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BAY_rohm_controls_bavaria_check_tt
+				has_country_leader = {
+					name = "Ernst Röhm"
+					ruling_only = yes
+				}
+			}
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = BAY_rohm_controls_bavaria_check_tt
+				has_country_leader = {
+					name = "Ernst Röhm"
+					ruling_only = yes
+				}
+			}
+		}
+		cost = 0
+		completion_reward = {
+			custom_effect_tooltip = BAY_rohm_solidifying_rule_tt
+		}
+	}
+
+	focus = {
+		id = BAY_the_communist_plague
+		icon = GFX_goal
+		relative_position_id = BAY_rohm_solidifying_rule
+		x = -1
+		y = 1
+		cost = 2
+		prerequisite = { focus = BAY_rohm_solidifying_rule }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_terror_in_the_streets
+		icon = GFX_goal
+		relative_position_id = BAY_rohm_solidifying_rule
+		x = -1
+		y = 2
+		cost = 2
+		prerequisite = { focus = BAY_the_communist_plague }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_reconcile_goebellites
+		icon = GFX_goal
+		relative_position_id = BAY_rohm_solidifying_rule
+		x = -3
+		y = 2
+		cost = 2
+		prerequisite = { focus = BAY_the_communist_plague }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_the_terrorists_subdued
+		icon = GFX_goal
+		relative_position_id = BAY_rohm_solidifying_rule
+		x = -2
+		y = 3
+		cost = 2
+		prerequisite = { focus = BAY_reconcile_goebellites }
+		prerequisite = { focus = BAY_terror_in_the_streets }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_the_liberal_demons
+		icon = GFX_goal
+		relative_position_id = BAY_rohm_solidifying_rule
+		x = 1
+		y = 1
+		cost = 2
+		prerequisite = { focus = BAY_rohm_solidifying_rule }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_hang_their_politicians
+		icon = GFX_goal
+		relative_position_id = BAY_rohm_solidifying_rule
+		x = 1
+		y = 2
+		cost = 2
+		prerequisite = { focus = BAY_the_liberal_demons }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_burn_their_books
+		icon = GFX_goal
+		relative_position_id = BAY_rohm_solidifying_rule
+		x = 3
+		y = 2
+		cost = 2
+		prerequisite = { focus = BAY_the_liberal_demons }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_democracy_extinguished
+		icon = GFX_goal
+		relative_position_id = BAY_rohm_solidifying_rule
+		x = 2
+		y = 3
+		cost = 2
+		prerequisite = { focus = BAY_hang_their_politicians }
+		prerequisite = { focus = BAY_burn_their_books }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_the_bavarian_eagle_soars
+		icon = GFX_goal
+		relative_position_id = BAY_rohm_solidifying_rule
+		x = 0
+		y = 4
+		cost = 4
+		prerequisite = { focus = BAY_the_terrorists_subdued }
+		prerequisite = { focus = BAY_democracy_extinguished }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_end_the_capitalists
+		icon = GFX_goal
+		relative_position_id = BAY_the_bavarian_eagle_soars
+		x = 2
+		y = 1
+		cost = 3
+		prerequisite = { focus = BAY_the_bavarian_eagle_soars }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_drive_out_the_hebrew_menace
+		icon = GFX_goal
+		relative_position_id = BAY_the_bavarian_eagle_soars
+		x = 1
+		y = 1
+		cost = 3
+		prerequisite = { focus = BAY_the_bavarian_eagle_soars }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_die_deutsche_arbeitersfront
+		icon = GFX_goal
+		relative_position_id = BAY_the_bavarian_eagle_soars
+		x = -1
+		y = 1
+		cost = 3
+		prerequisite = { focus = BAY_the_bavarian_eagle_soars }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_end_the_capitalists
+		icon = GFX_goal
+		relative_position_id = BAY_the_bavarian_eagle_soars
+		x = 3
+		y = 1
+		cost = 3
+		prerequisite = { focus = BAY_the_bavarian_eagle_soars }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_sustained_autarky
+		icon = GFX_goal
+		relative_position_id = BAY_the_bavarian_eagle_soars
+		x = -3
+		y = 1
+		cost = 3
+		prerequisite = { focus = BAY_the_bavarian_eagle_soars }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_embrace_militarism
+		icon = GFX_goal
+		relative_position_id = BAY_the_bavarian_eagle_soars
+		x = -1
+		y = 2
+		cost = 3
+		prerequisite = { focus = BAY_sustained_autarky }
+		prerequisite = { focus = BAY_die_deutsche_arbeitersfront }
+		prerequisite = { focus = BAY_end_the_capitalists }
+		prerequisite = { focus = BAY_drive_out_the_hebrew_menace }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_industrialize_bavaria
+		icon = GFX_goal
+		relative_position_id = BAY_the_bavarian_eagle_soars
+		x = 1
+		y = 2
+		cost = 3
+		prerequisite = { focus = BAY_sustained_autarky }
+		prerequisite = { focus = BAY_die_deutsche_arbeitersfront }
+		prerequisite = { focus = BAY_end_the_capitalists }
+		prerequisite = { focus = BAY_drive_out_the_hebrew_menace }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_positive_christianity
+		icon = GFX_goal
+		relative_position_id = BAY_the_bavarian_eagle_soars
+		x = 0
+		y = 3
+		cost = 3
+		prerequisite = { focus = BAY_embrace_militarism focus = BAY_industrialize_bavaria }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_the_magic_of_propaganda
+		icon = GFX_goal
+		relative_position_id = BAY_the_bavarian_eagle_soars
+		x = 0
+		y = 4
+		cost = 4
+		prerequisite = { focus = BAY_positive_christianity }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_form_the_SA
+		icon = GFX_goal
+		relative_position_id = BAY_the_bavarian_eagle_soars
+		x = -2
+		y = 3
+		cost = 3
+		prerequisite = { focus = BAY_embrace_militarism }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_embrace_eugenics
+		icon = GFX_goal
+		relative_position_id = BAY_the_bavarian_eagle_soars
+		x = -3
+		y = 4
+		cost = 4
+		prerequisite = { focus = BAY_form_the_SA }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_expand_resources
+		icon = GFX_goal
+		relative_position_id = BAY_the_bavarian_eagle_soars
+		x = 2
+		y = 3
+		cost = 3
+		prerequisite = { focus = BAY_industrialize_bavaria }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_expand_resources
+		icon = GFX_goal
+		relative_position_id = BAY_the_bavarian_eagle_soars
+		x = 2
+		y = 3
+		cost = 4
+		prerequisite = { focus = BAY_industrialize_bavaria }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_germanic_family_model
+		icon = GFX_goal
+		relative_position_id = BAY_the_bavarian_eagle_soars
+		x = 1
+		y = 4
+		cost = 4
+		prerequisite = { focus = BAY_expand_resources }
+		prerequisite = { focus = BAY_positive_christianity }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_infastructure_plans
+		icon = GFX_goal
+		relative_position_id = BAY_the_bavarian_eagle_soars
+		x = 3
+		y = 4
+		cost = 4
+		prerequisite = { focus = BAY_expand_resources }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_empower_high_command
+		icon = GFX_goal
+		relative_position_id = BAY_the_bavarian_eagle_soars
+		x = 0
+		y = 5
+		cost = 4
+		prerequisite = { focus = BAY_infastructure_plans }
+		prerequisite = { focus = BAY_the_magic_of_propaganda }
+		prerequisite = { focus = BAY_the_hierarchy }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_the_magic_of_propaganda
+		icon = GFX_goal
+		relative_position_id = BAY_the_bavarian_eagle_soars
+		x = -1
+		y = 4
+		cost = 4
+		prerequisite = { focus = BAY_positive_christianity }
+		prerequisite = { focus = BAY_form_the_SA }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_end_the_persecution
+		icon = GFX_goal
+		relative_position_id = BAY_the_bavarian_eagle_soars
+		x = -2
+		y = 5
+		cost = 4
+		prerequisite = { focus = BAY_infastructure_plans }
+		prerequisite = { focus = BAY_the_magic_of_propaganda }
+		prerequisite = { focus = BAY_the_hierarchy }
+		prerequisite = { focus = BAY_germanic_family_model }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_germanic_union
+		icon = GFX_goal
+		relative_position_id = BAY_the_bavarian_eagle_soars
+		x = 2
+		y = 5
+		cost = 4
+		prerequisite = { focus = BAY_infastructure_plans }
+		prerequisite = { focus = BAY_the_magic_of_propaganda }
+		prerequisite = { focus = BAY_the_hierarchy }
+		prerequisite = { focus = BAY_germanic_family_model }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_anticapitalist_ethos
+		icon = GFX_goal
+		relative_position_id = BAY_the_bavarian_eagle_soars
+		x = -1
+		y = 6
+		cost = 4
+		prerequisite = { focus = BAY_end_the_persecution }
+		prerequisite = { focus = BAY_empower_high_command }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_national_struggle
+		icon = GFX_goal
+		relative_position_id = BAY_the_bavarian_eagle_soars
+		x = 1
+		y = 6
+		cost = 4
+		prerequisite = { focus = BAY_germanic_union }
+		prerequisite = { focus = BAY_empower_high_command }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_rebirth_of_germany
+		icon = GFX_goal
+		relative_position_id = BAY_the_bavarian_eagle_soars
+		x = 0
+		y = 7
+		cost = 4
+		prerequisite = { focus = BAY_anticapitalist_ethos }
+		prerequisite = { focus = BAY_national_struggle }
+		completion_reward = {
+
+		}
+	}
+
+	
+
+
+
+
+
+
+}
