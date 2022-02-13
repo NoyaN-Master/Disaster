@@ -1,12 +1,12 @@
-add_namespace = fuller
+add_namespace = sklfuller
 add_namespace = fullerunification
 
 
 country_event = { #Iron Monster
-	id = fuller.1
+	id = sklfuller.1
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
-	title = fuller.1.t
-	desc = fuller.1.d
+	title = sklfuller.1.t
+	desc = sklfuller.1.d
 
 	picture = GFX_report_event_aut_dollfuss_speech
 
@@ -15,15 +15,15 @@ country_event = { #Iron Monster
 	is_triggered_only = yes
 
 	option = {
-		name = fuller.1.a
+		name = sklfuller.1.a
 	}
 }
 
 country_event = { #Corum Telegram
-	id = fuller.2
+	id = sklfuller.2
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
-	title = fuller.2.t
-	desc = fuller.2.d
+	title = sklfuller.2.t
+	desc = sklfuller.2.d
 
 	picture = GFX_report_event_aut_dollfuss_speech
 
@@ -32,15 +32,15 @@ country_event = { #Corum Telegram
 	is_triggered_only = yes
 
 	option = {
-		name = fuller.2.a
+		name = sklfuller.2.a
 	}
 }
 
 country_event = { #Investigate Cult
-	id = fuller.3
+	id = sklfuller.3
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
-	title = fuller.3.t
-	desc = fuller.3.d
+	title = sklfuller.3.t
+	desc = sklfuller.3.d
 
 	picture = GFX_report_event_aut_dollfuss_speech
 
@@ -49,15 +49,15 @@ country_event = { #Investigate Cult
 	is_triggered_only = yes
 
 	option = {
-		name = fuller.3.a
+		name = sklfuller.3.a
 	}
 }
 
 country_event = { #Iron Bogatyrs
-	id = fuller.4
+	id = sklfuller.4
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
-	title = fuller.4.t
-	desc = fuller.4.d
+	title = sklfuller.4.t
+	desc = sklfuller.4.d
 
 	picture = GFX_report_event_aut_dollfuss_speech
 
@@ -66,7 +66,7 @@ country_event = { #Iron Bogatyrs
 	is_triggered_only = yes
 
 	option = {
-		name = fuller.4.a
+		name = sklfuller.4.a
 		division = "name = \"Bogatyr\" division_template = \"Tank Brigades\" start_experience_factor = 1.0 start_equipment_factor = 1.0" owner = SKL
 		add_stability = 0.1
 		add_war_support = 0.1
@@ -74,10 +74,10 @@ country_event = { #Iron Bogatyrs
 }
 
 country_event = { #Janniess
-	id = fuller.5
+	id = sklfuller.5
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
-	title = fuller.5.t
-	desc = fuller.5.d
+	title = sklfuller.5.t
+	desc = sklfuller.5.d
 
 	picture = GFX_report_event_aut_dollfuss_speech
 
@@ -86,7 +86,7 @@ country_event = { #Janniess
 	is_triggered_only = yes
 
 	option = {
-		name = fuller.5.a
+		name = sklfuller.5.a
 		division = "name = \"Subutuay Division\" division_template = \"Subutuay Units\" start_experience_factor = 1.0 start_equipment_factor = 1.0" owner = SKL
 		division = "name = \"Subutuay Division\" division_template = \"Subutuay Units\" start_experience_factor = 1.0 start_equipment_factor = 1.0" owner = SKL
 		division = "name = \"Subutuay Division\" division_template = \"Subutuay Units\" start_experience_factor = 1.0 start_equipment_factor = 1.0" owner = SKL
@@ -118,10 +118,10 @@ country_event = { #Janniess
 }
 
 country_event = { #Threaten Enver With Nuri's Life: Reaching Out
-	id = fuller.6
+	id = sklfuller.6
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
-	title = fuller.6.t
-	desc = fuller.6.d
+	title = sklfuller.6.t
+	desc = sklfuller.6.d
 
 	picture = GFX_report_event_aut_dollfuss_speech
 
@@ -130,17 +130,17 @@ country_event = { #Threaten Enver With Nuri's Life: Reaching Out
 	is_triggered_only = yes
 
 	option = {
-		name = fuller.6.a
+		name = sklfuller.6.a
 		custom_effect_tooltip = save_nuri_first_tt
-		country_event = { id = fuller.7 }
+		country_event = { id = sklfuller.7 }
 	}
 }
 
 country_event = { #Threaten Enver With Nuri's Life: Executing The Plan
-	id = fuller.7
+	id = sklfuller.7
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
-	title = fuller.7.t
-	desc = fuller.7.d
+	title = sklfuller.7.t
+	desc = sklfuller.7.d
 
 	picture = GFX_report_event_aut_dollfuss_speech
 
@@ -149,17 +149,17 @@ country_event = { #Threaten Enver With Nuri's Life: Executing The Plan
 	is_triggered_only = yes
 
 	option = {
-		name = fuller.7.a
+		name = sklfuller.7.a
 	custom_effect_tooltip = save_nuri_execution_tt	
-	country_event = { id = fuller.8 }
+	country_event = { id = sklfuller.8 }
 	}
 }
 
 country_event = { #Threaten Enver With Nuri's Life: Ze Telegram
-	id = fuller.8
+	id = sklfuller.8
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
-	title = fuller.8.t
-	desc = fuller.8.d
+	title = sklfuller.8.t
+	desc = sklfuller.8.d
 
 	picture = GFX_report_event_aut_dollfuss_speech
 
@@ -168,7 +168,7 @@ country_event = { #Threaten Enver With Nuri's Life: Ze Telegram
 	is_triggered_only = yes
 
 	option = {
-	name = fuller.8.a
+	name = sklfuller.8.a
 	custom_effect_tooltip = save_nuri_telegram_tt
 	diplomatic_relation = {
    	country = CIB
@@ -179,10 +179,10 @@ country_event = { #Threaten Enver With Nuri's Life: Ze Telegram
 }
 
 country_event = { #Deal With Cowboy
-	id = fuller.9
+	id = sklfuller.9
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
-	title = fuller.9.t
-	desc = fuller.9.d
+	title = sklfuller.9.t
+	desc = sklfuller.9.d
 
 	picture = GFX_report_event_aut_dollfuss_speech
 
@@ -191,7 +191,7 @@ country_event = { #Deal With Cowboy
 	is_triggered_only = yes
 
 	option = {
-	name = fuller.9.a
+	name = sklfuller.9.a
 	custom_effect_tooltip = cowboy_go_tt
 	#will add a idea soon 
 	}
@@ -503,7 +503,7 @@ country_event = { #VGH
 		create_country_leader = {
 		 	name = "Fuller I"
 		 	desc = "POLITICS_Fuller"
-		 	picture = "SKL_Fuller.png"
+		 	picture = "SKL_sklfuller.png"
 		 	expire = "1965.1.1"
 		 	ideology = eso_alexanderism
 		 	traits = { }

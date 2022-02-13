@@ -111,7 +111,6 @@ ideas = {
 						original_tag = BUL
 						has_dlc = "Battle for the Bosporus"
 					}
-					NOT = { has_idea = BUL_army_restrictions }
 				}
 			}
 
@@ -192,8 +191,6 @@ ideas = {
 					limit = {
 						original_tag = BUL
 						has_dlc = "Battle for the Bosporus"
-					}
-					NOT = { has_idea = BUL_army_restrictions }
 				}
 			}
 			ai_will_do = {
@@ -281,7 +278,6 @@ ideas = {
 						original_tag = BUL
 						has_dlc = "Battle for the Bosporus"
 					}
-					NOT = { has_idea = BUL_army_restrictions }
 				}
 			}
 
@@ -413,7 +409,6 @@ ideas = {
 						original_tag = BUL
 						has_dlc = "Battle for the Bosporus"
 					}
-					NOT = { has_idea = BUL_army_restrictions }
 				}
 			}
 

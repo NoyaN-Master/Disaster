@@ -222,15 +222,4 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-
-	### EPP ###
-
-	focus = {
-		id = BAY_epp_triumphant
-		icon = GFX_goal
-		x = 8
-		y = 6
-		cost = 0
-		#allow_branch = { has_completed_focus = BAY_epps_bavaria }
-	}
 }
