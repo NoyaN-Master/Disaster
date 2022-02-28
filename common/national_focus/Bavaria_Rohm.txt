@@ -8,7 +8,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_rohm_solidifying_rule
-		icon = GFX_goal
+		icon = GFX_goal_BAY_side_rohm
 		x = 5
 		y = 0
 		available = {
@@ -37,7 +37,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_the_communist_plague
-		icon = GFX_goal
+		icon = GFX_goal_BAY_COMMUNIST_PLAGUE
 		relative_position_id = BAY_rohm_solidifying_rule
 		x = -1
 		y = 1
@@ -50,7 +50,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_terror_in_the_streets
-		icon = GFX_goal
+		icon = GFX_goal_BAY_TERROR_IN_STREETS
 		relative_position_id = BAY_rohm_solidifying_rule
 		x = -1
 		y = 2
@@ -63,7 +63,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_reconcile_goebellites
-		icon = GFX_goal
+		icon = GFX_goal_BAY_RECONCILE_NAZBOLS
 		relative_position_id = BAY_rohm_solidifying_rule
 		x = -3
 		y = 2
@@ -76,7 +76,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_the_terrorists_subdued
-		icon = GFX_goal
+		icon = GFX_goal_BAY_COMMIES_DESTROYED
 		relative_position_id = BAY_rohm_solidifying_rule
 		x = -2
 		y = 3
@@ -90,7 +90,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_the_liberal_demons
-		icon = GFX_goal
+		icon = GFX_goal_BAY_LIBERAL_DEMON
 		relative_position_id = BAY_rohm_solidifying_rule
 		x = 1
 		y = 1
@@ -103,7 +103,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_hang_their_politicians
-		icon = GFX_goal
+		icon = GFX_goal_BAY_HANG_LIBERALS
 		relative_position_id = BAY_rohm_solidifying_rule
 		x = 1
 		y = 2
@@ -116,7 +116,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_burn_their_books
-		icon = GFX_goal
+		icon = GFX_goal_BAY_BURN_LIB_BOOKS
 		relative_position_id = BAY_rohm_solidifying_rule
 		x = 3
 		y = 2
@@ -129,7 +129,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_democracy_extinguished
-		icon = GFX_goal
+		icon = GFX_goal_BAY_LIBERALISM_EXTINGUISHED
 		relative_position_id = BAY_rohm_solidifying_rule
 		x = 2
 		y = 3
@@ -143,7 +143,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_the_bavarian_eagle_soars
-		icon = GFX_goal
+		icon = GFX_goal_BAY_BAVARIAN_EAGLE
 		relative_position_id = BAY_rohm_solidifying_rule
 		x = 0
 		y = 4
@@ -157,9 +157,9 @@ focus_tree = {
 
 	focus = {
 		id = BAY_end_the_capitalists
-		icon = GFX_goal
+		icon = GFX_goal_BAY_ANTI_CAPITALISM
 		relative_position_id = BAY_the_bavarian_eagle_soars
-		x = 2
+		x = 3
 		y = 1
 		cost = 3
 		prerequisite = { focus = BAY_the_bavarian_eagle_soars }
@@ -170,7 +170,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_drive_out_the_hebrew_menace
-		icon = GFX_goal
+		icon = GFX_goal_BAY_DRIVE_OUT_JEW
 		relative_position_id = BAY_the_bavarian_eagle_soars
 		x = 1
 		y = 1
@@ -183,7 +183,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_die_deutsche_arbeitersfront
-		icon = GFX_goal
+		icon = GFX_goal_BAY_DDA
 		relative_position_id = BAY_the_bavarian_eagle_soars
 		x = -1
 		y = 1
@@ -195,21 +195,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BAY_end_the_capitalists
-		icon = GFX_goal
-		relative_position_id = BAY_the_bavarian_eagle_soars
-		x = 3
-		y = 1
-		cost = 3
-		prerequisite = { focus = BAY_the_bavarian_eagle_soars }
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
 		id = BAY_sustained_autarky
-		icon = GFX_goal
+		icon = GFX_goal_BAY_AUTARKY
 		relative_position_id = BAY_the_bavarian_eagle_soars
 		x = -3
 		y = 1
@@ -222,7 +209,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_embrace_militarism
-		icon = GFX_goal
+		icon = GFX_goal_BAY_MILITARISM
 		relative_position_id = BAY_the_bavarian_eagle_soars
 		x = -1
 		y = 2
@@ -238,7 +225,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_industrialize_bavaria
-		icon = GFX_goal
+		icon = GFX_goal_BAY_ROHM_INDUSTRIALIZE
 		relative_position_id = BAY_the_bavarian_eagle_soars
 		x = 1
 		y = 2
@@ -254,7 +241,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_positive_christianity
-		icon = GFX_goal
+		icon = GFX_goal_BAY_POSITIVE_CHRISTIANITY
 		relative_position_id = BAY_the_bavarian_eagle_soars
 		x = 0
 		y = 3
@@ -266,21 +253,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BAY_the_magic_of_propaganda
-		icon = GFX_goal
-		relative_position_id = BAY_the_bavarian_eagle_soars
-		x = 0
-		y = 4
-		cost = 4
-		prerequisite = { focus = BAY_positive_christianity }
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
 		id = BAY_form_the_SA
-		icon = GFX_goal
+		icon = GFX_goal_BAY_FORM_THE_SA
 		relative_position_id = BAY_the_bavarian_eagle_soars
 		x = -2
 		y = 3
@@ -293,7 +267,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_union_of_germanic_races
-		icon = GFX_goal
+		icon = GFX_goal_BAY_GERMANIC_UNION
 		relative_position_id = BAY_the_bavarian_eagle_soars
 		x = -3
 		y = 4
@@ -306,7 +280,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_expand_resources
-		icon = GFX_goal
+		icon = GFX_goal_BAY_EXPAND_RESOURCES
 		relative_position_id = BAY_the_bavarian_eagle_soars
 		x = 2
 		y = 3
@@ -318,21 +292,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BAY_expand_resources
-		icon = GFX_goal
-		relative_position_id = BAY_the_bavarian_eagle_soars
-		x = 2
-		y = 3
-		cost = 4
-		prerequisite = { focus = BAY_industrialize_bavaria }
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
 		id = BAY_germanic_family_model
-		icon = GFX_goal
+		icon = GFX_goal_BAY_FAMILY_MODEL
 		relative_position_id = BAY_the_bavarian_eagle_soars
 		x = 1
 		y = 4
@@ -346,7 +307,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_infastructure_plans
-		icon = GFX_goal
+		icon = GFX_goal_BAY_RAILWAYS
 		relative_position_id = BAY_the_bavarian_eagle_soars
 		x = 3
 		y = 4
@@ -359,7 +320,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_empower_high_command
-		icon = GFX_goal
+		icon = GFX_goal_BAY_EMPOWER_OFFICERS
 		relative_position_id = BAY_the_bavarian_eagle_soars
 		x = 0
 		y = 5
@@ -374,7 +335,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_the_magic_of_propaganda
-		icon = GFX_goal
+		icon = GFX_goal_BAY_ROHM_PROPAGANDA
 		relative_position_id = BAY_the_bavarian_eagle_soars
 		x = -1
 		y = 4
@@ -388,7 +349,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_end_the_persecution
-		icon = GFX_goal
+		icon = GFX_goal_BAY_LEGALIZE_GAY
 		relative_position_id = BAY_the_bavarian_eagle_soars
 		x = -2
 		y = 5
@@ -405,7 +366,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_deutsche_sciences
-		icon = GFX_goal
+		icon = GFX_goal_BAY_GERMANIC_SCIENCE
 		relative_position_id = BAY_the_bavarian_eagle_soars
 		x = 2
 		y = 5
@@ -420,8 +381,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BAY_anticapitalist_ethos
-		icon = GFX_goal
+		id = BAY_control_the_economy
+		icon = GFX_goal_BAY_CONTROL_ECONOMY
 		relative_position_id = BAY_the_bavarian_eagle_soars
 		x = -1
 		y = 6
@@ -435,7 +396,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_national_struggle
-		icon = GFX_goal
+		icon = GFX_goal_BAY_NATIONAL_STRUGGLE
 		relative_position_id = BAY_the_bavarian_eagle_soars
 		x = 1
 		y = 6
@@ -449,12 +410,12 @@ focus_tree = {
 
 	focus = {
 		id = BAY_rebirth_of_germany
-		icon = GFX_goal
+		icon = GFX_goal_BAY_NEW_GERMANY
 		relative_position_id = BAY_the_bavarian_eagle_soars
 		x = 0
 		y = 7
 		cost = 4
-		prerequisite = { focus = BAY_anticapitalist_ethos }
+		prerequisite = { focus = BAY_control_the_economy }
 		prerequisite = { focus = BAY_national_struggle }
 		completion_reward = {
 

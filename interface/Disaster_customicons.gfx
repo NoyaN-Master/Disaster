@@ -1,4 +1,1040 @@
 spriteTypes = {
+	SpriteType = {		
+		name = "GFX_goal_BAY_ANTI_CAPITALISM"	
+		texturefile = "gfx/interface/goals/BAY_ANTI_CAPITALISM.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_BAY_ANTI_CAPITALISM_shine"	
+		texturefile = "gfx/interface/goals/BAY_ANTI_CAPITALISM.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/BAY_ANTI_CAPITALISM.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/BAY_ANTI_CAPITALISM.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }
+ SpriteType = {		
+	name = "GFX_goal_BAY_AUTARKY"	
+	texturefile = "gfx/interface/goals/BAY_AUTARKY.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_AUTARKY_shine"	
+	texturefile = "gfx/interface/goals/BAY_AUTARKY.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_AUTARKY.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_AUTARKY.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+SpriteType = {		
+	name = "GFX_goal_BAY_BAVARIAN_EAGLE"	
+	texturefile = "gfx/interface/goals/BAY_BAVARIAN_EAGLE.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_BAVARIAN_EAGLE_shine"	
+	texturefile = "gfx/interface/goals/BAY_BAVARIAN_EAGLE.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_BAVARIAN_EAGLE.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_BAVARIAN_EAGLE.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+SpriteType = {		
+	name = "GFX_goal_BAY_BURN_LIB_BOOKS"	
+	texturefile = "gfx/interface/goals/BAY_BURN_LIB_BOOKS.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_BURN_LIB_BOOKS_shine"	
+	texturefile = "gfx/interface/goals/BAY_BURN_LIB_BOOKS.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_BURN_LIB_BOOKS.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_BURN_LIB_BOOKS.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+SpriteType = {		
+	name = "GFX_goal_BAY_COMMIES_DESTROYED"	
+	texturefile = "gfx/interface/goals/BAY_COMMIES_DESTROYED.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_COMMIES_DESTROYED_shine"	
+	texturefile = "gfx/interface/goals/BAY_COMMIES_DESTROYED.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_COMMIES_DESTROYED.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_COMMIES_DESTROYED.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+SpriteType = {		
+	name = "GFX_goal_BAY_COMMUNIST_PLAGUE"	
+	texturefile = "gfx/interface/goals/BAY_COMMUNIST_PLAGUE.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_COMMUNIST_PLAGUE_shine"	
+	texturefile = "gfx/interface/goals/BAY_COMMUNIST_PLAGUE.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_COMMUNIST_PLAGUE.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_COMMUNIST_PLAGUE.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+SpriteType = {		
+	name = "GFX_goal_BAY_CONTROL_ECONOMY"	
+	texturefile = "gfx/interface/goals/BAY_CONTROL_ECONOMY.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_CONTROL_ECONOMY_shine"	
+	texturefile = "gfx/interface/goals/BAY_CONTROL_ECONOMY.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_CONTROL_ECONOMY.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_CONTROL_ECONOMY.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+SpriteType = {		
+	name = "GFX_goal_BAY_DDA"	
+	texturefile = "gfx/interface/goals/BAY_DDA.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_DDA_shine"	
+	texturefile = "gfx/interface/goals/BAY_DDA.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_DDA.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_DDA.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+SpriteType = {		
+	name = "GFX_goal_BAY_DRIVE_OUT_JEW"	
+	texturefile = "gfx/interface/goals/BAY_DRIVE_OUT_JEW.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_DRIVE_OUT_JEW_shine"	
+	texturefile = "gfx/interface/goals/BAY_DRIVE_OUT_JEW.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_DRIVE_OUT_JEW.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_DRIVE_OUT_JEW.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+SpriteType = {		
+	name = "GFX_goal_BAY_EMPOWER_OFFICERS"	
+	texturefile = "gfx/interface/goals/BAY_EMPOWER_OFFICERS.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_EMPOWER_OFFICERS_shine"	
+	texturefile = "gfx/interface/goals/BAY_EMPOWER_OFFICERS.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_EMPOWER_OFFICERS.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_EMPOWER_OFFICERS.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+SpriteType = {		
+	name = "GFX_goal_BAY_EXPAND_RESOURCES"	
+	texturefile = "gfx/interface/goals/BAY_EXPAND_RESOURCES.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_EXPAND_RESOURCES_shine"	
+	texturefile = "gfx/interface/goals/BAY_EXPAND_RESOURCES.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_EXPAND_RESOURCES.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_EXPAND_RESOURCES.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+SpriteType = {		
+	name = "GFX_goal_BAY_FAMILY_MODEL"	
+	texturefile = "gfx/interface/goals/BAY_FAMILY_MODEL.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_FAMILY_MODEL_shine"	
+	texturefile = "gfx/interface/goals/BAY_FAMILY_MODEL.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_FAMILY_MODEL.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_FAMILY_MODEL.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+SpriteType = {		
+	name = "GFX_goal_BAY_FORM_THE_SA"	
+	texturefile = "gfx/interface/goals/BAY_FORM_THE_SA.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_FORM_THE_SA_shine"	
+	texturefile = "gfx/interface/goals/BAY_FORM_THE_SA.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_FORM_THE_SA.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_FORM_THE_SA.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+SpriteType = {		
+	name = "GFX_goal_BAY_GERMANIC_SCIENCE"	
+	texturefile = "gfx/interface/goals/BAY_GERMANIC_SCIENCE.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_GERMANIC_SCIENCE_shine"	
+	texturefile = "gfx/interface/goals/BAY_GERMANIC_SCIENCE.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_GERMANIC_SCIENCE.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_GERMANIC_SCIENCE.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+SpriteType = {		
+	name = "GFX_goal_BAY_GERMANIC_UNION"	
+	texturefile = "gfx/interface/goals/BAY_GERMANIC_UNION.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_GERMANIC_UNION_shine"	
+	texturefile = "gfx/interface/goals/BAY_GERMANIC_UNION.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_GERMANIC_UNION.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_GERMANIC_UNION.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+SpriteType = {		
+	name = "GFX_goal_BAY_HANG_LIBERALS"	
+	texturefile = "gfx/interface/goals/BAY_HANG_LIBERALS.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_HANG_LIBERALS_shine"	
+	texturefile = "gfx/interface/goals/BAY_HANG_LIBERALS.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_HANG_LIBERALS.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_HANG_LIBERALS.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+SpriteType = {		
+	name = "GFX_goal_BAY_LEGALIZE_GAY"	
+	texturefile = "gfx/interface/goals/BAY_LEGALIZE_GAY.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_LEGALIZE_GAY_shine"	
+	texturefile = "gfx/interface/goals/BAY_LEGALIZE_GAY.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_LEGALIZE_GAY.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_LEGALIZE_GAY.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+SpriteType = {		
+	name = "GFX_goal_BAY_LIBERAL_DEMON"	
+	texturefile = "gfx/interface/goals/BAY_LIBERAL_DEMON.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_LIBERAL_DEMON_shine"	
+	texturefile = "gfx/interface/goals/BAY_LIBERAL_DEMON.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_LIBERAL_DEMON.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_LIBERAL_DEMON.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+SpriteType = {		
+	name = "GFX_goal_BAY_LIBERALISM_EXTINGUISHED"	
+	texturefile = "gfx/interface/goals/BAY_LIBERALISM_EXTINGUISHED.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_LIBERALISM_EXTINGUISHED_shine"	
+	texturefile = "gfx/interface/goals/BAY_LIBERALISM_EXTINGUISHED.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_LIBERALISM_EXTINGUISHED.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_LIBERALISM_EXTINGUISHED.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+SpriteType = {		
+	name = "GFX_goal_BAY_MILITARISM"	
+	texturefile = "gfx/interface/goals/BAY_MILITARISM.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_MILITARISM_shine"	
+	texturefile = "gfx/interface/goals/BAY_MILITARISM.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_MILITARISM.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_MILITARISM.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+SpriteType = {		
+	name = "GFX_goal_BAY_NATIONAL_STRUGGLE"	
+	texturefile = "gfx/interface/goals/BAY_NATIONAL_STRUGGLE.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_NATIONAL_STRUGGLE_shine"	
+	texturefile = "gfx/interface/goals/BAY_NATIONAL_STRUGGLE.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_NATIONAL_STRUGGLE.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_NATIONAL_STRUGGLE.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+SpriteType = {		
+	name = "GFX_goal_BAY_NEW_GERMANY"	
+	texturefile = "gfx/interface/goals/BAY_NEW_GERMANY.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_NEW_GERMANY_shine"	
+	texturefile = "gfx/interface/goals/BAY_NEW_GERMANY.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_NEW_GERMANY.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_NEW_GERMANY.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+SpriteType = {		
+	name = "GFX_goal_BAY_POSITIVE_CHRISTIANITY"	
+	texturefile = "gfx/interface/goals/BAY_POSITIVE_CHRISTIANITY.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_POSITIVE_CHRISTIANITY_shine"	
+	texturefile = "gfx/interface/goals/BAY_POSITIVE_CHRISTIANITY.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_POSITIVE_CHRISTIANITY.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_POSITIVE_CHRISTIANITY.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+SpriteType = {		
+	name = "GFX_goal_BAY_RAILWAYS"	
+	texturefile = "gfx/interface/goals/BAY_RAILWAYS.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_RAILWAYS_shine"	
+	texturefile = "gfx/interface/goals/BAY_RAILWAYS.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_RAILWAYS.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_RAILWAYS.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+SpriteType = {		
+	name = "GFX_goal_BAY_RECONCILE_NAZBOLS"	
+	texturefile = "gfx/interface/goals/BAY_RECONCILE_NAZBOLS.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_RECONCILE_NAZBOLS_shine"	
+	texturefile = "gfx/interface/goals/BAY_RECONCILE_NAZBOLS.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_RECONCILE_NAZBOLS.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_RECONCILE_NAZBOLS.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+SpriteType = {		
+	name = "GFX_goal_BAY_ROHM_INDUSTRIALIZE"	
+	texturefile = "gfx/interface/goals/BAY_ROHM_INDUSTRIALIZE.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_ROHM_INDUSTRIALIZE_shine"	
+	texturefile = "gfx/interface/goals/BAY_ROHM_INDUSTRIALIZE.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_ROHM_INDUSTRIALIZE.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_ROHM_INDUSTRIALIZE.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+SpriteType = {		
+	name = "GFX_goal_BAY_ROHM_PROPAGANDA"	
+	texturefile = "gfx/interface/goals/BAY_ROHM_PROPAGANDA.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_ROHM_PROPAGANDA_shine"	
+	texturefile = "gfx/interface/goals/BAY_ROHM_PROPAGANDA.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_ROHM_PROPAGANDA.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_ROHM_PROPAGANDA.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+SpriteType = {		
+	name = "GFX_goal_BAY_TERROR_IN_STREETS"	
+	texturefile = "gfx/interface/goals/BAY_TERROR_IN_STREETS.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_TERROR_IN_STREETS_shine"	
+	texturefile = "gfx/interface/goals/BAY_TERROR_IN_STREETS.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_TERROR_IN_STREETS.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_TERROR_IN_STREETS.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}	
 	SpriteType = {
 		name = "GFX_goal_CRW_kurd_autonomy"
 		texturefile = "gfx/interface/goals/CRW_kurd_autonomy.png"
