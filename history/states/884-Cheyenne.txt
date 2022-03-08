@@ -1,10 +1,10 @@
 
 state={
-	id=846
-	name="STATE_846"
-	manpower = 352168
+	id=884
+	name="STATE_884"
+	manpower = 93278
 	resources={
-		oil=5 # was: 20
+		oil=2 # was: 20
 	}
 	
 	state_category = town
@@ -12,14 +12,13 @@ state={
 	history={
 		owner = KAN
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 			industrial_complex = 1
 		}
 		add_core_of = KAN
 
 	}
-	#4723 4760
 	provinces={
-		1738 1809 7780 11772 12570 12642 
+		4723 4760
 	}
 }
