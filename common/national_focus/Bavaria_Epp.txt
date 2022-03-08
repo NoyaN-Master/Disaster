@@ -9,7 +9,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_epp_triumphant
-		icon = GFX_goal
+		icon = GFX_goal_BAY_stand_epp
 		x = 5
 		y = 0
 	    cost = 0
@@ -19,8 +19,54 @@ focus_tree = {
 	}
 
 	focus = {
+		id = BAY_arrest_liberals
+		icon = GFX_goal_undermine_the_opposition
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = BAY_epp_triumphant
+		}
+		cost = 4
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_reeducate_socialists
+		icon = GFX_goal_Communist_2
+		x = 6
+		y = 1
+		prerequisite = {
+			focus = BAY_epp_triumphant
+		}
+		cost = 4
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = BAY_purge_radicals
+		icon = GFX_goal_RUS_Radicals
+		x = 5
+		y = 2
+		prerequisite = {
+			focus = BAY_arrest_liberals
+		}
+		prerequisite = {
+			focus = BAY_reeducate_socialists
+		}
+		cost = 4
+		completion_reward = {
+			
+		}
+	}
+
+
+	focus = {
 		id = BAY_fixing_the_economy
-		icon = GFX_goal
+		icon = GFX_goal_CLP_believers_economy
 		x = 1
 		y = 1
 		cost = 2
@@ -32,7 +78,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_strengthen_the_peasentry
-		icon = GFX_goal
+		icon = GFX_goal_IZM_farmer
 		relative_position_id = BAY_fixing_the_economy
 		x = -1
 		y = 2
@@ -45,7 +91,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_land_reforms
-		icon = GFX_goal
+		icon = GFX_goal_CLP_Landreform
 		relative_position_id = BAY_fixing_the_economy
 		x = -2
 		y = 3
@@ -58,7 +104,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_agriculture_associations
-		icon = GFX_goal
+		icon = GFX_goal_AUT_maintain_agrarianism
 		relative_position_id = BAY_fixing_the_economy
 		x = -2
 		y = 4
@@ -71,11 +117,14 @@ focus_tree = {
 
 	focus = {
 		id = BAY_align_business
-		icon = GFX_goal
+		icon = GFX_goal_AUT_land_reform
 		relative_position_id = BAY_fixing_the_economy
 		x = 1
 		y = 2
 		cost = 2
+		available = {
+			has_completed_focus = BAY_purge_radicals
+		}
 		prerequisite = { focus = BAY_syndicate_organization }
 		completion_reward = { 
 			
@@ -84,7 +133,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_national_contracts
-		icon = GFX_goal
+		icon = GFX_goal_NGU_Industry
 		relative_position_id = BAY_fixing_the_economy
 		x = 2
 		y = 3
@@ -97,7 +146,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_catholic_unions
-		icon = GFX_goal
+		icon = GFX_goal_AUT_catholic_social_teaching
 		relative_position_id = BAY_fixing_the_economy
 		x = 2
 		y = 4
@@ -110,7 +159,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_class_cooperation
-		icon = GFX_goal
+		icon = GFX_goal_class_coop_shine
 		relative_position_id = BAY_fixing_the_economy
 		x = 0
 		y = 3
@@ -123,7 +172,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_normalize_interventions
-		icon = GFX_goal
+		icon = GFX_goal_strong_gov
 		relative_position_id = BAY_fixing_the_economy
 		x = 0
 		y = 4
@@ -136,7 +185,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_syndicate_organization
-		icon = GFX_goal
+		icon = GFX_goal_orbay_worker
 		relative_position_id = BAY_fixing_the_economy
 		x = 0
 		y = 1
@@ -149,7 +198,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_the_corporate_state
-		icon = GFX_goal
+		icon = GFX_goal_AUT_corporatist_ideals
 		relative_position_id = BAY_fixing_the_economy
 		x = 0
 		y = 5
@@ -165,10 +214,25 @@ focus_tree = {
 	focus = {
 		id = BAY_saving_our_bavaria
 		icon = GFX_goal
-		x = 9
+		x = 10
 		y = 1
 		cost = 2
 		prerequisite = { focus = BAY_epp_triumphant }
+		available = {
+			has_completed_focus = BAY_purge_radicals
+		}
+		completion_reward = { 
+			
+		}
+	}
+
+	focus = {
+		id = BAY_restoration
+		icon = GFX_goal
+		x = 10
+		y = 2
+		cost = 2
+		prerequisite = { focus = BAY_saving_our_bavaria }
 		completion_reward = { 
 			
 		}
@@ -176,7 +240,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_catholic_state_religion
-		icon = GFX_goal
+		icon = GFX_goal_BAY_appeal_to_christians
 		relative_position_id = BAY_saving_our_bavaria
 		x = -2
 		y = 1
