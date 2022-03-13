@@ -146,7 +146,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_catholic_unions
-		icon = GFX_goal_AUT_catholic_social_teaching
+		icon = GFX_goal
 		relative_position_id = BAY_fixing_the_economy
 		x = 2
 		y = 4
@@ -253,7 +253,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_catholic_schooling
-		icon = GFX_goal
+		icon = GFX_goal_generic_conversion
 		relative_position_id = BAY_saving_our_bavaria
 		x = -3
 		y = 2
@@ -266,7 +266,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_clergy_in_government
-		icon = GFX_goal
+		icon = GFX_goal_AUT_clergy_in_government
 		relative_position_id = BAY_saving_our_bavaria
 		x = -1
 		y = 2
@@ -279,7 +279,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_religious_nationalism
-		icon = GFX_goal
+		icon = GFX_goal_lba_cult_of_personality
 		relative_position_id = BAY_saving_our_bavaria
 		x = -2
 		y = 3
@@ -293,7 +293,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_morality_first
-		icon = GFX_goal
+		icon = GFX_goal_AUT_catholic_social_teaching
 		relative_position_id = BAY_saving_our_bavaria
 		x = -2
 		y = 4
@@ -306,7 +306,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_expanding_the_army
-		icon = GFX_goal
+		icon = GFX_goal_generic_soldier1
 		relative_position_id = BAY_saving_our_bavaria
 		x = 2
 		y = 1
@@ -400,7 +400,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_militaristic_propaganda
-		icon = GFX_goal
+		icon = GFX_goal_BAY_ROHM_PROPAGANDA
 		relative_position_id = BAY_saving_our_bavaria
 		x = 3
 		y = 4
