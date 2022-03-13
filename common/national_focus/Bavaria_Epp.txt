@@ -7,7 +7,7 @@ focus_tree = {
 
 	### EPP START ###
 
-	focus = {
+	focus = { 
 		id = BAY_epp_triumphant
 		icon = GFX_goal_BAY_stand_epp
 		x = 5
@@ -34,7 +34,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_reeducate_socialists
-		icon = GFX_goal_Communist_2
+		icon = GFX_goal_communist_2
 		x = 6
 		y = 1
 		prerequisite = {
@@ -211,9 +211,9 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { #needs unique
 		id = BAY_saving_our_bavaria
-		icon = GFX_goal
+		icon = GFX_goal 
 		x = 10
 		y = 1
 		cost = 2
@@ -226,7 +226,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { #needs unique
 		id = BAY_restoration
 		icon = GFX_goal
 		x = 10
@@ -317,7 +317,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { #needs unique
 		id = BAY_military_freikorps
 		icon = GFX_goal
 		relative_position_id = BAY_saving_our_bavaria
@@ -331,7 +331,7 @@ focus_tree = {
 		mutually_exclusive = { focus = BAY_police_freikorps }
 	}
 
-	focus = {
+	focus = { #needs unique
 		id = BAY_police_freikorps
 		icon = GFX_goal
 		relative_position_id = BAY_saving_our_bavaria
@@ -345,7 +345,7 @@ focus_tree = {
 		mutually_exclusive = { focus = BAY_military_freikorps }
 	}
 
-	focus = {
+	focus = { #needs unique
 		id = BAY_fund_siemens
 		icon = GFX_goal
 		relative_position_id = BAY_saving_our_bavaria
@@ -358,7 +358,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { #needs unique
 		id = BAY_bavarian_iron
 		icon = GFX_goal
 		relative_position_id = BAY_saving_our_bavaria
@@ -371,7 +371,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { #needs unique
 		id = BAY_militarize_bavaria
 		icon = GFX_goal
 		relative_position_id = BAY_saving_our_bavaria
@@ -384,7 +384,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { #needs unique
 		id = BAY_modernize_our_army
 		icon = GFX_goal
 		relative_position_id = BAY_saving_our_bavaria
@@ -411,8 +411,8 @@ focus_tree = {
 			
 		}
 	}
-
-	focus = {
+ 
+	focus = { #needs unique
 		id = BAY_united_bavaria
 		icon = GFX_goal
 		relative_position_id = BAY_saving_our_bavaria
