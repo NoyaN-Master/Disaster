@@ -21,6 +21,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			country_event = { id = bay.1 }
 		}
 	}
 	focus = {
@@ -38,6 +39,7 @@ focus_tree = {
 		prerequisite = { focus = BAY_freikorps_divided }
 		available = { always = no }
 		completion_reward = {
+			custom_effect_tooltip = BAY_picked_epp_tt
 		}
 	}
 
@@ -56,6 +58,7 @@ focus_tree = {
 		prerequisite = { focus = BAY_freikorps_divided }
 		available = { always = no }
 		completion_reward = {
+			custom_effect_tooltip = BAY_picked_rohm_tt
 		}
 	}
 	focus = {
@@ -73,6 +76,8 @@ focus_tree = {
 		prerequisite = { focus = BAY_freikorps_divided }
 		available = { always = no }
 		completion_reward = {
+			custom_effect_tooltip = BAY_picked_himmler_tt
+			custom_effect_tooltip = BAY_himmler_dangerous_tt
 		}
 	}
 
@@ -192,6 +197,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = BAY_appeal_to_catholics	 }
 		completion_reward = {
+			load_focus_tree = BAY_epp
 		}
 	}
 	focus = {
