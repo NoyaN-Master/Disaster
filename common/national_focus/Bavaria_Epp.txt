@@ -133,7 +133,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_national_contracts
-		icon = GFX_goal_NGU_Industry
+		icon = GFX_goal
 		relative_position_id = BAY_fixing_the_economy
 		x = 2
 		y = 3
@@ -159,7 +159,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_class_cooperation
-		icon = GFX_goal_class_coop_shine
+		icon = GFX_goal
 		relative_position_id = BAY_fixing_the_economy
 		x = 0
 		y = 3
@@ -172,7 +172,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_normalize_interventions
-		icon = GFX_goal_strong_gov
+		icon = GFX_goal
 		relative_position_id = BAY_fixing_the_economy
 		x = 0
 		y = 4
@@ -279,7 +279,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_religious_nationalism
-		icon = GFX_goal_lba_cult_of_personality
+		icon = GFX_goal
 		relative_position_id = BAY_saving_our_bavaria
 		x = -2
 		y = 3
@@ -371,9 +371,9 @@ focus_tree = {
 		}
 	}
 
-	focus = { #needs unique
+	focus = {
 		id = BAY_militarize_bavaria
-		icon = GFX_goal
+		icon = GFX_goal_generic_guns1
 		relative_position_id = BAY_saving_our_bavaria
 		x = 2
 		y = 3
