@@ -3,7 +3,8 @@ state={
 	id=849
 	name="STATE_849"
 	resources={
-
+		steel=10.000
+		oil=2.000
 	}
 
 	history={
@@ -18,9 +19,9 @@ state={
 	}
 
 	provinces={
-		13159 
+		709 751 4854 5205 10599 13159 
 	}
-	manpower=0
+	manpower=975841
 	buildings_max_level_factor=1.000
-	state_category=wasteland
+	state_category=large_town
 }
