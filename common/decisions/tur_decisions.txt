@@ -1990,14 +1990,15 @@ ethem_foreign_category = {
             puppet = INR
             INR = {
                 set_cosmetic_tag = INR_ethem_puppet
-                create_country_leader = {
-                    name = "Cemal Mandanoglu"
-                    desc = "POLITICS_Cemal_Madanoglu"
-                    picture = "IZM_Madan.tga"
-                    expire = "1965.1.1"
-                    ideology = unisocialist_subideology
-                    traits = {}
-                }
+                # create_country_leader = {
+                #     name = "Cemal Mandanoglu"
+                #     desc = "POLITICS_Cemal_Madanoglu"
+                #     picture = "IZM_Madan.tga"
+                #     expire = "1965.1.1"
+                #     ideology = unisocialist_subideology
+                #     traits = {}
+                # }
+                recruit_character = IZM_cemal_puppet
                 set_politics = {
                     ruling_party = unisocialist
                 }
@@ -2025,14 +2026,15 @@ ethem_foreign_category = {
             puppet = PAL
             PAL = {
                 set_cosmetic_tag = PAL_ethem_puppet
-                create_country_leader = {
-                    name = "Samet Pasha"
-                    desc = "POLITICS_Samet_Pasha"
-                    picture = "Portrait_CIB_Samet.tga"
-                    expire = "1965.1.1"
-                    ideology = unisocialist_subideology
-                    traits = {}
-                }
+                # create_country_leader = {
+                #     name = "Samet Pasha"
+                #     desc = "POLITICS_Samet_Pasha"
+                #     picture = "Portrait_CIB_Samet.tga"
+                #     expire = "1965.1.1"
+                #     ideology = unisocialist_subideology
+                #     traits = {}
+                # }
+                recruit_character = IZM_samet_puppet
                 set_politics = {
                     ruling_party = unisocialist
                 }
