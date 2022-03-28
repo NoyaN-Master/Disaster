@@ -1,0 +1,103 @@
+ideas = {
+	country = {
+
+		BAY_commie_problem = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BAY_commie_problem" }
+			picture = BAY
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.25
+				ultranationalist_drift = -0.1
+			}
+		}
+
+		BAY_commie_problem_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BAY_commie_problem" }
+			picture = BAY
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.25
+				ultranationalist_drift = -0.07
+			}
+		}
+
+		BAY_commie_problem_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BAY_commie_problem" }
+			picture = BAY
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.10
+				ultranationalist_drift = -0.02
+			}
+		}
+
+		BAY_commie_problem_4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BAY_commie_problem" }
+			picture = BAY
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+
+		BAY_liberal_problem = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BAY_liberal_problem" }
+			picture = BAY
+			modifier = {
+				stability_factor = -0.3
+				political_power_cost = -1.0
+				ultranationalist_drift = -0.1	
+			}
+		}
+
+		BAY_liberal_problem_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BAY_liberal_problem" }
+			picture = BAY
+			modifier = {
+				stability_factor = -0.25
+				political_power_cost = -0.7
+				ultranationalist_drift = -0.1	
+			}
+		}
+
+		BAY_liberal_problem_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BAY_liberal_problem" }
+			picture = BAY
+			modifier = {
+				stability_factor = -0.15
+				political_power_cost = -0.4
+				ultranationalist_drift = -0.05	
+			}
+		}
+
+		BAY_liberal_problem_4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BAY_liberal_problem" }
+			picture = BAY
+			modifier = {
+				stability_factor = -0.05
+				political_power_cost = -0.2
+				ultranationalist_drift = -0.01	
+			}
+		}
+
+		BAY_divided_freikorps = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BAY_divided_freikorps" }
+			picture = BAY
+			modifier = {
+				stability_weekly_factor = -0.02
+				planning_speed = -0.2
+				political_power_gain = -0.5
+			}
+		}
+
+		BAY_freedom = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BAY_freedom" }
+			picture = BAY
+			modifier = {
+				army_core_defence_factor = 0.1
+				ai_focus_defense_factor = 0.25
+			}
+		}
+		
+	}
+}

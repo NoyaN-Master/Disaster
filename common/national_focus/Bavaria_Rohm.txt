@@ -44,7 +44,10 @@ focus_tree = {
 		cost = 2
 		prerequisite = { focus = BAY_rohm_solidifying_rule }
 		completion_reward = {
-
+			swap_ideas = {
+				remove_idea = BAY_commie_problem
+				add_idea = BAY_commie_problem_2
+			}
 		}
 	}
 
@@ -57,7 +60,26 @@ focus_tree = {
 		cost = 2
 		prerequisite = { focus = BAY_the_communist_plague }
 		completion_reward = {
-
+			if = {
+				limit = {
+					has_completed_focus = BAY_reconcile_goebellites
+				}
+				swap_ideas = {
+					remove_idea = BAY_commie_problem_3
+					add_idea = BAY_commie_problem_4
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = BAY_reconcile_goebellites
+					}
+				}
+				swap_ideas = {
+					remove_idea = BAY_commie_problem_2
+					add_idea = BAY_commie_problem_3
+				}
+			}
 		}
 	}
 
@@ -70,8 +92,27 @@ focus_tree = {
 		cost = 2
 		prerequisite = { focus = BAY_the_communist_plague }
 		completion_reward = {
-
-		}
+			if = {
+				limit = {
+					has_completed_focus = BAY_terror_in_the_streets
+				}
+				swap_ideas = {
+					remove_idea = BAY_commie_problem_3
+					add_idea = BAY_commie_problem_4
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = BAY_terror_in_the_streets
+					}
+				}
+				swap_ideas = {
+					remove_idea = BAY_commie_problem_2
+					add_idea = BAY_commie_problem_3
+				}
+			}
+		}	
 	}
 
 	focus = {
@@ -84,7 +125,7 @@ focus_tree = {
 		prerequisite = { focus = BAY_reconcile_goebellites }
 		prerequisite = { focus = BAY_terror_in_the_streets }
 		completion_reward = {
-
+			remove_ideas = BAY_commie_problem_4
 		}
 	}
 
@@ -97,7 +138,7 @@ focus_tree = {
 		cost = 2
 		prerequisite = { focus = BAY_rohm_solidifying_rule }
 		completion_reward = {
-
+			remove_ideas = BAY_liberal_problem_2
 		}
 	}
 
@@ -110,7 +151,26 @@ focus_tree = {
 		cost = 2
 		prerequisite = { focus = BAY_the_liberal_demons }
 		completion_reward = {
-
+			if = {
+				limit = {
+					has_completed_focus = BAY_burn_their_books
+				}
+				swap_ideas = {
+					remove_idea = BAY_liberal_problem_3
+					add_idea = BAY_liberal_problem_4
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = BAY_burn_their_books
+					}
+				}
+				swap_ideas = {
+					remove_idea = BAY_liberal_problem_2
+					add_idea = BAY_liberal_problem_3
+				}
+			}
 		}
 	}
 
@@ -123,7 +183,26 @@ focus_tree = {
 		cost = 2
 		prerequisite = { focus = BAY_the_liberal_demons }
 		completion_reward = {
-
+			if = {
+				limit = {
+					has_completed_focus = BAY_hang_their_politicians
+				}
+				swap_ideas = {
+					remove_idea = BAY_liberal_problem_3
+					add_idea = BAY_liberal_problem_4
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = BAY_hang_their_politicians
+					}
+				}
+				swap_ideas = {
+					remove_idea = BAY_liberal_problem_2
+					add_idea = BAY_liberal_problem_3
+				}
+			}
 		}
 	}
 
@@ -137,7 +216,7 @@ focus_tree = {
 		prerequisite = { focus = BAY_hang_their_politicians }
 		prerequisite = { focus = BAY_burn_their_books }
 		completion_reward = {
-
+			remove_ideas = BAY_liberal_problem_4
 		}
 	}
 
