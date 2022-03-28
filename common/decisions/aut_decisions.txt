@@ -86,7 +86,9 @@ AUT_foreign_deccat = {
 		add_stability = 0.10
 		release_puppet = HNG
 		HNG = {
-		create_country_leader = {
+		#create_country_leader
+#
+#
 	            name = "Miklos Horthy"
 	            #desc = "AUT_Karl_Renner_desc"
 	            picture = "HNG_Horthy.tga"
