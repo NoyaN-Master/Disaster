@@ -1,14 +1,5 @@
 capital = 126
-oob = "ENG_1936"
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_naval_oob = "ENG_1936_Naval"
-	else = {
-		set_naval_oob = "ENG_1936_Naval_Legacy"
-	}
-}
+
 set_research_slots = 4
 set_technology = {
 	infantry_weapons = 1
