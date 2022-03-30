@@ -13,7 +13,6 @@ KUR_hamidiye_army = {
 			resistance_target_on_our_occupied_states = 1
 			}
 		}
-}
 ################################## turkish idea
 TUR_Struggle_Front = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
@@ -105,10 +104,6 @@ turkey_brother_war_idea = {
 		army_speed_factor = -0.2
 		local_non_core_manpower = 0.3
 	}
-}
-
-	
-	
 }
     tank_manufacturer = { #TANKS
         designer = yes
@@ -315,7 +310,6 @@ turkey_brother_war_idea = {
                add_stability = 0.05 
             }
 		}      
-
     }
-
+}
 }

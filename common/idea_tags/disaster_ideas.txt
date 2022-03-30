@@ -1,6 +1,6 @@
 idea_categories = {
 
-hidden_ideas = {
+	hidden_ideas = {
 		hidden = yes
 	
 		cost = 0
@@ -18,7 +18,7 @@ hidden_ideas = {
 		ledger = hidden
 	}
 	
-disaster_government = {
+	disaster_government = {
 		slot = head_of_government
 		slot = economic_policy
 		slot = government_style
@@ -63,6 +63,4 @@ slot_ledgers = {
 	
 	
 	mobilization_laws = civilian
-}
-
 }
