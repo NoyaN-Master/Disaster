@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Jorge Eliécer Gaitán"
-	#desc = "COL_Jorge_Gaitan_desc"
-	picture = "COL_Jorge_Gaitan.tga"
-	expire = "2020.1.1"
-	ideology = social_democrat_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = COL_jorge_eliécer_gaitán
+recruit_character = COL_juan_francisco_la_mar
+recruit_character = COL_antonio_blanche
+recruit_character = COL_eduardo_franco
+recruit_character = COL_nicolás_salaverry
+recruit_character = COL_antonio_de_santa_cruz
+recruit_character = COL_francisco_montero
+recruit_character = COL_josé_miguel_salaverry
+recruit_character = COL_aureliano_de_santa_cruz
+recruit_character = COL_germán_santa_maría
+recruit_character = COL_josé_miguel_arteaga
+recruit_character = COL_alejandro_guilarte

@@ -42,13 +42,15 @@ add_ideas = 	autocracy
 add_ideas = 	interventionism 
 add_ideas = 	semi_industrial_society
 
-create_country_leader = {
-	name = "Saud bin Abdulaziz"
-	desc = "ARB_Saud_Abdulaziz_desc"
-	picture = "ARB_Saud_Abdulaziz.tga"
-	expire = "2020.1.1"
-	ideology = authoritarian_democrat_subideology
-	traits = {
-		
-	}
-}
+recruit_character = ARB_saud_bin_abdulaziz
+recruit_character = ARB_alex_walker
+recruit_character = ARB_john_smith
+recruit_character = ARB_peter_smith
+recruit_character = ARB_lucas_brown
+recruit_character = ARB_jim_wilson
+recruit_character = ARB_alexander_taylor
+recruit_character = ARB_jim_taylor
+recruit_character = ARB_marcus_wilson
+recruit_character = ARB_bob_white
+recruit_character = ARB_jonas_white
+recruit_character = ARB_johannes_roberts

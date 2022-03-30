@@ -51,24 +51,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Getúlio Vargas"
-	#desc = "BRA_Getulio_Vargas_desc"
-	picture = "BRA_Getulio_Vargas.tga"
-	expire = "2020.1.1"
-	ideology = kemalism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Plínio Salgado"
-	#desc = "BRA_Plínio_Salgado_desc"
-	picture = "BRA_Plinio_Salgado.tga"
-	expire = "2020.1.1"
-	ideology = ultranationalist_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = BRA_getúlio_vargas
+recruit_character = BRA_plínio_salgado
+recruit_character = BRA_josé_saldanha_da_gama
+recruit_character = BRA_cândido_santos
+recruit_character = BRA_emílio_soares
+recruit_character = BRA_deodoro_da_costa
+recruit_character = BRA_luís_da_fonseca
+recruit_character = BRA_custódio_da_fonseca
+recruit_character = BRA_ernesto_de_noronha
+recruit_character = BRA_joaquim_bittencourt
+recruit_character = BRA_mário_brandão
+recruit_character = BRA_eduardo_bras

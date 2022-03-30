@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 70
 }
 
-create_country_leader = {
-	name = "Nestor Makhno"
-	#desc = "FRI_Nestor Makhno_desc"
-	picture = "FRI_Nestor_Makhno.tga"
-	expire = "2020.1.1"
-	ideology = revolutionary_anarchist_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = FRI_nestor_makhno
+recruit_character = FRI_johannes_williams
+recruit_character = FRI_bob_williams
+recruit_character = FRI_bob_wilson
+recruit_character = FRI_alex_evans
+recruit_character = FRI_lucas_evans
+recruit_character = FRI_alexander_walker
+recruit_character = FRI_alexander_jones
+recruit_character = FRI_jim_taylor
+recruit_character = FRI_lucas_taylor
+recruit_character = FRI_peter_wilson
+recruit_character = FRI_jonas_white

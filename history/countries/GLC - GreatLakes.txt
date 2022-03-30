@@ -49,77 +49,16 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Wendell Wilkie"
-	desc = "GLC_Robert_A_Taft_desc" #Needs portrait
-	picture = "GLC_Robert_A_Taft.tga"#Needs portrait
-	expire = "1953.7.31"
-	ideology = liberal_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = GLC_wendell_wilkie
+recruit_character = GLC_charles_coughlin
+recruit_character = GLC_robert_m._la_follette_jr.
+recruit_character = GLC_robert_a._taft
+recruit_character = GLC_henry_ford
+recruit_character = GLC_d._c._stephenson
+recruit_character = GLC_william_dudley_pelley
+recruit_character = GLC_emilio_abad
+recruit_character = GLC_xusto_gutiérrez
+recruit_character = GLC_sidro_sierra
+recruit_character = GLC_anxo_rey
+recruit_character = GLC_vítor_duarte
 
-create_country_leader = {
-	name = "Charles Coughlin"
-	desc = "GLC_Charles_Coughlin_desc"
-	picture = "GLC_Charles_Coughlin.tga"
-	expire = "1979.10.27"
-	ideology = authoritarian_democrat_subideology
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Robert M. La Follette Jr."
-	desc = "GLC_Robert_M_La_Follette_desc"
-	picture = "GLC_Charles_Coughlin.tga"
-	expire = "1979.10.27"
-	ideology = social_democrat_subideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Robert A. Taft"
-	desc = "GLC_Robert_A_Taft_desc"
-	picture = "GLC_Robert_A_Taft.tga"
-	expire = "1953.7.31"
-	ideology = conservative_subideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Henry Ford"
-	desc = "GLC_Henry_Ford_desc"
-	picture = "GLC_Henry_Ford.tga"
-	expire = "2020.1.1"
-	ideology = ultranationalist_subideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "D. C. Stephenson"
-	desc = "GLC_Stephenson_desc"
-	picture = "GLC_Stephenson.tga"
-	expire = "2020.1.1"
-	ideology = revolutionary_nationalist_subideology
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "William Dudley Pelley"
-	desc = "GLC_Charles_Coughlin_desc"
-	picture = "GLC_Charles_Coughlin.tga"
-	expire = "1979.10.27"
-	ideology = autocratic_subideology
-	traits = {
-		#
-	}
-}

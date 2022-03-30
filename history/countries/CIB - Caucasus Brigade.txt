@@ -93,58 +93,16 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Enver Pasha"
-	#desc = "SES_Zeljko_Raznatovic_desc"
-	picture = "Portrait_CIB_Enver_Pasha.tga"
-	expire = "2020.1.1"
-	ideology = enverism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Samet Pasha"
-	#desc = "SES_Zeljko_Raznatovic_desc"
-	picture = "Portrait_CIB_Samet.tga"
-	expire = "2020.1.1"
-	ideology = neokemalist
-	traits = {
-		#
-	}
-}
-
-create_field_marshal = {
-			name = "Enver Pasha"
-			picture = "Portrait_CIB_Enver_Pasha.tga"
-			traits = { war_hero brilliant_strategist war_hero infantry_officer hill_fighter  enverist_general}
-			skill = 3
-			attack_skill = 2
-			defense_skill = 3
-			planning_skill = 2
-			logistics_skill = 2
-			}	
-			
-create_corps_commander = {
-			name = "Samet Pasha"
-			picture = "Portrait_CIB_Samet.tga"
-			traits = { offensive_doctrine enverist_general }
-			skill = 2
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 2
-			}
-
-create_corps_commander = {
-		name = "Mustafa Muğlalı"
-		picture = "Portrait_CIB_Mustafa_Muglali.tga"
-		traits = { war_hero infantry_officer harsh_leader  enverist_general}
-		skill = 3 #7
-		attack_skill = 3
-		defense_skill = 2
-		planning_skill = 1
-		logistics_skill = 1
-	}
-							
+recruit_character = CIB_enver_pasha
+recruit_character = CIB_samet_pasha
+recruit_character = CIB_mustafa_muğlalı
+recruit_character = CIB_johannes_walker
+recruit_character = CIB_alex_smith
+recruit_character = CIB_marcus_taylor
+recruit_character = CIB_jim_roberts
+recruit_character = CIB_lucas_smith
+recruit_character = CIB_jim_taylor
+recruit_character = CIB_peter_wilson
+recruit_character = CIB_john_wilson
+recruit_character = CIB_peter_evans
+recruit_character = CIB_johannes_smith

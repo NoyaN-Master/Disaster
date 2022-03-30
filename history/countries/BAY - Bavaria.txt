@@ -122,90 +122,38 @@ BAY_commie_problem
 
 
 
-create_country_leader = {
-	name = "Franz Xavier Ritter von Epp"
-	desc = "Franz_Xavier_Ritter_von_Epp_desc"
-	picture = "Portrait_Franz_Xavier_Ritter_von_Epp.tga"
-	expire = "1965.1.1"
-	ideology = ultranationalist_subideology
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Ernst Rohm"
-	desc = "Ernst_Rohm_desc"
-	picture = "Portrait_Ernst_Rohm.tga"
-	expire = "1965.1.1"
-	ideology = revolutionary_nationalist_subideology
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Heinrich Held"
-	desc = "Heinrich_Held_desc"
-	picture = "Portrait_Heinrich_Held.tga"
-	expire = "1965.1.1"
-	ideology = conservative_subideology
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Ernst Thalman"
-	desc = "Ernst_Thalman_desc"
-	picture = "Portrait_Ernst_Thalman.tga"
-	expire = "1965.1.1"
-	ideology = authoritarian_socialist_subideology
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Heinrich Luitpold Himmler"
-	desc = "Himmler_desc"
-	picture = "BAY_Himmler.tga"
-	expire = "1965.1.1"
-	ideology = esoteric_traditionalist_subideology
-	traits = {
-	}
-}
-
-###################### generals
-create_field_marshal = {
-	name = "Franz Xavier Ritter von Epp"
-	portrait_path = "gfx/leaders/BAY/Portrait_Franz_Xavier_Ritter_von_Epp.tga"
-	traits = {
-
-	}
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-create_corps_commander = {
-	name = "Heinrich Himmler"
-	portrait_path = "gfx/leaders/BAY/BAY_Himmler.tga"
-	traits = {
-
-	}
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-create_corps_commander = {
-	name = "Ernst Rohm"
-	portrait_path = "gfx/leaders/BAY/Ernst_Rohm.tga"
-	traits = {
-
-	}
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
+recruit_character = BAY_franz_xavier_ritter_von_epp
+recruit_character = BAY_ernst_rohm
+recruit_character = BAY_heinrich_held
+recruit_character = BAY_ernst_thalman
+recruit_character = BAY_heinrich_luitpold_himmler
+recruit_character = BAY_heinrich_himmler
+recruit_character = BAY_fritz_wagner
+recruit_character = BAY_karl_duttmann
+recruit_character = BAY_marco_hoffmann
+recruit_character = BAY_tobias_muller
+recruit_character = BAY_adolf_behrmann
+recruit_character = BAY_erich_wilbs
+recruit_character = BAY_otto_graf
+recruit_character = BAY_abi
+recruit_character = BAY_communist_guy
+recruit_character = BAY_man
+recruit_character = BAY_ncav
+recruit_character = BAY_coi
+recruit_character = BAY_at
+recruit_character = BAY_pot
+recruit_character = BAY_pf
+recruit_character = BAY_democratic_guy
+recruit_character = BAY_wi
+recruit_character = BAY_acgs
+recruit_character = BAY_mt
+recruit_character = BAY_acd
+recruit_character = BAY_inf
+recruit_character = BAY_acom
+recruit_character = BAY_nt
+recruit_character = BAY_aco
+recruit_character = BAY_ncdb
+recruit_character = BAY_BAYACR
+recruit_character = BAY_fascist_guy
+recruit_character = BAY_ent
+recruit_character = BAY_arg

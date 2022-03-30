@@ -42,13 +42,15 @@ add_ideas = 	military_government
 add_ideas = 	corporatism 
 add_ideas = 	semi_industrial_society
 
-create_country_leader = {
-	name = "Vinayak Damodar Savarkar"
-	desc = "BHR_Savarkar_desc"
-	picture = "BHR_Savarkar.tga"
-	expire = "2020.1.1"
-	ideology = revolutionary_nationalist_subideology
-	traits = {
-		
-	}
-}
+recruit_character = BHR_vinayak_damodar_savarkar
+recruit_character = BHR_jonas_walker
+recruit_character = BHR_alex_smith
+recruit_character = BHR_john_smith
+recruit_character = BHR_alexander_brown
+recruit_character = BHR_peter_brown
+recruit_character = BHR_jim_taylor
+recruit_character = BHR_lucas_wilson
+recruit_character = BHR_johannes_wilson
+recruit_character = BHR_bob_evans
+recruit_character = BHR_bob_smith
+recruit_character = BHR_alex_jones

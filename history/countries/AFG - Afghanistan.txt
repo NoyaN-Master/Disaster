@@ -1,6 +1,20 @@
 capital = 267
 oob = ""
 
+recruit_character = AFG_habibullah_khan
+recruit_character = AFG_ahmad_ahmadi
+recruit_character = AFG_qaysar_nuristani
+recruit_character = AFG_ishaq_shahnawaz
+recruit_character = AFG_abd_alquddus_poya
+recruit_character = AFG_shuja_abdul
+recruit_character = AFG_firuz_aldin_shahnawaz
+recruit_character = AFG_akbar_poya
+recruit_character = AFG_shahpur_yasin
+recruit_character = AFG_mahsud_shahnawaz
+recruit_character = AFG_ayyub_sattari
+recruit_character = AFG_suleyman_karzai
+
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -43,13 +57,3 @@ add_ideas = 	autocracy
 add_ideas = 	interventionism 
 add_ideas = 	semi_industrial_society
 
-create_country_leader = {
-	name = "Habibullah Khan"
-	#desc = "AFG_Khan_desc"
-	picture = "AFG_Khan.tga"
-	expire = "2020.1.1"
-	ideology = autocratic_subideology
-	traits = {
-		#
-	}
-}

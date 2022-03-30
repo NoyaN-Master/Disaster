@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Rafael Trujillo"
-	#desc = "DOM_Rafael_Trujillo_desc"
-	picture = "DOM_Rafael_Trujillo.tga"
-	expire = "2020.1.1"
-	ideology = revolutionary_nationalist_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = DOM_rafael_trujillo
+recruit_character = DOM_josé_miguel_puello
+recruit_character = DOM_benigno_guillermo
+recruit_character = DOM_joaquín_castillo
+recruit_character = DOM_mariano_castro
+recruit_character = DOM_juan_bautista_pelletier
+recruit_character = DOM_calixto_pimentel
+recruit_character = DOM_juan_zayas
+recruit_character = DOM_osvaldo_machado
+recruit_character = DOM_mario_márquez
+recruit_character = DOM_cesáreo_estrada
+recruit_character = DOM_manuel_estrella

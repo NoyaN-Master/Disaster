@@ -42,68 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Culbert Olson"
-	desc = "CAL_Culbert_Olson_desc"
-	picture = "CAL_Culbert_Olson.tga"
-	expire = "2020.1.1"
-	ideology = social_democrat_subideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Upton Sinclair"
-	desc = "CAL_Upton_Sinclair_desc"
-	picture = "CAL_Upton_Sinclair.tga"
-	expire = "2020.1.1"
-	ideology = libertarian_socialist_subideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "James Rolph Jr."
-	desc = "CAL_James_Rolph_desc"
-	picture = "CAL_James_Rolph.tga"
-	expire = "2020.1.1"
-	ideology = liberal_subideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Jay Lovestone"
-	desc = "CAL_Jay_Lovestone_desc"
-	picture = "CAL_Jay_Lovestone.tga"
-	expire = "2020.1.1"
-	ideology = authoritarian_socialist_subideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Pat McCarran"
-	desc = "CAL_Pat_McCarran_desc"
-	picture = "CAL_Pat_McCarran.tga"
-	expire = "2020.1.1"
-	ideology = conservative_subideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "L. Ron Hubbard"
-	desc = "CAL_Hubbard_desc"
-	picture = "CAL_Hubbard.tga"
-	expire = "2020.1.1"
-	ideology = esoteric_traditionalist_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = CAL_culbert_olson
+recruit_character = CAL_upton_sinclair
+recruit_character = CAL_james_rolph_jr.
+recruit_character = CAL_jay_lovestone
+recruit_character = CAL_pat_mccarran
+recruit_character = CAL_l._ron_hubbard
+recruit_character = CAL_john_taylor
+recruit_character = CAL_peter_roberts
+recruit_character = CAL_jim_smith
+recruit_character = CAL_alexander_williams
+recruit_character = CAL_marcus_wilson
+recruit_character = CAL_jonas_wilson

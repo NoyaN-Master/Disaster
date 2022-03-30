@@ -155,35 +155,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Camille Chautemps"
-	#desc = "FRE_Camille_Chautemps_desc"
-	picture = "FRE_Camille_Chautemps.tga"
-	expire = "2020.1.1"
-	ideology = liberal_subideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Maxime Weygand"
-	#desc = "FRE_Maxime_Weygand_desc"
-	picture = "FRE_Maxime_Weygand.tga"
-	expire = "2020.1.1"
-	ideology = authoritarian_democrat_subideology
-	traits = {
-		#
-	}
-}
-
-create_corps_commander = { #Maxime Weygand
-    name = "Maxime Weygand"
-	picture = "FRE_Maxime_Weygand.tga"
-	traits = { defensive_doctrine old_guard inflexible_strategist career_officer }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
-}
+recruit_character = FRE_camille_chautemps
+recruit_character = FRE_maxime_weygand
+recruit_character = FRE_johannes_jones
+recruit_character = FRE_marcus_taylor
+recruit_character = FRE_bob_evans
+recruit_character = FRE_jonas_walker
+recruit_character = FRE_john_walker
+recruit_character = FRE_peter_white
+recruit_character = FRE_alexander_white
+recruit_character = FRE_jim_roberts
+recruit_character = FRE_lucas_taylor
+recruit_character = FRE_lucas_williams

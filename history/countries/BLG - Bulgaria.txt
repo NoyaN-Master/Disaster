@@ -42,13 +42,16 @@ add_ideas = 	multi_party_democracy
 add_ideas = 	interventionism 
 add_ideas = 	industrialized_society
 
-create_country_leader = {
-	name = "Aleksandr Stamboliyski"
-	#desc = "BLG_Aleksandr_Stamboliyski_desc"
-	picture = "BLG_Aleksandr_Stamboliyski.tga"
-	expire = "2020.1.1"
-	ideology = authoritarian_democrat_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = BLG_aleksandr_stamboliyski
+recruit_character = BLG_alexander_roberts
+recruit_character = BLG_alexander_smith
+recruit_character = BLG_jim_taylor
+recruit_character = BLG_lucas_wilson
+recruit_character = BLG_peter_wilson
+recruit_character = BLG_peter_taylor
+recruit_character = BLG_johannes_walker
+recruit_character = BLG_alex_walker
+recruit_character = BLG_marcus_white
+recruit_character = BLG_johannes_smith
+recruit_character = BLG_bob_brown
+

@@ -43,14 +43,15 @@ set_popularities = {
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
-
-create_country_leader = {
-	name = "Friedrich Kress von Kressenstein"
-	desc = "GEO_Kressenstein_desc"
-	picture = "GEO_Kressenstein.tga"
-	expire = "2020.1.1"
-	ideology = autocratic_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = GEO_friedrich_kress_von_kressenstein
+recruit_character = GEO_kandid_jibladze
+recruit_character = GEO_karlo_chkheidze
+recruit_character = GEO_besarion_gelashvili
+recruit_character = GEO_nikoloz_bolkvadze
+recruit_character = GEO_iosef_bagration
+recruit_character = GEO_egnate_dzjughasjvili
+recruit_character = GEO_lavrenti_abkhazivili
+recruit_character = GEO_lavrenti_prangishvili
+recruit_character = GEO_butchu_orbeli
+recruit_character = GEO_noe_nozadze
+recruit_character = GEO_irakli_kvinitadze

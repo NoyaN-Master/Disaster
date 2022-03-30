@@ -1,6 +1,20 @@
 capital = 49
 oob = ""
 
+recruit_character = ANT_collaboration_government
+recruit_character = ANT_kazim_orbay
+recruit_character = ANT_jack_churchill
+recruit_character = ANT_nuri_killigil
+recruit_character = ANT_nazim_hikmet
+recruit_character = ANT_j.f.c_fuller
+recruit_character = ANT_lucas_brown
+recruit_character = ANT_lucas_evans
+recruit_character = ANT_alexander_williams
+recruit_character = ANT_john_wilson
+recruit_character = ANT_jim_evans
+recruit_character = ANT_marcus_smith
+
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -69,68 +83,3 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Collaboration Government"
-	#desc = "SES_Zeljko_Raznatovic_desc"
-	picture = "Portait_ANT_Dual_State.tga"
-	expire = "2020.1.1"
-	ideology = british_collab_government
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Kazim Orbay"
-	#desc = "ANK_Kazim_Orbay_desc"
-	picture = "ANT_Kazim_Orbay.tga"
-	expire = "2020.1.1"
-	ideology = turkish_stratocracy
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Jack Churchill"
-	#desc = "OTH_John_Langenhoven_desc"
-	picture = "ANT_Mad_Jack.tga"
-	expire = "2020.1.1"
-	ideology = mercenary_state
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Nuri Killigil"
-	#desc = "KLG_Nuri_Killigil_desc"
-	picture = "ANT_Nuri_Killigil.tga"
-	expire = "2020.1.1"
-	ideology = ultranationalist_subideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Nazim Hikmet"
-	#desc = "IZM_Nazim_Hikmet_desc"
-	picture = "ANT_Nazim_Hikmet.tga"
-	expire = "2020.1.1"
-	ideology = nazimism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "J.F.C Fuller"
-	#desc = "LUX_Marie_Adelaide_desc"
-	picture = "ANT_Fuller.tga"
-	expire = "2020.1.1"
-	ideology = white_supremacy
-	traits = {
-		#
-	}
-}

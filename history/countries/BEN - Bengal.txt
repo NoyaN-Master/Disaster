@@ -43,13 +43,15 @@ add_ideas = 	autocracy
 add_ideas = 	interventionism 
 add_ideas = 	semi_industrial_society
 
-create_country_leader = {
-	name = "Wasif Ali Mirza"
-	desc = "BEN_Wasif_Ali_Mirza_desc"
-	picture = "BEN_Wasif_Ali_Mirza.tga"
-	expire = "2020.1.1"
-	ideology = authoritarian_democrat_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = BEN_wasif_ali_mirza
+recruit_character = BEN_lucas_brown
+recruit_character = BEN_jim_brown
+recruit_character = BEN_lucas_evans
+recruit_character = BEN_john_white
+recruit_character = BEN_peter_wilson
+recruit_character = BEN_bob_white
+recruit_character = BEN_alex_smith
+recruit_character = BEN_marcus_jones
+recruit_character = BEN_johannes_jones
+recruit_character = BEN_bob_evans
+recruit_character = BEN_jonas_walker

@@ -53,13 +53,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Caliph Abdulmecid"
-	#desc = "SES_Zeljko_Raznatovic_desc"
-	picture = "Portrait_CLP_Abdulmecid.tga"
-	expire = "2020.1.1"
-	ideology = esoteric_islamism_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = CLP_caliph_abdulmecid
+recruit_character = CLP_alex_walker
+recruit_character = CLP_johannes_smith
+recruit_character = CLP_marcus_walker
+recruit_character = CLP_johannes_roberts
+recruit_character = CLP_jim_taylor
+recruit_character = CLP_lucas_taylor
+recruit_character = CLP_peter_brown
+recruit_character = CLP_lucas_walker
+recruit_character = CLP_john_white
+recruit_character = CLP_alexander_roberts
+recruit_character = CLP_bob_wilson

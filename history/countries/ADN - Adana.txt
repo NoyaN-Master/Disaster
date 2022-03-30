@@ -47,13 +47,16 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Fevzi Pasha"
-	#desc = "SES_Zeljko_Raznatovic_desc"
-	picture = "Portrait_ADN_Fevzi_Cakmak.tga"
-	expire = "2020.1.1"
-	ideology = turkish_stratocracy
-	traits = {
-		#
-	}
-}
+recruit_character = ADN_fevzi_pasha
+recruit_character = ADN_marcus_smith
+recruit_character = ADN_jonas_jones
+recruit_character = ADN_bob_evans
+recruit_character = ADN_john_evans
+recruit_character = ADN_peter_walker
+recruit_character = ADN_jim_roberts
+recruit_character = ADN_alexander_taylor
+recruit_character = ADN_alexander_white
+recruit_character = ADN_peter_jones
+recruit_character = ADN_marcus_taylor
+recruit_character = ADN_jonas_williams
+

@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Solomon Krym"
-	#desc = "CRI_Solomon_Krym_desc"
-	picture = "CRI_Solomon_Krym.tga"
-	expire = "2020.1.1"
-	ideology = liberal_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = CRI_solomon_krym
+recruit_character = CRI_redvan_kadyrov
+recruit_character = CRI_andrij_pavlov
+recruit_character = CRI_giorgi_ibraimov
+recruit_character = CRI_pyotr_osadchuk
+recruit_character = CRI_amet_yudenich
+recruit_character = CRI_remzi_yegorov
+recruit_character = CRI_vitalij_surkov
+recruit_character = CRI_heorhij_bondarchuk
+recruit_character = CRI_semyon_bilyk
+recruit_character = CRI_ahtem_chibisov
+recruit_character = CRI_refiyîk_budyonny

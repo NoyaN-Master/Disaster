@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Ramón Grau San Martín"
-	#desc = "CUB_Ramon_Grau_desc"
-	picture = "CUB_Ramon_Grau.tga"
-	expire = "2020.1.1"
-	ideology = libertarian_socialist_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = CUB_ramón_grau_san_martín
+recruit_character = CUB_pablo_hevia
+recruit_character = CUB_dionisio_de_céspedes
+recruit_character = CUB_demetrio_de_la_rosa
+recruit_character = CUB_mariano_de_meriño
+recruit_character = CUB_rafael_henríquez
+recruit_character = CUB_pablo_herrera
+recruit_character = CUB_domingo_herrera
+recruit_character = CUB_fulgencio_figuereo
+recruit_character = CUB_salvador_figuereo
+recruit_character = CUB_ramón_garcía
+recruit_character = CUB_federico_gil

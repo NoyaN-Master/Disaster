@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Alexander Hore-Ruthven"
-	#desc = "AST_Hore_Ruthven_desc"
-	picture = "AST_Ruthoven.tga"
-	expire = "2020.1.1"
-	ideology = authoritarian_democrat_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = AST_alexander_horeruthven
+recruit_character = AST_hallam_cook
+recruit_character = AST_william_baird
+recruit_character = AST_frederick_northcote
+recruit_character = AST_alf_forster
+recruit_character = AST_bob_fisher
+recruit_character = AST_bruce_stewart
+recruit_character = AST_frederick_armstrong
+recruit_character = AST_henry_issac
+recruit_character = AST_thomas_davis
+recruit_character = AST_shane_mitchell
+recruit_character = AST_adrian_cook

@@ -46,24 +46,15 @@ set_popularities = {
 	revolutionary_anarchist = 6
 }
 
-create_country_leader = { 
-	name = "Wilhelmina"
-	#desc = "BTV_Wilhelmina_desc"
-	picture = "BTV_Wilhelmina.tga"
-	expire = "2020.1.1"
-	ideology = conservative_subideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "David Wijnkoop"
-	#desc = "BTV_David_Wijnkoop_desc"
-	picture = "BTV_David_Wijnkoop.tga"
-	expire = "2020.1.1"
-	ideology = authoritarian_socialist_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = BTV_wilhelmina
+recruit_character = BTV_david_wijnkoop
+recruit_character = BTV_alex_walker
+recruit_character = BTV_bob_walker
+recruit_character = BTV_jonas_smith
+recruit_character = BTV_marcus_smith
+recruit_character = BTV_jim_brown
+recruit_character = BTV_peter_evans
+recruit_character = BTV_john_evans
+recruit_character = BTV_peter_roberts
+recruit_character = BTV_jim_wilson
+recruit_character = BTV_jim_white

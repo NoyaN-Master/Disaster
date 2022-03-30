@@ -57,13 +57,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Gabriele D'Annunzio"
-	#desc = "FIU_Gabriele_desc"
-	picture = "FIU_Gabriele.tga"
-	expire = "2020.1.1"
-	ideology = ultranationalist_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = FIU_gabriele_dannunzio
+recruit_character = FIU_jim_evans
+recruit_character = FIU_john_walker
+recruit_character = FIU_peter_wilson
+recruit_character = FIU_john_white
+recruit_character = FIU_jim_white
+recruit_character = FIU_lucas_jones
+recruit_character = FIU_johannes_williams
+recruit_character = FIU_bob_williams
+recruit_character = FIU_bob_wilson
+recruit_character = FIU_alex_walker
+recruit_character = FIU_johannes_evans

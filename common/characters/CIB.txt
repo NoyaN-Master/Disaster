@@ -1,0 +1,196 @@
+characters={
+	CIB_enver_pasha={
+		name="Enver Pasha"
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		field_marshal={
+			traits={ enverist_general brilliant_strategist infantry_officer war_hero hill_fighter }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+		country_leader={
+			ideology=enverism
+			expire="2020.1.1.1"
+			id=-1
+		}
+	}
+	CIB_samet_pasha={
+		name="Samet Pasha"
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander={
+			traits={ enverist_general offensive_doctrine }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+		country_leader={
+			ideology=neokemalist
+			expire="2020.1.1.1"
+			id=-1
+		}
+	}
+	CIB_mustafa_muğlalı={
+		name="Mustafa Muğlalı"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/CIB/Portrait_CIB_Mustafa_Muglali.tga"
+			}
+		}
+		corps_commander={
+			traits={ enverist_general harsh_leader infantry_officer war_hero }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	CIB_johannes_walker={
+		name="Johannes Walker"
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=unisocialist_subideology
+			expire="1941.1.1.12"
+			id=-1
+		}
+	}
+	CIB_alex_smith={
+		name="Alex Smith"
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=libertarian_socialist_subideology
+			expire="1951.1.1.12"
+			id=-1
+		}
+	}
+	CIB_marcus_taylor={
+		name="Marcus Taylor"
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=social_democrat_subideology
+			expire="1945.1.1.12"
+			id=-1
+		}
+	}
+	CIB_jim_roberts={
+		name="Jim Roberts"
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=liberal_subideology
+			expire="1956.1.1.12"
+			id=-1
+		}
+	}
+	CIB_lucas_smith={
+		name="Lucas Smith"
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=conservative_subideology
+			expire="1950.1.1.12"
+			id=-1
+		}
+	}
+	CIB_jim_taylor={
+		name="Jim Taylor"
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=authoritarian_democrat_subideology
+			expire="1944.1.1.12"
+			id=-1
+		}
+	}
+	CIB_peter_wilson={
+		name="Peter Wilson"
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=autocratic_subideology
+			expire="1954.1.1.12"
+			id=-1
+		}
+	}
+	CIB_john_wilson={
+		name="John Wilson"
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=ultranationalist_subideology
+			expire="1948.1.1.12"
+			id=-1
+		}
+	}
+	CIB_peter_evans={
+		name="Peter Evans"
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=esoteric_traditionalist_subideology
+			expire="1942.1.1.12"
+			id=-1
+		}
+	}
+	CIB_johannes_smith={
+		name="Johannes Smith"
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=revolutionary_anarchist_subideology
+			expire="1952.1.1.12"
+			id=-1
+		}
+	}
+}

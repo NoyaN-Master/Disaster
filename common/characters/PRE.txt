@@ -1,0 +1,822 @@
+characters={
+	PRE_kurt_von_schleicher={
+		name="Kurt von Schleicher"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Generic_Europe_5.tga"
+			}
+		}
+		country_leader={
+			ideology=authoritarian_democrat_subideology
+			expire="2020.1.1.1"
+			id=-1
+		}
+	}
+	PRE_alfred_hugenberg={
+		name="Alfred Hugenberg"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Generic_Europe_2.tga"
+			}
+		}
+		country_leader={
+			ideology=autocratic_subideology
+			expire="2020.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=ultranationalist_subideology
+			expire="2020.1.1.1"
+			id=-1
+		}
+	}
+	PRE_hermann_göring={
+		name="Hermann Göring"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Generic_Europe_3.tga"
+			}
+		}
+		country_leader={
+			ideology=revolutionary_nationalist_subideology
+			expire="2020.1.1.1"
+			id=-1
+		}
+	}
+	PRE_wilhelm_külz={
+		name="Wilhelm Külz"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Generic_Europe_1.tga"
+			}
+		}
+		country_leader={
+			ideology=liberal_subideology
+			expire="2020.1.1.1"
+			id=-1
+		}
+	}
+	PRE_werner_von_blomberg={
+		name="Werner von Blomberg"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/PRE/Werner_von_Blomberg.tga"
+			}
+		}
+		field_marshal={
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	PRE_oskar_von_hindenburg={
+		name="Oskar von Hindenburg"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/PRE/PRE_Oskar_von_Hindenburg.tga"
+			}
+		}
+		field_marshal={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	PRE_erhard_milch={
+		name="Erhard Milch"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/PRE/Erhard_Milch.tga"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	PRE_fedor_von_bock={
+		name="Fedor von Bock"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/PRE/Fedor_von_Bock.tga"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	PRE_heinz_guderian={
+		name="Heinz Guderian"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/PRE/Heinz_Guderian.tga"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	PRE_walter_model={
+		name="Walter Model"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/PRE/Walter_Model.tga"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	PRE_gunther_von_kluge={
+		name="Gunther von Kluge"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/PRE/Gunther_von_Kluge.tga"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	PRE_walter_von_brauchitsch={
+		name="Walter von Brauchitsch"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/PRE/Walther_von_Brauchitsch.tga"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	PRE_alexander_von_falkenhausen={
+		name="Alexander von Falkenhausen"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/PRE/Alexander_von_Falkenhausen.tga"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	PRE_erich_von_manstein={
+		name="Erich von Manstein"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/PRE/Erich_von_Manstein.tga"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	PRE_georg_von_kuchler={
+		name="Georg von Kuchler"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/PRE/Georg_von_Kuchler.tga"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	PRE_otto_duttmann={
+		name="Otto Duttmann"
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=unisocialist_subideology
+			expire="1956.1.1.12"
+			id=-1
+		}
+	}
+	PRE_hans_schneider={
+		name="Hans Schneider"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Generic_Europe_9.tga"
+			}
+		}
+		country_leader={
+			ideology=authoritarian_socialist_subideology
+			expire="1946.1.1.12"
+			id=-1
+		}
+	}
+	PRE_fritz_stotz={
+		name="Fritz Stotz"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Generic_Europe_9.tga"
+			}
+		}
+		country_leader={
+			ideology=libertarian_socialist_subideology
+			expire="1951.1.1.12"
+			id=-1
+		}
+	}
+	PRE_peter_brendel={
+		name="Peter Brendel"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Generic_Europe_8.tga"
+			}
+		}
+		country_leader={
+			ideology=social_democrat_subideology
+			expire="1941.1.1.12"
+			id=-1
+		}
+	}
+	PRE_max_weber={
+		name="Max Weber"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Generic_Europe_4.tga"
+			}
+		}
+		country_leader={
+			ideology=conservative_subideology
+			expire="1946.1.1.12"
+			id=-1
+		}
+	}
+	PRE_tobias_meyer={
+		name="Tobias Meyer"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Generic_Europe_1.tga"
+			}
+		}
+		country_leader={
+			ideology=esoteric_traditionalist_subideology
+			expire="1952.1.1.12"
+			id=-1
+		}
+	}
+	PRE_adolf_schneider={
+		name="Adolf Schneider"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Generic_Europe_9.tga"
+			}
+		}
+		country_leader={
+			ideology=revolutionary_anarchist_subideology
+			expire="1941.1.1.12"
+			id=-1
+		}
+	}
+	PRE_aco={
+		advisor={
+			slot = army_chief
+			idea_token = PRE_aco
+			allowed  = {
+					original_tag  = PRE
+				}
+				traits  = {
+					army_chief_offensive_2
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="PRE_aco"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	PRE_pot={
+		advisor={
+			slot = political_advisor
+			idea_token = PRE_pot
+			allowed  = {
+					original_tag  = PRE
+				}
+				traits  = {
+					prince_of_terror
+				}
+		}
+		name="PRE_pot"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+	PRE_ncdb={
+		advisor={
+			slot = navy_chief
+			idea_token = PRE_ncdb
+			allowed  = {
+					original_tag  = PRE
+				}
+				traits  = {
+					navy_chief_decisive_battle_2
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="PRE_ncdb"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
+			}
+		}
+	}
+	PRE_man={
+		advisor={
+			slot = army_chief
+			idea_token = PRE_man
+			allowed  = {
+					original_tag  = PRE
+				}
+				traits  = {
+					army_chief_maneuver_2
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="PRE_man"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	PRE_communist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = PRE_communist_guy
+			allowed  = {
+					original_tag  = PRE
+				}
+				traits  = {
+					communist_revolutionary
+				}
+				do_effect  = {
+					not  = {
+						has_government  = communism
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="PRE_communist_guy"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	PRE_inf={
+		advisor={
+			slot = high_command
+			idea_token = PRE_inf
+			ledger  = army 
+				allowed  = {
+					original_tag  = PRE
+				}
+				traits  = {
+					army_infantry_2
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="PRE_inf"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	PRE_at={
+		advisor={
+			slot = theorist
+			idea_token = PRE_at
+			ledger  = air 
+				allowed  = {
+					original_tag  = PRE
+				}
+				traits  = {
+					air_warfare_theorist
+				}
+		}
+		name="PRE_at"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_1"
+			}
+		}
+	}
+	PRE_acd={
+		advisor={
+			slot = army_chief
+			idea_token = PRE_acd
+			allowed  = {
+					original_tag  = PRE
+				}
+				traits  = {
+					army_chief_defensive_2
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="PRE_acd"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+	PRE_PREACR={
+		advisor={
+			slot = air_chief
+			idea_token = PREACR
+			allowed  = {
+					original_tag  = PRE
+				}
+				traits  = {
+					air_chief_reform_2
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="PREACR"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_1"
+			}
+		}
+	}
+	PRE_acom={
+		advisor={
+			slot = high_command
+			idea_token = PRE_acom
+			ledger  = army 
+				allowed  = {
+					original_tag  = PRE
+				}
+				traits  = {
+					army_commando_2
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="PRE_acom"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_5"
+			}
+		}
+	}
+	PRE_acgs={
+		advisor={
+			slot = air_chief
+			idea_token = PRE_acgs
+			allowed  = {
+					original_tag  = PRE
+				}
+				traits  = {
+					air_chief_ground_support_2
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="PRE_acgs"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+	}
+	PRE_arg={
+		advisor={
+			slot = high_command
+			idea_token = PRE_arg
+			ledger  = army 
+				allowed  = {
+					original_tag  = PRE
+				}
+				traits  = {
+					army_regrouping_2
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="PRE_arg"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_4"
+			}
+		}
+	}
+	PRE_ent={
+		advisor={
+			slot = army_chief
+			idea_token = PRE_ent
+			allowed  = {
+					original_tag  = PRE
+				}
+				traits  = {
+					army_entrenchment_2
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="PRE_ent"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+	PRE_fascist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = PRE_fascist_guy
+			allowed  = {
+					original_tag  = PRE
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = FASCISM 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="PRE_fascist_guy"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+	PRE_wi={
+		advisor={
+			slot = political_advisor
+			idea_token = PRE_wi
+			allowed  = {
+					original_tag  = PRE
+				}
+				traits  = {
+					war_industrialist
+				}
+		}
+		name="PRE_wi"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	PRE_ncav={
+		advisor={
+			slot = navy_chief
+			idea_token = PRE_ncav
+			allowed  = {
+					original_tag  = PRE
+				}
+				traits  = {
+					navy_chief_naval_aviation_2
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="PRE_ncav"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+	PRE_abi={
+		advisor={
+			slot = high_command
+			idea_token = PRE_abi
+			ledger  = air 
+				allowed  = {
+					original_tag  = PRE
+				}
+				traits  = {
+					air_bomber_interception_2
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="PRE_abi"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+	}
+	PRE_nt={
+		advisor={
+			slot = theorist
+			idea_token = PRE_nt
+			ledger  = navy 
+				allowed  = {
+					original_tag  = PRE
+				}
+				traits  = {
+					naval_theorist
+				}
+		}
+		name="PRE_nt"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
+			}
+		}
+	}
+	PRE_pf={
+		advisor={
+			slot = political_advisor
+			idea_token = PRE_pf
+			allowed  = {
+					original_tag  = PRE
+				}
+				traits  = {
+					popular_figurehead
+				}
+		}
+		name="PRE_pf"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+	PRE_democratic_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = PRE_democratic_guy
+			allowed  = {
+					original_tag  = PRE
+				}
+				traits  = {
+					democratic_reformer 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = DEMOCRATIC 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="PRE_democratic_guy"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+	PRE_mt={
+		advisor={
+			slot = theorist
+			idea_token = PRE_mt
+			ledger  = army 
+				allowed  = {
+					original_tag  = PRE
+				}
+				traits  = {
+					military_theorist
+				}
+		}
+		name="PRE_mt"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_3"
+			}
+		}
+	}
+	PRE_coi={
+		advisor={
+			slot = political_advisor
+			idea_token = PRE_coi
+			allowed  = {
+					original_tag  = PRE
+				}
+				traits  = {
+					captain_of_industry
+				}
+		}
+		name="PRE_coi"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+}

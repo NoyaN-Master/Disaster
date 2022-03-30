@@ -42,13 +42,15 @@ add_ideas = 	multi_party_democracy
 add_ideas = 	laisez_faire 
 add_ideas = 	post_industrialized_society
 
-create_country_leader = {
-	name = "Alexander Cambridge"
-	desc = "CAN_Alexander_Cambridge_desc"
-	picture = "CAN_Alexander_Cambridge.tga"
-	expire = "2020.1.1"
-	ideology = liberal_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = CAN_alexander_cambridge
+recruit_character = CAN_douglas_pettyfitzmaurice
+recruit_character = CAN_albert_stanley
+recruit_character = CAN_douglas_macdougall
+recruit_character = CAN_albert_young
+recruit_character = CAN_douglas_blackwood
+recruit_character = CAN_victor_grey
+recruit_character = CAN_patrick_hastings
+recruit_character = CAN_victor_macdougall
+recruit_character = CAN_patrick_hamilton
+recruit_character = CAN_charles_young
+recruit_character = CAN_patrick_young

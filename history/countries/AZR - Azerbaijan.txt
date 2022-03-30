@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Mehmed Emin Resulzade"
-	desc = "AZR_Resulzade_desc"
-	picture = "AZR_Resulzade.tga"
-	expire = "2020.1.1"
-	ideology = conservative_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = AZR_mehmed_emin_resulzade
+recruit_character = AZR_isgandar_topchubashov
+recruit_character = AZR_dadash_imanov
+recruit_character = AZR_ali_baghirzada
+recruit_character = AZR_said_ildirim
+recruit_character = AZR_niftaly_bayramli
+recruit_character = AZR_kanan_shikhlinski
+recruit_character = AZR_ismayil_arifoghlu
+recruit_character = AZR_davud_ibrahimli
+recruit_character = AZR_davud_arablinski
+recruit_character = AZR_sabir_mammadbeyli
+recruit_character = AZR_orkhan_seyidzada

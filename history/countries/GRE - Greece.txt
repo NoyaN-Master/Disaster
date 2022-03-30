@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Alexander I"
-	#desc = "GRE_Alexander_desc"
-	picture = "GRE_Alexander.tga"
-	expire = "2020.1.1"
-	ideology = conservative_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = GRE_alexander_i
+recruit_character = GRE_kitsos_tsolakoglou
+recruit_character = GRE_ilias_pangalos
+recruit_character = GRE_leonidas_mouskos
+recruit_character = GRE_gennaios_makriyannis
+recruit_character = GRE_vasos_zaimis
+recruit_character = GRE_kitsos_nider
+recruit_character = GRE_tzannis_danglis
+recruit_character = GRE_ionnis_zymvrakakis
+recruit_character = GRE_adamantios_plapoutas
+recruit_character = GRE_kyriakoulis_papadopoulos
+recruit_character = GRE_viktor_nider

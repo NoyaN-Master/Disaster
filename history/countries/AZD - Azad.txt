@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Subhas Chandra Bose"
-	desc = "AZD_Bose_desc"
-	picture = "AZD_Bose.tga"
-	expire = "2020.1.1"
-	ideology = social_democrat_subideology
-	traits = {
-		
-	}
-}
+recruit_character = AZD_subhas_chandra_bose
+recruit_character = AZD_john_evans
+recruit_character = AZD_peter_white
+recruit_character = AZD_alexander_roberts
+recruit_character = AZD_jim_roberts
+recruit_character = AZD_lucas_taylor
+recruit_character = AZD_johannes_wilson
+recruit_character = AZD_alex_wilson
+recruit_character = AZD_bob_white
+recruit_character = AZD_alex_evans
+recruit_character = AZD_bob_walker
+recruit_character = AZD_jonas_roberts

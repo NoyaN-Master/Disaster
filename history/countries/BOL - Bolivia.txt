@@ -43,13 +43,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "David Toro Ruilova"
-	#desc = "BOL_David_Toro_desc"
-	picture = "BOL_David_Toro.tga"
-	expire = "2020.1.1"
-	ideology = libertarian_socialist_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = BOL_david_toro_ruilova
+recruit_character = BOL_hernando_zañartu
+recruit_character = BOL_bartolomé_latorre
+recruit_character = BOL_josé_miguel_latorre
+recruit_character = BOL_del_carpio_corrico
+recruit_character = BOL_david_daza
+recruit_character = BOL_juan_antonio_figueroa
+recruit_character = BOL_agustín_franco
+recruit_character = BOL_isidoro_belzú
+recruit_character = BOL_ladislao_pezet
+recruit_character = BOL_aníbal_pezet
+recruit_character = BOL_jorge_rebolledo

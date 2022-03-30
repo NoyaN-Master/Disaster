@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Carlos Dávila"
-	#desc = "CHL_Carlos_Davila_desc"
-	picture = "CHL_Carlos_Davila.tga"
-	expire = "2020.1.1"
-	ideology = authoritarian_socialist_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = CHL_carlos_dávila
+recruit_character = CHL_justo_bulnes
+recruit_character = CHL_isidoro_bulnes
+recruit_character = CHL_antonio_salaverry
+recruit_character = CHL_juan_franco
+recruit_character = CHL_andrés_Ágreda
+recruit_character = CHL_josé_melgarejo
+recruit_character = CHL_bernardo_de_la_cruz
+recruit_character = CHL_tomás_de_santa_cruz
+recruit_character = CHL_bartolomé_de_santa_cruz
+recruit_character = CHL_juan_antonio_abaroa
+recruit_character = CHL_josé_miguel_lynch

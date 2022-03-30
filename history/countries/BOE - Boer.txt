@@ -41,13 +41,15 @@ add_ideas = 	authoritarian_state
 add_ideas = 	interventionism 
 add_ideas = 	industrialized_society
 
-create_country_leader = {
-	name = "Barry Hertzog"
-	#desc = "BOE_Hertzog_desc"
-	picture = "BOE_Hertzog.tga"
-	expire = "2020.1.1"
-	ideology = conservative_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = BOE_barry_hertzog
+recruit_character = BOE_alex_white
+recruit_character = BOE_johannes_white
+recruit_character = BOE_marcus_brown
+recruit_character = BOE_alexander_walker
+recruit_character = BOE_alex_williams
+recruit_character = BOE_bob_walker
+recruit_character = BOE_john_roberts
+recruit_character = BOE_alexander_smith
+recruit_character = BOE_jim_evans
+recruit_character = BOE_alexander_jones
+recruit_character = BOE_lucas_jones
