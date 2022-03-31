@@ -14,16 +14,15 @@ country_event = { #Introduction
 
 	option = {
 		name = ethem.1.a
-		# create_country_leader = {
-	    # name = "Ethem Nejat"
-	    # desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	    # picture = "IZM_Ethem_Nejat_Drip.tga"
-	    # expire = "1965.1.1"
-	    # ideology = turkish_marxism
-	    # traits = {
-	    # }
-        # }
-		recruit_character = IZM_ethem_2
+		 create_country_leader = {
+			name = "Ethem Nejat"
+			desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			picture = "gfx/leaders/IZM/IZM_Ethem_Nejat_Drip.tga"
+			expire = "1965.1.1"
+			ideology = turkish_marxism
+			traits = {
+			}
+		}
 	}
 }
 
@@ -196,14 +195,14 @@ country_event = {
 	option = {
 		name = ethem.9.b
 		complete_national_focus = IZM_Revisionism_Needed
-		# create_country_leader = {
-		# 	name = "Ethem Nejat"
-		# 	desc = "POLITICS_Ethem_Nejat"
-		# 	picture = "IZM_ethem_nejat_deng.tga"
-		# 	expire = "1965.1.1"
-		# 	ideology = authoritarian_socialist_subideology
-		# 	traits = { }
-		# }
+		create_country_leader = {
+		 	name = "Ethem Nejat"
+		 	desc = "POLITICS_Ethem_Nejat"
+		 	picture = "gfx/leaders/IZM/IZM_ethem_nejat_deng.tga"
+		 	expire = "1965.1.1"
+		 	ideology = authoritarian_socialist_subideology
+		 	traits = { }
+		}
 		recruit_character = IZM_ethem_3
 		set_politics = {
 			ruling_party = authoritarian_socialist
