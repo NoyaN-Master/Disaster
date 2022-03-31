@@ -42,13 +42,39 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = MTR_tapa_tchermoeff
-recruit_character = MTR_motsa_shuaninskiy
-recruit_character = MTR_johannes_brown
-recruit_character = MTR_lucas_brown
-recruit_character = MTR_jim_evans
-recruit_character = MTR_lucas_evans
-recruit_character = MTR_john_wilson
-recruit_character = MTR_alexander_white
-recruit_character = MTR_john_white
-recruit_character = MTR_marcus_roberts
+create_country_leader = {
+	name = "Tapa Tchermoeff"
+	picture = "MTR_Tapa_Tchermoeff.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_democrat_subideology
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Motsa Shuaninskiy"
+	#picture = "MTR_Motsa_Shuaninskiy.dds"
+	expire = "1935.1.1"
+	ideology = ultranationalist_subideology
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Motsa Shuaninskiy"
+	#picture = "MTR_Motsa_Shuaninskiy.dds"
+	expire = "1935.1.1"
+	ideology = autocratic_subideology
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Motsa Shuaninskiy"
+	#picture = "MTR_Motsa_Shuaninskiy.dds"
+	expire = "1935.1.1"
+	ideology = esoteric_islamism_subideology
+	traits = {
+		#
+	}
+}

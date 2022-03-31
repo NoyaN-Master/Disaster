@@ -41,15 +41,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = MON_ja_lama
-recruit_character = MON_suksaha_linge
-recruit_character = MON_hesehn_kangan
-recruit_character = MON_ma_linge
-recruit_character = MON_guan_xiangying
-recruit_character = MON_ma_zhanshan
-recruit_character = MON_zhao_linge
-recruit_character = MON_songgotu_kangan
-recruit_character = MON_mingzhu_linge
-recruit_character = MON_changlin_xingde
-recruit_character = MON_deng_shangzhi
-recruit_character = MON_oboi_xiangying
+create_country_leader = {
+	name = "Ja Lama"
+	#desc = "MON_Ja_Lama_desc"
+	picture = "MON_Ja_Lama.tga"
+	expire = "2020.1.1"
+	ideology = autocratic_subideology
+	traits = {
+		#
+	}
+}

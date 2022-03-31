@@ -42,14 +42,57 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = YUN_tang_jiyao
-recruit_character = YUN_hu_hanmin
-recruit_character = YUN_sun_fo
-recruit_character = YUN_wang_jingwei
-recruit_character = YUN_hsia_dong
-recruit_character = YUN_li_jiang
-recruit_character = YUN_luo_peng
-recruit_character = YUN_liang_wu
-recruit_character = YUN_huang_ting
-recruit_character = YUN_chen_lü
-recruit_character = YUN_hsia_hu
+create_country_leader = {
+	name = "Tang Jiyao"
+	desc = "YUN_Tang_Jiyao_desc"
+	picture = "YUN_Tang_Jiyao.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_democrat_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Tang Jiyao"
+	desc = "YUN_Tang_Jiyao_desc"
+	picture = "YUN_Tang_Jiyao.tga"
+	expire = "2020.1.1"
+	ideology = social_democrat_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Hu Hanmin"
+	desc = "YUN_Hu_Hanmin_desc"
+	picture = "YUN_Hu_Hanmin.tga"
+	expire = "2020.1.1"
+	ideology = conservative_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Sun Fo"
+	desc = "YUN_Sun_Fo_desc"
+	picture = "YUN_Sun_Fo.tga"
+	expire = "2020.1.1"
+	ideology = liberal_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Wang Jingwei"
+	desc = "YUN_Wang_Jingwei_desc"
+	picture = "YUN_Wang_Jingwei.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_socialist_subideology
+	traits = {
+		#
+	}
+}

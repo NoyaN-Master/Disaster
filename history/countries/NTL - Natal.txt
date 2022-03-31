@@ -42,15 +42,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = NTL_jan_smuts
-recruit_character = NTL_marcus_wilson
-recruit_character = NTL_jonas_walker
-recruit_character = NTL_alex_white
-recruit_character = NTL_johannes_smith
-recruit_character = NTL_alex_walker
-recruit_character = NTL_jim_roberts
-recruit_character = NTL_jim_taylor
-recruit_character = NTL_lucas_brown
-recruit_character = NTL_peter_wilson
-recruit_character = NTL_peter_white
-recruit_character = NTL_john_white
+create_country_leader = {
+	name = "Jan Smuts"
+	#desc = "NTL_Jan_Smuts_desc"
+	picture = "NTL_Jan_Smuts.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_democrat_subideology
+	traits = {
+		#
+	}
+}

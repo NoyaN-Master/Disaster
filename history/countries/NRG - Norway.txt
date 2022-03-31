@@ -49,15 +49,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = NRG_haakon_vii
-recruit_character = NRG_john_wilson
-recruit_character = NRG_john_evans
-recruit_character = NRG_alex_smith
-recruit_character = NRG_johannes_jones
-recruit_character = NRG_marcus_jones
-recruit_character = NRG_marcus_smith
-recruit_character = NRG_johannes_taylor
-recruit_character = NRG_lucas_brown
-recruit_character = NRG_lucas_evans
-recruit_character = NRG_peter_evans
-recruit_character = NRG_john_roberts
+create_country_leader = {
+	name = "Haakon VII"
+	#desc = "NRG_Haakon_desc"
+	picture = "NRG_Haakon.tga"
+	expire = "2020.1.1"
+	ideology =libertarian_socialist_subideology
+	traits = {
+		#
+	}
+}

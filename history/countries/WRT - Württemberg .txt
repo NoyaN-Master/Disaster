@@ -125,15 +125,27 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = WRT_albrecht_i
-recruit_character = WRT_jim_brown
-recruit_character = WRT_peter_evans
-recruit_character = WRT_lucas_evans
-recruit_character = WRT_peter_roberts
-recruit_character = WRT_john_white
-recruit_character = WRT_bob_white
-recruit_character = WRT_marcus_jones
-recruit_character = WRT_johannes_jones
-recruit_character = WRT_marcus_williams
-recruit_character = WRT_bob_evans
-recruit_character = WRT_alex_walker
+create_country_leader = {
+	name = "Albrecht I"
+	#desc = "WRT_Albrecht_desc"
+	picture = "WRT_Albrecht.tga"
+	expire = "2020.1.1"
+	ideology = conservative_subideology
+	traits = {
+		#
+	}
+}
+
+#field marshals
+create_field_marshal = {
+	name = "Albrecht I"
+	portrait_path = "gfx/leaders/WRT/WRT_Albrecht.tga"
+	traits = {
+
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}

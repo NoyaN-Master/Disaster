@@ -42,15 +42,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = SRD_victor_emmanuel_iii
-recruit_character = SRD_alex_white
-recruit_character = SRD_bob_evans
-recruit_character = SRD_john_walker
-recruit_character = SRD_alexander_roberts
-recruit_character = SRD_jim_taylor
-recruit_character = SRD_alexander_taylor
-recruit_character = SRD_john_brown
-recruit_character = SRD_peter_white
-recruit_character = SRD_bob_white
-recruit_character = SRD_alex_roberts
-recruit_character = SRD_alex_walker
+create_country_leader = {
+	name = "Victor Emmanuel III"
+	#desc = "SRD_Victor_Emmanuel_desc"
+	picture = "SRD_Victor_Emmanuel.tga"
+	expire = "2020.1.1"
+	ideology = autocratic_subideology
+	traits = {
+		#
+	}
+}

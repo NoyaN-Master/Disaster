@@ -42,15 +42,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = SWA_wolfgang_schenck
-recruit_character = SWA_jonas_williams
-recruit_character = SWA_johannes_walker
-recruit_character = SWA_alex_walker
-recruit_character = SWA_marcus_smith
-recruit_character = SWA_john_smith
-recruit_character = SWA_alexander_brown
-recruit_character = SWA_jim_evans
-recruit_character = SWA_jim_taylor
-recruit_character = SWA_john_brown
-recruit_character = SWA_peter_walker
-recruit_character = SWA_alex_white
+create_country_leader = {
+	name = "Wolfgang Schenck"
+	#desc = "SWA_Wolfgang_Schenck_desc"
+	picture = "SWA_Wolfgang_Schenck.tga"
+	expire = "2020.1.1"
+	ideology = ultranationalist_subideology
+	traits = {
+		#
+	}
+}

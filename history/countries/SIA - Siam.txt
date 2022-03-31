@@ -42,15 +42,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = SIA_rama_viii
-recruit_character = SIA_chulalongkorn_suriyawongse
-recruit_character = SIA_phya_nitithada
-recruit_character = SIA_rama_nitithada
-recruit_character = SIA_prajadhipok_saovabha
-recruit_character = SIA_prajadhipok_nitithada
-recruit_character = SIA_phya_phonphayuhasena
-recruit_character = SIA_chao_chichalerm
-recruit_character = SIA_mongkut_nitithada
-recruit_character = SIA_naritsaranuwatiwong_saovabha
-recruit_character = SIA_chulalongkorn_nitithada
-recruit_character = SIA_naritsaranuwatiwong_phonphayuhasena
+create_country_leader = {
+	name = "Rama VIII"
+	#desc = "SIA_Rama_desc"
+	picture = "SIA_Rama.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_democrat_subideology
+	traits = {
+		#
+	}
+}

@@ -43,17 +43,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-
-
-recruit_character = PKR_oscar_carmona
-recruit_character = PKR_lucas_evans
-recruit_character = PKR_lucas_williams
-recruit_character = PKR_alexander_wilson
-recruit_character = PKR_john_wilson
-recruit_character = PKR_alex_smith
-recruit_character = PKR_marcus_jones
-recruit_character = PKR_jonas_jones
-recruit_character = PKR_marcus_williams
-recruit_character = PKR_jonas_evans
-recruit_character = PKR_peter_walker
-recruit_character = PKR_alex_wilson
+create_country_leader = {
+	name = "Oscar Carmona"
+	#desc = "PKR_Oscar_Carmona_desc"
+	picture = "PKR_Oscar_Carmona.tga"
+	expire = "2020.1.1"
+	ideology = autocratic_subideology
+	traits = {
+		#
+	}
+}

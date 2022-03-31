@@ -50,15 +50,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = SWV_gustav_v_adolf_
-recruit_character = SWV_john_white
-recruit_character = SWV_lucas_jones
-recruit_character = SWV_jim_jones
-recruit_character = SWV_jonas_williams
-recruit_character = SWV_bob_wilson
-recruit_character = SWV_alex_walker
-recruit_character = SWV_bob_smith
-recruit_character = SWV_johannes_evans
-recruit_character = SWV_alexander_walker
-recruit_character = SWV_john_taylor
-recruit_character = SWV_jim_taylor
+create_country_leader = {
+	name = "Gustav V Adolf "
+	#desc = "SWV_Gustav_Adolf_desc"
+	picture = "SWV_Gustav_Adolf.tga"
+	expire = "2020.1.1"
+	ideology = conservative_subideology
+	traits = {
+		#
+	}
+}

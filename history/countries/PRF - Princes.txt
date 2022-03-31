@@ -42,15 +42,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = PRF_osman_ali_khan
-recruit_character = PRF_marcus_walker
-recruit_character = PRF_alex_white
-recruit_character = PRF_lucas_jones
-recruit_character = PRF_john_roberts
-recruit_character = PRF_alexander_smith
-recruit_character = PRF_jim_taylor
-recruit_character = PRF_alexander_brown
-recruit_character = PRF_lucas_wilson
-recruit_character = PRF_jonas_white
-recruit_character = PRF_marcus_roberts
-recruit_character = PRF_johannes_jones
+create_country_leader = {
+	name = "Osman Ali Khan"
+	desc = "PRF_Osman_Ali_Khan_desc"
+	picture = "PRF_Osman_Ali_Khan.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_democrat_subideology
+	traits = {
+		
+	}
+}

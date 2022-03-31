@@ -42,16 +42,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = RMC_william_s._graves
-recruit_character = RMC_jim_evans
-recruit_character = RMC_peter_evans
-recruit_character = RMC_lucas_walker
-recruit_character = RMC_peter_roberts
-recruit_character = RMC_john_white
-recruit_character = RMC_johannes_white
-recruit_character = RMC_alex_jones
-recruit_character = RMC_johannes_taylor
-recruit_character = RMC_marcus_williams
-recruit_character = RMC_bob_walker
-recruit_character = RMC_jonas_walker
-
+create_country_leader = {
+	name = "William S. Graves"
+	desc = "RMC_William_Graves_desc"
+	picture = "RMC_William_Graves.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_democrat_subideology
+	traits = {
+		#
+	}
+}

@@ -42,15 +42,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = NZL_charles_bathurst
-recruit_character = NZL_thomas_armstrong
-recruit_character = NZL_scott_hope
-recruit_character = NZL_bob_thesinger
-recruit_character = NZL_ronald_mackenzie
-recruit_character = NZL_alf_davis
-recruit_character = NZL_frederick_forster
-recruit_character = NZL_tangaroa_northcote
-recruit_character = NZL_alf_anderson
-recruit_character = NZL_guy_war
-recruit_character = NZL_william_stewart
-recruit_character = NZL_brian_thesinger
+create_country_leader = {
+	name = "Charles Bathurst"
+	desc = "NZL_Charles_Bathurst_desc"
+	picture = "NZL_Charles_Bathurst.tga"
+	expire = "2020.1.1"
+	ideology = liberal_subideology
+	traits = {
+		#
+	}
+}

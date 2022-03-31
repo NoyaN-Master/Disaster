@@ -42,15 +42,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = WAL_prince_alexandru_cantacuzino
-recruit_character = WAL_john_taylor
-recruit_character = WAL_lucas_taylor
-recruit_character = WAL_jim_roberts
-recruit_character = WAL_lucas_jones
-recruit_character = WAL_bob_williams
-recruit_character = WAL_jonas_wilson
-recruit_character = WAL_bob_walker
-recruit_character = WAL_alex_smith
-recruit_character = WAL_marcus_smith
-recruit_character = WAL_johannes_brown
-recruit_character = WAL_lucas_smith
+create_country_leader = {
+	name = "Prince Alexandru Cantacuzino"
+	#desc = "WAL_Alexander_desc"
+	picture = "WAL_Alexander.tga"
+	expire = "2020.1.1"
+	ideology = revolutionary_nationalist_subideology
+	traits = {
+		impaler_legacy
+	}
+}

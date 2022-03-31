@@ -42,15 +42,13 @@ set_popularities = {
 	revolutionary_anarchist = 3
 }
 
-recruit_character = SPK_miguel_primo_de_rivera
-recruit_character = SPK_alexander_roberts
-recruit_character = SPK_jim_jones
-recruit_character = SPK_jim_taylor
-recruit_character = SPK_lucas_williams
-recruit_character = SPK_johannes_wilson
-recruit_character = SPK_bob_williams
-recruit_character = SPK_bob_evans
-recruit_character = SPK_alex_walker
-recruit_character = SPK_johannes_walker
-recruit_character = SPK_marcus_smith
-recruit_character = SPK_alexander_brown
+create_country_leader = {
+	name = "Miguel Primo de Rivera"
+	#desc = "SPK_Miguel_desc"
+	picture = "SPK_Miguel.tga"
+	expire = "2020.1.1"
+	ideology = autocratic_subideology
+	traits = {
+		#
+	}
+}

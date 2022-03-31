@@ -57,15 +57,35 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = USF_john_j._pershing
-recruit_character = USF_frank_orren_lowden
-recruit_character = USF_a._mitchell_palmer
-recruit_character = USF_alex_white
-recruit_character = USF_johannes_brown
-recruit_character = USF_peter_taylor
-recruit_character = USF_lucas_williams
-recruit_character = USF_jim_evans
-recruit_character = USF_peter_roberts
-recruit_character = USF_john_wilson
-recruit_character = USF_peter_white
-recruit_character = USF_bob_roberts
+create_country_leader = {
+	name = "John J. Pershing"
+	desc = "USF_John_Pershing_desc"
+	picture = "USF_John_Pershing.tga"
+	expire = "2020.1.1"
+	ideology = autocratic_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Frank Orren Lowden"
+	desc = "USF_Frank_Lowden_desc"
+	picture = "USF_Frank_Lowden.tga"
+	expire = "2020.1.1"
+	ideology = liberal_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "A. Mitchell Palmer"
+	desc = "USF_Mitchell_Palmer_desc"
+	picture = "USF_Mitchell_Palmer.tga"
+	expire = "2020.1.1"
+	ideology = conservative_subideology
+	traits = {
+		#
+	}
+}

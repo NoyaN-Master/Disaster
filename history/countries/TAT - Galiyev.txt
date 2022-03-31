@@ -57,14 +57,47 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = TAT_mirsaid_sultangaliyev
-recruit_character = TAT_röstäm_taqtash
-recruit_character = TAT_ilnur_galiev
-recruit_character = TAT_ayaz_yakhin
-recruit_character = TAT_kazbek_basharov
-recruit_character = TAT_almas_qutuy
-recruit_character = TAT_ghinghis_derzhavin
-recruit_character = TAT_marat_sadiqov
-recruit_character = TAT_aynur_baibekov
-recruit_character = TAT_farhat_gaziev
-recruit_character = TAT_bikbulat_arat
+create_country_leader = {
+	name = "Mirsaid Sultangaliyev"
+	#desc = "TAT_Galiyev_desc"
+	picture = "Portrait_TAT_Galiyev.tga"
+	expire = "2020.1.1"
+	ideology = galiyevism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Mirsaid Sultangaliyev"
+	#desc = "TAT_Galiyev_desc"
+	picture = "Portrait_TAT_Galiyev.tga"
+	expire = "2020.1.1"
+	ideology = revolutionary_nationalist_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Mirsaid Sultangaliyev"
+	#desc = "TAT_Galiyev_desc"
+	picture = "Portrait_TAT_Galiyev.tga"
+	expire = "2020.1.1"
+	ideology = galiyevism
+	traits = {
+		#
+	}
+}
+
+
+create_field_marshal = {
+			name = "Mirsaid Sultangaliyev"
+			picture = "Portrait_TAT_Galiyev.tga"
+			traits = { offensive_doctrine }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 3
+			}

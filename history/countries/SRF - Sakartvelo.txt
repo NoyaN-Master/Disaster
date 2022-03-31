@@ -42,20 +42,69 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = SRF_ioseb_jughashvili
-recruit_character = SRF_giorgi_mazniashvili
-recruit_character = SRF_kakutsa_cholokashvili
-recruit_character = SRF_giorgi_khimshiashvili
-recruit_character = SRF_shalva_maglakelidze
-recruit_character = SRF_valiko_jugheli
-recruit_character = SRF_bob_williams
-recruit_character = SRF_jonas_walker
-recruit_character = SRF_bob_walker
-recruit_character = SRF_johannes_white
-recruit_character = SRF_peter_smith
-recruit_character = SRF_john_brown
-recruit_character = SRF_alexander_williams
-recruit_character = SRF_lucas_evans
-recruit_character = SRF_jim_wilson
-recruit_character = SRF_john_wilson
-recruit_character = SRF_jonas_white
+create_country_leader = {
+	name = "Ioseb Jughashvili"
+	desc = "SRF_Stalin_desc"
+	picture = "SRF_Stalin.tga"
+	expire = "2020.1.1"
+	ideology = unisocialist_subideology
+	traits = {
+		warmonger
+	}
+}
+
+create_field_marshal = {
+	name = "Giorgi Mazniashvili"
+	picture = "SRF_Stalin.tga"
+	traits = { war_hero  }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+
+create_corps_commander = {
+	name = "Kakutsa Cholokashvili"
+	portrait_path = "gfx/leaders/SRF/Portrait_GEO_Kakutsa_Cholokashvili.tga"
+	traits = { guerilla_fighter cavalry_officer trickster }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Giorgi Khimshiashvili"
+	portrait_path = "gfx/leaders/SRF/Portrait_GEO_Giorgi_Khimshiashvili.tga"
+	traits = { cavalry_officer organizer politically_connected }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Shalva Maglakelidze"
+	portrait_path = "gfx/leaders/SRF/Portrait_GEO_Shalva_Maglakelidze.tga"
+	traits = { politically_connected old_guard }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Valiko Jugheli"
+	portrait_path = "gfx/leaders/SRF/Portrait_GEO_Valiko_Jugheli.tga"
+	traits = { career_officer trait_reckless }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}

@@ -127,21 +127,134 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = PLN_roman_dmowski
-recruit_character = PLN_józef_piłsudski
-recruit_character = PLN_wanda_wasilewska
-recruit_character = PLN_tomasz_arciszewski
-recruit_character = PLN_biskup_Łukomski
-recruit_character = PLN_zygmunt_kaczyński
-recruit_character = PLN_gabriel_narutowicz
-recruit_character = PLN_no_central_leadership
-recruit_character = PLN_bolesław_piasecki
-recruit_character = PLN_henryk_rossman
-recruit_character = PLN_no_leadership
-recruit_character = PLN_bolesław_bierut
+create_country_leader = {
+	name = "Roman Dmowski"
+	#desc = "PLN_Roman_Dmowski_desc"
+	picture = "PLN_Roman_Dmowski.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_democrat_subideology
+	traits = {
+		#
+	}
+}
 
+create_country_leader = {
+	name = "Józef Piłsudski"
+	#desc = "PLN_Jozef_Pilsudski_desc"
+	picture = "PLN_Jozef_Pilsudski.tga"
+	expire = "2020.1.1"
+	ideology = social_democrat_subideology
+	traits = {
+		#
+	}
+}
 
+create_country_leader = {
+	name = "Wanda Wasilewska"
+	#desc = "PLN_Wanda_Wasilewska_desc"
+	picture = "PLN_Wanda_Wasilewska.tga"
+	expire = "2020.1.1"
+	ideology = luxemburgism_leninism
+	traits = {
+		#
+	}
+}
 
+create_country_leader = {
+	name = "Tomasz Arciszewski"
+	#desc = "PLN_Tomasz_Arciszewski_desc"
+	picture = "PLN_Tomasz_Arciszewski.tga"
+	expire = "2020.1.1"
+	ideology = libertarian_socialist_subideology
+	traits = {
+		#
+	}
+}
 
+create_country_leader = {
+	name = "Biskup Łukomski"
+	#desc = "PLN_Biskup_Lukomski_desc"
+	picture = "PLN_Biskup_Lukomski.tga"
+	expire = "2020.1.1"
+	ideology = autocratic_subideology
+	traits = {
+		#
+	}
+}
 
+create_country_leader = {
+	name = "Zygmunt Kaczyński"
+	#desc = "PLN_Zygmunt_Kaczynski_desc"
+	picture = "PLN_Zygmunt_Kaczynski.tga"
+	expire = "2020.1.1"
+	ideology = conservative_subideology
+	traits = {
+		#
+	}
+}
 
+create_country_leader = {
+	name = "Gabriel Narutowicz"
+	#desc = "PLN_Gabriel_Narutowicz_desc"
+	picture = "PLN_Gabriel_Narutowicz.tga"
+	expire = "2020.1.1"
+	ideology = liberal_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "No Central Leadership"
+	#desc = "PLN_Anarchist_desc"
+	picture = "PLN_Anarchist.tga"
+	expire = "2020.1.1"
+	ideology = revolutionary_anarchist_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Bolesław Piasecki"
+	#desc = "PLN_Boleslaw_Piasecki_desc"
+	picture = "PLN_Boleslaw_Piasecki.tga"
+	expire = "2020.1.1"
+	ideology = revolutionary_nationalist_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Henryk Rossman"
+	#desc = "PLN_Henryk_Rossman_desc"
+	picture = "PLN_Henryk_Rossman.tga"
+	expire = "2020.1.1"
+	ideology = ultranationalist_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "No Leadership"
+	#desc = "PLN_No_Leadership_desc"
+	picture = "PLN_No_Leadership.tga"
+	expire = "2020.1.1"
+	ideology = folk_christianity
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Bolesław Bierut"
+	#desc = "PLN_Boleslaw_Bierut_desc"
+	picture = "PLN_Boleslaw_Bierut.tga"
+	expire = "2020.1.1"
+	ideology = unisocialist_subideology
+	traits = {
+		#
+	}
+}

@@ -42,15 +42,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = MEX_plutarco_elías_calles
-recruit_character = MEX_gregorio_bocanegra
-recruit_character = MEX_pedro_echeverría
-recruit_character = MEX_francisco_javier_salas
-recruit_character = MEX_pablo_barragán
-recruit_character = MEX_francisco_javier_ruíz
-recruit_character = MEX_valeriano_arista
-recruit_character = MEX_victoriano_ruíz
-recruit_character = MEX_martín_huerta
-recruit_character = MEX_ernesto_robles
-recruit_character = MEX_sebastián_almonte
-recruit_character = MEX_valeriano_martínez
+create_country_leader = {
+	name = "Plutarco Elías Calles"
+	desc = "MEX_Calles_desc"
+	picture = "MEX_Calles.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_socialist_subideology
+	traits = {
+		#
+	}
+}

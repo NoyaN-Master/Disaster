@@ -52,16 +52,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = THR_ismet_bey
-recruit_character = THR_alex_white
-recruit_character = THR_alex_evans
-recruit_character = THR_johannes_walker
-recruit_character = THR_marcus_roberts
-recruit_character = THR_jonas_smith
-recruit_character = THR_jim_brown
-recruit_character = THR_john_wilson
-recruit_character = THR_peter_evans
-recruit_character = THR_john_evans
-recruit_character = THR_jim_walker
-recruit_character = THR_alex_walker
-
+create_country_leader = {
+	name = "Ismet Bey"
+	#desc = "SES_Zeljko_Raznatovic_desc"
+	picture = "Portrait_THR_Ismet_Inonu.tga"
+	expire = "2020.1.1"
+	ideology = turkish_stratocracy
+	traits = {
+		#
+	}
+}

@@ -42,15 +42,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = XSM_ma_bufang
-recruit_character = XSM_liang_fang
-recruit_character = XSM_pan_tian
-recruit_character = XSM_chen_peng
-recruit_character = XSM_liu_zhao
-recruit_character = XSM_li_ting
-recruit_character = XSM_wang_wei
-recruit_character = XSM_luo_ye
-recruit_character = XSM_liao_sun
-recruit_character = XSM_chen_fang
-recruit_character = XSM_zhu_jiang
-recruit_character = XSM_hsia_peng
+create_country_leader = {
+	name = "Ma Bufang"
+	#desc = "XSM_Ma_Bufang_desc"
+	picture = "XSM_Ma_Bufang.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_democrat_subideology
+	traits = {
+		#
+	}
+}

@@ -42,15 +42,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = PHI_manuel_l._quezon
-recruit_character = PHI_apolinario_rizal
-recruit_character = PHI_arcadio_bonifacio
-recruit_character = PHI_andrés_aguainaldo
-recruit_character = PHI_ladislao_plata
-recruit_character = PHI_teodoro_plata
-recruit_character = PHI_jacinto_jacinto
-recruit_character = PHI_andrés_mabini
-recruit_character = PHI_antonio_arellano
-recruit_character = PHI_jacinto_arellano
-recruit_character = PHI_jacinto_rizal
-recruit_character = PHI_apolinario_bonifacio
+create_country_leader = {
+	name = "Manuel L. Quezon"
+	desc = "PHI_Quezon_desc"
+	picture = "PHI_Quezon.tga"
+	expire = "2020.1.1"
+	ideology = autocratic_subideology
+	traits = {
+		
+	}
+}
