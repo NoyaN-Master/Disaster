@@ -43,13 +43,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Shenton Thomas"
-	desc = "MAL_Shenton_Thomas_desc"
-	picture = "MAL_Shenton_Thomas.tga"
-	expire = "2020.1.1"
-	ideology = authoritarian_democrat_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = MAL_shenton_thomas
+recruit_character = MAL_tengku_aziz
+recruit_character = MAL_pak_abdullah
+recruit_character = MAL_eunos_latiff
+recruit_character = MAL_muhammad_yusof
+recruit_character = MAL_ibrahim_maidin
+recruit_character = MAL_abdul_latiff
+recruit_character = MAL_ahmad_boestamam
+recruit_character = MAL_embok_maidin
+recruit_character = MAL_ahmad_ali
+recruit_character = MAL_mazlan_razak
+recruit_character = MAL_yaacob_omar

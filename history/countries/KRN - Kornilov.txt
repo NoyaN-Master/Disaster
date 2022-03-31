@@ -43,13 +43,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Lavr Kornilov"
-	desc = "KRN_Lavr_Kornilov_desc"
-	picture = "KRN_Lavr_Kornilov.tga"
-	expire = "2020.1.1"
-	ideology = authoritarian_democrat_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = KRN_lavr_kornilov
+recruit_character = KRN_john_smith
+recruit_character = KRN_alexander_taylor
+recruit_character = KRN_john_brown
+recruit_character = KRN_peter_evans
+recruit_character = KRN_lucas_evans
+recruit_character = KRN_peter_roberts
+recruit_character = KRN_bob_jones
+recruit_character = KRN_johannes_white
+recruit_character = KRN_alex_smith
+recruit_character = KRN_johannes_jones
+recruit_character = KRN_marcus_williams

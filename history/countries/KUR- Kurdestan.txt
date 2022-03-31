@@ -44,13 +44,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Ashirat Council"
-	#desc = "SES_Zeljko_Raznatovic_desc"
-	picture = "Portrait_KUR_Council.tga"
-	expire = "2020.1.1"
-	ideology = autocratic_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = KUR_ashirat_council
+recruit_character = KUR_berhem_Şûrbaz
+recruit_character = KUR_samal_bado
+recruit_character = KUR_pêdvî_bîrhat
+recruit_character = KUR_samal_erdelan
+recruit_character = KUR_xorto_ferhat
+recruit_character = KUR_bêmal_kajaw
+recruit_character = KUR_ardelan_kinê
+recruit_character = KUR_gazîn_mîrhem
+recruit_character = KUR_gazîn_nalîn
+recruit_character = KUR_coban_serheng
+recruit_character = KUR_samal_wirya

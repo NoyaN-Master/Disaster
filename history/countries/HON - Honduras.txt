@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Tiburcio Carías Andino"
-	#desc = "HON_Tiburcio_Andino_desc"
-	picture = "HON_Tiburcio_Andino.tga"
-	expire = "2020.1.1"
-	ideology = autocratic_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = HON_tiburcio_carías_andino
+recruit_character = HON_lorenzo_guzmán
+recruit_character = HON_eduardo_barahona
+recruit_character = HON_basilio_peralta
+recruit_character = HON_diego_peralta
+recruit_character = HON_maximiliano_figueroa
+recruit_character = HON_manuel_figueroa
+recruit_character = HON_bernardo_arbenz
+recruit_character = HON_eugenio_palacios
+recruit_character = HON_benito_chávez
+recruit_character = HON_maximiliano_ubico
+recruit_character = HON_ramón_lópez

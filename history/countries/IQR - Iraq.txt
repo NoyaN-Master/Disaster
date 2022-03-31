@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Ghazi I"
-	desc = "IQR_Ghazi_desc"
-	picture = "IQR_Ghazi.tga"
-	expire = "2020.1.1"
-	ideology = autocratic_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = IQR_ghazi_i
+recruit_character = IQR_johannes_jones
+recruit_character = IQR_marcus_taylor
+recruit_character = IQR_jonas_taylor
+recruit_character = IQR_jonas_brown
+recruit_character = IQR_john_williams
+recruit_character = IQR_peter_evans
+recruit_character = IQR_lucas_roberts
+recruit_character = IQR_jim_roberts
+recruit_character = IQR_alexander_taylor
+recruit_character = IQR_jim_williams
+recruit_character = IQR_marcus_jones

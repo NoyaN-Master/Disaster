@@ -42,24 +42,15 @@ add_ideas = 	one_party_state
 add_ideas = 	planned_economy
 add_ideas = 	industrialized_society
 
-create_country_leader = {
-	name = "David Ivon Jones"
-	desc = "KPC_David_Ivon_Jones_desc"
-	picture = "KPC_David_Ivon_Jones.tga"
-	expire = "2020.1.1"
-	ideology = libertarian_socialist_subideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "William Henry Andrews"
-	desc = "KPC_William_Henry_Andrews_desc"
-	picture = "KPC_William_Henry_Andrews.tga"
-	expire = "2020.1.1"
-	ideology = authoritarian_socialist_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = KPC_david_ivon_jones
+recruit_character = KPC_william_henry_andrews
+recruit_character = KPC_bob_wilson
+recruit_character = KPC_jonas_white
+recruit_character = KPC_marcus_walker
+recruit_character = KPC_johannes_walker
+recruit_character = KPC_marcus_smith
+recruit_character = KPC_john_smith
+recruit_character = KPC_peter_brown
+recruit_character = KPC_lucas_wilson
+recruit_character = KPC_peter_evans
+recruit_character = KPC_john_roberts

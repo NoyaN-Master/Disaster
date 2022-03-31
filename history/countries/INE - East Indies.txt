@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Wilhelmina"
-	#desc = "INE_Wilhelmina_desc"
-	picture = "INE_Wilhelmina.tga"
-	expire = "2020.1.1"
-	ideology = autocratic_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = INE_wilhelmina
+recruit_character = INE_johannes_jones
+recruit_character = INE_johannes_smith
+recruit_character = INE_bob_jones
+recruit_character = INE_jonas_jones
+recruit_character = INE_bob_evans
+recruit_character = INE_lucas_evans
+recruit_character = INE_alexander_walker
+recruit_character = INE_john_roberts
+recruit_character = INE_peter_taylor
+recruit_character = INE_lucas_roberts
+recruit_character = INE_jim_jones

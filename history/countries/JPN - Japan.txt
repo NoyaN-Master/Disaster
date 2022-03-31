@@ -57,13 +57,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Hirohito"
-	#desc = "JPN_Hirohito_desc"
-	picture = "JPN_Hirohito.tga"
-	expire = "2020.1.1"
-	ideology = conservative_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = JPN_hirohito
+recruit_character = JPN_bob_walker
+recruit_character = JPN_john_smith
+recruit_character = JPN_alexander_white
+recruit_character = JPN_john_roberts
+recruit_character = JPN_lucas_smith
+recruit_character = JPN_lucas_williams
+recruit_character = JPN_peter_wilson
+recruit_character = JPN_bob_wilson
+recruit_character = JPN_bob_white
+recruit_character = JPN_alex_smith
+recruit_character = JPN_bob_jones

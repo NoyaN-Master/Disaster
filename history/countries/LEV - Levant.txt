@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Levantine Council"
-	#desc = "LEV_Arthur_desc"
-	picture = "LEV_Council.tga"
-	expire = "2020.1.1"
-	ideology = authoritarian_democrat_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = LEV_levantine_council
+recruit_character = LEV_peter_roberts
+recruit_character = LEV_peter_evans
+recruit_character = LEV_jim_roberts
+recruit_character = LEV_alexander_jones
+recruit_character = LEV_johannes_taylor
+recruit_character = LEV_jonas_williams
+recruit_character = LEV_bob_walker
+recruit_character = LEV_jonas_walker
+recruit_character = LEV_marcus_smith
+recruit_character = LEV_johannes_jones
+recruit_character = LEV_peter_white

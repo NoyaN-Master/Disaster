@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Marie-Adélaïde"
-	#desc = "LUX_Marie_Adelaide_desc"
-	picture = "LUX_Marie_Adelaide.tga"
-	expire = "2020.1.1"
-	ideology = authoritarian_democrat_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = LUX_marieadélaïde
+recruit_character = LUX_gilles_collet
+recruit_character = LUX_henri_domalius
+recruit_character = LUX_isidore_davignon
+recruit_character = LUX_feullien_de_bousies
+recruit_character = LUX_georges_de_coppin_de_falaen
+recruit_character = LUX_guillaume_de_lannoy
+recruit_character = LUX_hubert_de_pelichy
+recruit_character = LUX_eugène_de_sécus
+recruit_character = LUX_florent_de_viron
+recruit_character = LUX_jacques_destriveaux
+recruit_character = LUX_feullien_du_bois

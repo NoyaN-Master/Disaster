@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Enoch Powell"
-	desc = "KSM_Enoch_Powell_desc"
-	picture = "KSM_Enoch_Powell.tga"
-	expire = "2020.1.1"
-	ideology = ultranationalist_subideology
-	traits = {
-		
-	}
-}
+recruit_character = KSM_enoch_powell
+recruit_character = KSM_john_williams
+recruit_character = KSM_alexander_evans
+recruit_character = KSM_alexander_brown
+recruit_character = KSM_peter_wilson
+recruit_character = KSM_lucas_white
+recruit_character = KSM_john_roberts
+recruit_character = KSM_alex_jones
+recruit_character = KSM_johannes_taylor
+recruit_character = KSM_alex_williams
+recruit_character = KSM_bob_wilson
+recruit_character = KSM_jonas_walker

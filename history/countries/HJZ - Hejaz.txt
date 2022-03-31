@@ -41,13 +41,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Ali bin Hussein"
-	#desc = "HJZ_Ali_desc"
-	picture = "HJZ_Ali.tga"
-	expire = "2020.1.1"
-	ideology = autocratic_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = HJZ_ali_bin_hussein
+recruit_character = HJZ_bob_walker
+recruit_character = HJZ_marcus_smith
+recruit_character = HJZ_johannes_jones
+recruit_character = HJZ_jonas_jones
+recruit_character = HJZ_bob_williams
+recruit_character = HJZ_peter_evans
+recruit_character = HJZ_lucas_brown
+recruit_character = HJZ_john_wilson
+recruit_character = HJZ_alexander_white
+recruit_character = HJZ_john_roberts
+recruit_character = HJZ_jim_jones

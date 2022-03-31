@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Feng Yuxiang"
-	desc = "GUO_Feng_Yuxiang_desc"
-	picture = "GUO_Feng_Yuxiang.tga"
-	expire = "2020.1.1"
-	ideology = libertarian_socialist_subideology
-	traits = {
-		
-	}
-}
+recruit_character = GUO_feng_yuxiang
+recruit_character = GUO_johannes_white
+recruit_character = GUO_bob_williams
+recruit_character = GUO_bob_walker
+recruit_character = GUO_alex_smith
+recruit_character = GUO_john_smith
+recruit_character = GUO_alexander_brown
+recruit_character = GUO_alexander_roberts
+recruit_character = GUO_peter_evans
+recruit_character = GUO_lucas_white
+recruit_character = GUO_bob_wilson
+recruit_character = GUO_alex_white

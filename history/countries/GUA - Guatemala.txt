@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Jorge Ubico Castañeda"
-	#desc = "GUA_Jorge_Ubico_desc"
-	picture = "GUA_Jorge_Ubico.tga"
-	expire = "2020.1.1"
-	ideology = ultranationalist_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = GUA_jorge_ubico_castañeda
+recruit_character = GUA_próspero_ezeta
+recruit_character = GUA_tomás_terán
+recruit_character = GUA_jacobo_leiva
+recruit_character = GUA_juan_lópez
+recruit_character = GUA_santiago_castellanos
+recruit_character = GUA_alejandro_sinibaldi
+recruit_character = GUA_jorge_soto
+recruit_character = GUA_toribio_soto
+recruit_character = GUA_juan_antonio_cárdenas
+recruit_character = GUA_arturo_morazán
+recruit_character = GUA_juan_morazán

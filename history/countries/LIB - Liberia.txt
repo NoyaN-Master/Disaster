@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Charles D. B. King"
-	#desc = "LIB_Charles_King_desc"
-	picture = "LIB_Charles.tga"
-	expire = "2020.1.1"
-	ideology = autocratic_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = LIB_charles_d._b._king
+recruit_character = LIB_caesar_mink
+recruit_character = LIB_aaron_holland
+recruit_character = LIB_stewart_griffin
+recruit_character = LIB_osborne_brooks
+recruit_character = LIB_lloyd_beaty
+recruit_character = LIB_osborne_veale
+recruit_character = LIB_edgar_stukes
+recruit_character = LIB_thomas_pinn
+recruit_character = LIB_edgar_king
+recruit_character = LIB_william_holland
+recruit_character = LIB_robert_fields
