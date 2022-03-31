@@ -42,15 +42,24 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = MDW_harold_stassen
-recruit_character = MDW_hjalmar_petersen
-recruit_character = MDW_alexander_roberts
-recruit_character = MDW_alexander_taylor
-recruit_character = MDW_john_taylor
-recruit_character = MDW_lucas_brown
-recruit_character = MDW_marcus_white
-recruit_character = MDW_jonas_white
-recruit_character = MDW_bob_roberts
-recruit_character = MDW_alex_walker
-recruit_character = MDW_alex_smith
-recruit_character = MDW_jonas_smith
+create_country_leader = {
+	name = "Harold Stassen"
+	desc = "MDW_Harold_Stassen_desc"
+	picture = "MDW_Harold_Stassen.tga"
+	expire = "2020.1.1"
+	ideology = liberal_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Hjalmar Petersen"
+	desc = "MDW_Hjalmar_Petersen_desc"
+	picture = "MDW_Hjalmar_Petersen.tga"
+	expire = "2020.1.1"
+	ideology = social_democrat_subideology
+	traits = {
+		#
+	}
+}

@@ -42,15 +42,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = MAN_nobusuke_kishi
-recruit_character = MAN_hesehn_shangzhi
-recruit_character = MAN_ma_kangan
-recruit_character = MAN_hesehn_tiemei
-recruit_character = MAN_ma_xiangying
-recruit_character = MAN_zhao_tiemei
-recruit_character = MAN_songgotu_shangzhi
-recruit_character = MAN_tong_kangan
-recruit_character = MAN_changlin_shangzhi
-recruit_character = MAN_mingzhu_xiangying
-recruit_character = MAN_changlin_zhanshan
-recruit_character = MAN_deng_linge
+create_country_leader = {
+	name = "Nobusuke Kishi"
+	#desc = "MAN_Kishi_desc"
+	picture = "MAN_Kisji.tga"
+	expire = "2020.1.1"
+	ideology = ultranationalist_subideology
+	traits = {
+		#
+	}
+}

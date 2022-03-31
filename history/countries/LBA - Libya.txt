@@ -46,15 +46,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = LBA_benito_mussolini
-recruit_character = LBA_iskandar_ibn_muhammad
-recruit_character = LBA_khalid_ibn_uthman
-recruit_character = LBA_sad_aldin_ibn_khalid
-recruit_character = LBA_umar_ibn_hasan
-recruit_character = LBA_abd_allah_ibn_jafar
-recruit_character = LBA_abu_bakr_ibn_mustafa
-recruit_character = LBA_fuad_ibn_abu_bakr
-recruit_character = LBA_ishaq_ibn_fuad
-recruit_character = LBA_kamil_ibn_ishaq
-recruit_character = LBA_sad_aldin_ibn_uthman
-recruit_character = LBA_umar_ibn_abd_allah
+create_country_leader = {
+	name = "Benito Mussolini"
+	desc = "LBA_Benito_Mussolini_desc"
+	picture = "LBA_Benito_Mussolini.tga"
+	expire = "2020.1.1"
+	ideology = ultranationalist_subideology
+	traits = {
+		#
+	}
+}

@@ -41,15 +41,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = HAI_sténio_vincent
-recruit_character = HAI_faustin_pricemars
-recruit_character = HAI_timoleón_pricemars
-recruit_character = HAI_hannibal_guerrier
-recruit_character = HAI_tandredè_ardouin
-recruit_character = HAI_andré_legouaze
-recruit_character = HAI_alexis_conzé
-recruit_character = HAI_jean_salnave
-recruit_character = HAI_tirésias_salomon
-recruit_character = HAI_jonathas_leconte
-recruit_character = HAI_guillaume_légitime
-recruit_character = HAI_jeanlouis_christophe
+create_country_leader = {
+	name = "Sténio Vincent"
+	#desc = "HAI_Stenio_Vincent_desc"
+	picture = "HAI_Stenio_Vincent.tga"
+	expire = "2020.1.1"
+	ideology = conservative_subideology
+	traits = {
+		#
+	}
+}

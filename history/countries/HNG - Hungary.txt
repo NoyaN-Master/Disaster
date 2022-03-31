@@ -42,15 +42,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = HNG_miklos_horthy
-recruit_character = HNG_alexander_walker
-recruit_character = HNG_jim_taylor
-recruit_character = HNG_lucas_taylor
-recruit_character = HNG_lucas_brown
-recruit_character = HNG_peter_walker
-recruit_character = HNG_bob_white
-recruit_character = HNG_alex_williams
-recruit_character = HNG_alex_walker
-recruit_character = HNG_jonas_smith
-recruit_character = HNG_marcus_smith
-recruit_character = HNG_johannes_brown
+create_country_leader = {
+	name = "Miklos Horthy"
+	#desc = "HNG_Horthy_desc"
+	picture = "HNG_Horthy.tga"
+	expire = "2020.1.1"
+	ideology = ultranationalist_subideology
+	traits = {
+		#
+	}
+}

@@ -42,15 +42,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = LOU_earl_k._long
-recruit_character = LOU_jonas_brown
-recruit_character = LOU_marcus_walker
-recruit_character = LOU_bob_white
-recruit_character = LOU_alex_white
-recruit_character = LOU_johannes_jones
-recruit_character = LOU_alex_brown
-recruit_character = LOU_alexander_smith
-recruit_character = LOU_jim_brown
-recruit_character = LOU_alexander_wilson
-recruit_character = LOU_peter_evans
-recruit_character = LOU_peter_white
+create_country_leader = {
+	name = "Earl K. Long"
+	desc = "LOU_Earl_Long_desc"
+	picture = "LOU_Earl_Long.tga"
+	expire = "2020.1.1"
+	ideology = social_democrat_subideology
+	traits = {
+		#
+	}
+}

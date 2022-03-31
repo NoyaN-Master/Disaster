@@ -42,15 +42,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = IRA_eoin_oduffy
-recruit_character = IRA_alexander_white
-recruit_character = IRA_jim_jones
-recruit_character = IRA_johannes_jones
-recruit_character = IRA_bob_williams
-recruit_character = IRA_jonas_evans
-recruit_character = IRA_alex_walker
-recruit_character = IRA_johannes_white
-recruit_character = IRA_alex_smith
-recruit_character = IRA_john_roberts
-recruit_character = IRA_jim_roberts
-recruit_character = IRA_lucas_smith
+create_country_leader = {
+	name = "Eoin O'Duffy"
+	#desc = "IRA_Eoin_Oduffy_desc"
+	picture = "IRA_Eoin_Oduffy.tga"
+	expire = "2020.1.1"
+	ideology = ultranationalist_subideology
+	traits = {
+		#
+	}
+}

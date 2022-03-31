@@ -41,15 +41,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = MBM_nana_patil
-recruit_character = MBM_johannes_smith
-recruit_character = MBM_marcus_jones
-recruit_character = MBM_lucas_wilson
-recruit_character = MBM_jim_evans
-recruit_character = MBM_john_walker
-recruit_character = MBM_peter_roberts
-recruit_character = MBM_peter_taylor
-recruit_character = MBM_john_taylor
-recruit_character = MBM_alex_roberts
-recruit_character = MBM_johannes_taylor
-recruit_character = MBM_johannes_williams
+create_country_leader = {
+	name = "Nana Patil"
+	desc = "MBM_Nana_Patil_desc"
+	picture = "MBM_Nana_Patil.tga"
+	expire = "2020.1.1"
+	ideology = libertarian_socialist_subideology
+	traits = {
+		
+	}
+}

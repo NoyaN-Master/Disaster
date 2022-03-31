@@ -42,15 +42,35 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = KAN_alf_landon
-recruit_character = KAN_earl_browder
-recruit_character = KAN_ernest_w._marland
-recruit_character = KAN_johannes_jones
-recruit_character = KAN_jonas_brown
-recruit_character = KAN_marcus_williams
-recruit_character = KAN_alex_williams
-recruit_character = KAN_lucas_roberts
-recruit_character = KAN_lucas_smith
-recruit_character = KAN_alexander_smith
-recruit_character = KAN_john_brown
-recruit_character = KAN_alexander_jones
+create_country_leader = {
+	name = "Alf Landon"
+	desc = "KAN_Alf_Landon_desc"
+	picture = "KAN_Alf_Landon.tga"
+	expire = "2020.1.1"
+	ideology = liberal_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Earl Browder"
+	desc = "KAN_Earl_Browder_desc"
+	picture = "KAN_Earl_Browder.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_socialist_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ernest W. Marland"
+	desc = "KAN_Ernest_Marland_desc"
+	picture = "KAN_Ernest_Marland.tga"
+	expire = "2020.1.1"
+	ideology = social_democrat_subideology
+	traits = {
+		#
+	}
+}
