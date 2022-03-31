@@ -53,12 +53,46 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = CRW_vahdettin_i
-recruit_character = CRW_lucas_taylor
-recruit_character = CRW_peter_wilson
-recruit_character = CRW_alex_walker
-recruit_character = CRW_bob_williams
-recruit_character = CRW_jonas_evans
-recruit_character = CRW_johannes_walker
-recruit_character = CRW_johannes_smith
-recruit_character = CRW_marcus_smith
+create_country_leader = {
+	name = "Vahdettin I"
+	#desc = "SES_Zeljko_Raznatovic_desc"
+	picture = "Portrait_CRW_Vahdettin.tga"
+	expire = "2020.1.1"
+	ideology = conservative_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Vahdettin I"
+	#desc = "SES_Zeljko_Raznatovic_desc"
+	picture = "Portrait_CRW_Vahdettin.tga"
+	expire = "2020.1.1"
+	ideology = liberal_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Vahdettin I"
+	#desc = "SES_Zeljko_Raznatovic_desc"
+	picture = "Portrait_CRW_Vahdettin.tga"
+	expire = "2020.1.1"
+	ideology = social_democrat_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Vahdettin I"
+	#desc = "SES_Zeljko_Raznatovic_desc"
+	picture = "Portrait_CRW_Vahdettin.tga"
+	expire = "2020.1.1"
+	ideology = autocratic_subideology
+	traits = {
+		#
+	}
+}

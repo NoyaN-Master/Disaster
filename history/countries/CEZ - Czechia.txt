@@ -42,15 +42,14 @@ set_popularities = {
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
-recruit_character = CEZ_edvard_beneš
-recruit_character = CEZ_john_smith
-recruit_character = CEZ_jim_roberts
-recruit_character = CEZ_lucas_jones
-recruit_character = CEZ_peter_taylor
-recruit_character = CEZ_lucas_taylor
-recruit_character = CEZ_johannes_wilson
-recruit_character = CEZ_alex_walker
-recruit_character = CEZ_bob_white
-recruit_character = CEZ_alex_jones
-recruit_character = CEZ_marcus_roberts
-recruit_character = CEZ_jonas_smith
+
+create_country_leader = {
+	name = "Edvard Beneš"
+	#desc = "CEZ_Edvard_desc"
+	picture = "CEZ_Edvard.tga"
+	expire = "2020.1.1"
+	ideology = social_democrat_subideology
+	traits = {
+		#
+	}
+}

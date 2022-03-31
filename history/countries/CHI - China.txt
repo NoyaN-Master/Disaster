@@ -42,15 +42,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = CHI_yuntai_emperor
-recruit_character = CHI_luo_jin
-recruit_character = CHI_tan_jiang
-recruit_character = CHI_huang_fang
-recruit_character = CHI_mao_zhao
-recruit_character = CHI_zhu_shen
-recruit_character = CHI_hsia_tian
-recruit_character = CHI_luo_ting
-recruit_character = CHI_tan_ma
-recruit_character = CHI_liao_jin
-recruit_character = CHI_hu_sun
-recruit_character = CHI_yang_fang
+create_country_leader = {
+	name = "Yuntai Emperor"
+	desc = "CHI_Yuan_Keding_desc"
+	picture = "CHI_Yuan_Keding.tga"
+	expire = "2020.1.1"
+	ideology = autocratic_subideology
+	traits = {
+		#
+	}
+}

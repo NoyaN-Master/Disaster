@@ -226,15 +226,23 @@ add_ideas = 	multi_party_democracy
 add_ideas = 	laisez_faire 
 add_ideas = 	post_industrialized_society
 
-recruit_character = ENG_george_v
-recruit_character = ENG_william_joyce
-recruit_character = ENG_henrey_beresford
-recruit_character = ENG_fairfax_brown
-recruit_character = ENG_hubert_seaton
-recruit_character = ENG_horatio_fisher
-recruit_character = ENG_geoffrey_windsor
-recruit_character = ENG_ian_milne
-recruit_character = ENG_cyril_allenby
-recruit_character = ENG_wallace_cockburn
-recruit_character = ENG_john_williams
-recruit_character = ENG_reginald_williams
+create_country_leader = {
+	name = "George V"
+	desc = "ENG_George_V_desc"
+	picture = "ENG_George_V.tga"
+	expire = "2020.1.1"
+	ideology = conservative_subideology
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "William Joyce"
+	desc = "ENG_William_Joyce_desc"
+	picture = "ENG_William_Joyce.tga"
+	expire = "2020.1.1"
+	ideology = revolutionary_nationalist_subideology
+	traits = {
+		#
+	}
+}

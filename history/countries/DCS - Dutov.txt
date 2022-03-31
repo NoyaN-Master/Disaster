@@ -44,15 +44,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = DCS_aleksandr_dutov
-recruit_character = DCS_peter_walker
-recruit_character = DCS_peter_roberts
-recruit_character = DCS_john_smith
-recruit_character = DCS_alexander_taylor
-recruit_character = DCS_jim_wilson
-recruit_character = DCS_johannes_wilson
-recruit_character = DCS_marcus_evans
-recruit_character = DCS_jonas_walker
-recruit_character = DCS_bob_walker
-recruit_character = DCS_bob_white
-recruit_character = DCS_alex_smith
+create_country_leader = {
+	name = "Aleksandr Dutov"
+	desc = "DCS_Aleksandr_Dutov_desc"
+	picture = "DCS_Aleksandr_Dutov.tga"
+	expire = "2020.1.1"
+	ideology = conservative_subideology
+	traits = {
+		
+	}
+}

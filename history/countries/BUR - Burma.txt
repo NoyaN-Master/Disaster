@@ -41,15 +41,14 @@ set_popularities = {
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
-recruit_character = BUR_orde_wingate
-recruit_character = BUR_alexander_roberts
-recruit_character = BUR_john_taylor
-recruit_character = BUR_alexander_white
-recruit_character = BUR_lucas_jones
-recruit_character = BUR_jonas_taylor
-recruit_character = BUR_marcus_williams
-recruit_character = BUR_alex_walker
-recruit_character = BUR_lucas_walker
-recruit_character = BUR_bob_smith
-recruit_character = BUR_alexander_smith
-recruit_character = BUR_john_brown
+
+create_country_leader = {
+	name = "Orde Wingate"
+	#desc = "BUR_Wingate_desc"
+	picture = "BUR_Wingate.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_democrat_subideology
+	traits = {
+		#
+	}
+}

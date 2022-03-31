@@ -42,15 +42,13 @@ add_ideas = 	agrarian_society
 add_ideas = 	laisez_faire 
 add_ideas = 	autocracy 
 
-recruit_character = BHU_jigme_wangchuck
-recruit_character = BHU_mipham_tashi
-recruit_character = BHU_chamba_wangyal
-recruit_character = BHU_jamphel_rinpoche
-recruit_character = BHU_tsarong_shakabpa
-recruit_character = BHU_gendün_wangyal
-recruit_character = BHU_andruk_rinpoche
-recruit_character = BHU_trimon_shakabpa
-recruit_character = BHU_mipham_wangyal
-recruit_character = BHU_namgang_lungshar
-recruit_character = BHU_norbhu_shakabpa
-recruit_character = BHU_tsarong_wangyal
+create_country_leader = {
+	name = "Jigme Wangchuck"
+	desc = "BHU_Jigme_Wangchuck_desc"
+	picture = "BHU_Jigme_Wangchuck.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_democrat_subideology
+	traits = {
+		
+	}
+}

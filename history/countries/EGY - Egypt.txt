@@ -42,35 +42,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = EGY_sir_oswald_mosley
-recruit_character = EGY_fuad_ibn_ahmad
-recruit_character = EGY_hisham_alnajdi
-recruit_character = EGY_kamil_ibn_abu_bakr
-recruit_character = EGY_nur_aldin_ibn_fuad
-recruit_character = EGY_shukri_ibn_mustafa
-recruit_character = EGY_zafir_ibn_umar
-recruit_character = EGY_abd_alrahman_alhijazi
-recruit_character = EGY_ali_ibn_umar
-recruit_character = EGY_hisham_ibm_kamil
-recruit_character = EGY_jamal_ibn_salim
-recruit_character = EGY_nur_aldin_ibn_yusuf
-recruit_character = EGY_acas
-recruit_character = EGY_mt
-recruit_character = EGY_nccr
-recruit_character = EGY_ai2
-recruit_character = EGY_ncs
-recruit_character = EGY_aco2
-recruit_character = EGY_acd2
-recruit_character = EGY_nt
-recruit_character = EGY_ar
-recruit_character = EGY_fascist_guy
-recruit_character = EGY_acgs
-recruit_character = EGY_acr
-recruit_character = EGY_stc
-recruit_character = EGY_ncm
-recruit_character = EGY_democratic_guy
-recruit_character = EGY_communist_guy
-recruit_character = EGY_coi
-recruit_character = EGY_pot
-recruit_character = EGY_aa2
-recruit_character = EGY_awt
+create_country_leader = {
+	name = "Sir Oswald Mosley"
+	#desc = "EGY_Mosley_desc"
+	picture = "EGY_Mosley.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_democrat_subideology
+	traits = {
+		#
+	}
+}

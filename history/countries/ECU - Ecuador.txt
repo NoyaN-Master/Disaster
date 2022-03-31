@@ -42,15 +42,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = ECU_juan_de_dios_martínez
-recruit_character = ECU_severino_figueroa
-recruit_character = ECU_santiago_baquedano
-recruit_character = ECU_germán_belzú
-recruit_character = ECU_josé_orbegoso
-recruit_character = ECU_francisco_errázuriz
-recruit_character = ECU_tomás_fernández
-recruit_character = ECU_ignacio_fernández
-recruit_character = ECU_sebastián_castilla
-recruit_character = ECU_josé_castilla
-recruit_character = ECU_alejandro_corrico
-recruit_character = ECU_jorge_grau
+create_country_leader = {
+	name = "Juan de Dios Martínez"
+	#desc = "ECU_Juan_Martinez_desc"
+	picture = "ECU_Juan_Martinez.tga"
+	expire = "2020.1.1"
+	ideology = liberal_subideology
+	traits = {
+		#
+	}
+}

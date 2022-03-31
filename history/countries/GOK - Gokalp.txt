@@ -58,15 +58,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = GOK_ziya_gökalp
-recruit_character = GOK_bob_smith
-recruit_character = GOK_marcus_jones
-recruit_character = GOK_johannes_jones
-recruit_character = GOK_jim_evans
-recruit_character = GOK_lucas_walker
-recruit_character = GOK_peter_brown
-recruit_character = GOK_lucas_evans
-recruit_character = GOK_lucas_white
-recruit_character = GOK_alexander_roberts
-recruit_character = GOK_bob_jones
-recruit_character = GOK_alex_williams
+create_country_leader = {
+	name = "Ziya Gökalp"
+	#desc = "GOK_Ziya_Gokalp_desc"
+	picture = "Portrait_GOK_Ziya_Gokalp.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_democrat_subideology
+	traits = {
+		#
+	}
+}

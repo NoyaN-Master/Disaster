@@ -64,15 +64,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = DAN_christian_x
-recruit_character = DAN_peter_wilson
-recruit_character = DAN_lucas_white
-recruit_character = DAN_johannes_white
-recruit_character = DAN_alex_roberts
-recruit_character = DAN_johannes_smith
-recruit_character = DAN_marcus_smith
-recruit_character = DAN_bob_jones
-recruit_character = DAN_jonas_brown
-recruit_character = DAN_lucas_evans
-recruit_character = DAN_peter_evans
-recruit_character = DAN_peter_roberts
+create_country_leader = {
+	name = "Christian X"
+	#desc = "DAN_Christian_desc"
+	picture = "DAN_Christian.tga"
+	expire = "2020.1.1"
+	ideology = social_democrat_subideology
+	traits = {
+		#
+	}
+}

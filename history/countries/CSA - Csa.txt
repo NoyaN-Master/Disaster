@@ -43,15 +43,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = CSA_theodore_g._bilbo
-recruit_character = CSA_william_ector
-recruit_character = CSA_joshua_scales
-recruit_character = CSA_nathaniel_houston
-recruit_character = CSA_joseph_benton
-recruit_character = CSA_raphael_connor
-recruit_character = CSA_cadmus_fry
-recruit_character = CSA_henry_schenck
-recruit_character = CSA_john_wallace
-recruit_character = CSA_augustus_pender
-recruit_character = CSA_ambrose_davis
-recruit_character = CSA_frank_harrison
+create_country_leader = {
+	name = "Theodore G. Bilbo"
+	desc = "CSA_Theodore_Bilbo_desc"
+	picture = "CSA_Theodore_Bilbo.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_democrat_subideology
+	traits = {
+		#
+	}
+}

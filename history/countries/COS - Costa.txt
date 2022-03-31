@@ -41,15 +41,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = COS_rafael_calderón_guardia
-recruit_character = COS_victoriano_escalón
-recruit_character = COS_joaquín_escalón
-recruit_character = COS_tomás_vigil
-recruit_character = COS_juan_vigil
-recruit_character = COS_francisco_medina
-recruit_character = COS_josé_maría_mejía
-recruit_character = COS_alejandro_corral
-recruit_character = COS_toribio_rosales
-recruit_character = COS_jesús_guzmán
-recruit_character = COS_juan_antonio_barillas
-recruit_character = COS_santiago_barrios
+create_country_leader = {
+	name = "Rafael Calderón Guardia"
+	#desc = "COS_Rafael_Calderon_desc"
+	picture = "COS_Rafael_Calderon.tga"
+	expire = "2020.1.1"
+	ideology = social_democrat_subideology
+	traits = {
+		#
+	}
+}

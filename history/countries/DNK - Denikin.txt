@@ -41,15 +41,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = DNK_anton_denikin
-recruit_character = DNK_bob_williams
-recruit_character = DNK_alex_evans
-recruit_character = DNK_johannes_roberts
-recruit_character = DNK_peter_roberts
-recruit_character = DNK_lucas_smith
-recruit_character = DNK_jim_wilson
-recruit_character = DNK_lucas_wilson
-recruit_character = DNK_lucas_evans
-recruit_character = DNK_alexander_evans
-recruit_character = DNK_bob_walker
-recruit_character = DNK_alex_walker
+create_country_leader = {
+	name = "Anton Denikin"
+	#desc = "DNK_Denikin_desc"
+	picture = "DNK_Denikin.tga"
+	expire = "2020.1.1"
+	ideology = conservative_subideology
+	traits = {
+		#
+	}
+}

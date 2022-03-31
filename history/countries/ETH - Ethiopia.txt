@@ -42,15 +42,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = ETH_haile_selassie
-recruit_character = ETH_girma_makonnen
-recruit_character = ETH_berihun_melekot
-recruit_character = ETH_girma_wossen
-recruit_character = ETH_berihun_mikael
-recruit_character = ETH_amare_melekot
-recruit_character = ETH_demissie_selassie
-recruit_character = ETH_berhanu_seged
-recruit_character = ETH_berhanu_wossen
-recruit_character = ETH_kelile_mariam
-recruit_character = ETH_demissie_seged
-recruit_character = ETH_kelile_selassie
+create_country_leader = {
+	name = "Haile Selassie"
+	desc = "ETH_Haile_Selassie_desc"
+	picture = "ETH_Haile_Selassie.tga"
+	expire = "2020.1.1"
+	ideology = autocratic_subideology
+	traits = {
+		#
+	}
+}

@@ -42,15 +42,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = FER_aleksandr_krasnoshchyokov
-recruit_character = FER_maxim_konev
-recruit_character = FER_maxim_menshikov
-recruit_character = FER_andrei_budyonny
-recruit_character = FER_viktor_romanov
-recruit_character = FER_lavr_budyonny
-recruit_character = FER_yuri_makarov
-recruit_character = FER_sergei_budyonny
-recruit_character = FER_mikhail_lazarev
-recruit_character = FER_anton_yegorov
-recruit_character = FER_pyotr_kuropatkin
-recruit_character = FER_pyotr_badanov
+create_country_leader = {
+	name = "Aleksandr Krasnoshchyokov"
+	desc = "FER_Aleksandr_Krasnoshchyokov_desc"
+	picture = "FER_Aleksandr_Krasnoshchyokov.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_socialist_subideology
+	traits = {
+		#
+	}
+}

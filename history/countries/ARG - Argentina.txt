@@ -42,15 +42,13 @@ add_ideas = 	multi_party_democracy
 add_ideas = 	laisez_faire 
 add_ideas = 	industrialized_society
 
-recruit_character = ARG_marcelo_torcuato_de_alvear
-recruit_character = ARG_pedro_báez
-recruit_character = ARG_torcuato_báez
-recruit_character = ARG_gabriel_roca
-recruit_character = ARG_francisco_flores
-recruit_character = ARG_roque_gonzález
-recruit_character = ARG_antonio_jovellanos
-recruit_character = ARG_guillermo_rivarola
-recruit_character = ARG_gabriel_rivera
-recruit_character = ARG_torcuato_de_la_plaza
-recruit_character = ARG_bartolomé_tajes
-recruit_character = ARG_félix_maza
+create_country_leader = {
+	name = "Marcelo Torcuato de Alvear"
+	#desc = "ARG_Marcelo_Torcuato_desc"
+	picture = "ARG_Marcelo_Torcuato.tga"
+	expire = "2020.1.1"
+	ideology = liberal_subideology
+	traits = {
+		#
+	}
+}

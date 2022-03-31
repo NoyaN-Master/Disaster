@@ -124,15 +124,28 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = BDN_berthold_ii
-recruit_character = BDN_alexander_white
-recruit_character = BDN_alexander_roberts
-recruit_character = BDN_john_roberts
-recruit_character = BDN_alexander_taylor
-recruit_character = BDN_lucas_williams
-recruit_character = BDN_jonas_wilson
-recruit_character = BDN_marcus_evans
-recruit_character = BDN_alex_smith
-recruit_character = BDN_alex_jones
-recruit_character = BDN_johannes_walker
-recruit_character = BDN_marcus_smith
+create_country_leader = {
+	name = "Berthold II"
+	desc = "BDN_Berthold_desc"
+	picture = "BDN_Berthold.tga"
+	expire = "2020.1.1"
+	ideology = liberal_subideology
+	traits = {
+		#
+	}
+}
+######################################### Generals
+
+#field marshals
+create_field_marshal = {
+	name = "Berthold II"
+	portrait_path = "gfx/leaders/BDN/BDN_Berthold.tga"
+	traits = {
+
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}

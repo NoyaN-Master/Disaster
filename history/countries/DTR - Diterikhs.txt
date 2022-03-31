@@ -43,15 +43,13 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = DTR_mikhail_diterikhs
-recruit_character = DTR_jim_taylor
-recruit_character = DTR_jim_brown
-recruit_character = DTR_lucas_wilson
-recruit_character = DTR_peter_evans
-recruit_character = DTR_bob_roberts
-recruit_character = DTR_bob_jones
-recruit_character = DTR_alex_taylor
-recruit_character = DTR_johannes_smith
-recruit_character = DTR_johannes_jones
-recruit_character = DTR_marcus_brown
-recruit_character = DTR_jim_evans
+create_country_leader = {
+	name = "Mikhail Diterikhs"
+	desc = "DTR_Mikhail_Diterikhs_desc"
+	picture = "DTR_Mikhail_Diterikhs.tga"
+	expire = "2020.1.1"
+	ideology = esoteric_traditionalist_subideology
+	traits = {
+		#
+	}
+}

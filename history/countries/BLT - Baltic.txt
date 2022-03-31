@@ -42,15 +42,14 @@ add_ideas = 	military_government
 add_ideas = 	corporatism 
 add_ideas = 	industrialized_society
 
-recruit_character = BLT_rüdiger_von_der_goltz
-recruit_character = BLT_jim_smith
-recruit_character = BLT_lucas_brown
-recruit_character = BLT_jim_wilson
-recruit_character = BLT_alexander_evans
-recruit_character = BLT_john_white
-recruit_character = BLT_peter_roberts
-recruit_character = BLT_alex_jones
-recruit_character = BLT_johannes_williams
-recruit_character = BLT_marcus_jones
-recruit_character = BLT_johannes_jones
-recruit_character = BLT_alex_evans
+
+create_country_leader = {
+	name = "Rüdiger von der Goltz"
+	#desc = "BLT_Goltz_desc"
+	picture = "BLT_Goltz.tga"
+	expire = "2020.1.1"
+	ideology = ultranationalist_subideology
+	traits = {
+		#
+	}
+}

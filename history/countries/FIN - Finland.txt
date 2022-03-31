@@ -72,15 +72,14 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-recruit_character = FIN_risto_heikki_ryti
-recruit_character = FIN_ahto_pertola
-recruit_character = FIN_jarno_matilla
-recruit_character = FIN_erkki_matilla
-recruit_character = FIN_pekka_pertola
-recruit_character = FIN_alpo_törni
-recruit_character = FIN_paavo_törni
-recruit_character = FIN_petteri_marttinen
-recruit_character = FIN_ahti_karhu
-recruit_character = FIN_johannes_kari
-recruit_character = FIN_erkki_törni
-recruit_character = FIN_lauri_karhu
+create_country_leader = {
+	name = "Risto Heikki Ryti"
+	desc = "FIN_Risto_Heikki_Ryti_desc"
+	picture = "FIN_Risto_Heikki_Ryti.tga"
+	expire = "1965.1.1"
+	ideology = liberal_subideology
+	traits = {
+		#
+	}
+}
+

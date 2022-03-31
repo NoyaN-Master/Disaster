@@ -42,15 +42,13 @@ add_ideas = 	one_party_state
 add_ideas = 	corporatism 
 add_ideas = 	post_industrialized_society
 
-recruit_character = BLI_albert_i
-recruit_character = BLI_john_roberts
-recruit_character = BLI_jim_roberts
-recruit_character = BLI_alexander_taylor
-recruit_character = BLI_jonas_williams
-recruit_character = BLI_jonas_wilson
-recruit_character = BLI_bob_walker
-recruit_character = BLI_alex_williams
-recruit_character = BLI_johannes_walker
-recruit_character = BLI_johannes_roberts
-recruit_character = BLI_lucas_smith
-recruit_character = BLI_jim_smith
+create_country_leader = {
+	name = "Albert I"
+	#desc = "BLI_Albert_desc"
+	picture = "BLI_Albert.tga"
+	expire = "2020.1.1"
+	ideology = ultranationalist_subideology 
+	traits = {
+		#
+	}
+}
