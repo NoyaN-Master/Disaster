@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Rafael Franco"
-	#desc = "PAR_Rafael Franco_desc"
-	picture = "PAR_Rafael Franco.tga"
-	expire = "2020.1.1"
-	ideology = libertarian_socialist_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = PAR_rafael_franco
+recruit_character = PAR_david_melgarejo
+recruit_character = PAR_nicolás_franco
+recruit_character = PAR_juan_francisco_freire
+recruit_character = PAR_miguel_freire
+recruit_character = PAR_eduardo_rebolledo
+recruit_character = PAR_diego_rebolledo
+recruit_character = PAR_ladislao_ruíztagle
+recruit_character = PAR_pablo_figueroa
+recruit_character = PAR_justo_belzú
+recruit_character = PAR_emiliano_melgarejo
+recruit_character = PAR_felipe_daza

@@ -81,28 +81,6 @@ add_to_faction = ADN
 
 puppet = THR
 puppet = ADN
-		
-create_country_leader = {
-	name = "Celal Bayar/Adnan Menderes"
-	#desc = "SES_Zeljko_Raznatovic_desc"
-	picture = "Portrait_WRF_Coalition.tga"
-	expire = "2020.1.1"
-	ideology = conservative_subideology
-	traits = {
-	turkish_democrats
-	}
-}
-
-create_country_leader = {
-	name = "Celal Bayar/Adnan Menderes"
-	#desc = "SES_Zeljko_Raznatovic_desc"
-	picture = "Portrait_WRF_Coalition.tga"
-	expire = "2020.1.1"
-	ideology = liberal_subideology
-	traits = {
-	turkish_democrats
-	}
-}
 
 
 recruit_character = WRF_Mustafa_Kemal_1
@@ -110,3 +88,14 @@ recruit_character = WRF_Fahrettin_char
 recruit_character = WRF_Cemil_char
 recruit_character = WRF_Fuad_char
 recruit_character = WRF_Atsiz_Char
+recruit_character = WRF_celal_bayar/adnan_menderes
+recruit_character = WRF_marcus_jones
+recruit_character = WRF_bob_evans
+recruit_character = WRF_alex_walker
+recruit_character = WRF_bob_walker
+recruit_character = WRF_alexander_evans
+recruit_character = WRF_alexander_white
+recruit_character = WRF_jim_roberts
+recruit_character = WRF_alexander_jones
+recruit_character = WRF_peter_taylor
+recruit_character = WRF_peter_wilson

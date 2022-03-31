@@ -42,24 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Alexander I"
-	desc = "SOR_Alex_desc"
-	picture = "SOR_Alex.tga"
-	expire = "2020.1.1"
-	ideology = autocratic_subideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Josip Broz Tito"
-	desc = "SOR_Alex_desc"
-	picture = "SOR_Tito.tga"
-	expire = "2020.1.1"
-	ideology = authoritarian_socialist_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = SOR_alexander_i
+recruit_character = SOR_josip_broz_tito
+recruit_character = SOR_alexander_smith
+recruit_character = SOR_jim_taylor
+recruit_character = SOR_peter_wilson
+recruit_character = SOR_lucas_jones
+recruit_character = SOR_jonas_williams
+recruit_character = SOR_bob_williams
+recruit_character = SOR_johannes_walker
+recruit_character = SOR_alex_smith
+recruit_character = SOR_jonas_smith
+recruit_character = SOR_alexander_brown

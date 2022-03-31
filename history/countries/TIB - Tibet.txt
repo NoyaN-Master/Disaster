@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Jamphel Yeshe Gyaltsen"
-	desc = "TIB_Gyaltsen_desc"
-	picture = "TIB_Gyaltsen.tga"
-	expire = "2020.1.1"
-	ideology = autocratic_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = TIB_jamphel_yeshe_gyaltsen
+recruit_character = TIB_namgang_rinpoche
+recruit_character = TIB_gendün_tashi
+recruit_character = TIB_mipham_wangyal
+recruit_character = TIB_trimon_rinpoche
+recruit_character = TIB_norbhu_tashi
+recruit_character = TIB_tsarong_wangyal
+recruit_character = TIB_jamphel_rinpoche
+recruit_character = TIB_namgang_shakabpa
+recruit_character = TIB_penor_wangyal
+recruit_character = TIB_mipham_lungshar
+recruit_character = TIB_chamba_shakabpa

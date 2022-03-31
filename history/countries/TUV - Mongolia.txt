@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Bernard Montgomery"
-	desc = "TUV_Bernard_Montgomery_desc"
-	picture = "TUV_Bernard_Montgomery.tga"
-	expire = "2020.1.1"
-	ideology = authoritarian_democrat_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = TUV_bernard_montgomery
+recruit_character = TUV_bob_wilson
+recruit_character = TUV_jonas_jones
+recruit_character = TUV_bob_williams
+recruit_character = TUV_alex_evans
+recruit_character = TUV_marcus_walker
+recruit_character = TUV_johannes_walker
+recruit_character = TUV_alexander_taylor
+recruit_character = TUV_lucas_brown
+recruit_character = TUV_jim_brown
+recruit_character = TUV_lucas_williams
+recruit_character = TUV_peter_williams

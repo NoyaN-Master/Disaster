@@ -47,13 +47,16 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Leon Trotsky"
-	#desc = "TSV_Trotsky_desc"
-	picture = "TSV_Trotsky.tga"
-	expire = "2020.1.1"
-	ideology = authoritarian_socialist_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = TSV_leon_trotsky
+recruit_character = TSV_lucas_brown
+recruit_character = TSV_jim_wilson
+recruit_character = TSV_peter_white
+recruit_character = TSV_john_roberts
+recruit_character = TSV_alex_roberts
+recruit_character = TSV_bob_taylor
+recruit_character = TSV_jonas_smith
+recruit_character = TSV_marcus_jones
+recruit_character = TSV_jonas_brown
+recruit_character = TSV_bob_evans
+recruit_character = TSV_lucas_walker
+

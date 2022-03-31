@@ -43,13 +43,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Aleksandr Kolchak"
-	#desc = "TRM_Kolchak_desc"
-	picture = "TRM_Kolchak.tga"
-	expire = "2020.1.1"
-	ideology = ultranationalist_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = TRM_aleksandr_kolchak
+recruit_character = TRM_peter_smith
+recruit_character = TRM_john_walker
+recruit_character = TRM_alexander_jones
+recruit_character = TRM_lucas_taylor
+recruit_character = TRM_johannes_taylor
+recruit_character = TRM_bob_walker
+recruit_character = TRM_jonas_walker
+recruit_character = TRM_alex_white
+recruit_character = TRM_johannes_jones
+recruit_character = TRM_marcus_brown
+recruit_character = TRM_alexander_smith

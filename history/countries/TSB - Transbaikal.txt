@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Grigory Semyonov"
-	desc = "TSB_Griogry_Semyonov_desc"
-	picture = "TSB_Griogry_Semyonov.tga"
-	expire = "2020.1.1"
-	ideology = autocratic_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = TSB_grigory_semyonov
+recruit_character = TSB_marcus_smith
+recruit_character = TSB_jonas_brown
+recruit_character = TSB_jim_evans
+recruit_character = TSB_lucas_evans
+recruit_character = TSB_peter_roberts
+recruit_character = TSB_alexander_roberts
+recruit_character = TSB_john_white
+recruit_character = TSB_lucas_white
+recruit_character = TSB_johannes_jones
+recruit_character = TSB_johannes_taylor
+recruit_character = TSB_bob_williams

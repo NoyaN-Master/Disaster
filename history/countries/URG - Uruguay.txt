@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Juan Campisteguy"
-	#desc = "URG_Juan_Campisteguy_desc"
-	picture = "URG_Juan_Campisteguy.tga"
-	expire = "2020.1.1"
-	ideology = liberal_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = URG_juan_campisteguy
+recruit_character = URG_lorenzo_jovellanos
+recruit_character = URG_nicolás_jovellanos
+recruit_character = URG_santiago_báez
+recruit_character = URG_emiliano_de_la_plaza
+recruit_character = URG_feliciano_de_rosas
+recruit_character = URG_ramón_uriburu
+recruit_character = URG_facundo_uriburu
+recruit_character = URG_eugenio_mitre
+recruit_character = URG_fructuoso_de_alvear
+recruit_character = URG_esteban_de_la_plaza
+recruit_character = URG_félix_de_la_plaza

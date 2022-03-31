@@ -123,25 +123,38 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Friedrich Franz V"
-	#desc = "MEK_Franz_desc"
-	picture = "MEK_Franz.tga"
-	expire = "2020.1.1"
-	ideology = autocratic_subideology
-	traits = {
-		#
-	}
-}
-create_field_marshal = {
-	name = "Friedrich Franz"
-	portrait_path = "gfx/leaders/MEK/MEK_Franz.tga"
-	traits = {
-
-	}
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
+recruit_character = MEK_friedrich_franz_v
+recruit_character = MEK_friedrich_franz
+recruit_character = MEK_otto_barkhorn
+recruit_character = MEK_staffan_behrmann
+recruit_character = MEK_gerhard_beisswenger
+recruit_character = MEK_erich_sturm
+recruit_character = MEK_felix_kirschner
+recruit_character = MEK_maximilian_hartmann
+recruit_character = MEK_walter_wagner
+recruit_character = MEK_staffan_beisswenger
+recruit_character = MEK_gerhard_sturm
+recruit_character = MEK_gerhard_kirschner
+recruit_character = MEK_heinz_lipfert
+recruit_character = MEK_MEKACR
+recruit_character = MEK_ncdb
+recruit_character = MEK_acgs
+recruit_character = MEK_acom
+recruit_character = MEK_ent
+recruit_character = MEK_ncav
+recruit_character = MEK_democratic_guy
+recruit_character = MEK_communist_guy
+recruit_character = MEK_coi
+recruit_character = MEK_wi
+recruit_character = MEK_abi
+recruit_character = MEK_inf
+recruit_character = MEK_pot
+recruit_character = MEK_acd
+recruit_character = MEK_arg
+recruit_character = MEK_mt
+recruit_character = MEK_pf
+recruit_character = MEK_man
+recruit_character = MEK_aco
+recruit_character = MEK_at
+recruit_character = MEK_nt
+recruit_character = MEK_fascist_guy

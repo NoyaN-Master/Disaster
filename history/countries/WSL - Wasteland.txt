@@ -32,13 +32,15 @@ set_popularities = {
 	revolutionary_anarchist = 100
 }
 
-create_country_leader = {
-	name = "Anarchy"
-	desc = "WSL_Anarchy_desc"
-	picture = "WSL_Anarchy.tga"
-	expire = "2020.1.1"
-	ideology = revolutionary_anarchist_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = WSL_anarchy
+recruit_character = WSL_jim_taylor
+recruit_character = WSL_alexander_brown
+recruit_character = WSL_peter_wilson
+recruit_character = WSL_jonas_evans
+recruit_character = WSL_marcus_white
+recruit_character = WSL_alex_jones
+recruit_character = WSL_bob_jones
+recruit_character = WSL_johannes_williams
+recruit_character = WSL_marcus_walker
+recruit_character = WSL_jim_brown
+recruit_character = WSL_alexander_williams

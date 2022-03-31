@@ -123,25 +123,38 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Georg II"
-	#desc = "SAX_George_desc"
-	picture = "SAX_George.tga"
-	expire = "2020.1.1"
-	ideology = authoritarian_democrat_subideology
-	traits = {
-		#
-	}
-}
-create_field_marshal = {
-	name = "Frederick Augustus George"
-	portrait_path = "gfx/leaders/SAX/SAX_George.tga"
-	traits = {
-
-	}
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
+recruit_character = SAX_georg_ii
+recruit_character = SAX_frederick_augustus_george
+recruit_character = SAX_walter_graf
+recruit_character = SAX_hans_schneider
+recruit_character = SAX_gunther_brendel
+recruit_character = SAX_heinrich_behrmann
+recruit_character = SAX_hermann_erhler
+recruit_character = SAX_heinz_fischer
+recruit_character = SAX_walter_rall
+recruit_character = SAX_hans_hartmann
+recruit_character = SAX_otto_wilbs
+recruit_character = SAX_theodor_hoffmann
+recruit_character = SAX_hermann_sturm
+recruit_character = SAX_coi
+recruit_character = SAX_acom
+recruit_character = SAX_abi
+recruit_character = SAX_ncdb
+recruit_character = SAX_man
+recruit_character = SAX_democratic_guy
+recruit_character = SAX_fascist_guy
+recruit_character = SAX_at
+recruit_character = SAX_communist_guy
+recruit_character = SAX_mt
+recruit_character = SAX_SAXACR
+recruit_character = SAX_wi
+recruit_character = SAX_acgs
+recruit_character = SAX_nt
+recruit_character = SAX_aco
+recruit_character = SAX_inf
+recruit_character = SAX_ent
+recruit_character = SAX_arg
+recruit_character = SAX_pot
+recruit_character = SAX_pf
+recruit_character = SAX_acd
+recruit_character = SAX_ncav

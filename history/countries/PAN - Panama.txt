@@ -42,13 +42,16 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Arnulfo Arias Madrid"
-	#desc = "PAN_Arnulfo_Arias_Madrid_desc"
-	picture = "PAN_Arnulfo_Arias_Madrid.tga"
-	expire = "2020.1.1"
-	ideology = liberal_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = PAN_arnulfo_arias_madrid
+recruit_character = PAN_carlos_zeledón
+recruit_character = PAN_felipe_mejía
+recruit_character = PAN_jacobo_rosales
+recruit_character = PAN_eduardo_sevilla
+recruit_character = PAN_ramón_sevilla
+recruit_character = PAN_fernando_barrios
+recruit_character = PAN_rafael_barrios
+recruit_character = PAN_ponciano_cabañas
+recruit_character = PAN_tiburcio_garrigó
+recruit_character = PAN_Óscar_guzmán
+recruit_character = PAN_santiago_hernández
+

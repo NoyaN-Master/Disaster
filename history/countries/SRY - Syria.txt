@@ -57,13 +57,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Faisal I"
-	desc = "SRY_Faisal_desc"
-	picture = "SRY_Faisal.tga"
-	expire = "2020.1.1"
-	ideology = autocratic_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = SRY_faisal_i
+recruit_character = SRY_bob_williams
+recruit_character = SRY_alex_walker
+recruit_character = SRY_bob_white
+recruit_character = SRY_marcus_smith
+recruit_character = SRY_marcus_brown
+recruit_character = SRY_jim_roberts
+recruit_character = SRY_lucas_smith
+recruit_character = SRY_jim_taylor
+recruit_character = SRY_peter_wilson
+recruit_character = SRY_lucas_evans
+recruit_character = SRY_alexander_white

@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Swiss Federal Council"
-	#desc = "SWZ_Federal_Council_desc"
-	picture = "SWZ_Federal_Council.tga"
-	expire = "2020.1.1"
-	ideology = conservative_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = SWZ_swiss_federal_council
+recruit_character = SWZ_john_wilson
+recruit_character = SWZ_peter_evans
+recruit_character = SWZ_john_jones
+recruit_character = SWZ_jonas_walker
+recruit_character = SWZ_marcus_white
+recruit_character = SWZ_johannes_white
+recruit_character = SWZ_marcus_brown
+recruit_character = SWZ_bob_brown
+recruit_character = SWZ_alex_williams
+recruit_character = SWZ_lucas_walker
+recruit_character = SWZ_peter_roberts

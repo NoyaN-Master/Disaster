@@ -58,13 +58,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Aleksandr Kerensky"
-	desc = "RSR_Kerensky_desc"
-	picture = "RSR_Kerensky.tga"
-	expire = "2020.1.1"
-	ideology = social_democrat_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = RSR_aleksandr_kerensky
+recruit_character = RSR_johannes_roberts
+recruit_character = RSR_peter_smith
+recruit_character = RSR_john_smith
+recruit_character = RSR_jim_jones
+recruit_character = RSR_lucas_jones
+recruit_character = RSR_jim_taylor
+recruit_character = RSR_lucas_brown
+recruit_character = RSR_bob_walker
+recruit_character = RSR_jonas_white
+recruit_character = RSR_johannes_white
+recruit_character = RSR_alex_jones

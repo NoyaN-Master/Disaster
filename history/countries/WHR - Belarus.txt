@@ -42,13 +42,31 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Stanisław Bułak-Bułachowicz"
-	#desc = "WHR_Stanislaw_Bulachowicz_desc"
-	picture = "WHR_Stanislaw_Bulachowicz.tga"
-	expire = "2020.1.1"
-	ideology = authoritarian_democrat_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = WHR_stanisław_bułakbułachowicz
+recruit_character = WHR_alex_williams
+recruit_character = WHR_alex_evans
+recruit_character = WHR_john_roberts
+recruit_character = WHR_alexander_roberts
+recruit_character = WHR_jim_smith
+recruit_character = WHR_jim_wilson
+recruit_character = WHR_john_wilson
+recruit_character = WHR_peter_taylor
+recruit_character = WHR_john_smith
+recruit_character = WHR_bob_walker
+recruit_character = WHR_alex_white
+recruit_character = WHR_BLR_boris_berman
+recruit_character = WHR_BLR_jozeph_ryzhykov
+recruit_character = WHR_BLR_georgy_holostyakov
+recruit_character = WHR_BLR_stepan_krasovsky
+recruit_character = WHR_BLR_alexander_akulich
+recruit_character = WHR_BLR_ivan_yakubovsky
+recruit_character = WHR_BLR_piotr_kozlov
+recruit_character = WHR_BLR_aleksei_antonov
+recruit_character = WHR_BLR_ivan_pstygo
+recruit_character = WHR_BLR_valentin_drozd
+recruit_character = WHR_BLR_vasily_sokolovsky
+recruit_character = WHR_BLR_maksim_antonyuk
+recruit_character = WHR_BLR_democratic_guy
+recruit_character = WHR_BLR_fascist_guy
+recruit_character = WHR_BLR_communist_guy
+recruit_character = WHR_BLR_fedor_dobysh

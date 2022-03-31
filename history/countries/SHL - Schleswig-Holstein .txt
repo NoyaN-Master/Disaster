@@ -123,25 +123,16 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Prince Knud"
-	#desc = "SHL_Knud_desc"
-	picture = "SHL_Knud.tga"
-	expire = "2020.1.1"
-	ideology = social_democrat_subideology
-	traits = {
-		#
-	}
-}
-create_field_marshal = {
-	name = "Knud Christian"
-	portrait_path = "gfx/leaders/SHL/SHL_Knud.tga"
-	traits = {
-
-	}
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
+recruit_character = SHL_prince_knud
+recruit_character = SHL_knud_christian
+recruit_character = SHL_anton_lang
+recruit_character = SHL_otto_rall
+recruit_character = SHL_heinrich_wilbs
+recruit_character = SHL_emil_meyer
+recruit_character = SHL_marco_schneider
+recruit_character = SHL_max_stotz
+recruit_character = SHL_adolf_schulz
+recruit_character = SHL_otto_weber
+recruit_character = SHL_maximilian_meyer
+recruit_character = SHL_peter_kirschner
+recruit_character = SHL_marco_stotz

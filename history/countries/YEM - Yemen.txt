@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Yahya Hamididdin"
-	desc = "YEM_Yahya_Hamididdin_desc"
-	picture = "YEM_Yahya_Hamididdin.tga"
-	expire = "2020.1.1"
-	ideology = autocratic_subideology
-	traits = {
-		
-	}
-}
+recruit_character = YEM_yahya_hamididdin
+recruit_character = YEM_zafir_ibn_muhammad
+recruit_character = YEM_umar_ibn_hisham
+recruit_character = YEM_abd_alrahman_ibn_khalid
+recruit_character = YEM_abd_allah_ibn_hisham
+recruit_character = YEM_nur_aldin_ibm_kamil
+recruit_character = YEM_halil_ibn_hasan
+recruit_character = YEM_uthman_ibn_abd_alqadir
+recruit_character = YEM_saud_ibn_fuad
+recruit_character = YEM_abu_bakr_ibn_hisham
+recruit_character = YEM_abd_alkarim_ibn_uthman
+recruit_character = YEM_khalid_ibn_abd_allah

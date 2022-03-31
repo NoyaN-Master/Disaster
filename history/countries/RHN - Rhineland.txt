@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Jean-Marie Degoutte"
-	#desc = "RHN_Degoutte_desc"
-	picture = "RHN_Degoutte.tga"
-	expire = "2020.1.1"
-	ideology = autocratic_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = RHN_jeanmarie_degoutte
+recruit_character = RHN_jim_brown
+recruit_character = RHN_lucas_evans
+recruit_character = RHN_peter_evans
+recruit_character = RHN_lucas_roberts
+recruit_character = RHN_johannes_jones
+recruit_character = RHN_alex_white
+recruit_character = RHN_peter_walker
+recruit_character = RHN_jonas_brown
+recruit_character = RHN_bob_williams
+recruit_character = RHN_jonas_williams
+recruit_character = RHN_peter_wilson

@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "José Carlos Mariátegui"
-	#desc = "PRU_Jose_Mariategui_desc"
-	picture = "PRU_Jose_Mariategui.tga"
-	expire = "2020.1.1"
-	ideology = authoritarian_socialist_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = PRU_josé_carlos_mariátegui
+recruit_character = PRU_eusebio_baquedano
+recruit_character = PRU_ignacio_belzú
+recruit_character = PRU_sebastián_corrico
+recruit_character = PRU_hernando_valencia
+recruit_character = PRU_francisco_zañartu
+recruit_character = PRU_ismael_la_mar
+recruit_character = PRU_federico_castilla
+recruit_character = PRU_severino_castilla
+recruit_character = PRU_aníbal_corrico
+recruit_character = PRU_josé_miguel_toro
+recruit_character = PRU_alejandro_baquedano

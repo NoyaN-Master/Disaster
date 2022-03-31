@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Said bin Taimur"
-	desc = "OMA_Said_Taimur_desc"
-	picture = "OMA_Said_Taimur.tga"
-	expire = "2020.1.1"
-	ideology = authoritarian_democrat_subideology
-	traits = {
-		
-	}
-}
+recruit_character = OMA_said_bin_taimur
+recruit_character = OMA_shukri_alghazzawi
+recruit_character = OMA_yusuf_ibn_khalid
+recruit_character = OMA_tawfiq_ibn_khalid
+recruit_character = OMA_abd_almalik_ibn_hisham
+recruit_character = OMA_ali_ibn_ahmad
+recruit_character = OMA_hasan_ibn_abd_alqadir
+recruit_character = OMA_fawzi_alqudsi
+recruit_character = OMA_shukri_alhamawi
+recruit_character = OMA_mustafa_alghazzawi
+recruit_character = OMA_shukri_ibn_umar
+recruit_character = OMA_mustafa_ibn_jafar

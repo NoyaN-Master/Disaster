@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Rudolf Viest"
-	#desc = "SLK_Viest_desc"
-	picture = "SLK_Viest.tga"
-	expire = "2020.1.1"
-	ideology = authoritarian_democrat_subideology
-	traits = {
-		marshal_of_slovakia
-	}
-}
+recruit_character = SLK_rudolf_viest
+recruit_character = SLK_lucas_brown
+recruit_character = SLK_jim_evans
+recruit_character = SLK_alexander_evans
+recruit_character = SLK_john_roberts
+recruit_character = SLK_alexander_jones
+recruit_character = SLK_johannes_white
+recruit_character = SLK_jonas_jones
+recruit_character = SLK_marcus_brown
+recruit_character = SLK_jonas_williams
+recruit_character = SLK_bob_williams
+recruit_character = SLK_bob_roberts

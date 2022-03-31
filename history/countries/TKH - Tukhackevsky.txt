@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Mikhail Tukhachevsky"
-	desc = "TKH_Mikhail_Tukhachevsky_desc"
-	picture = "TKH_Mikhail_Tukhachevsky.tga"
-	expire = "2020.1.1"
-	ideology = unisocialist_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = TKH_mikhail_tukhachevsky
+recruit_character = TKH_alex_smith
+recruit_character = TKH_bob_smith
+recruit_character = TKH_jim_jones
+recruit_character = TKH_alexander_brown
+recruit_character = TKH_jim_evans
+recruit_character = TKH_lucas_evans
+recruit_character = TKH_john_roberts
+recruit_character = TKH_jonas_white
+recruit_character = TKH_bob_white
+recruit_character = TKH_johannes_jones
+recruit_character = TKH_marcus_jones

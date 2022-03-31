@@ -125,203 +125,47 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Kurt von Schleicher"
-	#desc = "PRE_Kurt_von_Schleicher_desc"
-	picture = "PRE_Kurt_von_Schleicher.tga"
-	expire = "2020.1.1"
-	ideology = authoritarian_democrat_subideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Alfred Hugenberg"
-	#desc = "PRE_Alfred_Hugenberg_desc"
-	picture = "PRE_Alfred_Hugenberg.tga"
-	expire = "2020.1.1"
-	ideology = autocratic_subideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Hermann Göring"
-	#desc = "PRE_Hermann_Goring_desc"
-	picture = "PRE_Hermann_Goring.tga"
-	expire = "2020.1.1"
-	ideology = revolutionary_nationalist_subideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Alfred Hugenberg"
-	#desc = "PRE_Alfred_Hugenberg_desc"
-	picture = "PRE_Alfred_Hugenberg.tga"
-	expire = "2020.1.1"
-	ideology = ultranationalist_subideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Wilhelm Külz"
-	#desc = "PRE_Wilhelm_Kulz_desc"
-	picture = "PRE_Wilhelm_Kulz.tga"
-	expire = "2020.1.1"
-	ideology = liberal_subideology
-	traits = {
-		#
-	}
-}
-
-
-
-######################################### Generals
-
-#field marshals
-create_field_marshal = {
-	name = "Werner von Blomberg"
-	portrait_path = "gfx/leaders/PRE/Werner_von_Blomberg.tga"
-	traits = {
-
-	}
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 2
-}
-create_field_marshal = {
-	name = "Oskar von Hindenburg"
-	portrait_path = "gfx/leaders/PRE/PRE_Oskar_von_Hindenburg.tga"
-	traits = {
-
-	}
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-
-#normal Generals
-
-create_corps_commander = {
-	name = "Erhard Milch"
-	portrait_path = "gfx/leaders/PRE/Erhard_Milch.tga"
-	traits = {
-
-	}
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-create_corps_commander = {
-	name = "Fedor von Bock"
-	portrait_path = "gfx/leaders/PRE/Fedor_von_Bock.tga"
-	traits = {
-
-	}
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-create_corps_commander = {
-	name = "Heinz Guderian"
-	portrait_path = "gfx/leaders/PRE/Heinz_Guderian.tga"
-	traits = {
-
-	}
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-create_corps_commander = {
-	name = "Walter Model"
-	portrait_path = "gfx/leaders/PRE/Walter_Model.tga"
-	traits = {
-
-	}
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-create_corps_commander = {
-	name = "Gunther von Kluge"
-	portrait_path = "gfx/leaders/PRE/Gunther_von_Kluge.tga"
-	traits = {
-
-	}
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-create_corps_commander = {
-	name = "Walter von Brauchitsch"
-	portrait_path = "gfx/leaders/PRE/Walther_von_Brauchitsch.tga"
-	traits = {
-
-	}
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-create_corps_commander = {
-	name = "Alexander von Falkenhausen"
-	portrait_path = "gfx/leaders/PRE/Alexander_von_Falkenhausen.tga"
-	traits = {
-
-	}
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-create_corps_commander = {
-	name = "Erich von Manstein"
-	portrait_path = "gfx/leaders/PRE/Erich_von_Manstein.tga"
-	traits = {
-
-	}
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-create_corps_commander = {
-	name = "Georg von Kuchler"
-	portrait_path = "gfx/leaders/PRE/Georg_von_Kuchler.tga"
-	traits = {
-
-	}
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-
-
-
+recruit_character = PRE_kurt_von_schleicher
+recruit_character = PRE_alfred_hugenberg
+recruit_character = PRE_hermann_göring
+recruit_character = PRE_wilhelm_külz
+recruit_character = PRE_werner_von_blomberg
+recruit_character = PRE_oskar_von_hindenburg
+recruit_character = PRE_erhard_milch
+recruit_character = PRE_fedor_von_bock
+recruit_character = PRE_heinz_guderian
+recruit_character = PRE_walter_model
+recruit_character = PRE_gunther_von_kluge
+recruit_character = PRE_walter_von_brauchitsch
+recruit_character = PRE_alexander_von_falkenhausen
+recruit_character = PRE_erich_von_manstein
+recruit_character = PRE_georg_von_kuchler
+recruit_character = PRE_otto_duttmann
+recruit_character = PRE_hans_schneider
+recruit_character = PRE_fritz_stotz
+recruit_character = PRE_peter_brendel
+recruit_character = PRE_max_weber
+recruit_character = PRE_tobias_meyer
+recruit_character = PRE_adolf_schneider
+recruit_character = PRE_aco
+recruit_character = PRE_pot
+recruit_character = PRE_ncdb
+recruit_character = PRE_man
+recruit_character = PRE_communist_guy
+recruit_character = PRE_inf
+recruit_character = PRE_at
+recruit_character = PRE_acd
+recruit_character = PRE_PREACR
+recruit_character = PRE_acom
+recruit_character = PRE_acgs
+recruit_character = PRE_arg
+recruit_character = PRE_ent
+recruit_character = PRE_fascist_guy
+recruit_character = PRE_wi
+recruit_character = PRE_ncav
+recruit_character = PRE_abi
+recruit_character = PRE_nt
+recruit_character = PRE_pf
+recruit_character = PRE_democratic_guy
+recruit_character = PRE_mt
+recruit_character = PRE_coi

@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Mohammed Alim Khan"
-	desc = "TRK_Mohammed_Alim_Khan_desc"
-	picture = "TRK_Mohammed_Alim_Khan.tga"
-	expire = "2020.1.1"
-	ideology = autocratic_subideology
-	traits = {
-		
-	}
-}
+recruit_character = TRK_mohammed_alim_khan
+recruit_character = TRK_marcus_taylor
+recruit_character = TRK_alexander_brown
+recruit_character = TRK_jim_brown
+recruit_character = TRK_lucas_williams
+recruit_character = TRK_jim_white
+recruit_character = TRK_peter_roberts
+recruit_character = TRK_john_smith
+recruit_character = TRK_alex_taylor
+recruit_character = TRK_alex_wilson
+recruit_character = TRK_jonas_jones
+recruit_character = TRK_marcus_williams

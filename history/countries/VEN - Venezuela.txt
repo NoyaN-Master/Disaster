@@ -42,13 +42,16 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Eleazar López Contreras"
-	#desc = "VEN_Eleazar_Contreras_desc"
-	picture = "VEN_Eleazar_Contreras.tga"
-	expire = "2020.1.1"
-	ideology = authoritarian_democrat_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = VEN_eleazar_lópez_contreras
+recruit_character = VEN_ladislao_sotomayor
+recruit_character = VEN_bernardo_grau
+recruit_character = VEN_antonio_grau
+recruit_character = VEN_eduardo_baquedano
+recruit_character = VEN_manuel_montt
+recruit_character = VEN_diego_echenique
+recruit_character = VEN_pablo_echenique
+recruit_character = VEN_enrique_arteaga
+recruit_character = VEN_narciso_montes
+recruit_character = VEN_emiliano_montes
+recruit_character = VEN_pedro_de_vidal
+

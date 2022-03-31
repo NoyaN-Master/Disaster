@@ -44,13 +44,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Symon Petliura"
-	desc = "UKR_Symon_Petliura_desc"
-	picture = "UKR_Symon_Petliura.tga"
-	expire = "2020.1.1"
-	ideology = social_democrat_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = UKR_symon_petliura
+recruit_character = UKR_dmytro_zayets
+recruit_character = UKR_roman_lazarev
+recruit_character = UKR_grigoriy_bilyk
+recruit_character = UKR_andrei_nahornyj
+recruit_character = UKR_trokhym_yakovenko
+recruit_character = UKR_fedir_lazarev
+recruit_character = UKR_fedir_bilyk
+recruit_character = UKR_semyon_makarenko
+recruit_character = UKR_maxim_tsymbalyuk
+recruit_character = UKR_anton_konstantinov
+recruit_character = UKR_volodymyr_tukhachevsky

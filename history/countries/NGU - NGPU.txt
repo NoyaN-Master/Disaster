@@ -132,104 +132,21 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Max Hoelz"
-	#desc = "NGU_Max_Hoelz_desc"
-	picture = "NGU_Max_Hoelz.tga"
-	expire = "2020.1.1"
-	ideology = authoritarian_socialist_subideology
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Joseph Goebbels"
-	#desc = "NGU_Max_Hoelz_desc"
-	picture = "NGU_Goebbels.tga"
-	expire = "2020.1.1"
-	ideology = unisocialist_subideology
-	traits = {
-		
-	}
-}
-
-create_field_marshal = {
-	name = "Martin Bormann"
-	portrait_path = "gfx/leaders/NGU/Portrait_Germany_Martin_Bormann.tga"
-	traits = {
-
-	}
-	skill = 4
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 1
-}
-
-create_field_marshal = {
-	name = "Otto Kumm"
-	portrait_path = "gfx/leaders/NGU/Portrait_Germany_Otto_Kumm.tga"
-	traits = {
-
-	}
-	skill = 4
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Richard Baer"
-	portrait_path = "gfx/leaders/NGU/Portrait_Germany_Richard_Baer.tga"
-	traits = {
-
-	}
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Werner Ostendorff"
-	portrait_path = "gfx/leaders/NGU/Portrait_Germany_Werner_Ostendorff.tga"
-	traits = {
-
-	}
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Paul Hausser"
-	portrait_path = "gfx/leaders/NGU/Portrait_Germany_Paul_Hausser.tga"
-	traits = {
-
-	}
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Erich Honecker"
-	portrait_path = "gfx/leaders/NGU/Portrait_Germany_Erich_Honecker.tga"
-	traits = {
-
-	}
-	skill = 1
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-
+recruit_character = NGU_max_hoelz
+recruit_character = NGU_joseph_goebbels
+recruit_character = NGU_martin_bormann
+recruit_character = NGU_otto_kumm
+recruit_character = NGU_richard_baer
+recruit_character = NGU_werner_ostendorff
+recruit_character = NGU_paul_hausser
+recruit_character = NGU_erich_honecker
+recruit_character = NGU_alexander_roberts
+recruit_character = NGU_john_roberts
+recruit_character = NGU_alexander_smith
+recruit_character = NGU_jim_williams
+recruit_character = NGU_jim_wilson
+recruit_character = NGU_marcus_taylor
+recruit_character = NGU_jonas_williams
+recruit_character = NGU_bob_walker
+recruit_character = NGU_marcus_williams
+recruit_character = NGU_marcus_smith

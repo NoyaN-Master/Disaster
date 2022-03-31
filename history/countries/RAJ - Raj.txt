@@ -57,13 +57,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Louis Mountbatten"
-	desc = "RAJ_Louis_Mountbatten_desc"
-	picture = "RAJ_Louis_Mountbatten.tga"
-	expire = "2020.1.1"
-	ideology = autocratic_subideology
-	traits = {
-		
-	}
-}
+recruit_character = RAJ_louis_mountbatten
+recruit_character = RAJ_devraj_rawat
+recruit_character = RAJ_surinder_prasad
+recruit_character = RAJ_sonam_suhag
+recruit_character = RAJ_aniruddha_bali
+recruit_character = RAJ_abhay_hariz
+recruit_character = RAJ_mukund_wangchuk
+recruit_character = RAJ_amarjeet_prasad
+recruit_character = RAJ_velu_rawat
+recruit_character = RAJ_ashwani_negi
+recruit_character = RAJ_gian_ahir
+recruit_character = RAJ_subrata_cheema

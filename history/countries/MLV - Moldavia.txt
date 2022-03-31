@@ -42,13 +42,15 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
-create_country_leader = {
-	name = "Armand Călinescu"
-	#desc = "MLV_Armand_desc"
-	picture = "MLV_Armand.tga"
-	expire = "2020.1.1"
-	ideology = autocratic_subideology
-	traits = {
-		#
-	}
-}
+recruit_character = MLV_armand_călinescu
+recruit_character = MLV_peter_wilson
+recruit_character = MLV_john_wilson
+recruit_character = MLV_alexander_evans
+recruit_character = MLV_alexander_smith
+recruit_character = MLV_bob_jones
+recruit_character = MLV_marcus_taylor
+recruit_character = MLV_johannes_taylor
+recruit_character = MLV_jonas_brown
+recruit_character = MLV_bob_brown
+recruit_character = MLV_alex_williams
+recruit_character = MLV_lucas_white
