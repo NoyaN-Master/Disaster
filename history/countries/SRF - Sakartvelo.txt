@@ -45,7 +45,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Ioseb Jughashvili"
 	desc = "SRF_Stalin_desc"
-	picture = "SRF_Stalin.tga"
+	picture = "gfx/leaders/SRF/SRF_Stalin.tga"
 	expire = "2020.1.1"
 	ideology = unisocialist_subideology
 	traits = {
@@ -55,7 +55,7 @@ create_country_leader = {
 
 create_field_marshal = {
 	name = "Giorgi Mazniashvili"
-	picture = "SRF_Stalin.tga"
+	picture = "gfx/leaders/SRF/SRF_Stalin.tga"
 	traits = { war_hero  }
 	skill = 2
 	attack_skill = 3

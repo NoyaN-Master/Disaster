@@ -90,7 +90,7 @@ semi_industrial_society
 create_country_leader = {
 	name = "Roman Ungern von Sternberg"
 	desc = "Sternberg_desc"
-	picture = "Portrait_MON_Sternberg.tga"
+	picture = "gfx/leaders/MON/Portrait_MON_Sternberg.tga"
 	expire = "1965.1.1"
 	ideology = esoteric_traditionalist_subideology
 	traits = {
@@ -100,7 +100,7 @@ create_country_leader = {
 ###################### generals
 create_field_marshal = {
 	name = "Roman Ungern von Sternberg"
-	picture = "Portrait_MON_Sternberg.tga"
+	picture = "gfx/leaders/MON/Portrait_MON_Sternberg.tga"
 	traits = {
     #
 	}

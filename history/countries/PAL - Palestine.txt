@@ -47,7 +47,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Michel Aflaq"
 	#desc = "SES_Zeljko_Raznatovic_desc"
-	picture = "PAL_Aflaq.tga"
+	picture = "gfx/leaders/PAL/PAL_Aflaq.tga"
 	expire = "2020.1.1"
 	ideology = authoritarian_socialist_subideology
 	traits = {
@@ -57,7 +57,7 @@ create_country_leader = {
 
 create_field_marshal = {
 	name = "Michel Aflaq"
-	picture = "PAL_Aflaq.tga"
+	picture = "gfx/leaders/PAL/PAL_Aflaq.tga"
 	traits = {
 
 	}
@@ -70,7 +70,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "Amin Al-Husseini"
-	picture = "PAL_The_Mufti.tga"
+	picture = "gfx/leaders/PAL/PAL_The_Mufti.tga"
 	traits = {
 
 	}
@@ -82,7 +82,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Gamel Abdelnasser"
-	picture = "PAL_Nasser.tga"
+	picture = "gfx/leaders/PAL/PAL_Nasser.tga"
 	traits = {
 
 	}

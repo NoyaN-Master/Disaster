@@ -48,7 +48,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Jack 'Başbug' Churchill"
 	#desc = "OTH_John_Langenhoven_desc"
-	picture = "Portrait_OTH_Mad_Jack.tga"
+	picture = "gfx/leaders/OTH/Portrait_OTH_Mad_Jack.tga"
 	expire = "2020.1.1"
 	ideology = mercenary_state
 	traits = {
@@ -58,7 +58,7 @@ create_country_leader = {
 
 create_field_marshal = {
 			name = "Jack Churchill"
-			picture = "Portrait_CIB_Enver_Pasha.tga"
+			picture = "gfx/leaders/OTH/Portrait_OTH_Mad_Jack.tga"
 			traits = { war_hero brilliant_strategist war_hero infantry_officer trickster desert_fox hill_fighter  soa_general }
 			skill = 4
 			attack_skill = 5
