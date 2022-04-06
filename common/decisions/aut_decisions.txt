@@ -227,7 +227,7 @@ AUT_Puppet_Yugo = {
 		create_country_leader = {
 	            name = "Ante Pavelić"
 	            #desc = "AUT_Karl_Renner_desc"
-	            gfx/leaders/CRT/CRT_Ante.tga"
+	            picture = "gfx/leaders/CRT/CRT_Ante.tga"
 	            expire = "2020.1.1"
 	            ideology = ultranationalist_subideology
 	            traits = {
@@ -238,7 +238,7 @@ AUT_Puppet_Yugo = {
 			create_country_leader = {
 	            name = "Alexander I"
 	            #desc = "AUT_Karl_Renner_desc"
-	            gfx/leaders/SOR/SOR_Alex.tga"
+	            picture = "gfx/leaders/SOR/SOR_Alex.tga"
 	            expire = "2020.1.1"
 	            ideology = ultranationalist_subideology
 	            traits = {
@@ -254,7 +254,7 @@ AUT_Puppet_Yugo = {
 			create_country_leader = {
 	            name = "King Zog I"
 	            #desc = "AUT_Karl_Renner_desc"
-	            gfx/leaders/ABL/ABL_Zog.tga"
+	            picture = "gfx/leaders/ABL/ABL_Zog.tga"
 	            expire = "2020.1.1"
 	            ideology = ultranationalist_subideology
 	            traits = {

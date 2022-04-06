@@ -1,38 +1,38 @@
 ideas = {
 
-country = {
+	country = {
 
-GOK_shining_city = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
-			picture = GOK_shining_city
-			modifier = {
-            stability_factor = 0.20
-            war_support_factor = -0.20
-            production_factory_max_efficiency_factor = 0.2
-            production_speed_buildings_factor = 0.1
+	GOK_shining_city = {
+				on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
+				picture = GOK_shining_city
+				modifier = {
+				stability_factor = 0.20
+				war_support_factor = -0.20
+				production_factory_max_efficiency_factor = 0.2
+				production_speed_buildings_factor = 0.1
+				}
 			}
-		}
-GOK_intellectual_caste = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
-			picture = GOK_intellectual_caste
-			modifier = {
-            research_speed_factor = 0.15
-            liberal_drift = 0.10
-            conservative_drift = 0.10	
-            authoritarian_democrat_drift = 0.05		
+	GOK_intellectual_caste = {
+				on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
+				picture = GOK_intellectual_caste
+				modifier = {
+				research_speed_factor = 0.15
+				liberal_drift = 0.10
+				conservative_drift = 0.10	
+				authoritarian_democrat_drift = 0.05		
+				}
 			}
-		}
 
-GOK_Tadjik_Problem = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
-			picture = GOK_Tadjik_Problem
-			modifier = {
-            research_speed_factor = -0.10
-            autocracy_drift = 0.10
-            resistance_damage_to_garrison = 0.1
-            conscription = 0.05
-            stability_weekly = -0.05			
-			}
-		}                
-
-}        
+	GOK_Tadjik_Problem = {
+				on_add = { log = "[GetDateText]: [Root.GetName]: add idea TUR_Struggle_Front" }
+				picture = GOK_Tadjik_Problem
+				modifier = {
+				research_speed_factor = -0.10
+				autocracy_drift = 0.10
+				resistance_damage_to_garrison = 0.1
+				conscription = 0.05
+				stability_weekly = -0.05			
+				}
+			}                
+	}
+}
