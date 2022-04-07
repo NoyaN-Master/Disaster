@@ -170,7 +170,7 @@ TUR_unification_category = {
         hidden_effect = {
         set_country_flag = unification_ataturk
 	set_global_flag = turkey_civilwar_over
-        news_event = { id = news.11 }    
+        news_event = { id = disasternews.11 }    
         }   
         }
         ai_will_do = {
@@ -220,7 +220,7 @@ TUR_unification_category = {
         hidden_effect = {
 	set_global_flag = turkey_civilwar_over  
         set_country_flag = unification_atsiz
-        news_event = { id = news.13 }
+        news_event = { id = disasternews.13 }
         }
         WRF = {
         add_state_core = 49
@@ -318,7 +318,7 @@ TUR_unification_category = {
         hidden_effect = {
 	set_global_flag = turkey_civilwar_over
         set_cosmetic_tag = CIB_Enver
-        news_event = { id = news.12 }    
+        news_event = { id = disasternews.12 }    
         }
         set_country_flag = unification_enver
         CIB = {
@@ -383,7 +383,7 @@ TUR_unification_category = {
         hidden_effect = {
 	    set_global_flag = turkey_civilwar_over
             set_country_flag = unification_samet
-            news_event = { id = news.15 }
+            news_event = { id = disasternews.15 }
         }
         CIB = {
         add_state_core = 49
@@ -449,7 +449,7 @@ TUR_unification_category = {
         hidden_effect = {
 		set_global_flag = turkey_civilwar_over
             set_country_flag = unification_ethem
-            news_event = { id = news.15 }
+            news_event = { id = disasternews.15 }
         }
         IZM = {
         add_state_core = 49
@@ -780,7 +780,7 @@ TUR_unification_category = {
 	    set_global_flag = turkey_civilwar_over
             set_country_flag = unification_ulema
             remove_ideas = turkey_brother_war_idea
-            news_event = { id = news.15 }
+            news_event = { id = disasternews.15 }
         }
         ai_will_do = {
 			factor = 1000

@@ -408,7 +408,7 @@ country_event = { #TACHANKA 2 enver moves in
 		 WRF_atsiz_coup = yes
 		 remove_unit_leader = 1881
 		 hidden_effect = {
-		 news_event = { id = news.6 }	 	 
+		 news_event = { id = disasternews.6 }	 	 
 		}
 	}
 }
@@ -465,7 +465,7 @@ country_event = { #nationalists istanbul
    	 	target = CRW
     	transfer_troops = no
 		}
-		news_event = { id = news.10 }
+		news_event = { id = disasternews.10 }
 	}
 }
 

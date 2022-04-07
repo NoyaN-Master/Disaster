@@ -1,4 +1,5 @@
 add_namespace = worldwar
+
 country_event = { #Israel Fitnah # Palestine
 	id = worldwar.1
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
@@ -51,7 +52,7 @@ country_event = { #Israel Fitnah # Palestine
         add_state_core = 553    
         }
         PAL = { change_tag_from = LEV }
-    news_event = { id = news.16 }
+    news_event = { id = disasternews.16 }
 }
 }
 country_event = { #Iosef First War
@@ -74,7 +75,7 @@ country_event = { #Iosef First War
         type = annex_everything
         }    
         }
-        news_event = { id = news.19 }
+        news_event = { id = disasternews.19 }
 }
 }
 
@@ -103,7 +104,7 @@ country_event = { #Palestine Vs Syria
         add_state_core = 799
         add_state_core = 553
         load_oob = PAL_syrianoob          
-        news_event = { id = news.20 }
+        news_event = { id = disasternews.20 }
     }
 }
 
@@ -127,7 +128,7 @@ country_event = { #Makhno Vs Ukraine
         type = annex_everything
         }        
         }
-        news_event = { id = news.21 }
+        news_event = { id = disasternews.21 }
 }
 }
 country_event = { #Great Russian War
@@ -251,7 +252,7 @@ country_event = { #Great Russian War
         add_core_of = TRM
         }	
         }
-        news_event = { id = news.22 }
+        news_event = { id = disasternews.22 }
 }
 }
 
@@ -289,7 +290,7 @@ country_event = { #Eurasianist Revolt
             transfer_troops = yes
         }
         load_oob = baron_oob
-        news_event = { id = news.23 }
+        news_event = { id = disasternews.23 }
         declare_war_on = {
             target = TSB
             type = annex_everything
@@ -350,7 +351,7 @@ country_event = { #Israel Fitnah # Palestine
         add_state_core = 553    
         }
         ISL = { change_tag_from = LEV }
-    news_event = { id = news.16 }
+    news_event = { id = disasternews.16 }
 }
 }
 
@@ -522,7 +523,7 @@ country_event = { #code debug
 
 	option = {
 		name = worldwar.32.a
-        news_event = { id = news.31 }
+        news_event = { id = disasternews.31 }
         YUN = {
         set_cosmetic_tag = Mao_Warlord_Cosmetic
         set_politics = {
