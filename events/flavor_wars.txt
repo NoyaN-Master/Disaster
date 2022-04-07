@@ -290,7 +290,7 @@ country_event = { #Eurasianist Revolt
             transfer_troops = yes
         }
         load_oob = baron_oob
-        news_event = { id = disasternews.23 }
+        #news_event = { id = disasternews.23 }
         declare_war_on = {
             target = TSB
             type = annex_everything
