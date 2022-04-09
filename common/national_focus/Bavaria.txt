@@ -93,6 +93,24 @@ focus_tree = {
 		}
 		prerequisite = { focus = BAY_stand_with_epp focus = BAY_side_with_rohm} 
 		completion_reward = {
+			if = {
+				limit = {
+					has_idea = BAY_divided_freikorps_2
+				}
+				swap_ideas = {
+					remove_idea = BAY_divided_freikorps_2
+					add_idea = BAY_divided_freikorps_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = BAY_divided_freikorps
+				}
+				swap_ideas = {
+					remove_idea = BAY_divided_freikorps
+					add_idea = BAY_divided_freikorps_2
+				}
+			}
 		}
 	}
 
@@ -108,6 +126,24 @@ focus_tree = {
 		}
 		prerequisite = { focus = BAY_side_with_rohm focus = BAY_side_with_himmler }
 		completion_reward = {
+			if = {
+				limit = {
+					has_idea = BAY_divided_freikorps_2
+				}
+				swap_ideas = {
+					remove_idea = BAY_divided_freikorps_2
+					add_idea = BAY_divided_freikorps_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = BAY_divided_freikorps
+				}
+				swap_ideas = {
+					remove_idea = BAY_divided_freikorps
+					add_idea = BAY_divided_freikorps_2
+				}
+			}
 		}
 	}
 
@@ -123,6 +159,24 @@ focus_tree = {
 		}
 		prerequisite = { focus = BAY_side_with_himmler }
 		completion_reward = {
+			if = {
+				limit = {
+					has_idea = BAY_divided_freikorps_2
+				}
+				swap_ideas = {
+					remove_idea = BAY_divided_freikorps_2
+					add_idea = BAY_divided_freikorps_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = BAY_divided_freikorps
+				}
+				swap_ideas = {
+					remove_idea = BAY_divided_freikorps
+					add_idea = BAY_divided_freikorps_2
+				}
+			}
 		}
 	}
 
@@ -138,6 +192,24 @@ focus_tree = {
 		}
 		prerequisite = { focus = BAY_stand_with_epp } 
 		completion_reward = {
+			if = {
+				limit = {
+					has_idea = BAY_divided_freikorps_2
+				}
+				swap_ideas = {
+					remove_idea = BAY_divided_freikorps_2
+					add_idea = BAY_divided_freikorps_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = BAY_divided_freikorps
+				}
+				swap_ideas = {
+					remove_idea = BAY_divided_freikorps
+					add_idea = BAY_divided_freikorps_2
+				}
+			}
 		}
 	}
 	focus = {
@@ -153,6 +225,10 @@ focus_tree = {
 		prerequisite = { focus = BAY_compromise_with_rohm }
 		prerequisite = { focus = BAY_hunt_himmler}
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = BAY_divided_freikorps_3
+				add_idea = BAY_divided_freikorps_4
+			}
 		}
 	}
 	focus = {
@@ -168,6 +244,10 @@ focus_tree = {
 		prerequisite = { focus = BAY_hunt_himmler }
 		prerequisite = { focus = BAY_hunt_epp }
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = BAY_divided_freikorps_3
+				add_idea = BAY_divided_freikorps_4
+			}
 		}
 	}
 	focus = {
@@ -183,6 +263,10 @@ focus_tree = {
 		prerequisite = { focus = BAY_hunt_epp }
 		prerequisite = { focus = BAY_expose_gay_rohm }
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = BAY_divided_freikorps_3
+				add_idea = BAY_divided_freikorps_4
+			}
 		}
 	}
 	focus = {
@@ -197,7 +281,8 @@ focus_tree = {
 		}
 		prerequisite = { focus = BAY_appeal_to_catholics	 }
 		completion_reward = {
-			load_focus_tree = BAY_epp
+			custom_effect_tooltip = BAY_end_content
+			remove_ideas = BAY_divided_freikorps_4
 		}
 	}
 	focus = {
@@ -212,7 +297,8 @@ focus_tree = {
 		}
 		prerequisite = { focus = BAY_strengthen_paramilitary_ties }
 		completion_reward = {
-			load_focus_tree = BAY_rohm
+			custom_effect_tooltip = BAY_end_content
+			remove_ideas = BAY_divided_freikorps_4
 		}
 	}
 	focus = {
@@ -227,6 +313,8 @@ focus_tree = {
 		}
 		prerequisite = { focus = BAY_root_out_christians }
 		completion_reward = {
+			custom_effect_tooltip = BAY_end_content
+			remove_ideas = BAY_divided_freikorps_4
 		}
 	}
 }

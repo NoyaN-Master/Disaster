@@ -4,7 +4,22 @@ spriteTypes = {
 	## Disaster ##
 	#### Ideas GFX ####
 	###################
-
+	spriteType = {
+		name = "GFX_idea_BAY_BAVARIA_DEFENSE"
+		texturefile = "gfx/interface/ideas/BAY_BAVARIA_DEFENSE.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BAY_FREIKORPS_FIRE"
+		texturefile = "gfx/interface/ideas/BAY_FREIKORPS_FIRE.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BAY_LIBERAL_GHOSTS"
+		texturefile = "gfx/interface/ideas/BAY_LIBERAL_GHOSTS.png"
+	}
+	spriteType = {
+		name = "GFX_idea_BAY_RED_DEVILS"
+		texturefile = "gfx/interface/ideas/BAY_RED_DEVILS.png"
+	}
 	spriteType = {
 		name = "GFX_idea_PLN_free_at_fast"
 		texturefile = "gfx/interface/ideas/PLN/PLN_free_at_fast.dds"
