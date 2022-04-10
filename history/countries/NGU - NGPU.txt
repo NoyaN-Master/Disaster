@@ -34,6 +34,8 @@ set_technology = {
 	tactical_bomber1 = 1
 	strategic_bomber1 = 1
 	CAS1 = 1
+	### Trains ###
+	basic_train = 1
 }
 if = {
 	limit = {
