@@ -918,13 +918,16 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = SKL_alexanders_sons
 			country_event = { id = fullerunification.14 }
+			hidden_effect = {
+				country_event = { fullerunification.17 days = 10}
+			}
         }
 	}
 	focus = {
 		id = SKL_HEIR_TO_MACEDON
 		icon = GFX_goal_SKL_HEIR_MACEDON
 		relative_position_id = SKL_the_weapon
-		cost = 2
+		cost = 3
 		x = 0
 		y = 1
 		prerequisite = { focus = SKL_EYES_EVERYWHERE }
