@@ -309,7 +309,7 @@ ideas = {
 		}
 		SKL_black_brigades = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_black_brigades" }
-			picture = SKL_black_brigades
+			picture = SKL_black_brigade
 			modifier = {
 				occupation_cost = -0.5
 			}
@@ -383,6 +383,16 @@ ideas = {
 				}
 			}
 		}
+
+		SKL_alexanderism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_alexanderism" }
+			picture = GFX_idea_volkisch_education
+			modifier = {
+				war_support_factor = 0.15
+				surrender_limit = 0.2
+			}
+		}
+
 		SKL_alexanders_sons = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_alexanders_sons" }
 			picture = SKL_alexander_son
