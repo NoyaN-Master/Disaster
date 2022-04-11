@@ -359,11 +359,10 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_mobility_focus" }
 			picture = SKL_mobility
 			modifier = {
-				army_motorized_speed_factor = 0.25
+				motorized_attack_factor = 0.25
 				equipment_bonus = {
 					motorized_equipment = {
-						build_cost_id = -0.2
-						instant = yes
+						build_cost_ic = -0.1 instant = yes
 					}
 				}
 			}
