@@ -237,8 +237,8 @@ ideas = {
 			}
 		}
 		SKL_control_population = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_population_control" }
-			picture = SKL_population_control
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_population_control_idea" }
+			picture = SKL_population_control_idea
 			modifier = {
 				monthly_population = -0.2
 				stability_weekly = 0.005
@@ -396,7 +396,7 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_heirs_to_macedon" }
 			picture = SKL_heir_macedon
 			modifier = {
-
+				
 			}
 		}
 	}
