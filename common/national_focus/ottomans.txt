@@ -160,6 +160,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			custom_effect_tooltip = CLP_ottomans_new_army_tt
 		}
 	}
 
@@ -518,7 +519,7 @@ focus_tree = {
 
 	focus = {
 		id = CLP_Anatolian_Front
-		icon = GFX_goal_WRF_enemies_within
+		icon = GFX_goal_SKL_OCCUPATIONPLANS
 		x = 15
 		y = 1
 		cost = 1
