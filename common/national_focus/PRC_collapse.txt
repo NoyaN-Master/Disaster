@@ -18,7 +18,7 @@ focus_tree = {
 		icon = GFX_goal_PRC_mao_deng
 		x = 8
 		y = 1
-		cost = 1
+		cost = 3
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -33,7 +33,7 @@ focus_tree = {
 		icon = GFX_goal_PRC_MaoWinsSI
 		x = 4
 		y = 2
-		cost = 1
+		cost = 5
 		prerequisite = {focus = PRC_focus_1}
 		available = {has_country_flag = mao_vic}
 		available_if_capitulated = yes
@@ -51,7 +51,7 @@ focus_tree = {
 		icon = GFX_goal_PRC_deng_wins_SI
 		x = 12
 		y = 2
-		cost = 1
+		cost = 5
 		prerequisite = {focus = PRC_focus_1}
 		available = {has_country_flag = deng_vic}
 		available_if_capitulated = yes
@@ -69,7 +69,7 @@ focus_tree = {
 		icon = GFX_goal_PRC_Guerilla_Warfare
 		x = 6
 		y = 4
-		cost = 1
+		cost = 3
 		prerequisite = {focus = PRC_focus_5}
 		available = {}
 		available_if_capitulated = yes
@@ -85,7 +85,7 @@ focus = {
 		icon = GFX_goal_PRC_orthodox_warfare
 		x = 4
 		y = 3
-		cost = 1
+		cost = 3
 		prerequisite = {focus = PRC_focus_2}
 		available = {}
 		available_if_capitulated = yes
@@ -101,7 +101,7 @@ focus = {
 		icon = ""
 		x = 5
 		y = 5
-		cost = 1
+		cost = 3
 		prerequisite = {focus = PRC_focus_4}
 		available = {}
 		available_if_capitulated = yes
@@ -117,7 +117,7 @@ focus = {
 		icon = ""
 		x = 3
 		y = 5
-		cost = 1
+		cost = 3
 		prerequisite = {focus = PRC_focus_9}
 		available = {}
 		available_if_capitulated = yes
@@ -133,7 +133,7 @@ focus = {
 		icon = GFX_goal_PRC_perfect_combination	
 		x = 4
 		y = 6
-		cost = 1
+		cost = 3
 		prerequisite = {focus = PRC_focus_6}
 		prerequisite = {focus = PRC_focus_7}
 		available = {}
@@ -151,7 +151,7 @@ focus = {
 		icon = GFX_goal_PRC_Protracted_Peoples_War
 		x = 2
 		y = 4
-		cost = 1
+		cost = 3
 		prerequisite = {focus = PRC_focus_5}
 		available = {}
 		available_if_capitulated = yes
@@ -167,7 +167,7 @@ focus = {
 		icon = GFX_goal_PRC_puyi_letter
 		x = 8
 		y = 7
-		cost = 1
+		cost = 3
 		prerequisite = {focus = PRC_focus_8 focus = PRC_focus_16}
 		available = {}
 		available_if_capitulated = yes
@@ -183,7 +183,7 @@ focus = {
 		icon = GFX_goal_PRC_crush_nationalists
 		x = 12
 		y = 3
-		cost = 1
+		cost = 3
 		prerequisite = {focus = PRC_focus_3}
 		available = {}
 		available_if_capitulated = yes
@@ -199,7 +199,7 @@ focus = {
 		icon = GFX_goal_PRC_hit_them_hard
 		x = 10
 		y = 4
-		cost = 1
+		cost = 3
 		prerequisite = {focus = PRC_focus_11}
 		available = {}
 		available_if_capitulated = yes
@@ -215,7 +215,7 @@ focus = {
 		icon = GFX_goal_PRC_hit_em_fast
 		x = 14
 		y = 4
-		cost = 1
+		cost = 3
 		prerequisite = {focus = PRC_focus_11}
 		available = {}
 		available_if_capitulated = yes
@@ -231,7 +231,7 @@ focus = {
 		icon = GFX_goal_PRC_sacrifices_must_be_made
 		x = 13
 		y = 5
-		cost = 1
+		cost = 3
 		prerequisite = {focus = PRC_focus_13}
 		available = {}
 		available_if_capitulated = yes
@@ -247,7 +247,7 @@ focus = {
 		icon = GFX_goal_PRC_industry_to_support_us
 		x = 11
 		y = 5
-		cost = 1
+		cost = 3
 		prerequisite = {focus = PRC_focus_12}
 		available = {}
 		available_if_capitulated = yes
@@ -265,7 +265,7 @@ focus = {
 		icon = GFX_goal_PRC_chinese_blitzkrieg
 		x = 12
 		y = 6
-		cost = 1
+		cost = 3
 		prerequisite = {focus = PRC_focus_14}
 		prerequisite = {focus = PRC_focus_15}
 		available = {}
@@ -286,7 +286,7 @@ focus = {
 		icon = GFX_goal_PRC_Strangest_proposal_in_history
 		x = 7
 		y = 8
-		cost = 1
+		cost = 3
 		prerequisite = {focus = PRC_focus_10}
 		available = {has_country_flag = PRC_qing_prop_flag}
 		available_if_capitulated = yes
@@ -302,7 +302,7 @@ focus = {
 		icon = GFX_goal_PRC_the_Fox_and_the_Swan
 		x = 9
 		y = 8
-		cost = 1
+		cost = 3
 		prerequisite = {focus = PRC_focus_10}
 		available = {has_country_flag = PRC_focus_17_completed}
 		available_if_capitulated = yes
@@ -318,7 +318,7 @@ focus = {
 		icon = GFX_goal_PRC_unholy_alliance
 		x = 8
 		y = 9
-		cost = 1
+		cost = 3
 		prerequisite = {focus = PRC_focus_17}
 		prerequisite = {focus = PRC_focus_18}
 		available = {}
@@ -335,7 +335,7 @@ focus = {
 		icon = GFX_goal_PRC_peoples_emperor
 		x = 6
 		y = 10
-		cost = 1
+		cost = 3
 		prerequisite = {focus = PRC_focus_19}
 		available = {}
 		available_if_capitulated = yes
@@ -351,7 +351,7 @@ focus = {
 		icon = GFX_goal_PRC_rights_of_banners
 		x = 8
 		y = 10
-		cost = 1
+		cost = 3
 		prerequisite = {focus = PRC_focus_19}
 		available = {}
 		available_if_capitulated = yes
@@ -367,7 +367,7 @@ focus = {
 		icon = GFX_goal_PRC_claim_mandate
 		x = 10
 		y = 10
-		cost = 1
+		cost = 3
 		prerequisite = {focus = PRC_focus_19}
 		available = {}
 		available_if_capitulated = yes
@@ -383,7 +383,7 @@ focus = {
 		icon = GFX_goal_PRC_of_hero_tigers
 		x = 8
 		y = 11
-		cost = 1
+		cost = 3
 		prerequisite = {focus = PRC_focus_20}
 		prerequisite = {focus = PRC_focus_21}
 		prerequisite = {focus = PRC_focus_22}
