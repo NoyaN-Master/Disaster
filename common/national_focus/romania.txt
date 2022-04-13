@@ -1,1 +1,26 @@
-﻿
+﻿focus_tree = {
+    id = ROM_focus
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = ROM
+        }
+    }
+    default = no
+    continuous_focus_position = { x = 100 y = 1600 }
+    
+    focus = {
+        id = ROM_focus
+        icon = GFX_goal_unkown
+        x = 7
+        y = 1
+        cost = 1
+        ai_will_do = {
+            factor = 1
+        }
+        completion_reward = {
+
+        }
+    }
+}

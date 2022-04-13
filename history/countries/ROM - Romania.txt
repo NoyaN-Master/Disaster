@@ -1,5 +1,5 @@
-capital = 107
-oob = "YUG_1936"
+capital = 46
+oob = "ROM"
 
 set_technology = {
 	infantry_weapons = 1
@@ -13,11 +13,9 @@ set_technology = {
 	early_bomber = 1
 	gwtank = 1
 	basic_light_tank = 1
-	### Trains ###
-	basic_train = 1
 }
 
-set_convoys = 45
+set_convoys = 50
 
 set_politics = {
 	ruling_party = autocratic
@@ -25,42 +23,36 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
-add_ideas = 	autocracy 
+add_ideas = 	one_party_state 
 add_ideas = 	corporatism 
 add_ideas = 	industrialized_society
 
+add_ideas =     ROM_agrarian_crisis
+add_ideas =     ROM_revanchist_romania
+add_ideas =     ROM_calls_for_democracy
+
+
 set_popularities = {
-	conservative = 0
+	conservative = 15
 	liberal = 5
-	social_democrat = 5
-	libertarian_socialist = 5
-	authoritarian_socialist = 5
+	social_democrat = 0
+	libertarian_socialist = 0
+	authoritarian_socialist = 0
 	unisocialist = 0
-	authoritarian_democrat = 30
-	autocratic = 45
-	ultranationalist = 5
-	revolutionary_nationalist = 0
+	authoritarian_democrat = 10
+	autocratic = 50
+	ultranationalist = 0
+	revolutionary_nationalist = 20
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
 
 create_country_leader = {
-	name = "Milan Stojadinovic"
-	desc = "SOR_Alex_desc"
-	picture = "gfx/leaders/SOR/SOR_Alex.tga"
+	name = "Constantin Prezan"
+	#desc = "ROM_Prezan_desc"
+	picture = "gfx/leaders/ROM/Portrait_ROM_Prezan.tga"
 	expire = "2020.1.1"
 	ideology = autocratic_subideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Josip Broz Tito"
-	desc = "SOR_Alex_desc"
-	picture = "gfx/leaders/SOR/SOR_Tito.tga"
-	expire = "2020.1.1"
-	ideology = authoritarian_socialist_subideology
 	traits = {
 		#
 	}
