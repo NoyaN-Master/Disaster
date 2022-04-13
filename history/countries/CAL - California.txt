@@ -11,10 +11,28 @@ set_technology = {
 	interwar_antiair = 1
 	early_fighter = 1
 	early_bomber = 1
-	gwtank = 1
-	basic_light_tank = 1
+	### Trains ###
+	basic_train = 1
 }
-
+###Tanks###
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}	
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
 set_convoys = 50
 
 set_politics = {
@@ -45,7 +63,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Culbert Olson"
 	desc = "CAL_Culbert_Olson_desc"
-	picture = "CAL_Culbert_Olson.tga"
+	picture = "gfx/leaders/CAL/CAL_Culbert_Olson.tga"
 	expire = "2020.1.1"
 	ideology = social_democrat_subideology
 	traits = {
@@ -56,7 +74,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Upton Sinclair"
 	desc = "CAL_Upton_Sinclair_desc"
-	picture = "CAL_Upton_Sinclair.tga"
+	picture = "gfx/leaders/CAL/CAL_Upton_Sinclair.tga"
 	expire = "2020.1.1"
 	ideology = libertarian_socialist_subideology
 	traits = {
@@ -67,7 +85,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "James Rolph Jr."
 	desc = "CAL_James_Rolph_desc"
-	picture = "CAL_James_Rolph.tga"
+	picture = "gfx/leaders/CAL/CAL_James_Rolph.tga"
 	expire = "2020.1.1"
 	ideology = liberal_subideology
 	traits = {
@@ -78,7 +96,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Jay Lovestone"
 	desc = "CAL_Jay_Lovestone_desc"
-	picture = "CAL_Jay_Lovestone.tga"
+	picture = "gfx/leaders/CAL/CAL_Jay_Lovestone.tga"
 	expire = "2020.1.1"
 	ideology = authoritarian_socialist_subideology
 	traits = {
@@ -89,7 +107,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Pat McCarran"
 	desc = "CAL_Pat_McCarran_desc"
-	picture = "CAL_Pat_McCarran.tga"
+	picture = "gfx/leaders/CAL/CAL_Pat_McCarran.tga"
 	expire = "2020.1.1"
 	ideology = conservative_subideology
 	traits = {
@@ -100,7 +118,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "L. Ron Hubbard"
 	desc = "CAL_Hubbard_desc"
-	picture = "CAL_Hubbard.tga"
+	picture = "gfx/leaders/CAL/CAL_Hubbard.tga"
 	expire = "2020.1.1"
 	ideology = esoteric_traditionalist_subideology
 	traits = {

@@ -34,7 +34,7 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Tapa Tchermoeff"
-	picture = "MTR_Tapa_Tchermoeff.tga"
+	picture = "gfx/leaders/MTR/MTR_Tapa_Tchermoeff.tga"
 	expire = "2020.1.1"
 	ideology = authoritarian_democrat_subideology
 	traits = {
@@ -43,7 +43,7 @@ create_country_leader = {
 }
 create_country_leader = {
 	name = "Motsa Shuaninskiy"
-	#picture = "MTR_Motsa_Shuaninskiy.dds"
+	#picture = "gfx/leaders/MTR/MTR_Motsa_Shuaninskiy.dds"
 	expire = "1935.1.1"
 	ideology = ultranationalist_subideology
 	traits = {
@@ -52,7 +52,7 @@ create_country_leader = {
 }
 create_country_leader = {
 	name = "Motsa Shuaninskiy"
-	#picture = "MTR_Motsa_Shuaninskiy.dds"
+	#picture = "gfx/leaders/MTR/MTR_Motsa_Shuaninskiy.dds"
 	expire = "1935.1.1"
 	ideology = autocratic_subideology
 	traits = {
@@ -61,7 +61,7 @@ create_country_leader = {
 }
 create_country_leader = {
 	name = "Motsa Shuaninskiy"
-	#picture = "MTR_Motsa_Shuaninskiy.dds"
+	#picture = "gfx/leaders/MTR/MTR_Motsa_Shuaninskiy.dds"
 	expire = "1935.1.1"
 	ideology = esoteric_islamism_subideology
 	traits = {

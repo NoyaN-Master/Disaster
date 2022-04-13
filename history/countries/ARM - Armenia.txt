@@ -11,10 +11,28 @@ set_technology = {
 	interwar_antiair = 1
 	early_fighter = 1
 	early_bomber = 1
-	gwtank = 1
-	basic_light_tank = 1
+	### Trains ###
+	basic_train = 1
 }
-
+###Tanks###
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}	
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
 set_convoys = 50
 
 set_politics = {
@@ -47,7 +65,7 @@ add_ideas = ARM_Lusignan_Debacle
 
 create_country_leader = {
 	name = "Mihran Damadian"
-	picture = "Portarit_ARM_Mihran_Damadian.png"
+	picture = "gfx/leaders/ARM/Portarit_ARM_Mihran_Damadian.png"
 	expire = "2020.1.1"
 	ideology = liberal_subideology
 	traits = {
@@ -57,7 +75,7 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Avetis Nazarbekyan"
-	picture = "Portarit_ARM_Avetis_Nazarbekyan.png"
+	picture = "gfx/leaders/ARM/Portarit_ARM_Avetis_Nazarbekyan.png"
 	expire = "2020.1.1"
 	ideology = social_democrat_subideology
 	traits = {
@@ -67,7 +85,7 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Garegin Nzhdeh"
-	picture = "Portarit_ARM_Garegin_Nzhdeh.png"
+	picture = "gfx/leaders/ARM/Portarit_ARM_Garegin_Nzhdeh.png"
 	expire = "2020.1.1"
 	ideology = libertarian_socialist_subideology
 	traits = {

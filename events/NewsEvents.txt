@@ -1,9 +1,9 @@
-add_namespace = news
+add_namespace = disasternews
 
 news_event = { #EnverVsArmenia
-	id = news.1
-	title = news.1.t
-	desc = news.1.d
+	id = disasternews.1
+	title = disasternews.1.t
+	desc = disasternews.1.d
 	picture = GFX_news_event_caucasuswar
 	
 	major = yes
@@ -11,16 +11,16 @@ news_event = { #EnverVsArmenia
 	is_triggered_only = yes
 
     option = {
-		name = news.1.a
+		name = disasternews.1.a
 		
     }
 
 }
 
 news_event = { #AzerbaijanAnnex
-	id = news.2
-	title = news.2.t
-	desc = news.2.d
+	id = disasternews.2
+	title = disasternews.2.t
+	desc = disasternews.2.d
 	picture = GFX_news_event_bakuannex
 	
 	major = yes
@@ -28,16 +28,16 @@ news_event = { #AzerbaijanAnnex
 	is_triggered_only = yes
 
     option = {
-		name = news.2.a
+		name = disasternews.2.a
 		
     }
 
 }
 
 news_event = { #ANT-FullerCoup
-	id = news.3
-	title = news.3.t
-	desc = news.3.d
+	id = disasternews.3
+	title = disasternews.3.t
+	desc = disasternews.3.d
 	picture = GFX_news_event_fullercoup
 	
 	major = yes
@@ -45,16 +45,16 @@ news_event = { #ANT-FullerCoup
 	is_triggered_only = yes
 
     option = {
-		name = news.3.a
+		name = disasternews.3.a
 		
     }
 
 }
 
 news_event = { #ANT-Collapse
-	id = news.4
-	title = news.4.t
-	desc = news.4.d
+	id = disasternews.4
+	title = disasternews.4.t
+	desc = disasternews.4.d
 	picture = GFX_news_event_collapse
 	
 	major = yes
@@ -62,16 +62,16 @@ news_event = { #ANT-Collapse
 	is_triggered_only = yes
 
     option = {
-		name = news.4.a
+		name = disasternews.4.a
 		
     }
 
 }
 
 news_event = { #WRFWar
-	id = news.5
-	title = news.5.t
-	desc = news.5.d
+	id = disasternews.5
+	title = disasternews.5.t
+	desc = disasternews.5.d
 	picture = GFX_news_event_smyrna
 	
 	major = yes
@@ -79,16 +79,16 @@ news_event = { #WRFWar
 	is_triggered_only = yes
 
     option = {
-		name = news.5.a
+		name = disasternews.5.a
 		
     }
 
 }
 
 news_event = { #AtsizCoup
-	id = news.6
-	title = news.6.t
-	desc = news.6.d
+	id = disasternews.6
+	title = disasternews.6.t
+	desc = disasternews.6.d
 	picture = GFX_news_event_turanist_ambition
 	
 	major = yes
@@ -96,16 +96,16 @@ news_event = { #AtsizCoup
 	is_triggered_only = yes
 
     option = {
-		name = news.6.a
+		name = disasternews.6.a
 		
     }
 
 }
 
 news_event = { #TachankaPact
-	id = news.7
-	title = news.7.t
-	desc = news.7.d
+	id = disasternews.7
+	title = disasternews.7.t
+	desc = disasternews.7.d
 	picture = GFX_news_event_turanist_ambition
 	
 	major = yes
@@ -113,16 +113,16 @@ news_event = { #TachankaPact
 	is_triggered_only = yes
 
     option = {
-		name = news.7.a
+		name = disasternews.7.a
 		
     }
 
 }
 
 news_event = { #WarriorsOfJudea
-	id = news.8
-	title = news.8.t
-	desc = news.8.d
+	id = disasternews.8
+	title = disasternews.8.t
+	desc = disasternews.8.d
 	picture = GFX_news_event_turanist_ambition
 	
 	major = yes
@@ -130,16 +130,16 @@ news_event = { #WarriorsOfJudea
 	is_triggered_only = yes
 
     option = {
-		name = news.8.a
+		name = disasternews.8.a
 		
     }
 
 }
 
 news_event = { #IstanbulAnnexed-Normal
-	id = news.9
-	title = news.9.t
-	desc = news.9.d
+	id = disasternews.9
+	title = disasternews.9.t
+	desc = disasternews.9.d
 	picture = GFX_news_event_istanbul
 	
 	major = yes
@@ -147,16 +147,16 @@ news_event = { #IstanbulAnnexed-Normal
 	is_triggered_only = yes
 
     option = {
-		name = news.9.a
+		name = disasternews.9.a
 		
     }
 
 }
 
 news_event = { #IstanbulAnnexed-Atsiz
-	id = news.10
-	title = news.10.t
-	desc = news.10.d
+	id = disasternews.10
+	title = disasternews.10.t
+	desc = disasternews.10.d
 	picture = GFX_news_event_turanist_ambition
 	
 	major = yes
@@ -164,16 +164,16 @@ news_event = { #IstanbulAnnexed-Atsiz
 	is_triggered_only = yes
 
     option = {
-		name = news.10.a
+		name = disasternews.10.a
 		
     }
 
 }
 
 news_event = { #Unification-Kemalist
-	id = news.11
-	title = news.11.t
-	desc = news.11.d
+	id = disasternews.11
+	title = disasternews.11.t
+	desc = disasternews.11.d
 	picture = GFX_news_event_smyrna
 	
 	major = yes
@@ -181,16 +181,16 @@ news_event = { #Unification-Kemalist
 	is_triggered_only = yes
 
     option = {
-		name = news.11.a
+		name = disasternews.11.a
 		
     }
 
 }
 
 news_event = { #Unification-Enver
-	id = news.12
-	title = news.12.t
-	desc = news.12.d
+	id = disasternews.12
+	title = disasternews.12.t
+	desc = disasternews.12.d
 	picture = GFX_news_event_038
 	
 	major = yes
@@ -198,16 +198,16 @@ news_event = { #Unification-Enver
 	is_triggered_only = yes
 
     option = {
-		name = news.12.a
+		name = disasternews.12.a
 		
     }
 
 }
 
 news_event = { #Unification-Atsiz
-	id = news.13
-	title = news.13.t
-	desc = news.13.d
+	id = disasternews.13
+	title = disasternews.13.t
+	desc = disasternews.13.d
 	picture = GFX_news_event_turanist_ambition
 	
 	major = yes
@@ -215,16 +215,16 @@ news_event = { #Unification-Atsiz
 	is_triggered_only = yes
 
     option = {
-		name = news.13.a
+		name = disasternews.13.a
 		
     }
 
 }
 
 news_event = { #The Levantine War
-	id = news.16
-	title = news.16.t
-	desc = news.16.d
+	id = disasternews.16
+	title = disasternews.16.t
+	desc = disasternews.16.d
 	picture = GFX_news_event_battle_for_the_bosporus
 	
 	major = yes
@@ -232,16 +232,16 @@ news_event = { #The Levantine War
 	is_triggered_only = yes
 
     option = {
-		name = news.16.a
+		name = disasternews.16.a
 		
     }
 
 }
 
 news_event = { #PLA V
-	id = news.17
-	title = news.17.t
-	desc = news.17.d
+	id = disasternews.17
+	title = disasternews.17.t
+	desc = disasternews.17.d
 	picture = GFX_news_event_battle_for_the_bosporus
 	
 	major = yes
@@ -249,16 +249,16 @@ news_event = { #PLA V
 	is_triggered_only = yes
 
     option = {
-		name = news.17.a
+		name = disasternews.17.a
 		
     }
 
 }
 
 news_event = { #LEHI V
-	id = news.18
-	title = news.18.t
-	desc = news.18.d
+	id = disasternews.18
+	title = disasternews.18.t
+	desc = disasternews.18.d
 	picture = GFX_news_event_battle_for_the_bosporus
 	
 	major = yes
@@ -266,16 +266,16 @@ news_event = { #LEHI V
 	is_triggered_only = yes
 
     option = {
-		name = news.18.a
+		name = disasternews.18.a
 		
     }
 
 }
 
 news_event = { #STALIN WAR I
-	id = news.19
-	title = news.19.t
-	desc = news.19.d
+	id = disasternews.19
+	title = disasternews.19.t
+	desc = disasternews.19.d
 	picture = GFX_news_event_soldiers_marching
 	
 	major = yes
@@ -283,16 +283,16 @@ news_event = { #STALIN WAR I
 	is_triggered_only = yes
 
     option = {
-		name = news.19.a
+		name = disasternews.19.a
 		
     }
 
 }
 
 news_event = { #SYRIANWAR I
-	id = news.20
-	title = news.20.t
-	desc = news.20.d
+	id = disasternews.20
+	title = disasternews.20.t
+	desc = disasternews.20.d
 	picture = GFX_news_event_battle_for_the_bosporus
 	
 	major = yes
@@ -300,16 +300,16 @@ news_event = { #SYRIANWAR I
 	is_triggered_only = yes
 
     option = {
-		name = news.20.a
+		name = disasternews.20.a
 		
     }
 
 }
 
 news_event = { #ANARCHYWAR
-	id = news.21
-	title = news.21.t
-	desc = news.21.d
+	id = disasternews.21
+	title = disasternews.21.t
+	desc = disasternews.21.d
 	picture = GFX_news_event_polish_resistance_warsaw
 	
 	major = yes
@@ -317,15 +317,15 @@ news_event = { #ANARCHYWAR
 	is_triggered_only = yes
 
     option = {
-		name = news.21.a
+		name = disasternews.21.a
 		
     }
 
 }
 news_event = { #RUSWAR
-	id = news.22
-	title = news.22.t
-	desc = news.22.d
+	id = disasternews.22
+	title = disasternews.22.t
+	desc = disasternews.22.d
 	picture = GFX_news_event_006
 	
 	major = yes
@@ -333,16 +333,16 @@ news_event = { #RUSWAR
 	is_triggered_only = yes
 
     option = {
-		name = news.22.a
+		name = disasternews.22.a
 		
     }
 
 }
 
 news_event = { #Italian Bomb
-	id = news.23
-	title = news.23.t
-	desc = news.23.d
+	id = disasternews.23
+	title = disasternews.23.t
+	desc = disasternews.23.d
 	picture = GFX_news_event_001
 	
 	major = yes
@@ -350,16 +350,16 @@ news_event = { #Italian Bomb
 	is_triggered_only = yes
 
     option = {
-		name = news.23.a
+		name = disasternews.23.a
 		
     }
 
 }
 
 news_event = { #KKK
-	id = news.24
-	title = news.24.t
-	desc = news.24.d
+	id = disasternews.24
+	title = disasternews.24.t
+	desc = disasternews.24.d
 	picture = GFX_news_event_001
 	
 	major = yes
@@ -367,16 +367,16 @@ news_event = { #KKK
 	is_triggered_only = yes
 
     option = {
-		name = news.24.a
+		name = disasternews.24.a
 		
     }
 
 }
 
 news_event = { #Mao Union
-	id = news.31
-	title = news.31.t
-	desc = news.31.d
+	id = disasternews.31
+	title = disasternews.31.t
+	desc = disasternews.31.d
 	picture = GFX_news_event_prc_declared
 	
 	major = yes
@@ -384,7 +384,7 @@ news_event = { #Mao Union
 	is_triggered_only = yes
 
     option = {
-		name = news.31.a
+		name = disasternews.31.a
 		
     }
 

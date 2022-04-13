@@ -1,0 +1,1165 @@
+focus_tree = {
+	id = fuller_unification_Focus
+	
+	country = {
+		factor = 0
+	}
+	continuous_focus_position = {
+		x = 0
+		y = 1200
+	}
+	focus = {
+		id = SKL_Unification_Complete
+		icon = GFX_goal_SKL_UNIFIED
+		x = 20
+		y = 0
+		cost = 0
+		available_if_capitulated = no
+		completion_reward = {
+			country_event = fullerunification.2
+        }
+	}
+	focus = {
+		id = SKL_racial_plans
+		icon = GFX_goal_SKL_RACIAL_PLANS
+		relative_position_id = SKL_Unification_Complete
+		x = 0
+		y = 1
+		cost = 2.5
+		available_if_capitulated = no
+		available = {
+			has_completed_focus = SKL_bomb_resisting_villages
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SKL_turkish_united_front_2
+				add_idea = SKL_turkish_united_front_3
+			}
+        }
+		prerequisite = { focus = SKL_Unification_Complete }
+	}
+	focus = {
+		id = SKL_bomb_resisting_villages
+		icon = GFX_goal_SKL_BOMB_VILLAGES
+		relative_position_id = SKL_Unification_Complete
+		x = -2
+		y = 1
+		cost = 2.5
+		available_if_capitulated = no
+		prerequisite = {
+			focus = SKL_Unification_Complete
+		}
+		completion_reward = {
+			country_event = fullerunification.1
+			swap_ideas = {
+				remove_idea = SKL_turkish_united_front_1
+				add_idea = SKL_turkish_united_front_2
+			}
+		}
+	}
+	focus = {
+		id = SKL_hunt_kemalists
+		icon = GFX_goal_SKL_KEMALISTS
+		relative_position_id = SKL_Unification_Complete
+		x = 2
+		y = 1
+		cost = 2.5
+		available_if_capitulated = no
+		prerequisite = {
+			focus = SKL_Unification_Complete
+		}
+		available = {
+			has_completed_focus = SKL_racial_plans
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SKL_turkish_united_front_3
+				add_idea = SKL_turkish_united_front_4
+			}
+        }
+	}
+	focus = {
+		id = SKL_occupation_plan
+		icon = GFX_goal_SKL_OCCUPATIONPLANS
+		relative_position_id = SKL_Unification_Complete
+		x = 0
+		y = 2
+		cost = 1
+		available_if_capitulated = no
+		prerequisite = {
+			focus = SKL_racial_plans
+		}
+		prerequisite = {
+			focus = SKL_bomb_resisting_villages
+		}
+		prerequisite = {
+			focus = SKL_hunt_kemalists
+		}
+		completion_reward = {
+			custom_effect_tooltip = SKL_occupation_plans_tt
+        }
+	}
+	focus = {
+		id = SKL_occupationplan_hellas
+		icon = GFX_goal_SKL_HELLAS
+		relative_position_id = SKL_occupation_plan
+		x = -3
+		y = 1
+		cost = 2
+		available_if_capitulated = no
+		prerequisite = {
+			focus = SKL_occupation_plan
+		}
+		completion_reward = {
+			add_ideas = SKL_hellas_plan_1
+        }
+	}
+	focus = {
+		id = SKL_legacy_of_sparta
+		icon = GFX_goal_SKL_ROMAN_LEGACY
+		relative_position_id = SKL_occupation_plan
+		x = -3
+		y = 2
+		cost = 2
+		prerequisite = {
+			focus = SKL_occupationplan_hellas
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SKL_hellas_plan_1
+				add_idea = SKL_hellas_plan_2
+			}
+        }
+	}
+	focus = {
+		id = SKL_embrace_hellinism
+		icon = GFX_goal_SKL_HELLENISM
+		relative_position_id = SKL_occupation_plan
+		x = -3
+		y = 3
+		cost = 2
+		prerequisite = {
+			focus = SKL_legacy_of_sparta
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SKL_hellas_plan_2
+				add_idea = SKL_hellas_plan_3
+			}
+        }
+	}
+	focus = {
+		id = SKL_sons_of_zeus
+		icon = GFX_goal_SKL_SONS_OF_ZEUS
+		relative_position_id = SKL_occupation_plan
+		x = -3
+		y = 4
+		prerequisite = {
+			focus = SKL_embrace_hellinism
+		}
+		cost = 2
+		available_if_capitulated = no
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SKL_hellas_plan_3
+				add_idea = SKL_hellas_plan_4
+			}
+        }
+	}
+	focus = {
+		id = SKL_occupationplan_galatia
+		icon = GFX_goal_SKL_GALATIA
+		relative_position_id = SKL_occupation_plan
+		x = -1
+		y = 1
+		cost = 2
+		prerequisite = {
+			focus = SKL_occupation_plan
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = SKL_celtic_plan_1
+        }
+	}
+	focus = {
+		id = SKL_tribal_warbands
+		icon = GFX_goal_SKL_WARBAND
+		relative_position_id = SKL_occupation_plan
+		x = -1
+		y = 2
+		cost = 2
+		available_if_capitulated = no
+		prerequisite = {
+			focus = SKL_occupationplan_galatia
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SKL_celtic_plan_1
+				add_idea = SKL_celtic_plan_2
+			}
+        }
+	}
+	focus = {
+		id = SKL_celtic_culture
+		icon = GFX_goal_SKL_CELTIC_CULTURE
+		relative_position_id = SKL_occupation_plan
+		x = -1
+		y = 3
+		cost = 2
+		prerequisite = {
+			focus = SKL_tribal_warbands
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SKL_celtic_plan_2
+				add_idea = SKL_celtic_plan_3
+			}
+        }
+	}
+	focus = {
+		id = SKL_sons_of_dagda
+		icon = GFX_goal_SKL_SONS_OF_DAGDA
+		relative_position_id = SKL_occupation_plan
+		x = -1
+		y = 4
+		cost = 2
+		prerequisite = {
+			focus = SKL_celtic_culture
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SKL_celtic_plan_3
+				add_idea = SKL_celtic_plan_4
+			}
+        }
+	}
+	focus = {
+		id = SKL_occupationplan_turkoman
+		icon = GFX_goal_SKL_TURKOMAN
+		relative_position_id = SKL_occupation_plan
+		prerequisite = {
+			focus = SKL_occupation_plan
+		}
+		x = 1
+		y = 1
+		cost = 2
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = SKL_turkoman_plan_1
+        }
+	}
+	focus = {
+		id = SKL_nomad_life
+		icon = GFX_goal_SKL_TRIBAL_LIFE
+		relative_position_id = SKL_occupation_plan
+		x = 1
+		y = 2
+		cost = 2
+		available_if_capitulated = no
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SKL_turkoman_plan_1
+				add_idea = SKL_turkoman_plan_2
+			}
+        }
+		prerequisite = {
+			focus = SKL_occupationplan_turkoman
+		}
+	}
+	focus = {
+		id = SKL_destroy_sepratists
+		icon = GFX_goal_SKL_SEPRATISTS
+		relative_position_id = SKL_occupation_plan
+		x = 1
+		y = 3
+		cost = 2
+		available_if_capitulated = no
+		prerequisite = {
+			focus = SKL_nomad_life
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SKL_turkoman_plan_2
+				add_idea = SKL_turkoman_plan_3
+			}
+        }
+	}
+	focus = {
+		id = SKL_sons_of_tengri
+		icon = GFX_goal_SKL_SONS_OF_TENGRI
+		relative_position_id = SKL_occupation_plan
+		x = 1
+		y = 4
+		cost = 2
+		available_if_capitulated = no
+		prerequisite = {
+			focus = SKL_destroy_sepratists
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SKL_turkoman_plan_3
+				add_idea = SKL_turkoman_plan_4
+			}
+        }
+	}
+	focus = {
+		id = SKL_occupationplan_urartu
+		icon = GFX_goal_SKL_URARTU
+		relative_position_id = SKL_occupation_plan
+		prerequisite = {
+			focus = SKL_occupation_plan
+		}
+		x = 3
+		y = 1
+		cost = 2
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = SKL_armenian_plan_1
+        }
+	}
+	focus = {
+		id = SKL_the_old_gods
+		icon = GFX_goal_SKL_OLD_GODS
+		relative_position_id = SKL_occupation_plan
+		x = 3
+		y = 2
+		cost = 2
+		available_if_capitulated = no
+		prerequisite = {
+			focus = SKL_occupationplan_urartu
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SKL_armenian_plan_1
+				add_idea = SKL_armenian_plan_2
+			}
+        }
+	}
+	focus = {
+		id = SKL_encourage_armenian_settlement
+		icon = GFX_goal_SKL_ENCOURAGE_ARMENIANS
+		relative_position_id = SKL_occupation_plan
+		x = 3
+		y = 3
+		cost = 2
+		available_if_capitulated = no
+		prerequisite = {
+			focus = SKL_the_old_gods
+		}
+		completion_reward = {
+			country_event = fullerunification.4
+			swap_ideas = {
+				remove_idea = SKL_armenian_plan_2
+				add_idea = SKL_armenian_plan_3
+			}
+        }
+	}
+	focus = {
+		id = SKL_sons_of_arev
+		icon = GFX_goal_SKL_SONS_OF_AREV
+		relative_position_id = SKL_occupation_plan
+		x = 3
+		y = 4
+		cost = 2
+		available_if_capitulated = no
+		prerequisite = {
+			focus = SKL_encourage_armenian_settlement
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SKL_armenian_plan_3
+				add_idea = SKL_armenian_plan_4
+			}
+        }
+	}
+	focus = {
+		id = SKL_organization_complete
+		icon = GFX_goal_ANT_fixing
+		relative_position_id = SKL_occupation_plan
+		x = 0
+		y = 5
+		cost = 1
+		prerequisite = {
+			focus = SKL_sons_of_zeus
+		}
+		prerequisite = {
+			focus = SKL_sons_of_tengri
+		}
+		prerequisite = {
+			focus = SKL_sons_of_dagda
+		}
+		prerequisite = {
+			focus = SKL_sons_of_arev
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			custom_effect_tooltip = SKL_fuller_stabilized_tt
+			custom_effect_tooltip = SKL_new_order_idea_tt
+			hidden_effect = {
+				add_state_core = 49
+				add_state_core = 347 
+				add_state_core = 839
+				add_state_core = 798
+				add_state_core = 356
+				add_state_core = 355
+				add_state_core = 354
+				add_state_core = 353
+				add_state_core = 800
+				add_state_core = 352
+				add_state_core = 350
+				add_state_core = 346
+				add_state_core = 348
+				add_state_core = 349
+				add_state_core = 797
+				add_state_core = 835
+				add_state_core = 340
+				add_state_core = 345
+				add_state_core = 344
+				add_state_core = 342
+				add_state_core = 834
+				add_state_core = 834
+				add_state_core = 339
+				add_state_core = 339
+				add_state_core = 341
+				remove_ideas = SKL_turkish_united_front_4
+				remove_ideas = SKL_armenian_plan_4
+				remove_ideas = SKL_celtic_plan_4
+				remove_ideas = SKL_turkoman_plan_4
+				remove_ideas = SKL_hellas_plan_4
+				add_ideas = SKL_the_new_order
+			}
+        }
+	}
+	focus = {
+		id = SKL_alexanderism1
+		icon = GFX_goal_SKL_ALEXANDERISM
+		relative_position_id = SKL_organization_complete
+		x = 0
+		y = 1
+		cost = 1
+		prerequisite = {
+			focus = SKL_organization_complete
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = SKL_alexanderism
+			create_country_leader = {
+				name = "Fuller"
+				desc = "POLITICS_Fuller"
+				picture = "gfx/leaders/SKL/SKL_Gamer_Fuller.tga"
+				expire = "1965.1.1"
+				ideology = alexanderism
+				traits = { }
+			}
+        }
+	}
+	focus = {
+		id = SKL_state_hellenism
+		icon = GFX_goal_SKL_STATE_HELLENISM
+		relative_position_id = SKL_alexanderism1
+		x = 0
+		y = 1
+		cost = 2
+		prerequisite = {
+			focus = SKL_alexanderism1
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = SKL_state_hellenism
+        }
+	}
+	focus = {
+		id = SKL_true_history_of_anatolia
+		icon = GFX_goal_SKL_TRUE_HISTORY
+		relative_position_id = SKL_alexanderism1
+		x = 0
+		y = 4
+		cost = 2
+		prerequisite = {
+			focus = SKL_end_jewry
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			add_extra_state_shared_building_slots = 2
+			random_state = {
+				add_building_construction = {
+					type = industrial_complex 
+					level = 2
+					instant_build = yes
+				}
+			}
+        }
+	}
+	focus = {
+		id = SKL_end_jewry ##have a fancy loc thing to not make it that obvious lol##
+		icon = GFX_goal_SKL_HADRIAN
+		relative_position_id = SKL_alexanderism1
+		x = 0
+		y = 3
+		cost = 2
+		available_if_capitulated = no
+		prerequisite = {
+			focus = SKL_normalize_occultism
+		}
+		completion_reward = {
+			country_event = fullerunification.6
+			add_timed_idea ={idea = SKL_deadlines days = 90}
+        }
+	}
+	focus = {
+		id = SKL_normalize_occultism
+		icon = GFX_goal_SKL_OCCULTISM
+		relative_position_id = SKL_alexanderism1
+		x = 0
+		y = 2
+		cost = 2
+		prerequisite = {
+			focus = SKL_state_hellenism
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			country_event = fullerunification.5
+			swap_ideas = {
+				add_idea = SKL_helleno_occultism
+				remove_idea = SKL_state_hellenism
+			}
+        }
+	}
+	focus = {
+		id = SKL_the_weapon #nuke
+		icon = GFX_goal_SKL_WRATH_GODS
+		relative_position_id = SKL_alexanderism1
+		x = 0
+		y = 5
+		cost = 2
+		prerequisite = {
+			focus = SKL_true_history_of_anatolia
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 3
+				uses = 1
+				category = nuclear
+			}
+        }
+	}
+	focus = {
+		id = SKL_the_domestic_situation
+		icon = GFX_goal_SKL_DOMESTIC_SITUATION
+		relative_position_id = SKL_organization_complete
+		x = -4
+		y = 2
+		cost = 2
+		available_if_capitulated = no
+		prerequisite = {
+			focus = SKL_alexanderism1
+		}
+		completion_reward = {
+			custom_effect_tooltip = SKL_time_to_fix_tt
+        }
+	}
+	focus = {
+		id = SKL_crush_the_left
+		icon = GFX_goal_SKL_KILL_LEFT
+		relative_position_id = SKL_the_domestic_situation
+		x = 1
+		y = 1
+		cost = 3
+		available_if_capitulated = no
+		prerequisite = {
+			focus = SKL_the_domestic_situation
+		}
+		completion_reward = {
+			country_event = fullerunification.8
+        }
+	}
+	focus = {
+		id = SKL_utmost_brutality
+		icon = GFX_goal_SKL_BRUTALITY
+		relative_position_id = SKL_the_domestic_situation
+		x = 2
+		y = 2
+		cost = 3
+		prerequisite = {
+			focus = SKL_crush_the_left
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = SKL_population_control
+				}
+				swap_ideas = {
+					add_idea = SKL_total_control
+					remove_idea = SKL_control_population
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = SKL_population_control
+					}
+				}
+				add_ideas = SKL_brutality
+			}
+        }
+	}
+	focus = {
+		id = SKL_EYES_EVERYWHERE #NEVER FORGET THE OLD FULLER TREE
+		icon = GFX_goal_SKL_TOTAL_CONTROL
+		relative_position_id = SKL_the_domestic_situation
+		x = 0
+		y = 4
+		cost = 3
+		prerequisite = {
+			focus = SKL_rule_by_fear
+		}
+		prerequisite = {
+			focus = SKL_mass_quotas
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SKL_rule_fear
+				add_idea = SKL_eyes_everywhere
+			}
+        }
+	}
+	focus = {
+		id = SKL_population_control
+		icon = GFX_goal_SKL_POPULATION_CONTROL
+		relative_position_id = SKL_the_domestic_situation
+		x = 0
+		y = 2
+		cost = 3
+		available_if_capitulated = no
+		prerequisite = {
+			focus = SKL_crush_the_left
+		}
+		completion_reward = {
+			country_event = fullerunification.9
+			if = {
+				limit = {
+					has_completed_focus = SKL_utmost_brutality
+				}
+				swap_ideas = {
+					add_idea = SKL_total_control
+					remove_idea = SKL_brutality
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = SKL_utmost_brutality
+					}
+				}
+				add_ideas = SKL_control_population
+			}
+        }
+	}
+	focus = {
+		id = SKL_expel_foriegn_hordes
+		icon = GFX_goal_SKL_EXPAND_FORIEGN
+		relative_position_id = SKL_the_domestic_situation
+		x = -2
+		y = 1
+		cost = 3
+		prerequisite = {
+			focus = SKL_the_domestic_situation
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			country_event = fullerunification.10
+			add_timed_idea = {
+				idea = SKL_expelling_buisnesses
+				days = 35
+			}
+        }
+	}
+	focus = {
+		id = SKL_two_types_of_workers
+		icon = GFX_goal_SKL_TWO_TYPES
+		relative_position_id = SKL_the_domestic_situation
+		x = -2
+		y = 2
+		cost = 3
+		prerequisite = {
+			focus = SKL_expel_foriegn_hordes
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = SKL_race_heirarchy
+			add_extra_state_shared_building_slots = 2
+			random_state = {
+				add_building_construction = {
+					type = arms_factory 
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			random_state = {
+				add_building_construction = {
+					type = industrial_complex 
+					level = 2
+					instant_build = yes
+				}
+			}
+        }
+	}
+	focus = {
+		id = SKL_mass_quotas
+		icon = GFX_goal_SKL_MASS_QUOTAS
+		relative_position_id = SKL_the_domestic_situation
+		x = -2
+		y = 3
+		cost = 3
+		prerequisite = {
+			FOCUS = SKL_two_types_of_workers
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = SKL_mass_quotas
+        }
+	}
+	focus = {
+		id = SKL_rule_by_fear
+		icon = GFX_goal_SKL_RULE_FEAR
+		relative_position_id = SKL_the_domestic_situation
+		x = 1
+		y = 3
+		cost = 3
+		prerequisite = {
+			focus = SKL_population_control
+		}
+		prerequisite = {
+			focus = SKL_utmost_brutality
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			swap_ideas = {
+				add_idea = SKL_rule_fear
+				remove_idea = SKL_total_control
+			}
+        }
+	}
+	focus = {
+		id = SKL_reform_war
+		icon = GFX_goal_SKL_REFORM_WAR
+		relative_position_id = SKL_organization_complete
+		x = 4
+		y = 2
+		cost = 2
+		prerequisite = {
+			focus = SKL_alexanderism1
+		}
+		available_if_capitulated = no
+		completion_reward = {
+		
+        }
+	}
+	focus = {
+		id = SKL_armored_monsters
+		icon = GFX_goal_SKL_MONSTER_TANK
+		relative_position_id = SKL_reform_war
+		x = 2
+		y = 1
+		cost = 2
+		prerequisite = {
+			focus = SKL_reform_war
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = SKL_armored_monsters
+        }
+	}
+	focus = {
+		id = SKL_irregular_warfare
+		icon = GFX_goal_SKL_GAS_WAR
+		relative_position_id = SKL_reform_war
+		x = 0
+		y = 1
+		cost = 2
+		prerequisite = {
+			focus = SKL_reform_war
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = SKL_gas_warfare 
+        }
+	}
+	focus = {
+		id = SKL_expand_black_brigades
+		icon = GFX_goal_SKL_EXPAND_BLACK
+		relative_position_id = SKL_reform_war
+		x = -2
+		y = 1
+		cost = 2
+		prerequisite = {
+			focus = SKL_reform_war
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = SKL_black_brigades 
+			country_event = { id = fullerunification.12 }
+        }
+	}
+	focus = {
+		id = SKL_doctrine_of_mobility
+		icon = GFX_goal_SKL_MOBILITY_DOCTRINE
+		relative_position_id = SKL_reform_war
+		x = 2
+		y = 2
+		cost = 2
+		prerequisite = {
+			focus = SKL_armored_monsters
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = SKL_mobility_focus 
+        }
+	}
+	focus = {
+		id = SKL_spartan_spirit
+		icon = GFX_goal_SKL_SPARTAN_SPIRIT
+		relative_position_id = SKL_reform_war
+		x = -2
+		y = 2
+		cost = 2
+		prerequisite = {
+			focus = SKL_expand_black_brigades
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = SKL_spartan_spirit 
+        }
+	}
+	focus = {
+		id = SKL_stimulate_our_soldiers #meth lol
+		icon = GFX_goal_SKL_METH
+		relative_position_id = SKL_reform_war
+		x = 0
+		y = 2
+		cost = 2
+		prerequisite = {
+			focus = SKL_irregular_warfare
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = SKL_meth 
+			country_event = { id = fullerunification.11 }
+        }
+	}
+	focus = {
+		id = SKL_breakthrough_cult
+		icon = GFX_goal_SKL_BREAKTHROUGH_CULT
+		relative_position_id = SKL_reform_war
+		x = 1
+		y = 3
+		cost = 2
+		prerequisite = {
+			focus = SKL_doctrine_of_mobility
+		}
+		prerequisite = {
+			focus = SKL_stimulate_our_soldiers
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			custom_effect_tooltip = SKL_merge_two_ideas_tt
+			hidden_effect = {
+				add_idea = SKL_breakthrough_cult
+				remove_idea = SKL_mobility_focus
+				remove_idea = SKL_armored_monsters
+			}
+		}
+	}
+	focus = {
+		id = SKL_victory_above_all
+		icon = GFX_goal_SKL_VICTORY
+		relative_position_id = SKL_reform_war
+		x = -1
+		y = 3
+		cost = 2
+		prerequisite = {
+			focus = SKL_spartan_spirit
+		}
+		prerequisite = {
+			focus = SKL_stimulate_our_soldiers
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			custom_effect_tooltip = SKL_merge_two_ideas_tt
+			hidden_effect = {
+				add_idea = SKL_victory_first
+				remove_idea = SKL_black_brigades
+				remove_idea = SKL_spartan_spirit
+			}
+        }
+	}
+	focus = {
+		id = SKL_alexanders_warriors
+		icon = GFX_goal_SKL_ALEXANDER_SON
+		relative_position_id = SKL_reform_war
+		x = 0
+		y = 4
+		cost = 2
+		prerequisite = {
+			focus = SKL_breakthrough_cult
+		}
+		prerequisite = {
+			focus = SKL_victory_above_all
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = SKL_alexanders_sons
+			country_event = { id = fullerunification.14 }
+			hidden_effect = {
+				country_event = { fullerunification.17 days = 10}
+			}
+        }
+	}
+	focus = {
+		id = SKL_HEIR_TO_MACEDON
+		icon = GFX_goal_SKL_HEIR_MACEDON
+		relative_position_id = SKL_the_weapon
+		cost = 3
+		x = 0
+		y = 1
+		prerequisite = { focus = SKL_EYES_EVERYWHERE }
+		prerequisite = { focus = SKL_the_weapon }
+		prerequisite = { focus = SKL_alexanders_warriors}
+		completion_reward = {
+			custom_effect_tooltip = SKL_macedon_scare_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						ruling_party = revolutionary_nationalist
+					}
+					set_cosmetic_tag = SKL_macedon
+				}
+				if = {
+					limit = {
+						ruling_party = esoteric_traditionalist
+					}
+					set_cosmetic_tag = SKL_eso_macedon
+				}
+			}
+		}
+	}
+
+
+	### DIPLO TREE ###
+
+	focus = {
+		id = SKL_diplo
+		icon = SKL_diplo_start
+		x = 29
+		y = 1
+		cost = 0
+		available = {
+			always = no
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SKL_kill_arabs
+		icon = SKL_kill_arab
+		x = 0
+		y = 1
+		cost = 2
+		relative_position_id = SKL_diplo
+		prerequisite = { focus = SKL_diplo }
+		completion_reward = {
+			declare_war_on = {
+				taget = PAL
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SRY
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = IQR
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = SKL_invade_bulgaria
+		icon = SKL_into_bulgaria
+		x = -2
+		y = 2
+		cost = 2
+		relative_position_id = SKL_diplo
+		prerequisite = { focus = SKL_kill_arabs }
+		completion_reward = {
+			declare_war_on = {
+				target = BLG
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = SKL_request_egypt
+		icon = SKL_get_egypt
+		x = 0
+		y = 2
+		cost = 2
+		relative_position_id = SKL_diplo
+		prerequisite = { focus = SKL_kill_arabs }
+		completion_reward = {
+			ENG = {
+				country_event = fullerunification.15
+			}
+		}
+	}
+	focus = {
+		id = SKL_crush_persians
+		icon = SKL_crush_persia
+		x = 2
+		y = 2
+		cost = 2
+		relative_position_id = SKL_diplo
+		prerequisite = { focus = SKL_kill_arabs }
+		completion_reward = {
+			declare_war_on = {
+				target = INR
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = SKL_ban_christians
+		icon = SKL_explode_churches
+		x = -1
+		y = 3
+		cost = 2
+		relative_position_id = SKL_diplo
+		prerequisite = { focus = SKL_invade_bulgaria }
+		prerequisite = { focus = SKL_request_egypt }
+		completion_reward = {
+			stability = -0.05
+			manpower = -1000
+			every_owned_state = {
+				add_resistance = -15
+			}
+		}
+	}
+	focus = {
+		id = SKL_ban_muslims
+		icon = SKL_anti_islam
+		x = 1
+		y = 3
+		cost = 2
+		relative_position_id = SKL_diplo
+		prerequisite = { focus = SKL_crush_persians }
+		prerequisite = { focus = SKL_request_egypt }
+		completion_reward = {
+			stability = -0.05
+			manpower = -1000
+			every_owned_state = {
+				add_resistance = -15
+			}
+		}
+	}
+	focus = {
+		id = SKL_PHASE_TWO
+		icon = SKL_phase_two
+		x = 0
+		y = 4
+		cost = 1
+		relative_position_id = SKL_diplo
+		prerequisite = { focus = SKL_ban_muslims }
+		prerequisite = { focus = SKL_ban_christians }
+		completion_reward = {
+			custom_effect_tooltip = SKL_fuller_phase_two_tt
+		}
+	}
+	focus = {
+		id = SKL_end_afghan
+		icon = SKL_end_afghans
+		x = 1
+		y = 5
+		cost = 2
+		relative_position_id = SKL_diplo
+		prerequisite = { focus = SKL_PHASE_TWO }
+		completion_reward = {
+			declare_war_on = {
+				target = AFG
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = SKL_march_to_turkmen
+		icon = SKL_march_to_turkestan
+		x = -1
+		y = 5
+		cost = 2
+		relative_position_id = SKL_diplo
+		prerequisite = { focus = SKL_PHASE_TWO }
+		completion_reward = {
+			declare_war_on = {
+				target = GOK
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = TRK
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = SKL_retvrn_home
+		icon = SKL_return_home
+		x = 0
+		y = 6
+		cost = 2
+		relative_position_id = SKL_diplo
+		prerequisite = { focus = SKL_end_afghan }
+		prerequisite = { focus = SKL_march_to_turkmen }
+		completion_reward = {
+			declare_war_on = {
+				target = GRE
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SOR
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = SKL_HAIL_MACEDON
+		icon = SKL_PAX_MACEDONICUM
+		x = 0
+		y = 7
+		cost = 1
+		available = {
+			NOT = {
+				country_exists = BLG
+				country_exists = GRE
+				country_exists = INR
+				country_exists = IQR
+				country_exists = SRY
+				country_exists = PAL
+				country_exists = GOK
+				country_exists = TRK
+				country_exists = AFG
+			}
+		}
+		relative_position_id = SKL_diplo
+		prerequisite = { focus = SKL_retvrn_home }
+		completion_reward = {
+			custom_effect_tooltip = SKL_HAIL_MACEDON_tt
+		}
+	}
+
+}

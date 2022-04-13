@@ -2401,12 +2401,12 @@ leader_traits = {
 				FROM = {
 					OR = {
 						neutrality < 0.05
-						has_completed_focus = BUL_overthrow_the_tsar
-						has_completed_focus = BUL_abolish_the_monarchy
-						has_completed_focus = BUL_depose_the_tsar
+						#has_completed_focus = BUL_overthrow_the_tsar
+						#has_completed_focus = BUL_abolish_the_monarchy
+						#has_completed_focus = BUL_depose_the_tsar
 						AND = {
-							has_completed_focus = BUL_plot_against_boris
-							NOT = { has_completed_focus = BUL_the_return_of_ferdinand_i }
+							#has_completed_focus = BUL_plot_against_boris
+							NOT = { #has_completed_focus = BUL_the_return_of_ferdinand_i }
 						}
 					}
 				}
@@ -2429,7 +2429,7 @@ leader_traits = {
 				factor = 0
 				OR = {
 					FROM = { communism < 0.05 }
-					FROM = { has_completed_focus = BUL_crush_the_communists }
+					FROM = { #has_completed_focus = BUL_crush_the_communists }
 				}
 			}
 		}

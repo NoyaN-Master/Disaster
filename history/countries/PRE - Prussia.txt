@@ -6,11 +6,6 @@ set_technology = {
 	electronic_mechanical_engineering = 1
 	fuel_silos = 1
 
-	### Tanks ###
-	gwtank = 1
-	basic_light_tank = 1
-	basic_heavy_tank = 1
-
 	### Infantry ###
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -34,6 +29,26 @@ set_technology = {
 	tactical_bomber1 = 1
 	strategic_bomber1 = 1
 	CAS1 = 1
+	### Trains ###
+	basic_train = 1
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}	
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
 }
 if = {
 	limit = {
@@ -128,7 +143,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Kurt von Schleicher"
 	#desc = "PRE_Kurt_von_Schleicher_desc"
-	picture = "PRE_Kurt_von_Schleicher.tga"
+	picture = "gfx/leaders/PRE/PRE_Kurt_von_Schleicher.tga"
 	expire = "2020.1.1"
 	ideology = authoritarian_democrat_subideology
 	traits = {
@@ -139,7 +154,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Alfred Hugenberg"
 	#desc = "PRE_Alfred_Hugenberg_desc"
-	picture = "PRE_Alfred_Hugenberg.tga"
+	picture = "gfx/leaders/PRE/PRE_Alfred_Hugenberg.tga"
 	expire = "2020.1.1"
 	ideology = autocratic_subideology
 	traits = {
@@ -150,7 +165,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Hermann Göring"
 	#desc = "PRE_Hermann_Goring_desc"
-	picture = "PRE_Hermann_Goring.tga"
+	picture = "gfx/leaders/PRE/PRE_Hermann_Goring.tga"
 	expire = "2020.1.1"
 	ideology = revolutionary_nationalist_subideology
 	traits = {
@@ -161,7 +176,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Alfred Hugenberg"
 	#desc = "PRE_Alfred_Hugenberg_desc"
-	picture = "PRE_Alfred_Hugenberg.tga"
+	picture = "gfx/leaders/PRE/PRE_Alfred_Hugenberg.tga"
 	expire = "2020.1.1"
 	ideology = ultranationalist_subideology
 	traits = {
@@ -172,7 +187,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Wilhelm Külz"
 	#desc = "PRE_Wilhelm_Kulz_desc"
-	picture = "PRE_Wilhelm_Kulz.tga"
+	picture = "gfx/leaders/PRE/PRE_Wilhelm_Kulz.tga"
 	expire = "2020.1.1"
 	ideology = liberal_subideology
 	traits = {

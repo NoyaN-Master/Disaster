@@ -12,10 +12,6 @@ set_technology = {
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	gwtank = 1
-	basic_light_tank = 1
-	improved_light_tank = 1
-	basic_heavy_tank = 1
 	early_fighter = 1
 	fighter1 = 1
 	early_bomber = 1
@@ -30,7 +26,27 @@ set_technology = {
 	synth_oil_experiments = 1
 	oil_processing = 1
 	fuel_refining = 1
-	
+	### Trains ###
+	basic_train = 1	
+}
+###Tanks###
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}	
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
 }
 if = {
 	limit = {
@@ -95,17 +111,17 @@ set_politics = {
 
 }
 set_popularities = {
-	conservative = 7
-	liberal = 0
-	social_democrat = 4
-	libertarian_socialist = 3
-	authoritarian_socialist = 13
-	unisocialist = 0
+	conservative = 11
+	liberal = 12
+	social_democrat = 9
+	libertarian_socialist = 7
+	authoritarian_socialist = 6
+	unisocialist = 4
 	authoritarian_democrat = 0
-	autocratic = 10
-	ultranationalist = 43
-	revolutionary_nationalist = 19
-	esoteric_traditionalist = 1
+	autocratic = 6
+	ultranationalist = 27
+	revolutionary_nationalist = 13
+	esoteric_traditionalist = 5
 	revolutionary_anarchist = 0
 }
 
@@ -115,6 +131,10 @@ partial_economic_mobilisation
 autocracy 
 interventionism 
 post_industrialized_society
+BAY_freedom
+BAY_divided_freikorps
+BAY_commie_problem
+BAY_liberal_problem
 }
 
 
@@ -122,7 +142,7 @@ post_industrialized_society
 create_country_leader = {
 	name = "Franz Xavier Ritter von Epp"
 	desc = "Franz_Xavier_Ritter_von_Epp_desc"
-	picture = "Portrait_Franz_Xavier_Ritter_von_Epp.tga"
+	picture = "gfx/leaders/BAY/Portrait_Franz_Xavier_Ritter_von_Epp.tga"
 	expire = "1965.1.1"
 	ideology = ultranationalist_subideology
 	traits = {
@@ -132,7 +152,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ernst Rohm"
 	desc = "Ernst_Rohm_desc"
-	picture = "Portrait_Ernst_Rohm.tga"
+	picture = "gfx/leaders/BAY/Ernst_Rohm.tga"
 	expire = "1965.1.1"
 	ideology = revolutionary_nationalist_subideology
 	traits = {
@@ -142,7 +162,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Heinrich Held"
 	desc = "Heinrich_Held_desc"
-	picture = "Portrait_Heinrich_Held.tga"
+	picture = "gfx/leaders/BAY/Portrait_Heinrich_Held.tga"
 	expire = "1965.1.1"
 	ideology = conservative_subideology
 	traits = {
@@ -152,7 +172,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ernst Thalman"
 	desc = "Ernst_Thalman_desc"
-	picture = "Portrait_Ernst_Thalman.tga"
+	picture = "gfx/leaders/BAY/Portrait_Ernst_Thalman.tga"
 	expire = "1965.1.1"
 	ideology = authoritarian_socialist_subideology
 	traits = {
@@ -162,7 +182,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Heinrich Luitpold Himmler"
 	desc = "Himmler_desc"
-	picture = "BAY_Himmler.tga"
+	picture = "gfx/leaders/BAY/BAY_Himmler.tga"
 	expire = "1965.1.1"
 	ideology = esoteric_traditionalist_subideology
 	traits = {

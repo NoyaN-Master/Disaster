@@ -1,0 +1,15 @@
+on_actions = {
+    on_startup = {
+        effect = {
+			every_country = {
+				limit = { exist = yes 
+				}
+		add_equipment_to_stockpile = {
+		type = train_equipment  
+		amount = 20
+		producer = root
+		}			
+		}
+        }
+    }
+}

@@ -17,7 +17,7 @@ country_event = {
 		ai_chance = { factor = 100 }
 		add_political_power = -100
 		add_stability = -0.15
-		news_event = { id = news.23 days = 1 }
+		news_event = { id = disasternews.23 days = 1 }
 		hidden_effect = {
         set_country_flag = TIT_palace_bombed
 		country_event = { id = tit.2 days = 2 }
@@ -88,7 +88,7 @@ country_event = {
 		create_country_leader = {
 	    name = "Alessandro Pirzio Biroli"
 	    desc = "TIT_Alessandro_Pirzio_Biroli_desc"
-	    picture = "TIT_Alessandro_Pirzio_Biroli.tga"
+	    picture = "gfx/leaders/TIT/TIT_Alessandro_Pirzio_Biroli.tga"
 	    expire = "1965.1.1"
 	    ideology = ultranationalist_subideology
 	    traits = {

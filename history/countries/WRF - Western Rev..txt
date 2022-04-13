@@ -17,11 +17,6 @@ set_technology = {
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	gwtank = 1
-	basic_light_tank = 1
-	#improved_light_tank = 1  # PLACEHOLDER
-	#basic_heavy_tank = 1  # PLACEHOLDER
-	#basic_medium_tank = 1 # PLACEHOLDER
 	early_fighter = 1
 	cv_early_fighter = 1
 	cv_naval_bomber1 = 1
@@ -35,8 +30,27 @@ set_technology = {
 	radio_detection = 1
 	fuel_silos = 1
 	fuel_refining = 1
+	### Trains ###
+	basic_train = 1
 }
-
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}	
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
 add_ideas = 	military_government 
 add_ideas = 	planned_economy
 add_ideas = 	industrialized_society
@@ -83,31 +97,9 @@ puppet = THR
 puppet = ADN
 		
 create_country_leader = {
-	name = "Mustafa Kemal Pasha"
-	#desc = "SES_Zeljko_Raznatovic_desc"
-	picture = "Portrait_WRF_Mustafa_Kemal.tga"
-	expire = "2020.1.1"
-	ideology = turkish_stratocracy
-	traits = {
-	last_hope
-	}
-}
-
-create_country_leader = {
-	name = "Nihal Adsız"
-	#desc = "SES_Zeljko_Raznatovic_desc"
-	picture = "GFX_Portrait_WRF_Atsiz_Nazi_animated"
-	expire = "2020.1.1"
-	ideology = revolutionary_nationalist_subideology
-	traits = {
-	bastion_evil
-	}
-}
-
-create_country_leader = {
 	name = "Celal Bayar/Adnan Menderes"
 	#desc = "SES_Zeljko_Raznatovic_desc"
-	picture = "Portrait_WRF_Coalition.tga"
+	picture = "gfx/leaders/WRF/Portrait_WRF_Coalition.tga"
 	expire = "2020.1.1"
 	ideology = conservative_subideology
 	traits = {
@@ -118,7 +110,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Celal Bayar/Adnan Menderes"
 	#desc = "SES_Zeljko_Raznatovic_desc"
-	picture = "Portrait_WRF_Coalition.tga"
+	picture = "gfx/leaders/WRF/Portrait_WRF_Coalition.tga"
 	expire = "2020.1.1"
 	ideology = liberal_subideology
 	traits = {
@@ -127,9 +119,31 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Mustafa Kemal Pasha"
+	#desc = "SES_Zeljko_Raznatovic_desc"
+	picture = "gfx/leaders/WRF/Portrait_WRF_Mustafa_Kemal.tga"
+	expire = "2020.1.1"
+	ideology = turkish_stratocracy
+	traits = {
+	last_hope
+	}
+}
+
+create_country_leader = {
+	name = "Nihal Adsız"
+	#desc = "SES_Zeljko_Raznatovic_desc"
+	picture = "gfx/leaders/WRF/GFX_Portrait_WRF_Atsiz_Nazi_animated"
+	expire = "2020.1.1"
+	ideology = revolutionary_nationalist_subideology
+	traits = {
+	bastion_evil
+	}
+}
+
+create_country_leader = {
 	name = "Türki Konfederasyonu"
 	#desc = "SES_Zeljko_Raznatovic_desc"
-	picture = "Portrait_WRF_Confederacy.tga"
+	picture = "gfx/leaders/WRF/Portrait_WRF_Confederacy.tga"
 	expire = "2020.1.1"
 	ideology = turkic_confederacy
 	traits = {
@@ -141,7 +155,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Mustafa Kemal Atatürk"
 	#desc = "SES_Zeljko_Raznatovic_desc"
-	picture = "Portrait_WRF_Mustafa_Kemal_Ataturk.tga"
+	picture = "gfx/leaders/WRF/Portrait_WRF_Mustafa_Kemal_Ataturk.tga"
 	expire = "2020.1.1"
 	ideology = authoritarian_democrat
 	traits = {
@@ -190,4 +204,4 @@ create_corps_commander = {
 		defense_skill = 2
 		planning_skill = 3
 		logistics_skill = 2
-	}				
+	}	

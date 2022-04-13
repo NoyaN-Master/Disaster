@@ -1,10 +1,12 @@
-add_namespace = fuller
+add_namespace = sklfuller
+add_namespace = fullerunification
+
 
 country_event = { #Iron Monster
-	id = fuller.1
+	id = sklfuller.1
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
-	title = fuller.1.t
-	desc = fuller.1.d
+	title = sklfuller.1.t
+	desc = sklfuller.1.d
 
 	picture = GFX_report_event_aut_dollfuss_speech
 
@@ -13,15 +15,15 @@ country_event = { #Iron Monster
 	is_triggered_only = yes
 
 	option = {
-		name = fuller.1.a
+		name = sklfuller.1.a
 	}
 }
 
 country_event = { #Corum Telegram
-	id = fuller.2
+	id = sklfuller.2
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
-	title = fuller.2.t
-	desc = fuller.2.d
+	title = sklfuller.2.t
+	desc = sklfuller.2.d
 
 	picture = GFX_report_event_aut_dollfuss_speech
 
@@ -30,15 +32,15 @@ country_event = { #Corum Telegram
 	is_triggered_only = yes
 
 	option = {
-		name = fuller.2.a
+		name = sklfuller.2.a
 	}
 }
 
 country_event = { #Investigate Cult
-	id = fuller.3
+	id = sklfuller.3
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
-	title = fuller.3.t
-	desc = fuller.3.d
+	title = sklfuller.3.t
+	desc = sklfuller.3.d
 
 	picture = GFX_report_event_aut_dollfuss_speech
 
@@ -47,15 +49,15 @@ country_event = { #Investigate Cult
 	is_triggered_only = yes
 
 	option = {
-		name = fuller.3.a
+		name = sklfuller.3.a
 	}
 }
 
 country_event = { #Iron Bogatyrs
-	id = fuller.4
+	id = sklfuller.4
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
-	title = fuller.4.t
-	desc = fuller.4.d
+	title = sklfuller.4.t
+	desc = sklfuller.4.d
 
 	picture = GFX_report_event_aut_dollfuss_speech
 
@@ -64,7 +66,7 @@ country_event = { #Iron Bogatyrs
 	is_triggered_only = yes
 
 	option = {
-		name = fuller.4.a
+		name = sklfuller.4.a
 		division = "name = \"Bogatyr\" division_template = \"Tank Brigades\" start_experience_factor = 1.0 start_equipment_factor = 1.0" owner = SKL
 		add_stability = 0.1
 		add_war_support = 0.1
@@ -72,10 +74,10 @@ country_event = { #Iron Bogatyrs
 }
 
 country_event = { #Janniess
-	id = fuller.5
+	id = sklfuller.5
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
-	title = fuller.5.t
-	desc = fuller.5.d
+	title = sklfuller.5.t
+	desc = sklfuller.5.d
 
 	picture = GFX_report_event_aut_dollfuss_speech
 
@@ -84,7 +86,7 @@ country_event = { #Janniess
 	is_triggered_only = yes
 
 	option = {
-		name = fuller.5.a
+		name = sklfuller.5.a
 		division = "name = \"Subutuay Division\" division_template = \"Subutuay Units\" start_experience_factor = 1.0 start_equipment_factor = 1.0" owner = SKL
 		division = "name = \"Subutuay Division\" division_template = \"Subutuay Units\" start_experience_factor = 1.0 start_equipment_factor = 1.0" owner = SKL
 		division = "name = \"Subutuay Division\" division_template = \"Subutuay Units\" start_experience_factor = 1.0 start_equipment_factor = 1.0" owner = SKL
@@ -116,10 +118,10 @@ country_event = { #Janniess
 }
 
 country_event = { #Threaten Enver With Nuri's Life: Reaching Out
-	id = fuller.6
+	id = sklfuller.6
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
-	title = fuller.6.t
-	desc = fuller.6.d
+	title = sklfuller.6.t
+	desc = sklfuller.6.d
 
 	picture = GFX_report_event_aut_dollfuss_speech
 
@@ -128,17 +130,17 @@ country_event = { #Threaten Enver With Nuri's Life: Reaching Out
 	is_triggered_only = yes
 
 	option = {
-		name = fuller.6.a
+		name = sklfuller.6.a
 		custom_effect_tooltip = save_nuri_first_tt
-		country_event = { id = fuller.7 }
+		country_event = { id = sklfuller.7 }
 	}
 }
 
 country_event = { #Threaten Enver With Nuri's Life: Executing The Plan
-	id = fuller.7
+	id = sklfuller.7
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
-	title = fuller.7.t
-	desc = fuller.7.d
+	title = sklfuller.7.t
+	desc = sklfuller.7.d
 
 	picture = GFX_report_event_aut_dollfuss_speech
 
@@ -147,17 +149,17 @@ country_event = { #Threaten Enver With Nuri's Life: Executing The Plan
 	is_triggered_only = yes
 
 	option = {
-		name = fuller.7.a
+		name = sklfuller.7.a
 	custom_effect_tooltip = save_nuri_execution_tt	
-	country_event = { id = fuller.8 }
+	country_event = { id = sklfuller.8 }
 	}
 }
 
 country_event = { #Threaten Enver With Nuri's Life: Ze Telegram
-	id = fuller.8
+	id = sklfuller.8
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
-	title = fuller.8.t
-	desc = fuller.8.d
+	title = sklfuller.8.t
+	desc = sklfuller.8.d
 
 	picture = GFX_report_event_aut_dollfuss_speech
 
@@ -166,7 +168,7 @@ country_event = { #Threaten Enver With Nuri's Life: Ze Telegram
 	is_triggered_only = yes
 
 	option = {
-	name = fuller.8.a
+	name = sklfuller.8.a
 	custom_effect_tooltip = save_nuri_telegram_tt
 	diplomatic_relation = {
    	country = CIB
@@ -177,10 +179,10 @@ country_event = { #Threaten Enver With Nuri's Life: Ze Telegram
 }
 
 country_event = { #Deal With Cowboy
-	id = fuller.9
+	id = sklfuller.9
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
-	title = fuller.9.t
-	desc = fuller.9.d
+	title = sklfuller.9.t
+	desc = sklfuller.9.d
 
 	picture = GFX_report_event_aut_dollfuss_speech
 
@@ -189,8 +191,344 @@ country_event = { #Deal With Cowboy
 	is_triggered_only = yes
 
 	option = {
-	name = fuller.9.a
+	name = sklfuller.9.a
 	custom_effect_tooltip = cowboy_go_tt
 	#will add a idea soon 
+	}
+}
+
+country_event = { #Bombing Village
+	id = fullerunification.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event fullerunification.1" }
+	title = fullerunification.1.t
+	desc = fullerunification.1.d
+	
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fullerunification.1.a
+	}
+}
+country_event = { #Turkish Front
+	id = fullerunification.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event fullerunification.2" }
+	title = fullerunification.2.t
+	desc = fullerunification.2.d
+	
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fullerunification.2.a
+	}
+}
+country_event = { #Fevzi Executed
+	id = fullerunification.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event fullerunification.3" }
+	title = fullerunification.3.t
+	desc = fullerunification.3.d
+	
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_completed_focus = SKL_hunt_kemalists
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = fullerunification.3.a
+	}
+}
+country_event = { #Armenian Settlements
+	id = fullerunification.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event fullerunification.4" }
+	title = fullerunification.4.t
+	desc = fullerunification.4.d
+	
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fullerunification.4.a
+	}
+}
+country_event = { #Helleno-Occultism
+	id = fullerunification.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event fullerunification.5" }
+	title = fullerunification.5.t
+	desc = fullerunification.5.d
+	
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fullerunification.5.a
+	}
+}
+country_event = { #Jewish Deadlines
+	id = fullerunification.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event fullerunification.6" }
+	title = fullerunification.6.t
+	desc = fullerunification.6.d
+	
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fullerunification.6.a
+	}
+}
+country_event = { #Istanbul Nuclear Reactor
+	id = fullerunification.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event fullerunification.7" }
+	title = fullerunification.7.t
+	desc = fullerunification.7.d
+	
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_tech = nuclear_reactor 
+	}
+	
+	option = {
+		name = fullerunification.7.a
+		mean_time_to_happen = 30
+		797 = {
+			add_building_construction = {
+				type = nuclear_reactor
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+country_event = { #Trolling the Leftists
+	id = fullerunification.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event fullerunification.8" }
+	title = fullerunification.8.t
+	desc = fullerunification.8.d
+	
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fullerunification.8.a
+		manpower = -5000
+	}
+}
+country_event = { #Population Control
+	id = fullerunification.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event fullerunification.9" }
+	title = fullerunification.9.t
+	desc = fullerunification.9.d
+	
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fullerunification.9.a
+	}
+}
+country_event = { #Foriegn Buisness Expelled
+	id = fullerunification.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event fullerunification.10" }
+	title = fullerunification.10.t
+	desc = fullerunification.10.d
+	
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fullerunification.10.a
+		random_state = {
+			add_building_construction = {
+				type = arms_factory 
+				level = -1
+				instant_build = yes
+			}
+		}
+	}
+}
+country_event = { #Meth in Army
+	id = fullerunification.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event fullerunification.11" }
+	title = fullerunification.11.t
+	desc = fullerunification.11.d
+	
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fullerunification.11.a
+	}
+}
+country_event = { #Expansion of Black Brigades
+	id = fullerunification.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event fullerunification.12" }
+	title = fullerunification.12.t
+	desc = fullerunification.12.d
+	
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fullerunification.12.a
+	}
+}
+country_event = { #No Mercy in War
+	id = fullerunification.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event fullerunification.13" }
+	title = fullerunification.13.t
+	desc = fullerunification.13.d
+	
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fullerunification.13.a
+	}
+}
+
+country_event = { #New Macedon Army
+	id = fullerunification.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event fullerunification.14" }
+	title = fullerunification.14.t
+	desc = fullerunification.14.d
+	
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fullerunification.14.a
+	}
+}
+
+country_event = { #egypt request for UK 
+	id = fullerunification.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event fullerunification.15" }
+	title = fullerunification.15.t
+	desc = fullerunification.15.d
+	
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fullerunification.15.a
+		ai_chance = { factor = 100 }
+		SKL = {
+			country_event = { id = fullerunification.16 days = 1 }
+		}
+	}
+	option = {
+		name = fullerunification.15.b
+	}
+}
+
+country_event = { #britain accepted lol
+	id = fullerunification.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event fullerunification.16" }
+	title = fullerunification.16.t
+	desc = fullerunification.16.d
+	
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fullerunification.16.a
+		SKL = {
+			transfer_state = 453
+			diplomatic_relation = {
+				country = ENG
+				relation = docking_rights
+				active = yes
+			}
+			annex_country = {
+				target = EGY
+				transfer_troops = yes
+			}
+		}
+	}
+}
+
+country_event = { #VGH
+	id = fullerunification.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event fullerunification.17" }
+	title = fullerunification.17.t
+	desc = fullerunification.17.d
+	
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fullerunification.17.a
+	}
+	option = {
+		name = fullerunification.17.b
+		create_country_leader = {
+		 	name = "Fuller I"
+		 	desc = "POLITICS_Fuller"
+		 	picture = "gfx/leaders/SKL/SKL_Fuller.png"
+		 	expire = "1965.1.1"
+		 	ideology = eso_alexanderism
+		 	traits = { }
+		}
+		#recruit_character = SKL_fuller_3
+		set_politics = {
+			ruling_party = esoteric_traditionalist 
+			elections_allowed = no
+		}
+		set_cosmetic_tag = SKL_eso
+		hidden_effect = {
+			set_popularities = {
+				conservative = 0
+				liberal = 0
+				social_democrat = 0
+				libertarian_socialist = 0
+				authoritarian_socialist = 0
+				unisocialist = 0
+				authoritarian_democrat = 0
+				autocratic = 0
+				ultranationalist = 0
+				revolutionary_nationalist = 0
+				esoteric_traditionalist = 100
+				revolutionary_anarchist = 0
+			}
+		}
 	}
 }

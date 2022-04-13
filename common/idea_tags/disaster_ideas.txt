@@ -1,6 +1,6 @@
 idea_categories = {
 
-hidden_ideas = {
+	hidden_ideas = {
 		hidden = yes
 	
 		cost = 0
@@ -10,7 +10,7 @@ hidden_ideas = {
 	}
 
 	country = {
-		national_spirit = yes
+		type = national_spirit
 		
 		cost = 0
 		removal_cost = -1
@@ -18,7 +18,7 @@ hidden_ideas = {
 		ledger = hidden
 	}
 	
-disaster_government = {
+	disaster_government = {
 		slot = head_of_government
 		slot = economic_policy
 		slot = government_style
@@ -63,6 +63,4 @@ slot_ledgers = {
 	
 	
 	mobilization_laws = civilian
-}
-
 }

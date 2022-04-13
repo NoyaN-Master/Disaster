@@ -11,10 +11,27 @@ set_technology = {
 	interwar_antiair = 1
 	early_fighter = 1
 	early_bomber = 1
-	gwtank = 1
-	basic_light_tank = 1
+	### Trains ###
+	basic_train = 1
 }
-
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}	
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
 set_convoys = 50
 
 set_politics = {
@@ -47,7 +64,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Michel Aflaq"
 	#desc = "SES_Zeljko_Raznatovic_desc"
-	picture = "PAL_Aflaq.tga"
+	picture = "gfx/leaders/PAL/PAL_Aflaq.tga"
 	expire = "2020.1.1"
 	ideology = authoritarian_socialist_subideology
 	traits = {
@@ -57,7 +74,7 @@ create_country_leader = {
 
 create_field_marshal = {
 	name = "Michel Aflaq"
-	picture = "PAL_Aflaq.tga"
+	picture = "gfx/leaders/PAL/PAL_Aflaq.tga"
 	traits = {
 
 	}
@@ -70,7 +87,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "Amin Al-Husseini"
-	picture = "PAL_The_Mufti.tga"
+	picture = "gfx/leaders/PAL/PAL_The_Mufti.tga"
 	traits = {
 
 	}
@@ -82,7 +99,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Gamel Abdelnasser"
-	picture = "PAL_Nasser.tga"
+	picture = "gfx/leaders/PAL/PAL_Nasser.tga"
 	traits = {
 
 	}

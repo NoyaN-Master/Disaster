@@ -8,7 +8,7 @@ state={
 
 	history={
 		owner = SPK
-		add_core_of = 
+		add_core_of = SPK
 		victory_points = {
 			758 5
 		}
@@ -16,7 +16,7 @@ state={
 			6734 3
 		}
 		buildings = {
-			infrastructure = 6
+			infrastructure = 2
 			dockyard = 2
 			arms_factory = 1
 			air_base = 2
@@ -24,7 +24,6 @@ state={
 				naval_base = 6
 			}
 		}
-		add_core_of = SPK
 	}
 
 	provinces={

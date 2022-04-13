@@ -11,10 +11,28 @@ set_technology = {
 	interwar_antiair = 1
 	early_fighter = 1
 	early_bomber = 1
-	gwtank = 1
-	basic_light_tank = 1
+	### Trains ###
+	basic_train = 1
 }
-
+###Tanks###
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}	
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
 set_convoys = 50
 
 set_politics = {
@@ -49,7 +67,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Nazim Hikmet"
 	#desc = "IZM_Nazim_Hikmet_desc"
-	picture = "IZM_Nazim_Hikmet.tga"
+	picture = "gfx/leaders/IZM/IZM_Nazim_Hikmet.tga"
 	expire = "2020.1.1"
 	ideology = nazimism
 	traits = {
@@ -60,7 +78,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ethem Nejat"
 	#desc = "IZM_Nazim_Hikmet_desc"
-	picture = "IZM_Ethem_Nejat.tga"
+	picture = "gfx/leaders/IZM/IZM_Ethem_Nejat.tga"
 	expire = "2020.1.1"
 	ideology = turkish_marxism
 	traits = {
@@ -71,7 +89,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Cemal Madanoğlu"
 	#desc = "IZM_Nazim_Hikmet_desc"
-	picture = "IZM_Madan.tga"
+	picture = "gfx/leaders/IZM/IZM_Madan.tga"
 	expire = "2020.1.1"
 	ideology = mdd_kemalism
 	traits = {
@@ -81,7 +99,7 @@ create_country_leader = {
 
 create_corps_commander = {
 			name = "Ethem Nejat"
-			picture = "IZM_ethem_nejat_deng.tga"
+			picture = "gfx/leaders/IZM/IZM_ethem_nejat_deng.tga"
 			traits = { revolutionary_turk }
 			skill = 2
 			attack_skill = 2
@@ -91,7 +109,7 @@ create_corps_commander = {
 			}
 create_corps_commander = {
 			name = "Cemal Madanoğlu"
-			picture = "IZM_Madan.tga"
+			picture = "gfx/leaders/IZM/IZM_Madan.tga"
 			traits = { revolutionary_turk brilliant_strategist infantry_officer trickster desert_fox hill_fighter }
 			skill = 3
 			attack_skill = 4

@@ -1,0 +1,413 @@
+ideas = {
+	country = {
+		SKL_turkish_united_front_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_turkish_united_front_1" }
+			picture = SKL_turkish_united_front
+			modifier = {
+				resistance_growth_on_our_occupied_states = 0.75
+				resistance_target_on_our_occupied_states = 0.50
+				consumer_goods_factor = 0.2
+				stability_weekly = -0.02
+				no_compliance_gain = 1
+			}
+		}
+		SKL_turkish_united_front_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_turkish_united_front_2" }
+			picture = SKL_turkish_united_front
+			modifier = {
+				resistance_growth_on_our_occupied_states = 0.6
+				resistance_target_on_our_occupied_states = 0.35
+				consumer_goods_factor = 0.2
+				stability_weekly = -0.01
+				no_compliance_gain = 1
+			}
+		}
+		SKL_turkish_united_front_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_turkish_united_front_3" }
+			picture = SKL_turkish_united_front
+			modifier = {
+				resistance_growth_on_our_occupied_states = 0.5
+				resistance_target_on_our_occupied_states = 0.3
+				consumer_goods_factor = 0.15
+				stability_weekly = -0.01
+				no_compliance_gain = 1
+			}
+		}
+		SKL_turkish_united_front_4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_turkish_united_front_4" }
+			picture = SKL_turkish_united_front
+			modifier = {
+				resistance_growth_on_our_occupied_states = 0.35
+				resistance_target_on_our_occupied_states = 0.2
+				consumer_goods_factor = 0.1
+				no_compliance_gain = 1
+			}
+		}
+		SKL_hellas_plan_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_hellas_plan_1" }
+			picture = SKL_hellas_plan
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		SKL_hellas_plan_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_hellas_plan_2" }
+			picture = SKL_hellas_plan
+			modifier = {
+				stability_factor = 0.05
+				army_org_factor = 0.05
+				
+			}
+		}
+		SKL_hellas_plan_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_hellas_plan_3" }
+			picture = SKL_hellas_plan
+			modifier = {
+				stability_factor = 0.05
+				army_org_factor = 0.05
+				war_support_weekly = 0.0025
+				
+			}
+		}
+		SKL_hellas_plan_4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_hellas_plan_4" }
+			picture = SKL_hellas_plan
+			modifier = {
+				stability_factor = 0.05
+				army_org_factor = 0.05
+				war_support_weekly = 0.0025
+				conscription_factor = 0.005
+				
+			}
+		}
+		SKL_celtic_plan_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_celtic_plan_1" }
+			picture = SKL_celtic_plan
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		SKL_celtic_plan_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_celtic_plan_2" }
+			picture = SKL_celtic_plan
+			modifier = {
+				stability_factor = 0.05
+				mobilization_speed = 0.2
+				
+			}
+		}
+		SKL_celtic_plan_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_celtic_plan_3" }
+			picture = SKL_celtic_plan
+			modifier = {
+				stability_factor = 0.05
+				mobilization_speed= 0.2
+				war_support_factor = 0.05
+			}
+		}
+		SKL_celtic_plan_4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_celtic_plan_4" }
+			picture = SKL_celtic_plan
+			modifier = {
+				stability_factor = 0.05
+				mobilization_speed = 0.2
+				war_support_factor = 0.05
+				conscription_factor = 0.005
+				
+			}
+		}
+		SKL_turkoman_plan_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_turkoman_plan_1" }
+			picture = SKL_turkoman_plan
+			modifier = {
+				stability_factor = 0.05	
+			}
+		}
+		SKL_turkoman_plan_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_turkoman_plan_2" }
+			picture = SKL_turkoman_plan
+			modifier = {
+				stability_factor = 0.05
+				equipment_capture_factor = 0.1
+					
+			}
+		}
+		SKL_turkoman_plan_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_turkoman_plan_3" }
+			picture = SKL_turkoman_plan
+			modifier = {
+				stability_factor = 0.05
+				equipment_capture_factor = 0.1
+				war_support_factor = 0.1
+					
+			}
+		}
+		SKL_turkoman_plan_4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_turkoman_plan_4" }
+			picture = SKL_turkoman_plan
+			modifier = {
+				stability_factor = 0.05	
+				equipment_capture_factor = 0.1
+				war_support_factor = 0.1
+				conscription_factor = 0.005
+			}
+		}
+		SKL_armenian_plan_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_armenian_plan_1" }
+			picture = SKL_armenian_plan
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		SKL_armenian_plan_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_armenian_plan_2" }
+			picture = SKL_armenian_plan
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.1
+			}
+		}
+		SKL_armenian_plan_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_armenian_plan_3" }
+			picture = SKL_armenian_plan
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.1
+				army_org_factor = 0.05
+				
+			}
+		}
+		SKL_armenian_plan_4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_armenian_plan_4" }
+			picture = SKL_armenian_plan
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.1
+				army_org_factor = 0.05
+				conscription_factor = 0.005
+			}
+		}
+		SKL_the_new_order = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_the_new_order" }
+			picture = SKL_the_new_order
+			modifier = {
+				stability_factor = 0.2
+				war_support_factor = 0.4
+				army_org_factor = 0.1
+				conscription_factor = 0.02
+				equipment_capture_factor = 0.1
+			}
+		}
+		SKL_expelling_buisnesses = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_expelling_buisnesses" }
+			picture = SKL_expelling_buisness
+			modifier = {
+				stability_weekly = -0.025
+				consumer_goods_factor = 0.3
+			}
+		}
+		SKL_nationalized_buisness = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_nationalized_buisness" }
+			picture = SKL_nationalized_buisness
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_factory_efficiency_gain_factor = 0.25
+			}
+		}
+		SKL_race_heirarchy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_race_heirarchy" }
+			picture = SKL_racism
+			modifier = {
+				production_factory_max_efficiency_factor = 0.15
+			}
+		}
+		SKL_mass_quotas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_mass_quotas" }
+			picture = SKL_quotas
+			modifier = {
+				production_speed_arms_factory_factor = 0.2
+			}
+		}
+		SKL_brutality = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_brutality" }
+			picture = SKL_brutality
+			modifier = {
+				monthly_population = -0.1
+				war_support_weekly = 0.005
+			}
+		}
+		SKL_control_population = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_population_control_idea" }
+			picture = SKL_population_control_idea
+			modifier = {
+				monthly_population = -0.2
+				stability_weekly = 0.005
+			}
+		}
+		SKL_total_control = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_total_control" }
+			picture = SKL_total_control
+			modifier = {
+				monthly_population = -0.3
+				stability_weekly = 0.005
+				war_support_weekly = 0.05
+				decryption_factor = 0.25
+			}
+		}
+		SKL_rule_fear = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_rule_fear" }
+			picture = CIB_homecoming
+			modifier = {
+				monthly_population = -0.2
+				stability_weekly = 0.0075
+				war_support_weekly = 0.075
+				decryption_factor = 0.3
+				weekly_manpower = 100
+			}
+		}
+		SKL_eyes_everywhere = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_eyes_everywhere" }
+			picture = SKL_eyes_everywhere
+			modifier = {
+				monthly_population = -0.1
+				stability_weekly = 0.01
+				war_support_weekly = 0.01
+				decryption_factor = 0.5
+				weekly_manpower = 200
+			}
+		}
+		SKL_state_hellenism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_state_hellenism" }
+			picture = SKL_hellenism
+			modifier = {
+				recruitable_population_factor = 0.15
+			}
+		}
+		SKL_helleno_occultism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_helleno_occultism" }
+			picture = SKL_occult_hellenism
+			modifier = {
+				recruitable_population_factor = 0.2
+				consumer_goods_factor = -0.05
+			}
+		}
+		SKL_deadlines = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_deadlines" }
+			picture = SKL_deadlines
+			modifier = {
+				monthly_population = -0.5
+				consumer_goods_factor = 0.1
+			}
+		}
+		SKL_nuclear_focus = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_nuclear_focus" }
+			picture = SKL_nuke
+			modifier = {
+				consumer_goods_factor = 0.05
+				nuclear_production_factor = 0.25
+			}
+		}
+		SKL_black_brigades = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_black_brigades" }
+			picture = SKL_black_brigade
+			modifier = {
+				occupation_cost = -0.5
+			}
+		}
+		SKL_spartan_spirit = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_spartan_spirit" }
+			picture = SKL_spartan
+			modifier = {
+				army_morale_factor = 0.25
+				army_org_factor = 0.1
+			}
+		}
+		SKL_victory_first = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_victory_first" }
+			picture = SKL_victory_first
+			modifier = {
+				army_morale_factor = 0.3
+				army_org_factor = 0.1
+				occupation_cost = -0.5
+			}
+		}
+		SKL_gas_warfare = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_gas_warfare" }
+			picture = SKL_gas_war
+			modifier = {
+				army_attack_factor = 0.2
+				supply_consumption_factor = 0.5
+			}
+		}
+		SKL_meth = {
+		 	on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_meth" }
+			picture = SKL_meth
+			modifier = {
+				army_speed_factor = 0.25
+				army_org_factor = -0.1
+			}
+		}
+		SKL_armored_monsters = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_armored_monsters" }
+			picture = SKL_monsters
+			modifier = {
+				army_armor_attack_factor = 0.25
+				army_armor_speed_factor = 0.2
+			}
+		}
+		SKL_mobility_focus = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_mobility_focus" }
+			picture = SKL_mobility
+			modifier = {
+				motorized_attack_factor = 0.25
+				equipment_bonus = {
+					motorized_equipment = {
+						build_cost_ic = -0.1 instant = yes
+					}
+				}
+			}
+		}
+		SKL_breakthrough_cult = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_breakthrough_cult" }
+			picture = SKL_breakthrough
+			modifier = {
+				army_armor_attack_factor = 0.3
+				army_armor_speed_factor = 0.2
+				breakthrough_factor = 0.2
+				army_motorized_speed_factor = 0.25
+				equipment_bonus = {
+					motorized_equipment = {
+						build_cost_id = -0.2
+						instant = yes
+					}
+				}
+			}
+		}
+
+		SKL_alexanderism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_alexanderism" }
+			picture = GFX_idea_volkisch_education
+			modifier = {
+				war_support_factor = 0.15
+				surrender_limit = 0.2
+			}
+		}
+
+		SKL_alexanders_sons = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_alexanders_sons" }
+			picture = SKL_alexander_son
+			modifier = {
+				experience_gain_army = 0.5
+				experience_loss_factor = -0.5
+				land_reinforce_rate = 0.2
+			}
+		}
+		SKL_heirs_to_macedon = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_heirs_to_macedon" }
+			picture = SKL_heir_macedon
+			modifier = {
+				
+			}
+		}
+	}
+}
