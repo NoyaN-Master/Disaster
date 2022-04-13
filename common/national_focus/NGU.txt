@@ -167,7 +167,7 @@ focus = {
 		x = 12
 		y = 3
 		cost = 5
-        prerequisite = { focus = NGU_start_centralization }
+        prerequisite = { focus = NGU_disband_parties }
         prerequisite = { focus = NGU_hunt_down_bandits }
         prerequisite = { focus = NGU_choose_NAD }			
 		completion_reward = {
@@ -559,9 +559,7 @@ focus = {
 		x = 16
 		y = 16
 		cost = 8
-        prerequisite = { focus = NGU_Knightly_Military }
-		prerequisite = { focus = NGU_Revive_Thule }
-									
+        prerequisite = { focus = NGU_Lessons_Russland }
 		completion_reward = {
 		custom_effect_tooltip = SoldatenEvropa_tt	
 		}
@@ -620,7 +618,7 @@ focus = {
 		x = 12
 		y = 16
 		cost = 8
-        prerequisite = { focus = NGU_People_Fuhrer focus = NGU_Ideologe }
+        prerequisite = { focus = NGU_Clean_Reds }
 								
 		completion_reward = {
 		custom_effect_tooltip = SoldatenGermania_tt	

@@ -344,7 +344,10 @@ GER_unification_decisions = {
 				NOT = { is_core_of = ROOT }
 			}
 		}
-
+        modifier = {
+			stability_weekly = -0.001
+			war_support_weekly = -0.001
+        }
 		cost = 0
 		days_remove = 100
 		cancel_if_not_visible = yes

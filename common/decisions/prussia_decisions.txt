@@ -4,6 +4,7 @@ PRE_ministry_of_propaganda_decision = {
           fire_only_once = yes
           modifier = {
 
+
           }
           remove_effect  = {
 		 PRE_propaganda_increase = yes
@@ -22,6 +23,7 @@ PRE_ministry_of_propaganda_decision = {
           }
           available = {
                has_tech = radio
+			   num_of_civilian_factories_available_for_projects > 2
           }
           remove_effect  = {
 		 PRE_propaganda_increase = yes
@@ -40,7 +42,7 @@ PRE_ministry_of_propaganda_decision = {
           }
           available = {
 			controls_state = 64
-			64 = {infrastructure > 9}
+			64 = {infrastructure > 4}
 		  }
           remove_effect  = {
 		 PRE_propaganda_increase = yes

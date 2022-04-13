@@ -1057,6 +1057,11 @@ focus_tree = {
 		completion_reward = {
 		custom_effect_tooltip = PRE_ministry_of_propaganda_tooltip
 		add_political_power = 100
+		unlock_decision_tooltip = PRE_propaganda_decision_1
+		unlock_decision_tooltip = PRE_propaganda_decision_2
+		unlock_decision_tooltip = PRE_propaganda_decision_3
+		unlock_decision_tooltip = PRE_propaganda_decision_4
+		unlock_decision_tooltip = PRE_propaganda_decision_5
 		}
 	}
 	focus = {
@@ -1267,21 +1272,21 @@ focus_tree = {
 			66 = {
 			add_building_construction = {
 				type = infrastructure 
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}	
 			763 = {
 			add_building_construction = {
 				type = infrastructure 
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}
 			5 = {
 			add_building_construction = {
 				type = infrastructure 
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}	
@@ -2788,6 +2793,11 @@ focus_tree = {
 		
 		completion_reward = {
 		custom_effect_tooltip = PRE_readying_war_economy_tooltip
+		unlock_decision_tooltip = PRE_war_economy_decision_1
+		unlock_decision_tooltip = PRE_war_economy_decision_2
+		unlock_decision_tooltip = PRE_war_economy_decision_3
+		unlock_decision_tooltip = PRE_war_economy_decision_4
+		unlock_decision_tooltip = PRE_war_economy_decision_5
 		}
 	}
 	focus = {
