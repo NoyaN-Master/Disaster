@@ -1,28 +1,29 @@
 
 state={
 	id=651
-	name="STATE_651" # Ufa
-	manpower = 2552075
-
-	state_category = city
+	name="STATE_651"
 
 	history={
-		owner = KRN
+		owner = RUS
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 
 		}
 		victory_points = {
-			1278 5
+			1278 5 
 		}
 		victory_points = {
 			4354 1 
 		}
-		add_core_of = KRN
+		add_core_of = RUS
+
 	}
 
 	provinces={
-		273 291 1258 1278 1305 3289 4283 4354 6246 6285 7237 7416 7431 7444 9349 10226 12130 12172 
+		273 291 1258 1278 1305 3289 4265 4283 4311 4354 6246 6285 6368 7237 7300 7416 7431 7444 9349 10226 12130 12172 
 	}
+	manpower=2552075
+	buildings_max_level_factor=1.000
+	state_category=city
 }

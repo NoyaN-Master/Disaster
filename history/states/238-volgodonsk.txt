@@ -2,23 +2,21 @@
 state={
 	id=238
 	name="STATE_238"
-	manpower = 556677
-	
-	state_category = rural
 
 	history={
-		owner = DNK
+		owner = RUS
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4
+
 		}
-		add_core_of = DON
-                add_core_of = DNK
-		victory_points = {
-			775 1 # City of Volgodonsk only founded in 1950 to service the new reservoir
-		}
+		add_core_of = RUS
+
 	}
 
 	provinces={
-		426 775 3417 3443 3464 3587 3777 3779 6417 6468 6490 6765 6796 9415 9581 11400 11403 11416 
+		426 3417 3443 3464 6417 6468 6490 6503 6527 9415 9459 9474 9504 9581 11400 11403 
 	}
+	manpower=556677
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

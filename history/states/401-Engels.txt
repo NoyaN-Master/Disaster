@@ -2,27 +2,28 @@
 state={
 	id=401
 	name="STATE_401"
-	manpower = 927795
-	
-	state_category = rural
-	
 	resources={
-		steel=24 # was: 40
-		tungsten=16 # was: 34
+		steel=24.000
+		tungsten=16.000
 	}
 
 	history={
-		owner = TAT
+		owner = RUS
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4
+
 		}
-		add_core_of = TAT
+		add_core_of = RUS
 		victory_points = {
-			6502 1
+			6502 1 
 		}
+
 	}
 
 	provinces={
-		410 452 499 3490 3551 6339 6430 6473 6502 6574 6601 9337 9432 9447 9473 9577 11321 11421 11458 11460 11523 
+		410 452 499 3404 3490 3551 6339 6430 6473 6502 6574 6601 9337 9432 9447 9473 9487 9549 9577 11321 11421 11458 11460 11523 
 	}
+	manpower=927795
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

@@ -1,25 +1,29 @@
 
 state={
 	id=657
-	name="STATE_657" # Birobidzhan
-	manpower = 308380
+	name="STATE_657"
 	resources={
-		steel=18 # was: 24
+		steel=18.000
 	}
 
-
-	state_category = pastoral
-
 	history={
-		owner = FER
-		buildings = {
-			infrastructure = 2
-			air_base = 2
+		victory_points = {
+			1459 3 
 		}
-		add_core_of = FER
+		owner = TRK
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = TRK
+		add_claim_by = BAS
+		add_claim_by = TSV
 	}
 
 	provinces={
-		675 1802 4246 4701 4725 4779 4805 4829 7616 7672 7763 7801 10655 10722 12192 12261 12263 12654 12678 
+		1459 1819 10601 
 	}
+	manpower=308380
+	buildings_max_level_factor=1.000
+	state_category=pastoral
 }
