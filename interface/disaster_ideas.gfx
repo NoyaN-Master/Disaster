@@ -792,7 +792,18 @@ spriteTypes = {
 		name = "GFX_idea_TUR_roach_problem"
 		texturefile = "gfx/interface/ideas/TUR_roach_problem.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_idea_ROM_agrarian_crisis"
+		texturefile = "gfx/interface/ideas/ROM_agrarian_crisis.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ROM_calls_for_democracy"
+		texturefile = "gfx/interface/ideas/ROM_calls_for_democracy.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ROM_revanchist_romania"
+		texturefile = "gfx/interface/ideas/ROM_revanchist_romania.tga"
+	}
 	####Politicsview GFX
 	spriteType = {
 		name = "GFX_idea_one_party_state"
@@ -986,10 +997,6 @@ spriteType = {
 		name = "GFX_idea_IZM_MLK"
 		texturefile = "gfx/interface/ideas/IZM_MLK.dds"
 	}
-
-
-
-
 	spriteType = {
 		name = "GFX_trait_komtur_des_deutschritterordens"
 		texturefile = "gfx/interface/traits/trait_komtur_des_deutschritterordens.dds"

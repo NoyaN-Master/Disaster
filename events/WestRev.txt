@@ -264,6 +264,7 @@ country_event = { #ASSEMBLY VOTING
 	
 	option = {
 		name = wrf.31.a
+		set_capital = { state = 340 }
 	}
 }
 
