@@ -1785,10 +1785,12 @@ focus_tree = {
 		add_ideas = PRE_martial_law
 		}	
 		completion_reward = {
+		country_event = { id = pre.41 }
 		remove_ideas = PRE_political_radicalisation
 		custom_effect_tooltip = PRE_martial_law_tooltip
 		show_ideas_tooltip = PRE_martial_law
 		remove_ideas = PRE_martial_law
+		
 		}
 		
 	}
@@ -1869,6 +1871,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_junkers_power_chip}
 		
 		completion_reward = {
+		country_event = { id = pre.42 }
 		swap_ideas = {
 			add_idea = PRE_empowered_reichstag
 			remove_idea = PRE_sham_democracy
@@ -2712,7 +2715,7 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 30
 			add_war_support = 0.15
-			### an event needs to be added to explain the army situation of prussia
+			country_event = { id = pre.39 }
 		}
 	}
 	focus = {
@@ -2865,6 +2868,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_prussian_army }
 		
 		completion_reward = {
+		country_event = { id = pre.40 }
 				add_tech_bonus = {
 					name = PRE_support_equipment
 					bonus = 0.50

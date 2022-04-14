@@ -854,6 +854,64 @@ country_event = {
 	}
 }
 
+
+country_event = { #army status
+	id = pre.39
+	title = pre.39.t
+	desc = pre.39.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.39.a
+		ai_chance = { factor = 1}
+	}
+}
+country_event = { #lightning war
+	id = pre.40
+	title = pre.40.t
+	desc = pre.40.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.40.a
+		ai_chance = { factor = 1}
+	}
+}
+country_event = { #state of emergency
+	id = pre.41
+	title = pre.41.t
+	desc = pre.41.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.41.a
+		ai_chance = { factor = 1}
+	}
+}
+country_event = { #policital solidification
+	id = pre.42
+	title = pre.42.t
+	desc = pre.42.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = pre.42.a
+		ai_chance = { factor = 1}
+	}
+}
+
+
+
+
+
+
+
+
+
 ###FP
 country_event = { #BLT gets fccd
 	id = pre.101
@@ -952,3 +1010,5 @@ country_event = { # Surrender
 		add_stability = 0.10
 	}
 }
+
+
