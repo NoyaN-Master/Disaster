@@ -118,8 +118,9 @@ autocracy
 interventionism 
 post_industrialized_society
 }
-
-
+add_ideas = RUS_army_disloyalty
+add_ideas = RUS_mass_terror
+add_ideas = RUS_pogromes
 
 create_country_leader = {
 	name = "Pavel Bermondt-Avalov"

@@ -2,30 +2,40 @@ ideas = {
 
 country = {
 
-Red_Army_Desertion_idea = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
+RUS_army_disloyalty = {
 			picture = CIB_OrduVatan
 			modifier = {
-			army_attack_factor = -0.20
-			army_defence_factor = -0.20	
-			stability_weekly = -0.010
-			political_power_gain = -0.50
-			stability_factor = -0.7
-			war_support_factor = -0.5
-            surrender_limit = -0.25
+				recruitable_population_factor = -0.25
+				army_attack_factor = -0.20
+				army_defence_factor = -0.20	
+				stability_weekly = -0.010
+				political_power_gain = -0.50
+				stability_factor = -0.2
+				war_support_factor = -0.25
+				surrender_limit = -0.25
 			}
 		}
-White_Russian_idea = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
+RUS_mass_terror = {
 			picture = CIB_OrduVatan
 			modifier = {
-			army_attack_factor = 0.10
-			army_defence_factor = 0.10	
-			war_support_factor = 0.2
-			ai_focus_aggressive_factor = 10
+				industry_repair_factor = -0.15
+				production_speed_buildings_factor = -0.35
+				industry_repair_factor = -0.35
+				recruitable_population_factor = -0.1
+				stability_weekly = -0.03
+				war_support_weekly = -0.03
+				political_power_gain = -0.25
 			}
 		} 		
-
+RUS_pogromes = {
+			picture = CIB_OrduVatan
+			modifier = {
+				stability_weekly = -0.01
+				war_support_weekly = -0.01
+				recruitable_population_factor = -0.05
+				political_power_gain = -0.15
+			}
+		}
 }
 
 
