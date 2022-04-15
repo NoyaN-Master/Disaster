@@ -30,35 +30,3 @@ country_event = {
 		}
 	}
 }
-country_event = {
-	id = fiu.1
-	immediate = { log = "[GetDateText]: [Root.GetName]: event fiu.1" }
-	title = fiu.1.t
-	desc = fiu.1.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-	
-	
-	is_triggered_only = yes
-	
-	fire_only_once = yes
-
-	
-	option = {
-		name = fiu.1.a
-		hidden_effect = {
-		white_peace = SOR
-		transfer_state = 44
-		transfer_state = 105
-		transfer_state = 802
-		BLG = { 
-		 white_peace = SOR
-		 transfer_state = 106
-		 transfer_state = 803
-		}
-		SOR = {
-		country_event = { id = worldwar.36 days = 10}	
-		}
-        }
-		}
-	}

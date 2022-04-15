@@ -1322,10 +1322,6 @@ focus = {
         prerequisite = { focus = NGU_Project_Belarus}				
 		completion_reward = {
 		declare_war_on = {
-    	target = FRI
-    	type = annex_everything
-		}
-		declare_war_on = {
     	target = UKR
     	type = annex_everything
 		}
@@ -1346,10 +1342,6 @@ focus = {
 		completion_reward = {
 		declare_war_on = {
     	target = RUS
-    	type = annex_everything
-		}
-		declare_war_on = {
-    	target = SOV
     	type = annex_everything
 		}
 		WLF = {

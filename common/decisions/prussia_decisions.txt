@@ -545,14 +545,9 @@ PRE_Ukraine_Goltz = {
         }    
         complete_effect = {
         release = UKR
-        release = FRI    
         BLT = {
         annex_country = {
         target = UKR
-        transfer_troops = yes
-        }
-        annex_country = {
-        target = FRI
         transfer_troops = yes
         }
         set_cosmetic_tag = BLT_Ostland
@@ -579,10 +574,6 @@ PRE_Declare_UKR = {
         complete_effect = {
         declare_war_on = {
         target = UKR
-        type = annex_everything
-        }
-        declare_war_on = {
-        target = FRI
         type = annex_everything
         }
         }

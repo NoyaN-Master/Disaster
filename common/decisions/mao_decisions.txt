@@ -69,8 +69,8 @@ italy_decision_cat = {
 		 transfer_state = 803
 		}
 		SOR = {
-		country_event = { id = fiu.1 }	
-		}
+            country_event = { id = worldwar.36 days = 10 }	
+        }
         }
         ai_will_do = {
 			factor = 1000

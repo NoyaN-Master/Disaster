@@ -443,10 +443,6 @@ country_event = { # Berling Becomes Capital
 	has_war_with = UKR
 	UKR = {
 	surrender_progress > 0.7
-	}
-	has_war_with = FRI
-	FRI = {
-	surrender_progress > 0.7
 	}	
 	}
 	}
@@ -460,15 +456,10 @@ country_event = { # Berling Becomes Capital
 		name = ngu.12.a
 		ai_chance = { factor = 100}
 		white_peace = UKR
-		white_peace = FRI
 		WLF = {
 			
 		annex_country = {
     	target = UKR
-    	transfer_troops = yes
-		}
-		annex_country = {
-    	target = FRI
     	transfer_troops = yes
 		}
 		add_stability = 0.10

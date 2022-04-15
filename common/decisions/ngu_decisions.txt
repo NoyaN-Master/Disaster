@@ -544,9 +544,6 @@ NGU_UKR_deal = {
         UKR = {
         country_exists = no   
         }
-        FRI = {
-        country_exists = no    
-        }
         WLF = {
         country_exists = yes    
         }
@@ -558,12 +555,7 @@ NGU_UKR_deal = {
         }    
         complete_effect = {
         release = UKR
-        release = FRI
         WLF = {
-         annex_country = {
-            target = FRI
-            transfer_troops = yes
-            }
          annex_country = {
             target = UKR
             transfer_troops = yes
