@@ -103,7 +103,9 @@ NGU_Komisariat_Baltics = {
         }
         available  = {
         NOT = {
-        country_exists = BLT    
+        country_exists = LIT
+        country_exists = LAT
+        country_exists = EST
         }    
         owns_state = 13
         owns_state = 12
@@ -147,22 +149,20 @@ NGU_Komisariat_Baltics = {
                 }
             }
             create_country_leader = {
-	        name = "Alfred Rosenberg"
-	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        picture   = "Portrait_Germany_Alfred_rosenberg_fuhrer.tga"
-	        expire = "1965.1.1"
-	        ideology = national_socialist_subid
-	        traits = {
-	        }
+                name = "Alfred Rosenberg"
+                picture   = "Portrait_Germany_Alfred_rosenberg_fuhrer.tga"
+                expire = "1965.1.1"
+                ideology = national_socialist_subid
+                traits = {
+                }
             }
             create_country_leader = {
-	        name = "Alfred Rosenberg"
-	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        picture   = "Portrait_Germany_Alfred_rosenberg_fuhrer.tga"
-	        expire = "1965.1.1"
-	        ideology = natsoc_hitler
-	        traits = {
-	        }
+                name = "Alfred Rosenberg"
+                picture   = "Portrait_Germany_Alfred_rosenberg_fuhrer.tga"
+                expire = "1965.1.1"
+                ideology = natsoc_hitler
+                traits = {
+                }
             }
         }
 		hidden_effect = {
