@@ -1,0 +1,29 @@
+focus_tree = {
+	id = russia_start_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ANK
+		}
+	}
+    default = no
+	continuous_focus_position = { x = 100 y = 10000 }
+
+	focus = {
+		id = RUS_start
+		icon = ""
+		x = 12
+		y = 0
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		select_effect = {
+		}
+		completion_reward = {
+        }
+	}
+
+
+}    
