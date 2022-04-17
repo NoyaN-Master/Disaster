@@ -36,6 +36,38 @@ RUS_pogromes = {
 				political_power_gain = -0.15
 			}
 		}
+RUS_mass_riots = {
+			picture = CIB_OrduVatan
+			modifier = {
+				stability_weekly = -0.01
+				war_support_weekly = -0.01
+				production_speed_buildings_factor = -0.5 
+				industrial_capacity_factory = -0.3
+				industrial_capacity_dockyard = 0.3
+				consumer_goods_factor = 0.25
+			}
+		}
+RUS_supreme_leader = {
+			picture = CIB_OrduVatan
+			modifier = {
+				recruitable_population_factor = -0.4
+				political_power_gain_factor = 0.25
+			}
+		}
+RUS_red_clashes = {
+			picture = CIB_OrduVatan
+			modifier = {
+				recruitable_population_factor = -0.4
+				political_power_gain_factor = 0.25
+			}
+		}
+RUS_red_killing = {
+			picture = CIB_OrduVatan
+			modifier = {
+				weekly_manpower = -1250
+				war_support_weekly -0.05
+			}
+		}
 }
 
 

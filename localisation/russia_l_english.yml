@@ -1,5 +1,81 @@
 ﻿l_english:
+#flags and tt
+RUS_CW_TT:0 "§RThe spark has landed, the fire has begun.§!"
+RUS_no_rsp:0 "If a civil war was to break out now we will not be ready. Groups which would have been crushed by a mobilized army may not be..."
+RUS_med_rsp:0 "The army will be prepared just in case, but the people will not be."
+RUS_full_rsp:0 "Some may view this option as drastic and an abuse of power, more may turn to the reds"
+RUS_disaster_tt:0 "§RRussia is doused in gasoline and a spark is falling...§!"
+duma_dissolved:0 "The Duma Has Been Disolved"
+duma_purged:0 "The Duma Has Been Purged"
+RUS_tipping_point:0 "§RHistory repeats itself they say, and it has, what tore Russia apart 10 years prior is now just over the horizon.§!"
+#events
+russia.x.t:0 ""
+russia.x.d:0 ""
+russia.x.a:0 ""
+
+russia.1.t:0 "Jan 21 bombings"
+russia.1.d:0 ""
+russia.1.a:0 "dsadas"
+
+russia.2.t:0 "A Nation Wide Crackdown"
+russia.2.d:0 ""
+russia.2.a:0 "dsadas"
+
+russia.3.t:0 "The Duma"
+russia.3.d:0 ""
+russia.3.a:0 "Dissolved"
+russia.3.b:0 "purged"
+
+russia.4.t:0 "Mass Riots"
+russia.4.d:0 ""
+russia.4.a:0 ""
+
+russia.5.t:0 "Avalov Declares Himself Supreme Ruler"
+russia.5.d:0 ""
+russia.5.a:0 ""
+
+russia.6.t:0 "Reds fight back"
+russia.6.d:0 ""
+russia.6.a:0 ""
+
+russia.7.t:0 "A Duma Without a Spine"
+russia.7.d:0 ""
+russia.7.a:0 ""
+
+russia.8.t:0 "Mass Army Dessertion"
+russia.8.d:0 ""
+russia.8.a:0 ""
+
+russia.9.t:0 "reds organize"
+russia.9.d:0 ""
+russia.9.a:0 ""
+russia.9.b:0 ""
+russia.9.c:0 ""
+
+russia.10.t:0 "CW-START"
+russia.10.d:0 "FOR TESTERS THIS IS THE END THANK YOU!"
+russia.10.a:0 ""
+
+#FOCUS
+RUS_jan21:0 "January 21st Bombings"
+RUS_jan21_desc:0 "January 21st Bombings"
+RUS_red_crackdown:0 "1000 Dead Reds For Every Man Killed"
+RUS_red_crackdown_desc:0 "1000 Dead Reds For Every Man Killed"
+RUS_duma_dissolved:0 "Dissolution of the Duma"
+RUS_duma_dissolved_desc:0 "Dissolution of the Duma"
+RUS_avalov_supleader:0 "Our Supreme Leader Avalov"
+RUS_avalov_supleader_desc:0 "Our Supreme Leader Avalov"
+RUS_disaster:0 "Russia on Fire"
+RUS_disaster_desc:0 "Russia on Fire"
+RUS_duma_purged:0 "A Purged Duma"
+RUS_duma_purged:0 "A Purged Duma"
+RUS_limitless_power:0 "The Duma Opposes Nothing"
+RUS_limitless_power_desc:0 "The Duma Opposes Nothing"
 #Ideas
 RUS_army_disloyalty:0 "Army Disloyalty"
-RUS_mass_terror:0 "Mass Red Terrorism"
+RUS_mass_terror:0 "Mass Terrorism"
 RUS_pogromes:0 "Jewish Relocation Programes"
+RUS_supreme_leader:0 "Supreme Leader Avalov"
+RUS_red_clashes:0 "Clashes with the Reds"
+RUS_red_killing:0 "Cracking Down on Reds"
+RUS_mass_riots:0 "Civil Unrest"

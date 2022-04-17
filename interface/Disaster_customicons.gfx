@@ -1,8 +1,5 @@
 spriteTypes = {
-	spriteType = {
-		name = "GFX_goal_CRW_kurd_autonomy"
-		textureFile = "gfx/interface/goals/CRW_kurd_autonomy.png"
-	}
+
 	SpriteType = {
 		name = "GFX_goal_CRW_kill_atsiz"
 		texturefile = "gfx/interface/goals/CRW_kill_atsiz.png"
@@ -160,8 +157,231 @@ spriteTypes = {
 	SpriteType = {		
 		name = "GFX_goal_generic_anarchy"	
 		texturefile = "gfx/interface/goals/generic_anarchy.png"	
-	}		
+	}	######################################################################################
+
+
+
+
+	spriteType = {
+		name = "GFX_goal_RUS_russia_burn"
+		textureFile = "gfx/interface/goals/RUS_russia_burn.png"
+	}
+	spriteType = {
+		name = "GFX_goal_RUS_supreme_leader"
+		textureFile = "gfx/interface/goals/RUS_supreme_leader.png"
+	}
+	spriteType = {
+		name = "GFX_goal_RUS_dissolve_duma"
+		textureFile = "gfx/interface/goals/RUS_dissolve_duma.png"
+	}
+	spriteType = {
+		name = "GFX_goal_RUS_duma_oppose_nuffing"
+		textureFile = "gfx/interface/goals/RUS_duma_oppose_nuffing.png"
+	}
+	spriteType = {
+		name = "GFX_goal_RUS_control_duma"
+		textureFile = "gfx/interface/goals/RUS_control_duma.png"
+	}
+	spriteType = {
+		name = "GFX_goal_RUS_january_bombings"
+		textureFile = "gfx/interface/goals/RUS_january_bombings.png"
+	}
+	spriteType = {
+		name = "GFX_goal_RUS_1000_purge"
+		textureFile = "gfx/interface/goals/RUS_1000_purge.png"
+	}
+	SpriteType = {		
+		name = "GFX_goal_RUS_1000_purge_shine"	
+		texturefile = "gfx/interface/goals/RUS_1000_purge.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/RUS_1000_purge.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
 			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/RUS_1000_purge.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }
+	SpriteType = {		
+		name = "GFX_goal_RUS_january_bombings_shine"	
+		texturefile = "gfx/interface/goals/RUS_january_bombings.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/RUS_january_bombings.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/RUS_january_bombings.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }
+	SpriteType = {		
+		name = "GFX_goal_RUS_duma_oppose_nuffing_shine"	
+		texturefile = "gfx/interface/goals/RUS_duma_oppose_nuffing.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/RUS_duma_oppose_nuffing.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/RUS_duma_oppose_nuffing.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }
+	SpriteType = {		
+		name = "GFX_goal_RUS_dissolve_duma_shine"	
+		texturefile = "gfx/interface/goals/RUS_dissolve_duma.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/RUS_dissolve_duma.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/RUS_dissolve_duma.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }
+	SpriteType = {		
+		name = "GFX_goal_RUS_supreme_leader_shine"	
+		texturefile = "gfx/interface/goals/RUS_supreme_leader.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/RUS_supreme_leader.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/RUS_supreme_leader.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }
+	SpriteType = {		
+		name = "GFX_goal_RUS_russia_burn_shine"	
+		texturefile = "gfx/interface/goals/RUS_russia_burn.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/RUS_russia_burn.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/RUS_russia_burn.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }		
 	SpriteType = {		
 		name = "GFX_goal_generic_anarchy_shine"	
 		texturefile = "gfx/interface/goals/generic_anarchy.png"	
