@@ -10,24 +10,26 @@ add_ideas = 	one_party_state
 add_ideas = 	interventionism 
 add_ideas = 	semi_industrial_society
 
-set_politics = {
-	ruling_party = liberal
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = no
-}
+1936.1.1 = {
+	set_politics = {
+		ruling_party = authoritarian_democrat
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
 
-set_popularities = {
-	conservative = 0
-	liberal = 100
-	social_democrat = 0
-	libertarian_socialist = 0
-	authoritarian_socialist = 0
-	unisocialist = 0
-	authoritarian_democrat = 0
-	autocratic = 0
-	ultranationalist = 0
-	revolutionary_nationalist = 0
-	esoteric_traditionalist = 0
-	revolutionary_anarchist = 0
+	set_popularities = {
+		conservative = 5
+		liberal = 18
+		social_democrat = 0
+		libertarian_socialist = 9
+		authoritarian_socialist = 0
+		unisocialist = 0
+		authoritarian_democrat = 60
+		autocratic = 5
+		ultranationalist = 2
+		revolutionary_nationalist = 1
+		esoteric_traditionalist = 0
+		revolutionary_anarchist = 0
+	}
 }
