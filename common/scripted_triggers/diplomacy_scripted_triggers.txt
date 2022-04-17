@@ -427,7 +427,6 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 				option = ALWAYS_FREE
 			}
 		}
-		always = no
 	}
 	if = {
 		limit = {

@@ -34,4 +34,11 @@ on_actions = {
             }
         }
     }
+    on_startup = {
+        effect = {
+            ROM = { 
+                country_event = { id = rom.1 }
+            }
+        }
+    }
 }

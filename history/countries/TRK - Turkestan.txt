@@ -9,7 +9,7 @@ set_technology = {
 add_ideas = 	one_party_state 
 add_ideas = 	interventionism 
 add_ideas = 	semi_industrial_society
-1936.1.1 = {
+
 set_politics = {
 	ruling_party = liberal
 	last_election = "1936.1.1"
@@ -30,5 +30,4 @@ set_popularities = {
 	revolutionary_nationalist = 0
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
-}
 }
