@@ -1,20 +1,26 @@
 
 state={
 	id=865
-	name="STATE_865"  
-	manpower = 79108
-	
-	state_category = wasteland
+	name="STATE_865"
 
 	history={
-		owner = WSL
+		owner = TRK
 		buildings = {
-			infrastructure = 1
+			infrastructure = 0
 		}
-		add_core_of = WSL
+		victory_points = {
+			1614 1 
+		}
+		add_core_of = TRK
+		add_claim_by = BAS
+		add_claim_by = TSV
+
 	}
 
 	provinces={
-		1679 1741 1828 4743 4831 7750 7805 10557 10628 10631 10688 12531 12608 12615 12668 13059 
+		1479 1532 1576 1614 4488 4499 4618 10420 12471
 	}
+	manpower=79108
+	buildings_max_level_factor=1.000
+	state_category=wasteland
 }

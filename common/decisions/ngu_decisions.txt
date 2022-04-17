@@ -103,7 +103,9 @@ NGU_Komisariat_Baltics = {
         }
         available  = {
         NOT = {
-        country_exists = BLT    
+        country_exists = LIT
+        country_exists = LAT
+        country_exists = EST
         }    
         owns_state = 13
         owns_state = 12
@@ -147,22 +149,20 @@ NGU_Komisariat_Baltics = {
                 }
             }
             create_country_leader = {
-	        name = "Alfred Rosenberg"
-	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        picture   = "Portrait_Germany_Alfred_rosenberg_fuhrer.tga"
-	        expire = "1965.1.1"
-	        ideology = national_socialist_subid
-	        traits = {
-	        }
+                name = "Alfred Rosenberg"
+                picture   = "Portrait_Germany_Alfred_rosenberg_fuhrer.tga"
+                expire = "1965.1.1"
+                ideology = national_socialist_subid
+                traits = {
+                }
             }
             create_country_leader = {
-	        name = "Alfred Rosenberg"
-	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        picture   = "Portrait_Germany_Alfred_rosenberg_fuhrer.tga"
-	        expire = "1965.1.1"
-	        ideology = natsoc_hitler
-	        traits = {
-	        }
+                name = "Alfred Rosenberg"
+                picture   = "Portrait_Germany_Alfred_rosenberg_fuhrer.tga"
+                expire = "1965.1.1"
+                ideology = natsoc_hitler
+                traits = {
+                }
             }
         }
 		hidden_effect = {
@@ -544,9 +544,6 @@ NGU_UKR_deal = {
         UKR = {
         country_exists = no   
         }
-        FRI = {
-        country_exists = no    
-        }
         WLF = {
         country_exists = yes    
         }
@@ -558,12 +555,7 @@ NGU_UKR_deal = {
         }    
         complete_effect = {
         release = UKR
-        release = FRI
         WLF = {
-         annex_country = {
-            target = FRI
-            transfer_troops = yes
-            }
          annex_country = {
             target = UKR
             transfer_troops = yes
@@ -604,7 +596,7 @@ NGU_Hitler_Field = {
         complete_effect = {
         create_corps_commander = {
 	    name = "Adolf Hitler"
-	    picture = "NGU_Hitler.tga"
+	    picture = "gfx/leaders/NGU/NGU_Hitler.tga"
 	    traits = { trickster brilliant_strategist }
 	    skill = 1
 	    attack_skill = 1

@@ -1,0 +1,1481 @@
+focus_tree = {
+	id = ngpu_tree
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = NGU	}
+	}
+#starting stuff    
+focus = {
+		id = NGU_policies_of_redbaron
+		icon = GFX_goal_red_baron
+		x = 3
+		y = 0
+		cost = 2		
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+focus = {
+		id = NGU_food_for_family
+		icon = GFX_goal_bread_family
+		x = 1
+		y = 1
+		cost = 2
+        prerequisite = { focus = NGU_policies_of_redbaron}				
+		completion_reward = {
+		country_event = { id = ngu.2 days = 1 }
+		}
+	}
+focus = {
+		id = NGU_promote_class_warfare
+		icon = GFX_goal_class_warfare_ngu
+		x = 3
+		y = 1
+		cost = 2
+        prerequisite = { focus = NGU_policies_of_redbaron}				
+		completion_reward = {
+		country_event = { id = ngu.4 days = 1 }
+		}
+	}
+
+focus = {
+		id = NGU_legacy_of_marx
+		icon = GFX_goal_marx_ngu
+		x = 5
+		y = 1
+		cost = 2
+        prerequisite = { focus = NGU_policies_of_redbaron}		
+		completion_reward = {
+		country_event = { id = ngu.3 days = 1 }
+		}
+	}
+
+focus = {
+		id = NGU_question_of_paramilitaries
+		icon = GFX_goal_paramilitary_ngu
+		x = 3
+		y = 2
+		cost = 2
+        prerequisite = { focus = NGU_promote_class_warfare }
+        prerequisite = { focus = NGU_food_for_family}
+        prerequisite = { focus = NGU_legacy_of_marx}		
+		completion_reward = {
+		country_event = { id = ngu.5 days = 1 }
+		}
+	}
+focus = {
+		id = NGU_operation_rote
+		icon = GFX_goal_goebbels_rote
+		x = 3
+		y = 3
+		cost = 2
+        prerequisite = { focus = NGU_question_of_paramilitaries}		
+		completion_reward = {
+		country_event = { id = ngu.6 days = 1 }
+		}
+	}             
+
+####goebbels
+focus = {
+		id = NGU_rise_of_evil
+		icon = GFX_goal_rise_evil
+		x = 12
+		y = 0
+		cost = 1
+		available = { has_government = unisocialist }		
+		completion_reward = {
+		
+		}
+	} 
+focus = {
+		id = NGU_infiltrate_unions
+		icon = GFX_goal_fed_union
+		x = 11
+		y = 1
+		cost = 3
+        prerequisite = { focus = NGU_rise_of_evil }		
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = NGU_libsocs_problem_1
+		add_idea = NGU_libsocs_problem_2	
+		}
+		}
+	}
+focus = {
+		id = NGU_hunt_down_bandits
+		icon = GFX_goal_bandit_fuck
+		x = 10
+		y = 2
+		cost = 3
+        prerequisite = { focus = NGU_infiltrate_unions }		
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = NGU_bandit_army
+		add_idea = NGU_bandit_army_2	
+		}
+		}
+	}    
+focus = {
+		id = NGU_start_centralization
+		icon = GFX_goal_centralize
+		x = 13
+		y = 1
+		cost = 3
+        prerequisite = { focus = NGU_rise_of_evil }	
+		available = { has_completed_focus = NGU_infiltrate_unions }		
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = NGU_libsocs_problem_2
+		add_idea = NGU_libsocs_problem_3
+		}
+		}
+	}
+focus = {
+		id = NGU_choose_NAD
+		icon = GFX_goal_NAD
+		x = 14
+		y = 2
+		cost = 3
+        prerequisite = { focus = NGU_start_centralization }
+		available = { has_completed_focus = NGU_hunt_down_bandits }		
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = NGU_bandit_army_2
+		add_idea = NGU_NAD	
+		}
+		}
+	} 
+focus = {
+		id = NGU_disband_parties
+		icon = GFX_goal_arbeiter
+		x = 12
+		y = 2
+		cost = 3
+        prerequisite = { focus = NGU_start_centralization }
+        prerequisite = { focus = NGU_infiltrate_unions }		
+		completion_reward = {
+		remove_ideas = NGU_libsocs_problem_3
+		}
+	} 
+focus = {
+		id = NGU_national_socialism
+		icon = GFX_goal_goebbels
+		x = 12
+		y = 3
+		cost = 5
+        prerequisite = { focus = NGU_disband_parties }
+        prerequisite = { focus = NGU_hunt_down_bandits }
+        prerequisite = { focus = NGU_choose_NAD }			
+		completion_reward = {
+		set_cosmetic_tag = NGU_goebbels_natsoc
+		remove_ideas = NGU_libsocs_problem_3
+		remove_ideas = NGU_economic_stagnation
+		add_ideas = NGU_NatSoc
+		hidden_effect = {
+		create_country_leader = {
+		name = "Joseph Goebbels"
+		#desc = "NGU_Max_Hoelz_desc"
+		picture = "gfx/leaders/NGU/NGU_Goebbels_2.tga"
+		expire = "2020.1.1"
+		ideology = national_socialist_subid
+		traits = {
+		}
+		}
+		}
+		complete_national_focus = NGU_Die_Wacht_am_Ost
+		}
+	}
+focus = {
+		id = NGU_nationalist_economy
+		icon = GFX_goal_IZM_our_great_homeland
+		x = 14
+		y = 4
+		cost = 6
+        prerequisite = { focus = NGU_national_socialism }			
+		completion_reward = {
+		random_owned_state = {
+		add_building_construction = {
+    	type = industrial_complex
+    	level = 2
+   		instant_build = yes
+		}
+		add_building_construction = {
+    	type = arms_factory
+    	level = 2
+   		instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 4
+		}
+		random_owned_state = {
+		add_building_construction = {
+    	type = industrial_complex
+    	level = 2
+   		instant_build = yes
+		}
+		add_building_construction = {
+    	type = arms_factory
+    	level = 2
+   		instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 4
+		}
+		}
+	}
+focus = {
+		id = NGU_blood_and_soil
+		icon = GFX_goal_blutboden
+		x = 13
+		y = 5
+		cost = 6
+        prerequisite = { focus = NGU_nationalist_economy }
+        prerequisite = { focus = NGU_control_the_media }				
+		completion_reward = {
+		add_ideas = NGU_Blood_Soil
+		}
+	}    
+focus = {
+		id = NGU_unser_kampf
+		icon = GFX_goal_unserkampf
+		x = 10
+		y = 4
+		cost = 4
+        prerequisite = { focus = NGU_national_socialism }			
+		completion_reward = {
+		add_ideas = NGU_Unser_Kampf
+		add_stability = 0.05
+		}
+	}
+focus = {
+		id = NGU_destroy_syndies
+		icon = GFX_goal_end_degenerates
+		x = 11
+		y = 5
+		cost = 4
+        prerequisite = { focus = NGU_unser_kampf }
+        prerequisite = { focus = NGU_control_the_media }				
+		completion_reward = {
+		add_timed_idea = {
+    	idea = NGU_Destroy_Degenerates
+    	days = 90
+		}
+		}
+	}
+focus = {
+		id = NGU_pan_germanism
+		icon = GFX_goal_pangerman
+		x = 12
+		y = 6
+		cost = 7
+        prerequisite = { focus = NGU_destroy_syndies }
+        prerequisite = { focus = NGU_blood_and_soil }				
+		completion_reward = {
+		NGU = {
+		add_state_claim = 56
+		add_state_claim = 57
+		add_state_claim = 55
+		add_state_claim = 54
+		add_state_claim = 53
+		add_state_claim = 52
+		add_state_claim = 50
+		add_state_claim = 819
+		add_state_claim = 42
+		add_state_claim = 51
+		add_state_claim = 28
+		add_state_claim = 36
+		add_state_claim = 35
+		add_state_claim = 7
+		add_state_claim = 58
+		add_state_claim = 826
+		add_state_claim = 61
+		add_state_claim = 62
+		add_state_claim = 64
+		add_state_claim = 60
+		add_state_claim = 68
+		add_state_claim = 66
+		add_state_claim = 60
+		add_state_claim = 67
+		add_state_claim = 63
+		add_state_claim = 5
+		add_state_claim = 783
+		add_state_claim = 809
+		add_state_claim = 85
+		add_state_claim = 813
+		add_state_claim = 152
+		add_state_claim = 4
+		add_state_claim = 39
+		add_state_claim = 811
+		add_state_claim = 102
+		add_state_claim = 69
+		add_state_claim = 74
+		add_state_claim = 153
+		add_state_claim = 880
+		}
+		}
+	}
+focus = {
+		id = NGU_choose_strasser
+		icon = GFX_goal_chancellor_strasser
+		x = 11
+		y = 7
+		cost = 3
+        prerequisite = { focus = NGU_pan_germanism }
+        prerequisite = { focus = NGU_militarism }
+        prerequisite = { focus = NGU_denounce_jewry }
+		available = { always = no }											
+		completion_reward = {
+		}
+	}
+focus = {
+		id = NGU_strasser_banner
+		icon = GFX_goal_strasser_first
+		x = 10
+		y = 8
+		cost = 7
+        prerequisite = { focus = NGU_choose_strasser }								
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = NGU_NatSoc
+		add_idea = NGU_Strasserism
+		}
+		hidden_effect = {
+		create_country_leader = {
+		name = "Joseph Goebbels"
+		#desc = "NGU_Max_Hoelz_desc"
+		picture = "gfx/leaders/NGU/NGU_Goebbels_Strasser.tga"
+		expire = "2020.1.1"
+		ideology = strasserism
+		traits = {
+		}
+		}
+		}
+		}
+	}
+focus = {
+		id = NGU_strasser_complete_industry
+		icon = GFX_goal_iron_towers
+		x = 10
+		y = 9
+		cost = 7
+        prerequisite = { focus = NGU_strasser_banner }								
+		completion_reward = {
+		add_ideas = NGU_Strasserist_Artitechture
+		}
+	}
+focus = {
+		id = NGU_labor_camps
+		icon = GFX_goal_NGU_Industry
+		x = 12
+		y = 8
+		cost = 7
+        prerequisite = { focus = NGU_choose_strasser focus = NGU_choose_hitler }
+		completion_reward = {
+		add_stability = -0.10
+		random_owned_state = {
+		add_building_construction = {
+    	type = industrial_complex
+    	level = 1
+   		instant_build = yes
+		}
+		add_building_construction = {
+    	type = arms_factory
+    	level = 1
+   		instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 4
+		}
+		random_owned_state = {
+		add_building_construction = {
+    	type = industrial_complex
+    	level = 2
+   		instant_build = yes
+		}
+		add_building_construction = {
+    	type = arms_factory
+    	level = 2
+   		instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 4
+		}
+		}
+	}
+focus = {
+		id = NGU_autohban
+		icon = GFX_goal_goebbels_roads
+		x = 12
+		y = 9
+		cost = 7
+        prerequisite = { 
+        focus = NGU_labor_camps    
+        } 								
+		completion_reward = {
+		random_owned_state = {
+		add_building_construction = {
+    	type = infrastructure
+    	level = 10
+   		instant_build = yes
+		}
+		random_owned_state = {
+		add_building_construction = {
+    	type = infrastructure
+    	level = 10
+   		instant_build = yes
+		}
+		}
+		}
+		random_owned_state = {
+		add_building_construction = {
+    	type = infrastructure
+    	level = 10
+   		instant_build = yes
+		}
+		random_owned_state = {
+		add_building_construction = {
+    	type = infrastructure
+    	level = 10
+   		instant_build = yes
+		}
+		}
+		}
+		}
+	}
+focus = {
+		id = NGU_Expand_Academia
+		icon = GFX_goal_goebbels_academy
+		x = 12
+		y = 10
+		cost = 7
+        prerequisite = { 
+        focus = NGU_autohban    
+        } 								
+		completion_reward = {
+		add_ideas = NGU_Academia
+		}
+	}
+focus = {
+		id = NGU_Deutscher_Arbeiter_Staat
+		icon = GFX_goal_goebbels_final
+		x = 12
+		y = 11
+		cost = 1
+        prerequisite = { 
+        focus = NGU_strasser_welfare
+        focus = NGU_german_history    
+        }
+prerequisite = { 
+        focus = NGU_Expand_Academia
+        }     										
+		completion_reward = {
+		
+		}
+	}                    
+focus = {
+		id = NGU_strasser_welfare
+		icon = GFX_goal_strasser_labor
+		x = 10
+		y = 10
+		cost = 7
+        prerequisite = { focus = NGU_strasser_complete_industry }								
+		completion_reward = {
+		add_popularity = {
+    	ideology = unisocialist
+    	popularity = 0.3
+		}
+		add_stability = 0.05
+		swap_ideas = {
+		remove_idea = NGU_Strasserism
+		add_idea = 	NGU_Strasserism_2
+		}
+		}
+	}             
+focus = {
+		id = NGU_choose_hitler
+		icon = GFX_goal_hitler_chancellor
+		x = 13
+		y = 7
+		cost = 3
+        prerequisite = { focus = NGU_pan_germanism }
+        prerequisite = { focus = NGU_militarism }
+        prerequisite = { focus = NGU_denounce_jewry }
+		available = { always = no }								
+		completion_reward = {
+		}
+	}
+## last focuses
+focus = {
+		id = NGU_Heydrich_Ending
+		icon = GFX_goal_NGU_Heydrich_End
+		x = 16
+		y = 13
+		cost = 8
+        prerequisite = { focus = NGU_Deutscher_Arbeiter_Staat }
+		available = { always = no }								
+		completion_reward = {
+		}
+	}
+focus = {
+		id = NGU_Knightly_Military
+		icon = GFX_goal_NGU_Toten
+		x = 15
+		y = 14
+		cost = 8
+        prerequisite = { focus = NGU_Heydrich_Ending }
+							
+		completion_reward = {
+		add_ideas = NGU_Knightly_Military	
+		}
+	}
+focus = {
+		id = NGU_Revive_Thule
+		icon = GFX_goal_NGU_Thule
+		x = 17
+		y = 14
+		cost = 8
+        prerequisite = { focus = NGU_Heydrich_Ending }
+		
+		completion_reward = {
+		add_ideas = NGU_Thule
+		}
+	}
+focus = {
+		id = NGU_Lessons_Russland
+		icon = GFX_goal_NGU_Russland
+		x = 16
+		y = 15
+		cost = 8
+        prerequisite = { focus = NGU_Knightly_Military }
+		prerequisite = { focus = NGU_Revive_Thule }
+									
+		completion_reward = {
+		country_event = { id = ngu.18}	
+		}
+	}
+focus = {
+		id = NGU_Soldaten_Europa
+		icon = GFX_goal_NGU_soldaten_europa
+		x = 16
+		y = 16
+		cost = 8
+        prerequisite = { focus = NGU_Lessons_Russland }
+		completion_reward = {
+		custom_effect_tooltip = SoldatenEvropa_tt	
+		}
+	}				
+focus = {
+		id = NGU_Nazi_Ending
+		icon = GFX_goal_NGU_Hitler_End
+		x = 12
+		y = 13
+		cost = 8
+        prerequisite = { focus = NGU_Deutscher_Arbeiter_Staat }
+				available = { always = no }
+		completion_reward = {
+		}
+	}
+focus = {
+		id = NGU_People_Fuhrer
+		icon = GFX_goal_NGU_Hitleryouth
+		x = 13
+		y = 14
+		cost = 8
+        prerequisite = { focus = NGU_Nazi_Ending }							
+		completion_reward = {
+			add_ideas = NGU_HitlerYouth
+		}
+	}
+focus = {
+		id = NGU_Ideologe
+		icon = GFX_goal_NGU_aryans
+		x = 11
+		y = 14
+		cost = 8
+        prerequisite = { focus = NGU_Nazi_Ending }						
+		completion_reward = {
+		add_ideas = NGU_Race	
+		}
+	}
+focus = {
+		id = NGU_Clean_Reds
+		icon = GFX_goal_NGU_Left
+		x = 12
+		y = 15
+		cost = 8
+        prerequisite = { focus = NGU_People_Fuhrer }
+		prerequisite = { focus = NGU_Ideologe }						
+		completion_reward = {
+		add_timed_idea = {
+		idea = NGU_pacify_1
+		days = 120	
+		}	
+		}
+	}
+focus = {
+		id = NGU_Soldaten_Germania
+		icon = GFX_goal_NGU_soldaten_germany
+		x = 12
+		y = 16
+		cost = 8
+        prerequisite = { focus = NGU_Clean_Reds }
+								
+		completion_reward = {
+		custom_effect_tooltip = SoldatenGermania_tt	
+		}
+	}
+						
+focus = {
+		id = NGU_Strasserist_Ending
+		icon = GFX_goal_NGU_Strasser_End
+		x = 8
+		y = 13
+		cost = 8
+        prerequisite = { focus = NGU_Deutscher_Arbeiter_Staat }
+						available = { always = no }		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = NGU_Absorb_Right
+		icon = GFX_goal_NGU_Right
+		x = 7
+		y = 14
+		cost = 8
+        prerequisite = { focus = NGU_Strasserist_Ending }
+										
+		completion_reward = {
+		add_timed_idea ={idea = NGU_pacify_2 days = 120}
+	}
+	}
+focus = {
+		id = NGU_Our_Revolution
+		icon = GFX_goal_NGU_Marx
+		x = 8
+		y = 15
+		cost = 8
+        prerequisite = { focus = NGU_Absorb_Right }
+		prerequisite = { focus = NGU_Reichsfuhrer_Goebbels }
+								
+		completion_reward = {
+		add_ideas = NGU_Revolution	
+		}
+	}
+focus = {
+		id = NGU_Soldaten_Rot
+		icon = GFX_goal_NGU_rot
+		x = 8
+		y = 16
+		cost = 2
+        prerequisite = { focus = NGU_Our_Revolution }
+								
+		completion_reward = {
+		custom_effect_tooltip = SoldatenRot_tt	
+		}
+	}		
+focus = {
+		id = NGU_Reichsfuhrer_Goebbels
+		icon = GFX_goal_NGU_Reichs
+		x = 9
+		y = 14
+		cost = 8
+        prerequisite = { focus = NGU_Strasserist_Ending }
+										
+		completion_reward = {
+		add_ideas = NGU_Fyurer	
+		}
+	}					
+focus = {
+		id = NGU_unite_the_nation
+		icon = GFX_goal_hitler_first
+		x = 14
+		y = 8
+		cost = 4
+        prerequisite = { focus = NGU_choose_hitler }								
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = NGU_NatSoc
+		add_idea = NGU_NatSoc_Hitler
+		}
+		hidden_effect = {
+		create_country_leader = {
+		name = "Joseph Goebbels"
+		#desc = "NGU_Max_Hoelz_desc"
+		picture = "gfx/leaders/NGU/NGU_Goebbels_Hitler.tga"
+		expire = "2020.1.1"
+		ideology = national_socialist_subid
+		traits = {
+		}
+		}
+		}
+		}
+	}
+focus = {
+		id = NGU_total_war
+		icon = GFX_goal_fund_nad
+		x = 14
+		y = 9
+		cost = 7
+        prerequisite = { focus = NGU_unite_the_nation }								
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = NGU_Official_Military
+		add_idea = NGU_Official_Military_Hitler	
+		}
+		}
+	}
+focus = {
+		id = NGU_german_history
+		icon = GFX_goal_hitler_conan
+		x = 14
+		y = 10
+		cost = 3
+        prerequisite = { focus = NGU_total_war }								
+		completion_reward = {
+		add_stability = 0.10
+		}
+	}                     
+ focus = {
+		id = NGU_militarism
+		icon = GFX_goal_militarism
+		x = 10
+		y = 6
+		cost = 8
+        prerequisite = { focus = NGU_destroy_syndies }				
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = NGU_NAD 
+		add_idea = 	NGU_Official_Military
+		}
+		}
+	}       
+focus = {
+		id = NGU_control_the_media
+		icon = GFX_goal_propaganad
+		x = 12
+		y = 4
+		cost = 6
+        prerequisite = { focus = NGU_national_socialism }
+		completion_reward = {
+		add_ideas = NGU_Propaganda_Ministry
+		}
+	}
+focus = {
+		id = NGU_denounce_jewry
+		icon = GFX_goal_hate_jews
+		x = 14
+		y = 6
+		cost = 3
+        prerequisite = { focus = NGU_blood_and_soil }				
+		completion_reward = {
+		add_ideas = NGU_Antisemitism
+		}
+	}
+##FP
+
+focus = {
+		id = NGU_Die_Wacht_am_Ost
+		icon = GFX_goal_NGU_ost
+		x = 20
+		y = 0
+		cost = 3
+		available = { always = no }				
+		completion_reward = {
+		add_war_support = 0.20
+		}
+	}
+focus = {
+		id = NGU_Expand_DAB_Prussia
+		icon = GFX_goal_IZM_unisoc_Economy
+		x = 22
+		y = 1
+		cost = 3
+        prerequisite = { focus = NGU_Die_Wacht_am_Ost}				
+		completion_reward = {
+		PRE = {
+		add_timed_idea = {
+		idea = PRE_DAB_effect
+		days = 45	
+		}	
+		}
+		}
+	}
+focus = {
+		id = NGU_Mecklenburg_Crisis
+		icon = GFX_goal_NGU_mecklenburg
+		x = 20
+		y = 2
+		
+		cost = 3
+        prerequisite = { focus = NGU_Die_Wacht_am_Ost}
+		available = { always = no }				
+		completion_reward = {
+		
+		
+		}
+	}
+focus = {
+		id = NGU_Operation_Piast
+		icon = GFX_goal_NGU_Piast
+		x = 21
+		y = 3
+		cost = 7
+        prerequisite = { focus = NGU_Mecklenburg_Crisis}
+		available = { 
+		has_war = no
+		}				
+		completion_reward = {
+		custom_effect_tooltip = NGU_piast_tt	
+		declare_war_on = {
+    	target = PLN
+    	type = annex_everything
+		}
+		}
+	}	
+focus = {
+		id = NGU_Operation_Teutonic_Angriff
+		icon = GFX_goal_NGU_Teuton
+		x = 20
+		y = 4
+		cost = 7
+        prerequisite = { focus = NGU_Operation_Piast}
+		prerequisite = { focus = NGU_Operation_Sudflanke}
+		available = { 
+		has_war = no
+		}						
+		completion_reward = {
+			custom_effect_tooltip = NGU_baltics_tt
+		declare_war_on = {
+    	target = BLT
+    	type = annex_everything
+		}	
+		}
+	}
+focus = {
+		id = NGU_Operation_Sudflanke
+		icon = GFX_goal_NGU_Bavaria
+		x = 19
+		y = 3
+		cost = 7
+        prerequisite = { focus = NGU_Mecklenburg_Crisis}
+		available = { 
+		has_war = no
+		}				
+		completion_reward = {
+		custom_effect_tooltip = NGU_sud_tt		
+		declare_war_on = {
+    	target = BAY
+    	type = annex_everything
+		}
+		declare_war_on = {
+    	target = SAX
+    	type = annex_everything
+		}
+		declare_war_on = {
+    	target = AUT
+    	type = annex_everything
+		}
+		}
+	}
+focus = {
+		id = NGU_Cross_The_Rhine
+		icon = GFX_goal_NGU_rhine
+		x = 20
+		y = 5
+		cost = 10
+        prerequisite = { focus = NGU_Operation_Teutonic_Angriff}
+		available = { 
+		has_war = no
+		}				
+		completion_reward = {
+		custom_effect_tooltip = NGU_france_tt	
+		add_timed_idea = {
+		idea = NGU_CrossTheRhine
+		days = 30	
+		}
+		declare_war_on = {
+    	target = RHN
+    	type = annex_everything
+		}
+		}
+	}
+focus = {
+		id = NGU_Strasser_Agenda
+		icon = GFX_goal_NGU_Strasser
+		x = 17
+		y = 6
+		cost = 1
+		available = {
+		has_government = unisocialist	
+		}
+        prerequisite = { focus = NGU_Cross_The_Rhine}				
+		completion_reward = {
+		create_faction = STRASSER_FACTION
+		}
+	}
+focus = {
+		id = NGU_Intervene_Belarus
+		icon = GFX_goal_NGU_Belarus2
+		x = 17
+		y = 7
+		cost = 5
+		available = {
+		has_government = unisocialist
+		has_war = no		
+		}
+        prerequisite = { focus = NGU_Strasser_Agenda}				
+		completion_reward = {
+		declare_war_on = {
+    	target = WHR
+    	type = annex_everything
+		}
+		WHR = {
+        every_owned_state = {
+        add_core_of = NGU
+        }	
+        }
+		}
+	}
+	focus = {
+		id = NGU_Intervene_Ukraine
+		icon = GFX_goal_NGU_Ukraine2
+		x = 17
+		y = 8
+		cost = 6
+		available = {
+		has_government = unisocialist
+		has_war = no		
+		}
+        prerequisite = { focus = NGU_Intervene_Belarus}				
+		completion_reward = {
+		declare_war_on = {
+    	target = UKR
+    	type = annex_everything
+		}
+		UKR = {
+        every_owned_state = {
+        add_core_of = NGU
+        }	
+        }
+		}
+	}
+	focus = {
+		id = NGU_Reach_Stalin
+		icon = GFX_goal_NGU_Stalin
+		x = 17
+		y = 9
+		cost = 5
+		available = {
+		has_government = unisocialist
+		has_war = no	
+		}
+        prerequisite = { focus = NGU_Intervene_Ukraine}				
+		completion_reward = {
+		SRF = {
+		country_event = { id = ngu.25 days = 1 }	
+		}
+		}
+	}
+	focus = {
+		id = NGU_Revenge_For_War
+		icon = GFX_goal_NGU_Russia2
+		x = 17
+		y = 10
+		cost = 10
+		available = {
+		has_government = unisocialist	
+		has_war = no	
+		}
+        prerequisite = { focus = NGU_Reach_Stalin}				
+		completion_reward = {
+		declare_war_on = {
+    	target = RUS
+    	type = annex_everything
+		}
+		add_timed_idea = {
+		idea = NGU_RussianWar
+		days = 95	
+		}	
+		}
+	}
+	focus = {
+		id = NGU_House_Capitalism
+		icon = GFX_goal_NGU_France
+		x = 17
+		y = 11
+		cost = 10
+		available = {
+		has_government = unisocialist
+		has_war = no	
+		SOV  {
+		is_puppet_of = NGU	
+		}	
+		}
+        prerequisite = { focus = NGU_Revenge_For_War}				
+		completion_reward = {
+		complete_national_focus = NGU_Strasserist_Ending	
+		declare_war_on = {
+    	target = FRE
+    	type = annex_everything
+		}
+		add_timed_idea = {
+		idea = NGU_FrenchSaxons
+		days = 95	
+		}
+		ENG = {
+		country_event = { id = ngu.19 }	
+		}
+		NGU = {
+		set_country_flag = WW2_happened	
+		}	
+		}
+	}
+focus = {
+		id = NGU_Hitler_Agenda
+		icon = GFX_goal_NGU_Hitler_FP
+		x = 24
+		y = 6
+		cost = 7
+		available = {
+		always = no	
+		}
+        prerequisite = { focus = NGU_Cross_The_Rhine}				
+		completion_reward = {
+		create_faction = HITLER_FACTION
+		}
+	}
+
+focus = {
+		id = NGU_Western_Expansion
+		icon = GFX_goal_NGU_WestExpand
+		x = 28
+		y = 7
+		cost = 1
+		available = {
+		has_government = revolutionary_nationalist
+		NGU = {	
+		has_war = no
+		}
+		WLF = {
+		is_puppet_of = NGU
+		owns_state = 217	
+		}
+		}
+        prerequisite = { focus = NGU_Hitler_Agenda}				
+		completion_reward = {
+		custom_effect_tooltip = NGU_Western_TT	
+		}
+	}
+
+focus = {
+		id = NGU_The_Charlamagne_Project
+		icon = GFX_goal_NGU_steel
+		x = 29
+		y = 8
+		cost = 7
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_Western_Expansion}				
+		completion_reward = {
+		custom_effect_tooltip = NGU_Charlamagne_TT
+		create_corps_commander  = {
+		name = "Ernst Junger"
+		picture = "gfx/leaders/NGU/Portrait_Mittelafrika_Ernst_Junger.tga"
+		traits = {  }
+		skill = 3
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+		}	
+		}
+	}
+focus = {
+		id = NGU_Guderian_Project
+		icon = GFX_goal_NGU_guderian
+		x = 30
+		y = 9
+		cost = 7
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_The_Charlamagne_Project}				
+		completion_reward = {
+		add_ideas = PRE_guderian_doctrine
+			add_tech_bonus = {
+				name = PRE_armor_tech
+				bonus = 0.5
+				uses = 2
+				category = armor
+			}		
+		}	
+	}
+focus = {
+		id = NGU_Charlamagne_Landing
+		icon = GFX_goal_NGU_Nether
+		x = 28
+		y = 9
+		cost = 7
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_The_Charlamagne_Project}				
+		completion_reward = {
+		puppet = CLM
+		CLM = {
+		transfer_state = 7
+		transfer_state = 35
+		transfer_state = 36
+		add_state_core = 7
+		add_state_core = 35
+		add_state_core = 36
+		load_oob = Junger_oob
+		}	
+		}
+	}
+focus = {
+		id = NGU_Charlamagne_Revolt
+		icon = GFX_goal_NGU_Belgium
+		x = 29
+		y = 10
+		cost = 7
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_Guderian_Project }
+		prerequisite = { focus = NGU_Charlamagne_Landing }				
+		completion_reward = {
+		CLM = {
+		transfer_state = 6
+		add_state_core = 6
+		add_state_core = 34
+		add_state_claim = 34
+		declare_war_on = {
+    	target = BLI
+    	type = annex_everything
+		}
+		}
+		add_to_war = { 
+    	targeted_alliance = CLM 
+    	enemy = BLI
+    	hostility_reason = asked_to_join
+		}	
+		}
+	}
+focus = {
+		id = NGU_Avenge_The_Saxons
+		icon = GFX_goal_NGU_TeutonWAR
+		x = 29
+		y = 11
+		cost = 10
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+		prerequisite = { focus = NGU_Charlamagne_Revolt}				
+		completion_reward = {
+		custom_effect_tooltip = NGU_Saxons_TT	
+		add_timed_idea = {
+		idea = NGU_FrenchSaxons
+		days = 50
+		}	
+		declare_war_on = {
+    	target = FRE
+    	type = annex_everything
+		}
+		CLM = {
+		declare_war_on = {
+    	target = FRE
+    	type = annex_everything
+		}
+		add_timed_idea = {
+		idea = NGU_FrenchSaxons
+		days = 50
+		}	
+		}
+		ENG = {
+		country_event = { id = ngu.19 }	
+		}
+		hidden_effect = {
+		country_event = { id = ngu.16 days = 40 }
+		NGU = {
+		set_country_flag = WW2_happened	
+		}	
+		}	
+		}
+	}	
+
+
+focus = {
+		id = NGU_Heia_Safari
+		icon = GFX_goal_NGU_Safari
+		x = 21
+		y = 7
+		cost = 1
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_Hitler_Agenda}				
+		completion_reward = {
+		custom_effect_tooltip = NGU_Safari_tt
+		}
+	}
+focus = {
+		id = NGU_Eastern_Plan
+		icon = GFX_goal_NGU_Easternplan
+		x = 24
+		y = 7
+		cost = 2
+		available = {
+		has_government = revolutionary_nationalist
+		SWA = {
+		has_country_flag = DEU_FORMED	
+		}	
+		}
+        prerequisite = { focus = NGU_Hitler_Agenda}				
+		completion_reward = {
+		custom_effect_tooltip = NGU_Great_Conquest_tt
+		}
+	}
+focus = {
+		id = NGU_The_Blonde_Beast
+		icon = GFX_goal_NGU_Heydrich
+		x = 24
+		y = 8
+		cost = 5
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_Eastern_Plan}				
+		completion_reward = {
+		create_corps_commander  = {
+		name = "Reinhard Heydrich"
+		picture = "gfx/leaders/NGU/NGU_Heydrich.tga"
+		traits = {  }
+		skill = 3
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+		}
+		add_war_support = 0.05
+		}
+	}	
+	focus = {
+		id = NGU_Project_Belarus
+		icon = GFX_goal_NGU_Belarus
+		x = 24
+		y = 9
+		cost = 8
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_The_Blonde_Beast}				
+		completion_reward = {
+		country_event = { id = ngu.11 days = 1 }
+		}
+	}
+	focus = {
+		id = NGU_Minsk_Military_Base
+		icon = GFX_goal_NGU_Minsk
+		x = 24
+		y = 10
+		cost = 8
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_Project_Belarus}				
+		completion_reward = {
+		206 = {
+		add_building_construction = {
+    	type = industrial_complex
+    	level = 2
+   		instant_build = yes
+		}
+		add_building_construction = {
+    	type = arms_factory
+    	level = 2
+   		instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 4
+		}
+		206 = {
+		add_building_construction = {
+    	type = infrastructure
+    	level = 4
+   		instant_build = yes
+		}
+		add_extra_state_shared_building_slots = 4
+		}
+		}
+	}
+
+	focus = {
+		id = NGU_Ukrainian_Annex
+		icon = GFX_goal_NGU_Ukraine
+		x = 26
+		y = 10
+		cost = 8
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_Project_Belarus}				
+		completion_reward = {
+		declare_war_on = {
+    	target = UKR
+    	type = annex_everything
+		}
+		}
+	}
+
+	focus = {
+		id = NGU_The_Great_Russian_War
+		icon = GFX_goal_NGU_Russian_War
+		x = 25
+		y = 11
+		cost = 10
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_Ukrainian_Annex}
+		prerequisite = { focus = NGU_Minsk_Military_Base}			
+		completion_reward = {
+		declare_war_on = {
+    	target = RUS
+    	type = annex_everything
+		}
+		WLF = {
+		add_timed_idea = {
+		idea = NGU_RussianWar
+		days = 95	
+		}	
+		}
+		add_timed_idea = {
+		idea = NGU_RussianWar
+		days = 95	
+		}
+		NGU = {
+		add_country_flag = RUS_DONE	
+		}	
+		}
+	}
+
+focus = {
+		id = NGU_Arm_The_Pilot
+		icon = GFX_goal_NGU_Wolfgang
+		x = 21
+		y = 8
+		cost = 5
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_Heia_Safari}				
+		completion_reward = {
+		add_war_support = 0.05
+		puppet = SWA
+		SWA = {
+		create_country_leader = {
+		name = "Wolfgang Schenck"
+		#desc = "NGU_Max_Hoelz_desc"
+		picture = "gfx/leaders/SWA/SWA_Wolfgang_Schenck.tga"
+		expire = "2020.1.1"
+		ideology = natsoc_hitler
+		traits = {
+		}
+		}
+		add_equipment_to_stockpile = {
+    	type = infantry_equipment
+    	amount = 5000
+    	producer = SWA
+		}
+		load_oob = namib_oob
+		}
+		}
+	}
+focus = {
+		id = NGU_Battle_Of_Cape
+		icon = GFX_goal_NGU_Cape
+		x = 22
+		y = 9
+		cost = 5
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_Arm_The_Pilot}				
+		completion_reward = {
+		SWA = {
+		declare_war_on = {
+    	target = KPC
+    	type = annex_everything
+		}	
+		}
+		}
+	}
+focus = {
+		id = NGU_Attack_The_Boers
+		icon = GFX_goal_NGU_Boer
+		x = 20
+		y = 9
+		cost = 5
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_Arm_The_Pilot}				
+		completion_reward = {
+		SWA = {
+		declare_war_on = {
+    	target = BOE
+    	type = annex_everything
+		}	
+		}
+		}
+	}
+focus = {
+		id = NGU_Finish_Smuts
+		icon = GFX_goal_NGU_Smuts
+		x = 21
+		y = 10
+		cost = 5
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_Battle_Of_Cape}
+		prerequisite = { focus = NGU_Attack_The_Boers}						
+		completion_reward = {
+		SWA = {
+		declare_war_on = {
+    	target = NTL
+    	type = annex_everything
+		}	
+		}
+		}
+	}
+focus = {
+		id = NGU_Deutsche_Sudafrika
+		icon = GFX_goal_NGU_Sudafrika
+		x = 21
+		y = 11
+		cost = 1
+		available = {
+		has_government = revolutionary_nationalist	
+		}
+        prerequisite = { focus = NGU_Finish_Smuts}					
+		completion_reward = {
+		SWA = {
+		set_cosmetic_tag = SWA_sudafrika
+		set_country_flag = DEU_FORMED
+		}
+		}
+	}				            	            		            	            
+focus = {
+		id = NGU_Coup_In_Schleswig
+		icon = GFX_goal_NGU_schles
+		x = 20
+		y = 1
+		cost = 3
+        prerequisite = { focus = NGU_Die_Wacht_am_Ost }
+		completion_reward = {
+		country_event = { id = ngu.7 days = 2 }
+		}
+	}                                             
+}

@@ -11,8 +11,27 @@ set_technology = {
 	interwar_antiair = 1
 	early_fighter = 1
 	early_bomber = 1
-	gwtank = 1
-	basic_light_tank = 1
+	### Trains ###
+	basic_train = 1
+}
+###Tanks###
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}	
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
 }
 set_convoys = 50
 
@@ -44,7 +63,7 @@ add_ideas = 	industrialized_society
 create_country_leader = {
 	name = "Barry Hertzog"
 	#desc = "BOE_Hertzog_desc"
-	picture = "BOE_Hertzog.tga"
+	picture = "gfx/leaders/BOE/BOE_Hertzog.tga"
 	expire = "2020.1.1"
 	ideology = conservative_subideology
 	traits = {

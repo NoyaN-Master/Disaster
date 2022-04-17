@@ -11,10 +11,28 @@ set_technology = {
 	interwar_antiair = 1
 	early_fighter = 1
 	early_bomber = 1
-	gwtank = 1
-	basic_light_tank = 1
+	### Trains ###
+	basic_train = 1
 }
-
+###Tanks###
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}	
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
 set_convoys = 50
 
 set_politics = {
@@ -45,7 +63,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Cascadian Transitional Authority"
 	desc = "CAS_CTA_desc"
-	picture = "CAS_CTA.tga"
+	picture = "gfx/leaders/CAS/CAS_CTA.tga"
 	expire = "2020.1.1"
 	ideology = autocratic_subideology
 	traits = {
@@ -56,7 +74,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Henry M. Jackson"
 	desc = "CAS_Henry_Jackson_desc"
-	picture = "CAS_Henry_Jackson.tga"
+	picture = "gfx/leaders/CAS/CAS_Henry_Jackson.tga"
 	expire = "2020.1.1"
 	ideology = social_democrat_subideology
 	traits = {

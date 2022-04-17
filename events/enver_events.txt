@@ -14,6 +14,9 @@ country_event = { #Introduction
 
 	option = {
 		name = enver.1.a
+		hidden_effect = {
+			add_timed_idea ={idea = CIB_homecoming days = 60}
+		}
 	}
 }
 
@@ -130,7 +133,7 @@ country_event = { #Annex AZR
         hidden_effect = {
         country_event = { id = enver.7 days = 5} 
         }
-		news_event = { id = news.2 days = 1 }
+		news_event = { id = disasternews.2 days = 1 }
 	}
 }
 
@@ -703,7 +706,7 @@ country_event = {
 		create_country_leader = {
 		name = "Enver Paşa"
 		#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-		picture = "CIB_Enver_Blessed.tga"
+		picture = "gfx/leaders/CIB/CIB_Enver_Blessed.tga"
 		expire = "1965.1.1"
 		ideology = ultranationalist_subideology
 		traits = {
@@ -728,7 +731,7 @@ country_event = {
 		create_country_leader = {
 		name = "Enver Paşa"
 		#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-		picture = "CIB_Enver_Blessed.tga"
+		picture = "gfx/leaders/CIB/CIB_Enver_Blessed.tga"
 		expire = "1965.1.1"
 		ideology = autocratic_subideology
 		traits = {

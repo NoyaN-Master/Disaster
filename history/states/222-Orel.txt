@@ -2,29 +2,30 @@
 state={
 	id=222
 	name="STATE_222"
-	manpower = 1218607
-	
-	state_category = rural
-	
 	resources={
-		steel=40 # was: 76
-		chromium=8 # was: 12
+		steel=40.000
+		chromium=8.000
 	}
 
 	history={
-		owner = TSV
+		owner = RUS
 		victory_points = {
-			9355 10
+			9355 10 
 		}
 		buildings = {
-			infrastructure = 5
+			infrastructure = 2
 			industrial_complex = 1
 			air_base = 4
+
 		}
-		add_core_of = TSV
+		add_core_of = RUS
+
 	}
 
 	provinces={
-		302 328 384 6355 9328 9355 9384 9411 11214 11283 11310 11337 11368 
+		328 384 580 6304 6355 9328 9355 9384 9411 11214 11283 11310 11337 11368 11526
 	}
+	manpower=1218607
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

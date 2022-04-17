@@ -10,9 +10,6 @@ set_technology = {
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	gwtank = 1
-	basic_light_tank = 1
-	basic_heavy_tank = 1
 	early_fighter = 1
 	fighter1 = 1
 	early_bomber = 1
@@ -20,8 +17,27 @@ set_technology = {
 	strategic_bomber1 = 1
 	CAS1 = 1
 	naval_bomber1 = 1
+	### Trains ###
+	basic_train = 1
 }
-
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}	
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
 add_manpower = 100000
 
 set_convoys = 100
@@ -60,7 +76,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Mirsaid Sultangaliyev"
 	#desc = "TAT_Galiyev_desc"
-	picture = "Portrait_TAT_Galiyev.tga"
+	picture = "gfx/leaders/TAT/Portrait_TAT_Galiyev.tga"
 	expire = "2020.1.1"
 	ideology = galiyevism
 	traits = {
@@ -71,7 +87,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Mirsaid Sultangaliyev"
 	#desc = "TAT_Galiyev_desc"
-	picture = "Portrait_TAT_Galiyev.tga"
+	picture = "gfx/leaders/TAT/Portrait_TAT_Galiyev.tga"
 	expire = "2020.1.1"
 	ideology = revolutionary_nationalist_subideology
 	traits = {
@@ -82,7 +98,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Mirsaid Sultangaliyev"
 	#desc = "TAT_Galiyev_desc"
-	picture = "Portrait_TAT_Galiyev.tga"
+	picture = "gfx/leaders/TAT/Portrait_TAT_Galiyev.tga"
 	expire = "2020.1.1"
 	ideology = galiyevism
 	traits = {
@@ -93,7 +109,7 @@ create_country_leader = {
 
 create_field_marshal = {
 			name = "Mirsaid Sultangaliyev"
-			picture = "Portrait_TAT_Galiyev.tga"
+			picture = "gfx/leaders/TAT/Portrait_TAT_Galiyev.tga"
 			traits = { offensive_doctrine }
 			skill = 4
 			attack_skill = 5

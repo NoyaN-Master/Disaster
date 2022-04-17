@@ -1,21 +1,26 @@
+
 state={
 	id=587
 	name="STATE_587"
 
 	history={
-		owner = TRK
+		owner = TMS
 		buildings = {
 			infrastructure = 1
+
 		}
 		victory_points = {
 			1517 1 
 		}
-		add_core_of = TRK
+		add_core_of = QAZ
+		add_claim_by = TRK
+		add_claim_by = BAS
+		add_claim_by = TSV
 
 	}
 
 	provinces={
-		475 642 1517 3593 4523 4620 7641 10262 11701 12163 12383 13008 
+		1517 3593 4523 4563 4620 7541 7641 10262 10348 10406 11701 12233 12383 12454 12474 13207 
 	}
 	manpower=245133
 	buildings_max_level_factor=1.000

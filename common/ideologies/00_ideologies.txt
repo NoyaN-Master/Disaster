@@ -62,6 +62,10 @@ ideologies = {
 			authoritarian_socialist_subideology = {
 			}
 			
+			turkish_dengism = {
+								can_be_randomly_selected = no
+			}
+			
 			luxemburgism_leninism = {
 			                    can_be_randomly_selected = no
 			}
@@ -325,6 +329,10 @@ ideologies = {
 			autocratic_subideology = {
 			}
 			
+			ottomanism = {
+					can_be_randomly_selected = no
+			}
+
 			mercenary_state = {
 			              can_be_randomly_selected = no
 			}
@@ -433,6 +441,9 @@ ideologies = {
 			white_supremacy = {
 			       can_be_randomly_selected = no
 			}
+			alexanderism = {
+				can_be_randomly_selected = no
+			}
 		}
 		
 			dynamic_faction_names = {
@@ -480,6 +491,9 @@ ideologies = {
 			
 			babylonism = {
 			                can_be_randomly_selected = no
+			}
+			eso_alexanderism = {
+				can_be_randomly_selected = no
 			}
 		}
 		

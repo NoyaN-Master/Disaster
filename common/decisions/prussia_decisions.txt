@@ -4,6 +4,7 @@ PRE_ministry_of_propaganda_decision = {
           fire_only_once = yes
           modifier = {
 
+
           }
           remove_effect  = {
 		 PRE_propaganda_increase = yes
@@ -22,6 +23,7 @@ PRE_ministry_of_propaganda_decision = {
           }
           available = {
                has_tech = radio
+			   num_of_civilian_factories_available_for_projects > 2
           }
           remove_effect  = {
 		 PRE_propaganda_increase = yes
@@ -40,7 +42,7 @@ PRE_ministry_of_propaganda_decision = {
           }
           available = {
 			controls_state = 64
-			64 = {infrastructure > 9}
+			64 = {infrastructure > 4}
 		  }
           remove_effect  = {
 		 PRE_propaganda_increase = yes
@@ -339,7 +341,7 @@ PRE_Attack_Belgium = {
 	RHN = {
 	exists = no
 	}
-	at_war_with = FRE
+	has_war_with  = FRE
 	}
 	complete_effect = {
 		declare_war_on = {
@@ -393,7 +395,7 @@ PRE_Puppet_Belgium = {
 				create_country_leader = {
 	       				name = "Heinz Guderian"
 	        			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        			picture = "Heinz_Guderian.tga"
+	        			picture = "gfx/leaders/PRE/Heinz_Guderian.tga"
 	        			expire = "1965.1.1"
 	        			ideology = autocratic_subideology
 	        			traits = {
@@ -424,7 +426,7 @@ PRE_Puppet_Belgium = {
 				create_country_leader = {
 	       				name = "Heinz Guderian"
 	        			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        			picture = "Heinz_Guderian.tga"
+	        			picture = "gfx/leaders/PRE/Heinz_Guderian.tga"
 	        			expire = "1965.1.1"
 	        			ideology = autocratic_subideology
 	        			traits = {
@@ -543,14 +545,9 @@ PRE_Ukraine_Goltz = {
         }    
         complete_effect = {
         release = UKR
-        release = FRI    
         BLT = {
         annex_country = {
         target = UKR
-        transfer_troops = yes
-        }
-        annex_country = {
-        target = FRI
         transfer_troops = yes
         }
         set_cosmetic_tag = BLT_Ostland
@@ -577,10 +574,6 @@ PRE_Declare_UKR = {
         complete_effect = {
         declare_war_on = {
         target = UKR
-        type = annex_everything
-        }
-        declare_war_on = {
-        target = FRI
         type = annex_everything
         }
         }
@@ -659,7 +652,7 @@ PRE_France_Surrender = {
         }
         available  = {   
         original_tag = PRE    
-        at_war_with = FRE
+        has_war_with = FRE
         FRE = {
         surrender_progress > 0.5    
         }
@@ -683,7 +676,7 @@ PRE_France_Surrender_Democratic = {
         }
         available  = {   
         original_tag = PRE    
-        at_war_with = FRE
+        has_war_with  = FRE
         FRE = {
         surrender_progress > 0.5    
         }

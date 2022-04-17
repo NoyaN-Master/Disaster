@@ -312,9 +312,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ARM_Cilician_Promise"
-                        ROOT = {
-				transfer_state = 344
-				add_state_core = 344
+			random_country = {
+				limit = { owns_state = 344 }
+				country_event = drlarm.9
 			}
 		}
 	}

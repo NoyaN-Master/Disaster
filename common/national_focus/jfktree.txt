@@ -137,33 +137,35 @@ focus_tree = {
 		}
 		}
 		add_ideas = Federal_Forces_idea
-		hidden_effect = {
-		}
 		}
 	}
-
-    focus = {
-		id = CRW_Invade_TKOML
-		icon = GFX_goal_WRF_Anatolia_Federation
-		x = 10
-		y = 6
-		cost = 2
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-        prerequisite = {
-           focus = CRW_Federal_Forces 
-        }
-		completion_reward = {
-        declare_war_on = {
-    	target = TRA
-    	type = annex_everything
-		}
-		hidden_effect = {
-		}
-		}
+	focus = { 
+	id = CRW_The_Patriots
+	icon = GFX_goal_WRF_SOL
+	x = 10
+	y = 6
+	cost = 2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 1
 	}
+	prerequisite = {
+	   focus = CRW_Federal_Forces
+	}
+	completion_reward = {
+	declare_war_on = {
+	target = IZM
+	type = annex_everything
+	}
+	IZM = {
+	every_owned_state = {
+	add_core_of = CRW
+	}    
+	}
+	hidden_effect = {
+	}
+	}
+	}	
 
     focus = {
 		id = CRW_Invite_Republic
@@ -176,7 +178,7 @@ focus_tree = {
 			factor = 1
 		}
         prerequisite = {
-           focus = CRW_Invade_TKOML 
+           focus = CRW_The_Patriots
         }
 		completion_reward = {
         country_event = { id = jfk.3 }
@@ -184,11 +186,10 @@ focus_tree = {
 		}
 		}
 	}
-
-    focus = {
-		id = CRW_The_Patriots
-		icon = GFX_goal_WRF_SOL
-		x = 9
+	focus = {
+		id = CRW_Invade_TKOML
+		icon = GFX_goal_WRF_Anatolia_Federation
+		x = 8
 		y = 8
 		cost = 2
 		available_if_capitulated = yes
@@ -196,28 +197,49 @@ focus_tree = {
 			factor = 1
 		}
         prerequisite = {
-           focus = CRW_Invite_Republic 
+           focus = CRW_Invite_Republic
         }
 		completion_reward = {
         declare_war_on = {
-    	target = IZM
+    	target = TRA
     	type = annex_everything
 		}
-		IZM = {
-        every_owned_state = {
-        add_core_of = CRW
-        }    
-        }
 		hidden_effect = {
 		}
 		}
 	}
-
-
+	focus = {
+		id = CRW_Crush_Gokturks
+		icon = GFX_goal_CRW_kill_atsiz
+		x = 10
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = CRW_Invite_Republic
+		}
+		available = {
+			has_war = no
+		}
+		completion_reward = {
+			declare_war_on = {
+			target = CIB
+			type = annex_everything
+			}
+			CIB = {
+				every_owned_state = {
+					add_core_of = CRW
+				}    
+			}
+		}
+	}
     focus = {
 		id = CRW_Destroy_Greywolfs
 		icon = GFX_goal_WRF_Wolf_Vic
-		x = 11
+		x = 12
 		y = 8
 		cost = 2
 		available_if_capitulated = yes
@@ -258,6 +280,9 @@ focus_tree = {
         prerequisite = {
            focus = CRW_Destroy_Greywolfs 
         }
+		prerequisite = {
+			focus = CRW_Invade_TKOML
+		}
 		completion_reward = {
         declare_war_on = {
     	target = ANK
@@ -302,7 +327,7 @@ focus_tree = {
     focus = {
 		id = CRW_Western_Consolidate
 		icon = GFX_goal_ARM_Status_of_Anatolia
-		x = 17
+		x = 16
 		y = 1
 		cost = 1
 		available_if_capitulated = yes
@@ -403,11 +428,48 @@ focus_tree = {
 		}
 		}
 	}
-
+	focus = {
+		id = CRW_liberate_kurds
+		icon = GFX_goal_ARM_Guardians_of_the_Kurds
+		cost = 2
+		x = 15
+		y = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = KUR
+				type = annex_everything
+			}
+		}
+		prerequisite = {
+			focus = CRW_Western_Consolidate
+		}
+	}
+	focus = {
+		id = CRW_give_kurds_autonomy
+		icon = GFX_goal_CRW_kurd_autonomy
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 3
+		x = 16
+		y = 3
+		completion_reward = {
+			add_political_power = -150
+			add_state_core = 350
+			add_state_core = 352
+		 }
+		prerequisite = {
+			focus = CRW_liberate_kurds
+		}
+	}
     focus = {
 		id = CRW_Federal_System
 		icon = GFX_goal_WRF_TurkoIslamic
-		x = 15
+		x = 13
 		y = 2
 		cost = 2
 		available_if_capitulated = yes
@@ -427,7 +489,7 @@ focus_tree = {
     focus = {
 		id = CRW_Reform_Banking
 		icon = GFX_goal_lobbying
-		x = 16
+		x = 14
 		y = 3
 		cost = 2
 		available_if_capitulated = yes
@@ -473,7 +535,7 @@ focus_tree = {
     focus = {
 		id = CRW_Change_Leadership
 		icon = GFX_goal_compromise_junkers
-		x = 17
+		x = 16
 		y = 4
 		cost = 2
 		available_if_capitulated = yes
@@ -486,6 +548,9 @@ focus_tree = {
         prerequisite = {
             focus = CRW_Brotherhood
         }
+		prerequisite = {
+			focus = CRW_give_kurds_autonomy
+		}
 		completion_reward = {
         country_event = { id = jfk.4 }
 		hidden_effect = {

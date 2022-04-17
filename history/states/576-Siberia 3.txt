@@ -1,20 +1,22 @@
 
 state={
 	id=576
-	name="STATE_576" # Yeniseisk
-	manpower = 82036
-	
-	state_category = wasteland
+	name="STATE_576"
 
 	history={
-		owner = TSB
+		owner = RUS
 		buildings = {
 			infrastructure = 1
+
 		}
-		add_core_of = TSB
+		add_core_of = RUS
+
 	}
 
 	provinces={
-		1697 1780 1837 4687 4785 4842 7701 7707 7863 10544 10576 10705 12555 12595 12655 12666 
+		1697 1741 1780 1837 4687 4703 4743 4785 4831 4842 7701 7707 7805 7863 10544 10576 10628 10631 10688 10705 12555 12595 12615 12655 12666 
 	}
+	manpower=82036
+	buildings_max_level_factor=1.000
+	state_category=wasteland
 }

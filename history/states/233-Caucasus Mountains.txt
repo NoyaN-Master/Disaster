@@ -1,28 +1,29 @@
+
 state={
 	id=233
 	name="STATE_233"
 	resources={
-		chromium=35 # was: 46.000
+		chromium=35.000
 	}
 
 	history={
 		owner = MTR
 		buildings = {
-			infrastructure = 3
+			infrastructure = 1
 
 		}
 		add_core_of = MTR
 		add_core_of = SRF
 		victory_points = {
-			9628 3
+			9628 3 
 		}
 		victory_points = {
-			1455 1
+			3672 5 
 		}
 	}
 
 	provinces={
-		666 670 685 1455 3667 6674 6718 6733 9628 9632 9647 9649 11609 11614 11633 
+		666 670 683 685 700 728 3672 3682 6689 6701 6702 6718 6730 6733 6748 9628 9632 9647 11614 11632 11633 11609 3667 712
 	}
 	manpower=878382
 	buildings_max_level_factor=1.000

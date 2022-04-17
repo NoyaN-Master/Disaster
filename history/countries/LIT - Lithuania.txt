@@ -1,0 +1,72 @@
+capital =784
+oob = ""
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	tech_recon = 1
+	tech_support = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	early_bomber = 1
+	### Trains ###
+	basic_train = 1
+}
+###Tanks###
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}	
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+set_convoys = 50
+
+set_politics = {
+	ruling_party = ultranationalist
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	conservative = 0
+	liberal = 0
+	social_democrat = 0
+	libertarian_socialist = 13
+	authoritarian_socialist = 7
+	unisocialist = 0
+	authoritarian_democrat = 5
+	autocratic = 10
+	ultranationalist = 55
+	revolutionary_nationalist = 10
+	esoteric_traditionalist = 0
+	revolutionary_anarchist = 0
+}
+add_ideas = 	military_government 
+add_ideas = 	corporatism 
+add_ideas = 	industrialized_society
+
+
+create_country_leader = {
+	name = "Rüdiger von der Goltz"
+	picture = "gfx/leaders/BLT/BLT_Goltz.tga"
+	expire = "2020.1.1"
+	ideology = ultranationalist_subideology
+	traits = {
+		#
+	}
+}

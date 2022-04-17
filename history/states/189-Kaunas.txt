@@ -7,11 +7,11 @@ state={
 	state_category = town
 	
 	resources={
-		steel=2 # was: 3
+		steel=2
 	}
 
 	history={
-		owner = BLT
+		owner = LIT
 		victory_points = {
 			9483 5
 		}
@@ -19,12 +19,12 @@ state={
 			6314 3
 		}
 		buildings = {
-			infrastructure = 5
+			infrastructure = 2
 			6314 = {
 				naval_base = 1
 			}
 		}
-		add_core_of = BLT
+		add_core_of = LIT
 	}
 
 	provinces={

@@ -1,20 +1,22 @@
 
 state={
 	id=575
-	name="STATE_575" # Kirensk
-	manpower = 102545
-	
-	state_category = wasteland
+	name="STATE_575"
 
 	history={
-		owner = TSB
+		owner = RUS
 		buildings = {
 			infrastructure = 1
+
 		}
-		add_core_of = TSB
+		add_core_of = RUS
+
 	}
 
 	provinces={
-		1792 4703 4737 4795 4868 7726 7828 12538 12681 
+		1666 1735 1792 4737 4762 4795 4868 7726 7759 7828 10557 10654 10681 10699 12538 12575 12608 12668 12681 10583 12506
 	}
+	manpower=102545
+	buildings_max_level_factor=1.000
+	state_category=wasteland
 }

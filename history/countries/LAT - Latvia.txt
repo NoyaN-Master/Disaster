@@ -1,0 +1,50 @@
+﻿capital = 12
+
+oob = "LAT_1936"
+
+add_ideas = 	autocracy 
+add_ideas = 	interventionism 
+add_ideas = 	industrialized_society
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	early_fighter = 1
+}
+
+set_research_slots = 3
+
+set_convoys = 10
+1936.1.1 = {
+set_politics = {
+	ruling_party = ultranationalist
+	last_election = "1931.10.3"
+	election_frequency = 108
+	elections_allowed = no
+}
+set_popularities = {
+	conservative = 10
+	liberal = 10
+	social_democrat = 0
+	libertarian_socialist = 0
+	authoritarian_socialist = 10
+	unisocialist = 10
+	authoritarian_democrat = 10
+	autocratic = 10
+	ultranationalist = 20
+	revolutionary_nationalist = 10
+	esoteric_traditionalist = 10
+	revolutionary_anarchist = 0
+}
+}
+
+
+create_country_leader = {
+	name = "Andrievs Niedra"
+	picture = "gfx/leaders/LAT/LAT_Andrievs_Niedra"
+	expire = "1965.1.1"
+	ideology = ultranationalist_subideology
+	traits = {
+		#
+	}
+}

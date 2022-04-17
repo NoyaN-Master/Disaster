@@ -123,6 +123,30 @@ units = {
 
 	}
 
+	division= {	# "7. Division"			
+		division_name = {
+				is_name_ordered = yes
+				name_order = 10
+		}
+		location = 11753  # Salzburg
+		division_template = "Kafkasya Islam Taburu"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+
+	division= {	# "7. Division"			
+		division_name = {
+				is_name_ordered = yes
+				name_order = 11
+		}
+		location = 11753  # Salzburg
+		division_template = "Kafkasya Islam Taburu"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+
 	division= {	
 		name = "Bozkurt Birliği"				
 		location = 11753  # Vienna

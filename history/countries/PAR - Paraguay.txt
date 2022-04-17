@@ -11,10 +11,27 @@ set_technology = {
 	interwar_antiair = 1
 	early_fighter = 1
 	early_bomber = 1
-	gwtank = 1
-	basic_light_tank = 1
+	### Trains ###
+	basic_train = 1
 }
-
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}	
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
 set_convoys = 50
 
 set_politics = {
@@ -45,7 +62,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Rafael Franco"
 	#desc = "PAR_Rafael Franco_desc"
-	picture = "PAR_Rafael Franco.tga"
+	picture = "gfx/leaders/PAR/PAR_Rafael Franco.tga"
 	expire = "2020.1.1"
 	ideology = libertarian_socialist_subideology
 	traits = {

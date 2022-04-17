@@ -18,14 +18,31 @@ set_technology = {
 	interwar_antiair = 1
 	early_fighter = 1
 	early_bomber = 1
-	gwtank = 1
-	basic_light_tank = 1
+	### Trains ###
+	basic_train = 1
 }
-
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}	
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
 set_convoys = 50
 
 set_politics = {
-	ruling_party = libertarian_socialist
+	ruling_party = conservative
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -35,18 +52,29 @@ add_ideas = 	laisez_faire
 add_ideas = 	post_industrialized_society
 
 set_popularities = {
-	conservative = 10
-	liberal = 25
+	conservative = 30
+	liberal = 0
 	social_democrat = 0
-	libertarian_socialist = 45
-	authoritarian_socialist = 10
+	libertarian_socialist = 20
+	authoritarian_socialist = 0
 	unisocialist = 0
 	authoritarian_democrat = 0
-	autocratic = 5
+	autocratic = 10
 	ultranationalist = 0
-	revolutionary_nationalist = 5
-	esoteric_traditionalist = 0
+	revolutionary_nationalist = 30
+	esoteric_traditionalist = 10
 	revolutionary_anarchist = 0
+}
+
+create_country_leader = {
+	name = "Haakon VII"
+	#desc = "NRG_Haakon_desc"
+	picture = "gfx/leaders/NRG/NRG_Haakon.tga"
+	expire = "2020.1.1"
+	ideology =libertarian_socialist_subideology
+	traits = {
+		#
+	}
 }
 
 create_country_leader = {
@@ -54,7 +82,84 @@ create_country_leader = {
 	#desc = "NRG_Haakon_desc"
 	picture = "NRG_Haakon.tga"
 	expire = "2020.1.1"
-	ideology =libertarian_socialist_subideology
+	ideology = conservative_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Haakon VII"
+	#desc = "NRG_Haakon_desc"
+	picture = "NRG_Haakon.tga"
+	expire = "2020.1.1"
+	ideology = liberal_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Haakon VII"
+	#desc = "NRG_Haakon_desc"
+	picture = "NRG_Haakon.tga"
+	expire = "2020.1.1"
+	ideology =social_democrat_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Haakon VII"
+	#desc = "NRG_Haakon_desc"
+	picture = "NRG_Haakon.tga"
+	expire = "2020.1.1"
+	ideology = autocratic_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "The Heathen Comittee"
+	#desc = "NRG_Haakon_desc"
+	picture = "NRG_Haakon.tga"
+	expire = "2020.1.1"
+	ideology = unisocialist_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Adolf Egeberg"
+	#desc = "NRG_Haakon_desc"
+	picture = "NRG_Egeberg.png"
+	expire = "2020.1.1"
+	ideology = revolutionary_nationalist_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Per Imerslund"
+	#desc = "NRG_Haakon_desc"
+	picture = "NRG_Haakon.tga"
+	expire = "2020.1.1"
+	ideology = esoteric_traditionalist_subideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Adolf Egeberg"
+	#desc = "NRG_Haakon_desc"
+	picture = "NRG_Egeberg.png"
+	expire = "2020.1.1"
+	ideology = ultranationalist_subideology
 	traits = {
 		#
 	}

@@ -22,7 +22,7 @@ country_event = { #New Day, talking with Ismet
         create_country_leader = {
 	    name = "Mustafa Kemal"
 	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	    picture = "Portrait_WRF_Mustafa_Kemal_Ataturk.tga"
+	    picture = "gfx/leaders/WRF/Portrait_WRF_Mustafa_Kemal_Ataturk.tga"
 	    expire = "1965.1.1"
 	    ideology = kemalism
 	    traits = {
@@ -51,7 +51,7 @@ country_event = { #Surnames
         create_country_leader = {
 	    name = "Mustafa Kemal Atatürk"
 	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	    picture = "Portrait_WRF_Mustafa_Kemal_Ataturk.tga"
+	    picture = "gfx/leaders/WRF/Portrait_WRF_Mustafa_Kemal_Ataturk.tga"
 	    expire = "1965.1.1"
 	    ideology = kemalism
 	    traits = {
@@ -193,7 +193,7 @@ country_event = { #Death
 		create_country_leader = {
 	    name = "Provisional Military Council"
 	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	    picture = "Portrait_TUR_TSK.tga"
+	    picture = "gfx/leaders/WRF/Portrait_TUR_TSK.tga"
 	    expire = "1965.1.1"
 	    ideology = kemalism
 	    traits = {	
@@ -223,7 +223,7 @@ country_event = { #Succesor
 		create_country_leader = {
 	    name = "İsmet Inönü"
 	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	    picture = "Portrait_WRF_Ismet.tga"
+	    picture = "gfx/leaders/WRF/Portrait_WRF_Ismet.tga"
 	    expire = "1965.1.1"
 	    ideology = kemalism
 	    traits = {	
@@ -248,7 +248,7 @@ country_event = { #Succesor
 		create_country_leader = {
 	    name = "Fevzi Çakmak"
 	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	    picture = "Portrait_WRF_Fevzi_Cakmak.tga"
+	    picture = "gfx/leaders/WRF/Portrait_WRF_Fevzi_Cakmak.tga"
 	    expire = "1965.1.1"
 	    ideology = kemalism_auth
 	    traits = {	
@@ -416,7 +416,7 @@ country_event = { #Iron Democracy
 		create_country_leader = {
 	    name = "Ismet İnönü"
 	    #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	    picture = "Portrait_WRF_Ismet.tga"
+	    picture = "gfx/leaders/WRF/Portrait_WRF_Ismet.tga"
 	    expire = "1965.1.1"
 	    ideology = social_democrat_subideology
 	    traits = {	
@@ -717,7 +717,13 @@ country_event = { #The Blackarrow Revolt
 		name = tur.24.a
 		ai_chance = { factor = 80 }
 		add_stability = -0.40
+		#country_event = { id = tur.25 days = 60 }
+		set_country_flag = WRF_SMYRNA_REVOLT
 		ANK = {
+		declare_war_on = {
+    	target = WRF
+    	type = annex_everything
+		}	
 			add_equipment_to_stockpile = {
 				    type = infantry_equipment
 				    amount = 10000
@@ -749,7 +755,7 @@ country_event = { #The Blackarrow Revolt
 		create_country_leader = {
 	    name = "Mahmut Esat Bozkurt"
 	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	    picture = "ANK_Esat.png"
+	    picture = "gfx/leaders/WRF/ANK_Esat.png"
 	    expire = "1965.1.1"
 	    ideology = blackpin_kemalism
 	    traits = {	
@@ -766,7 +772,7 @@ country_event = { #The Blackarrow Revolt
 		create_country_leader = {
 	    name = "Kemalist Military Front"
 	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	    picture = "Portrait_TUR_TSK.tga"
+	    picture = "gfx/leaders/WRF/Portrait_TUR_TSK.tga"
 	    expire = "1965.1.1"
 	    ideology = blackpin_kemalism
 	    traits = {	
@@ -792,6 +798,10 @@ country_event = { #The Blackarrow Revolt
 		ai_chance = { factor = 80 }
 		add_stability = -0.40
 		ANK = {
+		declare_war_on = {
+    	target = WRF
+    	type = annex_everything
+		}	
 			inherit_technology = WRF
 		transfer_state = 834
 		transfer_state = 339
@@ -808,7 +818,7 @@ country_event = { #The Blackarrow Revolt
 		create_country_leader = {
 	    name = "Mahmut Esat Bozkurt"
 	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	    picture = "ANK_Esat.png"
+	    picture = "gfx/leaders/WRF/ANK_Esat.png"
 	    expire = "1965.1.1"
 	    ideology = blackpin_kemalism
 	    traits = {	
@@ -839,7 +849,7 @@ country_event = { #The Blackarrow Manifesto
 		create_country_leader = {
 	    name = "Alparslan Türkeş"
 	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	    picture = "WRF_Turkes.tga"
+	    picture = "gfx/leaders/WRF/WRF_Turkes.tga"
 	    expire = "1965.1.1"
 	    ideology = ultranationalist_subtype
 	    traits = {	
@@ -863,7 +873,7 @@ country_event = { #The Blackarrow Manifesto
 		create_country_leader = {
 	    name = "Celal Bayar"
 	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	    picture = "Portrait_WRF_Celal.tga"
+	    picture = "gfx/leaders/WRF/Portrait_WRF_Celal.tga"
 	    expire = "1965.1.1"
 	    ideology = conservative_subtype
 	    traits = {	
@@ -887,7 +897,7 @@ country_event = { #The Blackarrow Manifesto
 		create_country_leader = {
 	    name = "Mustafa Suphi"
 	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	    picture = "Portrait_WRF_Celal.tga"
+	    picture = "gfx/leaders/WRF/Portrait_WRF_Celal.tga"
 	    expire = "1965.1.1"
 	    ideology = libertarian_socialist_subtype
 	    traits = {	
@@ -911,7 +921,7 @@ country_event = { #The Blackarrow Manifesto
 		create_country_leader = {
 	    name = "Adnan Menderes"
 	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	    picture = "Portrait_WRF_Adnan.tga"
+	    picture = "gfx/leaders/WRF/Portrait_WRF_Adnan.tga"
 	    expire = "1965.1.1"
 	    ideology = liberal_subtype
 	    traits = {	
@@ -1003,3 +1013,28 @@ country_event = { #revolution
 		ANK = { change_tag_from = WRF }
 	}
 }
+
+country_event = {
+	id = tur.29
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tur.29" }
+	title = tur.29.t
+	desc.29.d
+	
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = WRF_SMYRNA_REVOLT
+		NOT = {
+			country_exists = ANK
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {	
+		name = tur.29.a
+		country_event = { id = tur.25 days = 7 }
+	}
+}    

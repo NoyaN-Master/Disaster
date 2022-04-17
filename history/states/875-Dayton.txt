@@ -5,11 +5,13 @@ state={
 	history={
 		owner = GLC
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 			industrial_complex = 3
-
 		}
 		add_core_of = GLC
+		victory_points = {
+			4601 10
+		}
 	}
 	provinces={
 		831 4601 9775 11760 11776 11890 

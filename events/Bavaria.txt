@@ -1,0 +1,43 @@
+add_namespace = bay
+add_namespace = bayepp
+add_namespace = bayrohm
+add_namespace = bayhimmler
+
+country_event = { #Freikorps Problem
+	id = bay.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bay.1" }
+	title = bay.1.t
+	desc = bay.1.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = bay.1.a
+	}
+}
+
+country_event = { #Pick a leader, any leader.
+	id = bay.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bay.2" }
+	title = bay.2.t
+	desc = bay.2.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Von Epp
+		name = bay.2.a
+		unlock_national_focus = BAY_stand_with_epp
+	}
+	option = { #Rohm
+		name = bay.2.b
+		unlock_national_focus = BAY_side_with_rohm
+	}
+	option = { #Himmler
+		name = bay.2.c
+		unlock_national_focus = BAY_side_with_himmler
+	}
+}

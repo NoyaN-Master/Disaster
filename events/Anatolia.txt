@@ -186,7 +186,7 @@ country_event = { #collapse-left side
 		load_oob = "ANK_Army"
 		}
         SKL = { change_tag_from = ANT }
-        news_event = { id = news.4 }
+        news_event = { id = disasternews.4 }
     }
 }
 
@@ -239,7 +239,7 @@ country_event = { #collapse-OTH
         inherit_technology = ANT    
         }
         OTH = { change_tag_from = ANT }
-        news_event = { id = news.4 }
+        news_event = { id = disasternews.4 }
     }
 }
 
@@ -280,7 +280,7 @@ country_event = { #collapse-IZM
 		load_oob = "ANK_Army"
 		}
         IZM = { change_tag_from = ANT }
-        news_event = { id = news.4 }
+        news_event = { id = disasternews.4 }
     }
 }
 
@@ -331,7 +331,7 @@ country_event = { #collapse-ANK
         inherit_technology = ANT    
         }
         ANK = { change_tag_from = ANT }
-        news_event = { id = news.4 }
+        news_event = { id = disasternews.4 }
     }
 }
 
@@ -785,7 +785,7 @@ country_event = { #Communist Revolution
         inherit_technology = ANT    
         }
         IZM = { change_tag_from = ANT }
-        news_event = { id = news.4 }
+        news_event = { id = disasternews.4 }
     }
 }
 

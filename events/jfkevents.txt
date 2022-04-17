@@ -35,8 +35,8 @@ country_event = { #start
 
 	option = {
 		name = jfk.2.a
-        transfer_state = 345
-        add_state_core = 345
+        transfer_state = 341
+        add_state_core = 341
         add_stability = 0.05
 		}
 	}
@@ -104,7 +104,7 @@ country_event = { #start
         create_country_leader = {
 	    name = "Riçard Niksonoğlu"
 	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	    picture = "CRW_Nix.png"
+	    picture = "gfx/leaders/CRW/CRW_Nix.png"
 	    expire = "1965.1.1"
 	    ideology = conservative_subideology
 	    traits = {

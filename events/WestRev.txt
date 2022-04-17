@@ -174,7 +174,7 @@ country_event = {
 		name = wrf.27.a 
 		create_field_marshal = {
 			name = "Fevzi Çakmak"
-			picture = "Portrait_WRF_Fevzi_Cakmak.tga"
+			picture = "gfx/leaders/WRF/Portrait_WRF_Fevzi_Cakmak.tga"
 			traits = { offensive_doctrine }
 			skill = 3
 			attack_skill = 5
@@ -264,6 +264,7 @@ country_event = { #ASSEMBLY VOTING
 	
 	option = {
 		name = wrf.31.a
+		set_capital = { state = 340 }
 	}
 }
 
@@ -408,7 +409,7 @@ country_event = { #TACHANKA 2 enver moves in
 		 WRF_atsiz_coup = yes
 		 remove_unit_leader = 1881
 		 hidden_effect = {
-		 news_event = { id = news.6 }	 	 
+		 news_event = { id = disasternews.6 }	 	 
 		}
 	}
 }
@@ -465,7 +466,7 @@ country_event = { #nationalists istanbul
    	 	target = CRW
     	transfer_troops = no
 		}
-		news_event = { id = news.10 }
+		news_event = { id = disasternews.10 }
 	}
 }
 
@@ -507,7 +508,7 @@ country_event = { #nationalists istanbul
 	}
 	create_corps_commander = {
 	name = "Kazım Orbay"
-	#picture = "Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+	#picture = "gfx/leaders/WRF/Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
 	traits = { trickster brilliant_strategist }
 	portrait_path = "gfx/leaders/ANK/ANK_Kazim_Orbay.tga"
 	skill = 4

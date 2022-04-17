@@ -1,10 +1,6 @@
 capital = 202
 oob = "UKR_1936"
 
-
-
-country_event = { id = worldwar.4 days = 30 }
-
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -15,42 +11,74 @@ set_technology = {
 	interwar_antiair = 1
 	early_fighter = 1
 	early_bomber = 1
-	gwtank = 1
-	basic_light_tank = 1
+	### Trains ###
+	basic_train = 1
 }
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}	
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+
 set_convoys = 50
+1936.1.1 = {
 set_politics = {
-	ruling_party = social_democrat
+	ruling_party = autocratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
-add_ideas = 	multi_party_democracy 	
-add_ideas = 	interventionism 
-add_ideas = 	industrialized_society
-
 set_popularities = {
-	conservative = 0
-	liberal = 0
-	social_democrat = 60
-	libertarian_socialist = 20
-	authoritarian_socialist = 15
+	conservative = 2
+	liberal = 5
+	social_democrat = 22
+	libertarian_socialist = 2
+	authoritarian_socialist = 10
 	unisocialist = 5
-	authoritarian_democrat = 0
-	autocratic = 0
-	ultranationalist = 0
-	revolutionary_nationalist = 0
+	authoritarian_democrat = 15
+	autocratic = 34
+	ultranationalist = 2
+	revolutionary_nationalist = 3
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
+}
+add_ideas = 	autocracy 	
+add_ideas = 	interventionism 
+add_ideas = 	industrialized_society
+
+
 
 create_country_leader = {
 	name = "Symon Petliura"
 	desc = "UKR_Symon_Petliura_desc"
-	picture = "UKR_Symon_Petliura.tga"
+	picture = "gfx/leaders/UKR/UKR_Symon_Petliura.tga"
 	expire = "2020.1.1"
 	ideology = social_democrat_subideology
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Pavlo Skoropadskyi"
+	#desc = "UKR_Pavlo_desc"
+	picture = "gfx/leaders/UKR/UKR_Pavlo.tga"
+	expire = "2020.1.1"
+	ideology = autocratic_subideology
 	traits = {
 		#
 	}
 }
+

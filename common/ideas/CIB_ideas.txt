@@ -2,6 +2,21 @@ ideas = {
 
 country = {
 
+CIB_homecoming = {
+	on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_homecoming" }
+	picture = CIB_homecoming
+	cancel = {
+		CIB = {
+			has_country_flag = Roatta_Warlord
+		}
+	}
+	modifier = {
+		army_attack_factor = 0.5
+		army_speed_factor = 0.25
+	}
+}
+
+
 CIB_King_Hill = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_King_Hill" }
 			picture = CIB_King_Hill

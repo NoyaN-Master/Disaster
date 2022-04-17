@@ -70,50 +70,63 @@ leader_traits = {
 	}
 
 	sturmkorps_reichsfuehrer = { 
-		type = land
-		trait_type = personality_trait
-		
-		modifier = {
-			army_morale_factor = 0.15
+		type = field_marshal
+		trait_type = assignable_trait
+
+		cost = 1000
+
+		field_marshal_modifier = {
+			army_morale_factor = 0.1
 			experience_gain_army_unit_factor = 0.15
-			breakthrough_factor = 0.40
-			army_speed_factor = 0.30
-			army_attack_factor = 0.15
-			army_defence_factor = 0.10
-			army_core_attack_factor = 0.30
-			army_core_defence_factor = 0.20
-			army_armor_attack_factor = 0.3
-			army_armor_defence_factor = 0.3
-			army_armor_speed_factor = 0.3
+			breakthrough_factor = 0.05
+			army_speed_factor = 0.1
+			army_attack_factor = 0.08
+			army_defence_factor = 0.05
+			army_core_attack_factor = 0.10
+			army_core_defence_factor = 0.08
+			army_armor_attack_factor = 0.1
+			army_armor_defence_factor = 0.08
+			army_armor_speed_factor = 0.1
 
 		}
+		gui_row = 100
 	}
 
 	oberkommando_der_heimwehr = { 
-		type = land
-		trait_type = personality_trait
-		
-		modifier = {
-			army_morale_factor = 0.30
-			max_army_group_size = 36
-			dig_in_speed_factor = 0.30
-			army_infantry_attack_factor = 0.5
-			army_infantry_defence_factor = 0.5
-			army_infantry_speed_factor = 0.5
+		type = field_marshal
+		trait_type = assignable_trait
+
+		cost = 1000
+
+		field_marshal_modifier = {
+			army_morale_factor = 0.2
+			max_army_group_size = 2
+			dig_in_speed_factor = 0.20
+			army_infantry_attack_factor = 0.15
+			army_infantry_defence_factor = 0.15
+			army_infantry_speed_factor = 0.1
 	
 		}
+		gui_row = 100
 	}
 	
 	komtur_des_deutschritterordens = {
-		army_attack_factor = 0.35
-		army_defence_factor = 0.35
-		army_speed_factor = 0.20
-		army_morale_factor = 0.50
-		army_org_factor = 0.50
-		breakthrough_factor = 0.20
-		planning_speed = 0.3
-		supply_consumption_factor = -0.2
-		
+		type = field_marshal
+		trait_type = assignable_trait
+	
+		cost = 1000
+
+		field_marshal_modifier = {
+			army_attack_factor = 0.08
+			army_defence_factor = 0.08
+			army_speed_factor = 0.08
+			army_morale_factor = 0.2
+			army_org_factor = 0.2
+			breakthrough_factor = 0.1
+			planning_speed = 0.12
+			supply_consumption_factor = -0.05
+		}
+		gui_row = 100
 	}
 
 	kemalist_general = { 
@@ -2388,12 +2401,12 @@ leader_traits = {
 				FROM = {
 					OR = {
 						neutrality < 0.05
-						has_completed_focus = BUL_overthrow_the_tsar
-						has_completed_focus = BUL_abolish_the_monarchy
-						has_completed_focus = BUL_depose_the_tsar
+						#has_completed_focus = BUL_overthrow_the_tsar
+						#has_completed_focus = BUL_abolish_the_monarchy
+						#has_completed_focus = BUL_depose_the_tsar
 						AND = {
-							has_completed_focus = BUL_plot_against_boris
-							NOT = { has_completed_focus = BUL_the_return_of_ferdinand_i }
+							#has_completed_focus = BUL_plot_against_boris
+							NOT = { #has_completed_focus = BUL_the_return_of_ferdinand_i }
 						}
 					}
 				}
@@ -2416,7 +2429,7 @@ leader_traits = {
 				factor = 0
 				OR = {
 					FROM = { communism < 0.05 }
-					FROM = { has_completed_focus = BUL_crush_the_communists }
+					FROM = { #has_completed_focus = BUL_crush_the_communists }
 				}
 			}
 		}

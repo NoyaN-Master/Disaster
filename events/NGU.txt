@@ -304,7 +304,7 @@ country_event = { # Berling Becomes Capital
 	option = {
 		name = ngu.8.a
 		ai_chance = { factor = 100}
-		set_capital = 64
+		set_capital = { state = 64 }
 		add_state_core = 64
 		add_stability = 0.15
 		country_event = { id = ngu.9 days = 1 }
@@ -378,7 +378,6 @@ country_event = { # Berling Becomes Capital
 		}
 		create_country_leader = {
 	        name = "Joseph Goebbels"
-	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 	        picture   = "NGU_Goebbels_Hitler.tga"
 	        expire = "1965.1.1"
 	        ideology = natsoc_hitler
@@ -444,10 +443,6 @@ country_event = { # Berling Becomes Capital
 	has_war_with = UKR
 	UKR = {
 	surrender_progress > 0.7
-	}
-	has_war_with = FRI
-	FRI = {
-	surrender_progress > 0.7
 	}	
 	}
 	}
@@ -461,15 +456,10 @@ country_event = { # Berling Becomes Capital
 		name = ngu.12.a
 		ai_chance = { factor = 100}
 		white_peace = UKR
-		white_peace = FRI
 		WLF = {
 			
 		annex_country = {
     	target = UKR
-    	transfer_troops = yes
-		}
-		annex_country = {
-    	target = FRI
     	transfer_troops = yes
 		}
 		add_stability = 0.10
@@ -521,7 +511,6 @@ country_event = { # Wehrmacht Takes Over
 		ai_chance = { factor = 100}
 		create_country_leader = {
 	        name = "Wehrmacht Council"
-	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 	        picture   = "NGU_Wehrmacht.tga"
 	        expire = "1965.1.1"
 	        ideology = natsoc_hitler
@@ -547,7 +536,6 @@ country_event = { # Who will lead us
 		ai_chance = { factor = 100}
 		create_country_leader = {
 	        name = "Adolf Hitler"
-	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 	        picture   = "NGU_Hitler.tga"
 	        expire = "1965.1.1"
 	        ideology = natsoc_hitler
@@ -567,7 +555,6 @@ country_event = { # Who will lead us
 		ai_chance = { factor = 100}
 		create_country_leader = {
 	        name = "Reinhard Heydrich"
-	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 	        picture   = "NGU_Heydrich.tga"
 	        expire = "1965.1.1"
 	        ideology = natsoc_heydrich
@@ -582,7 +569,6 @@ country_event = { # Who will lead us
 		WLF = {
 		create_country_leader = {
 	        name = "Otto Kumm"
-	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 	        picture   = "Portrait_Germany_Otto_Kumm.tga"
 	        expire = "1965.1.1"
 	        ideology = natsoc_hitler
@@ -602,7 +588,6 @@ country_event = { # Who will lead us
 		ai_chance = { factor = 100}
 		create_country_leader = {
 	        name = "Alfred Rosenberg"
-	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 	        picture   = "NGU_Rosenberg.tga"
 	        expire = "1965.1.1"
 	        ideology = natsoc_hitler
@@ -612,7 +597,6 @@ country_event = { # Who will lead us
 		BLT = {
 		create_country_leader = {
 	        name = "Heinrich Himmler"
-	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 	        picture   = "BAY_Himmler.tga"
 	        expire = "1965.1.1"
 	        ideology = natsoc_hitler

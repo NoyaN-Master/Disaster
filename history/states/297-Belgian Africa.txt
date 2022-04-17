@@ -9,12 +9,11 @@ state=
 	history=
 	{
 		owner = SPK
-		add_core_of = 
 		victory_points = {
 			1903 1 
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 			1903 = {
 				naval_base = 1
 			}

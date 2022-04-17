@@ -1,23 +1,25 @@
 
 state={
 	id=590
-	name="STATE_590" # Akmolinsk
-	manpower = 980533
-	
-	state_category = pastoral
+	name="STATE_590"
 
 	history={
-		owner = TRM
-		add_core_of = TRM
+		owner = QAZ
+		add_core_of = QAZ
 		victory_points = {
-			4333 1
+			4333 1 
 		}
 		buildings = {
 			infrastructure = 4
+
 		}
+
 	}
 
 	provinces={
-		1223 1229 1309 1375 1391 1418 1662 1680 1694 4232 4238 4281 4309 4333 4850 7298 7326 7383 7407 7425 7741 7874 10211 10239 10308 10633 12152 12619 
+		1223 1229 1309 1375 1391 1418 1662 1680 1694 1800 4232 4238 4250 4277 4281 4309 4333 4850 7298 7326 7383 7425 7741 7874 10179 10211 10239 10268 10308 10568 10633 12111 12194 12546 12619 
 	}
+	manpower=980533
+	buildings_max_level_factor=1.000
+	state_category=pastoral
 }
