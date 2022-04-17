@@ -24,6 +24,12 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_SPEVNT_RUSCW"
+		texturefile = "gfx/super_events/SPEVNT_RUSCW.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
 		name = "GFX_SPEVNT_Unification_Atsiz"
 		texturefile = "gfx/super_events/SPEVNT_Unification_Atsiz.dds"
 		legacy_lazy_load = no

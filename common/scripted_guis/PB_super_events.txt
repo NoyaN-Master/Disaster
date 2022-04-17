@@ -13,7 +13,6 @@ scripted_gui = {
 				has_global_flag  = Super_Event_Visible_NoImage
 			}
 		}
-
 		triggers = {
 			Super_Event_Image_Unification_Atsiz_visible = {
 				has_global_flag  = TUR_Unification_Atsiz
@@ -115,7 +114,11 @@ scripted_gui = {
 				has_global_flag  = Atsiz_Europe
 			}
 		}
-
+		triggers = {
+			Super_Event_Image_Russia_visible = {
+				has_global_flag  = RUSCWflag 
+			}
+		
 		triggers = {
 			Super_Event_Image_JFK_visible = {
 				has_global_flag  = JFKflag
@@ -132,6 +135,15 @@ scripted_gui = {
 		effects = {
 			Super_Event_Close_click = {
 				clr_global_flag = Super_Event_Visible
+
+
+				
+				if = {
+					limit = {	
+						has_global_flag = RUSCWflag
+					}
+					clr_global_flag  = RUSCWflag
+				}
 
 				if = {
 					limit = {	

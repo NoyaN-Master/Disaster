@@ -6,7 +6,14 @@ soundeffect =
 	}
 	volume = 1
 }
-
+soundeffect =
+{
+	name = "ruscw"
+	sounds = {
+		sound = "ruscw"
+	}
+	volume = 1
+}
 soundeffect =
 {
 	name = "enver"

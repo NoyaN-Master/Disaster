@@ -191,5 +191,6 @@ country_event = { #CW start all cw breakaways should start under this event
 	option = {
 		name = russia.10.a
         custom_effect_tooltip = RUS_CW_TT
+		hidden_effect = {set_country_flag = RUS_CW_SPVENT_TRIGGER}
     }
 }

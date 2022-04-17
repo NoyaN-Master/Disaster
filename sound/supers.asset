@@ -11,7 +11,12 @@ sound = {
 	volume = 1
 	always_load = yes
 }
-
+sound = {
+	name = "ruscw"
+	file = "menu/ruscw.wav"
+	volume = 1
+	always_load = yes
+}
 
 sound = {
 	name = "samet"
