@@ -26,13 +26,29 @@ allow_wargoals = {
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
 	icon = "GFX_wargoals"
 	option = {
+		name = "ALWAYS_FREE"
+		text = RULE_OPTION_ALWAYS_FREE
+		desc = "RULE_ALLOW_WARGOALS_ALWAYS_FREE_DESC"
+	}
+	default = {
 		name = "FOCUSES_ONLY"
 		text = RULE_OPTION_FOCUSES_ONLY
 		desc = "RULE_ALLOW_WARGOALS_FOCUSES_ONLY_DESC"
 	}
+}
+
+armenia_content = {
+	name = "RULE_ARMENIA_CONTENT"
+	group = "RULE_GROUP_COUNTRY_SPECIFIC"
+	icon = "GFX_idea_ARM_Struggle_for_Existence"
 	option = {
-		name = "ALWAYS_FREE"
-		text = RULE_OPTION_ALWAYS_FREE
-		desc = "RULE_ALLOW_WARGOALS_ALWAYS_FREE_DESC"
+		name = "YES_ARMENIA"
+		text = RULE_OPTION_YES_ARMENIA
+		desc = "RULE_YES_ARMENIA_DESC"
+	}
+	default = {
+		name = "NO_ARMENIA"
+		text = RULE_OPTION_NO_ARMENIA
+		desc = "RULE_NO_ARMENIA_DESC"
 	}
 }

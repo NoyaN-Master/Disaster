@@ -761,6 +761,10 @@ focus_tree = {
    	 	target = KLG
     	type = annex_everything
 		}
+		declare_war_on = {
+   	 	target = CRW
+    	type = annex_everything
+		}
 		}
 	}
 	focus = {
