@@ -15,7 +15,16 @@ country_event = { #Introduction
 	option = {
 		name = enver.1.a
 		hidden_effect = {
-			add_timed_idea ={idea = CIB_homecoming days = 60}
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = ARM_content_yes
+					}
+				}
+				CIB = {
+					add_timed_idea ={idea = CIB_homecoming days = 60}
+				}
+			}
 		}
 	}
 }
