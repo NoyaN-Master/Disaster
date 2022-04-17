@@ -259,21 +259,17 @@ country_event = { #I HATE ARMENIA I HATE ARMENIA
 	
 	fire_only_once = yes
 
+	hidden = yes
 	trigger = {
-		is_ai = no
-		date = 1936.1.1
+		has_global_flag = ARM_content_yes
 	}
 	mean_time_to_happen = {
-		days = 1
-	}
-	option = { #sure
-		name = drlarm.10.a
+		days = 0
 	}
 	option = { #ok
-		name = drlarm.10.b
+		name = drlarm.10.a
 		ARM = {
-			load_focus_tree = default
-			remove_ideas = ARM_Struggle_for_Existence
-			remove_ideas = ARM_Lusignan_Debacle
+			load_focus_tree = DRL_Armenia
+		}
 	}
-}	
+}
