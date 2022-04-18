@@ -63,7 +63,7 @@ focus = {
 focus = {
 		id = SRF_Sabotage_Muslims
 		icon = GFX_goal_SRF_Orthodox
-		x = 5
+		x = 6
 		y = 6
 		cost = 4
 		prerequisite = { focus = SRF_The_Liberation_War }
@@ -111,7 +111,7 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		add_country_leader_trait = generallissimo_stalin	
+		add_country_leader_trait = SRF_generallissimo_stalin	
 		}
 	}		
 focus = {
@@ -196,22 +196,6 @@ focus = {
 		}
 	}
 focus = {
-		id = SRF_Expand_Organization
-		icon = GFX_goal_SRF_Student
-		x = 7
-		y = 6
-		cost = 3
-		available_if_capitulated = yes
-		prerequisite = { focus = SRF_The_Liberation_War }
-		ai_will_do = {
-			factor = 1
-		}
-		available = { has_war = no }
-		completion_reward = {
-		custom_effect_tooltip = rebels_tt	
-		}
-	}
-focus = {
 		id = SRF_Scare_Germans
 		icon = GFX_goal_SRF_Raid
 		x = 8
@@ -240,7 +224,6 @@ focus = {
 		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = SRF_Sabotage_Muslims }
-		prerequisite = { focus = SRF_Expand_Organization }
 		ai_will_do = {
 			factor = 1
 		}

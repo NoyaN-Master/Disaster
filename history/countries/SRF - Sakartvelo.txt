@@ -43,6 +43,7 @@ set_politics = {
 add_ideas = 	one_party_state 
 add_ideas = 	planned_economy
 add_ideas = 	post_industrialized_society
+add_ideas = extensive_conscription
 
 set_popularities = {
 	conservative = 0
@@ -70,9 +71,10 @@ create_country_leader = {
 	}
 }
 
+
 create_field_marshal = {
-	name = "Giorgi Mazniashvili"
-	picture = "gfx/leaders/SRF/SRF_Stalin.tga"
+	name = "Ioseb Jughashvili."
+	portrait_path = "gfx/leaders/SRF/SRF_Driptalin.tga"
 	traits = { war_hero  }
 	skill = 2
 	attack_skill = 3
