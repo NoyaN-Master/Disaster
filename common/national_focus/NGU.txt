@@ -827,9 +827,17 @@ focus = {
 		completion_reward = {
 			custom_effect_tooltip = NGU_baltics_tt
 		declare_war_on = {
-    	target = BLT
+    	target = LIT
     	type = annex_everything
-		}	
+		}
+		declare_war_on = {
+			target = LAT
+			type = annex_everything
+			}
+			declare_war_on = {
+				target = EST
+				type = annex_everything
+				}
 		}
 	}
 focus = {
