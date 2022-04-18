@@ -145,3 +145,36 @@ create_country_leader = {
 }
 
 ###################### generals
+
+
+create_dynamic_country = {
+	original_tag = RUS
+	set_country_flag = RUS_savinkov_russia_flag
+	set_politics = {
+		ruling_party = libertarian_socialist
+	}
+	set_popularities = {
+		social_democrat = 10
+		libertarian_socialist = 60
+		unisocialist = 20
+		revolutionary_nationalist = 3
+		revolutionary_anarchist = 7
+	}
+	set_cosmetic_tag = SAV
+	reserve_dynamic_country = yes
+}
+create_dynamic_country = {
+	original_tag = RUS
+	set_country_flag = RUS_red_guard_flag
+	set_politics = {
+		ruling_party = authoritarian_socialist
+	}
+	set_popularities = {
+		social_democrat = 5
+		libertarian_socialist = 25
+		authoritarian_socialist = 50
+		unisocialist = 20
+	}
+	set_cosmetic_tag = REG
+	reserve_dynamic_country = yes
+}
