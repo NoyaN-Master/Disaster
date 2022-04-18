@@ -39,8 +39,6 @@ focus_tree = {
 		}
 		completion_reward = {
 		country_event = { id = atsiz.2 }	 
-		hidden_effect = {
-		}
 		}
 	}
 
@@ -57,8 +55,6 @@ focus_tree = {
 		}
 		completion_reward = {
 		country_event = { id = atsiz.4 }	 
-		hidden_effect = {
-		}
 		}
 	}
 
@@ -79,8 +75,6 @@ focus_tree = {
         remove_idea = Atsiz_Discontent_Army_Subutais
         add_idea =  Atsiz_Discontent_Army_Subutais_2
         }	 
-		hidden_effect = {
-		}
 		}
 	}
 
@@ -101,12 +95,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		remove_idea = Atsiz_New_Regime_4
+		remove_ideas = Atsiz_New_Regime_4
 		add_stability = 0.10
 		add_manpower = -10000
 		#unlock_national_focus = WRF_MiddleEast_Plan 
-		hidden_effect = {
-		}
 		}
 	}
 
@@ -123,8 +115,6 @@ focus_tree = {
 		}
 		completion_reward = {
 		country_event = { id = atsiz.3 }	 
-		hidden_effect = {
-		}
 		}
 	}
 
@@ -146,8 +136,6 @@ focus_tree = {
         }
         add_manpower = 1000
         add_stability = 0.10 
-		hidden_effect = {
-		}
 		}
 	}
 
@@ -167,8 +155,6 @@ focus_tree = {
         remove_idea = Atsiz_New_Regime_3
         add_idea =  Atsiz_New_Regime_4
         }
-		hidden_effect = {
-		}
 		}
 	}
 	##post revolt
@@ -188,8 +174,6 @@ focus_tree = {
 		remove_idea = Atsiz_Discontent_Army_Subutais_2
 		add_idea = Atsiz_KorpsDeath	
 		}
-		hidden_effect = {
-		}
 		}
 	}
 
@@ -206,8 +190,6 @@ focus_tree = {
 		}
 		completion_reward = {
 		add_ideas = Atsiz_Dehumanize
-		hidden_effect = {
-		}
 		}
 	}
 
@@ -224,8 +206,6 @@ focus_tree = {
 		}
 		completion_reward = {
 		add_ideas = Atsiz_DaCult
-		hidden_effect = {
-		}
 		}
 	}
 
@@ -243,8 +223,6 @@ focus_tree = {
 		}
 		completion_reward = {
 		army_experience = 60
-		hidden_effect = {
-		}
 		}
 	}
 
@@ -262,8 +240,6 @@ focus_tree = {
 		}
 		completion_reward = {
 		add_ideas = Atsiz_Drugs
-		hidden_effect = {
-		}
 		}
 	}
 
@@ -282,8 +258,6 @@ focus_tree = {
 		swap_ideas = {
 		remove_idea = Atsiz_KorpsDeath
 		add_idea = Atsiz_KorpsDeath_Destruction	
-		}
-		hidden_effect = {
 		}
 		}
 	}
@@ -309,8 +283,6 @@ focus_tree = {
     	uses = 3
     	category = land_doctrine
 		}
-		hidden_effect = {
-		}
 		}
 	}
 
@@ -330,8 +302,6 @@ focus_tree = {
 		swap_ideas = {
 		remove_idea = Atsiz_KorpsDeath_Doctrine
 		add_idea = Atsiz_KorpsDeath_Fuel	
-		}
-		hidden_effect = {
 		}
 		}
 	}
@@ -354,8 +324,6 @@ focus_tree = {
 		add_idea = Atsiz_KorpsDeath_Eurasia	
 		}
 		#unlock_national_focus = WRF_Conquest_Iraq
-		hidden_effect = {
-		}
 		}
 	}
 
@@ -409,8 +377,6 @@ focus_tree = {
 		add_manpower = -10000	
 		}
 		add_experience = 70
-		hidden_effect = {
-		}
 		}
 	}
 	focus = {
@@ -426,8 +392,6 @@ focus_tree = {
 		}
 		completion_reward = {
 		swap_ruler_traits = { remove = bastion_evil add = bastion_evil_2 }
-		hidden_effect = {
-		}
 		}
 	}
 	focus = {
@@ -446,8 +410,6 @@ focus_tree = {
 		swap_ideas = {
 		remove_idea = Atsiz_Wolfic_Society
 		add_idea = 	Atsiz_Wolfic_Society_Fear
-		}
-		hidden_effect = {
 		}
 		}
 	}
@@ -469,8 +431,6 @@ focus_tree = {
 		remove_idea = Atsiz_New_Regime_4
 		add_idea = Atsiz_New_Regime_5	
 		}
-		hidden_effect = {
-		}
 		}
 	}
 	focus = {
@@ -487,8 +447,6 @@ focus_tree = {
 		completion_reward = {
 		add_stability = 0.10
 		add_manpower = -40000
-		hidden_effect = {
-		}
 		}
 	}
 	focus = {
@@ -504,8 +462,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		remove_idea = Atsiz_New_Regime_5
-		remove_idea = Atsiz_Enverist_Influence
+		remove_ideas = Atsiz_New_Regime_5
+		remove_ideas = Atsiz_Enverist_Influence
 		hidden_effect = {
 		}
 		}
