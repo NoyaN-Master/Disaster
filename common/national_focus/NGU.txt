@@ -414,34 +414,13 @@ focus = {
         focus = NGU_labor_camps    
         } 								
 		completion_reward = {
-		random_owned_state = {
-		add_building_construction = {
-    	type = infrastructure
-    	level = 10
-   		instant_build = yes
-		}
-		random_owned_state = {
-		add_building_construction = {
-    	type = infrastructure
-    	level = 10
-   		instant_build = yes
-		}
-		}
-		}
-		random_owned_state = {
-		add_building_construction = {
-    	type = infrastructure
-    	level = 10
-   		instant_build = yes
-		}
-		random_owned_state = {
-		add_building_construction = {
-    	type = infrastructure
-    	level = 10
-   		instant_build = yes
-		}
-		}
-		}
+		every_owned_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			}
 		}
 	}
 focus = {
@@ -848,9 +827,17 @@ focus = {
 		completion_reward = {
 			custom_effect_tooltip = NGU_baltics_tt
 		declare_war_on = {
-    	target = BLT
+    	target = LIT
     	type = annex_everything
-		}	
+		}
+		declare_war_on = {
+			target = LAT
+			type = annex_everything
+			}
+			declare_war_on = {
+				target = EST
+				type = annex_everything
+				}
 		}
 	}
 focus = {

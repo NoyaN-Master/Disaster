@@ -1,11 +1,40 @@
 ideas = {
 	country = {
+		SKL_untolerative_society = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
+			picture = martial_law
+			modifier = {
+			army_morale_factor = 0.10
+			stability_factor = -0.10
+			war_support_factor = 0.1
+			}
+		}
+			SKL_black_army = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
+			picture = CIB_OrduVatan
+			modifier = {
+			experience_gain_army = 0.1
+			stability_factor = -0.10
+			war_support_factor = 0.1
+			army_attack_factor = 0.01
+			conscription = 0.01
+			}
+		}
+		SKL_guerillas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ANT_Doomed_Youth" }
+			picture = TIT_Turkish_Discontent
+			modifier = {
+			stability_factor = -0.15
+			conscription = -0.02
+			production_factory_efficiency_gain_factor = -0.2
+			}
+		}		
 		SKL_turkish_united_front_1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_turkish_united_front_1" }
 			picture = SKL_turkish_united_front
 			modifier = {
-				resistance_growth_on_our_occupied_states = 0.75
-				resistance_target_on_our_occupied_states = 0.50
+				resistance_growth_on_our_occupied_states = -0.75
+				resistance_target_on_our_occupied_states = -0.50
 				consumer_goods_factor = 0.2
 				stability_weekly = -0.02
 				no_compliance_gain = 1
@@ -15,8 +44,8 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_turkish_united_front_2" }
 			picture = SKL_turkish_united_front
 			modifier = {
-				resistance_growth_on_our_occupied_states = 0.6
-				resistance_target_on_our_occupied_states = 0.35
+				resistance_growth_on_our_occupied_states = -0.6
+				resistance_target_on_our_occupied_states = -0.35
 				consumer_goods_factor = 0.2
 				stability_weekly = -0.01
 				no_compliance_gain = 1
@@ -26,8 +55,8 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_turkish_united_front_3" }
 			picture = SKL_turkish_united_front
 			modifier = {
-				resistance_growth_on_our_occupied_states = 0.5
-				resistance_target_on_our_occupied_states = 0.3
+				resistance_growth_on_our_occupied_states = -0.5
+				resistance_target_on_our_occupied_states = -0.3
 				consumer_goods_factor = 0.15
 				stability_weekly = -0.01
 				no_compliance_gain = 1
@@ -37,8 +66,8 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SKL_turkish_united_front_4" }
 			picture = SKL_turkish_united_front
 			modifier = {
-				resistance_growth_on_our_occupied_states = 0.35
-				resistance_target_on_our_occupied_states = 0.2
+				resistance_growth_on_our_occupied_states = -0.35
+				resistance_target_on_our_occupied_states = -0.2
 				consumer_goods_factor = 0.1
 				no_compliance_gain = 1
 			}

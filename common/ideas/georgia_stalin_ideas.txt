@@ -22,7 +22,6 @@ SRF_National_War = {
 			picture = modern_army
 			modifier = {
             stability_factor = -0.15
-            conscription = -0.02
             army_morale_factor = -0.05
 			}
 		}

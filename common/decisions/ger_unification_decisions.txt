@@ -1,4 +1,76 @@
 GER_unification_decisions = {
+	 GER_integrate_AUT_generals = {
+	 cost = 100
+		visible = {
+		NOT = {tag = AUT}
+		}
+	 	available = {
+			NOT = {tag = AUT}
+			NOT = {AUT = {exists = yes}}
+			813 = {is_owned_and_controlled_by = ROOT }
+			}
+          fire_only_once = yes	 
+          remove_effect = {
+		  AUT = { every_unit_leader = { set_nationality = ROOT } }
+		  }	 
+        ai_will_do = {
+			factor = 1000
+		}	 
+	 }
+	 GER_integrate_PRE_generals = {
+	 cost = 100
+		visible = {
+		NOT = {tag = PRE}
+		}
+	 	available = {
+			NOT = {tag = PRE}
+			NOT = {PRE = {exists = yes}}
+			64 = {is_owned_and_controlled_by = ROOT }
+			}
+          fire_only_once = yes	 
+          remove_effect = {
+		  PRE = { every_unit_leader = { set_nationality = ROOT } }
+		  }	 
+        ai_will_do = {
+			factor = 1000
+		}	 
+	 }
+	 GER_integrate_NGU_generals = {
+	 cost = 100
+	 	visible = {
+		NOT = {tag = NGU}
+		}
+	 	available = {
+			NOT = {tag = NGU}
+			NOT = {NGU = {exists = yes}}
+			59 = {is_owned_and_controlled_by = ROOT }
+			}
+          fire_only_once = yes	 
+          remove_effect = {
+		  NGU = { every_unit_leader = { set_nationality = ROOT } }
+		  }	 
+        ai_will_do = {
+			factor = 1000
+		}	 
+	 }
+	 GER_integrate_BAY_generals = {
+		cost = 100
+	 	 	visible = {
+		NOT = {tag = BAY}
+		}
+	 	available = {
+			NOT = {tag = BAY}
+			NOT = {BAY = {exists = yes}}
+			52 = {is_owned_and_controlled_by = ROOT }
+			}
+          fire_only_once = yes	 
+          remove_effect = {
+		  BAY = { every_unit_leader = { set_nationality = ROOT } }
+		  }	 
+        ai_will_do = {
+			factor = 1000
+		}	 
+	 }
 	 GER_for_germany_liberal = {
 		visible = { has_government = liberal
                     NOT = { has_country_flag = PRE_formed_greater_germany}          
@@ -20,8 +92,6 @@ GER_unification_decisions = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
 			set_cosmetic_tag = GER_small
 			set_country_flag = GER_small_created
-			NGU = { every_unit_leader = { set_nationality = PRE } }
-			BAV = { every_unit_leader = { set_nationality = PRE } }
           }	 
         ai_will_do = {
 			factor = 1000
@@ -48,8 +118,6 @@ GER_unification_decisions = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
 			set_cosmetic_tag = GER_small
 			set_country_flag = GER_small_created
-			NGU = { every_unit_leader = { set_nationality = PRE } }
-			BAV = { every_unit_leader = { set_nationality = PRE } }
           }	
         ai_will_do = {
 			factor = 1000
@@ -75,8 +143,6 @@ GER_unification_decisions = {
           remove_effect = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
 			set_cosmetic_tag = GER_small
-			NGU = { every_unit_leader = { set_nationality = PRE } }
-			BAV = { every_unit_leader = { set_nationality = PRE } }
           }	 
         ai_will_do = {
 			factor = 1000
@@ -103,8 +169,6 @@ GER_unification_decisions = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
 			set_cosmetic_tag = GER_small
 			set_country_flag = GER_small_created
-			NGU = { every_unit_leader = { set_nationality = PRE } }
-			BAV = { every_unit_leader = { set_nationality = PRE } }
           }	 
         ai_will_do = {
 			factor = 1000
@@ -132,8 +196,6 @@ GER_unification_decisions = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
 			set_cosmetic_tag = GER_small
 			set_country_flag = GER_small_created
-			NGU = { every_unit_leader = { set_nationality = PRE } }
-			BAV = { every_unit_leader = { set_nationality = PRE } }
           }	 
         ai_will_do = {
 			factor = 1000
@@ -162,8 +224,6 @@ GER_unification_decisions = {
 			drop_cosmetic_tag = yes
 			set_cosmetic_tag = NGU_HitlerGermany
 			set_country_flag = goebbels_unification
-			PRE = { every_unit_leader = { set_nationality = NGU } }
-			BAV = { every_unit_leader = { set_nationality = NGU } }
 			country_event = { id = super.10}
           }	 
         ai_will_do = {
@@ -192,8 +252,6 @@ GER_unification_decisions = {
           complete_effect = {
 			set_cosmetic_tag = NGU_StrasserGermany
 			set_country_flag = goebbels_unification
-			PRE = { every_unit_leader = { set_nationality = NGU } }
-			BAV = { every_unit_leader = { set_nationality = NGU } }
           }	 
         ai_will_do = {
 			factor = 1000

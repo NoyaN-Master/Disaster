@@ -484,8 +484,8 @@ focus_tree = {
 		}
 		available_if_capitulated = no
 		completion_reward = {
+			random_owned_state = {
 			add_extra_state_shared_building_slots = 2
-			random_state = {
 				add_building_construction = {
 					type = industrial_complex 
 					level = 2
@@ -694,16 +694,16 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = SKL_race_heirarchy
+			random_owned_state = {
 			add_extra_state_shared_building_slots = 2
-			random_state = {
 				add_building_construction = {
 					type = arms_factory 
 					level = 2
 					instant_build = yes
 				}
 			}
+			random_owned_state = {
 			add_extra_state_shared_building_slots = 2
-			random_state = {
 				add_building_construction = {
 					type = industrial_complex 
 					level = 2
@@ -872,9 +872,9 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = SKL_merge_two_ideas_tt
 			hidden_effect = {
-				add_idea = SKL_breakthrough_cult
-				remove_idea = SKL_mobility_focus
-				remove_idea = SKL_armored_monsters
+				add_ideas = SKL_breakthrough_cult
+				remove_ideas = SKL_mobility_focus
+				remove_ideas = SKL_armored_monsters
 			}
 		}
 	}
@@ -895,9 +895,9 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = SKL_merge_two_ideas_tt
 			hidden_effect = {
-				add_idea = SKL_victory_first
-				remove_idea = SKL_black_brigades
-				remove_idea = SKL_spartan_spirit
+				add_ideas = SKL_victory_first
+				remove_ideas = SKL_black_brigades
+				remove_ideas = SKL_spartan_spirit
 			}
         }
 	}
@@ -938,13 +938,13 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						ruling_party = revolutionary_nationalist
+						has_government = revolutionary_nationalist
 					}
 					set_cosmetic_tag = SKL_macedon
 				}
 				if = {
 					limit = {
-						ruling_party = esoteric_traditionalist
+						has_government = esoteric_traditionalist
 					}
 					set_cosmetic_tag = SKL_eso_macedon
 				}
