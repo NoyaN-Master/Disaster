@@ -5,7 +5,7 @@ country_event = { #Jan 19 bombing
 	title = russia.1.t
 	desc = russia.1.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	picture = ""
 
 	fire_only_once = yes
 
@@ -13,7 +13,7 @@ country_event = { #Jan 19 bombing
 
 	option = {
 		name = russia.1.a
-        add_manpower = -547
+        add_manpower = -7
         add_stability = -0.35
         add_war_support = -0.15
     }
@@ -23,15 +23,15 @@ country_event = { #kill all reds
 	title = russia.2.t
 	desc = russia.2.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	picture = ""
 
 	fire_only_once = yes
 
 	is_triggered_only = yes
 
 	option = {
-		name = russia.1.a
-        add_ideas = RUS_red_crackdown
+		name = russia.2.a
+        add_ideas = RUS_red_killing
         add_stability = -0.2
         add_war_support = -0.15
     }
@@ -41,7 +41,7 @@ country_event = { #duma protests
 	title = russia.3.t
 	desc = russia.3.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	picture = ""
 
 	fire_only_once = yes
 
@@ -61,7 +61,7 @@ country_event = { #protests
 	title = russia.4.t
 	desc = russia.4.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	picture = ""
 
 	fire_only_once = yes
 
@@ -78,7 +78,7 @@ country_event = { #supreme ruler
 	title = russia.5.t
 	desc = russia.5.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	picture = ""
 
 	fire_only_once = yes
 
@@ -96,7 +96,7 @@ country_event = { #reds fight back
 	title = russia.6.t
 	desc = russia.6.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	picture = ""
 
 	fire_only_once = yes
 
@@ -115,7 +115,7 @@ country_event = { #duma no spine
 	title = russia.7.t
 	desc = russia.7.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	picture = ""
 
 	fire_only_once = yes
 
@@ -131,7 +131,7 @@ country_event = { #army dessertion
 	title = russia.8.t
 	desc = russia.8.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	picture = ""
 
 	fire_only_once = yes
 
@@ -153,7 +153,7 @@ country_event = { #reds organising
 	title = russia.9.t
 	desc = russia.9.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	picture = ""
 
 	fire_only_once = yes
 
@@ -182,7 +182,7 @@ country_event = { #CW start all cw breakaways should start under this event
 	title = russia.10.t
 	desc = russia.10.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	picture = ""
 
 	fire_only_once = yes
 
@@ -200,7 +200,7 @@ country_event = { #SOCIALIST BREAK AWAY
 	title = russia.11.t
 	desc = russia.11.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	picture = ""
 
 	fire_only_once = yes
 
