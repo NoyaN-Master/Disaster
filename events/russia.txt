@@ -211,3 +211,20 @@ country_event = { #SOCIALIST BREAK AWAY
 		hidden_effect = {country_event ={id = russia.12 days = 1}}
     }
 }
+country_event = { #funeral
+	id = russia.13
+	title = russia.13.t
+	desc = russia.13.d
+
+	picture = ""
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.13.a
+		add_stability = 0.05
+		add_war_support = 0.05
+    }
+}
