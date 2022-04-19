@@ -3,7 +3,7 @@ ideas = {
 country = {
 
 RUS_army_disloyalty = {
-			picture = CIB_OrduVatan
+			picture = discontent
 			modifier = {
 				recruitable_population_factor = -0.25
 				army_attack_factor = -0.20
@@ -16,7 +16,7 @@ RUS_army_disloyalty = {
 			}
 		}
 RUS_mass_terror = {
-			picture = CIB_OrduVatan
+			picture = political_radicalisation
 			modifier = {
 				industry_repair_factor = -0.15
 				production_speed_buildings_factor = -0.35
@@ -37,7 +37,7 @@ RUS_pogromes = {
 			}
 		}
 RUS_mass_riots = {
-			picture = CIB_OrduVatan
+			picture = CRW_Gang_Unrest
 			modifier = {
 				stability_weekly = -0.01
 				war_support_weekly = -0.01
@@ -48,26 +48,24 @@ RUS_mass_riots = {
 			}
 		}
 RUS_supreme_leader = {
-			picture = CIB_OrduVatan
+			picture = martial_law
 			modifier = {
 				recruitable_population_factor = -0.4
 				political_power_factor = 0.25
 			}
 		}
 RUS_red_clashes = {
-			picture = CIB_OrduVatan
+			picture = RUS_red_clashes
 			modifier = {
 				recruitable_population_factor = -0.4
 				political_power_factor = -0.25
 			}
 		}
 RUS_red_killing = {
-			picture = CIB_OrduVatan
+			picture = socialist_purge
 			modifier = {
 				weekly_manpower = -1250
 			}
 		}
 }
-
-
 }
