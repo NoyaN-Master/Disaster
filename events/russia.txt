@@ -16,6 +16,7 @@ country_event = { #Jan 19 bombing
         add_manpower = -7
         add_stability = -0.35
         add_war_support = -0.15
+		hidden_effect = {country_event = {id = russia.13 days = 7}}
     }
 }
 country_event = { #kill all reds
