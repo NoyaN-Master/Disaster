@@ -3,7 +3,7 @@ ideas = {
 country = {
 
 RUS_army_disloyalty = {
-			picture = discontent
+			picture = RUS_army_disloyalty
 			modifier = {
 				recruitable_population_factor = -0.25
 				army_attack_factor = -0.20
@@ -16,7 +16,7 @@ RUS_army_disloyalty = {
 			}
 		}
 RUS_mass_terror = {
-			picture = political_radicalisation
+			picture = RUS_mass_terror
 			modifier = {
 				industry_repair_factor = -0.15
 				production_speed_buildings_factor = -0.35
@@ -48,7 +48,7 @@ RUS_mass_riots = {
 			}
 		}
 RUS_supreme_leader = {
-			picture = martial_law
+			picture = RUS_supreme_ruler
 			modifier = {
 				recruitable_population_factor = -0.4
 				political_power_factor = 0.25
@@ -62,7 +62,7 @@ RUS_red_clashes = {
 			}
 		}
 RUS_red_killing = {
-			picture = socialist_purge
+			picture = RUS_red_killing
 			modifier = {
 				weekly_manpower = -1250
 			}
