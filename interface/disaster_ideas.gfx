@@ -5,6 +5,10 @@ spriteTypes = {
 	#### Ideas GFX ####
 	###################
 	spriteType = {
+		name = "GFX_idea_RUS_jew_deporatation"
+		texturefile = "gfx/interface/ideas/RUS_jew_deporatation.png"
+	}
+	spriteType = {
 		name = "GFX_idea_BAY_BAVARIA_DEFENSE"
 		texturefile = "gfx/interface/ideas/BAY_BAVARIA_DEFENSE.png"
 	}
