@@ -64,7 +64,7 @@ if = {
 		freedom_level = 0.35
 	}
 	set_autonomy = {
-		target = BLT
+		target = EST
 		autonomous_state = autonomy_colony
 		freedom_level = 0.4
 	}
@@ -86,7 +86,7 @@ if = {
 	else = {
 		puppet = UKR
 		puppet = LAT
-		puppet = BLT
+		puppet = EST
 		puppet = QAZ
 		puppet = BYR
 		puppet = TRK
