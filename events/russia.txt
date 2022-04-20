@@ -5,7 +5,7 @@ country_event = { #Jan 19 bombing
 	title = russia.1.t
 	desc = russia.1.d
 
-	picture = ""
+	#
 
 	fire_only_once = yes
 
@@ -24,7 +24,7 @@ country_event = { #kill all reds
 	title = russia.2.t
 	desc = russia.2.d
 
-	picture = ""
+	#
 
 	fire_only_once = yes
 
@@ -42,7 +42,7 @@ country_event = { #duma protests
 	title = russia.3.t
 	desc = russia.3.d
 
-	picture = ""
+	#
 
 	fire_only_once = yes
 
@@ -62,7 +62,7 @@ country_event = { #protests
 	title = russia.4.t
 	desc = russia.4.d
 
-	picture = ""
+	#
 
 	fire_only_once = yes
 
@@ -79,7 +79,7 @@ country_event = { #supreme ruler
 	title = russia.5.t
 	desc = russia.5.d
 
-	picture = ""
+	#
 
 	fire_only_once = yes
 
@@ -97,7 +97,7 @@ country_event = { #reds fight back
 	title = russia.6.t
 	desc = russia.6.d
 
-	picture = ""
+	#
 
 	fire_only_once = yes
 
@@ -116,7 +116,7 @@ country_event = { #duma no spine
 	title = russia.7.t
 	desc = russia.7.d
 
-	picture = ""
+	#
 
 	fire_only_once = yes
 
@@ -132,7 +132,7 @@ country_event = { #army dessertion
 	title = russia.8.t
 	desc = russia.8.d
 
-	picture = ""
+	#
 
 	fire_only_once = yes
 
@@ -154,7 +154,7 @@ country_event = { #reds organising
 	title = russia.9.t
 	desc = russia.9.d
 
-	picture = ""
+	#
 
 	fire_only_once = yes
 
@@ -183,7 +183,7 @@ country_event = { #CW start all cw breakaways should start under this event
 	title = russia.10.t
 	desc = russia.10.d
 
-	picture = ""
+	#
 
 	fire_only_once = yes
 
@@ -192,16 +192,16 @@ country_event = { #CW start all cw breakaways should start under this event
 	option = {
 		name = russia.10.a
         custom_effect_tooltip = RUS_CW_TT
-		hidden_effect = {set_country_flag = RUS_CW_SPVENT_TRIGGER}
 		hidden_effect = {country_event ={id = russia.11 days = 2}}
+		hidden_effect = {set_country_flag = RUS_savinkov_russia_flag}
     }
 }
-country_event = { #SOCIALIST BREAK AWAY
+country_event = { #SAVINKOV BREAK AWAY
 	id = russia.11
 	title = russia.11.t
 	desc = russia.11.d
 
-	picture = ""
+	#
 
 	fire_only_once = yes
 
@@ -210,6 +210,49 @@ country_event = { #SOCIALIST BREAK AWAY
 	option = {
 		name = russia.11.a
 		hidden_effect = {country_event ={id = russia.12 days = 1}}
+		hidden_effect = {set_country_flag = RUS_CW_SPVENT_TRIGGER}
+		hidden_effect = {
+			SAV = {
+				transfer_state = 208
+				transfer_state = 209
+				transfer_state = 565
+				transfer_state = 210
+				transfer_state = 828
+				transfer_state = 207
+				transfer_state = 206
+				transfer_state = 204
+				transfer_state = 241
+				transfer_state = 243
+				transfer_state = 263
+				transfer_state = 246
+				transfer_state = 829
+				transfer_state = 242
+				transfer_state = 205
+			}
+		}
+    }
+	option = {
+		name = russia.11.b
+		hidden_effect = {country_event ={id = russia.12 days = 1}}
+		hidden_effect = {set_country_flag = RUS_CW_SPVENT_TRIGGER}
+		hidden_effect = {
+			SAV = {
+				transfer_state = 208
+				transfer_state = 209
+				transfer_state = 565
+				transfer_state = 210
+				transfer_state = 828
+				transfer_state = 207
+				transfer_state = 206
+				transfer_state = 204
+				transfer_state = 241
+				transfer_state = 243
+				transfer_state = 263
+				transfer_state = 246
+				transfer_state = 829
+				transfer_state = 242
+				transfer_state = 205
+		}
     }
 }
 country_event = { #funeral
@@ -217,7 +260,7 @@ country_event = { #funeral
 	title = russia.13.t
 	desc = russia.13.d
 
-	picture = ""
+	#
 
 	fire_only_once = yes
 
