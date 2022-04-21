@@ -670,9 +670,11 @@ PRI:0 "Priamurye Government"
 PRI_DEF:0 "the Priamurye District of the Far East"
 PRI_ADJ:0 "Priamuryian"
 
-KAR:0 "Karakorum"
-KAR_DEF:0 "the Altai Confederation"
+KAR:0 "Altai"
+KAR_DEF:0 "Altai"
 KAR_ADJ:0 "Altaic"
+KAR_esoteric_traditionalist:0 "Karakorum"
+KAR_esoteric_traditionalist_DEF:0 "the Confederated Republic of Altai"
 
 SAV:0 "Green Revolt"
 SAV_DEF:0 "the Green Revolt"

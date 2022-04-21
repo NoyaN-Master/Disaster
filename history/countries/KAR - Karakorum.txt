@@ -61,7 +61,7 @@ set_politics = {
 	ruling_party = esoteric_traditionalist
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 
 }
 set_popularities = {
@@ -72,9 +72,9 @@ set_popularities = {
 	authoritarian_socialist = 0
 	unisocialist = 0
 	authoritarian_democrat = 0
-	autocratic = 0
+	autocratic = 45
 	ultranationalist = 0
-	revolutionary_nationalist = 45
+	revolutionary_nationalist = 0
 	esoteric_traditionalist = 55
 	revolutionary_anarchist = 0
 }
@@ -89,7 +89,7 @@ post_industrialized_society
 
 
 create_country_leader = {
-	name = "Vasily Anuchin"
+	name = "Grigory Gurkin"
 	picture = ""
 	expire = "1965.1.1"
 	ideology = esoteric_traditionalist_subideology
