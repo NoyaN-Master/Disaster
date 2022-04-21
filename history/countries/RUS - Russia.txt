@@ -93,11 +93,8 @@ if = {
 	}
 }
 
-
-
-
 set_research_slots = 4
-set_convoys = 50
+set_convoys = 145
 set_stability = 0.50
 set_war_support = 0.50
 
@@ -125,11 +122,11 @@ set_popularities = {
 }
 
 add_ideas = {
-extensive_conscription
-partial_economic_mobilisation
-autocracy 
-interventionism 
-post_industrialized_society
+	extensive_conscription
+	partial_economic_mobilisation
+	autocracy 
+	interventionism 
+	semi_industrial_society
 }
 add_ideas = RUS_army_disloyalty
 add_ideas = RUS_mass_terror
@@ -143,5 +140,154 @@ create_country_leader = {
 	traits = {
 	}
 }
+create_country_leader = {
+	name = "Mikhail Diterikhs"
+	picture = "gfx/leaders/PRI/PRI_Mikhail_Diterikhs.tga"
+	expire = "1965.1.1"
+	ideology = esoteric_traditionalist_subideology
+	traits = {
+	}
+}
 
 ###################### generals
+
+
+create_dynamic_country = {
+	original_tag = RUS
+	set_country_flag = RUS_savinkov_russia_flag
+	set_politics = {
+		ruling_party = libertarian_socialist
+		elections_allowed = no
+	}
+	set_popularities = {
+		social_democrat = 10
+		libertarian_socialist = 60
+		unisocialist = 20
+		revolutionary_nationalist = 3
+		revolutionary_anarchist = 7
+	}
+	create_country_leader = {
+		name = "Boris Savinkov"
+		picture = "gfx/leaders/RUS/RUS_Boris_Savinkov.png"
+		expire = "1965.1.1"
+		ideology = libertarian_socialist_subideology
+		traits = {
+		}
+	}
+	add_ideas = {
+		extensive_conscription
+		partial_economic_mobilisation
+		warlord 
+		interventionism 
+		semi_industrial_society
+	}
+	set_capital = {state = 257}
+	set_cosmetic_tag = SAV
+	reserve_dynamic_country = yes
+	every_state = {
+		remove_core_of = PREV
+	}
+}
+create_dynamic_country = {
+	original_tag = RUS
+	set_country_flag = RUS_red_guard_flag
+	set_politics = {
+		ruling_party = authoritarian_socialist
+		elections_allowed = no
+	}
+	create_country_leader = {
+		name = "Andrei Vlasov"
+		picture = "gfx/leaders/RUS/RUS_Andrey_Vlasov.png"
+		expire = "1965.1.1"
+		ideology = authoritarian_socialist_subideology
+		traits = {
+		}
+	}
+	set_popularities = {
+		social_democrat = 5
+		libertarian_socialist = 25
+		authoritarian_socialist = 50
+		unisocialist = 20
+	}
+	add_ideas = {
+		extensive_conscription
+		partial_economic_mobilisation
+		military_government 
+		planned_economy 
+		semi_industrial_society
+	}
+	set_cosmetic_tag = REG
+	reserve_dynamic_country = yes
+	every_state = {
+		remove_core_of = PREV
+	}
+}	
+create_dynamic_country = {
+	original_tag = RUS
+	set_country_flag = RUS_priamurye_flag
+	set_politics = {
+		ruling_party = esoteric_traditionalist
+		elections_allowed = no
+	}
+	set_popularities = {
+		autocratic = 10
+		ultranationalist = 20
+		revolutionary_nationalist = 30
+		esoteric_traditionalist = 40
+	}
+	create_country_leader = {
+		name = "Mikhail Diterikhs"
+		picture = "gfx/leaders/PRI/PRI_Mikhail_Diterikhs.tga"
+		expire = "1965.1.1"
+		ideology = esoteric_traditionalist_subideology
+		traits = {
+		}
+	}
+	add_ideas = {
+		extensive_conscription
+		partial_economic_mobilisation
+		military_government 
+		interventionism 
+		semi_industrial_society
+	}
+	set_capital = {state = 408}
+	set_cosmetic_tag = PRI
+	reserve_dynamic_country = yes
+	every_state = {
+		remove_core_of = PREV
+	}
+}
+create_dynamic_country = {
+	original_tag = RUS
+	set_country_flag = RUS_red_partisans_flag
+	set_politics = {
+		ruling_party = authoritarian_socialist
+		elections_allowed = no
+	}
+	create_country_leader = {
+		name = "Sergey Lazo"
+		picture = ""
+		expire = "1965.1.1"
+		ideology = authoritarian_socialist_subideology
+		traits = {
+		}
+	}
+	set_popularities = {
+		social_democrat = 10
+		libertarian_socialist = 40
+		authoritarian_socialist = 50
+	}
+	add_ideas = {
+		extensive_conscription
+		partial_economic_mobilisation
+		military_government 
+		interventionism 
+		semi_industrial_society
+	}
+	set_capital = {state = 408}
+	set_cosmetic_tag = PRT
+	reserve_dynamic_country = yes
+	every_state = {
+		remove_core_of = PREV
+	}
+}

@@ -193,7 +193,6 @@ country_event = { #CW start all cw breakaways should start under this event
 		name = russia.10.a
         custom_effect_tooltip = RUS_CW_TT
 		hidden_effect = { country_event = { id = russia.11 days = 2 } }
-		hidden_effect = { set_country_flag = RUS_savinkov_russia_flag }
 		hidden_effect = {
 			LAT = {
 				end_puppet = RUS
@@ -235,71 +234,29 @@ country_event = { #SAVINKOV BREAK AWAY
 		}
 		hidden_effect = {set_country_flag = RUS_CW_SPVENT_TRIGGER}
 		hidden_effect = {
-			208 = {
+			every_state = {
+				limit = {
+					is_core_of = RUS
+				}
 				add_core_of = SAV
-			}
-			209 = {
-				add_core_of = SAV
-			}
-			565 = {
-				add_core_of = SAV
-			}
-			210 = {
-				add_core_of = SAV
-			}
-			828 = {
-				add_core_of = SAV
-			}
-			207 = {
-				add_core_of = SAV
-			}
-			206 = {
-				add_core_of = SAV
-			}
-			204 = {
-				add_core_of = SAV
-			}
-			241 = {
-				add_core_of = SAV
-			}
-			243 = {
-				add_core_of = SAV
-			}
-			263 = {
-				add_core_of = SAV
-			}
-			246 = {
-				add_core_of = SAV
-			}
-			829 = {
-				add_core_of = SAV
-			}
-			242 = {
-				add_core_of = SAV
-			}
-			205 = {
-				add_core_of = SAV
-			}
-			223 = {
-				add_core_of = SAV
-			}
+			}	
 			SAV = {
-				transfer_state = 208
-				transfer_state = 209
-				transfer_state = 565
-				transfer_state = 210
 				transfer_state = 828
 				transfer_state = 207
 				transfer_state = 206
 				transfer_state = 204
 				transfer_state = 241
 				transfer_state = 243
-				transfer_state = 263
-				transfer_state = 246
-				transfer_state = 829
 				transfer_state = 242
 				transfer_state = 205
 				transfer_state = 223
+				transfer_state = 258
+				transfer_state = 257
+				transfer_state = 254
+				transfer_state = 224
+				transfer_state = 220
+				transfer_state = 222
+				transfer_state = 260
 			}
 		}
     }
@@ -310,73 +267,29 @@ country_event = { #SAVINKOV BREAK AWAY
 		hidden_effect = {
 			SAV = {change_tag_from = RUS}
 
-			208 = {
+			every_state = {
+				limit = {
+					is_core_of = RUS
+				}
 				add_core_of = SAV
-			}
-			209 = {
-				add_core_of = SAV
-			}
-			565 = {
-				add_core_of = SAV
-			}
-			210 = {
-				add_core_of = SAV
-			}
-			828 = {
-				add_core_of = SAV
-			}
-			207 = {
-				add_core_of = SAV
-			}
-			206 = {
-				add_core_of = SAV
-			}
-			204 = {
-				add_core_of = SAV
-			}
-			241 = {
-				add_core_of = SAV
-			}
-			243 = {
-				add_core_of = SAV
-			}
-			263 = {
-				add_core_of = SAV
-			}
-			246 = {
-				add_core_of = SAV
-			}
-			829 = {
-				add_core_of = SAV
-			}
-			242 = {
-				add_core_of = SAV
-			}
-			205 = {
-				add_core_of = SAV
-			}
-			223 = {
-				add_core_of = SAV
-			}
+			}	
 			SAV = {
-				transfer_state = 208
-				transfer_state = 209
-				transfer_state = 565
-				transfer_state = 210
 				transfer_state = 828
 				transfer_state = 207
 				transfer_state = 206
 				transfer_state = 204
 				transfer_state = 241
 				transfer_state = 243
-				transfer_state = 263
-				transfer_state = 246
-				transfer_state = 829
 				transfer_state = 242
 				transfer_state = 205
 				transfer_state = 223
-				
-				
+				transfer_state = 258
+				transfer_state = 257
+				transfer_state = 254
+				transfer_state = 224
+				transfer_state = 220
+				transfer_state = 222
+				transfer_state = 260
 			}
     	}
 	}
@@ -397,6 +310,7 @@ country_event = { #Kuban breaks off
 			KUB = {
 				transfer_state = 234
 				transfer_state = 235
+				transfer_state = 237
 			}
 			234 = {
 				add_core_of = KUB
@@ -414,6 +328,7 @@ country_event = { #Kuban breaks off
 			KUB = {
 				transfer_state = 234
 				transfer_state = 235
+				transfer_state = 237
 			}
 			234 = {
 				add_core_of = KUB
@@ -496,6 +411,12 @@ country_event = { #Red Guard breaks off
 		name = russia.16.a
 		hidden_effect = {country_event ={id = russia.17 days = 1}}
 		hidden_effect = {
+			every_state = {
+				limit = {
+					is_core_of = RUS
+				}
+				add_core_of = REG
+			}
 			REG = {
 				transfer_state = 219
 				transfer_state = 836
@@ -507,52 +428,9 @@ country_event = { #Red Guard breaks off
 				transfer_state = 214
 				transfer_state = 262
 				transfer_state = 397
-				transfer_state = 398
 				transfer_state = 399
 				transfer_state = 400
 				transfer_state = 837
-			}
-			219 = {
-				add_core_of = REG
-			}
-			836 = {
-				add_core_of = REG
-			}
-			247 = {
-				add_core_of = REG
-			}
-			248 = {
-				add_core_of = REG
-			}
-			253 = {
-				add_core_of = REG
-			}
-			252 = {
-				add_core_of = REG
-			}
-			351 = {
-				add_core_of = REG
-			}
-			214 = {
-				add_core_of = REG
-			}
-			262 = {
-				add_core_of = REG
-			}
-			397 = {
-				add_core_of = REG
-			}
-			398 = {
-				add_core_of = REG
-			}
-			399 = {
-				add_core_of = REG
-			}
-			400 = {
-				add_core_of = REG
-			}
-			837 = {
-				add_core_of = REG
 			}
 		}
     }
@@ -572,51 +450,14 @@ country_event = { #Red Guard breaks off
 				transfer_state = 214
 				transfer_state = 262
 				transfer_state = 397
-				transfer_state = 398
 				transfer_state = 399
 				transfer_state = 400
 				transfer_state = 837
 			}
-			219 = {
-				add_core_of = REG
-			}
-			836 = {
-				add_core_of = REG
-			}
-			247 = {
-				add_core_of = REG
-			}
-			248 = {
-				add_core_of = REG
-			}
-			253 = {
-				add_core_of = REG
-			}
-			252 = {
-				add_core_of = REG
-			}
-			351 = {
-				add_core_of = REG
-			}
-			214 = {
-				add_core_of = REG
-			}
-			262 = {
-				add_core_of = REG
-			}
-			397 = {
-				add_core_of = REG
-			}
-			398 = {
-				add_core_of = REG
-			}
-			399 = {
-				add_core_of = REG
-			}
-			400 = {
-				add_core_of = REG
-			}
-			837 = {
+			every_state = {
+				limit = {
+					is_core_of = RUS
+				}
 				add_core_of = REG
 			}
 		}
@@ -654,6 +495,10 @@ country_event = { #URAL breaks off
 				transfer_state = 582
 				transfer_state = 651
 				transfer_state = 652
+				transfer_state = 572
+				transfer_state = 653
+				transfer_state = 573
+				transfer_state = 398
 			}
 			582 = {
 				add_core_of = URA
@@ -662,6 +507,18 @@ country_event = { #URAL breaks off
 				add_core_of = URA
 			}
 			652 = {
+				add_core_of = URA
+			}
+			572 = {
+				add_core_of = URA
+			}
+			653 = {
+				add_core_of = URA
+			}
+			573 = {
+				add_core_of = URA
+			}
+			398 = {
 				add_core_of = URA
 			}
 		}
@@ -675,6 +532,10 @@ country_event = { #URAL breaks off
 				transfer_state = 582
 				transfer_state = 651
 				transfer_state = 652
+				transfer_state = 572
+				transfer_state = 653
+				transfer_state = 573
+				transfer_state = 398
 			}
 			582 = {
 				add_core_of = URA
@@ -683,6 +544,18 @@ country_event = { #URAL breaks off
 				add_core_of = URA
 			}
 			652 = {
+				add_core_of = URA
+			}
+			572 = {
+				add_core_of = URA
+			}
+			653 = {
+				add_core_of = URA
+			}
+			573 = {
+				add_core_of = URA
+			}
+			398 = {
 				add_core_of = URA
 			}
 		}
@@ -702,9 +575,6 @@ country_event = { #SIBERIA breaks off
 		hidden_effect = {country_event ={id = russia.19 days = 1}}
 		hidden_effect = {
 			SIB = {
-				transfer_state = 572
-				transfer_state = 653
-				transfer_state = 573
 				transfer_state = 581
 				transfer_state = 579
 				transfer_state = 580
@@ -722,15 +592,6 @@ country_event = { #SIBERIA breaks off
 				transfer_state = 567
 				transfer_state = 566
 				transfer_state = 575
-			}
-			572 = {
-				add_core_of = SIB
-			}
-			653 = {
-				add_core_of = SIB
-			}
-			573 = {
-				add_core_of = SIB
 			}
 			581 = {
 				add_core_of = SIB
@@ -791,9 +652,6 @@ country_event = { #SIBERIA breaks off
 		hidden_effect = {
 			SIB = {change_tag_from = RUS}
 			SIB = {
-				transfer_state = 572
-				transfer_state = 653
-				transfer_state = 573
 				transfer_state = 581
 				transfer_state = 579
 				transfer_state = 580
@@ -811,15 +669,6 @@ country_event = { #SIBERIA breaks off
 				transfer_state = 567
 				transfer_state = 566
 				transfer_state = 575
-			}
-			572 = {
-				add_core_of = SIB
-			}
-			653 = {
-				add_core_of = SIB
-			}
-			573 = {
-				add_core_of = SIB
 			}
 			581 = {
 				add_core_of = SIB
