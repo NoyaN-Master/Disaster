@@ -1,0 +1,12 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_game_rule_armenia"
+		texturefile = "gfx/game_rules/game_rule_armenia.png"
+	}
+
+	SpriteType = {
+		name = "GFX_game_rule_wargoal"
+		texturefile = "gfx/game_rules/game_rule_wargoal.png"
+	}
+}
