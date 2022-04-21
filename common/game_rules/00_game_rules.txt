@@ -24,7 +24,7 @@
 allow_wargoals = {
 	name = "RULE_ALLOW_WARGOALS"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
-	icon = "GFX_wargoals"
+	icon = "GFX_game_rule_wargoal"
 	option = {
 		name = "ALWAYS_FREE"
 		text = RULE_OPTION_ALWAYS_FREE
@@ -40,7 +40,7 @@ allow_wargoals = {
 armenia_content = {
 	name = "RULE_ARMENIA_CONTENT"
 	group = "RULE_GROUP_COUNTRY_SPECIFIC"
-	icon = "GFX_idea_ARM_Struggle_for_Existence"
+	icon = "GFX_game_rule_armenia"
 	option = {
 		name = "YES_ARMENIA"
 		text = RULE_OPTION_YES_ARMENIA

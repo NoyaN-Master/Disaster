@@ -828,18 +828,27 @@ focus = {
 		}						
 		completion_reward = {
 			custom_effect_tooltip = NGU_baltics_tt
-		declare_war_on = {
-    	target = LIT
-    	type = annex_everything
-		}
-		declare_war_on = {
-			target = LAT
+			RUS = {
+				end_puppet = LIT 
+			}
+			RUS = {
+				end_puppet = LAT 
+			}
+			RUS = {
+				end_puppet = EST 
+			}
+			declare_war_on = {
+			target = LIT
 			type = annex_everything
 			}
 			declare_war_on = {
-				target = EST
+				target = LAT
 				type = annex_everything
-				}
+			}
+			declare_war_on = {
+					target = EST
+					type = annex_everything
+			}
 		}
 	}
 focus = {
@@ -910,6 +919,11 @@ focus = {
 		x = 17
 		y = 7
 		cost = 5
+		bypass = {
+			NOT = {
+				country_exists = WHR
+			}
+		}
 		available = {
 		has_government = unisocialist
 		has_war = no		
@@ -939,6 +953,9 @@ focus = {
 		}
         prerequisite = { focus = NGU_Intervene_Belarus}				
 		completion_reward = {
+		RUS = {
+			end_puppet = UKR 
+		}
 		declare_war_on = {
     	target = UKR
     	type = annex_everything

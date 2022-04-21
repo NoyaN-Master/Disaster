@@ -453,6 +453,15 @@ PRE_fuck_baltics = {
     has_completed_focus = PRE_generalplan_ost
     }    
     complete_effect = {
+    RUS = {
+        end_puppet = LIT 
+    }
+    RUS = {
+        end_puppet = LAT 
+    }
+    RUS = {
+        end_puppet = EST 
+    }
     declare_war_on = {
         target = LIT
         type = annex_everything
@@ -594,6 +603,9 @@ PRE_Declare_UKR = {
         has_completed_focus = PRE_generalplan_ost
         }    
         complete_effect = {
+        RUS = {
+            end_puppet = UKR 
+        }
         declare_war_on = {
         target = UKR
         type = annex_everything

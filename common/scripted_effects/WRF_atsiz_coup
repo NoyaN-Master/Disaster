@@ -246,6 +246,10 @@ NGU_RussianPeaceDeal = {
 	puppet = TSB	
 	}
 	TAT = {
+	annex_country = {
+		target = TRK
+		transfer_troops = no
+	}
 	set_cosmetic_tag = TAT_Turania_Commisar
 	set_politics = {
 	ruling_party = unisocialist
@@ -281,7 +285,7 @@ NGU_RussianPeaceDeal = {
 	create_country_leader = {
 	        name = "Siberian Volkscouncil"
 	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        picture   = "TSB_Siberian_Volkshal.tga"
+	        picture   = "gfx/leaders/TSB/TSB_Siberian_Volkshal.tga"
 	        expire = "1965.1.1"
 	        ideology = natsoc_hitler
 	        traits = {
@@ -289,13 +293,11 @@ NGU_RussianPeaceDeal = {
             }	
 	transfer_state = 516
 	transfer_state = 577	
-	transfer_state = 865
 	transfer_state = 644	
 	transfer_state = 574	
 	transfer_state = 562	
 	transfer_state = 637	
 	transfer_state = 563	
-	transfer_state = 565	
 	transfer_state = 564
 	transfer_state = 566
 	transfer_state = 567
@@ -305,9 +307,7 @@ NGU_RussianPeaceDeal = {
 	transfer_state = 569
 	transfer_state = 409
 	transfer_state = 408
-	transfer_state = 657
 	transfer_state = 561
-	transfer_state = 657
 	}	
 
 
@@ -345,6 +345,10 @@ PRE_RussianEffect = {
 	puppet = TSB	
 	}
 	TAT = {
+	annex_country = {
+		target = TRK
+		transfer_troops = no
+	}
 	set_cosmetic_tag = TAT_Turania_Commisar
 	set_politics = {
 	ruling_party = revolutionary_nationalist
@@ -380,7 +384,7 @@ PRE_RussianEffect = {
 	create_country_leader = {
 	        name = "Siberian Volkscouncil"
 	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        picture   = "TSB_Siberian_Volkshal.tga"
+	        picture   = "gfx/leaders/TSB/TSB_Siberian_Volkshal.tga"
 	        expire = "1965.1.1"
 	        ideology = revolutionary_nationalist_subideology
 	        traits = {
@@ -388,13 +392,11 @@ PRE_RussianEffect = {
             }	
 	transfer_state = 516
 	transfer_state = 577	
-	transfer_state = 865
 	transfer_state = 644	
 	transfer_state = 574	
 	transfer_state = 562	
 	transfer_state = 637	
-	transfer_state = 563	
-	transfer_state = 565	
+	transfer_state = 563		
 	transfer_state = 564
 	transfer_state = 566
 	transfer_state = 567
@@ -404,9 +406,7 @@ PRE_RussianEffect = {
 	transfer_state = 569
 	transfer_state = 409
 	transfer_state = 408
-	transfer_state = 657
 	transfer_state = 561
-	transfer_state = 657
 	}	
 
 
@@ -448,7 +448,7 @@ FRE = {
 create_country_leader = {
 	        name = "Jacques Doriot"
 	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        picture   = "Portrait_France_Jacques_Doriot_Political.tga"
+	        picture   = "gfx/leaders/FRE/Portrait_France_Jacques_Doriot_Political.tga"
 	        expire = "1965.1.1"
 	        ideology = ultranationalist_subideology
 	        traits = {
