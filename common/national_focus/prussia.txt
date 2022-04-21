@@ -2783,7 +2783,6 @@ focus_tree = {
 		hidden_effect = {
 		remove_ideas = PRE_army_maneuvres_idea
 		}
-		country_event = { id = pre.37 days = 2 } 		
 		}
 	}
 	focus = {
@@ -2802,6 +2801,9 @@ focus_tree = {
 		unlock_decision_tooltip = PRE_war_economy_decision_3
 		unlock_decision_tooltip = PRE_war_economy_decision_4
 		unlock_decision_tooltip = PRE_war_economy_decision_5
+		hidden_effect = {
+		country_event = { id = pre.37 days = 2 } 
+		}
 		}
 	}
 	focus = {

@@ -24,8 +24,8 @@ leader_traits = {
 		
 	PRE_fuhrer_prinzip = {
 	    random = no
-		army_core_defence_factor = 0.1
-		army_core_attack_factor = 0.1
+		army_core_defence_factor = 0.03
+		army_core_attack_factor = 0.03
 		war_support_factor = 0.05
 		stability_factor = 0.1
 	}
@@ -108,9 +108,9 @@ leader_traits = {
 	
 	kemalist_warrior = {
 		random = no
-		stability_factor = 0.10
-		army_core_attack_factor = 0.1
-		army_core_defence_factor = 0.1
+		stability_factor = 0.03
+		army_core_attack_factor = 0.04
+		army_core_defence_factor = 0.04
 		war_support_factor = 0.10
 	}
 

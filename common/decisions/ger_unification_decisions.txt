@@ -10,8 +10,12 @@ GER_unification_decisions = {
 			813 = {is_owned_and_controlled_by = ROOT }
 			}
           fire_only_once = yes	 
+		  
+		  days_remove = 50
+		  
           remove_effect = {
 		  AUT = { every_unit_leader = { set_nationality = ROOT } }
+		  add_stability = -0.05
 		  }	 
         ai_will_do = {
 			factor = 1000
@@ -28,8 +32,12 @@ GER_unification_decisions = {
 			64 = {is_owned_and_controlled_by = ROOT }
 			}
           fire_only_once = yes	 
+		  
+		  days_remove = 50
+		
           remove_effect = {
 		  PRE = { every_unit_leader = { set_nationality = ROOT } }
+		 add_stability = -0.05
 		  }	 
         ai_will_do = {
 			factor = 1000
@@ -46,8 +54,12 @@ GER_unification_decisions = {
 			59 = {is_owned_and_controlled_by = ROOT }
 			}
           fire_only_once = yes	 
+		
+		  		  days_remove = 50
+			
           remove_effect = {
 		  NGU = { every_unit_leader = { set_nationality = ROOT } }
+		  add_stability = -0.05
 		  }	 
         ai_will_do = {
 			factor = 1000
@@ -64,8 +76,10 @@ GER_unification_decisions = {
 			52 = {is_owned_and_controlled_by = ROOT }
 			}
           fire_only_once = yes	 
+		  		  days_remove = 50
           remove_effect = {
 		  BAY = { every_unit_leader = { set_nationality = ROOT } }
+		  add_stability = -0.05
 		  }	 
         ai_will_do = {
 			factor = 1000

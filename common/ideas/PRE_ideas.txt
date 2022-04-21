@@ -177,10 +177,10 @@ PRE_nacht_der_langer_messer_idea = {
 			picture = nacht_messer
 			modifier = {
 			stability_factor = -0.4
-			stability_weekly = 0.05
-			war_support_weekly = -0.02
+			stability_weekly = 0.01
+			war_support_weekly = 0.01
 			weekly_manpower = -5000
-			MONTHLY_POPULATION = -1
+			MONTHLY_POPULATION = -4
 			civilian_factory_use = 2
 			}
 		}
