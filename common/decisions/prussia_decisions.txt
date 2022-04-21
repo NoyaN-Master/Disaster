@@ -453,9 +453,17 @@ PRE_fuck_baltics = {
     has_completed_focus = PRE_generalplan_ost
     }    
     complete_effect = {
-    
-    BLT = {
-    country_event = {id = pre.101 days = 5}     
+    declare_war_on = {
+        target = LIT
+        type = annex_everything
+    }
+    declare_war_on = {
+        target = LAT
+        type = annex_everything
+    }
+    declare_war_on = {
+        target = EST
+        type = annex_everything
     }
     }
  ai_will_do = {
@@ -502,30 +510,6 @@ PRE_Diplomacy_Ostland = {
 		}
 }
 
-PRE_Attack_Belarus = {
-	    fire_only_once = yes
-		cost = 0
-        allowed = {
-        tag = PRE
-        }
-        available  = {   
-        has_war = no
-        }
-        visible = {
-        original_tag = PRE
-        has_completed_focus = PRE_generalplan_ost
-        }    
-        complete_effect = {
-        declare_war_on = {
-        target = WHR
-        type = annex_everything
-        }
-        }
-     ai_will_do = {
-			factor = 1000
-		}
-}
-
 PRE_Give_Goltz = {
 	    fire_only_once = yes
 		cost = 0
@@ -549,11 +533,7 @@ PRE_Give_Goltz = {
         BLT = {
         transfer_state = 95
         transfer_state = 96  
-        transfer_state = 94  
-        transfer_state = 194  
-        transfer_state = 204  
-        transfer_state = 206
-        transfer_state = 207  
+        transfer_state = 94
         transfer_state = 203
         transfer_state = 93
         }
@@ -642,10 +622,46 @@ PRE_Declare_Russia = {
         has_completed_focus = PRE_generalplan_ost
         }    
         complete_effect = {
-        declare_war_on = {
-        target = RUS
-        type = annex_everything
-        }
+            declare_war_on = {
+                target = RUS
+                type = annex_everything
+                }
+                declare_war_on = {
+                    target = PRI
+                    type = annex_everything
+                    }
+                declare_war_on = {
+                    target = URA
+                    type = annex_everything
+                    }
+                declare_war_on = {
+                    target = SIB
+                    type = annex_everything
+                    }
+                declare_war_on = {
+                    target = KAR
+                    type = annex_everything
+                    }
+                declare_war_on = {
+                    target = SAK
+                    type = annex_everything
+                    }
+                declare_war_on = {
+                    target = REG
+                    type = annex_everything
+                    }
+                declare_war_on = {
+                    target = DON
+                    type = annex_everything
+                    }
+                declare_war_on = {
+                    target = KUB
+                    type = annex_everything
+                    }
+                declare_war_on = {
+                    target = SAV
+                    type = annex_everything
+                    }
         add_timed_idea = {
 		idea = NGU_RussianWar
 		days = 95	
@@ -666,12 +682,10 @@ PRE_Russia_Peace = {
         PRE = {
         has_war_with  = RUS
         }
-        RUS = {
-        NOT = {
-        controls_state = 217
+        PRE = {
+            controls_state = 217
             controls_state = 195
             controls_state = 219 
-        }
         }  
         }
         visible = {

@@ -122,6 +122,23 @@ NGU_Komisariat_Baltics = {
         }    
         complete_effect = {
         release_puppet = BLT
+        release = LIT
+        release = LAT
+        release = EST
+        BLT = {
+        annex_country = {
+            target = LIT
+            transfer_troops = yes
+        } 
+        annex_country = {
+            target = LAT
+            transfer_troops = yes
+        } 
+        annex_country = {
+            target = EST
+            transfer_troops = yes
+        }
+    }
         transfer_state = 810
         BLT = {
         if = {

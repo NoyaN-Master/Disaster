@@ -413,22 +413,10 @@ country_event = { # Wolfstaat
 		transfer_state = 94	
 		transfer_state = 95
 		transfer_state = 96
-		declare_war_on = {
-    	target = WHR
-    	type = annex_everything
-		}
 		load_oob = WLF_oob	
-		}
-		NGU = {
-		add_to_war = { 
-    	targeted_alliance = WLF 
-    	enemy = WHR 
-    	hostility_reason = asked_to_join
 		}	
 		}
 	}
-
-}
 
 country_event = { # Berling Becomes Capital
 	id = ngu.12
