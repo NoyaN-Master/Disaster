@@ -991,7 +991,7 @@ country_event = { #YAKUTIA breaks off
 		}
 	}
 }
-country_event = {
+country_event = {#altia breaks off
 	id = russia.21
 	title = russia.21.t
 	desc = russia.21.d
@@ -1040,5 +1040,30 @@ country_event = { #Ukraine seizes territory
 				transfer_state = 137
 			}
 		}
+    }
+}
+country_event = { #TEST CW EVENT
+	id = russia.1000
+	title = russia.1000.t
+	desc = russia.1000.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.1000.a
+		hidden_effect = { country_event = { id = russia.10 days = 1 } }
+		hidden_effect = { country_event = { id = russia.11 days = 1 } }
+		hidden_effect = { country_event = { id = russia.12 days = 1 } }
+		hidden_effect = { country_event = { id = russia.14 days = 1 } }
+		hidden_effect = { country_event = { id = russia.16 days = 1 } }
+		hidden_effect = { country_event = { id = russia.17 days = 1 } }
+		hidden_effect = { country_event = { id = russia.18 days = 1 } }
+		hidden_effect = { country_event = { id = russia.19 days = 1 } }
+		hidden_effect = { country_event = { id = russia.20 days = 1 } }
+		hidden_effect = { country_event = { id = russia.21 days = 1 } }
+		hidden_effect = { country_event = { id = russia.22 days = 1 } }
+
     }
 }

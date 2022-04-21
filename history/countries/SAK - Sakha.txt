@@ -86,15 +86,12 @@ autocracy
 interventionism 
 post_industrialized_society
 }
-add_ideas = RUS_army_disloyalty
-add_ideas = RUS_mass_terror
-add_ideas = RUS_pogromes
 
 create_country_leader = {
-	name = "Pavel Bermondt-Avalov"
+	name = "Ksenofontov Pavel Vasilievich"
 	picture = "gfx/leaders/RUS/RUS_Pavel_Bermondt_Avalov.png"
 	expire = "1965.1.1"
-	ideology = ultranationalist_subideology
+	ideology = social_democrat_subideology
 	traits = {
 	}
 }

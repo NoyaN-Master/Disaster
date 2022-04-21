@@ -57,24 +57,24 @@ set_war_support = 0.50
 
 
 set_politics = {
-	ruling_party = ultranationalist
+	ruling_party = authoritarian_socialist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 
 }
 set_popularities = {
-	conservative = 10
-	liberal = 10
+	conservative = 0
+	liberal = 20
 	social_democrat = 0
 	libertarian_socialist = 0
-	authoritarian_socialist = 10
+	authoritarian_socialist = 60
 	unisocialist = 10
-	authoritarian_democrat = 10
-	autocratic = 10
-	ultranationalist = 20
-	revolutionary_nationalist = 10
-	esoteric_traditionalist = 10
+	authoritarian_democrat = 0
+	autocratic = 0
+	ultranationalist = 10
+	revolutionary_nationalist = 0
+	esoteric_traditionalist = 0 
 	revolutionary_anarchist = 0
 }
 
@@ -85,15 +85,12 @@ autocracy
 interventionism 
 post_industrialized_society
 }
-add_ideas = RUS_army_disloyalty
-add_ideas = RUS_mass_terror
-add_ideas = RUS_pogromes
 
 create_country_leader = {
-	name = "Pavel Bermondt-Avalov"
-	picture = "gfx/leaders/RUS/RUS_Pavel_Bermondt_Avalov.png"
+	name = "Red Guard Leader"
+	picture = ""
 	expire = "1965.1.1"
-	ideology = ultranationalist_subideology
+	ideology = authoritarian_socialist_subideology
 	traits = {
 	}
 }

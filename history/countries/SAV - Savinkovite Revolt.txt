@@ -85,13 +85,10 @@ autocracy
 interventionism 
 post_industrialized_society
 }
-add_ideas = RUS_army_disloyalty
-add_ideas = RUS_mass_terror
-add_ideas = RUS_pogromes
 
 create_country_leader = {
-	name = "Pavel Bermondt-Avalov"
-	picture = "gfx/leaders/RUS/RUS_Pavel_Bermondt_Avalov.png"
+	name = "Boris Savinkov"
+	picture = "gfx/leaders/RUS/RUS_Boris_Savinkov_Nat.tga"
 	expire = "1965.1.1"
 	ideology = ultranationalist_subideology
 	traits = {

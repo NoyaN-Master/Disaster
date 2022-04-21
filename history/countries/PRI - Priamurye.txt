@@ -86,15 +86,12 @@ autocracy
 interventionism 
 post_industrialized_society
 }
-add_ideas = RUS_army_disloyalty
-add_ideas = RUS_mass_terror
-add_ideas = RUS_pogromes
 
 create_country_leader = {
 	name = "Mikhail Diterikhs"
 	picture = "gfx/leaders/PRI/PRI_Mikhail_Diterikhs.tga"
 	expire = "1965.1.1"
-	ideology = ultranationalist_subideology
+	ideology = esoteric_traditionalist_subideology
 	traits = {
 	}
 }

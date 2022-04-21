@@ -65,17 +65,17 @@ set_politics = {
 
 }
 set_popularities = {
-	conservative = 10
-	liberal = 10
+	conservative = 0
+	liberal = 0
 	social_democrat = 0
 	libertarian_socialist = 0
 	authoritarian_socialist = 10
 	unisocialist = 10
-	authoritarian_democrat = 10
+	authoritarian_democrat = 0
 	autocratic = 10
-	ultranationalist = 20
-	revolutionary_nationalist = 10
-	esoteric_traditionalist = 10
+	ultranationalist = 70
+	revolutionary_nationalist = 0
+	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
 
@@ -86,13 +86,10 @@ autocracy
 interventionism 
 post_industrialized_society
 }
-add_ideas = RUS_army_disloyalty
-add_ideas = RUS_mass_terror
-add_ideas = RUS_pogromes
 
 create_country_leader = {
-	name = "Pavel Bermondt-Avalov"
-	picture = "gfx/leaders/RUS/RUS_Pavel_Bermondt_Avalov.png"
+	name = "Anton Denikin"
+	picture = ""
 	expire = "1965.1.1"
 	ideology = ultranationalist_subideology
 	traits = {
