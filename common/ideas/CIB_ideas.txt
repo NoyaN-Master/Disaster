@@ -105,14 +105,6 @@ CIB_Enver_Idea = {
 			has_country_flag = Roatta_Warlord	
 			}		
 			}
-			modifier = {
-			}
-			add_opinion_modifier = {   target = WRF   modifier = faction_traitor }
-			add_opinion_modifier = {   target = ANT   modifier = faction_traitor }
-			add_opinion_modifier = {   target = THR   modifier = faction_traitor }
-			add_opinion_modifier = {   target = ADN   modifier = faction_traitor }
-			add_opinion_modifier = {   target = CLP   modifier = faction_traitor }
-			add_opinion_modifier = {   target = ARM   modifier = faction_traitor }
 			targeted_modifier = { tag = WRF attack_bonus_against = 0.1 }
 			targeted_modifier = { tag = ANT attack_bonus_against = 0.1 }
 			targeted_modifier = { tag = THR attack_bonus_against = 0.1 }

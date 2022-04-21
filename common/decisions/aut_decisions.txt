@@ -268,10 +268,10 @@ AUT_Puppet_Yugo = {
 
 AUT_Give_Transly = {                          
         allowed = {
-         tag = AUT
-         has_completed_focus = AUT_Restore_Sphere
+        tag = AUT
         }                 
         available = {
+		has_completed_focus = AUT_Restore_Sphere
 		HNG = {
 		is_puppet_of = AUT	
 		}
