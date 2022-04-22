@@ -811,6 +811,7 @@ country_event = { #YAKUTIA breaks off
 
 	option = {
 		name = russia.20.a
+		hidden_effect = { country_event = { id = russia.23 days = 1 } }
 		hidden_effect = {
 			SAK = {
 				transfer_state = 574
@@ -826,6 +827,7 @@ country_event = { #YAKUTIA breaks off
     }
 	option = {
 		name = russia.20.b
+		hidden_effect = { country_event = { id = russia.23 days = 1 } }
 		hidden_effect = {
 			SAK = { change_tag_from = RUS }
 			SAK = {
@@ -873,7 +875,7 @@ country_event = {#altia breaks off
 		}
 	}
 }
-country_event = { #Ukraine seizes territory
+country_event = { #Crimea breaks free
 	id = russia.22
 	title = russia.22.t
 	desc = russia.22.d
@@ -884,13 +886,29 @@ country_event = { #Ukraine seizes territory
 
 	option = {
 		name = russia.22.a
-		hidden_effect = { country_event = { id = russia.16 days = 1 }}
+		hidden_effect = { country_event = { id = russia.16 days = 1 } }
 		hidden_effect = {
-			UKR = {
+			CRI = {
 				transfer_state = 137
 			}
+			137 = {
+				add_core_of = CRI
+			}
 		}
-    }
+	}
+	option = {
+		name = russia.22.b
+		hidden_effect = { country_event = { id = russia.16 days = 1 } }
+		hidden_effect = {
+			CRI = { change_tag_from = RUS }
+			CRI = {
+				transfer_state = 137
+			}
+			137 = {
+				add_core_of = CRI
+			}
+		}
+	}
 }
 country_event = { #Reorganizing Army
 	id = russia.23
@@ -903,6 +921,7 @@ country_event = { #Reorganizing Army
 
 	option = {
 		name = russia.23.a
+		hidden_effect = { country_event = { id = russia.24 days = 13 } }
 		hidden_effect = { 
 			delete_unit_template_and_units = {
 				division_template = "Pekhotnaya Diviziya"
@@ -926,30 +945,8 @@ country_event = { #Reorganizing Army
 			}
 		}
 		load_oob = "RUS_CW"
-
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 country_event = { #TEST CW EVENT
 	id = russia.1000
 	title = russia.1000.t
@@ -973,6 +970,256 @@ country_event = { #TEST CW EVENT
 		hidden_effect = { country_event = { id = russia.21 days = 1 } }
 		hidden_effect = { country_event = { id = russia.22 days = 1 } }
 		hidden_effect = { country_event = { id = russia.23 days = 1 } }
-
+		hidden_effect = { country_event = { id = russia.24 days = 13 } }
     }
+}
+country_event = { #when shit gets real
+	id = russia.24
+	title = russia.24.t
+	desc = russia.24.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = russia.24.a
+		hidden_effect = {
+			declare_war_on = {
+				target = SAV
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = DON
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = KUB
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = CRI
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = REG
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = URA
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = KAR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SIB
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SAK
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = PRI
+				type = annex_everything
+			}
+			SAV = {
+				declare_war_on = {
+					target = DON
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = KUB
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = CRI
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = REG
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = URA
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = KAR
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = SIB
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = SAK
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = PRI
+					type = annex_everything
+				}
+				DON = {
+					declare_war_on = {
+						target = KUB
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = CRI
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = REG
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = URA
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = KAR
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = SIB
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = SAK
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = PRI
+						type = annex_everything
+					}
+					KUB = {
+						declare_war_on = {
+							target = CRI
+							type = annex_everything
+						}
+						declare_war_on = {
+							target = REG
+							type = annex_everything
+						}
+						declare_war_on = {
+							target = URA
+							type = annex_everything
+						}
+						declare_war_on = {
+							target = KAR
+							type = annex_everything
+						}
+						declare_war_on = {
+							target = SIB
+							type = annex_everything
+						}
+						declare_war_on = {
+							target = SAK
+							type = annex_everything
+						}
+						declare_war_on = {
+							target = PRI
+							type = annex_everything
+						}
+						CRI = {
+							declare_war_on = {
+								target = REG
+								type = annex_everything
+							}
+							declare_war_on = {
+								target = URA
+								type = annex_everything
+							}
+							declare_war_on = {
+								target = KAR
+								type = annex_everything
+							}
+							declare_war_on = {
+								target = SIB
+								type = annex_everything
+							}
+							declare_war_on = {
+								target = SAK
+								type = annex_everything
+							}
+							declare_war_on = {
+								target = PRI
+								type = annex_everything
+							}
+							REG = {
+								declare_war_on = {
+									target = URA
+									type = annex_everything
+								}
+								declare_war_on = {
+									target = KAR
+									type = annex_everything
+								}
+								declare_war_on = {
+									target = SIB
+									type = annex_everything
+								}
+								declare_war_on = {
+									target = SAK
+									type = annex_everything
+								}
+								declare_war_on = {
+									target = PRI
+									type = annex_everything
+								}
+								URA = {
+									declare_war_on = {
+										target = KAR
+										type = annex_everything
+									}
+									declare_war_on = {
+										target = SIB
+										type = annex_everything
+									}
+									declare_war_on = {
+										target = SAK
+										type = annex_everything
+									}
+									declare_war_on = {
+										target = PRI
+										type = annex_everything
+									}
+									KAR = {
+										declare_war_on = {
+											target = SIB
+											type = annex_everything
+										}
+										declare_war_on = {
+											target = SAK
+											type = annex_everything
+										}
+										declare_war_on = {
+											target = PRI
+											type = annex_everything
+										}
+										SIB = {
+											declare_war_on = {
+												target = SAK
+												type = annex_everything
+											}
+											declare_war_on = {
+												target = PRI
+												type = annex_everything
+											}
+											SAK = {
+												declare_war_on = {
+													target = PRI
+													type = annex_everything
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
