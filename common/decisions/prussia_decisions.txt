@@ -480,6 +480,10 @@ PRE_fuck_baltics = {
     has_completed_focus = PRE_generalplan_ost
     }    
     complete_effect = {
+        RUS = {
+            end_puppet = LAT
+            end_puppet = EST
+        }
 		if = {
 		limit = { country_exists = LIT}
 		declare_war_on = {
@@ -543,30 +547,6 @@ PRE_Diplomacy_Ostland = {
 		}
 }
 
-PRE_Attack_Belarus = {
-	    fire_only_once = yes
-		cost = 0
-        allowed = {
-        tag = PRE
-        }
-        available  = {   
-        has_war = no
-        }
-        visible = {
-        original_tag = PRE
-        has_completed_focus = PRE_generalplan_ost
-        }    
-        complete_effect = {
-        declare_war_on = {
-        target = WHR
-        type = annex_everything
-        }
-        }
-     ai_will_do = {
-			factor = 1000
-		}
-}
-
 PRE_Give_Goltz = {
 	    fire_only_once = yes
 		cost = 0
@@ -590,11 +570,7 @@ PRE_Give_Goltz = {
         BLT = {
         transfer_state = 95
         transfer_state = 96  
-        transfer_state = 94  
-        transfer_state = 194  
-        transfer_state = 204  
-        transfer_state = 206
-        transfer_state = 207  
+        transfer_state = 94
         transfer_state = 203
         transfer_state = 93
         }
@@ -633,6 +609,7 @@ PRE_Ukraine_Goltz = {
         target = UKR
         transfer_troops = yes
         }
+        transfer_state = 194
         set_cosmetic_tag = BLT_Ostland
         }
         }

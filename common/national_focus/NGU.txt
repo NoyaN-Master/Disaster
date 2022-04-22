@@ -315,6 +315,8 @@ focus = {
 		add_state_claim = 880
 		add_state_claim = 65
 		add_state_claim = 882
+		add_state_claim = 881
+		add_state_claim = 883
 		}
 		}
 	}
@@ -1327,6 +1329,9 @@ focus = {
 		}
         prerequisite = { focus = NGU_Project_Belarus}				
 		completion_reward = {
+			RUS = {
+				end_puppet = UKR
+			}
 		declare_war_on = {
     	target = UKR
     	type = annex_everything
@@ -1394,7 +1399,6 @@ focus = {
     	amount = 5000
     	producer = SWA
 		}
-		load_oob = namib_oob
 		}
 		}
 	}
