@@ -891,6 +891,64 @@ country_event = { #Ukraine seizes territory
 		}
     }
 }
+country_event = { #Reorganizing Army
+	id = russia.23
+	title = russia.23.t
+	desc = russia.23.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.23.a
+		hidden_effect = { 
+			delete_unit_template_and_units = {
+				division_template = "Pekhotnaya Diviziya"
+				disband = no
+			}
+			delete_unit_template_and_units = {
+				division_template = "Gornostrelkovaya Diviziya"
+				disband = no
+			}
+			delete_unit_template_and_units = {
+				division_template = "Motostrelkovaya Diviziya"
+				disband = no
+			}
+			delete_unit_template_and_units = {
+				division_template = "Kavaleriyskaya Diviziya"
+				disband = no
+			}
+			delete_unit_template_and_units = {
+				division_template = "Tankovaya Diviziya"
+				disband = no
+			}
+		}
+		load_oob = "RUS_CW"
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 country_event = { #TEST CW EVENT
 	id = russia.1000
 	title = russia.1000.t
@@ -913,6 +971,7 @@ country_event = { #TEST CW EVENT
 		hidden_effect = { country_event = { id = russia.20 days = 1 } }
 		hidden_effect = { country_event = { id = russia.21 days = 1 } }
 		hidden_effect = { country_event = { id = russia.22 days = 1 } }
+		hidden_effect = { country_event = { id = russia.23 days = 1 } }
 
     }
 }
