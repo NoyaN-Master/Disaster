@@ -1,7 +1,8 @@
 
 
 AUT_foreign_deccat = {
-    AUT_treaty_venice = {                          
+    AUT_treaty_venice = {  
+		fire_only_once = yes     
         allowed = {
          tag = AUT
          has_completed_focus = AUT_Destroy_Italy
@@ -24,7 +25,6 @@ AUT_foreign_deccat = {
         }         
                      
         complete_effect = {
-
 		white_peace = FIU
         CRT = {
         transfer_state = 103
@@ -56,7 +56,8 @@ AUT_foreign_deccat = {
 		ai_will_do  = { factor = 1000}
     }
 
-    AUT_Puppet_Hun = {                          
+    AUT_Puppet_Hun = {  
+		fire_only_once = yes                        
         allowed = {
          tag = AUT
          has_completed_focus = AUT_Restore_Sphere
@@ -111,7 +112,8 @@ AUT_foreign_deccat = {
 	ai_will_do  = { factor = 1000}
 }
 
-AUT_Puppet_Bohemia = {                          
+AUT_Puppet_Bohemia = {
+	fire_only_once = yes                       
         allowed = {
          tag = AUT
          has_completed_focus = AUT_Restore_Sphere
@@ -178,7 +180,8 @@ AUT_Puppet_Bohemia = {
 	ai_will_do  = { factor = 1000}
     }
 
-AUT_Puppet_Yugo = {                          
+AUT_Puppet_Yugo = {
+	fire_only_once = yes                         
         allowed = {
          tag = AUT
          has_completed_focus = AUT_Restore_Sphere
@@ -266,7 +269,8 @@ AUT_Puppet_Yugo = {
 }
 
 
-AUT_Give_Transly = {                          
+AUT_Give_Transly = {
+	fire_only_once = yes                          
         allowed = {
         tag = AUT
         }                 
@@ -275,8 +279,10 @@ AUT_Give_Transly = {
 		HNG = {
 		is_puppet_of = AUT	
 		}
-		TRN = {
-		exists = no	
+		AUT = {
+		owns_state = 76
+		owns_state = 83
+		owns_state = 84
 		}	      
         }					
         is_good = no                         
