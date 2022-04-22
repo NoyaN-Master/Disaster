@@ -6,7 +6,7 @@ equipments = {
 		is_buildable = no
 
 		can_be_produced = {
-			NOT = { has_country_flag = cannot_produce_armor }
+		NOT = { has_country_flag = cannot_produce_armor }
 		}
 
 		picture = archetype_light_tank_equipment
@@ -15,7 +15,7 @@ equipments = {
 		interface_category = interface_category_armor
 		priority = 2000
 
-
+		
 
 		module_slots = {
 			main_armament_slot = {
@@ -89,12 +89,12 @@ equipments = {
 					tank_secondary_turret
 				}
 			}
-
+			
 		}
 		module_count_limit = {
 			module = sloped_armor
 			count < 2
-		}
+		}	
 		module_count_limit = {
 			category = tank_radio_module
 			count < 2
@@ -183,7 +183,7 @@ equipments = {
 		priority = 2000
 		module_slots = inherit
 		maximum_speed = 4
-		build_cost_ic = 1
+		build_cost_ic = 1.25
 		reliability = 0.95
 		armor_value = 10
 	}
@@ -197,7 +197,7 @@ equipments = {
 		parent = light_tank_chassis_1
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 1.5
+		build_cost_ic = 1.6
 		maximum_speed = 4.5
 		reliability = 1.1
 		armor_value = 15
@@ -224,14 +224,13 @@ equipments = {
 		}
 	}
 
-
+	
 
 	medium_tank_chassis = {
 		year = 1922
 		is_archetype = yes
 		is_buildable = no
 		can_be_produced = {
-			NOT = { has_country_flag = cannot_produce_armor }
 		}
 		picture = archetype_medium_tank_equipment
 		type = armor
@@ -244,7 +243,6 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_small_main_armament
-					tank_medium_main_armament
 					tank_flamethrower
 				}
 			}
@@ -313,12 +311,12 @@ equipments = {
 					tank_radio_module
 				}
 			}
-
+			
 		}
 		module_count_limit = {
 			module = sloped_armor
 			count < 2
-		}
+		}	
 		module_count_limit = {
 			category = tank_radio_module
 			count < 2
@@ -393,7 +391,7 @@ equipments = {
 			tank_nsb_armor_upgrade
 		}
 		maximum_speed = 4
-		build_cost_ic = 2
+		build_cost_ic = 2.5
 		reliability = 0.75
 		armor_value = 25
 		resources = {
@@ -411,7 +409,7 @@ equipments = {
 		priority = 2000
 		module_slots = inherit
 		armor_value = 35
-		build_cost_ic = 2
+		build_cost_ic = 2.5
 	}
 	medium_tank_chassis_2 = {
 		abbreviation = "mt2"
@@ -423,7 +421,7 @@ equipments = {
 		priority = 2000
 		module_slots = inherit
 		maximum_speed = 4
-		build_cost_ic = 3
+		build_cost_ic = 3.2
 		reliability = 1.3
 		armor_value = 45
 		resources = {
@@ -453,7 +451,6 @@ equipments = {
 		is_archetype = yes
 		is_buildable = no
 		can_be_produced = {
-			NOT = { has_country_flag = cannot_produce_armor }
 		}
 		picture = archetype_heavy_tank_equipment
 		type = armor
@@ -466,8 +463,6 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_small_main_armament
-					tank_medium_main_armament
-					tank_heavy_main_armament
 					tank_flamethrower
 				}
 			}
@@ -542,7 +537,7 @@ equipments = {
 		module_count_limit = {
 			module = sloped_armor
 			count < 2
-		}
+		}	
 		module_count_limit = {
 			category = tank_radio_module
 			count < 2
@@ -641,7 +636,7 @@ equipments = {
 		parent = heavy_tank_chassis_1
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 12
+		build_cost_ic = 10
 		maximum_speed = 4
 		reliability = 1.15
 		armor_value = 55
@@ -660,7 +655,7 @@ equipments = {
 		parent = heavy_tank_chassis_2
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 14
+		build_cost_ic = 12
 		maximum_speed = 4
 		reliability = 1.3
 		armor_value = 75
@@ -675,7 +670,6 @@ equipments = {
 		is_archetype = yes
 		is_buildable = no
 		can_be_produced = {
-			NOT = { has_country_flag = cannot_produce_armor }
 		}
 		picture = archetype_modern_tank_equipment
 		type = armor
@@ -688,8 +682,6 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_small_main_armament
-					tank_medium_main_armament
-					tank_heavy_main_armament
 				}
 			}
 
@@ -760,7 +752,7 @@ equipments = {
 		module_count_limit = {
 			module = sloped_armor
 			count < 2
-		}
+		}	
 		module_count_limit = {
 			category = tank_radio_module
 			count < 2
@@ -842,7 +834,6 @@ equipments = {
 		is_archetype = yes
 		is_buildable = no
 		can_be_produced = {
-			NOT = { has_country_flag = cannot_produce_armor }
 		}
 		picture = archetype_super_heavy_tank_equipment
 		type = armor
@@ -855,9 +846,6 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_small_main_armament
-					tank_medium_main_armament
-					tank_heavy_main_armament
-					tank_super_heavy_main_armament
 				}
 			}
 
@@ -932,7 +920,7 @@ equipments = {
 		module_count_limit = {
 			module = sloped_armor
 			count < 2
-		}
+		}	
 		module_count_limit = {
 			category = tank_radio_module
 			count < 2
@@ -979,7 +967,7 @@ equipments = {
 
 		fuel_consumption = 0
 		maximum_speed = 2.5
-		build_cost_ic = 35
+		build_cost_ic = 24
 		reliability = 1.3
 		armor_value = 85
 		hardness = 1
@@ -1011,7 +999,6 @@ equipments = {
 		is_archetype = yes
 		is_buildable = no
 		can_be_produced = {
-			NOT = { has_country_flag = cannot_produce_armor }
 		}
 		picture = archetype_amphibious_tank_equipment
 		type = armor
@@ -1024,7 +1011,6 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_small_main_armament
-					tank_medium_main_armament
 				}
 			}
 
@@ -1093,7 +1079,7 @@ equipments = {
 		module_count_limit = {
 			module = sloped_armor
 			count < 2
-		}
+		}	
 		module_count_limit = {
 			category = tank_radio_module
 			count < 2
@@ -1142,7 +1128,7 @@ equipments = {
 
 		fuel_consumption = 0
 		maximum_speed = 4
-		build_cost_ic = 5
+		build_cost_ic = 4.5
 		reliability = 1.1
 		armor_value = 15
 		hardness = 0.85
