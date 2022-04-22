@@ -37,36 +37,12 @@ focus_tree = {
 		    level = 1
 	        }
             }			
-			67 = {
-	        add_building_construction = {
-		    type = industrial_complex 
-		    level = 1
-	        }   
-            }
-            5 = {
-	        add_building_construction = {
-		    type = industrial_complex 
-		    level = 1
-	        }   
-            }
 			66 = {
 	        add_building_construction = {
 		    type = infrastructure 
 		    level = 1
 	        }
             }			
-			67 = {
-	        add_building_construction = {
-		    type = infrastructure 
-		    level = 1
-	        }   
-            }
-            5 = {
-	        add_building_construction = {
-		    type = infrastructure 
-		    level = 1
-	        }   
-            }
 		}
 	}	
 	focus = {
@@ -805,10 +781,10 @@ focus_tree = {
 					include_locked = yes
 				}
 			}
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}
@@ -820,10 +796,10 @@ focus_tree = {
 					include_locked = yes
 				}
 			}
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}		
@@ -1245,23 +1221,7 @@ focus_tree = {
 		cost = 10		
 		prerequisite = { focus = PRE_prussian_steel}
 		
-		completion_reward = {
-			66 = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}
-		}	
-			763 = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}
-		}
+		completion_reward = {	
 			5 = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -1304,7 +1264,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_meine_ehre}
 		completion_reward = {
 		add_ideas = PRE_arbeit_macht_frei_idea
-		add_stability = -0.05
+		add_stability = -0.15
 		}
 	}
 	focus = {
@@ -1319,29 +1279,21 @@ focus_tree = {
 
 		completion_reward = {
 			66 = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = arms_factory
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}	
 			763 = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = arms_factory
-				level = 2
+				level = 1
 				instant_build = yes
 			}
-		}
-			5 = {
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = arms_factory
-				level = 2
-				instant_build = yes
-			}
-		}		
+		}	
 		}
 	}
 	focus = {
@@ -1592,10 +1544,10 @@ focus_tree = {
 					include_locked = yes
 				}
 			}
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}
@@ -1607,10 +1559,10 @@ focus_tree = {
 					include_locked = yes
 				}
 			}
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = arms_factory
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}	
@@ -1622,10 +1574,10 @@ focus_tree = {
 					include_locked = yes
 				}
 			}
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}			
@@ -2029,22 +1981,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_encourage_entrepeneurs}
 		
 		completion_reward = {
-			random_owned_state = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}
-		}	
-			random_owned_state = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}
-		}
+			add_political_power = -100
 			random_owned_state = {
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
@@ -2073,13 +2010,14 @@ focus_tree = {
 		prerequisite = { focus = PRE_legacy_of_1848}
 		
 		completion_reward = {
-		every_owned_state = {
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
-				type = infrastructure
+				type = industrial_complex
 				level = 1
 				instant_build = yes
 			}
-			}
+		}
 		add_resource = {
 		type = steel
 		amount = 30
@@ -2133,26 +2071,26 @@ focus_tree = {
 		
 		completion_reward = {
 			66 = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = arms_factory
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}	
 			763 = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = arms_factory
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}
 			5 = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = arms_factory
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}		
@@ -2640,10 +2578,10 @@ focus_tree = {
 					include_locked = yes
 				}
 			}
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}
@@ -2655,10 +2593,10 @@ focus_tree = {
 					include_locked = yes
 				}
 			}
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}		

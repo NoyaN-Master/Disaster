@@ -1,5 +1,85 @@
 ideas = {
 	head_of_government = {
+	PRE_alfred = {
+			picture = GER_Alfred_Hugenberg
+			available = { 
+			tag = PRE
+			always = no
+			#done
+			}
+			cancel_if_invalid = no
+			level = 1
+			traits = {
+				hog_pragmatic_statesman		
+			}
+			visible = {
+			tag = PRE
+			}
+		}	
+	PRE_paul_von_lettow_vorbeck = {
+			picture = GER_Paul_von_Lettow_Vorbeck
+			available = { 
+			tag = PRE
+			always = no
+			#done
+			}
+			cancel_if_invalid = no
+			level = 1
+			traits = {
+				hog_old_general		
+			}
+			visible = {
+			tag = PRE
+			}
+		}	
+	PRE_goring = {
+			picture = GER_Hermann_von_Goering
+			available = { 
+			tag = PRE
+			always = no
+			#done
+			}
+			cancel_if_invalid = no
+			level = 1
+			traits = {
+				hog_local_tyrant		
+			}
+			visible = {
+			tag = PRE
+			}
+		}
+	PRE_goerdeler = {
+			picture = GER_Carl_Friedrich_Goerdeler
+			available = { 
+			tag = PRE
+			always = no
+			#done
+			}
+			cancel_if_invalid = no
+			level = 1
+			traits = {
+				hog_happy_amateur		
+			}
+			visible = {
+			tag = PRE
+			}
+		}
+	PRE_sleicher = {
+			picture = GER_Kurt_von_Schleicher
+			available = { 
+			tag = PRE
+			always = no
+			#done
+			}
+			cancel_if_invalid = no
+			level = 1
+			traits = {
+				man_of_people		
+			}
+			visible = {
+			tag = PRE
+			}
+		}
 	WRF_mustafa_kemal = {
 			picture = mustafa_kemal_hog
 			available = { 
