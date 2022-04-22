@@ -573,6 +573,7 @@ country_event = { #SIBERIA breaks off
 	option = {
 		name = russia.18.a
 		hidden_effect = {country_event ={id = russia.19 days = 1}}
+		hidden_effect = { country_event = { id = russia.23 days = 1 }}
 		hidden_effect = {
 			SIB = {
 				transfer_state = 581
@@ -883,7 +884,7 @@ country_event = { #Ukraine seizes territory
 
 	option = {
 		name = russia.22.a
-		hidden_effect = { country_event = { id = russia.16 days = 1 } }
+		hidden_effect = { country_event = { id = russia.16 days = 1 }}
 		hidden_effect = {
 			UKR = {
 				transfer_state = 137
