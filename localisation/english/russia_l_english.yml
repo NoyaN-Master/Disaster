@@ -109,9 +109,10 @@ russia.21.d:0 ""
 russia.21.a:0 "Shit"
 russia.21.b:0 "Play as Karakorum"
 
-russia.22.t:0 "Ukraine Occupies Our Territory"
+russia.22.t:0 "Crimea Declares Independence"
 russia.22.d:0 ""
-russia.22.a:0 "Shit!"
+russia.22.a:0 "Shit"
+russia.22.b:0 "Play as Crimea"
 
 russia.23.t:0 "Loading da new OOB"
 russia.23.d:0 ""
@@ -143,3 +144,5 @@ RUS_supreme_leader:0 "Supreme Leader Avalov"
 RUS_red_clashes:0 "Clashes with the Socialists"
 RUS_red_killing:0 "Cracking Down on Socialists"
 RUS_mass_riots:0 "Civil Unrest"
+#Opinion Modifiers
+RUS_civil_war_boost:0 "Fellow Monarchists"

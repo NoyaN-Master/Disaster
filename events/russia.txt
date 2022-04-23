@@ -1005,10 +1005,6 @@ country_event = { #when shit gets real
 				type = annex_everything
 			}
 			declare_war_on = {
-				target = URA
-				type = annex_everything
-			}
-			declare_war_on = {
 				target = KAR
 				type = annex_everything
 			}
@@ -1042,10 +1038,6 @@ country_event = { #when shit gets real
 					type = annex_everything
 				}
 				declare_war_on = {
-					target = URA
-					type = annex_everything
-				}
-				declare_war_on = {
 					target = KAR
 					type = annex_everything
 				}
@@ -1075,10 +1067,6 @@ country_event = { #when shit gets real
 						type = annex_everything
 					}
 					declare_war_on = {
-						target = URA
-						type = annex_everything
-					}
-					declare_war_on = {
 						target = KAR
 						type = annex_everything
 					}
@@ -1104,10 +1092,6 @@ country_event = { #when shit gets real
 							type = annex_everything
 						}
 						declare_war_on = {
-							target = URA
-							type = annex_everything
-						}
-						declare_war_on = {
 							target = KAR
 							type = annex_everything
 						}
@@ -1129,10 +1113,6 @@ country_event = { #when shit gets real
 								type = annex_everything
 							}
 							declare_war_on = {
-								target = URA
-								type = annex_everything
-							}
-							declare_war_on = {
 								target = KAR
 								type = annex_everything
 							}
@@ -1150,10 +1130,6 @@ country_event = { #when shit gets real
 							}
 							REG = {
 								declare_war_on = {
-									target = URA
-									type = annex_everything
-								}
-								declare_war_on = {
 									target = KAR
 									type = annex_everything
 								}
@@ -1169,11 +1145,7 @@ country_event = { #when shit gets real
 									target = PRI
 									type = annex_everything
 								}
-								URA = {
-									declare_war_on = {
-										target = KAR
-										type = annex_everything
-									}
+								KAR = {
 									declare_war_on = {
 										target = SIB
 										type = annex_everything
@@ -1186,11 +1158,7 @@ country_event = { #when shit gets real
 										target = PRI
 										type = annex_everything
 									}
-									KAR = {
-										declare_war_on = {
-											target = SIB
-											type = annex_everything
-										}
+									SIB = {
 										declare_war_on = {
 											target = SAK
 											type = annex_everything
@@ -1199,20 +1167,10 @@ country_event = { #when shit gets real
 											target = PRI
 											type = annex_everything
 										}
-										SIB = {
-											declare_war_on = {
-												target = SAK
-												type = annex_everything
-											}
+										SAK = {
 											declare_war_on = {
 												target = PRI
 												type = annex_everything
-											}
-											SAK = {
-												declare_war_on = {
-													target = PRI
-													type = annex_everything
-												}
 											}
 										}
 									}
@@ -1221,6 +1179,12 @@ country_event = { #when shit gets real
 						}
 					}
 				}
+			}
+		}
+		UKR = {
+			add_opinion_modifier = {
+				target = UKR
+				modifier = RUS_civil_war_boost
 			}
 		}
 	}
