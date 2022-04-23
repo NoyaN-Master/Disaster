@@ -494,7 +494,8 @@ country_event = { #goring coup after querfront fails
 		set_country_flag = PRE_nazi_victory
 		add_ideas = one_party_state 
 		add_ideas = corporatism 
-		
+		remove_ideas = PRE_sleicher
+		add_ideas = PRE_goring		
 		set_politics = {
 			ruling_party = revolutionary_nationalist
 			elections_allowed = no

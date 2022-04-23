@@ -3,6 +3,16 @@ leader_traits = {
 	### Head of Government General Traits ###
 	#########################################
 
+
+
+	hog_fat_bastard = {
+		supply_consumption_factor = 0.05
+		experience_gain_air = 0.05
+		
+		random = no
+	}
+	
+	
 	hog_ambitious_union_boss = {
 		industrial_capacity_factory = 0.08
 		political_power_gain = 0.05
