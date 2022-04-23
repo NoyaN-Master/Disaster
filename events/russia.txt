@@ -257,13 +257,13 @@ country_event = { #SAVINKOV BREAK AWAY
 				transfer_state = 220
 				transfer_state = 222
 				transfer_state = 260
+				load_oob = "SAV_CW"
 			}
 		}
     }
 	option = {
 		name = russia.11.b
 		hidden_effect = {country_event ={id = russia.12 days = 1}}
-		hidden_effect = {set_country_flag = RUS_CW_SPVENT_TRIGGER}
 		hidden_effect = {
 			SAV = {change_tag_from = RUS}
 
@@ -290,6 +290,7 @@ country_event = { #SAVINKOV BREAK AWAY
 				transfer_state = 220
 				transfer_state = 222
 				transfer_state = 260
+				load_oob = "SAV_CW"
 			}
     	}
 	}
@@ -970,7 +971,7 @@ country_event = { #TEST CW EVENT
 		hidden_effect = { country_event = { id = russia.21 days = 1 } }
 		hidden_effect = { country_event = { id = russia.22 days = 1 } }
 		hidden_effect = { country_event = { id = russia.23 days = 1 } }
-		hidden_effect = { country_event = { id = russia.24 days = 13 } }
+		hidden_effect = { country_event = { id = russia.24 days = 1 } }
     }
 }
 country_event = { #when shit gets real
@@ -981,6 +982,7 @@ country_event = { #when shit gets real
 	is_triggered_only = yes
 	option = {
 		name = russia.24.a
+		hidden_effect = {set_country_flag = RUS_CW_SPVENT_TRIGGER}
 		hidden_effect = {
 			declare_war_on = {
 				target = SAV
