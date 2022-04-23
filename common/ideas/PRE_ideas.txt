@@ -4,7 +4,7 @@ PRE_simmering_discontent = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
 			picture = discontent
 			modifier = {
-			stability_factor = -0.04
+			stability_factor = -0.15
 			political_power_factor = -0.10
 			drift_defence_factor = -0.08
 			}
@@ -14,7 +14,7 @@ PRE_sham_democracy = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_sham_democracy" }
 			picture = sham_democracy
 			modifier = {
-			stability_factor = -0.02
+			stability_factor = -0.10
 			production_factory_max_efficiency_factor = 0.02
 			}
 		}
@@ -30,8 +30,8 @@ PRE_political_radicalisation = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_political_radicalisation" }
 			picture = political_radicalisation
 			modifier = {
-			stability_factor = -0.03
-			political_power_factor = -0.05
+			stability_factor = -0.15
+			political_power_factor = -0.20
 			revolutionary_nationalist_drift	= 0.05
 			autocratic_drift = 0.05
 			liberal_drift = 0.05
@@ -48,9 +48,12 @@ PRE_widespread_protests = {
 			}
 		}
 
-		PRE_DAB_effect = {
+PRE_DAB_effect = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_widespread_protests" }
 			picture = discontent
+			cancel = {
+			NOT = {country_exists = NGU}
+			}
 			modifier = {
 			stability_factor = -0.12
 			political_power_factor = -0.15
@@ -96,9 +99,9 @@ PRE_unity_through_service_idea = {
 			picture = unity_through_service
 			modifier = {
 			weekly_manpower = 5000
-			stability_weekly = 0.03
-			war_support_weekly = 0.03
-			production_speed_buildings_factor = 0.2
+			stability_weekly = 0.01
+			war_support_weekly = 0.01
+			production_speed_buildings_factor = 0.1
 			}
 		}		
 PRE_national_solidarity_idea = {
@@ -108,7 +111,7 @@ PRE_national_solidarity_idea = {
 			consumer_goods_factor = 0.03
 			MONTHLY_POPULATION = 0.35
 			research_speed_factor = 0.03
-			stability_factor = 0.10
+			stability_factor = 0.05
 			}
 		}				
 PRE_national_solidarity_idea2 = {
@@ -118,9 +121,9 @@ PRE_national_solidarity_idea2 = {
 			consumer_goods_factor = 0.05
 			MONTHLY_POPULATION = 0.5
 			research_speed_factor = 0.05
-			stability_factor = 0.15
+			stability_factor = 0.10
 			local_building_slots_factor = 0.1
-			local_resources_factor = 0.10
+			local_resources_factor = 0.05
 			}
 		}
 PRE_formalise_army_power_idea = {
@@ -128,7 +131,7 @@ PRE_formalise_army_power_idea = {
 			picture = formalise_army_power
 			modifier = {
 			max_command_power = 20
-			command_power_gain = 0.2
+			command_power_gain = 0.1
 			root_out_resistance_effectiveness_factor = 0.1
 			}
 		}
@@ -138,8 +141,8 @@ PRE_integrate_querfront_parties_idea = {
 			picture = integrated_querfront
 			modifier = {
 			conscription_factor = 0.1
-			army_core_attack_factor = 0.1
-			army_core_defence_factor = 0.1
+			army_core_attack_factor = 0.05
+			army_core_defence_factor = 0.05
 			political_power_gain = 0.2
 			}
 		}		
@@ -177,10 +180,10 @@ PRE_nacht_der_langer_messer_idea = {
 			picture = nacht_messer
 			modifier = {
 			stability_factor = -0.4
-			stability_weekly = 0.05
-			war_support_weekly = -0.02
+			stability_weekly = 0.01
+			war_support_weekly = 0.01
 			weekly_manpower = -5000
-			MONTHLY_POPULATION = -1
+			MONTHLY_POPULATION = -4
 			civilian_factory_use = 2
 			}
 		}
@@ -197,9 +200,8 @@ PRE_german_youth_league_idea= {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_german_youth_league_idea" }
 			picture = german_youth_league
 			modifier = {
-			conscription = 0.02
-			
-			army_morale_factor = 0.1
+			conscription = 0.01		
+			army_morale_factor = 0.05
 			training_time_army_factor = -0.05
 			}
 		}		
@@ -208,12 +210,11 @@ PRE_german_youth_league_idea2 = {
 			picture = german_youth_league
 			modifier = {
 			conscription = 0.02
-			army_morale_factor = 0.1
+			army_morale_factor = 0.05
 			training_time_army_factor = -0.05
 			non_core_manpower = -0.05
 			root_out_resistance_effectiveness_factor = 0.2
 			land_reinforce_rate = 0.05
-			justify_war_goal_time = -0.5
 			}
 		}
 PRE_propaganda_ministry1= {
@@ -223,10 +224,9 @@ PRE_propaganda_ministry1= {
 			conscription_factor = 0.01
 			army_core_attack_factor = 0.03
 			army_core_defence_factor = 0.03
-			offensive_war_stability_factor = 0.05
-			defensive_war_stability_factor = 0.05
-			surrender_limit = 0.02
-			war_support_factor = 0.05
+			offensive_war_stability_factor = 0.01
+			defensive_war_stability_factor = 0.01
+			war_support_factor = 0.01
 			}
 		}	
 PRE_propaganda_ministry2= {
@@ -236,10 +236,9 @@ PRE_propaganda_ministry2= {
 			conscription_factor = 0.02
 			army_core_attack_factor = 0.06
 			army_core_defence_factor = 0.06
-			offensive_war_stability_factor = 0.10
-			defensive_war_stability_factor = 0.10
-			surrender_limit = 0.04
-			war_support_factor = 0.10
+			offensive_war_stability_factor = 0.02
+			defensive_war_stability_factor = 0.02
+			war_support_factor = 0.02
 			}
 		}	
 PRE_propaganda_ministry3= {
@@ -249,10 +248,9 @@ PRE_propaganda_ministry3= {
 			conscription_factor = 0.04
 			army_core_attack_factor = 0.09
 			army_core_defence_factor = 0.09
-			offensive_war_stability_factor = 0.15
-			defensive_war_stability_factor = 0.15
-			surrender_limit = 0.06
-			war_support_factor = 0.15
+			offensive_war_stability_factor = 0.03
+			defensive_war_stability_factor = 0.03
+			war_support_factor = 0.03
 			}
 		}	
 PRE_propaganda_ministry4= {
@@ -262,10 +260,9 @@ PRE_propaganda_ministry4= {
 			conscription_factor = 0.08
 			army_core_attack_factor = 0.12
 			army_core_defence_factor = 0.12
-			offensive_war_stability_factor = 0.20
-			defensive_war_stability_factor = 0.20
-			surrender_limit = 0.08
-			war_support_factor = 0.20
+			offensive_war_stability_factor = 0.04
+			defensive_war_stability_factor = 0.04
+			war_support_factor = 0.04
 			}
 		}	
 PRE_propaganda_ministry5= {
@@ -275,10 +272,9 @@ PRE_propaganda_ministry5= {
 			conscription_factor = 0.15
 			army_core_attack_factor = 0.15
 			army_core_defence_factor = 0.15
-			offensive_war_stability_factor = 0.25
-			defensive_war_stability_factor = 0.25
-			surrender_limit = 0.1
-			war_support_factor = 0.25		
+			offensive_war_stability_factor = 0.05
+			defensive_war_stability_factor = 0.05
+			war_support_factor = 0.05		
 			}
 		}
 PRE_loyal_sons_of_germania_idea	= {
@@ -286,7 +282,7 @@ PRE_loyal_sons_of_germania_idea	= {
 			picture = sons_of_germania_idea
 			modifier = {
 			army_attack_factor = 0.05
-			max_dig_in = 5
+			max_dig_in = 2
 			}
 		}	
 PRE_meine_ehre_idea= {
@@ -306,7 +302,6 @@ PRE_deutsche_arbeiters_front_idea= {
 			modifier = {
 			production_factory_max_efficiency_factor = 0.05
 			line_change_production_efficiency_factor = 0.05
-			industrial_capacity_factory = 0.05
 			}
 		}
 PRE_deutsche_arbeiters_front_idea2 = {
@@ -315,7 +310,6 @@ PRE_deutsche_arbeiters_front_idea2 = {
 			modifier = {
 			production_factory_max_efficiency_factor = 0.1
 			line_change_production_efficiency_factor = 0.1
-			industrial_capacity_factory = 0.1
 			political_power_gain = -0.2
 			}
 		}	
@@ -336,14 +330,12 @@ PRE_the_eagle_rises_idea = {
 			ai_focus_aggressive_factor = 0.5
 			justify_war_goal_time = -0.5
 			mobilization_speed = 0.2
-			surrender_limit = 0.2
 			}
 		}
 PRE_empowered_abwehr = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_empowered_abwehr" }
 			picture = empower_abwehr
 			modifier = {
-			political_power_factor = 0.06
 			ultranationalist_drift = 0.03
 			stability_factor = 0.04
 			operative_slot = 1
@@ -356,7 +348,6 @@ PRE_empowered_abwehr_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_empowered_abwehr_2" }
 			picture = empower_abwehr 
 			modifier = {
-			political_power_factor = 0.09
 			ultranationalist_drift = 0.08
 			stability_factor = 0.10
 			operative_slot = 1
@@ -448,7 +439,6 @@ PRE_industrialist_support2 = {
 			local_resources_factor = 0.15
 			industrial_capacity_factory = 0.1
 			conversion_cost_civ_to_mil_factor = -0.2
-			consumer_goods_factor = -0.03
 			}
 		}
 PRE_industrialist_support3 = {
@@ -459,7 +449,7 @@ PRE_industrialist_support3 = {
 			local_resources_factor = 0.2
 			industrial_capacity_factory = 0.15
 			conversion_cost_civ_to_mil_factor = -0.2
-			consumer_goods_factor = -0.05
+			consumer_goods_factor = -0.02
 			}
 		}
 PRE_industrialist_support4 = {
@@ -470,8 +460,7 @@ PRE_industrialist_support4 = {
 			local_resources_factor = 0.2
 			industrial_capacity_factory = 0.15
 			conversion_cost_civ_to_mil_factor = -0.2
-			consumer_goods_factor = -0.1
-			production_speed_industrial_complex_factor = 0.15
+			consumer_goods_factor = -0.04
 			production_speed_arms_factory_factor = 0.05
 			}
 		}
@@ -481,7 +470,7 @@ PRE_increase_military_budget_idea = {
 			picture = increase_military_budget
 			modifier = {
 			consumer_goods_factor = 0.05
-			production_speed_arms_factory_factor = 0.15
+			production_speed_arms_factory_factor = 0.05
 			local_resources_factor = 0.10
 			industry_repair_factor = 0.2
 			political_power_gain = -0.2
@@ -493,8 +482,6 @@ PRE_order_and_discipline_idea = {
 			modifier = {
 			army_org_factor = 0.05
 			army_org = 5
-			land_reinforce_rate = 0.05
-			attrition = -0.05
 			}
 		}
 PRE_martial_law = {
@@ -555,7 +542,7 @@ PRE_junker_rule_continues = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_junker_rule_continues" }
 			picture = junker_rule
 			modifier = {
-			stability_factor = 0.2
+			stability_factor = 0.05
 			production_speed_arms_factory_factor = 0.05			
 			}
 		}
@@ -563,7 +550,7 @@ PRE_junker_rule_continues1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_junker_rule_continues" }
 			picture = junker_rule
 			modifier = {
-			stability_factor = 0.2
+			stability_factor = 0.1
 			production_speed_arms_factory_factor = 0.05
 			production_factory_efficiency_gain_factor = 0.05 			
 			}
@@ -572,8 +559,8 @@ PRE_frederick_great_reforms_idea1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_frederick_great_reforms_idea1" }
 			picture = frederick_army_reform
 			modifier = {
-			command_power_gain = 0.2
-			max_command_power = 30
+			command_power_gain = 0.1
+			max_command_power = 15
 			minimum_training_level = -0.1 
 			}
 		}
@@ -582,11 +569,11 @@ PRE_frederick_great_reforms_idea2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_aid_the_workers_idea2" }
 			picture = frederick_army_reform
 			modifier = {
-			command_power_gain = 0.3
-			max_command_power = 50
+			command_power_gain = 0.2
+			max_command_power = 20
 			minimum_training_level = -0.1 
 			land_reinforce_rate = 0.05
-			experience_loss_factor = -0.2
+			experience_loss_factor = -0.1
 			
 			}
 		}
@@ -596,13 +583,11 @@ PRE_frederick_great_reforms_idea3 = {
 			picture = frederick_army_reform
 			modifier = {
 			command_power_gain = 0.3
-			max_command_power = 50
+			max_command_power = 25
 			minimum_training_level = -0.1 
 			land_reinforce_rate = 0.05
 			experience_loss_factor = -0.2
-			experience_gain_army = 0.15
 			conscription_factor = 0.10
-			conscription = 0.02
 			}
 		}
 PRE_prussian_work_ethics_idea1 = {
@@ -650,8 +635,8 @@ PRE_controlled_opposition = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_controlled_opposition" }
 			picture = controlled_opposition
 			modifier = {
-			political_power_factor = 0.1
-			stability_factor = 0.15
+			political_power_factor = 0.05
+			stability_factor = 0.10
 			
 			}
 		} 

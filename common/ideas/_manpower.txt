@@ -129,7 +129,6 @@ ideas = {
 			
 			available = {
 				has_war_support > 0.6
-				surrender_progress > 0
 			}
 
 			ai_will_do = {
@@ -193,11 +192,7 @@ ideas = {
 			
 			available = {
 				has_war = yes
-				OR = {
 					has_war_support > 0.7
-					surrender_progress > 0
-				}
-				enemies_strength_ratio > 0.75
 			}
 			ai_will_do = {
    				factor = 1
@@ -254,17 +249,7 @@ ideas = {
 			available = {
 				#has_manpower_for_recruit_change_to =  { value = 0.25 group = mobilization_laws }
 				has_war = yes
-				OR = {
 					has_war_support > 0.85
-					surrender_progress > 0.25
-				}
-				enemies_strength_ratio > 1
-				#any_enemy_country = {
-				#	strength_ratio = {
-				#		tag = ROOT 
-				#		ratio > 1
-				#	}
-				#}
 			}
 
 			ai_will_do = {

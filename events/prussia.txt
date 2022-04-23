@@ -54,6 +54,8 @@ country_event = { #schleicher's junker ultimatum
 		    #
 	        }
             }
+		remove_ideas = PRE_sleicher
+		add_ideas = PRE_goerdeler
 	}
 	option = { #stay in power
 		name = pre.3.b
@@ -99,7 +101,9 @@ country_event = { #Elections
 			popularity = 0.1
 		}
 		add_ideas = one_party_state 
-		add_ideas = 	corporatism 
+		add_ideas = corporatism 
+		remove_ideas = PRE_goerdeler
+		add_ideas = PRE_goring
 	}
 	option = { #DNVP
 		name = pre.5.b
@@ -115,7 +119,8 @@ country_event = { #Elections
 		}
 		add_ideas = autocracy 
 		add_ideas = corporatism 
-
+		remove_ideas = PRE_goerdeler
+		add_ideas = PRE_alfred
 	}
 	option = { #Libtard victory
 		name = pre.5.c
@@ -131,6 +136,8 @@ country_event = { #Elections
 		}
 		add_ideas = 	multi_party_democracy 
 		add_ideas = 	laisez_faire 
+		remove_ideas = PRE_goerdeler
+		add_ideas = PRE_paul_von_lettow_vorbeck
 	}
 	option = { #Junkers
 		name = pre.5.e
@@ -200,6 +207,8 @@ country_event = { #Junker Coups Schleiher
 	        }
             }
 		add_ideas = corporatism
+		remove_ideas = PRE_sleicher
+		add_ideas = PRE_goerdeler
 	}
 }
 country_event = { # Purging the Junkers
@@ -265,6 +274,8 @@ country_event = { # Goring Coups with junker Support
 			elections_allowed = no
 		}	
 	    clr_country_flag = PRE_schleicher_refuses_step_down 
+		remove_ideas = PRE_sleicher
+		add_ideas = PRE_goring
 	}
 	option = { # Goring consolidates power
 		name = pre.12.b
@@ -275,6 +286,8 @@ country_event = { # Goring Coups with junker Support
 			elections_allowed = no
 		}	 
 	    clr_country_flag = PRE_schleicher_refuses_step_down 
+		remove_ideas = PRE_sleicher
+		add_ideas = PRE_goring
 	}
 }
 country_event = { # Junker betray Goring
@@ -318,7 +331,8 @@ country_event = { # Goring Consolidates power
 		set_country_flag = PRE_nazi_victory
 		add_ideas = one_party_state 
 		add_ideas = corporatism 
-
+		remove_ideas = PRE_goerdeler
+		add_ideas = PRE_goring
 	}
 }
 country_event = { # Schleicher Tries to Form A fron
@@ -368,9 +382,6 @@ country_event = { # Succeeds
 		set_country_flag = PRE_schleicher_victory
 		add_ideas = 	corporatism 
 		add_ideas = 	one_party_state 
-
-		
-		
 		add_popularity = {
 		ideology = ultranationalist
 		popularity = 0.35

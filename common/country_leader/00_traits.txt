@@ -1,5 +1,162 @@
 leader_traits = {
+	#########################################
+	### Head of Government General Traits ###
+	#########################################
 
+	hog_ambitious_union_boss = {
+		industrial_capacity_factory = 0.08
+		political_power_gain = 0.05
+
+		random = no
+	}
+
+	hog_backroom_backstabber = {
+		stability_factor = -0.07
+		political_power_gain = 0.13
+
+		random = no
+	}
+
+	hog_corporate_suit = {
+		trade_opinion_factor = 0.05
+		political_power_gain = -0.12
+		production_speed_industrial_complex_factor = 0.08
+		production_speed_arms_factory_factor = 0.04
+
+		random = no
+	}
+
+	hog_flamboyant_tough_guy = {
+		war_support_factor = 0.06
+		stability_factor = 0.06
+		political_power_gain = -0.08
+
+		random = no
+	}
+
+	hog_happy_amateur = {
+		production_speed_buildings_factor = -0.04
+		political_power_gain = 0.07
+
+		random = no
+	}
+
+	hog_local_tyrant = {
+		political_power_gain = -0.09
+		local_resources_factor = 0.13
+
+		random = no
+	}
+
+	hog_naive_optimist = {
+		political_power_gain = -0.05
+		production_speed_industrial_complex_factor = 0.11
+		production_speed_arms_factory_factor = -0.09
+
+		random = no
+	}
+
+	hog_old_admiral = {
+		production_speed_naval_base_factor = 0.09
+		production_speed_dockyard_factor = 0.06
+		experience_gain_navy = 0.12
+
+		random = no
+	}
+
+	hog_old_air_marshal = {
+		production_speed_air_base_factor = 0.13
+
+		equipment_bonus = {
+			fighter_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+			heavy_fighter_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+			CAS_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+			tac_bomber_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+			strat_bomber_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+		}
+		experience_gain_air = 0.05
+
+		random = no
+	}
+
+	hog_old_general = {
+		production_speed_bunker_factor = 0.09
+		max_planning = 0.1
+		experience_gain_army = 0.07
+
+		random = no
+	}
+
+	hog_young_guard = {
+		political_power_gain = 0.05
+		org_loss_when_moving = -0.07
+		experience_gain_army = 0.05
+
+		random = no
+	}
+
+	hog_political_protege = {
+		political_power_gain = 0.11
+
+		random = no
+	}
+
+	hog_pragmatic_statesman = {
+		political_power_gain = 0.14
+
+		random = no
+	}
+
+	hog_reformist_soldier = {
+		experience_gain_army_factor = 0.08
+		army_morale_factor = 0.1
+
+		random = no
+	}
+
+	hog_respected_war_hero = {
+		political_power_gain = 0.06
+		army_morale_factor = 0.1
+		training_time_factor = -0.12
+
+		random = no
+	}
+
+	hog_silent_workhorse = {
+		political_power_gain = 0.07
+		local_resources_factor = 0.14
+
+		random = no
+	}
+
+	hog_smiling_oilman = {
+		production_factory_max_efficiency_factor = 0.05
+		production_speed_synthetic_refinery_factor = 0.12
+
+		random = no
+	}
+
+	hog_spiritual_leader = {
+		stability_factor = 0.1
+		consumer_goods_factor = 0.02
+
+		random = no
+	}
 	PRE_heil_im_der_siegerkranz_idea = {
 	    random = no
 	surrender_limit = 0.2
@@ -24,16 +181,16 @@ leader_traits = {
 		
 	PRE_fuhrer_prinzip = {
 	    random = no
-		army_core_defence_factor = 0.1
-		army_core_attack_factor = 0.1
+		army_core_defence_factor = 0.03
+		army_core_attack_factor = 0.03
 		war_support_factor = 0.05
 		stability_factor = 0.1
 	}
 
 	man_of_people = {
 	    random = no
-		stability_factor = 0.15
-		war_support_factor = 0.12
+		stability_factor = 0.05
+		war_support_factor = 0.05
 	}
 
 	schizo_nigger = {
@@ -108,9 +265,9 @@ leader_traits = {
 	
 	kemalist_warrior = {
 		random = no
-		stability_factor = 0.10
-		army_core_attack_factor = 0.1
-		army_core_defence_factor = 0.1
+		stability_factor = 0.03
+		army_core_attack_factor = 0.04
+		army_core_defence_factor = 0.04
 		war_support_factor = 0.10
 	}
 

@@ -10,8 +10,12 @@ GER_unification_decisions = {
 			813 = {is_owned_and_controlled_by = ROOT }
 			}
           fire_only_once = yes	 
+		  
+		  days_remove = 50
+		  
           remove_effect = {
 		  AUT = { every_unit_leader = { set_nationality = ROOT } }
+		  add_stability = -0.05
 		  }	 
         ai_will_do = {
 			factor = 1000
@@ -28,8 +32,12 @@ GER_unification_decisions = {
 			64 = {is_owned_and_controlled_by = ROOT }
 			}
           fire_only_once = yes	 
+		  
+		  days_remove = 50
+		
           remove_effect = {
 		  PRE = { every_unit_leader = { set_nationality = ROOT } }
+		 add_stability = -0.05
 		  }	 
         ai_will_do = {
 			factor = 1000
@@ -46,8 +54,12 @@ GER_unification_decisions = {
 			59 = {is_owned_and_controlled_by = ROOT }
 			}
           fire_only_once = yes	 
+		
+		  		  days_remove = 50
+			
           remove_effect = {
 		  NGU = { every_unit_leader = { set_nationality = ROOT } }
+		  add_stability = -0.05
 		  }	 
         ai_will_do = {
 			factor = 1000
@@ -64,8 +76,10 @@ GER_unification_decisions = {
 			52 = {is_owned_and_controlled_by = ROOT }
 			}
           fire_only_once = yes	 
+		  		  days_remove = 50
           remove_effect = {
 		  BAY = { every_unit_leader = { set_nationality = ROOT } }
+		  add_stability = -0.05
 		  }	 
         ai_will_do = {
 			factor = 1000
@@ -83,10 +97,11 @@ GER_unification_decisions = {
                         compare = greater_than_or_equals
                     } }
                     NOT = { has_country_flag = PRE_formed_greater_germany}
-	}
+		}
+		highlight_states = {
 		highlight_state_targets = {
 			state = 64
-		}
+		}}
           fire_only_once = yes	 
           remove_effect = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
@@ -110,9 +125,10 @@ GER_unification_decisions = {
                     } }
                     NOT = { has_country_flag = PRE_formed_greater_germany}
 	}
+		highlight_states = {
 		highlight_state_targets = {
 			state = 64
-		}
+		}}
           fire_only_once = yes	 
           remove_effect = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
@@ -136,9 +152,10 @@ GER_unification_decisions = {
                     } }
                     NOT = { has_country_flag = PRE_formed_greater_germany}
 	}
+		highlight_states = {
 		highlight_state_targets = {
 			state = 64
-		}	 
+		}} 
           fire_only_once = yes
           remove_effect = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
@@ -161,9 +178,10 @@ GER_unification_decisions = {
                     } }
                     NOT = { has_country_flag = PRE_formed_greater_germany}
 	}
+		highlight_states = {
 		highlight_state_targets = {
 			state = 64
-		}	 
+		}} 
           fire_only_once = yes
           remove_effect = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
@@ -188,9 +206,10 @@ GER_unification_decisions = {
                     } }
                     NOT = { has_country_flag = PRE_formed_greater_germany}
 	}
+		highlight_states = {
 		highlight_state_targets = {
 			state = 64
-		}	 
+		}} 
           fire_only_once = yes
           remove_effect = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
@@ -216,9 +235,10 @@ GER_unification_decisions = {
                     } }
                     NOT = { has_country_flag = PRE_formed_greater_germany}
 		}
+		highlight_states = {
 		highlight_state_targets = {
 			state = 64
-		}	 
+		}}
           fire_only_once = yes
           complete_effect = {
 			drop_cosmetic_tag = yes
@@ -245,9 +265,10 @@ GER_unification_decisions = {
                     } }
                     NOT = { has_country_flag = PRE_formed_greater_germany}
 		}
+		highlight_states = {
 		highlight_state_targets = {
 			state = 64
-		}	 
+		}} 
           fire_only_once = yes
           complete_effect = {
 			set_cosmetic_tag = NGU_StrasserGermany
@@ -273,9 +294,10 @@ GER_unification_decisions = {
                         compare = greater_than_or_equals
                     } }
 	}
+		highlight_states = {
 		highlight_state_targets = {
 			state = 64
-		}
+		}}
           fire_only_once = yes	 
           remove_effect = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
@@ -297,9 +319,10 @@ GER_unification_decisions = {
                         compare = greater_than_or_equals
                     } }
 	}
+		highlight_states = {
 		highlight_state_targets = {
 			state = 64
-		}
+		}}
           fire_only_once = yes	 
           remove_effect = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
@@ -321,9 +344,10 @@ GER_unification_decisions = {
                         compare = greater_than_or_equals
                     } }
 	}
+		highlight_states = {
 		highlight_state_targets = {
 			state = 64
-		}	 
+		}} 
           fire_only_once = yes
           remove_effect = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
@@ -345,9 +369,10 @@ GER_unification_decisions = {
                         compare = greater_than_or_equals
                     } }
 	}
+		highlight_states = {
 		highlight_state_targets = {
 			state = 64
-		}	 
+		}}
           fire_only_once = yes
           remove_effect = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	
@@ -371,9 +396,10 @@ GER_unification_decisions = {
                         compare = greater_than_or_equals
                     } }
 	}
+		highlight_states = {
 		highlight_state_targets = {
 			state = 64
-		}	 
+		}}
           fire_only_once = yes
           remove_effect = {
 			custom_effect_tooltip = GER_forming_germany_tooltip	

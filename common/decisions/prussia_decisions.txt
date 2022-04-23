@@ -182,25 +182,41 @@ PRE_Take_South_Germany = {
         tag = PRE
         }
         available  = {   
-        has_war = no
+			OR = {
+			is_neighbor_of = BAY
+			is_neighbor_of = BDN
+			is_neighbor_of = WRT
+			}
+			NOT = { BAY = { is_puppet_of = PRE } }
+			OR = {
+			country_exists = BAY
+			country_exists = BDN
+			country_exists = WRT
+			}
         }
         visible = {
         original_tag = PRE
         has_completed_focus = PRE_Rest_Germany
         }    
         complete_effect = {
-        declare_war_on = {
+		if = {
+		limit = { country_exists = BDN}
+		declare_war_on = {
         target = BDN
         type = annex_everything
-        }
-        declare_war_on = {
+        }}
+		if = {
+		limit = { country_exists = BAY}
+		declare_war_on = {
         target = BAY
         type = annex_everything
-        }
-        declare_war_on = {
+        }}
+		if = {
+		limit = { country_exists = WRT}
+		declare_war_on = {
         target = WRT
         type = annex_everything
-        }
+        }}
         }
      ai_will_do = {
 			factor = 1000
@@ -214,10 +230,13 @@ PRE_Take_Austria = {
         tag = PRE
         }
         available  = {   
-        has_war = no
+        is_neighbor_of = AUT
+		country_exists = AUT
+		NOT = { AUT = { is_puppet_of = PRE } }
         }
         visible = {
         original_tag = PRE
+		country_exists = AUT
         has_completed_focus = PRE_Rest_Germany
         }    
         complete_effect = {
@@ -237,10 +256,13 @@ PRE_Take_CEZ = {
         tag = PRE
         }
         available  = {   
-        has_war = no
+        is_neighbor_of = CEZ
+		country_exists = CEZ
+		NOT = { CEZ = { is_puppet_of = PRE } }
         }
         visible = {
         original_tag = PRE
+		country_exists = CEZ
         has_completed_focus = PRE_Rest_Germany
         }    
         complete_effect = {
@@ -301,24 +323,19 @@ PRE_Attack_Rhineland = {
         tag = PRE
         }
         available  = {   
-        has_war = no
+        is_neighbor_of = RHN
+		country_exists = RHN
+		NOT = { RHN = { is_puppet_of = PRE } }
         }
         visible = {
         original_tag = PRE
+		country_exists = RHN
         has_completed_focus = PRE_Rest_Germany
         }    
         complete_effect = {
-	declare_war_on = {
+		declare_war_on = {
 		target = RHN
 		type = annex_everything
-	}
-        declare_war_on = {
-    	     target = FRE
-    	     type = annex_everything
-		}
-		add_timed_idea = {
-		idea = NGU_FrenchSaxons
-		days = 50
 		}	
         }
      ai_will_do = {
@@ -447,33 +464,44 @@ PRE_fuck_baltics = {
     }
     available  = {   
     has_war = no
+			OR = {
+			is_neighbor_of = LIT
+			is_neighbor_of = LAT
+			is_neighbor_of = EST
+			}
+			OR = {
+			country_exists = LIT
+			country_exists = LAT
+			country_exists = EST
+			}
     }
     visible = {
     original_tag = PRE
     has_completed_focus = PRE_generalplan_ost
     }    
     complete_effect = {
-    RUS = {
-        end_puppet = LIT 
-    }
-    RUS = {
-        end_puppet = LAT 
-    }
-    RUS = {
-        end_puppet = EST 
-    }
-    declare_war_on = {
+        RUS = {
+            end_puppet = LAT
+            end_puppet = EST
+        }
+		if = {
+		limit = { country_exists = LIT}
+		declare_war_on = {
         target = LIT
         type = annex_everything
-    }
-    declare_war_on = {
+        }}
+		if = {
+		limit = { country_exists = LAT}
+		declare_war_on = {
         target = LAT
         type = annex_everything
-    }
-    declare_war_on = {
+        }}
+		if = {
+		limit = { country_exists = EST}
+		declare_war_on = {
         target = EST
         type = annex_everything
-    }
+        }}
     }
  ai_will_do = {
         factor = 1000
@@ -581,6 +609,7 @@ PRE_Ukraine_Goltz = {
         target = UKR
         transfer_troops = yes
         }
+        transfer_state = 194
         set_cosmetic_tag = BLT_Ostland
         }
         }
