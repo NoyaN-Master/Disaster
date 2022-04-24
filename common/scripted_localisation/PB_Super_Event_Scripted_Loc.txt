@@ -141,6 +141,12 @@ defined_text = { #SUPER EVENT TITLES
         }
         localization_key = "GFX_SPEVNT_REG_UNIF"
     }
+    text = { 
+        trigger = {
+            has_global_flag = SAV_UNIF_FLAG
+        }
+        localization_key = "GFX_SPEVNT_SAV_UNIF"
+    }
 }
 
 defined_text = { #SUPER EVENT QUOTES
@@ -286,6 +292,12 @@ defined_text = { #SUPER EVENT QUOTES
             has_global_flag = REG_UNIF_FLAG
         }
         localization_key = "GFX_SPEVNT_REG_UNIF_TEXT"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = SAV_UNIF_FLAG
+        }
+        localization_key = "GFX_SPEVNT_SAV_UNIF_TEXT"
     }
 }
 
@@ -433,5 +445,11 @@ defined_text = { #SUPER EVENT REMARKS
             has_global_flag = REG_UNIF_FLAG
         }
         localization_key = "GFX_SPEVNT_REG_UNIF_REMARK"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = SAV_UNIF_FLAG
+        }
+        localization_key = "GFX_SPEVNT_SAV_UNIF_REMARK"
     }
 }

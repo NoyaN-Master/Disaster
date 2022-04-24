@@ -125,3 +125,9 @@ sound = {
 	volume = 1
 	always_load = yes
 }
+sound = {
+	name = "sav_unif"
+	file = "menu/sav_unif.wav"
+	volume = 1
+	always_load = yes
+}
