@@ -312,6 +312,7 @@ country_event = { #Kuban breaks off
 				transfer_state = 234
 				transfer_state = 235
 				transfer_state = 237
+				load_oob = "KUB_CW"
 			}
 			234 = {
 				add_core_of = KUB
@@ -330,6 +331,7 @@ country_event = { #Kuban breaks off
 				transfer_state = 234
 				transfer_state = 235
 				transfer_state = 237
+				load_oob = "KUB_CW"
 			}
 			234 = {
 				add_core_of = KUB
@@ -358,6 +360,7 @@ country_event = { #Don breaks off
 				transfer_state = 238
 				transfer_state = 245
 				transfer_state = 265
+				load_oob = "DON_CW"
 			}
 			218 = {
 				add_core_of = DON
@@ -383,6 +386,7 @@ country_event = { #Don breaks off
 				transfer_state = 238
 				transfer_state = 245
 				transfer_state = 265
+				load_oob = "DON_CW"
 			}
 			218 = {
 				add_core_of = DON
@@ -598,6 +602,7 @@ country_event = { #SIBERIA breaks off
 				transfer_state = 567
 				transfer_state = 566
 				transfer_state = 575
+				load_oob = "SIB_CW"
 			}
 			581 = {
 				add_core_of = SIB
@@ -675,6 +680,7 @@ country_event = { #SIBERIA breaks off
 				transfer_state = 567
 				transfer_state = 566
 				transfer_state = 575
+				load_oob = "SIB_CW"
 			}
 			581 = {
 				add_core_of = SIB
@@ -750,6 +756,7 @@ country_event = { #PRIAMURYE breaks off
 				transfer_state = 408
 				transfer_state = 562
 				transfer_state = 637
+				load_oob = "PRI_CW"
 			}
 			561 = {
 				add_core_of = PRI
@@ -783,6 +790,7 @@ country_event = { #PRIAMURYE breaks off
 				transfer_state = 408
 				transfer_state = 562
 				transfer_state = 637
+				load_oob = "PRI_CW"
 			}
 			561 = {
 				add_core_of = PRI
@@ -821,6 +829,7 @@ country_event = { #YAKUTIA breaks off
 			SAK = {
 				transfer_state = 574
 				transfer_state = 644
+				load_oob = "SAK_CW"
 			}
 			574 = {
 				add_core_of = SAK
@@ -838,6 +847,7 @@ country_event = { #YAKUTIA breaks off
 			SAK = {
 				transfer_state = 574
 				transfer_state = 644
+				load_oob = "SAK_CW"
 			}
 			574 = {
 				add_core_of = SAK
@@ -860,6 +870,7 @@ country_event = {#altia breaks off
 		hidden_effect = {
 			KAR = {
 				transfer_state = 654
+				load_oob = "KRA_CW"
 			}
 			654 = {
 				add_core_of = KAR
@@ -873,6 +884,7 @@ country_event = {#altia breaks off
 			KAR = { change_tag_from = RUS }
 			KAR = {
 				transfer_state = 654
+				load_oob = "KRA_CW"
 			}
 			654 = {
 				add_core_of = KAR
@@ -895,6 +907,7 @@ country_event = { #Crimea breaks free
 		hidden_effect = {
 			CRI = {
 				transfer_state = 137
+				load_oob = "CRI_CW"
 			}
 			137 = {
 				add_core_of = CRI
@@ -908,6 +921,7 @@ country_event = { #Crimea breaks free
 			CRI = { change_tag_from = RUS }
 			CRI = {
 				transfer_state = 137
+				load_oob = "CRI_CW"
 			}
 			137 = {
 				add_core_of = CRI
@@ -987,6 +1001,7 @@ country_event = { #TEST CW EVENT
 		hidden_effect = { country_event = { id = russia.24 days = 1 } }
     }
 }
+
 country_event = { #when shit gets real
 	id = russia.24
 	title = russia.24.t
@@ -1185,6 +1200,48 @@ country_event = { #when shit gets real
 												target = PRI
 												type = annex_everything
 											}
+										}
+									}
+									URA = {
+										declare_war_on = {
+											target = SAK
+											type = annex_everything
+										}
+										declare_war_on = {
+											target = RUS
+											type = annex_everything
+										}
+										declare_war_on = {
+											target = SAV
+											type = annex_everything
+										}
+										declare_war_on = {
+											target = REG
+											type = annex_everything
+										}
+										declare_war_on = {
+											target = DON
+											type = annex_everything
+										}
+										declare_war_on = {
+											target = KUB
+											type = annex_everything
+										}
+										declare_war_on = {
+											target = PRI
+											type = annex_everything
+										}
+										declare_war_on = {
+											target = SAK
+											type = annex_everything
+										}
+										declare_war_on = {
+											target = SIB
+											type = annex_everything
+										}
+										declare_war_on = {
+											target = CRI
+											type = annex_everything
 										}
 									}
 								}
