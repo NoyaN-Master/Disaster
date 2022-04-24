@@ -9,4 +9,8 @@ spriteTypes = {
 		name = "GFX_game_rule_wargoal"
 		texturefile = "gfx/game_rules/game_rule_wargoal.png"
 	}
+	SpriteType = {
+		name = "GFX_scorched_earth"
+		texturefile = "gfx/game_rules/scorched_earth.dds"
+	}
 }
