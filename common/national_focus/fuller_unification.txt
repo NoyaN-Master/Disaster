@@ -978,7 +978,7 @@ focus_tree = {
 		prerequisite = { focus = SKL_diplo }
 		completion_reward = {
 			declare_war_on = {
-				taget = PAL
+				target = PAL
 				type = annex_everything
 			}
 			declare_war_on = {
@@ -1106,12 +1106,31 @@ focus_tree = {
 		relative_position_id = SKL_diplo
 		prerequisite = { focus = SKL_PHASE_TWO }
 		completion_reward = {
+			RUS = {
+				end_puppet = TRK
+			}
 			declare_war_on = {
-				target = GOK
+				target = TMS
 				type = annex_everything
 			}
 			declare_war_on = {
 				target = TRK
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = BUK
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = BAS
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = KHI
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = TSV
 				type = annex_everything
 			}
 		}
@@ -1130,10 +1149,6 @@ focus_tree = {
 				target = GRE
 				type = annex_everything
 			}
-			declare_war_on = {
-				target = BLG
-				type = annex_everything
-			}
 		}
 	}
 	focus = {
@@ -1150,9 +1165,14 @@ focus_tree = {
 				country_exists = IQR
 				country_exists = SRY
 				country_exists = PAL
-				country_exists = GOK
+				country_exists = EGY
 				country_exists = TRK
 				country_exists = AFG
+				country_exists = BUK
+				country_exists = TMS
+				country_exists = KHI
+				country_exists = BAS
+				country_exists = TSV
 			}
 		}
 		relative_position_id = SKL_diplo
