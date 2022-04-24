@@ -432,6 +432,7 @@ country_event = { #Red Guard breaks off
 				transfer_state = 399
 				transfer_state = 400
 				transfer_state = 837
+				load_oob = "REG_CW"
 			}
 		}
     }
@@ -454,6 +455,7 @@ country_event = { #Red Guard breaks off
 				transfer_state = 399
 				transfer_state = 400
 				transfer_state = 837
+				load_oob = "REG_CW"
 			}
 			every_state = {
 				limit = {
@@ -943,6 +945,15 @@ country_event = { #Reorganizing Army
 			delete_unit_template_and_units = {
 				division_template = "Tankovaya Diviziya"
 				disband = no
+			}
+			remove_ideas = {
+				RUS_army_disloyalty
+				RUS_mass_terror
+				RUS_pogromes
+				RUS_mass_riots
+				RUS_supreme_leader
+				RUS_red_clashes
+				RUS_red_killing
 			}
 		}
 		load_oob = "RUS_CW"
