@@ -132,6 +132,16 @@ guiTypes = {
 			spriteType = "GFX_SPEVNT_RUSCW"
 			position = { x = 35 y = 0 }
 		}
+		iconType = {
+			name ="Super_Event_Image_RUS_UNIF"
+			spriteType = "GFX_SPEVNT_RUS_UNIF"
+			position = { x = 35 y = 0 }
+		}
+		iconType = {
+			name ="Super_Event_Image_REG_UNIF"
+			spriteType = "GFX_SPEVNT_REG_UNIF"
+			position = { x = 35 y = 0 }
+		}
 		instantTextBoxType = {
 			name = "Pax_Super_Event_Title_textbox"
 			position = { x = 150 y = 290 }

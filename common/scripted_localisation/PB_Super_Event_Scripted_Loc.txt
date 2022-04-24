@@ -129,6 +129,18 @@ defined_text = { #SUPER EVENT TITLES
         }
         localization_key = "GFX_SPEVNT_JFK"
     }
+    text = { 
+        trigger = {
+            has_global_flag = RUS_UNIF_FLAG
+        }
+        localization_key = "GFX_SPEVNT_RUS_UNIF"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = REG_UNIF_FLAG
+        }
+        localization_key = "GFX_SPEVNT_REG_UNIF"
+    }
 }
 
 defined_text = { #SUPER EVENT QUOTES
@@ -262,6 +274,18 @@ defined_text = { #SUPER EVENT QUOTES
             has_global_flag = JFKflag
         }
         localization_key = "GFX_SPEVNT_JFK_TEXT"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = RUS_UNIF_FLAG
+        }
+        localization_key = "GFX_SPEVNT_RUS_UNIF_TEXT"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = REG_UNIF_FLAG
+        }
+        localization_key = "GFX_SPEVNT_REG_UNIF_TEXT"
     }
 }
 
@@ -397,5 +421,17 @@ defined_text = { #SUPER EVENT REMARKS
             has_global_flag = JFKflag
         }
         localization_key = "GFX_SPEVNT_JFK_REMARK"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = RUS_UNIF_FLAG
+        }
+        localization_key = "GFX_SPEVNT_RUS_UNIF_REMARK"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = REG_UNIF_FLAG
+        }
+        localization_key = "GFX_SPEVNT_REG_UNIF_REMARK"
     }
 }

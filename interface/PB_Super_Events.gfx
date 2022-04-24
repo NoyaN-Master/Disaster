@@ -136,6 +136,18 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	spriteType = {
+		name = "GFX_SPEVNT_RUS_UNIF"
+		texturefile = "gfx/super_events/SPEVNT_RUS_UNIF.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_SPEVNT_REG_UNIF"
+		texturefile = "gfx/super_events/SPEVNT_REG_UNIF.dds"
+		legacy_lazy_load = no
+	}
+
 
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window_thin_border"

@@ -149,3 +149,19 @@ soundeffect =
 	}
 	volume = 1
 }
+soundeffect =
+{
+	name = "rus_unif"
+	sounds = {
+		sound = "rus_unif"
+	}
+	volume = 1
+}
+soundeffect =
+{
+	name = "reg_unif"
+	sounds = {
+		sound = "reg_unif"
+	}
+	volume = 1
+}

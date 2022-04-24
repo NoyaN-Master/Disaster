@@ -124,6 +124,16 @@ scripted_gui = {
 				has_global_flag  = JFKflag
 			}
 		}
+		triggers = {
+			Super_Event_Image_RUS_Unif_visible = {
+				has_global_flag  = RUS_UNIF_FLAG
+			}
+		}
+		triggers = {
+			Super_Event_Image_RUS_Unif_visible = {
+				has_global_flag  = REG_UNIF_FLAG
+			}
+		}
 
 
 		properties = {
@@ -262,6 +272,18 @@ scripted_gui = {
 						has_global_flag = JFKflag
 					}
 					clr_global_flag  = JFKflag
+				}
+				if = {
+					limit = {	
+						has_global_flag = RUS_UNIF_FLAG
+					}
+					clr_global_flag  = RUS_UNIF_FLAG
+				}
+				if = {
+					limit = {	
+						has_global_flag = REG_UNIF_FLAG
+					}
+					clr_global_flag  = REG_UNIF_FLAG
 				}
 				
 			}

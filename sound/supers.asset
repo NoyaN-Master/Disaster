@@ -113,3 +113,15 @@ sound = {
 	volume = 1
 	always_load = yes
 }
+sound = {
+	name = "rus_unif"
+	file = "menu/rus_unif.wav"
+	volume = 1
+	always_load = yes
+}
+sound = {
+	name = "reg_unif"
+	file = "menu/reg_unif.wav"
+	volume = 1
+	always_load = yes
+}
