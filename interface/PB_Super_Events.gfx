@@ -16,8 +16,8 @@ spriteTypes = {
 		texturefile = "gfx/super_events/Super_Event_Image_Test.dds"
 		legacy_lazy_load = no
 	}
-        
-        spriteType = {
+  
+    spriteType = {
 		name = "button_123x34"
 		texturefile = "gfx/super_events/button_123x34.dds"
 		legacy_lazy_load = no
@@ -156,5 +156,5 @@ spriteTypes = {
 		borderSize = { x=64 y=64 }
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-		}
+	}
 }

@@ -148,12 +148,7 @@ scripted_gui = {
 
 
 				
-				if = {
-					limit = {	
-						has_global_flag = RUSCWflag
-					}
-					clr_global_flag  = RUSCWflag
-				}
+
 
 				if = {
 					limit = {	
@@ -285,7 +280,12 @@ scripted_gui = {
 					}
 					clr_global_flag  = REG_UNIF_FLAG
 				}
-				
+				if = {
+					limit = {	
+						has_global_flag = RUSCWflag
+					}
+					clr_global_flag  = RUSCWflag
+				}
 			}
 		}
 	}
