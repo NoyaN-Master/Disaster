@@ -502,6 +502,7 @@ country_event = { #URAL breaks off
 				transfer_state = 653
 				transfer_state = 573
 				transfer_state = 398
+				load_oob = "URA_CW"
 			}
 			582 = {
 				add_core_of = URA
@@ -539,6 +540,7 @@ country_event = { #URAL breaks off
 				transfer_state = 653
 				transfer_state = 573
 				transfer_state = 398
+				load_oob = "URA_CW"
 			}
 			582 = {
 				add_core_of = URA
