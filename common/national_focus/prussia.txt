@@ -167,6 +167,15 @@ focus_tree = {
 		will_lead_to_war_with = NGU
 		completion_reward = {	
 		custom_effect_tooltip = PRE_stir_up_mecklenburg_tooltip
+		hidden_effect = {
+		if = {
+		limit = { NOT = { is_ai = yes}}
+		NGU = {
+		add_manpower = 50000
+		load_oob = NGU_reinforcements
+			}
+		}
+		}		
 		}
 	}
 	focus = {
