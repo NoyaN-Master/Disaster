@@ -132,7 +132,43 @@ ideas = {
 
 		### ROHM ###
 
+		BAY_end_materialism_idea_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BAY_end_materialism_idea_1" }
+			picture = BAY
+			modifier = {
+				stability_weekly_factor = -0.01
+				political_power_gain = -0.25
+				production_speed_buildings_factor = -0.25
+			}
+		}
 
+		BAY_end_materialism_idea_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BAY_end_materialism_idea_2" }
+			picture = BAY
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.25
+				production_speed_buildings_factor = 0.2
+			}
+		}
+
+		BAY_rohm_antisemitism_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BAY_rohm_antisemitism_idea" }
+			picture = BAY
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = 0.15
+			}
+		}
+
+		BAY_DDA_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BAY_DDA_idea" }
+			picture = BAY
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = 0.15
+			}
+		}
 		
 		
 	}
