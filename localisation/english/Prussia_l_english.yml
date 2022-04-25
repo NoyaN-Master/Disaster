@@ -354,10 +354,16 @@ pre.103.t:0 "The Ruhr Surrender"
 pre.103.d:0 "Upon our stunning victory in Rhineland, the French authorities have gathered to propose us a truce and an agreement that will give us our claims. The French know they can't afford casualties and we know that we can't surpass the Maginot line."
 pre.103.a:0 "Three hurrays for Germany!"
 
-preo.1.t:0 "Occupation of Poland"
-preo.1.d:0 "With the bloodshed over, we now hold the future of the Poles in our mere hands. We will occupy them and oversee their government and control their internal actions as an occupation force."
-preo.1.a:0 "Long Live Germany."
+preo.1.t:0 "Fate of Poland"
+preo.1.d:0 "With the bloodshed over, we now hold the future of the Poles in our mere hands. There are 2 options that lay open for us. The colonization and eventual destruction of the Polish people as a whole or we can release a stable puppet state and establish good relations with the poles."
+preo.1.a:0 "Establish a Polish puppet state."
+preo.1.b:0 "Military occupation establish the Generalgouvernement Polen"
 
+
+POL_revolutionary_nationalist_occupation:0"German Military Government"
+POL_authoritarian_democrat_occupation:0"National Radical Organization"
+PRE_RK_idea_disable_recruitment_and_ideas:0"German Military Occupation"
+PRE_RK_idea_disable_recruitment_and_ideas_desc:0""
 
 
 

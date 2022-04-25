@@ -6,7 +6,14 @@ soundeffect =
 	}
 	volume = 1
 }
-
+soundeffect =
+{
+	name = "ruscw"
+	sounds = {
+		sound = "ruscw"
+	}
+	volume = 1
+}
 soundeffect =
 {
 	name = "enver"
@@ -139,6 +146,30 @@ soundeffect =
 	name = "jfk"
 	sounds = {
 		sound = "jfk"
+	}
+	volume = 1
+}
+soundeffect =
+{
+	name = "rus_unif"
+	sounds = {
+		sound = "rus_unif"
+	}
+	volume = 1
+}
+soundeffect =
+{
+	name = "reg_unif"
+	sounds = {
+		sound = "reg_unif"
+	}
+	volume = 1
+}
+soundeffect =
+{
+	name = "sav_unif"
+	sounds = {
+		sound = "sav_unif"
 	}
 	volume = 1
 }

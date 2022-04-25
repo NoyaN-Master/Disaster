@@ -1008,5 +1008,29 @@ spriteType = {
 	spriteType = {
 		name = "GFX_trait_sturmkorps_reichsfuehrer"
 		texturefile = "gfx/interface/traits/trait_sturmkorps_reichsfuehrer.dds"
-	}	
+	}
+spriteType = {
+	name = "GFX_idea_RUS_army_disloyalty"
+	texturefile = "gfx/interface/ideas/RUS_army_disloyalty.tga"
+}
+spriteType = {
+	name = "GFX_idea_RUS_mass_terror"
+	texturefile = "gfx/interface/ideas/RUS_mass_terror.tga"
+}
+spriteType = {
+	name = "GFX_idea_RUS_supreme_ruler"
+	texturefile = "gfx/interface/ideas/RUS_supreme_ruler.tga"
+}
+spriteType = {
+	name = "GFX_idea_RUS_red_clashes"
+	texturefile = "gfx/interface/ideas/RUS_red_clashes.png"
+}
+spriteType = {
+	name = "GFX_idea_RUS_red_killing"
+	texturefile = "gfx/interface/ideas/RUS_red_killing.tga"
+}
+spriteType = {
+	name = "GFX_idea_RUS_jew_deportation"
+	texturefile = "gfx/interface/ideas/RUS_jew_deportation.png"
+}
 }	

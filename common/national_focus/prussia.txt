@@ -9,7 +9,7 @@ focus_tree = {
 			tag = PRE	}
 	}
 
-    continuous_focus_position = { x = 20 y = 2500 }	
+    continuous_focus_position = { x = 20 y = 2650 }	
 	
 	### political focus start
 	focus = {
@@ -244,34 +244,7 @@ focus_tree = {
 		focus =  PRE_generalplan_ost
 		}		
 		prerequisite = { focus = PRE_strike_poland }
-		available = {
-		OR = {
-		has_government = liberal
-		has_government = ultranationalist
-		has_government = authoritarian_democrat
-		has_government = conservative
-		has_government = autocratic
-		has_government = social_democrat
-		}	
-		NOT = {PLN = {exists = yes}}
-		808 = {is_owned_and_controlled_by = PRE }
-		809 = {is_owned_and_controlled_by = PRE }
-		85 = {is_owned_and_controlled_by = PRE }
-		86 = {is_owned_and_controlled_by = PRE }
-		98 = {is_owned_and_controlled_by = PRE }
-		87 = {is_owned_and_controlled_by = PRE }
-		10 = {is_owned_and_controlled_by = PRE }
-		97 = {is_owned_and_controlled_by = PRE }
-		92 = {is_owned_and_controlled_by = PRE }
-		90 = {is_owned_and_controlled_by = PRE }
-		762 = {is_owned_and_controlled_by = PRE }
-		72 = {is_owned_and_controlled_by = PRE }
-		88 = {is_owned_and_controlled_by = PRE }
-		91 = {is_owned_and_controlled_by = PRE }
-		89 = {is_owned_and_controlled_by = PRE }
-		}
         completion_reward = {
-		country_event = { id = preo.1 days = 1 }
 		}
 		
 	}
@@ -305,36 +278,8 @@ focus_tree = {
 		mutually_exclusive = {
 		focus =  PRE_puppet_poland
 		}		
-		prerequisite = { focus = PRE_strike_poland }
-		available = {
-		OR = {
-		has_government = revolutionary_nationalist	
-		}	
-		NOT = {PLN = {exists = yes}}
-		808 = {is_owned_and_controlled_by = PRE }
-		809 = {is_owned_and_controlled_by = PRE }
-		85 = {is_owned_and_controlled_by = PRE }
-		86 = {is_owned_and_controlled_by = PRE }
-		98 = {is_owned_and_controlled_by = PRE }
-		87 = {is_owned_and_controlled_by = PRE }
-		10 = {is_owned_and_controlled_by = PRE }
-		97 = {is_owned_and_controlled_by = PRE }
-		92 = {is_owned_and_controlled_by = PRE }
-		90 = {is_owned_and_controlled_by = PRE }
-		762 = {is_owned_and_controlled_by = PRE }
-		72 = {is_owned_and_controlled_by = PRE }
-		88 = {is_owned_and_controlled_by = PRE }
-		91 = {is_owned_and_controlled_by = PRE }
-		89 = {is_owned_and_controlled_by = PRE }
-		has_war = no			
-		}		
+		prerequisite = { focus = PRE_strike_poland }	
 		completion_reward = {
-		country_event = { id = preo.1 days = 1 }
-		unlock_decision_tooltip = PRE_fuck_baltics	
-		unlock_decision_tooltip = PRE_Diplomacy_Ostland
-		unlock_decision_tooltip = PRE_Declare_Russia
-		unlock_decision_tooltip = PRE_Declare_UKR
-		unlock_decision_tooltip = PRE_Russia_Peace
 		}
 	}
 
@@ -475,7 +420,7 @@ focus_tree = {
 		id = PRE_schleicher_holds_on
 		icon = GFX_goal_schleicher_holds_on
 		x = 3
-		y = 8
+		y = 10
 		cost = 1
 		available = {
 			has_country_flag = PRE_schleicher_refuses_step_down	
@@ -887,7 +832,7 @@ focus_tree = {
 		id = PRE_nazi_victory_focus
 		icon = GFX_goal_goring_takes_power
 		x = 10
-		y = 8
+		y = 10
 		cost = 1		
 		available = {
 			has_country_flag = PRE_nazi_victory	
@@ -1339,7 +1284,7 @@ focus_tree = {
 		id = PRE_dnvp_victory_focus
 		icon = GFX_goal_victory_hugenberg
 		x = 18
-		y = 7
+		y = 10
 		cost = 1		
 		available = {
 			has_country_flag = PRE_dnvp_victory	
@@ -1722,7 +1667,7 @@ focus_tree = {
 		id = PRE_liberal_victory_focus
 		icon = GFX_goal_liberal_victory
 		x = 26
-		y = 7
+		y = 10
 		cost = 1
 		available = {
 			has_country_flag = PRE_liberal_victory	
@@ -2208,7 +2153,7 @@ focus_tree = {
 		id = PRE_junker_victory_focus
 		icon = GFX_goal_junkers_hold_on
 		x = 35
-		y = 7
+		y = 10
 		cost = 1		
 		available = {
 			has_country_flag = PRE_junker_victory	

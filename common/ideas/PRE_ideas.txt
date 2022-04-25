@@ -1,5 +1,15 @@
 ideas = {
 country = {
+PRE_RK_idea_disable_recruitment_and_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
+			picture = discontent
+			modifier = {
+			disabled_ideas = 1
+			war_support_factor = -0.10
+			political_power_cost = 0.4
+			conscription_factor = -0.9
+			}
+		}
 PRE_simmering_discontent = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
 			picture = discontent
