@@ -230,7 +230,7 @@ focus_tree = {
 		prerequisite = { focus = BAY_the_terrorists_subdued }
 		prerequisite = { focus = BAY_democracy_extinguished }
 		completion_reward = {
-
+			custom_effect_tooltip = BAY_rohm_stabilized_tt
 		}
 	}
 
@@ -243,6 +243,8 @@ focus_tree = {
 		cost = 3
 		prerequisite = { focus = BAY_the_bavarian_eagle_soars }
 		completion_reward = {
+			#event here
+			custom_effect_tooltip = BAY_end_materialism_tt
 			
 		}
 	}
