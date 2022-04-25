@@ -1047,6 +1047,28 @@ country_event = { #when shit gets real
 				remove_core_of = REG
 				remove_core_of = SAV
 			}
+			add_ideas = RUS_CIVIL_WAR
+			REG = {
+				add_ideas = RUS_CIVIL_WAR
+			}
+			SAV = {
+				add_ideas = RUS_CIVIL_WAR
+			}
+			URA = {
+				add_ideas = RUS_CIVIL_WAR
+			}
+			SIB = {
+				add_ideas = RUS_CIVIL_WAR
+			}
+			KAR = {
+				add_ideas = RUS_CIVIL_WAR
+			}
+			SAK = {
+				add_ideas = RUS_CIVIL_WAR
+			}
+			PRI = {
+				add_ideas = RUS_CIVIL_WAR
+			}
 		}
 		hidden_effect = {
 			declare_war_on = {

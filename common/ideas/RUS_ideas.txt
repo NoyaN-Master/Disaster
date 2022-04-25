@@ -67,5 +67,11 @@ RUS_red_killing = {
 				weekly_manpower = -1250
 			}
 		}
+RUS_CIVIL_WAR = {
+			picture = CRW_Memories_Operation
+			modifier = {
+				ai_focus_aggressive_factor = 1
+			}
+		}
 }
 }
