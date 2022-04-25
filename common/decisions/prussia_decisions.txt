@@ -480,6 +480,7 @@ PRE_fuck_baltics = {
     has_completed_focus = PRE_generalplan_ost
     }    
     complete_effect = {
+<<<<<<< HEAD
         RUS = {
             end_puppet = LAT
             end_puppet = EST
@@ -502,6 +503,12 @@ PRE_fuck_baltics = {
         target = EST
         type = annex_everything
         }}
+=======
+    
+    BLT = {
+    country_event = {id = pre.101 days = 5}     
+    }
+>>>>>>> parent of b8babefa (temporary fixes for the russian puppets war)
     }
  ai_will_do = {
         factor = 1000
@@ -632,9 +639,6 @@ PRE_Declare_UKR = {
         has_completed_focus = PRE_generalplan_ost
         }    
         complete_effect = {
-        RUS = {
-            end_puppet = UKR 
-        }
         declare_war_on = {
         target = UKR
         type = annex_everything
