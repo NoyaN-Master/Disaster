@@ -1017,6 +1017,36 @@ country_event = { #when shit gets real
 				remove_core_of = REG
 				remove_core_of = SAV
 			}
+			95 = {
+				remove_core_of = RUS
+				remove_core_of = REG
+				remove_core_of = SAV
+			}
+			94 = {
+				remove_core_of = RUS
+				remove_core_of = REG
+				remove_core_of = SAV
+			}
+			194 = {
+				remove_core_of = RUS
+				remove_core_of = REG
+				remove_core_of = SAV
+			}
+			240 = {
+				remove_core_of = RUS
+				remove_core_of = REG
+				remove_core_of = SAV
+			}
+			221 = {
+				remove_core_of = RUS
+				remove_core_of = REG
+				remove_core_of = SAV
+			}
+			563 = {
+				remove_core_of = RUS
+				remove_core_of = REG
+				remove_core_of = SAV
+			}
 		}
 		hidden_effect = {
 			declare_war_on = {

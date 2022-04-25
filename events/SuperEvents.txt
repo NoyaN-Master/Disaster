@@ -535,6 +535,29 @@ country_event = {		#Super Event DONE
         set_global_flag = Super_Event_Visible
         set_global_flag = RUS_UNIF_FLAG
 		sound_effect = "rus_unif"
+		hidden_effect = {
+			96 = {
+				add_core_of = RUS
+			}
+			95 = {
+				add_core_of = RUS
+			}
+			94 = {
+				add_core_of = RUS
+			}
+			194 = {
+				add_core_of = RUS
+			}
+			240 = {
+				add_core_of = RUS
+			}
+			221 = {
+				add_core_of = RUS
+			}
+			563 = {
+				add_core_of = RUS
+			}
+		}
 	}
 }
 country_event = {		#Super Event DONE
@@ -563,6 +586,29 @@ country_event = {		#Super Event DONE
         set_global_flag = Super_Event_Visible
         set_global_flag = REG_UNIF_FLAG
 		sound_effect = "reg_unif"
+		hidden_effect = {
+			96 = {
+				add_core_of = REG
+			}
+			95 = {
+				add_core_of = REG
+			}
+			94 = {
+				add_core_of = REG
+			}
+			194 = {
+				add_core_of = REG
+			}
+			240 = {
+				add_core_of = REG
+			}
+			221 = {
+				add_core_of = REG
+			}
+			563 = {
+				add_core_of = REG
+			}
+		}
 	}
 }
 country_event = {		#Super Event DONE
@@ -591,5 +637,28 @@ country_event = {		#Super Event DONE
         set_global_flag = Super_Event_Visible
         set_global_flag = SAV_UNIF_FLAG
 		sound_effect = "sav_unif"
+		hidden_effect = {
+			96 = {
+				add_core_of = SAV
+			}
+			95 = {
+				add_core_of = SAV
+			}
+			94 = {
+				add_core_of = SAV
+			}
+			194 = {
+				add_core_of = SAV
+			}
+			240 = {
+				add_core_of = SAV
+			}
+			221 = {
+				add_core_of = SAV
+			}
+			563 = {
+				add_core_of = SAV
+			}
+		}
 	}
 }
