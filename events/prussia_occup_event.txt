@@ -5,21 +5,21 @@ country_event = { # polish puppeting
 	title = preo.1.t
 	desc = preo.1.d
 	fire_only_once = yes
-	is_triggered_only = yes	
-	option = {
-		name = preo.1.a
-		ai_chance = { factor = 1}
-		release_puppet = PLN
-		PRE = {add_state_claim = 809}
-		PRE = {add_state_claim = 85}
-		PRE = {add_state_claim = 86}
-		PRE = {add_state_claim = 762}
-		PRE = {
-		transfer_state = 85
-		transfer_state = 86
-		transfer_state = 762
-		transfer_state = 809
-		}
+	trigger = {
+	tag = PRE
+	NOT = {PLN = {exists = yes}}
+	owns_state = 809
+	owns_state = 85
+	owns_state = 86
+	owns_state = 762
+	owns_state = 808
+	}
+	immediate = {
+		hidden_effect = {
+		add_state_claim = 809
+		add_state_claim = 85
+		add_state_claim = 86
+		add_state_claim = 762
 		PLN = {
 		remove_ideas = {
             PLN_free_at_fast
@@ -27,40 +27,109 @@ country_event = { # polish puppeting
             PLN_leftist_organizations   
             PLN_catholic_support    
             }
-		set_cosmetic_tag = PLN_occupation
+		}		
 		}
 	}
-}
-
-country_event = { # Nazi Occupation POLAND
-	id = preo.2
-	title = preo.2.t
-	desc = preo.2.d
-	fire_only_once = yes
-	is_triggered_only = yes	
 	option = {
-		name = preo.2.a
+		name = preo.1.a     # normal occupation
 		ai_chance = { factor = 1}
-		release_puppet = PLN
-		PRE = {
-		transfer_state = 809
-        transfer_state = 85
-        transfer_state = 86
-        transfer_state = 5
-        transfer_state = 762
+		set_temp_variable = { tag_to_release = PLN }
+		every_owned_state = {
+			limit = {
+				is_core_of = PLN
+				is_claim_or_core_of_ROOT = no
+				NOT = {
+					state = 809 
+					state = 85 
+					state = 86 
+					state = 762
+				}
+			}
+			var:tag_to_release = { transfer_state = PREV }
 		}
+		puppet_released_tag = yes
+		PLN = {
+		set_politics = {
+			ruling_party = ultranationalist
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = ultranationalist
+			popularity = 0.50
+		}
+		set_party_name = {
+			ideology = ultranationalist
+			name = POL_authoritarian_democrat_occupation
+		}
+			retire_country_leader = yes
+			create_country_leader = {
+	        name = "Andrzej Swietlicki"
+	        desc = "Andrzej_Swietlicki_desc"
+	        picture = "gfx/leaders/PLN/Andrzej_Swietlicki.png"
+	        expire = "2020.1.1"
+	        ideology = ultranationalist_subideology
+	        traits = {
+	        }
+            }		
+		add_stability = -0.25
+		add_war_support = -0.25
+		add_ideas = volunteer_only 
+		add_ideas = corporatism 
+		add_ideas = oligarchy   
+		}
+		complete_national_focus = PRE_puppet_poland
+	}
+	option = {
+		name = preo.1.b     # generalplan ost
+		ai_chance = { factor = 1}
+		set_temp_variable = { tag_to_release = PLN }
+		every_owned_state = {
+			limit = {
+				is_core_of = PLN
+				is_claim_or_core_of_ROOT = no
+				NOT = {
+					state = 809 
+					state = 85 
+					state = 86 
+					state = 762
+				}
+			}
+			var:tag_to_release = { transfer_state = PREV }
+		}
+		puppet_released_tag = yes
 		PLN = {
 		set_cosmetic_tag = PLN_occupation
 		set_politics = {
 			ruling_party = revolutionary_nationalist
 			elections_allowed = no
-		}	
-		remove_ideas = {
-            PLN_free_at_fast
-            PLN_minorities_and_borders 
-            PLN_leftist_organizations   
-            PLN_catholic_support    
-            }
 		}
+		add_popularity = {
+			ideology = revolutionary_nationalist
+			popularity = 0.50
+		}
+		set_party_name = {
+			ideology = revolutionary_nationalist
+			name = POL_revolutionary_nationalist_occupation
+		}
+			retire_country_leader = yes
+			create_country_leader = {
+	        name = "Hans Frank"
+	        desc = "Hans_Frank_desc"
+	        picture = "gfx/leaders/PLN/Hans_Frank.png"
+	        expire = "2020.1.1"
+	        ideology = revolutionary_nationalist_subideology
+	        traits = {
+	        }
+            }	
+		add_stability = -0.5
+		add_war_support = -0.5
+		add_ideas = PRE_RK_idea_disable_recruitment_and_ideas
+		add_ideas = volunteer_only 
+		add_ideas = corporatism 
+		add_ideas = military_government  
+		}
+		complete_national_focus = PRE_generalplan_ost
 	}
 }
+
+
