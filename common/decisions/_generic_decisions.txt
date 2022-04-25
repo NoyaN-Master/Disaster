@@ -160,43 +160,6 @@ Generic_Decisions_category = {
 		fire_only_once = no
 
 		modifier = {
-			production_speed_supply_node_factor = 0.5
-			production_speed_railway_factor = 0.5
-		}
-
-		days_remove = 120
-		days_re_enable = 480
-
-		cost = 125
-
-		complete_effect = {
-
-		}
-
-		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 1
-				has_stability < 0.6
-				has_political_power > 155 #Spend on other things first
-			}
-		}
-	}
-
-	rail_invest = {
-
-		icon = generic_industry
-
-		available = {
-		}
-
-		visible = {
-			always = yes
-		}
-
-		fire_only_once = no
-
-		modifier = {
 			production_speed_industrial_complex_factor = 0.15
 			consumer_goods_factor = -0.1
 		}
@@ -219,4 +182,5 @@ Generic_Decisions_category = {
 			}
 		}
 	}
+
 }
