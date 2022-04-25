@@ -1012,6 +1012,13 @@ country_event = { #when shit gets real
 		name = russia.24.a
 		hidden_effect = {set_country_flag = RUS_CW_SPVENT_TRIGGER}
 		hidden_effect = {
+			96 = {
+				remove_core_of = RUS
+				remove_core_of = REG
+				remove_core_of = SAV
+			}
+		}
+		hidden_effect = {
 			declare_war_on = {
 				target = SAV
 				type = annex_everything
