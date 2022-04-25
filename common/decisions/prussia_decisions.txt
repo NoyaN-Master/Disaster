@@ -667,10 +667,46 @@ PRE_Declare_Russia = {
         has_completed_focus = PRE_generalplan_ost
         }    
         complete_effect = {
-        declare_war_on = {
-        target = RUS
-        type = annex_everything
-        }
+            declare_war_on = {
+                target = RUS
+                type = annex_everything
+                }
+                declare_war_on = {
+                    target = PRI
+                    type = annex_everything
+                    }
+                declare_war_on = {
+                    target = URA
+                    type = annex_everything
+                    }
+                declare_war_on = {
+                    target = SIB
+                    type = annex_everything
+                    }
+                declare_war_on = {
+                    target = KAR
+                    type = annex_everything
+                    }
+                declare_war_on = {
+                    target = SAK
+                    type = annex_everything
+                    }
+                declare_war_on = {
+                    target = REG
+                    type = annex_everything
+                    }
+                declare_war_on = {
+                    target = DON
+                    type = annex_everything
+                    }
+                declare_war_on = {
+                    target = KUB
+                    type = annex_everything
+                    }
+                declare_war_on = {
+                    target = SAV
+                    type = annex_everything
+                    }
         add_timed_idea = {
 		idea = NGU_RussianWar
 		days = 95	
@@ -691,12 +727,10 @@ PRE_Russia_Peace = {
         PRE = {
         has_war_with  = RUS
         }
-        RUS = {
-        NOT = {
-        controls_state = 217
+        PRE = {
+            controls_state = 217
             controls_state = 195
             controls_state = 219 
-        }
         }  
         }
         visible = {

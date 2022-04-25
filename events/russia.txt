@@ -1,12 +1,11 @@
 add_namespace = russia
 
-country_event = { #Restored Duma
+country_event = { #Jan 19 bombing
 	id = russia.1
-	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
 	title = russia.1.t
 	desc = russia.1.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	#
 
 	fire_only_once = yes
 
@@ -14,64 +13,18 @@ country_event = { #Restored Duma
 
 	option = {
 		name = russia.1.a
-        set_politics = {
-	    ruling_party = conservative
-        elections_allowed = no
-        last_election = "1935.12.17"
-        election_frequency = 48
-        }
-        ai_will_do = {
-        factor = 50
-        }
-        complete_national_focus = RUS_Tsar_Victory
-        hidden_effect = {
-        set_global_flag = RUS_Conservative_Ending 
-        }
-        set_cosmetic_tag = RUS_Tsardom_Soft
-    }
-    option = {
-		name = russia.1.b
-        set_politics = {
-	    ruling_party = liberal
-        elections_allowed = no
-        last_election = "1935.12.17"
-        election_frequency = 48
-        }
-        ai_will_do = {
-        factor = 60
-        }
-        complete_national_focus = RUS_Kerensky_Victory
-        hidden_effect = {
-        set_global_flag = RUS_Kerensky_Ending 
-        }
-        set_cosmetic_tag = RUS_Russian_Fed
-    }
-    option = {
-		name = russia.1.c
-        set_politics = {
-	    ruling_party = autocratic
-        elections_allowed = no
-        last_election = "1935.12.17"
-        election_frequency = 48
-        }
-        ai_will_do = {
-        factor = 30
-        }
-        complete_national_focus = RUS_Tsar_Victory
-        hidden_effect = {
-        set_global_flag = RUS_Autocratic_Ending 
-        }
-        set_cosmetic_tag = RUS_Tsardom_Flag
+        add_manpower = -7
+        add_stability = -0.35
+        add_war_support = -0.15
+		hidden_effect = {country_event = {id = russia.13 days = 7}}
     }
 }
-
-country_event = { #Wrangel Doesn't Concede
+country_event = { #kill all reds
 	id = russia.2
-	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
 	title = russia.2.t
 	desc = russia.2.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	#
 
 	fire_only_once = yes
 
@@ -79,64 +32,1289 @@ country_event = { #Wrangel Doesn't Concede
 
 	option = {
 		name = russia.2.a
-        complete_national_focus = RUS_Wrangel_Hundred
-        hidden_effect = {
-        set_global_flag = RUS_Wrangel_Ending    
-        }
-        ai_will_do = {
-        factor = 40
-        }
-        set_cosmetic_tag = RUS_Tsardom_Flag
+        add_ideas = RUS_red_killing
+        add_stability = -0.2
+        add_war_support = -0.15
     }
-    option = {
-		name = russia.2.b
-        set_politics = {
-	    ruling_party = unisocialist
-        elections_allowed = no
-        last_election = "1935.12.17"
-        election_frequency = 48
-        }
-        ai_will_do = {
-        factor = 40
-        }
-        hidden_effect = {
-        set_global_flag = RUS_RedSavinkov_Ending
-        }
-        complete_national_focus = RUS_Savinkov_Red
-        set_cosmetic_tag = RUS_Savinkov_Flag
+}
+country_event = { #duma protests
+	id = russia.3
+	title = russia.3.t
+	desc = russia.3.d
+
+	#
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {#disolved
+		name = russia.3.a
+        set_country_flag = duma_dissolved
     }
-    option = {
-		name = russia.2.c
-        set_politics = {
-	    ruling_party = revolutionary_nationalist
-        elections_allowed = no
-        last_election = "1935.12.17"
-        election_frequency = 48
-        }
-        ai_will_do = {
-        factor = 80
-        }
-        hidden_effect = {
-        set_global_flag = RUS_GreenSavinkov_Ending
-        }
-        complete_national_focus = RUS_Savinkov_Pale
-        set_cosmetic_tag = RUS_RedSav_Flag
+    option = {#purged
+		name = russia.3.b
+        set_country_flag = duma_purged
     }
-    option = {
-		name = russia.2.d
-        set_politics = {
-	    ruling_party = esoteric_traditionalist
-        elections_allowed = no
-        last_election = "1935.12.17"
-        election_frequency = 48
-        }
-        ai_will_do = {
-        factor = 10
-        }
-        hidden_effect = {
-        set_global_flag = RUS_Eurasia_Ending
-        }
-        complete_national_focus = RUS_Stern_Eurasia
-        set_cosmetic_tag = RUS_Eurasia_Cosmetic
+}
+country_event = { #protests
+	id = russia.4
+	title = russia.4.t
+	desc = russia.4.d
+
+	#
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.4.a
+        add_stability = -0.15
+        add_ideas = RUS_mass_riots
     }
+}
+country_event = { #supreme ruler
+	id = russia.5
+	title = russia.5.t
+	desc = russia.5.d
+
+	#
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.5.a
+        add_stability = -0.2
+        add_war_support = -0.15
+        add_ideas = RUS_supreme_leader
+    }
+}
+country_event = { #reds fight back
+	id = russia.6
+	title = russia.6.t
+	desc = russia.6.d
+
+	#
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.6.a
+		political_power_gain = -0.5
+		add_war_support = -0.15
+		add_ideas = RUS_red_clashes
+		hidden_effect = {country_event = {id = russia.8 days = 12}}
+    }
+}
+country_event = { #duma no spine
+	id = russia.7
+	title = russia.7.t
+	desc = russia.7.d
+
+	#
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.7.a
+        add_political_power = -100
+    }
+}
+country_event = { #army dessertion
+	id = russia.8
+	title = russia.8.t
+	desc = russia.8.d
+
+	#
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.8.a
+		hidden_effect = {country_event = {id = russia.9 days = 14}}
+        add_stability = -0.1
+		add_war_support = -0.1
+		delete_unit = { 
+        	state = 195
+            disband = no
+    	}
+    }
+}
+country_event = { #reds organising
+	id = russia.9
+	title = russia.9.t
+	desc = russia.9.d
+
+	#
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {#full response
+		name = russia.9.a
+		add_stability = -0.2
+		custom_effect_tooltip = RUS_full_rsp
+		hidden_effect = {country_event = {id = russia.10 days = 7}}
+    }
+	option = {#medium response
+		name = russia.9.b
+		add_stability = -0.1
+		custom_effect_tooltip = RUS_med_rsp
+		hidden_effect = {country_event = {id = russia.10 days = 7}}
+    }
+	option = {#no rsponse
+		name = russia.9.c
+		custom_effect_tooltip = RUS_no_rsp
+		hidden_effect = {country_event = {id = russia.10 days = 7}}
+    }
+}
+country_event = { #CW start all cw breakaways should start under this event
+	id = russia.10
+	title = russia.10.t
+	desc = russia.10.d
+
+	#
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.10.a
+        custom_effect_tooltip = RUS_CW_TT
+		hidden_effect = { country_event = { id = russia.11 days = 2 } }
+		hidden_effect = {
+			LAT = {
+				end_puppet = RUS
+			}
+			EST = {
+				end_puppet = RUS
+			}
+			UKR = {
+				end_puppet = RUS
+			}
+			QAZ = {
+				end_puppet = RUS
+			}
+			BYR = {
+				end_puppet = RUS
+			}
+			TRK = {
+				end_puppet = RUS
+			}
+		}
+    }
+}
+country_event = { #SAVINKOV BREAK AWAY
+	id = russia.11
+	title = russia.11.t
+	desc = russia.11.d
+
+	#
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.11.a
+		hidden_effect = {
+			country_event ={id = russia.12 days = 1}
+			
+		}
+		hidden_effect = {set_country_flag = RUS_CW_SPVENT_TRIGGER}
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_core_of = RUS
+				}
+				add_core_of = SAV
+			}	
+			SAV = {
+				transfer_state = 828
+				transfer_state = 207
+				transfer_state = 206
+				transfer_state = 204
+				transfer_state = 241
+				transfer_state = 243
+				transfer_state = 242
+				transfer_state = 205
+				transfer_state = 223
+				transfer_state = 258
+				transfer_state = 257
+				transfer_state = 254
+				transfer_state = 224
+				transfer_state = 220
+				transfer_state = 222
+				transfer_state = 260
+				load_oob = "SAV_CW"
+			}
+		}
+    }
+	option = {
+		name = russia.11.b
+		hidden_effect = {country_event ={id = russia.12 days = 1}}
+		hidden_effect = {
+			SAV = {change_tag_from = RUS}
+
+			every_state = {
+				limit = {
+					is_core_of = RUS
+				}
+				add_core_of = SAV
+			}	
+			SAV = {
+				transfer_state = 828
+				transfer_state = 207
+				transfer_state = 206
+				transfer_state = 204
+				transfer_state = 241
+				transfer_state = 243
+				transfer_state = 242
+				transfer_state = 205
+				transfer_state = 223
+				transfer_state = 258
+				transfer_state = 257
+				transfer_state = 254
+				transfer_state = 224
+				transfer_state = 220
+				transfer_state = 222
+				transfer_state = 260
+				load_oob = "SAV_CW"
+			}
+    	}
+	}
+}
+country_event = { #Kuban breaks off
+	id = russia.12
+	title = russia.12.t
+	desc = russia.12.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.12.a
+		hidden_effect = {country_event ={id = russia.14 days = 1}}
+		hidden_effect = {
+			KUB = {
+				transfer_state = 234
+				transfer_state = 235
+				transfer_state = 237
+				load_oob = "KUB_CW"
+			}
+			234 = {
+				add_core_of = KUB
+			}
+			235 = {
+				add_core_of = KUB
+			}
+		}
+    }
+	option = {
+		name = russia.12.b
+		hidden_effect =  {country_event = { id = russia.14 days = 1 } }
+		hidden_effect = {
+			KUB =  {change_tag_from = RUS }
+			KUB = {
+				transfer_state = 234
+				transfer_state = 235
+				transfer_state = 237
+				load_oob = "KUB_CW"
+			}
+			234 = {
+				add_core_of = KUB
+			}
+			235 = {
+				add_core_of = KUB
+			}
+		}
+    }
+}
+country_event = { #Don breaks off
+	id = russia.14
+	title = russia.14.t
+	desc = russia.14.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.14.a
+		hidden_effect = { country_event = { id = russia.22 days = 1 } }
+		hidden_effect = {
+			DON = {
+				transfer_state = 218
+				transfer_state = 238
+				transfer_state = 245
+				transfer_state = 265
+				load_oob = "DON_CW"
+			}
+			218 = {
+				add_core_of = DON
+			}
+			238 = {
+				add_core_of = DON
+			}
+			245 = {
+				add_core_of = DON
+			}
+			265 = {
+				add_core_of = DON
+			}
+		}
+    }
+	option = {
+		name = russia.14.b
+		hidden_effect = { country_event = { id = russia.22 days = 1 } }
+		hidden_effect = {
+			DON = {change_tag_from = RUS}
+			DON = {
+				transfer_state = 218
+				transfer_state = 238
+				transfer_state = 245
+				transfer_state = 265
+				load_oob = "DON_CW"
+			}
+			218 = {
+				add_core_of = DON
+			}
+			238 = {
+				add_core_of = DON
+			}
+			245 = {
+				add_core_of = DON
+			}
+			265 = {
+				add_core_of = DON
+			}
+		}
+    }
+}
+country_event = { #Red Guard breaks off
+	id = russia.16
+	title = russia.16.t
+	desc = russia.16.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.16.a
+		hidden_effect = {country_event ={id = russia.17 days = 1}}
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_core_of = RUS
+				}
+				add_core_of = REG
+			}
+			REG = {
+				transfer_state = 219
+				transfer_state = 836
+				transfer_state = 247
+				transfer_state = 248
+				transfer_state = 253
+				transfer_state = 252
+				transfer_state = 351
+				transfer_state = 214
+				transfer_state = 262
+				transfer_state = 397
+				transfer_state = 399
+				transfer_state = 400
+				transfer_state = 837
+				load_oob = "REG_CW"
+			}
+		}
+    }
+	option = {
+		name = russia.16.b
+		hidden_effect = {country_event ={id = russia.17 days = 1}}
+		hidden_effect = {
+			REG = {change_tag_from = RUS}
+			REG = {
+				transfer_state = 219
+				transfer_state = 836
+				transfer_state = 247
+				transfer_state = 248
+				transfer_state = 253
+				transfer_state = 252
+				transfer_state = 351
+				transfer_state = 214
+				transfer_state = 262
+				transfer_state = 397
+				transfer_state = 399
+				transfer_state = 400
+				transfer_state = 837
+				load_oob = "REG_CW"
+			}
+			every_state = {
+				limit = {
+					is_core_of = RUS
+				}
+				add_core_of = REG
+			}
+		}
+    }
+}
+country_event = { #funeral
+	id = russia.13
+	title = russia.13.t
+	desc = russia.13.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.13.a
+		add_stability = 0.05
+		add_war_support = 0.05
+    }
+}
+country_event = { #URAL breaks off
+	id = russia.17
+	title = russia.17.t
+	desc = russia.17.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.17.a
+		hidden_effect = {country_event ={id = russia.21 days = 1}}
+		hidden_effect = {
+			URA = {
+				transfer_state = 582
+				transfer_state = 651
+				transfer_state = 652
+				transfer_state = 572
+				transfer_state = 653
+				transfer_state = 573
+				transfer_state = 398
+				load_oob = "URA_CW"
+			}
+			582 = {
+				add_core_of = URA
+			}
+			651 = {
+				add_core_of = URA
+			}
+			652 = {
+				add_core_of = URA
+			}
+			572 = {
+				add_core_of = URA
+			}
+			653 = {
+				add_core_of = URA
+			}
+			573 = {
+				add_core_of = URA
+			}
+			398 = {
+				add_core_of = URA
+			}
+		}
+    }
+	option = {
+		name = russia.17.b
+		hidden_effect = {country_event = {id = russia.21 days = 1}}
+		hidden_effect = {
+			URA = {change_tag_from = RUS}
+			URA = {
+				transfer_state = 582
+				transfer_state = 651
+				transfer_state = 652
+				transfer_state = 572
+				transfer_state = 653
+				transfer_state = 573
+				transfer_state = 398
+				load_oob = "URA_CW"
+			}
+			582 = {
+				add_core_of = URA
+			}
+			651 = {
+				add_core_of = URA
+			}
+			652 = {
+				add_core_of = URA
+			}
+			572 = {
+				add_core_of = URA
+			}
+			653 = {
+				add_core_of = URA
+			}
+			573 = {
+				add_core_of = URA
+			}
+			398 = {
+				add_core_of = URA
+			}
+		}
+	}
+}
+country_event = { #SIBERIA breaks off
+	id = russia.18
+	title = russia.18.t
+	desc = russia.18.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.18.a
+		hidden_effect = {country_event ={id = russia.19 days = 1}}
+		hidden_effect = { country_event = { id = russia.23 days = 1 }}
+		hidden_effect = {
+			SIB = {
+				transfer_state = 581
+				transfer_state = 579
+				transfer_state = 580
+				transfer_state = 403
+				transfer_state = 571
+				transfer_state = 570
+				transfer_state = 578
+				transfer_state = 866
+				transfer_state = 516
+				transfer_state = 577
+				transfer_state = 576
+				transfer_state = 40
+				transfer_state = 569
+				transfer_state = 568
+				transfer_state = 567
+				transfer_state = 566
+				transfer_state = 575
+				load_oob = "SIB_CW"
+			}
+			581 = {
+				add_core_of = SIB
+			}
+			679 = {
+				add_core_of = SIB
+			}
+			680 = {
+				add_core_of = SIB
+			}
+			403 = {
+				add_core_of = SIB
+			}
+			571 = {
+				add_core_of = SIB
+			}
+			570 = {
+				add_core_of = SIB
+			}
+			578 = {
+				add_core_of = SIB
+			}
+			866 = {
+				add_core_of = SIB
+			}
+			516 = {
+				add_core_of = SIB
+			}
+			577 = {
+				add_core_of = SIB
+			}
+			576 = {
+				add_core_of = SIB
+			}
+			40 = {
+				add_core_of = SIB
+			}
+			569 = {
+				add_core_of = SIB
+			}
+			568 = {
+				add_core_of = SIB
+			}
+			567 = {
+				add_core_of = SIB
+			}
+			566 = {
+				add_core_of = SIB
+			}
+			575 = {
+				add_core_of = SIB
+			}
+		}
+    }
+	option = {
+		name = russia.18.b
+		hidden_effect = {country_event ={id = russia.19 days = 1}}
+		hidden_effect = {
+			SIB = {change_tag_from = RUS}
+			SIB = {
+				transfer_state = 581
+				transfer_state = 579
+				transfer_state = 580
+				transfer_state = 403
+				transfer_state = 571
+				transfer_state = 570
+				transfer_state = 578
+				transfer_state = 866
+				transfer_state = 516
+				transfer_state = 577
+				transfer_state = 576
+				transfer_state = 40
+				transfer_state = 569
+				transfer_state = 568
+				transfer_state = 567
+				transfer_state = 566
+				transfer_state = 575
+				load_oob = "SIB_CW"
+			}
+			581 = {
+				add_core_of = SIB
+			}
+			679 = {
+				add_core_of = SIB
+			}
+			680 = {
+				add_core_of = SIB
+			}
+			403 = {
+				add_core_of = SIB
+			}
+			571 = {
+				add_core_of = SIB
+			}
+			570 = {
+				add_core_of = SIB
+			}
+			578 = {
+				add_core_of = SIB
+			}
+			866 = {
+				add_core_of = SIB
+			}
+			516 = {
+				add_core_of = SIB
+			}
+			577 = {
+				add_core_of = SIB
+			}
+			576 = {
+				add_core_of = SIB
+			}
+			40 = {
+				add_core_of = SIB
+			}
+			569 = {
+				add_core_of = SIB
+			}
+			568 = {
+				add_core_of = SIB
+			}
+			567 = {
+				add_core_of = SIB
+			}
+			566 = {
+				add_core_of = SIB
+			}
+			575 = {
+				add_core_of = SIB
+			}
+		}
+	}
+}
+country_event = { #PRIAMURYE breaks off
+	id = russia.19
+	title = russia.19.t
+	desc = russia.19.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.19.a
+		hidden_effect = {country_event = { id = russia.20 days = 1 } }
+		hidden_effect = {
+			PRI = {
+				transfer_state = 561
+				transfer_state = 560
+				transfer_state = 409
+				transfer_state = 408
+				transfer_state = 562
+				transfer_state = 637
+				load_oob = "PRI_CW"
+			}
+			561 = {
+				add_core_of = PRI
+			}
+			560 = {
+				add_core_of = PRI
+			}
+			409 = {
+				add_core_of = PRI
+			}
+			408 = {
+				add_core_of = PRI
+			}
+			562 = {
+				add_core_of = PRI
+			}
+			637 = {
+				add_core_of = PRI
+			}
+		}
+    }
+	option = {
+		name = russia.19.b
+		hidden_effect = {country_event = {id = russia.20 days = 1}}
+		hidden_effect = {
+			PRI = {change_tag_from = RUS}
+			PRI = {
+				transfer_state = 561
+				transfer_state = 560
+				transfer_state = 409
+				transfer_state = 408
+				transfer_state = 562
+				transfer_state = 637
+				load_oob = "PRI_CW"
+			}
+			561 = {
+				add_core_of = PRI
+			}
+			560 = {
+				add_core_of = PRI
+			}
+			409 = {
+				add_core_of = PRI
+			}
+			408 = {
+				add_core_of = PRI
+			}
+			562 = {
+				add_core_of = PRI
+			}
+			637 = {
+				add_core_of = PRI
+			}
+		}
+	}
+}
+country_event = { #YAKUTIA breaks off
+	id = russia.20
+	title = russia.20.t
+	desc = russia.20.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.20.a
+		hidden_effect = { country_event = { id = russia.23 days = 1 } }
+		hidden_effect = {
+			SAK = {
+				transfer_state = 574
+				transfer_state = 644
+				load_oob = "SAK_CW"
+			}
+			574 = {
+				add_core_of = SAK
+			}
+			644 = {
+				add_core_of = SAK
+			}
+		}
+    }
+	option = {
+		name = russia.20.b
+		hidden_effect = { country_event = { id = russia.23 days = 1 } }
+		hidden_effect = {
+			SAK = { change_tag_from = RUS }
+			SAK = {
+				transfer_state = 574
+				transfer_state = 644
+				load_oob = "SAK_CW"
+			}
+			574 = {
+				add_core_of = SAK
+			}
+			644 = {
+				add_core_of = SAK
+			}
+		}
+	}
+}
+country_event = {#altia breaks off
+	id = russia.21
+	title = russia.21.t
+	desc = russia.21.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = russia.21.a
+		hidden_effect = { country_event = { id = russia.18 days = 1 } }
+		hidden_effect = {
+			KAR = {
+				transfer_state = 654
+				load_oob = "KRA_CW"
+			}
+			654 = {
+				add_core_of = KAR
+			}
+		}
+	}
+	option = {
+		name = russia.21.b
+		hidden_effect = { country_event = { id = russia.18 days = 1 } }
+		hidden_effect = {
+			KAR = { change_tag_from = RUS }
+			KAR = {
+				transfer_state = 654
+				load_oob = "KRA_CW"
+			}
+			654 = {
+				add_core_of = KAR
+			}
+		}
+	}
+}
+country_event = { #Crimea breaks free
+	id = russia.22
+	title = russia.22.t
+	desc = russia.22.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.22.a
+		hidden_effect = { country_event = { id = russia.16 days = 1 } }
+		hidden_effect = {
+			CRI = {
+				transfer_state = 137
+				load_oob = "CRI_CW"
+			}
+			137 = {
+				add_core_of = CRI
+			}
+		}
+	}
+	option = {
+		name = russia.22.b
+		hidden_effect = { country_event = { id = russia.16 days = 1 } }
+		hidden_effect = {
+			CRI = { change_tag_from = RUS }
+			CRI = {
+				transfer_state = 137
+				load_oob = "CRI_CW"
+			}
+			137 = {
+				add_core_of = CRI
+			}
+		}
+	}
+}
+country_event = { #Reorganizing Army
+	id = russia.23
+	title = russia.23.t
+	desc = russia.23.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.23.a
+		hidden_effect = { country_event = { id = russia.24 days = 13 } }
+		hidden_effect = { 
+			delete_unit_template_and_units = {
+				division_template = "Pekhotnaya Diviziya"
+				disband = no
+			}
+			delete_unit_template_and_units = {
+				division_template = "Gornostrelkovaya Diviziya"
+				disband = no
+			}
+			delete_unit_template_and_units = {
+				division_template = "Motostrelkovaya Diviziya"
+				disband = no
+			}
+			delete_unit_template_and_units = {
+				division_template = "Kavaleriyskaya Diviziya"
+				disband = no
+			}
+			delete_unit_template_and_units = {
+				division_template = "Tankovaya Diviziya"
+				disband = no
+			}
+			remove_ideas = {
+				RUS_army_disloyalty
+				RUS_mass_terror
+				RUS_pogromes
+				RUS_mass_riots
+				RUS_supreme_leader
+				RUS_red_clashes
+				RUS_red_killing
+			}
+		}
+		load_oob = "RUS_CW"
+    }
+}
+country_event = { #TEST CW EVENT
+	id = russia.1000
+	title = russia.1000.t
+	desc = russia.1000.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = russia.1000.a
+		hidden_effect = { country_event = { id = russia.10 days = 1 } }
+		hidden_effect = { country_event = { id = russia.11 days = 1 } }
+		hidden_effect = { country_event = { id = russia.12 days = 1 } }
+		hidden_effect = { country_event = { id = russia.14 days = 1 } }
+		hidden_effect = { country_event = { id = russia.16 days = 1 } }
+		hidden_effect = { country_event = { id = russia.17 days = 1 } }
+		hidden_effect = { country_event = { id = russia.18 days = 1 } }
+		hidden_effect = { country_event = { id = russia.19 days = 1 } }
+		hidden_effect = { country_event = { id = russia.20 days = 1 } }
+		hidden_effect = { country_event = { id = russia.21 days = 1 } }
+		hidden_effect = { country_event = { id = russia.22 days = 1 } }
+		hidden_effect = { country_event = { id = russia.23 days = 1 } }
+		hidden_effect = { country_event = { id = russia.24 days = 1 } }
+    }
+}
+
+country_event = { #when shit gets real
+	id = russia.24
+	title = russia.24.t
+	desc = russia.24.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = russia.24.a
+		hidden_effect = {set_country_flag = RUS_CW_SPVENT_TRIGGER}
+		hidden_effect = {
+			96 = {
+				remove_core_of = RUS
+				remove_core_of = REG
+				remove_core_of = SAV
+			}
+			95 = {
+				remove_core_of = RUS
+				remove_core_of = REG
+				remove_core_of = SAV
+			}
+			94 = {
+				remove_core_of = RUS
+				remove_core_of = REG
+				remove_core_of = SAV
+			}
+			194 = {
+				remove_core_of = RUS
+				remove_core_of = REG
+				remove_core_of = SAV
+			}
+			240 = {
+				remove_core_of = RUS
+				remove_core_of = REG
+				remove_core_of = SAV
+			}
+			221 = {
+				remove_core_of = RUS
+				remove_core_of = REG
+				remove_core_of = SAV
+			}
+			563 = {
+				remove_core_of = RUS
+				remove_core_of = REG
+				remove_core_of = SAV
+			}
+			add_ideas = RUS_CIVIL_WAR
+			REG = {
+				add_ideas = RUS_CIVIL_WAR
+			}
+			SAV = {
+				add_ideas = RUS_CIVIL_WAR
+			}
+			URA = {
+				add_ideas = RUS_CIVIL_WAR
+			}
+			SIB = {
+				add_ideas = RUS_CIVIL_WAR
+			}
+			KAR = {
+				add_ideas = RUS_CIVIL_WAR
+			}
+			SAK = {
+				add_ideas = RUS_CIVIL_WAR
+			}
+			PRI = {
+				add_ideas = RUS_CIVIL_WAR
+			}
+		}
+		hidden_effect = {
+			declare_war_on = {
+				target = SAV
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = DON
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = KUB
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = CRI
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = REG
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = KAR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SIB
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SAK
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = PRI
+				type = annex_everything
+			}
+			SAV = {
+				declare_war_on = {
+					target = DON
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = KUB
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = CRI
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = REG
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = KAR
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = SIB
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = SAK
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = PRI
+					type = annex_everything
+				}
+				DON = {
+					declare_war_on = {
+						target = KUB
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = CRI
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = REG
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = KAR
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = SIB
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = SAK
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = PRI
+						type = annex_everything
+					}
+					KUB = {
+						declare_war_on = {
+							target = CRI
+							type = annex_everything
+						}
+						declare_war_on = {
+							target = REG
+							type = annex_everything
+						}
+						declare_war_on = {
+							target = KAR
+							type = annex_everything
+						}
+						declare_war_on = {
+							target = SIB
+							type = annex_everything
+						}
+						declare_war_on = {
+							target = SAK
+							type = annex_everything
+						}
+						declare_war_on = {
+							target = PRI
+							type = annex_everything
+						}
+						CRI = {
+							declare_war_on = {
+								target = REG
+								type = annex_everything
+							}
+							declare_war_on = {
+								target = KAR
+								type = annex_everything
+							}
+							declare_war_on = {
+								target = SIB
+								type = annex_everything
+							}
+							declare_war_on = {
+								target = SAK
+								type = annex_everything
+							}
+							declare_war_on = {
+								target = PRI
+								type = annex_everything
+							}
+							REG = {
+								declare_war_on = {
+									target = KAR
+									type = annex_everything
+								}
+								declare_war_on = {
+									target = SIB
+									type = annex_everything
+								}
+								declare_war_on = {
+									target = SAK
+									type = annex_everything
+								}
+								declare_war_on = {
+									target = PRI
+									type = annex_everything
+								}
+								KAR = {
+									declare_war_on = {
+										target = SIB
+										type = annex_everything
+									}
+									declare_war_on = {
+										target = SAK
+										type = annex_everything
+									}
+									declare_war_on = {
+										target = PRI
+										type = annex_everything
+									}
+									SIB = {
+										declare_war_on = {
+											target = SAK
+											type = annex_everything
+										}
+										declare_war_on = {
+											target = PRI
+											type = annex_everything
+										}
+										SAK = {
+											declare_war_on = {
+												target = PRI
+												type = annex_everything
+											}
+										}
+									}
+									URA = {
+										declare_war_on = {
+											target = SAK
+											type = annex_everything
+										}
+										declare_war_on = {
+											target = RUS
+											type = annex_everything
+										}
+										declare_war_on = {
+											target = SAV
+											type = annex_everything
+										}
+										declare_war_on = {
+											target = REG
+											type = annex_everything
+										}
+										declare_war_on = {
+											target = DON
+											type = annex_everything
+										}
+										declare_war_on = {
+											target = KUB
+											type = annex_everything
+										}
+										declare_war_on = {
+											target = PRI
+											type = annex_everything
+										}
+										declare_war_on = {
+											target = SAK
+											type = annex_everything
+										}
+										declare_war_on = {
+											target = SIB
+											type = annex_everything
+										}
+										declare_war_on = {
+											target = CRI
+											type = annex_everything
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		UKR = {
+			add_opinion_modifier = {
+				target = UKR
+				modifier = RUS_civil_war_boost
+			}
+		}
+	}
 }

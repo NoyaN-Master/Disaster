@@ -983,6 +983,42 @@ focus = {
     	target = RUS
     	type = annex_everything
 		}
+		declare_war_on = {
+			target = PRI
+			type = annex_everything
+			}
+		declare_war_on = {
+			target = URA
+			type = annex_everything
+			}
+		declare_war_on = {
+			target = SIB
+			type = annex_everything
+			}
+		declare_war_on = {
+			target = KAR
+			type = annex_everything
+			}
+		declare_war_on = {
+			target = SAK
+			type = annex_everything
+			}
+		declare_war_on = {
+			target = REG
+			type = annex_everything
+			}
+		declare_war_on = {
+			target = DON
+			type = annex_everything
+			}
+		declare_war_on = {
+			target = KUB
+			type = annex_everything
+			}
+		declare_war_on = {
+			target = SAV
+			type = annex_everything
+			}
 		add_timed_idea = {
 		idea = NGU_RussianWar
 		days = 95	
@@ -1334,10 +1370,46 @@ focus = {
         prerequisite = { focus = NGU_Ukrainian_Annex}
 		prerequisite = { focus = NGU_Minsk_Military_Base}			
 		completion_reward = {
-		declare_war_on = {
-    	target = RUS
-    	type = annex_everything
-		}
+			declare_war_on = {
+				target = RUS
+				type = annex_everything
+				}
+				declare_war_on = {
+					target = PRI
+					type = annex_everything
+					}
+				declare_war_on = {
+					target = URA
+					type = annex_everything
+					}
+				declare_war_on = {
+					target = SIB
+					type = annex_everything
+					}
+				declare_war_on = {
+					target = KAR
+					type = annex_everything
+					}
+				declare_war_on = {
+					target = SAK
+					type = annex_everything
+					}
+				declare_war_on = {
+					target = REG
+					type = annex_everything
+					}
+				declare_war_on = {
+					target = DON
+					type = annex_everything
+					}
+				declare_war_on = {
+					target = KUB
+					type = annex_everything
+					}
+				declare_war_on = {
+					target = SAV
+					type = annex_everything
+					}
 		WLF = {
 		add_timed_idea = {
 		idea = NGU_RussianWar

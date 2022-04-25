@@ -2,31 +2,76 @@ ideas = {
 
 country = {
 
-Red_Army_Desertion_idea = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
-			picture = CIB_OrduVatan
+RUS_army_disloyalty = {
+			picture = RUS_army_disloyalty
 			modifier = {
-			army_attack_factor = -0.20
-			army_defence_factor = -0.20	
-			stability_weekly = -0.010
-			political_power_gain = -0.50
-			stability_factor = -0.7
-			war_support_factor = -0.5
-            surrender_limit = -0.25
+				recruitable_population_factor = -0.25
+				army_attack_factor = -0.20
+				army_defence_factor = -0.20	
+				stability_weekly = -0.010
+				political_power_gain = -0.50
+				stability_factor = -0.2
+				war_support_factor = -0.25
+				surrender_limit = -0.25
 			}
 		}
-White_Russian_idea = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CIB_OrduVatan" }
-			picture = CIB_OrduVatan
+RUS_mass_terror = {
+			picture = RUS_mass_terror
 			modifier = {
-			army_attack_factor = 0.10
-			army_defence_factor = 0.10	
-			war_support_factor = 0.2
-			ai_focus_aggressive_factor = 10
+				industry_repair_factor = -0.15
+				production_speed_buildings_factor = -0.35
+				industry_repair_factor = -0.35
+				recruitable_population_factor = -0.1
+				stability_weekly = -0.03
+				war_support_weekly = -0.03
+				political_power_gain = -0.25
 			}
 		} 		
-
+RUS_pogromes = {
+			picture = SKL_deadlines
+			modifier = {
+				stability_weekly = -0.01
+				war_support_weekly = -0.01
+				recruitable_population_factor = -0.05
+				political_power_gain = -0.15
+			}
+		}
+RUS_mass_riots = {
+			picture = CRW_Gang_Unrest
+			modifier = {
+				stability_weekly = -0.01
+				war_support_weekly = -0.01
+				production_speed_buildings_factor = -0.5 
+				industrial_capacity_factory = -0.3
+				industrial_capacity_dockyard = -0.3
+				consumer_goods_factor = 0.25
+			}
+		}
+RUS_supreme_leader = {
+			picture = RUS_supreme_ruler
+			modifier = {
+				recruitable_population_factor = -0.4
+				political_power_factor = 0.25
+			}
+		}
+RUS_red_clashes = {
+			picture = RUS_red_clashes
+			modifier = {
+				recruitable_population_factor = -0.4
+				political_power_factor = -0.25
+			}
+		}
+RUS_red_killing = {
+			picture = RUS_red_killing
+			modifier = {
+				weekly_manpower = -1250
+			}
+		}
+RUS_CIVIL_WAR = {
+			picture = CRW_Memories_Operation
+			modifier = {
+				ai_focus_aggressive_factor = 1
+			}
+		}
 }
-
-
 }
