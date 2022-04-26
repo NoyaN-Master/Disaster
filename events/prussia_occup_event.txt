@@ -78,6 +78,7 @@ country_event = { # polish puppeting
 		add_ideas = oligarchy   
 		}
 		complete_national_focus = PRE_puppet_poland
+		add_ideas = PRE_polish_terrorism
 	}
 	option = {
 		name = preo.1.b     # generalplan ost
@@ -129,7 +130,133 @@ country_event = { # polish puppeting
 		add_ideas = military_government  
 		}
 		complete_national_focus = PRE_generalplan_ost
+		add_ideas = PRE_polish_terrorism
+		hidden_effect = {
+		country_event = { id = preo.4 days = 15 }				
+		}	
 	}
 }
 
-
+country_event = { # Czech puppeting
+	id = preo.2
+	title = preo.2.t
+	desc = preo.2.d
+	fire_only_once = yes
+	trigger = {
+	tag = PRE
+	NOT = {CEZ = {exists = yes}}
+	owns_state = 69
+	owns_state = 74
+	owns_state = 9
+	owns_state = 75
+	}
+	immediate = {
+		hidden_effect = {
+		add_state_claim = 69
+		add_state_claim = 74		
+		}
+	}
+	option = {
+		name = preo.2.a     # generalplan ost for czechs
+		ai_chance = { factor = 1}
+		set_temp_variable = { tag_to_release = CEZ }
+		every_owned_state = {
+			limit = {
+				is_core_of = CEZ
+				is_claim_or_core_of_ROOT = no
+				NOT = {
+					state = 69 
+					state = 74 
+				}
+			}
+			var:tag_to_release = { transfer_state = PREV }
+		}
+		puppet_released_tag = yes
+		CEZ = {
+		set_cosmetic_tag = CEZ_occupation
+		set_politics = {
+			ruling_party = revolutionary_nationalist
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = revolutionary_nationalist
+			popularity = 0.50
+		}
+		set_party_name = {
+			ideology = revolutionary_nationalist
+			name = POL_revolutionary_nationalist_occupation
+		}
+			retire_country_leader = yes
+			create_country_leader = {
+	        name = "Otto Skorzeny"
+	        desc = "Otto_Skorzeny_desc"
+	        picture = "gfx/leaders/CEZ/otto.png"
+	        expire = "2020.1.1"
+	        ideology = revolutionary_nationalist_subideology
+           }	
+		add_stability = -0.5
+		add_war_support = -0.5
+		add_ideas = PRE_RK_idea_disable_recruitment_and_ideas
+		add_ideas = volunteer_only 
+		add_ideas = corporatism 
+		add_ideas = military_government  
+		}
+#		complete_national_focus = PRE_generalplan_ost
+	}
+}
+country_event = { #german polish reapproachment population exchange
+	id = preo.3
+	title = preo.3.t
+	desc = preo.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = preo.3.a
+		ai_chance = { factor = 1}
+	809 = {
+	add_manpower = -10000
+	add_compliance = 20
+	}
+	808 = {
+	add_manpower = 10000
+	}
+	85 = {
+	add_manpower = -100000
+	add_compliance = 20
+	}
+	808 = {
+	add_manpower = 100000
+	}
+	86 = {
+	add_manpower = -250000
+	add_compliance = 20
+	}
+	808 = {
+	add_manpower = 250000
+	}
+	762 = {
+	add_manpower = -50000
+	add_compliance = 20
+	}
+	808 = {
+	add_manpower = 50000
+	}
+	add_political_power = -50
+	add_stability = 0.05
+	}
+}
+country_event = { #hans frank meme
+	id = preo.4
+	title = preo.4.t
+	desc = preo.4.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = preo.4.a
+		ai_chance = { factor = 1}
+	add_political_power = 1
+	add_stability = 0.01
+	}
+}

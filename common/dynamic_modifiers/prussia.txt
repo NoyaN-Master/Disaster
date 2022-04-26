@@ -1,0 +1,12 @@
+polish_resistance = {
+	icon = "GFX_modifiers_sabotaged_resource"
+	remove_trigger = { 
+		NOT = {tag = PRE}
+	}
+	resistance_target = 0.3
+	resistance_growth = 0.25
+	resistance_damage_to_garrison = 0.2
+	resistance_garrison_penetration_chance = 0.2
+}
+
+

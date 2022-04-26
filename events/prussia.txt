@@ -955,40 +955,6 @@ country_event = { #BLT gets fccd
 	}
 }
 
-country_event = { #Prussia Join Event
-	id = pre.102
-	title = pre.102.t
-	desc = pre.102.d
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	option = {
-		name = pre.102.a
-		ai_chance = { factor = 100}
-		PRE = {
-		add_to_faction = UKR
-		add_to_faction = SWV
-		add_to_faction = GRE
-		add_to_faction = DAN
-		add_to_faction = BLG
-		add_to_faction = BTV	
-		add_to_faction = FIN
-		add_to_faction = WHR
-		if = {
-			limit =  {
-			RUS = {
-				OR = {
-				has_government = liberal
-				has_government = social_democrat
-				}
-			}	
-			}
-			add_to_faction = RUS
-		}
-		}	
-		}	
-}
-
 country_event = { # Surrender
 	id = pre.103
 	title = pre.103.t

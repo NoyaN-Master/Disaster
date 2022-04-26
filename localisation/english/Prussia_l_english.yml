@@ -14,16 +14,29 @@ PRE_saxony_desc:0""
 PRE_stir_up_mecklenburg_tooltip:0"§RThis Focus will lead to war with the NGPU and the annexation of Mecklenburg§!"
 PRE_strike_poland:0"Strike The Poles"
 PRE_strike_poland_desc:0""
-PRE_puppet_poland:0 "Consolidate The New State"
+PRE_puppet_poland:0 "Reapproach the Poles"
 PRE_puppet_poland_desc:0""
-PRE_generalplan_ost:0"Generalplan Ost"
+PRE_reapproach_the_poles:0"Finalize the German- Polish border"
+PRE_reapproach_the_poles_desc:0""
+PRE_reapproach_the_poles_tooltip:0"§GThe Population Exchange and finalization of borders will take place by event.§!"
+
+PRE_generalplan_ost:0"Solidify the Ostsiedlung"
 PRE_generalplan_ost_desc:0 ""
-PRE_Rest_Germany:0 "Unify Germany"
-PRE_March_West:0 "March into the Rivers"
-PRE_March_West_desc:0 ""
-PRE_Koalition_Evropa:0 "Europäische Koalition"
-PRE_End_France:0 "Retake Alsace"
-PRE_Deutschland_Uber_Alles:0 "Deutschland Uber Alles!"
+
+PRE_polish_terrorism:0"Polish Separatism"
+PRE_polish_terrorism_desc:0""
+PRE_polish_terrorism_2:0"Polish Separatism"
+PRE_polish_terrorism_2_desc:0""
+
+PRE_reinforce_generaal_gouvernment:0"Reinforce Generaal gouvernment"
+PRE_reinforce_generaal_gouvernment_desc:0""
+PRE_generalplan_ost_2:0"Start Generalplan Ost"
+PRE_generalplan_ost_2_desc:0 ""
+polish_resistance:0"Polish Resistance"
+
+
+
+
 PRE_France_Surrender_Democratic:0 "The Paris Treaty"
 PRE_Take_South_Germany:0 "Roll Into South Germany"
 PRE_Take_Austria:0 "A Forced Anchluss"
@@ -359,6 +372,17 @@ preo.1.d:0 "With the bloodshed over, we now hold the future of the Poles in our 
 preo.1.a:0 "Establish a Polish puppet state."
 preo.1.b:0 "Military occupation establish the Generalgouvernement Polen"
 
+preo.2.t:0 "Occupation of Czechia"
+preo.2.d:0 "Establish the Protektorat Böhmen und Mähren."
+preo.2.a:0 "RIPBOZO"
+
+preo.3.t:0 "Finalization of the Polish German Borders"
+preo.3.d:0 "."
+preo.3.a:0 "TODO"
+
+preo.4.t:0 "Hans Frank in Occupied Poland"
+preo.4.d:0 "Hans Frank, the Governer put in charge of overseeing the former adversary of the Reich (who also later on claimed to be the King of that domain) was in Wawel Castle. A historical castle of Prussian Heritage was now a symbol of the Prussian's return to east. In charge of the newly established Generalgouvernment, Hans Frank was a man of Patriotic duty. Actively checking the establishment of power around the Goralenvolk and other Germans in the area to speed up the Germanisation of his domain. As time passed and Hans turned his domain more into an extension of the former "German Reich", there began a saying among the German populace about the former polish domain becoming the France (Frankreich) in the east as a way of joking with the fact that Hans Frank turned Poland into his own kingdom "Frankreich" (Frank's Kingdom). So became the name of "Frankreich im Osten" as a joke name for Poland. The rising popularity of this trend eventually reached the ears of Hans Frank himself. In one occasion, a former nobleman with German decent had told him about France in the East is being far better than the France in the West. It's known that Hans Frank himself replied with the phrase "At least there is still a Frank in the East.", at least Hans had a sense of humour. "
+preo.4.a:0 "Big if true"
 
 POL_revolutionary_nationalist_occupation:0"German Military Government"
 POL_authoritarian_democrat_occupation:0"National Radical Organization"
@@ -666,7 +690,7 @@ PRE_controlled_opposition_desc:0""
 
 
 #tooltips
-PRE_elections:0 "New elections will be held in Prussia."
+PRE_elections:0 "§GNew elections will be held in Prussia.§!"
 PRE_querfront_negotiations:0"§GWe will begin to negotiate the Querfront coalition., giving the following effects during the focus:§!"
 PRE_unity_through_service_tooltip:0"§GUnity Through Service will give the following effect during the focus:§!"
 PRE_junker_purge:0"§RFailure to deal properly with the Junkers could be disastrous for the government.§!"

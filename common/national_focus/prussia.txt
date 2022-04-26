@@ -235,39 +235,38 @@ focus_tree = {
 	}	
 	focus = {
 		id = PRE_puppet_poland
-		icon = GFX_goal_deutschland_vereint
+		icon = GFX_unknown
 		x = -1
 		y = 3
 		relative_position_id = PRE_stir_up_mecklenburg
-		cost = 2	
+		cost = 4	
 		mutually_exclusive = {
 		focus =  PRE_generalplan_ost
+		}
+		available = {
+			always= false
 		}		
 		prerequisite = { focus = PRE_strike_poland }
         completion_reward = {
 		}
-		
 	}
-
 	focus = {
-		id = PRE_Rest_Germany
-		icon = GFX_goal_pangerman
-		x = 0
+		id = PRE_reapproach_the_poles
+		icon = GFX_unknown
+		x = -1
 		y = 4
 		relative_position_id = PRE_stir_up_mecklenburg
-		cost = 2		
-		prerequisite = { focus = PRE_generalplan_ost focus = PRE_puppet_poland }
+		cost = 4	
 		available = {
-		}
+			PLN = { is_puppet_of = PRE}
+		}		
+		prerequisite = { focus = PRE_puppet_poland }
         completion_reward = {
-		unlock_decision_tooltip = PRE_Take_South_Germany
-		unlock_decision_tooltip = PRE_Take_Austria
-		unlock_decision_tooltip = PRE_Take_CEZ
-		unlock_decision_tooltip = PRE_Deal_CEZ
+		custom_effect_tooltip = PRE_reapproach_the_poles_tooltip
+		country_event = { id = preo.3 }	
+		remove_ideas = PRE_polish_terrorism
 		}
-		
 	}
-
 	focus = {
 		id = PRE_generalplan_ost
 		icon = GFX_goal_WRF_korps
@@ -277,143 +276,56 @@ focus_tree = {
 		cost = 5
 		mutually_exclusive = {
 		focus =  PRE_puppet_poland
-		}		
+		}
+		available = {
+			always= false
+		}			
 		prerequisite = { focus = PRE_strike_poland }	
 		completion_reward = {
 		}
 	}
-
 	focus = {
-		id = PRE_The_RKs
-		icon = GFX_goal_PRE_DTS
-		x = 2
+		id = PRE_reinforce_generaal_gouvernment
+		icon = GFX_unknown
+		x = 1
 		y = 4
 		relative_position_id = PRE_stir_up_mecklenburg
-		cost = 5
-		prerequisite = { focus = PRE_generalplan_ost }
-		available = {
-		OR = {
-		has_government = revolutionary_nationalist
-		has_government = ultranationalist	
-		}
-		has_war = no			
-		}		
-		completion_reward = {
-		create_faction = PRE_NAT_FACTION
-		
-		}
-	}
+		cost = 5		
+		prerequisite = { focus = PRE_generalplan_ost }	
 
-	focus = {
-		id = PRE_Fuck_France
-		icon = GFX_goal_NGU_TeutonWAR
-		x = 3
-		y = 5
-		relative_position_id = PRE_stir_up_mecklenburg
-		cost = 5
-		prerequisite = { focus = PRE_The_RKs }
 		available = {
-		OR = {
-		has_government = revolutionary_nationalist
-		has_government = ultranationalist	
+		has_equipment = {
+			infantry_equipment > 9999
+		}
+		}
+		completion_reward = {
+		add_equipment_to_stockpile  = {
+			type = infantry_equipment
+			amount = -10000
 		}	
-		
-		RHN = {
-			exists = no
-		}
-		has_war = no			
-		}		
-		completion_reward = {
-		declare_war_on = {
-    	target = FRE
-    	type = annex_everything
-		}
-		declare_war_on = {
-    	target = BLI
-    	type = annex_everything
-		}
-		add_timed_idea = {
-		idea = NGU_FrenchSaxons
-		days = 50
-		}
-		unlock_decision_tooltip = PRE_France_Surrender
-		hidden_effect = {
-			set_country_flag = WW2_happened 
-		}
+		swap_ideas = {
+			add_idea = PRE_polish_terrorism_2
+			remove_idea = PRE_polish_terrorism
+		}					
 		}
 	}
-
 	focus = {
-		id = PRE_March_West
-		icon = GFX_goal_NGU_rhine
-		x = 0
+		id = PRE_generalplan_ost_2
+		icon = GFX_goal_WRF_korps
+		x = 1
 		y = 5
 		relative_position_id = PRE_stir_up_mecklenburg
-		cost = 5
-		prerequisite = { focus = PRE_Rest_Germany }
-		available = {
-		has_war = no			
-		}		
+		cost = 5			
+		prerequisite = { focus = PRE_reinforce_generaal_gouvernment }	
 		completion_reward = {
-		unlock_decision_tooltip = PRE_Attack_Rhineland
+	809 = {add_dynamic_modifier = { modifier = polish_resistance }}
+	85 = {add_dynamic_modifier = { modifier = polish_resistance }}
+	86 = {add_dynamic_modifier = { modifier = polish_resistance }}
+	762 = {add_dynamic_modifier = { modifier = polish_resistance }}
 		}
 	}
 
-	focus = {
-		id = PRE_Koalition_Evropa
-		icon = GFX_goal_PRE_EVROPA
-		x = -2
-		y = 4
-		relative_position_id = PRE_stir_up_mecklenburg
-		cost = 5
-		prerequisite = { focus = PRE_puppet_poland }
-		available = {
-		has_war = no			
-		}		
-		completion_reward = {
-		create_faction = PRE_LIB_FACTION
-		country_event = { id = pre.102 days = 1}		
-		}
-	}
 
-	focus = {
-		id = PRE_End_France
-		icon = GFX_goal_NGU_France
-		x = -3
-		y = 5
-		relative_position_id = PRE_stir_up_mecklenburg
-		cost = 5
-		prerequisite = { focus = PRE_Koalition_Evropa }
-		available = {
-		has_war = no
-		RHN = {
-		exists = no	
-		}			
-		}		
-		completion_reward = {
-		declare_war_on = {
-    	target = FRE
-    	type = annex_everything
-		}
-		}
-	}
-
-	focus = {
-		id = PRE_Deutschland_Uber_Alles
-		icon = GFX_goal_The_republic_moves_on
-		x = 0
-		y = 6
-		relative_position_id = PRE_stir_up_mecklenburg
-		cost = 5
-		prerequisite = { focus = PRE_End_France focus = PRE_Fuck_France  }
-		prerequisite = { focus = PRE_March_West }
-		available = {
-		has_war = no			
-		}		
-		completion_reward = {
-		add_stability = 0.20
-		}
-	}
 
 ############################################### Schleicher Path
 	focus = {
