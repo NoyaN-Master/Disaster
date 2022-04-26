@@ -235,7 +235,7 @@ units= {
 		}				
 		task_force = {				
 			name = "Sous-Marins Force de Levant"			
-			location = 792 # Beirut			
+			location = 4401 # Beirut			
 			# 11e Division des Sous-Marins
 			ship = { name = "Requin" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FRE } } }				
 			ship = { name = "Marsouin" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FRE } } }				
