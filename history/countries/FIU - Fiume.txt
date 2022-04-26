@@ -75,6 +75,182 @@ set_popularities = {
 	revolutionary_anarchist = 0
 }
 
+####################military ground personnel
+create_field_marshal = {
+	name = "Gabriele D'Annunzio"
+	portrait_path = "gfx/leaders/FIU/FIU_Gabriele.tga"
+	traits = { offensive_doctrine organisational_leader skirmisher guerilla_fighter logistics_wizard
+
+	}
+	skill = 5
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Arnaldo Azzi"
+	portrait_path = "gfx/leaders/FIU/Portrait_ITA_Arnaldo_Azzi.png"
+	traits = { infantry_expert guerilla_fighter
+
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Alberto Pariani"
+	portrait_path = "gfx/leaders/FIU/Portrait_ITA_Alberto_Pariani.png"
+	traits = { offensive_doctrine infantry_expert  
+
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Emilio De Bono"
+	portrait_path = "gfx/leaders/FIU/Portrait_ITA_Emilio_De_Bono.png"
+	traits = { infantry_leader skirmisher 
+
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Italo Gariboldi"
+	portrait_path = "gfx/leaders/FIU/Portrait_ITA_Italo_Gariboldi.png"
+	traits = { infantry_leader guerilla_fighter
+
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Enrico Riccardi"
+	portrait_path = "gfx/leaders/FIU/Portrait_ITA_Enrico_Riccardi.png"
+	traits = { infantry_leader trait_mountaineer hill_fighter
+
+	}
+	skill = 2
+	attack_skill = 5
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Rodolfo Graziani"
+	portrait_path = "gfx/leaders/FIU/Portrait_ITA_Rodolfo_Graziani.png"
+	traits = { infantry_leader inflexible_strategist scavenger 
+
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Sebastiano Visconti Prasca"
+	portrait_path = "gfx/leaders/FIU/Portrait_ITA_Sebastiano_Visconti_Prasca.png"
+	traits = { infantry_leader skirmisher combined_arms_expert urban_assault_specialist jungle_rat
+
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Venanzio Gabriotti"
+	portrait_path = "gfx/leaders/FIU/Portrait_ITA_Venanzio_Gabriotti.png"
+	traits = { infantry_leader combined_arms_expert 
+
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 5
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Annibale Bergonzoli"
+	portrait_path = "gfx/leaders/FIU/Portrait_ITA_Annibale_Bergonzoli.png"
+	traits = { infantry_leader jungle_rat
+
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Ettore Bastico"
+	portrait_path = "gfx/leaders/FIU/Portrait_ITA_Ettore_Bastico.png"
+	traits = { infantry_leader skirmisher
+
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Fedele de Giorgis"
+	portrait_path = "gfx/leaders/FIU/Portrait_ITA_Fedele_de_Giorgis.png"
+	traits = { panzer_expert jungle_rat
+
+	}
+	skill = 2
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+#################admirals
+create_navy_leader = {
+	name = "Alberto Da Zara"
+	portrait_path = "gfx/leaders/FIU/Portrait_ITA_Alberto_Da_Zara.png"
+	traits = { fleet_protector superior_tactician destroyer_leader  }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	maneuvering_skill = 4
+	coordination_skill = 4
+}
+create_navy_leader = {
+	name = "Raffaele de Courten"
+	portrait_path = "gfx/leaders/FIU/Portrait_ITA_Raffaele_de_Courten.png"
+	traits = { fleet_protector cruiser_captain dive_bomber torpedo_bomber }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 4
+}
+create_navy_leader = {
+	name = "Gino Pavesi"
+	portrait_path = "gfx/leaders/FIU/Portrait_ITA_Gino_Pavesi.png"
+	traits = { green_water_expert gunnery_expert }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	maneuvering_skill = 6
+	coordination_skill = 6
+}
 create_country_leader = {
 	name = "Gabriele D'Annunzio"
 	#desc = "FIU_Gabriele_desc"
