@@ -96,18 +96,6 @@ create_corps_commander = {
 	logistics_skill = 3
 }
 create_corps_commander = {
-	name = "Asım Gündüz"
-	portrait_path = "gfx/leaders/CLP/Portrait_TUR_Asim_Gunduz.tga"
-	traits = { infantry_leader
-
-	}
-	skill = 3
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 2
-}
-create_corps_commander = {
 	name = "Mahmut Muhtar Katırcıoğlu"
 	portrait_path = "gfx/leaders/CLP/Portrait_TUR_Mahmud_Muhtar_Katircioglu.png"
 	traits = { infantry_leader war_hero

@@ -691,3 +691,260 @@ create_corps_commander = { #Maxime Weygand
 	planning_skill = 2
 	logistics_skill = 2
 }
+
+###################Military Personnals
+create_corps_commander = {
+	name = "Andre Marty"
+	portrait_path = "gfx/leaders/FRE/Portrait_FRA_Andre_Marty.png"
+	traits = { panzer_expert jungle_rat
+
+	}
+	skill = 2
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Georges Catroux"
+	portrait_path = "gfx/leaders/FRE/Portrait_FRA_Georges_Catroux_KR.png"
+	traits = { infantry_leader jungle_rat
+
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Charles Delestraint"
+	portrait_path = "gfx/leaders/FRE/Portrait_FRA_Charles_Delestraint.png"
+	traits = { panzer_expert skirmisher 
+
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Clement Blanc"
+	portrait_path = "gfx/leaders/FRE/Portrait_FRA_Clement_Blanc.png"
+	traits = { infantry_leader bearer_of_artillery
+
+	}
+	skill = 2
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Diego Brosset"
+	portrait_path = "gfx/leaders/FRE/Portrait_FRA_Diego_Brosset.png"
+	traits = { infantry_leader desert_fox
+
+	}
+	skill = 2
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Gaston Billotte"
+	portrait_path = "gfx/leaders/FRE/Portrait_FRA_Gaston_Billotte.png"
+	traits = { infantry_leader jungle_rat
+
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Georges Blanchard"
+	portrait_path = "gfx/leaders/FRE/Portrait_FRA_Georges_Blanchard.png"
+	traits = { infantry_leader 
+
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Henri Tanguy"
+	portrait_path = "gfx/leaders/FRE/Portrait_FRA_Henri_Tanguy.png"
+	traits = { infantry_leader 
+
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Jacques Sadoul"
+	portrait_path = "gfx/leaders/FRE/Portrait_FRA_Jacques_Sadoul.png"
+	traits = { infantry_leader 
+
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Joseph Putz"
+	portrait_path = "gfx/leaders/FRE/Portrait_FRA_Joseph_Putz.png"
+	traits = { infantry_leader 
+
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Louis Buisson"
+	portrait_path = "gfx/leaders/FRE/Portrait_FRA_Louis_Buisson.png"
+	traits = { infantry_leader 
+
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Pierre Koenig"
+	portrait_path = "gfx/leaders/FRE/Portrait_FRA_Marie_Pierre_Koenig_KR.png"
+	traits = { infantry_leader 
+
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_field_marshal = {
+	name = "Maurice Gamelin"
+	portrait_path = "gfx/leaders/FRE/Portrait_FRA_Maurice_Gamelin_KR.png"
+	traits = { infantry_leader logistics_wizard defensive_doctrine fast_planner unyielding_defender organisational_leader expert_delegator
+
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Nestor Makhno"
+	portrait_path = "gfx/leaders/FRE/Portrait_FRA_Nestor_Makhno.png"
+	traits = { infantry_leader jungle_rat
+
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Paul Legentilhome"
+	portrait_path = "gfx/leaders/FRE/Portrait_FRA_Paul_Legentilhomme.png"
+	traits = { infantry_leader jungle_rat
+
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Raoul Magrin Vernerey"
+	portrait_path = "gfx/leaders/FRE/Portrait_FRA_Raoul_Magrin_Vernerey.png"
+	traits = { 
+
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Rene Olyr"
+	portrait_path = "gfx/leaders/FRE/Portrait_FRA_Rene_Olry.png"
+	traits = { infantry_leader jungle_rat
+
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+#################admirals
+create_navy_leader = {
+	name = "Gino Pavesi"
+	portrait_path = "gfx/leaders/FRE/Portrait_ITA_Gino_Pavesi.png"
+	traits = { green_water_expert gunnery_expert }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	maneuvering_skill = 6
+	coordination_skill = 6
+}
+create_navy_leader = {
+	name = "Francois Darlan"
+	portrait_path = "gfx/leaders/FRE/Portrait_FRA_Francois_Darlan.png"
+	traits = { gunnery_expert }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 6
+	coordination_skill = 6
+}
+create_navy_leader = {
+	name = "Gabriel Auphan"
+	portrait_path = "gfx/leaders/FRE/Portrait_FRA_Gabriel_Auphan.png"
+	traits = { blue_water_expert gunnery_expert }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	maneuvering_skill = 6
+	coordination_skill = 6
+}
+create_navy_leader = {
+	name = "Marcel Gensoul"
+	portrait_path = "gfx/leaders/FRE/Portrait_FRA_Marcel_Gensoul.png"
+	traits = {  }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 6
+	coordination_skill = 6
+}
+create_navy_leader = {
+	name = "Philippe Auboyneau"
+	portrait_path = "gfx/leaders/FRE/Portrait_FRA_Philippe_Auboyneau.png"
+	traits = {  }
+	skill = 4
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 6
+	coordination_skill = 6
+}
