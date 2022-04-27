@@ -165,10 +165,11 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BAY_DDA_idea" }
 			picture = BAY
 			modifier = {
-				stability_factor = -0.1
-				war_support_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.3
+				production_speed_buildings_factor = 0.15
 			}
 		}
+
 		
 		
 	}

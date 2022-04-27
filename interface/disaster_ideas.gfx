@@ -4,6 +4,11 @@ spriteTypes = {
 	## Disaster ##
 	#### Ideas GFX ####
 	###################
+
+	spriteType = {
+		name = "GFX_idea_autarky_economy"
+		texturefile = "gfx/interface/ideas/economic_autarky_idea.png"
+	}
 	spriteType = {
 		name = "GFX_idea_BAY_BAVARIA_DEFENSE"
 		texturefile = "gfx/interface/ideas/BAY_BAVARIA_DEFENSE.png"
