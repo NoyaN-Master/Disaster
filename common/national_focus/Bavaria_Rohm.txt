@@ -301,7 +301,9 @@ focus_tree = {
 		prerequisite = { focus = BAY_end_the_capitalists }
 		prerequisite = { focus = BAY_drive_out_the_hebrew_menace }
 		completion_reward = {
-
+			add_ideas = {
+				BAY_rohm_militarism_idea
+			}
 		}
 	}
 
@@ -317,7 +319,23 @@ focus_tree = {
 		prerequisite = { focus = BAY_end_the_capitalists }
 		prerequisite = { focus = BAY_drive_out_the_hebrew_menace }
 		completion_reward = {
-
+			add_ideas = war_economy
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+				random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
