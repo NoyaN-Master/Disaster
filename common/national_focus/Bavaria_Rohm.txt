@@ -32,6 +32,15 @@ focus_tree = {
 		cost = 0
 		completion_reward = {
 			custom_effect_tooltip = BAY_rohm_solidifying_rule_tt
+			#create_country_leader = {
+			#	name = "Ernst Rohm"
+			#	desc = "Ernst_Rohm_desc"
+			#	picture = "gfx/leaders/BAY/Ernst_Rohm.tga"
+			#	expire = "1965.1.1"
+			#	ideology = left_national_socialism_subideology
+			#	traits = {
+			#	}
+			#}
 		}
 	}
 
@@ -468,7 +477,7 @@ focus_tree = {
 		prerequisite = { focus = BAY_expand_resources }
 		prerequisite = { focus = BAY_positive_christianity }
 		completion_reward = {
-
+			add_ideas = BAY_germanic_family_idea
 		}
 	}
 
@@ -481,7 +490,13 @@ focus_tree = {
 		cost = 4
 		prerequisite = { focus = BAY_expand_resources }
 		completion_reward = {
-
+			every_owned_state = {
+				add_building_construction = {
+					type = infrastructure 
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -496,7 +511,7 @@ focus_tree = {
 		prerequisite = { focus = BAY_the_magic_of_propaganda }
 		prerequisite = { focus = BAY_the_hierarchy }
 		completion_reward = {
-
+			add_ideas = BAY_high_command_idea
 		}
 	}
 
@@ -510,7 +525,17 @@ focus_tree = {
 		prerequisite = { focus = BAY_positive_christianity }
 		prerequisite = { focus = BAY_form_the_SA }
 		completion_reward = {
-
+			create_country_leader = {
+				name = "Ernst Rohm"
+				desc = "Ernst_Rohm_desc"
+				picture = "gfx/leaders/BAY/Ernst_Rohm.tga"
+				expire = "1965.1.1"
+				ideology = revolutionary_nationalist_subideology
+				traits = {
+					rohm_fuhrer
+				}
+			}
+			add_ideas = BAY_rohm_propaganda_idea
 		}
 	}
 
@@ -527,7 +552,7 @@ focus_tree = {
 		prerequisite = { focus = BAY_germanic_family_model }
 		prerequisite = { focus = BAY_union_of_germanic_races }
 		completion_reward = {
-
+			#event here
 		}
 	}
 
@@ -543,7 +568,7 @@ focus_tree = {
 		prerequisite = { focus = BAY_the_hierarchy }
 		prerequisite = { focus = BAY_germanic_family_model }
 		completion_reward = {
-
+			add_research_slot = 1
 		}
 	}
 

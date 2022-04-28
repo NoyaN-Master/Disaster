@@ -422,6 +422,13 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
+	rohm_fuhrer = {
+		random = no
+		stability_factor = 0.15
+		political_power_factor = 0.1
+		revolutionary_nationalist_drift = 0.1
+	}
 	
 
 
