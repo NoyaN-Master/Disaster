@@ -23,7 +23,7 @@ TUR_coring = {
 		days_remove = 100
 		cancel_if_not_visible = yes
 		state_target = yes
-		targets = { 229 }
+		targets = { 49 183 229 339 340 341 343 344 346 347 348 349 350 352 353 354 355 356 419 420 676 677 797 798 799 800 817 818 834 835 839 }
 		target_trigger = {
 			FROM = {
 				is_owned_by = ROOT
@@ -231,8 +231,6 @@ TUR_unification_category = {
         owns_state = 354
         owns_state = 353
         owns_state = 800
-        owns_state = 230
-        owns_state = 229
         owns_state = 352
         owns_state = 350
         owns_state = 346
@@ -300,8 +298,6 @@ TUR_unification_category = {
         owns_state = 354
         owns_state = 353
         owns_state = 800
-        owns_state = 230
-        owns_state = 229
         owns_state = 352
         owns_state = 350
         owns_state = 346
@@ -335,8 +331,6 @@ TUR_unification_category = {
         owns_state = 354
         owns_state = 353
         owns_state = 800
-        owns_state = 230
-        owns_state = 229
         owns_state = 352
         owns_state = 350
         owns_state = 346
@@ -387,8 +381,6 @@ TUR_unification_category = {
         owns_state = 354
         owns_state = 353
         owns_state = 800
-        owns_state = 230
-        owns_state = 229
         owns_state = 352
         owns_state = 350
         owns_state = 346
@@ -452,8 +444,6 @@ TUR_unification_category = {
         owns_state = 354
         owns_state = 353
         owns_state = 800
-        owns_state = 230
-        owns_state = 229
         owns_state = 352
         owns_state = 350
         owns_state = 346
@@ -517,8 +507,6 @@ TUR_unification_category = {
         owns_state = 354
         owns_state = 353
         owns_state = 800
-        owns_state = 230
-        owns_state = 229
         owns_state = 352
         owns_state = 350
         owns_state = 346
@@ -583,8 +571,6 @@ TUR_unification_category = {
         owns_state = 354
         owns_state = 353
         owns_state = 800
-        owns_state = 230
-        owns_state = 229
         owns_state = 352
         owns_state = 350
         owns_state = 346
@@ -648,8 +634,6 @@ TUR_unification_category = {
         owns_state = 354
         owns_state = 353
         owns_state = 800
-        owns_state = 230
-        owns_state = 229
         owns_state = 352
         owns_state = 350
         owns_state = 346
@@ -714,8 +698,6 @@ TUR_unification_category = {
         owns_state = 354
         owns_state = 353
         owns_state = 800
-        owns_state = 230
-        owns_state = 229
         owns_state = 352
         owns_state = 350
         owns_state = 346
@@ -776,8 +758,6 @@ TUR_unification_category = {
         owns_state = 354
         owns_state = 353
         owns_state = 800
-        owns_state = 230
-        owns_state = 229
         owns_state = 352
         owns_state = 350
         owns_state = 346
@@ -1304,6 +1284,8 @@ WRF_Levant_Komisar = {
         }
         }    
         complete_effect = {
+            transfer_state = 676
+            transfer_state = 818
         release_puppet = SRY
         SRY = {
         set_cosmetic_tag = SRY_Atsiz_Puppet
@@ -1328,15 +1310,15 @@ WRF_Levant_Komisar = {
             transfer_state = 454
             transfer_state = 453
             transfer_state = 832
-            transfer_state = 818
             transfer_state = 816
             transfer_state = 675
             transfer_state = 291
-            transfer_state = 676
             transfer_state = 455
-            transfer_state = 675
         }
-		hidden_effect = {
+        WRF = {
+            transfer_state = 677
+            transfer_state = 799
+            transfer_state = 817
         }
         }
      ai_will_do = {
@@ -1376,15 +1358,15 @@ WRF_Aryan_Komisar_1 = {
             create_country_leader = {
 	        name = "Mustafa Muğlalı"
 	        desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        picture   = "gfx/leaders/CIB/CIB_Mustafa_Muglali.tga"
+	        picture = "gfx\leaders\CIB\Portrait_CIB_Mustafa_Muglali.tga"
 	        expire = "1965.1.1"
 	        ideology = ultranationalist_subideology
 	        traits = {
 	        }
             }
         }
-		hidden_effect = {
-        }
+        transfer_state = 419
+        transfer_state = 420
         }
      ai_will_do = {
 			factor = 1000
@@ -1430,7 +1412,6 @@ WRF_Aryan_Komisar_2 = {
             transfer_state = 444
             transfer_state = 415
             transfer_state = 445
-            transfer_state = 442
             transfer_state = 442
         }
 		hidden_effect = {
@@ -1613,7 +1594,8 @@ Enver_StopStalin = {
 		cost = 0
         available  = {
         SRF = {
-        owns_state = 231
+        owns_state = 820
+        owns_state = 821
         }
         }
         visible = {
@@ -2268,6 +2250,3 @@ ethem_foreign_category = {
 # 		}
 #      }     
 }
-
-
-	

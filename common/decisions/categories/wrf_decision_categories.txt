@@ -4,19 +4,26 @@ TUR_coring = {
 	picture = Decision_picture_anatolia_influence
 	priority = 100
 	allowed = {
-	is_turkish_tag = yes
+		OR = {
+			tag = IZM
+			tag = WRF
+			tag = CIB
+			tag = CLP
+			tag = CRW
+			tag = TIT
+			tag = OTH
+			tag = ANK
+			tag = KLG
+			tag = ANT
+			tag = ADN
+			tag = THR
+		}
 	}
 	visible = {
 		always = yes
 	}
 	visible_when_empty = no
 }
-
-
-
-
-
-
 
 TUR_unification_category = {
 	icon = GFX_decision_category_generic_political_actions

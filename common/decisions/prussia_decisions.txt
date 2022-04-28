@@ -529,35 +529,27 @@ PRE_fuck_baltics = {
     has_completed_focus = PRE_generalplan_ost
     }    
     complete_effect = {
-<<<<<<< HEAD
-        RUS = {
-            end_puppet = LAT
-            end_puppet = EST
-        }
 		if = {
-		limit = { country_exists = LIT}
+		limit = { country_exists = LIT }
 		declare_war_on = {
         target = LIT
         type = annex_everything
-        }}
+        }
+    }
 		if = {
-		limit = { country_exists = LAT}
+		limit = { country_exists = LAT }
 		declare_war_on = {
         target = LAT
         type = annex_everything
-        }}
+        }
+    }
 		if = {
-		limit = { country_exists = EST}
+		limit = { country_exists = EST }
 		declare_war_on = {
         target = EST
         type = annex_everything
-        }}
-=======
-    
-    BLT = {
-    country_event = {id = pre.101 days = 5}     
+        }
     }
->>>>>>> parent of b8babefa (temporary fixes for the russian puppets war)
     }
  ai_will_do = {
         factor = 1000
