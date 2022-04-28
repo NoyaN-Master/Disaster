@@ -1,3 +1,23 @@
+TUR_coring = {
+	icon = GFX_decision_category_generic_political_actions
+
+	picture = Decision_picture_anatolia_influence
+	priority = 100
+	allowed = {
+	is_turkish_tag = yes
+	}
+	visible = {
+		always = yes
+	}
+	visible_when_empty = no
+}
+
+
+
+
+
+
+
 TUR_unification_category = {
 	icon = GFX_decision_category_generic_political_actions
 

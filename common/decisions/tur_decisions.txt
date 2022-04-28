@@ -1,4 +1,45 @@
-
+TUR_coring = {
+	TUR_Integrate_State = {
+		name = integrate_state
+		icon = eng_trade_unions_demand
+		available = {
+			FROM = {
+				is_fully_controlled_by = ROOT
+				compliance > 30
+			}
+		}
+		visible = {
+			FROM = {
+				is_owned_by = ROOT
+				NOT = { is_core_of = ROOT }
+			}
+		}
+        modifier = {
+			stability_weekly = -0.001
+			war_support_weekly = -0.001
+			political_power_cost = 0.10
+        }
+		cost = 0
+		days_remove = 100
+		cancel_if_not_visible = yes
+		state_target = yes
+		targets = { 229 }
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+				NOT = { is_core_of = ROOT }
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove OTT_Integrate_State target: [From.GetName]"
+			hidden_effect = { remove_state_claim = FROM }
+			add_state_core = FROM
+		}
+	}
+}
 TUR_unification_category = {
 	TUR_KILL_ARMENIANS = {
 		fire_only_once = yes
