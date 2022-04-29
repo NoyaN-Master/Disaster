@@ -318,11 +318,13 @@ focus_tree = {
 		cost = 5			
 		prerequisite = { focus = PRE_reinforce_generaal_gouvernment }	
 		completion_reward = {
-	809 = {add_dynamic_modifier = { modifier = polish_resistance }}
-	85 = {add_dynamic_modifier = { modifier = polish_resistance }}
-	86 = {add_dynamic_modifier = { modifier = polish_resistance }}
-	762 = {add_dynamic_modifier = { modifier = polish_resistance }}
-		}
+		custom_effect_tooltip = PRE_generalplan_ost_2_tooltip
+		hidden_effect = {
+	809 = {add_resistance = 30}
+	85 = {add_resistance = 30}
+	86 = {add_resistance = 30}
+	762 = {add_resistance = 30}}
+	}
 	}
 
 

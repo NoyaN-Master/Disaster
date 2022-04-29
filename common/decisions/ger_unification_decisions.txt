@@ -419,6 +419,7 @@ GER_unification_decisions = {
 			FROM = {
 				is_fully_controlled_by = ROOT
 				compliance > 30
+				NOT = {has_dynamic_modifier = {modifier = polish_resistance}}
 			}
 		}
 

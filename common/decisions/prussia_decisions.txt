@@ -1,12 +1,12 @@
 PRE_generalplan_ost_decision = {
-	PRE_generalplan_ost_step_1 = { #integrate the eastern territories step 1
-		name = integrate_state
-		icon = eng_trade_unions_demand
+	PRE_generalplan_ost_step_1 = { #integrate the old prussian territories
+		name = PRE_generalplan_ost_step_1_name
+		icon = GFX_decision_generic_police_action
 
 		available = {
+						num_of_civilian_factories_available_for_projects > 1
 			FROM = {
 				is_fully_controlled_by = ROOT
-				compliance > 30
 			}
 		}
 
@@ -14,15 +14,17 @@ PRE_generalplan_ost_decision = {
 			FROM = {
 				is_owned_by = ROOT
 				NOT = { is_core_of = ROOT }
+				FROM  = { has_dynamic_modifier = {modifier = polish_resistance}}
 			}
 		}
         modifier = {
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
 			political_power_cost = 0.10
+			civilian_factory_use = 2
         }
 		cost = 0
-		days_remove = 100
+		days_remove = 50
 		cancel_if_not_visible = yes
 
 		state_target = yes
@@ -39,9 +41,7 @@ PRE_generalplan_ost_decision = {
 		}
 
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove OTT_Integrate_State target: [From.GetName]"
-			hidden_effect = { remove_state_claim = FROM }
-			add_state_core = FROM
+		FROM = { remove_dynamic_modifier = { modifier = polish_resistance } }
 		}
 	}
 }

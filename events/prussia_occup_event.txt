@@ -131,6 +131,10 @@ country_event = { # polish puppeting
 		}
 		complete_national_focus = PRE_generalplan_ost
 		add_ideas = PRE_polish_terrorism
+		809 = {add_dynamic_modifier = { modifier = polish_resistance }}
+		85 = {add_dynamic_modifier = { modifier = polish_resistance }}
+		86 = {add_dynamic_modifier = { modifier = polish_resistance }}
+		762 = {add_dynamic_modifier = { modifier = polish_resistance }}
 		hidden_effect = {
 		country_event = { id = preo.4 days = 15 }				
 		}	

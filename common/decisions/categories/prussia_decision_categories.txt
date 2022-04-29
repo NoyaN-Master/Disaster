@@ -1,12 +1,10 @@
 PRE_generalplan_ost_decision = {
-
+	icon = GFX_decision_category_ger_reichskommissariats
 	priority = 100
 	allowed = {
-		OR = {
 			tag = PRE
-		}
 	}
-	picture = Decision_picture_propaganda_building
+	picture = Decision_picture_generalplan_ost
 	visible = {
 		has_completed_focus = PRE_generalplan_ost_2
 	}
