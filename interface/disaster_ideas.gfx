@@ -1,9 +1,18 @@
 spriteTypes = {	
+# state icons
 
+	spriteType = {
+		name = "GFX_modifiers_polish_terrorism"
+		texturefile = "gfx/interface/state_modifiers/modifiers_polish_terrorism.dds"
+	}
 	###################
 	## Disaster ##
 	#### Ideas GFX ####
 	###################
+	spriteType = {
+		name = "GFX_idea_autarky_economy"
+		texturefile = "gfx/interface/ideas/economic_autarky_idea.png"
+	}
 	spriteType = {
 		name = "GFX_idea_BAY_BAVARIA_DEFENSE"
 		texturefile = "gfx/interface/ideas/BAY_BAVARIA_DEFENSE.png"

@@ -243,7 +243,7 @@ units= {
 		}				
 		task_force = {				
 			name = "Sous-Marins Force de Levant"			
-			location = 792 # Beirut			
+			location = 4401 # Beirut			
 			# 11e Division des Sous-Marins
 			ship = { name = "Requin" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRE version_name = "600 Series" } } }				
 			ship = { name = "Marsouin" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRE version_name = "600 Series" } } }				

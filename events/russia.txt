@@ -607,10 +607,10 @@ country_event = { #SIBERIA breaks off
 			581 = {
 				add_core_of = SIB
 			}
-			679 = {
+			579 = {
 				add_core_of = SIB
 			}
-			680 = {
+			580 = {
 				add_core_of = SIB
 			}
 			403 = {
@@ -685,10 +685,10 @@ country_event = { #SIBERIA breaks off
 			581 = {
 				add_core_of = SIB
 			}
-			679 = {
+			579 = {
 				add_core_of = SIB
 			}
-			680 = {
+			580 = {
 				add_core_of = SIB
 			}
 			403 = {
@@ -1054,9 +1054,6 @@ country_event = { #when shit gets real
 			SAV = {
 				add_ideas = RUS_CIVIL_WAR
 			}
-			URA = {
-				add_ideas = RUS_CIVIL_WAR
-			}
 			SIB = {
 				add_ideas = RUS_CIVIL_WAR
 			}
@@ -1259,48 +1256,6 @@ country_event = { #when shit gets real
 												target = PRI
 												type = annex_everything
 											}
-										}
-									}
-									URA = {
-										declare_war_on = {
-											target = SAK
-											type = annex_everything
-										}
-										declare_war_on = {
-											target = RUS
-											type = annex_everything
-										}
-										declare_war_on = {
-											target = SAV
-											type = annex_everything
-										}
-										declare_war_on = {
-											target = REG
-											type = annex_everything
-										}
-										declare_war_on = {
-											target = DON
-											type = annex_everything
-										}
-										declare_war_on = {
-											target = KUB
-											type = annex_everything
-										}
-										declare_war_on = {
-											target = PRI
-											type = annex_everything
-										}
-										declare_war_on = {
-											target = SAK
-											type = annex_everything
-										}
-										declare_war_on = {
-											target = SIB
-											type = annex_everything
-										}
-										declare_war_on = {
-											target = CRI
-											type = annex_everything
 										}
 									}
 								}

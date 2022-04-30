@@ -1090,13 +1090,36 @@ focus_tree = {
         add_claim_by = WRF
         }	
         }
-		GOK = {
+		TMS = {
         every_owned_state = {
         add_claim_by = WRF
         }	
         }
-		hidden_effect = {
-		}
+		BUK = {
+			every_owned_state = {
+			add_claim_by = WRF
+			}	
+			}
+		SVT = {
+        every_owned_state = {
+        add_claim_by = WRF
+        }	
+        }
+		KHI = {
+        every_owned_state = {
+        add_claim_by = WRF
+        }	
+        }
+		BAS = {
+        every_owned_state = {
+        add_claim_by = WRF
+        }	
+        }
+		QAZ = {
+			every_owned_state = {
+			add_claim_by = WRF
+			}	
+			}
 		}
 	}
 	focus = {
@@ -1137,9 +1160,7 @@ focus_tree = {
         every_owned_state = {
         add_claim_by = WRF
         }	
-        }				
-		hidden_effect = {
-		}
+        }
 		}
 	}
 	focus = {
@@ -1178,16 +1199,34 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		declare_war_on = {
-    		target = TRK
-    		type = annex_everything
+			declare_war_on = {
+				target = QAZ
+				type = annex_everything
 			}
 			declare_war_on = {
-    		target = GOK
-    		type = annex_everything
+				target = BAS
+				type = annex_everything
+				}
+			declare_war_on = {
+				target = TSV
+				type = annex_everything
+				}
+			declare_war_on = {
+				target = TRK
+				type = annex_everything
 			}
-		hidden_effect = {
-		}
+			declare_war_on = {
+				target = BUK
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = TMS
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = KHI
+				type = annex_everything
+				}
 		}
 	}
 	focus = {
@@ -1243,7 +1282,52 @@ focus_tree = {
         add_claim_by = WRF
         }	
         }
-		SOV = {
+		RUS = {
+        every_owned_state = {
+        add_claim_by = WRF
+        }	
+        }
+		SAV = {
+        every_owned_state = {
+        add_claim_by = WRF
+        }	
+        }
+		REG = {
+        every_owned_state = {
+        add_claim_by = WRF
+        }	
+        }
+		URA = {
+        every_owned_state = {
+        add_claim_by = WRF
+        }	
+        }
+		SIB = {
+        every_owned_state = {
+        add_claim_by = WRF
+        }	
+        }
+		KAR = {
+        every_owned_state = {
+        add_claim_by = WRF
+        }	
+        }
+		SAK = {
+        every_owned_state = {
+        add_claim_by = WRF
+        }	
+        }
+		PRI = {
+        every_owned_state = {
+        add_claim_by = WRF
+        }	
+        }
+		KUB = {
+        every_owned_state = {
+        add_claim_by = WRF
+        }	
+        }
+		DON = {
         every_owned_state = {
         add_claim_by = WRF
         }	
@@ -1253,8 +1337,6 @@ focus_tree = {
         add_claim_by = WRF
         }	
         }
-		hidden_effect = {
-		}
 		}
 	}
 	focus = {
@@ -1269,21 +1351,49 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		declare_war_on = {
-    		target = RUS
-    		type = annex_everything
+			declare_war_on = {
+				target = SAK
+				type = annex_everything
+				}
+			declare_war_on = {
+				target = PRI
+				type = annex_everything
+				}
+			declare_war_on = {
+				target = KAR
+				type = annex_everything
+				}
+			declare_war_on = {
+				target = SIB
+				type = annex_everything
+				}
+			declare_war_on = {
+				target = DON
+				type = annex_everything
+				}
+			declare_war_on = {
+				target = KUB
+				type = annex_everything
+				}
+			declare_war_on = {
+				target = REG
+				type = annex_everything
+				}
+			declare_war_on = {
+				target = RUS
+				type = annex_everything
 			}
 			declare_war_on = {
-    		target = SOV
-    		type = annex_everything
+				target = SAV
+				type = annex_everything
 			}
 			declare_war_on = {
-    		target = FIN
-    		type = annex_everything
+				target = FIN
+				type = annex_everything
 			}
-		hidden_effect = {
-		set_country_flag = Russian_War_WRF
-		}
+			hidden_effect = {
+				set_country_flag = Russian_War_WRF
+			}
 		}
 	}
 	focus = {

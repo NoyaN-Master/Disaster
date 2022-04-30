@@ -129,7 +129,7 @@ units = {
 	
 	division = { # "District Klaipėda"
 		name = "District Klaipėda"
-		location = 3288
+		location = 6314
 		division_template = "Valstybės Sienos Apsaugos Skyrius"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "LIT" } }
 		start_experience_factor = 0.1

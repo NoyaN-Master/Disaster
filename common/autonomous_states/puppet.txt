@@ -26,11 +26,11 @@ autonomy_state = {
 	}
 	
 	ai_subject_wants_higher = {
-		factor = 1.0
+		factor = 0.0
 	}
 	
 	ai_overlord_wants_lower = {
-		factor = 1.0
+		factor = 0.0
 	}
 
 	ai_overlord_wants_garrison = {
@@ -58,10 +58,10 @@ autonomy_state = {
 	}
 
 	can_take_level = {
-		#trigger here
+	always = no 
 	}
 
 	can_lose_level = {
-		#trigger here
+	always = no 
 	}
 }

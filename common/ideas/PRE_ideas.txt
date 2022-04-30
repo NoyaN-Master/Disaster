@@ -1,5 +1,35 @@
 ideas = {
 country = {
+PRE_polish_terrorism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
+			picture = PLN_free_at_fast
+			modifier = {
+			war_support_factor = -0.10
+			political_power_cost = 0.2
+			consumer_goods_factor = 0.06
+			conscription_factor = -0.1
+			}
+		}
+PRE_polish_terrorism_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
+			picture = PLN_free_at_fast
+			modifier = {
+			war_support_factor = -0.08
+			political_power_cost = 0.16
+			consumer_goods_factor = 0.04
+			conscription_factor = -0.08
+			}
+		}
+PRE_RK_idea_disable_recruitment_and_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
+			picture = discontent
+			modifier = {
+			disabled_ideas = 1
+			war_support_factor = -0.10
+			political_power_cost = 0.4
+			conscription_factor = -0.9
+			}
+		}
 PRE_simmering_discontent = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
 			picture = discontent

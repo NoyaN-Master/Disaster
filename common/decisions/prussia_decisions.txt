@@ -1,3 +1,52 @@
+PRE_generalplan_ost_decision = {
+	PRE_generalplan_ost_step_1 = { #integrate the old prussian territories
+		name = PRE_generalplan_ost_step_1_name
+		icon = GFX_decision_generic_police_action
+
+		available = {
+						num_of_civilian_factories_available_for_projects > 1
+			FROM = {
+				is_fully_controlled_by = ROOT
+			}
+		}
+
+		visible = {
+			FROM = {
+				is_owned_by = ROOT
+				NOT = { is_core_of = ROOT }
+				FROM  = { has_dynamic_modifier = {modifier = polish_resistance}}
+			}
+		}
+        modifier = {
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
+			political_power_cost = 0.10
+			civilian_factory_use = 2
+        }
+		cost = 0
+		days_remove = 50
+		cancel_if_not_visible = yes
+
+		state_target = yes
+		targets = { 809 85 86 762 }
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+				NOT = { is_core_of = ROOT }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}
+
+		remove_effect = {
+		FROM = { remove_dynamic_modifier = { modifier = polish_resistance } }
+		}
+	}
+}
+
+
 PRE_ministry_of_propaganda_decision = {
      PRE_propaganda_decision_1 = {
           cost = 75
@@ -480,28 +529,27 @@ PRE_fuck_baltics = {
     has_completed_focus = PRE_generalplan_ost
     }    
     complete_effect = {
-        RUS = {
-            end_puppet = LAT
-            end_puppet = EST
-        }
 		if = {
-		limit = { country_exists = LIT}
+		limit = { country_exists = LIT }
 		declare_war_on = {
         target = LIT
         type = annex_everything
-        }}
+        }
+    }
 		if = {
-		limit = { country_exists = LAT}
+		limit = { country_exists = LAT }
 		declare_war_on = {
         target = LAT
         type = annex_everything
-        }}
+        }
+    }
 		if = {
-		limit = { country_exists = EST}
+		limit = { country_exists = EST }
 		declare_war_on = {
         target = EST
         type = annex_everything
-        }}
+        }
+    }
     }
  ai_will_do = {
         factor = 1000
@@ -632,9 +680,6 @@ PRE_Declare_UKR = {
         has_completed_focus = PRE_generalplan_ost
         }    
         complete_effect = {
-        RUS = {
-            end_puppet = UKR 
-        }
         declare_war_on = {
         target = UKR
         type = annex_everything

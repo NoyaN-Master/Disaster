@@ -279,16 +279,19 @@ AUT_Give_Transly = {
 		HNG = {
 		is_puppet_of = AUT	
 		}
-		AUT = {
-		owns_state = 76
-		owns_state = 83
-		owns_state = 84
+		ROM = {
+			NOT = {
+				controls_state = 76
+				controls_state = 83
+				controls_state = 84
+			}
 		}	      
         }					
         is_good = no                         
         selectable_mission = yes               
                      
         complete_effect = {
+			white_peace = ROM
 		HNG = {
 			transfer_state = 76
 			transfer_state = 83

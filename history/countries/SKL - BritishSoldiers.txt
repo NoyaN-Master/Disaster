@@ -113,3 +113,45 @@ create_country_leader = {
 	gamer_fuller
 	}
 }
+create_field_marshal = {
+	name = "William Birdwood"
+	portrait_path = ""
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 2
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Alfred Reade Godwin-Austen"
+	portrait_path = ""
+	traits = {
+		old_guard
+		bearer_of_artillery
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "B. H. Liddell Hart"
+	portrait_path = ""
+	traits = {
+		old_guard
+		organizer
+		politically_connected
+		panzer_leader
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
