@@ -90,6 +90,9 @@ country_event = { #supreme ruler
         add_stability = -0.2
         add_war_support = -0.15
         add_ideas = RUS_supreme_leader
+		hidden_effect = {
+			set_country_flag = RUSSIAN_STATE
+		}
     }
 }
 country_event = { #reds fight back
@@ -1012,6 +1015,12 @@ country_event = { #when shit gets real
 		name = russia.24.a
 		hidden_effect = {set_country_flag = RUS_CW_SPVENT_TRIGGER}
 		hidden_effect = {
+			if ={ 
+				limit = {
+					has_country_flag = RUSSIAN_STATE
+				}
+				set_cosmetic_tag = RUS_STATE
+			}
 			96 = {
 				remove_core_of = RUS
 				remove_core_of = REG
