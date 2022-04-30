@@ -1,0 +1,56 @@
+add_namespace = rusgen
+
+country_event = { #Genric Intro
+	id = rusgen.1
+	title = rusgen.1.t
+	desc = rusgen.1.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = rusgen.1.a
+        add_stability = 0.1
+		add_war_support = 0.1
+    }
+}
+country_event = { #dig up the caches
+	id = rusgen.2
+	title = rusgen.2.t
+	desc = rusgen.2.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = rusgen.2.a
+    }
+}
+country_event = { #DO OR DIE
+	id = rusgen.3
+	title = rusgen.3.t
+	desc = rusgen.3.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = rusgen.3.a
+    }
+}
+country_event = { #LOSE
+	id = rusgen.4
+	title = rusgen.4.t
+	desc = rusgen.4.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = rusgen.4.a
+    }
+}

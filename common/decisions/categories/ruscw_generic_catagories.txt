@@ -1,0 +1,12 @@
+RUSGEN_resources_category = {
+	icon = GFX_decision_category_generic_political_actions
+
+	priority = 80
+	allowed = {
+		has_country_flag = RUSGEN_DO_OR_DIE_FLAG
+	}
+	visible = {
+		has_country_flag = RUSGEN_DO_OR_DIE_FLAG
+	}
+	visible_when_empty = yes
+}

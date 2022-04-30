@@ -1057,6 +1057,10 @@ country_event = { #when shit gets real
 				remove_core_of = SAV
 			}
 			add_ideas = RUS_CIVIL_WAR
+			URA = {
+				add_ideas = RUS_CIVIL_WAR
+				load_focus_tree = russia_cw_generic
+			}
 			REG = {
 				add_ideas = RUS_CIVIL_WAR
 			}
@@ -1065,15 +1069,27 @@ country_event = { #when shit gets real
 			}
 			SIB = {
 				add_ideas = RUS_CIVIL_WAR
+				load_focus_tree = russia_cw_generic
 			}
 			KAR = {
 				add_ideas = RUS_CIVIL_WAR
+				load_focus_tree = russia_cw_generic
 			}
 			SAK = {
 				add_ideas = RUS_CIVIL_WAR
+				load_focus_tree = russia_cw_generic
 			}
 			PRI = {
 				add_ideas = RUS_CIVIL_WAR
+				load_focus_tree = russia_cw_generic
+			}
+			DON = {
+				add_ideas = RUS_CIVIL_WAR
+				load_focus_tree = russia_cw_generic
+			}
+			KUB = {
+				add_ideas = RUS_CIVIL_WAR
+				load_focus_tree = russia_cw_generic
 			}
 		}
 		hidden_effect = {

@@ -1,0 +1,22 @@
+RUSGEN_resources_category = {
+     no_resources = {              
+            
+    	available = {
+               controls_state = 195
+			   controls_state = 206 
+			   controls_state = 219 
+        }
+        activation = {                         
+            has_country_flag = RUSGEN_DO_OR_DIE_FLAG               
+		}
+        is_good = no                         
+        selectable_mission = no           
+        days_mission_timeout = 360            
+        timeout_effect = {                      
+               add_ideas = RUSGEN_lose_army
+			   hidden_effect = {country_event = rusgen.4}      
+    	}
+        complete_effect = {                    
+        }
+     }
+}

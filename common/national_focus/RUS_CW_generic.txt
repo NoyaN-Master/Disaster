@@ -19,31 +19,282 @@ focus_tree = {
 		icon = ""
 		x = 8
 		y = 0
-		cost = 3
+		cost = 1
 		ai_will_do = {
 			factor = 100
 		}
 		select_effect = {
+			country_event = rusgen.1
 		}
 		completion_reward = {
+			custom_effect_tooltip = RUS_GEN_START_TT
         }
 	}
 	focus = {
-		id = RUS_red_crackdown
+		id = RUS_GEN_hidden_caches
 		icon = ""
+		relative_position_id = RUS_GEN_CW
+			x = 0
+			y = 2
+		cost = 8
+		ai_will_do = {
+			factor = 100
+		}
 		prerequisite = {
 			focus = RUS_GEN_CW
 		}
+		select_effect = {
+			country_event = rusgen.2
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2550
+				producer = RUS
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 325
+				producer = RUS
+			}
+        }
+	}
+	focus = {
+		id = RUS_GEN_civ_plane
+		icon = ""
 		relative_position_id = RUS_GEN_CW
-			x = 0
-			y = 1
-		cost = 4
+			x = 3
+			y = 2
+		cost = 8
 		ai_will_do = {
 			factor = 100
+		}
+		prerequisite = {
+			focus = RUS_GEN_CW
 		}
 		select_effect = {
 		}
 		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = fighter_equipment
+				amount = 120
+				producer = RUS
+			}
+        }
+	}
+	focus = {
+		id = RUS_GEN_civ_cars
+		icon = ""
+		relative_position_id = RUS_GEN_CW
+			x = -3
+			y = 2
+		cost = 8
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = RUS_GEN_CW
+		}
+		select_effect = {
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 400
+				producer = RUS
+			}
+        }
+	}
+	focus = {
+		id = RUS_GEN_masses
+		icon = ""
+		relative_position_id = RUS_GEN_hidden_caches
+			x = 0
+			y = 2
+		cost = 8
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = RUS_GEN_hidden_caches
+			focus = RUS_GEN_civ_cars
+			focus = RUS_GEN_civ_plane
+		}
+		select_effect = {
+		}
+		completion_reward = {
+			add_manpower = 10000
+			add_war_support = 0.25
+        }
+	}
+
+	focus = {
+		id = RUS_GEN_boost_morale
+		icon = ""
+		relative_position_id = RUS_GEN_masses
+			x = -3
+			y = 2
+		cost = 8
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = RUS_GEN_masses
+		}
+		select_effect = {
+		}
+		completion_reward = {
+			add_ideas = RUSGEN_army_morale
+        }
+	}
+	
+	focus = {
+		id = RUS_GEN_spies
+		icon = ""
+		relative_position_id = RUS_GEN_boost_morale
+			x = 0
+			y = 2
+		cost = 8
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = RUS_GEN_boost_morale
+		}
+		select_effect = {
+		}
+		completion_reward = {
+			if {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				create_intelligence_agency = yes
+				else = {
+					add_ideas = RUSGEN_spies
+				}
+			}
+        }
+	}
+	focus = {
+		id = RUS_GEN_spy_plane
+		icon = ""
+		relative_position_id = RUS_GEN_spies
+			x = 0
+			y = 2
+		cost = 8
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = RUS_GEN_spies
+		}
+		select_effect = {
+		}
+		completion_reward = {
+			set_technology = {
+				scout_plane = 1
+			}
+			add_equipment_to_stockpile = {
+				type = scout_plane_equipment
+				amount = 55
+				producer = RUS
+			}
+        }
+	}
+	focus = {
+		id = RUS_GEN_raid_police
+		icon = ""
+		relative_position_id = RUS_GEN_masses
+			x = 3
+			y = 2
+		cost = 8
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = RUS_GEN_masses
+		}
+		select_effect = {
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1250
+				producer = RUS
+			}
+        }
+	}
+	focus = {
+		id = RUS_GEN_makeshift_arms
+		icon = ""
+		relative_position_id = RUS_GEN_raid_police
+			x = 0
+			y = 2
+		cost = 8
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = RUS_GEN_raid_police
+		}
+		select_effect = {
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+				producer = RUS
+			}
+        }
+	}
+	focus = {
+		id = RUS_GEN_guns_for_all
+		icon = ""
+		relative_position_id = RUS_GEN_makeshift_arms
+			x = 0
+			y = 2
+		cost = 8
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = RUS_GEN_makeshift_arms
+		}
+		select_effect = {
+		}
+		completion_reward = {
+			add_manpower = 42500
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 7250
+				producer = RUS
+			}
+        }
+	}
+	focus = {
+		id = RUS_GEN_do_or_die
+		icon = ""
+		relative_position_id = RUS_GEN_spy_plane
+			x = 3
+			y = 2
+		cost = 8
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = RUS_GEN_guns_for_all
+			focus = RUS_GEN_spy_plane
+		}
+		select_effect = {
+		}
+		completion_reward = {
+			add_ideas = RUSGEN_do_or_die
+			hidden_effect = {
+				country_event = RUSGEN.3
+				set_country_flag = RUSGEN_DO_OR_DIE_FLAG
+			}
+
+
         }
 	}
 }    

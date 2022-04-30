@@ -1,0 +1,67 @@
+﻿l_english:
+###FOCUS
+RUS_GEN_CW:0 "The Russian Civil War"
+RUS_GEN_CW_desc:0 "The Russian Civil War"
+
+RUS_GEN_hidden_caches:0 "Hidden Supply Caches"
+RUS_GEN_hidden_caches:0 "Hidden Supply Caches"
+
+RUS_GEN_civ_plane:0 "Confiscate Civilian Aircraft"
+RUS_GEN_civ_plane_desc:0 "Confiscate Civilian Aircraft"
+
+RUS_GEN_civ_cars:0 "Retrofit Civilian Vehicles"
+RUS_GEN_civ_cars_desc:0 "Retrofit Civilian Vehicles"
+
+RUS_GEN_masses:0 "Mobilise the Masses"
+RUS_GEN_masses_desc:0 "Mobilise the Masses"
+
+RUS_GEN_boost_morale:0 "Boost Troup Morale"
+RUS_GEN_boost_morale_desc:0 "Boost Troup Morale"
+
+RUS_GEN_spies:0 "Recruit Spies"
+RUS_GEN_spies_desc:0 "Recruit Spies"
+
+RUS_GEN_spy_plane:0 "Spy Planes"
+RUS_GEN_spy_plane_desc:0 "Spy planes"
+
+RUS_GEN_raid_police:0 "Raid Police Stations"
+RUS_GEN_raid_police_desc:0 "Raid Police Stations"
+
+RUS_GEN_makeshift_arms:0 "Makeshift Arms"
+RUS_GEN_makeshift_arms_desc:0 "Makeshift Arms"
+
+RUS_GEN_guns_for_all:0 "No Man Without a Weapon"
+RUS_GEN_guns_for_all_desc:0 "No Man Without a Weapon"
+
+RUS_GEN_do_or_die:0 "§RDO OR DIE§!"
+RUS_GEN_do_or_die_desc:0 "§RDO OR DIE§!"
+###EVENTS
+rusgen.x.t:0 ""
+rusgen.x.d:0 ""
+rusgen.x.a:0 ""
+
+rusgen.1.t:0 ""
+rusgen.1.d:0 ""
+rusgen.1.a:0 ""
+
+rusgen.2.t:0 ""
+rusgen.2.d:0 ""
+rusgen.2.a:0 ""
+
+rusgen.3.t:0 ""
+rusgen.3.d:0 ""
+rusgen.3.a:0 ""
+
+rusgen.4.t:0 ""
+rusgen.4.d:0 ""
+rusgen.4.a:0 ""
+###IDEAS
+RUSGEN_army_morale:0 "High Army Morale"
+RUSGEN_spies:0 "Spies Behind Enemy Lines"
+RUSGEN_do_or_die:0 "Do or Die"
+RUSGEN_lose_army:0 "Out of Fight"
+###TT AND FLAGS
+RUS_GEN_START_TT:0 "§RWe shall free ourselves from Avalovs chains.§!"
+#descisons
+RUSGEN_resources_category:0 "Lack of resources"
+no_resources:0 "Days Until Resources are Depleted"

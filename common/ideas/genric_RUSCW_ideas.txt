@@ -1,0 +1,42 @@
+ideas = {
+
+country = {
+
+RUSGEN_army_morale = {
+			picture = ""
+			modifier = {
+				army_morale_factor = 0.10
+				army_org_factor = 0.05
+				army_org_regain = 0.05
+			}
+		}
+RUSGEN_spies = {
+			picture = ""
+			modifier = {
+				army_speed_factor = 0.05
+				army_org_factor = 0.05
+				planning_speed = 0.35
+				recon_factor = 0.2
+			}
+		}
+RUSGEN_do_or_die = {
+			picture = ""
+			modifier = {
+				army_defence_factor  = 0.05
+				breakthrough_factor = 0.1
+				army_attack_factor = 0.1
+				offense = 0.05
+				training_time_factor = -0.55
+			}
+		}
+RUSGEN_lose_army = {
+			picture = ""
+			modifier = {
+				army_defence_factor = -0.95
+				army_attack_factor = -0.95
+				breakthrough_factor = -0.95
+				army_org_factor = -0.95
+			}
+		}
+}
+}
