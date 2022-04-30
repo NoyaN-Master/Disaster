@@ -151,15 +151,15 @@ focus_tree = {
 	focus = {
 		id = RUS_GEN_spies
 		icon = ""
-		relative_position_id = RUS_GEN_boost_morale
+		relative_position_id = RUS_GEN_masses
 			x = 0
-			y = 2
+			y = 1
 		cost = 8
 		ai_will_do = {
 			factor = 100
 		}
 		prerequisite = {
-			focus = RUS_GEN_boost_morale
+			focus = RUS_GEN_masses
 		}
 		select_effect = {
 		}
@@ -204,8 +204,8 @@ focus_tree = {
 	focus = {
 		id = RUS_GEN_raid_police
 		icon = ""
-		relative_position_id = RUS_GEN_masses
-			x = 3
+		relative_position_id = RUS_GEN_boost_morale
+			x = 0
 			y = 2
 		cost = 8
 		ai_will_do = {
@@ -227,15 +227,15 @@ focus_tree = {
 	focus = {
 		id = RUS_GEN_makeshift_arms
 		icon = ""
-		relative_position_id = RUS_GEN_raid_police
-			x = 0
+		relative_position_id = RUS_GEN_masses
+			x = 3
 			y = 2
 		cost = 8
 		ai_will_do = {
 			factor = 100
 		}
 		prerequisite = {
-			focus = RUS_GEN_raid_police
+			focus = RUS_GEN_masses
 		}
 		select_effect = {
 		}
@@ -275,7 +275,7 @@ focus_tree = {
 		id = RUS_GEN_do_or_die
 		icon = ""
 		relative_position_id = RUS_GEN_spy_plane
-			x = 3
+			x = 0
 			y = 2
 		cost = 8
 		ai_will_do = {
@@ -283,7 +283,12 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = RUS_GEN_guns_for_all
+		}
+		prerequisite = {
 			focus = RUS_GEN_spy_plane
+		}
+		prerequisite = {
+			focus = RUS_GEN_raid_police
 		}
 		select_effect = {
 		}
