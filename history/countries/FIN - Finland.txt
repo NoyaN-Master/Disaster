@@ -12,11 +12,10 @@ if = {
 set_research_slots = 3
 
 add_ideas = {
-	limited_conscription
-	multi_party_democracy 
+limited_conscription
+multi_party_democracy 
 laisez_faire 
 post_industrialized_society
-
 }
 
 set_technology = {
@@ -92,6 +91,16 @@ set_popularities = {
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
+create_country_leader = {
+	name = "Risto Heikki Ryti"
+	#desc = "FIN_Risto_Heikki_Ryti_desc"
+	picture = "gfx/leaders/FIN/FIN_Risto_Heikki_Ryti.tga"
+	expire = "1965.1.1"
+	ideology = liberal_subideology
+	traits = {
+		#
+	}
+}
 #########military
 create_navy_leader = {
 	name = "Svante Sundman"
@@ -129,7 +138,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Ernst Linder"
-	portrait_path = "gfx/leaders/Portrait_FIN_Ernst_Linder.png"
+	portrait_path = "gfx/leaders/FIN/Portrait_FIN_Ernst_Linder.png"
 	traits = { 
 
 	}
@@ -141,7 +150,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Carl Gustaf Mannerheim"
-	portrait_path = "gfx/leaders/Portrait_FIN_Carl_Gustaf_Mannerheim.png"
+	portrait_path = "gfx/leaders/FIN/Portrait_FIN_Carl_Gustaf_Mannerheim.png"
 	traits = { infantry_leader logistics_wizard defense_doctrine
 
 	}
@@ -153,7 +162,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Paul von Gerich"
-	portrait_path = "gfx/leaders/FIN/Portrait_FIN_Paul_von_Gerich.png
+	portrait_path = "gfx/leaders/FIN/Portrait_FIN_Paul_von_Gerich.png"
 	traits = { 
 
 	}
@@ -175,14 +184,5 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 2
 }
-create_country_leader = {
-	name = "Risto Heikki Ryti"
-	desc = "FIN_Risto_Heikki_Ryti_desc"
-	picture = "gfx/leaders/FIN/FIN_Risto_Heikki_Ryti.tga"
-	expire = "1965.1.1"
-	ideology = liberal_subideology
-	traits = {
-		#
-	}
-}
+
 

@@ -8,6 +8,7 @@ PRE_generalplan_ost_decision = {
 	visible = {
 		has_completed_focus = PRE_generalplan_ost_2
 	}
+	visible_when_empty = yes
 }
 
 
