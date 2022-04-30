@@ -12,11 +12,10 @@ if = {
 set_research_slots = 3
 
 add_ideas = {
-	limited_conscription
-	multi_party_democracy 
+limited_conscription
+multi_party_democracy 
 laisez_faire 
 post_industrialized_society
-
 }
 
 set_technology = {
@@ -91,6 +90,16 @@ set_popularities = {
 	revolutionary_nationalist = 0
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
+}
+create_country_leader = {
+	name = "Risto Heikki Ryti"
+	#desc = "FIN_Risto_Heikki_Ryti_desc"
+	picture = "gfx/leaders/FIN/FIN_Risto_Heikki_Ryti.tga"
+	expire = "1965.1.1"
+	ideology = liberal_subideology
+	traits = {
+		#
+	}
 }
 #########military
 create_navy_leader = {
@@ -175,14 +184,5 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 2
 }
-create_country_leader = {
-	name = "Risto Heikki Ryti"
-	desc = "FIN_Risto_Heikki_Ryti_desc"
-	picture = "gfx/leaders/FIN/FIN_Risto_Heikki_Ryti.tga"
-	expire = "1965.1.1"
-	ideology = liberal_subideology
-	traits = {
-		#
-	}
-}
+
 
