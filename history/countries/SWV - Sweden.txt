@@ -66,7 +66,65 @@ set_popularities = {
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
+#########military
+create_navy_leader = {
+	name = "Aage Helgesen Vedel"
+	portrait_path = "gfx/leaders/DAN/Portrait_Denmark_Aage_Helgesen_Vedel.png"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+create_corps_commander = {
+	name = "Christian von Schalburg"
+	portrait_path = "gfx/leaders/DAN/Portrait_Denmark_Christian_von_Schalburg.png"
+	traits = { 
 
+	}
+	skill = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Erik Leschly"
+	portrait_path = "gfx/leaders/DAN/Portrait_Denmark_Erik_Leschly.png"
+	traits = { 
+
+	}
+	skill = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Frode Lund Hvalkof"
+	portrait_path = "gfx/leaders/DAN/Portrait_Denmark_Frode_Lund_Hvalkof.png"
+	traits = { 
+
+	}
+	skill = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Hans Rolsted"
+	portrait_path = "gfx/leaders/DAN/Portrait_Denmark_Hans_Rolsted.png"
+	traits = { 
+
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
 create_country_leader = {
 	name = "Gustav V Adolf "
 	#desc = "SWV_Gustav_Adolf_desc"

@@ -92,7 +92,89 @@ set_popularities = {
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
+#########military
+create_navy_leader = {
+	name = "Svante Sundman"
+	portrait_path = "gfx/leaders/FIN/Portrait_FIN_Svante_Sundman.png"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+create_corps_commander = {
+	name = "Aaro Pajari"
+	portrait_path = "gfx/leaders/FIN/Portrait_FIN_Aaro_Pajari.png"
+	traits = { 
 
+	}
+	skill = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Aksel Airo"
+	portrait_path = "gfx/leaders/FIN/Portrait_FIN_Aksel_Airo.png"
+	traits = { 
+
+	}
+	skill = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Ernst Linder"
+	portrait_path = "gfx/leaders/Portrait_FIN_Ernst_Linder.png"
+	traits = { 
+
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Carl Gustaf Mannerheim"
+	portrait_path = "gfx/leaders/Portrait_FIN_Carl_Gustaf_Mannerheim.png"
+	traits = { infantry_leader logistics_wizard defense_doctrine
+
+	}
+	skill = 3
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Paul von Gerich"
+	portrait_path = "gfx/leaders/FIN/Portrait_FIN_Paul_von_Gerich.png
+	traits = { 
+
+	}
+	skill = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Hugo Osterman"
+	portrait_path = "gfx/leaders/FIN/Portrait_FIN_Hugo_Osterman.png"
+	traits = { 
+
+	}
+	skill = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
 create_country_leader = {
 	name = "Risto Heikki Ryti"
 	desc = "FIN_Risto_Heikki_Ryti_desc"
