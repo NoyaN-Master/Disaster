@@ -552,6 +552,7 @@ focus_tree = {
 		prerequisite = { focus = BAY_germanic_family_model }
 		prerequisite = { focus = BAY_union_of_germanic_races }
 		completion_reward = {
+			add_stability = -0.1
 			#event here
 		}
 	}
