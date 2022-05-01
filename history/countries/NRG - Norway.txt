@@ -78,8 +78,8 @@ create_country_leader = {
 }
 #########military
 create_navy_leader = {
-	name = "Aage Helgesen Vedel"
-	portrait_path = "gfx/leaders/DAN/Portrait_Denmark_Aage_Helgesen_Vedel.png"
+	name = "Carsten Tank Nielsen"
+	portrait_path = "gfx/leaders/NRG/Portrait_Norway_Carsten_Tank_Nielsen.png"
 	traits = {  }
 	skill = 2
 	attack_skill = 2
@@ -87,9 +87,9 @@ create_navy_leader = {
 	maneuvering_skill = 3
 	coordination_skill = 3
 }
-create_corps_commander = {
-	name = "Christian von Schalburg"
-	portrait_path = "gfx/leaders/DAN/Portrait_Denmark_Christian_von_Schalburg.png"
+create_field_marshal = {
+	name = "Haakon VII"
+	portrait_path = "gfx/leaders/NRG/Portrait_Norway_Haakon_VII.png"
 	traits = { 
 
 	}
@@ -100,8 +100,8 @@ create_corps_commander = {
 	logistics_skill = 2
 }
 create_corps_commander = {
-	name = "Erik Leschly"
-	portrait_path = "gfx/leaders/DAN/Portrait_Denmark_Erik_Leschly.png"
+	name = "Birger Ljungberg"
+	portrait_path = "gfx/leaders/NRG/Portrait_Norway_Birger_Ljungberg.png"
 	traits = { 
 
 	}
@@ -112,8 +112,8 @@ create_corps_commander = {
 	logistics_skill = 2
 }
 create_corps_commander = {
-	name = "Frode Lund Hvalkof"
-	portrait_path = "gfx/leaders/DAN/Portrait_Denmark_Frode_Lund_Hvalkof.png"
+	name = "Carl Gustav Fleischer"
+	portrait_path = "gfx/leaders/NRG/Portrait_Norway_Carl_Gustav_Fleischer.png"
 	traits = { 
 
 	}
@@ -124,8 +124,8 @@ create_corps_commander = {
 	logistics_skill = 2
 }
 create_corps_commander = {
-	name = "Hans Rolsted"
-	portrait_path = "gfx/leaders/DAN/Portrait_Denmark_Hans_Rolsted.png"
+	name = "William Steffens"
+	portrait_path = "gfx/leaders/NRG/Portrait_Norway_William_Steffens.png"
 	traits = { 
 
 	}
@@ -138,7 +138,7 @@ create_corps_commander = {
 create_country_leader = {
 	name = "Haakon VII"
 	#desc = "NRG_Haakon_desc"
-	picture = "NRG_Haakon.tga"
+	picture = "Portrait_Norway_Haakon_VII.png"
 	expire = "2020.1.1"
 	ideology = conservative_subideology
 	traits = {
