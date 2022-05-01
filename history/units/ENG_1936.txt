@@ -86,7 +86,7 @@ units = {
 		location = 3273
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	division= {	# "52nd 'Lowland' Infantry Division"
@@ -97,7 +97,7 @@ units = {
 		location = 9392
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	#Northern Command
@@ -106,7 +106,7 @@ units = {
 		location = 11297
 		division_template = "Cavalry Brigade"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	division= {	# "5th Infantry Division"
@@ -126,7 +126,7 @@ units = {
 		location = 9397
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	division= {	# "49th 'West Riding' Infantry Division"
@@ -137,7 +137,7 @@ units = {
 		location = 11218
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	#Eastern Command
@@ -148,7 +148,7 @@ units = {
 		}
 		location = 11253
 		division_template = "Infantry Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.5
 	}
 	division= {	# "44th 'Home Counties' Infantry Division"
 		division_name = {
@@ -178,7 +178,7 @@ units = {
 		location = 407
 		division_template = "Cavalry Brigade"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	division= {	# "42nd 'East Lancashire' Infantry Division"
@@ -400,7 +400,6 @@ units = {
 		start_equipment_factor = 0.15
 
 	}
-
 }
 
 
