@@ -597,7 +597,7 @@ focus_tree = {
 		prerequisite = { focus = BAY_deutsche_sciences }
 		prerequisite = { focus = BAY_empower_high_command }
 		completion_reward = {
-
+			  
 		}
 	}
 
@@ -619,7 +619,297 @@ focus_tree = {
 
 
 
+	### DIPLO ###
 
+
+	focus = {
+		id = BAY_rohm_absorb_south
+		icon = GFX_goal_BAY
+		x = 13
+		y = 2
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BAY_ready_to_diplo_tt
+				has_completed_focus = BAY_the_bavarian_eagle_soars
+			}
+		}
+		cost = 3
+		completion_reward = {
+			WRT = {
+				country_event = { id = bayrohmdiplo.1 days = 1}
+			}
+			BDN = {
+				country_event = { id = bayrohmdiplo.1 days = 1}
+			}
+		}
+	}
+
+	focus = {
+		id = BAY_rohm_attack_north
+		icon = GFX_goal_BAY
+		x = 0
+		y = 1
+		relative_position_id = BAY_rohm_absorb_south
+		cost = 2
+		prerequisite = {
+			focus = BAY_rohm_absorb_south
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = NGU
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = PRE
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SAX
+				type = annex_everything
+			}
+		}
+		
+	}
+
+	focus = {
+		id = BAY_rohm_attack_rhine
+		icon = GFX_goal_BAY
+		x = -1
+		y = 2
+		relative_position_id = BAY_rohm_absorb_south
+		cost = 3
+		prerequisite = {
+			focus = BAY_rohm_attack_north
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = RHN
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = FRE
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = BAY_rohm_attack_poles
+		icon = GFX_goal_BAY
+		x = 1
+		y = 2
+		relative_position_id = BAY_rohm_absorb_south
+		cost = 3
+		prerequisite = {
+			focus = BAY_rohm_attack_north
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = PLN
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = BAY_rohm_attack_danube
+		icon = GFX_goal_BAY
+		x = 0
+		y = 3
+		relative_position_id = BAY_rohm_absorb_south
+		cost = 3
+		prerequisite = {
+			focus = BAY_rohm_attack_poles
+		}
+		prerequisite = {
+			focus = BAY_rohm_attack_rhine
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = AUT
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = CEZ
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SLK
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = HNG
+				type = annex_everything
+			}
+		}
+		
+	}
+
+	focus = {
+		id = BAY_rohm_secure_resources
+		icon = GFX_goal_BAY
+		x = -1
+		y = 4
+		relative_position_id = BAY_rohm_absorb_south
+		cost = 3
+		prerequisite = {
+			focus = BAY_rohm_attack_danube
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = ROM
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = UKR
+				type = annex_everything
+			}
+		}
+		
+	}
+
+	focus = {
+		id = BAY_rohm_attack_baltics
+		icon = GFX_goal_BAY
+		x = 1
+		y = 4
+		relative_position_id = BAY_rohm_absorb_south
+		cost = 3
+		prerequisite = {
+			focus = BAY_rohm_attack_danube
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = LIT
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = LAT
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = EST
+				type = annex_everything
+			}
+		}
+		
+	}
+
+	focus = {
+		id = BAY_rohm_attack_russia
+		icon = GFX_goal_BAY
+		x = 0
+		y = 5
+		relative_position_id = BAY_rohm_absorb_south
+		cost = 3
+		prerequisite = {
+			focus = BAY_rohm_secure_resources
+		}
+		prerequisite = {
+			focus = BAY_rohm_attack_baltics
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = RUS
+				type = annex_everything
+			}
+			#i have no fucking clue how this will work with the cw, will just have to wait for now
+		}
+		
+	}
+
+	focus = {
+		id = BAY_rohm_attack_benelux
+		icon = GFX_goal_BAY
+		x = -3
+		y = 4
+		relative_position_id = BAY_rohm_absorb_south
+		cost = 3
+		prerequisite = {
+			focus = BAY_rohm_attack_danube
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = BTV
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = BLI
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = LUX
+				type = annex_everything
+			}
+		}
+		
+	}
+
+	focus = {
+		id = BAY_rohm_attack_france
+		icon = GFX_goal_BAY
+		x = -3
+		y = 5
+		relative_position_id = BAY_rohm_absorb_south
+		cost = 3
+		prerequisite = {
+			focus = BAY_rohm_attack_benelux
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = FRE
+				type = annex_everything
+			}
+		}
+		
+	}
+
+	focus = {
+		id = BAY_rohm_attack_denmark
+		icon = GFX_goal_BAY
+		x = 3
+		y = 4
+		relative_position_id = BAY_rohm_absorb_south
+		cost = 3
+		prerequisite = {
+			focus = BAY_rohm_attack_danube
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = DAN
+				type = annex_everything
+			}
+		}
+		
+	}
+
+	focus = {
+		id = BAY_rohm_attack_scandinavia
+		icon = GFX_goal_BAY
+		x = 3
+		y = 5
+		relative_position_id = BAY_rohm_absorb_south
+		cost = 3
+		prerequisite = {
+			focus = BAY_rohm_attack_danube
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = NRG
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SWV
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = FIN
+				type = annex_everything
+			}
+		}
+		
+	}
+	
 
 
 }
