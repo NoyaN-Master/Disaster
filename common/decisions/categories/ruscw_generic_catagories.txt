@@ -10,3 +10,15 @@ RUSGEN_resources_category = {
 	}
 	visible_when_empty = yes
 }
+RUSGEN_cw_catagory = {
+	icon = GFX_decision_category_generic_political_actions
+
+	priority = 70
+	allowed = {
+		has_country_flag = RUSGEN_CW_DECISION_FLAG
+	}
+	visible = {
+		has_country_flag = RUSGEN_CW_DECISION_FLAG
+	}
+	visible_when_empty = yes
+}

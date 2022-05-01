@@ -28,6 +28,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = RUS_GEN_START_TT
+			hidden_effect = {
+				set_country_flag = RUSGEN_CW_DECISION_FLAG
+			}
         }
 	}
 	focus = {
@@ -47,6 +50,9 @@ focus_tree = {
 			country_event = rusgen.2
 		}
 		completion_reward = {
+			hidden_effect = {
+				set_country_flag = RUSGEN_CW_DECISION_CACHES_FLAG
+			}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 2550
@@ -75,6 +81,9 @@ focus_tree = {
 		select_effect = {
 		}
 		completion_reward = {
+			hidden_effect = {
+				set_country_flag = RUSGEN_CW_DECISION_PLANES_FLAG
+			}
 			add_equipment_to_stockpile = {
 				type = fighter_equipment
 				amount = 120

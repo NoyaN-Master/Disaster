@@ -20,3 +20,35 @@ RUSGEN_resources_category = {
         }
      }
 }
+RUSGEN_cw_catagory = {
+    RUSGEN_supply_caches = {
+        fire_only_once = no 
+        days_re_enable = 90
+        visible = {
+            has_country_flag = RUSGEN_CW_DECISION_CACHES_FLAG
+        }
+        cost = 75
+        available = {
+            always = yes
+        }
+        complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = RUS
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 100
+				producer = RUS
+			}
+        }  
+        days_remove = 30
+        remove_effect = {
+               add_manpower = 500
+        }
+    }
+
+
+
+}
