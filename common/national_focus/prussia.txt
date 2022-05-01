@@ -324,6 +324,10 @@ focus_tree = {
 	85 = {add_resistance = 30}
 	86 = {add_resistance = 30}
 	762 = {add_resistance = 30}}
+	unlock_decision_tooltip = PRE_generalplan_ost_step_1
+	unlock_decision_tooltip = PRE_generalplan_ost_take_territory_step_1
+	unlock_decision_tooltip = PRE_generalplan_ost_step_2
+	unlock_decision_tooltip = PRE_generalplan_ost_step_2_finish
 	}
 	}
 
@@ -641,7 +645,7 @@ focus_tree = {
 		cost = 6		
 		prerequisite = { focus = PRE_undermine_big_business }	
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 			limit = {
 				free_building_slots = {
 					building = industrial_complex
@@ -656,7 +660,7 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-			random_owned_state = {
+			random_core_state = {
 			limit = {
 				free_building_slots = {
 					building = industrial_complex
@@ -1404,7 +1408,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_work_with_industrialists}
 		
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 			limit = {
 				free_building_slots = {
 					building = industrial_complex
@@ -1419,7 +1423,7 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-			random_owned_state = {
+			random_core_state = {
 			limit = {
 				free_building_slots = {
 					building = arms_factory
@@ -1434,7 +1438,7 @@ focus_tree = {
 				instant_build = yes
 			}
 		}	
-			random_owned_state = {
+			random_core_state = {
 			limit = {
 				free_building_slots = {
 					building = industrial_complex
@@ -1850,7 +1854,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_political_power = -100
-			random_owned_state = {
+			random_core_state = {
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = industrial_complex
@@ -1858,7 +1862,7 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-			random_owned_state = {
+			random_core_state = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
@@ -1878,7 +1882,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_legacy_of_1848}
 		
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
@@ -2438,7 +2442,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_invest_in_the_estates}
 		prerequisite = { focus = PRE_control_farmers_union}		
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 			limit = {
 				free_building_slots = {
 					building = industrial_complex
@@ -2453,7 +2457,7 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-			random_owned_state = {
+			random_core_state = {
 			limit = {
 				free_building_slots = {
 					building = industrial_complex
@@ -2725,7 +2729,7 @@ focus_tree = {
 							remove_idea = PRE_guderian_doctrine
 							add_idea = PRE_guderian_doctrine2
 						}
-			random_owned_state = {
+			random_core_state = {
 			limit = {
 				free_building_slots = {
 					building = arms_factory
