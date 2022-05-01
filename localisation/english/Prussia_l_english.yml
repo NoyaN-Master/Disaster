@@ -33,9 +33,15 @@ PRE_puppet_poland_desc:0""
 PRE_reapproach_the_poles:0"Finalize the German- Polish border"
 PRE_reapproach_the_poles_desc:0""
 PRE_reapproach_the_poles_tooltip:0"§GThe Population Exchange and finalization of borders will take place by event.§!"
-
 PRE_generalplan_ost:0"Solidify the Ostsiedlung"
 PRE_generalplan_ost_desc:0 ""
+PRE_reinforce_generaal_gouvernment:0"Reinforce Generaal gouvernment"
+PRE_reinforce_generaal_gouvernment_desc:0""
+PRE_generalplan_ost_2:0"Start Generalplan Ost"
+PRE_generalplan_ost_2_desc:0 ""
+
+
+
 
 PRE_polish_terrorism:0"Polish Separatism"
 PRE_polish_terrorism_desc:0""
@@ -44,14 +50,16 @@ PRE_polish_terrorism_2_desc:0""
 PRE_generalplan_ost_2_tooltip:0"§RTaking this focus will spawn massive unrest in our Polish provinces, but we will be able to fight Polish terrorists§!"
 
 PRE_generalplan_ost_decision:0"Generalplan Ost"
-PRE_generalplan_ost_decision_desc:0"Generalplan Ost"
+PRE_generalplan_ost_decision_desc:0"Ever since the Northern Crusades, German colonisers planned their imperialist expansions towards the east. Expanding at the expense of the native cultures of the region. That was also the plan for the German Empire in WW1, hoping to germanise the regions gained after their theoretical victory. Even though the Empire failed, it shouldn't mean we can't do it now. Considering our conquests against the adversaries in the east, now is the perfect time to put this Germanic dream into action. Accomplishment of such goals would be hard for us as the native poles will fight back at every opportunity but with enough determination and allocation of resources, we will triumph over the uncivilised serfs!"
 PRE_generalplan_ost_step_1_name:0"Fight Polish Terrorists in [From.GetName]"
+PRE_generalplan_ost_step_2_name:0"Germanization efforts in [From.GetName]"
+PRE_generalplan_ost_step_2_finish_name:0"Finish Germanization of [From.GetName]"
+PRE_generalplan_ost_take_territory_step_1:0"Initiate phase two of Generalplan Ost"
+PRE_generalplan_ost_take_territory_step_1_desc:0"§RBefore we can start phase two of Generalplan Ost we need to integrate our pre world war 1 borders.§!"
+PRE_generalplan_ost_take_territory_step_2:0"Initiate phase three of Generalplan Ost"
+PRE_generalplan_ost_take_territory_step_2_desc:0"§RBefore we can start phase three of Generalplan Ost we need to integrate the designated provinces of phase two.§!"
 
 
-PRE_reinforce_generaal_gouvernment:0"Reinforce Generaal gouvernment"
-PRE_reinforce_generaal_gouvernment_desc:0""
-PRE_generalplan_ost_2:0"Start Generalplan Ost"
-PRE_generalplan_ost_2_desc:0 ""
 polish_resistance:0"Polish Resistance"
 
 
