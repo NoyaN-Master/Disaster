@@ -212,7 +212,54 @@ focus_tree = {
 		relative_position_id = PRE_stir_up_mecklenburg
 		cost = 5		
 		prerequisite = { focus = PRE_saxony }	
+		will_lead_to_war_with = BAY				
+		will_lead_to_war_with = WRT		
+		will_lead_to_war_with = BDN		
+		will_lead_to_war_with = AUT		
+		available = {
+		has_war = no
+			OR = {
+			is_neighbor_of = BAY
+			is_neighbor_of = WRT
+			is_neighbor_of = BDN
+			is_neighbor_of = AUT
+			}
+			OR = {
+			country_exists = BAY
+			country_exists = WRT
+			country_exists = BDN
+			country_exists = AUT
+			}
+		}		
 		completion_reward = {
+		if = {
+		limit = { country_exists = BAY }
+		declare_war_on = {
+        target = BAY
+        type = annex_everything
+        }
+    }
+		if = {
+		limit = { country_exists = WRT }
+		declare_war_on = {
+        target = WRT
+        type = annex_everything
+        }
+    }
+		if = {
+		limit = { country_exists = BDN }
+		declare_war_on = {
+        target = BDN
+        type = annex_everything
+        }
+    }
+		if = {
+		limit = { country_exists = AUT }
+		declare_war_on = {
+        target = AUT
+        type = annex_everything
+        }
+    }
 		}
 	}
 	focus = {
@@ -448,6 +495,9 @@ focus_tree = {
 		NOT = {	country_exists = LAT}
 		NOT = {	country_exists = EST}		
 		}
+		will_lead_to_war_with = LIT	
+		will_lead_to_war_with = LAT	
+		will_lead_to_war_with = EST	
 		available = {
 		RUS = {has_country_flag = RUS_CW_SPVENT_TRIGGER}
 		has_war = no

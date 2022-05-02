@@ -1,5 +1,6 @@
 GER_unification_decisions = {
 	 GER_integrate_AUT_generals = {
+	 icon = GFX_decision_category_military_operation
 	 cost = 100
 		visible = {
 		NOT = {tag = AUT}
@@ -22,6 +23,7 @@ GER_unification_decisions = {
 		}	 
 	 }
 	 GER_integrate_PRE_generals = {
+	 icon = GFX_decision_category_military_operation
 	 cost = 100
 		visible = {
 		NOT = {tag = PRE}
@@ -44,6 +46,7 @@ GER_unification_decisions = {
 		}	 
 	 }
 	 GER_integrate_NGU_generals = {
+	 icon = GFX_decision_category_military_operation
 	 cost = 100
 	 	visible = {
 		NOT = {tag = NGU}
@@ -66,6 +69,7 @@ GER_unification_decisions = {
 		}	 
 	 }
 	 GER_integrate_BAY_generals = {
+	 icon = GFX_decision_category_military_operation
 		cost = 100
 	 	 	visible = {
 		NOT = {tag = BAY}
@@ -86,6 +90,7 @@ GER_unification_decisions = {
 		}	 
 	 }
 	 GER_for_germany_liberal = {
+	 icon = GFX_decision_generic_nationalism
 		visible = { has_government = liberal
                     NOT = { has_country_flag = PRE_formed_greater_germany}          
           }
@@ -113,6 +118,7 @@ GER_unification_decisions = {
 		}	 
 	 }
 	 GER_for_germany_authoritarian_democrat = {
+	 	 icon = GFX_decision_generic_nationalism
 		visible = { has_government = authoritarian_democrat
           NOT = { has_country_flag = PRE_formed_greater_germany}
           }
@@ -140,6 +146,7 @@ GER_unification_decisions = {
 		}		  
 	 }
  	 GER_for_germany_autocratic = {
+	 	 icon = GFX_decision_generic_nationalism
 		visible = { has_government = autocratic
           NOT = { has_country_flag = PRE_formed_greater_germany}
           }
@@ -166,6 +173,7 @@ GER_unification_decisions = {
 		}	 
 	 }
  	 GER_for_germany_ultranationalist= {
+	 	 icon = GFX_decision_generic_nationalism
 		visible = { has_government = ultranationalist
           NOT = { has_country_flag = PRE_formed_greater_germany}
           }
@@ -193,6 +201,7 @@ GER_unification_decisions = {
 		}	 
 	 }
  	 GER_for_germany_revolutionary_nationalist= {
+	 	 icon = GFX_decision_generic_nationalism
 		visible = { has_government = revolutionary_nationalist
           NOT = { has_country_flag = PRE_formed_greater_germany}
 		  NOT = { original_tag = NGU }
@@ -222,6 +231,7 @@ GER_unification_decisions = {
 	 }
 
 	 GER_for_germany_hitler_unification = {
+	 	 icon = GFX_decision_generic_nationalism
 		visible = {
 			 original_tag = NGU
 			 has_government = revolutionary_nationalist
@@ -252,6 +262,7 @@ GER_unification_decisions = {
 	 }
 
 	 GER_for_germany_strasser_unification = {
+	 	 icon = GFX_decision_generic_nationalism
 		visible = {
 			 original_tag = NGU
 			 has_government = unisocialist

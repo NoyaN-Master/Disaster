@@ -1,6 +1,12 @@
 spriteTypes = {	
-# state icons
-
+	###################
+	## Disaster ##
+	#### dynamic modifiers ####
+	###################
+	spriteType = {
+		name = "GFX_modifiers_austrian_defiance"
+		texturefile = "gfx/interface/state_modifiers/modifiers_austrian_defiance.dds"
+	}
 	spriteType = {
 		name = "GFX_modifiers_polish_terrorism"
 		texturefile = "gfx/interface/state_modifiers/modifiers_polish_terrorism.dds"

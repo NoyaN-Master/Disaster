@@ -297,3 +297,55 @@ country_event = { #splitting up generaal gouvernment
 		} 
 	}
 }
+country_event = { # fate of austria
+	id = preo.6
+	title = preo.6.t
+	desc = preo.6.d
+	fire_only_once = yes
+	trigger = {
+	tag = PRE
+	NOT = {AUT = {exists = yes}}
+	owns_state = 813
+	owns_state = 881
+	owns_state = 152
+	}
+	option = {
+		name = preo.6.a     # puppet state of austria
+		ai_chance = { factor = 1}
+		set_temp_variable = { tag_to_release = AUT }
+		every_owned_state = {
+			limit = {
+				is_core_of = AUT
+				is_claim_or_core_of_ROOT = no
+			}
+			var:tag_to_release = { transfer_state = PREV }
+		}
+		puppet_released_tag = yes
+		AUT = {
+		set_politics = {
+			ruling_party = ultranationalist
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = ultranationalist
+			popularity = 0.10
+		}		
+		}
+		complete_national_focus = PRE_little_german_solution
+	}
+	option = {
+		name = preo.6.b     # annexation of austria
+		ai_chance = { factor = 1}
+
+		complete_national_focus = PRE_anschluss
+		every_owned_state = {
+			limit = {
+				is_core_of = AUT
+				is_claim_or_core_of_ROOT = no
+			}
+			add_dynamic_modifier = { modifier = austrian_defiance }
+		}		
+#		add_ideas = PRE_polish_terrorism
+
+	}
+}

@@ -1,6 +1,5 @@
 division_template = {
 	name = "Infantry Division"
-	division_names_group = PRE_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -21,7 +20,6 @@ division_template = {
 }
 division_template = {
 	name = "Panzer-Division"
-	division_names_group = GER_TNK_01
 
 	regiments = {
 		light_armor = { x = 0 y = 0 }
@@ -39,7 +37,6 @@ division_template = {
 }
 division_template = {
 	name = "Motorisierte Division"
-	division_names_group = GER_MOT_02
 
 	regiments = {
 		motorized = { x = 0 y = 0 }
@@ -54,7 +51,6 @@ division_template = {
 
 division_template = {
 	name = "Mountain Division"
-	division_names_group = PRE_MNT_01
 
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
@@ -70,7 +66,6 @@ division_template = {
 }
 division_template = {
 	name = "Cavalry Division" 
-	division_names_group = PRE_CAV_01
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }

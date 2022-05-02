@@ -1,3 +1,9 @@
+austrian_defiance = {
+	icon = GFX_modifiers_austrian_defiance
+	resistance_target = 0.1
+	resistance_growth = 0.2
+	compliance_growth = -0.50
+}
 polish_resistance = {
 	icon = GFX_modifiers_polish_terrorism
 	resistance_target = 0.3

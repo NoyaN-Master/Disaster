@@ -24,6 +24,11 @@ preo.5.t:0 "Fate of the Generaalgouvernment"
 preo.5.d:0 ""
 preo.5.a:0 ""
 
+preo.6.t:0 "Fate of Austria"
+preo.6.d:0 ""
+preo.6.a:0 "Establish an Austrian puppet state"
+preo.6.b:0 "Heims in Reich"
+
 ####### new foreign policy loc
 PRE_stir_up_mecklenburg:0"Stir Up Mecklenburg"
 PRE_stir_up_mecklenburg_desc:0"The Socialist breakaway is a betrayal of everything German. they betray our nation, betray our people and then dare claim legitimacy as the heirs of the German state. They are a threat that will be put down. However, simply declaring war on them would put us in a position as to where we look like the aggressors, rather than the liberators of the German People. Perhaps we can lure the NGPU into an attack and make them out to be the aggressors that they truly are?"
@@ -74,6 +79,10 @@ PRE_germanize_baltics:0"Germanize the Baltics"
 PRE_germanize_baltics_desc:0""
 PRE_germanize_baltics_tooltip:"§GA new Baltic state will be formed led by Von Goltz, also decisions will be become available to help Germanize the Baltics§!"
 
+PRE_germanize_baltics_decision:0"Germanization of the Baltics"
+PRE_germanize_baltics_decision_desc:0""
+PRE_baltic_migration_name:0"Germanization of [From.GetName]"
+
 
 
 
@@ -92,6 +101,8 @@ PRE_austro_german_custom_union:0"Austro-German Customs Union"
 PRE_austro_german_custom_union_desc:0""
 PRE_anschluss:0"Anschluss"
 PRE_anschluss_desc:0""
+
+austrian_defiance:0"Austrian Defiance"
 PRE_continue_kulturkampf:0"Continue the Kulturkampf"
 PRE_continue_kulturkampf_desc:0""
 PRE_sud_tirol:0"Press Sud-Tirol Claims"

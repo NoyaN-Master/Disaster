@@ -1,3 +1,78 @@
+PRE_germanize_baltics_decision = {
+	PRE_baltic_migration = { #integrate estonia and latvia for goltz
+		name = PRE_baltic_migration_name
+		icon = GFX_decision_generic_police_action
+
+		available = {
+		num_of_civilian_factories_available_for_projects > 5
+						has_manpower > 1000
+			FROM = {
+				is_fully_controlled_by = BLT
+			}
+		}
+
+		visible = {
+			FROM = {
+				is_owned_by = BLT
+				NOT = { is_core_of = BLT }
+			}
+		}
+        modifier = {
+			civilian_factory_use = 6
+			weekly_manpower = -4000
+        }
+		cost = 0
+		days_remove = 50
+		cancel_if_not_visible = yes
+
+		state_target = yes
+		targets = { 190 13 191 }
+		target_trigger = {
+			FROM = {
+				is_owned_by = BLT
+				NOT = { is_core_of = BLT }
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		remove_effect = {
+		FROM = {add_manpower = -300000}
+			random_core_state = {
+			limit = {
+			is_core_of = ROOT
+			state_population_k > 500
+			}
+			add_manpower = -100000
+		}
+			random_core_state = {
+			limit = {
+			is_core_of = ROOT
+			state_population_k > 500
+			}
+			add_manpower = -100000
+		}
+			random_core_state = {
+			limit = {
+			is_core_of = ROOT
+			state_population_k > 500
+			}
+			add_manpower = -100000
+		}	
+			random_core_state = {
+			limit = {
+			is_core_of = ROOT
+			state_population_k > 500
+			}
+			add_manpower = -100000
+		}
+		FROM = {add_manpower = 400000}
+		add_state_core = FROM
+		LAT = {remove_state_core = FROM}	
+		EST = {remove_state_core = FROM}		
+		}
+	}
+}
 PRE_generalplan_ost_decision = {
 	PRE_generalplan_ost_step_1 = { #integrate the old prussian territories
 		name = PRE_generalplan_ost_step_1_name
@@ -62,11 +137,15 @@ PRE_generalplan_ost_decision = {
 		  98 = {transfer_state_to = PRE}
 		  87 = {transfer_state_to = PRE}
 		  hidden_effect = {
+		PLN = {remove_state_core = 809}
+		PLN = {remove_state_core = 85}
+		PLN = {remove_state_core = 86}
+		PLN = {remove_state_core = 762}	
 		97 = {add_dynamic_modifier = { modifier = polish_resistance }}
 		98 = {add_dynamic_modifier = { modifier = polish_resistance }}
-		87 = {add_dynamic_modifier = { modifier = polish_resistance }} 
+		87 = {add_dynamic_modifier = { modifier = polish_resistance }} 	
 		  }
-		  set_country_flag = PRE_taken_territory_1
+		  set_country_flag = PRE_taken_territory_1	  
 		swap_ideas = {
 			add_idea = PRE_polish_terrorism_3
 			remove_idea = PRE_polish_terrorism_2
@@ -106,7 +185,7 @@ PRE_generalplan_ost_decision = {
         }
 		cost = 0
 		days_remove = 20
-		days_re_enable = 5 
+		days_re_enable = 1 
 		cancel_if_not_visible = yes
 
 		state_target = yes
@@ -132,7 +211,7 @@ PRE_generalplan_ost_step_2_finish = { #migrate germans to these lands
 		num_of_civilian_factories_available_for_projects > 4
 			FROM = {
 				is_fully_controlled_by = ROOT
-				state_population_k < 100
+				state_population_k < 150
 			}
 		}
 
@@ -251,7 +330,7 @@ PRE_generalplan_ost_step_2_finish = { #migrate germans to these lands
         }
 		cost = 0
 		days_remove = 20
-		days_re_enable = 5 
+		days_re_enable = 1 
 		cancel_if_not_visible = yes
 
 		state_target = yes
