@@ -4,7 +4,8 @@ PRE_generalplan_ost_decision = {
 		icon = GFX_decision_generic_police_action
 
 		available = {
-						num_of_civilian_factories_available_for_projects > 1
+						num_of_civilian_factories_available_for_projects > 3
+						has_manpower > 1000
 			FROM = {
 				is_fully_controlled_by = ROOT
 			}
@@ -20,8 +21,8 @@ PRE_generalplan_ost_decision = {
         modifier = {
 			stability_weekly = -0.002
 			war_support_weekly = -0.002
-			political_power_cost = 0.10
-			civilian_factory_use = 2
+			weekly_manpower = -1000
+			civilian_factory_use = 4
         }
 		cost = 0
 		days_remove = 50
@@ -35,15 +36,299 @@ PRE_generalplan_ost_decision = {
 				NOT = { is_core_of = ROOT }
 			}
 		}
-
 		ai_will_do = {
 			factor = 1000
 		}
-
 		remove_effect = {
 		FROM = { remove_dynamic_modifier = { modifier = polish_resistance } }
 		}
 	}
+     PRE_generalplan_ost_take_territory_step_1 = {
+          icon = GFX_decision_hol_draw_up_staff_plans	  
+		  cost = 50
+          fire_only_once = yes
+		available = {
+		809 = { is_owned_by = PRE }
+		85 = { is_owned_by = PRE }
+		86 = { is_owned_by = PRE }
+		762 = { is_owned_by = PRE }
+		809 = { is_core_of = PRE }
+		85 = { is_core_of = PRE }
+		86 = { is_core_of = PRE }
+		762= { is_core_of = PRE }
+		}
+          remove_effect  = {
+		  97 = {transfer_state_to = PRE}
+		  98 = {transfer_state_to = PRE}
+		  87 = {transfer_state_to = PRE}
+		  hidden_effect = {
+		97 = {add_dynamic_modifier = { modifier = polish_resistance }}
+		98 = {add_dynamic_modifier = { modifier = polish_resistance }}
+		87 = {add_dynamic_modifier = { modifier = polish_resistance }} 
+		  }
+		  set_country_flag = PRE_taken_territory_1
+		swap_ideas = {
+			add_idea = PRE_polish_terrorism_3
+			remove_idea = PRE_polish_terrorism_2
+		}		
+          }
+          days_remove = 0
+        ai_will_do = {
+			factor = 1000
+		}
+     }
+	PRE_generalplan_ost_step_2 = { #massacre poles in 97 98 87
+		name = PRE_generalplan_ost_step_2_name
+		icon = GFX_decision_generic_police_action
+
+		available = {
+		num_of_civilian_factories_available_for_projects > 4
+		has_manpower > 1000
+			FROM = {
+				is_fully_controlled_by = ROOT
+				state_population_k > 100
+			}
+		}
+
+		visible = {
+			FROM = {
+				is_owned_by = ROOT
+				NOT = { is_core_of = ROOT }
+				FROM  = { has_dynamic_modifier = {modifier = polish_resistance}}
+				state_population_k > 100
+			}
+		}
+        modifier = {
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
+			weekly_manpower = -1000
+			civilian_factory_use = 5
+        }
+		cost = 0
+		days_remove = 20
+		days_re_enable = 5 
+		cancel_if_not_visible = yes
+
+		state_target = yes
+		targets = { 97 98 87 }
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+				NOT = { is_core_of = ROOT }
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		remove_effect = {
+		FROM = {add_manpower = -100000}
+		}
+	}	
+PRE_generalplan_ost_step_2_finish = { #migrate germans to these lands
+		name = PRE_generalplan_ost_step_2_finish_name
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+		num_of_civilian_factories_available_for_projects > 4
+			FROM = {
+				is_fully_controlled_by = ROOT
+				state_population_k < 100
+			}
+		}
+
+		visible = {
+			FROM = {
+				is_owned_by = ROOT
+				NOT = { is_core_of = ROOT }
+				FROM  = { has_dynamic_modifier = {modifier = polish_resistance}}
+				state_population_k < 100
+			}
+		}
+        modifier = {
+			civilian_factory_use = 5
+        }
+		cost = 0
+		days_remove = 50
+		cancel_if_not_visible = yes
+
+		state_target = yes
+		targets = { 97 98 87 }
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+				NOT = { is_core_of = ROOT }
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		remove_effect = {
+			random_core_state = {
+			limit = {
+			is_core_of = ROOT
+			state_population_k > 500
+			}
+			add_manpower = -100000
+		}	
+			random_core_state = {
+			limit = {
+			is_core_of = ROOT
+			state_population_k > 500
+			}
+			add_manpower = -100000
+		}
+		FROM = {add_manpower = 200000}
+		FROM = { remove_dynamic_modifier = { modifier = polish_resistance } }
+		hidden_effect = { remove_state_claim = FROM }
+		add_state_core = FROM
+		PLN = {remove_state_core = FROM}
+		}
+	}
+     PRE_generalplan_ost_take_territory_step_2 = { 
+          icon = GFX_decision_hol_draw_up_staff_plans	  
+		  cost = 50
+          fire_only_once = yes
+		available = {
+		97 = { is_owned_by = PRE }
+		98 = { is_owned_by = PRE }
+		87 = { is_owned_by = PRE }
+		97 = { is_core_of = PRE }
+		98 = { is_core_of = PRE }
+		87 = { is_core_of = PRE }
+		}
+		visible = {
+		has_country_flag = PRE_taken_territory_1
+		}
+          remove_effect  = {
+		  72 = {transfer_state_to = PRE}
+		  88 = {transfer_state_to = PRE}
+		  90 = {transfer_state_to = PRE}
+		  92 = {transfer_state_to = PRE}
+		  10 = {transfer_state_to = PRE}
+		  808 = {transfer_state_to = PRE}
+		  hidden_effect = {
+		72 = {add_dynamic_modifier = { modifier = polish_resistance }}
+		88 = {add_dynamic_modifier = { modifier = polish_resistance }}
+		90 = {add_dynamic_modifier = { modifier = polish_resistance }} 
+		92 = {add_dynamic_modifier = { modifier = polish_resistance }}
+		10 = {add_dynamic_modifier = { modifier = polish_resistance }}
+		808 = {add_dynamic_modifier = { modifier = polish_resistance }} 	  
+		  }
+		set_country_flag = PRE_taken_territory_2
+		remove_ideas = PRE_polish_terrorism_3
+		country_event = { id = preo.5 days = 1 }	
+          }
+          days_remove = 0
+        ai_will_do = {
+			factor = 1000
+		}
+     }
+	PRE_generalplan_ost_step_3 = { #massacre poles in 72 88 90 92 10 808
+		name = PRE_generalplan_ost_step_2_name
+		icon = GFX_decision_generic_police_action
+
+		available = {
+		num_of_civilian_factories_available_for_projects > 4
+		has_manpower > 1000
+			FROM = {
+				is_fully_controlled_by = ROOT
+				state_population_k > 100
+			}
+		}
+		visible = {
+			FROM = {
+				is_owned_by = ROOT
+				NOT = { is_core_of = ROOT }
+				FROM  = { has_dynamic_modifier = {modifier = polish_resistance}}
+				state_population_k > 100
+			}
+		}
+        modifier = {
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
+			weekly_manpower = -1000
+			civilian_factory_use = 5
+        }
+		cost = 0
+		days_remove = 20
+		days_re_enable = 5 
+		cancel_if_not_visible = yes
+
+		state_target = yes
+		targets = { 72 88 90 92 10 808 }
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+				NOT = { is_core_of = ROOT }
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		remove_effect = {
+		FROM = {add_manpower = -100000}
+		}
+	}
+PRE_generalplan_ost_step_3_finish = { #migrate germans to these lands
+		name = PRE_generalplan_ost_step_2_finish_name
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+		num_of_civilian_factories_available_for_projects > 4
+			FROM = {
+				is_fully_controlled_by = ROOT
+				state_population_k < 100
+			}
+		}
+
+		visible = {
+			FROM = {
+				is_owned_by = ROOT
+				NOT = { is_core_of = ROOT }
+				FROM  = { has_dynamic_modifier = {modifier = polish_resistance}}
+				state_population_k < 100
+			}
+		}
+        modifier = {
+			civilian_factory_use = 5
+        }
+		cost = 0
+		days_remove = 50
+		cancel_if_not_visible = yes
+
+		state_target = yes
+		targets = { 72 88 90 92 10 808 }
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+				NOT = { is_core_of = ROOT }
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		remove_effect = {
+			random_core_state = {
+			limit = {
+			is_core_of = ROOT
+			state_population_k > 500
+			}
+			add_manpower = -100000
+		}	
+			random_core_state = {
+			limit = {
+			is_core_of = ROOT
+			state_population_k > 500
+			}
+			add_manpower = -100000
+		}
+		FROM = {add_manpower = 200000}
+		FROM = { remove_dynamic_modifier = { modifier = polish_resistance } }
+		hidden_effect = { remove_state_claim = FROM }
+		add_state_core = FROM
+		PLN = {remove_state_core = FROM}
+		}
+	}	
 }
 
 

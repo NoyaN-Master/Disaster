@@ -12,8 +12,8 @@ division_template = {
 	support = {
 	}
 }
-
-division= {	
+units = {
+	division= {	
 		name = "Adanlılar"
 		location = 11746    # Vienna
 		division_template = "Kuvayi Milliye"
@@ -36,3 +36,4 @@ division= {
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 	}
+}	

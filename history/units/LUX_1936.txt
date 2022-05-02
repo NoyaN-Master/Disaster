@@ -8,7 +8,16 @@
 }
 
 
-units = { }
+units = { 
+division = {
+		name = "Public Force"
+		location = 6583
+		division_template = "Public Force"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	}
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

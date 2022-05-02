@@ -2,6 +2,7 @@ add_namespace = bay
 add_namespace = bayepp
 add_namespace = bayrohm
 add_namespace = bayhimmler
+add_namespace = bayrohmdiplo
 
 country_event = { #Freikorps Problem
 	id = bay.1
@@ -41,4 +42,49 @@ country_event = { #Pick a leader, any leader.
 		name = bay.2.c
 		unlock_national_focus = BAY_side_with_himmler
 	}
+}
+
+country_event = { #event for the smaller countries, let bavaria eat you
+	id =  bayrohmdiplo.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bayrohmdiplo.1" }
+	title = bayrohmdiplo.1.t
+	desc = bayrohmdiplo.1.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Alright
+		name = bayrohmdiplo.1.a
+		ai_chance = { factor = 100}
+		BAY = {
+			country_event = { id = bayrohmdiplo.2 days = 1}
+		}
+	}
+	option = { #No
+		name = bayrohmdiplo.1.b
+		#something here eventually
+	}
+	
+}
+
+country_event = { #yum
+	id =  bayrohmdiplo.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bayrohmdiplo.2" }
+	title = bayrohmdiplo.2.t
+	desc = bayrohmdiplo.2.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Alright
+		name = bayrohmdiplo.2.a
+		ai_chance = { factor = 100}
+		annex_country = {
+			target = FROM
+			transfer_troops = yes
+		}
+	}
+	
 }
