@@ -20,6 +20,10 @@ preo.4.t:0 "Hans Frank in Occupied Poland"
 preo.4.d:0 "Hans Frank, the Governer put in charge of overseeing the former adversary of the Reich (who also later on claimed to be the King of that domain) was in Wawel Castle. A historical castle of Prussian Heritage was now a symbol of the Prussian's return to east. In charge of the newly established Generalgouvernment, Hans Frank was a man of Patriotic duty. Actively checking the establishment of power around the Goralenvolk and other Germans in the area to speed up the Germanisation of his domain. As time passed and Hans turned his domain more into an extension of the former "German Reich", there began a saying among the German populace about the former polish domain becoming the France (Frankreich) in the east as a way of joking with the fact that Hans Frank turned Poland into his own kingdom "Frankreich" (Frank's Kingdom). So became the name of "Frankreich im Osten" as a joke name for Poland. The rising popularity of this trend eventually reached the ears of Hans Frank himself. In one occasion, a former nobleman with German decent had told him about France in the East is being far better than the France in the West. It's known that Hans Frank himself replied with the phrase "At least there is still a Frank in the East.", at least Hans had a sense of humour. "
 preo.4.a:0 "Big if true"
 
+preo.5.t:0 "Fate of the Generaalgouvernment"
+preo.5.d:0 ""
+preo.5.a:0 ""
+
 ####### new foreign policy loc
 PRE_stir_up_mecklenburg:0"Stir Up Mecklenburg"
 PRE_stir_up_mecklenburg_desc:0""
@@ -47,6 +51,8 @@ PRE_polish_terrorism:0"Polish Separatism"
 PRE_polish_terrorism_desc:0""
 PRE_polish_terrorism_2:0"Polish Separatism"
 PRE_polish_terrorism_2_desc:0""
+PRE_polish_terrorism_3:0"Polish Separatism"
+PRE_polish_terrorism_3_desc:0""
 PRE_generalplan_ost_2_tooltip:0"§RTaking this focus will spawn massive unrest in our Polish provinces, but we will be able to fight Polish terrorists§!"
 
 PRE_generalplan_ost_decision:0"Generalplan Ost"
@@ -62,13 +68,53 @@ PRE_generalplan_ost_take_territory_step_2_desc:0"§RBefore we can start phase th
 
 polish_resistance:0"Polish Resistance"
 
-
+PRE_von_goltz_plan:0"Von Goltz Plan"
+PRE_von_goltz_plan_desc:0""
+PRE_germanize_baltics:0"Germanize the Baltics"
+PRE_germanize_baltics_desc:0""
 
 # occupation parties
 POL_revolutionary_nationalist_occupation:0"German Military Government"
 POL_authoritarian_democrat_occupation:0"National Radical Organization"
 PRE_RK_idea_disable_recruitment_and_ideas:0"German Military Occupation"
 PRE_RK_idea_disable_recruitment_and_ideas_desc:0""
+
+# south germany
+PRE_thrust_south:0"The Thrust South"
+PRE_thrust_south_desc:0""
+PRE_little_german_solution:0"Little German Solution"
+PRE_little_german_solution_desc:0""
+PRE_austro_german_custom_union:0"Austro-German Customs Union"
+PRE_austro_german_custom_union_desc:0""
+PRE_anschluss:0"Anschluss"
+PRE_anschluss_desc:0""
+PRE_continue_kulturkampf:0"Continue the Kulturkampf"
+PRE_continue_kulturkampf_desc:0""
+PRE_sud_tirol:0"Press Sud-Tirol Claims"
+PRE_sud_tirol_desc:0""
+PRE_sudeten_germans:0"The Sudeten Germans"
+PRE_sudeten_germans_desc:0""
+PRE_germanize_bohemian_crownlands:0"Germanize the Bohemian Crownlands"
+PRE_germanize_bohemian_crownlands_desc:0""
+
+# eco union path
+PRE_economic_union:0"A new Economic Union"
+PRE_economic_union_desc:0""
+PRE_economic_union_danes:0"Normalize Danish Relations"
+PRE_economic_union_danes_desc:0""
+PRE_economic_union_scandinavia:0"Approach Scandinavia"
+PRE_economic_union_scandinavia_desc:0""
+PRE_economic_union_czechs:0"Approach the Czechs"
+PRE_economic_union_czechs_desc:0""
+PRE_economic_union_lowlands:0"Invite the Lowlands"
+PRE_economic_union_lowlands_desc:0""
+PRE_economic_union_baltics:0"Approach the Baltic Nations"
+PRE_economic_union_baltics_desc:0""
+
+
+# france
+PRE_rhineland:0"The Rhineland Question"
+PRE_rhineland_desc:0""
 
 
 PRE_France_Surrender_Democratic:0 "The Paris Treaty"

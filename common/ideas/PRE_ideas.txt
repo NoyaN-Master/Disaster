@@ -14,10 +14,20 @@ PRE_polish_terrorism_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
 			picture = PLN_free_at_fast
 			modifier = {
-			war_support_factor = -0.08
-			political_power_cost = 0.16
+			war_support_factor = -0.06
+			political_power_cost = 0.12
 			consumer_goods_factor = 0.04
-			conscription_factor = -0.08
+			conscription_factor = -0.06
+			}
+		}
+PRE_polish_terrorism_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
+			picture = PLN_free_at_fast
+			modifier = {
+			war_support_factor = -0.02
+			political_power_cost = 0.08
+			consumer_goods_factor = 0.02
+			conscription_factor = -0.02
 			}
 		}
 PRE_RK_idea_disable_recruitment_and_ideas = {

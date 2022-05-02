@@ -147,8 +147,8 @@ focus_tree = {
 
 	focus = {
 		id = PRE_stir_up_mecklenburg
-		icon = GFX_goal_NGU_mecklenburg
-		x = 10
+		icon = GFX_goal_PRE_Mecklenburg_Crisis
+		x = 12
 		y = 0
 		cost = 5	
 		ai_will_do = { factor = 1000 }		
@@ -180,7 +180,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_saxony
-		icon = GFX_goal_PRE_Sax
+		icon = GFX_goal_PRE_Saxony
 		x = 0
 		y = 1
 		relative_position_id = PRE_stir_up_mecklenburg
@@ -202,9 +202,110 @@ focus_tree = {
         } 
 		}
 	}
+
+#################### south germany
+	focus = {
+		id = PRE_thrust_south
+		icon = GFX_goal_PRE_Thrust_South
+		x = -4
+		y = 2
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5		
+		prerequisite = { focus = PRE_saxony }	
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = PRE_little_german_solution
+		icon = GFX_goal_PRE_Little_German_Solution
+		x = -3
+		y = 3
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5		
+		prerequisite = { focus = PRE_thrust_south }	
+		mutually_exclusive = {
+		focus =  PRE_anschluss
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = PRE_austro_german_custom_union
+		icon = GFX_goal_PRE_Austro_German_Customs_Union
+		x = -3
+		y = 4
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5		
+		prerequisite = { focus = PRE_thrust_south }	
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = PRE_anschluss
+		icon = GFX_goal_PRE_Anschluss
+		x = -5
+		y = 3
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5		
+		prerequisite = { focus = PRE_thrust_south }	
+		mutually_exclusive = {
+		focus =  PRE_little_german_solution
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = PRE_continue_kulturkampf
+		icon = GFX_goal_PRE_Continue_Kulturkampf
+		x = -5
+		y = 4
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5		
+		prerequisite = { focus = PRE_anschluss }	
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = PRE_sud_tirol
+		icon = GFX_goal_PRE_Press_Sud_Tirol_Claims
+		x = -7
+		y = 5
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5		
+		prerequisite = { focus = PRE_continue_kulturkampf }	
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = PRE_sudeten_germans
+		icon = GFX_goal_PRE_Sudetan_Germans
+		x = -5
+		y = 5
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5		
+		prerequisite = { focus = PRE_continue_kulturkampf }	
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = PRE_germanize_bohemian_crownlands
+		icon = GFX_goal_PRE_Germanize_Bohemian_Crownlands
+		x = -5
+		y = 6
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5		
+		prerequisite = { focus = PRE_continue_kulturkampf }	
+
+		completion_reward = {
+		}
+	}
+################ central europe
 	focus = {
 		id = PRE_strike_poland
-		icon = GFX_goal_NGU_Piast
+		icon = GFX_goal_PRE_Strike_Poles
 		x = 0
 		y = 2
 		relative_position_id = PRE_stir_up_mecklenburg
@@ -235,7 +336,7 @@ focus_tree = {
 	}	
 	focus = {
 		id = PRE_puppet_poland
-		icon = GFX_unknown
+		icon = GFX_goal_PRE_Reapproach_Poles
 		x = -1
 		y = 3
 		relative_position_id = PRE_stir_up_mecklenburg
@@ -252,7 +353,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_reapproach_the_poles
-		icon = GFX_unknown
+		icon = GFX_goal_PRE_Finalize_German_Polish_Border
 		x = -1
 		y = 4
 		relative_position_id = PRE_stir_up_mecklenburg
@@ -269,7 +370,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_generalplan_ost
-		icon = GFX_goal_WRF_korps
+		icon = GFX_goal_PRE_Solidify_Ostsiedlung
 		x = 1
 		y = 3
 		relative_position_id = PRE_stir_up_mecklenburg
@@ -286,7 +387,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_reinforce_generaal_gouvernment
-		icon = GFX_unknown
+		icon = GFX_goal_PRE_Reinforce_Generalgouvernment
 		x = 1
 		y = 4
 		relative_position_id = PRE_stir_up_mecklenburg
@@ -311,7 +412,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_generalplan_ost_2
-		icon = GFX_goal_WRF_korps
+		icon = GFX_goal_PRE_Generalplan_Ost
 		x = 1
 		y = 5
 		relative_position_id = PRE_stir_up_mecklenburg
@@ -328,9 +429,121 @@ focus_tree = {
 	unlock_decision_tooltip = PRE_generalplan_ost_take_territory_step_1
 	unlock_decision_tooltip = PRE_generalplan_ost_step_2
 	unlock_decision_tooltip = PRE_generalplan_ost_step_2_finish
+	unlock_decision_tooltip = PRE_generalplan_ost_take_territory_step_2
+	unlock_decision_tooltip = PRE_generalplan_ost_step_3
+	unlock_decision_tooltip = PRE_generalplan_ost_step_3_finish	
 	}
 	}
 
+	focus = {
+		id = PRE_von_goltz_plan
+		icon = GFX_goal_PRE_Von_Goltz_Plan
+		x = 1
+		y = 6
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5		
+		prerequisite = { focus = PRE_generalplan_ost_2 }	
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = PRE_germanize_baltics
+		icon = GFX_goal_PRE_Germanize_Baltics
+		x = 1
+		y = 7
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5		
+		prerequisite = { focus = PRE_von_goltz_plan }	
+		completion_reward = {
+		}
+	}
+
+
+
+
+###### eco union path
+	focus = {
+		id = PRE_economic_union
+		icon = GFX_goal_PRE_New_Economic_Union
+		x = -2
+		y = 6
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 4		
+		prerequisite = { focus = PRE_reapproach_the_poles }
+		prerequisite = { focus = PRE_austro_german_custom_union }
+        completion_reward = {
+		}
+	}
+	focus = {
+		id = PRE_economic_union_danes
+		icon = GFX_goal_PRE_Normalize_Danish_Relations
+		x = -7
+		y = 7
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 4		
+		prerequisite = { focus = PRE_economic_union }
+        completion_reward = {
+		}
+	}
+	focus = {
+		id = PRE_economic_union_scandinavia
+		icon = GFX_goal_PRE_Approach_Scandinavia
+		x = -7
+		y = 8
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 4		
+		prerequisite = { focus = PRE_economic_union_danes }
+        completion_reward = {
+		}
+	}
+	focus = {
+		id = PRE_economic_union_czechs
+		icon = GFX_goal_PRE_Approach_Czechs
+		x = -5
+		y = 7
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 4		
+		prerequisite = { focus = PRE_economic_union }
+        completion_reward = {
+		}
+	}
+	focus = {
+		id = PRE_economic_union_lowlands
+		icon = GFX_goal_PRE_Invite_Lowlands
+		x = -3
+		y = 7
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 4		
+		prerequisite = { focus = PRE_economic_union }
+        completion_reward = {
+		}
+	}
+	focus = {
+		id = PRE_economic_union_baltics
+		icon = GFX_goal_PRE_Approach_Baltic_Nations
+		x = -1
+		y = 7
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 4		
+		prerequisite = { focus = PRE_economic_union }
+        completion_reward = {
+		}
+	}
+
+
+######### rhineland
+	focus = {
+		id = PRE_rhineland
+		icon = GFX_goal_PRE_Rhineland_Ultimatum
+		x = 3
+		y = 3
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5		
+		prerequisite = { focus = PRE_strike_poland }		
+		completion_reward = {
+
+		}
+	}
 
 
 ############################################### Schleicher Path
