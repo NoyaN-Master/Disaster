@@ -921,39 +921,7 @@ country_event = { #policital solidification
 
 
 ###FP
-country_event = { #BLT gets fccd
-	id = pre.101
-	title = pre.101.t
-	desc = pre.101.d
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	option = {
-		name = pre.101.a
-		ai_chance = { factor = 100}
-		PRE = {
-		puppet = BLT
-		}
-		set_politics = {
-		ruling_party = ultranationalist
-        elections_allowed = no
-        last_election = "1935.12.17"
-        election_frequency = 48
-		}
-		set_popularities = {
-		ultranationalist = 100
-		}
-		create_country_leader = {
-	        name = "Rüdiger von der Goltz"
-	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        picture   = "gfx/leaders/BLT/BLT_Goltz.tga"
-	        expire = "1965.1.1"
-	        ideology = ultranationalist_subideology
-	        traits = {
-	        }
-            }
-	}
-}
+
 
 country_event = { # Surrender
 	id = pre.103

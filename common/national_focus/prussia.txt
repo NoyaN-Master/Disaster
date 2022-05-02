@@ -297,7 +297,7 @@ focus_tree = {
 		y = 6
 		relative_position_id = PRE_stir_up_mecklenburg
 		cost = 5		
-		prerequisite = { focus = PRE_continue_kulturkampf }	
+		prerequisite = { focus = PRE_sudeten_germans }	
 
 		completion_reward = {
 		}
@@ -396,13 +396,13 @@ focus_tree = {
 
 		available = {
 		has_equipment = {
-			infantry_equipment > 9999
+			infantry_equipment > 4999
 		}
 		}
 		completion_reward = {
 		add_equipment_to_stockpile  = {
 			type = infantry_equipment
-			amount = -10000
+			amount = -5000
 		}	
 		swap_ideas = {
 			add_idea = PRE_polish_terrorism_2
@@ -443,7 +443,47 @@ focus_tree = {
 		relative_position_id = PRE_stir_up_mecklenburg
 		cost = 5		
 		prerequisite = { focus = PRE_generalplan_ost_2 }	
+		bypass = {
+		NOT = {	country_exists = LIT}
+		NOT = {	country_exists = LAT}
+		NOT = {	country_exists = EST}		
+		}
+		available = {
+		RUS = {has_country_flag = RUS_CW_SPVENT_TRIGGER}
+		has_war = no
+			OR = {
+			is_neighbor_of = LIT
+			is_neighbor_of = LAT
+			is_neighbor_of = EST
+			}
+			OR = {
+			country_exists = LIT
+			country_exists = LAT
+			country_exists = EST
+			}
+		}
 		completion_reward = {
+		if = {
+		limit = { country_exists = LIT }
+		declare_war_on = {
+        target = LIT
+        type = annex_everything
+        }
+    }
+		if = {
+		limit = { country_exists = LAT }
+		declare_war_on = {
+        target = LAT
+        type = annex_everything
+        }
+    }
+		if = {
+		limit = { country_exists = EST }
+		declare_war_on = {
+        target = EST
+        type = annex_everything
+        }
+    }
 		}
 	}
 	focus = {
@@ -455,6 +495,62 @@ focus_tree = {
 		cost = 5		
 		prerequisite = { focus = PRE_von_goltz_plan }	
 		completion_reward = {
+		hidden_effect = {
+        release = LIT
+        release = LAT
+        release = EST
+        BLT = { 
+        annex_country = {
+            target = LAT
+            transfer_troops = yes
+        } 
+        annex_country = {
+            target = EST
+            transfer_troops = yes
+        } }
+		PRE = {
+		puppet = BLT
+		puppet = LIT
+		}
+		BLT = {
+		set_politics = {
+		ruling_party = ultranationalist
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+		}
+		set_popularities = {
+		ultranationalist = 30
+		revolutionary_nationalist = 40
+		authoritarian_democrat = 30
+		}
+		create_country_leader = {
+	        name = "Rüdiger von der Goltz"
+	        #desc = ""
+	        picture   = "gfx/leaders/BLT/BLT_Goltz.tga"
+	        expire = "1965.1.1"
+	        ideology = ultranationalist_subideology
+	        traits = {
+	        }
+            }
+		add_state_core = 12
+		add_manpower = 50000
+		add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 1000
+		producer = PRE
+		}
+		}
+		LIT = {
+		set_politics = {
+		ruling_party = ultranationalist
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+		}		
+		}
+	}
+		custom_effect_tooltip = PRE_germanize_baltics_tooltip
 		}
 	}
 

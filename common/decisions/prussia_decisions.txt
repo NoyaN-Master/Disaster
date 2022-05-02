@@ -82,11 +82,11 @@ PRE_generalplan_ost_decision = {
 		icon = GFX_decision_generic_police_action
 
 		available = {
-		num_of_civilian_factories_available_for_projects > 4
+		num_of_civilian_factories_available_for_projects > 2
 		has_manpower > 1000
 			FROM = {
 				is_fully_controlled_by = ROOT
-				state_population_k > 100
+				state_population_k > 150
 			}
 		}
 
@@ -95,14 +95,14 @@ PRE_generalplan_ost_decision = {
 				is_owned_by = ROOT
 				NOT = { is_core_of = ROOT }
 				FROM  = { has_dynamic_modifier = {modifier = polish_resistance}}
-				state_population_k > 100
+				state_population_k > 150
 			}
 		}
         modifier = {
 			stability_weekly = -0.002
 			war_support_weekly = -0.002
 			weekly_manpower = -1000
-			civilian_factory_use = 5
+			civilian_factory_use = 3
         }
 		cost = 0
 		days_remove = 20
@@ -121,7 +121,7 @@ PRE_generalplan_ost_decision = {
 			factor = 1000
 		}
 		remove_effect = {
-		FROM = {add_manpower = -100000}
+		FROM = {add_manpower = -150000}
 		}
 	}	
 PRE_generalplan_ost_step_2_finish = { #migrate germans to these lands
@@ -141,7 +141,7 @@ PRE_generalplan_ost_step_2_finish = { #migrate germans to these lands
 				is_owned_by = ROOT
 				NOT = { is_core_of = ROOT }
 				FROM  = { has_dynamic_modifier = {modifier = polish_resistance}}
-				state_population_k < 100
+				state_population_k < 150
 			}
 		}
         modifier = {
@@ -228,11 +228,11 @@ PRE_generalplan_ost_step_2_finish = { #migrate germans to these lands
 		icon = GFX_decision_generic_police_action
 
 		available = {
-		num_of_civilian_factories_available_for_projects > 4
+		num_of_civilian_factories_available_for_projects > 2
 		has_manpower > 1000
 			FROM = {
 				is_fully_controlled_by = ROOT
-				state_population_k > 100
+				state_population_k > 150
 			}
 		}
 		visible = {
@@ -240,14 +240,14 @@ PRE_generalplan_ost_step_2_finish = { #migrate germans to these lands
 				is_owned_by = ROOT
 				NOT = { is_core_of = ROOT }
 				FROM  = { has_dynamic_modifier = {modifier = polish_resistance}}
-				state_population_k > 100
+				state_population_k > 150
 			}
 		}
         modifier = {
 			stability_weekly = -0.002
 			war_support_weekly = -0.002
 			weekly_manpower = -1000
-			civilian_factory_use = 5
+			civilian_factory_use = 3
         }
 		cost = 0
 		days_remove = 20
@@ -266,7 +266,7 @@ PRE_generalplan_ost_step_2_finish = { #migrate germans to these lands
 			factor = 1000
 		}
 		remove_effect = {
-		FROM = {add_manpower = -100000}
+		FROM = {add_manpower = -150000}
 		}
 	}
 PRE_generalplan_ost_step_3_finish = { #migrate germans to these lands
@@ -277,7 +277,7 @@ PRE_generalplan_ost_step_3_finish = { #migrate germans to these lands
 		num_of_civilian_factories_available_for_projects > 4
 			FROM = {
 				is_fully_controlled_by = ROOT
-				state_population_k < 100
+				state_population_k < 150
 			}
 		}
 
@@ -286,7 +286,7 @@ PRE_generalplan_ost_step_3_finish = { #migrate germans to these lands
 				is_owned_by = ROOT
 				NOT = { is_core_of = ROOT }
 				FROM  = { has_dynamic_modifier = {modifier = polish_resistance}}
-				state_population_k < 100
+				state_population_k < 150
 			}
 		}
         modifier = {
@@ -790,128 +790,8 @@ PRE_Puppet_Belgium = {
 }	
 ##take east
 
-PRE_fuck_baltics = {
-    fire_only_once = yes
-    cost = 0
-    allowed = {
-    tag = PRE
-    }
-    available  = {   
-    has_war = no
-			OR = {
-			is_neighbor_of = LIT
-			is_neighbor_of = LAT
-			is_neighbor_of = EST
-			}
-			OR = {
-			country_exists = LIT
-			country_exists = LAT
-			country_exists = EST
-			}
-    }
-    visible = {
-    original_tag = PRE
-    has_completed_focus = PRE_generalplan_ost
-    }    
-    complete_effect = {
-		if = {
-		limit = { country_exists = LIT }
-		declare_war_on = {
-        target = LIT
-        type = annex_everything
-        }
-    }
-		if = {
-		limit = { country_exists = LAT }
-		declare_war_on = {
-        target = LAT
-        type = annex_everything
-        }
-    }
-		if = {
-		limit = { country_exists = EST }
-		declare_war_on = {
-        target = EST
-        type = annex_everything
-        }
-    }
-    }
- ai_will_do = {
-        factor = 1000
-    }
-}
 
-PRE_Diplomacy_Ostland = {
-	    fire_only_once = yes
-		cost = 0
-        allowed = {
-        tag = PRE
-        }
-        available  = {   
-        has_war = no
-        owns_state = 12
-        }
-        visible = {
-        original_tag = PRE
-        has_completed_focus = PRE_generalplan_ost
-        }    
-        complete_effect = {
-        release = LIT
-        release = LAT
-        release = EST
-        BLT = {
-        annex_country = {
-            target = LIT
-            transfer_troops = yes
-        } 
-        annex_country = {
-            target = LAT
-            transfer_troops = yes
-        } 
-        annex_country = {
-            target = EST
-            transfer_troops = yes
-        } 
-        country_event = {id = pre.101 days = 1}     
-        }
-        }
-     ai_will_do = {
-			factor = 1000
-		}
-}
 
-PRE_Give_Goltz = {
-	    fire_only_once = yes
-		cost = 0
-        allowed = {
-        tag = PRE
-        }
-        available  = {   
-        has_war = no
-        BLT = {
-        is_puppet_of = PRE
-        }
-        WHR = {
-        exists = no    
-        }
-        }
-        visible = {
-        original_tag = PRE
-        has_completed_focus = PRE_generalplan_ost
-        }    
-        complete_effect = {
-        BLT = {
-        transfer_state = 95
-        transfer_state = 96  
-        transfer_state = 94
-        transfer_state = 203
-        transfer_state = 93
-        }
-        }
-     ai_will_do = {
-			factor = 1000
-		}
-}
 
 PRE_Ukraine_Goltz = {
 	    fire_only_once = yes

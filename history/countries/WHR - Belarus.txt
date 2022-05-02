@@ -69,3 +69,43 @@ create_country_leader = {
 		#
 	}
 }
+create_country_leader = {
+	name = "Stanisław Bułak-Bułachowicz"
+	#desc = "WHR_Stanislaw_Bulachowicz_desc"
+	picture = "gfx/leaders/WHR/WHR_Stanislaw_Bulachowicz.tga"
+	expire = "2020.1.1"
+	ideology = autocratic_subideology
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Stanisław Bułak-Bułachowicz"
+	#desc = "WHR_Stanislaw_Bulachowicz_desc"
+	picture = "gfx/leaders/WHR/WHR_Stanislaw_Bulachowicz.tga"
+	expire = "2020.1.1"
+	ideology = revolutionary_nationalist_subideology
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Stanisław Bułak-Bułachowicz"
+	#desc = "WHR_Stanislaw_Bulachowicz_desc"
+	picture = "gfx/leaders/WHR/WHR_Stanislaw_Bulachowicz.tga"
+	expire = "2020.1.1"
+	ideology = ultranationalist_subideology
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Stanisław Bułak-Bułachowicz"
+	#desc = "WHR_Stanislaw_Bulachowicz_desc"
+	picture = "gfx/leaders/WHR/WHR_Stanislaw_Bulachowicz.tga"
+	expire = "2020.1.1"
+	ideology = liberal_subideology
+	traits = {
+		#
+	}
+}
