@@ -48,7 +48,28 @@ RUSGEN_cw_catagory = {
                add_manpower = 500
         }
     }
-
+    RUSGEN_civ_planes = {
+        fire_only_once = no 
+        days_re_enable = 90
+        visible = {
+            has_country_flag = RUSGEN_CW_DECISION_PLANES_FLAG
+        }
+        cost = 75
+        available = {
+            always = yes
+        }
+        complete_effect = {
+			add_equipment_to_stockpile = {
+				type = fighter_equipment
+				amount = 35
+				producer = RUS
+			}
+        }  
+        days_remove = 30
+        remove_effect = {
+               add_manpower = 500
+        }
+    }
 
 
 }

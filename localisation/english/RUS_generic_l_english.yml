@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 ###FOCUS
 RUS_GEN_CW:0 "The Russian Civil War"
 RUS_GEN_CW_desc:0 "The Russian Civil War"
@@ -64,4 +64,6 @@ RUSGEN_lose_army:0 "Out of Fight"
 RUS_GEN_START_TT:0 "§RWe shall free ourselves from Avalovs chains.§!"
 #descisons
 RUSGEN_resources_category:0 "Lack of resources"
-no_resources:0 "Days Until Resources are Depleted"
+RUSGEN_cw_catagory:0 "Civil War Decisions"
+no_resources:0 "Days Until Resources are Depleted."
+RUSGEN_supply_caches:0 "Dig up supply caches."
