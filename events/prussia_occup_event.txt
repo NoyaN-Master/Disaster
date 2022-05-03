@@ -264,3 +264,36 @@ country_event = { #hans frank meme
 	add_stability = 0.01
 	}
 }
+country_event = { #splitting up generaal gouvernment
+	id = preo.5
+	title = preo.5.t
+	desc = preo.5.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = preo.5.a
+		ai_chance = { factor = 1}
+		if = {
+		limit = {
+		95 = { is_owned_by = PLN }
+		96 = { is_owned_by = PLN }
+		PLN = { is_puppet_of = PRE}
+		}
+		95 = {transfer_state_to = WHR}
+		96 = {transfer_state_to = WHR}
+		release_puppet = WHR
+		}
+		PLN = {
+		set_cosmetic_tag = PLN_ger_ukraine
+			retire_country_leader = yes
+			create_country_leader = {
+	        name = "Otto Gustav von Wächter"
+	        desc = "Otto_Gustav_von_Wächter_desc"
+	        picture = "gfx/leaders/PLN/Otto_Wachter.png"
+	        expire = "2020.1.1"
+	        ideology = revolutionary_nationalist_subideology
+           }		
+		} 
+	}
+}

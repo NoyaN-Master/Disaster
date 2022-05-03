@@ -60,7 +60,65 @@ add_ideas = 	military_government
 add_ideas = 	corporatism 
 add_ideas = 	industrialized_society
 
+#########military
+create_navy_leader = {
+	name = "Povilas Julius Labanauskas"
+	portrait_path = "gfx/leaders/LIT/Portrait_LIT_Povilas_Julius_Labanauskas.png"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+create_corps_commander = {
+	name = "Kazimieras Tiskevicius"
+	portrait_path = "gfx/leaders/LIT/Portrait_LIT_Kazimieras_Tiskevicius.png"
+	traits = { 
 
+	}
+	skill = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Kazys Ladiga"
+	portrait_path = "gfx/leaders/LIT/Portrait_LIT_Kazys_Ladiga.png"
+	traits = { 
+
+	}
+	skill = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Kazys Skirpa"
+	portrait_path = "gfx/leaders/LIT/Portrait_LIT_Kazys_Skirpa.png"
+	traits = { 
+
+	}
+	skill = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Lucjan Zeligowski"
+	portrait_path = "gfx/leaders/LIT/Portrait_LIT_Lucjan_Zeligowski.png"
+	traits = { 
+
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
 create_country_leader = {
 	name = "Rüdiger von der Goltz"
 	picture = "gfx/leaders/BLT/BLT_Goltz.tga"

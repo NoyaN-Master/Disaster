@@ -38,10 +38,68 @@ set_popularities = {
 }
 }
 
+############military
+create_corps_commander = {
+	name = "Gustavs Celmins"
+	portrait_path = "gfx/leaders/LAT/Portrait_LAT_Gustavs_Celmins_KR.png"
+	traits = { 
 
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Janis Kurelis"
+	portrait_path = "gfx/leaders/LAT/Portrait_LAT_Janis_Kurelis.png"
+	traits = { 
+
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Martins Penikis"
+	portrait_path = "gfx/leaders/LAT/Portrait_LAT_Martins_Penikis_KR.png"
+	traits = { 
+
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Oskars Dankers"
+	portrait_path = "gfx/leaders/LAT/Portrait_LAT_Oskars_Dankers.png"
+	traits = { 
+
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_navy_leader = {
+	name = "Teodors Spade"
+	portrait_path = "gfx/leaders/LAT/Portrait_LAT_Teodors_Spade.png"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
 create_country_leader = {
-	name = "Andrievs Niedra"
-	picture = "gfx/leaders/LAT/LAT_Andrievs_Niedra"
+	name = "Gustavs Celmins"
+	picture = "gfx/leaders/LAT/Portrait_LAT_Gustavs_Celmins_KR.png"
 	expire = "1965.1.1"
 	ideology = ultranationalist_subideology
 	traits = {
