@@ -1,3 +1,15 @@
+PRE_kulturkampf_decisions = {
+	icon = GFX_decision_category_generic_propaganda
+	priority = 100
+	allowed = {
+			tag = PRE
+	}
+	picture = Decision_picture_propaganda_building
+	visible = {
+		has_completed_focus = PRE_continue_kulturkampf
+	}
+	visible_when_empty = yes
+}
 PRE_germanize_baltics_decision = {
 	icon = GFX_decision_category_generic_fascism
 	priority = 100

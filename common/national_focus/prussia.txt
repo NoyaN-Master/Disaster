@@ -260,6 +260,7 @@ focus_tree = {
         type = annex_everything
         }
     }
+	custom_effect_tooltip = PRE_thrust_south_tooltip
 		}
 	}
 	focus = {
@@ -311,6 +312,9 @@ focus_tree = {
 		prerequisite = { focus = PRE_anschluss }	
 
 		completion_reward = {
+		
+		custom_effect_tooltip = PRE_continue_kulturkampf_tooltip
+		unlock_decision_tooltip = PRE_kulturkampf_decision
 		}
 	}
 	focus = {
@@ -333,8 +337,25 @@ focus_tree = {
 		relative_position_id = PRE_stir_up_mecklenburg
 		cost = 5		
 		prerequisite = { focus = PRE_continue_kulturkampf }	
-
+        available  = {   
+        is_neighbor_of = CEZ
+		country_exists = CEZ
+		NOT = { CEZ = { is_puppet_of = PRE } }
+        }
+		bypass = {
+		OR = {
+		NOT = {country_exists = CEZ}
+		CEZ = { is_puppet_of = PRE }
+		}
+		}
 		completion_reward = {
+		if = {
+		limit = { country_exists = CEZ }
+		declare_war_on = {
+        target = CEZ
+        type = annex_everything
+        }
+    }
 		}
 	}
 	focus = {
@@ -345,8 +366,16 @@ focus_tree = {
 		relative_position_id = PRE_stir_up_mecklenburg
 		cost = 5		
 		prerequisite = { focus = PRE_sudeten_germans }	
-
+		available = {
+		owns_state = 69
+		owns_state = 74
+		69 = { is_core_of = PRE }
+		74 = { is_core_of = PRE }
+		CEZ = { is_puppet_of = PRE }
+		}
 		completion_reward = {
+		custom_effect_tooltip = PRE_germanize_bohemian_crownlands_tooltip
+		country_event = { id = preo.7 }	
 		}
 	}
 ################ central europe
@@ -379,6 +408,7 @@ focus_tree = {
 			}
 		}
 		}
+		custom_effect_tooltip = PRE_strike_poland_tooltip
 		}
 	}	
 	focus = {
