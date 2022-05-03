@@ -9,7 +9,7 @@ country_event = { #Intro Event
 	title = roc.1.t
 	desc = roc.1.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -26,7 +26,7 @@ country_event = { #Islamic Muslim Seperation
 	title = roc.2.t
 	desc = roc.2.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -37,93 +37,94 @@ country_event = { #Islamic Muslim Seperation
         ai_chance = {factor = 100}
 		custom_effect_tooltip = ROC_ETR_TT
 		hidden_effect = {
-		ETR = {
-  transfer_state = 619
-  transfer_state = 617
-  transfer_state = 287
-  transfer_state = 760
-  transfer_state = 759
-  transfer_state = 756
-  transfer_state = 755
-  transfer_state = 604
+			ETR = {
+				transfer_state = 619
+				transfer_state = 617
+				transfer_state = 287
+				transfer_state = 760
+				transfer_state = 759
+				transfer_state = 756
+				transfer_state = 755
+				transfer_state = 604
   
-  619 = {
-add_core_of = ETR
-}
-  617 = {
-add_core_of = ETR
-}
-  287 = {
-add_core_of = ETR
-}
-  760 = {
-add_core_of = ETR
-}
-  759 = {
-add_core_of = ETR
-}
-  756 = {
-add_core_of = ETR
-}
-  755 = {
-add_core_of = ETR
-}
-  604 = {
-add_core_of = ETR
-     }
-    }
-   }		
- }
- option = {
+				619 = {
+				add_core_of = ETR
+				}
+				617 = {
+				add_core_of = ETR
+				}
+				287 = {
+				add_core_of = ETR
+				}
+				760 = {
+				add_core_of = ETR
+				}
+				759 = {
+				add_core_of = ETR
+				}
+				756 = {
+				add_core_of = ETR
+				}
+				755 = {
+				add_core_of = ETR
+				}
+				604 = {
+				add_core_of = ETR
+				}
+   			}
+   		}		
+ 	}
+	option = {
 		name = roc.2.b
         ai_chance = {factor = 0}
 		custom_effect_tooltip = ROC_ETR_TT_2
-		hidden_effect = {ETR= {change_tag_from = ROC}
+		hidden_effect = {
+			ETR = {change_tag_from = ROC}
 			ETR = {
-  transfer_state = 619
-  transfer_state = 617
-  transfer_state = 287
-  transfer_state = 760
-  transfer_state = 759
-  transfer_state = 756
-  transfer_state = 755
-  transfer_state = 604
+				transfer_state = 619
+				transfer_state = 617
+				transfer_state = 287
+				transfer_state = 760
+				transfer_state = 759
+				transfer_state = 756
+				transfer_state = 755
+				transfer_state = 604
   
-  619 = {
-add_core_of = ETR
-}
-  617 = {
-add_core_of = ETR
-}
-  287 = {
-add_core_of = ETR
-}
-  760 = {
-add_core_of = ETR
-}
-  759 = {
-add_core_of = ETR
-}
-  756 = {
-add_core_of = ETR
-}
-  755 = {
-add_core_of = ETR
-}
-  604 = {
-add_core_of = ETR
-     }
-    }
+				619 = {
+				add_core_of = ETR
+				}
+				617 = {
+				add_core_of = ETR
+				}
+				287 = {
+				add_core_of = ETR
+				}
+				760 = {
+				add_core_of = ETR
+				}
+				759 = {
+				add_core_of = ETR
+				}
+				756 = {
+				add_core_of = ETR
+				}
+				755 = {
+				add_core_of = ETR
+				}
+				604 = {
+				add_core_of = ETR
+				}
+			}
 		}
-     }
-	}
+    }
+}
 	 
 country_event = { #Spooky Dai Li Seperation
 	id = roc.3
 	title = roc.3.t
 	desc = roc.3.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -134,95 +135,96 @@ country_event = { #Spooky Dai Li Seperation
         ai_chance = {factor = 100}
 		custom_effect_tooltip = ROC_CRF_TT
 		hidden_effect = {
-		CRF = {
-  transfer_state = 752	
-  transfer_state = 753	
-  transfer_state = 754
-  transfer_state = 616
-  transfer_state = 283
-  transfer_state = 746
-  transfer_state = 622
-  transfer_state = 615
-  
-    752 = {
-add_core_of = CRF
-}
-  753 = {
-add_core_of = CRF
-}
-  754 = {
-add_core_of = CRF
-}
-  616 = {
-add_core_of = CRF
-}
-  283 = {
-add_core_of = CRF
-}
-  746 = {
-add_core_of = CRF
-}
-  622 = {
-add_core_of = CRF
-}
-  615 = {
-add_core_of = CRF
-}
-	load_oob = "CRF_1936"
-    }
-   }		
- }
+			CRF = {
+				transfer_state = 752	
+				transfer_state = 753	
+				transfer_state = 754
+				transfer_state = 616
+				transfer_state = 283
+				transfer_state = 746
+				transfer_state = 622
+				transfer_state = 615
+				
+					752 = {
+				add_core_of = CRF
+				}
+				753 = {
+				add_core_of = CRF
+				}
+				754 = {
+				add_core_of = CRF
+				}
+				616 = {
+				add_core_of = CRF
+				}
+				283 = {
+				add_core_of = CRF
+				}
+				746 = {
+				add_core_of = CRF
+				}
+				622 = {
+				add_core_of = CRF
+				}
+				615 = {
+				add_core_of = CRF
+				}
+				load_oob = "CRF_1936"
+			}
+		}		
+ 	}
 
  option = {
 		name = roc.3.b
         ai_chance = {factor = 0}
 		custom_effect_tooltip = ROC_CRF_TT_2
-		hidden_effect = {CRF= {change_tag_from = ROC}
-	CRF = {
-  transfer_state = 752	
-  transfer_state = 753	
-  transfer_state = 754
-  transfer_state = 616
-  transfer_state = 283
-  transfer_state = 746
-  transfer_state = 622
-  transfer_state = 615
-   752 = {
-add_core_of = CRF
-}
-  753 = {
-add_core_of = CRF
-}
-  754 = {
-add_core_of = CRF
-}
-  616 = {
-add_core_of = CRF
-}
-  283 = {
-add_core_of = CRF
-}
-  746 = {
-add_core_of = CRF
-}
-  622 = {
-add_core_of = CRF
-}
-  615 = {
-add_core_of = CRF
-}
-	load_oob = "CRF_1936"
-   			 }
-			}
-    	 }
+		hidden_effect = {
+			CRF = {change_tag_from = ROC}
+			CRF = {
+				transfer_state = 752	
+				transfer_state = 753	
+				transfer_state = 754
+				transfer_state = 616
+				transfer_state = 283
+				transfer_state = 746
+				transfer_state = 622
+				transfer_state = 615
+				752 = {
+				add_core_of = CRF
+				}
+				753 = {
+				add_core_of = CRF
+				}
+				754 = {
+				add_core_of = CRF
+				}
+				616 = {
+				add_core_of = CRF
+				}
+				283 = {
+				add_core_of = CRF
+				}
+				746 = {
+				add_core_of = CRF
+				}
+				622 = {
+				add_core_of = CRF
+				}
+				615 = {
+				add_core_of = CRF
+				}
+				load_oob = "CRF_1936"
+   			}
 		}
+    }
+}
 	
 	country_event = { #Qing Dynasty Li Seperation
 	id = roc.4
 	title = roc.4.t
 	desc = roc.4.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -233,72 +235,73 @@ add_core_of = CRF
         ai_chance = {factor = 100}
 		custom_effect_tooltip = ROC_QID_TT
 		hidden_effect = {
-		QID = {
-  transfer_state = 609
-  transfer_state = 608
-  transfer_state = 614
-  transfer_state = 597
-  transfer_state = 743
-  
-  609 = {
-add_core_of = QID
-}
-  608 = {
-add_core_of = QID
-}
-  614 = {
-add_core_of = QID
-}
-  597 = {
-add_core_of = QID
-}
-  743 = {
-add_core_of = QID
-}
-   	load_oob = "QID_1936"	
-   }	
- }
-}
+			QID = {
+				transfer_state = 609
+				transfer_state = 608
+				transfer_state = 614
+				transfer_state = 597
+				transfer_state = 743
+				
+				609 = {
+				add_core_of = QID
+				}
+				608 = {
+				add_core_of = QID
+				}
+				614 = {
+				add_core_of = QID
+				}
+				597 = {
+				add_core_of = QID
+				}
+				743 = {
+				add_core_of = QID
+				}
+				load_oob = "QID_1936"	
+   			}	
+ 		}
+	}
 
  option = {
 		name = roc.4.b
         ai_chance = {factor = 0}
 		custom_effect_tooltip = ROC_QID_TT_2
-		hidden_effect = {QID= {change_tag_from = ROC}
+		hidden_effect = {
+			QID = {change_tag_from = ROC}
 			QID = {
-  transfer_state = 609
-  transfer_state = 608
-  transfer_state = 614
-  transfer_state = 597
-  transfer_state = 743
-  
-  609 = {
-add_core_of = QID
+				transfer_state = 609
+				transfer_state = 608
+				transfer_state = 614
+				transfer_state = 597
+				transfer_state = 743
+				
+				609 = {
+				add_core_of = QID
+				}
+				608 = {
+				add_core_of = QID
+				}
+				614 = {
+				add_core_of = QID
+				}
+				597 = {
+				add_core_of = QID
+				}
+				743 = {
+				add_core_of = QID
+				}
+				load_oob = "QID_1936"
+   			}	
+    	}
+	}
 }
-  608 = {
-add_core_of = QID
-}
-  614 = {
-add_core_of = QID
-}
-  597 = {
-add_core_of = QID
-}
-  743 = {
-add_core_of = QID
-}
-	load_oob = "QID_1936"
-   }	
-    }
-		}
-     }
 
 country_event = { #Peoples Republic of China Seperation
 	id = roc.5
 	title = roc.5.t
 	desc = roc.5.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -309,103 +312,104 @@ country_event = { #Peoples Republic of China Seperation
         ai_chance = {factor = 100}
 		custom_effect_tooltip = ROC_PRC_TT
 		hidden_effect = {
-		PRC = {
-  transfer_state = 749
-  transfer_state = 605
-  transfer_state = 750
-  transfer_state = 620
-  transfer_state = 744
-  transfer_state = 607
-  transfer_state = 606
-  transfer_state = 613
-  transfer_state = 598
-  
-    749 = {
-add_core_of = PRC
-}
-  605 = {
-add_core_of = PRC
-}
-  750 = {
-add_core_of = PRC
-}
-  620 = {
-add_core_of = PRC
-}
-744 = {
-add_core_of = PRC
-}
-607 = {
-add_core_of = PRC
-}
-606 = {
-add_core_of = PRC
-}
-613 = {
-add_core_of = PRC
-}
-598 = {
-add_core_of = PRC
-}
-   }		
- }
-}
+			PRC = {
+				transfer_state = 749
+				transfer_state = 605
+				transfer_state = 750
+				transfer_state = 620
+				transfer_state = 744
+				transfer_state = 607
+				transfer_state = 606
+				transfer_state = 613
+				transfer_state = 598
+				
+					749 = {
+				add_core_of = PRC
+				}
+				605 = {
+				add_core_of = PRC
+				}
+				750 = {
+				add_core_of = PRC
+				}
+				620 = {
+				add_core_of = PRC
+				}
+				744 = {
+				add_core_of = PRC
+				}
+				607 = {
+				add_core_of = PRC
+				}
+				606 = {
+				add_core_of = PRC
+				}
+				613 = {
+				add_core_of = PRC
+				}
+				598 = {
+				add_core_of = PRC
+				}
+  			}	
+ 		}
+	}
 
  option = {
 		name = roc.5.b
         ai_chance = {factor = 0}
 		custom_effect_tooltip = ROC_PRC_TT_2
-		hidden_effect = {PRC= {change_tag_from = ROC}
+		hidden_effect = {
+			PRC = { country_event = { id = prc.1 days = 2}}
+			PRC= {change_tag_from = ROC}
 			PRC = {
-  transfer_state = 749
-  transfer_state = 605
-  transfer_state = 750
-  transfer_state = 620
-  transfer_state = 744
-  transfer_state = 607
-  transfer_state = 606
-  transfer_state = 613
-  transfer_state = 598
-  
-   749 = {
-add_core_of = PRC
-} 
-  605 = {
-add_core_of = PRC
-}
-  750 = {
-add_core_of = PRC
-}
-  620 = {
-add_core_of = PRC
-}
-744 = {
-add_core_of = PRC
-}
-607 = {
-add_core_of = PRC
-}
-606 = {
-add_core_of = PRC
-}
-613 = {
-add_core_of = PRC
-}
-598 = {
-add_core_of = PRC
-}
-   }
+				transfer_state = 749
+				transfer_state = 605
+				transfer_state = 750
+				transfer_state = 620
+				transfer_state = 744
+				transfer_state = 607
+				transfer_state = 606
+				transfer_state = 613
+				transfer_state = 598
+				
+				749 = {
+				add_core_of = PRC
+				} 
+				605 = {
+				add_core_of = PRC
+				}
+				750 = {
+				add_core_of = PRC
+				}
+				620 = {
+				add_core_of = PRC
+				}
+				744 = {
+				add_core_of = PRC
+				}
+				607 = {
+				add_core_of = PRC
+				}
+				606 = {
+				add_core_of = PRC
+				}
+				613 = {
+				add_core_of = PRC
+				}
+				598 = {
+				add_core_of = PRC
+				}
+  			}
 		}
-	PRC = { country_event = { id = prc.1 days = 2}}
-     }
-	}
+    }
+}
 	 
 	country_event = { #terror attack at new year celebarations
 	id = roc.6
 	title = roc.6.t
 	desc = roc.6.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -453,7 +457,7 @@ country_event = { #emergency coaliton meeting
 	title = roc.7.t
 	desc = roc.7.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -470,7 +474,7 @@ country_event = { #a tip
 	title = roc.8.t
 	desc = roc.8.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -487,7 +491,7 @@ country_event = { #National speach
 	title = roc.9.t
 	desc = roc.9.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -506,7 +510,7 @@ country_event = { #Disaster pt1
 	title = roc.10.t
 	desc = roc.10.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -526,7 +530,7 @@ country_event = { #Disaster pt2
 	title = roc.11.t
 	desc = roc.11.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -547,7 +551,7 @@ country_event = { #Commies crying
 	title = roc.12.t
 	desc = roc.12.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -564,7 +568,7 @@ country_event = { #Commies symbols burn
 	title = roc.13.t
 	desc = roc.13.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -581,7 +585,7 @@ country_event = { #Commies square
 	title = roc.14.t
 	desc = roc.14.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -605,7 +609,7 @@ country_event = { #Commies leave
 	title = roc.15.t
 	desc = roc.15.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -626,7 +630,7 @@ country_event = { #Hunt mao
 	title = roc.16.t
 	desc = roc.16.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -643,7 +647,7 @@ country_event = { #Qing and beijing
 	title = roc.17.t
 	desc = roc.17.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -666,7 +670,7 @@ country_event = { #dai li murders ppl
 	title = roc.18.t
 	desc = roc.18.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -685,7 +689,7 @@ country_event = { #dai li pardoned
 	title = roc.19.t
 	desc = roc.19.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -706,7 +710,7 @@ country_event = { #Civil war intro
 	title = roc.20.t
 	desc = roc.20.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -722,7 +726,7 @@ country_event = { #14hr work days crying
 	title = roc.21.t
 	desc = roc.21.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -753,7 +757,7 @@ country_event = { #War Department
 	title = roc.22.t
 	desc = roc.22.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -776,7 +780,7 @@ country_event = { #Wei's plan
 	title = roc.23.t
 	desc = roc.23.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -794,7 +798,7 @@ country_event = { #Xue Yue's plan
 	title = roc.24.t
 	desc = roc.24.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -811,7 +815,7 @@ country_event = { #Wei's plan pt2
 	title = roc.25.t
 	desc = roc.25.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -876,7 +880,7 @@ country_event = { #Wei's plan pt3
 	title = roc.26.t
 	desc = roc.26.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -894,7 +898,7 @@ country_event = { #Wei's plan pt4
 	title = roc.27.t
 	desc = roc.27.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -911,7 +915,7 @@ country_event = { #14hr work days crying pt 2
 	title = roc.28.t
 	desc = roc.28.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -942,7 +946,7 @@ country_event = { #Xue Yue's plan pt 2
 	title = roc.29.t
 	desc = roc.29.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -959,7 +963,7 @@ country_event = { #Xue Yue's plan pt 3
 	title = roc.30.t
 	desc = roc.30.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -987,7 +991,7 @@ country_event = { #Xue Yue's plan pt 4
 	title = roc.31.t
 	desc = roc.31.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -1008,7 +1012,7 @@ country_event = { #Dai Li disappears
 	title = roc.32.t
 	desc = roc.32.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -1025,7 +1029,7 @@ country_event = { #Chiang in power
 	title = roc.33.t
 	desc = roc.33.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
@@ -1076,7 +1080,7 @@ country_event = { #Test Event
 	title = roc.100.t
 	desc = roc.100.d
 
-	picture = GFX_report_event_aut_dollfuss_speech
+	
 
 	fire_only_once = yes
 
