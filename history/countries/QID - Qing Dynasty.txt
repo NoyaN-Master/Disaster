@@ -61,9 +61,9 @@ add_ideas = interventionism
 add_ideas = semi_industrial_society
 
 create_country_leader = {
-	name = "Yuntai Emperor"
-	desc = "CHI_Yuan_Keding_desc"
-	picture = "gfx/leaders/CHI/CHI_Yuan_Keding.tga"
+	name = "Emperor Puyi"
+	#desc = "CHI_Yuan_Keding_desc"
+	picture = "gfx/leaders/QID/QID_puyi.tga"
 	expire = "2020.1.1"
 	ideology = autocratic_subideology
 	traits = {
