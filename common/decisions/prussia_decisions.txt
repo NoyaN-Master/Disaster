@@ -184,6 +184,7 @@ PRE_generalplan_ost_decision = {
 		  98 = {transfer_state_to = PRE}
 		  87 = {transfer_state_to = PRE}
 		  hidden_effect = {
+		country_event = { id = preo.10 days = 10 }
 		PLN = {remove_state_core = 809}
 		PLN = {remove_state_core = 85}
 		PLN = {remove_state_core = 86}
@@ -339,6 +340,8 @@ PRE_generalplan_ost_step_2_finish = { #migrate germans to these lands
 		92 = {add_dynamic_modifier = { modifier = polish_resistance }}
 		10 = {add_dynamic_modifier = { modifier = polish_resistance }}
 		808 = {add_dynamic_modifier = { modifier = polish_resistance }} 	  
+		  
+		  
 		  }
 		set_country_flag = PRE_taken_territory_2
 		remove_ideas = PRE_polish_terrorism_3

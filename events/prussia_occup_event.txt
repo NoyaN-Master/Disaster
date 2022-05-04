@@ -385,3 +385,55 @@ country_event = { #finally germanized
 	add_state_core = 75
 	}
 }
+country_event = { #goltz reprisals
+	id = preo.9
+	title = preo.9.t
+	desc = preo.9.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = preo.9.a
+		ai_chance = { factor = 1}
+	190 = {
+	add_manpower = -50000
+	add_resistance = 20
+	}
+	12 = {
+	add_manpower = -500000
+	}
+	13 = {
+	add_manpower = -50000
+	add_resistance = 20
+	}
+	191 = {
+	add_manpower = -50000
+	add_resistance = 20
+	}
+	BLT = {
+	add_stability = -0.20
+	add_war_support = -0.20
+	}
+	565 = {
+	add_manpower = 600000
+	}
+	}
+}
+country_event = { #volksliste
+	id = preo.10
+	title = preo.10.t
+	desc = preo.10.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = preo.10.a
+		ai_chance = { factor = 1}
+	add_war_support = 0.05
+	}
+	option = {
+		name = preo.10.b
+		ai_chance = { factor = 1}
+	add_stability = 0.05
+	}
+}

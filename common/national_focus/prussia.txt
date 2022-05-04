@@ -284,7 +284,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = PRE_stir_up_mecklenburg
 		cost = 5		
-		prerequisite = { focus = PRE_thrust_south }	
+		prerequisite = { focus = PRE_little_german_solution }	
 		completion_reward = {
 		}
 	}
@@ -576,6 +576,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_von_goltz_plan }	
 		completion_reward = {
 		hidden_effect = {
+		country_event = { id = preo.9 }	
         release = LIT
         release = LAT
         release = EST
