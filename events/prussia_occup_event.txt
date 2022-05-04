@@ -437,3 +437,26 @@ country_event = { #volksliste
 	add_stability = 0.05
 	}
 }
+
+country_event = { # Italy Surrenders
+	id = preo.11
+	title = preo.11.t
+	desc = preo.11.d
+	fire_only_once = yes
+	
+	trigger = {
+	tag = PRE
+	has_war_with = FIU
+	FIU = {surrender_progress > 0.1 }
+	has_completed_focus = PRE_sud_tirol
+	}
+	
+	option = {
+		name = preo.11.a
+		ai_chance = { factor = 100}
+		white_peace = FIU
+	39 = {transfer_state_to = PRE}
+	811 = {transfer_state_to = PRE}
+	add_political_power = 50
+	}
+}

@@ -153,13 +153,18 @@ focus_tree = {
 		cost = 5	
 		ai_will_do = { factor = 1000 }		
 		available = {
-					OR = {
+		is_neighbor_of = MEK
+		country_exists = MEK
+			OR = {
 			has_completed_focus = PRE_republic_lives_on
 			has_completed_focus = PRE_legacy_of_1848
 			has_completed_focus = PRE_restore_monarchy
 			has_completed_focus = PRE_nacht_der_langer_messer
 			has_completed_focus = PRE_social_role_army
 			}
+		}
+		bypass = {
+		NOT = {country_exists = MEK}
 		}
 		select_effect = {
 		country_event = { id = mek.1 days = 5 }		
@@ -187,6 +192,9 @@ focus_tree = {
 		cost = 3		
 		prerequisite = { focus = PRE_stir_up_mecklenburg }
 		ai_will_do = { factor = 1000 }		
+		bypass = {
+		NOT = {country_exists = SAX}
+		}		
 		available = {
 		59 = {is_owned_and_controlled_by = PRE }	
 		56 = {is_owned_and_controlled_by = PRE }	
@@ -325,8 +333,27 @@ focus_tree = {
 		relative_position_id = PRE_stir_up_mecklenburg
 		cost = 5		
 		prerequisite = { focus = PRE_continue_kulturkampf }	
-
+		bypass = {
+		owns_state = 39
+		owns_state = 811
+		}
+		will_lead_to_war_with = FIU		
+		available = {
+		has_war = no
+		is_neighbor_of = FIU
+		country_exists = FIU
+		}
 		completion_reward = {
+		PRE = {
+		add_state_claim = 39
+		add_state_claim = 811}
+		if = {
+		limit = { country_exists = FIU }
+		declare_war_on = {
+        target = FIU
+        type = annex_everything
+        }
+    }
 		}
 	}
 	focus = {
@@ -391,6 +418,9 @@ focus_tree = {
 		available = {
 		has_war = no	
 		has_army_manpower = { size > 350000 } 
+		}
+		bypass = {
+		NOT = {country_exists = PLN}
 		}		
 		completion_reward = {
 		declare_war_on = {
