@@ -101,7 +101,7 @@ focus_tree = {
 	}
 		focus = {
 		id = CRF_focus_6
-		icon = ""
+		icon = GFX_goal_CRF_demon_command
 		x = 8
 		y = 5
 		cost = 5
@@ -122,7 +122,7 @@ focus_tree = {
 	}
 	focus = {
 	id = CRF_focus_7
-	icon = ""
+	icon = GFX_goal_CRF_the_demon_scouts
 	x = 4
 	y = 6
 	cost = 5
@@ -292,7 +292,7 @@ hidden_effect = { 615 = {create_unit = {
 	}
 	focus = {
 	id = CRF_focus_10
-	icon = ""
+	icon = GFX_goal_CRF_demon_waves
 	x = 8
 	y = 6
 	cost = 5
@@ -354,7 +354,7 @@ hidden_effect = { 615 = {create_unit = {
 }
 	focus = {
 	id = CRF_focus_13
-	icon = ""
+	icon = GFX_goal_CRF_all_ages_work
 	x = 12
 	y = 6
 	cost = 5

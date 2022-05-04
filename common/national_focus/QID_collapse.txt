@@ -28,7 +28,7 @@ focus_tree = {
 	
 		focus = {
 		id = QID_focus_2
-		icon = ""
+		icon = GFX_goal_QID_Japanese_Exiles
 		x = 8
 		y = 2
 		cost = 5
@@ -45,7 +45,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QID_focus_3
-		icon = ""
+		icon = GFX_goal_QID_emperors_choice
 		x = 8
 		y = 3
 		cost = 5
@@ -60,7 +60,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QID_focus_4 #JAP
-		icon = ""
+		icon = GFX_goal_QID_Cherry_Blossoms
 		x = 1
 		y = 4
 		cost = 5
@@ -76,7 +76,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QID_focus_5 #Puyi
-		icon = ""
+		icon = GFX_goal_QID_The_Emperors_will
 		x = 15
 		y = 4
 		cost = 5
@@ -270,7 +270,7 @@ focus_tree = {
 	}
 		focus = {
 		id = QID_focus_12
-		icon = ""
+		icon = GFX_goal_QID_Import_japanese_experts
 		x = 3
 		y = 5
 		cost = 5
@@ -286,7 +286,7 @@ focus_tree = {
 	}
 		focus = {
 		id = QID_focus_13
-		icon = ""
+		icon = GFX_goal_QID_sideline_qing_officers
 		x = -1
 		y = 5
 		cost = 5
@@ -296,12 +296,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-	remove_idea = QID_cwar_qing_jap_who
+			remove_idea = QID_cwar_qing_jap_who
 		}
 	}
 		focus = {
 		id = QID_focus_14
-		icon = ""
+		icon = GFX_goal_QID_promote_billingualism_in_officers
 		x = 3
 		y = 6
 		cost = 5
@@ -319,7 +319,7 @@ focus_tree = {
 }
 		focus = {
 		id = QID_focus_15
-		icon = ""
+		icon = GFX_goal_QID_death_before_dishonor
 		x = -1
 		y = 6
 		cost = 5
@@ -329,12 +329,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-	add_idea = QID_cwar_bushido_tactics
+	add_ideas = QID_cwar_bushido_tactics
 		}
 	}
 		focus = {
 		id = QID_focus_16
-		icon = ""
+		icon = GFX_goal_QID_refugees_welcome
 		x = 3
 		y = 7
 		cost = 5

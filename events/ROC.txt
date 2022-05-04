@@ -18,7 +18,11 @@ country_event = { #Intro Event
 	option = {
 		name = roc.1.a
         ai_chance = {factor = 100}
-		
+		hidden_effect = {
+			PRC = {
+				set_cosmetic_tag = realPRC
+			}
+		}
 	}
 }
 country_event = { #Islamic Muslim Seperation
@@ -359,7 +363,7 @@ country_event = { #Peoples Republic of China Seperation
         ai_chance = {factor = 0}
 		custom_effect_tooltip = ROC_PRC_TT_2
 		hidden_effect = {
-			PRC = { country_event = { id = prc.1 days = 2}}
+			PRC = { country_event = { id = prc.1 days = 10}}
 			PRC= {change_tag_from = ROC}
 			PRC = {
 				transfer_state = 749
@@ -682,6 +686,7 @@ country_event = { #dai li murders ppl
 		add_stability = -0.1
 		hidden_effect = {ROC = { country_event = { id = roc.3 days = 2}} set_country_flag = DISASTER}
 		hidden_effect = {ROC = { country_event = { id = roc.2 days = 2}}}
+		hidden_effect = {country_event = {id = roc.34 days = 40}}
 	}
 }
 country_event = { #dai li pardoned
@@ -1073,7 +1078,81 @@ set_politics = {
 }
 	}	
 }
-	
+
+
+
+country_event = { #WAR
+	id = roc.34
+	title = roc.34.t
+	desc = roc.34.d
+
+	hidden = yes
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.34.a
+        ai_chance = {factor = 100}
+		ROC = {
+			declare_war_on = {
+				target = PRC
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = QID
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = CRF
+				type = annex_everything
+			}
+		}
+		PRC = {
+			declare_war_on = {
+				target = ROC
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = QID
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = CRF
+				type = annex_everything
+			}
+		}
+		QID = {
+			declare_war_on = {
+				target = PRC
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = ROC
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = CRF
+				type = annex_everything
+			}
+		}
+		CRF = {
+			declare_war_on = {
+				target = PRC
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = QID
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = ROC
+				type = annex_everything
+			}
+		}
+	}
+}	
 
 country_event = { #Test Event
 	id = roc.100
