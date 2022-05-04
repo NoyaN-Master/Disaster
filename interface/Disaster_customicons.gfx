@@ -1,4 +1,464 @@
 spriteTypes = {
+
+	SpriteType = {		
+		name = "GFX_goal_BAY_ROHM_ABSORB_SMALL"	
+		texturefile = "gfx/interface/goals/BAY_ROHM_ABSORB_SMALL.png"	
+	}		
+			
+	SpriteType = {		
+		name = "GFX_goal_BAY_ROHM_ABSORB_SMALL_shine"	
+		texturefile = "gfx/interface/goals/BAY_ROHM_ABSORB_SMALL.png"	
+		effectFile = "gfx/FX/buttonstate.lua"	
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/BAY_ROHM_ABSORB_SMALL.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+			
+		animation = {	
+			animationmaskfile = "gfx/interface/goals/BAY_ROHM_ABSORB_SMALL.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}	
+		legacy_lazy_load = no	
+			
+ }
+
+ SpriteType = {		
+	name = "GFX_goal_BAY_ROHM_DESTROY_NORTH"	
+	texturefile = "gfx/interface/goals/BAY_ROHM_DESTROY_NORTH.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_ROHM_DESTROY_NORTH_shine"	
+	texturefile = "gfx/interface/goals/BAY_ROHM_DESTROY_NORTH.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_ROHM_DESTROY_NORTH.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_ROHM_DESTROY_NORTH.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+
+SpriteType = {		
+	name = "GFX_goal_BAY_ROHM_DOWN_DANUBE"	
+	texturefile = "gfx/interface/goals/BAY_ROHM_DOWN_DANUBE.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_ROHM_DOWN_DANUBE_shine"	
+	texturefile = "gfx/interface/goals/BAY_ROHM_DOWN_DANUBE.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_ROHM_DOWN_DANUBE.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_ROHM_DOWN_DANUBE.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+
+SpriteType = {		
+	name = "GFX_goal_BAY_ROHM_INTO_BALTICS"	
+	texturefile = "gfx/interface/goals/BAY_ROHM_INTO_BALTICS.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_ROHM_INTO_BALTICS_shine"	
+	texturefile = "gfx/interface/goals/BAY_ROHM_INTO_BALTICS.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_ROHM_INTO_BALTICS.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_ROHM_INTO_BALTICS.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+
+SpriteType = {		
+	name = "GFX_goal_BAY_ROHM_INTO_RHINE"	
+	texturefile = "gfx/interface/goals/BAY_ROHM_INTO_RHINE.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_ROHM_INTO_RHINE_shine"	
+	texturefile = "gfx/interface/goals/BAY_ROHM_INTO_RHINE.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_ROHM_INTO_RHINE.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_ROHM_INTO_RHINE.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+
+SpriteType = {		
+	name = "GFX_goal_BAY_ROHM_INVADE_DENMARK"	
+	texturefile = "gfx/interface/goals/BAY_ROHM_INVADE_DENMARK.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_ROHM_INVADE_DENMARK_shine"	
+	texturefile = "gfx/interface/goals/BAY_ROHM_INVADE_DENMARK.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_ROHM_INVADE_DENMARK.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_ROHM_INVADE_DENMARK.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+
+SpriteType = {		
+	name = "GFX_goal_BAY_ROHM_INVADE_FRANCE"	
+	texturefile = "gfx/interface/goals/BAY_ROHM_INVADE_FRANCE.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_ROHM_INVADE_FRANCE_shine"	
+	texturefile = "gfx/interface/goals/BAY_ROHM_INVADE_FRANCE.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_ROHM_INVADE_FRANCE.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_ROHM_INVADE_FRANCE.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+
+SpriteType = {		
+	name = "GFX_goal_BAY_ROHM_INVADE_POLAND"	
+	texturefile = "gfx/interface/goals/BAY_ROHM_INVADE_POLAND.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_ROHM_INVADE_POLAND_shine"	
+	texturefile = "gfx/interface/goals/BAY_ROHM_INVADE_POLAND.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_ROHM_INVADE_POLAND.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_ROHM_INVADE_POLAND.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+
+SpriteType = {		
+	name = "GFX_goal_BAY_ROHM_INVADE_SCANDINAVIA"	
+	texturefile = "gfx/interface/goals/BAY_ROHM_INVADE_SCANDINAVIA.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_ROHM_INVADE_SCANDINAVIA_shine"	
+	texturefile = "gfx/interface/goals/BAY_ROHM_INVADE_SCANDINAVIA.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_ROHM_INVADE_SCANDINAVIA.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_ROHM_INVADE_SCANDINAVIA.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+
+SpriteType = {		
+	name = "GFX_goal_BAY_ROHM_KILL_BENELUX"	
+	texturefile = "gfx/interface/goals/BAY_ROHM_KILL_BENELUX.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_ROHM_KILL_BENELUX_shine"	
+	texturefile = "gfx/interface/goals/BAY_ROHM_KILL_BENELUX.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_ROHM_KILL_BENELUX.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_ROHM_KILL_BENELUX.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+
+SpriteType = {		
+	name = "GFX_goal_BAY_ROHM_RUSSIAN_WAR"	
+	texturefile = "gfx/interface/goals/BAY_ROHM_RUSSIAN_WAR.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_ROHM_RUSSIAN_WAR_shine"	
+	texturefile = "gfx/interface/goals/BAY_ROHM_RUSSIAN_WAR.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_ROHM_RUSSIAN_WAR.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_ROHM_RUSSIAN_WAR.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+
+SpriteType = {		
+	name = "GFX_goal_BAY_ROHM_SECURE_RESOURCES"	
+	texturefile = "gfx/interface/goals/BAY_ROHM_SECURE_RESOURCES.png"	
+}		
+		
+SpriteType = {		
+	name = "GFX_goal_BAY_ROHM_SECURE_RESOURCES_shine"	
+	texturefile = "gfx/interface/goals/BAY_ROHM_SECURE_RESOURCES.png"	
+	effectFile = "gfx/FX/buttonstate.lua"	
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_ROHM_SECURE_RESOURCES.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+		
+	animation = {	
+		animationmaskfile = "gfx/interface/goals/BAY_ROHM_SECURE_RESOURCES.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}	
+	legacy_lazy_load = no	
+		
+}
+	
+
+
+
 	SpriteType = {		
 		name = "GFX_goal_PRE_Little_German_Solution"	
 		texturefile = "gfx/interface/goals/PRE_Little_German_Solution.png"	

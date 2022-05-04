@@ -624,7 +624,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_rohm_absorb_south
-		icon = GFX_goal_BAY
+		icon = GFX_goal_BAY_ROHM_ABSORB_SMALL
 		x = 13
 		y = 2
 		available = {
@@ -646,7 +646,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_rohm_attack_north
-		icon = GFX_goal_BAY
+		icon = GFX_goal_BAY_ROHM_DESTROY_NORTH
 		x = 0
 		y = 1
 		relative_position_id = BAY_rohm_absorb_south
@@ -673,13 +673,16 @@ focus_tree = {
 
 	focus = {
 		id = BAY_rohm_attack_rhine
-		icon = GFX_goal_BAY
-		x = -1
-		y = 2
+		icon = GFX_goal_BAY_ROHM_INTO_RHINE
+		x = 0
+		y = 3
 		relative_position_id = BAY_rohm_absorb_south
 		cost = 3
 		prerequisite = {
-			focus = BAY_rohm_attack_north
+			focus = BAY_rohm_attack_danube
+		}
+		prerequisite = {
+			focus = BAY_rohm_attack_poles
 		}
 		completion_reward = {
 			declare_war_on = {
@@ -695,7 +698,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_rohm_attack_poles
-		icon = GFX_goal_BAY
+		icon = GFX_goal_BAY_ROHM_INVADE_POLAND
 		x = 1
 		y = 2
 		relative_position_id = BAY_rohm_absorb_south
@@ -713,16 +716,13 @@ focus_tree = {
 
 	focus = {
 		id = BAY_rohm_attack_danube
-		icon = GFX_goal_BAY
-		x = 0
-		y = 3
+		icon = GFX_goal_BAY_ROHM_DOWN_DANUBE
+		x = -1
+		y = 2
 		relative_position_id = BAY_rohm_absorb_south
 		cost = 3
 		prerequisite = {
-			focus = BAY_rohm_attack_poles
-		}
-		prerequisite = {
-			focus = BAY_rohm_attack_rhine
+			focus = BAY_rohm_attack_north
 		}
 		completion_reward = {
 			declare_war_on = {
@@ -747,13 +747,13 @@ focus_tree = {
 
 	focus = {
 		id = BAY_rohm_secure_resources
-		icon = GFX_goal_BAY
+		icon = GFX_goal_BAY_ROHM_SECURE_RESOURCES
 		x = -1
 		y = 4
 		relative_position_id = BAY_rohm_absorb_south
 		cost = 3
 		prerequisite = {
-			focus = BAY_rohm_attack_danube
+			focus = BAY_rohm_attack_rhine
 		}
 		completion_reward = {
 			declare_war_on = {
@@ -770,13 +770,13 @@ focus_tree = {
 
 	focus = {
 		id = BAY_rohm_attack_baltics
-		icon = GFX_goal_BAY
+		icon = GFX_goal_BAY_ROHM_INTO_BALTICS
 		x = 1
 		y = 4
 		relative_position_id = BAY_rohm_absorb_south
 		cost = 3
 		prerequisite = {
-			focus = BAY_rohm_attack_danube
+			focus = BAY_rohm_attack_rhine
 		}
 		completion_reward = {
 			declare_war_on = {
@@ -797,7 +797,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_rohm_attack_russia
-		icon = GFX_goal_BAY
+		icon = GFX_goal_BAY_ROHM_RUSSIAN_WAR
 		x = 0
 		y = 5
 		relative_position_id = BAY_rohm_absorb_south
@@ -820,13 +820,13 @@ focus_tree = {
 
 	focus = {
 		id = BAY_rohm_attack_benelux
-		icon = GFX_goal_BAY
+		icon = GFX_goal_BAY_ROHM_KILL_BENELUX
 		x = -3
 		y = 4
 		relative_position_id = BAY_rohm_absorb_south
 		cost = 3
 		prerequisite = {
-			focus = BAY_rohm_attack_danube
+			focus = BAY_rohm_attack_rhine
 		}
 		completion_reward = {
 			declare_war_on = {
@@ -847,7 +847,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_rohm_attack_france
-		icon = GFX_goal_BAY
+		icon = GFX_goal_BAY_ROHM_INVADE_FRANCE
 		x = -3
 		y = 5
 		relative_position_id = BAY_rohm_absorb_south
@@ -866,13 +866,13 @@ focus_tree = {
 
 	focus = {
 		id = BAY_rohm_attack_denmark
-		icon = GFX_goal_BAY
+		icon = GFX_goal_BAY_ROHM_INVADE_DENMARK
 		x = 3
 		y = 4
 		relative_position_id = BAY_rohm_absorb_south
 		cost = 3
 		prerequisite = {
-			focus = BAY_rohm_attack_danube
+			focus = BAY_rohm_attack_rhine
 		}
 		completion_reward = {
 			declare_war_on = {
@@ -885,13 +885,13 @@ focus_tree = {
 
 	focus = {
 		id = BAY_rohm_attack_scandinavia
-		icon = GFX_goal_BAY
+		icon = GFX_goal_BAY_ROHM_INVADE_SCANDINAVIA
 		x = 3
 		y = 5
 		relative_position_id = BAY_rohm_absorb_south
 		cost = 3
 		prerequisite = {
-			focus = BAY_rohm_attack_danube
+			focus = BAY_rohm_attack_rhine
 		}
 		completion_reward = {
 			declare_war_on = {
