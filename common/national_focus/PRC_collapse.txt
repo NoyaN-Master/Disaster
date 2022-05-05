@@ -295,6 +295,7 @@ focus = {
 		}
 		completion_reward = {
 			PRC = { country_event = { id = prc.12}}
+			set_country_flag = PRC_focus_17_completed
 		}
 	}
 			focus = {

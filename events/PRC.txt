@@ -280,7 +280,7 @@ country_event = { #Contact Puyi
         ai_chance = {factor = 50}	
 		custom_effect_tooltip = PRC_TT_QING_PROP
 		set_country_flag = PRC_qing_prop_flag
-			add_stability = -0.15
+		add_stability = -0.15
   }
   	option = {
 		name = prc.11.b
@@ -340,7 +340,7 @@ country_event = { #The Strangest Proposal in History
         add_ideas = prc_cwar_unholy_agreement
 		annex_country = {
     target = QID
-    transfer_troops = no
+    transfer_troops = yes
 }
 set_cosmetic_tag = prcqingtag
 add_popularity = {
@@ -420,5 +420,6 @@ add_popularity = {
 		remove_ideas = prc_cwar_unholy_agreement
   }
  }
+
 
 
