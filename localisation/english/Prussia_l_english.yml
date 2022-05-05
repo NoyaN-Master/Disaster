@@ -34,8 +34,8 @@ preo.7.d:0 "While the core lands of Bohemia had long languished under the Austri
 preo.7.a:0 "Let's do this"
 
 preo.8.t:0 "A Germanized Bohemia"
-preo.8.d:0 ""
-preo.8.a:0 ""
+preo.8.d:0 "It is done. Sisyphus has pushed the boulder to the top, and it has stayed. The Czech culture is dead, the Böhmisch culture rises. We have done what neither the First Reich nor the Austrian Empire could. Our flag hangs from Prag castle, once it was saluted out of fear, but now the adults salute it out of new-found duty. The children do so with glee. What fragments of the old culture remain are those we picked, that of Good King Wenzel and Easter Carp. Schoolchildren are surprised to learn that there ever was a Czech state in their history classes, but it is quickly passed over. They consider asking their elders about it, but they don't want to bother their Mutti or Vati to translate their questions. What resistance remains is almost entirely that of a feeble and dying generation; those who can scarcely see attempting to sway the minds of those who witness new prosperity. Why fight to not be Germanic, the young parents consider, when the wages of being a Slav are so burdensome? For the children, there is no such pondering. They are Böhmisch, the first-born son of the German Volk, and their sons and daughters will be Böhmisch, forever. They celebrate their place in the Germanic family, favored nephew to those which their forefathers derided." and event accept text is "Welcome to the family, little one."
+preo.8.a:0 "Superb"
 
 preo.9.t:0 "Von Goltz's Revenge"
 preo.9.d:0 "The Baltic Germans, rightful settlers of the land, were expulsed by the Latvian and Estonian oppressors shortly after the Baltic Duchy's collapse. Millions of Baltic Germans were displaced, beaten, tortured and even killed. After we had retaken these rightful German territory von Goltz promised that these injustfull acts will not go unpunished. These terrible crimes will be reversed he shouted. Von Goltz has organised a plan where Baltic Germans will be transferred back into their cities, homes and business and, in order to accommodate for such, Estonian and Latvian people will have a taste of their own medicine and will be sent out to a foreign land, as our people had to endure."
@@ -47,8 +47,8 @@ preo.10.a:0 "Give the authorization, and prepare a list of initial families. If 
 preo.10.b:0 "No. Partially Germanic is still mostly Slav"
 
 preo.11.t:0 "Italians Accept Defeat"
-preo.11.d:0 ""
-preo.11.a:0 "RIPBOZO"
+preo.11.d:0 "The Italians are cowardly, this has been known since time immemorial, but we can now add stupid to list of their traits. To rely on their mountain ranges to resist us is to forget that the people of those ranges were once Austrian. Such people either await the return of our rule, or have been so Italicized that they are incapable of resistance. We have marched through the cheering streets of the towns of Sudtirol, and into Italy itself, forcing the Italians to surrender or risk losing yet more territory to us. The Sudtirolians must have long awaited our return, or else their craftsmen have been working feverishly since our invasion; either way, our leaders are pleased to note that our flag has been proudly hung from nearly every town hall of our newly restored lands. There is some discussion amongst them of their place in our Volk, whether they are a separate branch of our Germanic family, newly restored, or simply Austrians, but either way they have proudly embraced us."
+preo.11.a:0 "Gratitude is a unique blessing."
 ####### new foreign policy loc
 PRE_stir_up_mecklenburg:0"Stir Up Mecklenburg"
 PRE_stir_up_mecklenburg_desc:0"The Socialist breakaway is a betrayal of everything German. they betray our nation, betray our people and then dare claim legitimacy as the heirs of the German state. They are a threat that will be put down. However, simply declaring war on them would put us in a position as to where we look like the aggressors, rather than the liberators of the German People. Perhaps we can lure the NGPU into an attack and make them out to be the aggressors that they truly are?"
@@ -64,11 +64,11 @@ PRE_reapproach_the_poles:0"Finalize the German- Polish border"
 PRE_reapproach_the_poles_desc:0"The lands of poland have been conquered for the German government after many years of our lost lands remaining at the hands of seperatists. But it is mere soil we control, and the spirit of the polish seperatists in versailles has stayed the same. However, after many drafts a solution has been reached, and it has been ordered that a new polish state be constructed, along a population exchange for the sake of ending irredentism at last."
 PRE_reapproach_the_poles_tooltip:0"§GThe Population Exchange and finalization of borders will take place by event.§!"
 PRE_generalplan_ost:0"Solidify the Ostsiedlung"
-PRE_generalplan_ost_desc:0 ""
+PRE_generalplan_ost_desc:0 "During the Medieval Ages, a large number of Germans swept east in the Ostsiedlung, settling in the various Slavic areas, especially in Poland. Many still remain. Over those lands which we have chosen not to directly rule, the Generaal Gouvernment, we shall place Hans Frank in charge, to solidify our control in those areas. These areas currently contain a low concentration of Germans. We shall fix that."
 PRE_reinforce_generaal_gouvernment:0"Reinforce Generaal gouvernment"
-PRE_reinforce_generaal_gouvernment_desc:0""
+PRE_reinforce_generaal_gouvernment_desc:0"Like so many members of the Slavic family, the Polish are very stubborn. Unhappy with living in a stable, industrious state, they rise up in droves to defy our rule, demanding return to their feeble "state", a disgusting product of the failed Treaty of Versaille. Hans Frank, though a capable administrator of his new fiefdom, writes to us informing he will need more aid to defeat the rebels, primarily military. We shall send it, and crush those who stand in the way of our progress."
 PRE_generalplan_ost_2:0"Start Generalplan Ost"
-PRE_generalplan_ost_2_desc:0 ""
+PRE_generalplan_ost_2_desc:0 "It hardly bears repeating that the Polish are a very stubborn people. Unfortunately for them, they have no other redeeming factors. They lack the industriousness of the Czechs, the martial spirit of the Silesians, or the pliability of the Kashubians. An interesting question has reached its way to the top of our country, "why bother with such people?" These people can never be Germanized in whole, too deep does the Slavic rot run through their roots. If they cannot handle living in a country guided by Germans, to be civilized and taught, then we shall take their terms as acceptable, §Rthey shall not live in such a country§!."
 
 
 
@@ -95,9 +95,9 @@ PRE_generalplan_ost_take_territory_step_2_desc:0"§RBefore we can start phase th
 polish_resistance:0"Polish Resistance"
 
 PRE_von_goltz_plan:0"Von Goltz Plan"
-PRE_von_goltz_plan_desc:0"Rudiger von Goltz, a veteran of campaigns against the Bolsheviks in the Baltic, has proposed the creation of a state dominated by the Baltic German minority in the small statelets between us and Russia. it would be a useful vanguard in the east."
+PRE_von_goltz_plan_desc:0"Although the number of pure blooded Germans is quite low in the Baltic states, there is still a considerable and influential minority in these regions, many of whom have planted deep roots. Many of the Baltic peoples themselves have been influenced by the culture of their Germanic aristocrats over time, and we believe that a large number of them could be successfully Germanized. We shall seize these lands immediately, in order to both rescue the small German minority and endeavor to improve the Baltic residents."
 PRE_germanize_baltics:0"Germanize the Baltics"
-PRE_germanize_baltics_desc:0""
+PRE_germanize_baltics_desc:0"God does work miracles, and we have the proof of it. Unlike the many cultures which react with outrage at the mere thought of being brought into the perfect Germanic fold, we have found a new reaction from many of the Baltic peoples: interest. These peoples have seen the mighty wonders of the Germans of their lands, witnessed how they birth generals and intellectuals at astonishing rates, and they are envious. We shall turn this envy to hope; as accursed as the Teutonic Order was, they managed to spread the Germanic seed among the population far, if not so very deep. These people can be saved from their ways, indeed, many want to be saved from their waves, and we shall do so."
 PRE_germanize_baltics_tooltip:"§GA new Baltic state will be formed led by Von Goltz, also decisions will be become available to help Germanize the Baltics§!"
 
 PRE_germanize_baltics_decision:0"Germanization of the Baltics"
