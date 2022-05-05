@@ -1,5 +1,5 @@
 capital = 13
-oob = ""
+oob = "EST_1936"
 
 set_technology = {
 	infantry_weapons = 1
@@ -60,10 +60,68 @@ add_ideas = 	military_government
 add_ideas = 	corporatism 
 add_ideas = 	industrialized_society
 
+############military
+create_corps_commander = {
+	name = "Aleksander Tonisson"
+	portrait_path = "gfx/leaders/EST/Portrait_EST_Aleksander_Tonisson.png"
+	traits = { 
 
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Andres Larka"
+	portrait_path = "gfx/leaders/EST/Portrait_EST_Andres_Larka_KR.png"
+	traits = { 
+
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Jaan Kruus"
+	portrait_path = "gfx/leaders/EST/Portrait_EST_Jaan_Kruus.png"
+	traits = { 
+
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Johan Laidoner"
+	portrait_path = "gfx/leaders/EST/Portrait_EST_Johan_Laidoner_KR.png"
+	traits = { 
+
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_navy_leader = {
+	name = "Johan Pitka"
+	portrait_path = "gfx/leaders/EST/Portrait_EST_Johan_Pitka.png"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
 create_country_leader = {
-	name = "Rüdiger von der Goltz"
-	picture = "gfx/leaders/BLT/BLT_Goltz.tga"
+	name = "Artur Sirk"
+	picture = "gfx/leaders/EST/Portrait_EST_Artur_Sirk_KR.png"
 	expire = "2020.1.1"
 	ideology = ultranationalist_subideology
 	traits = {

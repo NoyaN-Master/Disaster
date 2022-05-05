@@ -76,11 +76,69 @@ create_country_leader = {
 		#
 	}
 }
+#########military
+create_navy_leader = {
+	name = "Carsten Tank Nielsen"
+	portrait_path = "gfx/leaders/NRG/Portrait_Norway_Carsten_Tank_Nielsen.png"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+create_field_marshal = {
+	name = "Haakon VII"
+	portrait_path = "gfx/leaders/NRG/Portrait_Norway_Haakon_VII.png"
+	traits = { 
 
+	}
+	skill = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Birger Ljungberg"
+	portrait_path = "gfx/leaders/NRG/Portrait_Norway_Birger_Ljungberg.png"
+	traits = { 
+
+	}
+	skill = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Carl Gustav Fleischer"
+	portrait_path = "gfx/leaders/NRG/Portrait_Norway_Carl_Gustav_Fleischer.png"
+	traits = { 
+
+	}
+	skill = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "William Steffens"
+	portrait_path = "gfx/leaders/NRG/Portrait_Norway_William_Steffens.png"
+	traits = { 
+
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
 create_country_leader = {
 	name = "Haakon VII"
 	#desc = "NRG_Haakon_desc"
-	picture = "NRG_Haakon.tga"
+	picture = "Portrait_Norway_Haakon_VII.png"
 	expire = "2020.1.1"
 	ideology = conservative_subideology
 	traits = {

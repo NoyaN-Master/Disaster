@@ -378,7 +378,7 @@ country_event = { # Berling Becomes Capital
 		}
 		create_country_leader = {
 	        name = "Joseph Goebbels"
-	        picture   = "NGU_Goebbels_Hitler.tga"
+	        picture   = "gfx/leaders/NGU/NGU_Goebbels_Hitler.tga"
 	        expire = "1965.1.1"
 	        ideology = natsoc_hitler
 	        traits = {
@@ -413,22 +413,10 @@ country_event = { # Wolfstaat
 		transfer_state = 94	
 		transfer_state = 95
 		transfer_state = 96
-		declare_war_on = {
-    	target = WHR
-    	type = annex_everything
-		}
 		load_oob = WLF_oob	
-		}
-		NGU = {
-		add_to_war = { 
-    	targeted_alliance = WLF 
-    	enemy = WHR 
-    	hostility_reason = asked_to_join
 		}	
 		}
 	}
-
-}
 
 country_event = { # Berling Becomes Capital
 	id = ngu.12
@@ -511,7 +499,7 @@ country_event = { # Wehrmacht Takes Over
 		ai_chance = { factor = 100}
 		create_country_leader = {
 	        name = "Wehrmacht Council"
-	        picture   = "NGU_Wehrmacht.tga"
+	        picture   = "gfx/leaders/NGU/NGU_Wehrmacht.tga"
 	        expire = "1965.1.1"
 	        ideology = natsoc_hitler
 	        traits = {
@@ -536,7 +524,7 @@ country_event = { # Who will lead us
 		ai_chance = { factor = 100}
 		create_country_leader = {
 	        name = "Adolf Hitler"
-	        picture   = "NGU_Hitler.tga"
+	        picture   = "gfx/leaders/NGU/NGU_Hitler.tga"
 	        expire = "1965.1.1"
 	        ideology = natsoc_hitler
 	        traits = {
@@ -555,7 +543,7 @@ country_event = { # Who will lead us
 		ai_chance = { factor = 100}
 		create_country_leader = {
 	        name = "Reinhard Heydrich"
-	        picture   = "NGU_Heydrich.tga"
+	        picture   = "gfx/leaders/NGU/NGU_Heydrich.tga"
 	        expire = "1965.1.1"
 	        ideology = natsoc_heydrich
 	        traits = {
@@ -569,7 +557,7 @@ country_event = { # Who will lead us
 		WLF = {
 		create_country_leader = {
 	        name = "Otto Kumm"
-	        picture   = "Portrait_Germany_Otto_Kumm.tga"
+	        picture   = "gfx/leaders/WLF/Portrait_Germany_Otto_Kumm.tga"
 	        expire = "1965.1.1"
 	        ideology = natsoc_hitler
 	        traits = {	
@@ -588,7 +576,7 @@ country_event = { # Who will lead us
 		ai_chance = { factor = 100}
 		create_country_leader = {
 	        name = "Alfred Rosenberg"
-	        picture   = "NGU_Rosenberg.tga"
+	        picture   = "gfx/leaders/NGU/NGU_Rosenberg.tga"
 	        expire = "1965.1.1"
 	        ideology = natsoc_hitler
 	        traits = {	
@@ -597,7 +585,7 @@ country_event = { # Who will lead us
 		BLT = {
 		create_country_leader = {
 	        name = "Heinrich Himmler"
-	        picture   = "BAY_Himmler.tga"
+	        picture   = "gfx/leaders/BLT/BAY_Himmler.tga"
 	        expire = "1965.1.1"
 	        ideology = natsoc_hitler
 	        traits = {	

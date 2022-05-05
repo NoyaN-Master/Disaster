@@ -6,7 +6,14 @@ soundeffect =
 	}
 	volume = 1
 }
-
+soundeffect =
+{
+	name = "ruscw"
+	sounds = {
+		sound = "ruscw"
+	}
+	volume = 1
+}
 soundeffect =
 {
 	name = "enver"
@@ -144,49 +151,25 @@ soundeffect =
 }
 soundeffect =
 {
-	name = "chinaCwar"
+	name = "rus_unif"
 	sounds = {
-		sound = "chinaCwar"
+		sound = "rus_unif"
 	}
 	volume = 1
 }
 soundeffect =
 {
-	name = "rocVic"
+	name = "reg_unif"
 	sounds = {
-		sound = "rocVic"
+		sound = "reg_unif"
 	}
 	volume = 1
 }
 soundeffect =
 {
-	name = "prcVic"
+	name = "sav_unif"
 	sounds = {
-		sound = "prcVic"
-	}
-	volume = 1
-}
-soundeffect =
-{
-	name = "qidVic"
-	sounds = {
-		sound = "qidVic"
-	}
-	volume = 1
-}
-soundeffect =
-{
-	name = "crfVic"
-	sounds = {
-		sound = "crfVic"
-	}
-	volume = 1
-}
-soundeffect =
-{
-	name = "etrVic"
-	sounds = {
-		sound = "etrVic"
+		sound = "sav_unif"
 	}
 	volume = 1
 }

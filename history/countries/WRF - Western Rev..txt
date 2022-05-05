@@ -156,7 +156,6 @@ create_country_leader = {
 		#
 	}
 	}
-
 create_field_marshal = {
 			name = "Mustafa Kemal Paşa"
 			portrait_path = "gfx/leaders/WRF/Portrait_WRF_Mustafa_Kemal.tga"
@@ -168,17 +167,6 @@ create_field_marshal = {
 			logistics_skill = 3
 			id = 1881
 			}
-create_corps_commander = {
-		name = "Ömer Fahrettin Türkkan"
-		portrait_path = "gfx/leaders/WRF/Portrait_OTT_Omer_Fahrettin_Turkkan.tga"
-		traits = { war_hero brilliant_strategist cavalry_officer hill_fighter kemalist_general }
-		skill = 4 #13
-		attack_skill = 4
-		defense_skill = 3
-		planning_skill = 4
-		logistics_skill = 2
-	}
-
 create_corps_commander = {
 		name = "Cemil Cahit Toydemir"
 		portrait_path = "gfx/leaders/WRF/Portrait_OTT_Cahit_Toydemir.tga"
@@ -199,3 +187,106 @@ create_corps_commander = {
 		planning_skill = 3
 		logistics_skill = 2
 	}	
+create_corps_commander = {
+	name = "Asım Gündüz"
+	portrait_path = "gfx/leaders/WRF/Portrait_TUR_Asim_Gunduz.tga"
+	traits = { infantry_leader kemalist_general
+
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Fahrettin Altay"
+	portrait_path = "gfx/leaders/WRF/Portrait_TUR_Fahrettin_Altay_KR.png"
+	traits = { infantry_leader kemalist_general
+
+	}
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Hayrullah Fişek"
+	portrait_path = "gfx/leaders/WRF/Portrait_TUR_Hayrullah_Fisek_KR.png"
+	traits = { infantry_leader kemalist_general
+
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Mehmet Hayri Tarhan"
+	portrait_path = "gfx/leaders/WRF/Portrait_TUR_Mehmet_Hayri_Tarhan.png"
+	traits = { infantry_leader kemalist_general
+
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Nafiz Gurman"
+	portrait_path = "gfx/leaders/WRF/Portrait_TUR_Nafiz_Gurman.png"
+	traits = { infantry_leader kemalist_general
+
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Nihat Anılmış"
+	portrait_path = "gfx/leaders/WRF/Portrait_TUR_Nihat_Anilmis.png"
+	traits = { infantry_leader kemalist_general
+
+	}
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+###################### admirals
+create_navy_leader = {
+	name = "Rauf Orbay"
+	portrait_path = "gfx/leaders/WRF/Portrait_TUR_Huseyin_Rauf_Orbay.png"
+	traits = { seawolf silent_hunter }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 6
+	coordination_skill = 3
+}
+create_navy_leader = {
+	name = "Mehmet Ali Ülgen"
+	portrait_path = "gfx/leaders/WRF/Portrait_TUR_Mehmet_Ali_Ulgen_KR.png"
+	traits = { seawolf silent_hunter }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	maneuvering_skill = 6
+	coordination_skill = 3
+}
+create_navy_leader = {
+	name = "Şükrü Okan"
+	portrait_path = "gfx/leaders/WRF/Portrait_TUR_Sukru_Okan_KR.png"
+	traits = { seawolf silent_hunter }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	maneuvering_skill = 4
+	coordination_skill = 3
+}

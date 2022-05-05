@@ -101,6 +101,8 @@ country_event = { #Intervene in war
 		target = MEK
 		transfer_troops = yes
 		}
+		PRE = { add_state_core = 61}
+		MEK = { every_unit_leader = { set_nationality = PRE } }
 		hidden_effect = {
 		    PLN = { country_event = { id = mek.7 days = 2 }}
 			FRE = { country_event = { id = mek.9 days = 2 }}

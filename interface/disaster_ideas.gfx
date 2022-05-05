@@ -1,9 +1,24 @@
 spriteTypes = {	
-
+	###################
+	## Disaster ##
+	#### dynamic modifiers ####
+	###################
+	spriteType = {
+		name = "GFX_modifiers_austrian_defiance"
+		texturefile = "gfx/interface/state_modifiers/modifiers_austrian_defiance.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_polish_terrorism"
+		texturefile = "gfx/interface/state_modifiers/modifiers_polish_terrorism.dds"
+	}
 	###################
 	## Disaster ##
 	#### Ideas GFX ####
 	###################
+	spriteType = {
+		name = "GFX_idea_autarky_economy"
+		texturefile = "gfx/interface/ideas/economic_autarky_idea.png"
+	}
 	spriteType = {
 		name = "GFX_idea_BAY_BAVARIA_DEFENSE"
 		texturefile = "gfx/interface/ideas/BAY_BAVARIA_DEFENSE.png"
@@ -1069,4 +1084,28 @@ spriteType = {
 		name = "GFX_idea_ROC_sab_PRC"     				
 		texturefile = "gfx/interface/ideas/ROC/ROC_sab_PRC.tga"
 	}	
+spriteType = {
+	name = "GFX_idea_RUS_army_disloyalty"
+	texturefile = "gfx/interface/ideas/RUS_army_disloyalty.tga"
+}
+spriteType = {
+	name = "GFX_idea_RUS_mass_terror"
+	texturefile = "gfx/interface/ideas/RUS_mass_terror.tga"
+}
+spriteType = {
+	name = "GFX_idea_RUS_supreme_ruler"
+	texturefile = "gfx/interface/ideas/RUS_supreme_ruler.tga"
+}
+spriteType = {
+	name = "GFX_idea_RUS_red_clashes"
+	texturefile = "gfx/interface/ideas/RUS_red_clashes.png"
+}
+spriteType = {
+	name = "GFX_idea_RUS_red_killing"
+	texturefile = "gfx/interface/ideas/RUS_red_killing.tga"
+}
+spriteType = {
+	name = "GFX_idea_RUS_jew_deportation"
+	texturefile = "gfx/interface/ideas/RUS_jew_deportation.png"
+}
 }	

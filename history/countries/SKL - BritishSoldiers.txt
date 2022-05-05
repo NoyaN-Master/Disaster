@@ -36,8 +36,10 @@ if = {
 	set_technology = {
 		gwtank = 1
 		basic_light_tank = 1
+		improved_light_tank = 1
+		basic_heavy_tank = 1
 	}
-}	
+}
 if = {
 	limit = {
 		has_dlc = "No Step Back"
@@ -45,6 +47,32 @@ if = {
 	set_technology = {
 		gwtank_chassis = 1
 		basic_light_tank_chassis = 1
+		improved_light_tank_chassis = 1
+		basic_heavy_tank_chassis = 1
+		engine_tech_1 = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	create_equipment_variant = {
+		name = "Light Tanks"
+		type = light_tank_chassis_2
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_auto_cannon
+			turret_type_slot = tank_light_two_man_tank_turret
+			suspension_type_slot = tank_christie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 3
+			tank_nsb_armor_upgrade = 2
+		}
+		icon = "GFX_GER_improved_light_tank_medium"
 	}
 }
 set_convoys = 50
@@ -84,4 +112,46 @@ create_country_leader = {
 	traits = {
 	gamer_fuller
 	}
+}
+create_field_marshal = {
+	name = "William Birdwood"
+	portrait_path = ""
+	traits = {
+		brilliant_strategist
+		politically_connected
+		inspirational_leader
+	}
+	skill = 2
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Alfred Reade Godwin-Austen"
+	portrait_path = ""
+	traits = {
+		old_guard
+		bearer_of_artillery
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "B. H. Liddell Hart"
+	portrait_path = ""
+	traits = {
+		old_guard
+		organizer
+		politically_connected
+		panzer_leader
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }

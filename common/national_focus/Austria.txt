@@ -202,7 +202,7 @@ focus_tree = {
 	focus = {
 		id = AUT_volksbier
 		icon = GFX_goal_AUT_volksbier
-		prerequisite = { focus = AUT_further_state_intervention focus = AUT_nation_of_farmers focus = AUT_nation_of_industry}
+		prerequisite = { focus = AUT_further_state_intervention focus = AUT_grain_exports focus = AUT_new_export_markets}
 		x = 4
 		y = 7
 		cost = 5
@@ -1675,9 +1675,8 @@ focus_tree = {
 		id = AUT_mit_dollfuss_in_die_neue_zeit
 		icon = GFX_goal_AUT_mit_dollfuss_in_die_neue_zeit
 		prerequisite = { focus = AUT_a_moral_government }
-		prerequisite = { focus = AUT_austrian_miracle }
-		x = 8
-		y = 9
+		x = 13
+		y = 7
 		cost = 5
 		ai_will_do = {
 			factor = 100
@@ -1693,7 +1692,6 @@ focus_tree = {
 			add_ideas = AUT_in_die_neue_zeit
         }
 	}
-	
 	focus = {
 		id = AUT_react_to_the_crisis
 		icon = GFX_goal_AUT_react_to_the_crisis
@@ -2921,7 +2919,8 @@ focus_tree = {
 			has_completed_focus = AUT_a_moral_government
 			has_completed_focus = AUT_christlich_deutsch_gerecht_und_frei
 			has_completed_focus = AUT_fur_freiheit_und_ehre
-			}					
+			}		
+			NOT = {is_puppet = yes}
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3004,7 +3003,7 @@ focus_tree = {
     		type = annex_everything
 			}
 			declare_war_on = {
-    		target = TRN
+    		target = ROM
     		type = annex_everything
 			}
 		set_country_flag = AUT_attackedHNG		

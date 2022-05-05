@@ -493,8 +493,8 @@ country_event = {		#Super Event DONE
 	is_triggered_only = no
 	
 	trigger = {
-		ROC = {
-		has_country_flag = ROC_SPVENT_Flag	
+		RUS = {
+		has_country_flag = RUS_CW_SPVENT_TRIGGER	
 		}
 	}
 
@@ -505,8 +505,8 @@ country_event = {		#Super Event DONE
 	option = {
 		name = super.20.a
         set_global_flag = Super_Event_Visible
-        set_global_flag = ROC_Civil_War
-		sound_effect = "chinaCwar"
+        set_global_flag = RUSCWflag
+		sound_effect = "ruscw"
 	}
 }
 country_event = {		#Super Event DONE
@@ -518,8 +518,11 @@ country_event = {		#Super Event DONE
 	is_triggered_only = no
 	
 	trigger = {
-		PRC = {
-		has_country_flag = ROC_Vic_SPVENT_Flag	
+		date > 1937.6.1
+		RUS = {
+			all_core_state = {
+                    is_owned_by = ROOT
+            }	
 		}
 	}
 
@@ -530,8 +533,31 @@ country_event = {		#Super Event DONE
 	option = {
 		name = super.21.a
         set_global_flag = Super_Event_Visible
-        set_global_flag = ROC_Vic_SE
-		sound_effect = "rocVic"
+        set_global_flag = RUS_UNIF_FLAG
+		sound_effect = "rus_unif"
+		hidden_effect = {
+			96 = {
+				add_core_of = RUS
+			}
+			95 = {
+				add_core_of = RUS
+			}
+			94 = {
+				add_core_of = RUS
+			}
+			194 = {
+				add_core_of = RUS
+			}
+			240 = {
+				add_core_of = RUS
+			}
+			221 = {
+				add_core_of = RUS
+			}
+			563 = {
+				add_core_of = RUS
+			}
+		}
 	}
 }
 country_event = {		#Super Event DONE
@@ -543,8 +569,11 @@ country_event = {		#Super Event DONE
 	is_triggered_only = no
 	
 	trigger = {
-		PRC = {
-		has_country_flag = PRC_Vic_SPVENT_Flag
+		date > 1937.6.1
+		REG = {
+			all_core_state = {
+                    is_owned_by = ROOT
+            }	
 		}
 	}
 
@@ -555,8 +584,31 @@ country_event = {		#Super Event DONE
 	option = {
 		name = super.22.a
         set_global_flag = Super_Event_Visible
-        set_global_flag = PRC_Vic_SE
-		sound_effect = "prcVic"
+        set_global_flag = REG_UNIF_FLAG
+		sound_effect = "reg_unif"
+		hidden_effect = {
+			96 = {
+				add_core_of = REG
+			}
+			95 = {
+				add_core_of = REG
+			}
+			94 = {
+				add_core_of = REG
+			}
+			194 = {
+				add_core_of = REG
+			}
+			240 = {
+				add_core_of = REG
+			}
+			221 = {
+				add_core_of = REG
+			}
+			563 = {
+				add_core_of = REG
+			}
+		}
 	}
 }
 country_event = {		#Super Event DONE
@@ -568,8 +620,11 @@ country_event = {		#Super Event DONE
 	is_triggered_only = no
 	
 	trigger = {
-		QID = {
-		has_country_flag = QID_Vic_SPVENT_Flag
+		date > 1937.6.1
+		SAV = {
+			all_core_state = {
+                    is_owned_by = ROOT
+            }	
 		}
 	}
 
@@ -580,58 +635,30 @@ country_event = {		#Super Event DONE
 	option = {
 		name = super.23.a
         set_global_flag = Super_Event_Visible
-        set_global_flag = QID_Vic_SE
-		sound_effect = "qidVic"
-	}
-}
-country_event = {		#Super Event DONE
-	id = super.24
-	title = super.24.t
-	desc = super.24.d
-	picture = GFX_report_event_diplomatic_message
-
-	is_triggered_only = no
-	
-	trigger = {
-		CRF = {
-		has_country_flag = CRF_Vic_SPVENT_Flag
+        set_global_flag = SAV_UNIF_FLAG
+		sound_effect = "sav_unif"
+		hidden_effect = {
+			96 = {
+				add_core_of = SAV
+			}
+			95 = {
+				add_core_of = SAV
+			}
+			94 = {
+				add_core_of = SAV
+			}
+			194 = {
+				add_core_of = SAV
+			}
+			240 = {
+				add_core_of = SAV
+			}
+			221 = {
+				add_core_of = SAV
+			}
+			563 = {
+				add_core_of = SAV
+			}
 		}
 	}
-
-	fire_only_once = yes
-	
-	hidden = yes
-
-	option = {
-		name = super.24.a
-        set_global_flag = Super_Event_Visible
-        set_global_flag = CRF_Vic_SE
-		sound_effect = "crfVic"
-	}
 }
-country_event = {		#Super Event DONE
-	id = super.25
-	title = super.25.t
-	desc = super.25.d
-	picture = GFX_report_event_diplomatic_message
-
-	is_triggered_only = no
-	
-	trigger = {
-		ETR = {
-		has_country_flag = CRF_Vic_SPVENT_Flag
-		}
-	}
-
-	fire_only_once = yes
-	
-	hidden = yes
-
-	option = {
-		name = super.25.a
-        set_global_flag = Super_Event_Visible
-        set_global_flag = ETR_Vic_SE
-		sound_effect = "etrVic"
-	}
-}
-

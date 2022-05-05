@@ -3,9 +3,15 @@ defined_text = { #SUPER EVENT TITLES
 
     text = { 
         trigger = {
+            has_global_flag = RUSCWflag
+        }
+        localization_key = "RUSCW"
+    }
+    text = { 
+        trigger = {
             has_global_flag = TUR_Unification_Atsiz
         }
-        localization_key = "GFX_SPEVNT_Unification_Atsiz"
+        localization_key = "Unification_Atsiz"
     }
     text = { 
         trigger = {
@@ -35,141 +41,151 @@ defined_text = { #SUPER EVENT TITLES
         trigger = {
             has_global_flag = TUR_Unification_Enver
         }
-        localization_key = "GFX_SPEVNT_Unification_Enver"
+        localization_key = "Unification_Enver"
     }
 
     text = { 
         trigger = {
             has_global_flag = ROC_Civil_War
         }
-        localization_key = "GFX_SPEVNT_China_Civil"
-    }
-
-    text = { 
-        trigger = {
-            has_global_flag = ROC_Vic_SE
-        }
-        localization_key = "GFX_SPEVNT_ROC_vic"
+        localization_key = "Unification_Samet"
     }
 
     text = { 
         trigger = {
             has_global_flag = TUR_Unification_Ataturk
         }
-        localization_key = "GFX_SPEVNT_Unification_Ataturk"
-    }
-
-    text = { 
-        trigger = {
-            has_global_flag = TUR_Unification_Ataturk
-        }
-        localization_key = "GFX_SPEVNT_Unification_Ataturk"
+        localization_key = "Unification_Ataturk"
     }
 
     text = { 
         trigger = {
             has_global_flag = TUR_Unification_Ethem
         }
-        localization_key = "GFX_SPEVNT_Unification_Ethem"
+        localization_key = "Unification_Ethem"
     }
 	
 	text = { 
         trigger = {
             has_global_flag = TUR_Unification_Ulema
         }
-        localization_key = "GFX_SPEVNT_Unification_Ulema"
+        localization_key = "Unification_Ulema"
     }
 
     text = { 
         trigger = {
             has_global_flag = TUR_Unification_Nazim
         }
-        localization_key = "GFX_SPEVNT_Unification_Nazim"
+        localization_key = "Unification_Nazim"
     }
 
     text = { 
         trigger = {
             has_global_flag = UAR_Formed
         }
-        localization_key = "GFX_SPEVNT_Unification_Arabs"
+        localization_key = "Unification_Arabs"
     }
 
     text = { 
         trigger = {
             has_global_flag = goebbels_unification
         }
-        localization_key = "GFX_SPEVNT_Unification_Goebbels"
+        localization_key = "Unification_Goebbels"
     }
 
     text = { 
         trigger = {
             has_global_flag = German_RusWar_unification
         }
-        localization_key = "GFX_SPEVNT_German_RusWar"
+        localization_key = "German_RusWar"
     }
 
     text = { 
         trigger = {
             has_global_flag = WW2
         }
-        localization_key = "GFX_SPEVNT_WW2"
+        localization_key = "WW2"
     }
 
     text = { 
         trigger = {
             has_global_flag = Fuller_Unif
         }
-        localization_key = "GFX_SPEVNT_Fuller_Unif"
+        localization_key = "Fuller_Unif"
     }
 
     text = { 
         trigger = {
             has_global_flag = Merc_Unif
         }
-        localization_key = "GFX_SPEVNT_Merc_Unif"
+        localization_key = "Merc_Unif"
     }
 
     text = { 
         trigger = {
             has_global_flag = Madan_Unif
         }
-        localization_key = "GFX_SPEVNT_Madan_Unif"
+        localization_key = "Madan_Unif"
     }
 
     text = { 
         trigger = {
             has_global_flag = German_Democratic_Unify
         }
-        localization_key = "GFX_SPEVNT_GermLib_Unif"
+        localization_key = "GermLib_Unif"
     }
     text = { 
         trigger = {
             has_global_flag = German_Auth_Unify
         }
-        localization_key = "GFX_SPEVNT_GermAuth_Unif"
+        localization_key = "GermAuth_Unif"
     }
     text = { 
         trigger = {
             has_global_flag = Atsiz_Europe
         }
-        localization_key = "GFX_SPEVNT_Atsiz_Europe"
+        localization_key = "Atsiz_Europe"
     }
     text = { 
         trigger = {
             has_global_flag = JFKflag
         }
-        localization_key = "GFX_SPEVNT_JFK"
+        localization_key = "JFK"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = RUS_UNIF_FLAG
+        }
+        localization_key = "RUS_UNIF"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = REG_UNIF_FLAG
+        }
+        localization_key = "REG_UNIF"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = SAV_UNIF_FLAG
+        }
+        localization_key = "SAV_UNIF"
     }
 }
 
 defined_text = { #SUPER EVENT QUOTES
     name = get_superevent_quote
 
+     text = { 
+        trigger = {
+            has_global_flag = RUSCWflag
+        }
+        localization_key = "RUSCW_TEXT"
+    }
     text = { 
         trigger = {
             has_global_flag = TUR_Unification_Atsiz
         }
-        localization_key = "GFX_SPEVNT_Unification_Atsiz_TEXT"
+        localization_key = "Unification_Atsiz_TEXT"
     }
        text = { 
         trigger = {
@@ -213,117 +229,135 @@ defined_text = { #SUPER EVENT QUOTES
         trigger = {
             has_global_flag = TUR_Unification_Enver
         }
-        localization_key = "GFX_SPEVNT_Unification_Enver_TEXT"
+        localization_key = "Unification_Enver_TEXT"
     }
     text = { 
         trigger = {
             has_global_flag = TUR_Unification_Samet
         }
-        localization_key = "GFX_SPEVNT_Unification_Samet_TEXT"
+        localization_key = "Unification_Samet_TEXT"
     }
 
     text = { 
         trigger = {
             has_global_flag = TUR_Unification_Ataturk
         }
-        localization_key = "GFX_SPEVNT_Unification_Ataturk_TEXT"
+        localization_key = "Unification_Ataturk_TEXT"
     }
 
     text = { 
         trigger = {
             has_global_flag = TUR_Unification_Ethem
         }
-        localization_key = "GFX_SPEVNT_Unification_Ethem_TEXT"
+        localization_key = "Unification_Ethem_TEXT"
     }
 	
 	text = { 
         trigger = {
             has_global_flag = TUR_Unification_Ulema
         }
-        localization_key = "GFX_SPEVNT_Unification_Ulema_TEXT"
+        localization_key = "Unification_Ulema_TEXT"
     }
 
     text = { 
         trigger = {
             has_global_flag = TUR_Unification_Nazim
         }
-        localization_key = "GFX_SPEVNT_Unification_Nazim_TEXT"
+        localization_key = "Unification_Nazim_TEXT"
     }
 
     text = { 
         trigger = {
             has_global_flag = UAR_Formed
         }
-        localization_key = "GFX_SPEVNT_Unification_Arabs_TEXT"
+        localization_key = "Unification_Arabs_TEXT"
     }
 
     text = { 
         trigger = {
             has_global_flag = goebbels_unification
         }
-        localization_key = "GFX_SPEVNT_Unification_Goebbels_TEXT"
+        localization_key = "Unification_Goebbels_TEXT"
     }
 
     text = { 
         trigger = {
             has_global_flag = German_RusWar_unification
         }
-        localization_key = "GFX_SPEVNT_German_RusWar_TEXT"
+        localization_key = "German_RusWar_TEXT"
     }
 
     text = { 
         trigger = {
             has_global_flag = WW2
         }
-        localization_key = "GFX_SPEVNT_WW2_TEXT"
+        localization_key = "WW2_TEXT"
     }
 
     text = { 
         trigger = {
             has_global_flag = Fuller_Unif
         }
-        localization_key = "GFX_SPEVNT_Fuller_Unif_TEXT"
+        localization_key = "Fuller_Unif_TEXT"
     }
 
     text = { 
         trigger = {
             has_global_flag = Merc_Unif
         }
-        localization_key = "GFX_SPEVNT_Merc_Unif_TEXT"
+        localization_key = "Merc_Unif_TEXT"
     }
 
     text = { 
         trigger = {
             has_global_flag = Madan_Unif
         }
-        localization_key = "GFX_SPEVNT_Madan_Unif_TEXT"
+        localization_key = "Madan_Unif_TEXT"
     }
     text = { 
         trigger = {
             has_global_flag = German_Democratic_Unify
         }
-        localization_key = "GFX_SPEVNT_GermLib_Unif_TEXT"
+        localization_key = "GermLib_Unif_TEXT"
     }
 
     text = { 
         trigger = {
             has_global_flag = German_Auth_Unify
         }
-        localization_key = "GFX_SPEVNT_GermAuth_Unif_TEXT"
+        localization_key = "GermAuth_Unif_TEXT"
     }
 
     text = { 
         trigger = {
             has_global_flag = Atsiz_Europe
         }
-        localization_key = "GFX_SPEVNT_Atsiz_Europe_TEXT"
+        localization_key = "Atsiz_Europe_TEXT"
     }
 
     text = { 
         trigger = {
             has_global_flag = JFKflag
         }
-        localization_key = "GFX_SPEVNT_JFK_TEXT"
+        localization_key = "JFK_TEXT"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = RUS_UNIF_FLAG
+        }
+        localization_key = "RUS_UNIF_TEXT"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = REG_UNIF_FLAG
+        }
+        localization_key = "REG_UNIF_TEXT"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = SAV_UNIF_FLAG
+        }
+        localization_key = "SAV_UNIF_TEXT"
     }
 }
 
@@ -332,9 +366,15 @@ defined_text = { #SUPER EVENT REMARKS
 
     text = { 
         trigger = {
+            has_global_flag = RUSCWflag
+        }
+        localization_key = "RUSCW_REMARK"
+    }
+    text = { 
+        trigger = {
             has_global_flag = TUR_Unification_Atsiz
         }
-        localization_key = "GFX_SPEVNT_Unification_Atsiz_REMARK"
+        localization_key = "Unification_Atsiz_REMARK"
     }
      text = { 
         trigger = {
@@ -376,117 +416,274 @@ defined_text = { #SUPER EVENT REMARKS
         trigger = {
             has_global_flag = TUR_Unification_Enver
         }
-        localization_key = "GFX_SPEVNT_Unification_Enver_REMARK"
+        localization_key = "Unification_Enver_REMARK"
     }
 
     text = { 
         trigger = {
             has_global_flag = TUR_Unification_Samet
         }
-        localization_key = "GFX_SPEVNT_Unification_Samet_REMARK"
+        localization_key = "Unification_Samet_REMARK"
     }
 
     text = { 
         trigger = {
             has_global_flag = TUR_Unification_Ataturk
         }
-        localization_key = "GFX_SPEVNT_Unification_Ataturk_REMARK"
+        localization_key = "Unification_Ataturk_REMARK"
     }
 
     text = { 
         trigger = {
             has_global_flag = TUR_Unification_Ethem
         }
-        localization_key = "GFX_SPEVNT_Unification_Ethem_REMARK"
+        localization_key = "Unification_Ethem_REMARK"
     }
 	
 	text = { 
         trigger = {
             has_global_flag = TUR_Unification_Ulema
         }
-        localization_key = "GFX_SPEVNT_Unification_Ulema_REMARK"
+        localization_key = "Unification_Ulema_REMARK"
     }
 
     text = { 
         trigger = {
             has_global_flag = TUR_Unification_Nazim
         }
-        localization_key = "GFX_SPEVNT_Unification_Nazim_REMARK"
+        localization_key = "Unification_Nazim_REMARK"
     }
 
     text = { 
         trigger = {
             has_global_flag = UAR_Formed
         }
-        localization_key = "GFX_SPEVNT_Unification_Arabs_REMARK"
+        localization_key = "Unification_Arabs_REMARK"
     }
 
     text = { 
         trigger = {
             has_global_flag = goebbels_unification
         }
-        localization_key = "GFX_SPEVNT_Unification_Goebbels_REMARK"
+        localization_key = "Unification_Goebbels_REMARK"
     }
 
     text = { 
         trigger = {
             has_global_flag = German_RusWar_unification
         }
-        localization_key = "GFX_SPEVNT_German_RusWar_REMARK"
+        localization_key = "German_RusWar_REMARK"
     }
 
     text = { 
         trigger = {
             has_global_flag = WW2
         }
-        localization_key = "GFX_SPEVNT_WW2_REMARK"
+        localization_key = "WW2_REMARK"
     }
 
     text = { 
         trigger = {
             has_global_flag = Fuller_Unif
         }
-        localization_key = "GFX_SPEVNT_Fuller_Unif_REMARK"
+        localization_key = "Fuller_Unif_REMARK"
     }
 
     text = { 
         trigger = {
             has_global_flag = Merc_Unif
         }
-        localization_key = "GFX_SPEVNT_Merc_Unif_REMARK"
+        localization_key = "Merc_Unif_REMARK"
     }
 
     text = { 
         trigger = {
             has_global_flag = Madan_Unif
         }
-        localization_key = "GFX_SPEVNT_Madan_Unif_REMARK"
+        localization_key = "Madan_Unif_REMARK"
     }
 
     text = { 
         trigger = {
             has_global_flag = German_Democratic_Unify
         }
-        localization_key = "GFX_SPEVNT_GermLib_Unif_REMARK"
+        localization_key = "GermLib_Unif_REMARK"
     }
 
     text = { 
         trigger = {
             has_global_flag = German_Auth_Unify
         }
-        localization_key = "GFX_SPEVNT_GermAuth_Unif_REMARK"
+        localization_key = "GermAuth_Unif_REMARK"
     }
 
     text = { 
         trigger = {
             has_global_flag = Atsiz_Europe
         }
-        localization_key = "GFX_SPEVNT_Atsiz_Europe_REMARK"
+        localization_key = "Atsiz_Europe_REMARK"
     }
 	text = { 
         trigger = {
             has_global_flag = JFKflag
         }
-        localization_key = "GFX_SPEVNT_JFK_REMARK"
+        localization_key = "JFK_REMARK"
     }
+	text = { 
+        trigger = {
+            has_global_flag = RUS_UNIF_FLAG
+        }
+        localization_key = "RUS_UNIF_REMARK"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = REG_UNIF_FLAG
+        }
+        localization_key = "REG_UNIF_REMARK"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = SAV_UNIF_FLAG
+        }
+        localization_key = "SAV_UNIF_REMARK"
+    }
+}
+defined_text = { #SUPER EVENT IMAGES
+    name = get_superevent_images
+
+	text = { 
+        trigger = {
+            has_global_flag = RUSCWflag
+        }
+        localization_key = "GFX_SPEVNT_RUSCW"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = TUR_Unification_Atsiz
+        }
+        localization_key = "GFX_SPEVNT_Unification_Atsiz"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = TUR_Unification_Enver
+        }
+        localization_key = "GFX_SPEVNT_Unification_Enver"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = TUR_Unification_Samet 
+        }
+        localization_key = "GFX_SPEVNT_Unification_Samet"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = TUR_Unification_Ataturk
+        }
+        localization_key = "GFX_SPEVNT_Unification_Ataturk"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = TUR_Unification_Ethem
+        }
+        localization_key = "GFX_SPEVNT_Unification_Ethem"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = TUR_Unification_Ulema
+        }
+        localization_key = "GFX_SPEVNT_Unification_Ulema"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = TUR_Unification_Nazim
+        }
+        localization_key = "GFX_SPEVNT_Unification_Nazim"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = UAR_Formed
+        }
+        localization_key = "GFX_SPEVNT_UAR_FORM"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = German_RusWar_unification
+        }
+        localization_key = "GFX_SPEVNT_German_RusWar"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = goebbels_unification
+        }
+        localization_key = "GFX_SPEVNT_Unification_Goebbels"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = WW2
+        }
+        localization_key = "GFX_SPEVNT_WW2"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = Fuller_Unif
+        }
+        localization_key = "GFX_SPEVNT_Fuller_Unif"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = Merc_Unif
+        }
+        localization_key = "GFX_SPEVNT_Merc_Unif"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = Madan_Unif
+        }
+        localization_key = "GFX_SPEVNT_Madan_Unif"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = German_Democratic_Unify
+        }
+        localization_key = "GFX_SPEVNT_GermanLiberal_Unif"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = German_Auth_Unify
+        }
+        localization_key = "GFX_SPEVNT_GermanAuth_Unif"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = Atsiz_Europe
+        }
+        localization_key = "GFX_SPEVNT_Atsiz_Europe"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = JFKflag
+        }
+        localization_key = "GFX_SPEVNT_JFK"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = RUS_UNIF_FLAG
+        }
+        localization_key = "GFX_SPEVNT_RUS_UNIF"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = REG_UNIF_FLAG
+        }
+        localization_key = "GFX_SPEVNT_REG_UNIF"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = SAV_UNIF_FLAG
+        }
+        localization_key = "GFX_SPEVNT_SAV_UNIF"
+    }
+
+
+
 }

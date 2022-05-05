@@ -11,7 +11,12 @@ sound = {
 	volume = 1
 	always_load = yes
 }
-
+sound = {
+	name = "ruscw"
+	file = "menu/ruscw.wav"
+	volume = 1
+	always_load = yes
+}
 
 sound = {
 	name = "samet"
@@ -109,38 +114,20 @@ sound = {
 	always_load = yes
 }
 sound = {
-	name = "chinaCwar"
-	file = "menu/chinaCwar.wav"
+	name = "rus_unif"
+	file = "menu/rus_unif.wav"
 	volume = 1
 	always_load = yes
 }
 sound = {
-	name = "rocVic"
-	file = "menu/rocVic.wav"
+	name = "reg_unif"
+	file = "menu/reg_unif.wav"
 	volume = 1
 	always_load = yes
 }
 sound = {
-	name = "prcVic"
-	file = "menu/prcVic.wav"
-	volume = 1
-	always_load = yes
-}
-sound = {
-	name = "qidVic"
-	file = "menu/qidVic.wav"
-	volume = 1
-	always_load = yes
-}
-sound = {
-	name = "crfVic"
-	file = "menu/crfVic.wav"
-	volume = 1
-	always_load = yes
-}
-sound = {
-	name = "etrVic"
-	file = "menu/etrVic.wav"
+	name = "sav_unif"
+	file = "menu/sav_unif.wav"
 	volume = 1
 	always_load = yes
 }

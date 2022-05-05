@@ -70,7 +70,43 @@ set_popularities = {
 	esoteric_traditionalist = 100
 	revolutionary_anarchist = 0
 }
+###################### generals
+create_field_marshal = {
+	name = "Ömer Fahreddin Türkkan"
+	portrait_path = "gfx/leaders/CLP/Portrait_TUR_Omer_Fahrettin_Turkkan_.tga"
+	traits = { inflexible_strategist war_hero defensive_doctrine thorough_planner desert_fox
 
+	}
+	skill = 4
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 6
+}
+create_corps_commander = {
+	name = "Refet Bele"
+	portrait_path = "gfx/leaders/CLP/Portrait_CLP_Refetbele.tga"
+	traits = { war_hero infantry_leader
+
+	}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Mahmut Muhtar Katırcıoğlu"
+	portrait_path = "gfx/leaders/CLP/Portrait_TUR_Mahmud_Muhtar_Katircioglu.png"
+	traits = { infantry_leader war_hero
+
+	}
+	skill = 3
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 4
+	logistics_skill = 2
+}
 create_country_leader = {
 	name = "Caliph Abdulmecid"
 	#desc = "SES_Zeljko_Raznatovic_desc"

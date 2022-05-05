@@ -13,10 +13,6 @@ country_event = { #intro event
 		hidden_effect = {
 		    country_event = { id = pre.2 days = 60 }
 		}
-			add_to_variable = {
-				var = german_states
-				value = 9
-			}	
 	}
 }
 
@@ -58,6 +54,8 @@ country_event = { #schleicher's junker ultimatum
 		    #
 	        }
             }
+		remove_ideas = PRE_sleicher
+		add_ideas = PRE_goerdeler
 	}
 	option = { #stay in power
 		name = pre.3.b
@@ -103,7 +101,9 @@ country_event = { #Elections
 			popularity = 0.1
 		}
 		add_ideas = one_party_state 
-		add_ideas = 	corporatism 
+		add_ideas = corporatism 
+		remove_ideas = PRE_goerdeler
+		add_ideas = PRE_goring
 	}
 	option = { #DNVP
 		name = pre.5.b
@@ -119,7 +119,8 @@ country_event = { #Elections
 		}
 		add_ideas = autocracy 
 		add_ideas = corporatism 
-
+		remove_ideas = PRE_goerdeler
+		add_ideas = PRE_alfred
 	}
 	option = { #Libtard victory
 		name = pre.5.c
@@ -135,6 +136,8 @@ country_event = { #Elections
 		}
 		add_ideas = 	multi_party_democracy 
 		add_ideas = 	laisez_faire 
+		remove_ideas = PRE_goerdeler
+		add_ideas = PRE_paul_von_lettow_vorbeck
 	}
 	option = { #Junkers
 		name = pre.5.e
@@ -204,6 +207,8 @@ country_event = { #Junker Coups Schleiher
 	        }
             }
 		add_ideas = corporatism
+		remove_ideas = PRE_sleicher
+		add_ideas = PRE_goerdeler
 	}
 }
 country_event = { # Purging the Junkers
@@ -269,6 +274,8 @@ country_event = { # Goring Coups with junker Support
 			elections_allowed = no
 		}	
 	    clr_country_flag = PRE_schleicher_refuses_step_down 
+		remove_ideas = PRE_sleicher
+		add_ideas = PRE_goring
 	}
 	option = { # Goring consolidates power
 		name = pre.12.b
@@ -279,6 +286,8 @@ country_event = { # Goring Coups with junker Support
 			elections_allowed = no
 		}	 
 	    clr_country_flag = PRE_schleicher_refuses_step_down 
+		remove_ideas = PRE_sleicher
+		add_ideas = PRE_goring
 	}
 }
 country_event = { # Junker betray Goring
@@ -322,7 +331,8 @@ country_event = { # Goring Consolidates power
 		set_country_flag = PRE_nazi_victory
 		add_ideas = one_party_state 
 		add_ideas = corporatism 
-
+		remove_ideas = PRE_goerdeler
+		add_ideas = PRE_goring
 	}
 }
 country_event = { # Schleicher Tries to Form A fron
@@ -372,9 +382,6 @@ country_event = { # Succeeds
 		set_country_flag = PRE_schleicher_victory
 		add_ideas = 	corporatism 
 		add_ideas = 	one_party_state 
-
-		
-		
 		add_popularity = {
 		ideology = ultranationalist
 		popularity = 0.35
@@ -487,7 +494,8 @@ country_event = { #goring coup after querfront fails
 		set_country_flag = PRE_nazi_victory
 		add_ideas = one_party_state 
 		add_ideas = corporatism 
-		
+		remove_ideas = PRE_sleicher
+		add_ideas = PRE_goring		
 		set_politics = {
 			ruling_party = revolutionary_nationalist
 			elections_allowed = no
@@ -913,73 +921,7 @@ country_event = { #policital solidification
 
 
 ###FP
-country_event = { #BLT gets fccd
-	id = pre.101
-	title = pre.101.t
-	desc = pre.101.d
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	option = {
-		name = pre.101.a
-		ai_chance = { factor = 100}
-		PRE = {
-		puppet = BLT
-		}
-		set_politics = {
-		ruling_party = ultranationalist
-        elections_allowed = no
-        last_election = "1935.12.17"
-        election_frequency = 48
-		}
-		set_popularities = {
-		ultranationalist = 100
-		}
-		create_country_leader = {
-	        name = "Rüdiger von der Goltz"
-	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        picture   = "BLT_Goltz.tga"
-	        expire = "1965.1.1"
-	        ideology = ultranationalist_subideology
-	        traits = {
-	        }
-            }
-	}
-}
 
-country_event = { #Prussia Join Event
-	id = pre.102
-	title = pre.102.t
-	desc = pre.102.d
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	option = {
-		name = pre.102.a
-		ai_chance = { factor = 100}
-		PRE = {
-		add_to_faction = UKR
-		add_to_faction = SWV
-		add_to_faction = GRE
-		add_to_faction = DAN
-		add_to_faction = BLG
-		add_to_faction = BTV	
-		add_to_faction = FIN
-		add_to_faction = WHR
-		if = {
-			limit =  {
-			RUS = {
-				OR = {
-				has_government = liberal
-				has_government = social_democrat
-				}
-			}	
-			}
-			add_to_faction = RUS
-		}
-		}	
-		}	
-}
 
 country_event = { # Surrender
 	id = pre.103

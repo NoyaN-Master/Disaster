@@ -484,12 +484,14 @@ focus_tree = {
 		}
 		available_if_capitulated = no
 		completion_reward = {
-			add_extra_state_shared_building_slots = 2
-			random_state = {
-				add_building_construction = {
-					type = industrial_complex 
-					level = 2
-					instant_build = yes
+			SKL = {
+				random_owned_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex 
+						level = 2
+						instant_build = yes
+					}
 				}
 			}
         }
@@ -694,20 +696,22 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = SKL_race_heirarchy
-			add_extra_state_shared_building_slots = 2
-			random_state = {
-				add_building_construction = {
-					type = arms_factory 
-					level = 2
-					instant_build = yes
+			SKL = {
+				random_owned_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory 
+						level = 2
+						instant_build = yes
+					}
 				}
-			}
-			add_extra_state_shared_building_slots = 2
-			random_state = {
-				add_building_construction = {
-					type = industrial_complex 
-					level = 2
-					instant_build = yes
+				random_owned_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex 
+						level = 2
+						instant_build = yes
+					}
 				}
 			}
         }
@@ -872,9 +876,9 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = SKL_merge_two_ideas_tt
 			hidden_effect = {
-				add_idea = SKL_breakthrough_cult
-				remove_idea = SKL_mobility_focus
-				remove_idea = SKL_armored_monsters
+				add_ideas = SKL_breakthrough_cult
+				remove_ideas = SKL_mobility_focus
+				remove_ideas = SKL_armored_monsters
 			}
 		}
 	}
@@ -895,9 +899,9 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = SKL_merge_two_ideas_tt
 			hidden_effect = {
-				add_idea = SKL_victory_first
-				remove_idea = SKL_black_brigades
-				remove_idea = SKL_spartan_spirit
+				add_ideas = SKL_victory_first
+				remove_ideas = SKL_black_brigades
+				remove_ideas = SKL_spartan_spirit
 			}
         }
 	}
@@ -938,13 +942,13 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						ruling_party = revolutionary_nationalist
+						has_government = revolutionary_nationalist
 					}
 					set_cosmetic_tag = SKL_macedon
 				}
 				if = {
 					limit = {
-						ruling_party = esoteric_traditionalist
+						has_government = esoteric_traditionalist
 					}
 					set_cosmetic_tag = SKL_eso_macedon
 				}
@@ -978,7 +982,7 @@ focus_tree = {
 		prerequisite = { focus = SKL_diplo }
 		completion_reward = {
 			declare_war_on = {
-				taget = PAL
+				target = PAL
 				type = annex_everything
 			}
 			declare_war_on = {
@@ -1106,12 +1110,31 @@ focus_tree = {
 		relative_position_id = SKL_diplo
 		prerequisite = { focus = SKL_PHASE_TWO }
 		completion_reward = {
+			RUS = {
+				end_puppet = TRK
+			}
 			declare_war_on = {
-				target = GOK
+				target = TMS
 				type = annex_everything
 			}
 			declare_war_on = {
 				target = TRK
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = BUK
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = BAS
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = KHI
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = TSV
 				type = annex_everything
 			}
 		}
@@ -1130,10 +1153,6 @@ focus_tree = {
 				target = GRE
 				type = annex_everything
 			}
-			declare_war_on = {
-				target = SOR
-				type = annex_everything
-			}
 		}
 	}
 	focus = {
@@ -1150,9 +1169,14 @@ focus_tree = {
 				country_exists = IQR
 				country_exists = SRY
 				country_exists = PAL
-				country_exists = GOK
+				country_exists = EGY
 				country_exists = TRK
 				country_exists = AFG
+				country_exists = BUK
+				country_exists = TMS
+				country_exists = KHI
+				country_exists = BAS
+				country_exists = TSV
 			}
 		}
 		relative_position_id = SKL_diplo

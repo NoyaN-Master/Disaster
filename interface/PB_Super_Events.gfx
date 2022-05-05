@@ -16,10 +16,16 @@ spriteTypes = {
 		texturefile = "gfx/super_events/Super_Event_Image_Test.dds"
 		legacy_lazy_load = no
 	}
-        
-        spriteType = {
+  
+    spriteType = {
 		name = "button_123x34"
 		texturefile = "gfx/super_events/button_123x34.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_RUSCW"
+		texturefile = "gfx/super_events/SPEVNT_RUSCW.dds"
 		legacy_lazy_load = no
 	}
 
@@ -129,36 +135,25 @@ spriteTypes = {
 		texturefile = "gfx/super_events/SPEVNT_JFK.dds"
 		legacy_lazy_load = no
 	}
+
 	spriteType = {
-		name = "GFX_SPEVNT_China_Civil"
-		texturefile = "gfx/super_events/SPEVNT_China_Civil.dds"
+		name = "GFX_SPEVNT_RUS_UNIF"
+		texturefile = "gfx/super_events/SPEVNT_RUS_UNIF.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_SPEVNT_REG_UNIF"
+		texturefile = "gfx/super_events/SPEVNT_REG_UNIF.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_SPEVNT_ROC_vic"
-		texturefile = "gfx/super_events/SPVENT_ROC_vic.dds"
+		name = "GFX_SPEVNT_SAV_UNIF"
+		texturefile = "gfx/super_events/SPEVNT_SAV_UNIF.dds"
 		legacy_lazy_load = no
 	}
-   spriteType = {
-		name = "GFX_SPEVNT_PRC_vic"
-		texturefile = "gfx/super_events/SPVENT_PRC_vic.dds"
-		legacy_lazy_load = no
-	}
-	   spriteType = {
-		name = "GFX_SPEVNT_QID_vic"
-		texturefile = "gfx/super_events/SPVENT_QID_vic.dds"
-		legacy_lazy_load = no
-	}
-	   spriteType = {
-		name = "GFX_SPEVNT_CRF_vic"
-		texturefile = "gfx/super_events/SPVENT_CRF_vic.dds"
-		legacy_lazy_load = no
-	}
-		   spriteType = {
-		name = "GFX_SPEVNT_ETR_vic"
-		texturefile = "gfx/super_events/SPVENT_ETR_vic.dds"
-		legacy_lazy_load = no
-	}
+
+
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window_thin_border"
 		size= { x=192 y=192 }
@@ -166,5 +161,5 @@ spriteTypes = {
 		borderSize = { x=64 y=64 }
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-		}
+	}
 }
