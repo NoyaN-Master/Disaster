@@ -1,0 +1,386 @@
+focus_tree = {
+	id = BAY_himmler
+	country = {
+		factor = 0
+	}
+	continuous_focus_position = { x = 100 y = 1500 }
+
+	### EPP START ###
+
+	focus = { 
+		id = BAY_The_Blue_Emperor
+		icon = GFX_goal_BAY_stand_epp
+		x = 5
+		y = 0
+	    cost = 0
+		completion_reward = {
+
+		}
+	}
+
+	focus = { 
+		id = BAY_Ignite_Holy_Fires
+		icon = GFX_goal_BAY_stand_epp
+		x = 7
+		y = 1
+	    cost = 0
+		prerequisite =  { focus = BAY_The_Blue_Emperor }
+		completion_reward = {
+
+		}
+	}
+
+	focus = { 
+		id = BAY_Bloodlust_over_Leftists
+		icon = GFX_goal_BAY_stand_epp
+		x = 7
+		y = 2
+	    cost = 0
+		prerequisite =  { focus = BAY_The_Blue_Emperor }
+		completion_reward = {
+
+		}
+	}
+
+	focus = { 
+		id = BAY_Destroy_The_Merchants
+		icon = GFX_goal_BAY_stand_epp
+		x = 9
+		y = 2
+	    cost = 0
+		prerequisite =  { focus = BAY_Ignite_Holy_Fires }
+		completion_reward = {
+
+		}
+	}
+
+	focus = { 
+		id = BAY_Traumatise_Conservatives
+		icon = GFX_goal_BAY_stand_epp
+		x = 8
+		y = 3
+	    cost = 0
+		prerequisite =  { focus = BAY_Destroy_The_Merchants }
+		prerequisite =  { focus = BAY_Bloodlust_over_Leftists }
+		completion_reward = {
+
+		}
+	}
+
+
+	focus = { 
+		id = BAY_Destroy_Tradition
+		icon = GFX_goal_BAY_stand_epp
+		x = 4
+		y = 1
+	    cost = 0
+		prerequisite =  { focus = BAY_The_Blue_Emperor }
+		completion_reward = {
+
+		}
+	}
+
+	focus = { 
+		id = BAY_Operation_Wotan
+		icon = GFX_goal_BAY_stand_epp
+		x = 3
+		y = 2
+	    cost = 0
+		prerequisite =  { focus = BAY_Destroy_Tradition }
+		completion_reward = {
+
+		}
+	}
+
+	focus = { 
+		id = BAY_Monument_of_Tyr
+		icon = GFX_goal_BAY_stand_epp
+		x = 5
+		y = 2
+	    cost = 0
+		prerequisite =  { focus = BAY_Destroy_Tradition }
+		completion_reward = {
+
+		}
+	}
+
+	focus = { 
+		id = BAY_Christian_Revelation
+		icon = GFX_goal_BAY_stand_epp
+		x = 4
+		y = 3
+	    cost = 0
+		prerequisite =  { focus = BAY_Operation_Wotan }
+		prerequisite =  { focus = BAY_Monument_of_Tyr }
+		completion_reward = {
+
+		}
+	}
+
+
+	focus = { 
+		id = BAY_Abolish_Kingdom_Bavaria
+		icon = GFX_goal_BAY_stand_epp
+		x = 6
+		y = 4
+	    cost = 0
+		prerequisite =  { focus = BAY_Christian_Revelation }
+		prerequisite =  { focus = BAY_Traumatise_Conservatives }
+		completion_reward = {
+
+		}
+	}
+
+	focus = { 
+		id = BAY_Canton_System
+		icon = GFX_goal_BAY_stand_epp
+		x = 7
+		y = 5
+	    cost = 0
+		prerequisite =  { focus = BAY_Abolish_Kingdom_Bavaria }
+		completion_reward = {
+
+		}
+	}
+
+	focus = { 
+		id = BAY_Germanic_Revanchism
+		icon = GFX_goal_BAY_stand_epp
+		x = 7
+		y = 6
+	    cost = 0
+		prerequisite =  { focus = BAY_Canton_System }
+		completion_reward = {
+
+		}
+	}
+
+
+	##2nd phase
+
+	focus = { 
+		id = BAY_European_Liberationism
+		icon = GFX_goal_BAY_stand_epp
+		x = 10
+		y = 5
+	    cost = 0
+		prerequisite =  { focus = BAY_Abolish_Kingdom_Bavaria }
+		completion_reward = {
+
+		}
+	}
+
+	focus = { 
+		id = BAY_New_Agrarianism
+		icon = GFX_goal_BAY_stand_epp
+		x = 4
+		y = 5
+	    cost = 0
+		prerequisite =  { focus = BAY_Abolish_Kingdom_Bavaria }
+		completion_reward = {
+
+		}
+	}
+
+	focus = { 
+		id = BAY_Munich_Investments
+		icon = GFX_goal_BAY_stand_epp
+		x = 3
+		y = 6
+	    cost = 0
+		prerequisite =  { focus = BAY_New_Agrarianism }
+		completion_reward = {
+
+		}
+	}
+
+	focus = { 
+		id = BAY_The_Iron_Riders
+		icon = GFX_goal_BAY_stand_epp
+		x = 4
+		y = 7
+	    cost = 0
+		prerequisite =  { focus = BAY_Munich_Investments }
+		completion_reward = {
+
+		}
+	}
+
+	focus = { 
+		id = BAY_Made_In_Germany
+		icon = GFX_goal_BAY_stand_epp
+		x = 2
+		y = 7
+	    cost = 0
+		prerequisite =  { focus = BAY_Munich_Investments }
+		completion_reward = {
+
+		}
+	}
+
+	focus = { 
+		id = BAY_The_New_Harii
+		icon = GFX_goal_BAY_stand_epp
+		x = 3
+		y = 8
+	    cost = 0
+		prerequisite =  { focus = BAY_The_Iron_Riders }
+		prerequisite =  { focus = BAY_Made_In_Germany }
+		completion_reward = {
+
+		}
+	}
+
+	focus = { 
+		id = BAY_Baldrism
+		icon = GFX_goal_BAY_stand_epp
+		x = 4
+		y = 9
+	    cost = 0
+		prerequisite =  { focus = BAY_The_New_Harii }
+		prerequisite =  { focus = BAY_Unite_Corporations }
+		completion_reward = {
+
+		}
+	}
+
+
+	focus = { 
+		id = BAY_Unite_Corporations
+		icon = GFX_goal_BAY_stand_epp
+		x = 5
+		y = 8
+	    cost = 0
+		prerequisite =  { focus = BAY_Generation_of_Workers }
+		prerequisite =  { focus = BAY_The_Iron_Riders }
+		completion_reward = {
+
+		}
+	}
+
+	focus = { 
+		id = BAY_Legacy_of_Brokkr
+		icon = GFX_goal_BAY_stand_epp
+		x = 7
+		y = 9
+	    cost = 0
+		prerequisite =  { focus = BAY_NeoPaganism }
+		prerequisite =  { focus = BAY_Unite_Corporations }
+		completion_reward = {
+
+		}
+	}
+
+	focus = { 
+		id = BAY_Break_Monopolies
+		icon = GFX_goal_BAY_stand_epp
+		x = 5
+		y = 6
+	    cost = 0
+		prerequisite =  { focus = BAY_New_Agrarianism }
+		completion_reward = {
+
+		}
+	}
+
+	focus = { 
+		id = BAY_Generation_of_Workers
+		icon = GFX_goal_BAY_stand_epp
+		x = 6
+		y = 7
+	    cost = 0
+		prerequisite =  { focus = BAY_Evropakorps }
+		prerequisite =  { focus = BAY_Break_Monopolies }
+		completion_reward = {
+
+		}
+	}
+
+	focus = { 
+		id = BAY_Wotan_Institute
+		icon = GFX_goal_BAY_stand_epp
+		x = 8
+		y = 7
+	    cost = 0
+		prerequisite =  { focus = BAY_Evropakorps }
+		completion_reward = {
+
+		}
+	}
+
+	focus = { 
+		id = BAY_Evropakorps
+		icon = GFX_goal_BAY_stand_epp
+		x = 9
+		y = 6
+	    cost = 0
+		prerequisite =  { focus = BAY_European_Liberationism }
+		completion_reward = {
+
+		}
+	}
+
+	focus = { 
+		id = BAY_Declare_Ethnonationalism
+		icon = GFX_goal_BAY_stand_epp
+		x = 11
+		y = 6
+	    cost = 0
+		prerequisite =  { focus = BAY_European_Liberationism }
+		prerequisite =  { focus = BAY_Canton_System }
+		completion_reward = {
+
+		}
+	}
+
+	focus = { 
+		id = BAY_New_Education
+		icon = GFX_goal_BAY_stand_epp
+		x = 10
+		y = 7
+	    cost = 0
+		prerequisite =  { focus = BAY_Evropakorps }
+		prerequisite =  { focus = BAY_Declare_Ethnonationalism }
+		completion_reward = {
+
+		}
+	}
+
+	focus = { 
+		id = BAY_NeoPaganism
+		icon = GFX_goal_BAY_stand_epp
+		x = 9
+		y = 8
+	    cost = 0
+		prerequisite =  { focus = BAY_New_Education }
+		prerequisite =  { focus = BAY_Wotan_Institute }
+		completion_reward = {
+
+		}
+	}
+
+	focus = { 
+		id = BAY_Oppose_Prussianism
+		icon = GFX_goal_BAY_stand_epp
+		x = 11
+		y = 8
+	    cost = 0
+		prerequisite =  { focus = BAY_New_Education }
+		completion_reward = {
+
+		}
+	}
+
+	focus = { 
+		id = BAY_Teutonkultur
+		icon = GFX_goal_BAY_stand_epp
+		x = 10
+		y = 9
+	    cost = 0
+		prerequisite =  { focus = BAY_NeoPaganism }
+		prerequisite =  { focus = BAY_Oppose_Prussianism }
+		completion_reward = {
+
+		}
+	}
+}
