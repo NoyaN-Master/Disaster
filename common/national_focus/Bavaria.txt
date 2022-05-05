@@ -159,6 +159,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = BAY_side_with_himmler }
 		completion_reward = {
+			add_popularity = {
+				ideology = esoteric_traditionalist
+				popularity = 0.05
+			}
 			if = {
 				limit = {
 					has_idea = BAY_divided_freikorps_2
@@ -263,6 +267,11 @@ focus_tree = {
 		prerequisite = { focus = BAY_hunt_epp }
 		prerequisite = { focus = BAY_expose_gay_rohm }
 		completion_reward = {
+			add_popularity = {
+				ideology = esoteric_traditionalist
+				popularity = 0.05
+			}
+			add_stability = -0.05
 			swap_ideas = {
 				remove_idea = BAY_divided_freikorps_3
 				add_idea = BAY_divided_freikorps_4
@@ -316,6 +325,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = BAY_end_content
 			remove_ideas = BAY_divided_freikorps_4
+			load_focus_tree = BAY_himmler
 		}
 	}
 }

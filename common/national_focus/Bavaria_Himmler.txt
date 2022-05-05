@@ -13,6 +13,9 @@ focus_tree = {
 		x = 5
 		y = 0
 	    cost = 0
+		bypass = {
+			has_government = esoteric_traditionalist
+		}
 		completion_reward = {
 
 		}

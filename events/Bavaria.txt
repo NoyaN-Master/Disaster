@@ -41,7 +41,11 @@ country_event = { #Pick a leader, any leader.
 	option = { #Himmler
 		name = bay.2.c
 		unlock_national_focus = BAY_side_with_himmler
-	}
+		set_politics = {
+			ruling_party = esoteric_traditionalist
+		}
+		add_political_power = 100
+}
 }
 
 country_event = { #event for the smaller countries, let bavaria eat you
