@@ -317,6 +317,7 @@ country_event = { #Peoples Republic of China Seperation
 		custom_effect_tooltip = ROC_PRC_TT
 		hidden_effect = {
 			PRC = {
+				load_oob = "PRC_cwar"
 				transfer_state = 749
 				transfer_state = 605
 				transfer_state = 750
@@ -366,6 +367,7 @@ country_event = { #Peoples Republic of China Seperation
 			PRC = { country_event = { id = prc.1 days = 10}}
 			PRC= {change_tag_from = ROC}
 			PRC = {
+				load_oob = "PRC_cwar"
 				transfer_state = 749
 				transfer_state = 605
 				transfer_state = 750
