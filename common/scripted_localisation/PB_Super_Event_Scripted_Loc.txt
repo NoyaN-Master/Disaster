@@ -170,6 +170,36 @@ defined_text = { #SUPER EVENT TITLES
         }
         localization_key = "SAV_UNIF"
     }
+    text = { 
+        trigger = {
+            has_global_flag = cw_china_flag
+        }
+        localization_key = "cw_china"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = roc_vic_flag
+        }
+        localization_key = "roc_vic"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = prc_vic_flag
+        }
+        localization_key = "prc_vic"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = qid_vic_flag
+        }
+        localization_key = "qid_vic"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = crf_vic_flag
+        }
+        localization_key = "crf_vic"
+    }
 }
 
 defined_text = { #SUPER EVENT QUOTES
@@ -359,6 +389,36 @@ defined_text = { #SUPER EVENT QUOTES
         }
         localization_key = "SAV_UNIF_TEXT"
     }
+    text = { 
+        trigger = {
+            has_global_flag = cw_china_flag
+        }
+        localization_key = "cw_china_TEXT"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = roc_vic_flag
+        }
+        localization_key = "roc_vic_TEXT"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = prc_vic_flag
+        }
+        localization_key = "prc_vic_TEXT"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = qid_vic_flag
+        }
+        localization_key = "qid_vic_TEXT"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = crf_vic_flag
+        }
+        localization_key = "crf_vic_TEXT"
+    }
 }
 
 defined_text = { #SUPER EVENT REMARKS
@@ -547,6 +607,36 @@ defined_text = { #SUPER EVENT REMARKS
         }
         localization_key = "SAV_UNIF_REMARK"
     }
+	text = { 
+        trigger = {
+            has_global_flag = cw_china_flag
+        }
+        localization_key = "cw_china_REMARK"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = roc_vic_flag
+        }
+        localization_key = "roc_vic_REMARK"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = prc_vic_flag
+        }
+        localization_key = "prc_vic_REMARK"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = qid_vic_flag
+        }
+        localization_key = "qid_vic_REMARK"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = crf_vic_flag
+        }
+        localization_key = "crf_vic_REMARK"
+    }
 }
 defined_text = { #SUPER EVENT IMAGES
     name = get_superevent_images
@@ -683,7 +773,36 @@ defined_text = { #SUPER EVENT IMAGES
         }
         localization_key = "GFX_SPEVNT_SAV_UNIF"
     }
-
+	text = { 
+        trigger = {
+            has_global_flag = cw_china_flag
+        }
+        localization_key = "GFX_SPEVNT_China_Civil"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = roc_vic_flag
+        }
+        localization_key = "GFX_SPEVNT_roc_vic"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = prc_vic_flag
+        }
+        localization_key = "GFX_SPEVNT_prc_vic"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = qid_vic_flag
+        }
+        localization_key = "GFX_SPEVNT_qid_vic"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = crf_vic_flag
+        }
+        localization_key = "GFX_SPEVNT_crf_vic"
+    }
 
 
 }

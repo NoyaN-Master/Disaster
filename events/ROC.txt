@@ -328,7 +328,7 @@ country_event = { #Peoples Republic of China Seperation
 				transfer_state = 613
 				transfer_state = 598
 				
-					749 = {
+				749 = {
 				add_core_of = PRC
 				}
 				605 = {
@@ -365,7 +365,7 @@ country_event = { #Peoples Republic of China Seperation
 		custom_effect_tooltip = ROC_PRC_TT_2
 		hidden_effect = {
 			PRC = { country_event = { id = prc.1 days = 10}}
-			PRC= {change_tag_from = ROC}
+			PRC = {change_tag_from = ROC}
 			PRC = {
 				load_oob = "PRC_cwar"
 				transfer_state = 749
@@ -1097,6 +1097,50 @@ country_event = { #WAR
 	option = {
 		name = roc.34.a
         ai_chance = {factor = 100}
+		set_country_flag = CHINA_CW_SUPERFLAG
+		619 = {
+			remove_core_of = ROC
+		}
+		287 = {
+			remove_core_of = ROC
+		}
+		617 = {
+			remove_core_of = ROC
+		}
+		760 = {
+			remove_core_of = ROC
+		}
+		759 = {
+			remove_core_of = ROC
+		}
+		755 = {
+			remove_core_of = ROC
+		}
+		756 = {
+			remove_core_of = ROC
+		}
+		604 = {
+			remove_core_of = ROC
+		}
+		every_state = {
+			limit = {
+				is_core_of = ROC
+			}
+			add_core_of = QID
+		}
+		every_state = {
+			limit = {
+				is_core_of = ROC
+			}
+			add_core_of = PRC
+		}
+		every_state = {
+			limit = {
+				is_core_of = ROC
+			}
+			add_core_of = CRF
+		}
+
 		ROC = {
 			declare_war_on = {
 				target = PRC

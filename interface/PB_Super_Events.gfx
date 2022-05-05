@@ -152,7 +152,31 @@ spriteTypes = {
 		texturefile = "gfx/super_events/SPEVNT_SAV_UNIF.dds"
 		legacy_lazy_load = no
 	}
-
+	spriteType = {
+		name = "GFX_SPEVNT_China_Civil"
+		texturefile = "gfx/super_events/SPEVNT_China_Civil.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SPEVNT_roc_vic"
+		texturefile = "gfx/super_events/SPVENT_ROC_vic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SPEVNT_prc_vic"
+		texturefile = "gfx/super_events/SPVENT_PRC_Vic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SPEVNT_qid_vic"
+		texturefile = "gfx/super_events/SPVENT_QID_Vic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SPEVNT_crf_vic"
+		texturefile = "gfx/super_events/SPVENT_CRF_Vic.dds"
+		legacy_lazy_load = no
+	}
 
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window_thin_border"

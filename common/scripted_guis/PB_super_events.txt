@@ -171,6 +171,36 @@ scripted_gui = {
 					}
 					clr_global_flag  = SAV_UNIF_FLAG
 				}
+				if = {
+					limit = {	
+						has_global_flag = cw_china_flag
+					}
+					clr_global_flag  = cw_china_flag
+				}
+				if = {
+					limit = {	
+						has_global_flag = roc_vic_flag
+					}
+					clr_global_flag  = roc_vic_flag
+				}
+				if = {
+					limit = {	
+						has_global_flag = prc_vic_flag
+					}
+					clr_global_flag  = prc_vic_flag
+				}
+				if = {
+					limit = {	
+						has_global_flag = qid_vic_flag
+					}
+					clr_global_flag  = qid_vic_flag
+				}
+				if = {
+					limit = {	
+						has_global_flag = crf_vic_flag
+					}
+					clr_global_flag  = crf_vic_flag
+				}
 			}
 		}
 	}
