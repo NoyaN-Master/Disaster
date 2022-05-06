@@ -1,3 +1,64 @@
+PRE_economic_sphere_decision = {
+	PRE_invite_into_economic_sphere = {
+		icon = GFX_decision_generic_factory
+		allowed = { tag = PRE }
+		available = {
+			ROOT = {
+				if = {
+					limit = { has_war = yes }
+					surrender_progress < 0.30
+				}
+				else = {
+					has_war = no
+				}
+			}
+			FROM = {
+				if = {
+					limit = { has_war = yes }
+					surrender_progress < 0.30
+				}
+				else = {
+					has_war = no
+				}
+			}
+		}
+		visible = {
+			FROM = {
+				exists = yes
+				has_country_flag = PRE_can_be_invited
+				NOT = {
+					has_country_flag = PRE_was_invited_into_sphere
+					is_in_array = { global.pre_economic_sphere = THIS }
+					has_war_with = ROOT
+				}
+			}
+		}
+		cost = 25
+		fire_only_once = no
+		targets = { BTV BLI LUX DAN SWV NRG CEZ LIT LAT EST}
+		target_trigger = {
+			FROM = {
+				exists = yes
+				NOT = {
+					has_country_flag = PRE_was_invited_into_sphere
+					is_in_array = { global.pre_economic_sphere = THIS }
+					has_war_with = ROOT
+				}
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision JAP_invite_into_economic_sphere target: [From.GetName]"
+			FROM = {
+				set_country_flag = PRE_was_invited_into_sphere
+				country_event = { id = preo.13 days = 2 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+}
 PRE_kulturkampf_decisions = { #kulturkampf decisions
 	PRE_kulturkampf_decision ={
 		name = PRE_kulturkampf_decision_name
@@ -49,7 +110,7 @@ PRE_germanize_baltics_decision = {
 	PRE_baltic_migration = { #integrate estonia and latvia for goltz
 		name = PRE_baltic_migration_name
 		icon = GFX_decision_generic_police_action
-
+		fire_only_once = yes
 		available = {
 		num_of_civilian_factories_available_for_projects > 5
 						has_manpower > 1000
@@ -114,7 +175,7 @@ PRE_germanize_baltics_decision = {
 			add_manpower = -100000
 		}
 		FROM = {add_manpower = 400000}
-		add_state_core = FROM
+		BLT = { add_state_core = FROM}
 		LAT = {remove_state_core = FROM}	
 		EST = {remove_state_core = FROM}		
 		}

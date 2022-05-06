@@ -49,6 +49,36 @@ preo.10.b:0 "No. Partially Germanic is still mostly Slav"
 preo.11.t:0 "Italians Accept Defeat"
 preo.11.d:0 "The Italians are cowardly, this has been known since time immemorial, but we can now add stupid to list of their traits. To rely on their mountain ranges to resist us is to forget that the people of those ranges were once Austrian. Such people either await the return of our rule, or have been so Italicized that they are incapable of resistance. We have marched through the cheering streets of the towns of Sudtirol, and into Italy itself, forcing the Italians to surrender or risk losing yet more territory to us. The Sudtirolians must have long awaited our return, or else their craftsmen have been working feverishly since our invasion; either way, our leaders are pleased to note that our flag has been proudly hung from nearly every town hall of our newly restored lands. There is some discussion amongst them of their place in our Volk, whether they are a separate branch of our Germanic family, newly restored, or simply Austrians, but either way they have proudly embraced us."
 preo.11.a:0 "Gratitude is a unique blessing."
+
+preo.12.t:0 "Hidden event to recalculate sphere stuff"
+preo.12.d:0 "EMPTY"
+preo.12.a:0 "EMPTY"
+
+preo.13.t:0 "German Economic Sphere"
+preo.13.d:0 "TODO"
+preo.13.a:0 "Join"
+preo.13.b:0 "Refuse to join"
+
+preo.14.t:0 "[From.GetNameDefCap] Has Agreed"
+preo.14.d:0 "The [From.GetAdjective] government has seen the wisdom and economic benefits that becoming part of our economic sphere would bring. They have agreed to our terms."
+preo.14.a:0 "Alright"
+
+preo.15.t:0 "[From.GetNameDefCap] Has Refused"
+preo.15.d:0 "The [From.GetAdjective] government, perhaps fearing our true motives, has declined our offer to join the German economic sphere."
+preo.15.a:0 "An unwise choice."
+
+preo.16.t:0 "The New Economic Union"
+preo.16.d:0 "The parties of Poland, Austria, and Germany have convened, and signed an agreement creating an economic union between our nations. The raw resources of these lands will be ours. Must be ours. As the King has first claim, and the Lion takes the largest share, so too shall we upon the economies of these two nations. There are some in these nations who whine about "unfair terms" and "weakening competition", but the fact of the matter is that they must abide by the terms we have set. We can find new sources of raw material, however inconvenient, just as we can find new markets for our finished goods, they cannot. We have made this fact, and our willingness to pivot our trade away from them, very clear to them. And they have folded. Even as their leaders praise the new economic integration of our trade union through clenched teeth, our industries move to envelop theirs. None will remember the Polish coal and Austrian iron that were used, all will praise the German steel that it becomes."
+preo.16.a:0 "Let's get this going"
+
+preo.17.t:0 ""
+preo.17.d:0 ""
+preo.17.a:0 ""
+
+#The parties of Poland, Austria, and Germany have convened, and signed an agreement creating an economic union between our nations. The raw resources of these lands will be ours. Must be ours. As the King has first claim, and the Lion takes the largest share, so too shall we upon the economies of these two nations. There are some in these nations who whine about "unfair terms" and "weakening competition", but the fact of the matter is that they must abide by the terms we have set. We can find new sources of raw material, however inconvenient, just as we can find new markets for our finished goods, they cannot. We have made this fact, and our willingness to pivot our trade away from them, very clear to them. And they have folded. Even as their leaders praise the new economic integration of our trade union through clenched teeth, our industries move to envelop theirs. None will remember the Polish coal and Austrian iron that were used, all will praise the German steel that it becomes.
+
+
+
 ####### new foreign policy loc
 PRE_stir_up_mecklenburg:0"Stir Up Mecklenburg"
 PRE_stir_up_mecklenburg_desc:0"The Socialist breakaway is a betrayal of everything German. they betray our nation, betray our people and then dare claim legitimacy as the heirs of the German state. They are a threat that will be put down. However, simply declaring war on them would put us in a position as to where we look like the aggressors, rather than the liberators of the German People. Perhaps we can lure the NGPU into an attack and make them out to be the aggressors that they truly are?"
@@ -141,7 +171,25 @@ PRE_germanize_bohemian_crownlands_desc:0"The Czechs have for millennia occupied 
 PRE_germanize_bohemian_crownlands_tooltip:"§GAfter coring the Sudetenland we can finally start the proces of Germanization of the Bohemian crownlands.§!"
 # eco union path
 PRE_economic_union:0"A new Economic Union"
-PRE_economic_union_desc:0""
+PRE_economic_union_desc:0"The German economy is strong, roaring back to life as it has not since the Ruhr Boom. That said, it relies on some inputs which we lack in sufficient scale. Our neighbors, Poland and Austria, have huge quantities of iron and coal for our steel factories, as well as lumber and various heavy metals. They also have weaker economies, and are far more reliant on trade with us than we are with them. We shall arrange a trade agreement with these nations, on favorable terms, to ensure continued access to resources and a booming economy."
+
+PRE_economic_sphere_decision:0"Deutsche Wirtschaftsunion"
+PRE_economic_sphere_decision_desc:0""
+PRE_invite_into_economic_sphere:0"Invite [From.GetNameDef] into our Economic Sphere"
+
+PRE_european_economic_sphere:0"Deutsche Wirtschaftsunion"
+PRE_european_economic_sphere_desc:0""
+PRE_european_economic_sphere_member:0"Deutsche Wirtschaftsunion Member"
+PRE_european_economic_sphere_member_desc:0""
+PRE_economic_union_tooltip:"§GThis focus will form the basis of an economic union between Austria Germany and Poland. Other nations can be invited by approaching other nations by completing the focuses below this focus.§!"
+
+
+
+
+
+
+
+
 PRE_economic_union_danes:0"Normalize Danish Relations"
 PRE_economic_union_danes_desc:0""
 PRE_economic_union_scandinavia:0"Approach Scandinavia"

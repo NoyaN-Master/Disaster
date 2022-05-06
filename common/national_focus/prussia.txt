@@ -294,6 +294,72 @@ focus_tree = {
 		cost = 5		
 		prerequisite = { focus = PRE_little_german_solution }	
 		completion_reward = {
+			random_core_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+			random_core_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_political_power = 50
+		add_stability = 0.1
+		AUT = {
+			random_core_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+			random_core_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_political_power = 50
+		add_stability = 0.1		
+		}
 		}
 	}
 	focus = {
@@ -679,6 +745,9 @@ focus_tree = {
 		prerequisite = { focus = PRE_reapproach_the_poles }
 		prerequisite = { focus = PRE_austro_german_custom_union }
         completion_reward = {
+		create_faction = "Deutsche Wirtschaftsunion" 
+		country_event = { id = preo.16 }	
+		custom_effect_tooltip = PRE_economic_union_tooltip
 		}
 	}
 	focus = {
@@ -689,7 +758,8 @@ focus_tree = {
 		relative_position_id = PRE_stir_up_mecklenburg
 		cost = 4		
 		prerequisite = { focus = PRE_economic_union }
-        completion_reward = {
+        completion_reward = {	
+		DAN = {set_country_flag = PRE_can_be_invited}
 		}
 	}
 	focus = {
@@ -701,6 +771,8 @@ focus_tree = {
 		cost = 4		
 		prerequisite = { focus = PRE_economic_union_danes }
         completion_reward = {
+		SWV = {set_country_flag = PRE_can_be_invited}
+		NRG = {set_country_flag = PRE_can_be_invited}		
 		}
 	}
 	focus = {
@@ -712,6 +784,7 @@ focus_tree = {
 		cost = 4		
 		prerequisite = { focus = PRE_economic_union }
         completion_reward = {
+		CEZ = {set_country_flag = PRE_can_be_invited}		
 		}
 	}
 	focus = {
@@ -723,6 +796,9 @@ focus_tree = {
 		cost = 4		
 		prerequisite = { focus = PRE_economic_union }
         completion_reward = {
+		BLI = {set_country_flag = PRE_can_be_invited}	
+		LUX = {set_country_flag = PRE_can_be_invited}	
+		BTV = {set_country_flag = PRE_can_be_invited}	
 		}
 	}
 	focus = {
@@ -734,6 +810,9 @@ focus_tree = {
 		cost = 4		
 		prerequisite = { focus = PRE_economic_union }
         completion_reward = {
+		LIT = {set_country_flag = PRE_can_be_invited}	
+		LAT = {set_country_flag = PRE_can_be_invited}	
+		EST = {set_country_flag = PRE_can_be_invited}
 		}
 	}
 

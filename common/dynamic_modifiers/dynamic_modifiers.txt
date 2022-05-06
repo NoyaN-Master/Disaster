@@ -1,3 +1,25 @@
+PRE_european_economic_sphere= {
+icon = GFX_idea_PRE_economic_sphere_idea
+#	remove_trigger = {
+#		PRE = { is_faction_leader = no }
+#	}
+
+	industrial_capacity_factory = global.sphere_industry_boost
+	industrial_capacity_dockyard = global.sphere_industry_boost
+	consumer_goods_factor = global.sphere_goods_boost
+}
+
+PRE_european_economic_sphere_member= {
+icon = GFX_idea_PRE_economic_sphere_idea
+#	remove_trigger = {
+#		PRE = { is_faction_leader = no }
+#	}
+
+	production_speed_buildings_factor = 0.20
+	local_resources_factor = global.sphere_resources_boost_member
+	consumer_goods_factor = global.sphere_goods_boost_member
+}
+
 austrian_defiance = {
 	icon = GFX_modifiers_austrian_defiance
 	resistance_target = 0.1

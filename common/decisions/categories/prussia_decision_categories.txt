@@ -1,3 +1,15 @@
+PRE_economic_sphere_decision = {
+	icon = GFX_decision_generic_merge_plant_materiel
+#	picture = 
+#	priority = 9
+	visible_when_empty = yes
+	allowed = {
+		tag = PRE
+	}
+	visible = {
+		has_completed_focus = PRE_economic_union
+	}
+}
 PRE_kulturkampf_decisions = {
 	icon = GFX_decision_category_generic_propaganda
 	priority = 100

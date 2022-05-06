@@ -16,6 +16,10 @@ spriteTypes = {
 	#### Ideas GFX ####
 	###################
 	spriteType = {
+		name = "GFX_idea_PRE_economic_sphere_idea"
+		texturefile = "gfx/interface/ideas/PRE_economic_sphere_idea.png"
+	}
+	spriteType = {
 		name = "GFX_idea_autarky_economy"
 		texturefile = "gfx/interface/ideas/economic_autarky_idea.png"
 	}
