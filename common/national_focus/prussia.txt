@@ -760,6 +760,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_economic_union }
         completion_reward = {	
 		DAN = {set_country_flag = PRE_can_be_invited}
+		custom_effect_tooltip = PRE_economic_union_danes_tooltip
 		}
 	}
 	focus = {
@@ -772,7 +773,8 @@ focus_tree = {
 		prerequisite = { focus = PRE_economic_union_danes }
         completion_reward = {
 		SWV = {set_country_flag = PRE_can_be_invited}
-		NRG = {set_country_flag = PRE_can_be_invited}		
+		NRG = {set_country_flag = PRE_can_be_invited}	
+		custom_effect_tooltip = PRE_economic_union_scandinavia_tooltip
 		}
 	}
 	focus = {
@@ -785,6 +787,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_economic_union }
         completion_reward = {
 		CEZ = {set_country_flag = PRE_can_be_invited}		
+		custom_effect_tooltip = PRE_economic_union_czechs_tooltip
 		}
 	}
 	focus = {
@@ -799,6 +802,7 @@ focus_tree = {
 		BLI = {set_country_flag = PRE_can_be_invited}	
 		LUX = {set_country_flag = PRE_can_be_invited}	
 		BTV = {set_country_flag = PRE_can_be_invited}	
+		custom_effect_tooltip = PRE_economic_union_lowlands_tooltip
 		}
 	}
 	focus = {
@@ -813,6 +817,7 @@ focus_tree = {
 		LIT = {set_country_flag = PRE_can_be_invited}	
 		LAT = {set_country_flag = PRE_can_be_invited}	
 		EST = {set_country_flag = PRE_can_be_invited}
+		custom_effect_tooltip = PRE_economic_union_baltics_tooltip
 		}
 	}
 
@@ -824,13 +829,36 @@ focus_tree = {
 		x = 3
 		y = 3
 		relative_position_id = PRE_stir_up_mecklenburg
-		cost = 5		
+		cost = 5	
+        available  = {   
+        is_neighbor_of = RHN
+		country_exists = RHN
+		NOT = { RHN = { is_puppet_of = PRE } }
+        }	
+		bypass = {
+		OR = {
+		NOT = {country_exists = RHN}
+		RHN = { is_puppet_of = PRE }
+		}
+		}		
 		prerequisite = { focus = PRE_strike_poland }		
 		completion_reward = {
-
+		if = {
+		limit = { country_exists = RHN }
+		declare_war_on = {
+        target = RHN
+        type = annex_everything
+        }
+    }
+		if = {
+		limit = { country_exists = FRE }
+		declare_war_on = {
+        target = FRE
+        type = annex_everything
+        }
+    }
 		}
 	}
-
 
 ############################################### Schleicher Path
 	focus = {

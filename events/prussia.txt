@@ -912,18 +912,7 @@ country_event = { #policital solidification
 	}
 }
 
-
-
-
-
-
-
-
-
-###FP
-
-
-country_event = { # Surrender
+country_event = { # Surrender france
 	id = pre.103
 	title = pre.103.t
 	desc = pre.103.d
@@ -935,21 +924,19 @@ country_event = { # Surrender
 	RHN = {
 	has_capitulated = yes	
 	}
+	FRE = {surrender_progress > 0.1 }
+	has_completed_focus = PRE_rhineland	
 	}
 
-	mean_time_to_happen = {
-		days = 4
-	}
-	
 	option = {
-		name = ngu.10.a
+		name = pre.103.a
 		ai_chance = { factor = 100}
 		white_peace = FRE
 		annex_country = {
     	target = RHN
     	transfer_troops = yes
 		}
-		add_stability = 0.10
+	28 = {transfer_state_to = PRE}
 	}
 }
 
