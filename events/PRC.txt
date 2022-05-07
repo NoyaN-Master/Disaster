@@ -277,14 +277,14 @@ country_event = { #Contact Puyi
 
 	option = {
 		name = prc.11.a
-        ai_chance = {factor = 50}	
+        ai_chance = {factor = 20}	
 		custom_effect_tooltip = PRC_TT_QING_PROP
 		set_country_flag = PRC_qing_prop_flag
 		add_stability = -0.15
   }
   	option = {
 		name = prc.11.b
-        ai_chance = {factor = 50}	
+        ai_chance = {factor = 80}	
 		add_stability = 0.1
   }
  }
