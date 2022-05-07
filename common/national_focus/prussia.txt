@@ -757,10 +757,14 @@ focus_tree = {
 		y = 7
 		relative_position_id = PRE_stir_up_mecklenburg
 		cost = 4		
+		available = {
+		country_exists = DAN
+		}
 		prerequisite = { focus = PRE_economic_union }
         completion_reward = {	
 		DAN = {set_country_flag = PRE_can_be_invited}
 		custom_effect_tooltip = PRE_economic_union_danes_tooltip
+		country_event = { id = preo.17 }	
 		}
 	}
 	focus = {
@@ -769,12 +773,19 @@ focus_tree = {
 		x = -7
 		y = 8
 		relative_position_id = PRE_stir_up_mecklenburg
-		cost = 4		
+		cost = 4	
+		available = {
+		OR = {
+		country_exists = SWV
+		country_exists = NRG
+		}
+		}		
 		prerequisite = { focus = PRE_economic_union_danes }
         completion_reward = {
 		SWV = {set_country_flag = PRE_can_be_invited}
 		NRG = {set_country_flag = PRE_can_be_invited}	
 		custom_effect_tooltip = PRE_economic_union_scandinavia_tooltip
+		country_event = { id = preo.21 }	
 		}
 	}
 	focus = {
@@ -784,10 +795,14 @@ focus_tree = {
 		y = 7
 		relative_position_id = PRE_stir_up_mecklenburg
 		cost = 4		
+		available = {
+		country_exists = CEZ
+		}
 		prerequisite = { focus = PRE_economic_union }
         completion_reward = {
 		CEZ = {set_country_flag = PRE_can_be_invited}		
 		custom_effect_tooltip = PRE_economic_union_czechs_tooltip
+		country_event = { id = preo.18 }	
 		}
 	}
 	focus = {
@@ -797,12 +812,16 @@ focus_tree = {
 		y = 7
 		relative_position_id = PRE_stir_up_mecklenburg
 		cost = 4		
+		available = {
+		country_exists = BTV
+		}
 		prerequisite = { focus = PRE_economic_union }
         completion_reward = {
 		BLI = {set_country_flag = PRE_can_be_invited}	
 		LUX = {set_country_flag = PRE_can_be_invited}	
 		BTV = {set_country_flag = PRE_can_be_invited}	
 		custom_effect_tooltip = PRE_economic_union_lowlands_tooltip
+		country_event = { id = preo.19 }	
 		}
 	}
 	focus = {
@@ -811,13 +830,21 @@ focus_tree = {
 		x = -1
 		y = 7
 		relative_position_id = PRE_stir_up_mecklenburg
-		cost = 4		
+		cost = 4	
+		available = {
+		OR = {
+		country_exists = LIT
+		country_exists = LAT
+		country_exists = EST
+		}
+		}	
 		prerequisite = { focus = PRE_economic_union }
         completion_reward = {
 		LIT = {set_country_flag = PRE_can_be_invited}	
 		LAT = {set_country_flag = PRE_can_be_invited}	
 		EST = {set_country_flag = PRE_can_be_invited}
 		custom_effect_tooltip = PRE_economic_union_baltics_tooltip
+		country_event = { id = preo.20 }	
 		}
 	}
 

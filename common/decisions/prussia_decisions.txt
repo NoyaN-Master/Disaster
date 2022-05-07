@@ -2,6 +2,7 @@ PRE_economic_sphere_decision = {
 	PRE_invite_into_economic_sphere = {
 		icon = GFX_decision_generic_factory
 		allowed = { tag = PRE }
+		fire_only_once = yes
 		available = {
 			ROOT = {
 				if = {

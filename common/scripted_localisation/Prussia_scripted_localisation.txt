@@ -1,0 +1,289 @@
+defined_text = {
+	name = PRE_ally0
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num > 1 }
+		}
+		localization_key = PRE_ally1_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num < 1 }
+		}
+		localization_key = PRE_ally_no_sphere
+	}
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num < 2 }
+		}
+		localization_key = PRE_ally1_last
+	}
+}
+
+defined_text = {
+	name = PRE_ally1
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num > 2 }
+		}
+		localization_key = PRE_ally2_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num < 2 }
+		}
+		localization_key = PRE_ally_none
+	}
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num < 3 }
+		}
+		localization_key = PRE_ally2_last
+	}
+}
+
+defined_text = {
+	name = PRE_ally2
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num > 3 }
+		}
+		localization_key = PRE_ally3_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num < 3 }
+		}
+		localization_key = PRE_ally_none
+	}
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num < 4 }
+		}
+		localization_key = PRE_ally3_last
+	}
+}
+
+defined_text = {
+	name = PRE_ally3
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num > 4 }
+		}
+		localization_key = PRE_ally4_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num < 4 }
+		}
+		localization_key = PRE_ally_none
+	}
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num < 5 }
+		}
+		localization_key = PRE_ally4_last
+	}
+}
+
+defined_text = {
+	name = PRE_ally4
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num > 5 }
+		}
+		localization_key = PRE_ally5_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num < 5 }
+		}
+		localization_key = PRE_ally_none
+	}
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num < 6 }
+		}
+		localization_key = PRE_ally5_last
+	}
+}
+
+defined_text = {
+	name = PRE_ally5
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num > 6 }
+		}
+		localization_key = PRE_ally6_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num < 6 }
+		}
+		localization_key = PRE_ally_none
+	}
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num < 7 }
+		}
+		localization_key = PRE_ally6_last
+	}
+}
+
+defined_text = {
+	name = PRE_ally6
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num > 7 }
+		}
+		localization_key = PRE_ally7_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num < 7 }
+		}
+		localization_key = PRE_ally_none
+	}
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num < 8 }
+		}
+		localization_key = PRE_ally7_last
+	}
+}
+
+defined_text = {
+	name = PRE_ally7
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num > 8 }
+		}
+		localization_key = PRE_ally8_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num < 8 }
+		}
+		localization_key = PRE_ally_none
+	}
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num < 9 }
+		}
+		localization_key = PRE_ally8_last
+	}
+}
+
+defined_text = {
+	name = PRE_ally8
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num > 9 }
+		}
+		localization_key = PRE_ally9_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num < 9 }
+		}
+		localization_key = PRE_ally_none
+	}
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num < 10 }
+		}
+		localization_key = PRE_ally9_last
+	}
+}
+
+defined_text = {
+	name = PRE_ally9
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num > 10 }
+		}
+		localization_key = PRE_ally10_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num < 10 }
+		}
+		localization_key = PRE_ally_none
+	}
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num < 11 }
+		}
+		localization_key = PRE_ally10_last
+	}
+}
+
+defined_text = {
+	name = PRE_ally10
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num > 11 }
+		}
+		localization_key = PRE_ally11_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num < 11 }
+		}
+		localization_key = PRE_ally_none
+	}
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num < 12 }
+		}
+		localization_key = PRE_ally11_last
+	}
+}
+
+defined_text = {
+	name = PRE_ally11
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num > 12 }
+		}
+		localization_key = PRE_ally12_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num < 12 }
+		}
+		localization_key = PRE_ally_none
+	}
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num < 13 }
+		}
+		localization_key = PRE_ally12_last
+	}
+}
+
+defined_text = {
+	name = PRE_ally12
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num > 13 }
+		}
+		localization_key = PRE_ally13_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num < 13 }
+		}
+		localization_key = PRE_ally_none
+	}
+	text = {
+		trigger = {
+			check_variable = { global.pre_economic_sphere^num < 14 }
+		}
+		localization_key = PRE_ally13_last
+	}
+}
+
+
+
+

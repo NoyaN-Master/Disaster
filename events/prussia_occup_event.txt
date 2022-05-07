@@ -618,3 +618,185 @@ country_event = { #birth of economic union
 		}}
 	}
 }
+
+country_event = { # danish trade
+	id = preo.17
+	title = preo.17.t
+	desc = preo.17.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = preo.17.a
+		ai_chance = { factor = 1}
+		DAN = {
+			random_core_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}}
+		random_core_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+country_event = { # czech trade
+	id = preo.18
+	title = preo.18.t
+	desc = preo.18.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = preo.18.a
+		ai_chance = { factor = 1}
+		CEZ = {
+			random_core_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}}
+		random_core_state = {
+		add_resource = {
+			type = steel
+			amount = 10
+		}
+		}
+		random_core_state = {
+		add_resource = {
+			type = steel
+			amount = 10
+		}
+		}
+		random_core_state = {
+		add_resource = {
+			type = steel
+			amount = 10
+		}
+		}
+	}
+}
+country_event = { # lowlands trade
+	id = preo.19
+	title = preo.19.t
+	desc = preo.19.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = preo.19.a
+		ai_chance = { factor = 1}
+		BTV = {
+			random_core_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}}
+	add_political_power = 50
+	}
+}
+country_event = { # baltic trade
+	id = preo.20
+	title = preo.20.t
+	desc = preo.20.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = preo.20.a
+		ai_chance = { factor = 1}
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_political_power = 50
+	}
+}
+country_event = { # scandinavia
+	id = preo.21
+	title = preo.21.t
+	desc = preo.21.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = preo.21.a
+		ai_chance = { factor = 1}
+		SWV = {
+			random_core_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}}
+		NRG = {
+			random_core_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}}
+		random_core_state = {
+		add_resource = {
+			type = tungsten
+			amount = 10
+		}
+		}
+		random_core_state = {
+		add_resource = {
+			type = steel
+			amount = 10
+		}
+		}
+		random_core_state = {
+		add_resource = {
+			type = aliminium
+			amount = 10
+		}
+		}
+	}
+}

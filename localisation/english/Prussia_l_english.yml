@@ -71,9 +71,25 @@ preo.16.t:0 "The New Economic Union"
 preo.16.d:0 "The parties of Poland, Austria, and Germany have convened, and signed an agreement creating an economic union between our nations. The raw resources of these lands will be ours. Must be ours. As the King has first claim, and the Lion takes the largest share, so too shall we upon the economies of these two nations. There are some in these nations who whine about "unfair terms" and "weakening competition", but the fact of the matter is that they must abide by the terms we have set. We can find new sources of raw material, however inconvenient, just as we can find new markets for our finished goods, they cannot. We have made this fact, and our willingness to pivot our trade away from them, very clear to them. And they have folded. Even as their leaders praise the new economic integration of our trade union through clenched teeth, our industries move to envelop theirs. None will remember the Polish coal and Austrian iron that were used, all will praise the German steel that it becomes."
 preo.16.a:0 "Let's get this going"
 
-preo.17.t:0 ""
-preo.17.d:0 ""
-preo.17.a:0 ""
+preo.17.t:0 "Normalize Danish Relations"
+preo.17.d:0 "We have begun to reach out to Denmark regarding normalizing trade relations and their integration into our economic union. Given our recent history, they will expect threats. Those shall not come. We shall not threaten them into submission, only make them aware of some key realities. The Prussian state is willing to pivot to other markets, willing to deal with the Russians or even the Italians to secure access to food. The Danes have little else to offer us; indeed most of their economy, while advanced, is a smaller and inferior model of ours. We shall make them aware of this. Denmark can fall under our aegis as the protected breadbasket of our union, primarily for us, of course, or they can suffer as a country that can scarcely compete with Germany in any other industry. We imagine their choice will be hard, but not difficult."
+preo.17.a:0 "Alright"
+
+preo.18.t:0 "Approaching the Czechs"
+preo.18.d:0 "Iron and coal. These are the two most basic requirements for a modern industry,. In spite of our unchallenged academic understanding of the functioning of these two materials, they cannot be summoned up through sheer understanding or will. Instead, we must go to the nations which are blessed with them, and ensure our unchallenged access. For reasons unknown to us, God has decided that every Czech footfall should land upon one or both of these resources. And so we shall bring them in. Not only will this new source allow us to ensure smooth production lines, but it will also serve to weaken the bargaining power of Poland and Austria. Additionally, the Czech economy can offer us goods such as glass and industrial equipment, as well as an assortment of other light industries. Sandwiched as they are between the members of our union, we can't imagine a refusal to join is likely..."
+preo.18.a:0 "That's right"
+
+preo.19.t:0 "The Lowlands trade"
+preo.19.d:0 "Food, dairy, chemicals, light industry, steel, coal, and oil. The Lowlands has all of these, although admittedly many are in small quantities. The economy of the Lowlands is built upon agriculture and light industry, and is extremely well rounded, if not particularly large. While they sit on a decent supply of coal and a little bit of oil, outside of their chemical industry they have little to offer us that others cannot. But they have a little to offer us in a lot of industries. Even combined, the nations of the Lowlands could not hope to fill any key demand of our economy; however, they offer the opportunity to cover temporary variation in virtually any industry of our associated nations. Should an issue arise at a coal plant in Poland, Belgian steel shall cover it for a time, should a disease break out among our cattle, Dutch milk and cheese shall spread through our lands also."
+preo.19.a:0 "Good"
+
+preo.20.t:0 "The Baltic Nations"
+preo.20.d:0 "Unlike many of our other proposals, the Baltics are not a region we have traditionally had a large amount of trade with. Indeed, this is because they have traditionally not had a large degree of resources to offer us. The nations of Lithuania and Estonia are barely industrialized, with only Latvia boasting a fledgling industrial market. Their chief goods are various types of minerals, woodland products, and a small surplus of food. While we were initially surprised to see the idea of bringing them into our economic sphere even suggested, we must now agree that their reasoning is sound. Much of the professional class of these nations are German, and the massive pressure they can bring to bear will mean that we have to apply little ourselves. And of course, any opportunity to rob the Russians of a market is worthwhile."
+preo.20.a:0 "chud"
+
+preo.21.t:0 "Approaching Scandinavia"
+preo.21.d:0 "It is with great excitement that our trade ministers and economic advisors bring us this new suggestion: to attempt to integrate the nations of Sweden and Norway into our sphere. This course of action has not been taken before, not because we did not want to, but rather because we had no ability to do so. With our newfound influence over Denmark, we shall make inroads to the other Scandinavian countries. Both nations is rich with a wide variety of important ores, and both boast a respectable agricultural industry. From Norway we shall extract Aluminum and Magnesium, and from Sweden we shall draw copper, lead, and zinc. Aside from the economic benefits, we shall also draw a great diplomatic coup from bringing these nations into our sphere."
+preo.21.a:0 "We need the resources"
 
 #The parties of Poland, Austria, and Germany have convened, and signed an agreement creating an economic union between our nations. The raw resources of these lands will be ours. Must be ours. As the King has first claim, and the Lion takes the largest share, so too shall we upon the economies of these two nations. There are some in these nations who whine about "unfair terms" and "weakening competition", but the fact of the matter is that they must abide by the terms we have set. We can find new sources of raw material, however inconvenient, just as we can find new markets for our finished goods, they cannot. We have made this fact, and our willingness to pivot our trade away from them, very clear to them. And they have folded. Even as their leaders praise the new economic integration of our trade union through clenched teeth, our industries move to envelop theirs. None will remember the Polish coal and Austrian iron that were used, all will praise the German steel that it becomes.
 
@@ -172,15 +188,50 @@ PRE_germanize_bohemian_crownlands_tooltip:"§GAfter coring the Sudetenland we ca
 # eco union path
 PRE_economic_union:0"A new Economic Union"
 PRE_economic_union_desc:0"The German economy is strong, roaring back to life as it has not since the Ruhr Boom. That said, it relies on some inputs which we lack in sufficient scale. Our neighbors, Poland and Austria, have huge quantities of iron and coal for our steel factories, as well as lumber and various heavy metals. They also have weaker economies, and are far more reliant on trade with us than we are with them. We shall arrange a trade agreement with these nations, on favorable terms, to ensure continued access to resources and a booming economy."
-
 PRE_economic_sphere_decision:0"Deutsche Wirtschaftsunion"
-PRE_economic_sphere_decision_desc:0"Our new economic union has taken its first steps, and shown great promise in its infancy. Already, the raw materials of our partner nations have been brought to great use for both our civilian economy and war machine. Certainly, we have benefited the most from this arrangement, but only as much as we are due, as the larger and more advanced economy. Our economic advisors have mentioned the idea of expanding our economic union, inviting other European nations to our folds, and we agree. Let all of Europe become many cogs of the German economy!"
+PRE_economic_sphere_decision_desc:0"Our new economic union has taken its first steps, and shown great promise in its infancy. Already, the raw materials of our partner nations have been brought to great use for both our civilian economy and war machine. Certainly, we have benefited the most from this arrangement, but only as much as we are due, as the larger and more advanced economy. Our economic advisors have mentioned the idea of expanding our economic union, inviting other European nations to our folds, and we agree. Let all of Europe become many cogs of the German economy! \n \n Current members of our sphere: \n [PRE_ally2][PRE_ally3][PRE_ally4][PRE_ally5][PRE_ally6][PRE_ally7][PRE_ally8][PRE_ally9][PRE_ally10][PRE_ally11][PRE_ally12][PRE_ally13][PRE_ally14]"
 PRE_invite_into_economic_sphere:0"Invite [From.GetNameDef] into our Economic Sphere"
-
-PRE_european_economic_sphere:0"Deutsche Wirtschaftsunion"
-PRE_european_economic_sphere_desc:0""
-PRE_european_economic_sphere_member:0"Deutsche Wirtschaftsunion Member"
-PRE_european_economic_sphere_member_desc:0""
+### Scripted Loc ###
+ PRE_ally1_name:0 "§Y[?global.pre_economic_sphere^0.GetFlag][?global.pre_economic_sphere^0.GetName]§!, "
+ PRE_ally2_name:0 "§Y[?global.pre_economic_sphere^1.GetFlag][?global.pre_economic_sphere^1.GetName]§!, "
+ PRE_ally3_name:0 "§Y[?global.pre_economic_sphere^2.GetFlag][?global.pre_economic_sphere^2.GetName]§!, "
+ PRE_ally4_name:0 "§Y[?global.pre_economic_sphere^3.GetFlag][?global.pre_economic_sphere^3.GetName]§!, "
+ PRE_ally5_name:0 "§Y[?global.pre_economic_sphere^4.GetFlag][?global.pre_economic_sphere^4.GetName]§!, "
+ PRE_ally6_name:0 "§Y[?global.pre_economic_sphere^5.GetFlag][?global.pre_economic_sphere^5.GetName]§!, "
+ PRE_ally7_name:0 "§Y[?global.pre_economic_sphere^6.GetFlag][?global.pre_economic_sphere^6.GetName]§!, "
+ PRE_ally8_name:0 "§Y[?global.pre_economic_sphere^7.GetFlag][?global.pre_economic_sphere^7.GetName]§!, "
+ PRE_ally9_name:0 "§Y[?global.pre_economic_sphere^8.GetFlag][?global.pre_economic_sphere^8.GetName]§!, "
+ PRE_ally10_name:0 "§Y[?global.pre_economic_sphere^9.GetFlag][?global.pre_economic_sphere^9.GetName]§!, "
+ PRE_ally11_name:0 "§Y[?global.pre_economic_sphere^10.GetFlag][?global.pre_economic_sphere^10.GetName]§!, "
+ PRE_ally12_name:0 "§Y[?global.pre_economic_sphere^11.GetFlag][?global.pre_economic_sphere^11.GetName]§!, "
+ PRE_ally13_name:0 "§Y[?global.pre_economic_sphere^12.GetFlag][?global.pre_economic_sphere^12.GetName]§!, "
+ PRE_ally14_name:0 "§Y[?global.pre_economic_sphere^13.GetFlag][?global.pre_economic_sphere^13.GetName]§!, "
+ PRE_ally15_name:0 "§Y[?global.pre_economic_sphere^14.GetFlag][?global.pre_economic_sphere^14.GetName]§!, "
+ PRE_ally1_last:0 "§Y[?global.pre_economic_sphere^0.GetFlag][?global.pre_economic_sphere^0.GetName]§!"
+ PRE_ally2_last:0 "§Y[?global.pre_economic_sphere^1.GetFlag][?global.pre_economic_sphere^1.GetName]§!"
+ PRE_ally3_last:0 "§Y[?global.pre_economic_sphere^2.GetFlag][?global.pre_economic_sphere^2.GetName]§!"
+ PRE_ally4_last:0 "§Y[?global.pre_economic_sphere^3.GetFlag][?global.pre_economic_sphere^3.GetName]§!"
+ PRE_ally5_last:0 "§Y[?global.pre_economic_sphere^4.GetFlag][?global.pre_economic_sphere^4.GetName]§!"
+ PRE_ally6_last:0 "§Y[?global.pre_economic_sphere^5.GetFlag][?global.pre_economic_sphere^5.GetName]§!"
+ PRE_ally7_last:0 "§Y[?global.pre_economic_sphere^6.GetFlag][?global.pre_economic_sphere^6.GetName]§!"
+ PRE_ally8_last:0 "§Y[?global.pre_economic_sphere^7.GetFlag][?global.pre_economic_sphere^7.GetName]§!"
+ PRE_ally9_last:0 "§Y[?global.pre_economic_sphere^8.GetFlag][?global.pre_economic_sphere^8.GetName]§!"
+ PRE_ally10_last:0 "§Y[?global.pre_economic_sphere^9.GetFlag][?global.pre_economic_sphere^9.GetName]§!"
+ PRE_ally11_last:0 "§Y[?global.pre_economic_sphere^10.GetFlag][?global.pre_economic_sphere^10.GetName]§!"
+ PRE_ally12_last:0 "§Y[?global.pre_economic_sphere^11.GetFlag][?global.pre_economic_sphere^11.GetName]§!"
+ PRE_ally13_last:0 "§Y[?global.pre_economic_sphere^12.GetFlag][?global.pre_economic_sphere^12.GetName]§!"
+ PRE_ally14_last:0 "§Y[?global.pre_economic_sphere^13.GetFlag][?global.pre_economic_sphere^13.GetName]§!"
+ PRE_ally15_last:0 "§Y[?global.pre_economic_sphere^14.GetFlag][?global.pre_economic_sphere^14.GetName]§!"
+ PRE_ally_none:0 ""
+ PRE_ally_no_sphere:0 "None"
+ 
+ 
+ 
+ 
+PRE_global.pre_economic_sphere:0"Deutsche Wirtschaftsunion"
+PRE_global.pre_economic_sphere_desc:0""
+PRE_global.pre_economic_sphere_member:0"Deutsche Wirtschaftsunion Member"
+PRE_global.pre_economic_sphere_member_desc:0""
 PRE_economic_union_tooltip:"§GThis focus will form the basis of an economic union between Austria Germany and Poland. Other nations can be invited by approaching other nations by completing the focuses below this focus.§!"
 
 
@@ -195,7 +246,7 @@ PRE_economic_union_baltics_tooltip:0"§GBy completing this focus we will be able
 PRE_economic_union_danes:0"Normalize Danish Relations"
 PRE_economic_union_danes_desc:0"As could be expected given that our recent history of diplomatic and military feuds with Denmark, our trade relations have suffered. We shall rectify this. To be sure, Denmark is a small economy, however it provides a stable, if small, supply of grain and other foodstuffs. We shall §Gnever §!suffer another major war where we cannot feed both our military and our people."
 PRE_economic_union_scandinavia:0"Approach Scandinavia"
-PRE_economic_union_scandinavia_desc:0""
+PRE_economic_union_scandinavia_desc:0"Although rich in a number of resources, the nations of Sweden and Norway are hardly deep within our sphere of diplomatic influence. Indeed, both nations remained neutral during the Great War, with Norway even lending preferential treatment towards our enemies. However, with our new-found influence over Denmark, it is high time we extend our economic union to the other Scandinavian countries."
 PRE_economic_union_czechs:0"Approach the Czechs"
 PRE_economic_union_czechs_desc:0"After bringing Poland and Austria into our new economic sphere, we will ensure that they never get begin to think ideas above their station. They supply our iron and coal, that is their duty, whatever diplomatic and cultural niceties we may cloak it in. We shall bring the Czechs into our new union, to increase our supply of these vital goods, and ensure none of our little mines tries to leverage their supplies."
 PRE_economic_union_lowlands:0"Invite the Lowlands"
