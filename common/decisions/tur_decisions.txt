@@ -1437,7 +1437,8 @@ WRF_Russ_Komisar = {
         OR = {
         NOT = {
         country_exists = SOV
-        country_exists = RUS    
+        country_exists = RUS
+        country_exists = BYR
         }
         }
         WRF = {
@@ -1455,11 +1456,16 @@ WRF_Russ_Komisar = {
         complete_effect = {
         release_puppet = TAT
         release = RUS
+        release = BYR
         TAT = {
         annex_country = {
         target = RUS
         transfer_troops = yes
-        }    
+        }
+        annex_country = {
+        target = BYR
+        transfer_troops = yes
+        }
         set_cosmetic_tag = Turkish_Russia_cosmetic
         set_politics = {
 	        ruling_party = ultranationalist
@@ -1503,7 +1509,7 @@ WRF_China = {
         country_exists = XSM
         country_exists = SIK
         country_exists = MON
-        country_exists = TUV     
+        country_exists = TUV
         }
         }
         OR = {
@@ -1575,6 +1581,10 @@ WRF_China = {
         }
         annex_country = {
         target = XSM
+        transfer_troops = no
+        }
+        annex_country = {
+        target = BYR
         transfer_troops = no
         }
         }

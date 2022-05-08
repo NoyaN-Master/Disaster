@@ -47,6 +47,7 @@ add_state_core = 346
 add_state_core = 348
 add_state_core = 349
 add_state_core = 797
+add_state_core = 835
 
 country_event = { id = wrf.40 days = 3 }
 unlock_national_focus = WRF_deal_ist
@@ -80,6 +81,7 @@ add_state_core = 349
 add_state_core = 797
 add_state_core = 342
 add_state_core = 345
+add_state_core = 835
 }
 
 IZM_Ethem_government_loyaly = {
@@ -476,6 +478,3 @@ transfer_state = 735
 transfer_state = 32
 }
 }
-
-
-

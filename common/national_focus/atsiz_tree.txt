@@ -1337,6 +1337,11 @@ focus_tree = {
         add_claim_by = WRF
         }	
         }
+		BYR = {
+        every_owned_state = {
+        add_claim_by = WRF
+        }	
+        }
 		}
 	}
 	focus = {
@@ -1391,6 +1396,10 @@ focus_tree = {
 				target = FIN
 				type = annex_everything
 			}
+			declare_war_on = {
+				target = BYR
+				type = annex_everything
+				}
 			hidden_effect = {
 				set_country_flag = Russian_War_WRF
 			}
@@ -1436,9 +1445,6 @@ focus_tree = {
     		target = SIK
     		type = annex_everything
 			}		
-		hidden_effect = {
-		}
 		}
 	}
-	
 }    
