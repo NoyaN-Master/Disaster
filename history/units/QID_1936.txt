@@ -117,4 +117,88 @@ units = {
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
+	division= {	
+		name = "kōgun 1st Division"
+		location = 9843    
+		division_template = "Japan garrison"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+		division= {	
+		name = "kōgun 2nd Division"
+		location = 9843    
+		division_template = "Japan garrison"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+		division= {	
+		name = "kōgun 3rd Division"
+		location = 9843    
+		division_template = "Japan garrison"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+			division= {	
+		name = "kōgun 4th Division"
+		location = 9843    
+		division_template = "Japan garrison"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+		division= {	
+		name = "kōgun 5th Division"
+		location = 3900    
+		division_template = "Japan garrison"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+		division= {	
+		name = "kōgun 6th Division"
+		location = 3900    
+		division_template = "Japan garrison"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+		division= {	
+		name = "Qing Loyalists"
+		location = 10068   
+		division_template = "Qing Loyalists"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+		division= {	
+		name = "Qing Loyalists"
+		location = 10068    
+		division_template = "Qing Loyalists"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+		division= {	
+		name = "Qing Loyalists"
+		location = 1069    
+		division_template = "Qing Loyalists"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+		division= {	
+		name = "Qing Loyalists"
+		location = 1069    
+		division_template = "Qing Loyalists"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+		division= {	
+		name = "Qing Loyalists"
+		location = 1069    
+		division_template = "Qing Loyalists"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+		division= {	
+		name = "Qing Loyalists"
+		location = 10000    
+		division_template = "Qing Loyalists"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
 }   

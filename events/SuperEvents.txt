@@ -697,11 +697,8 @@ country_event = {		#Super Event DONE
 	
 	trigger = {
 		ROC = {
-			all_core_state = {
-				is_owned_by = ROOT
-			}	
+			has_country_flag = DEBUG_FLAG
 		}
-		date > 1937.6.1
 	}
 
 	fire_only_once = yes
@@ -748,12 +745,9 @@ country_event = {		#Super Event DONE
 	is_triggered_only = no
 	
 	trigger = {
-		PRC = {
-			all_core_state = {
-				is_owned_by = ROOT
-			}	
+		ROC = {
+			has_country_flag = DEBUG_FLAG
 		}
-		date > 1937.6.1
 	}
 
 	fire_only_once = yes
@@ -800,12 +794,9 @@ country_event = {		#Super Event DONE
 	is_triggered_only = no
 	
 	trigger = {
-		QID = {
-			all_core_state = {
-				is_owned_by = ROOT
-			}	
+		ROC = {
+			has_country_flag = DEBUG_FLAG
 		}
-		date > 1937.6.1
 	}
 
 	fire_only_once = yes
@@ -852,12 +843,9 @@ country_event = {		#Super Event DONE
 	is_triggered_only = no
 	
 	trigger = {
-		CRF = {
-			all_core_state = {
-				is_owned_by = ROOT
-			}	
+		ROC = {
+			has_country_flag = DEBUG_FLAG
 		}
-		date > 1937.6.1
 	}
 
 	fire_only_once = yes
