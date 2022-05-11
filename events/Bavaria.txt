@@ -37,6 +37,9 @@ country_event = { #Pick a leader, any leader.
 	option = { #Rohm
 		name = bay.2.b
 		unlock_national_focus = BAY_side_with_rohm
+		set_politics = {
+			ruling_party = revolutionary_nationalist
+		}
 	}
 	option = { #Himmler
 		name = bay.2.c
