@@ -391,7 +391,7 @@ country_event = { # Succeeds
 			elections_allowed = no
 		}				
 		create_country_leader = {
-	    name = "Kurt von Schleicher"
+	    name = "Kurt von Schleicher "
 	    desc = "PRE_Kurt_von_Schleicher_desc"
 	    picture = "gfx/leaders/PRE/PRE_Schleicher_Querfront.tga"
 	    expire = "2020.1.1"

@@ -279,6 +279,9 @@ focus_tree = {
 		relative_position_id = PRE_stir_up_mecklenburg
 		cost = 5
 		prerequisite = { focus = PRE_thrust_south }	
+		available = {
+			always= false
+		}
 		mutually_exclusive = {
 		focus =  PRE_anschluss
 		}
@@ -373,6 +376,9 @@ focus_tree = {
 		mutually_exclusive = {
 		focus =  PRE_little_german_solution
 		}
+		available = {
+			always= false
+		}
 		completion_reward = {
 		}
 	}
@@ -406,6 +412,7 @@ focus_tree = {
 		has_war = no
 		is_neighbor_of = FIU
 		country_exists = FIU
+		has_army_manpower = { size > 450000 } 
 		}
 		completion_reward = {
 		PRE = {
@@ -862,6 +869,7 @@ focus_tree = {
         is_neighbor_of = RHN
 		country_exists = RHN
 		NOT = { RHN = { is_puppet_of = PRE } }
+		has_army_manpower = { size > 450000 } 
         }	
 		bypass = {
 		OR = {

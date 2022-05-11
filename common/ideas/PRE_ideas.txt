@@ -727,7 +727,6 @@ PRE_readying_war_economy_idea1 = {
 			modifier = {
 			production_speed_buildings_factor = 0.02
 			industrial_capacity_factory = 0.02
-			consumer_goods_factor = -0.01
 			line_change_production_efficiency_factor = 0.01
 			}
 		} 
@@ -737,7 +736,6 @@ PRE_readying_war_economy_idea2 = {
 			modifier = {
 			production_speed_buildings_factor = 0.04
 			industrial_capacity_factory = 0.04
-			consumer_goods_factor = -0.02
 			line_change_production_efficiency_factor = 0.02
 			
 			}
@@ -748,7 +746,6 @@ PRE_readying_war_economy_idea3 = {
 			modifier = {
 			production_speed_buildings_factor = 0.06
 			industrial_capacity_factory = 0.06
-			consumer_goods_factor = -0.03
 			line_change_production_efficiency_factor = 0.03
 			
 			}
@@ -759,7 +756,6 @@ PRE_readying_war_economy_idea4 = {
 			modifier = {
 			production_speed_buildings_factor = 0.08
 			industrial_capacity_factory = 0.08
-			consumer_goods_factor = -0.04
 			line_change_production_efficiency_factor = 0.04
 			
 			}
@@ -770,7 +766,6 @@ PRE_readying_war_economy_idea5 = {
 			modifier = {
 			production_speed_buildings_factor = 0.1
 			industrial_capacity_factory = 0.1
-			consumer_goods_factor = -0.05
 			line_change_production_efficiency_factor = 0.05
 			
 			}
@@ -882,8 +877,11 @@ PRE_FrenchGibs = {
 			research_bonus = {
 				armor = 0.15
 			}
-			
-			traits = { heavy_tank_manufacturer }
+		equipment_bonus = {
+			armor = {
+				reliability = 0.05 soft_attack = 0.05
+			}
+		}
 
 			ai_will_do = {
 				factor = 10
@@ -901,9 +899,11 @@ PRE_FrenchGibs = {
 			research_bonus = {
 				armor = 0.15
 			}
-			
-			traits = { fast_tank_manufacturer }
-			
+		equipment_bonus = {
+			armor = {
+				maximum_speed = 0.05 reliability = 0.1 
+			}
+		}
 			ai_will_do = {
 				factor = 1
 			}
@@ -920,9 +920,12 @@ PRE_FrenchGibs = {
 			research_bonus = {
 				armor = 0.15
 			}
-			
-			traits = { medium_tank_manufacturer }
-
+		equipment_bonus = {
+			armor = {
+				soft_attack = 0.05
+				armor_value = 0.05
+			}
+		}
 			ai_will_do = {
 				factor = 1
 			}
@@ -944,11 +947,20 @@ PRE_FrenchGibs = {
 				naval_equipment = 0.15
 			}
 			
-			equipment_bonus = {
-				
+		equipment_bonus = {
+			carrier = {
+				carrier_size = 0.25 armor_value = -0.15 naval_range = 0.25
 			}
-			
-			traits = { atlantic_fleet_naval_manufacturer }
+			capital_ship = {
+				naval_range = 0.25
+			}
+			screen_ship = {
+				naval_range = 0.25
+			}
+			submarine = {
+				naval_range = 0.25
+			}
+		}
 			
 		}
 		
@@ -963,11 +975,22 @@ PRE_FrenchGibs = {
 				naval_equipment = 0.15
 			}
 			
-			traits = { raiding_fleet_naval_manufacturer }
-			
-			equipment_bonus = {
-				
+		equipment_bonus = {
+			carrier = {
+				armor_value = 0.5 
+				max_strength = 0.1
 			}
+			capital_ship = {
+				armor_value = 0.1 
+				hg_attack = 0.1
+			}
+			#screen_ship = {
+			#	
+			#}
+			#submarine = {
+			#	
+			#}
+		}
 			
 		}	
 	}
@@ -986,11 +1009,14 @@ PRE_FrenchGibs = {
 				air_equipment = 0.15
 			}
 			
-			traits = { light_aircraft_manufacturer }
-			
-			equipment_bonus = {
-				
+		equipment_bonus = {
+			fighter_equipment = {
+				air_agility = 0.1 maximum_speed = 0.1
 			}
+			cv_fighter_equipment = {
+				air_agility = 0.1 maximum_speed = 0.1
+			}
+		}
 			
 			ai_will_do = {
 				factor = 1
@@ -1006,11 +1032,14 @@ PRE_FrenchGibs = {
 				air_equipment = 0.15
 			}
 			
-			traits = { CAS_manufacturer }
-			
-			equipment_bonus = {
-				
+		equipment_bonus = {
+			fighter_equipment = {
+				air_agility = 0.2 maximum_speed = 0.1
 			}
+			cv_fighter_equipment = {
+				air_agility = 0.2 maximum_speed = 0.1
+			}
+		}
 			
 			ai_will_do = {
 				factor = 1
@@ -1029,8 +1058,14 @@ PRE_FrenchGibs = {
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			
-			traits = { medium_aircraft_manufacturer }
+		equipment_bonus = {
+			CAS_equipment = {
+				air_ground_attack = 0.1 reliability = 0.1
+			}
+			cv_CAS_equipment = {
+				air_ground_attack = 0.1 reliability = 0.1
+			}		
+		}
 			
 			ai_will_do = {
 				factor = 1
@@ -1048,8 +1083,17 @@ PRE_FrenchGibs = {
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			
-			traits = { heavy_aircraft_manufacturer }
+		equipment_bonus = {
+			heavy_fighter_equipment = {
+				reliability = 0.2
+			}
+			tac_bomber_equipment = {
+				reliability = 0.2
+			}
+			scout_plane_equipment = {
+				reliability = 0.2
+			}
+		}
 			
 			ai_will_do = {
 				factor = 1
@@ -1066,8 +1110,18 @@ PRE_FrenchGibs = {
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			
-			traits = { naval_aircraft_manufacturer }
+		equipment_bonus = {
+			fighter_equipment = {
+				air_range = 0.1
+			}
+			heavy_fighter_equipment = {
+				air_range = 0.1
+				reliability = 0.2
+			}
+			tac_bomber_equipment = {
+				reliability = 0.2
+			}
+		}
 			
 			ai_will_do = {
 				factor = 1

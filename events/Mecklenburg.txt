@@ -135,6 +135,7 @@ country_event = { #prussian response
 	PLN  = { transfer_state = 67
 	transfer_state = 5
 	}
+	add_stability = -0.1
 	}
 }
 country_event = { #france occupies east rhineland
