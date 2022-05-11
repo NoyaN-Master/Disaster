@@ -277,7 +277,7 @@ focus_tree = {
 		x = -3
 		y = 3
 		relative_position_id = PRE_stir_up_mecklenburg
-		cost = 5		
+		cost = 5
 		prerequisite = { focus = PRE_thrust_south }	
 		mutually_exclusive = {
 		focus =  PRE_anschluss
@@ -368,7 +368,7 @@ focus_tree = {
 		x = -5
 		y = 3
 		relative_position_id = PRE_stir_up_mecklenburg
-		cost = 5		
+		cost = 5
 		prerequisite = { focus = PRE_thrust_south }	
 		mutually_exclusive = {
 		focus =  PRE_little_german_solution
@@ -384,9 +384,7 @@ focus_tree = {
 		relative_position_id = PRE_stir_up_mecklenburg
 		cost = 5		
 		prerequisite = { focus = PRE_anschluss }	
-
 		completion_reward = {
-		
 		custom_effect_tooltip = PRE_continue_kulturkampf_tooltip
 		unlock_decision_tooltip = PRE_kulturkampf_decision
 		}
@@ -571,11 +569,13 @@ focus_tree = {
 		has_equipment = {
 			infantry_equipment > 4999
 		}
+		has_manpower > 100000
 		}
 		completion_reward = {
+		add_manpower = -100000
 		add_equipment_to_stockpile  = {
 			type = infantry_equipment
-			amount = -5000
+			amount = -10000
 		}	
 		swap_ideas = {
 			add_idea = PRE_polish_terrorism_2
@@ -857,7 +857,8 @@ focus_tree = {
 		y = 3
 		relative_position_id = PRE_stir_up_mecklenburg
 		cost = 5	
-        available  = {   
+        available  = {
+		has_war = no
         is_neighbor_of = RHN
 		country_exists = RHN
 		NOT = { RHN = { is_puppet_of = PRE } }
@@ -1123,9 +1124,7 @@ focus_tree = {
 		relative_position_id = PRE_schleicher_holds_on
 		cost = 5		
 		prerequisite = { focus = PRE_crush_nationalist_opposition }
-		prerequisite = { focus = PRE_social_role_army }	
-		select_effect = {
-		add_ideas = PRE_unity_through_service_idea }		
+		prerequisite = { focus = PRE_social_role_army }		
 		completion_reward = {
 		    swap_ideas = {
 			add_idea = PRE_empowered_abwehr_2
@@ -3093,9 +3092,9 @@ focus_tree = {
 		prerequisite = { focus = PRE_prussian_army}
 		
 		completion_reward = {
-				add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 			name = PRE_army_doctrine
-			bonus = 0.5
+			cost_reduction = 0.5
 			uses = 2
 			category = land_doctrine
 		}
@@ -3380,9 +3379,9 @@ focus_tree = {
 		prerequisite = { focus = PRE_special_forces }		
 		completion_reward = {
 		add_ideas = PRE_new_modern_prussian_army_idea
-				add_tech_bonus = {
+		add_doctrine_cost_reduction = {
 			name = PRE_army_doctrine
-			bonus = 1
+			cost_reduction = 1
 			uses = 2
 			category = land_doctrine
 		}			

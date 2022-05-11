@@ -442,9 +442,9 @@ GER_unification_decisions = {
 			}
 		}
         modifier = {
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
-			political_power_cost = 0.10
+			stability_weekly = -0.002
+			war_support_weekly = -0.002
+			political_power_cost = 0.20
         }
 		cost = 0
 		days_remove = 100

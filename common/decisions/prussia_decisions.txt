@@ -79,8 +79,6 @@ PRE_kulturkampf_decisions = { #kulturkampf decisions
 			}
 		}
         modifier = {
-			stability_weekly = 0.001
-			war_support_weekly = 0.001
 			civilian_factory_use = 4
         }
 		cost = 0
