@@ -88,7 +88,7 @@ units = {
 		location = 6521
 		division_template = "Infantry Division"
 		start_experience_factor = 0.5
-		start_equipment_factor = 1
+		start_equipment_factor = 0.8
 
 	}
 	division= {	
@@ -96,7 +96,7 @@ units = {
 		location = 6521
 		division_template = "Infantry Division"
 		start_experience_factor = 0.5
-		start_equipment_factor = 1
+		start_equipment_factor = 0.8
 
 	}
 	division= {	
@@ -104,7 +104,7 @@ units = {
 		location = 6521
 		division_template = "Infantry Division"
 		start_experience_factor = 0.5
-		start_equipment_factor = 1
+		start_equipment_factor = 0.8
 
 	}
 	division= {	
@@ -112,7 +112,7 @@ units = {
 		location = 6521
 		division_template = "Infantry Division"
 		start_experience_factor = 0.5
-		start_equipment_factor = 1
+		start_equipment_factor = 0.8
 
 	}
 	division= {	
@@ -120,7 +120,7 @@ units = {
 		location = 6521
 		division_template = "Infantry Division"
 		start_experience_factor = 0.5
-		start_equipment_factor = 1
+		start_equipment_factor = 0.8
 
 	}
 	division= {	
@@ -128,15 +128,14 @@ units = {
 		location = 6521
 		division_template = "Infantry Division"
 		start_experience_factor = 0.5
-		start_equipment_factor = 1
-
+		start_equipment_factor = 0.8
 	}
 	division= {	
 		name = "8. Infantry Division of Prussia"
 		location = 6521
 		division_template = "Infantry Division"
 		start_experience_factor = 0.5
-		start_equipment_factor = 1
+		start_equipment_factor = 0.8
 
 	}
 	division= {	
@@ -144,15 +143,14 @@ units = {
 		location = 6521
 		division_template = "Infantry Division"
 		start_experience_factor = 0.5
-		start_equipment_factor = 1
-
+		start_equipment_factor = 0.8
 	}
 	division= {	
 		name = "2.  Cavalry Division of Prussia"
 		location = 6521
 		division_template = "Cavalry Division" 
 		start_experience_factor = 0.5
-		start_equipment_factor = 1
+		start_equipment_factor = 0.8
 
 	}
 	division= {	
@@ -160,7 +158,7 @@ units = {
 		location = 6521
 		division_template = "Cavalry Division" 
 		start_experience_factor = 0.5
-		start_equipment_factor = 1
+		start_equipment_factor = 0.8
 
 	}
 	division= {	
@@ -176,7 +174,7 @@ units = {
 		location = 6521
 		division_template = "Cavalry Division" 
 		start_experience_factor = 0.5
-		start_equipment_factor = 1
+		start_equipment_factor = 0.8
 
 	}
 	division= {	
@@ -184,7 +182,7 @@ units = {
 		location = 6521
 		division_template = "Cavalry Division" 
 		start_experience_factor = 0.5
-		start_equipment_factor = 1
+		start_equipment_factor = 0.8
 
 	}
 	division= {	
@@ -192,7 +190,7 @@ units = {
 		location = 6521
 		division_template = "Cavalry Division" 
 		start_experience_factor = 0.5
-		start_equipment_factor = 1
+		start_equipment_factor = 0.8
 
 	}
 	division= {	
@@ -200,7 +198,7 @@ units = {
 		location = 6521
 		division_template = "Cavalry Division" 
 		start_experience_factor = 0.5
-		start_equipment_factor = 1
+		start_equipment_factor = 0.8
 
 	}
 }

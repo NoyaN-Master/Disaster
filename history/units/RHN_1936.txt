@@ -1,0 +1,125 @@
+division_template = {
+	name = "Infantry Division"
+	division_names_group = RHN_INF_01
+	is_locked = yes
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+	}
+}
+units = {
+	division= {	
+		name = "1. French Garrison"
+		location = 11531
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "2. French Garrison"
+		location = 11531
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "3. French Garrison"
+		location = 11531
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "4. French Garrison"
+		location = 11531
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "5. French Garrison"
+		location = 11531
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "6. French Garrison"
+		location = 11531
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "7. French Garrison"
+		location = 11531
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "8. French Garrison"
+		location = 11531
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "9. French Garrison"
+		location = 11531
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "10. French Garrison"
+		location = 11531
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "11. French Garrison"
+		location = 11531
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "12. French Garrison"
+		location = 11531
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "13. French Garrison"
+		location = 11531
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "14. French Garrison"
+		location = 11531
+		division_template = "Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "RHN"
+		}
+		requested_factories = 3
+		progress = 0.54
+		efficiency = 100
+	}
+}

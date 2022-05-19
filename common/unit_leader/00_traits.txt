@@ -71,7 +71,14 @@ leader_traits = {
 	kemalist_general = { 
 		type = land
 		trait_type = personality_trait
-		
+		gain_xp = {
+			always = no # not gainable
+		}	
+		allowed = {
+			FROM = {
+				tag = WRF
+			}
+		}	
 		attack_skill = 1
 		planning_skill = 1
 		
@@ -82,7 +89,14 @@ leader_traits = {
 	enverist_general = { 
 		type = land
 		trait_type = personality_trait
-		
+		gain_xp = {
+			always = no # not gainable
+		}	
+		allowed = {
+			FROM = {
+				tag = CIB
+			}
+		}	
 		attack_skill = 1
 		planning_skill = 1
 		
@@ -93,11 +107,17 @@ leader_traits = {
 	soa_general = { 
 		type = land
 		trait_type = personality_trait
-		
+		gain_xp = {
+			always = no # not gainable
+		}		
 		modifier = {
 			planning_speed = -0.20
 		}
-		
+		allowed = {
+			FROM = {
+				tag = SAO
+			}
+		}		
 		non_shared_modifier = {
 			experience_gain_factor = -0.25
 		}
@@ -106,11 +126,17 @@ leader_traits = {
 	revolutionary_turk = { 
 		type = land
 		trait_type = personality_trait
-		
+		gain_xp = {
+			always = no # not gainable
+		}		
 		modifier = {
 			army_morale_factor = 0.07
 		}
-		
+		allowed = {
+			FROM = {
+				tag = WRF
+			}
+		}		
 		non_shared_modifier = {
 			experience_gain_factor = -0.25
 		}

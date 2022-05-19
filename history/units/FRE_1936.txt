@@ -158,7 +158,7 @@ units = {
 		location = 5291
 		division_template = "Division Coloniale"	 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 	division= {	
@@ -178,7 +178,7 @@ units = {
 		location = 9503
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 	division= {	# "43ème Division d'Infanterie"
@@ -200,7 +200,7 @@ units = {
 		location = 3629
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 	division= {	# "11ème Division d'Infanterie"
@@ -220,7 +220,7 @@ units = {
 		location = 549
 		division_template = "Division Coloniale"	 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 	division= {	# "2ème Division de Cavalerie"
@@ -231,7 +231,7 @@ units = {
 		location = 11516
 		division_template = "Division de Cavalerie" 	
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 	division= {	
@@ -260,7 +260,7 @@ units = {
 		location = 575
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 
@@ -272,7 +272,7 @@ units = {
 		}
 		location = 454
 		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
-		start_experience_factor = 0.3
+		start_experience_factor = 1
 	}
 
 	# IIIe Corps d'Armée (Région Militaire in 1936) -- Rouen
@@ -951,7 +951,7 @@ air_wings = {
 		# Groupement de Bombardment 9
 		tac_bomber_equipment_1 =  {
 			owner = "FRE" 
-			amount = 60
+			amount = 200
 		}
 	}
 
@@ -960,7 +960,7 @@ air_wings = {
 		# Groupement de Chasse 22
 		fighter_equipment_0 = {
 			owner = "FRE" 
-			amount = 96
+			amount = 400
 		}
 	}
 
@@ -981,7 +981,7 @@ air_wings = {
 		# Groupement de Bombardment d'Assault 19
 		tac_bomber_equipment_0 =  {
 			owner = "FRE" 
-			amount = 24
+			amount = 100
 		}
 	}
 
@@ -990,12 +990,12 @@ air_wings = {
 		# Groupement de Chasse du Nord-Africain
 		fighter_equipment_0 = {
 			owner = "FRE" 
-			amount = 48
+			amount = 100
 		}
 		# Groupement de Bombardment du Nord-Africain
 		tac_bomber_equipment_1 =  {
 			owner = "FRE" 
-			amount = 30
+			amount = 200
 		}
 	}
 
