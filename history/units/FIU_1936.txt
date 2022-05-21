@@ -311,7 +311,7 @@ units = {
 		} #  "2a Divisione Coloniale 'Libia'" 
 		location = 1130 
 		division_template = "Divisione Coloniale" # Colonial militia, lower training and equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } } 
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIU" } } 
 		start_equipment_factor = 0.5 
 	}
 
@@ -425,16 +425,16 @@ units = {
 		} #  "1a Divisione Coloniale 'Eritrea'" 
 		location = 9904 
 		division_template = "Divisione Coloniale" # Colonial militia, lower training and equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } } 
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIU" } } 
 	} 
 	division = { # 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 32
 		} #  "2a Divisione Coloniale 'Eritrea'" 
-		location = 12766 
+		location = 9904 
 		division_template = "Divisione Coloniale" # Colonial militia, lower training and equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } } 
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIU" } } 
 	} 
 
 	# Corpo d'Armata Libico #
@@ -454,7 +454,7 @@ units = {
 		} #  "1a Divisione Coloniale 'Libia'" 
 		location = 9904 
 		division_template = "Divisione Coloniale" # Colonial militia, lower training and equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } } 
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIU" } } 
 	} 
 	division = { # 
 		division_name = {
@@ -463,7 +463,7 @@ units = {
 		} #  "101a Divisione Coloniale 'Somalia'" 
 		location = 9904 
 		division_template = "Divisione Coloniale" # Colonial militia, lower training and equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } } 
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIU" } } 
 	} 
 	division = { # 
 		name = "6a Divisione CC.NN. 'Tevere'" 
@@ -483,13 +483,13 @@ air_wings = {
 		# 2a Divisione Aerea 'Borea'
 		fighter_equipment_0 = { 
 			amount = 80 
-			owner = "ITA" 
+			owner = "FIU" 
 		} 
 		# 4a Divisione Aerea 'Drago'
 		# 6a Divisione Aerea 'Falco'
 		tac_bomber_equipment_0 = { 
 			amount = 128 
-			owner = "ITA" 
+			owner = "FIU" 
 		} 
 	} 
 
@@ -498,12 +498,12 @@ air_wings = {
 		# 5a Divisione Aerea 'Eolo'
 		tac_bomber_equipment_0 = { 
 			amount = 64 
-			owner = "ITA" 
+			owner = "FIU" 
 		} 
 		# 8a Brigata Aerea 'Astore'
 		fighter_equipment_0 = { 
 			amount = 80 
-			owner = "ITA" 
+			owner = "FIU" 
 		} 
 	} 
 
@@ -512,12 +512,12 @@ air_wings = {
 		# 1a Divisione Aerea 'Aquila'
 		fighter_equipment_0 = { 
 			amount = 80 
-			owner = "ITA" 
+			owner = "FIU" 
 		} 
 		# 3a Divisione Aerea 'Centauro'
 		tac_bomber_equipment_0 = { 
 			amount = 32 
-			owner = "ITA" 
+			owner = "FIU" 
 		} 
 	} 
 
@@ -526,7 +526,7 @@ air_wings = {
 		# 9a Divisione Aerea 'Leone'
 		nav_bomber_equipment_1 = { 
 			amount = 48 
-			owner = "ITA" 
+			owner = "FIU" 
 		} 
 	} 
 
@@ -535,7 +535,7 @@ air_wings = {
 		# 10a Brigata Aerea 'Marte'
 		nav_bomber_equipment_1 = { 
 			amount = 24 
-			owner = "ITA" 
+			owner = "FIU" 
 		} 
 	} 
 
@@ -545,12 +545,12 @@ air_wings = {
 		# 14a Brigata Aerea 'Rex'
 		fighter_equipment_0 = { 
 			amount = 20 
-			owner = "ITA" 
+			owner = "FIU" 
 		} 
 		# 13a Divisione Aerea 'Pegaso'
 		tac_bomber_equipment_0 = { 
 			amount = 32 
-			owner = "ITA" 
+			owner = "FIU" 
 		} 
 	} 
 
@@ -558,15 +558,15 @@ air_wings = {
 	117 = { 
 		fighter_equipment_0 = { 
 			amount = 40 
-			owner = "ITA" 
+			owner = "FIU" 
 		} 
 		tac_bomber_equipment_0 = { 
 			amount = 32 
-			owner = "ITA" 
+			owner = "FIU" 
 		} 
 		CAS_equipment_1 = { 
 			amount = 48 
-			owner = "ITA" 
+			owner = "FIU" 
 		} 
 	} 
 } 
@@ -581,7 +581,7 @@ instant_effect = {
 		add_equipment_production = { 
 			equipment = { 
 				type = infantry_equipment_1 
-				creator = "ITA" 
+				creator = "FIU" 
 			} 
 
 			requested_factories = 4 
@@ -592,7 +592,7 @@ instant_effect = {
 		add_equipment_production = { 
 			equipment = { 
 				type = support_equipment_1 
-				creator = "ITA" 
+				creator = "FIU" 
 			} 
 
 			requested_factories = 1 
@@ -603,7 +603,7 @@ instant_effect = {
 		add_equipment_production = { 
 			equipment = { 
 				type = light_tank_equipment_1 
-				creator = "ITA" 
+				creator = "FIU" 
 			} 
 
 			requested_factories = 1 
@@ -614,7 +614,7 @@ instant_effect = {
 		add_equipment_production = { 
 			equipment = { 
 				type = motorized_equipment_1 
-				creator = "ITA" 
+				creator = "FIU" 
 			} 
 
 			requested_factories = 2 
@@ -625,7 +625,7 @@ instant_effect = {
 		add_equipment_production = { 
 			equipment = { 
 				type = CAS_equipment_1 
-				creator = "ITA" 
+				creator = "FIU" 
 			} 
 
 			requested_factories = 1 

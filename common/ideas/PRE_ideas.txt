@@ -55,7 +55,7 @@ PRE_sham_democracy = {
 			picture = sham_democracy
 			modifier = {
 			stability_factor = -0.10
-			production_factory_max_efficiency_factor = 0.02
+			production_factory_max_efficiency_factor = -0.05
 			}
 		}
 PRE_sham_democracy2 = {
@@ -180,10 +180,9 @@ PRE_integrate_querfront_parties_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_integrate_querfront_parties_idea" }
 			picture = integrated_querfront
 			modifier = {
-			conscription_factor = 0.1
-			army_core_attack_factor = 0.05
+			conscription_factor = 0.05
 			army_core_defence_factor = 0.05
-			political_power_gain = 0.2
+			political_power_gain = 0.1
 			}
 		}		
 		
@@ -191,11 +190,10 @@ PRE_one_prussian_nation_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_one_prussian_nation_idea" }
 			picture = prussian_nation
 			modifier = {
-			defensive_war_stability_factor = 0.2
-			offensive_war_stability_factor = 0.2
+			defensive_war_stability_factor = 0.1
+			offensive_war_stability_factor = 0.1
 			training_time_army_factor = -0.15
 			minimum_training_level = -0.15
-			surrender_limit = 0.1
 			}
 		}
 PRE_absorb_dnvp_idea = {
@@ -376,7 +374,7 @@ PRE_empowered_abwehr = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_empowered_abwehr" }
 			picture = empower_abwehr
 			modifier = {
-			ultranationalist_drift = 0.03
+			ultranationalist_drift = 0.01
 			stability_factor = 0.04
 			operative_slot = 1
 		    intel_network_gain_factor = 0.14
@@ -388,7 +386,7 @@ PRE_empowered_abwehr_2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_empowered_abwehr_2" }
 			picture = empower_abwehr 
 			modifier = {
-			ultranationalist_drift = 0.08
+			ultranationalist_drift = 0.03
 			stability_factor = 0.10
 			operative_slot = 1
 		    intel_network_gain_factor = 0.22

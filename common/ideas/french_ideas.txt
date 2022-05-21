@@ -1,0 +1,468 @@
+ideas = {
+
+	country = {
+		FRA_full_employment = {
+			picture = generic_production_bonus
+			allowed = {
+				original_tag = FRE
+				always = no
+			}
+
+			allowed_civil_war = {
+				tag = FRA #stays with main country
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.10
+				consumer_goods_factor = -0.1
+				local_building_slots_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		FRA_global_investments = {
+			picture = generic_exploit_mines
+			allowed = {
+				original_tag = FRE
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = 0.1
+				research_speed_factor = 0.05
+			}
+		}
+		FRA_dirigisme = {
+			picture = generic_central_management
+			allowed = {
+				original_tag = FRE
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				economy_cost_factor = -0.5
+				conversion_cost_civ_to_mil_factor = -0.5
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		FRA_victors_of_wwi = {
+			
+			allowed = {
+				original_tag = FRE
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+			
+			modifier = {
+				war_support_factor = 0.25
+				max_dig_in_factor = 0.5
+				max_planning = -0.5
+			}
+		}
+	}
+	
+	tank_manufacturer = {
+
+		designer = yes
+	
+		# TECHNOLOGY
+		renault_fra = {
+		
+			picture = renault
+						
+			allowed = {
+				original_tag = FRE
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+		equipment_bonus = {
+			armor = {
+				armor_value = 0.05 hard_attack = 0.05
+			}
+		}
+		}
+	
+		FRA_AMX = {
+		
+			picture = generic_tank_manufacturer_2
+						
+			allowed = {
+				original_tag = FRE
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+		equipment_bonus = {
+			armor = {
+				maximum_speed = 0.05 reliability = 0.1 
+			}
+		}
+		}
+		FRA_hotchkiss = {
+		
+			picture = generic_tank_manufacturer_3
+
+						
+			allowed = {
+				original_tag = FRE
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+		equipment_bonus = {
+			armor = {
+				soft_attack = 0.05
+				armor_value = 0.05
+			}
+		}
+		}
+
+		FRA_APX = {
+			picture = FRA_atelier_puteaux
+			
+
+			available = {
+				
+			}
+						
+			allowed = {
+				original_tag = FRE
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+		equipment_bonus = {
+			armor = {
+				reliability = 0.05 soft_attack = 0.05
+			}
+		}
+		}
+	}
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		somua = {
+		
+			allowed = {
+				original_tag = FRE
+			}
+
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+		}
+		
+		mas = {
+						
+			allowed = {
+				original_tag = FRE
+			}
+						
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+		}
+	
+		schneider = {
+						
+			allowed = {
+				original_tag = FRE
+			}		
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+		}
+	}
+	
+	aircraft_manufacturer = {
+			
+		designer = yes
+		
+		morane_saulnier = {
+			
+			allowed = {
+				original_tag = FRE
+			}
+			
+			research_bonus = {
+				air_equipment = 0.1
+			}
+		equipment_bonus = {
+			fighter_equipment = {
+				air_agility = 0.2 maximum_speed = 0.1
+			}
+			cv_fighter_equipment = {
+				air_agility = 0.2 maximum_speed = 0.1
+			}
+		}
+		}
+		
+		bloch = {
+						
+			allowed = {
+				original_tag = FRE
+			}
+						
+			research_bonus = {
+				air_equipment = 0.1
+			}
+		equipment_bonus = {
+			heavy_fighter_equipment = {
+				reliability = 0.2
+			}
+			tac_bomber_equipment = {
+				reliability = 0.2
+			}
+			scout_plane_equipment = {
+				reliability = 0.2
+			}
+		}
+		}
+		
+		amiot = {
+						
+			allowed = {
+				original_tag = FRE
+			}
+						
+			research_bonus = {
+				air_equipment = 0.1
+			}
+		equipment_bonus = {
+
+			strat_bomber_equipment = {
+				air_bombing = 0.1
+			}
+		}
+		}
+		
+		levasseur = {
+						
+			allowed = {
+				original_tag = FRE
+			}
+						
+			research_bonus = {
+				air_equipment = 0.1
+			}
+		equipment_bonus = {
+			nav_bomber_equipment = {
+				air_range = 0.1 naval_strike_attack = 0.1
+			}
+			cv_nav_bomber_equipment = {
+				air_range = 0.1 naval_strike_attack = 0.1
+			}
+			cv_fighter_equipment = {
+				air_range = 0.1 air_agility = 0.1
+			}
+			cv_CAS_equipment = {
+				air_range = 0.1 naval_strike_attack = 0.1
+			}
+		}
+		}
+		SNCAN = {
+			picture = FRA_sncan		
+			allowed = {
+				original_tag = FRE
+			}
+
+			research_bonus = {
+				air_equipment = 0.2
+			}
+		equipment_bonus = {
+
+			strat_bomber_equipment = {
+				air_bombing = 0.1
+			}
+		}
+		}
+		SNCAO = {
+			picture = FRA_sncao			
+			allowed = {
+				original_tag = FRE
+			}
+			research_bonus = {
+				air_equipment = 0.2
+			}
+		equipment_bonus = {
+			heavy_fighter_equipment = {
+				reliability = 0.2
+			}
+			tac_bomber_equipment = {
+				reliability = 0.2
+			}
+			scout_plane_equipment = {
+				reliability = 0.2
+			}
+		}
+		}
+		SNCASE = {
+			picture = FRA_sncase		
+			allowed = {
+				original_tag = FRE
+			}
+			research_bonus = {
+				air_equipment = 0.2
+			}
+		equipment_bonus = {
+			fighter_equipment = {
+				air_agility = 0.1 maximum_speed = 0.1
+			}
+			cv_fighter_equipment = {
+				air_agility = 0.1 maximum_speed = 0.1
+			}
+		}
+		}
+		SNCASO = {
+			picture = FRA_sncaso		
+			allowed = {
+				original_tag = FRE
+			}	
+			research_bonus = {
+				air_equipment = 0.2
+			}
+		equipment_bonus = {
+			nav_bomber_equipment = {
+				air_range = 0.1 naval_strike_attack = 0.1
+			}
+			cv_nav_bomber_equipment = {
+				air_range = 0.1 naval_strike_attack = 0.1
+			}
+			cv_fighter_equipment = {
+				air_range = 0.1 air_agility = 0.1
+			}
+			cv_CAS_equipment = {
+				air_range = 0.1 naval_strike_attack = 0.1
+			}
+		}
+		}	
+	}
+	naval_manufacturer = {
+
+		designer = yes
+		
+		fcm = {
+						
+			allowed = {
+				original_tag = FRE
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+		equipment_bonus = {
+			capital_ship = {
+				naval_range = -0.25 naval_speed = 0.1
+			}
+			screen_ship = {
+				naval_range = -0.25 naval_speed = 0.1 
+			}
+		}
+		}
+		aeb = {
+			picture = FRA_aeb		
+			allowed = {
+				original_tag = FRE
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+		equipment_bonus = {
+			screen_ship = {
+				naval_range = 0.3 sub_detection = 0.1 naval_speed = 0.1 build_cost_ic = 0.1
+			}
+		}
+		}
+		acl = {
+			picture = FRA_acl	
+			allowed = {
+				original_tag = FRE
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+		equipment_bonus = {
+			carrier = {
+				armor_value = 0.5 
+				max_strength = 0.1
+			}
+			capital_ship = {
+				armor_value = 0.1 
+				hg_attack = 0.1
+			}
+			#screen_ship = {
+			#	
+			#}
+			#submarine = {
+			#	
+			#}
+		}
+		}
+		acf = {
+			picture = FRA_acf			
+			allowed = {
+				original_tag = FRE
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+		equipment_bonus = {
+			carrier = {
+				surface_visibility = -0.1 naval_speed = 0.1 carrier_size = -0.1
+			}
+			capital_ship = {
+				surface_visibility = -0.1 naval_speed = 0.1 hg_attack = -0.1
+			}
+			screen_ship = {
+				surface_visibility = -0.1 naval_speed = 0.1
+			}
+			submarine = {
+				sub_visibility = -0.1 surface_visibility = -0.1 naval_speed = 0.1
+			}
+		}
+		}
+	}
+	
+	industrial_concern = {	
+		
+		famh = {
+						
+			allowed = {
+				original_tag = FRE
+			}
+						
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { industrial_concern }
+		}
+	}
+}

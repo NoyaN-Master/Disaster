@@ -682,8 +682,8 @@ focus_tree = {
 		11 = { is_owned_by = PRE }
 		190 = { is_owned_by = PRE }
 		12 = { is_owned_by = PRE }
-		13 = { is_core_of = PRE }
-		191 = { is_core_of = PRE }
+		13 = { is_owned_by = PRE }
+		191 = { is_owned_by = PRE }
 		NOT = {	country_exists = LIT }
 		NOT = {	country_exists = LAT }
 		NOT = {	country_exists = EST }
@@ -1157,7 +1157,7 @@ focus_tree = {
 		x = -2
 		y = 6
 		relative_position_id = PRE_schleicher_holds_on
-		cost = 4		
+		cost = 6		
 		prerequisite = { focus = PRE_class_coop }	
 		prerequisite = { focus = PRE_unity_through_service }
         prerequisite = { focus = PRE_redistribute_land }			
@@ -1271,7 +1271,7 @@ focus_tree = {
 		x = 2
 		y = 7
 		relative_position_id = PRE_schleicher_holds_on
-		cost = 5		
+		cost = 8		
 		prerequisite = { focus = PRE_rejuvenate_militarism }		
 		
 		completion_reward = {
@@ -1430,7 +1430,7 @@ focus_tree = {
 		x = -2
 		y = 5
 		relative_position_id = PRE_nazi_victory_focus
-		cost = 6		
+		cost = 8		
 		prerequisite = { focus = PRE_volkisch_education }
 		
 		completion_reward = {
@@ -2356,7 +2356,7 @@ focus_tree = {
 		x = -3
 		y = 6
 		relative_position_id = PRE_liberal_victory_focus
-		cost = 6		
+		cost = 8		
 		prerequisite = { focus = PRE_strengthen_civil_liberties}
 		
 		completion_reward = {
@@ -2855,7 +2855,7 @@ focus_tree = {
 		x = 4
 		y = 7
 		relative_position_id = PRE_junker_victory_focus
-		cost = 6		
+		cost = 8		
 		prerequisite = { focus = PRE_every_prussian_a_soldier}
 		
 		completion_reward = {
@@ -2873,14 +2873,7 @@ focus_tree = {
 		cost = 6		
 		prerequisite = { focus = PRE_republic_lives_on}
 		
-		completion_reward = {
-		    66 = {
-			add_extra_state_shared_building_slots = 1
-	        add_building_construction = {
-		    type = industrial_complex 
-		    level = 1
-	        }
-            }			
+		completion_reward = {			
 			67 = {
 			add_extra_state_shared_building_slots = 1
 	        add_building_construction = {
@@ -2894,13 +2887,6 @@ focus_tree = {
 		    type = industrial_complex 
 		    level = 1
 	        }   
-            }
-			66 = {
-			add_extra_state_shared_building_slots = 1
-	        add_building_construction = {
-		    type = infrastructure 
-		    level = 1
-	        }
             }			
 			67 = {
 			add_extra_state_shared_building_slots = 1
