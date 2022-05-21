@@ -36,7 +36,7 @@ PRE_economic_sphere_decision = {
 		}
 		cost = 25
 		fire_only_once = no
-		targets = { BTV BLI LUX DAN SWV NRG CEZ LIT LAT EST}
+		targets = { BTV BLI LUX DAN SWV NRG CEZ LIT LAT EST }
 		target_trigger = {
 			FROM = {
 				exists = yes
@@ -54,7 +54,6 @@ PRE_economic_sphere_decision = {
 				country_event = { id = preo.13 days = 2 }
 			}
 		}
-
 		ai_will_do = {
 			factor = 1000
 		}
@@ -70,12 +69,11 @@ PRE_kulturkampf_decisions = { #kulturkampf decisions
 				is_fully_controlled_by = ROOT
 			}
 		}
-
 		visible = {
 			FROM = {
 				is_owned_by = ROOT
 				NOT = { is_core_of = ROOT }
-				FROM  = { has_dynamic_modifier = {modifier = austrian_defiance}}
+				FROM  = { has_dynamic_modifier = { modifier = austrian_defiance } }
 			}
 		}
         modifier = {
@@ -84,7 +82,6 @@ PRE_kulturkampf_decisions = { #kulturkampf decisions
 		cost = 0
 		days_remove = 50
 		cancel_if_not_visible = yes
-
 		state_target = yes
 		targets = { 153 152 4 813 883 881 882 39 }
 		target_trigger = {
@@ -101,10 +98,6 @@ PRE_kulturkampf_decisions = { #kulturkampf decisions
 		}
 	}
 }
-
-
-
-
 PRE_germanize_baltics_decision = {
 	PRE_baltic_migration = { #integrate estonia and latvia for goltz
 		name = PRE_baltic_migration_name
@@ -117,7 +110,6 @@ PRE_germanize_baltics_decision = {
 				is_fully_controlled_by = BLT
 			}
 		}
-
 		visible = {
 			FROM = {
 				is_owned_by = BLT
@@ -131,7 +123,6 @@ PRE_germanize_baltics_decision = {
 		cost = 0
 		days_remove = 50
 		cancel_if_not_visible = yes
-
 		state_target = yes
 		targets = { 190 13 191 }
 		target_trigger = {
@@ -144,7 +135,7 @@ PRE_germanize_baltics_decision = {
 			factor = 1000
 		}
 		remove_effect = {
-		FROM = {add_manpower = -300000}
+		FROM = { add_manpower = -300000 }
 			random_core_state = {
 			limit = {
 			is_core_of = ROOT
@@ -173,10 +164,10 @@ PRE_germanize_baltics_decision = {
 			}
 			add_manpower = -100000
 		}
-		FROM = {add_manpower = 400000}
+		FROM = { add_manpower = 400000 }
 		BLT = { add_state_core = FROM}
-		LAT = {remove_state_core = FROM}	
-		EST = {remove_state_core = FROM}		
+		LAT = { remove_state_core = FROM }	
+		EST = { remove_state_core = FROM }		
 		}
 	}
 }
@@ -184,15 +175,16 @@ PRE_generalplan_ost_decision = {
 	PRE_generalplan_ost_step_1 = { #integrate the old prussian territories
 		name = PRE_generalplan_ost_step_1_name
 		icon = GFX_decision_generic_police_action
-
 		available = {
-						num_of_civilian_factories_available_for_projects > 3
-						has_manpower > 1000
+			num_of_civilian_factories_available_for_projects > 3
+			has_manpower > 1000
+			has_equipment = {
+				infantry_equipment > 1499
+			}
 			FROM = {
 				is_fully_controlled_by = ROOT
 			}
 		}
-
 		visible = {
 			FROM = {
 				is_owned_by = ROOT
@@ -209,7 +201,6 @@ PRE_generalplan_ost_decision = {
 		cost = 0
 		days_remove = 50
 		cancel_if_not_visible = yes
-
 		state_target = yes
 		targets = { 809 85 86 762 }
 		target_trigger = {
@@ -223,60 +214,65 @@ PRE_generalplan_ost_decision = {
 		}
 		remove_effect = {
 		FROM = { remove_dynamic_modifier = { modifier = polish_resistance } }
+		add_equipment_to_stockpile  = {
+			type = infantry_equipment
+			amount = -1500
+		}	
 		}
 	}
-     PRE_generalplan_ost_take_territory_step_1 = {
-          icon = GFX_decision_hol_draw_up_staff_plans	  
-		  cost = 50
-          fire_only_once = yes
+	PRE_generalplan_ost_take_territory_step_1 = {
+		icon = GFX_decision_hol_draw_up_staff_plans	  
+		cost = 50
+		fire_only_once = yes
 		available = {
-		809 = { is_owned_by = PRE }
-		85 = { is_owned_by = PRE }
-		86 = { is_owned_by = PRE }
-		762 = { is_owned_by = PRE }
-		809 = { is_core_of = PRE }
-		85 = { is_core_of = PRE }
-		86 = { is_core_of = PRE }
-		762= { is_core_of = PRE }
+			809 = { is_owned_by = PRE }
+			85 = { is_owned_by = PRE }
+			86 = { is_owned_by = PRE }
+			762 = { is_owned_by = PRE }
+			809 = { is_core_of = PRE }
+			85 = { is_core_of = PRE }
+			86 = { is_core_of = PRE }
+			762= { is_core_of = PRE }
 		}
-          remove_effect  = {
-		  97 = {transfer_state_to = PRE}
-		  98 = {transfer_state_to = PRE}
-		  87 = {transfer_state_to = PRE}
-		  hidden_effect = {
-		country_event = { id = preo.10 days = 10 }
-		PLN = {remove_state_core = 809}
-		PLN = {remove_state_core = 85}
-		PLN = {remove_state_core = 86}
-		PLN = {remove_state_core = 762}	
-		97 = {add_dynamic_modifier = { modifier = polish_resistance }}
-		98 = {add_dynamic_modifier = { modifier = polish_resistance }}
-		87 = {add_dynamic_modifier = { modifier = polish_resistance }} 	
-		  }
-		  set_country_flag = PRE_taken_territory_1	  
-		swap_ideas = {
-			add_idea = PRE_polish_terrorism_3
-			remove_idea = PRE_polish_terrorism_2
-		}		
-          }
-          days_remove = 0
+		remove_effect  = {
+			97 = {transfer_state_to = PRE}
+			98 = {transfer_state_to = PRE}
+			87 = {transfer_state_to = PRE}
+			hidden_effect = {
+				country_event = { id = preo.10 days = 10 }
+				PLN = {remove_state_core = 809}
+				PLN = {remove_state_core = 85}
+				PLN = {remove_state_core = 86}
+				PLN = {remove_state_core = 762}	
+				97 = {add_dynamic_modifier = { modifier = polish_resistance }}
+				98 = {add_dynamic_modifier = { modifier = polish_resistance }}
+				87 = {add_dynamic_modifier = { modifier = polish_resistance }} 	
+			}
+			set_country_flag = PRE_taken_territory_1	  
+			swap_ideas = {
+				add_idea = PRE_polish_terrorism_3
+				remove_idea = PRE_polish_terrorism_2
+			}		
+		}
+		days_remove = 0
         ai_will_do = {
 			factor = 1000
 		}
-     }
+	}
 	PRE_generalplan_ost_step_2 = { #massacre poles in 97 98 87
 		name = PRE_generalplan_ost_step_2_name
 		icon = GFX_decision_generic_police_action
-
 		available = {
 		num_of_civilian_factories_available_for_projects > 2
 		has_manpower > 1000
+		has_equipment = {
+			infantry_equipment > 1499
+		}
 			FROM = {
 				is_fully_controlled_by = ROOT
 				state_population_k > 150
 			}
 		}
-
 		visible = {
 			FROM = {
 				is_owned_by = ROOT
@@ -295,7 +291,6 @@ PRE_generalplan_ost_decision = {
 		days_remove = 20
 		days_re_enable = 1 
 		cancel_if_not_visible = yes
-
 		state_target = yes
 		targets = { 97 98 87 }
 		target_trigger = {
@@ -308,21 +303,26 @@ PRE_generalplan_ost_decision = {
 			factor = 1000
 		}
 		remove_effect = {
-		FROM = {add_manpower = -150000}
+		FROM = { add_manpower = -150000 }
+		add_equipment_to_stockpile  = {
+			type = infantry_equipment
+			amount = -1500
+		}	
 		}
 	}	
 PRE_generalplan_ost_step_2_finish = { #migrate germans to these lands
 		name = PRE_generalplan_ost_step_2_finish_name
 		icon = GFX_decision_generic_nationalism
-
 		available = {
 		num_of_civilian_factories_available_for_projects > 4
 			FROM = {
 				is_fully_controlled_by = ROOT
 				state_population_k < 150
 			}
+			has_equipment = {
+				infantry_equipment > 1499
+			}
 		}
-
 		visible = {
 			FROM = {
 				is_owned_by = ROOT
@@ -337,7 +337,6 @@ PRE_generalplan_ost_step_2_finish = { #migrate germans to these lands
 		cost = 0
 		days_remove = 50
 		cancel_if_not_visible = yes
-
 		state_target = yes
 		targets = { 97 98 87 }
 		target_trigger = {
@@ -356,6 +355,10 @@ PRE_generalplan_ost_step_2_finish = { #migrate germans to these lands
 			state_population_k > 500
 			}
 			add_manpower = -100000
+			add_equipment_to_stockpile  = {
+				type = infantry_equipment
+				amount = -1500
+			}
 		}	
 			random_core_state = {
 			limit = {
@@ -364,61 +367,61 @@ PRE_generalplan_ost_step_2_finish = { #migrate germans to these lands
 			}
 			add_manpower = -100000
 		}
-		FROM = {add_manpower = 200000}
+		FROM = { add_manpower = 200000 }
 		FROM = { remove_dynamic_modifier = { modifier = polish_resistance } }
 		hidden_effect = { remove_state_claim = FROM }
 		add_state_core = FROM
-		PLN = {remove_state_core = FROM}
+		PLN = { remove_state_core = FROM }
 		}
 	}
-     PRE_generalplan_ost_take_territory_step_2 = { 
-          icon = GFX_decision_hol_draw_up_staff_plans	  
-		  cost = 50
-          fire_only_once = yes
+	PRE_generalplan_ost_take_territory_step_2 = { 
+		icon = GFX_decision_hol_draw_up_staff_plans	  
+		cost = 50
+		fire_only_once = yes
 		available = {
-		97 = { is_owned_by = PRE }
-		98 = { is_owned_by = PRE }
-		87 = { is_owned_by = PRE }
-		97 = { is_core_of = PRE }
-		98 = { is_core_of = PRE }
-		87 = { is_core_of = PRE }
+			97 = { is_owned_by = PRE }
+			98 = { is_owned_by = PRE }
+			87 = { is_owned_by = PRE }
+			97 = { is_core_of = PRE }
+			98 = { is_core_of = PRE }
+			87 = { is_core_of = PRE }
 		}
 		visible = {
-		has_country_flag = PRE_taken_territory_1
+			has_country_flag = PRE_taken_territory_1
 		}
-          remove_effect  = {
-		  72 = {transfer_state_to = PRE}
-		  88 = {transfer_state_to = PRE}
-		  90 = {transfer_state_to = PRE}
-		  92 = {transfer_state_to = PRE}
-		  10 = {transfer_state_to = PRE}
-		  808 = {transfer_state_to = PRE}
-		  hidden_effect = {
-		72 = {add_dynamic_modifier = { modifier = polish_resistance }}
-		88 = {add_dynamic_modifier = { modifier = polish_resistance }}
-		90 = {add_dynamic_modifier = { modifier = polish_resistance }} 
-		92 = {add_dynamic_modifier = { modifier = polish_resistance }}
-		10 = {add_dynamic_modifier = { modifier = polish_resistance }}
-		808 = {add_dynamic_modifier = { modifier = polish_resistance }} 	  
-		  
-		  
-		  }
-		set_country_flag = PRE_taken_territory_2
-		remove_ideas = PRE_polish_terrorism_3
-		country_event = { id = preo.5 days = 1 }	
-          }
-          days_remove = 0
+		remove_effect  = {
+			72 = { transfer_state_to = PRE }
+			88 = { transfer_state_to = PRE }
+			90 = { transfer_state_to = PRE }
+			92 = { transfer_state_to = PRE }
+			10 = { transfer_state_to = PRE }
+			808 = { transfer_state_to = PRE }
+			hidden_effect = {
+				72 = { add_dynamic_modifier = { modifier = polish_resistance } }
+				88 = { add_dynamic_modifier = { modifier = polish_resistance } }
+				90 = { add_dynamic_modifier = { modifier = polish_resistance } } 
+				92 = { add_dynamic_modifier = { modifier = polish_resistance } }
+				10 = { add_dynamic_modifier = { modifier = polish_resistance } }
+				808 = { add_dynamic_modifier = { modifier = polish_resistance } }
+			}
+			set_country_flag = PRE_taken_territory_2
+			remove_ideas = PRE_polish_terrorism_3
+			country_event = { id = preo.5 days = 1 }	
+		}
+		days_remove = 0
         ai_will_do = {
 			factor = 1000
 		}
-     }
+	}
 	PRE_generalplan_ost_step_3 = { #massacre poles in 72 88 90 92 10 808
 		name = PRE_generalplan_ost_step_2_name
 		icon = GFX_decision_generic_police_action
-
 		available = {
 		num_of_civilian_factories_available_for_projects > 2
 		has_manpower > 1000
+		has_equipment = {
+			infantry_equipment > 1499
+		}
 			FROM = {
 				is_fully_controlled_by = ROOT
 				state_population_k > 150
@@ -442,7 +445,6 @@ PRE_generalplan_ost_step_2_finish = { #migrate germans to these lands
 		days_remove = 20
 		days_re_enable = 1 
 		cancel_if_not_visible = yes
-
 		state_target = yes
 		targets = { 72 88 90 92 10 808 }
 		target_trigger = {
@@ -455,21 +457,26 @@ PRE_generalplan_ost_step_2_finish = { #migrate germans to these lands
 			factor = 1000
 		}
 		remove_effect = {
-		FROM = {add_manpower = -150000}
+		FROM = { add_manpower = -150000 }
+		add_equipment_to_stockpile  = {
+			type = infantry_equipment
+			amount = -1500
+		}	
 		}
 	}
 PRE_generalplan_ost_step_3_finish = { #migrate germans to these lands
 		name = PRE_generalplan_ost_step_2_finish_name
 		icon = GFX_decision_generic_nationalism
-
 		available = {
 		num_of_civilian_factories_available_for_projects > 4
 			FROM = {
 				is_fully_controlled_by = ROOT
 				state_population_k < 150
 			}
+			has_equipment = {
+				infantry_equipment > 1499
+			}
 		}
-
 		visible = {
 			FROM = {
 				is_owned_by = ROOT
@@ -484,7 +491,6 @@ PRE_generalplan_ost_step_3_finish = { #migrate germans to these lands
 		cost = 0
 		days_remove = 50
 		cancel_if_not_visible = yes
-
 		state_target = yes
 		targets = { 72 88 90 92 10 808 }
 		target_trigger = {
@@ -503,6 +509,9 @@ PRE_generalplan_ost_step_3_finish = { #migrate germans to these lands
 			state_population_k > 500
 			}
 			add_manpower = -100000
+			has_equipment = {
+				infantry_equipment > 1499
+			}
 		}	
 			random_core_state = {
 			limit = {
@@ -515,186 +524,174 @@ PRE_generalplan_ost_step_3_finish = { #migrate germans to these lands
 		FROM = { remove_dynamic_modifier = { modifier = polish_resistance } }
 		hidden_effect = { remove_state_claim = FROM }
 		add_state_core = FROM
-		PLN = {remove_state_core = FROM}
+		PLN = { remove_state_core = FROM }
 		}
 	}	
 }
-
-
 PRE_ministry_of_propaganda_decision = {
-     PRE_propaganda_decision_1 = {
-          cost = 75
-          fire_only_once = yes
-          modifier = {
-
-
-          }
-          remove_effect  = {
-		 PRE_propaganda_increase = yes
-		 custom_effect_tooltip = PRE_ministry_of_propaganda_increase_tooltip
-          }
-          days_remove = 30
+	PRE_propaganda_decision_1 = {
+		cost = 75
+		fire_only_once = yes
+		remove_effect  = {
+			PRE_propaganda_increase = yes
+			custom_effect_tooltip = PRE_ministry_of_propaganda_increase_tooltip
+		}
+		days_remove = 30
         ai_will_do = {
 			factor = 1000
 		}
-     }
-     PRE_propaganda_decision_2 = {
-          cost = 100
-          fire_only_once = yes
-          modifier = {
+	}
+	PRE_propaganda_decision_2 = {
+		cost = 100
+		fire_only_once = yes
+		modifier = {
 			civilian_factory_use = 2
-          }
-          available = {
-               has_tech = radio
-			   num_of_civilian_factories_available_for_projects > 2
-          }
-          remove_effect  = {
-		 PRE_propaganda_increase = yes
-		 custom_effect_tooltip = PRE_ministry_of_propaganda_increase_tooltip
-          }
-          days_remove = 50
+		}
+		available = {
+			has_tech = radio
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		remove_effect  = {
+			PRE_propaganda_increase = yes
+			custom_effect_tooltip = PRE_ministry_of_propaganda_increase_tooltip
+		}
+		days_remove = 50
         ai_will_do = {
 			factor = 1000
 		}
-     }
-     PRE_propaganda_decision_3 = {
-          cost = 20
-          fire_only_once = yes
-          modifier = {
+	}
+	PRE_propaganda_decision_3 = {
+		cost = 20
+		fire_only_once = yes
+		modifier = {
 
-          }
-          available = {
+		}
+		available = {
 			controls_state = 64
-			64 = {infrastructure > 4}
-		  }
-          remove_effect  = {
-		 PRE_propaganda_increase = yes
-		 custom_effect_tooltip = PRE_ministry_of_propaganda_increase_tooltip
-          }
-          days_remove = 20
+			64 = { infrastructure > 4 }
+		}
+		remove_effect  = {
+			PRE_propaganda_increase = yes
+			custom_effect_tooltip = PRE_ministry_of_propaganda_increase_tooltip
+		}
+		days_remove = 20
         ai_will_do = {
 			factor = 1000
 		}
-     }
-     PRE_propaganda_decision_4 = {
-          cost = 75
-          fire_only_once = yes
-          modifier = {
+	}
+	PRE_propaganda_decision_4 = {
+		cost = 75
+		fire_only_once = yes
+		modifier = {
 
-          }
-          remove_effect  = {
-		 PRE_propaganda_increase = yes
-		 custom_effect_tooltip = PRE_ministry_of_propaganda_increase_tooltip
-          }
-          days_remove = 100
+		}
+		remove_effect  = {
+			PRE_propaganda_increase = yes
+			custom_effect_tooltip = PRE_ministry_of_propaganda_increase_tooltip
+		}
+		days_remove = 100
         ai_will_do = {
 			factor = 1000
 		}
-     }
-     PRE_propaganda_decision_5 = {
-          cost = 50
-          fire_only_once = yes
-          modifier = {
+	}
+	PRE_propaganda_decision_5 = {
+		cost = 50
+		fire_only_once = yes
+		modifier = {
 
-          }
-          remove_effect  = {
-		 PRE_propaganda_increase = yes
-		 custom_effect_tooltip = PRE_ministry_of_propaganda_increase_tooltip
-          }
-          days_remove = 200
+		}
+		remove_effect  = {
+			PRE_propaganda_increase = yes
+			custom_effect_tooltip = PRE_ministry_of_propaganda_increase_tooltip
+		}
+		days_remove = 200
         ai_will_do = {
 			factor = 1000
 		}
-     }
+	}
 }
-
 PRE_war_economy_decision = {
-     PRE_war_economy_decision_1 = {
-          cost = 50
-          fire_only_once = yes
-          modifier = {
+	PRE_war_economy_decision_1 = {
+		cost = 50
+		fire_only_once = yes
+		modifier = {
 			war_support_weekly = -0.001
-               civilian_factory_use = 1
-          }
-          remove_effect  = {
-		 PRE_readying_war_economy_idea_increase = yes
-		 custom_effect_tooltip = PRE_war_economy_decision_increase_tooltip
-          }
-          days_remove = 30
+			civilian_factory_use = 1
+		}
+		remove_effect  = {
+			PRE_readying_war_economy_idea_increase = yes
+			custom_effect_tooltip = PRE_war_economy_decision_increase_tooltip
+		}
+		days_remove = 30
         ai_will_do = {
 			factor = 1000
 		}
-     }
-     PRE_war_economy_decision_2 = {
-          cost = 100
-          fire_only_once = yes
-          modifier = {
-          consumer_goods_factor = -0.1
-		war_support_weekly = -0.001
-          }
-          remove_effect  = {
-		 PRE_readying_war_economy_idea_increase = yes
-		 custom_effect_tooltip = PRE_war_economy_decision_increase_tooltip
-          }
-          days_remove = 50
+	}
+	PRE_war_economy_decision_2 = {
+		cost = 100
+		fire_only_once = yes
+		modifier = {
+			consumer_goods_factor = -0.1
+			war_support_weekly = -0.001
+		}
+		remove_effect  = {
+			PRE_readying_war_economy_idea_increase = yes
+			custom_effect_tooltip = PRE_war_economy_decision_increase_tooltip
+		}
+		days_remove = 50
         ai_will_do = {
 			factor = 1000
 		}
-     }
-     PRE_war_economy_decision_3 = {
-          cost = 80
-          fire_only_once = yes
-          modifier = {
-		war_support_weekly = -0.001
-          production_speed_buildings_factor = 0.2 
-          }
-          remove_effect  = {
-		 PRE_readying_war_economy_idea_increase = yes
-		 custom_effect_tooltip = PRE_war_economy_decision_increase_tooltip
-          }
-          days_remove = 100
+	}
+	PRE_war_economy_decision_3 = {
+		cost = 80
+		fire_only_once = yes
+		modifier = {
+			war_support_weekly = -0.001
+			production_speed_buildings_factor = 0.2 
+		}
+		remove_effect  = {
+			PRE_readying_war_economy_idea_increase = yes
+			custom_effect_tooltip = PRE_war_economy_decision_increase_tooltip
+		}
+		days_remove = 100
         ai_will_do = {
 			factor = 1000
 		}
-     }
-     PRE_war_economy_decision_4 = {
-          cost = 150
-          fire_only_once = yes
-          modifier = {
-		war_support_weekly = -0.001
-          production_speed_buildings_factor = 0.4 
-          }
-          remove_effect  = {
-		 PRE_readying_war_economy_idea_increase = yes
-		 custom_effect_tooltip = PRE_war_economy_decision_increase_tooltip
-          }
-          days_remove = 50
+	}
+	PRE_war_economy_decision_4 = {
+		cost = 150
+		fire_only_once = yes
+		modifier = {
+			war_support_weekly = -0.001
+			production_speed_buildings_factor = 0.4 
+		}
+		remove_effect  = {
+			PRE_readying_war_economy_idea_increase = yes
+			custom_effect_tooltip = PRE_war_economy_decision_increase_tooltip
+		}
+		days_remove = 50
         ai_will_do = {
 			factor = 1000
 		}
-     }
-     PRE_war_economy_decision_5 = {
-          cost = 75
-          fire_only_once = yes
-          modifier = {
-		war_support_weekly = -0.001
-          industrial_capacity_factory = 0.3
-          }
-          remove_effect  = {
-		 PRE_readying_war_economy_idea_increase = yes
-		 custom_effect_tooltip = PRE_war_economy_decision_increase_tooltip
-          }
-          days_remove = 30
+	}
+	PRE_war_economy_decision_5 = {
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			war_support_weekly = -0.001
+			industrial_capacity_factory = 0.3
+		}
+		remove_effect  = {
+			PRE_readying_war_economy_idea_increase = yes
+			custom_effect_tooltip = PRE_war_economy_decision_increase_tooltip
+		}
+		days_remove = 30
         ai_will_do = {
 			factor = 1000
 		}
-     }
-
-
-
+	}
 }
-
-
 PRE_Foreign_Policy_category = {
 PRE_Puppet_Belgium = {
 	fire_only_once = yes
@@ -709,9 +706,9 @@ PRE_Puppet_Belgium = {
 		has_completed_focus = PRE_Rest_Germany
 	}
 	available = {
-	BLI = {
-	exists = no
-	}
+		BLI = {
+			exists = no
+		}
 	}
 	complete_effect = {
 		if = {
@@ -727,21 +724,21 @@ PRE_Puppet_Belgium = {
 				transfer_state = 34
 				set_politics = {
 					ruling_party = autocratic
-        				elections_allowed = no
-        				last_election = "1935.12.17"
-        				election_frequency = 48
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
 				}
 				set_popularities = {
 					autocratic = 100
 				}
 				create_country_leader = {
-	       				name = "Heinz Guderian"
-	        			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        			picture = "gfx/leaders/PRE/Heinz_Guderian.tga"
-	        			expire = "1965.1.1"
-	        			ideology = autocratic_subideology
-	        			traits = {
-	        			}
+					name = "Heinz Guderian"
+					picture = "gfx/leaders/PRE/Heinz_Guderian.tga"
+					expire = "1965.1.1"
+					ideology = autocratic_subideology
+					traits = {
+
+					}
 				}
 				set_cosmetic_tag = BLI_german_wallonia
 			}
@@ -758,25 +755,25 @@ PRE_Puppet_Belgium = {
 				transfer_state = 34
 				set_politics = {
 					ruling_party = autocratic
-        				elections_allowed = no
-        				last_election = "1935.12.17"
-        				election_frequency = 48
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
 				}
 				set_popularities = {
 					autocratic = 100
 				}
 				create_country_leader = {
-	       				name = "Heinz Guderian"
-	        			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        			picture = "gfx/leaders/PRE/Heinz_Guderian.tga"
-	        			expire = "1965.1.1"
-	        			ideology = autocratic_subideology
-	        			traits = {
-	        			}
+					name = "Heinz Guderian"
+					picture = "gfx/leaders/PRE/Heinz_Guderian.tga"
+					expire = "1965.1.1"
+					ideology = autocratic_subideology
+					traits = {
+
+					}
 				}
 				set_cosmetic_tag = BLI_german_belgium
 			}
 		}
 	}
-}	
+}
 }

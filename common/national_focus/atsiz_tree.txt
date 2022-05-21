@@ -6,7 +6,6 @@ focus_tree = {
 			add = 0
 		}
 	}
-
     focus = {
 		id = WRF_Atsiz_Start2
 		icon = GFX_goal_WRF_Atsiz_Start
@@ -18,14 +17,13 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		country_event = { id = atsiz.1 }
-		hidden_effect = {
-		country_event = { id = atsiz.6 days = 9 }
-		country_event = { id = atsiz.7 days = 15 }		
-		}
+			country_event = { id = atsiz.1 }
+			hidden_effect = {
+				country_event = { id = atsiz.6 days = 9 }
+				country_event = { id = atsiz.7 days = 15 }		
+			}
 		}
 	}
-
     focus = {
 		id = WRF_Atsiz_Sons_East
 		icon = GFX_goal_WRF_East
@@ -41,7 +39,6 @@ focus_tree = {
 		country_event = { id = atsiz.2 }	 
 		}
 	}
-
     focus = {
 		id = WRF_Atsiz_What_Ottomans
 		icon = GFX_goal_WRF_Atsiz_Soldier
@@ -57,7 +54,6 @@ focus_tree = {
 		country_event = { id = atsiz.4 }	 
 		}
 	}
-
     focus = {
 		id = WRF_Atsiz_Civilization_Greek
 		icon = GFX_goal_WRF_Greek
@@ -71,13 +67,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		swap_ideas = {
-        remove_idea = Atsiz_Discontent_Army_Subutais
-        add_idea =  Atsiz_Discontent_Army_Subutais_2
-        }	 
+			swap_ideas = {
+				remove_idea = Atsiz_Discontent_Army_Subutais
+				add_idea =  Atsiz_Discontent_Army_Subutais_2
+			}	 
 		}
 	}
-
     focus = {
 		id = WRF_Atsiz_War_Turkish
 		icon = GFX_goal_WRF_Atsiz_Abra
@@ -88,20 +83,23 @@ focus_tree = {
         prerequisite = { focus = WRF_Atsiz_Religion_Arab }
         prerequisite = { focus = WRF_Atsiz_Law_Roman }
         prerequisite = { focus = WRF_Atsiz_Civilization_Greek }
-		available = { NOT = {
-		country_exists = ARM	
-		}}
+		available = {
+			NOT = {
+				country_exists = ARM	
+			}
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-		remove_ideas = Atsiz_New_Regime_4
-		add_stability = 0.10
-		add_manpower = -10000
-		#unlock_national_focus = WRF_MiddleEast_Plan 
+			swap_ideas = {
+				remove_idea = Atsiz_New_Regime_4
+				add_idea = Atsiz_New_Regime_5
+			}
+			add_stability = 0.10
+			add_manpower = -10000
 		}
 	}
-
     focus = {
 		id = WRF_Atsiz_Sons_West
 		icon = GFX_goal_WRF_Conan
@@ -117,7 +115,6 @@ focus_tree = {
 		country_event = { id = atsiz.3 }	 
 		}
 	}
-
     focus = {
 		id = WRF_Atsiz_What_Rome
 		icon = GFX_goal_WRF_Hunnic
@@ -130,15 +127,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		swap_ideas = {
-        remove_idea = Atsiz_New_Regime_2
-        add_idea =  Atsiz_New_Regime_3
-        }
-        add_manpower = 1000
-        add_stability = 0.10 
+			swap_ideas = {
+				remove_idea = Atsiz_New_Regime_2
+				add_idea =  Atsiz_New_Regime_3
+			}
+			add_manpower = 1000
+			add_stability = 0.10 
 		}
 	}
-
     focus = {
 		id = WRF_Atsiz_Law_Roman
 		icon = GFX_goal_WRF_Italy
@@ -151,10 +147,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		swap_ideas = {
-        remove_idea = Atsiz_New_Regime_3
-        add_idea =  Atsiz_New_Regime_4
-        }
+			swap_ideas = {
+				remove_idea = Atsiz_New_Regime_3
+				add_idea =  Atsiz_New_Regime_4
+			}
 		}
 	}
 	##post revolt
@@ -170,13 +166,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		swap_ideas = {
-		remove_idea = Atsiz_Discontent_Army_Subutais_2
-		add_idea = Atsiz_KorpsDeath	
-		}
+			swap_ideas = {
+				remove_idea = Atsiz_Discontent_Army_Subutais_2
+				add_idea = Atsiz_KorpsDeath	
+			}
 		}
 	}
-
 	focus = {
 		id = WRF_Dehumanize_Enemy
 		icon = GFX_goal_WRF_Dehumanize
@@ -189,10 +184,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_ideas = Atsiz_Dehumanize
+			add_ideas = Atsiz_Dehumanize
 		}
 	}
-
 	focus = {
 		id = WRF_TheCult
 		icon = GFX_goal_WRF_Cult
@@ -205,10 +199,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_ideas = Atsiz_DaCult
+			add_ideas = Atsiz_DaCult
 		}
 	}
-
 	focus = {
 		id = WRF_Discipline_Freedom
 		icon = GFX_goal_WRF_Discipline
@@ -222,10 +215,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		army_experience = 60
+			army_experience = 60
 		}
 	}
-
 	focus = {
 		id = WRF_Iron_Hearts
 		icon = GFX_goal_cyborg
@@ -239,10 +231,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_ideas = Atsiz_Drugs
+			add_ideas = Atsiz_Drugs
 		}
 	}
-
 	focus = {
 		id = WRF_Sons_Destruction
 		icon = GFX_goal_WRF_Destruction
@@ -255,13 +246,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		swap_ideas = {
-		remove_idea = Atsiz_KorpsDeath
-		add_idea = Atsiz_KorpsDeath_Destruction	
-		}
+			swap_ideas = {
+				remove_idea = Atsiz_KorpsDeath
+				add_idea = Atsiz_KorpsDeath_Destruction	
+			}
 		}
 	}
-
 	focus = {
 		id = WRF_Animal_Doctrine
 		icon = GFX_goal_WRF_Animal
@@ -274,18 +264,17 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		swap_ideas = {
-		remove_idea = Atsiz_KorpsDeath_Destruction
-		add_idea = Atsiz_KorpsDeath_Doctrine	
-		}
-		add_tech_bonus = {
-    	bonus = 1.0
-    	uses = 3
-    	category = land_doctrine
-		}
+			swap_ideas = {
+				remove_idea = Atsiz_KorpsDeath_Destruction
+				add_idea = Atsiz_KorpsDeath_Doctrine
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 3
+				category = land_doctrine
+			}
 		}
 	}
-
 	focus = {
 		id = WRF_Nightmare_Fuel
 		icon = GFX_goal_WRF_Nightmare
@@ -299,13 +288,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		swap_ideas = {
-		remove_idea = Atsiz_KorpsDeath_Doctrine
-		add_idea = Atsiz_KorpsDeath_Fuel	
-		}
+			swap_ideas = {
+				remove_idea = Atsiz_KorpsDeath_Doctrine
+				add_idea = Atsiz_KorpsDeath_Fuel	
+			}
 		}
 	}
-
 	focus = {
 		id = WRF_Sons_Of_Eurasia
 		icon = GFX_goal_eurasian_army
@@ -319,11 +307,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		swap_ideas = {
-		remove_idea = Atsiz_KorpsDeath_Fuel
-		add_idea = Atsiz_KorpsDeath_Eurasia	
-		}
-		#unlock_national_focus = WRF_Conquest_Iraq
+			swap_ideas = {
+				remove_idea = Atsiz_KorpsDeath_Fuel
+				add_idea = Atsiz_KorpsDeath_Eurasia	
+			}
 		}
 	}
 
@@ -339,27 +326,26 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = -0.10
-		add_ideas = Atsiz_Minority_Labor
-		random_owned_state = {
-		add_building_construction = {
-   	 	type = arms_factory
-    	level = 2
-    	instant_build = yes
-		}
-		add_extra_state_shared_building_slots = 2	
-		}
-		random_owned_state = {
-		add_building_construction = {
-   	 	type = arms_factory
-    	level = 2
-    	instant_build = yes
-		}
-		add_extra_state_shared_building_slots = 2	
-		}
+			add_stability = -0.10
+			add_ideas = Atsiz_Minority_Labor
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2	
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
 		}
 	}
-
 	focus = {
 		id = WRF_Lessons_Revolts
 		icon = GFX_goal_fuck_armenia
@@ -372,11 +358,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
-		230 = {
-		add_manpower = -10000	
-		}
-		add_experience = 70
+			230 = {
+				add_manpower = -10000	
+			}
+			add_experience = 70
 		}
 	}
 	focus = {
@@ -391,7 +376,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		swap_ruler_traits = { remove = bastion_evil add = bastion_evil_2 }
+			swap_ruler_traits = { remove = bastion_evil add = bastion_evil_2 }
 		}
 	}
 	focus = {
@@ -407,10 +392,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		swap_ideas = {
-		remove_idea = Atsiz_Wolfic_Society
-		add_idea = 	Atsiz_Wolfic_Society_Fear
-		}
+			swap_ideas = {
+				remove_idea = Atsiz_Wolfic_Society
+				add_idea = 	Atsiz_Wolfic_Society_Fear
+			}
 		}
 	}
 	focus = {
@@ -426,11 +411,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_ideas = Atsiz_Gestapo
-		swap_ideas = {
-		remove_idea = Atsiz_New_Regime_4
-		add_idea = Atsiz_New_Regime_5	
-		}
+			add_ideas = Atsiz_Gestapo
 		}
 	}
 	focus = {
@@ -445,8 +426,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.10
-		add_manpower = -40000
+			add_stability = 0.10
+			add_manpower = -40000
 		}
 	}
 	focus = {
@@ -462,8 +443,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		remove_ideas = Atsiz_New_Regime_5
-		remove_ideas = Atsiz_Enverist_Influence
+			remove_ideas = Atsiz_New_Regime_5
 		hidden_effect = {
 		}
 		}
@@ -480,9 +460,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_ideas = Atsiz_Wolfic_Society
-		hidden_effect = {
-		}
+			add_ideas = Atsiz_Wolfic_Society
 		}
 	}
 	focus = {
@@ -497,32 +475,30 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		random_owned_state = {
-		add_building_construction = {
-   	 	type = infrastructure
-    	level = 2
-    	instant_build = yes
-		}
-		add_extra_state_shared_building_slots = 2	
-		}
-		random_owned_state = {
-		add_building_construction = {
-   	 	type = infrastructure
-    	level = 2
-    	instant_build = yes
-		}
-		add_extra_state_shared_building_slots = 2	
-		}
-		random_owned_state = {
-		add_building_construction = {
-   	 	type = infrastructure
-    	level = 2
-    	instant_build = yes
-		}
-		add_extra_state_shared_building_slots = 2	
-		}
-		hidden_effect = {
-		}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
 		}
 	}
 	focus = {
@@ -537,25 +513,23 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = -0.10	
-		797 = {
-		add_building_construction = {
-   	 	type = infrastructure
-    	level = 4
-    	instant_build = yes
-		}
-		add_extra_state_shared_building_slots = 4		
-		}
-		340 = {
-		add_building_construction = {
-   	 	type = infrastructure
-    	level = 4
-    	instant_build = yes
-		}
-		add_extra_state_shared_building_slots = 4		
-		}
-		hidden_effect = {
-		}
+			add_stability = -0.10	
+			797 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 4
+			}
+			340 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 4
+			}
 		}
 	}
 	focus = {
@@ -571,8 +545,6 @@ focus_tree = {
 		}
 		completion_reward = {
 		add_ideas = Atsiz_Fast_Society
-		hidden_effect = {
-		}
 		}
 	}
 	focus = {
@@ -587,32 +559,30 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		random_owned_state = {
-		add_building_construction = {
-   	 	type = arms_factory
-    	level = 4
-    	instant_build = yes
-		}
-		add_extra_state_shared_building_slots = 4	
-		}
-		random_owned_state = {
-		add_building_construction = {
-   	 	type = arms_factory
-    	level = 4
-    	instant_build = yes
-		}
-		add_extra_state_shared_building_slots = 4	
-		}
-		random_owned_state = {
-		add_building_construction = {
-   	 	type = arms_factory
-    	level = 4
-    	instant_build = yes
-		}
-		add_extra_state_shared_building_slots = 4	
-		}
-		hidden_effect = {
-		}
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 4
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 4
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 4
+			}
 		}
 	}
 	focus = {
@@ -627,13 +597,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_tech_bonus = {
-   		bonus = 1
-    	uses = 3
-    	category = armor
-		}
-		hidden_effect = {
-		}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 3
+				category = armor
+			}
 		}
 	}
 	focus = {
@@ -648,13 +616,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_equipment_to_stockpile = {
-   		type = light_tank_equipment_1 
-    	amount = 4000
-    	producer = WRF
-		}
-		hidden_effect = {
-		}
+			add_equipment_to_stockpile = {
+				type = light_tank_equipment_1 
+				amount = 4000
+				producer = WRF
+			}
 		}
 	}
 	focus = {
@@ -670,16 +636,13 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_tech_bonus = {
-   		bonus = 1
-    	uses = 3
-    	category = land_doctrine
-		}
-		hidden_effect = {
-		}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 3
+				category = land_doctrine
+			}
 		}
 	}
-	#teaserfocuses
 	focus = {
 		id = WRF_Brown_Ending
 		icon = GFX_goal_atsiz_end
@@ -687,18 +650,18 @@ focus_tree = {
 		y = 10
 		cost = 1
 		available = { 
-		TAT = {
-		is_puppet_of = WRF
-		}	
-		CHI = {
-		is_puppet_of = WRF
-		}
-		INR = {
-		is_puppet_of = WRF
-		}
-		SRY = {
-		is_puppet_of = WRF
-		}
+			TAT = {
+				is_puppet_of = WRF
+			}	
+			CHI = {
+				is_puppet_of = WRF
+			}
+			INR = {
+				is_puppet_of = WRF
+			}
+			SRY = {
+				is_puppet_of = WRF
+			}
 		}
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_Blueprints_Destruction focus = WRF_End_Kemalism focus = WRF_Terror_Raids focus = WRF_Sons_Of_Eurasia }
@@ -706,21 +669,15 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = atsiz_endingtt
-		hidden_effect = {
-		}
+			custom_effect_tooltip = atsiz_endingtt
 		}
 	}
-
 	focus = {
 		id = WRF_Conquer_Tibet
 		icon = GFX_goal_WRF_Buddha
 		x = 17
 		y = 11
 		cost = 5
-		available = { 
-		
-		}
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_Brown_Ending }
 		ai_will_do = {
@@ -728,19 +685,16 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = atsiz_endingtt2
-		declare_war_on = {
-    	target = TIB
-   		type = annex_everything
-		}
-		declare_war_on = {
-    	target = KSM
-   		type = annex_everything
-		}
-		hidden_effect = {
-		}
+			declare_war_on = {
+				target = TIB
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = KSM
+				type = annex_everything
+			}
 		}
 	}
-
 	focus = {
 		id = WRF_A_Spiritual_Visit
 		icon = GFX_goal_WRF_Journey
@@ -748,12 +702,12 @@ focus_tree = {
 		y = 12
 		cost = 5
 		available = { 
-		TIB = {
-		exists = no	
-		}
-		KSM = {
-		exists = no	
-		}
+			TIB = {
+				exists = no	
+			}
+			KSM = {
+				exists = no	
+			}
 		}
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_Conquer_Tibet }
@@ -761,13 +715,10 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-		custom_effect_tooltip = atsiz_endingtt3
-		country_event = { id = atsiz.11 daqys = 1}
-		hidden_effect = {
-		}
+			custom_effect_tooltip = atsiz_endingtt3
+			country_event = { id = atsiz.11 daqys = 1}
 		}
 	}
-
 	focus = {
 		id = WRF_Gods_Demand
 		icon = GFX_goal_WRF_Gods
@@ -775,7 +726,7 @@ focus_tree = {
 		y = 13
 		cost = 5
 		available = { 
-		always = no
+			always = no
 		}
 		available_if_capitulated = yes
 		mutually_exclusive = { focus = WRF_Impeach_Atsiz}
@@ -784,42 +735,29 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-		
-		hidden_effect = {
-		}
 		}
 	}
-
 	focus = {
 		id = WRF_Unite_Civilization
 		icon = GFX_goal_WRF_Civiliz
 		x = 17
 		y = 14
 		cost = 5
-		available = { 
-		
-		}
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_Gods_Demand }
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-		country_event = { id = atsiz.12 days = 1}
-		hidden_effect = {
-		}
+			country_event = { id = atsiz.12 days = 1}
 		}
 	}
-
 	focus = {
 		id = WRF_The_Great_War
 		icon = GFX_goal_WRF_Great_War
 		x = 17
 		y = 15
 		cost = 5
-		available = { 
-		
-		}
 		available_if_capitulated = yes
 		prerequisite = { focus = WRF_Unite_Civilization }
 		will_lead_to_war_with = NGU
@@ -828,130 +766,134 @@ focus_tree = {
 		will_lead_to_war_with = FRE
 		will_lead_to_war_with = BAV
 		will_lead_to_war_with = SWV
-		will_lead_to_war_with = BLT
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-		country_event = { id = atsiz.13}	
-		add_ideas = WRF_Atsiz_Crusade	
-		declare_war_on = {
-    	target = UKR
-   		type = annex_everything
-		}
-		declare_war_on = {
-    	target = WHR
-   		type = annex_everything
-		}
-		declare_war_on = {
-    	target = BLT
-   		type = annex_everything
-		}
-		declare_war_on = {
-    	target = PLN
-   		type = annex_everything
-		}
-		declare_war_on = {
-    	target = PRE
-   		type = annex_everything
-		}
-		declare_war_on = {
-    	target = HNG
-   		type = annex_everything
-		}
-		declare_war_on = {
-    	target = NGU
-   		type = annex_everything
-		}
-		declare_war_on = {
-    	target = AUT
-   		type = annex_everything
-		}
-		declare_war_on = {
-    	target = HUN
-   		type = annex_everything
-		}
-		declare_war_on = {
-    	target = FIU
-   		type = annex_everything
-		}
-		declare_war_on = {
-    	target = GRE
-   		type = annex_everything
-		}
-		declare_war_on = {
-    	target = SOR
-   		type = annex_everything
-		}
-		declare_war_on = {
-    	target = BLG
-   		type = annex_everything
-		}
-		declare_war_on = {
-    	target = WAL
-   		type = annex_everything
-		}
-		declare_war_on = {
-    	target = MLV
-   		type = annex_everything
-		}
-		declare_war_on = {
-    	target = FRE
-   		type = annex_everything
-		}
-		declare_war_on = {
-    	target = BLI
-   		type = annex_everything
-		}
-		declare_war_on = {
-    	target = BTV
-   		type = annex_everything
-		}
-		declare_war_on = {
-    	target = LUX
-   		type = annex_everything
-		}
-		declare_war_on = {
-    	target = SPK
-   		type = annex_everything
-		}
-		declare_war_on = {
-    	target = PKR
-   		type = annex_everything
-		}
-		declare_war_on = {
-    	target = ENG
-   		type = annex_everything
-		}
-		declare_war_on = {
-    	target = DAN
-   		type = annex_everything
-		}
-		declare_war_on = {
-    	target = NRG
-   		type = annex_everything
-		}
-		declare_war_on = {
-    	target = SWV
-   		type = annex_everything
-		}
-		declare_war_on = {
-    	target = SLK
-   		type = annex_everything
-		}
-		declare_war_on = {
-    	target = CEZ
-   		type = annex_everything
-		}
-		declare_war_on = {
-    	target = SWZ
-   		type = annex_everything
-		}
-		hidden_effect = {
-		}
+			country_event = { id = atsiz.13}
+			add_ideas = WRF_Atsiz_Crusade	
+			declare_war_on = {
+				target = UKR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = WHR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = LIT
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = PLN
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = PRE
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = HNG
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = NGU
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = AUT
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = HUN
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = FIU
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = GRE
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SOR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = BLG
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = WAL
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = MLV
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = FRE
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = BLI
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = BTV
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = LUX
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SPK
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = PKR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = ENG
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = DAN
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = NRG
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SWV
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SLK
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = CEZ
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SWZ
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = LAT
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = EST
+				type = annex_everything
+			}
 		}
 	}
-
 	focus = {
 		id = WRF_Conquest_Iraq
 		icon = GFX_goal_WRF_levants
@@ -963,44 +905,41 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-		#always = no
-		has_completed_focus = WRF_Sons_Of_Eurasia	
+			has_completed_focus = WRF_Sons_Of_Eurasia	
 		}
 		completion_reward = {
 			SYR = {
-		every_owned_state = {
-        add_claim_by = WRF
-        }	
-		}
-		IQR = {
-		every_owned_state = {
-        add_claim_by = WRF
-        }
-		}
-		PAL = {
-		every_owned_state = {
-        add_claim_by = WRF
-        }	
-		}
-		add_war_support = 0.20
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
+			IQR = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
+			PAL = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
+			add_war_support = 0.20
 			declare_war_on = {
-    		target = IQR
-    		type = annex_everything
+				target = IQR
+				type = annex_everything
 			}
 			declare_war_on = {
-    		target = SRY
-    		type = annex_everything
+				target = SRY
+				type = annex_everything
 			} 
 			declare_war_on = {
-    		target = PAL
-    		type = annex_everything
+				target = PAL
+				type = annex_everything
 			}  
 			add_timed_idea = {
-			idea = atsiz_fucksarabs
-			days = 70	
+				idea = atsiz_fucksarabs
+				days = 70	
 			}
-		hidden_effect = {
-		}
 		}
 	}
 	focus = {
@@ -1012,11 +951,12 @@ focus_tree = {
 		available_if_capitulated = yes
         prerequisite = { focus = WRF_Conquest_Iraq }
 		prerequisite = { focus = WRF_Conquest_Syria }
-		available = { NOT = {
-		country_exists = IQR
-		country_exists = SYR
-		country_exists = PAL	
-		}
+		available = {
+			NOT = {
+				country_exists = IQR
+				country_exists = SYR
+				country_exists = PAL
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -1028,8 +968,6 @@ focus_tree = {
 		unlock_decision_tooltip = WRF_Aryan_Komisar_1
 		unlock_decision_tooltip = WRF_Russ_Komisar
 		unlock_decision_tooltip = WRF_China
-		hidden_effect = {
-		}
 		}
 	}
 	focus = {
@@ -1045,16 +983,14 @@ focus_tree = {
 		}
 		completion_reward = {
 		declare_war_on = {
-    		target = INR
-    		type = annex_everything
+			target = INR
+			type = annex_everything
 			}
-		INR = {
-        every_owned_state = {
-        add_claim_by = WRF
-        }	
-        }
-		hidden_effect = {
-		}
+			INR = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
 		}
 	}
 	focus = {
@@ -1067,58 +1003,58 @@ focus_tree = {
 		prerequisite = { focus = WRF_Conquest_Iran }
 		prerequisite = { focus = WRF_Kommisariat_System focus = WRF_Conquer_Palestine focus = WRF_Conquer_Arabia}
 		available = { 
-		INR = {
-        is_puppet_of = WRF    
-		}
+			INR = {
+				is_puppet_of = WRF    
+			}
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-		AFG = {
-        every_owned_state = {
-        add_claim_by = WRF
-        }	
-        }
-		BHR = {
-        every_owned_state = {
-        add_claim_by = WRF
-        }	
-        }
-		TRK = {
-        every_owned_state = {
-        add_claim_by = WRF
-        }	
-        }
-		TMS = {
-        every_owned_state = {
-        add_claim_by = WRF
-        }	
-        }
-		BUK = {
-			every_owned_state = {
-			add_claim_by = WRF
-			}	
+			AFG = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}	
 			}
-		SVT = {
-        every_owned_state = {
-        add_claim_by = WRF
-        }	
-        }
-		KHI = {
-        every_owned_state = {
-        add_claim_by = WRF
-        }	
-        }
-		BAS = {
-        every_owned_state = {
-        add_claim_by = WRF
-        }	
-        }
-		QAZ = {
-			every_owned_state = {
-			add_claim_by = WRF
-			}	
+			BHR = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
+			TRK = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
+			TMS = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
+			BUK = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
+			SVT = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
+			KHI = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
+			BAS = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}	
+			}
+			QAZ = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}	
 			}
 		}
 	}
@@ -1134,33 +1070,33 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		declare_war_on = {
-    		target = SRF
-    		type = annex_everything
+			declare_war_on = {
+				target = SRF
+				type = annex_everything
 			}
-		declare_war_on = {
-    		target = MTR
-    		type = annex_everything
+			declare_war_on = {
+				target = MTR
+				type = annex_everything
 			}
-		declare_war_on = {
-    		target = GEO
-    		type = annex_everything
+			declare_war_on = {
+				target = GEO
+				type = annex_everything
 			}
-		GEO = {
-        every_owned_state = {
-        add_claim_by = WRF
-        }	
-        }
-		MTR = {
-        every_owned_state = {
-        add_claim_by = WRF
-        }	
-        }
-		SRF = {
-        every_owned_state = {
-        add_claim_by = WRF
-        }	
-        }
+			GEO = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
+			MTR = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
+			SRF = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
 		}
 	}
 	focus = {
@@ -1176,15 +1112,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			declare_war_on = {
-    		target = AFG
-    		type = annex_everything
+				target = AFG
+				type = annex_everything
 			}
 			declare_war_on = {
-    		target = BHR
-    		type = annex_everything
+				target = BHR
+				type = annex_everything
 			}
-		hidden_effect = {
-		}
 		}
 	}
 	focus = {
@@ -1226,7 +1160,7 @@ focus_tree = {
 			declare_war_on = {
 				target = KHI
 				type = annex_everything
-				}
+			}
 		}
 	}
 	focus = {
@@ -1242,106 +1176,106 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		KSM = {
-        every_owned_state = {
-        add_claim_by = WRF
-        }	
-        }
-		YUN = {
-        every_owned_state = {
-        add_claim_by = WRF
-        }	
-        }
-		TUV = {
-        every_owned_state = {
-        add_claim_by = WRF
-        }	
-        }
-		GUO = {
-        every_owned_state = {
-        add_claim_by = WRF
-        }	
-        }
-		MON = {
-        every_owned_state = {
-        add_claim_by = WRF
-        }	
-        }
-		CHI = {
-        every_owned_state = {
-        add_claim_by = WRF
-        }	
-        }
-		XSM = {
-        every_owned_state = {
-        add_claim_by = WRF
-        }	
-        }
-		SIK = {
-        every_owned_state = {
-        add_claim_by = WRF
-        }	
-        }
-		RUS = {
-        every_owned_state = {
-        add_claim_by = WRF
-        }	
-        }
-		SAV = {
-        every_owned_state = {
-        add_claim_by = WRF
-        }	
-        }
-		REG = {
-        every_owned_state = {
-        add_claim_by = WRF
-        }	
-        }
-		URA = {
-        every_owned_state = {
-        add_claim_by = WRF
-        }	
-        }
-		SIB = {
-        every_owned_state = {
-        add_claim_by = WRF
-        }	
-        }
-		KAR = {
-        every_owned_state = {
-        add_claim_by = WRF
-        }	
-        }
-		SAK = {
-        every_owned_state = {
-        add_claim_by = WRF
-        }	
-        }
-		PRI = {
-        every_owned_state = {
-        add_claim_by = WRF
-        }	
-        }
-		KUB = {
-        every_owned_state = {
-        add_claim_by = WRF
-        }	
-        }
-		DON = {
-        every_owned_state = {
-        add_claim_by = WRF
-        }	
-        }
-		FIN = {
-        every_owned_state = {
-        add_claim_by = WRF
-        }	
-        }
-		BYR = {
-        every_owned_state = {
-        add_claim_by = WRF
-        }	
-        }
+			KSM = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}	
+			}
+			YUN = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
+			TUV = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
+			GUO = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
+			MON = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
+			CHI = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
+			XSM = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
+			SIK = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
+			RUS = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
+			SAV = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
+			REG = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
+			URA = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
+			SIB = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
+			KAR = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
+			SAK = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
+			PRI = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
+			KUB = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
+			DON = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
+			FIN = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
+			BYR = {
+				every_owned_state = {
+					add_claim_by = WRF
+				}
+			}
 		}
 	}
 	focus = {
@@ -1356,6 +1290,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			declare_war_on = {
+				target = URA
+				type = annex_everything
+				}
+			declare_war_on = {
+				target = CRI
+				type = annex_everything
+				}
 			declare_war_on = {
 				target = SAK
 				type = annex_everything
@@ -1417,33 +1359,33 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		declare_war_on = {
-    		target = TUV
-    		type = annex_everything
+			declare_war_on = {
+				target = TUV
+				type = annex_everything
 			}
 			declare_war_on = {
-    		target = MON
-    		type = annex_everything
-			}
-		declare_war_on = {
-    		target = XSM
-    		type = annex_everything
+				target = MON
+				type = annex_everything
 			}
 			declare_war_on = {
-    		target = GUO
-    		type = annex_everything
+				target = XSM
+				type = annex_everything
 			}
 			declare_war_on = {
-    		target = YUN
-    		type = annex_everything
+				target = GUO
+				type = annex_everything
 			}
 			declare_war_on = {
-    		target = CHI
-    		type = annex_everything
+				target = YUN
+				type = annex_everything
 			}
 			declare_war_on = {
-    		target = SIK
-    		type = annex_everything
+				target = CHI
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SIK
+				type = annex_everything
 			}		
 		}
 	}

@@ -1286,24 +1286,25 @@ WRF_Levant_Komisar = {
         complete_effect = {
             transfer_state = 676
             transfer_state = 818
-        release_puppet = SRY
-        SRY = {
-        set_cosmetic_tag = SRY_Atsiz_Puppet
-        set_politics = {
-	        ruling_party = ultranationalist
-            elections_allowed = no
-            last_election = "1935.12.17"
-            election_frequency = 48
-            }
-            create_country_leader = {
-	        name = "Alparslan Türkeş"
-	        desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        picture   = "gfx/leaders/SRY/WRF_Turkes.tga"
-	        expire = "1965.1.1"
-	        ideology = ultranationalist_subideology
-	        traits = {
-	        }
-            }
+            release_puppet = SRY
+            SRY = {
+                set_cosmetic_tag = SRY_Atsiz_Puppet
+                set_politics = {
+                    ruling_party = ultranationalist
+                    elections_allowed = no
+                    last_election = "1935.12.17"
+                    election_frequency = 48
+                }
+                create_country_leader = {
+                    name = "Alparslan Türkeş"
+                    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+                    picture   = "gfx/leaders/SRY/WRF_Turkes.tga"
+                    expire = "1965.1.1"
+                    ideology = ultranationalist_subideology
+                    traits = {
+
+                    }
+                }
             transfer_state = 553
             transfer_state = 868
             transfer_state = 869
@@ -1311,7 +1312,6 @@ WRF_Levant_Komisar = {
             transfer_state = 453
             transfer_state = 832
             transfer_state = 816
-            transfer_state = 675
             transfer_state = 291
             transfer_state = 455
         }
@@ -1321,284 +1321,276 @@ WRF_Levant_Komisar = {
             transfer_state = 817
         }
         }
-     ai_will_do = {
+        ai_will_do = {
 			factor = 1000
 		}
-}
+    }
 WRF_Aryan_Komisar_1 = {
-	    fire_only_once = yes
-		cost = 0
-        allowed = {
+    fire_only_once = yes
+    cost = 0
+    allowed = {
         tag = WRF
         OR = {
-        has_country_flag = debug_TR
-        has_completed_focus = WRF_Kommisariat_System
+            has_country_flag = debug_TR
+            has_completed_focus = WRF_Kommisariat_System
         }
-        }
-        available  = {
+    }
+    available  = {
         owns_state = 266
-        }
-        visible = {
+    }
+    visible = {
         original_tag = WRF
         OR = {
-        has_country_flag = debug_TR
-        has_completed_focus = WRF_Kommisariat_System
+            has_country_flag = debug_TR
+            has_completed_focus = WRF_Kommisariat_System
         }
-        }    
-        complete_effect = {
+    }    
+    complete_effect = {
         release_puppet = INR
         INR = {
-        set_cosmetic_tag = Iran_Atsiz_Puppet
-        set_politics = {
-	        ruling_party = ultranationalist
-            elections_allowed = no
-            last_election = "1935.12.17"
-            election_frequency = 48
+            set_cosmetic_tag = Iran_Atsiz_Puppet
+            set_politics = {
+                ruling_party = ultranationalist
+                elections_allowed = no
+                last_election = "1935.12.17"
+                election_frequency = 48
             }
             create_country_leader = {
-	        name = "Mustafa Muğlalı"
-	        desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        picture = "gfx\leaders\CIB\Portrait_CIB_Mustafa_Muglali.tga"
-	        expire = "1965.1.1"
-	        ideology = ultranationalist_subideology
-	        traits = {
-	        }
+                name = "Mustafa Muğlalı"
+                desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+                picture = "gfx\leaders\CIB\Portrait_CIB_Mustafa_Muglali.tga"
+                expire = "1965.1.1"
+                ideology = ultranationalist_subideology
+                traits = {
+
+                }
             }
         }
         transfer_state = 419
         transfer_state = 420
         }
-     ai_will_do = {
+        ai_will_do = {
 			factor = 1000
 		}
-}
-
+    }
 WRF_Aryan_Komisar_2 = {
-	    fire_only_once = yes
-		cost = 0
-        allowed = {
+    fire_only_once = yes
+    cost = 0
+    allowed = {
         tag = WRF
         OR = {
-        has_country_flag = debug_TR
-        has_completed_focus = WRF_Kommisariat_System
+            has_country_flag = debug_TR
+            has_completed_focus = WRF_Kommisariat_System
         }
-        }
-        available  = {
+    }
+    available  = {
         INR = {
-        is_puppet_of = WRF    
+            is_puppet_of = WRF    
         }
         owns_state = 863
         owns_state = 443
-        }
+    }
         visible = {
-        original_tag = WRF
-        OR = {
-        has_country_flag = debug_TR
-        has_completed_focus = WRF_Kommisariat_System
-        }
-        INR = {
-        is_puppet_of = WRF    
-        }
+            original_tag = WRF
+            OR = {
+                has_country_flag = debug_TR
+                has_completed_focus = WRF_Kommisariat_System
+            }
+            INR = {
+                is_puppet_of = WRF    
+            }
         }    
         complete_effect = {
-        INR = {
-        transfer_state = 863
-            transfer_state = 443
-            transfer_state = 267
-            transfer_state = 428
-            transfer_state = 433
-            transfer_state = 440
-            transfer_state = 439
-            transfer_state = 444
-            transfer_state = 415
-            transfer_state = 445
-            transfer_state = 442
+            INR = {
+                transfer_state = 863
+                transfer_state = 443
+                transfer_state = 267
+                transfer_state = 428
+                transfer_state = 433
+                transfer_state = 440
+                transfer_state = 439
+                transfer_state = 444
+                transfer_state = 415
+                transfer_state = 445
+                transfer_state = 442
+            }
         }
-		hidden_effect = {
-        }
-        }
-     ai_will_do = {
+        ai_will_do = {
 			factor = 1000
 		}
-} 
-
+    } 
 WRF_Russ_Komisar = {
-	    fire_only_once = yes
-		cost = 0
-        allowed = {
+    fire_only_once = yes
+    cost = 0
+    allowed = {
         tag = WRF
         OR = {
-        has_country_flag = debug_TR
-        has_completed_focus = WRF_Kommisariat_System
+            has_country_flag = debug_TR
+            has_completed_focus = WRF_Kommisariat_System
         }
-        }
-        available  = {
+    }
+    available  = {
         has_country_flag = Russian_War_WRF
         OR = {
-        NOT = {
-        country_exists = SOV
-        country_exists = RUS
-        country_exists = BYR
-        }
+            NOT = {
+                country_exists = SOV
+                country_exists = RUS
+                country_exists = BYR
+            }
         }
         WRF = {
-        owns_state = 195
-        owns_state = 219    
+            owns_state = 195
+            owns_state = 219    
         }
-        }
-        visible = {
+    }
+    visible = {
         original_tag = WRF
         OR = {
-        has_country_flag = debug_TR
-        has_completed_focus = WRF_Kommisariat_System
+            has_country_flag = debug_TR
+            has_completed_focus = WRF_Kommisariat_System
         }
-        }    
+    }    
         complete_effect = {
-        release_puppet = TAT
-        release = RUS
-        release = BYR
-        TAT = {
-        annex_country = {
-        target = RUS
-        transfer_troops = yes
-        }
-        annex_country = {
-        target = BYR
-        transfer_troops = yes
-        }
-        set_cosmetic_tag = Turkish_Russia_cosmetic
-        set_politics = {
-	        ruling_party = ultranationalist
-            elections_allowed = no
-            last_election = "1935.12.17"
-            election_frequency = 48
+            release_puppet = TAT
+            release = RUS
+            release = BYR
+            TAT = {
+                annex_country = {
+                    target = RUS
+                    transfer_troops = yes
+                }
+                annex_country = {
+                    target = BYR
+                    transfer_troops = yes
+                }
+                set_cosmetic_tag = Turkish_Russia_cosmetic
+                set_politics = {
+                    ruling_party = ultranationalist
+                    elections_allowed = no
+                    last_election = "1935.12.17"
+                    election_frequency = 48
+                }
+                create_country_leader = {
+                    name = "Mirsaid Sultangaliev"
+                    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+                    picture   = "gfx/leaders/TAT/TAT_Galiyev.tga"
+                    expire = "1965.1.1"
+                    ideology = ultranationalist_subideology
+                    traits = {
+
+                    }
+                }
             }
-            create_country_leader = {
-	        name = "Mirsaid Sultangaliev"
-	        desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        picture   = "gfx/leaders/TAT/TAT_Galiyev.tga"
-	        expire = "1965.1.1"
-	        ideology = ultranationalist_subideology
-	        traits = {
-	        }
-            }
         }
-		hidden_effect = {
-        }
-        }
-     ai_will_do = {
+        ai_will_do = {
 			factor = 1000
 		}
-}
-
+    }
 WRF_China = {
-	    fire_only_once = yes
-		cost = 0
-        allowed = {
+    fire_only_once = yes
+    cost = 0
+    allowed = {
         tag = WRF
         OR = {
-        has_country_flag = debug_TR
-        has_completed_focus = WRF_Kommisariat_System
+            has_country_flag = debug_TR
+            has_completed_focus = WRF_Kommisariat_System
         }
-        }
+    }
         available  = {
-        OR = {
-        NOT = {
-        country_exists = CHI
-        country_exists = YUN
-        country_exists = XSM
-        country_exists = SIK
-        country_exists = MON
-        country_exists = TUV
-        }
-        }
-        OR = {
-        any_allied_country  = {
-        owns_state = 608
-        owns_state = 219    
-        }
-        WRF = {
-        owns_state = 608
-        owns_state = 592
-        }
-        }
+            OR = {
+                NOT = {
+                    country_exists = CHI
+                    country_exists = YUN
+                    country_exists = XSM
+                    country_exists = SIK
+                    country_exists = MON
+                    country_exists = TUV
+                }
+            }
+            OR = {
+                any_allied_country  = {
+                    owns_state = 608
+                    owns_state = 219    
+                }
+                WRF = {
+                    owns_state = 608
+                    owns_state = 592
+                }
+            }
         }
         visible = {
-        original_tag = WRF
-        OR = {
-        has_country_flag = debug_TR
-        has_completed_focus = WRF_Kommisariat_System
-        }
+            original_tag = WRF
+            OR = {
+                has_country_flag = debug_TR
+                has_completed_focus = WRF_Kommisariat_System
+            }
         }    
         complete_effect = {
-        release_puppet = CHI
-        release = TUV
-        release = SIK
-        release = YUN
-        release = GUO
-        release = MON
-        release = XSM
-        CHI = {
-        set_cosmetic_tag = Turkish_China_cosmetic
-        set_politics = {
-	        ruling_party = ultranationalist
-            elections_allowed = no
-            last_election = "1935.12.17"
-            election_frequency = 48
+            release_puppet = CHI
+            release = TUV
+            release = SIK
+            release = YUN
+            release = GUO
+            release = MON
+            release = XSM
+            CHI = {
+                set_cosmetic_tag = Turkish_China_cosmetic
+                set_politics = {
+                    ruling_party = ultranationalist
+                    elections_allowed = no
+                    last_election = "1935.12.17"
+                    election_frequency = 48
+                }
+                create_country_leader = {
+                    name = "Enver Paşa"
+                    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+                    picture   = "gfx/leaders/CHI/CIB_Enver_Blessed.tga"
+                    expire = "1965.1.1"
+                    ideology = ultranationalist_subideology
+                    traits = {
+
+                    }
+                }
+                annex_country = {
+                    target = TUV
+                    transfer_troops = no
+                }
+                annex_country = {
+                    target = SIK
+                    transfer_troops = no
+                }
+                annex_country = {
+                    target = GUO
+                    transfer_troops = no
+                }       
+                annex_country = {
+                    target = YUN
+                    transfer_troops = no
+                }
+                annex_country = {
+                    target = MON
+                    transfer_troops = no
+                }
+                annex_country = {
+                    target = TUV
+                    transfer_troops = no
+                }
+                annex_country = {
+                    target = XSM
+                    transfer_troops = no
+                }
+                annex_country = {
+                    target = BYR
+                    transfer_troops = no
+                }
             }
-            create_country_leader = {
-	        name = "Enver Paşa"
-	        desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        picture   = "gfx/leaders/CHI/CIB_Enver_Blessed.tga"
-	        expire = "1965.1.1"
-	        ideology = ultranationalist_subideology
-	        traits = {
-	        }
-            }
-        annex_country = {
-        target = TUV
-        transfer_troops = no
         }
-        annex_country = {
-        target = SIK
-        transfer_troops = no
-        }
-        annex_country = {
-        target = GUO
-        transfer_troops = no
-        }       
-        annex_country = {
-        target = YUN
-        transfer_troops = no
-        }
-        annex_country = {
-        target = MON
-        transfer_troops = no
-        }
-        annex_country = {
-        target = TUV
-        transfer_troops = no
-        }
-        annex_country = {
-        target = XSM
-        transfer_troops = no
-        }
-        annex_country = {
-        target = BYR
-        transfer_troops = no
-        }
-        }
-        }
-     ai_will_do = {
+        ai_will_do = {
 			factor = 1000
-		}
-
-
+        }
+    }
 }
-}
-
 enver_foreign_category = {
-
 Enver_StopStalin = {
 	    fire_only_once = yes
 		cost = 0

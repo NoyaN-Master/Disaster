@@ -1,391 +1,268 @@
 add_namespace = disasternews
-
 news_event = { #EnverVsArmenia
 	id = disasternews.1
 	title = disasternews.1.t
 	desc = disasternews.1.d
 	picture = GFX_news_event_caucasuswar
-	
 	major = yes
-	
 	is_triggered_only = yes
-
     option = {
 		name = disasternews.1.a
-		
-    }
-
+	}
 }
-
 news_event = { #AzerbaijanAnnex
 	id = disasternews.2
 	title = disasternews.2.t
 	desc = disasternews.2.d
 	picture = GFX_news_event_bakuannex
-	
 	major = yes
-	
 	is_triggered_only = yes
-
     option = {
 		name = disasternews.2.a
 		
     }
-
 }
-
 news_event = { #ANT-FullerCoup
 	id = disasternews.3
 	title = disasternews.3.t
 	desc = disasternews.3.d
 	picture = GFX_news_event_fullercoup
-	
 	major = yes
-	
 	is_triggered_only = yes
-
     option = {
 		name = disasternews.3.a
 		
     }
-
 }
-
 news_event = { #ANT-Collapse
 	id = disasternews.4
 	title = disasternews.4.t
 	desc = disasternews.4.d
 	picture = GFX_news_event_collapse
-	
 	major = yes
-	
 	is_triggered_only = yes
-
     option = {
 		name = disasternews.4.a
 		
     }
-
 }
-
 news_event = { #WRFWar
 	id = disasternews.5
 	title = disasternews.5.t
 	desc = disasternews.5.d
 	picture = GFX_news_event_smyrna
-	
 	major = yes
-	
 	is_triggered_only = yes
-
     option = {
 		name = disasternews.5.a
-		
     }
-
 }
-
 news_event = { #AtsizCoup
 	id = disasternews.6
 	title = disasternews.6.t
 	desc = disasternews.6.d
 	picture = GFX_news_event_turanist_ambition
-	
 	major = yes
-	
 	is_triggered_only = yes
-
     option = {
 		name = disasternews.6.a
-		
     }
-
 }
-
 news_event = { #TachankaPact
 	id = disasternews.7
 	title = disasternews.7.t
 	desc = disasternews.7.d
 	picture = GFX_news_event_turanist_ambition
-	
 	major = yes
-	
 	is_triggered_only = yes
-
     option = {
 		name = disasternews.7.a
-		
     }
-
 }
-
 news_event = { #WarriorsOfJudea
 	id = disasternews.8
 	title = disasternews.8.t
 	desc = disasternews.8.d
 	picture = GFX_news_event_turanist_ambition
-	
 	major = yes
-	
 	is_triggered_only = yes
-
     option = {
 		name = disasternews.8.a
-		
     }
-
 }
-
 news_event = { #IstanbulAnnexed-Normal
 	id = disasternews.9
 	title = disasternews.9.t
 	desc = disasternews.9.d
 	picture = GFX_news_event_istanbul
-	
 	major = yes
-	
 	is_triggered_only = yes
-
     option = {
 		name = disasternews.9.a
-		
     }
-
 }
-
 news_event = { #IstanbulAnnexed-Atsiz
 	id = disasternews.10
 	title = disasternews.10.t
 	desc = disasternews.10.d
 	picture = GFX_news_event_turanist_ambition
-	
 	major = yes
-	
 	is_triggered_only = yes
-
     option = {
 		name = disasternews.10.a
-		
     }
-
 }
-
 news_event = { #Unification-Kemalist
 	id = disasternews.11
 	title = disasternews.11.t
 	desc = disasternews.11.d
 	picture = GFX_news_event_smyrna
-	
 	major = yes
-	
 	is_triggered_only = yes
-
     option = {
 		name = disasternews.11.a
-		
     }
-
 }
-
 news_event = { #Unification-Enver
 	id = disasternews.12
 	title = disasternews.12.t
 	desc = disasternews.12.d
 	picture = GFX_news_event_038
-	
 	major = yes
-	
 	is_triggered_only = yes
-
     option = {
 		name = disasternews.12.a
-		
     }
-
 }
-
 news_event = { #Unification-Atsiz
 	id = disasternews.13
 	title = disasternews.13.t
 	desc = disasternews.13.d
 	picture = GFX_news_event_turanist_ambition
-	
 	major = yes
-	
 	is_triggered_only = yes
-
     option = {
 		name = disasternews.13.a
-		
     }
-
 }
-
 news_event = { #The Levantine War
 	id = disasternews.16
 	title = disasternews.16.t
 	desc = disasternews.16.d
 	picture = GFX_news_event_battle_for_the_bosporus
-	
 	major = yes
-	
 	is_triggered_only = yes
-
     option = {
 		name = disasternews.16.a
-		
     }
-
 }
-
 news_event = { #PLA V
 	id = disasternews.17
 	title = disasternews.17.t
 	desc = disasternews.17.d
 	picture = GFX_news_event_battle_for_the_bosporus
-	
 	major = yes
-	
 	is_triggered_only = yes
-
     option = {
 		name = disasternews.17.a
-		
     }
-
 }
-
 news_event = { #LEHI V
 	id = disasternews.18
 	title = disasternews.18.t
 	desc = disasternews.18.d
 	picture = GFX_news_event_battle_for_the_bosporus
-	
 	major = yes
-	
 	is_triggered_only = yes
-
     option = {
 		name = disasternews.18.a
-		
     }
-
 }
-
 news_event = { #STALIN WAR I
 	id = disasternews.19
 	title = disasternews.19.t
 	desc = disasternews.19.d
 	picture = GFX_news_event_soldiers_marching
-	
 	major = yes
-	
 	is_triggered_only = yes
-
     option = {
 		name = disasternews.19.a
-		
     }
-
 }
-
 news_event = { #SYRIANWAR I
 	id = disasternews.20
 	title = disasternews.20.t
 	desc = disasternews.20.d
 	picture = GFX_news_event_battle_for_the_bosporus
-	
 	major = yes
-	
 	is_triggered_only = yes
-
     option = {
 		name = disasternews.20.a
-		
     }
-
 }
-
 news_event = { #ANARCHYWAR
 	id = disasternews.21
 	title = disasternews.21.t
 	desc = disasternews.21.d
 	picture = GFX_news_event_polish_resistance_warsaw
-	
 	major = yes
-	
 	is_triggered_only = yes
-
     option = {
 		name = disasternews.21.a
-		
     }
-
 }
 news_event = { #RUSWAR
 	id = disasternews.22
 	title = disasternews.22.t
 	desc = disasternews.22.d
 	picture = GFX_news_event_006
-	
 	major = yes
-	
 	is_triggered_only = yes
-
     option = {
 		name = disasternews.22.a
-		
     }
-
 }
-
 news_event = { #Italian Bomb
 	id = disasternews.23
 	title = disasternews.23.t
 	desc = disasternews.23.d
 	picture = GFX_news_event_001
-	
 	major = yes
-	
 	is_triggered_only = yes
-
     option = {
 		name = disasternews.23.a
-		
     }
-
 }
-
 news_event = { #KKK
 	id = disasternews.24
 	title = disasternews.24.t
 	desc = disasternews.24.d
 	picture = GFX_news_event_001
-	
 	major = yes
-	
 	is_triggered_only = yes
-
     option = {
 		name = disasternews.24.a
-		
     }
-
 }
-
 news_event = { #Mao Union
 	id = disasternews.31
 	title = disasternews.31.t
 	desc = disasternews.31.d
 	picture = GFX_news_event_prc_declared
-	
 	major = yes
-	
 	is_triggered_only = yes
-
     option = {
 		name = disasternews.31.a
-		
     }
-
+}
+news_event = { #Invasion of Sardinia
+	id = disasternews.32
+	title = disasternews.32.t
+	desc = disasternews.32.d
+	picture = GFX_news_event_001
+	major = yes
+	is_triggered_only = yes
+    option = {
+		name = disasternews.32.a
+    }
 }
