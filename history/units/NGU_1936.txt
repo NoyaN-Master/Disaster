@@ -249,6 +249,18 @@ units = {
 
 	}
 }
+air_wings = {
+	56 = {
+		fighter_equipment_1 = {
+			owner = "NGU" 
+			amount = 100
+		}
+		tac_bomber_equipment_1 =  {
+			owner = "NGU" 
+			amount = 30
+		}
+	}
+}
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

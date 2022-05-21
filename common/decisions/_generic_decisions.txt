@@ -1,4 +1,43 @@
 Generic_Decisions_category = {
+	war_propaganda = {
+		icon = generic_prepare_civil_war
+		available = {
+			NOT = { has_country_flag = war_propaganda_campaign_running }
+			has_war_support < 0.5
+			has_offensive_war = no
+		}
+
+		visible = {
+			
+		}
+
+		fire_only_once = no
+
+		days_remove = 90
+		days_re_enable = 180
+
+		cost = 150
+
+		modifier = {
+			war_support_weekly = 0.01
+		}
+
+		complete_effect = {
+			set_country_flag = war_propaganda_campaign_running
+		}
+		remove_effect = {
+			clr_country_flag = war_propaganda_campaign_running
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_war_support < 0.4
+				has_war = yes
+			}
+		}
+	}
+
 	improved_worker_conditions = {
 
 		icon = generic_industry

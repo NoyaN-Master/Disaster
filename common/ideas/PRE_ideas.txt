@@ -1220,10 +1220,6 @@ PRE_FrenchGibs = {
 				factor = 2
 			}
 		}
-		
-		
-
-		
 		opel = {
 			
 			allowed = {
@@ -1237,4 +1233,20 @@ PRE_FrenchGibs = {
 			traits = { motorized_equipment_manufacturer }
 		}
 	}
+	theorist = {
+		heinz_guderian	= {
+			ledger = army
+			allowed = {
+				original_tag = PRE
+			}	
+			cost = 150
+			modifier = {
+				land_doctrine_cost_factor  = -0.10
+			}
+			traits = { military_theorist }
+			ai_will_do = {
+				factor = 100
+			}
+		}	
+	}		
 }

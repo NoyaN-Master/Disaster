@@ -677,6 +677,17 @@ focus_tree = {
 		relative_position_id = PRE_stir_up_mecklenburg
 		cost = 5		
 		prerequisite = { focus = PRE_von_goltz_plan }	
+		available = {
+		189 = { is_owned_by = PRE }
+		11 = { is_owned_by = PRE }
+		190 = { is_owned_by = PRE }
+		12 = { is_owned_by = PRE }
+		13 = { is_core_of = PRE }
+		191 = { is_core_of = PRE }
+		NOT = {	country_exists = LIT }
+		NOT = {	country_exists = LAT }
+		NOT = {	country_exists = EST }
+		}		
 		completion_reward = {
 		hidden_effect = {
 		country_event = { id = preo.9 }	
@@ -1189,10 +1200,10 @@ focus_tree = {
 		army_experience = 50
 		navy_experience = 50
 		air_experience = 50
-		add_tech_bonus = {
-			name = PRE_doctrine
-			bonus = 0.75
-			uses = 2
+			add_doctrine_cost_reduction = {
+			name = PRE_army_doctrine
+			cost_reduction = 0.5
+			uses = 1
 			category = land_doctrine
 		}
 		}
@@ -1490,12 +1501,12 @@ focus_tree = {
 			bonus = 1
 			uses = 2
 		}		
-		add_tech_bonus = {
-			name = PRE_blueshirts_doctrine
-			bonus = 1
-			uses = 2
+			add_doctrine_cost_reduction = {
+			name = PRE_army_doctrine
+			cost_reduction = 0.5
+			uses = 1
 			category = land_doctrine
-		}		
+		}	
 		}
 	}
 	focus = {
@@ -2589,10 +2600,10 @@ focus_tree = {
 		prerequisite = { focus = PRE_liberal_nationalism}
 		
 		completion_reward = {
-		add_tech_bonus = {
-			name = PRE_blueshirts_doctrine
-			bonus = 0.33
-			uses = 4
+			add_doctrine_cost_reduction = {
+			name = PRE_army_doctrine
+			cost_reduction = 0.5
+			uses = 2
 			category = land_doctrine
 		}		
 		}
@@ -3243,18 +3254,7 @@ focus_tree = {
 		
 		completion_reward = {
 		country_event = { id = pre.40 }
-				add_tech_bonus = {
-					name = PRE_support_equipment
-					bonus = 0.50
-					uses = 1
-					category = support_tech
-				}	
-			add_tech_bonus = {
-				name = PRE_armor_tech
-				bonus = 1
-				uses = 1
-				category = armor
-			}	
+		add_ideas = heinz_guderian
 		}
 	}
 	focus = {
@@ -3271,7 +3271,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = PRE_armor_tech
 				bonus = 0.5
-				uses = 2
+				uses = 1
 				category = armor
 			}		
 		}
@@ -3367,9 +3367,9 @@ focus_tree = {
 				uses = 1
 				category = armor
 			}
-				add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 			name = PRE_army_doctrine
-			bonus = 1
+			cost_reduction = 0.5
 			uses = 1
 			category = land_doctrine
 		}	
@@ -3407,11 +3407,11 @@ focus_tree = {
 		
 		completion_reward = {
 		navy_experience = 25
-		add_tech_bonus = {
-			name = PRE_navy_doctrine_bonus
-			category = naval_doctrine
-			bonus = 0.5
+			add_doctrine_cost_reduction = {
+			name = PRE_army_doctrine
+			cost_reduction = 0.5
 			uses = 2
+			category = naval_doctrine
 		}
 		}
 	}
@@ -3476,12 +3476,12 @@ focus_tree = {
 		
 		completion_reward = {
 		air_experience = 25
-		add_tech_bonus = {
-			name = PRE_air_doctrine_bonus
-			category = air_doctrine
-			bonus = 0.5
+			add_doctrine_cost_reduction = {
+			name = PRE_army_doctrine
+			cost_reduction = 0.5
 			uses = 2
-		}		
+			category = air_doctrine
+		}	
 		}
 	}
 	focus = {
@@ -3533,12 +3533,12 @@ focus_tree = {
 		prerequisite = { focus = PRE_fighter_air }
 		prerequisite = { focus = PRE_bombers }		
 		completion_reward = {
-		add_tech_bonus = {
-			name = PRE_air_doctrine_bonus
-			category = air_doctrine
-			bonus = 0.33
+			add_doctrine_cost_reduction = {
+			name = PRE_army_doctrine
+			cost_reduction = 0.5
 			uses = 2
-		}			
+			category = air_doctrine
+		}		
 		}
 	}
 

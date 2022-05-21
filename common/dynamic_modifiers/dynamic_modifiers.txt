@@ -29,8 +29,8 @@ austrian_defiance = {
 polish_resistance = {
 	icon = GFX_modifiers_polish_terrorism
 	resistance_target = 0.3
-	resistance_growth = 0.25
-	resistance_damage_to_garrison = 0.2
+	resistance_growth = 0.5
+	resistance_damage_to_garrison = 0.5
 	resistance_garrison_penetration_chance = 0.2
 	compliance_growth = -0.30
 }
