@@ -529,20 +529,20 @@ units = {
 ##### Wojska Lotnicze i Obrony Powietrzne #####
 air_wings = {
 	10 = { 
-		fighter_equipment_0 =  {
+		fighter_equipment_1 =  {
 			owner = "PLN" 
-			amount = 108
+			amount = 300
 		}
 		
 	}
 	86 = { 
-		fighter_equipment_0 =  {
+		fighter_equipment_1 =  {
 			owner = "PLN" 
-			amount = 54
+			amount = 200
 		}
 		CAS_equipment_1 =  {
 			owner = "PLN" 
-			amount = 22
+			amount = 200
 		}
 	}
 }

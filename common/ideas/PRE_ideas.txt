@@ -200,10 +200,10 @@ PRE_absorb_dnvp_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_absorb_dnvp_idea" }
 			picture = absorp
 			modifier = {
-			revolutionary_nationalist_drift = 0.6
-			authoritarian_democrat_drift = -0.75
-			autocratic_drift = -0.75
-			ultranationalist_drift = -0.75
+			revolutionary_nationalist_drift = 0.2
+			authoritarian_democrat_drift = -0.35
+			autocratic_drift = -0.35
+			ultranationalist_drift = -0.35
 			}
 		}		
 PRE_puppet_monarch = {
@@ -1230,21 +1230,5 @@ PRE_FrenchGibs = {
 			
 			traits = { motorized_equipment_manufacturer }
 		}
-	}
-	theorist = {
-		heinz_guderian	= {
-			ledger = army
-			allowed = {
-				original_tag = PRE
-			}	
-			cost = 150
-			modifier = {
-				land_doctrine_cost_factor  = -0.10
-			}
-			traits = { military_theorist }
-			ai_will_do = {
-				factor = 100
-			}
-		}	
 	}		
 }

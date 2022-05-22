@@ -268,6 +268,10 @@ focus_tree = {
         type = annex_everything
         }
     }
+	hidden_effect = {
+	AUT = {create_faction = "South German Defence Pact" }
+	AUT = { add_to_faction = BAY }
+	}
 	custom_effect_tooltip = PRE_thrust_south_tooltip
 		}
 	}
@@ -448,12 +452,14 @@ focus_tree = {
 		}
 		completion_reward = {
 		if = {
+		limit = { country_exists = PLN }
+		PLN = { give_guarantee = CEZ }
+		}		
+		if = {
 		limit = { country_exists = CEZ }
 		declare_war_on = {
         target = CEZ
-        type = annex_everything
-        }
-    }
+        type = annex_everything}}		
 		}
 	}
 	focus = {
@@ -3240,7 +3246,18 @@ focus_tree = {
 		
 		completion_reward = {
 		country_event = { id = pre.40 }
-		add_ideas = heinz_guderian
+				add_tech_bonus = {
+					name = PRE_support_equipment
+					bonus = 0.50
+					uses = 1
+					category = support_tech
+				}	
+			add_tech_bonus = {
+				name = PRE_armor_tech
+				bonus = 1
+				uses = 1
+				category = armor
+			}
 		}
 	}
 	focus = {

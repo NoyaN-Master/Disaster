@@ -75,6 +75,7 @@ ideas = {
 				max_fuel_factor = -0.25
 				fuel_gain_factor = -0.4
 				stability_weekly = 0.001
+				war_support_weekly = 0.001
 			}
 			default = yes
 			cancel_if_invalid = no
