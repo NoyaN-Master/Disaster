@@ -153,6 +153,7 @@ focus_tree = {
 		cost = 5	
 		ai_will_do = { factor = 1000 }		
 		available = {
+		NOT = {is_puppet = yes}
 		is_neighbor_of = MEK
 		country_exists = MEK
 			OR = {
@@ -196,6 +197,7 @@ focus_tree = {
 		NOT = {country_exists = SAX}
 		}		
 		available = {
+		NOT = {is_puppet = yes}
 		59 = {is_owned_and_controlled_by = PRE }	
 		56 = {is_owned_and_controlled_by = PRE }	
 		57 = {is_owned_and_controlled_by = PRE }	
@@ -225,6 +227,7 @@ focus_tree = {
 		will_lead_to_war_with = BDN		
 		will_lead_to_war_with = AUT		
 		available = {
+		NOT = {is_puppet = yes}
 		has_war = no
 			OR = {
 			is_neighbor_of = BAY
@@ -300,6 +303,10 @@ focus_tree = {
 		relative_position_id = PRE_stir_up_mecklenburg
 		cost = 5		
 		prerequisite = { focus = PRE_little_german_solution }	
+		available = {
+		NOT = {is_puppet = yes}
+		AUT = {is_puppet_of = PRE}
+		}
 		completion_reward = {
 			random_core_state = {
 			limit = {
@@ -394,6 +401,9 @@ focus_tree = {
 		relative_position_id = PRE_stir_up_mecklenburg
 		cost = 5		
 		prerequisite = { focus = PRE_anschluss }	
+		available = {
+		NOT = {is_puppet = yes}
+		}
 		completion_reward = {
 		custom_effect_tooltip = PRE_continue_kulturkampf_tooltip
 		unlock_decision_tooltip = PRE_kulturkampf_decision
@@ -413,6 +423,7 @@ focus_tree = {
 		}
 		will_lead_to_war_with = FIU		
 		available = {
+		NOT = {is_puppet = yes}
 		has_war = no
 		is_neighbor_of = FIU
 		country_exists = FIU
@@ -440,6 +451,7 @@ focus_tree = {
 		cost = 5		
 		prerequisite = { focus = PRE_continue_kulturkampf }	
         available  = {   
+		NOT = {is_puppet = yes}
         is_neighbor_of = CEZ
 		country_exists = CEZ
 		NOT = { CEZ = { is_puppet_of = PRE } }
@@ -471,6 +483,7 @@ focus_tree = {
 		cost = 5		
 		prerequisite = { focus = PRE_sudeten_germans }	
 		available = {
+		NOT = {is_puppet = yes}
 		owns_state = 69
 		owns_state = 74
 		69 = { is_core_of = PRE }
@@ -493,6 +506,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_saxony }
 		will_lead_to_war_with = PLN		
 		available = {
+		NOT = {is_puppet = yes}
 		has_war = no	
 		has_army_manpower = { size > 350000 } 
 		}
@@ -543,6 +557,7 @@ focus_tree = {
 		relative_position_id = PRE_stir_up_mecklenburg
 		cost = 4	
 		available = {
+				NOT = {is_puppet = yes}
 			PLN = { is_puppet_of = PRE}
 		}		
 		prerequisite = { focus = PRE_puppet_poland }
@@ -579,6 +594,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_generalplan_ost }	
 
 		available = {
+		NOT = {is_puppet = yes}
 		has_equipment = {
 			infantry_equipment > 4999
 		}
@@ -604,6 +620,9 @@ focus_tree = {
 		relative_position_id = PRE_stir_up_mecklenburg
 		cost = 5			
 		prerequisite = { focus = PRE_reinforce_generaal_gouvernment }	
+		available = {
+		NOT = {is_puppet = yes}
+		}
 		completion_reward = {
 		custom_effect_tooltip = PRE_generalplan_ost_2_tooltip
 		hidden_effect = {
@@ -638,6 +657,7 @@ focus_tree = {
 		will_lead_to_war_with = LAT	
 		will_lead_to_war_with = EST	
 		available = {
+				NOT = {is_puppet = yes}
 		RUS = {has_country_flag = RUS_CW_SPVENT_TRIGGER}
 		has_war = no
 			OR = {
@@ -684,6 +704,7 @@ focus_tree = {
 		cost = 5		
 		prerequisite = { focus = PRE_von_goltz_plan }	
 		available = {
+				NOT = {is_puppet = yes}
 		189 = { is_owned_by = PRE }
 		11 = { is_owned_by = PRE }
 		190 = { is_owned_by = PRE }
@@ -766,6 +787,9 @@ focus_tree = {
 		y = 6
 		relative_position_id = PRE_stir_up_mecklenburg
 		cost = 4		
+		available = {
+		NOT = {is_puppet = yes}
+		}
 		prerequisite = { focus = PRE_reapproach_the_poles }
 		prerequisite = { focus = PRE_austro_german_custom_union }
         completion_reward = {
@@ -782,6 +806,7 @@ focus_tree = {
 		relative_position_id = PRE_stir_up_mecklenburg
 		cost = 4		
 		available = {
+		NOT = {is_puppet = yes}
 		country_exists = DAN
 		}
 		prerequisite = { focus = PRE_economic_union }
@@ -799,6 +824,7 @@ focus_tree = {
 		relative_position_id = PRE_stir_up_mecklenburg
 		cost = 4	
 		available = {
+		NOT = {is_puppet = yes}
 		OR = {
 		country_exists = SWV
 		country_exists = NRG
@@ -820,6 +846,7 @@ focus_tree = {
 		relative_position_id = PRE_stir_up_mecklenburg
 		cost = 4		
 		available = {
+		NOT = {is_puppet = yes}
 		country_exists = CEZ
 		}
 		prerequisite = { focus = PRE_economic_union }
@@ -837,6 +864,7 @@ focus_tree = {
 		relative_position_id = PRE_stir_up_mecklenburg
 		cost = 4		
 		available = {
+		NOT = {is_puppet = yes}
 		country_exists = BTV
 		}
 		prerequisite = { focus = PRE_economic_union }
@@ -856,6 +884,7 @@ focus_tree = {
 		relative_position_id = PRE_stir_up_mecklenburg
 		cost = 4	
 		available = {
+		NOT = {is_puppet = yes}
 		OR = {
 		country_exists = LIT
 		country_exists = LAT
@@ -882,6 +911,7 @@ focus_tree = {
 		relative_position_id = PRE_stir_up_mecklenburg
 		cost = 5	
         available  = {
+		NOT = {is_puppet = yes}
 		has_war = no
         is_neighbor_of = RHN
 		country_exists = RHN

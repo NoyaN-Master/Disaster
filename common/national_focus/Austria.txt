@@ -2940,8 +2940,9 @@ focus_tree = {
 			factor = 50
 		}
 		prerequisite = { focus = AUT_Foreign_Plans}
-		available = {					
-		}	
+		available = {		
+			NOT = {is_puppet = yes}
+		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2969,8 +2970,8 @@ focus_tree = {
 			factor = 50
 		}
 		prerequisite = { focus = AUT_Southern_Thaw}
-		available = {
-								
+		available = {		
+			NOT = {is_puppet = yes}
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2992,6 +2993,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = AUT_Restore_Sphere}
 		available = {
+		NOT = {is_puppet = yes}
 		has_war = no						
 		}	
 		cancel_if_invalid = yes
@@ -3022,6 +3024,7 @@ focus_tree = {
 		prerequisite = { focus = AUT_Bohemians}
 		prerequisite = { focus = AUT_ReTake_Huns}
 		available = {
+		NOT = {is_puppet = yes}
 		has_war = no						
 		}	
 		cancel_if_invalid = yes
@@ -3055,7 +3058,8 @@ focus_tree = {
 		}
 		prerequisite = { focus = AUT_ReTake_Yugo}
 		available = {
-		has_war = no
+		NOT = {is_puppet = yes}
+		has_war = no						
 		}	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3079,6 +3083,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = AUT_Restore_Sphere}
 		available = {
+		NOT = {is_puppet = yes}
 		has_war = no						
 		}	
 		cancel_if_invalid = yes
