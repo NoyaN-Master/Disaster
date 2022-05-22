@@ -1,12 +1,8 @@
 capital = 343
 oob = "WRF_1936"
-
 set_stability = 0.5
 set_war_support = 0.9
-
 set_research_slots = 3
-
-
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -23,7 +19,6 @@ set_technology = {
 	naval_bomber1 = 1
 	early_bomber = 1
 	CAS1 = 1
-	
 	fleet_in_being = 1
 	electronic_mechanical_engineering = 1
 	radio = 1
@@ -51,20 +46,16 @@ if = {
 		basic_light_tank_chassis = 1
 	}
 }
-add_ideas = 	military_government 
-add_ideas = 	planned_economy
-add_ideas = 	industrialized_society
-
-
+add_ideas = military_government 
+add_ideas = planned_economy
+add_ideas = industrialized_society
 set_convoys = 50
-
 set_politics = {
 	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
-
 add_ideas = WRF_Greek_Legacy
 add_ideas = WRF_Kemal_Army
 add_ideas = WRF_Legitimate_Heir
@@ -72,7 +63,6 @@ add_ideas = WRF_Tekalif
 add_ideas = TUR_Struggle_Front
 add_ideas = WRF_mustafa_kemal
 add_ideas = turkey_brother_war_idea
-
 set_popularities = {
 	conservative = 0
 	liberal = 0
@@ -87,75 +77,66 @@ set_popularities = {
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
-
 create_faction = TSF
 add_to_faction = WRF
 add_to_faction = THR
 add_to_faction = ADN
-
 puppet = THR
 puppet = ADN
-		
 create_country_leader = {
 	name = "Celal Bayar/Adnan Menderes"
 	picture = "gfx/leaders/WRF/Portrait_WRF_Coalition.tga"
 	expire = "2020.1.1"
 	ideology = conservative_subideology
 	traits = {
-	turkish_democrats
+		turkish_democrats
 	}
 }
-
 create_country_leader = {
 	name = "Celal Bayar/Adnan Menderes"
 	picture = "gfx/leaders/WRF/Portrait_WRF_Coalition.tga"
 	expire = "2020.1.1"
 	ideology = liberal_subideology
 	traits = {
-	turkish_democrats
+		turkish_democrats
 	}
 }
-
 create_country_leader = {
 	name = "Mustafa Kemal Pasha"
 	picture = "gfx/leaders/WRF/Portrait_WRF_Mustafa_Kemal.tga"
 	expire = "2020.1.1"
 	ideology = turkish_stratocracy
 	traits = {
-	last_hope
+		last_hope
 	}
 }
-
 create_country_leader = {
 	name = "Nihal Adsız"
 	picture = "gfx/leaders/WRF/Portrait_WRF_Atsiz_Nazi.tga"
 	expire = "2020.1.1"
 	ideology = revolutionary_nationalist_subideology
 	traits = {
-	bastion_evil
+		bastion_evil
 	}
 }
-
 create_country_leader = {
 	name = "Türki Konfederasyonu"
 	picture = "gfx/leaders/WRF/Portrait_WRF_Confederacy.tga"
 	expire = "2020.1.1"
 	ideology = turkic_confederacy
 	traits = {
-		#
+
 	}
 }
-
-
 create_country_leader = {
 	name = "Mustafa Kemal Atatürk"
 	picture = "gfx/leaders/WRF/Portrait_WRF_Mustafa_Kemal_Ataturk.tga"
 	expire = "2020.1.1"
 	ideology = authoritarian_democrat
 	traits = {
-		#
+
 	}
-	}
+}
 create_field_marshal = {
 			name = "Mustafa Kemal Paşa"
 			portrait_path = "gfx/leaders/WRF/Portrait_WRF_Mustafa_Kemal.tga"

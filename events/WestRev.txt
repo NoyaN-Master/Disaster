@@ -5,31 +5,21 @@ country_event = { #start
 	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.1" }
 	title = wrf.1.t
 	desc = wrf.1.d
-
 	picture = GFX_report_wrf_peker
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = wrf.1.a
 		}
 	}
-
-
 country_event = { #Antalya1
 	id = wrf.9
 	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
 	title = wrf.9.t
 	desc = wrf.9.d
-
 	picture = GFX_report_wrf_peker
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = wrf.9.a
 		add_political_power = 100
@@ -44,13 +34,9 @@ country_event = { #PekerRomada
 	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
 	title = wrf.11.t
 	desc = wrf.11.d
-
 	picture = GFX_report_wrf_peker
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = wrf.11.a
 		add_political_power = 1
@@ -58,83 +44,74 @@ country_event = { #PekerRomada
 		add_political_power = 200
 		custom_effect_tooltip = WRF_Peker_EndT
 		WRF = {
-		annex_country = {
-		target = TIT
-		transfer_troops = no
-		}
-		342 = {
-		add_core_of = WRF
-		}
-		184 = {
-		add_core_of = THR
-		}
-		731 = {
-		add_core_of = THR
-		}
-		345 = {
-		add_core_of = WRF
-		}
-		set_truce = {
-		target = FIU
-		days = 365		
-		}
+			annex_country = {
+				target = TIT
+				transfer_troops = no
+			}
+			342 = {
+				add_core_of = WRF
+			}
+			184 = {
+				add_core_of = THR
+			}
+			731 = {
+				add_core_of = THR
+			}
+			345 = {
+				add_core_of = WRF
+			}
+			set_truce = {
+				target = FIU
+				days = 365		
+			}
 		}
 		FIU = {
-		transfer_state = 164
+			transfer_state = 164
 		}
 		country_event = { id = wrf.27 days = 3 }
 		hidden_effect = {
 		FIU = {
-		country_event = { id = wrf.14 days = 3 }
-		}
-		}
+			country_event = { id = wrf.14 days = 3 }
 		}
 	}
+}
+}
 country_event = { #PekerEndITA
 	id = wrf.14
 	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
 	title = wrf.14.t
 	desc = wrf.14.d
-
 	picture = GFX_report_wrf_peker
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = wrf.14.a
 		add_political_power = 100
 		add_manpower = 50000
 		army_experience = 50
-		
 		custom_effect_tooltip = WRF_Peker_EndITA
 		185 = {
-		add_claim_by = FIU
+			add_claim_by = FIU
 		}
 		186 = {
-		add_claim_by = FIU
+			add_claim_by = FIU
 		}
 		47 = {
-		add_claim_by = FIU
+			add_claim_by = FIU
 		}
 		182 = {
-		add_claim_by = FIU
+			add_claim_by = FIU
 		}
-		}
-		}		
+	}
+}		
 country_event = { #Manisa Congress Army
 	id = wrf.18
 	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
 	title = wrf.18.t
 	desc = wrf.18.d
-
 	picture = GFX_report_wrf_atsiz
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = wrf.18.a #Kemalist-Ittihat
 		add_political_power = 1
@@ -156,20 +133,13 @@ country_event = { #Manisa Congress Army
 		ai_chance = { factor = 10 }
 		}
 	}
-
-	
 country_event = { 
 	id = wrf.27
 	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
 	title = wrf.27.t
 	desc = wrf.27.d
-
-	#picture = GFX_report_event_aut_dollfuss_speech
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-	
 	option = {
 		name = wrf.27.a 
 		create_field_marshal = {
@@ -183,163 +153,127 @@ country_event = {
 			logistics_skill = 3
 			}
 		annex_country = {
-    	target = ADN
-    	transfer_troops = yes
+			target = ADN
+			transfer_troops = yes
 		}
 		add_state_core = 344
-		}
-		
-		}
+	}
+}
 country_event = { 
 	id = wrf.29
 	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
 	title = wrf.29.t
 	desc = wrf.29.d
-
 	picture = GFX_report_wrf_ataturkpaper
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-	
 	option = {
 		name = wrf.29.a 
 		custom_effect_tooltip = WRF_fucking_pog
 		white_peace = GRE
 		WRF = {
-		add_state_core = 834
-		transfer_state = 834
-		add_political_power = 100
-		add_manpower = 1000
-		annex_country = {
-            target = THR
-            transfer_troops = yes
+			add_state_core = 834
+			transfer_state = 834
+			add_political_power = 100
+			add_manpower = 1000
+			annex_country = {
+				target = THR
+				transfer_troops = yes
 			}
 		}
 		add_state_core = 341
 	}
 }
-
 country_event = { 
 	id = wrf.30
 	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
 	title = wrf.30.t
 	desc = wrf.30.d
-
 	picture = GFX_report_event_aut_dollfuss_speech
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-	
 	option = {
 		name = wrf.30.a
 		hidden_effect = {
 		annex_country = {
-    	target = CRW
-   		transfer_troops = no
+			target = CRW
+			transfer_troops = no
 		}
 		797 = {
-		add_core_of = WRF	
+			add_core_of = WRF	
 		}
 		unlock_national_focus = WRF_deal_ist		
 		}
-		custom_effect_tooltip = istanbul_annex_tt_vahd 
-		}
+	custom_effect_tooltip = istanbul_annex_tt_vahd 
+	}
 }
 
 ####ENEMIES WITHIN STUFF
-
 country_event = { #ASSEMBLY VOTING
 	id = wrf.31
 	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
 	title = wrf.31.t
 	desc = wrf.31.d
-
 	picture = GFX_report_wrf_ataturkpaper
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-	
 	option = {
 		name = wrf.31.a
 		set_capital = { state = 340 }
 	}
 }
-
 country_event = { #ASSEMBLY-ATSİZ
 	id = wrf.32
 	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
 	title = wrf.32.t
 	desc = wrf.32.d
-
 	picture = GFX_report_wrf_atsiz
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-	
 	option = {
 		name = wrf.32.a
 		add_popularity = {
-    	ideology = revolutionary_nationalist
-    	popularity = 0.1
+			ideology = revolutionary_nationalist
+			popularity = 0.1
 		}
 		custom_effect_tooltip = atsiz_increase
 	}
 }
-
 country_event = { #ASSEMBLY-DEMOCRAT
 	id = wrf.33
 	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
 	title = wrf.33.t
 	desc = wrf.33.d
-
 	picture = GFX_report_event_aut_dollfuss_speech
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-	
 	option = {
 		name = wrf.33.a
 		custom_effect_tooltip = democratic_increase
 	}
 }
-
 country_event = { #ASSEMBLY-KEMALIST
 	id = wrf.34
 	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
 	title = wrf.34.t
 	desc = wrf.34.d
-
 	picture = GFX_report_wrf_ataturkpaper
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-	
 	option = {
 		name = wrf.34.a
 		custom_effect_tooltip = center_increase
 	}
 }
-
 ####ATSİZ COUP
-
 country_event = { #TACHANKA 1 riots grow
 	id = wrf.35
 	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
 	title = wrf.35.t
 	desc = wrf.35.d
-
 	picture = GFX_report_wrf_atsizmarch
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-	
 	option = {
 		name = wrf.35.a
 		add_stability = -0.1
@@ -348,185 +282,144 @@ country_event = { #TACHANKA 1 riots grow
 		}
 	}
 }
-
 country_event = { #TACHANKA 2 secret weapons
 	id = wrf.36
 	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
 	title = wrf.36.t
 	desc = wrf.36.d
-
 	picture = GFX_report_wrf_atsizmarch
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-	
 	option = {
 		name = wrf.36.a
-		 add_stability = -0.1
-		 hidden_effect = {
-		country_event = { id = wrf.37 days = 2 }	
+		add_stability = -0.1
+		hidden_effect = {
+			country_event = { id = wrf.37 days = 2 }	
 		}
 	}
 }
-
 country_event = { #TACHANKA 2 university takeover
 	id = wrf.37
 	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
 	title = wrf.37.t
 	desc = wrf.37.d
-
 	picture = GFX_report_wrf_atsizmarch
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-	
 	option = {
 		name = wrf.37.a
-		 add_stability = -0.1
-		 hidden_effect = {
-		country_event = { id = wrf.38 days = 2 }	
+		add_stability = -0.1
+		hidden_effect = {
+			country_event = { id = wrf.38 days = 2 }	
 		}
 	}
 }
-
 country_event = { #TACHANKA 2 enver moves in
 	id = wrf.38
 	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
 	title = wrf.38.t
 	desc = wrf.38.d
-
 	picture = GFX_report_wrf_atsizmarch
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-	
 	option = {
 		name = wrf.38.a
-		 add_stability = 0.1
-		 WRF_atsiz_coup = yes
-		 remove_unit_leader = 1881
-		 hidden_effect = {
-		 news_event = { id = disasternews.6 }	 	 
+		add_stability = 0.1
+		WRF_atsiz_coup = yes
+		remove_unit_leader = 1881
+		hidden_effect = {
+			news_event = { id = disasternews.6 }	 	 
 		}
 	}
 }
-
 country_event = { #TACHANKA 2 enver 
 	id = wrf.39
 	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
 	title = wrf.39.t
 	desc = wrf.39.d
-
 	picture = GFX_report_wrf_atsizmarch
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-	
 	option = { 
 		name = wrf.39.a
-		 add_stability = -0.1
-		 ai_chance = { factor = 50}
-		 WRF = {
-		 WRF_atsiz_annex = yes
-		 country_event = { id = wrf.40 }
-		 }
+		add_stability = -0.1
+		ai_chance = { factor = 50}
+		WRF = {
+			WRF_atsiz_annex = yes
+			country_event = { id = wrf.40 }
+		}
 	}
-	
 	option = { 
 		name = wrf.39.b
 		ai_chance = { factor = 30}
 		add_stability = -0.2
 		declare_war_on = {
-        target = WRF
-        type = annex_everything
-        }   
-
+			target = WRF
+			type = annex_everything
+		}
 	}
 }
-
 country_event = { #nationalists istanbul
 	id = wrf.40
 	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
 	title = wrf.40.t
 	desc = wrf.40.d
-
 	picture = GFX_report_wrf_atsizmarch
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-	
 	option = {
 		name = wrf.40.a
 		annex_country = {
-   	 	target = CRW
-    	transfer_troops = no
+			target = CRW
+			transfer_troops = no
 		}
 		news_event = { id = disasternews.10 }
 	}
 }
-
 country_event = { #nationalists istanbul
 	id = wrf.41
 	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
 	title = wrf.41.t
 	desc = wrf.41.d
-
 	picture = GFX_report_wrf_atsizmarch
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-	
 	option = {
 		name = wrf.41.a
 		WRF_atsiz_annex_2 = yes
 	}
 }
-
 country_event = { #nationalists istanbul
 	id = wrf.42
 	immediate = { log = "[GetDateText]: [Root.GetName]: event wrf.7" }
 	title = wrf.42.t
 	desc = wrf.42.d
-
 	picture = GFX_report_wrf_ataturkpaper
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-	
 	option = {
 		name = wrf.42.a
 		annex_country = {
-   	 	target = ANK
-    	transfer_troops = yes
-	}
-	create_corps_commander = {
-	name = "Kazım Orbay"
-	#picture = "gfx/leaders/WRF/Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
-	traits = { trickster brilliant_strategist }
-	portrait_path = "gfx/leaders/ANK/ANK_Kazim_Orbay.tga"
-	skill = 4
-	attack_skill = 4
-	defense_skill = 2
-	planning_skill = 4
-	logistics_skill = 3
-	}
-	create_wargoal = {
-     type = annex_everything
-     target = IZM
-     }
-	 create_wargoal = {
-     type = annex_everything
-     target = SKL
-     }
+			target = ANK
+			transfer_troops = yes
+		}
+		create_corps_commander = {
+			name = "Kazım Orbay"
+			traits = { trickster brilliant_strategist }
+			portrait_path = "gfx/leaders/ANK/ANK_Kazim_Orbay.tga"
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = IZM
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = SKL
+		}
 	}
 }
-
-
-

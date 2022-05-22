@@ -1,42 +1,32 @@
 ﻿l_english:
- kemalist_warrior:0"Staunch Kemalist"
- figurehead_president_1:0 "Figurehead President"
- model_catholic:0 "Model Catholic"
- model_dictator:0 "Model Dictator"
- father_of_the_republic:0 "Father of the Republic"
- first_soldier_of_the_nation:0 "First Soldier of the Nation"
- technocratic_academic:0 "Technocratic Academic"
- reformist_puppet:0 "Puppet of the Reformists"
- hardliner_puppet:0 "Puppet of the Hardliners"
- unchallenged_leader:0 "Unchallenged Leader"
- AUT_the_nation_personified:0 "The Nation Personified"
- IST_the_minister_son:0 "The Minister's Son"
- IST_the_minister_son_2:0 "Greed and Balance"
- man_of_people:0"Man of the People"
- hog_fat_bastard:0"Fat Bastard"
-
- unisocialist_drift:0 "Unisocialist Drift"
- authoritarian_socialist_drift:0 "Authoritarian Socialist Drift"
- libertarian_socialist_drift:0 "Transformist Socialist Drift"
- social_democrat_drift:0 "Social Democracy Drift"
- liberal_drift:0 "Liberal Drift"
- conservative_drift:0 "Conservative Drift"
- authoritarian_democrat_drift:0 "Authoritarian Democrat Drift"
- autocratic_drift:0 "Autocratic Drift"
- ultranationalist_drift:0 "Classical Nationalist Drift"
- esoteric_traditionalist_drift:0 "Antediluvian Drift"
- revolutionary_anarchist_drift:0 "Revolutionary Anarchist Drift"
- revolutionary_nationalist_drift:0 "Revolutionary Nationalist Drift"
- 
- 
- 
- 
- 
- 
- 
- 
- 
- ### Head of Government ### KAISERREICH TRAITS
+kemalist_warrior:0 "Staunch Kemalist"
+figurehead_president_1:0 "Figurehead President"
+model_catholic:0 "Model Catholic"
+model_dictator:0 "Model Dictator"
+father_of_the_republic:0 "Father of the Republic"
+first_soldier_of_the_nation:0 "First Soldier of the Nation"
+technocratic_academic:0 "Technocratic Academic"
+reformist_puppet:0 "Puppet of the Reformists"
+hardliner_puppet:0 "Puppet of the Hardliners"
+unchallenged_leader:0 "Unchallenged Leader"
+AUT_the_nation_personified:0 "The Nation Personified"
+IST_the_minister_son:0 "The Minister's Son"
+IST_the_minister_son_2:0 "Greed and Balance"
+man_of_people:0"Man of the People"
+hog_fat_bastard:0"Fat Bastard"
+unisocialist_drift:0 "Unisocialist Drift"
+authoritarian_socialist_drift:0 "Authoritarian Socialist Drift"
+libertarian_socialist_drift:0 "Transformist Socialist Drift"
+social_democrat_drift:0 "Social Democracy Drift"
+liberal_drift:0 "Liberal Drift"
+conservative_drift:0 "Conservative Drift"
+authoritarian_democrat_drift:0 "Authoritarian Democrat Drift"
+autocratic_drift:0 "Autocratic Drift"
+ultranationalist_drift:0 "Classical Nationalist Drift"
+esoteric_traditionalist_drift:0 "Antediluvian Drift"
+revolutionary_anarchist_drift:0 "Revolutionary Anarchist Drift"
+revolutionary_nationalist_drift:0 "Revolutionary Nationalist Drift"
+### Head of Government ### KAISERREICH TRAITS
 hog_ambitious_union_boss:0 "Ambitious Union Boss"
 hog_backroom_backstabber:0 "Backroom Backstabber"
 hog_corporate_suit:0 "Corporate Suit"
@@ -54,7 +44,6 @@ hog_respected_war_hero:0 "Respected War Hero"
 hog_silent_workhorse:0 "Silent Workhorse"
 hog_smiling_oilman:0 "Smiling Oilman"
 hog_spiritual_leader:0 "Spiritual Leader"
-
 hog_liberal_interventionist:0 "Liberal Interventionist"
 hog_anti_establishment_maverick:0 "Anti Establishment Maverick"
 hog_the_black_baron:0 "The Black Baron"
@@ -71,9 +60,8 @@ hog_the_grand_old_man:0 "The Grand Old Man"
 hog_hooded_chairman:0 "Hooded Chairman"
 hog_aggressive_modernizer:0 "Aggressive Moderniser"
 hog_architect_of_the_union:0 "Architect of the Union"
- 
- ###### vanilla shit
-  cc_leader:0 "General"
+###### vanilla shit
+cc_leader:0 "General"
  fm_leader:0 "Field Marshal"
  navy_leader:0 "Admiral"
  operative_skill_1:0 "Recruit"

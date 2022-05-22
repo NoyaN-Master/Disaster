@@ -343,89 +343,98 @@ GER_unification_decisions = {
         ai_will_do = {
 			factor = 1000
 		}		  
-	 }
- 	 GER_for_germany_autocratic_greater = {
-		visible = { has_government = autocratic
-		has_country_flag = GER_small_created}
-	 	available = {
-			if = {
-                    check_variable = {
-                        var = german_states
-                        value = 36
-                        compare = greater_than_or_equals
-                    } }
 	}
-		highlight_states = {
-		highlight_state_targets = {
-			state = 64
-		}} 
-          fire_only_once = yes
-          remove_effect = {
-			custom_effect_tooltip = GER_forming_germany_tooltip	
-			set_cosmetic_tag = GER_big
-               set_country_flag = PRE_formed_greater_germany
-          }	 
-        ai_will_do = {
-			factor = 1000
-		}	 
-	 }
- 	 GER_for_germany_ultranationalist_greater= {
-		visible = { has_government = ultranationalist
-		has_country_flag = GER_small_created}
-	 	available = {
-			if = {
-                    check_variable = {
-                        var = german_states
-                        value = 36
-                        compare = greater_than_or_equals
-                    } }
-	}
-		highlight_states = {
-		highlight_state_targets = {
-			state = 64
-		}}
-          fire_only_once = yes
-          remove_effect = {
-			custom_effect_tooltip = GER_forming_germany_tooltip	
-			set_cosmetic_tag = GER_big
-               set_country_flag = PRE_formed_greater_germany
-          }	 
-        ai_will_do = {
-			factor = 1000
-		}	 
-	 }
- 	 GER_for_germany_revolutionary_nationalist_greater= {
-		visible = { has_government = revolutionary_nationalist
-		NOT = { original_tag = NGU }
-		has_country_flag = GER_small_created
+	GER_for_germany_autocratic_greater = {
+		visible = {
+			has_government = autocratic
+			has_country_flag = GER_small_created
 		}
-	 	available = {
+		available = {
+			if = {
+				check_variable = {
+					var = german_states
+					value = 36
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		highlight_states = {
+		highlight_state_targets = {
+			state = 64
+		}
+	} 
+	fire_only_once = yes
+	remove_effect = {
+		custom_effect_tooltip = GER_forming_germany_tooltip	
+		set_cosmetic_tag = GER_big
+		set_country_flag = PRE_formed_greater_germany
+	}	 
+	ai_will_do = {
+			factor = 1000
+		}	 
+	}
+	GER_for_germany_ultranationalist_greater = {
+		visible = {
+			has_government = ultranationalist
+			has_country_flag = GER_small_created
+		}
+		available = {
+			if = {
+				check_variable = {
+					var = german_states
+					value = 36
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		highlight_states = {
+		highlight_state_targets = {
+			state = 64
+		}
+	}
+	fire_only_once = yes
+	remove_effect = {
+		custom_effect_tooltip = GER_forming_germany_tooltip	
+		set_cosmetic_tag = GER_big
+		set_country_flag = PRE_formed_greater_germany
+	}	 
+	ai_will_do = {
+		factor = 1000
+	}
+}
+	GER_for_germany_revolutionary_nationalist_greater= {
+		visible = {
+			has_government = revolutionary_nationalist
+			NOT = { original_tag = NGU }
+			has_country_flag = GER_small_created
+		}
+		available = {
 			if = {
                     check_variable = {
                         var = german_states
                         value = 36
                         compare = greater_than_or_equals
-                    } }
-	}
-		highlight_states = {
-		highlight_state_targets = {
-			state = 64
-		}}
-          fire_only_once = yes
-          remove_effect = {
-			custom_effect_tooltip = GER_forming_germany_tooltip	
-			set_cosmetic_tag = GER_big
-               set_country_flag = PRE_formed_greater_germany
-          }	 
-        ai_will_do = {
-			factor = 1000
-		}	 
-	 }
-
+                    }
+				}
+			}
+			highlight_states = {
+				highlight_state_targets = {
+					state = 64
+				}
+			}
+			fire_only_once = yes
+			remove_effect = {
+				custom_effect_tooltip = GER_forming_germany_tooltip	
+				set_cosmetic_tag = GER_big
+				set_country_flag = PRE_formed_greater_germany
+			}	 
+			ai_will_do = {
+				factor = 1000
+			}	 
+		}
 	GER_Integrate_State = {
 		name = integrate_state
 		icon = eng_trade_unions_demand
-
 		available = {
 			FROM = {
 				is_fully_controlled_by = ROOT
@@ -434,7 +443,6 @@ GER_unification_decisions = {
 				NOT = {has_dynamic_modifier = {modifier = austrian_defiance}}
 			}
 		}
-
 		visible = {
 			FROM = {
 				is_owned_by = ROOT
@@ -449,7 +457,6 @@ GER_unification_decisions = {
 		cost = 0
 		days_remove = 100
 		cancel_if_not_visible = yes
-
 		state_target = yes
 		targets = { 28 8 51 42 825 57 56 59 55 819 50 54 52 53 60 65 826 58 61 64 62 63 68 66 67 5 763 188 809 85 86 762 74 69 152 4 813 153 39 811 881 882 883 }
 		target_trigger = {
@@ -458,11 +465,9 @@ GER_unification_decisions = {
 				NOT = { is_core_of = ROOT }
 			}
 		}
-
 		ai_will_do = {
 			factor = 1000
 		}
-
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove OTT_Integrate_State target: [From.GetName]"
 			hidden_effect = { remove_state_claim = FROM }
