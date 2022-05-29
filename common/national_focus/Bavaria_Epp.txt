@@ -448,4 +448,287 @@ focus_tree = {
 		}
 	}
 
+
+
+
+
+### DIPLO ###
+
+	focus = { #needs unique
+		id = BAY_absorb_smaller_king
+		icon = GFX_goal
+		x = 20
+		y = 1
+		cost = 2
+		completion_reward = { 
+			
+		}
+	}
+
+	focus = { #needs unique
+		id = BAY_german_confederation
+		icon = GFX_goal
+		x = 18
+		y = 2
+		cost = 2
+		completion_reward = { 
+			
+		}
+		mutually_exclusive = {
+			focus = BAY_greater_bavaria
+		}
+		mutually_exclusive = {
+			focus = BAY_neutrality
+		}
+		prerequisite = {
+			focus = BAY_absorb_smaller_king
+		}
+	}
+
+	focus = { #needs unique
+		id = BAY_greater_bavaria
+		icon = GFX_goal
+		x = 20
+		y = 2
+		cost = 2
+		completion_reward = { 
+			
+		}
+		mutually_exclusive = {
+			focus = BAY_german_confederation
+		}
+		mutually_exclusive = {
+			focus = BAY_neutrality
+		}
+		prerequisite = {
+			focus = BAY_absorb_smaller_king
+		}
+	}
+
+	focus = { #needs unique
+		id = BAY_neutrality
+		icon = GFX_goal
+		x = 22
+		y = 2
+		cost = 2
+		completion_reward = { 
+			
+		}
+		mutually_exclusive = {
+			focus = BAY_german_confederation
+		}
+		mutually_exclusive = {
+			focus = BAY_greater_bavaria
+		}
+
+		prerequisite = {
+			focus = BAY_absorb_smaller_king
+		}
+	}
+
+	focus = { #needs unique
+		id = BAY_ties_with_austria
+		icon = GFX_goal
+		relative_position_id = BAY_neutrality
+		x = 1
+		y = 1
+		cost = 2
+		completion_reward = { 
+			
+		}
+		prerequisite = {
+			focus = BAY_neutrality
+		}
+	}
+
+	focus = { #needs unique
+		id = BAY_defense_against_north
+		icon = GFX_goal
+		relative_position_id = BAY_greater_bavaria
+		x = 1
+		y = 1
+		cost = 2
+		completion_reward = { 
+			
+		}
+		prerequisite = {
+			focus = BAY_neutrality
+			focus = BAY_greater_bavaria
+		}
+	}
+
+	focus = { #needs unique
+		id = BAY_attack_little_germany
+		icon = GFX_goal
+		relative_position_id = BAY_greater_bavaria
+		x = -1
+		y = 1
+		cost = 2
+		completion_reward = { 
+			
+		}
+		prerequisite = {
+			focus = BAY_german_confederation
+			focus = BAY_greater_bavaria
+		}
+	}
+
+	focus = { #needs unique
+		id = BAY_ease_catholic_nationalism
+		icon = GFX_goal
+		relative_position_id = BAY_german_confederation
+		x = -1
+		y = 1
+		cost = 2
+		completion_reward = { 
+			
+		}
+		prerequisite = {
+			focus = BAY_german_confederation
+		}
+	}
+
+	focus = { #needs unique
+		id = BAY_intervene_in_north
+		icon = GFX_goal
+		relative_position_id = BAY_german_confederation
+		x = 0
+		y = 2
+		cost = 2
+		completion_reward = { 
+			
+		}
+		bypass = {
+			NOT = {
+				country_exists = PRE
+				country_exists = NGU
+			}
+		}
+		prerequisite = {
+			focus = BAY_ease_catholic_nationalism
+		}
+		prerequisite = {
+			focus = BAY_attack_little_germany
+		}
+	}
+
+	focus = { #needs unique
+		id = BAY_into_the_alps
+		icon = GFX_goal
+		relative_position_id = BAY_greater_bavaria
+		x = 0
+		y = 2
+		cost = 2
+		completion_reward = { 
+			
+		}
+		prerequisite = {
+			focus = BAY_attack_little_germany
+		}
+		prerequisite = {
+			focus = BAY_defense_against_north
+		}
+	}
+
+	focus = { #needs unique
+		id = BAY_danube_pact
+		icon = GFX_goal
+		relative_position_id = BAY_neutrality
+		x = 0
+		y = 2
+		cost = 2
+		completion_reward = { 
+			
+		}
+		bypass = {
+			is_in_faction_with = AUT
+		}
+		prerequisite = {
+			focus = BAY_defense_against_north
+		}
+		prerequisite = {
+			focus = BAY_ties_with_austria
+		}
+	}
+
+	focus = { #needs unique
+		id = BAY_absorb_bohemia
+		icon = GFX_goal
+		relative_position_id = BAY_german_confederation
+		x = -2
+		y = 2
+		cost = 2
+		completion_reward = { 
+			
+		}
+		prerequisite = {
+			focus = BAY_ease_catholic_nationalism
+		}
+	}
+
+	focus = { #needs unique
+		id = BAY_unified_economy
+		icon = GFX_goal
+		relative_position_id = BAY_neutrality
+		x = 2
+		y = 2
+		cost = 2
+		completion_reward = { 
+			
+		}
+		prerequisite = {
+			focus = BAY_ties_with_austria
+		}
+	}
+
+	focus = { #needs unique
+		id = BAY_invasion_of_france
+		icon = GFX_goal
+		relative_position_id = BAY_greater_bavaria
+		x = -1
+		y = 3
+		cost = 2
+		completion_reward = { 
+			
+		}
+		prerequisite = {
+			focus = BAY_intervene_in_north
+			focus = BAY_into_the_alps
+		}
+	}
+
+	focus = { #needs unique
+		id = BAY_polish_question
+		icon = GFX_goal
+		relative_position_id = BAY_german_confederation
+		x = -1
+		y = 3
+		cost = 2
+		completion_reward = { 
+			
+		}
+		prerequisite = {
+			focus = BAY_absorb_bohemia
+		}
+
+		prerequisite = {
+			focus = BAY_intervene_in_north
+		}
+	}
+
+	focus = { #needs unique
+		id = BAY_invasion_of_italy
+		icon = GFX_goal
+		relative_position_id = BAY_greater_bavaria
+		x = 1
+		y = 3
+		cost = 2
+		completion_reward = { 
+			
+		}
+		prerequisite = {
+			focus = BAY_danube_pact
+			focus = BAY_into_the_alps
+		}
+	}
 }
