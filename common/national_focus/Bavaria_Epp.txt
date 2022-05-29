@@ -731,4 +731,82 @@ focus_tree = {
 			focus = BAY_into_the_alps
 		}
 	}
+
+	focus = { #needs unique
+		id = BAY_free_borders
+		icon = GFX_goal
+		relative_position_id = BAY_neutrality
+		x = 1
+		y = 3
+		cost = 2
+		completion_reward = { 
+			
+		}
+		bypass = {
+			is_in_faction_with = AUT
+		}
+		prerequisite = {
+			focus = BAY_danube_pact
+		}
+		prerequisite = {
+			focus = BAY_unified_economy
+		}
+	}
+
+	focus = { #needs unique
+		id = BAY_german_confed_unified
+		icon = GFX_goal
+		relative_position_id = BAY_german_confederation
+		x = 0
+		y = 4
+		cost = 2
+		completion_reward = { 
+			
+		}
+		prerequisite = {
+			focus = BAY_polish_question
+		}
+
+		prerequisite = {
+			focus = BAY_invasion_of_france
+		}
+	}
+
+	focus = { #needs unique
+		id = BAY_south_unified
+		icon = GFX_goal
+		relative_position_id = BAY_greater_bavaria
+		x = 0
+		y = 4
+		cost = 2
+		completion_reward = { 
+			
+		}
+		prerequisite = {
+			focus = BAY_invasion_of_france
+		}
+		prerequisite = {
+			focus = BAY_invasion_of_italy
+		}
+	}
+
+	focus = { #needs unique
+		id = BAY_unified_proposal
+		icon = GFX_goal
+		relative_position_id = BAY_neutrality
+		x = 0
+		y = 4
+		cost = 2
+		completion_reward = { 
+			
+		}
+		prerequisite = {
+			focus = BAY_free_borders
+		}
+		prerequisite = {
+			focus = BAY_invasion_of_italy
+		}
+	}
+
+	
 }
