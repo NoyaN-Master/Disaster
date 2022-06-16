@@ -15,9 +15,7 @@ division_template = {
 		recon = { x = 0 y = 0 }		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co
 	}
 }
-
 units = {
-
 	division = {
 		division_name = {
 			is_name_ordered = yes
@@ -28,7 +26,6 @@ units = {
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.84
 	}
-
 	division = {
 		division_name = {
 			is_name_ordered = yes
@@ -49,7 +46,6 @@ units = {
 		start_experience_factor =0.5
 		start_equipment_factor = 0.84
 	}
-
 	division = {
 		division_name = {
 			is_name_ordered = yes
@@ -60,7 +56,6 @@ units = {
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.84
 	}
-
 	division = {
 		division_name = {
 			is_name_ordered = yes
@@ -71,7 +66,6 @@ units = {
 		start_experience_factor =0.5
 		start_equipment_factor = 0.84
 	}
-
 	division = {
 		division_name = {
 			is_name_ordered = yes

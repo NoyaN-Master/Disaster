@@ -7,8 +7,6 @@ focus_tree = {
 		}
 	}
 	continuous_focus_position = { x = 800 y = 10000 }
-
-
     focus = {
 		id = CRW_A_Marine
 		icon = GFX_goal_JFK_start
@@ -20,12 +18,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-        country_event = { id = jfk.1 }
-		hidden_effect = {
-		}
+			country_event = { id = jfk.1 }
 		}
 	}
-
     focus = {
 		id = CRW_Our_Plan
 		icon = GFX_goal_WRF_Reformists
@@ -37,16 +32,13 @@ focus_tree = {
 			factor = 1
 		}
         prerequisite = {
-           focus = CRW_A_Marine 
+			focus = CRW_A_Marine 
         }
 		completion_reward = {
-        add_stability = 0.05
-		add_political_power = 200
-		hidden_effect = {
-		}
+			add_stability = 0.05
+			add_political_power = 200
 		}
 	}
-
     focus = {
 		id = CRW_Deal_Greece
 		icon = GFX_goal_ARM_Reward_our_Hellenic_Friends
@@ -58,15 +50,12 @@ focus_tree = {
 			factor = 1
 		}
         prerequisite = {
-           focus = CRW_Our_Plan 
+			focus = CRW_Our_Plan 
         }
 		completion_reward = {
-        country_event = { id = jfk.2 }
-		hidden_effect = {
-		}
+			country_event = { id = jfk.2 }
 		}
 	}
-
     focus = {
 		id = CRW_Reach_Ismet
 		icon = GFX_goal_national_chief
@@ -78,29 +67,26 @@ focus_tree = {
 			factor = 1
 		}
         prerequisite = {
-           focus = CRW_Deal_Greece 
+			focus = CRW_Deal_Greece 
         }
 		completion_reward = {
-        create_field_marshal = {
-		name = "Ismet İnonu"
-		portrait_path = "gfx/leaders/WRF/Portrait_WRF_Ismet.png"
-		traits = {
-		brilliant_strategist
-		politically_connected
-		inspirational_leader
-		}
-		skill = 5
-		attack_skill = 5
-		defense_skill = 5
-		planning_skill = 5
-		logistics_skill = 5
-		}
-		add_manpower = 100000
-		hidden_effect = {
-		}
+			create_field_marshal = {
+				name = "Ismet İnonu"
+				portrait_path = "gfx/leaders/WRF/Portrait_WRF_Ismet.png"
+				traits = {
+					brilliant_strategist
+					politically_connected
+					inspirational_leader
+				}
+				skill = 5
+				attack_skill = 5
+				defense_skill = 5
+				planning_skill = 5
+				logistics_skill = 5
+			}
+			add_manpower = 100000
 		}
 	}
-
     focus = {
 		id = CRW_Federal_Forces
 		icon = GFX_goal_WRF_Infiltrate_Army
@@ -112,31 +98,31 @@ focus_tree = {
 			factor = 1
 		}
         prerequisite = {
-           focus = CRW_Thracian_Arms 
+			focus = CRW_Thracian_Arms 
         }
         prerequisite = {
-           focus = CRW_Reach_Ismet 
+			focus = CRW_Reach_Ismet 
         }
 		completion_reward = {
-		797 = {
-		create_unit = {
-    	division = "name = \"Federal Forces\" division_template = \"The Istanbul Marines\" start_experience_factor = 1 start_equipment_factor = 1"
-    	owner = CRW
-		}
-		create_unit = {
-    	division = "name = \"Federal Forces\" division_template = \"The Istanbul Marines\" start_experience_factor = 1 start_equipment_factor = 1"
-    	owner = CRW
-		}
-		create_unit = {
-    	division = "name = \"Federal Forces\" division_template = \"The Istanbul Marines\" start_experience_factor = 1 start_equipment_factor = 1"
-    	owner = CRW
-		}
-        create_unit = {
-    	division = "name = \"Federal Forces\" division_template = \"The Istanbul Marines\" start_experience_factor = 1 start_equipment_factor = 1"
-    	owner = CRW
-		}
-		}
-		add_ideas = Federal_Forces_idea
+			797 = {
+				create_unit = {
+					division = "name = \"Federal Forces\" division_template = \"The Istanbul Marines\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = CRW
+				}
+				create_unit = {
+					division = "name = \"Federal Forces\" division_template = \"The Istanbul Marines\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = CRW
+				}
+				create_unit = {
+					division = "name = \"Federal Forces\" division_template = \"The Istanbul Marines\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = CRW
+				}
+				create_unit = {
+					division = "name = \"Federal Forces\" division_template = \"The Istanbul Marines\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = CRW
+				}
+			}
+			add_ideas = Federal_Forces_idea
 		}
 	}
 	focus = { 
@@ -150,23 +136,20 @@ focus_tree = {
 		factor = 1
 	}
 	prerequisite = {
-	   focus = CRW_Federal_Forces
+		focus = CRW_Federal_Forces
 	}
 	completion_reward = {
-	declare_war_on = {
-	target = IZM
-	type = annex_everything
+		declare_war_on = {
+			target = IZM
+			type = annex_everything
+		}
+		IZM = {
+			every_owned_state = {
+				add_core_of = CRW
+			}    
+		}
 	}
-	IZM = {
-	every_owned_state = {
-	add_core_of = CRW
-	}    
-	}
-	hidden_effect = {
-	}
-	}
-	}	
-
+}
     focus = {
 		id = CRW_Invite_Republic
 		icon = GFX_goal_WRF_Ulku_Movement
@@ -178,12 +161,10 @@ focus_tree = {
 			factor = 1
 		}
         prerequisite = {
-           focus = CRW_The_Patriots
+			focus = CRW_The_Patriots
         }
 		completion_reward = {
-        country_event = { id = jfk.3 }
-		hidden_effect = {
-		}
+			country_event = { id = jfk.3 }
 		}
 	}
 	focus = {
@@ -197,15 +178,13 @@ focus_tree = {
 			factor = 1
 		}
         prerequisite = {
-           focus = CRW_Invite_Republic
+			focus = CRW_Invite_Republic
         }
 		completion_reward = {
-        declare_war_on = {
-    	target = TRA
-    	type = annex_everything
-		}
-		hidden_effect = {
-		}
+			declare_war_on = {
+				target = TRA
+				type = annex_everything
+			}
 		}
 	}
 	focus = {
@@ -247,23 +226,20 @@ focus_tree = {
 			factor = 1
 		}
         prerequisite = {
-           focus = CRW_Invite_Republic 
+			focus = CRW_Invite_Republic 
         }
 		completion_reward = {
-        declare_war_on = {
-    	target = ADN
-    	type = annex_everything
-		}
-		ADN = {
-        every_owned_state = {
-        add_core_of = CRW
-        }    
-        }
-		hidden_effect = {
-		}
+			declare_war_on = {
+				target = ADN
+				type = annex_everything
+			}
+			ADN = {
+				every_owned_state = {
+					add_core_of = CRW
+				}    
+			}
 		}
 	}
-
     focus = {
 		id = CRW_Prepare_Great_War
 		icon = GFX_goal_WRF_Dehumanize
@@ -275,29 +251,26 @@ focus_tree = {
 			factor = 1
 		}
         prerequisite = {
-           focus = CRW_The_Patriots 
+			focus = CRW_The_Patriots 
         }
         prerequisite = {
-           focus = CRW_Destroy_Greywolfs 
+			focus = CRW_Destroy_Greywolfs 
         }
 		prerequisite = {
 			focus = CRW_Invade_TKOML
 		}
 		completion_reward = {
-        declare_war_on = {
-    	target = ANK
-    	type = annex_everything
-		}
-		ANK = {
-        every_owned_state = {
-        add_core_of = CRW
-        }    
-        }
-		hidden_effect = {
-		}
+			declare_war_on = {
+				target = ANK
+				type = annex_everything
+			}
+			ANK = {
+				every_owned_state = {
+					add_core_of = CRW
+				}
+			}
 		}
 	}
-
     focus = {
 		id = CRW_Thracian_Arms
 		icon = GFX_goal_WRF_Opening_Up
@@ -309,21 +282,17 @@ focus_tree = {
 			factor = 1
 		}
         prerequisite = {
-           focus = CRW_Deal_Greece 
+			focus = CRW_Deal_Greece 
         }
 		completion_reward = {
-        add_equipment_to_stockpile = {
-				    type = infantry_equipment
-				    amount = 5000
-				    producer = CRW
-				}
-		hidden_effect = {
-		}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+				producer = CRW
+			}
 		}
 	}
-
     #2nd part
-
     focus = {
 		id = CRW_Western_Consolidate
 		icon = GFX_goal_ARM_Status_of_Anatolia
@@ -335,20 +304,17 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-		ANK = {
-		exists = no	
-		}	
-		ADN = {
-		exists = no 	
-		}
+			ANK = {
+				exists = no	
+			}	
+			ADN = {
+				exists = no 	
+			}
 		}
 		completion_reward = {
-        
-		hidden_effect = {
-		}
+
 		}
 	}
-
     focus = {
 		id = CRW_Save_Armenia
 		icon = GFX_goal_ARM_Father_of_the_National_Liberation
@@ -364,14 +330,11 @@ focus_tree = {
         }
 		completion_reward = {
 			declare_war_on = {
-    	target = ARM
-    	type = annex_everything
-		}
-		hidden_effect = {
-		}
+				target = ARM
+				type = annex_everything
+			}
 		}
 	}
-
     focus = {
 		id = CRW_Brotherhood
 		icon = GFX_goal_ARM_Protect_the_Common_Folk
@@ -383,28 +346,25 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-		ARM = {
-			exists = no
-		}	
+			ARM = {
+				exists = no
+			}	
 		}
-        prerequisite = {
-            focus = CRW_Purge_Commies
-        }
+		prerequisite = {
+			focus = CRW_Purge_Commies
+		}
         prerequisite = {
             focus = CRW_Save_Armenia
         }
 		completion_reward = {
-		add_stability = -0.10
-		add_political_power = -300	
-        add_state_core = 353
-		add_state_core = 835
-		add_state_core = 800
-		add_state_core = 230
-		hidden_effect = {
-		}
+			add_stability = -0.10
+			add_political_power = -300	
+			add_state_core = 353
+			add_state_core = 835
+			add_state_core = 800
+			add_state_core = 230
 		}
 	}
-
     focus = {
 		id = CRW_Purge_Commies
 		icon = GFX_goal_WRF_Eradicate_Nationalism
@@ -419,13 +379,11 @@ focus_tree = {
             focus = CRW_Western_Consolidate
         }
 		completion_reward = {
-        add_stability = -0.10
-		add_manpower = -3000
-		add_state_core = 355
-		add_state_core = 356
-		add_state_core = 839
-		hidden_effect = {
-		}
+			add_stability = -0.10
+			add_manpower = -3000
+			add_state_core = 355
+			add_state_core = 356
+			add_state_core = 839
 		}
 	}
 	focus = {
@@ -451,6 +409,9 @@ focus_tree = {
 	focus = {
 		id = CRW_give_kurds_autonomy
 		icon = GFX_goal_CRW_kurd_autonomy
+		prerequisite = {
+			focus = CRW_liberate_kurds
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -461,9 +422,6 @@ focus_tree = {
 			add_political_power = -150
 			add_state_core = 350
 			add_state_core = 352
-		 }
-		prerequisite = {
-			focus = CRW_liberate_kurds
 		}
 	}
     focus = {
@@ -481,11 +439,8 @@ focus_tree = {
         }
 		completion_reward = {
         add_ideas = Federal_Gov_Idea
-		hidden_effect = {
-		}
 		}
 	}
-
     focus = {
 		id = CRW_Reform_Banking
 		icon = GFX_goal_lobbying
@@ -503,35 +458,32 @@ focus_tree = {
             focus = CRW_Federal_System
         }
 		completion_reward = {
-        random_owned_state = {
-		add_building_construction = {
-   		type = industrial_complex
-    	level = 2
-    	instant_build = yes
-		}
-		add_extra_state_shared_building_slots = 2
-		}
-		random_owned_state = {
-		add_building_construction = {
-   		type = industrial_complex
-    	level = 2
-    	instant_build = yes
-		}
-		add_extra_state_shared_building_slots = 2
-		}
-		random_owned_state = {
-		add_building_construction = {
-   		type = infrastructure
-    	level = 2
-    	instant_build = yes
-		}
-		add_extra_state_shared_building_slots = 2	
-		}	  
-		hidden_effect = {
-		}
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
 		}
 	}
-
     focus = {
 		id = CRW_Change_Leadership
 		icon = GFX_goal_compromise_junkers
@@ -553,9 +505,6 @@ focus_tree = {
 		}
 		completion_reward = {
         country_event = { id = jfk.4 }
-		hidden_effect = {
-		}
 		}
 	}
-
 }

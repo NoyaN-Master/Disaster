@@ -6,12 +6,8 @@ state={
 	}
 	manpower = 1042276
 	resources={
-		#chromium=45 # was: 84
-		#steel = 10 # was: 20
 	}
-	
 	state_category = city
-
 	history= {
 		owner = CRW
 		victory_points = {
@@ -27,6 +23,5 @@ state={
 			}
 		}
 		add_core_of = CRW
-
 	}
 }
