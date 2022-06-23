@@ -107,7 +107,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_price_caps
-		icon = GFX_goal
+		icon = GFX_goal_BAY_CAPS
 		relative_position_id = BAY_fixing_the_economy
 		x = -2
 		y = 4
@@ -136,7 +136,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_national_contracts
-		icon = GFX_goal
+		icon = GFX_goal_BAY_CONTRACTS
 		relative_position_id = BAY_fixing_the_economy
 		x = 2
 		y = 3
@@ -149,7 +149,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_minimum_wage 
-		icon = GFX_goal
+		icon = GFX_goal_BAY_MINIMUM
 		relative_position_id = BAY_fixing_the_economy
 		x = 2
 		y = 4
@@ -162,7 +162,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_class_cooperation
-		icon = GFX_goal
+		icon = GFX_goal_BAY_CLASS_COOP
 		relative_position_id = BAY_fixing_the_economy
 		x = 0
 		y = 3
@@ -175,7 +175,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_normalize_interventions
-		icon = GFX_goal
+		icon = GFX_goal_BAY_INTERVENTIONS
 		relative_position_id = BAY_fixing_the_economy
 		x = 0
 		y = 4
@@ -231,7 +231,7 @@ focus_tree = {
 
 	focus = { #needs unique
 		id = BAY_restoration
-		icon = GFX_goal
+		icon = GFX_goal_BAY_RESTORATION
 		x = 10
 		y = 2
 		cost = 2
@@ -282,7 +282,7 @@ focus_tree = {
 
 	focus = {
 		id = BAY_religious_nationalism
-		icon = GFX_goal
+		icon = GFX_goal_BAY_RELIGIOUS
 		relative_position_id = BAY_saving_our_bavaria
 		x = -2
 		y = 3
@@ -322,7 +322,7 @@ focus_tree = {
 
 	focus = { #needs unique
 		id = BAY_military_freikorps
-		icon = GFX_goal
+		icon = GFX_goal_BAY_ARMY_FREE
 		relative_position_id = BAY_saving_our_bavaria
 		x = 3
 		y = 2
@@ -336,7 +336,7 @@ focus_tree = {
 
 	focus = { #needs unique
 		id = BAY_police_freikorps
-		icon = GFX_goal
+		icon = GFX_goal_BAY_POLICE_FREE
 		relative_position_id = BAY_saving_our_bavaria
 		x = 1
 		y = 2
@@ -350,7 +350,7 @@ focus_tree = {
 
 	focus = { #needs unique
 		id = BAY_fund_siemens
-		icon = GFX_goal
+		icon = GFX_goal_BAY_FUND
 		relative_position_id = BAY_saving_our_bavaria
 		x = 0
 		y = 3
@@ -363,7 +363,7 @@ focus_tree = {
 	
 	focus = { #needs unique
 		id = BAY_bavarian_iron
-		icon = GFX_goal
+		icon = GFX_goal_BAY_IRON
 		relative_position_id = BAY_saving_our_bavaria
 		x = 4
 		y = 3
@@ -389,7 +389,7 @@ focus_tree = {
 
 	focus = { #needs unique
 		id = BAY_modernize_our_army
-		icon = GFX_goal
+		icon = GFX_goal_BAY_MIL_RESEARCH
 		relative_position_id = BAY_saving_our_bavaria
 		x = 1
 		y = 4
@@ -432,7 +432,7 @@ focus_tree = {
 
 	focus = { #needs unique
 		id = BAY_moral_catholic_greater_bavaria
-		icon = GFX_goal
+		icon = GFX_goal_BAY_MORAL
 		relative_position_id = BAY_saving_our_bavaria
 		x = -5
 		y = 6
