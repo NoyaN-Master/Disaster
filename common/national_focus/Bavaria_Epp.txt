@@ -216,7 +216,7 @@ focus_tree = {
 
 	focus = { #needs unique
 		id = BAY_saving_our_bavaria
-		icon = GFX_goal 
+		icon = GFX_goal_BAY_save_bavaria 
 		x = 10
 		y = 1
 		cost = 3
@@ -417,7 +417,7 @@ focus_tree = {
  
 	focus = { #needs unique
 		id = BAY_united_bavaria
-		icon = GFX_goal
+		icon = GFX_goal_BAY_bavaria_unite
 		relative_position_id = BAY_saving_our_bavaria
 		x = 0
 		y = 5
@@ -454,9 +454,9 @@ focus_tree = {
 
 ### DIPLO ###
 
-	focus = { #needs unique
+	focus = { 
 		id = BAY_absorb_smaller_king
-		icon = GFX_goal
+		icon = GFX_goal_strong_gov
 		x = 20
 		y = 1
 		cost = 2
@@ -526,9 +526,9 @@ focus_tree = {
 		}
 	}
 
-	focus = { #needs unique
+	focus = { 
 		id = BAY_ties_with_austria
-		icon = GFX_goal
+		icon = GFX_goal_focus_AUT_the_old_austria
 		relative_position_id = BAY_neutrality
 		x = 1
 		y = 1
@@ -541,9 +541,9 @@ focus_tree = {
 		}
 	}
 
-	focus = { #needs unique
+	focus = { 
 		id = BAY_defense_against_north
-		icon = GFX_goal
+		icon = GFX_goal_IZM_Defence
 		relative_position_id = BAY_greater_bavaria
 		x = 1
 		y = 1
@@ -557,9 +557,9 @@ focus_tree = {
 		}
 	}
 
-	focus = { #needs unique
+	focus = { 
 		id = BAY_attack_little_germany
-		icon = GFX_goal
+		icon = GFX_goal_BAY_SKEWER_AUSTRIA
 		relative_position_id = BAY_greater_bavaria
 		x = -1
 		y = 1
@@ -573,9 +573,9 @@ focus_tree = {
 		}
 	}
 
-	focus = { #needs unique
+	focus = { 
 		id = BAY_ease_catholic_nationalism
-		icon = GFX_goal
+		icon = GFX_goal_AUT_revise_the_concordat
 		relative_position_id = BAY_german_confederation
 		x = -1
 		y = 1
@@ -588,9 +588,9 @@ focus_tree = {
 		}
 	}
 
-	focus = { #needs unique
+	focus = {
 		id = BAY_intervene_in_north
-		icon = GFX_goal
+		icon = GFX_goal_war_plan_ant
 		relative_position_id = BAY_german_confederation
 		x = 0
 		y = 2
@@ -630,9 +630,9 @@ focus_tree = {
 		}
 	}
 
-	focus = { #needs unique
+	focus = { 
 		id = BAY_danube_pact
-		icon = GFX_goal
+		icon = GFX_goal_AUT_HEGEMON
 		relative_position_id = BAY_neutrality
 		x = 0
 		y = 2
@@ -651,9 +651,9 @@ focus_tree = {
 		}
 	}
 
-	focus = { #needs unique
+	focus = {
 		id = BAY_absorb_bohemia
-		icon = GFX_goal
+		icon = GFX_goal_PRE_Germanize_Bohemian_Crownlands
 		relative_position_id = BAY_german_confederation
 		x = -2
 		y = 2
@@ -681,9 +681,9 @@ focus_tree = {
 		}
 	}
 
-	focus = { #needs unique
+	focus = {
 		id = BAY_invasion_of_france
-		icon = GFX_goal
+		icon = GFX_goal_NGU_France
 		relative_position_id = BAY_greater_bavaria
 		x = -1
 		y = 3
@@ -697,9 +697,9 @@ focus_tree = {
 		}
 	}
 
-	focus = { #needs unique
+	focus = {
 		id = BAY_polish_question
-		icon = GFX_goal
+		icon = GFX_goal_PRE_Strike_Poles
 		relative_position_id = BAY_german_confederation
 		x = -1
 		y = 3
