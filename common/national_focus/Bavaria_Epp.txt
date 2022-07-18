@@ -526,9 +526,9 @@ focus_tree = {
 		}
 	}
 
-	focus = { 
+	focus = { #needs unique
 		id = BAY_ties_with_austria
-		icon = GFX_goal_focus_AUT_the_old_austria
+		icon = GFX_goal
 		relative_position_id = BAY_neutrality
 		x = 1
 		y = 1
