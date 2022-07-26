@@ -303,7 +303,8 @@ country_event = { #Istanbul Nuclear Reactor
 	fire_only_once = yes
 	
 	trigger = {
-		has_tech = nuclear_reactor 
+		has_tech = nuclear_reactor
+		original_tag = SKL 
 	}
 	
 	option = {

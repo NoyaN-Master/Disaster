@@ -640,9 +640,6 @@ focus_tree = {
 		completion_reward = { 
 			
 		}
-		bypass = {
-			is_in_faction_with = AUT
-		}
 		prerequisite = {
 			focus = BAY_defense_against_north
 		}
@@ -741,9 +738,6 @@ focus_tree = {
 		cost = 2
 		completion_reward = { 
 			
-		}
-		bypass = {
-			is_in_faction_with = AUT
 		}
 		prerequisite = {
 			focus = BAY_danube_pact
