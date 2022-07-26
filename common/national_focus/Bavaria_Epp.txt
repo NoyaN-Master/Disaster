@@ -467,7 +467,7 @@ focus_tree = {
 
 	focus = { #needs unique
 		id = BAY_german_confederation
-		icon = GFX_goal
+		icon = GFX_goal_BAY_CONFED_START
 		x = 18
 		y = 2
 		cost = 2
@@ -487,7 +487,7 @@ focus_tree = {
 
 	focus = { #needs unique
 		id = BAY_greater_bavaria
-		icon = GFX_goal
+		icon = GFX_goal_BAY_SOUTH_GERMAN
 		x = 20
 		y = 2
 		cost = 2
@@ -507,7 +507,7 @@ focus_tree = {
 
 	focus = { #needs unique
 		id = BAY_neutrality
-		icon = GFX_goal
+		icon = GFX_goal_BAY_PRO_AUSTRIA
 		x = 22
 		y = 2
 		cost = 2
@@ -528,7 +528,7 @@ focus_tree = {
 
 	focus = { #needs unique
 		id = BAY_ties_with_austria
-		icon = GFX_goal
+		icon = GFX_goal_BAY_DEALS_AUS
 		relative_position_id = BAY_neutrality
 		x = 1
 		y = 1
@@ -614,7 +614,7 @@ focus_tree = {
 
 	focus = { #needs unique
 		id = BAY_into_the_alps
-		icon = GFX_goal
+		icon = GFX_goal_BAY_march_to_alps_epp
 		relative_position_id = BAY_greater_bavaria
 		x = 0
 		y = 2
@@ -665,7 +665,7 @@ focus_tree = {
 
 	focus = { #needs unique
 		id = BAY_unified_economy
-		icon = GFX_goal
+		icon = GFX_goal_BAY_UNITED_ECON
 		relative_position_id = BAY_neutrality
 		x = 2
 		y = 2
@@ -715,7 +715,7 @@ focus_tree = {
 
 	focus = { #needs unique
 		id = BAY_invasion_of_italy
-		icon = GFX_goal
+		icon = GFX_goal_BAY_ITALY
 		relative_position_id = BAY_greater_bavaria
 		x = 1
 		y = 3
@@ -731,7 +731,7 @@ focus_tree = {
 
 	focus = { #needs unique
 		id = BAY_free_borders
-		icon = GFX_goal
+		icon = GFX_goal_BAY_FREE_BORDERS
 		relative_position_id = BAY_neutrality
 		x = 1
 		y = 3
@@ -749,7 +749,7 @@ focus_tree = {
 
 	focus = { #needs unique
 		id = BAY_german_confed_unified
-		icon = GFX_goal
+		icon = GFX_goal_BAY_CONFED_UNITED
 		relative_position_id = BAY_german_confederation
 		x = 0
 		y = 4
@@ -768,7 +768,7 @@ focus_tree = {
 
 	focus = { #needs unique
 		id = BAY_south_unified
-		icon = GFX_goal
+		icon = GFX_goal_BAY_SOUTH_UNITED
 		relative_position_id = BAY_greater_bavaria
 		x = 0
 		y = 4
@@ -786,7 +786,7 @@ focus_tree = {
 
 	focus = { #needs unique
 		id = BAY_unified_proposal
-		icon = GFX_goal
+		icon = GFX_goal_BAY_AUSTRO_BAVARIA_UNITED
 		relative_position_id = BAY_neutrality
 		x = 0
 		y = 4
