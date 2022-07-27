@@ -461,7 +461,12 @@ focus_tree = {
 		y = 1
 		cost = 2
 		completion_reward = { 
-			
+			WRT = {
+				country_event = { id = bayrohmdiplo.1 days = 1}
+			}
+			BDN = {
+				country_event = { id = bayrohmdiplo.1 days = 1}
+			}
 		}
 	}
 
@@ -472,7 +477,7 @@ focus_tree = {
 		y = 2
 		cost = 2
 		completion_reward = { 
-			
+			custom_effect_tooltip = BAY_german_confederation_tt
 		}
 		mutually_exclusive = {
 			focus = BAY_greater_bavaria
@@ -492,7 +497,7 @@ focus_tree = {
 		y = 2
 		cost = 2
 		completion_reward = { 
-			
+			custom_effect_tooltip = BAY_greater_bavaria_tt
 		}
 		mutually_exclusive = {
 			focus = BAY_german_confederation
@@ -511,8 +516,11 @@ focus_tree = {
 		x = 22
 		y = 2
 		cost = 2
+		ai_will_do = {
+			factor = 50
+		}
 		completion_reward = { 
-			
+			custom_effect_tooltip = BAY_austrian_simp_tt
 		}
 		mutually_exclusive = {
 			focus = BAY_german_confederation
@@ -542,14 +550,71 @@ focus_tree = {
 	}
 
 	focus = { 
-		id = BAY_defense_against_north
+		id = BAY_defense_against_north 
 		icon = GFX_goal_IZM_Defence
 		relative_position_id = BAY_greater_bavaria
 		x = 1
 		y = 1
 		cost = 2
 		completion_reward = { 
-			
+			custom_effect_tooltip = BAY_add_forts_tt
+			hidden_effect = {
+				819 = {
+					add_building_construction = {
+						type = bunker
+						level = 4
+						instant_build = yes
+						province = 6568
+					}
+				}
+				50 = {
+					add_building_construction = {
+						type = bunker
+						level = 4
+						instant_build = yes
+						province = 6581
+					}
+				}
+				54 = {
+					add_building_construction = {
+						type = bunker
+						level = 4
+						instant_build = yes
+						province = 6594
+					}
+					add_building_construction = {
+						type = bunker
+						level = 4
+						instant_build = yes
+						province = 11417
+					}
+					add_building_construction = {
+						type = bunker
+						level = 4
+						instant_build = yes
+						province = 13116
+					}
+					add_building_construction = {
+						type = bunker
+						level = 4
+						instant_build = yes
+						province = 6421
+					}
+					add_building_construction = {
+						type = bunker
+						level = 4
+						instant_build = yes
+						province = 3474
+					}
+					add_building_construction = {
+						type = bunker
+						level = 4
+						instant_build = yes
+						province = 11404
+					}
+				}
+			}
+
 		}
 		prerequisite = {
 			focus = BAY_neutrality
@@ -565,7 +630,9 @@ focus_tree = {
 		y = 1
 		cost = 2
 		completion_reward = { 
-			
+			declare_war_on = {
+				target = AUT
+			}
 		}
 		prerequisite = {
 			focus = BAY_german_confederation
@@ -581,7 +648,7 @@ focus_tree = {
 		y = 1
 		cost = 2
 		completion_reward = { 
-			
+			#replace catholic nationalism idea
 		}
 		prerequisite = {
 			focus = BAY_german_confederation
@@ -596,7 +663,15 @@ focus_tree = {
 		y = 2
 		cost = 2
 		completion_reward = { 
-			
+			declare_war_on = {
+				target = NGU
+			}
+			declare_war_on = {
+				target = PRE
+			}
+			declare_war_on = {
+				target = SAX
+			}
 		}
 		bypass = {
 			NOT = {
@@ -620,7 +695,9 @@ focus_tree = {
 		y = 2
 		cost = 2
 		completion_reward = { 
-			
+			declare_war_on = {
+				target = SWZ
+			}
 		}
 		prerequisite = {
 			focus = BAY_attack_little_germany
@@ -656,7 +733,9 @@ focus_tree = {
 		y = 2
 		cost = 2
 		completion_reward = { 
-			
+			declare_war_on = {
+				target = CEZ
+			}
 		}
 		prerequisite = {
 			focus = BAY_ease_catholic_nationalism
@@ -671,7 +750,7 @@ focus_tree = {
 		y = 2
 		cost = 2
 		completion_reward = { 
-			
+			#add idea for unified economy
 		}
 		prerequisite = {
 			focus = BAY_ties_with_austria
@@ -686,7 +765,20 @@ focus_tree = {
 		y = 3
 		cost = 2
 		completion_reward = { 
-			
+			declare_war_on = {
+				target = FRE
+			}
+			declare_war_on = {
+				target = RHN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = LUX
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = BLI
+			}   
 		}
 		prerequisite = {
 			focus = BAY_intervene_in_north
@@ -695,14 +787,16 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BAY_polish_question
+		id = BAY_polish_question #needs decision
 		icon = GFX_goal_PRE_Strike_Poles
 		relative_position_id = BAY_german_confederation
 		x = -1
 		y = 3
 		cost = 2
 		completion_reward = { 
-			
+			declare_war_on = {
+				target = PLN
+			}
 		}
 		prerequisite = {
 			focus = BAY_absorb_bohemia
@@ -721,7 +815,9 @@ focus_tree = {
 		y = 3
 		cost = 2
 		completion_reward = { 
-			
+			declare_war_on = {
+				target = FIU
+			}
 		}
 		prerequisite = {
 			focus = BAY_danube_pact
@@ -737,7 +833,7 @@ focus_tree = {
 		y = 3
 		cost = 2
 		completion_reward = { 
-			
+			#add idea for free borders
 		}
 		prerequisite = {
 			focus = BAY_danube_pact
