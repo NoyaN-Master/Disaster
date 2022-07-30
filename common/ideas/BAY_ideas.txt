@@ -176,8 +176,7 @@ ideas = {
 			picture = SKL_monsters
 			modifier = {
 				conscription = 0.05
-				army_org_factor = 0.25
-				land_reinforce_rate	= 0.1
+				mobilization_speed = 0.5
 			}
 		}
 
@@ -203,7 +202,7 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BAY_high_command_idea" }
 			picture = ARM_Mighty_Army
 			modifier = {
-				army_org_factor = 0.2
+				army_org_regain	= 0.35
 				max_planning_factor = 0.5
 				planning_speed = 0.5
 				political_power_factor = -0.2
@@ -254,6 +253,16 @@ ideas = {
 				defensive_war_stability_factor = -0.5
 				offensive_war_stability_factor = -0.5
 			}	
+		}
+
+		BAY_ROHM_ARMY = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BAY_ROHM_ARMY" }
+			picture = BAY
+			modifier = {
+				army_attack_factor = 0.1
+				army_org_factor = 0.25
+				army_morale_factor = 0.15
+			}
 		}
 	}
 }

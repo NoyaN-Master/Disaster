@@ -57,8 +57,6 @@ country_event = { #event for the smaller countries, let bavaria eat you
 	title = bayrohmdiplo.1.t
 	desc = bayrohmdiplo.1.d
 
-	fire_only_once = yes
-
 	is_triggered_only = yes
 
 	option = { #Alright
@@ -88,7 +86,7 @@ country_event = { #yum
 		ai_chance = { factor = 100}
 		annex_country = {
 			target = FROM
-			transfer_troops = yes
+			transfer_troops = yes 
 		}
 	}
 	

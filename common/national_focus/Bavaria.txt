@@ -296,7 +296,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = BAY_end_content
 			remove_ideas = BAY_divided_freikorps_4
-			load_focus_tree = BAY_epp
+			#load_focus_tree = BAY_epp
 		}
 	}
 	focus = {
@@ -313,7 +313,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = BAY_end_content
 			remove_ideas = BAY_divided_freikorps_4
-			#load_focus_tree = BAY_rohm
+			load_focus_tree = BAY_rohm
 		}
 	}
 	focus = {

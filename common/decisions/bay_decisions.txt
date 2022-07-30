@@ -1,0 +1,165 @@
+BAY_rohm_diplo_category = {
+
+
+    BAY_poland_occupation_rohm = {
+        fire_only_once = yes
+        cost = 0
+        allowed = {
+            tag = BAY
+        }
+        available  = {
+            NOT = {
+                country_exists = PLN    
+            }    
+            owns_state = 809
+            owns_state = 85
+            owns_state = 86
+            owns_state = 87
+            owns_state = 762
+            owns_state = 72
+            owns_state = 88
+            owns_state = 90
+            owns_state = 10
+            owns_state = 808
+            owns_state = 98
+            owns_state = 97
+            owns_state = 92
+            owns_state = 91
+            owns_state = 89
+        }
+        visible = {
+            original_tag = BAY
+            OR = {
+                has_completed_focus = BAY_rohm_solidifying_rule
+                has_country_flag = debug_bay_flag
+            }
+        }    
+        complete_effect = {
+            release_puppet = PLN
+            transfer_state = 809
+            transfer_state = 85
+            transfer_state = 86
+            transfer_state = 5
+            transfer_state = 762
+            transfer_state = 98
+            transfer_state = 87
+            transfer_state = 97
+            PLN = {
+                set_cosmetic_tag = PLN_occupation
+                add_popularity = {
+                ideology = revolutionary_nationalist
+                popularity = 1
+                }
+            }
+            remove_ideas = {
+                PLN_free_at_fast
+                PLN_minorities_and_borders 
+                PLN_leftist_organizations   
+                PLN_catholic_support    
+            }
+            create_country_leader = {
+                name = "Martin Bormann"
+                #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+                picture = "gfx/leaders/PLN/Commisar_Martin_Bormann.tga"
+                expire = "1965.1.1"
+                ideology = natsoc_hitler
+                traits = {
+                }
+            }   
+        }
+        ai_will_do = {
+            factor = 1000
+        }
+    }
+
+
+    BAY_baltic_occupation_rohm = {
+	    fire_only_once = yes
+		cost = 0
+        allowed = {
+        tag = BAY
+        }
+        available  = {
+        NOT = {
+        country_exists = LIT
+        country_exists = LAT
+        country_exists = EST
+        }    
+        owns_state = 13
+        owns_state = 12
+        owns_state = 191
+        owns_state = 190
+        owns_state = 11
+        owns_state = 784
+        owns_state = 189
+        owns_state = 190
+        owns_state = 810
+        }
+        visible = {
+        original_tag = BAY
+        OR = {
+            has_completed_focus = BAY_rohm_solidifying_rule
+            has_country_flag = debug_bay_flag
+        }
+        }    
+        complete_effect = {
+        release = LIT
+        release = LAT
+        release = EST
+        BLT = {
+            annex_country = {
+                target = LIT
+                transfer_troops = yes
+            } 
+            annex_country = {
+                target = LAT
+                transfer_troops = yes
+            } 
+            annex_country = {
+                target = EST
+                transfer_troops = yes
+            }
+        } 
+        release_puppet = BLT
+        release = LIT
+        release = LAT
+        release = EST
+        BLT = {
+        annex_country = {
+            target = LIT
+            transfer_troops = yes
+        } 
+        annex_country = {
+            target = LAT
+            transfer_troops = yes
+        } 
+        annex_country = {
+            target = EST
+            transfer_troops = yes
+        }
+    }
+        transfer_state = 810
+        BLT = {
+            set_cosmetic_tag = BLT_commisariat_black
+            add_popularity = {
+            ideology = revolutionary_nationalist
+            popularity = 1
+            create_country_leader = {
+                name = "Alfred Rosenberg"
+                picture   = "gfx/leaders/BLT/Germany_Alfred_rosenberg_fuhrer.tga"
+                expire = "1965.1.1"
+                ideology = natsoc_hitler
+                traits = {
+                }
+            }
+            transfer_state = 96
+            transfer_state = 95
+        }
+        ai_will_do = {
+			factor = 1000
+		}
+    }
+}
+
+
+}

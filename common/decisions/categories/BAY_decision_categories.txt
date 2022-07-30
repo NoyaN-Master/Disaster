@@ -1,0 +1,21 @@
+BAY_rohm_diplo_category = {
+	icon = GFX_decision_category_generic_political_actions
+
+	picture = Decision_picture_anatolia_influence
+	priority = 80
+	allowed = {
+		original_tag  = BAY
+		
+	}
+	visible = {
+		original_tag  = BAY
+		BAY = {
+        OR = {
+        has_completed_focus = BAY_rohm_absorb_south
+        has_completed_focus = BAY_absorb_smaller_king
+		has_country_flag = debug_bay_flag
+        }     
+        }
+	}
+	visible_when_empty = yes
+}
