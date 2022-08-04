@@ -405,7 +405,10 @@ GER_unification_decisions = {
 	GER_for_germany_revolutionary_nationalist_greater= {
 		visible = {
 			has_government = revolutionary_nationalist
-			NOT = { original_tag = NGU }
+			OR = {
+				NOT = { original_tag = NGU }
+				NOT = { original_tag = BAY}
+			}
 			has_country_flag = GER_small_created
 		}
 		available = {
