@@ -50,22 +50,22 @@ BAY_rohm_diplo_category = {
                 ideology = revolutionary_nationalist
                 popularity = 1
                 }
-            }
-            remove_ideas = {
-                PLN_free_at_fast
-                PLN_minorities_and_borders 
-                PLN_leftist_organizations   
+                remove_ideas = {
+                    PLN_free_at_fast
+                    PLN_minorities_and_borders 
+                        PLN_leftist_organizations   
                 PLN_catholic_support    
-            }
-            create_country_leader = {
-                name = "Martin Bormann"
-                #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-                picture = "gfx/leaders/PLN/Commisar_Martin_Bormann.tga"
-                expire = "1965.1.1"
-                ideology = natsoc_hitler
-                traits = {
                 }
-            }   
+                create_country_leader = {
+                    name = "Martin Bormann"
+                    #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+                    picture = "gfx/leaders/PLN/Commisar_Martin_Bormann.tga"
+                    expire = "1965.1.1"
+                    ideology = natsoc_hitler
+                    traits = {
+                    }
+                }   
+            }
         }
         ai_will_do = {
             factor = 1000
@@ -77,36 +77,43 @@ BAY_rohm_diplo_category = {
 	    fire_only_once = yes
 		cost = 0
         allowed = {
-        tag = BAY
+            tag = BAY
         }
         available  = {
-        NOT = {
-        country_exists = LIT
-        country_exists = LAT
-        country_exists = EST
-        }    
-        owns_state = 13
-        owns_state = 12
-        owns_state = 191
-        owns_state = 190
-        owns_state = 11
-        owns_state = 784
-        owns_state = 189
-        owns_state = 190
-        owns_state = 810
+            NOT = {
+                country_exists = LIT
+                country_exists = LAT
+                country_exists = EST
+            }    
+            owns_state = 13
+            owns_state = 12
+            owns_state = 191
+            owns_state = 190
+            owns_state = 11
+            owns_state = 784
+            owns_state = 189
+            owns_state = 190
+            owns_state = 810
+            owns_state = 95
+            owns_state = 96
         }
         visible = {
-        original_tag = BAY
-        OR = {
-            has_completed_focus = BAY_rohm_solidifying_rule
-            has_country_flag = debug_bay_flag
-        }
+            original_tag = BAY
+            OR = {
+                has_completed_focus = BAY_rohm_solidifying_rule
+                has_country_flag = debug_bay_flag
+            }
         }    
         complete_effect = {
-        release = LIT
-        release = LAT
-        release = EST
-        BLT = {
+            BLT = {
+                add_state_core = 95
+                add_state_core = 96
+            } 
+            release_puppet = BLT
+            release = LIT
+            release = LAT
+            release = EST
+            BLT = {
             annex_country = {
                 target = LIT
                 transfer_troops = yes
@@ -119,54 +126,37 @@ BAY_rohm_diplo_category = {
                 target = EST
                 transfer_troops = yes
             }
-        } 
-        release_puppet = BLT
-        release = LIT
-        release = LAT
-        release = EST
-        BLT = {
-        annex_country = {
-            target = LIT
-            transfer_troops = yes
-        } 
-        annex_country = {
-            target = LAT
-            transfer_troops = yes
-        } 
-        annex_country = {
-            target = EST
-            transfer_troops = yes
-        }
-    }
-        transfer_state = 810
-        BLT = {
-            set_cosmetic_tag = BLT_commisariat_black
-            add_popularity = {
-            ideology = revolutionary_nationalist
-            popularity = 1
-            create_country_leader = {
-                name = "Alfred Rosenberg"
-                picture   = "gfx/leaders/BLT/Germany_Alfred_rosenberg_fuhrer.tga"
-                expire = "1965.1.1"
-                ideology = natsoc_hitler
-                traits = {
-                }
             }
-            transfer_state = 96
-            transfer_state = 95
-        }
+            transfer_state = 810
+            BLT = {
+                set_cosmetic_tag = BLT_commisariat_black
+                add_popularity = {
+                    ideology = revolutionary_nationalist
+                    popularity = 1
+                }
+                create_country_leader = { 
+                    name = "Alfred Rosenberg"
+                    picture = "gfx/leaders/BLT/Germany_Alfred_rosenberg_fuhrer.tga"
+                    expire = "1965.1.1"
+                    ideology = natsoc_hitler
+                    traits = {
+                    }
+                }
+                transfer_state = 96
+                transfer_state = 95
+            }
         }
         ai_will_do = {
 			factor = 1000
-		}
-    }   
-}
+		} 
+    }
 
     BAY_czech_occupation = {
         fire_only_once = yes
         cost = 0
         allowed = {
         tag = BAY
+        has_government = revolutionary_nationalist
         }
         available  = {    
         has_war = no
@@ -176,13 +166,21 @@ BAY_rohm_diplo_category = {
         owns_state = 69
         }
         visible = {
-        original_tag = BAY
-        }    
+            original_tag = BAY
+            OR = {
+                has_completed_focus = BAY_rohm_solidifying_rule
+                has_country_flag = debug_bay_flag
+            }
+        }     
         complete_effect = {
             transfer_state = 69
             transfer_state = 74
             release_puppet = CEZ
             CEZ = {
+                add_popularity = {
+                    ideology = revolutionary_nationalist
+                    popularity = 1
+                }
                 set_cosmetic_tag = CEZ_occupation
                 transfer_state = 72
                 create_country_leader = {
@@ -195,6 +193,207 @@ BAY_rohm_diplo_category = {
                     }
                 }
             }
+        }
+        ai_will_do = {
+            factor = 1000
+        }
+    }
+
+    BAY_ukraine_occupation = {
+	    fire_only_once = yes
+		cost = 0
+        allowed = {
+            tag = BAY
+        }
+        available  = {   
+            UKR = {
+                exists = no
+            }
+            BLT = {
+                is_puppet_of = NGU
+                owns_state = 96
+            }    
+        }
+        visible = {
+            original_tag = BAY
+            OR = {
+                has_completed_focus = BAY_rohm_solidifying_rule
+                has_country_flag = debug_bay_flag
+            }
+        }     
+        complete_effect = {
+            release_puppet = UKR
+            UKR = {
+                add_popularity = {
+                    ideology = revolutionary_nationalist
+                    popularity = 1
+                }
+                transfer_state = 197
+                transfer_state = 196
+                transfer_state = 226
+                transfer_state = 200
+                transfer_state = 200
+                transfer_state = 227
+                transfer_state = 203
+                transfer_state = 94
+                transfer_state = 93
+                transfer_state = 91
+                transfer_state = 89
+                if = {
+                    limit = {
+                        BAY = {
+                            has_country_flag = BAY_rohm_goebells_save
+                        }
+                    }
+                    create_country_leader = {
+                        name = "Adolf Hitler"
+                        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+                        picture   = "gfx/leaders/UKR/NGU_Hitler.tga"
+                        expire = "1965.1.1"
+                        ideology = natsoc_hitler
+                        traits = {
+                        }
+                    }
+                }
+                if = {
+                    limit = {
+                        BAY = {
+                            NOT = {
+                                has_country_flag = BAY_rohm_goebells_save 
+                            }
+                        }
+                    }
+                    create_country_leader = {
+                        name = "hohol"
+                        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+                        picture   = "gfx/leaders/UKR/placeholder.png"
+                        expire = "1965.1.1"
+                        ideology = natsoc_hitler
+                        traits = {
+                        }
+                    }
+                }
+    
+            }
+
+        }
+        ai_will_do = {
+			factor = 1000
+		}
+    }
+
+    BAY_hungary_occupation = {
+        fire_only_once = yes
+        cost = 0
+        allowed = {
+            tag = BAY
+            has_government = revolutionary_nationalist
+        }
+        available  = {    
+            has_war = no
+            owns_state = 70
+            NOT = {
+                country_exists = HNG
+                country_exists = SLK
+            }
+        }
+        visible = {
+            original_tag = BAY
+            OR = {
+                has_completed_focus = BAY_rohm_solidifying_rule
+                has_country_flag = debug_bay_flag
+            }
+        }     
+        complete_effect = {
+            release_puppet = HNG
+            transfer_state = 807
+            HNG = {
+                add_popularity = {
+                    ideology = revolutionary_nationalist
+                    popularity = 1
+                }
+                set_cosmetic_tag = HNG_bay_puppet
+                create_country_leader = {
+                    name = "Erich von Manstein"
+                    #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+                    picture   = "gfx/leaders/HNG/Erich_von_Manstein.tga"
+                    expire = "1965.1.1"
+                    ideology = natsoc_hitler
+                    traits = {
+                    }
+                }
+                transfer_state = 70
+                transfer_state = 71
+            }
+        }
+        hidden_effect = {
+            HNG = {
+                every_owned_state = {
+                    add_core_of = HNG
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 1000
+        }
+    }
+
+    BAY_romania_occupation = {
+        fire_only_once = yes
+        cost = 0
+        allowed = {
+            tag = BAY
+            has_government = revolutionary_nationalist
+        }
+        available  = {    
+            has_war = no
+            owns_state = 79
+            NOT = {
+                country_exists = ROM
+            }
+            BAY = {
+                has_puppet = UKR
+            }
+        }
+        visible = {
+            original_tag = BAY
+            OR = {
+                has_completed_focus = BAY_rohm_solidifying_rule
+                has_country_flag = debug_bay_flag
+            }
+        }     
+        complete_effect = {
+            release_puppet = ROM
+            HNG = {
+                transfer_state = 76
+                transfer_state = 83
+                add_state_core = 76
+                add_state_core = 83
+            }
+            UKR = {
+                transfer_state = 78
+                transfer_state = 766
+                add_state_core = 78
+                add_state_core = 766
+            }
+            ROM = {
+                add_popularity = {
+                    ideology = revolutionary_nationalist
+                    popularity = 1
+                }
+                set_cosmetic_tag = ROM_bay_puppet
+                create_country_leader = {
+                    name = "some stupid fucker"
+                    #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+                    picture   = "gfx/leaders/ROM/placeholder.png"
+                    expire = "1965.1.1"
+                    ideology = natsoc_hitler
+                    traits = {
+                    }
+                }
+                give_resource_rights = { receiver = BAY state = 46 }
+            }
+
         }
         ai_will_do = {
             factor = 1000

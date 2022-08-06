@@ -200,14 +200,22 @@ ESO_Roatta_ADJ:0 "Gokturk"
 ESO_Roatta_DEF:0 "the Gokturk Army Authority"
 ANK_Roatta:0 "The New State"
 ANK_Roatta_DEF:0 "The New State"
-ANK_Roatta_ADJ:0 "Kemalist"
+ANK_Roatta_ADJ:0 "KemaliMilitary State of Hungaryst"
 CLP_Islamic:0 "Royal Guard"
 CLP_Ottoman_Coup:0 "Ottoman Reclamation Army"
 CLP_Ottoman_Coup_DEF:0 "Army For Ottoman Reclamation"
 CLP_Ottoman_Coup_ADJ:0 "Ottoman"
-Ottoman_Cosmetic:0 "Ottoman State"
+Ottoman_Cosmetic:0 "OttomanReichcolonie State"
 Ottoman_Cosmetic_DEF:0 "The Sublime Porte"
 Ottoman_Cosmetic_ADJ:0 "Ottoman"
 ## prussia
 
 ## bay
+
+HNG_bay_puppet:0 "Militärstaat Ungarn"
+HNG_bay_puppet_DEF:0 "The German Military State of Hungary"
+HNG_bay_puppet_ADJ:0 "Hungarian"
+
+ROM_bay_puppet:0 "Reichskolonie Rumänien"
+ROM_bay_puppet_DEF:0 "The Germanic Colony of Romania"
+ROM_bay_puppet_ADJ:0 "Romanian"
