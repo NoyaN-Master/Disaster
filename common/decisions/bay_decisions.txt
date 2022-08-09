@@ -1,7 +1,7 @@
 BAY_rohm_diplo_category = {
 
 
-    BAY_poland_occupation_rohm = {
+    BAY_rohm_poland_occupation_rohm = {
         fire_only_once = yes
         cost = 0
         allowed = {
@@ -73,7 +73,7 @@ BAY_rohm_diplo_category = {
     }
 
 
-    BAY_baltic_occupation_rohm = {
+    BAY_rohm_baltic_occupation_rohm = {
 	    fire_only_once = yes
 		cost = 0
         allowed = {
@@ -151,7 +151,7 @@ BAY_rohm_diplo_category = {
 		} 
     }
 
-    BAY_czech_occupation = {
+    BAY_rohm_czech_occupation = {
         fire_only_once = yes
         cost = 0
         allowed = {
@@ -199,7 +199,7 @@ BAY_rohm_diplo_category = {
         }
     }
 
-    BAY_ukraine_occupation = {
+    BAY_rohm_ukraine_occupation = {
 	    fire_only_once = yes
 		cost = 0
         allowed = {
@@ -282,7 +282,7 @@ BAY_rohm_diplo_category = {
 		}
     }
 
-    BAY_hungary_occupation = {
+    BAY_rohm_hungary_occupation = {
         fire_only_once = yes
         cost = 0
         allowed = {
@@ -338,7 +338,7 @@ BAY_rohm_diplo_category = {
         }
     }
 
-    BAY_romania_occupation = {
+    BAY_rohm_romania_occupation = {
         fire_only_once = yes
         cost = 0
         allowed = {
@@ -399,6 +399,64 @@ BAY_rohm_diplo_category = {
             factor = 1000
         }
     }
+
+    BAY_rohm_benelux_occupation = {
+        fire_only_once = yes
+        cost = 0
+        allowed = {
+            tag = BAY
+            has_government = revolutionary_nationalist
+        }
+        available  = {    
+            has_war = no
+            owns_state = 35
+            owns_state = 36
+            owns_state = 7
+            owns_state = 6
+            owns_state = 34
+            owns_state = 8
+            NOT = {
+                country_exists = LUX
+                country_exists = BLI
+                country_exists = BTV
+            }
+        }
+        visible = {
+            original_tag = BAY
+            OR = {
+                has_completed_focus = BAY_rohm_solidifying_rule
+                has_country_flag = debug_bay_flag
+            }
+        }     
+        complete_effect = {
+            release_puppet = BTV
+            release_puppet = BLI
+            add_state_core = 8
+            BTV = {
+                add_state_core = 6
+                transfer_state = 6
+                set_cosmetic_tag = BTV_rohm_occupation
+                create_country_leader = {
+                    name = "Cornelis van Geelkerken"
+                    #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+                    picture   = "gfx/leaders/BTV/Portrait_Holland_Cornelis_van_Geelkerken.png"
+                    expire = "1965.1.1"
+                    ideology = natsoc_hitler
+                    traits = {
+                    }
+                }
+            }
+            BLI = {
+                set_cosmetic_tag = BLI_rohm_occupation
+            }
+
+        }
+        ai_will_do = {
+            factor = 1000
+        }
+    }
+
+
 
 
 }
