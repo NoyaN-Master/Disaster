@@ -271,3 +271,33 @@ ROM_bay_puppet = {
 	color_ui = rgb { 190 209 130 }
 }
 
+BTV_rohm_occupation = {
+	color = rgb { 165 138 74 }
+	color_ui = rgb { 165 138 74 }
+}
+
+BLI_rohm_occupation = {
+	color = rgb { 212 184 79 }
+	color_ui = rgb { 212 184 79 }
+}
+
+BLI_rohm_france_occupation = {
+	color = rgb { 100 100 80 }
+	color_ui = rgb { 100 100 80 }
+}
+
+FRE_rohm_occupation = {
+	color = rgb { 64 114 140 }
+	color_ui = rgb { 64 110 140 }
+}
+
+UKR_rohm_occupation = {
+	color = rgb { 29 30 33 }
+	color_ui = rgb { 29 30 33 }
+}
+
+RUS_rohm_occupation = {
+	color = rgb { 50 50 50}
+	color_ui = rgb { 50 50 50}
+}
+

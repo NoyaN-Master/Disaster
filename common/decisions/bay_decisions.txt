@@ -228,6 +228,7 @@ BAY_rohm_diplo_category = {
                     ideology = revolutionary_nationalist
                     popularity = 1
                 }
+                set_cosmetic_tag = UKR_rohm_occupation
                 transfer_state = 197
                 transfer_state = 196
                 transfer_state = 226
@@ -465,7 +466,60 @@ BAY_rohm_diplo_category = {
         }
     }
 
-
+    BAY_rohm_french_occupation = {
+        fire_only_once = yes
+        cost = 0
+        allowed = {
+            tag = BAY
+            has_government = revolutionary_nationalist
+        }
+        available  = {    
+            has_war = no
+            owns_state = 16
+            NOT = {
+                country_exists = FRE
+            }
+        }
+        visible = {
+            original_tag = BAY
+            OR = {
+                has_completed_focus = BAY_rohm_solidifying_rule
+                has_country_flag = debug_bay_flag
+            }
+        }     
+        complete_effect = {
+            release_puppet = FRE
+            transfer_state = 28
+            FRE = {
+                add_popularity = {
+                    ideology = revolutionary_nationalist
+                    popularity = 1
+                }
+                set_cosmetic_tag = FRE_rohm_occupation
+                create_country_leader = {
+                    name = "french retard"
+                    #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+                    picture   = "gfx/leaders/FRE/shit.png"
+                    expire = "1965.1.1"
+                    ideology = nazi_puppet
+                    traits = {
+                    }
+                }
+                transfer_state = 70
+                transfer_state = 71
+            }
+        }
+        hidden_effect = {
+            HNG = {
+                every_owned_state = {
+                    add_core_of = HNG
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 1000
+        }
+    }
 
 
 }

@@ -229,9 +229,17 @@ BLI_rohm_occupation_DEF:0 "The Reichskommisariat Wallonien"
 BLI_rohm_occupation_ADJ:0 "Belgian"
 
 BLI_rohm_france_occupation:0 "Reichskommisariat Nordfrankreich"
-BLI_rohm_france_occupation_DEF:0 "German-Occupied France"
+BLI_rohm_france_occupation_DEF:0 "The German Zone of Occupation in France"
 BLI_rohm_france_occupation_ADJ:0 "Northern French"
 
 FRE_rohm_occupation:0 "French National State"
 FRE_rohm_occupation_DEF:0 "The Free French National State"
 FRE_rohm_occupation_ADJ:0 "French"
+
+UKR_rohm_occupation:0 "Reichskommisariat Ukraine" #maybe unique tag for hitler idk
+UKR_rohm_occupation_DEF:0 "The Reichkomissarat Ukraine"
+UKR_rohm_occupation_ADJ:0 "Ukrainian"
+
+RUS_rohm_occupation:0 "Reichskommisariat Russland"
+RUS_rohm_occupation_DEF:0 "The German Zone of Occupation in Russia"
+RUS_rohm_occupation_ADJ:0 "Russian"
