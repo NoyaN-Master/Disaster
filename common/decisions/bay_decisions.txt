@@ -61,7 +61,7 @@ BAY_rohm_diplo_category = {
                     #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
                     picture = "gfx/leaders/PLN/Commisar_Martin_Bormann.tga"
                     expire = "1965.1.1"
-                    ideology = natsoc_hitler
+                    ideology = nazi_colonial
                     traits = {
                     }
                 }   
@@ -138,7 +138,7 @@ BAY_rohm_diplo_category = {
                     name = "Alfred Rosenberg"
                     picture = "gfx/leaders/BLT/Germany_Alfred_rosenberg_fuhrer.tga"
                     expire = "1965.1.1"
-                    ideology = natsoc_hitler
+                    ideology = nazi_colonial
                     traits = {
                     }
                 }
@@ -188,7 +188,7 @@ BAY_rohm_diplo_category = {
                     #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
                     picture   = "gfx/leaders/CEZ/Germany_Karl_Kreutz.tga"
                     expire = "1965.1.1"
-                    ideology = natsoc_hitler
+                    ideology = nazi_colonial
                     traits = {
                     }
                 }
@@ -250,7 +250,7 @@ BAY_rohm_diplo_category = {
                         #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
                         picture   = "gfx/leaders/UKR/NGU_Hitler.tga"
                         expire = "1965.1.1"
-                        ideology = natsoc_hitler
+                        ideology = nazi_colonial
                         traits = {
                         }
                     }
@@ -268,7 +268,7 @@ BAY_rohm_diplo_category = {
                         #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
                         picture   = "gfx/leaders/UKR/placeholder.png"
                         expire = "1965.1.1"
-                        ideology = natsoc_hitler
+                        ideology = nazi_colonial
                         traits = {
                         }
                     }
@@ -314,11 +314,11 @@ BAY_rohm_diplo_category = {
                 }
                 set_cosmetic_tag = HNG_bay_puppet
                 create_country_leader = {
-                    name = "Erich von Manstein"
+                    name = "Pál Prónay"
                     #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-                    picture   = "gfx/leaders/HNG/Erich_von_Manstein.tga"
+                    picture   = "gfx/leaders/HNG/Portrait_HNG_Pal_Pronay.png"
                     expire = "1965.1.1"
-                    ideology = natsoc_hitler
+                    ideology = nazi_puppet
                     traits = {
                     }
                 }
@@ -383,11 +383,11 @@ BAY_rohm_diplo_category = {
                 }
                 set_cosmetic_tag = ROM_bay_puppet
                 create_country_leader = {
-                    name = "some stupid fucker"
+                    name = "Erich von Manstein"
                     #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-                    picture   = "gfx/leaders/ROM/placeholder.png"
+                    picture   = "gfx/leaders/ROM/Erich_von_Manstein.tga"
                     expire = "1965.1.1"
-                    ideology = natsoc_hitler
+                    ideology = nazi_colonial
                     traits = {
                     }
                 }
@@ -441,13 +441,22 @@ BAY_rohm_diplo_category = {
                     #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
                     picture   = "gfx/leaders/BTV/Portrait_Holland_Cornelis_van_Geelkerken.png"
                     expire = "1965.1.1"
-                    ideology = natsoc_hitler
+                    ideology = nazi_puppet
                     traits = {
                     }
                 }
             }
             BLI = {
                 set_cosmetic_tag = BLI_rohm_occupation
+                create_country_leader = {
+                    name = "Leon Degrelle"
+                    #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+                    picture   = "gfx/leaders/BLI/BLI_Degrelle.tga"
+                    expire = "1965.1.1"
+                    ideology = nazi_puppet
+                    traits = {
+                    }
+                }
             }
 
         }

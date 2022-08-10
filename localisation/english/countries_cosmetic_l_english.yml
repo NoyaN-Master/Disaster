@@ -212,8 +212,8 @@ Ottoman_Cosmetic_ADJ:0 "Ottoman"
 
 ## bay
 
-HNG_bay_puppet:0 "Militärstaat Ungarn"
-HNG_bay_puppet_DEF:0 "The German Military State of Hungary"
+HNG_bay_puppet:0 "National State of Hungary"
+HNG_bay_puppet_DEF:0 "The German Puppet State of Hungary"
 HNG_bay_puppet_ADJ:0 "Hungarian"
 
 ROM_bay_puppet:0 "Reichskolonie Rumänien"
@@ -227,3 +227,11 @@ BTV_rohm_occupation_ADJ:0 "Dutch"
 BLI_rohm_occupation:0 "Reichskommisariat Wallonien"
 BLI_rohm_occupation_DEF:0 "The Reichskommisariat Wallonien"
 BLI_rohm_occupation_ADJ:0 "Belgian"
+
+BLI_rohm_france_occupation:0 "Reichskommisariat Nordfrankreich"
+BLI_rohm_france_occupation_DEF:0 "German-Occupied France"
+BLI_rohm_france_occupation_ADJ:0 "Northern French"
+
+FRE_rohm_occupation:0 "French National State"
+FRE_rohm_occupation_DEF:0 "The Free French National State"
+FRE_rohm_occupation_ADJ:0 "French"

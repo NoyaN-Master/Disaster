@@ -444,6 +444,14 @@ ideologies = {
 			alexanderism = {
 				can_be_randomly_selected = no
 			}
+
+			nazi_colonial = {
+				can_be_randomly_selected = no
+			}
+
+			nazi_puppet = {
+				can_be_randomly_selected = no
+			}
 		}
 		
 			dynamic_faction_names = {

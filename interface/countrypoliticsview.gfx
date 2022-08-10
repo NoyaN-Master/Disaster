@@ -891,5 +891,13 @@ spriteType = {
 	spriteType = {
 			name = "GFX_ideology_eso_alexanderism"
 			texturefile = "gfx/interface/ideologies/eso_alexanderism.png"
-		}		
+		}
+	spriteType = {
+			name = "GFX_ideology_nazi_colonial"
+			texturefile = "gfx/interface/ideologies/nazi_colonial.png"
+		}
+	spriteType = {
+			name = "GFX_ideology_nazi_puppet"
+			texturefile = "gfx/interface/ideologies/nazi_puppet.png"
+		}				
 }
