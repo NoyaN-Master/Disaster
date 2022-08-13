@@ -326,11 +326,12 @@ BAY_rohm_diplo_category = {
                 transfer_state = 70
                 transfer_state = 71
             }
-        }
-        hidden_effect = {
-            HNG = {
-                every_owned_state = {
-                    add_core_of = HNG
+
+            hidden_effect = {
+                HNG = {
+                    every_owned_state = {
+                        add_core_of = HNG
+                    }
                 }
             }
         }
@@ -476,6 +477,7 @@ BAY_rohm_diplo_category = {
         available  = {    
             has_war = no
             owns_state = 16
+            has_puppet = BLI
             NOT = {
                 country_exists = FRE
             }
@@ -489,7 +491,13 @@ BAY_rohm_diplo_category = {
         }     
         complete_effect = {
             release_puppet = FRE
-            transfer_state = 28
+            BLI = {
+                set_cosmetic_tag = BLI_rohm_france_occupation
+                transfer_state = 29
+                transfer_state = 785
+                transfer_state = 18
+                transfer_state = 17
+            }
             FRE = {
                 add_popularity = {
                     ideology = revolutionary_nationalist
@@ -505,15 +513,46 @@ BAY_rohm_diplo_category = {
                     traits = {
                     }
                 }
-                transfer_state = 70
-                transfer_state = 71
+            }
+            hidden_effect = {
+                BLI = {
+                    every_owned_state = {
+                        add_core_of = BLI
+                    }
+                }
             }
         }
-        hidden_effect = {
-            HNG = {
-                every_owned_state = {
-                    add_core_of = HNG
-                }
+        ai_will_do = {
+            factor = 1000
+        }
+    }
+
+    BAY_rohm_russia_occupation = {
+        fire_only_once = yes
+        cost = 0
+        allowed = {
+            tag = BAY
+            has_government = revolutionary_nationalist
+        }
+        available  = {    
+            has_war = no
+            owns_state = 210
+            has_puppet = UKR
+            NOT = {
+                country_exists = RUS
+            }
+        }
+        visible = {
+            original_tag = BAY
+            OR = {
+                has_completed_focus = BAY_rohm_solidifying_rule
+                has_country_flag = debug_bay_flag
+            }
+        }     
+        complete_effect = {
+            release_puppet = RUS
+            RUS = {
+                set_cosmetic_tag = RUS_rohm_occupation
             }
         }
         ai_will_do = {

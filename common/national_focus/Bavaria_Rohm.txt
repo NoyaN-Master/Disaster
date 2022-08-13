@@ -811,7 +811,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BAY_rohm_attack_russia
+		id = BAY_rohm_attack_russia #fuck
 		icon = GFX_goal_BAY_ROHM_RUSSIAN_WAR
 		x = 0
 		y = 5
@@ -828,8 +828,76 @@ focus_tree = {
 				target = RUS
 				type = annex_everything
 			}
-			#i have no fucking clue how this will work with the cw, will just have to wait for now
+			declare_war_on = {
+				target = DON
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = KUB
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SAV
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = REG
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = URA
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SIB
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = PRI
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SAK
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = KAR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = CRI
+				type = annex_everything
+			}
+
+			add_timed_idea = {
+				idea = NGU_RussianWar
+				days = 95	
+			}
+
+			hidden_effect = {
+				REG = {
+					remove_ideas = RUS_CIVIL_WAR
+				}
+				SAV = {
+					remove_ideas = RUS_CIVIL_WAR
+				}
+				SIB = {
+					remove_ideas = RUS_CIVIL_WAR
+				}
+				KAR = {
+					remove_ideas = RUS_CIVIL_WAR
+				}
+				SAK = {
+					remove_ideas = RUS_CIVIL_WAR
+				}
+				PRI = {
+					remove_ideas = RUS_CIVIL_WAR
+				}
+			}
+			
 		}
+
+
 		
 	}
 

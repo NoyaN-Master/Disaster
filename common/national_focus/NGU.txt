@@ -1023,6 +1023,28 @@ focus = {
 		idea = NGU_RussianWar
 		days = 95	
 		}	
+
+		hidden_effect = {
+			REG = {
+				remove_ideas = RUS_CIVIL_WAR
+			}
+			SAV = {
+				remove_ideas = RUS_CIVIL_WAR
+			}
+			SIB = {
+				remove_ideas = RUS_CIVIL_WAR
+			}
+			KAR = {
+				remove_ideas = RUS_CIVIL_WAR
+			}
+			SAK = {
+				remove_ideas = RUS_CIVIL_WAR
+			}
+			PRI = {
+				remove_ideas = RUS_CIVIL_WAR
+			}
+		}
+		
 		}
 	}
 	focus = {
