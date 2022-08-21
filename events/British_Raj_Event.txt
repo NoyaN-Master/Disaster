@@ -1,0 +1,328 @@
+add_namespace = RAJ
+
+country_event = { #intro event
+	id = RAJ.1
+	title = RAJ.1.t
+	desc = RAJ.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = RAJ.1.a
+		ai_chance = { factor = 1}
+	}
+}
+
+country_event = {
+	id = RAJ.2
+	title = RAJ.2.t
+	desc = RAJ.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = RAJ.2.a
+		ai_chance = { factor = 1}
+	}
+}
+
+country_event = {
+	id = RAJ.3
+	title = RAJ.3.t
+	desc = RAJ.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = RAJ.3.a
+		ai_chance = { factor = 1}
+		423 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+		}
+		831 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+		}
+		RAJ = {
+			add_equipment_to_stockpile = {
+				type = infantry_weapons1
+				amount = 1000
+				producer = ENG
+			}
+			add_manpower = 17500
+		}
+	}
+	
+	option = {
+		name = RAJ.3.b
+		ai_chance = { factor = 1}
+		423 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+		}
+		831 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+		}
+		RAJ = {
+			add_equipment_to_stockpile = {
+				type = infantry_weapons1
+				amount = 500
+				producer = ENG
+			}
+			add_manpower = 5000
+		}
+	}
+	
+	option = {
+		name = RAJ.3.c
+		ai_chance = { factor = 1}
+		423 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+		}
+		831 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+		}
+		422 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 3
+		}
+		RAJ = { add_ideas = RAJ_Help_From_UK }
+	}
+}
+
+country_event = {
+	id = RAJ.4
+	title = RAJ.4.t
+	desc = RAJ.4.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = RAJ.4.a
+		ai_chance = { factor = 1}
+		RAJ = {
+			add_equipment_to_stockpile = {
+				type = infantry_weapons1
+				amount = 2000
+				producer = ENG
+			}
+		}
+	}
+	
+	option = {
+		name = RAJ.4.b
+		ai_chance = { factor = 1}
+		RAJ = {
+			add_manpower = 20000
+		}
+	}
+	
+	option = {
+		name = RAJ.4.c
+		ai_chance = { factor = 1}
+		RAJ = {
+			add_equipment_to_stockpile = {
+				type = infantry_weapons1
+				amount = 500
+				producer = ENG
+			}
+			add_manpower = 5000
+		}
+	}
+	
+	option = {
+		name = RAJ.4.d
+		ai_chance = { factor = 1}
+		RAJ = {
+			add_equipment_to_stockpile = {
+				type = infantry_weapons1
+				amount = 500
+				producer = ENG
+			}
+			add_manpower = 2500
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}	
+		}
+	}
+}
+
+country_event = {
+	id = RAJ.5
+	title = RAJ.5.t
+	desc = RAJ.5.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = RAJ.5.a
+		ai_chance = { factor = 1}
+	}
+}
+
+country_event = {
+	id = RAJ.6
+	title = RAJ.6.t
+	desc = RAJ.6.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = RAJ.6.a
+		ai_chance = { factor = 1}
+	}
+}
+
+country_event = { 
+	id = RAJ.7
+	title = RAJ.7.t
+	desc = RAJ.7.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = RAJ.7.a
+		ai_chance = { factor = 1}
+	}
+}
+
+country_event = { 
+	id = RAJ.8
+	title = RAJ.8.t
+	desc = RAJ.8.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = RAJ.8.a
+		ai_chance = { factor = 1}
+	}
+}
+
+country_event = { 
+	id = RAJ.9
+	title = RAJ.9.t
+	desc = RAJ.9.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = RAJ.9.a
+		ai_chance = { factor = 1}
+		RAJ = { add_to_faction = KSM }
+		RAJ = {country_event = RAJ.20}
+	}
+}
+
+country_event = { 
+	id = RAJ.10
+	title = RAJ.10.t
+	desc = RAJ.10.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = RAJ.10.a
+		ai_chance = { factor = 1}
+		RAJ = { add_to_faction = BUR }
+		RAJ = {	country_event = RAJ.21 }
+	}
+}
+
+country_event = { 
+	id = RAJ.11
+	title = RAJ.11.t
+	desc = RAJ.11.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = RAJ.11.a
+		ai_chance = { factor = 1}
+		RAJ = {
+			add_ideas = RAJ_military_exchange
+		}
+		BUR = {
+			add_ideas = RAJ_military_exchange
+		}
+		KSM = {
+			add_ideas = RAJ_military_exchange
+		}
+	}
+}
+
+country_event = { 
+	id = RAJ.20
+	title = RAJ.20.t
+	desc = RAJ.20.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = RAJ.20.a
+		ai_chance = { factor = 1}
+	}
+}
+
+country_event = { 
+	id = RAJ.21
+	title = RAJ.21.t
+	desc = RAJ.21.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = RAJ.21.a
+		ai_chance = { factor = 1}
+	}
+}
