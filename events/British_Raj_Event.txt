@@ -326,3 +326,16 @@ country_event = {
 		ai_chance = { factor = 1}
 	}
 }
+
+news_event = {
+	id = disaster.41
+	title = disaster.41.t
+	desc = disaster.41.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = disaster.41.a
+		ai_chance = { factor = 1}
+	}
+}
