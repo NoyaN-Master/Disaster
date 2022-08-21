@@ -1,0 +1,203 @@
+ideas = {
+
+	country = {
+
+		RAJ_multinational_state = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea RAJ_multinational_state" }
+			picture = BAY_RED_DEVILS
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.25
+				recruitable_population_factor = -0.2
+				army_org_factor = -0.25
+			}
+		}
+		
+		RAJ_worst_army = { #We don't have army
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea RAJ_worst_army" }
+			picture = BAY_RED_DEVILS
+			modifier = {
+				army_attack_factor = -0.3
+				army_defence_factor = -0.25
+				army_speed_factor = -0.5
+				army_morale_factor = -0.3
+				land_night_attack = -0.75
+				org_loss_when_moving = 0.5
+				army_org_factor = -0.25
+			}
+		}
+		
+		RAJ_bad_army = { #Army?
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea RAJ_bad_army " }
+			picture = BAY_RED_DEVILS
+			modifier = {
+				army_attack_factor = -0.2
+				army_defence_factor = -0.15
+				army_speed_factor = -0.3
+				army_morale_factor = -0.15
+				land_night_attack = -0.5
+				org_loss_when_moving = 0.3
+				army_org_factor = -0.1
+			}
+		}
+		
+		RAJ_ok_army = { #Normal Army
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea RAJ_ok_army" }
+			picture = BAY_RED_DEVILS
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				land_night_attack = -0.05
+				experience_gain_army = 0.1 
+			} 
+		}
+		
+		RAJ_hey_bro_nice_army = { #Good army
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea RAJ_hey_bro_nice_army" }
+			picture = BAY_RED_DEVILS
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				army_speed_factor = 0.15
+				army_morale_factor = 0.2
+				army_org_factor = 0.15
+				experience_gain_army = 0.2 
+			}
+		}
+		
+		RAJ_soldiers_are_new_elite = { 
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea RAJ_soldiers_are_new_elite" }
+			picture = BAY_RED_DEVILS
+			modifier = {
+				army_morale_factor = 0.1
+				army_org_factor = 0.1
+				supply_consumption_factor = -0.1
+				recruitable_population_factor = 0.05 
+			}
+		}
+		
+		RAJ_weak_economy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea RAJ_weak_economy" }
+			picture = BAY_RED_DEVILS
+			modifier = {
+				production_speed_buildings_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.15
+				production_factory_max_efficiency_factor = -0.25
+			}
+		}
+		
+		RAJ_weak_economy2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea RAJ_weak_economy2" }
+			picture = BAY_RED_DEVILS
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				production_factory_max_efficiency_factor = -0.15
+			}
+		}
+		
+		RAJ_stabilized_economy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea RAJ_stabilized_economy" }
+			picture = BAY_RED_DEVILS
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05	
+			}
+		}
+		
+		RAJ_Help_From_UK = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea RAJ_Help_From_UK" }
+			picture = BAY_RED_DEVILS
+			modifier = {
+				production_speed_buildings_factor = 0.075
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05	
+			}
+		}
+		
+		RAJ_Skanda_god = { #Skanda, god of war
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea RAJ_Skanda_god" }
+			picture = BAY_RED_DEVILS
+			modifier = {
+				army_attack_factor = 0.10
+				army_defence_factor = 0.05
+				army_speed_factor = 0.10
+				army_morale_factor = 0.15
+				army_org_factor = 0.05
+				breakthrough_factor = 0.10			
+				war_support_weekly = 0.025
+			}
+		}
+		
+		RAJ_military_exchange = { 
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea RAJ_military_exchange" }
+			picture = BAY_RED_DEVILS
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.1
+				army_speed_factor = 0.20
+				army_org_factor = 0.15
+				supply_consumption_factor = -0.15 
+			}
+		}
+		
+		RAJ_support_agricultural = { 
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea RAJ_support_agricultural" }
+			picture = BAY_RED_DEVILS
+			modifier = {
+				stability_factor = 0.05
+				monthly_population = 0.1
+				production_speed_industrial_complex_factor = 0.15
+			}
+		}
+		
+		RAJ_drug_addiction = { 
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea RAJ_drug_addiction" }
+			picture = BAY_RED_DEVILS
+			modifier = {
+				research_speed_factor = -0.1
+				stability_factor = -0.15
+				production_speed_buildings_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.15 
+				production_factory_max_efficiency_factor = -0.15
+				army_attack_factor = -0.1
+				army_speed_factor = 0.075
+				army_org_factor = -0.15
+				army_defence_factor = -0.2
+			}
+		}
+		
+		RAJ_drug_addiction2 = { 
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea RAJ_drug_addiction2" }
+			picture = BAY_RED_DEVILS
+			modifier = {
+				research_speed_factor = -0.2
+				stability_factor = -0.25
+				production_speed_buildings_factor = -0.3
+				production_factory_efficiency_gain_factor = -0.25
+				production_factory_max_efficiency_factor = -0.25
+				army_attack_factor = -0.20
+				army_speed_factor = 0.15
+				army_org_factor = -0.25
+				army_defence_factor = -0.3
+			}
+		}
+		
+		RAJ_drug_addiction3 = { 
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea RAJ_drug_addiction3" }
+			picture = BAY_RED_DEVILS
+			modifier = {
+				research_speed_factor = -0.4
+				stability_factor = -0.5
+				production_speed_buildings_factor = -0.6
+				production_factory_efficiency_gain_factor = -0.5
+				production_factory_max_efficiency_factor = -0.55
+				army_attack_factor = -0.5
+				army_speed_factor = 0.5
+				army_org_factor = -0.5
+				army_defence_factor = -0.6
+			}
+		}
+	}
+}
