@@ -57,14 +57,14 @@ BAY_rohm_diplo_category = {
                 PLN_catholic_support    
                 }
                 create_country_leader = {
-                    name = "Martin Bormann"
-                    #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-                    picture = "gfx/leaders/PLN/Commisar_Martin_Bormann.tga"
-                    expire = "1965.1.1"
+                    name = "Hans Frank"
+                    desc = "Hans_Frank_desc"
+                    picture = "gfx/leaders/PLN/Hans_Frank.png"
+                    expire = "2020.1.1"
                     ideology = nazi_colonial
                     traits = {
                     }
-                }   
+                }	   
             }
         }
         ai_will_do = {
@@ -94,8 +94,6 @@ BAY_rohm_diplo_category = {
             owns_state = 189
             owns_state = 190
             owns_state = 810
-            owns_state = 95
-            owns_state = 96
         }
         visible = {
             original_tag = BAY
@@ -210,7 +208,6 @@ BAY_rohm_diplo_category = {
                 exists = no
             }
             BLT = {
-                is_puppet_of = NGU
                 owns_state = 96
             }    
         }
@@ -265,9 +262,9 @@ BAY_rohm_diplo_category = {
                         }
                     }
                     create_country_leader = {
-                        name = "hohol"
+                        name = "Richard Baer"
                         #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-                        picture   = "gfx/leaders/UKR/placeholder.png"
+                        picture = "gfx/leaders/PLN/Portrait_Germany_Richard_Baer"
                         expire = "1965.1.1"
                         ideology = nazi_colonial
                         traits = {
@@ -353,8 +350,8 @@ BAY_rohm_diplo_category = {
             NOT = {
                 country_exists = ROM
             }
-            BAY = {
-                has_puppet = UKR
+            UKR = {
+                is_puppet_of = BAY
             }
         }
         visible = {
@@ -477,7 +474,9 @@ BAY_rohm_diplo_category = {
         available  = {    
             has_war = no
             owns_state = 16
-            has_puppet = BLI
+            BLI = {
+                is_puppet_of = BAY
+            }
             NOT = {
                 country_exists = FRE
             }
@@ -502,18 +501,19 @@ BAY_rohm_diplo_category = {
                 add_popularity = {
                     ideology = revolutionary_nationalist
                     popularity = 1
-                }
+                } 
                 set_cosmetic_tag = FRE_rohm_occupation
                 create_country_leader = {
-                    name = "french retard"
+                    name = "Jacques Doriot"
                     #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-                    picture   = "gfx/leaders/FRE/shit.png"
+                    picture   = "gfx/leaders/FRE/Portrait_France_Jacques_Doriot_Political.tga"
                     expire = "1965.1.1"
                     ideology = nazi_puppet
                     traits = {
                     }
                 }
             }
+            transfer_state = 28
             hidden_effect = {
                 BLI = {
                     every_owned_state = {
@@ -537,7 +537,9 @@ BAY_rohm_diplo_category = {
         available  = {    
             has_war = no
             owns_state = 210
-            has_puppet = UKR
+            UKR = {
+                is_puppet_of = BAY
+            }
             NOT = {
                 country_exists = RUS
             }
@@ -553,7 +555,95 @@ BAY_rohm_diplo_category = {
             release_puppet = RUS
             RUS = {
                 set_cosmetic_tag = RUS_rohm_occupation
+                create_country_leader = {
+                    name = "Martin Bormann"
+                    #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+                    picture = "gfx/leaders/RUS/Commisar_Martin_Bormann.tga"
+                    expire = "1965.1.1"
+                    ideology = nazi_colonial
+                    traits = {
+                    }
+                }
             }
+            UKR = {
+                transfer_state = 220
+                transfer_state = 224
+                transfer_state = 260
+                transfer_state = 265
+                transfer_state = 245
+                transfer_state = 218
+                transfer_state = 194
+            }
+            BAY = {
+                transfer_state = 137
+            }
+            BLT = {
+                transfer_state = 505
+                transfer_state = 204
+                transfer_state = 206
+                transfer_state = 207
+                transfer_state = 828
+                transfer_state = 210
+                transfer_state = 209
+                transfer_state = 208
+                transfer_state = 222
+                transfer_state = 195
+                transfer_state = 244
+                transfer_state = 263
+                transfer_state = 246
+                transfer_state = 829
+                transfer_state = 242
+                transfer_state = 243
+                transfer_state = 241
+            }
+            TSB = {
+                transfer_state = 560
+                set_cosmetic_tag = TSB_Siberian_Commissar	
+                set_politics = {	
+                ruling_party = revolutionary_nationalist
+                    elections_allowed = no
+                    last_election = "1935.12.17"
+                    election_frequency = 48
+                }
+                create_country_leader = {
+                    name = "Siberian Volkscouncil"
+                    #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+                    picture   = "gfx/leaders/TSB/TSB_Siberian_Volkshal.tga"
+                    expire = "1965.1.1"
+                    ideology = nazi_puppet
+                    traits = {
+                    }
+                }
+                transfer_state = 578
+                transfer_state = 570
+                transfer_state = 571	
+                transfer_state = 516
+                transfer_state = 577	
+                transfer_state = 644	
+                transfer_state = 574	
+                transfer_state = 562	
+                transfer_state = 637	
+                transfer_state = 563		
+                transfer_state = 564
+                transfer_state = 566
+                transfer_state = 567
+                transfer_state = 575
+                transfer_state = 576
+                transfer_state = 568
+                transfer_state = 569
+                transfer_state = 409
+                transfer_state = 408
+                transfer_state = 561
+                transfer_state = 579
+                transfer_state = 580
+                transfer_state = 653
+                transfer_state = 572
+                transfer_state = 403
+                transfer_state = 866
+                transfer_state = 654
+                transfer_state = 40
+
+            }	
         }
         ai_will_do = {
             factor = 1000

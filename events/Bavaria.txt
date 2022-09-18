@@ -40,6 +40,7 @@ country_event = { #Pick a leader, any leader.
 		set_politics = {
 			ruling_party = revolutionary_nationalist
 		}
+		set_cosmetic_tag = BAY_rohm_bavaria
 	}
 	option = { #Himmler
 		name = bay.2.c
