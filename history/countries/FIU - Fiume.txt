@@ -293,6 +293,36 @@ create_navy_leader = {
 	maneuvering_skill = 6
 	coordination_skill = 6
 }
+create_navy_leader = {
+	name = "Ingio Campioni"
+	portrait_path = "gfx/leaders/FIU/Portrait_Italy_Inigo_Campioni.dds"
+	traits = { green_water_expert gunnery_expert }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	maneuvering_skill = 5
+	coordination_skill = 5
+}
+create_navy_leader = {
+	name = "Giuseppe Fioravanzo"
+	portrait_path = "gfx/leaders/FIU/Portrait_Italy_Giuseppe_Fioravanzo.dds"
+	traits = { green_water_expert gunnery_expert }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+create_navy_leader = {
+	name = "Angelo Iachino"
+	portrait_path = "gfx/leaders/FIU/Portrait_Italy_Angelo_Iachino.dds"
+	traits = { green_water_expert gunnery_expert }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	maneuvering_skill = 4
+	coordination_skill = 4
+}
 create_country_leader = {
 	name = "Gabriele D'Annunzio"
 	#desc = "FIU_Gabriele_desc"
