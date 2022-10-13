@@ -1,0 +1,188 @@
+ideas = {
+
+	country = {
+
+		ROC_Colab_Govern = {
+			picture = ROC_collab
+			modifier = {
+			political_power_factor = -0.3
+			}
+		}
+
+		ROC_sucess_reforms = {
+			picture = industrial_idea
+			modifier = {
+			production_factory_efficiency_gain_factor = 0.1
+			production_factory_max_efficiency_factor = 0.1
+			industrial_capacity_factory = 0.1
+			}
+		}
+
+		ROC_untrained_army = {
+			picture = CRW_Unrest
+			modifier = {
+			army_attack_factor = -0.1
+			army_org_factor = -0.2
+			}
+		}
+		ROC_pre_right = {
+			picture = ROC_martial
+			modifier = {
+			industrial_capacity_factory = -0.95	
+			consumer_goods_factor = 0.5
+			}	
+		}
+
+		ROC_purge = {
+			picture = ROC_purge
+			modifier = {
+			command_power_gain_mult = -0.25
+			experience_gain_army_unit = -0.25	
+			army_org_factor = -0.25
+			army_org_regain = -0.25
+			}
+		}
+
+		ROC_desertion = {
+		picture = ROC_dessertion
+			modifier = {
+			command_power_gain_mult = -0.25
+			experience_gain_army_unit = -0.25	
+			army_attack_factor = -0.2
+			army_defence_factor = -0.2
+			}
+		}
+
+		ROC_anti_commie = {
+			picture = socialist_purge
+			modifier = {
+			social_democrat_acceptance = -25
+			libertarian_socialist_acceptance = -75
+			authoritarian_socialist_acceptance = -75
+			libertarian_socialist_acceptance = -75
+			unisocialist_acceptance = -75
+			}
+		}
+
+		ROC_maohunt = {
+			picture = ROC_maohunt
+			modifier = {
+			stability_weekly = -0.02
+			war_support_weekly = -0.02
+			}
+		}
+
+		##############
+
+		ROC_cwar_effort = {
+		picture = ROC_Cwar_effort
+			modifier = {
+			weekly_manpower = -2086 
+			consumer_goods_factor = -0.1
+			industrial_capacity_factory = 0.1
+			production_speed_buildings_factor = 0.1
+			stability_weekly = -0.01
+			}
+		}
+
+		ROC_cwar_child_labour = {
+			picture = ROC_child_labour
+			modifier = {
+			production_speed_buildings_factor = 0.3
+			weekly_manpower = -4071
+			stability_weekly = -0.01
+			}
+		}
+
+		ROC_cwar_work_death = {
+			picture = ROC_child_labour
+			modifier = {
+			production_speed_buildings_factor = 0.3
+			weekly_manpower = -901
+			stability_weekly = -0.01
+			industrial_capacity_factory = 0.25
+			production_speed_buildings_factor = 0.25
+			production_factory_efficiency_gain_factor = 0.25 
+			industry_repair_factor = 0.25
+			}
+		}
+		ROC_cwar_work_semi_death = {
+			picture = ROC_child_labour
+			modifier = {
+			production_speed_buildings_factor = 0.1
+			industrial_capacity_factory = 0.1
+			production_speed_buildings_factor = 0.15
+			production_factory_efficiency_gain_factor = 0.05
+			industry_repair_factor = 0.15
+			}
+		}
+
+		ROC_cwar_overclocked_factories = {
+			picture = ROC_work
+			modifier = {
+			industrial_capacity_factory = 0.5
+			}
+		}
+
+		ROC_cwar_hold_line = {
+			picture = ROC_hold_line
+			modifier = {
+			army_defence_factor = 0.25
+			industrial_capacity_factory = -0.1
+			production_speed_buildings_factor = -0.1
+			}
+		}
+
+		ROC_cwar_nationalist_terror	 = {
+			picture = ROC_bomb_prc
+			modifier = {
+			war_support_weekly = -0.02
+			stability_weekly = -0.02
+			army_morale_factor = -0.2
+			consumer_goods_factor = 0.1
+			}
+		}
+
+		ROC_cwar_stream_gun = {
+			picture = ROC_stream_gun	
+			equipment_bonus = {
+
+				infantry_equipment = {
+				build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+
+		ROC_cwar_conscript_ppl = {
+		picture = ROC_consc
+			modifier = {
+			recruitable_population = 0.05
+			}
+		}
+
+		ROC_cwar_failed_offensive  = {
+			picture = ROC_failed_offense
+			modifier = {
+			army_attack_factor = -0.1
+			army_defence_factor = -0.1
+			supply_consumption_factor = 0.5
+			}
+		}
+
+		ROC_cwar_destable_commie  = {
+			picture = ROC_unity
+			modifier = {
+			political_power_factor = -0.25
+			war_support_weekly = -0.02
+			}
+		}
+
+		ROC_cwar_sabotoge_factory_commie = {
+			picture = ROC_sab_PRC
+			modifier = {
+			industrial_capacity_factory = -0.25
+			consumer_goods_factor = 0.25
+			}
+		}
+	}
+}

@@ -1,0 +1,74 @@
+ideas = {
+
+country = {
+
+CRF_cwar_scorched_earth = {
+	picture = ROC_unity
+	modifier = {
+	army_core_defence_factor = 0.15
+	org_loss_when_moving = 0.1
+			}
+        }
+	CRF_cwar_waves = {
+	picture = ROC_unity
+	modifier = {
+	experience_loss_factor = 0.25
+	army_attack_factor = 0.1
+			}
+        }
+	CRF_cwar_waves_2 = {
+	picture = ROC_unity
+	modifier = {
+	experience_loss_factor = 0.30
+	army_attack_factor = 0.15
+			}
+        }	
+	CRF_cwar_child_labour = {
+	picture = ROC_unity
+	modifier = {
+	weekly_manpower = -1200
+	industrial_capacity_factory = 0.15
+	consumer_goods_factor = -0.05
+			}
+        }	
+	CRF_cwar_bad_guns = {
+	picture = ROC_unity
+	equipment_bonus = {
+  	infantry_equipment = {
+    build_cost_ic = -0.1 instant = yes
+  	}
+	}
+	modifier = {
+	weekly_manpower = -450
+	consumer_goods_factor = -0.05
+			}
+        }	
+	CRF_cwar_old_ways = {
+	picture = ROC_unity
+	modifier = {
+		non_core_manpower = 0.25
+		recruitable_population = 0.1
+		monthly_population = 0.25
+		research_speed_factor = -0.2
+		industrial_capacity_factory = -0.15
+			}
+        }
+	CRF_cwar_peasents_cant_read_kek = {
+	picture = ROC_unity
+	modifier = {
+		recruitable_population = 0.03
+		research_speed_factor = -0.15
+		industrial_capacity_factory = 0.05
+			}
+        }
+	CRF_cwar_failed_offensive  = {
+	picture = ROC_unity
+	modifier = {
+	army_attack_factor = -0.1
+	army_defence_factor = -0.1
+	supply_consumption_factor = 0.5
+			}
+		}
+
+	}
+}

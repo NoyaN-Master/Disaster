@@ -36,8 +36,8 @@ on_actions = {
     }
     on_startup = {
         effect = {
-            ROM = { 
-                country_event = { id = rom.1 }
+            ROC = { 
+                country_event = { id = roc.1 }
             }
         }
     }

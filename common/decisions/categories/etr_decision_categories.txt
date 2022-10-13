@@ -1,0 +1,24 @@
+etr_cwar_cat	 = {		
+	priority = 9	
+	icon = GFX_category_icon	
+	
+	allowed = {
+	
+	}
+	visible = {		
+     tag = etr
+     has_country_flag = etr_decisions_cwar
+	}
+}
+etr_cwar_cat_2 = {		
+	priority = 8	
+	icon = GFX_category_icon	
+	
+	allowed = {
+	
+	}
+	visible = {		
+     tag = etr
+     has_country_flag = etr_decisions_cwar
+	}
+}

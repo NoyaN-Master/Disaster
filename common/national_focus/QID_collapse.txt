@@ -1,0 +1,477 @@
+focus_tree = {
+	id = QID_cwar
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = QID
+		}
+		}
+		continuous_focus_position = { x = 100 y = 5000 }
+	default = no	
+	
+		focus = {
+		id = QID_focus_1
+		icon = ""
+		x = 8
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		QID = { country_event = { id = qid.1}}
+		add_stability = 0.05
+		}
+	}
+	
+		focus = {
+		id = QID_focus_2
+		icon = GFX_goal_QID_Japanese_Exiles
+		x = 8
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {focus = QID_focus_1}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		QID = { country_event = { id = qid.2}}
+		add_war_support = 0.1
+		add_command_power = 75
+		}
+	}
+	focus = {
+		id = QID_focus_3
+		icon = GFX_goal_QID_emperors_choice
+		x = 8
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {focus = QID_focus_2}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		QID = { country_event = { id = qid.3}}
+		}
+	}
+	focus = {
+		id = QID_focus_4 #JAP
+		icon = GFX_goal_QID_Cherry_Blossoms
+		x = 1
+		y = 4
+		cost = 5
+		available = {has_country_flag = JapCringe_flag}
+		available_if_capitulated = yes
+		prerequisite = {focus = QID_focus_3}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			QID = { country_event = { id = qid.4}}
+		}
+	}
+	focus = {
+		id = QID_focus_5 #Puyi
+		icon = GFX_goal_QID_The_Emperors_will
+		x = 15
+		y = 4
+		cost = 5
+		available = {has_country_flag = Puyibased_flag}
+		available_if_capitulated = yes
+		prerequisite = {focus = QID_focus_3}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			QID = { country_event = { id = qid.5}}
+		}
+	}
+		focus = {
+		id = QID_focus_6
+		icon = ""
+		x = 13
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {focus = QID_focus_5}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.10
+			add_stability = 0.05
+			add_ideas = QID_cwar_puyi_good_ppl
+		}
+	}
+		focus = {
+		id = QID_focus_7
+		icon = ""
+		x = 17
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {focus = QID_focus_5}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	 		add_ideas = QID_cwar_quality_hard
+			add_stability = 0.05
+		}
+	}
+		focus = {
+		id = QID_focus_8
+		icon = ""
+		x = 13
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {focus = QID_focus_6}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_technology = {
+   				tech_field_hospital = 1
+			}
+
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 1000
+				producer = ROC
+			}
+		}
+	}
+		focus = {
+		id = QID_focus_9
+		icon = ""
+		x = 17
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {focus = QID_focus_7}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = QID_TT_PUYI_SIDELINE
+			hidden_effect = {
+	 		delete_unit_template_and_units = {
+    			division_template = "Japan Garrison"
+   				disband = yes
+			}
+				608 = {create_unit = {
+					division = "name = \"Qing Loyalist\" division_template = \"Qing Loyalist\" start_experience_factor = 1.0 start_equipment_factor = 0.5"
+					owner = QID
+				}	
+			}
+				608 = {create_unit = {
+				division = "name = \"Qing Loyalist\" division_template = \"Qing Loyalist\" start_experience_factor = 1.0 start_equipment_factor = 0.5"
+    			owner = QID
+			}
+		}
+				608 = {create_unit = {
+				division = "name = \"Qing Loyalist\" division_template = \"Qing Loyalist\" start_experience_factor = 1.0 start_equipment_factor = 0.5"
+    			owner = QID
+			}
+		}		608 = {create_unit = {
+				division = "name = \"Qing Loyalist\" division_template = \"Qing Loyalist\" start_experience_factor = 1.0 start_equipment_factor = 0.5"
+    			owner = QID
+			}
+		}		608 = {create_unit = {
+				division = "name = \"Qing Loyalist\" division_template = \"Qing Loyalist\" start_experience_factor = 1.0 start_equipment_factor = 0.5"
+    			owner = QID
+			}
+		}		608 = {create_unit = {
+				division = "name = \"Qing Loyalist\" division_template = \"Qing Loyalist\" start_experience_factor = 1.0 start_equipment_factor = 0.5"
+    			owner = QID
+			}
+		}		608 = {create_unit = {
+				division = "name = \"Qing Loyalist\" division_template = \"Qing Loyalist\" start_experience_factor = 1.0 start_equipment_factor = 0.5"
+    			owner = QID
+			}
+		}
+	}
+	}
+}
+		focus = {
+		id = QID_focus_10
+		icon = ""
+		x = 13
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {focus = QID_focus_8}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			QID = { country_event = { id = qid.10}}
+			custom_effect_tooltip = QID_TT_PUYI_MILITIA
+			hidden_effect = {
+				division_template = {
+					name = "Qing Militia"				# Represents: two-division infantry corps (generally poorly-equipped, but decent experience),
+					division_names_group = CRF_INF_01
+										#	PRC divisions were well-trained in guerilla mountain tactics.
+					regiments = {
+						infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 1 y = 0 }
+					}
+					support = {
+						reccon = { x = 0 y = 0 }
+					}
+						priority = 1
+				}	
+
+				608 = {create_unit = {
+				division = "name = \"Qing Militia\" division_template = \"Qing Militia\" start_experience_factor = 1.0 start_equipment_factor = 0.5"
+				owner = QID
+				}
+			}
+				608 = {create_unit = {
+				division = "name = \"Qing Militia\" division_template = \"Qing Militia\" start_experience_factor = 1.0 start_equipment_factor = 0.5"
+				owner = QID
+				}
+			}
+				608 = {create_unit = {
+				division = "name = \"Qing Militia\" division_template = \"Qing Militia\" start_experience_factor = 1.0 start_equipment_factor = 0.5"
+				owner = QID
+				}
+			}
+				608 = {create_unit = {
+				division = "name = \"Qing Militia\" division_template = \"Qing Militia\" start_experience_factor = 1.0 start_equipment_factor = 0.5"
+				owner = QID
+				}
+			}
+
+			}
+		}
+	}
+
+		focus = {
+		id = QID_focus_11
+		icon = ""
+		x = 17
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {focus = QID_focus_9}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = QID_cwar_Partisians
+		}
+	}
+		focus = {
+		id = QID_focus_12
+		icon = GFX_goal_QID_Import_japanese_experts
+		x = 3
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {focus = QID_focus_4}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	 add_ideas = QID_cwar_jap_oversight
+	 hidden_effect = {add_ideas = QID_cwar_qing_jap_who}
+		}
+	}
+		focus = {
+		id = QID_focus_13
+		icon = GFX_goal_QID_sideline_qing_officers
+		x = -1
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {focus = QID_focus_4}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_idea = QID_cwar_qing_jap_who
+		}
+	}
+		focus = {
+		id = QID_focus_14
+		icon = GFX_goal_QID_promote_billingualism_in_officers
+		x = 3
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {focus = QID_focus_12}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	 swap_ideas = {
+    remove_idea = QID_cwar_jap_oversight
+    add_idea = QID_cwar_jap_oversight_2
+		}
+	}
+}
+		focus = {
+		id = QID_focus_15
+		icon = GFX_goal_QID_death_before_dishonor
+		x = -1
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {focus = QID_focus_13}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	add_ideas = QID_cwar_bushido_tactics
+		}
+	}
+		focus = {
+		id = QID_focus_16
+		icon = GFX_goal_QID_refugees_welcome
+		x = 3
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {focus = QID_focus_14}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = QID_cwar_jap_refugees
+			hidden_effect = {
+				division_template = {
+					name = "Japenese Militia"				# Represents: two-division infantry corps (generally poorly-equipped, but decent experience),
+					division_names_group = CRF_INF_01
+										#	PRC divisions were well-trained in guerilla mountain tactics.
+					regiments = {
+						infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 1 y = 0 }
+					}
+					support = {
+						reccon = { x = 0 y = 0 }
+					}
+						priority = 1
+				}	
+
+				608 = {create_unit = {
+				division = "name = \"Japanese Militia\" division_template = \"Japanese Militia\" start_experience_factor = 1.0 start_equipment_factor = 0.5"
+				owner = QID
+				}
+			}
+				608 = {create_unit = {
+				division = "name = \"Japanese Militia\" division_template = \"Japanese Militia\" start_experience_factor = 1.0 start_equipment_factor = 0.5"
+				owner = QID
+				}
+			}
+				608 = {create_unit = {
+				division = "name = \"Japanese Militia\" division_template = \"Japanese Militia\" start_experience_factor = 1.0 start_equipment_factor = 0.5"
+				owner = QID
+				}
+			}
+				608 = {create_unit = {
+				division = "name = \"Japanese Militia\" division_template = \"Japanese Militia\" start_experience_factor = 1.0 start_equipment_factor = 0.5"
+				owner = QID
+				}
+			}
+
+			}
+		}
+	}
+		focus = {
+		id = QID_focus_17
+		icon = ""
+		x = -1
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {focus = QID_focus_15}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	 		add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 10000
+				producer = JAP
+			}
+		}
+	}
+		focus = {
+		id = QID_focus_18
+		icon = ""
+		x = 8
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {focus = QID_focus_17 focus = QID_focus_11 focus = QID_focus_10 focus = QID_focus_16}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		 QID = { country_event = { id = qid.6}}
+		}
+	}
+	focus = {
+		id = QID_focus_19
+		icon = ""
+		x = 4
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		available = {has_country_flag = PUYI_WINS_BASED_FLAG}
+		prerequisite = {focus = QID_focus_18}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			QID = { country_event = { id = qid.9}}
+			add_stability = 0.05
+		}
+	}
+		focus = {
+		id = QID_focus_21
+		icon = ""
+		x = 8
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		available = {has_country_flag = JAP_WINS_OK_FLAG}
+		prerequisite = {focus = QID_focus_18}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			QID = { country_event = { id = qid.8}}
+			add_stability = -0.05
+			add_war_support = 0.1
+		}
+	}
+
+
+		focus = {
+		id = QID_focus_23
+		icon = ""
+		x = 12
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		available = {has_country_flag = LIB_CRINGE_FLAG}
+		prerequisite = {focus = QID_focus_18}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			QID = { country_event = { id = qid.7}}
+			add_stability = 0.05
+		}
+	}
+}
+		

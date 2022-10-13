@@ -1,0 +1,9 @@
+owns_whole_china = {
+    or = {
+        tag = ROC
+        tag = PRC
+        tag = CRF
+        tag = ETR
+        tag = QID
+    }
+}

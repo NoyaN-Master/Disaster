@@ -13,7 +13,30 @@ defined_text = { #SUPER EVENT TITLES
         }
         localization_key = "Unification_Atsiz"
     }
-
+    text = { 
+        trigger = {
+            has_global_flag = PRC_Vic_SE
+        }
+        localization_key = "GFX_SPEVNT_PRC_vic"
+    }
+        text = { 
+        trigger = {
+            has_global_flag = ETR_Vic_SE
+        }
+        localization_key = "GFX_SPEVNT_ETR_vic"
+    }
+       text = { 
+        trigger = {
+            has_global_flag = CRF_Vic_SE
+        }
+        localization_key = "GFX_SPEVNT_CRF_vic"
+    }
+ text = { 
+        trigger = {
+            has_global_flag = QID_Vic_SE
+        }
+        localization_key = "GFX_SPEVNT_QID_vic"
+    }
 	text = { 
         trigger = {
             has_global_flag = TUR_Unification_Enver
@@ -23,7 +46,7 @@ defined_text = { #SUPER EVENT TITLES
 
     text = { 
         trigger = {
-            has_global_flag = TUR_Unification_Samet
+            has_global_flag = ROC_Civil_War
         }
         localization_key = "Unification_Samet"
     }
@@ -147,6 +170,36 @@ defined_text = { #SUPER EVENT TITLES
         }
         localization_key = "SAV_UNIF"
     }
+    text = { 
+        trigger = {
+            has_global_flag = cw_china_flag
+        }
+        localization_key = "cw_china"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = roc_vic_flag
+        }
+        localization_key = "roc_vic"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = prc_vic_flag
+        }
+        localization_key = "prc_vic"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = qid_vic_flag
+        }
+        localization_key = "qid_vic"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = crf_vic_flag
+        }
+        localization_key = "crf_vic"
+    }
 }
 
 defined_text = { #SUPER EVENT QUOTES
@@ -163,6 +216,43 @@ defined_text = { #SUPER EVENT QUOTES
             has_global_flag = TUR_Unification_Atsiz
         }
         localization_key = "Unification_Atsiz_TEXT"
+    }
+       text = { 
+        trigger = {
+            has_global_flag = PRC_Vic_SE
+        }
+        localization_key = "GFX_SPEVNT_PRC_vic_TEXT"
+    }
+     text = { 
+        trigger = {
+            has_global_flag = ETR_Vic_SE
+        }
+        localization_key = "GFX_SPEVNT_ETR_vic_TEXT"
+    }
+       text = { 
+        trigger = {
+            has_global_flag = CRF_Vic_SE
+        }
+        localization_key = "GFX_SPEVNT_CRF_vic_TEXT"
+    }
+	   text = { 
+        trigger = {
+            has_global_flag = QID_Vic_SE
+        }
+        localization_key = "GFX_SPEVNT_QID_vic_TEXT"
+    }
+     text = { 
+        trigger = {
+            has_global_flag = ROC_Civil_War
+        }
+        localization_key = "GFX_SPEVNT_China_Civil_TEXT"
+    }
+    
+     text = { 
+        trigger = {
+            has_global_flag = ROC_Vic_SE
+        }
+        localization_key = "GFX_SPEVNT_ROC_vic_Text"
     }
 
     text = { 
@@ -299,6 +389,36 @@ defined_text = { #SUPER EVENT QUOTES
         }
         localization_key = "SAV_UNIF_TEXT"
     }
+    text = { 
+        trigger = {
+            has_global_flag = cw_china_flag
+        }
+        localization_key = "cw_china_TEXT"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = roc_vic_flag
+        }
+        localization_key = "roc_vic_TEXT"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = prc_vic_flag
+        }
+        localization_key = "prc_vic_TEXT"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = qid_vic_flag
+        }
+        localization_key = "qid_vic_TEXT"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = crf_vic_flag
+        }
+        localization_key = "crf_vic_TEXT"
+    }
 }
 
 defined_text = { #SUPER EVENT REMARKS
@@ -316,7 +436,42 @@ defined_text = { #SUPER EVENT REMARKS
         }
         localization_key = "Unification_Atsiz_REMARK"
     }
-
+     text = { 
+        trigger = {
+            has_global_flag = PRC_Vic_SE
+        }
+        localization_key = "GFX_SPEVNT_PRC_vic_REMARK"
+    }
+         text = { 
+        trigger = {
+            has_global_flag = ETR_Vic_SE
+        }
+        localization_key = "GFX_SPEVNT_ETR_vic_REMARK"
+    }
+       text = { 
+        trigger = {
+            has_global_flag = CRF_Vic_SE
+        }
+        localization_key = "GFX_SPEVNT_CRF_vic_REMARK"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = QID_Vic_SE
+        }
+        localization_key = "GFX_SPEVNT_QID_vic_REMARK"
+    }
+   text = { 
+        trigger = {
+            has_global_flag = ROC_Civil_War
+        }
+        localization_key = "GFX_SPEVNT_China_Civil_REMARK"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = ROC_Vic_SE
+        }
+        localization_key = "GFX_SPEVNT_ROC_vic_Text_REMARK"
+    }
     text = { 
         trigger = {
             has_global_flag = TUR_Unification_Enver
@@ -451,6 +606,36 @@ defined_text = { #SUPER EVENT REMARKS
             has_global_flag = SAV_UNIF_FLAG
         }
         localization_key = "SAV_UNIF_REMARK"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = cw_china_flag
+        }
+        localization_key = "cw_china_REMARK"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = roc_vic_flag
+        }
+        localization_key = "roc_vic_REMARK"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = prc_vic_flag
+        }
+        localization_key = "prc_vic_REMARK"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = qid_vic_flag
+        }
+        localization_key = "qid_vic_REMARK"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = crf_vic_flag
+        }
+        localization_key = "crf_vic_REMARK"
     }
 }
 defined_text = { #SUPER EVENT IMAGES
@@ -588,7 +773,36 @@ defined_text = { #SUPER EVENT IMAGES
         }
         localization_key = "GFX_SPEVNT_SAV_UNIF"
     }
-
+	text = { 
+        trigger = {
+            has_global_flag = cw_china_flag
+        }
+        localization_key = "GFX_SPEVNT_China_Civil"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = roc_vic_flag
+        }
+        localization_key = "GFX_SPEVNT_roc_vic"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = prc_vic_flag
+        }
+        localization_key = "GFX_SPEVNT_prc_vic"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = qid_vic_flag
+        }
+        localization_key = "GFX_SPEVNT_qid_vic"
+    }
+	text = { 
+        trigger = {
+            has_global_flag = crf_vic_flag
+        }
+        localization_key = "GFX_SPEVNT_crf_vic"
+    }
 
 
 }
