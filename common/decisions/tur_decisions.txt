@@ -206,7 +206,7 @@ TUR_unification_category = {
         add_state_core = 349
         add_state_core = 797
         add_state_core = 835
-        set_capital = 340
+        set_capital = { state = 340 }
         }
         hidden_effect = {
         set_country_flag = unification_ataturk
@@ -278,7 +278,7 @@ TUR_unification_category = {
         add_state_core = 349
         add_state_core = 797
         add_state_core = 835
-        set_capital = 340
+        set_capital = { state = 340 }
         }    
         }
         ai_will_do = {
@@ -361,7 +361,7 @@ TUR_unification_category = {
         add_state_core = 349
         add_state_core = 797
         add_state_core = 835
-        set_capital = 797       
+        set_capital = { state = 797 }       
         }
         ai_will_do = {
 			factor = 1000
@@ -422,7 +422,7 @@ TUR_unification_category = {
         add_state_core = 349
         add_state_core = 797
         add_state_core = 835
-        set_capital = 797
+        set_capital = { state = 797 }
         }            
         }
         ai_will_do = {
@@ -484,7 +484,7 @@ TUR_unification_category = {
         add_state_core = 349
         add_state_core = 797
         add_state_core = 835
-        set_capital = 340
+        set_capital = { state = 340 }
         }
         }
         ai_will_do = {
@@ -676,7 +676,7 @@ TUR_unification_category = {
         add_state_core = 797
         add_state_core = 835
         set_country_flag = banmilitas
-        set_capital = 797
+        set_capital = { state = 797 }
         }
         }
         ai_will_do = {
@@ -713,30 +713,13 @@ TUR_unification_category = {
         CIB = { every_unit_leader = { set_nationality = SKL } }
         OTH = { every_unit_leader = { set_nationality = SKL } }   
         set_cosmetic_tag = SKL_Fuller_Tag
-        #remove_ideas = turkey_brother_war_idea
         hidden_effect = {
             set_country_flag = unification_fuller
 			add_ideas = SKL_turkish_united_front_1
         }
         SKL = {
-        #add_state_core = 49
-        #add_state_core = 347 
-        #add_state_core = 839
-        #add_state_core = 798
-        #add_state_core = 356
-        #add_state_core = 355
-        #add_state_core = 354
-        #add_state_core = 353
-        #add_state_core = 800
-        #add_state_core = 352
-        #add_state_core = 350
-        #add_state_core = 346
-        #add_state_core = 348
-        #add_state_core = 349
-        #add_state_core = 797
-        #add_state_core = 835
-	load_focus_tree = fuller_unification_Focus
-        set_capital = 797
+            load_focus_tree = fuller_unification_Focus
+            set_capital = { state = 797 }
         }
         }
         ai_will_do = {
@@ -794,7 +777,7 @@ TUR_unification_category = {
         add_state_core = 349
         add_state_core = 797
         add_state_core = 835
-        set_capital = 797
+        set_capital = { state = 797 }
         }
         }
         ai_will_do = {
@@ -805,6 +788,9 @@ TUR_unification_category = {
      CLP_unify_decision = {
 	    fire_only_once = yes
 		cost = 0
+        ai_will_do = {
+			factor = 1000
+		}
         available  = {
         owns_state = 49
         owns_state = 347
@@ -847,7 +833,7 @@ TUR_unification_category = {
         add_state_core = 349
         add_state_core = 797
         add_state_core = 835
-        set_capital = 797
+        set_capital = { state = 797 }
         } 
 	hidden_effect = {
 	    set_global_flag = turkey_civilwar_over
@@ -855,12 +841,8 @@ TUR_unification_category = {
             remove_ideas = turkey_brother_war_idea
             news_event = { id = disasternews.15 }
         }
-        ai_will_do = {
-			factor = 1000
-		}
-
-     }
-     }
+    }
+}
 
       WRF_peace_agreement = {
 	    fire_only_once = yes
@@ -1358,7 +1340,7 @@ WRF_Aryan_Komisar_1 = {
             create_country_leader = {
                 name = "Mustafa Muğlalı"
                 desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-                picture = "gfx\leaders\CIB\Portrait_CIB_Mustafa_Muglali.tga"
+                picture = "gfx/leaders/CIB/Portrait_CIB_Mustafa_Muglali.tga"
                 expire = "1965.1.1"
                 ideology = ultranationalist_subideology
                 traits = {
@@ -1526,14 +1508,14 @@ WRF_China = {
             }
         }    
         complete_effect = {
-            release_puppet = CHI
+            release_puppet = ROC
             release = TUV
             release = SIK
             release = YUN
             release = GUO
             release = MON
             release = XSM
-            CHI = {
+            ROC = {
                 set_cosmetic_tag = Turkish_China_cosmetic
                 set_politics = {
                     ruling_party = ultranationalist
@@ -1655,7 +1637,7 @@ Enver_PactWithJapan = {
 	    fire_only_once = yes
 		cost = 0
         available  = {
-        JAP = {
+        JPN = {
         country_exists = yes
         }
         CIB = {

@@ -924,7 +924,7 @@ focus_tree = {
 			add_ideas = SKL_alexanders_sons
 			country_event = { id = fullerunification.14 }
 			hidden_effect = {
-				country_event = { fullerunification.17 days = 10}
+				country_event = { id = fullerunification.17 days = 10}
 			}
         }
 	}
@@ -1050,8 +1050,8 @@ focus_tree = {
 		prerequisite = { focus = SKL_invade_bulgaria }
 		prerequisite = { focus = SKL_request_egypt }
 		completion_reward = {
-			stability = -0.05
-			manpower = -1000
+			add_stability = -0.05
+			add_manpower = -1000
 			every_owned_state = {
 				add_resistance = -15
 			}
@@ -1067,8 +1067,8 @@ focus_tree = {
 		prerequisite = { focus = SKL_crush_persians }
 		prerequisite = { focus = SKL_request_egypt }
 		completion_reward = {
-			stability = -0.05
-			manpower = -1000
+			add_stability = -0.05
+			add_manpower = -1000
 			every_owned_state = {
 				add_resistance = -15
 			}

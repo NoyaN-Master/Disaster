@@ -440,7 +440,7 @@ focus_tree = {
 		}
 	 completion_reward = {
 		custom_effect_tooltip = WRF_enemies_within
-		set_capital = 340
+		set_capital = { state = 340 }
 		add_political_power = -500
 		remove_ideas = WRF_Greek_Legacy
 		remove_ideas = TUR_Struggle_Front_4

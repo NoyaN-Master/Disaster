@@ -42,7 +42,7 @@ country_event = { #The Red Baron - Food For Families
 	option = {
 		name = ngu.2.a
         custom_effect_tooltip = ngu_hoeltz_influence
-        random_owned_province = {
+        random_owned_state = {
         add_building_construction = {
         type = industrial_complex
         level = 2
@@ -60,7 +60,7 @@ country_event = { #The Red Baron - Food For Families
 		name = ngu.2.b
 		ai_chance = { factor = 100}
         custom_effect_tooltip = ngu_goebbels_influence
-        random_owned_province = {
+        random_owned_state = {
         add_building_construction = {
         type = arms_factory
         level = 2
@@ -130,7 +130,7 @@ country_event = { #The Red Baron - Class Warfare
 		name = ngu.4.a
         custom_effect_tooltip = ngu_hoeltz_influence
         add_stability = -0.08
-        random_owned_province = {
+        random_owned_state = {
         add_building_construction = {
         type = industrial_complex
         level = 1
@@ -149,7 +149,7 @@ country_event = { #The Red Baron - Class Warfare
 		ai_chance = { factor = 100}
         custom_effect_tooltip = ngu_goebbels_influence
         add_stability = 0.05
-        random_owned_province = {
+        random_owned_state = {
         add_building_construction = {
         type = arms_factory
         level = 2
@@ -226,7 +226,7 @@ country_event = { #The Red Baron - Operation Rote
 	    compare = greater_than_or_equals
         }
         }
-        remove_idea = NGU_problem_ideology
+        remove_ideas = NGU_problem_ideology
 		hidden_effect = {	
 		}
 	}
@@ -240,8 +240,8 @@ country_event = { #The Red Baron - Operation Rote
 	    compare = greater_than_or_equals
         }
         }
-        remove_idea = NGU_paramilitary_problem_goebbels
-        remove_idea = NGU_problem_ideology
+        remove_ideas = NGU_paramilitary_problem_goebbels
+        remove_ideas = NGU_problem_ideology
         set_politics = {
 	    ruling_party = unisocialist
 	    last_election = "1936.1.1"
@@ -279,7 +279,7 @@ country_event = { #scleswig coup
     	transfer_troops = yes
 		}
 		add_stability = 0.05
-		political_power = -120
+		add_political_power = -120
 	}
 
 }
@@ -344,7 +344,7 @@ country_event = { # Berling Becomes Capital
 			}
 			complete_national_focus = NGU_Hitler_Agenda
 		}
-		if_else = {
+		if = {
 			limit = {
 				has_government = unisocialist
 			}
@@ -612,7 +612,7 @@ country_event = { # Heyderich Rus Flavor
 	option = {
 		name = ngu.18.a
 		ai_chance = { factor = 100}
-		manpower = -1
+		add_manpower = -1
 }
 }
 

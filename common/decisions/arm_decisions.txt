@@ -1,70 +1,73 @@
 ARM_Pacified_Anatolia_category = {
-
-ARM_Pacified_Anatolia = {
-	fire_only_once = yes
-	cost = 0
-        allowed = { tag = ARM }
-        available  = {
-        has_completed_focus = ARM_Pax_Aeternam
-        owns_state = 355
-        owns_state = 798
-        owns_state = 839
-        owns_state = 356
-        owns_state = 49
-        owns_state = 347
-        owns_state = 797
-        owns_state = 341
-        owns_state = 343
-        owns_state = 340
-        owns_state = 339
-        owns_state = 834
-        owns_state = 164
-        owns_state = 342
-        owns_state = 345
-        owns_state = 346
-        }
-        visible = {
-        original_tag = ARM
-        }    
-        complete_effect = {
-        release_puppet = PAC
-        PAC = {
-        transfer_state = 355
-        transfer_state = 798
-        transfer_state = 839
-        transfer_state = 356
-        transfer_state = 49
-        transfer_state = 347
-        transfer_state = 797
-        transfer_state = 341
-        transfer_state = 343
-        transfer_state = 340
-        transfer_state = 339
-        transfer_state = 834
-        transfer_state = 164
-        transfer_state = 342
-        transfer_state = 345
-        transfer_state = 346
-        }
-        PAC = {
-                set_politics = {
-			ruling_party = autocratic
-			elections_allowed = no
-		}
-                add_popularity = {
-                ideology = autocratic
-                popularity = 0.5
+        ARM_Pacified_Anatolia = {
+                fire_only_once = yes
+                cost = 0
+                ai_will_do = {
+                        factor = 1000
                 }
-                add_popularity = {
-                ideology = libertarian_socialist
-                popularity = 0.25
+                allowed = {
+                        tag = ARM
                 }
-                add_popularity = {
-                ideology = authoritarian_democrat
-                popularity = 0.25
+                available  = {
+                        has_completed_focus = ARM_Pax_Aeternam
+                        owns_state = 355
+                        owns_state = 798
+                        owns_state = 839
+                        owns_state = 356
+                        owns_state = 49
+                        owns_state = 347
+                        owns_state = 797
+                        owns_state = 341
+                        owns_state = 343
+                        owns_state = 340
+                        owns_state = 339
+                        owns_state = 834
+                        owns_state = 164
+                        owns_state = 342
+                        owns_state = 345
+                        owns_state = 346
+                }
+                visible = {
+                        original_tag = ARM
+                }    
+                complete_effect = {
+                        release_puppet = PAC
+                        PAC = {
+                                transfer_state = 355
+                                transfer_state = 798
+                                transfer_state = 839
+                                transfer_state = 356
+                                transfer_state = 49
+                                transfer_state = 347
+                                transfer_state = 797
+                                transfer_state = 341
+                                transfer_state = 343
+                                transfer_state = 340
+                                transfer_state = 339
+                                transfer_state = 834
+                                transfer_state = 164
+                                transfer_state = 342
+                                transfer_state = 345
+                                transfer_state = 346
+                        }
+                        PAC = {
+                                set_politics = {
+                                        ruling_party = autocratic
+                                        elections_allowed = no
+                                }
+                                add_popularity = {
+                                        ideology = autocratic
+                                        popularity = 0.5
+                                }
+                                add_popularity = {
+                                        ideology = libertarian_socialist
+                                        popularity = 0.25
+                                }
+                                add_popularity = {
+                                        ideology = authoritarian_democrat
+                                        popularity = 0.25
+                                }
+                        }
                 }
         }
-        ai_will_do = { factor = 1000 }
-}
-}
 }

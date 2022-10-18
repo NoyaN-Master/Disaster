@@ -401,7 +401,7 @@ country_event = { #investigation-2
         ai_chance = { factor = 100} 
         name = ant.13.a
         add_stability = 0.05
-        manpower = 10000
+        add_manpower = 10000
         country_event = { id = ant.14 days = 3 } 
     }
 }
@@ -419,7 +419,7 @@ country_event = { #investigation-3
         name = ant.14.a
         custom_effect_tooltip = bye_fuller_tt
         add_stability = 0.10
-        manpower = 10000
+        add_manpower = 10000
         hidden_effect = {
         country_event = { id = ant.15 days = 10 } 
         } 
@@ -526,7 +526,7 @@ country_event = { #The Capitol Land Disturbance
         ai_chance = { factor = 100} 
         name = ant.20.a
         add_stability = -0.50
-        manpower = -1900
+        add_manpower = -1900
         hidden_effect = {   
         country_event = { id = ant.8 days = 1 } 
         }

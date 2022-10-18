@@ -274,7 +274,7 @@ crf_cwar_10 = {
         days_mission_timeout = 60
         fire_only_once = no
         available = {                             # makes the decision unable to complete therefore the only option to get the buff is once it does the timeout through a condition
-           crf = { controls_province = 1047 }
+           CRF = { controls_province = 1047 }
 		
         }
         activation = {
@@ -294,7 +294,7 @@ crf_cwar_10 = {
         days_mission_timeout = 60
         fire_only_once = no
         available = {                             # makes the decision unable to complete therefore the only option to get the buff is once it does the timeout through a condition
-           crf = { controls_province = 7137 }
+           CRF = { controls_province = 7137 }
 		
         }
         activation = {
@@ -314,7 +314,7 @@ crf_cwar_10 = {
         days_mission_timeout = 60
         fire_only_once = no
         available = {                             # makes the decision unable to complete therefore the only option to get the buff is once it does the timeout through a condition
-           crf = { controls_province = 10000 }
+           CRF = { controls_province = 10000 }
 		
         }
         activation = {
@@ -334,7 +334,7 @@ crf_cwar_10 = {
         days_mission_timeout = 60
         fire_only_once = no
         available = {                             # makes the decision unable to complete therefore the only option to get the buff is once it does the timeout through a condition
-           crf = { controls_province = 9843 }
+           CRF = { controls_province = 9843 }
 		
         }
         activation = {
@@ -354,7 +354,7 @@ crf_cwar_10 = {
         days_mission_timeout = 60
         fire_only_once = no
         available = {                             # makes the decision unable to complete therefore the only option to get the buff is once it does the timeout through a condition
-           crf = { controls_province = 6999}
+           CRF = { controls_province = 6999}
 		
         }
         activation = {
@@ -374,7 +374,7 @@ crf_cwar_10 = {
         days_mission_timeout = 60
         fire_only_once = no
         available = {                             # makes the decision unable to complete therefore the only option to get the buff is once it does the timeout through a condition
-           crf = { controls_province = 7940 }
+           CRF = { controls_province = 7940 }
 		
         }
         activation = {

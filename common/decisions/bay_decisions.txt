@@ -153,15 +153,15 @@ BAY_rohm_diplo_category = {
         fire_only_once = yes
         cost = 0
         allowed = {
-        tag = BAY
-        has_government = revolutionary_nationalist
+            tag = BAY
+            has_ruling_party = revolutionary_nationalist
         }
         available  = {    
-        has_war = no
-        owns_state = 9
-        owns_state = 75
-        owns_state = 74
-        owns_state = 69
+            has_war = no
+            owns_state = 9
+            owns_state = 75
+            owns_state = 74
+            owns_state = 69
         }
         visible = {
             original_tag = BAY
@@ -285,7 +285,7 @@ BAY_rohm_diplo_category = {
         cost = 0
         allowed = {
             tag = BAY
-            has_government = revolutionary_nationalist
+            has_ruling_party = revolutionary_nationalist
         }
         available  = {    
             has_war = no
@@ -342,7 +342,7 @@ BAY_rohm_diplo_category = {
         cost = 0
         allowed = {
             tag = BAY
-            has_government = revolutionary_nationalist
+            has_ruling_party = revolutionary_nationalist
         }
         available  = {    
             has_war = no
@@ -404,7 +404,7 @@ BAY_rohm_diplo_category = {
         cost = 0
         allowed = {
             tag = BAY
-            has_government = revolutionary_nationalist
+            has_ruling_party = revolutionary_nationalist
         }
         available  = {    
             has_war = no
@@ -469,7 +469,7 @@ BAY_rohm_diplo_category = {
         cost = 0
         allowed = {
             tag = BAY
-            has_government = revolutionary_nationalist
+            has_ruling_party = revolutionary_nationalist
         }
         available  = {    
             has_war = no
@@ -532,7 +532,7 @@ BAY_rohm_diplo_category = {
         cost = 0
         allowed = {
             tag = BAY
-            has_government = revolutionary_nationalist
+            has_ruling_party = revolutionary_nationalist
         }
         available  = {    
             has_war = no

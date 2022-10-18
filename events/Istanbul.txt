@@ -87,7 +87,7 @@ country_event = { #The Snow Massacre
 		name = crw.4.a
 		ai_chance = { factor = 1}
 		add_stability = -0.10
-		manpower = -1000
+		add_manpower = -1000
 		country_event = { id = crw.5 days = 3 }
 		news_event = { id = disasternews.14 }
 	}
@@ -629,8 +629,8 @@ country_event = { #based speech
 	}
 	unlock_national_focus = CRW_fight_protest
 	swap_ideas = {
-		remove_idea = CRW_Cons_Idea 
 		add_idea = 	CRW_osman_idea
+		remove_idea = CRW_Cons_Idea
 		}	
 	}
 	remove_idea = CRW_Protests_1
@@ -679,7 +679,7 @@ country_event = { #The Snow Massacre
 		add_stability = 0.10
 		add_political_power = -4.00
 		add_stability = -0.05
-		remove_idea = CRW_Protests_1
+		remove_ideas = CRW_Protests_1
 	}
 }
 
@@ -705,8 +705,8 @@ country_event = { #invest
 		add_political_power = -4.00
 		add_stability = -0.10
 		swap_ideas = {
-		remove_idea = CRW_Protests_1
-		add_idea = CRW_protests_vahd_1
+			add_idea = CRW_protests_vahd_1
+			remove_idea = CRW_Protests_1
 		}
 		hidden_effect = {
 		country_event = { id = crw.21 days = 5 }	

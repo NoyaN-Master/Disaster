@@ -678,7 +678,7 @@ focus = {
         prerequisite = {focus = IZM_New_Lira}
 		prerequisite = {focus = IZM_Nationalist_Sports}
 		completion_reward = { 
-		remove_idea = IZM_Turkish_Revolution_WorkerDicta	
+		remove_ideas = IZM_Turkish_Revolution_WorkerDicta	
 		random_owned_state = {
 		add_building_construction = {
    		type = arms_factory

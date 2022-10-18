@@ -1,141 +1,134 @@
-
-
 AUT_foreign_deccat = {
     AUT_treaty_venice = {  
-		fire_only_once = yes     
-        allowed = {
-         tag = AUT
-         has_completed_focus = AUT_Destroy_Italy
-        }                 
-        available = {      
-        tag = AUT
-	    AUT = {
-		has_war_with = FIU
-	    }
-	    FIU = {
-	    NOT ={
-		controls_state = 736
-        controls_state = 103
-        controls_state = 163
-        controls_state = 736
-        controls_state = 39
-        controls_state = 811
-	    }	
-	    }				
-        }         
-                     
-        complete_effect = {
-		white_peace = FIU
-        CRT = {
-        transfer_state = 103
-        transfer_state = 163
-        add_state_core = 103
-        add_state_core = 163
-        }
-        AUT = {
-        transfer_state = 736
-        transfer_state = 39
-        transfer_state = 811
-        add_state_core = 736
-        add_state_core = 39
-        add_state_core = 811
-        transfer_state = 160
-        transfer_state = 812
-        }
-        ABL = {
-         transfer_state = 838
-         add_state_core = 838
-		 add_state_core = 44
-        transfer_state = 44
-        }
-		SOR = {
-		add_state_core = 105
-        transfer_state = 105	
+		fire_only_once = yes
+		ai_will_do  = {
+			factor = 100
 		} 
-        }
-		ai_will_do  = { factor = 1000}
-    }
-
-    AUT_Puppet_Hun = {  
-		fire_only_once = yes                        
         allowed = {
-         tag = AUT
-         has_completed_focus = AUT_Restore_Sphere
+			tag = AUT
         }                 
-        available = {      
-        tag = AUT
-	AUT = {
-        has_completed_focus = AUT_ReTake_Huns
-        owns_state = 43
-	}
-	HNG = {
-	NOT = {
-    country_exists = no    
-    }
-	}				
-        }
-        is_good = no                         
-        selectable_mission = yes               
-                     
-        complete_effect = {
-           ai_chance = { factor = 1000}
-		white_peace = HNG
-		annex_country = {
-    	target = HNG
-    	transfer_troops = no
-		}
-		add_stability = 0.10
-		release_puppet = HNG
-		HNG = {
-		create_country_leader = {
-	            name = "Miklos Horthy"
-	            #desc = "AUT_Karl_Renner_desc"
-	            picture = "gfx/leaders/HNG/HNG_Horthy.tga"
-	            expire = "2020.1.1"
-	            ideology = ultranationalist_subideology
-	            traits = {
-	            }
+		available = {      
+			tag = AUT
+			has_completed_focus = AUT_Destroy_Italy
+			AUT = {
+				has_war_with = FIU
 			}
-		if = {
-		limit = {
-		SLK = {
-		is_puppet_of = AUT
-		}
-		}
-		HNG = {
-		transfer_state = 70
-		transfer_state = 71	
-		}		
-		}	
+			FIU = {
+				NOT ={
+					controls_state = 736
+					controls_state = 103
+					controls_state = 163
+					controls_state = 736
+					controls_state = 39
+					controls_state = 811
+				}
+			}				
+        }
+        complete_effect = {
+			white_peace = FIU
+			CRT = {
+				transfer_state = 103
+				transfer_state = 163
+				add_state_core = 103
+				add_state_core = 163
+			}
+			AUT = {
+				transfer_state = 736
+				transfer_state = 39
+				transfer_state = 811
+				add_state_core = 736
+				add_state_core = 39
+				add_state_core = 811
+				transfer_state = 160
+				transfer_state = 812
+			}
+			ABL = {
+				transfer_state = 838
+				add_state_core = 838
+				add_state_core = 44
+				transfer_state = 44
+			}
+			SOR = {
+				add_state_core = 105
+				transfer_state = 105
+			} 
 		}
     }
-	ai_will_do  = { factor = 1000}
-}
-
-AUT_Puppet_Bohemia = {
-	fire_only_once = yes                       
+    AUT_Puppet_Hun = {  
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}                      
         allowed = {
-         tag = AUT
-         has_completed_focus = AUT_Restore_Sphere
-        }                 
-        available = {      
-        tag = AUT
-	AUT = {
-		has_completed_focus = AUT_Bohemians
-        owns_state = 9
-        owns_state = 71
+			tag = AUT
+			has_completed_focus = AUT_Restore_Sphere
+		}
+		available = {
+			tag = AUT
+			AUT = {
+				has_completed_focus = AUT_ReTake_Huns
+				owns_state = 43
+			}
+			HNG = {
+				NOT = {
+					country_exists = no
+				}
+			}				
+        }                       
+        selectable_mission = yes
+        complete_effect = {
+			white_peace = HNG
+			annex_country = {
+				target = HNG
+				transfer_troops = no
+			}
+			add_stability = 0.10
+			release_puppet = HNG
+			HNG = {
+				create_country_leader = {
+					name = "Miklos Horthy"
+					#desc = "AUT_Karl_Renner_desc"
+					picture = "gfx/leaders/HNG/HNG_Horthy.tga"
+					expire = "2020.1.1"
+					ideology = ultranationalist_subideology
+				}
+				if = {
+					limit = {
+						SLK = {
+							is_puppet_of = AUT
+						}
+					}
+					HNG = {
+						transfer_state = 70
+						transfer_state = 71
+					}
+				}
+			}
+		}
 	}
-	CEZ = {
-	NOT ={
-		country_exists = no
-	}	
-	}
-	SLK = {
-	NOT ={
-		country_exists = no
-        
-	}	
-	}				
+	AUT_Puppet_Bohemia = {
+		fire_only_once = yes
+		allowed = {
+			tag = AUT
+			has_completed_focus = AUT_Restore_Sphere
+		}
+		available = {
+			tag = AUT
+			AUT = {
+				has_completed_focus = AUT_Bohemians
+				owns_state = 9
+				owns_state = 71
+			}
+			CEZ = {
+				NOT ={
+					country_exists = no
+				}
+			}
+			SLK = {
+				NOT ={
+					country_exists = no
+				}
+			}
         }
         is_good = no                         
         selectable_mission = yes               

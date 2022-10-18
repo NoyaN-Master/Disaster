@@ -287,7 +287,7 @@ focus_tree = {
 		cost = 5
 		prerequisite = { focus = PRE_thrust_south }	
 		available = {
-			always= false
+			always = no
 		}
 		mutually_exclusive = {
 		focus =  PRE_anschluss
@@ -388,7 +388,7 @@ focus_tree = {
 		focus =  PRE_little_german_solution
 		}
 		available = {
-			always= false
+			always = no
 		}
 		completion_reward = {
 		}
@@ -543,7 +543,7 @@ focus_tree = {
 		focus =  PRE_generalplan_ost
 		}
 		available = {
-			always= false
+			always = no
 		}		
 		prerequisite = { focus = PRE_strike_poland }
         completion_reward = {
@@ -578,7 +578,7 @@ focus_tree = {
 		focus =  PRE_puppet_poland
 		}
 		available = {
-			always= false
+			always = no
 		}			
 		prerequisite = { focus = PRE_strike_poland }	
 		completion_reward = {
@@ -1585,20 +1585,20 @@ focus_tree = {
 		
 		completion_reward = {
 			64 = {
-			limit = {
-				free_building_slots = {
-					building = industrial_complex
-					size > 1
-					include_locked = yes
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
 				}
-			}
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}
-		}	
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}	
 			63 = {
 			limit = {
 				free_building_slots = {
@@ -2700,19 +2700,15 @@ focus_tree = {
 		cost = 5		
 		prerequisite = { focus = PRE_junker_victory_focus}
 		select_effect = {
-		add_ideas = PRE_martial_law
-		}
-		hidden_effect = {
-		remove_ideas = PRE_martial_law
+			add_ideas = PRE_martial_law
 		}	
 		completion_reward = {
-		remove_ideas = PRE_political_radicalisation
-		custom_effect_tooltip = PRE_martial_law_tooltip
-		show_ideas_tooltip = PRE_martial_law
-		remove_ideas = PRE_martial_law
+			remove_ideas = PRE_political_radicalisation
+			custom_effect_tooltip = PRE_martial_law_tooltip
+			show_ideas_tooltip = PRE_martial_law
+			remove_ideas = PRE_martial_law
 		}
 	}
-	
 	focus = {
 		id = PRE_strike_at_the_nationalists
 		icon = GFX_goal_junkers_strike_nationalists

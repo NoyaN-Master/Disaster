@@ -6,14 +6,9 @@ focus_tree = {
 			add = 10
 			tag = ROC
 		}
-		}
-		continuous_focus_position = { x = 100 y = 5000 }
+	}
+	continuous_focus_position = { x = 100 y = 5000 }
 	default = no	
-	
-	
-	
-	
-	
 	focus = {
 		id = ROC_focus_1
 		icon = GFX_goal_ROC_chinese_new_yr
@@ -195,25 +190,33 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = ROC_TT_DISASTER
-        hidden_effect = {set_capital = 592}
-	    hidden_effect = {load_focus_tree = roc_focus_2}
-		hidden_effect = {remove_ideas = ROC_colab_govern remove_ideas = ROC_sucess_reforms remove_ideas = ROC_maohunt remove_ideas = ROC_desertion}
-		hidden_effect = {	load_oob = "ROC_cwar"
-		delete_unit_template_and_units = {
-    division_template = "Juntuán"
-    disband = no
-}
-delete_unit_template_and_units = {
-    division_template = "Renmin Jundui"
-    disband = no
-}
-}
-hidden_effect = {set_country_flag = ROC_SPVENT_Flag}
-
+			custom_effect_tooltip = ROC_TT_DISASTER
+			hidden_effect = {
+				set_capital = { state = 592 }
+			}
+			hidden_effect = {
+				load_focus_tree = roc_focus_2
+			}
+			hidden_effect = {
+				remove_ideas = ROC_colab_govern
+				remove_ideas = ROC_sucess_reforms
+				remove_ideas = ROC_maohunt
+				remove_ideas = ROC_desertion
+			}
+			hidden_effect = {
+				load_oob = "ROC_cwar"
+				delete_unit_template_and_units = {
+					division_template = "Juntuán"
+					disband = no
+				}
+				delete_unit_template_and_units = {
+					division_template = "Renmin Jundui"
+					disband = no
+				}
+			}
+			hidden_effect = {
+				set_country_flag = ROC_SPVENT_Flag
+			}
 		}
 	}
-
 }
-
-

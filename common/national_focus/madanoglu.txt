@@ -321,8 +321,8 @@ focus_tree = {
 		swap_ideas = {
 		remove_idea = IZM_Crooked_Arrows_2
 		add_idea = IZM_Crooked_Arrows_3
-		},
-		country_event =  { id = ant.37 days = 1}
+		}
+		country_event = { id = ant.37 days = 1}
         }
 	}
 
@@ -372,7 +372,6 @@ focus_tree = {
 		}
         }
 	}
-
     focus = {
 		id = IZM_Find_Atsiz
 		icon = GFX_goal_RUS_Buddhism
@@ -391,10 +390,10 @@ focus_tree = {
 		select_effect = {
 		}
 		completion_reward = {
-		remove_idea = IZM_Crooked_Arrows_4
-		add_idea = IZM_Crooked_Arrows_6
+			swap_ideas = {
+				remove_idea = IZM_Crooked_Arrows_4
+				add_idea = IZM_Crooked_Arrows_6
+			}
         }
 	}
-
-
 }

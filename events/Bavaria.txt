@@ -103,7 +103,7 @@ country_event = { #rohm goebell
 
 	trigger = {
 		NOT = {
-			countrey_exists = NGU
+			country_exists = NGU
 		}
 		BAY = {
 			has_government = revolutionary_nationalist

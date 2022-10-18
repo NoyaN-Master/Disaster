@@ -245,7 +245,7 @@ focus_tree = {
         popularity = 0.3
         }
         add_political_power = 200
-        manpower = 15000
+        add_manpower = 15000
         }
 	}
 
@@ -281,19 +281,20 @@ focus_tree = {
 		select_effect = {
 		}
 		completion_reward = {
-		custom_effect_tooltip = CRW_devlet_1
-        add_building_construction = {
-        type = bunker
-        level = 3
-        instant_build = yes
-        province = {
-        all_provinces = yes
-        limit_to_border = yes
-        }
-        }
-        }
+			custom_effect_tooltip = CRW_devlet_1
+			random_owned_state = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+		}
 	}
-
     focus = {
 		id = IZM_expand_mines
 		icon = GFX_goal_IZM_Mines

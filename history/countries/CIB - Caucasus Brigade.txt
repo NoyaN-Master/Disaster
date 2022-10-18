@@ -1,21 +1,17 @@
 capital = 354
 oob = "CIB_1936"
-
 news_event = { id = disasternews.1 days = 1 }
 set_convoys = 50
-
 set_politics = {
 	ruling_party = revolutionary_nationalist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
-
-add_ideas = 	military_government   
-add_ideas = 	corporatism  
-add_ideas = 	industrialized_society
+add_ideas = military_government   
+add_ideas = corporatism  
+add_ideas = industrialized_society
 add_ideas = turkey_brother_war_idea
-
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -31,7 +27,6 @@ set_technology = {
 	naval_bomber1 = 1
 	early_bomber = 1
 	CAS1 = 1
-	
 	fleet_in_being = 1
 	electronic_mechanical_engineering = 1
 	radio = 1
@@ -61,33 +56,26 @@ if = {
 	}
 }
 add_manpower = 100000
-
 add_ideas = CIB_Enver_Idea
 add_ideas = CIB_Zombie
 add_ideas = CIB_King_Hill
 add_ideas = CIB_OrduVatan
-
 add_ideas = CIB_enver_hog
-
 add_equipment_to_stockpile = {
     type = infantry_equipment
     amount = 1400
     producer = CIB
 }
-
 add_equipment_to_stockpile = {
     type = support_equipment_1
     amount = 3000
     producer = CIB
 }
-
 declare_war_on = {
-		target = ARM #tag
-		type = annex_everything #cb
+	target = ARM #tag
+	type = annex_everything #cb
 }
-
 set_country_flag = enver_charge
-
 set_popularities = {
 	conservative = 0
 	liberal = 0
@@ -102,7 +90,6 @@ set_popularities = {
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
-
 create_country_leader = {
 	name = "Enver Pasha"
 	#desc = "SES_Zeljko_Raznatovic_desc"
@@ -113,7 +100,6 @@ create_country_leader = {
 		#
 	}
 }
-
 create_country_leader = {
 	name = "Samet Pasha"
 	#desc = "SES_Zeljko_Raznatovic_desc"
@@ -124,10 +110,9 @@ create_country_leader = {
 		#
 	}
 }
-
 create_field_marshal = {
 			name = "Enver Pasha"
-			picture = "gfx/leaders/CIB/Portrait_CIB_Enver_Pasha.tga"
+			portrait_path = "gfx/leaders/CIB/Portrait_CIB_Enver_Pasha.tga"
 			traits = { war_hero brilliant_strategist war_hero infantry_officer hill_fighter  enverist_general}
 			skill = 3
 			attack_skill = 2
@@ -135,10 +120,9 @@ create_field_marshal = {
 			planning_skill = 2
 			logistics_skill = 2
 			}	
-			
 create_corps_commander = {
 			name = "Samet Pasha"
-			picture = "gfx/leaders/CIB/Portrait_CIB_Samet.tga"
+			portrait_path = "gfx/leaders/CIB/Portrait_CIB_Samet.tga"
 			traits = { offensive_doctrine enverist_general }
 			skill = 2
 			attack_skill = 3
@@ -146,10 +130,9 @@ create_corps_commander = {
 			planning_skill = 3
 			logistics_skill = 2
 			}
-
 create_corps_commander = {
 		name = "Mustafa Muğlalı"
-		picture = "gfx/leaders/CIB/Portrait_CIB_Mustafa_Muglali.tga"
+		portrait_path = "gfx/leaders/CIB/Portrait_CIB_Mustafa_Muglali.tga"
 		traits = { war_hero infantry_officer harsh_leader  enverist_general}
 		skill = 3 #7
 		attack_skill = 3
@@ -157,4 +140,3 @@ create_corps_commander = {
 		planning_skill = 1
 		logistics_skill = 1
 	}
-							

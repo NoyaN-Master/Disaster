@@ -107,7 +107,12 @@ focus_tree = {
 		select_effect = {
 		}
 		completion_reward = {
-			hidden_effect = {country_event = russia.6 days = 2}
+			hidden_effect = {
+				country_event = {
+					id = russia.6
+					days = 2
+				}
+			}
 			custom_effect_tooltip = RUS_disaster_tt
         }
 	}

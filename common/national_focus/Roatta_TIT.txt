@@ -8,7 +8,6 @@ focus_tree = {
 	}
     default = no
 	continuous_focus_position = { x = 100 y = 1600 }
-	
     focus = {
 		id = roatta_tree_start
 		icon = GFX_goal_Mussolini_begin
@@ -20,7 +19,6 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		hidden_effect = {
-		}
 		}
 	}
+}

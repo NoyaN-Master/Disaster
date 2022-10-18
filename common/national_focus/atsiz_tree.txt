@@ -361,7 +361,7 @@ focus_tree = {
 			230 = {
 				add_manpower = -10000	
 			}
-			add_experience = 70
+			army_experience = 70
 		}
 	}
 	focus = {
@@ -653,7 +653,7 @@ focus_tree = {
 			TAT = {
 				is_puppet_of = WRF
 			}	
-			CHI = {
+			ROC = {
 				is_puppet_of = WRF
 			}
 			INR = {
@@ -716,7 +716,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = atsiz_endingtt3
-			country_event = { id = atsiz.11 daqys = 1}
+			country_event = { id = atsiz.11 days = 1}
 		}
 	}
 	focus = {
@@ -908,7 +908,7 @@ focus_tree = {
 			has_completed_focus = WRF_Sons_Of_Eurasia	
 		}
 		completion_reward = {
-			SYR = {
+			SRY = {
 				every_owned_state = {
 					add_claim_by = WRF
 				}
@@ -954,7 +954,7 @@ focus_tree = {
 		available = {
 			NOT = {
 				country_exists = IQR
-				country_exists = SYR
+				country_exists = SRY
 				country_exists = PAL
 			}
 		}
@@ -1201,7 +1201,7 @@ focus_tree = {
 					add_claim_by = WRF
 				}
 			}
-			CHI = {
+			ROC = {
 				every_owned_state = {
 					add_claim_by = WRF
 				}

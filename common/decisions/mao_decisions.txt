@@ -12,9 +12,9 @@ Mao_War_End = {
         tag = YUN
         }  
         complete_effect = {
-        set_capital = 613    
+        set_capital = { state = 613 }    
         set_cosmetic_tag = Mao_Name_Cosmetic    
-        CHI = {    
+        ROC = {    
         every_owned_state = {
         add_core_of = YUN
         }
@@ -30,7 +30,7 @@ Mao_War_End = {
         transfer_troops = yes
         }    
         annex_country = {
-        target = CHI
+        target = ROC
         transfer_troops = yes
         }
         }
