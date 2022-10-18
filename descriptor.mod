@@ -1,4 +1,4 @@
-version="1.12.3*"
+version="0.2"
 tags={
 	"Alternative History"
 }
@@ -41,6 +41,6 @@ replace_path="common/characters"
 replace_path="common/ai_strategy"
 replace_path="common/ai_strategy_plans"
 replace_path="common/ai_peace"
-supported_version="1.12.3*"
+supported_version="1.11.13"
 path="C:/Users/Fatih/Documents/Paradox Interactive/Hearts of Iron IV/mod/disaster"
 remote_file_id="2564150534"
