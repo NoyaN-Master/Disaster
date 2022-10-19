@@ -3900,7 +3900,7 @@ SpriteType = {
 		animationrotationoffset = { x = 0.0 y = 0.0 }
 		animationtexturescale = { x = 1.0 y = 1.0 }
 	}	
-		
+	
 	animation = {	
 		animationmaskfile = "gfx/interface/goals/generic_red_education.png"
 		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
@@ -3924,7 +3924,7 @@ SpriteType = {
 SpriteType = {		
 	name = "GFX_goal_generic_red_officer_shine"	
 	texturefile = "gfx/interface/goals/generic_red_officer.png"	
-	effectFile = "gfx/FX/buttonstate.lua"	
+	effectFile = ""	
 	animation = {	
 		animationmaskfile = "gfx/interface/goals/generic_red_officer.png"
 		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
@@ -3937,7 +3937,7 @@ SpriteType = {
 		animationrotationoffset = { x = 0.0 y = 0.0 }
 		animationtexturescale = { x = 1.0 y = 1.0 }
 	}	
-		
+	
 	animation = {	
 		animationmaskfile = "gfx/interface/goals/generic_red_officer.png"
 		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"

@@ -32,15 +32,15 @@ focus_tree = {
 		cost = 0
 		completion_reward = {
 			custom_effect_tooltip = BAY_rohm_solidifying_rule_tt
-			#create_country_leader = {
-			#	name = "Ernst Rohm"
-			#	desc = "Ernst_Rohm_desc"
-			#	picture = "gfx/leaders/BAY/Ernst_Rohm.tga"
-			#	expire = "1965.1.1"
-			#	ideology = left_national_socialism_subideology
-			#	traits = {
-			#	}
-			#}
+			create_country_leader = {
+				name = "Ernst Rohm"
+				desc = "Ernst_Rohm_desc"
+				picture = "gfx/leaders/BAY/Ernst_Rohm.tga"
+				expire = "1965.1.1"
+				ideology = left_national_socialism_subideology
+				traits = {
+				}
+			}
 		}
 	}
 
