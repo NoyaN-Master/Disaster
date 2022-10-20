@@ -136,9 +136,8 @@ focus_tree = {
 	custom_effect_tooltip = CRF_CWAR_TT_SCOUTS
 	division_template = {
 	name = "Demon Scouts"				# Represents: two-division infantry corps (generally poorly-equipped, but decent experience),
-	division_names_group = CRF_INF_01
-									#	PRC divisions were well-trained in guerilla mountain tactics.
-regiments = {
+	#	PRC divisions were well-trained in guerilla mountain tactics.
+	regiments = {
 		infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 1 y = 0 }
@@ -177,25 +176,22 @@ hidden_effect = { 615 = {create_unit = {
 			
  		}		
 	}
-		focus = {
-	id = CRF_focus_8
+	focus = {
+		id = CRF_focus_8
 	icon = ""
 	x = 4
 	y = 7
 	cost = 5
 	available_if_capitulated = yes
 	prerequisite = {focus = CRF_focus_7}
-	
 	available = {}
 	ai_will_do = {factor = 1}
-
 	completion_reward = {
 	custom_effect_tooltip = CRF_CWAR_TT_ELITE
 	division_template = {
 	name = "Demon Elite"				# Represents: two-division infantry corps (generally poorly-equipped, but decent experience),
-	division_names_group = CRF_INF_01
-									#	PRC divisions were well-trained in guerilla mountain tactics.
-regiments = {
+	#	PRC divisions were well-trained in guerilla mountain tactics.
+	regiments = {
 		infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 1 y = 0 }
@@ -249,9 +245,8 @@ hidden_effect = { 615 = {create_unit = {
 	custom_effect_tooltip = CRF_CWAR_TT_SUPER_ELITE
 	division_template = {
 	name = "Yaoguai"				# Represents: two-division infantry corps (generally poorly-equipped, but decent experience),
-	division_names_group = CRF_INF_01
-									#	PRC divisions were well-trained in guerilla mountain tactics.
-regiments = {
+	#	PRC divisions were well-trained in guerilla mountain tactics.
+	regiments = {
 		infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 1 y = 0 }
@@ -337,8 +332,7 @@ hidden_effect = { 615 = {create_unit = {
 	set_country_flag = crf_decisions_cwar_dare
 	hidden_effect = {			division_template = {
 	name = "Dare to Die Corps"				# Represents: two-division infantry corps (generally poorly-equipped, but decent experience),
-	division_names_group = CRF_INF_01
-									#	PRC divisions were well-trained in guerilla mountain tactics.
+	#	PRC divisions were well-trained in guerilla mountain tactics.
 	regiments = {
 		infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
 		infantry = { x = 0 y = 1 }

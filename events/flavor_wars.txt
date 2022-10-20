@@ -1,158 +1,138 @@
 add_namespace = worldwar
-
 country_event = { #Israel Fitnah # Palestine
 	id = worldwar.7
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
 	title = worldwar.7.t
 	desc = worldwar.7.d
-
 	picture = GFX_report_event_aut_dollfuss_speech
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = worldwar.7.a
         PAL = {
-        add_state_core = 455
-        add_state_core = 816
-        add_state_core = 901
-        add_state_core = 454
-        add_state_core = 900
-        add_state_core = 869
-        transfer_state = 901
-        transfer_state = 455
-        transfer_state = 816
-        transfer_state = 869
-        add_ideas = PAL_Duel_Fate
-		load_oob = PAL_palestine_milita 
-        complete_national_focus = PAL_War_Liberation
+            add_state_core = 455
+            add_state_core = 816
+            add_state_core = 901
+            add_state_core = 454
+            add_state_core = 900
+            add_state_core = 869
+            transfer_state = 901
+            transfer_state = 455
+            transfer_state = 816
+            transfer_state = 869
+            add_ideas = PAL_Duel_Fate
+            load_oob = PAL_palestine_milita 
+            complete_national_focus = PAL_War_Liberation
         }
         ISL = {
-        add_state_core = 454
-        add_state_core = 455
-        add_state_core = 816
-        add_state_core = 901
-        add_state_core = 454
-        add_state_core = 900
-        transfer_state = 454
-        transfer_state = 900
-        transfer_state = 453
-        transfer_state = 868
-        declare_war_on = {
-        target = PAL
-        type = annex_everything
-        }
-        add_ideas = ISL_Duel_Fate
-		load_oob = ISL_israel_favor
+            add_state_core = 454
+            add_state_core = 455
+            add_state_core = 816
+            add_state_core = 901
+            add_state_core = 454
+            add_state_core = 900
+            transfer_state = 454
+            transfer_state = 900
+            transfer_state = 453
+            transfer_state = 868
+            declare_war_on = {
+                target = PAL
+                type = annex_everything
+            }
+            add_ideas = ISL_Duel_Fate
+            load_oob = ISL_israel_favor
         }
         SRY = {
-        transfer_state = 553
-        add_state_core = 553    
+            transfer_state = 553
+            add_state_core = 553    
         }
         ISL = { change_tag_from = LEV }
-    news_event = { id = news.16 }
+        news_event = { id = news.16 }
+    }
 }
-}
-
 country_event = { #Israel Fitnah # Palestine
 	id = worldwar.1
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
 	title = worldwar.1.t
 	desc = worldwar.1.d
-
 	picture = GFX_report_event_aut_dollfuss_speech
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = worldwar.1.a
         PAL = {
-        add_state_core = 455
-        add_state_core = 816
-        add_state_core = 901
-        add_state_core = 454
-        add_state_core = 900
-        add_state_core = 869
-        transfer_state = 901
-        transfer_state = 455
-        transfer_state = 816
-        transfer_state = 869
-        add_ideas = PAL_Duel_Fate
-		load_oob = PAL_palestine_milita_favor 
-        complete_national_focus = PAL_War_Liberation
+            add_state_core = 455
+            add_state_core = 816
+            add_state_core = 901
+            add_state_core = 454
+            add_state_core = 900
+            add_state_core = 869
+            transfer_state = 901
+            transfer_state = 455
+            transfer_state = 816
+            transfer_state = 869
+            add_ideas = PAL_Duel_Fate
+            load_oob = PAL_palestine_milita_favor 
+            complete_national_focus = PAL_War_Liberation
         }
         ISL = {
-        add_state_core = 454
-        add_state_core = 455
-        add_state_core = 816
-        add_state_core = 901
-        add_state_core = 454
-        add_state_core = 900
-        transfer_state = 454
-        transfer_state = 900
-        transfer_state = 453
-        transfer_state = 868
-        declare_war_on = {
-        target = PAL
-        type = annex_everything
-        }
-        add_ideas = ISL_Duel_Fate
-		load_oob = ISL_israel_milita
+            add_state_core = 454
+            add_state_core = 455
+            add_state_core = 816
+            add_state_core = 901
+            add_state_core = 454
+            add_state_core = 900
+            transfer_state = 454
+            transfer_state = 900
+            transfer_state = 453
+            transfer_state = 868
+            declare_war_on = {
+                target = PAL
+                type = annex_everything
+            }
+            add_ideas = ISL_Duel_Fate
+            load_oob = ISL_israel_milita
         }
         SRY = {
-        transfer_state = 553
-        add_state_core = 553    
+            transfer_state = 553
+            add_state_core = 553    
         }
         PAL = { change_tag_from = LEV }
-    news_event = { id = news.16 }
+        news_event = { id = news.16 }
+    }
 }
-}
-
 country_event = { #Iosef First War
 	id = worldwar.2
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
 	title = worldwar.2.t
 	desc = worldwar.2.d
-
 	picture = GFX_report_event_aut_dollfuss_speech
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = worldwar.2.a
         SRF = {
-        declare_war_on = {
-        target = MTR
-        type = annex_everything
-        }    
+            declare_war_on = {
+                target = MTR
+                type = annex_everything
+            }    
         }
         news_event = { id = news.19 }
+    }
 }
-}
-
 country_event = { #Palestine Vs Syria
 	id = worldwar.3
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
 	title = worldwar.3.t
 	desc = worldwar.3.d
-
 	picture = GFX_report_event_aut_dollfuss_speech
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = worldwar.3.a
         declare_war_on = {
-        target = SRY
-        type = annex_everything
+            target = SRY
+            type = annex_everything
         }
         add_state_core = 554
         add_state_core = 677
@@ -164,56 +144,26 @@ country_event = { #Palestine Vs Syria
         news_event = { id = news.20 }
     }
 }
-
 country_event = { #Makhno Vs Ukraine
 	id = worldwar.4
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
 	title = worldwar.4.t
 	desc = worldwar.4.d
-
 	picture = GFX_report_event_aut_dollfuss_speech
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = worldwar.3.a
         FRI = {
-        declare_war_on = {
-        target = UKR
-        type = annex_everything
-        }        
+            declare_war_on = {
+                target = UKR
+                type = annex_everything
+            }        
         }
         news_event = { id = news.21 }
+    }
 }
-}
-
-
 # removed russian war events
-
-country_event = { #code debug
-	id = worldwar.31
-	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
-	title = worldwar.31.t
-	desc = worldwar.31.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = worldwar.31.a
-        WSL = {
-        every_owned_state = {
-        add_core_of = EVR
-        }	
-        }
-        }
-}
-
 country_event = { #code debug
 	id = worldwar.32
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
@@ -247,7 +197,7 @@ country_event = { #code debug
 		
 	    }
         }
-        CHI = {    
+        ROC = {    
         every_owned_state = {
         add_core_of = YUN
         }
@@ -284,7 +234,7 @@ country_event = { #code debug
 
 	option = {
 		name = worldwar.33.a
-        CHI = {
+        ROC = {
         create_country_leader = {
 	    name = "Chiang Kai-shek"
 	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"

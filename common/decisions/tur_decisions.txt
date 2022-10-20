@@ -554,33 +554,32 @@ TUR_unification_category = {
         ai_will_do = {
 			factor = 1000
 		}
-     }
-
-     IZM_unify_nazim_decision = {
-	    fire_only_once = yes
+    }
+    IZM_unify_nazim_decision = {
+        fire_only_once = yes
 		cost = 0
         available  = {
-        original_tag = IZM
-        has_government = libertarian_socialist  
-        owns_state = 49
-        owns_state = 347
-        owns_state = 839
-        owns_state = 798
-        owns_state = 356
-        owns_state = 355
-        owns_state = 354
-        owns_state = 353
-        owns_state = 800
-        owns_state = 352
-        owns_state = 350
-        owns_state = 346
-        owns_state = 348
-        owns_state = 349
-        owns_state = 797
+            original_tag = IZM
+            has_government = libertarian_socialist  
+            owns_state = 49
+            owns_state = 347
+            owns_state = 839
+            owns_state = 798
+            owns_state = 356
+            owns_state = 355
+            owns_state = 354
+            owns_state = 353
+            owns_state = 800
+            owns_state = 352
+            owns_state = 350
+            owns_state = 346
+            owns_state = 348
+            owns_state = 349
+            owns_state = 797
         }
         visible = {
-        original_tag = IZM
-        has_government = libertarian_socialist
+            original_tag = IZM
+            has_government = libertarian_socialist
         }  
         complete_effect = {
         WRF = { every_unit_leader = { set_nationality = IZM } }
@@ -589,9 +588,8 @@ TUR_unification_category = {
         set_cosmetic_tag = IZM_unification
         custom_effect_tooltip = ANT_unif_focus_tt
         remove_ideas = turkey_brother_war_idea
-        load_focus_tree = nazim_tree
         hidden_effect = {
-	    set_global_flag = turkey_civilwar_over
+            set_global_flag = turkey_civilwar_over
             set_country_flag = unification_nazim
         }
         IZM = {
@@ -617,8 +615,7 @@ TUR_unification_category = {
         ai_will_do = {
 			factor = 1000
 		}
-     }
-
+    }
      IZM_unify_madanoglu_decision = {
 	    fire_only_once = yes
 		cost = 0

@@ -5,150 +5,110 @@
 #####################################################################################################################
 etr_cwar_cat = {		#Name of category that decisions will appear under, decisions MUST have a category to work properly.
 	etr_cwar_1 = {		#ID of the decision, must not contain spaces!
-
 		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
-		
 		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
-		
 		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
 		}
-		
 		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
 		days_re_enable = 12	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
-
 		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
 	
-		}		
-
-		cost = 75		#The cost to execute the decision, by default its political power.
-
-		# EFFECTS OF THIS DECISION/MISSION
-
-		complete_effect = {		#The effects to execute once the envelope icon is clicked.
-         add_offsite_building = { type = arms_factory level = 1 }
 		}
-		
+		cost = 75		#The cost to execute the decision, by default its political power.
+		# EFFECTS OF THIS DECISION/MISSION
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_offsite_building = { type = arms_factory level = 1 }
+		}
 		# AI LOGIC FOR THIS DECISION/MISSION
-
 		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
 			factor = 1			
 		}
 	}
-	etr_cwar_2 = {		
-
-		icon = GFX_decision_icon_default	
-		
+	etr_cwar_2 = {
+		icon = GFX_decision_icon_default
 		available = {		
+
 		}
-		
 		fire_only_once = no		
 		days_re_enable = 12	
+		visible = {
 
-		visible = {		
-	
-		}		
-
-		cost = 50	
-
-		complete_effect = {		
-         add_offsite_building = { type = industrial_complex level = 1 }
 		}
-		
-		
-
+		cost = 50
+		complete_effect = {		
+			add_offsite_building = { type = industrial_complex level = 1 }
+		}
 		ai_will_do = {
 			factor = 1			
 		}
 	}
-	etr_cwar_3 = {		
+	etr_cwar_3 = {
+		icon = GFX_decision_icon_default
+		available = {
 
-		icon = GFX_decision_icon_default	
-		
-		available = {		
 		}
-		
 		fire_only_once = no		
-		days_re_enable = 12	
+		days_re_enable = 12
+		visible = {
 
-		visible = {		
-	
-		}		
-
-		cost = 100	
-
-		complete_effect = {		
-         add_equipment_to_stockpile = {
-    type = infantry_equipment
-    amount = 1200
-    producer = etr
-}
 		}
-
+		cost = 100
+		complete_effect = {		
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1200
+				producer = etr
+			}
+		}
 		ai_will_do = {
 			factor = 1			
 		}
 	}
-	etr_cwar_4 = {		
+	etr_cwar_4 = {
+		icon = GFX_decision_icon_default
+		available = {
 
-		icon = GFX_decision_icon_default	
-		
-		available = {		
 		}
-		
 		fire_only_once = no		
 		days_re_enable = 12	
+		visible = {
 
-		visible = {		
-	
-		}		
-
-		cost = 100	
-
-		complete_effect = {		
-         add_equipment_to_stockpile = {
-    type = support_equipment
-    amount = 120
-    producer = etr
-}
+		}
+		cost = 100
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 120
+				producer = etr
+			}
 		}
 		ai_will_do = {
 			factor = 1			
 		}
 	}
 }
-
-
 ##########################################################################
 #NEW CATAGORY
-
 etr_cwar_cat_2 = {
+		etr_cwar_5 = {
+		icon = GFX_decision_icon_default
+		available = {
 
-		etr_cwar_5 = {		
-
-		icon = GFX_decision_icon_default	
-		
-		available = {		
 		}
-		
 		fire_only_once = no		
 		days_re_enable = 75
+		visible = {
 
-		visible = {		
-	
-		}		
-
-		cost = 50	
-
+		}
+		cost = 50
 		complete_effect = {	
 		hidden_effect = {set_country_flag = mission_go_1}
 		}
-
 		ai_will_do = {
 			factor = 1			
 		}
 	}
-		etr_cwar_6 = {		
-
+		etr_cwar_6 = {
 		icon = GFX_decision_icon_default	
 		
 		available = {		
@@ -269,92 +229,87 @@ etr_cwar_10 = {
 }
 
 ###################################MISSIONS######################
-
 	etr_cwar_mission_1 = {
         days_mission_timeout = 60
         fire_only_once = no
         available = {                             # makes the decision unable to complete therefore the only option to get the buff is once it does the timeout through a condition
-           etr = { controls_province = 1047 }
-		
+			ETR = { controls_province = 1047 }
         }
         activation = {
-          has_country_flag = mission_go_1                                                 #condition in which it will activate
+			has_country_flag = mission_go_1                                                 #condition in which it will activate
         }
         is_good = no                             #if yes then the color is green / if no then the color is red
         priority = 100                     
         timeout_effect = {     
-			add_timed_idea = {idea = etr_cwar_failed_offensive days = 60}         
-         }
+			add_timed_idea = {idea = etr_cwar_failed_offensive days = 60}
+		}
         complete_effect = {                    # the effect when you take the state
-        add_stability = 0.1
-		add_war_support = 0.1              
+			add_stability = 0.1
+			add_war_support = 0.1              
         }
     }
 	etr_cwar_mission_2 = {
         days_mission_timeout = 60
         fire_only_once = no
         available = {                             # makes the decision unable to complete therefore the only option to get the buff is once it does the timeout through a condition
-           	etr = { controls_province = 7137 }
-		
+			ETR = { controls_province = 7137 }
         }
         activation = {
-          	has_country_flag = mission_go_2                                                 #condition in which it will activate
+			has_country_flag = mission_go_2                                                 #condition in which it will activate
         }
         is_good = no                             #if yes then the color is green / if no then the color is red
         priority = 100                     
         timeout_effect = {     
-			add_timed_idea ={idea = etr_cwar_failed_offensive days = 60}         
-         }
+			add_timed_idea ={idea = etr_cwar_failed_offensive days = 60}
+		}
         complete_effect = {                    # the effect when you take the state
-        add_stability = 0.1
-		add_war_support = 0.1              
+			add_stability = 0.1
+			add_war_support = 0.1              
         }
     }
 	etr_cwar_mission_3 = {
         days_mission_timeout = 60
         fire_only_once = no
         available = {                             # makes the decision unable to complete therefore the only option to get the buff is once it does the timeout through a condition
-           etr = { controls_province = 11913 }
-		
+			ETR = { controls_province = 11913 }
         }
         activation = {
-          has_country_flag = mission_go_3                                                #condition in which it will activate
+			has_country_flag = mission_go_3                                                #condition in which it will activate
         }
         is_good = no                             #if yes then the color is green / if no then the color is red
         priority = 100                     
         timeout_effect = {     
-			add_timed_idea ={idea = etr_cwar_failed_offensive days = 60}         
-         }
+			add_timed_idea ={idea = etr_cwar_failed_offensive days = 60}
+		}
         complete_effect = {                    # the effect when you take the state
-        add_stability = 0.1
-		add_war_support = 0.1              
+			add_stability = 0.1
+			add_war_support = 0.1              
         }
     }
-		etr_cwar_mission_4 = {
-        days_mission_timeout = 60
+	etr_cwar_mission_4 = {
+		days_mission_timeout = 60
         fire_only_once = no
         available = {                             # makes the decision unable to complete therefore the only option to get the buff is once it does the timeout through a condition
-           etr = { controls_province = 6999 }
-		
+			ETR = { controls_province = 6999 }
         }
         activation = {
-          has_country_flag = mission_go_4                                            #condition in which it will activate
+			has_country_flag = mission_go_4                                            #condition in which it will activate
         }
         is_good = no                             #if yes then the color is green / if no then the color is red
         priority = 100                     
         timeout_effect = {     
-			add_timed_idea ={idea = etr_cwar_failed_offensive days = 60}         
-         }
+			add_timed_idea ={idea = etr_cwar_failed_offensive days = 60}
+		}
         complete_effect = {                    # the effect when you take the state
-        add_stability = 0.1
-		add_war_support = 0.1              
+			add_stability = 0.1
+			add_war_support = 0.1              
         }
     }
-		etr_cwar_mission_5 = {
+	etr_cwar_mission_5 = {
         days_mission_timeout = 60
         fire_only_once = no
         available = {                             # makes the decision unable to complete therefore the only option to get the buff is once it does the timeout through a condition
-           etr = { controls_province = 6999}
+           ETR = { controls_province = 6999}
 		
         }
         activation = {
@@ -374,7 +329,7 @@ etr_cwar_10 = {
         days_mission_timeout = 60
         fire_only_once = no
         available = {                             # makes the decision unable to complete therefore the only option to get the buff is once it does the timeout through a condition
-           etr = { controls_province = 4619 }
+           ETR = { controls_province = 4619 }
 		
         }
         activation = {

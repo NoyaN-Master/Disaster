@@ -1,44 +1,39 @@
 add_namespace = atsiz
-
 country_event = { #Introduction
 	id = atsiz.1
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
 	title = atsiz.1.t
 	desc = atsiz.1.d
-
 	picture = GFX_report_event_aut_dollfuss_speech
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = atsiz.1.a
         custom_effect_tooltip = atsiz_parties_tt
         set_party_name = { 
-        ideology = ultranationalist 
-        long_name = WRF_atsiz_ultnat_long 
-        name = WRF_atsiz_ultnat 
+            ideology = ultranationalist 
+            long_name = WRF_atsiz_ultnat_long 
+            name = WRF_atsiz_ultnat 
         }
         set_party_name = { 
-        ideology = revolutionary_nationalist 
-        long_name = WRF_atsiz_revnat 
-        name = WRF_atsiz_revnat 
+            ideology = revolutionary_nationalist 
+            long_name = WRF_atsiz_revnat 
+            name = WRF_atsiz_revnat 
         }
         set_party_name = { 
-        ideology = unisocialist 
-        long_name = WRF_atsiz_unisoc_long 
-        name = WRF_atsiz_unisoc 
+            ideology = unisocialist 
+            long_name = WRF_atsiz_unisoc_long 
+            name = WRF_atsiz_unisoc 
         }
         set_party_name = { 
-        ideology = autocratic 
-        long_name = WRF_atsiz_despot_long 
-        name = WRF_atsiz_despot 
+            ideology = autocratic 
+            long_name = WRF_atsiz_despot_long 
+            name = WRF_atsiz_despot 
         }
         set_party_name = { 
-        ideology = esoteric_traditionalist
-        long_name = WRF_atsiz_esotrad_long 
-        name = WRF_atsiz_esotrad 
+            ideology = esoteric_traditionalist
+            long_name = WRF_atsiz_esotrad_long 
+            name = WRF_atsiz_esotrad 
         }
         set_party_name = { 
         ideology = authoritarian_democrat 
@@ -71,62 +66,49 @@ country_event = { #Introduction
         name = empty_party_slot_loc 
         }
         set_popularities = {
-	    revolutionary_nationalist = 40
-	    ultranationalist = 15
-	    esoteric_traditionalist = 10
-	    unisocialist = 20
-        autocratic = 15
+            revolutionary_nationalist = 40
+            ultranationalist = 15
+            esoteric_traditionalist = 10
+            unisocialist = 20
+            autocratic = 15
         }
 	}
 }
-
 country_event = { #Conquerers Of The East
 	id = atsiz.2
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
 	title = atsiz.2.t
 	desc = atsiz.2.d
-
-	picture = GFX_report_event_aut_dollfuss_speech
-
+	picture = GFX_report_event_aut_dollfuss_speec
 	fire_only_once = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = atsiz.2.a
         swap_ideas = {
-        remove_idea = Atsiz_Discontent_Army
-        add_idea =  Atsiz_Discontent_Army_2
+            remove_idea = Atsiz_Discontent_Army
+            add_idea =  Atsiz_Discontent_Army_2
         }
         add_manpower = 12000
 	}
 }
-
 country_event = { #Conquerers Of The West
 	id = atsiz.3
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
 	title = atsiz.3.t
 	desc = atsiz.3.d
-
 	picture = GFX_report_event_aut_dollfuss_speech
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = atsiz.3.a
         swap_ideas = {
-        remove_idea = Atsiz_New_Regime
-        add_idea =  Atsiz_New_Regime_2
+            remove_idea = Atsiz_New_Regime
+            add_idea =  Atsiz_New_Regime_2
         }
         add_manpower = 12000
         add_stability = 0.05
 	}
 }
-
-
-
 country_event = { #New Subutais
 	id = atsiz.4
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
@@ -296,69 +278,59 @@ country_event = { #Unite Puppets
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
 	title = atsiz.12.t
 	desc = atsiz.12.d
-
 	picture = GFX_report_event_aut_dollfuss_speech
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = atsiz.12.a
         TAT = {
-        every_owned_state = {
-        add_core_of = WRF
-        }	
+            every_owned_state = {
+                add_core_of = WRF
+            }	
         }
-        CHI = {
-        every_owned_state = {
-        add_core_of = WRF
-        }	
+        ROC = {
+            every_owned_state = {
+                add_core_of = WRF
+            }	
         }
         INR = {
-        every_owned_state = {
-        add_core_of = WRF
-        }	
+            every_owned_state = {
+                add_core_of = WRF
+            }	
         }
         LEV = {
-        every_owned_state = {
-        add_core_of = WRF
-        }	
+            every_owned_state = {
+                add_core_of = WRF
+            }	
         }
         annex_country = {
-        target = TAT
-        transfer_troops = yes
+            target = TAT
+            transfer_troops = yes
         }
         annex_country = {
-        target = LEV
-        transfer_troops = yes
+            target = LEV
+            transfer_troops = yes
         }
         annex_country = {
-        target = CHI
-        transfer_troops = yes
+            target = ROC
+            transfer_troops = yes
         }
         annex_country = {
-        target = INR
-        transfer_troops = yes
+            target = INR
+            transfer_troops = yes
         }
         set_cosmetic_tag = Atsiz_United
 	}
 }
-
 country_event = { #Unite Puppets
 	id = atsiz.13
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
 	title = atsiz.13.t
 	desc = atsiz.13.d
-
 	picture = GFX_report_event_aut_dollfuss_speech
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = atsiz.13.a
-        
 	}
 }

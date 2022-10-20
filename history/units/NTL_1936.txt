@@ -1,6 +1,5 @@
 division_template = {
-	name = "British Remnants"					
-	division_names_group = NTL_INF_01
+	name = "British Remnants"
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -21,8 +20,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Afrikaner Division"					
-	division_names_group = NTL_INF_01
+	name = "Afrikaner Division"
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -38,8 +36,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Afrikaner Mobile Division"					
-	division_names_group = NTL_CAV_01
+	name = "Afrikaner Mobile Division"
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }

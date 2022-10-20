@@ -397,7 +397,6 @@ focus_tree = {
         }
 		}
 	}
-
 	focus = {
 		id = CIB_Attack_Central
 		icon = GFX_goal_CIB_Attack_Central
@@ -412,22 +411,21 @@ focus_tree = {
 			factor = 1
 		}
 		available = { 
-		 has_war = no	
+			has_war = no	
 		}
 		completion_reward = {
-		country_event = { id = enver.35 }
-		declare_war_on = {
-        target = TRK
-        type = annex_everything
-        }
-        TRK = {
-        every_owned_state = {
-        add_core_of = CIB
-        }	
-        }
+			country_event = { id = enver.35 }
+			declare_war_on = {
+				target = TRK
+				type = annex_everything
+			}
+			TRK = {
+				every_owned_state = {
+					add_core_of = CIB
+				}
+			}
 		}
 	}
-
 	focus = {
 		id = CIB_Annex_Greece
 		icon = GFX_goal_CIB_Annex_Greece

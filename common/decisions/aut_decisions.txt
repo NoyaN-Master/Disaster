@@ -176,26 +176,25 @@ AUT_foreign_deccat = {
 AUT_Puppet_Yugo = {
 	fire_only_once = yes                         
         allowed = {
-         tag = AUT
-         has_completed_focus = AUT_Restore_Sphere
-        }                 
-        available = {      
-        tag = AUT
-	AUT = {
-		has_completed_focus = AUT_ReTake_Yugo
-        owns_state = 107
-	}
-	SOR = {
-	NOT ={
-		country_exists = no
-	}	
-	}
-	}				
+			tag = AUT
+			has_completed_focus = AUT_Restore_Sphere
+		}                 
+		available = {      
+			tag = AUT
+			AUT = {
+				has_completed_focus = AUT_ReTake_Yugo
+				owns_state = 107
+			}
+			SOR = {
+				NOT = {
+					country_exists = no
+				}	
+			}
+		}
+		ai_will_do  = { factor = 1000} 				
         is_good = no                         
-        selectable_mission = yes               
-                     
+        selectable_mission = yes
         complete_effect = {
-           ai_chance = { factor = 1000}
 		HNG = {
 			transfer_state = 764
 			transfer_state = 45
@@ -203,65 +202,54 @@ AUT_Puppet_Yugo = {
 		}   
 		white_peace = SOR
 		annex_country = {
-    	target = SOR
-    	transfer_troops = no
+			target = SOR
+			transfer_troops = no
 		}
 		add_stability = 0.10
 		release_puppet = CRT
 		release_puppet = SOR
 		release_puppet = ABL
 		CRT = {
-		transfer_state = 815
-		add_state_core = 815
-		drop_cosmetic_tag = yes
-		set_politics = {
-		ruling_party = ultranationalist
-        elections_allowed = no
-        last_election = "1935.12.17"
-        election_frequency = 48
-		}	
-		create_country_leader = {
-	            name = "Ante Pavelić"
-	            #desc = "AUT_Karl_Renner_desc"
-	            picture = "gfx/leaders/CRT/CRT_Ante.tga"
-	            expire = "2020.1.1"
-	            ideology = ultranationalist_subideology
-	            traits = {
-	            }
+			transfer_state = 815
+			add_state_core = 815
+			drop_cosmetic_tag = yes
+			set_politics = {
+				ruling_party = ultranationalist
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48
+			}	
+			create_country_leader = {
+				name = "Ante Pavelić"
+				picture = "gfx/leaders/CRT/CRT_Ante.tga"
+				expire = "2020.1.1"
+				ideology = ultranationalist_subideology
 			}
 		}
 		SOR = {
 			create_country_leader = {
-	            name = "Alexander I"
-	            #desc = "AUT_Karl_Renner_desc"
-	            picture = "gfx/leaders/SOR/SOR_Alex.tga"
-	            expire = "2020.1.1"
-	            ideology = ultranationalist_subideology
-	            traits = {
-	            }
+				name = "Alexander I"
+				picture = "gfx/leaders/SOR/SOR_Alex.tga"
+				expire = "2020.1.1"
+				ideology = ultranationalist_subideology
 			}
 		}
 		AUT = {
-		transfer_state = 102
-		add_state_core = 102
+			transfer_state = 102
+			add_state_core = 102
 		}
 		ABL = {
 			transfer_state = 802
 			create_country_leader = {
-	            name = "King Zog I"
-	            #desc = "AUT_Karl_Renner_desc"
-	            picture = "gfx/leaders/ABL/ABL_Zog.tga"
-	            expire = "2020.1.1"
-	            ideology = ultranationalist_subideology
-	            traits = {
-	            }
+				name = "King Zog I"
+				#desc = "AUT_Karl_Renner_desc"
+				picture = "gfx/leaders/ABL/ABL_Zog.tga"
+				expire = "2020.1.1"
+				ideology = ultranationalist_subideology
 			}
 		}
-    }
-	ai_will_do  = { factor = 1000}    
+    }   
 }
-
-
 AUT_Give_Transly = {
 	fire_only_once = yes                          
         allowed = {

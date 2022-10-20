@@ -2,17 +2,14 @@ state={
 	id=835
 	name="STATE_835"
 	manpower = 103129
-
 	state_category = town
-	
 	history={
 		owner = ARM
 		add_core_of = CIB
 		add_core_of = ARM
-
 		buildings = {
 			infrastructure = 2
-			9932 = {
+			7454 = {
 				naval_base = 2
 			}
 		}
@@ -20,8 +17,6 @@ state={
 			7454 5 
 		}
 	}
-	
-	
 	provinces={
 		789 6976 6991 7454 10403 10472 
 	}

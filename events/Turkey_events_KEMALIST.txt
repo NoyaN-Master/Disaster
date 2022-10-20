@@ -61,49 +61,35 @@ country_event = { #Surnames
         }
 	}
 }
-
 country_event = { #Civil Code
 	id = tur.3
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
 	title = tur.3.t
 	desc = tur.3.d
-
 	picture = GFX_report_event_aut_dollfuss_speech
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = tur.3.a
         add_stability = 0.05
-		add_idea = WRF_Ataturk_Reforms_1
-        hidden_effect = {   
-        }
+		add_ideas = WRF_Ataturk_Reforms_1
 	}
 }
-
 country_event = { #Constitution
 	id = tur.4
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
 	title = tur.4.t
 	desc = tur.4.d
-
 	picture = GFX_report_event_aut_dollfuss_speech
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = tur.4.a
         add_stability = 0.05
 		swap_ideas = {
-		add_idea = WRF_Ataturk_Reforms_1
-		remove_idea = WRF_Ataturk_Reforms_2
+			add_idea = WRF_Ataturk_Reforms_1
+			remove_idea = WRF_Ataturk_Reforms_2
 		}
-        hidden_effect = {   
-        }
 	}
 }
 
@@ -189,18 +175,16 @@ country_event = { #Death
 		custom_effect_tooltip = ataturk_Death_tt
 		add_manpower = -1
 		add_stability = -0.30
-		war_support_factor = -0.20
+		add_war_support = -0.20
 		create_country_leader = {
-	    name = "Provisional Military Council"
-	    desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	    picture = "gfx/leaders/WRF/Portrait_TUR_TSK.tga"
-	    expire = "1965.1.1"
-	    ideology = kemalism
-	    traits = {	
-	    }
+			name = "Provisional Military Council"
+			desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			picture = "gfx/leaders/WRF/Portrait_TUR_TSK.tga"
+			expire = "1965.1.1"
+			ideology = kemalism
         }
         hidden_effect = {   
-        country_event = { id = tur.9 days = 2 }
+			country_event = { id = tur.9 days = 2 }
 		}
 	}
 }
@@ -982,48 +966,37 @@ country_event = { #KDM
 		country_event = { id = tur.28 days = 2}
 	}
 }
-
 country_event = { #revolution
 	id = tur.28
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
 	title = tur.28.t
 	desc = tur.28.d
-
 	picture = GFX_report_event_aut_dollfuss_speech
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-
 	option = { #play JFK
 		name = tur.28.a
 		neworder_wrf_collapse = yes
 		CRW = { change_tag_from = WRF }	
 	}
-
 	option = { #play Greywolf
 		name = tur.28.b
 		neworder_wrf_collapse = yes
 		ADN = { change_tag_from = WRF }
 	}
-
 	option = { #play New Order
 		name = tur.28.c
 		neworder_wrf_collapse = yes
 		ANK = { change_tag_from = WRF }
 	}
 }
-
 country_event = {
 	id = tur.29
 	immediate = { log = "[GetDateText]: [Root.GetName]: event tur.29" }
 	title = tur.29.t
-	desc.29.d
-	
+	desc = tur.29.d
 	picture = GFX_report_event_aut_dollfuss_speech
-
 	fire_only_once = yes
-	
 	trigger = {
 		has_country_flag = WRF_SMYRNA_REVOLT
 		NOT = {

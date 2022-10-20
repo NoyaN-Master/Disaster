@@ -1,23 +1,19 @@
 ﻿division_template = {
-	name = "Public Force"		
-	division_names_group = LUX_INF_01
+	name = "Public Force"
 	# Luxembourg had a token garrison force of ~600 men
 	regiments = {
 		infantry = { x = 0 y = 0 }
 	}
 }
-
-
 units = { 
-division = {
+	division = {
 		name = "Public Force"
 		location = 6583
 		division_template = "Public Force"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
-
 	}
-	}
+}
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

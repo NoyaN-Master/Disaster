@@ -9,7 +9,6 @@ focus_tree = {
 	}
     default = no
 	continuous_focus_position = { x = 100 y = 1600 }
-	
     focus = {
 		id = tit_fake_tree_start
 		icon = GFX_goal_Mussolini_begin
@@ -21,9 +20,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		hidden_effect = {
-		country_event = { id = tit.1 days = 2 }
-		}
+			hidden_effect = {
+				country_event = { id = tit.1 days = 2 }
+			}
 		}
 	}
 	focus = {
@@ -38,8 +37,7 @@ focus_tree = {
 			factor = 2
 		}
 		completion_reward = {
-		hidden_effect = {
-		}
+
 		}
 	}
 	focus = {
@@ -54,8 +52,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		hidden_effect = {
-		}
+
 		}
 	}
 	focus = {
@@ -71,7 +68,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		hidden_effect = {
-		}
+
 		}
 	}
+}

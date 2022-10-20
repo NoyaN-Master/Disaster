@@ -5,7 +5,6 @@
 #####################################################################################################################
 qid_cwar_cat = {		#Name of category that decisions will appear under, decisions MUST have a category to work properly.
 	qid_cwar_1 = {		#ID of the decision, must not contain spaces!
-
 		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
 		
 		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
@@ -274,7 +273,7 @@ qid_cwar_10 = {
         days_mission_timeout = 60
         fire_only_once = no
         available = {                             # makes the decision unable to complete therefore the only option to get the buff is once it does the timeout through a condition
-           qid = { controls_province = 1047 }
+           QID = { controls_province = 1047 }
 		
         }
         activation = {
@@ -294,7 +293,7 @@ qid_cwar_10 = {
         days_mission_timeout = 60
         fire_only_once = no
         available = {                             # makes the decision unable to complete therefore the only option to get the buff is once it does the timeout through a condition
-           	qid = { controls_province = 7137 }
+           	QID = { controls_province = 7137 }
 		
         }
         activation = {
@@ -314,7 +313,7 @@ qid_cwar_10 = {
         days_mission_timeout = 60
         fire_only_once = no
         available = {                             # makes the decision unable to complete therefore the only option to get the buff is once it does the timeout through a condition
-           qid = { controls_province = 11913 }
+           QID = { controls_province = 11913 }
 		
         }
         activation = {
@@ -334,7 +333,7 @@ qid_cwar_10 = {
         days_mission_timeout = 60
         fire_only_once = no
         available = {                             # makes the decision unable to complete therefore the only option to get the buff is once it does the timeout through a condition
-           qid = { controls_province = 6999 }
+           QID = { controls_province = 6999 }
 		
         }
         activation = {
@@ -354,7 +353,7 @@ qid_cwar_10 = {
         days_mission_timeout = 60
         fire_only_once = no
         available = {                             # makes the decision unable to complete therefore the only option to get the buff is once it does the timeout through a condition
-           qid = { controls_province = 6999}
+           QID = { controls_province = 6999}
 		
         }
         activation = {
@@ -374,7 +373,7 @@ qid_cwar_10 = {
         days_mission_timeout = 60
         fire_only_once = no
         available = {                             # makes the decision unable to complete therefore the only option to get the buff is once it does the timeout through a condition
-           qid = { controls_province = 7940 }
+           QID = { controls_province = 7940 }
 		
         }
         activation = {
@@ -391,4 +390,3 @@ qid_cwar_10 = {
         }
     }
 }
-

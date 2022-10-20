@@ -1,14 +1,10 @@
 technologies = {
-
 #   ###  ##  #  # ###      ## #  # ### ###   ##
 #    #  #    #  #  #      #   #  #  #  #  # #
 #    #  # ## ####  #       #  ####  #  ###   #
 #    #  #  # #  #  #        # #  #  #  #      #
 ### ###  ##  #  #  #      ##  #  # ### #    ##
-
-
 	early_ship_hull_light = {
-
 		enable_equipments = {
 			ship_hull_light_1
 		}
@@ -19,52 +15,40 @@ technologies = {
 			leads_to_tech = basic_ship_hull_light
 			research_cost_coeff = 1
 		}
-
 		path = {
 			leads_to_tech = smoke_generator
 			research_cost_coeff = 1
 		}
-
 		path = {
 			leads_to_tech = basic_depth_charges
 			research_cost_coeff = 1
 		}
-
 		path = {
 			leads_to_tech = sonar
 			research_cost_coeff = 1
 		}
-
 		allow_branch = {
 			has_dlc = "Man the Guns"
 		}
-
 		research_cost = 1.5
-
 		start_year = 1922
-
 		folder = {
 			name = mtgnavalfolder
 			position = { x = 0 y = 2 }
 		}
-
 		ai_will_do = {
 			factor = 1
-
 			modifier = {
 				factor = 4
 				tag = ENG
 			}
 		}
-
 		categories = {
 			naval_equipment
 			dd_tech
 		}
 	}
-
 	basic_ship_hull_light = {
-
 		enable_equipments = {
 			ship_hull_light_2
 		}
@@ -75,19 +59,14 @@ technologies = {
 			leads_to_tech = improved_ship_hull_light
 			research_cost_coeff = 1
 		}
-
 		research_cost = 1.5
-
 		start_year = 1936
-
 		folder = {
 			name = mtgnavalfolder
 			position = { x = 0 y = 7 }
 		}
-
 		ai_will_do = {
 			factor = 1
-
 			modifier = {
 				factor = 4
 				OR = {
@@ -100,168 +79,129 @@ technologies = {
 				factor = 2
 			}
 		}
-
 		categories = {
 			naval_equipment
 			dd_tech
 		}
 	}
-
 	improved_ship_hull_light = {
-
 		enable_equipments = {
 			ship_hull_light_3
 		}
 		enable_equipment_modules = {
 			light_ship_engine_3
 		}
-
 		path = {
 			leads_to_tech = advanced_ship_hull_light
 			research_cost_coeff = 1
 		}
-
 		research_cost = 1.5
-
 		start_year = 1940
-
 		folder = {
 			name = mtgnavalfolder
 			position = { x = 0 y = 13 }
 		}
-
 		ai_will_do = {
 			factor = 1
-
 			modifier = {
 				factor = 4
 				OR = {
 					tag = ENG
-					tag = JAP
+					tag = JPN
 					tag = USA
 				}
 			}
 		}
-
 		categories = {
 			naval_equipment
 			dd_tech
 		}
 	}
-
 	advanced_ship_hull_light = {
-
 		enable_equipments = {
 			ship_hull_light_4
 		}
 		enable_equipment_modules = {
 			light_ship_engine_4
 		}
-
 		research_cost = 2
-
 		start_year = 1944
-
 		folder = {
 			name = mtgnavalfolder
 			position = { x = 0 y = 19 }
 		}
-
 		ai_will_do = {
 			factor = 1
-
 			modifier = {
 				factor = 4
 				OR = {
 					tag = ENG
-					tag = JAP
+					tag = JPN
 					tag = USA
 				}
 			}
 		}
-
 		categories = {
 			naval_equipment
 			dd_tech
 		}
 	}
-
 	smoke_generator = {
-
 		naval_retreat_speed = 0.2
-
 		research_cost = 0.75
-
 		start_year = 1922
-
 		folder = {
 			name = mtgnavalfolder
 			position = { x = 1 y = 2 }
 		}
-
 		ai_will_do = {
 			factor = 8
-
 			modifier = {
 				factor = 2
 				tag = ENG
 			}
 		}
-
 		categories = {
 			naval_equipment
 			dd_tech
 			ship_modules_tech
 		}
 	}
-
  ##  #  # ### ###      ## #  # ###  #   #  ##  ###  ### #  # ###
 #  # ## #  #   #      #   #  # #  # ## ## #  # #  #  #  ## # #
 #### # ##  #   #       #  #  # ###  # # # #### ###   #  # ## ##
 #  # #  #  #   #        # #  # #  # #   # #  # #  #  #  #  # #
 #  # #  #  #  ###     ##   ##  ###  #   # #  # #  # ### #  # ###
-
-
 	basic_depth_charges = {
-
 		enable_equipment_modules = {
 			ship_depth_charge_1
 		}
-
 		on_research_complete = {
 			custom_effect_tooltip = depth_charges_advice_tt
 		}
-
 		path = {
 			leads_to_tech = improved_depth_charges
 			research_cost_coeff = 1
 		}
-
 		xp_research_type = navy
 		xp_boost_cost = 50
 		xp_research_bonus = 1.50
 		research_cost = 1.5
-
 		start_year = 1922
-
 		folder = {
 			name = mtgnavalfolder
 			position = { x = 1 y = 4 }
 		}
-
 		ai_will_do = {
 			factor = 4
-
 			modifier = {
 				factor = 2
 				has_war_with = GER
 			}
 			modifier = {
 				factor = 2
-				anti_submarine_strategy_required_trigger = yes
 			}
 		}
-
 		categories = {
 			naval_equipment
 			dd_tech
@@ -270,7 +210,6 @@ technologies = {
 		}
 	}
 	improved_depth_charges = {
-
 		enable_equipment_modules = {
 			ship_depth_charge_2
 		}
@@ -281,32 +220,25 @@ technologies = {
 			leads_to_tech = advanced_depth_charges
 			research_cost_coeff = 1
 		}
-
 		xp_research_type = navy
 		xp_boost_cost = 50
 		xp_research_bonus = 1.50
 		research_cost = 1.5
-
 		start_year = 1936
-
 		folder = {
 			name = mtgnavalfolder
 			position = { x = 1 y = 7 }
 		}
-
 		ai_will_do = {
 			factor = 4
-
 			modifier = {
 				factor = 2
 				has_war_with = GER
 			}
 			modifier = {
 				factor = 2
-				anti_submarine_strategy_required_trigger = yes
 			}
 		}
-
 		categories = {
 			naval_equipment
 			dd_tech
@@ -315,7 +247,6 @@ technologies = {
 		}
 	}
 	advanced_depth_charges = {
-
 		enable_equipment_modules = {
 			ship_depth_charge_3
 		}
@@ -330,27 +261,21 @@ technologies = {
 		xp_boost_cost = 50
 		xp_research_bonus = 1.50
 		research_cost = 1.5
-
 		start_year = 1940
-
 		folder = {
 			name = mtgnavalfolder
 			position = { x = 1 y = 13 }
 		}
-
 		ai_will_do = {
 			factor = 2
-
 			modifier = {
 				factor = 4
 				has_war_with = GER
 			}
 			modifier = {
 				factor = 2
-				anti_submarine_strategy_required_trigger = yes
 			}
 		}
-
 		categories = {
 			naval_equipment
 			dd_tech
@@ -359,39 +284,31 @@ technologies = {
 		}
 	}
 	modern_depth_charges = {
-
 		enable_equipment_modules = {
 			ship_depth_charge_4
 		}
 		on_research_complete = {
 			custom_effect_tooltip = depth_charges_advice_tt
 		}
-
 		xp_research_type = navy
 		xp_boost_cost = 50
 		xp_research_bonus = 1.50
 		research_cost = 1.5
-
 		start_year = 1944
-
 		folder = {
 			name = mtgnavalfolder
 			position = { x = 1 y = 19 }
 		}
-
 		ai_will_do = {
 			factor = 2
-
 			modifier = {
 				factor = 4
 				has_war_with = GER
 			}
 			modifier = {
 				factor = 2
-				anti_submarine_strategy_required_trigger = yes
 			}
 		}
-
 		categories = {
 			naval_equipment
 			dd_tech
@@ -411,27 +328,21 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 1.5
-
 		start_year = 1922
-
 		folder = {
 			name = mtgnavalfolder
 			position = { x = 2 y = 1 }
 		}
-
 		ai_will_do = {
 			factor = 2
-
 			modifier = {
 				factor = 4
 				has_war_with = GER
 			}
 			modifier = {
 				factor = 2
-				anti_submarine_strategy_required_trigger = yes
 			}
 		}
-
 		categories = {
 			naval_equipment
 			dd_tech
@@ -439,7 +350,6 @@ technologies = {
 			ship_modules_tech
 		}
 	}
-
 	improved_sonar = {
 		enable_equipment_modules = {
 			ship_sonar_2
@@ -448,27 +358,21 @@ technologies = {
 			custom_effect_tooltip = sonar_advice_tt
 		}
 		research_cost = 1
-
 		start_year = 1936
-
 		folder = {
 			name = mtgnavalfolder
 			position = { x = 2 y = 6 }
 		}
-
 		ai_will_do = {
 			factor = 2
-
 			modifier = {
 				factor = 4
 				has_war_with = GER
 			}
 			modifier = {
 				factor = 2
-				anti_submarine_strategy_required_trigger = yes
 			}
 		}
-
 		categories = {
 			naval_equipment
 			dd_tech
@@ -476,15 +380,12 @@ technologies = {
 			ship_modules_tech
 		}
 	}
-
  ##  ###  #  # ###  ## ### ###   ##
 #  # #  # #  #  #  #   #   #  # #
 #    ###  #  #  #   #  ##  ###   #
 #  # #  # #  #  #    # #   #  #   #
  ##  #  #  ##  ### ##  ### #  # ##
-
 	early_ship_hull_cruiser = {
-
 		enable_equipments = {
 			ship_hull_cruiser_1
 		}
@@ -497,28 +398,21 @@ technologies = {
 			leads_to_tech = basic_ship_hull_cruiser
 			research_cost_coeff = 1
 		}
-
 		path = {
 			leads_to_tech = improved_airplane_launcher
 			research_cost_coeff = 1
 		}
-
 		allow_branch = {
 			has_dlc = "Man the Guns"
 		}
-
 		research_cost = 1.5
-
 		start_year = 1922
-
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = -1 y = 2 }
 		}
-
 		ai_will_do = {
 			factor = 1
-
 			modifier = {
 				factor = 4
 				OR = {
@@ -528,45 +422,35 @@ technologies = {
 				}
 			}
 		}
-
 		categories = {
 			naval_equipment
 			cl_tech
 			ca_tech
 		}
 	}
-
 	basic_ship_hull_cruiser = {
-
 		enable_equipments = {
 			ship_hull_cruiser_2
 		}
 		enable_equipment_modules = {
 			cruiser_ship_engine_2
 		}
-
 		path = {
 			leads_to_tech = improved_ship_hull_cruiser
 			research_cost_coeff = 1
 		}
-
 		path = {
 			leads_to_tech = basic_cruiser_armor_scheme
 			research_cost_coeff = 1
 		}
-
 		research_cost = 1.5
-
 		start_year = 1936
-
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = -1 y = 7 }
 		}
-
 		ai_will_do = {
 			factor = 1
-
 			modifier = {
 				factor = 4
 				OR = {
@@ -576,16 +460,13 @@ technologies = {
 				}
 			}
 		}
-
 		categories = {
 			naval_equipment
 			cl_tech
 			ca_tech
 		}
 	}
-
 	improved_ship_hull_cruiser = {
-
 		enable_equipments = {
 			ship_hull_cruiser_3
 		}
@@ -596,19 +477,14 @@ technologies = {
 			leads_to_tech = advanced_ship_hull_cruiser
 			research_cost_coeff = 1
 		}
-
 		research_cost = 1.5
-
 		start_year = 1940
-
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = -1 y = 13 }
 		}
-
 		ai_will_do = {
 			factor = 1
-
 			modifier = {
 				OR = {
 					tag = ENG
@@ -618,16 +494,13 @@ technologies = {
 				factor = 4
 			}
 		}
-
 		categories = {
 			naval_equipment
 			cl_tech
 			ca_tech
 		}
 	}
-
 	advanced_ship_hull_cruiser = {
-
 		enable_equipments = {
 			ship_hull_cruiser_4
 		}
@@ -635,17 +508,13 @@ technologies = {
 			cruiser_ship_engine_4
 		}
 		research_cost = 1.5
-
 		start_year = 1944
-
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = -1 y = 19 }
 		}
-
 		ai_will_do = {
 			factor = 1
-
 			modifier = {
 				factor = 2
 				OR = {
@@ -654,37 +523,27 @@ technologies = {
 				}
 			}
 		}
-
 		categories = {
 			naval_equipment
 			cl_tech
 			ca_tech
 		}
 	}
-
 	improved_airplane_launcher = {
-
-
 		enable_equipment_modules = {
 			ship_airplane_launcher_2
 		}
 		on_research_complete = {
 			custom_effect_tooltip = airplane_launcher_advice_tt
 		}
-
-
 		research_cost = 0.75
-
 		start_year = 1936
-
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = 0 y = 1 }
 		}
-
 		ai_will_do = {
 			factor = 2
-
 			modifier = {
 				factor = 3.5
 				OR = {
@@ -694,7 +553,6 @@ technologies = {
 				}
 			}
 		}
-
 		categories = {
 			naval_equipment
 			cl_tech
@@ -702,38 +560,28 @@ technologies = {
 			ship_modules_tech
 		}
 	}
-
 	basic_cruiser_armor_scheme = {
-
 		enable_equipment_modules = {
 			ship_armor_cruiser_2
 		}
 		on_research_complete = {
 			custom_effect_tooltip = cruiser_armor_advice_tt
 		}
-
-
 		path = {
 			leads_to_tech = improved_cruiser_armor_scheme
 			research_cost_coeff = 1
 		}
-
-
 		xp_research_type = navy
 		xp_boost_cost = 50
 		xp_research_bonus = 1.50
 		research_cost = 1.25
-
 		start_year = 1936
-
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = 0 y = 6 }
 		}
-
 		ai_will_do = {
 			factor = 1
-
 			modifier = {
 				factor = 3
 				OR = {
@@ -743,7 +591,6 @@ technologies = {
 				}
 			}
 		}
-
 		categories = {
 			naval_equipment
 			cl_tech
@@ -751,38 +598,28 @@ technologies = {
 			ship_modules_tech
 		}
 	}
-
 	improved_cruiser_armor_scheme = {
-
 		enable_equipment_modules = {
 			ship_armor_cruiser_3
 		}
-
 		on_research_complete = {
 			custom_effect_tooltip = cruiser_armor_advice_tt
 		}
-
 		path = {
 			leads_to_tech = advanced_cruiser_armor_scheme
 			research_cost_coeff = 1
 		}
-
-
 		xp_research_type = navy
 		xp_boost_cost = 50
 		xp_research_bonus = 1.50
 		research_cost = 1.25
-
 		start_year = 1940
-
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = 0 y = 12 }
 		}
-
 		ai_will_do = {
 			factor = 1
-
 			modifier = {
 				factor = 3
 				OR = {
@@ -792,7 +629,6 @@ technologies = {
 				}
 			}
 		}
-
 		categories = {
 			naval_equipment
 			cl_tech
@@ -801,31 +637,23 @@ technologies = {
 		}
 	}
 	advanced_cruiser_armor_scheme = {
-
 		enable_equipment_modules = {
 			ship_armor_cruiser_4
 		}
-
 		on_research_complete = {
 			custom_effect_tooltip = cruiser_armor_advice_tt
 		}
-
-
 		xp_research_type = navy
 		xp_boost_cost = 50
 		xp_research_bonus = 1.50
 		research_cost = 1.25
-
 		start_year = 1944
-
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = 0 y = 18 }
 		}
-
 		ai_will_do = {
 			factor = 1
-
 			modifier = {
 				factor = 3
 				OR = {
@@ -835,7 +663,6 @@ technologies = {
 				}
 			}
 		}
-
 		categories = {
 			naval_equipment
 			cl_tech
@@ -843,48 +670,36 @@ technologies = {
 			ship_modules_tech
 		}
 	}
-
 #  # ###  ##  #   # #   #      ## #  # ### ###   ##
 #  # #   #  # #   #  # #      #   #  #  #  #  # #
 #### ##  ####  # #    #        #  ####  #  ###   #
 #  # #   #  #  # #    #         # #  #  #  #      #
 #  # ### #  #   #     #       ##  #  # ### #    ##
-
-
 	early_ship_hull_heavy = {
-
 		enable_equipments = {
 			ship_hull_heavy_1
 		}
-
 		enable_equipment_modules = {
 			ship_armor_bb_1
 			ship_armor_bc_1
 			heavy_ship_engine_1
 		}
-
 		path = {
 			leads_to_tech = basic_ship_hull_heavy
 			research_cost_coeff = 1
 		}
-
 		path = {
 			leads_to_tech = basic_heavy_armor_scheme
 			research_cost_coeff = 1
 		}
-
 		research_cost = 1.75
-
 		start_year = 1922
-
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = -1 y = 2 }
 		}
-
 		ai_will_do = {
 			factor = 1
-
 			modifier = {
 				factor = 2
 				OR = {
@@ -902,16 +717,13 @@ technologies = {
 				factor = 0
 			}
 		}
-
 		categories = {
 			naval_equipment
 			bb_tech
 			bc_tech
 		}
 	}
-
 	basic_ship_hull_heavy = {
-
 		enable_equipments = {
 			ship_hull_heavy_2
 		}
@@ -922,11 +734,8 @@ technologies = {
 			leads_to_tech = improved_ship_hull_heavy
 			research_cost_coeff = 1
 		}
-
 		research_cost = 1.5
-
 		start_year = 1936
-
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = -1 y = 7 }
@@ -934,10 +743,8 @@ technologies = {
 		sub_technologies = {
 			ship_hull_super_heavy
 		}
-
 		ai_will_do = {
 			factor = 1
-
 			modifier = {
 				factor = 2
 				OR = {
@@ -955,7 +762,6 @@ technologies = {
 				factor = 0
 			}
 		}
-
 		categories = {
 			naval_equipment
 			bb_tech
@@ -963,37 +769,28 @@ technologies = {
 		}
 	}
 	ship_hull_super_heavy = {
-
 		enable_equipments = {
 			ship_hull_super_heavy_1
 		}
-
 		enable_equipment_modules = {
 			ship_armor_shbb
 		}
-
 		research_cost = 1.5
-
 		start_year = 1936
-
 		ai_will_do = {
 			factor = 1
-
 			modifier = {
 				factor = 25
 				tag = JAP
 			}
 		}
-
 		categories = {
 			naval_equipment
 			bb_tech
 			bc_tech
 		}
 	}
-
 	improved_ship_hull_heavy = {
-
 		enable_equipments = {
 			ship_hull_heavy_3
 		}
@@ -1004,19 +801,14 @@ technologies = {
 			leads_to_tech = advanced_ship_hull_heavy
 			research_cost_coeff = 1
 		}
-
 		research_cost = 1.5
-
 		start_year = 1940
-
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = -1 y = 13 }
 		}
-
 		ai_will_do = {
 			factor = 1
-
 			modifier = {
 				factor = 5
 				tag = USA
@@ -1026,16 +818,13 @@ technologies = {
 				factor = 0
 			}
 		}
-
 		categories = {
 			naval_equipment
 			bb_tech
 			bc_tech
 		}
 	}
-
 	advanced_ship_hull_heavy = {
-
 		enable_equipments = {
 			ship_hull_heavy_4
 		}
@@ -1043,28 +832,22 @@ technologies = {
 			heavy_ship_engine_4
 		}
 		research_cost = 1.5
-
 		start_year = 1944
-
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = -1 y = 19 }
 		}
-
 		ai_will_do = {
 			factor = 1
-
 			modifier = {
 				factor = 5
 				tag = USA
-
 			}
 			modifier = {
 				is_major = no
 				factor = 0
 			}
 		}
-
 		categories = {
 			naval_equipment
 			bb_tech
@@ -1072,13 +855,10 @@ technologies = {
 		}
 	}
 	basic_heavy_armor_scheme = {
-
 		enable_equipment_modules = {
 			ship_armor_bb_2
 			ship_armor_bc_2
 		}
-
-
 		on_research_complete = {
 			custom_effect_tooltip = heavy_armor_advice_tt
 		}
@@ -1086,23 +866,17 @@ technologies = {
 			leads_to_tech = improved_heavy_armor_scheme
 			research_cost_coeff = 1
 		}
-
-
 		xp_research_type = navy
 		xp_boost_cost = 50
 		xp_research_bonus = 1.50
 		research_cost = 1.25
-
 		start_year = 1936
-
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = 0 y = 6 }
 		}
-
 		ai_will_do = {
 			factor = 1
-
 			modifier = {
 				factor = 2
 				OR = {
@@ -1112,7 +886,6 @@ technologies = {
 				}
 			}
 		}
-
 		categories = {
 			naval_equipment
 			bb_tech
@@ -1120,34 +893,25 @@ technologies = {
 			ship_modules_tech
 		}
 	}
-
 	improved_heavy_armor_scheme = {
-
 		enable_equipment_modules = {
 			ship_armor_bb_3
 			ship_armor_bc_3
 		}
-
 		on_research_complete = {
 			custom_effect_tooltip = heavy_armor_advice_tt
 		}
-
-
 		xp_research_type = navy
 		xp_boost_cost = 50
 		xp_research_bonus = 1.25
 		research_cost = 1.25
-
 		start_year = 1940
-
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = 0 y = 12 }
 		}
-
 		ai_will_do = {
 			factor = 1
-
 			modifier = {
 				factor = 4
 				OR = {
@@ -1160,7 +924,6 @@ technologies = {
 				factor = 2
 			}
 		}
-
 		categories = {
 			naval_equipment
 			bb_tech
@@ -1168,7 +931,6 @@ technologies = {
 			ship_modules_tech
 		}
 	}
-
  ##   ##  ###  ###  ### ### ###   ##
 #  # #  # #  # #  #  #  #   #  # #
 #    #### ###  ###   #  ##  ###   #
@@ -3423,106 +3185,72 @@ early_ship_hull_carrier = {
 			tp_tech
 		}
 	}
-
 	mtg_landing_craft = {
-
 		invasion_preparation = -0.5
 		amphibious_invasion_defence = 0.15
 		naval_invasion_capacity = 40
-
 		path = {
 			leads_to_tech = mtg_tank_landing_craft
 			research_cost_coeff = 1
 		}
-
 		enable_equipments = {
 			floating_harbor_equipment_1
 		}
 		force_use_small_tech_layout = yes
 		show_equipment_icon = yes
-
 		research_cost = 2
 		start_year = 1940
-
 		folder = {
 			name = mtgnavalfolder
 			position = { x = 0 y = 13 }
 		}
-
 		ai_will_do = {
 			factor = 2
-
 			modifier = {
 				factor = 0.5
 				has_war = no
 			}
-
 			modifier = {
-				factor = 2
-				tag = USA
-			}
-			modifier = {
-				has_war_with = JAP
+				has_war_with = JPN
 				factor = 2
 			}
 			modifier = {
 				factor = 50
-				tag = JAP
-				OR = {
-					has_war_with = USA
-					CHI = {
+				tag = JPN
+					ROC = {
 						OR = {
 							has_capitulated = yes
 							exists = no
-		                    is_subject_of = JAP
+							is_subject_of = JPN
 						}
 					}
-				}
 			}
-
 			modifier = {
 				factor = 2
 				tag = ENG
 			}
-
-			modifier = {
-				factor = 10
-				OR = {
-					tag = ENG
-					tag = USA
-				}
-				has_war_with = GER
-				GER = { has_war_with = SOV }
-			}
 		}
-
 		categories = {
 			naval_equipment
 			tp_tech
 		}
 	}
-
 	mtg_tank_landing_craft = {
-
 		amphibious_invasion = 0.25
 		amphibious_invasion_defence = 0.5
 		naval_invasion_capacity = 100
-
 		research_cost = 2
 		start_year = 1944
 		folder = {
 			name = mtgnavalfolder
 			position = { x = 0 y = 19 }
 		}
-
 		ai_will_do = {
 			factor = 2
-
 			modifier = {
 				factor = 0.5
 				has_war = no
 			}
-
 			modifier = {
 				factor = 2
 				tag = USA
@@ -3535,19 +3263,16 @@ early_ship_hull_carrier = {
 				factor = 3
 				tag = JAP
 			}
-
 			modifier = {
 				factor = 2
 				tag = ENG
 			}
 		}
-
 		categories = {
 			naval_equipment
 			tp_tech
 		}
 	}
-
 	###Special snowflake hulls for special snowflake nations
 	panzerschiffe = {
 

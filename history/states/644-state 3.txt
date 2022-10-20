@@ -1,22 +1,17 @@
-
 state={
 	id=644
 	name="STATE_644"
-
 	history={
 		owner = RUS
 		buildings = {
 			infrastructure = 1
-			13204 = {
+			13206 = {
 				naval_base = 1
-
 			}
-
 		}
 		add_core_of = RUS
 		add_core_of = SAK
 	}
-
 	provinces={
 		2853 4006 4229 4878 11607 12531 12592 13059 13060 13061 13062 13206 
 	}

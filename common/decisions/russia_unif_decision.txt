@@ -41,9 +41,6 @@ red_army_desertion = {
         TAT = {
         has_capitulated = yes
         }
-        TKH = {
-        has_capitulated = yes
-        }
         TSV = {
         NOT = {
         controls_state = 219    

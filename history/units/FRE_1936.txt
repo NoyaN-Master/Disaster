@@ -1,7 +1,6 @@
 ﻿##### Division Templates #####
 division_template = {
-	name = "Division d'Infanterie"		
-	division_names_group = FRE_INF_01
+	name = "Division d'Infanterie"
 	# Represents: Division d'Infanterie (Series A and B), Div. d'Inf. de Forteresse
 	# Difference is their equipment
 	regiments = {
@@ -21,8 +20,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Division Coloniale"		
-	division_names_group = FRE_COL_01
+	name = "Division Coloniale"
 	# Represents: Div. d'Inf. Coloniale, Div. d'Inf. Nord-Africaine
 	# Difference from DI is their equipment
 	regiments = {
@@ -42,8 +40,6 @@ division_template = {
 }
 division_template = {
 	name = "Division d'Infanterie Motorisée"	# Division d'Infanterie Motorisée
-	division_names_group = FRE_MOT_01
-
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -63,9 +59,7 @@ division_template = {
 }
 division_template = {
 	name = "Division d'Infanterie Alpine"	# Division d'Infanterie Alpine
-	division_names_group = FRE_MNT_01
 	# Note: trimmed to 3x Rgts w/ arty bn added, 1939
-
 	regiments = {
 		mountaineers = { x = 0 y = 0 }	# Regular mountain infantry (Infanterie Alpine)
 		mountaineers = { x = 0 y = 1 }
@@ -83,7 +77,6 @@ division_template = {
 }
 division_template = {
 	name = "Division de Cavalerie" 	# Division de Cavalerie
-	division_names_group = FRE_CAV_01
 	# Note: Transformed to DLC, DLM divisions, 1936-39 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -97,8 +90,6 @@ division_template = {
 }
 division_template = {
 	name = "Division Légère Mécanique" 		# Division Légère Mécanique
-	division_names_group = FRE_MEC_01
-
 	regiments = {
 		light_armor = { x = 0 y = 0 }		# Bn. of Hotchkiss, then Souma (Med.) tanks
 		light_armor = { x = 0 y = 1 }		# Bn. of Hotchkiss tanks
@@ -114,7 +105,6 @@ division_template = {
 }
 division_template = {
 	name = "Brigade de Chars de Combat" 	# Brigade de Chars de Combat, independent armor brigades of 2x Rgts., 2 Bns. each
-	division_names_group = FRE_ARM_01
 	regiments = {
 		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
@@ -124,8 +114,6 @@ division_template = {
 }
 division_template = {
 	name = "Brigade Coloniale"			# Represents: 2xRgt colonial forces and , usually with old equipment
-	division_names_group = FRE_COL_01
-
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -136,7 +124,6 @@ division_template = {
 	}
 	priority = 0
 }
-
 ##### OOB #####
 units = {
 	##### Northern France Region #####
@@ -159,7 +146,6 @@ units = {
 		division_template = "Division Coloniale"	 	# Second line, reserve equipment
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
-
 	}
 	division= {	
 		name = "3ème Brigade de Chars de Combat"
@@ -168,7 +154,6 @@ units = {
 		start_experience_factor = 0.2
 		force_equipment_variants = { gw_tank_equipment = { owner = "FRE" } }
 	}
-
 	# Xe Corps d'Armée (Région Militaire in 1936) -- Strassbourg
 	division= {	# "20ème Division d'Infanterie"
 		division_name = {
@@ -179,7 +164,6 @@ units = {
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
-
 	}
 	division= {	# "43ème Division d'Infanterie"
 		division_name = {
@@ -190,7 +174,6 @@ units = {
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
 		start_experience_factor = 0.3
 	}
-
 	# XXe Corps d'Armée (Région Militaire in 1936) -- Nancy
 	division= {	# "2ème Division d'Infanterie"
 		division_name = {
@@ -201,7 +184,6 @@ units = {
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
-
 	}
 	division= {	# "11ème Division d'Infanterie"
 		division_name = {
@@ -221,7 +203,6 @@ units = {
 		division_template = "Division Coloniale"	 	# Second line, reserve equipment
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
-
 	}
 	division= {	# "2ème Division de Cavalerie"
 		division_name = {
@@ -232,7 +213,6 @@ units = {
 		division_template = "Division de Cavalerie" 	
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
-
 	}
 	division= {	
 		name = "2ème Brigade de Chars de Combat"
@@ -241,7 +221,6 @@ units = {
 		start_experience_factor = 0.2
 		force_equipment_variants = { gw_tank_equipment = { owner = "FRE" } }
 	}
-
 	# Ie Corps d'Armée (Région Militaire in 1936) -- Lille
 	division= {	# "1ère Div. d'Infanterie Motorisée"
 		division_name = {
@@ -261,9 +240,7 @@ units = {
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
-
 	}
-
 	# IIe Corps d'Armée (Région Militaire in 1936) -- Amiens
 	division= {	# "3ème Div. d'Infanterie Motorisée"
 		division_name = {
@@ -274,7 +251,6 @@ units = {
 		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
 		start_experience_factor = 1
 	}
-
 	# IIIe Corps d'Armée (Région Militaire in 1936) -- Rouen
 	division= {	# "5ème Div. d'Infanterie Motorisée"
 		division_name = {
@@ -285,7 +261,6 @@ units = {
 		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
 		start_experience_factor = 0.3
 	}
-
 	# XIIe Corps d'Armée (Région Militaire in 1936) -- Reims
 	division= {	# "12ème Div. d'Infanterie Motorisée"
 		division_name = {
@@ -306,7 +281,6 @@ units = {
 		start_experience_factor = 0.3
 		force_equipment_variants = { light_tank_equipment_1 = { owner = "FRE" } }
 	}
-
 	# IVe Corps d'Armée (Région Militaire in 1936) -- Le Mans
 	division= {	# "19ème Division d'Infanterie"
 		division_name = {
@@ -317,7 +291,6 @@ units = {
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
 		start_experience_factor = 0.3
 	}
-
 	# Ve Corps d'Armée (Région Militaire in 1936) -- Orleans
 	division= {	# "9ème Div. d'Infanterie Motorisée"
 		division_name = {
@@ -337,9 +310,7 @@ units = {
 		division_template = "Division de Cavalerie" 	
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-
 	# IXe Corps d'Armée (Région Militaire in 1936) -- Tours
 	division= {	# "23ème Division d'Infanterie"
 		division_name = {
@@ -359,9 +330,7 @@ units = {
 		division_template = "Division Coloniale"	 	# Second line, reserve equipment
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-
 	# XIe Corps d'Armée (Région Militaire in 1936) -- Nantes
 	division= {	# "16ème Division d'Infanterie"
 		division_name = {
@@ -372,7 +341,6 @@ units = {
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division= {	# "21ème Division d'Infanterie"
 		division_name = {
@@ -390,7 +358,6 @@ units = {
 		start_experience_factor = 0.2
 		force_equipment_variants = { light_tank_equipment_1 = { owner = "FRE" } }
 	}
-
 	# Région Militaire de Paris -- Paris
 	division= {	# "10ème Division d'Infanterie"
 		division_name = {
@@ -401,18 +368,7 @@ units = {
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-#	division= {	# "3ème Div. d'Inf. Coloniale"			# missing from OOB, insterted code but commented out -- balance?
-#		division_name = {
-#			is_name_ordered = yes
-#			name_order = 3
-#		}
-#		location = 11506
-#		division_template = "Division Coloniale"	 	# Second line, reserve equipment
-#		start_experience_factor = 0.2
-#		start_equipment_factor = 0.5
-#	}
 	division= {	# "3ème Division de Cavalerie"
 		division_name = {
 			is_name_ordered = yes
@@ -422,7 +378,6 @@ units = {
 		division_template = "Division de Cavalerie" 	
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division= {	# "5ème Division de Cavalerie"
 		division_name = {
@@ -433,7 +388,6 @@ units = {
 		division_template = "Division de Cavalerie" 	
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division= {	
 		name = "4ème Brigade de Chars de Combat"
@@ -443,7 +397,6 @@ units = {
 		start_equipment_factor = 0.5
 		force_equipment_variants = { light_tank_equipment_1 = { owner = "FRE" } }
 	}
-
 	# VIIe Corps d'Armée (Région Militaire in 1936) -- Besançon
 	division= {	# "6ème Division d'Infanterie"
 		division_name = {
@@ -454,7 +407,6 @@ units = {
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division= {	# "13ème Division d'Infanterie"
 		division_name = {
@@ -474,7 +426,6 @@ units = {
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
 		start_experience_factor = 0.3
 	}
-
 	# VIIIe Corps d'Armée (Région Militaire in 1936) -- Dijon
 	division= {	# "15ème Div. d'Infanterie Motorisée"
 		division_name = {
@@ -494,9 +445,7 @@ units = {
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-
 	# Maginot Line -- Divisions d'Forteresse
 	division= {	
 		name = "Longuyon Div. d'Inf. de Forteresse"
@@ -504,7 +453,6 @@ units = {
 		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
 	division= {	
 		name = "Metz Div. d'Inf. de Forteresse"
@@ -512,7 +460,6 @@ units = {
 		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
 	division= {	
 		name = "Sarreguimines Div. d'Inf. de Forteresse"
@@ -520,7 +467,6 @@ units = {
 		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
 	division= {	
 		name = "Strassbourg Div. d'Inf. de Forteresse"
@@ -528,7 +474,6 @@ units = {
 		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
 	division= {	
 		name = "Mulhouse Div. d'Inf. de Forteresse"
@@ -536,9 +481,7 @@ units = {
 		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
-
 	### Southern France Region
 	# XIIIe Corps d'Armée (Région Militaire in 1936) -- Clermont-Ferrand
 	division= {	# "4ème Division d'Infanterie"
@@ -550,7 +493,6 @@ units = {
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division= {	# "18ème Division d'Infanterie"
 		division_name = {
@@ -561,7 +503,6 @@ units = {
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division= {	# "25ème Div. d'Infanterie Motorisée"
 		division_name = {
@@ -572,7 +513,6 @@ units = {
 		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
 		start_experience_factor = 0.3
 	}
-
 	# XVIIe Corps d'Armée (Région Militaire in 1936) -- Toulouse
 	division= {	# "22ème Division d'Infanterie"
 		division_name = {
@@ -583,7 +523,6 @@ units = {
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division= {	# "4ème Div. d'Inf. Coloniale"
 		division_name = {
@@ -594,9 +533,7 @@ units = {
 		division_template = "Division Coloniale"	 	# Second line, reserve equipment
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-
 	# XVIIIe Corps d'Armée (Région Militaire in 1936) -- Bordeaux
 	division= {	# "36ème Division d'Infanterie"
 		division_name = {
@@ -616,9 +553,7 @@ units = {
 		division_template = "Division Coloniale"	 	# Second line, reserve equipment
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-
 	# XIVe Corps d'Armée (Région Militaire in 1936) -- Lyon
 	division= {	# "27ème Division d'Infanterie Alpine"
 		division_name = {
@@ -638,7 +573,6 @@ units = {
 		division_template = "Division d'Infanterie Alpine" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
 	division= {	# "1ère Div. d'Inf. Nord-Africaine"
 		division_name = {
@@ -649,7 +583,6 @@ units = {
 		division_template = "Division Coloniale"	 	# Second line, reserve equipment
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division= {	
 		name = "1ère Brigade de Chars de Combat"
@@ -658,8 +591,6 @@ units = {
 		start_experience_factor = 0.2
 		force_equipment_variants = { gw_tank_equipment = { owner = "FRE" } }
 	}
-
-
 	# XVe Corps d'Armée (Région Militaire in 1936) -- Marseille
 	division= {	# "29ème Division d'Infanterie Alpine"
 		division_name = {
@@ -679,9 +610,7 @@ units = {
 		division_template = "Division Coloniale"		 	# Second line, reserve equipment
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-
 	# XVIe Corps d'Armée (Région Militaire in 1936) -- Montpellier
 	division= {	# "31ème Division d'Infanterie Alpine"
 		division_name = {
@@ -692,7 +621,6 @@ units = {
 		division_template = "Division d'Infanterie Alpine" 	# Frontline, best equipment
 		start_experience_factor = 0.3
 	}
-
 	# Division d'Inf. Forteresse -- Nice
 	division= {	
 		name = "Nice Div. d'Inf. de Forteresse"
@@ -700,10 +628,7 @@ units = {
 		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
-
-
 	##### North African Theatre #####
 	### Army: Troupes de Alger ###
 	# XIXe Corps d'Armée (Région Militaire in 1936) -- Alger
@@ -714,7 +639,6 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRE" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
 	division= {	
 		name = "2ème Bge. d'Infanterie Algérienne"
@@ -723,7 +647,6 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRE" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
 	division= {	
 		name = "4ème Bge. d'Infanterie Algérienne"
@@ -732,7 +655,6 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRE" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
 	division= {	
 		name = "5ème Bge. d'Infanterie Algérienne"
@@ -741,7 +663,6 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRE" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
 	# attached directly to Army
 	division= {	
@@ -751,7 +672,6 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRE" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
 	division= {	
 		name = "7ème Bge. d'Infanterie Algérienne"
@@ -760,7 +680,6 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRE" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
 	division= {	
 		name = "Groupement Cavalerie d'Algérienne"
@@ -769,9 +688,7 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRE" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
-	
 	### Army: Protectorat de Tunisie ### -- Tunis
 	division= {	# "Division de Tunise"
 		division_name = {
@@ -783,7 +700,6 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRE" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
 	division= {	# "Division de Sousse"
 		division_name = {
@@ -795,9 +711,7 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRE" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-
 	### Army: Protectorat du Maroc ### -- Casablanca
 	division= {	# "Division de Meknès"
 		division_name = {
@@ -809,7 +723,6 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRE" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
 	division= {	# "Division de Casablanca"	
 		division_name = {
@@ -821,7 +734,6 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRE" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
 	division= {	# "Division de Fès"
 		division_name = {
@@ -833,7 +745,6 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRE" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
 	division= {	# "Division de Marrakech"	
 		division_name = {
@@ -845,7 +756,6 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRE" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
 	division= {	
 		name = "Groupement de Maroc"
@@ -854,10 +764,7 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRE" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
-
-
 	##### Eastern Mediterranean Theatre #####
 	### Army: Mandat du Levant ### -- Beirut
 	division= {	
@@ -867,9 +774,7 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRE" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-
 	# Troupes de Madagascar
 	division= {	
 		name = "Troupes de Madagascar"	
@@ -877,10 +782,7 @@ units = {
 		division_template = "Brigade Coloniale" 	# Miltia unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRE" } }
 		start_equipment_factor = 0.15
-
 	}
-
-
 	##### Far Seas Theatre ##### -- Dakar
 	division= {	
 		name = "Troupes de Sénégalais"
@@ -888,7 +790,6 @@ units = {
 		division_template = "Brigade Coloniale" 	# Miltia unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRE" } }
 		start_equipment_factor = 0.3
-
 	}
 	division= {	
 		name = "Troupes de Afrique Equatoriale Française"	
@@ -896,10 +797,7 @@ units = {
 		division_template = "Brigade Coloniale" 	# Miltia unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRE" } }
 		start_equipment_factor = 0.15
-
 	}
-
-
 	##### Indochina Theatre #####
 	### Army Group: Troupes d'Indochine ### -- Saigon
 	division= {	# "Division de Tonkin"
@@ -912,7 +810,6 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRE" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
 	division= {	# "Division de Cochinchine-Cambodge"
 		division_name = {
@@ -924,7 +821,6 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRE" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
 	division= {	
 		name = "Brigade d'Annam-Laos"	
@@ -933,10 +829,8 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRE" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
 }
-
 ### Air Wings
 air_wings = {
 	# Z.d'Op. Aériennes Nord -- Lille
@@ -954,7 +848,6 @@ air_wings = {
 			amount = 500
 		}
 	}
-
 	# Z.d'Op. Aériennes Est -- Reims
 	18 = {
 		# Groupement de Chasse 22
@@ -963,7 +856,6 @@ air_wings = {
 			amount = 400
 		}
 	}
-
 	# Z.d'Op. Aériennes du Alps -- Marseille
 	21 = {
 		# Groupement de Chasse d'Alps
@@ -984,7 +876,6 @@ air_wings = {
 			amount = 100
 		}
 	}
-
 	# Z.d'Op. Aériennes Africain -- Tunis
 	458 = {
 		# Groupement de Chasse du Nord-Africain
@@ -998,7 +889,6 @@ air_wings = {
 			amount = 200
 		}
 	}
-
 	# Aeronautique Navale -- Cherbourg
 	15 = {
 		# Flotille F1
@@ -1008,11 +898,9 @@ air_wings = {
 		}
 	}
 }
-
 #########################
 ## STARTING PRODUCTION ##
 #########################
-
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
@@ -1023,7 +911,6 @@ instant_effect = {
 		progress = 0.1
 		efficiency = 50
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
@@ -1033,7 +920,6 @@ instant_effect = {
 		progress = 0.3
 		efficiency = 50
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = artillery_equipment_1
@@ -1043,7 +929,6 @@ instant_effect = {
 		progress = 0.3
 		efficiency = 50
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = light_tank_equipment_2
@@ -1053,7 +938,6 @@ instant_effect = {
 		progress = 0.4
 		efficiency = 50
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = motorized_equipment_1
@@ -1063,5 +947,5 @@ instant_effect = {
 		progress = 0.4
 		efficiency = 50
 	}
-
+}
 ###################

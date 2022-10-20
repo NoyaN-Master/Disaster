@@ -21,9 +21,6 @@ focus_tree = {
 		}
 		completion_reward = {
 		custom_effect_tooltip = WRF_Start
-		hidden_effect = {
-		country_event = { id = wrf.3 days = 3 }
-		}
 		add_manpower = 100000
 		army_experience = 75
 		340 = {

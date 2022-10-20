@@ -1,9 +1,6 @@
 ﻿##### Division Templates #####
 division_template = {
 	name = "Jalkaväkidivisioona"		# Infantry Division
-
-	division_names_group = FIN_INF_01
-
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -18,9 +15,6 @@ division_template = {
 }
 division_template = {
 	name = "Erillinen Prikaati" 	# Separate Brigade - Represents groups of separate battalions (Erillinen Pataljoona) and various garrison units
-
-	division_names_group = FIN_GAR_01
-
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -33,9 +27,6 @@ division_template = {
 }
 division_template = {
 	name = "Ratsuväkiprikaati"  		# Cavalry Division
-
-	division_names_group = FIN_CAV_01
-
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 1 y = 0 }
@@ -44,8 +35,6 @@ division_template = {
 		recon = { x = 0 y = 0 }   
 	}
 }
-
-
 ##### OOB #####
 units = {
 	##### LAND UNITS #####
@@ -60,7 +49,6 @@ units = {
 		division_template = "Jalkaväkidivisioona"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		#name = "9. Divisioona"
@@ -72,7 +60,6 @@ units = {
 		division_template = "Jalkaväkidivisioona"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		#name = "Lapin Ryhmä"
@@ -84,7 +71,6 @@ units = {
 		division_template = "Erillinen Prikaati"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		#name = "Pohjois-Karjalan Ryhmä"
@@ -96,9 +82,7 @@ units = {
 		division_template = "Erillinen Prikaati"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	
 	# IV Corps
 	division = {
 		#name = "12. Divisioona"
@@ -110,7 +94,6 @@ units = {
 		division_template = "Jalkaväkidivisioona"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		#name = "13. Divisioona"
@@ -122,7 +105,6 @@ units = {
 		division_template = "Jalkaväkidivisioona"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		name = "Räsäsen Ryhmä"
@@ -134,9 +116,7 @@ units = {
 		division_template = "Erillinen Prikaati"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-
 	### Kannaksen Armeija ###
 	# II Corps
 	division = {
@@ -149,7 +129,6 @@ units = {
 		division_template = "Jalkaväkidivisioona"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		#name = "4. Divisioona"
@@ -161,7 +140,6 @@ units = {
 		division_template = "Jalkaväkidivisioona"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		#name = "5. Divisioona"
@@ -173,7 +151,6 @@ units = {
 		division_template = "Jalkaväkidivisioona"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		#name = "11. Divisioona"
@@ -185,7 +162,6 @@ units = {
 		division_template = "Jalkaväkidivisioona"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		#name = "Ratsuväkiprikaati"
@@ -197,7 +173,6 @@ units = {
 		division_template = "Ratsuväkiprikaati" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		#name = "Lipolan Ryhmä"
@@ -209,7 +184,6 @@ units = {
 		division_template = "Erillinen Prikaati"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		#name = "Muolaan Ryhmä"
@@ -221,7 +195,6 @@ units = {
 		division_template = "Erillinen Prikaati"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		#name = "Uudenkirkon Ryhmä"
@@ -233,7 +206,6 @@ units = {
 		division_template = "Erillinen Prikaati"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	# III Corps
 	division = {
@@ -246,7 +218,6 @@ units = {
 		division_template = "Jalkaväkidivisioona"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		#name = "10. Divisioona"
@@ -258,7 +229,6 @@ units = {
 		division_template = "Jalkaväkidivisioona"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		#name = "Raudun Ryhmä"
@@ -270,12 +240,9 @@ units = {
 		division_template = "Erillinen Prikaati"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 }
-	
 ### No air units (first formed Jan-1938) ###
-
 ### Starting Production ###
 instant_effect = {
 	add_equipment_production = {

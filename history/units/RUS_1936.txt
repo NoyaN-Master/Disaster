@@ -98,7 +98,6 @@ instant_effect = {
 			icon = "gfx/interface/equipmentdesigner/tanks/designer/Russia/RUS_basic_heavy_tank.png"
 		}
 	}
-
 	### Production ###
 	add_equipment_production = {
 		equipment = {
@@ -163,11 +162,9 @@ instant_effect = {
 		efficiency = 100
 	}
 }
-
 ### Division Templates ###
 division_template = {
 	name = "Pekhotnaya Diviziya"			# Rifle Division
-	division_names_group = RUS_INF_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -181,10 +178,8 @@ division_template = {
 		infantry = { x = 2 y = 2 }
 	}
 }
-
 division_template = {
 	name = "Gornostrelkovaya Diviziya"		# Mountain Division
-	division_names_group = RUS_MNT_01
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
@@ -204,10 +199,8 @@ division_template = {
 		artillery = { x = 0 y = 1 } 	# Heavy Arty Regiment had 2x 122mm bn
 	}
 }
-
 division_template = {
 	name = "Motostrelkovaya Diviziya"		# Motor Rifle Division
-	division_names_group = RUS_MOT_01
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -217,10 +210,8 @@ division_template = {
 		motorized = { x = 1 y = 2 }
 	}
 }
-
 division_template = {
 	name = "Kavaleriyskaya Diviziya" 	# Cavalry Division
-	division_names_group = RUS_CAV_01
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
@@ -232,10 +223,8 @@ division_template = {
 		cavalry = { x = 1 y = 3 }
 	}
 }
-
 division_template = {
 	name = "Tankovaya Diviziya" 	# Tank Division
-	division_names_group = RUS_ARM_01
 	regiments = {
 		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
@@ -247,7 +236,6 @@ division_template = {
 		motorized = { x = 1 y = 3 }
 	}
 }
-
 ##### OOB #####
 units = {
 	division = {
@@ -600,7 +588,6 @@ units = {
 		division_template = "Pekhotnaya Diviziya"
 		start_experience_factor = 0.2
 	}
-
 	### Cavalry
 	division = {
 		location = 3529 #Tsaritsyn
@@ -652,7 +639,6 @@ units = {
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
 	}
-
 	### Mobile/Tanks
 	division = {
 		location = 6380
@@ -674,7 +660,6 @@ units = {
 		division_template = "Tankovaya Diviziya"
 		start_experience_factor = 0.3
 	}
-
 	### Mountaineers
 	division = {
 		location = 10142 #Zlatoust
@@ -697,8 +682,6 @@ units = {
 		start_experience_factor = 0.3
 	}
 }
-
-
 ### Air Wings
 air_wings = {
 	219 = { #Moscow
@@ -721,16 +704,6 @@ air_wings = {
 			amount = 40
 		}
 	}
-	657 = { #Blagoveshchensk
-		fighter_equipment_0 = {
-			owner = "RUS"
-			amount = 60
-		}
-		tac_bomber_equipment_0 = {
-			owner = "USA"
-			amount = 40
-		}
-	}
 	217 = { #Tsaritsyn
 		fighter_equipment_0 = {
 			owner = "RUS"
@@ -741,12 +714,6 @@ air_wings = {
 		fighter_equipment_0 = {
 			owner = "RUS"
 			amount = 60
-		}
-	}
-	222 = {
-		tac_bomber_equipment_0 = {
-			owner = "RUS"
-			amount = 40
 		}
 	}
 }

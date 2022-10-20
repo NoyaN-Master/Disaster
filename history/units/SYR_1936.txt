@@ -1,7 +1,5 @@
 division_template = {
 	name = "Syrian Army"
-	division_names_group = TUR_INF_01
-
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -13,13 +11,12 @@ division_template = {
 	}
 }
 units = {
-division= {	
+	division= {	
 		name = "King's Own"
 		location = 4550    # Vienna
 		division_template = "Syrian Army"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
-
 	}
 	division= {	
 		name = "French Aided Garrison"
@@ -27,7 +24,6 @@ division= {
 		division_template = "Syrian Army"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
-
 	}
 	division= {	
 		name = "Islam Volunteers"
@@ -36,14 +32,12 @@ division= {
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 	}
-
-division= {	
+	division= {	
 		name = "Syrian Forces"
 		location = 4550    # Vienna
 		division_template = "Syrian Army"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
-
 	}
 	division= {	
 		name = "Syrian Forces"
@@ -51,30 +45,6 @@ division= {
 		division_template = "Syrian Army"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
-
-	}
-	division= {	
-		name = "Syrian Forces"
-		location = 4550    # Vienna
-		division_template = "Syrian Army"
-		start_experience_factor = 1.0
-		start_equipment_factor = 1.0
-	}
-division= {	
-		name = "Syrian Forces"
-		location = 4550    # Vienna
-		division_template = "Syrian Army"
-		start_experience_factor = 0.5
-		start_equipment_factor = 1.0
-
-	}
-	division= {	
-		name = "Syrian Forces"
-		location = 4550    # Vienna
-		division_template = "Syrian Army"
-		start_experience_factor = 0.5
-		start_equipment_factor = 1.0
-
 	}
 	division= {	
 		name = "Syrian Forces"
@@ -83,13 +53,12 @@ division= {
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 	}
-division= {	
+	division= {	
 		name = "Syrian Forces"
 		location = 4550    # Vienna
 		division_template = "Syrian Army"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
-
 	}
 	division= {	
 		name = "Syrian Forces"
@@ -97,7 +66,27 @@ division= {
 		division_template = "Syrian Army"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
-
+	}
+	division= {	
+		name = "Syrian Forces"
+		location = 4550    # Vienna
+		division_template = "Syrian Army"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "Syrian Forces"
+		location = 4550    # Vienna
+		division_template = "Syrian Army"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "Syrian Forces"
+		location = 4550    # Vienna
+		division_template = "Syrian Army"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
 	}
 	division= {	
 		name = "Syrian Forces"

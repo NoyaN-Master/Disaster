@@ -1,16 +1,13 @@
-
 state={
 	id= 869
 	name="STATE_869" #Palestine
 	manpower = 933142
-	
 	state_category = rural
-
 	history={
 		owner = LEV
 		buildings = {
 			infrastructure = 5
-			4206 = {
+			1 = {
 				naval_base = 3
 			}
 		}
@@ -22,7 +19,6 @@ state={
 		}
 		add_core_of = LEV
 	}
-
 	provinces={
 		1 7176 1086 7107 
 	}

@@ -23,7 +23,7 @@ PLN_minorities_and_borders = {
 			political_power_factor = -0.05
 			}
 		}
-NGU_pacify_2 = {
+PLN_pacify = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRE_simmering_discontent" }
 			picture = discontent
 			modifier = {

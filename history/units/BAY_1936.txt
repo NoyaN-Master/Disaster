@@ -1,7 +1,5 @@
 division_template = {
 	name = "Infantry Division"
-	division_names_group = BAY_INF_01
-
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -21,8 +19,6 @@ division_template = {
 }
 division_template = {
 	name = "Panzer-Division"
-	division_names_group = GER_TNK_01
-
 	regiments = {
 		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
@@ -39,8 +35,6 @@ division_template = {
 }
 division_template = {
 	name = "Motorisierte Division"
-	division_names_group = GER_MOT_02
-
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -51,11 +45,8 @@ division_template = {
 		light_armor = { x = 2 y = 0 }
 	}
 }
-
 division_template = {
 	name = "Mountain Division"
-	division_names_group = PRE_MNT_01
-
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
@@ -69,9 +60,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Cavalry Division" 
-	division_names_group = BAY_CAV_01
-
+	name = "Cavalry Division"
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
@@ -86,7 +75,6 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.15
 		start_equipment_factor = 1
-
 	}
 	division= {	
 		name = "2. Infantry Division of Bavaria"
@@ -94,7 +82,6 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.15
 		start_equipment_factor = 1
-
 	}
 	division= {	
 		name = "3. Infantry Division of Bavaria"
@@ -102,7 +89,6 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.15
 		start_equipment_factor = 1
-
 	}
 	division= {	
 		name = "4. Infantry Division of Bavaria"
@@ -110,7 +96,6 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.15
 		start_equipment_factor = 1
-
 	}
 	division= {	
 		name = "5. Infantry Division of Bavaria"
@@ -118,7 +103,6 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.15
 		start_equipment_factor = 1
-
 	}
 	division= {	
 		name = "6. Infantry Division of Bavaria"
@@ -126,7 +110,6 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.15
 		start_equipment_factor = 1
-
 	}
 	division= {	
 		name = "7. Infantry Division of Bavaria"
@@ -134,7 +117,6 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.15
 		start_equipment_factor = 1
-
 	}
 	division= {	
 		name = "8. Infantry Division of Bavaria"
@@ -142,7 +124,6 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.15
 		start_equipment_factor = 1
-
 	}
 	division= {	
 		name = "9. Infantry Division of Bavaria"
@@ -150,7 +131,6 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.15
 		start_equipment_factor = 1
-
 	}
 	division= {	
 		name = "2.  Cavalry Division of Bavaria"
@@ -158,7 +138,6 @@ units = {
 		division_template = "Cavalry Division" 
 		start_experience_factor = 0.15
 		start_equipment_factor = 1
-
 	}
 	division= {	
 		name = "3.  Cavalry Division of Bavaria"
@@ -166,7 +145,6 @@ units = {
 		division_template = "Cavalry Division" 
 		start_experience_factor = 0.15
 		start_equipment_factor = 1
-
 	}
 	division= {	
 		name = "4.  Cavalry Division of Bavaria"
@@ -174,7 +152,6 @@ units = {
 		division_template = "Cavalry Division" 
 		start_experience_factor = 0.15
 		start_equipment_factor = 1
-
 	}
 	division= {	
 		name = "5.  Cavalry Division of Bavaria"
@@ -182,7 +159,6 @@ units = {
 		division_template = "Cavalry Division" 
 		start_experience_factor = 0.15
 		start_equipment_factor = 1
-
 	}
 	division= {	
 		name = "6.  Cavalry Division of Bavaria"
@@ -190,7 +166,6 @@ units = {
 		division_template = "Cavalry Division" 
 		start_experience_factor = 0.15
 		start_equipment_factor = 1
-
 	}
 	division= {	
 		name = "7.  Cavalry Division of Bavaria"
@@ -198,7 +173,6 @@ units = {
 		division_template = "Cavalry Division" 
 		start_experience_factor = 0.15
 		start_equipment_factor = 1
-
 	}
 	division= {	
 		name = "8.  Cavalry Division of Bavaria"
@@ -206,7 +180,6 @@ units = {
 		division_template = "Cavalry Division" 
 		start_experience_factor = 0.15
 		start_equipment_factor = 1
-
 	}
 }
 instant_effect = {

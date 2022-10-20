@@ -1,6 +1,5 @@
 division_template = {
-	name = "Boer Defense Forces"					
-	division_names_group = BOE_INF_01
+	name = "Boer Defense Forces"
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -17,8 +16,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Boer Cavalry Division"					
-	division_names_group = BOE_CAV_01
+	name = "Boer Cavalry Division"
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
@@ -35,7 +33,6 @@ units = {
 		division_template = "Boer Defense Forces"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
 	division = {
 		name = "2. Boer Defense Division"
@@ -43,7 +40,6 @@ units = {
 		division_template = "Boer Defense Forces"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
 	division = {
 		name = "3. Boer Defense Division"
@@ -51,7 +47,6 @@ units = {
 		division_template = "Boer Defense Forces"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
 	division = {
 		name = "4. Boer Defense Division"
@@ -59,7 +54,6 @@ units = {
 		division_template = "Boer Defense Forces"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
 	division = {
 		name = "1. Boer Mobile Division"
@@ -67,7 +61,6 @@ units = {
 		division_template = "Boer Cavalry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
 }
 instant_effect = {

@@ -1,8 +1,5 @@
 division_template = {
-	name = "Infantry Division"					
-
-	division_names_group = RAJ_INF_01
-
+	name = "Infantry Division"
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -15,12 +12,8 @@ division_template = {
 		infantry = { x = 2 y = 2 }
 	}
 }
-
 division_template = {
-	name = "Artillery Division"					
-
-	division_names_group = RAJ_INF_02
-
+	name = "Artillery Division"
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -33,9 +26,6 @@ division_template = {
 		artillery_brigade = { x = 2 y = 2 }
 	}
 }
-
-
-
 units = {
 	division= {	
 		name = "Infantry Division - 1"
@@ -44,7 +34,6 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
-
 	division= {	
 		name = "Infantry Division - 2"
 		location = 8011
@@ -52,7 +41,6 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
-	
 	division= {	
 		name = "Infantry Division - 3"
 		location = 10278
@@ -60,7 +48,6 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.95
 	}
-	
 	division= {	
 		name = "Infantry Division - 4"
 		location = 8087
@@ -68,7 +55,6 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.95
 	}
-	
 	division= {	
 		name = "Infantry Division - 5"
 		location = 7260
@@ -76,7 +62,6 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.75
 	}
-	
 	division= {	
 		name = "Artillery Division - 1"
 		location = 10278
@@ -84,7 +69,6 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
 	}
-	
 	division= {	
 		name = "Artillery Division - 2"
 		location = 8087

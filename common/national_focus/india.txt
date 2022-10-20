@@ -1,19 +1,14 @@
 ﻿focus_tree = {
 	id = british_raj_and_sri_lanka_focus
-	
 	country = {
 		factor = 0
-		
 		modifier = {
 			add = 10
 			tag = RAJ
 		}
 	}
-	
 	continuous_focus_position = { x = 100 y = 1500 }
-	
     default = no
-
 	focus = {
 		id = RAJ_forgotten_colony #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -23,14 +18,11 @@
 		ai_will_do = {
 			factor = 100
 		}
-		select_effect = {
-		}
 		completion_reward = {
 			add_stability = -0.05
 			country_event = { id = RAJ.1 days = 1 } #description of situation in our colony by receiving a letter from the King of Britain
 		}
 	}
-	
 	focus = {
 		id = RAJ_mountbatten_plan #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -48,9 +40,9 @@
 			country_event = { id = RAJ.2 days = 7}  #lord louis mountbatten sitting in his cabinet and swearing at his minister of economy, cuz he can't do anything in economy. Then he gets enlightenment and saying, that his ministry can go home, he'll take care of India by himself. He begin to develop a plan. A plan about saving India from long economic depression
 		}
 		completion_reward = {
-        }
+
+		}
 	}
-	
 	focus = {
 		id = RAJ_ports_of_sri_lanka #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -64,8 +56,6 @@
 			focus = RAJ_mountbatten_plan
 		}
 		relative_position_id = RAJ_mountbatten_plan
-		select_effect = {
-		}
 		completion_reward = {
 			422 = {
 				add_building_construction = {
@@ -77,7 +67,6 @@
 			}
 		}
 	}
-	
 	focus = {
 		id = RAJ_infrastructure_of_island #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -91,8 +80,6 @@
 			focus = RAJ_ports_of_sri_lanka
 		}
 		relative_position_id = RAJ_ports_of_sri_lanka
-		select_effect = {
-		}
 		completion_reward = {
 			422 = {
 				add_building_construction = {
@@ -103,7 +90,6 @@
 			}
 		}
 	}
-	
 	focus = {
 		id = RAJ_invset_in_Sri_lanka #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -117,8 +103,6 @@
 			focus = RAJ_ports_of_sri_lanka
 		}
 		relative_position_id = RAJ_ports_of_sri_lanka
-		select_effect = {
-		}
 		completion_reward = {
 			422 = {
 				add_building_construction = {
@@ -135,7 +119,6 @@
 			}
 		}
 	}
-	
 	focus = {
 		id = RAJ_isle_of_salvation #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -152,8 +135,6 @@
 			focus = RAJ_infrastructure_of_island
 		}
 		relative_position_id = RAJ_invset_in_Sri_lanka
-		select_effect = {
-		}
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = RAJ_weak_economy
@@ -161,7 +142,6 @@
 			}
 		} 
 	}	
-	
 	focus = {
 		id = RAJ_Factories_on_the_mainland #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -175,8 +155,6 @@
 			focus = RAJ_mountbatten_plan
 		}
 		relative_position_id = RAJ_mountbatten_plan
-		select_effect = {
-		}
 		completion_reward = {
 			423 = {
 				add_building_construction = {
@@ -211,7 +189,6 @@
 			}
 		}
 	}
-	
 	focus = {
 		id = RAJ_infrastructure_of_south #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -225,8 +202,6 @@
 			focus = RAJ_Factories_on_the_mainland
 		}
 		relative_position_id = RAJ_Factories_on_the_mainland
-		select_effect = {
-		}
 		completion_reward = {
 			423 = {
 				add_building_construction = {
@@ -237,7 +212,6 @@
 			}
 		}
 	}
-	
 	focus = {
 		id = RAJ_investment_in_mumbai_infrastructure #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -257,8 +231,6 @@
 			focus = RAJ_infrastructure_of_south
 		}
 		relative_position_id = RAJ_infrastructure_of_south
-		select_effect = {
-		}
 		completion_reward = {
 			429 = {
 				add_building_construction = {
@@ -276,7 +248,6 @@
 			}
 		}
 	}
-	
 	focus = {
 		id = RAJ_investment_in_mumbai_business #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -296,8 +267,6 @@
 			focus = RAJ_infrastructure_of_south
 		}
 		relative_position_id = RAJ_infrastructure_of_south
-		select_effect = {
-		}
 		completion_reward = {
 			429 = {
 				add_building_construction = {
@@ -320,7 +289,6 @@
 			}
 		}
 	}
-	
 	focus = {
 		id = RAJ_mumbai_port #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -337,8 +305,6 @@
 			focus = RAJ_investment_in_mumbai_business
 		}
 		relative_position_id = RAJ_investment_in_mumbai_infrastructure
-		select_effect = {
-		}
 		completion_reward = {
 			429 = {
 				add_building_construction = {
@@ -349,7 +315,6 @@
 			}
 		}
 	}
-	
 	focus = {
 		id = RAJ_calm_before_the_storm #same name (calm before the storm)
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -366,8 +331,6 @@
 			focus = RAJ_isle_of_salvation
 		}
 		relative_position_id = RAJ_infrastructure_of_south
-		select_effect = {
-		}
 		completion_reward = {
 			423 = {
 				add_building_construction = {
@@ -386,7 +349,6 @@
 			}
 		}
 	}
-	
 	focus = {
 		id = RAJ_british_help #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -403,15 +365,12 @@
 			focus = RAJ_foreign_policy
 		}
 		relative_position_id = RAJ_foreign_policy
-		select_effect = {
-		}
 		completion_reward = {
 			ENG = {
 				country_event = { id = RAJ.3 days = 1 } #UK gets event about helping British raj, they'll have 3 option: 1 - send them militery help (2 mil. factory, some manpower (around 25-10k) and guns (2k guns)) 2 - send them different help (1 mil. factory and 1 civ. factory, a little bit of manpower (5k) and some guns (500)), 3 - send them civ. help (engineers (Add idea 'Help from UK' which add 7.5% to building speed and 5% to prod. eff. cap. and growth), 3 civil factories and 1 port)
 			}
         }
 	}
-	
 	focus = {
 		id = RAJ_foreign_policy #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -425,13 +384,10 @@
 			focus = RAJ_forgotten_colony
 		}
 		relative_position_id = RAJ_forgotten_colony 
-		select_effect = {
-		}
 		completion_reward = {	
 			add_political_power = 100
         }
 	}
-	
 	focus = {
 		id = RAJ_help_northern_brother #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -448,8 +404,6 @@
 			focus = RAJ_mountbatten_plan
 		}
 		relative_position_id = RAJ_british_help
-		select_effect = {
-		}
 		completion_reward = {	
 			427 = {
 				add_building_construction = {
@@ -499,7 +453,6 @@
 			}
         }
 	}
-	
 	focus = {
 		id = RAJ_declare_war_on_Mumbai #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -513,8 +466,6 @@
 			focus = RAJ_help_northern_brother
 		}
 		relative_position_id = RAJ_help_northern_brother
-		select_effect = {
-		}
 		completion_reward = {	
 			declare_war_on = {
 				target = MBM
@@ -528,7 +479,6 @@
 			}
         }
 	}
-	
 	focus = {
 		id = RAJ_annex_european_cities_in_india #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -545,8 +495,6 @@
 			focus = RAJ_declare_war_on_Mumbai
 		}
 		relative_position_id = RAJ_declare_war_on_Mumbai
-		select_effect = {
-		}
 		completion_reward = {	
 			320 = {
 				set_state_owner_to = RAJ
@@ -556,7 +504,6 @@
 			}
 		}
 	}
-	
 	focus = {
 		id = RAJ_We_are_Indian_too #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -570,8 +517,6 @@
 			focus = RAJ_annex_european_cities_in_india
 		}
 		relative_position_id = RAJ_annex_european_cities_in_india
-		select_effect = {
-		}
 		completion_reward = {	
 			320 = {
 				add_core_of = RAJ
@@ -594,12 +539,9 @@
 			830 = {
 				add_core_of = RAJ
 			}
-			remove_ideas = {
-				RAJ_multinational_state
-			}
+			remove_ideas = RAJ_multinational_state
 		}
 	}
-	
 	focus = {
 		id = RAJ_consolidate_power #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -619,8 +561,6 @@
 			focus = RAJ_We_are_Indian_too
 		}
 		relative_position_id = RAJ_investment_in_mumbai_infrastructure
-		select_effect = {
-		}
 		completion_reward = {
 			annex_country = {
 				target = PRF
@@ -633,9 +573,7 @@
 			}
 		}
 	}
-	
 	###STAGE TWO - ANIHILATION OF INDIA
-	
 	focus = {
 		id = RAJ_union_of_british_india #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -649,13 +587,10 @@
 			focus = RAJ_consolidate_power
 		}
 		relative_position_id = RAJ_consolidate_power
-		select_effect = {
-		}
 		completion_reward = {
 			create_faction = Union_of_British_India
 		}
 	}
-	
 	focus = {
 		id = RAJ_letter_in_Kashmira #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -674,14 +609,11 @@
 			focus = RAJ_union_of_british_india
 		}
 		relative_position_id = RAJ_union_of_british_india
-		select_effect = {
-		}
 		completion_reward = {
 			KSM = { country_event = { id = RAJ.9 days = 1}} #Letter to Enoch Power, about creation of alliance to save British influence in India. He'll agree
 			#Answer to this letter will be event RAJ.20
 		}
 	}
-	
 	focus = {
 		id = RAJ_letter_to_burma #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -695,14 +627,11 @@
 			focus = RAJ_union_of_british_india
 		}
 		relative_position_id = RAJ_union_of_british_india
-		select_effect = {
-		}
 		completion_reward = {
 			BUR = { country_event = { id = RAJ.10 days = 1}} #Letter to Orde Wingate, about creation of alliance to save British influence in India. He'll agree
 			#Answer to this letter will be event RAJ.21
 		}
 	}
-	
 	focus = {
 		id = RAJ_exchange_of_military_experience #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -719,13 +648,10 @@
 			focus = RAJ_letter_in_Kashmira 
 		}
 		relative_position_id = RAJ_letter_to_burma
-		select_effect = {
-		}
 		completion_reward = {
 			country_event = { id = RAJ.11 days = 1} #Lord Louis have a meeting with leader of British Royal Forces from Kashmir and ruler of British Burma. Lord have a plan, to help in their fragile position, by not only creating an alliance but also with military help. Enoch can teach soldiers to conduct combat operations in the mountains, Orde - fight in Jungle, and Lord with technical experts.   
 		}
 	}
-	
 	focus = {
 		id = RAJ_use_old_methods #same name (Use old methods...)
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -739,8 +665,6 @@
 			focus = RAJ_consolidate_power
 		}
 		relative_position_id = RAJ_consolidate_power
-		select_effect = {
-		}
 		completion_reward = {
 			422 = {
 				add_building_construction = {
@@ -776,7 +700,6 @@
 			}
 		}
 	}
-	
 	focus = {
 		id = RAJ_plant_opium #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -790,13 +713,10 @@
 			focus = RAJ_use_old_methods
 		}
 		relative_position_id = RAJ_use_old_methods
-		select_effect = {
-		}
 		completion_reward = {
 			add_ideas = RAJ_support_agricultural
 		}
 	}
-	
 	focus = {
 		id = RAJ_sell_opium_to_Bharat #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -813,15 +733,12 @@
 			focus = RAJ_plant_opium
 		}
 		relative_position_id = RAJ_plant_opium
-		select_effect = {
-		}
 		completion_reward = {
 			BHR = {
 				add_ideas = RAJ_drug_addiction
 			}
 		}
 	}
-	
 	focus = {
 		id = RAJ_Restore_our_monopoly_on_the_east_bank_of_Indus #same name (Restore our monopoly on the east bank of Indus)
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -841,8 +758,6 @@
 			focus = RAJ_sell_opium_to_Bharat
 		}
 		relative_position_id = RAJ_sell_opium_to_Bharat
-		select_effect = {
-		}
 		completion_reward = {
 			433 = {
 				add_core_of = RAJ
@@ -864,7 +779,6 @@
 			}
 		}
 	}
-	
 	focus = {
 		id = RAJ_attack_from_both_sides #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -878,8 +792,6 @@
 			focus = RAJ_Restore_our_monopoly_on_the_east_bank_of_Indus
 		}
 		relative_position_id = RAJ_Restore_our_monopoly_on_the_east_bank_of_Indus
-		select_effect = {
-		}
 		completion_reward = {
 			declare_war_on = {
 				target = BHR
@@ -893,7 +805,6 @@
 			}
 		}
 	}
-	
 	focus = {
 		id = RAJ_sell_opium_to_Azad_hind #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -910,15 +821,12 @@
 			focus = RAJ_plant_opium
 		}
 		relative_position_id = RAJ_plant_opium
-		select_effect = {
-		}
 		completion_reward = {
 			AZD = {
 				add_ideas = RAJ_drug_addiction
 			}
 		}
 	}
-	
 	focus = {
 		id = RAJ_Feed_the_enemy #same name (Feed the enemy...)
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -932,15 +840,12 @@
 			focus = RAJ_sell_opium_to_Azad_hind
 		}
 		relative_position_id = RAJ_sell_opium_to_Azad_hind
-		select_effect = {
-		}
 		completion_reward = {
 			AZD = {
 				add_ideas = RAJ_drug_addiction2 
 			}
 		}
 	}
-	
 	focus = {
 		id = RAJ_and_then_kill_him #same name (...and then Kill him)
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -954,8 +859,6 @@
 			focus = RAJ_Feed_the_enemy
 		}
 		relative_position_id = RAJ_Feed_the_enemy
-		select_effect = {
-		}
 		completion_reward = {
 			declare_war_on = {
 				target = AZD
@@ -963,7 +866,6 @@
 			}
 		}
 	}
-	
 	focus = {
 		id = RAJ_restore_order #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -980,8 +882,6 @@
 			focus = RAJ_and_then_kill_him 
 		}
 		relative_position_id = RAJ_and_then_kill_him 
-		select_effect = {
-		}
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = RAJ_drug_addiction
@@ -1052,7 +952,6 @@
 			}
 		}
 	}
-	
 	focus = {
 		id = RAJ_united_forever #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -1092,7 +991,6 @@
 			640 = {
 				add_core_of = RAJ
 			}
-			
 			annex_country = {
 				target = KSM
 				transfer_troops = yes
@@ -1105,7 +1003,6 @@
 			news_event = { id = Indian_news.1 days = 1} #All world has saw a unification of India. Britain again rule over India. 
 		}
 	}
-	
 	focus = {
 		id = RAJ_our_old_enemy #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -1141,7 +1038,6 @@
 			}
 		}
 	}
-	
 	focus = {
 		id = RAJ_sell_opium_to_Bengal #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -1158,13 +1054,10 @@
 			focus = RAJ_plant_opium
 		}
 		relative_position_id = RAJ_plant_opium
-		select_effect = {
-		}
 		completion_reward = {
 			country_event = { id = RAJ.6 days = 1} #event about article in newspaper, which says that our trucks are stuck on the border with Bengal. When Lord Louis asking "Wtf is going on guyzzzzz?" One of his minister saying, that they won't buy out opium. Lord got it and walk to his cabinet and thinking 'bout war. The last war with those stupid natives
 		}
 	}
-	
 	focus = {
 		id = RAJ_We_will_FORCE_them_to_buy_it #same name (We will FORCE them to buy it)
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -1178,8 +1071,6 @@
 			focus = RAJ_sell_opium_to_Bengal
 		}
 		relative_position_id = RAJ_sell_opium_to_Bengal
-		select_effect = {
-		}
 		completion_reward = {
 			431 = {
 				add_core_of = RAJ
@@ -1195,7 +1086,6 @@
 			}
 		}
 	}
-	
 	focus = {
 		id = RAJ_war_on_Bengal #([red text]War)
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -1215,8 +1105,6 @@
 			focus = RAJ_We_will_FORCE_them_to_buy_it
 		}
 		relative_position_id = RAJ_We_will_FORCE_them_to_buy_it
-		select_effect = {
-		}
 		completion_reward = {
 			declare_war_on = {
 				target = BEN
@@ -1230,7 +1118,6 @@
 			}
 		}
 	}
-	
 	focus = {
 		id = RAJ_They_were_left_with_no_choice #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -1244,8 +1131,6 @@
 			focus = RAJ_war_on_Bengal
 		}
 		relative_position_id = RAJ_war_on_Bengal
-		select_effect = {
-		}
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = RAJ_drug_addiction2
@@ -1253,7 +1138,6 @@
 			}
 		}
 	}
-	
 	focus = {
 		id = RAJ_sell_opium_to_our_citizens #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -1267,8 +1151,6 @@
 			focus = RAJ_plant_opium
 		}
 		relative_position_id = RAJ_plant_opium
-		select_effect = {
-		}
 		completion_reward = {
 			add_ideas = RAJ_drug_addiction
 			320 = {
@@ -1289,7 +1171,6 @@
 			}
 		}
 	}
-	
 	focus = {
 		id = RAJ_stop_do_it #same name (Stop do it!)
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -1309,17 +1190,11 @@
 			focus = RAJ_sell_opium_to_our_citizens
 		}
 		relative_position_id = RAJ_sell_opium_to_our_citizens
-		select_effect = {
-		}
 		completion_reward = {
-			remove_ideas = { 
-				RAJ_drug_addiction3
-			}
+			remove_ideas = RAJ_drug_addiction3
 		}
 	}
-	
 	###FOCUSES DE MILITAR
-	
 	focus = {
 		id = RAJ_improve_our_army #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -1329,9 +1204,7 @@
 		ai_will_do = {
 			factor = 100
 		}
-		relative_position_id = RAJ_forgotten_colony 
-		select_effect = {
-		}
+		relative_position_id = RAJ_forgotten_colony
 		completion_reward = {
 			army_experience = 50
 			swap_ideas = {
@@ -1340,7 +1213,6 @@
 			}
         }
 	}
-	
 	focus = {
 		id = RAJ_first_guns #same name (First - gun)
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -1354,8 +1226,6 @@
 			focus = RAJ_improve_our_army
 		}
 		relative_position_id = RAJ_improve_our_army
-		select_effect = {
-		}
 		completion_reward = {
 			random_core_state = {
 				add_building_construction = {
@@ -1373,7 +1243,6 @@
 			}
         }
 	}
-	
 	focus = {
 		id = RAJ_second_wave_of_british_help #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -1387,15 +1256,12 @@
 			focus = RAJ_first_guns
 		}
 		relative_position_id = RAJ_first_guns
-		select_effect = {
-		}
 		completion_reward = {
 			ENG = {
 				country_event = { id = RAJ.4 days = 1 } #Event to Bri'ish government about send some help to India. Again... There'll be 2 or 3 or 4 option. 1 - send them only guns (2k); 2 - send them only british men (20k manpower); 3 - send them and guns and men (0.5k of guns and 5k men); 4 - send them manpower, guns AND factories (2) 
 			}
 		}
 	}
-	
 	focus = {
 		id = RAJ_Call_for_an_imminent_war #same name 
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -1409,14 +1275,11 @@
 			focus = RAJ_first_guns
 		}
 		relative_position_id = RAJ_first_guns
-		select_effect = {
-		}
 		completion_reward = {
 			add_stability = 0.15
 			add_war_support = 0.15
 		}
 	}
-	
 	focus = {
 		id = RAJ_elevate_military_service #same name 
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -1433,13 +1296,10 @@
 			focus = RAJ_second_wave_of_british_help
 		}
 		relative_position_id = RAJ_second_wave_of_british_help
-		select_effect = {
-		}
 		completion_reward = {
 			add_ideas = RAJ_soldiers_are_new_elite
 		}
 	}
-	
 	focus = {
 		id = RAJ_second_men #same name (Second - men)
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -1453,13 +1313,10 @@
 			focus = RAJ_improve_our_army
 		}
 		relative_position_id = RAJ_improve_our_army
-		select_effect = {
-		}
 		completion_reward = {
 			add_manpower = 25000
         }
 	}
-	
 	focus = {
 		id = RAJ_and_their_knowledge #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -1473,13 +1330,10 @@
 			focus = RAJ_second_men
 		}
 		relative_position_id = RAJ_second_men
-		select_effect = {
-		}
 		completion_reward = {
 			add_research_slot = 1
         }
 	}
-	
 	focus = {
 		id = RAJ_support_military_production #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -1493,8 +1347,6 @@
 			focus = RAJ_and_their_knowledge
 		}
 		relative_position_id = RAJ_and_their_knowledge
-		select_effect = {
-		}
 		completion_reward = {
 			random_owned_state = {
 				add_building_construction = {
@@ -1519,7 +1371,6 @@
 			}
         }
 	}
-	
 	focus = {
 		id = RAJ_third_spirit #same name (Third - spirit)
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -1533,14 +1384,11 @@
 			focus = RAJ_improve_our_army
 		}
 		relative_position_id = RAJ_improve_our_army
-		select_effect = {
-		}
 		completion_reward = {
 			country_event = { id = RAJ.5 days = 1 } #event about Lord Louis visiting Nallur Kandaswamy temple and got an idea about new social campaign: praising Skanda, an Indian god of war.
 			add_ideas = RAJ_Skanda_god
         }
 	}
-	
 	focus = {
 		id = RAJ_new_way_of_fight #same name 
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -1554,8 +1402,6 @@
 			focus = RAJ_third_spirit
 		}
 		relative_position_id = RAJ_third_spirit
-		select_effect = {
-		}
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 1.0
@@ -1564,7 +1410,6 @@
 			}
         }
 	}
-	
 	focus = {
 		id = RAJ_mechanization_has_arrived #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -1578,8 +1423,6 @@
 			focus = RAJ_third_spirit
 		}
 		relative_position_id = RAJ_third_spirit
-		select_effect = {
-		}
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = mechanized_equipment
@@ -1588,7 +1431,6 @@
 			}
         }
 	}
-	
 	focus = {
 		id = RAJ_develop_strategy #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -1605,8 +1447,6 @@
 			focus = RAJ_mechanization_has_arrived
 		}
 		relative_position_id = RAJ_mechanization_has_arrived
-		select_effect = {
-		}
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 1.0
@@ -1615,7 +1455,6 @@
 			}
         }
 	}
-	
 	focus = {
 		id = RAJ_regular_training #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -1635,8 +1474,6 @@
 			focus = RAJ_develop_strategy
 		}
 		relative_position_id = RAJ_support_military_production
-		select_effect = {
-		}
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = RAJ_bad_army
@@ -1644,7 +1481,6 @@
 			}
         }
 	}
-	
 	focus = {
 		id = RAJ_best_army_on_continent #same name
 		icon = GFX_goal_AUT_Dolfus_Posts
@@ -1661,8 +1497,6 @@
 			focus = RAJ_regular_training
 		}
 		relative_position_id = RAJ_regular_training
-		select_effect = {
-		}
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = RAJ_bad_army
@@ -1670,4 +1504,4 @@
 			}
         }
 	}
-
+}

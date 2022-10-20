@@ -2,29 +2,6 @@
 division_template = {
 	name = "Divizie Infanterie"			# Rifle Division
 	division_names_group = ROM_INF_01
-
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-	}
-	#support = {
-		#recon = { x = 0 y = 0 }		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
-		#engineer = { x = 0 y = 1 }		# (semi-mot) Engineer bn
-		#artillery = { x = 0 y = 0 }	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
-	#}
-}
-
-division_template = {
-	name = "Divizie Infanterie II"			# Rifle Division Art
-	division_names_group = ROM_INF_01
-
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -37,16 +14,30 @@ division_template = {
 		infantry = { x = 2 y = 2 }
 	}
 	support = {
-		#recon = { x = 0 y = 0 }		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and #they seem rather OP. Could revisit if balance changes
-		#engineer = { x = 0 y = 1 }		# (semi-mot) Engineer bn
+
+	}
+}
+division_template = {
+	name = "Divizie Infanterie II"			# Rifle Division Art
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and #they seem rather OP. Could revisit if balance changes
+		# (semi-mot) Engineer bn
 		artillery = { x = 0 y = 0 }		# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
 	}
 }
-
 division_template = {
 	name = "Divizie Cavalerie"	# Kavaleriyskaya Diviziya
-	division_names_group = ROM_CAV_01
-
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
@@ -55,15 +46,12 @@ division_template = {
 		cavalry = { x = 1 y = 1 }
 		cavalry = { x = 1 y = 2 }
 	}
-	#support = {
-		#light_armor = { x = 0 y = 0 }	# Tank "rgt" of 64 light tanks, 28 ACs - (removed)
-		#artillery = { x = 0 y = 0 }	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
-	#}
+	support = {
+
+	}
 }
 division_template = {
 	name = "Divizie Cavalerie II"	# Kavaleriyskaya Diviziya fire support
-	division_names_group = ROM_CAV_01
-
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
@@ -72,17 +60,13 @@ division_template = {
 		cavalry = { x = 1 y = 1 }
 		cavalry = { x = 1 y = 2 }
 	}
-
 	support = {
-		#	light_armor = { x = 0 y = 0 }	# Tank "rgt" of 64 light tanks, 28 ACs - (removed)
+		# Tank "rgt" of 64 light tanks, 28 ACs - (removed)
 		artillery = { x = 0 y = 0 }		# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
 	}
 }
-
 division_template = {
 	name = "Divizie Infanterie Motorizata"	# Kavaleriyskaya Diviziya
-	division_names_group = ROM_MOT_01
-
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -92,11 +76,8 @@ division_template = {
 		motorized = { x = 1 y = 2 }
 	}
 }
-
 division_template = {
 	name = "Divizie Vanatori de Munte"
-	division_names_group = ROM_MTN_01
-
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
@@ -107,10 +88,8 @@ division_template = {
 	}
 	priority = 2
 }
-
 division_template = {
 	name = "Divizie Armura"
-	division_names_group = ROM_ARM_01
 	regiments = {
 		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
@@ -120,7 +99,6 @@ division_template = {
 		infantry = { x = 1 y = 2 }
 	}
 }
-
 ##### OOB #####
 units = {
 	division = {
@@ -235,10 +213,8 @@ units = {
 		start_equipment_factor = 1.0
 	}
 }
-
 ### Air Wings
 air_wings = {
-
 	46 = {
 		fighter_equipment_0 = {
 			owner = "ROM"
@@ -250,7 +226,6 @@ air_wings = {
 		}
 	}
 }
-
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
@@ -269,4 +244,3 @@ instant_effect = {
 		efficiency = 100
 	}
 }
-

@@ -1,9 +1,7 @@
 focus_tree = {
 	id = generic_focus
-	
 	country = {
 		factor = 1
-		
 		modifier = {
 			add = 10
 			tag = CHI
@@ -20,3 +18,4 @@ focus_tree = {
 		}
 	}
 	default = no
+}

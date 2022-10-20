@@ -1,7 +1,6 @@
 division_template = {
 	name = "Juntuán"				# Represents: two-division infantry corps (generally poorly-equipped, but decent experience),
-	division_names_group = PRC_INF_01
-									#	PRC divisions were well-trained in guerilla mountain tactics.
+	#	PRC divisions were well-trained in guerilla mountain tactics.
 	regiments = {
 		infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
 		infantry = { x = 0 y = 1 }
@@ -12,8 +11,6 @@ division_template = {
 }
 division_template = {
 	name = "Renmin Jundui"				# Represents three-column local militia groups (Triangular Corps); poorly-equipped, lowest experience
-	division_names_group = PRC_GAR_01
-
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -24,7 +21,6 @@ division_template = {
 	}
 	priority = 1
 }
-
 units = {
 	##### Eighth Route Army (CO: Mao Zedong, Zhu De) #####
 	division = {
@@ -33,7 +29,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
     division = {
 		name = "115 Bubing Shi"
@@ -41,7 +36,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
     division = {
 		name = "115 Bubing Shi"
@@ -49,7 +43,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
     division = {
 		name = "115 Bubing Shi"
@@ -57,7 +50,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
     division = {
 		name = "115 Bubing Shi"
@@ -65,7 +57,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
     division = {
 		name = "115 Bubing Shi"
@@ -73,7 +64,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
 	division = {
 		name = "115 Bubing Shi"
@@ -81,7 +71,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
 	division = {
 		name = "115 Bubing Shi"
@@ -89,7 +78,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
 	division = {
 		name = "115 Bubing Shi"
@@ -97,7 +85,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
 	division = {
 		name = "115 Bubing Shi"
@@ -105,7 +92,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
 	division = {
 		name = "115 Bubing Shi"
@@ -113,7 +99,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
 	division = {
 		name = "115 Bubing Shi"
@@ -121,7 +106,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
 	division = {
 		name = "115 Bubing Shi"
@@ -129,7 +113,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
 	division = {
 		name = "115 Bubing Shi"
@@ -137,7 +120,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
 	division = {
 		name = "115 Bubing Shi"
@@ -145,7 +127,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
 	division = {
 		name = "115 Bubing Shi"
@@ -153,7 +134,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
 	division = {
 		name = "115 Bubing Shi"
@@ -161,7 +141,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
 	division = {
 		name = "115 Bubing Shi"
@@ -169,7 +148,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
 	division = {
 		name = "115 Bubing Shi"
@@ -177,7 +155,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
 	division = {
 		name = "115 Bubing Shi"
@@ -185,7 +162,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
 	division = {
 		name = "115 Bubing Shi"
@@ -193,7 +169,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
 	division = {
 		name = "115 Bubing Shi"
@@ -201,7 +176,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
 	division = {
 		name = "115 Bubing Shi"
@@ -209,7 +183,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
 	division = {
 		name = "115 Bubing Shi"
@@ -217,7 +190,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
 	division = {
 		name = "115 Bubing Shi"
@@ -225,7 +197,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
 	division = {
 		name = "115 Bubing Shi"
@@ -233,7 +204,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
     division = {
 		name = "115 Bubing Shi"
@@ -241,7 +211,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
     division = {
 		name = "115 Bubing Shi"
@@ -249,7 +218,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
     division = {
 		name = "115 Bubing Shi"
@@ -257,7 +225,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
     division = {
 		name = "115 Bubing Shi"
@@ -265,7 +232,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
     division = {
 		name = "115 Bubing Shi"
@@ -273,7 +239,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
     division = {
 		name = "115 Bubing Shi"
@@ -281,7 +246,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
     division = {
 		name = "115 Bubing Shi"
@@ -289,7 +253,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
     division = {
 		name = "115 Bubing Shi"
@@ -297,7 +260,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
     division = {
 		name = "115 Bubing Shi"
@@ -305,7 +267,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
     division = {
 		name = "115 Bubing Shi"
@@ -313,7 +274,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
     division = {
 		name = "115 Bubing Shi"
@@ -321,7 +281,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
     division = {
 		name = "115 Bubing Shi"
@@ -329,7 +288,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
     division = {
 		name = "115 Bubing Shi"
@@ -337,7 +295,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
     division = {
 		name = "115 Bubing Shi"
@@ -345,7 +302,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
     division = {
 		name = "115 Bubing Shi"
@@ -353,7 +309,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
     division = {
 		name = "115 Bubing Shi"
@@ -361,7 +316,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
     division = {
 		name = "115 Bubing Shi"
@@ -369,7 +323,6 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
     division = {
 		name = "115 Bubing Shi"
@@ -377,6 +330,5 @@ units = {
 		division_template = "Renmin Jundui"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
-}   
+}

@@ -1,7 +1,5 @@
 division_template = {
 	name = "German Colonial Soldiers"
-	division_names_group = TUR_INF_01
-
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -12,14 +10,13 @@ division_template = {
 	support = {
 	}
 }
-
-division= {	
+units = {
+	division= {	
 		name = "German Colonial Soldiers"
 		location = 4879    # Vienna
 		division_template = "Kuvayi Milliye"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
-
 	}
 	division= {	
 		name = "German Colonial Soldiers"
@@ -27,7 +24,6 @@ division= {
 		division_template = "Kuvayi Milliye"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
-
 	}
 	division= {	
 		name = "German Colonial Soldiers"
@@ -36,14 +32,12 @@ division= {
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 	}
-
     division= {	
 		name = "German Colonial Soldiers"
 		location = 4879    # Vienna
 		division_template = "Kuvayi Milliye"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
-
 	}
 	division= {	
 		name = "German Colonial Soldiers"
@@ -51,7 +45,6 @@ division= {
 		division_template = "Kuvayi Milliye"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
-
 	}
 	division= {	
 		name = "German Colonial Soldiers"
@@ -60,3 +53,4 @@ division= {
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 	}
+}

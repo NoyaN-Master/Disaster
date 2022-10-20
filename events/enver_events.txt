@@ -1,17 +1,12 @@
 add_namespace = enver
-
 country_event = { #Introduction
 	id = enver.1
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
 	title = enver.1.t
 	desc = enver.1.d
-
 	picture = GFX_report_event_aut_dollfuss_speech
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = enver.1.a
 		hidden_effect = {
@@ -28,21 +23,15 @@ country_event = { #Introduction
 		}
 	}
 }
-
 country_event = { #Kars Taken
 	id = enver.2
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
 	title = enver.2.t
 	desc = enver.2.d
-
 	picture = GFX_report_enver_shooting_event
-
 	is_triggered_only = yes
-
     fire_only_once = yes
-
     is_triggered_only = yes
-
 	option = {
         name = enver.2.a
         add_manpower = 15000
@@ -50,19 +39,14 @@ country_event = { #Kars Taken
         add_war_support = 0.07
     }
 }
-
 country_event = { #Van Taken
 	id = enver.3
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
 	title = enver.3.t
 	desc = enver.3.d
-
 	picture = GFX_report_event_aut_dollfuss_speech
-
 	fire_only_once = yes
-
     is_triggered_only = yes
-
 	option = {
         name = enver.3.a
         add_manpower = 15000
@@ -70,19 +54,14 @@ country_event = { #Van Taken
         add_war_support = 0.07
     }
 }
-
 country_event = { #Erzurum Taken
     id = enver.4
     immediate = { log = "[GetDateText]: [Root.GetName]: event enver.4" }
     title = enver.4.t
     desc = enver.4.d
-
     picture = GFX_report_event_aut_dollfuss_speech
-
     fire_only_once = yes
-
     is_triggered_only = yes
-
     option = {
         name = enver.4.a
         add_manpower = 15000
@@ -90,168 +69,130 @@ country_event = { #Erzurum Taken
         add_war_support = 0.07
     }
 }
-
 country_event = { #Samet goes gamer 
 	id = enver.5
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
 	title = enver.5.t
 	desc = enver.5.d
-
 	picture = GFX_report_event_aut_dollfuss_speech
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = enver.5.a
         declare_war_on = {
-        target = KUR
-        type = annex_everything
-        }   
-        hidden_effect = { 
+			target = KUR
+			type = annex_everything
         }
 	}
 }
-
 country_event = { #Annex AZR 
 	id = enver.6
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
 	title = enver.6.t
 	desc = enver.6.d
-
 	picture = GFX_report_event_aut_dollfuss_speech
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = enver.6.a
         annex_country = {
-        target = AZR
-        transfer_troops = yes
-        }
-        229 = {
-        add_core_of = CIB   
+			target = AZR
+			transfer_troops = yes
+		}
+		229 = {
+			add_core_of = CIB   
         }
 		unlock_national_focus = CIB_enveristan_proper
 		remove_ideas = CIB_King_Hill
 		remove_ideas = CIB_Zombie
 		remove_ideas = CIB_Enver_Idea
         hidden_effect = {
-        country_event = { id = enver.7 days = 5} 
+			country_event = {
+				id = enver.7
+				days = 5
+			} 
         }
 		news_event = { id = disasternews.2 days = 1 }
 	}
 }
-
 country_event = { #terrorists form 
 	id = enver.7
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
 	title = enver.7.t
 	desc = enver.7.d
-
 	picture = GFX_report_event_aut_dollfuss_speech
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-
-    trigger = {    
-    }
-
 	option = {
 		name = enver.7.a
         custom_effect_tooltip = asala_tt
         add_popularity = {
-        ideology = revolutionary_anarchist
-        popularity = 0.2
-        }
-        add_stability = -0.20
+			ideology = revolutionary_anarchist
+			popularity = 0.2
+		}
+		add_stability = -0.20
         add_political_power = -150
 		swap_ideas = {
-    	remove_idea = CIB_OrduVatan
-    	add_idea = CIB_OrduVatan_stratocracy
+			remove_idea = CIB_OrduVatan
+			add_idea = CIB_OrduVatan_stratocracy
 		}
-		remove_ideas = CIB_Zombie
-        hidden_effect = {
-		
-        }
 	}
 }
-
 country_event = { #terrorists form 
 	id = enver.8
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
 	title = enver.8.t
 	desc = enver.8.d
-
 	picture = GFX_report_event_aut_dollfuss_speech
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-
-    trigger = {    
-    }
-
 	option = {
 		name = enver.8.a
-	    add_stability = -0.15
+		add_stability = -0.15
 		add_war_support = 0.10
 		add_political_power = -150
 		custom_effect_tooltip = execution_tt
 		add_popularity = {
-    	ideology = revolutionary_anarchist
-    	popularity = -0.05
+			ideology = revolutionary_anarchist
+			popularity = -0.05
 		}		
 	}
 }
-
 country_event = { #deportation 
 	id = enver.9
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
 	title = enver.9.t
 	desc = enver.9.d
-
 	picture = GFX_report_event_aut_dollfuss_speech
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-
-    trigger = {    
-    }
-
 	option = {
 		name = enver.9.a
-	    add_stability = -0.15
+		add_stability = -0.15
 		add_war_support = 0.20
 		add_political_power = -100
 		custom_effect_tooltip = deport_tt
 		add_popularity = {
-    	ideology = revolutionary_anarchist
-    	popularity = -0.05
+			ideology = revolutionary_anarchist
+			popularity = -0.05
 		}
 		835 = {
-		add_manpower = -10000	
+			add_manpower = -10000	
 		}
 		353 = {
-		add_manpower = -10000	
+			add_manpower = -10000	
 		}
 		800 = {
-		add_manpower = -10000	
+			add_manpower = -10000	
 		}
 		230 = {
-		add_manpower = -10000	
+			add_manpower = -10000	
 		}
 		352 = {
-		add_manpower = -10000	
+			add_manpower = -10000	
 		}				
 	}
 }
-
 country_event = { #deportation 
 	id = enver.10
 	immediate = { log = "[GetDateText]: [Root.GetName]: event aut.1" }
@@ -848,59 +789,50 @@ country_event = { #GOK
 	immediate = { log = "[GetDateText]: [Root.GetName]: event enver.20" }
 	title = enver.35.t
 	desc = enver.35.d
-
 	fire_only_once = yes
-	
 	picture = GFX_report_enver_shooting_event
-
 	is_triggered_only = yes
-
 	option = { #
 		name = enver.35.a
 		GOK = {
-        every_owned_state = {
-        add_core_of = CIB
-        }	
-        }
+			every_owned_state = {
+				add_core_of = CIB
+			}	
+		}
 		annex_country = {
-    	target = GOK
-    	transfer_troops = yes
+			target = GOK
+			transfer_troops = yes
 		}	
 	}	
 }
-
 country_event = { #Yemen
 	id = enver.36
 	immediate = { log = "[GetDateText]: [Root.GetName]: event enver.20" }
 	title = enver.36.t
 	desc = enver.36.d
-
 	fire_only_once = yes
-	
 	picture = GFX_report_enver_shooting_event
-
 	is_triggered_only = yes
-
 	option = { #
 		name = enver.36.a
 		CIB = {
 			puppet = YEM
 			declare_war_on = {
-        	target = ARB
-        	type = annex_everything
-        	}
+				target = ARB
+				type = annex_everything
+			}
 			declare_war_on = {
-        	target = HJZ
-        	type = annex_everything
-        	}
+				target = HJZ
+				type = annex_everything
+			}
 		}
 		YEM = {
-		set_politics = {
-		ruling_party = autocratic
-        elections_allowed = no
-        last_election = "1935.12.17"
-        election_frequency = 48
-		}
+			set_politics = {
+				ruling_party = autocratic
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48
+			}
 		}	
 	}	
 }
