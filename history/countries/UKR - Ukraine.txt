@@ -61,7 +61,78 @@ add_ideas = 	interventionism
 add_ideas = 	industrialized_society
 
 
+###################### admirals
+create_navy_leader = {
+	name = "Sviatoslav Shramchenko"
+	portrait_path = "gfx/leaders/UKR/Portrait_UKR_Sviatoslav_Shramchenko.png"
+	traits = { seawolf silent_hunter }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 3
+	maneuvering_skill = 6
+	coordination_skill = 3
+}
+######################generals
+create_corps_commander = {
+	name = "Hnat Stefaniv"
+	portrait_path = "gfx/leaders/UKR/Portrait_UKR_Hnat_Stefaniv.png"
+	traits = { skirmisher guerilla_fighter cavalry_officer
 
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Mykhalio Omelianovych Pavlenko"
+	portrait_path = "gfx/leaders/UKR/Portrait_UKR_Mykhailo_Omelianovych_Pavlenko.png"
+	traits = { infantry_leader war_hero harsh_leader fast_planner
+
+	}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Mykola Kapustyanskyi"
+	portrait_path = "gfx/leaders/UKR/Portrait_UKR_Mykola_Kapustyanskyi.png"
+	traits = { infantry_leader logistics_wizard trait_engineer
+
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Andriy Pokrovsky"
+	portrait_path = "gfx/leaders/UKR/Portrait_UKR_Andriy_Pokrovsky.png"
+	traits = { infantry_leader fast_planner
+
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Konstantin Prisovsky"
+	portrait_path = "gfx/leaders/UKR/Portrait_UKR_Konstantin_Prisovsky.png"
+	traits = { infantry_leader 
+
+	}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
 create_country_leader = {
 	name = "Symon Petliura"
 	desc = "UKR_Symon_Petliura_desc"

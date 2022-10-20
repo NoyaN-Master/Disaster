@@ -12,4 +12,17 @@ on_actions = {
 		}
         }
     }
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = armenia_content
+						option = YES_ARMENIA
+					}
+				}
+				set_global_flag = ARM_content_yes 
+			}
+		}
+	}
 }

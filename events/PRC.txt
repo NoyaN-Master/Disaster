@@ -1,0 +1,425 @@
+############
+#prc EVENTS#
+############
+
+add_namespace = prc
+
+country_event = { #start event
+	id = prc.1
+	title = prc.1.t
+	desc = prc.1.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = prc.1.a
+        ai_chance = {factor = 100}
+		set_country_flag = prc_decisions_cwar
+	}
+}
+country_event = { #Leadership?
+	id = prc.2
+	title = prc.2.t
+	desc = prc.2.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = prc.2.a
+        ai_chance = {factor = 50}
+		hidden_effect = {	PRC = { country_event = { id = prc.3}}}
+		hidden_effect = { set_variable = { var_name = prc_mao_var}}
+		hidden_effect = { set_variable = { var_name = prc_deng_var}}
+	}
+}
+country_event = { #Leadership pt 2
+	id = prc.3
+	title = prc.3.t
+	desc = prc.3.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = prc.3.a
+        ai_chance = {factor = 50}
+			custom_effect_tooltip = PRC_TT_MAO
+		hidden_effect = {	PRC = { country_event = { id = prc.4}}}
+		add_to_variable = {
+	var = prc_mao_var
+	value = 2
+}
+	}
+	option = {
+		name = prc.3.b
+        ai_chance = {factor = 50}
+			custom_effect_tooltip = PRC_TT_DENG
+		hidden_effect = {	PRC = { country_event = { id = prc.4}}}
+	add_to_variable = {
+	var = prc_deng_var
+	value = 2
+}
+	}
+}
+country_event = { #Leadership pt 3
+	id = prc.4
+	title = prc.4.t
+	desc = prc.4.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = prc.4.a
+        ai_chance = {factor = 50}
+		hidden_effect = {	PRC = { country_event = { id = prc.5}}}
+				custom_effect_tooltip = PRC_TT_MAO
+	add_to_variable = {
+	var = prc_mao_var
+	value = 1
+}
+	}
+	option = {
+		name = prc.4.b
+        ai_chance = {factor = 50}
+		hidden_effect = {	PRC = { country_event = { id = prc.5}}}
+		custom_effect_tooltip = PRC_TT_DENG
+	add_to_variable = {
+	var = prc_deng_var
+	value = 1
+}
+	}
+}
+country_event = { #Leadership pt 4
+	id = prc.5
+	title = prc.5.t
+	desc = prc.5.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = prc.5.a
+        ai_chance = {factor = 50}
+		hidden_effect = {	PRC = { country_event = { id = prc.6}}}
+			custom_effect_tooltip = PRC_TT_MAO
+	add_to_variable = {
+	var = prc_mao_var
+	value = 1
+}
+	}
+	option = {
+		name = prc.5.b
+        ai_chance = {factor = 50}
+				custom_effect_tooltip = PRC_TT_DENG
+		hidden_effect = {	PRC = { country_event = { id = prc.6}}}
+	add_to_variable = {
+	var = prc_deng_var
+	value = 1
+}
+	}
+}
+country_event = { #Leadership pt 5 final
+	id = prc.6
+	title = prc.6.t
+	desc = prc.6.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = prc.6.a
+        ai_chance = {factor = 50}
+  set_country_flag = prc_mao_deng
+  	custom_effect_tooltip = PRC_TT_MAO
+	add_to_variable = {
+	var = prc_mao_var
+	value = 1
+}
+if = {
+    limit = {
+        has_country_flag = prc_mao_deng
+		check_variable = {prc_mao_var > prc_deng_var}
+    }
+    country_event = prc.7
+}
+if = {
+    limit = {
+        has_country_flag = prc_mao_deng
+		check_variable = {prc_deng_var > prc_mao_var}
+    }
+    country_event = prc.8
+}
+	}
+	option = {
+		name = prc.6.b
+        ai_chance = {factor = 50}
+			custom_effect_tooltip = PRC_TT_DENG
+	 set_country_flag = prc_mao_deng
+	add_to_variable = {
+	var = prc_deng_var
+	value = 1
+}
+if = {
+    limit = {
+        has_country_flag = prc_mao_deng
+		check_variable = {prc_mao_var < prc_deng_var}
+    }
+    country_event = prc.8
+}
+if = {
+    limit = {
+        has_country_flag = prc_mao_deng
+		check_variable = {prc_mao_var > prc_deng_var}
+    }
+    country_event = prc.7
+}
+	}
+}
+country_event = { #Mao wins!!
+	id = prc.7
+	title = prc.7.t
+	desc = prc.7.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = prc.7.a
+        ai_chance = {factor = 100}
+	hidden_effect = {set_country_flag = mao_vic}
+	}
+}
+country_event = { #Deng wins!!
+	id = prc.8
+	title = prc.8.t
+	desc = prc.8.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = prc.8.a
+        ai_chance = {factor = 100}
+	hidden_effect = {set_country_flag = deng_vic}
+	}
+}
+country_event = { #Monkey warfare
+	id = prc.9
+	title = prc.9.t
+	desc = prc.9.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = prc.9.a
+        ai_chance = {factor = 100}
+	
+	}
+}
+country_event = { #Crush the Republic
+	id = prc.10
+	title = prc.10.t
+	desc = prc.10.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = prc.10.a
+        ai_chance = {factor = 100}
+	
+	}
+}
+country_event = { #Contact Puyi
+	id = prc.11
+	title = prc.11.t
+	desc = prc.11.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = prc.11.a
+        ai_chance = {factor = 20}	
+		custom_effect_tooltip = PRC_TT_QING_PROP
+		set_country_flag = PRC_qing_prop_flag
+		add_stability = -0.15
+  }
+  	option = {
+		name = prc.11.b
+        ai_chance = {factor = 80}	
+		add_stability = 0.1
+  }
+ }
+country_event = { #The Strangest Proposal in History
+	id = prc.12
+	title = prc.12.t
+	desc = prc.12.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = prc.12.a
+        ai_chance = {factor = 100}	
+		   add_political_power = -75
+  }
+ }
+ country_event = { #The Fox and the Swan
+	id = prc.13
+	title = prc.13.t
+	desc = prc.13.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = prc.13.a
+        ai_chance = {factor = 100}	
+		 add_political_power = -125
+
+  }
+ }
+ country_event = { #An Unholy Agreement 
+	id = prc.14
+	title = prc.14.t
+	desc = prc.14.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = prc.14.a
+        ai_chance = {factor = 100}	
+        add_ideas = prc_cwar_unholy_agreement
+		annex_country = {
+    target = QID
+    transfer_troops = yes
+}
+set_cosmetic_tag = prcqingtag
+add_popularity = {
+    ideology = autocratic
+    popularity = 0.35
+}
+  }
+ }
+  country_event = { #The People's Emperor
+	id = prc.15
+	title = prc.15.t
+	desc = prc.15.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = prc.15.a
+        ai_chance = {factor = 100}	
+		add_stability = 0.15
+
+  }
+ }
+   country_event = { #Declaration of the Rights of the Banners
+	id = prc.16
+	title = prc.16.t
+	desc = prc.16.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = prc.16.a
+        ai_chance = {factor = 100}	
+		add_ideas = prc_cwar_banners
+		###Make it give units or smth
+  }
+ }
+    country_event = { #Claiming the Mandate
+	id = prc.17
+	title = prc.17.t
+	desc = prc.17.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = prc.17.a
+        ai_chance = {factor = 100}	
+        add_stability = -0.1
+  }
+ }
+     country_event = { #Of Heroes and Tigers
+	id = prc.18
+	title = prc.18.t
+	desc = prc.18.d
+
+	picture = GFX_report_event_aut_dollfuss_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = prc.18.a
+        ai_chance = {factor = 100}	
+        add_ideas = prc_cwar_mandate
+		remove_ideas = prc_cwar_unholy_agreement
+  }
+ }
+
+
+

@@ -1,0 +1,118 @@
+ideas = {
+
+country = {
+
+PRC_cwar_monkey_warfare = {
+	picture = ROC_unity
+	modifier = {
+	no_supply_grace = 360
+	out_of_supply_factor = -0.25
+	supply_consumption_factor = -0.25
+	army_org_factor = -0.15
+	army_core_attack_factor = 0.2
+	army_attack_factor = -0.1
+			}
+        }
+	PRC_cwar_ortho_warfare = {
+	picture = ROC_unity
+	modifier = {
+    army_core_defence_factor = 0.15
+	army_core_attack_factor = 0.15
+			}
+        }
+	PRC_cwar_decentral_command = {
+	picture = ROC_unity
+	modifier = {
+    command_power_gain_mult = -0.5
+	political_power_factor = -0.25
+	army_defence_factor = 0.1
+			}
+        }
+		PRC_cwar_tactical_run = {
+	picture = ROC_unity
+	modifier = {
+    org_loss_when_moving = -0.25
+    experience_loss_factor = -0.25
+			}
+        }
+		PRC_cwar_perfect_combination = {
+	picture = ROC_unity
+	modifier = {
+  	no_supply_grace = 400
+	out_of_supply_factor = -0.30
+	supply_consumption_factor = -0.30
+	army_org_factor = -0.15
+	army_core_attack_factor = 0.2
+	army_attack_factor = -0.1
+    army_core_defence_factor = 0.35
+			}
+        }
+	prc_cwar_failed_offensive= {
+	picture = ROC_unity
+	modifier = {
+    army_attack_factor = -0.1
+	army_defence_factor = -0.1
+	supply_consumption_factor = 0.5
+			}
+        }
+	prc_cwar_unholy_agreement = {
+	picture = ROC_unity
+	modifier = {
+    political_power_gain = -1.0
+	stability_weekly = -0.03
+    autocratic_drift = 0.02
+			}
+        }
+
+		prc_cwar_banners = {
+	picture = ROC_unity
+	modifier = {
+    experience_gain_army_factor = 0.25
+	minimum_training_level = 0.1
+	training_time_factor = -0.25
+			}
+        }
+	prc_cwar_mandate = {
+	picture = ROC_unity
+	modifier = {
+    stability_weekly = 0.01
+	war_support_weekly = 0.01
+	political_power_factor = 0.25
+	recruitable_population = 0.05
+			}
+        }
+	prc_cwar_hard = {
+	picture = ROC_unity
+	modifier = {
+   breakthrough_factor = 0.05
+   army_attack_factor = 0.05
+   supply_consumption_factor = 0.05
+			}
+        }
+	prc_cwar_fast = {
+	picture = ROC_unity
+	modifier = {
+   army_speed_factor = 0.05
+   supply_consumption_factor = 0.05	
+   planning_speed = 0.25
+			}
+        }
+		prc_cwar_industry = {
+	picture = ROC_unity
+	modifier = {
+   	production_factory_efficiency_gain_factor = 0.05
+ production_factory_max_efficiency_factor = 0.15
+	industrial_capacity_factory = 0.1
+			}
+        }
+
+	prc_cwar_sacrafices = {
+	picture = ROC_unity
+	modifier = {
+   consumer_goods_factor = -0.15
+stability_weekly = -0.02
+war_support_weekly = -0.02
+			}
+        }
+}
+}

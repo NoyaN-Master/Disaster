@@ -484,4 +484,402 @@ country_event = {		#Super Event DONE
 		sound_effect = "jfk"
 	}
 }
+country_event = {		#Super Event DONE
+	id = super.20
+	title = super.20.t
+	desc = super.20.d
+	picture = GFX_report_event_diplomatic_message
 
+	is_triggered_only = no
+	
+	trigger = {
+		RUS = {
+		has_country_flag = RUS_CW_SPVENT_TRIGGER	
+		}
+	}
+
+	fire_only_once = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.20.a
+        set_global_flag = Super_Event_Visible
+        set_global_flag = RUSCWflag
+		sound_effect = "ruscw"
+	}
+}
+country_event = {		#Super Event DONE
+	id = super.21
+	title = super.21.t
+	desc = super.21.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	trigger = {
+		date > 1937.6.1
+		RUS = {
+			all_core_state = {
+                is_owned_by = ROOT
+            }	
+		}
+	}
+
+	fire_only_once = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.21.a
+        set_global_flag = Super_Event_Visible
+        set_global_flag = RUS_UNIF_FLAG
+		sound_effect = "rus_unif"
+		hidden_effect = {
+			96 = {
+				add_core_of = RUS
+			}
+			95 = {
+				add_core_of = RUS
+			}
+			94 = {
+				add_core_of = RUS
+			}
+			194 = {
+				add_core_of = RUS
+			}
+			240 = {
+				add_core_of = RUS
+			}
+			221 = {
+				add_core_of = RUS
+			}
+			563 = {
+				add_core_of = RUS
+			}
+		}
+	}
+}
+country_event = {		#Super Event DONE
+	id = super.22
+	title = super.22.t
+	desc = super.22.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	trigger = {
+		date > 1937.6.1
+		REG = {
+			all_core_state = {
+                    is_owned_by = ROOT
+            }	
+		}
+	}
+
+	fire_only_once = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.22.a
+        set_global_flag = Super_Event_Visible
+        set_global_flag = REG_UNIF_FLAG
+		sound_effect = "reg_unif"
+		hidden_effect = {
+			96 = {
+				add_core_of = REG
+			}
+			95 = {
+				add_core_of = REG
+			}
+			94 = {
+				add_core_of = REG
+			}
+			194 = {
+				add_core_of = REG
+			}
+			240 = {
+				add_core_of = REG
+			}
+			221 = {
+				add_core_of = REG
+			}
+			563 = {
+				add_core_of = REG
+			}
+		}
+	}
+}
+country_event = {		#Super Event DONE
+	id = super.23
+	title = super.23.t
+	desc = super.23.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	trigger = {
+		date > 1937.6.1
+		SAV = {
+			all_core_state = {
+                    is_owned_by = ROOT
+            }	
+		}
+	}
+
+	fire_only_once = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.23.a
+        set_global_flag = Super_Event_Visible
+        set_global_flag = SAV_UNIF_FLAG
+		sound_effect = "sav_unif"
+		hidden_effect = {
+			96 = {
+				add_core_of = SAV
+			}
+			95 = {
+				add_core_of = SAV
+			}
+			94 = {
+				add_core_of = SAV
+			}
+			194 = {
+				add_core_of = SAV
+			}
+			240 = {
+				add_core_of = SAV
+			}
+			221 = {
+				add_core_of = SAV
+			}
+			563 = {
+				add_core_of = SAV
+			}
+		}
+	}
+}
+country_event = {		#Super Event DONE
+	id = super.24
+	title = super.24.t
+	desc = super.24.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	trigger = {
+		ROC = {
+		has_country_flag = CHINA_CW_SUPERFLAG	
+		}
+	}
+
+	fire_only_once = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.24.a
+        set_global_flag = Super_Event_Visible
+        set_global_flag = cw_china_flag
+		sound_effect = "chinaCwar"
+	}
+}
+country_event = {		#Super Event DONE
+	id = super.25
+	title = super.25.t
+	desc = super.25.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	trigger = {
+		ROC = {
+			has_country_flag = DEBUG_FLAG
+		}
+	}
+
+	fire_only_once = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.25.a
+        set_global_flag = Super_Event_Visible
+        set_global_flag = roc_vic_flag
+		sound_effect = "rocVic"
+		619 = {
+			add_core_of = ROC
+		}
+		287 = {
+			add_core_of = ROC
+		}
+		617 = {
+			add_core_of = ROC
+		}
+		760 = {
+			add_core_of = ROC
+		}
+		759 = {
+			add_core_of = ROC
+		}
+		755 = {
+			add_core_of = ROC
+		}
+		756 = {
+			add_core_of = ROC
+		}
+		604 = {
+			add_core_of = ROC
+		}
+	}
+}
+country_event = {		#Super Event DONE
+	id = super.26
+	title = super.26.t
+	desc = super.26.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	trigger = {
+		ROC = {
+			has_country_flag = DEBUG_FLAG
+		}
+	}
+
+	fire_only_once = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.26.a
+        set_global_flag = Super_Event_Visible
+        set_global_flag = prc_vic_flag
+		sound_effect = "prcVic"
+		619 = {
+			add_core_of = PRC
+		}
+		287 = {
+			add_core_of = PRC
+		}
+		617 = {
+			add_core_of = PRC
+		}
+		760 = {
+			add_core_of = PRC
+		}
+		759 = {
+			add_core_of = PRC
+		}
+		755 = {
+			add_core_of = PRC
+		}
+		756 = {
+			add_core_of = PRC
+		}
+		604 = {
+			add_core_of = PRC
+		}
+	}
+}
+country_event = {		#Super Event DONE
+	id = super.27
+	title = super.27.t
+	desc = super.27.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	trigger = {
+		ROC = {
+			has_country_flag = DEBUG_FLAG
+		}
+	}
+
+	fire_only_once = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.27.a
+        set_global_flag = Super_Event_Visible
+        set_global_flag = qid_vic_flag
+		sound_effect = "qidVic"
+		619 = {
+			add_core_of = QID
+		}
+		287 = {
+			add_core_of = QID
+		}
+		617 = {
+			add_core_of = QID
+		}
+		760 = {
+			add_core_of = QID
+		}
+		759 = {
+			add_core_of = QID
+		}
+		755 = {
+			add_core_of = QID
+		}
+		756 = {
+			add_core_of = QID
+		}
+		604 = {
+			add_core_of = QID
+		}
+	}
+}
+country_event = {		#Super Event DONE
+	id = super.28
+	title = super.28.t
+	desc = super.28.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	trigger = {
+		ROC = {
+			has_country_flag = DEBUG_FLAG
+		}
+	}
+
+	fire_only_once = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.28.a
+        set_global_flag = Super_Event_Visible
+        set_global_flag = crf_vic_flag
+		sound_effect = "crfVic"
+		619 = {
+			add_core_of = CRF
+		}
+		287 = {
+			add_core_of = CRF
+		}
+		617 = {
+			add_core_of = CRF
+		}
+		760 = {
+			add_core_of = CRF
+		}
+		759 = {
+			add_core_of = CRF
+		}
+		755 = {
+			add_core_of = CRF
+		}
+		756 = {
+			add_core_of = CRF
+		}
+		604 = {
+			add_core_of = CRF
+		}
+	}
+}

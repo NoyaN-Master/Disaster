@@ -1,0 +1,24 @@
+qid_cwar_cat = {		
+	priority = 9	
+	icon = GFX_category_icon	
+	
+	allowed = {
+	
+	}
+	visible = {		
+     tag = QID
+     has_country_flag = qid_decisions_cwar
+	}
+}
+qid_cwar_cat_2 = {		
+	priority = 8	
+	icon = GFX_category_icon	
+	
+	allowed = {
+	
+	}
+	visible = {		
+     tag = qid
+     has_country_flag = qid_decisions_cwar
+	}
+}

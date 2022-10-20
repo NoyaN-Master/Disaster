@@ -1,0 +1,331 @@
+focus_tree = {
+	id = roc_focus_2
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+			tag = ROC
+		}
+		}
+		continuous_focus_position = { x = 100 y = 5000 }
+	default = no	
+	
+	
+	
+	
+	
+	focus = {
+		id = ROC_focus_13
+		icon = "GFX_goal_ROC_liberation_war"
+		x = 10
+		y = 5
+		cost = 1
+		prerequisite = {focus = ROC_focus_23}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		ROC = { country_event = { id = roc.20}}
+		}
+	}
+		
+	focus = {
+		id = ROC_focus_14
+		icon = "GFX_goal_ROC_emergency_weapons_act"
+		x = 14
+		y = 6
+		cost = 8
+		prerequisite = {focus = ROC_focus_13}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = ROC_cwar_effort
+		}
+	}
+		focus = {
+		id = ROC_focus_15
+		icon = "GFX_goal_ROC_labour_emergency"
+		x = 14
+		y = 7
+		cost = 8
+		prerequisite = {focus = ROC_focus_14}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = ROC_cwar_child_labour
+		}
+	}
+	focus = {
+		id = ROC_focus_16
+		icon = "GFX_goal_ROC_14_hour_work_act"
+		x = 14
+		y = 8
+		cost = 8
+		prerequisite = {focus = ROC_focus_15}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = ROC_cwar_work_death
+		hidden_effect = {ROC = { country_event = { id = roc.21 days = 45}}}
+		}
+	}
+	focus = {
+		id = ROC_focus_17
+		icon = "GFX_goal_ROC_convert_civillian_aircraft"
+		x = 6
+		y = 6
+		cost = 8
+		prerequisite = {focus = ROC_focus_13}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 4000
+    producer = ROC
+}
+		}
+	}
+		focus = {
+		id = ROC_focus_18
+		icon = "GFX_goal_ROC_convert_civillian_vehicles"
+		x = 6
+		y = 7
+		cost = 8
+		prerequisite = {focus = ROC_focus_17}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = -0.05
+	add_equipment_to_stockpile = {
+    type = 	motorized_equipment
+    amount = 1000
+    producer = ROC
+}
+		}
+	}
+	
+		focus = {
+		id = ROC_focus_19
+		icon = "GFX_goal_ROC_seize_civillian_arms"
+		x = 6
+		y = 8
+		cost = 8
+		prerequisite = {focus = ROC_focus_18}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = -0.05
+	add_equipment_to_stockpile = {
+    type = early_fighter
+    amount = 120
+    producer = ROC
+}
+		}
+	}
+		focus = {
+		id = ROC_focus_20
+		icon = "GFX_goal_ROC_even_more_guns"
+		available = {surrender_progress > 0.25}
+		x = 10
+		y = 6
+		cost = 8
+		prerequisite = {focus = ROC_focus_13}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+         add_timed_idea = {idea = ROC_cwar_overclocked_factories days = 90}
+		}
+	}
+	focus = {
+		id = ROC_focus_21
+		icon = "GFX_goal_ROC_hold_the_line"
+		available = {surrender_progress > 0.5}
+		x = 10
+		y = 7
+		cost = 8
+		prerequisite = {focus = ROC_focus_20}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+         add_ideas = ROC_cwar_hold_line
+		}
+	}
+	focus = {
+		id = ROC_focus_22
+		icon = "GFX_goal_ROC_nationalist_sabotage"
+		available = {surrender_progress > 0.75}
+		x = 10
+		y = 8
+		cost = 8
+		prerequisite = {focus = ROC_focus_21}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+         PRC = {
+		 add_ideas = ROC_cwar_nationalist_terror
+		 }
+		}
+	}
+		focus = {
+		id = ROC_focus_23
+		icon = GFX_goal_ROC_modern_war_dept
+		#available = {}
+		x = 10
+		y = 1
+		cost = 8
+		#prerequisite = {focus = ROC_focus_21}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		      add_war_support = 0.2
+			  ROC = { country_event = { id = roc.22}}
+	 hidden_effect = {set_country_flag = ROC_decisions_cwar}
+	 	custom_effect_tooltip = ROC_TT_CWAR_DECISIONS
+		}
+	}
+	
+		focus = {
+		id = ROC_focus_24
+		icon = GFX_goal_ROC_patton_asia
+		available = {has_country_flag = ROC_xue_yue}
+		mutually_exclusive = {focus = ROC_focus_25 focus = ROC_focus_24}
+		x = 8
+		y = 2
+		cost = 8
+		prerequisite = {focus = ROC_focus_23}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		create_field_marshal = {
+	name = "Xue Yue"
+	portrait_path = "gfx/leaders/ROC/ROC_Xue_Yue.png"
+	traits = {
+
+	}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+		}
+	}
+		focus = {
+		id = ROC_focus_25
+		icon = "GFX_goal_ROC_recruite_wei_lihuang"
+		available = {has_country_flag = ROC_wei_lihuang}
+		mutually_exclusive = {focus = ROC_focus_25 focus = ROC_focus_24}
+		x = 12
+		y = 2
+		cost = 8
+		prerequisite = {focus = ROC_focus_23}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		create_field_marshal = {
+	name = "Wei Lihuang"
+	portrait_path = "gfx/leaders/NGU/Portrait_Germany_Martin_Bormann.tga"
+	traits = {
+
+	}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+		}
+	}
+	focus = {
+		id = ROC_focus_26
+		icon = "GFX_goal_ROC_wei_lhuangs_plan"
+		#available = {has_country_flag = ROC_wei_lihuang}
+		x = 12
+		y = 3
+		cost = 8
+		prerequisite = {focus = ROC_focus_25}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			ROC = { country_event = { id = roc.23}}
+		}
+	}
+	focus = {
+		id = ROC_focus_27
+		icon = "GFX_goal_ROC_wei_lihuangs_elite"
+		#available = {}
+		x = 12
+		y = 4
+		cost = 8
+		prerequisite = {focus = ROC_focus_26}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		remove_ideas = ROC_desertion
+		}
+	}
+		focus = {
+		id = ROC_focus_28
+		icon = GFX_goal_ROC_xue_yues_plan
+		#available = {has_country_flag = ROC_wei_lihuang}
+		x = 8
+		y = 3
+		cost = 8
+		prerequisite = {focus = ROC_focus_24}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			ROC = { country_event = { id = roc.24}}
+		}
+	}
+		focus = {
+		id = ROC_focus_29
+		icon = GFX_goal_ROC_xue_yues_handpicked
+		#available = {has_country_flag = ROC_wei_lihuang}
+		x = 8
+		y = 4
+		cost = 8
+		prerequisite = {focus = ROC_focus_28}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		remove_ideas = ROC_desertion
+		}
+	}
+}
+
+

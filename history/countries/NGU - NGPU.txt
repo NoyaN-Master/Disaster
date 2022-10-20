@@ -1,6 +1,6 @@
 capital = 59
 oob = "NGU_1936"
-
+set_variable = { german_states = 5 }
 set_technology = {
 	### General ###
 	electronic_mechanical_engineering = 1
@@ -198,33 +198,79 @@ create_field_marshal = {
 create_corps_commander = {
 	name = "Richard Baer"
 	portrait_path = "gfx/leaders/NGU/Portrait_Germany_Richard_Baer.tga"
-	traits = {
+	traits = { 	bearer_of_artillery
 
 	}
 	skill = 2
-	attack_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Walter Kruger"
+	portrait_path = "gfx/leaders/NGU/Portrait_Germany_Walter_Kruger.dds"
+	traits = { armor_officer
+
+	}
+	skill = 3
+	attack_skill = 4
 	defense_skill = 2
 	planning_skill = 2
-	logistics_skill = 2
+	logistics_skill = 1
 }
+create_corps_commander = {
+	name = "Josef Grohe"
+	portrait_path = "gfx/leaders/NGU/Portrait_Germany_Josef_Grohe.dds"
+	traits = { infantry_leader harsh_leader
 
+	}
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
 create_corps_commander = {
 	name = "Werner Ostendorff"
 	portrait_path = "gfx/leaders/NGU/Portrait_Germany_Werner_Ostendorff.tga"
-	traits = {
+	traits = { infantry_leader
+
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Wilhelm Bittrich"
+	portrait_path = "gfx/leaders/NGU/Portrait_Germany_Wilhelm_Bittrich.tga"
+	traits = { infantry_leader skirmisher
+
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Josef Dietrich"
+	portrait_path = "gfx/leaders/NGU/Portrait_Germany_Josef_Dietrich.dds"
+	traits = { infantry_leader harsh_leader combined_arms_expert
 
 	}
 	skill = 2
 	attack_skill = 2
-	defense_skill = 2
+	defense_skill = 3
 	planning_skill = 2
-	logistics_skill = 2
+	logistics_skill = 3
 }
-
 create_corps_commander = {
 	name = "Paul Hausser"
 	portrait_path = "gfx/leaders/NGU/Portrait_Germany_Paul_Hausser.tga"
-	traits = {
+	traits = { panzer_leader
 
 	}
 	skill = 2
@@ -237,14 +283,24 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Erich Honecker"
 	portrait_path = "gfx/leaders/NGU/Portrait_Germany_Erich_Honecker.tga"
-	traits = {
+	traits = { infantry_leader skirmisher  guerilla_fighter urban_assault_specialist 
 
 	}
 	skill = 1
-	attack_skill = 2
+	attack_skill = 4 
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Karl Kreutz"
+	portrait_path = "gfx/leaders/NGU/Portrait_Germany_Karl_Kreutz.tga"
+	traits = { bearer_of_artillery
+
+	}
+	skill = 1
+	attack_skill = 1
 	defense_skill = 2
 	planning_skill = 2
 	logistics_skill = 2
 }
-
-

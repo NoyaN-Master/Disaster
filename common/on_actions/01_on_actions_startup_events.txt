@@ -34,4 +34,11 @@ on_actions = {
             }
         }
     }
+    on_startup = {
+        effect = {
+            ROC = { 
+                country_event = { id = roc.1 }
+            }
+        }
+    }
 }

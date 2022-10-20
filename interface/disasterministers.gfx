@@ -1,0 +1,27 @@
+spriteTypes = {	
+
+	###################
+	## Disaster ##
+	#### Ministers GFX ####
+	###################
+	spriteType = {
+		name = "GFX_idea_GER_Carl_Friedrich_Goerdeler"
+		texturefile = "gfx/interface/ministers/GER_Carl_Friedrich_Goerdeler.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_Hermann_von_Goering"
+		texturefile = "gfx/interface/ministers/GER_Hermann_von_Goering.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_Kurt_von_Schleicher"
+		texturefile = "gfx/interface/ministers/GER_Kurt_von_Schleicher.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_Paul_von_Lettow_Vorbeck"
+		texturefile = "gfx/interface/ministers/GER_Paul_von_Lettow_Vorbeck.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_Alfred_Hugenberg"
+		texturefile = "gfx/interface/ministers/GER_Alfred_Hugenberg.png"
+	}
+}

@@ -1,0 +1,1206 @@
+############
+#ROC EVENTS#
+############
+
+add_namespace = roc
+
+country_event = { #Intro Event
+	id = roc.1
+	title = roc.1.t
+	desc = roc.1.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.1.a
+        ai_chance = {factor = 100}
+		hidden_effect = {
+			PRC = {
+				set_cosmetic_tag = realPRC
+			}
+		}
+	}
+}
+country_event = { #Islamic Muslim Seperation
+	id = roc.2
+	title = roc.2.t
+	desc = roc.2.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.2.a
+        ai_chance = {factor = 100}
+		custom_effect_tooltip = ROC_ETR_TT
+		hidden_effect = {
+			ETR = {
+				transfer_state = 619
+				transfer_state = 617
+				transfer_state = 287
+				transfer_state = 760
+				transfer_state = 759
+				transfer_state = 756
+				transfer_state = 755
+				transfer_state = 604
+  
+				619 = {
+				add_core_of = ETR
+				}
+				617 = {
+				add_core_of = ETR
+				}
+				287 = {
+				add_core_of = ETR
+				}
+				760 = {
+				add_core_of = ETR
+				}
+				759 = {
+				add_core_of = ETR
+				}
+				756 = {
+				add_core_of = ETR
+				}
+				755 = {
+				add_core_of = ETR
+				}
+				604 = {
+				add_core_of = ETR
+				}
+   			}
+   		}		
+ 	}
+	option = {
+		name = roc.2.b
+        ai_chance = {factor = 0}
+		custom_effect_tooltip = ROC_ETR_TT_2
+		hidden_effect = {
+			ETR = {change_tag_from = ROC}
+			ETR = {
+				transfer_state = 619
+				transfer_state = 617
+				transfer_state = 287
+				transfer_state = 760
+				transfer_state = 759
+				transfer_state = 756
+				transfer_state = 755
+				transfer_state = 604
+  
+				619 = {
+				add_core_of = ETR
+				}
+				617 = {
+				add_core_of = ETR
+				}
+				287 = {
+				add_core_of = ETR
+				}
+				760 = {
+				add_core_of = ETR
+				}
+				759 = {
+				add_core_of = ETR
+				}
+				756 = {
+				add_core_of = ETR
+				}
+				755 = {
+				add_core_of = ETR
+				}
+				604 = {
+				add_core_of = ETR
+				}
+			}
+		}
+    }
+}
+	 
+country_event = { #Spooky Dai Li Seperation
+	id = roc.3
+	title = roc.3.t
+	desc = roc.3.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.3.a
+        ai_chance = {factor = 100}
+		custom_effect_tooltip = ROC_CRF_TT
+		hidden_effect = {
+			CRF = {
+				transfer_state = 752	
+				transfer_state = 753	
+				transfer_state = 754
+				transfer_state = 616
+				transfer_state = 283
+				transfer_state = 746
+				transfer_state = 622
+				transfer_state = 615
+				
+					752 = {
+				add_core_of = CRF
+				}
+				753 = {
+				add_core_of = CRF
+				}
+				754 = {
+				add_core_of = CRF
+				}
+				616 = {
+				add_core_of = CRF
+				}
+				283 = {
+				add_core_of = CRF
+				}
+				746 = {
+				add_core_of = CRF
+				}
+				622 = {
+				add_core_of = CRF
+				}
+				615 = {
+				add_core_of = CRF
+				}
+				load_oob = "CRF_1936"
+			}
+		}		
+ 	}
+
+ option = {
+		name = roc.3.b
+        ai_chance = {factor = 0}
+		custom_effect_tooltip = ROC_CRF_TT_2
+		hidden_effect = {
+			CRF = {change_tag_from = ROC}
+			CRF = {
+				transfer_state = 752	
+				transfer_state = 753	
+				transfer_state = 754
+				transfer_state = 616
+				transfer_state = 283
+				transfer_state = 746
+				transfer_state = 622
+				transfer_state = 615
+				752 = {
+				add_core_of = CRF
+				}
+				753 = {
+				add_core_of = CRF
+				}
+				754 = {
+				add_core_of = CRF
+				}
+				616 = {
+				add_core_of = CRF
+				}
+				283 = {
+				add_core_of = CRF
+				}
+				746 = {
+				add_core_of = CRF
+				}
+				622 = {
+				add_core_of = CRF
+				}
+				615 = {
+				add_core_of = CRF
+				}
+				load_oob = "CRF_1936"
+   			}
+		}
+    }
+}
+	
+	country_event = { #Qing Dynasty Li Seperation
+	id = roc.4
+	title = roc.4.t
+	desc = roc.4.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.4.a
+        ai_chance = {factor = 100}
+		custom_effect_tooltip = ROC_QID_TT
+		hidden_effect = {
+			QID = {
+				transfer_state = 609
+				transfer_state = 608
+				transfer_state = 614
+				transfer_state = 597
+				transfer_state = 743
+				
+				609 = {
+				add_core_of = QID
+				}
+				608 = {
+				add_core_of = QID
+				}
+				614 = {
+				add_core_of = QID
+				}
+				597 = {
+				add_core_of = QID
+				}
+				743 = {
+				add_core_of = QID
+				}
+				load_oob = "QID_1936"	
+   			}	
+ 		}
+	}
+
+ option = {
+		name = roc.4.b
+        ai_chance = {factor = 0}
+		custom_effect_tooltip = ROC_QID_TT_2
+		hidden_effect = {
+			QID = {change_tag_from = ROC}
+			QID = {
+				transfer_state = 609
+				transfer_state = 608
+				transfer_state = 614
+				transfer_state = 597
+				transfer_state = 743
+				
+				609 = {
+				add_core_of = QID
+				}
+				608 = {
+				add_core_of = QID
+				}
+				614 = {
+				add_core_of = QID
+				}
+				597 = {
+				add_core_of = QID
+				}
+				743 = {
+				add_core_of = QID
+				}
+				load_oob = "QID_1936"
+   			}	
+    	}
+	}
+}
+
+country_event = { #Peoples Republic of China Seperation
+	id = roc.5
+	title = roc.5.t
+	desc = roc.5.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.5.a
+        ai_chance = {factor = 100}
+		custom_effect_tooltip = ROC_PRC_TT
+		hidden_effect = {
+			PRC = {
+				transfer_state = 749
+				transfer_state = 605
+				transfer_state = 750
+				transfer_state = 620
+				transfer_state = 744
+				transfer_state = 607
+				transfer_state = 606
+				transfer_state = 613
+				transfer_state = 598
+				
+				749 = {
+				add_core_of = PRC
+				}
+				605 = {
+				add_core_of = PRC
+				}
+				750 = {
+				add_core_of = PRC
+				}
+				620 = {
+				add_core_of = PRC
+				}
+				744 = {
+				add_core_of = PRC
+				}
+				607 = {
+				add_core_of = PRC
+				}
+				606 = {
+				add_core_of = PRC
+				}
+				613 = {
+				add_core_of = PRC
+				}
+				598 = {
+				add_core_of = PRC
+				}
+  			}
+			 	 PRC = {load_oob = "PRC_cwar"}	
+ 		}
+	}
+
+ option = {
+		name = roc.5.b
+        ai_chance = {factor = 0}
+		custom_effect_tooltip = ROC_PRC_TT_2
+		hidden_effect = {
+			PRC = { country_event = { id = prc.1 days = 10}}
+			PRC = {change_tag_from = ROC}
+			PRC = {
+				transfer_state = 749
+				transfer_state = 605
+				transfer_state = 750
+				transfer_state = 620
+				transfer_state = 744
+				transfer_state = 607
+				transfer_state = 606
+				transfer_state = 613
+				transfer_state = 598
+				
+				749 = {
+				add_core_of = PRC
+				} 
+				605 = {
+				add_core_of = PRC
+				}
+				750 = {
+				add_core_of = PRC
+				}
+				620 = {
+				add_core_of = PRC
+				}
+				744 = {
+				add_core_of = PRC
+				}
+				607 = {
+				add_core_of = PRC
+				}
+				606 = {
+				add_core_of = PRC
+				}
+				613 = {
+				add_core_of = PRC
+				}
+				598 = {
+				add_core_of = PRC
+				}
+
+				PRC = {	load_oob = "PRC_cwar"}
+  			}
+		}
+    }
+}
+	 
+	country_event = { #terror attack at new year celebarations
+	id = roc.6
+	title = roc.6.t
+	desc = roc.6.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.6.a
+        ai_chance = {factor = 100}
+		create_country_leader = {
+	name = "Emergency Coaliton Council"
+	desc = ""
+	picture = ""
+	expire = "2020.1.1"
+	ideology = authoritarian_democrat_subideology
+	traits = {
+		
+	}
+}
+set_popularities = {
+	conservative = 0
+	liberal = 0
+	social_democrat = 55
+	libertarian_socialist = 0
+	authoritarian_socialist = 10
+	unisocialist = 0
+	authoritarian_democrat = 35
+	autocratic = 0
+	ultranationalist = 0
+	revolutionary_nationalist = 0
+	esoteric_traditionalist = 0
+	revolutionary_anarchist = 0
+}
+
+set_politics = {
+	ruling_party =  authoritarian_democrat
+        elections_allowed = no
+        last_election = "1936.1.28"
+        election_frequency = 48
+}
+		add_stability = -0.5
+	}
+}
+country_event = { #emergency coaliton meeting 
+	id = roc.7
+	title = roc.7.t
+	desc = roc.7.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.7.a
+        ai_chance = {factor = 100}
+        add_stability = 0.05
+	}
+}
+country_event = { #a tip
+	id = roc.8
+	title = roc.8.t
+	desc = roc.8.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.8.a
+        ai_chance = {factor = 100}
+		add_stability = 0.05
+	}
+}
+country_event = { #National speach
+	id = roc.9
+	title = roc.9.t
+	desc = roc.9.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.9.a
+        ai_chance = {factor = 100}
+		add_stability = 0.1
+		remove_ideas = ROC_pre_right
+	 	hidden_effect = {ROC = { country_event = { id = roc.33 days = 5}}}
+	}
+}
+country_event = { #Disaster pt1
+	id = roc.10
+	title = roc.10.t
+	desc = roc.10.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.10.a
+        ai_chance = {factor = 100}
+	add_stability = -0.25
+	 hidden_effect = {PRC = {transfer_state = 613}}
+	 hidden_effect = {ROC = { country_event = { id = roc.11 days = 2}}}
+	
+	}
+}
+country_event = { #Disaster pt2
+	id = roc.11
+	title = roc.11.t
+	desc = roc.11.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.11.a
+		add_stability = -0.20
+        ai_chance = {factor = 100}
+       hidden_effect = {PRC = {transfer_state = 605}} 
+	   hidden_effect = {ROC = { country_event = { id = roc.5 days = 15}}}
+	   hidden_effect = {ROC = { country_event = { id = roc.17 days = 7}}}
+		
+	}
+}
+country_event = { #Commies crying
+	id = roc.12
+	title = roc.12.t
+	desc = roc.12.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.12.a
+        ai_chance = {factor = 100}
+		add_stability = -0.1
+	}
+}
+country_event = { #Commies symbols burn
+	id = roc.13
+	title = roc.13.t
+	desc = roc.13.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.13.a
+        ai_chance = {factor = 100}
+		add_stability = -0.1
+	}
+}
+country_event = { #Commies square
+	id = roc.14
+	title = roc.14.t
+	desc = roc.14.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.14.a
+        ai_chance = {factor = 80}
+		add_stability = -0.05
+			 hidden_effect = {ROC = { country_event = { id = roc.15 days = 35}}}
+	}
+		option = {
+		name = roc.14.b
+        ai_chance = {factor = 20}
+		add_stability = -0.15
+			 hidden_effect = {ROC = { country_event = { id = roc.15 days = 15}}}
+	}
+}
+country_event = { #Commies leave
+	id = roc.15
+	title = roc.15.t
+	desc = roc.15.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.15.a
+        ai_chance = {factor = 100}
+		add_stability = -0.25
+		add_manpower = -50000
+		add_ideas = ROC_desertion
+		war_support_factor = -0.35
+		hidden_effect = {ROC = { country_event = { id = roc.10 days = 14}}}
+	}
+}
+country_event = { #Hunt mao
+	id = roc.16
+	title = roc.16.t
+	desc = roc.16.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.16.a
+        ai_chance = {factor = 100}
+		
+	}
+}
+country_event = { #Qing and beijing
+	id = roc.17
+	title = roc.17.t
+	desc = roc.17.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	    option = {
+        name = roc.17.a
+        ai_chance = { factor = 100 }
+        hidden_effect = {
+            ROC = {
+                country_event = { id = roc.4 days = 7}
+                country_event = { id = roc.32 days = 2}
+            }
+            QID = {transfer_state = 608}
+        }
+    }
+}
+country_event = { #dai li murders ppl
+	id = roc.18
+	title = roc.18.t
+	desc = roc.18.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.18.a
+        ai_chance = {factor = 100}
+		add_stability = -0.1
+		hidden_effect = {ROC = { country_event = { id = roc.3 days = 2}} set_country_flag = DISASTER}
+		hidden_effect = {ROC = { country_event = { id = roc.2 days = 2}}}
+		hidden_effect = {country_event = {id = roc.34 days = 40}}
+	}
+}
+country_event = { #dai li pardoned
+	id = roc.19
+	title = roc.19.t
+	desc = roc.19.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.19.a
+        ai_chance = {factor = 100}
+		add_stability = -0.1
+	}
+}
+
+############################################################################################################################################################################################
+###################################################################################CIVIL WAR###############################################################################################
+
+country_event = { #Civil war intro
+	id = roc.20
+	title = roc.20.t
+	desc = roc.20.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.20.a
+        ai_chance = {factor = 100}
+	}
+}
+country_event = { #14hr work days crying
+	id = roc.21
+	title = roc.21.t
+	desc = roc.21.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.21.a
+        ai_chance = {factor = 33}
+		add_stability = -0.15
+		hidden_effect = {ROC = { country_event = { id = roc.28 days = 60}}}
+	}
+	option = {
+		name = roc.21.b
+        ai_chance = {factor = 34}
+		add_stability = -0.10
+		add_ideas = ROC_cwar_work_semi_death
+		remove_ideas = ROC_cwar_work_death
+	}
+	option = {
+		name = roc.21.c
+        ai_chance = {factor = 33}
+		add_stability = 0.05
+		remove_ideas = ROC_cwar_work_death
+	}
+}
+country_event = { #War Department
+	id = roc.22
+	title = roc.22.t
+	desc = roc.22.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.22.a
+        ai_chance = {factor = 100}
+		set_country_flag =  ROC_wei_lihuang
+	}
+		option = {
+		name = roc.22.b
+        ai_chance = {factor = 100}
+		set_country_flag = ROC_xue_yue
+	}
+}
+
+country_event = { #Wei's plan
+	id = roc.23
+	title = roc.23.t
+	desc = roc.23.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.23.a
+        ai_chance = {factor = 100}
+		ROC = { country_event = { id = roc.25}}
+ }
+}
+
+country_event = { #Xue Yue's plan
+	id = roc.24
+	title = roc.24.t
+	desc = roc.24.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.24.a
+        ai_chance = {factor = 100}
+	   ROC = { country_event = { id = roc.29}}
+	}
+}
+country_event = { #Wei's plan pt2
+	id = roc.25
+	title = roc.25.t
+	desc = roc.25.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.25.a
+        ai_chance = {factor = 100}
+		ROC = { country_event = { id = roc.26}}
+	hidden_effect = {add_building_construction = {
+    type = bunker
+    level = 5
+    instant_build = yes
+    province = 7097
+}
+		add_building_construction = {
+    type = bunker
+    level = 3
+    instant_build = yes
+    province = 3992
+}
+		add_building_construction = {
+    type = bunker
+    level = 7
+    instant_build = yes
+    province = 7191
+}
+
+		add_building_construction = {
+    type = bunker
+    level = 3
+    instant_build = yes
+    province = 4196
+}
+
+		add_building_construction = {
+    type = bunker
+    level = 4
+    instant_build = yes
+    province = 7071
+}
+
+		add_building_construction = {
+    type = bunker
+    level = 10
+    instant_build = yes
+    province = 1047
+}
+
+		add_building_construction = {
+    type = bunker
+    level = 8
+    instant_build = yes
+    province = 7137
+   }
+  }
+	}
+}
+
+country_event = { #Wei's plan pt3
+	id = roc.26
+	title = roc.26.t
+	desc = roc.26.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.26.a
+		set_country_flag = ROC_cwar_wei
+        ai_chance = {factor = 100}
+		ROC = { country_event = { id = roc.27}}
+ }
+}
+country_event = { #Wei's plan pt4
+	id = roc.27
+	title = roc.27.t
+	desc = roc.27.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.27.a
+        ai_chance = {factor = 100}
+		
+ }
+}
+country_event = { #14hr work days crying pt 2
+	id = roc.28
+	title = roc.28.t
+	desc = roc.28.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.28.a
+        ai_chance = {factor = 33}
+		add_stability = -0.55
+		every_owned_state = {
+      damage_building = {
+    type = infrastructure
+    damage = 2
+	}
+	damage_building = {
+    type = arms_factory
+    damage = 1
+}
+	damage_building = {
+    type = industrial_complex
+    damage = 1
+}
+  }
+ }
+}
+country_event = { #Xue Yue's plan pt 2
+	id = roc.29
+	title = roc.29.t
+	desc = roc.29.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.29.a
+        ai_chance = {factor = 100}
+	   ROC = { country_event = { id = roc.30}}
+	}
+}
+country_event = { #Xue Yue's plan pt 3
+	id = roc.30
+	title = roc.30.t
+	desc = roc.30.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.30.a
+        ai_chance = {factor = 100}
+	   ROC = { country_event = { id = roc.31}}
+	   add_ideas = ROC_cwar_stream_gun
+	}
+		option = {
+		name = roc.30.b
+        ai_chance = {factor = 100}
+	   ROC = { country_event = { id = roc.31}}
+	   add_tech_bonus = {
+    bonus = 2.0
+    uses = 1
+    category = infantry_weapons
+}
+	}
+}
+country_event = { #Xue Yue's plan pt 4
+	id = roc.31
+	title = roc.31.t
+	desc = roc.31.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.31.a
+        ai_chance = {factor = 100}
+			   add_tech_bonus = {
+    bonus = 1
+    uses = 3
+    category =  cat_mass_assault
+}
+	}
+}
+country_event = { #Dai Li disappears
+	id = roc.32
+	title = roc.32.t
+	desc = roc.32.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.32.a
+        ai_chance = {factor = 100}
+ROC = { country_event = { id = roc.18}}
+	}
+}
+country_event = { #Chiang in power
+	id = roc.33
+	title = roc.33.t
+	desc = roc.33.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+	name = roc.33.a
+        ai_chance = {factor = 100}
+hidden_effect = {ROC = { country_event = { id = roc.12 days = 7}}}
+create_country_leader = {
+	name = "Chiang Kai Shek"
+	desc = ""
+	picture = "gfx/leaders/ROC/ROC_Chiang.tga"
+	expire = "2020.1.1"
+	ideology = authoritarian_democrat_subideology
+	traits = {
+		
+	}
+}
+
+set_popularities = {
+	conservative = 0
+	liberal = 0
+	social_democrat = 45
+	libertarian_socialist = 0
+	authoritarian_socialist = 10
+	unisocialist = 0
+	authoritarian_democrat = 45
+	autocratic = 0
+	ultranationalist = 0
+	revolutionary_nationalist = 0
+	esoteric_traditionalist = 0
+	revolutionary_anarchist = 0
+}
+
+set_politics = {
+	ruling_party =  authoritarian_democrat
+        elections_allowed = no
+        last_election = "1936.1.28"
+        election_frequency = 48
+}
+	}	
+}
+
+
+
+country_event = { #WAR
+	id = roc.34
+	title = roc.34.t
+	desc = roc.34.d
+
+	hidden = yes
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.34.a
+        ai_chance = {factor = 100}
+		set_country_flag = CHINA_CW_SUPERFLAG
+		every_state = {
+			limit = {
+				is_core_of = ROC
+			}
+			add_core_of = QID
+		}
+		every_state = {
+			limit = {
+				is_core_of = ROC
+			}
+			add_core_of = PRC
+		}
+		every_state = {
+			limit = {
+				is_core_of = ROC
+			}
+			add_core_of = CRF
+		}
+
+		ROC = {
+			declare_war_on = {
+				target = PRC
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = QID
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = CRF
+				type = annex_everything
+			}
+		}
+		PRC = {
+			declare_war_on = {
+				target = ROC
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = QID
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = CRF
+				type = annex_everything
+			}
+		}
+		QID = {
+			declare_war_on = {
+				target = PRC
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = ROC
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = CRF
+				type = annex_everything
+			}
+		}
+		CRF = {
+			declare_war_on = {
+				target = PRC
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = QID
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = ROC
+				type = annex_everything
+			}
+		}
+	}
+}	
+
+country_event = { #Test Event
+	id = roc.100
+	title = roc.100.t
+	desc = roc.100.d
+
+	
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc.100.a
+        ai_chance = {factor = 100}
+		load_focus_tree = roc_focus_2
+		load_oob = "ROC_cwar"
+		delete_unit_template_and_units = {
+    division_template = "Juntuán"
+    disband = no
+}
+delete_unit_template_and_units = {
+    division_template = "Renmin Jundui"
+    disband = no
+}
+set_country_flag = ROC_SPVENT_Flag	
+	}
+}

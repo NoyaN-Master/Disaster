@@ -66,7 +66,133 @@ set_popularities = {
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 0
 }
+#########military
+create_navy_leader = {
+	name = "Bengt Nordenskiold"
+	portrait_path = "gfx/leaders/FIN/Portrait_Sweden_Bengt_Nordenskiold.png"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+create_navy_leader = {
+	name = "Charles Champs"
+	portrait_path = "gfx/leaders/SWV/Portrait_Sweden_Charles_Champs.png"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+create_navy_leader = {
+	name = "Gosta Ehrensvard"
+	portrait_path = "gfx/leaders/SWV/Portrait_Sweden_Gosta_Ehrensvard.png"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+create_corps_commander = {
+	name = "Ernst Klercker"
+	portrait_path = "gfx/leaders/SWV/Portrait_Sweden_Ernst_Klercker.png"
+	traits = { 
 
+	}
+	skill = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Sir Ernst Linder"
+	portrait_path = "gfx/leaders/SWV/Portrait_Sweden_Ernst_Linder.png"
+	traits = { 
+
+	}
+	skill = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Folke Bernadotte"
+	portrait_path = "gfx/leaders/SWV/Portrait_Sweden_Folke_Bernadotte_Army.png"
+	traits = { 
+
+	}
+	skill = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Helge Jung"
+	portrait_path = "gfx/leaders/SWV/Portrait_Sweden_Helge_Jung.png"
+	traits = { 
+
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Erik Edolm"
+	portrait_path = "gfx/leaders/SWV/Portrait_Sweden_Erik_Edholm.png"
+	traits = { 
+
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Harald Malmberg"
+	portrait_path = "gfx/leaders/SWV/Portrait_Sweden_Harald_Malmberg.png"
+	traits = { 
+
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Henry Peyron"
+	portrait_path = "gfx/leaders/SWV/Portrait_Sweden_Henry_Peyron.png"
+	traits = { 
+
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Olof Thornell"
+	portrait_path = "gfx/leaders/SWV/Portrait_Sweden_Olof_Thornell.png"
+	traits = { 
+
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
 create_country_leader = {
 	name = "Gustav V Adolf "
 	#desc = "SWV_Gustav_Adolf_desc"

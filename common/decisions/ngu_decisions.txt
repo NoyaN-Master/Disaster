@@ -36,6 +36,10 @@ NGU_Komisariat_Poland = {
         transfer_state = 86
         transfer_state = 5
         transfer_state = 762
+        transfer_state = 93
+        transfer_state = 94
+        transfer_state = 95
+        transfer_state = 96
         PLN = {
             if = {
                 limit = {
@@ -64,7 +68,7 @@ NGU_Komisariat_Poland = {
             create_country_leader = {
 	        name = "Martin Bormann"
 	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        picture   = "Commisar_Martin_Bormann.tga"
+	        picture   = "gfx/leaders/PLN/Commisar_Martin_Bormann.tga"
 	        expire = "1965.1.1"
 	        ideology = national_socialist_subid
 	        traits = {
@@ -79,7 +83,7 @@ NGU_Komisariat_Poland = {
             create_country_leader = {
 	        name = "Martin Bormann"
 	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        picture   = "Commisar_Martin_Bormann.tga"
+	        picture = "gfx/leaders/PLN/Commisar_Martin_Bormann.tga"
 	        expire = "1965.1.1"
 	        ideology = natsoc_hitler
 	        traits = {
@@ -121,56 +125,90 @@ NGU_Komisariat_Baltics = {
         original_tag = NGU
         }    
         complete_effect = {
+        release = LIT
+        release = LAT
+        release = EST
+        BLT = {
+            annex_country = {
+                target = LIT
+                transfer_troops = yes
+            } 
+            annex_country = {
+                target = LAT
+                transfer_troops = yes
+            } 
+            annex_country = {
+                target = EST
+                transfer_troops = yes
+            }
+        } 
         release_puppet = BLT
+        release = LIT
+        release = LAT
+        release = EST
+        BLT = {
+        annex_country = {
+            target = LIT
+            transfer_troops = yes
+        } 
+        annex_country = {
+            target = LAT
+            transfer_troops = yes
+        } 
+        annex_country = {
+            target = EST
+            transfer_troops = yes
+        }
+    }
         transfer_state = 810
         BLT = {
-        if = {
-                limit = {
-                    NGU = {
-                    has_government = revolutionary_nationalist    
+            if = {
+                    limit = {
+                        NGU = {
+                        has_government = revolutionary_nationalist    
+                        }
+                    }
+                    set_cosmetic_tag = BLT_commisariat_black
+                    add_popularity = {
+                    ideology = revolutionary_nationalist
+                    popularity = 1
                     }
                 }
-                set_cosmetic_tag = BLT_commisariat_black
-                add_popularity = {
-                ideology = revolutionary_nationalist
-                popularity = 1
-                }
-            }
-            else_if = {
-                limit = {
-                    NGU = {
-                    has_government = unisocialist
+                else_if = {
+                    limit = {
+                        NGU = {
+                        has_government = unisocialist
+                        }
+                    }
+                    set_cosmetic_tag = BLT_commisariat
+                    add_popularity = {
+                    ideology = unisocialist
+                    popularity = 1
                     }
                 }
-                set_cosmetic_tag = BLT_commisariat
-                add_popularity = {
-                ideology = unisocialist
-                popularity = 1
+                create_country_leader = {
+                    name = "Alfred Rosenberg"
+                    picture = "gfx/leaders/BLT/Germany_Alfred_rosenberg_fuhrer.tga"
+                    expire = "1965.1.1"
+                    ideology = national_socialist_subid
+                    traits = {
+                    }
+                }
+                create_country_leader = {
+                    name = "Alfred Rosenberg"
+                    picture   = "gfx/leaders/BLT/Germany_Alfred_rosenberg_fuhrer.tga"
+                    expire = "1965.1.1"
+                    ideology = natsoc_hitler
+                    traits = {
+                    }
                 }
             }
-            create_country_leader = {
-                name = "Alfred Rosenberg"
-                picture   = "Portrait_Germany_Alfred_rosenberg_fuhrer.tga"
-                expire = "1965.1.1"
-                ideology = national_socialist_subid
-                traits = {
-                }
-            }
-            create_country_leader = {
-                name = "Alfred Rosenberg"
-                picture   = "Portrait_Germany_Alfred_rosenberg_fuhrer.tga"
-                expire = "1965.1.1"
-                ideology = natsoc_hitler
-                traits = {
-                }
-            }
-        }
 		hidden_effect = {
         }
-        }
-     ai_will_do = {
+        ai_will_do = {
 			factor = 1000
 		}
+    }
 }
 
 NGU_Attack_Czechia = {
@@ -245,7 +283,7 @@ NGU_Puppet_Czech = {
             create_country_leader = {
 	        name = "Karl Kreuz"
 	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        picture   = "Portrait_Germany_Karl_Kreutz.tga"
+	        picture   = "gfx/leaders/CEZ/Germany_Karl_Kreutz.tga"
 	        expire = "1965.1.1"
 	        ideology = national_socialist_subid
 	        traits = {
@@ -254,7 +292,7 @@ NGU_Puppet_Czech = {
             create_country_leader = {
 	        name = "Karl Kreuz"
 	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        picture   = "Portrait_Germany_Karl_Kreutz.tga"
+	        picture   = "gfx/leaders/CEZ/Germany_Karl_Kreutz.tga"
 	        expire = "1965.1.1"
 	        ideology = natsoc_hitler
 	        traits = {
@@ -360,7 +398,7 @@ NGU_Ukraine_Puppet = {
         create_country_leader = {
 	        name = "Nikita Khrushchev"
 	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        picture   = "Portrait_UKR_Nikita_Kruschev.png"
+	        picture   = "gfx/leaders/UKR/UKR_Nikita_Kruschev.png"
 	        expire = "1965.1.1"
 	        ideology = national_socialist_subid
 	        traits = {
@@ -401,7 +439,7 @@ NGU_SOV_Puppet = {
         create_country_leader = {
 	        name = "Politburo"
 	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        picture   = "Portrait_RUS_Sovnarkom.tga"
+	        picture   = "gfx/leaders/RUS/RUS_Sovnarkom.tga"
 	        expire = "1965.1.1"
 	        ideology = national_socialist_subid
 	        traits = {
@@ -482,7 +520,7 @@ NGU_French_Deal_Red = {
         create_country_leader = {
 	        name = "Gregor Strasser"
 	        #desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	        picture   = "Portrait_Germany_Gregor_Strasser.tga"
+	        picture   = "gfx/leaders/FRE/Germany_Gregor_Strasser.tga"
 	        expire = "1965.1.1"
 	        ideology = national_socialist_subid
 	        traits = {

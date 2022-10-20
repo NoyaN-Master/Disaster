@@ -60,6 +60,126 @@ add_ideas = 	one_party_state
 add_ideas = 	corporatism 
 add_ideas = 	post_industrialized_society
 
+#######################Military Personals
+create_field_marshal = {
+	name = "Albert I"
+	portrait_path = "gfx/leaders/BLI/BLI_Albert.tga"
+	traits = { infantry_leader defensive_doctrine  
+
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "de Neve de Roden"
+	portrait_path = "gfx/leaders/BLI/Portrait_Belgium_de_Neve_de_Roden.png"
+	traits = { infantry_leader
+
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Georges Deffontaine"
+	portrait_path = "gfx/leaders/BLI/Portrait_Belgium_Georges_Deffontaine.png"
+	traits = { infantry_leader defensive_doctrine organizer logistics_wizard
+
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Edouard van den Bergen"
+	portrait_path = "gfx/leaders/BLI/Portrait_Belgium_Edouard_van_den_Bergen.png"
+	traits = { infantry_leader
+
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Jean Baptiste Piron"
+	portrait_path = "gfx/leaders/BLI/Portrait_Belgium_Jean_Baptiste_Piron.png"
+	traits = { infantry_leader
+
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_field_marshal = {
+	name = "Leopold III"
+	portrait_path = "gfx/leaders/BLI/Portrait_Belgium_Leopold_III.png"
+	traits = { infantry_leader
+
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Raoul Daufresne de la Chevalerie"
+	portrait_path = "gfx/leaders/BLI/Portrait_Belgium_Raoul_Daufresne_de_la_Chevalerie.png"
+	traits = { infantry_leader
+
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Victor van Strydonck de Burkel"
+	portrait_path = "gfx/leaders/BLI/Portrait_Belgium_Victor_van_Strydonck_de_Burkel.png"
+	traits = { infantry_leader
+
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "MCL Keyaerts"
+	portrait_path = "gfx/leaders/BLI/Portrait_Belgium_MCL_Keyaerts.png"
+	traits = { panzer_leader
+
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+###################### admirals
+create_navy_leader = {
+	name = "Georges Timmermans"
+	portrait_path = "gfx/leaders/BLI/Portrait_Belgium_Georges_Timmermans.png"
+	traits = {  }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
 create_country_leader = {
 	name = "Albert I"
 	#desc = "BLI_Albert_desc"

@@ -1,3 +1,11 @@
+CEZ_occupation = {
+	color = rgb { 29 30 33 }
+	color_ui = rgb { 29 30 33 }
+}
+PLN_ger_ukraine = {
+	color = rgb { 29 30 33 }
+	color_ui = rgb { 29 30 33 }
+}
 PLN_occupation = {
 	color = rgb { 29 30 33 }
 	color_ui = rgb { 29 30 33 }
@@ -222,7 +230,10 @@ nixontag = {
 	color = rgb { 109 0 0 }
 	color_ui = rgb { 109 0 0 }
 }
-
+prcqingtag = {
+	color = rgb { 255 85 0 }
+	color_ui = rgb { 255 85 0 }
+}
 CLP_Ottoman_Coup = {
 	color = rgb { 99 6 15 }
 	color_ui = rgb { 99 6 15 }
@@ -232,3 +243,24 @@ Ottoman_Cosmetic = {
 	color = rgb { 99 6 15 }
 	color_ui = rgb { 99 6 15 }
 }
+
+SAV = {
+	color = rgb { 180 200 168 }
+	color_ui = rgb { 180 200 168 }
+}
+
+REG = {
+	color = rgb { 127 0 0 }
+	color_ui = rgb { 127 0 0 }
+}
+
+PRI = {
+	color = rgb { 235 246 247 }
+	color_ui = rgb { 235 246 247 }
+}
+
+PRT = {
+	color = rgb { 215 48 31 }
+	color_ui = rgb { 215 48 31 }
+}
+

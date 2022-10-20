@@ -63,7 +63,145 @@ set_popularities = {
 	esoteric_traditionalist = 0
 	revolutionary_anarchist = 6
 }
+#######################Military Personals
+create_corps_commander = {
+	name = "Gerardus Johannes Berenschot"
+	portrait_path = "gfx/leaders/BTV/Portrait_HOL_Gerardus_Johannes_Berenschot.png"
+	traits = { infantry_leader 
 
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Godfried van Voorst tot Voorst"
+	portrait_path = "gfx/leaders/BTV/Portrait_HOL_Godfried_van_Voorst_tot_Voorst_KR.png"
+	traits = { infantry_leader defensive_doctrine  
+
+	}
+	skill = 1
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Gustav Adolf Ilgen"
+	portrait_path = "gfx/leaders/BTV/Portrait_HOL_Gustav_Adolf_Ilgen.png"
+	traits = { infantry_leader
+
+	}
+	skill = 4
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Hein ter Poorten"
+	portrait_path = "gfx/leaders/BTV/Portrait_HOL_Hein_ter_Poorten_KR.png"
+	traits = { infantry_leader 
+
+	}
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Hendrik Seyffardt"
+	portrait_path = "gfx/leaders/BTV/Portrait_HOL_Hendrik_Seyffardt.png"
+	traits = { infantry_leader  
+
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Henri Winkelman"
+	portrait_path = "gfx/leaders/BTV/Portrait_HOL_Henri_Winkelman_KR.png"
+	traits = { 
+
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Izaak Reijnders"
+	portrait_path = "gfx/leaders/BTV/Portrait_HOL_Izaak_Reijnders_KR.png"
+	traits = { 
+
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Jakob Harberts"
+	portrait_path = "gfx/leaders/BTV/Portrait_HOL_Jakob_Harberts.png"
+	traits = { 
+
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_navy_leader = {
+	name = "Jan van Dulm"
+	portrait_path = "gfx/leaders/BTV/Portrait_HOL_Jan_van_Dulm.png"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+create_navy_leader = {
+	name = "Willem Jan Kruys"
+	portrait_path = "gfx/leaders/BTV/Portrait_HOL_Willem_Jan_Kruys.png"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+create_navy_leader = {
+	name = "Johannes_Furstner"
+	portrait_path = "gfx/leaders/BTV/Portrait_HOL_Johannes_Furstner.png"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+create_field_marshal = {
+	name = "Jan van Andel"
+	portrait_path = "gfx/leaders/BTV/Portrait_HOL_Jan_van_Andel.png"
+	traits = { 
+
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
 create_country_leader = { 
 	name = "Wilhelmina"
 	#desc = "BTV_Wilhelmina_desc"

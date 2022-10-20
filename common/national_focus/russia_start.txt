@@ -1,0 +1,157 @@
+focus_tree = {
+	id = russia_start_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RUS
+		}
+	}
+    default = no
+	continuous_focus_position = { x = 100 y = 10000 }
+
+	focus = {
+		id = RUS_jan21
+		icon = GFX_goal_RUS_january_bombings
+		x = 8
+		y = 0
+		cost = 3
+		ai_will_do = {
+			factor = 100
+		}
+		select_effect = {
+		}
+		completion_reward = {
+			add_stability = -0.25 
+			add_political_power = -125
+			country_event = russia.1
+        }
+	}
+	focus = {
+		id = RUS_red_crackdown
+		icon = GFX_goal_RUS_1000_purge
+		prerequisite = {
+			focus = RUS_jan21
+		}
+		relative_position_id = RUS_jan21
+			x = 0
+			y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		select_effect = {
+		}
+		completion_reward = {
+			country_event = russia.2
+			hidden_effect = {country_event = { id = russia.3 days = 14}}
+        }
+	}
+	focus = {
+		id = RUS_duma_dissolved
+		icon = GFX_goal_RUS_dissolve_duma
+		available = { has_country_flag = duma_dissolved }
+		mutually_exclusive = { focus = RUS_duma_purged}
+		prerequisite = {
+			focus = RUS_red_crackdown
+		}
+		relative_position_id = RUS_red_crackdown
+			x = 4
+			y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		select_effect = {
+		}
+		completion_reward = {
+			add_stability = -0.35 
+			hidden_effect = {country_event = {id = russia.4 days = 5}}
+			custom_effect_tooltip = RUS_tipping_point
+        }
+	}
+	focus = {
+		id = RUS_avalov_supleader
+		icon = GFX_goal_RUS_supreme_leader
+		prerequisite = {
+			focus = RUS_duma_dissolved
+		}
+		relative_position_id = RUS_duma_dissolved
+			x = -2
+			y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		select_effect = {
+		}
+		completion_reward = {
+			add_stability = -0.05 
+			country_event = russia.5
+        }
+	}
+	focus = {
+		id = RUS_disaster
+		icon = GFX_goal_RUS_russia_burn
+		prerequisite = {
+			focus = RUS_avalov_supleader 
+			focus = RUS_limitless_power
+		}
+		relative_position_id = RUS_avalov_supleader
+			x = -2
+			y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		select_effect = {
+		}
+		completion_reward = {
+			hidden_effect = {country_event = russia.6 days = 2}
+			custom_effect_tooltip = RUS_disaster_tt
+        }
+	}
+	focus = {
+		id = RUS_duma_purged
+		icon = GFX_goal_RUS_control_duma
+		available = {has_country_flag = duma_purged}
+		mutually_exclusive = { focus = RUS_duma_dissolved}
+		prerequisite = {
+			focus = RUS_red_crackdown 
+		}
+		relative_position_id = RUS_red_crackdown
+			x = -4
+			y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		select_effect = {
+		}
+		completion_reward = {
+			add_stability = -0.2
+			add_political_power = -100
+        }
+	}
+	focus = {
+		id = RUS_limitless_power
+		icon = GFX_goal_RUS_duma_oppose_nuffing
+		prerequisite = {
+			focus = RUS_duma_purged 
+		}
+		relative_position_id = RUS_duma_purged
+			x = 2
+			y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+		select_effect = {
+		}
+		completion_reward = {
+			add_stability = -0.05
+			add_political_power = -100
+			country_event = russia.7
+        }
+	}
+}    

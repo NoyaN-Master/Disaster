@@ -84,7 +84,7 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BAY_divided_freikorps" }
 			picture = BAY_FREIKORPS_FIRE
 			modifier = {
-				stability_weekly_factor = -0.05
+				stability_weekly_factor = -0.04
 				planning_speed = -0.5
 				political_power_gain = -0.5
 			}
@@ -94,7 +94,7 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BAY_divided_freikorps" }
 			picture = BAY_FREIKORPS_FIRE
 			modifier = {
-				stability_weekly_factor = -0.04
+				stability_weekly_factor = -0.03
 				planning_speed = -0.3
 				political_power_gain = -0.4
 			}
@@ -104,7 +104,7 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BAY_divided_freikorps" }
 			picture = BAY_FREIKORPS_FIRE
 			modifier = {
-				stability_weekly_factor = -0.03
+				stability_weekly_factor = -0.02
 				planning_speed = -0.2
 				political_power_gain = -0.25
 			}
@@ -128,6 +128,94 @@ ideas = {
 				ai_focus_defense_factor = 0.25
 			}
 		}
+
+
+		### ROHM ###
+
+		BAY_end_materialism_idea_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BAY_end_materialism_idea_1" }
+			picture = BAY
+			modifier = {
+				stability_weekly_factor = -0.01
+				political_power_gain = -0.25
+				production_speed_buildings_factor = -0.25
+			}
+		}
+
+		BAY_end_materialism_idea_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BAY_end_materialism_idea_2" }
+			picture = BAY
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.25
+				production_speed_buildings_factor = 0.2
+			}
+		}
+
+		BAY_rohm_antisemitism_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BAY_rohm_antisemitism_idea" }
+			picture = BAY
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = 0.15
+			}
+		}
+
+		BAY_DDA_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BAY_DDA_idea" }
+			picture = BAY
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.3
+				production_speed_buildings_factor = 0.25
+			}
+		}
+
+		BAY_rohm_militarism_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BAY_rohm_militarism_idea" }
+			picture = BAY
+			modifier = {
+				conscription = 0.05
+				army_org_factor = 0.25
+				land_reinforce_rate	= 0.1
+			}
+		}
+
+		BAY_positive_christianity_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BAY_positive_christianity_idea" }
+			picture = BAY
+			modifier = {
+				stability_weekly_factor = 0.005
+				resistance_growth = -0.3
+			}
+		}
+
+		BAY_germanic_family_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BAY_germanic_family_idea" }
+			picture = BAY 
+			modifier = {
+				monthly_population = 0.4
+				stability_factor = 0.15
+			}
+		}
+
+		BAY_high_command_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BAY_high_command_Idea" }
+			picture = BAY
+			modifier = {
+				army_org_factor = 0.2
+				max_planning_factor = 0.5
+				planning_speed = 0.5
+				political_power_factor = -0.2
+			}
+		}
 		
+		BAY_rohm_propaganda_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BAY_high_command_Idea" }
+			picture = BAY
+			modifier = {
+				war_support_weekly = 0.005
+			}	
+		}
 	}
 }

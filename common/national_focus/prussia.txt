@@ -9,7 +9,7 @@ focus_tree = {
 			tag = PRE	}
 	}
 
-    continuous_focus_position = { x = 20 y = 2500 }	
+    continuous_focus_position = { x = 20 y = 2650 }	
 	
 	### political focus start
 	focus = {
@@ -37,36 +37,12 @@ focus_tree = {
 		    level = 1
 	        }
             }			
-			67 = {
-	        add_building_construction = {
-		    type = industrial_complex 
-		    level = 1
-	        }   
-            }
-            5 = {
-	        add_building_construction = {
-		    type = industrial_complex 
-		    level = 1
-	        }   
-            }
 			66 = {
 	        add_building_construction = {
 		    type = infrastructure 
 		    level = 1
 	        }
             }			
-			67 = {
-	        add_building_construction = {
-		    type = infrastructure 
-		    level = 1
-	        }   
-            }
-            5 = {
-	        add_building_construction = {
-		    type = infrastructure 
-		    level = 1
-	        }   
-            }
 		}
 	}	
 	focus = {
@@ -171,13 +147,15 @@ focus_tree = {
 
 	focus = {
 		id = PRE_stir_up_mecklenburg
-		icon = GFX_goal_NGU_mecklenburg
-		x = 10
+		icon = GFX_goal_PRE_Mecklenburg_Crisis
+		x = 12
 		y = 0
 		cost = 5	
 		ai_will_do = { factor = 1000 }		
 		available = {
-					OR = {
+		is_neighbor_of = MEK
+		country_exists = MEK
+			OR = {
 			has_completed_focus = PRE_republic_lives_on
 			has_completed_focus = PRE_legacy_of_1848
 			has_completed_focus = PRE_restore_monarchy
@@ -185,23 +163,38 @@ focus_tree = {
 			has_completed_focus = PRE_social_role_army
 			}
 		}
+		bypass = {
+		NOT = {country_exists = MEK}
+		}
 		select_effect = {
 		country_event = { id = mek.1 days = 5 }		
 		}		
 		will_lead_to_war_with = NGU
 		completion_reward = {	
 		custom_effect_tooltip = PRE_stir_up_mecklenburg_tooltip
+		hidden_effect = {
+		if = {
+		limit = { NOT = { is_ai = yes}}
+		NGU = {
+		add_manpower = 50000
+		load_oob = NGU_reinforcements
+			}
+		}
+		}		
 		}
 	}
 	focus = {
 		id = PRE_saxony
-		icon = GFX_goal_PRE_Sax
+		icon = GFX_goal_PRE_Saxony
 		x = 0
 		y = 1
 		relative_position_id = PRE_stir_up_mecklenburg
 		cost = 3		
 		prerequisite = { focus = PRE_stir_up_mecklenburg }
 		ai_will_do = { factor = 1000 }		
+		bypass = {
+		NOT = {country_exists = SAX}
+		}		
 		available = {
 		59 = {is_owned_and_controlled_by = PRE }	
 		56 = {is_owned_and_controlled_by = PRE }	
@@ -217,9 +210,205 @@ focus_tree = {
         } 
 		}
 	}
+
+#################### south germany
+	focus = {
+		id = PRE_thrust_south
+		icon = GFX_goal_PRE_Thrust_South
+		x = -4
+		y = 2
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5		
+		prerequisite = { focus = PRE_saxony }	
+		will_lead_to_war_with = BAY				
+		will_lead_to_war_with = WRT		
+		will_lead_to_war_with = BDN		
+		will_lead_to_war_with = AUT		
+		available = {
+		has_war = no
+			OR = {
+			is_neighbor_of = BAY
+			is_neighbor_of = WRT
+			is_neighbor_of = BDN
+			is_neighbor_of = AUT
+			}
+			OR = {
+			country_exists = BAY
+			country_exists = WRT
+			country_exists = BDN
+			country_exists = AUT
+			}
+		}		
+		completion_reward = {
+		if = {
+		limit = { country_exists = BAY }
+		declare_war_on = {
+        target = BAY
+        type = annex_everything
+        }
+    }
+		if = {
+		limit = { country_exists = WRT }
+		declare_war_on = {
+        target = WRT
+        type = annex_everything
+        }
+    }
+		if = {
+		limit = { country_exists = BDN }
+		declare_war_on = {
+        target = BDN
+        type = annex_everything
+        }
+    }
+		if = {
+		limit = { country_exists = AUT }
+		declare_war_on = {
+        target = AUT
+        type = annex_everything
+        }
+    }
+	custom_effect_tooltip = PRE_thrust_south_tooltip
+		}
+	}
+	focus = {
+		id = PRE_little_german_solution
+		icon = GFX_goal_PRE_Little_German_Solution
+		x = -3
+		y = 3
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5		
+		prerequisite = { focus = PRE_thrust_south }	
+		mutually_exclusive = {
+		focus =  PRE_anschluss
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = PRE_austro_german_custom_union
+		icon = GFX_goal_PRE_Austro_German_Customs_Union
+		x = -3
+		y = 4
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5		
+		prerequisite = { focus = PRE_little_german_solution }	
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = PRE_anschluss
+		icon = GFX_goal_PRE_Anschluss
+		x = -5
+		y = 3
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5		
+		prerequisite = { focus = PRE_thrust_south }	
+		mutually_exclusive = {
+		focus =  PRE_little_german_solution
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = PRE_continue_kulturkampf
+		icon = GFX_goal_PRE_Continue_Kulturkampf
+		x = -5
+		y = 4
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5		
+		prerequisite = { focus = PRE_anschluss }	
+
+		completion_reward = {
+		
+		custom_effect_tooltip = PRE_continue_kulturkampf_tooltip
+		unlock_decision_tooltip = PRE_kulturkampf_decision
+		}
+	}
+	focus = {
+		id = PRE_sud_tirol
+		icon = GFX_goal_PRE_Press_Sud_Tirol_Claims
+		x = -7
+		y = 5
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5		
+		prerequisite = { focus = PRE_continue_kulturkampf }	
+		bypass = {
+		owns_state = 39
+		owns_state = 811
+		}
+		will_lead_to_war_with = FIU		
+		available = {
+		has_war = no
+		is_neighbor_of = FIU
+		country_exists = FIU
+		}
+		completion_reward = {
+		PRE = {
+		add_state_claim = 39
+		add_state_claim = 811}
+		if = {
+		limit = { country_exists = FIU }
+		declare_war_on = {
+        target = FIU
+        type = annex_everything
+        }
+    }
+		}
+	}
+	focus = {
+		id = PRE_sudeten_germans
+		icon = GFX_goal_PRE_Sudetan_Germans
+		x = -5
+		y = 5
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5		
+		prerequisite = { focus = PRE_continue_kulturkampf }	
+        available  = {   
+        is_neighbor_of = CEZ
+		country_exists = CEZ
+		NOT = { CEZ = { is_puppet_of = PRE } }
+        }
+		bypass = {
+		OR = {
+		NOT = {country_exists = CEZ}
+		CEZ = { is_puppet_of = PRE }
+		}
+		}
+		completion_reward = {
+		if = {
+		limit = { country_exists = CEZ }
+		declare_war_on = {
+        target = CEZ
+        type = annex_everything
+        }
+    }
+		}
+	}
+	focus = {
+		id = PRE_germanize_bohemian_crownlands
+		icon = GFX_goal_PRE_Germanize_Bohemian_Crownlands
+		x = -5
+		y = 6
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5		
+		prerequisite = { focus = PRE_sudeten_germans }	
+		available = {
+		owns_state = 69
+		owns_state = 74
+		69 = { is_core_of = PRE }
+		74 = { is_core_of = PRE }
+		CEZ = { is_puppet_of = PRE }
+		}
+		completion_reward = {
+		custom_effect_tooltip = PRE_germanize_bohemian_crownlands_tooltip
+		country_event = { id = preo.7 }	
+		}
+	}
+################ central europe
 	focus = {
 		id = PRE_strike_poland
-		icon = GFX_goal_NGU_Piast
+		icon = GFX_goal_PRE_Strike_Poles
 		x = 0
 		y = 2
 		relative_position_id = PRE_stir_up_mecklenburg
@@ -229,6 +418,9 @@ focus_tree = {
 		available = {
 		has_war = no	
 		has_army_manpower = { size > 350000 } 
+		}
+		bypass = {
+		NOT = {country_exists = PLN}
 		}		
 		completion_reward = {
 		declare_war_on = {
@@ -246,250 +438,327 @@ focus_tree = {
 			}
 		}
 		}
+		custom_effect_tooltip = PRE_strike_poland_tooltip
 		}
 	}	
 	focus = {
 		id = PRE_puppet_poland
-		icon = GFX_goal_deutschland_vereint
+		icon = GFX_goal_PRE_Reapproach_Poles
 		x = -1
 		y = 3
 		relative_position_id = PRE_stir_up_mecklenburg
-		cost = 2	
+		cost = 4	
 		mutually_exclusive = {
 		focus =  PRE_generalplan_ost
+		}
+		available = {
+			always= false
 		}		
 		prerequisite = { focus = PRE_strike_poland }
-		available = {
-		OR = {
-		has_government = liberal
-		has_government = ultranationalist
-		has_government = authoritarian_democrat
-		has_government = conservative
-		has_government = autocratic
-		has_government = social_democrat
-		}	
-		NOT = {PLN = {exists = yes}}
-		808 = {is_owned_and_controlled_by = PRE }
-		809 = {is_owned_and_controlled_by = PRE }
-		85 = {is_owned_and_controlled_by = PRE }
-		86 = {is_owned_and_controlled_by = PRE }
-		98 = {is_owned_and_controlled_by = PRE }
-		87 = {is_owned_and_controlled_by = PRE }
-		10 = {is_owned_and_controlled_by = PRE }
-		97 = {is_owned_and_controlled_by = PRE }
-		92 = {is_owned_and_controlled_by = PRE }
-		90 = {is_owned_and_controlled_by = PRE }
-		762 = {is_owned_and_controlled_by = PRE }
-		72 = {is_owned_and_controlled_by = PRE }
-		88 = {is_owned_and_controlled_by = PRE }
-		91 = {is_owned_and_controlled_by = PRE }
-		89 = {is_owned_and_controlled_by = PRE }
-		}
         completion_reward = {
-		country_event = { id = preo.1 days = 1 }
 		}
-		
 	}
-
 	focus = {
-		id = PRE_Rest_Germany
-		icon = GFX_goal_pangerman
-		x = 0
+		id = PRE_reapproach_the_poles
+		icon = GFX_goal_PRE_Finalize_German_Polish_Border
+		x = -1
 		y = 4
 		relative_position_id = PRE_stir_up_mecklenburg
-		cost = 2		
-		prerequisite = { focus = PRE_generalplan_ost focus = PRE_puppet_poland }
+		cost = 4	
 		available = {
-		}
+			PLN = { is_puppet_of = PRE}
+		}		
+		prerequisite = { focus = PRE_puppet_poland }
         completion_reward = {
-		unlock_decision_tooltip = PRE_Take_South_Germany
-		unlock_decision_tooltip = PRE_Take_Austria
-		unlock_decision_tooltip = PRE_Take_CEZ
-		unlock_decision_tooltip = PRE_Deal_CEZ
+		custom_effect_tooltip = PRE_reapproach_the_poles_tooltip
+		country_event = { id = preo.3 }	
+		remove_ideas = PRE_polish_terrorism
 		}
-		
 	}
-
 	focus = {
 		id = PRE_generalplan_ost
-		icon = GFX_goal_WRF_korps
+		icon = GFX_goal_PRE_Solidify_Ostsiedlung
 		x = 1
 		y = 3
 		relative_position_id = PRE_stir_up_mecklenburg
 		cost = 5
 		mutually_exclusive = {
 		focus =  PRE_puppet_poland
-		}		
-		prerequisite = { focus = PRE_strike_poland }
+		}
 		available = {
-		OR = {
-		has_government = revolutionary_nationalist	
-		}	
-		NOT = {PLN = {exists = yes}}
-		808 = {is_owned_and_controlled_by = PRE }
-		809 = {is_owned_and_controlled_by = PRE }
-		85 = {is_owned_and_controlled_by = PRE }
-		86 = {is_owned_and_controlled_by = PRE }
-		98 = {is_owned_and_controlled_by = PRE }
-		87 = {is_owned_and_controlled_by = PRE }
-		10 = {is_owned_and_controlled_by = PRE }
-		97 = {is_owned_and_controlled_by = PRE }
-		92 = {is_owned_and_controlled_by = PRE }
-		90 = {is_owned_and_controlled_by = PRE }
-		762 = {is_owned_and_controlled_by = PRE }
-		72 = {is_owned_and_controlled_by = PRE }
-		88 = {is_owned_and_controlled_by = PRE }
-		91 = {is_owned_and_controlled_by = PRE }
-		89 = {is_owned_and_controlled_by = PRE }
-		has_war = no			
-		}		
-		completion_reward = {
-		country_event = { id = preo.1 days = 1 }	
-		unlock_decision_tooltip = PRE_Diplomacy_Ostland
-		unlock_decision_tooltip = PRE_Declare_Russia
-		unlock_decision_tooltip = PRE_Declare_UKR
-		unlock_decision_tooltip = PRE_Russia_Peace
-		}
-	}
-
-	focus = {
-		id = PRE_The_RKs
-		icon = GFX_goal_PRE_DTS
-		x = 2
-		y = 4
-		relative_position_id = PRE_stir_up_mecklenburg
-		cost = 5
-		prerequisite = { focus = PRE_generalplan_ost }
-		available = {
-		OR = {
-		has_government = revolutionary_nationalist
-		has_government = ultranationalist	
-		}
-		has_war = no			
-		}		
-		completion_reward = {
-		create_faction = PRE_NAT_FACTION
-		
-		}
-	}
-
-	focus = {
-		id = PRE_Fuck_France
-		icon = GFX_goal_NGU_TeutonWAR
-		x = 3
-		y = 5
-		relative_position_id = PRE_stir_up_mecklenburg
-		cost = 5
-		prerequisite = { focus = PRE_The_RKs }
-		available = {
-		OR = {
-		has_government = revolutionary_nationalist
-		has_government = ultranationalist	
-		}	
-		
-		RHN = {
-			exists = no
-		}
-		has_war = no			
-		}		
-		completion_reward = {
-		declare_war_on = {
-    	target = FRE
-    	type = annex_everything
-		}
-		declare_war_on = {
-    	target = BLI
-    	type = annex_everything
-		}
-		add_timed_idea = {
-		idea = NGU_FrenchSaxons
-		days = 50
-		}
-		unlock_decision_tooltip = PRE_France_Surrender
-		hidden_effect = {
-			set_country_flag = WW2_happened 
-		}
-		}
-	}
-
-	focus = {
-		id = PRE_March_West
-		icon = GFX_goal_NGU_rhine
-		x = 0
-		y = 5
-		relative_position_id = PRE_stir_up_mecklenburg
-		cost = 5
-		prerequisite = { focus = PRE_Rest_Germany }
-		available = {
-		has_war = no			
-		}		
-		completion_reward = {
-		unlock_decision_tooltip = PRE_Attack_Rhineland
-		}
-	}
-
-	focus = {
-		id = PRE_Koalition_Evropa
-		icon = GFX_goal_PRE_EVROPA
-		x = -2
-		y = 4
-		relative_position_id = PRE_stir_up_mecklenburg
-		cost = 5
-		prerequisite = { focus = PRE_puppet_poland }
-		available = {
-		has_war = no			
-		}		
-		completion_reward = {
-		create_faction = PRE_LIB_FACTION
-		country_event = { id = pre.102 days = 1}		
-		}
-	}
-
-	focus = {
-		id = PRE_End_France
-		icon = GFX_goal_NGU_France
-		x = -3
-		y = 5
-		relative_position_id = PRE_stir_up_mecklenburg
-		cost = 5
-		prerequisite = { focus = PRE_Koalition_Evropa }
-		available = {
-		has_war = no
-		RHN = {
-		exists = no	
+			always= false
 		}			
-		}		
+		prerequisite = { focus = PRE_strike_poland }	
 		completion_reward = {
-		declare_war_on = {
-    	target = FRE
-    	type = annex_everything
+		}
+	}
+	focus = {
+		id = PRE_reinforce_generaal_gouvernment
+		icon = GFX_goal_PRE_Reinforce_Generalgouvernment
+		x = 1
+		y = 4
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5		
+		prerequisite = { focus = PRE_generalplan_ost }	
+
+		available = {
+		has_equipment = {
+			infantry_equipment > 4999
 		}
 		}
+		completion_reward = {
+		add_equipment_to_stockpile  = {
+			type = infantry_equipment
+			amount = -5000
+		}	
+		swap_ideas = {
+			add_idea = PRE_polish_terrorism_2
+			remove_idea = PRE_polish_terrorism
+		}					
+		}
+	}
+	focus = {
+		id = PRE_generalplan_ost_2
+		icon = GFX_goal_PRE_Generalplan_Ost
+		x = 1
+		y = 5
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5			
+		prerequisite = { focus = PRE_reinforce_generaal_gouvernment }	
+		completion_reward = {
+		custom_effect_tooltip = PRE_generalplan_ost_2_tooltip
+		hidden_effect = {
+	809 = {add_resistance = 30}
+	85 = {add_resistance = 30}
+	86 = {add_resistance = 30}
+	762 = {add_resistance = 30}}
+	unlock_decision_tooltip = PRE_generalplan_ost_step_1
+	unlock_decision_tooltip = PRE_generalplan_ost_take_territory_step_1
+	unlock_decision_tooltip = PRE_generalplan_ost_step_2
+	unlock_decision_tooltip = PRE_generalplan_ost_step_2_finish
+	unlock_decision_tooltip = PRE_generalplan_ost_take_territory_step_2
+	unlock_decision_tooltip = PRE_generalplan_ost_step_3
+	unlock_decision_tooltip = PRE_generalplan_ost_step_3_finish	
+	}
 	}
 
 	focus = {
-		id = PRE_Deutschland_Uber_Alles
-		icon = GFX_goal_The_republic_moves_on
-		x = 0
+		id = PRE_von_goltz_plan
+		icon = GFX_goal_PRE_Von_Goltz_Plan
+		x = 1
 		y = 6
 		relative_position_id = PRE_stir_up_mecklenburg
-		cost = 5
-		prerequisite = { focus = PRE_End_France focus = PRE_Fuck_France  }
-		prerequisite = { focus = PRE_March_West }
+		cost = 5		
+		prerequisite = { focus = PRE_generalplan_ost_2 }	
+		bypass = {
+		NOT = {	country_exists = LIT}
+		NOT = {	country_exists = LAT}
+		NOT = {	country_exists = EST}		
+		}
+		will_lead_to_war_with = LIT	
+		will_lead_to_war_with = LAT	
+		will_lead_to_war_with = EST	
 		available = {
-		has_war = no			
-		}		
+		RUS = {has_country_flag = RUS_CW_SPVENT_TRIGGER}
+		has_war = no
+			OR = {
+			is_neighbor_of = LIT
+			is_neighbor_of = LAT
+			is_neighbor_of = EST
+			}
+			OR = {
+			country_exists = LIT
+			country_exists = LAT
+			country_exists = EST
+			}
+		}
 		completion_reward = {
-		add_stability = 0.20
+		if = {
+		limit = { country_exists = LIT }
+		declare_war_on = {
+        target = LIT
+        type = annex_everything
+        }
+    }
+		if = {
+		limit = { country_exists = LAT }
+		declare_war_on = {
+        target = LAT
+        type = annex_everything
+        }
+    }
+		if = {
+		limit = { country_exists = EST }
+		declare_war_on = {
+        target = EST
+        type = annex_everything
+        }
+    }
 		}
 	}
+	focus = {
+		id = PRE_germanize_baltics
+		icon = GFX_goal_PRE_Germanize_Baltics
+		x = 1
+		y = 7
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5		
+		prerequisite = { focus = PRE_von_goltz_plan }	
+		completion_reward = {
+		hidden_effect = {
+		country_event = { id = preo.9 }	
+        release = LIT
+        release = LAT
+        release = EST
+        BLT = { 
+        annex_country = {
+            target = LAT
+            transfer_troops = yes
+        } 
+        annex_country = {
+            target = EST
+            transfer_troops = yes
+        } }
+		PRE = {
+		puppet = BLT
+		puppet = LIT
+		}
+		BLT = {
+		set_politics = {
+		ruling_party = ultranationalist
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+		}
+		set_popularities = {
+		ultranationalist = 30
+		revolutionary_nationalist = 40
+		authoritarian_democrat = 30
+		}
+		create_country_leader = {
+	        name = "Rüdiger von der Goltz"
+	        #desc = ""
+	        picture   = "gfx/leaders/BLT/BLT_Goltz.tga"
+	        expire = "1965.1.1"
+	        ideology = ultranationalist_subideology
+	        traits = {
+	        }
+            }
+		add_state_core = 12
+		add_manpower = 50000
+		add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 1000
+		producer = PRE
+		}
+		}
+		LIT = {
+		set_politics = {
+		ruling_party = ultranationalist
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+		}		
+		}
+	}
+		custom_effect_tooltip = PRE_germanize_baltics_tooltip
+		}
+	}
+
+
+
+
+###### eco union path
+	focus = {
+		id = PRE_economic_union
+		icon = GFX_goal_PRE_New_Economic_Union
+		x = -2
+		y = 6
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 4		
+		prerequisite = { focus = PRE_reapproach_the_poles }
+		prerequisite = { focus = PRE_austro_german_custom_union }
+        completion_reward = {
+		}
+	}
+	focus = {
+		id = PRE_economic_union_danes
+		icon = GFX_goal_PRE_Normalize_Danish_Relations
+		x = -7
+		y = 7
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 4		
+		prerequisite = { focus = PRE_economic_union }
+        completion_reward = {
+		}
+	}
+	focus = {
+		id = PRE_economic_union_scandinavia
+		icon = GFX_goal_PRE_Approach_Scandinavia
+		x = -7
+		y = 8
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 4		
+		prerequisite = { focus = PRE_economic_union_danes }
+        completion_reward = {
+		}
+	}
+	focus = {
+		id = PRE_economic_union_czechs
+		icon = GFX_goal_PRE_Approach_Czechs
+		x = -5
+		y = 7
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 4		
+		prerequisite = { focus = PRE_economic_union }
+        completion_reward = {
+		}
+	}
+	focus = {
+		id = PRE_economic_union_lowlands
+		icon = GFX_goal_PRE_Invite_Lowlands
+		x = -3
+		y = 7
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 4		
+		prerequisite = { focus = PRE_economic_union }
+        completion_reward = {
+		}
+	}
+	focus = {
+		id = PRE_economic_union_baltics
+		icon = GFX_goal_PRE_Approach_Baltic_Nations
+		x = -1
+		y = 7
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 4		
+		prerequisite = { focus = PRE_economic_union }
+        completion_reward = {
+		}
+	}
+
+
+######### rhineland
+	focus = {
+		id = PRE_rhineland
+		icon = GFX_goal_PRE_Rhineland_Ultimatum
+		x = 3
+		y = 3
+		relative_position_id = PRE_stir_up_mecklenburg
+		cost = 5		
+		prerequisite = { focus = PRE_strike_poland }		
+		completion_reward = {
+
+		}
+	}
+
 
 ############################################### Schleicher Path
 	focus = {
 		id = PRE_schleicher_holds_on
 		icon = GFX_goal_schleicher_holds_on
 		x = 3
-		y = 8
+		y = 10
 		cost = 1
 		available = {
 			has_country_flag = PRE_schleicher_refuses_step_down	
@@ -796,7 +1065,7 @@ focus_tree = {
 		cost = 6		
 		prerequisite = { focus = PRE_undermine_big_business }	
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 			limit = {
 				free_building_slots = {
 					building = industrial_complex
@@ -804,14 +1073,14 @@ focus_tree = {
 					include_locked = yes
 				}
 			}
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}
-			random_owned_state = {
+			random_core_state = {
 			limit = {
 				free_building_slots = {
 					building = industrial_complex
@@ -819,10 +1088,10 @@ focus_tree = {
 					include_locked = yes
 				}
 			}
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}		
@@ -901,7 +1170,7 @@ focus_tree = {
 		id = PRE_nazi_victory_focus
 		icon = GFX_goal_goring_takes_power
 		x = 10
-		y = 8
+		y = 10
 		cost = 1		
 		available = {
 			has_country_flag = PRE_nazi_victory	
@@ -1244,23 +1513,7 @@ focus_tree = {
 		cost = 10		
 		prerequisite = { focus = PRE_prussian_steel}
 		
-		completion_reward = {
-			66 = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}
-		}	
-			763 = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}
-		}
+		completion_reward = {	
 			5 = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -1303,7 +1556,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_meine_ehre}
 		completion_reward = {
 		add_ideas = PRE_arbeit_macht_frei_idea
-		add_stability = -0.05
+		add_stability = -0.15
 		}
 	}
 	focus = {
@@ -1318,29 +1571,21 @@ focus_tree = {
 
 		completion_reward = {
 			66 = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = arms_factory
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}	
 			763 = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = arms_factory
-				level = 2
+				level = 1
 				instant_build = yes
 			}
-		}
-			5 = {
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = arms_factory
-				level = 2
-				instant_build = yes
-			}
-		}		
+		}	
 		}
 	}
 	focus = {
@@ -1377,7 +1622,7 @@ focus_tree = {
 		id = PRE_dnvp_victory_focus
 		icon = GFX_goal_victory_hugenberg
 		x = 18
-		y = 7
+		y = 10
 		cost = 1		
 		available = {
 			has_country_flag = PRE_dnvp_victory	
@@ -1583,7 +1828,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_work_with_industrialists}
 		
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 			limit = {
 				free_building_slots = {
 					building = industrial_complex
@@ -1591,14 +1836,14 @@ focus_tree = {
 					include_locked = yes
 				}
 			}
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}
-			random_owned_state = {
+			random_core_state = {
 			limit = {
 				free_building_slots = {
 					building = arms_factory
@@ -1606,14 +1851,14 @@ focus_tree = {
 					include_locked = yes
 				}
 			}
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = arms_factory
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}	
-			random_owned_state = {
+			random_core_state = {
 			limit = {
 				free_building_slots = {
 					building = industrial_complex
@@ -1621,10 +1866,10 @@ focus_tree = {
 					include_locked = yes
 				}
 			}
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}			
@@ -1760,7 +2005,7 @@ focus_tree = {
 		id = PRE_liberal_victory_focus
 		icon = GFX_goal_liberal_victory
 		x = 26
-		y = 7
+		y = 10
 		cost = 1
 		available = {
 			has_country_flag = PRE_liberal_victory	
@@ -2028,23 +2273,8 @@ focus_tree = {
 		prerequisite = { focus = PRE_encourage_entrepeneurs}
 		
 		completion_reward = {
-			random_owned_state = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}
-		}	
-			random_owned_state = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}
-		}
-			random_owned_state = {
+			add_political_power = -100
+			random_core_state = {
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = industrial_complex
@@ -2052,7 +2282,7 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-			random_owned_state = {
+			random_core_state = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
@@ -2072,13 +2302,14 @@ focus_tree = {
 		prerequisite = { focus = PRE_legacy_of_1848}
 		
 		completion_reward = {
-		every_owned_state = {
+			random_core_state = {
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
-				type = infrastructure
+				type = industrial_complex
 				level = 1
 				instant_build = yes
 			}
-			}
+		}
 		add_resource = {
 		type = steel
 		amount = 30
@@ -2132,26 +2363,26 @@ focus_tree = {
 		
 		completion_reward = {
 			66 = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = arms_factory
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}	
 			763 = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = arms_factory
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}
 			5 = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = arms_factory
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}		
@@ -2260,7 +2491,7 @@ focus_tree = {
 		id = PRE_junker_victory_focus
 		icon = GFX_goal_junkers_hold_on
 		x = 35
-		y = 7
+		y = 10
 		cost = 1		
 		available = {
 			has_country_flag = PRE_junker_victory	
@@ -2631,7 +2862,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_invest_in_the_estates}
 		prerequisite = { focus = PRE_control_farmers_union}		
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 			limit = {
 				free_building_slots = {
 					building = industrial_complex
@@ -2639,14 +2870,14 @@ focus_tree = {
 					include_locked = yes
 				}
 			}
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}
-			random_owned_state = {
+			random_core_state = {
 			limit = {
 				free_building_slots = {
 					building = industrial_complex
@@ -2654,10 +2885,10 @@ focus_tree = {
 					include_locked = yes
 				}
 			}
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}		
@@ -2782,7 +3013,6 @@ focus_tree = {
 		hidden_effect = {
 		remove_ideas = PRE_army_maneuvres_idea
 		}
-		country_event = { id = pre.37 days = 2 } 		
 		}
 	}
 	focus = {
@@ -2801,6 +3031,9 @@ focus_tree = {
 		unlock_decision_tooltip = PRE_war_economy_decision_3
 		unlock_decision_tooltip = PRE_war_economy_decision_4
 		unlock_decision_tooltip = PRE_war_economy_decision_5
+		hidden_effect = {
+		country_event = { id = pre.37 days = 2 } 
+		}
 		}
 	}
 	focus = {
@@ -2916,7 +3149,7 @@ focus_tree = {
 							remove_idea = PRE_guderian_doctrine
 							add_idea = PRE_guderian_doctrine2
 						}
-			random_owned_state = {
+			random_core_state = {
 			limit = {
 				free_building_slots = {
 					building = arms_factory

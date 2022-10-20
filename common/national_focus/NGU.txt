@@ -313,6 +313,10 @@ focus = {
 		add_state_claim = 74
 		add_state_claim = 153
 		add_state_claim = 880
+		add_state_claim = 65
+		add_state_claim = 882
+		add_state_claim = 881
+		add_state_claim = 883
 		}
 		}
 	}
@@ -412,34 +416,13 @@ focus = {
         focus = NGU_labor_camps    
         } 								
 		completion_reward = {
-		random_owned_state = {
-		add_building_construction = {
-    	type = infrastructure
-    	level = 10
-   		instant_build = yes
-		}
-		random_owned_state = {
-		add_building_construction = {
-    	type = infrastructure
-    	level = 10
-   		instant_build = yes
-		}
-		}
-		}
-		random_owned_state = {
-		add_building_construction = {
-    	type = infrastructure
-    	level = 10
-   		instant_build = yes
-		}
-		random_owned_state = {
-		add_building_construction = {
-    	type = infrastructure
-    	level = 10
-   		instant_build = yes
-		}
-		}
-		}
+		every_owned_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			}
 		}
 	}
 focus = {
@@ -846,9 +829,17 @@ focus = {
 		completion_reward = {
 			custom_effect_tooltip = NGU_baltics_tt
 		declare_war_on = {
-    	target = BLT
+    	target = LIT
     	type = annex_everything
-		}	
+		}
+		declare_war_on = {
+			target = LAT
+			type = annex_everything
+			}
+			declare_war_on = {
+				target = EST
+				type = annex_everything
+				}
 		}
 	}
 focus = {
@@ -992,6 +983,42 @@ focus = {
     	target = RUS
     	type = annex_everything
 		}
+		declare_war_on = {
+			target = PRI
+			type = annex_everything
+			}
+		declare_war_on = {
+			target = URA
+			type = annex_everything
+			}
+		declare_war_on = {
+			target = SIB
+			type = annex_everything
+			}
+		declare_war_on = {
+			target = KAR
+			type = annex_everything
+			}
+		declare_war_on = {
+			target = SAK
+			type = annex_everything
+			}
+		declare_war_on = {
+			target = REG
+			type = annex_everything
+			}
+		declare_war_on = {
+			target = DON
+			type = annex_everything
+			}
+		declare_war_on = {
+			target = KUB
+			type = annex_everything
+			}
+		declare_war_on = {
+			target = SAV
+			type = annex_everything
+			}
 		add_timed_idea = {
 		idea = NGU_RussianWar
 		days = 95	
@@ -1321,6 +1348,9 @@ focus = {
 		}
         prerequisite = { focus = NGU_Project_Belarus}				
 		completion_reward = {
+			RUS = {
+				end_puppet = UKR
+			}
 		declare_war_on = {
     	target = UKR
     	type = annex_everything
@@ -1340,10 +1370,46 @@ focus = {
         prerequisite = { focus = NGU_Ukrainian_Annex}
 		prerequisite = { focus = NGU_Minsk_Military_Base}			
 		completion_reward = {
-		declare_war_on = {
-    	target = RUS
-    	type = annex_everything
-		}
+			declare_war_on = {
+				target = RUS
+				type = annex_everything
+				}
+				declare_war_on = {
+					target = PRI
+					type = annex_everything
+					}
+				declare_war_on = {
+					target = URA
+					type = annex_everything
+					}
+				declare_war_on = {
+					target = SIB
+					type = annex_everything
+					}
+				declare_war_on = {
+					target = KAR
+					type = annex_everything
+					}
+				declare_war_on = {
+					target = SAK
+					type = annex_everything
+					}
+				declare_war_on = {
+					target = REG
+					type = annex_everything
+					}
+				declare_war_on = {
+					target = DON
+					type = annex_everything
+					}
+				declare_war_on = {
+					target = KUB
+					type = annex_everything
+					}
+				declare_war_on = {
+					target = SAV
+					type = annex_everything
+					}
 		WLF = {
 		add_timed_idea = {
 		idea = NGU_RussianWar
@@ -1388,7 +1454,6 @@ focus = {
     	amount = 5000
     	producer = SWA
 		}
-		load_oob = namib_oob
 		}
 		}
 	}

@@ -1,0 +1,400 @@
+focus_tree = {
+	id = PRC_cwar
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PRC
+		}
+		}
+		continuous_focus_position = { x = 100 y = 5000 }
+	default = no	
+	
+
+
+
+		focus = {
+		id = PRC_focus_1
+		icon = GFX_goal_PRC_mao_deng
+		x = 8
+		y = 1
+		cost = 8
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		PRC = { country_event = { id = prc.2}}
+		}
+	}
+
+		focus = {
+		id = PRC_focus_2
+		icon = GFX_goal_PRC_MaoWinsSI
+		x = 4
+		y = 2
+		cost = 5
+		prerequisite = {focus = PRC_focus_1}
+		available = {has_country_flag = mao_vic}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.1
+	    add_war_support = 0.1
+		}
+	}
+
+		focus = {
+		id = PRC_focus_3
+		icon = GFX_goal_PRC_deng_wins_SI
+		x = 12
+		y = 2
+		cost = 5
+		prerequisite = {focus = PRC_focus_1}
+		available = {has_country_flag = deng_vic}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.1
+	    add_war_support = 0.1
+		}
+	}
+
+		focus = {
+		id = PRC_focus_4
+		icon = GFX_goal_PRC_Guerilla_Warfare
+		x = 6
+		y = 4
+		cost = 3
+		prerequisite = {focus = PRC_focus_5}
+		available = {}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = PRC_cwar_monkey_warfare
+		}
+	}
+focus = {
+		id = PRC_focus_5
+		icon = GFX_goal_PRC_orthodox_warfare
+		x = 4
+		y = 3
+		cost = 3
+		prerequisite = {focus = PRC_focus_2}
+		available = {}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		PRC = { country_event = { id = prc.9}}
+		}
+	}
+	focus = {
+		id = PRC_focus_6
+		icon = GFX_goal_PRC_Decentralised_Command
+		x = 5
+		y = 5
+		cost = 3
+		prerequisite = {focus = PRC_focus_4}
+		available = {}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = PRC_cwar_decentral_command
+		}
+	}
+	focus = {
+		id = PRC_focus_7
+		icon = ""
+		x = 3
+		y = 5
+		cost = 3
+		prerequisite = {focus = PRC_focus_9}
+		available = {}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = PRC_cwar_tactical_run
+		}
+	}
+	focus = {
+		id = PRC_focus_8
+		icon = GFX_goal_PRC_perfect_combination	
+		x = 4
+		y = 6
+		cost = 3
+		prerequisite = {focus = PRC_focus_6}
+		prerequisite = {focus = PRC_focus_7}
+		available = {}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	remove_ideas = PRC_cwar_ortho_warfare remove_ideas = PRC_cwar_monkey_warfare
+	add_ideas = PRC_cwar_perfect_combination
+		}
+	}
+	focus = {
+		id = PRC_focus_9
+		icon = GFX_goal_PRC_Protracted_Peoples_War
+		x = 2
+		y = 4
+		cost = 3
+		prerequisite = {focus = PRC_focus_5}
+		available = {}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = PRC_cwar_ortho_warfare
+		}
+	}
+		focus = {
+		id = PRC_focus_10
+		icon = GFX_goal_PRC_puyi_letter
+		x = 8
+		y = 7
+		cost = 3
+		prerequisite = {focus = PRC_focus_8 focus = PRC_focus_16}
+		available = {}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	PRC = { country_event = { id = prc.11}}
+		}
+	}
+		focus = {
+		id = PRC_focus_11
+		icon = GFX_goal_PRC_crush_nationalists
+		x = 12
+		y = 3
+		cost = 3
+		prerequisite = {focus = PRC_focus_3}
+		available = {}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		PRC = { country_event = { id = prc.10}}
+		}
+	}
+		focus = {
+		id = PRC_focus_12
+		icon = GFX_goal_PRC_hit_them_hard
+		x = 10
+		y = 4
+		cost = 3
+		prerequisite = {focus = PRC_focus_11}
+		available = {}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = prc_cwar_hard
+		}
+	}
+		focus = {
+		id = PRC_focus_13
+		icon = GFX_goal_PRC_hit_em_fast
+		x = 14
+		y = 4
+		cost = 3
+		prerequisite = {focus = PRC_focus_11}
+		available = {}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = prc_cwar_fast
+		}
+	}
+		focus = {
+		id = PRC_focus_14
+		icon = GFX_goal_PRC_sacrifices_must_be_made
+		x = 13
+		y = 5
+		cost = 3
+		prerequisite = {focus = PRC_focus_13}
+		available = {}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = prc_cwar_sacrafices
+		}
+	}
+		focus = {
+		id = PRC_focus_15
+		icon = GFX_goal_PRC_industry_to_support_us
+		x = 11
+		y = 5
+		cost = 3
+		prerequisite = {focus = PRC_focus_12}
+		available = {}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_offsite_building = { type = arms_factory level = 3 }
+		add_offsite_building = { type = industrial_complex level = 4 }
+		add_ideas = prc_cwar_industry
+		}
+	}
+		focus = {
+		id = PRC_focus_16
+		icon = GFX_goal_PRC_chinese_blitzkrieg
+		x = 12
+		y = 6
+		cost = 3
+		prerequisite = {focus = PRC_focus_14}
+		prerequisite = {focus = PRC_focus_15}
+		available = {}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+		add_tech_bonus = {
+    bonus = 2.0
+    uses = 3
+    category = cat_mobile_warfare
+}
+		}
+	}
+			focus = {
+		id = PRC_focus_17
+		icon = GFX_goal_PRC_Strangest_proposal_in_history
+		x = 7
+		y = 8
+		cost = 3
+		prerequisite = {focus = PRC_focus_10}
+		available = {has_country_flag = PRC_qing_prop_flag}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			PRC = { country_event = { id = prc.12}}
+			set_country_flag = PRC_focus_17_completed
+		}
+	}
+			focus = {
+		id = PRC_focus_18
+		icon = GFX_goal_PRC_the_Fox_and_the_Swan
+		x = 9
+		y = 8
+		cost = 3
+		prerequisite = {focus = PRC_focus_10}
+		available = {has_country_flag = PRC_focus_17_completed}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		PRC = { country_event = { id = prc.13}}
+		}
+	}
+			focus = {
+		id = PRC_focus_19
+		icon = GFX_goal_PRC_unholy_alliance
+		x = 8
+		y = 9
+		cost = 3
+		prerequisite = {focus = PRC_focus_17}
+		prerequisite = {focus = PRC_focus_18}
+		available = {}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		PRC = { country_event = { id = prc.14}}
+		}
+	}
+		focus = {
+		id = PRC_focus_20
+		icon = GFX_goal_PRC_peoples_emperor
+		x = 6
+		y = 10
+		cost = 3
+		prerequisite = {focus = PRC_focus_19}
+		available = {}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		PRC = { country_event = { id = prc.15}}
+		}
+	}
+		focus = {
+		id = PRC_focus_21
+		icon = GFX_goal_PRC_rights_of_banners
+		x = 8
+		y = 10
+		cost = 3
+		prerequisite = {focus = PRC_focus_19}
+		available = {}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		PRC = { country_event = { id = prc.16}}
+		}
+	}
+		focus = {
+		id = PRC_focus_22
+		icon = GFX_goal_PRC_claim_mandate
+		x = 10
+		y = 10
+		cost = 3
+		prerequisite = {focus = PRC_focus_19}
+		available = {}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		PRC = { country_event = { id = prc.17}}
+		}
+	}
+		focus = {
+		id = PRC_focus_23
+		icon = GFX_goal_PRC_of_hero_tigers
+		x = 8
+		y = 11
+		cost = 3
+		prerequisite = {focus = PRC_focus_20}
+		prerequisite = {focus = PRC_focus_21}
+		prerequisite = {focus = PRC_focus_22}
+		available = {}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		PRC = { country_event = { id = prc.18}}
+		}
+	}
+}		

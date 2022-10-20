@@ -1,0 +1,239 @@
+focus_tree = {
+	id = stalin_first_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SRF
+		}
+		}
+		continuous_focus_position = { x = 100 y = 1500 }
+
+
+focus = {
+		id =  SRF_Stalin_Dream
+		icon = GFX_goal_SRF_Stalinstart
+		x = 6
+		y = 1
+		cost = 4
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.10
+		add_war_support = 0.05		
+		}
+	}
+focus = {
+		id =  SRF_Anti_Muslim
+		icon = GFX_goal_SRF_Mountain
+		x = 8
+		y = 2
+		cost = 4
+		prerequisite = { focus = SRF_Stalin_Dream}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = SRF_Anti_Muslim_idea	
+		}
+	}
+focus = {
+		id = SRF_Georgian_Liberation_Org
+		icon = GFX_goal_SRF_Organization
+		x = 9
+		y = 3
+		cost = 4
+		prerequisite = { focus = SRF_Anti_Muslim }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		GEO = {
+		add_ideas = GEO_organization	
+		}
+		MTR = {
+		add_ideas = GEO_organization	
+		}	
+		}
+	}
+focus = {
+		id = SRF_Sabotage_Muslims
+		icon = GFX_goal_SRF_Orthodox
+		x = 6
+		y = 6
+		cost = 4
+		prerequisite = { focus = SRF_The_Liberation_War }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		MTR = {
+		add_manpower = -4000
+		add_stability = -0.20	
+		}
+		add_ideas = SRF_Ortohdoxy	
+		}
+	}			
+focus = {
+		id = SRF_Guns
+		icon = GFX_goal_SRF_Guns
+		x = 4
+		y = 2
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = SRF_Stalin_Dream}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_equipment_to_stockpile = {
+    	type = infantry_equipment
+    	amount = 4000
+    	producer = SRF
+		}	
+		}
+	}
+focus = {
+		id = SRF_Generalissimo
+		icon = GFX_goal_SRF_General
+		x = 6
+		y = 3
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = SRF_Anti_Muslim}
+		prerequisite = { focus = SRF_Guns}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_country_leader_trait = SRF_generallissimo_stalin	
+		}
+	}		
+focus = {
+		id = SRF_Revolutionary_Brigades
+		icon = GFX_goal_SRF_Booba
+		x = 3
+		y = 3
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = SRF_Guns}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_manpower = 50000
+		820 = {	
+		create_unit = {
+   		division = "name = \"Georgian Liberation Armies\" division_template = \"Georgian Liberation Armies\" start_experience_factor = 0.5 start_equipment_factor = 1"
+    	owner = SRF
+		}
+		create_unit = {
+   		division = "name = \"Georgian Liberation Armies\" division_template = \"Georgian Liberation Armies\" start_experience_factor = 0.5 start_equipment_factor = 1"
+    	owner = SRF
+		}
+		create_unit = {
+   		division = "name = \"Georgian Liberation Armies\" division_template = \"Georgian Liberation Armies\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    	owner = SRF
+		}		
+		}
+		}
+	}
+focus = {
+		id = SRF_Contacts
+		icon = GFX_goal_SRF_contact
+		x = 4
+		y = 4
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = SRF_Revolutionary_Brigades}
+		prerequisite = { focus = SRF_Generalissimo}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.10
+		add_political_power = 200	
+		}
+	}
+	focus = {
+		id = SRF_The_Liberation_War
+		icon = GFX_goal_SRF_Greatwar
+		x = 6
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = SRF_Contacts }
+		prerequisite = { focus = SRF_Scare_Germans }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		declare_war_on = {
+        target = GEO
+        type = annex_everything
+        }
+		hidden_effect = {
+		232 = {	
+		create_unit = {
+   		division = "name = \"Georgian Liberation Armies\" division_template = \"Georgian Liberation Armies\" start_experience_factor = 0.5 start_equipment_factor = 1"
+    	owner = SRF
+		}
+		create_unit = {
+   		division = "name = \"Georgian Liberation Armies\" division_template = \"Georgian Liberation Armies\" start_experience_factor = 0.5 start_equipment_factor = 1"
+    	owner = SRF
+		}
+		create_unit = {
+   		division = "name = \"Georgian Liberation Armies\" division_template = \"Georgian Liberation Armies\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    	owner = SRF
+		}	
+		}	
+		}	
+		}
+	}
+focus = {
+		id = SRF_Scare_Germans
+		icon = GFX_goal_SRF_Raid
+		x = 8
+		y = 4
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = SRF_Generalissimo }
+		prerequisite = { focus = SRF_Georgian_Liberation_Org }
+		ai_will_do = {
+			factor = 1
+		}
+		available = { has_war = no }
+		completion_reward = {
+		add_equipment_to_stockpile = {
+    	type = infantry_equipment
+    	amount = 2000
+    	producer = SRF
+		}
+		}
+	}
+	focus = {
+		id = SRF_War_For_Abkhazia
+		icon = GFX_goal_SRF_Abkhaz
+		x = 6
+		y = 7
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = SRF_Sabotage_Muslims }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		declare_war_on = {
+        target = MTR
+        type = annex_everything
+        }
+		add_state_claim = 232
+		news_event = { id = disasternews.19 }	
+		}
+	}
+}	
