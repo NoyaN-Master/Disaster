@@ -1,0 +1,1 @@
+NDefines.NPolitics.BASE_POLITICAL_POWER_INCREASE = 4
