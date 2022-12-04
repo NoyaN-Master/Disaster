@@ -1,7 +1,6 @@
 division_template = {
 	name = "Armenian Infantry"
 	division_names_group = TUR_INF_01
-
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -15,11 +14,9 @@ division_template = {
 		engineer = { x = 0 y = 0 }   # Pioneer Bn
 	}
 }
-
 division_template = {
 	name = "Armenian Militias"  		
 	division_names_group = TUR_CAV_01
-
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
@@ -27,15 +24,13 @@ division_template = {
 		cavalry = { x = 1 y = 1 }
 	}
 }
-
 units = {
 	division= {	
 		name = "1. Armenian Revolutionary Divison"
 		location = 9868  
-		division_template = "Infantry"
+		division_template = "Armenian Infantry"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.75
-
 	}
 	division= {	
 		name = "2. Armenian Revolutionary Divison"
@@ -43,7 +38,6 @@ units = {
 		division_template = "Armenian Infantry"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.75
-
 	}
 	division= {	
 		name = "3. Armenian Revolutionary Divison"
@@ -51,7 +45,6 @@ units = {
 		division_template = "Armenian Infantry"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.75
-
 	}
 	division= {	
 		name = "4. Armenian Revolutionary Divison"
@@ -59,76 +52,61 @@ units = {
 		division_template = "Armenian Infantry"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.75
-
 	}
-
 	division= {
                 name = "5. Armenian Revolutionary Divison"	
 		location = 6976  
 		division_template = "Armenian Infantry"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
-
 	}
 	division= {	
-                name = "6. Armenian Revolutionary Divison"
+        name = "6. Armenian Revolutionary Divison"
 		location = 789  
 		division_template = "Armenian Infantry"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
-
 	}
 	division= {
-                name = "7. Armenian Revolutionary Divison"	
+        name = "7. Armenian Revolutionary Divison"	
 		location = 789  
 		division_template = "Armenian Infantry"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
-
 	}
 	division= {
-                name = "8. Armenian Revolutionary Divison"	
+        name = "8. Armenian Revolutionary Divison"	
 		location = 7454  
 		division_template = "Armenian Infantry"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
-
 	}
-
     division= {	
-                name = "9. Armenian Revolutionary Divison"
+        name = "9. Armenian Revolutionary Divison"
 		location = 7454 
 		division_template = "Armenian Infantry"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
-
 	}
-
     division= {	
-                name = "1. Armenian Liberation Brigade"
+        name = "1. Armenian Liberation Brigade"
 		location = 9954
 		division_template = "Armenian Militias"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
-
 	}
-
     division= {	
-                name = "2. Armenian Liberation Brigade""
+        name = "2. Armenian Liberation Brigade"
 		location = 9954  
 		division_template = "Armenian Militias"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
-
 	}
-
     division= {	
-                name = "3. Armenian Liberation Brigade""
+        name = "3. Armenian Liberation Brigade"
 		location = 9954  
 		division_template = "Armenian Militias"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
-
 	}
-
 }

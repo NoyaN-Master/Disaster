@@ -1,7 +1,6 @@
 ﻿division_template = {
 	name = "Aarméfördelning"			# Infantry Division - Planned formation for mobilization of divisions, 1937-1940
 	division_names_group = SWE_INF_01
-
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -19,7 +18,6 @@
 division_template = {
 	name = "Kavalleribrigaden"  	# Cavalry Brigade
 	division_names_group = SWE_CAV_01
-
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
@@ -29,11 +27,9 @@ division_template = {
 		recon = { x = 0 y = 0 }      # Recon consisted of ACs, motorcycle inf, cavalry
 	}
 }
-
 division_template = {
 	name = "Pansarregemente"  	
 	division_names_group = SWE_ARM_01
-
 	regiments = {
 		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
@@ -55,7 +51,6 @@ division_template = {
 	}
 	priority = 0
 }
-
 units = {
 	######## LAND UNITS ########
 	##### Högkvarteret #####
@@ -66,10 +61,9 @@ units = {
 			name_order = 1
 		}
 		location = 11160 # Kristianstad
-		division_template = "Arméfördelning"
+		division_template = "Aarméfördelning"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		name = "Södra Militärområde"
@@ -77,7 +71,6 @@ units = {
 		division_template = "Militärområde"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	# Northern Military District
 	division = { # "VI. Arméfördelning"
@@ -86,7 +79,7 @@ units = {
 			name_order = 6
 		}
 		location = 11148 # Osterund
-		division_template = "Arméfördelning"
+		division_template = "Aarméfördelning"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
@@ -104,10 +97,9 @@ units = {
 			name_order = 3
 		}
 		location = 3375 # Skövde
-		division_template = "Arméfördelning"
+		division_template = "Aarméfördelning"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		name = "Västra Militärområde"
@@ -115,7 +107,6 @@ units = {
 		division_template = "Militärområde"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	# Eastern Military District
 	division = { # "IV. Arméfördelning"
@@ -124,7 +115,7 @@ units = {
 			name_order = 4
 		}
 		location = 6050 #Stockholm
-		division_template = "Arméfördelning"
+		division_template = "Aarméfördelning"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
@@ -134,7 +125,6 @@ units = {
 		division_template = "Kavalleribrigaden"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		name = "Östra Militärområde"
@@ -150,7 +140,7 @@ units = {
 			name_order = 5
 		}
 		location = 9186 # Boden
-		division_template = "Arméfördelning"
+		division_template = "Aarméfördelning"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
@@ -161,7 +151,6 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 	}
-
 	division = {
 		name = "Gotlands Militärområde"
 		location = 408 # Gotland
@@ -170,36 +159,34 @@ units = {
 		start_equipment_factor = 0.3
 	}
 }
-
 ### Flygvapnet ###
 air_wings = {
 	141 = {
 		# 1. Bombflyggruppen -- Hawker Harts
 		CAS_equipment_1 = {
-			owner = "SWE" 
+			owner = "SWV" 
 			amount = 36
 		}
 		# 5. Jaktflyggruppen -- Bristol Bulldogs, Svenska Jaktfalks, Centrala Malmslatts
 		fighter_equipment_0 =  {
-			owner = "SWE" 
+			owner = "SWV" 
 			amount = 30
 		}
 	}
 	140 = {
 		# 2. Torpedflyggruppen -- Heinkel HD 16s
 		cv_nav_bomber_equipment_1 =  {
-			owner = "SWE" 
+			owner = "SWV" 
 			amount = 12
 		}
 	}
 }
-
 ### Starting Production ###
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
-			creator = "SWE"
+			creator = "SWV"
 		}
 		requested_factories = 1
 		progress = 0.77
@@ -208,7 +195,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
-			creator = "SWE"
+			creator = "SWV"
 		}
 		requested_factories = 1
 		progress = 0.21

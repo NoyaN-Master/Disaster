@@ -1,5 +1,5 @@
 division_template = {
-	name = "German Colonial Soldiers"
+	name = "German Colonial Remnants"
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -12,44 +12,44 @@ division_template = {
 }
 units = {
 	division= {	
-		name = "German Colonial Soldiers"
+		name = "Namibian Garrison"
 		location = 4879    # Vienna
-		division_template = "Kuvayi Milliye"
+		division_template = "German Colonial Remnants"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 	}
 	division= {	
-		name = "German Colonial Soldiers"
+		name = "Namibian Garrison"
 		location = 4879    # Vienna
-		division_template = "Kuvayi Milliye"
+		division_template = "German Colonial Remnants"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 	}
 	division= {	
-		name = "German Colonial Soldiers"
+		name = "Namibian Garrison"
 		location = 4879    # Vienna
-		division_template = "Kuvayi Milliye"
+		division_template = "German Colonial Remnants"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 	}
     division= {	
-		name = "German Colonial Soldiers"
+		name = "Namibian Garrison"
 		location = 4879    # Vienna
-		division_template = "Kuvayi Milliye"
+		division_template = "German Colonial Remnants"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 	}
 	division= {	
-		name = "German Colonial Soldiers"
+		name = "Namibian Garrison"
 		location = 4879    # Vienna
-		division_template = "Kuvayi Milliye"
+		division_template = "German Colonial Remnants"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 	}
 	division= {	
-		name = "German Colonial Soldiers"
+		name = "Namibian Garrison"
 		location = 4879    # Vienna
-		division_template = "Kuvayi Milliye"
+		division_template = "German Colonial Remnants"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 	}

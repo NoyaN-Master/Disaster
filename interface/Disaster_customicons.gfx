@@ -39267,8 +39267,8 @@ SpriteType = {
 			animationrotation = 90.0
 			animationlooping = no
 			animationtime = 0.75
- }
-
+		}
+	}
 SpriteType = {		
 		name = "GFX_goal_CRF_the_demon_scouts_shine"	
 		texturefile = "gfx/interface/goals/CRF_the_demon_scouts.png"	
@@ -39298,19 +39298,6 @@ SpriteType = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}	
-		legacy_lazy_load = no	
-			
- }
-
-
-
-
-
-
-
-
-
-
-
-
+		legacy_lazy_load = no
+	}
 }
